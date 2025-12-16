@@ -33,7 +33,7 @@ Open your __RadChart__ project in Expression Blend. To add the dummy __Rectangle
 
 To go back to the design view select *View -> Active Document View -> Design View* from the menu. In the 'Objects and Timeline' pane select the newly created __Rectangle__ control. And select *Object -> Edit Style -> Create Empty* from the menu*. *You will be prompted for the name of the style and where to be placed within your application.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking the OK button, a style with target type __Rectangle__ will be created and the properties for this type will be loaded in the 'Properties' pane. Modify them until you get the desired appearance.
 
@@ -52,7 +52,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 
 
->tipTo show the strip lines for a particular axis you have to set its __StripLinesVisibility__ property to __Visible__. Read more about strip lines [here]({%slug radchart-features-axes-striplines-and-gridlines%}).
+>tip To show the strip lines for a particular axis you have to set its __StripLinesVisibility__ property to __Visible__. Read more about strip lines [here]({%slug radchart-features-axes-striplines-and-gridlines%}).
 
 Here is a snapshot of the sample result:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingAxisStripLines_04.png)

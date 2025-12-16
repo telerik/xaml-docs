@@ -44,7 +44,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	Private dbContext2 As New NorthwindEntities(New Uri("Enter your service address here"))
 ```
 
->tipFor more information about how to add a reference to an ADO.NET Data Service and how to create a new instance of the exposed entity, take a look at the [Consuming ADO.NET Data Service](http://www.telerik.com/help/wpf/consuming-data-ado-net-data-service.html) topic.The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects. 
+>tip For more information about how to add a reference to an ADO.NET Data Service and how to create a new instance of the exposed entity, take a look at the [Consuming ADO.NET Data Service](http://www.telerik.com/help/wpf/consuming-data-ado-net-data-service.html) topic.The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects. 
 
 ```C#
 	private void BeginRequest()

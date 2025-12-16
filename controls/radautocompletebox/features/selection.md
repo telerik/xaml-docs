@@ -28,7 +28,7 @@ The __SelectedItem__ property corresponds to the item the user has selected when
 
 __SelectedItems__ is a collection of items containing all selected items in the control when SelectionMode is set to Multiple.
 
->importantThe __SelectedItems__ collection will always contain a single item when SelectionMode is set to Single and you change the selected item. When in Multiple selection mode, __SelectedItem__ will be set to the first item added to the selected items that is still included in the selection.
+>important The __SelectedItems__ collection will always contain a single item when SelectionMode is set to Single and you change the selected item. When in Multiple selection mode, __SelectedItem__ will be set to the first item added to the selected items that is still included in the selection.
 
 **Example 1** demonstrates how to get ahold of the selected items and also determine which item was selected first when in Multiple selection mode.
 

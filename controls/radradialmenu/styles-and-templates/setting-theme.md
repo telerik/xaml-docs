@@ -12,7 +12,7 @@ position: 0
 
 The purpose of this article is to show you how to set a built-in theme to __RadRadialMenu__.
 
->tipDetailed information about the use of implicit styles can be found [here]({%slug styling-apperance-implicit-styles-overview%}).
+>tip Detailed information about the use of implicit styles can be found [here]({%slug styling-apperance-implicit-styles-overview%}).
 
 So, in order to set a theme to the RadialMenu, you should merge the following xaml files in App.xaml file:        
 

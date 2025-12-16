@@ -24,7 +24,7 @@ __RadChart__ allows you to export the chart in several file formats:
 
 * __Xps__ - XML Paper Specification file. Use __RadChart.ExportToXps(Stream)__.
 
->tipIn WPF there are overloads for the methods listed above, which take as parameter the name of the file you want to export to, instead of a stream. This allows you to easily export your chart directly to a file.
+>tip In WPF there are overloads for the methods listed above, which take as parameter the name of the file you want to export to, instead of a stream. This allows you to easily export your chart directly to a file.
 
 The following example demonstrates how to export __RadChart__ to ExcelML file format.
 

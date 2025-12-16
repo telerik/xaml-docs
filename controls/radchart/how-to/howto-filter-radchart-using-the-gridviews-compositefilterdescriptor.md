@@ -354,7 +354,7 @@ The code-behind:
 	      End Class
 ```
 
->tipThe code snippets above were taken from a Silverlight project but are absolutely applicable for WPF scenarios.
+>tip The code snippets above were taken from a Silverlight project but are absolutely applicable for WPF scenarios.
 
 The bound non-filtered data looks like this:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToOriginal.PNG)

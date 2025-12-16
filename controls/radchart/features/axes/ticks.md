@@ -24,7 +24,7 @@ To control the visibility of the ticks you have to use one fo the following prop
 
 * __MinorTickPointMultiplier__ - specifies the number of minor ticks per major tick, i.e the number of the minor ticks between two major ticks. The number of ticks is always equal to the (__MinorTickPointMultiplier__ - 1) as the multiplier rerpesents the count of chuks defined by the minor ticks between two major ticks. For example in order to have 3 chunks the Axis will need 2 minor ticks to allocate them.
 
->tipTo learn how to modify the appearance of the axis' ticks read the [Styling the Axes]({%slug radchart-styling-and-appearance-styling-axes-overview%}) section.
+>tip To learn how to modify the appearance of the axis' ticks read the [Styling the Axes]({%slug radchart-styling-and-appearance-styling-axes-overview%}) section.
 
 These properties are available for both the x- and the y-axis. Here is an example of hiding the major ticks of the x-axis and configuring it to display 2 minor ticks between each two major ones.
 

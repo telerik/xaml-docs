@@ -29,7 +29,7 @@ __Example 1: Add FormattingColorPicker__
 
 
 
->tipTo learn more about the commands exposed by the __RadRichTextBox__ and how to use them read [here]({%slug radrichtextbox-features-commands%}).
+>tip To learn more about the commands exposed by the __RadRichTextBox__ and how to use them read [here]({%slug radrichtextbox-features-commands%}).
 
 
 ### ActiveColor property

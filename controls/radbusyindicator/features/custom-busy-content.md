@@ -93,7 +93,7 @@ In the code behind you have to:
 
 	* Disable the __RadBusyIndicator__ by setting its __IsBusy__ property to __False__ in a specific condition.
 
->tipYou can also create a [determined RadBusyIndicator]({%slug radbusyindicator-features-report-progress-value%}) control which provides a straightforward way to report a changing progress value.
+>tip You can also create a [determined RadBusyIndicator]({%slug radbusyindicator-features-report-progress-value%}) control which provides a straightforward way to report a changing progress value.
 
 >In order to use the __DispatcherTimer__ and the __INotifyPropertyChanged__ interface you will need to add the following usings/imports: 
 >* __System.ComponentModel__

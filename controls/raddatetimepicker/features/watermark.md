@@ -18,7 +18,7 @@ The Watermark is represented by a regular __RadWatermarkTextBox__ control. You c
 
 * __DateTimeWatermarkTemplate__ - will set the __WatermarkTemplate__ of the actual __RadWatermarkTextBox__ control.
 
->tipTo read more about the __RadWatermarkTextBox__ take a look [here]({%slug radwatermarktextbox-overview%}).
+>tip To read more about the __RadWatermarkTextBox__ take a look [here]({%slug radwatermarktextbox-overview%}).
 
 The __DateTimeWatermarkContent__ is the simplest way to change the watermark's content. For example:
 

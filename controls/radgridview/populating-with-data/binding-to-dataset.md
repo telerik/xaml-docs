@@ -154,7 +154,7 @@ __Example 1: Setting up the ViewModel__
     End Class
 ```
 
->importantPlease note that the **DataRelation** is required for RadGridView to generate the hierarchy automatically.
+>important Please note that the **DataRelation** is required for RadGridView to generate the hierarchy automatically.
 
 __Example 2__ demonstrates how the RadGridView is set up in XAML.
 

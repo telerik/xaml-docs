@@ -40,7 +40,7 @@ Sometimes you need to extend the functionality of a column and define a custom e
 
 * __CellEditTemplate__: Gets or sets the data template for the cell in edit mode.
 
->tipYou can also conditionally apply different data templates to RadGridView cells by using the [CellTemplateSelector and CellEditTemplateSelector]({%slug gridview-cell-template-selector%}) properties.
+>tip You can also conditionally apply different data templates to RadGridView cells by using the [CellTemplateSelector and CellEditTemplateSelector]({%slug gridview-cell-template-selector%}) properties.
 
 **Example 1** demonstrates how to use both properties to customize your columns. We set the __RadDateTimePicker__ as a __CellEditTemplate__ for the __DateTime__ column type and the __RadNumericUpDown__ as a __CellTemplate__ for the **Salary** column.
 

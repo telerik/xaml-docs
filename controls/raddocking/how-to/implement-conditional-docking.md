@@ -169,7 +169,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 In the last case, all compass indicators are disabled.
 
->tipThere is an alternative approach to disable the docking. You need to set the initial position of the [RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%}) to __FloatingOnly__.
+>tip There is an alternative approach to disable the docking. You need to set the initial position of the [RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%}) to __FloatingOnly__.
 
 ## See Also
 

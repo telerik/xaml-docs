@@ -55,7 +55,7 @@ The __LabelFilter__ is used for filtering the data based on the Headers (row or 
 
 * __is not between__ - showing only groups which header is NOT between the two parameters we pass.    				
 
->importantAll conditions are case sensitive and are using string comparison between the headers of the groups and the passed parameters.
+>important All conditions are case sensitive and are using string comparison between the headers of the groups and the passed parameters.
 
 So if we apply a __LabelFilter__ of __RadPivotGrid__ from GettingStarted article with condition *begins with* and parameter *"P"* we will receive the following result:
 
@@ -209,7 +209,7 @@ __Value Filter__ is applied on __RowGroupDescriptions__/__ColumnGroupDescription
 
 * __is not between__ - showing only groups which header is NOT between the two parameters we pass.    				
 
->important__Value Filter__ is filtering the groups by number comparison between the *GrandTotals* of the groups and the parameters we pass, while __Label Filter__ is a string filter.
+>important __Value Filter__ is filtering the groups by number comparison between the *GrandTotals* of the groups and the parameters we pass, while __Label Filter__ is a string filter.
 
 So if we apply a __Value Filter__ on the *Name* RowGroupDescription from the __GettingStarted__ article, set condition *"is greater than"* and pass as parameter value 10 we will notice that one of the items is missing because its *GrandTotal* is less than 10.
 

@@ -83,7 +83,7 @@ __Example 3: Adding DocumentHost in XAML__
 	</telerik:RadDocking>
 ```
 
->tipThe DocumentHost control is not a required element. As an experiment, remove it from the XAML above and run your application to see how the application changes.
+>tip The DocumentHost control is not a required element. As an experiment, remove it from the XAML above and run your application to see how the application changes.
 
 ### Adding RadSplitContainer
 

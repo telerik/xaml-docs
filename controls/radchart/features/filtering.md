@@ -32,7 +32,7 @@ Here is an example of a chart without filter descriptors.
 
 Here is an example of implementing filtering.
 
->tipTo use the __ChartFilterDescriptors__ in XAML you have to declare the following namespace:
+>tip To use the __ChartFilterDescriptors__ in XAML you have to declare the following namespace:
 
 
 

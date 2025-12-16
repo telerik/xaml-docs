@@ -69,7 +69,7 @@ Check out the online demo [here.](https://demos.telerik.com/silverlight/#GridVie
 
 Check out the WPF demos [here.](https://demos.telerik.com/wpf/){% endif %}
 
->tipYou can find more examples of how to implement various scenarios available for download from our online SDK repository [here. ](https://github.com/telerik/xaml-sdk/)Look for examples listed under __GridView__. For a better and easier reviewing of our examples you can download the [SDK Samples Browser.](https://demos.telerik.com/xaml-sdkbrowser//)
+>tip You can find more examples of how to implement various scenarios available for download from our online SDK repository [here. ](https://github.com/telerik/xaml-sdk/)Look for examples listed under __GridView__. For a better and easier reviewing of our examples you can download the [SDK Samples Browser.](https://demos.telerik.com/xaml-sdkbrowser//)
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources

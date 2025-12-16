@@ -60,7 +60,7 @@ The following help article will demonstrate how to customize the Chart Legend so
 
 
 
->tipThe ChartLegendItem style may be different for the older versions of the RadChart
+>tip The ChartLegendItem style may be different for the older versions of the RadChart
 
 ##### 3. Create a sample Chart and add CustomGridLine by applying the CustomGridLine Style:
 

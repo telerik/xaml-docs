@@ -14,7 +14,7 @@ This section is intended to give you a broad understanding of the possible ways 
 
 >To learn about how to change the control's theme using Implicit Styles, please read the common [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) topic.
 
->tipTo learn how to edit the default ControlTemplates read the common topic about [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
+>tip To learn how to edit the default ControlTemplates read the common topic about [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 You can modify the look of the __RadBusyIndicator__ by either changing some of the resources exposed by the API, or by modifying its __ControlTemplate__. In the control template you are allowed to reorder the template parts and to add your own elements. However, when changing the control template you should be careful to include all required parts.
 

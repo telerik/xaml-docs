@@ -10,7 +10,7 @@ position: 1
 
 # SpellChecking GridCell
 
->tipFor a quick review of the basics you can take a look at the [Getting Started]({%slug radspellchecker-getting-started%}) topic.
+>tip For a quick review of the basics you can take a look at the [Getting Started]({%slug radspellchecker-getting-started%}) topic.
 
 Basically, there are two ways to spellcheck a grid cell:
 

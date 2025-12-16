@@ -14,7 +14,7 @@ position: 2
 
 ## 
 
->tipThe approach below allow you more completely to change the appearance of the tick lines, but if you want to change only the color of it, you can use the __AxisElementBrush__ property of the __RadChart.Note__ that the value of this property will get applied to all of the axes and all of the tick lines as well.
+>tip The approach below allow you more completely to change the appearance of the tick lines, but if you want to change only the color of it, you can use the __AxisElementBrush__ property of the __RadChart.Note__ that the value of this property will get applied to all of the axes and all of the tick lines as well.
 
 The axis tick lines are part of the chart axis and are represented by the __Line__ control. To create a style for them in Expression Blend use a dummy control and after modifying it, set it to the __AxisStyles__ complex property of the __Axis__.
 
@@ -33,7 +33,7 @@ Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ co
 
 To go back to the design view select *View -> Active Document View -> Design View* from the menu. In the 'Objects and Timeline' pane select the newly created __Line__ control. And select *Object -> Edit Style -> Create Empty* from the menu*. *You will be prompted for the name of the style and where to be placed within your application.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking the OK button, a style with target type __Line__ will be created and the properties for this type will be loaded in the 'Properties' pane. Modify them until you get the desired appearance.
 
@@ -54,9 +54,9 @@ After finishing with the changes, it is time to set the style to the __TickLineS
 
 
 
->tipSetting the styles for the y-axis is done analogically via the __AxisY__ property of the __ChartArea__.
+>tip Setting the styles for the y-axis is done analogically via the __AxisY__ property of the __ChartArea__.
 
->tipTo learn how to style the minor ticks take a look at the [Styling the Minor Tick]({%slug radchart-styling-and-appearance-styling-axis-minor-tick%}) topic.
+>tip To learn how to style the minor ticks take a look at the [Styling the Minor Tick]({%slug radchart-styling-and-appearance-styling-axis-minor-tick%}) topic.
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingAxisTicks_03.png)
 
 Here is the final XAML for the __Styles__:

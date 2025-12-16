@@ -18,7 +18,7 @@ The __RadMenuItem__ control provides you with a standard __ICommandSource__ impl
 
 * __CommandTarget__ - the object that the command is being executed on.  
 
->tipAs the __RadMenuItem__ implements the __ICommandSource__, you can use it with any command that implements the __ICommand__ interface, for example the __DelegateCommands__ in Prism.
+>tip As the __RadMenuItem__ implements the __ICommandSource__, you can use it with any command that implements the __ICommand__ interface, for example the __DelegateCommands__ in Prism.
 
 > By default the command of a RadMenuItem will not be executed for RadMenuItems which have child RadMenuItems. If you wish to change this behavior, you can set the __NotifyOnHeaderClick__ property of the __RadMenu__ to __True__. This way, even if a RadMenuItem has child items, its corresponding command will be invoked on click.
 

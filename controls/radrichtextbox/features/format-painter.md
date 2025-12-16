@@ -34,7 +34,7 @@ The following commands related to the copying of formatting are available in the
 
 
 
->tipIn order to learn more about commands and how to use them refer to the [Commands topic]({%slug radrichtextbox-features-commands%}).
+>tip In order to learn more about commands and how to use them refer to the [Commands topic]({%slug radrichtextbox-features-commands%}).
         
 >There are also shortcuts implemented for easier usage:
 >- *Ctrl+Shift+C* copies the formatting.

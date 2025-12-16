@@ -52,4 +52,4 @@ __Example 1: Modify the collection with the found results from the event argumen
 	}
 ```
 
->tipYou can remove and add items from the e.Results collection or sort and filter them.
+>tip You can remove and add items from the e.Results collection or sort and filter them.

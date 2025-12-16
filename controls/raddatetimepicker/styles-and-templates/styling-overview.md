@@ -12,7 +12,7 @@ position: 0
 
 This section is intended to give you a broad understanding of the possible ways to change the visual appearance of the __RadDateTimePicker__ control. There is also comprehensive information about its __ControlTemplates__. You will need this information if you want to customize their appearance.
 
->tipTo learn how to change the control's theme, please read the common [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) topic.
+>tip To learn how to change the control's theme, please read the common [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) topic.
 
 You can modify the look of the __RadDateTimePicker__ control either by changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and add your own elements. However, when changing the __ControlTemplate__ you should be careful to include all required parts.
 

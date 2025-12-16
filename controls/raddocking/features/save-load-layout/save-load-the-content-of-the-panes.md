@@ -83,7 +83,7 @@ __Example 4: Get Content of Pane__
 	End Sub
 ```
 
->importantThe __GetPaneContent()__ method needs to be implemented with the specific user custom logic.
+>important The __GetPaneContent()__ method needs to be implemented with the specific user custom logic.
 
 
 ## See Also

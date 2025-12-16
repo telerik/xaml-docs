@@ -36,7 +36,7 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 	* When the dropdown of the __RadComboBox__ is __closed__, then pressing the __Home\End__ keys will change the __selected item__ to the first\last item in the list. 
 
->tipPressing the __Home\End__ keys will affect the __selected\highlighted__ item only when the __IsEditable__ property is set to __False__.
+>tip Pressing the __Home\End__ keys will affect the __selected\highlighted__ item only when the __IsEditable__ property is set to __False__.
 
 * __PageUp\PageDown__ - the __PageUp__ and __PageDown__ keys have one main function: pressing __PageUp__ or __PageDown__ will open the dropdown when it is __closed__. If the dropdown of the __RadComboBox__ is __opened__, then pressing any of these keys will change the __highlighted item__. 
 

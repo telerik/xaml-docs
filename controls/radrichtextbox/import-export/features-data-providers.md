@@ -26,7 +26,7 @@ The __RadRichTextBox__ control allows you to export and import its documents int
           
 * [__TxtFormatProvider__]({%slug radrichtextbox-import-export-txt-txtformatprovider%})
 
->tipFor more information, check out the [Import/Export]({%slug radrichtextbox-features-import-export%}) topic.
+>tip For more information, check out the [Import/Export]({%slug radrichtextbox-features-import-export%}) topic.
         
 
 However, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using __RadRichTextBox__ in a data bound scenarios. For such cases, the __DataProvider__ classes are used. They wrap the __FormatProviders'__ functionality and allow its usage in XAML. Currently, the following __DataProvider__ classes are available:
@@ -46,7 +46,7 @@ However, the format providers cannot be used in XAML and you have to implement a
 
 * __TxtDataProvider__: Use when you want to bind plain text source to __RadRichTextBox__.
 
->tipData providers have to be declared in the visual tree and not the Resource dictionary of a control. You don't have to worry about the place in the visual tree where a provider is, as it does not have a visual representation.          
+>tip Data providers have to be declared in the visual tree and not the Resource dictionary of a control. You don't have to worry about the place in the visual tree where a provider is, as it does not have a visual representation.          
 
 >important RadRichTextBox's data providers encapsulate the logic of the format providers that come with the control. What they do internally is import/export the document using the respective format provider. By default, the property in your view model will be updated on each document change. As this triggers an export to the document you might notice some delay when typing in the control. You could try customizing this by setting the **UpdateSourceTrigger** property of the data provider to **LostFocus** or **Explicit**.
 
@@ -73,9 +73,9 @@ The __DataProviders__ can be easily used to bind __RadRichTextBox__ to a XAML, H
 	| **Docx**    | DocxDataProvider |
 
 {% if site.site_name == 'Silverlight' %}
->tipIt is best to declare data providers in the visual tree, as this way the binding will be properly updated when the data context is changed. You don't have to worry about the place in the visual tree where the provider is, as it does not have a visual representation.{% endif %}
+>tip It is best to declare data providers in the visual tree, as this way the binding will be properly updated when the data context is changed. You don't have to worry about the place in the visual tree where the provider is, as it does not have a visual representation.{% endif %}
 
->tipEach __DataProvider__ class is located in the same assembly as the corresponding __FormatProvider__ class. For example, the __XamlFormatProvider__ class is in the __Telerik.Windows.Documents.FormatProviders.Xaml.dll__ assembly. Only the __TxtDataProvider__ is located in the __Telerik.Windows.Documents__ assembly. In order to use a data provider, make sure to have referenced the required assembly.
+>tip Each __DataProvider__ class is located in the same assembly as the corresponding __FormatProvider__ class. For example, the __XamlFormatProvider__ class is in the __Telerik.Windows.Documents.FormatProviders.Xaml.dll__ assembly. Only the __TxtDataProvider__ is located in the __Telerik.Windows.Documents__ assembly. In order to use a data provider, make sure to have referenced the required assembly.
         
 
 >The __DataProviders__ can be accessed via the default Telerik namespace:

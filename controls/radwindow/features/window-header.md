@@ -14,7 +14,7 @@ The __RadWindow__ allows you to display a header in the top part of it. To speci
 
 If you have a window-specific header, use the __Header__ property.
 
->tipAs the __Header__ property is of type object you can set it to any control that you like. If you want to have a more complex icon content that consists of more than one control, be sure to wrap them inside a layout control and pass the layout control as content.
+>tip As the __Header__ property is of type object you can set it to any control that you like. If you want to have a more complex icon content that consists of more than one control, be sure to wrap them inside a layout control and pass the layout control as content.
 
 >It's not a good practice do declare your __RadWindow__ as visual element in XAML. The only scenario, when it is meaningful to use the __RadWindow__ in XAML, is when it represents the entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 

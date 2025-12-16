@@ -16,11 +16,11 @@ position: 13
 
 There is a set of predefined __PointMark__ shapes, but you are allowed to create your own via templating the __PointMark__ control. To learn more about the predefined shapes and how to manipulate them take a look at the [Chart Point Marks]({%slug radchart-features-chart-point-marks%}) topic.
 
->tipTo learn more about styling the point marks read [here]({%slug radchart-styling-and-appearance-styling-point-marks%}).
+>tip To learn more about styling the point marks read [here]({%slug radchart-styling-and-appearance-styling-point-marks%}).
 
 To template and change the shape of the mark point you have to use Expression Blend. Open the UserControl containing your __RadChart__ in it. You have to use a dummy control to create a template for the point mark. Go to the Assets tab and from Controls -> All select the __PointMark__ control. Draw an instance of it on the scene, next to your __RadChart__ control. Select the __PointMark__ control that you've just created and right-click on it. Form the context menu select Edit Template -> Edit a Copy. You will be prompted for the name of the style and where to be placed within your application.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking the OK button, a style with target type __PointMark__ will be created and the Expression Blend will bring you into editing the control's template.
 
@@ -68,7 +68,7 @@ You can see that the __Data__ property of the __Path__ is not set. Create the da
 
 
 
->tipTo learn more about creating shapes via the Path class in {% if site.site_name == 'Silverlight' %}Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} read [here](http://msdn.microsoft.com/en-us/library/cc189041%28VS.95%29.aspx)[here](http://msdn.microsoft.com/en-us/library/ms752293.aspx).
+>tip To learn more about creating shapes via the Path class in {% if site.site_name == 'Silverlight' %}Silverlight{% if site.site_name == 'WPF' %}WPF{% endif %}{% endif %} read [here](http://msdn.microsoft.com/en-us/library/cc189041%28VS.95%29.aspx)[here](http://msdn.microsoft.com/en-us/library/ms752293.aspx).
 
 After that set the created __PointMark__ style to the __DefaultSeriesDefinition__ of your __RadChart__ and delete the dummy controls.
 

@@ -16,7 +16,7 @@ To do this you will have to slightly modify the template of your __RadDateTimePi
 
 * Generate the default __RadDateTimePicker's__ template.
 
->tipTo see how to do this [read here]({%slug raddatetimepicker-styling-raddatetimepicker%}).
+>tip To see how to do this [read here]({%slug raddatetimepicker-styling-raddatetimepicker%}).
 
 * Select the __RadWatermarkTextBox__ called __PART_DateTimeInput__ and set its __IsReadOnly__ property to __True__.
 
@@ -24,7 +24,7 @@ This will achieve the desired behavior. However, a specific grey visual element 
 
 * After generating the __RadWatermarkTextBox's__ style in the __Resources__ pane in Expression Blend you can find the __ControlBackground_ReadOnly__ brush and set it to the __RadDateTimePicker's__ background color.
 
->tipLearn more about the __RadWatermarkTextBox__ [here]({%slug radwatermarktextbox-overview%}).
+>tip Learn more about the __RadWatermarkTextBox__ [here]({%slug radwatermarktextbox-overview%}).
 
 ## See Also
 

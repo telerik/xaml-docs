@@ -57,7 +57,7 @@ __Example 2: Remove RadPane from RadPaneGroup__
 	radPaneGroup.Items.Add(radPane)
 ```
 
->tipIf you need to control the docking run-time (while the user is dragging a pane), you could use the __PreviewShowCompass__ event of the __RadDocking__ control in combination with the __Is<*>IndicatorVisible__ series of properties of the __Compass__ class. Where <*> could be one of the following: Left, Top, Right, Bottom, Center. To learn more take a look at the [How to Implement Conditional Docking]({%slug raddocking-how-to-implement-conditional-docking%}) topic.
+>tip If you need to control the docking run-time (while the user is dragging a pane), you could use the __PreviewShowCompass__ event of the __RadDocking__ control in combination with the __Is<*>IndicatorVisible__ series of properties of the __Compass__ class. Where <*> could be one of the following: Left, Top, Right, Bottom, Center. To learn more take a look at the [How to Implement Conditional Docking]({%slug raddocking-how-to-implement-conditional-docking%}) topic.
 
 ## Floating Panes
 
@@ -86,7 +86,7 @@ __Example 3: Create Floating Panes__
 	</telerik:RadDocking>
 ```
 
->tipIf you want to specify the exact position and size of the floating panes set the attached properties __RadDocking.FloatingLocation__ and __RadDocking.FloatingSize__ inside the declaration of the containing __RadSplitContainer__.
+>tip If you want to specify the exact position and size of the floating panes set the attached properties __RadDocking.FloatingLocation__ and __RadDocking.FloatingSize__ inside the declaration of the containing __RadSplitContainer__.
 
 __Example 4: Set the FloatingLocation and FloatingSize attached properties__
 
@@ -119,9 +119,9 @@ __Example 5: Make a RadPane FloatingDockable__
 	radPane.MakeFloatingDockable()
 ```
 
->tipIf you make your pane floating using the __MakeFloatingOnly()__ you will not be able to dock it back again using [drag and drop]({%slug raddocking-features-drag-and-drop%}). To make it dockable again you have to call the method __MakeDockable()__.
+>tip If you make your pane floating using the __MakeFloatingOnly()__ you will not be able to dock it back again using [drag and drop]({%slug raddocking-features-drag-and-drop%}). To make it dockable again you have to call the method __MakeDockable()__.
 
->tipThe RadPane loses its DataContext when it's made floating since it is hosted in a ToolWindow. In order to preserve any bindings applied to the RadPane properties, you can explicitly set the DataContext on the RadPane itsself.
+>tip The RadPane loses its DataContext when it's made floating since it is hosted in a ToolWindow. In order to preserve any bindings applied to the RadPane properties, you can explicitly set the DataContext on the RadPane itsself.
 
 ## Disable Floating
 

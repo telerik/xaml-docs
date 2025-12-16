@@ -25,7 +25,7 @@ Here are the four different scenarios that you can get:
 * Boolean: Nothing
 * Other: __TextBox__
 
->tipWhen the DataType of the column is of __Boolean__ type, you will have **IsTrue** and **IsFalse** filter operators in the drop-down. For that reason, you do not need an editor.
+>tip When the DataType of the column is of __Boolean__ type, you will have **IsTrue** and **IsFalse** filter operators in the drop-down. For that reason, you do not need an editor.
       
 ## Modifying the StringFilterEditor's Style
 

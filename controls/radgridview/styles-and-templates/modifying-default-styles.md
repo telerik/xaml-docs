@@ -56,7 +56,7 @@ The **Create Style Resource** dialog will prompt you for the name of the style a
 
 For this example, we will choose to apply this style to all FilteringDropDown controls and place it in our **App.xaml** file.
 
->tipIf you choose to define the style in the resources of the application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in the resources of the application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 #### __Figure 4: The "Create Style Resource" window__
 
@@ -68,9 +68,9 @@ After clicking **OK**, the default style of the control will be created in the s
 
 ![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling FilteringControl 4](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_4.png)
 
->tipPlease bear in mind that the control template may be different in the different themes. This example modifies the **OfficeBlack** theme.
+>tip Please bear in mind that the control template may be different in the different themes. This example modifies the **OfficeBlack** theme.
 
->importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>important Note that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 ### Modifying the Control Template
 
@@ -100,7 +100,7 @@ If you prefer, you can manually extract the needed style from the respective XAM
 
 The process is similar to [manually extracting the Control Template]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) of a given control.
 
->importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>important Note that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 ## See Also
 

@@ -22,7 +22,7 @@ The __VisualizationLayer__ exposes the following properties which are related to
 
 * __ClusteringEnabledThreshold__: A property of type __int__ that gets or sets clustering enabled threshold. This value sets the max zoom level for clustering. If current zoom level of the control is greater than this value then clustering will be disabled.
 
->tipYou should set the __AutoCalculateClusteringThreshold__ to __False__ to allow the RadMap to respect the __ClusteringEnabledThreshold__. The default value of this property is __True__. This means that you need to explicitly set it to false in all cases when you need to predefine the clustering threshold.
+>tip You should set the __AutoCalculateClusteringThreshold__ to __False__ to allow the RadMap to respect the __ClusteringEnabledThreshold__. The default value of this property is __True__. This means that you need to explicitly set it to false in all cases when you need to predefine the clustering threshold.
 
 * __ClusteringEnabledThresholdMinItems__: A property of type __int__ that gets or sets the minimum number of items in the cluster for auto calculated clustering threshold. The clustering threshold will be set if number of the items in every cluster is less than this value.            
 

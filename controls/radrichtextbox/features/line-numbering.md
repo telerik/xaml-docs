@@ -30,7 +30,7 @@ The following commands related to the numbering of lines are available in the **
 * **SuppressLineNumberingForCurrentParagraphCommand**: Disables the numbering for the currently selected paragraph(s).
 * **ShowLineNumberingDialogCommand**: Opens the dialog enabling users to set different line numbering options.
 
->tipIn order to learn more about commands and how to use them refer to the [Commands topic]({%slug radrichtextbox-features-commands%}).
+>tip In order to learn more about commands and how to use them refer to the [Commands topic]({%slug radrichtextbox-features-commands%}).
         
 ## Using Line Numbering Programmatically
 

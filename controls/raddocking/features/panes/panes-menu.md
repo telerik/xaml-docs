@@ -58,7 +58,7 @@ To make the menu items functional you can use the predefined __RadDocking__ comm
 
 * __TabbedDocument__
 
->tipYou can also create your own custom commands and use them with the RadPane's menu. To learn how read [this topic]({%slug raddocking-how-to-add-menu-items-to-the-radpanes-menu%}).
+>tip You can also create your own custom commands and use them with the RadPane's menu. To learn how read [this topic]({%slug raddocking-how-to-add-menu-items-to-the-radpanes-menu%}).
 
 Here is the final code:
 

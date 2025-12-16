@@ -331,7 +331,7 @@ Clicking the second button will update the UI only when the bring operation is f
 	End Sub
 ```
 
->tipPlease have in mind that running the application without debugger (__Ctrl + F5__ when in VS) will result in faster user experience.		  
+>tip Please have in mind that running the application without debugger (__Ctrl + F5__ when in VS) will result in faster user experience.		  
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/TreeListViewBringItemIntoView).		  
 

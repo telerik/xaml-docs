@@ -674,9 +674,9 @@ Finally, you should populate your  __RadGridView__ with sample data and attach t
 	End Sub
 ```
 
->tipYou can download a __runnable project__ on the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropWithLines).
+>tip You can download a __runnable project__ on the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropWithLines).
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository.   
 
->tipYou can also check the implementation of {% if site.site_name == 'Silverlight' %} [Reorder Rows demo](https://demos.telerik.com/silverlight/#GridView/RowReorder)/[Tree to Grid demo](https://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}{% if site.site_name == 'WPF' %} __Tree to Grid/Reorder Rows__ [WPF Demos](https://demos.telerik.com/wpf/#DragAndDrop/RowReorder){% endif %}.      
+>tip You can also check the implementation of {% if site.site_name == 'Silverlight' %} [Reorder Rows demo](https://demos.telerik.com/silverlight/#GridView/RowReorder)/[Tree to Grid demo](https://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}{% if site.site_name == 'WPF' %} __Tree to Grid/Reorder Rows__ [WPF Demos](https://demos.telerik.com/wpf/#DragAndDrop/RowReorder){% endif %}.      
  

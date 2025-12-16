@@ -12,7 +12,7 @@ position: 9
 
 __RadSpreadsheet__ supports __UI Virtualization__ (enabled by default), which enables it to processes only information that is loaded in the viewable area. In this way, UI elements are created only for the parts of the document actually shown on screen. This reduces the memory footprint of the application and speeds up the loading time, thus additionally enhancing the UI performance. 
 
->importantTry not to place RadSpreadsheet in controls/panels which will measure it with infinity. For example, __ScrollViewer__, __StackPanel__ and Grid with __Row.Height="Auto"__ or __Column.Width="Auto"__ will measure with infinity. In these cases, RadSpreadsheet is measured with infinity and cannot determine what part of the document is shown in the viewport, therefore the virtualization turns off.
+>important Try not to place RadSpreadsheet in controls/panels which will measure it with infinity. For example, __ScrollViewer__, __StackPanel__ and Grid with __Row.Height="Auto"__ or __Column.Width="Auto"__ will measure with infinity. In these cases, RadSpreadsheet is measured with infinity and cannot determine what part of the document is shown in the viewport, therefore the virtualization turns off.
 
 ## See Also
 

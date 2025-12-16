@@ -26,7 +26,7 @@ You can also control the visibility of the lines between the root items (the ite
 
 ![Rad Tree View Features Lines Support 002](images/RadTreeView_Features_LinesSupport_002.png)
 
->tipFor more information about the visual structure of the __RadTreeView__, check out the [Visual Structure]({%slug radtreeview-visual-structure%}) topic.
+>tip For more information about the visual structure of the __RadTreeView__, check out the [Visual Structure]({%slug radtreeview-visual-structure%}) topic.
 
 ## Change the LineColor
 

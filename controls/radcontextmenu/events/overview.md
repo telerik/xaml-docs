@@ -14,7 +14,7 @@ This topic covers the specific events exposed by the __RadContextMenu__ control.
 
 The __RadContextMenu__ is an __ItemsControl__. Almost all of the exposed events are inherited from the __ItemsControl__ class. The __RadContextMenu__ adds several additional events for the developer.
 
->tipTo learn more about the events raised by the __RadMenuItem__, please take a look at the [RadMenu's help]({%slug radmenu-overview%}).
+>tip To learn more about the events raised by the __RadMenuItem__, please take a look at the [RadMenu's help]({%slug radmenu-overview%}).
 
 The __RadContextMenu__ control raises the following specific event:        
 

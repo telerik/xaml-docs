@@ -86,7 +86,7 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 	End Sub
 ```
 
->tipNote that if you make your pane floating using the __MakeFloatingOnly()__ you will not be able to dock it back again using [drag and drop]({%slug raddocking-features-drag-and-drop%}), to make it dockable again you have to call the method __MakeDockable()__.
+>tip Note that if you make your pane floating using the __MakeFloatingOnly()__ you will not be able to dock it back again using [drag and drop]({%slug raddocking-features-drag-and-drop%}), to make it dockable again you have to call the method __MakeDockable()__.
 
 Executing any of the described methods will lead to the following result:
 
@@ -146,7 +146,7 @@ In order to make a pane dockable, you need to invoke the __MakeDockable()__ meth
 
 >__MakeDockable__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
->tipMaking a pane dockable __will not dock__ the pane to any of the sides in the docking area. But it will allow the user to dock the pane during run-time via [drag and drop]({%slug raddocking-features-drag-and-drop%}).
+>tip Making a pane dockable __will not dock__ the pane to any of the sides in the docking area. But it will allow the user to dock the pane during run-time via [drag and drop]({%slug raddocking-features-drag-and-drop%}).
 
 ## Making a Pane Dockable in XAML
 
@@ -164,7 +164,7 @@ In order to make a pane dockable during design-time, you need to set the __Initi
 	</telerik:RadDocking>
 ```
 
->tipSetting the __InitialPosition__ to __FloatingDockable__ or __FloatingOnly__ will make your pane(s) [floating]({%slug raddocking-features-panes-docked-floating-panes%}). However, using the __FloatingOnly__ value __will not allow__ the user to dock the pane during run-time.
+>tip Setting the __InitialPosition__ to __FloatingDockable__ or __FloatingOnly__ will make your pane(s) [floating]({%slug raddocking-features-panes-docked-floating-panes%}). However, using the __FloatingOnly__ value __will not allow__ the user to dock the pane during run-time.
 
 ## Docking a Pane in the Code-Behind
 

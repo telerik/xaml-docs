@@ -22,7 +22,7 @@ Generally the reason why you cannot add any new item, is because RadGridView doe
         
 Another possible reason can be the type of the bound data source collection. If the collection itself does not support inserting and removing items then you will not be able to add any new item.
 
->tipYou can find more information on different types of collections and the functionality they provide in [this help article](http://msdn.microsoft.com/en-us/library/system.collections(v=vs.110).aspx).
+>tip You can find more information on different types of collections and the functionality they provide in [this help article](http://msdn.microsoft.com/en-us/library/system.collections(v=vs.110).aspx).
         
 __SOLUTION__
 

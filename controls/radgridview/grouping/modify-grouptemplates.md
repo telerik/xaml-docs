@@ -12,7 +12,7 @@ position: 8
 
 This article explains how you can modify the default header and footer templates of the group row. You can do that by predefining the `GroupHeaderTemplate` and `GroupFooterTemplate` properties. 
 
->tipLearn more about the GridView visual structure in [this article]({%slug gridview-visual-structure%}).
+>tip Learn more about the GridView visual structure in [this article]({%slug gridview-visual-structure%}).
 
 >Please note that the DataContext of the group row is {% if site.site_name == 'WPF' %}[GroupViewModel](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.gridview.groupviewmodel){% endif %}{% if site.site_name == 'Silverlight' %}[GroupViewModel](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.gridview.groupviewmodel){% endif %}. As you can check in the API reference, this class contains properties like Group, Column, AggregateResults, etc. Having this in mind you can bind the TextBlock-s in the GroupHeaderTemplate to the values of the properties in the GroupViewModel.
         

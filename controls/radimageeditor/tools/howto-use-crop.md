@@ -129,7 +129,7 @@ __Example 8: Set fixed aspect ratio in code-behind__
 	Me.ImageEditorUI.ImageEditor.ExecuteTool(cropTool)
 ```
 
->tipYou can crop an image with fixed ratio between the width and height without setting the FixedRatio property. Just press and hold the __Shift__ key while dragging the crop adorner.
+>tip You can crop an image with fixed ratio between the width and height without setting the FixedRatio property. Just press and hold the __Shift__ key while dragging the crop adorner.
           
 ## See Also
 

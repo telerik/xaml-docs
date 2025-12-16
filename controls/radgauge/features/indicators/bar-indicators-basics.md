@@ -12,7 +12,7 @@ position: 3
 
 The __Linear__ and the __Radial__ __Bars__ derive from the __BarIndicator__ class. Because of that they provide some common functionality. This topic will focus on the common features between these indicators.
 
->tipThe __BarIndicator__ class inherits the __IndicatorBase__ class, which is a base class for all indicators, except the __NumericIndicator__. To learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
+>tip The __BarIndicator__ class inherits the __IndicatorBase__ class, which is a base class for all indicators, except the __NumericIndicator__. To learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
 
 For the examples in this article a __LinearBar__ indicator will be used, but the examples can be applied to the __RadialBar__ one as well.
 

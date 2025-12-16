@@ -20,7 +20,7 @@ Binding to __RadListBox__ involves the following property:
 
 To bind the __RadListBox__ to a collection of business objects, you should use its __ItemsSource__ property. If you want the changes to the collection to be automatically reflected to the __RadListBoxItems__, the collection should implement the __INotifyCollectionChanged__ interface. There is a build-in collection in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}, which implements the __INotifyCollectionChanged__ interface and you could use it without making any effort - this is the generic __ObservableCollection<T>__. However, to get a full benefit from the change notification support, your custom business objects should implement the __INotifyPropertyChanged__ interface.
 
->tipConsider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
+>tip Consider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
 
 __Exmaple 1: Create an objects class__
 
@@ -119,4 +119,4 @@ __Example 5: Set DisplayMemberPath to 'Name' to show the names of the countries 
 #### __Figure 1: Result of Examples 4 and 5__
 ![Rad List Box ItemsSource DisplayMemberPath 01](images/RadListBox_PopulatingWithData_DataBindingSupportOverview_01.png)
 
->tipIf neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, the content of the item would be set to the value returned by the __ToString()__ method of the business object.
+>tip If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, the content of the item would be set to the value returned by the __ToString()__ method of the business object.

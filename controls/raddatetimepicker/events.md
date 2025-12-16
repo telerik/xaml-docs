@@ -32,7 +32,7 @@ The **ParseDateTimeEventHandler** receives two arguments:
 
 <!-- -->
 
->tipSee an example of implementing custom parsing logic in your __RadDateTimePicker__ control by using the ParseDateTimeValue event [here]({%slug raddatetimepicker-how-to-implement-custom-parsing%}).
+>tip See an example of implementing custom parsing logic in your __RadDateTimePicker__ control by using the ParseDateTimeValue event [here]({%slug raddatetimepicker-how-to-implement-custom-parsing%}).
 
 ## SelectionChanged
 

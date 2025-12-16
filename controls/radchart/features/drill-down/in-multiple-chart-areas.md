@@ -20,7 +20,7 @@ This is the other of displaying the drill down charts via the __RadChart__ contr
 
 In order to use multiple chart areas in your __RadChart__ you have to disable the default layout. This is done by setting the __UseDefaultLayout__ property of the __RadChart__ to __False__.
 
->tipTo learn more about using multiple chart areas read [this topic]({%slug radchart-features-multiple-cahrt-areas%}).
+>tip To learn more about using multiple chart areas read [this topic]({%slug radchart-features-multiple-cahrt-areas%}).
 
 Now you are able to define more than one chart area inside the __RadChart__ control. Here is a sample structure of a __Grid__ that holds two __ChartAreas__.
 
@@ -45,7 +45,7 @@ Now you are able to define more than one chart area inside the __RadChart__ cont
 
 The definition of the __ChartHierarchicalViewDescriptor__ objects is the same as in the [Hierarchical View]({%slug radchart-features-drill-down-hierarchical-view%}) topic, with the excpetion that each of the SeriesMapping objects is associated with the respective chart area.
 
->tipYou can associate multiple __SeriesMapping__ objects belonging to different __ChartHierarchicalViewDescriptor__ objects to one and the same __ChartArea__. You just have to set their __ChartAreaName__ property to the respective chart area's name.
+>tip You can associate multiple __SeriesMapping__ objects belonging to different __ChartHierarchicalViewDescriptor__ objects to one and the same __ChartArea__. You just have to set their __ChartAreaName__ property to the respective chart area's name.
 
 
 

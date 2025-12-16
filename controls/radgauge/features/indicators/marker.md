@@ -12,7 +12,7 @@ position: 1
 
 The __Marker__ is one of the indicator types that the __RadGauge__ control introduces. It directly inherits the __InteractiveIndicator__ class and doesn't introduce any specific features.
 
->tipTo learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
+>tip To learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
 
 The __Marker__ control is represented by a triangle shape. The appearance and the shape can be easily modified.
 

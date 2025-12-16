@@ -42,7 +42,7 @@ And the result is:
 
 ![radscheduleview snapappointments 2](images/radscheduleview_snapappointments_2.png)
 
->tipYou can check [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration%}) article for more details about MinorTickLength property.
+>tip You can check [Configuring the TimeRuler ticks]({%slug radscheduleview-features-timeruler-ticks-configuration%}) article for more details about MinorTickLength property.
 
 ## Customizing the SnapBehavior
 

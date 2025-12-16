@@ -29,7 +29,7 @@ Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ co
 
 To go back to the design view select *View -> Active Document View -> Design View* from the menu. In the 'Objects and Timeline' pane select the newly created __Line__ control. And select *Object -> Edit Style -> Create Empty* from the menu*. *You will be prompted for the name of the style and where to be placed within your application.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking the OK button, a style with target type __Line__ will be created and the properties for this type will be loaded in the 'Properties' pane. Modify them until you get the desired appearance.
 
@@ -50,9 +50,9 @@ After finishing with the changes, it is time to set the style to the __MinorTick
 
 
 
->tipSetting the styles for the y-axis is done analogically via the __AxisY__ property of the __ChartArea__.
+>tip Setting the styles for the y-axis is done analogically via the __AxisY__ property of the __ChartArea__.
 
->tipTo learn how to style the primary ticks take a look at the [Styling the Axis Tick]({%slug radchart-styling-and-appearance-styling-axis-tick%}) topic.
+>tip To learn how to style the primary ticks take a look at the [Styling the Axis Tick]({%slug radchart-styling-and-appearance-styling-axis-tick%}) topic.
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingAxisMinorTickLines_03.png)
 
 Here is the final XAML for the __Styles:__

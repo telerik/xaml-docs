@@ -49,7 +49,7 @@ There are two ways to add __RadPivotGrid__ to your application:
 	</pivot:RadPivotGrid>
 ```
 
->importantYou will have to define the pivot namespace in your __XAML__: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__
+>important You will have to define the pivot namespace in your __XAML__: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__
 
 ## Create Data to Show in RadPivotGrid
 

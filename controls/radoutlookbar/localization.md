@@ -10,7 +10,7 @@ position: 3
 
 # Localization
 
->tipTo learn more about the ways to localize the controls from the suite please read the common topic on [Localization]({%slug common-localization%}).
+>tip To learn more about the ways to localize the controls from the suite please read the common topic on [Localization]({%slug common-localization%}).
 
 __RadOutlookBar__ provides strings for localizing various of its elements. In order to be able to distinguish these resources, an unique identifier, called resource key, is assigned to each string that can be localized.
 

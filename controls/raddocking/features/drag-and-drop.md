@@ -14,7 +14,7 @@ The __Drag and Drop__ compatibilities of the __RadDocking__ control allow you to
 
 Below you can find several step-by-step tutorials for the most common operations that can be accomplished via drag and drop.
 
->tipFind out how to implement [conditional docking]({%slug raddocking-how-to-implement-conditional-docking%}) using __PreviewShowCompass__ event exposed by __RadDocking__.
+>tip Find out how to implement [conditional docking]({%slug raddocking-how-to-implement-conditional-docking%}) using __PreviewShowCompass__ event exposed by __RadDocking__.
 
 ## Docking Panes to a Container
 
@@ -58,7 +58,7 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 	![Adding Panes to Tabbed Documents](images/RadDocking_Features_Drag_and_Drop_030.png)
 
->tipTo dock a pane to a [Tabbed Document]({%slug raddocking-features-pane-groups%}), drag and drop it over the center indicator of the Compass.
+>tip To dock a pane to a [Tabbed Document]({%slug raddocking-features-pane-groups%}), drag and drop it over the center indicator of the Compass.
 
 ## Undocking Panes
 
@@ -70,7 +70,7 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 	![Undocking Panes](images/RadDocking_Features_Drag_and_Drop_040.png)
 
->tipTo undock a pane and make it floatable, just drag it out of its current place and drop it outside any compass indicator.
+>tip To undock a pane and make it floatable, just drag it out of its current place and drop it outside any compass indicator.
 
 ## Using Native ToolWindow Drag
 

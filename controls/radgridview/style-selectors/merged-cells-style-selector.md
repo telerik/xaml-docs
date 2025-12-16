@@ -12,7 +12,7 @@ position: 4
 
 __RadGridView__'s **MergedCellsStyleSelector** can be used to style merged cells differently based on a specific condition.
 
->importantBear in mind that the **MergedCellsStyle** takes precedence over the **MergedCellsStyleSelector** and will overwrite it if both are defined simultaneously.
+>important Bear in mind that the **MergedCellsStyle** takes precedence over the **MergedCellsStyleSelector** and will overwrite it if both are defined simultaneously.
 
 To do so, first create a new class that inherits the **StyleSelector** class and override its **SelectStyle** method:
 

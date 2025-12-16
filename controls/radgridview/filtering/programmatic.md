@@ -213,7 +213,7 @@ When choosing the **Operator**, you have to make sure that the respective **Memb
 | IsLessThan, IsLessThanOrEqualTo, IsGreaterThan, IsGreaterThanOrEqualTo | Numeric types, DateTime, TimeSpan, all types that overload these operators |
 | IsNull, IsNotNull | All filterable null-able types |
 
->tipYou could localize those strings. For the complete list of the localization strings please check this [how to topic]({%slug gridview-filtering-howto-localize-the-filtering-ui%}).
+>tip You could localize those strings. For the complete list of the localization strings please check this [how to topic]({%slug gridview-filtering-howto-localize-the-filtering-ui%}).
 
 To help you understand how this FilterDescriptor is used by the data engine, let’s give a practical example with the one we have created above. The data engine will build a LINQ expression based on the information it reads from the FilterDescriptor instance. It will then execute this query against the query provider of RadGridView’s source collection. Here is what the expression would be for this FilterDescriptor in pseudo-code:
 
@@ -318,7 +318,7 @@ As you might have already guessed, the IColumnFilterDescriptor that is used for 
 
 Notice how this hierarchy is the same as the Popup filtering control layout. Working through the IColumnFilterDescriptor interface makes sure that you cannot randomly add criteria which cannot be correctly displayed by the Popup filtering control.
 
->tipYou can check some sample code on the {% if site.site_name == 'Silverlight' %}[Programmatic Filtering Demo](https://demos.telerik.com/silverlight/#GridView/ProgrammaticFiltering){% endif %}{% if site.site_name == 'WPF' %}[Programmatic Filtering Demo](https://demos.telerik.com/wpf){% endif %}.
+>tip You can check some sample code on the {% if site.site_name == 'Silverlight' %}[Programmatic Filtering Demo](https://demos.telerik.com/silverlight/#GridView/ProgrammaticFiltering){% endif %}{% if site.site_name == 'WPF' %}[Programmatic Filtering Demo](https://demos.telerik.com/wpf){% endif %}.
 
 ## See Also
 

@@ -28,7 +28,7 @@ __Example 1: Setting the EmptyText property__
 
 ![NonEditable RadComboBox with EmptyText displayed](images/ComboBox_EmptyText_2.png)
 
->tipIf the __IsEditable__ property of the RadComboBox is set to __True__ and the control has focus the __EmptyText__ is not displayed.
+>tip If the __IsEditable__ property of the RadComboBox is set to __True__ and the control has focus the __EmptyText__ is not displayed.
 
 ## EmptySelectionBoxTemplate
 
@@ -53,4 +53,4 @@ __Example 2: Set the EmptySelectionBoxTemplate property__
 #### __Figure 2: RadComboBox with EmptySelectionBoxTemplate in the Office2016 theme__
 ![RadComboBox with EmptySelectionBoxTemplate](images/ComboBox_EmptySelectionBoxTemplate.png)
 
->tipThe __EmptySelectionBoxTemplate__ property only works if the RadComboBox is in non-editable mode, i.e its __IsEditable__ property is set to __False__. Otherwise, the __EmptyText__ will be applied.
+>tip The __EmptySelectionBoxTemplate__ property only works if the RadComboBox is in non-editable mode, i.e its __IsEditable__ property is set to __False__. Otherwise, the __EmptyText__ will be applied.

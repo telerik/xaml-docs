@@ -50,7 +50,7 @@ For example you can use the event in order to replace a __DoubleGroupDescription
 
 * __StatusChanged__ - raised whenever the status of the DataProvider is changed. It can be used in order to execute custom logic whenever the DataProvider is updated.            
 
->importantThe __StatusChanged__ event is raised on multiple threads, so it is required to use Dispatcher when executing a custom logic inside of the event handler. 
+>important The __StatusChanged__ event is raised on multiple threads, so it is required to use Dispatcher when executing a custom logic inside of the event handler. 
 
 You can find an example below that demonstrates how to get the current status of the DataProvider:            
 
@@ -157,7 +157,7 @@ Figure 1: Custom folders in the FieldTree.
 
 The event can be used in order to add and/or remove nodes from the tree.  
 
->tipFor more details on how to add/remove nodes from the FieldTree you can check the CustomizeFieldTree example from our [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/CustomizeFieldTree).              
+>tip For more details on how to add/remove nodes from the FieldTree you can check the CustomizeFieldTree example from our [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/CustomizeFieldTree).              
 
 ## See Also
 

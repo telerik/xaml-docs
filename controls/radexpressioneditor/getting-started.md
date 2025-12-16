@@ -45,7 +45,7 @@ You can find the required assemblies for each control from the suite in the [Con
 
 * Create a new project;
 
->importantIf you are using **{{ site.minimum_net_core_version }}** and later, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
+>important If you are using **{{ site.minimum_net_core_version }}** and later, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
 
 >In case you use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please make sure all the needed resource dictionaries are merged:  
 * System.Windows.xaml

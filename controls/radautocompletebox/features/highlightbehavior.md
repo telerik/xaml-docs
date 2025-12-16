@@ -77,7 +77,7 @@ __Overriding FindHighlightedIndex__
 	End Function
 ```
 
->tipIf you don't want to highlight any of the filtered items you should return __-1__ in the __FindHighlightedIndex()__ method.
+>tip If you don't want to highlight any of the filtered items you should return __-1__ in the __FindHighlightedIndex()__ method.
 
 >If the returned index from the __FindHighlightedIndex()__ method goes out of range - no item will be highlighted (the index of the highlighted item will be set to -1).
 

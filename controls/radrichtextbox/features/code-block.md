@@ -59,7 +59,7 @@ Additionally, you can enable the display of line numbers and the alternating lin
 The inner representation of the code block in the document is achieved by surrounding the content with __CodeAnnotationRangeStart__ and __CodeAnnotationRangeEnd__.
         
 
->tipMore about annotations you can learn in the respective help article [here]({%slug radrichtextbox-features-document-elements-annotations%}).
+>tip More about annotations you can learn in the respective help article [here]({%slug radrichtextbox-features-document-elements-annotations%}).
           
 
 To remove the code block you can use the __DeleteCodeBlock()__ method of __RadRichTextBox__ accepting __CodeAnnotationRangeStart__ as parameter:
@@ -101,6 +101,6 @@ You can also register or change which style will be used for which classificatio
 ```
 
 
->tipYou can download a runnable project showing how to add custom code formatting language from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RadRichTextBox / CustomCodeFormattingLanguage__.
+>tip You can download a runnable project showing how to add custom code formatting language from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RadRichTextBox / CustomCodeFormattingLanguage__.
           
 

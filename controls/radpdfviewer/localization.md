@@ -50,7 +50,7 @@ RadPdfViewer has several localization strings so in order to be able to distingu
 The three files should keep the same resource keys, whereas the values must be the translated ones.
         
 
->tipIt is easiest to copy the default __RadPdfViewerResources.resx__ file and rename it. Afterwards, go through all string and change only the Values for the strings that will be used in your application.
+>tip It is easiest to copy the default __RadPdfViewerResources.resx__ file and rename it. Afterwards, go through all string and change only the Values for the strings that will be used in your application.
           
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.

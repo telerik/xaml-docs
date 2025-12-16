@@ -72,7 +72,7 @@ __Example 2: Adding RadWindow in code__
 
 To open the __RadWindow__ you have to call its __Show()__ method.
 
->tipIn order to make the window modal you have to call the __ShowDialog()__ method. To learn more about modal windows read [here]({%slug radwindow-features-modal-windows%}).
+>tip In order to make the window modal you have to call the __ShowDialog()__ method. To learn more about modal windows read [here]({%slug radwindow-features-modal-windows%}).
 
 __Example 3: Calling the Show() method__
 
@@ -89,9 +89,9 @@ __Example 3: Calling the Show() method__
 
 To add content to the __RadWindow__ you have to use the __Content__ property or the __ContentTemplate__ property.
 
->tipAs the __Content__ property is of type object you can set it to any control that you like. If you want to have a more complex content that consists of more than one control, be sure to wrap them inside a layout control and pass the layout control as content.You can also set the content of the __RadWindow__ to a __UserControl__.
+>tip As the __Content__ property is of type object you can set it to any control that you like. If you want to have a more complex content that consists of more than one control, be sure to wrap them inside a layout control and pass the layout control as content.You can also set the content of the __RadWindow__ to a __UserControl__.
 
->tipYou can skip the in-line setting of the __Content__ property and define the content directly under the __RadWindow__ tag.
+>tip You can skip the in-line setting of the __Content__ property and define the content directly under the __RadWindow__ tag.
 
 >The only scenario, where you can add content to the __RadWindow__ at design-time, is when the __RadWindow__ represents an entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 

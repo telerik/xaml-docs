@@ -92,8 +92,8 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 ```
 
 
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomKeyboardCommandProvider).
+>tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomKeyboardCommandProvider).
           
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
 
->tipFor some additional details you can also check [this blog post](http://blogs.telerik.com/xamlteam/posts/10-06-30/how---to-change-the-default-keyboard-behavior-in-radgridview-for-silverlight-wpf.aspx)
+>tip For some additional details you can also check [this blog post](http://blogs.telerik.com/xamlteam/posts/10-06-30/how---to-change-the-default-keyboard-behavior-in-radgridview-for-silverlight-wpf.aspx)

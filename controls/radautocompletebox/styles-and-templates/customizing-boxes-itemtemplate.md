@@ -38,7 +38,7 @@ The __Flag__ property should be of type string and will be bound to the __Source
 
 After that you need to create the ViewModel and populate it with some data.
 
->tipMore detailed information how to bind __RadAutoCompleteBox__ to an object could be found [here]({%slug radautocompletebox-populating-with-data-binding-to-object%}).
+>tip More detailed information how to bind __RadAutoCompleteBox__ to an object could be found [here]({%slug radautocompletebox-populating-with-data-binding-to-object%}).
 
 Next a valid DataTemplate with the correct bindings for the __Name__ and __Flag__ property of the ItemsSource items should be created: 
 

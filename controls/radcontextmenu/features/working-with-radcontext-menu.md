@@ -50,7 +50,7 @@ __Example 1: Attach a RadContextMenu__
 
 >The class that represents the individual menu items is __Telerik.Windows.Controls.RadMenuItem__, located in the __Telerik.Windows.Controls.Navigation__ assembly.
 
->tipTo learn more about the __RadMenuItem__ control, please take a look at the [RadMenu's documentation]({%slug radmenu-overview%}).
+>tip To learn more about the __RadMenuItem__ control, please take a look at the [RadMenu's documentation]({%slug radmenu-overview%}).
 
 The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample declaration of several child menu items.
 
@@ -114,7 +114,7 @@ __Example 3: Get clicked element__
 	Dim item As RadTreeViewItem = radContextMenu.GetClickedElement(Of RadTreeViewItem)()
 ```
 
->tipA more complex example scenario can be found in the [Use RadContextMenu with a RadGridView]({%slug radcontextmenu-how-to-use-radcontextmenu-with-radgridview%}) topic and in the [Select the Clicked Item of a RadTreeView]({%slug radcontextmenu-how-to-select-the-clicked-item-of-radtreeview%}) topic.
+>tip A more complex example scenario can be found in the [Use RadContextMenu with a RadGridView]({%slug radcontextmenu-how-to-use-radcontextmenu-with-radgridview%}) topic and in the [Select the Clicked Item of a RadTreeView]({%slug radcontextmenu-how-to-select-the-clicked-item-of-radtreeview%}) topic.
 
 ## See Also
 

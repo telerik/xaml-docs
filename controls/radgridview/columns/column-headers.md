@@ -89,7 +89,7 @@ The header of the column plays the main role when we want to sort it. It also ho
 
 ![Telerik {{ site.framework_name }} DataGrid Column Headers 4](images/RadGridView_ColumnHeaders_4.png)
 
->tipAs of Q2 2013, the user can benefit from __Column Sort Sequence Indicator__. In order to have this feature enabled you need to set ShowColumnSortIndexes property of RadGridView to True.
+>tip As of Q2 2013, the user can benefit from __Column Sort Sequence Indicator__. In order to have this feature enabled you need to set ShowColumnSortIndexes property of RadGridView to True.
 
 To learn more about the sorting functionality take a look at the [Basic Sorting]({%slug gridview-sorting-basics%}) topic in the Sorting chapter.
 

@@ -22,7 +22,7 @@ As of __Q2 2013__ RadPropertyGrid exposes new property - __RenderMode__. It repr
 
 
 
->tipFor compatibility reasons, Hierarchical mode is also preserved, but it is recommended to use Flat mode.
+>tip For compatibility reasons, Hierarchical mode is also preserved, but it is recommended to use Flat mode.
 
 There are a number of benefits of using the __Flat__ render mode. Some are listed below:
       

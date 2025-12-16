@@ -66,7 +66,7 @@ __Example 4: Adding the GridViewTableDefinition to the ChildTableDefinitions pro
 	Me.radGridView.ChildTableDefinitions.Add(d)
 ```
 
->tipThe __GridViewTableDefinition__ object also exposes a __ChildTableDefinitions__ property, which means that you can nest grids on more than one level.
+>tip The __GridViewTableDefinition__ object also exposes a __ChildTableDefinitions__ property, which means that you can nest grids on more than one level.
 
 ## Check If a Hierarchy Item Is Expanded
 

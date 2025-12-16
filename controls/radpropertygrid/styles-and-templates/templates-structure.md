@@ -16,7 +16,7 @@ Like most UI controls, RadPropertyGrid allows you to template it in order to cha
 
 * [PropertyGridField Template Structure](#propertygridfield-template)
 
->tipFor more information about templating and how to modify the default templates read the common topic on [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
+>tip For more information about templating and how to modify the default templates read the common topic on [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
 
 Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) on two different approaches on how to extract the ControlTemplates.
 

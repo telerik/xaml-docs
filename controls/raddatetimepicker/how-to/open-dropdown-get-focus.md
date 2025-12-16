@@ -18,7 +18,7 @@ __Example 1: Set the OpenDropDownOnFocus property__
 	<telerik:RadDateTimePicker OpenDropDownOnFocus="True"/>
 ```
 
->tipThe default value of the __RadDateTimePicker__'s __OpenDropDownOnFocus__ property is __False__.
+>tip The default value of the __RadDateTimePicker__'s __OpenDropDownOnFocus__ property is __False__.
 
 ## See Also
 

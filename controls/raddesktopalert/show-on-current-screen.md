@@ -48,7 +48,7 @@ __Detach the RadDesktopAlertManager__
     manager.Detach();
 ```
 
->importantDoing so will close all previously opened alerts.
+>important Doing so will close all previously opened alerts.
 
 >You do not need to call the Detach method if you want to attach the manager to a different element.
 

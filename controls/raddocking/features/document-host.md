@@ -38,7 +38,7 @@ Here is the XAML declaration of the above structure.
 	</telerik:RadDocking>
 ```
 
->tipSince the DocumentHost is meant to host the editable documents in your application, it is good idea to use [RadDocumentPanes]({%slug raddocking-panes-raddocumentpane%}) instead of [RadPanes]({%slug raddocking-panes-radpane%}).
+>tip Since the DocumentHost is meant to host the editable documents in your application, it is good idea to use [RadDocumentPanes]({%slug raddocking-panes-raddocumentpane%}) instead of [RadPanes]({%slug raddocking-panes-radpane%}).
 
 >Placing `RadPaneGroup` directly in the DocumentHost is not a supported scenario in the Docking control. The RadPaneGroup needs to be placed in a `RadSplitContainer`.
 

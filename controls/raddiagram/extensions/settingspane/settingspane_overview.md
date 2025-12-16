@@ -64,7 +64,7 @@ __RadDiagram__ exposes two events that come in handy while working with the defa
 
 	* An __AdditionalContentActivatedEventArgs__ object, that gives you access to a __ContextItems__ collection. This collection of __IDiagramItem__ objects represents the items that have activated the additional content. In most cases it contains a single item - the __RadDiagramItem__ that has activated the __SettingsPane__.				
 
-	>tipPlease note that you can handle this event in order to disable the __SettingsPane__ from displaying on certain __RadDiagramItems__.			
+	>tip Please note that you can handle this event in order to disable the __SettingsPane__ from displaying on certain __RadDiagramItems__.			
 
 * __AdditionalContentActivated__ - this event is raised by a __RadDiagram__ to inform layouts that the additional content has been activated. The event handler receives two arguments:			
 

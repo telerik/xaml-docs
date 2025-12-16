@@ -34,7 +34,7 @@ The __Multiple__ value of the __SelectionMode__ enumeration allows the user to a
 
 The __Extended__ selection on the other hand, allows users to select multiple records using the common key modifiers - __Shift__ and __Ctrl__. Holding __Shift__ while selecting a row will select the range of rows between the newly-selected row and the previously-selected one. By holding __Ctrl__ upon selection, the selected row will be added to the current selection or removed from it if it has already been selected. The same rules apply to the cells if the [SelectionUnit]({%slug gridview-selection-basics%}) property is set to __Cell__. If no modifiers are pressed when selecting a unit only that unit will be selected.
 
->tipPressing __Ctrl+A__ will select all items.
+>tip Pressing __Ctrl+A__ will select all items.
 
 ![Telerik {{ site.framework_name }} DataGrid cell selection](images/RadGridView_MultipleSelection_1.png)![{{ site.framework_name }} RadGridView Multiple Selection](images/gridview_cell_selection.png)
 

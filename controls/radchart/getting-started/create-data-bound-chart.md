@@ -252,7 +252,7 @@ The __X-axis__ can be further customized by replacing the month numbers (1, 2, 3
 And here is the same chart but this time showing month names as categories for the __X-axis__ instead of the month numbers.
       ![{{ site.framework_name }} RadChart  ](images/RadChart_GettingStarted_DataBoundChart_04.png)
 
->tipTo make the x-Axis labels more readable you can use one of the label features provided by the __XAxis__ class. For more information read [here]({%slug radchart-features-axes-x-axis%}).
+>tip To make the x-Axis labels more readable you can use one of the label features provided by the __XAxis__ class. For more information read [here]({%slug radchart-features-axes-x-axis%}).
 
 If you need further customizations of the chart you can take a look at some of the following topics:
 

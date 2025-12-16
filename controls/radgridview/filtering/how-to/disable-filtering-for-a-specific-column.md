@@ -41,7 +41,7 @@ __Example 2: Disable the filtering of the Name column when generating it__
 
 ![The Name column with disabled filtering](images/disable-filter.png)
 
->importantIf the data displayed in the column is not filterable in the first place, setting the IsFilterable property will not have any effect. To learn what your objects need to implement for the column to become filterable, please have a look at the [Filter a Custom Type]({%slug gridview-filtering-howto-filter-a-custom-type%}) article.
+>important If the data displayed in the column is not filterable in the first place, setting the IsFilterable property will not have any effect. To learn what your objects need to implement for the column to become filterable, please have a look at the [Filter a Custom Type]({%slug gridview-filtering-howto-filter-a-custom-type%}) article.
 
 ## See Also
 

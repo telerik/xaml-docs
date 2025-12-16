@@ -27,7 +27,7 @@ There are several ways to populate a tab control with tab items and they are:
 
 Each one of the approaches described above is applicable for certain cases and that’s why you have to choose the one that best fits your requirements.
 
->tipBear in mind that the XAML file is the best place to declare your user interface; use the code-behind only when you cannot do that in XAML.
+>tip Bear in mind that the XAML file is the best place to declare your user interface; use the code-behind only when you cannot do that in XAML.
 
 ## See Also
 

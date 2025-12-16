@@ -22,11 +22,11 @@ In order to make your __RadComboBox__ editable, you should set its __IsEditable_
 	<telerik:RadComboBox x:Name="radComboBox" IsEditable="True"/>
 ```
 
->tipWhen making your __RadComboBox__ editable, you could better distinguish the benefit of the [AutoComplete]({%slug radcombobox-features-autocomplete%}). 
+>tip When making your __RadComboBox__ editable, you could better distinguish the benefit of the [AutoComplete]({%slug radcombobox-features-autocomplete%}). 
 
 By default, the __RadComboBox__ is non-editable. Which means that its __Input Area__ is hidden.
 
->tipIf your __RadComboBox__ is non-editable, you could still benefit from the [AutoComplete]({%slug radcombobox-features-autocomplete%}) feature, but instead of autocomplete your items will be auto-selected.
+>tip If your __RadComboBox__ is non-editable, you could still benefit from the [AutoComplete]({%slug radcombobox-features-autocomplete%}) feature, but instead of autocomplete your items will be auto-selected.
 
 >When your __RadComboBox__ is editable and has ItemTemplate defined, you should set the [telerik:TextSearch.TextPath]({%slug radcombobox-features-selection%}) property to point to the required property of the bussiness object which will be shown in the input field.
 
@@ -42,7 +42,7 @@ __Example 1: Setting the IsEditable and IsReadOnly to True__
 	<telerik:RadComboBox x:Name="radComboBox" IsEditable="True" IsReadOnly="True"/>
 ```
 
->tipSetting the __RadComboBox__'s __IsReadOnly__ property to __True__ will affect the __RadComboBox__ only when it is __editable__.
+>tip Setting the __RadComboBox__'s __IsReadOnly__ property to __True__ will affect the __RadComboBox__ only when it is __editable__.
 
 ## StaysOpenOnEdit
 

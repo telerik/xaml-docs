@@ -55,7 +55,7 @@ __Example 1: Grouping applied programmatically__
 
 >Тhe __GroupDescriptors__ property of RadGridView is a __collection__ so you can add more than one __GroupDescriptor__ to a certain __RadGridView__.
 
->tipConsider using the code-behind approach only when changing the grouping criteria __run-time__.
+>tip Consider using the code-behind approach only when changing the grouping criteria __run-time__.
 
 Check out the chapters entirely dedicated to the grouping functionality of __RadGridView__ and find the answers to the following questions:
 

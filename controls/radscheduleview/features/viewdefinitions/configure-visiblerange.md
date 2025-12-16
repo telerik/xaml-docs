@@ -21,7 +21,7 @@ TimelineViewDefinition	|	CurrentDate	|	7
 
 >The VisibleRangeEnd is VisibleRangeStart+VisibleDays for all view definitions.
 
->tipThe easiest way to create a WeekViewDefinition that behaves like the DayViewDefinition is to use a DayViewDefinition and set its VisibleDays=7.
+>tip The easiest way to create a WeekViewDefinition that behaves like the DayViewDefinition is to use a DayViewDefinition and set its VisibleDays=7.
 
 For advanced customization of the VisibleRange the ViewDefinitionBase class provides two virtual methods:				
 

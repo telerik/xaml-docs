@@ -18,11 +18,11 @@ The item labels are part of the series definition items and are represented by t
 
 Open your __RadChart__ project in Expression Blend and select the __RadChart__ you want to modify. On the same scene you should place a __SeriesItemLabel__ control, that will be used as a dummy. To do so choose the 'Assets' tab. From the *Controls -> All* section select the __SeriesItemLabel__ control. With your mouse create a new instance of the control on the scene. Now select the newly created control and from the menu select *Object -> Edit Style -> Edit Copy*. You will be prompted for the name of the style and where to be placed within your application.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking the OK button, a style with target type __SeriesItemLabel__ will be created and the properties for this type will be loaded in the 'Properties' pane. Modify them untill you get the desired appearance.
 
->tipYou can also set the __Style__ for the __Label's__ border via the __LabelStyle__ property and the __Style__ for the __Label's__ connector via the __ConnectorStyle__ property.
+>tip You can also set the __Style__ for the __Label's__ border via the __LabelStyle__ property and the __Style__ for the __Label's__ connector via the __ConnectorStyle__ property.
 
 You can modify every one of the properties available for the styles. After that set the created style to the __DefaultSeriesDefinition__ of your __RadChart__ and delete the dummy control.
 

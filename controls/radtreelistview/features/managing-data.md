@@ -14,7 +14,7 @@ position: 5
 
 Telerik's __RadTreeListView__ allows you not only to display sets of data, but also to manage them. You are able to use the standard operations - __Insert__, __Update__ and __Delete__. You can also validate the data. Besides using this functionality, you are able to control it via the several events raised at the most important key points of the operation.
 
->tipAs the __RadTreeListView__ directly inherits the __RadGridView__ it uses the same data management mechanism. To learn more read the [respective topics]({%slug gridview-managing-data-overview%}) in the __RadGridView's__ documentation.
+>tip As the __RadTreeListView__ directly inherits the __RadGridView__ it uses the same data management mechanism. To learn more read the [respective topics]({%slug gridview-managing-data-overview%}) in the __RadGridView's__ documentation.
 
 ## Managing Collections
 

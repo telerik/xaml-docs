@@ -33,7 +33,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	Private serviceClient As New WcfServiceClient()
 ```
 
->tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the {% if site.site_name == 'Silverlight' %}[Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html){% endif %} topic.
+>tip For more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the {% if site.site_name == 'Silverlight' %}[Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html){% endif %} topic.
 
 * The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects.
 
@@ -126,7 +126,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	End Class
 ```
 
->tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html) topic.
+>tip For more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html) topic.
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Customers__ from the database: 
 
@@ -193,7 +193,7 @@ Run your demo, the result can be seen on the next picture:
 
 ![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromWcf 010](images/RadGridView_PopulatingWithDataLoadFromWcf_010.PNG)
 
->tipIf you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
+>tip If you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
 
 ## See Also
 

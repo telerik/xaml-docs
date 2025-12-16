@@ -38,11 +38,11 @@ Besides the __Sampling__, the __RadChart__ provides you with __Zooming__ and __S
 
 * __ScrollOnly__ - only scrolling is enabled.
 
->tipThe __ZoomScrollingSetting__ exposes a __PropertyChanged__ event which allows you to execute your custom logic, when a certain property has changed.
+>tip The __ZoomScrollingSetting__ exposes a __PropertyChanged__ event which allows you to execute your custom logic, when a certain property has changed.
 
 To apply the __ZoomScrollingSettings__ you have to set them to the __ZoomScrollingSettingsX__ and/or the __ZoomScrollingSettingsY__ of the __ChartArea__.
 
->tipCombining the Zooming feature with the Sampling feature can be very useful.
+>tip Combining the Zooming feature with the Sampling feature can be very useful.
 
 Here is an example.
 

@@ -15,7 +15,7 @@ You can manipulate the controls easily with two powerful extension methods:
 * __ParentOfType<>__ 
 * __ChildrenOfType<>__.
 
->tipYou can access all items currently available in RadGridView through __RadGridView.Items__ collection.
+>tip You can access all items currently available in RadGridView through __RadGridView.Items__ collection.
 
 >Generally we do not recommend working with the visual elements as RadGridView is a virtualized control and its elements are reused as they go in and out the visual area. You can check the topic on [UI virtualization]({%slug radgridview-features-ui-virtualization%}) for further information. 
 

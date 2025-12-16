@@ -55,7 +55,7 @@ Here is an example usage of these commands:
 
 
 
->tipIn order to learn more about commands and how to use them refer to [this article]({%slug radrichtextbox-features-commands%}).
+>tip In order to learn more about commands and how to use them refer to [this article]({%slug radrichtextbox-features-commands%}).
           
 
 ## Working with Comments Programmatically

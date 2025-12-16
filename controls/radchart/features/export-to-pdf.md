@@ -14,7 +14,7 @@ position: 32
 
 This help topic will demonstrate how to export RadChart and RadGridView controls to PDF document simultaneously. For the purpose you should build the export-to-image functionality and export the image to PDF using our [Documents Format Providers](http://www.telerik.com/help/silverlight/radrichtextbox-features-import-export.html) (also part of the RadControls for Silverlight suite).
 
->tipA sample project demonstrating Exporting RadChart to PDF can be found in the end of this [blogpost](http://blogs.telerik.com/blogs/posts/11-06-16/pdf-export-with-radchart-for-silverlight.aspx).
+>tip A sample project demonstrating Exporting RadChart to PDF can be found in the end of this [blogpost](http://blogs.telerik.com/blogs/posts/11-06-16/pdf-export-with-radchart-for-silverlight.aspx).
 
 Basically, all you need to do is construct a document model based on the contents you want to export, and then pass the document to the __PdfFormatProvider__. This way you can combine the output of several controls into a single document export. To export the chart part of the document:
 

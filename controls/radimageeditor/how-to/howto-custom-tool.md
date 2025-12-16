@@ -72,7 +72,7 @@ This allows you to implement virtually any behavior you want within your tool an
 
 
 
-	>tipDo not forget to initialize the command in the constructor of the tool.
+	>tip Do not forget to initialize the command in the constructor of the tool.
 
 1. __Create command context.__<br/>Create context for your custom command. In this case we will take into account the Opacity, Rotation, Scale and Image properties.
             
@@ -101,7 +101,7 @@ This allows you to implement virtually any behavior you want within your tool an
 
 1. __Create UI settings for the tool.__
 	
-	>tip__ToolSettingsHeader__ is a content control located in the Telerik.Windows.Controls.ImageEditor assembly.
+	>tip __ToolSettingsHeader__ is a content control located in the Telerik.Windows.Controls.ImageEditor assembly.
 	              
 	
 	__Example 4: Create Custom Tool Settings__
@@ -193,7 +193,7 @@ This allows you to implement virtually any behavior you want within your tool an
 	>The __IsDirty__ property is used in the commiting logic of tools. Make sure to set it to true when a change in the settings has occured and to false when the settings are reset.
 	              
 	
-	>tipThe complete code is available in the XAML SDK repository: [Custom Watermark Tool](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/CustomWatermarkTool).
+	>tip The complete code is available in the XAML SDK repository: [Custom Watermark Tool](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/CustomWatermarkTool).
 	          
 
 ## See Also

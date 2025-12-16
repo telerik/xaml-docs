@@ -25,7 +25,7 @@ Here is a list of the supported languages:
 
 ![Telerik {{ site.framework_name }} DataGrid Localization 4](images/RadGridView_Localization_4.png)
 
->tipTo learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
+>tip To learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
 
 >__In order to dynamically localize the GridView at runtime, you should recreate it.__
 

@@ -368,7 +368,7 @@ __Example 1: Generating the exported workbook__
 
 No matter which of these three formats you have chosen, you will have to create a new __RadDocument__, which will hold the content, that will be exported. After that, you have to set this __RadDocument__ instance to the Document property of __RadRichTextBox__. This __RadRichTextBox__ must be visualized in order to be able to export its data. To generate __RadDocument__ you can use the code below:        
 
->tipYou can put __RadRichTextBox__ as a content of a __RadWindow__ and use the window as PrintPreview dialog. You can check a full implementation of this solution in our {% if site.site_name == 'Silverlight' %}[Export](https://demos.telerik.com/silverlight/#PivotGrid/Export){% endif %}{% if site.site_name == 'WPF' %}[Export](https://demos.telerik.com/wpf/){% endif %} demo. If you do not want to show PrintPreview dialog, you can set the visibility of the window to collapsed.          
+>tip You can put __RadRichTextBox__ as a content of a __RadWindow__ and use the window as PrintPreview dialog. You can check a full implementation of this solution in our {% if site.site_name == 'Silverlight' %}[Export](https://demos.telerik.com/silverlight/#PivotGrid/Export){% endif %}{% if site.site_name == 'WPF' %}[Export](https://demos.telerik.com/wpf/){% endif %} demo. If you do not want to show PrintPreview dialog, you can set the visibility of the window to collapsed.          
 
 __Example 2: Generating the exported document__
 

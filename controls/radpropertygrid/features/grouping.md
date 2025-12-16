@@ -112,7 +112,7 @@ __Example 6: Collapsing all RadPropertyGrid Groups__
 	Me.PropertyGrid1.CollapseAllGroups()
 ```
 
->importantYou need to set __RenderMode="Flat"__ in order to be able to execute the methods above. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
+>important You need to set __RenderMode="Flat"__ in order to be able to execute the methods above. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
 ## GroupDefinitions
 
@@ -137,7 +137,7 @@ __Example 7: Suspending and Resuming notifications__
 	Me.PropertyGrid1.GroupDefinitions.ResumeNotifications()
 ```
 
->importantYou need to set __RenderMode="Flat"__ in order to be able to work with the GroupDefinitions collection. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
+>important You need to set __RenderMode="Flat"__ in order to be able to work with the GroupDefinitions collection. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
 ## AutoExpandGroups
 

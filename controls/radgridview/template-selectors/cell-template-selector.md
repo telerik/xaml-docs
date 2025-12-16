@@ -12,7 +12,7 @@ position: 1
 
 This article will show you how to conditionally apply a different data template to RadGridView cells using the __CellTemplateSelector__ and **CellEditTemplateSelector** properties.
 
->tipTo learn the basics about __TemplateSelectors__ please check [this article]({%slug gridview-template-selectors-overview%}).
+>tip To learn the basics about __TemplateSelectors__ please check [this article]({%slug gridview-template-selectors-overview%}).
 
 Assume we have a GridView bound to a collection of clubs. Each club has a property StadiumCapacity. What we want to achieve is to apply one data template if the capacity is greater than 50 000 and another otherwise:
 

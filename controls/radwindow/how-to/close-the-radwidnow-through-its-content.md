@@ -18,7 +18,7 @@ To close the __RadWindow__ through its content you have to get the instance of t
 
 ## Content, directly set to the RadWindow
 
->tipTo learn more about how to use the __RadWindow__ as user control read [this topic]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
+>tip To learn more about how to use the __RadWindow__ as user control read [this topic]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
 Here is a sample __RadWindow__, used as user control, with a button in it:
 
@@ -60,7 +60,7 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 	End Sub
 ```
 
->tipInstead of event handler you can use a __RadButton__ with the __Close__ command for the __RadWindow__. Here is an example:
+>tip Instead of event handler you can use a __RadButton__ with the __Close__ command for the __RadWindow__. Here is an example:
 
 
 
@@ -75,7 +75,7 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 
 In this scenario the __Button__ is placed inside a __UserControl__, which is passed as the __Content__ of the __RadWindow__. In this case you cannot access the __RadWindow__ directly from the __UserControl__ as it is not aware of its existance. In order to close the __RadWindow__ when the button is clicked, you have to use the __ParentOfType\<T\>()__ extension method to get the __RadWindow__ instance.
 
->tipThe __ParentOfType\<T\>()__ is available when you use the __Telerik.Windows.Controls__ namespace from the __Telerik.Windows.Controls__. It returns the first element of this type up in the __Visual Tree__.
+>tip The __ParentOfType\<T\>()__ is available when you use the __Telerik.Windows.Controls__ namespace from the __Telerik.Windows.Controls__. It returns the first element of this type up in the __Visual Tree__.
 
 
 

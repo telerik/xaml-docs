@@ -14,7 +14,7 @@ position: 0
 
 The __Custom Line__ annotation allows you to place a straight line at a specific place in your __Chart Area__. In order to place the __Custom Line__ you have to add a __CustomLine__ object to the __Annotations__ collection of the __ChartArea__. You also have to use its__Slope and YIntercept__properties.
 
->tipYou can place more than one __CustomLine__ in your __ChartArea__.
+>tip You can place more than one __CustomLine__ in your __ChartArea__.
 
 In order to define the line you have to set the __Slope__ and/or the __YIntercept__ properties. The function which draws the custom line is __y = mx + b__, where '__m__' is the __Slope__ and '__b__' is __YIntercept__.
 

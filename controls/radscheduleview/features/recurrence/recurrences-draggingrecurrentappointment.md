@@ -33,7 +33,7 @@ First, let’s have the following recurrent appointment added to the Appointment
 	);
 ```
 
->tipYou could check [here]({%slug radscheduleview-features-recurrences-overview%}) for more details about recurrent appointments.
+>tip You could check [here]({%slug radscheduleview-features-recurrences-overview%}) for more details about recurrent appointments.
 
 If the user drags and drops a single occurrence of this appointment:
 

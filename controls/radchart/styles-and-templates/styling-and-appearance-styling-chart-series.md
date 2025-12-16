@@ -49,7 +49,7 @@ The second way is to define a style and set it through the __SeriesStyles__ comp
 
 >Using this type of styling only the series elements will get customized, the item labels and the legend items will remain with their default appearance.
 
->tipBy setting the __Styles__ this way, they will get applied to every series of this type. In order to use styles and apply them to certain series you can combine the two methods. This is done by setting them to the __SeriesDefinition.ItemStyle__ property for item-drawn series or the __SeriesDefinition.SeriesStyle__ property for self-drawn series.
+>tip By setting the __Styles__ this way, they will get applied to every series of this type. In order to use styles and apply them to certain series you can combine the two methods. This is done by setting them to the __SeriesDefinition.ItemStyle__ property for item-drawn series or the __SeriesDefinition.SeriesStyle__ property for self-drawn series.
 
 * To create a style for the __Self-Drawing Series__ (Line, StackedLine, Spline, StackedSpline, Area, StackedArea, StackedArea100, SplineArea, StackedSplineArea, StackedSplineArea100, Range, SplineRange) you have to create a style that targets the __SelfDrawingSeries__ class in the __Telerik.Windows.Controls.Charting__ namespace. 
 
@@ -125,7 +125,7 @@ Here is an example:
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_03.png)
 
->tipTo learn how to change the foreground of the item's label when using styles take a look at the [Styling the Item Labels]({%slug radchart-styling-and-appearance-styling-item-labels%}) topic.
+>tip To learn how to change the foreground of the item's label when using styles take a look at the [Styling the Item Labels]({%slug radchart-styling-and-appearance-styling-item-labels%}) topic.
 
 ## Styling Series via PaletteBrushes
 
@@ -138,7 +138,7 @@ The __RadChart__ exposes two __BrushCollections__:
 
 
 
->tipThe __PaletteBrushes__ property is independent of the series type.
+>tip The __PaletteBrushes__ property is independent of the series type.
 
 >The __PaletteBrush__ collection on the __ChartArea__ level takes precedence over the one on the __RadChart__ level and the latter takes precedence over the theme resources.
 
@@ -226,7 +226,7 @@ or
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_05.png)
 
->tipYou can set the __PaletteBrushesUseSolidColors__ property to true so that those Themes that have *Gradient* colors will have their Gradients set to the SolidColors as given in the Palette. Such themes are *Vista*, *Summer* and *Windows7*. For comparison you may take a look at the following two pictures:
+>tip You can set the __PaletteBrushesUseSolidColors__ property to true so that those Themes that have *Gradient* colors will have their Gradients set to the SolidColors as given in the Palette. Such themes are *Vista*, *Summer* and *Windows7*. For comparison you may take a look at the following two pictures:
 
 * PaletteBrushesUseSolidColors = *False* and Theme is set to Vista:
 
@@ -276,7 +276,7 @@ Here is an example:
 
 
 
->tipThe Default Style is different for RadChart with version older than Q1 2010.
+>tip The Default Style is different for RadChart with version older than Q1 2010.
 
 
 

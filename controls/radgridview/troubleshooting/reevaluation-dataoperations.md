@@ -32,7 +32,7 @@ There are four possible solutions:
 
 >When a __nested property__ is modified and a notification is raised for it as suggested in point 1., then RadGridView will not receive it and the data displayed will not be re-evaluated. In that case the suggested solutuons listed as 2. or 3. should be applied.
 
->tipYou can also find the blog post on [Fast real-time update](http://blogs.telerik.com/vladimirenchev/posts/10-10-04/fast-real-time-data-update-for-your-silverlight-and-wpf-applications.aspx).
+>tip You can also find the blog post on [Fast real-time update](http://blogs.telerik.com/vladimirenchev/posts/10-10-04/fast-real-time-data-update-for-your-silverlight-and-wpf-applications.aspx).
 
 ## See Also 
 * [Basic Filtering]({%slug gridview-filtering-basic%})

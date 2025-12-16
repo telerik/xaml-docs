@@ -16,7 +16,7 @@ To style the clock in your __RadDateTimePicker__ you can do the following:
 
 * Modify the default resources for the __DateTimePickerClock__, that are generated together with the __RadDateTimePicker's Style__.
 
->tipTo learn how to generate the default __Style__ for the __RadDateTimePicker__ read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}). To learn how to modify the layout of the calendar, look [here]({%slug raddatetimepicker-styling-calendar%}).
+>tip To learn how to generate the default __Style__ for the __RadDateTimePicker__ read [here]({%slug raddatetimepicker-styling-raddatetimepicker%}). To learn how to modify the layout of the calendar, look [here]({%slug raddatetimepicker-styling-calendar%}).
 
 ## Setting the ClockStyle property
 

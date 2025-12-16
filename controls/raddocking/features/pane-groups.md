@@ -63,7 +63,7 @@ __Example 2: Adding panes to a RadPaneGroup__
 
 In order to remove panes run-time you should either close the pane or remove the pane from the group via [drag and drop]({%slug raddocking-features-drag-and-drop%}).
 
->tipIf you want to restrict the user not to close panes, take a look at the [How to Disable the Close ("X") Button]({%slug raddocking-how-to-disable-the-close-button%}) topic.
+>tip If you want to restrict the user not to close panes, take a look at the [How to Disable the Close ("X") Button]({%slug raddocking-how-to-disable-the-close-button%}) topic.
 
 ## Removing Panes Programmatically
 
@@ -141,7 +141,7 @@ __Example 6: Show all group panes__
 
 >__ShowAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
->tipIf you need information about the events fired when showing and hiding panes, take a look at the [Events]({%slug raddocking-events-overview%}) topic.
+>tip If you need information about the events fired when showing and hiding panes, take a look at the [Events]({%slug raddocking-events-overview%}) topic.
 
 ## Pinning All Panes
 
@@ -183,7 +183,7 @@ __Example 7: Unpin all group panes__
 
 >__UnpinAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
->tipIf you need information about the events fired when pinning and unpining panes, take a look at the [Events]({%slug raddocking-events-overview%}) topic.
+>tip If you need information about the events fired when pinning and unpining panes, take a look at the [Events]({%slug raddocking-events-overview%}) topic.
 
 ## Persist Content with the IsContentPreserved Property
 

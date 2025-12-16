@@ -29,7 +29,7 @@ In some scenarios it is required to load thousands of items in a __RadComboBox__
 	</telerik:RadComboBox>
 ```
 
->importantWhen RadComboBox is virtualized the filtering is not supported.
+>important When RadComboBox is virtualized the filtering is not supported.
 
 ## See Also
 

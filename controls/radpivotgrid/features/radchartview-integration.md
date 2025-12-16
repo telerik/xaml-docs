@@ -32,7 +32,7 @@ In order to create __RadChartView__ you need data source. In our case we need th
 
 * __SelectedAxis__ - Gets or sets the PivotAxis which will be used as the Y axis (the value axis) when generating the __SeriesSource__. Default value is *Columns*.
 
->cautionIf you want to modify __RadChartView__ via __RadPivotFieldList__ or to see the same data in __RadPivotGrid__ and in __RadChartView__ you have to use the same DataProvider in __RadPivotGrid__, __RadPivotFieldList__ and __PivotChartViewModel__. DataProvider is the connection between these elements.
+>caution If you want to modify __RadChartView__ via __RadPivotFieldList__ or to see the same data in __RadPivotGrid__ and in __RadChartView__ you have to use the same DataProvider in __RadPivotGrid__, __RadPivotFieldList__ and __PivotChartViewModel__. DataProvider is the connection between these elements.
 
 >If you use both __RadPivotGrid__ and __PivotChartViewModel__, changing the GrandTotals/SubTotals position in one of them, will not affect the other one as they are not connected.          
 

@@ -109,7 +109,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 
 >The complete definition of the DragVisualStyle can be found in UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} installation folder in Themes.Impicit folder.  Select the theme that you’re using and open Telerik.Windows.Controls.ScheduleView.xaml. Then search for “DragVisualStyle” in this XAML file.
 
->importantYou should reference the Telerik NoXaml assemblies when using implicit styles.
+>important You should reference the Telerik NoXaml assemblies when using implicit styles.
 
 * In case you’re using the default OfficeBlack theme or you've set a different theme with StyleManager:You should extract the complete DragVisualStyle from the RadScheduleView XAML file. The needed XAML file can be found in the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}s installation folder. Go into the Themes folder and select the theme that you have chosen to use. Drill down to find the Telerik.Windows.Controls.ScheduleView.xaml file in the directory that corresponds to your theme.  From this resource dictionary extract the DragVisualStyle and all the resources it uses, such as brushes and styles, into your own project.  Then you will be able to make the needed customizations, for example:
 

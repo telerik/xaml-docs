@@ -12,7 +12,7 @@ position: 1
 
 __RadSpellChecker__ is a control that allows you to spellcheck a number of controls including __TextBox__, __RichTextBox__, __RadRichTextBox__, __RadGridView__, __DataGrid__ or any other control that complies with certain requirements.
 
->tip__RadRichTextBox__ has a built-in spell checker (RadDocumentSpellChecker) that provides similar functionality and the benefit of underlining the incorrect words with a red curly line. If you would like to use __RadSpellChecker__ instead of the default spell checker you should disable the document spell checker by setting the property __IsSpellCheckingEnabled__ = ”False”. This can be done, for example, in order to create a similar look of the RadRichTextBoxes and the TextBoxes in your application.
+>tip __RadRichTextBox__ has a built-in spell checker (RadDocumentSpellChecker) that provides similar functionality and the benefit of underlining the incorrect words with a red curly line. If you would like to use __RadSpellChecker__ instead of the default spell checker you should disable the document spell checker by setting the property __IsSpellCheckingEnabled__ = ”False”. This can be done, for example, in order to create a similar look of the RadRichTextBoxes and the TextBoxes in your application.
 
 ## Adding Telerik Assemblies Using NuGet
 

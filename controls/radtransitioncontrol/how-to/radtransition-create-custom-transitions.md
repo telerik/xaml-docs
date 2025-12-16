@@ -95,7 +95,7 @@ In it you have to override the __CreateTransitionEffect()__ method and return an
 
 The __Shader Effect__ can also have some constants that can be passed through the wrapper. For example, the previously used __CircleRevealTransitionEffect__ accepts a fuzzy amount constant, which value can make the transition smoother.
 
->tipIn order to pass arguments to the Shader Effect you must be familiar with it. It is important to pass the correct constants with the correct values.
+>tip In order to pass arguments to the Shader Effect you must be familiar with it. It is important to pass the correct constants with the correct values.
 
 In order to pass the fuzzy amount constant create an appropriate __DependencyProperty__ in your __CircleRevealTransitionEffect__ class.
 

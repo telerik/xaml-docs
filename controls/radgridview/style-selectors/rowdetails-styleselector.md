@@ -128,7 +128,7 @@ And here is the final result:
 
 ![Telerik {{ site.framework_name }} DataGrid-rowdetails-styleselector](images/gridview-rowdetails-styleselector.png)
 		 
->tipAnother approach for achieving the same result is demonstrated in the {% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](https://demos.telerik.com/silverlight/#GridView/Selectors/StyleSelectors/RowDetailsStyleSelector){% endif %}{% if site.site_name == 'WPF' %}[WPF Controls Samples](https://demos.telerik.com/wpf/) under **StyleSelectors -> Row Details**{% endif %}.
+>tip Another approach for achieving the same result is demonstrated in the {% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](https://demos.telerik.com/silverlight/#GridView/Selectors/StyleSelectors/RowDetailsStyleSelector){% endif %}{% if site.site_name == 'WPF' %}[WPF Controls Samples](https://demos.telerik.com/wpf/) under **StyleSelectors -> Row Details**{% endif %}.
 
 ## See Also
 

@@ -87,7 +87,7 @@ __Subscribe to KeyDown and KeyUp events__
 	<telerik:RadGridView x:Name="radGridView" KeyDown="radGridView_KeyDown" KeyUp="radGridView_KeyUp"/>
 ```
 
->tipIt is always a good practice to attach your event handlers in the XAML, whenever your application logic allows this.
+>tip It is always a good practice to attach your event handlers in the XAML, whenever your application logic allows this.
 
 The implementation of both event handlers is located in the code-behind file (C# or VB.NET) and looks like this:
 

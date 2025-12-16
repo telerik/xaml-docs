@@ -167,4 +167,4 @@ The table shows the available formatters per Interval:
 	</tbody>
 </table>
 
->tipYou can customize the interval formats through the [FormatterProvider]({%slug radtimeline-features-formatter-provider%}).
+>tip You can customize the interval formats through the [FormatterProvider]({%slug radtimeline-features-formatter-provider%}).

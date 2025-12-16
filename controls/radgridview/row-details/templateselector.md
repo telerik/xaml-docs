@@ -168,7 +168,7 @@ __Example 3: Definition of RowDetailsTemplateSelector property of RadGridView__
 	</telerik:RadGridView>
 ```
 
->tipYou can download a runnable project of the demonstrated example in [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/GridView/RowDetailsTemplateSelector). In addition to make finding and browsing the examples easier, you can take advantage of our [SDK Samples Browser]({%slug sdk-samples-browser%}).                 
+>tip You can download a runnable project of the demonstrated example in [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/GridView/RowDetailsTemplateSelector). In addition to make finding and browsing the examples easier, you can take advantage of our [SDK Samples Browser]({%slug sdk-samples-browser%}).                 
 
 ## See Also
 

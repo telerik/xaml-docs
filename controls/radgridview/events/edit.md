@@ -268,7 +268,7 @@ The __RowEditEnded__ event occurs when row validation passed successfully and ne
 
 * __EditOperationType__ - Gets the edit operation type.
 
->tipThe __EditOperationType__ property is a __EditOperationType__ enumeration, which exposes the following values:
+>tip The __EditOperationType__ property is a __EditOperationType__ enumeration, which exposes the following values:
 
 * __Insert__
 
@@ -314,7 +314,7 @@ The example below uses the __RowEditEnded__ to display the new data of the edite
 	End Sub
 ```
 
->tipThe __CellEditEnded__ event is always fired before __RowEditEnded__ event.
+>tip The __CellEditEnded__ event is always fired before __RowEditEnded__ event.
 
 ## See Also
 

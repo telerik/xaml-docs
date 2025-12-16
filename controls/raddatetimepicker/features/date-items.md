@@ -32,7 +32,7 @@ Here is the result:
 
 The Next Month button is not active because of the __DisplayDateEnd__ property's value set in the example.
 
->tipYou can further restrict the input by indicating a selectable start and end dates. These dates will allow you to select only within a predefined range, but you would still have the ability to browse within the range of the display start and end dates. [Read more here]({%slug raddatetimepicker-features-selection%})
+>tip You can further restrict the input by indicating a selectable start and end dates. These dates will allow you to select only within a predefined range, but you would still have the ability to browse within the range of the display start and end dates. [Read more here]({%slug raddatetimepicker-features-selection%})
 
 ## Using a default display date
 
@@ -52,7 +52,7 @@ The result of this example will be that when you click on the __RadDateTimePicke
 
 ![{{ site.framework_name }} RadDateTimePicker with Custom DisplayDate](images/dateTimePicker_features_date_items_020.png)
 
->tipIf you set the __DisplayDate__ property to a value which is not in the range of the __DisplayDateStart__ and __DisplayDateEnd__ properties you will end up with a parse error exception.
+>tip If you set the __DisplayDate__ property to a value which is not in the range of the __DisplayDateStart__ and __DisplayDateEnd__ properties you will end up with a parse error exception.
 
 ## See Also
 

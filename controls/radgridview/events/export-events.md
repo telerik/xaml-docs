@@ -153,7 +153,7 @@ The event handler expects a __GridViewElementExportedToDocumentEventArgs__ argum
 
 ## InitializingExcelMLStyles (ExcelML only)
 
->tipThis event will be only raised when exporting with __ExportFormat.ExcelML__.
+>tip This event will be only raised when exporting with __ExportFormat.ExcelML__.
 
 You can define a style when the __InitializingExcelMLStyles__ event is raised, as shown in __Example 4__.
 

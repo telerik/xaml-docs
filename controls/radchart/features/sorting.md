@@ -32,7 +32,7 @@ Here is an example of a chart without sorting descriptors.
 
 Here is an example of implementing sorting.
 
->tipTo use the __ChartSortDescriptors__ in XAML you have to declare the following namespace:
+>tip To use the __ChartSortDescriptors__ in XAML you have to declare the following namespace:
 
 
 

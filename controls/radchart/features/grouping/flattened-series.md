@@ -16,7 +16,7 @@ Sometimes when the grouping and aggregation get applied you might want to flatte
 
 Here is a __RadChart__ declaration before setting the __ShouldFlattenSeries__ property to __True__.
 
->tipTo learn more about __DateTime Grouping__ read [here]({%slug radchart-features-datetime-grouping%}).
+>tip To learn more about __DateTime Grouping__ read [here]({%slug radchart-features-datetime-grouping%}).
 
 
 

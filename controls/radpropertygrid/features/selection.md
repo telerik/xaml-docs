@@ -96,7 +96,7 @@ __Example 4: The viewmodel's SelectedDefinition property__
 End Class
 ```
 
->cautionAs of R2 2016, the **SelectedField** property, previously marked as obsolete, has officially been removed.
+>caution As of R2 2016, the **SelectedField** property, previously marked as obsolete, has officially been removed.
 
 ## Events
 
@@ -125,4 +125,4 @@ __Example 6: SelectionChanged event handler__
     End Sub
 ```
 
->cautionAs of R2 2016, the **SelectedFieldChanged** event, previously marked as obsolete, has officially been removed.
+>caution As of R2 2016, the **SelectedFieldChanged** event, previously marked as obsolete, has officially been removed.

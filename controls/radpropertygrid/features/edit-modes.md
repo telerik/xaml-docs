@@ -42,7 +42,7 @@ Single EditMode introduces the concept of __editing properties one at a time__. 
 
 It relies on PropertyDefinition’s Binding property. Setting this mode is not supported with dynamic data or when [Property-Sets are defined]({%slug radpropertygrid-defining-propertysets%}).
 
->important__Single EditMode__ is supported only when __RenderMode is set to Flat__. For more information on the different rendering modes, please check the [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}) article.
+>important __Single EditMode__ is supported only when __RenderMode is set to Flat__. For more information on the different rendering modes, please check the [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}) article.
 
 __Example 2: RadPropertyGrid with EditMode set to Single__
 

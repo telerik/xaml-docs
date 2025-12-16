@@ -24,7 +24,7 @@ This topic will show you how to perform the second one.
 
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadDateTimePicker__. In the 'Objects and Timeline' pane select the __RadDateTimePicker__ you want to style. From the menu choose Object -> Edit Style -> Edit a Copy. You will be prompted for the name of the style and where to be placed.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking 'OK', Expression Blend will generate the default style of the __RadDateTimePicker__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio.
 
@@ -62,7 +62,7 @@ Regarding the __DropDownIcon__, you can modify the following resources:
 
 * __ButtonIconForeground_Normal__ - is the foreground border brush applied to the CalendarIconBackground path.
 
->tipIf you want to further modify the drop-down button's default appearance you can modify the default template applied to the __ButtonChrome__.
+>tip If you want to further modify the drop-down button's default appearance you can modify the default template applied to the __ButtonChrome__.
 
 Here is an example of the above resources modified:
 

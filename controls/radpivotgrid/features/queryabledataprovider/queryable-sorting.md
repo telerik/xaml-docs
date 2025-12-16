@@ -31,7 +31,7 @@ The columns are reordered based on their names (check the green rectangle on the
 
 ![Rad Pivot Grid Features Queryable Sorting 03](images/RadPivotGrid_Features_Queryable_Sorting_03.png)
 
->importantThe sorting is set on the __ColumnGroupDescriptions__ or __RowGroupDescriptions__. You cannot set sorting on the __AggregateDescriptions__, but you can sort the columns or rows based on the aggregated values.          
+>important The sorting is set on the __ColumnGroupDescriptions__ or __RowGroupDescriptions__. You cannot set sorting on the __AggregateDescriptions__, but you can sort the columns or rows based on the aggregated values.          
 
 ## Sort the data
 

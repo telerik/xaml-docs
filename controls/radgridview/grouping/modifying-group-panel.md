@@ -12,7 +12,7 @@ position: 6
 
 __RadGridView__ exposes two properties - __GroupPanelBackground__ and __GroupPanelForeground__ which allow you to make basic modifications of the __Group Panel__ (area).
 
->tipThe __GridView__ also exposes two style properties - __GroupPanelStyle__ and __GroupPanelItemStyle__. To learn how to use them in order to style the __Group Panel__ read [here]({%slug radgridview-styles-and-templates-styling-the-group-panel%}).
+>tip The __GridView__ also exposes two style properties - __GroupPanelStyle__ and __GroupPanelItemStyle__. To learn how to use them in order to style the __Group Panel__ read [here]({%slug radgridview-styles-and-templates-styling-the-group-panel%}).
 
 >[Here]({%slug gridview-visual-structure%}) you can read more information about the visual structure of the __RadGridView__.
 

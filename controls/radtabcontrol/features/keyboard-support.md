@@ -24,7 +24,7 @@ Set the __IsTabStop__ property to include/exclude the control in the tab navigat
 
 * __KeyUp__– get notified when the user has released a keyboard key.
 
->tipTo obtain the pressed key, the object that raised the event or some other information, use the instance of __System.Windows.Input.KeyEventArgs__ passed as a parameter to the event handler method.
+>tip To obtain the pressed key, the object that raised the event or some other information, use the instance of __System.Windows.Input.KeyEventArgs__ passed as a parameter to the event handler method.
 
 ```XAML
 	<telerik:RadTabControl x:Name="tabControl" KeyDown="tabControl_KeyDown" KeyUp="tabControl_KeyUp"/>

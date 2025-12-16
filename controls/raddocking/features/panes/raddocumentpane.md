@@ -14,7 +14,7 @@ Since RadDocumentPane is a direct inheritor of __RadPane__, it shares the same c
 
 To learn more about __RadDocumentPane__ take a look at the __RadPane__'s [Overview]({%slug raddocking-panes-radpane%}) topic, since all of the characteristics and functionalities of the __RadPane__ are also valid for the RadDocumentPane.
 
->tipUse __RadDocumentPane__ to host any kind of documents that are editable by your application, while the utility panels can be hosted in the standard __RadPane__ control.
+>tip Use __RadDocumentPane__ to host any kind of documents that are editable by your application, while the utility panels can be hosted in the standard __RadPane__ control.
 
 ![{{ site.framework_name }} RadDocking RadDocumentPane](images/RadDocking_Features_Panes_RadDocumentPane_010.png)
 

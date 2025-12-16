@@ -507,7 +507,7 @@ The snapshot below shows the customized tooltip:
 
 If you need more information about label formatting take a look at the [Format Expressions]({%slug radchart-features-format-expressions%}) topic.
 
->tipTo be able to show the ToolTip content separated on new line in XAML you should use the hexidecimally encoded value " &#x0a;" to represent the "\n" literal.
+>tip To be able to show the ToolTip content separated on new line in XAML you should use the hexidecimally encoded value " &#x0a;" to represent the "\n" literal.
 
 ## Customizing Tooltip Content
 
@@ -782,7 +782,7 @@ As you can see, the new instance of __StockToolTipControl__ is created, initiali
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_ToolTips_20.png)
 
->tipCheck out how a [Drill Down Chart]({%slug radchart-how-to-drill-down-chart%}) is created using customized tooltip. 
+>tip Check out how a [Drill Down Chart]({%slug radchart-how-to-drill-down-chart%}) is created using customized tooltip. 
 
 ## See Also
 

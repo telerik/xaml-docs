@@ -54,7 +54,7 @@ The __RadMenuItem__ exposes several states, grouped as follows:
 
 	* __Unfocused__ - the state of the control, when it isn't focused.
 
->tipOnly one state of a group can be active. For example, if the control goes into the Checked state, it cannot be in the HideIcon state too. By default the Checked state should display a mark before the item, so it should hide the icon no matter if it is null or not. If the item is not checked and the icon is not defined, the HideIcon state will get activated and the empty icon will get hidden.
+>tip Only one state of a group can be active. For example, if the control goes into the Checked state, it cannot be in the HideIcon state too. By default the Checked state should display a mark before the item, so it should hide the icon no matter if it is null or not. If the item is not checked and the icon is not defined, the HideIcon state will get activated and the empty icon will get hidden.
 
 The several templates of the __RadMenuItem__ don't handle all of the states, but only those, which they need. When generated through Expression Blend, the logic placed in these templates also gets generated. In the following table you can see which states the specific template makes use of.
 

@@ -41,7 +41,7 @@ The next figures show the templates in the different ViewDefinitions of __RadSch
 #### __Figure 7: TimeRulerItems templates in MonthViewDefinition__
 ![{{ site.framework_name }} RadScheduleView TimeRulerItems templates in MonthViewDefinition](images/radscheduleview_templating_timeruleritems_07.png)
 
->tipMinor tick templates are by design empty. This could be easily changed by assigning a StringFormat through the [Formatting properties]({%slug radscheduleview-features-formatting%}) of the ViewDefinitions.
+>tip Minor tick templates are by design empty. This could be easily changed by assigning a StringFormat through the [Formatting properties]({%slug radscheduleview-features-formatting%}) of the ViewDefinitions.
 
 Example 1 shows how to configure DayViewDefinition and the corresponding VerticalDayMajorItem and VerticalDayMinorItem templates in order to achieve a more detailed view of the TimeRuler.
 

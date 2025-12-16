@@ -22,7 +22,7 @@ Here is a list of the supported languages:
 * Dutch             
 * Turkish
 
->tipTo learn more about the ways in which to localize the RadControls, please read the common topic about [Localization]({%slug common-localization%}).
+>tip To learn more about the ways in which to localize the RadControls, please read the common topic about [Localization]({%slug common-localization%}).
 
 ## Resource Keys
 

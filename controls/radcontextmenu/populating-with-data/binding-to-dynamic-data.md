@@ -75,7 +75,7 @@ The __MenuItem__ class holds the information for the menu items.
 
 * __IsSeparator__: Indicates whether the item is a separator.
 
->tipTo learn more about the separator items and the __RadMenuItems__, please take a look at the [RadMenu help content]({%slug radmenu-overview%}).
+>tip To learn more about the separator items and the __RadMenuItems__, please take a look at the [RadMenu help content]({%slug radmenu-overview%}).
 
 Next, we create a method to create the sample data to populate the RadContextMenu:
 

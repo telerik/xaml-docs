@@ -35,7 +35,7 @@ __Defining RadBusyIndicator and a Button as content__
 
 Finally, in the code-behind you have to handle the click event for the button and activate the __RadBusyIndicator__ control:
 
->tipTo read more about enabling the __RadBusyIndicator__ look [here]({%slug radbusyindicator-features-enabling-the-indicator%}).
+>tip To read more about enabling the __RadBusyIndicator__ look [here]({%slug radbusyindicator-features-enabling-the-indicator%}).
 
 __Enable RadBusyIndicator__
 

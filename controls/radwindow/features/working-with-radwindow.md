@@ -35,7 +35,7 @@ After the reference is available, you can declare a __RadWindow__. Here is an ex
 
 When you want to display the __RadWindow__ you have two options - to display it as a __window__ or as a __modal dialog window__.
 
->tipTo learn more about modal windows read [here]({%slug radwindow-features-modal-windows%}).
+>tip To learn more about modal windows read [here]({%slug radwindow-features-modal-windows%}).
 
 Call the __Show()__ method of the __RadWindow__ instance to open it as a __normal window__.
 
@@ -61,7 +61,7 @@ Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a _
 
 ![{{ site.framework_name }} RadWindow Shown As Modal Dialog](images/RadWindow_Working_with_RadWindow_01.png)
 
->tipLearn more about positioning the __RadWindow__ by reading the [Positioning]({%slug radwindow-features-positioning%}) topic.
+>tip Learn more about positioning the __RadWindow__ by reading the [Positioning]({%slug radwindow-features-positioning%}) topic.
 
 ## Add content to the RadWindow
 
@@ -69,7 +69,7 @@ To add a content to the __RadWindow__ you can use either the __Content__ or the 
 
 If you have a window-specific content, use the __Content__ property.
 
->tipAs the __Content__ property is of type object you can set it to any control you like. If you want to have a more complex content that consists of more than one control, be sure to wrap them inside a layout control and pass the layout control as content.You can also set the content of the __RadWindow__ to a __UserControl__.
+>tip As the __Content__ property is of type object you can set it to any control you like. If you want to have a more complex content that consists of more than one control, be sure to wrap them inside a layout control and pass the layout control as content.You can also set the content of the __RadWindow__ to a __UserControl__.
 
 >The only scenario, where you can add content to the __RadWindow__ at design-time, is when the __RadWindow__ represents an entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 

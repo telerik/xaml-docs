@@ -15,7 +15,7 @@ The __RadDateTimePicker__ control supports a preview tool tip. This feature help
 This tooltip acts like the autocomplete functionality. It is a suggestion tooltip, which tries to guess the input as you are typing it. The __RadDateTimePicker__ also shows you a validation __ErrorTooltip__ indicating that the input cannot be parsed as a valid __DateTime__.
                 
 
->tipBy default, text input is enabled for the __RadDateTimePicker__, because you have the option to enter for instance "3 September" and the tooltip will update its value to suggest 9/3/2010.
+>tip By default, text input is enabled for the __RadDateTimePicker__, because you have the option to enter for instance "3 September" and the tooltip will update its value to suggest 9/3/2010.
 
 >Additionally, the __ParseDateTimeValue__ event is raised on lost focus because text should be parsed after one has finished entering input and this is the intended default behavior. Read more [here]({%slug raddatetimepicker-events%}).
 
@@ -45,7 +45,7 @@ Here is the result:
 
 ![{{ site.framework_name }} RadDateTimePicker Error Tooltip Content and Template](images/dateTimePicker_features_preview_tooltip_010.png)
 
->importantWhen using the above described approach you should know that setting the x:Name of the RadDateTimePicker to either __"DatePicker"__ or __"DateTimePicker"__ will lead to the ErrorTooltip not showing. The reason is that those specific names are already used in the theme of the control which lead to the binding in the custom TooltipTemplate getting broken.
+>important When using the above described approach you should know that setting the x:Name of the RadDateTimePicker to either __"DatePicker"__ or __"DateTimePicker"__ will lead to the ErrorTooltip not showing. The reason is that those specific names are already used in the theme of the control which lead to the binding in the custom TooltipTemplate getting broken.
 
 ## See Also
 

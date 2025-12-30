@@ -22,7 +22,7 @@ You can easily set data validation rules using the data validation dialog which 
 ![Rad Spreadsheet UI Data Validation 01](images/RadSpreadsheet_UI_Data_Validation_01.png)
 
 
->tipDetailed information on the different validation rules is available in the [Data Validation for SpreadProcessing article](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/data-validation).
+>tip Detailed information on the different validation rules is available in the [Data Validation for SpreadProcessing article](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/data-validation).
 
 
 The dialog contains two other tabs - one allowing to customize the input message that is shown when the cell is selected, and one allowing to change the alert shown when there is an error in the cell.

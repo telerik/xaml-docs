@@ -96,7 +96,7 @@ It is time to configure our Internet Information Service (IIS). To do it start I
 
 	![Rad Pivot Grid How To Set Http Access To Cube 13](images/RadPivotGrid_HowTo_SetHttpAccessToCube_13.png)
 
-	>importantIn the General Tab above you can set database permissions for this role. Your users will need at least Read permissions.                
+	>important In the General Tab above you can set database permissions for this role. Your users will need at least Read permissions.                
 
 	After applying this you should be able to use XmlaDataProvider in your __RadPivotGrid__ to access the data from your Cube.	
 

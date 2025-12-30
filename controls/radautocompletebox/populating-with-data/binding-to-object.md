@@ -18,7 +18,7 @@ The following example will guide you through the process of binding your RadAuto
 
 * [Using DisplayMemberPath and TextSearchPath](#using-displaymemberpath-and-textsearchpath)
 
->tipBefore proceeding with this tutorial you should get familiar with the [Data Binding]({%slug radautocompletebox-populating-with-data-binding-support-overview%}) support of the RadAutoCompleteBox control.
+>tip Before proceeding with this tutorial you should get familiar with the [Data Binding]({%slug radautocompletebox-populating-with-data-binding-support-overview%}) support of the RadAutoCompleteBox control.
 
 ## Binding the ItemsSource
 

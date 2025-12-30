@@ -192,7 +192,7 @@ Finally set the property in XAML:
 	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.MaxLength="20"/>
 ```
 
->tipNote that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.
+>tip Note that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.
 
 ## See Also  
  * [Enable\Disable RadComboBoxItems]({%slug radcombobox-howto-enable-disable-radcombobox-items%})

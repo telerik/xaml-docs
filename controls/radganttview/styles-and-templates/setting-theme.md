@@ -12,7 +12,7 @@ position: 0
 
 The purpose of this article is to show you how to set a built-in theme to __RadGanttView__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
 
->tipDetailed information about the use of implicit styles can be found {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %}.
+>tip Detailed information about the use of implicit styles can be found {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %}.
 
 So, in order to set a theme to the GanttView, you should merge the following xaml files in App.xaml file:
 

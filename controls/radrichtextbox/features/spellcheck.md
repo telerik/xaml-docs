@@ -115,7 +115,7 @@ Here is an example of such a dictionary that adds the words in the "CustomDictio
 >  *  __Application__: The dictionary is available only for the particular application.
 
 
->tipWhen adding a dictionary that implements the __ICustomWordDictionary__ interface object use the __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__.
+>tip When adding a dictionary that implements the __ICustomWordDictionary__ interface object use the __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__.
 
 __Example 4: Creating a custom dictionary__
 

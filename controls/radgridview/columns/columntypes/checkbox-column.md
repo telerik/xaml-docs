@@ -27,7 +27,7 @@ __Example 1: Declare a column of type GridViewCheckBoxColumn__
 #### __Figure 1: Declared CheckBox Column.__
 ![Rad Grid View Columns Check Box Column 01](images/RadGridView_Columns_CheckBoxColumn_01.png)
 
->tipUse this column for __better performance__ when you know that the underlying data is of __boolean type__.
+>tip Use this column for __better performance__ when you know that the underlying data is of __boolean type__.
 
 __GridViewCheckBoxColumn__ provides a property that is not present in any other column: __AutoSelectOnEdit__. When set to __True__ the __CheckBox__ is automatically toggled on editing the cell thus decreasing the number of clicks you need to take to change the boolean value of the bound property. 
 

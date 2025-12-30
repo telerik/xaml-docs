@@ -28,7 +28,7 @@ __RadRichTextBox__ allows you to export and import its content. This is useful i
 * __PDF__: To export documents to __PDF__ you have to use the [__PdfFormatProvider__]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%}) class.
           
 
->tipEach __FormatProvider__ class is located in a separate assembly matching its name. For example, the __XamlFormatProvider__ class is in the __Telerik.Windows.Documents.FormatProviders.Xaml.dll__ assembly. The only exception is the __TxtFormatProvider__, which is included in __Telerik.Windows.Documents__.
+>tip Each __FormatProvider__ class is located in a separate assembly matching its name. For example, the __XamlFormatProvider__ class is in the __Telerik.Windows.Documents.FormatProviders.Xaml.dll__ assembly. The only exception is the __TxtFormatProvider__, which is included in __Telerik.Windows.Documents__.
         
 
 ## Specifics

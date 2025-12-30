@@ -10,7 +10,7 @@ position: 12
 
 # Styling Group Row
 
->importantWith R3 2012, Telerik introduced __GroupRenderMode="Flat"__ which uses the **GroupHeaderRow** element as opposed to the **Nested** group render mode that uses the **GridViewGroupRow**. You should target the correct element in order for your styles to be applied. Please look at this [help article]({%slug gridview-grouping-groupingmodes%}) for details.
+>important With R3 2012, Telerik introduced __GroupRenderMode="Flat"__ which uses the **GroupHeaderRow** element as opposed to the **Nested** group render mode that uses the **GridViewGroupRow**. You should target the correct element in order for your styles to be applied. Please look at this [help article]({%slug gridview-grouping-groupingmodes%}) for details.
 
 ## Targeting the GridViewGroupRow Element
 

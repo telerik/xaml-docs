@@ -74,7 +74,7 @@ __Example 3: Sample RadListBox definition__
 
 The content of the __RadTransitionControl__ should be represented by the content of the __SelectedItem__ in the __RadListBox__. This can be done by using element to element binding.
 
->tipYou can learn more about binding the __RadTransitionControl__ in the [Data Binding]({%slug radtransition-features-data-binding%}) topic.
+>tip You can learn more about binding the __RadTransitionControl__ in the [Data Binding]({%slug radtransition-features-data-binding%}) topic.
 
 __Example 4: Binding RadTransitionControl Content__
 
@@ -110,7 +110,7 @@ If you run your application at this point, the content of the __RadTransitionCon
 
 The __RadTransitionControl__ automatically detects when the content is changed and applies a transition to the content. The default transition is __MotionBlurredZoomTransition__.
 
->tipTo learn more about the transitions in the __RadTransitionControl__ read the [Transitions]({%slug radtransition-features-transitions%}) topic.
+>tip To learn more about the transitions in the __RadTransitionControl__ read the [Transitions]({%slug radtransition-features-transitions%}) topic.
 
 As the built-in transition effects are located in the __Telerik.Windows.Controls.TransitionEffects__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add the following namespace declaration in your __UserControl__:
 

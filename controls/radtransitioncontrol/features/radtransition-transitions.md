@@ -12,7 +12,7 @@ position: 1
 
 The __RadTransitionControl__ applies a transition effect to its content when it gets changed. There are several built-in effects, but you are able to create your own via the __HLSL__ language. 
 
->tipYou are also capable of specifying the transition [duration]({%slug radtransition-features-working-with-radtransitioncontrol%}#transition-duration) and [an animation easing function]({%slug radtransition-features-working-with-radtransitioncontrol%}#transition-easing).
+>tip You are also capable of specifying the transition [duration]({%slug radtransition-features-working-with-radtransitioncontrol%}#transition-duration) and [an animation easing function]({%slug radtransition-features-working-with-radtransitioncontrol%}#transition-easing).
 
 ## Built-in Transition Effects
 
@@ -121,7 +121,7 @@ The __MotionBlurredZoomTransition__ is basically a fade transition with motion b
 
 * __OutBlurRatio__ - specifies the ratio of the motion blur effect applied to the old content. The default value is __-0.3__. A value of __0__ will neutralize the motion blur. A __negative value__ will direct the motion blur outside of the object and it will behave like it had been zoomed out. A motion blur with a __positive value__ will give the impression of zooming in.
 
->tipSetting the __InBlurRatio__ and the __OutBlurRatio__ to 0 will make the __MotionBlurredZoomTransition__ behave like a normal __FadeTransition__.
+>tip Setting the __InBlurRatio__ and the __OutBlurRatio__ to 0 will make the __MotionBlurredZoomTransition__ behave like a normal __FadeTransition__.
 
 * __Samples__ - for each pixel in point __P__ it creates a line that contains that point and the __Center__ point. Then __Samples__ count of points are selected from the new content and Samples count of points of the old content are selected forming two sets of points for the old and the new values. The distance of the selected points to the __P__ depends on __InBlurRatio__ and __OutBlurRatio__ and the __progress__ inverting the values for example from 0.3, -0.3 to -0.3, 0.3 will make the image to go zoom out instead of zoom in. The colors in the two sets of points are summed up and the average values of these two groups are selected as the old and the new color. The final pixel color for __P__ is the sum of these two values get with different weight depending on the __progress__. The default value is __7__.
 

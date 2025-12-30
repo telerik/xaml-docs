@@ -20,7 +20,7 @@ Here is a list of the most important properties.
 
 * __ImageWidth__ - width of the images displayed in the column.
 
->tipYou can bind GridViewImageColumn to a __string or a byte[] data__ via DataMemberBinding property.
+>tip You can bind GridViewImageColumn to a __string or a byte[] data__ via DataMemberBinding property.
 
 __Example 1: Define GridViewImageColumn in XAML.__
 

@@ -84,13 +84,13 @@ For example if __HoverScope__ is set to __InteractivityScope.Series__ for a give
 
 ![{{ site.framework_name }} RadChart with Hover Effect](images/RadChart_Features_InteractivityEffects_010.png)
 
->tipIn order to enable the interactivity functionality you need to first set the interactivity scope for hover, selection, or both. The notion of "interactivity scope" specifies whether the chart control should interpret the interactivity action (selection or hover) on series level (if applicable), or on item level (if applicable).
+>tip In order to enable the interactivity functionality you need to first set the interactivity scope for hover, selection, or both. The notion of "interactivity scope" specifies whether the chart control should interpret the interactivity action (selection or hover) on series level (if applicable), or on item level (if applicable).
 
 >__InteractivityScope.Item__ is not supported for series that do not render separate items (__Line__, __Spline__, __Area__, __Range__, and __all their stacked versions__). __InteractivityScope.Series__ is not supported for radial series (__Pie__ and __Doughnut__).
 
 There is one additional setting related to hover effects that can be set on global level - __RadChart.HoverActivationDelay__. This property gets or sets the delay before the hover effect is activated (by default there is no delay and the hover effect becomes active immediately).
 
->tipYou could check out an online example [here](https://demos.telerik.com/silverlight/#Chart/InteractivityEffects).
+>tip You could check out an online example [here](https://demos.telerik.com/silverlight/#Chart/InteractivityEffects).
 
 ## Complete Demo Code
 

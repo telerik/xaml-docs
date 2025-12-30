@@ -70,6 +70,6 @@ Here is the final result. When you select the CheckBox Header, then all rows wil
 
 ![Telerik {{ site.framework_name }} DataGrid HowTo SelectionViaCheckbox 020](images/RadGridView_HowTo_SelectionViaCheckbox_020.png)
 
->tipWhen you want to use selection via checkbox, then:1. Set the __SelectionMode__ property to __Extended__ or __Multiple__. Leaving it to __Single__ you won't be able to select all of the entries in the __RadGridView__.2. Add a __GridViewSelectColumn__.
+>tip When you want to use selection via checkbox, then:1. Set the __SelectionMode__ property to __Extended__ or __Multiple__. Leaving it to __Single__ you won't be able to select all of the entries in the __RadGridView__.2. Add a __GridViewSelectColumn__.
 
->tipIf you need further information for the __GridViewSelectColumn__ and all other provided columns take a look at the [this topic]({%slug radgridview-columns-column-types-select-column%}).
+>tip If you need further information for the __GridViewSelectColumn__ and all other provided columns take a look at the [this topic]({%slug radgridview-columns-column-types-select-column%}).

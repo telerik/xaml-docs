@@ -36,7 +36,7 @@ The possible Date formats are:
 
 * ddMMMyyyy
 
->tipWhere MMM is the month with abbreviated name: MAR, JAN, FEB, etc.
+>tip Where MMM is the month with abbreviated name: MAR, JAN, FEB, etc.
 
 The only possible Time format is:
 

@@ -25,7 +25,7 @@ __Example 1: Defining CollectionEditor__
 
 ![Rad Property Grid Collection Editor Picker](images/RadPropertyGrid_CollectionEditorPicker.png)
 
->importantIf you want CollectionEditor to work with a __custom collection__, then the edited collection type should implement __ICollectionView__ and __IEditableCollectionView__ interfaces.
+>important If you want CollectionEditor to work with a __custom collection__, then the edited collection type should implement __ICollectionView__ and __IEditableCollectionView__ interfaces.
 
 ## Dependencies
 

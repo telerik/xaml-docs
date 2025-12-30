@@ -46,7 +46,7 @@ We will take advantage of the fact that the __Header__ property of the GridView 
 	</telerik:GridViewDataColumn>
 ```
 
->importantPlease note that this approach can cause issues if you're binding the header to another control's content, for example, the Content of the CheckBoxes from the example in the [Control Panel]({%slug gridview-overview-controlpanel%}) article. In this case, you need to make sure that you're creating a copy of the TextBlock or use a converter to only access its Text property.
+>important Please note that this approach can cause issues if you're binding the header to another control's content, for example, the Content of the CheckBoxes from the example in the [Control Panel]({%slug gridview-overview-controlpanel%}) article. In this case, you need to make sure that you're creating a copy of the TextBlock or use a converter to only access its Text property.
 
 ## See also
  * [Column Headers]({%slug gridview-columns-column-headers%})

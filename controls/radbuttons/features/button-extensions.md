@@ -16,7 +16,7 @@ The Telerik suite provides built-in extensions that can change different behavio
 
 * __HandleMouseWheelWhenOpen:__ A boolean property that gets or sets if the **MouseWheel** event is handled while a drop-down content of a drop-down button is open. By setting this property to **true** you won't be able to scroll your page while the drop-down content is open. The default value is **false**.
 
->importantThis property can be set on the following controls: __RadDropDownButton, RadSplitButton, RadColorPicker, RadTimeSpanPicker, RadDateTimePicker, RadBreadCrumb__.
+>important This property can be set on the following controls: __RadDropDownButton, RadSplitButton, RadColorPicker, RadTimeSpanPicker, RadDateTimePicker, RadBreadCrumb__.
 
 __Example 1: Set HandleMouseWheelWhenOpen attached property__
 ```XAML
@@ -40,7 +40,7 @@ __Example 1: Set HandleMouseWheelWhenOpen attached property__
 	</ScrollViewer>
 ```
 
->importantThis property is not supported when the control (for example, RadDropDownButton) has its __KeepOpen__ property set to __True__.
+>important This property is not supported when the control (for example, RadDropDownButton) has its __KeepOpen__ property set to __True__.
 
 ## DropDownButtonExtensions
 

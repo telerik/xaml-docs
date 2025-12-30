@@ -12,7 +12,7 @@ position: 0
 
 This section is intended to give you a broad understanding of the possible ways by which you can change the visual appearance of the __RadContextMenu__. There is also comprehensive information about their __ControlTemplates__. You will need this information if you want to customize their appearance.
 
->tipTo learn about styling and templating the __RadMenuItem__, please take a look at the [Styles and Templates]({%slug radmenu-styling-and-appearance-styling-radmenuitem%}) section of the __RadMenu's__ help.
+>tip To learn about styling and templating the __RadMenuItem__, please take a look at the [Styles and Templates]({%slug radmenu-styling-and-appearance-styling-radmenuitem%}) section of the __RadMenu's__ help.
 
 You can modify the look of the __RadContextMenu__ either by changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and add your own elements. However, when changing the control template you should be careful to include all required parts.
 

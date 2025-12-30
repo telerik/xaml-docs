@@ -27,7 +27,7 @@ Via the **AddButtonStyle** property, you can control the appearance of the butto
     </telerik:RadTabbedWindow.AddButtonStyle>
 ```
 
->importantIf you are using the default Office_Black theme (you have not merged a theme assembly) or you've set a different theme with the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}), you should copy the **AddItemsButtonStyle** and all the referenced resources from the **Telerik.Windows.Controls.Navigation.xaml** file into your project.
+>important If you are using the default Office_Black theme (you have not merged a theme assembly) or you've set a different theme with the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}), you should copy the **AddItemsButtonStyle** and all the referenced resources from the **Telerik.Windows.Controls.Navigation.xaml** file into your project.
 
 ## ItemContainerStyle
 
@@ -47,7 +47,7 @@ You can use the **ItemContainerStyle** property to style the individual RadTabIt
     </telerik:RadTabbedWindow.ItemContainerStyle>
 ```
 
->importantIf you are using the default Office_Black theme (you have not merged a theme assembly) or you've set a different theme with the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}), you should copy the **RadTabbedWindowTabItemStyle** and all the referenced resources from the **Telerik.Windows.Controls.Navigation.xaml** file into your project.
+>important If you are using the default Office_Black theme (you have not merged a theme assembly) or you've set a different theme with the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}), you should copy the **RadTabbedWindowTabItemStyle** and all the referenced resources from the **Telerik.Windows.Controls.Navigation.xaml** file into your project.
 
 ## ItemContainerStyleSelector
 
@@ -114,7 +114,7 @@ You can also define a **StyleSelector** and conditionally style the tab items vi
     </telerik:RadTabbedWindow>
 ```
 
->importantPlease note that to use the ItemContainerStyleSelector property, you need to clear the ItemContainerStyle by setting it to **null**.
+>important Please note that to use the ItemContainerStyleSelector property, you need to clear the ItemContainerStyle by setting it to **null**.
 
 ## ItemTemplate and ItemTemplateSelector
 

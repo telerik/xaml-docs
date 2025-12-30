@@ -125,11 +125,11 @@ __RadPivotGrid__ relays on the __QuickStyle__ in order to get visualized correct
 	</pivot:QuickStyle>
 ```
 
->importantWhen applying a custom __QuickStyle__ all of the properties of the default style should be included in order to have a correct appearance. If there are missing properties, the corresponding elements will appear without any styling.
+>important When applying a custom __QuickStyle__ all of the properties of the default style should be included in order to have a correct appearance. If there are missing properties, the corresponding elements will appear without any styling.
 
 <!-- -->
 
->importantIf the __QuickStyle__ property is set to *null* __RadPivotGrid__ will loose all of its styling.          
+>important If the __QuickStyle__ property is set to *null* __RadPivotGrid__ will loose all of its styling.          
 
 Afterwards the custom __QuickStyle__ should be applied the following way:        
 

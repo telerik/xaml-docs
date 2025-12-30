@@ -14,7 +14,7 @@ The `RadMenu` allows you to display an icon for each of the menu items. This can
 
 ## Setting the Icon of a Static Item
 
->tipTo learn more about this way of populating the RadMenu with static data take a look at the [Using Static Items]({%slug radmenu-populating-with-data-using-static-items%}) topic.
+>tip To learn more about this way of populating the RadMenu with static data take a look at the [Using Static Items]({%slug radmenu-populating-with-data-using-static-items%}) topic.
 
 When using static items you can directly access the Icon property of each item. Respectively you can set it directly:
 
@@ -34,7 +34,7 @@ __RadMenuItems with their Icon property set__
 
 ## Setting the Icon of a Dynamic Item
 
->tipTo learn more about this way of populating the RadMenu with dynamic data take a look at the [Binding to Dynamic Data]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}) topic.
+>tip To learn more about this way of populating the RadMenu with dynamic data take a look at the [Binding to Dynamic Data]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}) topic.
 
 When using dynamic items, you have to bind the Icon property to a property of the data item. The specific here is that your data item needs to either expose a property of type Image, so the Icon property can be bound properly or you need to define the IconTemplate property of the menu items if you wish to bind it to a `string` or `Uri`, for example.
 

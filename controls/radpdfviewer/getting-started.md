@@ -90,7 +90,7 @@ __Example 3: Add a RadToolBar to RadPdfViewer__
 	</telerik:RadToolBar>
 ```
 
->tipYou can download a complete runnable example that shows the default RadPdfViewer with RadToolBar configuration from the [Telerik® SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). 
+>tip You can download a complete runnable example that shows the default RadPdfViewer with RadToolBar configuration from the [Telerik® SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). 
 
 You can then add buttons, combo boxes, etc., bound to the respective command descriptors of the viewer, as __Example 4__ shows.
 
@@ -106,7 +106,7 @@ __Example 4: Wire a CommandDescriptor to a RadButton__
 ```
 
 
->tipFor the whole configuration of a RadToolBar with all commands of the viewer, you can refer to the [Wiring UI]({%slug radpdfviewer-wiring-ui%}) article. More information about the command descriptors is available [here]({%slug radpdfviewer-command-descriptors%}).
+>tip For the whole configuration of a RadToolBar with all commands of the viewer, you can refer to the [Wiring UI]({%slug radpdfviewer-wiring-ui%}) article. More information about the command descriptors is available [here]({%slug radpdfviewer-command-descriptors%}).
           
 
 ## 

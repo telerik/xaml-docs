@@ -75,9 +75,9 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 
 * __CustomElementLoading__: Raised when a custom docking element (that derives from __RadPane__, __RadPaneGroup__ or __RadSplitContainer__) is about to be loaded. The passed event argument is of type __LayoutSerializationCustomLoadingEventArgs__.
 
->tipElements are __cleaned just before loading__ the layout: This operation is performed to prepare the Docking control for the new layout.
+>tip Elements are __cleaned just before loading__ the layout: This operation is performed to prepare the Docking control for the new layout.
 
->tipFor more information about saving and loading __RadDocking__ layout, take a look at the [Save\Load Layout]({%slug raddocking-features-save-load-layout-overview%}) topic.
+>tip For more information about saving and loading __RadDocking__ layout, take a look at the [Save\Load Layout]({%slug raddocking-features-save-load-layout-overview%}) topic.
 
 ## ElementCreated Events
 

@@ -15,7 +15,7 @@ __PROBLEM__
 When exporting a RadGridView to Excel using __ExportFormat.HTML__, the string values that can be converted to numbers, are opened in Excel as numbers.
         
 
->tipThis behavior does not occur when exporting using __ExportFormat.ExcelML__.
+>tip This behavior does not occur when exporting using __ExportFormat.ExcelML__.
 
 
 __CAUSE__

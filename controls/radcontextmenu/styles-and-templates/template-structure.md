@@ -12,7 +12,7 @@ position: 1
 
 Like most WPF controls, the __RadContextMenu__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can template parts of it or even independent controls related to it.
 
->tipFor more information about templating and how to modify the default templates of the controls from the UI for WPF suite read [Editing Control Templates article]({%slug styling-apperance-editing-control-templates%}) on this matter.
+>tip For more information about templating and how to modify the default templates of the controls from the UI for WPF suite read [Editing Control Templates article]({%slug styling-apperance-editing-control-templates%}) on this matter.
 
 ## RadContextMenu Template Structure
 

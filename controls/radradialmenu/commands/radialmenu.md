@@ -49,7 +49,7 @@ __RadialMenuCommand__ class exposes the following properties:
 
 * __Owner__ - gets the RadRadialMenu instance that has executed this command.          
 
->importantCustom commands have higher priority than the default commands.
+>important Custom commands have higher priority than the default commands.
 
 The next example will show how to implement custom command that will be executed when the user navigates to the children of a menu item:
 

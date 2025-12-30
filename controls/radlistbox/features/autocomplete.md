@@ -55,9 +55,9 @@ Typing, for example "L" will select the corresponding item:
 
 >Note that if you have set __DisplayMemberPath__ to a certain property and you want to use the same property for __Autocomplete__, you don't need to set __TextPath__/__TextBinding__.
 
->tipAutocomplete always starts from the beginning, regardless of the selection.
+>tip Autocomplete always starts from the beginning, regardless of the selection.
 
->tipPressing __Esc__ clears the current text for autocomplete.
+>tip Pressing __Esc__ clears the current text for autocomplete.
 
 ## Disable Autocomplete
 

@@ -26,7 +26,7 @@ __: Some of RadExpressionEditor`s localized resources:__
 
 ![RadExpressionEditor Localization](images/RadExpressionEditor_Localization.png)
 
->tipTo learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
+>tip To learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
 
 >__In order to dynamically localize the RadExpressionEditor at runtime, you should recreate it.__
 

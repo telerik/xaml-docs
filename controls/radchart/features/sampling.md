@@ -26,7 +26,7 @@ Determining the number of __DataPoints__ to be displayed is done by setting the 
 	</telerik:RadChart>
 ```
 
->tipSet the __SamplingThreshold__ to __0__ to disable the feature.
+>tip Set the __SamplingThreshold__ to __0__ to disable the feature.
 
 The way in which __RadChart__ combines the __DataPoints__ depends on the value of the __SamplingFunction__ property of the SamplingSettings. 
 
@@ -65,7 +65,7 @@ Here is an example:
 
 ## Custom Sampling Functions
 
->tipCustom sampling functions are implemented in the same manner as [GridView's custom aggregating functions](https://demos.telerik.com/silverlight/#GridView/CustomAggregates). 
+>tip Custom sampling functions are implemented in the same manner as [GridView's custom aggregating functions](https://demos.telerik.com/silverlight/#GridView/CustomAggregates). 
 
 The following sample code will demonstrate how to create a standard deviation function for the Range of numbers 0 - 1000 and creates ScatterSeriesDefinition with the result from this function. 
 

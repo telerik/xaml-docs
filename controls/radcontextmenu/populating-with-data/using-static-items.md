@@ -84,7 +84,7 @@ Here is a snapshot of the current result.
 
 ![{{ site.framework_name }} RadContextMenu with Static Items](images/RadContextMenu_Populating_with_Data_Static_Items_01.png)
 
->tipEach of the __RadMenuItems__ can have child items, that are defined in the same way.
+>tip Each of the __RadMenuItems__ can have child items, that are defined in the same way.
 
 The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an icon for it. Here is an example.
 
@@ -156,7 +156,7 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 
 ![{{ site.framework_name }} RadContextMenu with Items with Icons](images/RadContextMenu_Populating_with_Data_Static_Items_02.png)
 
->tipConsider declaring menu items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
+>tip Consider declaring menu items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 
 ## See Also
 

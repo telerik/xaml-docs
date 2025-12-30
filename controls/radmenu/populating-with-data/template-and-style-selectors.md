@@ -26,7 +26,7 @@ And a list of the selectors provided by the __RadMenuItem__ control:
 
 * __ItemTemplateSelector__ - used to select the __DataTemplate__ that is set to the __HeaderTemplate__ property of the child __RadMenuItems__.
 
->tipThese properties of the __RadMenuItem__ should be set through the __ItemContainerStyle__ of the parent item. If you set the __ItemContainerStyle__ property of the __RadMenu__ only, it will get inherited in the hierarchy, unless it is not explicitly set somewhere.
+>tip These properties of the __RadMenuItem__ should be set through the __ItemContainerStyle__ of the parent item. If you set the __ItemContainerStyle__ property of the __RadMenu__ only, it will get inherited in the hierarchy, unless it is not explicitly set somewhere.
 
 The __HierarchicalDataTemplate__ used with the __RadMenu__ also exposes __ItemContainerStyleSelector__ and __ItemTemplateSelector__ properties.
 

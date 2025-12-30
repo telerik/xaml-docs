@@ -26,7 +26,7 @@ __Example 1: Setting SortingState for a column.__
 
 Once you define all the necessary properties, the corresponding column will be set in an Ascending sorting order. Furthermore, you will be able to handle the Sorting event of the RadGridView and perform any additional logic that you need.
 
->tipFor further information on implementing custom sorting you may run through the [Custom Sorting]({%slug gridview-sorting-custom%}) article.
+>tip For further information on implementing custom sorting you may run through the [Custom Sorting]({%slug gridview-sorting-custom%}) article.
 
 # See also
 

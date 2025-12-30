@@ -35,7 +35,7 @@ In order to take advantage of the TableStylesGallery you have to add references 
 * Telerik.Windows.Controls.RichTextBoxUI
             
 
->tipAll pop-ups that RadRichTextBox uses (context menu, dialogs, etc.) as well as all controls used in [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) are located in the Telerik.Windows.Controls.RichTextBoxUI assembly. However, you can use the TableStylesGallery alone without the whole predefined ribbon.
+>tip All pop-ups that RadRichTextBox uses (context menu, dialogs, etc.) as well as all controls used in [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) are located in the Telerik.Windows.Controls.RichTextBoxUI assembly. However, you can use the TableStylesGallery alone without the whole predefined ribbon.
           
 
 The below snippet is an example of TableStylesGallery:

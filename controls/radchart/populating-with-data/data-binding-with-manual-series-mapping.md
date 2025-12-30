@@ -413,7 +413,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 3 . In order to map to such kind of business objects, you have to create a new instance of __SeriesMapping__. Set the __SeriesMapping.SeriesDefinition__ property to the chart type you want to use - in this case __CandleStickSeriesDefinition__.
 
->tipYou can find a full list of supported chart types [here]({%slug radchart-features-chart-types-2d-charts%}).
+>tip You can find a full list of supported chart types [here]({%slug radchart-features-chart-types-2d-charts%}).
 
 
 

@@ -60,7 +60,7 @@ __Example 2: Wiring UI to the commands related to the clipboard__
           
 ## Key Bindings
 
->tipIn order to copy, paste or cut, the standard keyboard shortcuts can also be used - __Ctrl + C__, __Ctrl + V__, __Ctrl + X__.
+>tip In order to copy, paste or cut, the standard keyboard shortcuts can also be used - __Ctrl + C__, __Ctrl + V__, __Ctrl + X__.
           
 
 To learn more about the default key-bindings of the editor and ways to override them, you can refer to the [Keyboard Support]({%slug radrichtextbox-features-keyboard-support%}) article.
@@ -124,7 +124,7 @@ You can also reorder the clipboard handlers to use first HTML paste and fallback
 
 The API allows you to customize the content which is being copied or pasted in RadRichTextBox. 
 
->tipYou can handle the [CommandExecuting event]({%slug radrichtextbox-features-commands%}#command-related-events) so you can catch the moment of the operation's execution.
+>tip You can handle the [CommandExecuting event]({%slug radrichtextbox-features-commands%}#command-related-events) so you can catch the moment of the operation's execution.
 
 ### ClipboardEx Class
  

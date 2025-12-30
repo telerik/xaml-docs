@@ -12,7 +12,7 @@ position: 5
 
 The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the RadDocking control. Once translated, you might use your resources in both Silverlight and WPF projects without changing anything.
 
->tipTo learn more about the ways to localize UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} please read the common topic about {% if site.site_name == 'Silverlight' %}[Localization]({%slug common-localization%}){% endif %}{% if site.site_name == 'WPF' %}[Localization]({%slug common-localization%}){% endif %}.
+>tip To learn more about the ways to localize UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} please read the common topic about {% if site.site_name == 'Silverlight' %}[Localization]({%slug common-localization%}){% endif %}{% if site.site_name == 'WPF' %}[Localization]({%slug common-localization%}){% endif %}.
 
 In __RadDocking__ you can localize the context menu:
 

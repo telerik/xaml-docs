@@ -42,7 +42,7 @@ Another option which will automatically hide a row or a column is to set its siz
 
 ![Rad Spreadsheet UI Hidden Rows and Columns 03](images/RadSpreadsheet_UI_Hidden_Rows_Columns_03.png)
 
->tipPlease, note that this behavior is different from the behavior of the [model](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-rows-and-columns/hidden-rows-columns) where setting the size of the rows and columns will not affect their hidden state. 
+>tip Please, note that this behavior is different from the behavior of the [model](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-rows-and-columns/hidden-rows-columns) where setting the size of the rows and columns will not affect their hidden state. 
 
 ## Unhiding
 
@@ -60,7 +60,7 @@ Following this, the ribbon and context menu options items can be used.
 
 Similarly to hiding rows and columns, you can unhide them by dragging the thumb which has appeared on the place of their heading. In addition, you can also apply auto fit to them. This is done by double-clicking the thumb.
 
->tipThe autofit behavior of the columns is different from the behavior of the columns. An empty column will not expand when autofitted, unlike an empty row.
+>tip The autofit behavior of the columns is different from the behavior of the columns. An empty column will not expand when autofitted, unlike an empty row.
 
 
 ## See Also

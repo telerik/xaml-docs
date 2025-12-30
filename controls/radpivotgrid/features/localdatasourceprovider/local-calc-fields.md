@@ -112,7 +112,7 @@ Now it is time to add a new instance of this class to the CalculatedFields colle
 	dataProvider.CalculatedFields.Add(calculatedField)
 ```
 
->importantIf you add caculated fields in code behind, you have to set the ItemsSource of LocalDataSourceProvider after you have added all calculated fields or to wrap the code between *BeginInit() - EndInit()* methods (or inside *using DeferRefresh() { ... } section* ).          
+>important If you add caculated fields in code behind, you have to set the ItemsSource of LocalDataSourceProvider after you have added all calculated fields or to wrap the code between *BeginInit() - EndInit()* methods (or inside *using DeferRefresh() { ... } section* ).          
 
 This way the Commission field will be visible in a special folder inside __RadPivotFieldList__ called Calculated Fields.
 

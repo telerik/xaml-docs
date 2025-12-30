@@ -10,7 +10,7 @@ position: 4
 
 # Setting the OverlayStyle
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
+>tip Before reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
 
 The __RadBusyIndicator__ exposes a __OverlayStyle__ property which allows you to apply a style to the __Rectangle__ element overlaying the __RadBusyIndicator's__ content while the indicator is active. 
 
@@ -62,7 +62,7 @@ __OverlayStyle declaration__
 
 >Notice that in the __OverlayStyle__ the __Opacity__ property is also specified. As a result if the __RadBusyIndicator__ had any content, it would still be visible while the indicator was active.
 
->tipYou can remove the __RadBusyIndicator__ busy content's background by setting the control's __Background__ property to __Transparent__.
+>tip You can remove the __RadBusyIndicator__ busy content's background by setting the control's __Background__ property to __Transparent__.
 
 __Remove the BusyContent's Background__
 

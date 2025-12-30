@@ -58,7 +58,7 @@ To be able to modify the colors of these lines you should use the following Styl
 
 
 
->tipYou should turn StripLines visibility on so that you will be able to see them.
+>tip You should turn StripLines visibility on so that you will be able to see them.
 
 
 

@@ -38,7 +38,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __G
 {% if site.site_name == 'WPF' %}
 Change the elements' properties until you get the desired look.
 
->tipYou can also modify the triggers defined for the __GroupChrome__. They are located in the 'Triggers' pane.
+>tip You can also modify the triggers defined for the __GroupChrome__. They are located in the 'Triggers' pane.
 ![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_GroupChrome_Triggers.png)
 {% endif %}
 {% if site.site_name == 'Silverlight' %}

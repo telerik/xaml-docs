@@ -12,9 +12,9 @@ position: 8
 
 In order to enhance the functionality of the __RadMenu__ control, the __RadMenuItem__ can behave like a checkable item. This means that it can be checked and unchecked like a simple __CheckBox__. In order to toggle this behavior you have to set the __IsCheckable__ property of the __RadMenuItem__ to either __True__ or __False__. The default value is __False__.
 
->tipTo learn how to group the checkable items into radio groups read [here]({%slug radmenu-how-to-group-checkable-menu-items-into-radio-group%}).
+>tip To learn how to group the checkable items into radio groups read [here]({%slug radmenu-how-to-group-checkable-menu-items-into-radio-group%}).
 
->tipUpon checking and unchecking the respective events are raised - __Checked__ and __Unchecked__. You can subscribe to them in order to implement your custom logic against the respective action. To learn more about them read here.
+>tip Upon checking and unchecking the respective events are raised - __Checked__ and __Unchecked__. You can subscribe to them in order to implement your custom logic against the respective action. To learn more about them read here.
 
 Here is an example of a definition of a checkable __RadMenuItem__:
 
@@ -26,7 +26,7 @@ __Example 1: Define a checkable menu item__
 
 Upon clicking on the item it will get checked and the tick will appear as an icon for the item.
 
->tipNote that after clicking on the item the menu will collapse. In order to keep the menu open you can set the __StaysOpenOnClick__ property of the __RadMenuItem__ to __True__. This will keep the menu open when this item is clicked.
+>tip Note that after clicking on the item the menu will collapse. In order to keep the menu open you can set the __StaysOpenOnClick__ property of the __RadMenuItem__ to __True__. This will keep the menu open when this item is clicked.
 
 ![Checkable Menu Item](images/RadMenu_Features_Checkable_Items_01.png)
 

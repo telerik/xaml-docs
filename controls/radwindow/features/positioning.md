@@ -20,7 +20,7 @@ The __WindowStartupLocation__ property is an enumeration that provides you with 
 
 * __CenterOwner__: Positions the __RadWindow__ in the center of its owner, if there is one.
 
->tipThe __Owner__ property specifies the control, that owns the __RadWindow__. When the WindowStartupLocation is __CenterOwner__, the __RadWindow__ will get centered relatively to its owner. Note that the __Owner__ property should be of type __RadWindow__{% if site.site_name == 'WPF' %} or __WPF Window__{% endif %}.
+>tip The __Owner__ property specifies the control, that owns the __RadWindow__. When the WindowStartupLocation is __CenterOwner__, the __RadWindow__ will get centered relatively to its owner. Note that the __Owner__ property should be of type __RadWindow__{% if site.site_name == 'WPF' %} or __WPF Window__{% endif %}.
 
 >If you assign the __Owner__ to be a __RadWindow__, make sure that you have opened the owner window prior to opening the child. Otherwise, you will get an __InvalidOperationException__.
 
@@ -30,7 +30,7 @@ The __WindowStartupLocation__ property is an enumeration that provides you with 
 
 When the __WindowStartupLocation__ is set to __Manual__ you can use the __Top__ and __Left__ properties to specify the absolute distance in pixels from the top-left corner of the page.
 
->tipYou can use these properties to cascade the windows in your application.
+>tip You can use these properties to cascade the windows in your application.
 
 ## See Also
 

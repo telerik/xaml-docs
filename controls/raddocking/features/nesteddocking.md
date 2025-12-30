@@ -75,7 +75,7 @@ In this section you can see screenshots of few layouts achieved with nested __Ra
 
 The nested __RadDocking__ layouts can be easily saved and loaded using the built-in Save/Load Layout functionality of the control. In order to achieve Save/Load Layout for nested scenarios you will simply need to save each __RadDocking__ separately and load separately each of them afterwards. The direction of the loading operation should be from the inner __RadDockings__ to the outer ones in order to avoid any issues when loading floating __RadPanes/RadPaneGroups__.
 
->tipFor more details you can check the [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%}) article.
+>tip For more details you can check the [Save/Load Layout]({%slug raddocking-features-save-load-layout-overview%}) article.
 
 >tip You can download a runnable sample project demonstrating Save/Load Nested Docking Layouts from [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Docking/NestedDockingSaveLoadLayout).
 

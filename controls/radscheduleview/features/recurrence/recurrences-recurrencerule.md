@@ -46,7 +46,7 @@ The __RecurrenceRule__ class exposes an __Exceptions__ property, which allows yo
 
 The __RecurrenceRule__ class has only one public constructor, which accepts a __RecurrencePattern__ as a parameter.        
 
->tipThe __RecurrencePattern__ is a mandatory part of the __RecurrenceRule__. Which means that when creating a new __RecurrenceRule__ you must associate the rule with a recurrence pattern.        
+>tip The __RecurrencePattern__ is a mandatory part of the __RecurrenceRule__. Which means that when creating a new __RecurrenceRule__ you must associate the rule with a recurrence pattern.        
 
 
 

@@ -12,7 +12,7 @@ position: 4
 
 In order to improve the readiness of the chart, you can use __strip lines__ and __grid lines__. Besides, for [Y-Axis]({%slug radchart-features-axes-y-axis%}) you can also show grid lines for the minor ticks.
 
->tipTo learn more about the visual elements of the __RadChart__, read the [Visual Structure]({%slug radchart-general-information-visual-structure%}) topic.
+>tip To learn more about the visual elements of the __RadChart__, read the [Visual Structure]({%slug radchart-general-information-visual-structure%}) topic.
 
 The strip lines and grid lines are part of the axes. Therefore, to control the visibility of the grid/strip lines you have to use one of the following properties:
 

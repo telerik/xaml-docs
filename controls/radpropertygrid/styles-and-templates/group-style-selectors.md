@@ -134,7 +134,7 @@ The RadPropertyGrid should have the following appearance after the applied chang
 
 ![{{ site.framework_name }} RadPropertyGrid with Group Style Selector](images/RadPropertyGrid-group-style-selector.png)
 
->tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
+>tip If you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
 
 ## See Also 
 		

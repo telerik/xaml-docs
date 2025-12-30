@@ -108,4 +108,4 @@ Finally set the property in XAML.
 	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.CharacterCasingProperty="1"/>
 ```
 
->tipNote that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.
+>tip Note that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.

@@ -23,7 +23,7 @@ If you want to format the content of __RadRichTextBox__ at run time, you have to
 The __RadRichTextBox__ exposes methods that change the style of the selected text or the paragraph. When a method is called, the respective style is applied to the selected text. If there is no selection available, the style is applied to the word in which the caret is located.
         
 
->tipRadRichTextBox provides a fully functional formatting UI out of the box. To learn more about it read the [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) topic.
+>tip RadRichTextBox provides a fully functional formatting UI out of the box. To learn more about it read the [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) topic.
           
 
 Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the __Click__ event of the __RadToggleButton__, the __ToggleBold()__ method of __RadRichTextBox__ is called.
@@ -61,7 +61,7 @@ Here is an example of a toggle button that upon checking should make the selecti
 __RadRichTextBox__ supports headers and footers. They are represented through separate instances of  __RadRichTextBox__. When a document has headers and footers you can use the __ActiveDocumentEditor__ property           of __RadRichTextBox__ to get the editor instance where the caret is currently situated.
         
 
->tipYou can find more about the Header and Footer functionality in [this article]({%slug radrichtextbox-features-headers-and-footers%}).
+>tip You can find more about the Header and Footer functionality in [this article]({%slug radrichtextbox-features-headers-and-footers%}).
           
 
 The following example inserts the word "text" at the CaretPosition.

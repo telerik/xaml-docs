@@ -24,7 +24,7 @@ Each split container is painted in a different color.
 
 When you want to define the orientation (__Vertical__ or __Horizontal__) in which the panes are ordered inside the container, then you need to set the __Orientation__ property of the __RadSplitContainer__.
 
->tipSetting the __Orientation__ property of a __RadSplitContainer__ is similar to setting the __Orientation__ property of a __StackPanel__.
+>tip Setting the __Orientation__ property of a __RadSplitContainer__ is similar to setting the __Orientation__ property of a __StackPanel__.
 
 * Setting the __Orientation__ property to __Vertical__
 
@@ -96,7 +96,7 @@ __Example 3: Setting Orientation to Vertical in code-behind__
 	End Sub
 ```
 
->tipThe default __Orientation__ for the __RadSplitContainer__ is __Horizontal__.
+>tip The default __Orientation__ for the __RadSplitContainer__ is __Horizontal__.
 
 ## Setting the InitialPosition of the RadSplitContainer
 
@@ -254,7 +254,7 @@ __Example 9: Setting InitialPosition in code-behind__
 	End Sub
 ```
 
->tipPlace each [RadPane]({%slug raddocking-panes-radpane%}) ([RadPaneGroup]({%slug raddocking-features-pane-groups%})) in a separate split container to have the power to initially dock them as desired using the __InitialPosition__ property.
+>tip Place each [RadPane]({%slug raddocking-panes-radpane%}) ([RadPaneGroup]({%slug raddocking-features-pane-groups%})) in a separate split container to have the power to initially dock them as desired using the __InitialPosition__ property.
 
 ## Setting the InitialSize of the RadSplitContainer
 
@@ -303,7 +303,7 @@ __Example 11: Setting FloatingSize__
 
 >Note that the __InitialPosition__ must be set either to __FloatingOnly__ or __FloatingDockable__. Otherwise setting the __RadDocking.FloatingSize__ attached property will not affect the size of the split container.
 
->tipIf you want to resize the __RadSplitContainer__ during run-time, then just use the [Resizer]({%slug raddocking-visual-structure%}).
+>tip If you want to resize the __RadSplitContainer__ during run-time, then just use the [Resizer]({%slug raddocking-visual-structure%}).
 
 ## Setting the Initial FloatingLocation of the RadSplitContainer
 

@@ -111,7 +111,7 @@ __Example 2: Styling the thumbs individually__
     </Grid>
 ```
 
->importantPlease note that when using the [StyleManager theming approach]({%slug common-styling-apperance-setting-theme-wpf%}) you need to also define the **Height** for the middle thumb. This has been demonstrated in the following [knowledge base article]({%slug kb-slider-style-middle-thumb-style-manager%}).
+>important Please note that when using the [StyleManager theming approach]({%slug common-styling-apperance-setting-theme-wpf%}) you need to also define the **Height** for the middle thumb. This has been demonstrated in the following [knowledge base article]({%slug kb-slider-style-middle-thumb-style-manager%}).
 
 Alternatively, you can set the ThumbStyle, **SelectionMiddleThumbStyle** and AlternateThumbStyle properties on the RadSlider control itself and they will be passed onto all thumbs from the **Thumbs** collection.
 

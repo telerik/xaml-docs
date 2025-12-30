@@ -53,4 +53,4 @@ the value of the __BaseAddress__ property.
 
 * __ZoomNumericFormat__: Gets or sets numeric format string will be used to replace {zoom} placeholder. For example "D2" will replace {zoom} placeholder with 2 digits integer (01, 02, ..., 19). The default value is null and it produces simple integer without paddings (1, 2, ... 9, 10, ... 19).          
 
->tipNote that the __UriImageProvider__ cannot be used as a master provider in a multi-provider scenario and always should be restricted within geographic region (i.e. you need to set the UriImageProvider.GeoBounds property).
+>tip Note that the __UriImageProvider__ cannot be used as a master provider in a multi-provider scenario and always should be restricted within geographic region (i.e. you need to set the UriImageProvider.GeoBounds property).

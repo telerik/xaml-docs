@@ -10,7 +10,7 @@ position: 3
 
 # Styling the RadProgressBar
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
+>tip Before reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
 
 The __RadBusyIndicator__ exposes a __ProgressBarStyle__ property which allows you to modify the control's progress bar default appearance.
 
@@ -24,7 +24,7 @@ You have two options:
 
 To copy the default styles, load your project in Expression Blend and open the User Control that holds the __RadBusyIndicator__. In the 'Objects and Timeline' pane select the __RadBusyIndicator__ you want to style. From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking 'OK', Expression Blend will generate the default style of the __RadBusyIndicator__ control in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values. You can also edit the generated XAML in the XAML View or in Visual Studio. 
 
@@ -52,7 +52,7 @@ Here is the result:
 
 ## Create a custom ProgressBar Style
 
->tipRead more about the __RadProgressBar__ [here]({%slug radprogressbar-overview%}).
+>tip Read more about the __RadProgressBar__ [here]({%slug radprogressbar-overview%}).
 
 >When you choose to create a custom __ProgressBarStyle__ you will lose the __RadBusyIndicator's__ default template.
 

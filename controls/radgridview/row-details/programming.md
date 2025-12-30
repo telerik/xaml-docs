@@ -15,7 +15,7 @@ position: 4
 
 __RadGridView__ control exposes several events regarding the __RowDetails__:
 
->tipMore about the events that the __RadGridView__ exposes, can be found [here]({%slug gridview-events-overview%}).
+>tip More about the events that the __RadGridView__ exposes, can be found [here]({%slug gridview-events-overview%}).
 
 * __LoadingRowDetails__: The event is raised immediately after the __FrameworkElement__ has been loaded from the __Row Details DataTemplate__. It is raised the __very first time__ the row details are about to be shown. Once this event has been fired, it will never fire again for that row. However, if the row is recycled and then realized, it starts its "life" again, this event will be fired again the first time the details are about to be shown.
 
@@ -96,7 +96,7 @@ __Example 3: Accessing the expanded item__
 
 * __RowDetailsVisiblityChanged__: This event is fired each time the row details are shown or hidden, i.e. by selecting or deselecting the row. Via the __GridViewRowDetailsEventArgs__ you could access the just loaded __DetailsElement__, the respective __GridViewRow__ (Row) as well as the __Visibility__ of the row details. 
 
->tipTo manually change the visibility of a row - set its __DetailsVisibility__ property to either Visibility.Collapsed or Visibility.Visible
+>tip To manually change the visibility of a row - set its __DetailsVisibility__ property to either Visibility.Collapsed or Visibility.Visible
 
 ## See Also
 

@@ -34,7 +34,7 @@ __Setting IsIndeterminate__
 
 Notice that you have also defined the __ProgressValue__ property. For the purpose of this example, by using data binding you have bound it to a property named in the same way located in the code-behind. Through this binding you will be changing this property to report any shifts in the __RadBusyIndicator's__ progress value. 
 
->tipYou can further change the default way of the progress changes notifications by customizing the [Busy Content]({%slug radbusyindicator-features-custom-busy-content%}).
+>tip You can further change the default way of the progress changes notifications by customizing the [Busy Content]({%slug radbusyindicator-features-custom-busy-content%}).
 
 In the code behind you have to:
 

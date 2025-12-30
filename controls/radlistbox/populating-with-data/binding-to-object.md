@@ -18,7 +18,7 @@ The following tutorial will guide you how to bind a __RadListBox__ to a collecti
 
 * [Using DisplayMemberPath property](#using-displaymemberpath)
 
->tipBefore reading this tutorial you should get familiar with the [Data Binding]({%slug radlistbox-populating-with-data-binding-support-overview%}) support of the RadListBox control.
+>tip Before reading this tutorial you should get familiar with the [Data Binding]({%slug radlistbox-populating-with-data-binding-support-overview%}) support of the RadListBox control.
 
 In order to bind a __RadListBox__ to a collection of business objects, you should perform the following instructions:
 

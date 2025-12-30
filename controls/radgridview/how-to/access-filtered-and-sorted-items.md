@@ -26,7 +26,7 @@ Eventually, we would like to filter and sort the RadGridView:
 
 You can access the items that remain after the data operations are applied through the __Items__ property, as the __ItemsSource__ will remain unchanged. 
 
->tipThe __Items__ collection will be sorted according to the applied changes. Grouping the __RadGridView__ might also result in reordering the collection.  
+>tip The __Items__ collection will be sorted according to the applied changes. Grouping the __RadGridView__ might also result in reordering the collection.  
 
 
 ## See Also

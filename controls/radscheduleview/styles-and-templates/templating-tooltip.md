@@ -77,7 +77,7 @@ And you want to replace the default ToolTip with custom one which shows the full
 
 >Note that the ToolTip receives object of type AppointmentItemProxy as a DataContext which contains the actual Appointment. You can easily bind to its properties like shown above.          
 
->importantIf you are using a custom Appointment with custom properties you won't be able to bind directly to them. You should access them through the Appointment property of the AppointmentItemProxy object the following way: Appointment.*CustomProperty*.          
+>important If you are using a custom Appointment with custom properties you won't be able to bind directly to them. You should access them through the Appointment property of the AppointmentItemProxy object the following way: Appointment.*CustomProperty*.          
 
 Aftewards you just need to set the DataTemplate as a __ToolTipTemplate__ the following way:        
 

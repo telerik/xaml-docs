@@ -25,7 +25,7 @@ Here is a list of the supported languages:
 * __Dutch__             
 * __Turkish__
         
->tipTo learn more about the ways to localize the RadControls please read the common topic about [Localization]({%slug common-localization%}).
+>tip To learn more about the ways to localize the RadControls please read the common topic about [Localization]({%slug common-localization%}).
 
 ## Resource Keys
 

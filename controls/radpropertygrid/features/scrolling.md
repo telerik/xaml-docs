@@ -16,9 +16,9 @@ Since __RadPropertyGrid__ utilizes UI virtualization, it only initializes those 
 
 __ScrollIntoViewAsync(PropertyDefinition propertyDefinition, Action<PropertyGridField> finishedCallback)__ handles the mentioned scenario. Invoking it for a certain __PropertyDefinition__ forces RadPropertyGrid to calculate the needed scroll offset to display its PropertyGridField and then scrolls to it.
 
->tipAfter the scrolling operation is accomplished, the __finishedCallback__ is executed, passing the __newly realized PropertyGridField as a parameter__.
+>tip After the scrolling operation is accomplished, the __finishedCallback__ is executed, passing the __newly realized PropertyGridField as a parameter__.
 
->importantScrollIntoViewAsync is supported only when __RenderMode is set to Flat__. For more information on the different rendering modes, please check the [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}) article.
+>important ScrollIntoViewAsync is supported only when __RenderMode is set to Flat__. For more information on the different rendering modes, please check the [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}) article.
 
 You can define RadPropertyGrid similar to:
 
@@ -88,7 +88,7 @@ __Figure 2__: RadPropertyGrid after scrolling to a particular PropertyDefinition
 __ScrollIntoViewAsync__ can also be used in __grouped scenarios__, to bring given PropertyDefinition’s PropertyGridField in the view port. 
           
 
->tipInvoking it will scroll to the group, expanding it if needed.
+>tip Invoking it will scroll to the group, expanding it if needed.
 
 However, this functionality is supported only for groups that have valid Key (PropertyDefinition.GroupName). You can find more information on how to define groups in the article on [Grouping Support]({%slug radpropertygrid-grouping%}).
         
@@ -110,7 +110,7 @@ When ScrollIntoView is invoked for a nested PropertyDefinition, its parent’s f
 To guarantee that such operations will be successfully executed, both root and nested PropertyDefinitions should have a valid Binding set.
         
 
->tipIt works with multiple levels of hierarchy.
+>tip It works with multiple levels of hierarchy.
           
 
 For sample code on how to perform the scroll please refer to the [ScrollIntoViewAsync section](#the-scrollintoviewasync-method) above.

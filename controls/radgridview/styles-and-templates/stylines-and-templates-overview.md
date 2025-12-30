@@ -12,14 +12,14 @@ position: 0
 
 This section is intended to give you a broad understanding of the possible ways by which you can change the visual appearance of __RadGridView__ and its elements. There is also comprehensive information about their __ControlTemplates__. You will need this information if you want to customize their appearance. 
 
->tipTo learn how to style Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} read the common topics about [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}). You can also check the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic. 
+>tip To learn how to style Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} read the common topics about [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}). You can also check the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic. 
         
 You can modify the look of the __RadGridView__ and its elements either by changing some of the resources exposed by the API, or by modifying their __ControlTemplates__. In the control template you are allowed to reorder the template parts and add your own elements. However, when changing the control template you should be careful to include all required parts.
 
 Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) for two different approaches on how to extract the ControlTemplates.
         
 
->tipNote that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>tip Note that when changing the __ControlTemplate__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 To learn more about styling the __RadGridView__ specific elements, read the following topics.
 

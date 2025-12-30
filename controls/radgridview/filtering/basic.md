@@ -48,7 +48,7 @@ The filtering control that the user is presented with has two parts. The upper p
 
 The string representations that are displayed to the user are produced by taking the raw distinct value from the source collection and then applying the column’s `DataMemberBinding` `IValueConverter` or `DataFormatString` if any are defined. For example, if you have specified a *currency* DataFormatString for your column, the user will see a nicely formatted *$2.22* in the distinct values list. However, underneath this nicely formatted string the original *Float* value will be preserved and will be used for performing the actual filtering inside the data engine. 
 
->importantUsing an IValueConverter or DataFormatstring will not affect the data operations in any way. They are used for UI purposes only and do not play any role in the data engine. Filtering is always performed with the raw data values.
+>important Using an IValueConverter or DataFormatstring will not affect the data operations in any way. They are used for UI purposes only and do not play any role in the data engine. Filtering is always performed with the raw data values.
 
 By default, only the first 1000 distinct values will be shown. The amount of distinct values displayed can easily be configured as described in [this article]({%slug gridview-filtering-howto-display-all-distinct-values%}).
 

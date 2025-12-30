@@ -18,7 +18,7 @@ __RadRichTextBox__ exposes a full set of commands that provide an alternative to
 In order to use the command with a UI Element that supports commanding, you have to bind the __Command__ property of the element to the respective command of the __RadRichTextBox__.
         
 
->tipTo see a list of all the commands exposed by __RadRichTextBox__, visit {% if site.site_name == 'Silverlight' %}[this topic](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.richtextboxcommands){% endif %}{% if site.site_name == 'WPF' %}[this topic](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.richtextboxcommands){% endif %}.
+>tip To see a list of all the commands exposed by __RadRichTextBox__, visit {% if site.site_name == 'Silverlight' %}[this topic](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.richtextboxcommands){% endif %}{% if site.site_name == 'WPF' %}[this topic](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.richtextboxcommands){% endif %}.
         
 
 Here is an example with a __RadToggleButtonControl__.
@@ -82,7 +82,7 @@ Now the button will respond to the current state of the selection.
 You can also use the functionality provided by the __RadRichTextBoxRibbonUI__ class in order to get the event handling out of the box.
         
 
->tipThe __RadRichTextBoxRibbonUI__ provides you with a fully predefined UI for RadRichTextBox. To learn how to use it read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
+>tip The __RadRichTextBoxRibbonUI__ provides you with a fully predefined UI for RadRichTextBox. To learn how to use it read [this topic]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
 
 If you are building your UI manually, for example using a **RadRibbonView** control, you have to only bind the command to the __RadRichTextBoxRibbonUI__.__RichTextCommand__ attached property of the desired __RadRibbonView__ control. Here is an example with a __RadRibbonToggleButton__.
@@ -103,7 +103,7 @@ If you are building your UI manually, for example using a **RadRibbonView** cont
 The __RadRibbonToggleButton__ will get automatically toggled whenever the context of the caret is an italic text.
         
 
->tipMore about the specific buttons introduced with __RadRibbonView__ you can find [here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.html).
+>tip More about the specific buttons introduced with __RadRibbonView__ you can find [here](http://www.telerik.com/help/wpf/allmembers_t_telerik_windows_documents_richtextboxcommands_richtextboxcommands.html).
 
 ![Rad Rich Text Box Features Commands 02](images/RadRichTextBox_Features_Commands_02.png)
 

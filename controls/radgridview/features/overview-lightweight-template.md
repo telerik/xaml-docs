@@ -20,7 +20,7 @@ With __2013 Q2 SP__ we have introduced lightweight templates for __RadGridView a
 
 They are represented by several additional __simplified styles, which you can merge in your project__. The main idea of simplifying templates of different parts of RadGridView is to limit the number of visual elements within the templates in order to __speed up the performance__ of __RadGridView/RadTreeListView__.   
 
->importantThe Lightweight Templates can only be applied with NoXaml binaries and Implicit Themes. You can find more information on them [here]({%slug styling-apperance-implicit-styles-overview%}).
+>important The Lightweight Templates can only be applied with NoXaml binaries and Implicit Themes. You can find more information on them [here]({%slug styling-apperance-implicit-styles-overview%}).
      
 {% if site.site_name == 'WPF' %}   
 >tip The performance on loading the visual elements will be increased __up to 50%__ when the lightweight templates are applied.{% endif %}
@@ -87,7 +87,7 @@ __Example 2: Applying Lightweight Templates with Validation__
 >__GridViewRowCoreValidationStyle__ contains a row indicator, which you can use to perform validation.
           
 
->tipFor __RadGridView__ you need to merge only the CoreStyles for __GridViewCell and GridViewRow__. For __RadTreeListView__ you need to merge the styles for __GridViewCell and TreeListViewRow__.
+>tip For __RadGridView__ you need to merge only the CoreStyles for __GridViewCell and GridViewRow__. For __RadTreeListView__ you need to merge the styles for __GridViewCell and TreeListViewRow__.
 
 ## Remove the Border of the Current Cell
 

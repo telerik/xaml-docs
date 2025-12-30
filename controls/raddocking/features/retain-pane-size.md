@@ -80,7 +80,7 @@ __Figure 2: __ The Pane is docked:
 __Figure 3: __ The last floating size is kept when the Pane becomes floating again:
 ![{{ site.framework_name }} RadDocking The last floating size is kept when the Pane becomes floating again:](images/raddocking-features-retain-pane-size-6.png)
 
->importantWe recommend setting __FloatingSize__ only to the Pane when initial size needs to be applied. Please, notice that this size will be appplied just once when the Pane is undocked for the first time.
+>important We recommend setting __FloatingSize__ only to the Pane when initial size needs to be applied. Please, notice that this size will be appplied just once when the Pane is undocked for the first time.
 
 ## DockingAndFloating
 

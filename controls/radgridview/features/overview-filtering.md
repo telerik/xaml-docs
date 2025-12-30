@@ -86,7 +86,7 @@ You could localize those strings. For the complete list of the localization stri
 
 >The list of filter operations depends on the __DataType__ property of the column. For example, the filter operations "__StartsWith__", "__EndsWith__, "__IsEmpty__, "__IsNotEmpty__... " will not be available for columns of __Integer__ or __DateTime__ types.
 
->tipConsider using the code-behind approach only when changing the filtering criteria __run-time__.
+>tip Consider using the code-behind approach only when changing the filtering criteria __run-time__.
 
 Check out the chapters entirely dedicated to the filtering functionality of __RadGridView__ and find the answers to many questions like:
 

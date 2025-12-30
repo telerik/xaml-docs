@@ -83,7 +83,7 @@ __RadChart__ allows you to define grouping and aggregation for each series separ
 
 The following example, considering the sample data above, demonstrates how to use grouping with bar chart:
 
->tipIn order to use the grouping feature, you have to declare the following namespace:
+>tip In order to use the grouping feature, you have to declare the following namespace:
 
 
 

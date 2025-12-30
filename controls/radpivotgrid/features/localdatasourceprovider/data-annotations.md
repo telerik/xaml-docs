@@ -52,7 +52,7 @@ But what if you want to hide the "Advertisement" property or show different name
 
 ## Data Annotations with RadPivotGrid
 
->importantIf you want to use Data Annotations in your application, you have to add a reference to System.ComponentModel.DataAnnotations assembly.          
+>important If you want to use Data Annotations in your application, you have to add a reference to System.ComponentModel.DataAnnotations assembly.          
 
 With Data Annotations you can apply attributes to the members of the class that specify how the data is displayed. __RadPivotGrid__ supports {% if site.site_name == 'Silverlight' %}two{% endif %}{% if site.site_name == 'WPF' %}three{% endif %} different Data Annotations:
 

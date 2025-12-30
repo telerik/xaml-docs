@@ -12,7 +12,7 @@ position: 0
 
 The purpose of this tutorial is to show you how to customize __RadPane's__ menu.
       
->tipFor more information about the __RadPane__ structure, read [here]({%slug raddocking-panes-radpane%}). If you want to learn more about __RadPane's__ menu, read [this one]({%slug raddocking-features-panes-panes-menu%}).
+>tip For more information about the __RadPane__ structure, read [here]({%slug raddocking-panes-radpane%}). If you want to learn more about __RadPane's__ menu, read [this one]({%slug raddocking-features-panes-panes-menu%}).
 
 ## Customizing RadPane's Menu 
 

@@ -75,7 +75,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 
 
->tipThe __Sum()__ extension method is available via the __System.Linq__ namespace.
+>tip The __Sum()__ extension method is available via the __System.Linq__ namespace.
 
 
 

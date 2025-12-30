@@ -304,7 +304,7 @@ This series expose the following styling properties:
 
 	![radchartview-styles-and-templates-Area Series-Range Area Shape Style](images/radchartview-styles-and-templates-RangeAreaSeries-AreaShapeStyle.png)
 	
->tipRangeSeries expose several additional properties you can use to style its appearance: __Stroke__, __StrokeThickness__, __Fill__, __DashArray__.
+>tip RangeSeries expose several additional properties you can use to style its appearance: __Stroke__, __StrokeThickness__, __Fill__, __DashArray__.
 
 ### StepAreaSeries
 

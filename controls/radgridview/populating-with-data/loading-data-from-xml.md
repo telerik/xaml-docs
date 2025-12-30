@@ -205,7 +205,7 @@ Run your demo, the result can be seen on the next picture:
 
 ![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromXml 020](images/RadGridView_PopulatingWithDataLoadFromXml_020.PNG)
 
->tipIf you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
+>tip If you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 
 ## See Also
 

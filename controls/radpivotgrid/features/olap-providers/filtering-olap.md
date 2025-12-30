@@ -298,7 +298,7 @@ If you use __AdomdDataProvider:__
 	groupDescription.Levels.Add(levelGroupDescription2)
 ```
 
->tipThe value of "Than" property is the unique name of the member (defined in OLAP Cube). As you are unable to use & in XAML, you have to use &amp; which will be parsed to &. You have to define *sys* namespace: __xmlns:sys="clr-namespace:System;assembly=mscorlib"__.                
+>tip The value of "Than" property is the unique name of the member (defined in OLAP Cube). As you are unable to use & in XAML, you have to use &amp; which will be parsed to &. You have to define *sys* namespace: __xmlns:sys="clr-namespace:System;assembly=mscorlib"__.                
 
 ## Value Filter
 
@@ -320,7 +320,7 @@ __Value Filter__ is applied on __RowGroupDescriptions__/__ColumnGroupDescription
 
 * __is not between__ - show only members for which the selected measure is NOT between the two passed parameters.            
 
->important__Value Filter__ is filtering the groups by number comparison between the *GrandTotals* of the groups and the parameters we pass, while __Label Filter__ is a string filter.          
+>important __Value Filter__ is filtering the groups by number comparison between the *GrandTotals* of the groups and the parameters we pass, while __Label Filter__ is a string filter.          
 
 So if we apply a __Value Filter__ on the *Category* ColumnGroupDescription, set condition *"is greater than"* for the AggregateDescription Reseller Order Quantity  and pass as parameter value 50000 we will notice that two of the groups are missing because their *GrandTotal* is less than 50 000.
 

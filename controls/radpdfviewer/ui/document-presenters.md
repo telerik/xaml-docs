@@ -39,7 +39,7 @@ Both of those presenters inherit the abstract __Telerik.Windows.Documents.UI.Fix
 
 >You can access the document presenter in __RadPdfViewer__ by accessing the __FixedDocumentPresenter__ property. 
         
->tipFixedDocumentPresenterBase exposes the **VisiblePagesCacheOffset property**, which you can use to control the amount of pages that are cached before and after the visible ones. The default value of VisiblePagesCacheOffset is 1. 
+>tip FixedDocumentPresenterBase exposes the **VisiblePagesCacheOffset property**, which you can use to control the amount of pages that are cached before and after the visible ones. The default value of VisiblePagesCacheOffset is 1. 
 
 ## Using FixedDocumentPagesPresenter
 

@@ -44,7 +44,7 @@ __Example 2: Binding IsReadOnlyBinding at column level.__
 
 In both cases the property to which IsReadOnlyBinding is bound is exposed by the business object. In the example above "IsActive" as well as "Age" are properties of one and the same data item.
 
->tipYou can download a __runnable project__ illustrating the different setups from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/ReadOnlyBinding).
+>tip You can download a __runnable project__ illustrating the different setups from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/ReadOnlyBinding).
 
 >You can also check the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. 
 

@@ -23,7 +23,7 @@ Here is a list of the supported languages:
 * Dutch             
 * Turkish   
 
->tipTo learn more about the ways to localize the controls from the UI for {{ site.framework_name }} suite, please read the common topic on [Localization]({%slug common-localization%}).
+>tip To learn more about the ways to localize the controls from the UI for {{ site.framework_name }} suite, please read the common topic on [Localization]({%slug common-localization%}).
 
 Below you may see the resource keys and the strings they are associated with.
 

@@ -20,9 +20,9 @@ After being minimized or maximized the respective button is replaced by a __Rest
 #### __Figure 2: RadWindow Restore Button__
 ![RadWindow Restore Button](images/RadWindow_Minimize_Maximize_02.png)
 
->tipEvery time when the __RadWindow__ gets minimized or maximized, it changes its state. More about the __RadWindow__ states can be found [here]({%slug radwindow-features-states%}).
+>tip Every time when the __RadWindow__ gets minimized or maximized, it changes its state. More about the __RadWindow__ states can be found [here]({%slug radwindow-features-states%}).
 
->tipThe __RestoreMinimizedLocation__ property allows the __RadWindow__ to store its size and position for the __Normal__ and the __Minimized__ states.
+>tip The __RestoreMinimizedLocation__ property allows the __RadWindow__ to store its size and position for the __Normal__ and the __Minimized__ states.
 
 ## See Also
 

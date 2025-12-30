@@ -30,7 +30,7 @@ When the RadGridView is setup, you can configure it to display the merged cells 
 
 * __Horizontal__      
 
->importantMerged Cells are only supported with __GroupRenderMode=”Flat”__. You can check the [Rendering Modes]({%slug gridview-grouping-groupingmodes%}) article for further details on it.
+>important Merged Cells are only supported with __GroupRenderMode=”Flat”__. You can check the [Rendering Modes]({%slug gridview-grouping-groupingmodes%}) article for further details on it.
           
 >Currently, frozen columns are not supported while having merged cells enabled. An exception will be thrown: "Cell merging is not supported when frozen columns are enabled.”.
       

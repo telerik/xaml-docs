@@ -19,7 +19,7 @@ The following article explains how to use read only ranges in RadRichTextBox
 Read only ranges are a convenient way to restrict some of the content of a particular document from editing. When content is in a read only range, users are unable to edit, format or delete it. What is more, manipulating the document from code with __RadRichTextBox__'s API or commands is also not possible. Additionally, the predefined UI - __RadRichTextBoxRibbonUI__ corresponds to the state of the document when the caret is located in a read only region by fading out the parts which operate with the document content in order to notify users they cannot edit this content.
         
 
->tip__RadRichTextBox__ also provides another, more advanced option for restricting content which allows particular users or groups of users to edit different parts of a document. For more information on this check the documentation of the [Document Protection]({%slug radrichtextbox-features-document-protection%}) feature.
+>tip __RadRichTextBox__ also provides another, more advanced option for restricting content which allows particular users or groups of users to edit different parts of a document. For more information on this check the documentation of the [Document Protection]({%slug radrichtextbox-features-document-protection%}) feature.
           
 
 A read only annotation range is represented in __RadDocument__'s structure by two paired annotation markers – a __ReadOnlyRangeStart__ instance and a __ReadOnlyRangeEnd__ instance. Both are inline elements, thus users are able to edit the document prior and after the annotation markers. More on Annotations you can find [here]({%slug radrichtextbox-features-document-elements-annotations%}).
@@ -47,7 +47,7 @@ When the document is measured (for example, shown in a __RadRichTextBox__), you 
 ```
 
 
->tipGenerally, editing the content of a read only range is not possible through the UI and through __RadRichtextBox__'s API. However, when manipulating a document using __RadDocumentEditor__ you can set the __RespectReadOnlyRanges__ property of __RadDocumentEditor__ to *false* and read only ranges will be ignored.
+>tip Generally, editing the content of a read only range is not possible through the UI and through __RadRichtextBox__'s API. However, when manipulating a document using __RadDocumentEditor__ you can set the __RespectReadOnlyRanges__ property of __RadDocumentEditor__ to *false* and read only ranges will be ignored.
       
 ### Insert in Non-measured Document
 

@@ -12,7 +12,7 @@ position: 1
 
 The purpose of this tutorial is to walk you through the common task of adding buttons to the pane header and attaching some behavior to them.
 
->tipFor more information about the __RadPane__ and its visual elements, read [here]({%slug raddocking-panes-radpane%}).
+>tip For more information about the __RadPane__ and its visual elements, read [here]({%slug raddocking-panes-radpane%}).
 
 For the purpose of this tutorial, the following __RadDocking__ declaration will be used:
 

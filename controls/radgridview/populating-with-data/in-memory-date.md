@@ -144,7 +144,7 @@ Run your demo, the result can be seen on the next picture:
 
 ![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromInMemoryData 010](images/RadGridView_PopulatingWithDataLoadFromInMemoryData_010.PNG)
 
->tipIf you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
+>tip If you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 
 ## See Also
 

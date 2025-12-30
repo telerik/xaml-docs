@@ -14,7 +14,7 @@ The user can move the window by clicking on the __RadWindow__'s header and then 
 
 ![{{ site.framework_name }} RadWindow Move by Drag](images/RadWindow_Features_Moving_01.png)
 
->tipWhen the __RadWindow__ gets moved, the __LayoutChangeStarted__ and the __LayoutChangeEnded__ events are raised. More about the events can be found [here]({%slug radwindow-events-overview%}).
+>tip When the __RadWindow__ gets moved, the __LayoutChangeStarted__ and the __LayoutChangeEnded__ events are raised. More about the events can be found [here]({%slug radwindow-events-overview%}).
 
 To disable the moving of the __RadWindow__ via the UI you have to set the __CanMove__ property to __False__.
 

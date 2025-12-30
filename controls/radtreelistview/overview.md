@@ -52,7 +52,7 @@ Telerik __RadTreeListView__ combines the powerful data-driven features from __Ra
 
 Check out the control's demos at: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
 
->tipYou can find more examples on how to implement various scenarios available for download from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the examples are listed under __TreeListView__.       
+>tip You can find more examples on how to implement various scenarios available for download from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the examples are listed under __TreeListView__.       
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources

@@ -18,7 +18,7 @@ __RadComboBox__'s API gives you the ability to open the __DropDown__ when the co
 	<telerik:RadComboBox x:Name="radComboBox" OpenDropDownOnFocus="True"/>
 ```
 
->tipThe default value of the __RadComboBox__'s __OpenDropDownOnFocus__ property is __False__.
+>tip The default value of the __RadComboBox__'s __OpenDropDownOnFocus__ property is __False__.
 
 ## See Also
 

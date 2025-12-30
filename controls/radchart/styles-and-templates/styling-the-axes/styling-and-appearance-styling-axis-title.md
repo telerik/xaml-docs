@@ -14,7 +14,7 @@ position: 7
 
 ## 
 
->tipThe approach below allow you more completely to change the appearance of the axis item label, but if you want to change only the foreground of it, you can use the __AxisForeground__ property of the __RadChart.Note__ that the value of this property will get applied to all of the axis item labels and all of the axis titles.
+>tip The approach below allow you more completely to change the appearance of the axis item label, but if you want to change only the foreground of it, you can use the __AxisForeground__ property of the __RadChart.Note__ that the value of this property will get applied to all of the axis item labels and all of the axis titles.
 
 The axis title is part of the chart axis and is represented by the __AxisTitle__ control. To style it in Expression Blend use a dummy control to create the style and after modifying it, set it to the __RadChart__.
 
@@ -22,7 +22,7 @@ Open your __RadChart__ project in Expression Blend. On the same scene you should
 
 With your mouse create a new instance of the control on the scene. Now select the newly created control and select *Object -> Edit Style -> Edit Copy* from the menu. You will be prompted for the name of the style and where to be placed within your application.
 
->tipIf you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
+>tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking the OK button a style with target type __AxisTitle__ will be created and the properties for this type will be loaded in the 'Properties' pane. Modify them until you get the desired appearance.
 
@@ -45,7 +45,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 
 
->tipThe title for a particular axis can be set through its __Title__ property. Read more about axes [here]({%slug radchart-features-axes-overview%}).
+>tip The title for a particular axis can be set through its __Title__ property. Read more about axes [here]({%slug radchart-features-axes-overview%}).
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingAxisTitle_10.png)
 

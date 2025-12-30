@@ -43,7 +43,7 @@ It is also possible to apply a style using the Styles dialog as shown in the pic
 
 Other than using the API to declare a style, you can also use the UI.
 
->tipMore info on how to create a style from code can be found in the [Styles article]({%slug radrichtextbox-features-styles%})
+>tip More info on how to create a style from code can be found in the [Styles article]({%slug radrichtextbox-features-styles%})
 
 ![Rad Rich Text Box UI For Applying Rich Text Formatting Applying Styles 03](images/RadRichTextBox_UI_For_Applying_Rich_Text_Formatting_Applying_Styles_03.png)
 
@@ -82,7 +82,7 @@ The predefined set of Styles in RadDocument cannot be deleted using the UI. Only
         
 ![Rad Rich Text Box UI For Applying Rich Text Formatting Applying Styles 06](images/RadRichTextBox_UI_For_Applying_Rich_Text_Formatting_Applying_Styles_06.png)
 
->tipIt is possible to remove the default styles from the Quick Styles by using the Modify option and unchecking the Add to Quick Styles checkbox.
+>tip It is possible to remove the default styles from the Quick Styles by using the Modify option and unchecking the Add to Quick Styles checkbox.
 
 ![Rad Rich Text Box UI For Applying Rich Text Formatting Applying Styles 07](images/RadRichTextBox_UI_For_Applying_Rich_Text_Formatting_Applying_Styles_07.png)
 

@@ -22,7 +22,7 @@ Another benefit of the __Row Details__ is the option of placing the __Details Pr
 
 ____
 
->tipThe row and the row details share the same data context, so you are free to bind the elements in your template to any of the properties of the data item.
+>tip The row and the row details share the same data context, so you are free to bind the elements in your template to any of the properties of the data item.
 
 As the __Row Details__ feature is inherited from the __RadGridView__, you can find more detailed information and examples in [its documentation]({%slug radgridview-row-details-overview%}).
 

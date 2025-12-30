@@ -57,7 +57,7 @@ If you run the application you will see and empty RadNumericUpDown as demonstrat
 
 ![Empty RadNumericUpDown](images/numericupdown-empty.jpg)
 
->importantThe default **Value** of the __RadNumericUpDown__ control is equal to __null__.
+>important The default **Value** of the __RadNumericUpDown__ control is equal to __null__.
 
 ## Binding Value
 

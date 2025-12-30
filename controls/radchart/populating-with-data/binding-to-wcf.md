@@ -87,7 +87,7 @@ Now build the project before continuing.
 
 * Add a reference to your WCF Service. 
 
->tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
+>tip For more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
 
 * Switch to the code-behind and create a new instance of your WCF Service client.
 
@@ -221,7 +221,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
->tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
+>tip For more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html) topic.
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Products__ from the database:
 

@@ -29,7 +29,7 @@ __Example 1: Closing a RadWindow__
 	radWindow.Close()
 ```
 
->tipWhen the __RadWindow__ gets closed, the __Closed__ event is raised. More about events can be found [here]({%slug radwindow-events-overview%}).
+>tip When the __RadWindow__ gets closed, the __Closed__ event is raised. More about events can be found [here]({%slug radwindow-events-overview%}).
 
 ## Prevent Closing
 

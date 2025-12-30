@@ -13,7 +13,7 @@ position: 10
 {% if site.site_name == 'Silverlight' %}
 Telerik __RichTextBox__ for Silverlight supports commands in a way that is similar to the commanding mechanism in WPF. It is only natural that some of these commands be triggered on key combinations. There are default key-bindings defined for the most widely used commands.
 
->importantNote that the browser could handle some of the shortcuts and some of them cannot be even enabled. RadRichTextBox is not capable of modifying this behavior as it is up to the browser.
+>important Note that the browser could handle some of the shortcuts and some of them cannot be even enabled. RadRichTextBox is not capable of modifying this behavior as it is up to the browser.
 {% endif %}
 
 {% if site.site_name == 'WPF' %}

@@ -70,7 +70,7 @@ Please note that when an Edit is started, the Navigation and AddNew commands get
 
 **RadDataForm** supports editing of types that do not implement the **IEditableObject** or **INotifyPropertyChanged** interfaces. Still, please note that in this case you cannot take advantage of the cancel edit feature and the **Cancel** button will not be enabled.
 
->tipYou can find a detailed explanation of how to implement the **IEditableObject** in this [MSDN article](http://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx).
+>tip You can find a detailed explanation of how to implement the **IEditableObject** in this [MSDN article](http://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx).
 
 ### AutoEdit
 

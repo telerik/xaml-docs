@@ -20,7 +20,7 @@ __QueryableDataProvider__ is one of the data source providers that can be used w
 
 You can define the __QueryableDataProvider__ as a *StaticResource* in your XAML if it will be used in more than one controls (for example if you have __RadPivotGrid__ and __RadPivotFieldList__ controls in your application) or define it directly for any of the controls you are planning to use:        
 
->importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __QueryableDataProvider__ in your XAML.          
+>important The __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __QueryableDataProvider__ in your XAML.          
 
 * Defined as a *StaticResource* and used in __RadPivotGrid__ and __RadPivotFieldList__:            
 
@@ -42,7 +42,7 @@ You can define the __QueryableDataProvider__ as a *StaticResource* in your XAML 
 	</Grid>
 ```
 
->cautionIf you set different DataProviders for __RadPivotGrid__ and __RadPivotFieldList__ you will not be able to see any changes in __RadPivotGrid__ even when you change something in __RadPivotFieldList__. 
+>caution If you set different DataProviders for __RadPivotGrid__ and __RadPivotFieldList__ you will not be able to see any changes in __RadPivotGrid__ even when you change something in __RadPivotFieldList__. 
 
 You can also create an object of type __QueryableDataProvider__ in the background and after that to use it for your controls:        
 

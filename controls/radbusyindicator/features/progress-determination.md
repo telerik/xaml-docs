@@ -20,7 +20,7 @@ The default scenario is the second one - the __RadBusyIndicator__ is indetermine
 
 If you need a determined __RadBusyIndicator__ you have to set the value of the __IsIndeterminated__ property to __False__. In this case you can modify the __ProgressValue__ property, which will indicate how much of the predefined time have already elapsed. You can set its value through XAML or code-behind. However, to get the most out of it, you have to bind it to a percentage value (between 0 and 100) indicating the state of the ongoing process.
 
->tipRead more about reporting the current stage of loading via the __ProgressValue__ property [here]({%slug radbusyindicator-features-report-progress-value%}). 
+>tip Read more about reporting the current stage of loading via the __ProgressValue__ property [here]({%slug radbusyindicator-features-report-progress-value%}). 
 
 Here is an example of creating a determined __RadBusyIndicator__ control:
 

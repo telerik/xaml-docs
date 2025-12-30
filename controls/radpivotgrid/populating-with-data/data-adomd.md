@@ -60,7 +60,7 @@ AdomdDataProvider uses four different collections to design the view of RadPivot
 
 You can define your AdomdDataProvider as a *StaticResource* in the XAML and then use it in both RadPivotGrid and RadPivotFieldList controls.      		
 
->importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the AdomdDataProvider in your XAML.				
+>important The __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the AdomdDataProvider in your XAML.				
 
 ```XAML
 	<Grid>

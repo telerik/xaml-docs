@@ -26,7 +26,7 @@ To create a custom appointment class you can start off with either of the follow
 
 Let's create a simple task tracking system. For our Custom Appointment class we will inherit from __Appointment__. Our tracking system will need  to show an additional field for the task progress – an indication of whether the task has finished or not. In order to enable editing in transactions of the new property we need to use the __Storage__ method of the __AppointmentBase__ class to access the instance which owns the fields. We will name our custom appointment class __Task.__ __Example 1__ shows the creation of the Custom Appointment class:        
 
->importantWhen inheriting the AppointmentBase class it is required to create a parameter-less constructor for the the custom class.
+>important When inheriting the AppointmentBase class it is required to create a parameter-less constructor for the the custom class.
 
 __Example 1: Create Custom Appointment__
 
@@ -176,7 +176,7 @@ __Example 3: Bind the IsDone property__
 #### __Figure 2: Result from Example 3__
 ![RadScheduleView with custom EditAppointmentDialogStyle](images/custom_appointment2.PNG)
 
->tipThe important thing to note here is that we can bind to our new properties using __Occurrence.Appointment__.
+>tip The important thing to note here is that we can bind to our new properties using __Occurrence.Appointment__.
 
 ## Changing the Style of the AppointmentItem
 

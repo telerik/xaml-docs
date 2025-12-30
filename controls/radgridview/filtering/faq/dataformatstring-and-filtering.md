@@ -20,7 +20,7 @@ The __DataFormatString is only used for presentation purposes__. It plays absolu
 Each GridViewColumn has a property called __FilterMemberPath__. You can use this property to tell the column to __filter on a property different from the one it displays__ in its cells. 
         
 
->tipFor example: FilterMemberPath="PropertyToFilterOn". You can also check the [FilterMemberPath documentation]({%slug gridview-filtering-basic%}).
+>tip For example: FilterMemberPath="PropertyToFilterOn". You can also check the [FilterMemberPath documentation]({%slug gridview-filtering-basic%}).
             
 
 ## See Also

@@ -113,7 +113,7 @@ __RadPivotGrid or RadGridView__
 
 In some cases you may get confused which control to use - __RadPivotGrid__ or __RadGridView__. The main difference between the two of them is the view of the data - if you want to show all of your items - you need __RadGridView__. If you want to show only grouped data and different aggregates you need __RadPivotGrid__.              
 
->importantIf you want to show your data items then use __RadGridView__. __RadPivotGrid__ shows only groups and aggregates (without data items behind these groups).               
+>important If you want to show your data items then use __RadGridView__. __RadPivotGrid__ shows only groups and aggregates (without data items behind these groups).               
 
 Here is __RadPivotGrid__ with two groupings and two aggregate descriptions applied:
 

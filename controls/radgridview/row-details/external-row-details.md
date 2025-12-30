@@ -14,7 +14,7 @@ position: 5
 
 In order to display Row Details outside of the __RadGridView__, place a __DetailsPresenter__ control somewhere around your __RadGridView__. The only thing that you need to do in order to synchronize the __DetailsPresenter__ with the __RadGridView__ is to connect its __DetailsProvider__ property to the __RowDetailsProvider__ property of the __RadGridView__. 
 
->tipThe __DetailsPresenter__ control used for displaying external details is exactly the same control internally used by the __RadGridView__ rows. 
+>tip The __DetailsPresenter__ control used for displaying external details is exactly the same control internally used by the __RadGridView__ rows. 
 
 The __RowDetailsProvider__ takes care to passing the needed data (the data template, the row details style and etc) to the presenter. It doesn't matter if it is internal or external. Each time a different row is selected or the template is changed, the grid will communicate this change via its __RowDetailsProvider__ property and update the connected __DetailsPresenter__ automatically. 
 

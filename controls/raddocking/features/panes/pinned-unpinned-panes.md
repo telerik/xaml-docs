@@ -53,7 +53,7 @@ If you hover your mouse over the tab of the "Toolbox" pane, it will slide automa
 
 ![{{ site.framework_name }} RadDocking Hovered Pane](images/RadDocking_Features_Panes_Pinn_Unpinn_040.png)
 
->tipIf you want to control the auto-hide area's width and hight of your unpinned panes use the respective __RadPane__'s properties __AutoHideHeight__ and __AutoHideWidth__. The size of the auto-hide area is also affected by the __FlyoutMinLength__ property of RadDocking.
+>tip If you want to control the auto-hide area's width and hight of your unpinned panes use the respective __RadPane__'s properties __AutoHideHeight__ and __AutoHideWidth__. The size of the auto-hide area is also affected by the __FlyoutMinLength__ property of RadDocking.
 
 ## Let Auto-Hide Area Content Exceed Screen
 

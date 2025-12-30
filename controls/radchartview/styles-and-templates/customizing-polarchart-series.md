@@ -115,7 +115,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
     
 ```
 
->tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
+>tip Since __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
 
 ![radchartview-styles-and-templates-Polar Point Series-Default Visual Style](images/radchartview-styles-and-templates-PolarPointSeries-DefaultVisualStyle.png)
 
@@ -136,7 +136,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 ```
 
 
->tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
+>tip Since __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
 
 ![radchartview-styles-and-templates-Radar Point Series-Default Visual Style](images/radchartview-styles-and-templates-RadarPointSeries-DefaultVisualStyle.png)
 

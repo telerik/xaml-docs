@@ -12,7 +12,7 @@ position: 9
 
 For now the __RadDocumentPane__ control is identical to the __RadPane__ control as the __RadDocumentPane__ inherits it. In that way the control properties and templates are the same and you can use the same approach to style it as with the __RadPane__ control. To learn more about styling the __RadPane__ read [here]({%slug raddocking-styling-the-radpane%}).
 
->tipYou are able to set a style created for the __RadPane__ control directly to the __RadDocumentPane__ control without the need to change its __TargetType__, as the __RadDocumentPane__ derives from the __RadPane__.
+>tip You are able to set a style created for the __RadPane__ control directly to the __RadDocumentPane__ control without the need to change its __TargetType__, as the __RadDocumentPane__ derives from the __RadPane__.
 
 ## See Also
 

@@ -32,7 +32,7 @@ There are two main types of aggregate functions available which in turn serve as
 
 	* __SumFunction__: Returns the **sum** of all cell values in the column.
 
->tipYou can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ or **EnumerableSelectorAggregateFunction** class. An example can be found {% if site.site_name == 'Silverlight' %} [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates){% else %}in the __Custom Aggregate Function__ RadGridView example from our [demos](https://demos.telerik.com/wpf/){% endif %}.
+>tip You can also create your own custom functions similar to these by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ or **EnumerableSelectorAggregateFunction** class. An example can be found {% if site.site_name == 'Silverlight' %} [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates){% else %}in the __Custom Aggregate Function__ RadGridView example from our [demos](https://demos.telerik.com/wpf/){% endif %}.
 
 Each aggregate function has a caption and a result, which are displayed next to the group title. 
 

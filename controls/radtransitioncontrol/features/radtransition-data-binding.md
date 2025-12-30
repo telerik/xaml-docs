@@ -53,7 +53,7 @@ You can also bind the __RadTransitionControl__ to another __Control__ in your __
 
 In this case the data item representing the __SelectedItem__ is the __DataContext__ of the __ControlTemplate__.
 
->tipIn the [Getting Started]({%slug radtransition-getting-started%}) topic you can find an example of a __RadTransitionControl__ bound to a __ListBox__, which lists photos.
+>tip In the [Getting Started]({%slug radtransition-getting-started%}) topic you can find an example of a __RadTransitionControl__ bound to a __ListBox__, which lists photos.
 
 ## See Also
 

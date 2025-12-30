@@ -20,7 +20,7 @@ __ResponseButton__ is an attached property that specifies the behavior of the de
 
 Here is an example of how to create a window that responds to __Enter__ and __ESC__ keyboard strokes. The example uses the RadWindow as a user control:
 
->tipTo learn more about how to use the __RadWindow__ as user control read [this topic]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
+>tip To learn more about how to use the __RadWindow__ as user control read [this topic]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
 
 

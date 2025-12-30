@@ -70,6 +70,6 @@ Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 
 
 
->tipYou can use the __LogarithmBase__ property of the __AxisY__ to modify the base on which the logarithmic function for the axis is calculated.
+>tip You can use the __LogarithmBase__ property of the __AxisY__ to modify the base on which the logarithmic function for the axis is calculated.
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_Logarithmic_Scale_02.png)

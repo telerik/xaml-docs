@@ -11,7 +11,7 @@ site_name: WPF
 
 # Styling Merged Cells
 
->tipMerged cells have a template structure similar to [RadGridView cells]({%slug gridview-styling-cell%}). 
+>tip Merged cells have a template structure similar to [RadGridView cells]({%slug gridview-styling-cell%}). 
 
 In this article we will discuss the following topics:
 
@@ -73,7 +73,7 @@ __Example 2: Styling merged cells of a specific RadGridView__
 	<telerik:RadGridView MergedCellsStyle="{StaticResource GridViewMergedCellsStyle}" />
 ```
 
->tipIf you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
+>tip If you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
 
 ## Setting MergedCellsStyleSelector
 

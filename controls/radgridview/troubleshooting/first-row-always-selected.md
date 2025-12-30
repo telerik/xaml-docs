@@ -14,7 +14,7 @@ __PROBLEM__
 
 By default, the first row of the RadGridView is selected. This is also causing the [SelectionChanged]({%slug gridview-selection-events%}) event to fire when the control is loaded.
 
->tipThis behavior does not occur in versions after __Q2 2010__. 
+>tip This behavior does not occur in versions after __Q2 2010__. 
 
 __CAUSE__
 

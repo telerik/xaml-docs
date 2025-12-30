@@ -22,7 +22,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 ![Rad Spreadsheet Overview ](images/RadSpreadsheet_Overview.png)
 
 
->important__RadSpreadsheet__ operates with a rich document model that is completely decoupled from UI. The documentation of the model can be found in the RadSpreadProcessing section of the documentation for Telerik Document Processing [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
+>important __RadSpreadsheet__ operates with a rich document model that is completely decoupled from UI. The documentation of the model can be found in the RadSpreadProcessing section of the documentation for Telerik Document Processing [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
 
 ## Features
 

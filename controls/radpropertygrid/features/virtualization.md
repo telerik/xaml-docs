@@ -16,7 +16,7 @@ Since __Q1 2013__ RadPropertyGrid supports __UI Virtualization__. It processes o
 
 The following tutorial shows how to bind to a collection of business objects and virtualize the items displayed in a RadPropertyGrid element using the __IsVirtualizing__ property.
 
->tipBy default __IsVirtualizing__ property is set to __False__.
+>tip By default __IsVirtualizing__ property is set to __False__.
 
 Here is a simple RadPropertyGrid declaration.
 
@@ -46,4 +46,4 @@ __Example 3: Setting IsVirtualizing property__
 	<telerik:RadPropertyGrid IsVirtualizing="True" />
 ```
 
->tipA complete example of RadPropertyGrid UI Virtualization is available in {% if site.site_name == 'Silverlight' %}[this online demo](https://demos.telerik.com/silverlight/#PropertyGrid/Virtualization){% endif %}{% if site.site_name == 'WPF' %}[this online demo](https://demos.telerik.com/wpf/#PropertyGrid/Virtualization){% endif %}.
+>tip A complete example of RadPropertyGrid UI Virtualization is available in {% if site.site_name == 'Silverlight' %}[this online demo](https://demos.telerik.com/silverlight/#PropertyGrid/Virtualization){% endif %}{% if site.site_name == 'WPF' %}[this online demo](https://demos.telerik.com/wpf/#PropertyGrid/Virtualization){% endif %}.

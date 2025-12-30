@@ -20,7 +20,7 @@ The property supports three options:
 
 * __ReadOnly__: When this is the selected option, the __IsReadOnly__ property will be set. If the corresponding control does __not have IsReadOnly__ property, then the __IsEnabled__ property will be set as a fallback. This option provides limited interaction with the property values.
 
->importantThis behavior can be used only when IsReadOnly = “True”.
+>important This behavior can be used only when IsReadOnly = “True”.
 
 The following examples show how RadPropertyGrid will look like when the ReadOnlyEditorState property is used:
 

@@ -153,7 +153,7 @@ __Stop the searching based on a condition__
 
 The `Searched` event will be raised when the grid data has been searched. It's arguments are of type `GridViewSearchedEventArgs` and contain the value of the text which was entered in the search panel `TextBox` - `SearchText`.
 
->tipFor more information, refer to the [Overview]({%slug gridview-events-overview%}) article.
+>tip For more information, refer to the [Overview]({%slug gridview-events-overview%}) article.
 
 ## Modify the Searching Criteria
 

@@ -78,7 +78,7 @@ __Example 4: Setting custom style to the HeaderCellStyle property__
 ```
 
 
->tipYou can define the DataTemplate as a StaticResource and then directly assign the HeaderCellStyle property of the GridViewColumn.
+>tip You can define the DataTemplate as a StaticResource and then directly assign the HeaderCellStyle property of the GridViewColumn.
 
 * Predefine the Header for the column.
 

@@ -22,7 +22,7 @@ Extensible Markup Language for Analysis (XMLA) is a standard that allows client 
 
 __RadPivotGrid__ provides XMLA access to OLAP data sources. You can use the __XmlaDataProvider__ in your application to connect to your OLAP data source.   
 
->cautionYou have to add reference to the following __Telerik__ assembly to be able to use __XmlaDataProvider__ in your application: Telerik.Pivot.DataProviders.Xmla 		
+>caution You have to add reference to the following __Telerik__ assembly to be able to use __XmlaDataProvider__ in your application: Telerik.Pivot.DataProviders.Xmla 		
 
 __XmlaDataProvider__ has several important properties that have to be defined:    		
 
@@ -85,7 +85,7 @@ __XmlaDataProvider__ uses four different collections to design the view of __Rad
 
 __XmlaDataProvider__ can be defined in the __XAML__ as a *StaticResource* and used by both __RadPivotGrid__ and __RadPivotFieldList__.
 
->importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __XmlaDataProvider__ in your XAML.				
+>important The __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __XmlaDataProvider__ in your XAML.				
 
 
 

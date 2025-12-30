@@ -32,7 +32,7 @@ __Example 1: Setting ShowEventName/HideEventName properties__
 	</TextBox>
 ```
 
->importantThe values set to ShowEventName/HideEventName should be valid event names of the target element.
+>important The values set to ShowEventName/HideEventName should be valid event names of the target element.
 
 ## Using the static RadialMenuCommands class
 

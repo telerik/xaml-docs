@@ -14,7 +14,7 @@ position: 4
 
 Displaying data in the __RadGridView__ depends on the data binding mechanism. The entry point for the data to be bound is the __ItemsSource__ property, which you must set in order to display data in your __RadGridView__ control. 
 
->tipFor additional information regarding data binding and populating the __RadTreeListView__ with data you can check the respective topics in the [RadGridView's documentation]({%slug gridview-data-overview%}).
+>tip For additional information regarding data binding and populating the __RadTreeListView__ with data you can check the respective topics in the [RadGridView's documentation]({%slug gridview-data-overview%}).
 
 ## Setting the ItemsSource property
 
@@ -37,7 +37,7 @@ As a typical data control the __RadGridView__ displays data by binding to a sour
 
 Unlike the standard items control, the __RadGridView__'s __ItemsSource__ property is declared to be of type __System.Object__. Of course, standard .NET collections that implement the __IEnumerable__ interface are fully supported as well. If you want the insertions or the deletions in the collection to be automatically applied to the UI, the collection to which you bind must also implement the __INotifyCollectionChanged__ interface. Coupling in your code, it may be more convenient to manipulate data in the original data source instead of using the __RadGridView__ API. __RadGridView__ listens to data source collection change events and reflects those changes in its visual representation. In Silverlight there is a built-in implementation of a data collection that exposes the __INotifyCollectionChanged__ interface – the __ObservableCollection<T>__ class.
 
->tipConsider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
+>tip Consider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
 
 Introduced to the __System.ComponentModel__ namespace collection views are fully supported as well. __RadGridView__ will automatically pick up group descriptions, sort descriptions, or will filter settings defined on the collection view and will use those settings to display data.
 

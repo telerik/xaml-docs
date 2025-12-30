@@ -36,7 +36,7 @@ This will result in a red background for the merged header cells.
 
 ![Telerik {{ site.framework_name }} DataGrid-styling-column-groups](images/gridview-styling-column-groups.png)
 
->importantAs of version Q2 2015, the __GridViewColumnGroupRow__ visual element was introduced. You need to also merge its XAML if using a Custom Theme.
+>important As of version Q2 2015, the __GridViewColumnGroupRow__ visual element was introduced. You need to also merge its XAML if using a Custom Theme.
 
 >If you want to have your [**Row Indicator** visible]({%slug gridview-customizing-rows%}#hiding-the-row-indicator), you will also need to modify the **CommonHeaderIndent** element of the **GridViewHeaderRow**. You can look at the [Styling Header Row article]({%slug gridview-styling-header-row%}) for more information on how to achieve that.
 

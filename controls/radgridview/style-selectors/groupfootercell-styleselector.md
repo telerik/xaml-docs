@@ -12,7 +12,7 @@ position: 6
 
 The **GroupFooterCellStyleSelector** property of RadGridView can be used to style group footer rows differently based on a specific condition.
 
->importantBear in mind that the **GroupFooterCellStyle** takes precedence over the **GroupFooterCellStyleSelector** and will overwrite it if both are defined simultaneously.
+>important Bear in mind that the **GroupFooterCellStyle** takes precedence over the **GroupFooterCellStyleSelector** and will overwrite it if both are defined simultaneously.
 
 To do so, first create a new class that inherits the **StyleSelector** class and override its **SelectStyle** method:
 

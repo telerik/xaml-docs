@@ -47,7 +47,7 @@ The __SelectedItem__ property corresponds to the item the user has clicked or ta
 
 __SelectedItems__ is a collection of items containing all selected items in the control when SelectionMode is set to Multiple or Extended.
 
->importantThe __SelectedItems__ collection will remain empty when SelectionMode is set to Single and you change the selected item. However, when in Multiple or Extended selection mode, __SelectedItem__ will be set to the last item added to the selected items that is still included in the selection.
+>important The __SelectedItems__ collection will remain empty when SelectionMode is set to Single and you change the selected item. However, when in Multiple or Extended selection mode, __SelectedItem__ will be set to the last item added to the selected items that is still included in the selection.
 
 ## Reacting to changes in the selection
 

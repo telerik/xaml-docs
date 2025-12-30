@@ -371,7 +371,7 @@ The event argument of the __CustomElementLoading__ event is of type __LayoutSeri
 
 * __Cancel__ - determines whether the custom AffectedElement will be loaded.
 
->tipThe __Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs__ allows you to point out an instance to be used as a newly loaded control. This could be useful if you need to create the instances yourself.
+>tip The __Telerik.Windows.Controls.LayoutSerializationLoadingEventArgs__ allows you to point out an instance to be used as a newly loaded control. This could be useful if you need to create the instances yourself.
 
 >You have the ability to "say" whether these event to be fired or not, when the __SerializationTag__ is __not specified__. You should use the second overload of the __LoadLayout__ and __SaveLayout__ methods.
 

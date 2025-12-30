@@ -16,11 +16,11 @@ One of the advantages of using a __Row Details__ template is that it can be disp
 
 ![Telerik {{ site.framework_name }} DataGrid RowDetails 1](images/RadGridView_RowDetails_1.png)
 
->tipTo easily expand / collapse the __Row Details__ you can use the [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
+>tip To easily expand / collapse the __Row Details__ you can use the [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
 	
->tipThe row and the row details share the same data context, so you are free to bind the elements in your template to any of the properties of the data item. To learn more about the __Row Details template__ read [here]({%slug radgridview-row-details-template%}).
+>tip The row and the row details share the same data context, so you are free to bind the elements in your template to any of the properties of the data item. To learn more about the __Row Details template__ read [here]({%slug radgridview-row-details-template%}).
 	
->tipIn order to not scroll the RowDetails when horizontally scrolling the parent RadGridView, you should set __AreRowDetailsFrozen="True"__ for it.
+>tip In order to not scroll the RowDetails when horizontally scrolling the parent RadGridView, you should set __AreRowDetailsFrozen="True"__ for it.
 
 This chapter will make you familiar with the specifics around the __Row Details__. The following things will get explained:
 

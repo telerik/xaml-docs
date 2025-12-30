@@ -16,9 +16,9 @@ __RadScheduleView__ provides a couple of useful events that can be used for cust
 
 Event naming convention is the standard naming convention for data manipulation events similar to web and windows programming. Every operation has a before event (ending with -__ing__) and after event (ending with -__ed__). An example of these are __AppointmentDeleting__ and __AppointmentDeleted__ event of __RadScheduleView__.      
 
->tipAll __event arguments__ of the before operation events (ending with -ing) derive from the __CancelRoutedEventArgs__ class. That's why all of the before operation events (ending with -__ing__) can be canceled by setting event arguments' __Cancel__ property to __True__.
+>tip All __event arguments__ of the before operation events (ending with -ing) derive from the __CancelRoutedEventArgs__ class. That's why all of the before operation events (ending with -__ing__) can be canceled by setting event arguments' __Cancel__ property to __True__.
 
->tipAll event arguments of the after operation events (ending with -ed) derive directly from the __RadRoutedEventArgs__ class.
+>tip All event arguments of the after operation events (ending with -ed) derive directly from the __RadRoutedEventArgs__ class.
 
 ## Data Events
 

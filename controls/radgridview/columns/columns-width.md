@@ -10,97 +10,72 @@ position: 13
 
 # Controlling Columns Width
 
-There are a couple of approaches available for setting the width of the columns within RadGridView:
+The GridViewColumn elements can be manually sized by setting their width.
 
-* [On RadGridView Level](#on-radgridview-level)
+The column width can be set on the GridViewColumn elements via the `Width` property or on the RadGridView control via the `ColumnWidth` property. Both are of type `ColumnWidth`.
 
-* [On a Column Level](#on-column-level)
+There are several values that you can assign to the property:
 
-## On RadGridView Level
+* `SizeToCells`&mdash;The width is set according to the longest text from the cells.
 
-You can set RadGridView's **ColumnWidth** property which will affect all columns' width (unless the width is set explicitly for the column). 
+* `SizeToHeader`&mdash;The width is set according to the length of the column's header. This is the __default sizing behavior__. 
 
-#### **[XAML] Example 1: Setting RadGridView's ColumnWidth**
+* `Auto`&mdash;The width is set according to the longest value(might be the header or a value within the cell).
+
+* `*` (star)&mdash;The column would take as much space as there is available.	
+
+* __Fixed Width__&mdash;You can set a fixed width for all the columns.
+
+## Setting the Width of All Columns with the ColumnWidth Property
+
+Setting the RadGridView's `ColumnWidth` property affects all columns' size which don't have their `Width` set explicitly. The `Width` property of the column has higher priority than the `ColumnWidth` of RadGridView.
+
+**Example 1: Setting RadGridView's ColumnWidth**
 
 ```XAML
-
-		<telerik:RadGridView Name="clubsGrid" 
-                             ItemsSource="{Binding Clubs}"
-                             ColumnWidth="*">	
+	<telerik:RadGridView ItemsSource="{Binding Clubs}" ColumnWidth="*">
 ```
 
-#### **[C#] Example 2: Setting RadGridView's ColumnWidth in code**
+**Example 2: Setting RadGridView's ColumnWidth in code**
 
 ```C#
-
 	this.clubsGrid.ColumnWidth = new Telerik.Windows.Controls.GridViewLength(1, Telerik.Windows.Controls.GridViewLengthUnitType.Star);
 ```
-
-#### **[VB.NET] Example 2: Setting RadGridView's ColumnWidth in code**
-
 ```VB.NET
 
 	Me.clubsGrid.ColumnWidth = New Telerik.Windows.Controls.GridViewLength(1, Telerik.Windows.Controls.GridViewLengthUnitType.Star)
 ```
 
-There are several values that you can assign to the property:
+## Setting the Width of a Column
 
-* **SizeToCells**: The width is set according to the longest text from the cells.
+Apart from setting the width for all the columns within the RadGridView, you can set the width for each individual column through its `Width` property. 
 
-* **SizeToHeader**: The width is set according to the length of the column's header. This is the default value. 
-
-* **Auto**: The width is set according to the longest value(might be the header or a value within the cell).
-
-* __* (Star)__: The columns would take as much space as there is available.
-
-* **Fixed Width**: You can set a fixed width for all the columns.
-
-
-## On Column Level
-
-Apart from setting the width for all the columns within the **RadGridView**, you can set the width for each individual column through its **Width** property. 
-
-#### **[XAML] Example 3: Setting the width of a specific column**
+**Example 3: Setting the width of a specific column**
 
 ```XAML
-
-		<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-                                    Width="Auto" />	
+	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Width="Auto" />	
 ```
 
-#### **[C#] Example 4: Setting the width of a specific column in code**
+**Setting the width of a specific column in code**
 
 ```C#
-
 	this.clubsGrid.Columns[0].Width = Telerik.Windows.Controls.GridViewLength.Auto;	
 ```
-
-#### **[VB.NET] Example 4: Setting the width of a specific column in code**
-
 ```VB.NET
-
 	Me.clubsGrid.Columns(0).Width = Telerik.Windows.Controls.GridViewLength.Auto	
 ```
 
-The values that could be assigned to the property are enumerated below:
+## Setting Column MinWidth and MaxWidth
 
-* **SizeToCells**: The width is set according to the longest text from the cells.
+The minimum and maximum widths of the column headers can be adjusted using the `MinWidth` and `MaxWidth` properties of the GridViewColumn. 
 
-* **SizeToHeader**: The width is set according to the length of the column's header.
+Also, these can be adjusted via the `MinColumnWidth` and `MaxColumnWidth` properties of RadGridView.
 
-* **Auto**: The width is set according to the longest value(might be the header or a value within the cell). This is the default value. 
-
-* __* (Star)__: The column would take as much space as there is available.
-
-* **Fixed Width**: You can set a fixed width for each column.
+> Using a `0` value for the `MinWidth` and `MinColumnWidth` properties is not supported. If you use a fixed size, use at least `1`.
 
 
-## See Also
-
- * [Reordering Columns]({%slug gridview-columns-reordering-columns%})
- 
+## See Also  
+ * [Reordering Columns]({%slug gridview-columns-reordering-columns%}) 
  * [Resizing Columns]({%slug gridview-columns-resizing-columns%})
-
  * [Frozen Columns]({%slug gridview-columns-frozen-columns%})
-
  * [Bound/Unbound Columns]({%slug gridview-columns-bound-unbound-columns%})

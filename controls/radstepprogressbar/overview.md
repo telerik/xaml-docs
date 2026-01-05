@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadStepProgressBar
 ---
 
-# {{ site.framework_name }} ProgressBar Overview
+# {{ site.framework_name }} StepProgressBar Overview
 
 __RadStepProgressBar__ enables you to setup a visual element that displays a multi-step process via number of different steps and a progress track bar between each step. Selecting a step will animate a progress movement from the previously selected step to the new one.
 

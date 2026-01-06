@@ -87,4 +87,3 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 ## See Also
  * [Getting Started]({%slug radbuttons-getting-started%})
- * [Appearance]({%slug radbuttons-features-appearance%}) 

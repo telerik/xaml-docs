@@ -12,17 +12,18 @@ position: 13
 
 The Telerik suite provides built-in extensions that can change different behaviors of the button controls. This article will go through these extensions.
 
-## DropDownExtensions
+## Prevent Scrolling When DropDownButton is Opened
 
-* __HandleMouseWheelWhenOpen:__ A boolean property that gets or sets if the **MouseWheel** event is handled while a drop-down content of a drop-down button is open. By setting this property to **true** you won't be able to scroll your page while the drop-down content is open. The default value is **false**.
+The drop down buttons allows you to prevent scrolling within the application while the drop down is opened. To enable this, set the `DropDownExtensions.HandleMouseWheelWhenOpen` [attached property](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/properties/attached-properties-overview) to `True`.
 
->important This property can be set on the following controls: __RadDropDownButton, RadSplitButton, RadColorPicker, RadTimeSpanPicker, RadDateTimePicker, RadBreadCrumb__.
+This property is not supported when the button control has its `KeepOpen` property set to `True`.
 
-__Example 1: Set HandleMouseWheelWhenOpen attached property__
+__Set HandleMouseWheelWhenOpen attached property__  
 ```XAML
 	<ScrollViewer Height="120">
 		<StackPanel Height="800" Background="Bisque">
-			<telerik:RadDropDownButton Content="Drop Down Button"  VerticalAlignment="Top" HorizontalAlignment="Left" telerik:DropDownExtensions.HandleMouseWheelWhenOpen="True">
+			<telerik:RadDropDownButton Content="Drop Down Button"  VerticalAlignment="Top" HorizontalAlignment="Left"
+									   telerik:DropDownExtensions.HandleMouseWheelWhenOpen="True">
 				<telerik:RadDropDownButton.DropDownContent>
 					<telerik:RadListBox Height="50">
 						<telerik:RadListBoxItem Content="item 1"/>
@@ -40,15 +41,16 @@ __Example 1: Set HandleMouseWheelWhenOpen attached property__
 	</ScrollViewer>
 ```
 
->important This property is not supported when the control (for example, RadDropDownButton) has its __KeepOpen__ property set to __True__.
+The `DropDownExtensions.HandleMouseWheelWhenOpen` property is supported by the following controls - `RadDropDownButton`, `RadSplitButton`, `RadColorPicker`, `RadTimeSpanPicker`, `RadDateTimePicker`, `RadBreadCrumb`.
 
-## DropDownButtonExtensions
+## Focus DropDown Content When DropDown is Opened
 
-* __FocusContentOnOpen:__ A boolean property that gets or sets if the drop-down content of a drop-down button control should be focused when its drop-down content is open. The default value is **false**.
+To focus the content element in the drop down content of a RadDropDownButton, set the `DropDownButtonExtensions.FocusContentOnOpen` [attached property](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/properties/attached-properties-overview) to `True`.
 
-__Example 2: Set FocusContentOnOpen attached property__
+__Set FocusContentOnOpen attached property__
 ```XAML
-	<telerik:RadDropDownButton Content="Drop Down Button"  VerticalAlignment="Top" HorizontalAlignment="Left" telerik:DropDownButtonExtensions.FocusContentOnOpen="True">
+	<telerik:RadDropDownButton Content="Drop Down Button" VerticalAlignment="Top" HorizontalAlignment="Left" 
+							   telerik:DropDownButtonExtensions.FocusContentOnOpen="True">
 		<telerik:RadDropDownButton.DropDownContent>
 			<telerik:RadListBox >
 				<telerik:RadListBoxItem Content="item 1"/>
@@ -60,8 +62,7 @@ __Example 2: Set FocusContentOnOpen attached property__
 	</telerik:RadDropDownButton>
 ```
 
-## See Also
-
+## See Also  
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})
 * [Attached Behavior]({%slug common-mvvm-attached-behavior%})
 * [DelegateCommand]({%slug common-mvvm-delegate-command-implementation%})

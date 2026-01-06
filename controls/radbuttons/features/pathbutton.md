@@ -122,7 +122,6 @@ __Example 6: Setting the path alignment in XAML__
 
 As seen in the image above you may also want to set appropriate values for the **HorizontalContentAlignment** and **VerticalContentAlignment** of the RadPathButton to align the content in the available space.
 
-{% if site.site_name == 'WPF' %}
 ## RadPathButton and RadGlyph
 
 The RadPathButton can also be used with [RadGlyphs]({%slug common-styling-appearance-radglyph%}).
@@ -135,11 +134,9 @@ __Example 7: Set RadGlyph as PathGeometry__
 
 #### __Figure 6: RadPathButton with RadGlyph__
 ![RadPathButton with RadGlyph](images/radbuttons-features-pathbutton-4.png)
-{% endif %}
 
 ## See Also
  * [Button]({%slug radbuttons-features-button%})
  * [DropDown Button]({%slug radbuttons-features-dropdown-button%})
  * [Split Button]({%slug radbuttons-features-split-button%})
- * [Commands]({%slug radbuttons-features-commands%})
- * [Appearance]({%slug radbuttons-features-appearance%})
+ * [Commands]({%slug radbuttons-features-commands%}) 

@@ -248,6 +248,8 @@ meta:
         title: RadBulletGraph
     controls/radbuttons:
         title: RadButtons
+    controls/radbuttons/features:
+        title: Button Types
     controls/radchart:
         title: RadChart
         hidden: true
@@ -2484,3 +2486,19 @@ redirects:
     from: "^ai-assistant/copilot-extension$"
     to: "/ai-assistant/mcp-server"
     type: Permanent 
+-
+    from: "^controls/radbuttons/features/appearance$"
+    to: "/controls/radbuttons/customizing-buttons-appearance"
+    type: Permanent
+-
+    from: "^controls/radbuttons/features/commands$"
+    to: "/controls/radbuttons/commands"
+    type: Permanent
+-
+    from: "^controls/radbuttons/features/button-extensions$"
+    to: "/controls/radbuttons/button-extensions"
+    type: Permanent
+-
+    from: "^controls/radbuttons/features/popup-animation$"
+    to: "/controls/radbuttons/popup-animation"
+    type: Permanent

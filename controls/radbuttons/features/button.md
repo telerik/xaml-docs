@@ -85,5 +85,4 @@ __Example 4: Defining a Click event handler__
 ## See Also
  * [DropDown Button]({%slug radbuttons-features-dropdown-button%})
  * [Commands]({%slug radbuttons-features-commands%})
- * [Appearance]({%slug radbuttons-features-appearance%})
  * [Toggle Button]({%slug radbuttons-features-toggle-button%})

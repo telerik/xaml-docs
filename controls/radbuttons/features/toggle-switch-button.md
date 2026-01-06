@@ -115,6 +115,5 @@ __Tracks with radiuses of 5 and 10 pixels__
  * [Button]({%slug radbuttons-features-button%})
  * [Radio Button]({%slug radbutton-features-radio-button%})
  * [Commands]({%slug radbuttons-features-commands%})
- * [Events]({%slug radbuttons-events%})
- * [Appearance]({%slug radbuttons-features-appearance%})
+ * [Events]({%slug radbuttons-events%}) 
  * {% if site.site_name == 'Silverlight' %}[RadToggleButton API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radtogglebutton.html){% else %}[RadToggleButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html){% endif %}.

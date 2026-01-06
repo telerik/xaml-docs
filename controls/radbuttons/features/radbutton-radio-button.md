@@ -100,7 +100,6 @@ The above code creates two groups of __RadRadioButtons__.
 ## See Also
  * [Button]({%slug radbuttons-features-button%})
  * [Toggle Button]({%slug radbuttons-features-toggle-button%})
- * [Commands]({%slug radbuttons-features-commands%})
- * [Appearance]({%slug radbuttons-features-appearance%})
+ * [Commands]({%slug radbuttons-features-commands%}) 
  * [Events]({%slug radbuttons-events%})
  * {% if site.site_name == 'Silverlight' %}[RadRadioButton API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radradiobutton.html){% endif %}{% if site.site_name == 'WPF' %}[RadRadioButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radradiobutton.html){% endif %}.

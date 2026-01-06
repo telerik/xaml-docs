@@ -1,5 +1,5 @@
 ---
-title: Customizing Button Styles
+title: Customizing Button Appearance
 page_title: Customizing Buttons Appearance
 description: Check our &quot;Customizing Buttons Appearance&quot; documentation article for the RadButtons {{ site.framework_name }} control.
 slug: radbuttons-customizing-buttons-appearance
@@ -8,13 +8,33 @@ published: True
 position: 6
 ---
 
-# Customizing Button Styles
+# Customizing the Buttons Appearance
 
-This article describes how to customize the buttons appearance by modifying their styles.
+This article describes how to customize the buttons from the RadButtons suite.
+
+To customize the appearance of the __RadButtons__, you can use the standard properties that are provided by the `Control` class, like `Background`, `Foreground`, `Effect`, etc. In addition to that, the buttons expose a couple of extra properties described below. Also, the attached properties from the [ThemeHelper]({%slug styling-appearance-theme-helper%}) class can be used to easily change some of the brushes used by the buttons.
+
+## Setting the Corner Radius
+
+The corners of the button can be rounded by setting the `CornerRadius` property.
+
+```XAML
+	<telerik:RadButton CornerRadius="6"/>
+```
+
+## Setting Background Brush Visibility 
+
+The background brush of the button in its __Normal__ state can be hidden via the `IsBackgroundVisible` property. This is helpful when you want to hide the backround without handling brush objects.
+
+```XAML
+	<telerik:RadButton IsBackgroundVisible="False"/>
+```
+
+## Customizing Button Styles
 
 To customize the button styles, you can define a `Style` object and set the needed button properties. 
 
-To modify the template of a button, you can set the `Template` property. 
+To modify the template of a button, you can set the `Template` property. This approach can be used for more complex or specific customizations which are not possible with the available properties. 
 
 The following example shows how to define implicit styles for all available RadButton elements. An implicit style is a `Style` object without its `x:Key` set, which will apply it to all elements of the corresponding `TargetType` in the style's scope.
 

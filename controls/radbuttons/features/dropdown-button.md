@@ -100,14 +100,11 @@ You can easily customize the `RadDropDownButton` by using the following properti
 
 * `CloseOnPopupMouseLeftButtonUp`&mdash;Specifies whether the drop-down area should be closed when the user clicks on the `DropDownContent` of the control. The closing of the drop-down is executed on the `MouseLeftButtonUp` event of the `Popup` control. The default value is `False`.
 
-{% if site.site_name == 'WPF' %}
 ## Popup Animations
 
 The drop-down button supports popup animations which are triggered when the drop-down content opens. The animation is set via the PopupAnimation property of the button. Read more about this in the [Popup Animation]({%slug radbuttons-features-popup-animation%}) article.
-{% endif %}
 
-## See Also
- * [Appearance]({%slug radbuttons-features-appearance%})
+## See Also   
  * [Commands]({%slug radbuttons-features-commands%})
  * [Button]({%slug radbuttons-features-button%})
  * [Split Button]({%slug radbuttons-features-split-button%})

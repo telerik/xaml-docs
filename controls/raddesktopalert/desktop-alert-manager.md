@@ -23,9 +23,6 @@ __Initializing of RadDesktopAlertManager__
 	manager = new RadDesktopAlertManager(AlertScreenPosition.TopRight, new Point(0, 0));
 	manager = new RadDesktopAlertManager(AlertScreenPosition.BottomCenter, new Point(0, 0), 10);
 ```
-
-__Initializing of RadDesktopAlertManager__
-
 ```VB
 	Dim manager = New RadDesktopAlertManager()
 	manager = New RadDesktopAlertManager(AlertScreenPosition.BottomCenter)
@@ -72,9 +69,6 @@ __Example 1:  Showing RadDesktopAlert__
 	};
 	manager.ShowAlert(alert);
 ```
-
-__Example 1:  Showing RadDesktopAlert__
-
 ```VB
 	Dim alert = New RadDesktopAlert() With {
 	     .Header = "MAIL NOTIFICATION",
@@ -99,9 +93,6 @@ __Example 2:  Show RadDesktopAlert without animation__
 	    IconMargin = new Thickness(10, 0, 20, 0)
 	}, false);
 ```
-
-__Example 2:  Show RadDesktopAlert without animation__
-
 ```VB
 	manager.ShowAlert(New DesktopAlertParameters() With {
 	     .Header = "New mail",
@@ -135,9 +126,6 @@ __Example 3:  Creating RadDesktopAlert in MVVM__
 	    Sound = System.Media.SystemSounds.Beep
 	});
 ```
-
-__Example 3:  Creating RadDesktopAlert in MVVM__
-
 ```VB
 	manager.ShowAlert(New DesktopAlertParameters() With {
 	     .Header = "New mail",
@@ -163,8 +151,6 @@ __Example 4:  Closing single RadDesktopAlert__
 ```C#
 	manager.CloseAlert(alert);
 ```
-
-__Example 4:  Closing single RadDesktopAlert__
 ```VB
 	manager.CloseAlert(alert)
 ```
@@ -178,9 +164,6 @@ __Example 5:  Closing all RadDesktopAlerts__
 ```C#
 	manager.CloseAllAlerts();
 ```
-
-__Example 5:  Closing all RadDesktopAlerts__
-
 ```VB
 	manager.CloseAllAlerts()
 ```
@@ -195,9 +178,6 @@ __Example 6:  Closing RadDesktopAlert without an animation__
 	manager.CloseAlert(alert, false);
 	manager.CloseAllAlerts(false);
 ```
-
-__Example 6:  Closing RadDesktopAlert without an animation__
-
 ```VB
 	manager.CloseAlert(alert, False)
 	manager.CloseAllAlerts(False)
@@ -214,8 +194,6 @@ __Example 7:  Getting all opened RadDesktopAlerts__
 ```C#
 	IEnumerable alerts = manager.GetAllAlerts();
 ```
-
-__Example 7:  Getting all opened RadDesktopAlerts__
 ```VB
 	Dim alerts As IEnumerable = manager.GetAllAlerts()
 ```
@@ -234,8 +212,6 @@ __Example 8: Applying ShowAnimation - FadeAnimation__
 	    SpeedRatio = 0.5d
 	};
 ```
-
-__Example 8: Applying ShowAnimation - FadeAnimation__  
 ```VB
 	manager.ShowAnimation = New FadeAnimation() With
 	{
@@ -255,8 +231,6 @@ __Example 9: Applying ShowAnimation - RevealAnimation__
 		AnimationDirection = AnimationDirection.In,
 	};
 ```
-
-__Example 9: Applying ShowAnimation - RevealAnimation__  
 ```VB	
 	manager.ShowAnimation = new RevealAnimation() With
 	{
@@ -299,9 +273,6 @@ __Example 10: Setting AlertsReorderAnimationDuration__
 ```C#
 	manager.AlertsReorderAnimationDuration = 1000;
 ```
-
-__Example 10:  Setting AlertsReorderAnimationDuration__
-
 ```VB
 	manager.AlertsReorderAnimationDuration = 1000
 ```

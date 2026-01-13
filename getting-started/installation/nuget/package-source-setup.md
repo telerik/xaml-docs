@@ -51,7 +51,7 @@ Selecting the Telerik's source as the __Package source__ in Visual Studio will p
 
 Using this approach you can only use versions from __2016.3.1024 and later__. If you need to use a previous version of the suite you will need to create a [local package source](#using-a-local-package-source).
 
-### Reset Store Credentials
+### Reset Stored Credentials
 
 If you previously stored credentials for the Telerik NuGet server, you need to reset them to be able to authenticate with your new API key. Here are the steps you need to follow:
 

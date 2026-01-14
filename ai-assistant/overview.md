@@ -53,10 +53,6 @@ Access to the AI Coding Assistant depends on your [Telerik license type](https:/
 
 ### Perpetual License
 
-* Perpetual licenses include limited access of __50 requests per year__.
-* Intended for exploring and trying out the AI Coding Assistant.
-* For continued or higher-volume access, upgrade to a Subscription license.
-
 * Perpetual license holders have no access to the AI Coding Assistant by default.
 * You can start a [30-day trial](https://www.telerik.com/try/ui-for-wpf) to access the AI Coding Assistant.
 * After the trial expires, access is no longer available unless the [Perpetual license is converted to a Subscription license](https://www.telerik.com/account/support-center/contact-us/account-support).

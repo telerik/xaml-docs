@@ -5,7 +5,7 @@
 #end
 
 #number-of-requests
-A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik WPF AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a [limited number of requests per year]({%slug ai-overview%}#usage-limits).
+A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is required in order to use the Telerik WPF AI Coding Assistant without restrictions. Trial users can make a [limited number of requests per year]({%slug ai-overview%}#usage-limits).
 #end
 
 #supported-components

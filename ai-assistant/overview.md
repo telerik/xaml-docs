@@ -59,7 +59,9 @@ Access to the AI Coding Assistant depends on your [Telerik license type](https:/
 
 ### Trial License
 
-* Trial licenses include __300 requests per trial per year__ (does not reset with new trial activations) .
+* A [Telerik UI for WPF trial](https://www.telerik.com/try/ui-for-wpf) automatically starts a 30-day trial for the AI tools.
+* Trial licenses grant access to the AI Coding Assistant.
+* The number of requests is virtually unlimited, with fair use policy applied.
 * Reactivating the same trial for a new release does not grant additional requests.
 * Designed for evaluating the feature before purchasing.
 

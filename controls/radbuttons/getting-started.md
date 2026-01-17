@@ -185,6 +185,18 @@ __Example 9: Defining a toggle switch button__
 
 ![{{ site.framework_name }} RadButtons Toggle Switch Button](images/RadButtons_Getting_Started_06.png)
 
+## RadSpeechToTextButton
+
+The following example shows how to define a `RadSpeechToTextButton`. Read more about the control and its settings in the button's [dedicated help article]({%slug radbuttons-features-speech-to-text-button%}).
+
+```XAML
+	<Grid>
+		<telerik:RadSpeechToTextButton />
+	</Grid>
+```
+
+![{{ site.framework_name }} RadButtons Toggle Switch Button](features/images/radbuttons-features-speech-to-text-button-0.png)
+
 ## Setting a Theme
 
 The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.

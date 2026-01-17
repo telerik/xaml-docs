@@ -127,11 +127,11 @@ private void RadSpeechToTextButton_CalloutOpening(object? sender, SpeechToTextTo
     var button = (RadSpeechToTextButton)sender;
     if (button.State == SpeechRecognizerState.Ready)
     {
-        e.CalloutContent = "Click when you're ready to speak";
+        e.Callout.Content = "Click when you're ready to speak";
     }
     else if (button.State == SpeechRecognizerState.Listening)
     {
-        e.CalloutContent = "I’m listening";
+        e.Callout.Content = "I’m listening";
     }
 }
 ```
@@ -147,13 +147,8 @@ public MainWindow()
 {
     InitializeComponent();
     
-	this.speechToTextButton.ToolTipStates = new SpeechRecognizerState[] 
-    {
-        SpeechRecognizerState.Ready, 
-        SpeechRecognizerState.Listening,
-        SpeechRecognizerState.StartingListening,
-        SpeechRecognizerState.Faulted
-    };
+	this.speechToTextButton.ToolTipStates.Add(SpeechRecognizerState.StartingListening);
+	this.speechToTextButton.ToolTipStates.Add(SpeechRecognizerState.Faulted);
 }
 
 private void RadSpeechToTextButton_CalloutOpening(object? sender, SpeechToTextTooltipOpeningEventArgs e)
@@ -161,11 +156,11 @@ private void RadSpeechToTextButton_CalloutOpening(object? sender, SpeechToTextTo
     var button = (RadSpeechToTextButton)sender;            
     if (button.State == SpeechRecognizerState.StartingListening)
     {
-        e.CalloutContent = "Starting listening...";
+        e.Callout.Content = "Starting listening...";
     }
     else if (button.State == SpeechRecognizerState.Faulted)
     {
-        e.CalloutContent = "Error";
+        e.Callout.Content = "Error";
     }
 }
 ```
@@ -196,11 +191,72 @@ private void RadSpeechToTextButton_CalloutOpening(object? sender, SpeechToTextTo
 }
 ```
 
+## Customizing the Button Content
+
+The content of the button can be changed via the the `ContentTemplateSelector` property. This can be used to replace  the default icons displayed for `Ready`, `Listening` and `Faulted` states and to include extra content for other states like `StartingListening`, `StoppingListening`.
+
+__Defining custom content template selector__
+
+```C#
+ public class CustomContentTemplateSelector : DataTemplateSelector
+ {
+     public DataTemplate ReadyTemplate { get; set; }
+     public DataTemplate StartingListeningTemplate { get; set; }
+     public DataTemplate ListeningTemplate { get; set; }
+
+     public override DataTemplate SelectTemplate(object item, DependencyObject container)
+     {
+         var state = (SpeechRecognizerState)item;
+         if (state == SpeechRecognizerState.Ready)
+         {
+             return ReadyTemplate;
+         }
+         else if (state == SpeechRecognizerState.StartingListening)
+         {
+             return StartingListeningTemplate;
+         }
+         else if (state == SpeechRecognizerState.Listening)
+         {
+             return ListeningTemplate;
+         }
+         return ReadyTemplate;
+     }
+ }
+```
+
+__Defining custom content__
+
+```XAML
+<telerik:RadSpeechToTextButton>
+    <telerik:RadSpeechToTextButton.ContentTemplateSelector>
+        <local:CustomContentTemplateSelector>
+            <local:CustomContentTemplateSelector.ReadyTemplate>
+                <DataTemplate>
+                    <telerik:RadGlyph Glyph="&#xe655;" Foreground="Green" />
+                </DataTemplate>
+            </local:CustomContentTemplateSelector.ReadyTemplate>
+            <local:CustomContentTemplateSelector.ListeningTemplate>
+                <DataTemplate>
+                    <telerik:RadGlyph Glyph="&#xe20e;" Foreground="#ffffff" />
+                </DataTemplate>
+            </local:CustomContentTemplateSelector.ListeningTemplate>
+            <local:CustomContentTemplateSelector.StartingListeningTemplate>
+                <DataTemplate>
+                    <telerik:RadGlyph Glyph="&#xe032;"/>
+                </DataTemplate>
+            </local:CustomContentTemplateSelector.StartingListeningTemplate>
+        </local:CustomContentTemplateSelector>
+    </telerik:RadSpeechToTextButton.ContentTemplateSelector>
+</telerik:RadSpeechToTextButton>
+```
+
+![A picture showing customized speech to text button content](images/radbuttons-features-speech-to-text-button-2.png)
+
 ## Implementing Custom Speech Recognizer
 
 The `RadSpeechToTextButton` allows you to implement custom speech recognizer in order to integrate a speech-to-text service or a library of your choice.
 
-A custom recognizer is created by implementing the `IRadSpeechRecognizer` interface. The custom implementation can be assigned using the `SpeechRecognizerCreator` property of the control.
+A custom recognizer is created by implementing the `IRadSpeechRecognizer` interface. The custom implementation can be enabled with the `SpeechRecognizerCreator` property of the control.
 
 __Implementing custom speech recognizer__
 
@@ -308,10 +364,10 @@ public MainWindow()
 {    
     InitializeComponent();
  
-	this.speechToTextButton.SpeechRecognizerCreator = () =>
-	{
-		return new CustomSpeechRecognizer();
-	};
+    this.speechToTextButton.SpeechRecognizerCreator = () =>
+    {
+        return new CustomSpeechRecognizer();
+    };
 }
 
 private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.SpeechRecognizer.SpeechRecognizerSpeechRecognizedEventArgs e)
@@ -322,4 +378,4 @@ private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.Speec
 }
 ```
 
-![A gif animation showing the behavior of the custom speech recognizer](images/radbuttons-features-speech-to-text-button-2.gif)
+![A gif animation showing the behavior of the custom speech recognizer](images/radbuttons-features-speech-to-text-button-3.gif)

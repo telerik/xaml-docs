@@ -21,13 +21,16 @@ The `HyperlinkInfo` class allows you to easily insert hyperlinks in the current 
 
 * `Target`&mdash;Determines if the link should be opened in another window (when set to `HyperlinkTargets.Blank`) or in the same frame (`HyperlinkTargets.Self`).
 
+* `ToolTip`&mdash;A tooltip text for the hyperlink. 
+
 __Inserting a hyperlink pointing to a web address__  
 ```C#
 	HyperlinkInfo info = new HyperlinkInfo()
 	{
 	    NavigateUri = "https://www.telerik.com/products/wpf/overview.aspx",
 	    Target = HyperlinkTargets.Blank,
-	    IsAnchor = false
+	    IsAnchor = false,
+		ToolTip = "Telerik UI for WPF website"
 	};
 	this.radRichTextBox.InsertHyperlink(info, "RichTextBox demo");
 ```
@@ -124,7 +127,37 @@ __Change the default hyperlink tooltip format__
 	<telerik:RadRichTextBox HyperlinkToolTipFormatString="{}Navigate to '{0}' by pressing {1}"/>
 ```
 
-[Showing the custom tooltip format](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_HyperlinkToolTipFormatString.png)
+![Showing the custom tooltip format](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_HyperlinkToolTipFormatString.png)
+
+The tooltip can be customized also per hyperlink. To do this, set the `ToolTip` property of the corresponding `HyperlinkInfo` object.
+
+__Inserting a hyperlink with a tooltip__
+
+```C#
+HyperlinkInfo info = new HyperlinkInfo()
+{
+	NavigateUri = "https://www.telerik.com/products/wpf/overview.aspx",
+	Target = HyperlinkTargets.Blank,
+	IsAnchor = false,
+	ToolTip = "Telerik UI for WPF product page. Use Ctrl+Click to open the page."
+};
+this.radRichTextBox.InsertHyperlink(info, "UI for WPF");
+```
+
+The `HyperlinkToolTipShowing` event can be used to further customize the tooltip content or cancel displaying it.
+
+```C#
+ private void RadRichTextBox_HyperlinkToolTipShowing(object sender, Telerik.Windows.Documents.UI.HyperlinkToolTipShowingEventArgs e)
+ {
+     HyperlinkRangeStart hyperlinkAnnotationRangeStart = e.HyperlinkAnnotationMarker;
+     HyperlinkInfo hyperlinkInfo = hyperlinkAnnotationRangeStart.HyperlinkInfo;
+     string originalToolTip = e.ToolTip;
+
+     e.ToolTip = "New tooltip value";
+     
+     // set e.Cancel = true; to cancel the tooltip showing
+ }
+```
 
 ## Hyperlink Navigation Trigger
 

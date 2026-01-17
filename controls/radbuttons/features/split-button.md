@@ -152,4 +152,3 @@ __Customized RadSplitButton__
  * [Button]({%slug radbuttons-features-button%})
  * [DropDown Button]({%slug radbuttons-features-dropdown-button%})
  * [Commands]({%slug radbuttons-features-commands%})
- * [Appearance]({%slug radbuttons-features-appearance%})

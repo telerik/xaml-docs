@@ -85,6 +85,12 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 ![{{ site.framework_name }} RadToggleSwitchButton Visual Structure](images/RadButtons_Visual_Structure_06.png)
 
+## RadSpeechToTextButton
+
+* __Callout__: A callout/tooltip showing information about the button's current state.
+* __Button State Content__: The current state of the button - ready, listening, faulted, etc.
+
+![](images/visual-structure-speechtotextbutton.png)
+
 ## See Also
  * [Getting Started]({%slug radbuttons-getting-started%})
- * [Appearance]({%slug radbuttons-features-appearance%}) 

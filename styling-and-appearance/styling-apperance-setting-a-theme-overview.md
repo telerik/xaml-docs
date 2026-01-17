@@ -62,10 +62,10 @@ To change the theme you will need to take the following few steps.
 			<Application.Resources>
 				<ResourceDictionary>
 					<ResourceDictionary.MergedDictionaries>
-						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-						<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>         
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Windows11;component/Themes/System.Windows.xaml"/>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Windows11;component/Themes/Telerik.Windows.Controls.xaml"/>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Windows11;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+						<ResourceDictionary Source="/Telerik.Windows.Themes.Windows11;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>         
 					</ResourceDictionary.MergedDictionaries>
 				</ResourceDictionary>
 			</Application.Resources>
@@ -86,7 +86,7 @@ You can find all required .xaml files in two places, respectively you can use tw
 
 <strong id="reference-theme-dll">Reference theme dll</strong>
 
-All styles and templates for the themes are encapsulated in **theme dlls** located in the **/Binaries.NoXaml/** folder (Telerik.Windows.Themes.Material.dll, Telerik.Windows.Themes.Office2016.dll, etc.). To get the styles for a specific theme you can just merge its ResourceDictionaries directly from the theme assembly. For example, if you are using the **Office_Black** theme, you should add a reference to the **Telerik.Windows.Themes.Office_Black.dll** and then merge the needed .xaml files as shown in **Example 1** .
+All styles and templates for the themes are encapsulated in **theme dlls** located in the **/Binaries.NoXaml/** folder (Telerik.Windows.Themes.Material.dll, Telerik.Windows.Themes.Office2016.dll, etc.). To get the styles for a specific theme you can just merge its ResourceDictionaries directly from the theme assembly. For example, if you are using the **Windows11** theme, you should add a reference to the **Telerik.Windows.Themes.Windows11.dll** and then merge the needed .xaml files as shown in **Example 1** .
 
 > We recommend this approach because upgrading and maintaining is easier. The other one (copying the XAML files) is better if you have highly customized controls or you use only several controls and don't want to include a dll with all styles.
 
@@ -186,3 +186,4 @@ All Themes are specifically designed to style **Telerik** controls. However, the
 * [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
 * [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
 * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
+

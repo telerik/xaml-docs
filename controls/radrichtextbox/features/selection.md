@@ -230,11 +230,7 @@ __Multiple selection in RadRichTextBox__
 
 The keyboard selection that happens on __Shift + arrow keys__ press can be customized by creating a custom `KeyboardSelectionHandler`. The handler is assigned to the `KeyboardSelectionHandler` property of the `ActiveEditorPresenter` of `RadRichTextBox`.
 
-The selection handler allows you to override several methods invoked on selection when using the `Shift` key.
-
-* `UpdateSelection`&mdash;Allows you to implement custom logic to update the selection of the document manually.
-* `ExpandDownLeft`&mdash;The method is invoked on __Shift + arrow keys__ selection when the cursor is inside a table and the right end of the cell content is reached.
-* `ExpandTopRight`&mdash;The method is invoked on __Shift + arrow keys__ selection when the cursor is inside a table and the left end of the cell content is reached.
+The selection handler allows you to override the `MoveActiveEnd` method, which is invoked on selection when using the `Shift` key.
 
 __Creating custom KeyboardSelectionHandler__
 ```C#
@@ -244,21 +240,13 @@ __Creating custom KeyboardSelectionHandler__
 		{
 		}
 
-		public override DocumentPosition ExpandDownLeft(DocumentPosition currentPosition)
+		public override void MoveActiveEnd(NavigationUnit unit, Direction direction)
 		{
-			currentPosition.MoveToNext();
-			return currentPosition;
-		}
-
-		public override DocumentPosition ExpandTopRight(DocumentPosition currentPosition)
-		{
-			currentPosition.MoveToPrevious();
-			return currentPosition;
-		}
-
-		public override void UpdateSelection(MoveCaretDirections direction = MoveCaretDirections.Unknown)
-		{
-			base.UpdateSelection(direction);
+			base.MoveActiveEnd(unit, direction);
+			
+			RadDocument document = this.Document;
+			DocumentPosition position = document.CaretPosition;
+			// update the document position
 		}
 	}
 ```

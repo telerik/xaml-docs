@@ -27,8 +27,6 @@ Here is a list of the supported languages:
 
 >tip To learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
 
->__In order to dynamically localize the GridView at runtime, you should recreate it.__
-
 ## Resource Keys
 
 __RadGridView__ is a complex user interface control and its strings for localization are numerous. In order to be able to distinguish these resources, an unique identifier, called __resource key__, is assigned to each localizable string.
@@ -87,3 +85,4 @@ SortColumn | Sort Column
  * [Grid Export]({%slug gridview-export%})
 
  * [Tips and Tricks]({%slug radgridview-performance-tips-tricks%})
+

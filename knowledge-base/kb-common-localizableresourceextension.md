@@ -28,7 +28,9 @@ res_type: kb
 
 This article will showcase how to utilize the [LocalizableResourceExtension]({%slug common-localization%}#localizableresourceextension) to support [dynamic localization]({%slug common-localization%}#dynamic-localization).
 
-The example will use the tooltips of the minimize, maximize, and close buttons of the RadWindow control as they do not support dynamic localization. The used theme will be __Windows 11__.
+The example will use the tooltips of the minimize, maximize, and close buttons of the RadWindow control as they do not support dynamic localization in versions prior 2025.4.1320. In newer versions RadWindow supports dynamic localization.
+
+The used theme will be __Windows 11__. 
 
 ## Solution
 

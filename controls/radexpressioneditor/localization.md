@@ -28,9 +28,6 @@ __: Some of RadExpressionEditor`s localized resources:__
 
 >tip To learn more about the ways to localize the RadControls please read the common topic on [Localization]({%slug common-localization%}).
 
->__In order to dynamically localize the RadExpressionEditor at runtime, you should recreate it.__
-
-
 ## Resource Keys
 
 In order to be able to distinguish the resources within __RadExpressionEditor__, an unique identifier, called __resource key__, is assigned to each localizable string. 

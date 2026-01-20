@@ -10,7 +10,7 @@ position: 3
 
 # Localization
 
-The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} allows you to localize  the __RadExpressionEditor__ control.
+The built-in localization mechanism in WPF allows you to localize  the __RadExpressionEditor__ control.
 
 Here is a list of the supported languages:
 
@@ -22,7 +22,7 @@ Here is a list of the supported languages:
 * Dutch             
 * Turkish      
 
-__: Some of RadExpressionEditor`s localized resources:__
+__Some of RadExpressionEditor`s localized resources:__
 
 ![RadExpressionEditor Localization](images/RadExpressionEditor_Localization.png)
 

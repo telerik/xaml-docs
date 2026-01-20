@@ -12,6 +12,16 @@ This article lists the breaking changes introduced with the Telerik UI for WPF r
 
 Currently, this section of the documentation contains only the latest release notes (starting from 2025). For older changes, check the __Breaking Changes__ and __Backward Compatibility__ help articles of the individual Telerik controls.
 
+## 2025 Q4 (2025.4.1320)
+
+#### RichTextBox
+
+* The `UpdateSelection` method of `KeyboardSelectionHandler` was removed. Use the `MoveActiveEnd` method instead.
+
+* The `ExpandDownLeft` method of `KeyboardSelectionHandler` was removed. Use the `MoveActiveEnd` method instead.
+
+* The `ExpandTopRight` method of `KeyboardSelectionHandler` was removed. Use the `MoveActiveEnd` method instead.
+
 ## 2025 Q2
 
 #### Common changes

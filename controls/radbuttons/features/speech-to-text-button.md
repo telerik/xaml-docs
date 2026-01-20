@@ -343,7 +343,7 @@ public class CustomSpeechRecognizer : IRadSpeechRecognizer
 	{
 		this.State = SpeechRecognizerState.Disposed;
 		this.reportingSessionId++;
-		return ValueTask.CompletedTask;
+		return new ValueTask(Task.CompletedTask);
 	}
 }
 ```

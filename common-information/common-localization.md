@@ -313,7 +313,5 @@ __Applying the custom LocalizationManager__
     LocalizationManager.Manager.Culture = New CultureInfo("de")
 ```
 
->Please note that not all controls from the UI for {{ site.framework_name }} suite support dynamic localization out-of-the box. You can, however, [edit the control templates]({%slug styling-apperance-editing-control-templates%}) of unsupported controls and use the LocalizableResourceExtension wherever possible.
-
 ## See Also
 * [Extract the Default Telerik Localization Resources]({%slug kb-localization-extract-resx-files%})

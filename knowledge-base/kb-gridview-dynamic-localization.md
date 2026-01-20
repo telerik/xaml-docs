@@ -1,7 +1,7 @@
 ---
 title: Refresh GridView After Language Change
 page_title: Update RadGridView UI When Localization Culture is Changed
-description: Update the UI of RadGridView when the current culture is changed bringing dynamic localization.
+description: Update the UI of RadGridView when the current culture is changed bringing dynamic localization in versions prior 2025.4.1320.
 type: how-to
 slug: kb-gridview-dynamic-localization
 position: 0
@@ -30,7 +30,9 @@ How to refresh the UI of RadGridView when the current culture is changed, thus c
 
 ## Solution
 
-RadGridView doesn't support dynamic localization. To get the desired effect, the GridView's ControlTemplate should be reset after the current culture changed.
+> Since version 2025.4.1320 of Telerik UI for WPF, RadGridView supports [dynamic localization]({%slug common-localization%}#dynamic-localization) out of the box. Use the approach below only for older versions.
+
+RadGridView doesn't support dynamic localization in versions prior 2025.4.1320. To get the desired effect, the GridView's ControlTemplate should be reset after the current culture changed.
 
 
 ```C#

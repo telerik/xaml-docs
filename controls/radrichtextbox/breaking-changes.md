@@ -12,7 +12,7 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading to a specific version of the controls to the next one.
 
-## 2025 Q4 (2025.4.1320)
+## 2025 Q4 (2025.4.1321)
 
 * The `UpdateSelection` method of `KeyboardSelectionHandler` was removed. Use the `MoveActiveEnd` method instead.
 

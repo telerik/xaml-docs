@@ -13,7 +13,7 @@ tag: new
 
 The `RadSpeechToTextButton` control allows you to capture spoken input and convert it to text. 
 
-The component has a built-in speech recognizer based on Web Speech API utilized via [WebView2](https://learn.microsoft.com/en-us/microsoft-edge/webview2/). The button automatically detects microphone input when the it is in listening state and converts the audio to text. The default recognizer allows you to also set the language for speech recognition, ensuring accurate transcription of spoken words.
+The component has a built-in speech recognizer based on Web Speech API utilized via [WebView2](https://learn.microsoft.com/en-us/microsoft-edge/webview2/). The button automatically detects microphone input when it is in listening state and converts the audio to text. The default recognizer allows you to also set the language for speech recognition, ensuring accurate transcription of spoken words.
 
 ![](images/radbuttons-features-speech-to-text-button-0.png)
 
@@ -42,7 +42,7 @@ private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.Speec
 
 Each time when the speech recognizer manages to process audio input, it raises the `SpeechRecognized` event which contains information about the converted text. 
 
-The `SpeechRecognizerSpeechRecognizedEventArgs` provides the recognized text and the corresponding confidence score. The score is a value between 0 and 1, indicating how confident the speech-to-text transcription is. A value of -1 indicates no score could be provided.
+The `SpeechRecognizerSpeechRecognizedEventArgs` provides the recognized text and a confidence score. The score is a value between 0 and 1, indicating how confident the speech-to-text transcription is. A value of -1 indicates no score could be provided.
 
 __Defining a SpeechRecognized event handler__
 

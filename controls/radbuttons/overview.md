@@ -38,7 +38,7 @@ The following list presents the most popular features in Telerik's __RadButtons_
 
 * [Radio Button]({%slug radbutton-features-radio-button%})&mdash;Mimics the functionality of the radio button, but has more flexibility in its design. 
 
-* [Text-to-Speech Button]({%slug radbuttons-features-speech-to-text-button%})&mdash;This button introduces special events and visuals states designed to allow you to implement smooth text to speech experience. Clicking the button starts a listening action which can be processed and converted to text.
+* [Speech-Text-Button]({%slug radbuttons-features-speech-to-text-button%})&mdash;This button introduces special events and visuals states designed to allow you to implement smooth speech to text experience. Clicking the button starts a listening action which can be processed and converted to text.
 
 * [Path Button]({%slug radbuttons-features-pathbutton%})&mdash;Derives from RadButton, but provides the ability to set a Path alongside its content.
 
@@ -60,3 +60,4 @@ The following list presents the most popular features in Telerik's __RadButtons_
  * [Getting Started]({%slug radbuttons-getting-started%})
  * [Visual Structure]({%slug radbuttons-visual-structure%})
  * [Events]({%slug radbuttons-events%}) 
+

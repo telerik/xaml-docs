@@ -87,6 +87,9 @@ __Getting the current status of the recognizer__
 SpeechRecognizerState state = this.speechToTextButton.State;
 ```
 
+The states lifecycle is shown in the [Architecture and States](#architecture-and-states) section of this article.
+
+
 ## Handling Speech Recognition Errors
 
 To handle errors related to the speech recognition service, use the `ErrorOccurred` event. The `SpeechRecognizerErrorOccurredEventArgs` provide information about the error message via the `Message` and `Exception` properties.
@@ -379,3 +382,9 @@ private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.Speec
 ```
 
 ![A gif animation showing the behavior of the custom speech recognizer](images/radbuttons-features-speech-to-text-button-3.gif)
+
+## Architecture and States
+
+The image below explains how the control works and how the [states](#recognizer-states) are managed: 
+
+![A picture describing the states and the behavior of RadSpeechToTextButton](images/radbuttons-features-speech-to-text-button-4.png)

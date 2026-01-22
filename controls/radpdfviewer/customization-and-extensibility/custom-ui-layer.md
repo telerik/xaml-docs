@@ -16,7 +16,7 @@ The IUILayer interface provides the following API:
 
 * `UIElement`&mdash;Gets the `Canvas` panel that represents the UI layer.
 * `Name`&mdash;Gets the name of the UI layer.
-* `Initialize(UILayerInitializeContext context)`&mdash;This method is raised when the UI layer is initialized. The parameter of the type of `UILayerInitializeContext` provides the following API:
+* `Initialize(UILayerInitializeContext context)`&mdash;This method is called when the UI layer is initialized. The parameter of the type of `UILayerInitializeContext` provides the following API:
     * `Document`&mdash;Gets the document of the RadPdfViewer, which is of the type of `RadFixedDocument`.
     * `Owner`&mdash;Gets the owner of the UI layer, which is of the type of `IUILayerContainer`.
     * `Page`&mdash;Gets the page of the type of `RadFixedPage`.
@@ -24,7 +24,7 @@ The IUILayer interface provides the following API:
 * `Update(UILayerUpdateContext context)`&mdash;This method is raised when the UI layer is updated. The parameter of the type of `UILayerUpdateContext` provides the following API:
     * `ShouldShowSelectionMarkers`&mdash;Gets or sets whether selection markers should be shown.
     * `Viewport`&mdash;Gets the current viewport, in the type of `Rect`.
-* `Clear()`&mdash; This method is raised when the pages of the RadPdfViewer are removed. For example, when updating the control updates the currently visible pages. It provides the ability to clear elements from the UI layer.
+* `Clear()`&mdash;This method clears the elements from the UI layer. It is called internally by RadPdfViewer when the pages are removed. For example, this may happen during updates in the control which change the currently visible pages. 
 
 __Creating a custom UI layer__
 ```C#

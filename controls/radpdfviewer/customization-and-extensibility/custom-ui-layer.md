@@ -21,7 +21,7 @@ The IUILayer interface provides the following API:
     * `Owner`&mdash;Gets the owner of the UI layer, which is of the type of `IUILayerContainer`.
     * `Page`&mdash;Gets the page of the type of `RadFixedPage`.
     * `Presenter`&mdash;Gets the presenter of the type of `IFixedDocumentPresenter`.
-* `Update(UILayerUpdateContext context)`&mdash;this method is raised when the UI layer is updated. The parameter of the type of `UILayerUpdateContext` provides the following API:
+* `Update(UILayerUpdateContext context)`&mdash;This method is raised when the UI layer is updated. The parameter of the type of `UILayerUpdateContext` provides the following API:
     * `ShouldShowSelectionMarkers`&mdash;Gets or sets whether selection markers should be shown.
     * `Viewport`&mdash;Gets the current viewport, in the type of `Rect`.
 * `Clear()`&mdash; This method is raised when the pages of the RadPdfViewer are removed. For example, when updating the control updates the currently visible pages. It provides the ability to clear elements from the UI layer.

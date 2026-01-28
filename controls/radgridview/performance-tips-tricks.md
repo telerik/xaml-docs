@@ -69,6 +69,12 @@ position: 17
 		}
 	```
 
+* Consider using the [RadObservableCollection]({%slug consuming-data-radobservablecollection%}) for the `ItemsSource` of the `RadGridView` control, instead of the native WPF __ObservableCollection__. The RadObservableCollection provides support for suspending change notification events via the `SuspendNotifications` and `ResumeNotifications` methods. This can be very useful when you need to add, remove or update a large number of items in the collection, as it prevents the raise of collection changed event on each item, thus improving performance.
+
+* If possible, avoid populating the collection bound to the `ItemsSource` property of the `RadGridView` control with __null__ values. If such values are present in the collection, it will result in slower retrieval of the index for an item for many data operations.
+
+* Avoid overriding the `Equals` or `GetHashCode` methods of the business objects bound to the `ItemsSource` property of the `RadGridView` control if this is not required. If overriding these methods is necessary, override both the Equals and GetHashCode methods to improve the performance on some data operations.
+
 ## See Also
 
 * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

@@ -28,7 +28,7 @@ Window for UI for WPF
 
 ## Description
 
-How to prevent the default double-click behavior on the titlebar (header) of a [RadWindow]({%slug radwindow-overview}) or a native WPF Window. 
+How to prevent the default double-click behavior on the titlebar (header) of a [RadWindow]({%slug radwindow-overview%}) or a native WPF Window. 
 
 By default, double-clicking on the header causes the window to switch states from maximized to restored or vice versa. 
 

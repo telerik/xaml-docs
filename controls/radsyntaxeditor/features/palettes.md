@@ -22,13 +22,13 @@ position: 6
 	background: #0000E6;
 }
 .keywordColor-dark{
-	background: #B266FF;
+	background: #89C4FF;
 }
 .keywordColor-neutral{
-	background: #0080FF;
+	background: #004F9D;
 }
 .keywordColor-neutral-dark{
-	background: #0080FF;
+	background: #89C4FF;
 }
 /* PreprocessorKeywordColor */
 .preprocessorKeywordColor-light{
@@ -84,16 +84,16 @@ position: 6
 }
 /* StringColor */
 .stringColor-light{
-	background: #AC2C2C;
+	background: #CB3300;
 }
 .stringColor-dark{
-	background: #BE5B5B;
+	background: #FF9292;
 }
 .stringColor-neutral{
-	background: #AC2C2C;
+	background: #C33100;
 }
 .stringColor-neutral-dark{ 
-	background: #BE5B5B;
+	background: #FF9292;
 }
 /* XmlAttributeColor */
 .xmlAttributeColor-light{
@@ -186,6 +186,49 @@ position: 6
 .xmlTagColor-neutral-dark{
 	background: #14CCCB;
 }
+/* TrueFalseNullColor */
+.trueFalseNullColor-light{
+	background: #6D33A8;
+}
+.trueFalseNullColor-dark{
+	background: #C79FEF;
+}
+.trueFalseNullColor-neutral{
+	background: #6D33A8;
+}
+.trueFalseNullColor-neutral-dark{
+	background: #C68CFF;
+}
+/* ArrayColor */
+.arrayColor-light{
+	background: #005961;
+}
+.arrayColor-dark{
+	background: #CDDEE4;
+}
+.arrayColor-neutral{
+	background: #005961;
+}
+.arrayColor-neutral-dark{
+	background: #CDDEE4;
+}
+article table
+{
+    table-layout: auto;
+}
+/* NumberColor */
+.numberColor-light{
+	background: #621800;
+}
+.numberColor-dark{
+	background: #FFA800;
+}
+.numberColor-neutral{
+	background: #6C4800;
+}
+.numberColor-neutral-dark{
+	background: #FFA800;
+}
 article table
 {
     table-layout: auto;
@@ -213,6 +256,9 @@ Here is a list of all the colors in the palettes and their default values for ea
 |**XmlStringColor**|<div class="palette-color xmlStringColor-light"></div>|<div class="palette-color xmlStringColor-dark"></div>|<div class="palette-color xmlStringColor-neutral"></div>|<div class="palette-color xmlStringColor-neutral-dark"></div>|
 |**XmlCharacterDataColor**|<div class="palette-color xmlCharacterColor-light"></div>|<div class="palette-color xmlCharacterColor-dark"></div>|<div class="palette-color xmlCharacterColor-neutral"></div>|<div class="palette-color xmlCharacterColor-neutral-dark"></div>|
 |**XmlTagColor**|<div class="palette-color xmlTagColor-light"></div>|<div class="palette-color xmlTagColor-dark"></div>|<div class="palette-color xmlTagColor-neutral"></div>|<div class="palette-color xmlTagColor-neutral-dark"></div>|
+|**TrueFalseNullColor**|<div class="palette-color trueFalseNullColor-light"></div>|<div class="palette-color trueFalseNullColor-dark"></div>|<div class="palette-color trueFalseNullColor-neutral"></div>|<div class="palette-color trueFalseNullColor-neutral-dark"></div>|
+|**ArrayColor**|<div class="palette-color arrayColor-light"></div>|<div class="palette-color arrayColor-dark"></div>|<div class="palette-color arrayColor-neutral"></div>|<div class="palette-color arrayColor-neutral-dark"></div>|
+|**NumberColor**|<div class="palette-color numberColor-light"></div>|<div class="palette-color numberColor-dark"></div>|<div class="palette-color numberColor-neutral"></div>|<div class="palette-color numberColor-neutral-dark"></div>|
 
 ## Palette Recommendations
 

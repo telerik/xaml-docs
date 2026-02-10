@@ -21,17 +21,19 @@ The matched tags are then processed by the [UI layers]({%slug radsyntaxeditor-fe
 
 The RadSyntaxEditor comes with a number of predefined taggers:
 
-* **CSharpTagger**: A tagger responsible for the syntax-highlighting in the **C#** programming language.
-* **VisualBasicTagger**: A tagger responsible for the syntax-highlighting in the **Visual Basic** programming language.
-* **JavaScriptTagger**: A tagger responsible for the syntax-highlighting in the **JavaScript** programming language.
-* **XmlTagger**: A tagger responsible for the syntax-highlighting in the **XML** programming language.
-* **SqlTagger**: A tagger responsible for the syntax-highlighting in the **T-SQL (Transact-SQL)** programming language.
-* **BracketFoldingTagger**: A tagger responsible for creating collapsible (folding) regions in the code. Can be used for the **JavaScript** language.
-* **CSharpFoldingTagger**: A tagger responsible for creating **folding regions** in **C#** code.
-* **VisualBasicFoldingTagger**: A tagger responsible for creating **folding regions** in **Visual Basic** code.
-* **TextSearchHighlightTagger**: A tagger which prepares a collection of **TextHighlightTags** for all occurrences of a given search word. The class exposes a **UpdateSearchWord** method is used to determine the word which will be highlighted.
-* **TextSearchUnderlineTagger**: A tagger which prepares a collection of **UnderlineTags** for all occurrences of a given search word. The class exposes a **UpdateSearchWord** method is used to determine the word which will be underlined.
-* **LineHighlightTagger**: A tagger which prepares a collection of **TextHighlightTags** for a collection of lines. The class exposes a **HighlightLines** method taking an **IEnumerable&lt;int&gt;** and is used to determine the lines which will be highlighted. The tagger also provides a **HighlightMode** property of type **LineHighlightMode** which has the following possible values:
+* `CSharpTagger`: A tagger responsible for the syntax-highlighting in the **C#** programming language.
+* `VisualBasicTagger`: A tagger responsible for the syntax-highlighting in the **Visual Basic** programming language.
+* `JavaScriptTagger`: A tagger responsible for the syntax-highlighting in the **JavaScript** programming language.
+* `XmlTagger`: A tagger responsible for the syntax-highlighting in the **XML** programming language.
+* `SqlTagger`: A tagger responsible for the syntax-highlighting in the **T-SQL (Transact-SQL)** programming language.
+* `JsonTagger`: A tagger responsible for the syntax-highlighting in the __JSON__ format.
+* `BracketFoldingTagger`: A tagger responsible for creating collapsible (folding) regions in the code. Can be used for the **JavaScript** language.
+* `SquareBracketFoldingTagger`: A tagger responsible for creating collapsible (folding) regions in the code. Can be used for the **JSON** format.
+* `CSharpFoldingTagger`: A tagger responsible for creating **folding regions** in **C#** code.
+* `VisualBasicFoldingTagger`: A tagger responsible for creating **folding regions** in **Visual Basic** code.
+* `TextSearchHighlightTagger`: A tagger which prepares a collection of **TextHighlightTags** for all occurrences of a given search word. The class exposes a `UpdateSearchWord` method is used to determine the word which will be highlighted.
+* `TextSearchUnderlineTagger`: A tagger which prepares a collection of **UnderlineTags** for all occurrences of a given search word. The class exposes a `UpdateSearchWord` method is used to determine the word which will be underlined.
+* `LineHighlightTagger`: A tagger which prepares a collection of **TextHighlightTags** for a collection of lines. The class exposes a `HighlightLines` method taking an **IEnumerable&lt;int&gt;** and is used to determine the lines which will be highlighted. The tagger also provides a `HighlightMode` property of type `LineHighlightMode` which has the following possible values:
     * **TextOnly**: Highlights only the text portion of the line. This is the **default** value.
     * **LineStartToTextEnd**: Highlights from the beginning of the line to the end of the text portion of the line.
 

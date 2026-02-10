@@ -119,6 +119,21 @@ The `Configure MCP Server for Solution` option is visible only if you have a pro
 
 The `Add/Update GitHub Copilot Instructions` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) an [copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=visualstudio) file in the `.github\` folder of the solution (`\SolutionDir\.github\copilot-instructions.md`), which includes extra context that is automatically used with the prompt given to the Copilot chat in Visual Studio.
 
+## Troubleshooting
+
+>warning **Known Issue: Hanging tool calls in Visual Studio**
+> 
+>When using Telerik AI tools in Visual Studio, GitHub Copilot may:
+>- **hang** during tool invocation;
+>- show UI for a successful tool response, but actually **fail silently**;
+>- continue generation without waiting for **parallel tool calls**.
+>In these cases, the response may be generated but not provided to the Copilot Agent UI.
+>This is a known issue in Visual Studio Copilot, not related to Telerik MCP servers or AI tools, and does not reproduce in VS Code.
+>For more details, see the related Visual Studio Developer Community issue:  
+>https://developercommunity.visualstudio.com/t/Copilot-stopped-working-after-latest-upd/10936456
+>
+>Microsoft has acknowledged the issue and marked it as **Fixed - Pending Release**. A future Visual Studio update is expected to resolve it.
+
 ## Usage
 
 To use the Telerik MCP Server:

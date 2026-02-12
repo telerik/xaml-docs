@@ -1,0 +1,66 @@
+---
+title: How to Data Bind the Document Content of RadRichTextBox to Property in the View Model
+description: An article explaining how to data bind the content of a WPF RadRichTextBox RadDocument to the view model in MVVM setup.
+type: how-to
+page_title: How to Data Bind the Content of RadDocument of RadRichTextBox to the View Model in MVVM.
+slug: kb-richtextbox-databind-document-content
+position: 0
+tags: rtb,richtextbox,data,binding,mvvm,provider,import,export
+res_type: kb
+---
+
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product Version</td>
+			<td>2026.1.210</td>
+		</tr>
+		<tr>
+			<td>Product</td>
+			<td>RadRichTextBox for WPF</td>
+		</tr>
+	</tbody>
+</table>
+
+## Description
+
+How to data bind the contents of `RadRichTextBox`'s `RadDocument` to a property in the view model.
+
+## Solution
+
+The content of `RadDocument` might be very complex, so storing it raw in a property in the view model is no straightforward. However, `RadRichTextBox` provides a mechanism to do so via an extra element called `XamlDataProvider`. 
+
+The `XamlDataProvider` can be data bound to a string property coming from the view model and to the RadRichTextBox control. Internally, the data provider will execute import and export actions which convert between the XAML string stored in the view model and a `RadDocument` object used by RadRichTextBox.
+
+```C#
+public class ExampleViewModel : ViewModelBase
+{
+    private string xamlData;
+
+    public string XamlData
+    {
+        get { return this.xamlData; }
+        set
+        {
+            this.xamlData = value;
+            OnPropertyChanged("XamlData");
+        }
+    }
+}
+```
+
+```XAML
+ <Grid>
+    <Grid.Resources>
+        <local:ExampleDataContext x:Key="ExampleDataContext"/>
+    </Grid.Resources>
+    <telerik:XamlDataProvider RichTextBox="{Binding ElementName=radRichTextBox}" 
+              DataContext="{StaticResource ExampleDataContext}" 
+              Xaml="{Binding Path=XamlData, Mode=TwoWay}" />
+    <telerik:RadRichTextBox Name="radRichTextBox" />
+</Grid>
+```
+
+## See Also
+* [Keyboard Support]({%slug radautocompletebox-features-keyboard-support%})

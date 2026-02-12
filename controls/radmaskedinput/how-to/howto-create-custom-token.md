@@ -10,9 +10,11 @@ position: 3
 
 # How to Create Custom Mask Tokens
 
-You can find a list of all built-in mask tokens that you can use when defining the mask of the __RadMaskedInput__ controls in the [Mask Tokens]({%slug radmaskedinput-features-mask-tokens%}) article. However, when your scenario requirements cannot be implemented using the built-in tokens, you can create a custom mask token to better fit your needs.
+This article shows how to implement a custom mask token.
 
-In order to create a custom mask token, you need to define a new class that should implement the {% if site.site_name == 'Silverlight' %}[ ITokenValidationRule](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_maskedinput_tokens_itokenvalidationrule.html){% endif %}{% if site.site_name == 'WPF' %}[ ITokenValidationRule](http://www.telerik.com/help/wpf/t_telerik_windows_controls_maskedinput_tokens_itokenvalidationrule.html){% endif %} interface.				
+Find a list of all built-in mask tokens that can be used with the __RadMaskedInput__ controls in the [Mask Tokens]({%slug radmaskedinput-features-mask-tokens%}) article. 
+
+To create a custom token, you should implement the [ITokenValidationRule](https://www.telerik.com/products/wpf/documentation/api/telerik.windows.controls.maskedinput.tokens.itokenvalidationrule) interface.
 
 __Example 1: Creating custom class which inherits ITokenValidationRule interface__
 ```C#
@@ -226,7 +228,7 @@ __Example 4: Final custom token definition__
 	End Class
 ```	
 
-In order to use this custom token in the __MaskedInput__ controls, you have to add it in the __MaskedInput.Tokens__ using the {% if site.site_name == 'Silverlight' %}[ TokenLocator](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_maskedinput_tokens_tokenlocator.html){% endif %}{% if site.site_name == 'WPF' %}[ TokenLocator](http://www.telerik.com/help/wpf/t_telerik_windows_controls_maskedinput_tokens_tokenlocator.html){% endif %} class {% if site.site_name == 'Silverlight' %}[ AddCustomValidationRule()](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_maskedinput_tokens_tokenlocator_addcustomvalidationrule.html){% endif %}{% if site.site_name == 'WPF' %}[ AddCustomValidationRule()](http://www.telerik.com/help/wpf/m_telerik_windows_controls_maskedinput_tokens_tokenlocator_addcustomvalidationrule.html){% endif %} method. This method takes as an argument an object of type __ITokenValidationRule__ so you can pass the custom token.				
+To use this custom token in the __MaskedInput__ controls, add it in the __MaskedInput.Tokens__ using the `AddCustomValidationRule` method of the [TokenLocator](https://www.telerik.com/products/wpf/documentation/api/telerik.windows.controls.maskedinput.tokens.tokenlocator) class.
 
 After the custom token is added in the Tokens collection of the __RadMaskedInput__ controls, you can use it in the __RadMaskedTextInput__ control definition:
 

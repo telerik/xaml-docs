@@ -49,6 +49,8 @@ __RadHighlightTextBlock with a highlighted match__
 
 ![{{ site.framework_name }} RadHighlightTextBlock with a highlighted match](images/radhighlighttextblock-getting-started-0.png)
 
+When data binding the `Text` property always use `TwoWay` binding to avoid a limitation related to the specifics of the highlighting behavior.
+
 ## Changing the Highlight Background and the Highlight Foreground Colors
 
 The RadHighlightTextBlock exposes two properties that will allow you to change the color of the foreground and background of the highlighted matches. To do so, set the `HighlightBackground` and `HighlightForeground` properties.

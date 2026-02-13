@@ -74,7 +74,7 @@ __Setting RightFrozenColumnCount__
 
 ## Disabling Frozen Columns
 
-To disable the freezing of a column, just set the `CanUserFreezeColumns` to __False__ (as shown in Example 2) and the frozen columns separator will disappear.
+To disable the freezing of a column, just set the `CanUserFreezeColumns` to __False__ (as shown in the following example) and the frozen columns separator will disappear.
 
 __Disabling Frozen Columns__
 

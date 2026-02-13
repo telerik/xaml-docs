@@ -159,8 +159,8 @@ __Setting the LeftFrozenColumnSplitterThreshold and RightFrozenColumnSplitterThr
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView"
-	             		 LeftFrozenColumnSplitterThreshold="0.3"
-	             		 RightFrozenColumnSplitterThreshold="0.7" />
+	             	LeftFrozenColumnSplitterThreshold="0.3"
+	             	RightFrozenColumnSplitterThreshold="0.7" />
 ```
 
 ```C#
@@ -177,4 +177,5 @@ __Setting the LeftFrozenColumnSplitterThreshold and RightFrozenColumnSplitterThr
  * [RadGridView Overview]({%slug gridview-overview2%})
  * [Bound/Unbound Columns]({%slug gridview-columns-bound-unbound-columns%})
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
+
  * [Column Groups]({%slug gridview-column-groups%})

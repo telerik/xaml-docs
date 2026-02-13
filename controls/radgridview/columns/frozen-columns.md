@@ -30,7 +30,7 @@ A frozen column always stays on top of horizontal scrolling.
 
 ## Right Frozen Columns
 
-The approach of using the right side frozen columns is basically the same. The only difference is that the `RightFrozenColumnsSplitterVisibility` property of RadGridView needs to be set to set to __Visible__, as by default it is hidden. 
+The approach of using the right side frozen columns is basically the same. The only difference is that the `RightFrozenColumnsSplitterVisibility` property of RadGridView needs to be set to __Visible__, as by default it is hidden. 
 
 ## Freezing Columns Programmatically 
 

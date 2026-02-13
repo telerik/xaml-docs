@@ -24,14 +24,14 @@ The summarization feature requires you to install few more packages, aside from 
 
 ```XML
 <ItemGroup>
- <PackageReference Include="Azure.AI.OpenAI" Version="2.2.0-beta.2" />
-  <PackageReference Include="OllamaSharp" Version="5.4.8" />
-  <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.3.0-preview.1.25161.3" />
-  <PackageReference Include="SharpToken" Version="2.0.3" />
- <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="2025.4.1110"/>
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="2025.4.1110" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="2025.4.1110" />
- <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="2025.3.1008" />
+ <PackageReference Include="Azure.AI.OpenAI" Version="*" />
+  <PackageReference Include="OllamaSharp" Version="*" />
+  <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="*" />
+  <PackageReference Include="SharpToken" Version="*" />
+ <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="*"/>
+ <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="*" />
+ <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="*" />
+ <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="*" />
 </ItemGroup>
 ```
 
@@ -39,14 +39,14 @@ The summarization feature requires you to install few more packages, aside from 
 
 ```XML
 <ItemGroup>
- <PackageReference Include="Azure.AI.OpenAI" Version="2.3.0-beta.1" />
- <PackageReference Include="SharpToken" Version="2.0.3" />
- <PackageReference Include="Azure.Core" Version="1.48.0" />
- <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version=" 9.3.0-preview.1.25161.3" />
- <PackageReference Include="OllamaSharp" Version="5.4.8" />
- <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="2025.4.*" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="2025.4.*" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="2025.4.*" />
+ <PackageReference Include="Azure.AI.OpenAI" Version="*" />
+ <PackageReference Include="SharpToken" Version="*" />
+ <PackageReference Include="Azure.Core" Version="*" />
+ <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="*" />
+ <PackageReference Include="OllamaSharp" Version="*" />
+ <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="*" />
+ <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="*" />
+ <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="*" />
  <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="*-*" />
 </ItemGroup>
 ```

@@ -22,34 +22,26 @@ The summarization feature requires you to install few more packages, aside from 
 
 ### Required Packages (.NET Framework)
 
-```XML
-<ItemGroup>
- <PackageReference Include="Azure.AI.OpenAI" Version="*" />
-  <PackageReference Include="OllamaSharp" Version="*" />
-  <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="*" />
-  <PackageReference Include="SharpToken" Version="*" />
- <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="*"/>
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="*" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="*" />
- <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="*" />
-</ItemGroup>
-```
+* `Azure.AI.OpenAI`
+* `OllamaSharp`
+* `Microsoft.Extensions.AI.OpenAI`
+* `SharpToken`
+* `Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml`
+* `Telerik.Windows.Documents.AIConnector`
 
 ### Required Packages (.NET)
 
-```XML
-<ItemGroup>
- <PackageReference Include="Azure.AI.OpenAI" Version="*" />
- <PackageReference Include="SharpToken" Version="*" />
- <PackageReference Include="Azure.Core" Version="*" />
- <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="*" />
- <PackageReference Include="OllamaSharp" Version="*" />
- <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="*" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="*" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="*" />
- <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="*-*" />
-</ItemGroup>
-```
+* `Azure.AI.OpenAI`
+* `SharpToken`
+* `Azure.Core`
+* `Microsoft.Extensions.AI.OpenAI`
+* `OllamaSharp`
+* `Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml`
+* `Telerik.Windows.Documents.AIConnector`
 
 ### Using Assembly References
 

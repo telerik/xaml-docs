@@ -10,11 +10,11 @@ position: 10
 
 # Frozen Columns
 
-As of __R1 2018 RadGridView__ supports pinning columns both on its left and right side. Prior this version, the __FrozenColumnsCount__ property was available, through which columns could be frozen on the left side only. With the newer functionality this property is obsolete. It is replaced with the __LeftFrozenColumnsCount__ and __RightFrozenColumnsCount__ properties.
+With the __R1 2018__, `RadGridView` supports pinning columns both on its left and right side. Prior this version, the `FrozenColumnsCount` property was available, through which columns could be frozen on the left side only. With the newer functionality this property is obsolete. It is replaced with the `LeftFrozenColumnCount` and `RightFrozenColumnCount` properties.
 
 ## Left Frozen Columns
 
-__RadGridView__ provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column on the left, the user has to drag the left frozen columns separator.
+RadGridView provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column on the left, the user has to drag the left frozen columns separator.
 
 ![Telerik {{ site.framework_name }} DataGrid Frozen columns 1](images/RadGridView_Frozencolumns_1.png)
 
@@ -30,23 +30,23 @@ A frozen column always stays on top of horizontal scrolling.
 
 ## Right Frozen Columns
 
-The approach of using the right side frozen columns is basically the same. The only difference is that the __RightFrozenColumnsSplitterVisibility__ property of __RadGridView__ needs to be set to set to __Visible__, as by default it is hidden. 
+The approach of using the right side frozen columns is basically the same. The only difference is that the `RightFrozenColumnsSplitterVisibility` property of RadGridView needs to be set to __Visible__, as by default it is hidden. 
 
 ## Freezing Columns Programmatically 
 
-> In order to programmatically freeze columns on the right side, the __RightFrozenColumnsSplitterVisibility__ property needs to be set to __Visible__.
+> In order to programmatically freeze columns on the right side, the RightFrozenColumnsSplitterVisibility property needs to be set to __Visible__.
 
-You can freeze columns programmatically using the __LeftFrozenColumnCount__ and __RightFrozenColumnCount__ properties of __RadGridView__ control. They are both numeric and you have to set them to the number of columns you wish to freeze.
+You can freeze columns programmatically using the `LeftFrozenColumnCount` and `RightFrozenColumnCount` properties of RadGridView control. They are both numeric and you have to set them to the number of columns you wish to freeze.
 
-In __Example 1__, the first two columns are frozen starting from __left to right__.
+In the following example, the first two columns are frozen starting from __left to right__.
 
-__Example 1: Setting LeftFrozenColumnCount__
+__Setting LeftFrozenColumnCount__
 
 ```XAML
 	<telerik:RadGridView LeftFrozenColumnCount="2" />
 ```
 
-__Example 1: Setting LeftFrozenColumnCount__
+__Setting LeftFrozenColumnCount__
 
 ```C#
 	this.radGridView.LeftFrozenColumnCount = 2;
@@ -55,15 +55,15 @@ __Example 1: Setting LeftFrozenColumnCount__
 	Me.radGridView.LeftFrozenColumnCount = 2
 ```
 
-In __Example 2__, the first two columns are frozen starting from __right to left__.
+In the following example, the first two columns are frozen starting from __right to left__.
 
-__Example 2: Setting RightFrozenColumnCount__
+__Setting RightFrozenColumnCount__
 
 ```XAML
 	<telerik:RadGridView RightFrozenColumnCount="2" />
 ```
 
-__Example 2: Setting RightFrozenColumnCount__
+__Setting RightFrozenColumnCount__
 
 ```C#
 	this.radGridView.RightFrozenColumnCount = 2;
@@ -74,9 +74,9 @@ __Example 2: Setting RightFrozenColumnCount__
 
 ## Disabling Frozen Columns
 
-To disable the freezing of a column, just set the __CanUserFreezeColumns__ to __False__ (as shown in Example 2) and the frozen columns separator will disappear.
+To disable the freezing of a column, just set the `CanUserFreezeColumns` to __False__ (as shown in the following example) and the frozen columns separator will disappear.
 
-__Example 2: Disabling Frozen Columns__
+__Disabling Frozen Columns__
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView"
@@ -87,33 +87,33 @@ __Example 2: Disabling Frozen Columns__
 
 ## Hiding the Left Frozen Columns Splitter
 
-You can set the **FrozenColumnsSplitterVisibility** property of the __RadGridView__ control in order to hide/show the left frozen columns splitter.
+You can set the `FrozenColumnsSplitterVisibility` property of the RadGridView control in order to hide/show the left frozen columns splitter.
 
 The property has one of three values:
 
-* **Visible:** Displays the element.
-* **Hidden:** Does not display the element, but reserves space for the element in the layout.
-* **Collapsed:** Does not display the element, and does not reserve space for it in the layout.
+* `Visible`&mdash;Displays the element.
+* `Hidden`&mdash;Does not display the element, but reserves space for the element in the layout.
+* `Collapsed`&mdash;Does not display the element, and does not reserve space for it in the layout.
 
-#### __Figure 1: FrozenColumnsSplitterVisibility set to Visible and Hidden/Collapsed, respectively__
+#### __FrozenColumnsSplitterVisibility set to Visible and Hidden/Collapsed, respectively__
 
 ![Telerik {{ site.framework_name }} DataGrid Frozen Columns Splitter Visibility Visible](images/FrozenColumnsSplitterVisibility_Visible.png)
 ![Telerik {{ site.framework_name }} DataGrid Frozen Columns Splitter Visibility Hidden](images/FrozenColumnsSplitterVisibility_Hidden.png)
 
 ## Frozen Columns Events
 
-As of R1 2016, we've added the __FrozenColumnsChanged__ event which is fired whenever columns are frozen or unfrozen.
+The RadGridView control exposes the `FrozenColumnsChanged` event which is fired whenever columns are frozen or unfrozen.
 
-__Example 3__ shows that you can subscribe to the event either declaratively or at runtime like this:
+The following example shows that you can subscribe to the event either declaratively or at runtime like this:
 
-__Example 3: Subscribing to the FrozenColumnsChanged Event__
+__Subscribing to the FrozenColumnsChanged Event__
 
 ```XAML
 	<telerik:RadGridView x:Name="gridView"
 	             FrozenColumnsChanged="gridView_FrozenColumnsChanged" />
 ```
 
-__Example 3: Subscribing to the FrozenColumnsChanged Event__
+__Subscribing to the FrozenColumnsChanged Event__
 
 ```C#
 	gridView.FrozenColumnsChanged += new EventHandler<FrozenColumnsChangedEventArgs>(gridView_FrozenColumnsChanged);
@@ -122,17 +122,15 @@ __Example 3: Subscribing to the FrozenColumnsChanged Event__
 	AddHandler Me.gridView.FrozenColumnsChanged, AddressOf gridView_FrozenColumnsChanged
 ```
 
-Via the FrozenColumnsChangedEventArgs, you can get the:
+Via the `FrozenColumnsChangedEventArgs`, you can get the:
 
-* __AddedFrozenColumns__ - the columns that were added to the collection of frozen columns
+* `AddedFrozenColumns`&mdash;the columns that were added to the collection of frozen columns
+* `RemovedFrozenColumns`&mdash;the columns that were removed from the collection of frozen columns
+* `AllFrozenColumns`&mdash;the collection of frozen columns
 
-* __RemovedFrozenColumns__ - the columns that were removed from the collection of frozen columns
+The next example shows how you can get the names of the columns currently in the frozen columns collection as well as the columns added or removed from it.
 
-* __AllFrozenColumns__ - the collection of frozen columns
-
-__Example 4__ shows how you can get the names of the columns currently in the frozen columns collection as well as the columns added or removed from it.
-
-__Example 4: Using the FrozenColumnsChanged Event__
+__Using the FrozenColumnsChanged Event__
 
 ```C#
 	private void gridView_FrozenColumnsChanged(object sender, Telerik.Windows.Controls.GridView.GridView.FrozenColumnsChangedEventArgs e)
@@ -153,12 +151,31 @@ __Example 4: Using the FrozenColumnsChanged Event__
 ![Telerik {{ site.framework_name }} DataGrid Frozen Columns Changed 1](images/RadGridView_FrozenColumnsChanged_1.png)
 ![Telerik {{ site.framework_name }} DataGrid Frozen Columns Changed 2](images/RadGridView_FrozenColumnsChanged_2.png)
 
+## Frozen Columns Threshold
+
+The RadGridView control allows you to specify a threshold for both the left and right frozen columns' splitters when dragging. This controls the amount of drag that needs to be performed for the column to be frozen or unfrozen. To customize the threshold, you can set utilize the `LeftFrozenColumnSplitterThreshold` and `RightFrozenColumnSplitterThreshold` properties of the RadGridView control. The properties are of type `double` and accepted values are between __0__ and __1__. Setting one of the properties to __0__ means that the column will be frozen/unfrozen immediately when the splitter is dragged and __1__ means that the column will be frozen/unfrozen only when the splitter is dragged all the way to the end of the column's width. The default value for both properties is __0.5__, which means that the column will be frozen/unfrozen when the splitter is dragged at least half of the column's width.
+
+__Setting the LeftFrozenColumnSplitterThreshold and RightFrozenColumnSplitterThreshold Properties__
+
+```XAML
+	<telerik:RadGridView x:Name="radGridView"
+	             	LeftFrozenColumnSplitterThreshold="0.3"
+	             	RightFrozenColumnSplitterThreshold="0.7" />
+```
+
+```C#
+	this.radGridView.LeftFrozenColumnSplitterThreshold = 0.3;
+	this.radGridView.RightFrozenColumnSplitterThreshold = 0.7;
+```
+```VB.NET
+	Me.radGridView.LeftFrozenColumnSplitterThreshold = 0.3
+	Me.radGridView.RightFrozenColumnSplitterThreshold = 0.7
+```
+
 ## See Also
 
  * [RadGridView Overview]({%slug gridview-overview2%})
-
  * [Bound/Unbound Columns]({%slug gridview-columns-bound-unbound-columns%})
-
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
- 
+
  * [Column Groups]({%slug gridview-column-groups%})

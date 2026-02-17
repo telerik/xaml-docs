@@ -52,7 +52,7 @@ Below you can find the default spin step for the different sections.
 
 With text editing functionality of the control, a new event was introduced. The `ValueEditing` event is called when the `Value` property of the RadTimeSpanPicker is about to change on edit operation via textbox or dropdown popup—thus allowing you to customize the editing process of the control further. Below we will cover the basic scenarios, which demonstrate how you can take advantage of this event.
 
->important By default, the `ValueEditing` event will not be fired when modifying the `Value` property from the dropdown popup. You can follow the approach from this [article]({%slug kb-timespanpicker-value-editing-dropdown%}) to introduce support for this scenario.
+>important By default, the `ValueEditing` event will not be fired when modifying the value from the dropdown popup. For this, you can use the [ValueChanged]({%slug radtimespanpicker-events-overview%}) event of RadTimeSpanPicker.
 
 The type of the passed event arguments is `ValueEditingEventArgs` and expose the following properties:
 * `Cancel`&mdash;Gets or sets a value indicating whether the new value of the control should be applied.

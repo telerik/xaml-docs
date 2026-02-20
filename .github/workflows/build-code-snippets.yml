@@ -18,6 +18,18 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
+      - name: Add Telerik NuGet source
+        shell: pwsh
+        run: |
+          dotnet nuget remove source "Telerik NuGet Server" -ErrorAction SilentlyContinue
+          dotnet nuget add source "https://nuget.telerik.com/v3/index.json" `
+            --name "Telerik NuGet Server" `
+            --username "api-key" `
+            --password $env:TELERIK_API_KEY `
+            --store-password-in-clear-text
+        env:
+          TELERIK_API_KEY: ${{ secrets.TELERIK_API_KEY }}
+
       - name: Restore & Build all solutions
         shell: pwsh
         run: |

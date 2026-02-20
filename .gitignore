@@ -39,3 +39,9 @@ start-docs.sh
 start-docs-sl.sh
 watch.sh
 to_delete.md
+.suo
+.baml
+**/bin/
+**/obj/
+**/.vs/
+**.csproj.user

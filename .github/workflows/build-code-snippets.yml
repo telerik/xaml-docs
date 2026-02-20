@@ -21,22 +21,24 @@ jobs:
       - name: Restore & Build all solutions
         shell: pwsh
         run: |
-          $solutions = Get-ChildItem -Path "./snippets" -Filter *.sln -Recurse
+          # Find both .sln and .slnx files
+          $solutions = Get-ChildItem "./snippets" -Recurse -Include *.sln,*.slnx -File
 
-          if ($solutions.Count -eq 0) {
-            Write-Error "No solution files found!"
+          if (-not $solutions) {
+            Write-Error "No solution files (.sln or .slnx) found!"
             exit 1
           }
 
           foreach ($sln in $solutions) {
+            Write-Host ""
             Write-Host "=============================="
             Write-Host "Building $($sln.FullName)"
             Write-Host "=============================="
 
-            dotnet restore $sln.FullName
+            dotnet restore "$($sln.FullName)"
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-            dotnet build $sln.FullName `
+            dotnet build "$($sln.FullName)" `
               --configuration Release `
               --no-restore `
               -warnaserror

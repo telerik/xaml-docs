@@ -45,9 +45,11 @@ If you prefer to avoid setting your script key in the C# code, you can use the [
 ```csharp
 	public MyWPFUserControl()
 	{		
-  		var evidenceAttr = typeof(MainWindow).Assembly.GetCustomAttribute<Telerik.Licensing.EvidenceAttribute>();
-  		var key = evidenceAttr?.Value ?? "";
-   		TelerikLicensing.Register(key);
+  		var evidenceAttributes = typeof(MainWindow).Assembly.GetCustomAttributes().OfType<EvidenceAttribute>();
+		foreach (var attribute in evidenceAttributes)
+		{                
+    		TelerikLicensing.Register(attribute.Value);
+		}
 
 		InitializeComponent();
 	}

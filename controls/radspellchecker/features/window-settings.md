@@ -33,20 +33,20 @@ The following example showcases how to hide the __Add to Dictionary__, the __Ign
     {
         static MainWindow()
         {
-    		RadSpellChecker.WindowSettings.IsAddToDictionaryButtonVisible = false;
+            RadSpellChecker.WindowSettings.IsAddToDictionaryButtonVisible = false;
             RadSpellChecker.WindowSettings.IsIgnoreAllButtonVisible = false;
             RadSpellChecker.WindowSettings.IsEditCustomDictionaryButtonVisible = false;
-    	}
+        }
 
-    	public MainWindow()
+        public MainWindow()
         {
             InitializeComponent();
         }
 
-    	private void Button_Click(object sender, RoutedEventArgs e)
-    	{
-    		RadSpellChecker.Check(this.textBox, SpellCheckingMode.AllAtOnce);
-    	}
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RadSpellChecker.Check(this.textBox, SpellCheckingMode.AllAtOnce);
+        }
     }
 ```
 

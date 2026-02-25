@@ -2,7 +2,13 @@ name: Build WPF Solutions
 
 on:
   push:
+    paths:
+      - '**/*.md'
+      - 'snippets/**'
   pull_request:
+    paths:
+      - '**/*.md'
+      - 'snippets/**'
   workflow_dispatch:
 
 jobs:
@@ -12,13 +18,67 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
+      - name: Detect snippet or folder changes
+        id: snippet_check
+        shell: pwsh
+        run: |
+            git fetch --no-tags --prune --depth=0 origin
+
+            # Determine comparison base (works for push + PR)
+            if ("${{ github.event_name }}" -eq "pull_request") {
+              $base = "${{ github.event.pull_request.base.sha }}"
+            } else {
+              $base = "${{ github.event.before }}"
+            }
+
+            Write-Host "Comparing against $base"
+
+            $changedFiles = git diff --name-only $base HEAD
+
+            if (-not $changedFiles) {
+              echo "should_build=false" >> $env:GITHUB_OUTPUT
+              exit 0
+            }
+
+            $shouldBuild = $false
+
+            foreach ($file in $changedFiles) {
+
+              Write-Host "Changed: $file"
+
+              # CONDITION 1:
+              # Any change inside /snippets folder
+              if ($file -like "snippets/*") {
+                Write-Host "Change inside snippets folder detected."
+                $shouldBuild = $true
+                break
+              }
+
+              # CONDITION 2:
+              # .md file with snippet tag added/modified
+              if ($file -like "*.md") {
+
+                $diff = git diff $base HEAD -- $file
+
+                if ($diff -match "<snippet") {
+                  Write-Host "Snippet tag change detected in markdown."
+                  $shouldBuild = $true
+                  break
+                }
+              }
+            }
+
+            echo "should_build=$shouldBuild" >> $env:GITHUB_OUTPUT
 
       - name: Setup .NET 10
+        if: steps.snippet_check.outputs.should_build == 'true'
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
 
       - name: Add Telerik NuGet source
+        if: steps.snippet_check.outputs.should_build == 'true'
         shell: pwsh
         run: |
           dotnet nuget add source "https://nuget.telerik.com/v3/index.json" --name "Telerik NuGet Server" --username "api-key" --password $env:TELERIK_API_KEY --store-password-in-clear-text
@@ -26,12 +86,14 @@ jobs:
           TELERIK_API_KEY: ${{ secrets.TELERIK_API_KEY }}
 
       - name: Debug Telerik NuGet
+        if: steps.snippet_check.outputs.should_build == 'true'
         shell: pwsh
         run: |
           Write-Host "TELERIK_API_KEY length: $($env:TELERIK_API_KEY.Length)"
           dotnet nuget list source
 
       - name: Restore & Build all solutions
+        if: steps.snippet_check.outputs.should_build == 'true'
         shell: pwsh
         run: |
           # Find both .sln and .slnx files

@@ -14,10 +14,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 <snippet id='button-getting-started-xaml' />
 
-
-<snippet id='button-getting-started-click2' />
-
-<snippet id='button-getting-started-click4' />
+<snippet id='button-getting-started-click' />
 
 ## Adding Telerik Assemblies Using NuGet
 

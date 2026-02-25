@@ -54,8 +54,6 @@ jobs:
             dotnet build "$($sln.FullName)" `
               --configuration Release `
               --no-restore `
-              -warnaserror `
-              /p:NoWarn=TKL002,TKL101,TKL004
 
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           }

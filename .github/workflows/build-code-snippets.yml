@@ -53,7 +53,7 @@ jobs:
 
             dotnet build "$($sln.FullName)" `
               --configuration Release `
-              --no-restore `
+              --no-restore
 
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           }

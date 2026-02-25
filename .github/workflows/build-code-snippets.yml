@@ -25,6 +25,12 @@ jobs:
         env:
           TELERIK_API_KEY: ${{ secrets.TELERIK_API_KEY }}
 
+      - name: Debug Telerik NuGet
+        shell: pwsh
+        run: |
+          Write-Host "TELERIK_API_KEY length: $($env:TELERIK_API_KEY.Length)"
+          dotnet nuget list source
+
       - name: Restore & Build all solutions
         shell: pwsh
         run: |

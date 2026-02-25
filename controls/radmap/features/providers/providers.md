@@ -19,7 +19,6 @@ The `RadMap` control doesn't display a map on itself, it needs a map provider fr
 * [ArcGIS](#arcgis-provider)
 * [Azure Maps](#azure-maps-provider)
 * [MapBox](#mapbox-provider)
-* [WMS](#wms-tiled-provider)
 
 >tip It is now possible to specify multiple map providers that will be displayed one over another through the `Providers` property of RadMap. Note that in multiple providers scenario the first (master) provider should be tiled provider without geographic limits set. Also, providers that have geographic limits and use tiled map sources should be limited with the `MapLayer.ZoomRange` attached property. Zoom range should be set into the reasonable value, so the size of the “map window” does not get excessive on the maximum allowed zoom level; otherwise loading of the tiles into the window will dramatically decrease performance of the application.        
 
@@ -83,10 +82,6 @@ RadMap provides support for the [MapBox vector tile services](https://docs.mapbo
 
 To learn more about how to use the MapBoxProvider, check the [MapBox Provider]({%slug radmap-features-mapboxprovider%}) article.
 
-## WMS Tiled Provider
-
-RadMap supports displaying map tiles from a Web Map Service (WMS) server via the `WmsTiledProvider` class. For more information about the WMS support, check the [WMS Tiled Provider]({%slug radmap-features-providers-wms%}) article.
-
 ## See Also
 
  * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%}) 
@@ -96,4 +91,3 @@ RadMap supports displaying map tiles from a Web Map Service (WMS) server via the
  * [ArcGisMapProvider]({%slug radmap-features-providers-arcgis%})
  * [AzureMapProvider]({%slug radmap-features-providers-azuremapprovider%})
  * [MapBoxProvider]({%slug radmap-features-mapboxprovider%})
- * [WmsTiledProvider]({%slug radmap-features-providers-wms%})

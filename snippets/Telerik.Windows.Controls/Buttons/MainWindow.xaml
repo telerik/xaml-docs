@@ -10,6 +10,7 @@
     <Grid>
         <!-- >> button-getting-started-xaml -->
         <telerik:RadButton Content="Marti testva" Click="RadButton_Click"/>
+        <TextBox Text="TextBox" VerticalAlignment="Bottom"/>
         <!-- << button-getting-started-xaml -->
     </Grid>
 </Window>

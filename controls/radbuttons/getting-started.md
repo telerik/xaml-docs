@@ -17,6 +17,8 @@ This tutorial will walk you through the creation of a sample application that co
 
 <snippet id='button-getting-started-click2' />
 
+<snippet id='button-getting-started-click4' />
+
 ## Adding Telerik Assemblies Using NuGet
 
 To use __RadButton__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})

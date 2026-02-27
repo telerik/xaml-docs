@@ -381,10 +381,6 @@ Once the ViewModels are all in place, you can use the *MainViewModel* as the `Da
 		<Grid.DataContext>
 			<local:MainViewModel />
 		</Grid.DataContext>
-		<Grid.Resources>
-			<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-		</Grid.Resources>
-	
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="\*" />

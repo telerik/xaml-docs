@@ -407,7 +407,7 @@ __RadDiagramToolbox with custom gallery__
 
 ## DragDrop Support
 
-RadDiagramToolbox supports drag/drop operations out-of-the-box. As soon as a `RadDiagramToolboxItem` is initialized, it is made draggable through the `DragDropManager`'s `AllowDrag` and `AllowCapturedDrag` properties which are both set to `true`. Moreover, the Diagramming Framework internally handles the DragDropManager's `DragInitialize` event to take from the dragged `RadDiagramToolboxItem` the shape it represents, if sush exists, and serialize its settings. The serialized settings are then saved in a `DiagramDropInfo` object along with the actual size of the dragged shape.
+RadDiagramToolbox supports drag/drop operations out-of-the-box. As soon as a `RadDiagramToolboxItem` is initialized, it is made draggable through the `DragDropManager`'s `AllowDrag` and `AllowCapturedDrag` properties which are both set to `true`. Moreover, the Diagramming Framework internally handles the DragDropManager's `DragInitialize` event to take from the dragged `RadDiagramToolboxItem` the shape it represents, if such exists, and serialize its settings. The serialized settings are then saved in a `DiagramDropInfo` object along with the actual size of the dragged shape.
 
 >important The `DiagramDropInfo` structure describes a dragged object within a `RadDiagram` instance. It includes a `SerializationInfo` property and a `Size` property – the first one holds the serialized settings of the dragged `RadDiagramItem`, while the second holds the actual size of the dragged item.                    
 

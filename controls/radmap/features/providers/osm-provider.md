@@ -26,8 +26,6 @@ __OpenStreetMapProvider set in code__
 	OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider("your-api-key");
 	this.radMap.Provider = openStreetMap;
 ```
-	
-__OpenStreetMapProvider set in code__
 ```VB
 	Dim openStreetMap As New OpenStreetMapProvider("your-api-key")
 	Me.radMap.Provider = openStreetMap
@@ -63,8 +61,6 @@ __Setting StandardModeUserAgent in code__
 		StandardModeUserAgent = "your custom user agent string"
 	};
 ```
-	
-__Setting StandardModeUserAgent in code__
 ```VB
 	Dim openStreeMapProvider As New OpenStreetMapProvider("your-api-key") With {.StandardModeUserAgent = "your custom user agent string"}
 ```

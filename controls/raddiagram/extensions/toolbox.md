@@ -106,15 +106,11 @@ or define a property of type `HierarchicalGalleryItemsCollection` in your ViewMo
 			 <!-- local is an alias pointing to your local namespace where the MainViewModel class is defined-->
 	        <local:MainViewModel />
 		</Grid.DataContext>
-		<Grid.Resources>
-			<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-		</Grid.Resources>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="\*" />
 			<ColumnDefinition Width="Auto" />
 		</Grid.ColumnDefinitions>
-	
 		<telerik:RadDiagramToolbox x:Name="toolbox"
 								   Title="Gallery"
 								   Width="330"
@@ -381,16 +377,11 @@ Once the ViewModels are all in place, you can use the *MainViewModel* as the `Da
 		<Grid.DataContext>
 			<local:MainViewModel />
 		</Grid.DataContext>
-		<Grid.Resources>
-			<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-		</Grid.Resources>
-	
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="\*" />
 			<ColumnDefinition Width="Auto" />
 		</Grid.ColumnDefinitions>
-	
 		<telerik:RadDiagramToolbox x:Name="toolbox"
 								   Title="Gallery"
 								   Width="330"

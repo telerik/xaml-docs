@@ -18,7 +18,7 @@ The commandDescriptors collection of RadPdfViewer is predefined with a set of de
 
 >tip Each command descriptor provides a `Command` property that you can bind to the `Command` property of your UI element.
 
-The CommandDescriptors collection exposes the following command descriptors:
+The CommandDescriptors object exposes the following command descriptors:
 
 * `OpenCommandDescriptor`&mdash;Opens a PDF document in the viewer.
 * `SaveAsCommandDescriptor`&mdash;Saves the current PDF document to a specified location.
@@ -60,5 +60,6 @@ The CommandDescriptors collection exposes the following command descriptors:
 * `MoveUpCommandDescriptor`&mdash;Moves up in the document (moves caret up in text selection mode or scrolls up in pan mode).
 * `MoveRightCommandDescriptor`&mdash;Moves right in the document (moves caret right in text selection mode or scrolls right in pan mode).
 * `MoveLeftCommandDescriptor`&mdash;Moves left in the document (moves caret left in text selection mode or scrolls left in pan mode).
+
 
 >tip Find a runnable project showing RadPdfViewer in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). The project is wired to work with `RadToolBar` and `RadContextMenu`. You can note how the DataContext of the toolbar is bound to the instance of RadPdfViewer on the same page.

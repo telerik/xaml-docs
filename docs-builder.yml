@@ -28,6 +28,7 @@ liquid-output-delimiter-right: "}}"
 liquid:
   framework_name: "WPF"
   site_name: "WPF"
+  minimum_net_core_version: "NET 8"
   
 excluded-files:
 - "**/README.md"

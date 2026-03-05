@@ -10,8 +10,6 @@ position: 1
 
 # Create Custom Filter Editors
 
->You can find the complete source code used in this article in the __Custom Filter Editors__ example of the [Telerik WPF Demos](https://demos.telerik.com/wpf) application.
-
 If you want to specify a custom filter editor you can do it by using the `EditorTemplateSelector` property of the control. Once the editor (custom or default) is created, you can add the final touch to it by attaching to the `EditorCreated` event.
 
 >Note that this approach can be used to create a custom editor of any kind!
@@ -63,6 +61,129 @@ In XAML you have to create an instance of the selector, define its rules collect
         </telerik:RadGridView.Columns>
     </telerik:RadGridView>
 </Grid>
+```
+
+Below is the implementation of the `EditorTemplateRule` class.
+
+```C#
+public class EditorTemplateRule
+{
+	private string propertyName;
+	private DataTemplate dataTemplate;
+
+	public string PropertyName
+	{
+		get
+		{
+			return this.propertyName;
+		}
+		set
+		{
+			this.propertyName = value;
+		}
+	}
+	public DataTemplate DataTemplate
+	{
+		get
+		{
+			return this.dataTemplate;
+		}
+		set
+		{
+			this.dataTemplate = value;
+		}
+	}
+}
+```
+```VB.NET
+Public Class EditorTemplateRule
+    Private propertyName As String
+    Private dataTemplate As DataTemplate
+
+    Public Property PropertyName As String
+        Get
+            Return Me.propertyName
+        End Get
+        Set(ByVal value As String)
+            Me.propertyName = value
+        End Set
+    End Property
+
+    Public Property DataTemplate As DataTemplate
+        Get
+            Return Me.dataTemplate
+        End Get
+        Set(ByVal value As DataTemplate)
+            Me.dataTemplate = value
+        End Set
+    End Property
+End Class
+
+```
+
+Below is the implementation of the `MyEditorTemplateSelector` class.
+
+```C#
+public class MyEditorTemplateSelector : DataTemplateSelector
+{
+    private List<EditorTemplateRule> editorTemplateRules;
+
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        ItemPropertyDefinition propertyDefinition = (ItemPropertyDefinition)item;
+
+        foreach (EditorTemplateRule rule in this.EditorTemplateRules)
+        {
+            if (rule.PropertyName == propertyDefinition.PropertyName)
+                return rule.DataTemplate;
+        }
+
+        return base.SelectTemplate(item, container);
+    }
+
+    public List<EditorTemplateRule> EditorTemplateRules
+    {
+        get
+        {
+            if (this.editorTemplateRules == null)
+                this.editorTemplateRules = new List<EditorTemplateRule>();
+
+            return this.editorTemplateRules;
+        }
+    }
+}
+```
+```VB.NET
+Public Class MyEditorTemplateSelector
+    Inherits DataTemplateSelector
+
+    Private editorTemplateRules As List(Of EditorTemplateRule)
+
+    Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+        Dim propertyDefinition As ItemPropertyDefinition = CType(item, ItemPropertyDefinition)
+
+        For Each rule As EditorTemplateRule In Me.EditorTemplateRules
+
+            If rule.PropertyName = propertyDefinition.PropertyName Then
+                Return rule.DataTemplate
+            End If
+        Next
+
+        Return MyBase.SelectTemplate(item, container)
+    End Function
+
+    Public ReadOnly Property EditorTemplateRules As List(Of EditorTemplateRule)
+        Get
+
+            If Me.editorTemplateRules Is Nothing Then
+                Me.editorTemplateRules = New List(Of EditorTemplateRule)()
+            End If
+
+            Return Me.editorTemplateRules
+        End Get
+    End Property
+End Class
+
 ```
 
 Here is the code behind of the example. The most important thing in it is the event handler for the `EditorCreated` event. In it you can fill RadComboBox editor with the desired data. 
@@ -213,3 +334,5 @@ employees.Add(New Employee("Laurence Lebihan", "Bon app'", "Owner"))
 employees.Add(New Employee("Elizabeth Lincoln", "Bottom-Dollar Markets", "Accounting manager"))
 employees.Add(New Employee("Victoria Ashworth", "B's Beverages", "Sales representative"))
 ```
+
+>You can find the complete source code used in this article in the __Custom Filter Editors__ example of the [Telerik WPF Demos](https://demos.telerik.com/wpf) application.

@@ -2504,3 +2504,7 @@ redirects:
     from: "^controls/radbuttons/features/popup-animation$"
     to: "/controls/radbuttons/popup-animation"
     type: Permanent
+-
+    from: "^ai-assistant/mcp-server-as-a-nuget$"
+    to: "/ai-assistant/mcp-server"
+    type: Permanent

@@ -15,11 +15,7 @@ The coding assistant is an AI code generator that provides specialized context t
 
 ## Available Tools
 
-The Telerik AI Coding Assistant is available through:
-	
-* [Telerik WPF MCP Server]({%slug ai-mcp-server%})
-
-* [Telerik WPF MCP server as a NuGet Package]({%slug ai-mcp-server-as-a-nuget%})
+The Telerik AI Coding Assistant is available through the [Telerik WPF MCP server]({%slug ai-mcp-server%}) distributed as a NuGet package.
 
 ## Getting Started
 
@@ -37,7 +33,7 @@ To use the Telerik WPF AI Coding Assistant, you need:
 Consider the following recommendations when working with the AI Coding Assistant:
 
 * Add NuGet packages/referenced assemblies for the Telerik UI for WPF product.
-* Ser the __.sln__ as a context.
+* Set the __.sln__ as a context.
 * When switching between tasks and files, start a new session in a new chat window to avoid polluting the context with irrelevant or outdated information.
 * At the time of publishing, **Claude Sonnet 4** and **GPT-4.1** produce optimal results.
 

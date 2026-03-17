@@ -5,7 +5,7 @@ type: how-to
 page_title: Customize the Colors of the Chart Scroller
 slug: kb-chartview-change-panzoombar-colors 
 position: 0
-tags: solidcolorbrush, scroll, zoom
+tags: radchartview, solidcolorbrush, scroll, zoom
 ticketid: 1409342
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Add an Additional Element in the CollectionEditor Control
 slug: kb-propertygrid-collectioneditor-template
 position: 0
-tags: collectioneditor, propertygrid, controltemplate
+tags: radpropertygrid, collectioneditor, propertygrid, controltemplate
 ticketid: 1440626
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: System.Drawing.Common Assembly not Found Error When the Telerik WPF PdfViewer is Displayed
 meta_title: FileNotFoundException When the Telerik WPF PdfViewer is Arranged
 slug: kb-pdfviewer-filenotfoundexeception-systemfontsmanager
-tags: pdfviewer, ui for wpf, exception, systemfontsmanager, wpf publishing, self-contained
+tags: radpdfviewer, pdfviewer, ui for wpf, exception, systemfontsmanager, wpf publishing, self-contained
 res_type: kb
 ticketid: 1704306
 ---

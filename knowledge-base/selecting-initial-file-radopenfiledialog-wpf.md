@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Select an Initial File in RadOpenFileDialog in UI for WPF
 meta_title: How to Select an Initial File in RadOpenFileDialog in UI for WPF
 slug: selecting-initial-file-radopenfiledialog-wpf
-tags: filedialogs, radopenfiledialog, wpf, loaded-event, childrenoftype, filebrowserlistbox, filename
+tags: radfiledialogs, filedialogs, radopenfiledialog, wpf, loaded-event, childrenoftype, filebrowserlistbox, filename
 res_type: kb
 ticketid: 1709974
 ---

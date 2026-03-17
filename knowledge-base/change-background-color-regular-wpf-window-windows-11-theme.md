@@ -4,7 +4,7 @@ description: This article explains how to change the background color of a WPF w
 type: how-to
 page_title: Change Background Color of WPF Window with Windows 11 Theme
 slug: kb-window-change-background-color-regular-window-windows-11-theme
-tags: wpf, windows-11, theme, background-color
+tags: radwindow, wpf, windows-11, theme, background-color
 res_type: kb
 ---
 

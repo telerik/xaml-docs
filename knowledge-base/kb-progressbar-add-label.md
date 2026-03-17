@@ -5,7 +5,7 @@ type: how-to
 page_title: Add Label in the ProgressBar Control
 slug: kb-progressbar-add-label
 position: 0
-tags: label,text,value
+tags: radprogressbar, label,text,value
 ticketid: 1582159
 res_type: kb
 ---

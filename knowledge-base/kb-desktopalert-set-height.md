@@ -5,7 +5,7 @@ page_title: Make DesktopAlert's Height Change Based on its Content.
 type: how-to
 slug: kb-desktopalert-set-height
 position: 0
-tags: wpf, desktopalert, height, scale, content
+tags: raddesktopalert, wpf, desktopalert, height, scale, content
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: Show CheckBox in Merged Cells
 slug: kb-gridview-merged-cells-in-checkbox-column
 position: 0
-tags: merged, cells, checkbox, column
+tags: radgridview, merged, cells, checkbox, column
 ticketid: 1416894
 res_type: kb
 ---

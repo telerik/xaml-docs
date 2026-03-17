@@ -5,7 +5,7 @@ type: how-to
 page_title: Modify the SpeedRatio of the Default Switch Animation of ToggleSwitchButton
 slug: kb-buttons-toggleswitchbutton-change-animation-speed
 position: 0
-tags: animation,speed,switch,toggle,ratio,selector
+tags: radbuttons, animation,speed,switch,toggle,ratio,selector
 ticketid: 1558934
 res_type: kb
 ---

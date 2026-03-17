@@ -5,7 +5,7 @@ description: This article explains how to bind DataRow information in TrackBallI
 type: how-to
 slug: kb-chartview-datarow-info-in-trackballinfotemplate
 position: 0
-tags: chartview, trackballinfotemplate, datarow
+tags: radchartview, chartview, trackballinfotemplate, datarow
 ticketid: 1588674
 res_type: kb
 ---

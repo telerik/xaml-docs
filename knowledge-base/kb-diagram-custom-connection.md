@@ -5,7 +5,7 @@ description: Extend the base implementation of the RadDiagramConnection element,
 type: how-to
 slug: kb-diagram-custom-connection-cap
 position: 0
-tags: diagram, connection, cap
+tags: raddiagram, diagram, connection, cap
 ticketid: 1542456
 res_type: kb
 category: knowledge-base

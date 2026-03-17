@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Selected Slots Not Drawn Properly when Using Special Slots
 slug: kb-scheduleview-selection-not-correct-when-using-special-slots
 position: 0
-tags: scheduleview, selection, not, correct, when, using, special, slots
+tags: radscheduleview, scheduleview, selection, not, correct, when, using, special, slots
 ticketid: 1457707
 res_type: kb
 ---

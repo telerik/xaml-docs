@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: DataTrigger Added in CellTemplate of GridViewColumn of DataGrid won't work
 slug: kb-gridview-datatrigger-doesnt-work-in-celltemplate
 position: 0
-tags: gridview, celltemplate, datatrigger,trigger
+tags: radgridview, celltemplate, datatrigger,trigger
 ticketid: 1495519
 res_type: kb
 ---

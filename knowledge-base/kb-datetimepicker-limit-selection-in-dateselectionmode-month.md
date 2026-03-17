@@ -5,7 +5,7 @@ type: how-to
 page_title: Prevent certain months from being selected
 slug: kb-datetimepicker-limit-selection-in-dateselectionmode-month
 position: 0
-tags: limit, selection, dateselectionmode, month
+tags: raddatetimepicker, limit, selection, dateselectionmode, month
 ticketid: 1425924
 res_type: kb
 ---

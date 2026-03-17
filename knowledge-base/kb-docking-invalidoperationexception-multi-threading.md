@@ -5,7 +5,7 @@ description: The calling thread cannot access this object because a different th
 type: troubleshooting
 slug: kb-docking-invalidoperationexception-multi-threading
 position: 0
-tags: multithreading,invalidoperationexception,docking,pane
+tags: raddocking, multithreading,invalidoperationexception,docking,pane
 ticketid: 1425680
 res_type: kb
 ---

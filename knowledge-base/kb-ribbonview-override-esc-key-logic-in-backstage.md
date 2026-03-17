@@ -5,7 +5,7 @@ description: How to override escape key logic of RadRibbonBackstage
 type: how-to
 slug: kb-ribbonview-override-esc-key-logic-in-backstage
 position: 0
-tags: ribbonview, escape, key, backstage
+tags: radribbonview, ribbonview, escape, key, backstage
 res_type: kb
 ---
 

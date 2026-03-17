@@ -5,7 +5,7 @@ description: Null Reference Exception occurs when TypePath of RadCartesianChart 
 type: how-to
 slug: kb-chartview-nullreferenceexception-when-use-typepath
 position: 0
-tags: descriptor, path
+tags: radchartview, descriptor, path
 ticketid: 1412001
 res_type: kb
 ---

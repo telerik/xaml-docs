@@ -5,7 +5,7 @@ description: Update the UI of RadGridView when the current culture is changed br
 type: how-to
 slug: kb-gridview-dynamic-localization
 position: 0
-tags: update,refresh,ui,localization,culture,language,dynamic,runtime
+tags: radgridview, update,refresh,ui,localization,culture,language,dynamic,runtime
 ticketid: 1582097
 res_type: kb
 ---

@@ -4,7 +4,7 @@ description: Describes how you can ensure that the content of the control doesn'
 type: how-to
 page_title: Limit content length of RadRichTextBox
 slug: kb-richtextbox-limit-text-size
-tags: limit,text,size,input,no scroll
+tags: radrichtextbox, limit,text,size,input,no scroll
 ticketid: 1427848
 res_type: kb
 ---

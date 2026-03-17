@@ -5,7 +5,7 @@ type: how-to
 page_title: Hide the Linear Drop Visual in Telerik WPF ListBox
 slug: kb-listbox-hide-lineardropvisual
 position: 0
-tags: dragdrop
+tags: radlistbox, dragdrop
 ticketid: 1538096
 res_type: kb
 ---

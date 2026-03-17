@@ -5,7 +5,7 @@ type: how-to
 page_title: Undock a Whole PaneGroup Programmatically
 slug: kb-docking-float-whole-group-in-code
 position: 0
-tags: docking, float, radpanegroup, code, programmatically, undock
+tags: raddocking, docking, float, radpanegroup, code, programmatically, undock
 ticketid: 1479470
 res_type: kb
 ---

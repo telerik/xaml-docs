@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Color Only Found Text Background in RadGridView
 slug: kb-gridview-customize-search-as-you-type-highlighting
 position: 0
-tags: 
+tags: radgridview, 
 ticketid: 1404829
 res_type: kb
 ---

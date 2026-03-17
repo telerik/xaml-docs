@@ -5,7 +5,7 @@ description: How to use RadHighlightTextBlock control in an RadAutoSuggestBox.
 type: how-to
 slug: kb-highlighttextblock-integration-with-radautosuggestbox
 position: 0
-tags: highlighttextblock, integration, radautosuggestbox
+tags: radhighlighttextblock, highlighttextblock, integration, radautosuggestbox
 res_type: kb
 ---
 

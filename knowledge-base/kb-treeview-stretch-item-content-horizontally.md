@@ -5,7 +5,7 @@ description: Stretching Telerik RadTreeView item's content horizontally to fill 
 type: how-to
 slug: kb-treeview-stretch-item-content-horizontally
 position: 0
-tags: horizontal,alignment,stretch,fill,full,size
+tags: radtreeview, horizontal,alignment,stretch,fill,full,size
 ticketid: 1419373
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Move the exporting to a file execution of an Excel data to new thread in RadGridView
 slug: kb-gridview-separate-excel-export-execution
 position: 0
-tags: performance,export,excel,speed
+tags: radgridview, performance,export,excel,speed
 ticketid: 1575027
 res_type: kb
 ---

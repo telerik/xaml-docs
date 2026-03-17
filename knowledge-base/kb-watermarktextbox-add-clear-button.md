@@ -5,7 +5,7 @@ page_title: Button to Clear The Text of the WatermarkTextBox Control
 type: how-to
 slug: kb-watermarktextbox-add-clear-button
 position: 0
-tags: watermarktextbox, add, clear, button
+tags: radwatermarktextbox, watermarktextbox, add, clear, button
 ticketid: 1581294
 res_type: kb
 ---

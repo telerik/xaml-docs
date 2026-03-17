@@ -5,7 +5,7 @@ type: how-to
 page_title: Autosize RadRibbonView height to selected tab elements 
 slug: kb-ribbonview-contentheight-nan-autofit
 position: 12
-tags: autofit,nan,contentheight
+tags: radribbonview, autofit,nan,contentheight
 ticketid: 1388550
 ---
 

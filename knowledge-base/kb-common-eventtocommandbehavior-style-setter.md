@@ -4,7 +4,7 @@ description: How to add  EventBinding objects to EventToCommandBehavior in a WPF
 type: how-to
 page_title: Adding Event to Command Behavior's EventBindings for a Control in Style Setter
 slug: kb-common-eventtocommandbehavior-style-setter
-tags: radchartview, wpf, mvvm, cartesiangridlineannotation, mouseevents
+tags: common, wpf, mvvm, cartesiangridlineannotation, mouseevents
 res_type: kb
 ticketid: 1674339
 ---

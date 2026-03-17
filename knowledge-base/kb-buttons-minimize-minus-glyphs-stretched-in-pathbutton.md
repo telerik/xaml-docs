@@ -5,7 +5,7 @@ description: The Minimize and Minus font glyphs are stretched when hosted in Pat
 type: troubleshooting
 slug: kb-buttons-minimize-minus-glyphs-stretched-in-pathbutton
 position: 0
-tags: glyph,icon,stretched
+tags: radbuttons, glyph,icon,stretched
 ticketid: 1459222
 res_type: kb
 ---

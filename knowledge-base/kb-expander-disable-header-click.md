@@ -5,7 +5,7 @@ type: how-to
 page_title: Cancel the Action of the RadExpander Header upon Button Click 
 slug: kb-expander-disable-header-click
 position: 0
-tags: expander, disable, click, header
+tags: radexpander, expander, disable, click, header
 ticketid: 1452587
 res_type: kb
 ---

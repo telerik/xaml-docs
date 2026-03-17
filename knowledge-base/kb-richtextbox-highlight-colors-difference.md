@@ -5,7 +5,7 @@ page_title: Difference of Highlight Colors in Ms Word and RadRichTextBox
 type: how-to
 slug: kb-radrichtextbox-difference-in-the-highlighted-colors
 position: 0
-tags: RadRichTextBox, highlight, colors, color picker, picker, selector, color selector
+tags: radrichtextbox, highlight, colors, color picker, picker, selector, color selector
 res_type: kb
 ticketid: 1023476
 ---

@@ -5,7 +5,7 @@ description: Change where the Popup menus appear on the screen by setting System
 type: how-to
 slug: kb-common-change-windows-handedness-settings
 position: 0
-tags: windows,tablet,settings,left-handed,right-handed,handedness,pc
+tags: common, windows,tablet,settings,left-handed,right-handed,handedness,pc
 ticketid: 1429407
 res_type: kb
 ---

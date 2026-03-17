@@ -5,7 +5,7 @@ description: How to convert the label values on the axis from standard numbers t
 type: how-to
 slug: kb-chartview-axis-label-number-suffix
 position: 0
-tags: axis,label,template,suffix,thousand,human,readable
+tags: radchartview, axis,label,template,suffix,thousand,human,readable
 ticketid: 1580349
 res_type: kb
 category: knowledge-base

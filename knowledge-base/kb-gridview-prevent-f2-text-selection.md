@@ -5,7 +5,7 @@ type: how-to
 page_title: Prevent F2 Key Text Selection When Cell is in Edit Mode
 slug: kb-gridview-prevent-f2-text-selection
 position: 0
-tags: preparecellforedit,custom,column
+tags: radgridview, preparecellforedit,custom,column
 ticketid: 1405699
 res_type: kb
 ---

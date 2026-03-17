@@ -5,7 +5,7 @@ type: howto
 page_title: Multiselection ComboBox column for RadGridView
 slug: kb-gridview-howto-create-multiselection-combobox-column
 position: 0
-tags: combobox,allowmultipleselection,editor
+tags: radgridview, combobox,allowmultipleselection,editor
 ticketid: 1410245
 res_type: kb
 ---

@@ -5,7 +5,7 @@ description: Use the DiagramConstants class to lower the minimum width and heigh
 type: how-to
 slug: kb-diagram-change-shape-minimum-size
 position: 0
-tags: minimum,size,15,diagram
+tags: raddiagram, minimum,size,15,diagram
 ticketid: 1428358
 res_type: kb
 ---

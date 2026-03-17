@@ -5,7 +5,7 @@ type: how-to
 page_title: Style the Thumbs for Resizing the Columns
 slug: kb-gridview-style-column-resizer
 position: 0
-tags: style, thumbs, columns, resizer, gridview
+tags: radgridview, style, thumbs, columns, resizer, gridview
 res_type: kb
 ---
 

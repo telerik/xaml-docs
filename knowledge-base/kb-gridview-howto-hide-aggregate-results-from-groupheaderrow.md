@@ -6,7 +6,7 @@ page_title: Remove Aggregate Results when RadGridView is grouped
 slug: kb-gridview-howto-hide-aggregate-results-from-groupheaderrow
 position: 0
 ticketid: 1404936
-tags: gridview, groupheaderrow, aggregateresults, filter, aggregateresultslist, hide
+tags: radgridview, groupheaderrow, aggregateresults, filter, aggregateresultslist, hide
 res_type: kb
 ---
 

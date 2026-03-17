@@ -5,7 +5,7 @@ description: Enable cross version support when using RadPersistenceFramework Iso
 type: how-to
 slug: kb-persistenceframework-allowcrossversion-isolatedstorageprovider
 position: 0
-tags: provider,allowcrossverion
+tags: radpersistenceframework, provider,allowcrossverion
 ticketid: 1422122
 res_type: kb
 ---

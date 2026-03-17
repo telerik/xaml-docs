@@ -5,7 +5,7 @@ type: how-to
 page_title: Enable the dropdown part when the CanExecute of the Command is False
 slug: kb-buttons-splitbutton-howto-bind-command-of-button-part
 position: 0
-tags: splitbutton, command, button, canexecute, disabled
+tags: radbuttons, splitbutton, command, button, canexecute, disabled
 ticketid: 1085596
 res_type: kb
 ---

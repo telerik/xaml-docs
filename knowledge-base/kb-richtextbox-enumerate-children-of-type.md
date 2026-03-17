@@ -5,7 +5,7 @@ type: how-to
 page_title: Enumerating Elements of the Same Type in RadDocument
 meta_title: Enumerating Elements of the Same Type in RadDocument
 slug: kb-richtextbox-enumerate-children-of-type
-tags: richtextbox, ui for wpf, image formatting, html, export, import
+tags: radrichtextbox, richtextbox, ui for wpf, image formatting, html, export, import
 res_type: kb
 ticketid: 1710278
 ---

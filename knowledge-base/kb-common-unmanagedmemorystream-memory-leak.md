@@ -4,7 +4,7 @@ description: Learn how to fix the issue of steady memory growth in RadGridView f
 type: troubleshooting
 page_title: UnmanagedMemoryStream Resources are not Released When Using Glyphs
 slug: kb-common-unmanagedmemorystream-memory-leak
-tags: wpf, memory leak, unmanaged memorystream, font reference, workaround
+tags: common, wpf, memory leak, unmanaged memorystream, font reference, workaround
 res_type: kb
 ticketid: 1659703
 ---

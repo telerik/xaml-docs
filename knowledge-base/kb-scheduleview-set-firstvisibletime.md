@@ -5,7 +5,7 @@ description: How to change the first FirstVisibleTime of RadScheduleView when th
 type: how-to
 slug: kb-scheduleview-set-firstvisibletime
 position: 0
-tags: firstvisibletime,definition
+tags: radscheduleview, firstvisibletime,definition
 ticketid: 1418968
 res_type: kb
 ---

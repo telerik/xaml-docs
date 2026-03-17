@@ -5,7 +5,7 @@ type: how-to
 page_title: Create a group of one item
 slug: kb-map-howto-show-clustering-bubble-for-single-item
 position: 0
-tags: map, clustering, bubble, one, single, item
+tags: radmap, map, clustering, bubble, one, single, item
 ticketid: 1408027
 res_type: kb
 ---

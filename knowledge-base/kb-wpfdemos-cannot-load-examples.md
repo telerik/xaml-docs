@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Run Progress WPF Controls Demos Doesn't Load Any Examples .
 slug: kb-wpfdemos-cannot-load-examples.md
 position: 0
-tags: controls, demos
+tags: common, controls, demos
 ticketid: 1615001
 res_type: kb
 ---

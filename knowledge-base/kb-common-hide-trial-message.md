@@ -5,7 +5,7 @@ page_title: Still Showing the Trial Message Box After Updating to Licensed Assem
 type: troubleshooting
 slug: kb-common-hide-trial-message
 position: 0
-tags: trial, message, upgrade, dll
+tags: common, trial, message, upgrade, dll
 ticketid: 1495519
 res_type: kb
 ---

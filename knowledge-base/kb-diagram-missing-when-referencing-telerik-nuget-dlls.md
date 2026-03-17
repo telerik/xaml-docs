@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Missing element if reference UI for WPF dlls from nuget manager
 slug: kb-diagram-missing-when-referencing-telerik-nuget-dlls
 position: 0
-tags: nuget, manager, missing, noxaml
+tags: raddiagram, nuget, manager, missing, noxaml
 ticketid: 1399337
 res_type: kb
 ---

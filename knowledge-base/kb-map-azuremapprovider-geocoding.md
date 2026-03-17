@@ -4,7 +4,7 @@ page_title: Searching Locations Using Azure Maps Services
 description: This article showcases how to achieve geocoding (searching) using the Azure Maps services.
 type: how-to
 slug: kb-map-azuremapprovider-geocoding
-tags: map, azure, search, geocoding, Azure Maps, provider
+tags: radmap, map, azure, search, geocoding, Azure Maps, provider
 res_type: kb
 ---
 

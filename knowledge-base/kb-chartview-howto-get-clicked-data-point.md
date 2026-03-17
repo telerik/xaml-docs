@@ -5,7 +5,7 @@ page_title: Execute action on mouse down on chart data point element
 type: how-to
 slug: kb-chartview-howto-get-clicked-data-point
 position: 0
-tags: clicked, datapoint, chart
+tags: radchartview, clicked, datapoint, chart
 ticketid: 1470708
 res_type: kb
 ---

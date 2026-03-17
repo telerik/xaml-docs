@@ -5,7 +5,7 @@ type: how-to
 page_title: Dynamically Update the Culture of the FindDialog of RadPdfViewer
 slug: kb-pdfviewer-change-localization-at-runtime
 position: 0
-tags: PdfViewer, FindDialog, localization, runtime
+tags: radpdfviewer, FindDialog, localization, runtime
 ticketid: 1619188
 res_type: kb
 ---

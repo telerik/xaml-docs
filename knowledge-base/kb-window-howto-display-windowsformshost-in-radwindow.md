@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Display WinForms controls in RadWindow
 slug: kb-window-howto-display-windowsformshost-in-radwindow
 position: 0
-tags: windowsformshost,radwindow,display
+tags: radwindow, windowsformshost,radwindow,display
 ticketid: 1130704
 res_type: kb
 ---

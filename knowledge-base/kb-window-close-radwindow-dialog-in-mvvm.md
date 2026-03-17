@@ -5,7 +5,7 @@ type: how-to
 page_title: Using button command to close a RadWindow dialog in MVVM.
 slug: kb-window-close-radwindow-dialog-in-mvvm
 position: 0
-tags: window,close, mvvm, button, custom, template
+tags: radwindow, window,close, mvvm, button, custom, template
 ticketid: 313798
 res_type: kb
 ---

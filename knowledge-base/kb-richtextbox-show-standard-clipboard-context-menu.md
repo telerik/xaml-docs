@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Modify the ContextMenu of RadRichTextBox
 meta_title: How to Show Standard Clipboard Context Menu in RadRichTextBox
 slug: kb-richtextbox-show-standard-clipboard-context-menu
-tags: richtextbox, readonly, contextmenu, copy, clipboard, ui-for-wpf
+tags: radrichtextbox, richtextbox, readonly, contextmenu, copy, clipboard, ui-for-wpf
 res_type: kb
 ticketid: 1710116
 ---

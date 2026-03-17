@@ -5,7 +5,7 @@ description: Begin resizing a shape with SizeAll cursor before the mouse enterin
 type: how-to
 slug: kb-diagram-start-resizing-shape-before-cursor-enter
 position: 0
-tags: resize,enter,shape,mouse,cursor,powerpoint
+tags: raddiagram, resize,enter,shape,mouse,cursor,powerpoint
 ticketid: 1427251
 res_type: kb
 ---

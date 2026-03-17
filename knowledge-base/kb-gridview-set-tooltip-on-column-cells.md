@@ -5,7 +5,7 @@ page_title: Display a ToolTip on a Column's Cells
 type: how-to
 slug: kb-gridview-set-tooltip-on-column-cells
 position: 0
-tags: gridview, image, column, tooltip, tooltiptemplate
+tags: radgridview, image, column, tooltip, tooltiptemplate
 res_type: kb
 ticketid: 1655547
 ---

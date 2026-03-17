@@ -5,7 +5,7 @@ type: how-to
 page_title: Listen for Tab Rearrange on DragInitialize
 slug: kb-tabcontrol-listen-for-tab-reorder-on-drag-started
 position: 0
-tags: start,drag,drop,dragdropmanager
+tags: radtabcontrol, start,drag,drop,dragdropmanager
 ticketid: 1403194
 res_type: kb
 ---

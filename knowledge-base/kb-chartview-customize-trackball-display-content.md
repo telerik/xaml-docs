@@ -5,7 +5,7 @@ description: How to modify the display content of ChartTrackBallBehavior's Track
 type: how-to
 slug: kb-chartview-customize-trackball-display-content
 position: 0
-tags: behavior,trackball
+tags: radchartview, behavior,trackball
 ticketid: 1416654
 res_type: kb
 ---

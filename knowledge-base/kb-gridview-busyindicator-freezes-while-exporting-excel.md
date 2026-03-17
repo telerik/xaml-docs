@@ -5,7 +5,7 @@ page_title: RadBusyIndicator animation stops during exporting to file
 type: troubleshooting
 slug: kb-gridview-busyindicator-freezes-while-exporting-excel
 position: 0
-tags: xlsx, excel, exporttoworkbook, backgroundworker
+tags: radgridview, radbusyindicator, xlsx, excel, exporttoworkbook, backgroundworker
 ticketid: 1388486
 res_type: kb
 ---

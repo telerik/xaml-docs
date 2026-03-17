@@ -5,7 +5,7 @@ type: how-to
 page_title: How To Prevent Modification of Appointments 
 slug: kb-scheduleview-howto-make-readonly
 position: 0
-tags: ScheduleView, editing, resizing, deleting, dragging, saving, disable, readonly
+tags: radscheduleview, ScheduleView, editing, resizing, deleting, dragging, saving, disable, readonly
 ticketid: 1401926
 res_type: kb
 ---

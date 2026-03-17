@@ -6,7 +6,7 @@ type: how-to
 slug: kb-syntaxeditor-how-to-create-custom-tooltip-layer
 position: 0
 ticketid: 1553912
-tags: change, tooltip, showduration, indefinitely, custom, uilayer, tagger, uilayersbuilder
+tags: radsyntaxeditor, change, tooltip, showduration, indefinitely, custom, uilayer, tagger, uilayersbuilder
 res_type: kb
 ---
 

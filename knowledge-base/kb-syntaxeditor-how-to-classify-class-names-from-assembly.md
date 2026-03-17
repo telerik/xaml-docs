@@ -5,7 +5,7 @@ description: Display the Class Names from an Assembly with a Different Color.
 type: how-to
 slug: kb-syntaxeditor-how-to-classify-class-names-from-assembly
 position: 0
-tags: color, class, names, assembly, csharp, tagger
+tags: radsyntaxeditor, color, class, names, assembly, csharp, tagger
 ticketid: 
 res_type: kb
 ---

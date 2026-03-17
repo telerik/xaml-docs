@@ -5,7 +5,7 @@ page_title: Disable Scroll Jumping in Grouping and ScrollViewer.CanContentScroll
 type: troubleshooting
 slug: kb-listbox-grouping-unwanted-scroll
 position: 0
-tags: wpf, listbox, cancontentscroll, false, group
+tags: radlistbox, wpf, listbox, cancontentscroll, false, group
 res_type: kb
 ---
 

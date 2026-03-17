@@ -4,7 +4,7 @@ description: Keep the selection in view when items are added or removed.
 type: how-to
 page_title: Keep Selected Item in Viewport when Collection Changes
 slug: kb-gridview-howto-keep-selected-item-in-view
-tags: selected, item, viewport, keep, collection, change
+tags: radgridview, selected, item, viewport, keep, collection, change
 ticketid: 1531899
 res_type: kb
 ---

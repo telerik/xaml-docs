@@ -5,7 +5,7 @@ description: Replace the show editor action executed when the modal editor of th
 type: how-to
 slug: kb-propertygrid-override-showeditorcommand
 position: 0
-tags: override,command,showeditor
+tags: radpropertygrid, override,command,showeditor
 ticketid: 1579254
 res_type: kb
 ---

@@ -5,7 +5,7 @@ page_title: Use Different Color for the Highlighted Items of RadGanttView
 type: how-to
 slug: kb-ganttview-change-the-highlighted-color
 position: 0
-tags: buttons, toggleswitchbutton, three state, tri-state, undefined, content, state
+tags: radganttview, buttons, toggleswitchbutton, three state, tri-state, undefined, content, state
 res_type: kb
 ticketid: 1649117
 ---

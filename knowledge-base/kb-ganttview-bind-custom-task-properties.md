@@ -4,7 +4,7 @@ page_title: How Use the Properties of a Custom Task in the EventContainer
 description: Binding a custom GanttTask's properties to those of the event container.
 type: how-to
 slug: kb-ganttview-bind-custom-task-properties
-tags: bind, custom, gantttask, properties, event, container
+tags: radganttview, bind, custom, gantttask, properties, event, container
 ticketid: 1428878
 res_type: kb
 ---

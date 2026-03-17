@@ -5,7 +5,7 @@ description: This article explains how to change the color of the drop preview l
 type: how-to
 slug: kb-dragdropmanager-change-drop-preview-line-color
 position: 0
-tags: drop line color, preview line color, preview line, drop preview line color, line color
+tags: dragdropmanager, drop line color, preview line color, preview line, drop preview line color, line color
 ticketid: 1537650
 res_type: kb
 ---

@@ -5,7 +5,7 @@ description: This article shows how to display the names of files in a tooltip.
 type: how-to
 slug: kb-filedialogs-display-tooltip-on-radlistboxitem
 position: 0
-tags: filedialogs, tooltip, file name
+tags: radfiledialogs, filedialogs, tooltip, file name
 ticketid: 1568955
 res_type: kb
 ---

@@ -4,7 +4,7 @@ description: How to pre-load the RadSpreadsheet control in order to load its WPF
 type: how-to
 page_title: Improve RadSpreadsheet Performance by Preloading the Associated XAML Resources
 slug: kb-spreadsheet-preload-resources
-tags: wpf, double-click, expand, collapse, spreadsheet,preload
+tags: radspreadsheet, wpf, double-click, expand, collapse, spreadsheet,preload
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ page_title: Replace Window Header Brush in Office2016 Theme
 type: how-to
 slug: kb-window-change-header-background
 position: 0
-tags: window,close, mvvm, button, custom, template
+tags: radwindow, window,close, mvvm, button, custom, template
 ticketid: 313798
 res_type: kb
 ---

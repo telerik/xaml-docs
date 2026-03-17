@@ -5,7 +5,7 @@ page_title: Text Input Disabled When the Undocked RadDocking Pane is Hosted in W
 type: troubleshooting
 slug: kb-docking-undock-pane-input-doesnt-work-in-winforms
 position: 0
-tags: keyboard,interoperability,modeless,keyboard
+tags: raddocking, keyboard,interoperability,modeless,keyboard
 ticketid: 1464649
 res_type: kb
 ---

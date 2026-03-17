@@ -4,7 +4,7 @@ description: Implement a context menu for TextBox elements inside the FilteringC
 type: how-to
 page_title: Showing a Context Menu for Elements Inside the FilteringControl 
 slug: kb-gridview-howto-add-context-menu-to-filteringcontrol
-tags: contextmenu, filteringcontrol
+tags: radgridview, contextmenu, filteringcontrol
 ticketid: 1122194
 res_type: kb
 ---

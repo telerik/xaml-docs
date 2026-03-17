@@ -5,7 +5,7 @@ description: How to display the ChartView trackball on right mouse button click.
 type: how-to
 slug: kb-chartview-display-trackball-right-click
 position: 0
-tags: mouse,click,press,trackball
+tags: radchartview, mouse,click,press,trackball
 ticketid: 1415833
 res_type: kb
 ---

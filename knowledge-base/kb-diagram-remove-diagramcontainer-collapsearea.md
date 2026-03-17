@@ -5,7 +5,7 @@ type: how-to
 page_title: Hide the collapse area of the RadDiagramContainerShape
 slug: kb-diagram-remove-diagramcontainer-collapsearea
 position: 0
-tags: diagram, container, diagramcontainershape, collapsearea, collapsedcontainer, collapsedcontent
+tags: raddiagram, diagram, container, diagramcontainershape, collapsearea, collapsedcontainer, collapsedcontent
 ticketid: 1403864
 res_type: kb
 ---

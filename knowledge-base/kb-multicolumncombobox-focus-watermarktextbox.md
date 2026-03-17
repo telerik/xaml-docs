@@ -5,7 +5,7 @@ page_title: Focus the Input Control of RadMultiColumnComboBox
 type: how-to
 slug: kb-multicolumncombobox-focus-radwatermarktextbox
 position: 0
-tags: multicolumncombobox, input, editor, focus, watermarktextbox
+tags: radmulticolumncombobox, multicolumncombobox, input, editor, focus, watermarktextbox
 res_type: kb
 ticketid: 1596801
 ---

@@ -5,7 +5,7 @@ description: Add a border of the tab item's drag visual while dragging from RadT
 type: how-to
 slug: kb-tabbedwindow-change-tab-appearance-when-dragging
 position: 0
-tags: tab,border,stroke 
+tags: radtabbedwindow, tab,border,stroke 
 ticketid: 1424240
 res_type: kb
 ---

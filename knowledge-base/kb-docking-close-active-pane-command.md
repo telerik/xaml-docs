@@ -5,7 +5,7 @@ type: how-to
 page_title: Using the ClosePane Command to Close the Currently Active Pane
 slug: kb-docking-close-active-pane-command
 position: 0
-tags: docking, close, active, pane, command
+tags: raddocking, docking, close, active, pane, command
 ticketid: 1350663
 res_type: kb
 ---

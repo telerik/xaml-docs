@@ -5,7 +5,7 @@ type: how-to
 page_title: Expand and Collapse Items with TreeListView's Public Methods
 slug: kb-treelistview-expand-collapse-items-through-methods
 position: 0
-tags: treeview, expand, collapse, methods, items, public, api
+tags: radtreelistview, treeview, expand, collapse, methods, items, public, api
 ticketid: 0
 res_type: kb
 ---

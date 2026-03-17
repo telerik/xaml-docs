@@ -4,7 +4,7 @@ description: Learn how to hide the Add and Remove buttons in the CollectionEdito
 type: how-to
 page_title: How to Hide CollectionEditor Add New and Delete Buttons in WPF
 slug: kb-collection-editor-hide-add-remove-buttons
-tags: collectioneditor, wpf, collectioneditor, visibility, buttons
+tags: radpropertygrid, collectioneditor, wpf, collectioneditor, visibility, buttons
 res_type: kb
 ticketid: 1682419
 ---

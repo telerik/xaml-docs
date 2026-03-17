@@ -5,7 +5,7 @@ type: how-to
 page_title: Add RadContextMenu in RadGanttView EventContainer elements
 slug: kb-ganttview-add-contextmenu-for-event-containers
 position: 0
-tags: context,menu,event,container
+tags: radganttview, context,menu,event,container
 ticketid: 1428118
 res_type: kb
 ---

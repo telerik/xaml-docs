@@ -5,7 +5,7 @@ type: how-to
 page_title: Clear Empty Area on the Bottom of the Control
 slug: kb-propertygrid-remove-empty-space-on-bottom
 position: 
-tags: descriptionpanelvisibility,verticalalignment
+tags: radpropertygrid, descriptionpanelvisibility,verticalalignment
 ticketid: 1403141
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Show label connector only for certain datapoints.
 slug: kb-chartview-howto-conditionally-hide-label-connectors
 position: 0
-tags: hide, label, connector
+tags: radchartview, hide, label, connector
 ticketid: 1411891
 res_type: kb
 ---

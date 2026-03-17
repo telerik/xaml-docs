@@ -5,7 +5,7 @@ page_title: Properties Modifiable by the User that are Kept In a Separate Class 
 type: how-to
 slug: kb-common-singleton-pattern-binding-to-properties
 position: 0
-tags: wpf, 
+tags: common, wpf, 
 res_type: kb
 ticketid: 1642764
 ---

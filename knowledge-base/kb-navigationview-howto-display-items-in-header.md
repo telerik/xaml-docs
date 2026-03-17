@@ -4,7 +4,7 @@ description: Bind a collection of items to the pane header.
 type: how-to
 page_title: Bind a Collection of Items to the PaneHeader
 slug: kb-navigationview-howto-display-items-in-header
-tags: bind, collection, items, datasource, paneheader
+tags: radnavigationview, bind, collection, items, datasource, paneheader
 ticketid: 1430859
 res_type: kb
 ---

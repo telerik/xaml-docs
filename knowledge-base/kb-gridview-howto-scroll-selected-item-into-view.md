@@ -5,7 +5,7 @@ type: how-to
 page_title: Bring selected object in code to the top 
 slug: kb-gridview-howto-scroll-selected-item-into-view
 position: 1
-tags: scroll, selected, item, bring, top
+tags: radgridview, scroll, selected, item, bring, top
 ticketid: 1107805
 res_type: kb
 ---

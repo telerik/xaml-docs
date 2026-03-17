@@ -5,7 +5,7 @@ description: The SelectedItem property of the DataFormComboBoxField is set to nu
 type: troubleshooting
 slug: kb-dataform-comboboxfield-null-selection
 position: 0
-tags: kb
+tags: raddataform,
 ticketid: 1549500
 res_type: kb
 ---

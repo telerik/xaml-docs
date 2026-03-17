@@ -5,7 +5,7 @@ type: how-to
 page_title: Remove the Background of RadDocking's Pane
 slug: kb-docking-howto-set-pane-background-to-transparent
 position: 0
-tags: pane, transparent, background, docking
+tags: raddocking, pane, transparent, background, docking
 ticketid: 1426047
 res_type: kb
 ---

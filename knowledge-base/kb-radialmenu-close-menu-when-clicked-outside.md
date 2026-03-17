@@ -5,7 +5,7 @@ type: how-to
 page_title: Hide RadRadialMenu if you click outside
 slug: kb-radialmenu-close-menu-when-clicked-outside
 position: 0
-tags: RadialMenuCommands, MouseLeftButtonDown, RadialContextMenu
+tags: radradialmenu, RadialMenuCommands, MouseLeftButtonDown, RadialContextMenu
 ticketid: 1412949
 res_type: kb
 ---

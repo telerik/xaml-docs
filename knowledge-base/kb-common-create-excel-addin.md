@@ -5,7 +5,7 @@ page_title: Telerik UI for WPF Integration With Microsoft VSTO Templates
 type: how-to
 slug: kb-common-create-excel-addin
 position: 0
-tags: excel, addin, wpf, vsto
+tags: common, excel, addin, wpf, vsto
 res_type: kb
 ticketid: 1597957
 ---

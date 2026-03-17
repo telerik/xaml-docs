@@ -5,7 +5,7 @@ type: how-to
 page_title: Create consistent display with RadComboBox.
 slug: kb-multicolumncombobox-howto-remove-selection-box
 position: 0
-tags: mccb, multicolumncombobox, selectionbox, radcombobox, selecteditem, selection, consistent, remove, close, button
+tags: radmulticolumncombobox, mccb, multicolumncombobox, selectionbox, radcombobox, selecteditem, selection, consistent, remove, close, button
 ticketid: 1382797
 res_type: kb
 ---

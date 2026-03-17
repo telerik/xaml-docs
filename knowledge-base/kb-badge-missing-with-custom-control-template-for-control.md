@@ -5,7 +5,7 @@ description: The RadBadge is not present when a control has a custom control tem
 type: how-to
 slug: kb-badge-missing-with-custom-control-template-for-control
 position: 0
-tags: badge, missing, control template,
+tags: radbadge, badge, missing, control template,
 ticketid: 1588541
 res_type: kb
 ---

@@ -4,7 +4,7 @@ description: How to change the date format used for the RadDatePicker's selected
 type: how-to
 page_title: Customize the DateTime Format of the Selected Date in RadDatePicker 
 slug: kb-datepicker-set-date-format
-tags: raddatepicker, wpf, date format, cultureinfo, datetimeformat
+tags: raddatetimepicker, raddatepicker, wpf, date format, cultureinfo, datetimeformat
 res_type: kb
 ticketid: 1672177
 ---

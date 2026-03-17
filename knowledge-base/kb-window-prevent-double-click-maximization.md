@@ -5,7 +5,7 @@ description: When the title bar of the RadWindow control is double-clicked, it g
 type: how-to
 slug: kb-window-prevent-double-click-maximization
 position: 0
-tags: window, maximization, double-click
+tags: radwindow, window, maximization, double-click
 ticketid: 1539451
 res_type: kb
 ---

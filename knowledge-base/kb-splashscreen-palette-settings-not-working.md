@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Palette Property Changes not Applied When Open SplashScreen App OnStartup
 slug: kb-splashscreen-palette-settings-not-working
 position: 0
-tags: splashscreen,palette,settings,brush,color,accent,thread,async
+tags: radsplashscreen, splashscreen,palette,settings,brush,color,accent,thread,async
 ticketid: 1499588
 res_type: kb
 ---

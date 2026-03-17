@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Expanding and Collapsing Groups After New Items are Added Cause the RadTimeline to Show No Items
 slug: kb-timeline-expand-collapse-groups-no-items
 position: 0
-tags: expand,collapse,grouping,timelineitemgroupcontrol
+tags: radtimeline, expand,collapse,grouping,timelineitemgroupcontrol
 ticketid: 1401798
 res_type: kb
 ---

@@ -4,7 +4,7 @@ description: How to automatically remove connections in RadDiagram when deleting
 type: how-to
 page_title: Delete RadDiagramConnections When Removing Shapes in RadDiagram
 slug: kb-diagram-remove-connections-on-item-deletion
-tags: rad-diagram, wpf, remove, connections, item, deletion
+tags: raddiagram, rad-diagram, wpf, remove, connections, item, deletion
 res_type: kb
 ticketid: 1668052
 ---

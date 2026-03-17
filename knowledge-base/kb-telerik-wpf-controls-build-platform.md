@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Setting the x64 build mode the designer does not display correctly the controls
 slug: kb-telerik-wpf-controls-build-platform
 position: 0
-tags: x64, build, platform, designer, display, telerik, any cpu, x84
+tags: common, x64, build, platform, designer, display, telerik, any cpu, x84
 ticketid: 1401676
 res_type: kb
 ---

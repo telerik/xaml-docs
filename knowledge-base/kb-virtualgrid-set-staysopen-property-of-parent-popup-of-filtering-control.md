@@ -5,7 +5,7 @@ page_title: Set FilteringControl Parent Popup StaysOpen Property
 type: how-to
 slug: kb-virtualgrid-filteringcontrol-parent-popup-staysopen
 position: 0
-tags: virtualgrid, filteringcontrol, parent, popup, staysopen
+tags: radvirtualgrid, virtualgrid, filteringcontrol, parent, popup, staysopen
 ticketid: 1617868
 res_type: kb
 ---

@@ -5,7 +5,7 @@ description: Avoid pixelated or distorted pixels rendering when using Telerik WP
 type: how-to
 slug: kb-buttons-distorted-or-pixelated-buttons
 position: 0
-tags: distorted, pixelated, DELL, buttons
+tags: radbuttons, distorted, pixelated, DELL, buttons
 ticketid: 1544097
 res_type: kb
 ---

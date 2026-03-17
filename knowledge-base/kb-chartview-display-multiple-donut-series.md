@@ -5,7 +5,7 @@ type: how-to
 page_title: Plot Multiple Donuts
 slug: kb-chartview-display-multiple-donut-series
 position: 0
-tags: pie, douhgnut, visualization, data, radpiechart
+tags: radchartview, pie, douhgnut, visualization, data, radpiechart
 ticketid: 831081
 res_type: kb
 ---

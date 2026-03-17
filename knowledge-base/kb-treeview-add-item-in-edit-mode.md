@@ -5,7 +5,7 @@ type: how-to
 page_title: Add new RadTreeViewItem in edit mode
 slug: kb-treeview-add-item-in-edit-mode
 position: 0
-tags: radtreeviewitem, add, edit, mode
+tags: radtreeview, radtreeviewitem, add, edit, mode
 ticketid: 1443085
 res_type: kb
 ---

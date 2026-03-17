@@ -5,7 +5,7 @@ type: how-to
 page_title: Get Rid of the Margin around the RadPaneGroup and DocumentHost
 slug: kb-docking-remove-space-around-panegroup-documenthost
 position: 0
-tags: remove, padding, margin, panegroup, documenthost, space, around
+tags: raddocking, remove, padding, margin, panegroup, documenthost, space, around
 ticketid: 1494467
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add Custom Arrow Shapes to RadImageEditor
 meta_title: How to Add Custom Arrow Shapes to RadImageEditorUI
 slug: kb-imageeditor-add-arrow-shapes
-tags: imageeditor, richtextbox, imageeditordialog, custom-shapes, arrow-shapes, radimageeditorui, shape-tool
+tags: radimageeditor, richtextbox, imageeditordialog, custom-shapes, arrow-shapes, radimageeditorui, shape-tool
 res_type: kb
 ticketid: 1674511
 ---

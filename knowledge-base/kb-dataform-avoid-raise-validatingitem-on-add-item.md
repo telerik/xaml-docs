@@ -5,7 +5,7 @@ description: Create custom command provider to avoid calling ValidatingItem even
 type: how-to
 slug: kb-dataform-avoid-raise-validatingitem-on-add-item
 position: 0
-tags: validatingitem,commandprovider
+tags: raddataform, validatingitem,commandprovider
 ticketid: 1418079
 res_type: kb
 ---

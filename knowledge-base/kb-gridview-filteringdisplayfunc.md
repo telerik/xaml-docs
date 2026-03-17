@@ -5,7 +5,7 @@ page_title: Modify the Distinct Values of a Column of RadGridView
 type: how-to
 slug: kb-gridview-filteringdisplayfunc
 position: 0
-tags: gridview, distinct, custom distinct values, distinct values, filtering
+tags: radgridview, distinct, custom distinct values, distinct values, filtering
 res_type: kb
 ticketid: 1630523
 ---

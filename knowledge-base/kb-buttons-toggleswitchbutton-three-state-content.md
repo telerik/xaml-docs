@@ -5,7 +5,7 @@ page_title: Display Content When RadToggleSwitchButton's IsChecked property is n
 type: how-to
 slug: kb-buttons-toggleswitchbutton-three-state-content
 position: 0
-tags: buttons, toggleswitchbutton, three state, tri-state, undefined, content, state
+tags: radbuttons, buttons, toggleswitchbutton, three state, tri-state, undefined, content, state
 res_type: kb
 ticketid: 1649117
 ---

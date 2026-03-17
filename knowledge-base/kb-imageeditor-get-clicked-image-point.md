@@ -5,7 +5,7 @@ type: how-to
 page_title: Get Clicked Point on the ImageEditor Image Control
 slug: kb-imageeditor-get-clicked-image-point
 position: 0
-tags: imageeditor
+tags: radimageeditor
 ticketid: 1531598
 res_type: kb
 ---

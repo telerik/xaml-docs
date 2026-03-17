@@ -5,7 +5,7 @@ type: how-to
 page_title: Sending a clickable hyperlink in RadChat
 slug: kb-chat-howto-display-hyperlink-html
 position: 0
-tags: chat, link, hyperlink, html, conversational, ui
+tags: radchat, chat, link, hyperlink, html, conversational, ui
 ticketid: 1465210
 res_type: kb
 ---

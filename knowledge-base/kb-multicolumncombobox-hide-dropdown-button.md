@@ -5,7 +5,7 @@ page_title: RadMultiColumnComboBox without drop-down button
 type: how-to
 slug: kb-multicolumncombobox-hide-drop-down-button
 position: 0
-tags: multicolumncombobox, drop-down, icon, button, menu
+tags: radmulticolumncombobox, multicolumncombobox, drop-down, icon, button, menu
 res_type: kb
 ticketid: 1596801
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Hide the PanZoomBar ScrollBar of RadChartView axis
 slug: kb-chartview-hide-axis-scrollbar
 position: 0
-tags: style,setter,panzoombar,scrollviewer,visibility
+tags: radchartview, style,setter,panzoombar,scrollviewer,visibility
 ticketid: 1404933
 res_type: kb
 ---

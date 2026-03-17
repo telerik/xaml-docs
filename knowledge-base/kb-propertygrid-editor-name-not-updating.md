@@ -5,7 +5,7 @@ page_title: Data binding collection editor name field to a property from view mo
 type: troubleshooting
 slug: kb-propertygrid-editor-name-not-updating
 position: 0
-tags: 
+tags: radpropertygrid,
 ticketid: 1398060
 res_type: kb
 ---

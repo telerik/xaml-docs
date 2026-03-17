@@ -5,7 +5,7 @@ type: how-to
 page_title: Avoid First Axis Label to be Rendered Outside of the Plot Area Clip of RadChartView.
 slug: kb-chartview-clip-first-label-to-plotarea
 position: 0
-tags: axis, chart pane, label, cartesianchart
+tags: radchartview, axis, chart pane, label, cartesianchart
 ticketid: 1620645
 res_type: kb
 ---

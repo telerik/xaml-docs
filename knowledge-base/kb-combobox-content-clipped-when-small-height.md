@@ -5,7 +5,7 @@ description: The content control inside of RadComboBox gets clipped when the Hei
 type: troubleshooting
 slug: kb-combobox-content-clipped-when-small-height
 position: 0
-tags: content,height,minheight
+tags: radcombobox, content,height,minheight
 ticketid: 1414330
 res_type: kb
 ---

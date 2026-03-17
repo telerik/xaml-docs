@@ -5,7 +5,7 @@ page_title: Cancel Multiselection Appointments in ScheduleView
 type: how-to
 slug: kb-scheduleview-disable-multiple-selection
 position: 0
-tags: getselectedappointments,appointmentselectionbehavior
+tags: radscheduleview, getselectedappointments,appointmentselectionbehavior
 ticketid: 1457125
 res_type: kb
 ---

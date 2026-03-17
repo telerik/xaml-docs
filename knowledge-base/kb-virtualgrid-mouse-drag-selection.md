@@ -5,7 +5,7 @@ page_title: Add Cells to the Selection on Mouse Drag Between Two Cells
 type: how-to
 slug: kb-virtualgrid-mouse-drag-selection
 position: 0
-tags: mouse, drag, select, cell, region
+tags: radvirtualgrid, mouse, drag, select, cell, region
 ticketid: 1577425
 res_type: kb
 ---

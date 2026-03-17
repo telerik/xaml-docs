@@ -5,7 +5,7 @@ type: how-to
 page_title: Change Background Color of Found GridViewCell When Search as you Type
 slug: kb-gridview-remove-search-cell-background
 position: 0
-tags: showsearchpanel,controltemplate,extract
+tags: radgridview, showsearchpanel,controltemplate,extract
 ticketid: 1404829
 res_type: kb
 ---

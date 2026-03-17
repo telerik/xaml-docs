@@ -4,7 +4,7 @@ description: Bring the RadGridView selected item into view programmatically
 type: how-to
 page_title: Scroll Automatically to the Selected Row in RadGridView 
 slug: kb-gridview-scroll-to-selection
-tags: scroll,bring,into,view,selection
+tags: radgridview, scroll,bring,into,view,selection
 res_type: kb
 ---
 

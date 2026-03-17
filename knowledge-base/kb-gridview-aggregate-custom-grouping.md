@@ -5,7 +5,7 @@ page_title: Set Aggregate Functions On Generic Group Descriptors
 type: how-to
 slug: kb-gridview-aggregate-custom-grouping
 position: 0
-tags: gridview, custom grouping, aggregate, function, groupdescriptor
+tags: radgridview, gridview, custom grouping, aggregate, function, groupdescriptor
 ticketid: 1697759
 res_type: kb
 ---

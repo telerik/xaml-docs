@@ -5,7 +5,7 @@ type: how-to
 page_title: How to show a multipage Tiff file in the RadPdfViewer
 slug: kb-pdfviewer-load-multipage-tiff
 position: 0
-tags: pdf, pdfviewer, tiff, tif
+tags: radpdfviewer, pdf, pdfviewer, tiff, tif
 ticketid: 1469284
 res_type: kb
 ---

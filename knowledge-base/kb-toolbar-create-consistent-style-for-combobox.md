@@ -5,7 +5,7 @@ description: Create a style for the RadComboBox element, present in a RadToolBar
 type: how-to
 slug: kb-toolbar-create-consistent-style-for-combobox
 position: 0
-tags: combobox, style, toolbar
+tags: radtoolbar, radcombobox, combobox, style, toolbar
 res_type: kb
 ---
 

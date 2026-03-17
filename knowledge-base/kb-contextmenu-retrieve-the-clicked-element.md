@@ -5,7 +5,7 @@ page_title: Retrieve the Item That is Clicked on When a RadContextMenu is Opened
 type: troubleshooting
 slug: kb-contextmenu-retrieve-clicked-item-when-opening
 position: 0
-tags: 
+tags: radcontextmenu,
 ticketid: 1613605
 res_type: kb
 ---

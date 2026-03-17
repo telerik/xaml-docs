@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Display DateTime Values as Formatted Strings in RadComboBox
 slug: kb-combobox-datetimevalues-to-formattedstrings
 position: 0
-tags: datetime, allowmultipleselection,multipleselectionboxtemplate
+tags: radcombobox, datetime, allowmultipleselection,multipleselectionboxtemplate
 ticketid: 1622029
 res_type: kb
 ---

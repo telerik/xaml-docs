@@ -5,7 +5,7 @@ page_title: Recurrence Dialog is Not Displayed When SelectedAppointment Is Bound
 type: troubleshooting
 slug: scheduleview-selected-appointment-recurrence
 position: 0
-tags: scheduleview, recurrence, dialog, selected, appointment
+tags: radscheduleview, scheduleview, recurrence, dialog, selected, appointment
 ticketid: 1698811
 res_type: kb
 ---

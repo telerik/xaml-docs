@@ -5,7 +5,7 @@ page_title: When Creating a Custom Style for the Middle Thumb It Is not Displaye
 type: troubleshooting
 slug: kb-slider-style-middle-thumb-style-manager
 position: 0
-tags: slider,middle,thumb,not,displayed,expected,correctly,setting,custom,style
+tags: radslider, slider,middle,thumb,not,displayed,expected,correctly,setting,custom,style
 res_type: kb
 ---
 

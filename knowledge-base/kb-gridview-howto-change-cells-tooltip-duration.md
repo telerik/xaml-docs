@@ -5,7 +5,7 @@ type: howto
 page_title: Change the timespan that a cell's tooltip is shown 
 slug: kb-gridview-howto-change-cells-tooltip-duration
 position: 0
-tags: cell, tooltip, duration, timespan
+tags: radgridview, cell, tooltip, duration, timespan
 ticketid: 1448661
 res_type: kb
 ---

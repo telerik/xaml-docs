@@ -5,7 +5,7 @@ type: how-to
 page_title: Acquire Old and New Parent of a GanttTask afer Drag-Drop
 slug: kb-ganttview-howto-get-old-new-parent-task-after-reorder
 position: 0
-tags: ganttview, get, 
+tags: radganttview, ganttview, get, 
 ticketid: 1401263
 res_type: kb
 ---

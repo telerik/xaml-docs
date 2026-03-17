@@ -4,7 +4,7 @@ description: This article shows how to create a system tray application with the
 type: how-to
 page_title: Showing an icon in the system tray area without opening a window
 slug: kb-notifyicon-how-to-show-icon-in-code
-tags: show, notify, icon, without, window, tray, system, application
+tags: radnotifyicon, show, notify, icon, without, window, tray, system, application
 ticketid: 1471469
 res_type: kb
 ---

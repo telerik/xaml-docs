@@ -5,23 +5,23 @@ type: how-to
 page_title: Modifying Validation Color for Telerik TextBox Elements
 meta_title: Modifying Validation Color for Telerik Input Control
 slug: kb-palette-change-validation-color
-tags: ui-for-wpf, windows8-theme, validation-color, implicit-styles, noxaml, palette, windows8palette
+tags: common, radcoloreditor, ui-for-wpf, windows8-theme, validation-color, implicit-styles, noxaml, palette, windows8palette
 res_type: kb
 ---
 
 ## Environment
 
 <table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>UI for WPF</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>Current</td>
-</tr>
-</tbody>
+	<tbody>
+		<tr>
+			<td>Product Version</td>
+			<td>2020.3.1020</td>
+		</tr>
+		<tr>
+			<td>Product</td>
+			<td>Telerik UI for WPF</td>
+		</tr>
+	</tbody>
 </table>
 
 ## Description

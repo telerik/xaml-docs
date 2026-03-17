@@ -5,7 +5,7 @@ page_title: Pasting Number String Containing Trailing or Leading White Spaces No
 type: howto
 slug: kb-numericupdown-paste-whitespaces-value
 position: 0 
-tags: trim,text
+tags: radnumericupdown, trim,text
 ticketid: 1502980
 res_type: kb
 ---

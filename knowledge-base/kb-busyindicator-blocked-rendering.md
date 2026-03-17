@@ -5,7 +5,7 @@ description: Show BusyIndicator on New UI Thread When the UI is Frozen
 type: how-to
 slug: kb-busyindicator-blocked-rendering
 position: 0
-tags: rendering,blocked,ui,another,thread,window,ui,busyindicator,busy
+tags: radbusyindicator, rendering,blocked,ui,another,thread,window,ui,busyindicator,busy
 res_type: kb
 ---
 

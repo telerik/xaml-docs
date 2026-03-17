@@ -5,7 +5,7 @@ description: How to catch the RadListBoxItem element under the mouse when drag o
 type: how-to
 slug: kb-listbox-get-listboxitem-under-mouse-when-dragover
 position: 0
-tags: drop,dragdropmanager,originalsource
+tags: radlistbox, drop,dragdropmanager,originalsource
 ticketid: 1429724
 res_type: kb
 ---

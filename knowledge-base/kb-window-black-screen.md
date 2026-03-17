@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Blank black screen displayed instead of RadWindow or RadRibbonWindow when NoXaml assemblies are used
 slug: kb-window-black-screen
 position: 0
-tags: performance,export,excel,speed
+tags: radwindow, performance,export,excel,speed
 ticketid: 1568347
 res_type: kb
 ---

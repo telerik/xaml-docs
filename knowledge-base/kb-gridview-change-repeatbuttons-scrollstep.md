@@ -5,7 +5,7 @@ type: how-to
 page_title: Scroll Manually on ScrollBar Track Click
 slug: kb-gridview-change-repeatbuttons-scrollstep 
 position: 0
-tags: scrollbar,repeatbutton,childrenoftype
+tags: radgridview, scrollbar,repeatbutton,childrenoftype
 ticketid: 1498849
 res_type: kb
 ---

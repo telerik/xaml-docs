@@ -5,7 +5,7 @@ type: how-to
 page_title: Add to the VisibleRange While Scrolling
 slug: kb-ganttview-howto-increase-visiblerange-while-scrolling
 position: 0
-tags: ganttview, infinite, scrolling, timeruler, horizontal
+tags: radganttview, ganttview, infinite, scrolling, timeruler, horizontal
 ticketid: 1426000
 res_type: kb
 ---

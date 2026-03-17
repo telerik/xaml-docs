@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Open RadFileDialogs in a MVVM-Friendly Manner
 slug: kb-filedialogs-open-dialogs-mvvm
 position: 0
-tags: filedialogs, open, radfiledialogs, mvvm, approach, viewmodel
+tags: radfiledialogs, filedialogs, open, radfiledialogs, mvvm, approach, viewmodel
 ticketid: 1480760
 res_type: kb
 ---

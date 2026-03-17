@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add alternation color to the drop-down items of RadComboBox
 slug: kb-combobox-howto-add-alternation-color
 position: 0
-tags: alternationcount, radcombobox, alternationindex
+tags: radcombobox, alternationcount, radcombobox, alternationindex
 ticketid: 1495739
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Switch Theme's Variation while Application Is Running
 slug: kb-theming-change-theme-variation-runtime
 position: 0
-tags: theming, change, theme, variation, runtime
+tags: style,theming, change, theme, variation, runtime
 ticketid: 1459581
 res_type: kb
 ---

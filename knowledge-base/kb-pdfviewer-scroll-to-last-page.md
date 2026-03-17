@@ -5,7 +5,7 @@ type: how-to
 page_title: Determine when the user reached the last page of a PDF document when scrolling
 slug: kb-pdfviewer-scroll-to-last-page
 position: 
-tags: pdf, scroll, page, UI, pdfviewer, scrollbar
+tags: radpdfviewer, pdf, scroll, page, UI, pdfviewer, scrollbar
 ticketid: 1565728
 res_type: kb
 ---

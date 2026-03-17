@@ -5,7 +5,7 @@ type: howto
 page_title: Create a column, which can display, edit and filter a property of type TimeSpan
 slug: kb-gridview-howto-create-timespanpickercolumn
 position: 0
-tags: timespan, picker, column, create
+tags: radgridview, radtimespanpicker, timespan, picker, column, create
 ticketid: 1428448
 res_type: kb
 ---

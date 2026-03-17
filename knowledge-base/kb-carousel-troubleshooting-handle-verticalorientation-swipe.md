@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Vertical Swipe Animation is Always in The Same Direction
 slug: kb-carousel-troubleshooting-handle-verticalorientation-swipe
 position: 0
-tags: carousel, swipe, vertical, orientation
+tags: radcarousel, carousel, swipe, vertical, orientation
 ticketid: 1452565
 res_type: kb
 ---

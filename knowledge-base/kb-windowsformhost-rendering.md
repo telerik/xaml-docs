@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Render Windows Form Host when the RibbonView content is minimized
 slug: kb-ribbonview-window-host-rendering
 position: 0
-tags: windowsform, ribbonview, rendering, collapsible
+tags: radwindow, windowsform, ribbonview, rendering, collapsible
 ticketid: 1603732
 res_type: kb
 ---

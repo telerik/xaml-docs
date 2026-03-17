@@ -5,7 +5,7 @@ type: how-to
 page_title: Allow Scrolling of an Arbitrary Number of Items with Page Up and Page Down
 slug: kb-autocompletebox-scroll-with-page-up-down
 position: 0
-tags: autocompletebox, scroll, multiple, number, items, page, up, down
+tags: radautocompletebox, autocompletebox, scroll, multiple, number, items, page, up, down
 ticketid: 1479153
 res_type: kb
 ---

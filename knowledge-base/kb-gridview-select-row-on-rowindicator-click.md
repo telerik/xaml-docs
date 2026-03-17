@@ -5,7 +5,7 @@ type: how-to
 page_title: Row selection on click over the button on the left side of the row.
 slug: kb-gridview-select-row-on-rowindicator-click
 position: 0
-tags: click,select,row,indicator
+tags: radgridview, click,select,row,indicator
 ticketid: 1571138
 res_type: kb
 ---

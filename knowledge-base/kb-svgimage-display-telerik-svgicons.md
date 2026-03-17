@@ -5,7 +5,7 @@ description: How to display SVG icons from the Telerik.SvgIcons NuGet package in
 type: how-to
 slug: kb-radsvgimage-display-telerik-svgicons
 position: 0
-tags: radsvgimage, icons, svg icons, svg, telerik, image, svg image
+tags: common, radsvgimage, icons, svg icons, svg, telerik, image, svg image
 res_type: kb
 ---
 

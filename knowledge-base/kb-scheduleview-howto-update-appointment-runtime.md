@@ -5,7 +5,7 @@ type: how-to
 page_title: Change the property of an appointment during runtime
 slug: kb-scheduleview-howto-update-appointment-runtime
 position: 0
-tags: cannot, update, change, appointment, property, radscheduleview
+tags: radscheduleview, cannot, update, change, appointment, property, radscheduleview
 ticketid: 1457064
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Pevent WPF to be Moved Outside of Specifid Boundaries
 meta_title: Restricting RadPane Movement Within Parent UserControl
 slug: kb-common-restrict-window-dragging
-tags: radpane, raddocking, restriction, movement, wpf, usercontrol
+tags: common, radpane, raddocking, restriction, movement, wpf, usercontrol
 res_type: kb
 ticketid: 1664752
 ---

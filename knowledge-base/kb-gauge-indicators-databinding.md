@@ -5,7 +5,7 @@ page_title: Setting the Indicators property of RadGauge
 type: how-to
 slug: kb-gauge-indicators-databinding
 position: 0
-tags: indicators, databinding, attached property
+tags: radgauge, indicators, databinding, attached property
 ticketid: 1449474
 res_type: kb
 ---

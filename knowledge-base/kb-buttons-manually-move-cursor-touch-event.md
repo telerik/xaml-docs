@@ -5,7 +5,7 @@ description: Manually move the cursor away when a button is touched via a touch 
 type: how-to
 slug: kb-buttons-manually-move-the-cursor
 position: 0
-tags: buttons, mouserover effect, cursor
+tags: radbuttons, buttons, mouserover effect, cursor
 ticketid: 1540434
 res_type: kb
 category: knowledge-base

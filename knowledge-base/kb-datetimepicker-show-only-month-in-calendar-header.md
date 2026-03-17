@@ -5,7 +5,7 @@ page_title: Show Selected Month in Calendar Part of DateTimePicker
 type: how-to
 slug: kb-datetimepicker-show-only-month-in-calendar-header
 position: 0
-tags: calendarstyle,selection
+tags: raddatetimepicker, calendarstyle,selection
 ticketid: 497440
 res_type: kb
 ---

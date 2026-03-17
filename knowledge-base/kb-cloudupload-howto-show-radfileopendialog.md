@@ -5,7 +5,7 @@ type: how-to
 page_title: Use a RadOpenFileDialog to Select the Files to be Uploaded
 slug: kb-cloudupload-howto-show-radfileopendialog
 position: 0
-tags: cloudupload, replace, openfiledialog
+tags: radcloudupload, cloudupload, replace, openfiledialog
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: Scrolling RadTileView in RadRibbonView Backstage
 slug: kb-tileview-display-scrollbars-in-ribbon-backstage
 position: 0
-tags: tileview, display, scrollbars, ribbon, backstage
+tags: radtileview, tileview, display, scrollbars, ribbon, backstage
 ticketid: 1444060
 res_type: kb
 ---

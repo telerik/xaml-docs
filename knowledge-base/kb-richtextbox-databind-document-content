@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Data Bind the Content of RadDocument of RadRichTextBox to the View Model in MVVM.
 slug: kb-richtextbox-databind-document-content
 position: 0
-tags: rtb,richtextbox,data,binding,mvvm,provider,import,export
+tags: radrichtextbox,rtb,data,binding,mvvm,provider,import,export
 res_type: kb
 ---
 

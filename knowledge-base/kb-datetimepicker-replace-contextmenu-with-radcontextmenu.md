@@ -5,7 +5,7 @@ type: how-to
 page_title: Show RadContextMenu rather than ContextMenu in RadDateTimePicker
 slug: kb-datetimepicker-replace-contextmenu-with-radcontextmenu
 position: 
-tags: contextmenu, radcontextmenu, raddatetimepicker, datetimepicker
+tags: raddatetimepicker, contextmenu, radcontextmenu, raddatetimepicker, datetimepicker
 ticketid: 1427861
 res_type: kb
 ---

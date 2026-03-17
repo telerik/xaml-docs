@@ -5,7 +5,7 @@ type: how-to
 page_title: Show 8-bit Grayscale BitmapImage Inside RadImageEditor
 slug: kb-imageeditor-show-8bit-grayscale-bitmap
 position: 
-tags: imageeditor, bitmapimage, 8-bit, 8 bit, grayscale
+tags: radimageeditor, imageeditor, bitmapimage, 8-bit, 8 bit, grayscale
 ticketid: 1457141
 res_type: kb
 ---

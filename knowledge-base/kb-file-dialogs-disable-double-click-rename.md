@@ -5,7 +5,7 @@ type: how-to
 page_title: Cancel Rename on Fast File Double Click in ExplorerControl
 slug: kb-file-dialogs-disable-double-click-rename
 position: 0
-tags: explorer,control,rename,double,click
+tags: radfiledialogs, explorer,control,rename,double,click
 ticketid: 1526045
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: howto
 page_title: Preserve the Selected Rows when a RadDataPager is Used
 slug: kb-gridview-howto-datapager-persist-selection
 position: 0
-tags: selection, datapager, persist, preserve, save
+tags: radgridview, raddatapager, selection, datapager, persist, preserve, save
 ticketid: 1449390
 res_type: kb
 ---

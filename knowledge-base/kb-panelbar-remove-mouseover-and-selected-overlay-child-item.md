@@ -5,7 +5,7 @@ type: how-to
 page_title: Clear MouseOver and Selected Backgrounds from Child Item
 slug: kb-panelbar-remove-mouseover-and-selected-overlay-child-item
 position: 0
-tags: hover,selection,overlay,background
+tags: radpanelbar, hover,selection,overlay,background
 ticketid: 1401889
 res_type: kb
 ---

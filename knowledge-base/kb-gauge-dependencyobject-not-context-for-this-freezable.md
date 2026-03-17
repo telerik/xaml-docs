@@ -5,7 +5,7 @@ type: how-to
 page_title: ArgumentException - The provided DependencyObject is not a context for this Freezable (RadGauge)
 slug: kb-gauge-dependencyobject-not-context-for-this-freezable
 position: 
-tags: 
+tags: radgauge, 
 ticketid: 1412188
 res_type: kb
 ---

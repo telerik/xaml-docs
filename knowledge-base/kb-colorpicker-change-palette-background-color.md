@@ -5,7 +5,7 @@ description: Replace ColorPicker Palette Header Background Color.
 type: how-to
 slug: kb-colorpicker-change-palette-background-color
 position: 0
-tags: color,brush,palette
+tags: radcolorpicker, color,brush,palette
 ticketid: 1427810
 res_type: kb
 ---

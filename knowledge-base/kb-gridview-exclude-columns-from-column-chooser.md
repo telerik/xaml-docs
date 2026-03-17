@@ -5,7 +5,7 @@ type: how-to
 page_title: Provide a Limited Set of Columns in the Control Panel
 slug: kb-gridview-exclude-columns-from-column-chooser
 position: 0
-tags: exclude,columns,control,panel,column,chooser
+tags: radgridview, exclude,columns,control,panel,column,chooser
 ticketid: 1407940
 res_type: kb
 ---

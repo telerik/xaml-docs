@@ -5,7 +5,7 @@ type: how-to
 page_title: Disallow Dropping of an Item from the LayoutControlToolBox
 slug: kb-layout-control-cancel-drag-operation-from-layoutcontroltoolbox
 position: 0
-tags: layoutcontrol, cancel, drag, operation, from, layoutcontroltoolbox
+tags: radlayoutcontrol, layoutcontrol, cancel, drag, operation, from, layoutcontroltoolbox
 ticketid: 1459654
 res_type: kb
 ---

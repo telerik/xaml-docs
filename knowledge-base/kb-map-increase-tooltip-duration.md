@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Set Tooltip Timeout Duration for Elements Added to RadMap
 slug: kb-map-increase-tooltip-duration
 position: 0
-tags: mapshapevisualizationcreated,setshowduration,tooltipservice
+tags: radmap, radtooltip, mapshapevisualizationcreated,setshowduration,tooltipservice
 ticketid: 1408026
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Style the Header Cells of a Column with an Applied Filter
 slug: kb-gridview-style-filtered-column-header-cell
 position: 0
-tags: gridview, style, highlight, header, cell, filtered, column
+tags: radgridview, style, highlight, header, cell, filtered, column
 ticketid: 1480644
 res_type: kb
 ---

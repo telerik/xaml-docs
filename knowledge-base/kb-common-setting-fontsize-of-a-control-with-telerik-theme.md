@@ -5,7 +5,7 @@ type: how-to
 page_title: Set a different FontSize which has a Telerik theme applied
 slug: kb-common-setting-fontsize-in-code-behind-for-a-telerik-theme
 position: 0
-tags: common, fontsize, fontfamily, theme, theming, palettes
+tags: styling-and-appearance, fontsize, fontfamily, theme, theming, palettes
 ticketid: 1470081
 res_type: kb
 ---

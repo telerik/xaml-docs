@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Error Template Position Outside of Window If Not Enough Space in Material Theme
 slug: kb-theming-change-errortemplate-material-theme
 position: 0
-tags: style,material,clip,tooltip
+tags: styling-and-appearance,material,clip,tooltip
 ticketid: 1504343
 res_type: kb
 ---

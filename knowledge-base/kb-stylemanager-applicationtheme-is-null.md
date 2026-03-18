@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Application Theme Cannot Be Set by StyleManager
 slug: kb-stylemanager-applicationtheme-is-null
 position: 0
-tags: style, stylemanager, applicationtheme, null, not, set
+tags: styling-and-appearance, stylemanager, applicationtheme, null, not, set
 ticketid: 1452402
 res_type: kb
 ---

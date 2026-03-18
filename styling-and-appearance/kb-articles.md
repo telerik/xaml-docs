@@ -1,6 +1,6 @@
 ---
-title: KB Articles
-page_title: KB Articles - Telerik UI for WPF
+title: Knowledge Base Articles
+page_title: Knowledge Base Articles - Telerik UI for WPF
 description: Custom examples built on top of the Telerik UI for WPF control.
 slug: style-kb-articles
 tags: kb, sdk, examples
@@ -14,11 +14,6 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
-|[How to Change the RadGlyph Icons' Color when Changing the Theme Variation During Runtime]({%slug kb-theming-change-icon-color-variation%})|
-|[How to Change Theme Variation During Runtime]({%slug kb-theming-change-theme-variation-runtime%})|
-|[How to Set Theme's Color Variation in Design Time]({%slug kb-themes-set-color-variation-design-time%})|
-|[StyleManager.ApplicationTheme is Null]({%slug kb-stylemanager-applicationtheme-is-null%})|
-|[Validation Tooltip Clipped When No Space]({%slug kb-theming-change-errortemplate-material-theme%})|
 
 ## See Also
 

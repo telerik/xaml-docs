@@ -5,7 +5,7 @@ type: how-to
 page_title: Switch RadGlyph Color when Changing Theme Variation During Runtime
 slug: kb-theming-change-icon-color-variation
 position: 0
-tags: style,theming, change, theme, variation, runtime, radglyph, color, icon
+tags: styling-and-appearance,theming, change, theme, variation, runtime, radglyph, color, icon
 res_type: kb
 ---
 

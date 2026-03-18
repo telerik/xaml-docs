@@ -2,7 +2,7 @@
 title: Knowledge Base Articles
 page_title: Knowledge Base Articles - Telerik UI for WPF
 description: Custom examples built on top of the Telerik UI for WPF control.
-slug: radtreelistview-kb-articles
+slug: radsvgimage-kb-articles
 tags: kb, sdk, examples
 position: 1000
 ---
@@ -14,9 +14,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
-|[Convert Self-Referencing Data Model to Hierarchical Data Structure in RadTreeListView]({%slug kb-treelistview-convert-flat-data-to-hierarchical-data%})|
-|[How to Expand and Collapse Items in an MVVM Manner]({%slug kb-treelistview-expand-collapse-items-through-methods%})|
-|[Implementing Load on Demand in RadTreeListView]({%slug kb-treelistview-load-on-demand%})|
+|[Display Telerik.SvgIcons in RadSvgImage]({%slug kb-radsvgimage-display-telerik-svgicons%})|
 
 ## See Also
 

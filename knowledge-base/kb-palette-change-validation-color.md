@@ -5,7 +5,7 @@ type: how-to
 page_title: Modifying Validation Color for Telerik TextBox Elements
 meta_title: Modifying Validation Color for Telerik Input Control
 slug: kb-palette-change-validation-color
-tags: common, radcoloreditor, ui-for-wpf, windows8-theme, validation-color, implicit-styles, noxaml, palette, windows8palette
+tags: radcoloreditor, ui-for-wpf, windows8-theme, validation-color, implicit-styles, noxaml, palette, windows8palette
 res_type: kb
 ---
 

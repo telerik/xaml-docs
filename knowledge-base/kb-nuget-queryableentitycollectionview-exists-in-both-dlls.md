@@ -5,7 +5,7 @@ page_title: QueryableEntityCollectionView Exists in Both Telerik.Windows.Control
 type: troubleshooting
 slug: kb-nuget-queryableentitycollectionview-exists-in-both-dlls
 position: 0
-tags: nuget,qcv,qecv,entityframework,error
+tags: getting-started,qcv,qecv,entityframework,error
 ticketid: 1479111
 res_type: kb
 ---

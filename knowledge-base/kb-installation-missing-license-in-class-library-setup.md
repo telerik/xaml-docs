@@ -5,7 +5,7 @@ page_title: License Key Invalid or Missing Message Box and Watermark Displayed W
 type: troubleshooting
 slug: kb-installation-missing-license-in-class-library-setup
 position: 0
-tags: installation, telerik, licensing, license, key, not, found, addin, class, library
+tags: licensing, telerik, licensing, license, key, not, found, addin, class, library
 res_type: kb
 ---
 

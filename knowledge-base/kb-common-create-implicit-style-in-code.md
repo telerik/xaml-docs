@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Define Implicit Style in Code
 slug: kb-common-create-implicit-style-in-code
 position: 0
-tags: common, resources,typeof,xkey
+tags: styling-and-appearance, resources,typeof,xkey
 ticketid: 1404933
 res_type: kb
 ---

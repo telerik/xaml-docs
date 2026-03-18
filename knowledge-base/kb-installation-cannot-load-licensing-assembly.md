@@ -5,7 +5,7 @@ page_title: FileNotFoundException Exception Cannot Load Telerik.Licensing.Runtim
 type: troubleshooting
 slug: kb-installation-cannot-load-licensing-assembly
 position: 0
-tags: installation, telerik, licensing, license, key, load, exception
+tags: licensing, telerik, licensing, license, key, load, exception
 res_type: kb
 ---
 

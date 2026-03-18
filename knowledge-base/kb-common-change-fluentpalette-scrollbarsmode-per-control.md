@@ -4,7 +4,7 @@ description: Replace the ThemeHelper.ScrollBarsMode attached property for a spec
 page_title: Change ScrollBarsMode per Control in the Fluent Theme
 slug: kb-common-change-fluentpalette-scrollbarsmode-per-control
 position: 0
-tags: common, change,scrollbarsmode,themehelper
+tags: styling-and-appearance, change,scrollbarsmode,themehelper
 ticketid: 1472946
 res_type: kb
 ---

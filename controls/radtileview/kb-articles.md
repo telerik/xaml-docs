@@ -1,6 +1,6 @@
 ---
-title: KB Articles
-page_title: KB Articles - Telerik UI for WPF
+title: Knowledge Base Articles
+page_title: Knowledge Base Articles - Telerik UI for WPF
 description: Custom examples built on top of the Telerik UI for WPF control.
 slug: radtileview-kb-articles
 tags: kb, sdk, examples

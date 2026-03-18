@@ -65,7 +65,9 @@ If you add the Telerik components to your project by referencing the Telerik ass
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 
-1. On the Progress® Telerik® UI for WPF row, click the __View key__ link in the __SCRIPT KEY__ column.
+1. Click on the _View Script Keys_ button.
+
+1. In the drop down menu select __Progress® Telerik® UI for WPF__.
 
 1. Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`. The code snippet contains an assembly attribute called `EvidenceAttribute` that holds information about the license key.
 

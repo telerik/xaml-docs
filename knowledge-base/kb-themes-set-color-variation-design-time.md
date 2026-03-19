@@ -5,7 +5,7 @@ type: how-to
 page_title: View Theme Variation in the Visual Studio Designer
 slug: kb-themes-set-color-variation-design-time
 position: 0
-tags: themes, set, color, variation, design, time
+tags: styling-and-appearance,themes, set, color, variation, design, time
 ticketid: 1076498
 res_type: kb
 ---

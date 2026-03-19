@@ -5,7 +5,7 @@ type: how-to
 page_title: Improve Nested RadGridView Performance
 slug: kb-gridview-howto-rowdetails-virtualization
 position: 0
-tags: slow, scrolling, performance, rowdetails, radgridview
+tags: radgridview, slow, scrolling, performance, rowdetails
 ticketid: 1427423
 res_type: kb
 ---

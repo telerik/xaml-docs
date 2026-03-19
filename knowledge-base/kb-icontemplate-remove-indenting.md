@@ -5,7 +5,7 @@ page_title: How to Hide Indentation From Icon Template of RadNavigationView for 
 type: how-to 
 slug: kb-icontemplate-remove-indenting
 position: 0
-tags: indenting,icontemplate,RadNavigationView
+tags: radnavigationview,radsvgimage, indenting,icontemplate,RadNavigationView
 ticketid: 1601042
 res_type: kb
 ---

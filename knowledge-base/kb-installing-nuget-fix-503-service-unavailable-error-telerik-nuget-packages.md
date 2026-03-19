@@ -4,7 +4,7 @@ description: Learn how to resolve the "503 (Service Unavailable)" error encounte
 type: troubleshooting
 page_title: Resolve Error 'Retrying FindPackagesByIdAsyncCore for Source https://nuget.telerik.com/nuget/FindPackagesById()' 
 slug: kb-installing-nuget-fix-503-service-unavailable-error-telerik-nuget-packages
-tags: nuget, telerik, wpf, 503 error, service unavailable, package restore
+tags: getting-started, nuget, telerik, wpf, 503 error, service unavailable, package restore
 res_type: kb
 ticketid: 1680292
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Diff the XML Content of DOCX Files
 slug: kb-common-compare-docx-xml-content
 position: 0
-tags: groupdescriptors, changes, collectionview, cardview
+tags: common, groupdescriptors, changes, collectionview, cardview
 res_type: kb
 ---
 

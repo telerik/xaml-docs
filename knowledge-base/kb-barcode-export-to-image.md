@@ -5,7 +5,7 @@ description: Export the RadBarcode control without adding it to the visual tree.
 type: how-to
 slug: kb-barcode-export-to-image
 position: 0
-tags: export,picture,generate,ui,visual,tree
+tags: radbarcode, export,picture,generate,ui,visual,tree
 ticketid: 1576269
 res_type: kb
 ---

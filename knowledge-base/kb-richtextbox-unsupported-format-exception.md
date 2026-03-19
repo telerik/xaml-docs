@@ -5,7 +5,7 @@ page_title: Prevent Unsupported Format Exception when Saving/Loading a File Usin
 type: how-to
 slug: kb-richtextbox-unsupported-format-exception
 position: 0
-tags: richtextbox, unsupported format, exception, unsupported, not supported, ribbonviewui, unsupportedformatexception
+tags: radrichtextbox, unsupported format, exception, unsupported, not supported, ribbonviewui, unsupportedformatexception
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ description: This article shows how to achieve validation for the RadNumericUpDo
 type: how-to
 slug: kb-numericupdown-validation-idataerrorinfo
 position: 0
-tags: numericupdown, validation, idataerrorinfo
+tags: radnumericupdown, numericupdown, validation, idataerrorinfo
 ticketid: 1592516
 res_type: kb
 ---

@@ -5,7 +5,7 @@ page_title: When Scrolling to Longer Distinct Value GridView FilteringControl In
 type: troubleshooting
 slug: kb-gridview-filteringcontrol-changes-its-width-while-scrolling
 position: 0
-tags: filtering,control,scrolling,size,width,distinct,values,list
+tags: radgridview, filtering,control,scrolling,size,width,distinct,values,list
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ page_title: Disable Alphabetical Characters in the Page Index Input of DataPager
 type: how-to
 slug: kb-allow-only-numbers-in-datapagertextbox
 position: 0
-tags: pageindex,datapagertextbox,regex
+tags: raddatapager, pageindex,datapagertextbox,regex
 ticketid: 1480886
 res_type: kb
 ---

@@ -5,7 +5,7 @@ page_title: Empty Rows In RadGridView After Order or Scroll DataGrid
 type: troubleshooting
 slug: kb-gridview-blank-rows-when-sorting-scrolling
 position: 0
-tags: child,hierarchy,rows,blank
+tags: radgridview, child,hierarchy,rows,blank
 ticketid: 1422931
 res_type: kb
 ---

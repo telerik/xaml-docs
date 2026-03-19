@@ -5,7 +5,7 @@ page_title: TaskBoard Columns With Set Can Content Scroll
 type: how-to
 slug: taskboard-columns-content-scroll
 position: 0
-tags: taskboard, columns, cancontentscroll, scrollviewer
+tags: radtaskboard, columns, cancontentscroll, scrollviewer
 ticketid: 1698948
 res_type: kb
 ---

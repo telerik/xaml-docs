@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: RadContextMenu Stays Open after Selecting a Menu Item
 slug: kb-contextmenu-does-not-close-after-selecting-menu-item
 position: 0
-tags: contextmenu, does, not, close, after, selecting, menu, item, stays, open
+tags: radcontextmenu, contextmenu, does, not, close, after, selecting, menu, item, stays, open
 ticketid: 1477178
 res_type: kb
 ---

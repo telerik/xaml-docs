@@ -4,7 +4,7 @@ description: InvalidOperationException occurs with the Windows8 Telerik theme
 type: troubleshooting
 page_title: InvalidOperationException Cannot access Freezable SolidColorBrush across threads because it cannot be frozen
 slug: kb-common-windows8-brushes
-tags: windows8,theming,brushes,exception
+tags: styling-and-appearance, windows8,theming,brushes,exception
 res_type: kb
 ---
 

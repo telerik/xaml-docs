@@ -5,7 +5,7 @@ type: how-to
 page_title: Add event thrown when the up or down button is let go
 slug: kb-numericupdown-howto-introduce-event-fired-when-repeatbuttons-are-released
 position: 0
-tags: numericupdown, released, value, changed, repeatbutton
+tags: radnumericupdown, numericupdown, released, value, changed, repeatbutton
 ticketid: 1405485
 res_type: kb
 ---

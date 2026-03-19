@@ -5,7 +5,7 @@ description: How to use RadHighlightTextBlock control in an editable RadComboBox
 type: how-to
 slug: kb-highlighttextblock-integration-with-radcombobox
 position: 0
-tags: highlighttextblock, integration, radcombobox
+tags: radhighlighttextblock, highlighttextblock, integration, radcombobox
 res_type: kb
 ---
 

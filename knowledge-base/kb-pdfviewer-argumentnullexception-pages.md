@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: ArgumentNullException when importing document in PdfViewer
 slug: kb-pdfviewer-argumentnullexception-pages
 position: 0
-tags: argumentnullexception, error, opening, open, import, pdf, pdfviewer
+tags: radpdfviewer, argumentnullexception, error, opening, open, import, pdf, pdfviewer
 ticketid: 1401132
 res_type: kb
 ---

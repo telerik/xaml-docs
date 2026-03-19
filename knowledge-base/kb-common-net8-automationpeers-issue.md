@@ -4,7 +4,7 @@ description: This article provides workaround for the issue where UI Automation 
 type: troubleshooting
 page_title: UI Automation Not Created in WPF Under .NET 8
 slug: kb-common-net8-automationpeers-issue
-tags: radgridview, ui, automation, net8, peers
+tags: common, ui, automation, net8, peers
 res_type: kb
 ---
 ## Environment

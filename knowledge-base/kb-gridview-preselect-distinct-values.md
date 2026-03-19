@@ -5,7 +5,7 @@ type: how-to
 page_title: Preselect Distinct Values in Column Filtering Popup of RadGridView
 slug: kb-gridview-preselect-distinct-values
 position: 0
-tags: preselect,distinct,values
+tags: radgridview, preselect,distinct,values
 ticketid: 1538106
 res_type: kb
 ---

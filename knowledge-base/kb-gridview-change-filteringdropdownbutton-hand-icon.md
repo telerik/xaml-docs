@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Replace the Hand Mouse Cursor When GridView Column Header Filter Icon is Clicked
 slug: kb-gridview-change-filteringdropdownbutton-hand-icon
 position: 0
-tags: loading icon, hand icon, filter, gridview
+tags: radgridview, loading icon, hand icon, filter, gridview
 ticketid: 1603581
 res_type: kb
 ---

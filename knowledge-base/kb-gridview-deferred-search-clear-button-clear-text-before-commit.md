@@ -5,7 +5,7 @@ description: This article shows how to clear the input in the search box using t
 type: how-to
 slug: kb-gridview-deferred-search-clear-button-clear-text-before-commit
 position: 0
-tags: gridview, clear, deferred, search
+tags: radgridview, gridview, clear, deferred, search
 ticketid: 1585166
 res_type: kb
 ---

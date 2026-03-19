@@ -5,7 +5,7 @@ type: how-to
 page_title: Cancel Menu Collapsing When Escape Button is Pressed
 slug: kb-navigationview-disable-menu-collapse-on-esc-press
 position: 0
-tags: escape,exit,key
+tags: radnavigationview, escape,exit,key
 ticketid: 1502677
 res_type: kb
 ---

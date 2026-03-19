@@ -4,7 +4,7 @@ description: Resolving the missing/invalid license dialog issue with "No License
 type: troubleshooting
 page_title: No License Found for Telerik UI for WPF Dialog and Watermark Displayed
 slug: kb-licensing-no-license-found-message
-tags: telerik ui for wpf, license, class library, missing license
+tags: licensing, telerik ui for wpf, license, class library, missing license
 res_type: kb
 ticketid: 1690062
 ---

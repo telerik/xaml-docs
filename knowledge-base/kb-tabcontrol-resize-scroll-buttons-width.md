@@ -5,7 +5,7 @@ description: How to change the width of the scroll buttons when OverflowMode set
 type: how-to
 slug: kb-tabcontrol-resize-scroll-buttons-width
 position: 0 
-tags: overflow,mode,scroll,viewer
+tags: radtabcontrol, overflow,mode,scroll,viewer
 ticketid: 1413281
 res_type: kb
 ---

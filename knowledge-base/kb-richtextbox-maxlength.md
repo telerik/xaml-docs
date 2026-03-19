@@ -5,7 +5,7 @@ type: how-to
 page_title: Restrict number of characters in RadRichTextBox
 slug: kb-richtextbox-maxlength
 position: 0
-tags: limit, restrict, count, characters, length, input
+tags: radrichtextbox, limit, restrict, count, characters, length, input
 ticketid: 1536052
 res_type: kb
 ---

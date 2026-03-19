@@ -5,7 +5,7 @@ type: how-to
 page_title: Conditionally style aggregate results shown in the header of the group
 slug: kb-gridview-style-aggregate-results-in-group-header
 position: 0
-tags: aggregate, results, styling, conditionally, group, header
+tags: radgridview, aggregate, results, styling, conditionally, group, header
 ticketid: 1442680
 res_type: kb
 ---

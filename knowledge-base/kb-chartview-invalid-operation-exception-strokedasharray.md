@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: InvalidOperationException Thrown When Setting CartesianChartGrid Line StrokeDashArray Property
 slug: kb-chartview-invalid-operation-exception-strokedasharray
 position: 0
-tags: strokedasharray,majorlinestyle,chartview
+tags: radchartview, strokedasharray,majorlinestyle
 ticketid: 1429449
 res_type: kb
 ---

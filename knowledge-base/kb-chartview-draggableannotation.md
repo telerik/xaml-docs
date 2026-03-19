@@ -5,7 +5,7 @@ description: Drag RadCartesianChart annotations, like line or area, using the mo
 type: how-to
 slug: kb-chartview-drag-annotation
 position: 0
-tags: chartview, annotation, sdk
+tags: radchartview, chartview, annotation, sdk
 res_type: kb
 ---
 

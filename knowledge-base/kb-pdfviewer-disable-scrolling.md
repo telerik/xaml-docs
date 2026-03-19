@@ -5,7 +5,7 @@ type: how-to
 page_title: How to disable scrolling in the RadPdfViewer
 slug: kb-pdfviewer-disable-scrolling
 position: 0
-tags: pdf, pdfviewer, disable, scrolling
+tags: radpdfviewer, pdf, pdfviewer, disable, scrolling
 ticketid: 1075562
 res_type: kb
 ---

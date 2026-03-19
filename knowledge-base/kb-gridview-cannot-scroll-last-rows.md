@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: RadGridView Cannot Scroll to the Last Rows 
 slug: kb-gridview-cannot-scroll-last-rows
 position: 0
-tags: pinned, rows, last, row, cut 
+tags: radgridview, pinned, rows, last, row, cut 
 ticketid: 1511715
 res_type: kb
 ---

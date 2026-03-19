@@ -4,7 +4,7 @@ description: How to use FlagEnumEditor to create flag enum editor in the Telerik
 type: how-to
 page_title: How to Create Flag Enums Column in RadGridView
 slug: kb-gridview-flag-enum-edit-column
-tags: flags, enum, column
+tags: radgridview, flags, enum, column
 res_type: kb
 ---
 

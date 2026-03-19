@@ -4,7 +4,7 @@ description: How to implement save and restore last opened directory in RadOpenF
 type: how-to
 page_title: Persist the Last Directory on the File System When Using RadFileDialog
 slug: kb-file-dialogs-save-load-last-opened-directory
-tags: radopenfiledialog, wpf, restoredirectory, mvvm, owner, dialog
+tags: radfiledialogs, radopenfiledialog, wpf, restoredirectory, mvvm, owner, dialog
 res_type: kb
 ticketid: 1632230
 ---

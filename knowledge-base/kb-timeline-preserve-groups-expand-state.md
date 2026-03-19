@@ -5,7 +5,7 @@ type: how-to
 page_title: How to save expand/collapse state of grouped elements when a new item is added
 slug: kb-timeline-preserve-groups-expand-state
 position: 0
-tags: expand,collapse,grouping,timelineitemgroupcontrol
+tags: radtimeline, expand,collapse,grouping,timelineitemgroupcontrol
 ticketid: 1401798
 res_type: kb
 ---

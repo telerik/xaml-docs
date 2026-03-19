@@ -5,7 +5,7 @@ description: Opening a ContextMenu inside the dropdown of a MultiColumnComboBox 
 type: troubleshooting
 slug: kb-multicolumncombobox-auto-close-not-working-with-contextmenu
 position: 0
-tags: kb
+tags: radmulticolumncombobox, kb
 ticketid: 0000000
 res_type: kb
 ---

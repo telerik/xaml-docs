@@ -5,7 +5,7 @@ description: This article shows how to save the layout of the RadDocking control
 type: how-to
 slug: kb-docking-save-layout-on-unloaded-event
 position: 0
-tags: docking, load layout, unloaded
+tags: raddocking, docking, load layout, unloaded
 ticketid: 1565983
 res_type: kb
 ---

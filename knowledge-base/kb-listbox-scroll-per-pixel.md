@@ -5,7 +5,7 @@ description: Scroll per pixel instead per item when scrolling the items of the R
 type: how-to
 slug: kb-listbox-scroll-per-pixel
 position: 0
-tags: listbox, radlistbox, scroll, pixel, scroll per pixel
+tags: radlistbox, listbox, radlistbox, scroll, pixel, scroll per pixel
 ticketid: 1541477
 res_type: kb
 category: knowledge-base

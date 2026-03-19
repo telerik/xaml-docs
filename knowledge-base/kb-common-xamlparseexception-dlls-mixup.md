@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: XamlParseException Appears at Run-Time
 slug: kb-common-xamlparseexception-dlls-mixup
 position: 0
-tags: xamlparseexception,versions,dlls,assemblies
+tags: styling-and-appearance, xamlparseexception,versions,dlls,assemblies
 ticketid: 1492107
 res_type: kb
 ---

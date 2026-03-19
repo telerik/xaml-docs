@@ -5,7 +5,7 @@ page_title: Display Complex Structure in the Columns Headers of RadGanttView
 type: how-to
 slug: kb-ganttview-customize-column-header
 position: 0
-tags: ganttview, column, customize, header
+tags: radganttview, ganttview, column, customize, header
 res_type: kb
 ticketid: 1648836
 ---

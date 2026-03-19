@@ -4,7 +4,7 @@ description: This article shows how to implement size expanding animation when y
 type: how-to
 page_title: Implement Tab Size Change Animation on RadTabControl Hover
 slug: kb-tabcontrol-expand-size-animation-on-tab-hover
-tags: animation,size,expand,tab
+tags: radtabcontrol, animation,size,expand,tab
 res_type: kb
 ---
 

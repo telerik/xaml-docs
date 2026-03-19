@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Make a Generic Template to Display the Items in a CollectionEditorPicker
 slug: kb-propertygrid-collectioneditor-itemtemplate
 position: 0
-tags: collectioneditor, propertygrid, itemtemplate
+tags: radpropertygrid, collectioneditor, propertygrid, itemtemplate
 ticketid: 1532791
 res_type: kb
 ---

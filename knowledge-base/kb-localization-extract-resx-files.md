@@ -5,7 +5,7 @@ description: Get the Telerik .resx Files Values
 type: how-to
 slug: kb-localization-extract-resx-files
 position: 0
-tags: localization,language,extract,resx
+tags: common, localization,language,extract,resx
 ticketid: 1630913
 res_type: kb
 ---

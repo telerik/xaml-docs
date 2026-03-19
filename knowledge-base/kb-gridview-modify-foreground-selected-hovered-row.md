@@ -5,7 +5,7 @@ type: how-to
 page_title: Update the Foreground of a row, which is Selected or Hovered
 slug: kb-gridview-modify-foreground-selected-hovered-row
 position: 0
-tags: modify, foreground, selected, hovered, row
+tags: radgridview, modify, foreground, selected, hovered, row
 res_type: kb
 ---
 

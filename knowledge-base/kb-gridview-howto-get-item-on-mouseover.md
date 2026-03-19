@@ -5,7 +5,7 @@ type: howto
 page_title: Access the model shown in the hovered GridViewRow 
 slug: kb-gridview-howto-get-item-on-mouseover
 position: 0
-tags: mouseover, item, model, row
+tags: radgridview, mouseover, item, model, row
 ticketid: 1445462
 res_type: kb
 ---

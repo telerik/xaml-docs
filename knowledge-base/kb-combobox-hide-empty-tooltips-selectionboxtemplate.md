@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Show SelectionBox Tooltip Only when the Tooltip Has Content
 slug: kb-combobox-hide-empty-tooltips-selectionboxtemplate
 position: 0
-tags: combobox, hide, empty, content, tooltips, selectionboxtemplate
+tags: radcombobox, combobox, hide, empty, content, tooltips, selectionboxtemplate
 ticketid: 1447050
 res_type: kb
 ---

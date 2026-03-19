@@ -4,7 +4,7 @@ description: This article shows how to utilize the RadWindow predefined dialogs 
 type: how-to
 page_title: Display Custom RadMessageBox Dialog
 slug: kb-window-radmessagebox
-tags: messagebox,dialog,radwindow
+tags: radwindow, messagebox,dialog,radwindow
 res_type: kb
 ---
 ## Environment

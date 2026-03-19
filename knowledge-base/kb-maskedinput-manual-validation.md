@@ -5,7 +5,7 @@ type: how-to
 page_title: Implement Custom Validation Mechanism
 slug: kb-maskedinput-manual-validation
 position: 0
-tags: maskedinput, validation, custom, error, message, mechanism
+tags: radmaskedinput, maskedinput, validation, custom, error, message, mechanism
 ticketid: 1514901
 res_type: kb
 ---

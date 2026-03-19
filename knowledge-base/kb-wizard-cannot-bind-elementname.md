@@ -5,7 +5,7 @@ page_title: Binding with ElementName in RadWizardPage Content doesn't work
 type: troubleshooting
 slug: kb-wizard-cannot-bind-elementname
 position: 0
-tags: databind, cannot, elementname
+tags: radwizard, databind, cannot, elementname
 ticketid: 1453025
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: DataGrid column header doesn't shrink to fit the new Header size at runtime.
 slug: kb-gridview-column-header-autofit
 position: 0
-tags: autofit,width,gridviewlength
+tags: radgridview, autofit,width,gridviewlength
 ticketid: 1389043
 res_type: kb
 ---

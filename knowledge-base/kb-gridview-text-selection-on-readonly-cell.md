@@ -5,7 +5,7 @@ type: how-to
 page_title: Select text using the mouse when a DataGrid cell is read-only.
 slug: kb-gridview-text-selection-on-readonly-cell
 position: 0
-tags: gridview,datagrid,readonly,text,cell
+tags: radgridview, datagrid,readonly,text,cell
 ticketid: 1569968
 res_type: kb
 ---

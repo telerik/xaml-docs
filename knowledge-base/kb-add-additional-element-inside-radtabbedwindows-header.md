@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add additional element inside RadTabbedWindow's header
 slug: kb-add-additional-element-inside-radtabbedwindows-header
 position: 0
-tags: tabbedwindow, element, header
+tags: radtabbedwindow, tabbedwindow, element, header
 ticketid: 1444813
 res_type: kb
 ---

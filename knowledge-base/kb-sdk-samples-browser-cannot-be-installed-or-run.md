@@ -5,7 +5,7 @@ description: This article lists the possible errors when installing and running 
 type: troubleshooting
 slug: kb-sdk-samples-browser-cannot-be-installed-or-run
 position: 0
-tags: sdk, samples, browser, cannot, install, run
+tags: common, sdk, samples, browser, cannot, install, run
 ticketid: 1483719
 res_type: kb
 ---

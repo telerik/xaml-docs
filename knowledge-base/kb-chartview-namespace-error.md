@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: A Value of Type LineSeries Cannot be Added to Collection or Dictionary of Type PresenterCollection Error in RadChartView
 slug: kb-chartview-namespace-error
 position: 0
-tags: charting, old, dll
+tags: radchartview, charting, old, dll
 ticketid: 1495519
 res_type: kb
 ---

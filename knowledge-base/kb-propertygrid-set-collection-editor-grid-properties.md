@@ -4,7 +4,7 @@ description: How to customize the child RadPropertyGrid of the CollectionEditor.
 page_title: Customize the CollectionEditor's Child RadPropertyGrid
 type: how-to
 slug: kb-propertygrid-set-collection-editor-grid-properties
-tags: customize, set, properties, child, radpropertygrid, collectioneditor
+tags: radpropertygrid, customize, set, properties, child, radpropertygrid, collectioneditor
 ticketid: 1117206
 res_type: kb
 ---

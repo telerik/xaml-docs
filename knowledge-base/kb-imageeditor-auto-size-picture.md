@@ -5,7 +5,7 @@ description: Show the RadImageEditor image without zoom applied.
 type: how-to
 slug: kb-imageeditor-auto-size-picture
 position: 0
-tags: autosize,picture,zoom
+tags: radimageeditor, autosize,picture,zoom
 ticketid: 1421809
 res_type: kb
 ---

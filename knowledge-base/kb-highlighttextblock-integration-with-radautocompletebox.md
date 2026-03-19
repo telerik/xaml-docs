@@ -5,7 +5,7 @@ description: How to use RadHighlightTextBlock control in an RadAutoCompleteBox.
 type: how-to
 slug: kb-highlighttextblock-integration-with-radautocompletebox
 position: 0
-tags: highlighttextblock, integration, radautocompletebox
+tags: radhighlighttextblock, highlighttextblock, integration, radautocompletebox
 res_type: kb
 ---
 

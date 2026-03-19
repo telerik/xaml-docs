@@ -5,7 +5,7 @@ description: This article showcases how to add a copyright attribution label
 type: how-to
 slug: kb-map-copyright-label
 position: 0
-tags: map, attribution, label
+tags: radmap, map, attribution, label
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: Providing Focus to RadChat
 slug: kb-chat-focus-textbox-on-load
 position: 0
-tags: chat, textbox, focus, load
+tags: radchat, chat, textbox, focus, load
 ticketid: 1402627
 res_type: kb
 ---

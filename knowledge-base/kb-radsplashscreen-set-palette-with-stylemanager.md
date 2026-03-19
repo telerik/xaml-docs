@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Palette properties not changed when using RadSplashScreen
 slug: kb-radsplashscreen-set-palette-with-stylemanager
 position: 0
-tags: color variation, RadSplashScreen, StyleManager
+tags: radsplashscreen, color variation, RadSplashScreen, StyleManager
 ticketid: 1528334
 res_type: kb
 ---

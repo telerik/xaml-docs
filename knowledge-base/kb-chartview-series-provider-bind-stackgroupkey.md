@@ -5,7 +5,7 @@ description: How to bind the StackGroupKey of the BarSeries when using ChartSeri
 type: how-to
 slug: kb-chartview-series-provider-bind-stackgroupkey
 position: 0
-tags: chartview, series provider, stackgroupkey, dynamic number of series
+tags: radchartview, chartview, series provider, stackgroupkey, dynamic number of series
 ticketid: 1691623
 res_type: kb
 ---

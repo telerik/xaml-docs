@@ -5,7 +5,7 @@ page_title: Bind Header Cell Content to Properties in the ViewModel
 type: how-to
 slug: kb-gridview-howto-bind-header-cell-content-radgridview-datacontext
 position: 0
-tags: gridview, binding, header, cell, content, datacontext
+tags: radgridview, gridview, binding, header, cell, content, datacontext
 ticketid: 1168725
 res_type: kb
 ---

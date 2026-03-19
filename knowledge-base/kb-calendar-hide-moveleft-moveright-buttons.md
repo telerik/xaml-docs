@@ -5,7 +5,7 @@ type: how-to
 page_title: Change the Visibility of the Move Left and Move Right Buttons in the Calendar Header
 slug: kb-calendar-hide-moveleft-moveright-buttons
 position: 0
-tags: loaded,childrenoftype,repeatbutton,visual,tree,helper
+tags: radcalendar, loaded,childrenoftype,repeatbutton,visual,tree,helper
 ticketid: 1407259
 res_type: kb
 ---

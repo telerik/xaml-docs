@@ -5,7 +5,7 @@ page_title: Moving RadTimeLine Horizontal ScrollBar
 type: how-to
 slug: kb-timeline-moving-horizontal-scrollbar
 position: 0
-tags: visualperiodstart, visualperiodend, scrollviewer, scrollbar
+tags: radtimeline, visualperiodstart, visualperiodend, scrollviewer, scrollbar
 ticketid: 1400046
 res_type: kb
 ---

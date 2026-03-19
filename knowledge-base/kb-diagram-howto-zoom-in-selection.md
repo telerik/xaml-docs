@@ -5,7 +5,7 @@ description: How to Center the Zoom on the Selection.
 type: how-to
 slug: kb-diagram-howto-zoom-in-selection
 position: 0
-tags: center, zoom, selection
+tags: raddiagram, center, zoom, selection
 ticketid: 1448223
 res_type: kb
 ---

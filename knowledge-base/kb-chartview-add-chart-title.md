@@ -5,7 +5,7 @@ description: Add a caption on top of RadCartesianChart using a TextBlock.
 type: how-to
 slug: kb-chartview-add-chart-title
 position: 0
-tags: title,header,chartview
+tags: radchartview, title,header,chartview
 ticketid: 1425857
 res_type: kb
 ---

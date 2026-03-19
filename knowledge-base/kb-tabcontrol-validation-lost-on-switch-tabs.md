@@ -5,7 +5,7 @@ page_title: Red Validation Borders Missing When Changing the Selected Tab of Rad
 type: troubleshooting
 slug: tabcontrol-validation-lost-on-switch-tabs
 position: 0
-tags: data,validation,switch,tabs
+tags: radtabcontrol, data,validation,switch,tabs
 ticketid: 1428459
 res_type: kb
 ---

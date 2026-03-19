@@ -5,7 +5,7 @@ description: How to export RadChartView with series provider to picture without 
 type: how-to
 slug: kb-chartview-export-to-image-in-code
 position: 
-tags: 
+tags: radchartview
 ticketid: 1417033
 res_type: kb
 ---

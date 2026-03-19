@@ -5,7 +5,7 @@ page_title: Handle Scrolling of the Parent ScrollViewer When Zooming In and Out 
 type: how-to
 slug: kb-chartview-mousewheel-scrollviewer
 position: 0
-tags: wpf, chartview, cartesianchart, chart, scroll, mouse wheel, wheel, zoom, zooming
+tags: radchartview, wpf, chartview, cartesianchart, chart, scroll, mouse wheel, wheel, zoom, zooming
 res_type: kb
 ---
 

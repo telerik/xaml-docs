@@ -5,7 +5,7 @@ page_title: Customize the Format of the Text Shown by the MapMouseLocationIndica
 type: how-to
 slug: kb-map-format-the-text-of-the-mapmouselocationindicator
 position: 0
-tags: map, mapmouselocationindicator, format
+tags: radmap, map, mapmouselocationindicator, format
 ticketid: 1698340
 res_type: kb
 ---

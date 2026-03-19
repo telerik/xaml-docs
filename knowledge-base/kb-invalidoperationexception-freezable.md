@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: InvalidOperationException when Accessing a Freezable from a Different Thread
 slug: kb-invalidoperationexception-freezable
 position: 0
-tags: InvalidOperationException, freezable, different, thread
+tags: common, InvalidOperationException, freezable, different, thread
 ticketid: 1381959
 res_type: kb
 ---

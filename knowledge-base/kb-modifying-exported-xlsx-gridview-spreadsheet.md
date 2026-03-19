@@ -5,7 +5,7 @@ type: how-to
 page_title: Customize Excel XLSX Spreadsheet When Exporting From RadGridView
 slug: kb-gridview-modifying-exported-xlsx-spreadsheet
 position: 0
-tags: WPF, GridView, RadGridView, Export, Exporting, Excel, Spreadsheet, xlsx, Customizing
+tags: radgridview, WPF, GridView, RadGridView, Export, Exporting, Excel, Spreadsheet, xlsx, Customizing
 res_type: kb
 ---
 

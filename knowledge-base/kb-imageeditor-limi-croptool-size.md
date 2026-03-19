@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Limit the crop tool size in RadImageEditor
 slug: kb-imageeditor-limi-croptool-size
 position: 0
-tags: imagetoolitem,maxcropsize,mincropsize, imageeditorui
+tags: radimageeditor, imagetoolitem,maxcropsize,mincropsize, imageeditorui
 ticketid: 1176511
 res_type: kb
 ---

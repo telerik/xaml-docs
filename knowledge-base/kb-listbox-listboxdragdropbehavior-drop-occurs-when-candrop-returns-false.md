@@ -5,7 +5,7 @@ page_title: Returning False From CanDrop Can Sometimes Raise the Drop Event From
 type: how-to
 slug: kb-listbox-listboxdragdropbehavior-drop-occurs-when-candrop-returns-false
 position: 0
-tags: listbox, listboxdragdropbehavior, candrop, false, drop
+tags: radlistbox, listbox, listboxdragdropbehavior, candrop, false, drop
 res_type: kb
 ticketid: 1621835
 ---

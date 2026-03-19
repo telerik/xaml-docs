@@ -5,7 +5,7 @@ page_title: License.licx File is Automatically Generated and Could Bring Compile
 type: troubleshooting
 slug: kb-installation-license-licx-file
 position: 0
-tags: installation, telerik, licensing, licx
+tags: licensing, telerik, licensing, licx
 res_type: kb
 ---
 

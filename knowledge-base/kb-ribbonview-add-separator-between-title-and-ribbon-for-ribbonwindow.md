@@ -5,7 +5,7 @@ type: how-to
 page_title: Customize RadRibbonView - modify the ControlTemplate to add a separator between the title and the ribbon
 slug: kb-ribbonview-add-separator-between-title-and-ribbon-for-ribbonwindow
 position: 0
-tags: extract,controltemplate,separator
+tags: radribbonview, extract,controltemplate,separator
 ticketid: 1351487
 res_type: kb
 ---

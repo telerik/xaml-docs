@@ -5,7 +5,7 @@ page_title: Filter TextBoxes Missing On Initial Load of Filtering Popup
 type: troubleshooting
 slug: kb-gridview-field-filters-not-visible-first-open
 position: 0
-tags: field, filters, not, visible, missing, filteringcontrol, first, initial, opened, displayed, popup
+tags: radgridview, field, filters, not, visible, missing, filteringcontrol, first, initial, opened, displayed, popup
 ticketid: 1579426
 res_type: kb
 ---

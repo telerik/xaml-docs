@@ -5,7 +5,7 @@ description: This article explains how to create a margin to hold a collection o
 type: how-to
 slug: kb-syntaxeditor-how-to-add-breakpoints-margin
 position: 0
-tags: add, breakpoints, margin, syntaxeditor
+tags: radsyntaxeditor, add, breakpoints, margin, syntaxeditor
 res_type: kb
 ---
 

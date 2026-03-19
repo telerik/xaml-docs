@@ -5,7 +5,7 @@ page_title: Unable to load DLL mfplat.dll When Opening RadWebCam
 type: how-to
 slug: kb-webcam-clr20r3-not-available-error
 position: 0
-tags: clr20r3, windows, mfplat, dllnotfound
+tags: radwebcam, clr20r3, windows, mfplat, dllnotfound
 ticketid: 1480299
 res_type: kb
 ---

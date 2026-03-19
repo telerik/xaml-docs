@@ -4,7 +4,7 @@ page_title: Modify the HighlightedBackground property of the GridViewCell elemen
 type: how-to
 slug: kb-gridview-change-default-cell-highlight-background-and-foreground-colors
 position: 0
-tags: highlighted background, cell background, cell, search, highlighted foreground
+tags: radgridview, highlighted background, cell background, cell, search, highlighted foreground
 ticketid: 1560393
 res_type: kb
 ---

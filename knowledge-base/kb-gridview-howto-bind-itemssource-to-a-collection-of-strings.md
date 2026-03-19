@@ -5,7 +5,7 @@ type: how-to
 page_title: Binding RadGridView ItemsSource to a string collection
 slug: kb-gridview-howto-bind-itemssource-to-a-collection-of-strings
 position: 0
-tags: gridview, collection, strings, binding
+tags: radgridview, gridview, collection, strings, binding
 ticketid: 1401848
 res_type: kb
 ---

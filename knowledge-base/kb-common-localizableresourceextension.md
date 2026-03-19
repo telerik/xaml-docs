@@ -5,7 +5,7 @@ page_title: Utilizing the LocalizationResourceExtension Markup Extension
 type: how-to
 slug: kb-common-localizableresourceextension
 position: 0
-tags: wpf, localization, localizableresourceextension, dynamic, support dynamic localization
+tags: common, wpf, localization, localizableresourceextension, dynamic, support dynamic localization
 res_type: kb
 ---
 

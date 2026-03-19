@@ -5,7 +5,7 @@ description: How to auto size the tab headers of RadTabbedWindow using TabStripP
 type: how-to
 slug: kb-tabbedwindow-auto-size-tab-headers
 position: 0
-tags: tab,header,autosize,tabstrippanel
+tags: radtabbedwindow, tab,header,autosize,tabstrippanel
 ticketid: 1414323
 res_type: kb
 ---

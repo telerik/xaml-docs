@@ -5,7 +5,7 @@ description: How to add a combination of categorical vertical axis and DateTime-
 type: how-to
 slug: kb-chartview-categorical-and-datetime-axis
 position: 0
-tags: axis,categorical,datetime,labeltemplate
+tags: radchartview, axis,categorical,datetime,labeltemplate
 ticketid: 1585481
 res_type: kb
 category: knowledge-base

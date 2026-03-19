@@ -5,7 +5,7 @@ type: how-to
 page_title: Use RadRichTextBox in a tooltip to show HTML content
 slug: kb-richtextbox-howto-use-radrichtextbox-in-tooltip
 position: 0
-tags: bind, binding, tooltip, richtextbox, datatemplate, html
+tags: radrichtextbox, bind, binding, tooltip, richtextbox, datatemplate, html
 ticketid: 1419423
 res_type: kb
 ---

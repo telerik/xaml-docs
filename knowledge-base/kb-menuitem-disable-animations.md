@@ -5,7 +5,7 @@ page_title: Disable the Animations of the RadMenuItem Element
 type: how-to
 slug: kb-menuitem-disable-animations
 position: 0
-tags: 
+tags: radmenu, 
 ticketid: 1691674
 res_type: kb
 ---
@@ -20,11 +20,7 @@ res_type: kb
 	    <tr>
 	    	<td>Product</td>
 	    	<td>RadMenu for WPF</td>
-	    </tr>
-        <tr>
-	    	<td>Product</td>
-	    	<td>RadContextMenu for WPF</td>
-	    </tr>
+	    </tr>        
     </tbody>
 </table>
 

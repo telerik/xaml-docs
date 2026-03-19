@@ -5,7 +5,7 @@ type: how-to
 page_title: Track changes in workbook
 slug: workbook-track-changes
 position: 0
-tags: spread, modify, change
+tags: radspreadsheet, spread, modify, change
 res_type: kb
 ---
 

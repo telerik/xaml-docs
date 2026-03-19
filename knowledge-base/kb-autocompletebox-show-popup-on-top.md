@@ -5,7 +5,7 @@ type: how-to
 page_title: Align the search results dropdown of RadAutoCompleteBox at Top
 slug: kb-autocompletebox-show-popup-on-top
 position: 0
-tags: autocomplete,placement,popup
+tags: radautocompletebox, autocomplete,placement,popup
 ticketid: 1409391
 res_type: kb
 ---

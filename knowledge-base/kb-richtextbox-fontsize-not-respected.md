@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: The Size of the Text of the RadRichTextBox cannot Be Changed
 slug: kb-richtextbox-fontsize-not-respected
 position: 0
-tags: richtextbox, fontsize, setting, not, respected, changed
+tags: radrichtextbox, richtextbox, fontsize, setting, not, respected, changed
 ticketid: 1494646
 res_type: kb
 ---

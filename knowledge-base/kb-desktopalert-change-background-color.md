@@ -5,7 +5,7 @@ description: Change default background color of the RadDesktopAlert control when
 type: how-to
 slug: kb-desktopalert-change-background-color
 position: 0
-tags: desktop, alert, background
+tags: raddesktopalert, desktop, alert, background
 ticketid: 1534079
 res_type: kb
 ---

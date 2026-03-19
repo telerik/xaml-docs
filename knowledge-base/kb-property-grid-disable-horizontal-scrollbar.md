@@ -5,7 +5,7 @@ description: This article will show you how to disable the horizontal scrollbar 
 type: how-to
 slug: kb-property-grid-disable-horizontal-scrollbar
 position: 0
-tags: horizontal, scrollbar, propertygrid
+tags: radpropertygrid, horizontal, scrollbar, propertygrid
 ticketid: 1548960
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Customizing the normal and preview state colors of the GridResizer
 slug: kb-docking-styling-dockresizer
 position: 0
-tags: dockresizer, gridresizer, dockresizerstyle, gridresizerstyle, previewstyle
+tags: raddocking, dockresizer, gridresizer, dockresizerstyle, gridresizerstyle, previewstyle
 ticketid: 1415844
 res_type: kb
 ---

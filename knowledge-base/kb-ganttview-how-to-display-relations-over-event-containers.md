@@ -5,7 +5,7 @@ type: how-to
 page_title: Position the Event Containers under the GanttView Task Relations
 slug: kb-ganttview-how-to-display-relations-over-event-containers
 position: 0
-tags: ganttview, tasks, display, relations, over, event, containers 
+tags: radganttview, ganttview, tasks, display, relations, over, event, containers 
 ticketid: 1478139
 res_type: kb
 ---

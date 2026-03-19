@@ -5,7 +5,7 @@ type: how-to
 page_title: Disable Auto Hiding RadPanes While Right Click Menu is Shown
 slug: kb-prevent-panes-auto-hide-context-menu-is-opened
 position: 0
-tags: docking, pane, prevent, auto-hide, auto hide, context menu,
+tags: raddocking, docking, pane, prevent, auto-hide, auto hide, context menu,
 ticketid: 1443675
 res_type: kb
 ---

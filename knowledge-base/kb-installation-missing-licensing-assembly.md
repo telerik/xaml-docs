@@ -5,7 +5,7 @@ page_title: The Project Cannot Find Telerik.Licensing.Runtime Assembly After Upg
 type: troubleshooting
 slug: kb-installation-missing-licensing-assembly
 position: 0
-tags: installation, telerik, licensing, license, key
+tags: licensing, telerik, licensing, license, key
 res_type: kb
 ---
 

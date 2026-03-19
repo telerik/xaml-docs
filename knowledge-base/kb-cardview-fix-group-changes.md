@@ -5,7 +5,7 @@ type: how-to
 page_title: Reaply GroupDescriptors in RadCardView After Changing Group Item
 slug: kb-cardview-fix-group-changes
 position: 0
-tags: groupdescriptors, changes, collectionview, cardview
+tags: radcardview, groupdescriptors, changes, collectionview, cardview
 ticketid: 1630486
 res_type: kb
 ---

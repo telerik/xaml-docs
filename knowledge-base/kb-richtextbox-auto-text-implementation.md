@@ -5,7 +5,7 @@ type: how-to
 page_title: Implement custom functionality for reusable text snippets
 slug: kb-richtextbox-auto-text-implementation
 position: 0
-tags: autotext, autocomplete, reusable, snippets, richtextbox
+tags: radrichtextbox, autotext, autocomplete, reusable, snippets, richtextbox
 ticketid: 1465065
 res_type: kb
 ---

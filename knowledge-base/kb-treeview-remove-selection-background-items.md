@@ -5,7 +5,7 @@ type: how-to
 page_title: Hide or Modify the Selection and Highlight Background of the TreeView Items
 slug: kb-treeview-remove-selection-background-items
 position: 0
-tags: treeview, remove, selection, background, items
+tags: radtreeview, remove, selection, background, items
 ticketid: 1456667
 res_type: kb
 ---

@@ -4,7 +4,7 @@ description: Learn how to extend the active view definition's width to use the f
 type: how-to
 page_title: How to Use Full-Screen Width in RadScheduleView DayViewDefinition for WPF
 slug: kb-scheduleview-dayviewdefinition-full-width
-tags: scheduleview, wpf, dayviewdefinition, stretch, full width
+tags: radscheduleview, scheduleview, wpf, dayviewdefinition, stretch, full width
 res_type: kb
 ticketid: 1671345
 ---

@@ -5,7 +5,7 @@ page_title: Prevent RadDiagramShape from connect to itself.
 type: how-to
 slug: kb-diagrams-prevent-shape-from-being-contected-to-itself
 position: 0
-tags: reflexiverouter,event
+tags: raddiagram, reflexiverouter,event
 ticketid: 1350293
 res_type: kb
 ---

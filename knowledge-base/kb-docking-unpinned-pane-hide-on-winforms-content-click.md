@@ -4,7 +4,7 @@ description: This article describes a scenario where an unpinned RadPane contain
 type: troubleshooting
 page_title: Prevent Unpinned RadPane with HwndHost from Hiding on Click in WPF
 slug: kb-docking-unpinned-pane-hide-on-winforms-content-click
-tags: radpane, radwindow, windowsformshost, wpf, click, hide
+tags: raddocking, radpane, radwindow, windowsformshost, wpf, click, hide
 res_type: kb
 ticketid: 1672937
 ---

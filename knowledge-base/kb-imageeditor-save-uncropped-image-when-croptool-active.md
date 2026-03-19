@@ -5,7 +5,7 @@ description: How to save an image without cropping it when the RadImageEditor Cr
 type: how-to
 slug: kb-imageeditor-save-uncropped-image-when-croptool-active
 position: 0
-tags: crop,clip,image,picture
+tags: radimageeditor, crop,clip,image,picture
 ticketid: 1419225
 res_type: kb
 ---

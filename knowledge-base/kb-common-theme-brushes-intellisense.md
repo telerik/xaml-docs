@@ -5,7 +5,7 @@ page_title: Intellisense when Using the Themes' Brushes
 type: how-to
 slug: kb-common-theme-brushes-intellisense
 position: 0
-tags: intellisense, theme, brushes, themes
+tags: styling-and-appearance, intellisense, theme, brushes, themes
 res_type: kb
 ticketid: 1647230
 ---

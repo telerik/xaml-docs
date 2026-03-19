@@ -5,7 +5,7 @@ type: how-to
 page_title: Have a scrollbar in the time interval dropdown display 
 slug: kb-datetimepicker-show-scrollviewer-for-the-clock-items
 position: 0
-tags: scrollbar, clock
+tags: raddatetimepicker, scrollbar, clock
 ticketid: 1383444
 res_type: kb
 ---

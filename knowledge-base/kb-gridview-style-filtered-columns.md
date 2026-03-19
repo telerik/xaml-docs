@@ -5,7 +5,7 @@ type: how-to
 page_title: Highlight Filtered Header Cells
 slug: kb-gridview-style-filtered-columns
 position: 0
-tags: style, highlight, filtered, header, cells, column
+tags: radgridview, style, highlight, filtered, header, cells, column
 ticketid: 1115469
 res_type: kb
 ---

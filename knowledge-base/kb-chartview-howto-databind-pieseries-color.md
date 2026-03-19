@@ -5,7 +5,7 @@ type: how-to
 page_title: How To Data Bind PieSeries Color
 slug: kb-chartview-databind-pieseries-color
 position: 0
-tags: ChartView, PieSeries, Data binding, Styling, MVVM
+tags: radchartview, PieSeries, Data binding, Styling, MVVM
 ticketid: 1397704
 res_type: kb
 ---

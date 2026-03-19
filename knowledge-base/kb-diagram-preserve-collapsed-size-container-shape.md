@@ -5,7 +5,7 @@ description: How to preserve the collapsed size of RadDiagramContainerShape.
 type: how-to
 slug: kb-diagram-preserve-collapsed-size-container-shape
 position: 0
-tags: container,shape,size,preserve,iscollapsed
+tags: raddiagram, container,shape,size,preserve,iscollapsed
 ticketid: 1414353
 res_type: kb
 ---

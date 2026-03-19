@@ -4,7 +4,7 @@ description: This article explains how to enable keyboard input in the Label Fil
 type: how-to
 page_title: Enable Keyboard Input in the RadPivotFieldList Label Filter Window Used in WinForms Application
 slug: kb-pivotgrid-enable-keyboard-input-in-winforms
-tags: wpf, winforms, RadPivotGrid, keyboard input
+tags: radpivotgrid, wpf, winforms, keyboard input
 res_type: kb
 ---
 ## Environment

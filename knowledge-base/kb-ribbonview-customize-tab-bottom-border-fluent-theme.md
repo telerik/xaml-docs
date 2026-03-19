@@ -5,7 +5,7 @@ type: how-to
 page_title: Customize RadRibbonTab bottom border without extracting ControlTemplate in Fluent theme
 slug: kb-ribbonview-customize-tab-bottom-border-fluent-theme
 position: 0
-tags: childrenoftype,underline
+tags: radribbonview, childrenoftype,underline
 ticketid: 1387740
 res_type: kb
 ---

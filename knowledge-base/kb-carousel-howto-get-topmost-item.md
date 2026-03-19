@@ -5,7 +5,7 @@ type: how-to
 page_title: Find the top element in RadCarousel
 slug: kb-carousel-howto-get-topmost-item
 position: 0
-tags: carousel, top, item
+tags: radcarousel, carousel, top, item
 ticketid: 1403251
 res_type: kb
 ---

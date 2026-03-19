@@ -4,7 +4,7 @@ description: This article describes how to show a print preview dialog and print
 type: how-to
 page_title: How to Open Print Preview Dialog for RadGridView
 slug: kb-gridview-printing
-tags: printing,spreadsheet,printpreview,dialog
+tags: radgridview, printing,spreadsheet,printpreview,dialog
 res_type: kb
 ---
 

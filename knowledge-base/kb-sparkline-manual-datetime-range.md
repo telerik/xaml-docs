@@ -5,7 +5,7 @@ page_title: Set Manual Range When Date Time Data is Plotted on the Sparkline
 type: how-to
 slug: kb-sparkline-manual-datetime-range
 position: 0
-tags: datetime,minxvalue,maxxvalue,range
+tags: radsparkline, datetime,minxvalue,maxxvalue,range
 ticketid: 1444803
 res_type: kb
 ---

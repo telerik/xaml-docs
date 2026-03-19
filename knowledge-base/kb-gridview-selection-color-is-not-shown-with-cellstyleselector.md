@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: When Using a CellStyle or CellStyleSelector the Selection Color of the Row is not Shown
 slug: kb-gridview-selection-color-is-not-shown-with-cellstyleselector
 position: 0
-tags: gridview, row, selection, color, not, shown, applied, cellstyleselector
+tags: radgridview, row, selection, color, not, shown, applied, cellstyleselector
 ticketid: 1151336
 res_type: kb
 ---

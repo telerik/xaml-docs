@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Show a Multipage Tiff File in the RadPdfViewer Using TiffBitmapDecoder
 slug: kb-pdfviewer-load-multipage-tiff-using-tiffbitmapdecoder
 position: 0
-tags: pdf, pdfviewer, tiff, tif, tiffbitmapdecoder
+tags: radpdfviewer, pdf, pdfviewer, tiff, tif, tiffbitmapdecoder
 ticketid: 1530181
 res_type: kb
 ---

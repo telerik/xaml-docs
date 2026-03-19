@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Bindings are not Evaluated When Wizard Page is Changed
 slug: kb-wizard-elementname-relativesource-bindings-not-working
 position: 0
-tags: wizard, pages, elementname, relativesource, binding, not, working
+tags: radwizard, pages, elementname, relativesource, binding, not, working
 ticketid: 1444863
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Create a popup for new message in ConversationalUI
 slug: kb-chat-showing-message-desktop-alert
 position: 0
-tags: chat, desktopalert, show, message
+tags: radchat, chat, desktopalert, show, message
 ticketid: 1408996
 res_type: kb
 ---

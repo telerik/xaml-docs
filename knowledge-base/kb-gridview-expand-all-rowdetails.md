@@ -5,7 +5,7 @@ description: Expand or collapse all row details in GridView by binding the Detai
 type: how-to
 slug: kb-gridview-expand-all-rowdetails
 position: 0
-tags: collapse,expand,all,row,details
+tags: radgridview, collapse,expand,all,row,details
 ticketid: 1581543
 res_type: kb
 ---

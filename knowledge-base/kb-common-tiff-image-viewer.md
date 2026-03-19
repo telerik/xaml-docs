@@ -4,7 +4,7 @@ description: This article explains how to create a custom image viewer control t
 type: how-to
 page_title: How to Implement Tif Image Format Viewer
 slug: kb-common-tiff-image-viewer
-tags: tiff,imageviewer,viewer,picture
+tags: radimageeditor, tiff,imageviewer,viewer,picture
 res_type: kb
 ---
 

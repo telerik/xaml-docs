@@ -5,7 +5,7 @@ page_title: Remove scrollbars when exporting RadCartesianChart
 type: how-to
 slug: kb-chartview-howto-export-without-panzoom-scrollbars
 position: 0
-tags: export, chart, remove, scrollbar, cartesianchart
+tags: radchartview, export, chart, remove, scrollbar, cartesianchart
 ticketid: 1459771
 res_type: kb
 ---

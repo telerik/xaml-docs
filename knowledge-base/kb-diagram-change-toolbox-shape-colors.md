@@ -4,7 +4,7 @@ description: How to modify the brush of the drag/dropped shape added from the Ra
 type: how-to
 page_title: Modify the Color of the Shape Dragged from RadDiagramToolbox
 slug: change-shape-colors-raddiagram-wpf
-tags: radDiagram, wpf, shape, color, toolbox, brush
+tags: raddiagram, wpf, shape, color, toolbox, brush
 res_type: kb
 ticketid: 1627931
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Show a Busy Indicator while a Heavy Operation is Executed
 slug: kb-busyindicator-backgroundworker-operation
 position: 0
-tags: busyindicator, perform, execute, heavy, time-consuming, operation, UI, thread
+tags: radbusyindicator, busyindicator, perform, execute, heavy, time-consuming, operation, UI, thread
 ticketid: 1117434
 res_type: kb
 ---

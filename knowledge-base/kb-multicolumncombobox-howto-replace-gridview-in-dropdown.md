@@ -5,7 +5,7 @@ type: how-to
 page_title: Switch the RadGridView element inside the popup for a RadTreeView.
 slug: kb-multicolumncombobox-howto-replace-gridview-in-dropdown
 position: 0
-tags: mccb, multicolumncombobox, treeview, element, dropdown, replace
+tags: radmulticolumncombobox, mccb, multicolumncombobox, treeview, element, dropdown, replace
 ticketid: 1520617
 res_type: kb
 ---

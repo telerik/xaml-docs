@@ -5,7 +5,7 @@ page_title: Filters Work Only the First Time in RadGridView
 type: how-to
 slug: kb-gridview-non-working-filters-with-custom-control-template-of-filtering-control
 position: 0
-tags: gridview, distinct values, filters, not working
+tags: radgridview, gridview, distinct values, filters, not working
 res_type: kb
 ticketid: 1629324
 ---

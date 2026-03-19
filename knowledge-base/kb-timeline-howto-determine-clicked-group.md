@@ -5,7 +5,7 @@ type: how-to
 page_title: Check which TimelineItemGroupControl was clicked
 slug: kb-timeline-howto-determine-clicked-group
 position: 0
-tags: timeline, group, mouse, click, timelineitemgroupcontrol
+tags: radtimeline, timeline, group, mouse, click, timelineitemgroupcontrol
 ticketid: 1453129
 res_type: kb
 ---

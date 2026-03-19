@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Replace the Icon of FilteringDropDown in RadGridView
 slug: kb-gridview-change-funnel-filter-icon
 position: 0
-tags: glyph, filteringdropdown
+tags: radgridview, glyph, filteringdropdown
 ticketid: 278258
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Convert mouse coordinates to datetime in eventspanel
 slug: kb-ganttview-show-datetime-tooltip-in-eventspanel
 position: 0
-tags: ganttview, datetime, tooltip, mouse, position, eventspanel
+tags: radganttview, ganttview, datetime, tooltip, mouse, position, eventspanel
 ticketid: 1389043
 res_type: kb
 ---

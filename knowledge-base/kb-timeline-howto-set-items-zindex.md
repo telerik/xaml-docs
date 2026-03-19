@@ -5,7 +5,7 @@ type: howto
 page_title: Change the stacking of the items shown in the RadTimeLine
 slug: kb-timeline-howto-set-items-zindex
 position: 0
-tags: zindex, items, stack, timeline, same, row
+tags: radtimeline, zindex, items, stack, timeline, same, row
 ticketid: 1459163
 res_type: kb
 ---

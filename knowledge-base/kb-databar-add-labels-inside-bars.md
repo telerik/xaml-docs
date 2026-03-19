@@ -5,7 +5,7 @@ type: how-to
 page_title: Place Labels In RadStackedDataBar and RadStacked100DataBar
 slug: kb-databar-add-labels-inside-bars
 position: 0
-tags: databar, add, labels, inside, bars, radstackeddatabar, radstacked100databar
+tags: raddatabar, databar, add, labels, inside, bars, radstackeddatabar, radstacked100databar
 ticketid: 1449620
 res_type: kb
 ---

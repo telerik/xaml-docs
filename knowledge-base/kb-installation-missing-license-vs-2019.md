@@ -5,7 +5,7 @@ page_title: No Product Reference Detected Licensing Error Shown in .NET Framewor
 type: troubleshooting
 slug: kb-installation-missing-license-vs-2019
 position: 0
-tags: installation, telerik, licensing, license, key, not, found
+tags: licensing, telerik, licensing, license, key, not, found
 res_type: kb
 ---
 

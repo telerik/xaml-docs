@@ -5,7 +5,7 @@ description: Replace the Color of the GridView ControlPanel.
 type: how-to
 slug: kb-gridview-change-control-panel-background
 position: 0
-tags: background,brush,controlpanel,datagrid,gridview
+tags: radgridview, background,brush,controlpanel,datagrid,gridview
 ticketid: 1425610
 res_type: kb
 ---

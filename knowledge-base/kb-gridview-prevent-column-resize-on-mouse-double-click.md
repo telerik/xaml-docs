@@ -5,7 +5,7 @@ description: This article shows how to prevent the column from resizing when dou
 type: how-to
 slug: kb-gridview-prevent-column-resize-on-mouse-double-click
 position: 0
-tags: column resize, double-click resize, mouse click resize
+tags: radgridview, column resize, double-click resize, mouse click resize
 ticketid: 1577940
 res_type: kb
 ---

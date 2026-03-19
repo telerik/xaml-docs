@@ -5,7 +5,7 @@ page_title: Bring Back the Focus to RadMultiColumnComboBox or GridViewMultiColum
 type: how-to
 slug: kb-multicolumncombobox-return-focus-after-popup-close
 position: 0
-tags: loses,focus,dropdown,close
+tags: radmulticolumncombobox, loses,focus,dropdown,close
 ticketid: 1449317
 res_type: kb
 ---

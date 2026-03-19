@@ -5,7 +5,7 @@ description: This article shows how to sort a DataTable column that contains squ
 type: how-to
 slug: kb-gridview-sort-datatable-column-that-has-square-brackets-in-its-name
 position: 0
-tags: gridview, datatable, square bracket, sort
+tags: radgridview, datatable, square bracket, sort
 ticketid: 1584470
 res_type: kb
 ---

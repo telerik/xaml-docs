@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Wrong 3D rendering of RadChartView3D On Some Hardware - for example Intel Iris Graphics
 slug: kb-chartview3d-general-rendering-issue
 position: 0
-tags: 3d,chart,cartesian,chartview,rendering,issue,fragmented,glitch,intel,iris
+tags: radchartview3d, 3d,chart,cartesian,chartview,rendering,issue,fragmented,glitch,intel,iris
 ticketid: 1592210
 res_type: kb
 ---

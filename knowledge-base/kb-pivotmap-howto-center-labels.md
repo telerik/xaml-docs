@@ -5,7 +5,7 @@ type: how-to
 page_title: Position the labels of RadTreeMapItems without children in the center 
 slug: kb-pivotmap-howto-center-labels
 position: 0
-tags: label, radtreemapitem, position, center
+tags: radpivotgrid, label, radtreemapitem, position, center
 ticketid: 1444422
 res_type: kb
 ---

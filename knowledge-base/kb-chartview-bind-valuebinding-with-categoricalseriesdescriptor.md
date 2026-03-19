@@ -5,7 +5,7 @@ type: how-to
 page_title: How to DataBind ValuePath of CategoricalSeriesDescriptor 
 slug: kb-chartview-bind-valuebinding-with-categoricalseriesdescriptor
 position: 0
-tags: ValuePath, IValueConverter, CategoricalSeriesDescriptor, ValueBinding
+tags: radchartview, ValuePath, IValueConverter, CategoricalSeriesDescriptor, ValueBinding
 ticketid: 1431542
 res_type: kb
 ---

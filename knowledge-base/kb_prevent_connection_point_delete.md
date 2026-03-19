@@ -5,7 +5,7 @@ type: how-to
 page_title: Prevent RadDiagramConnection Point from Delete
 slug: kb-prevent-diagramconnection-point-from-delete
 position: 0
-tags: raddiagramconnection, point, delete, prevent
+tags: raddiagram, raddiagramconnection, point, delete, prevent
 ticketid: 1449311
 res_type: kb
 ---

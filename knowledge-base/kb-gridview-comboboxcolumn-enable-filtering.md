@@ -5,7 +5,7 @@ description: How to turn on filtering of the ComboBox in GridViewComboBoxColumn 
 type: how-to
 slug: kb-gridview-comboboxcolumn-enable-filtering
 position: 0
-tags: gridview, combobox, column, filterin, datagrid
+tags: radgridview, gridview, combobox, column, filterin, datagrid
 ticketid: 1576072
 res_type: kb
 category: knowledge-base

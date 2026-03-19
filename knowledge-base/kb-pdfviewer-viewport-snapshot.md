@@ -5,7 +5,7 @@ type: how-to
 page_title: How to create a Viewport snapshot in RadPdfViewer
 slug: kb-pdfviewer-viewport-snapshot
 position: 0
-tags: pdf, pdfviewer, viewport, snapshot, image
+tags: radpdfviewer, pdf, pdfviewer, viewport, snapshot, image
 ticketid: 1512091
 res_type: kb
 ---
@@ -20,7 +20,7 @@ res_type: kb
 	    </tr>
 	    <tr>
             <td>Product</td>
-            <td>RadPDFViewer for WPF</td>
+            <td>RadPdfViewer for WPF</td>
 	    </tr>
     </tbody>
 </table>

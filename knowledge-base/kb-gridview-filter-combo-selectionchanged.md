@@ -5,7 +5,7 @@ type: how-to
 page_title: Add SelectionChanged Handler to the RadComboBoxes of RadGridView's FilteringControl
 slug: kb-gridview-filter-combo-selectionchanged
 position: 0
-tags: subscribe,selectionchanged,event,combobox,filteringcontrol
+tags: radgridview, subscribe,selectionchanged,event,combobox,filteringcontrol
 ticketid: 838443
 res_type: kb
 ---

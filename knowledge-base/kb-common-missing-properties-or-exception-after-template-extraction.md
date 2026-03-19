@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: No Controls When Custom Template is Applied
 slug: kb-common-missing-properties-or-exception-after-template-extraction
 position: 0
-tags: radtimeline, radtimebar, radgridview
+tags: radgridview, radtimeline, radtimebar, 
 ticketid: 1409293
 res_type: kb
 ---

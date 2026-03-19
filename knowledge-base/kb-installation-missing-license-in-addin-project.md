@@ -5,7 +5,7 @@ page_title: Telerik License Key Invalid or Missing Message Box and Watermark Dis
 type: troubleshooting
 slug: kb-installation-missing-license-addin-project
 position: 0
-tags: installation, telerik, licensing, license, key, not, found, addin
+tags: licensing, telerik, licensing, license, key, not, found, addin
 res_type: kb
 ---
 

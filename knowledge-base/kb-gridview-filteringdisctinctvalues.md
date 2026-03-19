@@ -5,7 +5,7 @@ type: how-to
 page_title: Filtering Distinct Values in RadGridView Column For WPF
 slug: kb-gridview-filtering-enum-disctinct-values
 position: 0
-tags: gridView,giltering,distinct,values
+tags: radgridview, giltering,distinct,values
 ticketid: 1615231
 res_type: kb
 ---

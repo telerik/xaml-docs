@@ -5,7 +5,7 @@ type: how-to
 page_title: Enlarge the CheckBox shown by the GridViewSelectColumn
 slug: kb-gridview-howto-increase-size-checkbox-selectcolumn
 position: 0
-tags: gridview, selectcolumn, increase, checkbox, size
+tags: radgridview, selectcolumn, increase, checkbox, size
 ticketid: 1403577
 res_type: kb
 ---

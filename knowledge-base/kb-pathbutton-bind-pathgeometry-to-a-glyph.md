@@ -5,7 +5,7 @@ type: how-to
 page_title: Setting RadPathButton PathGeometry to Glyph
 slug: kb-pathbutton-bind-pathgeometry-to-a-glyph
 position: 0
-tags: pathbutton, pathgeometry, glyph, binding
+tags: radbuttons, pathbutton, pathgeometry, glyph, binding
 ticketid: 1401804
 res_type: kb
 ---

@@ -5,7 +5,7 @@ page_title: Cancel Invalid Cell Edit Mode on Button Click
 type: how-to
 slug: kb-gridview-cancel-edit-on-lostfocus
 position: 0
-tags: lostfocus,gotfocus,invalid,validation,cell,cancel
+tags: radgridview, lostfocus,gotfocus,invalid,validation,cell,cancel
 ticketid: 1446704
 res_type: kb
 ---

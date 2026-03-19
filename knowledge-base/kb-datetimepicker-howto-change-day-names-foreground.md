@@ -5,7 +5,7 @@ type: how-to
 page_title: Change the Foreground of specific calendar buttons
 slug: kb-datetimepicker-howto-change-day-names-foreground
 position: 0
-tags: change, foreground, day, short, names
+tags: raddatetimepicker, change, foreground, day, short, names
 ticketid: 1448987
 res_type: kb
 ---

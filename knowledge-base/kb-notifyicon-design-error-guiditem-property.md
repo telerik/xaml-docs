@@ -4,7 +4,7 @@ description: This article shows how to resolve a design-time error that is displ
 type: troubleshooting
 page_title: Resolve Design-Time Error that is Displayed when Using the GuidItem Property in XAML
 slug: kb-notifyicon-design-error-guiditem-property
-tags: notifyicon, design-time, guiditem, guid, item
+tags: radnotifyicon, notifyicon, design-time, guiditem, guid, item
 ticketid: 1655464
 res_type: kb
 ---

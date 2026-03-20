@@ -1,11 +1,11 @@
 ---
 title: Application Crash on Load with RadWebCam - MFCreateDeviceSource failed: WIN32_ERROR_NOT_FOUND
-description: Resolving application crash when upgrading to RadWebCam with error MFCreateDeviceSource failed: WIN32_ERROR_NOT_FOUND.
+description: Resolving application crash when upgrading to RadWebCam with error MFCreateDeviceSource failed WIN32_ERROR_NOT_FOUND.
 type: troubleshooting
 page_title: RadWebCam Crash on Load Due to MFCreateDeviceSource Error
 meta_title: RadWebCam Crash on Load Due to MFCreateDeviceSource Error
 slug: radwebcam-mfcreatedevicesource-error
-tags: webcam, ui-for-wpf, radwebcam, mfcreatedevicesource, skia-sharp, package-config, win32-error
+tags: radwebcam, ui-for-wpf, radwebcam, mfcreatedevicesource, skia-sharp, package-config, win32-error
 res_type: kb
 ticketid: 1708478
 ---
@@ -43,5 +43,5 @@ To resolve the issue, follow these steps:
 
 ## See Also
 
-- [RadWebCam Overview](https://docs.telerik.com/devtools/wpf/controls/radwebcam/overview)
-- [Telerik UI for WPF Documentation](https://docs.telerik.com/devtools/wpf/introduction)
+* [RadWebCam Overview](https://docs.telerik.com/devtools/wpf/controls/radwebcam/overview)
+* [Telerik UI for WPF Documentation](https://docs.telerik.com/devtools/wpf/introduction)

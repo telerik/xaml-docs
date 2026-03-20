@@ -5,7 +5,7 @@ type: how-to
 page_title: Set RadWindow Owner to Form Handle in Telerik UI for WPF
 meta_title: Set RadWindow Owner to Form Handle in Telerik UI for WPF
 slug: set-radwindow-owner-to-form-handle-wpf
-tags: ui for wpf, radwindow, owner, winforms, handle, getwindowownerhandle, elementhost
+tags: radwindow, ui for wpf, radwindow, owner, winforms, handle, getwindowownerhandle, elementhost
 res_type: kb
 ticketid: 1711525
 ---

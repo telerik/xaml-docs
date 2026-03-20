@@ -1,7 +1,7 @@
 ---
 title: Command Support
 page_title: Command Support
-description: Check our &quot;Command Support&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+description: Check our Command Support documentation article for the RadTreeView {{ site.framework_name }} control.
 slug: radtreeview-features-command-support
 tags: command,support
 published: True
@@ -15,12 +15,12 @@ The purpose of this article is to introduce you the command support of the __Rad
 	  
 ## Overview
 
-The __RadTreeViewItem__ exposes a __Command__ property of type __ICommand__. You can use this property to trigger custom logic defined in your business object. Furthermore, you can set the __CommandExecutionTrigger__ property. This property is an enumeration which controls whether the command should be executed after a __Click__ or a __DoubleClick__ on the corresponding __RadTreeViewItem__.
+The __RadTreeViewItem__ exposes a __Command__ property of type __ICommand__. You can use this property to trigger custom logic defined in your business object. Furthermore, you can set the __CommandExecutionTrigger__ property. This property is an enumeration that controls whether the command should be executed after a __Click__ or a __DoubleClick__ on the corresponding __RadTreeViewItem__.
 		
 
 ## Demonstration
 
-In this section we will demonstrate how you can trigger custom logic implemented in your business object using the __Command Support__ of the __RadTreeViewItem__. Hence we will need to create a custom class implementing the __INotifyPropertyChanged__ interface and exposing the following properties:
+In this section, we will demonstrate how you can trigger custom logic implemented in your business object using the __Command Support__ of the __RadTreeViewItem__. Hence, we will need to create a custom class implementing the __INotifyPropertyChanged__ interface and exposing the following properties:
 		
 
 * __Header__ of type __string__
@@ -219,9 +219,6 @@ Furthermore, we can create a __ViewModel__ class which will fill and expose an _
 ```
 
 In MVVM scenarios it is best to use a __Style__ to set the __Command__ and __CommandExecutionTrigger__ properties of the __RadTreeViewItems__. For this purpose we will also allow the editing of items and we will use the boolean __IsInEditMode__ property defined in the custom __ItemModel__ class to set the corresponding __RadTreeViewItem__ in edit mode. This will be done in the __OnEditCommandExecute()__ method implemented in the __ViewModel__ class. In order to differ the item that invokes the command we can pass each __RadTreeViewItem's DataContext__ as __CommandParameter__ to the method where custom logic will be implemented. In order to achieve this we can use the __RelativeSource__ binding.
-		{% if site.site_name == 'WPF' %}
-
-
 
 ```XAML
 	<Grid>
@@ -243,29 +240,3 @@ In MVVM scenarios it is best to use a __Style__ to set the __Command__ and __Com
 	</Grid>
 ```
 
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
-
-
-
-```XAML
-	<Grid>
-		<Grid.Resources>
-			<telerik:HierarchicalDataTemplate x:Key="HDT" ItemsSource="{Binding Children}">
-				<TextBlock Text="{Binding Header, Mode=TwoWay}" />
-			</telerik:HierarchicalDataTemplate>
-			<Style TargetType="telerik:RadTreeViewItem">
-				<Setter Property="Command" Value="{Binding EditCommand}" />
-				<Setter Property="CommandParameter" Value="{Binding}" />
-				<Setter Property="CommandExecutionTrigger" Value="DoubleClick" />
-				<Setter Property="IsInEditMode" Value="{Binding IsInEditMode, Mode=TwoWay}" />
-			</Style>
-		</Grid.Resources>
-		<telerik:RadTreeView IsEditable="True"
-						 IsExpandOnDblClickEnabled="False"
-						 ItemTemplate="{StaticResource HDT}"
-						 ItemsSource="{Binding Items}" />
-	</Grid>
-```
-
-{% endif %}

@@ -1,6 +1,6 @@
 ---
-title: Application Crash on Load with RadWebCam - MFCreateDeviceSource failed: WIN32_ERROR_NOT_FOUND
-description: Resolving application crash when upgrading to RadWebCam with error MFCreateDeviceSource failed WIN32_ERROR_NOT_FOUND.
+title: Application Crash on Load with RadWebCam MFCreateDeviceSource failed with WIN32_ERROR_NOT_FOUND
+description: Resolving application crash when upgrading to RadWebCam with MFCreateDeviceSource failed error WIN32_ERROR_NOT_FOUND.
 type: troubleshooting
 page_title: RadWebCam Crash on Load Due to MFCreateDeviceSource Error
 meta_title: RadWebCam Crash on Load Due to MFCreateDeviceSource Error

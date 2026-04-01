@@ -49,8 +49,6 @@ RadSpreadsheet exposes several properties that enable you to control the way the
 	this.radSpreadsheet.SelectionStroke = strokeBrush;
 	this.radSpreadsheet.SelectionStrokeThickness = 2;
 ```
-
-#### **[VB.NET] Example 2: Customizing selection**
 ```VB.NET
 
 	Dim strokeBrush As Brush = New SolidColorBrush(Colors.Green)

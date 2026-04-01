@@ -27,11 +27,11 @@ res_type: kb
 
 ## Description
 
-How to prevent RadDiagramConnection point from delete.
+How to prevent the RadDiagramConnection point from being deleted.
 
 ## Solution
 
-To achieve this requirement you can handle the __PreviewMouseLeftButtonDown__ event of RadDiagram in the situation when Ctrl is pressed and a RadDiagramConnection point is under the mouse. 
+To achieve this requirement, you can handle the __PreviewMouseLeftButtonDown__ event of RadDiagram in the situation when Ctrl is pressed, and a RadDiagramConnection point is under the mouse. 
 
 __Example 1: Prevent RadDiagramConnection Point from Delete__
 ```C#
@@ -54,4 +54,5 @@ private void Diagram_PreviewMouseLeftButtonDown(object sender, System.Windows.In
 		}
 	}
 }
+
 ```

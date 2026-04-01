@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Remove Content Control in RichTextBox Context Menu for WPF
 meta_title: How to Remove Content Control in RichTextBox Context Menu for WPF
 slug: remove-content-control-richtextbox-context-menu
-tags: richtextbox, ui for wpf, content control, context menu, delete
+tags: radrichtextbox, ui for wpf, content control, context menu, delete
 res_type: kb
 ticketid: 1712424
 ---

@@ -25,12 +25,11 @@ RadSpreadsheet exposes several properties that enable you to control the way the
 #### **Figure 1: Customized selection in RadSpreadsheet**
 ![Customized Selection](images/RadSpreadsheet_HowTo_Customize_Selection_01.png)
 
+The examples below demonstrate one way to customize the properties of the selection in XAML and in code-behind in order to achieve the result shown in the picture above.
 
-**Example 1** and **Example 2** demonstrate how you could customize the properties of the selection in XAML and in code respectively to achieve the result shown in **Figure 1**. 
+__Customizing selection__
 
-#### **[XAML] Example 1: Customizing selection**
 ```XAML
-
 	<telerik:RadSpreadsheet x:Name="radSpreadsheet" SelectionStrokeThickness="2" SelectionStroke="Green">
 	    <telerik:RadSpreadsheet.SelectionFill>
 	        <SolidColorBrush Color="GreenYellow" Opacity="0.5" />
@@ -38,9 +37,9 @@ RadSpreadsheet exposes several properties that enable you to control the way the
 	</telerik:RadSpreadsheet>
 ```
 
-#### **[C#] Example 2: Customizing selection**
-```C#
+__Customizing selection__ 
 
+```C#
 	Brush strokeBrush = new SolidColorBrush(Colors.Green);
 	Brush fillBrush = new SolidColorBrush(Colors.GreenYellow);
 	fillBrush.Opacity = 0.5;

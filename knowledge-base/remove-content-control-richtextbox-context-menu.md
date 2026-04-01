@@ -20,7 +20,7 @@ ticketid: 1712424
 </tr>
 <tr>
 <td>Version</td>
-<td>Current</td>
+<td>2026.1.211</td>
 </tr>
 </tbody>
 </table>
@@ -111,6 +111,6 @@ private SdtRangeStart GetContainingSdtRangeStart(DocumentPosition caretPosition)
 
 ## See Also
 
-- [RichTextBox Overview](https://docs.telerik.com/devtools/wpf/controls/richtextbox/overview)
-- [Context Menu Customization in RichTextBox](https://docs.telerik.com/devtools/wpf/controls/richtextbox/features/context-menu)
+- [RichTextBox Overview]({%slug radrichtextbox-overview%})
+- [Context Menu Customization in RichTextBox]({%slug radrichtextbox-features-context-menu%})
 - [RadRichTextBox API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.radrichtextbox)

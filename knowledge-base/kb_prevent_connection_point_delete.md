@@ -47,7 +47,7 @@ private void Diagram_PreviewMouseLeftButtonDown(object sender, System.Windows.In
 			var transformedPosition = this.diagram.GetTransformedPoint(position);
 			var relativePoint = new Point(transformedPosition.X - 5, transformedPosition.Y - 5);
 			var rect = new Rect(relativePoint, new Size(10, 10));
-			if (connection.ConnectionPoints.Any(rect.Contains))
+			if (selectedConnection.ConnectionPoints.Any(rect.Contains))
 			{
 				e.Handled = true;
 			}

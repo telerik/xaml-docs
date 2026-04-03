@@ -53,7 +53,7 @@ __Example 2: Adding RadListBoxItems__
 	</telerik:RadListBox>
 ```
 
-#### __[XAML] Example 3: Binding RadListBox
+#### __[XAML] Example 3: Binding RadListBox__
 
 ```XAML
 	<telerik:RadListBox x:Name="radListBox" Width="200" 

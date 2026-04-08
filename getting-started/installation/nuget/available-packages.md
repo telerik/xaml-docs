@@ -23,21 +23,13 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 
 ### Full Packages (Local)
 
-* `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Xaml.zip`&mdash;Contains `.nupkg` files for the following __full packages__:
-	* `Telerik.UI.for.Wpf.462.Xaml`
-	* `Telerik.UI.for.Wpf.80.Xaml`
+The `Telerik_UI_for_WPF_<version number>__NuGet_Separate_Packages_<Xaml or NoXaml>.zip` file contains the separate `.nupkg` package files, along with one big full package that references all separate packages. 
 
-	Each of these packages contains all Telerik UI for WPF (Xaml) dlls for the corresponding .NET framework. _The number _462__ means __.NET 4.6.2__, __80__ means __.NET 8_ and so on. The __.Xaml__ part at the ending of the package name indicates that it contains the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
-	
-* `Telerik_UI_for_WPF_<version number>_Dev_NuGet_NoXaml.zip`&mdash;Contains `.nupkg` files for the following __full packages__:	
-	* `Telerik.UI.for.Wpf.462`		
-	* `Telerik.UI.for.Wpf.80`
-	
-	Each of these packages contains the all Telerik UI for WPF (NoXaml) dlls for the corresponding .NET framework. Compared to the previous set of packages, the names here don't end with __.Xaml__ which indicates that they contain the [NoXaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
+The full package is named `Telerik.UI.for.Wpf.AllControls.<Xaml or NoXaml>.<version number>`
 	
 ### Separate Packages (Local)
 
-* `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Separate_Packages_Xaml.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
+* `Telerik_UI_for_WPF_<version number>_NuGet_Separate_Packages_Xaml.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
 	* `Telerik.Windows.Controls.for.Wpf.Xaml`
 	* `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml`
 	* `Telerik.Windows.Controls.GridView.for.Wpf.Xaml`
@@ -63,17 +55,8 @@ There is an [online package source]({%slug nuget-package-source-setup%}) that ca
 
 ### Full Packages (Server)
 
-The online package source contains full packages only for the .NET and later assemblies.
-
-* `Telerik.UI.for.Wpf.80`
-* `Telerik.UI.for.Wpf.80.Xaml`
-
-These packages contain all Telerik dlls for the corresponding .NET version. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
-
 * `Telerik.UI.for.Wpf.AllControls.NoXaml`
 * `Telerik.UI.for.Wpf.AllControls.Xaml`
-
-The __AllControls__ packages contain all Telerik assemblies for all distributed .NET versions.
 
 ### Separate Packages (Server)
 

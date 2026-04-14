@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Buttons
+namespace DragDropManagerExample
 {
     public partial class MainWindow : Window
     {

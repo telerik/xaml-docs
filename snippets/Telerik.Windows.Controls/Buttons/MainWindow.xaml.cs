@@ -12,7 +12,6 @@ namespace Buttons
         // >> button-getting-started-click
         private void RadButton_Click(object sender, RoutedEventArgs e)
         {
-
         }
         // << button-getting-started-click
     }

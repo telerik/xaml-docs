@@ -1,5 +1,5 @@
 ---
-title: Working with Selection
+title: Selection
 page_title: Working with Selection
 description: Check our &quot;Working with Selection&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
 slug: radspreadsheet-ui-working-with-selection
@@ -370,3 +370,12 @@ __Selecting the current region programmatically__
 ```
 
 The current region can be selected also using the `Ctrl+Shift+*` keyboard combination.
+
+## Expand Header Click Selection to Merged Cells Range
+
+The header click selection will selected the corresponding row or column only. Setting the `SpreadsheetSelectionExtensions.ExpandHeaderSelectionToMergedRange` attached property to `True` will automatically expand the selection to adjacent headers, if the clicked row/column contains merged cells.
+
+```XAML
+<telerik:radSpreadsheet spreadsheetUtils:SpreadsheetSelectionExtensions.ExpandHeaderSelectionToMergedRange="True" />
+```
+

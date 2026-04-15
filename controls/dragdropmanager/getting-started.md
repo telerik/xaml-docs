@@ -37,7 +37,7 @@ For the purpose of this tutorial we will create a business object ApplicationInf
 
 __Create ApplicationInfo__
 <snippet id='dragdropmanager-getting-started-application-info' />
-```VB.NET
+```vb.net
 	Public Class ApplicationInfo
 	 Public Property Price() As [Double]
 	  Get
@@ -124,59 +124,9 @@ __Create ApplicationInfo__
 
 Then we need to define our ListBoxes with suitable ItemTemplates. We also enable dragging the ListBoxItems (through style) and allow drop to each of the ListBoxes (through setting AllowDrop property):
 
-{% if site.site_name == 'Silverlight' %}
-
 __Define ListBoxes, style and DataTemplate__
-```XAML
-	<Grid x:Name="LayoutRoot" Background="White">
-	      <Grid.Resources>
-	          <Style TargetType="ListBoxItem">
-	              <Setter Property="telerik:DragDropManager.AllowDrag" Value="True"></Setter>
-	          </Style>
-	          <DataTemplate x:Key="ApplicationTemplate">
-	              <StackPanel Orientation="Horizontal">
-	                  <Image Source="{Binding IconPath}"/>
-	                  <TextBlock Margin="5" Text="{Binding Name}" VerticalAlignment="Center"></TextBlock>
-	              </StackPanel>
-	          </DataTemplate>
-	       </Grid.Resources>
-	       <Grid.ColumnDefinitions>
-	           <ColumnDefinition></ColumnDefinition>
-	           <ColumnDefinition></ColumnDefinition>
-	       </Grid.ColumnDefinitions>
-	       <ListBox x:Name="ApplicationList" ItemTemplate="{StaticResource ApplicationTemplate}" AllowDrop="True"/>
-	       <ListBox x:Name="MyAppList" Background="Gray" Grid.Column="1"  
-	                ItemTemplate="{StaticResource ApplicationTemplate}" AllowDrop="True"/>
-	</Grid>
-```
 
-{% else %}
-
-__Define ListBoxes, style and DataTemplate__
-```XAML
-	<Grid x:Name="LayoutRoot" Background="White">
-	      <Grid.Resources>
-	          <Style TargetType="ListBoxItem">
-	              <Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True"></Setter>
-	          </Style>
-	          <DataTemplate x:Key="ApplicationTemplate">
-	              <StackPanel Orientation="Horizontal">
-	                  <Image Source="{Binding IconPath}"/>
-	                  <TextBlock Margin="5" Text="{Binding Name}" VerticalAlignment="Center"></TextBlock>
-	              </StackPanel>
-	          </DataTemplate>
-	       </Grid.Resources>
-	       <Grid.ColumnDefinitions>
-	           <ColumnDefinition></ColumnDefinition>
-	           <ColumnDefinition></ColumnDefinition>
-	       </Grid.ColumnDefinitions>
-	       <ListBox x:Name="ApplicationList" ItemTemplate="{StaticResource ApplicationTemplate}" AllowDrop="True"/>
-	       <ListBox x:Name="MyAppList" Background="Gray" Grid.Column="1"  
-	                ItemTemplate="{StaticResource ApplicationTemplate}" AllowDrop="True"/>
-	</Grid>
-```
-
-{% endif %}
+<snippet id='dragdropmanager-getting-started-xaml' />
 
 >To use the DragDropManager and its components in XAML you have to declare the following namespace:
 >	*xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"*
@@ -184,30 +134,15 @@ __Define ListBoxes, style and DataTemplate__
 Afterwards we need to set the ItemsSource of the controls:
 
 __Set ItemsSource__
-```C#
-	ApplicationList.ItemsSource = ApplicationInfo.GenerateApplicationInfos();
-	MyAppList.ItemsSource = new ObservableCollection<ApplicationInfo>();
-```
-```VB.NET
+<snippet id='dragdropmanager-getting-started-setting-itemssource' />
+```vb.net
 	ApplicationList.ItemsSource = ApplicationInfo.GenerateApplicationInfos()
 	MyAppList.ItemsSource = New ObservableCollection(Of ApplicationInfo)()
 ```
 
 __Attach Drag-Drop event handlers__
-```C#
-	DragDropManager.AddDragInitializeHandler(ApplicationList, OnDragInitialize);
-	DragDropManager.AddDragInitializeHandler(MyAppList, OnDragInitialize);
-	
-	DragDropManager.AddGiveFeedbackHandler(ApplicationList, OnGiveFeedback);
-	DragDropManager.AddGiveFeedbackHandler(MyAppList, OnGiveFeedback);
-	
-	DragDropManager.AddDragDropCompletedHandler(ApplicationList, OnDragCompleted);
-	DragDropManager.AddDragDropCompletedHandler(MyAppList, OnDragCompleted);
-	
-	DragDropManager.AddDropHandler(ApplicationList, OnDrop);
-	DragDropManager.AddDropHandler(MyAppList, OnDrop);	
-```
-```VB.NET
+<snippet id='dragdropmanager-getting-started-dnd-events-subscribing' />
+```vb.net
 	DragDropManager.AddDragInitializeHandler(ApplicationList, New DragInitializeEventHandler(AddressOf OnDragInitialize))
 	DragDropManager.AddDragInitializeHandler(MyAppList, New DragInitializeEventHandler(AddressOf OnDragInitialize))
 	
@@ -226,18 +161,8 @@ __Attach Drag-Drop event handlers__
 Then on DragInitialize we define the data that will be dragged as well as the visual representation. We also set DragDropEffects to all to allow drop on all scenarios.
 
 __Implement OnDragInitialize__
-```C#
-	private void OnDragInitialize(object sender, DragInitializeEventArgs args)
-	{
-	    args.AllowedEffects = DragDropEffects.All;
-	    var payload = DragDropPayloadManager.GeneratePayload(null);
-	    var data = ((FrameworkElement)args.OriginalSource).DataContext;
-	    payload.SetData("DragData", data);
-	    args.Data = payload;
-	    args.DragVisual = new ContentControl { Content = data, ContentTemplate = LayoutRoot.Resources["ApplicationTemplate"] as DataTemplate };
-	}
-```
-```VB.NET
+<snippet id='dragdropmanager-getting-started-draginitialize' />
+```vb.net
 	Private Sub OnDragInitialize(ByVal sender As Object, ByVal args As DragInitializeEventArgs)
 		args.AllowedEffects = DragDropEffects.All
 		Dim payload = DragDropPayloadManager.GeneratePayload(Nothing)
@@ -253,14 +178,8 @@ __Implement OnDragInitialize__
 We also set mouse cursor to be arrow:
 
 __Implement OnGiveFeedback__
-```C#
-	private void OnGiveFeedback(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs args)
-	{
-	    args.SetCursor(Cursors.Arrow);
-	    args.Handled = true;
-	}
-```
-```VB.NET
+<snippet id='dragdropmanager-getting-started-givefeedback' />
+```vb.net
 	Private Sub OnGiveFeedback(sender As Object, args As Telerik.Windows.DragDrop.GiveFeedbackEventArgs)
 	 args.SetCursor(Cursors.Arrow)
 	 args.Handled = True
@@ -269,52 +188,9 @@ __Implement OnGiveFeedback__
 
 Finally, we add logic, that will be executed when drag and drop operations finish:
 
-{% if site.site_name == 'Silverlight' %}
-
 __Implement OnDrop__
-```C#
-	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs args)
-	{
-	    var data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData");
-	    ((IList)(sender as ListBox).ItemsSource).Add(data);
-	}
-	
-	public void OnDragCompleted(object sender, Telerik.Windows.DragDrop.DragDropCompletedEventArgs args)
-	{
-	    var data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData");
-	    ((IList)(sender as ListBox).ItemsSource).Remove(data);
-	}
-```
-```VB.NET
-	Private Sub OnDrop(ByVal sender As Object, ByVal args As Telerik.Windows.DragDrop.DragEventArgs)
-		Dim data = CType(args.Data, DataObject).GetData("DragData")
-		CType((TryCast(sender, ListBox)).ItemsSource, IList).Add(data)
-	End Sub
-	
-	Public Sub OnDragDropCompleted(ByVal sender As Object, ByVal args As Telerik.Windows.DragDrop.DragDropCompletedEventArgs)
-		Dim data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData")
-		CType((TryCast(sender, ListBox)).ItemsSource, IList).Remove(data)
-	End Sub
-```
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-
-__Implement OnDrop__
-```C#
-	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs args)
-	{
-	    var data = ((DataObject)args.Data).GetData("DragData");
-	    ((IList)(sender as ListBox).ItemsSource).Add(data);
-	}
-	
-	public void OnDragCompleted(object sender, Telerik.Windows.DragDrop.DragDropCompletedEventArgs args)
-	{
-	    var data = DragDropPayloadManager.GetDataFromObject(args.Data, "DragData");
-	    ((IList)(sender as ListBox).ItemsSource).Remove(data);
-	}
-```
-```VB.NET
+<snippet id='dragdropmanager-getting-started-drop' />
+```vb.net
 	Private Sub OnDrop(ByVal sender As Object, ByVal args As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim data = CType(args.Data, DataObject).GetData("DragData")
 		CType((TryCast(sender, ListBox)).ItemsSource, IList).Add(data)
@@ -326,13 +202,11 @@ __Implement OnDrop__
 	End Sub
 ```
 
-{% endif %}
-
 __Drag between ListBoxes__
 
 ![Drag between ListBoxes](images/DragDropManager_DragBetweenListBoxes.png)
 
-{% if site.site_name == 'WPF' %}> By default the DragDropManager shows the drag visual in a separate window. You have the option to set the `UseAdornerLayer` property of the DragDropManager. After this property is set to __True__, the drag visual will be shown in the AdornerLayer of the MainWindow.{% endif %} 
+> By default the DragDropManager shows the drag visual in a separate window. You have the option to set the `UseAdornerLayer` property of the DragDropManager. After this property is set to __True__, the drag visual will be shown in the AdornerLayer of the MainWindow.
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
@@ -347,7 +221,6 @@ __Drag between ListBoxes__
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}
 
-## See Also
-
+## See Also  
  * [Events]({%slug dragdropmanager-events%})
  * [DragDropManager Migration]({%slug dragdropmanager-migration%})

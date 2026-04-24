@@ -14,7 +14,7 @@ This article demonstrates how you can change the default look of the __RadCartes
 
 * [Customizing Data Points Using DefaultVisualStyle](#customizing-data-points-using-defaultvisualstyle)
 * [Customizing Data Points Using PointTemplate](#customizing-data-points-using-pointtemplate)
-<br />
+
 * [Customizing Point Series](#customizing-point-series)
 	* [PointSeries](#pointseries)
 	* [ScatterPointSeries](#scatterpointseries)

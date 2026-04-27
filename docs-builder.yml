@@ -37,7 +37,7 @@ excluded-files:
 ai-chat-prompt-suggestions:
   - "How to get started with Telerik UI for WPF?"
   - "What components are available in Telerik UI for WPF?"
-  - "How to setup licensing in Telerik UI for WPF?"
+  - "How to set up licensing for Telerik UI for WPF?"
   - "How to use the grid component in Telerik UI for WPF?"
 
 meta:

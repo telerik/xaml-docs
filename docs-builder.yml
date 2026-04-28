@@ -34,6 +34,12 @@ excluded-files:
 - "**/README.md"
 - "**/copyright.md"
 
+ai-chat-prompt-suggestions:
+  - "How to get started with Telerik UI for WPF?"
+  - "What components are available in Telerik UI for WPF?"
+  - "How to set up licensing for Telerik UI for WPF?"
+  - "How to use the grid component in Telerik UI for WPF?"
+
 meta:
     ai-assistant:
         title: AI Coding Assistant

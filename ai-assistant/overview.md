@@ -11,8 +11,6 @@ position: 0
 
 The Telerik UI for WPF AI Coding Assistant is an AI-powered code generation tool available through the [Telerik WPF MCP Server]({%slug ai-mcp-server%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using [Telerik UI for WPF components](https://www.telerik.com/products/wpf/overview.aspx) and APIs.
 
-The coding assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples using the [Telerik UI for WPF components](https://www.telerik.com/products/wpf/overview.aspx) and APIs.
-
 ## Available Tools
 
 The Telerik AI Coding Assistant is available through the [Telerik WPF MCP server]({%slug ai-mcp-server%}) distributed as a NuGet package.
@@ -58,7 +56,7 @@ Access to the Telerik UI for WPF AI Coding Assistant depends on your [Telerik li
 
 \* Perpetual license holders can access the AI Coding Assistant through a [30-day AI Tools trial](https://www.telerik.com/try/ui-for-wpf) or a [Telerik UI for WPF trial](https://www.telerik.com/try/ui-for-wpf). After the trial expires, access is no longer available unless the Perpetual license is converted to a Subscription license.
 
-> All Telerik AI tools share a single request quota for your Telerik account. Usage from the [Telerik MCP server]({%slug ai-mcp-server%}) counts toward the same limit. Complex prompts in the MCP server may consume multiple requests.
+ >tip All Telerik AI tools share a single request limit for your Telerik account. Requests made through the Telerik MCP server count against the same usage quota. When using the Telerik MCP server, one prompt may trigger several requests, depending on the prompt complexity.
 
 ## Privacy
 

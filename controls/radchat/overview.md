@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadChat {{ site.framework_name }} control.
+description: Check our &quot;Overview&quot; documentation article for the RadChat WPF control.
 slug: chat-overview
 tags: overview
 published: True
@@ -9,9 +9,9 @@ position: 0
 CTAControlName: RadChat
 ---
 
-# {{ site.framework_name }} Chat Overview
+# WPF Chat Overview
 
-The __RadChat__ component is exposed as of __R2 2018__. It enables easy implementation of conversational UI in WPF applications, whether by utilizing certain chatbot framework, by following a predefined logical tree, or just for integrating P2P chat capabilites.
+The __RadChat__ component enables easy implementation of conversational UI in WPF applications, whether by utilizing certain chatbot framework, by following a predefined logical tree, or just for integrating P2P chat capabilites.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -21,7 +21,7 @@ The __RadChat__ component is exposed as of __R2 2018__. It enables easy implemen
 
 ![RadChat](images/RadChat_Overview.png)
 
-__Conversational UI's__ features list:
+## Key Features
 
 * __Messages__: A predefined set of built-in messages depending on the type of data that needs to be sent.
 
@@ -30,6 +30,8 @@ __Conversational UI's__ features list:
 * __Overlays__: Calendar, List, Carousel, etc. 
 
 * __Suggested Actions__: Make the user's input easier by adding suggestions.
+
+* __Attachments__: Make the user's input easier by adding suggestions.
 
 * __Type Indicator__: Indicate to the current user that another __Author__ is typing.
 

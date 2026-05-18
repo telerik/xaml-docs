@@ -17,24 +17,16 @@ This topic will go over the available resource keys for localizing the __RadChat
 Below is the list of supported languages.
 
 * **English**
-
 * **German**
-
 * **Spanish**
-
 * **French**
-
 * **Italian**
-
 * **Dutch**
-
 * **Turkish**
 
 ## Resource Keys
 
 __RadChat__ provides strings for localizing various of its elements. In order to be able to distinguish these resources, an unique identifier, called resource key, is assigned to each string that can be localized.
-
-![RadChat Localization](images/RadChat_Localization_01.png)
 
 Key	|	Value
 ---	|	---	
@@ -50,9 +42,9 @@ Chat_Submit | Submit
 Chat_Total | Total
 Chat_WatermarkContent | Type a message...
 Chat_WindSpeed | Wind speed:
+Chat_AICard_Copy | Copy
+Chat_AICard_Retry | Retry
+Chat_Attachment_Download | Download
+Chat_Attachment_DownloadAll | Download All
+Chat_Attachment_Share | Share
 
-
-
-## See Also
-
-* [Localization]({%slug common-localization%})

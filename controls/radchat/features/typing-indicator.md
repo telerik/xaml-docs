@@ -18,14 +18,14 @@ The __TypingIndicator__ functionality of the Conversational UI can be used to in
 
 __Example 1: Setting the TypingIndicator__
 ```C#
-			var textMessage = new TextMessage(this.currentAuthor, "Hello", "sent");
-            textMessage.InlineViewModel.StatusVisibility = Visibility.Visible;
+var textMessage = new TextMessage(this.currentAuthor, "Hello", "sent");
+textMessage.InlineViewModel.StatusVisibility = Visibility.Visible;
 
-            this.chat.AddMessage(textMessage);
+this.chat.AddMessage(textMessage);
 
-            this.chat.TypingIndicatorText = this.otherAuthor.Name + " is typing...";
-            this.chat.TypingIndicatorVisibility = Visibility.Visible;
-            this.chat.TypingIndicatorIcon = new BitmapImage(new Uri("/Images/PeterJohnson.jpeg", UriKind.RelativeOrAbsolute));
+this.chat.TypingIndicatorText = this.otherAuthor.Name + " is typing...";
+this.chat.TypingIndicatorVisibility = Visibility.Visible;
+this.chat.TypingIndicatorIcon = new BitmapImage(new Uri("/Images/PeterJohnson.jpeg", UriKind.RelativeOrAbsolute));
 ```
 
 Setting the __TypingIndicator__ in such manner will have the following result.

@@ -16,7 +16,7 @@ __RadDataForm__ exclusively relies on data binding, so __changes are actually co
      
 {% if site.site_name == 'Silverlight' %}
 
->As of Q2 2014 SP we introduced cancel support for ExpandoObject.
+>note As of Q2 2014 SP we introduced cancel support for ExpandoObject.
   
 {% endif %}
 
@@ -39,6 +39,31 @@ When entering edit mode (i.e. when the __AutoCommit is True), all commands, but 
 ![raddataform-auto-commit-2](images/raddataform-auto-commit-2.png)
 
 __Applying changes__ on the current item keeps the commands enabled. __Moving to the next item__ will automatically commit the current edit operation.
+
+#### __Example 1: Setting AutoCommit to True in XAML__
+
+```XAML
+<UserControl xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+    <Grid>
+        <telerik:RadDataForm x:Name="radDataForm" AutoCommit="True" />
+    </Grid>
+</UserControl>
+```
+
+This XAML configuration keeps `AutoCommit` enabled with the default value.
+
+#### __Example 2: Setting AutoCommit to True in Code__
+
+```C#
+this.radDataForm.AutoCommit = true;
+```
+
+```VB.NET
+Me.radDataForm.AutoCommit = True
+```
+
+Use this configuration when you want __RadDataForm__ to commit pending changes automatically while the user navigates through items or executes commands other than Delete and Cancel.
         
 
 ## AutoCommit Is False
@@ -58,8 +83,39 @@ When entering edit mode, the __Commit and Cancel commands are initially disabled
 ![raddataform-auto-commit-4](images/raddataform-auto-commit-4.png)
 
 __When changes are applied, the Navigation and AddNew commands get disabled__, until the editing operation is committed, or cancelled.
+
+#### __Example 3: Setting AutoCommit to False in XAML__
+
+```XAML
+<UserControl xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+    <Grid>
+        <telerik:RadDataForm x:Name="radDataForm" AutoCommit="False" />
+    </Grid>
+</UserControl>
+```
+
+Set `AutoCommit` to `False` in XAML when the edit operation must remain pending until the user confirms it.
+
+#### __Example 4: Setting AutoCommit to False in Code__
+
+```C#
+this.radDataForm.AutoCommit = false;
+```
+
+```VB.NET
+Me.radDataForm.AutoCommit = False
+```
+
+Use this mode when you need the user to confirm or cancel the current edit operation explicitly before moving to another item.
         
 
->As TextBox’s Text property binding is triggered on control’s LostFocus, __any UI initiated modifications are considered changes__, even before the respective property value is updated.
-            Users’ experience should not vary when different AutoEdit options are used alongside with any of the AutoCommit modes.
+>note As TextBox’s Text property binding is triggered on control’s LostFocus, __any UI initiated modifications are considered changes__, even before the respective property value is updated.
+> Users’ experience should not vary when different AutoEdit options are used alongside with any of the AutoCommit modes.
+
+## See Also
+
+* [Edit Modes]({%slug raddataform-edit-modes%})
+* [Events]({%slug raddataform-events%})
+* [Customize Commands]({%slug raddataform-customize-commands%})
           

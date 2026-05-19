@@ -94,4 +94,3 @@ __Example 4: Setting up the RadChat control__
 
 ## See Also  
 * [Getting Started]({%slug chat-getting-started%})
-* [ToolBar Commands]({%slug chat-items-toolbar-commands%})

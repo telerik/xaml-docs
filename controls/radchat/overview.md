@@ -57,7 +57,6 @@ The __RadChat__ component enables easy implementation of conversational UI in WP
 
 * [Getting Started]({%slug chat-getting-started%})
 * [Messages Overview]({%slug chat-items-messages-overview%})
-* [ToolBar Commands]({%slug chat-items-toolbar-commands%})
 * [Suggested Actions]({%slug chat-items-suggested-actions%})
 
 

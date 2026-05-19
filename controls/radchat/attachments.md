@@ -87,3 +87,56 @@ The content of a attached file can be accessed via the `GetFileStream` function 
 ```C#
 Stream fileStream = textMessage.AttachedFiles.ElementAt(0).GetFileStream.Invoke();
 ```
+
+## Customizing Input Box Attachment Appearance
+
+The visual elements showing the attachments in the input text box can be adjusted via the `AttachmentTemplate` property of the `RadPromptInput` element.
+
+```XAML
+ <!-- xmlns:chat="clr-namespace:Telerik.Windows.Controls.ConversationalUI;assembly=Telerik.Windows.Controls" -->
+
+ <Window.Resources>
+     <chat:FileExtensionToGlyphConverter x:Key="FileExtensionToGlyphConverter" />
+     <chat:FileSizeConverter x:Key="FileSizeConverter" />
+     <DataTemplate x:Key="CustomAttachmentTemplate">
+         <Border Background="Bisque" CornerRadius="4" Padding="5">
+             <Grid>
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="Auto" />
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="Auto" />
+                 </Grid.ColumnDefinitions>
+
+                 <telerik:RadGlyph Glyph="{Binding FileName, Converter={StaticResource FileExtensionToGlyphConverter}}"
+                                   VerticalAlignment="Top"/>
+
+                 <StackPanel Grid.Column="1" Margin="5 0 0 0">
+                     <TextBlock Text="{Binding FileName}" TextTrimming="CharacterEllipsis" />
+                     <TextBlock Text="{Binding FileSize, Converter={StaticResource FileSizeConverter}}"/>
+                 </StackPanel>
+
+                 <telerik:RadButton Grid.Column="2"
+                                    Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type telerik:RadPromptInput}}, Path=RemoveAttachedFileCommand}"
+                                    CommandParameter="{Binding}">
+                     <telerik:RadGlyph Glyph="Close" />
+                 </telerik:RadButton>
+             </Grid>
+         </Border>
+     </DataTemplate>
+ </Window.Resources>
+```
+
+```C#
+private void RadChat_Loaded(object sender, RoutedEventArgs e)
+{
+	var chat = (RadChat)sender;
+	var promptInput = chat.FindChildByType<RadPromptInput>();
+	promptInput.AttachmentTemplate = (DataTemplate)this.Resources["CustomAttachmentTemplate"];
+}
+```
+
+The data context passed to the `AttachmentTemplate` is an object of type `PromptInputAttachedFile`.
+
+![](images/chat-attachments-3.png)
+
+For conditional appearance customization, use the `AttachmentTemplateSelector` ([DataTemplateSelector](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.8.1)) property.

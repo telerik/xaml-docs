@@ -19,20 +19,19 @@ __ProductCard__ extends __ImageCard__ by adding a few more fields for additional
 __Example 1: Defining a ProductCard__
 
 ```C#
-	  ProductCardMessage productCardMessage = new ProductCardMessage(this.currentAuthor);
-            
-            productCardMessage.Title = "Health Insurance";
-            productCardMessage.SubTitle = "Ensure your health now!";
-            productCardMessage.Text = "We offer flexible health insurance packages!";
-            productCardMessage.CardOrientation = CardOrientation.Portrait;
-            productCardMessage.CloseAfterReport = true;
-            productCardMessage.ImageDisplayMode = ImageDisplayMode.Stretch;
-            productCardMessage.ImageSource = new BitmapImage(new Uri("/Images/insurance-Geico.png", UriKind.RelativeOrAbsolute));
-            productCardMessage.RatingItemsCount = 5;
-            productCardMessage.Price = "Starting from 200$/month";
-            productCardMessage.Rating = 3;
+ProductCardMessage productCardMessage = new ProductCardMessage(this.currentAuthor);
+productCardMessage.Title = "Health Insurance";
+productCardMessage.SubTitle = "Ensure your health now!";
+productCardMessage.Text = "We offer flexible health insurance packages!";
+productCardMessage.CardOrientation = CardOrientation.Portrait;
+productCardMessage.CloseAfterReport = true;
+productCardMessage.ImageDisplayMode = ImageDisplayMode.Stretch;
+productCardMessage.ImageSource = new BitmapImage(new Uri("/Images/insurance-Geico.png", UriKind.RelativeOrAbsolute));
+productCardMessage.RatingItemsCount = 5;
+productCardMessage.Price = "Starting from 200$/month";
+productCardMessage.Rating = 3;
 
-            this.chat.AddMessage(productCardMessage);
+this.chat.AddMessage(productCardMessage);
 ```
 
 Adding such __ProductCard__ will result in the following message.

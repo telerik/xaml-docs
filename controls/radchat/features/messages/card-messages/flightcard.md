@@ -30,41 +30,40 @@ __FlightCard__ is intended to display flight information in a structured user-fr
 A sample __FlightCard__ can be defined as follows.
 
 __Example 1: Defining a FlightCard__
-```C#
-	
-            FlightCardMessage flightCardMessage = new FlightCardMessage(this.currentAuthor);
-           
-            flightCardMessage.ImageSource = new BitmapImage(new Uri("/Images/plane.png", UriKind.RelativeOrAbsolute));
+```C#	
+FlightCardMessage flightCardMessage = new FlightCardMessage(this.currentAuthor);
 
-            FlightInfo departureFlight = new FlightInfo();
+flightCardMessage.ImageSource = new BitmapImage(new Uri("/Images/plane.png", UriKind.RelativeOrAbsolute));
 
-            departureFlight.DepartureAirport = "SOF";
-            departureFlight.DepartureCity = "Sofia, Bulgaria";
-            departureFlight.DepartureDateTime = new DateTime(2018, 5, 1, 7, 40, 0);
+FlightInfo departureFlight = new FlightInfo();
 
-            departureFlight.ArrivalAirport = "REK";
-            departureFlight.ArrivalCity = "Reykjavik, Iceland";
-            departureFlight.ArrivalDateTime = new DateTime(2018, 5, 2, 2, 50, 0);
+departureFlight.DepartureAirport = "SOF";
+departureFlight.DepartureCity = "Sofia, Bulgaria";
+departureFlight.DepartureDateTime = new DateTime(2018, 5, 1, 7, 40, 0);
 
-            flightCardMessage.Flights.Add(departureFlight);
+departureFlight.ArrivalAirport = "REK";
+departureFlight.ArrivalCity = "Reykjavik, Iceland";
+departureFlight.ArrivalDateTime = new DateTime(2018, 5, 2, 2, 50, 0);
 
-            FlightInfo arrivalFlight = new FlightInfo();
+flightCardMessage.Flights.Add(departureFlight);
 
-            arrivalFlight.DepartureAirport = "REK";
-            arrivalFlight.DepartureCity = "Reykjavik, Iceland";
-            arrivalFlight.DepartureDateTime = new DateTime(2018, 5, 9, 9, 50, 0);
+FlightInfo arrivalFlight = new FlightInfo();
 
-            arrivalFlight.ArrivalAirport = "SOF";
-            arrivalFlight.ArrivalCity = "Sofia, Bulgaria";
-            arrivalFlight.ArrivalDateTime = new DateTime(2018, 5, 9, 19, 37, 0);
+arrivalFlight.DepartureAirport = "REK";
+arrivalFlight.DepartureCity = "Reykjavik, Iceland";
+arrivalFlight.DepartureDateTime = new DateTime(2018, 5, 9, 9, 50, 0);
 
-            flightCardMessage.Flights.Add(arrivalFlight);
+arrivalFlight.ArrivalAirport = "SOF";
+arrivalFlight.ArrivalCity = "Sofia, Bulgaria";
+arrivalFlight.ArrivalDateTime = new DateTime(2018, 5, 9, 19, 37, 0);
 
-            flightCardMessage.PassengerName = otherAuthor.Name;
+flightCardMessage.Flights.Add(arrivalFlight);
 
-            flightCardMessage.Total = "$250.23";
+flightCardMessage.PassengerName = otherAuthor.Name;
 
-            this.chat.AddMessage(flightCardMessage);
+flightCardMessage.Total = "$250.23";
+
+this.chat.AddMessage(flightCardMessage);
 ```
 
 This sample data will result in the following __FlightCard__.

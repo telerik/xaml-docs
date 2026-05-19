@@ -20,10 +20,10 @@ The __CalendarMessage__ operates with __DateTime__ value type. Its constructors 
 
 __Example 1: Defining a CalendarMessage__ 
 ```C#
-	   DateTime time = new DateTime(2018, 6, 1);
-       CalendarMessage calendarMessage = new CalendarMessage(MessageDisplayPosition.Popup, currentAuthor);
-            
-       this.chat.AddMessage(calendarMessage);
+DateTime time = new DateTime(2018, 6, 1);
+CalendarMessage calendarMessage = new CalendarMessage(MessageDisplayPosition.Popup, currentAuthor);
+	
+this.chat.AddMessage(calendarMessage);
 ```
 
 #### __Figure 1: Defining CalendarMessage__

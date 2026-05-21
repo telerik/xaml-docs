@@ -6,7 +6,6 @@ slug: radbuttons-features-speech-to-text-button
 tags: toggle,button,switch
 published: True
 position: 4
-tag: new
 ---
 
 # Speech-to-Text Button

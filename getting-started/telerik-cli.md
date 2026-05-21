@@ -90,32 +90,6 @@ In manual mode, the CLI outputs a link to `https://identity.telerik.com` for you
 
 The Telerik CLI can fall back to manual authentication even if the `--no-browser` option is not set. This happens if the automatic authentication takes longer than three minutes.
 
-### Command Output
-
-Each Telerik CLI command has two output formats:
-
-* Human readable (default)
-* JSON&mdash;to use it, append the `--json` option
-
->caption Telerik CLI output format comparison
-
-```
-telerik whoami
-Logged in as john.doe@telerik.com.
-
-telerik whoami --json
-{
-  "exitCode": 0,
-  "message": "Logged in as john.doe@telerik.com.",
-  "data": {
-    "email": "john.doe@telerik.com",
-    "firstName": "John",
-    "lastName": "Doe"
-  },
-  "success": true
-}
-```
-
 ## Log In
 
 Most Telerik CLI commands are related to your Telerik identity. It's recommended to log in first, so that all the other commands work without the need for additional authentication:
@@ -211,4 +185,30 @@ You can also fine-tune the process with the following options:
 
 ```
 telerik mcp config wpf --ide visualstudio
+```
+
+### Command Output
+
+Each Telerik CLI command has two output formats:
+
+* Human readable (default)
+* JSON&mdash;to use it, append the `--json` option
+
+>caption Telerik CLI output format comparison
+
+```
+telerik whoami
+Logged in as john.doe@telerik.com.
+
+telerik whoami --json
+{
+  "exitCode": 0,
+  "message": "Logged in as john.doe@telerik.com.",
+  "data": {
+    "email": "john.doe@telerik.com",
+    "firstName": "John",
+    "lastName": "Doe"
+  },
+  "success": true
+}
 ```

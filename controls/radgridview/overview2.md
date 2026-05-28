@@ -21,7 +21,7 @@ __RadGridView__ for WPF is the ultimate grid control that provides outstanding p
 
 ![{{ site.framework_name }} RadGridView Overview](images/RadGridView_Overview_2.png)
 
-__RadGridView__ key features list:
+## Key Features
 
 * __Powerful data binding to objects, collections, XML and WCF services__
 
@@ -61,13 +61,11 @@ __RadGridView__ key features list:
 
 * __Column Groups__
 
-You can find a list with all key features and additional explanation of the features [here]({%slug gridview-key-features%}){% if site.site_name == 'Silverlight' %}
+You can find a list with all key features and additional explanation of the features [here]({%slug gridview-key-features%})
 
-Check out the online demo [here.](https://demos.telerik.com/silverlight/#GridView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}
+Check out the WPF demos [here.](https://demos.telerik.com/wpf/)
 
-Check out the WPF demos [here.](https://demos.telerik.com/wpf/){% endif %}
-
->tip You can find more examples of how to implement various scenarios available for download from our online SDK repository [here. ](https://github.com/telerik/xaml-sdk/)Look for examples listed under __GridView__. For a better and easier reviewing of our examples you can download the [SDK Samples Browser.](https://demos.telerik.com/xaml-sdkbrowser//)
+>tip You can find more examples of how to implement various scenarios available for download from our online SDK repository [here.](https://github.com/telerik/xaml-sdk/) Look for examples listed under __GridView__. For a better and easier reviewing of our examples you can download the [SDK Samples Browser.](https://demos.telerik.com/xaml-sdkbrowser//)
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources

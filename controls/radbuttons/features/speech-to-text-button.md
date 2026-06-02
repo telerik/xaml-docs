@@ -42,7 +42,7 @@ private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.Speec
 Each time when the speech recognizer manages to process audio input, it raises the `SpeechRecognized` event which contains information about the converted text. 
 
 The `SpeechRecognizerSpeechRecognizedEventArgs` provides the recognized text and a confidence score. The score is a value between 0 and 1, indicating how confident the speech-to-text transcription is. A value of -1 indicates no score could be provided.
-
+ 
 __Defining a SpeechRecognized event handler__
 
 ```C#
@@ -52,6 +52,8 @@ private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.Speec
     double confidenceScore = e.FullTextConfidenceScore;
 }
 ```
+
+> The default speech recognizer uses the Web Speech API via the WebView2 engine, which does not provide usable confidence score.
 
 ## Continuous vs. One-Time Recognition 
 

@@ -23,7 +23,7 @@ The following table lists all Telerik CLI commands with their purpose and usage.
 |---|---|---|
 | `dotnet tool install -g Telerik.CLI` | Installs the Telerik CLI as a .NET global tool. | Run once to install the CLI on your machine. |
 | `dotnet tool update -g Telerik.CLI` | Updates the Telerik CLI to the latest version. | Run periodically to get the latest features and fixes. |
-| `telerik nuget config` | Configures the Telerik NuGet server to your package sources. | Run to setup the `https://nuget.telerik.com/v3/index.json` feed in your NuGet configuration. |
+| `telerik nuget config` | Configures the Telerik NuGet server to your package sources. | Run to set up the `https://nuget.telerik.com/v3/index.json` feed in your NuGet configuration. |
 | `telerik license get-key` | Downloads your Telerik license key and saves it as `telerik-license.txt`. | Run to download your license key file. |
 | `telerik mcp config` | Installs and configures the Telerik MCP Server for your IDE. | Run to set up AI coding assistance in Visual Studio, VS Code, or Cursor. |
 | `telerik login` | Authenticates with your Telerik account. | Run to store credentials for subsequent commands. |

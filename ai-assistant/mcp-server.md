@@ -13,7 +13,23 @@ The Telerik WPF [MCP (Model Context Protocol) Server](https://modelcontextprotoc
 
 This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik UI for WPF components](https://www.telerik.com/WPF-ui) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
 
+## How to Install the Telerik WPF MCP Server
+
 The MCP Server is available as a NuGet package. Beginning with .NET 10 it can be executed directly via the `dnx` command. For .NET 8 and .NET 9 (where `dnx` is not available) you can install it as a local dotnet tool and invoke its executable.
+
+## Install with Telerik CLI (Recommended)
+
+The easiest way to install and configure the Telerik WPF MCP Server is through the [Telerik CLI]({%slug wpf/getting-started/telerik-cli%}). A single command line sets up the MCP server for your IDE automatically:
+
+```powershell
+telerik mcp config wpf
+```
+
+This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config wpf --ide vscode`). For more details, see [Telerik CLI - Install MCP Server]({%slug wpf/getting-started/telerik-cli%}#install-mcp-server).
+
+## Install with .NET CLI Commands
+
+Another approach to install the Telerik WPF MCP Server is to use .NET10 or .NET8/9 commands.
 
 ## Prerequisites
 
@@ -40,9 +56,8 @@ Common requirements:
 | Update Version | Handled by latest package resolved by `dnx` | Re-run tool install with `--version` or `tool update` |
 | Offline Use | Requires prior NuGet cache warm-up | Requires prior tool install |
 
-## Server Installation
 
-### .NET 10 (recommended)
+### .NET 10
 
 No manual install step is needed. The `dnx` command will download and execute the NuGet package on demand.
 

@@ -121,7 +121,7 @@ The `license get-key` command downloads your up-to-date Telerik license key and 
 
 ## Install MCP Server
 
-To install the Telerik WPF MCP server, use the `mcp config` command:
+To install the Telerik MCP server, use the `mcp config` command:
 
 ```powershell
 telerik mcp config
@@ -149,6 +149,8 @@ You can also fine-tune the process with the following options:
 telerik mcp config wpf --ide visualstudio
 ```
 
+This command installs and configures only the Telerik WPF MCP server and targets only Visual Studio by creating or updating the `.mcp.json` file with the WPF MCP server entry.
+
 ## Set Up Telerik NuGet Feed
 
 To [add the Telerik NuGet server to your package sources]({%slug nuget-package-source-setup%}), use the `nuget config` command:
@@ -167,9 +169,9 @@ You can use the `nuget config` command with the following options:
 * `--api-key` to provide an existing Telerik NuGet API key inline, otherwise the CLI generates a new one.
 * `--force` to overwrite any existing Telerik credentials in the `NuGet.Config` file.
 
-````powershell
+```powershell
 telerik nuget config --scope project --path . --force
-````
+```
 
 ## Prerequisites
 

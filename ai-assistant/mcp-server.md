@@ -25,7 +25,7 @@ The easiest way to install and configure the Telerik WPF MCP Server is through t
 telerik mcp config wpf
 ```
 
-This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config wpf --ide vscode`). For more details, see [Telerik CLI - Install MCP Server]({%slug wpf/getting-started/telerik-cli%}#install-mcp-server).
+This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config wpf --ide vscode`). For more details, see [Telerik CLI - Install WPF MCP Server]({%slug wpf/getting-started/telerik-cli%}#install-wpf-mcp-server).
 
 ## Install with .NET CLI Commands
 

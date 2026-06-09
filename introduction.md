@@ -175,7 +175,6 @@ For any issues you might encounter while working with UI for {{site.framework_na
 ## Learning Resources
 
 * [Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
-* [Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
 
 ## Installation and Deployment
 

@@ -72,7 +72,7 @@ Most Telerik CLI commands are related to your Telerik identity. It's recommended
 telerik login
 ```
 
-The `login` command opens `https://identity.telerik.com` in a browser window where you need to provide your Telerik account credentials. The browser performs a few redirects to complete the log in.
+The `login` command opens `https://identity.telerik.com` in a browser window where you need to provide your Telerik account credentials. The browser performs a few redirects to complete the login.
 
 If this browser integration fails due to security or network restrictions, you can authenticate manually by using the `--no-browser` option.
 

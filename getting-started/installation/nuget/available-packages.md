@@ -60,16 +60,14 @@ There is an [online package source]({%slug nuget-package-source-setup%}) that ca
 
 ### Separate Packages (Server)
 
-* `Telerik.Windows.Controls.for.Wpf.Xaml`
-* `Telerik.Windows.Controls.for.Wpf`
+* `Telerik.Windows.Controls.for.Wpf.Xaml` (includes localization resources)
+* `Telerik.Windows.Controls.for.Wpf` (includes localization resources)
 * `Telerik.Windows.Controls.GridView.for.Wpf.Xaml`
 * `Telerik.Windows.Controls.GridView.for.Wpf`
 * `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml`
 * `Telerik.Windows.Controls.Navigation.for.Wpf`
 * `Telerik.Windows.Themes.Fluent.for.Wpf` (theme dll)
 * `Telerik.Windows.Themes.Material.for.Wpf` (theme dll)
-* `Telerik.Windows.Controls.for.Wpf.fr` (localization resource)
-* `Telerik.Windows.Controls.for.Wpf.de` (localization resource)
 * etc.
 
 Each of these packages contain all .NET versions of the corresponding Telerik dll. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
@@ -78,6 +76,19 @@ The __oldest nuget package__ that can be found in the __Telerik NuGet Feed__ is 
 	
 ## NuGet Packages and Controls Localization
 
-The Telerik controls have a built-in [localization]({%slug common-localization%}) support. To enable this, the corresponding satellite assemblies should be presented in the folder where the Telerik assemblies are installed. These assemblies are available when you install the product using the __full NuGet packages__. The __separate packages__ don't include the satellite assemblies. To support localization properly, these dlls should be installed. To do so, use also the separate packages with the language resources.
+The Telerik UI for WPF controls provide built-in [localization]({%slug common-localization%}) support through satellite assemblies. These assemblies contain translated resources for the supported languages and must be present in your project for localization to work.
 
-The separate package with the language resources is named `Telerik.Windows.Controls.for.Wpf.<language code>`. For example, `Telerik.Windows.Controls.for.Wpf.fr` will include the French resources. `Telerik.Windows.Controls.for.Wpf.de` will include the German resources, and so on. 
+### Getting Localization Assemblies via NuGet
+
+Starting with the __Q2 2026__ release, the localization satellite assemblies are bundled directly in the `Telerik.Windows.Controls.for.Wpf` NuGet package (or `Telerik.Windows.Controls.for.Wpf.Xaml` for Xaml builds). Installing this package automatically provides the satellite assemblies for all supported languages (for example, `Telerik.Windows.Controls.for.Wpf.de.dll` for German, French, Spanish, etc.).
+
+For releases __prior to Q2 2026__, localization assemblies are distributed as separate NuGet packages named by language code below. Install the package for each language you need to support in your application:
+
+* `Telerik.Windows.Controls.for.Wpf.de` (German)
+* `Telerik.Windows.Controls.for.Wpf.fr` (French)
+* `Telerik.Windows.Controls.for.Wpf.es` (Spanish)
+* etc.
+
+>tip To enable localization in your project, ensure the satellite assemblies are deployed alongside the main Telerik assemblies. For more information, see the [Localization]({%slug common-localization%}) article.
+
+

@@ -52,13 +52,29 @@ The default is English, but you can find a separate file for each of the other l
 
 >If you need to translate your control into a different language, you should use a [Custom Localization Manager](#localization-using-custom-localization-manager).
 
-To localize your controls using the built-in localization mechanism, you first have to place the resource folders along with the binaries you have referenced as shown in **Figure 3**.
+To localize your controls using the built-in localization mechanism, the satellite assemblies for the desired language must be present in your project. You can obtain these assemblies in one of the following ways:
+
+### Using NuGet Packages
+
+Starting with the __Q2 2026__ release, the localization satellite assemblies for all supported languages are included in the main `Telerik.Windows.Controls.for.Wpf` NuGet package (or `Telerik.Windows.Controls.for.Wpf.Xaml` for Xaml builds). No additional packages are required—installing the main controls package automatically provides the localization resources.
+
+For releases __prior to Q2 2026__, you need to install a separate NuGet package for each language. The packages follow the naming convention `Telerik.Windows.Controls.for.Wpf.<language code>`. For example:
+
+* `Telerik.Windows.Controls.for.Wpf.de` (German)
+* `Telerik.Windows.Controls.for.Wpf.fr` (French)
+* `Telerik.Windows.Controls.for.Wpf.es` (Spanish)
+
+For more details about the available localization NuGet packages, see [Available NuGet Packages]({%slug nuget-available-packages%}#nuget-packages-and-controls-localization).
+
+### Using Local Assemblies
+
+Alternatively, you can place the resource folders along with the binaries you have referenced as shown in **Figure 1**.
 
 #### __Figure 1: Placing the resource folders in your project__
 
 ![Common Localization 050](images/Common_Localization_050.PNG)
 
-Or you should install the corresponding NuGet package. For example `Telerik.Windows.Controls.for.Wpf.es`.
+### Setting the Application Culture
 
 The next step for defining the language settings of the application is changing the __Current Culture__ of the application:
          

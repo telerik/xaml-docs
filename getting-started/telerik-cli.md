@@ -26,7 +26,7 @@ The following table lists all Telerik CLI commands with their purpose and usage.
 | `telerik nuget config` | Configures the Telerik NuGet server to your package sources. | Run to set up the `https://nuget.telerik.com/v3/index.json` feed in your NuGet configuration. |
 | `telerik license get-key` | Downloads your Telerik license key and saves it as `telerik-license.txt`. | Run to download your license key file. |
 | `telerik mcp config` | Installs and configures the Telerik MCP Server for your IDE. | Run to set up AI coding assistance in Visual Studio, VS Code, or Cursor. |
-| `telerik login` | Authenticates with your Telerik account. | Run to store credentials for subsequent commands. |
+| `telerik login` | Authenticates with your Telerik account. Use `--no-browser` for manual authentication. | Run to store credentials for subsequent commands. |
 | `telerik whoami` | Displays the currently logged-in Telerik user account email. | Run to verify your authentication state. |
 | `telerik logout` | Logs out from the Telerik CLI. | Run to log out the credentials from your Telerik account. |
 
@@ -60,13 +60,6 @@ To update to the latest version:
 ```powershell
 dotnet tool update -g Telerik.CLI
 ```
-#### Uninstall Telerik CLI
-
-To uninstall the Telerik CLI:
-
-```powershell
-dotnet tool uninstall -g Telerik.CLI 
-```
 
 >note The Telerik CLI requires .NET SDK 6.0 or later. Download the .NET SDK from <a href="https://dotnet.microsoft.com/download" target="_blank">the official .NET website</a>.
 
@@ -79,7 +72,25 @@ Most Telerik CLI commands are related to your Telerik identity. It's recommended
 telerik login
 ```
 
-The `login` command opens `https://identity.telerik.com` in a browser window where you need to provide your Telerik account credentials. Then the browser makes a couple of redirects. 
+The `login` command opens `https://identity.telerik.com` in a browser window where you need to provide your Telerik account credentials. The browser performs a few redirects to complete the login.
+
+If this browser integration fails due to security or network restrictions, you can authenticate manually by using the `--no-browser` option.
+
+#### Using `--no-browser` (Manual Authentication)
+
+If automatic browser-based authentication is blocked (for example, by corporate network policies, restricted browsers, or headless CI environments), use the `--no-browser` switch to perform a manual login flow:
+
+```powershell
+telerik login --no-browser
+```
+
+When you run `telerik login --no-browser` the CLI will:
+
+1. Print a short URL and a one-time code in the terminal.
+2. Instruct you to open the URL on any device or browser with network access (for example, your desktop browser or a browser on another machine).
+3. Ask you to enter the one-time code and sign in to your Telerik account in the browser.
+
+After successful authentication, the browser will display a confirmation message and you can return to the CLI. The CLI will detect the completed sign-in and store the session token locally.
 
 The Telerik CLI stores a session token in:
 
@@ -121,13 +132,13 @@ The `license get-key` command downloads your up-to-date Telerik license key and 
 
 ## Install MCP Server
 
-To install the Telerik MCP server, use the `mcp config` command:
+To install the Telerik MCP servers, use the `mcp config` command:
 
 ```powershell
 telerik mcp config
 ```
 
-By default, the command creates or updates the global `.mcp.json` configuration files of all supported IDEs with all available Telerik MCP servers for all Telerik products.
+By default, the command creates or updates the global `.mcp.json` configuration files for all supported IDEs and registers all currently available Telerik MCP servers for Telerik products.
 
 | IDE | Operating System | Configuration File Path |
 | --- | --- | --- |
@@ -138,7 +149,7 @@ By default, the command creates or updates the global `.mcp.json` configuration 
 | Cursor  | Windows | `%USERPROFILE%\.cursor\mcp.json` |
 | Cursor | macOS, Linux | `~/.cursor/mcp.json` |
 
-## Install WPF MCP Server
+### Install WPF MCP Server
 
 You can also fine-tune the process with the following options:
 
@@ -149,7 +160,36 @@ You can also fine-tune the process with the following options:
 telerik mcp config wpf --ide visualstudio
 ```
 
-This command installs and configures only the Telerik WPF MCP server and targets only Visual Studio by creating or updating the `.mcp.json` file with the WPF MCP server entry.
+This command installs and configures only the Telerik WPF MCP server and targets only Visual Studio by creating or updating the `.mcp.json` file with the WPF MCP entry.
+
+### JSON Output for Scripts and CI
+
+Use `--json` to return machine-readable output:
+
+```powershell
+telerik mcp config wpf --ide visualstudio --json
+```
+
+Example output:
+
+```json
+{
+  "exitCode": 0,
+  "message": "MCP servers registered successfully.",
+  "data": {
+    "registeredIdes": [
+      "Visual Studio"
+    ],
+    "registered": [
+      {
+        "ide": "Visual Studio",
+        "configPath": "C:\\Users\\username\\.mcp.json"
+      }
+    ]
+  },
+  "success": true
+}
+```
 
 ## Set Up Telerik NuGet Feed
 
@@ -171,6 +211,26 @@ You can use the `nuget config` command with the following options:
 
 ```powershell
 telerik nuget config --scope project --path . --force
+```
+
+## Help
+
+To get help about the tool or a specific command in the Telerik CLI, use the `-h` option:
+
+```powershell
+telerik -h
+
+telerik nuget -h
+
+telerik nuget config -h
+```
+
+#### Uninstall Telerik CLI
+
+To uninstall the Telerik CLI:
+
+```powershell
+dotnet tool uninstall -g Telerik.CLI
 ```
 
 ## Prerequisites

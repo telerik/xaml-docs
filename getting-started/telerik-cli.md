@@ -64,7 +64,7 @@ dotnet tool update -g Telerik.CLI
 
 >note The Telerik CLI requires .NET SDK 6.0 or later. Download the .NET SDK from <a href="https://dotnet.microsoft.com/download" target="_blank">the official .NET website</a>.
 
-## Setup Telerik Environment
+## Set Up Telerik Environment
 
 To prepare your development machine for Telerik UI for WPF in one step, run the `setup` command in a terminal:
 

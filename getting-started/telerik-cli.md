@@ -72,7 +72,7 @@ To prepare your development machine for Telerik UI for WPF in one step, run the 
 telerik setup wpf
 ```
 
-The `setup` command runs the following steps in sequence to prepare your enviroment for ready to use Telerik UI for Wpf:
+The `setup` command runs the following steps in sequence to prepare your environment for Telerik UI for WPF:
 
 1. [`telerik login`](#log-in-to-your-telerik-account) to authenticate with your Telerik account.
 2. [`telerik nuget config`](#set-up-telerik-nuget-feed) to add the Telerik NuGet package source.

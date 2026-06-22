@@ -23,6 +23,7 @@ The following table lists all Telerik CLI commands with their purpose and usage.
 |---|---|---|
 | `dotnet tool install -g Telerik.CLI` | Installs the Telerik CLI as a .NET global tool. | Run once to install the CLI on your machine. |
 | `dotnet tool update -g Telerik.CLI` | Updates the Telerik CLI to the latest version. | Run periodically to get the latest features and fixes. |
+| `telerik setup wpf` | Runs the full Telerik UI for WPF developer-machine setup in one command. | Run to authenticate, configure the Telerik NuGet feed, download your license key, and register the Telerik MCP server configuration. |
 | `telerik nuget config` | Configures the Telerik NuGet server to your package sources. | Run to set up the `https://nuget.telerik.com/v3/index.json` feed in your NuGet configuration. |
 | `telerik license get-key` | Downloads your Telerik license key and saves it as `telerik-license.txt`. | Run to download your license key file. |
 | `telerik mcp config` | Installs and configures the Telerik MCP Server for your IDE. | Run to set up AI coding assistance in Visual Studio, VS Code, or Cursor. |
@@ -62,6 +63,46 @@ dotnet tool update -g Telerik.CLI
 ```
 
 >note The Telerik CLI requires .NET SDK 6.0 or later. Download the .NET SDK from <a href="https://dotnet.microsoft.com/download" target="_blank">the official .NET website</a>.
+
+## Set Up Telerik Environment
+
+To prepare your development machine for Telerik UI for WPF in one step, run the `setup` command in a terminal:
+
+```powershell
+telerik setup wpf
+```
+
+The `setup` command runs the following steps in sequence to prepare your environment for Telerik UI for WPF:
+
+1. [`telerik login`](#log-in-to-your-telerik-account) to authenticate with your Telerik account.
+2. [`telerik nuget config`](#set-up-telerik-nuget-feed) to add the Telerik NuGet package source.
+3. [`telerik license get-key`](#get-license-key) to download and store your license key.
+4. [`telerik mcp config`](#install-mcp-server) to register the Telerik MCP server configuration for the detected IDEs.
+
+When the CLI is running in an interactive terminal, `telerik setup` prompts you through each stage. To use the command in an automated environment, pass `--no-interactive`.
+
+When the setup completes successfully, the Telerik CLI displays the following confirmation message:
+
+```text
+Telerik UI for WPF setup complete! Your environment is configured and ready.
+```
+
+### Common `telerik setup` Options
+
+Use the following options to customize the setup flow:
+
+* `--scope user|project` to choose whether the Telerik NuGet source is stored in the user-level or project-level `NuGet.Config` file.
+* `--nuget-path <path>` to specify the path to the `NuGet.Config` file or project directory. This option is required when `--scope project` is used.
+* `--force` to overwrite an existing Telerik NuGet source configuration without prompting.
+* `--no-browser` to use manual authentication when browser-based sign-in is blocked.
+* `--interactive` or `--no-interactive` to control whether the command prompts for each step.
+* `--json` to return machine-readable output.
+
+For example, to configure a project-local `NuGet.Config` file without prompts:
+
+```powershell
+telerik setup wpf --scope project --nuget-path . --force --no-interactive
+```
 
 
 ## Log In to Your Telerik Account
@@ -219,6 +260,8 @@ To get help about the tool or a specific command in the Telerik CLI, use the `-h
 
 ```powershell
 telerik -h
+
+telerik setup -h
 
 telerik nuget -h
 

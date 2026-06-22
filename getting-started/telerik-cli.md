@@ -101,7 +101,7 @@ Use the following options to customize the setup flow:
 For example, to configure a project-local `NuGet.Config` file without prompts:
 
 ```powershell
-telerik setup wpf --scope project --nuget-path . --force --no-interactive 
+telerik setup wpf --scope project --nuget-path . --force --no-interactive
 ```
 
 

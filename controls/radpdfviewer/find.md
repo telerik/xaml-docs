@@ -1,122 +1,219 @@
 ---
 title: Find
-page_title: Find
-description: Check our &quot;Find&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+page_title: Find Text in RadPdfViewer
+description: Learn how to search PDF text programmatically in RadPdfViewer with Find, FindAll, FindPrevious, TextSearchOptions, and SearchResult.
 slug: radpdfviewer-find
 tags: find, findall, findprevious
 published: True
 position: 10
 ---
 
-# Find
+# Find Text in RadPdfViewer
 
-__RadPdfViewer__ allows flexible searching in a loaded PDF document. The following article describes the available find methods, as well as how to use the respective for the feature API.
+Use `RadPdfViewer` to search the text content of a loaded PDF document. This article explains when to use `Find`, `FindAll`, and `FindPrevious`, how to configure `TextSearchOptions`, and how to work with the returned `SearchResult` values.
 
->note Using the UI of the **Find** functionality is described in detail in the [Find Dialog]({%slug radpdfviewer-find-dialog%}) article.
+>note If you want to let users search through the built-in viewer UI, see [Find Dialog]({%slug radpdfviewer-find-dialog%}).
 
 ## Find Programmatically
 
-You can search by taking advantage of the **Find**, **FindAll** and **FindPrevious** methods with their overloads exposed by RadPdfViewer. These methods could receive  [TextSearchOptions](#textsearchoptions) as optional parameter in their constructor. The result of the search is hold by an instance of [SearchResult](#searchresult) class.
+To search programmatically:
 
-The **Find** method has two overloads:
-* **Find(string text)**: Finds next mach for the specified text in the current document.
-* **Find(string text, TextSearchOptions options)**: Finds next match for the specified text in the current document using specified options.
+1. Load a document in `RadPdfViewer`.
+2. Choose the search method that matches your scenario.
+3. Optionally create a `TextSearchOptions` instance.
+4. Check the returned `SearchResult` value or enumerate all matches.
 
-__Example 1: Find specified text using specified options__
+The programmatic API exposes three main methods:
 
-```C#
-    string sampleText = "sample text";
-    TextSearchOptions textSearchOptions = 
-        new TextSearchOptions(caseSensitive: false, useRegularExpression: false, wholeWordsOnly: true);
+* `Find(string text)` and `Find(string text, TextSearchOptions options)` find the next match.
+* `FindPrevious(string text)` and `FindPrevious(string text, TextSearchOptions options)` find the previous match.
+* `FindAll(string text)` and `FindAll(string text, TextSearchOptions options)` return all matches in the current document.
 
-    SearchResult searchResult = this.pdfViewer.Find(sampleText, textSearchOptions);
+## Choose the Right Search Method
+
+Use the search method that matches the navigation behavior you need:
+
+* Use `Find` to move forward to the next match.
+* Use `FindPrevious` to move backward through existing matches.
+* Use `FindAll` when you need the full set of results, for example to build your own results list or count all occurrences.
+
+## Find the Next Match
+
+Use `Find` when you want the next occurrence of a string, optionally with custom search options.
+
+__Example 1: Find the next match with custom options__
+
+```csharp
+string sampleText = "sample text";
+TextSearchOptions textSearchOptions =
+    new TextSearchOptions(caseSensitive: false, useRegularExpression: false, wholeWordsOnly: true);
+
+SearchResult searchResult = this.pdfViewer.Find(sampleText, textSearchOptions);
 ```
-```VB.NET
-    Dim sampleText As String = "sample text"
-    Dim textSearchOptions As TextSearchOptions = 
-        New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=True)
-        
-    Dim searchResult As SearchResult = Me.pdfViewer.Find(sampleText, textSearchOptions)
+```vbnet
+Dim sampleText As String = "sample text"
+Dim textSearchOptions As TextSearchOptions =
+    New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=True)
+
+Dim searchResult As SearchResult = Me.pdfViewer.Find(sampleText, textSearchOptions)
 ```
 
-The **FindAll** method has two overloads:
-* **FindAll(string text)**: Finds all matches for the specified text in the current document.
-* **FindAll(string text, TextSearchOptions options)**: Finds all matches for the specified text in the current document using specified options.
+## Find All Matches
 
-__Example 2: Find all matches for the specified text using specified options__
+Use `FindAll` when you need every match in the current document instead of only the next or previous one.
 
-```C#
-    IEnumerable<SearchResult> searchResult = this.pdfViewer.FindAll(sampleText, textSearchOptions);
+__Example 2: Find all matches with custom options__
+
+```csharp
+string sampleText = "sample text";
+TextSearchOptions textSearchOptions =
+    new TextSearchOptions(caseSensitive: false, useRegularExpression: false, wholeWordsOnly: true);
+
+IEnumerable<SearchResult> searchResults = this.pdfViewer.FindAll(sampleText, textSearchOptions);
 ```
-```VB.NET
-    Dim searchResult As IEnumerable(Of SearchResult) = Me.pdfViewer.FindAll(sampleText, textSearchOptions)
+```vbnet
+Dim sampleText As String = "sample text"
+Dim textSearchOptions As TextSearchOptions =
+    New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=True)
+
+Dim searchResults As IEnumerable(Of SearchResult) = Me.pdfViewer.FindAll(sampleText, textSearchOptions)
 ```
 
-The **FindPrevious** method has two overloads:
-* **FindPrevious(string text)**: Finds the previous text in the current document.
-* **FindPrevious(string text, TextSearchOptions options)**: Finds the previous text in the current document using specified options.
+## Find the Previous Match
 
-__Example 3: Finds the previous text in the current document using specified options__
+Use `FindPrevious` when the current user flow needs to go back to an earlier occurrence.
 
-```C#
-    SearchResult searchResult = this.pdfViewer.FindPrevious(sampleText, textSearchOptions);
+__Example 3: Find the previous match with custom options__
+
+```csharp
+string sampleText = "sample text";
+TextSearchOptions textSearchOptions =
+    new TextSearchOptions(caseSensitive: false, useRegularExpression: false, wholeWordsOnly: true);
+
+SearchResult searchResult = this.pdfViewer.FindPrevious(sampleText, textSearchOptions);
 ```
-```VB.NET
-    Dim searchResult As SearchResult = Me.pdfViewer.FindPrevious(sampleText, textSearchOptions)
+```vbnet
+Dim sampleText As String = "sample text"
+Dim textSearchOptions As TextSearchOptions =
+    New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=True)
+
+Dim searchResult As SearchResult = Me.pdfViewer.FindPrevious(sampleText, textSearchOptions)
 ```
 
 ### SearchResult
 
-The **SearchResult** class holds the result from a specific search command. This class exposes several properties and methods:
-* **NotFound**: A static property which gets a default SearchResult instance when there is no search result found.
-* **Range**: Gets a [TextRange](https://docs.telerik.com/devtools/document-processing/api/Telerik.Windows.Documents.Fixed.Text.TextRange.html) object describing the start and end positions of the match.
-* **Result**: Gets the result as text.
-* **ToString**: Returns a string that represents the current object.
+The `SearchResult` class describes a single search hit. After calling `Find` or `FindPrevious`, compare the returned value with `SearchResult.NotFound` before accessing its properties.
 
-__Example 4: Check if a match was found__
+Use these members most often:
 
-```C#
-    if (searchResult != SearchResult.NotFound)
-    {
-        TextRange searchResultRange = searchResult.Range;
-        string searchResultAsText = searchResult.Result;
-    }
+* `NotFound` returns the default result when no match exists.
+* `Range` returns a [TextRange](https://www.telerik.com/document-processing-libraries/documentation/api/telerik.windows.documents.fixed.text.textrange) that describes where the match starts and ends.
+* `Result` returns the matched text.
+* `ToString()` returns a string representation of the current result.
+
+__Example 4: Check whether a match was found__
+
+```csharp
+SearchResult searchResult = this.pdfViewer.Find("sample text");
+
+if (searchResult != SearchResult.NotFound)
+{
+    TextRange searchResultRange = searchResult.Range;
+    string searchResultAsText = searchResult.Result;
+}
 ```
-```VB.NET
-    If searchResult <> SearchResult.NotFound Then
-        Dim searchResultRange As TextRange = searchResult.Range
-        Dim searchResultAsText As String = searchResult.Result
-    End If
+```vbnet
+Dim searchResult As SearchResult = Me.pdfViewer.Find("sample text")
+
+If searchResult <> SearchResult.NotFound Then
+    Dim searchResultRange As TextRange = searchResult.Range
+    Dim searchResultAsText As String = searchResult.Result
+End If
 ```
 
-### TextSearchOptions
+## Configure TextSearchOptions
 
-The **TextSearchOptions** class holds all possible search options when invoking one of the Find methods. The class has various constructors that can be used depending on the necessities. Their main difference is they are receiving different amount of parameters according to the selected options.
-* **TextSearchOptions(bool caseSensitive)**
-* **TextSearchOptions(bool caseSensitive, bool useRegularExpression)**
-* **TextSearchOptions(bool caseSensitive, bool useRegularExpression, bool wholeWordsOnly)**
+Use `TextSearchOptions` to control how the search engine interprets the input text.
 
-This class exposes a static property:
-* **Default**: Gets the default text search options.
+The class provides the following constructors:
 
-    __Example 5: The default search options__
-    ```C#    
-        TextSearchOptions textSearchOptions = 
-            new TextSearchOptions(caseSensitive: false, useRegularExpression: false, wholeWordsOnly: false);
-    ```
-	```VB.NET    
-        Dim textSearchOptions As TextSearchOptions = 
-            New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=False)
-    ```
+* `TextSearchOptions(bool caseSensitive)`
+* `TextSearchOptions(bool caseSensitive, bool useRegularExpression)`
+* `TextSearchOptions(bool caseSensitive, bool useRegularExpression, bool wholeWordsOnly)`
 
-several non-static boolean properties:
-* **UseRegularExpression**: Gets or sets a value indicating whether a regular expression should be used for searching.
-* **CaseSensitive**: Gets or sets a value indicating whether the search should be case sensitive.
-* **WholeWordsOnly**: Gets or sets a value indicating whether only whole words should be matched.
+Use the options as follows:
 
-and events:
-* **PropertyChanged**: Occurs when a property value changes.
+* Set `CaseSensitive` to `true` when letter casing must match exactly.
+* Set `UseRegularExpression` to `true` when the search text is a regular expression pattern.
+* Set `WholeWordsOnly` to `true` when partial-word matches must be excluded.
+
+The class also exposes the static `Default` property, which returns the default search configuration.
+
+__Example 5: Create the default search options explicitly__
+
+```csharp
+TextSearchOptions textSearchOptions =
+    new TextSearchOptions(caseSensitive: false, useRegularExpression: false, wholeWordsOnly: false);
+```
+```vbnet
+Dim textSearchOptions As TextSearchOptions =
+    New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=False)
+```
+
+__Example 6: Use the default search options__
+
+```csharp
+TextSearchOptions textSearchOptions = TextSearchOptions.Default;
+```
+```vbnet
+Dim textSearchOptions As TextSearchOptions = TextSearchOptions.Default
+```
+
+The main instance properties are:
+
+* `UseRegularExpression`: Gets or sets whether the search uses a regular expression.
+* `CaseSensitive`: Gets or sets whether the search respects letter casing.
+* `WholeWordsOnly`: Gets or sets whether only whole-word matches are returned.
+
+The class also exposes the `PropertyChanged` event, which occurs when a property value changes.
+
+## Common Search Workflow
+
+The following example shows a typical search flow:
+
+1. Define the search text.
+2. Create search options.
+3. Call `Find`.
+4. Check whether a result was found.
+
+__Example 7: Run a complete search flow__
+
+```csharp
+string sampleText = "invoice";
+TextSearchOptions options = new TextSearchOptions(false, false, true);
+SearchResult result = this.pdfViewer.Find(sampleText, options);
+
+if (result == SearchResult.NotFound)
+{
+    return;
+}
+
+string matchedText = result.Result;
+TextRange matchedRange = result.Range;
+```
+```vbnet
+Dim sampleText As String = "invoice"
+Dim options As New TextSearchOptions(False, False, True)
+Dim result As SearchResult = Me.pdfViewer.Find(sampleText, options)
+
+If result = SearchResult.NotFound Then
+    Return
+End If
+
+Dim matchedText As String = result.Result
+Dim matchedRange As TextRange = result.Range
+```
 
 ## See Also
 
- * [Find Dialog]({%slug radpdfviewer-find-dialog%})
+* [Find Dialog]({%slug radpdfviewer-find-dialog%})

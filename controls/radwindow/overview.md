@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+page_title: RadWindow Overview
+description: Learn what Telerik UI for WPF RadWindow does, when to use it, and which RadWindow features to explore first.
 slug: radwindow-overview
 tags: overview
 published: True
@@ -10,11 +10,11 @@ CTAControlName: RadWindow
 previous_url: http://www.telerik.com/help/wpf/radwindow-overview.html
 ---
 
-# {{ site.framework_name }} Window Overview
+# {{ site.framework_name }} RadWindow Overview
 
-Thank you for choosing Telerik __RadWindow__!
+Use `RadWindow` to display modal dialogs, child windows, and reusable popup content inside your application. The control helps you show important information, collect user input, and manage window behavior such as positioning, moving, resizing, and state changes.
 
-With Telerik __RadWindow__ you can easily add modal popups to your application.  Draw attention to important information or receive user input. __RadWindow__ lets you create child and dialog Windows, which can have their appearance and content customized. The control provides a flexible API to easily control its behavior and makes possible the implementation of complex logic for a wide range of scenarios.
+This overview explains when to use `RadWindow`, highlights the most useful feature areas, and points you to the best next article for each common task.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -22,19 +22,45 @@ With Telerik __RadWindow__ you can easily add modal popups to your application. 
 
 ![Rad Window Overview 03](images/radwindow-overview.png)
 
-This is a list with short descriptions of the top-of-the-line features of Telerik's __RadWindow__ control.
+## When to Use RadWindow
 
-* __Child Windows Across All Platforms__: Telerik __RadWindow__ enables you to create child windows in Silverlight, WPF and XBAP applications with the same API, functionality and appearance across all platforms. The [RadWindowManager]({%slug radwindow-features-radiwindowmanager%}) class makes it easy to control all currently open RadWindows.
+Use `RadWindow` when your application needs one or more of the following behaviors:
 
-* __Predefined Dialogs__: Telerik __RadWindow__ provides an easy way to replace the standard non-customizable dialog boxes (alert, confirm, and prompt) provided by the browser. With __RadWindow__ you can blend the popup into the application’s design to achieve better user experience. [Read more]({%slug radwindow-features-predefined-dialogs%})
+* Show a dialog without leaving the current view.
+* Reuse custom popup content in multiple parts of the application.
+* Replace default alert, confirm, or prompt dialogs with dialogs that match your application theme.
+* Control window state, position, size, and interaction through code.
 
-* __Styling and Appearance__: Telerik __RadWindow__ is a fully customizable control, which lets you easily modify all its visual elements. The control comes with several built-in skins that can be customized if needed. 
+## Key Features
 
-* __Configuration__: Telerik __RadWindow__ can be easily configured to suit the needs of your application. You have a full control over determining the initial [state]({%slug radwindow-features-states%}) and [position]({%slug radwindow-features-positioning%}) of the window, whether it can be [resized]({%slug radwindow-features-resizing%}), [closed]({%slug radwindow-features-closing%}) or [moved]({%slug radwindow-features-moving%}).
+### Create and Manage Windows
+
+Create `RadWindow` instances in code, show them as standard or modal windows, and manage multiple open windows through [RadWindowManager]({%slug radwindow-features-radiwindowmanager%}). This is the right starting point when you need custom popup workflows or centralized window management.
+
+### Use Predefined Dialogs
+
+Use the built-in alert, confirm, and prompt dialogs when you need quick dialog interactions without building the window content from scratch. See [Predefined Dialogs]({%slug radwindow-features-predefined-dialogs%}) for the available dialog methods and usage patterns.
+
+### Control Window Behavior
+
+Configure the initial state and runtime behavior of the window, including [state]({%slug radwindow-features-states%}), [position]({%slug radwindow-features-positioning%}), [resizing]({%slug radwindow-features-resizing%}), [closing]({%slug radwindow-features-closing%}), and [moving]({%slug radwindow-features-moving%}).
+
+### Customize the Appearance
+
+Adapt `RadWindow` to your application theme by modifying the header, icon, and overall visual style. For deeper appearance customization, continue with [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%}).
+
+## Common Next Steps
+
+Start with the article that matches your immediate goal:
+
+* To create and show your first window, open [Getting Started]({%slug radwindow-getting-started%}).
+* To work with the window API in more detail, open [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%}).
+* To react to user interaction and state changes, open [Events]({%slug radwindow-events-overview%}).
+* To understand how end users can move, resize, and interact with the window, open [End-User Capabilities]({%slug radwindow-end-user-capabilities%}).
 
 >tip Get started with the control with its [Getting Started]({%slug radwindow-getting-started%}) help article that shows how to use it in a basic scenario.
 
-> Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#Window/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+>note Explore the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#Window/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %} to see `RadWindow` behavior before you integrate it into your application.
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources

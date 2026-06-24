@@ -1,42 +1,41 @@
 ---
 title: Basic Filtering
-page_title: Basic Filtering
-description: Learn more about the filtering functionality of Telerik's {{ site.framework_name }} DataGrid that allows the user to easily filter data by one or more columns.
+page_title: RadGridView Basic Filtering
+description: Learn how to use Popup, Filter Row, and Filter Editor modes in Telerik {{ site.framework_name }} RadGridView and configure column filtering behavior.
 slug: gridview-filtering-basic
 tags: basic,filtering
 published: True
 position: 0
 ---
 
-# Basic Filtering
+# Basic Filtering in RadGridView
 
-This article will go through the following topics:
+Use `RadGridView` filtering to help users narrow data by one or more columns. The control enables filtering out of the box for most primitive .NET types, including strings, numbers, and `DateTime` values.
 
-* [Filter Modes](#filter-modes)
+If you want to filter a column that is bound to a custom type, see [Filter a Custom Type]({%slug gridview-filtering-howto-filter-a-custom-type%}).
 
-* [FilterMemberPath](#filtermemberpath)
+Use this article to:
 
-* [OptimizeDistinctFilterQuery](#optimizedistinctfilterquery)
+* Choose the right filtering mode.
+* Understand how popup and filter-row filtering behave.
+* Configure column-level filtering settings such as `FilterMemberPath`.
+* Improve performance for distinct-value filters.
 
-RadGridView provides built-in filtering functionality, which allows the user to easily filter data by one or more columns. Filtering will be enabled out-of-the-box for most .NET primitive types such as strings, numeric types, DateTimes and so on.
+Use the [IsFilteringAllowed]({%slug gridview-filtering-howto-disable-filtering-for-the-entire-grid%}) property of `RadGridView` to disable filtering for the entire grid. To disable filtering for a single column, use the [IsFilterable]({%slug gridview-filtering-disable-filtering-for-a-specific-column%}) property of that column.
 
-> If you want to filter a column which is bound to a custom type, the type will have to meet some requirements which are described [here]({%slug gridview-filtering-howto-filter-a-custom-type%}). 
+## Filtering Mode
 
-You can use the [IsFilteringAllowed]({%slug gridview-filtering-howto-disable-filtering-for-the-entire-grid%}) property of RadGridView to disable filtering altogether. To disable the filtering of a specific column you can use the [IsFilterable]({%slug gridview-filtering-disable-filtering-for-a-specific-column%}) property of the column.
+`RadGridView` provides three built-in filtering modes through the `FilteringMode` property. Use one of the following filtering modes depending on the filtering experience you want to provide.
 
-## Filter Modes
-
-There are three built-in filtering modes which you can choose from by setting the `FilteringMode` property of `RadGridView`.
-
-* [Popup Filtering](#popup-filtering)
-
-* [Filter Row](#filter-row)
-
-* [Filter Editor](#filter-editor)
+| Mode | Best for | Notes |
+|---|---|---|
+| [Popup Filtering](#popup-filtering) | Most common interactive filtering scenarios | Default mode. Supports distinct values and field filters. |
+| [Filter Row](#filter-row) | Always-visible per-column filters | Simpler UI. Does not show distinct values. |
+| [Filter Editor](#filter-editor) | Complex filtering expressions | Uses `RadDataFilter` in a panel below the grid. |
 
 ## Popup Filtering
 
-Popup filtering is the default filtering mode offered by RadGridView. It is activated by clicking the funnel icon located in the column header.
+`Popup` filtering is the default mode in `RadGridView`. Users open the filtering UI by selecting the funnel icon in a column header.
 
 __The filtering popup__
 
@@ -44,101 +43,136 @@ __The filtering popup__
 
 ### Distinct Values
 
-The filtering control that the user is presented with has two parts. The upper part of the control displays distinct values found in the respective column. The values that you see at any moment are the ones that are left after all other column filters have been applied. In other words, these values are collected from the visible rows only. This behavior can easily be configured as described in [this article]({%slug gridview-filtering-howto-display-all-distinct-values%}).
+The upper part of the popup shows the distinct values for the current column. By default, those values are collected from the currently visible rows after other column filters have already been applied. To change that behavior, see [Display All Distinct Values]({%slug gridview-filtering-howto-display-all-distinct-values%}).
 
-The string representations that are displayed to the user are produced by taking the raw distinct value from the source collection and then applying the column’s `DataMemberBinding` `IValueConverter` or `DataFormatString` if any are defined. For example, if you have specified a *currency* DataFormatString for your column, the user will see a nicely formatted *$2.22* in the distinct values list. However, underneath this nicely formatted string the original *Float* value will be preserved and will be used for performing the actual filtering inside the data engine. 
+The values shown to the user are display values. `RadGridView` applies the column `DataMemberBinding` `IValueConverter` or `DataFormatString`, if one is defined, before showing the value in the popup. The data engine still filters by the original raw value.
 
->important Using an IValueConverter or DataFormatstring will not affect the data operations in any way. They are used for UI purposes only and do not play any role in the data engine. Filtering is always performed with the raw data values.
+>important `IValueConverter` and `DataFormatString` affect only the UI text. Filtering always uses the raw data values.
 
-By default, only the first 1000 distinct values will be shown. The amount of distinct values displayed can easily be configured as described in [this article]({%slug gridview-filtering-howto-display-all-distinct-values%}).
+By default, the popup shows only the first 1000 distinct values. To change that limit, see [Display All Distinct Values]({%slug gridview-filtering-howto-display-all-distinct-values%}).
 
-If you don’t need the distinct values part of the filtering control you can hide it by using the `ShowDistinctFilters` property of the column. This property only makes sense when the filtering mode is `Popup`.
+If you do not need the distinct-values section, set the column `ShowDistinctFilters` property to `False`. This property applies only when `FilteringMode` is `Popup`.
 
 ### Field Filters
 
-The lower part of the control represents the two field filters. These are two filtering criteria joined by a logical operator. The field filters allow the user to create filtering criteria like "*age is greater than 18 and is less than 60*". Each field filters consists of two parts. The upper part is a combo box that allows the user to specify the type of comparison to be made, i.e. `Is Equal To`, `Is Less Than`, and so on. These are called filter operators. The available filter operators depend on the data type of the column. For example, for string columns you will see string-specific operators such as `Contains` and `Is Contained In`, whereas for numeric and date columns you will see the comparison operators `Is Greater Than`, `Is Less Than`, etc. [Here]({%slug gridview-filtering-programmatic%}#filterdescriptor)you can find a table describing the available filter operators based on the column data type. If you want to remove some of the available filter operators that the user is presented with or change the operator that is selected by default you can use the `FilterOperatorsLoading` event of RadGridView as described [here]({%slug gridview-filtering-howto-change-the-default-selected-filter-operator%}).
+The lower part of the popup contains two field filters joined by a logical operator. This allows criteria such as "age is greater than 18 and less than 60".
 
-The lower part of the field filter is called the field filter editor. Again, the editor that the user will see depends on the column data type. For example, if you have a date column the user will be able to enter the filtering criteria through a date time picker control. Depending on the column data type the most suitable editor is selected and used. Of course, you can always plug-in your very own field filter editor as described in this [article]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). If you want to modify the appearance or behavior of the stock field filter editor that we have selected for you, you can easily do that by attaching to the `FieldFilterEditorCreated` event of RadGridView as demonstrated [here]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}).
+Each field filter has:
 
-If you don’t need the field filter part of the filtering control you can hide it by using the `ShowFieldFilters` property of the column. This property only makes sense when the filtering mode is Popup. For boolean columns, it is `False` by default.
+* An operator selector such as `Is Equal To`, `Contains`, or `Is Less Than`.
+* An editor for the filter value.
 
-You can also control the creation of field filters in both `Popup` and `FilterRow` mode via the new `ShouldGenerateFieldFilterEditors` property. Its default value is `null` in which case field filters will be generated for all non-boolean columns. Setting it to `False` will stop the generation of field filter editors and consequently the `FilterOperatorsLoading` event will not be raised. Setting the property to `True` will have an effect only on boolean columns which will then display a checkbox as their filter editor along with the `IsEqualTo` and `IsNotEqualTo` filter operators rather than the fake `True` and `False` operators.
+The available operators depend on the column data type. For example, string columns expose operators such as `Contains`, while numeric and date columns expose comparison operators. For the complete operator list by type, see [FilterDescriptor]({%slug gridview-filtering-programmatic%}#filterdescriptor).
 
-> Please note that both `ShowFieldFilters` and `ShouldGenerateFieldFilterEditors` are taken into account when using the `Popup` filtering mode. If any of them is set to `False`, no field filter editors will be created.
+To remove operators or change the default operator, handle the `FilterOperatorsLoading` event as shown in [Change the Default Selected Filter Operator]({%slug gridview-filtering-howto-change-the-default-selected-filter-operator%}).
+
+The field filter editor also depends on the column data type. For example, date columns use a date editor. To replace the default editor, see [Create a Custom Field Filter Editor]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). To customize the default editor, use the `FieldFilterEditorCreated` event as shown in [Customize the Default Field Filter Editor]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}).
+
+If you do not need field filters, set the column `ShowFieldFilters` property to `False`. This property applies only when the filtering mode is `Popup`. For Boolean columns, its default value is `False`.
+
+You can also control field filter generation in both `Popup` and `FilterRow` modes through the `ShouldGenerateFieldFilterEditors` property.
+
+* `null` generates field filter editors for all non-Boolean columns.
+* `False` prevents field filter editor generation and suppresses the `FilterOperatorsLoading` event.
+* `True` affects Boolean columns only. It shows a checkbox editor together with the `IsEqualTo` and `IsNotEqualTo` operators instead of the synthetic `True` and `False` operators.
+
+>note In `Popup` mode, both `ShowFieldFilters` and `ShouldGenerateFieldFilterEditors` affect field-filter creation. If either property is `False`, no field filter editors are created.
 
 ### Deferred Filtering
 
-The default behavior of the filtering control is to apply the filter as soon as the user selects a distinct value or types something in one of the two field filter editors. In other words, as soon as anything in the filtering criteria represented in the filtering control changes the data engine will be asked to perform the filtering. Having this in mind, you can hide the `Filter` button by setting the `ShowFilterButton` property of the respective column to false.
+By default, the popup applies filtering immediately when the user selects a distinct value or changes a field filter. When you use that immediate mode, you can hide the `Filter` button by setting the column `ShowFilterButton` property to `False`.
 
-This behavior can be controlled by adjusting the `IsFilteringDeferred` property of the respective column. This property makes sense and is used only when the FiltertingMode of the grid is Popup. When IsFilteringDeferred is set to `True` no filtering will occur until the user explicitly clicks the Filter button. This mode is very useful when filtering is performed on a remote server and each trip to the server is costly. Clicking the `Clear` button will always clear all of the column’s filters immediately in one batch operation. This operation cannot be deferred and will always be executed immediately.
+Use the column `IsFilteringDeferred` property to change that behavior. This property applies only when `FilteringMode` is `Popup`.
+
+When `IsFilteringDeferred` is `True`, the grid waits until the user selects the `Filter` button. This mode is useful when filtering sends requests to a remote server. The `Clear` button always clears the column filters immediately and cannot be deferred.
 
 ### Keep Filter Popup Open
 
-Through the `FilteringDropDownStaysOpen` property of `RadGridView`, you can control whether the filtering dropdown should stay open when a click outside of the popup occurs. It has a default value of `False`. If set to `True`, the popup will only close on a click on either the `Close` button or the `Filter` icon.
+Use the `FilteringDropDownStaysOpen` property of `RadGridView` to control whether the popup remains open after a click outside it. The default value is `False`. When set to `True`, the popup closes only when the user selects the `Close` button or the filter icon.
 
 ## Filter Row
 
-The `FilterRow` filtering mode offers a filter built in the header cell of each filterable column. This mode is simpler and does not support the notion of distinct values. In fact, the field filter editor that is displayed in the header cell is exactly the same as either of the two field filter editors from the Popup filtering control. You can think of this as an oversimplified version of the Popup mode where the user sees only one of the two field filter editors of the Popup filtering control and the editor is always visible.
+`FilterRow` places a filter editor directly in each filterable column header. This mode is simpler than `Popup` and does not support distinct values.
+
+The editor shown in the header is equivalent to one of the two field filters from the popup UI, but it is always visible.
 
 __The filter rows__
 
 ![Telerik {{ site.framework_name }} DataGrid filtering basic 02](images/gridview_filtering_basic_02.png)
 
-Initially all filters start as empty. Once a value has been entered in the editor, an operator has to be selected by clicking the funnel icon. The drop-down will list all available operators that are applicable to the column’s type. If you want to remove some of the available filter operators you can use the `FilterOperatorsLoading` event of RadGridView. Have in mind though that when in filter row mode, you cannot pre-define a default selected operator through the event arguments. When the mode is filter row it is the end user’s job to select the filter operator. There is one special operator in this list called `Clear Filter`. This is not a real filter operator. Instead it will clear and reset the column filter when selected.
+All filter-row filters start empty. After the user enters a value, they choose an operator from the funnel menu. The menu shows the operators that apply to the current column type.
 
-Boolean columns do not have an editor on the left side. Instead, they have two additional fake operators called `Is True` and `Is False`. Selecting Is True from the filter operator list is much more intuitive than checking a check-box and then selecting the Is Equal To operator.
+Use the `FilterOperatorsLoading` event to remove operators from that list. In `FilterRow` mode, you cannot preselect a default operator through the event arguments. The user must choose it.
 
-Once a value has been entered and a filter operator has been selected the filter becomes active. This is indicated by the filtering funnel filling up. Once a filter is active any change in either the value or the operator will immediately be applied to the data below. When the user clears the filter by selecting the `Clear Filter` option the filter will be deactivated and will not be activated again until the user selects another filter operator. The `IsFilteringDeferred` property of the column is not applicable and is disregarded when the mode is filter row.
+The operator list also includes `Clear Filter`, which resets the column filter.
 
-Just like with the Popup filtering mode, you can always plug-in your very own field filter editor as described in [this article]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). If you want to modify the appearance or behavior of the default field filter editor that we have selected for you, you can easily do that by attaching to the `FieldFilterEditorCreated` event of RadGridView as demonstrated [here]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}).
+Boolean columns do not show a value editor on the left side. Instead, they expose `Is True` and `Is False` operators, which provide a more direct filtering experience.
 
->A custom filtering control can only be used when the FilteringMode is Popup. The FilterRow cannot use custom filtering controls.
+After the user enters a value and selects an operator, the filter becomes active. The funnel icon fills to indicate that the filter is active. Any later change to the value or operator is applied immediately.
 
-## Filter Editor 
+When the user selects `Clear Filter`, the filter is removed and stays inactive until another operator is selected.
 
-The filter editor mode displays a data filter view panel at the bottom of RadGridView which allows you to create complex filtering criterias using the RadDataFilter control. Read more about this in the [Filter Editor]({%slug gridview-filter-editor%}) article.
+The column `IsFilteringDeferred` property does not apply in `FilterRow` mode.
+
+As with `Popup` mode, you can provide your own field filter editor as described in [Create a Custom Field Filter Editor]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). To customize the default field filter editor, use `FieldFilterEditorCreated` as shown in [Customize the Default Field Filter Editor]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}).
+
+>note Custom filtering controls work only when `FilteringMode` is `Popup`. `FilterRow` cannot use custom filtering controls.
+
+## Filter Editor
+
+`FilterEditor` displays a filtering panel below `RadGridView`. It uses `RadDataFilter` to build more complex filtering criteria than the other modes. For more detail, see [Filter Editor]({%slug gridview-filter-editor%}).
 
 ![An image showing the Telerik RadGridView's FilterEditor mode](images/gridview_filtering_basic_filtereditormode.png)
 
 ## FilterMemberPath
 
-Each `GridViewColumn` has a property called `FilterMemberPath`. This property can be used to tell the column to filter on a property different from the one it displays in its cells. In case the `Type` of this property cannot be automatically discovered by the data engine, you can "help" the column by setting the `FilterMemberType` property.
+Each `GridViewColumn` exposes a `FilterMemberPath` property. Use it when the column must filter by a property other than the one displayed in the cell.
 
-The following example shows how to specify the `FilterMemberPath` for the column to filter it based on the `NameToFilterOn` property of the bound business object.
-        
+If the data engine cannot determine the type of the member automatically, set the `FilterMemberType` property as well.
+
+The following example filters the column by the `PropertyToFilterOn` member instead of the displayed `Name` member.
 
 __Specifying the FilterMemberPath for a column__
-```XAML
-	  <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" FilterMemberPath="PropertyToFilterOn"/>
+```xaml
+<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" FilterMemberPath="PropertyToFilterOn"/>
 ```
 
 ## OptimizeDistinctFilterQuery
 
-By default, a condition of the form `'Member IsEqualTo Value'` is generated for each distinct value selected. Then, all such conditions are combined with the `OR` operator. When the amount of distinct values checked grows, the query might become very slow. Setting the `OptimizeDistinctFilterQuery` property of `GridViewColumn` to `True` will check the amount of distinct values checked. If this amount is less than or equal to half of all distinct values, the original query will be generated. If, however, the amount of distinct values checked is more than half of all distinct values, an inverted statement like this will be generated: (Member IsNotEqualTo uncheckedDistinctValue_0) ... AND ... (Member IsNotEqualTo uncheckedDistinctValue_N). If absolutely all distinct values are checked, then no statement will be generated at all, because this effectively means that there is no filter applied. Setting this property to `True` will try to generate the shortest possible LINQ `Where` clause. 
+By default, `RadGridView` generates an `OR` condition for every selected distinct value. When the number of selected distinct values becomes large, that query can grow expensive.
+
+Set the `OptimizeDistinctFilterQuery` property of `GridViewColumn` to `True` to let the grid generate the shortest possible LINQ `Where` clause.
+
+The optimization works as follows:
+
+* If the selected values are less than or equal to half of all distinct values, the grid keeps the original `IsEqualTo` query.
+* If the selected values are more than half of all distinct values, the grid generates an inverted `IsNotEqualTo` query for the unchecked values.
+* If all distinct values are selected, no filter statement is generated because the column is effectively unfiltered.
 
 ## Distinct Values Filtering
 
-The `GridViewColumn` base class exposes the `EnableDistinctValuesFiltering` and `DistinctValuesSearchMode` properties, which allow you to filter the column's distinct values.
+The `GridViewColumn` base class exposes `EnableDistinctValuesFiltering` and `DistinctValuesSearchMode`, which allow users to search within the distinct-values list of a column.
 
-By setting the EnableDistinctValuesFiltering property to `True`, a `RadWatermarkTextBox` element will appear inside the FilteringControl. Through this element, the user can filter the distinct values of the column.
+When `EnableDistinctValuesFiltering` is `True`, the filtering control shows a `RadWatermarkTextBox` that filters the list of distinct values.
 
-The DistinctValuesSearchMode property allows you to change the criteria, by which the user input will filter the values. The exposed values of this property are `Contains`, `ContainsCaseSensitive`, `StartsWith`, and `StartsWithCaseSensitive`.
+Use `DistinctValuesSearchMode` to control how the user input is matched. The available values are `Contains`, `ContainsCaseSensitive`, `StartsWith`, and `StartsWithCaseSensitive`.
 
->tip The `EnableDistinctValuesFiltering` and `DistinctValuesSearchMode` properties are meant to be used when the `FilteringMode` property of the RadGridView is set to `Popup`.
+>tip `EnableDistinctValuesFiltering` and `DistinctValuesSearchMode` are intended for use when the `FilteringMode` of `RadGridView` is `Popup`.
 
-The following example shows how to utilize these properties.
+The following example enables distinct-value filtering and uses a `StartsWith` search.
 
 __Setting EnableDistinctValuesFiltering and DistinctValuesSearchMode properties__
-```XAML
-	<telerik:RadGridView DataContext="{StaticResource MyViewModel}"
-	                     ItemsSource="{Binding Clubs}" AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn Header="StadiumCapacity"
-										DataMemberBinding="{Binding StadiumCapacity}"
-	                                    EnableDistinctValuesFiltering="True"
-	                                    DistinctValuesSearchMode="StartsWith"/>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
+```xaml
+<telerik:RadGridView DataContext="{StaticResource MyViewModel}"
+                     ItemsSource="{Binding Clubs}"
+                     AutoGenerateColumns="False">
+    <telerik:RadGridView.Columns>
+        <telerik:GridViewDataColumn Header="StadiumCapacity"
+                                    DataMemberBinding="{Binding StadiumCapacity}"
+                                    EnableDistinctValuesFiltering="True"
+                                    DistinctValuesSearchMode="StartsWith"/>
+    </telerik:RadGridView.Columns>
+</telerik:RadGridView>
 ```
 
 __Filtering the StadiumCapacity column's distinct values__

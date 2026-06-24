@@ -22,16 +22,6 @@ This article covers the following tasks:
 * [Sorting, Grouping and Filtering](#sorting-grouping-and-filtering)
 * [Setting a Theme](#setting-a-theme)
 
-## Before You Start
-
-Before you begin, confirm the following prerequisites:
-
-* Visual Studio is installed with the WPF development workload.
-* You can create and run a standard WPF application.
-* If you plan to use NuGet packages, your package source is configured and your Telerik license key is installed.
-
-For setup details, see [Installing UI for WPF from NuGet Packages]({%slug nuget-installation%}) and [Install a Telerik UI for WPF License Key]({%slug installing-license-key%}).
-
 ## Adding Telerik Assemblies Using NuGet
 
 To use `RadGridView` with NuGet packages, install `Telerik.Windows.Controls.GridView.for.Wpf.Xaml`. The exact package name can vary depending on whether the project uses [Xaml or NoXaml]({%slug xaml-vs-noxaml%}) packages.
@@ -93,7 +83,7 @@ To populate `RadGridView`, create a collection of business objects. For this exa
 
 __Example 3: Simple business class__
 
-```csharp
+```C#
 	public class Club : INotifyPropertyChanged
 	{
 	    public event PropertyChangedEventHandler PropertyChanged;
@@ -163,7 +153,7 @@ __Example 3: Simple business class__
 	    }
 	}
 ```
-```vbnet
+```VB.NET
 	Public Class Club
 	    Implements INotifyPropertyChanged
 	    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
@@ -235,7 +225,7 @@ Next, create a view model that exposes a collection of `Club` objects.
 
 __Example 4: View model containing ObservableCollection of sample data__
 
-```csharp
+```C#
 	public class MyViewModel : ViewModelBase
 	{
 	    private ObservableCollection<Club> clubs;
@@ -271,7 +261,7 @@ __Example 4: View model containing ObservableCollection of sample data__
 	    }
 	}
 ```
-```vbnet
+```VB.NET
 	Public Class MyViewModel
 	    Inherits ViewModelBase
 	    Private m_clubs As ObservableCollection(Of Club)
@@ -335,7 +325,7 @@ Alternatively, set `ItemsSource` in code-behind, as shown in Example 6.
 
 __Example 6: Set ItemsSource in code__
 
-```csharp
+```C#
 	public partial class Window1 : Window
     {
         public Window1()
@@ -345,7 +335,7 @@ __Example 6: Set ItemsSource in code__
         }
     }
 ```
-```vbnet
+```VB.NET
 	Public Partial Class Window1
 		Inherits Window
 

@@ -11,7 +11,7 @@ position: 2
 
 Use Telerik UI for WPF NuGet packages to install, update, and manage Telerik assemblies in your project. This article explains how to configure the Telerik NuGet feed, authenticate correctly, and install the packages that your project needs.
 
->important The Telerik NuGet server does not use your Telerik account email and password for package authentication. When Visual Studio prompts for credentials, enter `api-key` as the user name and your Telerik NuGet API key as the password.
+>important When Visual Studio prompts for Telerik NuGet credentials, enter `api-key` as the user name and your Telerik NuGet API key as the password. This is the recommended authentication method for the Telerik NuGet server.
 
 ## Before You Start
 
@@ -57,7 +57,7 @@ Use the following values:
 
 Generate the key from the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 
->warning Do not enter your Telerik account email and password here. Creating a Telerik account is not enough to authenticate to the NuGet feed. You must use a NuGet API key, and the account must have an active trial or commercial license.
+>warning If [single sign-on](https://www.telerik.com/blogs/sso-telerik-kendo-ui-simpler-more-secure-access-account) (SSO) is enabled for your Telerik account, do not enter your Telerik account email and password in this prompt. Even if you use SSO to sign in to telerik.com, Visual Studio still requires `api-key` as the user name and a Telerik NuGet API key as the password for Telerik NuGet feed access. The account must also have an active trial or commercial license.
 
 ## Step 3: Install NuGet Packages
 

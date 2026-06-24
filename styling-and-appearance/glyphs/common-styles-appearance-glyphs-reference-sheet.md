@@ -27,7 +27,7 @@ The glyphs marked with `*` in the last column were introduced with the **R2 2022
 
 ## Use a Glyph from the Table
 
-After you choose a glyph from the reference sheet, use its resource key in `RadGlyph` or in a text-hosting element.
+After you choose a glyph from the reference sheet, use either its resource key or its string value in `RadGlyph` or in a text-hosting element.
 
 __Example 1: Use a glyph resource key in RadGlyph__
 
@@ -35,7 +35,15 @@ __Example 1: Use a glyph resource key in RadGlyph__
 <telerik:RadGlyph Glyph="{StaticResource GlyphCalendar}" FontSize="16" />
 ```
 
-__Example 2: Use a glyph resource key in a TextBlock__
+__Example 2: Use a glyph string value directly in RadGlyph__
+
+```xaml
+<telerik:RadGlyph Glyph="&#xe021;" FontSize="16" />
+```
+
+This is often the quickest approach when you already know the string value from the table and want to set the glyph directly in XAML.
+
+__Example 3: Use a glyph resource key in a TextBlock__
 
 ```xaml
 <TextBlock FontFamily="{x:Static telerik:RadGlyph.TelerikFontFamily}"
@@ -49,7 +57,7 @@ __Example 2: Use a glyph resource key in a TextBlock__
 
 The reference sheet below lists the glyphs in the `TelerikWebUI` font, which is the default font for Telerik glyphs. If you use the Windows 11 theme or prefer the newer visual style, you can set the `Font` property of `RadGlyph` to `TelerikFluentIcons`, which provides a similar icon set with a different appearance.
 
-__Example 3: Use TelerikFluentIcons for a glyph__
+__Example 4: Use TelerikFluentIcons for a glyph__
 
 ```xaml
 <telerik:RadGlyph Font="TelerikFluentIcons"

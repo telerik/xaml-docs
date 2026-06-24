@@ -134,7 +134,7 @@ __Example 7: Reset the drop-down scroll position in code-behind__
         }
 ```
 
-Add references to `System.Windows`, `System.Windows.Controls`, `System.Windows.Controls.Primitives`, and `System.Windows.Media` if they are not already available in the file.
+Add the required `using` directives (for example `System.Windows`, `System.Windows.Controls`, `System.Windows.Controls.Primitives`, `System.Windows.Media`, and `System.Windows.Threading`) if they are not already present in the code-behind file.
 
 Because the code runs after `DropDownOpened` fires, the popup is already created and the `ScrollViewer` is available to scroll back to the top.
 

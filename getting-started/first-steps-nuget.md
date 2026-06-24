@@ -1,102 +1,202 @@
 ---
-title: First Steps With UI for WPF
-page_title: First Steps With Nuget
-description: This article describes the lifecycle of a Telerik application when using nuget packages.
+title: First Steps with Telerik UI for WPF
+page_title: First Steps with Telerik UI for WPF Using NuGet Packages
+description: Learn how to create a WPF project, install Telerik UI for WPF NuGet packages, verify the setup, and upgrade the referenced assemblies.
 slug: nuget-setup-lifecycle
 tags: nuget,lifecycle,application
 published: True
 position: 0
 ---
 
-# First Steps With Telerik UI for WPF (Using Nuget Packages)
+# First Steps with Telerik UI for WPF Using NuGet Packages
 
-This article describes the lifecycle of a Telerik application when using NuGet packages. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
+Use this article to set up a Telerik UI for WPF project with NuGet packages and confirm that the installation works. It covers project creation, package source selection, package installation, a basic verification step, upgrade guidance, and common setup issues.
 
-## Creating a Project
+## Before You Start
 
-To use the NuGet packages, create a new WPF project using the Visual Studio project template from the __File --> New --> Project__ menu. 
+Before you install Telerik packages, confirm these prerequisites:
 
-![{{ site.framework_name }} Create WPF Application](installation/images/msi-or-zip-setup-lifecyle-0.png)
+1. Install Visual Studio with the WPF development workload.
+2. Verify that you can create and run a standard WPF application.
+3. Make sure that your Telerik account has access to the required product version if you plan to use the Telerik NuGet server.
 
-Set a __Project name__ and __Location__ for the project. For this example, we will use `TelerikWPFApplication` for the project's name.
+## Create the WPF Project
 
-![{{ site.framework_name }} Setup Project Name and Location](installation/images/msi-or-zip-setup-lifecyle-1.png)
+Create a new WPF project in Visual Studio:
 
-This will create an empty WPF project where you can install the NuGet packages.
+1. Select **File** > **New** > **Project**.
+2. Choose the **WPF Application** template.
+3. Select **Next**.
 
-![{{ site.framework_name }} Empty Project Visual Studio](installation/images/msi-or-zip-setup-lifecyle-2.png)
+**Create a new WPF project in Visual Studio.**
+![Visual Studio Create a new project dialog with the WPF Application template selected](installation/images/msi-or-zip-setup-lifecyle-0.png)
 
-## Installing Nugets
+Then define the project details:
 
-This article shows how to connect to the Telerik NuGet server but you can also download the packages locally and use them offline. Read more in the [Installing UI for WPF from a NuGet package]({%slug nuget-installation%}) article.
+1. Enter a **Project name** and **Location**.
+2. For this example, use `TelerikWpfApplication` as the project name.
+3. Select **Create**.
 
->important As of **Q3 2026**, all Telerik UI for WPF NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
+**Set the project name and location for the new WPF project.**
+![Visual Studio Configure Your New Project dialog with the project name and location fields](installation/images/msi-or-zip-setup-lifecyle-1.png)
 
-To setup, the Telerik NuGet server, open the __Package Manager Settings__ menu in Visual Studio and create a new __package source__. Use `https://nuget.telerik.com/v3/index.json` as the __Source__. This step is described in details in the [Using the Telerik NuGet Server]({%slug nuget-package-source-setup%}) section of the NuGet article. Once you choose the Telerik package source in the Nuget manager, you will get prompted to enter your Telerik credentials. The exact credentials are `api-key` as the username and a NuGet API Key as the password. You can generate a key via the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your telerik.com account.
+Visual Studio creates an empty WPF project that is ready for Telerik package installation.
 
-To install a Telerik dll, search for the name of the corresponding assembly in the search bar and then install it in the project.
+**Open the newly created WPF project before you install Telerik packages.**
+![Empty WPF project opened in Visual Studio after creation](installation/images/msi-or-zip-setup-lifecyle-2.png)
 
-![{{ site.framework_name }} Install Telerik Navigation Package](images/nuget-setup-lifecycle-0.png)
+## Installing NuGets
 
-There are two types of Telerik packages - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). If the package name ends with `.Xaml` then the dlls are of the Xaml type. If doesn't contain this the dlls are NoXaml.
+You can install Telerik UI for WPF packages from the Telerik NuGet server. If you prefer an offline workflow, see [Install UI for WPF from a NuGet package]({%slug nuget-installation%}).
 
-![{{ site.framework_name }} Telerik Xaml and NoXaml Packages](images/nuget-setup-lifecycle-1.png)
+>important
+> Starting with **Q3 2026**, all Telerik UI for WPF NuGet packages will be available on [NuGet.org](https://www.nuget.org/). If you install packages from NuGet.org, you do not need to configure the Telerik NuGet server.
 
-If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls and the [implicit styles theming mechanism]({%slug styling-apperance-implicit-styles-overview%}) then you will need to install the package of the corresponding theme too. For example: `Telerik.Windows.Themes.Fluent`.
+### Configure the Telerik NuGet Server
 
-![{{ site.framework_name }} Telerik Fluent Theme Package](images/nuget-setup-lifecycle-2.png)
+If you want to install packages from the Telerik NuGet server, follow these steps:
+
+1. Open **Tools** > **NuGet Package Manager** > **Package Manager Settings**.
+2. Select **Package Sources**.
+3. Add a new source that points to `https://nuget.telerik.com/v3/index.json`.
+4. Save the new source and select it in the NuGet package manager.
+5. When prompted for credentials, enter `api-key` as the user name and your Telerik NuGet API key as the password.
+
+Generate the key from the [Telerik API Keys page](https://www.telerik.com/account/downloads/api-keys). For more detail about the feed setup, see [Use the Telerik NuGet server]({%slug nuget-package-source-setup%}).
+
+### Install the Required Packages
+
+Install the Telerik package for each control that the project uses:
+
+1. Right-click the project and select **Manage NuGet Packages**.
+2. Open the **Browse** tab.
+3. Search for the package that contains the control you want to use.
+4. Select the required version and install it.
+5. Repeat for every Telerik control package that the project references.
+
+For a `RadTabControl` example, install `Telerik.Windows.Controls.Navigation` or `Telerik.Windows.Controls.Navigation.Xaml`, depending on the package type that your project uses.
+
+**Install the Telerik package that contains the control you want to use.**
+![NuGet package manager showing a Telerik navigation package selected for installation](images/nuget-setup-lifecycle-0.png)
+
+### Choose Between Xaml and NoXaml Packages
+
+Telerik UI for WPF provides two package types:
+
+- Use Xaml packages when the package name ends with `.Xaml`.
+- Use NoXaml packages when the package name does not contain `.Xaml`.
+
+Keep all Telerik packages in the same project on the same version and of the same package type. Mixing Xaml and NoXaml packages usually causes missing styles, designer issues, or build errors.
+
+**The package list shows both Xaml and NoXaml variants for the same Telerik control.**
+![NuGet package list that shows Telerik Xaml and NoXaml package variants](images/nuget-setup-lifecycle-1.png)
+
+### Add a Theme Package for NoXaml Projects
+
+If you use NoXaml packages together with the [implicit styles theming mechanism]({%slug styling-apperance-implicit-styles-overview%}), install the matching theme package too. For example, install `Telerik.Windows.Themes.Fluent` when you apply the Fluent theme.
+
+**Install the matching theme package when the project uses NoXaml assemblies.**
+![NuGet package manager showing the Telerik Fluent theme package](images/nuget-setup-lifecycle-2.png)
 
 ## Adding Telerik Controls
 
-After you create the WPF project and install the NuGets, add any UI and related code-behind, models, and styles. This example will show a very basic setup which includes a RadTabControl with few tabs defined in XAML.
+After you install the packages, add Telerik UI to the main window and build the project to confirm that the references resolve correctly. The following example adds a `RadTabControl` with three tabs.
 
-__Example 1: Adding Telerik control in the UI__
-```XAML
-	<Window x:Class="TelerikWpfApplication.MainWindow"
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-		xmlns:local="clr-namespace:TelerikWpfApplication" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-		mc:Ignorable="d"
-		Title="MainWindow" Height="450" Width="800">
-		<Grid>
-			<telerik:RadTabControl>
-				<telerik:RadTabItem Header="Home" />
-				<telerik:RadTabItem Header="Insert" />
-				<telerik:RadTabItem Header="View" />
-			</telerik:RadTabControl>
-		</Grid>
-	</Window>
+**Example 1: Add a Telerik control to the main window.**
+```xaml
+<Window x:Class="TelerikWpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TelerikWpfApplication" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <telerik:RadTabControl>
+            <telerik:RadTabItem Header="Home" />
+            <telerik:RadTabItem Header="Insert" />
+            <telerik:RadTabItem Header="View" />
+        </telerik:RadTabControl>
+    </Grid>
+</Window>
 ```
 
-![{{ site.framework_name }} Project with Added Tab Control](installation/images/msi-or-zip-setup-lifecyle-6.png)
+Build and run the project. If the window opens and the `RadTabControl` renders without missing assembly errors, the NuGet installation is working.
 
-## Deploying the Application
+**A WPF window that displays a Telerik RadTabControl after package installation.**
+![Running WPF application that displays a Telerik RadTabControl with three tabs](installation/images/msi-or-zip-setup-lifecyle-6.png)
 
-To deploy a WPF application, you can use several different approaches, like XCopy, ClickOnce, or Windows Installer deployment. Read more about this in the [Deploy a WPF Application](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/app-development/deploying-a-wpf-application-wpf?view=netframeworkdesktop-4.8) MSDN article. 
+Use this quick verification checklist before you continue:
 
-## Redistributing Telerik Application
+1. Build the project.
+2. Confirm that the `telerik` XML namespace resolves in XAML.
+3. Confirm that the required Telerik assemblies appear under **Dependencies** or **References**.
+4. Run the application and verify that the Telerik control renders.
 
-Several rules should be kept in mind when redistributing an application with Telerik dlls. Read more about this in the [Redistributing Telerik Assemblies]({%slug protecting-telerik-radcontrols-assembly%}) article.
+If the project uses NoXaml packages and the control appears without styling, add the required theme resources as described in [Choose between Xaml and NoXaml packages]({%slug xaml-vs-noxaml%}) and [Implicit styles overview]({%slug styling-apperance-implicit-styles-overview%}).
+
+## Deployment and Redistribution
+
+When you deploy or redistribute a WPF application that uses Telerik UI for WPF, include the Telerik assemblies and theme assemblies that the project references. Use the following resources to plan that step:
+
+- Review [Microsoft deployment guidance for WPF applications](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/app-development/deploying-a-wpf-application-wpf?view=netframeworkdesktop-4.8) for XCopy, ClickOnce, and Windows Installer options.
+- Review [Redistribute Telerik assemblies]({%slug protecting-telerik-radcontrols-assembly%}) before you ship the application.
+- Keep the deployed Telerik assemblies on matching versions to avoid runtime and styling issues.
 
 ## Upgrading the Project
 
-To upgrade the project, open the Nuget package manager in Visual Studio and repeat the approach described in the [Installing Nugets](#installing-nugets) section. When you have the NuGets already installed, you can select a newer (or older) version from the drop-down menu and use the __Update__ button.
+When you upgrade Telerik packages, use the same package source and package type that the project already uses:
 
-![{{ site.framework_name }} Select Package Version from Dropdown](images/nuget-setup-lifecycle-3.png)
+1. Open **Manage NuGet Packages** in Visual Studio.
+2. Select the installed Telerik package.
+3. Choose the target version from the version list.
+4. Select **Update**.
+5. Repeat until every Telerik package in the solution uses the same version.
 
-At this point, double-check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right-click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
+**Select the Telerik package version that you want to install.**
+![NuGet package manager showing the version drop-down for an installed Telerik package](images/nuget-setup-lifecycle-3.png)
 
-![{{ site.framework_name }} Telerik Assembly Properties Menu Option](installation/images/msi-or-zip-setup-lifecyle-8.png)
-![{{ site.framework_name }} Telerik Assembly No Xaml File Description](installation/images/msi-or-zip-setup-lifecyle-9.png)
+After the update, verify these items before you rebuild the solution:
 
-Delete the __bin__ and __obj__ folders of the projects that reference Telerik dlls in the solution and then __Clean__, and __Rebuild__ them. This will ensure that no older Telerik dlls are cached and used during the compilation.
+1. All Telerik assemblies use the same version, for example `2020.3.102`.
+2. All Telerik assemblies use the same package type, either Xaml or NoXaml.
+3. Any NoXaml theme package uses the same version as the control assemblies.
 
-![{{ site.framework_name }} Delete bin and obj Folders](installation/images/msi-or-zip-setup-lifecyle-7.png)
-![{{ site.framework_name }} Clean and Rebuild Solution](installation/images/msi-or-zip-setup-lifecyle-10.png)
+To inspect an assembly version, right-click the `.dll` file, for example `Telerik.Windows.Controls.dll`, and select **Properties**.
 
-## See Also  
-* [System Requirements]({%slug installation-system-requirements-wpf%})
-* [Download Product Files]({%slug download-product-files-wpf%})
-* [Installing WPF Demos Application]({%slug installing-wpf-demos%})
+**Open the assembly properties to confirm the installed Telerik version.**
+![Windows Explorer context menu showing the Properties command for a Telerik assembly](installation/images/msi-or-zip-setup-lifecyle-8.png)
+
+**Review the assembly details to confirm whether the package is a NoXaml build.**
+![Assembly Properties dialog showing the file description for a Telerik NoXaml assembly](installation/images/msi-or-zip-setup-lifecyle-9.png)
+
+>warning
+> If Visual Studio still resolves older Telerik assemblies after an upgrade, clean the build output before you continue.
+
+Delete the `bin` and `obj` folders for the projects that reference Telerik assemblies, then run **Build** > **Clean Solution** and **Build** > **Rebuild Solution**. This step removes cached files that can keep older Telerik versions in the build output.
+
+**Remove the generated build folders before rebuilding the solution.**
+![Windows Explorer view showing the bin and obj folders selected for deletion](installation/images/msi-or-zip-setup-lifecyle-7.png)
+
+**Clean and rebuild the solution after the package update.**
+![Visual Studio Build menu showing the Clean Solution and Rebuild Solution commands](installation/images/msi-or-zip-setup-lifecyle-10.png)
+
+## Troubleshoot Common Issues
+
+Use these checks when the project does not build or the control does not render as expected:
+
+- If package source authentication fails, confirm that the user name is `api-key` and generate a new key from the Telerik account portal if needed.
+- If the XAML designer or build reports missing Telerik assemblies, confirm that every Telerik package uses the same version.
+- If the application uses NoXaml packages and the controls render without styling, install the matching theme package and load the required theme resources.
+- If errors persist after an upgrade, delete the `bin` and `obj` folders, then clean and rebuild the solution.
+
+## See Also
+* [Install UI for WPF from a NuGet package]({%slug nuget-installation%})
+* [Use the Telerik NuGet server]({%slug nuget-package-source-setup%})
+* [Choose between Xaml and NoXaml packages]({%slug xaml-vs-noxaml%})
+* [System requirements]({%slug installation-system-requirements-wpf%})
+* [Download product files]({%slug download-product-files-wpf%})
+* [Install the WPF demos application]({%slug installing-wpf-demos%})

@@ -51,7 +51,7 @@ The full package is named `Telerik.UI.for.Wpf.AllControls.<Xaml or NoXaml>.<vers
 	
 ## Telerik NuGet Server Packages
 
->important As of **Q3 2026**, all Telerik UI for WPF NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
+>important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
 
 There is an [online package source]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to [local](#nuget-local-packages) ones. 
 

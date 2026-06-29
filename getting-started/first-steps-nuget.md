@@ -37,6 +37,7 @@ Then define the project details:
 2. For this example, use `TelerikWpfApplication` as the project name.
 3. Select **Create**.
 
+>important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
 **Set the project name and location for the new WPF project.**
 ![Visual Studio Configure Your New Project dialog with the project name and location fields](installation/images/msi-or-zip-setup-lifecyle-1.png)
 

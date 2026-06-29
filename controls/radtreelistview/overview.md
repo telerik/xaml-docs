@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+page_title: RadTreeListView Overview
+description: Learn what Telerik UI for WPF RadTreeListView does, when to use it, and which features to explore first.
 slug: radtreelistview-overview
 tags: overview
 published: True
@@ -10,9 +10,9 @@ CTAControlName: RadTreeListView
 ---
 # {{ site.framework_name }} TreeListView Overview
 
-Thank you for choosing Telerik __RadTreeListView__! 
+Use `RadTreeListView` to display hierarchical data in a tabular layout. The control combines the data operations and column model of `RadGridView` with tree-style expand and collapse behavior, which makes it suitable for scenarios such as file explorers, organizational structures, category trees, and nested business records.
 
-Telerik __RadTreeListView__ combines the powerful data-driven features from __RadGridView__ with the capabilities of showing a hierarchical data in a __TreeView__ manner. Native UI virtualization, LINQ-based data engine, filtering, sorting and built-in data validation are just a few of the features the control provides.
+This overview highlights the main capability areas of `RadTreeListView` and points you to the most relevant next article for setup, performance, and advanced data scenarios.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -20,39 +20,56 @@ Telerik __RadTreeListView__ combines the powerful data-driven features from __Ra
 
 ![{{ site.framework_name }} RadTreeListView Overview](images/RadTreeListView_Overview_03.png)
 
+## When to Use RadTreeListView
+
+Use `RadTreeListView` when you need to:
+
+* Show homogeneous hierarchical data in a single table.
+* Combine expand and collapse behavior with sortable and filterable columns.
+* Work with large hierarchical data sets while keeping the UI responsive.
+* Let users edit, validate, select, and inspect nested records without switching controls.
+
+If your scenario requires heterogeneous child structures, evaluate a hierarchical `RadGridView` instead of `RadTreeListView`.
+
 ## Key Features
 
-* __LINQ-Based Data Engine__ and __Native UI Virtualization__: Telerik __RadTreeListView__ handles millions of records without affecting the user experience. The control utilizes horizontal and vertical UI virtualization and introduces container recycling for further improvement of speed and memory footprint, especially when bound to large data sets. The UI virtualization technique ensures that the __TreeListView__ creates only the needed containers (rows/cells) which are shown in the viewport of the grid. The container recycling pushes further the speed of scrolling horizontally and vertically. This feature enables __RadTreeListView__ to reuse the existing containers over and over for different data items, instead of creating new ones. These techniques combined with our outstanding LINQ-based data engine guarantee the exceptional fast performance of Telerik’s __RadTreeListView__. Read more about this in the [UI Virtualization]({%slug radtreelistview-features-ui-virtualization%}) article.
+### Performance for Large Data Sets
 
-* __Hierarchy Column__: __RadTreeListView__ supports defining of hierarchy relations through the data binding system. Ability to change the hierarchy column index allows flexible tree grid structures similar to Windows Explorer or iTunes. Read more about this in the [Hierarchy Column]({%slug radtreelistview-features-hierarchy-column%}) article.
+`RadTreeListView` combines native UI virtualization, container recycling, and a LINQ-based data engine to keep scrolling and interaction responsive even with large data sets. To learn how to tune performance-sensitive scenarios, see [Performance]({%slug radtreelistview-performance%}) and [UI Virtualization]({%slug radtreelistview-features-ui-virtualization%}).
 
-* __Data Binding__: Binding the __RadTreeListView__ is as simple as setting a single property. Read more about this in the [Data Binding]({%slug radtreelistview-features-data-binding%}) article.
+### Hierarchical Data Binding
 
-* __Direct Data Operations__: With Telerik __RadTreeListView__ data operations ([Sorting]({%slug radtreelistview-features-sorting%}), [Filtering]({%slug radtreelistview-features-filtering%})) work directly with your data objects. In a common scenario when a control is performing data operations, you need to create your own collection view. With Telerik __RadTreeListView__ there is no requirement for wrapping your data in collection views to do sorting, grouping, and filtering.
+Define parent-child relationships through the data binding system and choose where the hierarchy column appears in the grid. This allows layouts similar to file explorers and other tree-based business views. See [Data Binding]({%slug radtreelistview-features-data-binding%}) and [Hierarchy Column]({%slug radtreelistview-features-hierarchy-column%}).
 
-* __Data Source Updates__: To achieve better testability and loose coupling in your code it may be more convenient to manipulate data in the original data source instead of using the __RadTreeListView__ API. Telerik __RadTreeListView__ supports that scenario by listening to data source collection change events and reflecting those changes in its visual representation.
+### Built-In Data Operations
 
-* __Truly Lookless, Blend Skinnable, Completely Customizable Control__: Telerik __RadTreeListView__ can have its appearance and animations completely customized through __Microsoft Expression Blend__. You can use your own theme or you can use one of the several themes shipped with the control, which will help you deliver a consistent look and feel in your application. 
+Apply [sorting]({%slug radtreelistview-features-sorting%}) and [filtering]({%slug radtreelistview-features-filtering%}) directly to your bound data while preserving the hierarchy structure. Parent nodes remain visible when matching child nodes need their context.
 
-* __Aggregate Functions__: Telerik __RadTreeListView__ control offers a built-in totals row which makes it easy and fast to add a cell which represents the calculated values across a range of data. The summary row with aggregates is available for each column. The user can choose to show in the footer row from a variety of aggregate. Read more about this in the [Aggregates]({%slug radtreelistview-features-aggregates%}) article.
+### Columns, Details, and Aggregates
 
-* __Sorting__: You can have Telerik __RadTreeListView__ automatically sort its columns by setting a single property. There are three sorting modes: __ascending__, __descending__ and __no sort__. In addition to the simple one-column sorting __RadTreeListView__ allows you to sort data by several columns. Sorting in __RadTreeListView__ is executed in a manner which respects the hierarchy structure of the data – when you sort by a certain column the main nodes are sorted first and then are sorted the child nodes. Read more about this in the [Sorting]({%slug radtreelistview-features-sorting%}) article.
+Choose from multiple built-in [column types]({%slug radtreelistview-features-columns%}), keep important values visible with frozen columns, show extra content through [row details]({%slug radtreelistview-features-row-details%}), and calculate summary values through [aggregates]({%slug radtreelistview-features-aggregates%}).
 
-* __Filtering__: Telerik __RadTreeListView__ allows end users to filter data by applying filter patterns or their own filter criteria. __RadTreeListView__ respects the nodes relations and if a child node matches the filter criteria, all higher parent nodes are shown. Read more about this in the [Filtering]({%slug radtreelistview-features-filtering%}) article.
+### Editing, Validation, and Selection
 
-* __Data Validation__: Telerik __RadTreeListView__ supports metadata-driven validation via data annotations. You can use the __RadTreeListView__ with the __Validation__ Summary class to implement the automatic validation UI provided by the platform and also benefit from the server-side validation attributes provided by __RIA Services__. The built-in validation operates on two layers – __UI__ and __Data__. Furthermore, using the extensible event based API of __RadTreeListView__ users can plug their own data validation mechanism. Read more about this in the [Managing Data]({%slug radtreelistview-features-managing-data%}) article.
+Use the built-in selection model for single or multiple records, and combine editing with metadata-driven validation and custom validation logic. For more detail, see [Selection]({%slug radtreelistview-features-selection%}) and [Managing Data]({%slug radtreelistview-features-managing-data%}).
 
-* __Column Types__: The __RadTreeListView__ allows you to choose from several predefined column types. The supported out-of-the-box columns are __Data, Hyperlink, DynamicHyperlink, Image, Select, ToggleRowDetailsVisibility__ and __MaskedInput__. They provide a built-in validation support for editing which covers most of the editing scenarios. If there are specific requirements, the built-in columns can be inherited and their editing validation mechanism can be used without any problem. Furthermore, __RadTreeListView__ offers flexible appearance model through the __CellEditTemplate__ property of the column which allows any control to be used as the editor. Read more about this in the [Columns]({%slug radtreelistview-features-columns%}) article.
+### Appearance and Customization
 
-* __Frozen Columns__: __RadTreeListView__ allows you to keep part of your data always visible putting the rest of the data in context. To freeze columns, you simply set the __FrozenColumnCount__ property to the number of columns you want to freeze.
+Adapt `RadTreeListView` to your application theme and editing workflow through styling, templating, and custom editors. The control supports a flexible appearance model and integrates with the theming system used across Telerik UI for WPF.
 
-* __Row Details__: Telerik __RadTreeListView__ supports __Row Details__, which can be used to present additional information related to the row in a visually appealing manner. The __Row Details__ is a very convenient feature when the space at hand is insufficient for the data that needs to be presented. __Row Details__ can also be used for providing a more convenient editing environment for end-users. Defined through a data template, __Row Details__ can present virtually anything to the user, be it for viewing-only or editing. Read more about this in the [Row Details]({%slug radtreelistview-features-row-details%}) article.
+## Common Next Steps
 
-* __Selection__: __RadTreeListView__ provides a familiar selection API that will make developers feel at home. The control supports single and multiple record selection that can be manipulated both with the mouse and the keyboard. Read more about this in the [Selection]({%slug radtreelistview-features-selection%}) article.
+Start with the article that matches your immediate goal:
 
-Check out the control's demos at: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
+* To create your first tree grid and bind sample data, open [Getting Started]({%slug radtreeliestview-getting-started%}).
+* To understand how the control behaves with larger data sets, open [Performance]({%slug radtreelistview-performance%}).
+* To configure hierarchy relationships and columns, open [Data Binding]({%slug radtreelistview-features-data-binding%}) and [Columns]({%slug radtreelistview-features-columns%}).
+* To inspect events and extensibility points, open [Events]({%slug radtreelistview-events%}).
+* To see runnable examples, open [Developer Focused Examples]({%slug radtreelistview-sdk-examples%}).
 
->tip You can find more examples on how to implement various scenarios available for download from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the examples are listed under __TreeListView__.       
+>note Explore the control demos at [demos.telerik.com](https://demos.telerik.com/wpf/) to review RadTreeListView behavior before integrating it into your application.
+
+>tip You can find additional implementation examples in the [Telerik XAML SDK repository](https://github.com/telerik/xaml-sdk/) under `TreeListView`.
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources

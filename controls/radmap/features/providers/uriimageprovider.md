@@ -37,15 +37,9 @@ The UriImageProvider provides support for the following specific properties:
 * __Uri__: Gets or sets the uniform resource identifier (URI) for the image location.
 
 Example:
-[http://c.tile.openstreetmap.org/7/70/43.png](http://c.tile.openstreetmap.org/7/70/43.png)
+[https://c.tile.openstreetmap.org/7/70/43.png](https://c.tile.openstreetmap.org/7/70/43.png)
 (© OpenStreetMap contributors).
-![{{ site.framework_name }} RadMap Example Tile](http://c.tile.openstreetmap.org/7/70/43.png)
-
-{% if site.site_name == 'Silverlight' %}
-In a Silverlight application this can either point to absolute location (like the above example)
-or it can be the relative path to the image e.g. Uri="/7/70/43.png" that is combined with
-the value of the __BaseAddress__ property.
-{% endif %}
+![{{ site.framework_name }} RadMap Example Tile](https://c.tile.openstreetmap.org/7/70/43.png)
 
 >tip If you have separate image for every zoom level then the URI string must contain *__{zoom}__* placeholder. This part will be replaced with the actual zoom level when the image is requested (e.g."/MyApplication;component/MapImages/image_{zoom}.png").
 

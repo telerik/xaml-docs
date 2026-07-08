@@ -1,14 +1,14 @@
 ---
 title: Controls Documentation
 page_title: Controls Documentation
-description: Easily build next-generation applications with 150+ WPF controls from Telerik. Check the Telerik UI for {{ site.framework_name }} documentation for guidance and examples. 
+description: Easily build next-generation applications with 150+ WPF controls from Telerik. Check the Telerik UI for WPF documentation for guidance and examples. 
 slug: introduction
 tags: introduction
 published: True
 position: 0
 ---
 
-# Welcome to Telerik UI for {{ site.framework_name }}
+# Welcome to Telerik UI for WPF
 
 <img src="images/UI_for_WPF_logo.png" style="min-width:287px;width: 30%;" alt="Telerik UI for WPF logo" />
 
@@ -20,7 +20,9 @@ To learn more please visit the [Telerik UI for WPF](https://www.telerik.com/prod
 
 <CtaPanelIntroduction></CtaPanelIntroduction>
 
-Telerik UI for {{ site.framework_name }} features the following controls:
+## List of Components
+
+Telerik UI for WPF features the following controls:
 
 <IntroTable>
     <IntroTableColumn>
@@ -178,15 +180,15 @@ For any issues you might encounter while working with UI for {{site.framework_na
 
 ## Installation and Deployment
 
-To learn how to install Telerik UI for {{ site.framework_name }} and for comprehensive list of our controls and their assemblies you can visit the [Installation and Deployment]({%slug installation-installing-which-file-do-i-need%}) section.
+To learn how to install Telerik UI for WPF and for comprehensive list of our controls and their assemblies you can visit the [Installation and Deployment]({%slug installation-installing-which-file-do-i-need%}) section.
 
 ## Consuming Data
 
-To learn more about the different approaches for populating the Telerik &reg; UI for {{ site.framework_name }} controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
+To learn more about the different approaches for populating the Telerik &reg; UI for WPF controls, visit the [Consuming Data]({%slug consuming-data-overview%}) section.
 
 ## Styling and Appearance
 
-To find how to customize the look of Telerik UI for {{ site.framework_name }} using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
+To find how to customize the look of Telerik UI for WPF using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
 
 ## Related Links
 
@@ -200,7 +202,7 @@ To find how to customize the look of Telerik UI for {{ site.framework_name }} us
 
 * Creative ideas – [http://telerik.com/blogs](http://telerik.com/blogs)
 
-## Help us Improve the Telerik UI for {{ site.framework_name }} Documentation
+## Help us Improve the Telerik UI for WPF Documentation
 
 We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better and we encourage you to help us with that task in the way that you choose:
 
@@ -214,6 +216,6 @@ Creating an issue is great, but what we really love are pull requests. This is t
 
 __Forums__
 
-You can visit the [Telerik UI for {{ site.framework_name }} forums](http://www.telerik.com/forums/wpf) and leave us a feedback. Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
+You can visit the [Telerik UI for WPF forums](http://www.telerik.com/forums/wpf) and leave us a feedback. Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
 
-Thank you for your contribution to the {{ site.framework_name }} Documentation!
+Thank you for your contribution to the WPF Documentation!

@@ -11,7 +11,7 @@ position: 0
 
 Telerik UI for WPF comes with several different packages that can be installed via the Telerik server or from a local package source.
 
-![{{ site.framework_name }} Telerik UI for {{ site.framework_name }} Available NuGet Packages](images/nuget-available-packages-0.png)
+![Telerik UI for WPF Available NuGet Packages](images/nuget-available-packages-0.png)
 
 The Telerik dlls are built against different versions of .NET starting from .NET 4.6.2 to the latest official .NET. The dlls can be separated into two categories - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). This creates a rich set of assemblies that can be downloaded which are also available as nuget packages. 
 

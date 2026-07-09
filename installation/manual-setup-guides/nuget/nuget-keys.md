@@ -69,20 +69,20 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
 
     
     ```XML
-        <configuration>
-            <packageSources>
-                <clear/>
-                <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-                <add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
-            </packageSources>
-            <packageSourceCredentials>
-                <MyTelerikFeed>
-					<add key="Username" value="api-key" />
-					<add key="ClearTextPassword" value="%MY_API_KEY%" />
-                </MyTelerikFeed>
-            </packageSourceCredentials>
-            ...
-        </configuration>
+	<configuration>
+		<packageSources>
+			<clear/>
+			<add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+			<add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
+		</packageSources>
+		<packageSourceCredentials>
+			<MyTelerikFeed>
+				<add key="Username" value="api-key" />
+				<add key="ClearTextPassword" value="%MY_API_KEY%" />
+			</MyTelerikFeed>
+		</packageSourceCredentials>
+		...
+	</configuration>
     ```
 
 1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
@@ -95,16 +95,16 @@ You can use the CLI `add source` (or `update source`) command to set the credent
 
 * To set the credentials in Azure DevOps:
 
-    __Powershell__  
-		
-		dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text    
-
+	```
+	dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text    
+	```
+	
 * To set the credentials in GitHub Actions:
 
-    __Powershell__  
-        
-		dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_NUGET_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
-
+	```        
+	dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_NUGET_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
+	```
+	
 ## Additional Resources
 
 If you just start using the Telerik NuGet server in your CI or inter-department workflows, check the two blog posts below. You will learn about the various use cases and find practical implementation details.
@@ -112,8 +112,3 @@ If you just start using the Telerik NuGet server in your CI or inter-department 
 * [Azure DevOps and Telerik NuGet Packages](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages)
 
 * [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys)
-
-## See Also  
- * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
- * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi-wpf%})
- * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip-wpf%})

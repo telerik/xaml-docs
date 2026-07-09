@@ -34,7 +34,6 @@ Through the Project Configuration Wizard’s __second page__ you can select whic
 When you click the Finish button the selected assembly references get added to the project. If you use the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) theming mechanism, the resources of the selected theme are merged in the App.xaml Resources collection.          
 
 ## See Also  
- * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
  * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
  * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
  * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

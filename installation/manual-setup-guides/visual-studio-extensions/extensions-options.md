@@ -10,7 +10,7 @@ position: 8
 
 # Options
 
-__Progress Telerik UI for {{ site.framework_name }} Extension__ options dialog provides settings, so you can configure the extension to best suit your needs.
+__Progress Telerik UI for WPF Extension__ options dialog provides settings, so you can configure the extension to best suit your needs.
 
 It can be accessed through the __Visual Studio | Extensions | Telerik | UI for WPF | Options__ menu.
 
@@ -24,7 +24,7 @@ The settings under the __General__ category affect all of the installed __Teleri
 
 ## Project Setup
 
-{% if site.site_name == 'Silverlight' %}__Add referenced assemblies to solution and source control__ - Sets the default value for the __Add referenced assemblies to solution__ option in the Project Configuration Wizard{% else %}__Copy referenced assemblies to solution and integrate with source control__ - When enabled, the referenced assemblies will be copied to the solution when using Telerik wizards{% endif %}
+__Copy referenced assemblies to solution and integrate with source control__ - When enabled, the referenced assemblies will be copied to the solution when using Telerik wizards.
 
 ## Project Upgrade Notifications for Detected Local Distributions
 
@@ -40,7 +40,7 @@ Configures the path where the extensions look for and store distributions.
 
 ## {{ site.framework_name }} Options
 
-All settings under the Telerik UI for {{ site.framework_name }} category affect only the Telerik {{ site.framework_name }} projects.
+All settings under the Telerik UI for WPF category affect only the Telerik WPF projects.
 
 ![VSExtensions Options Dialog Product Specific](images/VSExtentions_WPF_Settings.PNG)
 
@@ -50,4 +50,4 @@ __Include internal builds in Latest Version update and retrieval__: When enabled
 
 ## Notifications
 
-__Show me a message when a newer version is available on [www.telerik.com](http://www.telerik.com)__: When enabled, you will receive notifications if a new version of __Telerik UI for {{ site.framework_name }}__ is available on the Telerik website.
+__Show me a message when a newer version is available on [www.telerik.com](http://www.telerik.com): When enabled, you will receive notifications if a new version of __Telerik UI for WPF__ is available on the Telerik website.

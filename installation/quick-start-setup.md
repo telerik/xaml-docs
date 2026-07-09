@@ -2,7 +2,7 @@
 title: Installation
 page_title: Setup the Telerik WPF Telerik CLI - Installation, Setup, and Command Reference for Telerik UI for WPF
 description: Install and use the Telerik CLI to set up the Telerik NuGet feed, create WPF projects from templates, and update Telerik UI for WPF packages from the command line.
-slug: telerik-cli
+slug: getting-started-quick-start-setup
 tags: telerik,cli,command line,cli,dotnet tool,nuget,setup,install,create project,update,template,wpf,telerik,getting started,environment
 published: True
 position: 1

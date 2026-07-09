@@ -24,6 +24,7 @@ The wizard could be also reached through the context menu counterparts accessed 
 The Convert Project Wizard lets you tune your project's use of Telerik UI for WPF.
 
 ![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConvertWizard.png)
+VSExtensions_WPF_ProjectConvertWizard
 
 The wizard’s first page lets you:        
 
@@ -46,7 +47,6 @@ The second page of the Convert Project Wizard’s lets you select which theme wi
 When converting a project from [XAML to NoXAML]({%slug xaml-vs-noxaml%}) (or vice-versa), you need first to remove all __Telerik__ references from the project. Then you can right-click on the project and launch the Convert Wizard. The final step is to select the assemblies that you need in your project.
 
 ## See Also  
- * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
  * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
  * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
  * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

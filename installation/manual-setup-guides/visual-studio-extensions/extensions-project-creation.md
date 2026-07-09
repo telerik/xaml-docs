@@ -55,8 +55,7 @@ __Visual Studio New Project Wizard__
 
 > If you prefer the Telerik assemblies to be copied into your solution folder, the **Copy referenced assemblies to solution and source control** option could be selected only into the [Visual Studio Extensions Options]({%slug radcontrols-vs-extensions-options%}).
 
-## See Also
- * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})
+## See Also 
  * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
  * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
  * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})

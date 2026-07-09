@@ -55,7 +55,5 @@ __Example 2: Set Custom Geometry In Code__
 
 Additional to this, all [glyph icons]({%slug common-styling-appearance-glyphs-reference-sheet%}) can be converted to `Geometry` objects using the [RadGlyph.GetGeometry]({%slug common-styling-appearance-radglyph%}#use-glyphs-as-geometry) static method.
 
-## See Also
-
-* [Getting Started]({%slug common-faq%})
+## See Also  
 * [Introduction]({%slug introduction%})

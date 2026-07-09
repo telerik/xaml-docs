@@ -196,6 +196,6 @@ After enabling assembly protection by modifying the code as shown above, rebuild
 
 ## See Also
 
-* [Installation Options]({%slug installation-options%})
+* [Installation Options]({%slug installation-guide%})
 * [Installing License Key]({%slug installing-license-key%})
 * [Download Product Files]({%slug download-product-files-wpf%})

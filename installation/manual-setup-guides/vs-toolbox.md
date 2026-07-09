@@ -57,4 +57,5 @@ To manually add Telerik UI for WPF to the Visual Studio Toolbox, follow the step
 ![Common Installing Adding ToVS 2015 Tool Box 080 WPF](images/Common_InstallingAddingToVS2015ToolBox_08.png)
 
 ## See Also  
- * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%}) 
+ * [Namespace Declaration]({%slug installation-guide%}) 
+

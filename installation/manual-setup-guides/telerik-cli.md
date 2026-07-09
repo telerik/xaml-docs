@@ -272,5 +272,5 @@ The following table lists the requirements to run the Telerik CLI.
 ## See Also
 
 * [Set Up the Telerik NuGet Package Source]({%slug nuget-package-source-setup%})
-* [First Steps with Telerik UI for WPF]({%slug nuget-setup-lifecycle%})
+* [First Steps with Telerik UI for WPF]({%slug getting-started-first-steps%})
 * [Restoring NuGet Packages in Your CI Workflow]({%slug nuget-keys%})

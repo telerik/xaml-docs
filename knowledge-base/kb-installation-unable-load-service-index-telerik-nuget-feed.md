@@ -42,4 +42,3 @@ This error can occur when the Telerik NuGet service is temporarily unavailable.
 ## See Also
 
 * [Error 503 (Service Unavailable) with Telerik NuGet Packages]({%slug kb-installing-nuget-fix-503-service-unavailable-error-telerik-nuget-packages%})
-* [Troubleshooting]({%slug nuget-troubleshooting%})

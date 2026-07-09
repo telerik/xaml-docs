@@ -22,7 +22,5 @@ Unfolding the **Smart Tag** presents you with a list of different useful resourc
 #### **Figure 2: Available resources for the RadGridView control:** 
 ![Available resources for the RadGridView control](images/smarttag2.png)
 
-## See Also
-
-* [Getting Started]({%slug common-faq%})
+## See Also  
 * [Introduction]({%slug introduction%})

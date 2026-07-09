@@ -136,4 +136,5 @@ LayoutControls	|	Telerik.Windows.Controls
 
 ## See Also 
  * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}) 
- * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
+ * [Namespace Declaration]({%slug installation-guide%})
+

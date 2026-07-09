@@ -72,4 +72,3 @@ Creating a DataTemplate in code is not as simple as creating a visual element, l
 
 ## See Also 
 * [Introduction]({%slug introduction%})
-* [Getting Started with XAML]({%slug common-faq%})

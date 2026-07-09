@@ -75,4 +75,4 @@ Progress Telerik UI for WPF extensions are disabled or not installed correctly.
 ## See Also
 
 * [Visual Studio Extensions Overview]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%})
-* [Installation Options]({%slug installation-options%})
+* [Installation Options]({%slug installation-guide%})

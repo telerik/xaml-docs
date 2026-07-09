@@ -39,4 +39,3 @@ NuGet restore from Telerik feed may fail when the machine is behind a proxy or a
 ## See Also
 
 * [NuGet Packages]({%slug nuget-installation%})
-* [Troubleshooting]({%slug nuget-troubleshooting%})

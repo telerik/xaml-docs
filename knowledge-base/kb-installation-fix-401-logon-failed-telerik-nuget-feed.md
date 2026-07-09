@@ -56,4 +56,3 @@ For example, `my&super&P@ssword` becomes `my&amp;super&amp;P@ssword`.
 ## See Also
 
 * [NuGet Packages]({%slug nuget-installation%})
-* [Troubleshooting]({%slug nuget-troubleshooting%})

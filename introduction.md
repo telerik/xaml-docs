@@ -180,7 +180,7 @@ For any issues you might encounter while working with UI for {{site.framework_na
 
 ## Installation and Deployment
 
-To learn how to install Telerik UI for WPF and for comprehensive list of our controls and their assemblies you can visit the [Installation and Deployment]({%slug installation-installing-which-file-do-i-need%}) section.
+To learn how to install Telerik UI for WPF and for comprehensive list of our controls and their assemblies you can visit the [Installation and Deployment]({%slug installation-guide%}) section.
 
 ## Consuming Data
 
@@ -219,3 +219,4 @@ __Forums__
 You can visit the [Telerik UI for WPF forums](http://www.telerik.com/forums/wpf) and leave us a feedback. Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
 
 Thank you for your contribution to the WPF Documentation!
+

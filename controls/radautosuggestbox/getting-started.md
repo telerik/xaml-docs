@@ -172,7 +172,7 @@ RadAutoSuggestBox allows you to customize the appearance of its TextBox, buttons
 
 * [Telerik UI for WPF AutoSuggestBox Component](https://www.telerik.com/products/wpf/autosuggestbox.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -185,3 +185,4 @@ RadAutoSuggestBox allows you to customize the appearance of its TextBox, buttons
 * [Visual Structure]({%slug radautosuggestbox-visual-structure%})
 * [Grouping]({%slug radautosuggestbox-features-grouping%})
 * [Events]({%slug radautosuggestbox-events%})
+

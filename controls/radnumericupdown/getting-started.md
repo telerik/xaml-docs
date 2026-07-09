@@ -111,7 +111,7 @@ __Figure 2__ shows a __RadNumericUpDown__ with the **Windows8** theme applied.
 
 * [Telerik UI for WPF NumericUpDown Component](https://www.telerik.com/products/wpf/numericupdown.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -126,3 +126,4 @@ __Figure 2__ shows a __RadNumericUpDown__ with the **Windows8** theme applied.
 * [Properties]({%slug radnumericupdown-behavior%})
 
 * [Events]({%slug radnumericupdown-events%})
+

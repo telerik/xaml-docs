@@ -109,7 +109,7 @@ The heatmap control has a built-in colorizer that sets the color of each cell ba
 
 * [Telerik UI for WPF HeatMap Component](https://www.telerik.com/products/wpf/heatmap.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -120,3 +120,4 @@ The heatmap control has a built-in colorizer that sets the color of each cell ba
 ## See Also
 * [Labels]({%slug radheatmap-labels%})
 * [Populating With Data]({%slug radheatmap-populating-with-data%})
+

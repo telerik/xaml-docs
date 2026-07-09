@@ -67,7 +67,7 @@ __Example 2: Adding RadListBoxItems__
 
 * [Telerik UI for WPF ListBox Component](https://www.telerik.com/products/wpf/listbox.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -82,3 +82,4 @@ __Example 2: Adding RadListBoxItems__
 * [Drag and Drop]({%slug radlistbox-features-dragdrop%})
 * [Selection]({%slug radlistbox-features-selection%})
 * [Auto Complete]({%slug radlistbox-features-autocomplete%})
+

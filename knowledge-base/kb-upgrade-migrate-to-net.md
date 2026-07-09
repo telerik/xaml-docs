@@ -50,7 +50,7 @@ There is no API difference between Telerik dlls for these targets, so you only n
 
 ### Migrate from .NET Framework 4.0/4.5 to .{{ site.minimum_net_core_version }}
 
-Create a new .{{ site.minimum_net_core_version }} (or later) project and include the files from the .NET Framework project. Then [install the Telerik .NET assemblies]({%slug installation-installing-which-file-do-i-need%}) in the new project.
+Create a new .{{ site.minimum_net_core_version }} (or later) project and include the files from the .NET Framework project. Then [install the Telerik .NET assemblies]({%slug installation-guide%}) in the new project.
 
 For full guidance, see [Migrating to .NET]({%slug netcore-support-migration%}).
 
@@ -76,3 +76,4 @@ There is no API difference between Telerik dlls for these targets, so you only n
 
 * [Overview of porting from .NET Framework to .NET](https://learn.microsoft.com/en-us/dotnet/core/porting/)
 * [Migrate to .NET Framework 4.8, 4.7, and 4.6.2](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/)
+

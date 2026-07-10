@@ -6,7 +6,6 @@ slug: radcontrols-for-wpf-vs-extensions-project-configuration
 tags: project,and,configuration
 published: True
 position: 3
-site_name: WPF
 ---
 
 # Configure Project

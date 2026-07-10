@@ -5,7 +5,7 @@ description: This article explains the main differences between the licenses ava
 slug: installation-installing-license-limitations-wpf
 tags: trial,license,limitations
 published: True
-position: 10
+position: 4
 ---
 
 # Trial License Limitations

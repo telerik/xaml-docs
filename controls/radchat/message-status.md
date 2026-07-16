@@ -25,7 +25,7 @@ message.InlineViewModel.Status = "Sent";
 this.radChat.AddMessage(message);
 ```
 
-![](images/chat-message-status-0.png)
+![Telerik UI for WPF RadChat message status displayed beneath a chat message](images/chat-message-status-0.png)
 
 You can later access the message and update its status if necessary.
 

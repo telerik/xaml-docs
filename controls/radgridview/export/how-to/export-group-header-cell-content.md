@@ -46,7 +46,7 @@ __Example 1: Custom Group Header Cell Export Content__
 
 __Custom Group Header Cell Export Content__
 
-![](images/format-groupheadercell-result.png)
+![Telerik UI for WPF RadGridView export showing custom group header cell content with aggregates](images/format-groupheadercell-result.png)
 
 ## See Also
 

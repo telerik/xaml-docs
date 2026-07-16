@@ -26,7 +26,7 @@ You can data bind this property in any way that suits your custom logic. Note th
 
 __RadGridView with busy indicator__
 
-![](images/gridview-features-isbusy.gif)
+![Telerik UI for WPF RadGridView busy indicator displayed while loading data](images/gridview-features-isbusy.gif)
 
 
 ## Progress Determination
@@ -49,7 +49,7 @@ __Example 2: Defining a determined indicator__
 
 __RadGridView with determined busy indicator__
 
-![](images/gridview-features-progress-value.png)
+![Telerik UI for WPF RadGridView determined busy indicator showing progress value](images/gridview-features-progress-value.png)
 
 >A good example of how to define and update a determined busy indicator has been demonstrated in the [following article]({%slug radbusyindicator-features-report-progress-value%}).
 
@@ -81,7 +81,7 @@ __Example 4: Setting BusyIndicatorContentTemplate__
 
 __RadGridView with busy indicator with custom content template__
 
-![](images/gridview-features-content-template.png)
+![Telerik UI for WPF RadGridView busy indicator with custom content template showing loading percentage](images/gridview-features-content-template.png)
 
 ## See Also
 

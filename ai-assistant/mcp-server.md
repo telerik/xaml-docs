@@ -158,7 +158,7 @@ You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (see Lice
 
 After saving the file, restart Visual Studio and enable the `telerik-wpf-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
-![](images/ai-mcp-server-0.png)
+![Telerik UI for WPF AI Assistant MCP server setup in Visual Studio Copilot Chat tool selection](images/ai-mcp-server-0.png)
 
 ### Global Setup
 
@@ -168,7 +168,7 @@ To enable the server globally for all projects, add the `.mcp.json` file to your
 
 The `.mcp.json` file can be created and updated by using the [Telerik Visual Studio Extension]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) menu in Visual Studio.
 
-![](images/ai-mcp-server-1.png)
+![Telerik UI for WPF AI Assistant Telerik Visual Studio Extension menu with MCP server configuration options](images/ai-mcp-server-1.png)
 
 The `Configure MCP Server Globally` option creates (or updates if existing) the global `%USERPROFILE%\.mcp.json` file and adds  the Telerik server entry.
 
@@ -212,11 +212,11 @@ After configuration and restart:
 2. Enable the `telerik-wpf-assistant` tool.
 3. Grant permissions when prompted (per session, workspace, or always).
 
-![](images/ai-mcp-server-2.png)
+![Telerik UI for WPF AI Assistant Visual Studio Copilot Chat with the telerik-wpf-assistant tool enabled](images/ai-mcp-server-2.png)
 
 Start fresh sessions for unrelated prompts to avoid context pollution. You can check the Output pane of Visual Studio for diagnostics (select output from GitHub Copilot).
 
-![](images/ai-mcp-server-3.png)
+![Telerik UI for WPF AI Assistant Visual Studio Output pane showing GitHub Copilot diagnostics](images/ai-mcp-server-3.png)
 
 ## Troubleshooting
 
@@ -244,13 +244,13 @@ Begin prompts with any of these triggers to explicitly invoke the server:
    
 Grant permissions when prompted (per session, workspace, or always).
 
-![](images/ai-mcp-server-2.png)
+![Telerik UI for WPF AI Assistant Visual Studio Copilot Chat with the telerik-wpf-assistant tool enabled](images/ai-mcp-server-2.png)
 
 Start fresh sessions for unrelated prompts to avoid context pollution.
 
 You can check the Output pane of Visual Studio for diagnostics information related to Copilot. To display the relevant information, select to show output from GitHub Copilot.
 
-![](images/ai-mcp-server-3.png)
+![Telerik UI for WPF AI Assistant Visual Studio Output pane showing GitHub Copilot diagnostics](images/ai-mcp-server-3.png)
 
 ## Sample Prompts
 

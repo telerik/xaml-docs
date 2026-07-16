@@ -46,7 +46,7 @@ The button is hidden but default. To __show it__, set the `IsMoreButtonVisible` 
 <telerik:RadChat IsMoreButtonVisible="True" />
 ```
 
-![](images/chat-input-box-settings-2.png)
+![Telerik UI for WPF RadChat input box showing the More Options button for attachments](images/chat-input-box-settings-2.png)
 
 To __add more options__ in the drop down, use the `MoreButtonActions` collection of the input box visual (`RadPromptInput`).
 

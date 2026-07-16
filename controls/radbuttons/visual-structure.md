@@ -90,7 +90,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 * __Callout__: A callout/tooltip showing information about the button's current state.
 * __Button State Content__: The current state of the button - ready, listening, faulted, etc.
 
-![](images/visual-structure-speechtotextbutton.png)
+![Telerik UI for WPF RadSpeechToTextButton visual structure showing the callout and button state content](images/visual-structure-speechtotextbutton.png)
 
 ## See Also
  * [Getting Started]({%slug radbuttons-getting-started%})

@@ -110,7 +110,7 @@ Upon running the application, your RadTabbedWindow will now be populated with ta
 
 __DataBound RadTabbedWindow__
 
-![](images/tabbedwindow-getting-started-2.png)
+![Telerik UI for WPF RadTabbedWindow data binding showing tabs generated from an ItemsSource collection](images/tabbedwindow-getting-started-2.png)
 
 ## See Also
 

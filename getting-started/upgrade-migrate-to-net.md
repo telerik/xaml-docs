@@ -24,11 +24,11 @@ There is no difference in the APIs between the different types of Telerik dlls, 
 	
 2. Right click on the WPF project in Visual Studio and select the __Properties__ option from the context menu.
 
-	![](images/upgrade-migrate-to-net-2.png)
+	![Telerik UI for WPF migration showing the Visual Studio project context menu with Properties selected](images/upgrade-migrate-to-net-2.png)
 	
 3. In the __Target framework__ menu, select __.{{ site.minimum_net_core_version }}__ or later version and save the project file.
 
-	![](images/upgrade-migrate-to-net-3.png)
+	![Telerik UI for WPF migration showing the project Target framework set to .NET](images/upgrade-migrate-to-net-3.png)
 	
 4. Update the referenced Telerik assemblies using the preferred installation approach (we recommend [using NuGet]({%slug nuget-installation%})).
 
@@ -46,11 +46,11 @@ There is no difference in the APIs between the different types of Telerik dlls, 
 	
 2. Right click on the WPF project in Visual Studio and select the __Properties__ option from the context menu.
 
-	![](images/upgrade-migrate-to-net-0.png)
+	![Telerik UI for WPF migration showing the Visual Studio project context menu with Properties selected](images/upgrade-migrate-to-net-0.png)
 	
 3. In the __Target framework__ menu, select __.NET Framework 4.6.2__ or later version and save the project file.
 
-	![](images/upgrade-migrate-to-net-1.png)
+	![Telerik UI for WPF migration showing the project Target framework set to .NET Framework 4.6.2](images/upgrade-migrate-to-net-1.png)
 	
 4. Update the referenced Telerik assemblies using the preferred installation approach (we recommend [using NuGet]({%slug nuget-installation%})).
 

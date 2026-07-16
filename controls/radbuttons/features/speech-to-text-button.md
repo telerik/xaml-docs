@@ -14,7 +14,7 @@ The `RadSpeechToTextButton` control allows you to capture spoken input and conve
 
 The component has a built-in speech recognizer based on Web Speech API utilized via [WebView2](https://learn.microsoft.com/en-us/microsoft-edge/webview2/). The button automatically detects microphone input when it is in listening state and converts the audio to text. The default recognizer allows you to also set the language for speech recognition, ensuring accurate transcription of spoken words.
 
-![](images/radbuttons-features-speech-to-text-button-0.png)
+![Telerik UI for WPF RadSpeechToTextButton speech-to-text feature showing recognized voice input](images/radbuttons-features-speech-to-text-button-0.png)
 
 ## Basic Usage
 

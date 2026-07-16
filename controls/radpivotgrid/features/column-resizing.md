@@ -33,7 +33,7 @@ __Example 2: Enable column resizing in code-behind__
 
 __Resizing RadPivotGrid's columns__
 
-![](images/column-resizing.gif)
+![Telerik UI for WPF RadPivotGrid column resizing with drag handle and autofit behavior](images/column-resizing.gif)
 
 As can be observed in **Figure 1**, when the content of a header is wider than that of its parent column, it will be trimmed and continued with an ellipsis at the character closest to the trimming edge. Double-clicking the column divider will in turn resize the column to autofit the content.
 

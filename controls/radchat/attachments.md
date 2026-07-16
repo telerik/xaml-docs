@@ -137,6 +137,6 @@ private void RadChat_Loaded(object sender, RoutedEventArgs e)
 
 The data context passed to the `AttachmentTemplate` is an object of type `PromptInputAttachedFile`.
 
-![](images/chat-attachments-3.png)
+![Telerik UI for WPF RadChat attachment template showing attached files in the input box](images/chat-attachments-3.png)
 
 For conditional appearance customization, use the `AttachmentTemplateSelector` ([DataTemplateSelector](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.8.1)) property.

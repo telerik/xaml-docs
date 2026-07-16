@@ -86,11 +86,11 @@ With a classic pipeline, use the “Download secure file” task and a PowerShel
 
 1. Add a “Download secure file” task and set the output variable's name to `telerikLicense`.
 	
- 	![](images/installing-license-to-ci-services-0.png)
+  ![Telerik UI for WPF licensing in Azure DevOps classic pipeline showing the Download secure file task configuration](images/installing-license-to-ci-services-0.png)
 
 1. Add a PowerShell task and set the `TELERIK_LICENSE_PATH` variable to the `secureFilePath` property of the output variable.
 	
- 	![](images/installing-license-to-ci-services-1.png)
+  ![Telerik UI for WPF licensing in Azure DevOps classic pipeline showing the PowerShell task that sets TELERIK_LICENSE_PATH](images/installing-license-to-ci-services-1.png)
 
 The script to set the environment variable is quoted below:
 

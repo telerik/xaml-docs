@@ -1018,13 +1018,13 @@ meta:
         position: 2
     "installation/manual-setup-guides":
         title: "Manual Setup Guides"
-        position: 3
+        position: 4
     "installation/manual-setup-guides/nuget":
         title: "NuGet"   
         position: 1
-    "installation/manual-setup-guides/licensing":
+    "installation/licensing":
         title: "Activating Your License"
-        position: 0
+        position: 3
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
         position: 10    

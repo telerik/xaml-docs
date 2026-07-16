@@ -11,12 +11,39 @@ position: 0
 
 Telerik UI for WPF comes with several different packages that can be installed via the Telerik server or from a local package source.
 
-![Telerik UI for WPF Available NuGet Packages](images/nuget-available-packages-0.png)
+>important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
 
 The Telerik dlls are built against different versions of .NET starting from .NET 4.6.2 to the latest official .NET. The dlls can be separated into two categories - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). This creates a rich set of assemblies that can be downloaded which are also available as nuget packages. 
 
-The packages can be downloaded as `.nupkg` files which can be used to [setup a local package source]({%slug nuget-package-source-setup%}) or alternatively the [online Telerik package source]({%slug nuget-package-source-setup%}) can be used. These two different options contain a slightly different set of packages. This article aims to list and describe the packages.
+The packages can be installed from the the [online Telerik package source]({%slug nuget-package-source-setup%}) or downloaded as `.nupkg` files which can be used to [setup a local package source]({%slug nuget-package-source-setup%}). These two different options contain a slightly different set of packages. This article aims to list and describe the packages.
+	
+## Telerik NuGet Server Packages
 
+>important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
+
+There is an [online package source]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to [local](#nuget-local-packages) ones. 
+
+### Full Packages (Server)
+
+* `Telerik.UI.for.Wpf.AllControls.NoXaml`
+* `Telerik.UI.for.Wpf.AllControls.Xaml`
+
+### Separate Packages (Server)
+
+* `Telerik.Windows.Controls.for.Wpf.Xaml` (includes localization resources)
+* `Telerik.Windows.Controls.for.Wpf` (includes localization resources)
+* `Telerik.Windows.Controls.GridView.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.GridView.for.Wpf`
+* `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml`
+* `Telerik.Windows.Controls.Navigation.for.Wpf`
+* `Telerik.Windows.Themes.Fluent.for.Wpf` (theme dll)
+* `Telerik.Windows.Themes.Material.for.Wpf` (theme dll)
+* etc.
+
+Each of these packages contain all .NET versions of the corresponding Telerik dll. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
+
+The __oldest nuget package__ that can be found in the __Telerik NuGet Feed__ is __2016.3.1024__.
+	
 ## NuGet Local Packages
 
 The Telerik UI for WPF product provides `.nupkg` files that can be downloaded from [your telerik.com account](https://www.telerik.com/account/product-download?product=RCWPF). The download page has the following .zip files.
@@ -48,33 +75,6 @@ The full package is named `Telerik.UI.for.Wpf.AllControls.<Xaml or NoXaml>.<vers
 	* etc.
 
 	Each of these packages contain the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .8). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
-	
-## Telerik NuGet Server Packages
-
->important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
-
-There is an [online package source]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to [local](#nuget-local-packages) ones. 
-
-### Full Packages (Server)
-
-* `Telerik.UI.for.Wpf.AllControls.NoXaml`
-* `Telerik.UI.for.Wpf.AllControls.Xaml`
-
-### Separate Packages (Server)
-
-* `Telerik.Windows.Controls.for.Wpf.Xaml` (includes localization resources)
-* `Telerik.Windows.Controls.for.Wpf` (includes localization resources)
-* `Telerik.Windows.Controls.GridView.for.Wpf.Xaml`
-* `Telerik.Windows.Controls.GridView.for.Wpf`
-* `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml`
-* `Telerik.Windows.Controls.Navigation.for.Wpf`
-* `Telerik.Windows.Themes.Fluent.for.Wpf` (theme dll)
-* `Telerik.Windows.Themes.Material.for.Wpf` (theme dll)
-* etc.
-
-Each of these packages contain all .NET versions of the corresponding Telerik dll. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
-
-The __oldest nuget package__ that can be found in the __Telerik NuGet Feed__ is __2016.3.1024__.
 	
 ## NuGet Packages and Controls Localization
 

@@ -14,7 +14,7 @@ position: 14
 
 #### __GridViewRow template structure__
 
-![Telerik {{ site.framework_name }} DataGrid-row-template](images/gridview-row-template.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewRow template structure](images/gridview-row-template.png)
 
 ## Targeting the GridViewRow Element
 
@@ -70,7 +70,7 @@ __Applying styles to the RowStyle and AlternateRowStyle properties__
 
 #### __RadGridView with styled rows__
 
-![Telerik {{ site.framework_name }} DataGrid-styled-row-and-alternate-row](images/gridview-styled-row-and-alternaterow.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with custom RowStyle and AlternateRowStyle applied](images/gridview-styled-row-and-alternaterow.png)
 
 ## Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector
 

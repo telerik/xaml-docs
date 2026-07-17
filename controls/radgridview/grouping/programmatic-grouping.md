@@ -102,7 +102,7 @@ __Example 4: Set the DisplayContent property__
 
 #### Figure 1: The box displayed in the group panel after the DisplayContent is set
 
-![Telerik {{ site.framework_name }} DataGrid ProgrammaticGrouping 1](images/RadGridView_ProgrammaticGrouping_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView group panel showing a programmatic GroupDescriptor with custom display content](images/RadGridView_ProgrammaticGrouping_1.png)
 
 >tip In the group rows you are able to display aggregate functions, which display information about the data contained in the group. To learn more about how to add aggregate functions to the group rows take a look at the [Group Aggregates]({%slug gridview-grouping-aggregates%}) topic.
 

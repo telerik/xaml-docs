@@ -14,7 +14,7 @@ __RadGridView__ provides you with a built-in grouping functionality, which allow
 
 #### **Figure 1: Grouped RadGridView**
 
-![Telerik {{ site.framework_name }} DataGrid Functional Overview Grouping 1](images/RadGridView_FunctionalOverview_Grouping_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView grouping interface showing grouped rows and the group panel](images/RadGridView_FunctionalOverview_Grouping_1.png)
 
 You can define grouping either in the XAML or in the code-behind.
 

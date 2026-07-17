@@ -83,7 +83,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 Run your demo, the result can be seen on the next image:
 
-![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromAdoNet 010](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
+![Telerik UI for {{ site.framework_name }} RadGridView populated with customer data loaded from an ADO.NET Data Service](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
 
 ## Using MVVM Approach
 
@@ -219,7 +219,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 Run your demo, the result can be seen on the next picture: 
 
-![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromAdoNet 010](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
+![Telerik UI for {{ site.framework_name }} RadGridView bound through an MVVM data source that loads customers from an ADO.NET Data Service](images/RadGridView_PopulatingWithDataLoadFromAdoNet_010.PNG)
 
 >tip If you need to define the columns manually take a look at the [Defining Columns]({%slug gridview-columns-defining-columns%}) topic.
 

@@ -77,7 +77,7 @@ __Example 4: Setting RadGridView's GroupPanelStyle and GroupPanelItemStyle__
 
 #### __Figure 4: RadGridView with styled group panel__
 
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling Telerik {{ site.framework_name }} DataGrid 03](images/RadGridView_Styles_and_Templates_Styling_RadGridView_03.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with custom GroupPanelStyle and GroupPanelItemStyle applied to the group panel](images/RadGridView_Styles_and_Templates_Styling_RadGridView_03.png)
 
 ## GroupPanelForeground and GroupPanelBackground
 

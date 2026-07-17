@@ -126,7 +126,7 @@ And here is the final result:
 
 #### __Figure 1: The row details styled using the RowDetailsStyleSelector property__
 
-![Telerik {{ site.framework_name }} DataGrid-rowdetails-styleselector](images/gridview-rowdetails-styleselector.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with RowDetailsStyleSelector applying different styles to row details panels](images/gridview-rowdetails-styleselector.png)
 		 
 >tip Another approach for achieving the same result is demonstrated in the {% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](https://demos.telerik.com/silverlight/#GridView/Selectors/StyleSelectors/RowDetailsStyleSelector){% endif %}{% if site.site_name == 'WPF' %}[WPF Controls Samples](https://demos.telerik.com/wpf/) under **StyleSelectors -> Row Details**{% endif %}.
 

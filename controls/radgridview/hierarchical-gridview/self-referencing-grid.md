@@ -359,7 +359,7 @@ In the child __RadGridView__ the entries of the __RadGridView's__ source are dis
 **Figure 1** demonstrates the result from **Example 3**:
 
 #### __Figure 1: Self-referencing RadGridView__
-![Telerik {{ site.framework_name }} DataGrid HiarachicalGrid SelfRefencingGrid 010](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_010.png)
+![Telerik UI for {{ site.framework_name }} RadGridView self-referencing hierarchy showing employees nested by manager relationship](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_010.png)
 
 You can specify more than one __FiledDescriptorNamePair__. For example, define a relation that specifies that the child objects should have the same title as the parent object.
 
@@ -389,7 +389,7 @@ __Example 4: Specifying two FiledDescriptorNamePair__
 In **Figure 2** you can see that for the object with __Id__ equal to 3 only the employee with __ManagerId__ property equal to 3 and __Title__ equal to __Consultant__ is displayed.
 
 #### __Figure 2: Custom relation__
-![Telerik {{ site.framework_name }} DataGrid HiarachicalGrid SelfRefencingGrid 020](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_020.png)
+![Telerik UI for {{ site.framework_name }} RadGridView self-referencing hierarchy with a custom relation applied to employee title and manager](images/RadGridView_HiarachicalGrid_SelfRefencingGrid_020.png)
 
 > In order to hide the GridViewToggleButton that expands the hierarchy for items that do not have subitems, you can introduce a boolean property in the Employee class and use the [IsExpandableBinding]({%slug radgridview-isexpandedbinding-isexpandablebinding%}#isexpandablebinding) property of the RadGridView.
 

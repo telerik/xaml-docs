@@ -19,7 +19,7 @@ You can also learn more on [RadGridView Localization]({%slug gridview-localizati
 {% if site.site_name == 'Silverlight' %}
 However, in case you aim at loading the right resources automatically by means of culture settings, a couple of things need to be done. Firstly, your project file should be opened in text – mode. So, go to Visual Studio, right – click on the project and unload it.
 
-![Telerik {{ site.framework_name }} DataGrid-Localization Default Language 1](images/Localization_DefaultLanguage1.png)
+![Telerik UI for {{ site.framework_name }} project settings opened to configure supported cultures for localization](images/Localization_DefaultLanguage1.png)
 
 Here, under the section of &lt;Property Group&gt; is the element &lt;Supported Cultures&gt;. This is the place, where every language you want your application to support is defined. In case the desired default language is Spanish, for example, the code will be:
 
@@ -50,11 +50,11 @@ The thing that you must do for defining the language settings of the application
 
 Note that, the resource folders are supposed to be placed along with the binaries you have referenced.
 
-![Telerik {{ site.framework_name }} DataGrid localization defaultlanguage3png](images/RadGridView_localization_defaultlanguage3png.PNG)
+![Telerik UI for {{ site.framework_name }} localization resource folders placed next to the referenced binaries](images/RadGridView_localization_defaultlanguage3png.PNG)
 
 Thus, after setting the startup language, all controls will be translated automatically and the application will initialize in the specified language.
 
-![Telerik {{ site.framework_name }} DataGrid-Localization Default Language 2](images/Localization_DefaultLanguage2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView initialized in the configured startup language with translated interface text](images/Localization_DefaultLanguage2.png)
 
 ## See Also
 

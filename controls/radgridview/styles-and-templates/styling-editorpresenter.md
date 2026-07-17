@@ -29,7 +29,7 @@ __Example 1: Styling the GridViewEditorPresenter__
 
 #### __Figure 2: RadGridView with styled GridViewEditorPresenter__
 
-![Telerik {{ site.framework_name }} DataGrid-styled-editor-presenter](images/gridview-styled-editorpresenter.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a styled GridViewEditorPresenter in edit mode](images/gridview-styled-editorpresenter.png)
             
 >If you would like to change the appearance of the editor itself, then you should create a simple style targeted at the corresponding editor. You can have a look at the [Styling Column Editor]({%slug radgridview-styling-column-editor%}) article for more information.
         

@@ -63,6 +63,6 @@ In order to group RadGridView you can press and hold on Column's header and then
 
 This is shown on the following images:
 
-![Telerik {{ site.framework_name }} DataGrid-overview-touch-support 05](images/gridview-overview-touch-support_05.png)
+![Telerik UI for {{ site.framework_name }} RadGridView touch support showing a column header being dragged for grouping](images/gridview-overview-touch-support_05.png)
 
-![Telerik {{ site.framework_name }} DataGrid-overview-touch-support 06](images/gridview-overview-touch-support_06.png)
+![Telerik UI for {{ site.framework_name }} RadGridView touch support showing the column grouped after drag and drop](images/gridview-overview-touch-support_06.png)

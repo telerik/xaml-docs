@@ -16,7 +16,7 @@ If you want to style all group footer rows of your application, you should creat
 
 #### __Figure 1: GridViewGroupFooterRow template structure__
 
-![Telerik {{ site.framework_name }} DataGrid-groupfooterrow-style](images/gridview-groupfooterrow-style.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewGroupFooterRow template structure](images/gridview-groupfooterrow-style.png)
 
 You have two options:
 
@@ -49,7 +49,7 @@ __Example 2: Setting RadGridView's GroupFooterRowStyle__
 
 #### __Figure 2: RadGridView with styled group footer rows__
 
-![Telerik {{ site.framework_name }} DataGrid-groupfooterrow-styled](images/gridview-groupfooterrow-styled.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a custom GroupFooterRowStyle applied to group footer rows](images/gridview-groupfooterrow-styled.png)
 
 ## Setting RadGridView GroupFooterRowStyleSelector
 
@@ -84,7 +84,7 @@ __Example 7: Setting a column's GroupFooterCellStyle__
 
 #### __Figure 2: RadGridView with styled group footer cells__
 
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewFooterCell 03](images/RadGridView_Styles_and_Templates_Styling_GridViewFooterCell_03.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a custom GroupFooterCellStyle applied to group footer cells](images/RadGridView_Styles_and_Templates_Styling_GridViewFooterCell_03.png)
 
 ## Setting a Column's GroupFooterCellStyleSelector
 

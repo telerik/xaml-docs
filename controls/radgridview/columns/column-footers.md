@@ -31,7 +31,7 @@ __Example 2: Set the content of the footer cells__
 
 #### Figure 1: RadGridView with footer cells
 
-![Telerik {{ site.framework_name }} DataGrid Column Footers 1](images/RadGridView_ColumnFooters_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing footer cells beneath each column](images/RadGridView_ColumnFooters_1.png)
 
 Because it is of type object, you are not limited to just using plain text. For example, you can add a corresponding picture to the footer text.
 
@@ -54,7 +54,7 @@ __Example 3: Adding an image to the footer content__
 
 #### Figure 2: Image in the footer cell
 
-![Telerik {{ site.framework_name }} DataGrid Column Footers 2](images/RadGridView_ColumnFooters_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView column footer with an image and descriptive text](images/RadGridView_ColumnFooters_2.png)
 
 ## Aggregates
 
@@ -72,7 +72,7 @@ __Example 4: Adding an aggregate function to a column__
 
 #### Figure 3: Footer cell with aggregate results
 
-![Telerik {{ site.framework_name }} DataGrid Column Footers 3](images/RadGridView_ColumnFooters_3.png)
+![Telerik UI for {{ site.framework_name }} RadGridView footer cell displaying aggregate results](images/RadGridView_ColumnFooters_3.png)
 
 To learn more about aggregate functions please have a look at [this article]({%slug gridview-columns-aggregate-functions%}).
 

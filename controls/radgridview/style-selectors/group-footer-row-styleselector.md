@@ -118,7 +118,7 @@ And here is the final result:
 
 #### __Figure 1: The group footer rows styled using the GroupFooterRowStyleSelector property__
 
-![Telerik {{ site.framework_name }} DataGrid-groupfooterrowstyleselector](images/gridview-groupfooterrowstyleselector.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with GroupFooterRowStyleSelector applying different styles to group footer rows](images/gridview-groupfooterrowstyleselector.png)
 
 ## See Also
 

@@ -47,7 +47,7 @@ __Example 2: Setting a column's EditorStyle__
 
 #### __Figure 1: RadGridView with styled column edtior__
 
-![Telerik {{ site.framework_name }} DataGrid-styled-column-edtior](images/gridview-styled-column-edtior.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a styled column editor applied through EditorStyle](images/gridview-styled-column-edtior.png)
 
 ## See Also
 

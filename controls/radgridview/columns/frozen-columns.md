@@ -16,17 +16,17 @@ With the __R1 2018__, `RadGridView` supports pinning columns both on its left an
 
 RadGridView provides an easy way to select one or more columns and exclude them from the horizontal scrolling. The frozen columns stay static on top of the horizontal scrolling. To freeze a column on the left, the user has to drag the left frozen columns separator.
 
-![Telerik {{ site.framework_name }} DataGrid Frozen columns 1](images/RadGridView_Frozencolumns_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the left frozen columns splitter before freezing a column](images/RadGridView_Frozencolumns_1.png)
 
 Once there is a frozen column, you can freeze other columns by dragging their headers behind the frozen columns separator.
 
-![Telerik {{ site.framework_name }} DataGrid Frozen columns 2](images/RadGridView_Frozencolumns_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with additional columns dragged behind the frozen columns splitter](images/RadGridView_Frozencolumns_2.png)
 
 Similarly, you can unfreeze columns by dragging their headers outside the frozen columns separator.
 
 A frozen column always stays on top of horizontal scrolling.
 
-![Telerik {{ site.framework_name }} DataGrid Frozen columns 3](images/RadGridView_Frozencolumns_3.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with frozen columns remaining visible during horizontal scrolling](images/RadGridView_Frozencolumns_3.png)
 
 ## Right Frozen Columns
 
@@ -83,7 +83,7 @@ __Disabling Frozen Columns__
 	             CanUserFreezeColumns="False" />
 ```
 
-![Telerik {{ site.framework_name }} DataGrid Frozen columns 4](images/RadGridView_Frozencolumns_4.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with column freezing disabled and the splitter hidden](images/RadGridView_Frozencolumns_4.png)
 
 ## Hiding the Left Frozen Columns Splitter
 
@@ -97,8 +97,8 @@ The property has one of three values:
 
 #### __FrozenColumnsSplitterVisibility set to Visible and Hidden/Collapsed, respectively__
 
-![Telerik {{ site.framework_name }} DataGrid Frozen Columns Splitter Visibility Visible](images/FrozenColumnsSplitterVisibility_Visible.png)
-![Telerik {{ site.framework_name }} DataGrid Frozen Columns Splitter Visibility Hidden](images/FrozenColumnsSplitterVisibility_Hidden.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with FrozenColumnsSplitterVisibility set to Visible](images/FrozenColumnsSplitterVisibility_Visible.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with FrozenColumnsSplitterVisibility set to Hidden or Collapsed](images/FrozenColumnsSplitterVisibility_Hidden.png)
 
 ## Frozen Columns Events
 
@@ -148,8 +148,8 @@ __Using the FrozenColumnsChanged Event__
 	End Sub
 ```
 
-![Telerik {{ site.framework_name }} DataGrid Frozen Columns Changed 1](images/RadGridView_FrozenColumnsChanged_1.png)
-![Telerik {{ site.framework_name }} DataGrid Frozen Columns Changed 2](images/RadGridView_FrozenColumnsChanged_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView after freezing columns and raising the FrozenColumnsChanged event](images/RadGridView_FrozenColumnsChanged_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the FrozenColumnsChanged event output for added and removed columns](images/RadGridView_FrozenColumnsChanged_2.png)
 
 ## Frozen Columns Threshold
 

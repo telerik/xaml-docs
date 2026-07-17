@@ -12,7 +12,7 @@ position: 8
 
 This article shows how you can wrap the text of the column header, i.e. to have a multi-line text in the header. The end result will look like this:
 
-![Wrap Column Header Text in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview_how_to_multiline_header.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with wrapped multi-line text in a column header](images/gridview_how_to_multiline_header.png)
 
 ### Solution 1
 

@@ -21,7 +21,7 @@ __Bound columns__ represent the data from __RadGridView's__ ItemsSource. They su
 	                Header="ID (Bound)" />
 ```
 
-![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 1](images/RadGridView_BoundUnboundColumns_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView bound column showing an EmployeeID data field](images/RadGridView_BoundUnboundColumns_1.png)
 
 __Unbound__ columns are used for displaying a custom content. Such custom content can be buttons which are not directly related to the underlying data, textbox for adding comments, images etc. The unbound column's content is defined by setting cell template. When using unbound columns you will be unable to perform filtering, sorting and grouping.
 
@@ -45,7 +45,7 @@ Here is an example for unbound column:
 	</telerik:GridViewColumn>
 ```
 
-![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 2](images/RadGridView_BoundUnboundColumns_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView unbound column showing a custom image and name template](images/RadGridView_BoundUnboundColumns_2.png)
 
 In the example above a __DataTemplate__ containing a __StackPanel__ with an __Image__ and a __TextBox__ is shown. In this case the __StackPanel__ and the __Image__ are not related to the data items. The __TextBox__ is bound to the data item. In the same time the unbound column lacks such data functionalities as sorting, grouping and filtering. 
 
@@ -71,7 +71,7 @@ Here is the above sample of an unbound column transformed into a template column
 	</telerik:GridViewDataColumn>
 ```
 
-![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 3](images/RadGridView_BoundUnboundColumns_3.png)
+![Telerik UI for {{ site.framework_name }} RadGridView GridViewDataColumn using DataMemberBinding with a custom cell template](images/RadGridView_BoundUnboundColumns_3.png)
 
 ## See Also
 

@@ -110,7 +110,7 @@ __Example 2: Define GridViewHyperlinkColumn in XAML__
 
 #### Figure 1: RadGridView with a hyperlink column
 
-![RadGridView with a hyperlink column](images/RadGridView_ColumnTypes_HyperlinkColumn.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a GridViewHyperlinkColumn displaying team links](images/RadGridView_ColumnTypes_HyperlinkColumn.png)
 
 # See also
 

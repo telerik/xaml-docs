@@ -102,7 +102,7 @@ __Example 1: Filtering single column programmatically__
 
 #### __Figure 1: Pre-filtered RadGridView__
 
-![Telerik {{ site.framework_name }} DataGrid filtering programmatic 01](images/gridview_filtering_programmatic_01.png)
+![Telerik UI for {{ site.framework_name }} RadGridView programmatic filtering showing a pre-filtered grid](images/gridview_filtering_programmatic_01.png)
 
 >The **DistinctFilter** object also has a method called **RemoveDistinctValue** which does the opposite of **AddDistinctValue**.
 
@@ -295,7 +295,7 @@ So in the end you will get the following filtering criteria tree:
 
 #### __Figure 2: Filtering Criteria Tree Concept__
 
-![Telerik {{ site.framework_name }} DataGrid filtering programmatic 02](images/gridview_filtering_programmatic_02.png)
+![Telerik UI for {{ site.framework_name }} RadGridView programmatic filtering criteria tree for age and country conditions](images/gridview_filtering_programmatic_02.png)
 
 The data engine will generate something similar in pseudo-code:
 
@@ -314,7 +314,7 @@ As you might have already guessed, the IColumnFilterDescriptor that is used for 
 
 #### __Figure 3: ColumnFilterDescriptor Tree__
 
-![Telerik {{ site.framework_name }} DataGrid filtering programmatic 03](images/gridview_filtering_programmatic_03.png)
+![Telerik UI for {{ site.framework_name }} RadGridView ColumnFilterDescriptor tree showing popup filtering criteria structure](images/gridview_filtering_programmatic_03.png)
 
 Notice how this hierarchy is the same as the Popup filtering control layout. Working through the IColumnFilterDescriptor interface makes sure that you cannot randomly add criteria which cannot be correctly displayed by the Popup filtering control.
 

@@ -108,7 +108,7 @@ __Example 3: Export RadGridView with headers, footers and default styles__
 ```
 
 #### __Figure 1: Exporting with ExportDefaultStyles set to True__
-![Telerik {{ site.framework_name }} DataGrid export-default-styles 2](../images/exportdefaultstyles2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView spreadsheet streaming export with default styles applied in the generated document](../images/exportdefaultstyles2.png)
 
 ## Events
 

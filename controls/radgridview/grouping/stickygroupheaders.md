@@ -14,7 +14,7 @@ By default, RadGridView's group headers will go out of view once you scroll past
 
 #### __Figure 1: RadGridView with Disabled Sticky Group Headers__
 
-![Telerik {{ site.framework_name }} DataGrid disabled sticky group headers](images/disabledstickygroupheaders.png)
+![Telerik UI for {{ site.framework_name }} RadGridView grouped data with sticky group headers disabled during scrolling](images/disabledstickygroupheaders.png)
 
 You can stick the headers of the group to the top until its items are scrolled out of view by setting the **EnableStickyGroupHeaders** property to *true*.
 
@@ -28,7 +28,7 @@ __Example 1: Enable Sticky Group Headers__
 
 #### __Figure 2: RadGridView with Enabled Sticky Group Headers__
 
-![Telerik {{ site.framework_name }} DataGrid enabled sticky group headers](images/enabledstickygroupheaders.png)
+![Telerik UI for {{ site.framework_name }} RadGridView grouped data with sticky group headers pinned to the top during scrolling](images/enabledstickygroupheaders.png)
 
 ## See Also
 

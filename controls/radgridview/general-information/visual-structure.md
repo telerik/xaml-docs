@@ -22,9 +22,9 @@ RadGridView is an essential user interface control used to display data in tabul
 
 ## RadGridView Visual Structure
 
-![Telerik {{ site.framework_name }} DataGrid Visual Structure 1 new](images/RadGridView_VisualStructure_2_new.png)  
+![Telerik UI for {{ site.framework_name }} RadGridView visual structure showing columns, rows, cells, row indicators, and the header row](images/RadGridView_VisualStructure_2_new.png)  
 
-![Telerik {{ site.framework_name }} DataGrid Visual Structure 2 new](images/gridview-visual-structure-0.png)
+![Telerik UI for {{ site.framework_name }} RadGridView visual structure showing scroll bars, sort and validation indicators](images/gridview-visual-structure-0.png)
 
 * __Columns__: Essential building block, represented by the base class __GridViewColumn__. There is a lot of functionality coming out-of-the-box for the grid columns. They can be data bound, frozen, reordered, hidden, renamed or auto generated based on the underlying data source. Moreover you can sort, filter or group your data by one or more of the columns. You can customize their look and feel in numerous ways. [Read more]({%slug gridview-columns-defining-columns%}).
 
@@ -65,7 +65,7 @@ One of the advantages of using a Row Details template is that it can be displaye
 
 ## Filtering Visual Structure
 
-![Telerik {{ site.framework_name }} DataGrid Visual Structure Filtering](images/RadGridView_VisualStructure_Filtering.png)
+![Telerik UI for {{ site.framework_name }} RadGridView filtering visual structure showing the filter icon, filtering dialog, distinct values, and field filter controls](images/RadGridView_VisualStructure_Filtering.png)
 
 * __Filter Icon__: You can see the filter icon placed inside the column header of each column that allows filtering.
             
@@ -88,7 +88,7 @@ For more information you can refer to the [Basic Filtering]({%slug gridview-filt
 
 ## Grouping Visual Structure
 
-![Telerik {{ site.framework_name }} DataGrid Visual Structure 4 new](images/RadGridView_VisualStructure_4_new.png)
+![Telerik UI for {{ site.framework_name }} RadGridView grouping visual structure showing the group panel, group headers, group expander, and indent cells](images/RadGridView_VisualStructure_4_new.png)
 
 * __Group Panel__: The grouping panel is placed right above the control and it displays the columns by which your grid has been grouped. To group the grid just drag and drop the needed columns in the grouping area. To remove the grouping by certain column just click the x button of the appropriate column in the grouping panel. [Read more]({%slug gridview-grouping-basics%}).
 

@@ -207,6 +207,6 @@ __Example 3: RadGridView definition__
 	<telerik:RadGridView ItemsSource="{Binding}" />
 ```
 
-![{{ site.framework_name }} RadGridView with Mixed CLR and Dynamic Properties](images/gridview-how-to-use-mixed-clr-dlr-properties-0.png)
+![Telerik UI for {{ site.framework_name }} RadGridView auto-generating columns for mixed CLR and dynamic DLR properties](images/gridview-how-to-use-mixed-clr-dlr-properties-0.png)
 
 >tip Another code example with dynamic data can be found in the {% if site.site_name == 'Silverlight' %}[Various Data Sources](https://demos.telerik.com/silverlight/#GridView/DataSources){% else %}[Various Data Sources](https://demos.telerik.com/wpf){% endif %} demo.

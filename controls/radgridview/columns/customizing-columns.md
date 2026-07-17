@@ -80,7 +80,7 @@ __Example 1: Setting the Text Properties of GridViewColumn__
 ```
 
 #### __Figure 1: GridViewColumn with customized text properties__ 
-![Telerik {{ site.framework_name }} DataGrid-text properties-column](images/gridview-textproperties-column.png)
+![Telerik UI for {{ site.framework_name }} RadGridView GridViewColumn using custom text wrapping, alignment, trimming, and decorations](images/gridview-textproperties-column.png)
 
 ## See Also
  * [Data Formatting]({%slug gridview-columns-data-formatting%})

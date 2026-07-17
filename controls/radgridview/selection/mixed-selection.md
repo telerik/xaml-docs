@@ -20,15 +20,15 @@ RadGridView provides three selection modes, which allow you to manipulate the ty
 
 * __SelectionMode - Single__: You can select only one unit at a time.             
 
-    ![Telerik {{ site.framework_name }} DataGrid MixedSelection 4](images/RadGridView_MixedSelection_4.png)
+    ![Telerik UI for {{ site.framework_name }} RadGridView using mixed selection with SelectionMode set to Single](images/RadGridView_MixedSelection_4.png)
             
 * __SelectionMode - Multiple__: You are able to select any cell and any row. Units are added to the selection when they are clicked and get removed when they are clicked again.
 
-    ![Telerik {{ site.framework_name }} DataGrid MixedSelection 3](images/RadGridView_MixedSelection_3.png)
+    ![Telerik UI for {{ site.framework_name }} RadGridView using mixed selection with SelectionMode set to Multiple](images/RadGridView_MixedSelection_3.png)
        
 * __SelectionMode - Extended__: Units are added to the selection only by combining the mouse clicks with the __Ctrl__ or __Shift__ key.
 
-    ![Telerik {{ site.framework_name }} DataGrid MixedSelection 2](images/RadGridView_MixedSelection_2.png)
+    ![Telerik UI for {{ site.framework_name }} RadGridView using mixed selection with SelectionMode set to Extended](images/RadGridView_MixedSelection_2.png)
             
 > For more information take a look at the [Basic Selection]({%slug gridview-selection-basics%}) topic.
 

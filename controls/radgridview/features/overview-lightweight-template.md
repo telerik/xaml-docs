@@ -53,7 +53,7 @@ __Example 1: Applying the Lightweight Templates__
 
 #### __Figure 1: RadGridView with Lightweight templates applied__
 
-![Telerik {{ site.framework_name }} DataGrid overview lightweight 0](images/gridview_overview_lightweight_0.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with lightweight templates applied](images/gridview_overview_lightweight_0.png)
 
 >tip For __RadGridView__ you need to merge only the CoreStyles for __GridViewCell and GridViewRow__. For __RadTreeListView__ you need to merge the styles for __GridViewCell and TreeListViewRow__.
 
@@ -82,7 +82,7 @@ __Example 2: Applying Lightweight Templates with Validation__
 
 #### __Figure 2: RadGridView with Lightweight templates with validation applied__
 
-![Telerik {{ site.framework_name }} DataGrid overview lightweight 1](images/gridview_overview_lightweight_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with lightweight templates and validation applied](images/gridview_overview_lightweight_1.png)
 
 >__GridViewRowCoreValidationStyle__ contains a row indicator, which you can use to perform validation.
           
@@ -111,7 +111,7 @@ __Example 3: Deleting the IsCurrent Property Trigger__
 
 #### __Figure 3: RadGridView with Lightweight templates and removed Current Cell Border__
 
-![Telerik {{ site.framework_name }} DataGrid Lightweight Templates Current Cell Border](images/RadGridViewLightweightTemplatesCurrentCellBorder.png)
+![Telerik UI for {{ site.framework_name }} RadGridView lightweight templates with the current cell border removed](images/RadGridViewLightweightTemplatesCurrentCellBorder.png)
 
 ## Remove the Border of the Current Cell With Validation
 
@@ -137,7 +137,7 @@ __Example 4: Deleting the IsCurrent Property Trigger when Lightweight Templates 
 
 #### __Figure 4: RadGridView with Lightweight templates including validation and removed Current Cell Border__
 
-![Telerik {{ site.framework_name }} DataGrid Lightweight Templates Current Cell Border With Validation](images/RadGridViewLightweightTemplatesCurrentCellBorderWithValidation.png)
+![Telerik UI for {{ site.framework_name }} RadGridView lightweight templates with validation and the current cell border removed](images/RadGridViewLightweightTemplatesCurrentCellBorderWithValidation.png)
 
 >You can download a __runnable solution__ from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/LightweightTemplates).       
 >You can also find the blog post on [How To Boost RadGridView Performance for WPF and Silverlight Using Lightweight templates](http://www.telerik.com/blogs/how-to-boost-radgridview-performance-for-wpf-and-silverlight-using-lightweight-templates).

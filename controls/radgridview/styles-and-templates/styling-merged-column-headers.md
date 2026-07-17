@@ -34,7 +34,7 @@ This will result in a red background for the merged header cells.
 
 #### __Figure 1: The styled Column Groups__
 
-![Telerik {{ site.framework_name }} DataGrid-styling-column-groups](images/gridview-styling-column-groups.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with styled merged column headers and column groups](images/gridview-styling-column-groups.png)
 
 >important As of version Q2 2015, the __GridViewColumnGroupRow__ visual element was introduced. You need to also merge its XAML if using a Custom Theme.
 

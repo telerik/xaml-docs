@@ -19,7 +19,7 @@ __RadGridView__ for WPF is the ultimate grid control that provides outstanding p
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![{{ site.framework_name }} RadGridView Overview](images/RadGridView_Overview_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView overview screenshot showing the main grid layout and interactive data features](images/RadGridView_Overview_2.png)
 
 ## Key Features
 

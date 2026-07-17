@@ -103,7 +103,7 @@ The code snippet below checks whether the value entered in the "CountryId" colum
 
 And here is how the error message is displayed:
 
-![Events Validation in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_Events_Validation_010.png)
+![Telerik UI for {{ site.framework_name }} RadGridView validation error tooltip shown for an invalid cell value](images/RadGridView_Events_Validation_010.png)
 
 ## CellValidated Event
 

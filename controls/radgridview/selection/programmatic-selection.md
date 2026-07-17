@@ -172,7 +172,7 @@ __Example 10: Selecting а single cell region__
 
 #### __Figure 1: The selected region__
 
-![Telerik {{ site.framework_name }} DataGrid programmatic-selection-select-single-region](images/programmatic-selection-select-single-region.jpg)
+![Telerik UI for {{ site.framework_name }} RadGridView showing a single cell region selected programmatically](images/programmatic-selection-select-single-region.jpg)
 
 __Example 11: Selecting multiple cell regions__
 
@@ -194,7 +194,7 @@ __Example 11: Selecting multiple cell regions__
 
 #### __Figure 2: The selected regions__
 
-![Telerik {{ site.framework_name }} DataGrid  programmatic-selection-select-multiple-regions](images/programmatic-selection-select-multiple-regions.jpg)
+![Telerik UI for {{ site.framework_name }} RadGridView showing multiple cell regions selected programmatically](images/programmatic-selection-select-multiple-regions.jpg)
 
 ## Deselecting cell regions
 

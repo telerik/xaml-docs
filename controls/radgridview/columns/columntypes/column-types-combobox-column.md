@@ -30,7 +30,7 @@ The following example assumes that you have data as shown in the below image:
 
 __Sample data structure of RadGridView:__
 
-![ItemsSource for the ComboBox Column in RadGridView - Telerik's WPF DataGrid](images/RadGridView_ColumnTypes_1.png)
+![Telerik UI for WPF RadGridView sample data structure for a GridViewComboBoxColumn ItemsSource](images/RadGridView_ColumnTypes_1.png)
 
 __Define GridViewComboBoxColumn in XAML__
 ```XAML
@@ -80,7 +80,7 @@ __Configure DisplayMemberPath and SelectedValuePath properties in code__
 
 __ComboBoxColumn after setting DisplayMemberPath and SelectedValuePath properties__
 
-![Setting up the ComboBox Column in RadGridView - Telerik's WPF DataGrid](images/RadGridView_ColumnTypes_2.png)
+![Telerik UI for WPF RadGridView GridViewComboBoxColumn configured with DisplayMemberPath and SelectedValueMemberPath](images/RadGridView_ColumnTypes_2.png)
 
 As illustrated in the above image, you can map __CountryId__ property of the business object to the respective value in Countries collection via configuring proper `DisplayMemberPath`.
       
@@ -90,7 +90,7 @@ The next example shows how to use `ItemsSourceBinding`. It allows you to bind th
 
 __Sample data structure of RadGridView__
 
-![Binding the Telerik WPF DataGrid to a Collection of Objects](images/RadGridView_ColumnTypes_3.png)
+![Telerik UI for WPF RadGridView sample team data bound to a GridViewComboBoxColumn with ItemsSourceBinding](images/RadGridView_ColumnTypes_3.png)
 
 `RadGridView` binds to a collection of objects representing the teams. The team object exposes a collection containing the current drivers, which is used as source for the editor. As in the previous example, it also exposes a __DriverID__ property that the column will later translate to an appropriate display value. 
 
@@ -108,11 +108,11 @@ The next images show the result of configuring the ItemsSourceBinding property.
 
 __Appearance after setting ItemsSourceBinding property__
 
-![ComboBox Column in RadGridView - Telerik's WPF DataGrid](images/RadGridView_ColumnTypes_4.png)
+![Telerik UI for WPF RadGridView GridViewComboBoxColumn displaying values from ItemsSourceBinding](images/RadGridView_ColumnTypes_4.png)
 
 __Appearance after setting ItemsSourceBinding property.__
 
-![ComboBox Column of RadGridView - Telerik's WPF DataGrid](images/RadGridView_ColumnTypes_5.png)
+![Telerik UI for WPF RadGridView GridViewComboBoxColumn editor populated through ItemsSourceBinding](images/RadGridView_ColumnTypes_5.png)
 
 When using the ItemsSourceBinding property, the values displayed in the column’s filtering control will be the values corresponding to the DataMemberBinding (0, 1, 2). If you want to have the displayed ones (S.Vettel, K. Raikkonen, M. Webber), then you need to set GridViewComboBoxColumn. [FilterMemberPath]({%slug gridview-filtering-basic%}) to a property containing the values used as DisplayMemberPath.
         
@@ -157,7 +157,7 @@ The multi-column ComboBoxColumn in this example will have two columns showing th
 
 __Multi-select GridViewColumnComboBox column in RadGridView__
 
-![MultiColumnComboBox Column in RadGridView - Telerik's WPF DataGrid](images/gridview_multi_column_combo.png)
+![Telerik UI for WPF RadGridView GridViewComboBoxColumn with a multi-column item template showing city ID and name](images/gridview_multi_column_combo.png)
 
 ## Utilizing the IsLightweightModeEnabled Mode
 

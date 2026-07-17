@@ -14,7 +14,7 @@ Each __RadGridView__ row is capable of presenting additional information by mean
 
 One of the advantages of using a __Row Details__ template is that it can be displayed for the selected row only, thus providing a more compact layout. Another benefit of __Row Details__ is the option of placing the __Details Presenter__ outside the __RadGridView__, which provides more room for traditional rows without depriving the user of the additional information.
 
-![Telerik {{ site.framework_name }} DataGrid RowDetails 1](images/RadGridView_RowDetails_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with the selected row expanded to show Row Details content](images/RadGridView_RowDetails_1.png)
 
 >tip To easily expand / collapse the __Row Details__ you can use the [Toggle RowDetails Column]({%slug radgridview-columns-column-types-toggle-rowdetails-column%}).
 	

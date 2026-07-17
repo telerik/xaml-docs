@@ -16,7 +16,7 @@ You [export]({%slug gridview-export%}) the data from RadGridView to Excel file a
 
 *The file you are trying to open, 'Filename.xls', is in a different format than specified by the file extension. Verify that the file is not corrupted and is from a trusted source before opening this file. Do you want to open the file now?*
 
-![Telerik {{ site.framework_name }} DataGrid troubleshoot export](images/gridview_troubleshoot_export.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Excel warning dialog showing a file format and extension mismatch after export](images/gridview_troubleshoot_export.png)
 
 __CAUSE__
 

@@ -25,7 +25,7 @@ __Example 1: Declare a column of type GridViewCheckBoxColumn__
 ```
 
 #### __Figure 1: Declared CheckBox Column.__
-![Rad Grid View Columns Check Box Column 01](images/RadGridView_Columns_CheckBoxColumn_01.png)
+![Telerik UI for {{ site.framework_name }} RadGridView GridViewCheckBoxColumn showing a bound checkbox in each row](images/RadGridView_Columns_CheckBoxColumn_01.png)
 
 >tip Use this column for __better performance__ when you know that the underlying data is of __boolean type__.
 

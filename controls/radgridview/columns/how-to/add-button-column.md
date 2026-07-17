@@ -14,7 +14,7 @@ This article demonstrates how to add a column with a delete button for each row.
 
 __RadGridView with custom button column__
 
-![Custom Button Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/delete_column_gridview.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a custom Delete button column in each row](images/delete_column_gridview.png)
 
 There are several ways to achieve this. Let's look at some of them.
 

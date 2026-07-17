@@ -115,7 +115,7 @@ And here is the final result:
 
 #### __Figure 1: The merged cells styled using the MergedCellsStyleSelector property__
 
-![Telerik {{ site.framework_name }} DataGrid-merged cells styleselector](images/gridview-merged_cells_styleselector.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with MergedCellsStyleSelector applying different styles to vertically merged cells](images/gridview-merged_cells_styleselector.png)
 
 ## See Also
 

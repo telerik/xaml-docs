@@ -38,7 +38,7 @@ __Example 1: Set DataFormatString property of DateTime column__
 
 #### __Figure 1: DateTime column with custom DataFormatString__
 
-![Telerik {{ site.framework_name }} DataGrid Data Formatting 1](images/RadGridView_DataFormatting_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView DateTime column formatted with a custom DataFormatString](images/RadGridView_DataFormatting_1.png)
 
 >The DataFormatString property uses the __string.Format__ method. To learn more, check the [string.Format](http://msdn.microsoft.com/en-us/library/system.string.format.aspx) MSDN article. The resulting string is also dependent on the [IsLocalizationLanguageRespected]({%slug gridview-how-to-custom-format%}) property.
 

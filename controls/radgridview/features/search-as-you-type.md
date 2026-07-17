@@ -30,7 +30,7 @@ __Showing the Search Panel__
 
 __Showing the Search Panel__
 
-![Telerik DataGrid-textsearch-showsearchpanel](images/gridview-textsearch-showsearchpanel.png)
+![Telerik UI for WPF RadGridView search panel displayed above the grid for text search](images/gridview-textsearch-showsearchpanel.png)
 
 >important In case highlighting in a custom column or CellTemplate is needed, the `HightlightTextBlock` can be used. Its constructor needs to have the `SearchStateManager` passed as a parameter. It is exposed through the SearchStateManager property of RadGridView. The usage of the HighlightTextBlock is demonstrated in the [Custom Highlight Column](https://github.com/telerik/xaml-sdk/tree/master/GridView/HighlightCustomColumn).
 
@@ -67,7 +67,7 @@ __Collapse the close button in code-behind__
 
 __Collapsed Close Button__
 
-![Telerik DataGrid hide-close-button](images/hide-close-button.png)
+![Telerik UI for WPF RadGridView search panel with the close button collapsed](images/hide-close-button.png)
 
 ## Deferred Searching
 
@@ -163,19 +163,19 @@ In order to modify the search behavior, you can benefit from the following three
 
 	__Using the `+` search operator__
 	
-	![Telerik DataGrid-textsearch-plus-operator](images/gridview-textsearch-plus-operator.png)
+	![Telerik UI for WPF RadGridView search results using the plus operator to require both terms](images/gridview-textsearch-plus-operator.png)
 
 - __-__&mdash;All items that will pass the filtering operation will have to  __contain__ the value __before__ the operator, but __not__ the one __after__ it.
 
 	__Using the `-` search operator__
 	
-	![Telerik DataGrid-textsearch-minus-operator](images/gridview-textsearch-minus-operator.png)
+	![Telerik UI for WPF RadGridView search results using the minus operator to exclude a term](images/gridview-textsearch-minus-operator.png)
 
 - __""__&mdash;When a word or a phrase is put in quotes, the filtered objects will contain only the exact same value.
 	
 	__Using the `""` search operator__
 	
-	![Telerik DataGrid-textsearch-quotes-operator](images/gridview-textsearch-quotes-operator.png)
+	![Telerik UI for WPF RadGridView search results using quotation marks for an exact phrase match](images/gridview-textsearch-quotes-operator.png)
 
 ## SearchMode
 
@@ -224,7 +224,7 @@ __Setting IsSearchWithAccentEnabled property__
 
 __Using Search With Accent Insensitive__
 
-![radgridview search-as-you-type accent insensitive](images/radgridview-search-asyoutype-accent.PNG)
+![Telerik UI for WPF RadGridView search-as-you-type with accent-insensitive matching enabled](images/radgridview-search-asyoutype-accent.PNG)
 
 ## Exclude Column from Search
 
@@ -246,7 +246,7 @@ __Excluding a column from the search mechanism__
 
 __RadGridView with an excluded column from the search mechanism__
 
-![RadGridView with an excluded column from the search mechanism](images/radgridview-search-as-you-type-exclude-column.png)
+![Telerik UI for WPF RadGridView search-as-you-type with one column excluded from the search mechanism](images/radgridview-search-as-you-type-exclude-column.png)
 
 ## Disable the Data Filtering when Searching
 

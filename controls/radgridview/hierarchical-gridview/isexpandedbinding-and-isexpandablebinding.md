@@ -122,7 +122,7 @@ This property controls whether the hierarchy should be expanded or not. Setting 
 ```
 
 #### Figure 1: Expanding hierarchy through the IsExpandedBinding property
-![Telerik {{ site.framework_name }} DataGrid-isexpandedbinding-isexpandablebinding 1](images/radgridview-isexpandedbinding-isexpandablebinding_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView hierarchy expanded through IsExpandedBinding in the view model](images/radgridview-isexpandedbinding-isexpandablebinding_1.png)
 
 ## IsExpandableBinding
 
@@ -147,7 +147,7 @@ The visibility of the __GridViewToggleButton__ can be controlled by setting the 
 ```
 
 #### Figure 2: Hiding the GridViewToggleButton through the IsExpandableBinding
-![Telerik {{ site.framework_name }} DataGrid-isexpandedbinding-isexpandablebinding 2](images/radgridview-isexpandedbinding-isexpandablebinding_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView hierarchy with expand buttons hidden through IsExpandableBinding](images/radgridview-isexpandedbinding-isexpandablebinding_2.png)
 
 ## See Also
 

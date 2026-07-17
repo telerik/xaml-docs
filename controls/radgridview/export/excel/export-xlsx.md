@@ -80,7 +80,7 @@ RadGridView can be exported with its default styles by setting the __ExportDefau
 By default the ExportDefaultStyles property is set to false. You can see the result (Figure 1).
 
 #### __Figure 1: Exporting with ExportDefaultStyles set to “false” (default)__
-![Telerik {{ site.framework_name }} DataGrid export-default-styles](../images/exportdefaultstyles.png)
+![Telerik UI for {{ site.framework_name }} RadGridView XLSX export without default styles applied](../images/exportdefaultstyles.png)
 
 You can set the __ExportDefaultStyles__ value to __“true”__ and see the result (Figure 2).
 
@@ -97,7 +97,7 @@ __Example 2: Configuring ExportDefaultStyles Setting__
 ```
 
 #### __Figure 2: Exporting with ExportDefaultStyles set to True__
-![Telerik {{ site.framework_name }} DataGrid export-default-styles 2](../images/exportdefaultstyles2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView XLSX export with default styles applied](../images/exportdefaultstyles2.png)
 
 ## Disable Column Width Auto Fit
 
@@ -123,7 +123,7 @@ __Example 3: Setting the AutoFitColumnsWidth Property to False__
 ```
 	
 #### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
-![Telerik {{ site.framework_name }} DataGrid autofit-columns-width](../images/autofitcolumnswidth.png)
+![Telerik UI for {{ site.framework_name }} RadGridView XLSX export with automatic column width fitting disabled](../images/autofitcolumnswidth.png)
 
 ## Disable GroupHeaderRow Aggregates
 

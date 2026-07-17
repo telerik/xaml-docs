@@ -12,7 +12,7 @@ position: 20
 
 This article shows how to style the filter row element in RadGridView.
 
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling FilterRow 01](images/RadGridView_Styles_and_Templates_Styling_FilterRow_01.PNG)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the default FilterRow appearance](images/RadGridView_Styles_and_Templates_Styling_FilterRow_01.PNG)
 
 ## Type of Editors
 
@@ -92,7 +92,7 @@ __Example 3: Setting a background for the filtering row TextBox__
 
 #### __Figure 2: RadGridView with styled filter row__
 
-![Telerik {{ site.framework_name }} DataGrid-styled-filter-row](images/gridview-styled-filter-row.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a custom styled FilterRow](images/gridview-styled-filter-row.png)
 
 ## See Also
 

@@ -47,7 +47,7 @@ __Example 2: Styling the GridViewNewRow explicitly__
 
 #### __Figure 1: RadGridView with styled GridViewNewRow in the Office 2016 theme__
 
-![Telerik {{ site.framework_name }} DataGrid-new-row-styling](images/gridview-newrow-styling.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a styled GridViewNewRow in the Office 2016 theme](images/gridview-newrow-styling.png)
 
 ## See Also
 

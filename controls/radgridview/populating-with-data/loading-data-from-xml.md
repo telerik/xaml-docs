@@ -14,7 +14,7 @@ In order to bind the __RadGridView__ to a XML you will need to convert the XML t
 
 The final result should look like the snapshot below:  
 
-![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromXml 010](images/RadGridView_PopulatingWithDataLoadFromXml_010.PNG)
+![Telerik UI for {{ site.framework_name }} RadGridView target layout for XML-backed team and country data](images/RadGridView_PopulatingWithDataLoadFromXml_010.PNG)
 
 * Below is a simple XML declaration, used in this tutorial: 
 
@@ -203,7 +203,7 @@ The final result should look like the snapshot below:
 
 Run your demo, the result can be seen on the next picture: 
 
-![Telerik {{ site.framework_name }} DataGrid PopulatingWithDataLoadFromXml 020](images/RadGridView_PopulatingWithDataLoadFromXml_020.PNG)
+![Telerik UI for {{ site.framework_name }} RadGridView populated with data deserialized from an XML source](images/RadGridView_PopulatingWithDataLoadFromXml_020.PNG)
 
 >tip If you need to define the columns manually read the topic [Defining Columns]({%slug gridview-columns-defining-columns%}).
 

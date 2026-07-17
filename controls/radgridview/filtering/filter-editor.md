@@ -13,9 +13,9 @@ Filter Editor is one of the [filtering modes]({%slug gridview-filtering-basic%})
 
 ## Visual Structure
 
-![Image with the visual structure of the RadDataFilterView panel](images/gridview-filter-editor-0.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor panel showing the RadDataFilterView visual structure](images/gridview-filter-editor-0.png)
 
-![Image with the visual structure of the filter editor dialog](images/gridview-filter-editor-1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor dialog showing the embedded RadDataFilter control](images/gridview-filter-editor-1.png)
 
 * __Data Filter View__&mdash;The panel displaying the applied filters and the related options.
 * __Apply Filters CheckBox__&mdash;A CheckBox that enables/disables the selected filters in the associated RadGridView instances.
@@ -50,7 +50,7 @@ __Setting the filter editor position__
 
 __Top positioned filter editor panel__  
 
-![Image with the filter editor positioned at top](images/gridview-filter-editor-2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor panel positioned at the top of the grid](images/gridview-filter-editor-2.png)
 
 ## Toggling the Filters
 
@@ -58,7 +58,7 @@ The filters can be enabled or disabled with the __Apply Filters CheckBox__. Dese
 
 __Enable/disable filters check box__
 
-![Image with disabled filter editor by unchecking its checkbox](images/gridview-filter-editor-3.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor with filtering disabled by clearing the Apply Filters check box](images/gridview-filter-editor-3.png)
 
 ## Toggling the Filter Editor Panel Visibility
 
@@ -79,7 +79,7 @@ __Enabling the column header context menu__
 
 __Column header context menu__
 
-![Image showing the column header context menu](images/gridview-filter-editor-4.png)
+![Telerik UI for {{ site.framework_name }} RadGridView column header context menu with the Filter Editor option](images/gridview-filter-editor-4.png)
 
 ## Removing Filters on Panel Close
 
@@ -117,7 +117,7 @@ __Setting the EmptyFiltersContent property__
 
 __Changed default empty filters text__
 
-![Image showing customized empty filters content](images/gridview-filter-editor-5.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor showing customized empty filters text](images/gridview-filter-editor-5.png)
 
 __Setting the EmptyFiltersContentTemplate property__
 ```XAML
@@ -141,7 +141,7 @@ __Setting the EmptyFiltersContentTemplate property__
 
 __Changed default empty filters visual__
 
-![Image showing customized empty filters content template](images/gridview-filter-editor-6.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor showing customized empty filters content template](images/gridview-filter-editor-6.png)
 
 ## Commands
 
@@ -247,7 +247,7 @@ __Setting the FilterPartsSpacing__
 
 __Increased spacing between the filter parts__
 
-![Image showing customized spacing between the filter parts](images/gridview-filter-editor-7.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor with increased spacing between filter parts](images/gridview-filter-editor-7.png)
 
 To __hide the close button__, set the `CloseButtonVisibility` property to `Collapsed`.
 
@@ -266,7 +266,7 @@ __Setting the CloseButtonVisibility__
 
 __Hidden close button__  
 
-![Image showing the filter editor panel with hidden close button](images/gridview-filter-editor-8.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor panel with the close button hidden](images/gridview-filter-editor-8.png)
 
 To __change the layout behavior__ of the panel that displays the filtering criterias, change the `IsWrappingEnabled` property. By default, when the criteria visuals go outside of the available width, they will get clipped. Setting `IsWrappingEnabled` to `true` will wrap the visuals and display them on multiple rows. 
 
@@ -285,7 +285,7 @@ __Enabling wrapping__
 
 __Wrapped filter parts__  
 
-![Image showing the wrapping feature of the filter editor panel](images/gridview-filter-editor-9.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor panel with wrapped filter parts](images/gridview-filter-editor-9.png)
 
 The wrapping behavior can be enabled and disabled also with the __Toggle Wrapping Button__. When there is enough width to display all filtering criterias the button won't be displayed and the `CanToggleWrapping` property of `RadDataFilterView` will return `false`.
 
@@ -307,7 +307,7 @@ __Setting the filter editor dialog size__
 
 __Filter editor dialog with customized size__
 
-![Image showing customized filter editor dialog size](images/gridview-filter-editor-10.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor dialog with customized width and height](images/gridview-filter-editor-10.png)
 
 ## Customizing Filtering Criteria Visuals
 
@@ -331,7 +331,7 @@ __Setting the backgrounds of the member and value filter parts__
 
 __Customized FilterPart member and value backgrounds__  
 
-![Image showing customized member and value backgrounds for the filter parts](images/gridview-filter-editor-11.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor with customized member and value backgrounds for filter parts](images/gridview-filter-editor-11.png)
 
 The `FilterPart` can be further customized by setting its `ContentTemplate` property.
 
@@ -384,7 +384,7 @@ __Customizing the FilePart elements using the ContentTemplate__
 
 __Customized FilterPart content__  
 
-![Image showing custom template for the FilterPart elements](images/gridview-filter-editor-11.png)
+![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor with a custom content template for FilterPart elements](images/gridview-filter-editor-11.png)
 
 The data context in the `ContentTemplate` is an object of type `FilterPartViewModel` which contains the following information:
 

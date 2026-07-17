@@ -35,7 +35,7 @@ __Enabling zooming in code-behind__
 
 __Zooming RadGridView control__
 
-![Zooming RadGridView control](images/radgridview-zooming-gif.gif) 
+![Telerik UI for WPF RadGridView zooming interaction triggered with Ctrl plus mouse wheel](images/radgridview-zooming-gif.gif) 
 
 ## ScaleFactor
 
@@ -60,4 +60,4 @@ __Setting the ScaleFactor property in code-behind__
 
 __Custom value for ScaleFactor property__
 
-![Custom value for ScaleFactor property](images/radgridview-zooming-scalefactor.PNG)
+![Telerik UI for WPF RadGridView displayed with a custom ScaleFactor value applied](images/radgridview-zooming-scalefactor.PNG)

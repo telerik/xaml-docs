@@ -12,7 +12,7 @@ position: 1
 
 When the `RadGridView` and `RadTreeListView` controls lost the focus, their selected visual items (`GridViewRow` and `TreeListViewRow`) enter an __unfocused__ state which tones down their color (usually the color is changed to light gray). This makes it more clear that the control doesn't have the focus.
 
-![Telerik {{ site.framework_name }} DataGrid Selection UnfocusedState 01](images/RadGridView_Selection_UnfocusedState_01.PNG)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the unfocused visual state for a selected row](images/RadGridView_Selection_UnfocusedState_01.PNG)
 
 To disable this and keep the selection color that is displayed when the control is focused, set the `EnableLostFocusSelectedState` property to `False`.
 
@@ -21,4 +21,4 @@ To disable this and keep the selection color that is displayed when the control 
     <telerik:RadGridView EnableLostFocusSelectedState="False"/>
 ```
 
-![Telerik {{ site.framework_name }} DataGrid Selection UnfocusedState 02](images/RadGridView_Selection_UnfocusedState_02.PNG)
+![Telerik UI for {{ site.framework_name }} RadGridView keeping the focused selection color after the control loses focus](images/RadGridView_Selection_UnfocusedState_02.PNG)

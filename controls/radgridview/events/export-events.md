@@ -130,7 +130,7 @@ You can see the result in **Figure 1**.
 
 #### __Figure 1: Exporting Row Details__
 
-![Row Details Export in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview_row_details_export.png)
+![Telerik UI for {{ site.framework_name }} RadGridView export showing row details included in the exported output](images/gridview_row_details_export.png)
 
 ## ElementExportingToDocument
 

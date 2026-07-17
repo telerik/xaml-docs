@@ -19,7 +19,7 @@ The cells of __RadGridView__ have two different elements for their current state
 ## Styling GridViewCheckBoxColumn in View Mode
 
 #### __Figure 1: Default look of GridViewCheckBox__        
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling CheckBoxColumn 01](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_01.PNG)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the default GridViewCheckBox appearance in a GridViewCheckBoxColumn](images/RadGridView_Styles_and_Templates_Styling_CheckBoxColumn_01.PNG)
 
 In order to modify the visual appearance of a cell when in __view mode__ you need to create an appropriate style targeting the **GridViewCheckBox** element. You can also [edit its control template]({%slug styling-apperance-editing-control-templates%}) if you wish to apply further customizations.
 

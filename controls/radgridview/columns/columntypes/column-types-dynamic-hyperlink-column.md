@@ -57,7 +57,7 @@ __Example 2: Define navigate url without additional format.__
 
 __Figure 1: GridViewDynamicHyperlinkColumn in RadGridView__ 
 
-![Dynamic Hyperlink Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_9.png)
+![Telerik UI for {{ site.framework_name }} RadGridView GridViewDynamicHyperlinkColumn displaying generated hyperlinks](images/RadGridView_ColumnTypes_9.png)
 
 >tip In order to handle the __Click__ event of the hyperlink, you can use the approach demonstrated in the [GridViewHyperlinkColumn Click Event]({%slug gridview-hyperlink-column-click-event%}) article.
 

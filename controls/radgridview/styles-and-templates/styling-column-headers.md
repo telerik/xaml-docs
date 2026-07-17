@@ -12,7 +12,7 @@ position: 7
 
 #### __Figure 1: GridViewHeaderCell template structure__
 
-![Telerik {{ site.framework_name }} DataGrid Header Cell Template](images/gridviewheadercell-template.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewHeaderCell template structure](images/gridviewheadercell-template.png)
 
 ## Targeting the GridViewHeaderCell element
 
@@ -68,7 +68,7 @@ __Example 2: Setting a column's HeaderCellStyle__
 
 #### __Figure 2: RadGridView with styled header cell__
 
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling GridViewHeaderCell](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a custom HeaderCellStyle applied to a column header](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
 
 ## See Also
 

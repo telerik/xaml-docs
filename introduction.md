@@ -20,6 +20,10 @@ To learn more please visit the [Telerik UI for WPF](https://www.telerik.com/prod
 
 <CtaPanelIntroduction></CtaPanelIntroduction>
 
+## Getting Started
+
+Get started with the Telerik UI for WPF using, by checking the [First Steps tutorial]({%slug getting-started-first-steps%}).
+
 ## List of Components
 
 Telerik UI for WPF features the following controls:
@@ -188,19 +192,19 @@ To learn more about the different approaches for populating the Telerik &reg; UI
 
 ## Styling and Appearance
 
-To find how to customize the look of Telerik UI for WPF using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
+To find how to customize the look of Telerik UI for WPF and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
 
 ## Related Links
 
-* Telerik UI for WPF product page - [http://www.telerik.com/products/wpf/overview.aspx](http://www.telerik.com/products/wpf/overview.aspx)
+* [Telerik UI for WPF product page](https://www.telerik.com/products/wpf/overview.aspx)
 
-* Telerik UI for WPF demos - [ https://demos.telerik.com/wpf/ ]( https://demos.telerik.com/wpf/ )
+* [Telerik UI for WPF demos](https://demos.telerik.com/wpf/ )
 
-* Latest news for Telerik UI for WPF - [http://www.telerik.com/support/whats-new/wpf](http://www.telerik.com/support/whats-new/wpf)
+* [Latest news for Telerik UI for WPF](https://www.telerik.com/support/whats-new/wpf)
 
-* Essential support - [http://www.telerik.com/support](http://www.telerik.com/support)
+* [Essential support](https://www.telerik.com/support)
 
-* Creative ideas – [http://telerik.com/blogs](http://telerik.com/blogs)
+* [Creative ideas](https://telerik.com/blogs)
 
 ## Help us Improve the Telerik UI for WPF Documentation
 

@@ -14,7 +14,7 @@ The easiest way to install the Telerik UI for WPF product is to use the [Telerik
 
 ## Setup Development Environment
 
-To setup the environemnt needed to start development with Telerik UI for WPF you can install the Telerik CLI tool and all the `setup` command. This will log you into your Telerik account, download [license key]({%slug nuget-installation%}) and setup the [Telerik NuGet package source]({%slug nuget-package-source-setup%}).
+To setup the environment needed to start development with Telerik UI for WPF you can install the Telerik CLI tool and all the `setup` command. This will log you into your Telerik account, download [license key]({%slug installing-license-key%}) and setup the [Telerik NuGet package source]({%slug nuget-package-source-setup%}).
 
 1. Open any terminal and install the Telerik CLI.
 
@@ -59,6 +59,8 @@ telerik nuget config
 ### Other Installation Options
 
 The __recommended installation approach__ is using __Telerik CLI__ and __NuGet packages__, as it is easier to use and maintain. In addition to that, Telerik distributes several more of installation options. 
+
+* [NuGet]({%slug installation-guide%}#tab-1-nuget-installation)
 
 * [MSI installer]({%slug installation-guide%}#tab-2-msi-installation)
 

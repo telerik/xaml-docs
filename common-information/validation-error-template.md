@@ -10,12 +10,11 @@ position: 15
 
 # Validation Error Visual
 
-{% if site.site_name == 'WPF' %}
 The Telerik controls that support text input provide a validation error visual that is displayed when an error occurs. Examples of such controls are `RadMaskedTextInput`, editable `RadComboBox`, `RadWatermarkTextBox`, `TextBox` (when styled with our custom styles) and more.
 
 When the control has validation errors, the border around the control turns red and an error message is visualized. 
 
-![{{ site.framework_name }} Validation Error Template](images/validaton-error-template-0.png)
+![WPF Validation Error Template](images/validaton-error-template-0.png)
 
 The message visualization can vary based on the applied display mode.
 
@@ -25,7 +24,7 @@ The Telerik validation error template supports few different visualizations. To 
 
 __Setting the display mode__
 ```XAML
-	<telerik:RadMaskedTextInput telerik:ValidationErrorTemplateHelper.DisplayMode="Static" />
+<telerik:RadMaskedTextInput telerik:ValidationErrorTemplateHelper.DisplayMode="Static" />
 ```
 
 The property supports the following modes:
@@ -48,45 +47,15 @@ The following example shows how to create a custom error template and assign it 
 
 __Defining custom ControlTemplate__
 ```XAML
-	<ControlTemplate x:Key="CustomErrorTemplate">
-		<!-- define whatever UI needed here -->
-	</ControlTemplate>
+<ControlTemplate x:Key="CustomErrorTemplate">
+	<!-- define whatever UI needed here -->
+</ControlTemplate>
 ```
 
 __Setting the custom template__
 ```XAML
-	<telerik:RadMaskedNumericInput Validation.ErrorTemplate="{StaticResource CustomErrorTemplate}" />
+<telerik:RadMaskedNumericInput Validation.ErrorTemplate="{StaticResource CustomErrorTemplate}" />
 ```
-{% else %}
-
-When the control has validation errors, the border around the control will turn red and a little element will appear in the upper right corner of the control. When you hover over the element you can read the validation message. The visual appereance of the validation error comes from the __Validation.ErrorTemplate__ attached property. Most of our controls have a predefined template for this property. The visual appearance of the error is defined inside the default template of the controls. 
-
-If you want to modify the default one, you can extract the default __Validation.ErrorTemplate__ for the specified control and modify it per your needs. You can check the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) help article which describes how you can get the template of our controls.
-
-In a case, you want to create your own error template, you can create custom __ControlTemplate__ and assign it to the __Validation.ErrorTemplate__ attached property.
-
-__Example 1: Custom ControlTemplate__
-```XAML
-	<ControlTemplate x:Key="CustomErrorTemplate">
-		<!-- define whatever UI needed here -->
-	</ControlTemplate>
-```
-
-__Example 2: Custom ControlTemplate__
-```XAML
-	<telerik:RadMaskedNumericInput Validation.ErrorTemplate="{StaticResource CustomErrorTemplate}" />
-```
-
-## ValidationErrorTemplateHelper
-
-By default, the validation error tooltip message will appear only when the mouse is over this element. To make the validation message appears when the control is focused, you can set the __ValidationErrorTemplateHelper.ShowWhenFocused__ attached property to true. Its default value is false.
-
-__Show Validation Message on Focus__
-```XAML
-	<telerik:RadWatermarkTextBox telerik:ValidationErrorTemplateHelper.ShowWhenFocused="True" />
-```	
-{% endif %}
 
 ## See Also 
 * [Introduction]({%slug introduction%})
-* [Getting Started with XAML]({%slug common-faq%})

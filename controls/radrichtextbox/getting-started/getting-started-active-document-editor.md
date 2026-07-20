@@ -62,7 +62,7 @@ __Example 2: Using the ActiveDocumentEditorChanged event__
 
 * [Telerik UI for WPF RichTextBox Component](https://www.telerik.com/products/wpf/richtextbox.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -74,3 +74,4 @@ __Example 2: Using the ActiveDocumentEditorChanged event__
 * [Getting Started]({%slug radrichtextbox-getting-started%})
 * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})
 * [Developer Focused Examples]({%slug radrichtextbox-sdk-examples%})
+

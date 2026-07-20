@@ -110,7 +110,7 @@ __Figure 2__ shows a __RadCollectionNavigator__ with the **Fluent** theme applie
 
 * [Telerik UI for WPF CollectionNavigator Component](https://www.telerik.com/products/wpf/collection-navigator.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -123,3 +123,4 @@ __Figure 2__ shows a __RadCollectionNavigator__ with the **Fluent** theme applie
 * [Overview]({%slug collectionnavigator_overview%})
 
 * [Visual Structure]({%slug collectionnavigator_visual_struture%})
+

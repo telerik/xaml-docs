@@ -432,7 +432,7 @@ __Figure 3__ shows RadTreeListView with the **Windows8** theme applied.
 
 * [Telerik UI for WPF TreeListView Component](https://www.telerik.com/products/wpf/treelistview.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -444,3 +444,4 @@ __Figure 3__ shows RadTreeListView with the **Windows8** theme applied.
  * [Data Binding]({%slug radtreelistview-features-data-binding%})
  * [Columns]({%slug radtreelistview-features-columns%})
  * [Hierarchy Column]({%slug radtreelistview-features-hierarchy-column%})
+

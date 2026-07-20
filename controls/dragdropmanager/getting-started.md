@@ -29,7 +29,7 @@ In order to use the `DragDropManager` API you need to add a reference to the fol
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 
-The required Telerik assemblies can be added using one of the available [installation approaches]({%slug installation-installing-which-file-do-i-need%}). 
+The required Telerik assemblies can be added using one of the available [installation approaches]({%slug installation-guide%}). 
 
 ## Using the DragDropManager Events
 
@@ -408,7 +408,7 @@ __Drag between ListBoxes__
 
 * [Telerik UI for WPF DragAndDrop Component](https://www.telerik.com/products/wpf/drag-drop.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -420,3 +420,4 @@ __Drag between ListBoxes__
 
  * [Events]({%slug dragdropmanager-events%})
  * [DragDropManager Migration]({%slug dragdropmanager-migration%})
+

@@ -42,7 +42,7 @@ ai-chat-prompt-suggestions:
 
 meta:
     ai-assistant:
-        title: AI Coding Assistant
+        title: AI Tools
         position: 7
     knowledge-base:
         position: 10
@@ -737,10 +737,7 @@ meta:
     controls/radfilepathpicker:
         title: RadFilePathPicker    
     controls/radgridview:
-        title: RadGridView
-    controls/radgridview/changes-and-backward-compability:
-        title: Changes and Backward Compability
-        position: 1
+        title: RadGridView    
     controls/radgridview/general-information:
         title: General Information
         position: 2
@@ -1013,26 +1010,24 @@ meta:
     "cloud-integration/google-cloud/connect-to-data-in-the-cloud":
         title: "Connect to Data in the Cloud"
         position: 5
-    "integration/visual-studio-extensions":
+    "installation/manual-setup-guides/visual-studio-extensions":
         title: "Visual Studio Extensions"
-        position: 0
-    "getting-started/installation":
+        position: 17
+    "installation":
         title: "Installation"
-        position: 8
-    "getting-started/installation/nuget":
-        title: "NuGet Installation"   
-    "getting-started/licensing":
+        position: 2
+    "installation/manual-setup-guides":
+        title: "Manual Setup Guides"
+        position: 4
+    "installation/manual-setup-guides/nuget":
+        title: "NuGet"   
+        position: 1
+    "installation/licensing":
         title: "Activating Your License"
-        position: 0        
-    "getting-started/adding-telerik-ui-to-an-application":
-        title: "Adding Telerik UI to an Application"
-        position: 9
+        position: 3
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
-        position: 10
-    "styling-and-appearance/troubleshooting":
-        title: "Troubleshooting"
-        position: 11
+        position: 10    
     "styling-and-appearance/glyphs":
         title: "Font Glyphs"
         position: 8
@@ -1055,18 +1050,9 @@ meta:
     "styling-and-appearance":
         title: "Style and Appearance"
         position: 4
-    "licensing":
-        title: "Redistribution"
-        position: 5
-    "wpflab":  
-        title: "WPF Labs"
-        position: 0
     "common-information":
         title: "Common Information"
         position: 7
-    "integration":
-        title: "Integration"
-        position: 8
     "cloud-integration":
         title: "Cloud Integration"
         position: 9

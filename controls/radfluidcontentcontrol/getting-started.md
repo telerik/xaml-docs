@@ -149,7 +149,7 @@ The Content, SmallContent and LargeContent properties can be data bound to prope
 ## Telerik UI for WPF Learning Resources
 
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -161,3 +161,4 @@ The Content, SmallContent and LargeContent properties can be data bound to prope
  * [Integration Examples]({%slug radfluidcontentcontrol-integration-examples%})
  * [Events]({%slug fluidcontentcontrol-events%})
  * [Transitions]({%slug fluidcontentcontrol-transitions%})
+

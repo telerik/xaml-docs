@@ -45,7 +45,7 @@ __The following resources show how to use the `HyperlinkClicked` event in the co
 ## Additional Resources
 
 * __Security FAQ__: For more answers to common security-related questions, visit the [Security FAQ]({%slug security-faq%}) article.
-* __Upgrade Recommendations__: Regularly updating to the latest version of Telerik UI for WPF is one of the best ways to ensure security. You can find the information on the installation approaches in the [corresponding section in the documentation]({%slug installation-installing-which-file-do-i-need%}).
+* __Upgrade Recommendations__: Regularly updating to the latest version of Telerik UI for WPF is one of the best ways to ensure security. You can find the information on the installation approaches in the [corresponding section in the documentation]({%slug installation-guide%}).
 
 ## See Also  
 * [RadDiagram]({%slug raddiagram-overview%})
@@ -53,3 +53,4 @@ __The following resources show how to use the `HyperlinkClicked` event in the co
 * [RadPersistenceFramework]({%slug persistence-framework-overview%})
 * [RadRichTextBox]({%slug radrichtextbox-overview%})
 * [RadSpreadsheet]({%slug radspreadsheet-overview%})
+

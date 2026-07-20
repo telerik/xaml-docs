@@ -1,7 +1,7 @@
 #getting-started
 * A [Telerik user account](https://www.telerik.com/account/).
 * An active [DevCraft or Telerik UI for WPF license](https://www.telerik.com/purchase/individual/wpf.aspx) or a [Telerik UI for WPF trial](https://www.telerik.com/try/ui-for-wpf).
-* (optionally) A [.NET WPF application that includes Telerik UI for .NET WPF]({%slug nuget-setup-lifecycle%}).
+* (optionally) A [.NET WPF application that includes Telerik UI for .NET WPF]({%slug getting-started-first-steps%}).
 #end
 
 #number-of-requests

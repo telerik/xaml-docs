@@ -28,7 +28,7 @@ This article shows how to migrate from an existing WPF .NET Framework project to
  
 3. Reference the Telerik assemblies built against .NET.
 	
-	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NET+version number*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug nuget-installation%}).
+	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NET+version number*" folder. Otherwise, [download the .zip file]({%slug installation-guide%}) with the dlls or install them via the [NuGet package manager]({%slug nuget-installation%}).
 	
 	#### Figure 3: Checking if a Telerik assembly is built against .NET  
 	![{{ site.framework_name }} Checking if a Telerik assembly is built against .NET 8](images/netcore-support-migration-3.png)
@@ -40,3 +40,4 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 ## See Also  
 * [Deploy WPF .NET Application]({%slug netcore-support-deploy-using-visual-studio%})
 * [Using RadRichTextBox in .NET]({%slug radrichtextbox-getting-started-net-core-support%})
+

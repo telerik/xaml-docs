@@ -14,7 +14,7 @@ As a developer, __you are not limited to the default filtering user interface pr
 
 __The example in this article produces the following result__  
 
-![RadGridView for WPF Custom Filtering Control](images/gridview-filtering-custom-filtering-controls-0.png)
+![Telerik UI for WPF RadGridView custom filtering control with From Date and To Date pickers](images/gridview-filtering-custom-filtering-controls-0.png)
 
 ## Building a Custom Filtering Control
 

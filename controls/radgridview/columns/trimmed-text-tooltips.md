@@ -27,7 +27,7 @@ __Example 2: Setting a column's ShowToolTipOnTrimmedText__
 ```
 
 #### __Figure 1: Tooltips for trimmed text__ 
-![Telerik {{ site.framework_name }} DataGrid trimmed-text-tooltips-1](images/trimmed-text-tooltips-1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing tooltips for trimmed cell text](images/trimmed-text-tooltips-1.png)
 
 The default duration of the trimmed text tooltip is 5000 milliseconds. This can be changed using the __ToolTipOnTrimmedTextShowDuration__ property of RadGridView.
 

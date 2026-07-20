@@ -14,7 +14,7 @@ __RadGridView__ exposes different [indent cells](#indent-cells) and [indicator p
 
 #### __Figure 1: RadGridView Indent Cells and Indicator Presenters__
 
-![Telerik {{ site.framework_name }} DataGrid StyleIndicators1](images/RadGridView_StyleIndicators1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing indent cells and indicator presenters in a grouped grid](images/RadGridView_StyleIndicators1.png)
 
 ## Indent Cells
 
@@ -54,7 +54,7 @@ __Example 1: Styling Indent Cells__
 ```
 
 #### __Figure 2: A grouped RadGridView with styled indent cells__
-![A grouped RadGridView with styled indent cells](images/gridview-styling-indent-cells.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with custom styles applied to grouped indent cells](images/gridview-styling-indent-cells.png)
 
 ## Indicator Presenters
 
@@ -76,7 +76,7 @@ You may customize each of them by [editing the control template]({%slug styling-
 
 #### __Figure 3: RadGridView with styled indent cells and indicator presenters__
 
-![A grouped RadGridView with styled indent cells and indicator presenters](images/RadGridView_IndentCells2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with styled indent cells and indicator presenters in grouped rows](images/RadGridView_IndentCells2.png)
 
 ## See Also
 

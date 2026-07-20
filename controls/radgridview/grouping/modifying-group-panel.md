@@ -26,7 +26,7 @@ In the following example the group panel background is set to YellowGreen.
 	<telerik:RadGridView GroupPanelBackground="Coral" />
 ```
 
-![Telerik {{ site.framework_name }} DataGrid Grouping ModifyingGroupPanel 010](images/RadGridView_Grouping_ModifyingGroupPanel_010.png)
+![Telerik UI for {{ site.framework_name }} RadGridView group panel with a customized background color](images/RadGridView_Grouping_ModifyingGroupPanel_010.png)
 
 ## Setting the GroupPanelForeground
 
@@ -40,7 +40,7 @@ Similarly to group panel's background you may also change the group panel's fore
 
 And the result is:
 
-![Telerik {{ site.framework_name }} DataGrid Grouping ModifyingGroupPanel 020](images/RadGridView_Grouping_ModifyingGroupPanel_020.png)
+![Telerik UI for {{ site.framework_name }} RadGridView group panel with customized background and foreground colors](images/RadGridView_Grouping_ModifyingGroupPanel_020.png)
 
 Check out the following topics which explain in great details the __RadGridView__'s grouping functionality.
 

@@ -19,7 +19,7 @@ The RadTabbedWindow enables you to create browser-like interface which hosts its
 
 __RadTabbedWindow in the Office2016 theme__
 
-![](images/tabbedwindow-overview.png)
+![Telerik UI for WPF RadTabbedWindow overview showing tabs hosted in the title bar with the Office2016 theme](images/tabbedwindow-overview.png)
 
 ## Key Features
 

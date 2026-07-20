@@ -475,7 +475,7 @@ __Example 7: The MyConverter class__
 
 #### __Figure 1: Snapshot of the created CustomColumn__
 
-![Creating Custom Column Editor in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview-howto-create-custom-column-editor.png)
+![Telerik UI for {{ site.framework_name }} RadGridView custom column editor with a TextBox and RadComboBox for editing captain data](images/gridview-howto-create-custom-column-editor.png)
 
 >tip You can download a runnable project of the previous example from the online SDK repository [CustomColumnEditor](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomColumnEditor).
 

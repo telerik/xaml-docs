@@ -79,7 +79,7 @@ __Example 2: Defining a GroupDescriptor with AggregateFunction programmatically_
 
 #### Figure 1: RadGridView With Group Aggregates
 
-![Telerik {{ site.framework_name }} DataGrid Group Aggregates 1](images/RadGridView_GroupAggregates_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView grouped by country with a count aggregate shown in each group header](images/RadGridView_GroupAggregates_1.png)
 
 You can add multiple functions to the __AggregateFunctions__ collection and they will be visualized one after another.
 
@@ -133,7 +133,7 @@ __Example 4: Defining a GroupDescriptor with multiple AggregateFunctions program
 
 #### __Figure 2: RadGridView with GroupDescriptor and AggregateFunctions defined__
 
-![Telerik {{ site.framework_name }} DataGrid with GroupDescriptor and AggregateFunctions defined](images/RadGridView_GroupAggregates_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView group header showing multiple aggregate results for the grouped column](images/RadGridView_GroupAggregates_2.png)
 
 >The __FirstFunction__ will display the value returned by the __ToString()__ method of your business object.
         
@@ -180,7 +180,7 @@ __Example 6: Settng the ShowGroupHeaderColumnAggregates property of the GroupHea
 
 #### __Figure 3: Aggregates aligned with columns__
 
-![Telerik {{ site.framework_name }} DataGrid with ggregates aligned with columns](images/RadGridView_GroupAggregates_3.png)
+![Telerik UI for {{ site.framework_name }} RadGridView flat grouping mode with group aggregates aligned under their columns](images/RadGridView_GroupAggregates_3.png)
 
 >The type of this row is **GridViewGroupFooterRow**, the same as the one shown when the **ShowGroupFooters** of the RadGridView control is set to **True**. The cells in turn are of the **GridViewGroupFooterCell** type.
 
@@ -196,7 +196,7 @@ __Example 7: Setting the ShowHeaderAggregates property of GroupHeaderRow to Fals
 ```
 
 #### __Figure 4: RadGridView with ShowHeaderAggregates set to False__
-![Telerik {{ site.framework_name }} DataGrid with ShowHeaderAggregates set to False](images/RadGridView_GroupAggregates_4.png)
+![Telerik UI for {{ site.framework_name }} RadGridView group header with column-aligned aggregates and hidden inline header aggregates](images/RadGridView_GroupAggregates_4.png)
 
 ## Align Aggregates in GroupHeaderRow
 
@@ -209,13 +209,13 @@ The aggregate results are shown right next to the group key by default. Via the 
 * __NextToGroupKey__: Aggregate results are aligned to columns and placed on the same row as the group key.
 
 #### __Figure 5: RadGridView with ColumnAggregatesAlignment set to NoAlignment__
-![Telerik {{ site.framework_name }} DataGrid with ColumnAggregatesAlignment set to NoAlignment](images/RadGridView_GroupAggregates_7.png)
+![Telerik UI for {{ site.framework_name }} RadGridView group aggregates shown next to the group key with no column alignment](images/RadGridView_GroupAggregates_7.png)
 
 #### __Figure 6: RadGridView with ColumnAggregatesAlignment set to BelowGroupKey__
-![Telerik {{ site.framework_name }} DataGrid with ColumnAggregatesAlignment set to BelowGroupKey](images/RadGridView_GroupAggregates_5.png)
+![Telerik UI for {{ site.framework_name }} RadGridView group aggregates aligned below the group key and under their columns](images/RadGridView_GroupAggregates_5.png)
 
 #### __Figure 7: RadGridView with ColumnAggregatesAlignment set to NextToGroupKey__
-![Telerik {{ site.framework_name }} DataGrid with ColumnAggregatesAlignment set to NextToGroupKey](images/RadGridView_GroupAggregates_6.png)
+![Telerik UI for {{ site.framework_name }} RadGridView group aggregates aligned to columns and displayed next to the group key](images/RadGridView_GroupAggregates_6.png)
 
 ## See Also
 

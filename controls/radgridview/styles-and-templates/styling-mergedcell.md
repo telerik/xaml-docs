@@ -53,7 +53,7 @@ __Example 1: Styling all merged cells of an application__
 
 #### __Figure 1: Styled merged cells__
 
-![Telerik {{ site.framework_name }} DataGrid merged cells 5](images/gridview_merged_cells_5.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a custom style applied to merged cells](images/gridview_merged_cells_5.png)
 
 ## Setting MergedCellsStyle
 

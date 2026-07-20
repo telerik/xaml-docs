@@ -252,7 +252,7 @@ __Example 2: Modifying the Disabled visual state and Background_Disabled element
 
 #### __Figure 1: Disabled GridViewCells with fully opaque background__
 
-![Telerik {{ site.framework_name }} DataGrid-how-to-set-background-disabled-cell-1](images/gridview-how-to-set-background-disabled-cell-1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView disabled cells with a fully opaque custom background color](images/gridview-how-to-set-background-disabled-cell-1.png)
 
 Similarly, you can define the visual state in __Example 3__ so that there's no visual difference between enabled and disabled cells.
 
@@ -273,7 +273,7 @@ __Example 3: No visual difference between enabled and disabled cells__
 
 #### __Figure 2: Disabled GridViewCells with transparent background__
 
-![Telerik {{ site.framework_name }} DataGrid-how-to-set-background-disabled-cell-2](images/gridview-how-to-set-background-disabled-cell-2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView disabled cells styled to look visually identical to enabled cells](images/gridview-how-to-set-background-disabled-cell-2.png)
 
 ## See Also
 

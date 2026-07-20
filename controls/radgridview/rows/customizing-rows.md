@@ -12,7 +12,7 @@ position: 2
 
 By default the first cell of a row represents the row indicator area. The indicator appears when the row is set as current.
 
-![Telerik {{ site.framework_name }} DataGrid CustomizingRows 1](images/RadGridView_CustomizingRows_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the default row indicator area for the current row](images/RadGridView_CustomizingRows_1.png)
 
 The row indicator visibility is controlled with the __RowIndicatorVisibility__ property of RadGridView.
 
@@ -21,7 +21,7 @@ __Example 1: Hiding the row indicator__
 	<telerik:RadGridView RowIndicatorVisibility="Collapsed" />
 ```
 
-![Telerik {{ site.framework_name }} DataGrid CustomizingRows 2](images/RadGridView_CustomizingRows_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with the row indicator hidden by setting RowIndicatorVisibility to Collapsed](images/RadGridView_CustomizingRows_2.png)
 
 ## Changing Rows Height
 

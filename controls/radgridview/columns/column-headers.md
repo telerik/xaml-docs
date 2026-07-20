@@ -24,7 +24,7 @@ Usually the top cell of a column is called Header. Its purpose is to set a capti
 
 #### __Figure 1: Displaying column headers__ 
 
-![Telerik {{ site.framework_name }} DataGrid Column Headers 1](images/RadGridView_ColumnHeaders_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView displaying standard column headers](images/RadGridView_ColumnHeaders_1.png)
 
 To set value for the header use the __Header__ property of the column. 
 
@@ -55,7 +55,7 @@ __Example 2: Setting Custom Content to the Header Property__
 
 #### __Figure 2: Displaying custom content in column headers__ 
 
-![Telerik {{ site.framework_name }} DataGrid Column Headers 2](images/RadGridView_ColumnHeaders_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView column header with custom image and text content](images/RadGridView_ColumnHeaders_2.png)
 
 ## Customizing the Headers
 
@@ -79,7 +79,7 @@ __Example 3: Setting the ShowColumnHeaders property to False__
 
 #### __Figure 3: Hiding the column headers__ 
 
-![Telerik {{ site.framework_name }} DataGrid Column Headers 3](images/RadGridView_ColumnHeaders_3.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with column headers hidden](images/RadGridView_ColumnHeaders_3.png)
 
 ## Sorting
 
@@ -87,7 +87,7 @@ The header of the column plays the main role when we want to sort it. It also ho
 
 #### __Figure 4: Sorting the column__ 
 
-![Telerik {{ site.framework_name }} DataGrid Column Headers 4](images/RadGridView_ColumnHeaders_4.png)
+![Telerik UI for {{ site.framework_name }} RadGridView sorted column header with a sort direction indicator](images/RadGridView_ColumnHeaders_4.png)
 
 >tip As of Q2 2013, the user can benefit from __Column Sort Sequence Indicator__. In order to have this feature enabled you need to set ShowColumnSortIndexes property of RadGridView to True.
 
@@ -99,7 +99,7 @@ The header of the column hosts the built-in filtering mechanism, which allows yo
 
 #### __Figure 5: Filtering the column__ 
 
-![Telerik {{ site.framework_name }} DataGrid Column Headers 5](images/RadGridView_ColumnHeaders_5.png)
+![Telerik UI for {{ site.framework_name }} RadGridView column header with the built-in filtering interface](images/RadGridView_ColumnHeaders_5.png)
 
 To learn more about the filtering functionality take a look at the [Basic Filtering]({%slug gridview-filtering-basic%}) topic in the Filtering chapter.
 
@@ -109,7 +109,7 @@ The header is also used for grouping data. It has to be dragged into the group p
 
 #### __Figure 6: Grouping the column__ 
 
-![Telerik {{ site.framework_name }} DataGrid Column Headers 6](images/RadGridView_ColumnHeaders_6.png)
+![Telerik UI for {{ site.framework_name }} RadGridView column header dragged to the group panel for grouping](images/RadGridView_ColumnHeaders_6.png)
 
 To learn more about the grouping functionality take a look at the [Basic Grouping]({%slug gridview-grouping-basics%}) topic in the Grouping chapter.
 
@@ -160,7 +160,7 @@ __Example 5: Setting the Text Properties of GridViewHeaderCell and GridViewColum
 
 #### Figure 5: Setting the text properties of GridViewHeaderCell and GridViewColumn
 
-![Telerik {{ site.framework_name }} DataGrid-header-text properties](images/gridview-header-textproperties.png)
+![Telerik UI for {{ site.framework_name }} RadGridView column headers using custom text alignment, trimming, and decorations](images/gridview-header-textproperties.png)
 
 Note, that the first column has a __HeaderCellStyle__ defined, which aligns the content of the __HeaderCell__ to the left, but the __Style__ is not applied, as the __HeaderTextAlignment__ of __GridViewColumn__ is also being set.
         

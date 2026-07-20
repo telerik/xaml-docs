@@ -14,7 +14,7 @@ The `RadGridView` control allows you to sort multiple columns. To do this at run
 
 On the snapshot below, the data in RadGridView is sorted ascending by the Est. column and then sorted again by the Stadium column, without removing the previous sorting.
        
-![Telerik WPF DataGrid MultiColumnSorting 1](images/RadGridView_MultiColumnSorting_1.png)
+![Telerik UI for WPF RadGridView sorted by multiple columns with the Est. and Stadium headers applied in sequence](images/RadGridView_MultiColumnSorting_1.png)
 
 To learn how to implement programmatic sorting in your RadGridView, read on this [article]({%slug gridview-sorting-programmatic%}).
 
@@ -24,7 +24,7 @@ The RadGridView control allows you to display sequence indicators for the sortin
 
 You can check how the column headers will look like after the user has sorted on multiple columns.
 
-![Telerik WPF DataGrid MultiColumnSorting 2](images/RadGridView_MultiColumnSorting_2.png)
+![Telerik UI for WPF RadGridView showing column sort sequence indicators for multiple-column sorting](images/RadGridView_MultiColumnSorting_2.png)
 
 ## Specify Multiple-Column Sorting Modifier Keys
 

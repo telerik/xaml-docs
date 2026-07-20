@@ -14,7 +14,7 @@ The distinct values column filter displays only the first `1000` items by defaul
 
 __The distinct values filter__  
 
-![A picture that shows the distinct values filter in the column's FilteringControl](images/gridview-filtering-customizing-distinct-values-0.png)
+![Telerik UI for WPF RadGridView distinct values filter displayed in a column FilteringControl](images/gridview-filtering-customizing-distinct-values-0.png)
 
 ## Changing the Distinct Values Limit
 
@@ -113,7 +113,7 @@ __Setting the EnableDistinctValuesFiltering property__
 
 __The distinct values filter search box__  
 
-![A picture showing the search box in the distinct values filter in the column's FilteringControl](images/gridview-filtering-customizing-distinct-values-1.png)
+![Telerik UI for WPF RadGridView distinct values filter with the built-in search box enabled](images/gridview-filtering-customizing-distinct-values-1.png)
 
 The search box of the distinct values filter comes with several search modes - `Contains`, `ContainsCaseSensitive`, `StartsWith`, and `StartsWithCaseSensitive`.
 
@@ -135,7 +135,7 @@ __Setting the DistinctValuesDisplayMode property__
 
 __The distinct values display modes comparison__  
 
-![A picture showing RadGridView for WPF with Tree and List distinct values display modes comparison](images/gridview-filtering-customizing-distinct-values-2.png)
+![Telerik UI for WPF RadGridView distinct values display modes comparison between Tree and List](images/gridview-filtering-customizing-distinct-values-2.png)
 
 ## Modifying the Display Values
 
@@ -172,4 +172,4 @@ The following [KB article]({%slug kb-gridview-filteringdisplayfunc%}) and the [I
 
 __Customized display for bool distinct values__  
 
-![A picture showing RadGridView for WPF with customized display values in the distinct values list](images/gridview-filtering-customizing-distinct-values-3.png)
+![Telerik UI for WPF RadGridView distinct values list with customized display text for Boolean values](images/gridview-filtering-customizing-distinct-values-3.png)

@@ -73,7 +73,7 @@ The RadGridView defined above will be displayed as shown in **Figure 1**.
 
 #### Figure 1: RadGridView with CellTemplate and CellEditTemplate defined
 
-![Telerik {{ site.framework_name }} DataGrid Cell Template Cell Edit Template](images/RadGridView_CellTemplate_CellEditTemplate.png)
+![Telerik UI for {{ site.framework_name }} RadGridView using CellTemplate and CellEditTemplate for date and salary columns](images/RadGridView_CellTemplate_CellEditTemplate.png)
 
 >important When you define a __CellEditTemplate__ for a column, the __default validation__ mechanism is __bypassed__ as you're directly binding to the source property. If you require this validation, [create a custom column editor]({%slug radgridview-howto-create-custom-editor%}) instead.
 
@@ -110,7 +110,7 @@ The RadGridView defined above will be displayed as shown in **Figure 1**.
 
 #### Figure 2: RadGridView with CellTemplate and CellEditTemplate defined for a single column
 
-![Telerik {{ site.framework_name }} DataGrid Cell Template Cell Edit Template](images/RadGridView_CellTemplate_CellEditTemplate2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView using both CellTemplate and CellEditTemplate on a single salary column](images/RadGridView_CellTemplate_CellEditTemplate2.png)
 
 ## Tips about CellTemplate and CellEditTemplate
 

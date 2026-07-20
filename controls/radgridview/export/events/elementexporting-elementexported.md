@@ -118,7 +118,7 @@ __Example 4: Add row details to the exported data with ExportFormat.Html__
 
 The result is:
 
-![Row Details Export in RadGridView - Telerik's {{ site.framework_name }} DataGrid](../images/gridview_row_details_export.png)
+![Telerik UI for {{ site.framework_name }} RadGridView export showing row details included in the exported HTML output](../images/gridview_row_details_export.png)
 
 ## DataContext of the Export Elements
 

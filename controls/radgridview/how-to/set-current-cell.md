@@ -36,7 +36,7 @@ __Example 1: Setting the current cell via an item and a column__
 
 __RadGridView with changed current cell__
 
-![](images/gridview_set_current_cell.png)
+![Telerik UI for WPF RadGridView current cell set programmatically and ready for edit mode](images/gridview_set_current_cell.png)
 
 ## See Also
 

@@ -20,7 +20,7 @@ Assume we have RadGridView bound to a collection of sports clubs. Each club has 
 
 #### __Figure 1: The expected result__
 
-![Telerik {{ site.framework_name }} DataGrid cellstyleselector](images/gridview_cellstyleselector.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with CellStyleSelector applying different cell background colors based on stadium capacity](images/gridview_cellstyleselector.png)
 
 Follow these steps to configure __CellStyleSelector__:
 

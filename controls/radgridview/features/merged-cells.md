@@ -45,7 +45,7 @@ __Example 1: Configure RadGridView to merge cells vertically__
 
 __Figure 1: RadGridView with vertically merged cells__
 
-![Telerik {{ site.framework_name }} DataGrid merged cells 1](images/gridview_merged_cells_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with vertically merged cells](images/gridview_merged_cells_1.png)
 
 Similarly, you can set the cells to be merged horizontally configuring RadGridView with __MergedCellsDirection.Horizontal__.
 
@@ -61,7 +61,7 @@ __Example 2: Configure RadGridView to merge cells horizontally__
 
 __Figure 2: RadGridView with horizontally merged cells__
 
-![Telerik {{ site.framework_name }} DataGrid merged cells 2](images/gridview_merged_cells_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with horizontally merged cells](images/gridview_merged_cells_2.png)
 
 ## IsCellMergingEnabled
 
@@ -84,7 +84,7 @@ __Example 3: Configure cell merging per column__
 
 __Figure 3: RadGridView with configured cell merging per column__
 
-![Telerik {{ site.framework_name }} DataGrid merged cells 3](images/gridview_merged_cells_3.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with cell merging configured per column](images/gridview_merged_cells_3.png)
 
 ## Merged Cells and RowDetails
 
@@ -123,11 +123,11 @@ __Example 5: Specify RowDetailsTemplate for RadGridView__
 
 __Figure 4: RadGridView with merged cells and RowDetails defined__
 
-![Telerik {{ site.framework_name }} DataGrid merged cells 4](images/gridview_merged_cells_4.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with merged cells and row details enabled](images/gridview_merged_cells_4.png)
 
 __Figure 5: RadGridView with merged cells and RowDetails expanded__
 
-![Telerik {{ site.framework_name }} DataGrid merged cells 5](images/gridview_merged_cells_5.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with merged cells and expanded row details](images/gridview_merged_cells_5.png)
 
 >Once the row details are expanded, the merged cell will be separated into two different subsets. The particular cell that is part of the expanded row will be considered as a single one instead.
           

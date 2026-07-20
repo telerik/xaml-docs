@@ -90,7 +90,7 @@ __Defining the RadGridView to show the new row__
 
 __The new row of RadGridView for inserting data__
 
-![The new row of RadGridView for inserting data](images/gridview-features-new-row-0.png)
+![Telerik UI for WPF RadGridView new row displayed at the top for inserting data](images/gridview-features-new-row-0.png)
 
 ## New Row Position
 
@@ -115,7 +115,7 @@ __Setting the new row position to be on the bottom__
 
 __RadGridView's new row positioned on the bottom__
 
-![RadGridView's new row positioned on the bottom](images/gridview-features-new-row-1.png)
+![Telerik UI for WPF RadGridView new row positioned at the bottom of the grid](images/gridview-features-new-row-1.png)
 
 ## Customizing the New Row's Content
 
@@ -146,7 +146,7 @@ __Using the GridViewNewRowContent and GridViewNewRowContentTemplate__
 
 __RadGridView's new row with customized content__
 
-![RadGridView's new row with customized content](images/gridview-features-new-row-2.png)
+![Telerik UI for WPF RadGridView new row with customized content and icon template](images/gridview-features-new-row-2.png)
 
 ## Styling the New Row Element
 

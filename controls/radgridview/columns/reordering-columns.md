@@ -12,7 +12,7 @@ position: 11
 
 __RadGridView__ supports column reordering and it can be done by the user in run-time. The user can drag the desired column's header at the desired position among the other headers and drop it there.
 
-![Telerik {{ site.framework_name }} DataGrid Reordering Columns 1](images/RadGridView_ReorderingColumns_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing a column header being reordered by drag and drop](images/RadGridView_ReorderingColumns_1.png)
 
 ## Reordering modes 
 

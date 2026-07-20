@@ -344,7 +344,7 @@ The implementation of the ViewModel is below:
 
 ## The defined ContextMenu works
 
-![Defining ContextMenu in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview-how-to-use-radcontextmenu-mvvm_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView header context menu in an MVVM setup with sorting, grouping, and column chooser commands](images/gridview-how-to-use-radcontextmenu-mvvm_1.png)
 
 You can also check __Header Context Menu__ and __Row Context Menu__ [WPF Demos](https://demos.telerik.com/wpf/).
 

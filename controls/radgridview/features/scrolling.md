@@ -49,7 +49,7 @@ __Example 1: Defining ScrollPositionIndicatorTemplate__
 ```
 
 #### __Figure 1: Custom ScrollPositionIndicator__  
-![Telerik {{ site.framework_name }} DataGrid scroll-position-indicator-template](images/radgridview-scrollpositionindicatortemplate.png)
+![Telerik UI for {{ site.framework_name }} RadGridView deferred scrolling with a custom ScrollPositionIndicator template](images/radgridview-scrollpositionindicatortemplate.png)
 
 Additionally, you can style the element by creating the appropriate style and setting the **TargetType** property to **telerik:ScrollPositionIndicator** as demonstrated in **Example 2**:
 

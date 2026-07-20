@@ -31,7 +31,7 @@ this.gridView.IsAIEnabled = true;
 
 > The panel that allows AI text input contains a `RadSpeechToTextButton` that requires to install the following NuGet package: `Microsoft.Web.WebView2`.
 
-![A picture showing RadGridView with AI features enabled panel](images/gridview-ai-features-0.png)
+![Telerik UI for WPF RadGridView AI features showing the prompt input panel for natural language grid commands](images/gridview-ai-features-0.png)
 
 ## Configuring AI Settings
 

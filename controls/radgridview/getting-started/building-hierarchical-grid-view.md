@@ -16,7 +16,7 @@ The final result should look like the one displayed in the next image.
 
 __Hierarchical RadGridView__
 
-![Telerik WPF DataGrid Building Hierarchical Grid](images/RadGridView_BuildingHierarchicalGrid_3.png)
+![Telerik UI for WPF RadGridView hierarchical grid with parent divisions and expanded child team grids](images/RadGridView_BuildingHierarchicalGrid_3.png)
 
 Assuming that you have already created a WPF application and defined the RadGridView control, it is time to prepare the sample data for it.
 
@@ -313,7 +313,7 @@ __Setting the control's ItemsSource__
 
 __RadGridView without a hierarchy__
 
-![Telerik WPF DataGrid No Hierarchy](images/RadGridView_BuildingHierarchicalGrid_1.png)
+![Telerik UI for WPF RadGridView without hierarchy showing only the parent division rows](images/RadGridView_BuildingHierarchicalGrid_1.png)
 
 ## Defining ChildTableDefinitions
 
@@ -342,7 +342,7 @@ __Defining ChildTableDefinitions__
 
 __RadGridView with a hierarchy__
 
-![Telerik WPF DataGrid with a Hierarchy](images/RadGridView_BuildingHierarchicalGrid_2.png)
+![Telerik UI for WPF RadGridView with hierarchy showing expandable child team rows under each division](images/RadGridView_BuildingHierarchicalGrid_2.png)
 
 >You can read more about the GridViewTableDefinition [here]({%slug gridview-basic-hierarchies%}).
 
@@ -383,7 +383,7 @@ __Setting the control's HierarchyChildTemplate__
 
 __Customized child grids__
 
-![Telerik WPF DataGrid with Customized Child Grids](images/RadGridView_BuildingHierarchicalGrid_3.png)
+![Telerik UI for WPF RadGridView with customized child grids showing division rows and child team columns](images/RadGridView_BuildingHierarchicalGrid_3.png)
 
 >You can also use the `HierarchyChildTemplateSelector` property to specify a DataTemplateSelector and provide different templates for the child elements based on the parent row which is expanded.
 

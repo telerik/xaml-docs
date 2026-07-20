@@ -17,7 +17,7 @@ This article shows how to scroll RadGridView to a particular row and / or column
 
 We can use them against RadGridView with many rows and columns. The ultimate goal would be to scroll to the last column of the last row:
 #### __Figure 1: Scroll to the last column of the last row__                     
-![Scrolling in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/how_to_scroll_gridview.png)
+![Telerik UI for {{ site.framework_name }} RadGridView scrolled to the last row and last column](images/how_to_scroll_gridview.png)
 
 ## ScrollIntoViewAsync
 

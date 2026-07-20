@@ -117,7 +117,7 @@ __Example 3: Define a column in XAML__
 
 #### Figure 1: The rendered RadGridView
 
-![Telerik {{ site.framework_name }} DataGrid ObservableCollection ItemsSource](images/RadGridView_ObservableCollection_ItemsSource.png)
+![Telerik UI for {{ site.framework_name }} RadGridView bound to an ObservableCollection with manually defined Name and Number columns](images/RadGridView_ObservableCollection_ItemsSource.png)
 
 > To learn more about defining columns and the different types of columns, you can take a look at the [Columns]({%slug gridview-columns-defining-columns%}) section.
 

@@ -40,7 +40,7 @@ __Example 1: Declare RadGridView__
 ```
 
 #### __Figure 1: Standard appearance of RadGridView__
-![Telerik {{ site.framework_name }} DataGrid Validation 010](images/RadGridView_Validation_010.png)
+![Telerik UI for {{ site.framework_name }} RadGridView standard appearance before validation is applied](images/RadGridView_Validation_010.png)
 
 ## Setting the Mode for the Validation 
 
@@ -112,7 +112,7 @@ __Example 3: Add custom logic in the code behind__
 When you try to enter an order number that has fewer than five characters, you should see a validation message that is similar to the one in __Figure 2__.
 
 #### __Figure 2: RadGridView's appearance after validation__
-![Telerik {{ site.framework_name }} DataGrid Validation 020](images/RadGridView_Validation_020.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing a cell validation error message](images/RadGridView_Validation_020.png)
 
 When you set the __e.IsValid__ property to __False__, this will cancel the editing process and will return focus to the invalid __GridViewCell__. After this UI layer validation is successful (__e.IsValid__ is __True__, which is the default value). Then the Data layer validation occurs. This is the validation that is built into the business object implementation.
 
@@ -167,7 +167,7 @@ __Example 4: Set validation on a property level__
 ```
 
 #### __Figure 3: RadGridView's appearance after validation__
-![Telerik {{ site.framework_name }} DataGrid Validation 030](images/RadGridView_Validation_030.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing a property-level validation error](images/RadGridView_Validation_030.png)
 
 >An exception of any kind will result in a validation error, and an exception message will appear as an error tooltip.
 
@@ -240,7 +240,7 @@ A few things worth mentioning here:
 * The RowValidating event fires each time a GridViewRow gets loaded into the viewport, whether in edit mode or not. You can avoid executing any custom logic defined in your event handler by checking the __EditOperationType__ property of the GridViewRowValidatingEventArgs. 
 
 #### __Figure 4: RadGridView's appearance after validation on row level was applied__
-![Telerik {{ site.framework_name }} DataGrid Validation 040](images/RadGridView_Validation_040.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing row-level validation errors](images/RadGridView_Validation_040.png)
 
 Once you have added such errors, you will have to explicitly clear them when needed. Read this [help article]({%slug gridview-troubleshooting-validation-stays%}) for information about how to clear user defined errors.
 
@@ -305,7 +305,7 @@ The following __Validation Attributes__ are available:
 You can see the result in __Figure 5__.
 
 #### __Figure 5: Appearance of RadGridView after DataAnnotations valididation is applied__
-![Telerik {{ site.framework_name }} DataGrid managing data validation 050](images/radgridview_managing_data_validation_050.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing data annotations validation feedback](images/radgridview_managing_data_validation_050.png)
 
 >tip Once the UI and Data validation is passed (i.e., the Binding tried to update the value for the bound property), the __CellValidated__ event is raised. The ValidationResult can be valid or not. Here you can also add a custom logic like changing the visual state of the editor (through the e.EditorElement).
 

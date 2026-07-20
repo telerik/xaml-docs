@@ -20,7 +20,7 @@ In this topic we will discuss:
 
 #### __Figure 1: The FilteringControl & FilteringDropDown template structure__
 
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates FilteringControl Template Structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the FilteringControl and FilteringDropDown template structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
 
 ## Styling FilteringDropDown
 
@@ -28,7 +28,7 @@ The filtering dropdown icon can be styled by creating an appropriate style targe
 
 #### __Figure 2: The default FilteringDropDown element__
 
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates FilteringDropDown](images/RadGridView_Styles_and_Templates_FilteringDropDown.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the default FilteringDropDown element in a column header](images/RadGridView_Styles_and_Templates_FilteringDropDown.png)
 
 To learn how to modify the default FilteringDropDown style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
@@ -38,7 +38,7 @@ __GridViewColumn__ exposes the __FilteringControlStyle__ property of type __Styl
 
 #### __Figure 3: The default FilteringControl element__
 
-![Telerik {{ site.framework_name }} DataGrid Styles and Templates FilteringControl](images/RadGridView_Styles_and_Templates_FilteringControl.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the default FilteringControl element for column filtering](images/RadGridView_Styles_and_Templates_FilteringControl.png)
 
 You can modify it similarly to the FilteringDropDown style and set it as follows:
 

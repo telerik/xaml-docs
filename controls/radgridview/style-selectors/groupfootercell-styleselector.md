@@ -97,7 +97,7 @@ __Example 3: Setting the GroupFooterCellStyleSelector property__
 
 #### __Figure 1: The group footer cells styled using the GroupFooterCellStyleSelector property__
 
-![Telerik {{ site.framework_name }} DataGrid-groupfootercell-styleselector](images/gridview-groupfootercell-styleselector.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with GroupFooterCellStyleSelector applying different styles to group footer cells](images/gridview-groupfootercell-styleselector.png)
 
 ## See Also
 

@@ -39,7 +39,7 @@ Use the [IsFilteringAllowed]({%slug gridview-filtering-howto-disable-filtering-f
 
 __The filtering popup__
 
-![Telerik {{ site.framework_name }} DataGrid filtering basic 01](images/gridview_filtering_basic_01.png)
+![Telerik UI for {{ site.framework_name }} RadGridView filtering popup showing distinct values and field filters](images/gridview_filtering_basic_01.png)
 
 ### Distinct Values
 
@@ -98,7 +98,7 @@ The editor shown in the header is equivalent to one of the two field filters fro
 
 __The filter rows__
 
-![Telerik {{ site.framework_name }} DataGrid filtering basic 02](images/gridview_filtering_basic_02.png)
+![Telerik UI for {{ site.framework_name }} RadGridView filter row with inline column filter editors](images/gridview_filtering_basic_02.png)
 
 All filter-row filters start empty. After the user enters a value, they choose an operator from the funnel menu. The menu shows the operators that apply to the current column type.
 
@@ -122,7 +122,7 @@ As with `Popup` mode, you can provide your own field filter editor as described 
 
 `FilterEditor` displays a filtering panel below `RadGridView`. It uses `RadDataFilter` to build more complex filtering criteria than the other modes. For more detail, see [Filter Editor]({%slug gridview-filter-editor%}).
 
-![An image showing the Telerik RadGridView's FilterEditor mode](images/gridview_filtering_basic_filtereditormode.png)
+![Telerik UI for {{ site.framework_name }} RadGridView FilterEditor mode with a filtering panel below the grid](images/gridview_filtering_basic_filtereditormode.png)
 
 ## FilterMemberPath
 
@@ -177,7 +177,7 @@ __Setting EnableDistinctValuesFiltering and DistinctValuesSearchMode properties_
 
 __Filtering the StadiumCapacity column's distinct values__
 
-![Filtering the StadiumCapacity column's distinct values](images/gridview_filtering_basic_03.gif)
+![Telerik UI for {{ site.framework_name }} RadGridView filtering the StadiumCapacity column distinct values with the built-in search box](images/gridview_filtering_basic_03.gif)
 
 ## See Also
 

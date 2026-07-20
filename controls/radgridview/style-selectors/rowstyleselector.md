@@ -18,7 +18,7 @@ Assume we have RadGridView bound to a collection of Clubs. Each Club has a prope
 
 #### __Figure 1: The expected result__
 		
-![Telerik {{ site.framework_name }} DataGrid rowstyleselector](images/gridview_rowstyleselector.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with RowStyleSelector applying different row background colors based on stadium capacity](images/gridview_rowstyleselector.png)
 
 To do so follow these steps:
 
@@ -154,7 +154,7 @@ __Example 5: Set RadGridView's AlternateRowStyleSelector__
 
 #### __Figure 2: The alternating rows styled using the AlternateRowStyleSelector property__
 
-![Telerik {{ site.framework_name }} DataGrid alternaterowstyleselector](images/gridview_alternaterowstyleselector.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with AlternateRowStyleSelector styling alternating rows conditionally](images/gridview_alternaterowstyleselector.png)
 
 ## See Also
 

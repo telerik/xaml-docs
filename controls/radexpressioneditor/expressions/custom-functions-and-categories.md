@@ -96,7 +96,7 @@ To add custom categories as well as remove certain predefined categories, you ne
 
 __Custom category__
 
-![](images/custom-category.png)
+![Telerik UI for WPF RadExpressionEditor custom categories showing Favorites with Math and DateTime subcategories](images/custom-category.png)
 
 ## Custom Functions
 
@@ -153,7 +153,7 @@ You can then add these functions in the **GetFunctionsItemModels** override as w
 
 __Custom functions__
 
-![](images/custom-functions.png)
+![Telerik UI for WPF RadExpressionEditor custom functions showing OnePlus and TwoPlus in the Other category](images/custom-functions.png)
 
 ## Further Customizations
 

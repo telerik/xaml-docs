@@ -22,7 +22,7 @@ Assume we have a __RadGridView__ bound to a collection of clubs. Each club has a
 
 __Figure 1:__ Displays the two different data templates for a big and small stadiums.
 
-![Telerik {{ site.framework_name }} DataGrid RowDetailsTemplateSelector](images/RowDetailsTemplateSelector.png)
+![Telerik UI for {{ site.framework_name }} RadGridView using a RowDetailsTemplateSelector to show different row details for large and small stadiums](images/RowDetailsTemplateSelector.png)
 
 To do so follow these steps:		  
 		

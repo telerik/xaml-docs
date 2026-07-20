@@ -12,12 +12,12 @@ position: 3
 
 #### __Figure 1: The default RadGridView control__
 
-![Telerik {{ site.framework_name }} DataGrid default style](images/gridview_default_style.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the default control appearance](images/gridview_default_style.png)
 
 #### __Figure 2: RadGridView template structure__
 
-![Styling Telerik {{ site.framework_name }} DataGrid01](images/Styling_RadGridView01.png)
-![Styling Telerik {{ site.framework_name }} DataGrid02](images/Styling_RadGridView02.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the first part of the control template structure](images/Styling_RadGridView01.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the second part of the control template structure](images/Styling_RadGridView02.png)
 
 ## Targeting the RadGridView Element
 
@@ -91,7 +91,7 @@ The final result should be similar to this:
 
 #### __Figure 3: The result of the modified General properties__
 
-![Telerik {{ site.framework_name }} DataGrid Controlling Appearance 1](images/RadGridView_Controlling_Appearance_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with modified general appearance properties such as vertical grid lines and hidden column headers](images/RadGridView_Controlling_Appearance_1.png)
 
 You can see that the columns headers are not visible while the column footers are; moreover, there are only vertical gridlines and the __background__ of all columns is set to Bisque.
 
@@ -151,7 +151,7 @@ __Example 4: Usage of Rows properties__
 
 #### __Figure 4: The result of the modified Rows properties__
 
-![Telerik {{ site.framework_name }} DataGrid Controlling Appearance 2](images/RadGridView_Controlling_Appearance_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with modified row properties including row details and alternating rows](images/RadGridView_Controlling_Appearance_2.png)
 
 You can see that the row indicators are missing and the row details are displayed only for the selected row. Moreover, each even row has different styling because of the __AlternationCount__ property.
 
@@ -183,6 +183,6 @@ __Example 5: Usage of Groups properties__
 
 #### __Figure 5: The result of the modified Groups properties__
 
-![Telerik {{ site.framework_name }} DataGrid Controlling Appearance 3](images/RadGridView_Controlling_Appearance_3.png)
+![Telerik UI for {{ site.framework_name }} DataGrid with modified group properties showing group footers and a hidden group panel](images/RadGridView_Controlling_Appearance_3.png)
 
 You can see that the group footers are shown while the group panel (located at the top of the __RadGridView__) is no longer visible, thus making any changes in the grouping impossible.

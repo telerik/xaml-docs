@@ -10,7 +10,7 @@ position: 0
 
 # Key Features
 
-![Telerik {{ site.framework_name }} DataGrid Key Features 1](images/RadGridView_KeyFeatures_1.png)
+![Telerik UI for {{ site.framework_name }} RadGridView key features overview highlighting sorting, grouping, filtering, and data presentation capabilities](images/RadGridView_KeyFeatures_1.png)
 
 This is a list with short descriptions of the top-of-the line features of __RadGridView__ control.        
             

@@ -14,7 +14,7 @@ As of R1 2019, the RadExpression control also provides a number of functions for
  
  __The Text functions subcategory__
 
-![](images/text-functions.png)
+![Telerik UI for WPF RadExpressionEditor Text functions subcategory in the expression editor](images/text-functions.png)
 
 Here is a full list of the available functions:
 
@@ -43,7 +43,7 @@ Here is a full list of the available functions:
 
 __Filtering RadGridView via the text functions__
 
-![](images/text-functions-example1.png)
+![Telerik UI for WPF RadExpressionEditor text functions used to filter data in RadGridView](images/text-functions-example1.png)
 
 The same can be achieved via code-behind as well by using the code from **Example 1**.
 

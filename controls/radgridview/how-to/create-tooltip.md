@@ -25,7 +25,7 @@ __Example 1: Bind RadGridView in XAML__
 
 You can check the source code below on how to set a ToolTip for a specific column. The ToolTip will use a __DataTemplate__ with TextBlocks and will show information from the currently hovered row. The final result should look like this:
 
-![Telerik {{ site.framework_name }} DataGrid row tooltip](images/gridview_row_tooltip.png)
+![Telerik UI for {{ site.framework_name }} RadGridView cell tooltip showing row data from a custom ToolTipTemplate](images/gridview_row_tooltip.png)
 
 To achive that you can define a __DataTemplate__ for the __ToolTipTemplate__ property for the column.
 
@@ -94,7 +94,7 @@ __Example 5: Predefining the Header of the column__
 
 The final result should look like this:
 
-![Telerik {{ site.framework_name }} DataGrid header tooltip](images/gridview_header_tooltip.png)
+![Telerik UI for {{ site.framework_name }} RadGridView header cell tooltip displayed for a column header](images/gridview_header_tooltip.png)
 
 ## ToolTip for a GridViewRow
 

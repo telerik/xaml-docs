@@ -52,7 +52,7 @@ __Example 2: Changing multiple selection separator__
 ```
 
 #### __Figure 1: Selected items separated by dash set in Example 2__
-![{{ site.framework_name }} RadComboBox Selected items separated by dash set in Example 2](images/RadComboBox_Features_MultipleSelection_01.png)
+![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection showing selected items separated by a dash](images/RadComboBox_Features_MultipleSelection_01.png)
 
 >If __RadComboBox__ is __Editable__ and the __IsTextSearchEnabled__ is __True__ pressing the separator while typing inside the input area of the control will autocomplete the item to its end.
 
@@ -77,7 +77,7 @@ __Example 3: Changing multiple selection separator StringFormat__
 ```
 
 #### __Figure 2: Selected items separated by the MultipleSelectionSeparatorStringFormat set in Example 3__
-![{{ site.framework_name }} RadComboBox Selected items separated by the MultipleSelectionSeparatorStringFormat set in Example 3](images/RadComboBox_Features_MultipleSelection_02.png)
+![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection showing selected items formatted with MultipleSelectionSeparatorStringFormat](images/RadComboBox_Features_MultipleSelection_02.png)
 
 >If __RadComboBox__ is __Editable__, the __MultipleSelectionSeparatorStringFormat__ will be applied only when the focus is not inside the input area of the control. If the input area is focused, only the __MultipleSelectionSeparator__ will be applied and visualized.
 
@@ -125,7 +125,7 @@ __Example 4: SelectAll command__
 ```
 
 #### __Figure 3: RadCombobBox after executing SelectAll command__
-![{{ site.framework_name }} RadComboBox RadCombobBox after executing SelectAll command](images/RadComboBox_Features_MultipleSelection_03.png)
+![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection after executing the SelectAll command](images/RadComboBox_Features_MultipleSelection_03.png)
 
 ### UnselectAll
 
@@ -147,10 +147,10 @@ __Example 5: UnselectAll command__
 ```
 
 #### __Figure 4: Before executing UnselectAll command__
-![{{ site.framework_name }} RadComboBox Before executing UnselectAll command](images/RadComboBox_Features_MultipleSelection_04.png)
+![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection before executing the UnselectAll command](images/RadComboBox_Features_MultipleSelection_04.png)
 
 #### __Figure 5: After executing UnselectAll command__
-![{{ site.framework_name }} RadComboBox After executing UnselectAll command](images/RadComboBox_Features_MultipleSelection_05.png)
+![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection after executing the UnselectAll command](images/RadComboBox_Features_MultipleSelection_05.png)
 
 ### ToggleSelectAll
 
@@ -173,10 +173,10 @@ __Example 6: ToggleSelectAll command__
 ```
 
 #### __Figure 6: After checking the CheckBox with ToggleSelectAll command__
-![{{ site.framework_name }} RadComboBox After checking the CheckBox with ToggleSelectAll command](images/RadComboBox_Features_MultipleSelection_06.png)
+![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection after checking the ToggleSelectAll CheckBox](images/RadComboBox_Features_MultipleSelection_06.png)
 
 #### __Figure 7: After unchecking the CheckBox with ToggleSelectAll command__
-![{{ site.framework_name }} RadComboBox After unchecking the CheckBox with ToggleSelectAll command](images/RadComboBox_Features_MultipleSelection_07.png)
+![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection after unchecking the ToggleSelectAll CheckBox](images/RadComboBox_Features_MultipleSelection_07.png)
 
 ## MultipleSelectionBoxTemplate
 
@@ -213,7 +213,7 @@ __Example 8: Set the MultipleSelectionBoxTemplate__
 ```
 
 #### __Figure 8: RadComboBox after applying MultipleSelectionBoxTemplate__
-![{{ site.framework_name }} RadComboBox RadComboBox after applying MultipleSelectionBoxTemplate](images/RadComboBox_Features_MultipleSelection_08.png)
+![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection with a custom MultipleSelectionBoxTemplate](images/RadComboBox_Features_MultipleSelection_08.png)
 
 ## Keyboard support
 

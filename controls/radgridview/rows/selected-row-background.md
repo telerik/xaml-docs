@@ -18,7 +18,7 @@ RadGridView has a default Brush for its selection on row level depending on the 
 
 #### __Figure 1: Selected Row Background in Office2016 Theme__
 
-![Telerik {{ site.framework_name }} DataGrid SelectedRow Background 01](images/RadGridView_SelectedRow_Background_01.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing the default selected row background in the Office2016 theme](images/RadGridView_SelectedRow_Background_01.png)
 
 As of __R3 2018 RadGridView__ provides support for setting the background of its selected rows through the __SelectedBackground__ property of __GridViewRow__.
 
@@ -32,7 +32,7 @@ __Example 1: Setting the SelectedBackground property of GridViewRow__
 
 #### __Figure 2: RadGridView with modified Background for its Selected Row__
 
-![Telerik {{ site.framework_name }} DataGrid SelectedRow Background 02](images/RadGridView_SelectedRow_Background_02.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a custom SelectedBackground applied to the selected row](images/RadGridView_SelectedRow_Background_02.png)
 
 > If you have [alternating rows]({%slug radgridview-rows-alternating-rows%}) and you have explicitly set a style which sets the SelectedBackground of the rows to the __RowStyle__ property of the RadGridView, you will have to set the [AlternateRowStyle]({%slug gridview-styling-a-row%}) property to the same style (or a style that sets the __SelectedBackground__ property to the same value).
 
@@ -54,7 +54,7 @@ __Example 2: Setting the MouseOverBackground property of GridViewRow__
 
 #### __Figure 2: RadGridView with modified MouseOver Background__
 
-![RadGridView with modified MouseOver Background](images/RadGridView_MouseOverBackground.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with a custom MouseOverBackground applied to hovered rows](images/RadGridView_MouseOverBackground.png)
 
 > The notes in the previous section about the __SelectedBackground__ property apply to the __MouseOverBackground__ as well.
 

@@ -14,7 +14,7 @@ Each of the themes from the UI for {{ site.framework_name }} provides a custom d
 
 __Scrollbar in Windows8 theme__
 
-![](images/windows8-scrollbar.png)
+![Telerik UI for WPF ScrollBar styling showing the default Windows8 theme scrollbars](images/windows8-scrollbar.png)
 
 The article will show you how to modify these styles to suit your requirements.
 
@@ -105,7 +105,7 @@ __Example 3: Increase scrollbar width__
 
 __Scrollbars with increased size__
 
-![](images/windows8-scrollbar-modified-size.png)
+![Telerik UI for WPF ScrollBar styling with increased scrollbar width and height in the Windows8 theme](images/windows8-scrollbar-modified-size.png)
 
 ## Styling the Arrows
 
@@ -142,7 +142,7 @@ You now need to do the same for the **RepeatButtonLineUpTemplate** and **RepeatB
     
 __Scrollbars with increased arrow size__
 
-![](images/windows8-scrollbar-modified-arrow-size.png)
+![Telerik UI for WPF ScrollBar styling with larger scrollbar arrows in the Windows8 theme](images/windows8-scrollbar-modified-arrow-size.png)
 
     
 ## Styling the Thumbs
@@ -182,7 +182,7 @@ __Example 5: Change thumb color__
     
 __Scrollbars with colored thumb__
 
-![](images/windows8-scrollbar-modified-thumb.png)
+![Telerik UI for WPF ScrollBar styling with a colored thumb in the Windows8 theme](images/windows8-scrollbar-modified-thumb.png)
 
 ## See Also
 

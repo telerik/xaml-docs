@@ -29,7 +29,7 @@ __Example 1: Setting RadGridView's CanUserSelectColumns property__
 ```
 
 #### __Figure 1: Selecting columns through the UI__  
-![Telerik {{ site.framework_name }} DataGrid column selection](images/gridview-columnselection.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing column selection through the Columns selection dropdown](images/gridview-columnselection.png)
 
 The __hide column selection button__, set the RadGridView's **ColumnsSelectionButtonVisibility** property.
 

@@ -79,7 +79,7 @@ After that define __DataTemplate__ for __ItemTemplate__ property of the ListBox.
 ```
 
 Provide RadGridView with an appropriate data source and run your application. The result should be similar to this snapshot:
-![Telerik {{ site.framework_name }} DataGrid Telerik {{ site.framework_name }} DataGrid how to column chooser 2](images/RadGridView_radgridview_how_to_column_chooser_2.png)
+![Telerik UI for {{ site.framework_name }} RadGridView with an external ListBox used to show and hide grid columns](images/RadGridView_radgridview_how_to_column_chooser_2.png)
 
 >tip You can download a runnable project of the previous example from our online SDK repository: [ColumnChooser](https://github.com/telerik/xaml-sdk/tree/master/GridView/ColumnChooser).
           

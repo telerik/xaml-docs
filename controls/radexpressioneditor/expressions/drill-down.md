@@ -31,7 +31,7 @@ __Example 2: Enabling drill-down in code-behind__
 
 __Drill-down functionality__
 
-![](images/drill-down.png)
+![Telerik UI for WPF RadExpressionEditor drill-down feature showing expandable object fields](images/drill-down.png)
 
 ## See Also
 

@@ -51,7 +51,7 @@ __Example 2: Setting the DetailsProvider__
 	Me.ExternalPresenter.DetailsProvider = Me.radGridView.RowDetailsProvider
 ```
 
-![Telerik {{ site.framework_name }} DataGrid RowDetails 5](images/RadGridView_RowDetails_5.png)
+![Telerik UI for {{ site.framework_name }} RadGridView showing row details in an external DetailsPresenter outside the grid](images/RadGridView_RowDetails_5.png)
 
 >You can see that the __RowDetailsTemplate__ must be defined in the __RadGridView__ as it is passed by the __RowDetailsProvider__ to both the internal and the external presenter. The same applies for the __RowDetailsStyle__.
 

@@ -28,11 +28,11 @@ Through the Project Configuration Wizard’s __second page__ you can select whic
 
 ![VSExtensions WPF Project Config Wizard Step 2](images/VSExtensions_WPF_ProjectConfigWizard_Step2.PNG)
 
->The Project Configuration Wizard’s second page is only available if you use theming based on implicit styles. ([more information]({%slug styling-apperance-implicit-styles-overview%}))           
+>The Project Configuration Wizard’s second page is only available if you use theming based on implicit styles. ([Learn how implicit styling works in Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%}))           
 
 When you click the Finish button the selected assembly references get added to the project. If you use the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) theming mechanism, the resources of the selected theme are merged in the App.xaml Resources collection.          
 
 ## See Also  
- * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
- * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
- * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
+ * [Upgrade an Existing Telerik UI for WPF Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
+ * [Download the Latest Telerik UI for WPF Release through Visual Studio Extensions]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

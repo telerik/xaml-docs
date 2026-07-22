@@ -131,7 +131,7 @@ __Example 5: Clear and merge dictionaries upon button click__
     }
 ```
 
->Please note that the theme provided in the MergeDictionaries should match the name of the respecitve theme assembly, for example - **Expression_Dark**, **Office2016Touch**, **Material**. Using this approach you can switch to any of the [themes]({%slug common-styling-appearance-available-themes%}) provided by the UI for {{ site.framework_name }} suite.
+>Please note that the theme provided in the MergeDictionaries should match the name of the respecitve theme assembly, for example - **Expression_Dark**, **Office2016Touch**, **Material**. Using this approach you can switch to any of the [available themes]({%slug common-styling-appearance-available-themes%}) provided by the UI for {{ site.framework_name }} suite.
 
 The result based on the above code is illustrated in **Figure 1**.
 
@@ -141,6 +141,6 @@ The result based on the above code is illustrated in **Figure 1**.
 
 ## See Also
 
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [Switching Icons at Runtime]({%slug styling-apperance-switching-icons-at-runtime%})
-* [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%})
+* [Set a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Switch Icons at Runtime]({%slug styling-apperance-switching-icons-at-runtime%})
+* [Apply Telerik Themes to Native WPF Controls]({%slug styling-apperance-themes-mscontrols%})

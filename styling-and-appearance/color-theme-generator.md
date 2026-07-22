@@ -9,7 +9,7 @@ position: 6
 ---
 # Color Theme Generator
 
-The [themes]({%slug common-styling-appearance-available-themes%}) which support ThemePalette are fully customizable using the available brushes to adjust each color. 
+The [Telerik themes]({%slug common-styling-appearance-available-themes%}) that support ThemePalette customization are fully customizable using the available brushes to adjust each color. 
 
 For seamless color customization and faster palette creation that looks great and matches all controls, we created the **Color Theme Generator**.
      
@@ -70,12 +70,12 @@ To reset the default colors of the application, click the **Reset All Settings**
 
 >important Download the **Color Theme Generator** application from the following page {% if site.site_name == 'Silverlight' %}[Silverlight Color Theme Generator](https://demos.telerik.com/silverlight/Themesgenerator){% else %}[WPF Color Theme Generator](https://demos.telerik.com/wpf/colorthemegenerator){% endif %}
 
->tip The source code of the Color Theme Generator application can be found in the [downloads section]({%slug download-product-files-wpf%}) of your **Telerik** account.
+>tip The source code of the Color Theme Generator application can be found in the [Telerik UI for WPF downloads section]({%slug download-product-files-wpf%}) of your **Telerik** account.
 
 ## See Also
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
-* [Themes Suite]({%slug common-styling-appearance-available-themes%})
+* [Set a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Compare Xaml and NoXaml Theming Approaches]({%slug xaml-vs-noxaml%})
+* [Browse the Available Telerik Themes]({%slug common-styling-appearance-available-themes%})
 
 
 

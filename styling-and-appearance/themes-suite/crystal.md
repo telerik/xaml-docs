@@ -345,7 +345,7 @@ When using the `Crystal` theme you can dynamically change the `FontSize` and `Fo
 
 The `FontSize` and `FontFamily` properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value __13__ and can be modified through the `CrystalPalette.Palette.FontSize` property in the same manner as in the other themes that support a theme palette. 
 
-The default font used in the theme is [Roboto](https://fonts.google.com/specimen/Roboto).
+The default font used in the theme is the [Roboto font family](https://fonts.google.com/specimen/Roboto).
 
 >important For complex scenarios we strongly recommend setting the FontSize properties only __before the application is initialized__. 
 
@@ -484,9 +484,9 @@ __Merging the theme's ResourceDictionary in App.xaml__
 ```
 
 ## See Also  
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})
- * [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%})
- * [Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
- * [Material Theme]({%slug common-styling-appearance-material-theme%})
- * [Fluent Theme]({%slug common-styling-appearance-fluent-theme%})
+ * [Apply the Crystal Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Configure WPF Themes with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%})
+ * [Use Telerik Font Glyphs in WPF]({%slug common-styling-appearance-glyphs-overview%})
+ * [Customize the Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
+ * [Customize the Material Theme]({%slug common-styling-appearance-material-theme%})
+ * [Customize the Fluent Theme]({%slug common-styling-appearance-fluent-theme%})

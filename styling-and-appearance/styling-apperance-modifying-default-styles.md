@@ -99,10 +99,10 @@ You could also modify the default style of a control by using the **Design view*
 
 If you prefer, you can manually extract the needed style from the respective XAML file in the **Themes.Implicit** folder of your **UI for WPF** installation and modify its code to suit your needs.
 
-The process is similar to [manually extracting the Control Template]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) of a given control.
+The process is similar to [manually extracting a Telerik control template]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file).
 
->importantNote that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
+>important Note that when changing a __Control Template__ you should include all required parts. Even if your code compiles, some of the functionality may be impacted due to the omission of the required parts. The required parts are usually marked with the prefix "__PART___".
 
 ## See Also
 
-* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
+* [Edit Telerik Control Templates]({%slug styling-apperance-editing-control-templates%})

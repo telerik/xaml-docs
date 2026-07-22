@@ -16,7 +16,7 @@ Telerik WPF Demos application provides a rich list of examples showcasing all th
 
 ## Installation
 
-The demos can be downloaded at [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/) as a ClickOnce application.
+The demos can be downloaded from the [Telerik UI for WPF demos site](https://demos.telerik.com/wpf/) as a ClickOnce application.
 
 The application requires the following component in order to be installed and run locally:
 

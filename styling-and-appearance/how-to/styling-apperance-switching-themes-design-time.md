@@ -41,7 +41,7 @@ __Example 1: The merged theme resources__
 	</Application.Resources>
 ```
 
-You can change the theme also by using the [Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).
+You can change the theme also by using the [Project Configuration Wizard for Telerik UI for WPF]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).
 
 ## Switching Themes at Design-time per control
 
@@ -64,6 +64,6 @@ __Example 2: RadButton with Office2016 theme applied__
 ```
 
 ## See Also
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%})
-* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
+* [Set a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Switch Themes at Runtime]({%slug styling-apperance-themes-runtime%})
+* [Edit Telerik Control Templates]({%slug styling-apperance-editing-control-templates%})

@@ -14,7 +14,7 @@ With the Office2016 theme, we introduced a new approach to add icons and icon-li
 
 > As of **R1 2018**, we recommend using the new **RadGlyph** class and markup extension to visualize font glyphs. It has many advantages that are documented in [the RadGlyph article]({%slug common-styling-appearance-radglyph%}).
 
-For a list with all available glyphs, see the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
+For a list with all available glyphs, see the [Telerik UI for WPF glyph reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
 ## Advantages
 
@@ -172,9 +172,9 @@ __Example 7: Use the StringToGlyphConverter for the binding__
 	<TextBlock FontFamily="{x:Static telerik:RadGlyph.TelerikFontFamily}" Text="{Binding Glyph, Converter={StaticResource StringToGlyphConverter}}" />
 ```
 
->tip Since R1 2019 the **StringToGlyphConverter** is built-in the UI for WPF suite so you can access it via the `telerik` namespace in xaml or code-behind. Read more about this in the [Converters]({%slug common-converters%}#stringtoglyphconverter) article.
+>tip Since R1 2019 the **StringToGlyphConverter** is built-in the UI for WPF suite so you can access it via the `telerik` namespace in xaml or code-behind. Read more about this in the [StringToGlyphConverter documentation]({%slug common-converters%}#stringtoglyphconverter).
 
 ## See Also  
-* [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
-* [Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
-* [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%})
+* [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Use the Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
+* [Browse the Telerik UI for WPF Glyph Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%})

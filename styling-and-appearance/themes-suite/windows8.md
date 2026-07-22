@@ -217,4 +217,4 @@ __Changing the opacity__
 
 ## See Also
 
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
+ * [Apply Windows8 and Windows8Touch Themes with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

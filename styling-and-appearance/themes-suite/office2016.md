@@ -295,7 +295,7 @@ __Heart glyph__
 
 ![{{ site.framework_name }} Office2016 Heart Glyph](../images/common-styling-appearance-office2016-theme-2.png)	
 
-> You can read more about the usage of the new glyph's feature and see the available glyphs in [this article]({%slug common-styling-appearance-glyphs-overview%}).
+> You can read more about the usage of the new glyph feature and see the available glyphs in the [Telerik font glyph overview for WPF]({%slug common-styling-appearance-glyphs-overview%}).
 
 ## Changing Opacity
 
@@ -326,7 +326,7 @@ __Merging the theme's ResourceDictionary in App.xaml__
 ```
 
 ## See Also
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Office2013 Theme]({%slug common-styling-appearance-office2013-theme%})
- * [VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})
- * [Green Theme]({%slug common-styling-appearance-green-theme%})
+ * [Apply a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Customize the Office2013 Theme]({%slug common-styling-appearance-office2013-theme%})
+ * [Customize the VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})
+ * [Customize the Green Theme]({%slug common-styling-appearance-green-theme%})

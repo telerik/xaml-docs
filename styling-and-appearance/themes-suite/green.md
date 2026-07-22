@@ -475,7 +475,7 @@ __Merging the theme's ResourceDictionary in App.xaml__
 ```
 
 ## See Also
-* [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
-* [Office2013 Theme]({%slug common-styling-appearance-office2013-theme%})
-* [VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})
-* [Windows8 and Windows8Touch Colors and Fonts]({%slug common-styles-appearance-colorizing-metro-theme%})
+* [Apply a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Customize the Office2013 Theme]({%slug common-styling-appearance-office2013-theme%})
+* [Customize the VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})
+* [Customize Windows8 and Windows8Touch Theme Colors and Fonts]({%slug common-styles-appearance-colorizing-metro-theme%})

@@ -19,14 +19,14 @@ Before you configure the feed, confirm the following prerequisites:
 
 * You can create and run a standard WPF application in Visual Studio.
 * Your Telerik account has an active trial or commercial license for Telerik UI for WPF.
-* If you want to use the Telerik NuGet server, you have a Telerik NuGet API key from the [API Keys](https://www.telerik.com/account/downloads/api-keys) page.
+* If you want to use the Telerik NuGet server, you have a Telerik NuGet API key from the [Telerik account API key management page](https://www.telerik.com/account/downloads/api-keys).
 
 The Telerik packages can be accessed through two primary sources:
 
 * The online Telerik NuGet server.
 * A local package source containing downloaded `.nupkg` files.
 
-This article focuses on the Telerik NuGet server. For broader feed setup guidance, see [Use the Telerik NuGet server]({%slug nuget-package-source-setup%}).
+This article focuses on the Telerik NuGet server. For broader feed setup guidance, see [how to configure the Telerik NuGet package source]({%slug nuget-package-source-setup%}).
 
 >note Starting with **Q3 2026**, Telerik UI for WPF NuGet packages are also available on [NuGet.org](https://www.nuget.org/). If you install packages from NuGet.org, you do not need to authenticate against the Telerik NuGet server.
 
@@ -48,7 +48,7 @@ The easiest way to setup the Telerik package source is to use the [Telerik CLI](
 	telerik nuget config
 	```
 	
-If your prefer to avoid the Telerik CLI tool, you can manually setup the package source and enter your credentials as shown in the [Setting NuGet Pacakge Source]({%slug nuget-package-source-setup%}) article.
+If you prefer to avoid the Telerik CLI tool, you can manually setup the package source and enter your credentials as shown in the article about [manually configuring the Telerik NuGet package source]({%slug nuget-package-source-setup%}#telerik-nuget-server-manual-setup).
 
 ## Step 2: Install NuGet Packages
 
@@ -68,7 +68,7 @@ The following steps show how to search for and install Telerik packages from the
 
 Some packages depend on other Telerik assemblies, so NuGet installs those dependencies automatically when needed. For example, if your project uses `RadTabControl`, install `Telerik.Windows.Controls.Navigation` or `Telerik.Windows.Controls.Navigation.Xaml`, depending on whether the project uses NoXaml or Xaml packages.
 
->tip Read more about the package list in [Available NuGet Packages]({%slug nuget-available-packages%}) and the package type differences in [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}).
+>tip Read more about the package list in [the Telerik UI for WPF NuGet package catalog]({%slug nuget-available-packages%}) and the package type differences in [the Xaml vs. NoXaml package comparison]({%slug xaml-vs-noxaml%}).
 
 ## If You Created an Account but Still Cannot Log In
 
@@ -77,7 +77,7 @@ If you created a Telerik account and Visual Studio still cannot access the feed,
 * Make sure that you are using `api-key` as the user name instead of your Telerik account email.
 * Make sure that you are using a Telerik NuGet API key as the password instead of your Telerik account password.
 * Verify that the Telerik account has an active trial or commercial license for Telerik UI for WPF.
-* Generate a new API key from the [API Keys](https://www.telerik.com/account/downloads/api-keys) page and try again.
+* Generate a new API key from the [Telerik account API key management page](https://www.telerik.com/account/downloads/api-keys) and try again.
 * Confirm that the package source URL is exactly `https://nuget.telerik.com/v3/index.json`.
 
 If authentication still fails, download the `.nupkg` files and install them through a local package source.
@@ -94,6 +94,6 @@ If the project builds and the Telerik control renders correctly, the NuGet insta
 
 ## See Also
 
-* [Use the Telerik NuGet server]({%slug nuget-package-source-setup%})
-* [Available NuGet Packages]({%slug nuget-available-packages%})
-* [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
+* [Configure the Telerik NuGet Package Source]({%slug nuget-package-source-setup%})
+* [Review the Available Telerik UI for WPF NuGet Packages]({%slug nuget-available-packages%})
+* [Compare Xaml and NoXaml Package Options]({%slug xaml-vs-noxaml%})

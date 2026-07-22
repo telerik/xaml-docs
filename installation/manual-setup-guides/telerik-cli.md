@@ -33,7 +33,7 @@ The following table lists all Telerik CLI commands with their purpose and usage.
 
 ## How to Install the Telerik CLI
 
-The [Telerik CLI NuGet](https://www.nuget.org/packages/Telerik.CLI) package is hosted on `nuget.org`. 
+The [Telerik CLI NuGet package](https://www.nuget.org/packages/Telerik.CLI) is hosted on `nuget.org`. 
 
 To install the Telerik CLI .NET tool globally on your machine, run the following command in your preferred command shell:
 
@@ -62,7 +62,7 @@ To update to the latest version:
 dotnet tool update -g Telerik.CLI
 ```
 
->note The Telerik CLI requires .NET SDK 6.0 or later. Download the .NET SDK from <a href="https://dotnet.microsoft.com/download" target="_blank">the official .NET website</a>.
+>note The Telerik CLI requires .NET SDK 6.0 or later. Download the .NET SDK from <a href="https://dotnet.microsoft.com/download" target="_blank">the official .NET SDK download page</a>.
 
 ## Set Up Telerik Environment
 
@@ -154,7 +154,7 @@ telerik logout
 
 ## Get License Key
 
-To download or update your [Telerik license key]({%slug installing-license-key%}), use the `license get-key` command:
+To download or update your [Telerik UI for WPF license key file]({%slug installing-license-key%}), use the `license get-key` command:
 
 ```powershell
 telerik license get-key
@@ -217,7 +217,7 @@ Example output:
 
 ## Set Up Telerik NuGet Feed
 
-To [add the Telerik NuGet server to your package sources]({%slug nuget-package-source-setup%}), use the `nuget config` command:
+To [configure the Telerik NuGet server as a package source]({%slug nuget-package-source-setup%}), use the `nuget config` command:
 
 ```powershell
 telerik nuget config
@@ -271,6 +271,6 @@ The following table lists the requirements to run the Telerik CLI.
 
 ## See Also
 
-* [Set Up the Telerik NuGet Package Source]({%slug nuget-package-source-setup%})
-* [First Steps with Telerik UI for WPF]({%slug getting-started-first-steps%})
-* [Restoring NuGet Packages in Your CI Workflow]({%slug nuget-keys%})
+* [Set up the Telerik NuGet Package Source]({%slug nuget-package-source-setup%})
+* [Continue with the First Steps for Telerik UI for WPF]({%slug getting-started-first-steps%})
+* [Restore Telerik NuGet Packages in Your CI Workflow]({%slug nuget-keys%})

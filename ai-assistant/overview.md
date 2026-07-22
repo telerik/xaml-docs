@@ -9,7 +9,7 @@ position: 0
 
 # Telerik UI for WPF AI Coding Assistant
 
-The Telerik UI for WPF AI Coding Assistant is an AI-powered code generation tool available through the [Telerik WPF MCP Server]({%slug ai-mcp-server%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using [Telerik UI for WPF components](https://www.telerik.com/products/wpf/overview.aspx) and APIs.
+The Telerik UI for WPF AI Coding Assistant is an AI-powered code generation tool available through the [Telerik WPF MCP Server]({%slug ai-mcp-server%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using [the Telerik UI for WPF product suite](https://www.telerik.com/products/wpf/overview.aspx) and APIs.
 
 ## Available Tools
 
@@ -46,7 +46,7 @@ Consider the following recommendations when working with the AI Coding Assistant
 
 ## License Requirements
 
-Access to the Telerik UI for WPF AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
+Access to the Telerik UI for WPF AI Coding Assistant depends on your [Telerik licensing options and purchase terms](https://www.telerik.com/purchase/faq/licensing-purchasing):
 
 | License Type | AI Coding Assistant | Details |
 |---|---|---|
@@ -74,14 +74,14 @@ Data Usage:
 Data Storage:
 * Prompts and context are anonymized and stored only for statistical analysis and troubleshooting.
 * No association between prompts and your Telerik user account.
-* Usage metrics are collected to ensure [license compliance](#license-requirements).
+* Usage metrics are collected to ensure [license compliance for the AI Coding Assistant](#license-requirements).
 
 > Make sure also to review the terms and privacy policies of your selected AI model and AI client.
 
 ## Telerik Document Processing AI Coding Assistant
 
 You can also use the AI Coding Assistant for Telerik Document Processing to generate high-quality code samples and speed up your development.
-Read the full guide in the dedicated [DPL AI Coding Assistant article](https://docs.telerik.com/devtools/document-processing/ai-coding-assistant/overview). 
+Read the full guide in the dedicated [Telerik Document Processing AI Coding Assistant overview](https://docs.telerik.com/devtools/document-processing/ai-coding-assistant/overview). 
 
 ## Next Steps
 

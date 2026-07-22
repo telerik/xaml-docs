@@ -13,15 +13,15 @@ Telerik UI for WPF comes with several different packages that can be installed v
 
 >important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
 
-The Telerik dlls are built against different versions of .NET starting from .NET 4.6.2 to the latest official .NET. The dlls can be separated into two categories - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). This creates a rich set of assemblies that can be downloaded which are also available as nuget packages. 
+The Telerik dlls are built against different versions of .NET starting from .NET 4.6.2 to the latest official .NET. The dlls can be separated into two categories - [Xaml and NoXaml build variants]({%slug xaml-vs-noxaml%}). This creates a rich set of assemblies that can be downloaded which are also available as nuget packages. 
 
-The packages can be installed from the the [online Telerik package source]({%slug nuget-package-source-setup%}) or downloaded as `.nupkg` files which can be used to [setup a local package source]({%slug nuget-package-source-setup%}). These two different options contain a slightly different set of packages. This article aims to list and describe the packages.
+The packages can be installed from the [Telerik NuGet server]({%slug nuget-package-source-setup%}) or downloaded as `.nupkg` files, which you can use to [configure a local NuGet package source]({%slug nuget-package-source-setup%}). These two different options contain a slightly different set of packages. This article aims to list and describe the packages.
 	
 ## Telerik NuGet Server Packages
 
 >important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
 
-There is an [online package source]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to [local](#nuget-local-packages) ones. 
+There is a [configured Telerik NuGet feed]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to the [locally hosted NuGet packages](#nuget-local-packages).
 
 ### Full Packages (Server)
 
@@ -46,7 +46,7 @@ The __oldest nuget package__ that can be found in the __Telerik NuGet Feed__ is 
 	
 ## NuGet Local Packages
 
-The Telerik UI for WPF product provides `.nupkg` files that can be downloaded from [your telerik.com account](https://www.telerik.com/account/product-download?product=RCWPF). The download page has the following .zip files.
+The Telerik UI for WPF product provides `.nupkg` files that you can download from the [Telerik UI for WPF product download page](https://www.telerik.com/account/product-download?product=RCWPF). That download page includes the following `.zip` files.
 
 ### Full Packages (Local)
 
@@ -91,6 +91,6 @@ For releases __prior to Q2 2026__, localization assemblies are distributed as se
 * `Telerik.Windows.Controls.for.Wpf.es` (Spanish)
 * etc.
 
->tip To enable localization in your project, ensure the satellite assemblies are deployed alongside the main Telerik assemblies. For more information, see the [Localization]({%slug common-localization%}) article.
+>tip To enable localization in your project, ensure the satellite assemblies are deployed alongside the main Telerik assemblies. For more information, see the guide on [localizing Telerik UI for WPF controls]({%slug common-localization%}).
 
 

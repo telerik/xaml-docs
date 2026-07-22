@@ -324,7 +324,7 @@ __Setting FontSize and FontFamily__
 
 The VisualStudio2019 theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
 
-> You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
+> You can read more about the RadGlyph in the [RadGlyph overview for WPF]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Telerik font glyph reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
 ## Using Theme Helper
 
@@ -375,7 +375,7 @@ __Merging the theme's ResourceDictionary in App.xaml__
 ```
 
 ## See Also  
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})
- * [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%})
- * [VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})
+ * [Apply a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Configure WPF Themes with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%})
+ * [Use Telerik Font Glyphs in WPF]({%slug common-styling-appearance-glyphs-overview%})
+ * [Customize the VisualStudio2013 Theme]({%slug common-styling-appearance-visualstudio2013-theme%})

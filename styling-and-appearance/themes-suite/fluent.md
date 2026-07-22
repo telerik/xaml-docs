@@ -293,7 +293,7 @@ With the Fluent Theme we are introducting a `ThemeEffectsHelper` static class th
 >important The acrylic effect is __disabled__ for windows which have their `CornerRadius` property set.
 
 > `ThemeEffectsHelper.IsAcrylicEnabled` is used to turn off globally the setting of the effect and set opaque backgrounds in our controls. You can detect the version of the OS that the application is currently running and disable the effect for versions prior to `Windows 10`. For more information about achieving that you can review the following MSDN articles: 
-[Operating System Version](https://msdn.microsoft.com/library/windows/desktop/ms724832.aspx) and [Targeting your application for Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/dn481241.aspx) (if the application is not targeting Windows 10, the version number returned would be always 6.2)
+[Windows operating system version reference](https://msdn.microsoft.com/library/windows/desktop/ms724832.aspx) and [Windows application targeting guidance](https://msdn.microsoft.com/en-us/library/windows/desktop/dn481241.aspx) (if the application is not targeting Windows 10, the version number returned would be always 6.2)
 
 >important Applying the `ThemeEffectsHelper.IsAcrylic` to a control could result in unexpected visual issues.
 
@@ -460,8 +460,8 @@ __Merging the theme's ResourceDictionary in App.xaml__
 ```
 
 ## See Also  
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})
- * [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%})
- * [Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
- * [Material Theme]({%slug common-styling-appearance-material-theme%})
+ * [Apply the Fluent Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Configure WPF Themes with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%})
+ * [Use Telerik Font Glyphs in WPF]({%slug common-styling-appearance-glyphs-overview%})
+ * [Customize the Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
+ * [Customize the Material Theme]({%slug common-styling-appearance-material-theme%})

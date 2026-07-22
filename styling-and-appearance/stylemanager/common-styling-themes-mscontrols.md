@@ -56,5 +56,5 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
 ```
 
 ## See Also  
- * [Setting a Theme on MS Controls using Implicit Styles]({%slug styling-apperance-themes-mscontrols%})
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
+ * [Apply Telerik Themes to Native WPF Controls with Implicit Styles]({%slug styling-apperance-themes-mscontrols%})
+ * [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

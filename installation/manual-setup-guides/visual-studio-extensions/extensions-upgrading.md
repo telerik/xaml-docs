@@ -54,5 +54,5 @@ The next screen allows you to update the Visual Studio Toolbox with the newly se
 * The Upgrade Wizard won't work if the Telerik assemblies are installed with a NuGet package. In this case, you can [update the package via the NuGet Package Manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#update-a-package).
 
 ## See Also  
- * [Configure Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
- * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Configure a Telerik UI for WPF Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})
+ * [Download the Latest Telerik UI for WPF Release]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})

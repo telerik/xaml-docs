@@ -45,7 +45,7 @@ __Example 2: Use the RadGlyph markup extension__
 
 ![The C# RadGlyph](images/radglyph-1.png)
 
-> In order to use the glyph references (such as **GlyphCs** in **Example 2**) as static resources in a project, you need to include the **Telerik.Windows.Controls.dll** and merge the **FontResources.xaml** dictionary in the application resources as demonstrated in **Example 3**. A list of the available glyphs and their resource keys can be found in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
+> In order to use the glyph references (such as **GlyphCs** in **Example 2**) as static resources in a project, you need to include the **Telerik.Windows.Controls.dll** and merge the **FontResources.xaml** dictionary in the application resources as demonstrated in **Example 3**. A list of the available glyphs and their resource keys can be found in the [Telerik UI for WPF glyph reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
 __Example 3: Adding the FontResources.xaml dictionary__
 ```XAML
@@ -90,7 +90,7 @@ The **RadGlyphExtension** cannot be set inline to the **Value** property of a St
 
 ## Fonts
 
-The default font family used by the glyphs is the **TelerikWebUI**. A list of the available glyphs can be found in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
+The default font family used by the glyphs is the **TelerikWebUI**. A list of the available glyphs can be found in the [Telerik UI for WPF glyph reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
 Another font that comes out of the box **since the R2 2022 release** is the **TelerikFluentIcons** which contains a similar set of icons as the **TelerikWebUI** but with different visual appearance.
 
@@ -221,5 +221,5 @@ __Example 11: Provide ImageSource for RadTreeView items__
 
 ## See Also
 
-* [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
-* [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%})
+* [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Browse the Telerik UI for WPF Glyph Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%})

@@ -23,7 +23,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 ## Generating NuGet Keys
 
-1. Go to the [**Manage NuGet Keys**](https://www.telerik.com/account/downloads/nuget-keys) page in your Telerik account.
+1. Go to the [Telerik account page for managing NuGet keys](https://www.telerik.com/account/downloads/nuget-keys).
 
 1. Select the **DOWNLOADS** tab and then **Manage NuGet Keys**.
 
@@ -51,7 +51,7 @@ To protect the NuGet Key, store it as a secret environment variable. The exact s
 
 If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username filed and the NuGet Key as the password in the **New NuGet service connection** form editor.
 
-For more details on storing and protecting your NuGet Key, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
+For more details on storing and protecting your NuGet Key, read Lance McCarthy's blog post on [using Telerik NuGet keys for secure package restores](https://www.telerik.com/blogs/announcing-nuget-keys).
 
 ## Using a NuGet Key
 
@@ -61,7 +61,7 @@ There are two popular ways to use the Telerik NuGet server in a build:
 
 * [Using only CLI commands](#using-only-cli-commands)
 
-For more information on how to use NuGet keys in a build, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
+For more information on how to use NuGet keys in a build, read Lance McCarthy's guide to [configure Telerik NuGet key authentication in build pipelines](https://www.telerik.com/blogs/announcing-nuget-keys).
 
 ### Using a nuget.config File with Your Projects
 
@@ -87,7 +87,7 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
 
 1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
 
-The exact steps to set the `MY_API_KEY` environment variable depend on your workflow. For more details, refer to the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
+The exact steps to set the `MY_API_KEY` environment variable depend on your workflow. For more details, refer to Lance McCarthy's article on [setting up Telerik NuGet keys in CI environments](https://www.telerik.com/blogs/announcing-nuget-keys).
 
 ### Using Only CLI Commands
 
@@ -109,6 +109,6 @@ You can use the CLI `add source` (or `update source`) command to set the credent
 
 If you just start using the Telerik NuGet server in your CI or inter-department workflows, check the two blog posts below. You will learn about the various use cases and find practical implementation details.
 
-* [Azure DevOps and Telerik NuGet Packages](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages)
+* [Use Telerik NuGet Packages in Azure DevOps Pipelines](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages)
 
-* [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys)
+* [Understand Telerik NuGet Key Authentication and Usage](https://www.telerik.com/blogs/announcing-nuget-keys)

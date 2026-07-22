@@ -10,9 +10,9 @@ position: 0
 
 # Setting a Theme with Telerik UI for {{ site.framework_name }}
 
->tip Before you proceed reading this topic we recommend you read the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) article.
+>tip Before you proceed reading this topic we recommend you read the [Xaml vs. NoXaml packaging overview]({%slug xaml-vs-noxaml%}).
 
-The __Telerik UI for {{ site.framework_name }}__ suite provides a [variety of themes]({%slug common-styling-appearance-available-themes%}) that will help you achieve outstanding visual appearance and great user experience. Before choosing what theme to apply you might find it useful to familiarize with the [themes concept](#what-is-a-theme) and the difference between Xaml and NoXaml.
+The __Telerik UI for {{ site.framework_name }}__ suite provides a [variety of built-in Telerik themes]({%slug common-styling-appearance-available-themes%}) that will help you achieve outstanding visual appearance and great user experience. Before choosing what theme to apply you might find it useful to familiarize with the [themes concept](#what-is-a-theme) and the difference between Xaml and NoXaml.
 
 ## What is a Theme?
 
@@ -78,7 +78,7 @@ To change the theme you will need to take the following few steps.
 
 <!-- -->
 
->important Keep in mind that, when creating custom controls or styles based on Telerik controls you will need to use their base styles. Read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
+>important Keep in mind that, when creating custom controls or styles based on Telerik controls you will need to use their base styles. Read more about this in the [guide to styling Telerik controls with NoXaml]({%slug implicit-styles-styling-the-controls%}).
 
 ### How to get the .xaml files required for merging
 
@@ -121,7 +121,7 @@ __The MergedDictionaries in your application resources__
 
 ## Setting a Theme Using StyleManager
 
-> Switching the theme at runtime when using `StyleManager` is not supported. To enable this feature, use the [NoXaml dlls and Implicit Styles](#setting-a-theme-using-implicit-styles) theming. Read more in the [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%}) article.
+> Switching the theme at runtime when using `StyleManager` is not supported. To enable this feature, use the [NoXaml dlls and implicit styles theming approach](#setting-a-theme-using-implicit-styles). Read more in the [switch themes at runtime guide]({%slug styling-apperance-themes-runtime%}).
 
 StyleManager is used when working with the standard (Xaml) dlls. The StyleManager is a class that applies different styles on the Telerik controls based on the set theme. It allows you to set the theme on a control level and on application level.
 
@@ -154,7 +154,7 @@ To change the theme via the StyleManager you will need to take the following few
 		InitializeComponent()
 	```
 
-Read more about this approach in the {% if site.site_name == 'Silverlight' %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% else %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% endif %} help section.
+Read more about this approach in the {% if site.site_name == 'Silverlight' %}[StyleManager theming guide]({%slug common-styling-apperance-setting-theme%}){% else %}[StyleManager theming guide for Telerik UI for WPF]({%slug common-styling-apperance-setting-theme-wpf%}){% endif %}.
 
 >caution Merging theme resource dictionaries when using StyleManager (mixing implicit styles theming and StyleManager) is not supported. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
 
@@ -177,13 +177,13 @@ To see which themes support more than one color variation please check the [Avai
 
 ## Does a Theme Affect All {{ site.framework_name }} Controls?
 
-All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {{ site.framework_name }}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%}) article.
+All Themes are specifically designed to style **Telerik** controls. However, there are some **native Microsoft {{ site.framework_name }}** controls which are affected by the theming mechanism as well. You can find a list of these controls in the [guide to applying Telerik themes to native WPF controls]({%slug styling-apperance-themes-mscontrols%}).
 
 ## See Also  
-* [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
-* [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%})
-* [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
-* [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
-* [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
-* [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
+* [Style Telerik Controls with NoXaml Base Styles]({%slug implicit-styles-styling-the-controls%})
+* [Switch Themes at Runtime]({%slug styling-apperance-themes-runtime%})
+* [Switch Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
+* [Switch Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
+* [Compare Xaml and NoXaml Packaging Options]({%slug xaml-vs-noxaml%})
+* [Review Telerik UI for WPF Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
 

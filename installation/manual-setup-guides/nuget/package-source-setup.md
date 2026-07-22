@@ -9,11 +9,11 @@ position: 1
 
 # Setting NuGet Package Source
 
-The Telerik NuGet packages are available as `.nupkg` files that can be downloaded in a local package source, and also can be installed from the online Telerik NuGet server. 
+The Telerik NuGet packages are available as `.nupkg` files that can be downloaded into a local package source, and they can also be installed from the online Telerik NuGet server. 
 
 ## Telerik NuGet Server - Telerik CLI Setup
 
-The easiest way to setup the Telerik package source is to use the [Telerik CLI]({%slug telerik-cli%}) tool.
+The easiest way to setup the Telerik package source is to use the [Telerik CLI setup tool]({%slug telerik-cli%}).
 
 1. Open any command line terminal.
 
@@ -37,7 +37,7 @@ The Telerik server is an online package source that can be accessed through Visu
 
 As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password.
 
-1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
+1. Go to the [Telerik account API key management page](https://www.telerik.com/account/downloads/api-keys).
 1. Click Generate New Key +.
 
 	![Generate New Key + Button](images/nuget-package-source-setup-1.png)
@@ -76,9 +76,9 @@ Use the following values:
 * **User name**: `api-key`
 * **Password**: Your Telerik NuGet API key
 
-Generate the key from the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
+Generate the key from the [Telerik account API key management page](https://www.telerik.com/account/downloads/api-keys).
 
->warning If [single sign-on](https://www.telerik.com/blogs/sso-telerik-kendo-ui-simpler-more-secure-access-account) (SSO) is enabled for your Telerik account, do not enter your Telerik account email and password in this prompt. Even if you use SSO to sign in to telerik.com, Visual Studio still requires `api-key` as the user name and a Telerik NuGet API key as the password for Telerik NuGet feed access. The account must also have an active trial or commercial license.
+>warning If [single sign-on for Telerik accounts](https://www.telerik.com/blogs/sso-telerik-kendo-ui-simpler-more-secure-access-account) (SSO) is enabled for your Telerik account, do not enter your Telerik account email and password in this prompt. Even if you use SSO to sign in to telerik.com, Visual Studio requires `api-key` as the user name and a Telerik NuGet API key as the password for Telerik NuGet feed access. The account must also have an active trial or commercial license.
 
 ### Reset Stored Credentials
 
@@ -92,7 +92,7 @@ If you previously stored credentials for the Telerik NuGet server, you need to r
    * [dotnet nuget remove source](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-remove-source)
 
 1. Check if you have any credentials stored in `%AppData%\NuGet\Nuget.Config`. If so, remove them.
-1. Try to reset the Visual Studio user data by [forcing NuGet to ask for authentication](https://stackoverflow.com/questions/43550797/how-to-force-nuget-to-ask-for-authentication-when-connecting-to-a-private-feed).
+1. Try to reset the Visual Studio user data by [forcing NuGet to request authentication again](https://stackoverflow.com/questions/43550797/how-to-force-nuget-to-ask-for-authentication-when-connecting-to-a-private-feed).
 1. Restart Visual Studio.
 1. Add the Telerik NuGet package source again through Visual Studio or .NET CLI.
 
@@ -100,10 +100,10 @@ If you previously stored credentials for the Telerik NuGet server, you need to r
 
 The Telerik packages are available as `.nupkg` files that can be downloaded from your telerik.com account. The following steps describe what to download and how to setup the package source:
 
-1. Go to the [UI for WPF Downloads](https://www.telerik.com/account/product-download?product=RCWPF) page.
+1. Go to the [Telerik UI for WPF download page](https://www.telerik.com/account/product-download?product=RCWPF).
 1. Download the .zip file with the NuGet packages and extract it into the folder where your package source will be hosted.
 
-	You will find 4 .zip files with nuget packages on the download page. These contains two different package types (full and separate) each containing two different types of Telerik dlls ([Xaml and NoXaml]({%slug xaml-vs-noxaml%})).
+	You will find 4 .zip files with nuget packages on the download page. These contain two different package types (full and separate), each containing two different types of Telerik dlls ([Xaml and NoXaml build types]({%slug xaml-vs-noxaml%})).
 	
 	* `Telerik_UI_for_WPF_{version}_Dev_NuGet_{Xaml/NoXaml}.zip` are available for the supported .NET versions and combine all UI for WPF assemblies in one NuGet.
 	
@@ -135,15 +135,15 @@ Once you created the package source as described in the previous sections of thi
 
 1. Search and install a package.
 
-Selecting the Telerik's source as the __Package source__ in Visual Studio will prompt you to enter your __telerik.com credentials__ (email and password).
+Selecting the Telerik source as the __Package source__ in Visual Studio will prompt you to enter your Telerik NuGet feed credentials.
 
 ## Additional Resources
 
-* The following blog shows how to create a private NuGet Feed and deploy the Telerik NuGet packages there: http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget.
+* The following blog shows how to [create a private NuGet feed for Telerik packages](http://blogs.telerik.com/careypayette/posts/13-03-11/power-your-projects-with-telerik---now-with-the-convenience-of-nuget).
 
 * The following video demonstrates how to add the Telerik NuGet Feed to your NuGet Package Sources:
 
 	<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
 
 ## See Also  
-* [Available NuGet Packages]({%slug nuget-available-packages%})
+* [Review the Available Telerik UI for WPF NuGet Packages]({%slug nuget-available-packages%})

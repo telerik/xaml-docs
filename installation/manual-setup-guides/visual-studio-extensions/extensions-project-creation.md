@@ -29,7 +29,7 @@ The fastest way to have such a project is by using the Progress Telerik UI for W
 	
 	![{{ site.framework_name }} Configure your new project menu](images/radcontrols-for-wpf-vs-extensions-project-creation-2.png)
 	
-4. In the __Create New Project Wizard__ select the project template you want to use. The wizard allows you to define a blank project with only the `Telerik.Windows.Controls.dll` referenced, or to use one of the [Office-inspired templates]({%slug visual-studio-templates%}) (Calendar, Word-Inspired, etc.). 
+4. In the __Create New Project Wizard__ select the project template you want to use. The wizard allows you to define a blank project with only the `Telerik.Windows.Controls.dll` referenced, or to use one of the [Office-inspired Visual Studio templates for Telerik UI for WPF]({%slug visual-studio-templates%}) (Calendar, Word-Inspired, etc.). 
 	
 	__.{{ site.minimum_net_core_version }} and later project creation wizard__  
 	
@@ -41,7 +41,7 @@ The fastest way to have such a project is by using the Progress Telerik UI for W
 	
 	![{{ site.framework_name }} Create New Project Wizard - NuGet options](images/radcontrols-for-wpf-vs-extensions-project-creation-4.png)
 
-5. The wizard validates your Telerik UI for WPF license and lets you download a new [license key file](%slug installing-license-key%) if one such is not found.
+5. The wizard validates your Telerik UI for WPF license and lets you download a new [Telerik UI for WPF license key file]({%slug installing-license-key%}) if one such is not found.
 
 	![Create New Project Wizard license key validation error](images/radcontrols-for-wpf-vs-extensions-project-creation-6.png)
 
@@ -53,9 +53,9 @@ __Visual Studio New Project Wizard__
 
 >tip The __Create New Project Wizard__ allows you to download a Telerik version that is not available on your machine.
 
-> If you prefer the Telerik assemblies to be copied into your solution folder, the **Copy referenced assemblies to solution and source control** option could be selected only into the [Visual Studio Extensions Options]({%slug radcontrols-vs-extensions-options%}).
+> If you prefer the Telerik assemblies to be copied into your solution folder, the **Copy referenced assemblies to solution and source control** option could be selected only into the [Telerik Visual Studio extension options dialog]({%slug radcontrols-vs-extensions-options%}).
 
 ## See Also 
- * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
- * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
- * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
+ * [Upgrade an Existing Telerik UI for WPF Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
+ * [Download the Latest Telerik UI for WPF Release]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

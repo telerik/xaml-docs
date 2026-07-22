@@ -14,7 +14,7 @@ The easiest way to install the Telerik UI for WPF product is to use the [Telerik
 
 ## Setup Development Environment
 
-To setup the environment needed to start development with Telerik UI for WPF you can install the Telerik CLI tool and all the `setup` command. This will log you into your Telerik account, download [license key]({%slug installing-license-key%}) and setup the [Telerik NuGet package source]({%slug nuget-package-source-setup%}).
+To set up the environment needed to start development with Telerik UI for WPF, install the Telerik CLI tool and run the `setup` command. This will log you into your Telerik account, download the [Telerik UI for WPF license key file]({%slug installing-license-key%}), and set up the [Telerik NuGet package source]({%slug nuget-package-source-setup%}).
 
 1. Open any terminal and install the Telerik CLI.
 
@@ -60,12 +60,12 @@ telerik nuget config
 
 The __recommended installation approach__ is using __Telerik CLI__ and __NuGet packages__, as it is easier to use and maintain. In addition to that, Telerik distributes several more of installation options. 
 
-* [NuGet]({%slug installation-guide%}#tab-1-nuget-installation)
+* [Install Telerik UI for WPF from NuGet packages]({%slug installation-guide%}#tab-1-nuget-installation)
 
-* [MSI installer]({%slug installation-guide%}#tab-2-msi-installation)
+* [Install Telerik UI for WPF with the MSI installer]({%slug installation-guide%}#tab-2-msi-installation)
 
-* [ZIP file]({%slug installation-guide%}#tab-3-zip-installation)
+* [Install Telerik UI for WPF from the ZIP distribution]({%slug installation-guide%}#tab-3-zip-installation)
 
-* [Visual Studio Extension]({%slug installation-guide%}#tab-4-vsx-installation)
+* [Set up Telerik UI for WPF with the Visual Studio extension]({%slug installation-guide%}#tab-4-vsx-installation)
 
-* [Progress Control Panel]({%slug installation-guide%}#tab-5-progress-control-panel)
+* [Manage Telerik UI for WPF through Progress Control Panel]({%slug installation-guide%}#tab-5-progress-control-panel)

@@ -25,7 +25,7 @@ The easiest way to install and configure the Telerik WPF MCP Server is through t
 telerik mcp config wpf
 ```
 
-This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config wpf --ide vscode`). For more details, see [Telerik CLI - Install WPF MCP Server]({%slug telerik-cli%}#install-wpf-mcp-server).
+This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config wpf --ide vscode`). For more details, see [how to install the WPF MCP server with Telerik CLI]({%slug telerik-cli%}#install-wpf-mcp-server).
 
 ## Install with .NET CLI Commands
 
@@ -42,7 +42,7 @@ Common requirements:
 
 * An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports MCP tools (latest version recommended).
 * A WPF project targeting `net10.0-windows` (recommended), `net8.0-windows` or `net9.0-windows`
-* A valid [Telerik license key]({%slug installing-license-key%}).
+* A valid [Telerik UI for WPF license key file]({%slug installing-license-key%}).
 
 ## Summary of Installation Approaches
 
@@ -156,7 +156,7 @@ Add a `.mcp.json` file to your solution (root) folder. Choose the variant that m
 
 You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (see License Configuration section below for details and recommendations). The `inputs` array is optional and not required for current functionality.
 
-After saving the file, restart Visual Studio and enable the `telerik-wpf-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+After saving the file, restart Visual Studio and enable the `telerik-wpf-assistant` tool in the [Visual Studio Copilot Chat tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 ![Telerik UI for WPF AI Assistant MCP server setup in Visual Studio Copilot Chat tool selection](images/ai-mcp-server-0.png)
 
@@ -174,11 +174,11 @@ The `Configure MCP Server Globally` option creates (or updates if existing) the 
 
 The `Configure MCP Server for Solution` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) the  `.mcp.json` file in the solution directory.
 
-The `Add/Update GitHub Copilot Instructions` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) an [copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=visualstudio) file in the `.github\` folder of the solution (`\SolutionDir\.github\copilot-instructions.md`), which includes extra context that is automatically used with the prompt given to the Copilot chat in Visual Studio.
+The `Add/Update GitHub Copilot Instructions` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) a [repository `copilot-instructions.md` file for Visual Studio](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=visualstudio) in the `.github\` folder of the solution (`\SolutionDir\.github\copilot-instructions.md`), which includes extra context that is automatically used with the prompt given to the Copilot chat in Visual Studio.
 
 ## License Configuration
 
-Add your [Telerik license key]({%slug installing-license-key%}) using one of these options in the `env` section.
+Add your [Telerik UI for WPF license key file]({%slug installing-license-key%}) using one of these options in the `env` section.
 
 __Option 1: License File Path (Recommended)__
 
@@ -200,11 +200,11 @@ __Option 2: Direct License Key__
 }
 ```
 
-> Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your license key]({%slug installing-license-key%}#updating-your-license-key) when necessary.
+> Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your Telerik UI for WPF license key]({%slug installing-license-key%}#updating-your-license-key) when necessary.
 
 ## Visual Studio Usage
 
-For complete setup instructions, see [Use MCP servers in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers).
+For complete setup instructions, see [Microsoft's guide to using MCP servers in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers).
 
 After configuration and restart:
 
@@ -263,7 +263,7 @@ Examples you can try:
 ### Improving Server Usage
 
 To increase the likelihood of the Telerik MCP server being used, add custom instructions to your AI tool:
-- [GitHub Copilot custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot#about-repository-custom-instructions-for-github-copilot-chat)
+- [GitHub Copilot repository custom instructions guide](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot#about-repository-custom-instructions-for-github-copilot-chat)
 
 ## Number of Requests
 
@@ -273,8 +273,8 @@ To increase the likelihood of the Telerik MCP server being used, add custom inst
 
 You can use the Telerik WPF MCP server with local large language models (LLMs):
 
-1. Run a local model, for example, through [Ollama](https://ollama.com).
-2. Use a bridge package like [MCP-LLM Bridge](https://github.com/patruff/ollama-mcp-bridge).
+1. Run a local model, for example, through [the Ollama local LLM runtime](https://ollama.com).
+2. Use a bridge package like [the MCP-LLM Bridge project for Ollama](https://github.com/patruff/ollama-mcp-bridge).
 3. Connect your local model to the Telerik MCP server.
 
 This setup allows you to use the Telerik AI Coding Assistant without cloud-based AI models.

@@ -10,7 +10,7 @@ position: 1
 
 # Switching Themes at Runtime
 
->Before proceeding with this tutorial, please first read the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) help article.
+>Before proceeding with this tutorial, please first read the [guide to setting a theme with implicit styles]({%slug styling-apperance-implicit-styles-overview%}).
 
 By utilizing the theming mechanism with implicit styles, you can change the theme of Telerik UI for {{ site.framework_name }} controls at runtime without recreating the UI. All you need to do is remove the current merged dictionaries and then add the merged dictionaries of another theme to your application resources in code-behind:
 
@@ -128,8 +128,8 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 ## See Also
 
-* [Switching Theme Color Variation at Runtime]({%slug kb-theming-change-theme-variation-runtime%})
-* [Switching Themes at Design-time]({%slug styling-apperance-swiching-themes-design-time%})
-* [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
-* [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%})
-* [Switching Icons at Runtime]({%slug styling-apperance-switching-icons-at-runtime%})
+* [Switch Theme Color Variations at Runtime]({%slug kb-theming-change-theme-variation-runtime%})
+* [Switch Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
+* [Switch Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
+* [Apply Telerik Themes to Native WPF Controls]({%slug styling-apperance-themes-mscontrols%})
+* [Switch Icons at Runtime]({%slug styling-apperance-switching-icons-at-runtime%})

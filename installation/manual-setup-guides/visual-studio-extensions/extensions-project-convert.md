@@ -34,7 +34,7 @@ The wizard’s first page lets you:
 
 * Specify which assemblies your project would use. When selecting a Telerik UI for WPF assembly all dependent controls are selected automatically and vice-versa.
 
-If you prefer the Telerik assemblies to be copied into your solution folder, the **Copy referenced assemblies to solution and source control** option could be selected *only* into the [Visual Studio Extensions Options]({%slug radcontrols-vs-extensions-options%}).
+If you prefer the Telerik assemblies to be copied into your solution folder, the **Copy referenced assemblies to solution and source control** option could be selected *only* into the [Telerik Visual Studio extension options dialog]({%slug radcontrols-vs-extensions-options%}).
   
 The Convert Project Wizard’s second page is only available if you use theming based on [implicit styles]({%slug styling-apperance-implicit-styles-overview%}). 
 
@@ -47,6 +47,6 @@ The second page of the Convert Project Wizard’s lets you select which theme wi
 When converting a project from [XAML to NoXAML]({%slug xaml-vs-noxaml%}) (or vice-versa), you need first to remove all __Telerik__ references from the project. Then you can right-click on the project and launch the Convert Wizard. The final step is to select the assemblies that you need in your project.
 
 ## See Also  
- * [Upgrade Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
- * [Download New Version]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
- * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
+ * [Upgrade an Existing Telerik UI for WPF Project]({%slug radcontrols-for-wpf-vs-extensions-upgrading%})
+ * [Download the Latest Telerik UI for WPF Release]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})
+ * [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

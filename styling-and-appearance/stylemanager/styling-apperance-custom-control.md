@@ -42,4 +42,4 @@ Lets say you have a custom control that inherits from **ScrollViewer**. The snip
 ```
 
 ## See Also
-* [Use StyleManager to Apply Theme on MS Controls]({%slug common-styling-themes-mscontrols%})
+* [Use StyleManager to Apply Theme on Native WPF Controls]({%slug common-styling-themes-mscontrols%})

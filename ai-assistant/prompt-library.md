@@ -15,18 +15,18 @@ This collection of prompts is not exhaustive and the Telerik UI for WPF team is 
 
 ## How to Use the Prompts
 
-All prompts in this library target the [MCP Server]({%slug ai-mcp-server%}) via the `#telerikwpf` handle. Make sure that you have installed and enabled the MCP Server before attempting to run the prompts.
+All prompts in this library target the [Telerik WPF MCP server]({%slug ai-mcp-server%}) via the `#telerikwpf` handle. Make sure that you have installed and enabled the MCP server before attempting to run the prompts.
 
 1. Browse the prompt library to find a prompt that suits your needs.
 2. Copy the prompt text (including the `#telerikwpf` handle).
 3. (Optional) Customize the prompt as needed for your specific use case but keep the `#telerikwpf` handle.<br/>When modifying the prompts, make sure the changes comply with the [recommendations]({%slug ai-overview%}#recommendations) for the AI Coding Assistant.
-4. Run the prompt against the [MCP Server]({%slug ai-mcp-server%}).
+4. Run the prompt against the [Telerik WPF MCP server]({%slug ai-mcp-server%}).
 
 >Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
 
 ## Component Specific Prompts
 
-This section provides prompt ideas for the [currently supported components]({%slug ai-overview%}#supported-components).
+This section provides prompt ideas for the [currently supported Telerik UI for WPF components]({%slug ai-overview%}#supported-components).
 
 ### ListBox
 

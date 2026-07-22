@@ -42,7 +42,7 @@ To manually add Telerik UI for WPF to the Visual Studio Toolbox, follow the step
 
 	![Common Installing Adding ToVS 2015 Tool Box 050 WPF](images/Common_InstallingAddingToVS2015ToolBox_05.png)
 
-	>If you wonder which control belongs to which assembly, take a look at the main topic about [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}).
+	>If you wonder which control belongs to which assembly, take a look at the main topic about [Telerik UI for WPF control-to-assembly dependencies]({%slug installation-installing-controls-dependencies-wpf%}).
 
 * Press OK to include the controls in your toolbox or filter the controls you want to add.
 
@@ -57,5 +57,5 @@ To manually add Telerik UI for WPF to the Visual Studio Toolbox, follow the step
 ![Common Installing Adding ToVS 2015 Tool Box 080 WPF](images/Common_InstallingAddingToVS2015ToolBox_08.png)
 
 ## See Also  
- * [Namespace Declaration]({%slug installation-guide%}) 
+ * [Configure Namespace Declarations for Telerik UI for WPF]({%slug installation-guide%}) 
 

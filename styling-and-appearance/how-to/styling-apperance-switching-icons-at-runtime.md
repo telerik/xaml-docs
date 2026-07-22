@@ -96,7 +96,7 @@ __Figure 2__ shows the result after the code in __Example 4__ is executed.
 ![Image After Changing the IconSet](images/Switching_Icons_Runtime_02.png)
 
 
->tipYou can find the complete code of the previous example in our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Common).
+>tip You can find the complete code of the previous example in our online [Telerik XAML SDK Common samples repository](https://github.com/telerik/xaml-sdk/tree/master/Common).
 
 
 ## Available Icon Sets
@@ -142,13 +142,13 @@ Changing the icon set used in the application with the code from __Example 4__ w
 ![Images After Changing the IconSet](images/Switching_Icons_Runtime_04.png)
 
 
->tipYou can find the complete code of the previous example in our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Common).
+>tip You can find the complete code of the previous example in our online [Telerik XAML SDK Common samples repository](https://github.com/telerik/xaml-sdk/tree/master/Common).
 
 
 
 ## See Also
 
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [RadPdfViewer IconSource]({%slug radpdfviewer-ui-switching-icons-at-runtime%})
-* [RadSpreadsheet IconSource]({%slug radspreadsheet-howto-switching-icons-at-runtime%})
-* [RadRichTextBox IconSource]({%slug radrichtextbox-how-to-switching-icons-at-runtime%}) 
+* [Set a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Switch RadPdfViewer Icons at Runtime]({%slug radpdfviewer-ui-switching-icons-at-runtime%})
+* [Switch RadSpreadsheet Icons at Runtime]({%slug radspreadsheet-howto-switching-icons-at-runtime%})
+* [Switch RadRichTextBox Icons at Runtime]({%slug radrichtextbox-how-to-switching-icons-at-runtime%}) 

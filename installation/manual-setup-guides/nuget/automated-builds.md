@@ -25,8 +25,8 @@ You must protect your credentials and/or the Telerik packages and ensure they ar
 
 When using Azure pipelines, we encourage you to review the following resources on setting things up:
 
-* Blog post: [Azure DevOps and Telerik NuGet Packages](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages)
-* Sample Repo and Video Tutorial: [Telerik DevOpsExamples by LanceMcCarthy](https://github.com/LanceMcCarthy/DevOpsExamples)
+* Blog post: [Use Telerik NuGet Packages in Azure DevOps Pipelines](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages)
+* Sample repo and video tutorial: [Telerik DevOpsExamples GitHub repository by Lance McCarthy](https://github.com/LanceMcCarthy/DevOpsExamples)
 
 There are a couple of common questions and issues:
 
@@ -42,13 +42,13 @@ A few things to double check to ensure correct setup:
 * The Service connection is using Basic Authentication and the URL is correct (`https://nuget.telerik.com/nuget` exactly, no trailing slash).
 * That Service Connection is selected as the credentials source.
 * The credentials being used have a UI for WPF license.
-* Make sure that you use the correct restore command (`dotnet restore` for .NET Core and .NET5 or `nuget restore` for msbuild+msbuild) in your pipeline step. See the [DevOpsExamples repo by Lance McCarthy](https://github.com/LanceMcCarthy/DevOpsExamples) for live examples.
+* Make sure that you use the correct restore command (`dotnet restore` for .NET Core and .NET5 or `nuget restore` for msbuild+msbuild) in your pipeline step. See the [DevOpsExamples GitHub repository by Lance McCarthy](https://github.com/LanceMcCarthy/DevOpsExamples) for live examples.
 
 ## GitHub Secrets
 
 In some cases, [GitHub Secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) are used to store credentials that you would later have to consume from the `nuget.config` file in order to connect to the Telerik feed in your GitHub Actions workflows.
 
-A way to pass them along is to mark them as environment variables. You can find an example in the [DevOpsExamples repo by Lance McCarthy](https://github.com/LanceMcCarthy/DevOpsExamples). Here follow the two relevant extracts.
+A way to pass them along is to mark them as environment variables. You can find an example in the [DevOpsExamples GitHub repository by Lance McCarthy](https://github.com/LanceMcCarthy/DevOpsExamples). Here follow the two relevant extracts.
 
 >caption Example of setting GitHub Secrets into Environment Variables for Telerik Login
 

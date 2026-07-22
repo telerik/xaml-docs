@@ -12,7 +12,7 @@ position: 5
 
 Most Telerik themes support palette helper objects that contain the main resources of the theme (colors, font sizes, etc.). This allows easier access and modification of commonly used resources, thus customizing the applied theme. 
 
-The examples in this article show the `Windows11Palette`, but the same approach is applicable for all palettes. See what themes support palettes in the [Available Themes]({%slug common-styling-appearance-available-themes%}) article. The name of the palette class is created by combining the theme name + *Palette* at the end. Examples: `MaterialPalette`, `FluentPalette`, `Office2019Palette`.
+The examples in this article show the `Windows11Palette`, but the same approach is applicable for all palettes. See what themes support palettes in the [available Telerik UI for WPF themes overview]({%slug common-styling-appearance-available-themes%}). The name of the palette class is created by combining the theme name + *Palette* at the end. Examples: `MaterialPalette`, `FluentPalette`, `Office2019Palette`.
 
 ## Changing Palette Settings in Code
 
@@ -67,7 +67,7 @@ __Replacing a default palette resource for a single control instance__
 
 ## Theme Color Variations
 
-Some of the Telerik themes provide predefined sets of colors (color variations). Applying a color variation goes through the palette color settings and apply the predefined values. See what themes support color variations in the [Available Themes]({%slug common-styling-appearance-available-themes%}) article. 
+Some of the Telerik themes provide predefined sets of colors (color variations). Applying a color variation goes through the palette color settings and apply the predefined values. See what themes support color variations in the [available Telerik UI for WPF themes overview]({%slug common-styling-appearance-available-themes%}). 
 
 To apply a color variation, call the `LoadPreset` method of the corresponding palette clas (ex: `Windows11Palette`). The variations are acessed through the `ColorVariation` enum of the palette.
 
@@ -95,11 +95,11 @@ __Using the Windows11Resource markup extension__
 
 ## Setting a Theme Color Variation in Design Time
 
-You can change the theme's color variation in design-time. Check this [article]({%slug kb-themes-set-color-variation-design-time%}) to see more information on this topic.
+You can change the theme's color variation in design-time. Check this [knowledge base article about setting theme color variation at design time]({%slug kb-themes-set-color-variation-design-time%}) to see more information on this topic.
 
 ## See Also  
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [Color Theme Generator]({%slug common-styling-color-theme-generator%})
-* [Windows11 Theme]({%slug common-styling-appearance-windows11-theme%})
-* [Office2019 Theme]({%slug common-styling-appearance-Office2019-theme%})
-* [Fluent Theme]({%slug common-styling-appearance-fluent-theme%})
+* [Set a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Use the Color Theme Generator]({%slug common-styling-color-theme-generator%})
+* [Customize the Windows11 Theme Palette]({%slug common-styling-appearance-windows11-theme%})
+* [Customize the Office2019 Theme Palette]({%slug common-styling-appearance-Office2019-theme%})
+* [Customize the Fluent Theme Palette]({%slug common-styling-appearance-fluent-theme%})

@@ -98,15 +98,15 @@ No, versions released prior to January 2025 (Q1) do not require a license key.
 
 If you reference the Telerik components in a class library that is used in the main project, you will need to install the `Telerik.Licensing` package also in the main project. Otherwise, you will see the invalid/not found license key message. An alternative solution would be to set the following attributes to the `PackageReference` installing the Telerik product in the class library project - `IncludeAssets` to `All` and `PrivateAssets` to `None`.
 
-Both approaches are shown in the [following KB article]({%slug kb-installation-missing-license-in-class-library-setup%}).
+Both approaches are shown in the [KB article about missing licenses in class library setups]({%slug kb-installation-missing-license-in-class-library-setup%}).
 
 ## Why I see the invalid or missing license key message when the Telerik components are used in a VSTO or other (Adobe or ArcGIS or similar software) addin based project even if the license key is properly installed?
 
-In this case, an extra step should be added to the license key installation. The addin project should manually call the `TelerikLicensing.Register` method, as shown in the [following KB article]({%slug kb-installation-missing-license-addin-project%}).
+In this case, an extra step should be added to the license key installation. The addin project should manually call the `TelerikLicensing.Register` method, as shown in the [KB article about missing licenses in add-in projects]({%slug kb-installation-missing-license-addin-project%}).
 
 ## Why I see the "No License Found" dialog after installing the license key?
 
-The [following KB article]({%slug kb-licensing-no-license-found-message%}) describes the most common reasons where the missing license message is shown after installing the license key.
+The [KB article about the No License Found message]({%slug kb-licensing-no-license-found-message%}) describes the most common reasons the missing license message is shown after installing the license key.
 
 ## See Also  
 * [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%})

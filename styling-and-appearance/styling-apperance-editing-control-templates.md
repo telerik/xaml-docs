@@ -29,7 +29,7 @@ The following example shows how to extract the **RadListBox** control template f
 
 1. Locate the __Telerik.Windows.Controls.xaml__ file and open it with your favorite editor.
 
-   To find the XAML file for any control, you need to know the name of the [assembly that contains the control]({%slug installation-installing-controls-dependencies-wpf%}) The name of the XAML file corresponds to the name of the assembly.
+   To find the XAML file for any control, you need to know the name of the [assembly that contains the control]({%slug installation-installing-controls-dependencies-wpf%}). The name of the XAML file corresponds to the name of the assembly.
 
    __Figure 1: Navigating to the required XAML file__
 
@@ -152,4 +152,4 @@ __Example 2: The generated XAML code__
 
 ## See Also
 
- * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
+ * [Set a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})

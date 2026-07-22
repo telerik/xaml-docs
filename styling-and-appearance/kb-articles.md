@@ -29,4 +29,4 @@ The following article list Knowledge Base articles related to this section of th
 
 ## See Also
 
-* [All KB Articles](https://www.telerik.com/products/wpf/documentation/knowledge-base)
+* [Browse All Telerik UI for WPF Knowledge Base Articles](https://www.telerik.com/products/wpf/documentation/knowledge-base)

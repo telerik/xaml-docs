@@ -16,11 +16,11 @@ The Preview is a minor release of the Telerik UI for WPF assemblies, that is upl
 
 The previews are available only if they are released after an official release. Once a new official version is out and no previews are released afterwards, the previous previews are no longer available.
 
-The Preview is __available as a NuGet__ package. Note that the Preview packages are not uploaded on the [Telerik NuGet Feed]({%slug nuget-package-source-setup%}#using-the-telerik-nuget-server-as-package-source), but are available only as [local nuget package]({%slug nuget-available-packages%}).
+The Preview is __available as a NuGet__ package. Note that the Preview packages are not uploaded on the [configured Telerik NuGet server feed]({%slug nuget-package-source-setup%}#using-the-telerik-nuget-server-as-package-source), but are available only as [locally downloaded Telerik NuGet packages]({%slug nuget-available-packages%}).
 
-Alternatively, you can __download the Preview assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
+Alternatively, you can __download the Preview assemblies__ from the [Telerik account downloads area](https://www.telerik.com/account/).
 
-1. Go to the Telerik UI for WPF product [download page](https://www.telerik.com/account/product-download?product=RCWPF). 
+1. Go to the Telerik UI for WPF product [downloads page for your account](https://www.telerik.com/account/product-download?product=RCWPF). 
 	
 2. Click on the __Download__ button in the __Latest Preview__ banner. This will download an archive with the UI for {{ site.framework_name }} __assemblies__.
 
@@ -39,5 +39,5 @@ The following image shows the name of the Preview dlls generated on 19th of Apri
 ![WPF Internal Build Version Number Breakdown](images/installation-preview-releases-2.png)
  
 ## See Also  
-* [Installing UI for WPF from NuGet Package]({%slug nuget-installation%})
-* [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})  
+* [Install Telerik UI for WPF from NuGet Packages]({%slug nuget-installation%})
+* [Review the WPF Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})  

@@ -13,7 +13,7 @@ glyphs_reference_sheet: True
 
 Use this reference sheet to find the available glyphs in the `TelerikWebUI` font and the values you need to use them in XAML or code. The generated table below lists each glyph name together with its numeric and string values.
 
-For the general glyph concepts, supported scenarios, and additional examples, see [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}).
+For the general glyph concepts, supported scenarios, and additional examples, see the [Font Glyphs]({%slug common-styling-appearance-glyphs-overview%}) overview for Telerik UI for WPF.
 
 ## How to Use This Reference Sheet
 
@@ -51,7 +51,7 @@ __Example 3: Use a glyph resource key in a TextBlock__
 		   Text="{StaticResource GlyphCalendar}" />
 ```
 
->tip If you use glyph resource keys as `StaticResource` values in a custom project, merge `FontResources.xaml` as described in [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}).
+>tip If you use glyph resource keys as `StaticResource` values in a custom project, merge `FontResources.xaml` as described in the [Font Glyphs]({%slug common-styling-appearance-glyphs-overview%}) overview for Telerik UI for WPF.
 
 ## Choose Between TelerikWebUI and TelerikFluentIcons
 
@@ -73,5 +73,5 @@ Search the table by glyph name when you know the icon you want to use, or compar
 
 ## See Also
 
-* [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
-* [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%})
+* [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Read the Font Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%})

@@ -11,7 +11,7 @@ position: 1
 
 The __UI for {{ site.framework_name }}__ suite comes with a variety of predefined themes which you can apply to your application. Some of the themes have ThemePalette, allowing for different color variations to expand this variety even more. Below you can find a list of the available themes, a glimpse of their appearance, the support of a ThemePalette, and the built-in color variations (if such are present).
 
->You can check the appearance of a specific control in a certain theme by viewing its "Theming" demo in our {% if site.site_name == 'WPF' %}[WPF Controls Examples application](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples application](https://demos.telerik.com/silverlight/){% endif %}.
+>You can check the appearance of a specific control in a certain theme by viewing its "Theming" demo in our {% if site.site_name == 'WPF' %}[Telerik UI for WPF demos](https://demos.telerik.com/wpf/){% else %}[Telerik UI for Silverlight demos](https://demos.telerik.com/silverlight/){% endif %}.
 
 The table is ordered chronologically, where the first theme in the list is the latest released.
 
@@ -54,8 +54,8 @@ Theme name | Appearance | Theme Palette | Variations
 **Office Blue** | ![Office Blue](images/OfficeBlue.png) | No | -
 **Office Black** | ![Office Black](images/OfficeBlack.png) | No | -
 
-*The names of the color variations from this list correspond to the different presets that can be loaded - e.g. VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Dark); will load the dark variation of the Visual Studio 2013 theme. All themes which support ThemePalettes are present in the [Color Theme Generator]({%slug common-styling-color-theme-generator%}), which allows for creating custom color variations even for themes that do not have ColorVariations.*
+*The names of the color variations from this list correspond to the different presets that can be loaded - e.g. VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Dark); will load the dark variation of the Visual Studio 2013 theme. All themes which support ThemePalettes are present in the [Color Theme Generator for custom theme variations]({%slug common-styling-color-theme-generator%}), which allows for creating custom color variations even for themes that do not have ColorVariations.*
 
 ## See Also  
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [Color Theme Generator]({%slug common-styling-color-theme-generator%})
+* [Apply a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Generate Custom Theme Variations]({%slug common-styling-color-theme-generator%})

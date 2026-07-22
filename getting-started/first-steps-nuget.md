@@ -19,7 +19,7 @@ Before you start, make sure to:
 
 ## Set Up Telerik Development Environment
 
->tip If you have already set up your Telerik development environment and it doesn't need updating, skip to [Create the WPF Project](#create-the-wpf-project).
+>tip If you have already set up your Telerik development environment and it doesn't need updating, skip to [create the WPF project](#create-the-wpf-project).
 
 The fastest way to set up your Telerik development environment is to use the [Telerik CLI]({%slug telerik-cli%}) .NET tool commands in a command shell (cmd, powershell, etc.).
 
@@ -35,7 +35,7 @@ The fastest way to set up your Telerik development environment is to use the [Te
 	telerik setup wpf
 	```
 
-The `setup` command performs [multiple actions at once]({%slug telerik-cli%}) to configure your Telerik development environment - login, license key installation, nuget package source configuration and mcp server setup.
+The `setup` command performs [multiple Telerik CLI setup steps at once]({%slug telerik-cli%}) to configure your Telerik development environment - login, license key installation, nuget package source configuration and mcp server setup.
 
 ## Create the WPF Project
 
@@ -58,7 +58,7 @@ Create a new WPF project in Visual Studio.
 	<PackageReference Include="Telerik.UI.for.Wpf.AllControls.Xaml" Version="*" />
 	```
 
->tip This tutorial shows how to install the `Telerik.UI.for.Wpf.AllControls.Xaml` package that contains all Telerik WPF assemblies. To reduce the final application size, you can install only the required [separate packages]({%slug nuget-available-packages%}). For example, this demo only requires the `Telerik.Windows.Controls.Navigation.Xaml` package.
+>tip This tutorial shows how to install the `Telerik.UI.for.Wpf.AllControls.Xaml` package that contains all Telerik WPF assemblies. To reduce the final application size, you can install only the required [separate Telerik UI for WPF NuGet packages]({%slug nuget-available-packages%}). For example, this demo only requires the `Telerik.Windows.Controls.Navigation.Xaml` package.
 
 ## Add Telerik Controls in the Project
 

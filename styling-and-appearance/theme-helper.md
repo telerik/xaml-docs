@@ -31,7 +31,7 @@ The class contains the following list of dependency properties, which can be set
 * `FocusVisualMargin`&mdash;Sets a margin for the focus visual element.
 * `CornerRadius`&mdash;Can be used to set the corner radius of commonly used basic controls that could need corner radius customizations but don't expose such property by default (e.g. Button, RepeatButton, ListBox, RadComboBox, etc.)
 
->important The ThemeHelper class currently works out-of-the-box with the __Windows 11__, __Office2019__, __VisualStudio2019__, __Crystal__, __Fluent__, and __Material__ themes. Please note that not all properties will work for any given control at the moment. To see which properties are fully supported for a specific control, please check its [ControlTemplate]({%slug styling-apperance-editing-control-templates%}).
+>important The ThemeHelper class currently works out-of-the-box with the __Windows 11__, __Office2019__, __VisualStudio2019__, __Crystal__, __Fluent__, and __Material__ themes. Please note that not all properties will work for any given control at the moment. To see which properties are fully supported for a specific control, please check its [control template documentation]({%slug styling-apperance-editing-control-templates%}).
 
 ## How to Use the Theme Helper?
 
@@ -64,8 +64,8 @@ __Appearance of the RadToggleButton in the different states__
 
 ## See Also
 
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})
- * [Themes Suite]({%slug common-styling-appearance-available-themes%})
- * [VisualStudio2019 Theme]({%slug common-styling-appearance-visualstudio2019-theme%})
- * [Material Theme]({%slug common-styling-appearance-material-theme%})
+ * [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Set a Theme with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%})
+ * [Browse the Available Telerik Themes]({%slug common-styling-appearance-available-themes%})
+ * [Use the VisualStudio2019 Theme]({%slug common-styling-appearance-visualstudio2019-theme%})
+ * [Use the Material Theme]({%slug common-styling-appearance-material-theme%})

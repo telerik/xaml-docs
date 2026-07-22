@@ -224,4 +224,4 @@ __Merging the theme's ResourceDictionary in App.xaml__
 ```
 
 ## See Also
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
+ * [Apply a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

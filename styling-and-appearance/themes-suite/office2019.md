@@ -682,7 +682,7 @@ __Merging the theme's ResourceDictionary in App.xaml__
 ```
 
 ## See Also  
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})
- * [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%})
- * [Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
+ * [Apply a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Configure WPF Themes with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%})
+ * [Use Telerik Font Glyphs in WPF]({%slug common-styling-appearance-glyphs-overview%})
+ * [Customize the Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})

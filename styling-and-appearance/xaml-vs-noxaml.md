@@ -26,17 +26,17 @@ The __NoXaml__ dlls can be found in the __Telerik UI for {{ site.framework_name 
 
 The Xaml dlls contain the same code as the NoXaml ones, but they hold also all the styles and templates of the UI controls, for all themes. This means that they are bigger in size compared to the NoXaml ones.
 
-Using Xaml dlls allows you to set up your project a bit easier and __set the controls UI theme very easily__ by setting a single property. Read more about this in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article. 
+Using Xaml dlls allows you to set up your project a bit easier and __set the controls UI theme very easily__ by setting a single property. Read more about this in the [implicit-styles theming guide]({%slug styling-apperance-implicit-styles-overview%}). 
 
 > Application theme change at run-time is supported only by the NoXaml assemblies and Implicit Styles theming mechanism. With Xaml and StyleManager, you can change the theme only per control during the run-time. This is done via the `StyleManager.Theme` attached property. 
 
 ## NoXaml assemblies
 
-The NoXaml dlls have the same code as the Xaml ones, but they don't contain any styles and templates. This makes them __smaller in size__ compared to Xaml, but they require a bit more effort to set up. You will need to reference an additional theme dll and merge the ResourceDictionaries with the styles for each control dll. Read more about this in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article.
+The NoXaml dlls have the same code as the Xaml ones, but they don't contain any styles and templates. This makes them __smaller in size__ compared to Xaml, but they require a bit more effort to set up. You will need to reference an additional theme dll and merge the ResourceDictionaries with the styles for each control dll. Read more about this in the [theming guide]({%slug styling-apperance-implicit-styles-overview%}).
 
 The benefit of using NoXaml is that you get full __design-time support__ when a theme different from the default one (Office_Black) is used.
 
->importantBecause the NoXaml dlls apply the control styles implicitly, when you create a custom control deriving from a Telerik control you will need to create a custom style and base it on the default control style. For example a control deriving from **RadCartesianChart** should have a Style that targets the custom control and it is based on **RadCartesianChartStyle**. The same applies for any custom implicit styles targeting Telerik controls. You need to base them on the default control style, otherwise they will be completely overridden and all setters and templates originally applied to the controls will be lost. You can read more about this in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.
+>important Because the NoXaml dlls apply the control styles implicitly, when you create a custom control deriving from a Telerik control you will need to create a custom style and base it on the default control style. For example a control deriving from **RadCartesianChart** should have a Style that targets the custom control and it is based on **RadCartesianChartStyle**. The same applies for any custom implicit styles targeting Telerik controls. You need to base them on the default control style, otherwise they will be completely overridden and all setters and templates originally applied to the controls will be lost. You can read more about this in the [guide to styling Telerik controls]({%slug implicit-styles-styling-the-controls%}).
 
 ## How to check the assemblies version
 
@@ -52,7 +52,7 @@ Alternatively, you check the Properties of the **Telerik.Windows.Controls.dll** 
 ![Telerik.Windows.Controls.dll Properties](images/xaml-vs-noxaml-0.png)
 
 ## See Also
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
-* [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
-* [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
+* [Apply Telerik Themes]({%slug styling-apperance-implicit-styles-overview%})
+* [Style Telerik Controls with Implicit Styles]({%slug implicit-styles-styling-the-controls%})
+* [Switch Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
+* [Switch Telerik Themes at Design Time]({%slug styling-apperance-swiching-themes-design-time%})

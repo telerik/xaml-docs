@@ -12,7 +12,7 @@ position: 2
 
 Customizing the look and feel of the **Telerik** controls, when using the **NoXAML** binary files, is easy and intuitive due to the provided **theming** mechanism. An important step to remember is to always [base your custom styles](#basing-a-custom-style-on-a-theme-default-style) on the default one for the theme. 
 
->important This article is relevant, if you are using [implicit styling]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) with the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) binaries. If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) approach with [Xaml]({%slug xaml-vs-noxaml%}#xaml-assemblies) dlls, check out the following article: {% if site.site_name == 'WPF' %}[Setting a Theme with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}).{% endif %}{% if site.site_name == 'Silverlight' %}[Setting a Theme with StyleManager]({%slug common-styling-apperance-setting-theme%}).{% endif %}
+>important This article is relevant, if you are using [implicit styling]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) with the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) binaries. If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) approach with [Xaml]({%slug xaml-vs-noxaml%}#xaml-assemblies) dlls, check out the following article: {% if site.site_name == 'WPF' %}[Setting a Theme with StyleManager for Telerik UI for WPF]({%slug common-styling-apperance-setting-theme-wpf%}).{% endif %}{% if site.site_name == 'Silverlight' %}[Setting a Theme with StyleManager]({%slug common-styling-apperance-setting-theme%}).{% endif %}
 
 ## Basing a Custom Style on a Theme Default Style
 
@@ -132,8 +132,8 @@ __Example 4: All XAML files corresponding to the Telerik assemblies__
 
 ## See Also
 
-* [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
+* [Switch Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
 
-* [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
+* [Switch Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
 
-* [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%})
+* [Apply Telerik Themes to Native WPF Controls]({%slug styling-apperance-themes-mscontrols%})

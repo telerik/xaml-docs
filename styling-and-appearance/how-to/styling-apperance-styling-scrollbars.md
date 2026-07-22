@@ -22,7 +22,7 @@ The article will show you how to modify these styles to suit your requirements.
 
 ## Get Default Style
 
-You can get the default style of the ScrollBar element as explained in the [Modifying Default Styles]({%slug styling-apperance-modifying-default-styles%}) article.
+You can get the default style of the ScrollBar element as explained in the [guide to modifying default Telerik styles]({%slug styling-apperance-modifying-default-styles%}).
 
 For the purposes of this article, we will assume that you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) mechanism for theming the controls and that you've manually extracted the default styles from the **System.Windows.xaml** file of the **Themes.Implicit** folder of your UI for {{ site.framework_name }} installation. You can, however, achieve the same result using the StyleManager approach and extracting the styles with Blend for Visual Studio, for example.
 
@@ -186,6 +186,6 @@ __Scrollbars with colored thumb__
 
 ## See Also
 
-* [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
-* [Modifying Default Styles]({%slug styling-apperance-modifying-default-styles%})
-* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
+* [Set a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+* [Modify Default Telerik Styles]({%slug styling-apperance-modifying-default-styles%})
+* [Edit Telerik Control Templates]({%slug styling-apperance-editing-control-templates%})

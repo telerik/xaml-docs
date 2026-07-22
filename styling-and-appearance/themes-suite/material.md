@@ -309,7 +309,7 @@ When using the `Material` theme you can dynamically change the `FontSize` and `F
 
 The FontSize and FontFamily properties are public so you can easily modify the theme resources at a single point. The most commonly used font size in the theme is with value __14__ and can be modified through the `MaterialPalette.Palette.FontSize` property. 
 
-The default font used in the theme is [Roboto](https://fonts.google.com/specimen/Roboto).
+The default font used in the theme is the [Roboto font family](https://fonts.google.com/specimen/Roboto).
 
 >important For complex scenarios we strongly recommend setting the FontSize property only __before the application is initialized__ Also, we recommend values between __11px__ and __19px__ for it.
 
@@ -543,8 +543,8 @@ __Merging the theme's ResourceDictionary in App.xaml__
 
 ## See Also
 
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Style Manager]({%slug common-styling-apperance-setting-theme-wpf%})
- * [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%})
- * [Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
- * [Green Theme]({%slug common-styling-appearance-green-theme%})
+ * [Apply a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Configure WPF Themes with StyleManager]({%slug common-styling-apperance-setting-theme-wpf%})
+ * [Use Telerik Font Glyphs in WPF]({%slug common-styling-appearance-glyphs-overview%})
+ * [Customize the Office2016 Theme]({%slug common-styling-appearance-office2016-theme%})
+ * [Customize the Green Theme]({%slug common-styling-appearance-green-theme%})

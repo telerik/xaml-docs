@@ -10,7 +10,7 @@ position: 6
 
 # Visual Studio Templates
 
-The __[Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})__ provides few built in __Visual Studio Templates__. Now it is possible with just a few clicks to start building Windows inspired application. Currently you have the option to choose from the following templates: 
+The [Project Configuration Wizard for Telerik UI for WPF]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}) provides few built in __Visual Studio Templates__. Now it is possible with just a few clicks to start building Windows inspired application. Currently you have the option to choose from the following templates: 
 
 * [Word-Inspired Template](#word-inspired-template)
 
@@ -22,7 +22,7 @@ The __[Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-pr
 
 * [Outlook-Inspired Calendar Template](#outlook-inspired-calendar-template)
 
->All the templates are prepared with the __[Office 2013 theme]({%slug common-styling-appearance-office2013-theme%})__ and use __[Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})__.
+>All the templates are prepared with the [Office 2013 theme]({%slug common-styling-appearance-office2013-theme%}) and use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
 
 When creating or configuring project using the [Telerik Visual Studio Extension]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}), select one of the predefined Telerik scenarios/templates.
 

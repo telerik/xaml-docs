@@ -84,4 +84,4 @@ __Set application-specific theme in the App constructor__
 ```
 	
 ## See Also
- * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
+ * [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})

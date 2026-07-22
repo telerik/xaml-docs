@@ -231,7 +231,7 @@ __Setting corner radius__
 
 ## Using Glyphs
 
-The font glyphs that have been introduced with the Office2016 theme are built-in for the Office2016Touch theme as well. They provide a number of ready-to-use vector icons from the `TelerikWebUI` font. You can learn more about them and the usage from the [Font Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) article.
+The font glyphs that have been introduced with the Office2016 theme are built-in for the Office2016Touch theme as well. They provide a number of ready-to-use vector icons from the `TelerikWebUI` font. You can learn more about them and the usage from the [Telerik font glyph overview for WPF]({%slug common-styling-appearance-glyphs-overview%}).
 
 ## Changing Opacity
 

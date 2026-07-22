@@ -10,9 +10,9 @@ position: 9
 
 # Theming Support for WPF Native Controls
 
-The [Telerik themes]({%slug common-styling-appearance-available-themes%}) provide styling for the Telerik controls and also several native WPF controls. 
+The [available Telerik themes for WPF]({%slug common-styling-appearance-available-themes%}) provide styling for the Telerik controls and also several native WPF controls. 
 
-This article lists all the native WPF controls supporting Telerik theming, and shows how to enable the theming using the [Style Manager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) and [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) mechanisms. 
+This article lists all the native WPF controls supporting Telerik theming, and shows how to enable the theming using the [StyleManager theming approach]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) and [implicit styles theming approach]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) mechanisms. 
 
 When using the __Implicit Styles__ theming mechanism, the native controls are themed automatically when the Telerik's __System.Windows.xaml__ file gets merged in the application resources.
 
@@ -54,7 +54,7 @@ Additionally, there are two more controls part of the Telerik UI for WPF suite w
 
 * `Telerik.Windows.Controls.GroupBox`
 
->Before proceeding with this tutorial, you can check the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) topic.
+>Before proceeding with this tutorial, you can check the [guide to setting a Telerik theme]({%slug styling-apperance-implicit-styles-overview%}).
 
 ## Setting the Theme Using Implicit Styles 
 
@@ -115,6 +115,6 @@ __Setting the Telerik theme globally for all CheckBox controls in the view__
 ```
 
 ## See Also  
- * [Use StyleManager to Apply Theme on MS Controls]({%slug common-styling-themes-mscontrols%})
- * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
- * [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%})
+ * [Use StyleManager to Apply Theme on Native WPF Controls]({%slug common-styling-themes-mscontrols%})
+ * [Set a Theme by Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
+ * [Switch Themes at Runtime]({%slug styling-apperance-themes-runtime%})

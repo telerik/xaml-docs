@@ -212,7 +212,7 @@ We believe that the documentation for a product is at its best when the content 
 
 __Submit a New Issue at GitHub__
 
-If you find an issue with our docs that need to be addressed, the best way to let us know is by creating an issue in the [Telerik XAML docs GitHub repository](https://github.com/telerik/xaml-docs/issues?q=is%3Aopen). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closes anchor to the issue, that is even better.
+If you find an issue with our docs that needs to be addressed, the best way to let us know is by creating an issue in the [Telerik XAML docs GitHub repository](https://github.com/telerik/xaml-docs/issues?q=is%3Aopen). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closest anchor to the issue, that is even better.
 
 __Update the Documentation at GitHub__
 

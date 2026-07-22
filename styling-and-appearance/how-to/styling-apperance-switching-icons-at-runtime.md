@@ -96,7 +96,7 @@ __Figure 2__ shows the result after the code in __Example 4__ is executed.
 ![Image After Changing the IconSet](images/Switching_Icons_Runtime_02.png)
 
 
->tipYou can find the complete code of the previous example in our online [Telerik XAML SDK Common samples repository](https://github.com/telerik/xaml-sdk/tree/master/Common).
+>tip You can find the complete code of the previous example in our online [Telerik XAML SDK Common samples repository](https://github.com/telerik/xaml-sdk/tree/master/Common).
 
 
 ## Available Icon Sets

@@ -39,7 +39,7 @@ To change the Handedness via the Windows menu use the following steps:
 
 To change the handedness in code you can use the SystemParameters static class and its _menuDropAlignment field. Keep in mind that the filed is private so you can set it only via reflection.
 
-__Example 1: Setting the _menuDropAlignment field__
+__Example 1: Setting the menuDropAlignment field__
 ```C#
 	public static void SetAlignment()
 	{

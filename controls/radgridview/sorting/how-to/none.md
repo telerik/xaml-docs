@@ -16,22 +16,10 @@ To accomplish this you need to subscribe to the __Sorting__ event and define its
 
 
 
-```C#
-	private void clubsGrid_Sorting(object sender, GridViewSortingEventArgs e)
-	{
-	    if (e.NewSortingState == SortingState.None)
-	    {
-	        e.NewSortingState = SortingState.Ascending;
-	    }
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_Sorting(sender As Object, e As GridViewSortingEventArgs)
-	    If e.NewSortingState = SortingState.None Then
-	        e.NewSortingState = SortingState.Ascending
-	    End If
-	End Sub
-```
+<snippet id='radgridview-sorting-how-to-none-block_1-cs' />
+
+<snippet id='radgridview-sorting-how-to-none-block_1-vb' />
+
 
 
 

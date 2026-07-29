@@ -69,63 +69,26 @@ As the commands provided by __RadGridView__ are __ICommands__ at their core, the
 Using the __RadGridViewCommands__ class, you can set a sequence of commands to be performed one after another.  So, for example, you may easily handle the **Click** event of a button, move the focus down, select the current unit and then delete it. However, when invoking the commands in such a manner a second parameter should be added, pointing out the target UI Element as shown in **Exapmle 1**.
 
 __Example 1: Executing different commands__  
-```C#
-	private void Button1_Click(object sender, RoutedEventArgs e)
-    {
-        var moveDownCommand = RadGridViewCommands.MoveDown as RoutedUICommand;
-        var selectCommand = RadGridViewCommands.SelectCurrentUnit as RoutedUICommand;
-        var deleteCommand = RadGridViewCommands.Delete as RoutedUICommand;
-        moveDownCommand.Execute(null, this.clubsGrid);
-        selectCommand.Execute(null, this.clubsGrid);
-        deleteCommand.Execute(null, this.clubsGrid);
-    }
-```
-```VB.NET
-	Private Sub Button1_Click(sender As Object, e As RoutedEventArgs)
-        Dim moveDownCommand = TryCast(RadGridViewCommands.MoveDown, RoutedUICommand)
-        Dim selectCommand = TryCast(RadGridViewCommands.SelectCurrentUnit, RoutedUICommand)
-        Dim deleteCommand = TryCast(RadGridViewCommands.Delete, RoutedUICommand)
-        moveDownCommand.Execute(Nothing, Me.clubsGrid)
-        selectCommand.Execute(Nothing, Me.clubsGrid)
-        deleteCommand.Execute(Nothing, Me.clubsGrid)
-    End Sub
-```
+<snippet id='radgridview-commands-overview-example_1_executing_different_commands-cs' />
+
+<snippet id='radgridview-commands-overview-example_1_executing_different_commands-vb' />
+
 
 In order to ensure that all commands will be executed in the correct sequence, it is advised to use RadGridView's **PendingCommands** collection as demonstrated in **Example 2**.
 
 __Example 2: Executing different commands with the ExecutePendingCommand method__  
-```C#
-	private void Button2_Click(object sender, RoutedEventArgs e)
-	{
-	    this.clubsGrid.PendingCommands.Add(RadGridViewCommands.MoveDown);
-	    this.clubsGrid.PendingCommands.Add(RadGridViewCommands.SelectCurrentUnit);
-	    this.clubsGrid.PendingCommands.Add(RadGridViewCommands.Delete);
-	    this.clubsGrid.ExecutePendingCommand();
-	}
-```
-```VB.NET
-	Private Sub Button2_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	    Me.clubsGrid.PendingCommands.Add(RadGridViewCommands.MoveDown)
-	    Me.clubsGrid.PendingCommands.Add(RadGridViewCommands.SelectCurrentUnit)
-	    Me.clubsGrid.PendingCommands.Add(RadGridViewCommands.Delete)
-	    Me.clubsGrid.ExecutePendingCommand()
-	End Sub
-```
+<snippet id='radgridview-commands-overview-example_2_executing_different_commands_with_the_executependingcommand_method-cs' />
+
+<snippet id='radgridview-commands-overview-example_2_executing_different_commands_with_the_executependingcommand_method-vb' />
+
 
 ## Using RadGridViewCommands in CellTemplate
 
 You can use the CellTemplate of the RadGridView columns to include a button in the data cells. The button can execute one of the RadGridViewCommands. The following example shows how to add a delete button in one of the RadGridView columns.
 
 __Example 3: Using RadGridViewCommands.Delete command in column CellTemplate__  
-```XAML
-	<telerik:GridViewColumn>
-	    <telerik:GridViewColumn.CellTemplate>
-	        <DataTemplate>
-	            <telerik:RadButton Content="Delete" Command="telerik:RadGridViewCommands.Delete" CommandParameter="{Binding}" />
-	        </DataTemplate>
-	    </telerik:GridViewColumn.CellTemplate>
-	</telerik:GridViewColumn>
-```
+<snippet id='radgridview-commands-overview-example_3_using_radgridviewcommands_delete_command_in_column_celltemplate-xaml' />
+
 
 The __CommandParameter__ is required in order for the Delete command to remove the concrete row model from the RadGridView's ItemsSource. The binding to the parameter points to the data context of the row.
 
@@ -134,25 +97,14 @@ The __CommandParameter__ is required in order for the Delete command to remove t
 The RadGridViewCommands class can be used also outside of RadGridView. The following example shows how to use the __RadGridViewCommands.CommitEdit__ command in a separate button which saves changes in the the editing cells. 
 
 __Example 4: Using RadGridViewCommands.CommitEdit command outside of the RadGridView__  
-```XAML
-	<telerik:RadButton Content="Save insert/edit" 
-					   Command="telerik:RadGridViewCommands.CommitEdit" 
-					   CommandTarget="{Binding ElementName=RadGridView1}" />
-```
+<snippet id='radgridview-commands-overview-example_4_using_radgridviewcommands_commitedit_command_outside_of_the_radgridview-xaml' />
+
 
 In this case the target object needs to be explicitly set in the definition of the __CommandTarget__ property, specifying the __RadGridView__ towards which the command has to be applied. This specific command will be automatically disabled untill a change in any of the items in the grid is made. 
 {% if site.site_name == 'Silverlight' %}
 However, in both cases you will need to initialize the commands beforehand:
 
 __Example 5: Initializing RadDiagramCommands__  
-```C#
-	public MainPage()
-	{
-	    ICommand deleteCommand = RadGridViewCommands.Delete;
-	    ICommand beginInsertCommand = RadGridViewCommands.BeginInsert;
-	    ICommand cancelRowEditCommand = RadGridViewCommands.CancelRowEdit;
-	    ICommand commitEditCommand = RadGridViewCommands.CommitEdit;
-	    InitializeComponent();
-	}
-```
+<snippet id='radgridview-commands-overview-example_5_initializing_raddiagramcommands-cs' />
+
 {% endif %}

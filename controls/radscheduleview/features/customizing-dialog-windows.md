@@ -22,30 +22,13 @@ Create a new class, deriving from ScheduleViewDialogHostFactory and override the
 
 __Example 1: Custom ScheduleViewDialogHostFactory with customized RadWindow__
 
-```C#
-	public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
-	{
-	    protected override IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
-	    {
-	        var host = base.CreateNew(scheduleView, dialogType);
-	        var window = host as RadWindow;
-	        // Set properties on RadWindow here.
-	        return host;
-	    }
-	}
-```
+<snippet id='radscheduleview-features-customizing-dialog-windows-block_1-cs' />
 
 Configure RadScheduleView to use the new class:
 
 __Example 2: Set SchedulerDialogHostFactory__
 
-```XAML
-	<telerik:RadScheduleView>
-		<telerik:RadScheduleView.SchedulerDialogHostFactory>
-			<local:CustomScheduleViewDialogHostFactory />
-		</telerik:RadScheduleView.SchedulerDialogHostFactory>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-customizing-dialog-windows-block_2-xaml' />
 
 ## Replace RadWindow with Custom Control
 
@@ -53,138 +36,31 @@ Create a new class, deriving from {% if site.site_name == 'WPF' %}Window{% endif
 
 {% if site.site_name == 'WPF' %}
 __Example 3: Custom IScheduleViewDialogHost__
-```C#
-	public class WindowDialogHost : Window, IScheduleViewDialogHost
-	{
-		public new event EventHandler<WindowClosedEventArgs> Closed;
-		public ScheduleViewBase ScheduleView
-		{
-			get;
-			set;
-		}
-		protected override void OnClosed(System.EventArgs e)
-		{
-			base.OnClosed(e);
-			if (this.Closed != null)
-			{
-				this.Closed(this, new WindowClosedEventArgs());
-			}
-		}
-		public void Show(bool isModal)
-		{
-			if (this.Owner == null && this.ScheduleView != null)
-			{
-				this.Owner = this.ScheduleView.ParentOfType<Window>();
-			}
-			if (isModal)
-			{
-				this.ShowDialog();
-			}
-			else
-			{
-				this.Show();
-			}
-		}
-	}
-```
+<snippet id='radscheduleview-features-customizing-dialog-windows-block_3-cs' />
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 __Example 3: Custom IScheduleViewDialogHost__
-```C#
-	public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
-	{
-		private bool opened;
-			
-		protected override void OnOpened()
-		{
-			base.OnOpened();
-			this.opened = true;
-		}
-		protected override void OnClosed(System.EventArgs e)
-		{
-			base.OnClosed(e);
-			if (this.Closed != null && this.opened)
-			{
-				this.opened = false;
-				this.Closed(this, new WindowClosedEventArgs());
-			}
-		}
-	
-		public new event EventHandler<WindowClosedEventArgs> Closed;
-	
-		public ScheduleViewBase ScheduleView { get; set; }
-	
-		void IScheduleViewDialogHost.Close()
-		{
-			if (this.opened)
-			{
-				this.Close();
-			}
-		}
-	
-		public void Show(bool isModal)
-		{
-			this.Show();
-		}
-	}
-```
+<snippet id='radscheduleview-features-customizing-dialog-windows-block_4-cs' />
 {% endif %}
 
 Create a new class and implement the __IScheduleViewDialogHostFactory__:
     
 {% if site.site_name == 'WPF' %}
 __Example 4: Custom ScheduleViewDialogHostFactory with Custom IScheduleViewDialogHost__
-```C#
-	public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
-	{
-	    protected override IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
-	    {
-	        var window = new WindowDialogHost
-	        {
-	            Content = new SchedulerDialog(),
-	            ScheduleView = scheduleView, 
-	            Width = 580,
-	            Height = 350,
-	            Background = new SolidColorBrush(Colors.LightSkyBlue)
-	            // Set additional properties here
-	        };
-	        return window;
-	    }
-	}	
-```
+<snippet id='radscheduleview-features-customizing-dialog-windows-block_5-cs' />
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 __Example 4: Custom ScheduleViewDialogHostFactory with Custom IScheduleViewDialogHost__
-```C#
-	public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactory
-	{
-	    public virtual IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
-	    {
-	        var window = new WindowDialogHost
-	        {
-	            Content = new SchedulerDialog(),
-	            ScheduleView = scheduleView
-	            // Set additional properties here
-	        };
-	        return window;
-	     }    
-	}
-```
+<snippet id='radscheduleview-features-customizing-dialog-windows-block_6-cs' />
 {% endif %}
 
 Configure RadScheduleView to use the new factory:    
 
 __Example 5: Set SchedulerDialogHostFactory__
 
-```XAML
-	<telerik:RadScheduleView . . .>
-		<telerik:RadScheduleView.SchedulerDialogHostFactory>
-			<local:CustomScheduleViewDialogHostFactory />
-		</telerik:RadScheduleView.SchedulerDialogHostFactory>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-customizing-dialog-windows-block_7-xaml' />
 
 #### Figure 1: Custom appointment dialog
 {% if site.site_name == 'WPF' %}

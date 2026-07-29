@@ -27,9 +27,8 @@ In order to achieve optimal load performance with RadFileDialogs controls, you s
 * Disabling the animations in the dialogs also leads to better performance. This can be done via the attached **AnimationManager.IsAnimationEnabled** property:
 
 	__Example 1: Disable animations in the file dialogs__
-	```C#
-		AnimationManager.SetIsAnimationEnabled(fileDialog, false);
-	```
+	<snippet id='radfiledialogs-how-to-improve-load-performance-example_1_disable_animations_in_the_file_dialogs-cs' />
+
 
 * Due to the UI virtualization feature of the dialogs, the fewer elements which are loaded in the view, the faster the load time of the dialogs. Thus, you can reduce the default size of the dialogs or use a [layout type]({%slug radfiledialogs-features-common%}#setting-the-initial-layout-of-the-tiles) which renders fewer items in the view (LargeIcons or Tiles, for example) to improve performance.
             

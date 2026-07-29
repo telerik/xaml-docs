@@ -23,11 +23,8 @@ Their visual representation may vary depending on the type of message. For examp
 ![CalendarMessage](images/RadChat_Messages_Reports_01.png)
 
 __Example 1: Adding a CancelResponseAction__
-```C#
-CalendarMessage calendarMessage = new CalendarMessage(MessageDisplayPosition.Inline, otherAuthor, DateTime.Now, DateTime.Now);
-calendarMessage.ReportActions.Add(new CancelResponseAction(calendarMessage, "Cancel"));
-this.chat.AddMessage(calendarMessage);
-```
+<snippet id='radchat-features-messages-message-reports-example_1_adding_a_cancelresponseaction-cs' />
+
 
 Adding a __CancelResponseAction__ will have the following output.
 
@@ -49,27 +46,9 @@ The user's interaction is handled through the __ReportMessageResult__ event. Its
 * __MessageReportType__: Gets the message report type. It is of enum type and can either have a __Commit__ or __Cancel__ value.
 
 As an example, lets have the following implementation of the event.
-
 __Example 2: Handling the ReportMessageResult event__
-```C#
-private void chat_ReportMessageResult(object sender, MessageResultEventArgs e)
-{
-	if (e.Message is CalendarMessage)
-	{
-		if (e.ReportType == MessageReportType.Commit)
-		{
-			e.PostResultInline = true;
-			e.CloseAfterReport = true;
-			this.chat.AddMessage(this.otherAuthor, "Accepted!");
-		}
-		else if (e.ReportType == MessageReportType.Cancel)
-		{
-			e.CloseAfterReport = true;
-			this.chat.AddMessage(this.otherAuthor, "Canceled!");
-		}
-	}
-}
-```
+<snippet id='radchat-features-messages-message-reports-example_2_handling_the_reportmessageresult_event-cs' />
+
 
 So, if the user clicks the __Submit__ button for the previously defined __CalendarMessage__ the result will be as in the figure below.
 
@@ -80,5 +59,6 @@ So, if the user clicks the __Submit__ button for the previously defined __Calend
 
 A custom __ResponseAction__ provides the ability to trigger a custom __ICommand__ instead of handling the Response through the __ReportMessageResult__ event. This is done by inheriting the abstract __ResponseAction__ object.
 
-## See Also  
+## See Also
+
 * [Messages Overview]({%slug chat-items-messages-overview%})

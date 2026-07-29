@@ -22,15 +22,8 @@ Probably you are using a __CellTemplate__ for that particular column and you hav
 
 
 
-```XAML
-	<telerik:GridViewDataColumn Header="FirstName" >
-	    <telerik:GridViewDataColumn.CellTemplate>
-	        <DataTemplate>
-	            <TextBlock Text="{Binding FirstName}" />
-	        </DataTemplate>
-	    </telerik:GridViewDataColumn.CellTemplate>
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-troubleshooting-troubleshoot-group-sort-filter-cause-xaml' />
+
 
 __SOLUTION__
 
@@ -38,14 +31,7 @@ Set the __DataMemberBinding__ property of the column to the field that you want 
 
 
 
-```XAML
-	<telerik:GridViewDataColumn Header="FirstName" DataMemberBinding="{Binding FirstName}" >
-	    <telerik:GridViewDataColumn.CellTemplate>
-	        <DataTemplate>
-	            <TextBlock Text="{Binding FirstName}" />
-	        </DataTemplate>
-	    </telerik:GridViewDataColumn.CellTemplate>
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-troubleshooting-troubleshoot-group-sort-filter-solution-xaml' />
+
 
 

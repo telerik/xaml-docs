@@ -23,13 +23,9 @@ The dialog can be opened from the __Bookmark__ button in the __Insert__ tab of t
 The dialog can be shown by executing the `ShowManageBookmarksDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
 __Executing the show dialog command__
-```C#
-	this.richTextBox.Commands.ShowManageBookmarksDialogCommand.Execute(null);
-```
+<snippet id='radrichtextbox-dialogs-bookmarks-dialog-block_1-cs' />
 
 Alternatively, call the `ShowManageBookmarksDialog` method of `RadRichTextBox`.
 
 __Using the show dialog method__
-```C#
-	this.richTextBox.ShowManageBookmarksDialog();
-```
+<snippet id='radrichtextbox-dialogs-bookmarks-dialog-block_2-cs' />

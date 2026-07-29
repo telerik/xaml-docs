@@ -24,72 +24,8 @@ Create a new application and add the following initial __RadDocking__ declaratio
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadDocking.DocumentHost>
-	
-	        <telerik:RadSplitContainer>
-	            <telerik:RadPaneGroup x:Name="DocumentGroup">
-	                <telerik:RadPane x:Name="LayoutXml" Header="Layout Xml"
-	telerik:RadDocking.FloatingSize="450, 400">
-	                    <TextBox TextWrapping="Wrap" x:Name="XmlTextBox"
-	VerticalScrollBarVisibility="Auto"
-	Text="{Binding Xml, Mode=TwoWay}" />
-	                </telerik:RadPane>
-	                <telerik:RadDocumentPane Header="Document 1" Title="Document 1">
-	                    <TextBox x:Name="DocumentTextBox" Text="Some text" />
-	                </telerik:RadDocumentPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	
-	    </telerik:RadDocking.DocumentHost>
-	
-	    <telerik:RadSplitContainer InitialPosition="DockedLeft">
-	        <telerik:RadPaneGroup>
-	            <telerik:RadPane Header="Pane Left 1">
-	                <TextBox x:Name="TextBox" Text="Some other text" />
-	            </telerik:RadPane>
-	            <telerik:RadPane Header="Pane Left 2">
-	                <TextBox Text="Pane Left 2" />
-	            </telerik:RadPane>
-	            <telerik:RadPane Header="Pane Left 3">
-	                <TextBox Text="Pane Left 3" />
-	            </telerik:RadPane>
-	            <telerik:RadPane Header="Pane Left 4">
-	                <TextBox Text="Pane Left 4" />
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	
-	    <telerik:RadSplitContainer InitialPosition="DockedRight">
-	        <telerik:RadPaneGroup>
-	            <telerik:RadPane Header="Pane Right 1">
-	                <telerik:RadTreeView>
-	                    <telerik:RadTreeViewItem Header="RootItem">
-	                        <telerik:RadTreeViewItem Header="Item1" />
-	                        <telerik:RadTreeViewItem Header="Item2">
-	                            <telerik:RadTreeViewItem Header="Item21" />
-	                            <telerik:RadTreeViewItem Header="Item22" />
-	                            <telerik:RadTreeViewItem Header="Item23">
-	                                <telerik:RadTreeViewItem Header="Item231" />
-	                            </telerik:RadTreeViewItem>
-	                        </telerik:RadTreeViewItem>
-	                        <telerik:RadTreeViewItem Header="Item3" />
-	                    </telerik:RadTreeViewItem>
-	                </telerik:RadTreeView>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	
-	    <telerik:RadSplitContainer InitialPosition="DockedTop">
-	        <telerik:RadPaneGroup>
-	            <telerik:RadPane Header="Pane Top 1">
-	                <TextBox Text="Pane Top 1" />
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-save-load-layout-overview-block_1-xaml' />
+
 
 ![{{ site.framework_name }} RadDocking Initial Layout](images/RadDocking_Features_SaveLoadLayout_010.png)
 
@@ -103,25 +39,8 @@ Set the __RadDocking.SerializationTag__ attached property for each one of the pa
 
 
 
-```XAML
-	<telerik:RadPane x:Name="LayoutXml1" Header="Layout Xml"
-	                 telerik:RadDocking.SerializationTag="LayoutXml"
-	                 telerik:RadDocking.FloatingSize="450, 400"/>
-	<telerik:RadDocumentPane Header="Document 1" Title="Document 1"
-	                         telerik:RadDocking.SerializationTag="DocumentPane"/>
-	<telerik:RadPane Header="Pane Left 1"
-	                telerik:RadDocking.SerializationTag="PaneLeft1"/>
-	<telerik:RadPane Header="Pane Left 2"
-	                telerik:RadDocking.SerializationTag="PaneLeft2"/>
-	<telerik:RadPane Header="Pane Left 3"
-	                telerik:RadDocking.SerializationTag="PaneLeft3"/>
-	<telerik:RadPane Header="Pane Left 4"
-	                telerik:RadDocking.SerializationTag="PaneLeft4"/>
-	<telerik:RadPane Header="Pane Right 1"
-	                telerik:RadDocking.SerializationTag="PaneRight1"/>
-	<telerik:RadPane Header="Pane Top 1"
-	                telerik:RadDocking.SerializationTag="PaneTop1"/>
-```
+<snippet id='raddocking-features-save-load-layout-overview-block_2-xaml' />
+
 
 Use the __SaveLayout__ method of the __RadDocking__ class. The following example demonstrates how to save the __RadDocking__ layout in the IsolatedStorage. The generated XML is returned as well.
 
@@ -129,81 +48,19 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 		
 
 
-```C#
-	private string SaveLayout()
-	{
-	    string xml;
-	    // Save your layout for example in the isolated storage.
-	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication())
-	    {
-	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create))
-	        {
-	            this.radDocking.SaveLayout(isoStream);
-	            isoStream.Seek(0, SeekOrigin.Begin);
-	            StreamReader reader = new StreamReader(isoStream);
-	            xml = reader.ReadToEnd();
-	        }
-	    }
-	    // Return the generated XML
-	    return xml;
-	}
-```
-```VB.NET
-	Private Function SaveLayout() As String
-		Dim xml As String
-		' Save your layout for example in the isolated storage.
-		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
-			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create)
-				Me.radDocking.SaveLayout(isoStream)
-				isoStream.Seek(0, SeekOrigin.Begin)
-				Dim reader As New StreamReader(isoStream)
-				xml = reader.ReadToEnd()
-			End Using
-		End Using
-		' Return the generated XML
-		Return xml
-	End Function
-```
+<snippet id='raddocking-features-save-load-layout-overview-block_3-cs' />
+
+<snippet id='raddocking-features-save-load-layout-overview-block_3-vb' />
+
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
 
 
-```C#
-	private string SaveLayout()
-	{
-	    string xml;
-	    // Save your layout for example in the isolated storage.
-	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForAssembly())
-	    {
-	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create))
-	        {
-	            this.radDocking.SaveLayout(isoStream);
-	            isoStream.Seek(0, SeekOrigin.Begin);
-	            StreamReader reader = new StreamReader(isoStream);
-	            xml = reader.ReadToEnd();
-	        }
-	    }
-	    // Return the generated XML
-	    return xml;
-	}
-```
-```VB.NET
-	Private Function SaveLayout() As String
-		Dim xml As String
-		' Save your layout for example in the isolated storage.
-		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
-			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Create)
-				Me.radDocking.SaveLayout(isoStream)
-				isoStream.Seek(0, SeekOrigin.Begin)
-				Dim reader As New StreamReader(isoStream)
-				xml = reader.ReadToEnd()
-			End Using
-		End Using
-		' Return the generated XML
-		Return xml
-	End Function
-```
+<snippet id='raddocking-features-save-load-layout-overview-block_4-cs' />
+
+<snippet id='raddocking-features-save-load-layout-overview-block_4-vb' />
+
 
 {% endif %}
 
@@ -279,57 +136,19 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 
 
-```C#
-	private void LoadLayout()
-	{
-	    // Load your layout from the isolated storage.
-	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication())
-	    {
-	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open))
-	        {
-	            this.radDocking.LoadLayout(isoStream);
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub LoadLayout()
-		' Load your layout from the isolated storage.
-		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
-			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
-				Me.radDocking.LoadLayout(isoStream)
-			End Using
-		End Using
-	End Sub
-```
+<snippet id='raddocking-features-save-load-layout-overview-block_5-cs' />
+
+<snippet id='raddocking-features-save-load-layout-overview-block_5-vb' />
+
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
 
 
-```C#
-	private void LoadLayout()
-	{
-	    // Load your layout from the isolated storage.
-	    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForAssembly())
-	    {
-	        using (var isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open))
-	        {
-	            this.radDocking.LoadLayout(isoStream);
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub LoadLayout()
-		' Load your layout from the isolated storage.
-		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
-			Using isoStream = storage.OpenFile("RadDocking_Layout.xml", FileMode.Open)
-				Me.radDocking.LoadLayout(isoStream)
-			End Using
-		End Using
-	End Sub
-```
+<snippet id='raddocking-features-save-load-layout-overview-block_6-cs' />
+
+<snippet id='raddocking-features-save-load-layout-overview-block_6-vb' />
+
 
 {% endif %}
 
@@ -377,16 +196,10 @@ The event argument of the __CustomElementLoading__ event is of type __LayoutSeri
 
 
 
-```C#
-	public void SaveLayout(Stream destination, bool raiseEventsIfNoSerializationTag)
-	{
-	
-	}
-```
-```VB.NET
-	Public Sub SaveLayout(ByVal destination As Stream, ByVal raiseEventsIfNoSerializationTag As Boolean)
-	End Sub
-```
+<snippet id='raddocking-features-save-load-layout-overview-block_7-cs' />
+
+<snippet id='raddocking-features-save-load-layout-overview-block_7-vb' />
+
 
 >By default when you use the __SaveLayout__ method only the layout (without the content) will be saved. That's why the most common use of the fourth events is to save (respectively load) the pane's content. In order to see how to do that take a look at the [Save/Load the Content of the Panes]({%slug raddocking-save-load-the-content-of-the-panes%}) topic.
 

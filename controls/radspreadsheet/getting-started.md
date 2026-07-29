@@ -54,22 +54,15 @@ If you want to use the sample UI provided in our demos you should add this refer
 
 For a bare-bone Spreadsheet control, you only need a declaration of the telerik schema:
 
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
-```
+<snippet id='radspreadsheet-getting-started-block_1-xaml' />
 
 For the UI that enables the full-featured use of the control, you should also declare:
 
-```XAML
-	xmlns:spreadsheetControls="clr-namespace:Telerik.Windows.Controls.Spreadsheet.Controls;assembly=Telerik.Windows.Controls.Spreadsheet"
-	xmlns:spreadsheet="clr-namespace:Telerik.Windows.Controls.Spreadsheet;assembly=Telerik.Windows.Controls.Spreadsheet"
-```
+<snippet id='radspreadsheet-getting-started-block_2-xaml' />
 
 Then, all that is left is to add the __Spreadsheet__ component to the page:
 
-```XAML
-	<telerik:RadSpreadsheet x:Name="radSpreadsheet" />
-```
+<snippet id='radspreadsheet-getting-started-block_3-xaml' />
 
 ## Spreadsheet and RibbonView
 

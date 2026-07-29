@@ -18,19 +18,7 @@ The UI of the items shown in the drop down list can be customized via the __Item
 The __ItemTemplate__ allows you to define a DataTemplate with any UIElements, which will be applied for each item from the ItemsSource of RadAutoSuggestBox.
 
 __Example 1: Setting ItemTemplate__
-```XAML
-	<telerik:RadAutoSuggestBox x:Name="radAutoSuggestBox"
-							   TextMemberPath="Name">
-		<telerik:RadAutoSuggestBox.ItemTemplate>
-			<DataTemplate>
-				<StackPanel Orientation="Horizontal">
-					<Rectangle Fill="OrangeRed" Width="3" Height="12"/>
-					<TextBlock Text="{Binding Name}" Margin="3 0 0 0" TextDecorations="Underline" />
-				</StackPanel>
-			</DataTemplate>
-		</telerik:RadAutoSuggestBox.ItemTemplate>
-	</telerik:RadAutoSuggestBox>
-```
+<snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_1_setting_itemtemplate-xaml' />
 
 #### Figure 1: Custom ItemTemplate
 ![{{ site.framework_name }} RadAutoSuggestBox Custom ItemTemplate](images/radautosuggestbox-appearance-customize-drop-down-items-0.png)
@@ -38,45 +26,10 @@ __Example 1: Setting ItemTemplate__
 The __ItemTemplateSelector__ allows you to choose a different DataTemplate for each item in the ItemsSource, based on a condition. 
 
 __Example 2: Implementing the template selector__
-```C#
-	public class AutoSuggestBoxItemTemplateSelector : DataTemplateSelector
-    {
-        public DataTemplate DefaultTemplate { get; set; }
-        public DataTemplate AlternateTemplate { get; set; }
-		
-        public override DataTemplate SelectTemplate(object item, DependencyObject container)
-        {
-            var dataItem = (CountryInfo)item;
-            if (dataItem.Name.Equals("Bulgaria"))
-            {
-                return this.AlternateTemplate;
-            }
-            return this.DefaultTemplate;
-        }
-    }
-```
+<snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_2_implementing_the_template_selector-cs' />
 
 __Example 3: Setting ItemTemplateSelector__
-```XAML
-	<telerik:RadAutoSuggestBox x:Name="radAutoSuggestBox" TextMemberPath="Name">
-		<telerik:RadAutoSuggestBox.ItemTemplateSelector>
-			<local:AutoSuggestBoxItemTemplateSelector>
-				<local:AutoSuggestBoxItemTemplateSelector.DefaultTemplate>
-					<DataTemplate>                            
-						<TextBlock Text="{Binding Name}" FontWeight="Bold" />
-					</DataTemplate>
-				</local:AutoSuggestBoxItemTemplateSelector.DefaultTemplate>
-				<local:AutoSuggestBoxItemTemplateSelector.AlternateTemplate>
-					<DataTemplate>
-						<Border Background="#15D7FF" Padding="4">
-							<TextBlock Text="{Binding Name}" Foreground="White" />
-						</Border>
-					</DataTemplate>
-				</local:AutoSuggestBoxItemTemplateSelector.AlternateTemplate>
-			</local:AutoSuggestBoxItemTemplateSelector>		   
-		</telerik:RadAutoSuggestBox.ItemTemplateSelector>
-	</telerik:RadAutoSuggestBox>
-```
+<snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_3_setting_itemtemplateselector-xaml' />
 
 #### Figure 2: Custom ItemTemplateSelector
 ![{{ site.framework_name }} RadAutoSuggestBox Custom ItemTemplateSelector](images/radautosuggestbox-appearance-customize-drop-down-items-1.png)
@@ -84,49 +37,17 @@ __Example 3: Setting ItemTemplateSelector__
 The following example shows how to setup a basic RadAutoSuggestBox in order to test the ItemTemplate features.
 
 __Example 4: Creating data model for the items__
-```C#
-	public static class CountryDataProvider
-    {
-        public static List<CountryInfo> Countries { get; set; }
-
-        static CountryDataProvider()
-        {
-            Countries = new List<CountryInfo>();
-            var cultures = CultureInfo.GetCultures(CultureTypes.SpecificCultures);
-            foreach (CultureInfo culture in cultures)
-            {
-                var regionInfo = new RegionInfo(culture.LCID);
-                if (!Countries.Any(x => x.Name.Equals(regionInfo.EnglishName)))
-                {
-                    Countries.Add(new CountryInfo() { Name = regionInfo.EnglishName });
-                }
-            }
-        }
-    }
-
-    public class CountryInfo
-    {
-        public string Name { get; set; }
-    }
-```
+<snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_4_creating_data_model_for_the_items-cs' />
 
 __Example 5: Populating the control with data__
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.radAutoSuggestBox.ItemsSource = CountryDataProvider.Countries;
-	}
-```
+<snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_5_populating_the_control_with_data-cs' />
 
 ## Drop Down Settings
 
 The RadAutoSuggestBox control provides few properties to change the drop down default sizes - __MaxDropDownHeight__, __MaxDropDownWidth__ and __MinDropDownWidth__.
 
 __Example 6: Setting drop down sizes__
-```XAML
-	<telerik:RadAutoSuggestBox MaxDropDownHeight="150" MaxDropDownWidth="100"
-```
+<snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_6_setting_drop_down_sizes-xaml' />
 
 #### Figure 3: Custom drop down sizes
 ![{{ site.framework_name }} RadAutoSuggestBox Custom drop down sizes](images/radautosuggestbox-appearance-customize-drop-down-items-2.png)

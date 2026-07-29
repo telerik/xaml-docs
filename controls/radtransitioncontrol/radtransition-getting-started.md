@@ -42,15 +42,11 @@ In order to add a __RadTransitionControl__ to your application, you have to simp
 
 __Example 1: Adding telerik namespace__
 
-```XAML
-	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
-```
+<snippet id='radtransitioncontrol-radtransition-getting-started-block_1-xaml' />
 
 __Example 2: Creating a RadTransitionControl__
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTransitionControl" />
-```
+<snippet id='radtransitioncontrol-radtransition-getting-started-block_2-xaml' />
 
 >The __RadTransitionControl__ doesn't have any visual elements, so if it has no content, nothing will be visualized.
 
@@ -62,15 +58,7 @@ Here is a sample __RadListBox__ definition, which is populated with RadListBoxIt
 
 __Example 3: Sample RadListBox definition__
 
-```XAML
-	 <telerik:RadListBox x:Name="radListBox">
-		<telerik:RadListBox.Items>
-			<telerik:RadListBoxItem Content="Telerik UI" />
-			<telerik:RadListBoxItem Content="RadTransitionControl" />
-			<telerik:RadListBoxItem Content="Getting started" />
-		</telerik:RadListBox.Items>
-	</telerik:RadListBox>
-```
+<snippet id='radtransitioncontrol-radtransition-getting-started-block_3-xaml' />
 
 The content of the __RadTransitionControl__ should be represented by the content of the __SelectedItem__ in the __RadListBox__. This can be done by using element to element binding.
 
@@ -78,31 +66,7 @@ The content of the __RadTransitionControl__ should be represented by the content
 
 __Example 4: Binding RadTransitionControl Content__
 
-```XAML
-	<Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <telerik:RadListBox x:Name="radListBox">
-            <telerik:RadListBox.Items>
-                <telerik:RadListBoxItem Content="Telerik UI" />
-                <telerik:RadListBoxItem Content="RadTransitionControl" />
-                <telerik:RadListBoxItem Content="Getting started" />
-            </telerik:RadListBox.Items>
-        </telerik:RadListBox>
-
-        <Border Margin="50 0 0 0" Grid.Column="1" BorderThickness="1" BorderBrush="Black" Width="400" Height="200" >
-            <telerik:RadTransitionControl
-                            FontSize="35"
-                            FontWeight="Bold"
-                            HorizontalAlignment="Center" 
-                            VerticalAlignment="Center"
-                            Content="{Binding SelectedItem.Content, ElementName=radListBox}">
-            </telerik:RadTransitionControl>
-        </Border>
-    </Grid>
-```
+<snippet id='radtransitioncontrol-radtransition-getting-started-block_4-xaml' />
 
 If you run your application at this point, the content of the __RadTransitionControl__ should change when you select an item in the __RadListBox__.
 
@@ -116,27 +80,13 @@ As the built-in transition effects are located in the __Telerik.Windows.Controls
 
 __Example 5: Adding TransitionEffects namespace__
 
-```XAML
-	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
-```
+<snippet id='radtransitioncontrol-radtransition-getting-started-block_5-xaml' />
 
 In order to change the applied transition you can set the __Transition__ property of the RadTransitionControl to one of the available transitions in the __TransitionEffects__ namespace.
 
 __Example 6: Applying SlideAndZoomTransition to RadTransitionControl__
 
-```XAML
-	 <telerik:RadTransitionControl
-                			Grid.Column="1"
-                            FontSize="35"
-                            FontWeight="Bold"
-                            HorizontalAlignment="Center" 
-                            VerticalAlignment="Center"
-                            Content="{Binding SelectedItem.Content, ElementName=radListBox}">
-		<telerik:RadTransitionControl.Transition>
-			<telerikTransitions:SlideAndZoomTransition />
-		</telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-radtransition-getting-started-block_6-xaml' />
 
 #### __Figure 1: Result from Example 6__
 ![SlideAndZoomTransition in RadTransitionControl](images/RadTransition_Getting_Started_01.png)
@@ -146,7 +96,7 @@ __Example 6: Applying SlideAndZoomTransition to RadTransitionControl__
 
 * [Telerik UI for WPF TransitionControl Component](https://www.telerik.com/products/wpf/transition.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -165,4 +115,3 @@ __Example 6: Applying SlideAndZoomTransition to RadTransitionControl__
  * [Integration with Content Controls]({%slug radtransition-features-integration-with-content-controls%})
 
  * [RadTransitionControl SDK examples]({%slug  radtransitioncontrol-sdk-examples%})
-

@@ -26,14 +26,10 @@ A typical auto-generated __DataServiceContext__ class will look like this:
 
 
 
-```C#
+<snippet id='raddataservicedatasource-loading-the-dataservicecontext-block_1-cs' />
 
-	public partial class NorthwindEntities : global::System.Data.Services.Client.DataServiceContext
-```
-```VB.NET
+<snippet id='raddataservicedatasource-loading-the-dataservicecontext-block_1-vb' />
 
-	Partial Public Class NorthwindEntities Inherits Global.System.Data.Services.Client.DataServiceContext
-```
 
 ## Setting DataServiceContext in code-behind
 
@@ -41,18 +37,10 @@ In order to create an instance of the DataServiceContext class, you need to spec
 
 
 
-```C#
+<snippet id='raddataservicedatasource-loading-the-dataservicecontext-block_2-cs' />
 
-	Uri serviceUri = new Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute);
-	NorthwindEntities northwindContext = new NorthwindEntities(serviceUri);
-	this.radDataServiceDataSource.DataServiceContext = northwindContext;
-```
-```VB.NET
+<snippet id='raddataservicedatasource-loading-the-dataservicecontext-block_2-vb' />
 
-	Dim serviceUri As New Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)
-	Dim northwindContext As New NorthwindEntities(serviceUri)
-	Me.radDataServiceDataSource.DataServiceContext = northwindContextSetting DataServiceContext in XAML
-```
 
 ## Setting DataServiceContext in XAML
 
@@ -60,35 +48,17 @@ Since the __DataServiceContext__ class does not have a parameterless constructor
 
 
 
-```C#
+<snippet id='raddataservicedatasource-loading-the-dataservicecontext-block_3-cs' />
 
-	public class MyNorthwindContext : NorthwindEntities
-	{
-	    public MyNorthwindContext() : base(new Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)){}
-	}
-```
-```VB.NET
+<snippet id='raddataservicedatasource-loading-the-dataservicecontext-block_3-vb' />
 
-	Public Class MyNorthwindContext
-	 Inherits NorthwindEntities
-	 Public Sub New()
-	  MyBase.New(New Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute))
-	 End Sub
-	End Class
-```
 
 Once you have a context class with a parameterless constructor, you can easily instantiate it in XAML:
 
 
 
-```XAML
+<snippet id='raddataservicedatasource-loading-the-dataservicecontext-block_4-xaml' />
 
-	<telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
-	  <telerik:RadDataServiceDataSource.DataServiceContext>
-	     <local:MyNorthwindContext/>
-	  </telerik:RadDataServiceDataSource.DataServiceContext>
-	</telerik:RadDataServiceDataSource>
-```
 
 >caution Once you assign the __DataServiceContext__ to the control, do not set any of its properties or call any of its methods. __RadDataServiceDataSource__ needs to be the only entity that operates with the context. __WCF Data Services___ are stateless, but the __DataServiceContext__ is not. Tampering with the __DataServiceContext__ of a __RadDataServiceDataSource__ may lead to unexpected results. In case you need to perform unrelated tasks, you can always create another context and work with it, instead of modifying the one that is currently in use by __RadDataServiceDataSource__.
 

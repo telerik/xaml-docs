@@ -28,13 +28,8 @@ If you do not encounter any of the above-mentioned problems, then you probably u
 
 __Example 1: Binding with ElementName__
 
-```XAML
-	<telerik:GridViewComboBoxColumn Header="Category"
-	DataMemberBinding="{Binding CategoryID}"
-	ItemsSource="{Binding Path=DataContext.Categories, ElementName=RootElement}"
-	DisplayMemberPath="CategoryName"
-	SelectedValueMemberPath="CategoryID" />
-```
+<snippet id='radgridview-troubleshooting-blank-cells-example_1_binding_with_elementname-xaml' />
+
 
 This will not work, as the DataContext of the cell would not be the ViewModel, but the business object related to the row instead. We do not recommend such approach.
 
@@ -48,37 +43,22 @@ There are two ways of solving the issue :
 
 __Example 2: Exposing the ViewModel as a Static Resource__
 
-```XAML
-	<UserControl.Resources>
-	    <local:MyViewModel x:Key="MyViewModel" />
-	</UserControl.Resources>
-```
+<snippet id='radgridview-troubleshooting-blank-cells-example_2_exposing_the_viewmodel_as_a_static_resource-xaml' />
+
 
 * Set the ItemsSource of the ComboBox column:
 
 __Example 3: Setting the ItemsSource of GridViewComboBox declaratively__
 
-```XAML
-	<telerik:GridViewComboBoxColumn Header="Category"
-	DataMemberBinding="{Binding CategoryID}"
-	ItemsSource="{Binding Path=Categories, Source={StaticResource MyViewModel}}"
-	DisplayMemberPath="CategoryName"
-	SelectedValueMemberPath="CategoryID" />
-```
+<snippet id='radgridview-troubleshooting-blank-cells-example_3_setting_the_itemssource_of_gridviewcombobox_declaratively-xaml' />
+
 
 __Example 4: Setting the ItemsSource of GridViewComboBoxColumn programmatically__
 
-```C#
-	private void gridView_DataLoaded(object sender, EventArgs e)
-	{
-	    (this.radGridView.Columns["Category"] as GridViewComboBoxColumn).ItemsSource = GetCategories();
-	}
-```
-```VB.NET
-	Private Sub gridView_DataLoaded(ByVal sender As Object, ByVal e As EventArgs)
-	    TryCast(Me.radGridView.Columns("Category"), GridViewComboBoxColumn).ItemsSource = GetCategories()
-	End Sub
-```
+<snippet id='radgridview-troubleshooting-blank-cells-example_4_setting_the_itemssource_of_gridviewcomboboxcolumn_programmatically-cs' />
+
+<snippet id='radgridview-troubleshooting-blank-cells-example_4_setting_the_itemssource_of_gridviewcomboboxcolumn_programmatically-vb' />
+
 
 ## Setting the IsLightWeightModeEnabled property
 

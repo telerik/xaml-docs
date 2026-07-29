@@ -24,37 +24,15 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
 
     __Example 1: Setting AutomationMode__
 
-    ```C#
-        public App()
-        {
-            AutomationManager.AutomationMode = AutomationMode.Disabled;
-            this.InitializeComponent();
-        }
-    ```
-	```VB.NET
-		Public Sub New()
-			AutomationManager.AutomationMode = AutomationMode.Disabled
-			Me.InitializeComponent()
-		End Sub
-    ```
+    <snippet id='radpropertygrid-performance-block_1-cs' />
+	<snippet id='radpropertygrid-performance-block_1-vb' />
 
 * Another optimization would be to __disable the Touch Support__ via the __TouchManager__. You can refer to the [Touch Support]({%slug touch-support%}) article for more information.
 
     __Example 2: Disabling touch support__
 
-    ```C#
-        public App()
-        {
-            TouchManager.IsEnabled = false;
-            this.InitializeComponent();
-        }
-    ```
-	```VB.NET
-		Public Sub New()
-			TouchManager.IsEnabled = False
-			Me.InitializeComponent()
-		End Sub
-    ```
+    <snippet id='radpropertygrid-performance-block_2-cs' />
+	<snippet id='radpropertygrid-performance-block_2-vb' />
 
 * As of __Q1 2012__ release we have introduced the option to enable/disable searching in nested properties through the __SearchInNestedProperties__ property of RadPropertyGrid (the default value is __False__). Setting it to __True__, can lead to degraded performance, when you have a lot of visible nested properties.
 
@@ -64,21 +42,8 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
 
     __Example 3: Suspending notifications while adding property definitions__
 
-    ```C#
-        this.propertyGrid.PropertyDefinitions.SuspendNotifications();
-        foreach (PropertyDefinition propertyDefinition in largeCollectionOfPropertyDefinitions)
-        {
-            this.propertyGrid.PropertyDefinitions.Add(propertyDefinition);
-        }
-        this.propertyGrid.PropertyDefinitions.ResumeNotifications();
-    ```
-	```VB.NET
-		Me.propertyGrid.PropertyDefinitions.SuspendNotifications()
-		For Each propertyDefinition As PropertyDefinition In largeCollectionOfPropertyDefinitions
-			Me.propertyGrid.PropertyDefinitions.Add(propertyDefinition)
-		Next propertyDefinition
-		Me.propertyGrid.PropertyDefinitions.ResumeNotifications()
-    ```
+    <snippet id='radpropertygrid-performance-block_3-cs' />
+	<snippet id='radpropertygrid-performance-block_3-vb' />
 
 ## See Also
 

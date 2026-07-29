@@ -24,29 +24,12 @@ The `HyperlinkInfo` class allows you to easily insert hyperlinks in the current 
 * `ToolTip`&mdash;A tooltip text for the hyperlink. 
 
 __Inserting a hyperlink pointing to a web address__  
-```C#
-	HyperlinkInfo info = new HyperlinkInfo()
-	{
-	    NavigateUri = "https://www.telerik.com/products/wpf/overview.aspx",
-	    Target = HyperlinkTargets.Blank,
-	    IsAnchor = false,
-		ToolTip = "Telerik UI for WPF website"
-	};
-	this.radRichTextBox.InsertHyperlink(info, "RichTextBox demo");
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_1-cs' />
 
 To insert a hyperlink to a bookmark within the document, specify the bookmark's name as the `NavigateUri` and set the `IsAnchor` to `true`.
 
 __Inserting a hyperlink pointing to a bookmark in the document__  
-```C#  
-	HyperlinkInfo info = new HyperlinkInfo()
-	{
-	   NavigateUri = "bookmark1",
-	   Target = HyperlinkTargets.Self,
-	   IsAnchor = true
-	};
-	this.radRichTextBox.InsertHyperlink(info, "Link to Bookmark 1");
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_2-cs' />
 
 The `InsertHyperlink` method provides the following overloads:         
 
@@ -57,9 +40,7 @@ The `InsertHyperlink` method provides the following overloads:
 To remove hyperlink from the document, position the caret within the hyperlink span and call the `RemoveHyperlink`.
 
 __Removing the hyperlink under the caret position__  
-```C#
-	this.radRichTextBox.RemoveHyperlink();
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_3-cs' />
 
 ## HyperlinkRangeStart and HyperlinkRangeEnd
 
@@ -68,37 +49,7 @@ The `HyperlinkRangeStart` and `HyperlinkRangeEnd` are Inline DocumentElements an
 To add a hyperlink using this API, add the range start object and then pair it with the range end. The information about the hyperlink is stored in a `HyperlinkInfo` object assigned to the `HyperlinkRangeStart`. Then, the range objects are added to the `Paragraph`'s `Inlines` collection.
 
 __Adding a hyperlink that spans on multiple document elements__  
-```C#
-	// creating the hyperlink range	
-	HyperlinkRangeStart hyperlinkStart = new HyperlinkRangeStart();
-	HyperlinkRangeEnd hyperlinkEnd = new HyperlinkRangeEnd();
-	hyperlinkEnd.PairWithStart(hyperlinkStart);
-	HyperlinkInfo hyperlinkInfo = new HyperlinkInfo() { NavigateUri = "http://telerik.com", Target = HyperlinkTargets.Blank };
-	hyperlinkStart.HyperlinkInfo = hyperlinkInfo;
-	
-	// document setup
-	RadDocument document = new RadDocument();
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	Span spanBefore = new Span("Text before the image ");
-	ImageInline image = new ImageInline(new Uri("/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/32/Picture.png", UriKind.Relative));
-	image.Size = new Size(32, 32);
-	Span spanAfter = new Span(" and some text after the image");
-	
-	// inserting the hyper link range and the content where the hyper links spans
-	paragraph.Inlines.Add(hyperlinkStart);
-	paragraph.Inlines.Add(spanBefore);
-	paragraph.Inlines.Add(image);
-	paragraph.Inlines.Add(spanAfter);
-	section.Blocks.Add(paragraph);
-	Paragraph anotherParagraph = new Paragraph();
-	anotherParagraph.Inlines.Add(new Span("Another paragraph here and still in hyperlink"));
-	anotherParagraph.Inlines.Add(hyperlinkEnd);
-	
-	section.Blocks.Add(anotherParagraph);
-	document.Sections.Add(section);	
-	this.radRichTextBox.Document = document;
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_4-cs' />
 
 __The document created with the hyperlink range setup__  
 
@@ -107,25 +58,14 @@ __The document created with the hyperlink range setup__
 The `HyperlinkRangeStart` and `HyperlinkRangeEnd` objects are used also when accessing and modifying the hyperlinks from the document.
 
 __Deleting all hyperlinks in a document and replace them with text__  
-```C#
-	IEnumerable<HyperlinkRangeStart> links = this.radRichTextBox.Document.EnumerateChildrenOfType<HyperlinkRangeStart>();
-	foreach (HyperlinkRangeStart link in links)
-	{
-	    this.radRichTextBox.Document.CaretPosition.MoveToInline(link.FirstLayoutBox as InlineLayoutBox, 0);
-	    this.radRichTextBox.Document.Selection.SelectAnnotationRange(link);
-	    this.radRichTextBox.Delete(false);
-	    this.radRichTextBox.Insert("Removed hyperlink");
-	}
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_5-cs' />
 
 ## Changing the Hyperlink ToolTip
 
 By default the hyperlink tooltip displays the navigation Uri along with the navigation mode (Ctrl+Click or Click only). To change format used to display this information, set the `HyperlinkToolTipFormatString` property of `RadRichTextBox`. This will set the format for all hyperlinks in the document.
 
 __Change the default hyperlink tooltip format__  
-```C#
-	<telerik:RadRichTextBox HyperlinkToolTipFormatString="{}Navigate to '{0}' by pressing {1}"/>
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_6-cs' />
 
 ![Showing the custom tooltip format](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_HyperlinkToolTipFormatString.png)
 
@@ -133,31 +73,11 @@ The tooltip can be customized also per hyperlink. To do this, set the `ToolTip` 
 
 __Inserting a hyperlink with a tooltip__
 
-```C#
-HyperlinkInfo info = new HyperlinkInfo()
-{
-	NavigateUri = "https://www.telerik.com/products/wpf/overview.aspx",
-	Target = HyperlinkTargets.Blank,
-	IsAnchor = false,
-	ToolTip = "Telerik UI for WPF product page. Use Ctrl+Click to open the page."
-};
-this.radRichTextBox.InsertHyperlink(info, "UI for WPF");
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_7-cs' />
 
 The `HyperlinkToolTipShowing` event can be used to further customize the tooltip content or cancel displaying it.
 
-```C#
- private void RadRichTextBox_HyperlinkToolTipShowing(object sender, Telerik.Windows.Documents.UI.HyperlinkToolTipShowingEventArgs e)
- {
-     HyperlinkRangeStart hyperlinkAnnotationRangeStart = e.HyperlinkAnnotationMarker;
-     HyperlinkInfo hyperlinkInfo = hyperlinkAnnotationRangeStart.HyperlinkInfo;
-     string originalToolTip = e.ToolTip;
-
-     e.ToolTip = "New tooltip value";
-     
-     // set e.Cancel = true; to cancel the tooltip showing
- }
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_8-cs' />
 
 ## Hyperlink Navigation Trigger
 
@@ -167,9 +87,7 @@ The trigger that navigates to the corresponding Uri is controlled by the `Hyperl
 * `Click`&mdash;Triggers the hyperlink when users click on the hyperlink.
 
 __Change the default hyperlink navigation mode__  
-```C#
-	this.radRichTextBox.HyperlinkNavigationMode = Telerik.Windows.Documents.UI.HyperlinkNavigationMode.Click;
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_9-cs' />
 
 ## Handling the Hyperlink Click Navigation
 
@@ -178,26 +96,7 @@ When a hyperlink is clicked, the `HyperlinkClicked` event of `RadRichTextBox` is
 The default hyperlink navigation can be cancelled by setting the `Handled` property of the `HyperlinkClickedEventArgs` to `true` or `IsTrustedUrl` to `false`.
 
 __Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
-```C#
-	private void RadRichTextBox_HyperlinkClicked(object sender, HyperlinkClickedEventArgs e)
-	{
-		var link = e.URL;
-		if (link.EndsWith("exe"))
-		{
-			e.Handled = true;
-			MessageBoxResult Result = MessageBox.Show("You are about to open an executable file. Do you want to proceed", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
-		   
-			if (Result == MessageBoxResult.Yes)
-			{
-				Process.Start(new ProcessStartInfo()
-				{
-					FileName = link,
-					UseShellExecute = true
-				});
-			}
-		}
-	}
-```
+<snippet id='radrichtextbox-features-document-elements-hyperlink-block_10-cs' />
 
 With the 2024 Q4 release, the default navigation behavior of the hyperlinks is to automatically open only valid web or email addresses.
 

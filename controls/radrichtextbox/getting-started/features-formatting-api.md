@@ -31,28 +31,14 @@ Here is an example of a toggle button that upon checking should make the selecti
 
 
 
-```XAML
-    <StackPanel>
-        <telerik:RadToggleButton x:Name="BoldButton" Content="B" Padding="5" HorizontalAlignment="Left" Click="BoldButton_Click" />
-        <telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged" Height="200" />
-    </StackPanel>
-```
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_1-xaml' />
 
 
 
 
 
-```C#
-    private void BoldButton_Click(object sender, RoutedEventArgs e)
-    {
-        this.radRichTextBox.ToggleBold();
-    }
-```
-```VB.NET
-    Private Sub BoldButton_Click(sender As Object, e As RoutedEventArgs)
-        Me.radRichTextBox.ToggleBold()
-    End Sub
-```
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_2-cs' />
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_3-vb' />
 
 ![{{ site.framework_name }} RadRichTextBox Bolded Text](images/RadRichTextBox_Formatting_01.png)
 
@@ -68,12 +54,8 @@ The following example inserts the word "text" at the CaretPosition.
 
 
 
-```C#
-    this.radRichTextBox.ActiveDocumentEditor.Insert("text");
-```
-```VB.NET
-	Me.radRichTextBox.ActiveDocumentEditor.Insert("text")
-```
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_4-cs' />
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_5-vb' />
 
 
 
@@ -93,9 +75,7 @@ Both approaches can be used to insert content at the caret position with the __I
 
 
 
-```C#
-    this.radRichTextBox.InsertFragment(fragment);
-```
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_6-cs' />
 
 ### Using the constructor of DocumentFragment
 
@@ -103,12 +83,8 @@ If you create a fragment in this way, it will end with a new paragraph. This is 
 
 
 
-```C#
-    DocumentFragment fragmentFromDocument = new DocumentFragment(radDocument);
-```
-```VB.NET
-    Dim fragment As New DocumentFragment(radDocument)
-```
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_7-cs' />
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_8-vb' />
 
 
 
@@ -121,12 +97,8 @@ If you choose to use the document selection when creating a __DocumentFragment__
 
 
 
-```C#
-    DocumentFragment fragmentFromSelection = radDocument.Selection.CopySelectedDocumentElements();
-```
-```VB.NET
-    Dim fragment As DocumentFragment = document.Selection.CopySelectedDocumentElements()
-```
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_9-cs' />
+<snippet id='radrichtextbox-getting-started-features-formatting-api-block_10-vb' />
 
 
 >For merging RadDocument instances, you can use the [RadDocumentMerger class]({%slug radrichtextbox-features-merge-raddocumentmerger%}).

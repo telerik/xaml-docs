@@ -19,10 +19,7 @@ When instantiating the **RadDocumentMerger** class, you should pass to its const
 
 #### **[C#] Example 1: Create a RadDocumentMerger**
 
-```C#
- 
-	RadDocumentMerger merger = new RadDocumentMerger(targetDocument);
-```
+<snippet id='radrichtextbox-features-merge-documents-raddocumentmerger-block_1-cs' />
 
 >The document passed to the constructor can be obtained through the **Document property** of the RadDocumentMerger instance.
 

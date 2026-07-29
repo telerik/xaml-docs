@@ -31,16 +31,8 @@ Once you've added the service reference, you can define your service proxy class
 
 __Example 1: The Service Proxy Class__
 
-```C#
-    public class ODataContext : Container
-    {
-        public ODataContext()
-            : base(new Uri("http://localhost:21900/odata", UriKind.Absolute))
-        {
+<snippet id='raddataservicedatasource-how-to-connect-to-web-api-example_1_the_service_proxy_class-cs' />
 
-        }
-    }
-```
 
 >You should replace http://localhost:21900/odata with the address of your Web API service.
 
@@ -50,33 +42,15 @@ All that's left is to use this class as the **DataServiceContext** of your RadDa
 
 __Example 2: Setting the DataServiceContext and displaying the data in a RadGridView__
 
-```XAML
-    <Grid>
-        <telerik:RadDataServiceDataSource Name="productsDataSource" QueryName="Products" AutoLoad="True">
-            <telerik:RadDataServiceDataSource.DataServiceContext>
-                <local:ODataContext/>
-            </telerik:RadDataServiceDataSource.DataServiceContext>
-        </telerik:RadDataServiceDataSource>
-        <telerik:RadGridView ItemsSource="{Binding DataView, ElementName=productsDataSource}" Deleted="RadGridView_Deleted" RowEditEnded="RadGridView_RowEditEnded"
-                            IsBusy="{Binding IsBusy, ElementName=productsDataSource}" />
-    </Grid>
-```
+<snippet id='raddataservicedatasource-how-to-connect-to-web-api-example_2_setting_the_dataservicecontext_and_displaying_the_data_in_a_radgridview-xaml' />
+
 
 You can see that there are handlers for the **Deleted** and **RowEditEnded** events of the RadGridView control. These are required to pass any changes made via the control's UI back to RadDataServiceDataSource.
 
 __Example 3: Submit changes made in the RadGridView control__
 
-```C#
-    private void RadGridView_RowEditEnded(object sender, Telerik.Windows.Controls.GridViewRowEditEndedEventArgs e)
-    {
-        productsDataSource.SubmitChanges();
-    }
+<snippet id='raddataservicedatasource-how-to-connect-to-web-api-example_3_submit_changes_made_in_the_radgridview_control-cs' />
 
-    private void RadGridView_Deleted(object sender, Telerik.Windows.Controls.GridViewDeletedEventArgs e)
-    {
-        productsDataSource.SubmitChanges();
-    }
-```
 
 After all of this, you should be able to see the data from your service as shown in **Figure 1**.
 

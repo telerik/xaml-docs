@@ -30,101 +30,21 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 1. After we will need to create a custom __DocumentPaginator__ class and override its GetPage(),IsPageCountValid(),PageCount() and PageSize() methods:
 
-	```C#
-		public class GanttPaginator : DocumentPaginator
-		{
-		    private IList<BitmapSource> exportImages;
-		
-		    public GanttPaginator(IEnumerable<BitmapSource> exportImages)
-		    {
-		        this.exportImages = exportImages.ToList();
-		    }
-		
-		    public override DocumentPage GetPage(int pageNumber)
-		    {
-		        var bitmap = this.exportImages[pageNumber];
-		        var imageSize = new Size(bitmap.Width, bitmap.Height);
-		        var image = new Image { Source = bitmap };
-		        image.Measure(imageSize);
-		        image.Arrange(new Rect(imageSize));
-		        image.UpdateLayout();
-		        return new DocumentPage(image);
-		    }
-		
-		    public override bool IsPageCountValid
-		    {
-		        get { return true; }
-		    }
-		
-		    public override int PageCount
-		    {
-		        get { return exportImages.Count(); }
-		    }
-		
-		    public override Size PageSize
-		    {
-		        get
-		        {
-		            return new Size(796.8, 1123.2);
-		        }
-		        set
-		        {
-		            throw new NotImplementedException();
-		        }
-		    }
-		
-		    public override IDocumentPaginatorSource Source
-		    {
-		        get { return null; }
-		    }
-		}
-	```
+	<snippet id='radganttview-features-exportingsupport-block_1-cs' />
+
 
 1. Next we need to create a __PrintingService__ class that will handle the printing functionality with the use of a PrintDialog:
 
-	```C#
-		public static class PrintingService
-		{
-		    public static void Print(RadGanttView ganttView)
-		    {
-		        var printDialog = new PrintDialog();
-		        if (printDialog.ShowDialog() == true)
-		        {
-		            var exportImages = Enumerable.Empty<BitmapSource>();
-		            var printingSettings = new ImageExportSettings(new Size(printDialog.PrintableAreaWidth, printDialog.PrintableAreaHeight), true, GanttArea.AllAreas);
-		            using (var export = ganttView.ExportingService.BeginExporting(printingSettings))
-		            {
-		                exportImages = export.ImageInfos.ToList().Select(info => info.Export());
-		            }
-		
-		            var paginator = new GanttPaginator(exportImages);
-		            printDialog.PrintDocument(paginator, "Print demo");
-		        }
-		    }
-		}
-	```
+	<snippet id='radganttview-features-exportingsupport-block_2-cs' />
+
 
 1. Finally we need to create a button that will make use of the newly created __PrintingService__ class:
 
-	```XAML
-		<Grid DataContext="{StaticResource ViewModel}">
-		
-		    <!--...-->
-		
-		    <telerik:RadButton x:Name="PrintButton" Click="PrintButtonClick" Content="Print" />
-		
-		    <telerik:RadGanttView x:Name="GanttView">
-		        <!--...-->
-		    </telerik:RadGanttView>
-		</Grid>
-	```
+	<snippet id='radganttview-features-exportingsupport-block_3-xaml' />
 
-	```C#
-		private void PrintButtonClick(object sender, RoutedEventArgs e)
-		{
-		    PrintingService.Print(this.GanttView);
-		}
-	```
+
+	<snippet id='radganttview-features-exportingsupport-block_4-cs' />
+
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GanttView/PrintingAndExporting).
 

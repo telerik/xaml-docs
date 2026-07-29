@@ -26,34 +26,15 @@ The Break elements can be used only in the context of a Paragraph element. The [
 
 __Example 1: Insert a break__
 
-```C#	
-	// inserting a break in the Section object directly
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	Break br = new Break(BreakType.PageBreak);
-	paragraph.Inlines.Add(br);
-	section.Blocks.Add(paragraph);	
-	
-	// inserting a break at the caret position using RadDocumentEditor
-	var editor = new RadDocumentEditor(this.richTextBox.Document);
-	editor.InsertPageBreak();
-```
-```VB.NET
-    Dim section As New Section()
-    Dim paragraph As New Paragraph()
-    Dim break As Break = New Break(BreakType.PageBreak)
-    paragraph.Inlines.Add(break)
-    section.Blocks.Add(paragraph)
-```
+<snippet id='radrichtextbox-document-elements-features-break-block_1-cs' />
+<snippet id='radrichtextbox-document-elements-features-break-block_2-vb' />
 
 ## Modifying a Break
 
 The __Break__ element exposes a __BreakType__ property, which specifies the type of the break. __Example 2__ demonstrates how to change it.
 
 __Example 2: Modify a break__ 
-```C#
-	br.BreakType = BreakType.LineBreak;
-```
+<snippet id='radrichtextbox-document-elements-features-break-block_3-cs' />
 
 ## See Also  
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})

@@ -20,36 +20,18 @@ __RadTreeView__ supports editing the displayed text of the item. The purpose of 
 ![{{ site.framework_name }} RadTreeView RadTreeView with several items](images/RadTreeView_TreeViewItemEditing_001.png)
 
 __Example 1: RadTreeView populate with several items__  
-```XAML
-	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"
-	        x:Name="radTreeViewItemFutsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis"/>
-	        <telerik:RadTreeViewItem Header="Cycling"/>
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_1-xaml' />
 
 ## Enable Editing 
 
 By default the treeview is not editable. In order to enable editing you need to set the __IsEditable__ property of RadTreeView to __True__. The default value is False.
 
 __Example 2: Enable editing in XAML__  
-```XAML
-	<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsEditable="True">
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_2-xaml' />
 
 __Example 3: Enable editing in code__  
-```C#	
-	radTreeView.IsEditable = true;
-```
-```VB.NET	
-	radTreeView.IsEditable = True
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_3-cs' />
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_4-vb' />
 
 ## Toggle Editing by Using Keyboard
 
@@ -62,23 +44,15 @@ If you want to cancel the current edit operation and to preserve any text change
 You can manually enter or exit the edit mode of RadTreeViewItem by setting its __IsInEditMode__.
 
 __Example 4: Start editing via code__
-```C#	
-	radTreeViewItem.IsInEditMode = true;	
-```
-```VB.NET
-	radTreeViewItem.IsInEditMode = True
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_5-cs' />
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_6-vb' />
 
 #### Figure 2: RadTreeViewItem in edit mode 
 ![{{ site.framework_name }} RadTreeView RadTreeViewItem in edit mode](images/RadTreeView_TreeViewItemEditing_010.png)
 
 __Example 5: Exit editing via code__
-```C#
-	radTreeViewItem.IsInEditMode = false;
-```
-```VB.NET
-	radTreeViewItem.IsInEditMode = False
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_7-cs' />
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_8-vb' />
 
 > Setting the __IsInEditMode__ property to False don't save the changes explicitly. To do so call the CommintEdit() method.
 
@@ -91,53 +65,29 @@ After entering the new text, in order to save your changes you should press the 
 If you want to finish the process of editing in code-behind and to save the changes manually, you need to call the __CommitEdit()__ method of the corresponding RadTreeViewItem.
 
 __Example 6: Commit changes__
-```C#	
-	radTreeViewItem.CommitEidt();
-```
-```VB.NET
-	radTreeViewItem.CommitEidt();
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_9-cs' />
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_10-vb' />
 
 ## Cancelling the Edit Operation Programmatically
 
 In order to cancel the edit process in the code-behind you need to invoke the __CancelEdit()__ method of the editing treeview item. This method discards modifications to data since the last save.
 
 __Example 5: Cancel editing__
-```C#	
-	radTreeViewItemFutsal.CancelEdit();
-```
-```VB.NET
-	radTreeViewItemFutsal.CancelEdit()
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_11-cs' />
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_12-vb' />
 
 ## Events
 
 The Telerik RadTreeView and RadTreeViewItem classes offer you several events for managing the edit process. These events are available both on the RadTreeView and on the RadTreeViewItem classes.
 
 __Example 6: Subscribing to edit events__
-```XAML
-	<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsEditable="True"
-	        PreviewEditStarted="radTreeView_PreviewEditStarted"
-	        EditStarted="radTreeView_EditStarted"
-	        PreviewEdited="radTreeView_PreviewEdited"
-	        EditCanceled="radTreeView_EditCanceled"
-	        Edited="radTreeView_Edited">
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_13-xaml' />
 
 The __PreviewEditStarted__ event occurs when the treeview item is about to be edited. The __EditStarted__ event is fired when the treeview item is already in edit mode. The type of the passed event arguments for both of the events is RadRoutedEventArgs.
 
 __Example 7: Accessing the editing RadTreeViewItem in the PreviewEditStarted event handler__
-```C#
-	private void radTreeView_PreviewEditStarted( object sender, RadRoutedEventArgs e )
-	{
-	    RadTreeViewItem targetItem = e.Source as RadTreeViewItem;
-	}
-```
-```VB.NET
-	Private Sub radTreeView_PreviewEditStarted(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
-	    Dim targetItem As RadTreeViewItem = TryCast(e.Source, RadTreeViewItem)
-	End Sub
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_14-cs' />
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_15-vb' />
 
 The __PreviewEdited__ event is fired just before the new __Header__ text of the item is applied. If the treeview is data bound you can update the data source with the new value. The __Edited__ event is fired once the new __Header__ text for the item is applied. You can get access to the new text of the __Header__ property, as well as to the old one, via the __RadTreeViewItemEditedEventArgs__ of the __PreviewEdited__ and __Edited__ events.
 
@@ -149,17 +99,8 @@ The __PreviewEdited__ event is fired just before the new __Header__ text of the 
 In the event handler you can place some code that has to be executed when the item is edited. For example, change the background color of the edited item: 
 
 __Example 8: Setting the background of the edited RadTreeViewItem__
-```C#
-	private void radTreeView_Edited( object sender, RadTreeViewItemEditedEventArgs e )
-	{
-	    ( e.Source as RadTreeViewItem ).Background = new SolidColorBrush( Colors.Red );
-	}
-```
-```VB.NET
-	Private Sub radTreeView_Edited(ByVal sender As Object, ByVal e As RadTreeViewItemEditedEventArgs)
-	    TryCast(e.Source, RadTreeViewItem).Background = New SolidColorBrush(Colors.Red)
-	End Sub
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_16-cs' />
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_17-vb' />
 
 #### Figure 4: RadTreeViewItem with its background changed on edit
 ![{{ site.framework_name }} RadTreeView RadTreeViewItem with its background changed on edit](images/RadTreeView_TreeViewItemEditing_030.png)

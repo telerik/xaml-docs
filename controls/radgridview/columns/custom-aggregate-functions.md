@@ -25,96 +25,20 @@ The `ExtensionMethodsType` tells the type of the static class that holds the met
 The `AggregateMethodName` returns the name of the aggregation method from the static class.
 
 __Implementing a static class that holds the aggregation functions__
-```C#
-	public static class ClubModelAggregates
-    {
-        public static string SumGoalsPerHalfSeason<TSource>(IEnumerable<Club> clubs)
-        {
-            StringBuilder sb = new StringBuilder();
-            double sum0 = 0, sum1 = 0;
+<snippet id='radgridview-columns-custom-aggregate-functions-implementing_a_static_class_that_holds_the_aggregation_functions-cs' />
 
-            foreach (var club in clubs)
-            {
-                if (club.Period != null )
-                {
-                    sum0 += club.FirstHalfSeasonNumberOfGoals;
-                    sum1 += club.SecondHalfSeasonNumberOfGoals;
-                }
-            }
-
-            sb.Append("1st Half Season Total Goals: ");
-            sb.Append(sum0);
-            sb.Append(" ");
-            sb.AppendLine();
-            sb.Append("2nd Half Season Total Goals: ");
-            sb.Append(sum1);
-
-            return sb.ToString();
-        }
-    }
-```
 
 __Implementing a custom function that calculates the median of the items__
-```C#
-	public class CustomSumFunction : EnumerableAggregateFunction
-    {
-        protected override string AggregateMethodName
-        {
-            get { return nameof(ClubModelAggregates.SumGoalsPerHalfSeason); }
-        }
+<snippet id='radgridview-columns-custom-aggregate-functions-implementing_a_custom_function_that_calculates_the_median_of_the_items-cs' />
 
-        protected override Type ExtensionMethodsType
-        {
-            get
-            {
-                return typeof(ClubModelAggregates);
-            }
-        }
-    }
-```
 
 __The Club model used to populate the ItemsSource of RadGridView__
-```C#
-	public class Club : ViewModelBase
-    {	
-		// other properties here
-	
-        private double firstHalfSeasonNumberOfGoals;
-        private double secondHalfSeasonNumberOfGoals;
-        
-		public double FirstHalfSeasonNumberOfGoals 
-		{
-            get { return this.firstHalfSeasonNumberOfGoals;  }
-            set { this.firstHalfSeasonNumberOfGoals = value; this.OnPropertyChanged(nameof(FirstHalfSeasonNumberOfGoals)); }
-        }
-		
-		public double SecondHalfSeasonNumberOfGoals 
-		{
-            get { return this.secondHalfSeasonNumberOfGoals;  }
-            set { this.secondHalfSeasonNumberOfGoals = value; this.OnPropertyChanged(nameof(SecondHalfSeasonNumberOfGoals)); }
-        }
+<snippet id='radgridview-columns-custom-aggregate-functions-the_club_model_used_to_populate_the_itemssource_of_radgridview-cs' />
 
-        public static ObservableCollection<Club> GetClubs()
-        {
-            return new ObservableCollection<Club>()
-			{
-				new Club() { FirstHalfSeasonNumberOfGoals = 44, SecondHalfSeasonNumberOfGoals = 39, /* other settings here */ },
-				new Club() { FirstHalfSeasonNumberOfGoals = 52, SecondHalfSeasonNumberOfGoals = 47, /* other settings here */ },
-				new Club() { FirstHalfSeasonNumberOfGoals = 29, SecondHalfSeasonNumberOfGoals = 51, /* other settings here */ },
-				new Club() { FirstHalfSeasonNumberOfGoals = 33, SecondHalfSeasonNumberOfGoals = 49, /* other settings here */ },
-			};
-        }
-    }
-```
 
 __Adding the function in the AggregateFunctions collection of RadGridView's columns__
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding MyProperty}">
-		<telerik:GridViewDataColumn.AggregateFunctions>
-			<local:CustomSumFunction />
-		</telerik:GridViewDataColumn.AggregateFunctions>
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-columns-custom-aggregate-functions-adding_the_function_in_the_aggregatefunctions_collection_of_radgridview_s_columns-xaml' />
+
 
 Find a runnable project showing this approach in the [following SDK sample](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomAggregateFunctionEnumerableProperty).
 
@@ -129,112 +53,21 @@ The `ExtensionMethodsType` tells the type of the static class that holds the met
 The `AggregateMethodName` returns the name of the aggregation method from the static class.
 
 __Implementing a static class that holds the aggregation functions__
-```C#
-	public static class MedianAggregates
-	{
-		// Invoked when the SourceFiled of the AggregateFunction points to a property which Type is System.Int32
-		public static object GetMedian<TSource>(IEnumerable<TSource> items, Func<TSource, int> selector)
-		{
-			IEnumerable<int> selectedValues = items.Select(selector).Cast<int>();
-			return GetMedian(selectedValues.ToArray());
-		}
+<snippet id='radgridview-columns-custom-aggregate-functions-implementing_a_static_class_that_holds_the_aggregation_functions-cs' />
 
-		// Invoked when the SourceFiled of the AggregateFunction points to a property which Type is System.Double
-		public static object GetMedian<TSource>(IEnumerable<TSource> items, Func<TSource, double> selector)
-		{
-			IEnumerable<double> selectedValues = items.Select(selector).Cast<double>();
-			return GetMedian(selectedValues.ToArray());
-		}
-
-		// Invoked when the SourceFiled of the AggregateFunction points to a property which Type is System.Decimal
-		public static object GetMedian<TSource>(IEnumerable<TSource> items, Func<TSource, decimal> selector)
-		{
-			IEnumerable<decimal> selectedValues = items.Select(selector).Cast<decimal>();
-			return GetMedian(selectedValues.ToArray());
-		}
-
-		// Invoked in the following situations:
-		// - when the SourceFiled of the AggregateFunction is not set
-		// - when the corresponding data type is not supported (non numeric type)
-		// - when no method overload for the corresponding Type is defined in this class
-		public static object GetMedian<TSource, TProperty>(IEnumerable<TSource> items, Func<TSource, TProperty> selector)
-		{
-			throw new ArgumentException(string.Format("Please set the SourceField property of the {0} object. The property Type should be numeric (int, double, etc.)", nameof(MedianFunction)));
-			// or implement custom logic that fetches whatever values you need
-		}
-
-		private static double GetMedian(int[] items)
-		{
-			Array.Sort(items);
-			int mid = items.Length / 2;
-			if (items.Length % 2 != 0)
-			{
-				return items[mid];
-			}			
-			return items.Length == 2 ? (items[0] + items[1]) / 2d : (items[mid - 1] + items[mid]) / 2d;
-		}
-
-		private static double GetMedian(double[] items)
-		{
-			Array.Sort(items);
-			int mid = items.Length / 2;
-			if (items.Length % 2 != 0)
-			{
-				return items[mid];
-			}
-			return items.Length == 2 ? (items[0] + items[1]) / 2d : (items[mid - 1] + items[mid]) / 2d;
-		}	
-
-		private static decimal GetMedian(decimal[] items)
-		{
-			Array.Sort(items);
-			int mid = items.Length / 2;
-			if (items.Length % 2 != 0)
-			{
-				return items[mid];
-			}
-			return items.Length == 2 ? (items[0] + items[1]) / 2m : (items[mid - 1] + items[mid]) / 2m;
-		}
-	}
-```
 
 __Implementing a custom function that calculates the median of the items__
-```C#
-	public class MedianFunction : EnumerableSelectorAggregateFunction
-	{
-		protected override string AggregateMethodName
-		{
-			get { return nameof(MedianAggregates.GetMedian); }
-		}
+<snippet id='radgridview-columns-custom-aggregate-functions-implementing_a_custom_function_that_calculates_the_median_of_the_items-cs' />
 
-		protected override Type ExtensionMethodsType
-		{
-			get
-			{
-				return typeof(MedianAggregates);
-			}
-		}
-	}
-```
 
 __Adding the function in the AggregateFunctions collection of RadGridView's columns__
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Number}">
-		<telerik:GridViewDataColumn.AggregateFunctions>
-			<local:MedianFunction SourceField="Number"/>
-		</telerik:GridViewDataColumn.AggregateFunctions>
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-columns-custom-aggregate-functions-adding_the_function_in_the_aggregatefunctions_collection_of_radgridview_s_columns-xaml' />
+
 
 ## Using Generic Aggregate Function
 
 To implement a generic aggregate function, you can use the `AggregateFunction<TElement, TResult>` class and set its `AggregationExpression` property.
 
 __Defining custom aggregate function__
-```C#
-	var customSumFunction  = new AggregateFunction<Club, int>() 
-	{ 
-		AggregationExpression = clubs => clubs.Select(x => x.StadiumCapacity).Sum() 
-	}; 
-	this.gridView.Columns[0].AggregateFunctions.Add(customSumFunction); 
-```
+<snippet id='radgridview-columns-custom-aggregate-functions-defining_custom_aggregate_function-cs' />
+

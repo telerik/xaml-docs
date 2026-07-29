@@ -47,81 +47,26 @@ You can subscribe to the __Deleting__ event declaratively or runtime like this:
 
 
 
-```XAML
-	<telerik:RadGridView x:Name="gridView" Deleting="gridView_Deleting" />
-```
+<snippet id='radgridview-events-delete-block_1-xaml' />
 
 
 
 
-```C#
-	this.gridView.Deleting += gridView_Deleting;
-```
-```VB.NET
-	AddHandler Me.gridView.Deleting, AddressOf gridView_Deleting
-	' #endregion
-	
-	'#region gridview-events-delete_7
-	AddHandler Me.gridView.Deleted, AddressOf gridView_Deleted
-```
+
+<snippet id='radgridview-events-delete-block_2-cs' />
+
+<snippet id='radgridview-events-delete-block_2-vb' />
+
 
 
 The Deleting event is cancelable. The example below uses the __Deleting__ event to ask the user for confirmation before the deletion is performed.
 
 
 
-```C#
-	protected IEnumerable<Object> itemsToBeDeleted;
-	
-	private void gridView_Deleting(object sender, Telerik.Windows.Controls.GridViewDeletingEventArgs e)
-	{
-	    //store the items to be deleted
-	    itemsToBeDeleted = e.Items;
-	
-	    //cancel the event so the item is not deleted
-	    //and wait for the user confirmation
-	    e.Cancel = true;
-	    //open the Confirm dialog
-	    RadWindow.Confirm("Are you sure?", this.OnRadWindowClosed);
-	}
-	
-	private void OnRadWindowClosed(object sender, WindowClosedEventArgs e)
-	{
-	    //check whether the user confirmed
-	    bool shouldDelete = e.DialogResult.HasValue ? e.DialogResult.Value : false;
-	    if (shouldDelete)
-	    {
-	        foreach (var club in itemsToBeDeleted)
-	        {
-	            gridView.Items.Remove(club);
-	        }
-	    }
-	}
-```
-```VB.NET
-	Protected itemsToBeDeleted As IEnumerable(Of Object)
-	
-	Private Sub gridView_Deleting(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewDeletingEventArgs)
-	    'store the items to be deleted
-	    itemsToBeDeleted = e.Items
-	
-	    'cancel the event so the item is not deleted
-	    'and wait for the user confirmation
-	    e.Cancel = True
-	    'open the Confirm dialog
-	    RadWindow.Confirm("Are you sure?", AddressOf Me.OnRadWindowClosed)
-	End Sub
-	
-	Private Sub OnRadWindowClosed(ByVal sender As Object, ByVal e As WindowClosedEventArgs)
-	    'check whether the user confirmed
-	    Dim shouldDelete As Boolean = If(e.DialogResult.HasValue, e.DialogResult.Value, False)
-	    If shouldDelete Then
-	        For Each club In itemsToBeDeleted
-	            gridView.Items.Remove(club)
-	        Next club
-	    End If
-	End Sub
-```
+<snippet id='radgridview-events-delete-block_3-cs' />
+
+<snippet id='radgridview-events-delete-block_3-vb' />
+
 
 ## Deleted event
 
@@ -134,18 +79,15 @@ You can subscribe to the __Deleted__ event declaratively or runtime like this:
 
 
 
-```XAML
-	<telerik:RadGridView x:Name="gridView" Deleted="gridView_Deleted" />
-```
+<snippet id='radgridview-events-delete-block_4-xaml' />
 
 
 
-```C#
-	this.gridView.Deleted += gridView_Deleted;
-```
-```VB.NET
-	AddHandler Me.gridView.Deleted, AddressOf gridView_Deleted
-```
+
+<snippet id='radgridview-events-delete-block_5-cs' />
+
+<snippet id='radgridview-events-delete-block_5-vb' />
+
 
 
 ## See Also

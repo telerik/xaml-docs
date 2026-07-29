@@ -17,27 +17,17 @@ __RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsC
 
 __Example 1: Setting RadCarousel's ItemsSource__
 
-```C#
-	var dataTable = GetDataTable();
-	this.RadCarousel1.ItemsSource = dataTable;
-```
-```VB.NET
-	Dim dataTable = GetDataTable()
-	Me.RadCarousel1.ItemsSource = dataTable
-```
+<snippet id='radcarousel-using-radcarousel-carousel-data-binding-example_1_setting_radcarousel_s_itemssource-cs' />
+<snippet id='radcarousel-using-radcarousel-carousel-data-binding-example_1_setting_radcarousel_s_itemssource-vb' />
+
 
 Unlike a standard items control, __RadCarousel's ItemsSource__ property is declared to be of type __System.Object__. This lets you provide objects that are not .NET collections like the ADO.NET __DataTable__ and __DataSet__:
 
 __Example 2: Providing a DataSet as an ItemsSource__
 
-```C#
-	var dataSet = dataTable.DataSet;
-	this.RadCarousel1.ItemsSource = dataSet;
-```
-```VB.NET
-	Dim dataSet = dataTable.DataSet
-	Me.RadCarousel1.ItemsSource = dataSet
-```
+<snippet id='radcarousel-using-radcarousel-carousel-data-binding-example_2_providing_a_dataset_as_an_itemssource-cs' />
+<snippet id='radcarousel-using-radcarousel-carousel-data-binding-example_2_providing_a_dataset_as_an_itemssource-vb' />
+
 
 Of course standard .NET collections that implement the __IEnumerable__ interface are fully supported as well.
 
@@ -49,31 +39,13 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
        
 __Example 3: Setting ItemsSource through XAML__
 
-```XAML
-	<Grid>
-	  <Grid.Resources>
-	    <ObjectDataProvider x:Key="objectDataProvider" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
-	  </Grid.Resources>
-	  <telerik:RadCarousel Name="RadCarousel1"
-	      ItemsSource="{Binding Source={StaticResource objectDataProvider}}">
-	  </telerik:RadCarousel>
-	</Grid>
-```
+<snippet id='radcarousel-using-radcarousel-carousel-data-binding-example_3_setting_itemssource_through_xaml-xaml' />
 
 >Note that you have to always pass data provider objects through a binding for the WPF bindings infrastructure to extract the data. This code will __not__ work:
 
 __Example 4: Incorrectly setting ItemsSource through XAML__
 
-```XAML
-	<Grid>
-	  <Grid.Resources>
-	    <ObjectDataProvider x:Key="objectDataProviderIncorrect" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
-	  </Grid.Resources>
-	  <telerik:RadCarousel Name="RadCarouselIncorrect"
-	      ItemsSource="{StaticResource objectDataProviderIncorrect}">
-	  </telerik:RadCarousel>
-	</Grid>
-```
+<snippet id='radcarousel-using-radcarousel-carousel-data-binding-example_4_incorrectly_setting_itemssource_through_xaml-xaml' />
 
 As you can see, using __{StaticResource objectDataProvider}__ directly fails to get the real data source from the data provider.
 

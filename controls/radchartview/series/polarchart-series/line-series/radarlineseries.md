@@ -17,34 +17,8 @@ This series is visualized on the screen as a straight line connecting each of th
 You can use the following definition to display a simple RadarLineSeries
 
 __Example 1: Declaring an RadarLineSeries in XAML__
-```XAML
-	<telerik:RadPolarChart Palette="Windows8">
-		<telerik:RadPolarChart.PolarAxis>
-			<telerik:PolarAxis />
-		</telerik:RadPolarChart.PolarAxis>
-		<telerik:RadPolarChart.RadialAxis>
-			<telerik:CategoricalRadialAxis />
-		</telerik:RadPolarChart.RadialAxis>
-		<telerik:RadPolarChart.Series>
-			<telerik:RadarLineSeries>
-				<telerik:RadarLineSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="4" />
-					<telerik:CategoricalDataPoint Category="B" Value="4" />
-					<telerik:CategoricalDataPoint Category="C" Value="4" />
-					<telerik:CategoricalDataPoint Category="D" Value="4" />
-					<telerik:CategoricalDataPoint Category="E" Value="4" />
-					<telerik:CategoricalDataPoint Category="F" Value="4" />
-					<telerik:CategoricalDataPoint Category="G" Value="4" />
-					<telerik:CategoricalDataPoint Category="H" Value="4" />
-					<telerik:CategoricalDataPoint Category="J" Value="4" />
-					<telerik:CategoricalDataPoint Category="K" Value="4" />
-					<telerik:CategoricalDataPoint Category="L" Value="4" />
-					<telerik:CategoricalDataPoint Category="M" Value="4" />
-				</telerik:RadarLineSeries.DataPoints>
-			</telerik:RadarLineSeries>
-		</telerik:RadPolarChart.Series>
-	</telerik:RadPolarChart>
-```
+<snippet id='radchartview-series-polarchart-series-line-series-radarlineseries-example_1_declaring_an_radarlineseries_in_xaml-xaml' />
+
 
 ![radchartview-series-radarlineseries](images/radchartview-series-radarlineseries.png)
 
@@ -60,27 +34,12 @@ You can use the ValueBinding and CategoryBinding properties of the PointSeries t
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public string Category { get; set; }
-        public double Value { get; set; }
-    }
+<snippet id='radchartview-series-polarchart-series-line-series-radarlineseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { Category = "January", Value = 2},
-		//....
-	};
-```
 
 __Example 3: Specify a PointSeries in XAML__
-```XAML	
-	<telerik:RadPolarChart.Series>
-		<telerik:RadarLineSeries ItemsSource="{Binding Data}" ValueBinding="Value" CategoryBinding="Category"/>
-	</telerik:RadPolarChart.Series>
-```
+<snippet id='radchartview-series-polarchart-series-line-series-radarlineseries-example_3_specify_a_pointseries_in_xaml-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

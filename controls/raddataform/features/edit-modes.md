@@ -23,9 +23,8 @@ The default option __utilizes lighter UI, but also provides fewer options__:
 
 __Example 1: RadDataForm with Default EditMode__
 
-```XAML
-	<telerik:RadDataForm EditMode="Default"/>
-```
+<snippet id='raddataform-features-edit-modes-example_1_raddataform_with_default_editmode-xaml' />
+
 
 __Figure 1__: RadDataForm with Default EditMode
 
@@ -39,9 +38,8 @@ It relies on DataFormDataField's **DataMemberBinding** property. Setting this mo
 
 __Example 2: RadDataForm with EditMode set to Single__
 
-```XAML
-	<telerik:RadDataForm EditMode="Single"/>
-```
+<snippet id='raddataform-features-edit-modes-example_2_raddataform_with_editmode_set_to_single-xaml' />
+
 
 __Figure 2__: RadDataForm with Single EditMode
 

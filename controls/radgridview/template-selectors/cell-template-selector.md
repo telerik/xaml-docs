@@ -26,63 +26,10 @@ To do so follow these steps:
 
 
 
-```C#
-	public class MyCellTemplateSelector : DataTemplateSelector
-	{
-	    public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
-	    {
-	        if (item is Club)
-	        {
-	            Club club = item as Club;
-	            if (club.StadiumCapacity > 50000)
-	            {
-	                return bigStadium;
-	            }
-	            else
-	            {
-	                return smallStadium;
-	            }
-	        }
-	        return null;
-	    }
-	    public DataTemplate bigStadium { get; set; }
-	    public DataTemplate smallStadium { get; set; }
-	}
-```
-```VB.NET
-	Public Class MyCellTemplateSelector
-	    Inherits DataTemplateSelector
-	    Public Overrides Function SelectTemplate(item As Object, container As System.Windows.DependencyObject) As System.Windows.DataTemplate
-	        If TypeOf item Is Club Then
-	            Dim club As Club = TryCast(item, Club)
-	            If club.StadiumCapacity > 50000 Then
-	                Return bigStadium
-	            Else
-	                Return smallStadium
-	            End If
-	        End If
-	        Return Nothing
-	    End Function
-	    Public Property bigStadium() As DataTemplate
-	        Get
-	            Return m_bigStadium
-	        End Get
-	        Set(value As DataTemplate)
-	            m_bigStadium = value
-	        End Set
-	    End Property
-	    Private m_bigStadium As DataTemplate
-	    Public Property smallStadium() As DataTemplate
-	        Get
-	            Return m_smallStadium
-	        End Get
-	        Set(value As DataTemplate)
-	            m_smallStadium = value
-	        End Set
-	    End Property
-	    Private m_smallStadium As DataTemplate
-	End Class
-```
+<snippet id='radgridview-template-selectors-cell-template-selector-block_1-cs' />
+
+<snippet id='radgridview-template-selectors-cell-template-selector-block_1-vb' />
+
 
 In this case we have two different DataTemplates that could be applied - bigStadium and smallStadium. Depending on the underlying data we choose / select which template to apply.
 
@@ -90,37 +37,15 @@ In this case we have two different DataTemplates that could be applied - bigStad
 
 
 
-```XAML
-	<my:MyCellTemplateSelector x:Key="myCellTemplateSelector">
-	    <my:MyCellTemplateSelector.bigStadium>
-	        <DataTemplate>
-	            <TextBlock Text="{Binding StadiumCapacity}" 
-	            TextDecorations="underline" 
-	            Foreground="Red"
-	            TextAlignment="Right" />
-	        </DataTemplate>
-	    </my:MyCellTemplateSelector.bigStadium>
-	    <my:MyCellTemplateSelector.smallStadium>
-	        <DataTemplate>
-	            <TextBlock Text="{Binding StadiumCapacity}" 
-	            FontWeight="Bold" 
-	            Foreground="Green"
-	            TextAlignment="Left" />
-	        </DataTemplate>
-	    </my:MyCellTemplateSelector.smallStadium>
-	</my:MyCellTemplateSelector>
-```
+<snippet id='radgridview-template-selectors-cell-template-selector-block_2-xaml' />
+
 
 **4**. Finally, set the __CellTemplateSelector__ property of the data column which represents the StadiumCapacity field:
 
 
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-	Header="Stadium" 
-	CellTemplateSelector="{StaticResource myCellTemplateSelector}"
-	DataFormatString="{}{0:N0}"/>
-```
+<snippet id='radgridview-template-selectors-cell-template-selector-block_3-xaml' />
+
 
 You can use the **CellEditTemplateSelector** property in a similar manner with the only difference that the custom controls you define in the template will be displayed only once it enters edit mode.
 

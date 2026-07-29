@@ -46,13 +46,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 __Example 1: Adding RadDataForm in XAML__
 
-```XAML
-	  <UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid x:Name="LayoutRoot" Background="White">
-	      <telerik:RadDataForm x:Name="RadDataForm1" />
-	    </Grid>
-	  </UserControl>
-```
+<snippet id='raddataform-getting-started-getting-started-example_1_adding_raddataform_in_xaml-xaml' />
+
 
 Now if you run the application, you will see the empty RadDataForm:
 
@@ -66,131 +61,19 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 
 __Example 2: Creating an Employee Class with Some Exposed Properties__
 
-```C#
-	public class Employee
-	{
-	    public string FirstName
-	    {
-	        get;
-	        set;
-	    }
-	    public string LastName
-	    {
-	        get;
-	        set;
-	    }
-	    public string Occupation
-	    {
-	        get;
-	        set;
-	    }
-	    public DateTime StartingDate
-	    {
-	        get;
-	        set;
-	    }
-	    public bool IsMarried
-	    {
-	        get;
-	        set;
-	    }
-	    public int Salary
-	    {
-	        get;
-	        set;
-	    }
-	    public Gender Gender
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class Employee
-	    Public Property FirstName() As String
-	        Get
-	            Return m_FirstName
-	        End Get
-	        Set(value As String)
-	            m_FirstName = value
-	        End Set
-	    End Property
-	    Private m_FirstName As String
-	    Public Property LastName() As String
-	        Get
-	            Return m_LastName
-	        End Get
-	        Set(value As String)
-	            m_LastName = value
-	        End Set
-	    End Property
-	    Private m_LastName As String
-	    Public Property Occupation() As String
-	        Get
-	            Return m_Occupation
-	        End Get
-	        Set(value As String)
-	            m_Occupation = value
-	        End Set
-	    End Property
-	    Private m_Occupation As String
-	    Public Property StartingDate() As DateTime
-	        Get
-	            Return m_StartingDate
-	        End Get
-	        Set(value As DateTime)
-	            m_StartingDate = value
-	        End Set
-	    End Property
-	    Private m_StartingDate As DateTime
-	    Public Property IsMarried() As Boolean
-	        Get
-	            Return m_IsMarried
-	        End Get
-	        Set(value As Boolean)
-	            m_IsMarried = value
-	        End Set
-	    End Property
-	    Private m_IsMarried As Boolean
-	    Public Property Salary() As Integer
-	        Get
-	            Return m_Salary
-	        End Get
-	        Set(value As Integer)
-	            m_Salary = value
-	        End Set
-	    End Property
-	    Private m_Salary As Integer
-	    Public Property Gender() As Gender
-	        Get
-	            Return m_Gender
-	        End Get
-	        Set(value As Gender)
-	            m_Gender = value
-	        End Set
-	    End Property
-	    Private m_Gender As Gender
-	End Class
-```
+<snippet id='raddataform-getting-started-getting-started-example_2_creating_an_employee_class_with_some_exposed_properties-cs' />
+
+<snippet id='raddataform-getting-started-getting-started-example_2_creating_an_employee_class_with_some_exposed_properties-vb' />
+
 
 In the example above **Gender** is of type enum:
 
 __Example 3: Create Gender Enumeration__
 
-```C#
-	public enum Gender
-	{
-	    Female,
-	    Male
-	}
-```
-```VB.NET
-	Public Enum Gender
-	    Female
-	    Male
-	End Enum
-```
+<snippet id='raddataform-getting-started-getting-started-example_3_create_gender_enumeration-cs' />
+
+<snippet id='raddataform-getting-started-getting-started-example_3_create_gender_enumeration-vb' />
+
 
 >Note that in case you want to be notified on the changes made on the data item, the class Employee should implement the __INotifyPropertyChanged__ interface and raise the __PropertyChanged__ event every time a property value changes.
 
@@ -198,31 +81,10 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 __Example 4: Binding a Single Item to RadDataForm__
 
-```C#
-	Employee employee = new Employee()
-	{
-	    FirstName = "Sarah",
-	    LastName = "Blake",
-	    Occupation = "Supplied Manager",
-	    StartingDate = new DateTime(2005, 04, 12),
-	    IsMarried = true,
-	    Salary = 3500,
-	    Gender = Gender.Female
-	};
-	this.RadDataForm1.CurrentItem = employee;
-```
-```VB.NET
-	Dim employee As New Employee() With {
-	 .FirstName = "Sarah",
-	 .LastName = "Blake",
-	 .Occupation = "Supplied Manager",
-	 .StartingDate = New DateTime(2005, 4, 12),
-	 .IsMarried = True,
-	 .Salary = 3500,
-	 .Gender = Gender.Female
-	}
-	Me.RadDataForm1.CurrentItem = employee
-```
+<snippet id='raddataform-getting-started-getting-started-example_4_binding_a_single_item_to_raddataform-cs' />
+
+<snippet id='raddataform-getting-started-getting-started-example_4_binding_a_single_item_to_raddataform-vb' />
+
 
 After you run the application you should see the following:
 
@@ -236,109 +98,19 @@ We will create a simple **EmployeeService** class with a single static method - 
 
 __Example 5: Creating an EmployeeService class with a static GetEmployees() method__
 
-```C#
-	public class EmployeeService
-	{
-	    public static ObservableCollection<Employee> GetEmployees()
-	    {
-	        ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
-	        employees.Add(new Employee() 
-	        { 
-	            FirstName = "Sarah", 
-	            LastName = "Blake", 
-	            Occupation = "Supplied Manager", 
-	            StartingDate = new DateTime(2005, 04, 12), 
-	            IsMarried = true, Salary = 3500, 
-	            Gender = Gender.Female 
-	        });
-	        employees.Add(new Employee() 
-	        { 
-	            FirstName = "Jane", 
-	            LastName = "Simpson", 
-	            Occupation = "Security", 
-	            StartingDate = new DateTime(2008, 12, 03), 
-	            IsMarried = true, 
-	            Salary = 2000, 
-	            Gender = Gender.Female 
-	        });
-	        employees.Add(new Employee() 
-	        { 
-	            FirstName = "John", 
-	            LastName = "Peterson", 
-	            Occupation = "Consultant", 
-	            StartingDate = new DateTime(2005, 04, 12), 
-	            IsMarried = false, Salary = 2600, 
-	            Gender = Gender.Male 
-	        });
-	        employees.Add(new Employee() 
-	        { 
-	            FirstName = "Peter", 
-	            LastName = "Bush",
-	            Occupation = "Cashier", 
-	            StartingDate = new DateTime(2005, 04, 12), 
-	            IsMarried = true, 
-	            Salary = 2300, 
-	            Gender = Gender.Male 
-	        });
-	        return employees;
-	    }
-	}
-```
-```VB.NET
-	Public Class EmployeeService
-	    Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
-	        Dim employees As New ObservableCollection(Of Employee)()
-	        employees.Add(New Employee() With { _
-	          .FirstName = "Sarah", _
-	          .LastName = "Blake", _
-	          .Occupation = "Supplied Manager", _
-	          .StartingDate = New DateTime(2005, 4, 12), _
-	          .IsMarried = True, _
-	          .Salary = 3500, _
-	          .Gender = Gender.Female _
-	        })
-	        employees.Add(New Employee() With { _
-	          .FirstName = "Jane", _
-	          .LastName = "Simpson", _
-	          .Occupation = "Security", _
-	          .StartingDate = New DateTime(2008, 12, 3), _
-	          .IsMarried = True, _
-	          .Salary = 2000, _
-	          .Gender = Gender.Female _
-	        })
-	        employees.Add(New Employee() With { _
-	          .FirstName = "John", _
-	          .LastName = "Peterson", _
-	          .Occupation = "Consultant", _
-	          .StartingDate = New DateTime(2005, 4, 12), _
-	          .IsMarried = False, _
-	          .Salary = 2600, _
-	          .Gender = Gender.Male _
-	        })
-	        employees.Add(New Employee() With { _
-	          .FirstName = "Peter", _
-	          .LastName = "Bush", _
-	          .Occupation = "Cashier", _
-	          .StartingDate = New DateTime(2005, 4, 12), _
-	          .IsMarried = True, _
-	          .Salary = 2300, _
-	          .Gender = Gender.Male _
-	        })
-	        Return employees
-	    End Function
-	End Class
-```
+<snippet id='raddataform-getting-started-getting-started-example_5_creating_an_employeeservice_class_with_a_static_getemployees_method-cs' />
+
+<snippet id='raddataform-getting-started-getting-started-example_5_creating_an_employeeservice_class_with_a_static_getemployees_method-vb' />
+
 
 Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 
 __Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
-```C#
-	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
-```
-```VB.NET
-	Me.RadDataForm1.ItemsSource = EmployeeService.GetEmployees()
-```
+<snippet id='raddataform-getting-started-getting-started-example_6_set_the_itemssource_of_the_raddataform_to_the_observable_collection-cs' />
+
+<snippet id='raddataform-getting-started-getting-started-example_6_set_the_itemssource_of_the_raddataform_to_the_observable_collection-vb' />
+
 
 On running the application, you should see the following:
 

@@ -37,21 +37,13 @@ You can include the control in your page by either dragging it from the toolbox 
 
 __Creating RadDesktopAlert__
 
-```C#
-	var alert = new RadDesktopAlert();
-	alert.Header = "MAIL NOTIFICATION";
-	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting.";
-	alert.ShowDuration = 3000;
-```
+<snippet id='raddesktopalert-getting-started-creating_raddesktopalert-cs' />
+
 
 __Creating RadDesktopAlert__
 
-```VB
-	Dim alert = New RadDesktopAlert()
-	alert.Header = "MAIL NOTIFICATION"
-	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting."
-	alert.ShowDuration = 3000
-```
+<snippet id='raddesktopalert-getting-started-creating_raddesktopalert-vb' />
+
 
 >__RadDesktopAlert__ is designed to work with [__RadDesktopAlertManager__]({%slug raddesktopalert-desktop-alert-manager%}). If just placed in XAML it won't be completely functional.
 
@@ -59,17 +51,13 @@ In order to visualize it, a new instance of __RadDesktopAlertManager__ should be
 
 __Showing RadDesktopAlert__
 
-```C#
-	RadDesktopAlertManager manager = new RadDesktopAlertManager();
-	manager.ShowAlert(alert);
-```
+<snippet id='raddesktopalert-getting-started-showing_raddesktopalert-cs' />
+
 
 __Showing RadDesktopAlert__
 
-```VB
-	Dim manager As New RadDesktopAlertManager()
-	manager.ShowAlert(alert)
-```
+<snippet id='raddesktopalert-getting-started-showing_raddesktopalert-vb' />
+
 
 ## Setting a Theme
 
@@ -89,17 +77,8 @@ To change the theme, you can follow the steps below:
 __Example 1__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 1: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='raddesktopalert-getting-started-example_1_merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

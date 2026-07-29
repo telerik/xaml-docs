@@ -26,23 +26,8 @@ For example, consider the following __RecurrencePattern__ declaration:
 
 
 
-```C#
-	var pattern = new RecurrencePattern()
-	{
-	    Frequency = RecurrenceFrequency.Daily,
-	    DaysOfWeekMask = RecurrenceDays.WeekDays,
-	    Interval = 3,
-	    MaxOccurrences = 10
-	};
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	    .Frequency = RecurrenceFrequency.Daily,
-	    .DaysOfWeekMask = RecurrenceDays.WeekDays,
-	    .Interval = 3,
-	    .MaxOccurrences = 10
-	}
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepatternhelper-block_1-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepatternhelper-block_2-vb' />
 
 A new daily recurrence pattern is created that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.
 
@@ -50,12 +35,8 @@ The next code snippet demonstrates you how to use the __RecurrencePatternToStrin
 
 
 
-```C#
-	var serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern);
-```
-```VB.NET
-	Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepatternhelper-block_3-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepatternhelper-block_4-vb' />
 
 After executing the above example the result string will be: __FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR__.
 
@@ -71,16 +52,8 @@ Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;
 
 
 
-```C#
-	var serializedPattern = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR";
-	RecurrencePattern pattern;
-	RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, out pattern);
-```
-```VB.NET
-	Dim serializedPattern As String = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR"
-	Dim pattern As RecurrencePattern
-	RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepatternhelper-block_5-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepatternhelper-block_6-vb' />
 
 The result will be a new daily recurrence pattern that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.
 

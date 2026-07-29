@@ -34,123 +34,26 @@ Here is an example XAML snippet that demonstrates how to create chart with horiz
         
 __Example 1: Setting DateTimeContinuousAxis__
 
-```XAML
-	<telerik:RadCartesianChart x:Name="chart">
-	   <telerik:RadCartesianChart.HorizontalAxis>
-	      <telerik:DateTimeContinuousAxis LabelFitMode="MultiLine" LabelFormat="MMM yyyy"/>
-	   </telerik:RadCartesianChart.HorizontalAxis>
-	   
-	   <telerik:RadCartesianChart.VerticalAxis>
-	      <telerik:LinearAxis/>
-	   </telerik:RadCartesianChart.VerticalAxis>
-	
-	   <telerik:RadCartesianChart.Series>
-	      <telerik:LineSeries Stroke="Orange"
-	                        StrokeThickness="2"/>
-	   </telerik:RadCartesianChart.Series> 						
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-datetimeaxes-example_1_setting_datetimecontinuousaxis-xaml' />
+
 
 Below is the binding logic:        
 
 __Example 2: Setting the binding in code behind__
 
-```C#
-	public MainPage()
-	{
-	    InitializeComponent();
-	    DateTime lastDate = DateTime.Now;
-	    double[] lastVal = new double[] { 25,50,45,16,45 };
-	
-	    List<ChartDataObject> dataSouce = new List<ChartDataObject>();
-	    for (int i = 0; i < 5; ++i)
-	    {
-	        ChartDataObject obj = new ChartDataObject { Date = lastDate.AddMonths(1), Value = lastVal[i] };
-	        dataSouce.Add(obj);
-	        lastDate = obj.Date;
-	    }
-	    LineSeries series = (LineSeries)this.chart.Series[0];
-	    series.CategoryBinding = new PropertyNameDataPointBinding() { PropertyName = "Date" };
-	    series.ValueBinding = new PropertyNameDataPointBinding() { PropertyName = "Value" };
-	
-	    series.ItemsSource = dataSouce;
-	}
-```
-```VB.NET
-	Public Sub New()
-	   InitializeComponent()
-	
-	   Dim lastDate As DateTime = DateTime.Now
-	   Dim lastVal As Double() = New Double() {25, 50, 45, 16, 45}
-	
-	   Dim dataSource As List(Of ChartDataObject) = New List(Of ChartDataObject)
-	   For i As Integer = 0 To 5 Step 1
-	      Dim obj As ChartDataObject = New ChartDataObject
-	      obj.Date = lastDate.AddMonths(1)
-	      obj.Value = lastVal(i)
-	
-	      lastVal += 1
-		  dataSouce.Add(obj)
-	      lastDate = obj.Date
-	   Next
-	
-	   Dim series As LineSeries = DirectCast(Me.chart.Series(0), LineSeries)
-	
-	   Dim categoryBinding As PropertyNameDataPointBinding = New PropertyNameDataPointBinding
-	   categoryBinding.PropertyName = "Date"
-	
-	   Dim valueBinding As PropertyNameDataPointBinding = New PropertyNameDataPointBinding
-	   valueBinding.PropertyName = "Value"
-	
-	   series.CategoryBinding = categoryBinding
-	   series.ValueBinding = valueBinding
-	   series.ItemsSource = dataSource
-	End Sub
-```
+<snippet id='radchartview-axes-datetimeaxes-example_2_setting_the_binding_in_code_behind-cs' />
+
+<snippet id='radchartview-axes-datetimeaxes-example_2_setting_the_binding_in_code_behind-vb' />
+
 
 And finally the definition of the ChartDataObject class:
 
 __Example 3: Creating the businesses object__
 
-```C#
-	public class ChartDataObject
-	{
-	    public DateTime Date
-	    {
-	        get;
-	        set;
-	    }
-	    public double Value
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class ChartDataObject
-	    Dim _date As Date
-	    Dim _value As Double
-	
-	    Public Property [Date]() As DateTime
-	        Get
-	            Return Me._date
-	        End Get
-	        Set(value As DateTime)
-	            Me._date = value
-	        End Set
-	    End Property
-	
-	    Public Property Value() As Double
-	        Get
-	            Return Me._value
-	        End Get
-	        Set(value As Double)
-	            Me._value = value
-	        End Set
-	    End Property
-	End Class
-```
+<snippet id='radchartview-axes-datetimeaxes-example_3_creating_the_businesses_object-cs' />
+
+<snippet id='radchartview-axes-datetimeaxes-example_3_creating_the_businesses_object-vb' />
+
 
 ![{{ site.framework_name }} RadChartView with Horizontal DateTime Continuous Axis](images/radchartview-chart_datetime_continuous_axis.png)
 
@@ -164,25 +67,8 @@ The DateTime categorical axis is a categorical axis with Date-Time values which 
 
 __Example 4: Setting the DateTimeCategoricalAxis axes__
 
-```XAML
-	<telerik:RadCartesianChart x:Name="chart">
-	   <telerik:RadCartesianChart.HorizontalAxis>
-	      <telerik:DateTimeCategoricalAxis LabelFitMode="MultiLine"
-	                                     LabelFormat="MMM yyyy"
-	                                     DateTimeComponent="Month"/>
-	   </telerik:RadCartesianChart.HorizontalAxis>
-	
-	   <telerik:RadCartesianChart.VerticalAxis>
-	      <telerik:LinearAxis/>
-	   </telerik:RadCartesianChart.VerticalAxis>
-	
-	   <telerik:RadCartesianChart.Series>
-	      <telerik:LineSeries Stroke="Orange"
-	                        StrokeThickness="2"/>
-	
-	   </telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-datetimeaxes-example_4_setting_the_datetimecategoricalaxis_axes-xaml' />
+
 
 ![{{ site.framework_name }} RadChartView with Horizontal DateTime Categorical Axis](images/radchartview-chart_datetime_categorical_axis.png)
 

@@ -17,9 +17,7 @@ The scheduleview control allows you to easily navigate to the current day. You c
 The *Today* button is hidden by default. To show it in the [navigation header]({%slug radscheduleview-getting-started-visual-structure%}) you can set the __TodayButtonVisibility__ property.
 
 __Example 1: Showing the Today button__
-```XAML
-	<telerik:RadScheduleView TodayButtonVisibility="Visible" />
-```
+<snippet id='radscheduleview-features-viewdefinitions-set-today-block_1-xaml' />
 
 #### Figure 1: Today button
 ![{{ site.framework_name }} RadScheduleView Today button](images/radscheduleview-viewdefinition-set-today-0.png)
@@ -29,9 +27,7 @@ __Example 1: Showing the Today button__
 You can navigate to the current day in the view using the __RadScheduleViewCommands.SetToday__ command.
 
 __Example 2: Set today in code__
-```C#
-	RadScheduleViewCommands.SetToday.Execute(null, scheduleView);
-```
+<snippet id='radscheduleview-features-viewdefinitions-set-today-block_2-cs' />
 
 > Read more about the available commands in the [Commands]({%slug radscheduleview-features-commands%}) article.
 
@@ -39,5 +35,4 @@ __Example 2: Set today in code__
 * [Getting Started]({%slug radscheduleview-getting-started%})
 * [ViewDefinitions Overview]({%slug radscheduleview-viewdefinitions-overview%})
 * [ViewDefinitions Configuration]({%slug radscheduleview-viewdefinitions-configuration%})
-
 

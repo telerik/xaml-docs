@@ -26,9 +26,7 @@ Here is an example of creating a determined __RadBusyIndicator__ control:
 
 __Setting IsIndeterminate__
 
-```XAML
-	<telerik:RadBusyIndicator IsIndeterminate="False" />
-```
+<snippet id='radbusyindicator-features-progress-determination-setting_isindeterminate-xaml' />
 
 Notice that when a determined __RadbusyIndicator__ is enabled its inner donut will be consecutively filled. 
 

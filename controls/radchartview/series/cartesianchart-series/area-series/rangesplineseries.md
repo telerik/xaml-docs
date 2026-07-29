@@ -17,29 +17,8 @@ __RangeSplineSeries__ displays a range of data by plotting two numeric values pe
 You can use the definition from __Example 1__ to display a RangeSplineSeries.
 
 __Example 1: Declaring a RangeSplineSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8">            
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>            
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:RangeSplineSeries>
-				<telerik:RangeSplineSeries.DataPoints>
-					<telerik:RangeDataPoint Category="January" High="5" Low="0"/>
-					<telerik:RangeDataPoint Category="February" High="7" Low="2"/>
-					<telerik:RangeDataPoint Category="March" High="6" Low="4"/>
-					<telerik:RangeDataPoint Category="April" High="8" Low="5"/>
-					<telerik:RangeDataPoint Category="May" High="4" Low="3"/>
-					<telerik:RangeDataPoint Category="June" High="9" Low="7"/>
-					<telerik:RangeDataPoint Category="July" High="3" Low="1"/>
-				</telerik:RangeSplineSeries.DataPoints>
-			</telerik:RangeSplineSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-rangesplineseries-example_1_declaring_a_rangesplineseries_in_xaml-xaml' />
+
 
 #### __Figure 1: RangeSplineSeries visual appearance__  
 ![radchartview-series-areaseries-rangesplineseries](images/radchartview-series-rangesplineseries.png)
@@ -66,27 +45,13 @@ You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properti
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public string Category { get; set; }
-        public double HighValue { get; set; }
-        public double LowValue { get; set; }
-    }
+<snippet id='radchartview-series-cartesianchart-series-area-series-rangesplineseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { Category = "January", HighValue = 5, LowValue = 0},
-		//....
-	};
-```		
 	
 
 __Example 3: Specify a RangeSplineSeries in XAML__
-```XAML
-	<telerik:RangeSplineSeries ItemsSource="{Binding}" HighBinding="HighValue" LowBinding="LowValue" CategoryBinding="Category"/>
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-rangesplineseries-example_3_specify_a_rangesplineseries_in_xaml-xaml' />
+
 	
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -95,9 +60,8 @@ __Example 3: Specify a RangeSplineSeries in XAML__
 The spline-type series provide two properties allowing to control the additional points calculated for the spline of the line. The tension is controlled via the `SplineTension` property. The tension works with relative values between 0 and 1. The default tension is set to `0.5d`.
 
 __Example 4: Setting SplineTension__
-```XAML	
-	 <telerik:RangeSplineSeries SplineTension="0.4" />
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-rangesplineseries-example_4_setting_splinetension-xaml' />
+
 
 __Spline tension 0.8 (left) and 0.4 (right)__
 
@@ -106,9 +70,8 @@ __Spline tension 0.8 (left) and 0.4 (right)__
 Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calculated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.35. The default value is `0.03d`.
 
 __Example 5: Setting SplinePointsDistanceFactor__
-```XAML	
-	 <telerik:RangeSplineSeries SplinePointsDistanceFactor="0.18" />
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-rangesplineseries-example_5_setting_splinepointsdistancefactor-xaml' />
+
 
 __SplinePointsDistanceFactor set to 0.18__
 

@@ -21,13 +21,7 @@ __RadMultiColumnComboBox__ provides a built-in set of auto-completion options. T
 The Suggest mode filters the data but does not append text in the input field.
 
 __Example 1: Setting the AutoCompleteMode to Suggest__
-```XAML
-	<telerik:RadMultiColumnComboBox VerticalAlignment="Top" AutoCompleteMode="Suggest" MatchCase="True">
-            <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-                <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}"/>
-            </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-        </telerik:RadMultiColumnComboBox>
-```
+<snippet id='radmulticolumncombobox-features-autocomplete-block_1-xaml' />
 
 #### __Figure 1: Setting the AutoCompleteMode to Suggest__
 ![Setting the AutoCompleteMode to Sugggest](images/MultiColumnComboBox_AutoComplete_03.png)

@@ -41,41 +41,25 @@ You can find the required assemblies for each control from the suite in the {% i
 You can add __RadWizard__ in XAML or in code. You can also add the control by dragging it from the {% if site.framework_name == 'WPF' %}[Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}){% else %}[Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%}){% endif %}. 
 
 __Example 1: Adding a RadWizard in XAML__
-```XAML
-	 <telerik:RadWizard x:Name="wizard" />
-```
+<snippet id='radwizard-getting-started-block_1-xaml' />
 
 >In order to use __RadWizard__ you should define the following namespace:
 __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__
 
 __Example 2: Adding a RadWizard in code__
-```C#
-	 RadWizard wizard = new RadWizard();
-```
-```VB.NET
-	Private wizard As RadWizard = New RadWizard()
-```
+<snippet id='radwizard-getting-started-block_2-cs' />
+<snippet id='radwizard-getting-started-block_3-vb' />
  
 ## Adding pages to RadWizard
 
  To add pages to __RadWizard__ you can use its __WizardPages__ collection, which consists of [__WizardPage__]({%slug wizard-pages%}) elements. Here is an example of defining a page in code and in xaml: 
 
 __Example 3: Adding a WizardPage in XAML__
-```XAML
-	<telerik:RadWizard x:Name="radWizard" >
-		<telerik:RadWizard.WizardPages>
-			<telerik:WizardPage Content="My Wizard Page Content" />
-		</telerik:RadWizard.WizardPages>			
-	</telerik:RadWizard>
-```
+<snippet id='radwizard-getting-started-block_4-xaml' />
 
 __Example 4: Adding WizardPages in code__
-```C#
-	 wizard.WizardPages.Add(new WizardPage() { Content = "My Wizard Page Content" });
-```
-```VB.NET
-	 wizard.WizardPages.Add(New WizardPage() With {.Content ="My Wizard Page Content"})
-```
+<snippet id='radwizard-getting-started-block_5-cs' />
+<snippet id='radwizard-getting-started-block_6-vb' />
 
 #### __Figure 1: RadWizard with WizardPage__
 ![{{ site.framework_name }} RadWizard RadWizard with WizardPage](images/GettingStarted-WizardPage.png)
@@ -99,17 +83,7 @@ To change the theme, you can follow the steps below:
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 5: Merge the ResourceDictionaries__  
-```XAML
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-```
+<snippet id='radwizard-getting-started-block_7-xaml' />
 
 __Figure 2__ shows __RadWizard__ with the **Windows8** theme applied.
 	
@@ -126,12 +100,10 @@ __Figure 2__ shows __RadWizard__ with the **Windows8** theme applied.
 
 * [Telerik UI for WPF Wizard Component](https://www.telerik.com/products/wpf/wizard.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}
-
-

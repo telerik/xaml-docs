@@ -28,39 +28,14 @@ The __RadDiagramThumbnail__ control provides a preview of the overall layout of 
 You can define the __RadDiagramThumbnail__ in xaml or in your code-behind. In both cases, in order to synchronize it with your diagram, you need to set its __Diagram__ property accordingly.	  
 
 
-```XAML
-    <Grid x:Name="LyoutRoot">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <telerik:RadDiagram x:Name="xDiagram" Width="1800">
-            <telerik:RadDiagramShape x:Name="Shape1"
-                                     Content="Shape1"
-                                     Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-                                     Position="100,80" />
-            <telerik:RadDiagramShape x:Name="Shape2"
-                                     Content="Shape2"
-                                     Position="200,180" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=Shape1}" Target="{Binding ElementName=Shape2}" />
-        </telerik:RadDiagram>
-        <telerik:RadDiagramThumbnail x:Name="xThumbnail"
-                                     Grid.Row="1"
-                                     Diagram="{Binding ElementName=xDiagram}" />
-    </Grid>
-```
+<snippet id='raddiagram-extensions-thumbnail-block_1-xaml' />
+
 
 	
-```C#
-    RadDiagramThumbnail xDiagramThumbnail= new RadDiagramThumbnail() { Diagram = this.xDiagram };
-    ...
-    this.LayoutRoot.Children.Add(xDiagramThumbnail);
-```
-```VB.NET
-    Dim xDiagramThumbnail As New RadDiagramThumbnail() With { .Diagram = Me.xDiagram }
-    ...
-    Me.LayoutRoot.Children.Add(xDiagramThumbnail)		  		  
-```
+<snippet id='raddiagram-extensions-thumbnail-block_2-cs' />
+
+<snippet id='raddiagram-extensions-thumbnail-block_2-vb' />
+
 
 ![Rad Diagram Extensions Thumbnail](images/RadDiagram_Extensions_Thumbnail.png)
 
@@ -73,17 +48,8 @@ If you need to update the __RadDiagramThumbnail__ viewport, you can take advanta
 The __RadDiagramThumbnail__ indicates the current viewport of the __RadDiagram__ through a __Red Rectangle__ element. You can change the style of this rectangle by applying a custom style on it. The __RadDiagramThumbnail__ control exposes a __ViewportStyle__ property which you can use to change the __Stroke__ and the __StrokeThickness__ of the Viewport rectangle.
 
 
-```XAML
-	<telerik:RadDiagramThumbnail x:Name="xThumbnail"
-								 Grid.Row="1"
-								 Diagram="{Binding ElementName=xDiagram}">
-		<telerik:RadDiagramThumbnail.ViewportStyle>
-			<Style TargetType="Rectangle">
-				<Setter Property="Stroke" Value="Blue" />
-			</Style>
-		</telerik:RadDiagramThumbnail.ViewportStyle>
-	</telerik:RadDiagramThumbnail>
-```
+<snippet id='raddiagram-extensions-thumbnail-block_3-xaml' />
+
 
 ![Rad Diagram Extensions Thumbnail Viewport Style](images/RadDiagram_Extensions_Thumbnail_ViewportStyle.png)
 

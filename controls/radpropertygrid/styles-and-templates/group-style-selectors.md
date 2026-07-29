@@ -22,48 +22,8 @@ What we would like to achieve is to apply one style to the Group Name row and di
 
 __Example 1: The GroupStyleSelector class__
 
-```C#
-	public class GroupStyleSelector : StyleSelector
-	{
-	    public override Style SelectStyle(object item, DependencyObject container)
-	    {
-	        GroupDefinition groupDef = item as GroupDefinition;
-	        if (groupDef.DisplayName == "Group Name")
-	        {
-	            return this.NameGroupStyle;
-	        }
-	        else if (groupDef.DisplayName == "Group Phone")
-	        {
-	            return this.PhoneGroupStyle;
-	        }
-	        else
-	        {
-	            return this.TitleGroupStyle;
-	        }
-	    }
-	    public Style NameGroupStyle { get; set; }
-	    public Style PhoneGroupStyle { get; set; }
-	    public Style TitleGroupStyle { get; set; }
-	}
-```
-```VB.NET
-	Public Class GroupStyleSelector
-	    Inherits StyleSelector
-	    Public Overrides Function SelectStyle(ByVal item As Object, ByVal container As DependencyObject) As Style
-	        Dim groupDef As GroupDefinition = TryCast(item, GroupDefinition)
-	        If groupDef.DisplayName = "Group Name" Then
-	            Return Me.NameGroupStyle
-	        ElseIf groupDef.DisplayName = "Group Phone" Then
-	            Return Me.PhoneGroupStyle
-	        Else
-	            Return Me.TitleGroupStyle
-	        End If
-	    End Function
-	    Public Property NameGroupStyle() As Style
-	    Public Property PhoneGroupStyle() As Style
-	    Public Property TitleGroupStyle() As Style
-	End Class
-```
+<snippet id='radpropertygrid-styles-and-templates-group-style-selectors-block_1-cs' />
+<snippet id='radpropertygrid-styles-and-templates-group-style-selectors-block_1-vb' />
 
 In this specific scenario we have three different styles that could be applied:
 
@@ -79,25 +39,7 @@ Depending on the underlying data you can select which style to apply.
 
 __Example 2: Defining the different style for the GroupStyleSelector__
 
-```XAML
-	<my:GroupStyleSelector x:Key="groupStyleSelector">
-	    <my:GroupStyleSelector.NameGroupStyle>
-	        <Style TargetType="telerik:RadToggleButton">
-	            <Setter Property="Foreground" Value="Red"/>
-	        </Style>
-	    </my:GroupStyleSelector.NameGroupStyle>
-	    <my:GroupStyleSelector.PhoneGroupStyle>
-	        <Style TargetType="telerik:RadToggleButton">
-	            <Setter Property="Foreground" Value="Orange"/>
-	        </Style>
-	    </my:GroupStyleSelector.PhoneGroupStyle>
-	    <my:GroupStyleSelector.TitleGroupStyle>
-	        <Style TargetType="telerik:RadToggleButton">
-	            <Setter Property="Foreground" Value="Green"/>
-	        </Style>
-	    </my:GroupStyleSelector.TitleGroupStyle>
-	</my:GroupStyleSelector>
-```
+<snippet id='radpropertygrid-styles-and-templates-group-style-selectors-block_2-xaml' />
 
 >The __"my:"__ prefix before __GroupStyleSelector__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
@@ -105,30 +47,13 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 __Example 3: Basing the style on the default for the control__
 
-```XAML
-	<Style TargetType="telerik:RadToggleButton" BasedOn="{StaticResource RadToggleButtonStyle}">
-	    <Setter Property="Foreground" Value="Green"/>
-	</Style>
-```
+<snippet id='radpropertygrid-styles-and-templates-group-style-selectors-block_3-xaml' />
 
 3. Finally, set the GroupStyleSelector property of the data column which represents the GroupStyleSelector field:
 
 __Example 4: Setting RadPropertyGrid's GroupStyleSelector property__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="PropertyGrid" 
-	                     RenderMode="Flat"   
-	                     IsGrouped="True"
-	                     GroupStyleSelector="{StaticResource groupStyleSelector}"
-	                     AutoGeneratePropertyDefinitions="False">
-	    <telerik:RadPropertyGrid.PropertyDefinitions>
-	        <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="First Name" />
-	        <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="Last Name"/>
-	        <telerik:PropertyDefinition Binding="{Binding Title}" GroupName="Group Title" DisplayName="Title"/>
-	        <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
-	    </telerik:RadPropertyGrid.PropertyDefinitions>
-	</telerik:RadPropertyGrid>
-```
+<snippet id='radpropertygrid-styles-and-templates-group-style-selectors-block_4-xaml' />
 
 The RadPropertyGrid should have the following appearance after the applied changes:
 
@@ -148,7 +73,5 @@ The RadPropertyGrid should have the following appearance after the applied chang
         
 
  
-
-
 
 

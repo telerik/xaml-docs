@@ -34,22 +34,7 @@ __RadVirtualGrid__ has __Header__ elements for both its rows and columns. A more
 
 __Example 1: Handling the HeaderSizeNeededEvent__
 
-```C#
-	private void VirtualGrid_HeaderSizeNeeded(object sender, Telerik.Windows.Controls.VirtualGrid.HeaderSizeEventArgs e)
-        {
-            if (e.HeaderOrientation == Telerik.Windows.Controls.VirtualGrid.VirtualGridOrientation.Horizontal)
-            {
-                if (e.Index % 2 == 0)
-                {
-                    e.SizeUnit = Telerik.Windows.Controls.VirtualGrid.HeaderSizeUnit.Star;
-                }
-                else
-                {
-                    e.Size = 130;
-                }
-            }
-        }
-```
+<snippet id='radvirtualgrid-features-headers-block_1-cs' />
 
 #### __Figure 1: RadVirtualGrid with custom size for the headers__
 

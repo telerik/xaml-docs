@@ -25,19 +25,12 @@ The split button control implements the `ICommandSource` interface, which allows
 You can instantiate `RadSplitButton` both in XAML and code.
 
 __Defining a button in XAML__
-```XAML
-	<telerik:RadSplitButton Content="Click Me!" />
-```
+<snippet id='radbuttons-features-split-button-defining_a_button_in_xaml-xaml' />
 
 __Defining a button in code__
-```C#
-	RadSplitButton radSplitButton = new RadSplitButton() { Content = "Click Me!" };
-```
-```VB.NET
-	Dim radSplitButton As New RadSplitButton() With { _
-	    .Content = "Click Me!" _
-	}
-```
+<snippet id='radbuttons-features-split-button-defining_a_button_in_code-cs' />
+<snippet id='radbuttons-features-split-button-defining_a_button_in_code-vb' />
+
 
 __RadSplitButton__
 
@@ -48,17 +41,7 @@ __RadSplitButton__
 In order to add content to the drop-down area of RadSplitButton, use its `DropDownContent` property.
 
 __Adding ListBox as a drop down content__
-```XAML
-	<telerik:RadSplitButton AutoOpenDelay="0:0:0.0" Content="Click or Choose an Item">
-	    <telerik:RadSplitButton.DropDownContent>
-	        <ListBox>
-	            <ListBoxItem Content="Item 1" />
-	            <ListBoxItem Content="Item 2" />
-	            <ListBoxItem Content="Item 3" />
-	        </ListBox>
-	    </telerik:RadSplitButton.DropDownContent>
-	</telerik:RadSplitButton>
-```
+<snippet id='radbuttons-features-split-button-adding_listbox_as_a_drop_down_content-xaml' />
 
 >tip Additionally, the control provides `DropDownContentTemplate` and `DropDownContentTemplateSelector` properties, that can be used to customize the drop down content in a data binding scenario. Read more about data templates in the [Data Templating Overview](https://msdn.microsoft.com/en-us/library/ms742521(v=vs.100).aspx) MSDN article.
 
@@ -71,9 +54,7 @@ __RadSplitButton with dropdown content__
 The ButtonPart of the split button can behave as a toggle button. To enable this, set the `IsToggle`  property of RadSplitButton to `True`.
 
 __Enable toggle mode__
-```XAML
-	<telerik:RadSplitButton IsToggle="True" />
-```
+<snippet id='radbuttons-features-split-button-enable_toggle_mode-xaml' />
 
 __RadSplitButton as a toggle button__
 
@@ -86,9 +67,7 @@ You can allow the RadSplitButton to automatically display its DropDownContent, w
 To disable the auto-opening feature of the control, set the `AutoOpenDelay` to `0`.
 
 __Setting the AutoOpenDelay property__
-```XAML
-	<telerik:RadSplitButton AutoOpenDelay="0:0:0.5" />
-```
+<snippet id='radbuttons-features-split-button-setting_the_autoopendelay_property-xaml' />
 
 ## Customizing the RadSplitButton
 
@@ -129,19 +108,7 @@ You can easily customize RadSplitButton by using the following properties:
 * `CloseOnPopupMouseLeftButtonUp`&mdash;Specifies whether the drop-down area should be closed when the user clicks on the `DropDownContent` of the control. The closing of the drop-down is executed on the `MouseLeftButtonUp` event of the `Popup` control. The default value is `False`.
 
 __Customizing RadSplitButton__
-```XAML
-	<telerik:RadSplitButton DropDownButtonPosition="Bottom" 
-							Content="Click or Choose an Item" 
-							DropDownWidth="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
-		<telerik:RadSplitButton.DropDownContent>
-			<ListBox>
-				<ListBoxItem Content="Item 1" />
-				<ListBoxItem Content="Item 2" />
-				<ListBoxItem Content="Item 3" />
-			</ListBox>
-		</telerik:RadSplitButton.DropDownContent>
-	</telerik:RadSplitButton>
-```
+<snippet id='radbuttons-features-split-button-customizing_radsplitbutton-xaml' />
 
 __Customized RadSplitButton__
 

@@ -28,12 +28,8 @@ You have two options:
 
 __Example 1: Styling all group footer rows of an application__
 
-```XAML
-	<Style TargetType="telerik:GridViewGroupFooterRow">
-		<Setter Property="Foreground" Value="White"/>
-		<Setter Property="Background" Value="LightBlue"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-group-footers-example_1_styling_all_group_footer_rows_of_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupFooterRowStyle__.
 
@@ -43,9 +39,8 @@ RadGridView's footer rows can also be styled by creating an appropriate __Style_
 
 __Example 2: Setting RadGridView's GroupFooterRowStyle__
 
-```XAML
-	<telerik:RadGridView GroupFooterRowStyle="{StaticResource GridViewFooterRowStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-group-footers-example_2_setting_radgridview_s_groupfooterrowstyle-xaml' />
+
 
 #### __Figure 2: RadGridView with styled group footer rows__
 
@@ -61,12 +56,8 @@ In order to style all __RadGridView__ cells of an application, you should create
 
 __Example 6: Styling all group footer cells of an application__
 
-```XAML
-	<Style TargetType="telerik:GridViewGroupFooterCell">
-	            <Setter Property="BorderBrush" Value="Red"/>
-	            <Setter Property="Background" Value="Blue"/>
-	        </Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-group-footers-example_6_styling_all_group_footer_cells_of_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupFooterCellStyle__.
 
@@ -76,11 +67,8 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 
 __Example 7: Setting a column's GroupFooterCellStyle__
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                                Header="Name"
-	                                GroupFooterCellStyle="{StaticResource GridViewFooterCellStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-group-footers-example_7_setting_a_column_s_groupfootercellstyle-xaml' />
+
 
 #### __Figure 2: RadGridView with styled group footer cells__
 

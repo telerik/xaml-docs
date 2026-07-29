@@ -14,9 +14,7 @@ The __RadRibbonView__ class exposes the __ApplicationButtonDoubleClick__ event, 
 
 
 
-```XAML
-    <telerik:RadRibbonView x:Name="radRibbonView" ApplicationButtonDoubleClick="radRibbonView_ApplicationButtonDoubleClick">
-```
+<snippet id='radribbonview-how-to-handle-double-click-on-application-button-block_1-xaml' />
 
 For more information about the __ApplicationButtonDoubleClick__ event, take a look at the __Events__ section in the [Application Menu]({%slug radribbonview-applicationmenu%}) topic.		
 

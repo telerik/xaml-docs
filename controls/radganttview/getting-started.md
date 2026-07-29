@@ -35,13 +35,8 @@ You can add __RadGanttView__ by writing the XAML code in __Example 1__. You can 
 
 __Example 1: Defining a RadGanttView__
 
-```XAML
-	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid>
-	        <telerik:RadGanttView x:Name="ganttView" />
-	    </Grid>
-	</UserControl>
-```
+<snippet id='radganttview-getting-started-example_1_defining_a_radganttview-xaml' />
+
 
 If you run the application now, you will see an empty RadGanttView as demonstrated in __Figure 1__:
 
@@ -54,15 +49,8 @@ You can manually define columns in order to showcase information from the displa
 
 __Example 2: Defining columns__
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView2">
-	    <telerik:RadGanttView.Columns>
-	        <telerik:TreeColumnDefinition Header="Title" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-	    </telerik:RadGanttView.Columns>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-getting-started-example_2_defining_columns-xaml' />
+
 
 >Check the [Columns Overview]({%slug radganttview-features-columns-types%}) topic for more information about the columns of the data grid.    
 
@@ -72,92 +60,15 @@ In order to populate a RadGanttView control with sample data, you can create a c
 
 __Example 3: Creating a ViewModel__
 
-```C#
-    public class ViewModel : ViewModelBase
-    {
-        private DateRange visibleRange;
+<snippet id='radganttview-getting-started-example_3_creating_a_viewmodel-cs' />
 
-        public ViewModel()
-        {
-            var date = DateTime.Now;
+<snippet id='radganttview-getting-started-example_3_creating_a_viewmodel-vb' />
 
-            var task1 = new GanttTask(date, date.AddDays(1), "task 1");
-            var task2 = new GanttTask(date.AddDays(1), date.AddDays(1).AddHours(15), "task 2");
-
-            var mainTask = new GanttTask(date, date.AddDays(2), "my task")
-            {
-                Children = { task1, task2 }
-            };
-
-            this.Tasks = new ObservableCollection<GanttTask>() { mainTask };
-
-            this.VisibleRange = new DateRange(date.AddHours(-12), date.AddDays(12));
-        }
-        public ObservableCollection<GanttTask> Tasks { get; set; }
-
-        public DateRange VisibleRange
-        {
-            get
-            {
-                return this.visibleRange;
-            }
-            set
-            {
-                this.visibleRange = value;
-                this.OnPropertyChanged(() => this.VisibleRange);
-            }
-        }
-    }
-```
-```VB.NET
-	Public Class ViewModel
-		Inherits ViewModelBase
-			Private _visibleRange As DateRange
-
-			Public Sub New()
-				Dim [date] = Date.Now
-
-				Dim task1 = New GanttTask([date], [date].AddDays(1), "task 1")
-				Dim task2 = New GanttTask([date].AddDays(1), [date].AddDays(1).AddHours(15), "task 2")
-
-				Dim mainTask = New GanttTask([date], [date].AddDays(2), "my task") With {
-					.Children = { task1, task2 }
-				}
-
-				Me.Tasks = New ObservableCollection(Of GanttTask)() From {mainTask}
-
-				Me.VisibleRange = New DateRange([date].AddHours(-12), [date].AddDays(12))
-			End Sub
-			Public Property Tasks() As ObservableCollection(Of GanttTask)
-
-			Public Property VisibleRange() As DateRange
-				Get
-					Return Me._visibleRange
-				End Get
-				Set(ByVal value As DateRange)
-					Me._visibleRange = value
-					Me.OnPropertyChanged(Function() Me.VisibleRange)
-				End Set
-			End Property
-	End Class
-```
 
 __Example 4: Binding to a TaskSource__
 
-```XAML
-	<Grid>
-        <Grid.DataContext>
-            <local:ViewModel />
-        </Grid.DataContext>
-        <telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}" VisibleRange="{Binding VisibleRange}">
-            <telerik:RadGanttView.Columns>
-                <telerik:TreeColumnDefinition Header="Title" Width="AutoHeaderAndContent"/>
-                <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-                <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-            </telerik:RadGanttView.Columns>
-        </telerik:RadGanttView>
-    </Grid>
-```
+<snippet id='radganttview-getting-started-example_4_binding_to_a_tasksource-xaml' />
+
 
 #### __Figure 2: Result from Example 4 in the Office2016 theme__
 
@@ -180,17 +91,8 @@ To change the theme, you can follow the steps below:
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 5: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.GanttView.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radganttview-getting-started-example_5_merge_the_resourcedictionaries-xaml' />
+
 	
 #### __Figure 3: RadGanttView with the Windows8 theme applied__
 ![RadGanttView with Windows8 theme](images/ganttview_gettingstarted_windows8theme.png)

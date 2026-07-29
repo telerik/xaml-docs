@@ -13,9 +13,7 @@ position: 4
 The `RadCalculatorPicker` control is a drop down button with a `RadCalculator` in its drop down content. The button content shows the calculated value of the calculator.
 
 __Defining RadCalculatorPicker__
-```XAML
-	<telerik:RadCalculatorPicker Height="30" Width="200" />		
-```
+<snippet id='radcalculator-calculatorpicker-defining_radcalculatorpicker-xaml' />
 
 __RadCalculatorPicker example__  
 
@@ -24,54 +22,20 @@ __RadCalculatorPicker example__
 The drop down state can be controlled manually with the `IsDropDownOpen` property of `RadCalculatorPicker`.
 
 __Opening the drop down content in code__
-```C#
-	this.calculatorPicker.IsDropDownOpen = true;
-```
+<snippet id='radcalculator-calculatorpicker-opening_the_drop_down_content_in_code-cs' />
 
 ## DataGrid Integration
 
 The following example shows how to utilize the `RadColorPicker` control as the cell editing element of a `RadGridView` column. To do so, define a custom `CellEditTemplate` for the column and in the `DataTemplate` add the calculator.
 
 __Defining a model for the RadGridView rows__
-```C#
-	public class RowInfo
-    {
-        public string Name { get; set; }
-        public double Value { get; set; }
-    }
-```
+<snippet id='radcalculator-calculatorpicker-defining_a_model_for_the_radgridview_rows-cs' />
 
 __Populating the data source__
-```C#
-	public MainWindow()
-	{		
-		InitializeComponent();
-		var source = new ObservableCollection<RowInfo>();
-		for (int i = 0; i < 10; i++)
-		{
-			source.Add(new RowInfo() { Name = "Item " + i, Value = 5 });
-		}
-		DataContext = source;
-	}
-```
+<snippet id='radcalculator-calculatorpicker-populating_the_data_source-cs' />
 
 __Defining the RadGridView and setting up the RadCalculatorPicker as the cell edit element__
-```XAML
-	<telerik:RadGridView GroupRenderMode="Flat"
-						 ItemsSource="{Binding}"						 
-						 AutoGenerateColumns="False">
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Value}">
-				<telerik:GridViewDataColumn.CellEditTemplate>
-					<DataTemplate>
-						<telerik:RadCalculatorPicker Value="{Binding Value, Mode=TwoWay}" />
-					</DataTemplate>
-				</telerik:GridViewDataColumn.CellEditTemplate>
-			</telerik:GridViewDataColumn>
-		</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radcalculator-calculatorpicker-defining_the_radgridview_and_setting_up_the_radcalculatorpicker_as_the_cell_edit_element-xaml' />
 
 __Using RadCalculatorPicker as a cell editor of RadGridView__  
 

@@ -16,22 +16,7 @@ First, let’s have the following recurrent appointment added to the Appointment
 
 
 
-```C#
-	var reviewApp = new Appointment()
-	{
-	     Subject = "Review",
-	     Start = new DateTime(2013,9,30,9,0,0),
-	     End = new DateTime(2013,9,30,9,30,0)
-	};
-	reviewApp.RecurrenceRule = new RecurrenceRule(
-	     new RecurrencePattern()
-	     {
-	        Frequency = RecurrenceFrequency.Weekly,
-	        DaysOfWeekMask = RecurrenceDays.Monday | RecurrenceDays.Wednesday,
-	        MaxOccurrences = 10
-	      }
-	);
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-draggingrecurrentappointment-block_1-cs' />
 
 >tip You could check [here]({%slug radscheduleview-features-recurrences-overview%}) for more details about recurrent appointments.
 

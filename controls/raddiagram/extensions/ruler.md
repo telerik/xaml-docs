@@ -28,16 +28,8 @@ The __RadDiagramRuler__ is used to provide visual indication about the diagram v
 The __RadDiagramRuler__ exposes a __Diagram__ property which is used to associate the ruler with a particular diagram instance. The ruler uses this instance to collect the required information about the current viewport (position and size) and the zoom level in the diagram. 
 
 
-```XAML
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <telerik:RadDiagramRuler Diagram="{Binding ElementName=xDiagram}" />
-        <telerik:RadDiagram x:Name="xDiagram" Grid.Row="1" />
-    </Grid>
-```
+<snippet id='raddiagram-extensions-ruler-block_1-xaml' />
+
 
 ![Rad Diagram Extensions Ruler Overview](images/RadDiagram_Extensions_Ruler_Overview.png)
 
@@ -81,31 +73,8 @@ The __RadDiagramRuler__ can be configured through the following set of propertie
 The __RadDiagramRuler__ by default sets the __ScaleDefinition__ collection to describe a set of predefined scales. In order to change these default settings, you should set the __ScaleDefinitions__ property to an object of type __DiagramScaleDefinitionCollection__.  The collection should describe different scales, each associated with particular zoom level in the __Diagram__ instance:		
 
 
-```XAML
-    <telerik:RadDiagramRuler Diagram="{Binding ElementName=xDiagram}">
-        <telerik:RadDiagramRuler.ScaleDefinitions>
-            <telerik:DiagramScaleDefinitionCollection>
-                <telerik:DiagramScaleDefinition MaxZoom="0.99">
-                    <telerik:DiagramScaleItemDefinition Interval="10" Type="SmallTick" />
-                    <telerik:DiagramScaleItemDefinition Interval="50" Type="MediumTick" />
-                    <telerik:DiagramScaleItemDefinition Interval="100" Type="LargeTick" />
-                    <telerik:DiagramScaleItemDefinition Interval="100" Type="Label" />
-                </telerik:DiagramScaleDefinition>
-                <telerik:DiagramScaleDefinition MaxZoom="1.99">
-                    <telerik:DiagramScaleItemDefinition Interval="5" Type="XSmallTick" />
-                    <telerik:DiagramScaleItemDefinition Interval="10" Type="SmallTick" />
-                    <telerik:DiagramScaleItemDefinition Interval="50" Type="MediumTick" />
-                    <telerik:DiagramScaleItemDefinition Interval="100" Type="LargeTick" />
-                    <telerik:DiagramScaleItemDefinition Interval="100" Type="Label" />
-                </telerik:DiagramScaleDefinition>
-                <telerik:DiagramScaleDefinition>
-                    <telerik:DiagramScaleItemDefinition Interval="100" Type="LargeTick" />
-                    <telerik:DiagramScaleItemDefinition Interval="100" Type="Label" />
-                </telerik:DiagramScaleDefinition>
-            </telerik:DiagramScaleDefinitionCollection>
-        </telerik:RadDiagramRuler.ScaleDefinitions>
-    </telerik:RadDiagramRuler>		  
-```
+<snippet id='raddiagram-extensions-ruler-block_2-xaml' />
+
 
 In the above sample we've create three __DiagramScaleDefinitions__. The __MaxZoom__ property of type __double__ sets the maximum zoom level of the __RadDiagram__ for which a scale will be displayed in the __RadDiagramRuler__.		
 
@@ -145,16 +114,4 @@ The described containers are used to control the visual appearance of the ticks 
 For example, the default style of the extra small ticks is defined as follows:
 
 
-```XAML
-	<Style TargetType="telerik:XSmallTickContainer">
-		<Setter Property="Template">
-			<Setter.Value>
-				<ControlTemplate TargetType="telerik:XSmallTickContainer">
-					<Rectangle Fill="Black"
-								Width="1"
-								Height="3" />
-				</ControlTemplate>
-			</Setter.Value>
-		</Setter>
-	</Style>
-```
+<snippet id='raddiagram-extensions-ruler-block_3-xaml' />

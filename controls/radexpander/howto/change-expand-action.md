@@ -17,21 +17,8 @@ The __RadExpander__ control exposes a __ClickMode__ property to allow you to det
 * __Release__: Specifies that the content should be expanded when the left mouse button is pressed and released on top of the __RadExpander.Header__. If you are using the keyboard, this setting specifies that the content should be expanded when the __RadExpander.Header__ is focused and the __SPACEBAR__ or __ENTER__ key is pressed and released.
 
 __Example 1: Setting ClickMode to Release__
-```XAML
-	<StackPanel>
-        <TextBox Text="Focused" />
-        <telerik:RadExpander ClickMode="Release"
-                         ExpandDirection="Down" 
-                         Header="Down">
-            <StackPanel Orientation="Horizontal">
-                <Ellipse Width="99"  
-                     Height="99" 
-                     Margin="5" 
-                     Fill="Green" />
-            </StackPanel>
-        </telerik:RadExpander>
-    </StackPanel>
-```
+<snippet id='radexpander-howto-change-expand-action-example_1_setting_clickmode_to_release-xaml' />
+
 
 #### __Figure 1: Release ClickMode__
 ![RadExpander with ClickMode set to Release](images/radExpander_ClickModeRelease.gif)
@@ -39,21 +26,8 @@ __Example 1: Setting ClickMode to Release__
 * __Press__: Specifies that the content should be expanded when the left mouse button is pressed on top of the __RadExpander.Header__. If you are using the keyboard, this setting specifies that the content should be expanded when the __RadExpander.Header__ is focused and the __SPACEBAR__ or __ENTER__ key is pressed.
 
 __Example 2: Setting ClickMode to Press__
-```XAML
-	<StackPanel>
-        <TextBox Text="Focused" />
-        <telerik:RadExpander ClickMode="Press"
-                         ExpandDirection="Down" 
-                         Header="Down">
-            <StackPanel Orientation="Horizontal">
-                <Ellipse Width="99"  
-                     Height="99" 
-                     Margin="5" 
-                     Fill="Green" />
-            </StackPanel>
-        </telerik:RadExpander>
-    </StackPanel>
-```
+<snippet id='radexpander-howto-change-expand-action-example_2_setting_clickmode_to_press-xaml' />
+
 
 #### __Figure 2: Press ClickMode__
 ![RadExpander with ClickMode set to Press](images/radExpander_ClickModePress.gif)
@@ -61,21 +35,8 @@ __Example 2: Setting ClickMode to Press__
 * __Hover__: Specifies that the content should be expanded when the mouse pointer hovers over the __RadExpander.Header__. 
 
 __Example 3: Setting ClickMode to Hover__
-```XAML
-	<StackPanel>
-        <TextBox Text="Focused" />
-        <telerik:RadExpander ClickMode="Hover"
-                         ExpandDirection="Down" 
-                         Header="Down">
-            <StackPanel Orientation="Horizontal">
-                <Ellipse Width="99"  
-                     Height="99" 
-                     Margin="5" 
-                     Fill="Green" />
-            </StackPanel>
-        </telerik:RadExpander>
-    </StackPanel>
-```
+<snippet id='radexpander-howto-change-expand-action-example_3_setting_clickmode_to_hover-xaml' />
+
 
 #### __Figure 3: Hover ClickMode__
 ![RadExpander with ClickMode set to Hover](images/radExpander_ClickModeHover.gif)

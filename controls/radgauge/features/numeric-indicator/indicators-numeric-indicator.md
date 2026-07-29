@@ -43,54 +43,8 @@ By default the __Numeric Indicator__ won't display its values. You have to defin
 For example, if you want to display three digit number with two additional fractional digits, you have to define six number positions. Note that one of the position will be used by the decimal point.        
 
 
-```XAML
-	<Grid x:Name="LayoutRoot" Width="150" Height="50">
-	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
-	        <telerik:NumericScale.Indicators>
-	            <telerik:NumericIndicator Value="217.39"
-	                                      telerik:ScaleObject.RelativeY="0.05"
-	                                      telerik:ScaleObject.RelativeX="0.025"
-	                                      telerik:ScaleObject.RelativeWidth="0.95*"
-	                                      telerik:ScaleObject.RelativeHeight="0.9*"
-	                                      FontSize="28"
-	                                      BorderThickness="0">
-	                <telerik:NumericIndicator.Positions>
-	                    <telerik:FontNumberPosition CornerRadius="10,0,0,10"
-	                                                Background="Transparent"
-	                                                BorderBrush="Orange"
-	                                                BorderThickness="2,2,1,2"
-	                                                Padding="0"/>
-	                    <telerik:FontNumberPosition CornerRadius="0"
-	                                                Background="Transparent"
-	                                                BorderBrush="Orange"
-	                                                BorderThickness="1,2"
-	                                                Padding="0"/>
-	                    <telerik:FontNumberPosition CornerRadius="0"
-	                                                Background="Transparent"
-	                                                BorderBrush="Orange"
-	                                                BorderThickness="1,2"
-	                                                Padding="0"/>
-	                    <telerik:FontNumberPosition CornerRadius="0"
-	                                                Background="Transparent"
-	                                                BorderBrush="Orange"
-	                                                BorderThickness="1,2"
-	                                                Padding="0"/>
-	                    <telerik:FontNumberPosition CornerRadius="0"
-	                                                Background="Transparent"
-	                                                BorderBrush="Orange"
-	                                                BorderThickness="1,2"
-	                                                Padding="0"/>
-	                    <telerik:FontNumberPosition CornerRadius="0,10,10,0"
-	                                                Background="Transparent"
-	                                                BorderBrush="Orange"
-	                                                BorderThickness="1,2,2,2"
-	                                                Padding="0"/>
-	                </telerik:NumericIndicator.Positions>
-	            </telerik:NumericIndicator>
-	        </telerik:NumericScale.Indicators>
-	    </telerik:NumericScale>
-	</Grid>
-```
+<snippet id='radgauge-features-numeric-indicator-indicators-numeric-indicator-block_1-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -105,34 +59,8 @@ To manipulate the indicator's size, simply use the __ScaleObject.RelativeHeight_
 Here is an example:
 
 
-```XAML
-	<Grid Background="#EEEEEE" Width="150" Height="50">
-	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
-	        <telerik:NumericScale.Indicators>
-	            <telerik:NumericIndicator Value="217.39"
-	                                      telerik:ScaleObject.RelativeY="0.05"
-	                                      telerik:ScaleObject.RelativeX="0.025"
-	                                      telerik:ScaleObject.RelativeWidth="0.5*"
-	                                      telerik:ScaleObject.RelativeHeight="0.5*">
-	                <telerik:NumericIndicator.Positions>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                    Background="Transparent"/>
-	                </telerik:NumericIndicator.Positions>
-	            </telerik:NumericIndicator>
-	        </telerik:NumericScale.Indicators>
-	    </telerik:NumericScale>
-	</Grid>
-```
+<snippet id='radgauge-features-numeric-indicator-indicators-numeric-indicator-block_2-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -145,28 +73,8 @@ The __ScaleObject.RelativeX__ and __ScaleObject.RelativeY__ attachable propertie
 Here is an example:
 
 
-```XAML
-	<Grid Background="#EEEEEE" Width="150" Height="50">
-	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
-	        <telerik:NumericScale.Indicators>
-	            <telerik:NumericIndicator Value="217.39"
-	                                      telerik:ScaleObject.RelativeY="0.45"
-	                                      telerik:ScaleObject.RelativeX="0.48"
-	                                      telerik:ScaleObject.RelativeWidth="0.5*"
-	                                      telerik:ScaleObject.RelativeHeight="0.5*">
-	                <telerik:NumericIndicator.Positions>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15" Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15" Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15" Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15" Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15" Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15" Background="Transparent"/>
-	                </telerik:NumericIndicator.Positions>
-	            </telerik:NumericIndicator>
-	        </telerik:NumericScale.Indicators>
-	    </telerik:NumericScale>
-	</Grid>
-```
+<snippet id='radgauge-features-numeric-indicator-indicators-numeric-indicator-block_3-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -177,38 +85,8 @@ Here is a snapshot of the result:
 The __CornerRadius__ property allows you to specify the radius of the indicator's corners. Here is an example:
 
 
-```XAML
-	<Grid x:Name="LayoutRoot" Width="150" Height="50">
-	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
-	        <telerik:NumericScale.Indicators>
-	            <telerik:NumericIndicator Value="217.39"
-	                                      CornerRadius="10"
-	                                      telerik:ScaleObject.RelativeY="0.45"
-	                                      telerik:ScaleObject.RelativeX="0.48"
-	                                      telerik:ScaleObject.RelativeWidth="0.5*"
-	                                      telerik:ScaleObject.RelativeHeight="0.5*">
-	                <telerik:NumericIndicator.Background>
-	                    <SolidColorBrush Color="#EEEEEE"/>
-	                </telerik:NumericIndicator.Background>
-	                <telerik:NumericIndicator.Positions>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                                                    Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" FontSize="15"
-	                                                                    Background="Transparent"/>
-	                </telerik:NumericIndicator.Positions>
-	            </telerik:NumericIndicator>
-	        </telerik:NumericScale.Indicators>
-	    </telerik:NumericScale>
-	</Grid>
-```
+<snippet id='radgauge-features-numeric-indicator-indicators-numeric-indicator-block_4-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -223,27 +101,8 @@ The Format property allows you to specify a format string for the indicator's va
 Here is an example:
 
 
-```XAML
-	<Grid Background="#EEEEEE" Width="175" Height="60">
-	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
-	        <telerik:NumericScale.Indicators>
-	            <telerik:NumericIndicator Value="217.39"
-	                                      Format="{}{0:F0}"
-	                                      telerik:ScaleObject.RelativeY="0.025"
-	                                      telerik:ScaleObject.RelativeX="0.05"
-	                                      telerik:ScaleObject.RelativeWidth="0.9*"
-	                                      telerik:ScaleObject.RelativeHeight="0.9*"
-	                                      FontSize="28">
-	                <telerik:NumericIndicator.Positions>
-	                    <telerik:FontNumberPosition CornerRadius="0" Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" Background="Transparent"/>
-	                    <telerik:FontNumberPosition CornerRadius="0" Background="Transparent"/>
-	                </telerik:NumericIndicator.Positions>
-	            </telerik:NumericIndicator>
-	        </telerik:NumericScale.Indicators>
-	    </telerik:NumericScale>
-	</Grid>
-```
+<snippet id='radgauge-features-numeric-indicator-indicators-numeric-indicator-block_5-xaml' />
+
 
 Here is a snapshot of the result:
 

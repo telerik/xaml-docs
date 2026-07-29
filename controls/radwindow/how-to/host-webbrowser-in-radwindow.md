@@ -17,25 +17,8 @@ A common scenario that you might want to achieve is hosting a [WebBrowser](https
 In order to achieve the requirement described above, you can utilize the __RadWindowInteropHelper__ class in order to set the __AllowTransparency__ attached property on the RadWindow. __Example 1__ demonstrates this approach.
 
 __Example 1: Hosting a WebBrowser in RadWindow__
-```C#
-	var window = new RadWindow
-    {
-        Content = new WebBrowser { Source = new Uri("http://www.telerik.com/") },
-        Width = 700,
-        Height = 500
-    };
-    RadWindowInteropHelper.SetAllowTransparency(window, false);
-    window.Show();
-```
-```VB.NET
-	Dim window = New RadWindow With {
-        .Content = New WebBrowser With {.Source = New Uri("http://www.telerik.com/")},
-        .Width = 700,
-        .Height = 500
-    }
-	RadWindowInteropHelper.SetAllowTransparency(window, False)
-	window.Show()
-```
+<snippet id='radwindow-how-to-host-webbrowser-in-radwindow-block_1-cs' />
+<snippet id='radwindow-how-to-host-webbrowser-in-radwindow-block_2-vb' />
 
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![WebBrowser in RadWindow](images/RadWindow_Host_WebBrowser.png)

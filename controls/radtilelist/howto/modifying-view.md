@@ -44,25 +44,7 @@ For example:
 
 __Example 1: Defining the GroupTemplate__
 
-```XAML
-		<Grid.Resources>
-		  <DataTemplate x:Key="ItemTemplate">
-			<TextBlock Text="{Binding FirstName}"/>
-		  </DataTemplate>
-		  <DataTemplate x:Key="GroupTemplate">
-			<TextBlock Text="{Binding}" FontWeight="Bold" Foreground="#FF006AC1" FontSize="20"/>
-		  </DataTemplate>
-		  <CollectionViewSource x:Key="GroupedItems" Source="{Binding Employees}">
-			<CollectionViewSource.GroupDescriptions>
-			  <PropertyGroupDescription PropertyName="Occupation" />
-			</CollectionViewSource.GroupDescriptions>
-		  </CollectionViewSource>
-		</Grid.Resources>
-		<telerik:RadTileList x:Name="RadTileList"
-					  GroupMember="Occupation"
-					  ItemsSource="{Binding Employees}"
-					  ItemTemplate="{StaticResource ItemTemplate}"/>
-```
+<snippet id='radtilelist-howto-modifying-view-block_1-xaml' />
 
 ![Group Template WPF](images/GroupTemplate_WPF.PNG)
 
@@ -73,10 +55,7 @@ __RadTileList__ exposes a __GroupHeaderVisibility__ property that sets whether t
 
 __Example 2: Setting the GroupHeaderVisibility property__
 
-```XAML
-	<telerik:RadTileList x:Name="RadTileList1"
-						 GroupHeaderVisibility="Collapsed"/>
-```
+<snippet id='radtilelist-howto-modifying-view-block_2-xaml' />
 
 ![Group Header Visibility WPF](images/GroupHeaderVisibility_WPF.PNG)
 
@@ -87,12 +66,6 @@ __RadTileList__ gives the opportunity to set the height of the headers with a si
 
 __Example 3: Setting the GroupHeaderHeight property__
 
-```XAML
-	<telerik:RadTileList x:Name="RadTileList2"
-					GroupHeaderHeight="100"
-					GroupTemplate="{StaticResource GroupTemplate}"
-					ItemsSource="{Binding Source={StaticResource GroupedItems}}"
-					ItemTemplate="{StaticResource ItemTemplate}"/>
-```
+<snippet id='radtilelist-howto-modifying-view-block_3-xaml' />
 
 ![Group Header Height WPF](images/GroupHeaderHeight_WPF.PNG)

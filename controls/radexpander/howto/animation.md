@@ -15,17 +15,14 @@ The RadExpander control has an animation enabled by default.
 To disable or enable the animation, set the __AnimationManager.IsAnimationEnabled__ attached property on RadExpander. 
 
 __Example 1: Disabling animation in XAML__
-```XAML
-	<telerik:RadExpander telerik:AnimationManager.IsAnimationEnabled="False" />
-```
+<snippet id='radexpander-howto-animation-example_1_disabling_animation_in_xaml-xaml' />
+
 
 __Example 2: Disabling animation in code__
-```C#        
-	AnimationManager.SetIsAnimationEnabled(this.radExpander, false);
-```
-```VB.NET    
-	AnimationManager.SetIsAnimationEnabled(Me.radExpander, False)            
-```
+<snippet id='radexpander-howto-animation-example_2_disabling_animation_in_code-cs' />
+
+<snippet id='radexpander-howto-animation-example_2_disabling_animation_in_code-vb' />
+
 
 ## Customize Animations
 
@@ -39,64 +36,12 @@ To customize RadExpander animations, use the __AnimationManager.AnimationSelecto
 * __SpeedRatio__: A property of type __double__ that gets or sets the speed of the animation.
 
 __Example 3: Modify the animations when ExpandDirection is Up or Down__
-```XAML
-	<telerik:RadExpander>
-		<telerik:RadExpander.Content>
-			<Grid>
-				<Grid.RowDefinitions>
-					<RowDefinition Height="20"/>
-					<RowDefinition Height="20"/>
-					<RowDefinition Height="20"/>
-				</Grid.RowDefinitions>
-				<TextBox Grid.Row="0">My content</TextBox>
-				<TextBox Grid.Row="1">My content</TextBox>
-				<TextBox Grid.Row="2">My content</TextBox>
-			</Grid>
-		</telerik:RadExpander.Content>
-		<telerik:AnimationManager.AnimationSelector>
-			<telerik:AnimationSelector>
-				<telerik:ExpanderExpandCollapseAnimation AnimationName="Expand" 
-														 Direction="In"
-														 SpeedRatio="0.2"
-														 TargetElementName="Content" />
-				<telerik:ExpanderExpandCollapseAnimation AnimationName="Collapse" 
-														 Direction="Out"
-														 SpeedRatio="0.2"
-														 TargetElementName="Content" />
-			</telerik:AnimationSelector>
-		</telerik:AnimationManager.AnimationSelector>
-	</telerik:RadExpander>
-```
+<snippet id='radexpander-howto-animation-example_3_modify_the_animations_when_expanddirection_is_up_or_down-xaml' />
+
 
 __Example 4: Modify the animations when ExpandDirection is Right or Left__
-```XAML
-	<telerik:RadExpander ExpandDirection="Left">
-		<telerik:RadExpander.Content >
-				<Grid>
-					<Grid.RowDefinitions>
-						<RowDefinition Height="20"/>
-						<RowDefinition Height="20"/>
-						<RowDefinition Height="20"/>
-					</Grid.RowDefinitions>
-					<TextBox Grid.Row="0">My content</TextBox>
-					<TextBox Grid.Row="1">My content</TextBox>
-					<TextBox Grid.Row="2">My content</TextBox>
-				</Grid>
-		</telerik:RadExpander.Content>
-		<telerik:AnimationManager.AnimationSelector>
-			<telerik:AnimationSelector>
-				<telerik:ExpanderExpandCollapseAnimation AnimationName="ExpandHorizontal" 
-														 Direction="In"
-														 SpeedRatio="0.2"
-														 TargetElementName="Content" />
-				<telerik:ExpanderExpandCollapseAnimation AnimationName="CollapseHorizontal" 
-														 Direction="Out"
-														 SpeedRatio="0.2"
-														 TargetElementName="Content" />
-			</telerik:AnimationSelector>
-		</telerik:AnimationManager.AnimationSelector>
-	</telerik:RadExpander>
-```
+<snippet id='radexpander-howto-animation-example_4_modify_the_animations_when_expanddirection_is_right_or_left-xaml' />
+
 
 ## See Also
 * [Getting Started]({%slug expander-getting-started%})

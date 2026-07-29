@@ -40,13 +40,7 @@ Sets the symbol size and shape of the generated barcode. It can be automatically
 Determines character encoding used to encode the barcode contents. By default it is set to UTF-8, which uses more bits per character and may increase the size of the barcode image.
 
 __Example 1: DataMatrix Example__  
-```C#
-	<telerik:RadBarcode Value="https://www.telerik.com/wpf" Height="200" Width="200" x:Name="barcode" Foreground="Black"  VerticalAlignment="Top">
-		<telerik:RadBarcode.Symbology>
-			<telerik:DataMatrix  />
-		</telerik:RadBarcode.Symbology>
-	</telerik:RadBarcode>
-```
+<snippet id='radbarcode-supported-types-2d-barcodes-datamatrix-settings-block_1-cs' />
 
 ## See Also
 

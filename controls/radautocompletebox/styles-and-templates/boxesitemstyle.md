@@ -20,9 +20,7 @@ First, you need to create a __RadAutoCompleteBox__ with an ItemsSource bound to 
 
 __RadAutoCompleteBox declaration__
 
-```XAML
-	<telerik:RadAutoCompleteBox x:Name="radautocomplete1" Margin="10" ItemsSource="{Binding Agency}" DisplayMemberPath="Name"/>
-```
+<snippet id='radautocompletebox-styles-and-templates-boxesitemstyle-radautocompletebox_declaration-xaml' />
 
 The following screenshot shows how __RadAutoCompleteBox__ will look:
 
@@ -32,42 +30,19 @@ Next, you need to create a custom Style that targets __RadAutoCompleteBoxItem__ 
 
 __Custom BoxesItemStyle__
 
-```XAML
-	<Style TargetType="telerik:RadAutoCompleteBoxItem" x:Key="CustomBoxesItemxStyle">
-	  <Setter Property="Foreground" Value="Yellow" />
-	  <Setter Property="Background" Value="LightBlue" />
-	  <Setter Property="FontFamily" Value="Calibri" />
-	  <Setter Property="FontSize" Value="14" />
-	  <Setter Property="BorderThickness" Value="1" />
-	  <Setter Property="BorderBrush" Value="Red" />
-	</Style>
-```
+<snippet id='radautocompletebox-styles-and-templates-boxesitemstyle-custom_boxesitemstyle-xaml' />
 
 >If you are using {% if site.site_name == 'WPF' %}[Implicit Styles](https://docs.telerik.com/devtools/wpf/styling-and-appearance/styling-apperance-implicit-styles-overview){% endif %}{% if site.site_name == 'Silverlight' %}[Implicit Styles](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/styling-apperance-implicit-styles-overview){% endif %}, please notice that the Style should based on the default __RadAutoCompleteBoxItemStyle__.
 
 __Custom BoxesItemStyle with Implicit Styles__
 
-```XAML
-	<Style TargetType="telerik:RadAutoCompleteBoxItem" x:Key="CustomBoxesItemxStyle1" BasedOn="{StaticResource RadAutoCompleteBoxItemStyle}">
-	  <Setter Property="Foreground" Value="Yellow" />
-	  <Setter Property="Background" Value="LightBlue" />
-	  <Setter Property="FontFamily" Value="Calibri" />
-	  <Setter Property="FontSize" Value="14" />
-	  <Setter Property="BorderThickness" Value="1" />
-	  <Setter Property="BorderBrush" Value="Red" />
-	</Style>
-```
+<snippet id='radautocompletebox-styles-and-templates-boxesitemstyle-custom_boxesitemstyle_with_implicit_styles-xaml' />
 
 Finally, you need to set the __BoxesItemStyle__ property of the __RadAutoCompleteBox__ with the created Style:
 
 __Setting of BoxesItemStyle__
 
-```XAML
-	<telerik:RadAutoCompleteBox x:Name="radautocomplete" Margin="10"
-	                                ItemsSource="{Binding Agency}"
-	                                BoxesItemStyle="{StaticResource CustomBoxesItemxStyle}"
-	                                DisplayMemberPath="Name"/>
-```
+<snippet id='radautocompletebox-styles-and-templates-boxesitemstyle-setting_of_boxesitemstyle-xaml' />
 
 The following screenshot shows how the __RadAutoCompleteBox__ looks after the __BoxesItemStyle__ gets applied:
 

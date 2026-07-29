@@ -21,11 +21,8 @@ This is a visual control presenting a file upload and it contains no cloud-uploa
 The __RadCloudUploadListItem__ control has several buttons in its template. By default the only button that is visible is the __Close__ button. You can use the __Buttons__ property to specify which of the available ones to be shown. This property is a flags enum of type __CloudUploadListItemCommandButtons__. __Example 1__ demonstrates how to set the property using an implicit style in XAML.
 
 __Example 1: Setting the Buttons property using an implicit style__
-```XAML
-    <Style TargetType="telerik:RadCloudUploadListItem">
-       <Setter Property="Buttons" Value="Upload,Cancel,Close" />
-    </Style>
-```
+<snippet id='radcloudupload-features-radclouduploadlistitem-example_1_setting_the_buttons_property_using_an_implicit_style-xaml' />
+
 
 > This property only toggles the buttons' visibility. It does not control the order of appearance. If you want to reorder the buttons, or add a custom ones you need to retemplate the control.
 

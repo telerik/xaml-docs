@@ -15,33 +15,14 @@ position: 6
 You can restrict the zooming region in RadMap by setting the __RadMap.MinZoomLevel__ / __RadMap.MaxZoomLevel__ properties:
 
 __Example 1: Setting MinZoomLevel and MaxZoomLevel properties__
-```XAML
-	<telerik:RadMap x:Name="RadMap1" 
-	                ZoomLevel="13" 
-	                MinZoomLevel="10" 
-	                MaxZoomLevel="14" 
-	                Center="42.72481708629, 23.3176519378416">
-	    <telerik:RadMap.Provider>
-	        <telerik:UriImageProvider GeoBounds="42.786, 23.17, 25, 14" Uri="DataSources/Geospatial/osm_{zoom}.png" />
-	    </telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-how-to-howto-limit-panning-zooming-region-block_1-xaml' />
 
 ## Restrict panning region in RadMap
 
 You can restrict the panning region in RadMap by setting the __RadMap.GeoBounds__ property that represents __LocationRect__ instance:
 
 __Example 2: Setting GeoBounds property__
-```XAML
-	<telerik:RadMap x:Name="RadMap1" 
-	        ZoomLevel="15"
-	        MinZoomLevel="15"
-	        GeoBounds="42.3683598045287, -71.0789727419614, 3.9167707221002743, 2.1883037274811104">
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider />
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-how-to-howto-limit-panning-zooming-region-block_2-xaml' />
 
 >tip The third and fourth parameters (Width and Height) in the __LocationRect__ definition specify size of the rectangle in the distance units used on the map (kilometers or miles).
 

@@ -33,9 +33,8 @@ To show the __Data Filter View__ panel, set the [FilteringMode property]({%slug 
 * `Telerik.Windows.Controls.Navigation.dll`
 
 __Enabling the filter editor__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor"/>
-```
+<snippet id='radgridview-filtering-filter-editor-enabling_the_filter_editor-xaml' />
+
 
 The panel can be hidden with the __Close Button__. To return it back, invoke the `RadGridViewCommands.ToggleFilterEditor` command, or alternatively use the [column headers context menu](#toggling-the-filter-editor-panel-visibility).
 
@@ -44,9 +43,8 @@ The panel can be hidden with the __Close Button__. To return it back, invoke the
 The editor is positioned at the bottom of the data grid component, but this can be changed with the `FilterEditorPosition` property of `RadGridView`. The available positions are `Top` and `Bottom` (default).
 
 __Setting the filter editor position__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor" FilterEditorPosition="Top"/>
-```
+<snippet id='radgridview-filtering-filter-editor-setting_the_filter_editor_position-xaml' />
+
 
 __Top positioned filter editor panel__  
 
@@ -65,17 +63,14 @@ __Enable/disable filters check box__
 The panel can be hidden with the `RadGridViewCommands.ToggleFilterEditor` command and the __Close Button__.
 
 __Executing the RadGridViewCommands.ToggleFilterEditor command__
-```C#
-	this.gridView.PendingCommands.Add(RadGridViewCommands.ToggleFilterEditor);
-	this.gridView.ExecutePendingCommand();
-```
+<snippet id='radgridview-filtering-filter-editor-executing_the_radgridviewcommands_togglefiltereditor_command-cs' />
+
 
 Additional to that, the panel can be shown and hidden with the column headers context menu. This is a menu displayed on mouse right click over any column header. To enable the menu set the `EnableHeaderContextMenu` property of `RadGridView` to `true`.
 
 __Enabling the column header context menu__
-```XAML
-	<telerik:RadGridView EnableHeaderContextMenu="True" FilteringMode="FilterEditor" />
-```
+<snippet id='radgridview-filtering-filter-editor-enabling_the_column_header_context_menu-xaml' />
+
 
 __Column header context menu__
 
@@ -86,58 +81,24 @@ __Column header context menu__
 By default closing the panel (with the close button or the command), won't clear the applied filters. To change this behavior and clear the filters, set the `ShouldRemoveFiltersOnClose` property of `RadDataFilterView` to `True`.
 
 __Setting the ShouldRemoveFiltersOnClose property__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls: -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="ShouldRemoveFiltersOnClose" Value="True" />
-			</Style>
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-setting_the_shouldremovefiltersonclose_property-xaml' />
+
 
 ## No Filters Content
 
 The message displayed when no filters are applied can be customized with the `EmptyFiltersContent` and `EmptyFiltersContentTemplate` properties of `RadDataFilterView`.
 
 __Setting the EmptyFiltersContent property__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="EmptyFiltersContent" Value="No filtering criterias applied." />
-			</Style>    
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-setting_the_emptyfilterscontent_property-xaml' />
+
 
 __Changed default empty filters text__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor showing customized empty filters text](images/gridview-filter-editor-5.png)
 
 __Setting the EmptyFiltersContentTemplate property__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="EmptyFiltersContent" Value="No filtering criterias applied." />
-				 <Setter Property="EmptyFiltersContentTemplate">
-				 <Setter.Value>
-					 <DataTemplate>
-						 <TextBlock Text="{Binding}" Foreground="Purple" FontWeight="Bold"/>
-					 </DataTemplate>
-				 </Setter.Value>
-			 </Setter>
-			</Style>    
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-setting_the_emptyfilterscontenttemplate_property-xaml' />
+
 
 __Changed default empty filters visual__
 
@@ -165,64 +126,20 @@ The `EditorCreatedHandler` property allows to set a handler of type `EventHandle
 The `AutoGeneratingItemPropertyDefinitionHandler` property allows to set a handler of type `EventHandler<DataFilterAutoGeneratingItemPropertyDefinitionEventArgs>` that is invoked when the filter operators starts loading. This allows you to remove operators from the collection with the available operators.
 
 __Assigning the handler objects in code behind__
-```C#
-	private void RadGridView_Loaded(object sender, RoutedEventArgs e)
-	{
-		var gridView = (RadGridView)sender;
-		var dataFilterView = gridView.FindChildByType<RadDataFilterView>();
-		dataFilterView.FilterOperatorsLoadingHandler = new EventHandler<Telerik.Windows.Controls.Data.DataFilter.FilterOperatorsLoadingEventArgs>(OnFilterOperatorsLoading);
-		dataFilterView.EditorCreatedHandler = new EventHandler<Telerik.Windows.Controls.Data.DataFilter.EditorCreatedEventArgs>(OnEditorCreated);
-		dataFilterView.AutoGeneratingItemPropertyDefinitionHandler = new EventHandler<Telerik.Windows.Controls.Data.DataFilter.DataFilterAutoGeneratingItemPropertyDefinitionEventArgs>(OnAutoGeneratingItemPropertyDefinition);
-	}
-```
+<snippet id='radgridview-filtering-filter-editor-assigning_the_handler_objects_in_code_behind-cs' />
+
 
 __Defining a handler property in a view model__
-```XAML
-	public EventHandler<Telerik.Windows.Controls.Data.DataFilter.FilterOperatorsLoadingEventArgs> MyEditorCreatedHandler { get; set; }
-```
+<snippet id='radgridview-filtering-filter-editor-defining_a_handler_property_in_a_view_model-xaml' />
+
 
 __Assigning the handler object with data binding__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="EditorCreatedHandler" Value="{Binding MyEditorCreatedHandler}" />
-			</Style>    
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-assigning_the_handler_object_with_data_binding-xaml' />
+
 
 __Defining event handlers__
-```C#
-	private void OnAutoGeneratingItemPropertyDefinition(object? sender, DataFilterAutoGeneratingItemPropertyDefinitionEventArgs e)
-	{
-		if (e.ItemPropertyDefinition.PropertyType == typeof(DateTime))
-		{
-			e.Cancel = true;
-		}
-	}
+<snippet id='radgridview-filtering-filter-editor-defining_event_handlers-cs' />
 
-	private void OnEditorCreated(object? sender, Telerik.Windows.Controls.Data.DataFilter.EditorCreatedEventArgs e)
-	{
-		if (e.ItemPropertyDefinition.PropertyName == "MyTitlesCollection")
-		{
-			var editor = (RadComboBox)e.Editor;
-			//editor.ItemsSource = this.GetMyCustomTitlesCollection();
-		}
-	}
-
-	private void OnFilterOperatorsLoading(object? sender, Telerik.Windows.Controls.Data.DataFilter.FilterOperatorsLoadingEventArgs e)
-	{
-		if (e.ItemPropertyDefinition.PropertyType == typeof(double))
-		{
-			e.AvailableOperators.RemoveAt(2);                
-			e.DefaultOperator = Telerik.Windows.Data.FilterOperator.IsEqualTo;
-		}
-		
-	}
-```
 
 The handler objects are propagated to the [RadDataFilter events]({%slug datafilter-overview%}) with the same names - FilterOperatorsLoading, EditorCreated and AutoGeneratingItemPropertyDefinition.
 
@@ -233,17 +150,8 @@ The filter editor elements can be customized with several properties exposed by 
 To __change the spacing__ between the filter criteria visuals, set the `FilterPartsSpacing` property.
 
 __Setting the FilterPartsSpacing__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="FilterPartsSpacing" Value="20" />
-			</Style>    
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-setting_the_filterpartsspacing-xaml' />
+
 
 __Increased spacing between the filter parts__
 
@@ -252,17 +160,8 @@ __Increased spacing between the filter parts__
 To __hide the close button__, set the `CloseButtonVisibility` property to `Collapsed`.
 
 __Setting the CloseButtonVisibility__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="CloseButtonVisibility" Value="Collapsed" />
-			</Style>    
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-setting_the_closebuttonvisibility-xaml' />
+
 
 __Hidden close button__  
 
@@ -271,17 +170,8 @@ __Hidden close button__
 To __change the layout behavior__ of the panel that displays the filtering criterias, change the `IsWrappingEnabled` property. By default, when the criteria visuals go outside of the available width, they will get clipped. Setting `IsWrappingEnabled` to `true` will wrap the visuals and display them on multiple rows. 
 
 __Enabling wrapping__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="IsWrappingEnabled" Value="True" />
-			</Style>    
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-enabling_wrapping-xaml' />
+
 
 __Wrapped filter parts__  
 
@@ -292,18 +182,8 @@ The wrapping behavior can be enabled and disabled also with the __Toggle Wrappin
 To __change the default size of the dialog__ with the `RadDataFilter` control, set the `FilterEditorWindowWidth` and `FilterEditorWindowHeight` properties of `RadDataFilterView`.
 
 __Setting the filter editor dialog size__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="FilterEditorWindowWidth" Value="800" />
-				<Setter Property="FilterEditorWindowHeight" Value="300" />
-			</Style>    
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-setting_the_filter_editor_dialog_size-xaml' />
+
 
 __Filter editor dialog with customized size__
 
@@ -316,18 +196,8 @@ The filtering criteria visuals are represented by the `FilterPart` element. To a
 To change the member and value backgrounds, set the `MemberBackground` and `ValueBackground` properties of `FilterPart`.
 
 __Setting the backgrounds of the member and value filter parts__
-```XAML
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-			<!--BasedOn="{StaticResource FilterPartStyle}"-->
-			<Style TargetType="filterView:FilterPart">
-				<Setter Property="MemberBackground" Value="Salmon" />
-				<Setter Property="ValueBackground" Value="LightSeaGreen" />
-			</Style>    
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-filtering-filter-editor-setting_the_backgrounds_of_the_member_and_value_filter_parts-xaml' />
+
 
 __Customized FilterPart member and value backgrounds__  
 
@@ -336,51 +206,8 @@ __Customized FilterPart member and value backgrounds__
 The `FilterPart` can be further customized by setting its `ContentTemplate` property.
 
 __Customizing the FilePart elements using the ContentTemplate__
-```XAML
-	<telerik:RadGridView.Resources>
-		<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
-		<!--BasedOn="{StaticResource FilterPartStyle}"-->
-		<Style TargetType="filterView:FilterPart">
-			<Setter Property="ContentTemplate">
-				<Setter.Value>
-					<DataTemplate>
-						<TextBlock Text="{Binding Content}" x:Name="textBlock"/>
-						<DataTemplate.Triggers>
-							<MultiDataTrigger>
-								<MultiDataTrigger.Conditions>
-									<Condition Binding="{Binding ElementName=textBlock, Path=DataContext.Type}" Value="Operator"/>
-									<Condition Binding="{Binding ElementName=textBlock, Path=DataContext.Content}" Value="IsEqualTo"/>
-								</MultiDataTrigger.Conditions>
-								<Setter TargetName="textBlock" Property="Text" Value="=" />
-							</MultiDataTrigger>
-							<MultiDataTrigger>
-								<MultiDataTrigger.Conditions>
-									<Condition Binding="{Binding ElementName=textBlock, Path=DataContext.Type}" Value="Operator"/>
-									<Condition Binding="{Binding ElementName=textBlock, Path=DataContext.Content}" Value="IsNotEqualTo"/>
-								</MultiDataTrigger.Conditions>
-								<Setter TargetName="textBlock" Property="Text" Value="≠" />
-							</MultiDataTrigger>
-							<MultiDataTrigger>
-								<MultiDataTrigger.Conditions>
-									<Condition Binding="{Binding ElementName=textBlock, Path=DataContext.Type}" Value="LogicalOperator"/>
-									<Condition Binding="{Binding ElementName=textBlock, Path=DataContext.Content}" Value="And"/>
-								</MultiDataTrigger.Conditions>
-								<Setter TargetName="textBlock" Property="Text" Value="&amp;&amp;" />
-							</MultiDataTrigger>
-							<MultiDataTrigger>
-								<MultiDataTrigger.Conditions>
-									<Condition Binding="{Binding ElementName=textBlock, Path=DataContext.Type}" Value="LogicalOperator"/>
-									<Condition Binding="{Binding ElementName=textBlock, Path=DataContext.Content}" Value="Or"/>
-								</MultiDataTrigger.Conditions>
-								<Setter TargetName="textBlock" Property="Text" Value="||" />
-							</MultiDataTrigger>
-						</DataTemplate.Triggers>
-					</DataTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	</telerik:RadGridView.Resources>	
-```
+<snippet id='radgridview-filtering-filter-editor-customizing_the_filepart_elements_using_the_contenttemplate-xaml' />
+
 
 __Customized FilterPart content__  
 
@@ -398,32 +225,11 @@ The view model gives information also for the current level of the filtering par
 By default the data filer will use associated the property names in the dropdown that allows you to select a field. To change this and use a custom display name, either use the `System.ComponentModel.DisplayName` attribute on the corresponding property in the model, or use the [AutoGeneratingItemPropertyDefinitionHandler](#events).
 
 __Using the DisplayName attribute__
-```C#
-	[DisplayName("Est.")]
-	public DateTime Established
-	{
-	    get { return this.established; }
-	    set
-	    {
-	        if (value != this.established)
-	        {
-	            this.established = value;
-	            this.OnPropertyChanged("Established");
-	        }
-	    }
-	}
-```
+<snippet id='radgridview-filtering-filter-editor-using_the_displayname_attribute-cs' />
+
 
 __Using the AutoGeneratingItemPropertyDefinitionHandler to synchronize the field display name in the RadDataFiler with the Header of the GridViewColumn__
-```C#
-	private void OnAutoGeneratingPropertyDefinition(object sender, DataFilterAutoGeneratingItemPropertyDefinitionEventArgs e)
-	{
-	    if (e.ItemPropertyDefinition.PropertyName == "MyProperty")
-	    {
-	        var column = this.gridView.Columns.OfType<GridViewBoundColumnBase>().FirstOrDefault(c => c.DataMemberBinding.Path.Path == e.ItemPropertyDefinition.PropertyName);
-	        e.ItemPropertyDefinition.DisplayName = column.Header.ToString();
-	    }
-	}
-```
+<snippet id='radgridview-filtering-filter-editor-using_the_autogeneratingitempropertydefinitionhandler_to_synchronize_the_field_display_name_in_the_raddatafiler_with_the_header_of_the_gridviewcolumn-cs' />
+
 
 

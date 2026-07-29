@@ -26,22 +26,13 @@ You have two options:
 
 __Example 1: Styling the GridViewNewRow implicitly__
 
-```XAML
-	<Style TargetType="telerik:GridViewNewRow">
-        <Setter Property="Background" Value="Red" />
-    </Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-gridviewnewrow-example_1_styling_the_gridviewnewrow_implicitly-xaml' />
+
 
 __Example 2: Styling the GridViewNewRow explicitly__
 
-```XAML
-    <Style x:Key="NewRowStyle" TargetType="telerik:GridViewNewRow">
-        <Setter Property="Background" Value="Red" />
-    </Style>
+<snippet id='radgridview-styles-and-templates-styling-gridviewnewrow-example_2_styling_the_gridviewnewrow_explicitly-xaml' />
 
-    <telerik:RadGridView NewRowPosition="Top"
-                         NewRowStyle="{StaticResource NewRowStyle}">
-```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewNewRowStyle__.
 

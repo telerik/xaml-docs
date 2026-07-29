@@ -24,27 +24,15 @@ To attach a __RadContextMenu__ to a control, you have to set the instance of it 
 
 __Example 1: Attach a RadContextMenu__
 
-```XAML
-	<TextBox x:Name="textBox"
-	         Width="200"
-	         VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-features-working-with-radcontext-menu-example_1_attach_a_radcontextmenu-xaml' />
+
 
 __Example 1: Attach a RadContextMenu__
 
-```C#
-    RadContextMenu radContextMenu = new RadContextMenu();
-    RadContextMenu.SetContextMenu(this.textBox, radContextMenu);
-```
-```VB.NET
-    Dim radContextMenu As New RadContextMenu()
-    radContextMenu.SetContextMenu(Me.textBox, radContextMenu)
-```
+<snippet id='radcontextmenu-features-working-with-radcontext-menu-example_1_attach_a_radcontextmenu-cs' />
+
+<snippet id='radcontextmenu-features-working-with-radcontext-menu-example_1_attach_a_radcontextmenu-vb' />
+
 
 ## Add Menu Items to the RadContextMenu
 
@@ -56,48 +44,15 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 
 __Example 2: Add Menu Items__
 
-```XAML
-	<TextBox x:Name="textBox1"
-	         Width="200"
-	         VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="Copy" />
-	            <telerik:RadMenuItem Header="Paste" />
-	            <telerik:RadMenuItem Header="Cut" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-features-working-with-radcontext-menu-example_2_add_menu_items-xaml' />
+
 
 __Example 2: Add Menu Items__
 
-```C#
-    RadContextMenu radContextMenu = new RadContextMenu();
-    RadMenuItem copyItem = new RadMenuItem();
-    copyItem.Header = "Copy";
-    radContextMenu.Items.Add(copyItem);
-    RadMenuItem pasteItem = new RadMenuItem();
-    pasteItem.Header = "Paste";
-    radContextMenu.Items.Add(pasteItem);
-    RadMenuItem cutItem = new RadMenuItem();
-    cutItem.Header = "Cut";
-    radContextMenu.Items.Add(cutItem);
-    RadContextMenu.SetContextMenu(this.textBox, radContextMenu);
-```
-```VB.NET
-    Dim radContextMenu As New RadContextMenu()
-    Dim copyItem As New RadMenuItem()
-    copyItem.Header = "Copy"
-    radContextMenu.Items.Add(copyItem)
-    Dim pasteItem As New RadMenuItem()
-    pasteItem.Header = "Paste"
-    radContextMenu.Items.Add(pasteItem)
-    Dim cutItem As New RadMenuItem()
-    cutItem.Header = "Cut"
-    radContextMenu.Items.Add(cutItem)
-    radContextMenu.SetContextMenu(Me.textBox, radContextMenu)
-```
+<snippet id='radcontextmenu-features-working-with-radcontext-menu-example_2_add_menu_items-cs' />
+
+<snippet id='radcontextmenu-features-working-with-radcontext-menu-example_2_add_menu_items-vb' />
+
 
 ## Get the Clicked Element
 
@@ -107,12 +62,10 @@ For example, if you have a __RadTreeView__ with a __RadContextMenu__ attached, a
 
 __Example 3: Get clicked element__
 
-```C#
-	RadTreeViewItem item = radContextMenu.GetClickedElement<RadTreeViewItem>();
-```
-```VB.NET
-	Dim item As RadTreeViewItem = radContextMenu.GetClickedElement(Of RadTreeViewItem)()
-```
+<snippet id='radcontextmenu-features-working-with-radcontext-menu-example_3_get_clicked_element-cs' />
+
+<snippet id='radcontextmenu-features-working-with-radcontext-menu-example_3_get_clicked_element-vb' />
+
 
 >tip A more complex example scenario can be found in the [Use RadContextMenu with a RadGridView]({%slug radcontextmenu-how-to-use-radcontextmenu-with-radgridview%}) topic and in the [Select the Clicked Item of a RadTreeView]({%slug radcontextmenu-how-to-select-the-clicked-item-of-radtreeview%}) topic.
 

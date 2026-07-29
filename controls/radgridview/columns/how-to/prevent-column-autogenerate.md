@@ -20,22 +20,8 @@ Apllying this approach you need to add a reference to the __System.ComponentMode
 
 __Example 1: Using DataAnnotations.__
 
-```C#
-	private ObservableCollection<Player> players;
-	
-	[Display(AutoGenerateField = false)]
-	public ObservableCollection<Player> Players
-	{
-	    get
-	    {
-	        if (null == this.players)
-	        {
-	            this.players = new ObservableCollection<Player>();
-	        }
-	        return this.players;
-	    }
-	}
-```
+<snippet id='radgridview-columns-how-to-prevent-column-autogenerate-example_1_using_dataannotations-cs' />
+
 
 Now, RadGridView will not generate a column for the Players property. 
 
@@ -43,15 +29,8 @@ Now, RadGridView will not generate a column for the Players property.
 
 __Example 2: Canceling adding a column in AutoGeneratingColumn event__
 
-```C#
-	private void clubsGrid_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
-	{
-	    if (e.Column.UniqueName == "Players")
-	    {
-	        e.Cancel = true;
-	    }
-	}
-```
+<snippet id='radgridview-columns-how-to-prevent-column-autogenerate-example_2_canceling_adding_a_column_in_autogeneratingcolumn_event-cs' />
+
 
 ## See Also
 

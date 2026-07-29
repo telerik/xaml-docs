@@ -17,30 +17,15 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 {% if site.site_name == 'Silverlight' %}
 
 
-```XAML
-	<TextBox Width="200" VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-populating-with-data-using-static-items-block_1-xaml' />
+
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 
 
-```XAML
-	<TextBox Width="200" VerticalAlignment="Top"
-	         ContextMenu="{x:Null}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-populating-with-data-using-static-items-block_2-xaml' />
+
 {% endif %}
 
 In order to add items you need to use the __RadContextMenu's Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadMenuItems__. For example, take a look at the following lines.
@@ -48,36 +33,14 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 {% if site.site_name == 'Silverlight' %}
 
 
-```XAML
-	<TextBox Width="200" VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="Copy" />
-	            <telerik:RadMenuItem Header="Paste" />
-	            <telerik:RadMenuItem Header="Cut" />
-	            <telerik:RadMenuItem IsSeparator="True" />
-	            <telerik:RadMenuItem Header="Select All" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-populating-with-data-using-static-items-block_3-xaml' />
+
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
 
-```XAML
-	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="Copy" />
-	            <telerik:RadMenuItem Header="Paste" />
-	            <telerik:RadMenuItem Header="Cut" />
-	            <telerik:RadMenuItem IsSeparator="True" />
-	            <telerik:RadMenuItem Header="Select All" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-populating-with-data-using-static-items-block_4-xaml' />
+
 {% endif %}
 
 Here is a snapshot of the current result.
@@ -91,67 +54,15 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 {% if site.site_name == 'Silverlight' %}
 
 
-```XAML
-	<TextBox Width="200" VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="Copy">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="/Images/copy.png"
-	                   Stretch="None" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem Header="Paste">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="/Images/paste.png"
-	                   Stretch="None" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem Header="Cut">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="/Images/cut.png"
-	                   Stretch="None" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem IsSeparator="True" />
-	            <telerik:RadMenuItem Header="Select All" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-populating-with-data-using-static-items-block_5-xaml' />
+
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 
 
-```XAML
-	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="Copy">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="/Images/copy.png"
-	                   Stretch="None" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem Header="Paste">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="/Images/paste.png"
-	                   Stretch="None" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem Header="Cut">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="/Images/cut.png"
-	                   Stretch="None" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem IsSeparator="True" />
-	            <telerik:RadMenuItem Header="Select All" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-populating-with-data-using-static-items-block_6-xaml' />
+
 {% endif %}
 
 ![{{ site.framework_name }} RadContextMenu with Items with Icons](images/RadContextMenu_Populating_with_Data_Static_Items_02.png)

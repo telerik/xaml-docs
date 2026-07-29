@@ -21,14 +21,8 @@ The **DocumentFormatProvidersManager** class exposes a method that allows you to
 
 __Example 1: Register provider__
 
-```C#
-   
-    DocumentFormatProvidersManager.RegisterFormatProvider(new CustomHtmlFormatProvider());
-```
-```VB.NET
-
-	DocumentFormatProvidersManager.RegisterFormatProvider(New CustomHtmlFormatProvider())
-```
+<snippet id='radrichtextbox-import-export-features-import-export-formatprovidersmanager-block_1-cs' />
+<snippet id='radrichtextbox-import-export-features-import-export-formatprovidersmanager-block_2-vb' />
 
 You can also disable the automatic load of the default providers using the **AutomaticallyLoadFormatProviders** property. When it is set to `true`, you should manually take care of registering the format providers you would like to use in the application.
 
@@ -38,16 +32,8 @@ The **DocumentFormatProvidersManager** class offers several approaches to retrie
 
 __Example 2: Modify default provider's settings__
 
-```C#
-
-    DocxFormatProvider docxFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("docx") as DocxFormatProvider;
-    docxFormatProvider.ExportSettings.FieldResultMode = FieldDisplayMode.Code;
-```
-```VB.NET
-
-     Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)
-     docxFormatProvider.ExportSettings.FieldResultMode = FieldDisplayMode.Code
-```
+<snippet id='radrichtextbox-import-export-features-import-export-formatprovidersmanager-block_3-cs' />
+<snippet id='radrichtextbox-import-export-features-import-export-formatprovidersmanager-block_4-vb' />
 
 
 The class also contains a static method  __GetSupportedExtensions()__ that returns an IEnumeable of the currently supported file extensions.

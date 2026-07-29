@@ -14,63 +14,15 @@ In a logarithmic axis the value of each consecutive tick is *X* times higher tha
 
 __Example 1: Setting the LogarithmBase property__
 
-```XAML
-	<telerik:RadCartesianChart x:Name="chart">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:LogarithmicAxis LogarithmBase="2" />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		
-		<telerik:ScatterLineSeries>
-			<telerik:ScatterLineSeries.DataPoints>
-				<telerik:ScatterDataPoint XValue="2"
-											YValue="1"/>
-				<telerik:ScatterDataPoint XValue="4"
-											YValue="2"/>
-				<telerik:ScatterDataPoint XValue="16"
-											YValue="3"/>
-				<telerik:ScatterDataPoint XValue="256"
-											YValue="4"/>
-				<telerik:ScatterDataPoint XValue="65536"
-											YValue="5"/>
-			</telerik:ScatterLineSeries.DataPoints>
-		</telerik:ScatterLineSeries>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-logarithmicaxis-example_1_setting_the_logarithmbase_property-xaml' />
+
 
 #### Figure 1: Result from Example 1
 ![LogarithmicAxis with LogarithmBase](images/radchartview-features-axis-logarithmicaxis-logarithmbase.png)
 
 __Example 2: Setting the ExponentStep property__
-```XAML
-	<telerik:RadCartesianChart x:Name="chart">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:LogarithmicAxis ExponentStep="2" />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		
-		<telerik:ScatterLineSeries>
-			<telerik:ScatterLineSeries.DataPoints>
-				<telerik:ScatterDataPoint XValue="2"
-											YValue="1"/>
-				<telerik:ScatterDataPoint XValue="4"
-											YValue="2"/>
-				<telerik:ScatterDataPoint XValue="16"
-											YValue="3"/>
-				<telerik:ScatterDataPoint XValue="256"
-											YValue="4"/>
-				<telerik:ScatterDataPoint XValue="65536"
-											YValue="5"/>
-			</telerik:ScatterLineSeries.DataPoints>
-		</telerik:ScatterLineSeries>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-logarithmicaxis-example_2_setting_the_exponentstep_property-xaml' />
+
 
 #### Figure 2: Result from Example 2
 ![LogarithmicAxis with ExponentStep](images/radchartview-features-axis-logarithmicaxis-exponentstep.png)

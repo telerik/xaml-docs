@@ -20,16 +20,7 @@ First you have to declare the controls in XAML or code-behind:
 
 __Defining RadBusyIndicator and a Button as content__
 
-```XAML
-	<telerik:RadBusyIndicator x:Name="radBusyIndicator"
-	                          DisplayAfter="00:00:05">
-	    <Grid>
-	        <Button Content="Show RadBusyIndicator"
-	                VerticalAlignment="Bottom"
-	                Click="showIndicatorButton_Click"/>
-	    </Grid>
-	</telerik:RadBusyIndicator>
-```
+<snippet id='radbusyindicator-features-delayed-display-defining_radbusyindicator_and_a_button_as_content-xaml' />
 
 >Notice that the __DisplayAfter__ property is of type __TimeSpan__. Considering this fact, in this example you have to set the __RadBusyIndicator__ to be delayed with 5 seconds (00:00:05).
 
@@ -39,12 +30,7 @@ Finally, in the code-behind you have to handle the click event for the button an
 
 __Enable RadBusyIndicator__
 
-```C#
-	private void showIndicatorButton_Click( object sender, RoutedEventArgs e )
-	{
-	    this.radBusyIndicator.IsBusy = true;
-	}
-```
+<snippet id='radbusyindicator-features-delayed-display-enable_radbusyindicator-cs' />
 
 As a result when the user clicks on a button after a delay of five seconds, the __RadBusyIndicator__ will be displayed:
 

@@ -18,10 +18,8 @@ Cartesian PlotBand annotation is either a horizontal or a vertical stripe that c
 
 Here is what __CartesianPlotBandAnnotation__ looks like:
 
-```XAML
-	<telerik:CartesianPlotBandAnnotation From="4.3" To="5.5" Axis="{Binding ElementName=verticalAxis}"/>
-	<telerik:CartesianPlotBandAnnotation From="0.5" To="1.5" Axis="{Binding ElementName=horizontalAxis}"/>
-```
+<snippet id='radchartview-features-annotations-plotband-block_1-xaml' />
+
 
 ![Rad Chart View-annotations-cartesian-plotband](images/RadChartView-annotations-cartesian-plotband.png)
 
@@ -31,9 +29,8 @@ The Polar axis PlotBand annotation resembles a donut.
 
 Here is what __PolarAxisPlotBandAnnotation__ looks like:        
 
-```XAML
-	<telerik:PolarAxisPlotBandAnnotation From="6" To="9"/>
-```
+<snippet id='radchartview-features-annotations-plotband-block_2-xaml' />
+
 
 ![Rad Chart View-annotations-polar-plotband](images/RadChartView-annotations-polar-plotband.png)
 
@@ -43,17 +40,15 @@ Radial Axis PlotBand annotations represent visually a sector of the circle (pie 
 
 A plotband starting from *180* degrees and ending in *270* degrees will look like this:        
 
-```XAML
-	<telerik:RadialAxisPlotBandAnnotation From="270" To="180" />
-```
+<snippet id='radchartview-features-annotations-plotband-block_3-xaml' />
+
 
 ![{{ site.framework_name }} RadChartView Radial Axis PlotBand Annotation from 180 to 270](images/RadChartView-annotations-polar-plotband-180-270.png)
 
 If you wonder how to annotate the bigger segment from the image above, then you should switch the __From__ and __To__ values.
 
-```XAML
-	<telerik:RadialAxisPlotBandAnnotation From="270" To="180" />
-```
+<snippet id='radchartview-features-annotations-plotband-block_4-xaml' />
+
 
 ![{{ site.framework_name }} RadChartView Radial Axis PlotBand Annotation from 270 to 180](images/RadChartView-annotations-polar-plotband-270-180.png)
 

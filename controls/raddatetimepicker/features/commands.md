@@ -24,12 +24,8 @@ In __Example 1__ a __Button__ is linked to the __RadDateTimePickerCommands.SetTo
 
 __Example 1: SetToday command__
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="dateTimePicker1" />
-	<telerik:RadButton Command="{x:Static telerik:RadDateTimePickerCommands.SetToday}" 
-					   CommandTarget="{Binding ElementName=dateTimePicker1}" 
-					   Content="Set Today"/>
-```
+<snippet id='raddatetimepicker-features-commands-example_1_settoday_command-xaml' />
+
 
 ## Close Command
 
@@ -37,9 +33,8 @@ The __Close__ command closes the drop down part of __RadDateTimePicker__ if it i
 
 The following example shows how to close the drop down of __RadDateTimePicker__ by executing the __Close__ command:
 
-```C#
-	RadDateTimePickerCommands.Close.Execute(null, this.dateTimePicker1);
-```
+<snippet id='raddatetimepicker-features-commands-example_1_settoday_command-cs' />
+
 
 ## See Also  
  * [Date Selection Modes]({%slug raddatetimepicker-features-date-selection-modes%})

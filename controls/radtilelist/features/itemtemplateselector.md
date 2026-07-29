@@ -26,29 +26,7 @@ To do so follow these steps:
 
 __Example 1: Defining the ItemTemplateSelector__
 
-```C#
-	public class MyTileTemplateSelector : DataTemplateSelector
-	{
-	    public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
-	    {
-	        if (item is Club)
-	        {
-	            Club club = item as Club;
-	            if (club.StadiumCapacity > 50000)
-	            {
-	                return BigStadium;
-	            }
-	            else
-	            {
-	                return SmallStadium;
-	            }
-	        }
-	        return null;
-	    }
-	    public DataTemplate BigStadium { get; set; }
-	    public DataTemplate SmallStadium { get; set; }
-	}
-```
+<snippet id='radtilelist-features-itemtemplateselector-block_1-cs' />
 
 In this case we have two different __DataTemplates__ that could be applied - __BigStadium__ and __SmallStadium__. Depending on the underlying data we select which template to apply.
 
@@ -56,58 +34,13 @@ In this case we have two different __DataTemplates__ that could be applied - __B
 
 __Example 2: Defining the ItemTemplateSelector as a Resource in XAML__
 
-```XAML
-	<Grid.Resources>
-	  <my:MyTileTemplateSelector x:Key="myTileTemplateSelector">
-	    <my:MyTileTemplateSelector.BigStadium>
-	      <DataTemplate>
-	        <Grid Background="Purple">
-	          <Grid.RowDefinitions>
-	            <RowDefinition />
-	            <RowDefinition />
-	          </Grid.RowDefinitions>
-	          <Grid.ColumnDefinitions>
-	            <ColumnDefinition/>
-	            <ColumnDefinition/>
-	          </Grid.ColumnDefinitions>
-	          <TextBlock Grid.Row="0" Grid.Column="0" Text="First Name"/>
-	          <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Name}" />
-	          <TextBlock Grid.Row="1" Grid.Column="0" Text="Stadium Capacity"/>
-	          <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding StadiumCapacity}" />
-	        </Grid>
-	      </DataTemplate>
-	    </my:MyTileTemplateSelector.BigStadium>
-	    <my:MyTileTemplateSelector.SmallStadium>
-	      <DataTemplate>
-	        <Grid Background="Blue">
-	          <Grid.RowDefinitions>
-	            <RowDefinition />
-	            <RowDefinition />
-	          </Grid.RowDefinitions>
-	          <Grid.ColumnDefinitions>
-	            <ColumnDefinition/>
-	            <ColumnDefinition/>
-	          </Grid.ColumnDefinitions>
-	          <TextBlock Grid.Row="0" Grid.Column="0" Text="First Name"/>
-	          <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Name}" />
-	          <TextBlock Grid.Row="1" Grid.Column="0" Text="Stadium Capacity"/>
-	          <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding StadiumCapacity}" />
-	        </Grid>
-	      </DataTemplate>
-	    </my:MyTileTemplateSelector.SmallStadium>
-	  </my:MyTileTemplateSelector>
-	</Grid.Resources>
-```
+<snippet id='radtilelist-features-itemtemplateselector-block_2-xaml' />
 
 **4.** Finally, set the __ItemTemplateSelector__ property of __RadTileList__:
 
 __Example 3: Applying the ItemTemplateSelector__
 
-```XAML
-	<telerik:RadTileList  x:Name="RadTileList"
-	                      ItemTemplateSelector="{StaticResource myTileTemplateSelector}"
-	                      ItemsSource="{Binding Clubs}"/>
-```
+<snippet id='radtilelist-features-itemtemplateselector-block_3-xaml' />
 
 ## See Also
 * [Styling TileList]({%slug tilelist-styling%})

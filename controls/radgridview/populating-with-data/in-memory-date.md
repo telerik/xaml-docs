@@ -18,127 +18,33 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 
 
-```C#
-	public class Car
-	{
-	    public Car()
-	    {
-	    }
-	
-	    public Car(string name, string description)
-	    {
-	        this.Name = name;
-	        this.Description = description;
-	    }
-	
-	    public string Name
-	    {
-	        get;
-	        set;
-	    }
-	
-	    public string Description
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class Car
-	
-	    Public Sub New()
-	    End Sub
-	
-	    Public Sub New(ByVal name As String, ByVal description As String)
-	        Me.Name = name
-	        Me.Description = description
-	    End Sub
-	
-	    Private _Name As String
-	    Public Property Name() As String
-	        Get
-	            Return _Name
-	        End Get
-	        Set(ByVal value As String)
-	            _Name = value
-	        End Set
-	    End Property
-	
-	    Private _Description As String
-	    Public Property Description() As String
-	        Get
-	            Return _Description
-	        End Get
-	        Set(ByVal value As String)
-	            _Description = value
-	        End Set
-	    End Property
-	End Class
-```
+<snippet id='radgridview-populating-with-data-in-memory-date-block_1-cs' />
+
+<snippet id='radgridview-populating-with-data-in-memory-date-block_1-vb' />
+
 
 * Create a new class named __RadGridViewSampleData__. 
 
 
 
-```C#
-	public class RadGridViewSampleData
-	{
-	    public RadGridViewSampleData()
-	    {
-	        Cars = new ObservableCollection<Car>();
-	        Cars.Add(new Car("BMW", "A german luxury car."));
-	        Cars.Add(new Car("Porsche", "A german sports car."));
-	        Cars.Add(new Car("Citroen", "A french luxury car."));
-	        Cars.Add(new Car("Renault", "A french family car."));
-	    }
-	
-	    public ObservableCollection<Car> Cars
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class RadGridViewSampleData
-	    Public Sub New()
-	        Cars = New ObservableCollection(Of Car)()
-	        Cars.Add(New Car("BMW", "A german luxury car."))
-	        Cars.Add(New Car("Porsche", "A german sports car."))
-	        Cars.Add(New Car("Citroen", "A french luxury car."))
-	        Cars.Add(New Car("Renault", "A french family car."))
-	    End Sub
-	
-	    Private _Cars As ObservableCollection(Of Car)
-	    Public Property Cars() As ObservableCollection(Of Car)
-	        Get
-	            Return _Cars
-	        End Get
-	        Set(ByVal value As ObservableCollection(Of Car))
-	            _Cars = value
-	        End Set
-	    End Property
-	End Class
-```
+<snippet id='radgridview-populating-with-data-in-memory-date-block_2-cs' />
+
+<snippet id='radgridview-populating-with-data-in-memory-date-block_2-vb' />
+
 
 * Declare the __RadGridViewSampleData__ object as a resource in your application. 
 
 
 
-```XAML
-	<Grid.Resources>
-	    <my:RadGridViewSampleData x:Key="DataSource"/>
-	</Grid.Resources>
-```
+<snippet id='radgridview-populating-with-data-in-memory-date-block_3-xaml' />
+
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
 
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Cars}"/>
-```
+<snippet id='radgridview-populating-with-data-in-memory-date-block_4-xaml' />
+
 
 Run your demo, the result can be seen on the next picture:
 

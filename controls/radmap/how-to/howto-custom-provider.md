@@ -24,31 +24,7 @@ Once you know the type of provider you require, you can create a custom class to
 
 __Example 1: Create a custom TiledProvider__
 
-```C#
-	public class MyMapProvider : TiledProvider
-	{
-		/// <summary>
-		/// Initializes a new instance of the MyMapProvider class.
-		/// </summary>
-		public MyMapProvider()
-				: base()
-		{
-			MyMapSource source = new MyMapSource();
-			this.MapSources.Add(source.UniqueId, source);
-		}
-
-		/// <summary>
-		/// Returns the SpatialReference for the map provider.
-		/// </summary>
-		public override ISpatialReference SpatialReference
-		{
-			get
-			{
-				return new MercatorProjection();
-			}
-		}
-	}
-```
+<snippet id='radmap-how-to-howto-custom-provider-block_1-cs' />
 
 >The **MyMapSource** class is defined in **Example 2**.
 
@@ -76,107 +52,20 @@ When creating a custom map provider, you can choose one of these sources and ove
 **Example 2** demonstrates a possible implementation of a custom TiledMapSource.
 
 __Example 2: Create a custom TiledMapSource__
-```C#
-	public class MyMapSource : TiledMapSource
-	{
-	       /// <summary>
-	       /// Initializes a new instance of the MyMapSource class.
-	       /// </summary>
-	       public MyMapSource()
-	             : base(1, 20, 256, 256)
-	       {
-	       }
-		   
-	       /// <summary>
-	       /// Initialize provider.
-	       /// </summary>
-	       public override void Initialize()
-	       {
-	             // Raise provider initialized event.
-	             this.RaiseInitializeCompleted();
-	       }
-
-	       /// <summary>
-	       /// Gets the image URI.
-	       /// </summary>
-	       /// <param name="tileLevel">Tile level.</param>
-	       /// <param name="tilePositionX">Tile X.</param>
-	       /// <param name="tilePositionY">Tile Y.</param>
-	       /// <returns>URI of image.</returns>
-	       protected override Uri GetTile(int tileLevel, int tilePositionX, int tilePositionY)
-	       {
-	             int zoomLevel = ConvertTileToZoomLevel(tileLevel);
-	             // Prepare tile url somehow ...
-	             string url = CustomHelper.GetTileUrl(tileLevel, tilePositionX, tilePositionY);
-	             return new Uri(url);
-	       }
-	}
-```
+<snippet id='radmap-how-to-howto-custom-provider-block_2-cs' />
 
 ## Create an OpenStreetProvider Which Uses Https
 
 A common requirement when using the RadMap control is to use the OpenStreetMap service over **https**. **Examples 3-5** demonstrate how this can be achieved by creating a custom map provider.
 
 __Example 3: Create a custom TiledProvider and set up its commands__
-```C#
-	public class HttpsOpenStreetProvider : TiledProvider
-    {
-        /// <summary>
-        /// Initializes a new instance of the MyMapProvider class.
-        /// </summary>
-        public HttpsOpenStreetProvider()
-              : base()
-        {
-            OsmTileMapSource source = new HttpsOpenStreetMapnikSource();
-			// required as the OSM service requires a non-stock User-Agent header
-            source.WebHeaders.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 Edge/12.0");
-            this.MapSources.Add(source.UniqueId, source);
- 
-            this.SetupCommands();
-        }
-
-        /// <summary>
-        /// Returns the SpatialReference for the map provider.
-        /// </summary>
-        public override ISpatialReference SpatialReference
-        {
-            get
-            {
-                return new MercatorProjection();
-            }
-        }
- 
-        private void SetupCommands()
-        {
-            this.CommandBindingCollection.Clear();
- 
-            string uriString = "/Telerik.Windows.Controls.DataVisualization;component/themes/road.png";
- 
-            this.RegisterSetSourceCommand(
-                typeof(HttpsOpenStreetMapnikSource),
-                LocalizationManager.GetString("MapOsmStandardCommand"),
-                null,
-                new Uri(uriString, UriKind.RelativeOrAbsolute),
-                null,
-                null);
-        }
-    }
-```
+<snippet id='radmap-how-to-howto-custom-provider-block_3-cs' />
 
 __Example 4: Create a custom OsmTileMapSource which uses an https url__
-```C#
-    public class HttpsOpenStreetMapnikSource : OsmTileMapSource
-    {
-        public HttpsOpenStreetMapnikSource() : base(@"https://{prefix}.tile.openstreetmap.org/{zoom}/{x}/{y}.png")
-        {
-        }
-    }
-```
+<snippet id='radmap-how-to-howto-custom-provider-block_4-cs' />
 
 __Example 5: Set the provider via RadMap's Provider property__
-```C#
-	this.map.Provider = new HttpsOpenStreetProvider();
-```
+<snippet id='radmap-how-to-howto-custom-provider-block_5-cs' />
 
 ## See Also
 

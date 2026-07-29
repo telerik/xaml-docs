@@ -17,27 +17,8 @@ The error bar shape allows you to display a error or uncertainty in the plotted 
 To start using the series, add it in the `Series` collection of the chart and populate its `DataPoints` collection (or the [ItemsSource](#data-binding)).
 
 __Defining ErrorBarSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:ErrorBarSeries>
-				<telerik:ErrorBarSeries.DataPoints>
-					<telerik:ErrorBarDataPoint Category="A" Low="15" High="80" />
-					<telerik:ErrorBarDataPoint Category="B" Low="10" High="60" />
-					<telerik:ErrorBarDataPoint Category="C" Low="25" High="75" />
-					<telerik:ErrorBarDataPoint Category="D" Low="15" High="80" />
-					<telerik:ErrorBarDataPoint Category="E" Low="10" High="60" />
-				</telerik:ErrorBarSeries.DataPoints>
-			</telerik:ErrorBarSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-errorbarseries-defining_errorbarseries_in_xaml-xaml' />
+
 
 __ErrorBarSeries example__  
 
@@ -50,35 +31,8 @@ __ErrorBarSeries example__
 The series allows you to display an additional marker that shows the expected measure of the data point. To enable this, set the `ShowMarker` property of the `ErrorBarShape` element and the Value property of the `ErrorBarDataPoint` (or `ValueBinding` when using the [ItemsSource](#data-binding).
 
 __Showing ErrorBarSeries markers__
-```XAML
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:ErrorBarSeries>
-				<telerik:ErrorBarSeries.DataPoints>
-					<telerik:ErrorBarDataPoint Category="A" Low="15" High="80" Value="55"/>
-					<telerik:ErrorBarDataPoint Category="B" Low="10" High="60" Value="40"/>
-					<telerik:ErrorBarDataPoint Category="C" Low="25" High="75" Value="43"/>
-					<telerik:ErrorBarDataPoint Category="D" Low="15" High="80" Value="55"/>
-					<telerik:ErrorBarDataPoint Category="E" Low="10" High="60" Value="40"/>
-				</telerik:ErrorBarSeries.DataPoints>
-				<telerik:ErrorBarSeries.DefaultVisualStyle>
-					<Style TargetType="telerik:ErrorBarShape">
-						<Setter Property="Stroke" Value="#2B7BED" />
-						<Setter Property="Fill" Value="#2B7BED" />
-						<Setter Property="StrokeThickness" Value="2" />
-						<Setter Property="ShowMarker" Value="True"/>
-					</Style>
-				</telerik:ErrorBarSeries.DefaultVisualStyle>
-			</telerik:ErrorBarSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-errorbarseries-showing_errorbarseries_markers-xaml' />
+
 
 __ErrorBar markers__  
 
@@ -96,62 +50,16 @@ The ErrorBarSeries works with data point objects of type ErrorBarDataPoint. In a
 The following example shows how to create a simple object describing the error bar and populate the series with a sample collection.
 
 __Defining the model__
-```C#
-	public class ErrorBarInfo
-    {
-        public string Category { get; set; }
-        public double Low { get; set; }
-        public double High { get; set; }
-        public double Value { get; set; }
-    }
-```	
+<snippet id='radchartview-series-cartesianchart-series-bar-series-errorbarseries-defining_the_model-cs' />
+
 
 __Populating the data__
-```C#
-	public MyUserControl()
-	{
-		InitializeComponent(); 
-		
-		var source = new ObservableCollection<ErrorBarInfo>()
-		{
-			new ErrorBarInfo() { Category = "C1", Low = 5, High = 30, Value = 13 },
-			new ErrorBarInfo() { Category = "C2", Low = 10, High = 40, Value = 16 },
-			new ErrorBarInfo() { Category = "C3", Low = 15, High = 35, Value = 27 },
-			new ErrorBarInfo() { Category = "C4", Low = 5, High = 25, Value = 15 },
-			new ErrorBarInfo() { Category = "C5", Low = 10, High = 40, Value = 19 },
-			new ErrorBarInfo() { Category = "C6", Low = 9, High = 35, Value = 25 },
-			new ErrorBarInfo() { Category = "C7", Low = 5, High = 25, Value = 12 },
-			new ErrorBarInfo() { Category = "C8", Low = 7, High = 30, Value = 21 },
-		};
-		this.errorBarSeries.ItemsSource = source;
-	}
-```	
+<snippet id='radchartview-series-cartesianchart-series-bar-series-errorbarseries-populating_the_data-cs' />
+
 
 __Defining ErrorBarSeries in data binding scenario__
-```XAML	
-	<telerik:RadCartesianChart Palette="Fluent">
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:ErrorBarSeries x:Name="errorBarSeries" 
-									CategoryBinding="Category"
-									LowBinding="Low"
-									HighBinding="High"
-									ValueBinding="Value">
-				<telerik:ErrorBarSeries.DefaultVisualStyle>
-					<Style TargetType="telerik:ErrorBarShape">
-						<Setter Property="StrokeThickness" Value="2" />
-						<Setter Property="ShowMarker" Value="True"/>
-					</Style>
-				</telerik:ErrorBarSeries.DefaultVisualStyle>
-			</telerik:ErrorBarSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-errorbarseries-defining_errorbarseries_in_data_binding_scenario-xaml' />
+
 
 __ErrorBarSeries data binding example__  
 

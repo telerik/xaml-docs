@@ -41,15 +41,8 @@ You can find the required assemblies for each control from the Telerik UI for WP
 There are few dialogs that you can use in a similar way. __Example 1__ shows how to show a __RadOpenFileDialog__. You can use this code to also show the __open folder__ and __save file__ dialogs.
 
 __Example 1: Opening a dialog__ 
-```C#
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();	
-	openFileDialog.Owner = theHostWindowInstance;	
-	openFileDialog.ShowDialog();
-	if (openFileDialog.DialogResult == true)
-	{
-		string selectedFileName = openFileDialog.FileName;
-	}
-```
+<snippet id='radfiledialogs-getting-started-example_1_opening_a_dialog-cs' />
+
 
 You can see how to define and show the different dialogs in the corresponding articles.
 
@@ -79,24 +72,8 @@ To change the theme, you can follow the steps below:
 	__Example 2__ demonstrates where you can merge the ResourceDictionaries so they are applied globally in the application.
 	
 	__Example 2: Merging the ResourceDictionaries__  
-	```XAML
-		<Application x:Class="MyTestApplication.App"
-				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-				 StartupUri="MainWindow.xaml">
-			<Application.Resources>
-				<ResourceDictionary>
-					<ResourceDictionary.MergedDictionaries>
-						<ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.xaml" />
-						<ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.Input.xaml" />
-						<ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
-						<ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.GridView.xaml" />
-						<ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.FileDialogs.xaml" />
-					</ResourceDictionary.MergedDictionaries>
-				</ResourceDictionary>
-			</Application.Resources>
-		</Application>
-	```
+	<snippet id='radfiledialogs-getting-started-example_2_merging_the_resourcedictionaries-xaml' />
+
 
 #### __Figure 1: File dialog with VisualStudio2013 theme applied__
 ![File dialog with VisualStudio2013 theme applied](images/radfiledialogs-getting-started-01.png)

@@ -41,9 +41,7 @@ You can add __RadToolBar__ manually by writing the XAML code in __Example 1__. Y
 
 __Example 1: Adding RadToolBar in XAML__
 
-```XAML
-	<telerik:RadToolBar />
-```
+<snippet id='radtoolbar-getting-started-block_1-xaml' />
 
 
 >In order to use __RadToolBar__ in XAML you have to add the namespace declaration shown in __Example 2__:
@@ -64,16 +62,7 @@ In order to populate the __RadToolBar__ control with data in XAML, you can add a
 
 __Example 3: Adding RadButtons in XAML__
 
-```XAML
-	<telerik:RadToolBar>
-		<telerik:RadButton Content="FILE" />
-		<telerik:RadButton Content="EDIT " />
-		<telerik:RadButton Content="VIEW" />
-		<telerik:RadButton Content="BUILD" />
-		<telerik:RadButton Content="DEBUG" />
-		<telerik:RadButton Content="HELP" />
-	</telerik:RadToolBar>
-```
+<snippet id='radtoolbar-getting-started-block_2-xaml' />
 
 Running the application will result in a populated __RadToolBar__ as shown in __Figure 2__.
 
@@ -103,17 +92,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radtoolbar-getting-started-block_3-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -127,7 +106,7 @@ __Figure 3__ shows a RadToolBar with the **Windows8** theme applied.
 
 * [Telerik UI for WPF ToolBar Component](https://www.telerik.com/products/wpf/toolbar.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -142,4 +121,3 @@ __Figure 3__ shows a RadToolBar with the **Windows8** theme applied.
  * [Item Alignment]({%slug radtoolbar-features-itemalignment%})
 
  * [RadToolBar API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.radtoolbar)
-

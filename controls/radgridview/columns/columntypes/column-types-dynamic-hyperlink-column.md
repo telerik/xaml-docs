@@ -31,29 +31,14 @@ Here is a list of the most important properties:
 * __TargetName__: Specifies the location to open the link.
 
 __Example 1: Define GridViewDynamicHyperlinkColumn in XAML.__
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-			<!-- The value of the MiddleUrlPart property will go to the {0} placeholder and the value of the EndUrlPart will go to the {1} placeholder-->
-	        <telerik:GridViewDynamicHyperlinkColumn DataMemberBinding="{Binding Name}"
-	                         NavigateUrlMemberPaths="MiddleUrlPart, EndUrlPart"
-	                         NavigateUrlFormatString="{} http://oficialleaguesite.com/{0}/{1}"
-	                         TargetName="_blank" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-dynamic-hyperlink-column-example_1_define_gridviewdynamichyperlinkcolumn_in_xaml-xaml' />
+
 
 You can also directly configure the navigate url to be a complete one and specify an empty format as demonstrated in __Example 2__, though in such a scenario it would be easier to use a [GridViewHyperlinkColumn]({%slug radgridview-columns-column-types-hyperlink-column%}).
 
 __Example 2: Define navigate url without additional format.__
-```XAML
-	<telerik:GridViewDynamicHyperlinkColumn 
-	 DataMemberBinding="{Binding Name}"
-	 NavigateUrlMemberPaths="TeamUrl"
-	 NavigateUrlFormatString="{} {0}"
-	 TargetName="_blank" />
-```  
+<snippet id='radgridview-columns-columntypes-column-types-dynamic-hyperlink-column-example_2_define_navigate_url_without_additional_format-xaml' />
+
 
 __Figure 1: GridViewDynamicHyperlinkColumn in RadGridView__ 
 

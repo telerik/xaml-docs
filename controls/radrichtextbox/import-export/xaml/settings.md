@@ -32,12 +32,7 @@ __XamlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 >These events will be called when the __ImageExportMode__ enumeration property is set to __ImageExportingEvent__.
 
 __Example 1: Setting the ExportSettings of the XamlFormatProvider__
-```C#
-	XamlFormatProvider xamlFormatProvider = new XamlFormatProvider();
-	XamlExportSettings settings = new XamlExportSettings();
-	settings.ImageExportMode = Telerik.Windows.Documents.FormatProviders.Xaml.ImageExportMode.UriSource;
-	xamlFormatProvider.ExportSettings = settings;
-```
+<snippet id='radrichtextbox-import-export-xaml-settings-block_1-cs' />
 
 ## Import Settings
 
@@ -51,30 +46,10 @@ __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 	- __SkipXamlValidation__: Allows you to skip the default XAML types validation. 
 
 __Example 2: Disable the default XAML validation__
-```C#
-
-	XamlFormatProvider provider = new XamlFormatProvider();
-    provider.ImportSettings.PreProcessingXaml += (s, args) => { 
-    
-        args.SkipXamlValidation = true;
-    };
-
-```
+<snippet id='radrichtextbox-import-export-xaml-settings-block_2-cs' />
 
 __Example 3: Setting the ExportSettings of the XamlFormatProvider__
-```C#
-
-	XamlFormatProvider xamlFormatProvider = new XamlFormatProvider();
-	XamlImportSettings settings = new XamlImportSettings();
-	xamlFormatProvider.ImportSettings = settings;
-	settings.ImageImported += XamlImportSettings_ImageImported;
-	
-	private void XamlImportSettings_ImageImported(object sender, ImageImportedEventArgs e)
-	{
-		var img = e.Image;
-	}
-	
-```
+<snippet id='radrichtextbox-import-export-xaml-settings-block_3-cs' />
 
 ### Properties
 

@@ -19,23 +19,15 @@ You can easily apply the required culture by setting the __Culture__ property of
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider x:Key="LocalDataProvider" Culture="en-US">
-		...
-	</pivot:LocalDataSourceProvider>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_1-xaml' />
 
 
 
-```C#
-	var dataProvider = new LocalDataSourceProvider { Culture = new CultureInfo("en-US") };
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_2-cs' />
 
 #### __VB__
 
-```VB
-	Dim dataProvider = New LocalDataSourceProvider With {.Culture = New CultureInfo("en-US")}
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_3-vb' />
 
 >By default when there isn't any Culture set the __LocalDataSourceProvider__ will use __InvariantCulture__ to display the data. In this case as a currency symbol will be displayed the one from the CurrentCulture.         
 
@@ -56,23 +48,11 @@ If you would like to change the Culture at runtime you will need to manualy rese
 
 
 
-```C#
-	var provider = this.Resources["LocalDataProvider"] as LocalDataSourceProvider;
-	var itemsSource = provider.ItemsSource;
-	provider.ItemsSource = null;
-	provider.Culture = new CultureInfo("fr-FR");
-	provider.ItemsSource = itemsSource;
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_4-cs' />
 
 #### __VB__
 
-```VB
-	Dim provider = TryCast(Me.Resources("LocalDataProvider"), LocalDataSourceProvider)
-	Dim itemsSource = provider.ItemsSource
-	provider.ItemsSource = Nothing
-	provider.Culture = New CultureInfo("fr-FR")
-	provider.ItemsSource = itemsSource
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_5-vb' />
 
 ## See Also
 

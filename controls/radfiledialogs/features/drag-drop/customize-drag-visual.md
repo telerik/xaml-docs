@@ -22,13 +22,8 @@ To customize the FileBrowserDragVisual you will need to define an implicit Style
 > The FileBrowserDragVisual element can be found in the following namespace: `xmlns:fileDialogs="clr-namespace:Telerik.Windows.Controls.FileDialogs.DragDrop;assembly=Telerik.Windows.Controls.FileDialogs"`
 
 __Example 1: Setting the drag visual properties__ 
-```XAML
-	<Application.Resources>
-        <Style TargetType="fileDialogs:FileBrowserDragVisual">
-            <Setter Property="DragVisualOffset" Value="50, 0" />
-        </Style>
-    </Application.Resources>
-```
+<snippet id='radfiledialogs-features-drag-drop-customize-drag-visual-example_1_setting_the_drag_visual_properties-xaml' />
+
 
 > It is important to define the style in the application's Resources. Otherwise, it won't be applied.
 
@@ -49,25 +44,8 @@ You can use the IconTemplate property of the FileBrowserDragVisual control to de
 The following example shows how to define a custom template containing an image and some additional text showing the name of the drop target folder.
 
 __Example 2: Setting the icon template__ 
-```XAML
-    <Application.Resources>
-        <Style TargetType="fileDialogs:FileBrowserDragVisual">
-            <Setter Property="IconTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Drop in: " FontWeight="Bold"/>
-                                <TextBlock Text="{Binding DropFolderName}" />
-                            </StackPanel>
-                            <Image Source="{Binding Icon}" Width="36" Height="36" Stretch="UniformToFill" />
-                        </StackPanel>                        
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Application.Resources>
-```
+<snippet id='radfiledialogs-features-drag-drop-customize-drag-visual-example_2_setting_the_icon_template-xaml' />
+
 
 #### __Figure 3: Custom icon template__
 ![{{ site.framework_name }} RadFileDialogs Custom icon template](images/filedialogs-drag-drop-customize-drag-visual-2.png)
@@ -79,33 +57,8 @@ You can use the ContentTemplate property of the FileBrowserDragVisual control to
 The following example shows how to define a custom template containing a list of the dragged files.
 
 __Example 3: Setting the content template__ 
-```XAML
-     <Application.Resources>
-        <Style TargetType="fileDialogs:FileBrowserDragVisual">
-            <Setter Property="ContentTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="{Binding Operation}" FontWeight="Bold"/>
-                                <TextBlock Text=" to: " FontWeight="Bold"/>
-                                <TextBlock Text="{Binding DropFolderName}" />
-                            </StackPanel>
-                            <TextBlock Text="Dragged files:" FontWeight="Bold"/>
-                            <ItemsControl ItemsSource="{Binding DraggedFiles}" Margin="3">
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="{Binding}" MaxWidth="300" TextWrapping="Wrap" Margin="2" />
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
-                            </ItemsControl>
-                        </StackPanel>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Application.Resources>
-```
+<snippet id='radfiledialogs-features-drag-drop-customize-drag-visual-example_3_setting_the_content_template-xaml' />
+
 
 #### __Figure 4: Custom content template__
 ![{{ site.framework_name }} RadFileDialogs Custom content template](images/filedialogs-drag-drop-customize-drag-visual-3.png)

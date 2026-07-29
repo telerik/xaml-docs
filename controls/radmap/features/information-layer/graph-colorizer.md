@@ -17,22 +17,7 @@ The Graph Colorizer has two major properties: __ShapeFillCollection__ and __High
 The following example will demonstrate how you can color the RadMap using the Graph Colorizer. 
 
 
-```XAML
-	<telerik:InformationLayer.Colorizer>
-		<telerik:GraphColoriser>
-			<telerik:GraphColoriser.ShapeFillCollection>
-				<telerik:MapShapeFill Fill="Green" Stroke="#B1946D" StrokeThickness="1" />
-				<telerik:MapShapeFill Fill="Blue" Stroke="#B1946D" StrokeThickness="1" />
-				<telerik:MapShapeFill Fill="Yellow" Stroke="#B1946D" StrokeThickness="1" />
-				<telerik:MapShapeFill Fill="Orange" Stroke="#B1946D" StrokeThickness="1" />
-				<telerik:MapShapeFill Fill="Aqua" Stroke="#B1946D" StrokeThickness="1" />
-			</telerik:GraphColoriser.ShapeFillCollection>
-			<telerik:GraphColoriser.HighlightFillCollection>
-				<telerik:MapShapeFill Fill="Red" Stroke="#B1946D" StrokeThickness="1" />
-			</telerik:GraphColoriser.HighlightFillCollection>            
-		</telerik:GraphColoriser>
-	</telerik:InformationLayer.Colorizer>
-```
+<snippet id='radmap-features-information-layer-graph-colorizer-block_1-xaml' />
 
 The result can be seen below:
 

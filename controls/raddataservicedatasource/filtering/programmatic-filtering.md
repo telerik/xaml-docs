@@ -20,16 +20,10 @@ For example:
 
 
 
-```C#
+<snippet id='raddataservicedatasource-filtering-programmatic-filtering-block_1-cs' />
 
-	FilterDescriptor fd = new FilterDescriptor("PostalCode", FilterOperator.IsEqualTo, 1010);
-	this.radDataServiceDataSource.FilterDescriptors.Add(fd);
-```
-```VB.NET
+<snippet id='raddataservicedatasource-filtering-programmatic-filtering-block_1-vb' />
 
-	Dim fd As New FilterDescriptor("PostalCode", FilterOperator.IsEqualTo, 1010)
-	Me.radDataServiceDataSource.FilterDescriptors.Add(fd)
-```
 
 
 
@@ -43,26 +37,10 @@ You can build infinitely nested hierarchies of filters by using the __CompositeF
 
 
 
-```C#
+<snippet id='raddataservicedatasource-filtering-programmatic-filtering-block_2-cs' />
 
-	CompositeFilterDescriptor cfd = new CompositeFilterDescriptor();
-	cfd.LogicalOperator = FilterCompositionLogicalOperator.Or;
-	FilterDescriptor f1 = new FilterDescriptor("City", FilterOperator.IsEqualTo, "Berlin");
-	cfd.FilterDescriptors.Add(f1);
-	FilterDescriptor f2 = new FilterDescriptor("City", FilterOperator.IsEqualTo, "Madrid");
-	cfd.FilterDescriptors.Add(f2);
-	this.radDataServiceDataSource.FilterDescriptors.Add(cfd);
-```
-```VB.NET
+<snippet id='raddataservicedatasource-filtering-programmatic-filtering-block_2-vb' />
 
-	Dim cfd As New CompositeFilterDescriptor()
-	cfd.LogicalOperator = FilterCompositionLogicalOperator.[Or]
-	Dim f1 As New FilterDescriptor("City", FilterOperator.IsEqualTo, "Berlin")
-	cfd.FilterDescriptors.Add(f1)
-	Dim f2 As New FilterDescriptor("City", FilterOperator.IsEqualTo, "Madrid")
-	cfd.FilterDescriptors.Add(f2)
-	Me.radDataServiceDataSource.FilterDescriptors.Add(cfd)
-```
 
 
 

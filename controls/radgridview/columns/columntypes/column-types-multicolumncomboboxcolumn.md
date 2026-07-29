@@ -61,141 +61,14 @@ __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]({%s
 __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a GridViewMultiColumnComboBoxColumn. The RadGridView is populated with a collection of Departments, each of which holds a collection of Employees. The Employees collection is set as the ItemsSource of the GridViewMultiColumnComboBoxColumn.
 
 __Example 1: Defining the models and viewmodel__
-```C#
-    public class Employee
-    {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string Title { get; set; }
-        public string City { get; set; }
-        public string Country { get; set; }
-    }
+<snippet id='radgridview-columns-columntypes-column-types-multicolumncomboboxcolumn-example_1_defining_the_models_and_viewmodel-cs' />
 
-    public class Department
-    {
-        public int ID { get; set; }
-        public int EmployeeID { get; set; }
-        public string Name { get; set; }
+<snippet id='radgridview-columns-columntypes-column-types-multicolumncomboboxcolumn-example_1_defining_the_models_and_viewmodel-vb' />
 
-        public ObservableCollection<Employee> Employees
-        {
-            get
-            {
-                var countries = new ObservableCollection<Employee>();
-                for (int i = 0; i < 10; i++)
-                {
-                    Employee employee = new Employee();
-                    employee.ID = i;
-                    employee.Name = "Name " + i;
-                    employee.Title = "Title "+ i;
-                    employee.City = "City " + i;
-                    employee.Country = "Country " + i;
-
-                    countries.Add(employee);
-                }
-
-                return countries;
-            }
-        }
-    }
-
-    public class MyViewModel : ViewModelBase
-    {
-        public ObservableCollection<Department> Departments
-        {
-            get
-            {
-                var locations = new ObservableCollection<Department>();
-                for (int i = 0; i < 10; i++)
-                {
-                    Department department = new Department();
-                    department.ID = i;
-                    department.EmployeeID = i;
-                    department.Name = "Department " + i;
-                    locations.Add(department);
-                }
-
-                return locations;
-            }
-        }
-    }
-```
-```VB.NET
-    Public Class Employee
-		Public Property ID() As Integer
-		Public Property Name() As String
-		Public Property Title() As String
-		Public Property City() As String
-		Public Property Country() As String
-    End Class
-
-    Public Class Department
-		Public Property ID() As Integer
-		Public Property EmployeeID() As Integer
-		Public Property Name() As String
-
-		Public ReadOnly Property Employees() As ObservableCollection(Of Employee)
-			Get
-				Dim countries = New ObservableCollection(Of Employee)()
-				For i As Integer = 0 To 9
-					Dim employee As New Employee()
-					employee.ID = i
-					employee.Name = "Name " & i
-					employee.Title = "Title " & i
-					employee.City = "City " & i
-					employee.Country = "Country " & i
-
-					countries.Add(employee)
-				Next i
-
-				Return countries
-			End Get
-		End Property
-    End Class
-
-    Public Class MyViewModel
-	Inherits ViewModelBase
-
-		Public ReadOnly Property Departments() As ObservableCollection(Of Department)
-			Get
-				Dim locations = New ObservableCollection(Of Department)()
-				For i As Integer = 0 To 9
-					Dim department As New Department()
-					department.ID = i
-					department.EmployeeID = i
-					department.Name = "Department " & i
-					locations.Add(department)
-				Next i
-
-				Return locations
-			End Get
-		End Property
-    End Class
-```
 
 __Example 2: Defining the xaml__
-```XAML
-	<Window.DataContext>
-		<my:MyViewModel />
-	</Window.DataContext>
-    <Grid>
-        <telerik:RadGridView Name="DepartmentsGrid"  
-                         ItemsSource="{Binding Departments}" 
-                         AutoGenerateColumns="False" 
-                         GroupRenderMode="Flat">
-            <telerik:RadGridView.Columns>
-                <telerik:GridViewMultiColumnComboBoxColumn AutoGenerateColumns="False" DataMemberBinding="{Binding EmployeeID}" ItemsSourceBinding="{Binding Employees}" DisplayMemberPath="Name" SelectedValuePath="ID" Width="325">
-                    <telerik:GridViewMultiColumnComboBoxColumn.Columns>
-                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-                        <telerik:GridViewDataColumn DataMemberBinding="{Binding City}" />
-                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Country}" />
-                    </telerik:GridViewMultiColumnComboBoxColumn.Columns>
-                </telerik:GridViewMultiColumnComboBoxColumn>
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-            </telerik:RadGridView.Columns>
-        </telerik:RadGridView>
-    </Grid>
-```
+<snippet id='radgridview-columns-columntypes-column-types-multicolumncomboboxcolumn-example_2_defining_the_xaml-xaml' />
+
 
 #### __Figure 1: Result from Example 2 in the Office2016 theme__
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewMultiColumnComboBoxColumn showing employee name, city, and country choices](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)

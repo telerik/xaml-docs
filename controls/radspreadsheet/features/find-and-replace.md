@@ -16,62 +16,10 @@ The `RadSpreadSheet` control uses the [SpreadProcessing library](https://docs.te
 The following example showcases how to replace text in the current worksheet via the available API:
 
 __Defining the RadSpreadsheet and UI elements for thе replace logic__
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <Style TargetType="telerik:RadWatermarkTextBox">
-                <Setter Property="Margin" Value="5 5 0 5"/>
-                <Setter Property="VerticalContentAlignment" Value="Center"/>
-                <Setter Property="Width" Value="200"/>
-            </Style>
-        </Grid.Resources>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="\*"/>
-        </Grid.RowDefinitions>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="\*"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel>
-                <telerik:RadWatermarkTextBox x:Name="replaceWhatWatermarkTextBox"
-                                             WatermarkContent="Replace What"/>
-                <telerik:RadWatermarkTextBox x:Name="replaceWithWatermarkTextBox"
-                                             WatermarkContent="Replace With"/>
-            </StackPanel>
-            <telerik:RadButton Content="Replace with this text" 
-                               Click="OnReplaceButtonClicked" 
-                               Margin="3 0 0 0"
-                               HorizontalAlignment="Left"
-                               VerticalAlignment="Center"
-                               Grid.Column="1"/>
-        </Grid>
-        <telerik:RadSpreadsheet x:Name="spreadsheet" Grid.Row="1"/>
-    </Grid>
-```
+<snippet id='radspreadsheet-features-find-and-replace-block_1-xaml' />
 
 __Using the avaliable API of the Worksheet class for thе replace logic__
-```C#
-    private void OnReplaceButtonClicked(object sender, RoutedEventArgs e)
-    {
-        Worksheet activeWorksheet = this.spreadsheet.ActiveWorksheet;
-
-        ReplaceOptions options = new ReplaceOptions()
-        {
-            StartCell = new WorksheetCellIndex(activeWorksheet, 0, 0),
-            FindBy = FindBy.Rows,
-            FindWhat = this.replaceWhatWatermarkTextBox.Text.ToString(),
-            ReplaceWith = this.replaceWithWatermarkTextBox.Text.ToString(),
-            FindWithin = FindWithin.Sheet,
-        };
-
-        if (activeWorksheet.ReplaceAll(options) > 0)
-        {
-            RadWindow.Alert("Replace was successful!");
-        }
-    }
-```
+<snippet id='radspreadsheet-features-find-and-replace-block_2-cs' />
 
 __RadSpreadsheet with a custom find and replace logic__
 

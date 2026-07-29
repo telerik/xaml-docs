@@ -35,108 +35,30 @@ The next few code examples will demonstrate how to add a __RadImageEditor__ in X
 
 __Example 1: Defining a RadImageEditor in xaml__
 
-```XAML
-	<Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <telerik:RadImageEditor x:Name="ImageEditor"/>
-        <Button Click="Button_Click" Content="Rotate picture" Grid.Row="1" />
-    </Grid>
-```
+<snippet id='radimageeditor-getting-started-example_1_defining_a_radimageeditor_in_xaml-xaml' />
+
 
 __Example 2__ shows the telerik namespace used in __Example 1__:
 
 __Example 2: Telerik Namespace declaration__
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
-```
+<snippet id='radimageeditor-getting-started-example_2_telerik_namespace_declaration-xaml' />
+
 
 In order to show a picture, you can set the __Image__ property of the __RadImageEditor__. It is of type [RadBitmap](https://docs.telerik.com/devtools/wpf/api/telerik.windows.media.imaging.radbitmap). __Example 3__ demonstrates how you can use the [ImageExampleHelper](https://github.com/telerik/xaml-sdk/blob/master/ImageEditor/RadImageEditorUIFirstLook/ImageExampleHelper.cs) class in order to load an Image. It assumes that there is a folder named "SampleImages" with an image named "RadImageEditor.png" inside the project. 
 
 __Example 3: Load image in RadImageEditor__
 
-```C#
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
+<snippet id='radimageeditor-getting-started-example_3_load_image_in_radimageeditor-cs' />
 
-            ImageExampleHelper.LoadSampleImage(this.ImageEditor, "RadImageEditor.png");
-        }
+<snippet id='radimageeditor-getting-started-example_3_load_image_in_radimageeditor-vb' />
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.ImageEditor.Commands.Rotate180.Execute(this.ImageEditor);
-        }
-    }
-```
-```VB.NET
-    Partial Public Class MainWindow
-    Inherits Window
-
-		Public Sub New()
-			InitializeComponent()
-
-			ImageExampleHelper.LoadSampleImage(Me.ImageEditor, "RadImageEditor.png")
-		End Sub
-
-		Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-			Me.ImageEditor.Commands.Rotate180.Execute(Me.ImageEditor)
-		End Sub
-    End Class
-```
 
 __Example 4: ImageExampleHelper used in Example 3__
 
-```C#
-    public class ImageExampleHelper
-    {
-        private static string SampleImageFolder = "SampleImages/";
+<snippet id='radimageeditor-getting-started-example_4_imageexamplehelper_used_in_example_3-cs' />
 
-        public static void LoadSampleImage(RadImageEditor imageEditor, string image)
-        {
-            using (Stream stream = Application.GetResourceStream(GetResourceUri(SampleImageFolder + image)).Stream)
-            {
-                imageEditor.Image = new Telerik.Windows.Media.Imaging.RadBitmap(stream);
-                imageEditor.ApplyTemplate();
-                imageEditor.ScaleFactor = 0;
-            }
-        }
+<snippet id='radimageeditor-getting-started-example_4_imageexamplehelper_used_in_example_3-vb' />
 
-        public static Uri GetResourceUri(string resource)
-        {
-            AssemblyName assemblyName = new AssemblyName(typeof(ImageExampleHelper).Assembly.FullName);
-            string resourcePath = "/" + assemblyName.Name + ";component/" + resource;
-            Uri resourceUri = new Uri(resourcePath, UriKind.Relative);
-
-            return resourceUri;
-        }
-    }
-```
-```VB.NET
-    Public Class ImageExampleHelper
-	Private Shared SampleImageFolder As String = "SampleImages/"
-
-	Public Shared Sub LoadSampleImage(ByVal imageEditor As RadImageEditor, ByVal image As String)
-		Using stream As Stream = Application.GetResourceStream(GetResourceUri(SampleImageFolder & image)).Stream
-			imageEditor.Image = New Telerik.Windows.Media.Imaging.RadBitmap(stream)
-			imageEditor.ApplyTemplate()
-			imageEditor.ScaleFactor = 0
-		End Using
-	End Sub
-
-	Public Shared Function GetResourceUri(ByVal resource As String) As Uri
-		Dim assemblyName As New AssemblyName(GetType(ImageExampleHelper).Assembly.FullName)
-		Dim resourcePath As String = "/" & assemblyName.Name & ";component/" & resource
-		Dim resourceUri As New Uri(resourcePath, UriKind.Relative)
-
-		Return resourceUri
-	End Function
-    End Class
-```
 
 #### __Figure 1: Result from the above examples__
 ![RadImageEditor rotating image](images/RadImageEditor_GettingStarted.gif)
@@ -168,18 +90,8 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.ImageEditor.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radimageeditor-getting-started-example_4_merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

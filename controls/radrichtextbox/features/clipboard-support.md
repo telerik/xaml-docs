@@ -23,38 +23,15 @@ __RadRichTextBox's__ API exposes a method and a command for each of the three ac
 
 __Example 1: Using the exposed methods to interact with the clipboard__
 
-```C#
-
-	this.radRichTextBox.Copy();
-	this.radRichTextBox.Cut();
-	this.radRichTextBox.Paste();
-```
-```VB.NET
-
-	Me.radRichTextBox.Copy()
-	Me.radRichTextBox.Cut()
-	Me.radRichTextBox.Paste()
-```
+<snippet id='radrichtextbox-features-clipboard-support-block_1-cs' />
+<snippet id='radrichtextbox-features-clipboard-support-block_2-vb' />
 
 
 When building UI for the RichTextBox, the respective commands can be used:
 
 __Example 2: Wiring UI to the commands related to the clipboard__
 
-```XAML
-
-	<telerik:RadToolBar DataContext="{Binding ElementName=editor, Path=Commands}">
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Cut"
-	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CutCommand}" 
-				   Text="Cut" />
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Copy"
-	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=CopyCommand}" 
-				   Text="Copy" />
-	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Paste"
-	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=PasteCommand}"
-				   Text="Paste" />
-	</telerik:RadToolBar>
-```
+<snippet id='radrichtextbox-features-clipboard-support-block_3-xaml' />
 
 >Note that the attached __telerik:RadRichTextBoxRibbonUI.RichTextCommand__ property works only with Ribbon buttons. With regular RadButtons and other buttons, you should use their __Command__ property instead.
           
@@ -95,26 +72,8 @@ For instance, here is how you can clear the default clipboard handlers and add o
 
 __Example 3: Change the ClipboardHandlers__
 
-```C#
-
-    ClipboardEx.ClipboardHandlers.Clear();
-
-    ClipboardHandler clipboardHandler = new ClipboardHandler();
-    clipboardHandler.ClipboardDataFormat = DataFormats.Text;
-    clipboardHandler.DocumentFormatProvider = new TxtFormatProvider();
-
-    ClipboardEx.ClipboardHandlers.Add(clipboardHandler);
-```
-```VB.NET
-
-    ClipboardEx.ClipboardHandlers.Clear()
-
-    Dim clipboardHandler As New ClipboardHandler()
-    clipboardHandler.ClipboardDataFormat = DataFormats.Text
-    clipboardHandler.DocumentFormatProvider = New TxtFormatProvider()
-
-    ClipboardEx.ClipboardHandlers.Add(clipboardHandler)
-```
+<snippet id='radrichtextbox-features-clipboard-support-block_4-cs' />
+<snippet id='radrichtextbox-features-clipboard-support-block_5-vb' />
 
 
 
@@ -159,43 +118,12 @@ This class provides you with methods allowing you to easily work with the framew
 
 #### **[C#] Example 4: Working with the content of the clipboard**
 
-```C#
-
-    private void RadRichTextBox_CommandExecuting(object sender, CommandExecutingEventArgs e)
-    {
-        if (e.Command is PasteCommand)
-        {
-            e.Cancel = true;
-            // Obtain the document inside the clipboard
-            RadDocument document = ClipboardEx.GetDocument().ToDocument();
-    
-            // Change it according to your needs
-            document.Selection.SelectAll();
-            RadDocumentEditor editor = new RadDocumentEditor(document);
-            editor.ChangeFontSize(Unit.PointToDip(12));
-    
-            // Insert it in RadRichTextBox
-            this.radRichTextBox.InsertFragment(new DocumentFragment(document));
-        }
-    }
-```
+<snippet id='radrichtextbox-features-clipboard-support-block_6-cs' />
     
     
 #### **[VB.NET] Example 4: Working with the content of the clipboard**
 
-```VB.NET
-
-    Private Sub RadRichTextBox_CommandExecuting(ByVal sender As Object, ByVal e As CommandExecutingEventArgs)
-        If TypeOf e.Command Is PasteCommand Then
-            e.Cancel = True
-            Dim document As RadDocument = ClipboardEx.GetDocument().ToDocument()
-            document.Selection.SelectAll()
-            Dim editor As RadDocumentEditor = New RadDocumentEditor(document)
-            editor.ChangeFontSize(Unit.PointToDip(12))
-            Me.radRichTextBox.InsertFragment(New DocumentFragment(document))
-        End If
-    End Sub
-```
+<snippet id='radrichtextbox-features-clipboard-support-block_7-vb' />
     
 {% endif %}
 
@@ -209,15 +137,7 @@ In that regard, we have introduced an interface – __IExternalClipboard__, whic
 
 __Example 3: IExternalClipboard__
 
-```C#
-
-    public interface IExternalClipboard
-    {
-        bool ContainsFragment();
-        DocumentFragment GetFragment();
-        void SetFragment(DocumentFragment fragment);
-    }
-```
+<snippet id='radrichtextbox-features-clipboard-support-block_8-cs' />
 
 
 
@@ -226,10 +146,7 @@ Basically, you should implement the interface and set the static property of __C
 
 __Example 4: Setting external clipboard__
 
-```C#
-
-	ClipboardEx.ExternalClipboard = new RichTextExternalClipboard();
-```
+<snippet id='radrichtextbox-features-clipboard-support-block_9-cs' />
 
 
 

@@ -33,11 +33,8 @@ You have two options:
 
 __Example 1: Styling all instances of RadGridView in an application__
 
-```XAML
-	<Style TargetType="telerik:RadGridView">
-	    <Setter Property="Foreground" Value="Red"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-radgridview-example_1_styling_all_instances_of_radgridview_in_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __RadGridViewStyle__.
 
@@ -47,9 +44,8 @@ __RadGridView__ exposes a **Style** property that allows you to apply a style to
 
 __Example 1: Setting RadGridView Style__
 
-```XAML
-	<telerik:RadGridView Style="{StaticResource RadGridViewStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-radgridview-example_1_setting_radgridview_style-xaml' />
+
 
 ## Controlling RadGridView Appearance through Properties
 
@@ -80,12 +76,8 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 __Example 2: Usage of General properties__
 
-```XAML
-	<telerik:RadGridView GridLinesVisibility="Vertical"
-	                 ShowColumnFooters="True"
-	                 ShowColumnHeaders="False"
-	                 ColumnBackground="Bisque"/>
-```
+<snippet id='radgridview-styles-and-templates-styling-radgridview-example_2_usage_of_general_properties-xaml' />
+
 
 The final result should be similar to this:
 
@@ -109,9 +101,8 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 __Example 3: Usage of Columns properties__
 
-```XAML
-	<telerik:RadGridView MinColumnWidth="20" MaxColumnWidth="100" ColumnWidth="80"/>
-```
+<snippet id='radgridview-styles-and-templates-styling-radgridview-example_3_usage_of_columns_properties-xaml' />
+
 
 ### Rows
 
@@ -135,19 +126,8 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 __Example 4: Usage of Rows properties__
 
-```XAML
-	<telerik:RadGridView RowIndicatorVisibility="Collapsed"
-	                 RowDetailsVisibilityMode="VisibleWhenSelected"
-	                 AlternationCount="2">
-	    <telerik:RadGridView.RowDetailsTemplate>
-	        <DataTemplate>
-	            <Border BorderThickness="2" Height="35">
-	                <TextBlock Text="{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-	            </Border>
-	        </DataTemplate>
-	    </telerik:RadGridView.RowDetailsTemplate>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-styles-and-templates-styling-radgridview-example_4_usage_of_rows_properties-xaml' />
+
 
 #### __Figure 4: The result of the modified Rows properties__
 
@@ -171,15 +151,8 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 __Example 5: Usage of Groups properties__
 
-```XAML
-	<telerik:RadGridView ShowGroupFooters="True"
-	                 ShowGroupPanel="False">
-	    <telerik:RadGridView.GroupDescriptors>
-	        <telerik:GroupDescriptor Member="Country">
-	        </telerik:GroupDescriptor>
-	    </telerik:RadGridView.GroupDescriptors>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-styles-and-templates-styling-radgridview-example_5_usage_of_groups_properties-xaml' />
+
 
 #### __Figure 5: The result of the modified Groups properties__
 

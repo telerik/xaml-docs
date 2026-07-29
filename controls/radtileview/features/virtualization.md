@@ -21,20 +21,7 @@ The following tutorial shows how to bind to a collection of business objects and
 Here is a simple RadTileView declaration:			
 
 
-```XAML
-	<UserControl.DataContext>
-		<sampleData:RadTileViewSampleData x:Key="DataSource" />
-	</UserControl.DataContext>
-	<Grid>
-		<telerik:RadTileView ColumnWidth="300" 
-							 ContentTemplate="{StaticResource contentTemplate}"
-							 ItemsSource="{Binding}"
-							 ItemTemplate="{StaticResource headerTemplate}"
-							 MinimizedColumnWidth="250"
-							 MinimizedRowHeight="200"
-							 RowHeight="300" />
-	</Grid>
-```
+<snippet id='radtileview-features-virtualization-block_1-xaml' />
 
 The RadTileView is bound to a collection with 5000 objects. By default the IsVirtualizing property is set to __False__. Which means that when run the application, it will take a while to generate the `RadTileViewItem` containers. That will freeze your application.
 
@@ -45,9 +32,7 @@ In this case you need to use the UI Virtualization behavior of the RadTileView.
 In order to enable the UI Virtualization behavior, you should set the IsVirtualizing property of the RadTileView to __True__. See the example below:				
 
 
-```XAML
-	    <telerik:RadTileView x:Name="radTileView" IsVirtualizing="True" />
-```
+<snippet id='radtileview-features-virtualization-block_2-xaml' />
 
 Now when you run the application, only those elements that might be on the screen will be generated. For example if you have 5 columns x 1000 rows of restored tiles, but only those that are visible on the screen will be realized. And as you scroll to display more tiles - their containers will be generated on the fly. The same applies to the Minimized items - those that are visible will be realized and the containers for the rest will be generated only after they are brough into view by scrolling.
 

@@ -22,17 +22,8 @@ The __DropDownButtonIconContent__ and the __DropDownButtonIconContentTemplate__ 
 The __DropDownButtonIconContent__ and __DropDownButtonIconContentTemplate__ properties are fully compatible with our [RadGlyph]({%slug common-styling-appearance-radglyph%}) control. The following example shows how to set a RadGlyph as a drop-down button icon. 
 
 __Example 1: Setting a RadGlyph as Drop-Down Button Icon__
-```XAML
-        <telerik:RadComboBox DropDownButtonIconContent="&#xe010;">
-            <telerik:RadComboBox.DropDownButtonIconTemplate>
-                <DataTemplate>
-                    <telerik:RadGlyph Glyph="{Binding}" />
-                </DataTemplate>
-            </telerik:RadComboBox.DropDownButtonIconTemplate>
-            <telerik:RadComboBoxItem Content="Item 1" />
-            <telerik:RadComboBoxItem Content="Item 2" />
-        </telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-dropdown-icon-example_1_setting_a_radglyph_as_drop_down_button_icon-xaml' />
+
 
 {% else %}
 ## Using Images
@@ -40,17 +31,8 @@ __Example 1: Setting a RadGlyph as Drop-Down Button Icon__
 The __DropDownButtonIconContent__ and __DropDownButtonIconContentTemplate__ properties are fully compatible with the Image control. The following example shows how to set an Image as a drop-down button icon. 
 
 __Example 1: Setting a Image as Drop-Down Button Icon__
-```XAML
-        <telerik:RadComboBox DropDownButtonIconContent="myImage.png">
-            <telerik:RadComboBox.DropDownButtonIconTemplate>
-                <DataTemplate>
-                    <Image Source="{Binding}" />
-                </DataTemplate>
-            </telerik:RadComboBox.DropDownButtonIconTemplate>
-            <telerik:RadComboBoxItem Content="Item 1" />
-            <telerik:RadComboBoxItem Content="Item 2" />
-        </telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-dropdown-icon-example_1_setting_a_image_as_drop_down_button_icon-xaml' />
+
 {% endif %}
 
 #### Figure 1: RadComboBox with customized dropdown icon

@@ -22,19 +22,12 @@ The __RadRadioButton__ control inherits from the native RadioButton control and 
 You can instantiate your __RadRadioButton__ in both XAML and code.
 
 __Example 1: Defining a button in XAML__
-```XAML
-	<telerik:RadRadioButton Content="Radio Item" />
-```
+<snippet id='radbuttons-features-radbutton-radio-button-example_1_defining_a_button_in_xaml-xaml' />
 
 __Example 2: Defining a button in code__
-```C#
-	RadRadioButton radRadioButton = new RadRadioButton() { Content = "Radio Item" };
-```
-```VB.NET
-	Dim radRadioButton As New RadRadioButton() With { _
-	    .Content = "Radio Item" _
-	}
-```
+<snippet id='radbuttons-features-radbutton-radio-button-example_2_defining_a_button_in_code-cs' />
+<snippet id='radbuttons-features-radbutton-radio-button-example_2_defining_a_button_in_code-vb' />
+
 
 ## Button Checked Events
 
@@ -51,38 +44,19 @@ The check state of the button can be manually controlled via its __IsChecked__ p
 Here is an example of handling the __Checked__ event of a button.		
 
 __Example 3: Subscribing to the Checked event__  
-```XAML
-	<telerik:RadRadioButton Content="Radio Item" Checked="RadRadioButton_Checked"/>
-```
+<snippet id='radbuttons-features-radbutton-radio-button-example_2_defining_a_button_in_code-xaml' />
 
 __Example 4: Defining a Checked event handler__  
-```C#
-	private void RadRadioButton_Checked(object sender, RoutedEventArgs e)
-	{
-	    //implement your logic here
-	}
-```
-```VB.NET
-	Private Sub RadRadioButton_Checked(sender As Object, e As RoutedEventArgs)
-	    'implement your logic here '
-	End Sub
-```
+<snippet id='radbuttons-features-radbutton-radio-button-example_2_defining_a_button_in_code-cs' />
+<snippet id='radbuttons-features-radbutton-radio-button-example_2_defining_a_button_in_code-vb' />
+
 
 ## Grouping RadRadioButtons
 
 By grouping the __RadRadioButtons__ the user will be allowed to check only one button in the group. In order to group several RadRadioButtons you can place them in the same layout panel (see Example 5).
 
 __Example 5: Grouping radio buttons__  
-```XAML
-	<StackPanel>
-	    <telerik:RadRadioButton Content="Item 1.1" />
-	    <telerik:RadRadioButton Content="Item 1.2" />
-	</StackPanel>
-	<StackPanel>
-	    <telerik:RadRadioButton Content="Item 2.1" />
-	    <telerik:RadRadioButton Content="Item 2.2" />
-	</StackPanel>
-```
+<snippet id='radbuttons-features-radbutton-radio-button-example_2_defining_a_button_in_code-xaml' />
 
 The above code creates two groups of __RadRadioButtons__.		
 
@@ -92,10 +66,12 @@ The above code creates two groups of __RadRadioButtons__.
 ## Customizing the RadRadioButton
 
 * __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the RadRadioButton control when in normal state. 
-	#### __Figure 2: Radio button with hidden background__	![{{ site.framework_name }} RadButtons Radio button with hidden background](images/radbuttons-features-radio-button-2.png)
+	#### __Figure 2: Radio button with hidden background__
+	![{{ site.framework_name }} RadButtons Radio button with hidden background](images/radbuttons-features-radio-button-2.png)
 
 * __CornerRadius__: This property controls the corner radius of the button.
-	#### __Figure 3: Radio button with its CornerRadius set to 15__	![{{ site.framework_name }} RadButtons Radio button with its CornerRadius set to 15](images/radbuttons-features-radio-button-3.png)
+	#### __Figure 3: Radio button with its CornerRadius set to 15__
+	![{{ site.framework_name }} RadButtons Radio button with its CornerRadius set to 15](images/radbuttons-features-radio-button-3.png)
 
 ## See Also
  * [Button]({%slug radbuttons-features-button%})

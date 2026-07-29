@@ -23,13 +23,9 @@ The dialog can be opened from the __Symbol__ button in the __Insert__ tab of the
 The dialog can be shown by executing the `ShowInsertSymbolWindowCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
 __Executing the show dialog command__
-```C#
-	this.richTextBox.Commands.ShowInsertSymbolWindowCommand.Execute(null);
-```
+<snippet id='radrichtextbox-dialogs-insert-symbol-dialog-block_1-cs' />
 
 Alternatively, call the `ShowInsertSymbolWindow` method of `RadRichTextBox`.
 
 __Using the show dialog method__
-```C#
-	this.richTextBox.ShowInsertSymbolWindow();
-```
+<snippet id='radrichtextbox-dialogs-insert-symbol-dialog-block_2-cs' />

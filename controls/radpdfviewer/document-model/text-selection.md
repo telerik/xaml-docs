@@ -18,9 +18,7 @@ In order to be able to select text from the UI, __RadPdfViewer__ must be in Text
 
 __Example 1: Setting mode to RadPdfViewer__
 
-```C#
-	this.pdfViewer.Mode = Telerik.Windows.Documents.Fixed.UI.FixedDocumentViewerMode.TextSelection;
-```
+<snippet id='radpdfviewer-document-model-text-selection-block_1-cs' />
 
 >More information on the different modes of the viewer can be found in [this article]({%slug radpdfviewer-viewer-modes%}).	        
 
@@ -59,14 +57,7 @@ The methods for manipulating the selection include:
 
 __Example 2: Using TextPosition and TextSelection classes__
 
-```C#
-	TextPosition start = new TextPosition(this.pdfViewer.Document.CaretPosition);
-	start.MoveToCurrentWordStart();
-	TextPosition end = new TextPosition(this.pdfViewer.Document.CaretPosition);
-	end.MoveToCurrentWordEnd();
-	this.pdfViewer.Document.Selection.SetSelection(start, end);
-	MessageBox.Show(this.pdfViewer.Document.Selection.GetSelectedText());
-```
+<snippet id='radpdfviewer-document-model-text-selection-block_2-cs' />
 
 >There are no genuine words in PDF, so the viewer uses a greedy text recognition method. That is why it is not guaranteed that it would find the exact start and end position of a word.
 
@@ -77,9 +68,7 @@ __Example 2: Using TextPosition and TextSelection classes__
 
 #### **[C#] Example 3: Attaching to SelectionChanged**
 
-```C#
-	 this.pdfViewer.Document.Selection.SelectionChanged += Selection_SelectionChanged;
-```
+<snippet id='radpdfviewer-document-model-text-selection-block_3-cs' />
 
 ## See Also  
 * [Text Position]({%slug radpdfviewer-text-text-position%})

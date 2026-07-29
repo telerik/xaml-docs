@@ -20,33 +20,7 @@ However, sometimes you may decide on customizing or totally changing them. This 
 
 __Example 1: Custom Property Definitions__
 
-```XAML
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <telerik:RadButton x:Name="button1" Content="MyButton" Width="150" Height="70" />
-        <telerik:RadPropertyGrid Item="{Binding ElementName=button1}" AutoGeneratePropertyDefinitions="False" LabelColumnWidth="100" Grid.Column="1">
-            <telerik:RadPropertyGrid.PropertyDefinitions>
-                <telerik:PropertyDefinition Binding="{Binding Width}" Description="Displays the Width property of the RadButton" DisplayName="Width">
-                    <telerik:PropertyDefinition.EditorTemplate>
-                        <DataTemplate>
-                            <telerik:RadNumericUpDown Value="{Binding Width, Mode=TwoWay}" />
-                        </DataTemplate>
-                    </telerik:PropertyDefinition.EditorTemplate>
-                </telerik:PropertyDefinition>
-                <telerik:PropertyDefinition Binding="{Binding Height}" Description="Displays the Height property of the RadButton" DisplayName="Height">
-                    <telerik:PropertyDefinition.EditorTemplate>
-                        <DataTemplate>
-                            <telerik:RadNumericUpDown Value="{Binding Height, Mode=TwoWay}" />
-                        </DataTemplate>
-                    </telerik:PropertyDefinition.EditorTemplate>
-                </telerik:PropertyDefinition>
-            </telerik:RadPropertyGrid.PropertyDefinitions>
-        </telerik:RadPropertyGrid>
-    </Grid>
-```
+<snippet id='radpropertygrid-getting-started-gettingstarted-customized-property-definitions-block_1-xaml' />
 
 Then, your RadPropertyGrid will be displayed as shown in **Figure 2**.
 

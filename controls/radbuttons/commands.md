@@ -26,58 +26,17 @@ The following example demonstrates how to use commands in an MVVM scenario.
 
 1. Define the command in a sample view model class.
 
-	```C#
-	public class SampleViewModel
-	{
-		public SampleViewModel()
-		{
-			MyCommand = new DelegateCommand(OnCommandExecuted);
-		}
-		public ICommand MyCommand { get; set; }
-
-		private void OnCommandExecuted(object obj)
-		{
-			MessageBox.Show("MyCommand Executed");
-		} 
-	}
-	```
-	```VB.NET
-	Public Class SampleViewModel
-		Public Sub New()
-			MyCommand = New DelegateCommand(AddressOf OnCommandExecuted)
-		End Sub
-
-		Public Property MyCommand As ICommand
-
-		Private Sub OnCommandExecuted(ByVal obj As Object)
-			MessageBox.Show("MyCommand Executed")
-		End Sub
-	End Class
-	```
+<snippet id='radbuttons-commands-block_1-cs' />
+<snippet id='radbuttons-commands-block_1-vb' />
 
 1. Set a `SampleViewModel` object instance as the `DataContext` of your corresponding view (the UserControl or Window).
 
-	```C#
-		public Example()
-		{
-			InitializeComponent();
-			this.DataContext = new SampleViewModel();
-		}
-	```
-	```VB.NET
-		Public Sub New()
-			InitializeComponent()
-			Me.DataContext = New SampleViewModel()
-		End Sub
-	```
+<snippet id='radbuttons-commands-block_2-cs' />
+<snippet id='radbuttons-commands-block_2-vb' />
 
 1. In the XAML set the bindings for the command and set the command parameter.
 
-	```XAML
-		<telerik:RadButton Content="My Button"
-						Command="{Binding MyCommand}"
-						CommandParameter="ParameterValue" />
-	```
+<snippet id='radbuttons-commands-block_3-xaml' />
 
 	`RadButton` is located in the `Telerik.Windows.Controls.dll` assembly. To use them in your project, add a reference to the assembly or install the `Telerik.Windows.Controls.for.Wpf.Xaml` NuGet package (or its NoXaml alternative). For more information, see the [Controls Dependencies](https://docs.telerik.com/devtools/wpf/common-information/installation-installing-dependencies-wpf) article.
 

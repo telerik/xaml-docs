@@ -36,19 +36,14 @@ To control the progress of RadCircularProgressBar, utilize its `Value` property.
 RadCircularProgressBar can be instantiated both in XAML and in code.
 
 __Defining RadCircularProgressBar in XAML__
-```XAML
-    <telerik:RadCircularProgressBar Name="radCircularProgressBar" Value="0.75" />    
-```
+<snippet id='radcircularprogressbar-getting-started-defining_radcircularprogressbar_in_xaml-xaml' />
+
 
 __Defining RadCircularProgressBar in code__
-```C#
-    RadCircularProgressBar radCircularProgressBar = new RadCircularProgressBar();
-    radCircularProgressBar.Value = 0.75;
-```
-```VB.NET
-    Dim radCircularProgressBar As RadCircularProgressBar = New RadCircularProgressBar()
-    radCircularProgressBar.Value = 0.75
-```
+<snippet id='radcircularprogressbar-getting-started-defining_radcircularprogressbar_in_code-cs' />
+
+<snippet id='radcircularprogressbar-getting-started-defining_radcircularprogressbar_in_code-vb' />
+
 
 ![RadCircularProgressBar example](images/radcircularprogressbar-getting-started-0.png)
 
@@ -67,16 +62,8 @@ The controls from our suite support different themes. You can see how to apply a
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Merge the ResourceDictionaries__
-```XAML
-    <Application.Resources>
-    	<ResourceDictionary>
-    		<ResourceDictionary.MergedDictionaries>
-    			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/ Themes/System.Windows.xaml"/>
-    			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/ Themes/Telerik.Windows.Controls.xaml"/>
-    		</ResourceDictionary.MergedDictionaries>
-    	</ResourceDictionary>
-    </Application.Resources>
-```
+<snippet id='radcircularprogressbar-getting-started-merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

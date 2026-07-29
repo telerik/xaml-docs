@@ -21,28 +21,8 @@ The simplest scenario – finding a string in the content of the document can be
 
 
 
-```C#
-	private void SelectAllMatches(string toSearch)
-	{
-	    this.radRichTextBox.Document.Selection.Clear(); // this clears the selection before processing
-	    DocumentTextSearch search = new DocumentTextSearch(this.radRichTextBox.Document);
-	    foreach (var textRange in search.FindAll(toSearch))
-	    {
-	        this.radRichTextBox.Document.Selection.AddSelectionStart(textRange.StartPosition);
-	        this.radRichTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition);
-	    }
-	}
-```
-```VB.NET
-	Private Sub SelectAllMatches(ByVal toSearch As String)
-	 Me.radRichTextBox.Document.Selection.Clear() ' this clears the selection before processing
-	 Dim search As New DocumentTextSearch(Me.radRichTextBox.Document)
-	 For Each textRange In search.FindAll(toSearch)
-	  Me.radRichTextBox.Document.Selection.AddSelectionStart(textRange.StartPosition)
-	  Me.radRichTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition)
-	 Next textRange
-	End Sub
-```
+<snippet id='radrichtextbox-features-search-block_1-cs' />
+<snippet id='radrichtextbox-features-search-block_2-vb' />
 
 
 
@@ -52,12 +32,8 @@ You can use all kind of regular expressions, such as __“(asp|silverlight)\s*co
 
 
 
-```C#
-	toSearch = Regex.Escape(toSearch);
-```
-```VB.NET
-	toSearch = Regex.Escape(toSearch)
-```
+<snippet id='radrichtextbox-features-search-block_3-cs' />
+<snippet id='radrichtextbox-features-search-block_4-vb' />
 
 > You should have in mind that performing these actions in __DocumentContentChanged__ event handler will not only raise performance issues, but will also produce an infinite loop, as the changes of the formatting are also considered document changes.
 
@@ -66,16 +42,8 @@ Selecting the results of the search is particularly useful, as most formatting c
 
 
 
-```C#
-	this.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray);  // will highlight all selected words in LightGray
-	this.radRichTextBox.ChangeFontSize(Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
-	this.radRichTextBox.ChangeFontFamily(new FontFamily("Comic Sans MS")); // will change the font family of the spans, containing these words.
-```
-```VB.NET
-	Me.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray) \' will highlight all selected words in LightGray
-	Me.radRichTextBox.ChangeFontSize(Unit.PointToDip(32)) \' will increase the font size of the words to 30 DIP
-	Me.radRichTextBox.ChangeFontFamily(New FontFamily("Comic Sans MS")) \' will change the font family of the spans, containing these words.
-```
+<snippet id='radrichtextbox-features-search-block_5-cs' />
+<snippet id='radrichtextbox-features-search-block_6-vb' />
 
 
 
@@ -83,12 +51,8 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 
 
-```C#
-	this.radRichTextBox.Document.Selection.Clear();
-```
-```VB.NET
-	Me.radRichTextBox.Document.Selection.Clear()
-```
+<snippet id='radrichtextbox-features-search-block_7-cs' />
+<snippet id='radrichtextbox-features-search-block_8-vb' />
 
 
 
@@ -96,45 +60,8 @@ On a side note, the find and select functionality can be extended in order to im
 
 
 
-```C#
-	private void ReplaceAllMatches(string toSearch, string toReplaceWith)
-	{
-	    this.radRichTextBox.Document.Selection.Clear(); // this clears the selection before processing
-	    DocumentTextSearch search = new DocumentTextSearch(this.radRichTextBox.Document);
-	    List<TextRange> rangesTrackingDocumentChanges = new List<TextRange>();
-	    foreach (var textRange in search.FindAll(toSearch))
-	    {
-	        TextRange newRange = new TextRange(new DocumentPosition(textRange.StartPosition, true), new DocumentPosition(textRange.EndPosition, true));
-	        rangesTrackingDocumentChanges.Add(newRange);
-	    }
-	    foreach (var textRange in rangesTrackingDocumentChanges)
-	    {
-	        this.radRichTextBox.Document.Selection.AddSelectionStart(textRange.StartPosition);
-	        this.radRichTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition);
-	        this.radRichTextBox.Insert(toReplaceWith);
-	        textRange.StartPosition.Dispose();
-	        textRange.EndPosition.Dispose();
-	    }
-	}
-```
-```VB.NET
-	Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)
-	 Me.radRichTextBox.Document.Selection.Clear() \' this clears the selection before processing
-	 Dim search As New DocumentTextSearch(Me.radRichTextBox.Document)
-	 Dim rangesTrackingDocumentChanges As New List(Of TextRange)()
-	 For Each textRange In search.FindAll(toSearch)
-	  Dim newRange As New TextRange(New DocumentPosition(textRange.StartPosition, True), New DocumentPosition(textRange.EndPosition, True))
-	  rangesTrackingDocumentChanges.Add(newRange)
-	 Next textRange
-	 For Each textRange In rangesTrackingDocumentChanges
-	  Me.radRichTextBox.Document.Selection.AddSelectionStart(textRange.StartPosition)
-	  Me.radRichTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition)
-	  Me.radRichTextBox.Insert(toReplaceWith)
-	  textRange.StartPosition.Dispose()
-	  textRange.EndPosition.Dispose()
-	 Next textRange
-	End Sub
-```
+<snippet id='radrichtextbox-features-search-block_9-cs' />
+<snippet id='radrichtextbox-features-search-block_10-vb' />
 
 
 

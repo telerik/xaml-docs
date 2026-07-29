@@ -20,17 +20,7 @@ The first thing you have to do is to specify that you want your indicator to be 
 
 __Setting IsIndeterminate__
 
-```XAML
-	<telerik:RadBusyIndicator x:Name="radBusyIndicator" 
-	                          IsIndeterminate="False" 
-	                          ProgressValue="{Binding ProgressValue}">
-	    <Grid>               
-	        <Button Content="Show RadBusyIndicator"
-	                VerticalAlignment="Bottom"
-	                Click="showIndicatorButton_Click" />
-	    </Grid>
-	</telerik:RadBusyIndicator>
-```
+<snippet id='radbusyindicator-features-report-progress-value-setting_isindeterminate-xaml' />
 
 Notice that you have also defined the __ProgressValue__ property. For the purpose of this example, by using data binding you have bound it to a property named in the same way located in the code-behind. Through this binding you will be changing this property to report any shifts in the __RadBusyIndicator's__ progress value. 
 
@@ -58,98 +48,11 @@ In the code behind you have to:
 
 __ProgressDetermination class implementation__
 
-```C#
-	public partial class ProgressDetermination : UserControl, INotifyPropertyChanged
-	{
-	    private int progressValue;
-	    private DispatcherTimer progressTimer;
-	    public event PropertyChangedEventHandler PropertyChanged;
-	    public ProgressDetermination()
-	    {
-	        InitializeComponent();
-	        this.DataContext = this;
-	        this.progressTimer = new DispatcherTimer();
-	        this.progressTimer.Interval = TimeSpan.FromSeconds( 0.1 );
-	        this.progressTimer.Tick += new EventHandler( this.progressTimer_Tick );
-	    }
-	    public int ProgressValue
-	    {
-	        get
-	        {
-	            return this.progressValue;
-	        }
-	        set
-	        {
-	            if ( this.progressValue == value )
-	                return;
-	            this.progressValue = value;
-	            if ( this.PropertyChanged != null )
-	                this.PropertyChanged( this, new PropertyChangedEventArgs( "ProgressValue" ) );
-	        }
-	    }
-	    private void showIndicatorButton_Click( object sender, RoutedEventArgs e )
-	    {
-	        this.progressTimer.Start();
-	        this.ProgressValue = 0;
-	        this.radBusyIndicator.IsBusy = true;
-	    }
-	    private void progressTimer_Tick( object sender, EventArgs e )
-	    {
-	        this.ProgressValue++;
-	        if ( this.ProgressValue == 100 )
-	        {
-	            this.progressTimer.Stop();
-	            this.radBusyIndicator.IsBusy = false;
-	        }
-	    }
-	}
-```
+<snippet id='radbusyindicator-features-report-progress-value-progressdetermination_class_implementation-cs' />
+
+<snippet id='radbusyindicator-features-report-progress-value-progressdetermination_class_implementation-vb' />
 
 __ProgressDetermination class implementation__
-
-```VB
-	Public Class ProgressDetermination
-		Implements INotifyPropertyChanged
-	
-		Private m_progressValue As Integer
-		Private progressTimer As DispatcherTimer
-		Public Event PropertyChanged As PropertyChangedEventHandler _
-			 Implements INotifyPropertyChanged.PropertyChanged
-	
-		Public Sub New()
-			InitializeComponent()
-			Me.DataContext = Me
-			Me.progressTimer = New DispatcherTimer()
-			Me.progressTimer.Interval = TimeSpan.FromSeconds(1)
-			AddHandler progressTimer.Tick, AddressOf progressTimer_Tick
-	
-		End Sub
-		Public Property ProgressValue() As Integer
-			Get
-				Return Me.m_progressValue
-			End Get
-			Set(value As Integer)
-				If Me.m_progressValue = value Then
-					Return
-				End If
-				Me.m_progressValue = value
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("ProgressValue"))
-			End Set
-		End Property
-		Private Sub showIndicatorButton_Click(sender As Object, e As RoutedEventArgs)
-			Me.progressTimer.Start()
-			Me.ProgressValue = 0
-			Me.radBusyIndicator.IsBusy = True
-		End Sub
-		Private Sub progressTimer_Tick(sender As Object, e As EventArgs)
-			Me.ProgressValue += 10
-			If Me.ProgressValue = 100 Then
-				Me.progressTimer.[Stop]()
-				Me.radBusyIndicator.IsBusy = False
-			End If
-		End Sub
-	End Class
-```
 
 Here is the final result:
 

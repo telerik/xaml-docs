@@ -17,25 +17,20 @@ DataFormComboBoxField does not have a SelectionChanged event itself. In case you
 {% if site.site_name == 'WPF' %}
 
 __Example 1: Adding event handler for the SelectionChanged event__
-```C#
-	this.AddHandler(RadComboBox.SelectionChangedEvent, new System.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
-```
-```VB.NET
-	Me.[AddHandler](RadComboBox.SelectionChangedEvent, New SelectionChangedEventHandler(AddressOf OnSelectionChanged))
-```
+<snippet id='raddataform-how-to-howto-selectionchanged-comboboxfield-example_1_adding_event_handler_for_the_selectionchanged_event-cs' />
+
+<snippet id='raddataform-how-to-howto-selectionchanged-comboboxfield-example_1_adding_event_handler_for_the_selectionchanged_event-vb' />
+
 
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 
 __Example 1: Adding event handler for the SelectionChanged event__
-```C#
-	this.AddHandler(RadComboBox.SelectionChangedEvent, 
-	    new Telerik.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged), true);
-```
-```VB.NET
-	Me.[AddHandler](RadComboBox.SelectionChangedEvent, New Telerik.Windows.Controls.SelectionChangedEventHandler(onSelectionChanged), True)
-```
+<snippet id='raddataform-how-to-howto-selectionchanged-comboboxfield-example_1_adding_event_handler_for_the_selectionchanged_event-cs' />
+
+<snippet id='raddataform-how-to-howto-selectionchanged-comboboxfield-example_1_adding_event_handler_for_the_selectionchanged_event-vb' />
+
 
 {% endif %}
 
@@ -46,22 +41,10 @@ __Example 1: Adding event handler for the SelectionChanged event__
 {% if site.site_name == 'WPF' %}
 
 __Example 2: Check if any items were unselected__
-```C#
-	private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
-	{
-	    if (e.RemovedItems.Count > 0)
-	    {
-	        //your code here
-	    }
-	}
-```
-```VB.NET
-	Private Sub OnSelectionChanged(sender As Object, e As SelectionChangedEventArgs)
-	    'your code here
-	    If e.RemovedItems.Count > 0 Then
-	    End If
-	End Sub
-```
+<snippet id='raddataform-how-to-howto-selectionchanged-comboboxfield-example_2_check_if_any_items_were_unselected-cs' />
+
+<snippet id='raddataform-how-to-howto-selectionchanged-comboboxfield-example_2_check_if_any_items_were_unselected-vb' />
+
 
 {% endif %}
 
@@ -69,23 +52,10 @@ __Example 2: Check if any items were unselected__
 {% if site.site_name == 'Silverlight' %}
 
 __Example 2: Check if any items were unselected__
-```C#	
-	private void OnSelectionChanged(object sender,
-            Telerik.Windows.Controls.SelectionChangedEventArgs e)
-        {
-            if (e.RemovedItems.Count > 0)
-            {
-                //your code here
-            }
-        }
-```
-```VB.NET
+<snippet id='raddataform-how-to-howto-selectionchanged-comboboxfield-example_2_check_if_any_items_were_unselected-cs' />
 
-	Private Sub onSelectionChanged(sender As Object, e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-            If e.RemovedItems.Count > 0 Then
-            End If
-        End Sub
-```
+<snippet id='raddataform-how-to-howto-selectionchanged-comboboxfield-example_2_check_if_any_items_were_unselected-vb' />
+
 
 {% endif %}
 

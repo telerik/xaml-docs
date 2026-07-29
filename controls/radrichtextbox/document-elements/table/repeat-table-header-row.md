@@ -37,28 +37,16 @@ The __[TableRow class](https://docs.telerik.com/devtools/wpf/api/telerik.windows
 
 __Example 1: Set a Repeat Table Header Row using the RepeatOnEveryPage property__
 
-```C#
-	TableRow row = new TableRow();
-	row.RepeatOnEveryPage = true;
-```
-```VB.NET
-	Dim row As New TableRow()
-	row.RepeatOnEveryPage = True
-```
+<snippet id='radrichtextbox-document-elements-table-repeat-table-header-row-block_1-cs' />
+<snippet id='radrichtextbox-document-elements-table-repeat-table-header-row-block_2-vb' />
 
 
 Another option is to use the ChangeTableRowRepeatOnEveryPage() method of __RadRichTextBox__, which allows you to change whether a row will be repeated or not. __Example 2__ demonstrates how to get the first __TableRow__ in a __[RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})__ and set it as a repeated header row.
 
 __Example 2: Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage() method__
 
-```C#
-	TableRow firstRow = this.radRichTextBox.Document.EnumerateChildrenOfType<TableRow>().First();
-	this.radRichTextBox.ChangeTableRowRepeatOnEveryPage(firstRow);
-```
-```VB.NET
-	Dim firstRow As TableRow = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of TableRow)().First()
-	Me.radRichTextBox.ChangeTableRowRepeatOnEveryPage(firstRow)
-```
+<snippet id='radrichtextbox-document-elements-table-repeat-table-header-row-block_3-cs' />
+<snippet id='radrichtextbox-document-elements-table-repeat-table-header-row-block_4-vb' />
 
 ### Via the Built-in UI 
 

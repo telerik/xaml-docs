@@ -15,44 +15,14 @@ position: 8
 >important If you set the `IndicatorStartRadius` and `IndicatorEndRadius` properties, their values will modify the radius of both the primary and secondary progress indicator.
 
 __Changing the track and progress indicators radiuses__
-```XAML
-    <telerik:RadCircularProgressBar Name="circularProgressBar" 
-                                    Value="0.5"
-                                    SecondaryValue="0.75"
-                                    UseRoundedSegments="True"
-                                    IndicatorStartRadius="0.75"
-                                    IndicatorEndRadius="1"
-                                    TrackStartRadius="0.85"
-                                    TrackEndRadius="0.9"/>
-```
+<snippet id='radcircularprogressbar-radiuses-changing_the_track_and_progress_indicators_radiuses-xaml' />
+
 
 __Changing the track and progress indicators radiuses in code__
-```C#
-    RadCircularProgressBar radCircularProgressBar = new RadCircularProgressBar();
-    radCircularProgressBar.Value = 0.5;
-    radCircularProgressBar.SecondaryValue = 0.75;
+<snippet id='radcircularprogressbar-radiuses-changing_the_track_and_progress_indicators_radiuses_in_code-cs' />
 
-    radCircularProgressBar.UseRoundedSegments = true;
+<snippet id='radcircularprogressbar-radiuses-changing_the_track_and_progress_indicators_radiuses_in_code-vb' />
 
-    radCircularProgressBar.IndicatorStartRadius = 0.75;
-    radCircularProgressBar.IndicatorEndRadius = 1;
-
-    radCircularProgressBar.TrackStartRadius = 0.85;
-    radCircularProgressBar.TrackEndRadius = 0.9;
-```
-```VB.NET
-    Dim radCircularProgressBar As RadCircularProgressBar = New RadCircularProgressBar()
-    radCircularProgressBar.Value = 0.5
-    radCircularProgressBar.SecondaryValue = 0.75
-
-    radCircularProgressBar.UseRoundedSegments = True
-
-    radCircularProgressBar.IndicatorStartRadius = 0.75
-    radCircularProgressBar.IndicatorEndRadius = 1
-
-    radCircularProgressBar.TrackStartRadius = 0.85
-    radCircularProgressBar.TrackEndRadius = 0.9
-```
 
 ![RadCircularProgressBar with modified radiuses](images/radcircularprogressbar-radiuses-0.png)
 

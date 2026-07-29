@@ -13,29 +13,13 @@ position: 0
 Set the __RadTabControl__'s property __AllowDragReorder__ to __True__ or __False__ to allow/disallow the user to reorder the tab items of your tab control using __Drag & Drop__.
 
   
-```XAML
-	<telerik:RadTabControl x:Name="radTabControl" AllowDragReorder="True">
-	    <telerik:RadTabItem Header="Calendar"/>
-	    <telerik:RadTabItem Header="Colors"/>
-	    <telerik:RadTabItem Header="Quote"/>
-	    <telerik:RadTabItem Header="Web Sites"/>
-	</telerik:RadTabControl>
-```
+<snippet id='radtabcontrol-howto-how-to-move-tab-using-drag-and-drop-block_1-xaml' />
 
 The same behavior can be enabled/disabled in the code-behind.
 
   
-```C#
-	private void EnableReordering()
-	{
-	    radTabControl.AllowDragReorder = true;
-	}
-```
-```VB.NET
-    Private Sub EnableReordering()
-        radTabControl.AllowDragReorder = True
-    End Sub
-```
+<snippet id='radtabcontrol-howto-how-to-move-tab-using-drag-and-drop-block_2-cs' />
+<snippet id='radtabcontrol-howto-how-to-move-tab-using-drag-and-drop-block_3-vb' />
 
 ## See Also 
  * [How to Change the Tab Items Orientation]({%slug radtabcontrol-how-to-change-the-tab-items-orientation%})

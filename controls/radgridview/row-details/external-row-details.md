@@ -22,34 +22,17 @@ Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid 
 
 __Example 1: Setting the RowDetailsVisibilityMode to Collapsed__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 RowDetailsVisibilityMode="Collapsed">
-	    <telerik:RadGridView.RowDetailsTemplate>
-	        <DataTemplate x:Name="RowDetailsProvider">
-	            <StackPanel Orientation="Horizontal"
-	                Margin="10,10,10,10">
-	                <TextBlock Text="City: " />
-	                <TextBlock Text="{Binding City}" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </telerik:RadGridView.RowDetailsTemplate>
-	    <!--...-->
-	</telerik:RadGridView>
-	<telerik:DetailsPresenter x:Name="ExternalPresenter"
-	                                  DetailsProvider="{Binding RowDetailsProvider, ElementName=radGridView}" />
-```
+<snippet id='radgridview-row-details-external-row-details-example_1_setting_the_rowdetailsvisibilitymode_to_collapsed-xaml' />
+
 
 
 
 __Example 2: Setting the DetailsProvider__
 
-```C#
-	this.ExternalPresenter.DetailsProvider = this.radGridView.RowDetailsProvider;
-```
-```VB.NET
-	Me.ExternalPresenter.DetailsProvider = Me.radGridView.RowDetailsProvider
-```
+<snippet id='radgridview-row-details-external-row-details-example_2_setting_the_detailsprovider-cs' />
+
+<snippet id='radgridview-row-details-external-row-details-example_2_setting_the_detailsprovider-vb' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing row details in an external DetailsPresenter outside the grid](images/RadGridView_RowDetails_5.png)
 

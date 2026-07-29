@@ -43,31 +43,10 @@ RadScheduleView has different definitions for each view. It has four types of pr
 In order to include each one of the views in the RadScheduleView, they have to be defined as follows:
 
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" x:Name="scheduleView">
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition/>
-			<telerik:MonthViewDefinition/>
-			<telerik:WeekViewDefinition/>
-			<telerik:TimelineViewDefinition/>
-			<telerik:AgendaViewDefinition/>
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-viewdefinitions-overview-block_1-xaml' />
 
 
-```C#
-	MonthViewDefinition monthDefintion = new MonthViewDefinition();
-	DayViewDefinition dayDefintion = new DayViewDefinition();
-	WeekViewDefinition weekDefinition = new WeekViewDefinition();
-	TimelineViewDefinition timelineDefinition = new TimelineViewDefinition();
-	AgendaViewDefinition agendaViewDefinition = new AgendaViewDefinition();
-	this.scheduleView.ViewDefinitions.Add(monthDefintion);
-	this.scheduleView.ViewDefinitions.Add(dayDefintion);
-	this.scheduleView.ViewDefinitions.Add(timelineDefinition);
-	this.scheduleView.ViewDefinitions.Add(weekDefinition);
-	this.scheduleView.ViewDefinitions.Add(agendaViewDefinition);
-```
+<snippet id='radscheduleview-features-viewdefinitions-overview-block_2-cs' />
 
 ## See Also  
  * [Configuration]({%slug radscheduleview-viewdefinitions-configuration%})

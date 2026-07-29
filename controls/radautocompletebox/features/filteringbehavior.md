@@ -20,13 +20,7 @@ The behavior should be set up the following way:
 
 __RadAutoCompleteBox with AsyncFilteringBehavior__
 
-```XAML
-	<telerik:RadAutoCompleteBox>
-		<telerik:RadAutoCompleteBox.FilteringBehavior>
-			<telerik:AsyncFilteringBehavior />
-		</telerik:RadAutoCompleteBox.FilteringBehavior>
-	</telerik:RadAutoCompleteBox>
-```
+<snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-xaml' />
 
 ## Custom Filtering Behavior
 
@@ -38,43 +32,19 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 
 	__Custom class that inherits the default FilteringBehavior__
 
-	```C#
-		public class MyCustomFilteringBehavior : FilteringBehavior
-		{
-		}
-	```
+<snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-cs' />
 
 1. After that you will need to override its __FindMatchingItems()__ method with a custom logic that will return the entire items collection when no match is found:
 
 	__Overriding FindMatchingItems__
 
-	```C#
-		public class MyCustomFilteringBehavior : FilteringBehavior
-		{
-			public override IEnumerable<object> FindMatchingItems(string searchText, IList items, IEnumerable<object> escapedItems, string textSearchPath, TextSearchMode textSearchMode)
-			{
-				var result = base.FindMatchingItems(searchText, items, escapedItems, textSearchPath, textSearchMode) as IEnumerable<object>;
-		 
-				if (string.IsNullOrEmpty(searchText) || !result.Any())
-				{
-					return ((IEnumerable<object>)items).Where(x => !escapedItems.Contains(x));
-				}
-				return result;
-			}
-		}
-	```
+<snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-cs' />
 
 1. Finally all you need to do is set the newly created behavior to the __FilteringBehavior__ of the AutoCompleteBox control. The xaml of the control should look like this:
 
 	__Setting the newly created behavior__
 
-	```XAML
-		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries, Source={StaticResource ViewModel}}"
-									DisplayMemberPath="Name" 
-									TextSearchMode="StartsWith"
-									WatermarkContent="Enter Country Name"
-									FilteringBehavior="{StaticResource CustomFilteringBehavior}"/>
-	```
+<snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-xaml' />
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/AutoCompleteBox/NoMatchFilteringBehavior).
 

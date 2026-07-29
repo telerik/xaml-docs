@@ -21,11 +21,7 @@ __RadPdfViewer__ comes with three separate sets of icons that can be used in its
 
 __Example 1: Creating IconSources__
 
-```XAML
-	<telerik:IconSources x:Key="IconPaths" LightBasePath="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/" 
-										   DarkBasePath="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/Dark"
-                                           ModernBasePath="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/Modern/" />
-```
+<snippet id='radpdfviewer-ui-switching-icons-at-runtime-block_1-xaml' />
 
 
 >tip To browse all icons you can download the source code of the controls from your Telerik account. The images are located at {%if site.site_name == 'WPF' %}\Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\PdfViewer\FixedDocumentViewers\Images{%endif%}{%if site.site_name == 'Silverlight' %}\Telerik\_UI\_for\_Silverlight\_Source\_[Version]Controls\PdfViewer\FixedDocumentViewers\Images{%endif%}.

@@ -16,31 +16,7 @@ Here is an example with RadPropertyGrid that has its Item property bound to a Bu
 
 __Example 1: Using AutoBindBehavior__
 
-```XAML
-	<Grid x:Name="LayoutRoot" Background="White">
-	  <Grid.Resources>
-	    <DataTemplate x:Key="editorTemplate">
-	      <TextBox Foreground="Red" FontWeight="Bold" telerik:AutoBindBehavior.UpdateBindingOnElementLoaded="Text" />
-	    </DataTemplate>
-	  </Grid.Resources>
-	  <telerik:RadPropertyGrid x:Name="rpg" AutoGeneratePropertyDefinitions="False">
-	    <telerik:RadPropertyGrid.PropertyDefinitions>
-	      <telerik:PropertyDefinition Binding="{Binding Height}"
-	                                  EditorTemplate="{StaticResource editorTemplate}"
-	                                  DisplayName="Height" />
-	      <telerik:PropertyDefinition Binding="{Binding Width}"
-	                                  EditorTemplate="{StaticResource editorTemplate}"
-	                                  DisplayName="Width" />
-	      <telerik:PropertyDefinition Binding="{Binding ActualHeight}"
-	                                  IsReadOnly="True"
-	                                  DisplayName="ActualHeight"/>
-	      <telerik:PropertyDefinition Binding="{Binding ActualWidth}"
-	                                  IsReadOnly="True"
-	                                  DisplayName="ActualWidth"/>
-	    </telerik:RadPropertyGrid.PropertyDefinitions>
-	  </telerik:RadPropertyGrid>
-	</Grid>
-```
+<snippet id='radpropertygrid-features-autobind-block_1-xaml' />
 
 ![Rad Property Grid Sets Autobind](images/RadPropertyGrid_Sets_Autobind.png)
 
@@ -89,14 +65,7 @@ By default, the __AutoBindBehavior__ supports __TwoWay Binding__ only for the da
 
 __Example 2: Setting the BindingModeOverride property to TwoWay__
 
-```XAML
-	<Grid.Resources>
-	  <DataTemplate x:Key="editorTemplate1">
-	    <TextBox Foreground="Red" FontWeight="Bold"
-	             telerik:AutoBindBehavior.BindingModeOverride="TwoWay"/>
-	  </DataTemplate>
-	</Grid.Resources>
-```
+<snippet id='radpropertygrid-features-autobind-block_2-xaml' />
 
 ## See Also
 

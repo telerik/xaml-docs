@@ -30,21 +30,12 @@ Here is how you can do that in XAML:
 
 __Example 1: Applying default style settings on the document__
 
-```XAML
-    <telerik:RadRichTextBox Name="radRichTextBox1" Grid.Row="1" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic" FontWeight="Bold" DocumentInheritsDefaultStyleSettings="True" Foreground="Red"/>
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_1-xaml' />
 
 If you run that in an example with a __RadRichTextBoxRibbonUI__ and/or __SelectionMiniToolBar__, you will notice that the value of the FontSize they show is 12. That is so, because the unit they use when measuring is points, as opposed to RadRichTextBox's default measuring unit – DIP. You can also set these properties in code behind. If you decide on that option, you can also make use of the methods that the class __Telerik.Windows.Documents.Model.Unit__ exposes for converting between different measuring units. The following code produces the same result as the XAML above: 
 
 __Example 1: Applying default style settings on the document__  
-```C#
-    	this.radRichTextBox1.FontFamily = new FontFamily("Comic Sans MS");
-        this.radRichTextBox1.FontSize = Unit.PointToDip(12);
-        this.radRichTextBox1.FontStyle = FontStyles.Italic;
-        this.radRichTextBox1.FontWeight = FontWeights.Bold;
-	this.radRichTextBox1.Foreground = Brushes.Red;
-        this.radRichTextBox1.DocumentInheritsDefaultStyleSettings = true;
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_2-cs' />
 
 >These settings will not be applied on text which is imported by a rich-text [format provider]({%slug radrichtextbox-features-import-export%}), as the settings defined in the input file/string will be applied.          
 
@@ -67,31 +58,17 @@ RadRichTextBox does not have a Text property because different formats for impor
 You can read more about the use of format providers [here]({%slug radrichtextbox-features-import-export%}). Overall, what you need to do to get the content of the document in a specific format is to create an instance of the corresponding provider and export the document. An example is illustrated below:        
 
 __Example 2: Export a document__  
-```C#
-    public string GetXAML(RadDocument document)
-    {
-        XamlFormatProvider provider = new XamlFormatProvider();
-        return provider.Export(document);
-    }
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_3-cs' />
 
 To get the text stripped of all formatting, you can use __TxtFormatProvider__, which is included in the __Telerik.Windows.Documents.dll__ assembly. Setting the content of RadRichTextBox can be done in the same manner if you have the content in one of these formats. For example, importing an HTML string to RadDocument can be done as follows:
 
 __Example 3: Import a document__  
-```C#
-    public RadDocument ImportHtml(string content)
-    {
-        HtmlFormatProvider provider = new HtmlFormatProvider();
-        return provider.Import(content);
-    }
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_4-cs' />
 
 If you wish to preserve the initial content of the document and insert text at different positions in the document, you can use the __Insert~__ methods of __RadRichTextBox__ or [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}). The Insert method of RadRichTextBox uses the current span style of the document, i.e. the text is included in the document just as it would have been if you typed it at that position.
 
 __Example 4: Inserting text in RadRichTextBox at caret position__  
-```C#
-    this.radRichTextBox.Insert(textToInsert);
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_5-cs' />
 
 You can manipulate the caret position before invoking the Insert~() method in order to change the position where the new content will appear. You can find more information on document positions and their usage [here]({%slug radrichtextbox-features-positioning%}).       
 
@@ -100,29 +77,18 @@ You can manipulate the caret position before invoking the Insert~() method in or
 If you are using a document in [flow layout mode]({%slug radrichtextbox-features-layout-modes%}#flow), the document respects the value you set to the Padding property that RadRichTextBox inherits from Control. 
 
 __Example 5: Set padding__  
-```XAML
-    <telerik:RadRichTextBox Name="radRichTextBox" Padding="0,20,100,60" />
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_6-xaml' />
 
 __Example 5: Set padding__  
-```C#
-    this.editor.Padding = new Thickness(0, 20, 100, 60);
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_7-cs' />
 
 With [paged layout mode]({%slug radrichtextbox-features-layout-modes%}#paged), you can set the margin of the document like this:
 
 __Example 6: Apply margin to a Section__  
-```XAML
-    <telerik:RadRichTextBox Name="editor" LayoutMode="Paged">
-        <telerik:RadDocument SectionDefaultPageMargin="0,20,100,60" />
-    </telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_8-xaml' />
 
 __Example 6: Apply margin to a Section__  
-```C#
-    this.editor.Document.LayoutMode = DocumentLayoutMode.Paged;
-    this.editor.Document.SectionDefaultPageMargin = new Telerik.Windows.Documents.Layout.Padding(0, 20, 100, 60);
-```
+<snippet id='radrichtextbox-frequently-asked-questions-block_9-cs' />
 
 If you are using [data providers]({%slug radrichtextbox-features-data-providers%}) to bind the content of RadRichTextBox, a new document will be created for every change in the string property which is the binding source. In that case, setting these properties should be done on DocumentChanged.        
 

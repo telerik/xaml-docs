@@ -126,14 +126,5 @@ __RadPanelBar__ exposes the following events regarding the drag and drop:
 >tip Handling the __PreviewDragEnded__ event will cancel the __drop__ operation. This is useful, when you want to cancel adding/removing items from the __RadPanelBar__'s __ItemsCollection__.		  
 
 
-```C#
-	private void RadPanelBar_PreviewDragEnded(object sender, RadTreeViewDragEndedEventArgs e)
-	{
-	    e.Handled = true;
-	}
-```
-```VB.NET
-	Private Sub RadPanelBar_PreviewDragEnded(sender As Object, e As RadTreeViewDragEndedEventArgs)
-	    e.Handled = True
-	End Sub
-```
+<snippet id='radpanelbar-events-overview-block_1-cs' />
+<snippet id='radpanelbar-events-overview-block_1-vb' />

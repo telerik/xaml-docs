@@ -40,35 +40,16 @@ For example:
 
 __Example 1: Set the style of the exported element__
 
-```C#
-	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
-	{
-	    if (e.Element == ExportElement.Cell)
-	    {
-	        var column = e.Context as GridViewDataColumn;
-	        if (column.Header.ToString() == "Name")
-	        {
-	            (e.VisualParameters as GridViewExcelMLVisualExportParameters).StyleId = "someStyle";
-	        }
-	    }
-	}
-```
+<snippet id='radgridview-export-how-to-style-exported-excelml-documents-example_1_set_the_style_of_the_exported_element-cs' />
+
 
 You can define the Style when __InitializingExcelMLStyles__ event is raised. For example:
           
 
 __Example 2: Define a style:__
 
-```C#
-	private void clubsGrid_InitializingExcelMLStyles(object sender, ExcelMLStylesEventArgs e)
-	{
-	    ExcelMLStyle style = new ExcelMLStyle("someStyle");
-	    style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
-	    style.Font.Size = 15;
-	    style.Font.Italic = true;
-	    e.Styles.Add(style);
-	}
-```
+<snippet id='radgridview-export-how-to-style-exported-excelml-documents-example_2_define_a_style-cs' />
+
 
 You can check the [Export Events]({%slug gridview-export-events%}) article for more information on how to define an ExcelMLStyle.
 

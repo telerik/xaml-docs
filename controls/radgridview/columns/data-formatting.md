@@ -14,27 +14,17 @@ __GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the di
 
 __Example 1: Set DataFormatString property of DateTime column__
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding OrderDate}"
-	                Header="Order Date"
-	                UniqueName="OrderDate"
-	                DataFormatString="{} {0:dd, MMM, yyyy}" />
-```
+<snippet id='radgridview-columns-data-formatting-example_1_set_dataformatstring_property_of_datetime_column-xaml' />
+
 
 >__{}__ is the XAML escape sequence which allows subsequent values in the attribute to be interpreted as a literal. You can find more information in the MSDN [Escape Sequence](http://msdn.microsoft.com/en-us/library/ms744986.aspx) article.
 
 __Example 1: Set DataFormatString property of DateTime column__
 
-```C#
-	((GridViewDataColumn)this.radGridView.Columns["OrderDate"]).DataFormatString = "{0:dd, MMM, yyyy}";
-	// or
-	((GridViewDataColumn)this.radGridView.Columns["OrderDate"]).DataFormatString = "dd, MMM, yyyy";
-```
-```VB.NET
-	DirectCast(Me.radGridView.Columns("OrderDate"), GridViewDataColumn).DataFormatString = "{0:dd, MMM, yyyy}"
-	' or
-	DirectCast(Me.radGridView.Columns("OrderDate"), GridViewDataColumn).DataFormatString = "dd, MMM, yyyy"
-```
+<snippet id='radgridview-columns-data-formatting-example_1_set_dataformatstring_property_of_datetime_column-cs' />
+
+<snippet id='radgridview-columns-data-formatting-example_1_set_dataformatstring_property_of_datetime_column-vb' />
+
 
 #### __Figure 1: DateTime column with custom DataFormatString__
 

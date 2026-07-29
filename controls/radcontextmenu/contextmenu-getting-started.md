@@ -38,23 +38,15 @@ In order to add a __RadContextMenu__ control to your __UserControl__ you have to
 
 __Example 1__
 
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-```
+<snippet id='radcontextmenu-contextmenu-getting-started-example_1-xaml' />
+
 
 This tutorial will show you how to attach a __RadContextMenu__ to a TextBox control. Here is the TextBox control definition.
 
 __Example 2__
 
-```XAML
-	<Grid x:Name="LayoutRoot"
-	      Background="White">
-	    <TextBox x:Name="InputBox"
-	             Width="200"
-	             VerticalAlignment="Top">
-	    </TextBox>
-	</Grid>
-```
+<snippet id='radcontextmenu-contextmenu-getting-started-example_2-xaml' />
+
 
 The next step is to set the __ContextMenu__ attached property of the __RadContextMenu__ class to the __TextBox__ control.
 
@@ -63,37 +55,15 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 
 __Example 3__
 
-```XAML
-	<Grid Background="White">
-	    <TextBox Width="200"
-	             VerticalAlignment="Top"
-	             ContextMenu="{x:Null}">
-	        <telerik:RadContextMenu.ContextMenu>
-	            <telerik:RadContextMenu />
-	        </telerik:RadContextMenu.ContextMenu>
-	    </TextBox>
-	</Grid>
-```
+<snippet id='radcontextmenu-contextmenu-getting-started-example_3-xaml' />
+
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 __Example 3__
 
-```XAML
-	<TextBox Width="200"
-	         VerticalAlignment="Top"
-	         ContextMenu="{x:Null}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="Copy" />
-	            <telerik:RadMenuItem Header="Paste" />
-	            <telerik:RadMenuItem Header="Cut" />
-	            <telerik:RadMenuItem IsSeparator="True" />
-	            <telerik:RadMenuItem Header="Select All" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-contextmenu-getting-started-example_3-xaml' />
+
 {% endif %}
 
 If you run the application and right-click on the TextBox you will see an empty context menu.
@@ -110,40 +80,15 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 {% if site.site_name == 'Silverlight' %}
 __Example 4__
 
-```XAML
-	<TextBox Width="200"
-	         VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="Copy" />
-	            <telerik:RadMenuItem Header="Paste" />
-	            <telerik:RadMenuItem Header="Cut" />
-	            <telerik:RadMenuItem IsSeparator="True" />
-	            <telerik:RadMenuItem Header="Select All" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-contextmenu-getting-started-example_4-xaml' />
+
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 __Example 4__
 
-```XAML
-	<TextBox Width="200"
-	         VerticalAlignment="Top"
-	         ContextMenu="{x:Null}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="Copy" />
-	            <telerik:RadMenuItem Header="Paste" />
-	            <telerik:RadMenuItem Header="Cut" />
-	            <telerik:RadMenuItem IsSeparator="True" />
-	            <telerik:RadMenuItem Header="Select All" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-contextmenu-getting-started-example_4-xaml' />
+
 {% endif %}
 
 Here is a snapshot of the result.
@@ -204,17 +149,8 @@ To change the theme, you can follow the steps below:
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 5: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radcontextmenu-contextmenu-getting-started-example_5_merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

@@ -13,23 +13,11 @@ position: 20
 `RadMap` supports displaying tile data from the [Open Street Map](https://www.openstreetmap.org/) services via the `OpenStreetMapProvider` class. You have the option of passing an API key to it. This key is needed for the Transport and Cycle maps, which come from [ThunderForest](https://www.thunderforest.com/). You can check the [following page](https://www.thunderforest.com/docs/apikeys/) in order to learn how to obtain an API key.
 
 __OpenStreetMapProvider with API key in Xaml__
-```XAML
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider APIKey="your-api-key" />
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-osm-provider-block_1-xaml' />
 
 __OpenStreetMapProvider set in code__
-```C#
-	OpenStreetMapProvider openStreetMap = new OpenStreetMapProvider("your-api-key");
-	this.radMap.Provider = openStreetMap;
-```
-```VB
-	Dim openStreetMap As New OpenStreetMapProvider("your-api-key")
-	Me.radMap.Provider = openStreetMap
-```
+<snippet id='radmap-features-providers-osm-provider-block_2-cs' />
+<snippet id='radmap-features-providers-osm-provider-block_3-vb' />
 
 ## Attribution Copyright Label
 
@@ -46,21 +34,8 @@ The OpenStreetMapProvider class provides the option of passing a User-Agent head
 The following two examples demonstrate how you can pass such a User-Agent.
 
 __Setting StandardModeUserAgent in Xaml__
-```XAML
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider APIKey="your-api-key" StandardModeUserAgent="your custom user agent string" />
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-osm-provider-block_4-xaml' />
 
 __Setting StandardModeUserAgent in code__
-```C#
-	OpenStreetMapProvider openStreeMapProvider = new OpenStreetMapProvider("your-api-key")
-	{
-		StandardModeUserAgent = "your custom user agent string"
-	};
-```
-```VB
-	Dim openStreeMapProvider As New OpenStreetMapProvider("your-api-key") With {.StandardModeUserAgent = "your custom user agent string"}
-```
+<snippet id='radmap-features-providers-osm-provider-block_5-cs' />
+<snippet id='radmap-features-providers-osm-provider-block_6-vb' />

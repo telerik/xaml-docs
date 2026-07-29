@@ -20,35 +20,21 @@ In order to hide the week numbers, one can use the __CalendarStyle__ property of
 
 	__Example 1: Defining a style for RadCalendar__
 
-	```XAML
-		<UserControl.Resources>
-			<Style x:Key="calendarStyle" TargetType="telerik:RadCalendar">
-				<!--....-->
-			</Style>
-		</UserControl.Resources>
-	```
+	<snippet id='raddatetimepicker-how-to-hide-week-numbers-example_1_defining_a_style_for_radcalendar-xaml' />
+
 
 * Then, add a __Setter__ for the __AreWeekNumbersProperty__ property and set the __Value__ to __False__
 
 	__Example 2: Setting the AreWeekNumbersVisible property__
-	```XAML
-		<UserControl.Resources>
-			<Style x:Key="calendarStyle" TargetType="telerik:RadCalendar">
-				<Setter Property="AreWeekNumbersVisible" Value="False" />
-			</Style>
-		</UserControl.Resources>
-	```
+	<snippet id='raddatetimepicker-how-to-hide-week-numbers-example_2_setting_the_areweeknumbersvisible_property-xaml' />
+
 
 * The final step is to create a __RadDateTimePicker__ control and set __CalendarStyle__ to the Style that you created. Please, pay attention that if the __InputMode__ is set to __TimePicker__, the __CalendarStyle__ will take no effect on the control.
 
 	__Example 3: Setting the CalendarStyle property__
 
-	```XAML
-		<telerik:RadDateTimePicker Width="100"                            
-						InputMode="DatePicker"                            
-						CalendarStyle="{StaticResource calendarStyle}"                            
-						VerticalAlignment="Center"/>
-	```
+	<snippet id='raddatetimepicker-how-to-hide-week-numbers-example_3_setting_the_calendarstyle_property-xaml' />
+
 
 #### __Figure 1: Result from Example 3 in the Office2016 theme__
 ![RadDateTimePicker without week numbers](images/dateTimePicker_how_to_hide_week_numbers.png)

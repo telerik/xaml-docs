@@ -17,15 +17,7 @@ This article lists the events specific for RadAutoSuggestBox.
 	* __Reason__: A property of type TextChangeReason that allows you to identify how the text was changed - __Programmatic__, via __UserInput__ or on __SuggestionChosen__.
 	
 		__Example 1: TextChanged event handler__
-		```C#
-			private void RadAutoSuggestBox_TextChanged(object sender, TextChangedEventArgs e)
-			{
-				if (e.Reason == TextChangeReason.UserInput)
-				{
-					this.radAutoSuggestBox.ItemsSource = MyGetFilteredItems(this.radAutoSuggestBox.Text);
-				}            
-			}
-		```
+<snippet id='radautosuggestbox-events-block_1-cs' />
 	
 * __QuerySubmitted__: Occurs when the user submits a query. This happens on the following occassions - Enter press while the control is focused and the drop down is opened, a click over the query button or choosing suggestion from the drop down list. The event arguments are of type __QuerySubmittedEventArgs__ and expose the following members:
 
@@ -33,22 +25,14 @@ This article lists the events specific for RadAutoSuggestBox.
 	* __Suggestion__: A property of type object, that holds a reference to the chosen suggestion. If no suggestion was selected the property value is `null`.
 	
 		__Example 2: QuerySubmitted event handler__
-		```C#
-			private void RadAutoSuggestBox_QuerySubmitted(object sender, QuerySubmittedEventArgs e)
-			{     
-			}
-		```
+<snippet id='radautosuggestbox-events-block_2-cs' />
 
 * __SuggestionChosen__: Occurs when a suggestion is chosen from the drop down list. The event arguments are of type __SuggestionChosenEventArgs__ and expose the following members:
 
 	* __Suggestion__: A property of type object, that holds a reference to the chosen suggestion.
 	
 		__Example 3: SuggestionChosen event handler__
-		```C#
-			private void RadAutoSuggestBox_SuggestionChosen(object sender, SuggestionChosenEventArgs e)
-			{    
-			}
-		```
+<snippet id='radautosuggestbox-events-block_3-cs' />
 	
 ## See Also  
  * [Getting Started]({%slug radautosuggestbox-getting-started%}) 

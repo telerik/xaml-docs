@@ -37,19 +37,10 @@ Another approach would be to set the __Language__ based on the __CurrentCulture_
 
 
 
-```C#
-	public MainWindow()
-	{
-	    InitializeComponent();
-	    this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag);
-	}
-```
-```VB.NET
-	Public Sub New()
-	    InitializeComponent()
-	    Me.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag)
-	End Sub
-```
+<snippet id='radgridview-troubleshooting-apply-currentculture-solution-cs' />
+
+<snippet id='radgridview-troubleshooting-apply-currentculture-solution-vb' />
+
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
@@ -57,18 +48,9 @@ Another approach would be to set the __Language__ based on the __CurrentCulture_
 
 
 
-```C#
-	public MainPage()
-	{
-	    InitializeComponent();
-	    Dispatcher.BeginInvoke(new Action(() => this.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)));
-	}
-```
-```VB.NET
-	Public Sub New()
-	    InitializeComponent()
-	    Dispatcher.BeginInvoke(New Action(Sub() Me.Language = XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.Name)))
-	End Sub
-```
+<snippet id='radgridview-troubleshooting-apply-currentculture-solution-cs' />
+
+<snippet id='radgridview-troubleshooting-apply-currentculture-solution-vb' />
+
 
 {% endif %}

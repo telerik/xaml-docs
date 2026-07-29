@@ -32,24 +32,7 @@ When you are designing a new __RadRibbonView__, one of your first tasks will be 
 
 The next example demonstrates how to add several __RadRibbonTab__ to your ribbon and how to set their __Header__ property.		
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="Insert">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="Page Layout">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="References">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="Mailings">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="Review">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="View">
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_1-xaml' />
 
 ![{{ site.framework_name }} RadRibbonView Empty Ribbon Tabs](images/RibbonView_Tab_EmtpyTabs.png)
 
@@ -65,35 +48,14 @@ The first item in the __Items__ collection is the default selected __RibbonTab__
 
 The example below sets the __IsSelected__ property to __True__ of the "References" __RibbonTab__.			
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="Insert">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="Page Layout">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="References" IsSelected="True">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="Mailings">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="Review">
-	    </telerik:RadRibbonTab>
-	    <telerik:RadRibbonTab Header="View">
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_2-xaml' />
 
 ### Accessing the Selected Tab Run-Time
 
 Sometimes you may want to access the currently selected tab run-time. In this case, you should use the __RadRibbonView__'s __SelectedTab__ property.			
 
-```C#
-	RadRibbonTab currentlySelectedTab = radRibbonView.SelectedTab;
-```
-```VB.NET
-	Dim currentlySelectedTab As RadRibbonTab = radRibbonView.SelectedTab
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_3-cs' />
+<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_4-vb' />
 
 ## Minimization
 
@@ -113,37 +75,10 @@ The __RadRibbonView__ exposes two events related to the __RadRibbonTab__ element
 
 	>tip You can cancel the selection by setting the __RadSelectionChangedEventArgs's__ __Handled__ property to __True__.			  
 
-	```XAML
-		<telerik:RadRibbonView x:Name="radRibbonView" PreviewSelectionChanged="radRibbonView_PreviewSelectionChanged">
-		 ...
-		</telerik:RadRibbonView>
-	```
+	<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_5-xaml' />
 	
-	```C#
-		private void radRibbonView_PreviewSelectionChanged(object sender, RadSelectionChangedEventArgs e)
-		{
-		 // Get the ribbonView
-		 RadRibbonView ribbonView = sender as RadRibbonView;
-		 //Get the selected items
-		 IList selectedItems = e.AddedItems;
-		 //Get the unselected items
-		 IList unselectedItems = e.RemovedItems;
-		 // Cancel the selection
-		 e.Handled = true;
-		}
-	```
-	```VB.NET
-		Private Sub radRibbonView_PreviewSelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
-			' Get the ribbonView'
-			Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)
-			'Get the selected items'
-			Dim selectedItems As IList = e.AddedItems
-			'Get the unselected items'
-			Dim unselectedItems As IList = e.RemovedItems
-			' Cancel the selection'
-			e.Handled = True
-		End Sub
-	```
+	<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_6-cs' />
+	<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_7-vb' />
 
 * __SelectionChanged__ - event raised after the tab selection is done. The __SelectionChanged__ event handler receives two arguments:
 	* The sender argument contains the __RadRibbonView__. This argument is of type __object__, but can be cast to the __RadRibbonView__ type.
@@ -151,33 +86,10 @@ The __RadRibbonView__ exposes two events related to the __RadRibbonTab__ element
 		* __AddedItems__ - an __IList__ collection of the selected items
 		* __RemovedItems__ - an __IList__ collection of the unselected items					
 
-	```XAML
-		<telerik:RadRibbonView x:Name="radRibbonView" SelectionChanged="radRibbonView_SelectionChanged">
-		 ...
-		</telerik:RadRibbonView>
-	```
+	<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_8-xaml' />
 
-	```C#
-		private void radRibbonView_SelectionChanged(object sender, RadSelectionChangedEventArgs e)
-		{
-		 // Get the ribbonView
-		 RadRibbonView ribbonView = sender as RadRibbonView;
-		 //Get the selected items
-		 IList selectedItems = e.AddedItems;
-		 //Get the unselected items
-		 IList unselectedItems = e.RemovedItems;
-		}
-	```
-	```VB.NET
-		Private Sub radRibbonView_SelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
-			' Get the ribbonView'
-			Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)
-			'Get the selected items'
-			Dim selectedItems As IList = e.AddedItems
-			'Get the unselected items'
-			Dim unselectedItems As IList = e.RemovedItems
-		End Sub
-	```
+	<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_9-cs' />
+	<snippet id='radribbonview-features-ribbon-controls-ribbon-tab-block_10-vb' />
 
 For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview]({%slug radribbonview-events-overview%}) topic. The __RadRibbonView__ is a complex control and the __RibbonTab__ is only a small part of it. The __RadRibbonView__ consists of various elements such as:
 * [Application Menu]({%slug radribbonview-applicationmenu%})

@@ -14,23 +14,12 @@ In order to disable the drop operation on a specific treeview item, you need to 
 
 
 
-```XAML
-	<telerik:RadTreeViewItem Header="Tennis" IsDropAllowed="False">
-```
+<snippet id='radtreeview-how-to-drag-and-drop-disable-drop-specific-location-block_1-xaml' />
 
 
 
-```C#
-	private void DisableDropOnSpecificItem()
-	{
-	    radTreeViewItemTennis.IsDropAllowed = false;
-	}
-```
-```VB.NET
-	Private Sub DisableDropOnSpecificItem()
-	    radTreeViewItemTennis.IsDropAllowed = False
-	End Sub
-```
+<snippet id='radtreeview-how-to-drag-and-drop-disable-drop-specific-location-block_2-cs' />
+<snippet id='radtreeview-how-to-drag-and-drop-disable-drop-specific-location-block_3-vb' />
 
 If you want to read more about the __Drag and Drop__ behavior of the __RadTreeView__, see the main topic about [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}).
 

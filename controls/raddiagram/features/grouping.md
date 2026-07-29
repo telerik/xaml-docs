@@ -59,53 +59,18 @@ In the next example we will create 20 shapes with contents - "1", "2",... "20" a
 Let's first create some random shapes:
 
 
-```C#
-	private void RadButton_Click_1(object sender, RoutedEventArgs e)
-	{
-			for (int i = 1; i < 21; i++)
-			{
-				RadDiagramShape shape = new RadDiagramShape() { Width = 30, Height = 30, Content = i };
-				shape.Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.EllipseShape);
-				shape.Position = new Point(random.Next(0, 900), random.Next(0, 200));
-				this.diagram.Items.Add(shape);
-			}
-	}
-```
-```VB.NET
-	Private Sub RadButton_Click_1(sender As Object, e As RoutedEventArgs)
-		For i As Integer = 1 To 20
-			Dim shape As New RadDiagramShape() With { 
-				 .Width = 30, 
-				 .Height = 30, 
-				 .Content = i 
-				}
-			shape.Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.EllipseShape)
-			shape.Position = New Point(random.Next(0, 900), random.Next(0, 200))
-			Me.diagram.Items.Add(shape)
-		Next
-	End Sub
-```
+<snippet id='raddiagram-features-grouping-block_1-cs' />
+
+<snippet id='raddiagram-features-grouping-block_1-vb' />
+
 
 Now let's implement some grouping logic on Button's Click:
 
 
-```C#
-	private void RadButton_Click_3(object sender, RoutedEventArgs e)
-	{
-		IShape[] evenShapes = this.diagram.Shapes.Where(x => int.Parse(x.Content.ToString()) % 2 == 0).ToArray<IShape>();
-		IShape[] oddShapes = this.diagram.Shapes.Where(x => int.Parse(x.Content.ToString()) % 2 == 1).ToArray<IShape>();
-		this.diagram.Group("Even", evenShapes);
-		this.diagram.Group("Odd", oddShapes);
-	}
-```
-```VB.NET
-	Private Sub RadButton_Click_3(sender As Object, e As RoutedEventArgs)
-		Dim evenShapes As IShape() = Me.diagram.Shapes.Where(Function(x) Integer.Parse(x.Content.ToString()) Mod 2 = 0).ToArray(Of IShape)()
-		Dim oddShapes As IShape() = Me.diagram.Shapes.Where(Function(x) Integer.Parse(x.Content.ToString()) Mod 2 = 1).ToArray(Of IShape)()
-		Me.diagram.Group("Even", evenShapes)
-		Me.diagram.Group("Odd", oddShapes)
-	End Sub
-```
+<snippet id='raddiagram-features-grouping-block_2-cs' />
+
+<snippet id='raddiagram-features-grouping-block_2-vb' />
+
 
 Below you can see how the grouping works:
 
@@ -114,14 +79,10 @@ Below you can see how the grouping works:
 Now let's play with grouping and upgrouping. Below are some code examples and the result of the code execution:
 
 
-```C#
-    this.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
-    this.diagram.Group("345", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
-```
-```VB.NET
-    Me.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
-    Me.diagram.Group("345", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
-```
+<snippet id='raddiagram-features-grouping-block_3-cs' />
+
+<snippet id='raddiagram-features-grouping-block_3-vb' />
+
 
 This makes group "123" with items __{Shapes[1],Shapes[2]}__ and "345" with items __{Shapes[3], Shapes[4], Shapes[5]}__.		
 
@@ -130,14 +91,10 @@ The creation of the second group excludes Shapes[3] from group "123".
 Alternatively if we use one name in the method:
 
 
-```C#
-	this.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
-	this.diagram.Group("123", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
-```
-```VB.NET
-	Me.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
-	Me.diagram.Group("123", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
-```
+<snippet id='raddiagram-features-grouping-block_4-cs' />
+
+<snippet id='raddiagram-features-grouping-block_4-vb' />
+
 
 This produces a __single group "123"__ with the 5 elements Shapes[1]-Shapes[5].		
 
@@ -148,16 +105,10 @@ __Subgrouping__ must be done from subgroups to parentgroups. __In other words, c
 Below is an example of creating a subgroups and a parent group.
 
 
-```C#
-    var groupA = this.diagram.Group("1-2", this.diagram.Shapes[1], this.diagram.Shapes[2]);
-    var groupB = this.diagram.Group("3-4", this.diagram.Shapes[3], this.diagram.Shapes[4]);
-    var parentGroup = this.diagram.Group("1-2-3-4",groupA,groupB);
-```
-```VB.NET
-    Dim groupA = Me.diagram.Group("1-2", Me.diagram.Shapes(1), Me.diagram.Shapes(2))
-    Dim groupB = Me.diagram.Group("3-4", Me.diagram.Shapes(3), Me.diagram.Shapes(4))
-    Dim parentGroup = Me.diagram.Group("1-2-3-4", groupA, groupB)
-```
+<snippet id='raddiagram-features-grouping-how_to_create_subgroups-cs' />
+
+<snippet id='raddiagram-features-grouping-how_to_create_subgroups-vb' />
+
 
 In the picture below you can see a how consecutive clicks on a shape reflects the selection of groups.
 
@@ -170,14 +121,10 @@ First click selects the outermost (the biggest group), second click selects the 
 What will happen if we try to create parent group then create subgroups?
 
 
-```C#
-    this.diagram.Group("1-2-3-4", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3], this.diagram.Shapes[4]);
-    this.diagram.Group("1-2", this.diagram.Shapes[1], this.diagram.Shapes[2]);
-```
-```VB.NET
-    Me.diagram.Group("1-2-3-4", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3], this.diagram.Shapes[4]);
-    Me.diagram.Group("1-2", this.diagram.Shapes[1], this.diagram.Shapes[2]);
-```
+<snippet id='raddiagram-features-grouping-how_to_create_subgroups-cs' />
+
+<snippet id='raddiagram-features-grouping-how_to_create_subgroups-vb' />
+
 
 This will create two separate groups - "1-2-3-4" with items {Shapes[3], Shapes[4]} and "1-2" with items {Shapes[1], Shapes[2]}.
 
@@ -188,28 +135,18 @@ __Ungrouping__
 You can Ungroup one or several groups with the __Ungroup__ method of RadDiagram:		
 
 
-```C#
-	this.diagram.Ungroup(groupA, groupB, groupC);
-	this.diagram.Ungroup(this.diagram.Groups.ToArray());		  
-```
-```VB.NET
-	Me.diagram.Ungroup(groupA, groupB, groupC);
-	Me.diagram.Ungroup(this.diagram.Groups.ToArray());		  
-```
+<snippet id='raddiagram-features-grouping-ungrouping-cs' />
+
+<snippet id='raddiagram-features-grouping-ungrouping-vb' />
+
 
 ## Grouping With Commands
 
 Using the DiagramCommands Group and Ungroup is straightforward. Group applies to the selected IGroupables and Ungroup applies to the selected IGroups.
 
 
-```XAML
-    <telerik:RadDiagram IsSnapToItemsEnabled="False" x:Name="diagram" HorizontalAlignment="Stretch" Height="200" Width="800"
-    IsBackgroundSurfaceVisible="True"  />
-    <telerik:RadButton  Command="telerik:DiagramCommands.Group"
-    CommandTarget="{Binding ElementName=diagram}" Content="Group" />
-    <telerik:RadButton  Command="telerik:DiagramCommands.Ungroup"
-    CommandTarget="{Binding ElementName=diagram}" Content="Ungroup" />		
-```
+<snippet id='raddiagram-features-grouping-ungrouping-xaml' />
+
 
 ![radiagram-features-grouping-3](images/radiagram-features-grouping-3.png)
 

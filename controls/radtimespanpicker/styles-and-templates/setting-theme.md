@@ -32,16 +32,7 @@ __Figure 1:__ Adding the needed references
 After that merge the xaml files in the App.xaml as shown in __Example 1__:
 
 __Example 1: Merging the .xaml files__
-```XAML
-	<Application.Resources>
-	    <ResourceDictionary>
-	        <ResourceDictionary.MergedDictionaries>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml" />
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml" />
-	        </ResourceDictionary.MergedDictionaries>
-	    </ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radtimespanpicker-styles-and-templates-setting-theme-block_1-xaml' />
 	
 * The second appraoch that you could use in order to apply the desired theme is to add references to the required assemblies from Binaries.NoXaml folder. For that purpose a folder named Themes needs to be created. That folder should contain the corresponding .xaml files from Themes.Implicit/../Windows8/../Themes/ folder located in the installation folder:
 
@@ -52,16 +43,7 @@ __Example 1: Merging the .xaml files__
 
 	__Example 2: Merging the .xaml files__
 
-	```XAML
-		<Application.Resources>
-		    <ResourceDictionary>
-		        <ResourceDictionary.MergedDictionaries>
-		            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
-		            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
-		        </ResourceDictionary.MergedDictionaries>
-		    </ResourceDictionary>
-		</Application.Resources>
-	```
+	<snippet id='radtimespanpicker-styles-and-templates-setting-theme-block_2-xaml' />
 	
 Either way you choose, the end result will be the following:
 

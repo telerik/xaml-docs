@@ -20,12 +20,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 	* **Cancel**: A boolean value indicating whether the event should be canceled.
 
         __Example 1: Filtering event__
-        ```C#
-            private void PropertyGrid_Filtering(object sender, Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridFilteringEventArgs e)
-            {
-                e.Cancel = true;
-            }
-        ```
+        <snippet id='radpropertygrid-events-block_1-cs' />
 	
 	* **FilterText**: The value that has been typed in the search TextBox.
 
@@ -66,12 +61,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 
     __Example 2: BeginningEdit event__
 
-    ```C#
-        private void PropertyGrid_BeginningEdit(object sender, Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridBeginningEditEventArgs e)
-        {
-            e.Field.Content = "Test";
-        }
-    ```
+    <snippet id='radpropertygrid-events-block_2-cs' />
 
     >The **BeginningEdit** event is raised only if the [EditMode](https://docs.telerik.com/devtools/wpf/controls/radpropertygrid/features/edit-modes) property of the **RadPropertyGrid** is set to **Single**. 
 
@@ -80,15 +70,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
     * **EditAction**: Gets the edit action. It is of type [PropertyGridEditEndedAction](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.data.propertygrid.propertygrideditendedaction) and has a **Cancel** and **Commit** actions.
 
     __Example 3: EditEnded event__
-    ```C#
-        private void PropertyGrid_EditEnded(object sender,Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridEditEndedEventArgs e)
-        {
-            if (e.EditAction ==       Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridEditEndedAction.Commit)
-            {
-                // submit changes to database
-            }
-        }
-    ```
+    <snippet id='radpropertygrid-events-block_3-cs' />
 
     * **Field**: Gets or sets the field. It is of type [PropertyGridField](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.data.propertygrid.propertygridfield).
 
@@ -141,14 +123,7 @@ In addition, the __RadPropertyGrid__ control raises the following specific event
 	* **Value**: A property of type object that gets or sets the name of the property.
 	
 __Example 4: PropertySetValueChanged event__
-    ```C#
-        private void RadPropertyGrid_PropertySetValueChanged(object sender, Telerik.Windows.Controls.Data.PropertyGrid.PropertySetValueChangedEventArgs e)
-        {
-            var items = e.Items;
-            var name = e.PropertyName;
-            var newValue = e.Value;
-        }
-    ```
+    <snippet id='radpropertygrid-events-block_4-cs' />
 
   >The **PropertySetValueChanged** event is raised only if the [PropertySetMode]({%slug radpropertygrid-defining-propertysets%}) property of the **RadPropertyGrid** is set to **Union** or **Intersection**.
 	

@@ -16,112 +16,19 @@ Here is a snapshot of a regular treeview without treeview items:
 
 ![{{ site.framework_name }} RadTreeView Without Items](images/RadTreeView_PopulatingWithDataCodeBehind___001.PNG)
 
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" Background="Bisque" Margin="8"/>
-```
+<snippet id='radtreeview-populating-with-data-in-code-behind-block_1-xaml' />
 
 ## Adding TreeView Items 
 
 In order to add new treeview items to a treeview control, first you have to create an instance of the __RadTreeViewItem__ class, set its properties like __Header__, __Foreground__, etc., and then add it to the treeview items collection. 
 
-```C#
-	private void AddTreeViewItems()
-	{
-	    RadTreeViewItem category = new RadTreeViewItem();
-	    category.Header = "Category1";
-	    category.Foreground = new SolidColorBrush( Colors.Green );
-	    radTreeView.Items.Add( category );
-	    category = new RadTreeViewItem();
-	    category.Header = "Category2";
-	    category.Foreground = new SolidColorBrush( Colors.Purple );
-	    radTreeView.Items.Add( category );
-	}
-```
-```VB.NET
-	Private Sub AddTreeViewItems()
-	    Dim category As New RadTreeViewItem()
-	    category.Header = "Category1"
-	    category.Foreground = New SolidColorBrush(Colors.Green)
-	
-	    radTreeView.Items.Add(category)
-	
-	    category = New RadTreeViewItem()
-	    category.Header = "Category2"
-	    category.Foreground = New SolidColorBrush(Colors.Purple)
-	
-	    radTreeView.Items.Add(category)
-	End Sub
-```
+<snippet id='radtreeview-populating-with-data-in-code-behind-block_2-cs' />
+<snippet id='radtreeview-populating-with-data-in-code-behind-block_3-vb' />
 
 In order to create your hierarchical structure deeper, you just need to add __RadTreeViewItem__ child nodes to any of the previously declared items. For example, here is the same __AddTreeViewItems()__ method, but this time a little more extended: 
 
-```C#
-	private void AddTreeViewItems()
-	{
-	    RadTreeViewItem category = new RadTreeViewItem();
-	    category.Header = "Category1";
-	    category.Foreground = new SolidColorBrush( Colors.Green );
-	    radTreeView.Items.Add( category );
-	
-	    // Adding child items
-	    RadTreeViewItem product = new RadTreeViewItem();
-	    product.Header = "Product1.1";
-	    category.Items.Add( product );
-	    product = new RadTreeViewItem();
-	    product.Header = "Product1.1";
-	    category.Items.Add( product );
-	
-	    category = new RadTreeViewItem();
-	    category.Header = "Category2";
-	    category.Foreground = new SolidColorBrush( Colors.Purple );
-	    radTreeView.Items.Add( category );
-	
-	    // Adding child items
-	    product = new RadTreeViewItem();
-	    product.Header = "Product2.1";
-	    category.Items.Add( product );
-	    product = new RadTreeViewItem();
-	    product.Header = "Product2.2";
-	    category.Items.Add( product );
-	}
-```
-```VB.NET
-	Private Sub AddTreeViewItems()
-	    Dim category As New RadTreeViewItem()
-	    category.Header = "Category1"
-	    category.Foreground = New SolidColorBrush(Colors.Green)
-	
-	    radTreeView.Items.Add(category)
-	
-	    ' Adding child items '
-	    Dim product As New RadTreeViewItem()
-	    product.Header = "Product1.1"
-	
-	    category.Items.Add(product)
-	
-	    product = New RadTreeViewItem()
-	    product.Header = "Product1.1"
-	
-	    category.Items.Add(product)
-	
-	    category = New RadTreeViewItem()
-	    category.Header = "Category2"
-	    category.Foreground = New SolidColorBrush(Colors.Purple)
-	
-	    radTreeView.Items.Add(category)
-	
-	    ' Adding child items '
-	    product = New RadTreeViewItem()
-	    product.Header = "Product2.1"
-	
-	    category.Items.Add(product)
-	
-	    product = New RadTreeViewItem()
-	    product.Header = "Product2.2"
-	
-	    category.Items.Add(product)
-	End Sub
-```
+<snippet id='radtreeview-populating-with-data-in-code-behind-block_4-cs' />
+<snippet id='radtreeview-populating-with-data-in-code-behind-block_5-vb' />
 
 This will be the result if you execute the __AddTreeViewItems()__ method: 
 ![{{ site.framework_name }} RadTreeView Populated from Code-Behind](images/RadTreeView_PopulatingWithDataCodeBehind___010.PNG)
@@ -132,17 +39,8 @@ This will be the result if you execute the __AddTreeViewItems()__ method:
 
 In order to remove a treeview item you have to remove it from the treeview items collection.
 
-```C#
-	private void RemoveTreeViewItem( RadTreeViewItem itemToRemove )
-	{
-	    radTreeView.Items.Remove( itemToRemove );
-	}
-```
-```VB.NET
-	Private Sub RemoveTreeViewItem(ByVal itemToRemove As RadTreeViewItem)
-	    radTreeView.Items.Remove(itemToRemove)
-	End Sub
-```
+<snippet id='radtreeview-populating-with-data-in-code-behind-block_6-cs' />
+<snippet id='radtreeview-populating-with-data-in-code-behind-block_7-vb' />
 
 ## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

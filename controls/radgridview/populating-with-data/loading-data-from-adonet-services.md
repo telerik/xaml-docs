@@ -20,9 +20,8 @@ The purpose of this tutorial is to show you how to populate a __RadGridView__ wi
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadGridView__ declaration in your XAML: 
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"/>
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_1-xaml' />
+
 
 ## Plain Method Calls
 
@@ -30,56 +29,27 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 * Switch to the code-behind and add a reference to the __NorthwindEntities__ object.
 
-```C#
-	NorthwindEntities dbContext = new NorthwindEntities(new Uri("GridViewDataService.svc", UriKind.Relative));
-```
-```VB.NET
-	Private dbContext As New NorthwindEntities(New Uri("GridViewDataService.svc", UriKind.Relative))
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_2-cs' />
 
-```C#
-	NorthwindEntities dbContext2 = new NorthwindEntities(new Uri("Enter your service address here"));
-```
-```VB.NET
-	Private dbContext2 As New NorthwindEntities(New Uri("Enter your service address here"))
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_2-vb' />
+
+
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_3-cs' />
+
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_3-vb' />
+
 
 >tip For more information about how to add a reference to an ADO.NET Data Service and how to create a new instance of the exposed entity, take a look at the [Consuming ADO.NET Data Service](http://www.telerik.com/help/wpf/consuming-data-ado-net-data-service.html) topic.The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects. 
 
-```C#
-	private void BeginRequest()
-	{
-	    DataServiceQuery<Customer> query = dbContext.CreateQuery<Customer>("Customers");
-	    query.BeginExecute(RequestCompleted, query);
-	}
-	
-	private void RequestCompleted(IAsyncResult asyncResult)
-	{
-	    DataServiceQuery<Customer> query = asyncResult.AsyncState as DataServiceQuery<Customer>;
-	    var customers = query.EndExecute(asyncResult).ToList();
-	    this.radGridView.ItemsSource = customers;
-	}
-```
-```VB.NET
-	Private Sub BeginRequest()
-	    Dim query As DataServiceQuery(Of Customer) = dbContext.CreateQuery(Of Customer)("Customers")
-	    query.BeginExecute(AddressOf RequestCompleted, query)
-	End Sub
-	
-	Private Sub RequestCompleted(ByVal asyncResult As IAsyncResult)
-	    Dim query As DataServiceQuery(Of Customer) = TryCast(asyncResult.AsyncState, DataServiceQuery(Of Customer))
-	    Dim customers = query.EndExecute(asyncResult).ToList()
-	    Me.radGridView.ItemsSource = customers
-	End Sub
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_4-cs' />
 
-```C#
-	this.radGridView.ItemsSource = dbContext.Customers.Execute().ToList();
-```
-```VB.NET
-	Me.radGridView.ItemsSource = dbContext.Customers.Execute().ToList()
-	'
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_4-vb' />
+
+
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_5-cs' />
+
+<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_5-vb' />
+
 
 Run your demo, the result can be seen on the next image:
 
@@ -91,15 +61,10 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 * Create a new class named __NorthwindDataSource__. 
 
-	```C#
-		public class NorthwindDataSource
-		{
-		}
-	```
-	```VB.NET
-		Public Class NorthwindDataSource
-		End Class
-	```
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_6-cs' />
+
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_6-vb' />
+
 
 * Add a reference to your ADO.NET Data Service. 
 
@@ -107,115 +72,42 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 * In the __NorthwindDataSource__ class add a reference to the __NorthwindEntities__ object: 
 
-	```C#
-		public class NorthwindDataSource
-		{
-			private static NorthwindEntities northwindEntity;
-			public NorthwindDataSource()
-			{
-				northwindEntity = new NorthwindEntities(new Uri("GridViewDataService.svc", UriKind.Relative));
-				this.Customers = new ObservableCollection<Customer>();
-			}
-			public ObservableCollection<Customer> Customers
-			{
-				get;
-				set;
-			}
-		}
-	```
-	```VB.NET
-		Public Class NorthwindDataSource
-			Private Shared northwindEntity As NorthwindEntities
-			Public Sub New()
-				northwindEntity = New NorthwindEntities(New Uri("GridViewDataService.svc", UriKind.Relative))
-				Me.Customers = New ObservableCollection(Of Customer)()
-			End Sub
-			Public Property Customers() As ObservableCollection(Of Customer)
-		End Class
-	```
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_7-cs' />
 
-	```C#
-		public class NorthwindDataSource
-		{
-			private static NorthwindEntities northwindEntity;
-			public NorthwindDataSource()
-			{
-				northwindEntity = new NorthwindEntities(new Uri("Enter your service address here"));
-				this.Customers = new ObservableCollection<Customer>();
-			}
-			public ObservableCollection<Customer> Customers
-			{
-				get;
-				set;
-			}
-		}
-	```
-	```VB.NET
-		Public Class NorthwindDataSource
-			Private Shared northwindEntity As NorthwindEntities
-			Public Sub New()
-				northwindEntity = New NorthwindEntities(New Uri("Enter your service address here"))
-				Me.Customers = New ObservableCollection(Of Customer)()
-			End Sub
-			Public Property Customers() As ObservableCollection(Of Customer)
-		End Class
-	```
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_7-vb' />
+
+
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_8-cs' />
+
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_8-vb' />
+
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Customers__ from the database: 
 
-	```C#
-		northwindEntity.Customers.BeginExecute(
-			(IAsyncResult result) => EntitiesLoaded<Customer>(result, this.Customers),
-			northwindEntity.Customers);
-	```
-	```VB.NET
-		northwindEntity.Customers.BeginExecute(Function(result As IAsyncResult) EntitiesLoaded(Of Customer)(result, Me.Customers), northwindEntity.Customers)
-	```
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_9-cs' />
 
-	```C#
-		foreach (Customer c in northwindEntity.Customers.Execute())
-		{
-			this.Customers.Add(c);
-		}
-	```
-	```VB.NET
-		For Each c As Customer In northwindEntity.Customers.Execute()
-			Me.Customers.Add(c)
-		Next c
-	```
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_9-vb' />
 
-	```C#
-		private static void EntitiesLoaded<T>(IAsyncResult result, Collection<T> entities)
-		{
-			DataServiceQuery<T> query = result.AsyncState as DataServiceQuery<T>;
-			foreach (T entity in query.EndExecute(result))
-			{
-				entities.Add(entity);
-			}
-		}
-	```
-	```VB.NET
-		Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
-			Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
-			For Each entity As T In query.EndExecute(result)
-				entities.Add(entity)
-			Next entity
-		End Sub
-	```
+
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_10-cs' />
+
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_10-vb' />
+
+
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_11-cs' />
+
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_11-vb' />
+
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
-	```XAML
-		<UserControl.Resources>
-			<my:NorthwindDataSource x:Key="DataSource"/>
-		</UserControl.Resources>
-	```
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_12-xaml' />
+
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
-	```XAML
-		<telerik:RadGridView ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
-	```
+	<snippet id='radgridview-populating-with-data-loading-data-from-adonet-services-block_13-xaml' />
+
 
 Run your demo, the result can be seen on the next picture: 
 

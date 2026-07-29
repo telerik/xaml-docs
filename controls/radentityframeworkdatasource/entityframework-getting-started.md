@@ -65,26 +65,8 @@ Now let's go to the client side.
 
 __Adding RadGridView and RadEntityFrameworkDataSource__
 
-```XAML
-	<Window x:Class="EntityFrameworkGettingStarted.MainWindow"
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-			xmlns:local="clr-namespace:EntityFrameworkGettingStarted"
-			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-			mc:Ignorable="d"
-			Title="MainWindow" Height="450" Width="800">
-		<Grid>
-			<telerik:RadEntityFrameworkDataSource Name="EntityFrameworkDataSource" QueryName="Customers">
-				<telerik:RadEntityFrameworkDataSource.DbContext>
-					<local:MyEntityModel/>
-				</telerik:RadEntityFrameworkDataSource.DbContext>
-			</telerik:RadEntityFrameworkDataSource>
-			<telerik:RadGridView ItemsSource="{Binding DataView, ElementName=EntityFrameworkDataSource}"/>
-		</Grid>
-	</Window>
-```
+<snippet id='radentityframeworkdatasource-entityframework-getting-started-adding_radgridview_and_radentityframeworkdatasource-xaml' />
+
 
 Several important things to notice:
 
@@ -101,16 +83,8 @@ Several important things to notice:
 The `RelatedObjects` property of the RadEntityFrameworkDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders" collection in case you want to get the related Orders for each Customer from the database.
 
 __Using the RelatedObjects__
-```XAML
-    <telerik:RadEntityFrameworkDataSource Name="EntityFrameworkDataSource" QueryName="Customers">
-        <telerik:RadEntityFrameworkDataSource.RelatedObjects>
-            <sys:String>Orders</sys:String>
-        </telerik:RadEntityFrameworkDataSource.RelatedObjects>
-        <telerik:RadEntityFrameworkDataSource.DbContext>
-			<local:MyEntityModel/>
-		</telerik:RadEntityFrameworkDataSource.DbContext>
-    </telerik:RadEntityFrameworkDataSource>
-```
+<snippet id='radentityframeworkdatasource-entityframework-getting-started-using_the_relatedobjects-xaml' />
+
 
 ## Telerik UI for WPF Learning Resources
 

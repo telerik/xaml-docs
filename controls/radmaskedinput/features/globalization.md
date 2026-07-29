@@ -18,20 +18,7 @@ The __RadMaskedInput__ controls provide full globalization support out-of-the-bo
 The next example declares a __RadMaskedCurrencyInput__ and a __RadMaskedDateTimeInput__ controls. The first one is used for entering Bulgarian currency - the culture is set to bg-BG. The second one is used for entering __DateTime__ data and also the culture is changed to de-DE.
 
 __Example 1: Setting the Culture property__
-```XAML
-	<Grid x:Name="LayoutRoot" Background="White">
-	    <StackPanel>
-	        <TextBlock Margin="5 0" Text="Bulgarian Currency" />
-	        <telerik:RadMaskedCurrencyInput Margin="0,5,0,10" 
-	                                        Culture="bg-BG"
-	                                        Mask="c4" />
-	        <TextBlock Margin="5 0" Text="German DateTime Format" />
-	        <telerik:RadMaskedDateTimeInput Margin="0,5,0,10" 
-	                                        Culture="de-DE"
-	                                        Mask="D" />
-	    </StackPanel>
-	</Grid>
-```
+<snippet id='radmaskedinput-features-globalization-block_1-xaml' />
 
 ![{{ site.framework_name }} RadMaskedInput Custom Currency and DateTime Cultures](images/radmaskedinput_features_globalization.png)
 

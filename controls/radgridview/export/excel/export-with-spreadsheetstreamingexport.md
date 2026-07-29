@@ -30,11 +30,8 @@ The __Export with SpreadsheetStreamingExport__ functionality uses additional lib
 In order to export RadGridView, you need to define an instance of the __GridViewSpreadStreamExport__ class. You must then pass the instance of the __RadGridView__ control that you want to be exported as a parameter. You can also specify the name of the sheet that will be exported as well as the ExportFormat - **XLSX** or **CSV**. 
 
 __Example 1: Exporting RadGridView with GridViewSpreadStreamExport__
-```C#
-	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
-    spreadStreamExport.SheetName = "Sheet1";
-    spreadStreamExport.ExportFormat = SpreadStreamExportFormat.Xlsx;
-```
+<snippet id='radgridview-export-excel-export-with-spreadsheetstreamingexport-example_1_exporting_radgridview_with_gridviewspreadstreamexport-cs' />
+
 
 ## RunExport
 
@@ -48,10 +45,8 @@ Once you've correctly initialized the GridViewSpreadStreamExport, you can call t
 As you can observe, you must either specify a file name or provide a stream for the GridViewSpreadStreamExport to work with and must create an instance of the **SpreadStreamExportRenderer** class which exposes the methods needed to export using RadSpreadStreamProcessing. Optionally, you can also pass in [GridViewSpreadStreamExportOptions](#gridviewspreadstreamexportoptions) to customize the export to your needs.
 
 __Example 1: Exporting RadGridView with GridViewSpreadStreamExport__
-```C#
-	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
-	spreadStreamExport.RunExport(dialog.FileName.ToString(), new SpreadStreamExportRenderer());
-```
+<snippet id='radgridview-export-excel-export-with-spreadsheetstreamingexport-example_1_exporting_radgridview_with_gridviewspreadstreamexport-cs' />
+
 
 When the exporting operation is completed, the __ExportCompleted__ event of __GridViewSpreadStreamExport__ is raised.
 
@@ -65,10 +60,8 @@ You can also export __RadGridView__ asynchronously by utilizing the __RunExportA
 - **RunExportAsync(Stream exportStream, SpreadStreamExportRenderer exportRenderer, GridViewSpreadStreamExportOptions options)**
 
 __Example 2: Exporting RadGridView Asynchronously__
-```C#
-	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
-	spreadStreamExport.RunExportAsync(dialog.FileName.ToString(), new SpreadStreamExportRenderer());
-```
+<snippet id='radgridview-export-excel-export-with-spreadsheetstreamingexport-example_2_exporting_radgridview_asynchronously-cs' />
+
 
 When the progress of the asynchronous export changes, the __AsyncExportProgressChanged__ event of __GridViewSpreadStreamExport__ is triggered. Finally, when the export operation is over, the __AsyncExportCompleted__ event is raised.
 
@@ -95,17 +88,8 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 
 __Example 3: Export RadGridView with headers, footers and default styles__
 
-```C#
-	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
-                               spreadStreamExport.RunExport(dialog.FileName.ToString(), 
-    							 							new SpreadStreamExportRenderer(), 
-    							 							new GridViewSpreadStreamExportOptions() 
-								 							{ 
-																ShowColumnHeaders = true, 
-																ShowColumnFooters = true, 
-																ExportDefaultStyles=true 
-								 							});
-```
+<snippet id='radgridview-export-excel-export-with-spreadsheetstreamingexport-example_3_export_radgridview_with_headers_footers_and_default_styles-cs' />
+
 
 #### __Figure 1: Exporting with ExportDefaultStyles set to True__
 ![Telerik UI for {{ site.framework_name }} RadGridView spreadsheet streaming export with default styles applied in the generated document](../images/exportdefaultstyles2.png)

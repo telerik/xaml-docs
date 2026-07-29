@@ -14,12 +14,4 @@ You can customize the appearance of the palettes using the __ItemsPanel__ proper
 
 
 
-```XAML
-	<telerik:RadColorPaletteView>
-	 <telerik:RadColorPaletteView.ItemsPanel>
-	  <ItemsPanelTemplate>
-	   <StackPanel Orientation="Horizontal" />
-	  </ItemsPanelTemplate>
-	 </telerik:RadColorPaletteView.ItemsPanel>
-	</telerik:RadColorPaletteView>
-```
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-appearance-block_1-xaml' />

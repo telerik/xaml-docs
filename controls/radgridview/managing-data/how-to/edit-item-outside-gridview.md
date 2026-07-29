@@ -14,32 +14,14 @@ When you [edit an item]({%slug gridview-managing-data-updating-entry%}) from the
 
 __Example 1: Replace an item in the collection bound to the RadGridView__
 
-```C#
-	var newClub = new Club("New Club");
-	
-	// In the context of this example this.Clubs is a collection of Club objects, which is bound to the ItemsSource of the RadGridView
-    	this.Clubs[0] = newClub;
-```
-```VB.NET
-	Dim newClub = New Club("New Club")
+<snippet id='radgridview-managing-data-how-to-edit-item-outside-gridview-example_1_replace_an_item_in_the_collection_bound_to_the_radgridview-cs' />
 
-	' In the context of this example this.Clubs is a collection of Club objects, which is bound to the ItemsSource of the RadGridView
-	Me.Clubs(0) = newClub
-```
+<snippet id='radgridview-managing-data-how-to-edit-item-outside-gridview-example_1_replace_an_item_in_the_collection_bound_to_the_radgridview-vb' />
+
 
 __Example 2: Utilize the EditItem and CommitEdit methods of the Items collection__
 
-```C#
-	Club selectedItem = this.gridView.SelectedItem as Club;
-	this.gridView.Items.EditItem(selectedItem);
-	
-	selectedItem.Name = "New Name";
-	this.gridView.Items.CommitEdit();
-```
-```VB.NET
-	Dim selectedItem As Club = TryCast(Me.gridView.SelectedItem, Club)
-	Me.gridView.Items.EditItem(selectedItem)
-	
-	selectedItem.Name = "New Name"
-	Me.gridView.Items.CommitEdit()
-```
+<snippet id='radgridview-managing-data-how-to-edit-item-outside-gridview-example_2_utilize_the_edititem_and_commitedit_methods_of_the_items_collection-cs' />
+
+<snippet id='radgridview-managing-data-how-to-edit-item-outside-gridview-example_2_utilize_the_edititem_and_commitedit_methods_of_the_items_collection-vb' />
+

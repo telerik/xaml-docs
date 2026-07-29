@@ -17,32 +17,7 @@ The following example demonstrates the use of the __InputGestureText__ property:
 
 
 
-```XAML
-	<telerik:RadMenu>
-	    <telerik:RadMenuItem Header="File" />
-	    <telerik:RadMenuItem Header="Edit">
-	        <telerik:RadMenuItem Header="Cut" Command="ApplicationCommands.Cut">
-	            <telerik:RadMenuItem.Icon>
-	                <Image Source="Images/cut.png" />
-	            </telerik:RadMenuItem.Icon>
-	        </telerik:RadMenuItem>
-	        <telerik:RadMenuItem Header="Copy" Command="ApplicationCommands.Copy">
-	            <telerik:RadMenuItem.Icon>
-	                <Image Source="Images/copy.png" />
-	            </telerik:RadMenuItem.Icon>
-	        </telerik:RadMenuItem>
-	        <telerik:RadMenuItem Header="Paste" Command="ApplicationCommands.Paste">
-	            <telerik:RadMenuItem.Icon>
-	                <Image Source="Images/paste.png" />
-	            </telerik:RadMenuItem.Icon>
-	        </telerik:RadMenuItem>
-	        <telerik:RadMenuSeparatorItem />
-	        <telerik:RadMenuItem Header="Select All" Command="ApplicationCommands.SelectAll" />
-	        <telerik:RadMenuSeparatorItem />
-	        <telerik:RadMenuItem Header="Custom Command" Command="{Binding MyCommand}" InputGestureText="Ctrl+P" />
-	    </telerik:RadMenuItem>
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-features-inputgesturetext-block_1-xaml' />
 
 ![Rad Menu-Features-Input Gesture Text-01](images/RadMenu_Features_InputGestureText_01.png)
 

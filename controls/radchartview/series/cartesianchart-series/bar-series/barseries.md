@@ -24,29 +24,8 @@ This series is visualized on the screen as separate rectangles representing each
 You can use the definition from __Example 1__ to display a BarSeries.
 
 __Example 1: Declaring a BarSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries>
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="2" />
-					<telerik:CategoricalDataPoint Category="February" Value="5" />
-					<telerik:CategoricalDataPoint Category="March" Value="3" />
-					<telerik:CategoricalDataPoint Category="April" Value="10" />
-					<telerik:CategoricalDataPoint Category="May" Value="9" />
-					<telerik:CategoricalDataPoint Category="June" Value="7" />
-					<telerik:CategoricalDataPoint Category="July" Value="1" />
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-barseries-example_1_declaring_a_barseries_in_xaml-xaml' />
+
 
 #### __Figure 1: BarSeries visual appearance__  
 ![radchartview-series-barseries](images/radchartview-series-barseries.png)
@@ -67,25 +46,12 @@ You can use the ValueBinding and CategoryBinding properties of the BarSeries to 
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public string Category { get; set; }
-        public double Value { get; set; }
-    }
+<snippet id='radchartview-series-cartesianchart-series-bar-series-barseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { Category = "January", Value = 2},
-		//....
-	};
-```	
 
 __Example 3: Specify a BarSeries in XAML__
-```XAML	
-	<telerik:BarSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value" />
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-barseries-example_3_specify_a_barseries_in_xaml-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -96,11 +62,8 @@ The series supports all standard features exposed by all other categorical serie
 * __DataPointLegendSettings__: The series supports two types of legend settings, the first one is the common SeriesLegendSettings which can be used with all types of series and it maps each legend item to a series. The series supports an additional DataPointLegendSettings which maps the legend items per data point.
 
 __Example 4: Specify LegendSettings of the BarSeries__
-```XAML	
-	<telerik:BarSeries.LegendSettings>
-		<telerik:DataPointLegendSettings/>
-	</telerik:BarSeries.LegendSettings>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-barseries-example_4_specify_legendsettings_of_the_barseries-xaml' />
+
 
 #### __Figure 2: Setting BarSeries legend settings__
 ![radchartview-series-barseries](images/radchartview-series-barseries-legendsettings.PNG)	
@@ -115,9 +78,8 @@ Setting the PaletteMode to __Series__ will apply different color for each series
 * __Hover interactivity__: RadCartesianChart exposes a property called HoverMode. This property can be used only by the bar and bubble series. If it is set to “FadeOtherSeries”, when you mouse over a data point, the bar from all other series will fade out. The default value of the property is “None”.
 
 __Example 8: Setting the HoverMode of the RadCartesianChart__
-```XAML	
-	<telerik:RadCartesianChart HoverMode="FadeOtherSeries">
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-barseries-example_8_setting_the_hovermode_of_the_radcartesianchart-xaml' />
+
 
 #### __Figure 4: Hover interactivity in BarSeries__ 
 ![radchartview-series-barseries](images/radchartview-series-barseries-hovermode.PNG)

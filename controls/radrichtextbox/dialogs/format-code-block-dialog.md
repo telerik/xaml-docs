@@ -25,13 +25,9 @@ The dialog can be opened from the __Code__ button in the __Insert__ tab of the [
 The dialog can be shown by executing the `ShowCodeFormattingDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
 __Executing the show dialog command__
-```C#
-	this.richTextBox.Commands.ShowCodeFormattingDialogCommand.Execute(null);
-```
+<snippet id='radrichtextbox-dialogs-format-code-block-dialog-block_1-cs' />
 
 Alternatively, call the `ShowCodeFormattingDialog` method of `RadRichTextBox`.
 
 __Using the show dialog method__
-```C#
-	this.richTextBox.ShowCodeFormattingDialog();
-```
+<snippet id='radrichtextbox-dialogs-format-code-block-dialog-block_2-cs' />

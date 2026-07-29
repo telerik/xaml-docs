@@ -30,14 +30,8 @@ The style in **Example 1** will style all the column headers in your application
 
 __Example 1: Styling all header cells of an application__
 
-```XAML
-	<Application.Resources>
-		<Style TargetType="telerik:GridViewHeaderCell">
-			<Setter Property="Foreground" Value="Red"/>
-			<Setter Property="HorizontalContentAlignment" Value="Center"/>
-		</Style>
-	</Application.Resources>
-```
+<snippet id='radgridview-styles-and-templates-styling-column-headers-example_1_styling_all_header_cells_of_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base your style on the __GridViewHeaderCellStyle__.
 
@@ -49,22 +43,8 @@ The style from **Example 2** will only be applied to the **Number** column as we
 
 __Example 2: Setting a column's HeaderCellStyle__
 
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <Style x:Key="CustomGridViewHeaderCellStyle" TargetType="telerik:GridViewHeaderCell" BasedOn="{StaticResource GridViewHeaderCellStyle}">
-                <Setter Property="Foreground" Value="Red"/>
-                <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            </Style>
-        </Grid.Resources>
-        <telerik:RadGridView ItemsSource="{Binding Players}" AutoGenerateColumns="False">
-            <telerik:RadGridView.Columns>
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" HeaderCellStyle="{StaticResource CustomGridViewHeaderCellStyle}" />
-            </telerik:RadGridView.Columns>
-        </telerik:RadGridView>
-    </Grid>
-```
+<snippet id='radgridview-styles-and-templates-styling-column-headers-example_2_setting_a_column_s_headercellstyle-xaml' />
+
 
 #### __Figure 2: RadGridView with styled header cell__
 

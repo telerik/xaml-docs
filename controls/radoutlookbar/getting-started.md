@@ -34,21 +34,7 @@ You can find the required assemblies for each control from the suite in the {% i
 ![RadOutlookBar Step 1](images/outlook_step1.png)
 
 __Example 1__
-```XAML
-	<telerik:RadOutlookBar>
-	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
-	        <TextBlock Text="Item 1 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 2" 
-	                               Icon="Letter.png"
-	                               IsSelected="True">
-	        <TextBlock Text="Item 2 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
-	        <TextBlock Text="Item 3 Content" />
-	    </telerik:RadOutlookBarItem>
-	</telerik:RadOutlookBar>
-```
+<snippet id='radoutlookbar-getting-started-block_1-xaml' />
 
 ![{{ site.framework_name }} RadOutlookBar with Icons for the Items](images/outlook_step3.png)
 
@@ -57,27 +43,7 @@ __Example 1__
 By default the first item will be selected. In order to select another item you can use the __IsSelected__ property.        
 
 __Example 2__
-```XAML
-	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid x:Name="LayoutRoot">
-	        <telerik:RadOutlookBar >
-	            <telerik:RadOutlookBarItem Header="Item 1">
-	                <TextBlock Text="Item 1 Content" />
-	            </telerik:RadOutlookBarItem>
-	            <telerik:RadOutlookBarItem Header="Item 2">
-	                <TextBlock Text="Item 2 Content" />
-	            </telerik:RadOutlookBarItem>
-	            <telerik:RadOutlookBarItem Header="Item 3">
-	                <TextBlock Text="Item 3 Content" />
-	            </telerik:RadOutlookBarItem>
-	        </telerik:RadOutlookBar>
-	    </Grid>
-	</UserControl>
-```
+<snippet id='radoutlookbar-getting-started-block_2-xaml' />
 
 ![RadOutlookBar Icons support](images/outlook_step2.png)
 
@@ -86,55 +52,18 @@ __Example 2__
 To handle the changes in the selection you can use the __SelectionChanged__ event of the __RadOutlookBar__:        
 
 __Example 3__
-```XAML
-	<telerik:RadOutlookBar x:Name="RadOutlookBar1" SelectionChanged="RadOutlookBar1_SelectionChanged">
-	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
-	        <TextBlock Text="Item 1 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 2" 
-	                               Icon="Letter.png"
-	                               IsSelected="True">
-	        <TextBlock Text="Item 2 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
-	        <TextBlock Text="Item 3 Content" />
-	    </telerik:RadOutlookBarItem>
-	</telerik:RadOutlookBar>
-```
+<snippet id='radoutlookbar-getting-started-block_3-xaml' />
 
 __Example 4__
-```C#
-	private void RadOutlookBar1_SelectionChanged(object sender, RoutedEventArgs e)
-	{
-		RadOutlookBarItem newSelectedItem = (sender as RadOutlookBar).SelectedItem as RadOutlookBarItem;
-	}
-```
-```VB.NET
-	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	    Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
-	End Sub
-```
+<snippet id='radoutlookbar-getting-started-block_4-cs' />
+<snippet id='radoutlookbar-getting-started-block_4-vb' />
 
 ## Limiting active items
 
 To limit the number of items that can be displayed in the active area you can use the __ActiveItemsMaxCount__ property:        
 
 __Example 5__
-```XAML
-	<telerik:RadOutlookBar ActiveItemsMaxCount="2">
-	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
-	        <TextBlock Text="Item 1 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 2" 
-	                               Icon="Letter.png"
-	                               IsSelected="True">
-	        <TextBlock Text="Item 2 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
-	        <TextBlock Text="Item 3 Content" />
-	    </telerik:RadOutlookBarItem>
-	</telerik:RadOutlookBar>
-```
+<snippet id='radoutlookbar-getting-started-block_5-xaml' />
 
 ![{{ site.framework_name }} RadOutlookBar Active Items Max Count](images/outlook_step4.png)
 
@@ -156,17 +85,7 @@ To change the theme, you can follow the steps below:
 __Example 6__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 6: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radoutlookbar-getting-started-block_6-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -180,7 +99,7 @@ __Figure 2__ shows a RadOutlookBar with the **Windows8** theme applied.
 
 * [Telerik UI for WPF OutlookBar Component](https://www.telerik.com/products/wpf/outlookbar.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -193,4 +112,3 @@ __Figure 2__ shows a RadOutlookBar with the **Windows8** theme applied.
  * [Resizing]({%slug radoutlookbar-resizing%})
  * [Selection]({%slug radoutlookbar-selection%})
  * [Events]({%slug radoutlookbar-events%})
-

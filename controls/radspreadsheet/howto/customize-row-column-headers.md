@@ -29,21 +29,7 @@ __Example 1__ shows a simple implementation for the converter class used for cre
 
 __Example 1: Create a custom name converter__
 
-```C#
-	public class CustomNameConverter : HeaderNameRenderingConverterBase
-	{
-		protected override string ConvertColumnIndexToNameOverride(HeaderNameRenderingConverterContext context, int columnIndex)
-		{
-			if (columnIndex == 0 &&
-				context.VisibleRange.FromIndex.RowIndex >= 1 && context.VisibleRange.FromIndex.RowIndex <= 5)
-			{
-				return "First Name";
-			}
-
-			return base.ConvertColumnIndexToNameOverride(context, columnIndex);
-		}
-	}
-```
+<snippet id='radspreadsheet-howto-customize-row-column-headers-block_1-cs' />
 
 
 
@@ -52,9 +38,7 @@ After implementing your custom name converter you need to instantiate it and ass
 
 __Example 2: Instantiate and assign a custom converter__
 
-```C#
-	this.radSpreadsheet.Workbook.Worksheets[0].HeaderNameRenderingConverter = new CustomNameConverter();
-```
+<snippet id='radspreadsheet-howto-customize-row-column-headers-block_2-cs' />
 
 >tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/WPF/CustomRowAndColumnHeadings).
 

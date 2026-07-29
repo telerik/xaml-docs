@@ -28,11 +28,8 @@ You have two options:
 
 __Example 1: Styling all header rows of an application__
 
-```XAML
-	<Style TargetType="telerik:GridViewHeaderRow">
-	    <Setter Property="Background" Value="Red"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-header-row-example_1_styling_all_header_rows_of_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewHeaderRowStyle__.
 
@@ -42,9 +39,8 @@ __RadGridView's header row__ can also be styled by creating an appropriate __Sty
 
 __Example 2: Setting RadGridView's HeaderRowStyle__
 
-```XAML
-	<telerik:RadGridView HeaderRowStyle="{StaticResource HeaderRowStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-header-row-example_2_setting_radgridview_s_headerrowstyle-xaml' />
+
 
 #### __Figure 1: RadGridView with styled header row__
 

@@ -80,9 +80,7 @@ Using Telerik’s rich text editor’s API is pretty straight forward. There is 
 
 
 
-```C#
-	public void InsertCaption(CaptionDefinition definition, string caption, bool includeLabel, bool insertBelow)
-```
+<snippet id='radrichtextbox-features-references-captions-for-tables-and-figures-block_1-cs' />
 
 
 
@@ -90,13 +88,7 @@ The __CaptionDefinition__ class contains viable information for the creation of 
 
 
 
-```C#
-	CaptionDefinition captionDefinition = new CaptionDefinition();
-	captionDefinition.Label = "testLabel";
-	captionDefinition.NumberingFormat = Documents.Model.Fields.NumberingFormat.Arabic;
-	captionDefinition.SeparatorType = Documents.Model.Fields.CaptionSeparatorType.Colon;
-	this.radRichTextBox1.InsertCaption(captionDefinition, "captionText", true, true);
-```
+<snippet id='radrichtextbox-features-references-captions-for-tables-and-figures-block_2-cs' />
 
 
 
@@ -104,10 +96,7 @@ The __RadDocument__ contains the two default __CaptionDefinitions__ by default. 
 
 
 
-```C#
-	this.radRichTextBox1.InsertCaption(this.editor.Document.CaptionDefinitions["Table"], "captionText", true, true);
-```
+<snippet id='radrichtextbox-features-references-captions-for-tables-and-figures-block_3-cs' />
 
 
 This code will insert a default caption with label __Table__.
-

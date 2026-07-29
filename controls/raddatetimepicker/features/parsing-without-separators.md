@@ -16,18 +16,15 @@ __RadDateTimePicker__ provides parsing logic which allows the end users to enter
 
 __Example 1: Setting the AllowParsingWithoutSeparator in xaml__
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker" AllowParsingWithoutSeparator="True" />
-```
+<snippet id='raddatetimepicker-features-parsing-without-separators-example_1_setting_the_allowparsingwithoutseparator_in_xaml-xaml' />
+
 
 __Example 2: Setting the AllowParsingWithoutSeparator in code__
 
-```C#
-	this.radDateTimePicker.AllowParsingWithoutSeparator = true;
-```
-```VB.NET
-	Me.radDateTimePicker.AllowParsingWithoutSeparator = True
-```
+<snippet id='raddatetimepicker-features-parsing-without-separators-example_2_setting_the_allowparsingwithoutseparator_in_code-cs' />
+
+<snippet id='raddatetimepicker-features-parsing-without-separators-example_2_setting_the_allowparsingwithoutseparator_in_code-vb' />
+
 
 __Figure 1__ shows how the entered text is handled in both cases. In the first case the text is parsed as a month and day while in the second case - as a year, since no separators are entered.
 

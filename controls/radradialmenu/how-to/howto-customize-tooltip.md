@@ -28,11 +28,7 @@ You can completely disable showing the ToolTip for the whole __RadRadialMenu__ b
 
 __Example 1: Disabling the ToolTip__
 
-```XAML
-	<telerik:RadRadialMenu ShowToolTip="False">
-	    <!--...-->
-	</telerik:RadRadialMenu>
-```
+<snippet id='radradialmenu-how-to-howto-customize-tooltip-block_1-xaml' />
 
 ## Customize the ToolTipContent
 
@@ -40,17 +36,7 @@ __ToolTipContent__ property of the __RadialMenuItem__ allows you to customize th
 
 __Example 2: Custom ToolTipContent__
 
-```XAML
-	<telerik:RadRadialMenu>
-	    <telerik:RadRadialMenuItem Header="Font 1">
-	        <telerik:RadRadialMenuItem.ToolTipContent>
-	            <TextBlock Text="Arial Narrow"
-	        FontFamily="Arial Narrow" />
-	        </telerik:RadRadialMenuItem.ToolTipContent>
-	    </telerik:RadRadialMenuItem>
-	    <!--...-->
-	</telerik:RadRadialMenu>
-```
+<snippet id='radradialmenu-how-to-howto-customize-tooltip-block_2-xaml' />
 
 Figure 1: Custom ToolTipContent
 ![Rad Radial Menu Customize Tool Tip 01](images/RadRadialMenu_Customize_ToolTip_01.png)
@@ -65,32 +51,7 @@ __Example 3__ shows a quick sample of a custom MenuToolTipStyle.
 
 __Example 3: Custom MenuToolTipStyle__
 
-```XAML
-	<Style TargetType="telerik:MenuToolTip" BasedOn="{StaticResource MenuToolTipStyle}">
-	    <Setter Property="Template">
-	        <Setter.Value>
-	            <ControlTemplate TargetType="telerik:MenuToolTip">
-	                <StackPanel Orientation="Horizontal" Background="White">
-	                    <Ellipse Width="4"
-	                Height="4"
-	                Fill="Blue"
-	                Margin="1" />
-	                    <TextBlock Text="{TemplateBinding Content}"
-	                VerticalAlignment="Center"
-	                HorizontalAlignment="Center"
-	                FontFamily="Segoe UI Semibold"
-	                Foreground="Blue"
-	                Margin="4,0,4,0" />
-	                    <Ellipse Width="4"
-	                Height="4"
-	                Fill="Blue"
-	                Margin="1" />
-	                </StackPanel>
-	            </ControlTemplate>
-	        </Setter.Value>
-	    </Setter>
-	</Style>
-```
+<snippet id='radradialmenu-how-to-howto-customize-tooltip-block_3-xaml' />
 
 Figure 2: Custom MenuToolTipStyle
 ![Rad Radial Menu Customize Tool Tip 02](images/RadRadialMenu_Customize_ToolTip_02.png)
@@ -101,20 +62,11 @@ You could change the default position of the __RadialMenu__ ToolTip through the 
 
 __Example 4: Subscribe to PreviewToolTipOpen event__
 
-```XAML
-	<telerik:RadRadialMenu PreviewToolTipOpen="RadRadialMenu_PreviewToolTipOpen">
-	    <!--...-->
-	</telerik:RadRadialMenu>
-```
+<snippet id='radradialmenu-how-to-howto-customize-tooltip-block_4-xaml' />
 
 __Example 5: Set the position inside the event handler__
 
-```C#
-	private void RadRadialMenu_PreviewToolTipOpen(object sender, MenuToolTipEventArgs e)
-	{
-	    e.Placement = System.Windows.Controls.Primitives.PlacementMode.Left;
-	}
-```
+<snippet id='radradialmenu-how-to-howto-customize-tooltip-block_5-cs' />
 
 Figure 3: ToolTip with Left position set
 ![Rad Radial Menu Customize Tool Tip 03](images/RadRadialMenu_Customize_ToolTip_03.png)

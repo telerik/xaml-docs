@@ -51,15 +51,5 @@ Here is a list of the most important properties and methods.
 
 __Example 1: Iterating over cells in all visible columns and accessing their values__
 
-```C#
-	var visibleColumns = RadGridView1.Columns.OfType<GridViewBoundColumnBase>()
-	                     .Where(c => c.IsVisible)
-	                     .OrderBy(c => c.DisplayIndex).ToList();
-	for (var i = 0; i < RadGridView1.Items.Count; i++)
-	{
-	    for (var j = 0; j < visibleColumns.Count; j++)
-	    {
-	        var value = visibleColumns[j].GetValueForItem(RadGridView1.Items[i]);
-	    }
-	}
-```
+<snippet id='radgridview-columns-columntypes-column-types-boundcolumnbase-example_1_iterating_over_cells_in_all_visible_columns_and_accessing_their_values-cs' />
+

@@ -31,9 +31,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 ## Defining the RadVirtualKeyboard
 
 __Defining RadVirtualKeyboard in XAML__
-```XAML
-	 <telerik:RadVirtualKeyboard />
-```
+<snippet id='radvirtualkeyboard-getting-started-block_1-xaml' />
 
 ![{{ site.framework_name }} RadVirtualKeyboard Default Layout](images/radvirtualkeyboard-overview-1.png)
 
@@ -44,7 +42,7 @@ There is no need to manually subscribe an input element to the keyboard control.
 
 * [Telerik UI for WPF VirtualKeyboard Component](https://www.telerik.com/products/wpf/virtual-keyboard.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -56,4 +54,3 @@ There is no need to manually subscribe an input element to the keyboard control.
 * [Visual Structure]({%slug radvirtualkeyboard-visual-structure%})
 * [Keys Layout]({%slug radvirtualkeyboard-keys-layout%})
 * [Customize Keys]({%slug radvirtualkeyboard-customize-keys%})
-

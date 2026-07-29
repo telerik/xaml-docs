@@ -36,29 +36,13 @@ The next code snippet shows how to apply an __AnimationGroup__ to both the __Sho
 
 __Applying AnimationGroup__
 
-```C#
-	AnimationGroup groupIn = new AnimationGroup();
-	groupIn.Children.Add(new FadeAnimation() { Direction = AnimationDirection.In });
-	groupIn.Children.Add(new ScaleAnimation() { Direction = AnimationDirection.In, MinScale = 0.9 });
-	AnimationGroup groupOut = new AnimationGroup();
-	groupOut.Children.Add(new FadeAnimation() { Direction = AnimationDirection.Out });
-	groupOut.Children.Add(new ScaleAnimation() { Direction = AnimationDirection.Out, MinScale = 0.9 });
-	this.AnimationGroupManager.ShowAnimation = groupIn;
-	this.AnimationGroupManager.HideAnimation = groupOut;
-```
+<snippet id='raddesktopalert-how-to-apply-multiple-animations-for-showing-and-hiding-raddesktopalert-applying_animationgroup-cs' />
+
 
 __Applying AnimationGroup__
 
-```VB
-	Dim groupIn As New AnimationGroup()
-	groupIn.Children.Add(New FadeAnimation() With {.Direction = AnimationDirection.[In]})
-	groupIn.Children.Add(New ScaleAnimation() With {.Direction = AnimationDirection.[In], .MinScale = 0.9})
-	Dim groupOut As New AnimationGroup()
-	groupOut.Children.Add(New FadeAnimation() With {.Direction = AnimationDirection.Out})
-	groupOut.Children.Add(New ScaleAnimation() With {.Direction = AnimationDirection.Out, .MinScale = 0.9})
-	Me.AnimationGroupManager.ShowAnimation = groupIn
-	Me.AnimationGroupManager.HideAnimation = groupOut
-```
+<snippet id='raddesktopalert-how-to-apply-multiple-animations-for-showing-and-hiding-raddesktopalert-applying_animationgroup-vb' />
+
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DesktopAlert/ShowingAndHidingUsingAnimationGroup).
 

@@ -27,17 +27,7 @@ The measures allows you to show the data performance on the bullet graph control
 	This value is presented by a bar that can be used to show additional information about the data.
 
 __Example 1: Setting measures__
-```XAML
-	<telerik:RadHorizontalBulletGraph FeaturedMeasure="40" 
-									  ComparativeMeasure="65"                                           
-									  ProjectedValue="60">
-		<telerik:RadHorizontalBulletGraph.QualitativeRanges>
-			<telerik:QualitativeRange Brush="#A8A8A8" Value="30" />
-			<telerik:QualitativeRange Brush="#C6C8C8" Value="70" />
-			<telerik:QualitativeRange Brush="#E8E8E8" Value="100"/>
-		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
-	</telerik:RadHorizontalBulletGraph>
-```
+<snippet id='radbulletgraph-features-radbulletgraph-measures-example_1_setting_measures-xaml' />
 
 #### Figure 1: RadBulletGraph
 ![radbulletgraph-features-measures-0.png](images/radbulletgraph-features-measures-0.png)
@@ -53,21 +43,7 @@ Each measure has a corresponding brush property that allows you to set its color
 Additionally, you can control the thickness of the ComparativeMeasure via the __ComparativeMeasureThickness__ property.
 
 __Example 2: Customizing the measure colors__
-```XAML
-	<telerik:RadHorizontalBulletGraph FeaturedMeasure="40" 
-									  ComparativeMeasure="65"                                           
-									  ProjectedValue="60"									  
-									  FeaturedMeasureBrush="#18A05E"
-									  ProjectedValueBrush="#DD5145"
-									  ComparativeMeasureBrush="#FFCE44"
-									  ComparativeMeasureThickness="5">
-		<telerik:RadHorizontalBulletGraph.QualitativeRanges>
-			<telerik:QualitativeRange Brush="#A8A8A8" Value="30" />
-			<telerik:QualitativeRange Brush="#C6C8C8" Value="70" />
-			<telerik:QualitativeRange Brush="#E8E8E8" Value="100"/>
-		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
-	</telerik:RadHorizontalBulletGraph>
-```
+<snippet id='radbulletgraph-features-radbulletgraph-measures-example_2_customizing_the_measure_colors-xaml' />
 
 #### Figure 2: Customized measure colors
 ![radbulletgraph-features-measures-1.png](images/radbulletgraph-features-measures-1.png)

@@ -19,15 +19,8 @@ The most basic card is the __CardMessage__. It can display data in a structured 
 * __Text__
 
 __Example 1: Defining an CardMessage__
-```C#
-CardMessage cardMEssage = new CardMessage(this.currentAuthor);
-cardMEssage.ActionResultsOrientation = Orientation.Vertical;
-cardMEssage.Title = "Peter Johnson";
-cardMEssage.SubTitle = "Senior Front-end Developer ";
-cardMEssage.Text = "Peter has an experience of 5 years as a front-end developer.";
 
-chat.AddMessage(cardMEssage);
-```
+<snippet id='radchat-features-messages-card-messages-cardmessage-example_1_defining_an_cardmessage-cs' />
 
 #### __Figure 3: Defining CardMessage__
 ![Defining ImageCard](images/RadChat_Messages_CardMessage_01.png)

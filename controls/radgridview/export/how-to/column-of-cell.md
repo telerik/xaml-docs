@@ -14,28 +14,9 @@ When a cell(header cell, cell, footer cell, group footer cells) is exported thro
 
 The following example illustrates the approach:
 __Example 3: Getting the Column of the Corresponding Cell__
-```C#
-	this.gridViewExport.ElementExportingToDocument += (s, e) =>
-	{
-	    if (e.Element == ExportElement.Cell)
-	    {
-	        var cellExportingArgs = e as GridViewCellExportingEventArgs;
-	        if (cellExportingArgs.Column == this.gridViewExport.Columns[2])
-	        {
-	            (cellExportingArgs.VisualParameters as GridViewDocumentVisualExportParameters).Style = cellStyle;
-	        }
-	    }
-	};
-```
+<snippet id='radgridview-export-how-to-column-of-cell-example_3_getting_the_column_of_the_corresponding_cell-cs' />
+
 
 #### [VB.NET] Example 3: Getting the Column of the Corresponding Cell
-```VB.NET
-	Me.gridViewExport.ElementExportingToDocument += Function(s, e) 
-	    If e.Element = ExportElement.Cell Then
-	        Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
-	            If cellExportingArgs.Column = Me.gridViewExport.Columns(2) Then
-	                TryCast(cellExportingArgs.VisualParameters, GridViewDocumentVisualExportParameters).Style = cellStyle
-	            End If
-	    End If
-	End Function
-```
+<snippet id='radgridview-export-how-to-column-of-cell-example_3_getting_the_column_of_the_corresponding_cell-vb' />
+

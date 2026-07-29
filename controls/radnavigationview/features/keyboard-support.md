@@ -43,42 +43,15 @@ In order to customize the behavior for a given shortcut or introduce custom beha
 
 __Example 1: Overriding the RadNavigationView behavior for the Escape key__
 
-```C#
-	public class CustomNavigationView : RadNavigationView
-    {
-        protected override bool HandleKeyDown(Key key)
-        {
-            if(key == Key.Escape)
-            {
-                return false;
-            }
-
-            return base.HandleKeyDown(key);
-        }
-    }
-```
-```VB.NET
-	Public Class CustomNavigationView
-	    Inherits RadNavigationView
-
-		Protected Overrides Function HandleKeyDown(ByVal key As Key) As Boolean
-			If key Is Key.Escape Then
-				Return False
-			End If
-
-			Return MyBase.HandleKeyDown(key)
-		End Function
-    End Class
-```
+<snippet id='radnavigationview-features-keyboard-support-block_1-cs' />
+<snippet id='radnavigationview-features-keyboard-support-block_1-vb' />
 
 ## Keyboard Navigation Selection
 
 By default, when the user is navigating through the RadNavigationViewItems with the keyboard, they are only highlighted, but not selected. However, you can change this behavior by setting the __CanKeyboardNavigationSelectItems__ property of the RadNavigationView to __True__. This way the RadNavigationViewItems will be selected when navigating through them.
 
 __Example 1: Setting the CanKeyboardNavigationSelectItems property__
-```XAML
-	 <telerik:RadNavigationView CanKeyboardNavigationSelectItems="True" />
-```
+<snippet id='radnavigationview-features-keyboard-support-block_2-xaml' />
 
 ## See Also
 

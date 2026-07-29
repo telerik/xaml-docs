@@ -26,18 +26,7 @@ Here is an example with a __RadToggleButtonControl__.
 
 #### [XAML] Example 1: Binding a command
 
-```XAML
-
-	<telerik:RadToggleButton x:Name="BoldButton"
-	                            Content="Bold"
-	                            DataContext="{Binding Commands, ElementName=radRichTextBox}"
-	                            Command="{Binding ToggleBoldCommand}" />
-	<telerik:RadRichTextBox x:Name="radRichTextBox"
-	                                    Height="500"
-	                                    Width="500">
-	    <telerik:RadDocument LayoutMode="Paged" />
-	</telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-features-commands-block_1-xaml' />
 
 
 Now when the button is clicked, it will toggle the boldness of the current selection. The thing it won't do is to respond to the current state of the selection. For example, if the context of the caret is a bold text, the button in the UI won't get automatically toggled. In order to implement this behavior, you have to handle the __ToggleStateChanged__ event of the __ToggleBoldCommand__ following an approach similar to the one shown in **Example 2**. 
@@ -45,33 +34,13 @@ Now when the button is clicked, it will toggle the boldness of the current selec
 
 #### [C#] Example 2: Update toggle button state using the ToggleStateChanged event of ToggleBoldCommand
 
-```C#
-
-	public CommandsSample()
-	{
-	    InitializeComponent();
-	    this.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += this.ToggleBoldCommand_ToggleStateChanged;
-	}
-	public void ToggleBoldCommand_ToggleStateChanged( object sender, StylePropertyChangedEventArgs<bool> e )
-	{
-	    this.BoldButton.IsChecked = e.NewValue;
-	}
-```
+<snippet id='radrichtextbox-features-commands-block_2-cs' />
 
 
 
 #### [VB.NET] Example 2: Update toggle button state using the ToggleStateChanged event of ToggleBoldCommand
 
-```VB.NET
-
-    Public Sub New()
-        InitializeComponent()
-        Me.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += Me.ToggleBoldCommand_ToggleStateChanged
-    End Sub
-    Public Sub ToggleBoldCommand_ToggleStateChanged(sender As Object, e As StylePropertyChangedEventArgs(Of Boolean))
-        Me.BoldButton.IsChecked = e.NewValue
-    End Sub
-```
+<snippet id='radrichtextbox-features-commands-block_3-vb' />
 
 
 
@@ -90,13 +59,7 @@ If you are building your UI manually, for example using a **RadRibbonView** cont
 
 #### [XAML] Example 3: Bind a command to a RadRibbonView control
 
-```XAML
-
-	<telerik:RadRibbonToggleButton x:Name="ItalicButton"
-	                                Content="Italic"
-	                                DataContext="{Binding Commands, ElementName=radRichTextBox}"
-	                                telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding ToggleItalicCommand}" />
-```
+<snippet id='radrichtextbox-features-commands-block_4-xaml' />
 
 
 
@@ -133,59 +96,31 @@ You can remove some of the bindings by using __RadRichTextBox.RegisteredApplicat
 
 #### [C#] Example 4: Remove ApplicationCommands bindings
 
-```C#
-
-    this.radRichTextBox.RegisteredApplicationCommands.Remove(ApplicationCommands.Save);
-```
+<snippet id='radrichtextbox-features-commands-block_5-cs' />
 
 #### [VB.NET] Example 4: Remove ApplicationCommands bindings
 
-```VB.NET
-
-     Me.radRichTextBox.RegisteredApplicationCommands.Remove(ApplicationCommands.Save)
-```
+<snippet id='radrichtextbox-features-commands-block_6-vb' />
 
 and re-add them (as long as they are among the default mappings list) at later time:
 
 #### [C#] Example 5: Add ApplicationCommands bindings
 
-```C#
-
-    this.radRichTextBox.RegisteredApplicationCommands.Add(ApplicationCommands.Save);
-```
+<snippet id='radrichtextbox-features-commands-block_7-cs' />
 
 #### [VB.NET] Example 5: Add ApplicationCommands bindings
 
-```VB.NET
-
-     Me.radRichTextBox.RegisteredApplicationCommands.Add(ApplicationCommands.Save)
-```
+<snippet id='radrichtextbox-features-commands-block_8-vb' />
 
 If you want to handle application commands on RadRichTextBox owner's level, you should suppress the default handling mechanism for the specified shortcut using __RadRichTextBox.PreviewEditorKeyDown__ event:
 
 #### [C#] Example 6: Suppress default action for application command
 
-```C#
-
-    this.radRichTextBox.PreviewEditorKeyDown += (sender, e) =>
-        {
-            if (Keyboard.IsKeyDown(Key.LeftCtrl) && e.Key == Key.S)
-            {
-                e.SuppressDefaultAction = true;
-            }
-        };
-```
+<snippet id='radrichtextbox-features-commands-block_9-cs' />
 
 #### [VB.NET] Example 6: Suppress default action for application command
 
-```VB.NET
-
-	Me.radRichTextBox.PreviewEditorKeyDown += Function(sender, e) Do
-		If Keyboard.IsKeyDown(Key.LeftCtrl) AndAlso e.Key = Key.S Then
-			e.SuppressDefaultAction = True
-		End If
-	End Function
-```
+<snippet id='radrichtextbox-features-commands-block_10-vb' />
 
 {% endif %}
 
@@ -195,21 +130,11 @@ If you want to handle application commands on RadRichTextBox owner's level, you 
 
 #### [C#] Example 7: Subscribing to the events
 
-```C#
-	
-	this.radRichTextBox.CommandExecuting += RadRichTextBox_CommandExecuting;
-	this.radRichTextBox.CommandExecuted += RadRichTextBox_CommandExecuted;
-	this.radRichTextBox.CommandError += RadRichTextBox_CommandError;
-```
+<snippet id='radrichtextbox-features-commands-block_11-cs' />
 
 #### [VB.NET] Example 7: Subscribing to the events
 
-```VB.NET
-	
-	AddHandler Me.radRichTextBox.CommandExecuting, AddressOf radRichTextBox_CommandExecuting
-	AddHandler Me.radRichTextBox.CommandExecuted, AddressOf RadRichTextBox_CommandExecuted
-	AddHandler Me.radRichTextBox.CommandError, AddressOf RadRichTextBox_CommandError
-```
+<snippet id='radrichtextbox-features-commands-block_12-vb' />
 
 
 >You can find a runnable [example demonstrating how to use the CommandExecuting and CommandExecuted events](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomizeCommands) to customize the behavior of a command in our [SDK repository](https://github.com/telerik/xaml-sdk) on GitHub. 
@@ -222,54 +147,21 @@ An example usage of this event is when you need to modify the content that is pa
 
 #### [C#] Example 8: Handling CommandExecuting
 
-```C#
-
-	void radRichTextBox_CommandExecuting(object sender, Telerik.Windows.Documents.RichTextBoxCommands.CommandExecutingEventArgs e)
-	{
-	    if (e.Command is PasteCommand)
-	    {
-	        // Process the text
-	    }
-	}
-```
+<snippet id='radrichtextbox-features-commands-block_13-cs' />
 
 #### [VB.NET] Example 8: Handling CommandExecuting
 
-```VB.NET
-
-	Private Sub radRichTextBox_CommandExecuting(sender As Object, e As Telerik.Windows.Documents.RichTextBoxCommands.CommandExecutingEventArgs)
-	    If (TypeOf (e.Command) Is PasteCommand) Then
-	        'Process the text
-	    End If
-	End Sub
-```
+<snippet id='radrichtextbox-features-commands-block_14-vb' />
 
 
 #### [C#] Example 9: Canceling CommandExecuting
 
-```C#
-
-	void radRichTextBox_CommandExecuting1(object sender, Telerik.Windows.Documents.RichTextBoxCommands.CommandExecutingEventArgs e)
-	{
-	    if (e.Command is PasteCommand)
-	    {
-	        e.Cancel = true;
-	    }
-	}
-```
+<snippet id='radrichtextbox-features-commands-block_15-cs' />
 
 
 #### [VB.NET] Example 9: Canceling CommandExecuting
 
-```VB.NET
-
-	Private Sub RadRichTextBox_CommandExecuting1(sender As Object, e As Telerik.Windows.Documents.RichTextBoxCommands.CommandExecutingEventArgs)
-	
-	    If (TypeOf (e.Command) Is PasteCommand) Then
-	        e.Cancel = True
-	    End If
-	End Sub
-```
+<snippet id='radrichtextbox-features-commands-block_16-vb' />
 
 
 You can combine the code from **Examples 8 and 9** so you can stop the default execution of a command and perform your own logic.
@@ -284,44 +176,12 @@ The **CommandExecuted** event fires after the execution of a command. You can us
 
 #### [C#] Example 10: Using CommandExecuted
 
-```C#
-
-	private void RadRichTextBox_CommandExecuted(object sender, CommandExecutedEventArgs e)
-	{
-	    if (e.Command is InsertPictureCommand)
-	    {
-	        // After inserting an image, ensure that its width is not more than 200px.
-	        double maxWidth = 200;
-	
-	        foreach (var image in this.radRichTextBox.Document.EnumerateChildrenOfType<ImageInline>())
-	        {
-	            double ratio = image.Height / image.Width;
-	            this.radRichTextBox.ChangeImageSize(image, new Size(maxWidth, maxWidth * ratio));
-	        }
-	    }
-	}
-```
+<snippet id='radrichtextbox-features-commands-block_17-cs' />
 
 
 #### [VB.NET] Example 10: Using CommandExecuted
 
-```VB.NET
-
-	Private Sub RadRichTextBox_CommandExecuted(sender As Object, e As CommandExecutedEventArgs)
-	
-	    If (TypeOf (e.Command) Is InsertPictureCommand) Then
-	
-	        'After inserting an image, ensure that its width Is Not more than 200px.
-	        Dim maxWidth As Double = 200
-	
-	        For Each image In Me.radRichTextBox.Document.EnumerateChildrenOfType(Of ImageInline)
-	
-	            Dim ratio = image.Height / image.Width
-	            Me.radRichTextBox.ChangeImageSize(image, New Size(maxWidth, maxWidth * ratio))
-	        Next
-	    End If
-	End Sub
-```
+<snippet id='radrichtextbox-features-commands-block_18-vb' />
 
 ### CommandError
 
@@ -330,25 +190,12 @@ This event fires when a command fails to execute its operation. It is useful to 
 
 #### [C#] Example 11: Using CommandError
 
-```C#
-
-	private void RadRichTextBox_CommandError(object sender, CommandErrorEventArgs e)
-	{
-	    // Log the error 
-	    e.Handled = true;
-	}
-```
+<snippet id='radrichtextbox-features-commands-block_19-cs' />
 
 
 #### [VB.NET] Example 11: Using CommandError
 
-```VB.NET
-
-	Private Sub RadRichTextBox_CommandError(sender As Object, e As CommandErrorEventArgs)
-	    'Log the error 
-	    e.Handled = True
-	End Sub
-```
+<snippet id='radrichtextbox-features-commands-block_20-vb' />
 
 
 ## See Also 

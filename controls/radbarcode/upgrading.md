@@ -19,68 +19,17 @@ This section contains an overview of how you can take advantage of the new barco
 __Example 1__ demonstrates how to upgrade the __RadBarcode128__ class.
 
 __Example 1: RadBarcode128 Upgrade__  
-```C#
-
-    <!-- old version -->
-	<telerik:RadBarcode128 Text="CODE 128" ShowChecksum="True" RestrictAspectRatio="False" />
-
-    <!-- new version -->
-    <telerik:RadBarcode Value="CODE 128">
-        <telerik:RadBarcode.Symbology>
-            <telerik:Code128 AutoChecksum="True" SizingMode="Stretch" />
-        </telerik:RadBarcode.Symbology>
-    </telerik:RadBarcode>
-```
+<snippet id='radbarcode-upgrading-block_1-cs' />
 
 __Example 2__ demonstrates how to upgrade the __RadBarcodeQR__ class.
 
 __Example 2: RadBarcodeQR Upgrade__  
-```C#
-
-    <!-- old version -->
-	<telerik:RadBarcodeQR ApplicationIndicator="App1"
-                                       ECI="None"
-                                       ErrorCorrectionLevel="M"
-                                       FNC1="FNC1FirstPosition"
-                                       Mode="Byte"
-                                       Version="11"
-                                       Text="www.telerik.com"/>
-
-    <!-- new version -->
-    <telerik:RadBarcode Value="www.telerik.com">
-        <telerik:RadBarcode.Symbology>
-            <telerik:QRCode ApplicationIndicator="App1"
-                                    ECIMode="None"
-                                    ErrorCorrectionLevel="L"
-                                    FNC1Mode="FirstPosition"
-                                    CodeMode="Byte"
-                                    Version="11"/>
-        </telerik:RadBarcode.Symbology>
-    </telerik:RadBarcode>
-```
+<snippet id='radbarcode-upgrading-block_2-cs' />
 
 __Example 3__ demonstrates how to upgrade the __RadBarcodePDF417__ class.
 
 __Example 3: RadBarcodePDF417 Upgrade__  
-```C#
-
-    <!-- old version -->
-	<telerik:RadBarcodePDF417 Columns="5"
-                                               Rows="3"
-                                               EncodingMode="Numeric"
-                                               ErrorCorrectionLevel="4"
-                                               Text="www.telerik.com"/>
-
-    <!-- new version -->
-    <telerik:RadBarcode Value="www.telerik.com">
-        <telerik:RadBarcode.Symbology>
-            <telerik:PDF417 Columns="5"
-                                        Rows="3"
-                                        EncodingMode="Numeric"
-                                        ErrorCorrectionLevel="4"/>
-        </telerik:RadBarcode.Symbology>
-    </telerik:RadBarcode>
-```
+<snippet id='radbarcode-upgrading-block_3-cs' />
 
 ## Newly Supported Formats
 

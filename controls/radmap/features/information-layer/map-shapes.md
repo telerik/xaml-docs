@@ -37,18 +37,7 @@ The __MapShape__ class gives you the ability to specify caption for your Shapes 
 The most important things when using the __MapLine__ object are the __Point1__ and __Point2__ properties, which are of type __Location__. They define the start and the end points of the line. Here is an example.
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	        Width="600"
-	        Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapLine Point1="42.6957539183824, 23.3327663758679"
-	                    Point2="42.1429369264591, 24.7498095849434"
-	                    Stroke="Red"
-	                    StrokeThickness="2" />
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-map-shapes-block_1-xaml' />
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Line](images/RadMap_Features_MapShapes_01.png)
 
@@ -73,22 +62,7 @@ Additionally you can use the following properties:
 Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	        Width="600"
-	        Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapRectangle Location="42.6957539183824, 23.3327663758679"
-	                        Width="20"
-	                        Height="20"
-	                        RadiusX="2"
-	                        RadiusY="2"
-	                        Fill="#7FFFFF00"
-	                        Stroke="Red"
-	                        StrokeThickness="2" />
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-map-shapes-block_2-xaml' />
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Rectangle](images/RadMap_Features_MapShapes_02.png)
 
@@ -109,20 +83,7 @@ To use the __MapEllipse__ in your __RadMap__ you have to set the following of it
 Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	        Width="600"
-	        Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapEllipse Location="42.6957539183824, 23.3327663758679"
-	                    Width="20"
-	                    Height="20"
-	                    Fill="#7FFFFF00"
-	                    Stroke="Red"
-	                    StrokeThickness="2" />
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-map-shapes-block_3-xaml' />
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Ellipse](images/RadMap_Features_MapShapes_03.png)
 
@@ -131,17 +92,7 @@ Here is an example:
 The only difference between the standard __Polyline__ and the __MapPolyline__ is that the __Points__ property of the __MapPolyline__ is a set of __Locations__. Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	        Width="600"
-	        Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapPolyline Points="42.6957539183824, 23.3327663758679 42.1429369264591, 24.7498095849434 42.5131732087098, 27.4611884843576 43.2073941930888, 27.9275176988258"
-	                        Stroke="Red"
-	                        StrokeThickness="2" />
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-map-shapes-block_4-xaml' />
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Polyline](images/RadMap_Features_MapShapes_04.png)
 
@@ -150,23 +101,7 @@ The only difference between the standard __Polyline__ and the __MapPolyline__ is
 The only difference between the standard __Polygon__ and the __MapPolygon__ is that the __Points__ property of the __MapPolygon__ is a set of __Locations__. Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap" Width="600" Height="480">
-		<telerik:InformationLayer>
-			<telerik:MapPolygon Points="56,-100 56,-108 48,-108 48,-100"
-								Fill="Green" Stroke="Red" StrokeThickness="4"
-								CaptionLocation="52,-104">
-				<telerik:MapPolygon.CaptionTemplate>
-					<DataTemplate>
-						<Grid Background="Yellow" telerik:MapLayer.HotSpot="0.5,0.5">
-							<TextBlock Text="My Custom Text" />
-						</Grid>
-					</DataTemplate>
-				</telerik:MapPolygon.CaptionTemplate>
-			</telerik:MapPolygon>
-		</telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-map-shapes-block_5-xaml' />
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Polygon](images/RadMap_Features_MapShapes_05.png)
 
@@ -175,40 +110,7 @@ The only difference between the standard __Polygon__ and the __MapPolygon__ is t
 Except the __MapPath__ class you also have an analog for each standard __Geometry__ or __Segment__ class. Here is an example of an __MapPath__ that uses __MapArcSegments.__
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	        Width="600"
-	        Height="480">
-	    <telerik:InformationLayer Name="InformationLayer">
-	        <telerik:MapPath Fill="#7FFFFF00"
-	                    Stroke="Red"
-	                    StrokeThickness="2">
-	            <telerik:MapPath.Data>
-	                <telerik:MapPathGeometry>
-	                    <telerik:MapPathFigure StartPoint="42.6957539183824, 23.3327663758679">
-	                        <telerik:MapArcSegment Point="42.1429369264591, 24.7498095849434"
-	                                        IsLargeArc="True"
-	                                        Size="1,1"
-	                                        SweepDirection="Counterclockwise" />
-	                        <telerik:MapArcSegment Point="42.5131732087098, 27.4611884843576"
-	                                        IsLargeArc="True"
-	                                        Size="1,1"
-	                                        SweepDirection="Counterclockwise" />
-	                        <telerik:MapArcSegment Point="43.2073941930888, 27.9275176988258"
-	                                        IsLargeArc="False"
-	                                        Size="1,1"
-	                                        SweepDirection="Counterclockwise" />
-	                        <telerik:MapArcSegment Point="42.6957539183824, 23.3327663758679"
-	                                        IsLargeArc="True"
-	                                        Size="1,1"
-	                                        SweepDirection="Counterclockwise" />
-	                    </telerik:MapPathFigure>
-	                </telerik:MapPathGeometry>
-	            </telerik:MapPath.Data>
-	        </telerik:MapPath>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-map-shapes-block_6-xaml' />
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Path](images/RadMap_Features_MapShapes_06.png)
 

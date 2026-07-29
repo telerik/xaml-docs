@@ -54,106 +54,19 @@ The __BingRestRouteRequest__ object provides __Options__ property of type __Bing
 	* __RouteSummariesOnly__: Minimizes __(tries to avoid)__ the use of toll roads in the route.
 
 __Example 1: Defining BingRestMapProvider XAML__
-```XAML	
-	<telerik:RadMap x:Name="myMap">
-		<telerik:RadMap.Provider>
-			<telerik:BingRestMapProvider ApplicationId="Bing_Key" 
-										 x:Name="restProvider"
-										 CalculateRouteCompleted="BingRestMapProvider_CalculateRouteCompleted"
-										 CalculateRouteError="BingRestMapProvider_CalculateRouteError" 
-										 Mode="Aerial"/>
-		</telerik:RadMap.Provider>		
-		<telerik:VisualizationLayer Name="routeLayer"
-									UseBitmapCache="False"/>
-		<telerik:VisualizationLayer Name="wayPointsLayer"/>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-routing-block_1-xaml' />
 
 __Example 2: Defining BingRestRouteRequest object__
-```C#	
-		private LocationCollection wayPoints = new LocationCollection();
-        public BingRestRouteRequest request { get; set; }
-        public MainWindow()
-        {
-            InitializeComponent();
-            this.wayPointsLayer.ItemsSource = this.wayPoints;
-            request = new BingRestRouteRequest();  
-            this.restProvider.CalculateRouteAsync(request);
-        }		
-		private void BingRestMapProvider_CalculateRouteCompleted(object sender, BingRestRoutingCompletedEventArgs e)
-        {     
-        }		
-        private void BingRestMapProvider_CalculateRouteError(object sender, BingRestCalculateRouteErrorEventArgs e)
-        {
-            MessageBox.Show(e.Error.ToString());
-        }
-```
-```VB.NET	
-	Private wayPoints As New LocationCollection()
-	Private request As BingRestRouteRequest
-	Public Sub New()
-		InitializeComponent()
-		Me.wayPointsLayer.ItemsSource = Me.wayPoints
-		request = New BingRestRouteRequest()
-		request.Options.RouteAttributes = BingRestRouteAttributes.RoutePath
-		Me.restProvider.CalculateRouteAsync(request)
-	End Sub
-
-	Private Sub BingRestMapProvider_CalculateRouteCompleted(sender As Object, e As BingRestRoutingCompletedEventArgs)
-	
-	End Sub
-	Private Sub BingRestMapProvider_CalculateRouteError(sender As Object, e As BingRestCalculateRouteErrorEventArgs)
-		MessageBox.Show(e.Error.ToString)
-	End Sub
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-routing-block_2-cs' />
+<snippet id='radmap-features-providers-bing-rest-map-provider-routing-block_2-vb' />
 	
 ## Executing Routing
 	
 In order to execute a routing action you have to call the __CalculateRouteAsync()__ method of the __BingRestMapProvider__ and pass a __BingRestRouteRequest__ object as its argument. The __BingRestRouteRequest__ should contain the points which should take part in the desired order. To pass the location points to the request argument just use its __Waypoints__ property.
 	
 __Example 4: Calling the CalculateRouteAsync() methods__
-```C#	
-	 private LocationCollection wayPoints = new LocationCollection();
-        public BingRestRouteRequest request { get; set; }
-        public MainWindow()
-        {
-            InitializeComponent();
-            this.wayPointsLayer.ItemsSource = this.wayPoints;
-            request = new BingRestRouteRequest();
-            wayPoints.Add(new Location(52.5629950395581, 13.359375));
-            wayPoints.Add(new Location(48.835797462431, 2.2412109375));            
-            request.Options.RouteAttributes = BingRestRouteAttributes.RoutePath;
-            foreach (var point in wayPoints)
-            {
-                request.Waypoints.Add(point.ToString());
-            }
-            this.restProvider.CalculateRouteAsync(request);
-        }
-```
-```VB.NET	
-	Private wayPoints As New LocationCollection()
-    Private request As BingRestRouteRequest
-    Public Sub New()
-        InitializeComponent()
-        Me.wayPointsLayer.ItemsSource = Me.wayPoints
-        request = New BingRestRouteRequest()
-        request.Options.RouteAttributes = BingRestRouteAttributes.RoutePath
-        wayPoints.Add(New Location(52.5629950395581, 13.359375))
-        wayPoints.Add(New Location(48.835797462431, 2.2412109375))
-        For Each point In wayPoints
-            request.Waypoints.Add(point.ToString)
-        Next
-        Me.restProvider.CalculateRouteAsync(request)
-    End Sub
-
-    Private Sub BingRestMapProvider_CalculateRouteCompleted(sender As Object, e As BingRestRoutingCompletedEventArgs)
-
-    End Sub
-
-    Private Sub BingRestMapProvider_CalculateRouteError(sender As Object, e As BingRestCalculateRouteErrorEventArgs)
-        MessageBox.Show(e.Error.ToString)
-    End Sub
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-routing-block_3-cs' />
+<snippet id='radmap-features-providers-bing-rest-map-provider-routing-block_3-vb' />
 
 ## Routing Result	
 	
@@ -162,71 +75,8 @@ The result from the routing services is held by the Route object inside the __Bi
 To get the result you have to access the Points collection of the __Telerik.Windows.Controls.DataVisualization.Map.BingRest.RoutePath__ object. In __Example 5__ the result is displayed by a PolylineData via the RadMap's visualization layer.	
 
 __Example 5: Handling the CalculateRouteCompleted event__
-```C#		
-	private void BingRestMapProvider_CalculateRouteCompleted(object sender, BingRestRoutingCompletedEventArgs e)
-	{          
-		Telerik.Windows.Controls.DataVisualization.Map.BingRest.Route route = e.Route;
-		if (route != null)
-		{
-			PolylineData routeLine = this.CreateNewPolyline(Colors.Blue, 5);
-
-			// Building the polyline representing the route.
-			foreach (double[] coordinatePair in route.RoutePath.Line.Coordinates)
-			{
-				Location point = new Location(coordinatePair[0], coordinatePair[1]);
-				routeLine.Points.Add(point);
-			}
-			this.routeLayer.Items.Add(routeLine);
-			// Bringing the route into view.
-			double[] bbox = e.Route.BoundingBox;
-			LocationRect rect = new LocationRect(new Location(bbox[2], bbox[1]), new Location(bbox[0], bbox[3]));
-			this.myMap.SetView(rect);
-		}
-	}
-	private PolylineData CreateNewPolyline(Color color, double thickness)
-	{
-		PolylineData routeLine = new PolylineData()
-		{
-			ShapeFill = new MapShapeFill()
-			{
-				Stroke = new SolidColorBrush(color),
-				StrokeThickness = thickness,
-				StrokeDashArray = this.request.Options.Mode == BingRestTravelMode.Walking ? new DoubleCollection() { 2, 1 } : new DoubleCollection(),
-			},
-			Points = new LocationCollection(),
-		};
-		return routeLine;
-	}	
-```
-```VB.NET	
-	Private Sub BingRestMapProvider_CalculateRouteCompleted(sender As Object, e As BingRestRoutingCompletedEventArgs)
-        Dim route As Telerik.Windows.Controls.DataVisualization.Map.BingRest.Route = e.Route
-        If route IsNot Nothing Then
-            Dim routeLine As PolylineData = Me.CreateNewPolyline(Colors.Blue, 5)
-            ' Building the polyline representing the route.'
-            For Each coordinatePair As Double() In route.RoutePath.Line.Coordinates
-                Dim point As New Location(coordinatePair(0), coordinatePair(1))
-                routeLine.Points.Add(point)
-            Next
-            Me.routeLayer.Items.Add(routeLine)
-            ' Bringing the route into view.'
-            Dim bbox As Double() = e.Route.BoundingBox
-            Dim rect As New LocationRect(New Location(bbox(2), bbox(1)), New Location(bbox(0), bbox(3)))
-            Me.myMap.SetView(rect)
-        End If
-    End Sub
-	Private Function CreateNewPolyline(color As Color, thickness As Double) As PolylineData
-        Dim routeLine As New PolylineData
-        routeLine.Points = New LocationCollection()
-
-        Dim shapeFill As New MapShapeFill
-        shapeFill.Stroke = New SolidColorBrush(color)
-        shapeFill.StrokeThickness = thickness
-        shapeFill.StrokeDashArray = If(Me.request.Options.Mode = BingRestTravelMode.Walking, New DoubleCollection() From {2, 1}, New DoubleCollection())
-        routeLine.ShapeFill = shapeFill
-        Return routeLine
-    End Function
-```	
+<snippet id='radmap-features-providers-bing-rest-map-provider-routing-block_4-cs' />
+<snippet id='radmap-features-providers-bing-rest-map-provider-routing-block_4-vb' />
 	
 ## See Also
  * [Providers Overview] ({%slug radmap-features-providers%})

@@ -23,50 +23,17 @@ The __CardDataFieldValidating__ and __CardDataFieldValidated__ events are raised
 __CardDataFieldValidating__ can be used to validate the associated value and determine the validation state of the data field.
 
 __Example 1: Validating a data field__
-```C#
-	private void RadCardView_CardDataFieldValidating(object sender, CardDataFieldValidatingEventArgs e)
-	{
-		if (e.DataField.DataMemberBinding.Path.Path == "Number")
-		{
-			var dataItem = (CardInfo)e.DataField.Item;
-			if (dataItem.Number < 0)
-			{
-				e.IsValid = false;
-			}
-		}
-	}
-```
+<snippet id='radcardview-features-validation-example_1_validating_a_data_field-cs' />
 
 ## Using ValidationException
 
 The validation can be implemented in the view model. If the updated value is invalid, a `ValidationException` can be thrown in the corresponding property setter. To enable the visual feedback in the UI, set the __ValidatesOnExceptions__ and __NotifyOnValidationError__ properties of the DataMemberBinding to __True__.
 
 __Example 2: Implementing validation logic in the view model__
-```C#
-	private int number;
-	public int Number
-	{
-		get { return number; }
-		set
-		{
-			if (value < 0)
-			{
-				throw new ValidationException("Positive number required.");
-			}
-			else
-			{
-				number = value;
-			}
-		}
-	}
-```
+<snippet id='radcardview-features-validation-example_2_implementing_validation_logic_in_the_view_model-cs' />
 
 __Example 3: Enabling visual feedback using the data binding properties__
-```XAML
-	<telerik:RadCardView.DataFieldDescriptors>              
-		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Number, Mode=TwoWay, ValidatesOnExceptions=True, NotifyOnValidationError=True}" />
-	</telerik:RadCardView.DataFieldDescriptors>
-```
+<snippet id='radcardview-features-validation-example_3_enabling_visual_feedback_using_the_data_binding_properties-xaml' />
 
 #### Figure 1: Data validation visual feedback
 ![{{ site.framework_name }} RadCardView Data validation visual feedback](images/radcardview-features-validation-0.png)
@@ -76,23 +43,10 @@ __Example 3: Enabling visual feedback using the data binding properties__
 The data binding validation can be enabled also by using the data annotation attributes.
 
 __Example 4: Using data annotations in the view model__
-```C#
-	private int number;
-	
-	[Range(0, int.MaxValue, ErrorMessage = "Positive number required.")]
-	public int Number
-	{
-		get { return number; }
-		set { number = value; } }
-	}
-```
+<snippet id='radcardview-features-validation-example_4_using_data_annotations_in_the_view_model-cs' />
 
 __Example 5: Data binding the view model property__
-```XAML
-	<telerik:RadCardView.DataFieldDescriptors>              
-		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Number, Mode=TwoWay}" />
-	</telerik:RadCardView.DataFieldDescriptors>
-```
+<snippet id='radcardview-features-validation-example_5_data_binding_the_view_model_property-xaml' />
 
 In order to see the error visual when using data annotations, press the __Enter key__. This will add the error in the list at the bottom of the card.
 

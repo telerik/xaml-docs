@@ -49,149 +49,21 @@ We will specify the following classes, which are going to be used to the RadTree
 
 	__Example 1: Creating ViewModels__
 
-	```C#
-		public class MyItem
-		{
-			public string Title { get; set; }
-			public MyItem()
-			{
-				SubItems = new ObservableCollection<MyItem>();
-			}
-			public ObservableCollection<MyItem> SubItems { get; set; }
-		}
-		
-		public class MyViewModel : ViewModelBase
-		{
-			public ObservableCollection<MyItem> Data { get; set; }
-			public MyViewModel()
-			{
-				Data = new ObservableCollection<MyItem>();
-				GetData();
-			}
-
-			private void GetData()
-			{
-				foreach (var num in Enumerable.Range(1, 5))
-				{
-					var item = new MyItem();
-					item.Title = string.Format("{0} {1}", "Item", num);
-					for (int i = 0; i < 5; i++)
-					{
-						var child = new MyItem();
-						child.Title = string.Format("{0} {1}'s {2}", "Item", num, i);
-						item.SubItems.Add(child);
-						for (int j = 0; j < 3; j++)
-						{
-							var grandChild = new MyItem();
-							grandChild.Title = string.Format("{0} {1} : {2}'s {3}", "Item", num, i, j);
-							child.SubItems.Add(grandChild);
-						}
-					}
-					Data.Add(item);
-				}
-			}
-		}
-	```
-	```VB.NET
-		Public Class MyItem
-			Public Property Title As String
-
-			Public Sub New()
-				SubItems = New ObservableCollection(Of MyItem)()
-			End Sub
-
-			Public Property SubItems As ObservableCollection(Of MyItem)
-		End Class
-
-		Public Class MyViewModel
-			Inherits ViewModelBase
-
-			Public Property Data As ObservableCollection(Of MyItem)
-
-			Public Sub New()
-				Data = New ObservableCollection(Of MyItem)()
-				GetData()
-			End Sub
-
-			Private Sub GetData()
-				For Each num In Enumerable.Range(1, 5)
-					Dim item = New MyItem()
-					item.Title = String.Format("{0} {1}", "Item", num)
-
-					For i As Integer = 0 To 5 - 1
-						Dim child = New MyItem()
-						child.Title = String.Format("{0} {1}'s {2}", "Item", num, i)
-						item.SubItems.Add(child)
-
-						For j As Integer = 0 To 3 - 1
-							Dim grandChild = New MyItem()
-							grandChild.Title = String.Format("{0} {1} : {2}'s {3}", "Item", num, i, j)
-							child.SubItems.Add(grandChild)
-						Next
-					Next
-
-					Data.Add(item)
-				Next
-			End Sub
-		End Class	
-	```
+	<snippet id='radtreeview-populating-with-data-hierarchical-data-templates-block_1-cs' />
+	<snippet id='radtreeview-populating-with-data-hierarchical-data-templates-block_2-vb' />
 
 
 	Now consider both of the background notes at the beginning of the topic and take a look at the following code snippet. It declares a __HierarchicalDataTemplate__ and uses the __ItemContainerStyle__ property of both the __RadTreeView__ and the __HierarchicalDataTemplate__.
 	
 	__Example 2: Defining RadTreeView in XAML__
 
-	```XAML
-		<Window.Resources>
-		
-			<Style TargetType="telerik:RadTreeViewItem" x:Key="redStyle">
-				<Setter Property="Background" Value="Red" />
-				<Setter Property="ItemContainerStyle">
-					<Setter.Value>
-						<Style TargetType="telerik:RadTreeViewItem">
-							<Setter Property="Background" Value="Orange" />
-						</Style>
-					</Setter.Value>
-				</Setter>
-			</Style>
-		
-			<Style TargetType="telerik:RadTreeViewItem" x:Key="greenStyle">
-				<Setter Property="Background" Value="Green" />
-			</Style>
-		
-		</Window.Resources>
-		<Grid x:Name="LayoutRoot" Background="White">
-		
-			<telerik:RadTreeView  Margin="8" ItemsSource="{Binding Data}" ItemContainerStyle="{StaticResource redStyle}">
-				<telerik:RadTreeView.ItemTemplate>
-		
-					<HierarchicalDataTemplate ItemsSource="{Binding SubItems}" ItemContainerStyle="{StaticResource greenStyle}">
-						<TextBlock Text="{Binding Title}" />
-					</HierarchicalDataTemplate>
-		
-				</telerik:RadTreeView.ItemTemplate>
-			</telerik:RadTreeView>
-		
-		</Grid>
-	```
+	<snippet id='radtreeview-populating-with-data-hierarchical-data-templates-block_3-xaml' />
 
 And finally, we need to set the DataContext of the MainWindow:
 
 __Example 3: Setting DataContext__
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.DataContext = new MyViewModel();
-	}
-```
-```VB.NET
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.DataContext = new MyViewModel();
-	}
-```
+<snippet id='radtreeview-populating-with-data-hierarchical-data-templates-block_4-cs' />
+<snippet id='radtreeview-populating-with-data-hierarchical-data-templates-block_5-vb' />
 
 Here is the final result: 
 ![{{ site.framework_name }} RadTreeView Custom HierarchicalDataTemplate and ItemContainerStyle](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)

@@ -18,21 +18,13 @@ The SelectedItem property is used for getting or setting the currently selected 
 * When the __RadNavigationView__ is populated with static data (declared in XAML), the SelectedItem property is of type RadNavigationViewItem.
 
 	__Example 1: Getting the SelectedItem of type RadNavigationViewItem__  
-	```C#
-		var selectedItem = this.navigationView.SelectedItem as RadNavigationViewItem;
-	```
-	```VB.NET
-		Dim selectedItem = TryCast(Me.navigationView.SelectedItem, RadNavigationViewItem)
-	```
+	<snippet id='radnavigationview-features-selection-block_1-cs' />
+	<snippet id='radnavigationview-features-selection-block_1-vb' />
 
 * When your __RadNavigationView__ is [data bound to a collection of custom objects]({%slug radnavigationview-populating-with-data-databinding%}), the SelectedItem is of the type of the custom object.     	
 	__Example 2: Getting the SelectedItem of type custom object__  
-	```C#
-		var navigationModel = this.navigationView.SelectedItem as NavigationItemModel;
-	```
-	```VB.NET
-		Dim navigationModel = TryCast(Me.navigationView.SelectedItem, NavigationItemModel)
-	```
+	<snippet id='radnavigationview-features-selection-block_2-cs' />
+	<snippet id='radnavigationview-features-selection-block_2-vb' />
 
 ## Using SelectedValue and SelectedValuePath
 
@@ -50,63 +42,12 @@ Let's assume that you have a business object named NavigationItemModel with one 
 
 __Example 3: Business object and viewmodel__
 
-```C#
-	public class NavigationItemModel
-    {
-        public string Title { get; set; }
-    }
-
-    public class MainViewModel
-    {
-        public ObservableCollection<NavigationItemModel> Items { get; set; }
-
-        public MainViewModel()
-        {
-            this.Items = new ObservableCollection<NavigationItemModel>();
-
-            for (int i = 1; i <= 3; i++)
-            {
-                this.Items.Add(new NavigationItemModel() { Title = "Item " + i });
-            }
-        }
-    }
-```
-```VB.NET
-	Public Class NavigationItemModel
-		Public Property Title() As String
-    End Class
-
-	Public Class MainViewModel
-		Public Property Items() As ObservableCollection(Of NavigationItemModel)
-
-		Public Sub New()
-			Me.Items = New ObservableCollection(Of NavigationItemModel)()
-
-			For i As Integer = 1 To 3
-				Me.Items.Add(New NavigationItemModel() With {.Title = "Item " & i})
-			Next i
-		End Sub
-	End Class
-```
+<snippet id='radnavigationview-features-selection-block_3-cs' />
+<snippet id='radnavigationview-features-selection-block_3-vb' />
 
 __Example 4: Initializing of RadNavigationView__
 
-```XAML
-	<Window.Resources>
-        <local:MainViewModel x:Key="ViewModel" />
-
-        <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so:
-        <Style TargetType="telerik:RadNavigationViewItem" BasedOn="{StaticResource RadNavigationViewItemStyle}">-->
-        
-        <Style TargetType="telerik:RadNavigationViewItem" >
-            <Setter Property="Content" Value="{Binding Title}" />
-        </Style>
-    </Window.Resources>
-
-    <Grid>
-        <telerik:RadNavigationView DataContext="{StaticResource ViewModel}" ItemsSource="{Binding Items}" PaneHeader="Header" SelectedValuePath="Title" />
-    </Grid>
-```
+<snippet id='radnavigationview-features-selection-block_4-xaml' />
 
 #### __Figure 1: Result from Example 4 in the Office2016 theme__
 ![RadNavigationView populated with items](images/NavigationView_Selection.png)
@@ -121,9 +62,7 @@ Using the __SelectedIndex__ property you can get or set the index of the selecte
 
 __Example 5: Setting SelectedIndex__
 
-```XAML
-	<telerik:RadNavigationView SelectedIndex="3" />
-```
+<snippet id='radnavigationview-features-selection-block_5-xaml' />
 
 SelectedIndex is supported for the root level items only. Selecting a child item from the [hierarchy]({%slug radnavigationview-features-hierarchy%}) will set the property to -1.
 
@@ -133,13 +72,7 @@ The __RadNavigationViewItem__ exposes two additional properties that help for wo
 
 __Example 6: Setting the IsSelectable property__
 
-```XAML
-    <telerik:RadNavigationView x:Name="navigationView" PaneHeader="Header">
-        <telerik:RadNavigationView.Items>
-            <telerik:RadNavigationViewItem IsSelectable="False" Content="Bookmarks" />
-        </telerik:RadNavigationView.Items>
-    </telerik:RadNavigationView>
-```
+<snippet id='radnavigationview-features-selection-block_6-xaml' />
 
 >tip The __IsSelected__ and __IsSelectable__ properties can also be bound to properties in your model through a style targetting __RadNavigationViewItem__.
 

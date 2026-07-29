@@ -19,14 +19,8 @@ Through the new boolean `ShowSearchPanel` property of the control, the user can 
 >important The default searching behavior has two ways of setting the operator of the filtering criteria, depending on the value type of the property over which the search is performed. For a `string` and `Enum` type the operator is set to `Contains`. For all other types the operator is set to `IsEqualTo`.
 
 __Showing the Search Panel__
-```XAML
-	<telerik:RadGridView x:Name="orderItemsDataGrid"
-					     ItemsSource="{Binding Orders}"     
-			     		 ShowSearchPanel="True"
-                    	 Margin="5" 
-			     		 AutoGenerateColumns="False" 
-			     		 ColumnWidth="*"/>
-```
+<snippet id='radgridview-features-search-as-you-type-showing_the_search_panel-xaml' />
+
 
 __Showing the Search Panel__
 
@@ -39,31 +33,22 @@ __Showing the Search Panel__
 You can control whether the users can use the search panel through the `CanUserSearch` boolean property of RadGridView. Its default value is `true`. Setting it to `false` would permanently disable the functionality, meaning that the __Ctrl__+__F__ combination would not show the panel as well.   
 
 __Disabling the Search Panel__
-```XAML
-	<telerik:RadGridView x:Name="orderItemsDataGrid"
-						 ItemsSource="{Binding Orders}"     
-						 CanUserSearch="False"
-						 Margin="5" 
-						 AutoGenerateColumns="False" 
-						 ColumnWidth="*"/>
-```
+<snippet id='radgridview-features-search-as-you-type-disabling_the_search_panel-xaml' />
+
 
 ## Search Panel's Close Button's Visibility
 
 The visibility of the search panel's close button can be controlled via the `SearchPanelCloseButtonVisibility` property. The default value is `Visible` meaning that the search panel can originally be closed via this button.
 
 __Collapse the close button in XAML__
-```XAML
-	<telerik:RadGridView SearchPanelCloseButtonVisibility="Collapsed" />
-```
+<snippet id='radgridview-features-search-as-you-type-collapse_the_close_button_in_xaml-xaml' />
+
 
 __Collapse the close button in code-behind__
-```C#
-    this.GridView.SearchPanelCloseButtonVisibility = Visibility.Collapsed;
-```
-```VB.NET
-    Me.GridView.SearchPanelCloseButtonVisibility = Visibility.Collapsed
-```
+<snippet id='radgridview-features-search-as-you-type-collapse_the_close_button_in_code_behind-cs' />
+
+<snippet id='radgridview-features-search-as-you-type-collapse_the_close_button_in_code_behind-vb' />
+
 
 __Collapsed Close Button__
 
@@ -76,13 +61,8 @@ The deferred searching functionality can be controlled through the `IsSearchingD
 When `IsSearchingDeferred` is set to `true`, the filtering will be executed when the value is being committed on __lost focus__ or when the __Enter__ or __Tab__ key is pressed. 
 
 __Setting the IsSearchingDeferred to True__
-```XAML
-	<telerik:RadGridView x:Name="orderItemsDataGrid" 
-						 ItemsSource="{Binding Orders}"
-			             IsSearchingDeferred="True"
-                     	 Margin="5" 
-                     	 AutoGenerateColumns="False"/>
-```
+<snippet id='radgridview-features-search-as-you-type-setting_the_issearchingdeferred_to_true-xaml' />
+
 
 ## Commands
 
@@ -93,20 +73,8 @@ Three new commands have been exposed for the text search functionality, via the 
 - `CloseSearchPanel`&mdash;Executed in order to hide the search panel.
 
 __Executing the search commands in code__
-```C#
-	// search by text
-	string searchText = "search text";
- 	var searchByTextCommand = (RoutedUICommand)RadGridViewCommands.SearchByText;
- 	searchByTextCommand.Execute(searchText, this.gridView);
+<snippet id='radgridview-features-search-as-you-type-executing_the_search_commands_in_code-cs' />
 
-	// open the search panel
-   	var searchCommand = (RoutedUICommand) RadGridViewCommands.Search;
- 	searchCommand.Execute(null, this.gridView);
-
-  	// close the search panel
-   	var closeSearchPanelCommand = (RoutedUICommand)RadGridViewCommands.CloseSearchPanel;
- 	closeSearchPanelCommand.Execute(null, this.gridView);
-```
 
 ## Events
 
@@ -117,39 +85,18 @@ The `SearchPanelVisibilityChanged` event will be raised on changing  the `ShowSe
 A common scenario where you can use this event is when you want to clear the search criteria on collapsing the panel:
 
 __Clearing search criteria on SearchPanelVisibilityChanged__
-```C#
-    private void RadGridView_SearchPanelVisibilityChanged(object sender, VisibilityChangedEventArgs e)
-    {
-        if (e.NewVisibility == Visibility.Collapsed)
-        {
-            var clearSearchValue = GridViewSearchPanelCommands.ClearSearchValue as RoutedUICommand;
-            clearSearchValue.Execute(null, this.RadGridView.ChildrenOfType<GridViewSearchPanel>().FirstOrDefault());
-        }
-    }
-```
-```VB.NET
-	Private Sub RadGridView_SearchPanelVisibilityChanged(sender As Object, e As VisibilityChangedEventArgs)
-		If e.NewVisibility = Visibility.Collapsed Then
-			Dim clearSearchValue = TryCast(GridViewSearchPanelCommands.ClearSearchValue, RoutedUICommand)
-			clearSearchValue.Execute(Nothing, Me.RadGridView.ChildrenOfType(Of GridViewSearchPanel)().FirstOrDefault())
-		End If
-	End Sub
-```
+<snippet id='radgridview-features-search-as-you-type-clearing_search_criteria_on_searchpanelvisibilitychanged-cs' />
+
+<snippet id='radgridview-features-search-as-you-type-clearing_search_criteria_on_searchpanelvisibilitychanged-vb' />
+
 
 The `Searching` event will be raised when the grid data is about to be searched. It's arguments are of type `GridViewSearchingEventsArgs` and contain the value of the text which was entered in the search panel `TextBox` - `SearchText`. They also contain a boolean property which indicates whether the event should be canceled - `Cancel`.
 
 A common scenario for the use of this event is when you want to cancel the search based on a condition:
 
 __Stop the searching based on a condition__
-```C#
-    private void RadGridView_Searching(object sender, Telerik.Windows.Controls.GridView.GridViewSearchingEventArgs e)
-    {
-        if (e.SearchText.ToString() == "SomeText")
-        {
-            e.Cancel = true;
-        }
-    }
-```
+<snippet id='radgridview-features-search-as-you-type-stop_the_searching_based_on_a_condition-cs' />
+
 
 The `Searched` event will be raised when the grid data has been searched. It's arguments are of type `GridViewSearchedEventArgs` and contain the value of the text which was entered in the search panel `TextBox` - `SearchText`.
 
@@ -204,23 +151,16 @@ RadGridView provides full support for searching over dynamic data. This includes
 RadGridView's text search mechanism supports searching in hidden columns. This behavior can be enabled by setting the `CanUserSearchInHiddenColumns` property of the RadGridView control to `true`.
 
 __Setting CanUserSearchInHiddenColumns property in XAML__
-```XAML
-	<telerik:RadGridView CanUserSearchInHiddenColumns="True"/>
-```
+<snippet id='radgridview-features-search-as-you-type-setting_canusersearchinhiddencolumns_property_in_xaml-xaml' />
+
 
 ## Search With Accent Insensitive
 
 The `SearchStateManager` property of RadGridView exposes the `IsSearchWithAccentEnabled` property, which allows you to search with accent insensitive. This behavior is turned off by default. To enable this functionality you can subscribe to the Loaded event of the RadGridView. In the event handler, you can set this property to `true`. 
 
 __Setting IsSearchWithAccentEnabled property__
-```C#
-	private void GridView_Loaded(object sender, RoutedEventArgs e)
-	{
-		var radGridView = (RadGridView)sender;
+<snippet id='radgridview-features-search-as-you-type-setting_issearchwithaccentenabled_property-cs' />
 
-		radGridView.SearchStateManager.IsSearchWithAccentEnabled = true;
-	}
-```
 
 __Using Search With Accent Insensitive__
 
@@ -231,18 +171,8 @@ __Using Search With Accent Insensitive__
 The `GridViewBoundColumnBase` provides an option to exclude it from the search mechanism. To achieve this, you can use its `IsSearchable` property. The default value of this property is __True__, which means that the column will be included in the search operation. To exclude a column from this operation, set the IsSearchable property to __False__.
 
 __Excluding a column from the search mechanism__
-```XAML
-	<telerik:RadGridView ItemsSource="{Binding Clubs}" 
-	                     ShowSearchPanel="True" 
-	                     AutoGenerateColumns="False" 
-	                     GroupRenderMode="Flat">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"  
-	                                    IsSearchable="False"/>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding City}"/>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-features-search-as-you-type-excluding_a_column_from_the_search_mechanism-xaml' />
+
 
 __RadGridView with an excluded column from the search mechanism__
 
@@ -253,9 +183,8 @@ __RadGridView with an excluded column from the search mechanism__
 The RadGridView control exposes the `IsSearchFilteringEnabled` option. It will allow you to control whether the data will be filtered when a search operation is performed. The default value of the IsSeachFilteringEnabled property is set to __True__, which will filter the data. When the data filtering is disabled, search operations will only highlight the cells that match the search criteria.	
 
 __Disabling the data filtering when performing search__
-```C#
-	<telerik:RadGridView IsSearchFilteringEnabled="False"/>
-```
+<snippet id='radgridview-features-search-as-you-type-disabling_the_data_filtering_when_performing_search-cs' />
+
 
 ## See Also
 * [Basic Filtering]({%slug gridview-filtering-basic%})

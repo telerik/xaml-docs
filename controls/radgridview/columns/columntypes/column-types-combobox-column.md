@@ -33,50 +33,30 @@ __Sample data structure of RadGridView:__
 ![Telerik UI for WPF RadGridView sample data structure for a GridViewComboBoxColumn ItemsSource](images/RadGridView_ColumnTypes_1.png)
 
 __Define GridViewComboBoxColumn in XAML__
-```XAML
-	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewComboBoxColumn />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-define_gridviewcomboboxcolumn_in_xaml-xaml' />
+
 
 __Set the DataMemberBinding property in XAML__
-```XAML
-	<telerik:RadGridView AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}" UniqueName="Country" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-set_the_datamemberbinding_property_in_xaml-xaml' />
+
 
 __Set the DataMemberBinding property in code__
-```C#
-	column.DataMemberBinding = new Binding("CountryId");
-	column.UniqueName = "Country";
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-set_the_datamemberbinding_property_in_code-cs' />
+
 
 __Setting the ItemsSource property in code__
-```C#
-	((GridViewComboBoxColumn)this.radGridView.Columns["Country"]).ItemsSource = RadGridViewSampleData.GetCountries();
-```
-```VB.NET
-	DirectCast(Me.radGridView.Columns("Country"), GridViewComboBoxColumn).ItemsSource = RadGridViewSampleData.GetCountries()
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-setting_the_itemssource_property_in_code-cs' />
+
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-setting_the_itemssource_property_in_code-vb' />
+
 
 __Configure DisplayMemberPath and SelectedValuePath properties in XAML__
-```XAML
-	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}"
-	                    UniqueName="Country"
-	                    SelectedValueMemberPath="Id"
-	                    DisplayMemberPath="Name" />
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-configure_displaymemberpath_and_selectedvaluepath_properties_in_xaml-xaml' />
+
 
 __Configure DisplayMemberPath and SelectedValuePath properties in code__
-```C#
-	column.SelectedValueMemberPath = "Id";
-	column.DisplayMemberPath = "Name";
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-configure_displaymemberpath_and_selectedvaluepath_properties_in_code-cs' />
+
 
 __ComboBoxColumn after setting DisplayMemberPath and SelectedValuePath properties__
 
@@ -95,14 +75,8 @@ __Sample data structure of RadGridView__
 `RadGridView` binds to a collection of objects representing the teams. The team object exposes a collection containing the current drivers, which is used as source for the editor. As in the previous example, it also exposes a __DriverID__ property that the column will later translate to an appropriate display value. 
 
 __Configure GridViewComboBoxColumn with ItemsSourceBinding__
-```XAML
-	<telerik:GridViewComboBoxColumn Header="Driver"
-	                    DataMemberBinding="{Binding DriverID}"
-	                    UniqueName="Driver"
-	                    ItemsSourceBinding="{Binding CurrentDrivers}"
-	                    SelectedValueMemberPath="ID"
-	                    DisplayMemberPath="Name" />
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-configure_gridviewcomboboxcolumn_with_itemssourcebinding-xaml' />
+
 
 The next images show the result of configuring the ItemsSourceBinding property.
 
@@ -131,27 +105,8 @@ The following example shows how to implement a multi-column ComboBoxColumn.
 Start by defining the GridViewComboBoxColumn and its ItemTemplate:
 
 __Configure GridViewComboBoxColumn with ItemTemplate__
-```XAML
-	<telerik:GridViewComboBoxColumn Header="City"
-	                                DisplayMemberPath="Name"
-	                                SelectedValueMemberPath="ID"
-	                                ItemsSource="{Binding Path=Cities, Source={StaticResource MyViewModel}}"
-	                                Width="\*"
-	                                DataMemberBinding="{Binding CityID}" >
-	    <telerik:GridViewComboBoxColumn.ItemTemplate>
-	        <DataTemplate>
-	            <Grid>
-	                <Grid.ColumnDefinitions>
-	                    <ColumnDefinition />
-	                    <ColumnDefinition Width="\*"/>
-	                </Grid.ColumnDefinitions>
-	                <TextBlock Text="{Binding ID}"/>
-	                <TextBlock Text="{Binding Name}" Grid.Column="1"/>
-	            </Grid>
-	        </DataTemplate>
-	    </telerik:GridViewComboBoxColumn.ItemTemplate>
-	</telerik:GridViewComboBoxColumn>
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-configure_gridviewcomboboxcolumn_with_itemtemplate-xaml' />
+
 
 The multi-column ComboBoxColumn in this example will have two columns showing the ID and Name of the City respectively. When you run the example, Figure 6 shows the result when the customer tries to edit in a column.
 
@@ -166,9 +121,8 @@ The GridViewComboBoxColumn column exposes the `IsLightweightModeEnabled` propert
 >tip For the best scrolling performance, utilize the `ItemsSource` property and the `DataMemberBinding` property has to be bound to a __primitive type__ property.
 
 __Enabling the lightweight mode__
-```XAML
-	<telerik:GridViewComboBoxColumn IsLightweightModeEnabled="True"/>
-```
+<snippet id='radgridview-columns-columntypes-column-types-combobox-column-enabling_the_lightweight_mode-xaml' />
+
 
 ## See Also
  * [Binding GridViewComboBoxColumn by using the EnumDataSource utility]({%slug consuming-data-enumdatasource%})

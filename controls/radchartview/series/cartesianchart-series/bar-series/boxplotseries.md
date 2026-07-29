@@ -22,25 +22,8 @@ BoxPlotSeries works with one CategoricalAxis (or DateTime axis) as horizontal ax
 To start using the series, add it in the Series collection of the chart and populate its __DataPoints__ collection (or the [ItemsSource](#data-binding)).
 
 __Example 1: Defining BoxPlotSeries in XAML__
-```XAML
-	 <telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BoxPlotSeries>
-				<telerik:BoxPlotSeries.DataPoints>
-					<telerik:BoxPlotDataPoint Category="A" Minimum="15" Maximum="80" LowerQuartile="40" UpperQuartile="70" Median="55"/>                        
-					<telerik:BoxPlotDataPoint Category="B" Minimum="10" Maximum="60" LowerQuartile="25" UpperQuartile="45" Median="40"/>
-					<telerik:BoxPlotDataPoint Category="C" Minimum="25" Maximum="75" LowerQuartile="35" UpperQuartile="55" Median="43"/>
-				</telerik:BoxPlotSeries.DataPoints>
-			</telerik:BoxPlotSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-boxplotseries-example_1_defining_boxplotseries_in_xaml-xaml' />
+
 
 #### Figure 2: BoxPlotSeries example
 ![radchartview-series-barseries](images/radchartview-series-boxplotseries-1.png)
@@ -61,59 +44,16 @@ The BoxPlotSeries works with data point objects of type BoxPlotDataPoint. In a d
 The following example shows how to create a simple object describing a box plot and populate the series with a sample collection.
 
 __Example 2: Defining the model__
-```C#
-	public class BoxPlotInfo
-    {
-        public string Category { get; set; }
-        public double Min { get; set; }
-        public double Max { get; set; }
-        public double Q1Value { get; set; }
-        public double Q3Value { get; set; }
-        public double Median { get; set; }
-    }
-```	
+<snippet id='radchartview-series-cartesianchart-series-bar-series-boxplotseries-example_2_defining_the_model-cs' />
+
 
 __Example 3: Populating the data__
-```C#
-	public MyUserControl()
-	{
-		InitializeComponent(); 
-		
-		var source = new ObservableCollection<BoxPlotInfo>()
-		{
-			new BoxPlotInfo() { Category = "C1", Min = 5, Max = 30, Q1Value = 10, Q3Value = 15, Median = 13 },
-			new BoxPlotInfo() { Category = "C2", Min = 10, Max = 40, Q1Value = 15, Q3Value = 20, Median = 16 },
-			new BoxPlotInfo() { Category = "C3", Min = 15, Max = 35, Q1Value = 20, Q3Value = 30, Median = 27 },
-			new BoxPlotInfo() { Category = "C4", Min = 5, Max = 25, Q1Value = 10, Q3Value = 18, Median = 15 },
-			new BoxPlotInfo() { Category = "C5", Min = 10, Max = 40, Q1Value = 15, Q3Value = 20, Median = 19 },
-			new BoxPlotInfo() { Category = "C6", Min = 9, Max = 35, Q1Value = 20, Q3Value = 30, Median = 25 },
-			new BoxPlotInfo() { Category = "C7", Min = 5, Max = 25, Q1Value = 10, Q3Value = 15, Median = 12 },
-			new BoxPlotInfo() { Category = "C8", Min = 7, Max = 30, Q1Value = 15, Q3Value = 25, Median = 21 },
-		};
-		this.boxPlotSeries.ItemsSource = source;
-	}
-```	
+<snippet id='radchartview-series-cartesianchart-series-bar-series-boxplotseries-example_3_populating_the_data-cs' />
+
 
 __Example 4: Defining BoxPlotSeries in data binding scenario__
-```XAML	
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BoxPlotSeries x:Name="boxPlotSeries" 
-								   CategoryBinding="Category"
-								   MinimumBinding="Min"
-								   MaximumBinding="Max"
-								   LowerQuartileBinding="Q1Value"
-								   UpperQuartileBinding="Q3Value"
-								   MedianBinding="Median"/>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-boxplotseries-example_4_defining_boxplotseries_in_data_binding_scenario-xaml' />
+
 
 #### Figure 3: BoxPlotSeries data binding example
 ![{{ site.framework_name }} RadChartView BoxPlotSeries data binding example](images/radchartview-series-boxplotseries-2.png)
@@ -125,45 +65,8 @@ Read more about the data binding support in the [Create Data-Bound Chart]({%slug
 The chart series allows you to auto-generate LegendItem objects containing a title and color which can be used with the [RadLegend]({%slug radlegend-overview%}) control. To enable this, set the __LegendSettings__ property of the series element.
 
 __Example 5: Using SeriesLegendSettings__
-```XAML	
-	 <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
-        <telerik:RadCartesianChart x:Name="chart" Palette="Fluent">
-            <telerik:RadCartesianChart.VerticalAxis>
-                <telerik:LinearAxis />
-            </telerik:RadCartesianChart.VerticalAxis>
-            <telerik:RadCartesianChart.HorizontalAxis>
-                <telerik:CategoricalAxis />
-            </telerik:RadCartesianChart.HorizontalAxis>
-            <telerik:RadCartesianChart.Series>
-                <telerik:BoxPlotSeries>
-                    <telerik:BoxPlotSeries.DataPoints>
-                        <telerik:BoxPlotDataPoint Category="A" Minimum="15" Maximum="80" LowerQuartile="40" UpperQuartile="70" Median="55"/>                        
-                        <telerik:BoxPlotDataPoint Category="B" Minimum="10" Maximum="60" LowerQuartile="25" UpperQuartile="45" Median="40"/>
-                        <telerik:BoxPlotDataPoint Category="C" Minimum="25" Maximum="75" LowerQuartile="35" UpperQuartile="55" Median="43"/>
-                    </telerik:BoxPlotSeries.DataPoints>
-                    <telerik:BoxPlotSeries.LegendSettings>
-                        <telerik:SeriesLegendSettings Title="First Series" />
-                    </telerik:BoxPlotSeries.LegendSettings>
-                </telerik:BoxPlotSeries>
-                <telerik:BoxPlotSeries>
-                    <telerik:BoxPlotSeries.DataPoints>
-                        <telerik:BoxPlotDataPoint Category="A" Minimum="10" Maximum="60" LowerQuartile="25" UpperQuartile="45" Median="40"/>
-                        <telerik:BoxPlotDataPoint Category="B" Minimum="25" Maximum="75" LowerQuartile="35" UpperQuartile="55" Median="43"/>
-                        <telerik:BoxPlotDataPoint Category="C" Minimum="15" Maximum="80" LowerQuartile="40" UpperQuartile="70" Median="55"/>
-                    </telerik:BoxPlotSeries.DataPoints>
-                    <telerik:BoxPlotSeries.LegendSettings>
-                        <telerik:SeriesLegendSettings Title="Second Series" />
-                    </telerik:BoxPlotSeries.LegendSettings>
-                </telerik:BoxPlotSeries>
-            </telerik:RadCartesianChart.Series>
-        </telerik:RadCartesianChart>
-        <telerik:RadLegend Items="{Binding ElementName=chart, Path=LegendItems}" Grid.Column="1" Margin="10"/>
-    </Grid>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-boxplotseries-example_5_using_serieslegendsettings-xaml' />
+
 
 #### Figure 4: Chart legend 
 ![{{ site.framework_name }} RadChartView Chart legend](images/radchartview-series-boxplotseries-3.png)
@@ -179,9 +82,8 @@ Additionally, the __Palette__ property of the chart to change the colors of the 
 To change the length of the lines representing the minimum and maximum values of the box plot visual, set the __LimitersLength__ property of the series. The property works with relative units between 0 and 1, where 1 means 100% of the layout slot's width. The __default value is 0.5__, which is 50% of the box plot's width.
 
 __Example 3: Setting LimitersLength__
-```XAML		 
-	<telerik:BoxPlotSeries LimitersLength="1" />
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-boxplotseries-example_3_setting_limiterslength-xaml' />
+
 
 #### Figure 4: Minimum and maximum lines matching the box plot's width
 ![{{ site.framework_name }} RadChartView Minimum and maximum lines matching the box plot's width](images/radchartview-series-boxplotseries-4.png)

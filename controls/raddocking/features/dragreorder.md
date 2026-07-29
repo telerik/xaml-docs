@@ -20,11 +20,8 @@ The next code snippet shows how to enable the DragReorder feature:
 
 
 
-```XAML
-	<telerik:RadDocking AllowDragReorder="True">
-	    ...
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-dragreorder-block_1-xaml' />
+
 
 The following screenshots demonstrate the behavior of RadDocking when DragReorder feature is enabled:
 

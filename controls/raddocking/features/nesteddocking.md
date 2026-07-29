@@ -24,42 +24,15 @@ Implementing nested __RadDockings__ is quite intuitive and straightforward. Letâ
 
 
 
-```C#
-	<telerik:RadDocking x:Name="OuterDocking">
-	    <telerik:RadDocking.DocumentHost>
-	        <telerik:RadSplitContainer>
-	            <telerik:RadPaneGroup>
-	                <telerik:RadPane Header="Outer Pane 1" />
-	                <telerik:RadPane Header="Outer Pane 2" />
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	    </telerik:RadDocking.DocumentHost>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-nesteddocking-block_1-cs' />
+
 
 Afterwards you will only have to add a new instance of __RadDocking__ inside of the first __RadPane__ as shown below:
     
 
 
-```C#
-	<telerik:RadDocking x:Name="OuterDocking">
-	    ...
-	    <telerik:RadPane Header="Outer Pane 1">
-	        <telerik:RadDocking x:Name="InnerDocking" CloseButtonPosition="InPane">
-	            <telerik:RadDocking.DocumentHost>
-	                <telerik:RadSplitContainer>
-	                    <telerik:RadPaneGroup>
-	                        <telerik:RadPane Header="Inner Pane A" />
-	                        <telerik:RadPane Header="Inner Pane B" />
-	                        <telerik:RadPane Header="Inner Pane C" />
-	                    </telerik:RadPaneGroup>
-	                </telerik:RadSplitContainer>
-	            </telerik:RadDocking.DocumentHost>
-	        </telerik:RadDocking>
-	    </telerik:RadPane>
-	    ...
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-nesteddocking-block_2-cs' />
+
 
 This will be the final result:![Features Nested Docking 02](images/Features_NestedDocking_02.png)
 

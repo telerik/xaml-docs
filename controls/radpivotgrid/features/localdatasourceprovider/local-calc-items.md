@@ -20,79 +20,19 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 
 
 
-```C#
-	public class MenAverageSales : CalculatedItem
-	{
-	    protected override AggregateValue GetValue(IAggregateSummaryValues aggregateSummaryValues)
-	    {
-	        AggregateValue[] aggregateValues = {
-	            aggregateSummaryValues.GetAggregateValue("Andrew Fuller"),
-	            aggregateSummaryValues.GetAggregateValue("Michael Suyama"),
-	            aggregateSummaryValues.GetAggregateValue("Robert King"),
-	            aggregateSummaryValues.GetAggregateValue("Steven Buchanan")
-	        };
-	
-	        if (aggregateValues.ContainsError())
-	        {
-	            return AggregateValue.ErrorAggregateValue;
-	        }
-	
-	        double average = aggregateValues.Average(av => av.ConvertOrDefault<double>());
-	        return new DoubleAggregateValue(average);
-	    }
-	}
-```
-```VB.NET
-	Public Class MenAverageSales
-		Inherits CalculatedItem
-	
-		Protected Overrides Function GetValue(ByVal aggregateSummaryValues As IAggregateSummaryValues) As AggregateValue
-			Dim aggregateValues() As AggregateValue = 
-				{ aggregateSummaryValues.GetAggregateValue("Andrew Fuller"), aggregateSummaryValues.GetAggregateValue("Michael Suyama"), 
-				aggregateSummaryValues.GetAggregateValue("Robert King"), aggregateSummaryValues.GetAggregateValue("Steven Buchanan") }
-	
-			If aggregateValues.ContainsError() Then
-				Return AggregateValue.ErrorAggregateValue
-			End If
-	
-			Dim average As Double = aggregateValues.Average(Function(av) av.ConvertOrDefault(Of Double)())
-			Return New DoubleAggregateValue(average)
-		End Function
-	End Class
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_1-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_1-vb' />
 
 As you can see the Calculated Item will show the average sales of four people. Now we just have to add it to the PropertyGroupDescription. In our case this will be the Salesperson group:        
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-		<pivot:PropertyGroupDescription PropertyName="Salesperson">
-			<pivot:PropertyGroupDescription.CalculatedItems>
-				<local:MenAverageSales GroupName="Average Sales (Men)" />
-			</pivot:PropertyGroupDescription.CalculatedItems>
-		</pivot:PropertyGroupDescription>
-	</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_2-xaml' />
 
 
 
-```C#
-	var propertyGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
-	propertyGroupDescription.PropertyName = "Salesperson";
-	var calculatedItem = new MenAverageSales();
-	calculatedItem.GroupName = "Average Sales (Men)";
-	propertyGroupDescription.CalculatedItems.Add(calculatedItem);
-	dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription);
-```
-```VB.NET
-	Dim propertyGroupDescription = New Telerik.Pivot.Core.PropertyGroupDescription()
-	propertyGroupDescription.PropertyName = "Salesperson"
-	Dim calculatedItem = New MenAverageSales()
-	calculatedItem.GroupName = "Average Sales (Men)"
-	propertyGroupDescription.CalculatedItems.Add(calculatedItem)
-	dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription)
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_3-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_3-vb' />
 
 ![Rad Pivot Grid Features Local Calc Items 01](images/RadPivotGrid_Features_Local_Calc_Items_01.png)
 
@@ -114,35 +54,8 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 
 
 
-```C#
-	private void LocalDataSourceProvider_PrepareDescriptionForField(object sender, PrepareDescriptionForFieldEventArgs e)
-	{
-		if (e.DescriptionType == DataProviderDescriptionType.Group && e.FieldInfo.DisplayName == "Salesperson")
-		{
-			var description = e.Description as Telerik.Pivot.Core.PropertyGroupDescription;
-	
-			if (description != null)
-			{
-				var calculatedItem = new MenAverageSales();
-				calculatedItem.GroupName = "Average Sales (Men)";
-				description.CalculatedItems.Add(calculatedItem);
-			}
-		}
-	}
-```
-```VB.NET
-	Private Sub LocalDataSourceProvider_PrepareDescriptionForField(ByVal sender As Object, ByVal e As PrepareDescriptionForFieldEventArgs)
-		If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
-			Dim description = TryCast(e.Description, Telerik.Pivot.Core.PropertyGroupDescription)
-	
-			If description IsNot Nothing Then
-				Dim calculatedItem = New MenAverageSales()
-				calculatedItem.GroupName = "Average Sales (Men)"
-				description.CalculatedItems.Add(calculatedItem)
-			End If
-		End If
-	End Sub
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_4-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_4-vb' />
 
 ## Solve Order
 
@@ -150,62 +63,12 @@ If you have calculated items in both rows and columns group descriptions, you ha
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider.RowGroupDescriptions>
-	    <pivot:PropertyGroupDescription PropertyName="Country">
-	        <pivot:PropertyGroupDescription.CalculatedItems>
-	            <local:CA GroupName="CA" SolveOrder="1" />
-	        </pivot:PropertyGroupDescription.CalculatedItems>
-	    </pivot:PropertyGroupDescription>
-	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
-	
-	<pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-	    <pivot:PropertyGroupDescription PropertyName="Salesperson">
-	        <pivot:PropertyGroupDescription.CalculatedItems>
-	            <local:MenAverageSales GroupName="Average Sales (Men)" SolveOrder="2" />
-	        </pivot:PropertyGroupDescription.CalculatedItems>
-	    </pivot:PropertyGroupDescription>
-	</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_5-xaml' />
 
 
 
-```C#
-	var salesPersonGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
-	salesPersonGroupDescription.PropertyName = "Salesperson";
-	var menAvgSalesCalculatedItem = new MenAverageSales();
-	menAvgSalesCalculatedItem.GroupName = "Average Sales (Men)";
-	menAvgSalesCalculatedItem.SolveOrder = 1; 
-	salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem);
-	
-	var countryGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
-	countryGroupDescription.PropertyName = "Country";
-	var caCalculatedItem = new CA();
-	caCalculatedItem.GroupName = "CA";
-	caCalculatedItem.SolveOrder = 2;
-	countryGroupDescription.CalculatedItems.Add(caCalculatedItem);
-	
-	dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
-	dataProvider.RowGroupDescriptions.Add(countryGroupDescription);
-```
-```VB.NET
-	Dim salesPersonGroupDescription = New Telerik.Pivot.Core.PropertyGroupDescription()
-	salesPersonGroupDescription.PropertyName = "Salesperson"
-	Dim menAvgSalesCalculatedItem = New MenAverageSales()
-	menAvgSalesCalculatedItem.GroupName = "Average Sales (Men)"
-	menAvgSalesCalculatedItem.SolveOrder = 1
-	salesPersonGroupDescription.CalculatedItems.Add(menAvgSalesCalculatedItem)
-	
-	Dim countryGroupDescription = New Telerik.Pivot.Core.PropertyGroupDescription()
-	countryGroupDescription.PropertyName = "Country"
-	Dim caCalculatedItem = New CA()
-	caCalculatedItem.GroupName = "CA"
-	caCalculatedItem.SolveOrder = 2
-	countryGroupDescription.CalculatedItems.Add(caCalculatedItem)
-	
-	dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
-	dataProvider.RowGroupDescriptions.Add(countryGroupDescription)
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_6-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-items-block_6-vb' />
 
 Here is the result:
 

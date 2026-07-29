@@ -37,10 +37,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 ## Adding RadMultiColumnComboBox to the Project
 
 __Example 1: Defining RadMultiColumnComboBox Declaratively__
-```XAML
-	<telerik:RadMultiColumnComboBox VerticalAlignment="Top">
-    </telerik:RadMultiColumnComboBox>
-```
+<snippet id='radmulticolumncombobox-getting-started-block_1-xaml' />
 
 #### __Figure 1: Defining RadMultiColumnComboBox__
 ![RadMultiColumnComboBox](images/MultiColumnComboBox_GettingStarted_01.png)
@@ -48,13 +45,7 @@ __Example 1: Defining RadMultiColumnComboBox Declaratively__
 Note, that such definition would simply result in having an AutoComplete box. In order to have the actual __RadGridView__ populated as a Content of the DropDown the __GridViewItemsSourceProvider__ needs to be set as an __ItemsSourceProvider__. Note, that the __DisplayMemberPath__ property of __RadMultiColumnComboBox__ is also set. Its purpose is to point to a property of the bound data item present in the source collection of the ItemsSourceProvider. Thus, the control will be aware what value to display in the __AutoCompleteBox__. If not set, the control would simply call the __ToString__ method of the bound item.
 
 #### __[XAML] Example 2: Setting the GridViewItemsSourceProvider
-```XAML
-	 <telerik:RadMultiColumnComboBox VerticalAlignment="Top" DisplayMemberPath="Name">
-            <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-                <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs}" />
-            </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-        </telerik:RadMultiColumnComboBox>
-```
+<snippet id='radmulticolumncombobox-getting-started-block_2-xaml' />
 
 This definition will have the following output. 
 
@@ -66,7 +57,7 @@ This definition will have the following output.
 
 * [Telerik UI for WPF MultiColumnComboBox Component](https://www.telerik.com/products/wpf/multicolumncombobox.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -77,4 +68,3 @@ This definition will have the following output.
 ## See Also
 
 * [Overview]({%slug multicolumncombobox-overview%})
-

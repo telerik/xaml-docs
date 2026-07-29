@@ -25,9 +25,8 @@ Here, under the section of &lt;Property Group&gt; is the element &lt;Supported C
 
 
 
-```XAML
-	  <SupportedCultures>es</SupportedCultures>
-```
+<snippet id='radgridview-localization-setting-default-startup-language3-block_1-xaml' />
+
 
 Thus the framework is notified about the supported cultures and will include the satellite resource assemblies for all Telerik controls.
 
@@ -37,14 +36,10 @@ The thing that you must do for defining the language settings of the application
 
 
 
-```C#
-	Thread.CurrentThread.CurrentCulture = new CultureInfo("es");
-	Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
-```
-```VB.NET
-	Thread.CurrentThread.CurrentCulture = New CultureInfo("es")
-	Thread.CurrentThread.CurrentUICulture = New CultureInfo("es")
-```
+<snippet id='radgridview-localization-setting-default-startup-language3-block_2-cs' />
+
+<snippet id='radgridview-localization-setting-default-startup-language3-block_2-vb' />
+
 
 {% endif %}
 

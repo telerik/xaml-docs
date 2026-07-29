@@ -18,31 +18,10 @@ Still, there is a way to set the CurrentCulture and apply the format you would l
 
 __Example 1: Defining custom formatting__
 
-```C#
-	System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
-	System.Globalization.DateTimeFormatInfo dateTimeInfo =
-	new System.Globalization.DateTimeFormatInfo();
-	dateTimeInfo.LongDatePattern = "dd--MMM--yyyy";
-	dateTimeInfo.ShortDatePattern = "dd--MMM--yy";
-	cultureInfo.DateTimeFormat = dateTimeInfo;
-	cultureInfo.NumberFormat.NumberGroupSeparator = "/";
-	cultureInfo.NumberFormat.NegativeSign = "/";
-	
-	Thread.CurrentThread.CurrentCulture = cultureInfo;
-	Thread.CurrentThread.CurrentUICulture = cultureInfo;
-```
-```VB.NET
-	Dim cultureInfo As New System.Globalization.CultureInfo("en-US")
-	Dim dateTimeInfo As New System.Globalization.DateTimeFormatInfo()
-	dateTimeInfo.LongDatePattern = "dd--MMM--yyyy"
-	dateTimeInfo.ShortDatePattern = "dd--MMM--yy"
-	cultureInfo.DateTimeFormat = dateTimeInfo
-	cultureInfo.NumberFormat.NumberGroupSeparator = "/"
-	cultureInfo.NumberFormat.NegativeSign = "/"
-	
-	Thread.CurrentThread.CurrentCulture = cultureInfo
-	Thread.CurrentThread.CurrentUICulture = cultureInfo
-```
+<snippet id='radgridview-how-to-custom-format-example_1_defining_custom_formatting-cs' />
+
+<snippet id='radgridview-how-to-custom-format-example_1_defining_custom_formatting-vb' />
+
 
 __Figure 1__: RadGridView displaying data with IsLocalizationLanguageRespected set to True
         

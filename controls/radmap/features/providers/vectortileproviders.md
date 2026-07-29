@@ -25,13 +25,7 @@ To load vector data, you should prepare or download a proper source with `.Pbf` 
 This type of vector tile data is visualized with the `UriVectorTileMapProvider`. To assign the `.Pbf/.Mvt` source, set the `UriTemplate` property of `UriVectorTileMapProvider`. The `.Pbf/.Mvt` and style sources can be local paths or a URLs to an online service. 
 
 __Defining UriVectorTileMapProvider__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:UriVectorTileMapProvider UriTemplate="C:\MyMapResources\PbfFiles\{x}-{y}-{level}.pbf"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-vectortileproviders-block_1-xaml' />
 
 ## Loading MBTiles
 
@@ -40,13 +34,7 @@ To load vector data, you should prepare or download a proper `.mbtiles` source f
 This type of vector tile data is visualized with the `MbTilesMapProvider`. To assign the `.mbtiles` source, set the `Source` property of `UriVectorTileMapProvider`. The `.mbtiles` and style sources can be local paths or a URLs to an online service. 
 
 __Defining MbTilesMapProvider__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:MbTilesMapProvider Source="C:\MyMapResources\world.mbtiles"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-vectortileproviders-block_2-xaml' />
 
 Using the `MbTilesProvider` requires to add include an additional reference to the __System.Data.SQLite.Core__ library. You can either, add a reference to the corresponding .dll or install the [nuget package](https://www.nuget.org/packages/System.Data.SQLite.Core/).
 
@@ -57,14 +45,7 @@ The `MbTilesMapProvider` doesn't support raster image files and SVG icons define
 To assign a custom style `.json` file, set the `StyleFileSource` property of `UriVectorTileMapProvider`.
 
 __Setting custom styles__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:UriVectorTileMapProvider UriTemplate="C:\MyMapVectorResources\PbfFiles\{x}-{y}-{level}.pbf"
-											  StyleFileSource="C:\MyMapVectorResources\Styles\custom-styles.json"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-vectortileproviders-block_3-xaml' />
 
 In case you need to create your own `.json` [style file](https://docs.mapbox.com/mapbox-gl-js/style-spec/) for the vector tiles, here is a list of the [layer properties](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/) supported by Telerik:
 

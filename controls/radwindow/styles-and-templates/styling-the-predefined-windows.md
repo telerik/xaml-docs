@@ -21,21 +21,7 @@ In this article's example we will use __RadAlert__, but the approach is the same
 First, obtain the default style that targets __RadAlert__. See how to do this in the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) topic. The extracted __RadAlertStyle__ will be similar to the following:
 
 __Example 1: Default RadAlertStyle__  
-```XAML
-	<Style x:Key="RadAlertStyle" TargetType="telerik:RadAlert">
-	    <Setter Property="IsTabStop" Value="False"/>
-	    <Setter Property="MinWidth" Value="275"/>
-	    <Setter Property="MaxWidth" Value="500"/>
-	    <Setter Property="SnapsToDevicePixels" Value="True"/>
-	    <Setter Property="Template">
-	        <Setter.Value>
-	            <ControlTemplate TargetType="telerik:RadAlert">
-	                <!--...-->
-	            </ControlTemplate>
-	        </Setter.Value>
-	    </Setter>
-	</Style>
-```
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_1-xaml' />
 
 >If you are not using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you will need to copy all the resources referenced (with the StaticResources keyword) in the __RadAlertStyle__ to your project as well (such as AlertIconTemplate).
 
@@ -44,18 +30,8 @@ Now you can make modifications in the template such as removing the OK button, c
 And finally, pass the customized __RadAlertStyle__ to the predefined dialog via the __DialogParameters__ object and its __ContentStyle__ property.
 
 __Example 2: Applying customized Style to RadAlert__  
-```C#
-	DialogParameters parameters = new DialogParameters();
-	parameters.ContentStyle = this.Resources["RadAlertStyle"] as Style;
-	parameters.Content = "Hello";
-	RadWindow.Alert(parameters);
-```
-```VB.NET
-	Dim parameters As New DialogParameters()
-	parameters.ContentStyle = TryCast(Me.Resources("RadAlertStyle"), Style)
-	parameters.Content = "Hello"
-	RadWindow.Alert(parameters)
-```
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_2-cs' />
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_3-vb' />
 
 #### __Figure 1: RadAlert with custom Style__
 ![{{ site.framework_name }} RadWindow RadAlert with custom Style](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_01.png)
@@ -67,27 +43,11 @@ With the Q1 2016 release of UI for {{ site.framework_name }} the __IconTemplate_
 Basically, a valid DataTemplate needs to be created and that Template should be passed to the predefined windows via the __DialogParameters__ and its __IconTemplate__ property.
 
 __Example 3: Defining the DataTemplate__  
-```XAML
-	<DataTemplate x:Key="IconTemplate">
-	    <Image Source="telerik.png" Stretch="Fill" Width="22" Height="22"/>
-	</DataTemplate>
-```
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_4-xaml' />
 
 __Example 4: Applying the DataTemplate to the IconTemplate property__  
-```C#
-	RadWindow.Alert(new DialogParameters()
-	{
-	    Content = "Hello",
-	    IconTemplate = this.Resources["IconTemplate"] as DataTemplate
-	});
-```
-```VB.NET
-	RadWindow.Alert(New DialogParameters() With
-	{
-	    .Content = "Hello",
-	    .IconTemplate = TryCast(Me.Resources("IconTemplate"), DataTemplate
-	)})
-```
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_5-cs' />
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_6-vb' />
 
 #### __Figure 2: RadAlert with set IconTemplate__
 ![{{ site.framework_name }} RadWindow RadAlert with set IconTemplate](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_02.png)
@@ -97,28 +57,12 @@ __Example 4: Applying the DataTemplate to the IconTemplate property__
 You can also modify the appearance of the window which hosts the dialog content. For the purpose, set the **WindowStyle** property of the **DialogParameters** object.
 
 __Example 5: Default RadAlertStyle__  
-```XAML
-	<Style x:Key="RadAlertWindowStyle" TargetType="telerik:RadWindow">
-		<Setter Property="CornerRadius" Value="10"/>
-	</Style>
-```
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_7-xaml' />
 
 
 __Example 6: Applying the DataTemplate to the IconTemplate property__  
-```C#
-	RadWindow.Alert(new DialogParameters()
-	{
-	    Content = "Hello",
-	    parameters.WindowStyle = App.Current.Resources["RadAlertWindowStyle"] as Style;
-	});
-```
-```VB.NET
-	RadWindow.Alert(New DialogParameters() With
-	{
-	    .Content = "Hello",
-	    .WindowStyle = TryCast(App.Current.Resources("RadAlertWindowStyle"), Style)
-	)})
-```
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_8-cs' />
+<snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_9-vb' />
 
 ## See Also  
  * [Styling the RadWindow]({%slug radwindow-styles-and-templates-styling-the-radwindow%})

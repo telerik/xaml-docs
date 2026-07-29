@@ -36,11 +36,7 @@ You can include the control in your application by either dragging it from the t
 
 __Adding RadMenu__
 
-```XAML
-	<Grid>
-	    <telerik:RadMenu/>
-	</Grid>
-```
+<snippet id='radmenu-getting-started-block_1-xaml' />
 
 If you run your application now you will see an empty RadMenu that contains no items.
 
@@ -50,14 +46,7 @@ You can populate the control by either adding the RadMenuItems to its `Items` co
 
 __Adding RadMenuItems__
 
-```XAML
-	<telerik:RadMenu>
-	    <telerik:RadMenuItem Header="Item 1">
-	        <telerik:RadMenuItem Header="SubItem 1" />
-	        <telerik:RadMenuItem Header="SubItem 2" />
-	    </telerik:RadMenuItem>
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-getting-started-block_2-xaml' />
 
 __RadMenu with added items__
 
@@ -125,17 +114,7 @@ To change the theme, you can follow the steps below:
 The next example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radmenu-getting-started-block_3-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -150,7 +129,7 @@ __RadMenu with the Windows8 theme__
 
 * [Telerik UI for WPF Menu Component](https://www.telerik.com/products/wpf/menu.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -169,4 +148,3 @@ __RadMenu with the Windows8 theme__
  * [Styles and Templates - Overview]({%slug radmenu-styles-and-templates-overview%})
 
  * [Events - Overview]({%slug radmenu-events-overview%})
-

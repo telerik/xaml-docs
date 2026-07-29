@@ -25,14 +25,7 @@ __RtfFormatProvider__ exposes __ExportSettings__, which allow customization in h
 	* **Null**: When the __FieldResultMode__ is set to `null`, fields' display mode is **not changed**. *This can provide a better performance and lower memory usage while exporting.*	
 
 	__Example 1: Setting the ExportSettings of RtfFormatProvider__
-	```C#
-		RtfExportSettings exportSettings = new RtfExportSettings();
-		exportSettings.ExportImagesInCompatibilityMode = true;
-		exportSettings.FieldResultMode = FieldDisplayMode.DisplayName;
-		
-		RtfFormatProvider rtfFormatProvider = new RtfFormatProvider();
-		rtfFormatProvider.ExportSettings = exportSettings;
-	```
+	<snippet id='radrichtextbox-import-export-rtf-settings-block_1-cs' />
 
 
 ## Import Settings
@@ -40,20 +33,7 @@ __RtfFormatProvider__ exposes __ExportSettings__, which allow customization in h
 Through the __ImportSettings__ of __RtfFormatProvider__ you can utilize the __FontSubstituting__ event. This event allows you to handle the cases when the Rtf source specifies a __Font__ that is not available to the __RichTextBox__. This is particularly useful in __Silverlight__ when the __Font__ can be resolved only if it is among the default ones when you do not want to rely on it being installed on the client machine. __Example 4__ shows how you can subscribe to the event and handle it.
 
 __Example 2: Setup Default RtfFormatProvider__
-```C#
-	RtfFormatProvider rtfFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("rtf") as RtfFormatProvider;
-	RtfImportSettings rtfImportSettings = new RtfImportSettings();
-	rtfImportSettings.FontSubstituting += rtfImportSettings_FontSubstituting;
-	rtfFormatProvider.ImportSettings = rtfImportSettings;
-
-	void rtfImportSettings_FontSubstituting(object sender, FontSubstitutingEventArgs e) 
-	{ 
-		if(e.OriginalFontName.Equals("Cambria"))
-		{
-			e.SubstitutionFontFamily = new FontFamily("Calibri");
-		}
-	}
-```
+<snippet id='radrichtextbox-import-export-rtf-settings-block_2-cs' />
 
 ## See Also
 

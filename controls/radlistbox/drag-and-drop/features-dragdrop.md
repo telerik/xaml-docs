@@ -32,45 +32,25 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 __Example 1: Reference Telerik.Windows.Controls.dll__
 
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-```
+<snippet id='radlistbox-drag-and-drop-features-dragdrop-block_1-xaml' />
 
 * Create a RadListBoxItem Style that will enable the drag of the RadListBoxItem controls:
 
 __Example 2: RadListBoxItem Style__
 
-```XAML
-	<UserControl.Resources>
-		<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
-	    		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
-		</Style>
-	</UserControl.Resources>
-```
+<snippet id='radlistbox-drag-and-drop-features-dragdrop-block_2-xaml' />
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) note that the Style that targets RadListBoxItem should be based on the default __RadListBoxItemStyle__.
 
 __Example 3: RadListBoxItem Style in NoXAML__
 
-```XAML
-	<UserControl.Resources>
-		<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem" BasedOn="{StaticResource RadListBoxItemStyle}">
-			<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
-		</Style>
-	</UserControl.Resources>
-```
+<snippet id='radlistbox-drag-and-drop-features-dragdrop-block_3-xaml' />
 
 * Attach the ListBoxDragDropBehavior behavior:
 
 __Example 4: Attaching the ListBoxDragDropBehavior__
 
-```XAML
-	<telerik:RadListBox ItemContainerStyle="{StaticResource DraggableListBoxItem}">
-	    <telerik:RadListBox.DragDropBehavior>
-	        <telerik:ListBoxDragDropBehavior />
-	    </telerik:RadListBox.DragDropBehavior>
-	</telerik:RadListBox>
-```
+<snippet id='radlistbox-drag-and-drop-features-dragdrop-block_4-xaml' />
 
 ## Features
 
@@ -82,11 +62,7 @@ In order to enable the visual DragCue the provider needs to be attached to the L
 
 __Example 5: Attaching the DragVisualProvider__
 
-```XAML
-	<telerik:RadListBox.DragVisualProvider>
-	    <telerik:ScreenshotDragVisualProvider />
-	</telerik:RadListBox.DragVisualProvider>
-```
+<snippet id='radlistbox-drag-and-drop-features-dragdrop-block_5-xaml' />
 
 The DragVisualProvider can be set to:
 
@@ -130,47 +106,13 @@ In scenarios with drag-drop between controls containing different item types the
 
 __Example 6: Overriding the GetConvertToFormats and ConvertTo__
 
-```C#
-	public class ProductToOrderConverter : DataConverter
-	{
-	    public override string[] GetConvertToFormats()
-	    {
-	        return new string[] { typeof(Product).FullName, typeof(Order).FullName };
-	    }
-	    public override object ConvertTo(object data, string format)
-	    {
-	        var payload = (IEnumerable)DataObjectHelper.GetData(data, typeof(Product), false);
-	        if (payload != null)
-	        {
-	            return payload.OfType<Product>().Select(a => new Order
-	            {
-	                Name = a.Name,
-	                Quantity = 1
-	            });
-	        }
-	        return null;
-	    }
-	}
-```
+<snippet id='radlistbox-drag-and-drop-features-dragdrop-block_6-cs' />
 
 The final configuration of the RadListBox control in XAML should look like:
 
 __Example 7: Final configuration of RadListBox__
 
-```XAML
-	<telerik:RadListBox ItemsSource="{Binding Products}" ItemContainerStyle="{StaticResource DraggableListBoxItem}">
-	    <telerik:RadListBox.DragVisualProvider>
-	        <telerik:ScreenshotDragVisualProvider />
-	    </telerik:RadListBox.DragVisualProvider>
-	    <telerik:RadListBox.DragDropBehavior>
-	        <telerik:ListBoxDragDropBehavior />
-	    </telerik:RadListBox.DragDropBehavior>
-	    <telerik:RadListBox.DataConverter>
-	        <local:ProductToOrderConverter />
-	    </telerik:RadListBox.DataConverter>
-	</telerik:RadListBox>
-	<telerik:RadListBox ItemsSource="{Binding Orders}" />
-```
+<snippet id='radlistbox-drag-and-drop-features-dragdrop-block_7-xaml' />
 
 The end result:
 

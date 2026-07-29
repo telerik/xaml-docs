@@ -15,15 +15,8 @@ RaviIndicator (range action verification index) identifies if a values pair is t
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the periods (in days) over which the indicator will be applied. To do this set the __LongPeriod__ and __ShortPeriod__ properties.
 
 __Example 1: RaviIndicator__
-```XAML
-	 <telerik:RadCartesianChart.Indicators>
-		<telerik:RaviIndicator LongPeriod="8" 													
-							   ShortPeriod="4"
-							   CategoryBinding="Date"                                             
-							   ValueBinding="Close"
-							   ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-raviindicator-example_1_raviindicator-xaml' />
+
 
 #### Figure 1: RaviIndicator
 <img src="images/radchartview-indicators-raviindicator-0.png" style="width: 80%;">

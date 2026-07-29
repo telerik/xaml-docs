@@ -31,9 +31,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 ## Adding RadCalculator to the Project
 
 __Defining RadCalculator__  
-```XAML		
-		<telerik:RadCalculator />		
-```
+<snippet id='radcalculator-getting-started-block_1-xaml' />
 
 #### __RadCalculator example__
 ![A picture showing {{ site.framework_name }} RadCalculator](images/RadCalculator-Basic.png)
@@ -74,17 +72,7 @@ To change the theme, you can follow the steps below:
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radcalculator-getting-started-block_2-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 	

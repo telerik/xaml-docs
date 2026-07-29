@@ -20,24 +20,7 @@ __RadTreeView__ gives you the ability to define images for each item state. This
 
 For the purpose of this tutorial, the treeview defined in the next XAML snippet will be used: 
 
-```XAML
-	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis">
-	            <telerik:RadTreeViewItem Header="Table Tennis"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Cycling">
-	            <telerik:RadTreeViewItem Header="Road Cycling"/>
-	            <telerik:RadTreeViewItem Header="Indoor Cycling"/>
-	            <telerik:RadTreeViewItem Header="Mountain Bike"/>
-	        </telerik:RadTreeViewItem>
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-images-block_1-xaml' />
 
 ![{{ site.framework_name }} RadTreeView Sample Structure](images/RadTreeView_TreeViewItemImages_001.PNG)
 
@@ -53,25 +36,7 @@ __RadTreeView__ gives you the ability to define images for each item state. The 
 
 When you store all your images for the TreeView into a single folder you can use the __ImagesBaseDir__ property of the __RadTreeView__ to set the location of this folder. Then when settings the __DefaultImagesSrc__, __ExpandedImageSrc__, __SelectedImageSrc__ properties of the __RadTreeViewItem__ you will need to set only the image name, not the entire path to the image. See the example below:
 
-```XAML
-	<telerik:RadTreeView Margin="8" x:Name="radTreeView"
-	    ImagesBaseDir="/Examples/Common/Images/Vista Icons/">
-	    <telerik:RadTreeViewItem Header="Sport Categories" DefaultImageSrc="Icon1.png">
-	        <telerik:RadTreeViewItem Header="Football" DefaultImageSrc="Icon2.png">
-	            <telerik:RadTreeViewItem Header="Futsal" DefaultImageSrc="Icon3.png"/>
-	            <telerik:RadTreeViewItem Header="Soccer" DefaultImageSrc="Icon4.png"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis" DefaultImageSrc="Icon5.png">
-	            <telerik:RadTreeViewItem Header="Table Tennis" DefaultImageSrc="Icon6.png"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Cycling" DefaultImageSrc="Icon7.png" ExpandedImageSrc="Icon11.png">
-	            <telerik:RadTreeViewItem Header="Road Cycling" DefaultImageSrc="Icon8.png"/>
-	            <telerik:RadTreeViewItem Header="Indoor Cycling" DefaultImageSrc="Icon9.png" SelectedImageSrc="Icon10.png"/>
-	            <telerik:RadTreeViewItem Header="Mountain Bike"/>
-	        </telerik:RadTreeViewItem>
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-images-block_2-xaml' />
 
 The result is: 
 
@@ -91,47 +56,15 @@ When setting the __DefaultImageSrc__, __ExpandedImageSrc__ and __SelectedImageSr
 
 * set the path to the image as a string 
 
-	```C#
-		private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
-		{
-		 e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png";
-		 e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png";
-		 e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"; 
-		}
-	```
-	```VB.NET
-		Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
-			e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png"
-			e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png"
-			e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"
-		End Sub
-	```
+	<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-images-block_3-cs' />
+	<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-images-block_4-vb' />
 
 or
 
 * set the path using an object of type __BitmapImage__
 
-	```C#
-		private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
-		{
-		 BitmapImage defaultImage = new BitmapImage(new Uri("Icon1.png", UriKind.Relative));
-		 e.PreparedItem.DefaultImageSrc = defaultImage;
-		 BitmapImage expandedImage = new BitmapImage(new Uri("Icon2.png", UriKind.Relative));
-		 e.PreparedItem.ExpandedImageSrc = expandedImage;
-		 BitmapImage selectedImage = new BitmapImage(new Uri("Icon3.png", UriKind.Relative));
-		 e.PreparedItem.SelectedImageSrc = selectedImage;
-		}
-	```
-	```VB.NET
-		Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
-			Dim defaultImage As New BitmapImage(New Uri("Icon1.png", UriKind.Relative))
-			e.PreparedItem.DefaultImageSrc = defaultImage
-			Dim expandedImage As New BitmapImage(New Uri("Icon2.png", UriKind.Relative))
-			e.PreparedItem.ExpandedImageSrc = expandedImage
-			Dim selectedImage As New BitmapImage(New Uri("Icon3.png", UriKind.Relative))
-			e.PreparedItem.SelectedImageSrc = selectedImage
-		End Sub
-	```
+	<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-images-block_5-cs' />
+	<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-images-block_6-vb' />
 
 ## Using Images from the Client Bin Directory or a Relative Directory
 
@@ -143,9 +76,7 @@ For example, see these cases:
 
 * The images are placed in a relative directory. In this case you need to specify a relative path in the __ImagesBaseDir__ property. In the previous example the __ImagesBaseDir__ property was set to: 
 
-```XAML
-	ImagesBaseDir="/Examples/Common/Images/Vista Icons/"
-```
+<snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-images-block_7-xaml' />
 
 Which means that the "Examples" directory is located in the same directory where the .XAP file is placed and the images are located in the "Vista Icons" directory. 
 

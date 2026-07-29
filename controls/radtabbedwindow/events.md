@@ -26,54 +26,15 @@ Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **Ad
 	
 	__Handle the AddingNewTab event in data binding scenario__
 	
-	```C#
-		private void RadTabbedWindow_AddingNewTab(object sender, TabControlAddingNewTabEventArgs e)
-		{
-			if (this.TotalTabCount > this.MaxTabCount) // replace with your cancel condition
-			{
-				e.Cancel = true;
-			}
-			else
-			{
-				e.Item = new Person("P " + this.Items.Count);
-			}
-		}
-	```
-	```VB.NET
-		Private Sub RadTabbedWindow_AddingNewTab(ByVal sender As Object, ByVal e As TabControlAddingNewTabEventArgs)
-			If Me.TotalTabCount > Me.MaxTabCount Then ' replace with your cancel condition
-				e.Cancel = True
-			Else
-				e.Item = New Person("P " & Me.Items.Count)
-			End If
-		End Sub
-	```
+	<snippet id='radtabbedwindow-events-block_1-cs' />
+	<snippet id='radtabbedwindow-events-block_2-vb' />
 	
 	If the __ItemsSource of the control is populated (data binding scenario)__, the Item property will be empty (*null*) and you should manually set it to an object of your business type. Otherwise, no tab will added.
 	
 	__Handle the AddingNewTab event__
 	
-	```C#
-		private void RadTabbedWindow_AddingNewTab(object sender, TabControlAddingNewTabEventArgs e)
-		{
-			RadTabItem tabItem = e.Item as RadTabItem;
-            if (tabItem != null)
-            {
-                tabItem.Header = "New tab";
-                tabItem.Content = "Empty tab";
-            } 
-		}
-	```
-	```VB.NET
-		Private Sub RadTabbedWindow_AddingNewTab(ByVal sender As Object, ByVal e As TabControlAddingNewTabEventArgs)
-			Dim tabItem As RadTabItem = TryCast(e.Item, RadTabItem)
-
-			If tabItem IsNot Nothing Then
-				tabItem.Header = "New tab"
-				tabItem.Content = "Empty tab"
-			End If
-		End Sub
-	```
+	<snippet id='radtabbedwindow-events-block_3-cs' />
+	<snippet id='radtabbedwindow-events-block_4-vb' />
 	
 	>tip If the Item property is left empty (*null*), no tab will be added.
 
@@ -93,83 +54,15 @@ The following example demonstrates how you can cancel the creation of the new wi
 
 __Handle the TabbedWindowCreating event in an unbound scenario__
 
-```C#
-    private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
-    {
-		var tab = e.DraggedItem as RadTabItem;
-        if (tab != null && tab.Header.ToString() == "Progress") // replace with your cancel condition
-        {
-            e.Cancel = true;
-        }
-        else
-        {
-            e.NewWindow.AddingNewTab += this.MainWindow_AddingNewTab; // the AddingNewTab handler of the main RadTabbedWindow
-        }
-    }
-```
-```VB.NET
-	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
-		Dim tab = TryCast(e.DraggedItem, RadTabItem)
-		If tab IsNot Nothing AndAlso tab.Header.ToString() = "Progress" Then ' replace with your cancel condition
-			e.Cancel = True
-		Else
-			e.NewWindow.AddingNewTab += Me.MainWindow_AddingNewTab ' the AddingNewTab handler of the main RadTabbedWindow
-		End If
-	End Sub
-```
+<snippet id='radtabbedwindow-events-block_5-cs' />
+<snippet id='radtabbedwindow-events-block_6-vb' />
 
 You can also use the TabbedWindowCreating event to clear, update or replace the ItemsSource of the new window. The following example demonstrates how to do so in a **databound scenario**.
 
 __Change the ItemsSource of the new window in a databinding scenario__
 
-```C#
-    private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
-    {
-		var tabItem = e.DraggedItem as MyTabItem;
-        if (tabItem != null && tabItem.Header == "Progress")
-        {
-            e.NewWindow.ItemsSource = null; 
-		}
-        else if (tabItem != null && tabItem.Header == "Microsoft")
-        {
-            var collection = e.NewWindow.ItemsSource as ObservableCollection<object>;
-            if (collection != null)
-            {
-                collection.Add(new MyTabItem() { Header = "My tab 1" });
-                collection.Add(new MyTabItem() { Header = "My tab 2" });
-            }
-		}
-        else
-        {
-            var collection = new ObservableCollection<Person>();
-			collection.Add(new Person() { Name = "John Doe", Age = 23 });
-            e.NewWindow.ItemsSource = collection;
-            e.NewWindow.DisplayMemberPath = "Name";
-        }
-    }
-```
-```VB.NET
-	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
-		Dim tabItem = TryCast(e.DraggedItem, MyTabItem)
-		If tabItem IsNot Nothing AndAlso tabItem.Header = "Progress" Then
-			e.NewWindow.ItemsSource = Nothing
-		ElseIf tabItem IsNot Nothing AndAlso tabItem.Header = "Microsoft" Then
-			Dim collection = TryCast(e.NewWindow.ItemsSource, ObservableCollection(Of Object))
-			If collection IsNot Nothing Then
-				collection.Add(New MyTabItem() With {.Header = "My tab 1"})
-				collection.Add(New MyTabItem() With {.Header = "My tab 2"})
-			End If
-		Else
-			Dim collection = New ObservableCollection(Of Person)
-			collection.Add(New Person() With {
-				.Name = "John Doe",
-				.Age = 23
-			})
-			e.NewWindow.ItemsSource = collection
-			e.NewWindow.DisplayMemberPath = "Name"
-		End If
-	End Sub
-```
+<snippet id='radtabbedwindow-events-block_7-cs' />
+<snippet id='radtabbedwindow-events-block_8-vb' />
 
 ## PreviewTabClosed
 

@@ -19,22 +19,8 @@ The __GraphicScale__ class is used as a base class for the LinearScale and the R
 The scales display values depending on their __Min__ and __Max__ properties. However there are cases, in which you might want to modify the value of the first or the last tick of the scale. For example, if you have a scale with a minimum value of __0.95__ and a maximum value of __20.8__, but you want to show the ticks for integer values only (from 1 to 20 only), you can use the __StartTickOffset__ and the __EndTickOffset__ properties of the scale to adjust the fist and the last tick's values. __Example 1__ demonstrates this approach.
 
 __Example 1: Set StartTickOffset and EndTickOffset__
-```XAML
-	<telerik:RadVerticalLinearGauge Width="102" Height="210" telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0.95" Max="20.8"
-	                         EndTickOffset="-0.8"
-	                         StartTickOffset="0.05"
-	                         RelativeY="0"
-	                         RelativeHeight="1"
-	                         Fill="#FFD6D4D4"
-	                         StartWidth="0.06"
-	                         EndWidth="0.06"
-	                         MajorTickOffset="0.03*" MinorTickOffset="0.03*"
-	                         LabelOffset="0.13*"
-	                         MajorTickRelativeHeight="0.003*" MinorTickRelativeHeight="0.003*"
-	                         MiddleTicks="1" MinorTicks="3"/>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-basics-example_1_set_starttickoffset_and_endtickoffset-xaml' />
+
 
 #### __Figure 1: Result from Example 1__
 ![VerticalLinearScale with StartTickOffset and EndTickOffset](images/RadGauge_Features_BaseScale_01.png)
@@ -46,20 +32,8 @@ You are allowed to specify the width of the scale at its beginning and at its en
 >tip To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
 __Example 2: Set StartWidth and EndWidth properties__
-```XAML
-	<telerik:RadVerticalLinearGauge Width="102" Height="210" telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="20"
-	                         RelativeY="0"
-	                         RelativeHeight="1"
-	                         StartWidth="0.02" EndWidth="0.08"
-	                         Fill="#FFD6D4D4"
-	                         Stroke="#FFD6D4D4"
-	                         MajorTickOffset="0.03*" MinorTickOffset="0.03*"
-	                         LabelOffset="0.13*"
-	                         MajorTickRelativeHeight="0.003*" MinorTickRelativeHeight="0.003*"
-	                         MiddleTicks="1" MinorTicks="3"/>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-basics-example_2_set_startwidth_and_endwidth_properties-xaml' />
+
 
 #### __Figure 2: Result from Example 2__
 ![VerticalLinearScale with StartWidth and EndWidth](images/RadGauge_Features_BaseScale_02.png)
@@ -69,17 +43,8 @@ __Example 2: Set StartWidth and EndWidth properties__
 The __Interactivity__ feature allows the user to interact with the scale. Enabling the feature will allow one to drag the marker along the scale. By default this feature is turned off. In order to toggle it use the __IsInteractive__ property of the scale. This is demonstrated in __Example 3__.
 
 __Example 3: Enablе the interactivity of a scale__
-```XAML
-	<telerik:RadVerticalLinearGauge x:Name="linearGauge" telerik:StyleManager.Theme="Windows8"
-	                        Width="102" Height="210">
-	    <telerik:VerticalLinearScale x:Name="linearScale"
-	                            Min="1"
-	                            Max="12"
-	                            IsInteractive="True">
-	        <telerik:Marker Value="1" />
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-basics-example_3_enabl_the_interactivity_of_a_scale-xaml' />
+
 
 ## Logarithmic Scale
 
@@ -94,37 +59,16 @@ Both radial and linear scales have a Distribution property which specifies the v
 >tip The default value for the __LogarithmicBase__ property of the logarithmic distributions is __10__.
 
 __Example 3: RadialScale with RegularDistribution__
-```XAML
-	<telerik:RadRadialGauge>
-		<telerik:RadialScale Min="1" Max="100">
-			<telerik:RadialScale.Distribution>
-				<telerik:RegularDistribution />
-			</telerik:RadialScale.Distribution>
-		</telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-basics-example_3_radialscale_with_regulardistribution-xaml' />
+
 
 __Example 4: RadialScale with RangeLogarithmicDistribution__
-```XAML
-	<telerik:RadRadialGauge>
-		<telerik:RadialScale Min="-10" Max="100">
-			<telerik:RadialScale.Distribution>
-				<telerik:RangeLogarithmicDistribution />
-			</telerik:RadialScale.Distribution>
-		</telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-basics-example_4_radialscale_with_rangelogarithmicdistribution-xaml' />
+
 
 __Example 5: RadialScale with ClassicLogarithmicDistribution__
-```XAML
-	<telerik:RadRadialGauge>
-		<telerik:RadialScale Min="1" Max="100">
-			<telerik:RadialScale.Distribution>
-				<telerik:ClassicLogarithmicDistribution />
-			</telerik:RadialScale.Distribution>
-		</telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-basics-example_5_radialscale_with_classiclogarithmicdistribution-xaml' />
+
 
 #### __Figure 3: Results from Examples 3,4,5 respectively__
 ![RadialScales with different distributions](images/RadGauge_Features_BaseScale_03.png)
@@ -134,16 +78,8 @@ __Example 5: RadialScale with ClassicLogarithmicDistribution__
 The scales allow you to reverse the direction, in which it displays its values. To do it, just set the __IsReversed__ property to __True__ as demonstrated in __Example 6__.
 
 __Example 6: Create reversed scale__
-```XAML
-	<telerik:RadVerticalLinearGauge x:Name="linearGauge" telerik:StyleManager.Theme="Windows8"
-	                        Width="102" Height="210">
-	    <telerik:VerticalLinearScale x:Name="linearScale"
-	                            Min="1"
-	                            Max="12"
-	                            IsReversed="True">
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-basics-example_6_create_reversed_scale-xaml' />
+
 
 #### __Figure 4: Result from Example 6__
 ![Gauge with reversed scale](images/RadGauge_Features_BaseScale_04.png)
@@ -155,18 +91,8 @@ You can specify the scale to either display or not its last and first labels. Th
 >The __ShowLastLabel__ value is applied only, when the ticks of the scale are defined via the __MajorTickStep__ property.
 
 __Example 7: Set ShowFirstLabel and ShowLastLabel__
-```XAML
-	<telerik:RadVerticalLinearGauge x:Name="linearGauge" telerik:StyleManager.Theme="Windows8"
-	                        Width="102" Height="210">
-	    <telerik:VerticalLinearScale x:Name="linearScale"
-	                            Min="1"
-	                            Max="12"
-	                            ShowFirstLabel="True"
-	                            ShowLastLabel="False"
-	                            MajorTickStep="2">
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-basics-example_7_set_showfirstlabel_and_showlastlabel-xaml' />
+
 
 #### __Figure 5: Result from Example 7__
 ![Scale without last label](images/RadGauge_Features_BaseScale_05.png)

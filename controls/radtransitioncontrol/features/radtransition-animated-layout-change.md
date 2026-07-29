@@ -61,10 +61,4 @@ This transition provider has only one option – to set its Orientation to Horiz
 
 
 
-```XAML
-	<telerik:RadTransitionControl VerticalAlignment="Top" Content="{Binding ElementName=ImageSelector, Path=SelectedItem}">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerik:LayoutClipTransition Orientation="Vertical" />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-animated-layout-change-block_1-xaml' />

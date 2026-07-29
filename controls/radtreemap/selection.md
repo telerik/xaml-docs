@@ -15,17 +15,11 @@ __RadTreeMap__ and __RadPivotMap__ support selection functionality which is disa
 > The following examples use __RadTreeMap__ but the same properties are exposed by the __RadPivotMap__ control as well.
 
 
-```XAML
-	<telerik:RadTreeMap IsSelectionEnabled="True">
-```
+<snippet id='radtreemap-selection-block_1-xaml' />
 
 
-```C#
-	treeMap.IsSelectionEnabled = true;
-```
-```VB.NET
-	treeMap.IsSelectionEnabled = True
-```
+<snippet id='radtreemap-selection-block_2-cs' />
+<snippet id='radtreemap-selection-block_3-vb' />
 
 ## Selection Modes
 
@@ -35,17 +29,11 @@ The selection feature supports several modes which you can set through the __Sel
 * __Extended__: This mode combines the Single and Multiple modes. Clicking an item deselect the others, however, if the Ctrl key is pressed the previous selection will be preserved.
 
 
-```XAML
-	<telerik:RadTreeMap SelectionMode="Extended" />
-```
+<snippet id='radtreemap-selection-block_4-xaml' />
 	
 
-```C#
-	treeMap.SelectionMode = System.Windows.Controls.SelectionMode.Extended;
-```
-```VB.NET
-	treeMap.SelectionMode = System.Windows.Controls.SelectionMode.Extended
-```
+<snippet id='radtreemap-selection-block_5-cs' />
+<snippet id='radtreemap-selection-block_6-vb' />
 
 
 ## Related Properties

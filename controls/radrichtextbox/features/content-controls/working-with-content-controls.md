@@ -21,14 +21,7 @@ The content controls can be retrieved by using the __GetAnnotationMarkersOfType_
 
 
 
-```C#
-
-    IEnumerable<SdtRangeStart> content_controls = this.radRichTextBox.Document.GetAnnotationMarkersOfType<SdtRangeStart>();
-    foreach (SdtRangeStart item in content_controls)
-    {
-        Console.WriteLine("Type: {0} ID:{1}", item.SdtProperties.Type, item.SdtProperties.ID);
-    }
-```
+<snippet id='radrichtextbox-features-content-controls-working-with-content-controls-block_1-cs' />
 
 ### Set Content Controls Properties
 
@@ -38,21 +31,7 @@ This example show how one can iterate the items and add an item to to a existing
 
 
 
-```C#
-
-    foreach (SdtRangeStart item in content_controls)
-    {
-        if (item.SdtProperties.Type == SdtType.ComboBox)
-        {
-            ComboBoxProperties properties = item.SdtProperties as ComboBoxProperties;
-
-            ListItem newItem = new ListItem();
-            newItem.DisplayText = "New Item Text";
-
-            properties.Items.Add(newItem);
-        }
-    }
-```
+<snippet id='radrichtextbox-features-content-controls-working-with-content-controls-block_2-cs' />
 
 ## Insert New Content Controls
 
@@ -62,42 +41,19 @@ New content controls can be inserted trough one of the overloads of the **Insert
 
 
 
-```C#
-
-    this.radRichTextBox.InsertStructuredDocumentTag();
-    // OR
-    RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
-    editor.InsertStructuredDocumentTag();
-```
+<snippet id='radrichtextbox-features-content-controls-working-with-content-controls-block_3-cs' />
 
 #### Example 4: Inserting a content control using content control type
 
 
 
-```C#
-
-    this.radRichTextBox.InsertStructuredDocumentTag(SdtType.CheckBox);
-    // OR
-    RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
-    editor.InsertStructuredDocumentTag(SdtType.CheckBox);
-```
+<snippet id='radrichtextbox-features-content-controls-working-with-content-controls-block_4-cs' />
 
 #### Example 5: Inserting a content control using content control properties
 
 
 
-```C#
-
-    SdtProperties sdtProperties = new SdtProperties(SdtType.RichText)
-    {
-        Alias = "AliasName",
-        Lock = Lock.SdtContentLocked,
-    };
-    this.radRichTextBox.InsertStructuredDocumentTag(sdtProperties);
-    // OR
-    RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
-    editor.InsertStructuredDocumentTag(sdtProperties);
-```
+<snippet id='radrichtextbox-features-content-controls-working-with-content-controls-block_5-cs' />
 
 # See Also
 * [Content Controls Overview]({%slug radrichtextbox-features-content-controls%})

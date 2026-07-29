@@ -17,46 +17,12 @@ RadPdfViewer supports link annotations, which means that if you open a PDF file 
 * `AnnotationClicked` event of `RadPdfViewer`&mdash;This event is fired when you click on an annotation such as a hyperlink.  It comes in handy when you want to detect or even cancel the opening of a web page. The `AnnotationEventArgs` contains the `Annotation` and `Link` objects. The action of the clicked annotation can be determined by the `Action` property of the event args. Handling the event in the following manner will not only show the URI of each clicked link as the text of a MessageBox, but will also cancel the default navigation behavior.
 
 	__Defining the AnnotationClicked event handler__
-	```C#
-		private void viewer_AnnotationClicked(object sender, AnnotationEventArgs e)
-		{
-			Link l = e.Annotation as Link;
-			if (l == null)
-			{
-				return;
-			}
-			UriAction a = l.Action as UriAction;
-			if (a == null)
-			{
-				return;
-			}
-			MessageBox.Show(a.Uri.ToString());
-			e.Handled = true;
-		}       
-	```
+	<snippet id='radpdfviewer-document-model-annotations-block_1-cs' />
 
 * `HyperlinkClicked` event of `RadPdfViewer`&mdash;This event is similar to `AnnotationClicked`, but it is raised only when you click on the __hyperlink__ type annotations. It allows you to cancel the navigation to the associated URI or to modify the click action. The `HyperlinkClickedEventArgs` gives access to the URL, which can be manually checked if it is trusted. In case the navigation should be canceled, set the `Handled` property of the event args to `true` or the `IsTrustedUrl` property to `false`.
 
 	__Using the HyperlinkClicked event to ask the customer if wants to open the hyperlink__
-	```C#		
-		private void RadPdfViewer_HyperlinkClicked(object sender, Telerik.Windows.Documents.Fixed.HyperlinkClickedEventArgs e)
-		{
-			if (e.Url.EndsWith("exe"))
-			{
-				e.Handled = true;
-				MessageBoxResult Result = MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-				if (Result == MessageBoxResult.Yes)
-				{
-					Process.Start(new ProcessStartInfo()
-					{
-						FileName = e.Url,
-						UseShellExecute = true
-					});
-				}
-			}
-		}
-	```
+	<snippet id='radpdfviewer-document-model-annotations-block_2-cs' />
 
 
 ## Accessing the Annotations Collection
@@ -64,56 +30,24 @@ RadPdfViewer supports link annotations, which means that if you open a PDF file 
 The `Annotations` collection property of `RadFixedDocument` provides access to all annotations in the document.
 
 __Accessing all annotations in the document__ 
-```C#
-	private IEnumerable<Link> GetAllLinks(RadFixedDocument document) 
-	{ 
-		foreach (Annotation a in document.Annotations) 
-		{ 
-			Link l = a as Link; 
-			if (l != null) 
-			{ 
-				yield return l; 
-			} 
-		} 
-	} 
-```
+<snippet id='radpdfviewer-document-model-annotations-block_3-cs' />
 
 ## Working with Bookmarks
 
 The bookmarks in terms of “docx bookmarks” are not explicitly saved in PDF files. They are persisted only if there are link annotations assigned to them. The following example shows how to retrieve all bookmark destinations that have links anchored to them.
 
 __Accessing annotations containing bookmarks__
-```C#
-	private IEnumerable<Destination> GetAllBookmarks(RadFixedDocument document) 
-	{ 
-	    foreach (Annotation a in document.Annotations) 
-	    { 
-	        Link l = a as Link; 
-	        if (l != null && l.Destination != null) 
-	        { 
-	            yield return l.Destination; 
-	        } 
-	    } 
-	}
-```
+<snippet id='radpdfviewer-document-model-annotations-block_4-cs' />
 
 The following example shows how to manually navigate to a bookmark. This idea can be used to implement external auto-[scrolling]({%slug radpdfviewer-scrolling%}) logic (like a table of content UI).
 
 __Using the GoToDestination method__
-```C#
-	private void GoToDestination(Destination destination) 
-	{ 
-	    this.pdfViewer.GoToDestination(destination); 
-	}
-```
+<snippet id='radpdfviewer-document-model-annotations-block_5-cs' />
 
 It is not necessary for the `Destination` object to be existing. You can create one and manually adjust the scroll position.
 
 __Creating a Destination object manually__
-```C#
-	Destination destination = new Location() { Page = this.pdfViewer.Document.Pages[2], Left = 0, Top = 0, Zoom = 1 };
-	this.pdfViewer.GoToDestination(destination); 
-```
+<snippet id='radpdfviewer-document-model-annotations-block_6-cs' />
 
 The code above will scroll the document to bring the top-left corner of the third page (indexing starts at 0) into view. The same scenario can be implemented using the `GoToPage(int pageNumber)` when pageNumber = 2, but when using `Destination` objects you have more control in terms of the horizontal and vertical offsets.        	 
 

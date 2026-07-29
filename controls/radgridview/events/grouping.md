@@ -32,29 +32,15 @@ The code snippets below show how to subscribe for those events:
 
 
 
-```XAML
-	<telerik:RadGridView Name="clubsGrid" 
-	            ItemsSource="{Binding Clubs}"
-	            Grouping="clubsGrid_Grouping"
-	            Grouped="clubsGrid_Grouped"
-	            GroupRowIsExpandedChanged="clubsGrid_GroupRowIsExpandedChanged"
-	            GroupRowIsExpandedChanging="clubsGrid_GroupRowIsExpandedChanging" />
-```
+<snippet id='radgridview-events-grouping-block_1-xaml' />
 
 
 
-```C#
-	clubsGrid.Grouping += clubsGrid_Grouping;
-	clubsGrid.Grouped += clubsGrid_Grouped;
-	clubsGrid.GroupRowIsExpandedChanged += clubsGrid_GroupRowIsExpandedChanged;
-	clubsGrid.GroupRowIsExpandedChanging += clubsGrid_GroupRowIsExpandedChanging;
-```
-```VB.NET
-	AddHandler clubsGrid.Grouping, AddressOf clubsGrid_Grouping
-	AddHandler clubsGrid.Grouped, AddressOf clubsGrid_Grouped
-	AddHandler clubsGrid.GroupRowIsExpandedChanged, AddressOf clubsGrid_GroupRowIsExpandedChanged
-	AddHandler clubsGrid.GroupRowIsExpandedChanging, AddressOf clubsGrid_GroupRowIsExpandedChanging
-```
+
+<snippet id='radgridview-events-grouping-block_2-cs' />
+
+<snippet id='radgridview-events-grouping-block_2-vb' />
+
 
 
 ## Grouping event
@@ -89,22 +75,10 @@ For example, you can use the __Grouping__ event to prevent the user from adding 
 
 
 
-```C#
-	private void clubsGrid_Grouping(object sender, GridViewGroupingEventArgs e)
-	{
-	    if (e.Action == GroupingEventAction.Place && e.Index > 0)
-	    {
-	        e.Cancel = true;
-	    }
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_Grouping(sender As Object, e As GridViewGroupingEventArgs)
-	    If e.Action = GroupingEventAction.Place AndAlso e.Index > 0 Then
-	        e.Cancel = True
-	    End If
-	End Sub
-```
+<snippet id='radgridview-events-grouping-block_3-cs' />
+
+<snippet id='radgridview-events-grouping-block_3-vb' />
+
 
 
 ## Grouped event
@@ -143,19 +117,10 @@ For example, you can use the __Grouped__ event to get the column that is grouped
 
 
 
-```C#
-	private void clubsGrid_Grouped(object sender, GridViewGroupedEventArgs e)
-	{
-	    GridViewDataColumn column = ((Telerik.Windows.Controls.GridView.ColumnGroupDescriptor)(e.GroupDescriptor)).Column as GridViewDataColumn;
-	    MessageBox.Show("The GridView was grouped by column: " + column.Header.ToString());
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_Grouped(sender As Object, e As GridViewGroupedEventArgs)
-	    Dim column As GridViewDataColumn = TryCast(DirectCast(e.GroupDescriptor, Telerik.Windows.Controls.GridView.ColumnGroupDescriptor).Column, GridViewDataColumn)
-	    MessageBox.Show("The GridView was grouped by column: " + column.Header.ToString())
-	End Sub
-```
+<snippet id='radgridview-events-grouping-block_4-cs' />
+
+<snippet id='radgridview-events-grouping-block_4-vb' />
+
 
 
 ## GroupRowIsExpandedChanging event
@@ -171,17 +136,10 @@ For example, you can use the __GroupRowIsExpandedChanging__ event like so.
 
 
 
-```C#
-	private void clubsGrid_GroupRowIsExpandedChanging(object sender, Telerik.Windows.Controls.GridView.GroupRowCancelEventArgs e)
-	{
-	    e.Cancel = true;
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_GroupRowIsExpandedChanging(sender As Object, e As Telerik.Windows.Controls.GridView.GroupRowCancelEventArgs)
-	    e.Cancel = True
-	End Sub
-```
+<snippet id='radgridview-events-grouping-block_5-cs' />
+
+<snippet id='radgridview-events-grouping-block_5-vb' />
+
 
 
 ## GroupRowIsExpandedChanged event
@@ -197,30 +155,10 @@ For example, you can use the __GroupRowIsExpandedChanged__ event to get the expa
 
 
 
-```C#
-	private void clubsGrid_GroupRowIsExpandedChanged(object sender, Telerik.Windows.Controls.GridView.GroupRowEventArgs e)
-	{
-	    GridViewGroupRow expandedGroup = e.Row as GridViewGroupRow;
-	    if (expandedGroup.IsExpanded)
-	    {
-	        expandedGroup.Background = new SolidColorBrush(Colors.Red);
-	    }
-	    else
-	    {
-	        expandedGroup.Background = new SolidColorBrush(Colors.Green);
-	    }
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_GroupRowIsExpandedChanged(sender As Object, e As Telerik.Windows.Controls.GridView.GroupRowEventArgs)
-	    Dim expandedGroup As GridViewGroupRow = TryCast(e.Row, GridViewGroupRow)
-	    If expandedGroup.IsExpanded Then
-	        expandedGroup.Background = New SolidColorBrush(Colors.Red)
-	    Else
-	        expandedGroup.Background = New SolidColorBrush(Colors.Green)
-	    End If
-	End Sub
-```
+<snippet id='radgridview-events-grouping-block_6-cs' />
+
+<snippet id='radgridview-events-grouping-block_6-vb' />
+
 
 
 ## See Also

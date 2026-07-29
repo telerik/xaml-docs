@@ -14,72 +14,22 @@ As explained in the [External Row Details]({%slug radgridview-row-details-extern
 
 __Example 1: Creating a RadWindow and setting a DetailsPresenter as its Content__
 
-```C#
-	private void Grid_Loaded(object sender, RoutedEventArgs e)
-	{
-	    this.window = new RadWindow();
-	    this.window.Content = new DetailsPresenter()
-	    {
-		// Link the external details presenter to our RadGridView.
-		DetailsProvider = this.clubsGrid.RowDetailsProvider
-	    };
-	    this.window.WindowStartupLocation = Telerik.Windows.Controls.WindowStartupLocation.Manual;
-	    this.window.Header = "Row Details";
-	    this.window.ResizeMode = ResizeMode.NoResize;
-	    this.Grid.RowDetailsProvider.PropertyChanged += this.OnRowDetailsProviderPropertyChanged;
-	}
-```
+<snippet id='radgridview-row-details-how-to-display-window-example_1_creating_a_radwindow_and_setting_a_detailspresenter_as_its_content-cs' />
+
 
 The DetailsPresenter cares about three things – what is the [DataTemplate](http://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) it needs to load, whether it is visible or not, and what is its [DataContext](http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.datacontext.aspx). All this information comes through its **DetailsProvider** property which is assigned from RadGridView's respective property **RowDetailsProvider**. This means that this particular DetailsPresenter will be fed by this particular RadGridView. Let’s take a look at the interface:
 
 __Example 2: The IDetailsProvider interface__
 
-```C#
-	public interface IDetailsProvider : INotifyPropertyChanged
-	{
-	    DataTemplate Template { get; }
-	    Visibility Visibility { get; }
-	    object DataContext { get; }
-	    //Rest of the code is omitted
-	}
-```
+<snippet id='radgridview-row-details-how-to-display-window-example_2_the_idetailsprovider_interface-cs' />
+
 
 As you can see, it implements the [INotifyPropertyChanged](http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface. Each time a row is selected in RadGridView, the DataContext of the DetailsProvider changes. The DetailsPresenter listens for these property changes and updates as needed. We can listen for a PropertyChanged ourselves and position the window accordingly.
 
 __Example 3: Handling the PropertyChanged event__
 
-```C#
-	private void OnRowDetailsProviderPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-	{
-	    if (e.PropertyName == "DataContext")
-	    {
-	        // This indicates that selection has changed in RadGridView.
-	        var currentItem = this.clubsGrid.RowDetailsProvider.DataContext;
-	        if (currentItem != null)
-	        {
-	            // A row is selected.
-	            var row = this.Grid.ItemContainerGenerator.ContainerFromItem(currentItem) as GridViewRow;
-	            Point newLocation = this.CalculateWindowLocation(row);
-	            // Show the window next to the row on the right
-	            this.window.Left = newLocation.X;
-	            this.window.Top = newLocation.Y;
-	            this.window.Show();
-	        }
-	        else
-	        {
-	            // There is no selection.
-	            this.window.Close();
-	        }
-	    }
-	}
-	
-	private Point CalculateWindowLocation(GridViewRow row)
-	{
-            var lastCell = row.Cells[row.Cells.Count - 1];
-            GeneralTransform generalTransform = lastCell.TransformToVisual(this.LayoutRoot);
-            return generalTransform.Transform(new Point(lastCell.ActualWidth + 10, 0));
-	}
-```
+<snippet id='radgridview-row-details-how-to-display-window-example_3_handling_the_propertychanged_event-cs' />
+
 
 That's about all you need to do to display the row details in a separate window.
 

@@ -57,102 +57,14 @@ The chart axes share a set of common features that can be used via the following
 The axis supports arbitrary visualization of the ticks and labels through `DataTemplate` objects. Also, it supports a dash array and a stroke color for the visualization of the axis line. For increased flexibility, the label templates can be selected dynamically with a template selector, as shown in the following examples:
 
 __Setting LabelTemplateSelector of a LinearAxis__
-```XAML
-	<Grid.Resources>
-	   <DataTemplate x:Key="GrayTemplate">
-	       <Border BorderThickness="2"
-	               BorderBrush="Gray">
-	           <TextBlock Text="{Binding}"/>
-	       </Border>
-	   </DataTemplate>
-	   <DataTemplate x:Key="WhiteTemplate">
-	       <Border BorderThickness="2"
-	               BorderBrush="White">
-	           <TextBlock Text="{Binding}"/>
-	       </Border>
-	   </DataTemplate>
-	
-	   <local:BinaryTemplateSelector x:Key="Selector"
-	                                 Template1="{StaticResource GrayTemplate}"
-	                                 Template2="{StaticResource WhiteTemplate}"/>
-	</Grid.Resources>
-	
-	<telerik:RadCartesianChart x:Name="chart">
-	    <telerik:RadCartesianChart.HorizontalAxis>
-	         <telerik:LinearAxis Maximum="100"
-	                           LineStroke="Gray"
-	                           LineDashArray="5, 10, 15"
-	                           TickThickness="5"
-	                           LabelTemplateSelector="{StaticResource Selector}">
-	            <telerik:LinearAxis.MajorTickTemplate>
-	                <DataTemplate>
-	                    <Ellipse Fill="White"/>
-	                </DataTemplate>
-	            </telerik:LinearAxis.MajorTickTemplate>
-	         </telerik:LinearAxis>
-	    </telerik:RadCartesianChart.HorizontalAxis>
-	
-	    <telerik:RadCartesianChart.VerticalAxis>
-	        <telerik:LinearAxis Maximum="100"/>
-	    </telerik:RadCartesianChart.VerticalAxis>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-axis-setting_labeltemplateselector_of_a_linearaxis-xaml' />
+
 
 __BinaryTemplateSelector Definition__
-```C#
-	public class BinaryTemplateSelector : DataTemplateSelector
-	{
-	    public DataTemplate Template1
-	    {
-	        get;
-	        set;
-	    }
-	    public DataTemplate Template2
-	    {
-	        get;
-	        set;
-	    }
-	    public override DataTemplate SelectTemplate(object item, DependencyObject container)
-	    {
-	        DataTemplate tmp = this.Template1;
-	        this.Template1 = this.Template2;
-	        this.Template2 = tmp;
-	        return tmp;
-	    }
-	}
-```
-```VB.NET
-	Public Class BinaryTemplateSelector
-	    Inherits DataTemplateSelector
-	    Private _template1 As DataTemplate
-	    Private _template2 As DataTemplate
-	
-	    Public Property Template1 As DataTemplate
-	        Get
-	            Return Me._template1
-	        End Get
-	        Set(value As DataTemplate)
-	            Me._template1 = value
-	        End Set
-	    End Property
-	    Public Property Template2 As DataTemplate
-	        Get
-	            Return Me._template2
-	        End Get
-	
-	        Set(value As DataTemplate)
-	            Me._template2 = value
-	        End Set
-	    End Property
-	    Public Overrides Function SelectTemplate(item As Object, container As System.Windows.DependencyObject) As System.Windows.DataTemplate
-	        Dim tmp As DataTemplate
-	        tmp = Me.Template1
-	        Me.Template1 = Me.Template2
-	        Me.Template2 = tmp
-	        Return tmp
-	    End Function
-	End Class
-```
+<snippet id='radchartview-axes-axis-binarytemplateselector_definition-cs' />
+
+<snippet id='radchartview-axes-axis-binarytemplateselector_definition-vb' />
+
 
 ![RadChartView Horizontal Axis with LabelTemplateSelector](images/radchartview-chart_axes_axisconfig.png)
 

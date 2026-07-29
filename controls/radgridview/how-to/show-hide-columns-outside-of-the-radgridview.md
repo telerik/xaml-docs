@@ -26,57 +26,21 @@ The example will represent a __ListBox and RadGridView__. The ListBox will list 
 Here are the definitions of the controls.
 
 
-```XAML
-	<Grid Background="White">
-	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="150"/>
-	        <ColumnDefinition Width="*"/>
-	    </Grid.ColumnDefinitions>
-	    <ListBox />
-	    <telerik:RadGridView Grid.Column="1"
-	                 Margin="10,0,0,0" />
-	</Grid>
-```
+<snippet id='radgridview-how-to-show-hide-columns-outside-of-the-radgridview-block_1-xaml' />
+
 
 Next bind the __ListBox.ItemsSource__ to __RadGridView.Columns__ collection via Element Binding.
 
 
-```XAML
-	<Grid Background="White">
-	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="150"/>
-	        <ColumnDefinition Width="*"/>
-	    </Grid.ColumnDefinitions>
-	    <ListBox ItemsSource="{Binding Columns, ElementName=radGridView}" />
-	    <telerik:RadGridView x:Name="radGridView"
-	                 Grid.Column="1" 
-	                 Margin="10,0,0,0" />
-	</Grid>
-```
+<snippet id='radgridview-how-to-show-hide-columns-outside-of-the-radgridview-block_2-xaml' />
+
 
 After that define __DataTemplate__ for __ItemTemplate__ property of the ListBox. It should include a __CheckBox__ and you can bind its __IsChecked__ property to __column.IsVisible__ property using __TwoWay__ Data Binding.
 
 
 
-```XAML
-	<Grid Background="White">
-	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="150"/>
-	        <ColumnDefinition Width="*"/>
-	    </Grid.ColumnDefinitions>
-	    <ListBox ItemsSource="{Binding Columns, ElementName=radGridView2}">
-	        <ListBox.ItemTemplate>
-	            <DataTemplate>
-	                <CheckBox Content="{Binding Header}"
-	                  IsChecked="{Binding IsVisible, Mode=TwoWay}" />
-	            </DataTemplate>
-	        </ListBox.ItemTemplate>
-	    </ListBox>
-	    <telerik:RadGridView x:Name="radGridView2"
-	                 Grid.Column="1" 
-	                 Margin="10,0,0,0" />
-	</Grid>
-```
+<snippet id='radgridview-how-to-show-hide-columns-outside-of-the-radgridview-block_3-xaml' />
+
 
 Provide RadGridView with an appropriate data source and run your application. The result should be similar to this snapshot:
 ![Telerik UI for {{ site.framework_name }} RadGridView with an external ListBox used to show and hide grid columns](images/RadGridView_radgridview_how_to_column_chooser_2.png)

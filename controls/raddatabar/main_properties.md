@@ -46,16 +46,8 @@ This topic aims to get you familiar with the specific properties of each data ba
 
 	__Example 1: RadDataBar properties__
 
-	```XAML
-		 <telerik:RadDataBar Height="20" Value="50" BorderBrush="Gray" BorderThickness="1" Margin="2" />
-		 <telerik:RadDataBar Height="20" Value="50" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
-		 <telerik:RadDataBar Height="20" Value="60" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
-		 <telerik:RadDataBar Height="20" Value="120" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
-		 <telerik:RadDataBar Height="20" Value="20" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
-		 <telerik:RadDataBar Height="20" Value="10" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
-		 <telerik:RadDataBar Height="20" Value="-10" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
-		 <telerik:RadDataBar Height="20" Value="-100" OriginValue="30" BorderBrush="Gray" BorderThickness="1" Margin="2" />
-	```
+	<snippet id='raddatabar-main-properties-example_1_raddatabar_properties-xaml' />
+
 
 	![raddatabar-originvalue](images/raddatabar-originvalue.PNG)
 
@@ -67,15 +59,8 @@ This topic aims to get you familiar with the specific properties of each data ba
 
 	__Example 2: RadStacked100DataBar BarBrushes property__
 
-	```XAML
-		 <telerik:RadStacked100DataBar.BarBrushes>
-			<dataBars:BrushCollection>
-				<SolidColorBrush Color="Red" />
-				<SolidColorBrush Color="Green" />
-				<SolidColorBrush Color="Blue" />
-			</dataBars:BrushCollection>
-		 </telerik:RadStacked100DataBar.BarBrushes>
-	```
+	<snippet id='raddatabar-main-properties-example_2_radstacked100databar_barbrushes_property-xaml' />
+
 
 * __BarBorderBrushes__ - a Border Brush collection that is to be used with the bars.
 

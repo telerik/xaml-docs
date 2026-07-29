@@ -24,21 +24,8 @@ The cells of __RadGridView__ have two different elements for their current state
 In order to modify the visual appearance of a cell when in __view mode__ you need to create an appropriate style targeting the **GridViewCheckBox** element. You can also [edit its control template]({%slug styling-apperance-editing-control-templates%}) if you wish to apply further customizations.
 
 __Example 2: Applying the style to the GridViewCheckBox__
-```XAML
-	<ControlTemplate x:Key="GridViewCheckBoxTemplate" TargetType="grid:GridViewCheckBox">
-		<!-- the default template for the theme -->
-    </ControlTemplate>
+<snippet id='radgridview-styles-and-templates-columns-styling-checkboxcolumn-example_2_applying_the_style_to_the_gridviewcheckbox-xaml' />
 
-	<!-- If you're using the NoXaml binaries you need to set the BasedOn property of the two styles to the GridViewCellStyle and GridViewCheckBoxStyle static resources --> 
-	<Style TargetType="telerik:GridViewCell">
-		<Style.Resources>
-			<Style TargetType="telerik:GridViewCheckBox">
-				<Setter Property="Background" Value="Red" />
-				<Setter Property="Template" Value="{StaticResource GridViewCheckBoxTemplate}"/>
-			</Style>
-		</Style.Resources>
-	</Style>
-```
 
 >If you want to apply this style only to a particular column, you can assign it an x:Key value and set the **CellStyle** property of the respective column.
 
@@ -47,24 +34,14 @@ __Example 2: Applying the style to the GridViewCheckBox__
 In order to alter the appearance of the __editor__ of __GridViewCheckBoxColumn__, you need to create an appropriate style targeting the __CheckBox__ control.
 
 __Example 3: Applying the style to the CheckBox__
-```XAML
-	<ControlTemplate TargetType="CheckBox" x:Key="CheckBoxTemplate">
-        <!-- the default template for the theme -->
-    </ControlTemplate>
+<snippet id='radgridview-styles-and-templates-columns-styling-checkboxcolumn-example_3_applying_the_style_to_the_checkbox-xaml' />
 
-	<!-- If you're using the NoXaml binaries you need to set the BasedOn property of the style to the CheckBoxStyle static resources --> 
-	<Style x:Key="MyCheckBoxStyle" TargetType="CheckBox">
-		<Setter Property="Background" Value="Red" />
-		<Setter Property="Template" Value="{StaticResource CheckBoxTemplate}"/>
-	</Style>
-```
 
 You then need to set this style as the [EditorStyle]({%slug radgridview-styling-column-editor%}) property of the columns you wish to affect.
 
 __Example 4: Applying the style to the CheckBox__
-```XAML
-	<telerik:GridViewCheckBoxColumn EditorStyle="{StaticResource MyCheckBoxStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-columns-styling-checkboxcolumn-example_4_applying_the_style_to_the_checkbox-xaml' />
+
 
 ## See Also
  * [CheckBox Column]({%slug gridview-checkbox-column%})

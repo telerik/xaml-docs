@@ -35,25 +35,11 @@ To read your data you have to use the __MapShapeReader__ class. To learn more ab
 To pass the desired KML file you have to use the __Source__ property of the __MapShapeReader__ and pass the __Uri__ to the desired .kml file to it. This will automatically generate shapes according to the data inside the file.
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <telerik:InformationLayer.Reader>
-	            <telerik:MapShapeReader Source="/MyApp;component/Data/bulgaria.kml" />
-	        </telerik:InformationLayer.Reader>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-kml-data-import-block_1-xaml' />
 
 
-```C#
-	this.informationLayer.Reader = new MapShapeReader();
-	this.informationLayer.Reader.Source = new Uri( "/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute );
-```
-```VB.NET
-	Me.informationLayer.Reader = New MapShapeReader()
-	Me.informationLayer.Reader.Source = New Uri("/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute)
-```
+<snippet id='radmap-features-information-layer-kml-data-import-block_2-cs' />
+<snippet id='radmap-features-information-layer-kml-data-import-block_2-vb' />
 
 ## Manual Shape Reading
 
@@ -63,33 +49,11 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:InformationLayer x:Name="informationLayer" />
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-kml-data-import-block_3-xaml' />
 
 
-```C#
-	private void LoadKMLData()
-	{
-	    StreamResourceInfo streamResource = Application.GetResourceStream( new Uri( "/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute ) );
-	    List<FrameworkElement> elements = KmlReader.Read( streamResource.Stream );
-	    foreach ( FrameworkElement element in elements )
-	    {
-	        this.informationLayer.Items.Add( element );
-	    }
-	}
-```
-```VB.NET
-	Private Sub LoadKMLData()
-	 Dim streamResource As StreamResourceInfo = Application.GetResourceStream(New Uri("/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute))
-	 Dim elements As List(Of FrameworkElement) = KmlReader.Read(streamResource.Stream)
-	 For Each element As FrameworkElement In elements
-	  Me.informationLayer.Items.Add(element)
-	 Next element
-	End Sub
-```   
+<snippet id='radmap-features-information-layer-kml-data-import-block_4-cs' />
+<snippet id='radmap-features-information-layer-kml-data-import-block_4-vb' />
     
 Here is a snapshot of the result:
 

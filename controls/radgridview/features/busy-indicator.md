@@ -18,9 +18,8 @@ To activate the indicator you have to set RadGridView's __IsBusy__ boolean prope
 
 __Example 1: Setting the IsBusy property__
 
-```XAML
-	<telerik:RadGridView IsBusy="True"/>
-```
+<snippet id='radgridview-features-busy-indicator-example_1_setting_the_isbusy_property-xaml' />
+
 
 You can data bind this property in any way that suits your custom logic. Note that the indicator will be visible only when the __IsBusy__ property is set to __True__.
 
@@ -43,9 +42,8 @@ In this case you also need to specify the __BusyIndicatorProgressValue__ propert
 
 __Example 2: Defining a determined indicator__
 
-```XAML
-	<telerik:RadGridView BusyIndicatorIsIndeterminate="False" BusyIndicatorProgressValue="67" />
-```
+<snippet id='radgridview-features-busy-indicator-example_2_defining_a_determined_indicator-xaml' />
+
 
 __RadGridView with determined busy indicator__
 
@@ -59,25 +57,13 @@ RadGridView also provides the option to customize what's shown as the indicator'
 
 __Example 3: Setting BusyIndicatorContent__
 
-```XAML
-	<telerik:RadGridView BusyIndicatorContent="Loading data..." />
-```
+<snippet id='radgridview-features-busy-indicator-example_3_setting_busyindicatorcontent-xaml' />
+
 
 __Example 4: Setting BusyIndicatorContentTemplate__
 
-```XAML
-	<telerik:RadGridView>
-        <telerik:RadGridView.BusyIndicatorContentTemplate>
-            <DataTemplate>
-                <StackPanel Orientation="Horizontal" DataContext="{Binding RelativeSource={RelativeSource AncestorType=telerik:RadGridView}}">
-                    <TextBlock Text="Loading... " FontWeight="Bold" />
-                    <TextBlock Text="{Binding BusyIndicatorProgressValue}" FontWeight="Bold" />
-                    <TextBlock Text="%" FontWeight="Bold" />
-                </StackPanel>
-            </DataTemplate>
-        </telerik:RadGridView.BusyIndicatorContentTemplate>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-features-busy-indicator-example_4_setting_busyindicatorcontenttemplate-xaml' />
+
 
 __RadGridView with busy indicator with custom content template__
 

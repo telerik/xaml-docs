@@ -44,46 +44,7 @@ You can show three different ToolTips for the three different styles.
 
 
 
-```XAML
-	<Window.Resources>
-	    <Style x:Key="CellToolTip" TargetType="ToolTip">
-	        <Setter Property="ContentTemplate">
-	            <Setter.Value>
-	                <DataTemplate>
-	                    <TextBlock  Text="This is CellToolTip"/>
-	                </DataTemplate>
-	            </Setter.Value>
-	        </Setter>
-	    </Style>
-	
-	    <Style x:Key="RowToolTip" TargetType="ToolTip">
-	        <Setter Property="ContentTemplate">
-	            <Setter.Value>
-	                <DataTemplate>
-	                    <TextBlock  Text="This is RowToolTip"/>
-	                </DataTemplate>
-	            </Setter.Value>
-	        </Setter>
-	    </Style>
-	    
-	    <Style x:Key="ColumnToolTip" TargetType="ToolTip">
-	        <Setter Property="ContentTemplate">
-	            <Setter.Value>
-	                <DataTemplate>
-	                    <TextBlock  Text="This is ColumnToolTip"/>
-	                </DataTemplate>
-	            </Setter.Value>
-	        </Setter>
-	    </Style>
-	</Window.Resources>
-	
-	<Grid>
-	    <pivot:RadPivotGrid Name="radPivotGrid1"
-	                        RowGroupTooltipStyle="{StaticResource RowToolTip}"
-	                        CellTooltipStyle="{StaticResource CellToolTip}"
-	                        ColumnGroupTooltipStyle="{StaticResource ColumnToolTip}">
-	</Grid>
-```
+<snippet id='radpivotgrid-features-tooltips-block_1-xaml' />
 
 {% endif %}
 
@@ -91,46 +52,7 @@ You can show three different ToolTips for the three different styles.
 
 
 
-```XAML
-	<UserControl.Resources>
-	    <Style x:Key="CellToolTip" TargetType="ToolTip">
-	        <Setter Property="ContentTemplate">
-	            <Setter.Value>
-	                <DataTemplate>
-	                    <TextBlock  Text="This is CellToolTip"/>
-	                </DataTemplate>
-	            </Setter.Value>
-	        </Setter>
-	    </Style>
-	
-	    <Style x:Key="RowToolTip" TargetType="ToolTip">
-	        <Setter Property="ContentTemplate">
-	            <Setter.Value>
-	                <DataTemplate>
-	                    <TextBlock  Text="This is RowToolTip"/>
-	                </DataTemplate>
-	            </Setter.Value>
-	        </Setter>
-	    </Style>
-	    
-	    <Style x:Key="ColumnToolTip" TargetType="ToolTip">
-	        <Setter Property="ContentTemplate">
-	            <Setter.Value>
-	                <DataTemplate>
-	                    <TextBlock  Text="This is ColumnToolTip"/>
-	                </DataTemplate>
-	            </Setter.Value>
-	        </Setter>
-	    </Style>
-	</UserControl.Resources>
-	
-	<Grid x:Name="LayoutRoot">
-	    <pivot:RadPivotGrid Name="radPivotGrid1"
-	                        RowGroupTooltipStyle="{StaticResource RowToolTip}"
-	                        CellTooltipStyle="{StaticResource CellToolTip}"
-	                        ColumnGroupTooltipStyle="{StaticResource ColumnToolTip}">
-	</Grid>
-```
+<snippet id='radpivotgrid-features-tooltips-block_2-xaml' />
 {% endif %}
 
 >If you want to use the value of the cell in the ToolTip you should set Binding to Data property. To use the DisplayName of the cell you should set Binding to AggregateDescription.DisplayName. For RowGroupToolTipStyle and ColumnGroupTooltipStyle you should set Binding to GroupDescription.DisplayName property.          

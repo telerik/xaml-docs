@@ -20,27 +20,15 @@ More specifically, the GridViewDataColumn will generate a **CheckBox** for **boo
 
 __Example 1: Define GridViewDataColumn in XAML.__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	             AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-data-column-example_1_define_gridviewdatacolumn_in_xaml-xaml' />
+
 
 __Example 2: Define GridViewDataColumn in code__
 
-```C#
-	GridViewDataColumn column = new GridViewDataColumn();
-	column.DataMemberBinding = new Binding("Id");
-	this.radGridView.Columns.Add(column);
-```
-```VB.NET
-	Dim column As New GridViewDataColumn()
-	column.DataMemberBinding = new Binding("Id")
-	Me.radGridView.Columns.Add(column)
-```
+<snippet id='radgridview-columns-columntypes-column-types-data-column-example_2_define_gridviewdatacolumn_in_code-cs' />
+
+<snippet id='radgridview-columns-columntypes-column-types-data-column-example_2_define_gridviewdatacolumn_in_code-vb' />
+
 
 The `DataMemberBinding` property defines which property from the row's underlying data item should be used to populate the cells in the column. If the `DataMemberBinding` is not set, the column will try to fallback to the `UniqueName` property of the column (if assigned) and automatically create a binding using the unique name as the property path.
 

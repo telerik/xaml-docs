@@ -36,9 +36,8 @@ You can find the required assemblies for each control from the suite in the [Con
 To use the __RadDataPager__ in the XAML you have to add the following namespace declaration: __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__ 
 
 __Example 1: Declare a RadDataPager__ 
-```XAML
-	<telerik:RadDataPager x:Name="radDataPager" />
-```
+<snippet id='raddatapager-getting-started-example_1_declare_a_raddatapager-xaml' />
+
 
 ## Configuring the RadDataPager
 
@@ -64,11 +63,8 @@ Create your __RadDataPager__ and make some basic configurations to it.
 
 __Example 2: RadDataPager bound to a collection__
 
-```XAML
-	<telerik:RadDataPager x:Name="radDataPager"
-	                      PageSize="5" 
-	                      Source="{Binding Clubs}"/>
-```
+<snippet id='raddatapager-getting-started-example_2_raddatapager_bound_to_a_collection-xaml' />
+
 
 After the collection is passed to the __Source__ property, it will get split into pages. In order to learn how to access the paged collection, please read the next section.
 
@@ -80,24 +76,8 @@ The paged collection inside the __RadDataPager__ can be accessed via the __Paged
 
 __Example 3: ListBox exposing the paged collection__
 
-```XAML
+<snippet id='raddatapager-getting-started-example_3_listbox_exposing_the_paged_collection-xaml' />
 
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <Grid.RowDefinitions>
-	        <RowDefinition />
-	        <RowDefinition Height="Auto" />
-	    </Grid.RowDefinitions>
-	      <ListBox Name="itemsControl"
-	               ItemsSource="{Binding PagedSource, ElementName=radDataPager}"/>
-	    <telerik:RadDataPager x:Name="radDataPager"
-	                            Grid.Row="1"
-	                            DisplayMode="All"
-	                            PageSize="5"                          
-	                            Margin="0,10,0,0" 
-	                            Source="{Binding Clubs}"/>
-	</Grid>
-```
 
 #### __Figure 1: Paged ListBox__
 ![Paged ListBox](images/RadDataPager_GettingStarted_02.PNG)
@@ -110,28 +90,8 @@ The collection in **Example 4** holds business objects of type __Employee__. You
 
 __Example 4: Paging RadGridView__
 
-```XAML
+<snippet id='raddatapager-getting-started-example_4_paging_radgridview-xaml' />
 
-	<Grid x:Name="LayoutRoot"
-	        Background="White">    
-	    <Grid.RowDefinitions>
-	        <RowDefinition />
-	        <RowDefinition Height="Auto" />
-	    </Grid.RowDefinitions>
-	    <telerik:RadGridView x:Name="radGridView"
-	                         ItemsSource="{Binding PagedSource, ElementName=radDataPager}"
-	                         AutoGenerateColumns="False">
-	        <telerik:RadGridView.Columns>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" />
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}" />
-	        </telerik:RadGridView.Columns>
-	    </telerik:RadGridView>
-	    <telerik:RadDataPager x:Name="radDataPager"
-	                          Source="{Binding Employees}"
-	                          PageSize="5" />
-	</Grid>
-```
 
 #### __Figure 2: Paged RadGridView__
 ![Paged RadGridView](images/RadDataPager_GettingStarted_01.png)
@@ -154,17 +114,8 @@ To change the theme, you can follow the steps below:
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 5: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Data.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='raddatapager-getting-started-example_5_merge_the_resourcedictionaries-xaml' />
+
 
 Alternatively, you can use the theme of the control via the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}).
 

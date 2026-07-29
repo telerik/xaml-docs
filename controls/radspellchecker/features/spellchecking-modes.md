@@ -24,12 +24,7 @@ To do this kind of check, use the method as follows:
 
 
 
-```C#
-	private void Button_Click( object sender, RoutedEventArgs e )
-	{
-	   RadSpellChecker.Check(this.textBox1, SpellCheckingMode.WordByWord);
-	}
-```
+<snippet id='radspellchecker-features-spellchecking-modes-block_1-cs' />
 
 
 
@@ -52,12 +47,7 @@ You can trigger this operation using the method below:
 
 
 
-```C#
-	private void Button_Click( object sender, RoutedEventArgs e )
-	{
-	   RadSpellChecker.Check(this.textBox1, SpellCheckingMode.AllAtOnce);
-	}
-```
+<snippet id='radspellchecker-features-spellchecking-modes-block_2-cs' />
 
 
 
@@ -73,22 +63,7 @@ You are presented with the same options as the WordByWord mode. The difference i
 
 
 
-```C#
-	public MainPage()
-	{
-	    InitializeComponent();
-	 
-	    ControlSpellCheckersManager.RegisterControlSpellChecker(new TextBoxSpellChecker());
-	 
-	    ControlSpellCheckersManager.RegisterControlSpellChecker(new RadRichTextBoxSpellChecker());
-	    IControlSpellChecker controlSpellchecker = ControlSpellCheckersManager.GetControlSpellChecker(typeof(RadRichTextBox));
-	    ISpellChecker spellChecker = controlSpellchecker.SpellChecker;
-	    DocumentSpellChecker documentSpellChecker = (DocumentSpellChecker)spellChecker;
-	    documentSpellChecker.AddDictionary(new RadEn_USDictionary(), new System.Globalization.CultureInfo("en-US"));
-	}
-	
-```
-
+<snippet id='radspellchecker-features-spellchecking-modes-block_3-cs' />
 
 
 

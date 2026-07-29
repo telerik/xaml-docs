@@ -24,22 +24,10 @@ To display the data from the __WCF Data Service__, create a new WPF application 
 
 __Example 1: Defining the context__
 
-```C#
+<snippet id='raddataservicedatasource-getting-started-creating-the-client-application-example_1_defining_the_context-cs' />
 
-	public class MyNorthwindContext : NorthwindEntities
-	{
-		public MyNorthwindContext() : base(new Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)){}
-	}
-```
-```VB.NET
+<snippet id='raddataservicedatasource-getting-started-creating-the-client-application-example_1_defining_the_context-vb' />
 
-	Public Class MyNorthwindContext
-	 Inherits NorthwindEntities
-	 Public Sub New()
-	  MyBase.New(New Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute))
-	 End Sub
-	End Class
-```
 
 ![{{ site.framework_name }} RadDataServiceDataSource Generated WCF Files](images/RadDataServiceDataSource_GeneratedClientCode_WPF.png){% endif %}
 
@@ -83,22 +71,10 @@ To display the data from the __WCF Data Service__, create a new __Silverlight__ 
 
 
 
-```C#
+<snippet id='raddataservicedatasource-getting-started-creating-the-client-application-example_1_defining_the_context-cs' />
 
-	public class MyNorthwindContext : NorthwindEntities
-	{
-	 public MyNorthwindContext() : base(new Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)){}
-	}
-```
-```VB.NET
+<snippet id='raddataservicedatasource-getting-started-creating-the-client-application-example_1_defining_the_context-vb' />
 
-	Public Class MyNorthwindContext
-	 Inherits NorthwindEntities
-	 Public Sub New()
-	  MyBase.New(New Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute))
-	 End Sub
-	End Class
-```
 
 
 

@@ -20,57 +20,22 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 
 
-```C#
-	public class MyViewModel : PropertyChangedBase
-	{
-	    private ObservableCollection<GanttTask> tasks;
-	
-	    public ObservableCollection<GanttTask> Tasks
-	    {
-	        //...
-	        get;
-	        set;
-	    }
-	
-	    private ObservableCollection<GanttTask> highlightedTasks;
-	
-	    public ObservableCollection<GanttTask> HighlightedTasks
-	    {
-	        get
-	        {
-	            return highlightedTasks;
-	        }
-	        set
-	        {
-	            highlightedTasks = value;
-	            OnPropertyChanged(() => HighlightedTasks);
-	        }
-	    }
-	    //...
-	}
-```
+<snippet id='radganttview-features-items-highlighting-block_1-cs' />
+
 
 * Then add the needed tasks to the HighlightedTasks:
 
 
 
-```C#
-	public MyViewModel()
-	{
-	    //...
-	    this.HighlightedTasks = new ObservableCollection<GanttTask>() { Tasks[0], Tasks[2] };
-	}
-```
+<snippet id='radganttview-features-items-highlighting-block_2-cs' />
+
 
 * Finally, bind the HighlightedTasks to __HighlightedItemsSource__ property:
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView" 
-	                      TasksSource="{Binding Tasks}" 
-	                      HighlightedItemsSource="{Binding HighlightedTasks}" />
-```
+<snippet id='radganttview-features-items-highlighting-block_3-xaml' />
+
 
 The end result should look like this:
 

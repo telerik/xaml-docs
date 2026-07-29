@@ -16,101 +16,31 @@ For this purpose you need to create a class which inherits from **DataFormDataFi
 
 __Example 1: Creating the DataFormNumericUpDownField class__
 
-```C#
-	public class DataFormNumericUpDownField : DataFormDataField
-	{
-	    protected override DependencyProperty GetControlBindingProperty()
-	    {
-	        return RadNumericUpDown.ValueProperty;
-	    }
-	    protected override Control GetControl()
-	    {
-	        DependencyProperty dependencyProperty = this.GetControlBindingProperty();
-	        RadNumericUpDown numericUpDown = new RadNumericUpDown();
-	        if (this.DataMemberBinding != null)
-	        {
-	            var binding = this.DataMemberBinding;
-	            numericUpDown.SetBinding(dependencyProperty, binding);
-	        }
-	        numericUpDown.SetBinding(RadNumericUpDown.IsEnabledProperty, new Binding("IsReadOnly") { Source = this, Converter = new InvertedBooleanConverter() });
-	        return numericUpDown;
-	    }
-	}
-```
-```VB.NET
-	Public Class DataFormNumericUpDownField
-	    Inherits DataFormDataField
-	    Protected Overrides Function GetControlBindingProperty() As DependencyProperty
-	        Return RadNumericUpDown.ValueProperty
-	    End Function
-	    Protected Overrides Function GetControl() As Control
-	        Dim dependencyProperty As DependencyProperty = Me.GetControlBindingProperty()
-	        Dim numericUpDown As New RadNumericUpDown()
-	        If Me.DataMemberBinding IsNot Nothing Then
-	            Dim binding = Me.DataMemberBinding
-	            numericUpDown.SetBinding(dependencyProperty, binding)
-	        End If
-	        numericUpDown.SetBinding(RadNumericUpDown.IsEnabledProperty, New Binding("IsReadOnly") With {
-	            .Source = Me,
-	            .Converter = New InvertedBooleanConverter()
-	        })
-	        Return numericUpDown
-	    End Function
-	End Class
-```
+<snippet id='raddataform-getting-started-defining-custom-datafields-example_1_creating_the_dataformnumericupdownfield_class-cs' />
+
+<snippet id='raddataform-getting-started-defining-custom-datafields-example_1_creating_the_dataformnumericupdownfield_class-vb' />
+
 
 The next step is to handle RadDataForm's **AutoGeneratingField** event and set the **DataField** to the new **DataFormNumericUpDownField**:
 
 __Example 2: Initializing a RadDataForm__
 
-```XAML
-	<telerik:RadDataForm x:Name="DataForm1" AutoGeneratingField="RadDataForm_AutoGeneratingField" />
-```
+<snippet id='raddataform-getting-started-defining-custom-datafields-example_2_initializing_a_raddataform-xaml' />
+
 
 __Example 3: Handling the AutoGeneratingField event__
 
-```C#
-	private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
-	{
-	    if (e.DataField.Label.Equals("Number"))
-	    {
-	        e.DataField = new DataFormNumericUpDownField() { Label = e.DataField.Label, DataMemberBinding = e.DataField.DataMemberBinding };
-	    }
-	}
-```
-```VB.NET
-		Private Sub RadDataForm_AutoGeneratingField(sender As Object, e As Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs)
-		    If e.DataField.Label.Equals("Number") Then
-		        e.DataField = New DataFormNumericUpDownField() With {
-		            .Label = e.DataField.Label,
-		            .DataMemberBinding = e.DataField.DataMemberBinding
-		        }
-		    End If
-		End Sub
-```
+<snippet id='raddataform-getting-started-defining-custom-datafields-example_3_handling_the_autogeneratingfield_event-cs' />
+
+<snippet id='raddataform-getting-started-defining-custom-datafields-example_3_handling_the_autogeneratingfield_event-vb' />
+
 
 And here's how you can use the DataFormNumericUpDownField in XAML:
           
 __Example 4: Using the DataFormNumericUpDownField in a Custom DataTemplate__
 
-```XAML
-	<Grid>
-	    <Grid.Resources>
-	        <DataTemplate x:Key="MyTemplate">
-	            <StackPanel>
-	                <telerik:DataFormDataField  Label="First Name" DataMemberBinding="{Binding FirstName, Mode=TwoWay}" />
-	                <telerik:DataFormDataField  Label="Last Name" DataMemberBinding="{Binding LastName, Mode=TwoWay}" />
-	                <my:DataFormNumericUpDownField Label="Age" DataMemberBinding="{Binding Age, Mode=TwoWay}" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </Grid.Resources>
-	    <telerik:RadDataForm AutoGenerateFields="False"
-	                     ReadOnlyTemplate="{StaticResource MyTemplate}"
-	                     EditTemplate="{StaticResource MyTemplate}"
-	                     NewItemTemplate="{StaticResource MyTemplate}">
-	    </telerik:RadDataForm>
-	</Grid>
-```
+<snippet id='raddataform-getting-started-defining-custom-datafields-example_4_using_the_dataformnumericupdownfield_in_a_custom_datatemplate-xaml' />
+
 
 ## See Also
 

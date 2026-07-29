@@ -21,104 +21,17 @@ You can add any element that derives from the UIElement class inside the __Inlin
 >In order to utilize the __InlineUIContainer__, you have to set its __Height__ and __Width__ explicitly (or use the constructor that takes a __Size__ as a parameter). Otherwise, they will not be shown in the document.          
 
 __Example 1: Add UI Element to an InlineUIContainer__  
-```XAML
-	<telerik:RadRichTextBox Name="radRichTextBox">
-	    <telerik:RadDocument>
-	        <telerik:Section>
-	            <telerik:Paragraph>
-	                <telerik:InlineUIContainer Height="25" Width="70">
-	                    <Button Name="button" Content="Button" />
-	                </telerik:InlineUIContainer>
-	            </telerik:Paragraph>
-	        </telerik:Section>
-	    </telerik:RadDocument>
-	</telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_1-xaml' />
 
 __Example 1: Add UI Element to an InlineUIContainer__  
-```C#
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	InlineUIContainer container = new InlineUIContainer();
-	container.UiElement = new Button();
-	container.Height = 25;
-	container.Width = 70;
-	paragraph.Inlines.Add(container);
-	section.Blocks.Add(paragraph);
-	this.radRichTextBox.Document.Sections.Add(section);
-```
-```VB.NET
-	Dim _section As New Section()
-	Dim _paragraph As New Paragraph()
-	Dim container As New InlineUIContainer()
-	container.UiElement = New Button()
-	container.Height = 25
-	container.Width = 70
-	_paragraph.Inlines.Add(container)
-	_section.Blocks.Add(_paragraph)
-	Me.radRichTextBox.Document.Sections.Add(_section)
-```
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_2-cs' />
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_3-vb' />
 
 __Example 2__ is a more complex example, which demonstrates how to implement a Button that inserts a MediaElement inside the __RadRichTextBox__'s document.
 
 __Example 2: Add MediaElement on Button Click__ 
-```C#
-	private static Size defaultSize = new Size(900, 400);
-	private void InsertMedia(Size size)
-	{
-	    OpenFileDialog ofd = new OpenFileDialog();
-	    if (ofd.ShowDialog() == true)
-	    {
-	        Stream stream = ofd.File.OpenRead();
-	        MediaElement media = new MediaElement();
-	        media.SetSource(stream);
-	        media.AutoPlay = true;
-	        InlineUIContainer container = new InlineUIContainer()
-	        {
-	            UiElement = media
-	        };
-	        if (size != Size.Empty)
-	        {
-	            container.Height = size.Height;
-	            container.Width = size.Width;
-	        }
-	        this.radRichTextBox1.InsertInline(container);
-	    }
-	}
-	private void buttonInsertVideo_Click(object sender, RoutedEventArgs e)
-	{
-	    InsertMedia(defaultSize);
-	}
-	private void buttonInsertAudio_Click(object sender, RoutedEventArgs e)
-	{
-	    InsertMedia(Size.Empty);
-	}
-```
-```VB.NET
-
-	Private Shared defaultSize As New Size(900, 400)
-	Private Sub InsertMedia(ByVal _size As Size)
-	 Dim ofd As New OpenFileDialog()
-	 If ofd.ShowDialog() = True Then
-	  Dim _stream As Stream = ofd.File.OpenRead()
-	  Dim media As New MediaElement()
-	  media.SetSource(_stream)
-	  media.AutoPlay = True
-	  Dim container As New InlineUIContainer() With {.UiElement = media}
-	  If _size <> Size.Empty Then
-	   container.Height = _size.Height
-	   container.Width = _size.Width
-	  End If
-	  Me.radRichTextBox1.InsertInline(container)
-	 End If
-	End Sub
-	Private Sub buttonInsertVideo_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	 InsertMedia(defaultSize)
-	End Sub
-	Private Sub buttonInsertAudio_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	 InsertMedia(Size.Empty)
-	End Sub
-```
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_4-cs' />
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_5-vb' />
 
 ## Specifics
 
@@ -136,116 +49,14 @@ The reason is that copying InlineUIContainer involves cloning of the internal UI
 To enable copying of InlineUIContainers in your application, you can create a custom object, which can copy the UIElement inside the container. What you need to do is to inherit the InlineUIContainer class and override IsCopyable, CreateNewElementInstance(), CopyPropertiesFromOverride(). The container and its parts are copied in the CopyPropertiesFromOverride() method, so you should ensure that the override copies the UIElement inside the container as well.
 
 __Example 3: Implement CopyableInlineUIContainer for a Button as underlying UIElement__
-```C#
-	public class CopyableInlineUIContainer : InlineUIContainer
-	{
-		internal CopyableInlineUIContainer()
-		{
-	
-		}
-	
-		public CopyableInlineUIContainer(UIElement uiElement, Size size)
-			: base(uiElement, size)
-		{
-	
-		}
-	
-		public override bool IsCopyable
-		{
-			get
-			{
-				return true;
-			}
-		}
-	
-		protected override DocumentElement CreateNewElementInstance()
-		{
-			return new CopyableInlineUIContainer();
-		}
-	
-		protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
-		{
-			CopyableInlineUIContainer fromUIContainer = (CopyableInlineUIContainer) fromElement;
-			this.Width = fromUIContainer.Width;
-			this.Height = fromUIContainer.Height;
-	
-			Button originalButton = (Button) fromUIContainer.UiElement;
-			this.UiElement = new Button()
-			{
-				Width = originalButton.Width,
-				Height = originalButton.Height,
-				Content = originalButton.Content.ToString()
-			};
-		}
-	}
-```
-```VB.NET
-	
-	Public Class CopyableInlineUIContainer
-	    Inherits InlineUIContainer
-	
-	    Friend Sub New()
-	    End Sub
-	
-	    Public Sub New(ByVal uiElement As UIElement, ByVal size As Size)
-	        MyBase.New(uiElement, size)
-	    End Sub
-	
-	    Public Overrides ReadOnly Property IsCopyable As Boolean
-	        Get
-	            Return True
-	        End Get
-	    End Property
-	
-	    Protected Overrides Function CreateNewElementInstance() As DocumentElement
-	        Return New CopyableInlineUIContainer()
-	    End Function
-	
-	    Protected Overrides Sub CopyPropertiesFromOverride(ByVal fromElement As DocumentElement)
-	        Dim fromUIContainer As CopyableInlineUIContainer = CType(fromElement, CopyableInlineUIContainer)
-	        Me.Width = fromUIContainer.Width
-	        Me.Height = fromUIContainer.Height
-	        Dim originalButton As Button = CType(fromUIContainer.UiElement, Button)
-	        Me.UiElement = New Button() With {
-	            .Width = originalButton.Width,
-	            .Height = originalButton.Height,
-	            .Content = originalButton.Content.ToString()
-	        }
-	    End Sub
-	End Class
-```
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_6-cs' />
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_7-vb' />
 
 There is a very generic option for copying UIElement objects, which might help in most of the cases. However, have in mind that depending on the UI elements on which it will be invoked, **the implementation might differ**.
 
 __Example 4: Copy UI Element__
-```C#
-	public static UIElement Clone(this UIElement elementToClone)
-	{
-	    if (elementToClone != null)
-	    {
-	        string elementXaml = XamlWriter.Save(elementToClone);
-	        StringReader stringReader = new StringReader(elementXaml);
-	
-	        XmlReader xmlReader = XmlTextReader.Create(stringReader, new XmlReaderSettings());
-	        return (UIElement)XamlReader.Load(xmlReader);
-	    }
-	
-	    return null;
-	}
-```
-```VB.NET
-    <Extension()>
-    Public Shared Function Clone(ByVal elementToClone As UIElement) As UIElement
-        If elementToClone IsNot Nothing Then
-            Dim elementXaml As String = XamlWriter.Save(elementToClone)
-            Dim stringReader As StringReader = New StringReader(elementXaml)
-            Dim xmlReader As XmlReader = XmlTextReader.Create(stringReader, New XmlReaderSettings())
-            Return CType(XamlReader.Load(xmlReader), UIElement)
-        End If
-
-        Return Nothing
-    End Function
-```
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_8-cs' />
+<snippet id='radrichtextbox-document-elements-features-inlineuicontainer-block_9-vb' />
 
 ## Import/Export InlineUIContainers
 

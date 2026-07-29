@@ -33,26 +33,10 @@ Here is the full code
 
 
 
-```C#
-	private void gridView_FieldFilterEditorCreated2(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
-	{
-	    //get the StringFilterEditor in your RadGridView
-	    var stringFilterEditor = e.Editor as StringFilterEditor;
-	    if (stringFilterEditor != null)
-	    {
-	        stringFilterEditor.MatchCaseVisibility = Visibility.Hidden;
-	    }
-	}
-```
-```VB.NET
-	Private Sub gridView_FieldFilterEditorCreated2(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
-	    'get the StringFilterEditor in your RadGridView
-	    Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
-	    If stringFilterEditor IsNot Nothing Then
-	        stringFilterEditor.MatchCaseVisibility = Visibility.Hidden
-	    End If
-	End Sub
-```
+<snippet id='radgridview-filtering-how-to-hide-match-case-block_1-cs' />
+
+<snippet id='radgridview-filtering-how-to-hide-match-case-block_1-vb' />
+
 
 Second approach (before Q3 2011)
 
@@ -62,37 +46,10 @@ Here is the full code:
 
 
 
-```C#
-	private void gridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
-	{
-	    //get the StringFilterEditor in your RadGridView
-	    var stringFilterEditor = e.Editor as StringFilterEditor;
-	    if (stringFilterEditor != null)
-	    {
-	        stringFilterEditor.Loaded += new RoutedEventHandler(stringFilterEditor_Loaded);
-	    }
-	}
-	
-	private void stringFilterEditor_Loaded(object sender, RoutedEventArgs e)
-	{
-	    //Hide the Match case toogle button in its Loaded event
-	    ((StringFilterEditor)sender).ChildrenOfType<ToggleButton>().FirstOrDefault().Visibility = Visibility.Collapsed;
-	}
-```
-```VB.NET
-	Private Sub gridView_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
-	    'get the StringFilterEditor in your RadGridView
-	    Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
-	    If stringFilterEditor IsNot Nothing Then
-	        AddHandler stringFilterEditor.Loaded, AddressOf stringFilterEditor_Loaded
-	    End If
-	End Sub
-	
-	Private Sub stringFilterEditor_Loaded(sender As Object, e As RoutedEventArgs)
-	    'Hide the Match case toogle button in its Loaded event
-	    DirectCast(sender, StringFilterEditor).ChildrenOfType(Of ToggleButton)().FirstOrDefault().Visibility = Visibility.Collapsed
-	End Sub
-```
+<snippet id='radgridview-filtering-how-to-hide-match-case-block_2-cs' />
+
+<snippet id='radgridview-filtering-how-to-hide-match-case-block_2-vb' />
+
 
 
 

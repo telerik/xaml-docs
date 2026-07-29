@@ -14,11 +14,7 @@ RadScheduleView provides the option to automatically snap the appointments while
 
 
 
-```XAML
-	<telerik:RadScheduleView SnapAppointments="True">
-	...
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-appointments-snapappointments-block_1-xaml' />
 
 This way during drag/resize operation the Start/End times of the appointment will be rounded according to the TimeSlots’ length:
 
@@ -30,13 +26,7 @@ You could set MinorTickLength property of the ViewDefinition in order to snap th
 
 
 
-```XAML
-	<telerik:RadScheduleView SnapAppointments="True">		
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition MinorTickLength = "15min" />		
-		</telerik:RadScheduleView.ViewDefinitions>	
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-appointments-snapappointments-block_2-xaml' />
 
 And the result is:
 
@@ -54,74 +44,19 @@ In the next example it is demonstrated how to set the snapping to 5 minutes rega
 
 
 
-```C#
-	public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
-	{
-	}
-```
+<snippet id='radscheduleview-features-appointments-snapappointments-block_3-cs' />
 
 * Override the needed methods:
 
 
 
-```C#
-	public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
-	{
-	
-		public override DateTime SnapEnd(SnapData snapData, DateTime timeToSnap)
-		{
-			if (timeToSnap >= snapData.OriginalData.End)
-			{
-				return SnapToTimeSpan(TimeSpan.FromMinutes(5), timeToSnap, true);
-			}
-			else
-			{
-				return SnapToTimeSpan(TimeSpan.FromMinutes(5), timeToSnap, false);
-			}
-		}
-	
-		public override DateTime SnapStart(SnapData snapData, DateTime timeToSnap)
-		{
-			if (timeToSnap >= snapData.OriginalData.End)
-			{
-				return SnapToTimeSpan(TimeSpan.FromMinutes(5), timeToSnap, true);
-			}
-			else
-			{
-				return SnapToTimeSpan(TimeSpan.FromMinutes(5), timeToSnap, false);
-			}
-		}
-	
-		public static DateTime SnapToTimeSpan(TimeSpan timeSpan, DateTime timeToSnap, bool roundToBiggestNumber)
-		{
-			var difference = timeToSnap.Ticks % timeSpan.Ticks;
-			if (roundToBiggestNumber)
-			{
-				return timeToSnap.AddTicks(timeSpan.Ticks - difference);
-			}
-	
-			return timeToSnap.AddTicks(-difference);
-		}
-		
-        	protected override Freezable CreateInstanceCore()
-        	{
-            		return new CustomSnapBehavior();
-        	}
-	}
-```
+<snippet id='radscheduleview-features-appointments-snapappointments-block_4-cs' />
 
 * Attach the newly created custom behavior to the ScheduleView control:
 
 
 
-```XAML
-	<telerik:RadScheduleView SnapAppointments="True">
-		...
-		<telerik:RadScheduleView.SnapBehavior>
-			<local:CustomSnapBehavior />
-		</telerik:RadScheduleView.SnapBehavior>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-appointments-snapappointments-block_5-xaml' />
 
 So now the appointments are snapped to 5 minutes:
 

@@ -17,27 +17,8 @@ The scatter bubble series is used to visualize three dimensional data. Each enti
 You can use the following definition to display a simple ScatterBubbleSeries:
 
 
-```XAML
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:ScatterBubbleSeries ShowLabels="True" >
-				<telerik:ScatterBubbleSeries.DataPoints>
-					<telerik:ScatterBubbleDataPoint BubbleSize="50" XValue="1" YValue="20" />
-					<telerik:ScatterBubbleDataPoint BubbleSize="100" XValue="2" YValue="8" />
-					<telerik:ScatterBubbleDataPoint BubbleSize="70" XValue="3" YValue="13" />
-					<telerik:ScatterBubbleDataPoint BubbleSize="50" XValue="4" YValue="20" />
-					<telerik:ScatterBubbleDataPoint BubbleSize="42" XValue="5" YValue="5" />
-				</telerik:ScatterBubbleSeries.DataPoints>
-			</telerik:ScatterBubbleSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bubble-series-scatterbubbleseries-block_1-xaml' />
+
 
 The following image demonstrates the end result:
 ![radchartview-series-scatterbubbleseries](images/radchartview-series-scatterbubbleseries_01.png)
@@ -46,25 +27,11 @@ The following image demonstrates the end result:
 
 You can use the __XValueBinding__, __YValueBinding__ and the __BubbleSizeBinding__ properties of the ScatterBubbleSeries to bind the DataPoints’ properties to the properties from your view models.
 
-```C#
-	public class PlotInfo
-	{
-		public double XVal { get; set; }
-		public double YVal { get; set; }
-		public double Size { get; set; }
-	}
+<snippet id='radchartview-series-cartesianchart-series-bubble-series-scatterbubbleseries-block_2-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo { XVal = 4, YVal = 20, Size = 50, },
-		//....
-	};
-```
 	
-```XAML
-	<telerik:ScatterBubbleSeries ItemsSource="{Binding}" YValueBinding="YVal"  XValueBinding="XVal" BubbleSizeBinding="Size" />
-```
+<snippet id='radchartview-series-cartesianchart-series-bubble-series-scatterbubbleseries-block_3-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite
 
@@ -74,11 +41,8 @@ The series supports all standard features exposed by all other categorical serie
 
 * __DataPointLegendSettings__ - the series supports two types of legend settings, the first one is the common SeriesLegendSettings which can be used with all types of series and it maps each legend item to a series. The series supports an additional DataPointLegendSettings which maps the legend items per data point. 
 
-	```XAML
-		<telerik:ScatterBubbleSeries.LegendSettings>
-			<telerik:DataPointLegendSettings/>
-		</telerik:ScatterBubbleSeries.LegendSettings>
-	```
+	<snippet id='radchartview-series-cartesianchart-series-bubble-series-scatterbubbleseries-block_4-xaml' />
+
 	
 	![radchartview-series-scatterbubbleseries](images/radchartview-series-scatterbubbleseries_02.png)
 	
@@ -91,9 +55,8 @@ The series supports all standard features exposed by all other categorical serie
 
 * __Hover interactivity__ – RadCartesianChart exposes a property called HoverMode. This property can be used only by the bubble and bar series. If it is set to “FadeOtherSeries”, when you mouse over a data point, the bubbles from all other series will fade out. The default value of the property is “None”.
 
-	```XAML
-		<telerik:RadCartesianChart HoverMode="FadeOtherSeries">
-	```
+	<snippet id='radchartview-series-cartesianchart-series-bubble-series-scatterbubbleseries-block_5-xaml' />
+
 	
 	![radchartview-series-scatterbubbleseries](images/radchartview-series-scatterbubbleseries_04.png)
 	
@@ -109,29 +72,11 @@ You can customize the BubbleSize of each DataPoint by creating a custom bubble s
 
 The following code snippet demonstrates an example implementation of a bubble size selector:
 
-```C#
-    public class CustomBubbleSizeSelector : ChartBubbleSizeSelector
-    {
-        public static double SelectBubbleSize(double bubbleSize)
-        {
-            return Math.Abs(bubbleSize) / 1000;
-        }
+<snippet id='radchartview-series-cartesianchart-series-bubble-series-scatterbubbleseries-block_6-cs' />
 
-        public override RadSize SelectBubbleSize(IBubbleDataPoint dataPoint)
-        {    
-            double size = SelectBubbleSize(dataPoint.BubbleSize.Value);                        
-            return new RadSize(size, size);
-        }
-    }
-```
 
-```XAML
-	<FrameworkElement.Resources>
-		<local:CustomBubbleSizeSelector x:Key="CustomBubbleSizeSelector" />
-    </FrameworkElement.Resources>
-	..........
-    <telerik:ScatterBubbleSeries BubbleSizeSelector="{StaticResource selector}" >
-```
+<snippet id='radchartview-series-cartesianchart-series-bubble-series-scatterbubbleseries-block_7-xaml' />
+
 
 >tip You can find a runnable project demonstrating the BubbleSeries in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/BubbleSeriesAndNegativeValues).
 

@@ -18,9 +18,8 @@ __RadComboBox__ can be editable, allowing the user to type in its text box, or n
 
 In order to make your __RadComboBox__ editable, you should set its __IsEditable__ property to __True__.
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" IsEditable="True"/>
-```
+<snippet id='radcombobox-features-edit-modes-block_1-xaml' />
+
 
 >tip When making your __RadComboBox__ editable, you could better distinguish the benefit of the [AutoComplete]({%slug radcombobox-features-autocomplete%}). 
 
@@ -38,9 +37,8 @@ You have the ability to make your __RadComboBox__ __editable__, but its __text b
 
 __Example 1: Setting the IsEditable and IsReadOnly to True__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" IsEditable="True" IsReadOnly="True"/>
-```
+<snippet id='radcombobox-features-edit-modes-example_1_setting_the_iseditable_and_isreadonly_to_true-xaml' />
+
 
 >tip Setting the __RadComboBox__'s __IsReadOnly__ property to __True__ will affect the __RadComboBox__ only when it is __editable__.
 
@@ -50,9 +48,8 @@ The __RadComboBox__ exposes a boolean property named __StaysOpenOnEdit__. When t
 
 __Example 2: Setting the StaysOpenOnEdit to True__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" IsEditable="True" StaysOpenOnEdit="True"/>
-```
+<snippet id='radcombobox-features-edit-modes-example_2_setting_the_staysopenonedit_to_true-xaml' />
+
 
 >It is important to remember, that setting the __RadComboBox__'s __StaysOpenOnEdit__ to __True__ will affect the __RadComboBox__ only when it is __editable__.
 
@@ -62,9 +59,8 @@ When the __IsEditable__ property is set to __True__ and the DropDown is opened, 
 
 __Example 3: Setting the CanKeyboardNavigationSelectItems to False__
 
-```XAML 
-	<telerik:RadComboBox x:Name="radComboBox" IsEditable="True" CanKeyboardNavigationSelectItems="False"/>
-```
+<snippet id='radcombobox-features-edit-modes-example_3_setting_the_cankeyboardnavigationselectitems_to_false-xaml' />
+
 
 ## See Also  
 

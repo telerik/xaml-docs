@@ -35,21 +35,8 @@ They are represented by several additional __simplified styles, which you can me
 The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewRow, TreeListViewRow__ including basic еffects and funcionalities such as __hover, selection, currency, grouping__ for these elements. These core styles are included within the themes of RadGridView and you may reference them in your project as shown below:        
 
 __Example 1: Applying the Lightweight Templates__
-```XAML
-	<Grid.Resources>
-	    <ResourceDictionary>
-	        <ResourceDictionary.MergedDictionaries>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
-	        </ResourceDictionary.MergedDictionaries>
-	        <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowCoreStyle}"/>
-	        <Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellCoreStyle}"/>
-	        <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowCoreStyle}"/>
-	    </ResourceDictionary>
-	</Grid.Resources>
-```
+<snippet id='radgridview-features-overview-lightweight-template-example_1_applying_the_lightweight_templates-xaml' />
+
 
 #### __Figure 1: RadGridView with Lightweight templates applied__
 
@@ -64,21 +51,8 @@ __Example 1: Applying the Lightweight Templates__
 The CoreValidationStyles are an alternative of the standard __GridViewCell, GridViewRow, TreeListViewRow__. They include basic еffects and funcionalities such as __hover, selection, currency, grouping, validation__ for these elements. These core styles are included within the themes of RadGridView and you may reference it in your project as shown below.        
 
 __Example 2: Applying Lightweight Templates with Validation__
-```XAML
-	<Grid.Resources>
-	    <ResourceDictionary>
-	        <ResourceDictionary.MergedDictionaries>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-	            <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
-	        </ResourceDictionary.MergedDictionaries>
-	        <Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowCoreValidationStyle}"/>
-	        <Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellCoreValidationStyle}"/>
-	        <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowCoreValidationStyle}"/>
-	    </ResourceDictionary>
-	</Grid.Resources>
-```
+<snippet id='radgridview-features-overview-lightweight-template-example_2_applying_lightweight_templates_with_validation-xaml' />
+
 
 #### __Figure 2: RadGridView with Lightweight templates with validation applied__
 
@@ -94,20 +68,8 @@ __Example 2: Applying Lightweight Templates with Validation__
 For such requirement, you need to predefine the __ControlTemplate__ applied to __GridViewCell__ when __Lightweight templates__ are used. Within the __ControlTemplate__ you need to search for the __IsCurrent Property Trigger__ and delete it.
 
 __Example 3: Deleting the IsCurrent Property Trigger__
-```XAML
-	<ControlTemplate x:Key="GridViewCellCoreTemplate" TargetType="grid:GridViewCell">
-        <Grid>
-            ...
-        </Grid>
-        <ControlTemplate.Triggers>
-            ...
-            <Trigger Property="IsCurrent" Value="True">
-                <Setter TargetName="PART_CellBorder" Property="BorderBrush" Value="{StaticResource GridViewCell_CurrentBorder}"/>
-                <Setter TargetName="PART_CellBorder" Property="BorderThickness" Value="1"/>
-            </Trigger>
-        </ControlTemplate.Triggers>
-    </ControlTemplate>
-```
+<snippet id='radgridview-features-overview-lightweight-template-example_3_deleting_the_iscurrent_property_trigger-xaml' />
+
 
 #### __Figure 3: RadGridView with Lightweight templates and removed Current Cell Border__
 
@@ -118,22 +80,8 @@ __Example 3: Deleting the IsCurrent Property Trigger__
 A similar approach as from the previous section needs to be used. The difference is that the same __Property Trigger__ has to be __deleted__ from the __ControlTemplate__ applied to __GridViewCell__ when __Lightweight templates with validation__ are used.
 
 __Example 4: Deleting the IsCurrent Property Trigger when Lightweight Templates with Validation are applied__
-```XAML
-	<ControlTemplate x:Key="GridViewCellCoreValidationTemplate" TargetType="grid:GridViewCell">
-        <Grid>
-            ...
-        </Grid>
-        <ControlTemplate.Triggers>
-           ...
-            <Trigger Property="IsCurrent" Value="True">
-                <Setter TargetName="PART_CellBorder" Property="BorderBrush" Value="{StaticResource GridViewCell_CurrentBorder}"/>
-                <Setter TargetName="PART_CellBorder" Property="BorderThickness" Value="1"/>
-                <Setter TargetName="PART_CellBorder" Property="Margin" Value="0,0,1,1"/>
-            </Trigger>
-            ...
-        </ControlTemplate.Triggers>
-    </ControlTemplate>
-```
+<snippet id='radgridview-features-overview-lightweight-template-example_4_deleting_the_iscurrent_property_trigger_when_lightweight_templates_with_validation_are_applied-xaml' />
+
 
 #### __Figure 4: RadGridView with Lightweight templates including validation and removed Current Cell Border__
 

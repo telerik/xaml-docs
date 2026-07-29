@@ -36,22 +36,8 @@ The default value of the __IconTemplateSelector__ property of the control is an 
 __Example 1__ demonstrates how to create a custom FilePathPickerIconTemplateSelector and display red/green Rectangle elements depending on whether the __FilePath__ is empty. 
 
 __Example 1: Custom FilePathPickerIconTemplateSelector__
-```XAML
-    
-    <StackPanel>
-        <StackPanel.Resources>
-            <DataTemplate x:Key="MyEmptyTemplate">
-                <Rectangle Fill="Red" />
-            </DataTemplate>
+<snippet id='radfilepathpicker-features-icontemplateselector-example_1_custom_filepathpickericontemplateselector-xaml' />
 
-            <DataTemplate x:Key="MyNonEmptyTemplate">
-                <Rectangle Fill="Green" />
-            </DataTemplate>
-            <telerik:FilePathPickerIconTemplateSelector x:Key="MyItemTemplateSelector" EmptyTemplate="{StaticResource MyEmptyTemplate}" NonEmptyTemplate="{StaticResource MyNonEmptyTemplate}" />
-        </StackPanel.Resources>
-        <telerik:RadFilePathPicker IconTemplateSelector="{StaticResource MyItemTemplateSelector}" />
-    </StackPanel>
-```
 
 #### __Figure 3: Custom FilePathPickerIconTemplateSelector EmptyTemplate__
 ![Custom FilePathPickerIconTemplateSelector EmptyTemplate](images/FilePathPicker_CustomIconTemplateSelector_EmptyTemplate.png)

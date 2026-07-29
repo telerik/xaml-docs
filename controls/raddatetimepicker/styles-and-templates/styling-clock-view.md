@@ -24,18 +24,8 @@ __Example 1__ demonstrates how the flow direction the __RadClock__ in the dropdo
 
 __Example 1: RadDateTimePicker with ClockStyle__
 
-```XAML
-	<Window.Resources>
-        <!-- If you are using the Xaml binaries, you do not have to set the BasedOn attribute-->
-        
-        <Style x:Key="ClockStyle" TargetType="telerik:RadClock" BasedOn="{StaticResource RadClockStyle}">
-            <Setter Property="FlowDirection" Value="RightToLeft" />
-        </Style>
-    </Window.Resources>
-    <Grid>
-        <telerik:RadDateTimePicker VerticalAlignment="Center" HorizontalAlignment="Center"  ClockStyle="{StaticResource ClockStyle}" />
-    </Grid>
-```
+<snippet id='raddatetimepicker-styles-and-templates-styling-clock-view-example_1_raddatetimepicker_with_clockstyle-xaml' />
+
 
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![RadClock with RightToLeft FlowDirection](images/DateTimePicker_StylingTheClock.png)

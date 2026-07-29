@@ -13,15 +13,10 @@ position: 5
 The RadWebCam control allows you to change the flip of the video feed from the attached camera. To do this, set the `FlipVertically` and `FlipHorizontally` properties of RadWebCam to `True`.
 
 __Setting the flip in XAML__
-```XAML
-	<telerik:RadWebCam FlipVertically="True" FlipHorizontally="True" />
-```
+<snippet id='radwebcam-features-flip-video-block_1-xaml' />
 
 __Setting the flip in code__
-```C#
-	this.radWebCam.FlipVertically = true;
-	this.radWebCam.FlipHorizontally = true;
-```
+<snippet id='radwebcam-features-flip-video-block_2-cs' />
 
 __Flipped Video__
 

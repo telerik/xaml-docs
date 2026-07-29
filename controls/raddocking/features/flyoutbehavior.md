@@ -29,11 +29,8 @@ It opens the flyout on click or activation of a pane inside the auto hide area. 
 To set or get the current flyout behavior use the __FlyoutBehavior__ property of RadDocking.
 
 __Example 1: Setting flyout behavior__
-```XAML
-	<telerik:RadDocking.FlyoutBehavior>
-        <telerik:ClickFlyoutBehavior/>
-    </telerik:RadDocking.FlyoutBehavior>
-```
+<snippet id='raddocking-features-flyoutbehavior-example_1_setting_flyout_behavior-xaml' />
+
 
 ## Custom Flyout Behavior
 
@@ -56,63 +53,12 @@ To create a custom flyout behavior, implement the __IFlyoutBehavior__ interface.
 The following example shows how to implement a __custom behavior__ that opens the flyout on click and animates the opening and closing.
 
 __Example 2: Custom flyout behavior__
-```C#
-	public class AnimatedFlyoutBehavior : IFlyoutBehavior
-    {
-        void IFlyoutBehavior.OnPaneActivated(IFlyoutHost host, RadPane targetPane)
-        {
-            host.SetSelectedPane(targetPane);
-            if (host.CurrentState == FlyoutState.Closed)
-            {
-                host.StartOpenAnimation();
-            }
-        }
+<snippet id='raddocking-features-flyoutbehavior-example_2_custom_flyout_behavior-cs' />
 
-        void IFlyoutBehavior.OnPaneDeactivated(IFlyoutHost host, RadPane targetPane)
-        {
-            var selectedPane = host.SelectedPane;
-            if (selectedPane != null && !selectedPane.IsActive && host.CurrentState == FlyoutState.Opened)
-            {
-                host.StartCloseAnimation();
-            }
-        }
-
-        void IFlyoutBehavior.OnPaneMouseLeftButtonDown(IFlyoutHost host, RadPane targetPane)
-        {
-            if (host.CurrentState != FlyoutState.Opened)
-            {
-                host.StartOpenAnimation();
-            }
-            else
-            {
-                host.StartCloseAnimation();
-            }
-        }
-		
-		void IFlyoutBehavior.OnMouseEnter(IFlyoutHost host, RadPane targetPane)
-        {
-        }
-
-        void IFlyoutBehavior.OnMouseLeave(IFlyoutHost host)
-        {
-        }
-
-        void IFlyoutBehavior.OnOpeningTimerTimeout(IFlyoutHost host)
-        {
-        }
-
-        void IFlyoutBehavior.OnClosingTimerTimeout(IFlyoutHost host)
-        {
-        }
-    }
-```
 
 __Example 3: Setting the custom flyout behavior__
-```XAML
-	<telerik:RadDocking.FlyoutBehavior>
-        <local:AnimatedFlyoutBehavior/>
-    </telerik:RadDocking.FlyoutBehavior>
-```
+<snippet id='raddocking-features-flyoutbehavior-example_3_setting_the_custom_flyout_behavior-xaml' />
+
 
 >tip A runnable project with this example can be found in the [ClickFlyoutBehaviorWithAnimation](https://github.com/telerik/xaml-sdk/tree/master/Docking/ClickFlyoutBehaviorWithAnimation) SDK example.
 
@@ -121,6 +67,5 @@ __Example 3: Setting the custom flyout behavior__
 The flyout popup element has a default minimum length of 50px. To change this, set the __FlyoutMinLength__ property of RadDocking. The property value applies to the width of the left and right auto-hide area flyouts and to the height of the top and bottom auto-hide area flyouts. 
 
 __Example 2: Setting the minimum size of the flyout popup__
-```XAML
-	<telerik:RadDocking FlyoutMinLength="150">
-```
+<snippet id='raddocking-features-flyoutbehavior-example_2_setting_the_minimum_size_of_the_flyout_popup-xaml' />
+

@@ -44,33 +44,15 @@ The sparkline bundle contains few controls which can be used for different data 
 To show the sparkline control you can define a custom model for the data points as shown in __Example 1__. Then create a collection with the model and set it to the ItemsSource of the sparkline control (see __Example 3__).
 
 __Example 1: Create the model__
-```C#
-	public class PlotInfo
-    {
-        public double YValue { get; set; }
-        public double XValue { get; set; }
-    }
-```
+<snippet id='radsparkline-getting-started-sparkline-getting-started-block_1-cs' />
 
 __Example 2: Define the sparkline__
-```XAML
-	<telerik:RadLinearSparkline x:Name="sparkline"
-								YValuePath="YValue"
-								XValuePath="XValue"	/>
-```
+<snippet id='radsparkline-getting-started-sparkline-getting-started-block_2-xaml' />
 
 The __XValuePath__ and __YValuePath__ properties should be set to the names of the corresponding properties in the data point model (in this case PlotInfo).
 
 __Example 3: Populate and set the ItemsSource__
-```C#
-	var randomNumberGenerator = new Random();
-	var source = new ObservableCollection<PlotInfo>();
-	for (int i = 0; i < 30; i++)
-	{
-		source.Add(new PlotInfo() { XValue = i, YValue = randomNumberGenerator.Next(100, 300) });
-	}
-	this.sparkline.ItemsSource = source;
-```
+<snippet id='radsparkline-getting-started-sparkline-getting-started-block_3-cs' />
 
 #### Figure 1: RadLinearSparkline
 ![{{ site.framework_name }} RadSparkLine RadLinearSparkline](images/radsparkline-getting-started-0.png)
@@ -102,17 +84,7 @@ To change the theme, you can follow the steps below:
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 3: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.DataVisualization.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radsparkline-getting-started-sparkline-getting-started-block_4-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

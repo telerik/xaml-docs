@@ -27,35 +27,20 @@ This tutorial will walk you through the functionality and the main features of t
 
 The __RadDiagramShape__ is an object that describes the nodes of the diagram. You can configure its form using the __Geometry__ property as it allows you to define a custom geometry:		
 
-```XAML
-    <telerik:RadDiagramShape Width="80"
-                             Height="80"
-                             Geometry="M16.35,6.39 C16.28,7.36 12.26,20.45 12.26,20.45 L20.56,20.45 C20.56,20.45 16.64,7.54 16.53,6.39 z M12.30,0.50 L20.97,0.50 L32.50,33.50 L24.54,33.50 L22.23,26.16 L10.70,26.16 L8.42,33.50 L0.50,33.50 z"
-                             Position="160,80" />		  
-```
+<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_1-xaml' />
+
 
 ![Rad Diagram Features Shapes Custom Shape](../images/RadDiagram_Features_Shapes_CustomShape.png)
 
 or to use one of the predefined shape geometries:		
 
-```XAML
-    <telerik:RadDiagramShape x:Name="ConditionShape"
-                    Width="80"
-                    Height="80"
-                    Content="condition"
-                    FontWeight="Bold"
-                    Geometry="{telerik:FlowChartShape ShapeType=PredefinedShape}"
-                    Position="160,80" />
-```
+<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_2-xaml' />
 
-```C#
-    RadDiagramShape shape = new RadDiagramShape();
-    shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape);
-```
-```VB.NET
-    Dim shape As New RadDiagramShape()
-    shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape)
-```
+
+<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_3-cs' />
+
+<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_3-vb' />
+
 	
 >The __ShapeFactory__ class allows you to get a shape geometry from the __enums__ with predefined shapes. This way you can create a __RadDiagramShape__ in code-behind still taking advantage of the predefined list of shapes. The predefined shapes can be accesses in code-behind through the following enumerations:
 >	- __ArrowShapeType__ - describes all ArrowShapes
@@ -74,139 +59,35 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 
 * Define a sample string value for the __RadDiagramShape.Content__ property:			
 
-	```XAML
-		<Grid>
-			<telerik:RadDiagram x:Name="MyDiagram">
-				<telerik:RadDiagramShape Content="RadDiagramShape" />
-			</telerik:RadDiagram>
-		</Grid>
-	```
+	<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_4-xaml' />
+
 
 	![Rad Diagram Features Shapes String Content](../images/RadDiagram_Features_Shapes_StringContent.png)
 
 * Define __UIElements__ in the __Content__ of the shape:
 
-	```XAML
-		<Grid>
-			<telerik:RadDiagram x:Name="MyDiagram">
-				<telerik:RadDiagramShape x:Name="EndShape"
-											Width="50"
-											Height="50"
-											FontWeight="Bold"
-											Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
-											Position="185,450">
-					<telerik:RadDiagramShape.ContentTemplate>
-						<DataTemplate>
-							<Ellipse Width="25"
-									 Height="25"
-									 Fill="#FF333333" />
-						</DataTemplate>
-					</telerik:RadDiagramShape.ContentTemplate>
-				</telerik:RadDiagramShape>
-			</telerik:RadDiagram>
-		</Grid>
-	```
+	<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_5-xaml' />
+
 
 	![Rad Diagram Features Shapes Custom Content](../images/RadDiagram_Features_Shapes_CustomContent.png)
 
 * Bind the __Content__ to a business property: For the purpose of this tutorial, let's define a sample business class and set it as the __DataContext__ of the {% if site.site_name == 'Silverlight' %}UserControl{% endif %}{% if site.site_name == 'WPF' %}Window{% endif %}.
 
-	```C#
-		public class EmployeeViewModel
-		{
-			public string ImagePath { get; set; }
-			public string JobPosition { get; set; }
-			public string FirstName { get; set; }
-			public string LastName { get; set; }
-		}
-			....
-		this.DataContext = new EmployeeViewModel()
-		{
-			ImagePath = "Images/NancyDavolio.jpg",
-			FirstName = "Nancy",
-			LastName = "Davolio",
-			JobPosition = "President Marketing"
-		};
-	```
-	```VB.NET
-		Public Class EmployeeViewModel
-			Public Property ImagePath() As String
-			Public Property JobPosition() As String
-			Public Property FirstName() As String
-			Public Property LastName() As String
-		End Class
-		...
-		Me.DataContext = New EmployeeViewModel() With {
-		  .ImagePath = "Images/NancyDavolio.jpg",
-		  .FirstName = "Nancy",
-		  .LastName = "Davolio",
-		  .JobPosition = "President Marketing"
-		  }
-	```
+	<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_6-cs' />
 
-	```XAML
-			<Grid>
-				<telerik:RadDiagram x:Name="MyDiagram">
-					<telerik:RadDiagramShape Content="{Binding LastName}"
-											 Position="20,40" />
-				</telerik:RadDiagram>
-			</Grid>
-	```
+	<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_6-vb' />
+
+
+	<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_7-xaml' />
+
 
 	![Rad Diagram Features Shapes Data Binding](../images/RadDiagram_Features_Shapes_DataBinding.png)
 	When you bind the __Content__ to a business class, the __RadDiagramShape__ will display the result of the business item __ToString()__ method. If you bind to a business property, then the value of the property will be displayed as the content of the shape.
 
 * If you want to customize the visual representation of the bound property, you can take advantage of the __RadDiagramShape ContentTemplate__ property:			
 
-	```XAML
-		<Grid>
-			<telerik:RadDiagram x:Name="MyDiagram">
-				<telerik:RadDiagramShape Content="{Binding}"
-										 Position="20,40"
-						 Padding="0">
-					<telerik:RadDiagramShape.ContentTemplate>
-						<DataTemplate>
-							<Grid Width="200"
-								  Height="74"
-								  Background="#FF9F9E9E">
-								<Grid.ColumnDefinitions>
-									<ColumnDefinition Width="Auto" />
-									<ColumnDefinition Width="*" />
-								</Grid.ColumnDefinitions>
-								<Image Width="61"
-									   Height="70"
-									   Margin="2"
-									   Source="{Binding ImagePath}"
-									   Stretch="Fill" />
-								<StackPanel Grid.Column="1"
-											Margin="5 0 0 0"
-											HorizontalAlignment="Left"
-											VerticalAlignment="Top">
-									<TextBlock Margin="0 5 0 0"
-											   FontWeight="Bold"
-											   Text="{Binding JobPosition}" />
-									<TextBlock Width="80"
-											   HorizontalAlignment="Left"
-											   FontFamily="Segoe UI Light"
-											   FontSize="19"
-											   Foreground="#FFFFFFFF"
-											   Text="{Binding FirstName}"
-											   TextWrapping="Wrap" />
-									<TextBlock Width="80"
-											   HorizontalAlignment="Left"
-											   FontFamily="Segoe UI Light"
-											   FontSize="19"
-											   Foreground="#FFFFFFFF"
-											   Text="{Binding LastName}"
-											   TextWrapping="Wrap" />
-								</StackPanel>
-							</Grid>
-						</DataTemplate>
-					</telerik:RadDiagramShape.ContentTemplate>
-				</telerik:RadDiagramShape>
-			</telerik:RadDiagram>
-		</Grid>
-	```
+	<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_8-xaml' />
+
 
 	![Rad Diagram Features Shapes Data Template](../images/RadDiagram_Features_Shapes_DataTemplate.png)
 
@@ -241,66 +122,8 @@ You can set the __RadDiagramShape__ in edit mode using the __IsInEditMode__ prop
 
 If the __RadDiagramShape.Content__ property is bound to a business item, you can set the connection __EditTemplate__ to define how the business item will be edited. For example if we use the __BusinessItem__ class, defined above, as a __DataContext__ of the __RadDiagram__, we can set up the following connection:			
 
-```XAML
-    <Grid>
-        <telerik:RadDiagram x:Name="MyDiagram">
-            <telerik:RadDiagramShape Content="{Binding}"
-                                     Position="20,40">
-                <telerik:RadDiagramShape.ContentTemplate>
-                    <DataTemplate>
-                        <Grid Width="200"
-                              Height="74"
-                              Background="#FF9F9E9E">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Image Width="61"
-                                   Height="70"
-                                   Margin="2"
-                                   Source="{Binding ImagePath}"
-                                   Stretch="Fill" />
-                            <StackPanel Grid.Column="1"
-                                        Margin="5 0 0 0"
-                                        HorizontalAlignment="Left"
-                                        VerticalAlignment="Top">
-                                <TextBlock Margin="0 5 0 0"
-                                           FontWeight="Bold"
-                                           Text="{Binding JobPosition}" />
-                                <TextBlock Width="80"
-                                           HorizontalAlignment="Left"
-                                           FontFamily="Segoe UI Light"
-                                           FontSize="19"
-                                           Foreground="#FFFFFFFF"
-                                           Text="{Binding FirstName}"
-                                           TextWrapping="Wrap" />
-                                <TextBlock Width="80"
-                                           HorizontalAlignment="Left"
-                                           FontFamily="Segoe UI Light"
-                                           FontSize="19"
-                                           Foreground="#FFFFFFFF"
-                                           Text="{Binding LastName}"
-                                           TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Grid>
-                    </DataTemplate>
-                </telerik:RadDiagramShape.ContentTemplate>
-                <telerik:RadDiagramShape.EditTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Center">
-                            <TextBox Text="{Binding FirstName}"
-                                     Margin="5,0" />
-                            <TextBox Text="{Binding LastName}"
-                                     Margin="5,0" />
-                        </StackPanel>
-                    </DataTemplate>
-                </telerik:RadDiagramShape.EditTemplate>
-            </telerik:RadDiagramShape>
-        </telerik:RadDiagram>
-    </Grid>
-```
+<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-block_9-xaml' />
+
 
 ![Rad Diagram Features Shapes Edit Template](../images/RadDiagram_Features_Shapes_EditTemplate.png)
 

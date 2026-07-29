@@ -34,50 +34,11 @@ The control provides two mechanisms for defining its columns:
 By default, __RadTaskBoard__ will generate its columns automatically based on the underlying data source. When, for example, you set the __ItemsSource__ of __RadTaskBoard__ to a collection of TaskBoardCardModel (see code in __Example 1__ and the result in __Figure 1__), the control will create a separate column for each value of the property set to the __GroupMemberPath__ of the RadTaskBoard.
 
 __Defining the data__
-```C#	
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.taskBoard.ItemsSource = this.GetTasks();
-	}
-	
-	public ObservableCollection<TaskBoardCardModel> GetTasks()
-	{
-		ObservableCollection<TaskBoardCardModel> tasks = new ObservableCollection<TaskBoardCardModel>();
-		
-		tasks.Add(new TaskBoardCardModel()
-		{
-			Assignee = "Bella",
-			Title = "RadDocking: Create Unit Test ",
-			Description = "Add Unit Tests",
-			State = "Not Done",              
-		});
-		
-		tasks.Add(new TaskBoardCardModel()
-		{
-			Assignee = "Tomas",
-			Title = "RadPanelBar: Not IsExpanded property is not respected",
-			Description = "Fix Bug",
-			State = "In Progress",
-		});
-
-		tasks.Add(new TaskBoardCardModel()
-		{
-			Assignee = "Smith",
-			Title = "RadChartView: Implement Animation Feature",
-			Description = "Implement animations for all series in RadChartView",
-			State = "Done",
-		});
-		
-		return tasks;
-	}
-```
+<snippet id='radtaskboard-features-column-block_1-cs' />
 
 __Defining RadTaskBoard in XAML__
 
-```XAML
-    <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" />
-```
+<snippet id='radtaskboard-features-column-block_2-xaml' />
 
 #### Figure 1: RadTaskBoard with automatically generated columns
 ![Telerik TaskBoard Column 0](images/taskboard_column_0.png)
@@ -88,15 +49,7 @@ To prevent the automatic generation of a specific column you can handle the __Au
 
 __Cancel Auto Generation of a Specific Column__
 
-```C#
-	private void TaskBoard_AutoGeneratingColumn(object sender, TaskBoardAutoGeneratingColumnEventArgs e)
-	{
-		if(e.Column.GroupName.ToString() == "Done")
-		{
-			e.Cancel = true;
-		}
-	}
-```
+<snippet id='radtaskboard-features-column-block_3-cs' />
 
 ## Manual Columns Definition
 
@@ -106,28 +59,11 @@ When the built-in order of the auto generation of columns does not fit in your c
 
 __Define RadTaskBoard with custom columns__
 
-```XAML
-	<telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" AutoGenerateColumns="False">
-		<telerik:RadTaskBoard.Columns>
-			<telerik:TaskBoardColumn GroupName="Not Done"/>
-			<telerik:TaskBoardColumn GroupName="In Progress"/>
-			<telerik:TaskBoardColumn GroupName="Done"/>
-		</telerik:RadTaskBoard.Columns>
-	</telerik:RadTaskBoard>
-```
+<snippet id='radtaskboard-features-column-block_4-xaml' />
 
 __Define TaskBoardColumns in code__
 
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "Not Done" });
-		this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "In Progress" });
-		this.taskBoard.Columns.Add(new TaskBoardColumn() { GroupName = "Done" });
-		this.taskBoard.ItemsSource = this.GetTasks();            
-	}
-```
+<snippet id='radtaskboard-features-column-block_5-cs' />
 
 #### Figure 2: RadTaskBoard with manually generated columns
 ![Telerik TaskBoard Column 1](images/taskboard_column_1.png)

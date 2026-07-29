@@ -17,20 +17,7 @@ RadMap provides support for single image provider through the __UriImageProvider
 Assuming that images with names osm_10.png, osm_11.png, ..., osm_14.png are embedded as resources within the application assembly, you can initialize the UriImageProvider like this:        
 
 
-```XAML
-	<telerik:RadMap x:Name="RadMap1" 
-	                ZoomLevel="13" 
-	                MinZoomLevel="10" 
-	                MaxZoomLevel="14" 
-	                Center="42.72481708629, 23.3176519378416"
-	                NavigationVisibility="Collapsed"
-	                ZoomBarVisibility="Collapsed"
-	                CommandBarVisibility="Collapsed">
-	    <telerik:RadMap.Provider>
-	        <telerik:UriImageProvider GeoBounds="42.786, 23.17, 25, 14" Uri="/MyApplication;component/osm_{zoom}.png" />
-	    </telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-uriimageprovider-block_1-xaml' />
 
 The UriImageProvider provides support for the following specific properties:        
 

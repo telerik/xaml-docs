@@ -27,20 +27,7 @@ Since Q2 2010 __RadMenu__ has a property for defining the width of the column, w
 By default all of the MenuItems have equal space reserved for an icon. You can control the width of each MenuItem icon area by using the items' __IconColumnWidth__ property.
 
 __Example 1: Modify MenuItem Icon Area Width__
-```XAML
-	<Window.Resources>
-		<DataTemplate x:Key="IconTemplate">
-			<Image Source="/Images/Circle.png" Stretch="UniformToFill" />
-		</DataTemplate>
-    </Window.Resources>
-	<telerik:RadMenu VerticalAlignment="Top" IconColumnWidth="60">
-	    <telerik:RadMenuItem Header="Circle Sizes" x:Name="sizeRadMenu" IconColumnWidth="0">
-	        <telerik:RadMenuItem Header="Small" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="35" Height="35" />
-	        <telerik:RadMenuItem Header="Medium" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="45" Height="45" />
-	        <telerik:RadMenuItem Header="Large" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="55" Height="55" />
-	    </telerik:RadMenuItem>
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-how-to-remove-the-icon-area-for-radmenu-block_1-xaml' />
 
 ![Modify MenuItem Icon Area Width](images/RadMenu_HowTo_How_to_remove_and_modify_the_Icon_area.jpg)
 

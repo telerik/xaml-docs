@@ -22,73 +22,18 @@ You can use this property to get or set the current page of the __RadDataPager__
 Before getting to the XAML code for the example you'll have to first create a converter for the __PageIndex__. Its purpose is to synchronize the index with the logical page number.
 
 
-```C#
+<snippet id='raddatapager-features-current-page-block_1-cs' />
 
-	public class IndexToNumberConverter : IValueConverter
-	{
-	    public object Convert( object value, Type targetType, object parameter, CultureInfo culture )
-	    {
-	        return ( int )value + 1;
-	    }
-	    public object ConvertBack( object value, Type targetType, object parameter, CultureInfo culture )
-	    {
-	        return ( int )value - 1;
-	    }
-	}
-```
-```VB.NET
+<snippet id='raddatapager-features-current-page-block_1-vb' />
 
-	Public Class IndexToNumberConverter
-	 Implements IValueConverter
-	 Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
-	  Return CInt(value) + 1
-	 End Function
-	 Public Function ConvertBack(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
-	  Return CInt(value) - 1
-	 End Function
-	End Class
-```
 
 
 
 Here is the XAML for the example.
 
 
-```XAML
+<snippet id='raddatapager-features-current-page-block_2-xaml' />
 
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto" />
-	        <RowDefinition />
-	        <RowDefinition Height="Auto" />
-	    </Grid.RowDefinitions>
-	    <Grid.Resources>
-	        <converters:IndexToNumberConverter x:Name="IndexToNumberConverter" />
-	    </Grid.Resources>
-	    <StackPanel Orientation="Horizontal">
-	        <TextBlock Text="Employees - Page "
-	                    FontWeight="Bold" />
-	        <TextBlock Text="{Binding PageIndex, ElementName=radDataPager, Converter={StaticResource IndexToNumberConverter}}"
-	                    FontWeight="Bold" />
-	    </StackPanel>
-	    <telerik:RadGridView x:Name="radGridView"
-	                            ItemsSource="{Binding PagedSource, ElementName=radDataPager}"
-	                            AutoGenerateColumns="False"
-	                            Grid.Row="1">
-	        <telerik:RadGridView.Columns>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" />
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}" />
-	        </telerik:RadGridView.Columns>
-	    </telerik:RadGridView>
-	    <telerik:RadDataPager x:Name="radDataPager"
-	                            Grid.Row="2"
-	                            DisplayMode="All"
-	                            PageSize="5"
-	                            Margin="0,10,0,0" />
-	</Grid>
-```
 
 ![{{ site.framework_name }} RadDataPager Current Page](images/RadDataPager_Features_CurrentPage_01.png)
 

@@ -22,11 +22,7 @@ The **RadDocument** class exposes numerous properties and methods enabling you t
 
 	__Example 1: Setting SectionDefaultPageSize__
 	
-	```XAML
-		<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged">
-		    <telerik:RadDocument SectionDefaultPageSize="500,1000" />
-		</telerik:RadRichTextBox>
-	```
+	<snippet id='radrichtextbox-document-elements-features-raddocument-block_1-xaml' />
 	
 	>The __SectionDefault~__ settings get applied only when Paged layout mode is used.                  
 
@@ -86,25 +82,15 @@ For example, you can build a RadDocument from scratch and add Sections to it as 
 
 __Example 2: Add a section to a not measured document__
 
-```C#
-	Section section = new Section();
-	this.radRichTextBox.Document.Sections.Add(section);
-```
-```VB.NET
-	Dim section As New Section()
-	Me.radRichTextBox.Document.Sections.Add(section)
-```
+<snippet id='radrichtextbox-document-elements-features-raddocument-block_2-cs' />
+<snippet id='radrichtextbox-document-elements-features-raddocument-block_3-vb' />
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting a section break.
 
 __Example 3: Insert a Section break in a measured document__
 
-```C#
-	this.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage);
-```
-```VB.NET
-	Me.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage)
-```
+<snippet id='radrichtextbox-document-elements-features-raddocument-block_4-cs' />
+<snippet id='radrichtextbox-document-elements-features-raddocument-block_5-vb' />
 
 >More details about the Section element and the section break types is available [here]({%slug radrichtextbox-features-document-elements-section%}).
 
@@ -127,77 +113,8 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
 
 __Example 4: Create a document in code-behind__
 
-```C#
-    RadDocument document = new RadDocument();
-    Section section = new Section();
-
-    Paragraph paragraph1 = new Paragraph();
-    Stream stream = Application.GetResourceStream(new Uri(@"/RadRichTextBox-Getting-Started;component/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream;
-    Size size = new Size(236, 50);
-    ImageInline imageInline = new ImageInline(stream, size, "png");
-    paragraph1.Inlines.Add(imageInline);
-    section.Blocks.Add(paragraph1);
-
-    Paragraph paragraph2 = new Paragraph();
-    paragraph2.TextAlignment = Telerik.Windows.Documents.Layout.RadTextAlignment.Center;
-    Span span1 = new Span("Thank you for choosing Telerik");
-    paragraph2.Inlines.Add(span1);
-
-    Span span2 = new Span();
-    span2.Text = " RadRichTextBox!";
-    span2.FontWeight = FontWeights.Bold;
-    paragraph2.Inlines.Add(span2);
-    section.Blocks.Add(paragraph2);
-
-    Paragraph paragraph3 = new Paragraph();
-    Span span3 = new Span("RadRichTextBox");
-    span3.FontWeight = FontWeights.Bold;
-    paragraph3.Inlines.Add(span3);
-
-    Span span4 = new Span(" is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs) etc.");
-    paragraph3.Inlines.Add(span4);
-    section.Blocks.Add(paragraph3);
-
-    document.Sections.Add(section);
-
-    this.radRichTextBox.Document = document;
-```
-```VB.NET
-
-    Dim document As New RadDocument()
-    Dim section As New Section()
-
-    Dim paragraph1 As New Paragraph()
-    Dim stream As Stream = Application.GetResourceStream(New Uri("/RadRichTextBox-Getting-Started;component/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream
-    Dim size As New Size(236, 50)
-    Dim imageInline As New ImageInline(stream, size, "png")
-    paragraph1.Inlines.Add(imageInline)
-    section.Blocks.Add(paragraph1)
-
-    Dim paragraph2 As New Paragraph()
-    paragraph2.TextAlignment = Telerik.Windows.Documents.Layout.RadTextAlignment.Center
-    Dim span1 As New Span("Thank you for choosing Telerik")
-    paragraph2.Inlines.Add(span1)
-
-    Dim span2 As New Span()
-    span2.Text = " RadRichTextBox!"
-    span2.FontWeight = FontWeights.Bold
-    paragraph2.Inlines.Add(span2)
-    section.Blocks.Add(paragraph2)
-
-    Dim paragraph3 As New Paragraph()
-    Dim span3 As New Span("RadRichTextBox")
-    span3.FontWeight = FontWeights.Bold
-    paragraph3.Inlines.Add(span3)
-
-    Dim span4 As New Span(" is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs) etc.")
-    paragraph3.Inlines.Add(span4)
-    section.Blocks.Add(paragraph3)
-
-    document.Sections.Add(section)
-
-    Me.radRichTextBox.Document = document
-```
+<snippet id='radrichtextbox-document-elements-features-raddocument-block_6-cs' />
+<snippet id='radrichtextbox-document-elements-features-raddocument-block_7-vb' />
 
 __The document created at run time__
 

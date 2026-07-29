@@ -23,45 +23,11 @@ Here is an example with the __HeaderedContentControl__. Take a look at the defau
 
 
 
-```XAML
-	<ControlTemplate x:Key="HeaderedContentControlTemplate1" TargetType="controlsToolkit:HeaderedContentControl">
-	    <StackPanel>
-	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
-	                    ContentTemplate="{TemplateBinding HeaderTemplate}"
-	                    Content="{TemplateBinding Header}"
-	                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                    Margin="{TemplateBinding Padding}"
-	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
-	                    ContentTemplate="{TemplateBinding ContentTemplate}"
-	                    Content="{TemplateBinding Content}"
-	                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                    Margin="{TemplateBinding Padding}"
-	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	    </StackPanel>
-	</ControlTemplate>
-```
+<snippet id='radtransitioncontrol-features-radtransition-integration-with-content-controls-block_1-xaml' />
 
 
 
-```XAML
-	<ControlTemplate x:Key="HeaderedContentControlTemplate2" TargetType="HeaderedContentControl">
-	    <StackPanel>
-	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
-	                    ContentTemplate="{TemplateBinding HeaderTemplate}"
-	                    Content="{TemplateBinding Header}"
-	                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                    Margin="{TemplateBinding Padding}"
-	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
-	                    ContentTemplate="{TemplateBinding ContentTemplate}"
-	                    Content="{TemplateBinding Content}"
-	                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                    Margin="{TemplateBinding Padding}"
-	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	    </StackPanel>
-	</ControlTemplate>
-```
+<snippet id='radtransitioncontrol-features-radtransition-integration-with-content-controls-block_2-xaml' />
 
 The first __ContentPresenter__ is responsible for the header and the second one - for the content. Replace the second one with the __RadTransitionControl__ and preserve the __TemplateBindings__.
 
@@ -69,55 +35,15 @@ The first __ContentPresenter__ is responsible for the header and the second one 
 
 
 
-```XAML
-	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
-```
+<snippet id='radtransitioncontrol-features-radtransition-integration-with-content-controls-block_3-xaml' />
 
 
 
-```XAML
-	<ControlTemplate x:Key="HeaderedContentControlTemplate3" TargetType="controlsToolkit:HeaderedContentControl">
-	    <StackPanel>
-	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
-	                    ContentTemplate="{TemplateBinding HeaderTemplate}"
-	                    Content="{TemplateBinding Header}"
-	                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                    Margin="{TemplateBinding Padding}"
-	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	
-	        <telerik:RadTransitionControl Cursor="{TemplateBinding Cursor}"
-	                    ContentTemplate="{TemplateBinding ContentTemplate}"
-	                    Content="{TemplateBinding Content}"
-	                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                    Margin="{TemplateBinding Padding}"
-	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	
-	    </StackPanel>
-	</ControlTemplate>
-```
+<snippet id='radtransitioncontrol-features-radtransition-integration-with-content-controls-block_4-xaml' />
 
 
 
-```XAML
-	<ControlTemplate x:Key="HeaderedContentControlTemplate" TargetType="HeaderedContentControl">
-	    <StackPanel>
-	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
-	                    ContentTemplate="{TemplateBinding HeaderTemplate}"
-	                    Content="{TemplateBinding Header}"
-	                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                    Margin="{TemplateBinding Padding}"
-	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	
-	        <telerik:RadTransitionControl Cursor="{TemplateBinding Cursor}"
-	                    ContentTemplate="{TemplateBinding ContentTemplate}"
-	                    Content="{TemplateBinding Content}"
-	                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                    Margin="{TemplateBinding Padding}"
-	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-	
-	    </StackPanel>
-	</ControlTemplate>
-```
+<snippet id='radtransitioncontrol-features-radtransition-integration-with-content-controls-block_5-xaml' />
 
 Next, configure the __RadTransitionControl__ to match your needs. For example, define its __Transition__.
 
@@ -128,18 +54,7 @@ Next, configure the __RadTransitionControl__ to match your needs. For example, d
 
 
 
-```XAML
-	<telerik:RadTransitionControl Cursor="{TemplateBinding Cursor}"
-	                      ContentTemplate="{TemplateBinding ContentTemplate}"
-	                      Content="{TemplateBinding Content}"
-	                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-	                      Margin="{TemplateBinding Padding}"
-	                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:MotionBlurredZoomTransition />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-integration-with-content-controls-block_6-xaml' />
 
 ## See Also
 

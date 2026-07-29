@@ -28,17 +28,7 @@ It is raised when the control is initially loaded and data related information f
 
 __Example 3: Subscribing to the DataMemberNeeded event__
 
-```C#
-	private void VirtualGrid_DataMemberNeeded(object sender, DataMemberEventArgs e)
-        {
-            if (e.ColumnIndex == 0)
-            {
-                e.IsSortable = true;
-                e.DataType = typeof(string);
-                e.MemberName = "Name";
-            }
-        }
-```
+<snippet id='radvirtualgrid-sorting-programmatic-sorting-block_1-cs' />
 
 ### SortDescriptorPreparing
 
@@ -46,15 +36,7 @@ Raised at the state when the user clicks the header of a given column and the re
 
 __Example 1: Subscribing to the SortDescriptorPreparing event__
 
-```C#
-	private void VirtualGrid_SortDescriptorPreparing(object sender, SortingEventArgs e)
-        {
-            if (e.ColumnIndex == 0)
-            {
-                e.Cancel = true;
-            }
-        }
-```
+<snippet id='radvirtualgrid-sorting-programmatic-sorting-block_2-cs' />
 
 ### SortDescriptorPrepared
 
@@ -68,15 +50,7 @@ It is raised when the sort descriptor is ready and the sorting operation can be 
 
 __Example 2: Subscribing to the SortDescriptorPrepared event__
 
-```C#
-	private void VirtualGrid_SortDescriptorPrepared(object sender, SortedEventArgs e)
-        {
-            SortDescriptorCollection sortDescriptorCollection = new SortDescriptorCollection();
-            sortDescriptorCollection.Add(e.ColumnSortDescriptor);
-
-            clubsSource.AsQueryable().Sort(sortDescriptorCollection);
-        }
-```
+<snippet id='radvirtualgrid-sorting-programmatic-sorting-block_3-cs' />
 
 Note, that in the example above, the __SortDescriptorCollection__ is used for sorting the __underlying data source__. For this purpose, the __Sort__ extension method which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.queryableextensions#Telerik_Windows_Data_QueryableExtensions_Sort_System_Linq_IQueryable_Telerik_Windows_Data_SortDescriptorCollection_). 
 

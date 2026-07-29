@@ -76,116 +76,23 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 
 
 
-```XAML
-	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
-	    <pivot:QueryablePropertyGroupDescription.GroupFilter>
-	        <pivot:LabelGroupFilter>
-	            <pivot:LabelGroupFilter.Condition>
-	                <pivot:TextCondition Comparison="Contains" Pattern="C"/>
-	            </pivot:LabelGroupFilter.Condition>
-	        </pivot:LabelGroupFilter>
-	    </pivot:QueryablePropertyGroupDescription.GroupFilter>
-	</pivot:QueryablePropertyGroupDescription>
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_1-xaml' />
 
 
 
-```C#
-	var shipCountryGroupDescription = new QueryableDoubleGroupDescription();
-	shipCountryGroupDescription.PropertyName = "ShipCountry";
-	var labelGroupFilter = new LabelGroupFilter();
-	var textCondition = new TextCondition();
-	textCondition.Comparison = TextComparison.Contains;
-	textCondition.Pattern = "C";
-	labelGroupFilter.Condition = textCondition;
-	shipCountryGroupDescription.GroupFilter = labelGroupFilter;
-```
-```VB.NET
-	Dim shipCountryGroupDescription = New QueryableDoubleGroupDescription()
-	shipCountryGroupDescription.PropertyName = "ShipCountry"
-	Dim labelGroupFilter = New LabelGroupFilter()
-	Dim textCondition = New TextCondition()
-	textCondition.Comparison = TextComparison.Contains
-	textCondition.Pattern = "C"
-	labelGroupFilter.Condition = textCondition
-	shipCountryGroupDescription.GroupFilter = labelGroupFilter
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_2-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_2-vb' />
 
 And here is how to apply ItemsFilterCondition:             
 
 
 
-```XAML
-	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
-	    <pivot:QueryablePropertyGroupDescription.GroupFilter>
-	        <pivot:LabelGroupFilter>
-	            <pivot:LabelGroupFilter.Condition>
-	                <pivot:ItemsFilterCondition>
-	                    <pivot:ItemsFilterCondition.DistinctCondition>
-	                        <pivot:SetCondition Comparison="Includes">
-	                            <pivot:SetCondition.Items>
-	                                <sys:String>Brazil</sys:String>
-	                                <sys:String>Canada</sys:String>
-	                                <sys:String>Denmark</sys:String>
-	                            </pivot:SetCondition.Items>
-	                        </pivot:SetCondition>
-	                    </pivot:ItemsFilterCondition.DistinctCondition>
-	                    <pivot:ItemsFilterCondition.Condition>
-	                        <pivot:TextCondition Comparison="Contains" Pattern="n" />
-	                    </pivot:ItemsFilterCondition.Condition>
-	                </pivot:ItemsFilterCondition>
-	            </pivot:LabelGroupFilter.Condition>
-	        </pivot:LabelGroupFilter>
-	    </pivot:QueryablePropertyGroupDescription.GroupFilter>
-	</pivot:QueryablePropertyGroupDescription>
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_3-xaml' />
 
 
 
-```C#
-	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
-	shipCountryGroupDescription.PropertyName = "ShipCountry";
-	
-	var textCondition = new TextCondition();
-	textCondition.Comparison = TextComparison.Contains;
-	textCondition.Pattern = "n";
-	
-	var distinctCondition = new SetCondition();
-	distinctCondition.Comparison = SetComparison.Includes;
-	distinctCondition.Items.Add("Brazil");
-	distinctCondition.Items.Add("Canada");
-	distinctCondition.Items.Add("Denmark");
-	
-	var itemsFilterCondition = new ItemsFilterCondition();
-	itemsFilterCondition.Condition = textCondition;
-	itemsFilterCondition.DistinctCondition = distinctCondition;
-	
-	var labelGroupFilter = new LabelGroupFilter();
-	labelGroupFilter.Condition = itemsFilterCondition;
-	shipCountryGroupDescription.GroupFilter = labelGroupFilter;
-```
-```VB.NET
-	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
-	shipCountryGroupDescription.PropertyName = "ShipCountry"
-	
-	Dim textCondition = New TextCondition()
-	textCondition.Comparison = TextComparison.Contains
-	textCondition.Pattern = "n"
-	
-	Dim distinctCondition = New SetCondition()
-	distinctCondition.Comparison = SetComparison.Includes
-	distinctCondition.Items.Add("Brazil")
-	distinctCondition.Items.Add("Canada")
-	distinctCondition.Items.Add("Denmark")
-	
-	Dim itemsFilterCondition = New ItemsFilterCondition()
-	itemsFilterCondition.Condition = textCondition
-	itemsFilterCondition.DistinctCondition = distinctCondition
-	
-	Dim labelGroupFilter = New LabelGroupFilter()
-	labelGroupFilter.Condition = itemsFilterCondition
-	shipCountryGroupDescription.GroupFilter = labelGroupFilter
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_4-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_4-vb' />
 
 This way the only visible items will be Canada and Denmark as they are part of the SetCondition and also have "n" in their names which satisfies the text condition.
 
@@ -227,46 +134,12 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 
 
 
-```XAML
-	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
-	    <pivot:QueryablePropertyGroupDescription.GroupFilter>
-	        <pivot:ValueGroupFilter AggregateIndex="0">
-	            <pivot:ValueGroupFilter.Condition>
-	                <pivot:IntervalCondition Condition="IsBetween" From="50" To="70"/>
-	            </pivot:ValueGroupFilter.Condition>
-	        </pivot:ValueGroupFilter>
-	    </pivot:QueryablePropertyGroupDescription.GroupFilter>
-	</pivot:QueryablePropertyGroupDescription>
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_5-xaml' />
 
 
 
-```C#
-	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
-	shipCountryGroupDescription.PropertyName = "ShipCountry";
-	var intervalCondition = new IntervalCondition();
-	intervalCondition.Condition = IntervalComparison.IsBetween;
-	intervalCondition.From = 50;
-	intervalCondition.To = 70;
-	
-	var valueGroupFilter = new ValueGroupFilter();
-	valueGroupFilter.AggregateIndex = 0;
-	valueGroupFilter.Condition = intervalCondition;
-	shipCountryGroupDescription.GroupFilter = valueGroupFilter;
-```
-```VB.NET
-	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
-	shipCountryGroupDescription.PropertyName = "ShipCountry"
-	Dim intervalCondition = New IntervalCondition()
-	intervalCondition.Condition = IntervalComparison.IsBetween
-	intervalCondition.From = 50
-	intervalCondition.To = 70
-	
-	Dim valueGroupFilter = New ValueGroupFilter()
-	valueGroupFilter.AggregateIndex = 0
-	valueGroupFilter.Condition = intervalCondition
-	shipCountryGroupDescription.GroupFilter = valueGroupFilter
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_6-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_6-vb' />
 
 ## Top 10 filter
 
@@ -292,34 +165,12 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 
 
 
-```XAML
-	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
-	    <pivot:QueryablePropertyGroupDescription.GroupFilter>
-	        <pivot:GroupsCountFilter AggregateIndex="0" Count="4" Selection="Top"/>
-	    </pivot:QueryablePropertyGroupDescription.GroupFilter>
-	</pivot:QueryablePropertyGroupDescription>
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_7-xaml' />
 
 
 
-```C#
-	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
-	shipCountryGroupDescription.PropertyName = "ShipCountry";
-	var countFilter = new GroupsCountFilter();
-	countFilter.AggregateIndex = 0;
-	countFilter.Count = 4;
-	countFilter.Selection = SortedListSelection.Top;
-	shipCountryGroupDescription.GroupFilter = countFilter;
-```
-```VB.NET
-	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
-	shipCountryGroupDescription.PropertyName = "ShipCountry"
-	Dim countFilter = New GroupsCountFilter()
-	countFilter.AggregateIndex = 0
-	countFilter.Count = 4
-	countFilter.Selection = SortedListSelection.Top
-	shipCountryGroupDescription.GroupFilter = countFilter
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_8-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-group-filtering-block_8-vb' />
 
 ## Applying filter at runtime
 

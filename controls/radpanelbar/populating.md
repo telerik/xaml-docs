@@ -34,13 +34,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 **Example 1** demonstrates how you can add a RadPanelBar in xaml.
 
 __Example 1: RadPanelBar with statically declared items in xaml__
-```XAML
-	<telerik:RadPanelBar>
-	    <telerik:RadPanelBarItem Header="Item 1" />
-	    <telerik:RadPanelBarItem Header="Item 2" />
-	    <telerik:RadPanelBarItem Header="Item 3" />
-	</telerik:RadPanelBar>
-```
+<snippet id='radpanelbar-populating-block_1-xaml' />
 
 #### __Figure 1: Result from Example 1 in Office2016 Theme__
 ![RadPanelBar Getting Started](images/panelbar_getting_started.png)
@@ -50,30 +44,8 @@ __Example 1: RadPanelBar with statically declared items in xaml__
 **Example 2** demonstrates how you can add __RadPanelBarItems__ directly to the __Items__ collection of the RadPanelBar in code behind:			
 
 __Example 2: Adding RadPanelBarItems in code__
-```C#
-	RadPanelBar myPanelBar = new RadPanelBar();
-	RadPanelBarItem item1 = new RadPanelBarItem() { Header = "Item 1" };
-	RadPanelBarItem item2 = new RadPanelBarItem() { Header = "Item 2" };
-	RadPanelBarItem item3 = new RadPanelBarItem() { Header = "Item 3" };
-	myPanelBar.Items.Add(item1);
-	myPanelBar.Items.Add(item2);
-	myPanelBar.Items.Add(item3);
-```
-```VB.NET
-	Dim myPanelBar As New RadPanelBar()
-	Dim item1 As New RadPanelBarItem() With {
-	.Header = "Item 1"
-			}
-	Dim item2 As New RadPanelBarItem() With {
-	.Header = "Item 2"
-			}
-	Dim item3 As New RadPanelBarItem() With {
-	.Header = "Item 3"
-			}
-	myPanelBar.Items.Add(item1)
-	myPanelBar.Items.Add(item2)
-	myPanelBar.Items.Add(item3)
-```
+<snippet id='radpanelbar-populating-block_2-cs' />
+<snippet id='radpanelbar-populating-block_2-vb' />
 
 ## Databinding the RadPanelBar Control		  
 
@@ -97,17 +69,7 @@ To change the theme, you can follow the steps below:
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 3: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radpanelbar-populating-block_3-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

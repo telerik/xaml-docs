@@ -61,16 +61,12 @@ We will now demonstrate how to integrate __RadPivotFieldList__ with __RadPivotGr
 You can add your __RadPivotFieldList__ directly in the XAML. First step is to define __pivot__ namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. After that add the code below:        	
 
   
-```XAML
-	<pivot:RadPivotFieldList Name="radPivotFieldList1" Grid.Column="1" />
-```
+<snippet id='radpivotgrid-features-pivotfieldlist-block_1-xaml' />
 
 Now the only thing you have to set is the DataProvider:        	
 
   
-```XAML
-	<pivot:RadPivotFieldList Name="radPivotFieldList1" Grid.Column="1"  DataProvider="{StaticResource LocalDataProvider}"/>
-```
+<snippet id='radpivotgrid-features-pivotfieldlist-block_2-xaml' />
 
 Here's the result of the modified application from [Getting Started]({%slug radpivotgrid-getting-started%}) article:
 ![Rad Pivot Grid Rad Field List Getting Started 01](images/RadPivotGrid_RadFieldList_GettingStarted_01.png)

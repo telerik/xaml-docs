@@ -32,22 +32,7 @@ You can change this default value of __TimeSpan.FromTicks(1)__ in order to influ
 
 
 
-```XAML
-	 <telerik:RadTimeline PeriodStart="2011-01-01"
-	                        PeriodEnd="2012-01-01"
-	                        StartPath="Date"
-	                        DurationPath="Time"
-	                        ItemsSource="{Binding Items}"
-	                        MinimumItemGap="7:00:00:00">
-	    <telerik:RadTimeline.Intervals>
-	        <telerik:DayInterval />
-	        <telerik:WeekInterval />
-	        <telerik:MonthInterval />
-	        <telerik:YearInterval />
-	    </telerik:RadTimeline.Intervals>
-	</telerik:RadTimeline>
-	
-```
+<snippet id='radtimeline-features-howto-control-vertical-position-of-items-block_1-xaml' />
 
 ![radtimeline-howto-control-vertical-position-of-timeline-items 01](images/radtimeline-howto-control-vertical-position-of-timeline-items_01.png)
 
@@ -61,21 +46,7 @@ The code sample below demonstrates how you can set the __AutoSort__ property of 
 
 
 
-```XAML
-	  <telerik:RadTimeline PeriodStart="2011-01-01"
-	                        PeriodEnd="2012-01-01"
-	                        AutoSort="False"
-	                        StartPath="Date"
-	                        DurationPath="Time"
-	                        ItemsSource="{Binding Items}">
-	    <telerik:RadTimeline.Intervals>
-	        <telerik:DayInterval />
-	        <telerik:WeekInterval />
-	        <telerik:MonthInterval />
-	        <telerik:YearInterval />
-	    </telerik:RadTimeline.Intervals>
-	</telerik:RadTimeline>
-```
+<snippet id='radtimeline-features-howto-control-vertical-position-of-items-block_2-xaml' />
 
 You can check the difference in the result with __AutoSort__ set to True/False with the following __ItemsSource__:
 
@@ -95,23 +66,7 @@ The example below shows how you can specify a custom item __RowIndex__ generator
 
 
 
-```XAML
-	 <telerik:RadTimeline PeriodStart="2011-01-01"
-	                     PeriodEnd="2012-01-01"
-	                     StartPath="Date"
-	                     DurationPath="Time"
-	                     ItemsSource="{Binding Items}">
-	    <telerik:RadTimeline.ItemRowIndexGenerator>
-	        <example:NewLineRowIndexGenerator />
-	    </telerik:RadTimeline.ItemRowIndexGenerator>
-	    <telerik:RadTimeline.Intervals>
-	        <telerik:DayInterval />
-	        <telerik:WeekInterval />
-	        <telerik:MonthInterval />
-	        <telerik:YearInterval />
-	    </telerik:RadTimeline.Intervals>
-	</telerik:RadTimeline>
-```
+<snippet id='radtimeline-features-howto-control-vertical-position-of-items-block_3-xaml' />
 
 ### The IItemRowIndexGenerator interface
 
@@ -121,68 +76,8 @@ Below you can find an implementation of a sample generator that positions every 
 
 
 
-```C#
-		using System.Collections.Generic;
-		using Telerik.Windows.Controls.Timeline;
-	
-		public class TimelineData
-		{
-			public DateTime Date { get; set; }
-			public TimeSpan Time { get; set; }
-			public int RowIndex { get; set; }
-		}
-	
-		public class NewLineRowIndexGenerator : IItemRowIndexGenerator
-		{
-			public void GenerateRowIndexes(List<TimelineRowItem> dataItems)
-			{
-				foreach (TimelineRowItem item in dataItems)
-				{
-					item.RowIndex = (item.DataItem as TimelineData).RowIndex;
-				}
-			}
-		}
-```
-```VB.NET
-		Public Class TimelineData
-			Public Property [Date]() As DateTime
-				Get
-					Return m_Date
-				End Get
-				Set
-					m_Date = Value
-				End Set
-			End Property
-			Private m_Date As DateTime
-			Public Property Time() As TimeSpan
-				Get
-					Return m_Time
-				End Get
-				Set
-					m_Time = Value
-				End Set
-			End Property
-			Private m_Time As TimeSpan
-			Public Property RowIndex() As Integer
-				Get
-					Return m_RowIndex
-				End Get
-				Set
-					m_RowIndex = Value
-				End Set
-			End Property
-			Private m_RowIndex As Integer
-		End Class
-	
-		Public Class NewLineRowIndexGenerator
-			Implements IItemRowIndexGenerator
-			Public Sub GenerateRowIndexes(dataItems As List(Of TimelineRowItem))
-				For Each item As TimelineRowItem In dataItems
-					item.RowIndex = TryCast(item.DataItem, TimelineData).RowIndex
-				Next
-			End Sub
-		End Class
-```
+<snippet id='radtimeline-features-howto-control-vertical-position-of-items-block_4-cs' />
+<snippet id='radtimeline-features-howto-control-vertical-position-of-items-block_5-vb' />
 
 Using the item RowIndex generator above, you will get the following result:
 

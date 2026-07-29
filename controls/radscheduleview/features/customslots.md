@@ -18,27 +18,7 @@ Let's for example have the following RadScheduleView grouped by "Calendar" Resou
 
 
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
-		<telerik:RadScheduleView.ViewDefinitions>				
-			<telerik:WeekViewDefinition  />
-		</telerik:RadScheduleView.ViewDefinitions>
-		<telerik:RadScheduleView.ResourceTypesSource>
-			<telerik:ResourceTypeCollection>
-				<telerik:ResourceType Name="Calendar">
-					<telerik:Resource ResourceName="My Calendar" />
-					<telerik:Resource ResourceName="Team Calendar" />
-				</telerik:ResourceType>
-			</telerik:ResourceTypeCollection>
-		</telerik:RadScheduleView.ResourceTypesSource>
-		<telerik:RadScheduleView.GroupDescriptionsSource>
-			<telerik:GroupDescriptionCollection>
-				<telerik:ResourceGroupDescription ResourceType="Calendar" />
-				<telerik:DateGroupDescription />
-			</telerik:GroupDescriptionCollection>
-		</telerik:RadScheduleView.GroupDescriptionsSource>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-customslots-block_1-xaml' />
 
 We will define a custom Slot class, create a collection of custom Slot objects which then will be set to the SpecialSlotsSource property.Also in this tutorial we will crete custom ScheduleViewStyleSelector class and define the needed Styles.
 
@@ -46,36 +26,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 
 
 
-```C#
-	public class BreakSlot : Slot
-	{
-		public string ImageSource { get; set; }
-		public string Description { get; set; }
-	
-		public BreakSlot(DateTime start, DateTime end) : base(start, end)
-		{
-			this.Resources.Add(new Resource("My Calendar", "Calendar"));			
-		}
-	
-		public override Slot Copy()
-		{
-			Slot slot = new BreakSlot(this.Start, this.End);
-			slot.CopyFrom(this);
-			return slot;
-		}
-	
-		public override void CopyFrom(Slot other)
-		{
-			var otherSlot = other as BreakSlot;
-			if (otherSlot != null)
-			{
-				this.ImageSource = otherSlot.ImageSource;
-				this.Description = otherSlot.Description;
-				base.CopyFrom(otherSlot);
-			}
-		}
-	}
-```
+<snippet id='radscheduleview-features-customslots-block_2-cs' />
 
 >Note how __Copy__ and __CopyFrom__ methods in the custom slot class are overriden!
 
@@ -83,79 +34,19 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 
 
 
-```C#
-	this.SpecialSlots = new ObservableCollection<Slot>()
-	{
-		new BreakSlot( new DateTime(2012, 1, 23, 12, 0, 0), new DateTime(2012, 1, 23, 13, 0, 0)) {
-			RecurrencePattern = new RecurrencePattern(null, RecurrenceDays.WeekDays, RecurrenceFrequency.Weekly, 1, null, null),
-			ImageSource = "meal_icon.png",
-			Description =  "lunch time"
-		}, 
-		new BreakSlot(new DateTime(2012, 1, 23, 16, 0, 0), new DateTime(2012, 1, 23, 16, 30, 0)) {
-			RecurrencePattern = new RecurrencePattern(null, RecurrenceDays.WeekDays, RecurrenceFrequency.Weekly, 1, null, null),
-			ImageSource = "coffee_icon.png",
-			Description = "coffee break"
-		}
-	};
-```
+<snippet id='radscheduleview-features-customslots-block_3-cs' />
 
 * The next step is to create the __ScheduleViewStyleSelector__ class:
 
 
 
-```C#
-	public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
-	{
-		private Style breakSlotStyle;
-	
-		public Style BreakSlotStyle
-		{
-			get
-			{
-				return this.breakSlotStyle;
-			}
-			set
-			{
-				this.breakSlotStyle = value;
-			}
-		}
-	
-		public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDefinition)
-		{
-			Slot slot = item as Slot;
-	
-			if (item is BreakSlot)
-				return this.BreakSlotStyle;
-	
-			return base.SelectStyle(item, container, activeViewDefinition);
-		}
-	}
-```
+<snippet id='radscheduleview-features-customslots-block_4-cs' />
 
 * and to define the Style:
 
 
 
-```XAML
-	<local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
-		<local:SpecialSlotStyleSelector.BreakSlotStyle>
-			<Style TargetType="telerik:HighlightItem">
-				<Setter Property="Template">
-					<Setter.Value>
-						<ControlTemplate>
-							<Border Background="LightGray">
-								<StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-									<Image Source="{Binding Slot.ImageSource}" MaxHeight="29" />
-									<TextBlock Text="{Binding Slot.Description}" FontSize="10" FontStyle="Italic" Foreground="DarkSlateGray" />
-								</StackPanel>
-							</Border>
-						</ControlTemplate>
-					</Setter.Value>
-				</Setter>
-			</Style>
-		</local:SpecialSlotStyleSelector.BreakSlotStyle>
-	</local:SpecialSlotStyleSelector>
-```
+<snippet id='radscheduleview-features-customslots-block_5-xaml' />
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) please, notice that the Style that targets the __HighlightItem__ should be based on the default HighlightItemStyle.
 
@@ -163,16 +54,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 
 
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
-				SpecialSlotsSource="{Binding SpecialSlots}"
-				SpecialSlotStyleSelector="{StaticResource SpecialSlotStyleSelector}">
-		<telerik:RadScheduleView.ViewDefinitions>				
-			<telerik:WeekViewDefinition  />
-		</telerik:RadScheduleView.ViewDefinitions>
-		...
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-customslots-block_6-xaml' />
 
 Here is the result:
 

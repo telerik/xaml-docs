@@ -23,26 +23,14 @@ The LinearScale control can have either a horizontal or vertical orientation. Th
 Here is an example of a __LinearScale__ with horizontal orientation:
 
 
-```XAML
-	<telerik:RadHorizontalLinearGauge Width="300"
-	                                  Height="100"
-	                                  telerik:StyleManager.Theme="Windows8">
-	    <telerik:HorizontalLinearScale Min="0"
-	                         Max="12" />
-	</telerik:RadHorizontalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-scales-linear-scale-block_1-xaml' />
+
 
 Here is an example of a __LinearScale__ with vertical orientation:
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge Width="100"
-	                                Height="300"
-	                                telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0"
-	                         Max="12" />
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-scales-linear-scale-block_2-xaml' />
+
 
 Both results can be seen below:
 
@@ -57,16 +45,8 @@ The __Relative Size__ feature allows you to specify the size of the scale toward
 Here is an example:
 
 
-```XAML
-	<telerik:RadHorizontalLinearGauge Width="300"
-	                                  Height="100"
-	                                  telerik:StyleManager.Theme="Windows8">
-	    <telerik:HorizontalLinearScale Min="0"
-	                         Max="12"
-	                         RelativeWidth="1"
-	                         RelativeHeight="1"/>
-	</telerik:RadHorizontalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-scales-linear-scale-block_3-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -79,22 +59,8 @@ The __LinearScale__ exposes the __RelativeX__ and __RelativeY__ properties, whic
 Here is an example:
 
 
-```XAML
-	<telerik:RadHorizontalLinearGauge Width="250"
-	                                    Height="70"
-	                                    OuterBackground="#F4F4F4"
-	                                    OuterBorderThickness="0"
-	                                    telerik:StyleManager.Theme="Windows8">
-	    <telerik:HorizontalLinearScale Min="0"
-	                            Max="12"
-	                            RelativeX="0"
-	                            RelativeY="0"
-	                            RelativeWidth="1"
-	                            RelativeHeight="1" 
-	                            StartWidth="0"
-	                            EndWidth="0"/>
-	</telerik:RadHorizontalLinearGauge>
-```
+<snippet id='radgauge-features-linear-and-radial-scales-scales-linear-scale-block_4-xaml' />
+
 
 Here is a snapshot of the result:
 

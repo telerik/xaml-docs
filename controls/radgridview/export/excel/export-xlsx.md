@@ -41,33 +41,8 @@ The __ExportToXlsx__ method uses additional libraries so you need to add referen
 The following example shows how to use the method on a button click:
 
 __Example 1: Use of ExportToXlsx Method__
-```C#
-	private void btnExport_Click(object sender, RoutedEventArgs e)
-	{
-	    string extension = "xlsx";
-	
-	    Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog()
-	    {
-	        DefaultExt = extension,
-	        Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"),
-	        FilterIndex = 1
-	    };
-	
-	    if (dialog.ShowDialog() == true)
-	    {
-	        using (Stream stream = dialog.OpenFile())
-	        {
-	            gridViewExport.ExportToXlsx(stream,
-	                new GridViewDocumentExportOptions()
-	                {
-	                    ShowColumnFooters = true,
-	                    ShowColumnHeaders = true,
-	                    ShowGroupFooters = true
-	                });
-	        }
-	    }
-	}
-```
+<snippet id='radgridview-export-excel-export-xlsx-example_1_use_of_exporttoxlsx_method-cs' />
+
 
 ## Export Default Styles
 
@@ -85,16 +60,8 @@ By default the ExportDefaultStyles property is set to false. You can see the res
 You can set the __ExportDefaultStyles__ value to __“true”__ and see the result (Figure 2).
 
 __Example 2: Configuring ExportDefaultStyles Setting__
-```C#
-	gridViewExport.ExportToXlsx(stream,
-	    new GridViewDocumentExportOptions()
-			{
-			    ShowColumnHeaders = true,
-			    ShowColumnFooters = true,
-			    ShowGroupFooters = true,
-			    ExportDefaultStyles = true
-			});   
-```
+<snippet id='radgridview-export-excel-export-xlsx-example_2_configuring_exportdefaultstyles_setting-cs' />
+
 
 #### __Figure 2: Exporting with ExportDefaultStyles set to True__
 ![Telerik UI for {{ site.framework_name }} RadGridView XLSX export with default styles applied](../images/exportdefaultstyles2.png)
@@ -104,23 +71,8 @@ __Example 2: Configuring ExportDefaultStyles Setting__
 __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ property. Its default value is __True__, meaning that the column's width will be automatically fit based on its content. To disable this behavior, its value can be set to __False__.
 
 __Example 3: Setting the AutoFitColumnsWidth Property to False__
-```C#
-	if (dialog.ShowDialog() == true)
-	{
-	    using (Stream stream = dialog.OpenFile())
-	    {
-	        gridViewExport.ExportToXlsx(stream,
-	            new GridViewDocumentExportOptions()
-	            {
-	                ShowColumnHeaders = true,
-	                ShowColumnFooters = true,
-	                ShowGroupFooters = true,
-	                ExportDefaultStyles = true,
-	                AutoFitColumnsWidth = false
-	            });
-	    }
-	}
-```
+<snippet id='radgridview-export-excel-export-xlsx-example_3_setting_the_autofitcolumnswidth_property_to_false-cs' />
+
 	
 #### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
 ![Telerik UI for {{ site.framework_name }} RadGridView XLSX export with automatic column width fitting disabled](../images/autofitcolumnswidth.png)
@@ -132,22 +84,8 @@ By default, the Aggregate results of the __GroupHeaderRow__ will be exported. No
 
 __Example 4: Setting ShowGroupHeaderRowAggregates__
 
-```C#
-	if (dialog.ShowDialog() == true)
-            {
-                using (Stream stream = dialog.OpenFile())
-                {
-                    gridViewExport.ExportToXlsx(stream,
-                        new GridViewDocumentExportOptions()
-                        {
-                            ShowColumnFooters = true,
-                            ShowColumnHeaders = true,
-                            ShowGroupFooters = true,
-                            ShowGroupHeaderRowAggregates = false
-                        });
-                }
-            }
-```
+<snippet id='radgridview-export-excel-export-xlsx-example_4_setting_showgroupheaderrowaggregates-cs' />
+
 
 ## Events
 

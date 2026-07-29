@@ -17,22 +17,8 @@ The example in this topic will show you a __ListBox__ bound to a list of integer
 Here is the XAML for the example. In it you can see a __ListBox__ and a __RadDataPager__ with its __PageSize__ property set. The other important thing is the event handler attached to the __PageIndexChanged__ event.
 
 
-```XAML
+<snippet id='raddatapager-features-unbound-mode-block_1-xaml' />
 
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <Grid.RowDefinitions>
-	        <RowDefinition />
-	        <RowDefinition Height="Auto" />
-	    </Grid.RowDefinitions>
-	    <ListBox x:Name="listBox" />
-	    <telerik:RadDataPager x:Name="radDataPager"
-	                            Grid.Row="1"
-	                            PageSize="10"
-	                            Margin="0,10,0,0"
-	                            PageIndexChanged="radDataPager_PageIndexChanged" />
-	</Grid>
-```
 
 
 Now take a look at the code-behind. There is a simple list of integers, which will serve as a dummy data. The keypoints here are to set the __ItemCount__ property of the __DataPager__ to the count of your data. In this way the UI will display correct information to the user. The next point is to set the __ItemsSource__ of the __ListBox__ to an appropriate value and the last one is to implement the custom paging logic inside the handler for the __PageIndexChanged__ event.
@@ -40,46 +26,10 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 >tip If you want to implement some logic before the __PageIndex__ gets changed, you can attach an event handler to the __PageIndexChanging__ event.
 
 
-```C#
+<snippet id='raddatapager-features-unbound-mode-block_2-cs' />
 
-	public partial class UnboundModeSample : UserControl
-	{
-	    private List<int> data;
-	    public UnboundModeSample()
-	    {
-	        InitializeComponent();
-	        this.data = Enumerable.Range( 0, 100 ).ToList();
-	        this.radDataPager.ItemCount = data.Count;
-	        this.listBox.ItemsSource = this.data.Take( this.radDataPager.PageSize ).ToList();
-	    }
-	    private void radDataPager_PageIndexChanged( object sender, PageIndexChangedEventArgs e )
-	    {
-	        if ( this.data != null )
-	        {
-	            this.listBox.ItemsSource = this.data.Skip( e.NewPageIndex * this.radDataPager.PageSize ).Take( this.radDataPager.PageSize ).ToList();
-	        }
-	    }
-	}
-```
-```VB.NET
+<snippet id='raddatapager-features-unbound-mode-block_2-vb' />
 
-	Public Partial Class UnboundModeSample
-	 Inherits UserControl
-	 Implements IView
-	 Private data As List(Of Integer)
-	 Public Sub New()
-	  InitializeComponent()
-	  Me.data = Enumerable.Range(0, 100).ToList()
-	  Me.radDataPager.ItemCount = data.Count
-	  Me.listBox.ItemsSource = Me.data.Take(Me.radDataPager.PageSize).ToList()
-	 End Sub
-	 Private Sub radDataPager_PageIndexChanged(sender As Object, e As PageIndexChangedEventArgs)
-	  If Me.data IsNot Nothing Then
-	   Me.listBox.ItemsSource = Me.data.Skip(e.NewPageIndex * Me.radDataPager.PageSize).Take(Me.radDataPager.PageSize).ToList()
-	  End If
-	 End Sub
-	End Class
-```
 
 ## See Also  
  * [Source and Paged Source]({%slug raddatapager-features-source-and-paged-source%})

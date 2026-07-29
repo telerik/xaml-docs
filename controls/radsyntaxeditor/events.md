@@ -43,21 +43,7 @@ As of **R1 2020**, the **CompletionListWindow** which is of type **CompletionLis
 **Example 1** demonstrates how to use this event to replace the text which was entered before an item from the completion list was selected.
 
 __Example 1: Handle the TextInserting event__
-```C#
-
-    private void CompletionListWindow_TextInserting(object sender, CompletionListTextInsertingEventArgs e)
-    {
-        string lineText = this.syntaxEditor.Document.CurrentSnapshot.GetLineFromPosition(this.syntaxEditor.CaretPosition.Index).GetText();
-        string[] splitted = lineText.Split(new char[] { ' ' });
-        string lastWord = splitted.Last();
-        if (e.TextToInsert.ToLower().StartsWith(lastWord.ToLower()))
-        {
-            int wordLength = lastWord.Length;
-            int spanEnd = e.SpanToReplace.Start;
-            e.SpanToReplace = Telerik.Windows.SyntaxEditor.Core.Text.Span.FromBounds(spanEnd - wordLength, spanEnd);
-        }
-    }
-```
+<snippet id='radsyntaxeditor-events-block_1-cs' />
 
 ## See Also
 

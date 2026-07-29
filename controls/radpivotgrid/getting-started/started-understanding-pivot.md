@@ -72,22 +72,12 @@ As you can see we have two PropertyGroupDescriptions defined as RowGroupDescript
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider AggregatesLevel="0" AggregatesPosition="Rows" />
-```
+<snippet id='radpivotgrid-getting-started-started-understanding-pivot-block_1-xaml' />
 
 
 
-```C#
-	var dataProvider = new LocalDataSourceProvider();
-	dataProvider.AggregatesLevel = 0;
-	dataProvider.AggregatesPosition = PivotAxis.Rows;
-```
-```VB.NET
-	Dim dataProvider = New LocalDataSourceProvider()
-	dataProvider.AggregatesLevel = 0
-	dataProvider.AggregatesPosition = PivotAxis.Rows
-```
+<snippet id='radpivotgrid-getting-started-started-understanding-pivot-block_2-cs' />
+<snippet id='radpivotgrid-getting-started-started-understanding-pivot-block_2-vb' />
 
 * __RadPivotFieldList__ - a powerful control for applying modifications on the DataProvider at runtime. If you have __RadPivotGrid__ and __RadPivotFieldList__ and they are using the same DataProvider, you can modify your pivot at runtime with __RadPivotFieldList__. Combination of these two controls is a very powerful business intelligence tool.
 

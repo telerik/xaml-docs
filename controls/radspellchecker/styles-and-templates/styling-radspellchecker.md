@@ -25,9 +25,7 @@ In addition to the properties inherited from RadWindow, there is a property call
 
 __Example 1: Apply a Theme to RadSpellChecker's Windows__
 
-```C#
-	RadSpellChecker.WindowSettings.Theme = new SummerTheme();
-```
+<snippet id='radspellchecker-styles-and-templates-styling-radspellchecker-block_1-cs' />
 
 
 

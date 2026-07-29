@@ -41,9 +41,7 @@ You can add __RadNumericUpDown__ manually by writing the XAML code in __Example 
 
 __Example 1: Adding RadNumericUpDown in XAML__
 
-```XAML
-	<telerik:RadNumericUpDown />
-```
+<snippet id='radnumericupdown-getting-started-block_1-xaml' />
 
 >In order to use __RadNumericUpDown__ in XAML you have to add the namespace declaration shown in __Example 2__:
 >__Example 2: Declaring Telerik Namespace__
@@ -65,9 +63,7 @@ You can then bind RadNumericUpDown's **Value** to a property of your view model 
 
 __Example 3: Binding RadNumericUpDown's Value__
 
-```XAML
-	<telerik:RadNumericUpDown Value="{Binding Clubs[0].StadiumCapacity}" Minimum="10000" Maximum="100000" SmallChange="1000" />
-```
+<snippet id='radnumericupdown-getting-started-block_2-xaml' />
 
 ## Setting a Theme
 
@@ -87,17 +83,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radnumericupdown-getting-started-block_3-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -111,7 +97,7 @@ __Figure 2__ shows a __RadNumericUpDown__ with the **Windows8** theme applied.
 
 * [Telerik UI for WPF NumericUpDown Component](https://www.telerik.com/products/wpf/numericupdown.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -126,4 +112,3 @@ __Figure 2__ shows a __RadNumericUpDown__ with the **Windows8** theme applied.
 * [Properties]({%slug radnumericupdown-behavior%})
 
 * [Events]({%slug radnumericupdown-events%})
-

@@ -15,9 +15,7 @@ This tutorial describes how to use a custom property provider to define the prop
 The __PersistenceFramework__ exposes an extension method that allows you to register a class to act as a property provider and define which properties of a persisted control should be saved and how. The method has the following syntax:	  
 
 __Example 1: Register Custom Provider__
-```C#
-    ServiceProvider.RegisterPersistenceProvider<ICustomPropertyProvider>(System.Type type, Telerik.Windows.Persistence.Services.IPersistenceProvider provider);
-```
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_1-cs' />
 
 You need to pass as arguments the type of the component that will use the custom property provider and an instance of the custom property provider class.  
 
@@ -53,81 +51,14 @@ You can implement the above methods in a custom property provider class as follo
 
 __Example 2: Implement ICustomPropertyProvider interface__
 
-```C#
-    public class SampleCustomPropertyProvider : ICustomPropertyProvider
-    {	
-        public CustomPropertyInfo[] GetCustomProperties()
-        {
-            // Create an array of CustomPropertyInfo objects to describe which properties should be persisted 
-            return new CustomPropertyInfo[]
-            {
-                //Add CustomPropertyInfo objects
-            };
-        }
-
-        public void InitializeObject(object context)
-        {
-            //Set the persisted component in a state such that it is ready to take the persisted settings
-        }
-
-        public object InitializeValue(CustomPropertyInfo customPropertyInfo, object context)
-        {
-            //Return a default value for the properties which the PersistenceFramework failed to restore
-        }
-
-        public object ProvideValue(CustomPropertyInfo customPropertyInfo, object context)
-        {
-            //Implement a logic that returns an object describing a property. 
-            //Note that this event is fired once for each property from the array returned by the GetCustomProperties() method. 
-            //Therefore you need to implement a logic that returns a separate object for each property.
-        }
-
-        public void RestoreValue(CustomPropertyInfo customPropertyInfo, object context, object value)
-        {
-            //Use the value argument to get the persisted settings.
-            //Apply these settings on the context object as it represents the persisted component
-        }	
-    }
-```
-```VB.NET
-    Public Class SampleCustomPropertyProvider
-        Implements ICustomPropertyProvider
-
-        Public Function GetCustomProperties() As CustomPropertyInfo()
-            ' Create an array of CustomPropertyInfo objects to describe which properties should be persisted '		
-            Return New CustomPropertyInfo() {}
-        End Function
-
-        Public Sub InitializeObject(context As Object)
-            'Set the persisted component in a state such that it is ready to take the persisted settings '
-        End Sub
-
-        Public Function InitializeValue(customPropertyInfo As CustomPropertyInfo, context As Object) As Object
-            'Return a default value for the properties which the PersistenceFramework failed to restore '
-        End Function
-
-        Public Function ProvideValue(customPropertyInfo As CustomPropertyInfo, context As Object) As Object
-            'Implement logic that returns an object describing a persisted property. '
-            'Note that this event is fired once for each property from the array returned by the GetCustomProperties() method. '
-            'Therefore you need to implement a logic that returns a separate object for each property. '
-        End Function
-
-        Public Sub RestoreValue(customPropertyInfo As CustomPropertyInfo, context As Object, value As Object)
-            'Use the value argument to get the persisted settings. '
-            'Apply these settings on the context object as it represents the persisted component '
-        End Sub
-    End Class
-```
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_2-cs' />
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_2-vb' />
 
 Next, you need to register the __SampleCustomPropertyProvider__ in the application.		
 
 __Example 3: Register the SampleCustomPropertyProvider class__
-```C#
-    ServiceProvider.RegisterPersistenceProvider<ICustomPropertyProvider>(typeof(SampleControl), new SampleCustomPropertyProvider());
-```
-```VB.NET
-    ServiceProvider.RegisterPersistenceProvider(Of ICustomPropertyProvider)(GetType(SampleControl), New SampleCustomPropertyProvider())
-```
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_3-cs' />
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_3-vb' />
 
 >Please note that the __SampleControl__ type is simply an example and instead you need to define the type of the component for which the __SampleCustomPropertyProvider__ is built.
 
@@ -150,17 +81,7 @@ This __IAttachedPropertyProvider__ interface should be implement when you want t
 * __GetAttachedPropertyTypeProviders():__ This method should return an array of Type objects to represent the list of attached properties that have to be persisted by the __PersistenceFramework__.
 
 __Example 4: Implement IAttachedPropertyProvider interface__
-```C#   
-	public class CustomAttachedProvider : IAttachedPropertyProvider
-    {
-        public Type[] GetAttachedPropertyTypeProviders()
-        {
-            return new Type[]
-			{
-			};
-        }
-    }
-```
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_4-cs' />
 
 ## IPropertyProvider
 
@@ -169,24 +90,7 @@ This __IPropertyProvider__ interface should be implement when you want to contro
 * __GetProperties():__ this method should return an array of __PropertyInfo__ objects to represent the list of properties that have to be persisted by the __PersistenceFramework__.
 
 __Example 5: Implement IPropertyProvider interface__
-```C#   
-	public class CustomPropertyProvider : IPropertyProvider
-    {
-        public PropertyInfo[] GetProperties()
-        {
-		List<PropertyInfo> properties = new List<PropertyInfo>();
-		var allProperties = typeof(RadGridView).GetProperties();
-		foreach (PropertyInfo item in allProperties)
-		{
-			if (item.Name == "Width" || item.Name == "Height")
-			{
-				properties.Add(item);
-			}
-		}
-		return properties.ToArray();
-	}
-    }
-```
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_5-cs' />
 
 ## IPropertyValidatorProvider
 
@@ -195,15 +99,7 @@ By implementing this interface you can validate if a property should be saved or
 * __IsValid():__ This method return true or false if a property should be persist.
 
 __Example 6: Implement IPropertyValidatorProvider interface__
-```C#   
-	public class PropertyValidatorProvider : IPropertyValidatorProvider
-    {
-        public bool IsValid(string propertyName, Type propertyType, object context, object value)
-        {
-           return true;
-        }
-    }
-```
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_6-cs' />
 
 >Only one validator for given type should be register.
 
@@ -214,34 +110,7 @@ The __ITypeConverterProvider__ interface should be implement in order to convert
 * __GetTypeConverterType():__ This method return the type of the __TypeConverter__.
 
 __Example 7: Implement ITypeConverterProvider interface__
-```C#   
-	public class TypeProvider : ITypeConverterProvider
-    {
-        public Type GetTypeConverterType()
-        {
-            return typeof(CustomTypeConverter);
-        }
-    }
-    public class CustomTypeConverter : TypeConverter
-    {        
-        public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
-        {
-            return base.CanConvertFrom(context, sourceType);
-        }
-        public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
-        {
-            return base.ConvertFrom(context, culture, value);
-        }
-        public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
-        {
-            return base.CanConvertTo(context, destinationType);
-        }
-        public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
-        {
-            return base.ConvertTo(context, culture, value, destinationType);
-        }
-    }
-```
+<snippet id='radpersistenceframework-features-persistence-framework-custom-property-provider-block_7-cs' />
 
 ## See Also
  * [Isolated Storage]({%slug persistence-framework-isolated-storage%})

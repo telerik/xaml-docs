@@ -34,100 +34,43 @@ Firstly you need to create a custom class that inherits the default __ComboBoxFi
 
 
 
-```C#
-	public class StringLengthFilteringBehavior : ComboBoxFilteringBehavior
-	{
-	
-	}
-```
+<snippet id='radcombobox-features-filteringbehavior-block_1-cs' />
+
 
 #### __VB__
 
-```VB
-	Public Class StringLengthFilteringBehavior
-		Inherits ComboBoxFilteringBehavior
-	End Class
-```
+<snippet id='radcombobox-features-filteringbehavior-block_2-vb' />
+
 
 Next thing you have to do is to override the __FindMatchingIndexes()__ method that should return a collection of integer objects representing the indexes of the items whose length is smaller than the typed one. The charLength field is used in this concrete scenario to preserve the currently typed length:
 
 
 
-```C#
-	private int charLength;
-	public override List<int> FindMatchingIndexes(string text)
-	{
-		if (int.TryParse(text, out this.charLength))
-		{
-			return this.ComboBox.Items.OfType<DataItem>().Where(i => i.Title.Length >= this.charLength).Select(i => this.ComboBox.Items.IndexOf(i)).ToList();
-		}
-		return new List<int>();
-	}
-```
+<snippet id='radcombobox-features-filteringbehavior-block_3-cs' />
+
 
 #### __VB__
 
-```VB
-	Private charLength As Integer
-	Public Overrides Function FindMatchingIndexes(ByVal text As String) As List(Of Integer)
-		If Integer.TryParse(text, Me.charLength) Then
-			Return Me.ComboBox.Items.OfType(Of DataItem)().Where(Function(i) i.Title.Length >= Me.charLength).Select(Function(i) Me.ComboBox.Items.IndexOf(i)).ToList()
-		End If
-		Return New List(Of Integer)()
-	End Function
-```
+<snippet id='radcombobox-features-filteringbehavior-block_4-vb' />
+
 
 The __FindFullMatchIndex()__ method also needs to be overridden. It should return the index of the first item that fully matches the typed length and that item will be highlighted. However, if there is no match, the method should return -1 – thus the first item will be highlighted:
 
 
 
-```C#
-	public override int FindFullMatchIndex(ReadOnlyCollection<int> matchIndexes)
-	{
-		var fullMatch = this.ComboBox.Items.OfType<DataItem>().FirstOrDefault(i => i.Title.Length == charLength);
-		if (fullMatch == null)
-		{
-			return -1;
-		}
-		var fullMatchIndex = this.ComboBox.Items.IndexOf(fullMatch);
-		if (matchIndexes.Contains(fullMatchIndex))
-		{
-			return fullMatchIndex;
-		}
-		return -1;
-	}
-```
+<snippet id='radcombobox-features-filteringbehavior-block_5-cs' />
+
 
 #### __VB__
 
-```VB
-	Public Overrides Function FindFullMatchIndex(ByVal matchIndexes As ReadOnlyCollection(Of Integer)) As Integer
-		Dim fullMatch = Me.ComboBox.Items.OfType(Of DataItem)().FirstOrDefault(Function(i) i.Title.Length = charLength)
-		If fullMatch Is Nothing Then
-			Return -1
-		End If
-		Dim fullMatchIndex = Me.ComboBox.Items.IndexOf(fullMatch)
-		If matchIndexes.Contains(fullMatchIndex) Then
-			Return fullMatchIndex
-		End If
-		Return -1
-	End Function
-```
+<snippet id='radcombobox-features-filteringbehavior-block_6-vb' />
+
 
 Finally all you need to do is to set the newly created behavior to the FilteringBehavior of RadComboBox:
 
 
-```XAML
-	<telerik:RadComboBox  IsEditable="True" 
-						  OpenDropDownOnFocus="True"
-						  IsFilteringEnabled="True"
-						  ItemsSource="{Binding DataItems}" 
-						  DisplayMemberPath="Title">
-		<telerik:RadComboBox.FilteringBehavior>
-				<local:StringLenghtFilteringBehavior />
-		</telerik:RadComboBox.FilteringBehavior>
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-filteringbehavior-block_7-xaml' />
+
 
 The following figures demonstrate the final result:
 __Figure 1:__ The items whose length is bigger or equal to 10 are filtered and the item that fully matches is highlighted:

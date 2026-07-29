@@ -18,25 +18,8 @@ Here is the XAML declaration of the above structure.
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadDocking.DocumentHost>
-	        <telerik:RadSplitContainer>
-	            <telerik:RadPaneGroup x:Name="radPaneGroup" >
-	                <telerik:RadPane x:Name="radPane1" Header="Document 1">
-	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-	                </telerik:RadPane>
-	                <telerik:RadPane x:Name="radPane2" Header="Document 2">
-	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-	                </telerik:RadPane>
-	                <telerik:RadPane x:Name="radPane3" Header="Document 3">
-	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	    </telerik:RadDocking.DocumentHost>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-document-host-block_1-xaml' />
+
 
 >tip Since the DocumentHost is meant to host the editable documents in your application, it is good idea to use [RadDocumentPanes]({%slug raddocking-panes-raddocumentpane%}) instead of [RadPanes]({%slug raddocking-panes-radpane%}).
 
@@ -50,25 +33,8 @@ The next code snippet shows how to set the CloseButtonPosition to InPane:
   
 
 
-```XAML
-	<telerik:RadDocking CloseButtonPosition="InPane">
-	    <telerik:RadDocking.DocumentHost>
-	        <telerik:RadSplitContainer>
-	            <telerik:RadPaneGroup x:Name="radPaneGroup1" >
-	                <telerik:RadPane x:Name="radPane11" Header="Document 1">
-	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-	                </telerik:RadPane>
-	                <telerik:RadPane x:Name="radPane21" Header="Document 2">
-	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-	                </telerik:RadPane>
-	                <telerik:RadPane x:Name="radPane31" Header="Document 3">
-	                    <TextBlock TextWrapping="Wrap" Text=""></TextBlock>
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	    </telerik:RadDocking.DocumentHost>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-document-host-block_2-xaml' />
+
 
 The next descriptions describe the built-in predefined CloseButtonPosition settings and their visual representation when they are set:
 
@@ -90,9 +56,8 @@ When the number of Panes inside the `DocumentHost` increases and there is not en
 
 
 
-```XAML
-	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
-```
+<snippet id='raddocking-features-document-host-block_3-xaml' />
+
 
 __Figure 1: __ DocumentHost with a visible `HorizontalScrollBar`:
 ![{{ site.framework_name }} RadDocking DocumentHost with a visible `HorizontalScrollBar`:](images/raddocking-features-document-host-5.png)
@@ -103,9 +68,8 @@ In addition to this you could also display the drop down menu button that contai
 
 
 
-```XAML
-	<telerik:RadPaneGroup ScrollViewer.HorizontalScrollBarVisibility="Auto" DropDownDisplayMode="Visible"/>
-```
+<snippet id='raddocking-features-document-host-block_4-xaml' />
+
 
 The `DropDownDisplayMode` property could be set to any of the following values:
 * `Collapsed`&mdash;The drop down will never be shown.
@@ -123,49 +87,22 @@ To control the extra space around the content of the panes inside a certain pane
 
 
 
-```XAML
-	<telerik:RadDocking.DocumentHost>
-	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup Padding="10">
-	            <telerik:RadPane>
-	                <ScrollViewer/>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking.DocumentHost>
-```
+<snippet id='raddocking-features-document-host-block_5-xaml' />
+
 
 Furthermore, if you need to apply this to all of the `RadPaneGroup` instances, create a new `Style` with a `Setter` for the `Padding` property.
 
 
 
-```XAML
-	<Application.Resources>
-		<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
-		<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
-		<Style TargetType="telerik:RadPaneGroup">
-		    <Setter Property="Padding" Value="10" />
-		</Style>
-	</Application.Resources>
-```
+<snippet id='raddocking-features-document-host-block_6-xaml' />
+
 
 > For the Fluent, Green, Material, Office2016 and Office2016Touch themes, the `RadPaneGroup` element's padding should be updated through a style trigger.
 
 
 
-```XAML
-	<Application.Resources>
-		<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
-		<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
-		<Style TargetType="telerik:RadPaneGroup">
-		    <Style.Triggers>
-			<Trigger Property="IsInDocumentHost" Value="True">
-			    <Setter Property="Padding" Value="10" />
-			</Trigger>
-		    </Style.Triggers>
-		</Style>
-	</Application.Resources>
-```
+<snippet id='raddocking-features-document-host-block_7-xaml' />
+
 
 ## See Also
 

@@ -15,60 +15,32 @@ position: 7
 {% if site.site_name == 'WPF' %}
 __Example 1: Add a handler for the SelectionChanged event__
 
-```C#
-	this.radGridView.AddHandler(RadComboBox.SelectionChangedEvent, new System.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
-```
-```VB.NET
-	Me.radGridView.AddHandler(RadComboBox.SelectionChangedEvent, New System.Windows.Controls.SelectionChangedEventHandler(AddressOf OnSelectionChanged))
-```
+<snippet id='radgridview-columns-how-to-selectionchanged-comboboxcolumn-example_1_add_a_handler_for_the_selectionchanged_event-cs' />
+
+<snippet id='radgridview-columns-how-to-selectionchanged-comboboxcolumn-example_1_add_a_handler_for_the_selectionchanged_event-vb' />
+
 
 __Example 2: Handle the SelectionChanged event__
 
-```C#
-	private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (e.RemovedItems.Count > 0)
-            {
-                //your code here
-            }
-        }
-```
-```VB.NET
-	Private Sub OnSelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
-	    If e.RemovedItems.Count > 0 Then
-	        'your code here
-	    End If
-	End Sub
-```
+<snippet id='radgridview-columns-how-to-selectionchanged-comboboxcolumn-example_2_handle_the_selectionchanged_event-cs' />
+
+<snippet id='radgridview-columns-how-to-selectionchanged-comboboxcolumn-example_2_handle_the_selectionchanged_event-vb' />
+
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
 __Example 1: Add a handler for the SelectionChanged event__
 
-```C#
-	this.radGridView.AddHandler(RadComboBox.SelectionChangedEvent, new Telerik.Windows.Controls.SelectionChangedEventHandler(OnSelectionChanged));
-```
-```VB.NET
-	Me.radGridView.AddHandler(RadComboBox.SelectionChangedEvent, New Telerik.Windows.Controls.SelectionChangedEventHandler(AddressOf OnSelectionChanged))
-```
+<snippet id='radgridview-columns-how-to-selectionchanged-comboboxcolumn-example_1_add_a_handler_for_the_selectionchanged_event-cs' />
+
+<snippet id='radgridview-columns-how-to-selectionchanged-comboboxcolumn-example_1_add_a_handler_for_the_selectionchanged_event-vb' />
+
 
 __Example 2: Handle the SelectionChanged event__
 
-```C#
-	private void OnSelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
-        {
-            if (e.RemovedItems.Count > 0)
-            {
-                //your code here
-            }
-        }
-```
-```VB.NET
-	Private Sub OnSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-	    If e.RemovedItems.Count > 0 Then
-	        'your code here
-	    End If
-	End Sub
-```
+<snippet id='radgridview-columns-how-to-selectionchanged-comboboxcolumn-example_2_handle_the_selectionchanged_event-cs' />
+
+<snippet id='radgridview-columns-how-to-selectionchanged-comboboxcolumn-example_2_handle_the_selectionchanged_event-vb' />
+
 {% endif %}
 
 You can see that with the code snippet above I check if there are any items being unselected (through the RemovedItems.Count). This ensures the event will not be handled on initial loading when a default item has been selected. 

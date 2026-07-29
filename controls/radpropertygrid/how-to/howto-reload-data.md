@@ -16,12 +16,8 @@ As of **R3 2016**, through the new **ReloadData** method you can refresh RadProp
 
 __Example 1: Call RadPropertyGrid's ReloadData method__
 
-```C#
-	this.radPropertyGrid.ReloadData();
-```
-```VB.NET
-	Me.radPropertyGrid.ReloadData()
-```
+<snippet id='radpropertygrid-how-to-howto-reload-data-block_1-cs' />
+<snippet id='radpropertygrid-how-to-howto-reload-data-block_1-vb' />
 
 >Calling the **ReloadData** method will also clear RadPropertyGrid's **SelectedPropertyDefinition**.
 

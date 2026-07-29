@@ -27,22 +27,16 @@ Here is the list of the __NumericScale__ features:
 To specify maximum and minimum values for the scale use the __Min__ and __Max__ properties. Here is an example:
 
 
-```XAML
-	<telerik:NumericScale Min="0" Max="1000">
-	</telerik:NumericScale>
-```
+<snippet id='radgauge-features-numeric-scale-scales-numeric-scale-block_1-xaml' />
+
 
 ## Multiplier
 
 The __Multiplier__ property of the __NumericScale__ allows you to apply a multiplier to the current value displayed by the scale. Here is an example of a __NumericScale__ which multiplies its value by 10.
 
 
-```XAML
-	<telerik:NumericScale Min="0"
-	                      Max="1000"
-	                      Multiplier="10">
-	</telerik:NumericScale>
-```
+<snippet id='radgauge-features-numeric-scale-scales-numeric-scale-block_2-xaml' />
+
 
 ## Indicators
 
@@ -53,26 +47,8 @@ The __NumericScale__ typically uses a __NumericIndicator__ control to display it
 Here is an example:
 
 
-```XAML
-	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale Min="0" Max="100"/>
-	    <telerik:NumericScale Min="0" Max="1000"
-	                          Multiplier="10" >
-	        <telerik:NumericIndicator Value="1" 
-	                                  telerik:ScaleObject.RelativeX="0.23"
-	                                  telerik:ScaleObject.RelativeY="0.38">
-	            <telerik:NumericIndicator.Positions>
-	                <telerik:FontNumberPosition FontSize="30"/>
-	                <telerik:FontNumberPosition FontSize="30" />
-	                <telerik:FontNumberPosition FontSize="30" />
-	                <telerik:FontNumberPosition FontSize="30" />
-	                <telerik:FontNumberPosition FontSize="30" />
-	                <telerik:FontNumberPosition FontSize="30" />
-	            </telerik:NumericIndicator.Positions>
-	        </telerik:NumericIndicator>
-	    </telerik:NumericScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-numeric-scale-scales-numeric-scale-block_3-xaml' />
+
 
 Here is a snapshot of the result:
 

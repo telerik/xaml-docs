@@ -21,52 +21,21 @@ To insert a pin point on your map you have to add a __MapPinPoint__ object to yo
 Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapPinPoint>
-	        </telerik:MapPinPoint>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-pin-points-block_1-xaml' />
 
 ## Configuring the MapPinPoint
 
 In order to configure the position of the __MapPinPoint__ you have to set the __Location__ attached property of the __MapLayer__ class. Here is an example:        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapPinPoint telerik:MapLayer.Location="42.6957539183824, 23.3327663758679">
-	        </telerik:MapPinPoint>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-pin-points-block_2-xaml' />
 
 In order to position the pin point more precisely you can use the __MapLayer.HotSpot__ attached property. Here is an example.        
 
 >tip To learn more about the __HotSpot__ functionality read [here]({%slug radmap-features-hot-spots%}).          
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapPinPoint telerik:MapLayer.Location="42.6957539183824, 23.3327663758679">
-	            <telerik:MapLayer.HotSpot>
-	                <telerik:HotSpot X="0.5"
-	                                    Y="1" />
-	            </telerik:MapLayer.HotSpot>
-	        </telerik:MapPinPoint>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-pin-points-block_3-xaml' />
 
 With these values defined, the __MapPinPoint__ will be placed above the location and will be centered towards it.        
 
@@ -77,22 +46,7 @@ By default the __MapPinPoint__ exposes two properties that allow you to set its 
 Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapPinPoint telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                                Text="Sofia"
-	                                ImageSource="/Resources/Images/flag_bg.png">
-	            <telerik:MapLayer.HotSpot>
-	                <telerik:HotSpot X="0.5"
-	                                    Y="0" />
-	            </telerik:MapLayer.HotSpot>
-	        </telerik:MapPinPoint>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-pin-points-block_4-xaml' />
 
 Here is a snapshot of the result:
 
@@ -113,26 +67,7 @@ As you can see in the previous section the __MapPinPoint__ doesn't look very goo
 Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer>
-	        <telerik:MapPinPoint telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                                Background="#80808080"
-	                                Foreground="White"
-	                                BorderBrush="Black"
-	                                BorderThickness="1"
-	                                Text="Sofia"
-	                                ImageSource="/Resources/Images/flag_bg.png">
-	            <telerik:MapLayer.HotSpot>
-	                <telerik:HotSpot X="0.5"
-	                                    Y="1" />
-	            </telerik:MapLayer.HotSpot>
-	        </telerik:MapPinPoint>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-pin-points-block_5-xaml' />
 
 Here is a snapshot of the final result:
 

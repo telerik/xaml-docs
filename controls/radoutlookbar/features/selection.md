@@ -15,65 +15,18 @@ position: 0
 To handle changes in the selection you can use the __SelectionChanged__ event: 
 
 
-```XAML
-	<telerik:RadOutlookBar PreviewSelectionChanged="RadOutlookBar1_PreviewSelectionChanged"
-	                       SelectionChanged="RadOutlookBar1_SelectionChanged">
-	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
-	        <TextBlock Text="Item 1 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 2" 
-	                               Icon="Letter.png"
-	                               IsSelected="True">
-	        <TextBlock Text="Item 2 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
-	        <TextBlock Text="Item 3 Content" />
-	    </telerik:RadOutlookBarItem>
-	</telerik:RadOutlookBar>
-```
+<snippet id='radoutlookbar-features-selection-block_1-xaml' />
 
 
-```C#
-	private void RadOutlookBar1_SelectionChanged(object sender, RoutedEventArgs e)
-	{
-		RadOutlookBarItem newSelectedItem = (sender as
-		RadOutlookBar).SelectedItem as RadOutlookBarItem;
-	}
-	      
-	private void RadOutlookBar1_PreviewSelectionChanged(object sender, Telerik.Windows.Controls.RadSelectionChangedEventArgs e)
-	{
-		//use the Handled property to prevent the selection           
-	}
-```
-```VB.NET
-	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	    Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
-	End Sub
-	Private Sub RadOutlookBar1_PreviewSelectionChanged(sender As Object, e As Telerik.Windows.Controls.RadSelectionChangedEventArgs)
-	    'use the Handled property to prevent the selection'           
-	End Sub
-```
+<snippet id='radoutlookbar-features-selection-block_2-cs' />
+<snippet id='radoutlookbar-features-selection-block_2-vb' />
 
 ## Setting selected item
 
 You can set the selected item by using its __IsSelected__ property:
         
 
-```XAML
-	<telerik:RadOutlookBar>
-	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
-	        <TextBlock Text="Item 1 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 2" 
-	                               Icon="Letter.png"
-	                               IsSelected="True">
-	        <TextBlock Text="Item 2 Content" />
-	    </telerik:RadOutlookBarItem>
-	    <telerik:RadOutlookBarItem Header="Item 3" Icon="Letter.png">
-	        <TextBlock Text="Item 3 Content" />
-	    </telerik:RadOutlookBarItem>
-	</telerik:RadOutlookBar>
-```
+<snippet id='radoutlookbar-features-selection-block_3-xaml' />
 
 ## Properties
 

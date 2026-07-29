@@ -15,32 +15,8 @@ Numeric Indicator is an indicator that displays its Value property as digital in
 To add numeric indicator to the scale you have to include NumericIndicator element to the list of the scale indicators:
 
 
-```XAML
-	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale>
-	        <telerik:RadialScale.Indicators>
-	            <telerik:NumericIndicator Name="numericIndicator"
-	                                Format="{}{0:F1}"
-	                                telerik:ScaleObject.RelativeX="0.32"
-	                                telerik:ScaleObject.RelativeY="0.65"
-	                                telerik:ScaleObject.RelativeWidth="0.55\*"
-	                                telerik:ScaleObject.RelativeHeight="0.16\*"
-	                                Value="53.7">
-	                <telerik:NumericIndicator.Background>
-	                    <SolidColorBrush Color="#EEEEEE"/>
-	                </telerik:NumericIndicator.Background>
-	                <telerik:NumericIndicator.Positions>
-	                    <telerik:SevenSegsNumberPosition />
-	                    <telerik:SevenSegsNumberPosition />
-	                    <telerik:SevenSegsNumberPosition />
-	                    <telerik:SevenSegsNumberPosition />
-	                    <telerik:SevenSegsNumberPosition />
-	                </telerik:NumericIndicator.Positions>
-	            </telerik:NumericIndicator>
-	        </telerik:RadialScale.Indicators>
-	    </telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-radial-scale-numeric-indicator-block_1-xaml' />
+
 
 Every digital cell in the indicator is defined by a corresponding __SevenSegsNumberPosition__ element. The topmost element in the list define rightmost digital cell.
 

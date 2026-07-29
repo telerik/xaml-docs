@@ -13,100 +13,11 @@ position: 0
 The __PersistenceFramework__ allows you to save the layout of __UIElements__ in [Isolated Storage](https://docs.microsoft.com/en-us/dotnet/standard/io/isolated-storage). For that purpose the __telerik:PersistenceManager.StorageId__ attached property has to be set for each __UIElement__ that needs to be persisted. The property is used to create a file in the isolated storage for each persisted control, where the control's properties will be kept.
 
 __Example 1: Setting the PersistenceManager.StorageId property__
-```XAML
-	<Grid x:Name="LayoutRoot" Background="White">
-	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="\*" />
-	        <ColumnDefinition Width="\*" />
-	    </Grid.ColumnDefinitions>
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="\*" />
-	        <RowDefinition Height="Auto" />
-	    </Grid.RowDefinitions>
-	    <telerik:RadTreeView x:Name="treeView" telerik:PersistenceManager.StorageId="treeView">
-	        <telerik:RadTreeViewItem Header="Beverages">
-	            <telerik:RadTreeViewItem Header="Chai" />
-	            <telerik:RadTreeViewItem Header="Chang" />
-	            <telerik:RadTreeViewItem Header="Ipoh Coffee" />
-	            <telerik:RadTreeViewItem Header="Chartreuse verte" />
-	            <telerik:RadTreeViewItem Header="Sasquatch Ale" />
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Condiments">
-	            <telerik:RadTreeViewItem Header="Aniseed Syrup" />
-	            <telerik:RadTreeViewItem Header="Genen Shouyu" />
-	            <telerik:RadTreeViewItem Header="Gula Malacca" />
-	            <telerik:RadTreeViewItem Header="Louisiana Hot Spiced Okra" />
-	            <telerik:RadTreeViewItem Header="Louisiana Fiery Hot Pepper Sauce" />
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Confections">
-	            <telerik:RadTreeViewItem Header="Teatime Chocolate Biscuits" />
-	            <telerik:RadTreeViewItem Header="Sir Rodney's Marmalade" />
-	            <telerik:RadTreeViewItem Header="Zaanse koeken" />
-	            <telerik:RadTreeViewItem Header="Chocolade" />
-	            <telerik:RadTreeViewItem Header="Maxilaku" />
-	            <telerik:RadTreeViewItem Header="Valkoinen suklaa" />
-	        </telerik:RadTreeViewItem>
-	    </telerik:RadTreeView>
-	    <StackPanel Orientation="Horizontal" Grid.Row="1">
-	        <Button Content="Save" Click="Save" VerticalAlignment="Bottom" FontWeight="Bold" />
-	        <Button Content="Load" Click="Load" VerticalAlignment="Bottom" FontWeight="Bold" />
-	    </StackPanel>
-	    <Border Grid.Column="1" BorderBrush="Blue" BorderThickness="1">
-	        <ContentControl HorizontalContentAlignment="Stretch" telerik:PersistenceManager.StorageId="detailsControl">
-	            <Grid>
-	                <Grid.ColumnDefinitions>
-	                    <ColumnDefinition Width="Auto" />
-	                    <ColumnDefinition Width="\*" />
-	                </Grid.ColumnDefinitions>
-	                <Grid.RowDefinitions>
-	                    <RowDefinition Height="Auto" />
-	                    <RowDefinition Height="Auto" />
-	                </Grid.RowDefinitions>
-	                <TextBlock Text="Details" Margin="2" VerticalAlignment="Center" FontWeight="Bold"
-	                        Grid.ColumnSpan="2" />
-	                <TextBlock Text="Add Description:" Grid.Row="1" Margin="2" VerticalAlignment="Center" />
-	                <TextBox Margin="2" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"
-	                        HorizontalAlignment="Stretch" />
-	            </Grid>
-	        </ContentControl>
-	    </Border>
-	</Grid>
-```
+<snippet id='radpersistenceframework-features-persistence-framework-isolated-storage-block_1-xaml' />
 
 __Example 2: Using the IsolatedStorageProvider methods__
-```C#
-	private void Save(object sender, RoutedEventArgs e)
-	{
-		var manager = new PersistenceManager() 
-			.AllowNavigationControls() 
-			.AllowRichTextBoxControls();  
-		manager.AllowedTypes.Add(typeof(MyCustomType)); 
- 
-		IsolatedStorageProvider isoProvider = new IsolatedStorageProvider(manager); 
-		isoProvider.SaveToStorage();
-	}
-	
-	private void Load(object sender, RoutedEventArgs e)
-	{
-		var manager = new PersistenceManager() 
-			.AllowNavigationControls() 
-			.AllowRichTextBoxControls();  
-		manager.AllowedTypes.Add(typeof(MyCustomType)); 
- 
-		IsolatedStorageProvider isoProvider = new IsolatedStorageProvider(manager);
-		isoProvider.LoadFromStorage();
-	}
-```
-```VB.NET
-	Private Sub Save(sender As Object, e As RoutedEventArgs)
-		Dim isoProvider As New IsolatedStorageProvider()
-		isoProvider.SaveToStorage()
-	End Sub
-	Private Sub Load(sender As Object, e As RoutedEventArgs)
-		Dim isoProvider As New IsolatedStorageProvider()
-		isoProvider.LoadFromStorage()
-	End Sub
-```
+<snippet id='radpersistenceframework-features-persistence-framework-isolated-storage-block_2-cs' />
+<snippet id='radpersistenceframework-features-persistence-framework-isolated-storage-block_2-vb' />
 
 The __IsolatedStorageProvider.SaveToStorage()__ method will save the properties of all controls for which the __telerik:PersistenceManager.StorageId__ attached property is set. In __Example 2__ all properties of the __RadTreeView__ and the __ContentControl__ will be saved:
 

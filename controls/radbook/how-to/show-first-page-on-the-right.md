@@ -21,33 +21,4 @@ Here is the result when the first page is displayed on the righ side of the book
 ![RadBook](images/book_step4.png)
 
 __Example 1: Setting the FirstPagePosition property__  
-```XAML
-	<telerik:RadBook x:Name="RadBook1" 
-	                    Margin="50"
-	                    FirstPagePosition="Right">
-	    <telerik:RadBookItem Background="Red">
-	        <StackPanel>
-	            <TextBlock FontSize="36" Text="Page 1" />
-	            <Button Content="Click Me" />
-	        </StackPanel>
-	    </telerik:RadBookItem>
-	    <telerik:RadBookItem Background="BlueViolet">
-	        <StackPanel>
-	            <TextBlock HorizontalAlignment="Right" 
-	                        FontSize="36"
-	                        Text="Page 2" />
-	            <Image Width="320" 
-	                    Height="240"
-	                    Source="Koala.jpg" />
-	        </StackPanel>
-	    </telerik:RadBookItem>
-	    <telerik:RadBookItem Background="RosyBrown">
-	        <TextBlock FontSize="36" Text="Page 3" />
-	    </telerik:RadBookItem>
-	    <telerik:RadBookItem Background="Chocolate">
-	        <TextBlock HorizontalAlignment="Right" 
-	                    FontSize="36"
-	                    Text="Page 4" />
-	    </telerik:RadBookItem>
-	</telerik:RadBook>
-```
+<snippet id='radbook-how-to-show-first-page-on-the-right-block_1-xaml' />

@@ -24,20 +24,12 @@ RadPropertyGrid provides three selection modes, which allow you to manipulate th
 
 __Example 1: Setting the SelectionMode to Multiple__
 
-```XAML
-	 <telerik:RadPropertyGrid x:Name="propertyGrid"
-                              SelectionMode="Multiple"
-                              RenderMode="Flat" />
-```
+<snippet id='radpropertygrid-features-selection-block_1-xaml' />
 
 __Example 2: Setting the SelectionMode to Multiple__
 
-```C#
-	this.propertyGrid.SelectionMode = System.Windows.Controls.SelectionMode.Multiple;
-```
-```VB.NET
-	Me.propertyGrid.SelectionMode = System.Windows.Controls.SelectionMode.Multiple
-```
+<snippet id='radpropertygrid-features-selection-block_2-cs' />
+<snippet id='radpropertygrid-features-selection-block_2-vb' />
 
 >tip Pressing __Ctrl+A__ will select all items.
 
@@ -50,51 +42,11 @@ RadPropertyGrid provides two properties to get the data behind the selected item
 * __SelectedPropertyDefinitions__: A collection of the business objects that sits behind the selected Property Definitions. It will contain more than one item when the __SelectionMode__ is either __Multiple__ or __Extended__.
 
 __Example 3: Binding to SelectedPropertyDefinition__
-```XAML
-	 <telerik:RadPropertyGrid x:Name="propertyGrid"
-                              RenderMode="Flat"           
-                              SelectedPropertyDefinition="{Binding SelectedDefinition, Mode=TwoWay}" />
-```
+<snippet id='radpropertygrid-features-selection-block_3-xaml' />
 
 __Example 4: The viewmodel's SelectedDefinition property__
-```C#
-    public class ViewModel : ViewModelBase
-    {
-        private object selectedDefinition;
-
-        public object SelectedDefinition
-        {
-            get { return selectedDefinition; }
-            set
-            {
-                if (value != this.selectedDefinition)
-                {
-                    this.selectedDefinition = value;
-                    this.OnPropertyChanged("SelectedDefinition");
-                }
-            }
-        }
-    }
-```
-```VB.NET
-    Public Class ViewModel
-	Inherits ViewModelBase
-
-		Private _selectedDefinition As Object
-
-		Public Property SelectedDefinition() As Object
-			Get
-				Return _selectedDefinition
-			End Get
-			Set(ByVal value As Object)
-				If value IsNot Me._selectedDefinition Then
-					Me._selectedDefinition = value
-					Me.OnPropertyChanged("SelectedDefinition")
-				End If
-			End Set
-		End Property
-End Class
-```
+<snippet id='radpropertygrid-features-selection-block_4-cs' />
+<snippet id='radpropertygrid-features-selection-block_4-vb' />
 
 >caution As of R2 2016, the **SelectedField** property, previously marked as obsolete, has officially been removed.
 
@@ -103,26 +55,11 @@ End Class
 There is a single event relevant to the selection in RadPropertyGrid - __SelectionChanged__. As suggested by its name, it occurs when the selected property definition has changed.
 
 __Example 5: Adding a handler for the SelectionChanged event__
-```XAML
-    <telerik:RadPropertyGrid x:Name="propertyGrid"
-                             RenderMode="Flat"
-                             SelectionChanged="propertyGrid_SelectionChanged">
-```
+<snippet id='radpropertygrid-features-selection-block_5-xaml' />
 
 __Example 6: SelectionChanged event handler__
 
-```C#
-	private void propertyGrid_SelectionChanged(object sender, SelectionChangeEventArgs e)
-    {
-        var propertyDefinition = e.AddedItems[0] as PropertyDefinition;
-        MessageBox.Show($"You selected property definition with DisplayName: {propertyDefinition.DisplayName}");
-    }
-```
-```VB.NET
-	Private Sub propertyGrid_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangeEventArgs)
-		Dim propertyDefinition = TryCast(e.AddedItems(0), PropertyDefinition)
-		MessageBox.Show($"You selected property definition with DisplayName: {propertyDefinition.DisplayName}")
-    End Sub
-```
+<snippet id='radpropertygrid-features-selection-block_6-cs' />
+<snippet id='radpropertygrid-features-selection-block_6-vb' />
 
 >caution As of R2 2016, the **SelectedFieldChanged** event, previously marked as obsolete, has officially been removed.

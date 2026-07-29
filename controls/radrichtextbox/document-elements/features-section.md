@@ -32,18 +32,13 @@ For example, you can build a RadDocument from scratch and add Sections to it in 
 
 __Example 1: Add a Section to a Non-Measured Document__
 
-```C#
-	Section section = new Section();
-	this.radRichTextBox.Document.Sections.Add(section);
-```
+<snippet id='radrichtextbox-document-elements-features-section-block_1-cs' />
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting a section break:
 
 __Example 2: Insert a Section Break in a Measured Document__
 
-```C#
-	this.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage);
-```
+<snippet id='radrichtextbox-document-elements-features-section-block_2-cs' />
 
 The InsertSectionBreak() method accepts a parameter of type **SectionBreakType**. The possible values are:
 
@@ -65,13 +60,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 	__Example 3: Change the Page Margin of a Section__
 	
-	```C#
-		//When creating a Section programmatically
-		section.PageMargin = new Padding(40, 40, 30, 30);
-		
-		//When the section has already been added to the document
-		this.editor.ChangeSectionPageMargin(new Padding(40, 40, 30, 30));
-	```
+	<snippet id='radrichtextbox-document-elements-features-section-block_3-cs' />
 
 	>If you would like to use the predefined margins, the **ToPadding()** method of **PageMarginTypesConverter** will help to automatically get the Padding values, which you need to set for the margins.
 
@@ -79,13 +68,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 	__Example 4: Change the Page Orientation of a Section__
 
-	```C#
-		//When creating a Section programmatically
-		section.PageOrientation = PageOrientation.Landscape;
-		
-		//When the section has already been added to the document
-		this.editor.ChangeSectionPageOrientation(PageOrientation.Landscape);
-	```
+	<snippet id='radrichtextbox-document-elements-features-section-block_4-cs' />
 
 * **Columns**: Allows you to arrange the text in a Section into columns. More information on how to use this property is available in the [Section Columns help article]({%slug radrichtextbox-features-section-columns%}).
 
@@ -93,13 +76,7 @@ The __Section__ exposes several properties that allow you to customize the layou
 
 	__Example 5: Change the Page Size of a Section__
 	
-	```C#
-		//When creating a Section programmatically
-		section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4);
-		
-		//When the section has already been added to the document
-		this.editor.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4));
-	```
+	<snippet id='radrichtextbox-document-elements-features-section-block_5-cs' />
 
 * __LineNumbering__: Gets or sets the line numbering properties for the current Section object. For more information, check the [Line Numbering]({%slug radrichtextbox-features-line-numbering%}) topic.
 
@@ -109,9 +86,7 @@ Each section has the following types of Headers and Footers - **Default** (used 
 
 __Example 6: Create a Header__
 
-```C#
-	Header header = new Header() { Body = radDocument, IsLinkedToPrevious = false }; 
-```
+<snippet id='radrichtextbox-document-elements-features-section-block_6-cs' />
 
 All header/footer types are set identically.
 
@@ -119,18 +94,13 @@ All header/footer types are set identically.
 
 __Example 7: Assign the Header to a Section in a Non-Measured Document__
 
-```C#	
-	section.Headers.First = header;
-```
+<snippet id='radrichtextbox-document-elements-features-section-block_7-cs' />
 
 * In a measured document:
 
 __Example 8: Update the Header of an Existing Document__
 
-```C#
-
-	this.editor.UpdateHeader(this.editor.Document.Sections.First, HeaderFooterType.First, header);
-```
+<snippet id='radrichtextbox-document-elements-features-section-block_8-cs' />
 
 Setting the Footers can be done in the same way.
 
@@ -142,19 +112,13 @@ Paragraphs can be added to a section in the following ways:
 
 __Example 9: Add a Paragraph to a Section in a Non-Measured Document__
 
-```C#
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	section.Blocks.Add(paragraph);
-```
+<snippet id='radrichtextbox-document-elements-features-section-block_9-cs' />
 
 * In a measured document:
 
 __Example 10: Add a Paragraph to a Section in a Measured Document__
 
-```C#
-	this.radRichTextBox.InsertParagraph();
-```
+<snippet id='radrichtextbox-document-elements-features-section-block_10-cs' />
 
 ## See Also
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})

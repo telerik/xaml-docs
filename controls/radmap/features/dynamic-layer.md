@@ -29,22 +29,7 @@ The __DynamicLayer__ requires a division of the map space in regions. The divisi
 Here is an example of a __DynamicLayer__ with a set of two __ZoomGrids__:        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:DynamicLayer x:Name="dynamicLayer">
-	        <telerik:DynamicLayer.ZoomGridList>
-	            <telerik:ZoomGrid LatitudesCount="2"
-	                                LongitudesCount="2"
-	                                MinZoom="3" />
-	            <telerik:ZoomGrid LatitudesCount="4"
-	                                LongitudesCount="4"
-	                                MinZoom="6" />
-	        </telerik:DynamicLayer.ZoomGridList>
-	    </telerik:DynamicLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-dynamic-layer-block_1-xaml' />
 
 There are two grid lists - the one goes from zoom 3 to 6, and the other from zoom 6 to the maximum zoom. Also, the first grid has a 2 by 2 latitude/longitude division. This means that map is divided in 4 regions, and the layer only requests data for the current visible regions. The second slice is divided into 16 regions - higher zoom values require more divisions to perform well.        
 
@@ -69,112 +54,14 @@ In this method you have to implement your logic for getting the desired items. T
 >If you want to deliver your data via a WebService you can follow our [demo](https://demos.telerik.com/silverlight/#Map/DynamicLayer) with full source code.          
 
 
-```C#
-	public class MapDynamicSource : IMapDynamicSource
-    {
-        public void ItemsRequest(object sender, ItemsRequestEventArgs e)
-        {
-            List<object> items = new List<object>();
-            double minZoom = e.MinZoom;
-            Location upperLeft = e.UpperLeft;
-            Location lowerRight = e.LowerRight;
-               HotSpot centerSpot = new HotSpot();
-            centerSpot.X = 0.5;
-            centerSpot.Y = 0.5;
-            Location bulgariaLocation = new Location(42.7669999748468, 25.2819999307394);
-            LocationRect currentRegion = new LocationRect(upperLeft, lowerRight);
-
-            if (currentRegion.Contains(bulgariaLocation))
-            {
-                if (minZoom == 3)
-                {
-                    Ellipse ellipse = new Ellipse();
-                    ellipse.Width = 15;
-                    ellipse.Height = 15;
-                    ellipse.Fill = new SolidColorBrush(Colors.Red);
-                    ellipse.SetValue(MapLayer.LocationProperty, bulgariaLocation);
-                    MapLayer.SetHotSpot(ellipse, centerSpot);
-                    ToolTipService.SetToolTip(ellipse, "Bulgaria");
-                    items.Add(ellipse);
-                }
-                else if (minZoom == 6)
-                {
-                    Ellipse sofiaEllipse = new Ellipse();
-                    sofiaEllipse.Width = 20;
-                    sofiaEllipse.Height = 20;
-                    sofiaEllipse.Stroke = new SolidColorBrush(Colors.Red);
-                    sofiaEllipse.Fill = new SolidColorBrush(Colors.Transparent);
-                    sofiaEllipse.StrokeThickness = 3;
-                    sofiaEllipse.SetValue(MapLayer.LocationProperty, new Location(42.6957539183824, 23.3327663758679));
-                    MapLayer.SetHotSpot(sofiaEllipse, centerSpot);
-                    ToolTipService.SetToolTip(sofiaEllipse, "Sofia");
-                    items.Add(sofiaEllipse);
-                }
-            }
-            e.CompleteItemsRequest(items);
-        }
-    }
-```
-```VB.NET
-	Public Class MapDynamicSource
-    Implements IMapDynamicSource
-      Public Sub ItemsRequest(ByVal sender As Object, ByVal e As ItemsRequestEventArgs)
-            Dim items As New List(Of Object)()
-            Dim minZoom As Double = e.MinZoom
-            Dim upperLeft As Location = e.UpperLeft
-            Dim lowerRight As Location = e.LowerRight
-               Dim centerSpot As New HotSpot()
-            centerSpot.X = 0.5
-            centerSpot.Y = 0.5
-            Dim bulgariaLocation As New Location(42.7669999748468, 25.2819999307394)
-            Dim currentRegion As New LocationRect(upperLeft, lowerRight)
-
-            If currentRegion.Contains(bulgariaLocation) Then
-                  If minZoom = 3 Then
-                        Dim ellipse As New Ellipse()
-                        ellipse.Width = 15
-                        ellipse.Height = 15
-                        ellipse.Fill = New SolidColorBrush(Colors.Red)
-                        ellipse.SetValue(MapLayer.LocationProperty, bulgariaLocation)
-                        MapLayer.SetHotSpot(ellipse, centerSpot)
-                        ToolTipService.SetToolTip(ellipse, "Bulgaria")
-                        items.Add(ellipse)
-                  ElseIf minZoom = 6 Then
-                        Dim sofiaEllipse As New Ellipse()
-                        sofiaEllipse.Width = 20
-                        sofiaEllipse.Height = 20
-                        sofiaEllipse.Stroke = New SolidColorBrush(Colors.Red)
-                        sofiaEllipse.Fill = New SolidColorBrush(Colors.Transparent)
-                        sofiaEllipse.StrokeThickness = 3
-                        sofiaEllipse.SetValue(MapLayer.LocationProperty, New Location(42.6957539183824, 23.3327663758679))
-                        MapLayer.SetHotSpot(sofiaEllipse, centerSpot)
-                        ToolTipService.SetToolTip(sofiaEllipse, "Sofia")
-                        items.Add(sofiaEllipse)
-                  End If
-            End If
-            e.CompleteItemsRequest(items)
-      End Sub
-	End Class
-```
+<snippet id='radmap-features-dynamic-layer-block_2-cs' />
+<snippet id='radmap-features-dynamic-layer-block_2-vb' />
 
 You can set the dynamic source to a new instance of the MapDynamicSource and create a new definition for the AzureMapProvider:        
 
 
-```C#
-	public MainPage()
-	{
-	    InitializeComponent();
-        this.radMap.Provider = new AzureMapProvider() { SubscriptionKey = "Your Subscription Key" };
-        this.dynamicLayer.DynamicSource = new MapDynamicSource();
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-        this.radMap.Provider = new AzureMapProvider() { SubscriptionKey = "Your Subscription Key" };
-        this.dynamicLayer.DynamicSource = new MapDynamicSource();
-	End Sub
-```
+<snippet id='radmap-features-dynamic-layer-block_3-cs' />
+<snippet id='radmap-features-dynamic-layer-block_3-vb' />
 
 The result:
 

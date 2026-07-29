@@ -28,14 +28,7 @@ To generate a Swiss Barcode using Telerik UI for WPF, you need to first set the 
 
 __Example 1: Setting the SwissQRCode symbology__  
 
-```XAML
-    
-    <telerik:RadBarcode x:Name="Barcode" Width="200" Height="200">
-        <telerik:RadBarcode.Symbology>
-            <telerik:SwissQRCode Module="4" SizingMode="Manual" />
-        </telerik:RadBarcode.Symbology>
-    </telerik:RadBarcode>
-```
+<snippet id='radbarcode-supported-types-2d-barcodes-swissqrcode-overview-block_1-xaml' />
 
 The Swiss QR code standard mandates that the input provided for the generation of the barcode is strictly formatted. Both validating and generating this input are complex processes and to facilitate them you can use the **SwissQRCodeValueStringBuilder** helper class. Its purpose is to hold the information needed for a SwissQRCode in a type-safe manner, to validate this information and to generate the input. Through its constructor, you need to set the following properties:
 
@@ -50,31 +43,13 @@ The Swiss QR code standard mandates that the input provided for the generation o
 
 __Example 2: Creating the SwissQRCodeValueStringBuilder__
 
-```C#
-    SwissQRCodeValueStringBuilder qrCodeValue = new SwissQRCodeValueStringBuilder(
-            new Iban("CH4431999123000889012", IbanType.QRIBAN),
-            SwissQRCodeCurrency.EUR,
-            new Contact("Max Muster &amp; Söhne",
-            new StructuredAddress("CH", "8000", "Seldwyla", "Musterstrasse", "123")),
-            new Reference(ReferenceType.QRR, "210000000003139471430009017"),
-            new AdditionalInformation("Order from 15.03.2021", "//S1/10/1234/11/201021/30/102673386/32/7.7/40/0:30"),
-            new Contact("Simon Muster", new StructuredAddress("CH", "8000", "Seldwyla", "Musterstrasse", "1")),
-            (decimal)1949.75,
-            new AlternativeProcedure("Name AV1: UV;UltraPay005;12345", "Name AV2: XY;XYService;54321"));
-```
+<snippet id='radbarcode-supported-types-2d-barcodes-swissqrcode-overview-example_2_creating_the_swissqrcodevaluestringbuilder-cs' />
 
 Once you've set up the SwissQRCodeValueStringBuilder you can call its **Validate** method which validates all its fields and the relations between them. The method returns a string which contains the accumulated errors. If there are no errors - **null** is returned. In this case, you can call the **BuildValue** method of the string builder which will build the string value to be provided to the RadBarcode.
 
 __Example 3: Validate and build barcode value__
 
-```C#
-    string errors = qrCodeValue.Validate();
-
-    if (string.IsNullOrEmpty(errors))
-    {
-        this.Barcode.Value = qrCodeValue.BuildValue();
-    }
-```
+<snippet id='radbarcode-supported-types-2d-barcodes-swissqrcode-overview-example_3_validate_and_build_barcode_value-cs' />
 
 Invoking the code from **Example 3** will generate the following result:
 

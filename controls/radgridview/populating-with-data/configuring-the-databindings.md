@@ -30,75 +30,22 @@ For the purposes of this example the control will be bound to a collection of **
 
 __Example 1: The Player class__
 
-```C#
-    public class Player : ViewModelBase
-    {
-        private string name;
-        private int number;
+<snippet id='radgridview-populating-with-data-configuring-the-databindings-example_1_the_player_class-cs' />
 
-        public string Name
-        {
-            get { return this.name; }
-            set
-            {
-                if (value != this.name)
-                {
-                    this.name = value;
-                    this.RaisePropertyChanged();
-                }
-            }
-        }
-
-        public int Number
-        {
-            get { return this.number; }
-            set
-            {
-                if (value != this.number)
-                {
-                    this.number = value;
-                    this.RaisePropertyChanged();
-                }
-            }
-        }
-    }
-```
 
 The next step is to create an __ObservableCollection__ of Player objects in our viewmodel.
 
 __Example 2: Create an ObservableCollection in the viewmodel__
 
-```C#    
-	public class MainWindowViewModel : ViewModelBase
-	{
-		private ObservableCollection<Player> players;
+<snippet id='radgridview-populating-with-data-configuring-the-databindings-example_2_create_an_observablecollection_in_the_viewmodel-cs' />
 
-		public ObservableCollection<Player> Players
-		{
-		    get
-		    {
-			if (this.players == null)
-			{
-			    this.players = new ObservableCollection<Player>();
-			    this.players.Add(new Player() { Name = "Pepe Reina", Number = 25 });
-			    this.players.Add(new Player() { Name = "Jamie Carragher", Number = 23 });
-			    this.players.Add(new Player() { Name = "Steven Gerrard", Number = 8 });
-			    this.players.Add(new Player() { Name = "Fernando Torres", Number = 9 });
-			}
-
-			return this.players;
-		    }
-		}
-	}
-```
 
 All that's left is to bind this collection to our RadGridView control.
 
 __Example 3: Bind the ItemsSource property__
 
-```XAML
-	<telerik:RadGridView ItemsSource="{Binding Players}" />
-```
+<snippet id='radgridview-populating-with-data-configuring-the-databindings-example_3_bind_the_itemssource_property-xaml' />
+
 
 ## Binding the Columns
 
@@ -106,14 +53,8 @@ By default, RadGridView will try to automatically generate columns based on the 
 
 __Example 3: Define a column in XAML__
 
-```XAML
-	<telerik:RadGridView x:Name="playersGrid" ItemsSource="{Binding Players}" AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" Header="Number" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-populating-with-data-configuring-the-databindings-example_3_define_a_column_in_xaml-xaml' />
+
 
 #### Figure 1: The rendered RadGridView
 

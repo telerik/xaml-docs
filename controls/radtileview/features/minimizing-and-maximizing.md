@@ -36,28 +36,7 @@ The __RadTileView.MaximizedItem__ property holds a reference to the currently ma
 The __RadTileView__ control allows you to drag a __RadTileViewItem__ and dock it thus maximizing it in the desired position. In order to take advantage of the functionality, you need to set the __RadTileView IsDockingEnabled__ property to __True:__
 
 __Example 1: Enabling docking__
-```XAML
-	<telerik:RadTileView Grid.Row="1" ColumnsCount="2" IsDockingEnabled="True" >
-	    <telerik:RadTileViewItem Header="Item1">
-	        <TextBlock Text="Item1 Content" />
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item2">
-	        <TextBlock Text="Item2 Content" />
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item3">
-	        <TextBlock Text="Item3 Content" />
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item4">
-	        <TextBlock Text="Item4 Content" />
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item5">
-	        <TextBlock Text="Item5 Content" />
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item6">
-	        <TextBlock Text="Item6 Content" />
-	    </telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-minimizing-and-maximizing-block_1-xaml' />
 
 #### __Figure 1: Item docking started__  
 ![{{ site.framework_name }} RadTileView Item docking started](images/radtileview_features_maximized_docking.png)
@@ -76,28 +55,7 @@ You can control the maximize behavior by using the __MaximizeMode__ property. It
                         
 
 __Example 2: Setting maximize mode__  
-```XAML
-	<telerik:RadTileView x:Name="RadTileView1" MaximizeMode="One">
-		<telerik:RadTileViewItem Header="Item1">
-			<TextBlock Text="Item1 Content"/>
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item2">
-			<TextBlock Text="Item2 Content"/>
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item3" >
-			<TextBlock Text="Item3 Content"/>
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item4" >
-			<TextBlock Text="Item4 Content"/>
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item5" >
-			<TextBlock Text="Item5 Content"/>
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item6" >
-			<TextBlock Text="Item6 Content"/>
-		</telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-minimizing-and-maximizing-block_2-xaml' />
 
 ## Minimized Columns and Rows Count
 
@@ -108,17 +66,13 @@ The __MinimizedColumnsCount__ will affect the columns count only if the __Minimi
 The __MinimizedRowsCount__ will affect the rows count only if the __MinimizedItemsPosition__ is set to __Top__ or __Bottom__.
 
 __Example 3: Setting minimized area with 2 columns__  
-```XAML
-	<telerik:RadTileView MinimizedColumnsCount="2" MinimizedItemsPosition="Right" />
-```
+<snippet id='radtileview-features-minimizing-and-maximizing-block_3-xaml' />
 
 #### __Figure 3: Minimized area with 2 columns__
 ![{{ site.framework_name }} RadTileView Minimized area with 2 columns](images/radtileview-features-maximized-3.png)
 
 __Example 4: Setting minimized area with 2 rows__  
-```XAML
-	<telerik:RadTileView MinimizedRowsCount="2" MinimizedItemsPosition="Top" />
-```
+<snippet id='radtileview-features-minimizing-and-maximizing-block_4-xaml' />
 
 #### __Figure 4: Minimized area with 2 rows__
 ![{{ site.framework_name }} RadTileView Minimized area with 2 rows](images/radtileview-features-maximized-4.png)

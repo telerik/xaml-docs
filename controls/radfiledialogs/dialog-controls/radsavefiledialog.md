@@ -22,27 +22,8 @@ To show the dialog call its __ShowDialog__ method. If a valid file is selected w
 > Note that when the ShowDialog method is called the UI of the host application will freeze until the dialog closes.
 
 __Example 1: Show a save file dialog__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			ShowSaveFileDialog();
-		}
+<snippet id='radfiledialogs-dialog-controls-radsavefiledialog-example_1_show_a_save_file_dialog-cs' />
 
-		private void ShowSaveFileDialog()
-		{
-			RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
-			saveFileDialog.Owner = this;
-			saveFileDialog.ShowDialog();
-			if (saveFileDialog.DialogResult == true)
-			{
-				string selectedFileName = saveFileDialog.FileName;
-			}
-		}
-	}
-```
 
 > The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set. 
 
@@ -51,27 +32,8 @@ __Example 1: Show a save file dialog__
 You can open a read-write file stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName property and open the file manually.
 
 __Example 2: Open a file stream__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			ShowSaveFileDialog();
-		}
+<snippet id='radfiledialogs-dialog-controls-radsavefiledialog-example_2_open_a_file_stream-cs' />
 
-		private void ShowSaveFileDialog()
-		{
-			RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
-			saveFileDialog.Owner = this;
-			saveFileDialog.ShowDialog();
-			if (saveFileDialog.DialogResult == true)
-			{
-				Stream fileStream = saveFileDialog.OpenFile();
-			}
-		}
-	}
-```
 
 ## Working with the selected file
 
@@ -80,25 +42,8 @@ You can get the path of the selected file via the __FileName__ property (see __E
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
 __Example 3: Set the file name__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			ShowSaveFileDialog();
-		}
+<snippet id='radfiledialogs-dialog-controls-radsavefiledialog-example_3_set_the_file_name-cs' />
 
-		private void ShowSaveFileDialog()
-		{
-			RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
-			saveFileDialog.Owner = this;
-			saveFileDialog.InitialDirectory = @"C:\Program Files\Internet Explorer\";
-			saveFileDialog.FileName = @"C:\Program Files\Internet Explorer\filetosave.txt";
-			saveFileDialog.ShowDialog();
-		}
-	}
-```
 
 #### __Figure 2: Setting the file name__
 ![Setting the file name](images/radsavefiledialog-02.png)	

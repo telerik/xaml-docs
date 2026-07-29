@@ -30,41 +30,8 @@ __FlightCard__ is intended to display flight information in a structured user-fr
 A sample __FlightCard__ can be defined as follows.
 
 __Example 1: Defining a FlightCard__
-```C#	
-FlightCardMessage flightCardMessage = new FlightCardMessage(this.currentAuthor);
 
-flightCardMessage.ImageSource = new BitmapImage(new Uri("/Images/plane.png", UriKind.RelativeOrAbsolute));
-
-FlightInfo departureFlight = new FlightInfo();
-
-departureFlight.DepartureAirport = "SOF";
-departureFlight.DepartureCity = "Sofia, Bulgaria";
-departureFlight.DepartureDateTime = new DateTime(2018, 5, 1, 7, 40, 0);
-
-departureFlight.ArrivalAirport = "REK";
-departureFlight.ArrivalCity = "Reykjavik, Iceland";
-departureFlight.ArrivalDateTime = new DateTime(2018, 5, 2, 2, 50, 0);
-
-flightCardMessage.Flights.Add(departureFlight);
-
-FlightInfo arrivalFlight = new FlightInfo();
-
-arrivalFlight.DepartureAirport = "REK";
-arrivalFlight.DepartureCity = "Reykjavik, Iceland";
-arrivalFlight.DepartureDateTime = new DateTime(2018, 5, 9, 9, 50, 0);
-
-arrivalFlight.ArrivalAirport = "SOF";
-arrivalFlight.ArrivalCity = "Sofia, Bulgaria";
-arrivalFlight.ArrivalDateTime = new DateTime(2018, 5, 9, 19, 37, 0);
-
-flightCardMessage.Flights.Add(arrivalFlight);
-
-flightCardMessage.PassengerName = otherAuthor.Name;
-
-flightCardMessage.Total = "$250.23";
-
-this.chat.AddMessage(flightCardMessage);
-```
+<snippet id='radchat-features-messages-card-messages-flightcard-example_1_defining_a_flightcard-cs' />
 
 This sample data will result in the following __FlightCard__.
 

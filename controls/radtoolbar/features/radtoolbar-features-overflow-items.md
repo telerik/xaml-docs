@@ -13,13 +13,7 @@ position: 1
 The RadToolBar control automatically hides part of its items in the overflow area when there is not enough space to display all.
 
 __Example 1: Overflow area example__
-```XAML
-	<telerik:RadToolBar Width="80">
-		<telerik:RadButton Content="B1" />
-		<telerik:RadButton Content="B2 " />
-		<telerik:RadButton Content="B3" />
-	</telerik:RadToolBar>
-```
+<snippet id='radtoolbar-features-radtoolbar-features-overflow-items-block_1-xaml' />
 
 ![{{ site.framework_name }} RadToolBar Overflow Area Structure](images/radtoolbar-features-overflow-items-0.png)
 
@@ -28,26 +22,14 @@ __Example 1: Overflow area example__
 By default the overflow button is always visible whether there are items in the overflow area or not. To change this, set the `AutoHideOverflowButton` property of `RadToolBar` to `True`.
 
 __Example 2: Setting AutoHideOverflowButton__
-```XAML
-	<telerik:RadToolBar AutoHideOverflowButton="True">
-		<telerik:RadButton Content="B1" />
-		<telerik:RadButton Content="B2 " />
-		<telerik:RadButton Content="B3" />
-	</telerik:RadToolBar>
-```
+<snippet id='radtoolbar-features-radtoolbar-features-overflow-items-block_2-xaml' />
 
 ![{{ site.framework_name }} RadToolBar AutoHide Overflow Button](images/radtoolbar-features-overflow-items-1.png)
 
 To manually control the overflow button visibility, set the `OverflowButtonVisibility` property.
 
 __Example 3: Setting OverflowButtonVisibility__
-```XAML
-	<telerik:RadToolBar OverflowButtonVisibility="Collapsed">
-		<telerik:RadButton Content="B1" />
-		<telerik:RadButton Content="B2 " />
-		<telerik:RadButton Content="B3" />
-	</telerik:RadToolBar>
-```
+<snippet id='radtoolbar-features-radtoolbar-features-overflow-items-block_3-xaml' />
 
 ![{{ site.framework_name }} RadToolBar Overflow Button Visibility Collapsed](images/radtoolbar-features-overflow-items-2.png)
 
@@ -56,21 +38,14 @@ __Example 3: Setting OverflowButtonVisibility__
 To open or close the overflow area manually, set the `IsOverflowOpen` property of `RadToolBar`.
 
 __Example 4: Open the overflow area manually__
-```C#
-	private void Button_Click(object sender, RoutedEventArgs e)
-	{
-		this.radToolbar.IsOverflowOpen = true;
-	}
-```
+<snippet id='radtoolbar-features-radtoolbar-features-overflow-items-block_4-cs' />
 
 ## Overflow Items
 
 The items that are in the overflow area can be accessed through the `OverflowItems` property of `RadToolBar`.
 
 __Example 5: Getting the first item from the overflow area__
-```C#	
-	object element = this.radToolbar.OverflowItems[0];
-```
+<snippet id='radtoolbar-features-radtoolbar-features-overflow-items-block_5-cs' />
 
 > Adding items in the `OverflowItems` collection manually is not supported.
 
@@ -81,13 +56,7 @@ To manually determine what controls from the toolbar should be added in the tool
 * `Never`: The item will never be shown in the overflow area.
 
 __Example 6: Setting OverflowMode__
-```XAML
-	<telerik:RadToolBar>
-		<telerik:RadButton Content="B1" telerik:RadToolBar.OverflowMode="Always"/>
-		<telerik:RadButton Content="B2 " />
-		<telerik:RadButton Content="B3" />
-	</telerik:RadToolBar>
-```
+<snippet id='radtoolbar-features-radtoolbar-features-overflow-items-block_6-xaml' />
 
 ![{{ site.framework_name }} RadToolBar OverflowMode Always](images/radtoolbar-features-overflow-items-3.png)
 

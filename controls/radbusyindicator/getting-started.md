@@ -37,38 +37,19 @@ You can add __RadBusyIndicator__ manually by writing the XAML code in __Example 
 
 __Example 1: Adding RadBusyIndicator in XAML__
 
-```XAML
-	<telerik:RadBusyIndicator x:Name="radBusyIndicator">
-	    <!--Some Content-->
-	</telerik:RadBusyIndicator>
-```
+<snippet id='radbusyindicator-getting-started-example_1_adding_radbusyindicator_in_xaml-xaml' />
 
 In order to use __RadBusyIndicator__ in XAML, you have to add the namespace declaration shown in __Example 2__.
 
 __Example 2: Declaring Telerik Namespace__
 
-```XAML
-    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-```
+<snippet id='radbusyindicator-getting-started-example_2_declaring_telerik_namespace-xaml' />
 
 When you are using __RadBusyIndicator__, you always have to set its __Content__ property. This will be the content on top of which you want to visualize __RadBusyIndicator__. __Example 3__ demonstrates __RadBusyIndicator__ with some custom __Content__ placed inside it:
 
 __Example 3: Adding Content__
 
-```XAML
-     <telerik:RadBusyIndicator x:Name="radBusyIndicator">
-        <Grid>
-            <telerik:RadListBox>
-                <telerik:RadListBoxItem Content="Australia" />
-                <telerik:RadListBoxItem Content="Brazil" />
-                <telerik:RadListBoxItem Content="Canada" />
-                <telerik:RadListBoxItem Content="China" />
-                <telerik:RadListBoxItem Content="England" />
-                <telerik:RadListBoxItem Content="Germany" />
-            </telerik:RadListBox>
-        </Grid>
-    </telerik:RadBusyIndicator>
-```
+<snippet id='radbusyindicator-getting-started-example_3_adding_content-xaml' />
 
 ## Enabling RadBusyIndicator
 
@@ -80,22 +61,7 @@ __Example 4__ presents __RadBusyIndicator__ with its __IsBusy__ property set to 
 
 __Example 4: Adding Content__
 
-```XAML
-     <telerik:RadBusyIndicator x:Name="radBusyIndicator" IsBusy="True">
-        <Grid>
-            <telerik:RadListBox>
-                <telerik:RadListBox>
-                    <telerik:RadListBoxItem Content="Australia" />
-                    <telerik:RadListBoxItem Content="Brazil" />
-                    <telerik:RadListBoxItem Content="Canada" />
-                    <telerik:RadListBoxItem Content="China" />
-                    <telerik:RadListBoxItem Content="England" />
-                    <telerik:RadListBoxItem Content="Germany" />
-                </telerik:RadListBox>
-            </telerik:RadListBox>
-        </Grid>
-    </telerik:RadBusyIndicator>
-```
+<snippet id='radbusyindicator-getting-started-example_4_adding_content-xaml' />
 
 If you run the application you will see __RadBusyIndicator__ placed on top of its __Content__.
 
@@ -134,16 +100,7 @@ To change the theme, you can follow the steps below:
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 5: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radbusyindicator-getting-started-example_4_adding_content-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

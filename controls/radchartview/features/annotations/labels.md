@@ -19,29 +19,8 @@ The CartesianStrokedAnnotation class provides infrastructure for annotation labe
 To show the annotation's label, set its __Label__ property.
 
 __Example 1: Setting annotation label__
-```XAML
-	<telerik:RadCartesianChart>          
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis x:Name="verticalAxis"/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries>
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="10"/>
-					<telerik:CategoricalDataPoint Category="B" Value="12"/>
-					<telerik:CategoricalDataPoint Category="C" Value="5"/>
-				</telerik:BarSeries.DataPoints>                
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-		<telerik:RadCartesianChart.Annotations>
-			<telerik:CartesianGridLineAnnotation Axis="{Binding ElementName=verticalAxis}" Value="8" Stroke="Green" StrokeThickness="2"
-												 Label="Average Value" />
-		</telerik:RadCartesianChart.Annotations>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-annotations-labels-example_1_setting_annotation_label-xaml' />
+
 
 #### Figure 1: Annotation Label
 ![radchartview-annotations-labels-0.png](images/radchartview-annotations-labels-0.png)
@@ -51,36 +30,8 @@ __Example 1: Setting annotation label__
 The chart annotation labels are adjusted using the __LabelDefinition__ property. The property accepts a value of type __ChartAnnotationLabelDefinition__ that allows you to style and position the label.
 
 __Example 2: Setting LabelDefinition__
-```XAML
-	<telerik:RadCartesianChart>          
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis x:Name="verticalAxis"/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries>
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="10"/>
-					<telerik:CategoricalDataPoint Category="B" Value="12"/>
-					<telerik:CategoricalDataPoint Category="C" Value="5"/>
-				</telerik:BarSeries.DataPoints>                
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-		<telerik:RadCartesianChart.Annotations>
-			<telerik:CartesianGridLineAnnotation Axis="{Binding ElementName=verticalAxis}" 
-												 Value="8"
-												 Stroke="Green" 
-												 StrokeThickness="2"
-												 Label="AverageValue">                    
-				<telerik:CartesianGridLineAnnotation.LabelDefinition>
-					<telerik:ChartAnnotationLabelDefinition Location="Inside" HorizontalAlignment="Center"/>
-				</telerik:CartesianGridLineAnnotation.LabelDefinition>
-			</telerik:CartesianGridLineAnnotation>
-		</telerik:RadCartesianChart.Annotations>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-annotations-labels-example_2_setting_labeldefinition-xaml' />
+
 
 #### Figure 2: Centered Label
 ![radchartview-annotations-labels-1.png](images/radchartview-annotations-labels-1.png)
@@ -102,39 +53,8 @@ Annotations provide a mechanism for label positioning that consists of three lay
 * __Horizontal / Vertical Offset__ property: Besides the Location, HorizontalAlignment and Vertical Alignment, you can use the __HorizontalOffset__ and __VerticalOffset__ properties to specify an offset in pixels. This offset is applied after the aforementioned properties.
 
 __Example 3: Custom positioned label__
-```XAML
-	<telerik:RadCartesianChart>          
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis x:Name="verticalAxis"/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries>
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="10"/>
-					<telerik:CategoricalDataPoint Category="B" Value="12"/>
-					<telerik:CategoricalDataPoint Category="C" Value="5"/>
-				</telerik:BarSeries.DataPoints>                
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-		<telerik:RadCartesianChart.Annotations>
-			<telerik:CartesianGridLineAnnotation Axis="{Binding ElementName=verticalAxis}" 
-												 Value="8"
-												 Stroke="Green" 
-												 StrokeThickness="2"
-												 Label="AverageValue">                    
-				<telerik:CartesianGridLineAnnotation.LabelDefinition>
-					<telerik:ChartAnnotationLabelDefinition Location="Top"
-															HorizontalAlignment="Center" 
-															VerticalOffset="-30"
-															HorizontalOffset="100"/>
-				</telerik:CartesianGridLineAnnotation.LabelDefinition>
-			</telerik:CartesianGridLineAnnotation>
-		</telerik:RadCartesianChart.Annotations>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-annotations-labels-example_3_custom_positioned_label-xaml' />
+
 
 #### Figure 5: Custom positioned label
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-2.png)
@@ -144,43 +64,8 @@ __Example 3: Custom positioned label__
 The default visual element of the label is a native TextBlock. To customize it you can use the __DefaultVisualStyle__ property of the ChartAnnotationLabelDefinition.
 
 __Example 4: Setting DefaultVisualStyle__
-```XAML
-	<telerik:RadCartesianChart>          
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis x:Name="verticalAxis"/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries>
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="10"/>
-					<telerik:CategoricalDataPoint Category="B" Value="12"/>
-					<telerik:CategoricalDataPoint Category="C" Value="5"/>
-				</telerik:BarSeries.DataPoints>                
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-		<telerik:RadCartesianChart.Annotations>
-			<telerik:CartesianGridLineAnnotation Axis="{Binding ElementName=verticalAxis}" 
-												 Value="8"
-												 Stroke="Green" 
-												 StrokeThickness="2"
-												 Label="Average Value">                    
-				<telerik:CartesianGridLineAnnotation.LabelDefinition>
-					<telerik:ChartAnnotationLabelDefinition Location="Top" HorizontalAlignment="Center">
-						<telerik:ChartAnnotationLabelDefinition.DefaultVisualStyle>
-							<Style TargetType="TextBlock">
-								<Setter Property="Foreground" Value="Purple" />
-								<Setter Property="FontWeight" Value="Bold" />
-							</Style>
-						</telerik:ChartAnnotationLabelDefinition.DefaultVisualStyle>
-					</telerik:ChartAnnotationLabelDefinition>
-				</telerik:CartesianGridLineAnnotation.LabelDefinition>
-			</telerik:CartesianGridLineAnnotation>
-		</telerik:RadCartesianChart.Annotations>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-annotations-labels-example_4_setting_defaultvisualstyle-xaml' />
+
 
 #### Figure 6: Customized Label Style
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-3.png)
@@ -190,46 +75,8 @@ __Example 4: Setting DefaultVisualStyle__
 To replace the default label visual element with an entirely custom UI you can use the __Template__ property of the ChartAnnotationLabelDefinition.
 
 __Example 5: Setting custom label template__
-```XAML
-	<telerik:RadCartesianChart>          
-		 <telerik:RadCartesianChart.VerticalAxis>
-                <telerik:LinearAxis x:Name="verticalAxis"/>
-            </telerik:RadCartesianChart.VerticalAxis>
-            <telerik:RadCartesianChart.HorizontalAxis>
-                <telerik:CategoricalAxis/>
-            </telerik:RadCartesianChart.HorizontalAxis>
-            <telerik:RadCartesianChart.Series>
-                <telerik:BarSeries>
-                    <telerik:BarSeries.DataPoints>
-                        <telerik:CategoricalDataPoint Category="A" Value="10"/>
-                        <telerik:CategoricalDataPoint Category="B" Value="12"/>
-                        <telerik:CategoricalDataPoint Category="C" Value="5"/>
-                    </telerik:BarSeries.DataPoints>                
-                </telerik:BarSeries>
-            </telerik:RadCartesianChart.Series>
-            <telerik:RadCartesianChart.Annotations>
-                <telerik:CartesianGridLineAnnotation Axis="{Binding ElementName=verticalAxis}" 
-                                                     Value="8"
-                                                     Stroke="Green" 
-                                                     StrokeThickness="2"
-                                                     Label="Average Value">
-                    <telerik:CartesianGridLineAnnotation.LabelDefinition>
-                        <telerik:ChartAnnotationLabelDefinition Location="Top" HorizontalOffset="5">
-                            <telerik:ChartAnnotationLabelDefinition.Template>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Rectangle Fill="#FFA03B" Width="10" Height="10" />
-                                        <TextBlock Text="{Binding}" Margin="5 0 0 0" FontStyle="Italic"/>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </telerik:ChartAnnotationLabelDefinition.Template>
-                        </telerik:ChartAnnotationLabelDefinition>
-                    </telerik:CartesianGridLineAnnotation.LabelDefinition>
-                </telerik:CartesianGridLineAnnotation>
-            </telerik:RadCartesianChart.Annotations>
-		</telerik:RadCartesianChart.Annotations>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-annotations-labels-example_5_setting_custom_label_template-xaml' />
+
 
 #### Figure 7: Customized Label Template
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-4.png)

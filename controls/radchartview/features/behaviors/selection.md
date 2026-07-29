@@ -17,44 +17,16 @@ If the feature is enabled, clicking on a data point will select or deselect it, 
 To enable the selection, add a __ChartSelectionBehavior__ element in the __Behaviors__ collection of the chart control. The following example shows how to create a sample data binding setup and enable the feature.
 
 __Example 1: Define the data point model__
-```C#
-	public class PlotInfo
-    {
-        public string Category { get; set; }
-        public double Value { get; set; }
-    }
-```
+<snippet id='radchartview-features-behaviors-selection-example_1_define_the_data_point_model-cs' />
+
 
 __Example 2: Populating with data__
-```C#
-	private static Random r = new Random();
-	public MyUserControl()
-	{
-		InitializeComponent();
-		var source = new ObservableCollection<PlotInfo>();
-		for (int i = 0; i < 10; i++)
-		{
-			source.Add(new PlotInfo() { Category = "C" + i, Value = r.Next(100, 300) });
-		}
-		this.DataContext = source;
-	}
-```
+<snippet id='radchartview-features-behaviors-selection-example_2_populating_with_data-cs' />
+
 
 __Example 3: Using the ChartSelectionBehavior__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8" SelectionPalette="VisualStudio2019Selected">
-		<telerik:RadCartesianChart.Behaviors>
-			<telerik:ChartSelectionBehavior />
-		</telerik:RadCartesianChart.Behaviors>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>		
-		<telerik:PointSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}" />
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-behaviors-selection-example_3_using_the_chartselectionbehavior-xaml' />
+
 
 #### Figure 1: Selected data point
 ![{{ site.framework_name }} RadChartView Selected data point](images/radchartview-features-selection-0.png)
@@ -66,14 +38,8 @@ The selected data points can be accessed using the __Selected
 By default selecting a data point doesn't highlight it on the plot area. To enable this, you can use the chart [palettes]({%slug radchartview-features-palettes-introduction%}). The __Palette__ property of the chart defines the fill color of the data points. The __SelectionPalette__ property defines the colors of the data points when selected.
 
 __Example 4: Setting the selection palette__
-```XAML
-	<telerik:RadCartesianChart Palette="Green" SelectionPalette="GreenSelected">
-		<telerik:RadCartesianChart.Behaviors>
-			<telerik:ChartSelectionBehavior />
-		</telerik:RadCartesianChart.Behaviors>
-		<!-- other elements here (see Examples 1 to 3)-->
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-behaviors-selection-example_4_setting_the_selection_palette-xaml' />
+
 
 #### Figure 2: Palette based selection coloring
 ![{{ site.framework_name }} RadChartView Palette based selection coloring](images/radchartview-features-selection-1.png)
@@ -83,37 +49,8 @@ To define selection colors different than the ones provided by the predefined pa
 The following example shows one way to change the selected point's background using a __PointTemplate__. In this case the palette won't be used so there is no need to set the palette propreties.
 
 __Example 5: Customizing the data point visual__
-```XAML
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Behaviors>
-			<telerik:ChartSelectionBehavior />
-		</telerik:RadCartesianChart.Behaviors>
-		<telerik:BarSeries CategoryBinding="Category" ValueBinding="Value" ItemsSource="{Binding}">
-			<telerik:BarSeries.PointTemplate>
-				<DataTemplate>
-					<Border>
-						<Border.Style>
-							<Style TargetType="Border">
-								<Setter Property="Background" Value="#A8C6ED" />
-								<Style.Triggers>
-									<DataTrigger Binding="{Binding IsSelected}" Value="True">
-										<Setter Property="Background" Value="#2E64D6" />
-									</DataTrigger>
-								</Style.Triggers>
-							</Style>
-						</Border.Style>
-					</Border>
-				</DataTemplate>
-			</telerik:BarSeries.PointTemplate>
-		</telerik:BarSeries>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-behaviors-selection-example_5_customizing_the_data_point_visual-xaml' />
+
 
 The __data context__ of the element in the __PointTemplate__ is an object of type [DataPoint]({%slug radchartview-getting-started-data-point%})
 
@@ -133,11 +70,8 @@ When the __Multiple__ mode is used, the click on a data point includes it in the
 The selection mode is controlled with the __DataPointSelectionMode__ property of ChartSelectionBehavior.
 
 __Example 6: Setting DataPointSelectionMode__
-```XAML
-	<telerik:RadCartesianChart.Behaviors>
-		<telerik:ChartSelectionBehavior DataPointSelectionMode="Multiple"/>
-	</telerik:RadCartesianChart.Behaviors>
-```
+<snippet id='radchartview-features-behaviors-selection-example_6_setting_datapointselectionmode-xaml' />
+
 
 #### Figure 4: Multiple selection
 ![{{ site.framework_name }} RadChartView Multiple selection](images/radchartview-features-selection-3.png)
@@ -149,49 +83,34 @@ The hit test area is the space in the data point visual where you can click to s
 To change expand the size of the hit test area, set the __HitTestMargin__ property of ChartSelectionBehavior. This is useful when showing small data point visuals that are hard to click.
 
 __Example 7: Setting HitTestMargin__
-```XAML
-	<telerik:RadCartesianChart.Behaviors>
-		<telerik:ChartSelectionBehavior HitTestMargin="30"/>
-	</telerik:RadCartesianChart.Behaviors>
-```
+<snippet id='radchartview-features-behaviors-selection-example_7_setting_hittestmargin-xaml' />
+
 
 ## Events
 
 ChartSelectionBehavior exposes the __SelectionChanged__ event which is raised when a data point is selected or deselected.
 
 __Example 8: Subscribing to SelectionChanged__
-```XAML
-	<telerik:RadCartesianChart.Behaviors>
-		<telerik:ChartSelectionBehavior SelectionChanged="ChartSelectionBehavior_SelectionChanged"/>
-	</telerik:RadCartesianChart.Behaviors>
-```
+<snippet id='radchartview-features-behaviors-selection-example_8_subscribing_to_selectionchanged-xaml' />
+
 
 __Example 9: SelectionChanged event handler__
-```C#
-	private void ChartSelectionBehavior_SelectionChanged(object sender, Telerik.Windows.Controls.ChartView.ChartSelectionChangedEventArgs e)
-	{
-		IList<DataPoint> selectedPoints = e.AddedPoints;
-		IList<DataPoint> deselectedPoints = e.RemovedPoints;
-	}
-```
+<snippet id='radchartview-features-behaviors-selection-example_9_selectionchanged_event_handler-cs' />
+
 
 ## Programmatic Selection
 
 To get the selected data points, use the __SelectedPoints__ collection of the chart control. The collection is read-only, so it cannot be replaced, data bound or modified.
 
 __Example 10: Getting the selected data points__
-```C#
-	ReadOnlyDataPointCollection currentSelection = this.radCartesianChart.SelectedPoints;
-```
+<snippet id='radchartview-features-behaviors-selection-example_10_getting_the_selected_data_points-cs' />
+
 
 To select or deselect a data point, set the __IsSelected__ property of the corresponding [DataPoint]({%slug radchartview-getting-started-data-point%}) object. 
 
 __Example 11: Selecting a data point from a PointSeries__
-```C#
-	var chartSeries = (PointSeries)this.radCartesianChart.Series[0];
-	CategoricalDataPoint dataPoint = chartSeries.DataPoints[0];
-	dataPoint.IsSelected = true;
-```
+<snippet id='radchartview-features-behaviors-selection-example_11_selecting_a_data_point_from_a_pointseries-cs' />
+
 
 >tip See how to implement a custom behavior allowing SelectedPoints data binding in the [BindingSelectedItemsToViewModel](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/BindingSelectedItemsToViewModel) SDK example.
 

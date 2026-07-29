@@ -22,17 +22,7 @@ There are two key properties that control the Height of the TimeRuler:
 
 
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"  
-	                          MinTimeRulerExtent="300" 
-	                          MaxTimeRulerExtent="600" >
-	            <telerik:RadScheduleView.ViewDefinitions>
-	                <telerik:DayViewDefinition  />
-	                <telerik:WeekViewDefinition />
-	                <telerik:TimelineViewDefinition />
-	            </telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-end-user-capabilities-timerulerconfiguration-block_1-xaml' />
 
 The TimeRuler resizes according the size of the RadScheduleView until the TimeRuler extend is between the Min/MaxTimeRulerExtent properties.
 

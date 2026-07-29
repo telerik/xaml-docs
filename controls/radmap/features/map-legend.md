@@ -21,15 +21,7 @@ The __RadMap__ control introduces the __MapLegend__ object. It allows you to dis
 The __MapLegend__ object shouldn't be defined in the context of the __RadMap__ control. It can be defined in any part of the __UserControl__. Here is an example of a __RadMap__ that doesn't uses its default layout and a __MapLegend__ that appears in the bottom right corner of the map.
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480"
-	                UseDefaultLayout="False">
-	</telerik:RadMap>
-	<telerik:MapLegend x:Name="mapLegend">
-	</telerik:MapLegend>
-```
+<snippet id='radmap-features-map-legend-block_1-xaml' />
 
 At this point the __MapLegend__ is not connected to the __RadMap__ and the __RadMap__ doesn't display any data, that should be reflected in the legend. Here is a __RadMap__ that displays the world countries, read from an __ESRI Shapefile__. It uses its __Colorizer__ property to color each country in different color depending on its area. On the other side the __MapLegend__ object is connected to the __InformationLayer__ displaying the countries via its __Layer__ property.
 
@@ -38,66 +30,11 @@ At this point the __MapLegend__ is not connected to the __RadMap__ and the __Rad
 >The __MapLegend__ creates the items in the legend on the basis of the __ColorMeasureScale__ object set to the __Colorizer__ property of the __Information Layer__.
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480"
-	                UseDefaultLayout="False">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <telerik:InformationLayer.Reader>
-	            <telerik:MapShapeReader DataSource="/Silverlight.Help.RadMapSamples;component/Data/world.dbf"
-	                                    Source="/Silverlight.Help.RadMapSamples;component/Data/world.shp" />
-	        </telerik:InformationLayer.Reader>
-	        <telerik:InformationLayer.Colorizer>
-	            <telerik:ColorMeasureScale ExtendedPropertyName="SQKM"
-	                                        Mode="Count"
-	                                        TickMarkCount="7">
-	                <telerik:ColorMeasureScale.ShapeFillCollection>
-	                    <telerik:MapShapeFill Fill="#FFF0D9"
-	                                            Stroke="#B1946D"
-	                                            StrokeThickness="1" />
-	                    <telerik:MapShapeFill Fill="#FFE4BA"
-	                                            Stroke="#B1946D"
-	                                            StrokeThickness="1" />
-	                    <telerik:MapShapeFill Fill="#FFDBA3"
-	                                            Stroke="#B1946D"
-	                                            StrokeThickness="1" />
-	                    <telerik:MapShapeFill Fill="#FFD28D"
-	                                            Stroke="#B1946D"
-	                                            StrokeThickness="1" />
-	                    <telerik:MapShapeFill Fill="#FFBF5C"
-	                                            Stroke="#B1946D"
-	                                            StrokeThickness="1" />
-	                    <telerik:MapShapeFill Fill="#FFAF33"
-	                                            Stroke="#B1946D"
-	                                            StrokeThickness="1" />
-	                    <telerik:MapShapeFill Fill="#E2942D"
-	                                            Stroke="#B1946D"
-	                                            StrokeThickness="1" />
-	                </telerik:ColorMeasureScale.ShapeFillCollection>
-	                <telerik:ColorMeasureScale.HighlightFillCollection>
-	                    <telerik:MapShapeFill Fill="Orange"
-	                                            Stroke="#B1946D"
-	                                            StrokeThickness="1" />
-	                </telerik:ColorMeasureScale.HighlightFillCollection>
-	            </telerik:ColorMeasureScale>
-	        </telerik:InformationLayer.Colorizer>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-	<telerik:MapLegend x:Name="mapLegend"
-	                    Layer="{Binding ElementName=informationLayer}"
-	                    VerticalAlignment="Bottom"
-	                    HorizontalAlignment="Right">
-	</telerik:MapLegend>
-```
+<snippet id='radmap-features-map-legend-block_2-xaml' />
 
 
-```C#
-	this.radMap.Provider = new EmptyProvider();
-```
-```VB.NET
-	Me.radMap.Provider = New EmptyProvider()
-```
+<snippet id='radmap-features-map-legend-block_3-cs' />
+<snippet id='radmap-features-map-legend-block_3-vb' />
 
 Here is a snapshot of the result.
 
@@ -134,20 +71,7 @@ Here is an example of a __MapLegend__ configured via these properties:
 >tip Defining format strings in XAML can be done in the following way - __{}:{0:your format string}.__ To learn more about formatting visit the [Formatting Overview](http://msdn.microsoft.com/en-us/library/26etazsy.aspx) chapter in MSDN.
 
 
-```XAML
-	<telerik:MapLegend x:Name="mapLegend"
-	                    Layer="{Binding ElementName=informationLayer}"
-	                    Header="Area (in million sq.km.):"
-	                    VerticalAlignment="Bottom"
-	                    HorizontalAlignment="Right"
-	                    Format="{}{0:0,,.0}"
-	                    MarkerSize="40,20"
-	                    MarkerSpacing="0"
-	                    LabelLayout="Between"
-	                    LabelLocation="BottomRight"
-	                    Margin="0,0,10,10">
-	</telerik:MapLegend>
-```
+<snippet id='radmap-features-map-legend-block_4-xaml' />
 
 Here is a snapshot of the result:
 

@@ -42,9 +42,8 @@ You can set the __SortMemberPath__ property of a column to specify the name of t
 
 __Example 1: Specify SortMemberPath__
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" SortMemberPath="Name" />
-```
+<snippet id='radgridview-sorting-basics-example_1_specify_sortmemberpath-xaml' />
+
 
 ## Disable Sorting
 
@@ -52,17 +51,15 @@ If you don't want your __RadGridView__ to be sortable, you just have to set its 
 
 __Example 2: Disable sorting__
 
-```XAML
-	<telerik:RadGridView CanUserSortColumns="False" />
-```
+<snippet id='radgridview-sorting-basics-example_2_disable_sorting-xaml' />
+
 
 In case you want to disable sorting for a particular column only, you can set that column's __IsSortable__ property to __False__:
 
 __Example 3: Disable sorting for a particular column__
 
-```XAML
-	<telerik:GridViewColumn IsSortable="False" />
-```
+<snippet id='radgridview-sorting-basics-example_3_disable_sorting_for_a_particular_column-xaml' />
+
 
 ## Events
 
@@ -70,10 +67,8 @@ There are two events that are raised as the user apply sorting on any column. Th
 
 __Example 4: Handle the Sorting and Sorted events__
 
-```XAML
-	<telerik:RadGridView Sorting="radGridView_Sorting" 
-	             Sorted="radGridView_Sorted" />
-```
+<snippet id='radgridview-sorting-basics-example_4_handle_the_sorting_and_sorted_events-xaml' />
+
 
 ### Sorting
 
@@ -88,17 +83,10 @@ The __GridViewSortingEventArgs__ of the __Sorting__ event provide you with the f
 
 __Example 5: Cancel the sorting of a column__
 
-```C#
-	private void radGridView_Sorting(object sender, GridViewSortingEventArgs e)
-	{
-	    e.Cancel = true;
-	}
-```
-```VB.NET
-	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
-	    e.Cancel = True
-	End Sub
-```
+<snippet id='radgridview-sorting-basics-example_5_cancel_the_sorting_of_a_column-cs' />
+
+<snippet id='radgridview-sorting-basics-example_5_cancel_the_sorting_of_a_column-vb' />
+
 
 > To learn how to use the __Sorting__ event to overwrite the built-in sorting functionality take a look at the [Custom Sorting]({%slug gridview-sorting-custom%}) topic.
 
@@ -110,30 +98,10 @@ In the event handler, you can place some code that has to be executed when the d
 
 __Example 7: Change the TextAlignment of the sorted column__
 
-```C#
-	private GridViewColumn previousColumn;
-	private void radGridView_Sorted(object sender, GridViewSortedEventArgs e)
-	{
-	    if (this.previousColumn != null)
-	    {
-	        this.previousColumn.TextAlignment = TextAlignment.Left;
-	    }
+<snippet id='radgridview-sorting-basics-example_7_change_the_textalignment_of_the_sorted_column-cs' />
 
-	    e.Column.TextAlignment = TextAlignment.Right;
-	    this.previousColumn = e.Column;
-	}
-```
-```VB.NET
-	Private previousColumn As GridViewColumn
-	Private Sub radGridView_Sorted(ByVal sender As Object, ByVal e As GridViewSortedEventArgs)
-		If Me.previousColumn IsNot Nothing Then
-			Me.previousColumn.TextAlignment = TextAlignment.Left
-		End If
+<snippet id='radgridview-sorting-basics-example_7_change_the_textalignment_of_the_sorted_column-vb' />
 
-		e.Column.TextAlignment = TextAlignment.Right
-		Me.previousColumn = e.Column
-	End Sub
-```
 
 > In this example, the **previousColumn** field is used to store the currently sorted column. This is done in order to revert its TextAlignment color when another column is selected. 
 

@@ -35,22 +35,8 @@ The __RadDiagram__ exposes the following __Style__ properties to allow you to ea
 You can apply a customized __Style__ targeting the __RadDiagramShape__ class through the __RadDiagram.ShapeStyle__ property. This way you'll be able to apply one style for all shapes created inside the __RadDiagram__ instance:	  
 
 
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <Style TargetType="telerik:RadDiagramShape" x:Key="CustomShapeStyle">
-                <Setter Property="Background" Value="LightGreen" />
-                <Setter Property="FontWeight" Value="Bold" />
-            </Style>
-        </Grid.Resources>
-        <telerik:RadDiagram x:Name="xDiagram" ShapeStyle="{StaticResource CustomShapeStyle}">
-            <telerik:RadDiagramShape x:Name="shape1" Position="20,20" Content="Shape 1" />
-            <telerik:RadDiagramShape x:Name="shape2" Position="220,20" Content="Shape 2" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=shape1}"
-                    Target="{Binding ElementName=shape2}" />
-        </telerik:RadDiagram>
-    </Grid>		  		  
-```
+<snippet id='raddiagram-styles-and-templates-styling-selectors-block_1-xaml' />
+
 
 ![Rad Diagram Styling Shape Style](images/RadDiagram_Styling_ShapeStyle.png)
 
@@ -61,24 +47,8 @@ However, if you have different shapes and/or you prefer to display shapes with d
 The __RadDiagram.ContainerShapeStyle__ property allows you to apply a custom style on all __RadDiagramContainerShape__ objects displayed on the diagramming surface:
 	  
 
-```XAML	
-    <Grid>
-        <Grid.Resources>
-            <Style TargetType="telerik:RadDiagramContainerShape" x:Key="CustomContainerShapeStyle">
-                <Setter Property="Background" Value="LightBlue" />
-                <Setter Property="FontWeight" Value="Bold" />
-                <Setter Property="Foreground" Value="Blue" />
-            </Style>
-        </Grid.Resources>
-        <telerik:RadDiagram x:Name="xDiagram"
-                ContainerShapeStyle="{StaticResource CustomContainerShapeStyle}">
-            <telerik:RadDiagramContainerShape Position="120,120" Content="Container Shape">
-                <telerik:RadDiagramShape Content="Shape 1" Position="140,160"/>
-                <telerik:RadDiagramShape Content="Shape 2" Position="240,160"/>
-            </telerik:RadDiagramContainerShape>
-        </telerik:RadDiagram>
-    </Grid>   
-```
+<snippet id='raddiagram-styles-and-templates-styling-selectors-block_2-xaml' />
+
 
 ![Rad Diagram Styling Container Style](images/RadDiagram_Styling_ContainerStyle.png)
 
@@ -87,24 +57,8 @@ The __RadDiagram.ContainerShapeStyle__ property allows you to apply a custom sty
 You can apply a customized __Style__ targeting the __RadDiagramConnection__ class through the __RadDiagram.ConnectionStyle__ property. This way you'll be able to apply one style for all connections created inside the __RadDiagram__ instance:
 		
 
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <Style TargetType="telerik:RadDiagramConnection" x:Key="CustomConnectionStyle">
-                <Setter Property="Stroke" Value="Red" />
-                <Setter Property="StrokeThickness" Value="2" />
-                <Setter Property="StrokeDashArray" Value="2 2" />
-            </Style>
-        </Grid.Resources>
-        <telerik:RadDiagram x:Name="xDiagram"
-                ConnectionStyle="{StaticResource CustomConnectionStyle}">
-            <telerik:RadDiagramShape x:Name="shape1" Position="20,20" Content="Shape 1" />
-            <telerik:RadDiagramShape x:Name="shape2" Position="220,20" Content="Shape 2" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=shape1}"
-                    Target="{Binding ElementName=shape2}" />
-        </telerik:RadDiagram>
-    </Grid>	  
-```
+<snippet id='raddiagram-styles-and-templates-styling-selectors-block_3-xaml' />
+
 
 ![Rad Diagram Styling Connection Style](images/RadDiagram_Styling_ConnectionStyle.png)
 
@@ -115,23 +69,8 @@ However, if you have different connections and/or you prefer to display connecti
 You can also apply a customized __Style__ targeting the __RadDiagramConnector__ class through the __RadDiagram.ConnectorStyle__ property. This way you'll be able to apply one style for all connectors displayed inside a __RadDiagram__ instance:		  
 
 
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <Style TargetType="telerik:RadDiagramConnector" x:Key="CustomConnectorStyle">
-                <Setter Property="Background" Value="Green" />
-            </Style>
-        </Grid.Resources>
-        <telerik:RadDiagram x:Name="xDiagram" ConnectorStyle="{StaticResource CustomConnectorStyle}">
-            <telerik:RadDiagramShape x:Name="shape1" Position="20,20" Content="Shape 1" />
-            <telerik:RadDiagramShape x:Name="shape2" Position="220,20" Content="Shape 2" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=shape1}"
-                    Target="{Binding ElementName=shape2}" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=shape2}"
-                    EndPoint="360,40" TargetCapType="Arrow1Filled"/>
-        </telerik:RadDiagram>
-    </Grid>  		  
-```
+<snippet id='raddiagram-styles-and-templates-styling-selectors-block_4-xaml' />
+
 
 ![Rad Diagram Styling Connector Style](images/RadDiagram_Styling_ConnectorStyle.png)
 
@@ -143,28 +82,8 @@ Grouping, in the context of the __Telerik Diagramming Framework__, is a way of o
 And if you need to customize the default style settings of this rectangle, you can use the __GroupStyle__ property. In the following example, the __Stroke__ and __StrokeThickness__ properties of the rectangle are modified to create a different look of the grouping feature:	  
 
 
-```XAML
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.Resources>
-            <Style TargetType="Rectangle" x:Key="CustomGroupStyle">
-                <Setter Property="StrokeThickness" Value="3" />
-                <Setter Property="Stroke" Value="Red" />
-            </Style>
-        </Grid.Resources>
-        <telerik:RadButton Content="Group" Click="Group" />
-        <telerik:RadDiagram Grid.Row="1" x:Name="xDiagram"
-                GroupStyle="{StaticResource CustomGroupStyle}">
-            <telerik:RadDiagramShape x:Name="shape1" Position="20,20" Content="Shape 1" />
-            <telerik:RadDiagramShape x:Name="shape2" Position="220,20" Content="Shape 2" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=shape1}"
-                    Target="{Binding ElementName=shape2}" />
-        </telerik:RadDiagram>
-	</Grid>
-```
+<snippet id='raddiagram-styles-and-templates-styling-selectors-block_5-xaml' />
+
 
 ![Rad Diagram Styling Custom Group Style](images/RadDiagram_Styling_CustomGroupStyle.png)
 
@@ -176,27 +95,8 @@ The __RadDiagram__ gives you the ability to select one or multiple __RadDiagramI
 If you need to customize the style settings of the selection rectangle, you can use the __SelectionRectangleStyle__ property. In the following example, you can see how to change the __Stroke__ property of the rectangle to red:		
 
 
-```XAML
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.Resources>
-            <Style TargetType="Rectangle" x:Key="CustomSelectionRectangleStyle">
-                <Setter Property="Stroke" Value="Red" />
-            </Style>
-        </Grid.Resources>
-        <telerik:RadButton Content="Group" Click="Group" />
-        <telerik:RadDiagram Grid.Row="1" x:Name="xDiagram" SelectionMode="Multiple"
-                SelectionRectangleStyle="{StaticResource CustomSelectionRectangleStyle}">
-            <telerik:RadDiagramShape x:Name="shape1" Position="20,20" Content="Shape 1" />
-            <telerik:RadDiagramShape x:Name="shape2" Position="220,20" Content="Shape 2" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=shape1}"
-                    Target="{Binding ElementName=shape2}" />
-        </telerik:RadDiagram>
-    </Grid>
-```
+<snippet id='raddiagram-styles-and-templates-styling-selectors-block_6-xaml' />
+
 
 ![Rad Diagram Styling Custom Selection Style](images/RadDiagram_Styling_CustomSelectionStyle.png)
 

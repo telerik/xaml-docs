@@ -16,37 +16,13 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 
 * __Add Tabs__ In order to add new tab item to a tab control, first you have to create instance of the class __Telerik.Windows.Controls.RadTabItem__, set its properties like __Header__, __Content__, __ToolTip__ etc, and then add it to the tab control items collection.
 					
-```C#
-	private void AddTab()
-	{
-	    RadTabItem itemToAdd = new RadTabItem()
-	    {
-	        Header = "New Tab"
-	    };
-	    radTabControl.Items.Add(itemToAdd);
-	}
-```
-```VB.NET
-	Private Sub AddTab()
-	    Dim itemToAdd As New RadTabItem()
-	    itemToAdd.Header = "New Tab"
-	    radTabControl.Items.Add(itemToAdd)
-	End Sub
-```
+<snippet id='radtabcontrol-populating-with-tabs-populating-add-remove-tabs-block_1-cs' />
+<snippet id='radtabcontrol-populating-with-tabs-populating-add-remove-tabs-block_2-vb' />
 
 * __Remove Tabs__ In order to remove a tab item you have to remove it from the tab control items collection.
 
-```C#
-	private void RemoveTab( RadTabItem tabItemToRemove )
-	{
-	    radTabControl.Items.Remove( tabItemToRemove );
-	}
-```
-```VB.NET
-	Private Sub RemoveTab( ByVal tabItemToRemove As RadTabItem )
-	    radTabControl.Items.Remove( tabItemToRemove )
-	End Sub
-```
+<snippet id='radtabcontrol-populating-with-tabs-populating-add-remove-tabs-block_3-cs' />
+<snippet id='radtabcontrol-populating-with-tabs-populating-add-remove-tabs-block_4-vb' />
 
 ## Adding And Removing Tabs Declaratively
 
@@ -55,14 +31,7 @@ This is snapshot of a regular __RadTabControl__ with four tab items.
 
 And here is its XAML declaration:
 
-```XAML
-	<telerik:RadTabControl x:Name="radTabControl">
-	    <telerik:RadTabItem Header="Calendar"/>
-	    <telerik:RadTabItem Header="Colors"/>
-	    <telerik:RadTabItem Header="Quote"/>
-	    <telerik:RadTabItem Header="Web Sites"/>
-	</telerik:RadTabControl>
-```
+<snippet id='radtabcontrol-populating-with-tabs-populating-add-remove-tabs-block_5-xaml' />
 
 Each one of the __RadTabItem__ nodes in the example above represents declaration of a single tab item that will be created and added to your tab control at run time. Just insert or delete __RadTabItem__ child nodes to/from your tab control declaration and see how the tab structure changes.
 				

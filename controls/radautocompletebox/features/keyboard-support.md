@@ -36,35 +36,9 @@ A possible scenario would be to select the highlighted item and move the focus t
 
 __Example 1: Overriding the HandleKeyDown method__
 
-```C#
-	public class CustomAutoCompleteBox : RadAutoCompleteBox
-	{
-		protected override bool HandleKeyDown(Key systemKey)
-		{
-			if (systemKey == Key.Tab)
-			{
-				base.HandleKeyDown(systemKey);
-				return false;
-			}
+<snippet id='radautocompletebox-features-keyboard-support-example_1_overriding_the_handlekeydown_method-cs' />
+<snippet id='radautocompletebox-features-keyboard-support-example_1_overriding_the_handlekeydown_method-vb' />
 
-			return base.HandleKeyDown(systemKey);
-		}
-	}
-```
-```VB.NET
-	Public Class CustomAutoCompleteBox
-	Inherits RadAutoCompleteBox
-
-		Protected Overrides Function HandleKeyDown(ByVal systemKey As Key) As Boolean
-			If systemKey Is Key.Tab Then
-				MyBase.HandleKeyDown(systemKey)
-				Return False
-			End If
-
-			Return MyBase.HandleKeyDown(systemKey)
-		End Function
-	End Class
-```
 
 ## HighlightedIndex
 
@@ -72,46 +46,9 @@ With the **2020.3.817** version of the controls the RadAutoCompleteBox exposes a
 
 __Example 2: Using the HighlightedIndex property in the HandleKeyDown method__
 
-```C#
-    public class CustomAutoCompleteBox : RadAutoCompleteBox
-    {
-        protected override bool HandleKeyDown(Key systemKey)
-        {
-            if (systemKey == Key.PageDown)
-            {
-                this.HighlightedIndex += 10;
-                return true;
-            }
+<snippet id='radautocompletebox-features-keyboard-support-example_2_using_the_highlightedindex_property_in_the_handlekeydown_method-cs' />
+<snippet id='radautocompletebox-features-keyboard-support-example_2_using_the_highlightedindex_property_in_the_handlekeydown_method-vb' />
 
-            if (systemKey == Key.PageUp)
-            {
-                this.HighlightedIndex -= 10;
-                return true;
-            }
-
-            return base.HandleKeyDown(systemKey);
-        }
-    }
-```
-```VB.NET
-	Public Class CustomAutoCompleteBox
-		Inherits RadAutoCompleteBox
-
-		Protected Overrides Function HandleKeyDown(ByVal systemKey As Key) As Boolean
-			If systemKey Is Key.PageDown Then
-				Me.HighlightedIndex += 10
-				Return True
-			End If
-
-			If systemKey Is Key.PageUp Then
-				Me.HighlightedIndex -= 10
-				Return True
-			End If
-
-			Return MyBase.HandleKeyDown(systemKey)
-		End Function
-	End Class
-```
 
 ## Tab Navigation
 
@@ -119,9 +56,7 @@ __TabNavigationExtensions.IsTabStop__ attached property indicates whether RadAut
 
 __Example 3: RadAutoCompleteBox with TabNavigationExtensions.IsTabStop__
 
-```XAML
-	<telerik:RadAutoCompleteBox telerik:TabNavigationExtensions.IsTabStop="False" />
-```
+<snippet id='radautocompletebox-features-keyboard-support-example_3_radautocompletebox_with_tabnavigationextensions_istabstop-xaml' />
 
 ## See Also
 

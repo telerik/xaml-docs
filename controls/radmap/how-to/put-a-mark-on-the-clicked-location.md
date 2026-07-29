@@ -21,45 +21,11 @@ The following example will use a __RadMap__ with one __InformationLayer__. The _
 Here is the code for the example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480"
-	                MapMouseClick="radMap_MapMouseClick">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <telerik:InformationLayer.ItemTemplate>
-	            <DataTemplate>
-	                <Ellipse telerik:MapLayer.Location="{Binding}"
-	                            Width="20"
-	                            Height="20"
-	                            Stroke="Red"
-	                            StrokeThickness="3"
-	                            Fill="Transparent">
-	                    <telerik:MapLayer.HotSpot>
-	                        <telerik:HotSpot X="0.5"
-	                                            Y="0.5" />
-	                    </telerik:MapLayer.HotSpot>
-	                </Ellipse>
-	            </DataTemplate>
-	        </telerik:InformationLayer.ItemTemplate>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-how-to-put-a-mark-on-the-clicked-location-block_1-xaml' />
 
 
-```C#
-	private void radMap_MapMouseClick( object sender, MapMouseRoutedEventArgs eventArgs )
-	{
-	    this.informationLayer.Items.Clear();
-	    this.informationLayer.Items.Add( eventArgs.Location );
-	}
-```
-```VB.NET
-	Private Sub radMap_MapMouseClick(ByVal sender As Object, ByVal eventArgs As MapMouseRoutedEventArgs)
-		Me.informationLayer.Items.Clear()
-		Me.informationLayer.Items.Add(eventArgs.Location)
-	End Sub
-```
+<snippet id='radmap-how-to-put-a-mark-on-the-clicked-location-block_2-cs' />
+<snippet id='radmap-how-to-put-a-mark-on-the-clicked-location-block_2-vb' />
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

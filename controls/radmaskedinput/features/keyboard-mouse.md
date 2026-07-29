@@ -31,12 +31,7 @@ The __SpinMode__ property is enumeration that exposed the following values:
 * __None__ - disables the spin behavior            
 
 __Example 1: Setting the SpinMode property__
-```XAML
-	<telerik:RadMaskedCurrencyInput Margin="0,5,0,10" 
-	                                Culture="bg-BG"
-	                                Mask="c4"
-	                                SpinMode="PositionAndValue"/>
-```
+<snippet id='radmaskedinput-features-keyboard-mouse-block_1-xaml' />
 
 >The __SpinMode__ property is set by default as follows:
 >	- In __RadMaskedTextInput__ control __SpinMode__ = "__None__"
@@ -69,21 +64,7 @@ Once you turn off the sections tab navigation, you can set up the following prop
 The following snippet demonstrates how both properties can be used to restrict the second __RadMaskedInput__ control from receiving focus. Note that with the following implementation only one __Tab__ (or __Shift + Tab__) key stroke is needed to move the focus form the first control to the third one (or vice versa):        
 
 __Example 2: Setting the IsTabStop and IsEditorTabStop properties__
-```XAML
-	<UserControl 
-	            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	            xmlns:maskedInput="clr-namespace:Telerik.Windows.Controls.MaskedInput;assembly=Telerik.Windows.Controls.Input"
-	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	<StackPanel>
-	    <telerik:RadMaskedTextInput SectionsNavigationMode="None" />
-	    <telerik:RadMaskedTextInput IsTabStop="False"
-	                                SectionsNavigationMode="None"
-	                                maskedInput:MaskedInputExtensions.IsEditorTabStop="False" />
-	    <telerik:RadMaskedTextInput SectionsNavigationMode="None" />
-	</StackPanel>
-	</UserControl>
-```
+<snippet id='radmaskedinput-features-keyboard-mouse-block_2-xaml' />
 
 >The explanations are true when the __SectionsNavigationMode__ property is set to __None__.          
 

@@ -12,9 +12,7 @@ position: 3
 
 This tutorial will walk you through the common tasks of [adding](#Adding-RadRatingItems) and [removing](#Removing-RadRatingItems) __RadRatingItems__ programmatically.			
 
-```XAML
-	<telerik:RadRating x:Name="radRating"/>
-```
+<snippet id='radrating-populating-with-data-populating-in-code-behind-block_1-xaml' />
 
 #### __Figure 1: Result from Example 1__
 ![RadRating](images/rating_default.png)
@@ -29,14 +27,8 @@ In order to add new rating items to a __RadRating__ control, you have to perform
 
 * Add it to the __RadRating__'s __Items__ collection					
 
-	```C#
-		RadRatingItem ratingItem = new RadRatingItem();
-		this.radRating.Items.Add(ratingItem);
-	```
-	```VB.NET
-		Dim ratingItem As New RadRatingItem()
-		Me.radRating.Items.Add(ratingItem)
-	```
+	<snippet id='radrating-populating-with-data-populating-in-code-behind-block_2-cs' />
+	<snippet id='radrating-populating-with-data-populating-in-code-behind-block_3-vb' />
 
 #### __Figure 2: Result from Example 2__
 ![RadRating](images/rating_wit_6_items.png)
@@ -51,24 +43,8 @@ In order to clear the default rating items and add new you have to add one addit
 
 * Add it to the __RadRating__'s __Items__ collection					
 
-```C#
-	this.radRating.Items.Clear(); 
-	RadRatingItem ratingItem = new RadRatingItem();
-	ratingItem.Content = "1";
-	this.radRating.Items.Add(ratingItem);
-	ratingItem = new RadRatingItem();
-	ratingItem.Content = "2";
-	this.radRating.Items.Add(ratingItem);
-```
-```VB.NET
-	Me.radRating.Items.Clear() 
-	Dim ratingItem As New RadRatingItem()
-	ratingItem.Content = "1"
-	Me.radRating.Items.Add(ratingItem)
-	ratingItem As New RadRatingItem()
-	ratingItem.Content = "2"
-	Me.radRating.Items.Add(ratingItem)
-```
+<snippet id='radrating-populating-with-data-populating-in-code-behind-block_4-cs' />
+<snippet id='radrating-populating-with-data-populating-in-code-behind-block_5-vb' />
 
 #### __Figure 3: Result from Example 3__
 ![RadRating](images/rating_with__2_items.png)
@@ -79,14 +55,5 @@ In order to clear the default rating items and add new you have to add one addit
 
 In order to remove a specific __RadRatingItem__, you should remove it from the __RadRating__'s __Items__ collection.				
 
-```C#
-	private void RemoveRatingItem( RadRatingItem itemToRemove )
-	{
-	   this.radRating.Items.Remove( itemToRemove );
-	}
-```
-```VB.NET
-	Private Sub RemoveRatingItem(ByVal itemToRemove As RadRatingItem)
-	    Me.radRating.Items.Remove(itemToRemove)
-	End Sub
-```
+<snippet id='radrating-populating-with-data-populating-in-code-behind-block_6-cs' />
+<snippet id='radrating-populating-with-data-populating-in-code-behind-block_7-vb' />

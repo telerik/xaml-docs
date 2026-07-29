@@ -32,6 +32,4 @@ __TabNavigationExtensions.IsTabStop__ attached property indicates whether RadNum
 
 __Example 1: RadNumericUpDown with TabNavigationExtensions.IsTabStop__
 
-```XAML
-	<telerik:RadNumericUpDown telerik:TabNavigationExtensions.IsTabStop="False" />
-```
+<snippet id='radnumericupdown-features-navigation-block_1-xaml' />

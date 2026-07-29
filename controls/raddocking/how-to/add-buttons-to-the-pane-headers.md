@@ -18,19 +18,8 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadDocking.DocumentHost>
-	        <telerik:RadSplitContainer>
-	            <telerik:RadPaneGroup x:Name="radPaneGroup">
-	                <telerik:RadPane Title="Pane 1">
-	                    <TextBlock Text="Some simple text here"/>
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	    </telerik:RadDocking.DocumentHost>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-how-to-add-buttons-to-the-pane-headers-block_1-xaml' />
+
 
 ![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_HowTo_AddHeaderButton_020.png)
 
@@ -42,36 +31,15 @@ Create a new data template in your XAML. For example, see the next declaration:
 
 
 
-```XAML
-	<DataTemplate x:Key="TitleTemplate">
-	    <Grid>
-	        <Grid.ColumnDefinitions>
-	            <ColumnDefinition Width="Auto" />
-	            <ColumnDefinition />
-	        </Grid.ColumnDefinitions>
-	        <ContentPresenter Content="{Binding}"
-	                  Margin="0,0,75,0" />
-	        <telerik:RadButton Grid.Column="1"
-	                   Content="Float!" />
-	    </Grid>
-	</DataTemplate>
-```
+<snippet id='raddocking-how-to-add-buttons-to-the-pane-headers-block_2-xaml' />
+
 
 Change your XAML declaration and set the __TitleTemplate__ property of the __RadPane__.
 
 
 
-```XAML
-	<telerik:RadDocking.DocumentHost>
-	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup x:Name="radPaneGroup1">
-	            <telerik:RadPane TitleTemplate="{StaticResource TitleTemplate}" Title="Pane 1">
-	                <TextBlock Text="Some simple text here"/>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking.DocumentHost>
-```
+<snippet id='raddocking-how-to-add-buttons-to-the-pane-headers-block_3-xaml' />
+
 
 Now you will get a result which is the same as the final one. The only difference is that when you click the button nothing will happen.
 
@@ -83,21 +51,8 @@ In order to add a behavior to the button, you should use the command mechanism. 
 
 
 
-```XAML
-	<DataTemplate x:Key="TitleTemplateCommand">
-	    <Grid>
-	        <Grid.ColumnDefinitions>
-	            <ColumnDefinition Width="Auto" />
-	            <ColumnDefinition />
-	        </Grid.ColumnDefinitions>
-	        <ContentPresenter Content="{Binding}"
-	                  Margin="0,0,75,0" />
-	        <telerik:RadButton Grid.Column="1"
-	                   Command="telerik:RadDockingCommands.Floating"
-	                   Content="Float!" />
-	    </Grid>
-	</DataTemplate>
-```
+<snippet id='raddocking-how-to-add-buttons-to-the-pane-headers-block_4-xaml' />
+
 
 >This is the complete list of the exposed __RadDocking__ commands:
 >	* Close

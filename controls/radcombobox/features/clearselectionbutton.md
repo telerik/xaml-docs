@@ -18,9 +18,8 @@ The __RadComboBox__ offers an additional button displayed in the drop-down part,
 
 
 
-```XAML
-	<telerik:RadComboBox ClearSelectionButtonVisibility="Visible" ClearSelectionButtonContent="Clear Selection"/>
-```
+<snippet id='radcombobox-features-clearselectionbutton-block_1-xaml' />
+
 
 ![{{ site.framework_name }} RadComboBox with Clear Selection Button](images/RadComboBox_Features_Selection_010.png)
 

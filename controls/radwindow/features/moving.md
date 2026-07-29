@@ -20,14 +20,8 @@ To disable the moving of the __RadWindow__ via the UI you have to set the __CanM
 
 
 
-```C#
-	RadWindow radWindow = new RadWindow();
-	radWindow.CanMove = false;
-```
-```VB.NET
-	Dim radWindow As New RadWindow()
-	radWindow.CanMove = False
-```
+<snippet id='radwindow-features-moving-block_1-cs' />
+<snippet id='radwindow-features-moving-block_2-vb' />
 
 ## See Also
 

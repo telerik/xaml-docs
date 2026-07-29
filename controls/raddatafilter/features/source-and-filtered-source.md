@@ -22,12 +22,8 @@ When you assign an [IEnumerable](http://msdn.microsoft.com/en-us/library/system.
 
 
 
-```XAML
-	<telerik:RadDataFilter x:Name="radDataFilter" />
-	<telerik:ListBox x:Name="listBox"
-	                    ItemsSource="{Binding FilteredSource, ElementName=radDataFilter}"
-	                    DisplayMemberPath="Name" />
-```
+<snippet id='raddatafilter-features-source-and-filtered-source-block_1-xaml' />
+
 
 ## See Also
 

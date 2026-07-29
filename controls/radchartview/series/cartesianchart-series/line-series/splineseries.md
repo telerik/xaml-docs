@@ -22,29 +22,8 @@ This series is visualized on the screen as a smooth line connecting all data poi
 You can use the following definition to display a simple SplineSeries
 
 __Example 1: Declaring a SplineSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8">
-	<telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:CategoricalAxis/>
-	</telerik:RadCartesianChart.HorizontalAxis>
-	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis />
-	</telerik:RadCartesianChart.VerticalAxis>
-	<telerik:RadCartesianChart.Series>
-		<telerik:SplineSeries>
-			<telerik:SplineSeries.DataPoints>
-				<telerik:CategoricalDataPoint Category="January" Value="2" />
-				<telerik:CategoricalDataPoint Category="February" Value="5" />
-				<telerik:CategoricalDataPoint Category="March" Value="3" />
-				<telerik:CategoricalDataPoint Category="April" Value="10" />
-				<telerik:CategoricalDataPoint Category="May" Value="9" />
-				<telerik:CategoricalDataPoint Category="June" Value="7" />
-				<telerik:CategoricalDataPoint Category="July" Value="1" />
-			</telerik:SplineSeries.DataPoints>
-		</telerik:SplineSeries>
-	</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-line-series-splineseries-example_1_declaring_a_splineseries_in_xaml-xaml' />
+
 
 #### __Figure 1: SplineSeries visual appearance__
 ![radchartview-series-splineseries](images/radchartview-series-splineseries.png)
@@ -63,25 +42,12 @@ You can use the ValueBinding and CategoryBinding properties of the LineSeries to
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public string Category { get; set; }
-        public double Value { get; set; }
-    }
+<snippet id='radchartview-series-cartesianchart-series-line-series-splineseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { Category = "January", Value = 2},
-		//....
-	};
-```	
 
 __Example 3: Specify a SplineSeries in XAML__
-```XAML	
-	<telerik:SplineSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value" />
-```
+<snippet id='radchartview-series-cartesianchart-series-line-series-splineseries-example_3_specify_a_splineseries_in_xaml-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -90,9 +56,8 @@ __Example 3: Specify a SplineSeries in XAML__
 The spline-type series provide two properties allowing to control the additional points calculated for the spline of the line. The tension is controlled via the `SplineTension` property. The tension works with relative values between 0 and 1. The default tension is set to `0.5d`.
 
 __Example 4: Setting SplineTension__
-```XAML	
-	 <telerik:SplineSeries SplineTension="0.4" />
-```
+<snippet id='radchartview-series-cartesianchart-series-line-series-splineseries-example_4_setting_splinetension-xaml' />
+
 
 __Spline tension 0.8 (left) and 0.4 (right)__
 
@@ -101,9 +66,8 @@ __Spline tension 0.8 (left) and 0.4 (right)__
 Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calculated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.35. The default value is `0.03d`.
 
 __Example 5: Setting SplinePointsDistanceFactor__
-```XAML	
-	 <telerik:SplineSeries SplinePointsDistanceFactor="0.18" />
-```
+<snippet id='radchartview-series-cartesianchart-series-line-series-splineseries-example_5_setting_splinepointsdistancefactor-xaml' />
+
 
 __SplinePointsDistanceFactor set to 0.18__
 

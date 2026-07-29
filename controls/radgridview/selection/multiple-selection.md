@@ -14,21 +14,15 @@ __RadGridView__ allows users to select more than one item from the displayed dat
 
 __Example 1: Set SelectionMode__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                         SelectionMode="Extended">
-	    <!--...-->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-selection-multiple-selection-example_1_set_selectionmode-xaml' />
+
 
 __Example 1: Set SelectionMode__
 
-```C#
-	this.radGridView.SelectionMode = System.Windows.Controls.SelectionMode.Extended;
-```
-```VB.NET
-	Me.radGridView.SelectionMode = System.Windows.Controls.SelectionMode.Extended
-```
+<snippet id='radgridview-selection-multiple-selection-example_1_set_selectionmode-cs' />
+
+<snippet id='radgridview-selection-multiple-selection-example_1_set_selectionmode-vb' />
+
 
 The __Multiple__ value of the __SelectionMode__ enumeration allows the user to add an item to the selection just by clicking on it. It will be removed when it gets clicked again.
 
@@ -42,20 +36,15 @@ You can access all selected rows (or data items) through the __SelectedItems__ c
 
 __Example 2: Use the SelectedItems property__
 
-```XAML
-	<ListBox x:Name="listBoxSelectedItems"
-	 DisplayMemberPath="Name"
-	 ItemsSource="{Binding SelectedItems, ElementName=radGridView}" />
-```
+<snippet id='radgridview-selection-multiple-selection-example_2_use_the_selecteditems_property-xaml' />
+
 
 __Example 2: Use the SelectedItems property__
 
-```C#
-	listBoxSelectedItems.ItemsSource = this.radGridView.SelectedItems;
-```
-```VB.NET
-	listBoxSelectedItems.ItemsSource = Me.radGridView.SelectedItems
-```
+<snippet id='radgridview-selection-multiple-selection-example_2_use_the_selecteditems_property-cs' />
+
+<snippet id='radgridview-selection-multiple-selection-example_2_use_the_selecteditems_property-vb' />
+
 
 >When multiple items are selected the __SelectedItem__ property has the value of the first selected one.
 

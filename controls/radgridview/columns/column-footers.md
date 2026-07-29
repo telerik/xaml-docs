@@ -15,19 +15,15 @@ RadGridView allows you to display additional information which applies to the co
 By default, column footers are hidden and in order to make them visible you have to set the __ShowColumnFooters__ property to __True__.
 
 __Example 1: Show column footers__
-```XAML
-	<telerik:RadGridView ShowColumnFooters="True">
-	  <!-- ... -->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-column-footers-example_1_show_column_footers-xaml' />
+
 
 To set the value of the footer cells, you can use the __Footer__ property of the columns.
 
 __Example 2: Set the content of the footer cells__
 
-```XAML
-	<telerik:GridViewDataColumn Header="ID" DataMemberBinding="{Binding EmployeeID}" Footer="Footer cell" />
-```
+<snippet id='radgridview-columns-column-footers-example_2_set_the_content_of_the_footer_cells-xaml' />
+
 
 #### Figure 1: RadGridView with footer cells
 
@@ -37,20 +33,8 @@ Because it is of type object, you are not limited to just using plain text. For 
 
 __Example 3: Adding an image to the footer content__
 
-```XAML
-	<telerik:GridViewDataColumn Header="ID" DataMemberBinding="{Binding EmployeeID}">
-	  	<telerik:GridViewDataColumn.Footer>
-			<Grid>
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="Auto" />
-					<ColumnDefinition />
-				</Grid.ColumnDefinitions>
-				<Image Stretch="None" Source="../../Images/User.png" Margin="0,0,5,0" />
-				<TextBlock Text="The Id of the employee" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Column="1" />
-			</Grid>
-	  	</telerik:GridViewDataColumn.Footer>
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-columns-column-footers-example_3_adding_an_image_to_the_footer_content-xaml' />
+
 
 #### Figure 2: Image in the footer cell
 
@@ -62,13 +46,8 @@ Column footers are also used to display aggregated information on the data displ
 
 __Example 4: Adding an aggregate function to a column__
 
-```XAML
-	<telerik:GridViewDataColumn Header="ID" DataMemberBinding="{Binding EmployeeID}"> 
-		<telerik:GridViewDataColumn.AggregateFunctions> 
-			<telerik:CountFunction Caption="Count:	" /> 
-		</telerik:GridViewDataColumn.AggregateFunctions> 
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-columns-column-footers-example_4_adding_an_aggregate_function_to_a_column-xaml' />
+
 
 #### Figure 3: Footer cell with aggregate results
 

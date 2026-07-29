@@ -65,34 +65,14 @@ To get the region of cells that are currently selected, first you need to get th
 The `Selection` class also exposes an `ActiveCell` property that designates the current active cell.
 
 __Change ActiveCellMode to Edit__  
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-    selection.ActiveCellMode = ActiveCellMode.Edit;
-```
-```VB.NET
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    selection.ActiveCellMode = ActiveCellMode.Edit
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_1-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_2-vb' />
 
 ## Getting the Values of the Selected Cells
 
 The selection can be accessed via the `Selection` property of the worksheet editor object. To get the values, call the `GetValue` method of each cell in the selection.
 
-```csharp
-	Selection selection = this.spreadsheet.ActiveWorksheetEditor.Selection;
-	CellRange selectedCells = selection.ActiveRange.SelectedCellRange;
-	CellIndex startIndex = selectedCells.FromIndex;
-	CellIndex endIndex = selectedCells.ToIndex;
-	
-	for (int column = start.ColumnIndex; column <= end.ColumnIndex; column++)
-	{
-		for (int row = start.RowIndex; row <= end.RowIndex; row++)
-		{
-			object value = worksheet.Cells[row, column].GetValue().Value.RawValue;
-			// execute your logic here
-		}
-	}
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_3-cs' />
 
 
 ## Changing the UI Selection
@@ -108,28 +88,16 @@ One of the `Select()` overloads provides a `CellIndex` parameter that points to 
 ![Rad Spreadsheet UI Selection 02](images/RadSpreadsheet_UI_Selection_02.png)  
 
 __Using the clearSelection parameter of Select()__  
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-    selection.Select(new CellIndex(0, 0), false);
-```
-```VB.NET
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    selection.Select(New CellIndex(0, 0), False)
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_4-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_5-vb' />
 
 ![Rad Spreadsheet UI Selection 03](images/RadSpreadsheet_UI_Selection_03.png)
 
 The `Selection` class also offers a `Select()` method that takes a `CellRange` object as an argument. The overload selects (or adds to the current selection) the designated region and makes the top left cell to be the active one.         
 
 __Select the C3:D4 cell region__  
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-    selection.Select(new CellRange(0, 0, 2, 2));
-```
-```VB.NET  
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    selection.Select(New CellRange(0, 0, 2, 2))
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_6-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_7-vb' />
 
 Another overload of the Select() method takes as input two **CellIndex** instances that indicate the start and the end cell indexes of the selected region. Note that unlike the Select(CellRange) method, this overload makes the cell with the start CellIndex the active one. The following snippet illustrates how use the method to select the region B7 to E3. Note that the active cell is B7, not B3.
 
@@ -138,14 +106,8 @@ Another overload of the Select() method takes as input two **CellIndex** instanc
 The following example shows how to achieve the result from the above image through the RadSpreadsheet API.
 
 __Select a region with a specific active cell__  
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-    selection.Select(6, 1, 2, 4);
-```
-```VB.NET
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    selection.Select(6, 1, 2, 4)
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_8-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_9-vb' />
 
 A similar logic applies to the `Select` method overloads which take shape objects as parameters.        
 
@@ -154,32 +116,14 @@ A similar logic applies to the `Select` method overloads which take shape object
 The result from the image can be achieved with the following sample code.
 
 __Select a shape__   
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-
-    FloatingImage image = this.radSpreadsheet.ActiveWorksheet.Images.First() as FloatingImage;
-    selection.Select(image);
-```
-```VB.NET
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    Dim image As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Images.First(), FloatingImage)
-    selection.Select(image)
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_10-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_11-vb' />
 
 If you would like to select the second image while deselecting the first one, this can be achieved with the following code:        
 
 __Select a shape and clear the previous selection__  
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-    
-    FloatingImage image2 = this.radSpreadsheet.ActiveWorksheet.Images.ElementAt(1) as FloatingImage;
-    selection.Select(image2, true);
-```
-```VB.NET    
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    Dim image2 As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Images.ElementAt(1), FloatingImage)
-    selection.Select(image2, True)
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_12-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_13-vb' />
 
 ![Rad Spreadsheet UI Selection 06](images/RadSpreadsheet_UI_Selection_06.png)
 
@@ -190,20 +134,8 @@ Note that even though the `clearSelection` parameter is set to `true`, this will
 The `Selection` class exposes a `SelectAll()` method that selects all cells in the worksheet. Keep in mind, though, that each worksheet contains over 16 000 columns and 1 000 000 rows. That said, performing a computationally intensive task on all cells may slow down the performance of `RadSpreadsheet`. To avoid such issues in performance crucial scenarios we highly recommend you to select only the `UsedCellRange` of the worksheet. This is a property of `Worksheet` class that returns a `CellRange` starting from __A1__ to the bottom-right cell that comprises all cells containing a value. You can read more about it in the [Iterating Used Cells](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/iterating-used-cells) topic.        
         
 __Using SelectAll() and UsedCellRange with the Select(CellRange) method__  
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-    selection.SelectAll();
-
-    CellRange usedRange = this.radSpreadsheet.ActiveWorksheet.UsedCellRange;
-    selection.Select(usedRange);
-```
-```VB.NET
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    selection.SelectAll()
-
-    Dim usedRange As CellRange = Me.radSpreadsheet.ActiveWorksheet.UsedCellRange
-    selection.Select(usedRange)
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_14-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_15-vb' />
 
 ## Selection Events
 
@@ -222,36 +154,14 @@ __Using SelectAll() and UsedCellRange with the Select(CellRange) method__
 * `SelectionTypeChanged`&mdash;Raised when the active selection changes between cell selection and shape selection.
 
 __Subscribe to SelectionChanged__  
-```C#
-    this.radSpreadsheet.ActiveWorksheetEditor.Selection.SelectionChanged += this.Selection_SelectionChanged;
-```
-```VB.NET
-    Me.radSpreadsheet.ActiveWorksheetEditor.Selection.SelectionChanged += Me.Selection_SelectionChanged
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_16-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_17-vb' />
 
 In some scenarios when you make a complex selection and want an event to be fired only once (at the end of this complex selection) it is convenient to use `BeginUpdate` and `EndUpdate` methods.        
 
 __Make a complex selection from three parts while triggering SelectionChanged only once__  
-```C#  
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-    selection.BeginUpdate();
-
-    selection.Select(new CellRange(4, 3, 8, 5));
-    selection.Select(new CellRange(5, 2, 3, 3), clearSelection: false);
-    selection.Select(new CellIndex(2, 1), clearSelection: false);
-
-    selection.EndUpdate();
-```
-```VB.NET
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    selection.BeginUpdate()
-
-    selection.Select(New CellRange(4, 3, 8, 5))
-    selection.Select(New CellRange(5, 2, 3, 3), clearSelection:=False)
-    selection.Select(New CellIndex(2, 1), clearSelection:=False)
-
-    selection.EndUpdate()
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_18-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_19-vb' />
 
 ## Saving and Restoring the Selection
 
@@ -260,28 +170,8 @@ With the Spreadsheet API you have the ability to save the current selection in a
 The following example makes a single `CellRange` selection and saves it in a `SelectionState` object. After adding some new cells to the selection the old selection is restored through the `RestoreSelectionState` method        
 
 __Save and restore Selection__  
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-    selection.Select(new CellRange(4, 3, 8, 5));
-
-    SelectionState selectionState = selection.CreateSelectionState();
-
-    selection.Select(new CellRange(5, 2, 3, 3), clearSelection: false);
-    selection.Select(new CellIndex(2, 1), clearSelection: false);
-
-    selection.RestoreSelectionState(selectionState);
-```
-```VB.NET
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    selection.Select(New CellRange(4, 3, 8, 5))
-
-    Dim selectionState As SelectionState = selection.CreateSelectionState()
-
-    selection.Select(New CellRange(5, 2, 3, 3), clearSelection:=False)
-    selection.Select(New CellIndex(2, 1), clearSelection:=False)
-
-    selection.RestoreSelectionState(selectionState)
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_20-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_21-vb' />
 
 ## Filling the Selection with Data
 
@@ -316,18 +206,8 @@ With the Spreadsheet API you have the ability to listen and to manipulate the au
 * `IsEnabledChanged`&mdash;Occurs when the IsEnabled is changed.
 
 __Disable Fill Selection__  
-```C#
-    Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
-
-    FillSelection fillSelection = selection.FillSelection;
-    fillSelection.IsEnabled = false;
-```
-```VB.NET
-    Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    
-    Dim fillSelection As FillSelection = selection.FillSelection
-    fillSelection.IsEnabled = False
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_22-cs' />
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_23-vb' />
 
 ## Using Selection to Complete Formulas
 
@@ -352,22 +232,12 @@ The current region concept is represented by a `CellRange` object that contains 
 The range can be accessed with the `CurrentRegion` property of the `Selection` instance.
 
 __Getting the current region__  
-```C#
-	Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection; 
-	CellRange currentRegion = selection.CurrentRegion;
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_24-cs' />
 
 To select the current region, call the `SelectCurrentRegion` method of the `CellPosition` instance.
 
 __Selecting the current region programmatically__  
-```C#
-	Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection; 
-	CellPosition activePosition = selection.ActiveRange.ActivePosition;
-	
- 	bool result = activePosition.SelectCurrentRegion();
- 	//or
-  	selection.Select(selection.CurrentRegion);
-```
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_25-cs' />
 
 The current region can be selected also using the `Ctrl+Shift+*` keyboard combination.
 
@@ -375,7 +245,4 @@ The current region can be selected also using the `Ctrl+Shift+*` keyboard combin
 
 The header click selection will selected the corresponding row or column only. Setting the `SpreadsheetSelectionExtensions.ExpandHeaderSelectionToMergedRange` attached property to `True` will automatically expand the selection to adjacent headers, if the clicked row/column contains merged cells.
 
-```XAML
-<telerik:radSpreadsheet spreadsheetUtils:SpreadsheetSelectionExtensions.ExpandHeaderSelectionToMergedRange="True" />
-```
-
+<snippet id='radspreadsheet-features-ui-working-with-selection-block_26-xaml' />

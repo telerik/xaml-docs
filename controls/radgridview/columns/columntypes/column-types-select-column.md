@@ -14,14 +14,8 @@ The __GridViewSelectColumn__ derives from [GridViewColumn]({%slug radgridview-co
 
 __Example 1: Defining GridViewSelectColumn in XAML__
 
-```XAML
-	<telerik:RadGridView AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewSelectColumn />
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-select-column-example_1_defining_gridviewselectcolumn_in_xaml-xaml' />
+
 
 #### __Figure 1: The GridViewSelectColumn__
 
@@ -35,15 +29,8 @@ If you set RadGridView's [**SelectionMode**]({%slug gridview-multiple-selection%
 
 __Example 2: Define GridViewDataColumn with Extended SelectionMode__
 
-```XAML
-	<telerik:RadGridView AutoGenerateColumns="False"
-	                 SelectionMode="Extended">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewSelectColumn />
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-select-column-example_2_define_gridviewdatacolumn_with_extended_selectionmode-xaml' />
+
 
 #### __Figure 2: The GridViewSelectColumn with Extended SelectionMode__
 
@@ -59,22 +46,13 @@ To style the respective checkboxes, you can use the two properties of type __sty
 
 __Example 3: Creating appropriate styles__
 
-```XAML
-	<Style x:Key="CheckBoxStyle" TargetType="CheckBox">
-	    <Setter Property="Background" Value="Red" />
-	</Style>
-	<Style x:Key="HeaderCheckBoxStyle" TargetType="CheckBox">
-	    <Setter Property="Background" Value="Blue" />
-	</Style>
-```
+<snippet id='radgridview-columns-columntypes-column-types-select-column-example_3_creating_appropriate_styles-xaml' />
+
 
 __Example 4: Setting RadGridView's CheckBoxStyle and HeaderCheckBoxStyle__
 
-```XAML
-	<telerik:GridViewSelectColumn CheckBoxStyle="{StaticResource CheckBoxStyle}" 
-	                              HeaderCheckBoxStyle="{StaticResource HeaderCheckBoxStyle}"/>
-	</telerik:RadGridView.Columns>
-```
+<snippet id='radgridview-columns-columntypes-column-types-select-column-example_4_setting_radgridview_s_checkboxstyle_and_headercheckboxstyle-xaml' />
+
 
 **Figure 3** shows the final result:
 

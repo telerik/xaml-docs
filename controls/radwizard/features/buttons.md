@@ -33,13 +33,7 @@ In order to control which buttons to be visible on a specific page you can use t
 Here is an example of setting the __ButtonsVisibilityMode__ property of the __WizardPage__ to show several buttons (__Example 1__). 
 
 __Example 1: Setting the ButtonsVisibilityMode property of the WizardPage manually in XAML__
-```XAML
-	<telerik:RadWizard x:Name="radWizard" >
-		<telerik:RadWizard.WizardPages>
-			<telerik:WizardPage ButtonsVisibilityMode="Help,Next,Cancel"/>
-		</telerik:RadWizard.WizardPages>
-	</telerik:RadWizard>
-```
+<snippet id='radwizard-features-buttons-block_1-xaml' />
 
 ## Control which buttons to be active per page 
 
@@ -53,13 +47,7 @@ In order to control which buttons to be active on a specific page you can use th
 Here is an example of setting the __AllowHelp__ property to a __WizardPage__ (__Example 2__):
 
 __Example 2: Setting the AllowHelp property of the WizardPage__ 
-```XAML
-	<telerik:RadWizard x:Name="radWizard" >
-		<telerik:RadWizard.WizardPages>
-			<telerik:WizardPage AllowHelp="True" />
-		</telerik:RadWizard.WizardPages>
-	</telerik:RadWizard>
-```
+<snippet id='radwizard-features-buttons-block_2-xaml' />
 
 For more information on the default values of these properties for the different pages you can refer to the [Wizard Pages]({%slug wizard-pages%}) article.
 

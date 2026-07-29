@@ -16,14 +16,7 @@ You can configure the tooltip that is displayed when the user hovers over the ic
 To display a native tooltip, set the __UseNativeTooltip__ property as demonstrated in __Example 1__. When this property is **True** the ToString() value of the **TooltipContent** will be shown in the tooltip.
 
 __Example 1: Setting TooltipContent__
-```XAML
-    
-    <telerik:RadNotifyIcon
-            x:Name="icon"
-            TooltipContent="My tooltip"
-            UseNativeTooltip="True">
-    </telerik:RadNotifyIcon>
-```
+<snippet id='radnotifyicon-features-tooltip-block_1-xaml' />
 
 #### __Figure 1: RadNotifyIcon with tooltip__
 
@@ -36,20 +29,7 @@ __Example 1: Setting TooltipContent__
 The RadNotifyIcon provides a default TooltipContentTemplate that will be styled according to your theme. You can also customize it as per your requirements. The DataContext inside the __TooltipContentTemplate__ property will be whatever is set to the __TooltipContent__. 
 
 __Example 2: Setting TooltipContent and TooltipContentTemplate__
-```XAML
-    
-    <telerik:RadNotifyIcon
-        x:Name="icon"
-        TooltipContent="My styled tooltip">
-        <telerik:RadNotifyIcon.TooltipContentTemplate>
-            <DataTemplate>
-                <Border Background="Bisque">
-                    <TextBlock Text="{Binding}" Padding="10"/>
-                </Border>
-            </DataTemplate>
-        </telerik:RadNotifyIcon.TooltipContentTemplate>
-    </telerik:RadNotifyIcon>
-```
+<snippet id='radnotifyicon-features-tooltip-block_2-xaml' />
 
 #### __Figure 2: RadNotifyIcon with customized tooltip__
 
@@ -60,14 +40,8 @@ __Example 2: Setting TooltipContent and TooltipContentTemplate__
 The __IsTooltipOpen__ property allows you to check whether a styled tooltip is currently open. 
 
 __Example 3: Using the IsTooltipOpen property__
-```C#
-
-    var isOpen = this.icon.IsTooltipOpen;
-```
-```VB.NET
-
-    Dim isOpen = Me.icon.IsTooltipOpen
-```
+<snippet id='radnotifyicon-features-tooltip-block_3-cs' />
+<snippet id='radnotifyicon-features-tooltip-block_3-vb' />
 
 ## See Also 
 

@@ -30,42 +30,17 @@ If you want to implement multi-column grouping you just have to define __GroupDe
 
 
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                AutoGenerateColumns="False">
-	    <telerik:RadGridView.GroupDescriptors>
-	        <telerik:GroupDescriptor Member="Country"
-	                            SortDirection="Ascending" />
-	        <telerik:GroupDescriptor Member="Title"
-	                            SortDirection="Ascending" />
-	    </telerik:RadGridView.GroupDescriptors>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-grouping-multiple-column-grouping-block_1-xaml' />
+
 
 This can be done at run time via managed code too:
 
 
 
-```C#
-	GroupDescriptor countryDescriptor = new GroupDescriptor();
-	countryDescriptor.Member = "Country";
-	countryDescriptor.SortDirection = ListSortDirection.Ascending;
-	this.radGridView.GroupDescriptors.Add(countryDescriptor);
-	GroupDescriptor titleDescriptor = new GroupDescriptor();
-	titleDescriptor.Member = "Title";
-	titleDescriptor.SortDirection = ListSortDirection.Ascending;
-	this.radGridView.GroupDescriptors.Add(titleDescriptor);
-```
-```VB.NET
-	Dim countryDescriptor As New GroupDescriptor()
-	countryDescriptor.Member = "Country"
-	countryDescriptor.SortDirection = ListSortDirection.Ascending
-	Me.radGridView.GroupDescriptors.Add(countryDescriptor)
-	Dim titleDescriptor As New GroupDescriptor()
-	titleDescriptor.Member = "Title"
-	titleDescriptor.SortDirection = ListSortDirection.Ascending
-	Me.radGridView.GroupDescriptors.Add(titleDescriptor)
-```
+<snippet id='radgridview-grouping-multiple-column-grouping-block_2-cs' />
+
+<snippet id='radgridview-grouping-multiple-column-grouping-block_2-vb' />
+
 
 The result is the same as if the user has dragged and dropped the desired columns into the grouping area:
 

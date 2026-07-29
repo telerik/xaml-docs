@@ -30,22 +30,7 @@ This is an example how to subscribe the event and handle the exception if there 
 
 
 
-```C#
-	        private void LoadFromUri(object sender, System.Windows.RoutedEventArgs e)
-	        {
-	            this.pdfViewer.DocumentSource = new PdfDocumentSource(new System.Uri("PdfViewerDemo;component/SampleData/Sample.pdf", System.UriKind.Relative));
-	            this.pdfViewer.DocumentSource.OnException += DocumentSource_OnException;
-	        }
-	
-	        private void DocumentSource_OnException(object sender, OnExceptionEventArgs e)
-	        {
-	            NotSupportedFilterException filterException = e.Exception as NotSupportedFilterException;
-	            if (filterException != null)
-	            {
-	                // The document contains a filter which is not supported.
-	            }
-	        }
-```
+<snippet id='radpdfviewer-document-model-exceptionhandling-block_1-cs' />
 
 
 
@@ -80,4 +65,3 @@ The __Telerik.Windows.Documents.Fixed.OnExceptionEventArgs__ has an Exception pr
 Since R3 2020 __RadPdfViewer__ uses the model of the [RadPdfProcessing] (https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. This means that the document loading is handled by the library and RadPdfViewer is no longer responsible for the exception handling. More information about the exception handling in RadPdfProcessing library is available here: [Handling Exceptions in RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/handling-document-exceptions) 
 
 {% endif %}
-

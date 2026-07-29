@@ -24,9 +24,8 @@ You can either have an Index-based or DateTime sampling.
 The sampling engine does not detect/determine whether the datapoints will be on similar pixel coordinates. Instead, it visualizes a subset of the original data. Determining the number of DataPoints to be displayed is done by setting the __SamplingThreshold__ property of the ChartDataSource. For example, if you have 1000 points, 95% of which are clustered together, and you choose a sampling threshold of 300 points, 95% of these 300 points will be clustered as well.                
 
 __Example 1: Defining ChartDataSource__
-```XAML
-	<telerik:ChartDataSource x:Name="ChartDataSource1" ItemsSource="{Binding Data}" SamplingThreshold="300"/>
-```
+<snippet id='radchartview-populating-with-data-chartdatasource-example_1_defining_chartdatasource-xaml' />
+
 
 ## DateTime sampling
 
@@ -37,133 +36,18 @@ The following example demonstrates both properties in action.
 We'll create BarSeries and SplineSeries with DateTimeCategorical Horizontal Axis, bound via the ChartDataSource control:
 
 __Example 2: Defining the chart and binding the sampling source__
-```XAML
-	<telerik:ChartDataSource x:Name="ChartDataSource1"
-								ItemsSource="{Binding Data}"
-								SamplingUnit="Day" 
-								SamplingUnitInterval="5"/>
-	
-	<telerik:RadCartesianChart x:Name="RadChart1">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:DateTimeCategoricalAxis LabelFormat="dd/MMM"
-												DateTimeComponent="Ticks"/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:BarSeries ShowLabels="True"
-							CategoryBinding="Time"
-							ValueBinding="Value"
-							ItemsSource="{Binding ElementName=ChartDataSource1}">
-		</telerik:BarSeries>
-		<telerik:SplineSeries CategoryBinding="Time" ValueBinding="Value"  ItemsSource="{Binding ElementName=ChartDataSource1}" />
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-populating-with-data-chartdatasource-example_2_defining_the_chart_and_binding_the_sampling_source-xaml' />
+
 
 Note how the ItemsSource property of the series is bound to the ChartDataSource and not to the collection of business objects so called Data directly. 
 
 In code-behind create the collection of business objects and register it as DependencyProperty by inheriting the DependencyObject class:
 
 __Example 3: Creating the models__
-```C#
-	 public class SimpleViewModel : DependencyObject
-	{
-		   Random r = new Random();
-		/// <summary>
-		/// Identifies the <see cref="Data"/> dependency property.
-		/// </summary>
-		public static readonly DependencyProperty DataProperty = DependencyProperty.Register("Data",
-			typeof(ObservableCollection<SalesInfo>),
-			typeof(SimpleViewModel),
-			new PropertyMetadata(null));
+<snippet id='radchartview-populating-with-data-chartdatasource-example_3_creating_the_models-cs' />
 
-		public RadObservableCollection<SalesInfo> Data
-		{
-			get
-			{
-				return (RadObservableCollection<SalesInfo>)this.GetValue(DataProperty);
-			}
-			set
-			{
-				this.SetValue(DataProperty, value);
-			}
-		}
+<snippet id='radchartview-populating-with-data-chartdatasource-example_3_creating_the_models-vb' />
 
-		public SimpleViewModel()
-		{
-			var data = new RadObservableCollection<SalesInfo>();
-
-			DateTime startDate = new DateTime(2013, 5, 1);
-			
-			for (int i = 0; i < 20; i += 1)
-			{
-				data.Add(new SalesInfo() { Time = startDate.AddDays(i), Value = i });
-			}
-
-			this.Data = data;
-		}
-	}
-
-	public class SalesInfo
-	{
-		public DateTime Time { get; set; }
-		public int Value { get; set; }
-	}
-```
-```VB.NET
-	Public Class SimpleViewModel
-	 Inherits DependencyObject
-		   Private r As New Random()
-		''' <summary> '''
-		''' Identifies the <see cref="Data"/> dependency property. '''
-		''' </summary> '''
-		Public Shared ReadOnly DataProperty As DependencyProperty = DependencyProperty.Register("Data", GetType(ObservableCollection(Of SalesInfo)), GetType(SimpleViewModel), New PropertyMetadata(Nothing))
-
-		Public Property Data() As RadObservableCollection(Of SalesInfo)
-			Get
-				Return CType(Me.GetValue(DataProperty), RadObservableCollection(Of SalesInfo))
-			End Get
-			Set(ByVal value As RadObservableCollection(Of SalesInfo))
-				Me.SetValue(DataProperty, value)
-			End Set
-		End Property
-
-		Public Sub New()
-			Dim data = New RadObservableCollection(Of SalesInfo)()
-
-			Dim startDate As New DateTime(2013, 5, 1)
-
-			For i As Integer = 0 To 19
-				data.Add(New SalesInfo() With {.Time = startDate.AddDays(i), .Value = i })
-			Next
-
-			Me.Data = data
-		End Sub
-	End Class
-		
-	Public Class SalesInfo
-		Dim _time As Date
-		Dim _value As Int
-
-		Public Property [Time]() As DateTime
-			Get
-				Return Me._time
-			End Get
-			Set(value As DateTime)
-				Me._time = value
-			End Set
-		End Property
-
-		Public Property Value() As Int
-			Get
-				Return Me._value
-			End Get
-			Set(value As Double)
-				Me._value = value
-			End Set
-		End Property
-	End Class
-```
 
 By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 4 categories, where each category represents a period of 5 days. The result is shown on the image below:
 ![Rad Chart View-chart chartdatasource](images/RadChartView-chart_chartdatasource.PNG)
@@ -187,46 +71,14 @@ For that purpose you should inherit from the specific ChartSeries class that you
 Below you'll find a sample where this is demonstrated. Note that the datasource is the same as the one used in the previous example.                
 
 __Example 4: Defining the chart and binding the sampling source__
-```XAML
-	<telerik:ChartDataSource x:Name="ChartDataSource1"
-								ItemsSource="{Binding Data}"
-								SamplingUnit="Day" 
-								SamplingUnitInterval="5"/>
-	
-	<telerik:RadCartesianChart x:Name="RadChart1">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:DateTimeCategoricalAxis LabelFormat="dd/MMM"
-												DateTimeComponent="Ticks"/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-	    <local:MyBarSeries ShowLabels="True"
-							CategoryBinding="Time"
-							ValueBinding="Value"
-							ItemsSource="{Binding ElementName=ChartDataSource1}">
-	    </local:MyBarSeries>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-populating-with-data-chartdatasource-example_4_defining_the_chart_and_binding_the_sampling_source-xaml' />
+
 
 __Example 5: Create custom series and override its aggregate function__
-```C#
-	public class MyBarSeries : BarSeries
-	{
-	    protected override ChartAggregateFunction GetValueAggregateFunction()
-	    {
-	        return new ChartMinFunction();
-	    }
-	}
-```
-```VB.NET
-	Public Class MyBarSeries
-		Inherits BarSeries
-		Protected Overrides Function GetValueAggregateFunction() As ChartAggregateFunction
-			Return New ChartMinFunction()
-		End Function
-	End Class
-```
+<snippet id='radchartview-populating-with-data-chartdatasource-example_5_create_custom_series_and_override_its_aggregate_function-cs' />
+
+<snippet id='radchartview-populating-with-data-chartdatasource-example_5_create_custom_series_and_override_its_aggregate_function-vb' />
+
 
 > If you are using the [NoXaml]({%slug xaml-vs-noxaml%}) dlls, you should base the style of the custom series on the default one like so `<Style TargetType="local:MyBarSeries" BasedOn="{StaticResource BarSeriesStyle}" />`, otherwise a "No data to plot" message will be shown.
 
@@ -240,10 +92,8 @@ The chart's [DataPoint]({%slug radchartview-getting-started-data-point%}) models
 __DataPointSamplingInfo__ is IEnumerable and you can get the aggregated data items using its indexer.
 
 __Example 6: Getting data item from the sampling result__
-```C#
-	DataPointSamplingInfo samplingInfo = (DataPointSamplingInfo)dataPoint.DataItem;
-	object dataItem = samplingInfo[0];
-```
+<snippet id='radchartview-populating-with-data-chartdatasource-example_6_getting_data_item_from_the_sampling_result-cs' />
+
 
 You can also get the aggregated values of the DataPoint for each axis using the __AggregateResultCollection__ property of DataPointSamplingInfo. 
 

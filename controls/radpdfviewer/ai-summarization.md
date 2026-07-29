@@ -68,136 +68,54 @@ In this case, you should still install the third party AI-related libraries (lik
 
 The AI summarization is represented by a RadChat component that allows you to craft prompts and recieve reponses from the corresponding AI service. To the chat is part of the [RadPdfViewerNavigationPane]({%slug radpdfviewer-default-ui%}) control. To enable it, set the `EnableAISummary` property to `true`. This will include an extra tab in the navigation pane.
 
-```XAML
-<telerik:RadPdfViewerNavigationPane x:Name="navigationPane"
-  RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}"                                                
-  EnableAISummary="True"/>
-```
+<snippet id='radpdfviewer-ai-summarization-block_1-xaml' />
 
 ![A picture showing RadPdfViewerNavigationPane with ai summarization tab enabled](images/pdfviewer-ai-summarization-1.png)
 
 Additionally, the [RadPdfViewerToolBar]({%slug radpdfviewer-default-ui%}) provides a button that can be used to show and hide the AI summarization tab from the `RadPdfViewerNavigationPane`. To display the button, set the `HasAISummary` property of the toolbar to `true`. То link the toolbar with the navigation pane, `RadPdfViewerNavigationPane` property of the toolbar should be set as well.
 
-```XAML
-<telerik:RadPdfViewerToolBar HasAISummary="True" 
-    RadPdfViewerNavigationPane="{Binding ElementName=navigationPane}"                             
-	RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}"/>
-```
+<snippet id='radpdfviewer-ai-summarization-block_2-xaml' />
 
 ![A picture showing RadPdfViewerToolBar with ai summarization button shown](images/pdfviewer-ai-summarization-2.png)
 
 The following example shows how to connect the `RadPdfViewerNavigationPane`, the `RadPdfViewerToolBar` and the `RadPdfViewer` components together.
 
-```XAML
-<Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition Height="Auto"/>
-        <RowDefinition Height="*"/>
-    </Grid.RowDefinitions>
-
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="Auto"/>
-        <ColumnDefinition Width="*"/>
-    </Grid.ColumnDefinitions>
-
-    <telerik:RadPdfViewerToolBar HasAISummary="True" 
-                                 Grid.ColumnSpan="2"                                                                                                   
-                                 RadPdfViewerNavigationPane="{Binding ElementName=navigationPane}"                                     
-                                 RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}"/>
-    <telerik:RadPdfViewerNavigationPane x:Name="navigationPane" Grid.Row="1"
-                                        RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}"
-                                        EnableAISummary="True" />
-    <telerik:RadPdfViewer x:Name="pdfViewer" 
-                          Grid.Column="1" 
-                          Grid.Row="1"
-                          DataContext="{Binding CommandDescriptors, ElementName=pdfViewer}"/>
-</Grid>
-```
+<snippet id='radpdfviewer-ai-summarization-block_3-xaml' />
 
 ## Setting up the AI Provider
 
 To connect the chat to an AI service, one of the built-in UI providers can be used. This setting is adjusted via the view model of the `RadPdfViewerNavigationPane`.
 The view model is of type `RadPdfViewerNavigationPaneViewModel` which exposes an `ISummaryProvider` property named `SummaryProvider`.
 
-```C#
-// set the aiSummaryProvider beforehand
-this.pdfViewerNavigationPanel.ViewModel.SummaryProvider = aiSummaryProvider;
-```
+<snippet id='radpdfviewer-ai-summarization-block_4-cs' />
 
 ### Using Azure OpenAI Provider
 
 To enable the Azure OpenAI services, use the `AzureOpenAISummaryProvider` class. 
 
-```C#
-string key = "your-azure-openai-key";
-SecureString secureKey = new SecureString();
-foreach (char c in key)
-{
-	secureKey.AppendChar(c);
-}
-
-string endpoint = "https://your-resource-name.openai.azure.com/";
-string model = "model-name"; //ex: "gpt-4o-mini"
-
-var azureOpenAIprovider = new Telerik.Windows.Controls.FixedDocumentViewersUI.AIProviders.AzureOpenAISummaryProvider(secureKey, endpoint, model);
-this.navigationPane.ViewModel.SummaryProvider = azureOpenAIprovider;
-```
+<snippet id='radpdfviewer-ai-summarization-block_5-cs' />
 
 ### Using OpenAI Provider
 
 To enable the OpenAI services, use the `OpenAISummaryProvider` class. 
 
-```C#
-string key = "your-openai-key";
-SecureString secureKey = new SecureString();
-foreach (char c in key)
-{
-	secureKey.AppendChar(c);
-}
-
-string model = "model-name"; //ex: "gpt-4o-mini"
-
-var openAIprovider = new Telerik.Windows.Controls.FixedDocumentViewersUI.AIProviders.OpenAISummaryProvider(secureKey, model);
-this.navigationPane.ViewModel.SummaryProvider = openAIprovider;
-```
+<snippet id='radpdfviewer-ai-summarization-block_6-cs' />
 
 ### Using Ollama AI Provider (Local AI)
 
 To use a local Ollama AI model, utilize the `LlamaSummaryProvider` class. 
 
-```C#
-string endpoint = "localhost server"; //ex: "http://localhost:11434/"
-string model = "model-name"; //ex: "llama3"
-
-var ollamaProvider = new Telerik.Windows.Controls.FixedDocumentViewersUI.AIProviders.LlamaSummaryProvider(endpoint, model);
-this.navigationPane.ViewModel.SummaryProvider = ollamaProvider;
-```
+<snippet id='radpdfviewer-ai-summarization-block_7-cs' />
 
 ### Get Summary Programmatically
 
 To get a summarization of the document programmatically, the `GetSummary` method of the corresponding AI provider can be used.
 
-```C#
-var textDoc = this.pdfViewer.Document.ToSimpleTextDocument(null);
-var summaryProvider = this.navigationPane.ViewModel.SummaryProvider;
-Task.Run(() =>
-{
-	string summary = summaryProvider.GetSummary(textDoc);
-
-	// this is required only if you want to update the WPF UI with the result
-	Application.Current.Dispatcher.Invoke(() =>
-	{
-		// update the UI if needed
-	});
-});
-```
+<snippet id='radpdfviewer-ai-summarization-block_8-cs' />
 
 To pass additional instructions to the prompt, set the `PromptAddition` property of the provider.
 
-```C#
-ISummaryProvider summaryProvider = this.navigationPane.ViewModel.SummaryProvider;
-summaryProvider.PromptAddition = "Be concise and translate the summary to Bulgarian.";
-```
+<snippet id='radpdfviewer-ai-summarization-block_9-cs' />
 
 The summary providers expose also an event called `SummaryResourcesCalculated` which is invoked before the actual summarization process begins (after the `GetSummary` method is invoked), providing information about the estimated resource usage. The `SummaryResourcesCalculatedEventArgs` provides the following properties: 
 
@@ -205,21 +123,13 @@ The summary providers expose also an event called `SummaryResourcesCalculated` w
 * `EstimatedTokensRequired`&mdash; The number of tokens to be processed
 * `ShouldContinueExecution`&mdash; A boolean flag indicating whether to proceed with summarization. The default value is `true`.
 
-```C#
-private void SummarizationProvider_SummaryResourcesCalculated(object? sender, Telerik.Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs e)
-{
-	// set e.ShouldContinueExecution = false; to cancel the summarization process
-}
-```
+<snippet id='radpdfviewer-ai-summarization-block_10-cs' />
 
 ### Adjusting the Max Number of Tokens
 
 The maximum number of tokens allowed is set via the `MaxTokenCount` property of the summary provider.
 
-```C#
-var azureOpenAIprovider = new Telerik.Windows.Controls.FixedDocumentViewersUI.AIProviders.AzureOpenAISummaryProvider(secureKey, endpoint, model);
-azureOpenAIprovider.MaxTokenCount = 1000;
-```
+<snippet id='radpdfviewer-ai-summarization-block_11-cs' />
 
 ## Implementing Custom Summary Provider
 
@@ -227,70 +137,16 @@ Aside from the built-in providers, a custom summarization behavior can be implem
 
 __Very basic summary provider implementation__
 
-```C#
-public class CustomSummaryProvider : ISummaryProvider
-{
-    private string promptAddition = string.Empty;
-    public string PromptAddition { get => promptAddition; set => promptAddition = value; }
-
-    public string AskQuestion(string question, SimpleTextDocument simpleDocument)
-    {
-        string documentText = simpleDocument.Text;
-        // implement custom logic here
-        return "An answer based on the question and the documentText";
-    }
-
-    public string GetSummary(SimpleTextDocument simpleDocument)
-    {
-        string documentText = simpleDocument.Text;
-        // implement custom summarizaiton logic here
-        return "An answer based on the documentText";
-    }
-}
-```
+<snippet id='radpdfviewer-ai-summarization-block_12-cs' />
 
 __Setting the custom summary provider__
 
-```C#
-	this.navigationPane.ViewModel.SummaryProvider = new CustomSummaryProvider();
-```
+<snippet id='radpdfviewer-ai-summarization-block_13-cs' />
 
 ## Customizing the Prompt Suggestions in the Chat
 
 The default suggestions in the chat can be customized by replacing the UI element that displays them. This can be done via the `AdditionalContentTemplate` property of the `PdfChat` control.
 
-```XAML
-<telerik:RadPdfViewerNavigationPane RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}"
-									EnableAISummary="True">
-	<telerik:RadPdfViewerNavigationPane.Resources>
-		<!-- xmlns:conversationalUI="clr-namespace:Telerik.Windows.Controls.ConversationalUI;assembly=Telerik.Windows.Controls.ConversationalUI"  -->
-		<Style TargetType="conversationalUI:PdfChat">
-			<Setter Property="AdditionalContentTemplate">
-				<Setter.Value>
-					<DataTemplate>
-						<telerik:RadExpander DataContext="{Binding DataContext, RelativeSource={RelativeSource AncestorType={x:Type conversationalUI:PdfChat}}}"                                                
-											 IsExpanded="True"
-											 Header="Prompt Suggestions">                                    
-							<telerik:RadExpander.Content>
-								<StackPanel>
-									<telerik:RadButton Command="{Binding SendMessageCommand}"
-													   Content ="Prepare a brief overview for the document." 
-													   CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"                                                                                         
-													   HorizontalAlignment="Left"
-													   Background="#320078D4"/>
-									<telerik:RadButton Command="{Binding SendMessageCommand}" 
-									  				   Content="What is the subject of this document?"                                                                
-													   HorizontalAlignment="Left"
-													   Background="#320078D4"/>
-								</StackPanel>
-							</telerik:RadExpander.Content>
-						</telerik:RadExpander>
-					</DataTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	</telerik:RadPdfViewerNavigationPane.Resources>
-</telerik:RadPdfViewerNavigationPane>
-```
+<snippet id='radpdfviewer-ai-summarization-block_14-xaml' />
 
 ![A picture showing customized pdf viewer summarization chat](images/pdfviewer-ai-summarization-3.png)

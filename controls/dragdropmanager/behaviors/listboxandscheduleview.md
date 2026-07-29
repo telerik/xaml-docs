@@ -16,72 +16,15 @@ Following is an example demonstrating how to convert appointments between a List
 
 * Create the DataConverter:
 
-	```C#
-		public class ScheduleViewToAppointmentConverter : DataConverter
-		{		
-			public override string[] GetConvertToFormats()
-			{
-				return new string[] { typeof(ScheduleViewDragDropPayload).FullName};
-			}
-		
-			public override object ConvertTo(object data, string format)
-			{
-					
-				if (format == typeof(ScheduleViewDragDropPayload).FullName && DataObjectHelper.GetDataPresent(data, typeof(Appointment), false))
-				{
-					var appointments = (IEnumerable)DataObjectHelper.GetData(data, typeof(Appointment), false);
-					if (appointments != null)
-					{
-						return new ScheduleViewDragDropPayload(null, appointments.OfType<IOccurrence>().ToList());
-					}
-				}			
-				return null;
-			}
-		}
-	```
+<snippet id='dragdropmanager-behaviors-listboxandscheduleview-block_1-cs' />
 
 * Add CustomScheduleViewDragDropBehavior class which inherits ScheduleViewDragDropBehavior:      	
 
-	```C#
-		public class CustomScheduleViewDragDropBehavior : ScheduleViewDragDropBehavior
-		{
-			public override IEnumerable<IOccurrence> ConvertDraggedData(object data)
-			{
-				if (DataObjectHelper.GetDataPresent(data, typeof(Appointment), false))
-				{
-					var appointments = DataObjectHelper.GetData(data, typeof(Appointment), true) as IEnumerable;
-					if (appointments != null)
-					{
-						return appointments.OfType<IOccurrence>();
-					}
-				}
-		
-				return base.ConvertDraggedData(data);
-			}
-		}
-	```
+<snippet id='dragdropmanager-behaviors-listboxandscheduleview-block_2-cs' />
 
 * The final configuration of the two controls in XAML should look like:
 
-	```XAML	
-		<telerik:RadScheduleView ...>
-			<telerik:RadScheduleView.ViewDefinitions>
-				<telerik:WeekViewDefinition />
-			</telerik:RadScheduleView.ViewDefinitions>
-			<telerik:RadScheduleView.DragDropBehavior>
-				<local:CustomScheduleViewDragDropBehavior />
-			</telerik:RadScheduleView.DragDropBehavior>
-		</telerik:RadScheduleView>
-		
-		<ListBox ...>
-			<drag:ListBoxDragDrop.DataConverter>
-				<local:ScheduleViewToAppointmentConverter />
-			</drag:ListBoxDragDrop.DataConverter>
-			<drag:ListBoxDragDrop.Behavior>
-				<drag:ListBoxDragDropBehavior />
-			</drag:ListBoxDragDrop.Behavior>	
-		</ListBox>
-	```
+<snippet id='dragdropmanager-behaviors-listboxandscheduleview-block_3-xaml' />
 
 Here is the result:
 

@@ -35,29 +35,12 @@ __RadPivotGrid__ has two properties to control the expand behavior - *RowGroupsE
 
 __Example 1: Set Expand Behavior__
 
-```XAML
-	<pivot:RadPivotGrid x:Name="pivot" DataProvider="{StaticResource LocalDataProvider}">
-	    <pivot:RadPivotGrid.RowGroupsExpandBehavior>
-	        <pivot:GroupsExpandBehavior Expanded="False" UpToLevel="2"/>
-	    </pivot:RadPivotGrid.RowGroupsExpandBehavior>
-	    <pivot:RadPivotGrid.ColumnGroupsExpandBehavior>
-	        <pivot:GroupsExpandBehavior Expanded="False"/>
-	    </pivot:RadPivotGrid.ColumnGroupsExpandBehavior>
-	</pivot:RadPivotGrid>
-```
+<snippet id='radpivotgrid-features-expand-behavior-block_1-xaml' />
 
 __Example 2: Set Expand Behavior in code__
 
-```C#
-	RadPivotGrid pivot = new RadPivotGrid();
-	pivot.RowGroupsExpandBehavior = new GroupsExpandBehavior() { Expanded = false, UpToLevel = 2 };
-	pivot.ColumnGroupsExpandBehavior = new GroupsExpandBehavior() { Expanded = false };
-```
-```VB.NET
-	Dim pivot As New RadPivotGrid()
-	pivot.RowGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False, .UpToLevel = 2}
-	pivot.ColumnGroupsExpandBehavior = New GroupsExpandBehavior() With {.Expanded = False}
-```
+<snippet id='radpivotgrid-features-expand-behavior-block_2-cs' />
+<snippet id='radpivotgrid-features-expand-behavior-block_2-vb' />
 
 ## Change Behavior at Runtime
 
@@ -65,33 +48,7 @@ If you want to collapse all groups in __RadPivotGrid__ you can change the behavi
 
 __Example 3: Change Behavior at Runtime__
 
-```C#
-	public void ExpandGroupsButton_Click(object sender, RoutedEventArgs e)
-	{
-	    (this.pivot.RowGroupsExpandBehavior as GroupsExpandBehavior).Expanded = true;
-	    (this.pivot.ColumnGroupsExpandBehavior as GroupsExpandBehavior).Expanded = true;
-	    this.pivot.DataProvider.Refresh();
-	}
-	
-	private void CollapseGroupsButton_Click(object sender, RoutedEventArgs e)
-	{
-	    (this.pivot.RowGroupsExpandBehavior as GroupsExpandBehavior).Expanded = false;
-	    (this.pivot.ColumnGroupsExpandBehavior as GroupsExpandBehavior).Expanded = false;
-	    this.pivot.DataProvider.Refresh();
-	}
-```
-```VB.NET
-	Public Sub ExpandGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True
-		TryCast(Me.pivot.ColumnGroupsExpandBehavior, GroupsExpandBehavior).Expanded = True
-		Me.pivot.DataProvider.Refresh()
-	End Sub
-	
-	Private Sub CollapseGroupsButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		TryCast(Me.pivot.RowGroupsExpandBehavior, GroupsExpandBehavior).Expanded = False
-		TryCast(Me.pivot.ColumnGroupsExpandBehavior, GroupsExpandBehavior).Expanded = False
-		Me.pivot.DataProvider.Refresh()
-	End Sub
-```
+<snippet id='radpivotgrid-features-expand-behavior-block_3-cs' />
+<snippet id='radpivotgrid-features-expand-behavior-block_3-vb' />
 
 > You can download the [ExpandBehavior](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/ExpandBehavior) demo from our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).

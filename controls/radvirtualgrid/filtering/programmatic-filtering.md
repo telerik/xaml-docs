@@ -31,17 +31,7 @@ It can be provided through the following properties that the event arguments exp
 * `MemberName`&mdash;Gives information regarding the name of the underlying data member. The property can also be set.
 
 __Subscribing to the DataMemberNeeded event__
-```C#
-	private void VirtualGrid_DataMemberNeeded(object sender, DataMemberEventArgs e)
-    {
-        if (e.ColumnIndex == 0)
-        {
-            e.IsFilterable = true;
-            e.DataType = typeof(string);
-            e.MemberName = "Name";
-        }
-    }
-```
+<snippet id='radvirtualgrid-filtering-programmatic-filtering-block_1-cs' />
 
 ## DistinctValuesLoading
 
@@ -54,15 +44,7 @@ Achieving this can be done through the properties of the event arguments:
 * `ItemsSource`&mdash;The property through which the distinct values required for the given column are provided.
 
 __Subscribing to the DistinctValuesLoading event__
-```C#
-	private void VirtualGrid_DistinctValuesLoading(object sender, DistinctValuesLoadingEventArgs e)
-    {
-        if (e.ColumnIndex == 0)
-        {
-            e.ItemsSource = new List<string>() { "Chelsea", "Liverpool", "Arsenal" };
-        }
-    }
-```
+<snippet id='radvirtualgrid-filtering-programmatic-filtering-block_2-cs' />
 
 The end result after providing the needed distinct values will be as shown below.
 
@@ -82,16 +64,7 @@ The event arguments expose the following properties:
 * `DefaultFilterOperator2`&mdash;Gets or sets the second default operator.
 
 __Subscribing to the FilterOperatorsLoading event__
-```C#
-	private void VirtualGrid_FilterOperatorsLoading(object sender, FilterOperatorsLoadingEventArgs e)
-    {
-        if (e.ColumnIndex == 0)
-        {
-            e.DefaultOperator1 = Telerik.Windows.Data.FilterOperator.Contains;
-            e.DefaultOperator2 = Telerik.Windows.Data.FilterOperator.DoesNotContain;
-        }
-    }
-```
+<snippet id='radvirtualgrid-filtering-programmatic-filtering-block_3-cs' />
 
 ## FieldFilterEditorCreated
 
@@ -103,21 +76,7 @@ This can be achieved through the properties of the event arguments:
 * `Editor`&mdash;The default field filter editor can be accessed. Also, this is the property through which a custom filter editor can be applied.
 
 __Subscribing to the FieldFilterEditorCreated event__
-```C#
-	private void VirtualGrid_FieldFilterEditorCreated(object sender, FieldFilterEditorCreatedEventArgs e)
-    {
-        if (e.ColumnIndex == 0)
-        {
-            var editor = new RadWatermarkTextBox();
-            editor.WatermarkContent = "Enter value";
-
-            Binding editorBinding = new Binding("Value") { UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged};
-            BindingOperations.SetBinding(editor, RadWatermarkTextBox.TextProperty, editorBinding);
-
-            e.Editor = editor;
-        }
-    }
-```
+<snippet id='radvirtualgrid-filtering-programmatic-filtering-block_4-cs' />
 
 ## FilterDescriptorsPreparing
 
@@ -134,15 +93,7 @@ The event arguments are of the type of `FilteringEventArgs` and expose the follo
 >important In order for the `FilterDescriptorsPreparing` event to be raised, subscribe to the `DistinctValuesLoading` event and set the `ItemsSource` property of the event arguments.
 
 __Subscribing to the FilterDescriptorsPreparing event__
-```C#
-    private void VirtualGrid_FilterDescriptorsPreparing(object sender, Telerik.Windows.Controls.VirtualGrid.FilteringEventArgs e)
-    {
-        if (e.ColumnIndex == 0)
-        {
-            e.Cancel = true;
-        }
-    }
-```
+<snippet id='radvirtualgrid-filtering-programmatic-filtering-block_5-cs' />
 
 ## FilterDescriptorsPrepared
 
@@ -156,18 +107,7 @@ The event arguments are of the type of `FilteredEventArgs` and expose the follow
 * `ColumnIndex`&mdash;Gets the index of the column that is filtered.
 
 __Subscribing to the FilterDescriptorsPrepared event__
-```C#
-private void VirtualGrid_FilterDescriptorsPrepared(object sender, FilteredEventArgs e) 
-{ 
-    if (e.ColumnIndex == 0) 
-    { 
-        CompositeFilterDescriptorCollection compositeFilterDescriptorCollection = new CompositeFilterDescriptorCollection(); 
-        compositeFilterDescriptorCollection.Add(e.ColumnFilterDescriptor); 
-        var clubs = clubsSource.AsQueryable().Where(compositeFilterDescriptorCollection).ToIList(); 
-        this.VirtualGrid.InitialRowCount = clubs.Count; 
-    } 
-} 
-```
+<snippet id='radvirtualgrid-filtering-programmatic-filtering-block_6-cs' />
 
 Note, that in the example above, the `CompositeFilterDescriptorCollection` is used for filtering the __underlying data source__. For this purpose, the __Where extension method__ which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.queryableextensions#Telerik_Windows_Data_QueryableExtensions_Where_System_Linq_IQueryable_Telerik_Windows_Data_CompositeFilterDescriptorCollection_). After the filtering is evaluated for the data source, the `InitialRowCount` of RadVirtualGrid needs to be set so that it equals the number of items that have passed the filtering criteria.
 

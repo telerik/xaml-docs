@@ -59,24 +59,12 @@ This article will list the key properties provided by the RadBadge control.
 	>To set a custom geometry to the RadBadge control, the BadgeType property needs to be set to __ContentOnly__.
 
 	__Example 1: Set Custom Geometry__
-	```XAML
-		<telerik:RadButton Width="85" Height="30" Content="Notifications"  VerticalAlignment="Center" HorizontalAlignment="Center">
-			<telerik:RadBadge.Badge>
-				<telerik:RadBadge Content="99" BadgeType="ContentOnly" Background="#FFFFC000" Geometry="{telerik:Geometry Type=Oval}" />
-			</telerik:RadBadge.Badge>
-		</telerik:RadButton>
-	```
+	<snippet id='radbadge-key-properties-block_1-xaml' />
 
 	To apply a custom geometry in code-behind, you can use the GeometryFactory.SetGeometry() method.
 
 	__Example 1: Set Custom Geometry In Code__
-	```C#
-		public Example()
-		{
-			this.InitializeComponent();
-			this.badge.Geometry = GeometryFactory.SetGeometry(GeometryType.Hexagon);
-		}
-	```
+	<snippet id='radbadge-key-properties-block_2-cs' />
 		
 	#### Figure 3: Custom Geometries
 	![Telerik Badge Geometries](images/radbadge-key-properties_2.png)
@@ -88,18 +76,5 @@ This article will list the key properties provided by the RadBadge control.
 By default, the RadBadge control is load and change with an animation. The load\change animations are FadeAnimation by default. If you want to change/modify the animations of the RadBadge control you can use the __AnimationManager.AnimationSelector__ attached property. The AnimationName property needs to be specified to either LoadAnimation or ChangeAnimation depending on which animation you want to change/modify.
 
 __Example 2: Modify Badge Animations__
-```C#
-	<telerik:RadButton Width="100" Height="40" Content="Oval" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center">
-		<telerik:RadBadge.Badge>
-			<telerik:RadBadge Content="99"  BadgeType="ContentOnly" FontSize="16" Foreground="Black"  Background="#FFFFC000" Geometry="{telerik:Geometry Type=Oval}" >
-				<telerik:AnimationManager.AnimationSelector>
-					<telerik:AnimationSelector>
-						<telerik:FadeAnimation AnimationName="LoadAnimation" Direction="In" SpeedRatio="0.25"  />
-						<telerik:FadeAnimation AnimationName="ChangeAnimation" Direction="Out" SpeedRatio="0.25"/>
-					</telerik:AnimationSelector>
-				</telerik:AnimationManager.AnimationSelector>
-			</telerik:RadBadge>
-		</telerik:RadBadge.Badge>
-	</telerik:RadButton>
-```
+<snippet id='radbadge-key-properties-example_2_modify_badge_animations-cs' />
 

@@ -14,12 +14,7 @@ __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that pro
 
 __Example 1: Defining CollectionEditor__
 
-```XAML
-	<Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <telerik:CollectionEditor Source="{Binding Players}" 
-	                          Header="Players" />
-	</Grid>
-```
+<snippet id='radpropertygrid-features-collectioneditor-block_1-xaml' />
 
 ![Rad Property Grid Collection Editor](images/RadPropertyGrid_CollectionEditor.png)
 
@@ -64,18 +59,8 @@ The methods listed below identify the logic that is executed when a certain comm
 
 __Example 3: CollectionEditor's executable commands__
 
-```C#
-	void MoveCurrentToNext();
-	void MoveCurrentToPrevious();
-	void Delete();
-	void AddNew();
-```
-```VB.NET
-	Sub MoveCurrentToNext()
-	Sub MoveCurrentToPrevious()
-	Sub Delete()
-	Sub AddNew()
-```
+<snippet id='radpropertygrid-features-collectioneditor-block_2-cs' />
+<snippet id='radpropertygrid-features-collectioneditor-block_2-vb' />
 
 “Can-execute logic” methods
 
@@ -83,18 +68,8 @@ With the help of those methods you can identify whether a certain command can be
 
 __Example 4: CollectionEditor's "can-execute" methods__
 
-```C#
-	bool CanMoveCurrentToNextExecute();
-	bool CanMoveCurrentToPreviousExecute();
-	bool CanDeleteExecute();
-	bool CanAddNewExecute();
-```
-```VB.NET
-	Function CanMoveCurrentToNextExecute() As Boolean
-	Function CanMoveCurrentToPreviousExecute() As Boolean
-	Function CanDeleteExecute() As Boolean
-	Function CanAddNewExecute() As Boolean
-```
+<snippet id='radpropertygrid-features-collectioneditor-block_3-cs' />
+<snippet id='radpropertygrid-features-collectioneditor-block_3-vb' />
 
 ## Designing a custom CommandProvider
 
@@ -102,31 +77,8 @@ The first step is to create your own class that inherits from **CollectionNaviga
 
 __Example 5: Creating a class that provides the custom commands__
 
-```C#
-	public class CustomCommandProvider : CollectionNavigatorBaseCommandProvider
-	{
-	    public CustomCommandProvider() : base(null)
-	    {
-	    }
-	    public CustomCommandProvider(CollectionNavigatorBase collectionEditor)
-	        : base(collectionEditor)
-	    {
-	        this.CollectionNavigator = collectionEditor;
-	    }
-	}
-```
-```VB.NET
-	Public Class CustomCommandProvider
-	    Inherits CollectionNavigatorBaseCommandProvider
-	    Public Sub New()
-	        MyBase.New(Nothing)
-	    End Sub
-	    Public Sub New(ByVal collectionEditor As CollectionNavigatorBase)
-	        MyBase.New(collectionEditor)
-	        Me.CollectionNavigator = collectionEditor
-	    End Sub
-	End Class
-```
+<snippet id='radpropertygrid-features-collectioneditor-block_4-cs' />
+<snippet id='radpropertygrid-features-collectioneditor-block_4-vb' />
 
 Those commands, which logic is up to get customized, should have their corresponding methods overridden. In the following example we will customize: MoveCurrentToNext, MoveCurrentToPrevious.
 
@@ -136,56 +88,19 @@ In case you have a requirement to ask for the customer`s approval when moving th
 
 __Example 6: Overriding the default commands__
 
-```C#
-	public override void MoveCurrentToNext()
-	{
-	    MessageBoxResult result = MessageBox.Show("MoveCurrentToNext ?", "MoveCurrentToNext", MessageBoxButton.OKCancel);
-	    if (result == MessageBoxResult.OK)
-	    {
-	        this.CollectionNavigator.MoveCurrentToNext();
-	    }
-	}
-	public override void MoveCurrentToPrevious()
-	{
-	    MessageBoxResult result = MessageBox.Show("MoveCurrentToPrevious ?", "MoveCurrentToPrevious", MessageBoxButton.OKCancel);
-	    if (result == MessageBoxResult.OK)
-	    {
-	        this.CollectionNavigator.MoveCurrentToPrevious();
-	    }
-	}
-```
-```VB.NET
-	Public Overrides Sub MoveCurrentToNext()
-	    Dim result As MessageBoxResult = MessageBox.Show("MoveCurrentToNext ?", "MoveCurrentToNext", MessageBoxButton.OKCancel)
-	    If result = MessageBoxResult.OK Then
-	        Me.CollectionNavigator.MoveCurrentToNext()
-	    End If
-	End Sub
-	Public Overrides Sub MoveCurrentToPrevious()
-	    Dim result As MessageBoxResult = MessageBox.Show("MoveCurrentToPrevious ?", "MoveCurrentToPrevious", MessageBoxButton.OKCancel)
-	    If result = MessageBoxResult.OK Then
-	        Me.CollectionNavigator.MoveCurrentToPrevious()
-	    End If
-	End Sub
-```
+<snippet id='radpropertygrid-features-collectioneditor-block_5-cs' />
+<snippet id='radpropertygrid-features-collectioneditor-block_5-vb' />
 
 The last thing to be done is to set CommandProvider Property of the CollectionEditor to be the newly-created CustomCommandProvider class:
 
 __Example 7: Assigning the CommandProvider__
 
-```XAML
-	<telerik:CollectionEditor x:Name="CollectionEditor"
-	              	  Source="{Binding Employees}"/>
-```
+<snippet id='radpropertygrid-features-collectioneditor-block_6-xaml' />
 
 __Example 8: Assigning the CommandProvider__
 
-```C#
-	this.CollectionEditor.CommandProvider = new CustomCommandProvider(this.CollectionEditor);
-```
-```VB.NET
-	Me.CollectionEditor.CommandProvider = New CustomCommandProvider(Me.CollectionEditor)
-```
+<snippet id='radpropertygrid-features-collectioneditor-block_7-cs' />
+<snippet id='radpropertygrid-features-collectioneditor-block_7-vb' />
 
 Modifying the methods will result in the following action when trying to move to the next item:
 

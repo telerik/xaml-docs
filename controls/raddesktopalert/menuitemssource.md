@@ -37,64 +37,25 @@ So, in order to set the __MenuItemsSource__ a sample date needs to be created as
 
 __Preparing the data__
 
-```C#
-	public static ObservableCollection<DesktopAlertMenuItem> GetDesktopAlertMenuItems()
-	{
-	    ObservableCollection<DesktopAlertMenuItem> items = new ObservableCollection<DesktopAlertMenuItem>();
-	    DesktopAlertMenuItem copyItem = new DesktopAlertMenuItem()
-	    {
-	        Header = "Copy",
-	    };
-	    items.Add(copyItem);
-	    DesktopAlertMenuItem pasteItem = new DesktopAlertMenuItem()
-	    {
-	        Header = "Paste",
-	    };
-	    items.Add(pasteItem);
-	    DesktopAlertMenuItem separatorItem = new DesktopAlertMenuItem()
-	    {
-	        IsSeparator = true
-	    };
-	    items.Add(separatorItem);
-	    DesktopAlertMenuItem cutItem = new DesktopAlertMenuItem()
-	    {
-	        Header = "Cut",
-	    };
-	    items.Add(cutItem);
-	    return items;
-	}
-```
+<snippet id='raddesktopalert-menuitemssource-preparing_the_data-cs' />
+
 
 __Preparing the data__
 
-```VB
-	Public Function GetDesktopAlertMenuItems() As ObservableCollection(Of DesktopAlertMenuItem)
-	    Dim items As New ObservableCollection(Of DesktopAlertMenuItem)()
-	    Dim copyItem As New DesktopAlertMenuItem() With {.Header = "Copy"}
-	    items.Add(copyItem)
-	    Dim pasteItem As New DesktopAlertMenuItem() With {.Header = "Paste"}
-	    items.Add(pasteItem)
-	    Dim separatorItem As New DesktopAlertMenuItem() With {.IsSeparator = True}
-	    items.Add(separatorItem)
-	    Dim cutItem As New DesktopAlertMenuItem() With {.Header = "Cut"}
-	    items.Add(cutItem)
-	    Return items
-	End Function
-```
+<snippet id='raddesktopalert-menuitemssource-preparing_the_data-vb' />
+
 
 Finally, you need to pass the generated collection to the __MenuItemsSource__:
 
 __Setting MenuItemsSource__
 
-```C#
-	alert.MenuItemsSource = GetDesktopAlertMenuItems();
-```
+<snippet id='raddesktopalert-menuitemssource-setting_menuitemssource-cs' />
+
 
 __Setting MenuItemsSource__
 
-```VB
-	alert.MenuItemsSource = GetDesktopAlertMenuItems()
-```
+<snippet id='raddesktopalert-menuitemssource-setting_menuitemssource-vb' />
+
 
 __Figure 2:__ RadDesktopAlert with set MenuItemsSource
 ![Rad Desktop Alert Menu Items Siurce 01](images/RadDesktopAlert_MenuItemSource_01.png)
@@ -105,44 +66,20 @@ In order to visualize the data in the menu of __RadDeskotopAlert__ you could als
 
 #### __XAML Setting MenuItemsSource___
 
-```XAML
-	<Style x:Key="DesktopAlertMenuItemContainerStyle" TargetType="telerik:RadMenuItem">
-	    <Setter Property="Header" Value="{Binding Header}"/>
-	    <Setter Property="Command" Value="{Binding Command}" />
-	    <Setter Property="CommandParameter" Value="{Binding CommandParameter}" />
-	    <Setter Property="IsSeparator" Value="{Binding IsSeparator}" />
-	    <Setter Property="IsCheckable" Value="{Binding IsCheckable}" />
-	    <Setter Property="IsChecked" Value="{Binding IsChecked}" />
-	    <Setter Property="Icon" Value="{Binding IconUrl}" />
-	    <Setter Property="IconTemplate">
-	        <Setter.Value>
-	            <DataTemplate>
-	                <Image Source="{Binding}" Stretch="None"/>
-	            </DataTemplate>
-	        </Setter.Value>
-	    </Setter>
-	</Style>
-```
+<snippet id='raddesktopalert-menuitemssource-setting_menuitemssource-xaml' />
+
 
 In order to use the created style with __RadDeskotopAlert__ , you have to set its __MenuItemContainerStyle__ property.
 
 __Setting MenuItemContainerStyle__
 
-```C#
-	var alert = new RadDesktopAlert();
-	alert.ShowMenuButton = true;
-	alert.MenuItemsSource = GetDesktopAlertMenuItems();
-	alert.MenuItemContainerStyle = this.Resources["DesktopAlertMenuItemContainerStyle"] as Style;
-```
+<snippet id='raddesktopalert-menuitemssource-setting_menuitemcontainerstyle-cs' />
+
 
 __Setting MenuItemContainerStyle__
 
-```VB
-	Dim alert = New RadDesktopAlert()
-	alert.ShowMenuButton = True
-	alert.MenuItemsSource = GetDesktopAlertMenuItems()
-	alert.MenuItemContainerStyle = TryCast(Me.Resources("DesktopAlertMenuItemContainerStyle"), Style)
-```
+<snippet id='raddesktopalert-menuitemssource-setting_menuitemcontainerstyle-vb' />
+
 
 ## See Also
 

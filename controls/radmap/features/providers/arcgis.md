@@ -26,25 +26,11 @@ Currently the ArcGIS map provider support six modes which specify the type of ap
 The following example of the `ArcGisMapProvider` definition uses the `Physical` mode:
 
 __Defining the ArcGisMapProvider in XAML__
-```XAML
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:ArcGisMapProvider Mode="Physical" />
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-arcgis-block_1-xaml' />
 
 __Defining the ArcGisMapProvider in code-behind__
-```C#
-	ArcGisMapProvider provider = new ArcGisMapProvider();
-	provider.Mode = ArcGisMapMode.Physical;
-	this.radMap.Provider = provider;
-```
-```VB.NET
-	Dim provider As New ArcGisMapProvider ()
-	provider.Mode = ArcGisMapMode.Physical
-	Me.radMap.Provider = provider
-```
+<snippet id='radmap-features-providers-arcgis-block_2-cs' />
+<snippet id='radmap-features-providers-arcgis-block_2-vb' />
 
 __ArcGisMapProvider when using the `Physical` mode__
 
@@ -61,23 +47,8 @@ When using the ArcGisMapProvider, you have to display an attribution copyright l
 ArcGIS Online services only accept connections using [TLS 1.2](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2). Thus, you need to explicitly set the `ServicePointManager.SecurityProtocol` property if you're using a .NET Framework version prior to __4.7__.
 
 __Setting the ServicePointManager.SecurityProtocol__
-```C#
-	public App()
-	{
-		// ArcGis rest services require TLS 1.2 protocol.
-		ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
-	}
-```
-```VB.NET
-	Partial Public Class App
-		Inherits Application
-
-		Public Sub New()
-			' ArcGis rest services require TLS 1.2 protocol.
-			ServicePointManager.SecurityProtocol = CType(3072, SecurityProtocolType)
-		End Sub
-	End Class
-```
+<snippet id='radmap-features-providers-arcgis-block_3-cs' />
+<snippet id='radmap-features-providers-arcgis-block_3-vb' />
 
 For comparison, the following snapshot demonstrates the appearance of the map for the `Street` mode:
 

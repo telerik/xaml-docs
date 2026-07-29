@@ -17,21 +17,16 @@ The `RadGridView` control provides support for zooming its content through the `
 The `EnableMouseWheelScaling` property allows you to control whether the zoom feature should be turned on or off. The default value of this property is `False`. When the property's value is `True`, the zoom on the RadGridView control can be performed by holding the `CTRL` key and by scrolling the `MouseWheel`.
 
 __Enabling zooming__
-```XAML
-    <Grid>
-        <telerik:RadGridView x:Name="radGridView" EnableMouseWheelScaling="True"/>
-    </Grid>
-```
+<snippet id='radgridview-features-zooming-enabling_zooming-xaml' />
+
 
 This property can also be set in the code-behind.
 
 __Enabling zooming in code-behind__
-```C#
-    this.radGridView.EnableMouseWheelScaling = true;
-```
-```VB.NET
-    Me.radGridView.EnableMouseWheelScaling = True
-```
+<snippet id='radgridview-features-zooming-enabling_zooming_in_code_behind-cs' />
+
+<snippet id='radgridview-features-zooming-enabling_zooming_in_code_behind-vb' />
+
 
 __Zooming RadGridView control__
 
@@ -44,19 +39,14 @@ The `ScaleFactor` property allows you to control the zoom scaling of the `RadGri
 >important The `ScaleFactor` value will be respected even if the zooming feature is disabled.
 
 __Setting the ScaleFactor property__
-```XAML
-    <Grid>
-        <telerik:RadGridView x:Name="radGridView" ScaleFactor="2.0" />
-    </Grid>
-```
+<snippet id='radgridview-features-zooming-setting_the_scalefactor_property-xaml' />
+
 
 __Setting the ScaleFactor property in code-behind__
-```C#
-    this.radGridView.ScaleFactor = 2;
-```
-```VB.NET
-    Me.radGridView.ScaleFactor = 2
-```
+<snippet id='radgridview-features-zooming-setting_the_scalefactor_property_in_code_behind-cs' />
+
+<snippet id='radgridview-features-zooming-setting_the_scalefactor_property_in_code_behind-vb' />
+
 
 __Custom value for ScaleFactor property__
 

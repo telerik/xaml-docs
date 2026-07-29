@@ -27,25 +27,13 @@ For advanced customization of the VisibleRange the ViewDefinitionBase class prov
 
 
 
-```C#
-	protected virtual DateTime GetVisibleRangeStart (DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
-
-	protected virtual DateTime GetVisibleRangeEnd(DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
-```
+<snippet id='radscheduleview-features-viewdefinitions-configure-visiblerange-block_1-cs' />
 
 For example, the following class represents a MonthViewDefinition that starts from the first week of CurrentDate:   				
 
 
 
-```C#
-	public class CustomMonthViewDefinition : MonthViewDefinition
-	{
-		protected override DateTime GetVisibleRangeStart(DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek)
-		{
-			return CalendarHelper.GetFirstDayOfWeek(currentDate, firstDayOfWeek.Value);
-		}
-	}
-```
+<snippet id='radscheduleview-features-viewdefinitions-configure-visiblerange-block_2-cs' />
 
 Since VisibleDays is 42 by default, this CustomMonthViewDefinition will display 6 weeks, as the standard MonthViewDefinition does.
 
@@ -53,10 +41,4 @@ Here is how to use the CustomMonthViewDefinition:
 
 
 
-```XAML
-	<telerik:RadScheduleView>
-		<telerik:RadScheduleView.ViewDefinitions>
-			<local:CustomMonthViewDefinition />
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-viewdefinitions-configure-visiblerange-block_3-xaml' />

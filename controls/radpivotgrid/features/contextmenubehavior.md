@@ -18,112 +18,37 @@ In this article it will be demonstrated how to implement a custom FieldListConte
 
 
 
-```C#
-	public class CustomContextMenuBehavior : FieldListContextMenuBehavior
-	{
-	    protected override RadContextMenu CreateContextMenu(object dataContext)
-	    {
-	        var contextMenu = base.CreateContextMenu(dataContext);
-	    }
-	}
-```
+<snippet id='radpivotgrid-features-contextmenubehavior-block_1-cs' />
 
 #### __VB__
 
-```VB
-	Public Class CustomContextMenuBehavior
-	    Inherits FieldListContextMenuBehavior
-	
-	    Protected Overrides Function CreateContextMenu(ByVal dataContext As Object) As RadContextMenu
-	        Dim contextMenu = MyBase.CreateContextMenu(dataContext)
-	    End Function
-	End Class
-```
+<snippet id='radpivotgrid-features-contextmenubehavior-block_2-vb' />
 
 Having the default context menu will allow you to modify it as needed, for example you will be able to remove MenuItems from there or add new ones and attach custom commands to them. Let's imagine that you just need to remove the MenuItem for the Label Filter options and add a new one which is just showing a MessageBox. This should be done the following way:        
 
 
 
-```C#
-	protected override RadContextMenu CreateContextMenu(object dataContext)
-	{
-	    var contextMenu = base.CreateContextMenu(dataContext);
-	    if (dataContext is PropertyGroupDescription)
-	    {
-	        var itemToRemove = contextMenu.Items.FirstOrDefault(i => (i as RadMenuItem).Header != null && (i as RadMenuItem).Header.Equals("Label Filter"));
-	
-	        if (itemToRemove != null)
-	        {
-	            contextMenu.Items.Remove(itemToRemove);
-	        }
-	
-	        contextMenu.Items.Add(new RadMenuItem { Header = "Custom Menu Item", Command = new DelegateCommand(OnCustomMenuItemClickExecute) });
-	    }
-	}
-	
-	private void OnCustomMenuItemClickExecute(object obj)
-	{
-	    MessageBox.Show("Clicked");
-	}
-```
+<snippet id='radpivotgrid-features-contextmenubehavior-block_3-cs' />
 
 #### __VB__
 
-```VB
-	Protected Overrides Function CreateContextMenu(ByVal dataContext As Object) As RadContextMenu
-	    Dim contextMenu = MyBase.CreateContextMenu(dataContext)
-	    If TypeOf dataContext Is PropertyGroupDescription Then
-	        Dim itemToRemove = contextMenu.Items.FirstOrDefault(Function(i) (TryCast(i, RadMenuItem)).Header IsNot Nothing AndAlso (TryCast(i, RadMenuItem)).Header.Equals("Label Filter"))
-	
-	        If itemToRemove IsNot Nothing Then
-	            contextMenu.Items.Remove(itemToRemove)
-	        End If
-	
-	        contextMenu.Items.Add(New RadMenuItem With {.Header = "Custom Menu Item", .Command = New DelegateCommand(AddressOf OnCustomMenuItemClickExecute)})
-	    End If
-	End Function
-	
-	Private Sub OnCustomMenuItemClickExecute(ByVal obj As Object)
-	    MessageBox.Show("Clicked")
-	End Sub
-```
+<snippet id='radpivotgrid-features-contextmenubehavior-block_4-vb' />
 
 The final step is to set the custom behavior to the __PivotFieldList__ the follow way:        
 
 
 
-```XAML
-	<pivot:RadPivotFieldList x:Name="radPivotFieldList">
-	    <pivot:FieldListContextMenuBehavior.Behavior>
-	        <local:CustomContextMenuBehavior />
-	    </pivot:FieldListContextMenuBehavior.Behavior>
-	</pivot:RadPivotFieldList>
-```
+<snippet id='radpivotgrid-features-contextmenubehavior-block_5-xaml' />
 
 The custom behavior can be also set in the code behind as shown below:        
 
 
 
-```C#
-	public MainPage()
-	{
-	    InitializeComponent();  
-	
-	    var customContextMenuBehavior = new CustomContextMenuBehavior();
-	    FieldListContextMenuBehavior.SetBehavior(this.radPivotFieldList, customContextMenuBehavior);
-	}
-```
+<snippet id='radpivotgrid-features-contextmenubehavior-block_6-cs' />
 
 #### __VB__
 
-```VB
-	Public Sub MainPage()
-	    InitializeComponent()
-	
-	    Dim customContextMenuBehavior = New CustomContextMenuBehavior()
-	    FieldListContextMenuBehavior.SetBehavior(Me.radPivotFieldList, customContextMenuBehavior)
-	End Sub
-```
+<snippet id='radpivotgrid-features-contextmenubehavior-block_7-vb' />
 
 And this will be the final result:
 

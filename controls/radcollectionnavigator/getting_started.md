@@ -43,26 +43,8 @@ __Examples 1__ demonstrate how to utilize the CollectionView exposed by the RadC
 
 __Example 1: RadCollectionNavigator bound to a ListBox__
 
-```XAML
-	<Grid x:Name="LayoutRoot"
-		  Background="White">
-		<Grid.DataContext>
-			<my:MyViewModel />
-		</Grid.DataContext>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="Auto" />
-		</Grid.RowDefinitions>
-		<ListBox
-			DisplayMemberPath="Name"
-			SelectedItem="{Binding ElementName=collectionNavigator, Path=CurrentItem, Mode=TwoWay}"
-			ItemsSource="{Binding ElementName=collectionNavigator, Path=CollectionView}" />
-		<telerik:RadCollectionNavigator
-			Source="{Binding Clubs}"
-			Grid.Row="1"
-			x:Name="collectionNavigator"/>
-	</Grid>
-```
+<snippet id='radcollectionnavigator-getting-started-example_1_radcollectionnavigator_bound_to_a_listbox-xaml' />
+
 
 #### __Figure 1: RadCollectionNavigator in the Fluent theme__
 
@@ -86,17 +68,8 @@ To change the theme, you can follow the steps below:
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 2: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.Data.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radcollectionnavigator-getting-started-example_2_merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

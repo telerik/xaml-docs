@@ -36,67 +36,47 @@ The `Headers` and `Footers` are properties of a Section and each section in the 
 The following example demonstrates how you can create a Header.
 
 __Create Header__
-```C#
-	Header header = new Header() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument represents the content of a Header, typically contains a few paragraphs
-```
+<snippet id='radrichtextbox-features-headers-and-footers-block_1-cs' />
 
 When it comes to using a Header created in this manner, this depends on the state of the document - if it has been measured or not.
 
 * In a non-measured document, which you are building in code-behind, you can set the Default page Header of a section as illustrated below:
 
 	__Set Header of a Section__
-	```C#
-		section.Headers.Default = header;
-	```
+	<snippet id='radrichtextbox-features-headers-and-footers-block_2-cs' />
 
 * In a measured document (a document that has been previewed in the editor), you can change the Default page header of the first section like shown in the next example:
 
 	__Update a Header in Measured Document__
-	```C#
-		this.radRichTextBox.UpdateHeader(this.radRichTextBox.Document.Sections.First, HeaderFooterType.Default, header);
-	```
+	<snippet id='radrichtextbox-features-headers-and-footers-block_3-cs' />
 
 All header/footer types - Default, First and Even are set identically. The only thing you should add when you set the First or Even Header/Footer of the document, is to set the property of the section that notifies the document to use different Header/Footer than the default one using one of the properties illustrated below:
      
 __Set Different Even/Odd Header__
-```C#
-	this.radRichTextBox.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
-	//or
-	this.radRichTextBox.Document.HasDifferentEvenAndOddHeadersFooters = true;
-```
+<snippet id='radrichtextbox-features-headers-and-footers-block_4-cs' />
 
 Setting the Footers can be done in the same way. Here is the respective code for footers:
 
 * Creating a Footer:
 
 	__Create Footer__
-	```C#
-		Footer footer = new Footer() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of the footer.
-	```
+	<snippet id='radrichtextbox-features-headers-and-footers-block_5-cs' />
 
 * Setting the Footer to be used in a particular section:
 
     * In a non-measured document:
 
 		__Set Footer of a Section__
-		```C#
-			section.Footers.Default = footer;
-		```
+		<snippet id='radrichtextbox-features-headers-and-footers-block_6-cs' />
 
     * In a measured document:
 		__Update a Footer in Measured Document__
-		```C#
-			this.radRichTextBox.UpdateFooter(this.radRichTextBox.Document.Sections.First, HeaderFooterType.Default, footer);
-		```
+		<snippet id='radrichtextbox-features-headers-and-footers-block_7-cs' />
 
 As for setting different footers for the first page or the even page, this is done by passing the respective parameter to the UpdateFooter() method - HeaderFooterType.First or HeaderFooterType.Even and setting the corresponding property of the document/editor.
 
 __Set Different Even/Odd Footer__
-```C#
-	this.radRichTextBox.Document.Sections.First.HasDifferentFirstPageHeaderFooter = true;
-	//or
-	this.radRichTextBox.Document.HasDifferentEvenAndOddHeadersFooters = true;
-```
+<snippet id='radrichtextbox-features-headers-and-footers-block_8-cs' />
 
 ## Disabling Headers and Footers
 
@@ -105,71 +85,14 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 >tip The concept of UI layers and their usage are explained in [this article]({%slug radrichtextbox-features-custom-ui-layers%}).
 
 __Disable Headers and Footers__
-```C#
-	class CustomUILayerBuilder : UILayersBuilder
-	{
-	    protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
-	    {
-	        base.BuildUILayersOverride(uiLayerContainer);
-	        uiLayerContainer.UILayers.Remove(DefaultUILayers.HeaderFooterLayer);
-	    }
-	}
-```
+<snippet id='radrichtextbox-features-headers-and-footers-block_9-cs' />
 
 ## Working with the Headers and Footers
 
 The Headers and Footers can be retrieved, for example, via interating the `Sections` collection of the `Document` property of the RadRichTextBox control. Each [Section]({%slug radrichtextbox-features-document-elements-section%}#add-headers-and-footers-to-a-section) instance exposes this information via its API.
 
 __Retrieving the Headers__
-```C#
-	foreach (Telerik.Windows.Documents.Model.Section section in this.radRichTextBox.Document.Sections)
-	{
-	    if (!section.Headers.Default.IsEmpty)
-	    {
-	        RadDocument radDocument = new RadDocument();
-	        Section section1 = new Section();
-	        Paragraph paragraph = new Paragraph();
-	        Span span = new Span("Default");
-	        paragraph.Inlines.Add(span);
-	        section.Blocks.Add(paragraph);
-	
-	        RadDocument document = new RadDocument();
-	        document.Sections.Add(section1);
-	
-	        section.Headers.Default.Body = document;
-	    }
-	
-	    if (!section.Headers.First.IsEmpty)
-	    {
-	        RadDocument radDocument = new RadDocument();
-	        Section section1 = new Section();
-	        Paragraph paragraph = new Paragraph();
-	        Span span = new Span("First");
-	        paragraph.Inlines.Add(span);
-	        section.Blocks.Add(paragraph);
-	
-	        RadDocument document = new RadDocument();
-	        document.Sections.Add(section1);
-	
-	        section.Headers.Default.Body = document;
-	    }
-	
-	    if (!section.Headers.Even.IsEmpty)
-	    {
-	        RadDocument radDocument = new RadDocument();
-	        Section section1 = new Section();
-	        Paragraph paragraph = new Paragraph();
-	        Span span = new Span("Even");
-	        paragraph.Inlines.Add(span);
-	        section.Blocks.Add(paragraph);
-	
-	        RadDocument document = new RadDocument();
-	        document.Sections.Add(section1);
-	
-	        section.Headers.Default.Body = document;
-	    }
-	}
-```
+<snippet id='radrichtextbox-features-headers-and-footers-block_10-cs' />
 
 Additionally, the RadRichTextBox control exposes the `ActiveDocumentEditor` property. It provides information about the currently active editor that you can utilize to access the Headers and Footers.
 

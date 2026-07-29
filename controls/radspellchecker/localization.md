@@ -94,72 +94,28 @@ The three files should keep the same resource keys, whereas the values must be t
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
 
-```C#
-	LocalizationManager.Manager = new LocalizationManager()
-	{
-	   ResourceManager = RadSpellCheckerResources.ResourceManager
-	};
-```
+<snippet id='radspellchecker-localization-block_1-cs' />
 
 If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in Resources.resx and Resources.nl.resx files. For the Resources.resx file you can set ResXFileCodeGenerator to Internal or Public and for others to No code generation. Then, open the project file in a text-mode and insert the code below into the <PropertyGroup> section. In this way you notify the framework about the supported cultures.
 
-```XAML
-	<SupportedCultures>en;nl</SupportedCultures>
+```xaml
+
+<SupportedCultures>en;nl</SupportedCultures>
+
 ```
 
 ## Localization Using Custom Localization Manager
 
 __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.
      
-```C#
-	LocalizationManager.Manager = new CustomLocalizationManager();
-```
+<snippet id='radspellchecker-localization-block_3-cs' />
 
 >Note that if you set the localization manager after the creation of the UI, some parts might remain not-localized.
 
 What is left in order to fulfil the localization is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize some of the strings in the two SpellCheckingDialogs:
 
-```C#
-	public class CustomLocalizationManager : LocalizationManager
-	{
-	   public override string GetStringOverride(string key)
-	   {
-	       switch(key)
-	       {
-	           case "Documents_SpellCheckingDialog_Header":
-	               return "New Header";
-	           case "Documents_SpellCheckingDialog_NotInDictionary":
-	               return "New NotInDictionary Notification";
-	           case "Documents_SpellCheckingDialog_IgnoreAll":
-	               return "New Ignore All";
-	           case "Documents_SpellCheckingDialog_AddToDictionary":
-	               return "New Add to Dictionary";
-	           case "Documents_SpellCheckingDialog_ChangeTo":
-	               return "New Change to"; 
-	           case "Documents_SpellCheckingDialog_Change":
-	               return "New Change";
-	           case "Documents_SpellCheckingDialog_Suggestions":
-	               return "New Suggestions";
-	           case "Documents_SpellCheckingDialog_EditCustomDictionary":
-	               return "New Show EditCustomDictionary";
-	       }
-	       return base.GetStringOverride(key);
-	   }
-	}
-```
+<snippet id='radspellchecker-localization-block_4-cs' />
 
 If you don't want to hard-code your translation inside the source code, you can use resource files:        
 
-```C#
-	public override string GetStringOverride(string key)
-	{
-	   switch( key )
-	   {
-	       //----------------------
-	       case "Documents_SpellCheckingDialog_Header":
-	           return MyRadSpellcheckerResources.Documents_SpellCheckingDialog_Header;
-	       //----------------------
-	   }
-	   return base.GetStringOverride(key);
-	}
-```
+<snippet id='radspellchecker-localization-block_5-cs' />

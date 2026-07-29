@@ -24,51 +24,13 @@ Here is an example of this additional behavior that you will need:
 
 __Declaring the AttachedProperty__
 
-```C#
-	public class FocusHelper
-	{
-	    private static void OnEnsureFocusChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-	    {
-	        if (!(bool)e.NewValue)
-	        {
-				var control = d as Control;
-				control.Dispatcher.BeginInvoke(new Action(() =>
-					{
-						control.Focus();
-					}));
-	        }
-	    }
-	
-	    public static bool GetEnsureFocus(DependencyObject obj)
-	    {
-	        return (bool)obj.GetValue(EnsureFocusProperty);
-	    }
-	
-	    public static void SetEnsureFocus(DependencyObject obj, bool value)
-	    {
-	        obj.SetValue(EnsureFocusProperty, value);
-	    }
-	        
-	    public static readonly DependencyProperty EnsureFocusProperty =
-			DependencyProperty.RegisterAttached(
-			"EnsureFocus", 
-			typeof(bool),
-			typeof(FocusHelper), 
-			new PropertyMetadata(OnEnsureFocusChanged));
-	}
-```
+<snippet id='radbusyindicator-how-to-restore-the-focus-declaring_the_attachedproperty-cs' />
 
 In the definition of the content element you will have to include the new behavior.
 
 __Define the new behavior inside the content__
 
-```XAML
-	<telerik:RadBusyIndicator x:Name="radBusyIndicator">                          
-	    <Grid>
-	        <TextBox example:FocusHelper.EnsureFocus="{Binding IsBusyIndicationVisible, ElementName=radBusyIndicator}"/>
-	    </Grid>
-	</telerik:RadBusyIndicator>
-```
+<snippet id='radbusyindicator-how-to-restore-the-focus-define_the_new_behavior_inside_the_content-xaml' />
 
 ## Restoring the Focus to the Last Focused Control
 
@@ -81,74 +43,19 @@ The next example shows how to save the last focused Control and reset its focus 
 
 	__Sample layout declaration__
 
-	```XAML
-		<Border BorderBrush="Black" 
-				BorderThickness="2" 
-				Height="200" Width="220"
-				Margin="10">
-			<telerik:RadBusyIndicator x:Name="BusyIndicator">
-				<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
-							x:Name="StackPanel">
-					<TextBox Width="170"
-								Margin="10"
-								x:Name="TextBox"
-								Text="Click here to set the focus."/>
-					<TextBox Width="170"
-								Margin="10"
-								Text="or here."/>
-				</StackPanel>
-			</telerik:RadBusyIndicator>
-		</Border>
-	```
+<snippet id='radbusyindicator-how-to-restore-the-focus-define_the_new_behavior_inside_the_content-xaml' />
 
 2. Next we will need to create a property for the focused control to be save to in the code behind or the ViewModel:            
 
 	__Property declaration__
 
-	```C#
-		private Control focusedElement { get; set; }
-	```
+<snippet id='radbusyindicator-how-to-restore-the-focus-define_the_new_behavior_inside_the_content-cs' />
 
 3. Create an set the DispatcherTimer that will enable and disable the BusyIndicator control:
 
 	__Set the DispatcherTimer__
 
-	```C#
-		private DispatcherTimer dispatcherTimer { get; set; }
-		
-		public Example()
-		{
-			InitializeComponent();
-		
-			this.dispatcherTimer = new DispatcherTimer();
-			dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
-			dispatcherTimer.Tick += new EventHandler(timerTick);
-			dispatcherTimer.Start();
-		}
-		private void timerTick(object sender, EventArgs e)
-		{
-			var isBusy = this.BusyIndicator.IsBusy;
-			if (!isBusy)
-			{
-				this.focusedElement = FocusManagerHelper.GetFocusedElement(this.StackPanel) as Control;
-				this.BusyIndicator.IsBusy = true;
-			}
-			else
-			{
-				this.BusyIndicator.IsBusy = false;
-				if (this.focusedElement != null)
-				{
-					this.focusedElement.IsEnabledChanged += focusedElement_IsEnabledChanged;
-				}
-			}
-		}
-		
-		private void focusedElement_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
-		{
-			this.focusedElement.Focus();
-			this.focusedElement.IsEnabledChanged -= focusedElement_IsEnabledChanged;
-		}
-	```
+<snippet id='radbusyindicator-how-to-restore-the-focus-define_the_new_behavior_inside_the_content-cs' />
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/BusyIndicator/RestoreFocus).
 

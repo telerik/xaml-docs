@@ -46,28 +46,8 @@ Sometimes you need to extend the functionality of a column and define a custom e
 
 __Example 1: Setting columns' CellTemplate and CellEditTemplate__
 
-```XAML
-	<telerik:RadGridView x:Name="EmployeesGrid" AutoGenerateColumns="False" ItemsSource="{Binding Employees}">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" />
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}" />
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding StartingDate}">
-	            <telerik:GridViewDataColumn.CellEditTemplate>
-	                <DataTemplate>
-	                    <telerik:RadDateTimePicker SelectedDate="{Binding StartingDate}" IsTooltipEnabled="False"/>
-	                </DataTemplate>
-	            </telerik:GridViewDataColumn.CellEditTemplate>
-	        </telerik:GridViewDataColumn>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Salary}">
-	            <telerik:GridViewDataColumn.CellTemplate>
-	                <DataTemplate>
-	                    <telerik:RadNumericUpDown Value="{Binding Salary}" />
-	                </DataTemplate>
-	            </telerik:GridViewDataColumn.CellTemplate>
-	        </telerik:GridViewDataColumn>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-celltemplate-and-celledittemplate-example_1_setting_columns_celltemplate_and_celledittemplate-xaml' />
+
 
 The RadGridView defined above will be displayed as shown in **Figure 1**.
 
@@ -81,30 +61,8 @@ The first example illustrates how to define either a __CellTemplate__ or __CellE
 
 __Example 2: Setting the CellTemplate and CellEditTemplate of a single column__
 
-```XAML
-	<telerik:RadGridView x:Name="EmployeesGrid" AutoGenerateColumns="False" ItemsSource="{Binding Employees}">
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding StartingDate}" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Salary}">
-				<telerik:GridViewDataColumn.CellTemplate>
-					<DataTemplate>
-						<StackPanel Orientation="Horizontal">
-							<TextBlock Text="$" />
-							<TextBlock Text="{Binding Salary}" Foreground="Green" />
-						</StackPanel>
-					</DataTemplate>
-				</telerik:GridViewDataColumn.CellTemplate>
-				<telerik:GridViewDataColumn.CellEditTemplate>
-					<DataTemplate>
-						<telerik:RadNumericUpDown Value="{Binding Salary}" />
-					</DataTemplate>
-				</telerik:GridViewDataColumn.CellEditTemplate>
-			</telerik:GridViewDataColumn>
-		</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-celltemplate-and-celledittemplate-example_2_setting_the_celltemplate_and_celledittemplate_of_a_single_column-xaml' />
+
 
 The RadGridView defined above will be displayed as shown in **Figure 1**.
 

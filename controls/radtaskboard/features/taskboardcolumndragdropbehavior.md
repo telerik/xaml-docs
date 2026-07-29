@@ -17,13 +17,7 @@ The drag-drop behavior is available since __R1 2020 SP1__.
 >In some cases, the __TaskBoardColumnDragDropBehavior__ will be unable to recognize its host's item type correctly. The **ItemType** property is provided for such cases.
 
 __Example 1: Specified the typed of the dragged item__
-```C#
-	<telerik:RadTaskBoard x:Name="taskBoard" xmlns:dragBehavior="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls">
-		<telerik:RadTaskBoard.DragDropBehavior>
-			<dragBehavior:TaskBoardColumnDragDropBehavior ItemType="{x:Type local:CustomTask}"/>
-		</telerik:RadTaskBoard.DragDropBehavior>   
-	</telerik:RadTaskBoard>		
-```
+<snippet id='radtaskboard-features-taskboardcolumndragdropbehavior-block_1-cs' />
 
 The most important methods of __TaskBoardColumnDragDropBehavior__ are:
 
@@ -44,21 +38,7 @@ The context for each of the TaskBoardColumnDragDropBehavior __CanDrop, Drop, Dra
 >In a scenario, when the default TaskBoardColumnDragDropBehavior behavior needs to be customized, you need to cast the __DragDropState state__ parameter to a __TaskBoardColumnDragDropState__ object so you can get access to the __TargetColumn__.
 
 __Example 2: Disable Reordering of the Items__
-```C#
-	public class CustomDragDropBehavior : TaskBoardColumnDragDropBehavior
-	{
-		public override bool CanDrop(DragDropState state)
-		{
-			var taskBoardColumnDragDropState = state as TaskBoardColumnDragDropState;
-			if (taskBoardColumnDragDropState.TargetColumn.Header.ToString() == "Done")
-			{
-				return false;
-			}
-
-			return base.CanDrop(state);
-		}
-	}
-```
+<snippet id='radtaskboard-features-taskboardcolumndragdropbehavior-block_2-cs' />
 
 ## Cancel the Drag Operation 
 
@@ -67,21 +47,7 @@ To cancel the dragging of specific items you can modify the TaskBoardColumnDragD
 To get the dragged items you can use the __DraggedItems__ collection property. Then depending on your condition, you can return false if this item is not allowed to be moved anymore. __Example 2__ demonstrates how we can forbid the user from dragging items from a particular column.
 
 __Example 3: Disable dragging from a TaskBoardColumn__
-```C#
-	public class CustomDragDropBehavior : TaskBoardColumnDragDropBehavior
-	{         
-		public override bool CanStartDrag(DragDropState state)
-		{
-			var draggedItem = state.DraggedItems.Cast<TaskBoardCardModel>().ToList()[0];
-			if (draggedItem.State == "Done")
-			{
-				return false;
-			}
-
-			return base.CanStartDrag(state);
-		}
-	}
-```
+<snippet id='radtaskboard-features-taskboardcolumndragdropbehavior-block_3-cs' />
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})

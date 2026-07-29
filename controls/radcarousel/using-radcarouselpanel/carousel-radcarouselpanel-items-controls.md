@@ -23,15 +23,7 @@ All ItemsControl-derived classes expose a public property, ItemsPanel, that allo
 
 
 
-```XAML
-	<ListBox x:Name="HorizontalListBox">
-	  <ListBox.ItemsPanel>
-	    <ItemsPanelTemplate>
-	      <StackPanel Orientation="Horizontal"></StackPanel>
-	    </ItemsPanelTemplate>
-	  </ListBox.ItemsPanel>
-	</ListBox>
-```
+<snippet id='radcarousel-using-radcarouselpanel-carousel-radcarouselpanel-items-controls-block_1-xaml' />
 
 
 
@@ -41,15 +33,7 @@ RadCarouselPanel, being a normal Panel can be used in a similar fashion thus all
 
 
 
-```XAML
-	<ListView x:Name="ListView">
-	  <ListView.ItemsPanel>
-	    <ItemsPanelTemplate>
-	      <telerik:RadCarouselPanel/>
-	    </ItemsPanelTemplate>
-	  </ListView.ItemsPanel>
-	</ListView>
-```
+<snippet id='radcarousel-using-radcarouselpanel-carousel-radcarouselpanel-items-controls-block_2-xaml' />
 
 
 

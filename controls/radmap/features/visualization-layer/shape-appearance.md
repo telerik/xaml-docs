@@ -26,120 +26,11 @@ The three properties are of type MapShapeFill. The MapShapeFill object allows yo
 In the following example, the MouseLeftButtonDown event on the shape visualization is used to switch between regular and highlighted fill.        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                ZoomLevel="8"
-	                Center="42.6957539183824, 23.3327663758679">
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider />
-		</telerik:RadMap.Provider>
-		<telerik:VisualizationLayer x:Name="visualizationLayer"
-	                                MapShapeVisualizationCreated="MapShapeVisualizationCreated"
-	                                MapShapeVisualizationRemoved="MapShapeVisualizationRemoved">
-			<telerik:RectangleData Location="42.9457539183824,23.0827663758679"
-			                       Height="0.5"
-			                       Width="0.5"
-			                       RadiusX="0.05"
-			                       RadiusY="0.05">
-				<telerik:RectangleData.ShapeFill>
-					<telerik:MapShapeFill Fill="#6FDFEFFF"
-	                                      Stroke="Blue"
-	                                      StrokeThickness="2" />
-				</telerik:RectangleData.ShapeFill>
-				<telerik:RectangleData.HighlightFill>
-					<telerik:MapShapeFill Fill="#6F00EFFF"
-	                                      Stroke="Red"
-	                                      StrokeThickness="2" />
-				</telerik:RectangleData.HighlightFill>
-			</telerik:RectangleData>
-		</telerik:VisualizationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-visualization-layer-shape-appearance-block_1-xaml' />
 
 
-```C#
-	public partial class HighlightShapeOnMouseClick : UserControl
-	{
-		public HighlightShapeOnMouseClick()
-		{
-			InitializeComponent();
-		}
-	
-		private void MapShapeVisualizationCreated(object sender, MapShapeOperationEventArgs e)
-		{
-			if (e.Visualization != null)
-			{
-				// Attach mouse events to the map shape visualization.
-				e.Visualization.MouseLeftButtonDown += this.Visualization_MouseLeftButtonDown;
-			}
-		}
-	
-		private void MapShapeVisualizationRemoved(object sender, MapShapeOperationEventArgs e)
-		{
-			if (e.Visualization != null)
-			{
-				// Detach mouse events to the map shape visualization.
-				e.Visualization.MouseLeftButtonDown -= this.Visualization_MouseLeftButtonDown;
-			}
-		}
-	
-		private void Visualization_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-		{
-			FrameworkElement elt = sender as FrameworkElement;
-			if (elt != null)
-			{
-				MapShapeData data = elt.DataContext as MapShapeData;
-				if (data.IsHighlighted)
-				{
-					data.UseRegularFill();
-				}
-				else
-				{
-					data.UseHighlightFill();
-				}
-			}
-	
-			e.Handled = true;
-		}
-	}
-```
-```VB.NET
-	Partial Public Class HighlightShapeOnMouseClick
-		Inherits UserControl
-	
-		Public Sub New()
-			InitializeComponent()
-		End Sub
-	
-		Private Sub MapShapeVisualizationCreated(sender As Object, e As MapShapeOperationEventArgs)
-			If e.Visualization IsNot Nothing Then
-				' Attach mouse events to the map shape visualization.'
-				AddHandler e.Visualization.MouseLeftButtonDown, AddressOf Me.Visualization_MouseLeftButtonDown
-			End If
-		End Sub
-	
-		Private Sub MapShapeVisualizationRemoved(sender As Object, e As MapShapeOperationEventArgs)
-			If e.Visualization IsNot Nothing Then
-				' Detach mouse events to the map shape visualization.'
-				RemoveHandler e.Visualization.MouseLeftButtonDown, AddressOf Me.Visualization_MouseLeftButtonDown
-			End If
-		End Sub
-	
-		Private Sub Visualization_MouseLeftButtonDown(sender As Object, e As MouseButtonEventArgs)
-			Dim elt As FrameworkElement = TryCast(sender, FrameworkElement)
-			If elt IsNot Nothing Then
-				Dim data As MapShapeData = TryCast(elt.DataContext, MapShapeData)
-				If data.IsHighlighted Then
-					data.UseRegularFill()
-				Else
-					data.UseHighlightFill()
-				End If
-			End If
-	
-			e.Handled = True
-		End Sub
-	End Class
-```
+<snippet id='radmap-features-visualization-layer-shape-appearance-block_2-cs' />
+<snippet id='radmap-features-visualization-layer-shape-appearance-block_2-vb' />
 
 Here is a snapshot of the result:
 ![radmap-visualization-layer-shape-appearance-0](images/radmap-visualization-layer-shape-appearance-0.png)
@@ -156,35 +47,7 @@ The three properties are of type MapShapeFill. The MapShapeFill object allows yo
 Here is an example:        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                ZoomLevel="8"
-	                Center="42.6957539183824, 23.3327663758679">
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider />
-		</telerik:RadMap.Provider>
-		<telerik:VisualizationLayer x:Name="visualizationLayer"
-	                                MapShapeVisualizationCreated="MapShapeVisualizationCreated"
-	                                MapShapeVisualizationRemoved="MapShapeVisualizationRemoved">
-			<telerik:VisualizationLayer.ShapeFill>
-				<telerik:MapShapeFill Fill="#80808080"
-	                                  Stroke="Blue"
-	                                  StrokeThickness="3" />
-			</telerik:VisualizationLayer.ShapeFill>
-			<telerik:VisualizationLayer.HighlightFill>
-				<telerik:MapShapeFill Fill="Orange"
-	                                  Stroke="Coral"
-	                                  StrokeThickness="3" />
-			</telerik:VisualizationLayer.HighlightFill>
-			<telerik:EllipseData Location="42.6957539183824, 24.3327663758679"
-	                             Width="0.2"
-	                             Height="0.2" />
-			<telerik:EllipseData Location="42.1429369264591, 24.7498095849434"
-	                             Width="0.2"
-	                             Height="0.2" />
-		</telerik:VisualizationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-visualization-layer-shape-appearance-block_3-xaml' />
 
 ![radmap-visualization-layer-shape-appearance-2](images/radmap-visualization-layer-shape-appearance-2.png)
 

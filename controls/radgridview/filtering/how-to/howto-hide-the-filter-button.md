@@ -14,36 +14,18 @@ When in **Popup** filtering mode, you can set **GridViewColumn.ShowFilterButton*
 
 __Example 1: Hide filter button in XAML__
 
-```XAML
+<snippet id='radgridview-filtering-how-to-howto-hide-the-filter-button-example_1_hide_filter_button_in_xaml-xaml' />
 
-    <telerik:GridViewDataColumn ShowFilterButton="False" IsFilteringDeferred="False" />
-```
 
 __Example 2: Hide filter button in code-behind__
 
-```C#
+<snippet id='radgridview-filtering-how-to-howto-hide-the-filter-button-example_2_hide_filter_button_in_code_behind-cs' />
 
-    private void Grid_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
-    {
-        if (e.ItemPropertyInfo.PropertyType == typeof(string))
-        {
-            e.Column.IsFilteringDeferred = false;
-            e.Column.ShowFilterButton = false;
-        }
-    };
-```
 
 __Example 2: Hide filter button in code-behind__
 
-```VB
+<snippet id='radgridview-filtering-how-to-howto-hide-the-filter-button-example_2_hide_filter_button_in_code_behind-vb' />
 
-    Private Sub Grid_AutoGeneratingColumn(ByVal sender As Object, ByVal e As GridViewAutoGeneratingColumnEventArgs)
-		If e.ItemPropertyInfo.PropertyType Is GetType(String) Then
-			e.Column.IsFilteringDeferred = False
-			e.Column.ShowFilterButton = False
-		End If
-    End Sub
-```
 
 **Figure 1** and **Figure 2** demonstrate the two setups.
 

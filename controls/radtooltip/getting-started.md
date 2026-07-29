@@ -32,40 +32,7 @@ You can find the required assemblies for each control from the suite in the {% i
 In order to use __RadToolTip__ you should take advantage of the __RadToolTipService__. You can set the attached property __RadToolTipService.TooltipContent__ on some element in XAML in order to show tooltip over it.
 
 __Example 1__
-```XAML
-     <Grid x:Name="LayoutRoot" Background="White">
-        <Ellipse x:Name="ellipse"
-                 Width="80"
-                 Height="80"
-                 Fill="#FF1B9DDE"
-                 Stroke="#FF1B9DDE"
-                 StrokeThickness="2"
-                 Visibility="Visible"
-                   telerik:RadToolTipService.VerticalOffset="-5"
-                 telerik:RadToolTipService.Placement="Top"
-                 telerik:RadToolTipService.ToolTipContent="RadToolTip enables you to specify&#x0a;tooltips on various UI controls.">
-            <telerik:RadToolTipService.ToolTipContentTemplate>
-                <DataTemplate>
-                    <telerik:RadToolTipContentView>
-                        <TextBlock Text="{Binding}" />
-                    </telerik:RadToolTipContentView>
-                </DataTemplate>
-            </telerik:RadToolTipService.ToolTipContentTemplate>
-        </Ellipse>
-
-        <TextBlock Name="tBlock"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontFamily="Segoe UI"
-                   FontSize="16"
-                   Foreground="White"
-                   IsHitTestVisible="False">
-            <Run Text="Hover"/>
-            <LineBreak />
-            <Run Text=" Here" />
-        </TextBlock>
-     </Grid>
-```
+<snippet id='radtooltip-getting-started-block_1-xaml' />
 
 Figure 1 demonstrates how the code above is rendered on screen.{% if site.site_name == 'Silverlight' %}
 
@@ -76,37 +43,15 @@ Figure 1 demonstrates how the code above is rendered on screen.{% if site.site_n
 The same configuration can be achieved from code like this:
 
 __Example 2__
-```C#
-    RadToolTipService.SetToolTipContent(this.ellipse, "RadToolTip enables you to specify&#x0a;tooltips on various UI controls.");
-    RadToolTipService.SetPlacement(this.ellipse, System.Windows.Controls.Primitives.PlacementMode.Center);
-```
-```VB.NET
-    RadToolTipService.SetToolTipContent(Me.ellipse, "RadToolTip enables you to specify&#x0a;tooltips on various UI controls.")
-    RadToolTipService.SetPlacement(Me.ellipse, System.Windows.Controls.Primitives.PlacementMode.Center)
-```
+<snippet id='radtooltip-getting-started-block_2-cs' />
+<snippet id='radtooltip-getting-started-block_3-vb' />
 
 The __RadToolTipService__ controls the open/close functionality as well as the visual appearance of a __RadToolTip__ object. Also, the service provides a rich set of properties customizing the visualization of the __RadToolTip__ object.
 
 For example you can change the element next to which a tooltip will be opened. This can be achieved by setting the __RadToolTipService.PlacementTarget__ property
 
 __Example 3__
-```XAML
-    <StackPanel Orientation="Horizontal">
-		<Rectangle Width="30"
-		           Height="30"
-		           Margin="20 0"
-		           Fill="Red"
-		           telerik:RadToolTipService.Placement="Top"
-		           telerik:RadToolTipService.PlacementTarget="{Binding ElementName=rect}"
-		           telerik:RadToolTipService.ToolTipContent="ToolTip on foreign element"
-		           telerik:RadToolTipService.VerticalOffset="-5" />
-		<Rectangle x:Name="rect"
-		           Width="30"
-		           Height="30"
-		           VerticalAlignment="Center"
-		           Fill="Blue" />
-	</StackPanel>
-```
+<snippet id='radtooltip-getting-started-block_4-xaml' />
 
 
 Figure 2 shows how the ToolTip will be visualized with the above defined settings{% if site.site_name == 'Silverlight' %}
@@ -158,16 +103,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radtooltip-getting-started-block_5-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -181,12 +117,10 @@ __Figure 3__ shows a RadToolTip with the **Windows8** theme applied.
 
 * [Telerik UI for WPF ToolTip Component](https://www.telerik.com/products/wpf/tooltip.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}
-
-

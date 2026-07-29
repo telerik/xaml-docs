@@ -20,9 +20,7 @@ The pin functionality can be controlled using the following methods exposed by t
 
 	__Example 1: Calling the PinRowTop method__
 
-	```C#
-		virtualGrid.PinRowTop(1);
-	```
+	<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_1-cs' />
 
 	#### __Figure 1: RadVirtualGrid with pinned row at the top__
 
@@ -32,9 +30,7 @@ The pin functionality can be controlled using the following methods exposed by t
 
 	__Example 2: Calling the PinRowBottom method__
 
-	```C#
-		virtualGrid.PinRowBottom(1);
-	```
+	<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_2-cs' />
 
 	#### __Figure 2: RadVirtualGrid with pinned row at the bottom__
 
@@ -44,9 +40,7 @@ The pin functionality can be controlled using the following methods exposed by t
 
 	__Example 3: Calling the PinColumnLeft method__
 
-	```C#
-		virtualGrid.PinColumnLeft(1);
-	```
+	<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_3-cs' />
 
 	#### __Figure 3: RadVirtualGrid with pinned column on the left__
 
@@ -56,9 +50,7 @@ The pin functionality can be controlled using the following methods exposed by t
 
 	__Example 4: Calling the PinColumnRight method__
 
-	```C#
-		virtualGrid.PinColumnRight(1);
-	```
+	<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_4-cs' />
 
 	#### __Figure 4: RadVirtualGrid with pinned column on the right__
 
@@ -73,10 +65,7 @@ Unpinning an already pinned row or column can be achieved through the `UnpinRow`
 * `UnpinColumn(int index)`&mdash;Unpins a column at a given index.
 
 __Example 5: Unpin methods usage__  
-```C#
-	virtualGrid.UnpinRow(1);
-	virtualGrid.UnpinColumn(1);
-```
+<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_5-cs' />
 
 ## Commands Support
 

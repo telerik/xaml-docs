@@ -43,87 +43,7 @@ __RadPivotGrid__ relays on the __QuickStyle__ in order to get visualized correct
 
 
 
-```XAML
-	<pivot:QuickStyle x:Key="PivotGridQuickStyle">
-		<pivot:QuickStyle.HeaderRow>
-			<pivot:ElementProperties BorderThickness="1" BorderBrush="{StaticResource CellLines}"/>
-		</pivot:QuickStyle.HeaderRow>
-		<pivot:QuickStyle.HeaderColumn>
-			<pivot:ElementProperties BorderThickness="1" BorderBrush="{StaticResource CellLines}"/>
-		</pivot:QuickStyle.HeaderColumn>
-		<pivot:QuickStyle.HeaderCell>
-			<pivot:ElementProperties Background="{StaticResource HeaderCellFill}" BorderThickness="1" BorderBrush="{StaticResource CellLines}"/>
-		</pivot:QuickStyle.HeaderCell>
-		<pivot:QuickStyle.RowSubgroups>
-			<pivot:ElementProperties
-					FontWeight="Bold"
-					Background="{StaticResource SubHeadersFill}"
-					BorderThickness="1"
-					BorderBrush="{StaticResource CellLines}"
-					Foreground="{StaticResource CellsForeground}"/>
-		</pivot:QuickStyle.RowSubgroups>
-		<pivot:QuickStyle.ColumnSubgroups>
-			<pivot:ElementProperties
-					FontWeight="Bold"
-					Background="{StaticResource SubHeadersFill}"
-					BorderThickness="1"
-					BorderBrush="{StaticResource CellLines}"
-					Foreground="{StaticResource CellsForeground}"/>
-		</pivot:QuickStyle.ColumnSubgroups>
-		<pivot:QuickStyle.ColumnFirstAlternationPattern>
-			<pivot:AlternationElementProperties AlternationCount="1" BorderThickness="1" 
-	                                            BorderBrush="{StaticResource CellLines}" 
-	                                            Foreground="{StaticResource CellsForeground}" />
-		</pivot:QuickStyle.ColumnFirstAlternationPattern>
-		<pivot:QuickStyle.ColumnSecondAlternationPattern>
-			<pivot:AlternationElementProperties AlternationCount="1" BorderThickness="1" 
-	                                            BorderBrush="{StaticResource CellLines}" 
-	                                            Foreground="{StaticResource CellsForeground}" />
-		</pivot:QuickStyle.ColumnSecondAlternationPattern>
-		<pivot:QuickStyle.RowFirstAlternationPattern>
-			<pivot:AlternationElementProperties AlternationCount="1" BorderThickness="1" 
-	                                            BorderBrush="{StaticResource CellLines}" 
-	                                            Foreground="{StaticResource CellsForeground}" />
-		</pivot:QuickStyle.RowFirstAlternationPattern>
-		<pivot:QuickStyle.RowSecondAlternationPattern>
-			<pivot:AlternationElementProperties AlternationCount="1" BorderThickness="1" 
-	                                            BorderBrush="{StaticResource CellLines}" 
-	                                            Foreground="{StaticResource CellsForeground}" />
-		</pivot:QuickStyle.RowSecondAlternationPattern>
-		<pivot:QuickStyle.SubtotalRows>
-			<pivot:ElementProperties
-					FontWeight="Bold"
-					BorderThickness="1"
-					BorderBrush="{StaticResource CellLines}"
-					Background="{StaticResource RowSubTotalsFill}"
-					Foreground="{StaticResource CellsForeground}"/>
-		</pivot:QuickStyle.SubtotalRows>
-		<pivot:QuickStyle.SubtotalColumns>
-			<pivot:ElementProperties
-					FontWeight="Bold"
-					BorderThickness="1"
-					BorderBrush="{StaticResource CellLines}"
-					Background="{StaticResource ColumnSubTotalsFill}"
-					Foreground="{StaticResource CellsForeground}"/>
-		</pivot:QuickStyle.SubtotalColumns>
-		<pivot:QuickStyle.GrandTotalRow>
-			<pivot:ElementProperties
-					FontWeight="Bold"
-					Background="{StaticResource GrandTotalsFill}"
-					BorderThickness="1"
-					BorderBrush="{StaticResource CellLines}"
-					Foreground="{StaticResource CellsForeground}"/>
-		</pivot:QuickStyle.GrandTotalRow>
-		<pivot:QuickStyle.GrandTotalColumn>
-			<pivot:ElementProperties
-					FontWeight="Bold"
-					Background="{StaticResource GrandTotalsFill}"
-					BorderThickness="1"
-					BorderBrush="{StaticResource CellLines}"
-					Foreground="{StaticResource CellsForeground}"/>
-		</pivot:QuickStyle.GrandTotalColumn>
-	</pivot:QuickStyle>
-```
+<snippet id='radpivotgrid-styles-and-templates-quickstyles-block_1-xaml' />
 
 >important When applying a custom __QuickStyle__ all of the properties of the default style should be included in order to have a correct appearance. If there are missing properties, the corresponding elements will appear without any styling.
 
@@ -135,9 +55,7 @@ Afterwards the custom __QuickStyle__ should be applied the following way:
 
 
 
-```XAML
-	<pivot:RadPivotGrid x:Name="pivot" QuickStyle="{StaticResource PivotGridQuickStyle}" />
-```
+<snippet id='radpivotgrid-styles-and-templates-quickstyles-block_2-xaml' />
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/PivotGridQuickStyles).
 

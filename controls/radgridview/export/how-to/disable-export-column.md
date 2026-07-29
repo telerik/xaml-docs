@@ -13,20 +13,7 @@ position: 1
 When exporting with __ExportToXlsx__ or __ExportToPdf__ methods you can choose which columns to export by setting the __ExcludedColumns__ property for the __GridViewDocumentExportOptions__. The property was introduced in __Q3 2015 SP1__. When a given column is added to this collection, it will not be exported.
 
 __Example 4: Disabling the export of a particular column:__
-```C#
-	var opt = new GridViewDocumentExportOptions()
-	{
-    	ShowColumnHeaders = true,
-	};
-	opt.ExcludedColumns.Add(grid.Columns[0]);
+<snippet id='radgridview-export-how-to-disable-export-column-example_4_disabling_the_export_of_a_particular_column-cs' />
 
-	gridViewExport.ExportToPdf(stream, opt);
-```
-```VB.NET
-	Dim opt = New GridViewDocumentExportOptions() With { _
-		Key .ShowColumnHeaders = True _
-	}
-	opt.ExcludedColumns.Add(grid.Columns(0))
-	
-	gridViewExport.ExportToPdf(stream, opt)
-```
+<snippet id='radgridview-export-how-to-disable-export-column-example_4_disabling_the_export_of_a_particular_column-vb' />
+

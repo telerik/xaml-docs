@@ -16,48 +16,27 @@ __Data binding__ is a process of connecting the application User Interface and b
 
 One very important aspect of the data binding is the __DataContext__. It is the data object, which is assigned to the specific framework element. You can assign __DataContext__ both through code-behind and XAML: 
 
-```XAML
-	<telerik:RadTreeView DataContext="{StaticResource Categories}" />
-```
+<snippet id='radtreeview-populating-with-data-databinding-overview-block_1-xaml' />
 
-```C#
-	radTreeView.DataContext = new CategoryList();
-```
-```VB.NET
-	radTreeView.DataContext = New CategoryList()
-```
+<snippet id='radtreeview-populating-with-data-databinding-overview-block_2-cs' />
+<snippet id='radtreeview-populating-with-data-databinding-overview-block_3-vb' />
 
 The __DataContext__ property is inherited, e.g. if you assign a __DataContext__ to an element, all of its children will automatically have the same data context, unless you assign them a different data context. For example, if you have the following control structure: 
 
-```XAML
-	<Grid x:Name="LayoutRoot">
-	    <telerik:RadTreeView x:Name="radTreeView1"/>
-	    <telerik:RadTreeView x:Name="radTreeView2"/>      
-	</Grid>
-```
+<snippet id='radtreeview-populating-with-data-databinding-overview-block_4-xaml' />
 	
 You can simply assign the __DataContext__ to the __Grid__ control and both tree views will inherit it.
 
-```XAML
-	<Grid x:Name="LayoutRoot"DataContext="{StaticResource categories}">
-```
+<snippet id='radtreeview-populating-with-data-databinding-overview-block_5-xaml' />
 	
 Where the static resource __categories__ is defined in XAML as follows: 
 
-```XAML
-	<UserControl.Resources>
-	  <local:CategoryList x:Key="categories" />
-	</UserControl.Resources>
-```
+<snippet id='radtreeview-populating-with-data-databinding-overview-block_6-xaml' />
 	
 Or in code-behind: 
 
-```C#
-	LayoutRoot.DataContext = new CategoryList();
-```
-```VB.NET
-	LayoutRoot.DataContext = New CategoryList()
-```
+<snippet id='radtreeview-populating-with-data-databinding-overview-block_7-cs' />
+<snippet id='radtreeview-populating-with-data-databinding-overview-block_8-vb' />
 
 ## See Also
  * [Populating with Data - Declaratively]({%slug radtreeview-populating-with-data-declaratively%})

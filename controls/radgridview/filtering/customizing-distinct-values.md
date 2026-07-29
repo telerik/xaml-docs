@@ -21,9 +21,8 @@ __The distinct values filter__
 To change the default value of maximum `1000` distinct values loaded into the filter list, set the `DefaultDistinctValuesCount` property of `RadGridView`.
 
 __Setting the DefaultDistinctValuesCount__
-```XAML
-	<telerik:RadGridView DefaultDistinctValuesCount="2000" />
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-setting_the_defaultdistinctvaluescount-xaml' />
+
 
 ## Using the DistinctValuesLoading Event
 
@@ -32,62 +31,28 @@ The `DistinctValuesLoading` event of `RadGridView` is fired each time the filter
 To change the number or filter the distinct values that are displayed, use the `ItemsSource` property of the event arguments. 
 
 __Using the DistinctValuesLoading event__
-```C#
-	private void RadGridView_DistinctValuesLoading(object sender, Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
-	{
-		e.ItemsSource = new List<string>(){ "Value 1", "Value 2", "Value 3" };
-	}
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-using_the_distinctvaluesloading_event-cs' />
+
 
 ## Retrieving Columns Distinct Values
 
 RadGridView exposes the `GetDistinctValues` method that retrieves the distincts values of a column. The method has two overloads, that allows you to provide the distinct values limit (1000 by default) and to tell if the items that are filtered out by other filters should be included in the query.
 
 __Using the default overload of the GetDistinctValues method__
-```C#
-	private void RadGridView_DistinctValuesLoading(object sender, Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
-	{
-		var gridView = (RadGridView)sender;
-		bool shouldIncludeFilteredOutItems = false;
-		
-		// this call will return the first 1000 distinct values regardless of their actual count in the data source
-		e.ItemsSource = gridView.GetDistinctValues(e.Column, shouldIncludeFilteredOutItems);
-	}
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-using_the_default_overload_of_the_getdistinctvalues_method-cs' />
+
 
 __Using the second overload of the GetDistinctValues method to change the default distinct values limit__
-```C#
-	private void RadGridView_DistinctValuesLoading(object sender, Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
-	{
-		var gridView = (RadGridView)sender;
-		bool shouldIncludeFilteredOutItems = false;
-		
-		// this call will return the first 15 distinct values regardless of their actual count in the data source
-		e.ItemsSource = gridView.GetDistinctValues(e.Column, shouldIncludeFilteredOutItems, 15);
-	}
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-using_the_second_overload_of_the_getdistinctvalues_method_to_change_the_default_distinct_values_limit-cs' />
+
 
 ## Displaying Case Insensitive Distinct Values
 
 By default, the distinct values are case-sensitive. In order to populate them case-insensitive and then filter on them, use the `Filtered` and `DistinctValuesLoading` events of `RadGridView`.
 		
 __Setting up the distinct filter to show case insensitive values__
-```C#
-	private void RadGridView_Filtered(object sender, Telerik.Windows.Controls.GridView.GridViewFilteredEventArgs e)
-	{
-		IEnumerable<OperatorValueFilterDescriptorBase> descriptors = e.ColumnFilterDescriptor.DistinctFilter.FilterDescriptors;
-	    foreach (OperatorValueFilterDescriptorBase descriptor in descriptors)
-	    {
-	        descriptor.IsCaseSensitive = false;
-	    }
-	}
-	
-	private void RadGridView_DistinctValuesLoading(object sender, Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
-	{
-		var gridView = (RadGridView)sender;
-	    e.ItemsSource = gridView.GetDistinctValues(e.Column, false).OfType<string>().Select(x => x.ToLower()).Distinct();
-	}
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-setting_up_the_distinct_filter_to_show_case_insensitive_values-cs' />
+
 
 ## Optimizing Distinct Filter Query
 
@@ -96,9 +61,8 @@ By default, the distinct filtering uses a condition of the form 'Member IsEqualT
 When the optimization is enabled, the GridView will check the amount of distinct values checked. If this amount is less than or equal to half of all distinct values, the original query will be generated. If, however, the amount of distinct values checked is more than half of all distinct values, an inverted statement like this will be generated: (Member IsNotEqualTo uncheckedDistinctValue_0) ... AND ... (Member IsNotEqualTo uncheckedDistinctValue_N). If absolutely all distinct values are checked, then no statement will be generated at all, because this effectively means that there is no filter applied. Setting the property to `true` will try to generate the shortest possible LINQ Where clause.
 
 __Setting the OptimizeDistinctFilterQuery property__
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" OptimizeDistinctFilterQuery="True"/>
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-setting_the_optimizedistinctfilterquery_property-xaml' />
+
 
 >tip In case, the optimization is enabled, the `DefaultDistinctValuesCount` property should be set to a value equal or bigger then the count of all expected distinct values.
 
@@ -107,9 +71,8 @@ __Setting the OptimizeDistinctFilterQuery property__
 The distinct values filter of the column has a built-in search box that allows you to filter the values in the displayed list. To enable this feature, set the `EnableDistinctValuesFiltering` property of the associated `GridViewColumn`.
 
 __Setting the EnableDistinctValuesFiltering property__
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" EnableDistinctValuesFiltering="True"/>
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-setting_the_enabledistinctvaluesfiltering_property-xaml' />
+
 
 __The distinct values filter search box__  
 
@@ -120,18 +83,16 @@ The search box of the distinct values filter comes with several search modes - `
 The current mode can be changed via the `DistinctValuesSearchMode` property of the `GridViewColumn`. The default mode is `StartsWith`.
 
 __Setting the DistinctValuesSearchMode property__
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" EnableDistinctValuesFiltering="True" DistinctValuesSearchMode="Contains"/>
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-setting_the_distinctvaluessearchmode_property-xaml' />
+
 
 ## Grouping DateTime Values
 
 By default the distinct values of type `DateTime` are shown in a flat list where each record shows the full date-time value. To group the values by date-time component (year, month and day), change the distinct values display mode. This is done by setting the `DistinctValuesDisplayMode` property of the associated `GridViewColumn` to `Tree`.
 
 __Setting the DistinctValuesDisplayMode property__
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding MyDate}" DistinctValuesDisplayMode="Tree"/>
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-setting_the_distinctvaluesdisplaymode_property-xaml' />
+
 
 __The distinct values display modes comparison__  
 
@@ -142,31 +103,8 @@ __The distinct values display modes comparison__
 By default the distinct values list will display the raw values of the data items. To change the appearance of the values, override the `FilteringDisplayFunc` function of the `GridViewDataColumn`.
 
 __Creating a custom column and overridding the FilteringDisplayFunc__
-```C#
-	public class CustomGridViewDataColumn : GridViewDataColumn 
-    { 
-        private Func<object, object> filteringDisplayFunc; 
- 
-        public CustomGridViewDataColumn() 
-        { 
-            this.filteringDisplayFunc = GetDistinctValueDisplayObject; 
-        } 
- 
-        private object GetDistinctValueDisplayObject(object arg) 
-        { 
-			// the "arg" object is the raw data value of the cell 
-			bool isEmployed = (bool)args;
-			return isEmployed ? "Is employed" : "Is not employed";  
-			
-			// you can return also a UIElement here if you need more custom visualization
-        } 
- 
-        protected override Func<object, object> FilteringDisplayFunc 
-        { 
-            get { return filteringDisplayFunc; } 
-        } 
-    } 
-```
+<snippet id='radgridview-filtering-customizing-distinct-values-creating_a_custom_column_and_overridding_the_filteringdisplayfunc-cs' />
+
 
 The following [KB article]({%slug kb-gridview-filteringdisplayfunc%}) and the [ImageColumnFiltering SDK example](https://github.com/telerik/xaml-sdk/tree/master/GridView/ImageColumnFiltering) contain runnable examples showing the `FilteringDisplayFunc` feature.
 

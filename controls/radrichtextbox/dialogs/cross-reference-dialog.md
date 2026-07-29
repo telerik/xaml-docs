@@ -23,13 +23,9 @@ The dialog can be opened from the __Cross-reference__ button in the __References
 The dialog can be shown by executing the `ShowInsertCrossReferenceWindowCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
 __Executing the show dialog command__
-```C#
-	this.richTextBox.Commands.ShowInsertCrossReferenceWindowCommand.Execute(null);
-```
+<snippet id='radrichtextbox-dialogs-cross-reference-dialog-block_1-cs' />
 
 Alternatively, call the `ShowInsertCrossReferenceWindow` method of `RadRichTextBox`.
 
 __Using the show dialog method__
-```C#
-	this.richTextBox.ShowInsertCrossReferenceWindow();
-```
+<snippet id='radrichtextbox-dialogs-cross-reference-dialog-block_2-cs' />

@@ -26,60 +26,12 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 
 
 
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	<telerik:RadToolBar Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
-	<telerik:RadToolBarTray Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" />
-```
+<snippet id='radtoolbar-howto-orientation-block_1-xaml' />
 
 
 
-```C#
-	using Telerik.Windows.Controls;
-
-	private void ToggleOrientation_Click(object sender, RoutedEventArgs e)
-	{
-		if (this.myToolbarTray.Orientation == Orientation.Horizontal)
-		{
-			this.myToolbarTray.Orientation = Orientation.Vertical;
-			this.myToolbarTray.VerticalAlignment = VerticalAlignment.Stretch;
-			this.myToolbarTray.HorizontalAlignment = HorizontalAlignment.Left;
-			this.myToolbar.Orientation = Orientation.Vertical;
-			this.myToolbar.VerticalAlignment = VerticalAlignment.Stretch;
-			this.myToolbar.HorizontalAlignment = HorizontalAlignment.Left;
-		}
-		else
-		{
-			this.myToolbarTray.Orientation = Orientation.Horizontal;
-			this.myToolbarTray.VerticalAlignment = VerticalAlignment.Top;
-			this.myToolbarTray.HorizontalAlignment = HorizontalAlignment.Stretch;
-			this.myToolbar.Orientation = Orientation.Horizontal;
-			this.myToolbar.VerticalAlignment = VerticalAlignment.Top;
-			this.myToolbar.HorizontalAlignment = HorizontalAlignment.Stretch;
-		}
-	}
-```
-```VB.NET
-	Imports Telerik.Windows.Controls
-
-	Private Sub ToggleOrientation_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		If Me.myToolbarTray.Orientation = Orientation.Horizontal Then
-			Me.myToolbarTray.Orientation = Orientation.Vertical
-			Me.myToolbarTray.VerticalAlignment = VerticalAlignment.Stretch
-			Me.myToolbarTray.HorizontalAlignment = HorizontalAlignment.Left
-			Me.myToolbar.Orientation = Orientation.Vertical
-			Me.myToolbar.VerticalAlignment = VerticalAlignment.Stretch
-			Me.myToolbar.HorizontalAlignment = HorizontalAlignment.Left
-		Else
-			Me.myToolbarTray.Orientation = Orientation.Horizontal
-			Me.myToolbarTray.VerticalAlignment = VerticalAlignment.Top
-			Me.myToolbarTray.HorizontalAlignment = HorizontalAlignment.Stretch
-			Me.myToolbar.Orientation = Orientation.Horizontal
-			Me.myToolbar.VerticalAlignment = VerticalAlignment.Top
-			Me.myToolbar.HorizontalAlignment = HorizontalAlignment.Stretch
-		End If
-	End Sub	
-```
+<snippet id='radtoolbar-howto-orientation-block_2-cs' />
+<snippet id='radtoolbar-howto-orientation-block_3-vb' />
 
 ## Preview
 ![{{ site.framework_name }} RadToolBar Orientation](images/RadToolBar_orientation.png)

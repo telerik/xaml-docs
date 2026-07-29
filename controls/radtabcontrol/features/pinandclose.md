@@ -21,11 +21,7 @@ The pin button of the RadTabItem is collapsed by default. Pin functionality can 
 > The PinnedItems collection of the RadTabControl is __ReadOnlyCollection<RadTabItem>__ so no items can be added or removed. You can only use this collection for iteration or to get the current number of the pinned tabs by using its __Count()__ method.
 
 __Example 1: Show the Pin button__
-```XAML
-	<Style TargetType="telerik:RadTabItem" >
-		<Setter Property="PinButtonVisibility" Value="Visible"/>
-	</Style>
-```
+<snippet id='radtabcontrol-features-pinandclose-block_1-xaml' />
 
 When an item is pinned it will be moved to the lowest index which is not occupied. For example, when no items are pinned, the first pinned item will move it to index 0 of __PinnedItems__ collection. If there are 3 pinned items, they will be in indices: 0,1,2. Pinning another item will move it to position 3.
 
@@ -42,20 +38,14 @@ The close button of the RadTabItem is collapsed by default. The button can be sh
 > RadTabItem can be close by pressing the mouse middle button while the mouse is over it.
 
 __Example 2: Show the Close button__
-```XAML
-	<Style TargetType="telerik:RadTabItem" >
-		<Setter Property="CloseButtonVisibility" Value="Visible"/>
-	</Style>
-```
+<snippet id='radtabcontrol-features-pinandclose-block_2-xaml' />
 
 ![{{ site.framework_name }} RadTabControl Tab Items with Close Button](images/tabcontrol-closebutton-tabitems.png)
 
 To prevent the tab from closing when the middle mouse button is pressed, set the __CloseTabsOnMouseMiddleButtonDown__ property of RadTabControl to False.
 
 __Example 3: Disable closing the tabs when the middle mouse button is pressed__
-```XAML
-	<telerik:RadTabControl CloseTabsOnMouseMiddleButtonDown="False" />
-```
+<snippet id='radtabcontrol-features-pinandclose-block_3-xaml' />
 
 ## Events
 
@@ -84,18 +74,14 @@ RadTabControl exposes its pinned/unpinned functionality through two commands tha
 When executing the command on a given RadTabItem the item will be pinned/unpinned depending on its current state.
 
 __Example 4: Execute the TogglePin command__
-```C#
-	TabItemCommands.TogglePin.Execute(null,myRadTabItem);
-```
+<snippet id='radtabcontrol-features-pinandclose-block_4-cs' />
 
 ### Close command
 
 When executing the command on a given RadTabItem the item will be close.
 
 __Example 5: Execute the Close command__
-```C#
-	TabItemCommands.Close.Execute(null,myRadTabItem);
-```
+<snippet id='radtabcontrol-features-pinandclose-block_5-cs' />
 
 ## Notes
 

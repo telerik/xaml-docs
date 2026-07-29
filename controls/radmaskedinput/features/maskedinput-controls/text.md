@@ -28,15 +28,7 @@ You can find more info [here](http://www.telerik.com/help/wpf/installation-insta
 The following example shows how to define the control and set few of its properties.
 
 __Define RadMaskedTextInput in XAML__
-```XAML
-	<telerik:RadMaskedTextInput EmptyContent="Enter digits"
-	                            InputBehavior="Replace"
-	                            Mask="a20"
-	                            SelectionOnFocus="SelectAll"
-	                            TextMode="PlainText"
-	                            UpdateValueEvent="LostFocus"
-	                            Value="Sample Text" />
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-text-block_1-xaml' />
 
 __RadMaskedTextInput example__
 
@@ -49,41 +41,10 @@ RadMaskedTextInput's `Value` property is of type __string__ and you have to bind
 >important Binding to __object__ is not support and may result in unpredictable behavior.
 
 __Define the view model__
-```XAML
-	public class ViewModel : ViewModelBase
-    {
-        private string text;
-
-        public ViewModel()
-        {
-            this.Text = "Sample Text";
-        }
-
-        public string Text
-        {
-            get { return this.text; }
-            set
-            {
-                if (this.text != value)
-                {
-                    this.text = value;
-                    this.OnPropertyChanged("Text");
-                }
-            }
-        }
-    }
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-text-block_2-xaml' />
 
 __Binding the Value property__
-```C#
-	<telerik:RadMaskedTextInput EmptyContent="Enter digits"
-	                            InputBehavior="Replace"
-	                            Mask="a20"
-	                            SelectionOnFocus="SelectAll"
-	                            TextMode="PlainText"
-	                            UpdateValueEvent="LostFocus"
-	                            Value="{Binding Text}" />
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-text-block_3-cs' />
 
 ## Setting the Value Mode
 
@@ -96,11 +57,7 @@ Read more about this in the [Value Mode]({%slug radmaskedinput-features-value-mo
 You can format the entered value using the `FormatString` property of the RadMaskedTextInput control. The property works with the standard .NET string formats. The format will be applied only when the control is unfocused.
 
 __Setting the FormatString property__
-```XAML
-	<telerik:RadMaskedTextInput Value="Adam"
-								Mask="a4" 
-	                            FormatString="{}UserName: {0} NickName: {0}"/>
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-text-block_4-xaml' />
 
 __Showing the text value when the control is focused__
 
@@ -115,9 +72,7 @@ __Showing the text value when the control is unfocused__
 The `RadMaskedTextInput` control allows you to span the input text on multiple lines. This is controlled via the `AcceptsReturn` property and its default value is __True__. To disable the text to be inputted on multiple lines, set the AcceptsReturn property to __False__.
 
 __Disable multi-line text input__
-```XAML
-    <telerik:RadMaskedTextInput AcceptsReturn="False"/>
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-text-block_5-xaml' />
 
 ## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})

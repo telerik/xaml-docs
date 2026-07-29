@@ -37,9 +37,8 @@ You can add __RadComboBox__ manually by writing the XAML code in __Example 1__. 
 
 __Example 1: Adding RadComboBox in XAML__
 
-```XAML
-	<telerik:RadComboBox Width="100" />
-```
+<snippet id='radcombobox-getting-started-example_1_adding_radcombobox_in_xaml-xaml' />
+
 
 
 >In order to use __RadComboBox__ in XAML you have to add the namespace declaration shown in __Example 2__:
@@ -59,12 +58,8 @@ In order to populate the __RadComboBox__ control with data in XAML, you should a
 
 __Example 3: Adding RadComboBoxItems in XAML__
 
-```XAML
-	<telerik:RadComboBox Width="100">
-        <telerik:RadComboBoxItem Content="Item 1" />
-        <telerik:RadComboBoxItem Content="Item 2" />
-    </telerik:RadComboBox>
-```
+<snippet id='radcombobox-getting-started-example_3_adding_radcomboboxitems_in_xaml-xaml' />
+
 
 Running the application will result in a populated __RadComboBox__ as shown in __Figure 2__.
 
@@ -75,104 +70,18 @@ Adding static __RadComboBoxItems__ in XAML is good in scenarios when you know in
 
 __Example 4: Simple business class__
 
-```C#  
-	public class Car
-	{
-		public string Make { get; set; }
-		public string Model { get; set; }
+<snippet id='radcombobox-getting-started-example_4_simple_business_class-cs' />
 
-		public Car(string make, string model)
-		{
-			this.Make = make;
-			this.Model = model;
-		}
-	} 
-```
-```VB.NET  
-	Public Class Car
-		Public Property Make() As String
-			Get
-				Return m_Make
-			End Get
-			Set(value As String)
-				m_Make = Value
-			End Set
-		End Property
-		Private m_Make As String
+<snippet id='radcombobox-getting-started-example_4_simple_business_class-vb' />
 
-		Public Property Model() As String
-			Get
-				Return m_Model
-			End Get
-			Set(value As String)
-				m_Model = Value
-			End Set
-		End Property
-		Private m_Model As String
-
-		Public Sub New(make As String, model As String)
-			Me.Make = make
-			Me.Model = model
-		End Sub
-	End Class
-```
 
 Next, you should create the view model containing a collection of Car objects. 
 
 __Example 5: View model containing ObservableCollection of sample data__
-```C#
-	public class MyViewModel
-	{
-		private ObservableCollection<Car> cars;
+<snippet id='radcombobox-getting-started-example_5_view_model_containing_observablecollection_of_sample_data-cs' />
 
-		public ObservableCollection<Car> Cars
-		{
-			get
-			{
-				if (this.cars == null)
-				{
-					this.cars = this.CreateCars();
-				}
-				return this.cars;
-            }
-        }
+<snippet id='radcombobox-getting-started-example_5_view_model_containing_observablecollection_of_sample_data-vb' />
 
-        private ObservableCollection<Car> CreateCars()
-        {
-            ObservableCollection<Car> cars = new ObservableCollection<Car>() 
-            { 
-                new Car("Opel", "Vectra"),
-                new Car("Ford", "Focus"),
-                new Car("Fiat", "Bravo")
-            };      
-            return cars;
-        }
-    }
-```
-```VB.NET
-	Public Class MyViewModel
-    
-		Private m_cars As ObservableCollection(Of Car)
-
-		Public ReadOnly Property Cars() As ObservableCollection(Of Car)
-			Get
-				If Me.m_cars Is Nothing Then
-					Me.m_cars = Me.CreateCars()
-				End If
-				Return Me.m_cars
-			End Get
-		End Property
-
-		Private Function CreateCars() As ObservableCollection(Of Car)
-			Dim cars As New ObservableCollection(Of Car)() From {
-				New Car("Opel", "Vectra"),
-				New Car("Ford", "Focus"),
-				New Car("Fiat", "Bravo")
-			}
-			Return cars
-		End Function
-	End Class
-```
 
 Now that you have prepared the needed sample data, it is time to bind __RadComboBox__ to it. For that purpose, you should set the __RadComboBox's ItemsSource__ property to the collection of cars. Additionally, you should set __DisplayMemberPath__ property to mark which property of the business object will be used as its visual representation inside __RadComboBox__.
 
@@ -180,13 +89,8 @@ __Example 6__ demonstrates how you can bind the ItemsSource collection in XAML. 
 
 __Example 6: Bind RadComboBox__
 
-```XAML
-    <Grid.Resources>
-        <local:MyViewModel x:Key="MyViewModel" />
-    </Grid.Resources>
-    <telerik:RadComboBox Width="100" DataContext="{StaticResource MyViewModel}" ItemsSource="{Binding Cars}" 
-		DisplayMemberPath="Make" />
-```
+<snippet id='radcombobox-getting-started-example_6_bind_radcombobox-xaml' />
+
 
 Running the application at this stage will result in a populated __RadComboBox__ like in __Figure 3__.
 
@@ -207,18 +111,16 @@ The __RadComboBox__ can be editable, allowing the user to type in its text box, 
 To open or close the dropdown content of RadComboBox manually, set its __IsDropDownOpen__ property.
 
 __Example 7: Open dropdown manually__
-```XAML
-	<telerik:RadComboBox IsDropDownOpen="True" />
-```
+<snippet id='radcombobox-getting-started-example_7_open_dropdown_manually-xaml' />
+
 
 ## Setting DropDown Size
 
 RadComboBox allows you to set the width and the max height of the dropdown content. To do this, set the __DropDownWidth__ and __MaxDropDownHeight__ properties of RadComboBox.
 
 __Example 8: Set dropdown content size__
-```XAML
-	<telerik:RadComboBox MaxDropDownHeight="200" DropDownWidth="150" />
-```
+<snippet id='radcombobox-getting-started-example_8_set_dropdown_content_size-xaml' />
+
 
 ## Setting a Theme
 
@@ -238,17 +140,8 @@ To change the theme, you can follow the steps below:
 __Example 9__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 9: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radcombobox-getting-started-example_9_merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

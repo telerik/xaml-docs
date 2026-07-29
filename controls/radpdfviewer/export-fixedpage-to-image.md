@@ -13,10 +13,7 @@ position: 8
 RadPdfViewer provides an API for exporting a PDF document page to an image. This can be done with the __ThumbnailFactory__ class. The class exposes a single method - __CreateThumbnail__ - which accepts objects of type __RadFixedPage__ and __Size__, and returns an __ImageSource__ object.
 
 __Example 1: Using the ThumbnailFactory's method__  
-```C#
-	ThumbnailFactory thumbnailFactory = new ThumbnailFactory();
-	ImageSource imageSource = thumbnailFactory.CreateThumbnail(radFixedPageInstance, new Size(150, 250));
-```
+<snippet id='radpdfviewer-export-fixedpage-to-image-block_1-cs' />
 
 The __ThumbnailFactory__ class is defined in the __Telerik.Windows.Documents.UI__ namespace.
 

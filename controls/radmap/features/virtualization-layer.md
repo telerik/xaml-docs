@@ -35,16 +35,7 @@ Specifying the size of cell for the zoom level affects to a number of requests t
 Here is a sample Virtualization Layer declaration:        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:VirtualizationLayer x:Name="virtualizationLayer">
-	        <telerik:VirtualizationLayer.ZoomLevelGridList>
-	            <telerik:ZoomLevelGrid MinZoom="3"/>
-	            <telerik:ZoomLevelGrid MinZoom="6"/>
-	        </telerik:VirtualizationLayer.ZoomLevelGridList>
-	    </telerik:VirtualizationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-virtualization-layer-block_1-xaml' />
 
 ## Virtualization Source
 
@@ -69,138 +60,14 @@ In the __BackgroundItemsRequest()__ method you have to implement your logic for 
 Here is an example of how to implement simple static functionality in the __BackgroundItemsRequest()__ method:
 
 
-```C#
-	public class MapVirtualizationSource : IMapVirtualizationSource
-	{
-	    static readonly Location bulgariaLocation = new Location(42.7669999748468, 25.2819999307394);
-	    static readonly Location sofiaLocation = new Location(42.6957539183824, 23.3327663758679);
-	
-	    Ellipse BulgariaEllipse { get; set; }
-	    Ellipse SofiaEllipse { get; set; }
-	
-	    public MapVirtualizationSource()
-	    {
-	        //Exectued ot UI thread
-	        BulgariaEllipse = new Ellipse();
-	        BulgariaEllipse.Width = 15;
-	        BulgariaEllipse.Height = 15;
-	        BulgariaEllipse.Fill = new SolidColorBrush(Colors.Red);
-	        BulgariaEllipse.SetValue(MapLayer.LocationProperty, bulgariaLocation);
-	        MapLayer.SetHotSpot(BulgariaEllipse, new HotSpot { X = 0.5, Y = 0.5 });
-	        ToolTipService.SetToolTip(BulgariaEllipse, "Bulgaria");
-	
-	        SofiaEllipse = new Ellipse();
-	        SofiaEllipse.Width = 20;
-	        SofiaEllipse.Height = 20;
-	        SofiaEllipse.Stroke = new SolidColorBrush(Colors.Red);
-	        SofiaEllipse.Fill = new SolidColorBrush(Colors.Transparent);
-	        SofiaEllipse.StrokeThickness = 3;
-	        SofiaEllipse.SetValue(MapLayer.LocationProperty, sofiaLocation);
-	        MapLayer.SetHotSpot(SofiaEllipse, new HotSpot { X = 0.5, Y = 0.5 });
-	        ToolTipService.SetToolTip(SofiaEllipse, "Sofia");
-	    }
-	
-	    public void BackgroundItemsRequest(object sender, BackgroundItemsRequestEventArgs e)
-	    {
-	        LocationRect currentRegion = new LocationRect(e.UpperLeft, e.LowerRight);
-	
-	        List<object> visibleItems = new List<object>();
-	
-	        if (currentRegion.Contains(bulgariaLocation))
-	        {
-	            if (e.MinZoom == 3)
-	            {
-	                visibleItems.Add(this.BulgariaEllipse);
-	            }
-	            else if (e.MinZoom == 6)
-	            {
-	                visibleItems.Add(this.SofiaEllipse);
-	            }
-	        }
-	        e.CompleteItemsRequest(visibleItems);
-	    }
-	}
-```
-```VB.NET
-	Public Class MapVirtualizationSource Implements IMapVirtualizationSource
-		Shared ReadOnly bulgariaLocation As New Location(42.7669999748468, 25.2819999307394)
-		Shared ReadOnly sofiaLocation As New Location(42.6957539183824, 23.3327663758679)
-	
-		Private Property BulgariaEllipse() As Ellipse
-			Get
-				Return m_BulgariaEllipse
-			End Get
-			Set
-				m_BulgariaEllipse = Value
-			End Set
-		End Property
-		Private m_BulgariaEllipse As Ellipse
-		Private Property SofiaEllipse() As Ellipse
-			Get
-				Return m_SofiaEllipse
-			End Get
-			Set
-				m_SofiaEllipse = Value
-			End Set
-		End Property
-		Private m_SofiaEllipse As Ellipse
-	
-		Public Sub New()
-			'Exectued ot UI thread'
-			BulgariaEllipse = New Ellipse()
-			BulgariaEllipse.Width = 15
-			BulgariaEllipse.Height = 15
-			BulgariaEllipse.Fill = New SolidColorBrush(Colors.Red)
-			BulgariaEllipse.SetValue(MapLayer.LocationProperty, bulgariaLocation)
-			MapLayer.SetHotSpot(BulgariaEllipse, New HotSpot() With { .X = 0.5,  .Y = 0.5 })
-			ToolTipService.SetToolTip(BulgariaEllipse, "Bulgaria")
-	
-			SofiaEllipse = New Ellipse()
-			SofiaEllipse.Width = 20
-			SofiaEllipse.Height = 20
-			SofiaEllipse.Stroke = New SolidColorBrush(Colors.Red)
-			SofiaEllipse.Fill = New SolidColorBrush(Colors.Transparent)
-			SofiaEllipse.StrokeThickness = 3
-			SofiaEllipse.SetValue(MapLayer.LocationProperty, sofiaLocation)
-			MapLayer.SetHotSpot(SofiaEllipse, New HotSpot() With { .X = 0.5, .Y = 0.5 })
-			ToolTipService.SetToolTip(SofiaEllipse, "Sofia")
-		End Sub
-	
-		Public Sub BackgroundItemsRequest(sender As Object, e As BackgroundItemsRequestEventArgs)
-			Dim currentRegion As New LocationRect(e.UpperLeft, e.LowerRight)
-	
-			Dim visibleItems As New List(Of Object)()
-	
-			If currentRegion.Contains(bulgariaLocation) Then
-				If e.MinZoom = 3 Then
-					visibleItems.Add(Me.BulgariaEllipse)
-				ElseIf e.MinZoom = 6 Then
-					visibleItems.Add(Me.SofiaEllipse)
-				End If
-			End If
-			e.CompleteItemsRequest(visibleItems)
-		End Sub
-	End Class	
-```
+<snippet id='radmap-features-virtualization-layer-block_2-cs' />
+<snippet id='radmap-features-virtualization-layer-block_2-vb' />
 
 You can set the virtualization source to a new instance of the *MapVirtualizationSource* and create a new definition for the __OpenStreetMap__ provider:        
 
 
-```C#
-	public MainWindow()
-	{
-	    InitializeComponent();
-	    this.radMap.Provider = new OpenStreetMapProvider();
-	    this.virtualizationLayer.VirtualizationSource = new MapVirtualizationSource();
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		Me.radMap.Provider = New OpenStreetMapProvider()
-		Me.virtualizationLayer.VirtualizationSource = New MapVirtualizationSource()
-	End Sub
-```
+<snippet id='radmap-features-virtualization-layer-block_3-cs' />
+<snippet id='radmap-features-virtualization-layer-block_3-vb' />
 
 The result:
 

@@ -28,9 +28,7 @@ The default option behaves similarly for both __Flat and Hierarchical__ [RenderM
 
 __Example 1: RadPropertyGrid with Default EditMode__
 
-```XAML
-	<telerik:RadPropertyGrid RenderMode="Flat" EditMode="Default"/>
-```
+<snippet id='radpropertygrid-features-edit-modes-block_1-xaml' />
 
 __Figure 1__: RadPropertyGrid with Default EditMode
 
@@ -46,9 +44,7 @@ It relies on PropertyDefinition’s Binding property. Setting this mode is not s
 
 __Example 2: RadPropertyGrid with EditMode set to Single__
 
-```XAML
-	<telerik:RadPropertyGrid RenderMode="Flat" EditMode="Single"/>
-```
+<snippet id='radpropertygrid-features-edit-modes-block_2-xaml' />
 
 __Figure 2__: RadPropertyGrid with Single EditMode
 
@@ -70,19 +66,8 @@ If the edit operation is successfully initiated, RadPropertyGrid’s __Beginning
 
 __Example 3: Canceling the edit as BeginningEdit event is raised__
 
-```C#
-	void RpgBeginningEdit(object sender, PropertyGridBeginningEditEventArgs e)
-	{
-	    // Custom logic
-	    e.Cancel = true;
-	}
-```
-```VB
-	Private Sub RpgBeginningEdit(sender As Object, e As PropertyGridBeginningEditEventArgs)
-	    ' Custom logic
-	    e.Cancel = True
-	End Sub
-```
+<snippet id='radpropertygrid-features-edit-modes-block_3-cs' />
+<snippet id='radpropertygrid-features-edit-modes-block_4-vb' />
 
 Then __PropertyGridField__’s display content (TextBlock) is replaced by an editor.
 

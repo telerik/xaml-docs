@@ -14,14 +14,8 @@ When the RadGridView is read-only or bound to a collection that does not impleme
 
 __Example 1: Inser New Row in ReadOnly RadGridView__
 
-```C#
-	private void Button1_Click(object sender, RoutedEventArgs e)
-	{
-		var item = new Club() { Name = "New Club" };
-		this.myGridView.Items.AddNewItem(item);
-		this.myGridView.SelectedItem = item; // select the new row if required
-	}
-```
+<snippet id='radgridview-how-to-add-new-row-read-only-grid-example_1_inser_new_row_in_readonly_radgridview-cs' />
+
 
 ## See Also
 

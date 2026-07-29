@@ -42,26 +42,7 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 
 #### [XAML] Example 1: Default UI
 
-```XAML
-
-	<Grid>
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition/>
-	    </Grid.RowDefinitions>
-	    <telerik:RadPdfViewerToolBar RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}" SignaturePanel="{Binding ElementName=signaturePanel, Mode=OneTime}"/>
-	    <telerik:SignaturePanel x:Name="signaturePanel" PdfViewer="{Binding ElementName=pdfViewer, Mode=OneWay}" Grid.Row="1"/>
-	    <Grid Grid.Row="2">
-	        <Grid.ColumnDefinitions>
-	            <ColumnDefinition Width="Auto"/>
-	            <ColumnDefinition Width="*"/>
-	        </Grid.ColumnDefinitions>
-	        <telerik:RadPdfViewerNavigationPane RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}"/>
-	        <telerik:RadPdfViewer x:Name="pdfViewer" Grid.Column="1" DataContext="{Binding CommandDescriptors, ElementName=pdfViewer}" telerik:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterFindDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterContextMenu="True"/>
-	    </Grid>
-	</Grid>
-```  
+<snippet id='radpdfviewer-default-ui-block_1-xaml' />
  
 ## Customizing the Default UI
 
@@ -76,15 +57,7 @@ The default value for all of the ToolBar Customization options is `true`. Unchec
 
 #### [XAML] Example 2: Using the properties of RadPdfViewerToolBar
 
-```XAML
-
-	<telerik:RadPdfViewerToolBar RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}" 
-	                                HasPrintButton="False" HasSaveButton="False" HasSignatureButton="False" 
-	                                HasZoomOutButton="False" HasZoomInButton="False" HasPercentComboBox="False" 
-	                                HasPanTextSelectionGroup="False" HasPageUpButton="False" HasPagesCountGroup="False" 
-	                                HasPageDownButton="False" HasOpenButton="False" HasFitToWidthButton="False" 
-	                                HasFitToPageButton="False" HasCounterclockwiseButton="False" HasClockwiseButton="False"/>
-```  
+<snippet id='radpdfviewer-default-ui-block_2-xaml' />
 
 
 ### Customizing the Template of RadPdfViewerToolBar

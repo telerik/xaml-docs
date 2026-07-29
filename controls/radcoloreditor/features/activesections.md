@@ -35,9 +35,8 @@ So How to use the ActiveSections property?
 In XAML , just list your ActiveSections with comma, for example like so:
 
 
-```XAML
-    <telerik:RadColorEditor  ActiveSections="HuePad, ColorModesPanel" />
-```
+<snippet id='radcoloreditor-features-activesections-block_1-xaml' />
+
 
 This code produces the following result:
 
@@ -46,12 +45,10 @@ This code produces the following result:
 In code behind you have to use the bitwise or:
 
 
-```C#
-    this.colorEditor.ActiveSections = ActiveSectionTypes.HueSaturationPad | ActiveSectionTypes.LuminancePad | ActiveSectionTypes.ColorModesPanel;
-```
-```VB.NET
-    Me.colorEditor.ActiveSections = ActiveSectionTypes.HueSaturationPad Or ActiveSectionTypes.LuminancePad Or ActiveSectionTypes.ColorModesPanel		
-```
+<snippet id='radcoloreditor-features-activesections-block_2-cs' />
+
+<snippet id='radcoloreditor-features-activesections-block_2-vb' />
+
 
 ![active Sections 3](images/activeSections3.png)
 

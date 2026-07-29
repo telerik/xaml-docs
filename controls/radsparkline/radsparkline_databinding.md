@@ -55,98 +55,21 @@ The following code snippets demonstrate how to databind RadSparkLine to generic 
 Create new *RadLinearSparkline* in XAML and turn on visibility for Indicators as follows:
 
 
-```XAML
-    <telerik:RadLinearSparkline Width="150" Height="50" x:Name="myLinearSparkline" ShowFirstPointIndicator="True" ShowLastPointIndicator="True" ShowHighPointIndicators="True" ShowLowPointIndicators="True"/>
-```
+<snippet id='radsparkline-radsparkline-databinding-block_1-xaml' />
 
 Set the List as datasource for the SparkLine using the *ItemsSource *property of the RadLinearSparkline:
 
 
-```C#
-	Random r = new Random();
-	List<double> myData = new List<double>();
-	for (int i = 0; i < 20; i++)
-	{
-	myData.Add(r.Next(0,100));
-	}
-	myLinearSparkline.ItemsSource = myData;
-```
-```VB.NET
-    Dim myLinearSparkline As New RadLinearSparkline()
-    Dim r As New Random()
-    Dim myData As New List(Of Double)()
-        For i As Integer = 0 To 19
-              myData.Add(r.Next(0,100))
-        Next i
-	
-	myLinearSparkline.ItemsSource = myData
-```
+<snippet id='radsparkline-radsparkline-databinding-block_2-cs' />
+<snippet id='radsparkline-radsparkline-databinding-block_3-vb' />
 
 __2.Binding To a List of Business Objects__
 
 If you have a list of business objects and you want to bind it to the RadSparkLine control here is how to do it:
 
 
-```XAML
-    <telerik:RadColumnSparkline x:Name="PART_SparkbarControl" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="400"
-                                ShowAxis="False"
-                                ItemsSource="{Binding}"
-                                XValuePath="Cost"
-                                YValuePath="UnitCost" />
-
-    <telerik:RadLinearSparkline x:Name="PART_SparklineControl" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="400" Margin="0,54,0,0"
-                                ShowAxis="False"
-                                ItemsSource="{Binding}"
-                                XValuePath="MyDate"
-                                YValuePath="UnitCost"
-                                ShowLastPointIndicator="True"
-                                ShowHighPointIndicators="True"
-                                ShowLowPointIndicators="True" />
-```
+<snippet id='radsparkline-radsparkline-databinding-block_4-xaml' />
 
 
-```C#
-    public partial class MainPage : UserControl 
-    {
-        public MainPage() //MainWindow in WPF
-        {
-            InitializeComponent();
-            DateTime today = DateTime.Today;
-
-            List<MyCost> data = new List<MyCost>()
-            {
-                new MyCost() { Cost = 1, UnitCost = 2, MyDate=today },
-                new MyCost() { Cost = 2, UnitCost = 4, MyDate= today.AddDays(1)},
-                new MyCost() { Cost = 3, UnitCost = 6, MyDate=today.AddDays(2) },
-                new MyCost() { Cost = 4, UnitCost = 4, MyDate=today.AddDays(3)},
-                new MyCost() { Cost = 5, UnitCost = 8, MyDate=today.AddDays(4)},
-            };
-            this.DataContext = data;
-        }
-    }
-
-    public class MyCost
-    {
-        public double Cost { get; set; }
-        public double UnitCost { get; set; }
-        public DateTime MyDate { get; set; }
-    }
-```
-```VB.NET
-    Partial Public Class MainPage
-        Inherits UserControl
-        Public Sub New() 'MainWindow in WPF
-            InitializeComponent()
-            Dim today As Date = Date.Today
-
-            Dim data As New List(Of MyCost)() From {New MyCost() With {.Cost = 1, .UnitCost = 2, .MyDate = today}, New MyCost() With {.Cost = 2, .UnitCost = 4, .MyDate = today.AddDays(1)}, New MyCost() With {.Cost = 3, .UnitCost = 6, .MyDate = today.AddDays(2)}, New MyCost() With {.Cost = 4, .UnitCost = 4, .MyDate = today.AddDays(3)}, New MyCost() With {.Cost = 5, .UnitCost = 8, .MyDate = today.AddDays(4)}}
-            Me.DataContext = data
-        End Sub
-    End Class
-
-    Public Class MyCost
-        Public Property Cost() As Double
-        Public Property UnitCost() As Double
-        Public Property MyDate() As Date
-    End Class
-```
+<snippet id='radsparkline-radsparkline-databinding-block_5-cs' />
+<snippet id='radsparkline-radsparkline-databinding-block_6-vb' />

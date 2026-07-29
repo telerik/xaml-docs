@@ -25,23 +25,8 @@ To edit the default invalid row style, you can extract the __ControlTemplate__ o
 > To learn how to customize any Telerik theme, see the [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) article.
 
 __Example 1: Invalid row in the Office_Black theme__
-```XAML
-	 <ControlTemplate x:Key="GridViewRowTemplate" TargetType="grid:GridViewRow">
-    . . .
-     <Border x:Name="Background_Invalid"
-                        Margin="1 1 1 2"
-                        BorderThickness="1"
-                        CornerRadius="1"
-                        BorderBrush="{StaticResource ItemOuterBorder_Invalid}"
-                        Grid.Column="2"
-                        Grid.ColumnSpan="2"
-                        Visibility="Collapsed"
-                        grid:SelectiveScrollingGrid.SelectiveScrollingClip="True">
-		<Border BorderThickness="1" BorderBrush="{StaticResource ItemInnerBorder_Invalid}" Background="{StaticResource ItemBackground_Invalid}"/>
-	</Border>
-    . . .
-	</ControlTemplate>
-```
+<snippet id='radgridview-styles-and-templates-styling-validation-row-example_1_invalid_row_in_the_office_black_theme-xaml' />
+
 
 ## See Also
 * [Validation]({%slug gridview-managing-data-validation%})

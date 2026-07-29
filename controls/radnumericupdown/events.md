@@ -44,14 +44,5 @@ Here is an example of how to use the __ValueChanged__ event that is raised whene
 
 __Example 1: Handling the ValueChanged event__
 
-```C#
-	private void NumericUpDown_ValueChanged(object sender, RadRangeBaseValueChangedEventArgs e)
-	{
-		MessageBox.Show("New value is: " + e.NewValue + "\nOld value was: " + e.OldValue);
-	}
-```
-```VB.NET
-	Private Sub NumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As RadRangeBaseValueChangedEventArgs)
-		MessageBox.Show("New value is: " & e.NewValue & ControlChars.Lf & "Old value was: " & e.OldValue)
-	End Sub
-```
+<snippet id='radnumericupdown-events-block_1-cs' />
+<snippet id='radnumericupdown-events-block_1-vb' />

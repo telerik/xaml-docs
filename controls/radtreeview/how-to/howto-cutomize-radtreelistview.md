@@ -15,26 +15,7 @@ This article will go through the customization of the RadTreeListView to look a 
 Those of you who are already familiar with the visual structure of the __RadTreeListView__ control may say that it is much more than a hierarchical control. They would be right, this control derives from our __RadGridView__ and inherits some of its functionalities along with its column generation algorithms. Of course, you may not need all that information and functionality, this is why the __RadTreeListView__ exposes properties that can be used to customize the control. You can practically hide everything that makes it look like __RadGridView__. The following style changes the look of the control and styles it like our __RadTreeView__ control.
 	
 __Example 1: Setting RadTreeListView properties__	
-```XAML
-	<Style TargetType="telerik:RadTreeListView" BasedOn="{StaticResource RadTreeListViewStyle}">
-		<Setter Property="VerticalGridLinesBrush" Value="{x:Null}"/>
-		<Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-		<Setter Property="RowIndicatorVisibility" Value="Collapsed"/>
-		<Setter Property="IsFilteringAllowed" Value="False"/>
-		<Setter Property="CanUserFreezeColumns" Value="False"/>
-		<Setter Property="CanUserDeleteRows" Value="False"/>
-		<Setter Property="AutoGenerateColumns" Value="False"/>
-		<Setter Property="ShowGroupPanel" Value="False"/>
-		<Setter Property="ShowColumnHeaders" Value="False"/>
-		<Setter Property="AutoExpandGroups" Value="True"/>
-		<Setter Property="GridLinesVisibility" Value="None"/>
-		<Setter Property="RowHeight" Value="24" />
-		<Setter Property="TreeLinesVisibility" Value="Visible"/>
-		<Setter Property="BorderThickness" Value="0"/>
-		<Setter Property="BorderBrush" Value="{x:Null}"/>
-		<Setter Property="IsSynchronizedWithCurrentItem" Value="False" />
-	 </Style>
-```
+<snippet id='radtreeview-how-to-howto-cutomize-radtreelistview-block_1-xaml' />
 
 > NoXaml binaries in combination with implicit styles are used for the example in this article. More on the topic is available {% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %}
 
@@ -47,84 +28,18 @@ Now, when you have the initial look, you can proceed with visualizing some data.
 The League has a collection of teams. Each Team has a collection of players that is called __Items__ which does not have any further collections. __Example 2__ demonstrates the data structure.
 
 __Example 2: Setting data structure__
-```C#
-	public class League
-	{
-		public string Name { get; set; }
-		public League()
-		{
-			Items = new ObservableCollection<Team>();
-		}
-		public ObservableCollection<Team> Items { get; set; }
-	}
-	
-	public class Team
-	{
-		public string Name { get; set; }
-		public Team()
-		{
-			Items = new ObservableCollection<Player>();
-		}
-		public ObservableCollection<Player> Items { get; set; }
-	}	
-	
-	public class Player
-	{
-		public string Name { get; set; }
-	}	
-```
+<snippet id='radtreeview-how-to-howto-cutomize-radtreelistview-block_2-cs' />
 
 Now we can go ahead and create our hierarchical data.
 
 __Example 3: Creating hierarchical data__
-```C#
-	public partial class MainWindow : Window
-	{
-		public ObservableCollection<League> Data { get; set; }
-		public MainWindow()
-		{
-			InitializeComponent();
-			Data = GetData();
-			this.DataContext = this;
-		}
-
-		private ObservableCollection<League> GetData()
-		{
-			var result = new ObservableCollection<League>();
-			for (int i = 0; i < 2; i++)
-			{
-				League league = new League() {  Name= "League "+i };
-				for (int j = 0; j < 4; j++)
-				{
-					Team team = new Team() { Name="Team "+j };
-					league.Items.Add(team);
-					for (int p = 0; p < 10; p++)
-					{
-						Player player = new Player() { Name="Player "+p };
-						team.Items.Add(player);
-					}
-				}
-				result.Add(league);
-			}
-			return result;
-		}
-	}
-```
+<snippet id='radtreeview-how-to-howto-cutomize-radtreelistview-block_3-cs' />
 
 The __RadTreeListView__ control is designed to use __TreeListViewTableDefinition__ to visualize its items. You can use the __TreeListViewTableDefinition.ItemsSource__ property to recreate the requested 
 hierarchy.   
     
 __Example 2: Setting TreeListViewTableDefinition__
-```XAML
-	<telerik:RadTreeListView ItemsSource="{Binding Data}" AutoGenerateColumns="False">            
-		<telerik:RadTreeListView.ChildTableDefinitions>
-			<telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}"/>
-		</telerik:RadTreeListView.ChildTableDefinitions>            
-		<telerik:RadTreeListView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
-		</telerik:RadTreeListView.Columns>
-	</telerik:RadTreeListView>
-```
+<snippet id='radtreeview-how-to-howto-cutomize-radtreelistview-block_4-xaml' />
 
 >You should keep in mind that the __RadTreeListView__ expects that the collection holding the children of each level is always named the same way.
 

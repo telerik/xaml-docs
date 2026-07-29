@@ -19,29 +19,8 @@ The behavior also displays two labels (one for each line) which, by default, are
 You can add the crosshair behavior in the RadCartesianChart’s __Behaviors__ collection. The following code snippet demonstrates a simple chart definition that includes ChartCrosshairBehavior and it recreates the visualization shown in the image above.
 
 
-```XAML
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>            
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		
-		<telerik:RadCartesianChart.Behaviors>
-			<telerik:ChartCrosshairBehavior />
-		</telerik:RadCartesianChart.Behaviors>
-		
-		<telerik:LineSeries>
-			<telerik:LineSeries.DataPoints>
-				<telerik:CategoricalDataPoint Category="Jan" Value="140" />
-				<telerik:CategoricalDataPoint Category="Feb" Value="180" />
-				<telerik:CategoricalDataPoint Category="Mar" Value="80" />
-				<telerik:CategoricalDataPoint Category="Apr" Value="230" />
-			</telerik:LineSeries.DataPoints>
-		</telerik:LineSeries>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-behaviors-crosshair-block_1-xaml' />
+
 
 ## Properties
 

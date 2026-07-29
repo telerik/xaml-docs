@@ -17,12 +17,7 @@ The __RadRibbonSplitButton__ represents an extension of the __RadSplitButton__. 
 Here is a sample definition of a __RadRibbonSplitButton__ without having any drop down content defined:	  
 
 
-```XAML
-	<telerik:RadRibbonSplitButton LargeImage="Icons/32/paste.png"
-	                              Size="Large"
-	                              SmallImage="Icons/16/paste.png"
-	                              Text="Paste" />
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-split-button-block_1-xaml' />
 
 >tip As all buttons in the RadRibbonView's set slightly expose the same functionality, take a look at the [Overview]({%slug radribbonview-buttons-overview%}) topic.
 
@@ -39,30 +34,7 @@ Please note that the __Text__ value of the button is displayed in its button par
 To set the popup content you have to simply set the __DropDownContent__ property of the button. Here is an example of a __RadRibbonSplitButton__ with three menu items inside its drop down.		
 
 
-```XAML
-	<telerik:RadRibbonSplitButton LargeImage="Icons/32/paste.png" Size="Large"
-	        SmallImage="Icons/16/paste.png" Text="Paste">
-	    <telerik:RadRibbonSplitButton.DropDownContent>
-	        <telerik:RadContextMenu BorderThickness="0">
-	            <telerik:RadMenuItem Header="Paste">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="Icons/16/paste.png" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem Header="Paste Special...">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="Icons/16/pastespecial.png" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem Header="Paste as Hyperlink" IsEnabled="False">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="Icons/16/pastehyperlink.png" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	        </telerik:RadContextMenu>
-	    </telerik:RadRibbonSplitButton.DropDownContent>
-	</telerik:RadRibbonSplitButton>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-split-button-block_2-xaml' />
 
 ![{{ site.framework_name }} RadRibbonView Split Button Dropdown Content](images/RibbonView_Buttons_SplitButton_DDContent.png)
 
@@ -77,38 +49,11 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 * __DropDownOpend__ - fires after the popup area has been opened.			
 
 
-```XAML
-	<telerik:RadRibbonSplitButton LargeImage="Icons/32/paste.png"
-	                              ...
-	                              DropDownClosed="RadRibbonSplitButton_DropDownClosed"
-	                              DropDownOpened="RadRibbonSplitButton_DropDownOpened"
-	                              DropDownOpening="RadRibbonSplitButton_DropDownOpening">
-	    ...
-	</telerik:RadRibbonSplitButton>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-split-button-block_3-xaml' />
 
 
-```C#
-	private void RadRibbonSplitButton_DropDownClosed(object sender, RoutedEventArgs e)
-	{
-	}
-	private void RadRibbonSplitButton_DropDownOpened(object sender, RoutedEventArgs e)
-	{
-	}
-	private void RadRibbonSplitButton_DropDownOpening(object sender, RoutedEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub RadRibbonSplitButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
-	End Sub
-	
-	Private Sub RadRibbonSplitButton_DropDownOpened(sender As Object, e As RoutedEventArgs)
-	End Sub
-	
-	Private Sub RadRibbonSplitButton_DropDownOpening(sender As Object, e As RoutedEventArgs)
-	End Sub
-```		  
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-split-button-block_4-cs' />
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-split-button-block_5-vb' />
 
 ## See Also
  * [Styling the RadRibbonSplitButton]({%slug radribbonview-styling-ribbonsplitbutton%})

@@ -14,24 +14,10 @@ Some developers want to play different animation or no animation the first time 
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="TransitionControl"
-	Duration="0:0:0" 		
-	TransitionStatusChanged="RadTransitionControl_TransitionStatusChanged">
-	    ...
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-no-initial-animation-block_1-xaml' />
 
 And then in code behind set the duration to a reasonable time span after the first content appears:
 
 
 
-```C#
-	private void RadTransitionControl_TransitionStatusChanged(object sender, TransitionStatusChangedEventArgs e)
-	{
-	    if (e.Status == TransitionStatus.Completed)
-	    {
-	        this.TransitionControl.Duration = new TimeSpan(0, 0, 1);
-	    }
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-no-initial-animation-block_2-cs' />

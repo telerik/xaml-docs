@@ -27,51 +27,14 @@ FileManager class exposes two methods: LoadFromFile and SaveToFile. Depending on
 To demonstrate this extension we are going to create a very simple application. First we can go ahead and declare the RadDiagram in XAML and add some shapes. Then we can add two buttons for save and load behavior.
 
 __Example 1: Specify your RadDiagram in XAML__
-```XAML
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="Auto"/>
-		</Grid.RowDefinitions>
+<snippet id='raddiagram-extensions-filemanager-example_1_specify_your_raddiagram_in_xaml-xaml' />
 
-		<telerik:RadDiagram x:Name="diagram">
-			<telerik:RadDiagramShape x:Name="Shape1" Content="Shape1" Position="200,300"/>
-			<telerik:RadDiagramShape x:Name="Shape2" Content="Shape2" Position="200,100"/>
-			<telerik:RadDiagramConnection Source="{Binding ElementName=Shape1}" Target="{Binding ElementName=Shape2}" />
-		</telerik:RadDiagram>
-
-		<Grid Grid.Row="1">
-			<telerik:RadButton Content="Load" Width="200"  HorizontalAlignment="Left" Click="Load_Click"/>
-			<telerik:RadButton Content="Save"  Width="200" HorizontalAlignment="Right" Click="Save_Click"/>
-		</Grid>
-	</Grid>	
-```
 
 Then we can subscribe to the Click event of the Save/Load buttons. The next step is to declare our FileManager and set its CurrentFile property. This property sets the path where the XML file will be saved on the user Disk.
 
 __Example 2: Specify FileManager and save/load the RadDiagram__
-```C#
-    public partial class MainWindow : Window
-    {
-        FileManager fileManager;
-        public MainWindow()
-        {
-            InitializeComponent();
-            fileManager = new FileManager(this.diagram);
-            fileManager.CurrentFile = @"C:\Temp";
-        }
+<snippet id='raddiagram-extensions-filemanager-example_2_specify_filemanager_and_save_load_the_raddiagram-cs' />
 
-        private void Load_Click(object sender, RoutedEventArgs e)
-        {
-            fileManager.LoadFromFile(FileLocation.Disk);
-        }
-
-        private void Save_Click(object sender, RoutedEventArgs e)
-        {
-            fileManager.SaveToFile(FileLocation.Disk);
-        }
-    }
-```
 
 
 ## See Also

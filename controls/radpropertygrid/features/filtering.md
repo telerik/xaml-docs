@@ -26,9 +26,7 @@ RadPropertyGrid exposes an **EnableCustomFiltering** property which indicates wh
 
 __Example 1: Set EnableCustomFiltering__
 
-```XAML
-	<telerik:RadPropertyGrid EnableCustomFiltering="True" />
-```
+<snippet id='radpropertygrid-features-filtering-block_1-xaml' />
 
 In addition to this, in order to define your own filtering criteria, rather than filter based only on the  definitions' **DisplayName**, you must create a custom class which inherits from **PropertyDefinition** and override the **IsFiltered** property. 
 
@@ -36,53 +34,14 @@ For example, you may want to filter on the PropertyDefinition's **DisplayName** 
 
 __Example 2: Creating a custom class which inherits from PropertyDefinition__
 
-```C#
-    public class MyPropertyDefinition : PropertyDefinition
-    {
-        public override bool IsFiltered
-        {
-            get
-            {
-                if (!string.IsNullOrEmpty(this.SearchString))
-                {
-                    return this.Value.ToString().Contains(this.SearchString) || this.DisplayName.Contains(this.SearchString);
-                }
-                else
-                {
-                    return true;
-                }
-            }
-        }
-    }
-```
-```VB.NET
-
-    Public Class MyPropertyDefinition
-        Inherits PropertyDefinition
-
-        Public Overrides ReadOnly Property IsFiltered() As Boolean
-            Get
-                If Not String.IsNullOrEmpty(Me.SearchString) Then
-                    Return Me.Value.ToString().Contains(Me.SearchString) OrElse Me.DisplayName.Contains(Me.SearchString)
-                Else
-                    Return True
-                End If
-            End Get
-        End Property
-    End Class
-```
+<snippet id='radpropertygrid-features-filtering-block_2-cs' />
+<snippet id='radpropertygrid-features-filtering-block_2-vb' />
 
 You can then use this new class in XAML.
 
 __Example 3: Use the custom property definition__
 
-```XAML
-    <telerik:RadPropertyGrid.PropertyDefinitions>
-        <my:MyPropertyDefinition Binding="{Binding Name}" DisplayName="Name" />
-        <my:MyPropertyDefinition Binding="{Binding Established}" DisplayName="Established" />
-        <my:MyPropertyDefinition Binding="{Binding StadiumCapacity}" DisplayName="StadiumCapacity" />
-    </telerik:RadPropertyGrid.PropertyDefinitions>
-```
+<snippet id='radpropertygrid-features-filtering-block_3-xaml' />
 
 Now, typing in the search TextBox will result in a case-sensitive search in both **DisplayName** and **Value**.
 
@@ -94,11 +53,7 @@ When __EnableDeferredFiltering__ is set to __True__, the filtering will be execu
 
 __Example 1: Enabling Deferred Filtering__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="propertyGrid" 
-	                  EnableDeferredFiltering="True">
-	</telerik:RadPropertyGrid>
-```
+<snippet id='radpropertygrid-features-filtering-block_4-xaml' />
 
 ## Filtering Events
 

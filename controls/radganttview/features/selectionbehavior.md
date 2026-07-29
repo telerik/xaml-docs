@@ -13,13 +13,8 @@ position: 6
 The RadGanttView control provides you with selection functionality, which allows the user to select one or more items at a time. To control this selection mechanism, you must set the **SelectionBehavior** property.
 
 __Example 1: Setting SelectionBehavior__
-```XAML
-	<telerik:RadGanttView>
-		<telerik:RadGanttView.SelectionBehavior>
-			<telerik:SingleSelectionBehavior />
-		</telerik:RadGanttView.SelectionBehavior>			
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-selectionbehavior-example_1_setting_selectionbehavior-xaml' />
+
 
 There is a set of predefined selection behaviors, however, you're free to define your custom behavior as long as it implements the **ISelectionBehavior** interface.
 

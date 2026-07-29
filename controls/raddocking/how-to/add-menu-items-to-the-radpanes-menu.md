@@ -21,195 +21,26 @@ To add custom commands to __RadPane's__ menu, you should perform the following s
 1. You can create a custom class CustomRadDockingCommands. Inside, you can create a singleton property of type __Telerik.Windows.Controls.RoutedUICommand__. __Example 1__ demonstrates how you can do that.
 	
 	__Example 1: Create Singleton command property__
-	```C#
-		public class CustomRadDockingCommands
-		{
-			private static RoutedUICommand closeAllPanesButThisCommand;			
-			public static RoutedUICommand CloseAllPanesButThisCommand
-			{
-				get
-				{
-					if (closeAllPanesButThisCommand == null)
-					{
-						closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this!", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
-					}
-					return closeAllPanesButThisCommand;
-				}
-			}			
-		}
-	```
+	<snippet id='raddocking-how-to-add-menu-items-to-the-radpanes-menu-example_1_create_singleton_command_property-cs' />
+
 
 1. Create a custom __DataTemplate__ by using the Telerik's __RadContextMenu__ and __RadMenuItem__ controls. You can use either the built-in __RadDockingCommands__ or create a custom one - both approaches are demonstrated in this topic. Set the created __DataTemplate__ to __RadPane__'s __ContextMenuTemplate__ property. __Example 2__ show how to set __RadPane__'s __ContextMenuTemplate__ property.
           
 	__Example 2: Custom DataTemplate for the ContextMenuTemplate property__
-	```XAML
-		<Window.Resources>
-			<DataTemplate x:Key="ContextMenuTemplate">
-				<telerik:RadContextMenu InheritDataContext="False">
-					<telerik:RadMenuItem 
-						IsChecked="{Binding IsFloatingOnly}"
-						Command="telerik:RadDockingCommands.Floating" 
-						CommandParameter="{Binding}"                
-						CommandTarget="{Binding}"
-						Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}" />
-			
-					<telerik:RadMenuItem 
-						IsChecked="{Binding IsDockableOptionChecked}" 
-						Command="telerik:RadDockingCommands.Dockable" 
-						CommandParameter="{Binding}"
-						CommandTarget="{Binding}"
-						Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}" />
-			
-					<telerik:RadMenuItem 
-						Command="local:CustomRadDockingCommands.CloseAllPanesButThisCommand"
-						CommandParameter="{Binding}" 
-						CommandTarget="{Binding}"
-						Header="{Binding Command.Text, RelativeSource={RelativeSource Self}}" />
-				</telerik:RadContextMenu>
-			</DataTemplate>
-			
-			<Style TargetType="telerik:RadPane">
-				<Setter Property="ContextMenuTemplate" Value="{StaticResource ContextMenuTemplate}" />
-			</Style>
-		</Window.Resources>
-		<Grid>
-			<telerik:RadDocking x:Name="radDocking">
-				<telerik:RadSplitContainer>
-					<telerik:RadPaneGroup>
-						<telerik:RadPane Title="Pane 1" Content="Pane 1 Content" />
-						<telerik:RadPane Title="Pane 2" Content="Pane 2 Content" />
-						<telerik:RadPane Title="Pane 3" Content="Pane 3 Content" />
-						<telerik:RadPane Title="Pane 4" Content="Pane 4 Content" />
-					</telerik:RadPaneGroup>
-				</telerik:RadSplitContainer>
-			</telerik:RadDocking>
-		</Grid>
-	```
+	<snippet id='raddocking-how-to-add-menu-items-to-the-radpanes-menu-example_2_custom_datatemplate_for_the_contextmenutemplate_property-xaml' />
+
 
 1. You should implement your custom logic in the __OnCloseAllPanesButThis__ and __OnCloseAllPanesButThisCanExecute__ methods. They specify whether the command can be executed and what action is performed, when it is executed. __Example 3__ demonstrates sample logic for the command methods. 
           
 	__Example 3: Implement Execute and CanExecute methods__
-	```C#
-		public class CustomRadDockingCommands
-		{
-			private static RoutedUICommand closeAllPanesButThisCommand;
-			public static RoutedUICommand CloseAllPanesButThisCommand
-			{
-				get
-				{
-					if (closeAllPanesButThisCommand == null)
-					{
-						closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this!", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
-					}
-					return closeAllPanesButThisCommand;
-				}
-			}
+	<snippet id='raddocking-how-to-add-menu-items-to-the-radpanes-menu-example_3_implement_execute_and_canexecute_methods-cs' />
 
-			public static void OnCloseAllPanesButThis(object sender, ExecutedRoutedEventArgs e)
-			{
-				RadPane pane = e.Parameter as RadPane;
-				if (pane != null)
-				{
-					RadPaneGroup paneGroup = pane.PaneGroup;
-					if (paneGroup != null)
-					{
-						System.Collections.Generic.IEnumerable<RadPane> panesToClose = paneGroup.EnumeratePanes().Where(x => !x.IsHidden && x.IsPinned);
-						foreach (RadPane paneToClose in panesToClose)
-						{
-							if (paneToClose != pane)
-							{
-								paneToClose.IsHidden = true;
-							}
-						}
-					}
-				}
-			}
-
-			public static void OnCloseAllPanesButThisCanExecute(object sender, CanExecuteRoutedEventArgs e)
-			{
-				e.CanExecute = false;
-				RadPaneGroup paneGroup = sender as RadPaneGroup;
-				if (paneGroup != null)
-				{
-					int childrenCount = paneGroup.EnumeratePanes().Count(x => !x.IsHidden && x.IsPinned);
-
-					if (childrenCount > 1)
-					{
-						e.CanExecute = true;
-					}
-					else
-					{
-						e.CanExecute = false;
-					}
-				}
-			}
-		}
-	```
 
 1. Your menu command is ready and you have a custom __DataTemplate__, which is set to the __ContextMenuTemplate__ property. The next step is to register your custom command by using the __Telerik.Windows.Controls.CommandManager__ class in the __CustomRadDockingCommands__ constructor. __Example 4__ shows the final structure of the __CustomRadDockingCommands__ class.
 	
 	__Example 4: Register CloseAllPanesButThisCommand custom command__
-	```C#
-		public class CustomRadDockingCommands
-		{
-			private static RoutedUICommand closeAllPanesButThisCommand;
+	<snippet id='raddocking-how-to-add-menu-items-to-the-radpanes-menu-example_4_register_closeallpanesbutthiscommand_custom_command-cs' />
 
-			public static RoutedUICommand CloseAllPanesButThisCommand
-			{
-				get
-				{
-					if (closeAllPanesButThisCommand == null)
-					{
-						closeAllPanesButThisCommand = new RoutedUICommand("Close all panes but this!", "CloseAllPanesButThisCommand", typeof(RadDockingCommands));
-					}
-					return closeAllPanesButThisCommand;
-				}
-			}
-			static CustomRadDockingCommands()
-			{
-				CommandManager.RegisterClassCommandBinding(typeof(RadPaneGroup), new CommandBinding(CustomRadDockingCommands.CloseAllPanesButThisCommand, OnCloseAllPanesButThis, OnCloseAllPanesButThisCanExecute));
-			}
-
-			public static void OnCloseAllPanesButThis(object sender, ExecutedRoutedEventArgs e)
-			{
-				RadPane pane = e.Parameter as RadPane;
-				if (pane != null)
-				{
-					RadPaneGroup paneGroup = pane.PaneGroup;
-					if (paneGroup != null)
-					{
-						System.Collections.Generic.IEnumerable<RadPane> panesToClose = paneGroup.EnumeratePanes().Where(x => !x.IsHidden && x.IsPinned);
-						foreach (RadPane paneToClose in panesToClose)
-						{
-							if (paneToClose != pane)
-							{
-								paneToClose.IsHidden = true;
-							}
-						}
-					}
-				}
-			}
-
-			public static void OnCloseAllPanesButThisCanExecute(object sender, CanExecuteRoutedEventArgs e)
-			{
-				e.CanExecute = false;
-				RadPaneGroup paneGroup = sender as RadPaneGroup;
-				if (paneGroup != null)
-				{
-					int childrenCount = paneGroup.EnumeratePanes().Count(x => !x.IsHidden && x.IsPinned);
-
-					if (childrenCount > 1)
-					{
-						e.CanExecute = true;
-					}
-					else
-					{
-						e.CanExecute = false;
-					}
-				}
-			}
-		}
-	```
 
 Run your demo. __RadPane__'s menu should look like the snapshot below.
 
@@ -221,30 +52,15 @@ In order to remove __RadPane__'s Menu, you should set __RadPane__'s __ContextMen
 
 __Example 5: Set ContextMenuTemplate property to null__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadDocking.DocumentHost>
-	        <telerik:RadSplitContainer>
-	            <telerik:RadPaneGroup>
-	                <telerik:RadPane x:Name="radPane"
-	                            Title="Pane 1"
-	                            ContextMenuTemplate="{x:Null}">
-	                    <TextBlock Text="Some simple text here" />
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	    </telerik:RadDocking.DocumentHost>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-how-to-add-menu-items-to-the-radpanes-menu-example_5_set_contextmenutemplate_property_to_null-xaml' />
+
 
 __Example 6: Set ContextMenuTemplate property to null in code behind__
 
-```C#
-	radPane.ContextMenuTemplate = null;
-```
-```VB.NET
-	radPane.ContextMenuTemplate = Nothing
-```
+<snippet id='raddocking-how-to-add-menu-items-to-the-radpanes-menu-example_6_set_contextmenutemplate_property_to_null_in_code_behind-cs' />
+
+<snippet id='raddocking-how-to-add-menu-items-to-the-radpanes-menu-example_6_set_contextmenutemplate_property_to_null_in_code_behind-vb' />
+
 
 ![{{ site.framework_name }} RadDocking Remove Pane Context Menu](images/RadDocking_HowTo_AddPaneMenuItems_040.png)
 

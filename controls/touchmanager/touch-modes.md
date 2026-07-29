@@ -21,17 +21,11 @@ __TouchMode__ is an enumeration that contains the following values:
 * __None__: The element will suppress all touch events. No touch events will be raised for touch input within the boundaries of the element.
 
 __Example 1: Setting TouchMode in XAML__
-```XAML
-	<Border x:Name="element" telerik:TouchManager.TouchMode="HitTestVisible" />
-```
+<snippet id='touchmanager-touch-modes-block_1-xaml' />
 
 __Example 2: Setting TouchMode in code__
-```C#
-	TouchManager.SetTouchMode(this.element, TouchMode.HitTestVisible);
-```
-```VB.NET
-	TouchManager.SetTouchMode(Me.element, TouchMode.HitTestVisible)
-```
+<snippet id='touchmanager-touch-modes-block_2-cs' />
+<snippet id='touchmanager-touch-modes-block_3-vb' />
 
 ## TouchMode examples
 

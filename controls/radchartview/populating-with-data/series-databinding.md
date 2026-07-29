@@ -25,87 +25,23 @@ The series in a chart can be bound through XAML assuming the DataContext of our 
 
 __Example 1: Creating ViewModel class__
 
-```C#
-	public class Product
-    {
-        public string Name { get; set; }
-        public int QuantitySold { get; set; }
-    }
-	public class ViewModel
-	{
-		public ObservableCollection<Product> Data { get; set; }
-		Random rnd = new Random();
-		public ViewModel()
-		{
-			Data = new ObservableCollection<Product>();
-			GetData();
-		}
-		private void GetData()
-		{
-			for (int i = 0; i < 10; i++)
-			{
-				Product product = new Product();
-				product.Name = "Product " + i;
-				product.QuantitySold = rnd.Next(10,99) ;
-				Data.Add(product);
-			}
-		}
-	}
-```
-```VB.NET
-	Public Class ViewModel
-		Public Property Data As ObservableCollection(Of Product)
-		Private rnd As Random = New Random()
-		Public Sub New()
-			Data = New ObservableCollection(Of Product)()
-			GetData()
-		End Sub
-		Private Sub GetData()
-			For i As Integer = 0 To 10 - 1
-				Dim product As Product = New Product()
-				product.Name = "Product " & i
-				product.QuantitySold = rnd.[Next](10, 99)
-				Data.Add(product)
-			Next
-		End Sub
-	End Class
-```
+<snippet id='radchartview-populating-with-data-series-databinding-example_1_creating_viewmodel_class-cs' />
+
+<snippet id='radchartview-populating-with-data-series-databinding-example_1_creating_viewmodel_class-vb' />
+
 
 The next step is to set the DataContext of the MainWindow to our ViewModel class.
 
 __Example 2: Specifying DataContext of the MainWindow__
 
-```C#
-	public MainWindow()
-	{
-	    InitializeComponent();
-	    this.DataContext = new ViewModel();
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		Me.DataContext = New ViewModel()
-	End Sub
-```
+<snippet id='radchartview-populating-with-data-series-databinding-example_2_specifying_datacontext_of_the_mainwindow-cs' />
+
+<snippet id='radchartview-populating-with-data-series-databinding-example_2_specifying_datacontext_of_the_mainwindow-vb' />
+
 
 __Example 3: Binding BarSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart x:Name="chart">
+<snippet id='radchartview-populating-with-data-series-databinding-example_3_binding_barseries_in_xaml-xaml' />
 
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries x:Name="barSeries" CategoryBinding="Name" ValueBinding="QuantitySold" ItemsSource="{Binding Data}"/>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
 
 #### Figure 1: Binding BarSeries in XAML 
 
@@ -116,38 +52,15 @@ __Example 3: Binding BarSeries in XAML__
 For any series object the data source can be set to an enumerable of primitive numerical types. In this case the data points' values will the values in the enumerable themselves. For example for any series object the following code binds it:
 
 __Example 3: Binding BarSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart x:Name="chart">
+<snippet id='radchartview-populating-with-data-series-databinding-example_3_binding_barseries_in_xaml-xaml' />
 
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries x:Name="barSeries" />
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
 
 
 __Example 4: Binding BarSeries to primitive types__
-```C#	
-	public MainWindow()
-	{
-		InitializeComponent();
-		barSeries.ItemsSource = new double[] { 20, 30, 50, 10, 60, 40, 20, 80 };
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		barSeries.ItemsSource = New Double() { 20, 30, 50, 10, 60, 40, 20, 80 }
-	End Sub	
-```
+<snippet id='radchartview-populating-with-data-series-databinding-example_4_binding_barseries_to_primitive_types-cs' />
+
+<snippet id='radchartview-populating-with-data-series-databinding-example_4_binding_barseries_to_primitive_types-vb' />
+
 
 #### Figure 2: Binding BarSeries to primitive types
 ![Binding BarSeries to primitive types](images/series-databinding_2.png)
@@ -158,66 +71,17 @@ Let's assume that we need to visualize how many products of certain types are so
 
 __Example 5: Creating Product class__
 
-```C#
-	public class Product
-	{
-	    public string Name
-	    {
-	        get;
-	        set;
-	    }
-	    public double QuantitySold
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class Product
-	    Private _name As String
-	    Private _quantitySold As Double
-	
-	    Public Property Name As String
-	        Get
-	            Return Me._name
-	        End Get
-	        Set(value As String)
-	            Me._name = value
-	        End Set
-	    End Property
-	    Public Property QuantitySold As Double
-	        Get
-	            Return Me._quantitySold
-	        End Get
-	        Set(value As Double)
-	            Me._quantitySold = value
-	        End Set
-	    End Property
-	End Class
-```
+<snippet id='radchartview-populating-with-data-series-databinding-example_5_creating_product_class-cs' />
+
+<snippet id='radchartview-populating-with-data-series-databinding-example_5_creating_product_class-vb' />
+
 
 __Example 6: Binding BarSeries in code behind__
 
-```C#
-	List<Product> dataSource = new List<Product>();
-	dataSource.Add(new Product() { Name = "Product 1", QuantitySold = 5  });
-	dataSource.Add(new Product() { Name = "Product 2", QuantitySold = 50  });
-	dataSource.Add(new Product() { Name = "Product 3", QuantitySold = 8 });
-	barSeries.CategoryBinding = new PropertyNameDataPointBinding() { PropertyName = "Name" };
-	barSeries.ValueBinding = new GenericDataPointBinding<Product, double>() { ValueSelector = product => product.QuantitySold };
-	barSeries.ItemsSource = dataSource;
-```
-```VB.NET
-	Dim dataSource As List(Of Product) = New List(Of Product)()
-	Dim nameBinding As PropertyNameDataPointBinding = New PropertyNameDataPointBinding
-	nameBinding.PropertyName = "Name"
-	Dim genericBinding As GenericDataPointBinding(Of Product, Double) = New GenericDataPointBinding(Of Product, Double)
-	genericBinding.ValueSelector = Function(product) product.QuantitySold
-	barSeries.CategoryBinding = nameBinding
-	barSeries.ValueBinding = genericBinding
-	barSeries.ItemsSource = dataSource
-```
+<snippet id='radchartview-populating-with-data-series-databinding-example_6_binding_barseries_in_code_behind-cs' />
+
+<snippet id='radchartview-populating-with-data-series-databinding-example_6_binding_barseries_in_code_behind-vb' />
+
 
 The two binding classes, __ValueBinding__ and __CategoryBinding__ are set so that the series knows which property to bind to the value of a data point and which property to bind
 to the category of a data point. RadChart supports two types of binding objects out of the box and these are __PropertyNameDataPointBinding__ and __GenericDataPointBinding__.
@@ -229,44 +93,16 @@ If a series is bound to an observable collection, the series will update as soon
 
 __Example 7: Binding BarSeries to ObservableCollection__
 
-```C#
-	ObservableCollection<Product> products = new ObservableCollection<Product>();
-	// fill collection
-	barSeries.CategoryBinding = new PropertyNameDataPointBinding() { PropertyName = "Name" };
-	barSeries.ValueBinding = new GenericDataPointBinding<Product, double>() { ValueSelector = product => product.QuantitySold };
-	barSeries.ItemsSource = products;
-```
-```VB.NET
-	Dim products As ObservableCollection(Of Product) = New ObservableCollection(Of Product)
-	' fill collection '
-	Dim nameBinding As PropertyNameDataPointBinding = New PropertyNameDataPointBinding
-	nameBinding.PropertyName = "Name"
-	Dim genericBinding As GenericDataPointBinding(Of Product, Double) = New GenericDataPointBinding(Of Product, Double)
-	genericBinding.ValueSelector = Function(product) product.QuantitySold
-	barSeries.CategoryBinding = nameBinding
-	barSeries.ValueBinding = genericBinding
-	barSeries.ItemsSource = dataSource
-```
+<snippet id='radchartview-populating-with-data-series-databinding-example_7_binding_barseries_to_observablecollection-cs' />
+
+<snippet id='radchartview-populating-with-data-series-databinding-example_7_binding_barseries_to_observablecollection-vb' />
+
 	
 The only requirement left for the code above to work is that our Product class needs to implement __INotifyPropertyChanged__ and raise the PropertyChanged event when its QuantitySold property changes. In __Example 8__ we will inherit ViewModelBase class which implement __INotifyPropertyChanged__ interface.
 
 __Example 8: Creating Product class__
-```C#
-	public class Product : ViewModelBase
-	{
-		public string Name { get; set; }
-		private int _quantitySold;
+<snippet id='radchartview-populating-with-data-series-databinding-example_8_creating_product_class-cs' />
 
-		public int QuantitySold
-		{
-			get { return _quantitySold; }
-			set { 
-				_quantitySold = value; 
-				this.OnPropertyChanged("QuantitySold"); 
-			}
-		}
-	}
-```
 
 
 ## See Also

@@ -57,21 +57,7 @@ This property exposes two possible values:
 RadMultiComboBox allows you to search in hidden columns. To do so, set the `CanUserSearchInHiddenColumns` property to __True__ of the `GridViewItemsSourceProvider` instance.
 
 __Enable searching in hidden columns__
-```XAML
-    <telerik:RadMultiColumnComboBox>
-        <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-            <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs}" 
-                                                 AutoGenerateColumns="False" 
-                                                 CanUserSearchInHiddenColumns="True">
-                <telerik:GridViewItemsSourceProvider.Columns>
-                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" IsVisible="False"/>
-                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"/>
-                    <telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}"/>
-                </telerik:GridViewItemsSourceProvider.Columns>
-            </telerik:GridViewItemsSourceProvider>
-        </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-    </telerik:RadMultiColumnComboBox>
-```
+<snippet id='radmulticolumncombobox-features-search-as-you-type-block_1-xaml' />
 
 __RadMultiColumnComboBox search in a hidden column__
 
@@ -94,12 +80,8 @@ The SearchStateManager property is of the type `SearchStateManager` and this cla
     * `Search`&mdash;Items are filtered, text is not auto-completed. String are filtered by __Contains__ operator. Complex clause searches are supported (Like RadGridView search as you type).
 
 __Disabling the highlighting effect on matched items__
-```C#
-    this.radMultiColumnComboBox.SearchStateManager.HighlightMatches = false;
-```
-```VB.NET
-    Me.radMultiColumnComboBox.SearchStateManager.HighlightMatches = False
-```
+<snippet id='radmulticolumncombobox-features-search-as-you-type-block_2-cs' />
+<snippet id='radmulticolumncombobox-features-search-as-you-type-block_2-vb' />
 
 __RadMultiColumnComboBox without highlighting on matched items__
 

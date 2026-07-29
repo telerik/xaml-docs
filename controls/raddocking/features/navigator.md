@@ -52,90 +52,8 @@ The __DockingNavigator__ exposes several attached properties which can be set on
 __Example 1__ demonstrates how you can set the __Navigator__ property of the RadDocking to an instance of the __DockingNavigator__. It also demonstrates how you can set the DockingNavigator attached properties on the RadPanes/RadDocumentPanes in order to display additional information for a pane while navigating.
 
 __Example 1: RadDocking with Navigator property set__
-```XAML
+<snippet id='raddocking-features-navigator-example_1_raddocking_with_navigator_property_set-xaml' />
 
-	<Grid>
-        <Grid.Resources>
-            <DataTemplate x:Key="IconTemplate">
-                <!-- The DataContext here is whatever is set to the telerik:DockingNavigator.Icon of the selected pane-->
-                <telerik:RadGlyph Glyph="{Binding}" />
-            </DataTemplate>
-            <DataTemplate x:Key="DescriptionTemplate">
-                <!-- The DataContext here is whatever is set to the telerik:DockingNavigator.Description of the selected pane-->
-                <TextBlock Text="{Binding}" FontWeight="Bold" />
-            </DataTemplate>
-            <DataTemplate x:Key="FooterTemplate">
-                <!-- The DataContext here is whatever is set to the telerik:DockingNavigator.Footer of the selected pane-->
-                <TextBlock Text="{Binding}" Foreground="Red" FontFamily="Ariel" />
-            </DataTemplate>
-        </Grid.Resources>
-		<telerik:RadDocking x:Name="docking" Margin="150">
-            <telerik:RadDocking.Navigator>
-                <telerik:DockingNavigator 
-                                          PreviewWidth="400" 
-                                          PreviewHeight="300" 
-                                          Width="850"
-                                          IconTemplate="{StaticResource IconTemplate}"
-                                          DescriptionTemplate="{StaticResource DescriptionTemplate}"
-                                          FooterTemplate="{StaticResource FooterTemplate}" />
-            </telerik:RadDocking.Navigator>
-            <telerik:RadDocking.DocumentHost>
-				<telerik:RadSplitContainer>
-					<telerik:RadPaneGroup>
-						<telerik:RadDocumentPane Header="Document Pane 1"
-                        telerik:DockingNavigator.Icon="&#xe63b;"
-						telerik:DockingNavigator.Description="My first document pane"
-						telerik:DockingNavigator.Footer="My first document footer">
-                            <TextBlock TextWrapping="Wrap" Text="Press Ctrl + Tab or Alt + F7 to open the DockingNavigator."/>
-                        </telerik:RadDocumentPane>
-                        <telerik:RadDocumentPane Header="Document Pane 2" 
-                        telerik:DockingNavigator.Icon="&#xe63b;"
-						telerik:DockingNavigator.Description="My second document pane"
-						telerik:DockingNavigator.Footer="My second document footer">
-                            <TextBlock TextWrapping="Wrap" Text="Navigate between the panes using the arrow keys."/>
-                        </telerik:RadDocumentPane>
-                    </telerik:RadPaneGroup>
-				</telerik:RadSplitContainer>
-			</telerik:RadDocking.DocumentHost>
-
-            <telerik:RadSplitContainer InitialPosition="DockedLeft">
-                <telerik:RadPaneGroup>
-                    <telerik:RadPane Header="Pane 1" 
-                        telerik:DockingNavigator.Icon="&#xe64f;"
-						telerik:DockingNavigator.Description="My first pane"
-						telerik:DockingNavigator.Footer="My first pane footer">
-                        <telerik:RadTreeView>
-                            <telerik:RadTreeViewItem Header="Item 1">
-                                <telerik:RadTreeViewItem Header="Item 1.1" />
-                                <telerik:RadTreeViewItem Header="Item 1.2" />
-                                <telerik:RadTreeViewItem Header="Item 1.3" />
-                                <telerik:RadTreeViewItem Header="Item 1.4" />
-                            </telerik:RadTreeViewItem>
-                            <telerik:RadTreeViewItem Header="Item 2">
-                                <telerik:RadTreeViewItem Header="Item 2.1" />
-                                <telerik:RadTreeViewItem Header="Item 2.2" />
-                            </telerik:RadTreeViewItem>
-
-                            <telerik:RadTreeViewItem Header="Item 3" IsExpanded="True">
-                                <telerik:RadTreeViewItem Header="Item 3.1" />
-                                <telerik:RadTreeViewItem Header="Item 3.2" />
-                                <telerik:RadTreeViewItem Header="Item 3.3" />
-                                <telerik:RadTreeViewItem Header="Item 3.4" />
-                                <telerik:RadTreeViewItem Header="Item 3.5" />
-
-                                <telerik:RadTreeViewItem Header="Item 3.5" />
-                            </telerik:RadTreeViewItem>
-                        </telerik:RadTreeView>
-                    </telerik:RadPane>
-                    <telerik:RadPane Header="Pane 2" Content="Pane 2"
-                        telerik:DockingNavigator.Icon="&#xe64f;"
-						telerik:DockingNavigator.Description="My second pane"
-						telerik:DockingNavigator.Footer="My second pane footer"/>
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-        </telerik:RadDocking>
-	</Grid>
-```
 
 #### __Figure 1: Result from showing the navigator in Example 1__
 ![DockingNavigator in Fluent theme](images/docking_navigator.png)
@@ -151,25 +69,10 @@ The DockingNavigator class exposes several useful events, which can be used to a
     * A __NavigatorOpeningEventArgs__ object. It exposes a __Cancel__ property, which allows for preventing the opening. 
 
     __Example 2: Handling the Opening event__
-    ```C#
-        private void DockingNavigator_Opening(object sender, NavigatorOpeningEventArgs e)
-        {
-            var navigatorViewModel = (sender as DockingNavigator).DataContext as NavigatorViewModel;
+    <snippet id='raddocking-features-navigator-example_2_handling_the_opening_event-cs' />
 
-            // Preventing a specific pane from being shown in the navigator
-            var itemToRemove = navigatorViewModel.ItemModels.FirstOrDefault(m => m.Header.ToString() == "Pane 1");
-            navigatorViewModel.ItemModels.Remove(itemToRemove);
-        }
-    ```
-	```VB.NET
-        Private Sub DockingNavigator_Opening(ByVal sender As Object, ByVal e As NavigatorOpeningEventArgs)
-			Dim navigatorViewModel = TryCast((TryCast(sender, DockingNavigator)).DataContext, NavigatorViewModel)
+	<snippet id='raddocking-features-navigator-example_2_handling_the_opening_event-vb' />
 
-			' Preventing a specific pane from being shown in the navigator
-			Dim itemToRemove = navigatorViewModel.ItemModels.FirstOrDefault(Function(m) m.Header.ToString() = "Pane 1")
-			navigatorViewModel.ItemModels.Remove(itemToRemove)
-        End Sub
-    ```
 
 * __Closed__: Raised after the DockingNavigator is closed. The event handler receives two arguments:
 

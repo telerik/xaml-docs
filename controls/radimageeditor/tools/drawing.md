@@ -18,9 +18,8 @@ Similarly to the other __RadImageEditor__ tools, the __DrawTool__ is located in 
 
 __Example 1: Define DrawTool__
 
-```XAML
-	<tools:DrawTool />
-```
+<snippet id='radimageeditor-tools-drawing-example_1_define_drawtool-xaml' />
+
 
 
 ## Modifying
@@ -33,22 +32,15 @@ The __DrawTool__ introduces the following two properties which can be set by dec
 
 __Example 2: Customize DrawTool__
 
-```XAML
-	<tools:DrawTool DefaultBrushColor="Blue" DefaultBrushSize="5"/>
-```
+<snippet id='radimageeditor-tools-drawing-example_2_customize_drawtool-xaml' />
+
 
 __Example 2: Customize DrawTool__
 
-```C#
-	DrawTool drawTool = new DrawTool();
-	drawTool.DefaultBrushColor = Colors.Blue;
-	drawTool.DefaultBrushSize = 5;
-```
-```VB.NET
-	Dim drawTool = New DrawTool()
-	drawTool.DefaultBrushColor = Colors.Blue
-	drawTool.DefaultBrushSize = 5
-```
+<snippet id='radimageeditor-tools-drawing-example_2_customize_drawtool-cs' />
+
+<snippet id='radimageeditor-tools-drawing-example_2_customize_drawtool-vb' />
+
 
 
 ## Inheritance and Customizing

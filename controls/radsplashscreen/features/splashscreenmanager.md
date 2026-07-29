@@ -17,16 +17,12 @@ RadSplashScreenManager is the class that is used to control the splash screen. T
 To show the splash screen, call the __RadSplashScreenManager.Show__ method. This will open a window hosting a __RadSplashScreen__ control. You can replace the RadSplashScreen by using the alternative oveload of the Show method where you can pass a type representing the control that should be displayed. 
 
 __Example 1: Showing a splash screen__
-```C#	
-	RadSplashScreenManager.Show();
-```
+<snippet id='radsplashscreen-features-splashscreenmanager-block_1-cs' />
 
 To close the splash screen, call the __RadSplashScreenManager.Close__ method.
 
 __Example 2: Closing a splash screen__
-```C#	
-	RadSplashScreenManager.Close();
-```
+<snippet id='radsplashscreen-features-splashscreenmanager-block_2-cs' />
 
 Find more examples in the [Getting Started]({%slug radsplashscreen-getting-started%}) article.
 
@@ -49,17 +45,7 @@ RadSplashScreenManager provides several properties that allow you to set up the 
 > All those settings should be set __before the Show method__ call.
 
 __Example 3: Applying manager settings__
-```C#		
-	RadSplashScreenManager.StartupPosition = new Point(100, 100);
-	RadSplashScreenManager.SplashScreenDataContext = "This is the new data context.";
-	RadSplashScreenManager.ShowAnimation = new ScaleAnimation() { MinScale = 0.1, MaxScale = 0.9, Duration = TimeSpan.FromSeconds(2) };
-	RadSplashScreenManager.HideAnimation = new ScaleAnimation() { MinScale = 0.9, MaxScale = 0.1, Duration = TimeSpan.FromSeconds(2) };
-	
-	if (!RadSplashScreenManager.IsSplashScreenActive)
-	{
-		RadSplashScreenManager.Show();
-	}
-```
+<snippet id='radsplashscreen-features-splashscreenmanager-block_3-cs' />
 
 ## SplashScreenDataContext
 
@@ -98,22 +84,7 @@ SplashScreenDataContext provides the following settings:
 >tip Read more about the progress visualization in the [Progress Bar]({%slug radsplashscreen-features-progress-bar%}) article.
 
 __Example 4: Applying splash screen settings__
-```C#		
-	var dataContext = (SplashScreenDataContext)RadSplashScreenManager.SplashScreenDataContext;
-	dataContext.ImagePath = "/SplashScreenWPFApplication;component/Images/splash-screen-image.png";
-	dataContext.Content = "Loading... 45%";
-	dataContext.IsIndeterminate = false;
-	dataContext.MinValue = 0;
-	dataContext.MaxValue = 100;	
-	dataContext.ProgressValue = 45;
-	dataContext.Footer = "Copyright © 2020, Progress Software Corporation";
-	dataContext.MouseCursor = Cursors.Cross;
-	
-	if (!RadSplashScreenManager.IsSplashScreenActive)
-	{
-		RadSplashScreenManager.Show();
-	}
-```
+<snippet id='radsplashscreen-features-splashscreenmanager-block_4-cs' />
 
 ![{{ site.framework_name }} RadSplashScreen Splash Screen Manager Visual Structure](images/radsplashscreen-features-splashscreenmanager-0.png)
 

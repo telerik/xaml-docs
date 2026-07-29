@@ -28,9 +28,8 @@ You can use either of the following methods:
 
 
 
-```XAML
-	<telerik:RadGridView ItemsSource="{Binding Clubs}" ColumnWidth="*" />
-```
+<snippet id='radgridview-troubleshooting-additional-column-solution-xaml' />
+
 
 The result would be:
 
@@ -40,11 +39,8 @@ The result would be:
 
 
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-	            Header="Stadium" 
-	            Width="*"/>
-```
+<snippet id='radgridview-troubleshooting-additional-column-solution-xaml' />
+
 
 Now, the result would be:
 

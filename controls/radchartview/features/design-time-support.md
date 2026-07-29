@@ -29,11 +29,8 @@ To use the feature and generate a sample chart, define an empty chart in XAML or
 1. Define an empty RadCartesianChart
 
 	__Example 1: Defining an empty chart__
-	```XAML
-		<Grid>
-			<telerik:RadCartesianChart />
-		</Grid>
-	```
+	<snippet id='radchartview-features-design-time-support-example_1_defining_an_empty_chart-xaml' />
+
 
 2. Click onto the chart in the Visual Studio designer. This will show a small screen tip on the top right part of the chart.
 
@@ -52,46 +49,8 @@ To use the feature and generate a sample chart, define an empty chart in XAML or
 This will generate the following Xaml:
 
 __Example 2: The auto-generated Xaml__
-```XAML
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.Grid>
-			<telerik:CartesianChartGrid StripLinesVisibility="Y">
-				<telerik:CartesianChartGrid.YStripeBrushes>
-					<SolidColorBrush Color="#FFD7D7D7" Opacity="0.3"/>
-					<SolidColorBrush Color="Transparent"/>
-				</telerik:CartesianChartGrid.YStripeBrushes>
-			</telerik:CartesianChartGrid>
-		</telerik:RadCartesianChart.Grid>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:BarSeries CombineMode="Cluster">
-			<telerik:BarSeries.DataPoints>
-				<telerik:CategoricalDataPoint Category="1" Value="0.5"/>
-				<telerik:CategoricalDataPoint Category="2" Value="0.7"/>
-			</telerik:BarSeries.DataPoints>
-			<telerik:BarSeries.DefaultVisualStyle>
-				<Style TargetType="{x:Type Border}">
-					<Setter Property="Background" Value="#FF5AA4D4"/>
-				</Style>
-			</telerik:BarSeries.DefaultVisualStyle>
-		</telerik:BarSeries>
-		<telerik:BarSeries CombineMode="Cluster">
-			<telerik:BarSeries.DataPoints>
-				<telerik:CategoricalDataPoint Category="1" Value="0.9"/>
-				<telerik:CategoricalDataPoint Category="2" Value="0.6"/>
-			</telerik:BarSeries.DataPoints>
-			<telerik:BarSeries.DefaultVisualStyle>
-				<Style TargetType="{x:Type Border}">
-					<Setter Property="Background" Value="DarkOrange"/>
-				</Style>
-			</telerik:BarSeries.DefaultVisualStyle>
-		</telerik:BarSeries>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-design-time-support-example_2_the_auto_generated_xaml-xaml' />
+
 
 ![{{ site.framework_name }} RadChartView Bar Chart in Designer](images/radchartview-features-design-time-support-4.png)
 

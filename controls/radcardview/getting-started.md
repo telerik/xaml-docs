@@ -39,35 +39,13 @@ To display data in the control, provide a collection of business objects and ass
 The following example shows how to setup a basic card model and populate the ItemsSource of the control.
 
 __Example 1: Creating card model__
-```C#
-	public class CardInfo
-    {
-        public string Header { get; set; }
-        public string Name { get; set; }
-        public int Number { get; set; }
-    }
-```
+<snippet id='radcardview-getting-started-example_1_creating_card_model-cs' />
 
 __Example 2: Defining the control in XAML__
-```XAML
-	<telerik:RadCardView x:Name="cardView"  
-						 CardHeaderBinding="{Binding Header}"
-                         MinorLength="140"/>
-```
+<snippet id='radcardview-getting-started-example_2_defining_the_control_in_xaml-xaml' />
 
 __Example 3: Populating the control with data__
-```C#
-	public MainWindow()
-	{
-	    InitializeComponent();          
-	    var source = new ObservableCollection<CardInfo>();
-	    for (int i = 0; i < 6; i++)
-	    {
-	        source.Add(new CardInfo() { Header = "Card " + i, Name = "Name " + i, Number = i });
-	    }
-	    this.cardView.ItemsSource = source;
-	}
-```
+<snippet id='radcardview-getting-started-example_3_populating_the_control_with_data-cs' />
 
 #### Figure 1: RadCardView example
 ![{{ site.framework_name }} RadCardView RadCardView example](images/radcardview-getting-started-0.png)
@@ -102,18 +80,7 @@ To change the theme, you can follow the steps below:
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 2: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.Data.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radcardview-getting-started-example_3_populating_the_control_with_data-xaml' />
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

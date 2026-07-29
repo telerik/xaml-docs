@@ -20,27 +20,21 @@ The caret of the RadSyntaxEditor is the vertical "blinking" line that represents
 * __QuarterBlock__: ![RadSyntaxEditor caret normal display mode](images/syntaxeditor-caret-quarter-block.png)
 
 __Setting the caret's display mode__
-```XAML
-    <telerik:RadSyntaxEditor CaretDisplayMode="QuarterBlock" />
-```
+<snippet id='radsyntaxeditor-features-caret-block_1-xaml' />
 
 ## Hide the Caret
 
 If you wish to hide the caret, you can do so by setting the `IsCaretVisible` property to __False__. This setting can be used along with the `IsReadOnly` property which disallows users from making changes in the editor.
 
 __Setting the caret's display mode__
-```XAML
-    <telerik:RadSyntaxEditor IsReadOnly="True" IsCaretVisible="False" />
-```
+<snippet id='radsyntaxeditor-features-caret-block_2-xaml' />
 
 ## Caret Brush
 
 Through the `CaretBrush` property, you can change the caret's color to a color of your liking. The default value is __Black__.
 
 __Setting the caret's color__
-```XAML
-    <telerik:RadSyntaxEditor CaretBrush="Red" />
-```
+<snippet id='radsyntaxeditor-features-caret-block_3-xaml' />
 
 __RadSyntaxEditor caret with red color__
 
@@ -55,9 +49,7 @@ Its default value is __True__, meaning that if the caret is placed in the end of
 To disable this behavior, you can set the AutoScrollToCaretOnTextChange property to __False__.
 
 __Setting the AutoScrollToCaretOnTextChange property__
-```XAML
-    <telerik:RadSyntaxEditor AutoScrollToCaretOnTextChange="False" />
-```
+<snippet id='radsyntaxeditor-features-caret-block_4-xaml' />
 
 ## IME Support
 

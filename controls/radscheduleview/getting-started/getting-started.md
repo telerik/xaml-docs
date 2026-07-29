@@ -47,9 +47,7 @@ You can add __RadScheduleView__ manually by writing the XAML code in __Example 1
 
 __Example 1: Adding RadScheduleView in XAML__
 
-```XAML
-	<telerik:RadScheduleView />     
-```
+<snippet id='radscheduleview-getting-started-getting-started-block_1-xaml' />
 
 
 >In order to use __RadScheduleView__ in XAML you have to add the following namespace declaration:
@@ -70,82 +68,8 @@ In order to populate __RadScheduleView__ with data, you should bind its __Appoin
 
 __Example 3: View Model containing an ObservableCollection of Appointments__
 
-```C#
-	public class MyViewModel
-	{
-		private ObservableCollection<Appointment> appointments;
-
-		public ObservableCollection<Appointment> Appointments
-		{
-			get
-			{
-				if (this.appointments == null)
-				{
-					this.appointments = this.CreateAppointments();
-				}
-				return this.appointments;
-			}	      
-		}
-
-		private ObservableCollection<Appointment> CreateAppointments()
-		{
-			ObservableCollection<Appointment> apps = new ObservableCollection<Appointment>();
-
-			var app1 = new Appointment()
-			{
-				Subject = "Front-End Meeting",
-				Start = DateTime.Today.AddHours(9),
-				End = DateTime.Today.AddHours(10)
-			};
-			apps.Add(app1);
-
-			var app2 = new Appointment()
-			{
-				Subject = "Planning Meeting",
-				Start = DateTime.Today.AddHours(11),
-				End = DateTime.Today.AddHours(12)
-			};
-			apps.Add(app2);
-
-		return apps;
-		}   
-	}
-```
-```VB.NET
-	Public Class MyViewModel
-
-		Private m_appointments As ObservableCollection(Of Appointment)
-
-		Public ReadOnly Property Appointments() As ObservableCollection(Of Appointment)
-			Get
-				If Me.m_appointments Is Nothing Then
-					Me.m_appointments = Me.CreateAppointments()
-				End If
-				Return Me.m_appointments
-			End Get
-		End Property
-
-		Private Function CreateAppointments() As ObservableCollection(Of Appointment)
-			Dim apps As New ObservableCollection(Of Appointment)()
-
-			Dim app1 As New Appointment() With {
-				.Subject = "Front-End Meeting",
-				.Start = DateTime.Today.AddHours(9),
-				.[End] = DateTime.Today.AddHours(10)
-			}
-			apps.Add(app1)
-
-			Dim app2 = New Appointment() With {
-				.Subject = "Planning Meeting",
-				.Start = DateTime.Today.AddHours(11),
-				.[End] = DateTime.Today.AddHours(12)
-			}
-			apps.Add(app2)
-
-			Return apps
-		End Function
-	End Class
-```
+<snippet id='radscheduleview-getting-started-getting-started-block_2-cs' />
+<snippet id='radscheduleview-getting-started-getting-started-block_3-vb' />
 
 Now that you have prepared the needed sample data, it is time to bind RadScheduleView to it. For that purpose, you should set the __RadScheduleView's AppointmentsSource__ property to the collection of Appointments.
 
@@ -153,12 +77,7 @@ __Example 4__ demonstrates how you can bind the AppointmentsSource collection in
 
 __Example 4: Bind RadScheduleView__
 
-```XAML
-    <Grid.Resources>
-        <local:MyViewModel x:Key="MyViewModel" />
-    </Grid.Resources>
-    <telerik:RadScheduleView DataContext="{StaticResource MyViewModel}"  AppointmentsSource="{Binding Appointments}" />
-```
+<snippet id='radscheduleview-getting-started-getting-started-block_4-xaml' />
 
 If you run the application at this stage, you will again see an empty ScheduleView with a message saying that a View Definition should be selected as shown in __Figure 2__. 
 
@@ -172,13 +91,7 @@ __Example 5__ demonstrates how you can add a DayViewDefinition to the __RadSched
 
 __Example 5: Add DayViewDefinition__
 
-```XAML
-	<telerik:RadScheduleView DataContext="{StaticResource MyViewModel}" AppointmentsSource="{Binding Appointments}">
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition />
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-getting-started-getting-started-block_5-xaml' />
 
 >You can add more than one ViewDefinition. There are five view definitions available:
 >* DayViewDefinition
@@ -217,19 +130,7 @@ To change the theme, you can follow the steps below:
 __Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 8: Merge the ResourceDictionaries__  
-```XAML
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.ScheduleView.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-```
+<snippet id='radscheduleview-getting-started-getting-started-block_6-xaml' />
 
 __Figure 4__ shows __RadScheduleView__ with the **Windows8** theme applied.
 	
@@ -241,7 +142,7 @@ __Figure 4__ shows __RadScheduleView__ with the **Windows8** theme applied.
 
 * [Telerik UI for WPF ScheduleView Component](https://www.telerik.com/products/wpf/scheduleview.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -258,4 +159,3 @@ __Figure 4__ shows __RadScheduleView__ with the **Windows8** theme applied.
  * [ViewDefinitions]({%slug radscheduleview-viewdefinitions-overview%})
  
  * [Resources]({%slug radscheduleview-features-resources%})
-

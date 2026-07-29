@@ -15,15 +15,7 @@ The __RadRibbonToggleButton__ represents an extension of the __RadToggleButton__
 >tip To learn more about the __RadToggleButtonButton__ control read its documentation. __RadRibbonToggleButton__
 
 
-```XAML
-	<telerik:RadRibbonToggleButton CollapseToMedium="Never"
-	                               CollapseToSmall="WhenGroupIsMedium"
-	                               IsAutoSize="True"
-	                               LargeImage="Icons/32/Equation.png"
-	                               Size="Large"
-	                               SmallImage="Icons/16/Equation.png"
-	                               Text="Symbol" />
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-toggle-button-block_1-xaml' />
 
 This button has its initial size set to __Large__ and its text label set to __"Symbol"__. As the __IsAutoSize__ property is set to __True__ the button will change its size depending on the __RadRibbonGroup's__ size. The button will also never collapse to its __Medium__ size and will collapse to its __Small__ size when the __RadRibbonGroup__ collapses to __Medium__.
 ![{{ site.framework_name }} RadRibbonView Large Toggle Button](images/RibbonView_Buttons_ToggleButton.png)
@@ -33,36 +25,11 @@ This button has its initial size set to __Large__ and its text label set to __"S
 Besides the __Click__ event, the __RadRibbonToggleButton__ control exposes two additional events - __Checked__ and __Unchecked.__ They are meant to notify for changes in the checked state of the toggle button.
 
 
-```XAML
-	<telerik:RadRibbonToggleButton Checked="RadRibbonToggleButton_Checked"
-	                               CollapseToMedium="Never"
-	                               CollapseToSmall="WhenGroupIsMedium"
-	                               IsAutoSize="True"
-	                               LargeImage="Icons/32/Equation.png"
-	                               Size="Large"
-	                               SmallImage="Icons/16/Equation.png"
-	                               Text="Symbol"
-	                               Unchecked="RadRibbonToggleButton_Unchecked" />
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-toggle-button-block_2-xaml' />
 
 
-```C#
-	private void RadRibbonToggleButton_Checked(object sender, RoutedEventArgs e)
-	{
-	}
-	private void RadRibbonToggleButton_Unchecked(object sender, RoutedEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub RadRibbonToggleButton_Checked(sender As Object, e As RoutedEventArgs)
-	
-	End Sub
-	
-	Private Sub RadRibbonToggleButton_Unchecked(sender As Object, e As RoutedEventArgs)
-	
-	End Sub
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-toggle-button-block_3-cs' />
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-toggle-button-block_4-vb' />
 
 ## See Also
  * [Styling the RadRibbonToggleButton]({%slug radribbonview-styling-ribbontogglebutton%})

@@ -29,20 +29,7 @@ In this approach you use the trivial properties provided by the framework such a
 Here is an example:       
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <telerik:MapEllipse x:Name="Ellipse"
-	                            telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                            Width="20"
-	                            Height="20"
-	                            Fill="#80808080"
-	                            Stroke="White"
-	                            StrokeThickness="3">
-	        </telerik:MapEllipse>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-shape-appearance-block_1-xaml' />
 
 Here is a snapshot of the result:
 
@@ -57,27 +44,7 @@ The two properties are of  type __MapShapeFill__. The __MapShapeFill__ object al
 >These properties will take precedence over the trivial ones.
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <telerik:MapEllipse x:Name="Ellipse"
-	                            telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                            Width="20"
-	                            Height="20">
-	            <telerik:MapEllipse.ShapeFill>
-	                <telerik:MapShapeFill Fill="#80808080"
-	                                        Stroke="White"
-	                                        StrokeThickness="3" />
-	            </telerik:MapEllipse.ShapeFill>
-	            <telerik:MapEllipse.HighlightFill>
-	                <telerik:MapShapeFill Fill="Orange"
-	                                        Stroke="Coral"
-	                                        StrokeThickness="3" />
-	            </telerik:MapEllipse.HighlightFill>
-	        </telerik:MapEllipse>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-shape-appearance-block_2-xaml' />
 
 Here is a snapshot of the result:
 
@@ -95,30 +62,7 @@ You are also able to define the appearance of the shapes on the Information Laye
 The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object allows you not only to specify the fill color, but to modify the stroke as well. Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <telerik:InformationLayer.ShapeFill>
-	            <telerik:MapShapeFill Fill="#80808080"
-	                                    Stroke="White"
-	                                    StrokeThickness="3" />
-	        </telerik:InformationLayer.ShapeFill>
-	        <telerik:InformationLayer.HighlightFill>
-	            <telerik:MapShapeFill Fill="Orange"
-	                                    Stroke="Coral"
-	                                    StrokeThickness="3" />
-	        </telerik:InformationLayer.HighlightFill>
-	        <telerik:MapEllipse telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                            Width="20"
-	                            Height="20">
-	        </telerik:MapEllipse>
-	        <telerik:MapEllipse telerik:MapLayer.Location="42.1429369264591, 24.7498095849434"
-	                            Width="20"
-	                            Height="20">
-	        </telerik:MapEllipse>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-shape-appearance-block_3-xaml' />
 
 Here is a snapshot of the result:
 

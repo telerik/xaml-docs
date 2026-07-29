@@ -26,21 +26,7 @@ You can define the __QueryableDataProvider__ as a *StaticResource* in your XAML 
 
 
 
-```XAML
-	<Grid>
-	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="*"/>
-	        <ColumnDefinition Width="250"/>
-	    </Grid.ColumnDefinitions>
-	    <Grid.Resources>
-	        <pivot:QueryableDataProvider x:Key="QueryableDataProvider">
-	        </pivot:QueryableDataProvider>
-	    </Grid.Resources>
-	
-	    <pivot:RadPivotGrid Name="radPivotGrid" DataProvider="{StaticResource QueryableDataProvider}">
-	    <pivot:RadPivotFieldList Name="radPivotFieldList" Grid.Column="1"  DataProvider="{StaticResource QueryableDataProvider}"/>
-	</Grid>
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_1-xaml' />
 
 >caution If you set different DataProviders for __RadPivotGrid__ and __RadPivotFieldList__ you will not be able to see any changes in __RadPivotGrid__ even when you change something in __RadPivotFieldList__. 
 
@@ -48,16 +34,8 @@ You can also create an object of type __QueryableDataProvider__ in the backgroun
 
 
 
-```C#
-	QueryableDataProvider queryableDataProvider = new QueryableDataProvider();
-	this.radPivotGrid1.DataProvider = queryableDataProvider;
-	this.radPivotFieldList1.DataProvider = queryableDataProvider;
-```
-```VB.NET
-	Dim queryableDataProvider As New QueryableDataProvider()
-	Me.radPivotGrid1.DataProvider = queryableDataProvider
-	Me.radPivotFieldList1.DataProvider = queryableDataProvider
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_2-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_2-vb' />
 
 ## Adding Data to QueryableDataProvider
 
@@ -65,18 +43,8 @@ The __QueryableDataProvider__ has *Source* property and it is mandatory to set i
 
 
 
-```C#
-	QueryableDataProvider queryableDataProvider = new QueryableDataProvider();
-	queryableDataProvider.Source = MyCollection;
-	this.radPivotGrid1.DataProvider = queryableDataProvider;
-	this.radPivotFieldList1.DataProvider = queryableDataProvider;
-```
-```VB.NET
-	Dim queryableDataProvider As New QueryableDataProvider()
-	queryableDataProvider.Source = MyCollection
-	Me.radPivotGrid1.DataProvider = queryableDataProvider
-	Me.radPivotFieldList1.DataProvider = queryableDataProvider
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_3-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_3-vb' />
 
 ## Adding Group Descriptions Collections
 
@@ -90,49 +58,12 @@ Here's how to define the __RowGroupDescriptions__ in your application:
 
 
 
-```XAML
-	<pivot:QueryableDataProvider.RowGroupDescriptions>
-	    <pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" />
-	    <pivot:QueryableDoubleGroupDescription PropertyName="Freight" />
-	    <pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" />
-	</pivot:QueryableDataProvider.RowGroupDescriptions>
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_4-xaml' />
 
 
 
-```C#
-	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
-	shipCountryGroupDescription.PropertyName = "ShipCountry";
-	
-	var freightCountryGroupDescription = new QueryableDoubleGroupDescription();
-	freightCountryGroupDescription.PropertyName = "Freight";;
-	
-	var orderDateCountryGroupDescription = new QueryableDateTimeGroupDescription();
-	orderDateCountryGroupDescription.PropertyName = "OrderDate";
-	
-	using (queryableDataProvider.DeferRefresh())
-	{
-	    queryableDataProvider.RowGroupDescriptions.Add(shipCountryGroupDescription);
-	    queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription);
-	    queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription);
-	};
-```
-```VB.NET
-	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
-	shipCountryGroupDescription.PropertyName = "ShipCountry"
-	
-	Dim freightCountryGroupDescription = New QueryableDoubleGroupDescription()
-	freightCountryGroupDescription.PropertyName = "Freight"
-	
-	Dim orderDateCountryGroupDescription = New QueryableDateTimeGroupDescription()
-	orderDateCountryGroupDescription.PropertyName = "OrderDate"
-	
-	Using queryableDataProvider.DeferRefresh()
-		queryableDataProvider.RowGroupDescriptions.Add(shipCountryGroupDescription)
-		queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription)
-		queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription)
-	End Using
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_5-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_5-vb' />
 
 * __ColumnGroupDescription__ - the data added to this description will be shown as columns headers in __RadPivotGrid__ and __RadPivotFieldList__. The properties can be defined as QueryablePropertyGroupDescription, QueryableDateTimeGroupDescription, QueryableDoubleGroupDescription or you can create custom implementation of QueryableGroupDescription class. 
 
@@ -140,24 +71,12 @@ Here's how to define the __ColumnGroupDescriptions__ in your application:
 
 
 
-```XAML
-	<pivot:QueryableDataProvider.ColumnGroupDescriptions>
-	    <pivot:QueryableDoubleGroupDescription PropertyName="Freight"/>
-	</pivot:QueryableDataProvider.ColumnGroupDescriptions>
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_6-xaml' />
 
 
 
-```C#
-	QueryableDoubleGroupDescription doubleGroupDescription = new QueryableDoubleGroupDescription();
-	doubleGroupDescription.PropertyName = "Freight";
-	queryableDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription);
-```
-```VB.NET
-	Dim doubleGroupDescription As New DoubleGroupDescription()
-	doubleGroupDescription.PropertyName = "Freight"
-	queryableDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription)
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_7-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_7-vb' />
 
 * __AggregateDescriptions__ - the data added to this description will be aggregated and included in __RadPivotGrid__ as Cells. The properties can be defined as QueryablePropertyAggregateDescription or you can create custom implementation of QueryableAggregateDescription class.
 
@@ -165,45 +84,12 @@ Here's how to define the __AggregateDescriptions__ in your application:
 
 
 
-```XAML
-	<pivot:QueryableDataProvider.AggregateDescriptions>
-	    <pivot:QueryablePropertyAggregateDescription AggregateFunction="Count" StringFormat="C" PropertyName="Freight"/>
-	    <pivot:QueryablePropertyAggregateDescription PropertyName="ShipVia"/>
-	</pivot:QueryableDataProvider.AggregateDescriptions>
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_8-xaml' />
 
 
 
-```C#
-	var freightAggregateDescription = new QueryablePropertyAggregateDescription();
-	freightAggregateDescription.PropertyName = "Freight";
-	freightAggregateDescription.StringFormat = "C";
-	freightAggregateDescription.AggregateFunction = QueryableAggregateFunction.Max;
-	
-	var shipViaAggregateDescription = new QueryablePropertyAggregateDescription();
-	freightAggregateDescription.PropertyName = "ShipVia";
-	
-	
-	using (queryableDataProvider.DeferRefresh())
-	{
-	    queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription);
-	    queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription);
-	};
-```
-```VB.NET
-	Dim freightAggregateDescription = New QueryablePropertyAggregateDescription()
-	freightAggregateDescription.PropertyName = "Freight"
-	freightAggregateDescription.StringFormat = "C"
-	freightAggregateDescription.AggregateFunction = QueryableAggregateFunction.Max
-	
-	Dim shipViaAggregateDescription = New QueryablePropertyAggregateDescription()
-	freightAggregateDescription.PropertyName = "ShipVia"
-	
-	Using queryableDataProvider.DeferRefresh()
-		queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription)
-		queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription)
-	End Using
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_9-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_9-vb' />
 
 With R2 2016 of UI for WPF a brand new property __IgnoreNullValues__ was introduced for the __PropertyAggregateDescription__. This property is of type bool and it is used to determine whether a specific __PropertyAggregateDescription__ should ignore the null values when calculating its result. The default value of the property is false, so in order to ignore the null values, you should set the property to __true__.	  	
 
@@ -211,73 +97,26 @@ Here's how to define the __AggregateDescriptions__ in your application with a se
 
 
 
-```XAML
-	<pivot:QueryableDataProvider.AggregateDescriptions>
-	    <pivot:QueryablePropertyAggregateDescription AggregateFunction="Count" StringFormat="C" PropertyName="Freight" IgnoreNullValues="true"/>
-	    <pivot:QueryablePropertyAggregateDescription PropertyName="ShipVia"/>
-	</pivot:QueryableDataProvider.AggregateDescriptions>
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_10-xaml' />
 
 
 In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDescriptions__ you would add in the __LocalDataSourceProvider__ you should handle the __LocalDataSourceProvider.PrepareDescriptionForField__ event and set IgnoreNullValues in the handler:
 
 
 
-```C#
-	private void QueryableDataProvider_PrepareDescriptionForField(object sender, Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs e)
-	{
-		var description = e.Description as QueryablePropertyAggregateDescription;
-		if (description != null)
-		{
-			description.IgnoreNullValues = true;
-		}
-	}
-```
-```VB.NET
-	Private Sub QueryableDataProvider_PrepareDescriptionForField(sender As Object, e As Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs)
-		Dim description = TryCast(e.Description, QueryablePropertyAggregateDescription)
-		If description IsNot Nothing Then
-			description.IgnoreNullValues = True
-		End If
-	End Sub
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_11-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_11-vb' />
 
 * __FilterDescriptions__ - the data added to this description will be filtered and after that included in __RadPivotGrid__. The properties can be defined as QueryablePropertyFilterDescription or you can create custom implementation of QueryableFilterDescription class.            
 
 
 
-```XAML
-	<pivot:QueryableDataProvider.FilterDescriptions>
-	    <pivot:QueryablePropertyFilterDescription PropertyName="Freight">
-	        <pivot:QueryablePropertyFilterDescription.Condition>
-	            <queryableFilters:QueryableIntervalCondition From="10" To="200"/>
-	        </pivot:QueryablePropertyFilterDescription.Condition>
-	    </pivot:QueryablePropertyFilterDescription>
-	</pivot:QueryableDataProvider.FilterDescriptions>
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_12-xaml' />
 
 
 
-```C#
-	var freightFilterDescription = new QueryablePropertyFilterDescription();
-	freightFilterDescription.PropertyName = "Freight";
-	var intervalCondition = new QueryableIntervalCondition();
-	intervalCondition.From = 10;
-	intervalCondition.To = 200;
-	freightFilterDescription.Condition = intervalCondition;
-	
-	queryableDataProvider.FilterDescriptions.Add(freightFilterDescription);
-```
-```VB.NET
-	Dim freightFilterDescription = New QueryablePropertyFilterDescription()
-	freightFilterDescription.PropertyName = "Freight"
-	Dim intervalCondition = New QueryableIntervalCondition()
-	intervalCondition.From = 10
-	intervalCondition.To = 200
-	freightFilterDescription.Condition = intervalCondition
-	
-	queryableDataProvider.FilterDescriptions.Add(freightFilterDescription)
-```
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_13-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-queryable-block_13-vb' />
 
 ## Adding Property Descriptions
 

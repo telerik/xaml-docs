@@ -32,17 +32,8 @@ The series provider uses descriptor objects to define the type and visual appear
 The base __ChartSeriesDescriptor__ class is a generic descriptor that provides more flexibility because you can use it with all chart series. The descriptor doesn't expose value properties and it does not expect a specific type of series, so you can define all you need in its style.
 
 __Example 1: A ChartSeriesDescriptor that describes a RangeSeries__
-```XAML
-	<telerik:ChartSeriesDescriptor ItemsSourcePath="MyDataPointsCollection">
-		<telerik:ChartSeriesDescriptor.Style>
-			<Style TargetType="telerik:RangeSeries">
-				<Setter Property="CategoryBinding" Value="MyCategory"/>
-				<Setter Property="HighBinding" Value="MyHighValue"/>
-				<Setter Property="LowBinding" Value="MyLowValue"/>                                    
-			</Style>
-		</telerik:ChartSeriesDescriptor.Style>
-	</telerik:ChartSeriesDescriptor>
-```
+<snippet id='radchartview-features-chartseriesprovider-example_1_a_chartseriesdescriptor_that_describes_a_rangeseries-xaml' />
+
 
 The __TargetType__ of the descriptor determines the type of the series that will be created.
 
@@ -67,16 +58,8 @@ The following list describes the most important properties of __ChartSeriesDescr
 * __ChartDataSourceStyle__: A property of type __Style__ that gets or sets the style of the [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) objects that are set as the ItemsSource of the created series. Through that style, you can set the properties of the ChartDataSource, which control the sampling logic as demonstrated in __Example 2__.
 
 __Example 2: Setting the ChartDataSourceStyle property__
-```XAML
+<snippet id='radchartview-features-chartseriesprovider-example_2_setting_the_chartdatasourcestyle_property-xaml' />
 
-    <telerik:CategoricalSeriesDescriptor>
-		<telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
-			<Style TargetType="telerik:ChartDataSource">
-				<Setter Property="SamplingThreshold" Value="1" />
-			</Style>
-		</telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
-	</telerik:CategoricalSeriesDescriptor>
-```
 
 ### Type-Specific Properties
 
@@ -115,181 +98,14 @@ The event arguments are of type __ChartSeriesCreatedEventArgs__ and expose the f
 In the following example, the chart is populated by a collection of 3 items, thus creating 3 series. There is a CategoricalSeriesDescriptor with CollectionIndex=2 and a style with TargetType="LineSeries". This effectively means that there will be a LineSeries, populated by the third item in the collection. There is another CategoricalSeriesDescriptor, which is responsible for creating BarSeries for the rest of the items in the collection.        
 
 __Example 3: A sample chart definition with its SeriesProvider set__
-```XAML
-	<telerik:RadCartesianChart Palette="Flower">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
+<snippet id='radchartview-features-chartseriesprovider-example_3_a_sample_chart_definition_with_its_seriesprovider_set-xaml' />
 
-		<telerik:RadCartesianChart.SeriesProvider>
-			<telerik:ChartSeriesProvider Source="{Binding Data}">
-				<telerik:ChartSeriesProvider.SeriesDescriptors>
-					<telerik:CategoricalSeriesDescriptor CategoryPath="Category" 
-															ValuePath="Value" 
-															ItemsSourcePath="Items" />
-					<telerik:CategoricalSeriesDescriptor CategoryPath="Category"
-															ValuePath="Value"
-															ItemsSourcePath="Items" 
-															CollectionIndex="2">
-						<telerik:CategoricalSeriesDescriptor.Style>
-							<Style TargetType="telerik:LineSeries">
-								<Setter Property="StrokeThickness" Value="4" />
-							</Style>
-						</telerik:CategoricalSeriesDescriptor.Style>
-					</telerik:CategoricalSeriesDescriptor>
-				</telerik:ChartSeriesProvider.SeriesDescriptors>
-			</telerik:ChartSeriesProvider>
-		</telerik:RadCartesianChart.SeriesProvider>
-	</telerik:RadCartesianChart>
-```
 
 __Example 4: The chart's view models set up__
-```C#
-	public class DataItem
-    {
-        public string Category { get; set; }
+<snippet id='radchartview-features-chartseriesprovider-example_4_the_chart_s_view_models_set_up-cs' />
 
-        public double Value { get; set; }
-    }
-	
-	public class SeriesViewModel
-    {
-        public ObservableCollection<DataItem> Items { get; set; }
-    }
-	
-	public class MainViewModel
-    {
-        public ObservableCollection<SeriesViewModel> Data
-        {
-            get;
-            set;
-        }
+<snippet id='radchartview-features-chartseriesprovider-example_4_the_chart_s_view_models_set_up-vb' />
 
-        public MainViewModel()
-        {
-            this.Data = new ObservableCollection<SeriesViewModel>()
-            {
-                new SeriesViewModel()
-                {
-                    Items = new ObservableCollection<DataItem>()
-                    {
-                        new DataItem() { Category = "A", Value = 5},
-                        new DataItem() { Category = "B", Value = 7},
-                        new DataItem() { Category = "C", Value = 6},
-                        new DataItem() { Category = "D", Value = 8}
-                    }
-                },
-                new SeriesViewModel()
-                {
-                    Items = new ObservableCollection<DataItem>()
-                    {
-                        new DataItem() { Category = "A", Value = 15},
-                        new DataItem() { Category = "B", Value = 18},
-                        new DataItem() { Category = "C", Value = 19},
-                        new DataItem() { Category = "D", Value = 23}
-                    }
-                },
-                new SeriesViewModel()
-                {
-                    Items = new ObservableCollection<DataItem>()
-                    {
-                        new DataItem() { Category = "A", Value = 21},
-                        new DataItem() { Category = "B", Value = 25},
-                        new DataItem() { Category = "C", Value = 26},
-                        new DataItem() { Category = "D", Value = 25}
-                    }
-                }
-            };
-        }
-    }
-```
-```VB.NET
-	Public Class DataItem
-		Public Property Category() As String
-
-		Public Property Value() As Double
-	End Class
-
-	
-	Public Class SeriesViewModel
-		Public Property SeriesType() As String
-
-		Public Property Items() As ObservableCollection(Of DataItem)
-	End Class
-	
-	Public Class MainViewModel
-		Public Property Data() As ObservableCollection(Of SeriesViewModel)
-
-		Public Sub New()
-			Me.Data = New ObservableCollection(Of SeriesViewModel)() _
-				From {
-					New SeriesViewModel() With {
-						.Items = New ObservableCollection(Of DataItem)() From {
-							New DataItem() With {
-								.Category = "A",
-								.Value = 5
-							},
-							New DataItem() With {
-								.Category = "B",
-								.Value = 7
-							},
-							New DataItem() With {
-								.Category = "C",
-								.Value = 6
-							},
-							New DataItem() With {
-								.Category = "D",
-								.Value = 8
-							}
-						}
-					},
-					New SeriesViewModel() With {
-						.Items = New ObservableCollection(Of DataItem)() From {
-							New DataItem() With {
-								.Category = "A",
-								.Value = 15
-							},
-							New DataItem() With {
-								.Category = "B",
-								.Value = 18
-							},
-							New DataItem() With {
-								.Category = "C",
-								.Value = 19
-							},
-							New DataItem() With {
-								.Category = "D",
-								.Value = 23
-							}
-						}
-					},
-					New SeriesViewModel() With {
-						.Items = New ObservableCollection(Of DataItem)() From {
-							New DataItem() With {
-								.Category = "A",
-								.Value = 21
-							},
-							New DataItem() With {
-								.Category = "B",
-								.Value = 25
-							},
-							New DataItem() With {
-								.Category = "C",
-								.Value = 26
-							},
-							New DataItem() With {
-								.Category = "D",
-								.Value = 25
-							}
-						}
-					}
-				}
-		End Sub
-	End Class
-```
 
 #### __Figure 1: Dynamic number of series generated using SeriesProvider__
 ![Rad Chart View-chartseriesprovider-0](images/RadChartView-chartseriesprovider-0.png)

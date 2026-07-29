@@ -20,9 +20,8 @@ By default, the RadContextMenu element displays a column used for visualizing th
 Its width can be controlled through the `IconColumnWidth` property. For example, it can be entirely hidden by setting the property value to 0.
 
 __Setting the IconColumnWidth property__
-```XAML
-	 <telerik:RadContextMenu IconColumnWidth="0"/>
-```
+<snippet id='radcontextmenu-key-properties-setting_the_iconcolumnwidth_property-xaml' />
+
 
 __RadContextMenu with hidden icon column__
 
@@ -37,9 +36,8 @@ Setting this property manipulates whether RadContextMenu will close automaticall
 RadContextMenu provides a mechanism for controlling the horizontal distance between the target origin and the popup alignment point through the `HorizontalOffset` property.
 
 __Setting the HorizontalOffset property__
-```XAML
-	<telerik:RadContextMenu HorizontalOffset="150"/>
-```
+<snippet id='radcontextmenu-key-properties-setting_the_horizontaloffset_property-xaml' />
+
 
 __RadContextMenu with its HorizontalOffset property set__
 
@@ -74,9 +72,8 @@ By default, the RadContextMenu inherits the DataContext of its parent element. I
 When opened the RadContextMenu automatically gets the focus. To automatically return the focus back to the parent element that opened the context menu when the menu gets closed, set the `RestoreFocusToTargetElement` property to `True`.
 
 __Setting the RestoreFocusToTargetElement property__
-```XAML
-	<telerik:RadContextMenu RestoreFocusToTargetElement="True"/>
-```
+<snippet id='radcontextmenu-key-properties-setting_the_restorefocustotargetelement_property-xaml' />
+
 
 ## ShowKeyboardCuesOnOpen
 

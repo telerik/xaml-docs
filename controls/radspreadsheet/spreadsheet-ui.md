@@ -49,68 +49,21 @@ __Choose the components you would like to use__
 The following example shows how the XAML generated after enabling all options looks like.
 
 __Default Look__
-```XAML
-	<Grid x:Name="spreadsheetLayoutRoot">
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition/>
-	        <RowDefinition Height="Auto"/>
-	    </Grid.RowDefinitions>
-	    <telerik:RadSpreadsheetRibbon BackstageClippingElement="{Binding ElementName=spreadsheetLayoutRoot, Mode=OneTime}" RadSpreadsheet="{Binding ElementName=radSpreadsheet, Mode=OneTime}"/>
-	    <Controls:RadSpreadsheetFormulaBar Grid.Row="1" RadSpreadsheet="{Binding ElementName=radSpreadsheet, Mode=OneTime}"/>
-	    <telerik:RadSpreadsheet x:Name="radSpreadsheet" Grid.Row="2">
-	        <telerik:RadSpreadsheet.FormatProviders>
-	            <Txt:TxtFormatProvider/>
-	            <Csv:CsvFormatProvider/>
-	            <Pdf:PdfFormatProvider/>
-	            <Xlsx:XlsxFormatProvider/>
-	        </telerik:RadSpreadsheet.FormatProviders>
-	    </telerik:RadSpreadsheet>
-	    <Controls:RadSpreadsheetStatusBar Grid.Row="3" RadSpreadsheet="{Binding ElementName=radSpreadsheet, Mode=OneTime}"/>
-	</Grid>
-```
+<snippet id='radspreadsheet-spreadsheet-ui-block_1-xaml' />
 
 To build the above example, you should add the following namespaces:
 
 #### Namespaces
 
 
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
-    xmlns:Controls="clr-namespace:Telerik.Windows.Controls.Spreadsheet.Controls;assembly=Telerik.Windows.Controls.Spreadsheet" 
-    xmlns:Txt="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Txt;assembly=Telerik.Windows.Documents.Spreadsheet"
-    xmlns:Csv="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Csv;assembly=Telerik.Windows.Documents.Spreadsheet" 
-    xmlns:Pdf="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf;assembly=Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf"
-    xmlns:Xlsx="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx;assembly=Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml" 
-```
+<snippet id='radspreadsheet-spreadsheet-ui-block_2-xaml' />
 
 ## Minimization
 
 The RadSpreadsheetRibbon element support minimizing its content so that only the tab headers remain visible. This is done via the `IsMinimized` property. 
 
 __Minimizing the RadSpreadsheetRibbon__
-```XAML
-	<Grid x:Name="spreadsheetLayoutRoot">
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition/>
-	        <RowDefinition Height="Auto"/>
-	    </Grid.RowDefinitions>
-	    <telerik:RadSpreadsheetRibbon IsMinimized="True" BackstageClippingElement="{Binding ElementName=spreadsheetLayoutRoot, Mode=OneTime}" RadSpreadsheet="{Binding ElementName=radSpreadsheet, Mode=OneTime}"/>
-	    <Controls:RadSpreadsheetFormulaBar Grid.Row="1" RadSpreadsheet="{Binding ElementName=radSpreadsheet, Mode=OneTime}"/>
-	    <telerik:RadSpreadsheet x:Name="radSpreadsheet" Grid.Row="2">
-	        <telerik:RadSpreadsheet.FormatProviders>
-	            <Txt:TxtFormatProvider/>
-	            <Csv:CsvFormatProvider/>
-	            <Pdf:PdfFormatProvider/>
-	            <Xlsx:XlsxFormatProvider/>
-	        </telerik:RadSpreadsheet.FormatProviders>
-	    </telerik:RadSpreadsheet>
-	    <Controls:RadSpreadsheetStatusBar Grid.Row="3" RadSpreadsheet="{Binding ElementName=radSpreadsheet, Mode=OneTime}"/>
-	</Grid>
-```
+<snippet id='radspreadsheet-spreadsheet-ui-block_3-xaml' />
 
 __Minimized RadSpreadsheetRibbon__
 
@@ -133,21 +86,11 @@ Extracting the template of the default context menu can be done using a pretty s
 You can also disable the default Context Menu or replace it with a custom implementation.
 
 __Disable Context Menu__
-```XAML
-	<telerik:RadSpreadsheet x:Name="radSpreadsheet">
-	    <telerik:RadSpreadsheet.WorksheetEditorContextMenu>
-	        <x:Null/>
-	    </telerik:RadSpreadsheet.WorksheetEditorContextMenu>
-	</telerik:RadSpreadsheet>
-```
+<snippet id='radspreadsheet-spreadsheet-ui-block_4-xaml' />
 
 __Disable Context Menu__
-```C#
-	this.radSpreadsheet.WorksheetEditorContextMenu = null;
-```
-```VB.NET
-	Me.radSpreadsheet.WorksheetEditorContextMenu = Nothing
-```
+<snippet id='radspreadsheet-spreadsheet-ui-block_5-cs' />
+<snippet id='radspreadsheet-spreadsheet-ui-block_6-vb' />
 
 ## See Also
 

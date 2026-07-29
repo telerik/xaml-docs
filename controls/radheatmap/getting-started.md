@@ -42,14 +42,8 @@ You can find the required assemblies for each control from the suite in the {% i
 To use the RadHeatMap control you will need to define a model that will describe the data that will be shown.
 
 __Example 1: Defining the model__
-```C#
-	public class TempInfo
-	{
-		public int Year { get; set; }
-		public string Month { get; set; }
-		public double Temperature { get; set; }
-	}
-```
+<snippet id='radheatmap-getting-started-example_1_defining_the_model-cs' />
+
 
 ## Setting up the Control
 
@@ -64,38 +58,12 @@ The __ValuePath__ property contains the name of the property in the custom model
 To populate the control with data use its __ItemsSource__ property.
 
 __Example 2: Defining the heatmap__
-```XAML
-	<telerik:RadHeatMap>
-		<telerik:RadHeatMap.Definition>
-			<telerik:CategoricalDefinition x:Name="categoricalDefinition"
-										   RowGroupMemberPath="Year"
-										   ColumnGroupMemberPath="Month"
-										   ValuePath="Temperature" />
-		</telerik:RadHeatMap.Definition>
-	</telerik:RadHeatMap>
-```
+<snippet id='radheatmap-getting-started-example_2_defining_the_heatmap-xaml' />
+
 
 __Example 3: Creating the data and setting the ItemsSource__
-```C#
-	private void PrepareData()
-	{
-		int year = 2018;
-		string[] months = new string[6] { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
-		var randomNumberGenerator = new Random();
+<snippet id='radheatmap-getting-started-example_3_creating_the_data_and_setting_the_itemssource-cs' />
 
-		var source = new ObservableCollection<TempInfo>();
-		for (int i = 0; i < months.Length; i++)
-		{
-			for (int k = 0; k < 6; k++)
-			{
-				var info = new TempInfo() { Year = year + k, Month = months[i], Temperature = randomNumberGenerator.Next(10, 300) };
-				source.Add(info);
-			}
-		}
-
-		this.categoricalDefinition.ItemsSource = source;
-	}	
-```
 
 #### __Figure 1: RadHeatMap__
 ![{{ site.framework_name }} RadHeatMap RadHeatMap](images/radheatmap-getting-started-0.png)

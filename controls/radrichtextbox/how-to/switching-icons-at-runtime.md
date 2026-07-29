@@ -21,12 +21,7 @@ __RadRichTextBox__ comes with three separate sets of icons that can be used in i
 
 __Example 1: Creating IconSources__
 
-```XAML
-	<telerik:IconSources x:Key="IconSources" 
-         LightBasePath="/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/" 
-         DarkBasePath="/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/Dark/"
-         ModernBasePath="/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/Modern/" />
-```
+<snippet id='radrichtextbox-how-to-switching-icons-at-runtime-block_1-xaml' />
 
 
 >tip To browse all icons you can download the source code of the controls from your Telerik account. The images are located at {%if site.site_name == 'WPF' %}\Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\RichTextBox\RichTextBoxUI\Images{%endif%}{%if site.site_name == 'Silerlight' %}\Telerik\_UI\_for\_Silerlight\_Source\_[Version]\Controls\RichTextBox\RichTextBoxUI\Images{%endif%}.

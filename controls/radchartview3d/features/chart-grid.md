@@ -20,11 +20,8 @@ __CartesianChart3DGrid__ is used to decorate the 3D Cartesian chart with grid li
 To enable the grid, set the __Grid__ property of the __RadCartesianChart3D__ control to an instance of the __CartesianChart3DGrid__ class (see __Example 1__). 
 
 __Example 1: Setting up the grid__  
-```XAML
-	<telerik:RadCartesianChart3D.Grid>
-		<telerik:CartesianChart3DGrid/>
-	</telerik:RadCartesianChart3D.Grid>
-```
+<snippet id='radchartview3d-features-chart-grid-example_1_setting_up_the_grid-xaml' />
+
 
 #### __Figure 2: Grid lines__
 ![{{ site.framework_name }} RadChartView3D Grid lines](images/radchartview-3d-chartgrid-1.png)
@@ -45,14 +42,8 @@ To set the visibility of the grid and strip lines you can use the following prop
 * __YZGridLinesVisibility__ and __YZStripLinesVisibility__ for the lines in the YZ plane.
 
 __Example 2: Setting lines visibility__  
-```XAML
-		<telerik:CartesianChart3DGrid XZGridLinesVisibility="All" 
-									  YZGridLinesVisibility="All"
-									  XYGridLinesVisibility="All"
-									  XYStripLinesVisibility="All"
-									  XZStripLinesVisibility="All"
-									  YZStripLinesVisibility="All">
-```
+<snippet id='radchartview3d-features-chart-grid-example_2_setting_lines_visibility-xaml' />
+
 
 ## Customizing the grid and strip lines
 
@@ -61,9 +52,8 @@ __CartesianChart3DGrid__ allows you to define custom materials for the grid and 
 To set the stroke thickness of the grid lines you can use the __GridLineThickness__ property.
 
 __Example 3: Setting line stroke thickness__  
-```XAML
-	<telerik:CartesianChart3DGrid GridLineThickness="5" />
-```
+<snippet id='radchartview3d-features-chart-grid-example_3_setting_line_stroke_thickness-xaml' />
+
 
 You can set the material (brush) of the the lines using the following properties.
 
@@ -72,43 +62,22 @@ You can set the material (brush) of the the lines using the following properties
 * __ZGridLinesMaterials__ and __ZStripLinesMaterials__ for the lines that originate from the Z axis.
 
 __Example 4: Setting X grid lines material__
-```XAML
-	<telerik:CartesianChart3DGrid>
-		<telerik:CartesianChart3DGrid.XGridLinesMaterials>
-			<MaterialCollection>
-				<DiffuseMaterial Brush="#00A2E8" />
-			 </MaterialCollection>
-		</telerik:CartesianChart3DGrid.XGridLinesMaterials>			
-	</telerik:CartesianChart3DGrid>
-```
+<snippet id='radchartview3d-features-chart-grid-example_4_setting_x_grid_lines_material-xaml' />
+
 
 #### __Figure 4: Colored grid lines__
 ![{{ site.framework_name }} RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-3.png)
 
 __Example 5: Setting Y grid lines material__
-```XAML
-	<telerik:CartesianChart3DGrid>			
-		<telerik:CartesianChart3DGrid.YGridLinesMaterials>
-			<MaterialCollection>
-				<DiffuseMaterial Brush="#22B14C" />
-			</MaterialCollection>
-		</telerik:CartesianChart3DGrid.YGridLinesMaterials>
-	</telerik:CartesianChart3DGrid>
-```
+<snippet id='radchartview3d-features-chart-grid-example_5_setting_y_grid_lines_material-xaml' />
+
 
 #### __Figure 5: Colored grid lines__
 ![{{ site.framework_name }} RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-4.png)
 
 __Example 6: Setting Z grid lines material__
-```XAML
-	<telerik:CartesianChart3DGrid>			
-		<telerik:CartesianChart3DGrid.ZGridLinesMaterials>
-			<MaterialCollection>
-				<DiffuseMaterial Brush="#FF7F27" />
-			 </MaterialCollection>
-		</telerik:CartesianChart3DGrid.ZGridLinesMaterials>
-	</telerik:CartesianChart3DGrid>
-```
+<snippet id='radchartview3d-features-chart-grid-example_6_setting_z_grid_lines_material-xaml' />
+
 
 #### __Figure 6: Colored grid lines__
 ![{{ site.framework_name }} RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-5.png)

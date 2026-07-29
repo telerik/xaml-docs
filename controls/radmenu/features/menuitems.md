@@ -24,25 +24,7 @@ __RadMenuItem__ is the main menu item in __RadMenu__. It is used for the top-lev
 
 
 
-```XAML
-	<telerik:RadMenu>
-	    <!--1-->
-	    <telerik:RadMenuItem Header="File" />
-	
-	    <!--2-->
-	    <telerik:RadMenuItem>
-	        <telerik:RadMenuItem.Header>Edit</telerik:RadMenuItem.Header>
-	    </telerik:RadMenuItem>
-	
-	    <!--3-->
-	    <telerik:RadMenuItem>
-	        <telerik:RadMenuItem.Header>
-	            <TextBlock Text="View" />
-	        </telerik:RadMenuItem.Header>
-	    </telerik:RadMenuItem>
-	    ...
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-features-menuitems-block_1-xaml' />
 
 And here is the result:
 
@@ -58,18 +40,7 @@ __RadMenuGroupItem__ inherits from __RadMenuItem__ class and it is used as conta
 
 
 
-```XAML
-	<telerik:RadMenu VerticalAlignment="Top">
-	    <telerik:RadMenuItem Header="Shapes" />
-	    <telerik:RadMenuItem Header="Sizes">
-	        <telerik:RadMenuGroupItem Header="Header">
-	            <telerik:RadMenuItem Header="Small" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="35" Height="35" />
-	            <telerik:RadMenuItem Header="Medium" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="45" Height="45" />
-	            <telerik:RadMenuItem Header="Large" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="55" Height="55" />
-	        </telerik:RadMenuGroupItem>
-	    </telerik:RadMenuItem>
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-features-menuitems-block_2-xaml' />
 
 And this is the result:
 
@@ -81,13 +52,7 @@ __RadMenuSeparatorItem__ also inherits from __RadMenuItem__. It is a menu item u
 
 
 
-```XAML
-	<telerik:RadMenu>
-	    ...
-	    <telerik:RadMenuSeparatorItem />
-	    ...
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-features-menuitems-block_3-xaml' />
 
 ![Rad Menu Features Menu Items 03](images/RadMenu_Features_MenuItems_03.png)
 

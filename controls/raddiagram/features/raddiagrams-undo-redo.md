@@ -25,67 +25,14 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
 * __Redo()__ - this method reapplies the last operation that was undone in the __RadDiagram__.				  
 
 
-```XAML
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="*" />
-		</Grid.RowDefinitions>
-		<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-			<telerik:RadButton Margin="5,0"
-							   Click="Undo"
-							   Content="Undo" />
-			<telerik:RadButton Margin="5,0"
-							   Click="Redo"
-							   Content="Redo" />
-		</StackPanel>
-		<telerik:RadDiagram x:Name="diagram"
-							Grid.Row="1"
-							Margin="5">
-			<telerik:RadDiagramShape x:Name="Shape1"
-									 Content="Shape 1"
-									 Position="80,20" />
-			<telerik:RadDiagramShape x:Name="Shape2"
-									 Content="Shape 2"
-									 Position="320,20" />
+<snippet id='raddiagram-features-raddiagrams-undo-redo-block_1-xaml' />
 
-			<telerik:RadDiagramConnection SourceCapType="Arrow6Filled"
-										  Target="{Binding ElementName=Shape1}"
-										  TargetCapType="Arrow1Filled"
-										  StartPoint="5,40" />
-			<telerik:RadDiagramConnection Source="{Binding ElementName=Shape1}"
-										  SourceCapType="Arrow5"
-										  Target="{Binding ElementName=Shape2}"
-										  TargetCapType="Arrow5Filled" />
-			<telerik:RadDiagramConnection Source="{Binding ElementName=Shape2}"
-										  SourceCapType="Arrow6"
-										  TargetCapType="Arrow6Filled"
-										  EndPoint="480,40" />
-		</telerik:RadDiagram>
-	</Grid>
-```
 
 	
-```C#
-    private void Undo(object sender, RoutedEventArgs e)
-    {
-        diagram.Undo();
-    }
+<snippet id='raddiagram-features-raddiagrams-undo-redo-block_2-cs' />
 
-    private void Redo(object sender, RoutedEventArgs e)
-    {
-        diagram.Redo();
-    }				  
-```
-```VB.NET
-    Private Sub Undo(sender As Object, e As RoutedEventArgs)
-        diagram.Undo()
-    End Sub
+<snippet id='raddiagram-features-raddiagrams-undo-redo-block_2-vb' />
 
-    Private Sub Redo(sender As Object, e As RoutedEventArgs)
-        diagram.Redo()
-    End Sub			
-```	
 
 ![Rad Diagram Features Undo Redo Methods](images/RadDiagram_Features_UndoRedo_Methods.png)
 
@@ -96,47 +43,8 @@ __Telerik Diagramming Framework__ exposes a set of commands that allow you to ea
 >For a full list of the Telerik __DiagramCommands__, please refer to the [Commands]({%slug raddiagrams-features-commands%}) tutorial.			  
 
 
-```XAML
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-            <telerik:RadButton Margin="5,0"
-                               Command="telerik:DiagramCommands.Undo"
-                               CommandTarget="{Binding ElementName=diagram}"
-                               Content="Undo" />
-            <telerik:RadButton Margin="5,0"
-                               Command="telerik:DiagramCommands.Redo"
-                               CommandTarget="{Binding ElementName=diagram}"
-                               Content="Redo" />
-        </StackPanel>
-        <telerik:RadDiagram x:Name="diagram"
-                            Grid.Row="1"
-                            Margin="5">
-            <telerik:RadDiagramShape x:Name="Shape1"
-                                     Content="Shape 1"
-                                     Position="80,20" />
-            <telerik:RadDiagramShape x:Name="Shape2"
-                                     Content="Shape 2"
-                                     Position="320,20" />
+<snippet id='raddiagram-features-raddiagrams-undo-redo-block_3-xaml' />
 
-            <telerik:RadDiagramConnection SourceCapType="Arrow6Filled"
-                                          Target="{Binding ElementName=Shape1}"
-                                          TargetCapType="Arrow1Filled"
-                                          StartPoint="5,40" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=Shape1}"
-                                          SourceCapType="Arrow5"
-                                          Target="{Binding ElementName=Shape2}"
-                                          TargetCapType="Arrow5Filled" />
-            <telerik:RadDiagramConnection Source="{Binding ElementName=Shape2}"
-                                          SourceCapType="Arrow6"
-                                          TargetCapType="Arrow6Filled"
-                                          EndPoint="480,40" />
-        </telerik:RadDiagram>
-    </Grid>
-```
 
 ### UndoRedoService
 

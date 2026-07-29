@@ -19,21 +19,14 @@ This mode of operation is intended for scenarios where the RadCircularProgressBa
 >tip Set the `IsIndeterminate` property of RadCircularProgressBar to __False__ to use this state if it is not the active one.
 
 __Setting the determinate state__
-```XAML
-    <telerik:RadCircularProgressBar Name="radCircularProgressBar" Value="0.75" IsIndeterminate="False"/>
-```
+<snippet id='radcircularprogressbar-states-setting_the_determinate_state-xaml' />
+
 
 __Setting the determinate state in code__
-```C#
-    RadCircularProgressBar radCircularProgressBar = new RadCircularProgressBar();
-    radCircularProgressBar.Value = 0.75;
-    radCircularProgressBar.IsIndeterminate = false;
-```
-```VB.NET
-    Dim radCircularProgressBar As RadCircularProgressBar = New RadCircularProgressBar()
-    radCircularProgressBar.Value = 0.75
-    radCircularProgressBar.IsIndeterminate = False
-```
+<snippet id='radcircularprogressbar-states-setting_the_determinate_state_in_code-cs' />
+
+<snippet id='radcircularprogressbar-states-setting_the_determinate_state_in_code-vb' />
+
 
 __Determinate state__
 
@@ -44,19 +37,14 @@ __Determinate state__
 This state is aimed at scenarios where the operation progress cannot be precisely measured. When this mode is active, a circular animation of the progress will be played. To active this mode, set the `IsIndeterminate` property of RadCircularProgressBar to __True__.
 
 __Setting the indeterminate state__
-```XAML
-    <telerik:RadCircularProgressBar Name="radCircularProgressBar" IsIndeterminate="True"/>
-```
+<snippet id='radcircularprogressbar-states-setting_the_indeterminate_state-xaml' />
+
 
 __Setting the indeterminate state in code__
-```C#
-    RadCircularProgressBar radCircularProgressBar = new RadCircularProgressBar();
-    radCircularProgressBar.IsIndeterminate = true;
-```
-```VB.NET
-    Dim radCircularProgressBar As RadCircularProgressBar = New RadCircularProgressBar()
-    radCircularProgressBar.IsIndeterminate = True
-```
+<snippet id='radcircularprogressbar-states-setting_the_indeterminate_state_in_code-cs' />
+
+<snippet id='radcircularprogressbar-states-setting_the_indeterminate_state_in_code-vb' />
+
 
 __Indeterminate state__
 
@@ -67,21 +55,14 @@ __Indeterminate state__
 RadCircularProgressBar allows you to modify the ratio of the progress indicator, when the control is in indeterminate state. To do so, set the `IndeterminateIndicatorRatio` property. The accepted values are in the ranges between __0__ and __1__. The default value of this property is __0.125__.
 
 __Setting the IndeterminateIndicatorRatio__
-```XAML
-    <telerik:RadCircularProgressBar Name="circularProgressBar" IsIndeterminate="True" IndeterminateIndicatorRatio="0.75"/>
-```
+<snippet id='radcircularprogressbar-states-setting_the_indeterminateindicatorratio-xaml' />
+
 
 __Setting the IndeterminateIndicatorRatio in code__
-```C#
-    RadCircularProgressBar radCircularProgressBar = new RadCircularProgressBar();
-    radCircularProgressBar.IsIndeterminate = true;
-    radCircularProgressBar.IndeterminateIndicatorRatio = 0.75;
-```
-```VB.NET
-    Dim radCircularProgressBar As RadCircularProgressBar = New RadCircularProgressBar()
-    radCircularProgressBar.IsIndeterminate = True
-    radCircularProgressBar.IndeterminateIndicatorRatio = 0.75
-```
+<snippet id='radcircularprogressbar-states-setting_the_indeterminateindicatorratio_in_code-cs' />
+
+<snippet id='radcircularprogressbar-states-setting_the_indeterminateindicatorratio_in_code-vb' />
+
 
 ## See Also
 * [Segments]({%slug radcircularprogressbar-segments%})

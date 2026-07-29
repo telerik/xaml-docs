@@ -42,9 +42,7 @@ __RadNumericUpDown__ comes with a couple of key properties which you can use to 
 
 __Example 1: Make RadNumericUpDown read-only__
 
-```XAML
-	<telerik:RadNumericUpDown x:Name="radNumericUpDown" IsReadOnly="True"/>
-```
+<snippet id='radnumericupdown-features-behavior-block_1-xaml' />
 
 #### Figure 1: A read-only RadNumericUpDown
 

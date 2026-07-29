@@ -15,26 +15,8 @@ The indeterminate state animation of `RadCircularProgressBar` is represented by 
 >important The `TargetElementName` property has to be set to __PART\_IndicatorPath__. `PropertyName` property has to be equal to __(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)__.
 
 __Setting a custom RadDoubleAnimation__
-```XAML
-    <telerik:RadCircularProgressBar Name="circularProgressBar" 
-                                    IsIndeterminate="True"
-                                    IndeterminateIndicatorRatio="0.25">
-        <telerik:AnimationManager.AnimationSelector>
-            <telerik:AnimationSelector>
-                <telerik:RadDoubleAnimation AnimationName="IndeterminateIndicatorAnimation"
-                                            Direction="Out" 
-                                            RepeatBehavior="Forever" 
-                                            Duration="00:00:01" 
-                                            StartValue="0"
-                                            TargetValue="360"
-                                            SpeedRatio="0.3"
-                                            TargetElementName="PART_IndicatorPath"
-                                            PropertyName="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-                </telerik:RadDoubleAnimation>
-            </telerik:AnimationSelector>
-        </telerik:AnimationManager.AnimationSelector>
-    </telerik:RadCircularProgressBar>
-```
+<snippet id='radcircularprogressbar-animation-customization-setting_a_custom_raddoubleanimation-xaml' />
+
 
 ![RadCircularProgressBar with custom animation](images/radcircularprogressbar-animation-customization-0.gif)
 
@@ -45,29 +27,8 @@ The `RadDoubleAnimation` class supports applying animation easing. To do so, set
 The following code snippet shows the above example with a custom `BounceEase` instance:
 
 __Applying a BounceEase animation easing__
-```XAML
-    <telerik:RadCircularProgressBar Name="circularProgressBar" 
-                                    IsIndeterminate="True"
-                                    IndeterminateIndicatorRatio="0.25">
-        <telerik:AnimationManager.AnimationSelector>
-            <telerik:AnimationSelector>
-                <telerik:RadDoubleAnimation AnimationName="IndeterminateIndicatorAnimation"
-                                            Direction="Out" 
-                                            RepeatBehavior="Forever" 
-                                            Duration="00:00:01" 
-                                            StartValue="0"
-                                            TargetValue="360"
-                                            SpeedRatio="0.3"
-                                            TargetElementName="PART_IndicatorPath"
-                                            PropertyName="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-                    <telerik:RadDoubleAnimation.Easing>
-                        <BounceEase Bounces="25" Bounciness="5" EasingMode="EaseOut"/>
-                    </telerik:RadDoubleAnimation.Easing>
-                </telerik:RadDoubleAnimation>
-            </telerik:AnimationSelector>
-        </telerik:AnimationManager.AnimationSelector>
-    </telerik:RadCircularProgressBar>
-```
+<snippet id='radcircularprogressbar-animation-customization-applying_a_bounceease_animation_easing-xaml' />
+
 
 ![RadCircularProgressBar with animation easing](images/radcircularprogressbar-animation-customization-1.gif)
 

@@ -24,15 +24,7 @@ Firstly you need to create a new business object named for example Country. Its 
 
 __Creation of the business object__
 
-```C#
-    public class Country
-    {
-        public string Name { get; set; }
-        public string Capital { get; set; }
-        public Continent Continent { get; set; }
-        public string Flag { get; set; }
-    }
-```
+<snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-creation_of_the_business_object-cs' />
 
 The __Flag__ property should be of type string and will be bound to the __Source__ property of the Image. As for the __Continent__ property it is an enumeration that contains all continents.
 
@@ -44,20 +36,7 @@ Next a valid DataTemplate with the correct bindings for the __Name__ and __Flag_
 
 __Declaring the BoxesItemTemplate__
 
-```XAML
-	<DataTemplate x:Key="CustomBoxesItemTemplate">
-	  <StackPanel Orientation="Horizontal">
-	    <Image Width="14"
-	         Height="12"
-	         Margin="2"
-	         Source="{Binding Flag}" />
-	    <TextBlock Foreground="{Binding Converter={StaticResource ContinentToColorConverter}}"
-	           Margin="2"
-	           FontWeight="Bold"
-	           Text="{Binding Name}" />
-	  </StackPanel>
-	</DataTemplate>
-```
+<snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-declaring_the_boxesitemtemplate-xaml' />
 
 The __ContinentToColorConverter__ converts the __Continent__ property of the item into a Color that is set to the Foreground property of the TextBlock that visualizes the Name property - each country has different color based on its continent.
 
@@ -65,11 +44,7 @@ Finally you will need to declare __RadAutoCompleteBox__ in the xaml and set its 
 
 __Setting the BoxesItemTemplate__
 
-```XAML
-	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}"
-	                            DisplayMemberPath="Name"
-	                            BoxesItemTemplate="{StaticResource CustomBoxesItemTemplate}"/>
-```
+<snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-setting_the_boxesitemtemplate-xaml' />
 
 The following screenshots show the final result:
 

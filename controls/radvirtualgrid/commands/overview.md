@@ -55,34 +55,15 @@ All supported commands are defined in the __RadVirtualGridCommands__ class and a
 As the commands provided by __RadVirtualGrid__ are ICommands at their core, they do provide methods for both checking if they can be invoked - __CanExecute()__ and for invoking them - __Execute()__.
 
 __Example 1: Executing different commands__
-```C#
-	private void Button1_Click(object sender, RoutedEventArgs e)
-	{
-	    var moveDownCommand = RadVirtualGridCommands.MoveDown as RoutedUICommand;
-	    var selectCommand = RadVirtualGridCommands.SelectCurrentUnit as RoutedUICommand;
-	    var deleteCommand = RadVirtualGridCommands.Delete as RoutedUICommand;
-	    moveDownCommand.Execute(null, this.VirtualGrid);
-	    selectCommand.Execute(null, this.VirtualGrid);
-	    deleteCommand.Execute(null, this.VirtualGrid);
-	}
-```
+<snippet id='radvirtualgrid-commands-overview-block_1-cs' />
 
 In order to ensure that all commands will be executed in the correct sequence, it is advised to use __RadVirtualGrid's PendingCommands__ collection as demonstrated in __Example 2__.
 
 __Example 2: Executing different commands with the ExecutePendingCommand method__
-```C#
-	 private void Button1_Click(object sender, RoutedEventArgs e)
-        {
-            this.VirtualGrid.PendingCommands.Add(RadVirtualGridCommands.MoveDown);
-            this.VirtualGrid.PendingCommands.Add(RadVirtualGridCommands.SelectCurrentUnit);
-            this.VirtualGrid.PendingCommands.Add(RadVirtualGridCommands.Delete);
-            this.VirtualGrid.ExecutePendingCommand();
-        }
-```
+<snippet id='radvirtualgrid-commands-overview-block_2-cs' />
 
 ## See Also
 
 * [Implementation]({%slug virtualgrid-commands-implementation%})
 
 * [Keyboard Command Provider]({%slug virtualgrid-commands-keyboard-command-provider%})
-

@@ -84,30 +84,12 @@ Here is a list of the most important properties and how they can be used.
 Here is how to define a column of this type.
 
 __Example 1: Define GridViewColumn in XAML:__
-```XAML
-	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
-		<telerik:RadGridView.Resources>
-			<DataTemplate x:Key="gridViewColumCellTemplate">
-			    <telerik:RadButton Content="More Details"/>
-			</DataTemplate>
-		</telerik:RadGridView.Resources>
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewColumn Header="My Column" CellTemplate="{StaticResource gridViewColumCellTemplate}"/>
-		</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-basic-column-example_1_define_gridviewcolumn_in_xaml-xaml' />
+
          
 __Example 2: Define GridViewColumn in code:__
 
-```C#
-	GridViewColumn column = new GridViewColumn();
-	column.Header = "My Column";
-	column.CellTemplate= this.radGridView.Resources["gridViewColumCellTemplate"] as DataTemplate;
-	this.radGridView.Columns.Add(column);
-```
-```VB.NET
-	Dim column As New GridViewColumn()
-        column.Header = "My Column"
-	column.CellTemplate = TryCast(Me.radGridView.Resources("gridViewColumCellTemplate"), System.Windows.DataTemplate)
-	Me.radGridView.Columns.Add(column)
-```
+<snippet id='radgridview-columns-columntypes-column-types-basic-column-example_2_define_gridviewcolumn_in_code-cs' />
+
+<snippet id='radgridview-columns-columntypes-column-types-basic-column-example_2_define_gridviewcolumn_in_code-vb' />
+

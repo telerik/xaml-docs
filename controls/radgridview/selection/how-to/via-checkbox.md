@@ -16,29 +16,8 @@ Here is a __RadGridView__ declaration, which is populated with some sample data.
 
 
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 IsReadOnly="False"
-	                 AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewSelectColumn />
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"
-	                                Header="ID"/>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding OrderNO, Mode=TwoWay}"
-	                                Header="Order No">
-	        </telerik:GridViewDataColumn>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding OrderDate, Mode=TwoWay}"
-	                                Header="Order Date">
-	        </telerik:GridViewDataColumn>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Country, Mode=TwoWay}"
-	                                Header="Country">
-	        </telerik:GridViewDataColumn>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Shipped, Mode=TwoWay}"
-	                                Header="Shipped?">
-	        </telerik:GridViewDataColumn>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-selection-how-to-via-checkbox-block_1-xaml' />
+
 
 The grid is shown on the next figure.
 
@@ -50,21 +29,15 @@ In order to enable the selection via checkbox behavior, you need to perform the 
 
 
 
-```XAML
-	<telerik:RadGridView SelectionMode="Extended">
-```
+<snippet id='radgridview-selection-how-to-via-checkbox-block_2-xaml' />
+
 
 2. Add an additional __GridViewColumn__ of type __GridViewSelectColumn__.
 
 
 
-```XAML
-	<telerik:RadGridView.Columns>
-	    <telerik:GridViewSelectColumn/>
-	    <!--...-->
-	</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-selection-how-to-via-checkbox-block_3-xaml' />
+
 
 Here is the final result. When you select the CheckBox Header, then all rows will be automatically selected.
 

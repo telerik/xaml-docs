@@ -22,9 +22,7 @@ The __RadWorksheetEditor__ exposes a Boolean property __ShowRowColumnHeadings__.
 
 __Example 1: Hide Row and Column Headers__
 
-```C#
-	            this.radSpreadsheet.ActiveWorksheetEditor.ShowRowColumnHeadings = false;
-```
+<snippet id='radspreadsheet-howto-hide-row-column-headers-and-gridlines-block_1-cs' />
 
 
 ## Show or Hide Gridlines
@@ -34,9 +32,7 @@ If you want to show or hide the gridlines of __RadSpreadsheet__ just set the __S
 
 __Example 2: Hide Gridlines__
 
-```C#
-	            this.radSpreadsheet.ActiveWorksheetEditor.ShowGridlines = false;
-```
+<snippet id='radspreadsheet-howto-hide-row-column-headers-and-gridlines-block_2-cs' />
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/WPF/CustomRowAndColumnHeadings).          
 

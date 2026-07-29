@@ -30,9 +30,7 @@ The __SelectionMode__ property of RadTileList controls whether users can select 
 __Example 1__ demonstrates how you can set the __SelectionMode__ property in XAML.
 
 __Example 1: Set SelectionMode of RadTileList to Multiple__
-```XAML
-	<telerik:RadTileList x:Name="RadTileList" SelectionMode="Multiple"/>
-```
+<snippet id='radtilelist-features-selection-block_1-xaml' />
 
 __Figure 1__ shows the result when Multiple selection is enabled and several tiles are included in the selection.
 
@@ -56,26 +54,11 @@ Regardless of the mode the selection is in, the __SelectionChanged__ event will 
 The snippet in __Example 2__ demonstrates how you can react to a change in the current selection.
 
 __Example 2: SelectionChanged event handler for RadTileList__
-```C#
-	private void EmployeesTileList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-	{
-	    if (e.RemovedItems.Count == 0)
-	    {
-	        MessageBox.Show("Please choose an employee");
-	    }
-	}
-```
-```VB.NET
-	Private Sub EmployeesTileList_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
-	    If e.RemovedItems.Count = 0 Then
-	        MessageBox.Show("Please choose an employee")
-	    End If
-	End Sub
-```
+<snippet id='radtilelist-features-selection-block_2-cs' />
+<snippet id='radtilelist-features-selection-block_3-vb' />
 
 
 ## See Also
 
 * [Populating RadTileList with Tiles ]({%slug radtilelist-getting-started-populating-with-tiles%})
 * [SelectionChangedEventArgs on MSDN](https://msdn.microsoft.com/en-us/library/system.windows.controls.selectionchangedeventargs)
-

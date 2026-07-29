@@ -47,24 +47,14 @@ You can add __RadWindow__ manually in XAML as demonstrated if __Example 1__.
 
 __Example 1: Adding RadWindow in XAML__
 
-```XAML
-	<telerik:RadWindow Height="300" Width="400"/>
-```
+<snippet id='radwindow-getting-started-block_1-xaml' />
 
 Here is an example of declaring a __RadWindow__ in code.
 
 __Example 2: Adding RadWindow in code__
 
-```C#
-	RadWindow radWindow = new RadWindow();
-	radWindow.Width = 400;
-	radWindow.Height = 300;
-```
-```VB.NET
-	Dim radWindow As New RadWindow()
-	radWindow.Width = 400
-	radWindow.Height = 300
-```
+<snippet id='radwindow-getting-started-block_2-cs' />
+<snippet id='radwindow-getting-started-block_3-vb' />
 
 >It's not a good practice do declare your __RadWindow__ as visual element in XAML. The only scenario, when it is meaningful to use the __RadWindow__ in XAML, is when it represents the entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
@@ -76,12 +66,8 @@ To open the __RadWindow__ you have to call its __Show()__ method.
 
 __Example 3: Calling the Show() method__
 
-```C#
-	radWindow.Show();
-```
-```VB.NET
-	radWindow.Show()
-```
+<snippet id='radwindow-getting-started-block_4-cs' />
+<snippet id='radwindow-getting-started-block_5-vb' />
 
 ![Figure 1: An empty RadWindow](images/RadWindow_GettingStarted_01.png)
 
@@ -97,16 +83,8 @@ To add content to the __RadWindow__ you have to use the __Content__ property or 
 
 __Example 4: Setting the Content property__
 
-```C#
-	Grid grid = new Grid();
-	grid.Background = new SolidColorBrush(Color.FromArgb(255, 240, 255, 255));
-	radWindow.Content = grid;
-```
-```VB.NET
-	Dim grid As New Grid()
-	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
-	radWindow.Content = grid
-```
+<snippet id='radwindow-getting-started-block_6-cs' />
+<snippet id='radwindow-getting-started-block_7-vb' />
 
 ![Figure 2: RadWindow with a Grid set as its Content](images/RadWindow_GettingStarted_02.png)
 
@@ -120,12 +98,8 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 
 __Example 5: Using the Alert method__
 
-```C#
-	RadWindow.Alert("Hello!");
-```
-```VB.NET
-	RadWindow.Alert("Hello!")
-```
+<snippet id='radwindow-getting-started-block_8-cs' />
+<snippet id='radwindow-getting-started-block_9-vb' />
 
 ![Figure 3: Result of Example 5](images/RadWindow_GettingStarted_03.png)
 
@@ -133,17 +107,8 @@ __Example 5: Using the Alert method__
 
 __Example 6: Using the Confirm method__
 
-```C#
-	RadWindow.Confirm(new DialogParameters()
-	{
-	    Content = "Are you sure?"
-	});
-```
-```VB.NET
-	Dim parameters As New DialogParameters()
-	parameters.Content = "Are you sure?"
-	RadWindow.Confirm(parameters)
-```
+<snippet id='radwindow-getting-started-block_10-cs' />
+<snippet id='radwindow-getting-started-block_11-vb' />
 
 ![Figure 4: Result of Example 6](images/RadWindow_GettingStarted_04.png)
 
@@ -151,17 +116,8 @@ __Example 6: Using the Confirm method__
 
 __Example 7: Using the Prompt method__
 
-```C#
-	RadWindow.Prompt(new DialogParameters()
-	{
-	    Content = "Enter your name:"
-	});
-```
-```VB.NET
-	Dim parameters As New DialogParameters()
-	parameters.Content = "Enter your name:"
-	RadWindow.Confirm(parameters)
-```
+<snippet id='radwindow-getting-started-block_12-cs' />
+<snippet id='radwindow-getting-started-block_13-vb' />
 
 ![Figure 5: Result of Example 7](images/RadWindow_GettingStarted_05.png)
 
@@ -170,25 +126,14 @@ __Example 7: Using the Prompt method__
 If you are using [Implicit Styles]({%slug implicit-styles-styling-the-controls%}) to style the control, note that the newly created user control will not receive automatically the RadWindow style. The __BasedOn__ property of the custom style need to be set to the default style of RadWindow which is __RadWindowStyle__. You should add the following style after the merged dictionaries to fix this:
 
 __Example 8: Custom Style targeting your RadWindow control__  
-```XAML
-	<Application.Resources>
-	    <ResourceDictionary>
-	        <ResourceDictionary.MergedDictionaries>
-	            <ResourceDictionary Source="Themes/System.Windows.xaml" />
-	            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
-	            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
-	        </ResourceDictionary.MergedDictionaries>
-	        <Style TargetType="local:RadWindowControl" BasedOn="{StaticResource RadWindowStyle}" />
-	    </ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radwindow-getting-started-block_14-xaml' />
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
 * [Telerik UI for WPF Window Component](https://www.telerik.com/products/wpf/window.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -201,4 +146,3 @@ __Example 8: Custom Style targeting your RadWindow control__
  * [Predefined Dialogs]({%slug radwindow-features-predefined-dialogs%})
  * [RadWindowManager]({%slug radwindow-features-radiwindowmanager%})
  * [Events]({%slug radwindow-events-overview%})
-

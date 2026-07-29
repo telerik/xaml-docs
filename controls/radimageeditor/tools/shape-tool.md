@@ -15,27 +15,14 @@ The Shape Tool is one of the tools, which come out-of-the-box with the __RadImag
 The tool could be added to the UI of __RadImageEditor__ as shown in __Example 1__.
 
 __Example 1: Add Shape Tool__
-```XAML
-	<telerik:ImageToolItem ImageKey="Shape" telerik:LocalizationManager.ResourceKey="ImageEditor_Shape" Command="commands:ImageEditorRoutedCommands.ExecuteTool">
-	    <telerik:ImageToolItem.CommandParameter>
-	        <tools:ShapeTool>
-	            <tools:ShapeTool.Shapes>
-	                <shapes:RectangleShape />
-	            </tools:ShapeTool.Shapes>
-	        </tools:ShapeTool>
-	    </telerik:ImageToolItem.CommandParameter>
-	</telerik:ImageToolItem>
-``` 
+<snippet id='radimageeditor-tools-shape-tool-example_1_add_shape_tool-xaml' />
+
 
 The namespaces that should be registered are as follows:
 
 __Example 2: Register namespaces__
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"  
-	xmlns:shapes="clr-namespace:Telerik.Windows.Media.Imaging.Shapes;assembly=Telerik.Windows.Controls.ImageEditor"
-	xmlns:commands="clr-namespace:Telerik.Windows.Media.Imaging.ImageEditorCommands.RoutedCommands;assembly=Telerik.Windows.Controls.ImageEditor"
-```
+<snippet id='radimageeditor-tools-shape-tool-example_2_register_namespaces-xaml' />
+
 
 By default, the __ShapeTool__ provides three predefined shapes:
 
@@ -60,16 +47,12 @@ You could customize the shapes in the __ShapeTool__ to fit specific requirements
 
 
 __Example 3: Inherit the IShape interface__
-```C#
-	public class TelerikLogo : IShape
-```
+<snippet id='radimageeditor-tools-shape-tool-example_3_inherit_the_ishape_interface-cs' />
+
 
 __Example 3: Inherit the IShape interface__
-```VB
-	Public Class TelerikLogo
-	    Implements IShape
-	    '...
-```
+<snippet id='radimageeditor-tools-shape-tool-example_3_inherit_the_ishape_interface-vb' />
+
 
 It exposes two members:
 
@@ -79,91 +62,13 @@ It exposes two members:
 Example 4 shows a sample implementation of a custom shape.
 
 __Example 4: Implement custom shape__
-```C#
-	public string DisplayName
-	{
-	    get
-	    {
-	        return "Telerik";
-	    }
-	}
+<snippet id='radimageeditor-tools-shape-tool-example_4_implement_custom_shape-cs' />
 
-	public Geometry GetShapeGeometry()
-	{
-	    PathFigure outer = new PathFigure();
-	    outer.IsClosed = true;
-	    outer.StartPoint = new Point(0, 2.5);
-	    outer.Segments.Add(new LineSegment() { Point = new Point(2.5, 0) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(5, 2.5) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(7.5, 0) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(10, 2.5) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(9, 3.5) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(7.5, 2) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(6, 3.5) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(8.5, 6) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(5, 9.5) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(1.5, 6) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(4, 3.5) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(2.5, 2) });
-	    outer.Segments.Add(new LineSegment() { Point = new Point(1, 3.5) });
-
-	    PathFigure inner = new PathFigure();
-	    inner.StartPoint = new Point(3.5, 6);
-	    inner.IsClosed = true;
-	    inner.Segments.Add(new LineSegment() { Point = new Point(5, 7.5) });
-	    inner.Segments.Add(new LineSegment() { Point = new Point(6.5, 6) });
-	    inner.Segments.Add(new LineSegment() { Point = new Point(5, 4.5) });
-
-	    PathGeometry logoGeometry = new PathGeometry();
-	    logoGeometry.Figures.Add(inner);
-	    logoGeometry.Figures.Add(outer);
-
-	    return logoGeometry;
-	}
-```
 
 
 __Example 4: Implement custom shape__
-```VB
+<snippet id='radimageeditor-tools-shape-tool-example_4_implement_custom_shape-vb' />
 
-	Public ReadOnly Property DisplayName() As String Implements IShape.DisplayName
-	    Get
-	        Return "Telerik"
-	    End Get
-	End Property
-
-	Public Function GetShapeGeometry() As Geometry Implements IShape.GetShapeGeometry
-	    Dim outer As New PathFigure()
-	    outer.IsClosed = True
-	    outer.StartPoint = New Point(0, 2.5)
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(2.5, 0)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(5, 2.5)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(7.5, 0)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(10, 2.5)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(9, 3.5)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(7.5, 2)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(6, 3.5)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(8.5, 6)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(5, 9.5)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(1.5, 6)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(4, 3.5)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(2.5, 2)})
-	    outer.Segments.Add(New LineSegment() With {.Point = New Point(1, 3.5)})
-
-	    Dim inner As New PathFigure()
-	    inner.StartPoint = New Point(3.5, 6)
-	    inner.IsClosed = True
-	    inner.Segments.Add(New LineSegment() With {.Point = New Point(5, 7.5)})
-	    inner.Segments.Add(New LineSegment() With {.Point = New Point(6.5, 6)})
-	    inner.Segments.Add(New LineSegment() With {.Point = New Point(5, 4.5)})
-
-	    Dim logoGeometry As New PathGeometry()
-	    logoGeometry.Figures.Add(inner)
-	    logoGeometry.Figures.Add(outer)
-
-	    Return logoGeometry
-	End Function
-```
 
 >tip You could download runnable project with Custom Shape from our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Drawing)
 
@@ -173,35 +78,16 @@ __Example 4: Implement custom shape__
 After creating a custom shape, it should be registered in the tool. This could be achieved declaratively as well as in the code behind as shown in __Examples 5 and 6__. You could get or set the shapes in the __ShapeTool__ trough the __Shapes__ collection. 
 
 __Example 5: Add custom shape to the shape tool__
-```C#
-	ShapeTool tool = new ShapeTool();
-	tool.Shapes.Add(new RectangleShape());
-	tool.Shapes.Add(new EllipseShape());
-	tool.Shapes.Add(new LineShape());
-	tool.Shapes.Add(new TelerikLogo());
-```
+<snippet id='radimageeditor-tools-shape-tool-example_5_add_custom_shape_to_the_shape_tool-cs' />
+
 
 __Example 5: Add custom shape to the shape tool__
-```VB
-	Dim tool As New ShapeTool()
-	tool.Shapes.Add(New RectangleShape())
-	tool.Shapes.Add(New EllipseShape())
-	tool.Shapes.Add(New LineShape())
-	tool.Shapes.Add(New TelerikLogo())
+<snippet id='radimageeditor-tools-shape-tool-example_5_add_custom_shape_to_the_shape_tool-vb' />
 
-```
 
 __Example 5: Add custom shape to the shape tool__
-```XAML
-	<tools:ShapeTool>
-	    <tools:ShapeTool.Shapes>
-	        <shapes:RectangleShape />
-	        <shapes:EllipseShape />
-	        <shapes:LineShape />
-	        <local:TelerikLogo />
-	    </tools:ShapeTool.Shapes>
-	</tools:ShapeTool>
-```
+<snippet id='radimageeditor-tools-shape-tool-example_5_add_custom_shape_to_the_shape_tool-xaml' />
+
 
 ## See also
 

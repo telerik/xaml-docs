@@ -39,26 +39,7 @@ To show a splash screen, use the __RadSplashScreenManager__ class. This allows y
 You can start the splash screen anytime you need to indicate that some work is performed. The following example demonstrates how to show it before the MainWindow is loaded. To do this, call the __RadSplashScreenManager.Show__ method. This displays a window hosting a __RadSplashScreen__ control.
 
 __Example 1: Starting the splash screen on application startup__
-```C#
-	public partial class App : Application
-	{
-		protected override void OnStartup(StartupEventArgs e)
-		{
-			var dataContext = (SplashScreenDataContext)RadSplashScreenManager.SplashScreenDataContext;
-			dataContext.ImagePath = "/SplashScreenWPFApplication;component/Images/splashscreen-for-wpf-image.png";
-			dataContext.Content = "Loading Application";
-			dataContext.Footer = "This is the footer.";
-			
-			RadSplashScreenManager.Show();
-						
-			Thread.Sleep(7000);	
-
-			RadSplashScreenManager.Close();
-
-			base.OnStartup(e);
-		}
-	}	
-```
+<snippet id='radsplashscreen-getting-started-block_1-cs' />
 
 ![{{ site.framework_name }} RadSplashScreen Overview](images/radsplashscreen-getting-started-0.png)
 
@@ -75,68 +56,19 @@ To enable the progress bar in RadSplashScreen, set the __IsIndeterminate__ prope
 RadSplashScreenManager can be used to display any UI element. This means that you can create a custom UserControl and pass its type to the Show method. You can also replace the `RadSplashScreenManager.SplashScreenDataContext` with a custom object that can be used with the UserControl.
 
 __Example 2: Creating a UserControl__
-```XAML
-	<UserControl x:Class="RadSplashScreenTest.MyUserControl"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" d:DesignHeight="450" d:DesignWidth="800"
-             Width="{Binding Width}" Height="{Binding Height}">
-		<Grid Background="#40568D">
-			<TextBlock Text="{Binding Text}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-		</Grid>
-	</UserControl>	
-```
+<snippet id='radsplashscreen-getting-started-block_2-xaml' />
 
 __Example 3: Defining custom model__
-```C#
-	public class MyUserControlViewModel
-    {
-        public string Text { get; set; }
-		public double Width { get; set; }
-        public double Height { get; set; }
-    }
-```
+<snippet id='radsplashscreen-getting-started-block_3-cs' />
 
 __Example 4: Showing a splash screen with custom control__
-```C#
-	RadSplashScreenManager.SplashScreenDataContext = new MyUserControlViewModel() { Text = "Loading applicaiton...", Width = 150, Height = 150 };
-	RadSplashScreenManager.Show<MyUserControl>();
-```
+<snippet id='radsplashscreen-getting-started-block_4-cs' />
 
 ![{{ site.framework_name }} RadSplashScreen Custom Control](images/radsplashscreen-getting-started-1.png)
 
 In case you want to keep the default visualization and add extra content, you can host the `RadSplashScreen` control inside the custom `UserControl`. In this case, if you want to take advantage of the `SplashScreenDataContext` don't forget to manually add the data bindings on the `RadSplashScreen` control.
 
-```xaml
-	<UserControl x:Class="RadSplashScreenTest.MyUserControl"
-	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-		     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-		<UserContro.Resources>
-			<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-		</UserControl.Resources>
-		<Grid>
-		        <telerik:RadSplashScreen ProgressValue="{Binding ProgressValue}"
-						 MinValue="{Binding MinValue}"
-						 MaxValue="{Binding MaxValue}"
-						 Content="{Binding Content}"
-						 IsIndeterminate="{Binding IsIndeterminate}"
-						 Footer="{Binding Footer}"
-						 ImagePath="{Binding ImagePath}"
-						 HorizontalContentAlignment="{Binding HorizontalContentAlignment}"
-						 HorizontalFooterAlignment="{Binding HorizontalFooterAlignment}"
-						 ImageStretch="{Binding ImageStretch}"
-						 ImageWidth="{Binding ImageWidth}"
-					 	 ImageHeight="{Binding ImageHeight}"
-						 ProgressBarVisibility="{Binding IsProgressBarVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-			<!-- extra content here -->
-		</Grid>
-	</UserControl>
-```
+<snippet id='radsplashscreen-getting-started-block_5-xaml' />
 
 ## Setting a Theme
 
@@ -156,17 +88,7 @@ To change the theme, you can follow the steps below:
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 3: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radsplashscreen-getting-started-block_6-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -180,7 +102,7 @@ __Figure 1__ shows a RadSplashScreen with the **Windows8** theme applied.
 
 * [Telerik UI for WPF SplashScreen Component](https://www.telerik.com/products/wpf/splash-screen.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -191,4 +113,3 @@ __Figure 1__ shows a RadSplashScreen with the **Windows8** theme applied.
 ## See Also  
 * [Splash Screen Manager]({%slug radsplashscreen-features-splashscreenmanager%})
 * [Animations]({%slug radsplashscreen-features-animations%})
-

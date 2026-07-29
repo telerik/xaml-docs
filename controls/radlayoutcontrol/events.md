@@ -33,12 +33,8 @@ The layout control has the following event.
 		The default value of the __AllowedActions__ property is __Resize | Drag | ManipulationPaneActions__, which means that all actions are available. If the property is set to __None__, all actions are forbidden and a lock icon will be displayed over the selected item.
 		
 		__Example 1: Setting allowed actions__
-		```C#
-			private void LayoutControl_SelectionChanged(object sender, LayoutControlSelectionChangedEventArgs e)
-			{
-				e.AllowedActions = LayoutControlAllowedActions.None;                        
-			}
-		```
+		<snippet id='radlayoutcontrol-events-example_1_setting_allowed_actions-cs' />
+
 
 		#### __Figure 1: Locked item__
 	![{{ site.framework_name }} RadLayoutControl Locked item](images/layoutcontrol-events-01.png)

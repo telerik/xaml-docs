@@ -30,44 +30,18 @@ In the __Generic.xaml__ you should place the styles and the resources for your t
 
 The theme can be easily set to your __RadDocking__ control in the following way.
 
-```C#
-	public StylingPaneHeader()
-	{
-	    InitializeComponent();
-	    StyleManager.SetTheme( this.radDocking, new Theme());
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		StyleManager.SetTheme(Me.radDocking, New Theme())
-	End Sub
-```
+<snippet id='raddocking-theming-overview-block_1-cs' />
 
-```XAML
-	<UserControl.Resources>
-	    <local:CustomTheme x:Key="MyTheme" />
-	 </UserControl.Resources>
-	        <Grid>
-	            <telerik:RadDocking x:Name="radDocking"
-	                                telerik:StyleManager.Theme="{StaticResource MyTheme}">
-	            </telerik:RadDocking>
-	        </Grid>
-```
+<snippet id='raddocking-theming-overview-block_1-vb' />
 
-```C#
-	public StylingPaneHeader1()
-	{
-	    InitializeComponent();
-	    StyleManager.SetTheme(this.radDocking, new RadDockingTheme());
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		StyleManager.SetTheme(Me.radDocking, New RadDockingTheme())
-	End Sub
-```
+
+<snippet id='raddocking-theming-overview-block_2-xaml' />
+
+
+<snippet id='raddocking-theming-overview-block_3-cs' />
+
+<snippet id='raddocking-theming-overview-block_3-vb' />
+
 
 To learn more about theming controls read the common theming topics on this matter. If you are new to the controls they will give you a basic knowledge about it.
 

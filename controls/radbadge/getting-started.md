@@ -30,13 +30,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 ## Defining the RadBadge
 
 __Defining RadBage in XAML__
-```C#
-	<telerik:RadButton Content="Notifications" VerticalAlignment="Center" HorizontalAlignment="Center">
-		<telerik:RadBadge.Badge>
-			<telerik:RadBadge BadgeType="Add"  />
-		</telerik:RadBadge.Badge>
-	</telerik:RadButton>
-```
+<snippet id='radbadge-getting-started-defining_radbage_in_xaml-cs' />
 
 #### Figure 1: RadBadge Example
 ![{{ site.framework_name }} RadBadge RadBadge Example](images/radbadge-getting-started-0.PNG)

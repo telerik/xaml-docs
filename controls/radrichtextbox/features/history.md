@@ -27,24 +27,16 @@ This topic will explain you how to:
 You can enable or disable the history for the RadDocument via the `Enabled` property of the DocumentHistory.
 
 __Disable history__
-```C#
-	this.radRichTextBox.Document.History.Enabled = false;
-```
-```VB.NET
-	Me.radRichTextBox.Document.History.Enabled = False
-```
+<snippet id='radrichtextbox-features-history-block_1-cs' />
+<snippet id='radrichtextbox-features-history-block_2-vb' />
 
 ## Clear History
 
 To clear the history you just have to call the `Clear` method of the DocumentHistory class.
 
 __Clearing the history__
-```C#
-	this.radRichTextBox.Document.History.Clear();
-```
-```VB.NET
-	Me.radRichTextBox.Document.History.Clear()
-```
+<snippet id='radrichtextbox-features-history-block_3-cs' />
+<snippet id='radrichtextbox-features-history-block_4-vb' />
 
 ## Undo/Redo Actions
 
@@ -52,36 +44,16 @@ To undo and redo some actions, you can call the `Undo` and `Redo` methods of Rad
 
 __Using the Redo and Undo methods of RadRichTextBox__
 
-```C#
-	private void UndoAction()
-	{
-	    this.radRichTextBox.Undo();
-	}
-	private void RedoAction()
-	{
-	    this.radRichTextBox.Redo();
-	}
-```
-```VB.NET
-	Private Sub UndoAction()
-	 Me.radRichTextBox.Undo()
-	End Sub
-	Private Sub RedoAction()
-	 Me.radRichTextBox.Redo()
-	End Sub
-```
+<snippet id='radrichtextbox-features-history-block_5-cs' />
+<snippet id='radrichtextbox-features-history-block_6-vb' />
 
 ## Change History Depth
 
 To change the history capacity you have to set the desired value of the `Depth` property of the DocumentHistory. The default one is __1000__.
 
 __Changing the history depth__
-```C#
-	this.radRichTextBox.Document.History.Depth = 500;
-```
-```VB.NET
-	Me.radRichTextBox.Document.History.Depth = 500
-```
+<snippet id='radrichtextbox-features-history-block_7-cs' />
+<snippet id='radrichtextbox-features-history-block_8-vb' />
 
 ## Preserve History Using RadDocumentEditor
 
@@ -92,60 +64,14 @@ The methods of the RadDocument class do not register in the undo/redo stack. Onc
 The `RadDocumentEditor` control allows you to group several methods so that they are added to the Undo/Redo stack as a single item. To do so, you can use the `BeginUndoGroup` and `EndUndoGroup` methods.
 
 __Using the BeginUndoGroup and EndUndoGroup methods__
-```C#
-	documentEditor.BeginUndoGroup(); 
-	
-	if (documentEditor.Document.CaretPosition.IsPositionInsideTable) 
-	{ 
-	    documentEditor.InsertTableRow(); 
-	    documentEditor.InsertTableRow(); 
-	    documentEditor.InsertTableRow(); 
-	    documentEditor.Document.Selection.Clear(); 
-	} 
-	
-	documentEditor.EndUndoGroup("Insert three table rows"); 
-```
-```VB.NET
-	documentEditor.BeginUndoGroup() 
-	
-	If documentEditor.Document.CaretPosition.IsPositionInsideTable Then 
-		documentEditor.InsertTableRow() 
-		documentEditor.InsertTableRow() 
-		documentEditor.InsertTableRow() 
-		documentEditor.Document.Selection.Clear() 
-	End If 
-	
-	documentEditor.EndUndoGroup("Insert three table rows") 
-```
+<snippet id='radrichtextbox-features-history-block_9-cs' />
+<snippet id='radrichtextbox-features-history-block_10-vb' />
 
 To cancel the execution of the undo group and prevent it from being recorded to the history, you can use the `CancelUndoGroup` method.
 
 __Using the CancelUndoGroup method__
-```C#
-	documentEditor.BeginUndoGroup(); 
-	
-	if (documentEditor.Document.CaretPosition.IsPositionInsideTable) 
-	{ 
-		documentEditor.InsertTableRow(); 
-		documentEditor.InsertTableRow(); 
-		documentEditor.InsertTableRow(); 
-		documentEditor.Document.Selection.Clear(); 
-	} 
-	
-	documentEditor.CancelUndoGroup(); 
-```
-```VB.NET
-	documentEditor.BeginUndoGroup() 
-	
-	If documentEditor.Document.CaretPosition.IsPositionInsideTable Then 
-		documentEditor.InsertTableRow() 
-		documentEditor.InsertTableRow() 
-		documentEditor.InsertTableRow() 
-		documentEditor.Document.Selection.Clear() 
-	End If 
-	
-	documentEditor.CancelUndoGroup() 
-```
+<snippet id='radrichtextbox-features-history-block_11-cs' />
+<snippet id='radrichtextbox-features-history-block_12-vb' />
 
 One thing to note here is that it is not possible to remove some actions from the undo history altogether, i.e. you cannot perform an action without it getting registered in the Undo/Redo stack. In most cases, however, this is sufficient, as you can group the operations that you do not want to name and show explicitly to the end user with the ones that have been user-initiated and are expected by the person modifying the content of RadRichTextBox.
 

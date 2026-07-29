@@ -24,12 +24,7 @@ There are four methods which you can use to programmatically control the state o
 All four methods can also be given an additional boolean parameter (preserveLocalSettings) which determines if the **IsExpandable** state of the item set via the **RowStyle** or **RowStyleSelector** properties should be preserved.
 
 __Example 1: Expand the third item after the control is loaded__
-```C#
-	private void TreeListView_Loaded(object sender, RoutedEventArgs e)
-	{
-		TreeListView.ExpandHierarchyItem(TreeListView.Items[2], true);
-	}
-```
+<snippet id='radtreelistview-features-radtreelsitview-how-to-control-expand-settings-block_1-cs' />
 
 ## IsExpandedBinding and IsExpandableBinding
 
@@ -44,72 +39,15 @@ __IsExpandedBinding__ property can be used to control whether a row is expanded 
 First start by adding a boolean property to your business items as demonstrated in **Example 1**. For the purposes of this article, we will extend the WarehouseItem class from the [Getting Started article]({%slug radtreeliestview-getting-started%}).
 
 __Example 2: Extend the WarehouseItem class__
-```C#
-	public class WarehouseItem : ViewModelBase
-	{
-		// other members
-
-		private bool isExpanded;
-
-		public bool IsExpanded
-		{
-			get
-			{
-				return this.isExpanded;
-			}
-			set
-			{
-				if (value != this.isExpanded)
-				{
-					this.isExpanded = value;
-					this.OnPropertyChanged("IsExpanded");
-				}
-			}
-		}
-	}
-```
-```VB.NET
-	Public Class WarehouseItem		
-		Inherits ViewModelBase
-
-		' other members
-
-		Private m_isExpanded As Boolean
-
-		Public Property IsExpanded() As Boolean
-			Get
-				Return Me.m_isExpanded
-			End Get
-			Set(value As Boolean)
-				If value <> Me.m_isExpanded Then
-					Me.m_isExpanded = value
-					Me.OnPropertyChanged("IsExpanded")
-				End If
-			End Set
-		End Property
-	End Class
-```
+<snippet id='radtreelistview-features-radtreelsitview-how-to-control-expand-settings-block_2-cs' />
+<snippet id='radtreelistview-features-radtreelsitview-how-to-control-expand-settings-block_3-vb' />
 
 >Note that the class inherits from the [ViewModelBase]({%slug common-viewmodelbase-class%}) class which implements the __INotifyPropertyChanged__ interface.
 
 Then define the __RadTreeListView__ control as demonstrated in __Example 2__.
 
 __Example 3: Declare RadTreeListView in XAML__
-```XAML
-	<telerik:RadTreeListView x:Name="radTreeListView"
-								 IsExpandedBinding="{Binding IsExpanded, Mode=TwoWay}"
-								 AutoGenerateColumns="False">
-			<telerik:RadTreeListView.ChildTableDefinitions>
-				<telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
-			</telerik:RadTreeListView.ChildTableDefinitions>
-			<telerik:RadTreeListView.Columns>
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-									Header="Name" />
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding IsExpanded}" 
-									Header="Is Expanded" />
-			</telerik:RadTreeListView.Columns>
-		</telerik:RadTreeListView>
-```
+<snippet id='radtreelistview-features-radtreelsitview-how-to-control-expand-settings-block_4-xaml' />
 
 With this setup expanding or collapsing a row will result in the respective checkbox from the IsExpanded column to be updated.
 

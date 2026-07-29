@@ -26,32 +26,8 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 	**Disable messages related to protection using the MessageShowing event**
 	
-	```C#
-
-		public void AttachToMessageShowingEvent()
-		{
-		    this.radSpreadsheet.MessageShowing += radSpreadsheet_MessageShowing;
-		}
-		
-		private void radSpreadsheet_MessageShowing(object sender, Telerik.Windows.Controls.Spreadsheet.MessageShowingEventArgs e)
-		{
-		    if (e.NotificationType == Telerik.Windows.Controls.Spreadsheet.Dialogs.MessageBoxNotificationType.ProtectedWorksheetError)
-		    {
-		        e.IsHandled = true;
-		    }
-		}
-	```
-	```VB.NET
-	    Public Sub AttachToMessageShowingEvent()
-	        AddHandler Me.radSpreadsheet.MessageShowing, AddressOf radSpreadsheet_MessageShowing
-	    End Sub
-	
-	    Private Sub radSpreadsheet_MessageShowing(sender As Object, e As Telerik.Windows.Controls.Spreadsheet.MessageShowingEventArgs)
-	        If e.NotificationType = Telerik.Windows.Controls.Spreadsheet.Dialogs.MessageBoxNotificationType.ProtectedWorksheetError Then
-	            e.IsHandled = True
-	        End If
-	    End Sub
-	``` 
+	<snippet id='radspreadsheet-events-block_1-cs' />
+	<snippet id='radspreadsheet-events-block_2-vb' />
 
 * `WorkbookCommandError`&mdash;Notifies that an error occurred while executing a command in RadSpreadsheet. The arguments are of type `CommandErrorEventArgs` and you can use the `Exception` property to check what exactly the error is.
 
@@ -63,26 +39,8 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 	**Cancel a command through WorkbookCommandExecuting**  	
 	
-	```C#	
-		private void radSpreadsheet_WorkbookCommandExecuting(object sender, Telerik.Windows.Documents.Spreadsheet.Commands.CommandExecutingEventArgs e)
-		{
-		    if (e.CommandName == "AddShapeCommand")
-		    {
-		        e.Cancel();
-		    }
-		}
-	```
-	```VB.NET	
-	    Public Sub AttachToWorkbookCommandExecutingEvent()
-	        AddHandler Me.radSpreadsheet.WorkbookCommandExecuting, AddressOf radSpreadsheet_WorkbookCommandExecuting
-	    End Sub
-	
-	    Private Sub radSpreadsheet_WorkbookCommandExecuting(sender As Object, e As Telerik.Windows.Documents.Spreadsheet.Commands.CommandExecutingEventArgs)
-	        If e.CommandName = "AddShapeCommand" Then
-	            e.Cancel()
-	        End If
-	    End Sub
-	```
+	<snippet id='radspreadsheet-events-block_3-cs' />
+	<snippet id='radspreadsheet-events-block_4-vb' />
 	
 * `WorkbookCommandExecuted`&mdash;Occurs when workbook command is executed.
 
@@ -134,77 +92,15 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 	__Using the HyperlinkClicked to implement extra confirmation for the links in the document__
 	
-	```C#
-		private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
-		{ 
-			RadWorksheetEditor editor = (RadWorksheetEditor)this.radSpreadsheet.ActiveSheetEditor; 
-			editor.HyperlinkClicked += this.RadWorksheetEditor_HyperlinkClicked;		 
-		} 
-		
-		private void RadWorksheetEditor_HyperlinkClicked(object sender, Telerik.Windows.Controls.Spreadsheet.Worksheets.MouseHandlers.HyperlinkClickedEventArgs e)
-		{
-			if (e.Url.EndsWith("exe"))
-			{
-				e.Handled = true;
-				MessageBoxResult Result = MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-				if (Result == MessageBoxResult.Yes)
-				{
-					Process.Start(new ProcessStartInfo()
-					{
-						FileName = e.Url,
-						UseShellExecute = true
-					});
-				}
-			}
-		}
-	```
+	<snippet id='radspreadsheet-events-block_5-cs' />
 
  	The `HyperlinkClickedEventArgs` exposes also the `IsTrustedUrl` property, which can be set to `false` to prevent the url from openning.
 	
 	The cell clicked to open the hyperlink can be accessed with the `CellIndex` property of `HyperlinkClickedEventArgs`.
 	
 	__Accessing the CellIndex of the clicked cell__
-	```C#			
-		private void RadWorksheetEditor_HyperlinkClicked(object sender, Telerik.Windows.Controls.Spreadsheet.Worksheets.MouseHandlers.HyperlinkClickedEventArgs e)
-		{
-			CellIndex cellIndex = e.CellIndex;
-		}
-	````	
-
->The events related to selection in RadSpreadsheet are described in the [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%}) topic.
-
-## Cells Events
-
-* `CellPropertyChanged`&mdash;Occurs when a property of a cell is changed. The event arguments are of type **CellPropertyChangedEventArgs** and expose information about the exact property that was changed as well as the affected cell range.
-
-	**Using the CellPropertyChangedEvent to show a notification when the users change the fill of a cell**
-	
-	```C#		
-		public void AttachToCellPropertyChangedEvent()
-		{
-		    this.radSpreadsheet.ActiveWorksheet.Cells.CellPropertyChanged += Cells_CellPropertyChanged;
-		}
-		
-		private void Cells_CellPropertyChanged(object sender, CellPropertyChangedEventArgs e)
-		{
-		    if (e.Property == CellPropertyDefinitions.FillProperty)
-		    {
-		        MessageBox.Show("The fill of a cell was changed!");
-		    }
-		}
-	```
-	```VB.NET		
-	    Public Sub AttachToCellPropertyChangedEvent()
-	        AddHandler Me.radSpreadsheet.ActiveWorksheet.Cells.CellPropertyChanged, AddressOf Cells_CellPropertyChanged
-	    End Sub
-	
-	    Private Sub Cells_CellPropertyChanged(sender As Object, e As CellPropertyChangedEventArgs)
-	        If e.Property = CellPropertyDefinitions.FillProperty Then
-	            MessageBox.Show("The fill of a cell was changed!")
-	        End If
-	    End Sub
-	```
+	<snippet id='radspreadsheet-events-block_6-cs' />
+	<snippet id='radspreadsheet-events-block_7-vb' />
 
 * `CellRangeInsertedOrRemoved`&mdash;Occurs when a cell range is inserted or removed. Through the arguments, you can obtain information about the affected ranges, as well as whether the range is removed or not.
 

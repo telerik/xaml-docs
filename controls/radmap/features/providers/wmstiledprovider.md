@@ -21,16 +21,7 @@ The WmsTiledProvider provides the following properties:
 
 The following example showcases how to use the `WmsTiledProvider` to display map tiles from a WMS server, via [GeoServer](https://geoserver.org/):
 
-```XAML
-    <telerik:RadMap>
-    	<telerik:RadMap.Provider>
-    		<telerik:WmsTiledProvider BaseUri="http://localhost:8080/geoserver/wms"
-    								  Layers="topp:states"
-    								  Version="1.1.0"
-    								  ImageFormat="image/jpeg"/>
-    	</telerik:RadMap.Provider>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-providers-wmstiledprovider-block_1-xaml' />
 
 __RadMap displaying map tiles from a WMS server__
 

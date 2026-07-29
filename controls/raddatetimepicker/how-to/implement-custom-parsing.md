@@ -38,55 +38,17 @@ First you have to define your __RadDateTimePicker__ control and point out that y
 
 
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker" 
-	                           ParseDateTimeValue="radDateTimePicker_ParseDateTimeValue"/>
-```
+<snippet id='raddatetimepicker-how-to-implement-custom-parsing-block_1-xaml' />
+
 
 Then in the event handler you can provide the parsing logic. For the current example you have to get the entered text and check if it represents a valid month's name.
 
 
 
-```C#
-	private void radDateTimePicker_ParseDateTimeValue(object sender, Telerik.Windows.Controls.ParseDateTimeEventArgs args)
-	{
-	    string input = args.TextToParse.ToLower();
-	    System.Globalization.DateTimeFormatInfo formatInfo = new System.Globalization.DateTimeFormatInfo();
-	    int monthIndex = 1;
-	    foreach (string month in formatInfo.MonthNames)
-	    {
-	        if (input.Contains(month.ToLower()) == true)
-	            break;
-	        monthIndex++;
-	    }
-	    if (monthIndex < 12)
-	    {
-	        args.Result = new DateTime(2010, monthIndex, 1);
-	    }
-	    else
-	    {
-	        args.IsParsingSuccessful = false;
-	    }
-	}
-```
-```VB.NET
-	Private Sub radDateTimePicker_ParseDateTimeValue(sender As Object, args As Telerik.Windows.Controls.ParseDateTimeEventArgs)
-	    Dim input As String = args.TextToParse.ToLower()
-	    Dim formatInfo As New System.Globalization.DateTimeFormatInfo()
-	    Dim monthIndex As Integer = 1
-	    For Each month As String In formatInfo.MonthNames
-	        If input.Contains(month.ToLower()) = True Then
-	            Exit For
-	        End If
-	        monthIndex += 1
-	    Next
-	    If monthIndex < 12 Then
-	        args.Result = New DateTime(2010, monthIndex, 1)
-	    Else
-	        args.IsParsingSuccessful = False
-	    End If
-	End Sub
-```
+<snippet id='raddatetimepicker-how-to-implement-custom-parsing-block_2-cs' />
+
+<snippet id='raddatetimepicker-how-to-implement-custom-parsing-block_2-vb' />
+
 	
 Here is the result:
 

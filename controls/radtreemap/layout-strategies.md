@@ -31,13 +31,7 @@ For __Slice and Dice__ algorithm you can specify __Orientation__ (*Horizontal*, 
 
 
 
-```XAML
-	<telerik:RadTreeMap>
-	   <telerik:RadTreeMap.LayoutStrategy>
-	      <telerik:SliceDiceStrategy SortDirection="Ascending" Orientation="Smart"/>
-	  </telerik:RadTreeMap.LayoutStrategy>
-	<telerik:RadTreeMap>
-```
+<snippet id='radtreemap-layout-strategies-block_1-xaml' />
 
 Setting the __Orientation__ to *Smart* means that the algorithm will automatically choose the most appropriate orientation depending on your data and the available space.
 
@@ -45,28 +39,16 @@ You can instantiate a layout strategy in XAML by using the layout strategy name:
 
 
 
-```XAML
-	<telerik:RadTreeMap Background="#57391A" BorderThickness="0"
-	LayoutStrategy="Squarified" Padding="1" />
-```
+<snippet id='radtreemap-layout-strategies-block_2-xaml' />
 
 You can also use a TypeConverter that converts strings in *LayoutStrategy *using default settings:
 
 
 
-```XAML
-	<telerik:RadPivotMap>
-	    <telerik:RadPivotMap.LayoutStrategy>
-	      <telerik:SquarifiedStrategy/>
-	    </telerik:RadPivotMap.LayoutStrategy>
-	</telerik:RadPivotMap>
-```
+<snippet id='radtreemap-layout-strategies-block_3-xaml' />
 
 Have in mind that the LayoutStrategy may be different for each __TypeDefinition__ of __RadTreeMap__ or __GroupDefinition__ of __RadPivotMap.__ You can also set a layout strategy for the topmost level. If you set Squarified for example for the topmost level and you don't specify a strategy for its children - all will inherit the top-most level strategy which in this case is Squarified.
 
 
 
-```XAML
-	<telerik:GroupDefinition Member="Genre" LayoutStrategy="Squarified" />
-	<telerik:RadTreeMap ItemsSource="{Binding Data}" LayoutStrategy="Squarified" />
-```
+<snippet id='radtreemap-layout-strategies-block_4-xaml' />

@@ -44,54 +44,18 @@ Our first task is to create an instance of __PivotChartViewModel__ and set its *
 
 
 
-```XAML
-	<UserControl.DataContext>
-	    <pivot:PivotChartViewModel DataProvider="{StaticResource DataProvider}"/>
-	</UserControl.DataContext>
-```
+<snippet id='radpivotgrid-features-radchartview-integration-block_1-xaml' />
 
 
 
-```C#
-	public PivotChartUserControl()
-	{
-	    InitializeComponent();
-	    var chartViewModel = new PivotChartViewModel();
-	    chartViewModel.DataProvider = this.DataProvider;
-	    this.DataContext = chartViewModel;
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		Dim chartViewModel = New PivotChartViewModel()
-		chartViewModel.DataProvider = Me.DataProvider
-		Me.DataContext = chartViewModel
-	End Sub
-```
+<snippet id='radpivotgrid-features-radchartview-integration-block_2-cs' />
+<snippet id='radpivotgrid-features-radchartview-integration-block_2-vb' />
 
 Now we will create a new __RadCartesianChart__ and set its *HorizontalAxis*, *VerticalAxis* and *SeriesProvider* properties. We will use *ChartSeriesProvider* and bind its Source to the *SeriesSource* of __PivotChartViewModel__.        
 
 
 
-```XAML
-	<telerik:RadCartesianChart x:Name="chart"  Grid.Row="1" Palette="Windows8">
-	    <telerik:RadCartesianChart.HorizontalAxis>
-	        <telerik:CategoricalAxis LabelFitMode="Rotate" />
-	    </telerik:RadCartesianChart.HorizontalAxis>
-	    <telerik:RadCartesianChart.VerticalAxis>
-	        <telerik:LinearAxis HorizontalAlignment="Right" />
-	    </telerik:RadCartesianChart.VerticalAxis>
-	
-	    <telerik:RadCartesianChart.SeriesProvider>
-	        <telerik:ChartSeriesProvider Source="{Binding SeriesSource}" >
-	            <telerik:ChartSeriesProvider.SeriesDescriptors >
-	                <telerik:CategoricalSeriesDescriptor  x:Name="seriesDescriptor"  ItemsSourcePath="Items" ValuePath="Value" CategoryPath="NameX"/>
-	            </telerik:ChartSeriesProvider.SeriesDescriptors>
-	        </telerik:ChartSeriesProvider>
-	    </telerik:RadCartesianChart.SeriesProvider>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radpivotgrid-features-radchartview-integration-block_3-xaml' />
 
 Note the binginds for *ItemsSourcePath*, *ValuePath* and *CategoryPath* properties. *Items* is a property of __Telerik.Pivot.Core.PivotChartItemsCollection__. *Values* and *NameX* are properties of __Telerik.Pivot.Core.PivotChartItem__.      
 
@@ -106,59 +70,20 @@ First lets create the Style. We'll use BarSeries and we'll set its *CombineMode*
 
 
 
-```XAML
-	<telerik:CategoricalSeriesDescriptor  x:Name="seriesDescriptor"  ItemsSourcePath="Items" ValuePath="Value" CategoryPath="NameX">
-	    <telerik:CategoricalSeriesDescriptor.Style>
-	        <Style TargetType="telerik:BarSeries">
-	            <Setter Property="CombineMode" Value="Stack"/>
-	            <Setter Property="LegendSettings" Value="{Binding Name, Converter={StaticResource SeriesSourceNameToSeriesLegendSettigsConverter}}"/>
-	        </Style>
-	    </telerik:CategoricalSeriesDescriptor.Style>
-	</telerik:CategoricalSeriesDescriptor>
-```
+<snippet id='radpivotgrid-features-radchartview-integration-block_4-xaml' />
 
 The *SeriesSourceNameToSeriesLegendSettigsConverter* is a class in our application:        
 
 
 
-```C#
-	public class SeriesSourceNameToSeriesLegendSettigsConverter : IValueConverter
-	{
-	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-	    {
-	        return new SeriesLegendSettings() 
-	        { 
-	            Title = value.ToString() 
-	        };
-	    }
-	
-	    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-	    {
-	        throw new NotImplementedException();
-	    }
-	}
-```
-```VB.NET
-	Public Class SeriesSourceNameToSeriesLegendSettigsConverter
-		Implements IValueConverter
-	
-		Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
-			Return New SeriesLegendSettings() With {.Title = value.ToString()}
-		End Function
-	
-		Public Function ConvertBack(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
-			Throw New NotImplementedException()
-		End Function
-	End Class
-```
+<snippet id='radpivotgrid-features-radchartview-integration-block_5-cs' />
+<snippet id='radpivotgrid-features-radchartview-integration-block_5-vb' />
 
 Now we just have to add __RadLegend__ to our application:        
 
 
 
-```XAML
-	<telerik:RadLegend x:Name="legend" Grid.Row="1" Grid.Column="1" Margin="10 10 0 0" Items="{Binding ElementName=chart, Path=LegendItems, Mode=OneWay}"/>
-```
+<snippet id='radpivotgrid-features-radchartview-integration-block_6-xaml' />
 
 And here is the result:
 ![Rad Pivot Grid Features Chart View Integration 02](images/RadPivotGrid_Features_ChartViewIntegration_02.png)

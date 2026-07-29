@@ -25,13 +25,9 @@ The dialog can be opened from the __Hyperlink__ button in the __Insert__ tab of 
 The dialog can be shown by executing the `ShowInsertHyperlinkDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
 __Executing the show dialog command__
-```C#
-	this.richTextBox.Commands.ShowInsertHyperlinkDialogCommand.Execute(null);
-```
+<snippet id='radrichtextbox-dialogs-hyperlink-dialog-block_1-cs' />
 
 Alternatively, call the `ShowInsertHyperlinkDialog` method of `RadRichTextBox`.
 
 __Using the show dialog method__
-```C#
-	this.richTextBox.ShowInsertHyperlinkDialog();
-```
+<snippet id='radrichtextbox-dialogs-hyperlink-dialog-block_2-cs' />

@@ -26,22 +26,10 @@ With __Q3 2013__ official release we have introduced a new property for __GridVi
     
 __Example 1: Clearing user-defined errors__
 
-```C#
-	private void rgvTest_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
-	{
-	    if (e.EditAction == GridViewEditAction.Cancel)
-	    {
-	        e.UserDefinedErrors.Clear();
-	    }
-	}
-```
-```VB.NET
-	Private Sub rgvTest_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
-		If e.EditAction = GridViewEditAction.Cancel Then
-			e.UserDefinedErrors.Clear()
-		End If
-	End Sub
-```
+<snippet id='radgridview-troubleshooting-validation-stays-example_1_clearing_user_defined_errors-cs' />
+
+<snippet id='radgridview-troubleshooting-validation-stays-example_1_clearing_user_defined_errors-vb' />
+
 
 ## See Also
 

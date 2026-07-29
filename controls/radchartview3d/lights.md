@@ -13,16 +13,12 @@ position: 4
 The lights in the 3D world are making the scene visible. The 3D chart allows you define different light sources to illuminate the scene. This can be done through the __Lights__ collection of the chart. The collection holds objects of type __System.Media.Media3D.Light__. The WPF framework provides several built-in lights which you can use – __AmbientLight__, __DirectionalLight__, __PointLight__ and  __SpotLight__. You can read more about them in the [3-D Graphics Overview](https://msdn.microsoft.com/en-us/library/ms747437(v=vs.110).aspx) MSDN article.
 
 __Example 1: Adding lights in the chart using XAML__
-```XAML
-	<telerik:RadCartesianChart3D.Lights>
-		<DirectionalLight />
-	</telerik:RadCartesianChart3D.Lights>
-```
+<snippet id='radchartview3d-lights-example_1_adding_lights_in_the_chart_using_xaml-xaml' />
+
 
 __Example 2: Adding lights in the chart in code__
-```C#
-	chart3D.Lights.Add(new DirectionalLight());
-```
+<snippet id='radchartview3d-lights-example_2_adding_lights_in_the_chart_in_code-cs' />
+
 
 >The chart uses default lights to illuminate the scene. Adding items in the Lights collection will override the default lighting.
 

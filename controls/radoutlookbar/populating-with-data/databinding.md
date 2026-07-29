@@ -19,175 +19,31 @@ In order to bind a __RadOutlookBar__ to a collection of business objects you can
 * Define a __RadOutlookBar__ in XAML.
 
 	__Example 1: Defining RadOutlookBar in XAML__
-	```XAML
-		<telerik:RadOutlookBar x:Name="radOutlookBar"/>
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_1-xaml' />
 
 * Create a business object
 
 	__Example 2: The MenuItem class__
-	```C#
-		public class MenuItem
-		{
-			public string Header { get; set; }
-			public string Content { get; set; }
-			public string ImageSourcePath { get; set; }
-		}
-	```
-	```VB.NET
-		Public Class MenuItem
-		    Public Property Header() As String
-		        Get
-		            Return m_Header
-		        End Get
-		        Set(value As String)
-		            m_Header = Value
-		        End Set
-		    End Property
-		    Private m_Header As String
-		    Public Property Content() As String
-		        Get
-		            Return m_Content
-		        End Get
-		        Set(value As String)
-		            m_Content = Value
-		        End Set
-		    End Property
-		    Private m_Content As String
-		    Public Property ImageSourcePath() As String
-		        Get
-		            Return m_ImageSourcePath
-		        End Get
-		        Set(value As String)
-		            m_ImageSourcePath = Value
-		        End Set
-		    End Property
-		    Private m_ImageSourcePath As String
-		End Class
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_2-cs' />
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_2-vb' />
 
 * Create a view model class which will contains only a collection business objects
 
 	__Example 3: The MailMenuViewModel class__
-	```C#
-		public class MailMenuViewModel : ViewModelBase
-		{
-			public ObservableCollection<MenuItem> MenuItems { get; set; }
-		
-			private MenuItem selectedItem;
-			public MenuItem SelectedItem
-			{
-				get { return this.selectedItem; }
-				set
-				{
-					if (this.selectedItem != value)
-					{
-						this.selectedItem = value;
-						this.OnPropertyChanged("SelectedItem");
-					}
-				}
-			}
-		
-			public MailMenuViewModel()
-			{
-				this.MenuItems = new ObservableCollection<MenuItem>();
-				this.MenuItems.Add(new MenuItem() { Content = "Mails content", Header = "Mail", ImageSourcePath = "/images/mailBig.png" });
-				this.MenuItems.Add(new MenuItem() { Content = "Contacts content", Header = "Contacts", ImageSourcePath = "/images/contactsBig.png" });
-				this.MenuItems.Add(new MenuItem() { Content = "Calendar content", Header = "Calendar", ImageSourcePath = "/images/calendarBig.png" });
-		
-				this.selectedItem = this.MenuItems[0];
-			}
-		}
-	```
-	```VB.NET
-		Public Class MailMenuViewModel
-		    Inherits ViewModelBase
-		    Public Property MenuItems() As ObservableCollection(Of MenuItem)
-		        Get
-		            Return m_MenuItems
-		        End Get
-		        Set(value As ObservableCollection(Of MenuItem))
-		            m_MenuItems = Value
-		        End Set
-		    End Property
-		    Private m_MenuItems As ObservableCollection(Of MenuItem)
-		
-		    Private m_selectedItem As MenuItem
-		    Public Property SelectedItem() As MenuItem
-		        Get
-		            Return Me.m_selectedItem
-		        End Get
-		        Set(value As MenuItem)
-		            If Me.m_selectedItem <> value Then
-		                Me.m_selectedItem = value
-		                Me.OnPropertyChanged("SelectedItem")
-		            End If
-		        End Set
-		    End Property
-		
-		    Public Sub New()
-		        Me.MenuItems = New ObservableCollection(Of MenuItem)()
-		Me.MenuItems.Add(New MenuItem() With { _
-		Key .Content = "Mails content", _
-		Key .Header = "Mail", _
-		Key .ImageSourcePath = "/images/mailBig.png" _
-				})
-		Me.MenuItems.Add(New MenuItem() With { _
-		Key .Content = "Contacts content", _
-		Key .Header = "Contacts", _
-		Key .ImageSourcePath = "/images/contactsBig.png" _
-				})
-		Me.MenuItems.Add(New MenuItem() With { _
-		Key .Content = "Calendar content", _
-		Key .Header = "Calendar", _
-		Key .ImageSourcePath = "/images/calendarBig.png" _
-				})
-		
-		        Me.m_selectedItem = Me.MenuItems(0)
-		    End Sub
-		End Class
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_3-cs' />
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_3-vb' />
 
 * Set the __DataContext__ of the __RadOutlookBar__ to a new instance of the created view model
 
 	__Example 4: Setting the DataContext of the RadOutlookBar__
-	```C#
-		public MainWindow()
-		{
-			InitializeComponent();
-			this.radOutlookBar.DataContext = new MailMenuViewModel();
-		}
-	```
-	```VB.NET
-		Public Sub New()
-		    InitializeComponent()
-		    Me.radOutlookBar.DataContext = New MailMenuViewModel()
-		End Sub
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_4-cs' />
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_4-vb' />
 
 * Then bind the __ItemsSource__ property to the collection of the view model and set the __ItemTemplate__, __ContentTemplate__ and __TitleTemplate__ to display the proper information.
 
 	__Example 5: Configure the RadOutlookBar__
 
-	```XAML
-		<telerik:RadOutlookBar x:Name="radOutlookBar" ItemsSource="{Binding MenuItems}">
-            <telerik:RadOutlookBar.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Header}" />
-                </DataTemplate>
-            </telerik:RadOutlookBar.ItemTemplate>
-            <telerik:RadOutlookBar.ContentTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Content}" />
-                </DataTemplate>
-            </telerik:RadOutlookBar.ContentTemplate>
-            <telerik:RadOutlookBar.TitleTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Header}" />
-                </DataTemplate>
-            </telerik:RadOutlookBar.TitleTemplate>
-        </telerik:RadOutlookBar>
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_5-xaml' />
 
 You can see the end result bellow:
 
@@ -214,65 +70,23 @@ To customize the project that we developed so far you can also set the rest of t
 
 * __ItemMinimizedTemplate__: This is the __DataTemplate__ that describes each __RadOutlookBarItem__ that is placed in the minimized area of the __RadOutlookBar__:
 
-	```XAML
-		<DataTemplate x:Key="outlookBarItemMinimizedTemplate">
-			<TextBlock Text="{Binding Header}" VerticalAlignment="Center" />
-		</DataTemplate>
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_6-xaml' />
 
 * __ItemDropDownContentTemplate__: This is the __DataTemplate__ applied to the items in the drop down which contains the minimized items that cannot fit in the minimized area:
 
-	```XAML
-		<DataTemplate x:Key="outlookBarItemDropDownTemplate">
-		<TextBlock Text="{Binding Header}" />
-		</DataTemplate>
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_7-xaml' />
 
 * __MinimizedButtonContentTemplate__: This is the __DataTemplate__ that describes the button which is displayed when you minimize the __RadOutlookBar__:
 
-	```XAML
-		<DataTemplate x:Key="outlookBarMinimizedBtnTemplate">
-			<TextBlock Text="{Binding Header}" FontStyle="Italic" 
-					   TextDecorations="Underline" 
-					   FontWeight="Bold"/>
-		</DataTemplate>
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_8-xaml' />
 
 * Let's also extend the __ContentTemplate__ from **Example 5**: This is the __DataTemplate__ that describes the content of the selected item:
 
-	```XAML
-		<DataTemplate x:Key="outlookBarContentTemplate">
-		    <Grid Background="Bisque" Margin="10">
-		        <TextBlock Text="{Binding Content}" 
-		                   FontStyle="Italic" 
-		                   Margin="10" />
-		    </Grid>
-		</DataTemplate>
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_9-xaml' />
 
 * After you define your templates you can set the appropriate properties of the RadOutlookBar
 
-	```XAML
-		 <telerik:RadOutlookBar SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
-		                       ItemsSource="{Binding MenuItems}"                               
-		                       ItemMinimizedTemplate="{StaticResource outlookBarItemMinimizedTemplate}"
-		                       ItemDropDownContentTemplate="{StaticResource outlookBarItemDropDownTemplate}"
-		                       ContentTemplate="{StaticResource outlookBarContentTemplate}"
-		                       MinimizedButtonContentTemplate="{StaticResource outlookBarMinimizedBtnContentTemplate}"
-		                       MinimizedButtonContent="{Binding SelectedItem}">
-            <telerik:RadOutlookBar.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Header}" />
-                </DataTemplate>
-            </telerik:RadOutlookBar.ItemTemplate>
-            <telerik:RadOutlookBar.TitleTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Header}" />
-                </DataTemplate>
-            </telerik:RadOutlookBar.TitleTemplate>
-        </telerik:RadOutlookBar>
-
-	```
+	<snippet id='radoutlookbar-populating-with-data-databinding-block_10-xaml' />
 	
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/OutlookBar/DataBinding).
 

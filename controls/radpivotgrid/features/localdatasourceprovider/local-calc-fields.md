@@ -24,93 +24,19 @@ The first task is to decide what is the calculation formula that you want to use
 
 
 
-```C#
-	public class CommissionCalculatedField : CalculatedField
-	{
-	    private RequiredField extendPriceField;
-	
-	    public CommissionCalculatedField()
-	    {
-	        this.Name = "Commission";
-	        this.extendPriceField = RequiredField.ForProperty("ExtendedPrice");
-	    }
-	
-	    protected override IEnumerable<RequiredField> RequiredFields()
-	    {
-	        yield return this.extendPriceField;
-	    }
-	
-	    protected override AggregateValue CalculateValue(IAggregateValues aggregateValues)
-	    {
-	        var aggregateValue = aggregateValues.GetAggregateValue(this.extendPriceField);
-	        if (aggregateValue.IsError())
-	        {
-	            return aggregateValue;
-	        }
-	
-	        double extendedPrice = aggregateValue.ConvertOrDefault<double>();
-	        if (extendedPrice > 15000)
-	        {
-	            return new DoubleAggregateValue(extendedPrice * 0.1);
-	        }
-	
-	        return null;
-	    }
-	}
-```
-```VB.NET
-	Public Class CommissionCalculatedField
-		Inherits CalculatedField
-	
-		Private extendPriceField As RequiredField
-	
-		Public Sub New()
-			Me.Name = "Commission"
-			Me.extendPriceField = RequiredField.ForProperty("ExtendedPrice")
-		End Sub
-	
-		Protected Overrides Iterator Function RequiredFields() As IEnumerable(Of RequiredField)
-			Yield Me.extendPriceField
-		End Function
-	
-		Protected Overrides Function CalculateValue(ByVal aggregateValues As IAggregateValues) As AggregateValue
-			Dim aggregateValue = aggregateValues.GetAggregateValue(Me.extendPriceField)
-			If aggregateValue.IsError() Then
-				Return aggregateValue
-			End If
-	
-			Dim extendedPrice As Double = aggregateValue.ConvertOrDefault(Of Double)()
-			If extendedPrice > 15000 Then
-				Return New DoubleAggregateValue(extendedPrice * 0.1)
-			End If
-	
-			Return Nothing
-		End Function
-	
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-fields-block_1-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-fields-block_1-vb' />
 
 Now it is time to add a new instance of this class to the CalculatedFields collection of LocalDataSourceProvider:        
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider.CalculatedFields>
-	    <local:CommissionCalculatedField Name="Commission" />
-	</pivot:LocalDataSourceProvider.CalculatedFields>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-fields-block_2-xaml' />
 
 
 
-```C#
-	var calculatedField = new CommissionCalculatedField();
-	calculatedField.Name = "Commission";
-	dataProvider.CalculatedFields.Add(calculatedField);
-```
-```VB.NET
-	Dim calculatedField = New CommissionCalculatedField()
-	calculatedField.Name = "Commission"
-	dataProvider.CalculatedFields.Add(calculatedField)
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-fields-block_3-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-fields-block_3-vb' />
 
 >important If you add caculated fields in code behind, you have to set the ItemsSource of LocalDataSourceProvider after you have added all calculated fields or to wrap the code between *BeginInit() - EndInit()* methods (or inside *using DeferRefresh() { ... } section* ).          
 
@@ -122,24 +48,12 @@ In order to use the calculated field in the generated report, you have to add it
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider.AggregateDescriptions>
-	    <pivot:CalculatedAggregateDescription CalculatedFieldName="Commission" />
-	</pivot:LocalDataSourceProvider.AggregateDescriptions>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-fields-block_4-xaml' />
 
 
 
-```C#
-	var calculatedAggregate = new CalculatedAggregateDescription();
-	calculatedAggregate.CalculatedFieldName = "Commission";
-	dataProvider.AggregateDescriptions.Add(calculatedAggregate);
-```
-```VB.NET
-	Dim calculatedAggregate = New CalculatedAggregateDescription()
-	calculatedAggregate.CalculatedFieldName = "Commission"
-	dataProvider.AggregateDescriptions.Add(calculatedAggregate)
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-fields-block_5-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-local-calc-fields-block_5-vb' />
 
 The result will look like this:
 

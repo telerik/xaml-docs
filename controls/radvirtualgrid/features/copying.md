@@ -32,25 +32,11 @@ There are two events that allow you to control the copying operation: __Copying_
 
 __Example 1: Subscribing to the Copying event__
 
-```C#
-	private void VirtualGrid_Copying(object sender, VirtualGridClipboardEventArgs e)
-        {
-            e.Cancel = true;
-        }
-```
+<snippet id='radvirtualgrid-features-copying-block_1-cs' />
 
 __Example 2: Subscribing to the CopyingCellClipboardContent event__
 
-```C#
-	private void VirtualGrid_CopyingCellClipboardContent(object sender, VirtualGridCellClipboardEventArgs e)
-        {
-            if (e.Cell.ColumnIndex == 0)
-            {
-                var item = this.clubsSource.ElementAt(e.Cell.RowIndex);
-                e.Value = string.Format("{0} {1}", item.Name, item.StadiumCapacity);
-            }
-        }
-```
+<snippet id='radvirtualgrid-features-copying-block_2-cs' />
 
 ## See Also
 

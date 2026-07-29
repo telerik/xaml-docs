@@ -15,44 +15,19 @@ RadDataBar provides an additional component that allows you display a data axis.
 The __RadHorizontalDataAxis__ and __RadVerticalDataAxis__ are part of the data bar suite and allow you to display a stand alone axis control next to the data bar visualization. The axis size should be synced with the size of the data bar in order to correctly match the value range.
 
 __Example 1: Using RadHorizontalDataAxis__
-```XAML
-	<Grid Width="300" Height="50">
-		<Grid.RowDefinitions>
-			<RowDefinition />
-			<RowDefinition Height="Auto"/>
-		</Grid.RowDefinitions>
-		<telerik:RadStackedDataBar Background="#F7F9FE" />
-		<telerik:RadHorizontalDataAxis Grid.Row="1" Step="10" />
-	</Grid>
-```
+<snippet id='raddatabar-axis-example_1_using_radhorizontaldataaxis-xaml' />
+
 
 __Example 2: Setting the RadStackedDataBar ItemsSource__
-```C#
-	public MyUserControl()
-	{
-		InitializeComponent();
-		this.stackedDataBar.ItemsSource = new List<double>() { -20, 16, 20, 12, 32 };
-	}
-```
+<snippet id='raddatabar-axis-example_2_setting_the_radstackeddatabar_itemssource-cs' />
+
 
 ![{{ site.framework_name }} RadDataBar Horizontal Axis](images/databar-axis-0.png)
 
 
 __Example 3: Using RadVerticalDataAxis__
-```XAML
-	<Grid Width="50" Height="300">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <telerik:RadVerticalDataAxis Step="10" />
-        <telerik:RadStackedDataBar x:Name="stackedDataBar" Background="#F7F9FE" Grid.Column="1">
-            <telerik:RadStackedDataBar.LayoutTransform>
-                <RotateTransform Angle="-90" />
-            </telerik:RadStackedDataBar.LayoutTransform>
-        </telerik:RadStackedDataBar>
-    </Grid>
-```
+<snippet id='raddatabar-axis-example_3_using_radverticaldataaxis-xaml' />
+
 
 ![{{ site.framework_name }} RadDataBar Vertical Axis](images/databar-axis-1.png)
 

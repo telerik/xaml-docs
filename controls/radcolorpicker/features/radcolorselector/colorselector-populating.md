@@ -16,38 +16,20 @@ This article demonstrates how you can declare a __RadColorSelector__ and populat
 
 * __RadColorSelector__ has a __SelectedColor__ property, which is of type __Color__ and it is used to store selected color value.					
 
-	```XAML
-		<telerik:RadColorSelector SelectedColor="Red" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_1-xaml' />
 
-	```C#
-		RadColorSelector colorSelector = new RadColorSelector();
-		colorSelector.SelectedColor = Colors.Red;
-	```
-	```VB.NET
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.SelectedColor = Colors.Red
-	```
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_2-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_2-vb' />
+
 
 * Whenever a color is selected the __SelectedColorChanged__ event is raised:						
 
-	```C#
-		colorSelector.SelectedColorChanged += new EventHandler(colorSelector_SelectedColorChanged);
-		
-		 void colorSelector_SelectedColorChanged(object sender, EventArgs e)
-		{
-		   RadColorSelector selector = sender as RadColorSelector;
-		   Color selectedColor = selector.SelectedColor;
-		}
-	```
-	```VB.NET
-			colorSelector.SelectedColorChanged += New EventHandler(colorSelector_SelectedColorChanged)
-		
-			Private Sub colorSelector_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-				Dim selector As RadColorSelector = TryCast(sender, RadColorSelector)
-				Dim selectedColor As Color = selector.SelectedColor
-			End Sub
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_3-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_3-vb' />
+
 		
 ## Populating
 
@@ -55,119 +37,60 @@ You can populate the __RadColorSelector__ with any of the built-in palettes usin
 
 * __MainPalette__ property:						
 	
-	```XAML
-		<telerik:RadColorSelector MainPalette="Grayscale" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_4-xaml' />
 
-	```C#
-		RadColorSelector colorSelector = new RadColorSelector();
-		colorSelector.MainPalette = ColorPreset.Grayscale;
-	```
-	```VB.NET
-			Dim colorSelector As New RadColorSelector()
-			colorSelector.MainPalette = ColorPreset.Grayscale
-	```
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_5-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_5-vb' />
+
 
 * __HeaderPalette__ property:								
 
-	```XAML
-		<telerik:RadColorSelector HeaderPalette="Office" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_6-xaml' />
 
-	```C#
-		RadColorSelector colorSelector = new RadColorSelector();
-		colorSelector.HeaderPalette = ColorPreset.Office;
-	```
-	```VB.NET
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.HeaderPalette = ColorPreset.Office
-	```
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_7-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_7-vb' />
+
 
 * __StandardPalette__ property:								
 
-	```XAML
-		<telerik:RadColorSelector StandardPalette="Standard" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_8-xaml' />
+
 	
-	```C#
-		RadColorSelector colorSelector = new RadColorSelector();
-		colorSelector.StandardPalette = ColorPreset.Standard;
-	```
-	```VB.NET
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.StandardPalette = ColorPreset.Standard
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_9-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_9-vb' />
+
 
 * If you prefer to use your own collection of __Colors__ you can always use __HeaderPaletteItemsSource__, __MainPaletteItemsSource__ and __StandardPaletteItemsSource__.						
 	* __StandardPaletteItemSource__ property								
 
-		```XAML
-			<telerik:RadColorSelector StandardPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
-		```
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_10-xaml' />
+
 		
-		```C#
-			RadColorSelector colorSelector = new RadColorSelector();
-			colorSelector.StandardPaletteVisibility = Visibility.Visible;
-			Collection<Color> colors = new Collection<Color>();
-			colors.Add(Colors.Red);
-			colors.Add(Colors.Green);
-			colors.Add(Colors.Blue);
-			colorSelector.StandardPaletteItemsSource = colors;
-		```
-		```VB.NET
-			Dim colorSelector As New RadColorSelector()
-			colorSelector.StandardPaletteVisibility = Visibility.Visible
-			Dim colors As New Collection(Of Color)()
-			_colors.Add(Colors.Red)
-			_colors.Add(Colors.Green)
-			_colors.Add(Colors.Blue)
-			_colorSelector.StandardPaletteItemsSource = _colors
-		```
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_11-cs' />
+
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_11-vb' />
+
 
 	* __HeaderPaletteItemSource__ property								
 
-		```XAML
-			<telerik:RadColorSelector HeaderPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
-		```
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_12-xaml' />
 
-		```C#
-			RadColorSelector colorSelector = new RadColorSelector();
-			colorSelector.HeaderPaletteVisibility = Visibility.Visible;
-			Collection<Color> colors = new Collection<Color>();
-			colors.Add(Colors.Red);
-			colors.Add(Colors.Green);
-			colors.Add(Colors.Blue);
-			colorSelector.HeaderPaletteItemsSource = colors;
-		```
-		```VB.NET
-			Dim colorSelector As New RadColorSelector()
-			colorSelector.HeaderPaletteVisibility = Visibility.Visible
-			Dim _colors As New Collection(Of Color)()
-			_colors.Add(Colors.Red)
-			_colors.Add(Colors.Green)
-			_colors.Add(Colors.Blue)
-			colorSelector.HeaderPaletteItemsSource = _colors
-		```
+
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_13-cs' />
+
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_13-vb' />
+
 
 	* __MainPaletteItemSource__ property  
 
-		```XAML
-			<telerik:RadColorSelector MainPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
-		```
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_14-xaml' />
 
-		```C#
-			RadColorSelector colorSelector = new RadColorSelector();
-			Collection<Color> colors = new Collection<Color>();
-			colors.Add(Colors.Red);
-			colors.Add(Colors.Green);
-			colors.Add(Colors.Blue);
-			colorSelector.MainPaletteItemsSource = colors;
-		```
-		```VB.NET
-			Dim colorSelector As New RadColorSelector()
-			Dim _colors As New Collection(Of Color)()
-			_colors.Add(Colors.Red)
-			_colors.Add(Colors.Green)
-			_colors.Add(Colors.Blue)
-			colorSelector.MainPaletteItemsSource = _colors
-		```
+
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_15-cs' />
+
+		<snippet id='radcolorpicker-features-radcolorselector-colorselector-populating-block_15-vb' />

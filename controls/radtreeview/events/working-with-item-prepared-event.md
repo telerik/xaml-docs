@@ -20,146 +20,13 @@ In few words, the approaches that you should follow are:
 
 	For the purpose of this example the following business objects will be used:
 
-	```C#
-		public class DataItem
-		{
-			public DataItem()
-			{
-				this.Items = new List<DataItem>();
-			}
-		
-			public string Name
-			{
-				get;
-				set;
-			}
-		
-			public System.Windows.Automation.ToggleState CheckState
-			{
-				get;
-				set;
-			}
-		
-			public List<DataItem> Items
-			{
-				get;
-				set;
-			}
-		}
-	```
-	```VB.NET
-		Public Class DataItem
-			Public Sub New()
-				Me.Items = New List(Of DataItem)()
-			End Sub
-		
-		Private _Name As String
-			Public Property Name() As String
-				Get
-					Return _Name
-				End Get
-				Set(ByVal value As String)
-					_Name = value
-				End Set
-			End Property
-		
-		Private _CheckState As System.Windows.Automation.ToggleState
-			Public Property CheckState() As System.Windows.Automation.ToggleState
-				Get
-					Return _CheckState
-				End Get
-				Set(ByVal value As System.Windows.Automation.ToggleState)
-					_CheckState = value
-				End Set
-			End Property
-		
-		Private _Items As List(Of DataItem)
-			Public Property Items() As List(Of DataItem)
-				Get
-					Return _Items
-				End Get
-				Set(ByVal value As List(Of DataItem))
-					_Items = value
-				End Set
-			End Property
-		End Class
-	```
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_1-cs' />
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_2-vb' />
 
 	The __CheckState__ property of the __DataItem__ class will be bound to the __CheckState__ property of the __RadTreeViewItem__.
 
-	```C#
-		public class RawDataSource : List<DataItem>
-		{
-			public RawDataSource()
-			{
-				Random rand = new Random( ( int )DateTime.Now.Ticks );
-				for ( int i = 1; i < 11; i++ )
-				{
-					DataItem item = new DataItem()
-					{
-						Name = String.Format( "Item {0}", i.ToString() ),
-						CheckState = GetToggleState( rand.Next( 0, 3 ) )
-					};
-					for ( int j = 1; j < 11; j++ )
-					{
-						DataItem subItem = new DataItem()
-						{
-							Name = String.Format( "Item {0}.{1}", i.ToString(), j.ToString() ),
-							CheckState = GetToggleState( rand.Next( 0, 3 ) )
-						};
-						item.Items.Add( subItem );
-					}
-					this.Add( item );
-				}
-			}
-		
-			private System.Windows.Automation.ToggleState GetToggleState( int code )
-			{
-				switch ( code )
-				{
-					case 0:
-						return System.Windows.Automation.ToggleState.Off;
-					case 1:
-						return System.Windows.Automation.ToggleState.On;
-					case 2:
-						return System.Windows.Automation.ToggleState.Indeterminate;
-					default:
-						return System.Windows.Automation.ToggleState.Off;
-				}
-			}
-		}
-	```
-	```VB.NET
-		Public Class RawDataSource
-			Inherits List(Of DataItem)
-			Public Sub New()
-				Dim rand As New Random(CInt(DateTime.Now.Ticks))
-				For i As Integer = 1 To 10
-					Dim item As New DataItem()
-		
-					For j As Integer = 1 To 10
-						Dim subItem As New DataItem()
-						item.Items.Add(subItem)
-					Next
-		
-					Me.Add(item)
-				Next
-			End Sub
-		
-			Private Function GetToggleState(ByVal code As Integer) As System.Windows.Automation.ToggleState
-				Select Case code
-					Case 0
-						Return System.Windows.Automation.ToggleState.Off
-					Case 1
-						Return System.Windows.Automation.ToggleState.[On]
-					Case 2
-						Return System.Windows.Automation.ToggleState.Indeterminate
-					Case Else
-						Return System.Windows.Automation.ToggleState.Off
-				End Select
-			End Function
-		End Class
-	```
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_3-cs' />
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_4-vb' />
 
 	The __RawDataSource__ does nothing special, except for initializing the sample data for the __RadTreeView__. This is the data source for the treeview.
 
@@ -167,118 +34,31 @@ In few words, the approaches that you should follow are:
 	* __IsOptionElementsEnabled__
 	* __IsTriStateMode__
 
-	```XAML
-		<telerik:RadTreeView x:Name="radTreeView" IsOptionElementsEnabled="True" IsTriStateMode="True"/>
-	```
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_5-xaml' />
 
 
 
 * Declare a __RawDataSource__ object as a resource in your XAML and set the __RadTreeView__'s __ItemsSource__ property.
 
-	```XAML
-		<UserControl.Resources>
-			<example:RawDataSource x:Key="DataSource"/>
-		</UserControl.Resources>
-		....
-		<telerik:RadTreeView x:Name="radTreeView" 
-							 IsOptionElementsEnabled="True" 
-							 IsTriStateMode="True" 
-							 ItemsSource="{StaticResource DataSource}"/>
-	```
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_6-xaml' />
 
 * Declare a new [HierarchicalDataTemplate]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}) in your XAML resources and set the __RadTreeView__'s __ItemTemplate__ property.
 
-	```XAML
-		<Window.Resources>
-			<example:RawDataSource x:Key="DataSource"/>
-			<HierarchicalDataTemplate x:Key="ItemTemplate" ItemsSource="{Binding Items}">
-				<StackPanel Orientation="Horizontal">
-					<TextBlock Text="{Binding Name}" />
-				</StackPanel>
-			</HierarchicalDataTemplate>
-		</Window.Resources>
-		....
-		<telerik:RadTreeView x:Name="radTreeView" 
-							 IsOptionElementsEnabled="True"
-							 IsTriStateMode="True"
-							 ItemsSource="{StaticResource DataSource}" 
-							 ItemTemplate="{StaticResource ItemTemplate}"/>
-	```
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_7-xaml' />
 
 * The final and most important step is to attach to the __ItemPrepared__ event of the __RadTreeView__.
 
-	```XAML
-		<telerik:RadTreeView x:Name="radTreeView"
-								   IsOptionElementsEnabled="True"
-								   IsTriStateMode="True"
-								   ItemsSource="{StaticResource DataSource}"
-								   ItemTemplate="{StaticResource ItemTemplate}"
-								   ItemPrepared="radTreeView_ItemPrepared"/>
-	```
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_8-xaml' />
 
 	Switch to the code-behind and in the event handler add a code, synchronizing the __CheckState__ property of the __RadTreeViewItem__ object with the __CheckState__ property of the __DataItem__ object.
 
-	```C#
-		private void radTreeView_ItemPrepared( object sender, Telerik.Windows.Controls.RadTreeViewItemPreparedEventArgs e )
-		{
-			e.PreparedItem.CheckState = ( e.PreparedItem.Item as DataItem ).CheckState;
-		}
-	```
-	```VB.NET
-		Private Sub radTreeView_ItemPrepared(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.RadTreeViewItemPreparedEventArgs)
-			e.PreparedItem.CheckState = TryCast(e.PreparedItem.Item, DataItem).CheckState
-		End Sub
-	```
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_9-cs' />
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_10-vb' />
 		
 * The example so far is almost complete. However, there are some drawbacks. The __RadTreeViewItem__'s __CheckState__ property is synchronized just once. If the user checks\unchecks a specific treeview item, the source object will not be updated. In order to solve this problem you should attach to the __RadTreeViewItem__'s __Checked__ and __Unchecked__ events.
 
-	```C#
-		private void radTreeView_ItemPrepared( object sender, Telerik.Windows.Controls.RadTreeViewItemPreparedEventArgs e )
-		{
-			e.PreparedItem.CheckState = ( e.PreparedItem.Item as DataItem ).CheckState;
-			e.PreparedItem.Checked += new EventHandler<Telerik.Windows.RadRoutedEventArgs>( PreparedItem_Checked );
-			e.PreparedItem.Unchecked += new EventHandler<Telerik.Windows.RadRoutedEventArgs>( PreparedItem_Unchecked );
-		}
-		
-		void PreparedItem_Unchecked( object sender, Telerik.Windows.RadRoutedEventArgs e )
-		{
-			RadTreeViewItem item = sender as RadTreeViewItem;
-			if ( item != null )
-			{
-				( item.Item as DataItem ).CheckState = System.Windows.Automation.ToggleState.Off;
-			}
-		}
-		
-		void PreparedItem_Checked( object sender, Telerik.Windows.RadRoutedEventArgs e )
-		{
-			RadTreeViewItem item = sender as RadTreeViewItem;
-			if ( item != null )
-			{
-				( item.Item as DataItem ).CheckState = System.Windows.Automation.ToggleState.On;
-			}
-		}
-	```
-	```VB.NET
-		Private Sub radTreeView_ItemPrepared(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.RadTreeViewItemPreparedEventArgs)
-			e.PreparedItem.CheckState = TryCast(e.PreparedItem.Item, DataItem).CheckState
-			AddHandler e.PreparedItem.Checked, AddressOf PreparedItem_Checked
-			AddHandler e.PreparedItem.Unchecked, AddressOf PreparedItem_Unchecked
-		End Sub
-		
-		Private Sub PreparedItem_Unchecked(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
-			Dim item As RadTreeViewItem = TryCast(sender, RadTreeViewItem)
-			If item IsNot Nothing Then
-				TryCast(item.Item, DataItem).CheckState = System.Windows.Automation.ToggleState.Off
-			End If
-		End Sub
-		
-		Private Sub PreparedItem_Checked(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
-			Dim item As RadTreeViewItem = TryCast(sender, RadTreeViewItem)
-			If item IsNot Nothing Then
-				TryCast(item.Item, DataItem).CheckState = System.Windows.Automation.ToggleState.[On]
-			End If
-		End Sub
-	```
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_11-cs' />
+	<snippet id='radtreeview-events-working-with-item-prepared-event-block_12-vb' />
 
 ## See Also
  * [Events-Overview]({%slug radtreeview-events-overview%})

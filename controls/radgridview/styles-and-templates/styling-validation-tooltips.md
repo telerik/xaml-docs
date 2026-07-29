@@ -51,99 +51,20 @@ __RadGridView's__ validation tooltip styles are located in __Telerik.Windows.Con
 The default XAML markup for __GridViewCell’s__ validation tooltip uses the __Office\_Black theme__:
 
 __Example 1: GridViewCell validation tooltip in the Office\_Black theme__
-```XAML
-	<ControlTemplate x:Key="GridViewCell_ValidationToolTipTemplate" TargetType="ToolTip">
+<snippet id='radgridview-styles-and-templates-styling-validation-tooltips-example_1_gridviewcell_validation_tooltip_in_the_office_black_theme-xaml' />
 
-    . . .
-    
-    <ItemsControl ItemsSource="{TemplateBinding Content}">
-        <ItemsControl.ItemTemplate>
-            <DataTemplate>
-                <Border MinHeight="22"
-                        Background="{StaticResource GridView_ValidationTooltipBackground}"
-                        BorderBrush="{StaticResource GridView_ValidationTooltipOuterBorder}"
-                        BorderThickness="1"
-                        CornerRadius="{StaticResource GridView_ValidationTooltipCornerRadius}">
-                                <Border BorderBrush="{StaticResource GridView_ValidationTooltipInnerBorder}"
-                                        BorderThickness="1">
-                        <TextBlock Margin="4 1" MaxWidth="250" 
-                                   Foreground="{StaticResource GridView_ValidationTooltipForeground}" 
-                                   Text="{Binding}" TextWrapping="Wrap"/>
-                    </Border>
-                </Border>
-            </DataTemplate>
-        </ItemsControl.ItemTemplate>
-        <ItemsControl.ItemsPanel>
-            <ItemsPanelTemplate>
-                <StackPanel/>
-            </ItemsPanelTemplate>
-        </ItemsControl.ItemsPanel>
-    </ItemsControl>
-
-    . . .
-
-	</ControlTemplate>
-```
 
 Default XAML markup for __GridViewEditorPresenter’s__ validation tooltip uses the __Office\_Black theme__:
 
 __Example 2: GridViewEditorPresenter validation tooltip in Office\_Black theme__
-```XAML
-	<ControlTemplate x:Key="GridViewEditorPresenter_ValidationToolTipTemplate" TargetType="ToolTip">
-   
-    . . .
+<snippet id='radgridview-styles-and-templates-styling-validation-tooltips-example_2_gridvieweditorpresenter_validation_tooltip_in_office_black_theme-xaml' />
 
-    <Border MinHeight="22"
-            Background="{StaticResource GridView_ValidationTooltipBackground}"
-            BorderBrush="{StaticResource GridView_ValidationTooltipOuterBorder}"
-            BorderThickness="1"
-            CornerRadius="{StaticResource GridView_ValidationTooltipCornerRadius}">
-        <Border BorderBrush="{StaticResource GridView_ValidationTooltipInnerBorder}"   BorderThickness="1">
-            <TextBlock Margin="4 1" MaxWidth="250" 
-                       Foreground="{StaticResource   GridView_ValidationTooltipForeground}" 
-                       Text="{TemplateBinding Content}" TextWrapping="Wrap"/>
-        </Border>
-    </Border>
-
-    . . .
-
-	</ControlTemplate>
-```
 
 Default XAML markup for __GridViewRow’s__ validation tooltip uses the __Office\_Black theme__:
 
 __Example 3: GridViewRow validation tooltip in Office\_Black theme__
-```XAML
-	<ControlTemplate x:Key="GridViewRow_ValidationToolTipTemplate" TargetType="ToolTip">
+<snippet id='radgridview-styles-and-templates-styling-validation-tooltips-example_3_gridviewrow_validation_tooltip_in_office_black_theme-xaml' />
 
-	. . .
-	
-	<ItemsControl ItemsSource="{TemplateBinding Content}">
-	    <ItemsControl.ItemTemplate>
-	        <DataTemplate>
-	            <Border
-	                    MinHeight="22"
-	                    Background="{StaticResource GridView_ValidationTooltipBackground}"
-	                    BorderBrush="{StaticResource GridView_ValidationTooltipOuterBorder}"
-	                    BorderThickness="1"
-	                    CornerRadius="{StaticResource GridView_ValidationTooltipCornerRadius}">
-	                	<Border BorderBrush="{StaticResource GridView_ValidationTooltipInnerBorder}" BorderThickness="1">
-	                    <TextBlock Margin="4 1" MaxWidth="250" Foreground="{StaticResource GridView_ValidationTooltipForeground}" Text="{Binding}" TextWrapping="Wrap"/>
-	                </Border>
-	            </Border>
-	        </DataTemplate>
-	    </ItemsControl.ItemTemplate>
-    <ItemsControl.ItemsPanel>
-        <ItemsPanelTemplate>
-            <StackPanel/>
-        </ItemsPanelTemplate>
-    </ItemsControl.ItemsPanel>
-	</ItemsControl>
-
-	. . .
-
-	</ControlTemplate>
-```
 
 ## See Also
 * [Validation]({%slug gridview-managing-data-validation%})

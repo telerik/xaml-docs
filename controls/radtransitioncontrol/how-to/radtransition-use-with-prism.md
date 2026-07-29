@@ -16,16 +16,7 @@ The __RadTransitionControl__ can be used together with __Prism__ for defining re
 
 __Example 1: Setting the RegionName attached property__
 
-```XAML
-	<Grid xmlns:prism="http://prismlibrary.com/"
-        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-        <telerik:RadTransitionControl prism:RegionManager.RegionName="ContentRegion">
-			<telerik:RadTransitionControl.Transition>
-				<telerikTransitions:MotionBlurredZoomTransition />
-			</telerik:RadTransitionControl.Transition>
-		</telerik:RadTransitionControl>
-	</Grid>
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-use-with-prism-block_1-xaml' />
 
 ## See Also
 

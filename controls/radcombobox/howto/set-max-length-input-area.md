@@ -26,33 +26,22 @@ As of Q2 2014 release __RadComboBox__ provides [TextBoxStyle property]({%slug ra
 
 
  
-```XAML
-	<UserControl.Resources>
-		<Style TargetType="TextBox" x:Key="CustomComboTextBoxStyle">
-			<Setter Property="MaxLength" Value="5" />
-		</Style>
-	</UserControl.Resources>
-```
+<snippet id='radcombobox-howto-set-max-length-input-area-block_1-xaml' />
+
 
 If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you would need to base that Style to the default __TextBoxStyle__ of __RadComboBox__ named _ComboBoxTextBoxStyle_.
 
 
 
-```XAML
-	<Style TargetType="TextBox" x:Key="CustomComboTextBoxStyle" BasedOn="{StaticResource ComboBoxTextBoxStyle}">
-		...
-	</Style>
-```
+<snippet id='radcombobox-howto-set-max-length-input-area-block_2-xaml' />
+
 
 Then, set the created Style as __TextBoxStyle__ of __RadComboBox__:
 
 
  
-```XAML
-	<telerik:RadComboBox 		
-		IsEditable="True" 
-		TextBoxStyle="{StaticResource CustomComboTextBoxStyle}" />
-```
+<snippet id='radcombobox-howto-set-max-length-input-area-block_3-xaml' />
+
 
 ## Using the control Resources
 
@@ -62,15 +51,8 @@ The next code snippet shows how to set the MaxLength property of the TextBox in 
 
 
 
-```XAML
-	<telerik:RadComboBox IsEditable="True">
-	    <telerik:RadComboBox.Resources>
-	        <Style TargetType="TextBox">
-	            <Setter Property="MaxLength" Value="5" />
-	        </Style>
-	    </telerik:RadComboBox.Resources>
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-howto-set-max-length-input-area-block_4-xaml' />
+
 
 ## Using an Attached property
 
@@ -78,43 +60,10 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 
 
 
-```C#
-	public class EditableComboBox
-	{
-	    public static readonly DependencyProperty MaxLengthProperty =
-	        DependencyProperty.RegisterAttached( "MaxLength", typeof( int ), typeof( EditableComboBox ), new PropertyMetadata( OnMaxLengthChanged ) );
-	
-	    public static int GetMaxLength( DependencyObject obj )
-	    {
-	        return ( int )obj.GetValue( MaxLengthProperty );
-	    }
-	
-	    public static void SetMaxLength( DependencyObject obj, int value )
-	    {
-	        obj.SetValue( MaxLengthProperty, value );
-	    }
-	
-	    private static void OnMaxLengthChanged( DependencyObject obj, DependencyPropertyChangedEventArgs e )
-	    {
-	    }
-	}
-```
-```VB.NET
-	Public Class EditableComboBox
-	    Public Shared ReadOnly MaxLengthProperty As DependencyProperty = DependencyProperty.RegisterAttached("MaxLength", GetType(Integer), GetType(EditableComboBox), New PropertyMetadata(OnMaxLengthChanged))
-	
-	    Public Shared Function GetMaxLength(ByVal obj As DependencyObject) As Integer
-	        Return CInt(obj.GetValue(MaxLengthProperty))
-	    End Function
-	
-	    Public Shared Sub SetMaxLength(ByVal obj As DependencyObject, ByVal value As Integer)
-	        obj.SetValue(MaxLengthProperty, value)
-	    End Sub
-	
-	    Private Shared Sub OnMaxLengthChanged(ByVal obj As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
-	    End Sub
-	End Class
-```
+<snippet id='radcombobox-howto-set-max-length-input-area-block_5-cs' />
+
+<snippet id='radcombobox-howto-set-max-length-input-area-block_5-vb' />
+
 
 In the __OnMaxLengthChanged()__ event handler you should perform the following step.
 
@@ -126,71 +75,17 @@ In the __OnMaxLengthChanged()__ event handler you should perform the following s
 
 
 
-```C#
-	public class EditableComboBox
-	{
-	    public static readonly DependencyProperty MaxLengthProperty =
-	        DependencyProperty.RegisterAttached( "MaxLength", typeof( int ), typeof( EditableComboBox ), new PropertyMetadata( OnMaxLengthChanged ) );
-	
-	    public static int GetMaxLength( DependencyObject obj )
-	    {
-	        return ( int )obj.GetValue( MaxLengthProperty );
-	    }
-	
-	    public static void SetMaxLength( DependencyObject obj, int value )
-	    {
-	        obj.SetValue( MaxLengthProperty, value );
-	    }
-	
-	    private static void OnMaxLengthChanged( DependencyObject obj, DependencyPropertyChangedEventArgs e )
-	    {
-	        var comboBox = obj as Telerik.Windows.Controls.RadComboBox;
-	        if ( comboBox == null )
-	            return;
-	
-	        comboBox.Dispatcher.BeginInvoke(
-	            delegate()
-	            {
-	                var rootElement = VisualTreeHelper.GetChild( comboBox, 0 ) as FrameworkElement;
-	                TextBox textBox = ( TextBox )rootElement.FindName( "PART_EditableTextBox" );
-	                if ( textBox != null )
-	                     textBox.SetValue( TextBox.MaxLengthProperty, e.NewValue );
-	            } );
-	    }
-	}
-```
-```VB.NET
-	Public Class EditableComboBox
-	    Public Shared ReadOnly MaxLengthProperty As DependencyProperty = DependencyProperty.RegisterAttached("MaxLength", GetType(Integer), GetType(EditableComboBox), New PropertyMetadata(OnMaxLengthChanged))
-	    Public Shared Function GetMaxLength(ByVal obj As DependencyObject) As Integer
-	        Return CInt(obj.GetValue(MaxLengthProperty))
-	    End Function
-	    Public Shared Sub SetMaxLength(ByVal obj As DependencyObject, ByVal value As Integer)
-	        obj.SetValue(MaxLengthProperty, value)
-	    End Sub
-	    Private Shared Sub OnMaxLengthChanged(ByVal obj As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
-	        Dim comboBox = TryCast(obj, Telerik.Windows.Controls.RadComboBox)
-	        If comboBox Is Nothing Then
-	            Exit Sub
-	        End If
-	        comboBox.Dispatcher.BeginInvoke(Function() Do
-	            Dim rootElement = TryCast(VisualTreeHelper.GetChild(comboBox, 0), FrameworkElement)
-	            Dim textBox As TextBox = DirectCast(rootElement.FindName("PART_EditableTextBox"), TextBox)
-	            If textBox IsNot Nothing Then
-	                textBox.SetValue(TextBox.MaxLengthProperty, e.NewValue)
-	            End If 
-	       End Function)
-	    End Sub
-	End Class
-```
+<snippet id='radcombobox-howto-set-max-length-input-area-block_6-cs' />
+
+<snippet id='radcombobox-howto-set-max-length-input-area-block_6-vb' />
+
 
 Finally set the property in XAML:
 
 
 
-```XAML
-	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.MaxLength="20"/>
-```
+<snippet id='radcombobox-howto-set-max-length-input-area-block_7-xaml' />
+
 
 >tip Note that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.
 

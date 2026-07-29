@@ -38,11 +38,7 @@ You can add **RadPropertyGrid** manually by writing the XAML code in **Example 1
 
 __Example 1: Adding RadPropertyGrid__
 
-```XAML
-	<Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <telerik:RadPropertyGrid x:Name="PropertyGrid1" />
-	</Grid>
-```
+<snippet id='radpropertygrid-getting-started-getting-started-block_1-xaml' />
 
 Now, if you run your application, you will see an empty RadPropertyGrid similarly to **Figure 1**.
 
@@ -56,29 +52,8 @@ You may bind RadPropertyGrid to a single data item. Thus, you will be able to ex
 
 __Example 2: Binding to data item__
 
-```C#
-	this.PropertyGrid1.Item = new Employee()
-	{
-	    FirstName = "Sarah",
-	    LastName = "Blake",
-	    Occupation = "Supplied Manager",
-	    StartingDate = new DateTime(2005, 04, 12),
-	    IsMarried = true,
-	    Salary = 3500,
-	    Gender = Gender.Female
-	};
-```
-```VB.NET
-	Me.PropertyGrid1.Item = New Employee() With {
-	  .FirstName = "Sarah",
-	  .LastName = "Blake",
-	  .Occupation = "Supplied Manager",
-	  .StartingDate = New DateTime(2005, 4, 12),
-	  .IsMarried = True,
-	  .Salary = 3500,
-	  .Gender = Gender.Female
-	}
-```
+<snippet id='radpropertygrid-getting-started-getting-started-block_2-cs' />
+<snippet id='radpropertygrid-getting-started-getting-started-block_2-vb' />
 
 Once you set the Item and run the application you will see a RadPropertyGrid as the one illustrated in **Figure 2**.
 
@@ -92,10 +67,7 @@ You can also bind the Item property of RadPropertyGrid to a visual element and s
 
 __Example 3: Binding to visual element__
 
-```XAML
-	<telerik:RadButton x:Name="button1" Content="MyButton" />
-	<telerik:RadPropertyGrid Item="{Binding ElementName= button1}"/>
-```
+<snippet id='radpropertygrid-getting-started-getting-started-block_3-xaml' />
 
 When you run the application, you will see the following RadPropertyGrid.
 
@@ -143,18 +115,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Data.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-```
+<snippet id='radpropertygrid-getting-started-getting-started-block_4-xaml' />
 
 __Figure 4__ shows RadPropertyGrid with the **Windows8** theme applied.
 	

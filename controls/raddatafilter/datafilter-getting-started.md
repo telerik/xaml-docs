@@ -46,14 +46,12 @@ You can find the required assemblies for each control from the suite in the {% i
 To use the __RadDataFilter__ in the XAML you have to add the following namespace declaration:
 
 __Example 1: Namespace declaration__  
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-```
+<snippet id='raddatafilter-datafilter-getting-started-example_1_namespace_declaration-xaml' />
+
 
 __Example 2: Creating RadDataFilter__  
-```XAML
-	<telerik:RadDataFilter x:Name="radDataFilter" />
-```
+<snippet id='raddatafilter-datafilter-getting-started-example_2_creating_raddatafilter-xaml' />
+
 
 ## Configuring the RadDataFilter
 
@@ -74,107 +72,23 @@ __RadDataFilter__ can filter any collection that implements the __IEnumerable__ 
 The collection in this example will hold business objects of type __Employee__. Here is the code for the __Employee__ class:
 
 __Example 3: Defining the Employee class__  
-```C#
-	public class Employee
-	{
-	    public Employee( string name, string companyName, string title )
-	    {
-	        this.Name = name;
-	        this.CompanyName = companyName;
-	        this.Title = title;
-	    }
-	    public string Name
-	    {
-	        get;
-	        set;
-	    }
-	    public string CompanyName
-	    {
-	        get;
-	        set;
-	    }
-	    public string Title
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class Employee
-	 Public Sub New(name As String, companyName As String, title As String)
-	  Me.Name = name
-	  Me.CompanyName = companyName
-	  Me.Title = title
-	 End Sub
-	 Public Property Name() As String
-	  Get
-	   Return m_Name
-	  End Get
-	  Set
-	   m_Name = Value
-	  End Set
-	 End Property
-	 Private m_Name As String
-	 Public Property CompanyName() As String
-	  Get
-	   Return m_CompanyName
-	  End Get
-	  Set
-	   m_CompanyName = Value
-	  End Set
-	 End Property
-	 Private m_CompanyName As String
-	 Public Property Title() As String
-	  Get
-	   Return m_Title
-	  End Get
-	  Set
-	   m_Title = Value
-	  End Set
-	 End Property
-	 Private m_Title As String
-	End Class
-```
+<snippet id='raddatafilter-datafilter-getting-started-example_3_defining_the_employee_class-cs' />
+
+<snippet id='raddatafilter-datafilter-getting-started-example_3_defining_the_employee_class-vb' />
+
 
 __Example 4: Creating RadDataFilter__ 
-```XAML
-	<telerik:RadDataFilter x:Name="radDataFilter" />
-```
+<snippet id='raddatafilter-datafilter-getting-started-example_4_creating_raddatafilter-xaml' />
+
 
 Prepare a simple collection of employees and pass it to the __Source__ property of the __RadDataFilter__.
 
 __Example 5: Creating a collection of Employees__
 
-```C#
-	ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
-	employees.Add( new Employee( "Maria Anders", "Alfreds Futterkiste", "Sales Representative" ) );
-	employees.Add( new Employee( "Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner" ) );
-	employees.Add( new Employee( "Antonio Moreno", "Antonio Moreno Taqueria", "Owner" ) );
-	employees.Add( new Employee( "Thomas Hardy", "Around the Horn", "Sales Representative" ) );
-	employees.Add( new Employee( "Hanna Moos", "Blauer See Delikatessen", "Sales Representative" ) );
-	employees.Add( new Employee( "Frederique Citeaux", "Blondesddsl pere et fils", "Marketing Manager" ) );
-	employees.Add( new Employee( "Martin Sommer", "Bolido Comidas preparadas", "Owner" ) );
-	employees.Add( new Employee( "Laurence Lebihan", "Bon app'", "Owner" ) );
-	employees.Add( new Employee( "Elizabeth Lincoln", "Bottom-Dollar Markets", "Accounting manager" ) );
-	employees.Add( new Employee( "Victoria Ashworth", "B's Beverages", "Sales representative" ) );
-	this.radDataFilter.Source = employees;
-```
-```VB.NET
+<snippet id='raddatafilter-datafilter-getting-started-example_5_creating_a_collection_of_employees-cs' />
 
-	Dim employees As New ObservableCollection(Of Employee)()
-	employees.Add(New Employee("Maria Anders", "Alfreds Futterkiste", "Sales Representative"))
-	employees.Add(New Employee("Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner"))
-	employees.Add(New Employee("Antonio Moreno", "Antonio Moreno Taqueria", "Owner"))
-	employees.Add(New Employee("Thomas Hardy", "Around the Horn", "Sales Representative"))
-	employees.Add(New Employee("Hanna Moos", "Blauer See Delikatessen", "Sales Representative"))
-	employees.Add(New Employee("Frederique Citeaux", "Blondesddsl pere et fils", "Marketing Manager"))
-	employees.Add(New Employee("Martin Sommer", "Bolido Comidas preparadas", "Owner"))
-	employees.Add(New Employee("Laurence Lebihan", "Bon app'", "Owner"))
-	employees.Add(New Employee("Elizabeth Lincoln", "Bottom-Dollar Markets", "Accounting manager"))
-	employees.Add(New Employee("Victoria Ashworth", "B's Beverages", "Sales representative"))
-	Me.radDataFilter.Source = employees
-```
+<snippet id='raddatafilter-datafilter-getting-started-example_5_creating_a_collection_of_employees-vb' />
+
 
 After the collection has been passed to the __Source__ property, the user will be able to filter it via the __RadDataFilter__'s UI. In order to learn how to access the filtered collection, please read the next section.
 
@@ -183,28 +97,8 @@ After the collection has been passed to the __Source__ property, the user will b
 __RadGridView__ can be filtered through its __RadGridView.Items__ collection. The __Employees__ collection in this example holds business objects of type Employee and needs to be defined in the DataContext of the __LayoutRoot Grid__. You then need to pass it to the __ItemsSource__ property of __RadGridView__. After that, you can create your __RadDataFilter__ and bind its __RadDataFilter.Source__ property to the __RadGridView.Items__ collection using an __ElementName__ binding.        
 
 __Example 6: Binding the RadDataFilter to the Items collection of the RadGridView__
-```XAML
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto" />
-	        <RowDefinition />
-	    </Grid.RowDefinitions>
-	    <telerik:RadDataFilter x:Name="radDataFilter"
-	                           Source="{Binding Items, ElementName=radGridView}"/>
-	    <telerik:RadGridView x:Name="radGridView"
-	                         ItemsSource="{Binding Employees}"
-	                         AutoGenerateColumns="False"
-	                         IsFilteringAllowed="False"
-	                         Grid.Row="1">
-	        <telerik:RadGridView.Columns>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" />
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}" />
-	        </telerik:RadGridView.Columns>
-	    </telerik:RadGridView>
-	</Grid>
-```
+<snippet id='raddatafilter-datafilter-getting-started-example_6_binding_the_raddatafilter_to_the_items_collection_of_the_radgridview-xaml' />
+
 
 ![{{ site.framework_name }} RadDataFilter Bound to the Items collection of RadGridView](images/RadDataFilter_GettingStarted_01.png)
 
@@ -215,19 +109,8 @@ __Example 6: Binding the RadDataFilter to the Items collection of the RadGridVie
 The filtered collection inside the __RadDataFilter__ can be accessed via the __FilteredSource__ property. It exposes this set of data matching to the current filter criteria. Here is an example of a __ListBox__ that displays the data filtered by the __RadDataFilter__.
 
 __Example 7: Filtering data in a ListBox__  
-```XAML
+<snippet id='raddatafilter-datafilter-getting-started-example_7_filtering_data_in_a_listbox-xaml' />
 
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto" />
-	        <RowDefinition />
-	    </Grid.RowDefinitions>
-	    <telerik:RadDataFilter x:Name="radDataFilter"/>
-	    <ListBox ItemsSource="{Binding FilteredSource,ElementName=radDataFilter}"
-	             Grid.Row="1"/>
-	</Grid>
-```
 
 ![Rad Data Filter raddatafilter gettingstarted 02](images/RadDataFilter_raddatafilter_gettingstarted_03.png)
 
@@ -249,17 +132,8 @@ To change the theme, you can follow the steps below:
 __Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 8: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Data.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='raddatafilter-datafilter-getting-started-example_8_merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

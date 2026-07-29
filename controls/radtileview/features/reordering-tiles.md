@@ -13,9 +13,7 @@ position: 8
 The tiles in __RadTileView__ can be reordered via drag and drop operation. The dragged __RadTileViewItem__ will be swapped with the item under the mouse. This feature is enabled by default, but you can disable it with the __IsItemDraggingEnabled__ property of __RadTileView__.
 
 __Example 1: Disabling the drag reordering__
-```XAML
-	<telerik:RadTileView IsItemDraggingEnabled="False"/>
-```
+<snippet id='radtileview-features-reordering-tiles-block_1-xaml' />
 
 ## Drag Mode
 
@@ -25,18 +23,14 @@ __RadTileView__ supports two drag modes - __Slide__ and __Swap__. The mode is co
 * __Swap__: The tiles swap their positions when the dragged tile is dropped.
 
 __Example 2: Changing the drag mode__
-```XAML
-	<telerik:RadTileView DragMode="Swap" />
-```
+<snippet id='radtileview-features-reordering-tiles-block_2-xaml' />
 	
 ## Autoscrolling	
 
 __RadTileView__ supports autoscrolling while dragging a tile. To enable this feature use the __IsAutoScrollingEnabled__ property.
 
 __Example 3: Enabling autoscrolling__
-```XAML
-	<telerik:RadTileView IsAutoScrollingEnabled="True">
-```
+<snippet id='radtileview-features-reordering-tiles-block_3-xaml' />
 
 ## See Also
 

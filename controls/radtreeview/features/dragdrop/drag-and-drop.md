@@ -15,40 +15,14 @@ The Telerik __RadTreeView__ control enhances further your application's capabili
 The following example shows a basic RadTreeView definition and enabled drag/drop feature. To enable the drag and drop, set the __IsDragDropEnabled__ property to True.
 
 __Example 1: Enabling the drag and drop feature__
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" IsDragDropEnabled="True">
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis">
-	            <telerik:RadTreeViewItem Header="Table Tennis"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Cycling">
-	            <telerik:RadTreeViewItem Header="Road Cycling"/>
-	            <telerik:RadTreeViewItem Header="Indoor Cycling"/>
-	            <telerik:RadTreeViewItem Header="Mountain Bike"/>
-	        </telerik:RadTreeViewItem>
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-features-dragdrop-drag-and-drop-block_1-xaml' />
 
 #### Figure 1: Drag drop in action
 ![{{ site.framework_name }} RadTreeView Drag drop in action](images/RadTreeView-DragDrop-PreviewLine.png)
 
 __Example 2: Enabling the Drag/Drop functionality in code-behind__  
-```C#
-	private void EnableDragAndDrop()
-	{
-		radTreeView.IsDragDropEnabled = true;
-	}
-```
-```VB.NET
-	Private Sub EnableDragAndDrop()
-	    radTreeView.IsDragDropEnabled = True
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-drag-and-drop-block_2-cs' />
+<snippet id='radtreeview-features-dragdrop-drag-and-drop-block_3-vb' />
 
 >tip In data binding scenario it is recommended to assign an INotifyCollectionChanged implementation (like ObservableCollection&lt;T&gt;) to the ItemsSource of RadTreeView. Otherwise, the drag/drop actions won't be reflected properly in the UI. Additionally, the __ItemsSource__ of the treeview items where drag/drop action will happen should be initialized. In case, the corresponding ItemsSource is null, the drop action won't get executed. Also, if the ItemsSource of RadTreeView or RadTreeViewItem is not an __IList__ implementation, then the drop operation is not allowed.
 
@@ -57,24 +31,11 @@ __Example 2: Enabling the Drag/Drop functionality in code-behind__
 The drag operation is based on the selected items in RadTreeView. To enable dragging of multiple items you will need to enable the multiple selection feature. To do so, set the __SelectionMode__ property of RadTreeView to __Multiple__  or __Extended__. 
 
 __Example 3: Turn on multi-selection__  
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" 
-						 IsDragDropEnabled="True" 
-						 SelectionMode="Multiple">
-```
+<snippet id='radtreeview-features-dragdrop-drag-and-drop-block_4-xaml' />
 
 __Example 4: Turn on multi-selection in code-behind__  
-```C#
-	private void EnableDragOfMultipleNodes()
-	{
-	    radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple;
-	}
-```
-```VB.NET
-	Private Sub EnableDragOfMultipleNodes()
-	    radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-drag-and-drop-block_5-cs' />
+<snippet id='radtreeview-features-dragdrop-drag-and-drop-block_6-vb' />
 
 #### Figure 2: Dragging multiple items
 ![Rad Tree View-Drag Drop-Multiple Drag](images/RadTreeView-DragDrop-MultipleDrag.png)
@@ -100,46 +61,7 @@ In order for the drag and drop to work automatically the treeviews should work d
 The following example shows how to use the feature with two RadTreeView instances.
 
 __Example 5: Define two RadTreeView controls__  
-```XAML
-	<Grid>	
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition/>
-			<ColumnDefinition/>
-		</Grid.ColumnDefinitions>
-		<telerik:RadTreeView x:Name="radTreeView1" IsDragDropEnabled="True">
-			<telerik:RadTreeViewItem Header="Sport Categories">
-				<telerik:RadTreeViewItem Header="Football">
-					<telerik:RadTreeViewItem Header="Futsal"/>
-					<telerik:RadTreeViewItem Header="Soccer"/>
-				</telerik:RadTreeViewItem>
-				<telerik:RadTreeViewItem Header="Tennis">
-					<telerik:RadTreeViewItem Header="Table Tennis"/>
-				</telerik:RadTreeViewItem>
-				<telerik:RadTreeViewItem Header="Cycling">
-					<telerik:RadTreeViewItem Header="Road Cycling"/>
-					<telerik:RadTreeViewItem Header="Indoor Cycling"/>
-					<telerik:RadTreeViewItem Header="Mountain Bike"/>
-				</telerik:RadTreeViewItem>
-			</telerik:RadTreeViewItem>
-		</telerik:RadTreeView>
-		<telerik:RadTreeView x:Name="radTreeView2" Grid.Column="1" IsDragDropEnabled="True">
-			<telerik:RadTreeViewItem Header="Sport Categories">
-				<telerik:RadTreeViewItem Header="Football">
-					<telerik:RadTreeViewItem Header="Futsal"/>
-					<telerik:RadTreeViewItem Header="Soccer"/>
-				</telerik:RadTreeViewItem>
-				<telerik:RadTreeViewItem Header="Tennis">
-					<telerik:RadTreeViewItem Header="Table Tennis"/>
-				</telerik:RadTreeViewItem>
-				<telerik:RadTreeViewItem Header="Cycling">
-					<telerik:RadTreeViewItem Header="Road Cycling"/>
-					<telerik:RadTreeViewItem Header="Indoor Cycling"/>
-					<telerik:RadTreeViewItem Header="Mountain Bike"/>
-				</telerik:RadTreeViewItem>
-			</telerik:RadTreeViewItem>
-		</telerik:RadTreeView>
-	</Grid>
-```
+<snippet id='radtreeview-features-dragdrop-drag-and-drop-block_7-xaml' />
 
 #### Figure 3: Dragging items between two treeviews 
 ![Rad Tree View-Drag Drop-Tree To Tree](images/RadTreeView-DragDrop-TreeToTree.png)

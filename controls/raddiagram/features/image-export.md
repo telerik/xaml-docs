@@ -41,19 +41,8 @@ The __RadDiagram.ExportToImage()__ method allows you to export the diagram to an
 Below you can find a few examples demonstrating how to use the __ExportToImage()__ method to customize the export. For the purpose of these examples we will use the following __RadDiagram__ definition:
 		
 
-```XAML
-    <telerik:RadDiagram x:Name="xDiagram">
-        <telerik:RadDiagramShape x:Name="Shape1"
-                                    Content="Shape1"
-                                    Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-                                    Position="100,80" />
-        <telerik:RadDiagramShape x:Name="Shape2"
-                                    Content="Shape2"
-                                    Geometry="{telerik:FlowChartShape ShapeType=Database2Shape}"
-                                    Position="200,180" />
-        <telerik:RadDiagramConnection Source="{Binding ElementName=Shape1}" Target="{Binding ElementName=Shape2}" />
-    </telerik:RadDiagram>		  		  
-```
+<snippet id='raddiagram-features-image-export-block_1-xaml' />
+
 
 ![Rad Diagram Features Export Sample Diagram](images/RadDiagram_Features_Export_SampleDiagram.png)
 
@@ -62,28 +51,15 @@ Below you can find a few examples demonstrating how to use the __ExportToImage()
 We will also create a __RadButton__ control and we will handle its __Click__ event handler to invoke the __RadDiagram.ExportToImage()__ method.
 		
 	
-```XAML
-    <telerik:RadButton Content="Export to Image" Click="ExportToImage" />		  
-```
+<snippet id='raddiagram-features-image-export-block_2-xaml' />
+
 
 * Define only the stream of the file:
 	
-	```C#
-		private void ExportToImage(object sender, RoutedEventArgs e)
-		{
-			using (var stream = File.Open(@"c:\temp\xDiagram.png", FileMode.Create))
-			{
-				xDiagram.ExportToImage(stream);
-			}
-		}
-	```
-	```VB.NET
-		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
-			Using stream = File.Open("c:\temp\xDiagram.png", FileMode.Create)
-				xDiagram.ExportToImage(stream)
-			End Using
-		End Sub			  			  
-	```	
+	<snippet id='raddiagram-features-image-export-block_3-cs' />
+
+	<snippet id='raddiagram-features-image-export-block_3-vb' />
+
 	
 	This operation will result in the creating of a file named xDiagram.png and it will have the following content:
 
@@ -91,22 +67,10 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 
 * Define the portion of the diagram to be exported and the size of the image file:
 	
-	```C#
-		private void ExportToImage(object sender, RoutedEventArgs e)
-		{
-			using (var stream = File.Open(@"c:\temp\xDiagram.png", FileMode.Create))
-			{
-				xDiagram.ExportToImage(stream,null,new Rect(10,10,150,150),new Size(200,600));
-			}
-		}			 
-	```
-	```VB.NET
-		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
-			Using stream = File.Open("c:\temp\xDiagram.png", FileMode.Create)
-				xDiagram.ExportToImage(stream, Nothing, New Rect(10, 10, 150, 150), New Size(200, 600))
-			End Using
-		End Sub			  			  
-	```
+	<snippet id='raddiagram-features-image-export-block_4-cs' />
+
+	<snippet id='raddiagram-features-image-export-block_4-vb' />
+
 	
 	This operation will result in the creating of a file named xDiagram.png with a size of 200x200 and it will contain the portion of the __RadDiagram__ defined by the rectangle *(10, 10, 150, 150)*. This is why the image file will contain only a part of the diagram and it will stretch it to fit the required size: 
 
@@ -114,44 +78,20 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 
 * Define only the stream and the portion of the diagram to be exported:
 	
-	```C#
-		private void ExportToImage(object sender, RoutedEventArgs e)
-		{
-			using (var stream = File.Open(@"c:\temp\xDiagram.png", FileMode.Create))
-			{
-				xDiagram.ExportToImage(stream,null,new Rect(10,10,150,150));
-			}
-    }			 
-	```
-	```VB.NET
-		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
-			Using stream = File.Open("c:\temp\xDiagram.png", FileMode.Create)
-				xDiagram.ExportToImage(stream, Nothing, New Rect(10, 10, 150, 150))
-			End Using
-		End Sub	
-	```	
+	<snippet id='raddiagram-features-image-export-block_5-cs' />
+
+	<snippet id='raddiagram-features-image-export-block_5-vb' />
+
 	
 	This operation will result in the creating of a file named xDiagram.png that contains only the portion of the __RadDiagram__ defined by the rectangle *(10, 10, 150, 150)*:
 	![Rad Diagram Features Export Bounds](images/RadDiagram_Features_Export_Bounds.png)
 
 * Define the stream and the margin of the diagram to be exported:
 
-	```C#
-		private void ExportToImage(object sender, RoutedEventArgs e)
-		{
-			using (var stream = File.Open(@"c:\temp\xDiagram.png", FileMode.Create))
-			{
-				xDiagram.ExportToImage(stream, backgroundBrush: new SolidColorBrush(Colors.BlanchedAlmond));
-			}
-		}			 
-	```
-	```VB.NET
-		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
-			Using stream = File.Open("c:\temp\xDiagram.png", FileMode.Create)
-				xDiagram.ExportToImage(stream, backgroundBrush := New SolidColorBrush(Colors.BlanchedAlmond))
-			End Using
-		End Sub		
-	```
+	<snippet id='raddiagram-features-image-export-block_6-cs' />
+
+	<snippet id='raddiagram-features-image-export-block_6-vb' />
+
 	
 	This operation will result in the creating of a file named xDiagram.png that contains the __RadDiagram__ displayed on a BlanchedAlmond background:
 	![Rad Diagram Features Export Background](images/RadDiagram_Features_Export_Background.png)
@@ -159,12 +99,10 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 Now if we set the *margin* attribute of the method to *20*
 
 	
-```C#
-    xDiagram.ExportToImage(stream, backgroundBrush: new SolidColorBrush(Colors.BlanchedAlmond), margin: new Thickness(20));		 
-```
-```VB.NET
-    xDiagram.ExportToImage(stream, backgroundBrush := New SolidColorBrush(Colors.BlanchedAlmond), margin := New Thickness(20))
-```
+<snippet id='raddiagram-features-image-export-block_7-cs' />
+
+<snippet id='raddiagram-features-image-export-block_7-vb' />
+
 
 The xDiagram.png image will display the same diagram but its background area will be larger as the method added a Margin of 20px around the diagram:
 ![Rad Diagram Features Export Background Margin](images/RadDiagram_Features_Export_BackgroundMargin.png)
@@ -174,33 +112,14 @@ The xDiagram.png image will display the same diagram but its background area wil
 __RadDiagram__ also exposes an __Export(string exportFormat)__ method that takes a __string__ argument. The method can export the content of your diagram in an __.png__ or __.bmp__ image file. In order to specify the type of the output image file, you need to set the argument of the method to either "png" or "bmp":
 
 
-```XAML
-    <telerik:RadDiagram x:Name="xDiagram">
-        <telerik:RadDiagramShape x:Name="Shape1"
-                                    Content="Shape1"
-                                    Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-                                    Position="100,80" />
-        <telerik:RadDiagramShape x:Name="Shape2"
-                                    Content="Shape2"
-                                    Geometry="{telerik:FlowChartShape ShapeType=Database2Shape}"
-                                    Position="200,180" />
-        <telerik:RadDiagramConnection Source="{Binding ElementName=Shape1}" Target="{Binding ElementName=Shape2}" />
-    </telerik:RadDiagram>			  
-```
+<snippet id='raddiagram-features-image-export-block_8-xaml' />
 
 
-```C#
-      //export to BMP
-      xDiagram.Export("bmp");
-      //export to PNG
-      //xDiagram.Export("png");
-```
-```VB.NET
-      'export to BMP'
-      xDiagram.Export("bmp")
-      'export to PNG'
-      'xDiagram.Export("png")'
-```
+
+<snippet id='raddiagram-features-image-export-block_9-cs' />
+
+<snippet id='raddiagram-features-image-export-block_9-vb' />
+
 
 The result of the above implementation will be a __.bmp__ file with the following content:
 ![Rad Diagram Features Export CommandBMP](images/RadDiagram_Features_Export_CommandBMP.png)
@@ -210,9 +129,8 @@ The result of the above implementation will be a __.bmp__ file with the followin
 You can also use the __DiagramCommands.Export__ command to export the diagram to an image file. It takes as a parameter the type of the image file. However, please keep in mind that the __Export__ command supports only export to __.bmp__ or __.png__ image files. If you don't define a __CommandParameter__, the command will create a __.png__ file:		
 
 
-```XAML
-    <telerik:RadButton Command="telerik:DiagramCommands.Export" CommandTarget="{Binding ElementName=xDiagram}" CommandParameter="bmp" Content="Export" />		 		  
-```
+<snippet id='raddiagram-features-image-export-block_10-xaml' />
+
 
 Using the above __RadButton__ definition, we can export the __RadDiagram__ to the following __.bmp__ file:
 ![Rad Diagram Features Export CommandBMP](images/RadDiagram_Features_Export_CommandBMP.png)
@@ -220,12 +138,10 @@ Using the above __RadButton__ definition, we can export the __RadDiagram__ to th
 You can also invoke the execution method of the command from code-behind:
 
 	
-```C#
-    Telerik.Windows.Controls.Diagrams.DiagramCommands.Export.Execute("bmp", null);		  
-```
-```VB.NET
-	Telerik.Windows.Controls.Diagrams.DiagramCommands.Export.Execute("bmp", Nothing)		  
-```
+<snippet id='raddiagram-features-image-export-block_11-cs' />
+
+<snippet id='raddiagram-features-image-export-block_11-vb' />
+
 
 ## See Also
 * [Export to High Quality Image Example](https://github.com/telerik/xaml-sdk/tree/master/Diagram/ExportToHighQualityImage)

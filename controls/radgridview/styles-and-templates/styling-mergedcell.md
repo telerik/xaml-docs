@@ -41,13 +41,8 @@ You can apply a style to the merged cells, similar to:
 
 __Example 1: Styling all merged cells of an application__
 
-```XAML
-	<Style TargetType="telerik:GridViewMergedCell">
-		<Setter Property="VerticalContentAlignment" Value="Top"/>
-		<Setter Property="HorizontalContentAlignment" Value="Center"/>
-		<Setter Property="Background" Value="#ffcc00"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-mergedcell-example_1_styling_all_merged_cells_of_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewMergedCellStyle__.
 
@@ -61,17 +56,8 @@ If instead you would like to set a style only for a specific __RadGridView__, yo
 
 __Example 2: Styling merged cells of a specific RadGridView__
 
-```XAML
-	<Grid.Resources>
-		<Style TargetType="telerik:GridViewMergedCell" x:Key="GridViewMergedCellsStyle">
-			<Setter Property="VerticalContentAlignment" Value="Top"/>
-			<Setter Property="HorizontalContentAlignment" Value="Center"/>
-			<Setter Property="Background" Value="#ffcc00"/>
-		</Style>
-	</Grid.Resources>
+<snippet id='radgridview-styles-and-templates-styling-mergedcell-example_2_styling_merged_cells_of_a_specific_radgridview-xaml' />
 
-	<telerik:RadGridView MergedCellsStyle="{StaticResource GridViewMergedCellsStyle}" />
-```
 
 >tip If you are using [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme.
 

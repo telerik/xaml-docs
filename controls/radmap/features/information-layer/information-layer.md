@@ -41,44 +41,12 @@ The __InformationLayer__ allows you to display the following items:
 In order to add an item to the __InformationLayer__, the only thing you have to do is to put it inside the __InformationLayer__'s tag. Here is an example:        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <Ellipse x:Name="Ellipse"
-	                    Width="20"
-	                    Height="20"
-	                    Stroke="Red"
-	                    StrokeThickness="3"
-	                    Fill="Transparent" />
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-information-layer-block_1-xaml' />
 
 If you want to add more than one element, you just have to place it after the previous element. Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <Ellipse x:Name="Ellipse1"
-	                    Width="20"
-	                    Height="20"
-	                    Stroke="Red"
-	                    StrokeThickness="3"
-	                    Fill="Transparent" />
-	        <Ellipse x:Name="Ellipse2"
-	                    Width="20"
-	                    Height="20"
-	                    Stroke="Red"
-	                    StrokeThickness="3"
-	                    Fill="Transparent" />
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-information-layer-block_2-xaml' />
 
 ## Positioning an Item
 
@@ -100,25 +68,7 @@ Here is an example for an __Ellipse__, positioned above Sofia, Bulgaria and visi
 >Note that the location of the element on the map coincides with its top left corner, not with its center. To change the position of the element towards the location you can use its __HorizontalAlignment__ or __VerticalAlignment__ properties or use the __HotSpot__ feature. To learn how read [here]({%slug radmap-features-hot-spots%}).          
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <Ellipse x:Name="Ellipse1"
-	                    telerik:MapLayer.BaseZoomLevel="5"
-	                    telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                    telerik:MapLayer.ZoomRange="5,12"
-	                    Width="20"
-	                    Height="20"
-	                    Stroke="Red"
-	                    StrokeThickness="3"
-	                    Fill="Transparent"
-	                    HorizontalAlignment="Center"
-	                    VerticalAlignment="Center" />
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-information-layer-block_3-xaml' />
 
 Here is a snapshot of the result:
 

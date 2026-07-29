@@ -22,9 +22,7 @@ Each RadDocument instance has a dictionary of variables exposed by the __Documen
 
 
 
-```C#
-	this.editor.Document.DocumentVariables
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-document-variables-block_1-cs' />
 
 
 
@@ -33,10 +31,7 @@ This collection maps string keys to object values (most often strings). The valu
 
 
 
-```C#
-	this.editor.Document.DocumentVariables.Add("Name", "Andrew Fuller");
-	this.editor.Document.DocumentVariables["Job"] = "Software Engineer";
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-document-variables-block_2-cs' />
 
 
 
@@ -46,9 +41,7 @@ Removing variables from the collection can be done like this:
 
 
 
-```C#
-	this.editor.Document.DocumentVariables.Remove("Name");
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-document-variables-block_3-cs' />
 
 
 
@@ -56,9 +49,5 @@ Document variables can be inserted in the document using DocumentVariableField. 
 
 
 
-```C#
-	DocumentVariableField docVariable = new DocumentVariableField() { VariableName = "Name" };
-	this.editor.InsertField(docVariable);	
-```
-
+<snippet id='radrichtextbox-features-fields-and-document-variables-document-variables-block_4-cs' />
 

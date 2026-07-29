@@ -24,40 +24,19 @@ In order to customize the __MouseOverHighlightStyle__ using implicit styles you 
 
     __Example 1: Merge the necessary ResourceDictionaries__
 
-    ```XAML
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/System.Windows.xaml"/>
-                <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.xaml"/>
-                <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-                <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-                <ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.ScheduleView.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    ```
+    <snippet id='radscheduleview-styles-and-templates-customize-mouseover-selection-highlight-block_1-xaml' />
 
 3. Create a Style that targets __HighlightItem__, base it on the MouseOverHighlightStyle StaticResource and set the Background property:
 
     __Example 2: Define the custom style__
 
-    ```XAML
-        <Style x:Key="MyMouseOverHighlightStyle" TargetType="telerik:HighlightItem" BasedOn="{StaticResource MouseOverHighlightStyle}">
-            <Setter Property="Background" Value="Purple"/>
-        </Style>
-    ```
+    <snippet id='radscheduleview-styles-and-templates-customize-mouseover-selection-highlight-block_2-xaml' />
 
 4. Next we will need to set the newly created Style to the MouseOverHighlightStyle property of the RadScheduleView:
 
     __Example 3: Set the MouseOverHighlightStyle property__
 
-    ```XAML
-        <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
-                            MouseOverHighlightStyle="{StaticResource MyMouseOverHighlightStyle}">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:DayViewDefinition/>
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
-    ```
+    <snippet id='radscheduleview-styles-and-templates-customize-mouseover-selection-highlight-block_3-xaml' />
 
 #### Figure 1: Result from Example 3 after hovering over a slot in the Office 2016 theme
 ![Radscheduleview MouseOverHighlightStyle](images/radscheduleview_mouseoverhighlight.png)
@@ -70,24 +49,13 @@ In order to customize the __SelectionHighlightStyle__ using implicit styles you 
 
 	__Example 4: Define the custom style__
 
-	```XAML
-		<Style x:Key="MySelectionHighlightStyle" TargetType="telerik:HighlightItem" BasedOn="{StaticResource SelectionHighlightStyle}">
-			<Setter Property="Background" Value="Red"/>
-		</Style>
-	```
+	<snippet id='radscheduleview-styles-and-templates-customize-mouseover-selection-highlight-block_4-xaml' />
 
 2. Next we will need to set the newly created Style to the SelectionHighlightStyle of the RadScheduleView:
 
 	__Example 5: Set the custom style__
 
-	```XAML
-		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
-							SelectionHighlightStyle="{StaticResource MySelectionHighlightStyle}">
-			<telerik:RadScheduleView.ViewDefinitions>
-				<telerik:DayViewDefinition/>
-			</telerik:RadScheduleView.ViewDefinitions>
-		</telerik:RadScheduleView>
-	```
+	<snippet id='radscheduleview-styles-and-templates-customize-mouseover-selection-highlight-block_5-xaml' />
 
 #### Figure 2: Result from Example 5 after selecting a slot in the Office 2016 theme__
 ![RadScheduleView SelectionHighlightStyle](images/radscheduleview_selectionhighlight.png)

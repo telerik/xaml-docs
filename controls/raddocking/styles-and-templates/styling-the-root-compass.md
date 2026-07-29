@@ -18,27 +18,8 @@ In order to style the __RootCompass__ element in a RadDocking, you should create
 
 __Example 1: Setting the RootCompassStyle property__
 
-```XAML
-	<Application.Resources>
-		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-		<Style x:Key="CustomRootCompassStyle" TargetType="telerik:RootCompass" BasedOn="{StaticResource RootCompassStyle}">-->
+<snippet id='raddocking-styles-and-templates-styling-the-root-compass-example_1_setting_the_rootcompassstyle_property-xaml' />
 
-		<Style x:Key="CustomRootCompassStyle" TargetType="telerik:RootCompass">
-			<Setter Property="IsLeftIndicatorVisible" Value="False" />
-			<Setter Property="IsRightIndicatorVisible" Value="False" />
-		</Style>
-	</Application.Resources>
-
-	<Grid>
-        <telerik:RadDocking RootCompassStyle="{StaticResource CustomRootCompassStyle}">
-            <telerik:RadSplitContainer InitialPosition="FloatingDockable">
-                <telerik:RadPaneGroup >
-                    <telerik:RadPane Header="Pane 1"/>
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-        </telerik:RadDocking>
-    </Grid>
-```
 
 #### __Figure 1: RootCompass without left and right indicator in the Office2016 theme__
 ![RootCompass without left and right indicator](images/RadDocking_RootCompass_RootCompassStyle.png)

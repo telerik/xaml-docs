@@ -38,12 +38,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 After adding reference to the aforementioned dlls, you can use the static class RadSpellChecker and its Check(Control controlToSpellCheck, SpellCheckingMode mode) method.
 
-```C#
-	private void Button_Click(object sender, RoutedEventArgs e)
-	{
-	   RadSpellChecker.Check(this.textBox1, SpellCheckingMode.WordByWord);
-	}
-```
+<snippet id='radspellchecker-getting-started-block_1-cs' />
 
 For the RadSpellChecker to work properly there is just one more thing you need to provide: a class deriving from RadDictionary which loads a .TDF file containing a dictionary for a specific language. Such a class is defined in “__Telerik.Windows.Documents.Proofing.Dictionaries.En-US__” included in Telerik UI. It contains a dictionary you can use in order to spell check in English. If you reference it in your project, it will be loaded automatically by MEF. 
 
@@ -55,33 +50,15 @@ You can use RadSpellChecker for those controls by adding an attached property to
 
 >To use the RadSpellChecker in XAML you have to declare the following namespace:
 
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-```
+<snippet id='radspellchecker-getting-started-block_2-xaml' />
 
 The attached property for Telerik RadGridView is `telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled`:
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView" telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True">
-	   <telerik:RadGridView.Columns>
-	      <telerik:GridViewDataColumn telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True">
-	         ...
-	      </telerik:GridViewDataColumn>
-	   </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radspellchecker-getting-started-block_3-xaml' />
 
 And the one for DataGrid is telerik:DataGridSpellCheckHelper.IsSpellCheckingEnabled:
 
-```XAML
-	<sdk:DataGrid x:Name="dataGrid" telerik:DataGridSpellCheckHelper.IsSpellCheckingEnabled="True">
-	   <sdk:DataGrid.Columns>
-	      <sdk:DataGridTemplateColumn telerik:DataGridSpellCheckHelper.IsSpellCheckingEnabled="True">
-	         ...
-	      </sdk:DataGridTemplateColumn>
-	   </sdk:DataGrid.Columns>
-	</sdk:DataGrid>
-```
+<snippet id='radspellchecker-getting-started-block_4-xaml' />
 
 
 Of course the GridViewDataColumn (or DataGridTemplateColumn) should contain a single control that can be spellchecked (implements IControlSpellChecker interface). [ReadMore]({%slug radspellchecker-spellchecking-gridcell%})
@@ -91,25 +68,17 @@ Of course the GridViewDataColumn (or DataGridTemplateColumn) should contain a si
 
 When the theme is [implictly set]({%slug styling-apperance-implicit-styles-overview%}) in your application, you should merge the required dictionaries. The full list of dictionaries needed for RadSpellChecker is available in the following snippet:
 
-```XAML
-    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.xaml"/>
-    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.xaml"/>
-    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-    <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.Proofing.xaml"/>
-```
+<snippet id='radspellchecker-getting-started-block_5-xaml' />
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
 * [Telerik UI for WPF SpellChecker Component](https://www.telerik.com/products/wpf/spellchecker.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}
-
-

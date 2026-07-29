@@ -19,22 +19,7 @@ The UI control is represented by the __MapMouseLocationIndicator__ control. You 
 In order to use the __MapMouseLocationIndicator__ outside the __RadMap__ you have to set its __MapControl__ property to the respective __RadMap__ instance. Additionally you can modify its appearance and the location formatting. Here is an example:
 
 
-```XAML
-	<StackPanel>
-	    <telerik:MapMouseLocationIndicator MapControl="{Binding ElementName=radMap}"
-	                                        LocationFormat="Number"
-	                                        Margin="10"
-	                                        HorizontalAlignment="Center"
-	                                        Width="250"
-	                                        IndicatorLabelBackground="White"
-	                                        IndicatorLabelBorderBrush="Black"
-	                                        Foreground="Black" />
-	    <telerik:RadMap x:Name="radMap"
-	                    Width="600"
-	                    Height="480"
-	                    MouseLocationIndicatorVisibility="Collapsed" />
-	</StackPanel>
-```
+<snippet id='radmap-features-mouse-location-block_1-xaml' />
 
 Here is a snapshot of the result:
 

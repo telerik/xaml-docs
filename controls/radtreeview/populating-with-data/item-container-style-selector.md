@@ -16,31 +16,7 @@ If you have different items and/or you prefer to display items with different st
 
 For the purpose of this tutorial will be used the following treeview declaration:
 
-```XAML
-	<UserControl.Resources>	
-		<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-	
-		<DataTemplate x:Key="Team">
-			<TextBlock Text="{Binding Name}" />
-		</DataTemplate>
-	
-		<HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-			ItemsSource="{Binding Teams}">
-			<TextBlock Text="{Binding Name}" />
-		</HierarchicalDataTemplate>
-	
-		<HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-			ItemsSource="{Binding Divisions}">
-			<TextBlock Text="{Binding Name}" />
-		</HierarchicalDataTemplate>	
-	</UserControl.Resources>
-	
-	<Grid x:Name="LayoutRoot" Background="White">	
-		<telerik:RadTreeView x:Name="radTreeView"
-		   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-		   ItemTemplate="{StaticResource League}"/>	
-	</Grid>
-```
+<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_1-xaml' />
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
 ![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_TemplatingItemContainerStyleSelector_001.PNG)
@@ -54,30 +30,15 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 * Create three __styles__ in the resources of your application{% if site.site_name == 'Silverlight' %} (user control){% endif %}.
 	* __LeagueItemContainerStyle__
 
-		```XAML
-			<Style x:Key="LeagueItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
-				<Setter Property="Foreground" Value="Red"/>
-				<Setter Property="IsExpanded" Value="True"/>
-			</Style>
-		```
+		<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_2-xaml' />
 
 	* __DivisionItemContainerStyle__
 
-		```XAML
-			<Style x:Key="DivisionItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
-				<Setter Property="Foreground" Value="Green"/>
-				<Setter Property="IsExpanded" Value="True"/>
-			</Style>
-		```
+		<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_3-xaml' />
 
 	* __TeamItemContainerStyle__
 
-		```XAML
-			<Style x:Key="TeamItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
-				<Setter Property="Foreground" Value="Purple"/>
-				<Setter Property="FontSize" Value="16"/>
-			</Style>
-		```
+		<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_4-xaml' />
 
 	>The style defined for the __ItemContainerStyle__ property should have as __TargetType__  the __RadTreeViewItem__ class.
 
@@ -89,133 +50,19 @@ The next step is to create a selector where the logic about selecting the right 
 
 	>If you create an __ItemTemplateSelector__ or __ItemEditTemplateSelector__, you must derive from the __DataTemplateSelector__ class. But if you want to create __ItemContainerStyleSelector__, you must derive from the __StyleSelector__ class.
 
-	```C#
-		public class LeagueItemContainerStyleSelector : StyleSelector
-		{
-		}
-	```
-	```VB.NET
-		Public Class LeagueItemContainerStyleSelector
-			Inherits StyleSelector
-		End Class
-	```
+	<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_5-cs' />
+	<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_6-vb' />
 
 * Override the __SelectStyle__ method and implement your custom logic in it. The method accepts as arguments an __object__ and a __DependencyObject__. The object argument is the actual object being bound and the __DependecyObject__ is the container for it. 
 
-	```C#
-		public class LeagueItemContainerStyleSelector : StyleSelector
-		{
-			private Style leagueStyle;
-			private Style divisionStyle;
-			private Style teamStyle;
-			public override Style SelectStyle( object item, DependencyObject container )
-			{
-				if ( item is League )
-					return this.leagueStyle;
-				else if ( item is Division )
-					return this.divisionStyle;
-				else if ( item is Team )
-					return this.teamStyle;
-				return null;
-			}
-			public Style LeagueStyle
-			{
-				get
-				{
-					return this.leagueStyle;
-				}
-				set
-				{
-					this.leagueStyle = value;
-				}
-			}
-			public Style DivisionStyle
-			{
-				get
-				{
-					return this.divisionStyle;
-				}
-				set
-				{
-					this.divisionStyle = value;
-				}
-			}
-			public Style TeamStyle
-			{
-				get
-				{
-					return this.teamStyle;
-				}
-				set
-				{
-					this.teamStyle = value;
-				}
-			}
-		}
-	```
-	```VB.NET
-		Public Class LeagueItemContainerStyleSelector
-			Inherits StyleSelector
-			Private m_leagueStyle As Style
-			Private m_divisionStyle As Style
-			Private m_teamStyle As Style
-		
-			Public Overloads Overrides Function SelectStyle(ByVal item As Object, ByVal container As DependencyObject) As Style
-				If TypeOf item Is League Then
-					Return Me.m_leagueStyle
-				ElseIf TypeOf item Is Division Then
-					Return Me.m_divisionStyle
-				ElseIf TypeOf item Is Team Then
-					Return Me.m_teamStyle
-				End If
-		
-				Return Nothing
-			End Function
-		
-			Public Property LeagueStyle() As Style
-				Get
-					Return Me.m_leagueStyle
-				End Get
-				Set(ByVal value As Style)
-					Me.m_leagueStyle = value
-				End Set
-			End Property
-		
-			Public Property DivisionStyle() As Style
-				Get
-					Return Me.m_divisionStyle
-				End Get
-				Set(ByVal value As Style)
-					Me.m_divisionStyle = value
-				End Set
-			End Property
-		
-			Public Property TeamStyle() As Style
-				Get
-					Return Me.m_teamStyle
-				End Get
-				Set(ByVal value As Style)
-					Me.m_teamStyle = value
-				End Set
-			End Property
-		End Class
-	```
+	<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_7-cs' />
+	<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_8-vb' />
 
 * Define the created selector as a resource in your XAML and set it to the __ItemContainerStyleSelector__ property. 
 
-	```XAML
-		<example:LeagueItemContainerStyleSelector x:Key="myContainerStyleSelector"
-			LeagueStyle="{StaticResource LeagueItemContainerStyle}"
-			DivisionStyle="{StaticResource DivisionItemContainerStyle}"
-			TeamStyle="{StaticResource TeamItemContainerStyle}"/>
-	```
+	<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_9-xaml' />
 
-	```XAML
-		<telerik:RadTreeView x:Name="radTreeView"
-			ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-			ItemTemplate="{StaticResource League}"
-			ItemContainerStyleSelector="{StaticResource myContainerStyleSelector}"/>
-	```
+	<snippet id='radtreeview-populating-with-data-item-container-style-selector-block_10-xaml' />
 
 ![{{ site.framework_name }} RadTreeView Item Container Style Selector](images/RadTreeView_TemplatingItemContainerStyleSelector_010.PNG)
 

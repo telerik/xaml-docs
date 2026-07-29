@@ -23,30 +23,7 @@ The final result should look like the snapshot below:
 	* Add a __RadTreeView__ in your XAML. 
 	* Create two empty hierarchical data templates and one empty data template in your application resources as it is shown in the XAML below: 
 	
-		```XAML
-			<UserControl.Resources>
-			
-				<DataTemplate x:Key="Team">
-					<Grid>
-					</Grid>
-				</DataTemplate>
-			
-				<HierarchicalDataTemplate x:Key="Division">
-					<Grid>
-					</Grid>
-				</HierarchicalDataTemplate>
-			
-				<HierarchicalDataTemplate x:Key="League">
-					<Grid>
-					</Grid>
-				</HierarchicalDataTemplate>
-			
-			</UserControl.Resources>
-			
-			<Grid x:Name="LayoutRoot" Background="White">
-				<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
-			</Grid>
-		```
+		<snippet id='radtreeview-populating-with-data-item-template-block_1-xaml' />
 		
 * Open your page in Expression Blend.
 
@@ -56,19 +33,7 @@ The final result should look like the snapshot below:
 * Press the "__Edit resource__" button (located next to each template) for the __League__ template. This will open the current template for edit. Drag and drop the controls you need for the template and configure their properties. In the example are used an __Image__ and a __TextBlock__ controls: 
 	![{{ site.framework_name }} RadTreeView Blend League Template](images/RadTreeView_TemplatingItemTemplate_010.png)
 	
-	```XAML
-		<HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions, Mode=OneWay}"
-				ItemTemplate="{StaticResource Division}">
-			<Grid d:DesignWidth="93" d:DesignHeight="26">
-			 <Grid.ColumnDefinitions>
-			  <ColumnDefinition Width="0.323*"/>
-			  <ColumnDefinition Width="0.677*"/>
-			 </Grid.ColumnDefinitions>
-			 <Image Source="{Binding ImageUrl, Mode=OneWay}"/>
-			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
-			</Grid>
-		</HierarchicalDataTemplate>
-	```
+	<snippet id='radtreeview-populating-with-data-item-template-block_2-xaml' />
 
 	To configure the binding for the __Source__ property of the __Image control__, select it in the "__Object and Timeline__" pane. 
 
@@ -99,71 +64,14 @@ The final result should look like the snapshot below:
 
 	Here is the result XAML for the __League__ data template:
 	
-	```XAML
-		<HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions, Mode=OneWay}"
-				ItemTemplate="{StaticResource Division}">
-			<Grid d:DesignWidth="93" d:DesignHeight="26">
-			 <Grid.ColumnDefinitions>
-			  <ColumnDefinition Width="0.323"/>
-			  <ColumnDefinition Width="0.677"/>
-			 </Grid.ColumnDefinitions>
-			 <Image Source="{Binding ImageUrl, Mode=OneWay}"/>
-			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
-			</Grid>
-		</HierarchicalDataTemplate>
-	```
+	<snippet id='radtreeview-populating-with-data-item-template-block_3-xaml' />
 
 * Perform the same steps for the other two templates - __Division__ and __Team__. 
 
 * The final step is to select your treeview and to set the __ItemTemplate__ property:
 	![{{ site.framework_name }} RadTreeView Set ItemTemplate](images/RadTreeView_TemplatingItemTemplate_090.png)
 
-```XAML
-	<UserControl.Resources>
-	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-	
-	    <DataTemplate x:Key="Team">
-	       <Grid>
-	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323"/>
-	                <ColumnDefinition Width="0.677"/>
-	            </Grid.ColumnDefinitions>
-	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
-	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
-	        </Grid>
-	    </DataTemplate>
-	
-	    <HierarchicalDataTemplate x:Key="Division"
-	        ItemsSource="{Binding Teams, Mode=OneWay}"
-	        ItemTemplate="{StaticResource Team}">
-	        <Grid>
-	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323"/>
-	                <ColumnDefinition Width="0.677"/>
-	            </Grid.ColumnDefinitions>
-	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
-	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
-	        </Grid>
-	    </HierarchicalDataTemplate>
-	    <HierarchicalDataTemplate x:Key="League" 
-	        ItemsSource="{Binding Divisions, Mode=OneWay}"
-	        ItemTemplate="{StaticResource Division}">
-	        <Grid>
-	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="0.323"/>
-	                <ColumnDefinition Width="0.677"/>
-	            </Grid.ColumnDefinitions>
-	            <Image Source="{Binding ImageUrl, Mode=OneWay}" Width="16" Height="16"/>
-	            <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
-	        </Grid>
-	    </HierarchicalDataTemplate>
-	</UserControl.Resources>
-	<Grid x:Name="LayoutRoot" Background="White">
-	    <telerik:RadTreeView x:Name="radTreeView" Margin="8"
-	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-	       ItemTemplate="{StaticResource League}" />
-	</Grid>
-```
+<snippet id='radtreeview-populating-with-data-item-template-block_4-xaml' />
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
 

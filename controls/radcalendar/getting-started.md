@@ -33,9 +33,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 **Example 1** demonstrates how you can add a RadCalendar in xaml.
 
 __Example 1: RadCalendar definition__
-```XAML
-	<telerik:RadCalendar VerticalAlignment="Center" HorizontalAlignment="Center"  />
-```
+<snippet id='radcalendar-getting-started-example_1_radcalendar_definition-xaml' />
 
 #### __Figure 1: Result from Example 1 in the Office2016 Theme__
 ![RadCalendar Getting Started](images/RadCalendar_GettingStarted.png)
@@ -45,9 +43,7 @@ __Example 1: RadCalendar definition__
 You can control how many months are shown by setting the **Columns** property of the RadCalendar. Its default value is **one** and the maximum is **four**. **Example 2** demonstrates how you can achieve that.
 
 __Example 2: RadCalendar showing four months__
-```XAML
-	<telerik:RadCalendar VerticalAlignment="Center" HorizontalAlignment="Center" Columns="4" ViewsHeaderVisibility="Visible"/>
-```
+<snippet id='radcalendar-getting-started-example_2_radcalendar_showing_four_months-xaml' />
 
 #### __Figure 2: Result from Example 2 in the Office2016 Theme__
 ![RadCalendar with four months](images/RadCalendar_Columns.png)
@@ -57,9 +53,7 @@ __Example 2: RadCalendar showing four months__
 You have the option to hide the week numbers, as well as the weekdays. This can be done by setting the **AreWeekNumbersVisible** and **AreWeekNamesVisible** properties to **False**. **Example 3** demonstrates this:
 
 __Example 3: RadCalendar without week numbers and weekdays__
-```XAML
-	<telerik:RadCalendar VerticalAlignment="Center" HorizontalAlignment="Center" AreWeekNumbersVisible="False" AreWeekNamesVisible="False" />
-```
+<snippet id='radcalendar-getting-started-example_3_radcalendar_without_week_numbers_and_weekdays-xaml' />
 
 #### __Figure 3: Result from Example 3 in the Office2016 Theme__
 ![RadCalendar without week numbers and weekdays](images/RadCalendar_HideWeekNumbersAndDays.png)
@@ -82,17 +76,7 @@ To change the theme, you can follow the steps below:
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 3: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radcalendar-getting-started-example_3_radcalendar_without_week_numbers_and_weekdays-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

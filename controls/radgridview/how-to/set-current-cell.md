@@ -16,19 +16,10 @@ You can set the current cell of the RadGridView control by using the __CurrentCe
 
 __Example 1: Setting the current cell via an item and a column__
 
-```C#
-	private void gridView_Loaded(object sender, EventArgs e)
-	{
-        gridView.CurrentCellInfo = new GridViewCellInfo(gridView.Items[5], gridView.Columns["Number"]);
-        gridView.Focus();
-	}
-```
-```VB.NET
-	Private Sub gridView_Loaded(ByVal sender As Object, ByVal e As EventArgs)
-		gridView.CurrentCellInfo = New GridViewCellInfo(gridView.Items(5), gridView.Columns("Number"))
-		gridView.Focus()
-	End Sub
-```
+<snippet id='radgridview-how-to-set-current-cell-example_1_setting_the_current_cell_via_an_item_and_a_column-cs' />
+
+<snippet id='radgridview-how-to-set-current-cell-example_1_setting_the_current_cell_via_an_item_and_a_column-vb' />
+
 
 >important Please note that for this to work, the control must be loaded.
 

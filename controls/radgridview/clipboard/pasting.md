@@ -39,46 +39,10 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 
 __Example 1: Utilizing Pasting and PastingCellClipboardContent events__
 
-```C#
-	private void radGridView1_Pasting(object sender, GridViewClipboardEventArgs e)
-	{
-	    e.Cancel = true;
-	}
-	
-	private void radGridView1_PastingCellClipboardContent(object sender, GridViewCellClipboardEventArgs e)
-	{
-	    if (e.Cell.Column.UniqueName == "Company")
-	    {
-	        var companyName = e.Value.ToString();
-	        var company = this.EFContext.Companies.Where(c => c.Name == companyName).FirstOrDefault();
-	        if (company != null)
-	        {
-	            e.Value = company;
-	        }
-	        else
-	        {
-	            e.Cancel = true;
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
-	    e.Cancel = True
-	End Sub
-	
-	Private Sub radGridView1_PastingCellClipboardContent(sender As Object, e As GridViewCellClipboardEventArgs)
-	    If e.Cell.Column.UniqueName = "Company" Then
-	        Dim companyName = e.Value.ToString()
-	        Dim company = Me.EFContext.Companies.Where(Function(c) c.Name = companyName).FirstOrDefault()
-	        If company IsNot Nothing Then
-	            e.Value = company
-	        Else
-	            e.Cancel = True
-	        End If
-	    End If
-	End Sub
-```
+<snippet id='radgridview-clipboard-pasting-example_1_utilizing_pasting_and_pastingcellclipboardcontent_events-cs' />
+
+<snippet id='radgridview-clipboard-pasting-example_1_utilizing_pasting_and_pastingcellclipboardcontent_events-vb' />
+
 
 As of version __R2 2013__:
         

@@ -49,18 +49,14 @@ The following list shows the supported memory actions with example.
 The current memory value can be assigned manually by setting the `MemoryValue` property.
 
 __Setting the memory value manually__
-```XAML
-	<telerik:RadCalculator MemoryValue="2"/>
-```
+<snippet id='radcalculator-memoryfunctionality-setting_the_memory_value_manually-xaml' />
 
 ## Hiding the Memory Buttons
 
 To hide the buttons, set the `MemoryButtonsVisibility` property of `RadCalculator` or `RadCalculatorPicker` to `Collapsed`.
 
 __Hiding the memory buttons__
-```XAML
-	<telerik:RadCalculator MemoryButtonsVisibility="Collapsed"/>
-```
+<snippet id='radcalculator-memoryfunctionality-hiding_the_memory_buttons-xaml' />
 
 ![{{ site.framework_name }} RadCalculator image with hidden memory buttons](images/radcalculator-memoryfunctionality-hiddenbuttons.png)
 

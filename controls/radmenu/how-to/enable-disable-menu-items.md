@@ -24,10 +24,7 @@ Disabling all menu items can be easily done by just setting the __IsEnabled__ pr
 
 
 
-```XAML
-	<telerik:RadMenu VerticalAlignment="Top" IsEnabled="False">
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-how-to-enable-disable-menu-items-block_1-xaml' />
 
 This will disable the top-level menu items and they won't be expandable. 
 
@@ -39,9 +36,7 @@ To disable a static menu item you just have to set its __IsEnabled__ property to
 
 
 
-```XAML
-	<telerik:RadMenuItem Header="Save as ..." IsEnabled="False" />
-```
+<snippet id='radmenu-how-to-enable-disable-menu-items-block_2-xaml' />
 
 >Note that disabling an item will prevent it from expanding its child items (if any).
 
@@ -54,16 +49,7 @@ To disable a static menu item you just have to set its __IsEnabled__ property to
 In order to disable a dynamic menu item you have to bind its __IsEnabled__ property to the appropriate boolean property of your data item. To do this you can set the ItemContainerStyle property of RadMenu.
 
 
-```XAML
-	<telerik:RadMenu>
-	    <telerik:RadMenu.ItemContainerStyle>
-			<!-- if you use NoXaml dlls, set the following property on the Style object: BasedOn="{StaticResource RadMenuItemStyle}" -->
-	        <Style TargetType="telerik:RadMenuItem">
-				<Setter Property="IsEnabled" Value="{Binding CanClickItem}" />
-	        </Style>
-	    </telerik:RadMenu.ItemContainerStyle>
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-how-to-enable-disable-menu-items-block_3-xaml' />
 
 ## See Also  
  * [Checkable Items]({%slug radmenu-features-checkable-items%})

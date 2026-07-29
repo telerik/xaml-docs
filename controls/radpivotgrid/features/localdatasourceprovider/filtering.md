@@ -77,115 +77,23 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 
 
 
-```XAML
-	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
-	    <pivot:DateTimeGroupDescription.GroupFilter>
-	        <pivot:LabelGroupFilter>
-	            <pivot:LabelGroupFilter.Condition>
-	                <pivot:TextCondition Comparison="BeginsWith" Pattern="Pe"/>
-	            </pivot:LabelGroupFilter.Condition>
-	        </pivot:LabelGroupFilter>
-	    </pivot:DateTimeGroupDescription.GroupFilter>
-	</pivot:DateTimeGroupDescription>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_1-xaml' />
 
 
 
-```C#
-	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
-	dateTimeGroupDescription.PropertyName = "Date";
-	dateTimeGroupDescription.Step = DateTimeStep.Month;
-	LabelGroupFilter labelFilter = new LabelGroupFilter();
-	TextCondition textCondition = new TextCondition();
-	textCondition.Pattern = "Pe";
-	textCondition.Comparison = TextComparison.BeginsWith;
-	labelFilter.Condition = textCondition;
-	dateTimeGroupDescription.GroupFilter = labelFilter;
-```
-```VB.NET
-	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
-	dateTimeGroupDescription.PropertyName = "Date"
-	dateTimeGroupDescription.Step = DateTimeStep.Month
-	Dim labelFilter As New LabelGroupFilter()
-	Dim textCondition As New TextCondition()
-	textCondition.Pattern = "Pe"
-	textCondition.Comparison = TextComparison.BeginsWith
-	labelFilter.Condition = textCondition
-	dateTimeGroupDescription.GroupFilter = labelFilter
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_2-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_2-vb' />
 
 And here is how to apply ItemsFilterCondition:              
 
 
 
-```XAML
-	<pivot:PropertyGroupDescription PropertyName="Name" >
-	    <pivot:PropertyGroupDescription.GroupFilter>
-	        <pivot:LabelGroupFilter>
-	            <pivot:LabelGroupFilter.Condition>
-	                <pivot:ItemsFilterCondition>
-	                    <pivot:ItemsFilterCondition.DistinctCondition>
-	                        <pivot:SetCondition Comparison="Includes">
-	                            <pivot:SetCondition.Items>
-	                                <sys:String>Pencil</sys:String>
-	                                <sys:String>Pen</sys:String>
-	                            </pivot:SetCondition.Items>
-	                        </pivot:SetCondition>
-	                    </pivot:ItemsFilterCondition.DistinctCondition>
-	                    <pivot:ItemsFilterCondition.Condition>
-	                        <pivot:TextCondition Comparison="Contains" Pattern="c" />
-	                    </pivot:ItemsFilterCondition.Condition>
-	                </pivot:ItemsFilterCondition>
-	            </pivot:LabelGroupFilter.Condition>
-	        </pivot:LabelGroupFilter>
-	    </pivot:PropertyGroupDescription.GroupFilter>
-	</pivot:PropertyGroupDescription>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_3-xaml' />
 
 
 
-```C#
-	Telerik.Pivot.Core.PropertyGroupDescription propertyGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
-	propertyGroupDescription.PropertyName = "Name";
-	
-	var labelFilter = new LabelGroupFilter();
-	var textCondition = new TextCondition();
-	textCondition.Pattern = "c";
-	textCondition.Comparison = TextComparison.Contains;
-	
-	var setCondition = new SetCondition();
-	setCondition.Comparison = SetComparison.Includes;
-	setCondition.Items.Add("Pen");
-	setCondition.Items.Add("Pencil");
-	
-	var itemsFilterCondition = new ItemsFilterCondition();
-	itemsFilterCondition.Condition = textCondition;
-	itemsFilterCondition.DistinctCondition = setCondition;
-	
-	labelFilter.Condition = itemsFilterCondition;
-	propertyGroupDescription.GroupFilter = labelFilter;
-```
-```VB.NET
-	Dim propertyGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
-	propertyGroupDescription.PropertyName = "Name"
-	
-	Dim labelFilter = New LabelGroupFilter()
-	Dim textCondition = New TextCondition()
-	textCondition.Pattern = "c"
-	textCondition.Comparison = TextComparison.Contains
-	
-	Dim setCondition = New SetCondition()
-	setCondition.Comparison = SetComparison.Includes
-	setCondition.Items.Add("Pen")
-	setCondition.Items.Add("Pencil")
-	
-	Dim itemsFilterCondition = New ItemsFilterCondition()
-	itemsFilterCondition.Condition = textCondition
-	itemsFilterCondition.DistinctCondition = setCondition
-	
-	labelFilter.Condition = itemsFilterCondition
-	propertyGroupDescription.GroupFilter = labelFilter
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_4-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_4-vb' />
 
 This way the only visible item will be Pencil as it is part of the SetCondition and also has "c" in its name which satisfies the text condition.
 
@@ -229,46 +137,12 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 
 
 
-```XAML
-	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
-	    <pivot:DateTimeGroupDescription.GroupFilter>
-	        <pivot:ValueGroupFilter AggregateIndex="0">
-	            <pivot:ValueGroupFilter.Condition>
-	                <pivot:IntervalCondition Condition="IsBetween" From="13" To="15"/>
-	            </pivot:ValueGroupFilter.Condition>
-	        </pivot:ValueGroupFilter>
-	    </pivot:DateTimeGroupDescription.GroupFilter>
-	</pivot:DateTimeGroupDescription>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_5-xaml' />
 
 
 
-```C#
-	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
-	dateTimeGroupDescription.PropertyName = "Date";
-	dateTimeGroupDescription.Step = DateTimeStep.Month;
-	IntervalCondition intervalCondition = new IntervalCondition();
-	intervalCondition.Condition = IntervalComparison.IsBetween;
-	intervalCondition.From = "13";
-	intervalCondition.To = "15";
-	ValueGroupFilter valueGroupFilter = new ValueGroupFilter();
-	valueGroupFilter.Condition = intervalCondition;
-	valueGroupFilter.AggregateIndex = 0;
-	dateTimeGroupDescription.GroupFilter = valueGroupFilter;
-```
-```VB.NET
-	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
-	dateTimeGroupDescription.PropertyName = "Date"
-	dateTimeGroupDescription.Step = DateTimeStep.Month
-	Dim intervalCondition As New IntervalCondition()
-	intervalCondition.Condition = IntervalComparison.IsBetween
-	intervalCondition.From = "13"
-	intervalCondition.To = "15"
-	Dim valueGroupFilter As New ValueGroupFilter()
-	valueGroupFilter.Condition = intervalCondition
-	valueGroupFilter.AggregateIndex = 0
-	dateTimeGroupDescription.GroupFilter = valueGroupFilter
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_6-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_6-vb' />
 
 ## Top 10 filter
 
@@ -296,36 +170,12 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 
 
 
-```XAML
-	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
-	    <pivot:DateTimeGroupDescription.GroupFilter>
-	        <pivot:GroupsCountFilter AggregateIndex="0" Count="4" Selection="Top" />
-	    </pivot:DateTimeGroupDescription.GroupFilter>
-	</pivot:DateTimeGroupDescription>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_7-xaml' />
 
 
 
-```C#
-	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
-	dateTimeGroupDescription.PropertyName = "Date";
-	dateTimeGroupDescription.Step = DateTimeStep.Month;
-	GroupsCountFilter countFilter = new GroupsCountFilter();
-	countFilter.Count = 4;
-	countFilter.Selection = SortedListSelection.Top;
-	countFilter.AggregateIndex = 0;
-	dateTimeGroupDescription.GroupFilter = countFilter;
-```
-```VB.NET
-	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
-	dateTimeGroupDescription.PropertyName = "Date"
-	dateTimeGroupDescription.Step = DateTimeStep.Month
-	Dim countFilter As New GroupsCountFilter()
-	countFilter.Count = 4
-	countFilter.Selection = SortedListSelection.Top
-	countFilter.AggregateIndex = 0
-	dateTimeGroupDescription.GroupFilter = countFilter
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_8-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-filtering-block_8-vb' />
 
 ## Applying filter at runtime
 

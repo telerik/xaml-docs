@@ -43,9 +43,8 @@ You can add RadDateTimePicker to your application manually by writing the XAML c
 
 __Example 1: Adding RadDateTimePicker in XAML__
 
-```XAML
-	<telerik:RadDateTimePicker />
-```
+<snippet id='raddatetimepicker-getting-started-example_1_adding_raddatetimepicker_in_xaml-xaml' />
+
 
 >In order to create the __RadDateTimePicker__ control you have to include the following namespace declaration:
 	_xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"_
@@ -54,12 +53,10 @@ You can also create the __RadDateTimePicker__ in code-behind:
 
 __Example 2: Adding RadDateTimePicker in code-behind__
 
-```C#
-	RadDateTimePicker radDateTimePicker = new RadDateTimePicker();
-```
-```VB.NET
-	Dim radDateTimePicker As New RadDateTimePicker()
-```
+<snippet id='raddatetimepicker-getting-started-example_2_adding_raddatetimepicker_in_code_behind-cs' />
+
+<snippet id='raddatetimepicker-getting-started-example_2_adding_raddatetimepicker_in_code_behind-vb' />
+
 
 If you run the application now you will see the default __RadDateTimePicker__ control with the default watermark content. Clicking on the control's drop down button will display a date and time representations from which you can select a single value.
 
@@ -78,24 +75,17 @@ You can get the selected value using the following properties:
 * __SelectedTime__: The __TimeOfDay__ part of the currently selected value.
 
 __Example 3: Getting the selected values__
-```C#
-	DateTime? userSelectedValue = radDateTimePicker.SelectedValue;
-	DateTime? userSelectedDate = radDateTimePicker.SelectedDate;
-	TimeSpan? userSelectedTime = radDateTimePicker.SelectedTime;
-```
-```VB.NET
-	Dim userSelectedValue As System.Nullable(Of DateTime) = radDateTimePicker.SelectedValue
-	Dim userSelectedDate As System.Nullable(Of DateTime) = radDateTimePicker.SelectedDate
-	Dim userSelectedTime As System.Nullable(Of TimeSpan) = radDateTimePicker.SelectedTime
-```
+<snippet id='raddatetimepicker-getting-started-example_3_getting_the_selected_values-cs' />
+
+<snippet id='raddatetimepicker-getting-started-example_3_getting_the_selected_values-vb' />
+
 
 Normally you would want to bind the __SelectedValue__ property to your data as demonstrated in **Example 4**.
 
 __Example 4: Binding SelectedValue__
 
-```XAML
-	<telerik:RadDateTimePicker SelectedValue="{Binding Established}" />
-```
+<snippet id='raddatetimepicker-getting-started-example_4_binding_selectedvalue-xaml' />
+
 
 ## Manually Updating the Bound Property
 
@@ -103,12 +93,10 @@ In case the bound property value needs to be manually updated at some state, the
 
 __Example 5: Manually updating the bound property__
 
-```C#
-	this.DateTimePicker.DateTimeText = this.DateTimePicker.CurrentDateTimeText;
-```
-```VB.NET
-	Me.DateTimePicker.DateTimeText = Me.DateTimePicker.CurrentDateTimeText
-```
+<snippet id='raddatetimepicker-getting-started-example_5_manually_updating_the_bound_property-cs' />
+
+<snippet id='raddatetimepicker-getting-started-example_5_manually_updating_the_bound_property-vb' />
+
 
 ## Setting a Theme
 
@@ -127,17 +115,8 @@ To change the theme, you can follow the steps below:
 __Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 5: Merge the ResourceDictionaries__  
-```XAML
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-```
+<snippet id='raddatetimepicker-getting-started-example_5_merge_the_resourcedictionaries-xaml' />
+
 
 __Figure 2__ shows __RadDateTimePicker__ with the **Windows8** theme applied.
 	

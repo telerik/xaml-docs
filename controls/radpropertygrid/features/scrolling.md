@@ -24,29 +24,7 @@ You can define RadPropertyGrid similar to:
 
 __Example 1: Defining RadPropertyGrid with manually defined PropertyDefinitions__
 
-```XAML
-	<Grid>
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="*"/>
-	        <RowDefinition Height="Auto" />
-	    </Grid.RowDefinitions>
-	    <telerik:RadPropertyGrid Height="200" x:Name="PropertyGrid1" RenderMode="Flat" AutoGeneratePropertyDefinitions="False">
-	        <telerik:RadPropertyGrid.PropertyDefinitions>
-	            <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="FirstName"/>
-	            <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="LastName"/>
-	            <telerik:PropertyDefinition Binding="{Binding Ocupation}" GroupName="Occupation" DisplayName="Occupation"/>
-	            <telerik:PropertyDefinition Binding="{Binding Salary}" GroupName="Occupation" DisplayName="Salary"/>
-	            <telerik:PropertyDefinition Binding="{Binding IsMarried}" GroupName="Personal" DisplayName="IsMarried"/>
-	        </telerik:RadPropertyGrid.PropertyDefinitions>
-	    </telerik:RadPropertyGrid>
-	    <Button Name="Button1"
-	Grid.Row="1"
-	Content="Scroll field into view "
-	Click="Button1_Click"
-	Margin="5"
-	HorizontalAlignment="Left"/>
-	</Grid>
-```
+<snippet id='radpropertygrid-features-scrolling-block_1-xaml' />
 
 As to assigning the __Item of RadPropertyGrid__, please check the __Binding RadPropertyGrid to an item__ section in [Getting Started with RadPropertyGrid]({%slug radpropertygrid-getting-started-getting-started%}) help article.
 
@@ -60,24 +38,8 @@ Then, click on __Scroll field into view__ button and execute the following code:
 
 __Example 2: Scrolling to a particular PropertyDefinition and selecting it__
 
-```C#
-	private void Button1_Click(object sender, RoutedEventArgs e)
-	{
-	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x => x.DisplayName == "IsMarried").FirstOrDefault();
-	    if (propertyDefinition != null)
-	    {
-	        PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, new Action<PropertyGridField>(f => f.IsSelected = true));
-	    }
-	}
-```
-```VB
-	Private Sub Button1_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	    Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
-	    If propertyDefinition IsNot Nothing Then
-	        PropertyGrid1.ScrollIntoViewAsync(propertyDefinition, New Action(Of PropertyGridField)(Sub(f) f.IsSelected = True))
-	    End If
-	End Sub
-```
+<snippet id='radpropertygrid-features-scrolling-block_2-cs' />
+<snippet id='radpropertygrid-features-scrolling-block_3-vb' />
 
 You can observe the result on __Figure 2__.
 

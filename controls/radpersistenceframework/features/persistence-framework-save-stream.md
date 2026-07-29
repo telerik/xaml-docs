@@ -19,70 +19,18 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 For the purpose of this tutorial, let's define the following __RadTreeView__ control:		
 
 
-```XAML
-	<telerik:RadTreeView x:Name="treeView">
-	    <telerik:RadTreeViewItem Header="Beverages">
-	        <telerik:RadTreeViewItem Header="Chai" />
-	        <telerik:RadTreeViewItem Header="Chang" />
-	        <telerik:RadTreeViewItem Header="Ipoh Coffee" />
-	        <telerik:RadTreeViewItem Header="Chartreuse verte" />
-	        <telerik:RadTreeViewItem Header="Sasquatch Ale" />
-	    </telerik:RadTreeViewItem>
-	    <telerik:RadTreeViewItem Header="Condiments">
-	        <telerik:RadTreeViewItem Header="Aniseed Syrup" />
-	        <telerik:RadTreeViewItem Header="Genen Shouyu" />
-	        <telerik:RadTreeViewItem Header="Gula Malacca" />
-	        <telerik:RadTreeViewItem Header="Louisiana Hot Spiced Okra" />
-	        <telerik:RadTreeViewItem Header="Louisiana Fiery Hot Pepper Sauce" />
-	    </telerik:RadTreeViewItem>
-	    <telerik:RadTreeViewItem Header="Confections">
-	        <telerik:RadTreeViewItem Header="Teatime Chocolate Biscuits" />
-	        <telerik:RadTreeViewItem Header="Sir Rodney's Marmalade" />
-	        <telerik:RadTreeViewItem Header="Zaanse koeken" />
-	        <telerik:RadTreeViewItem Header="Chocolade" />
-	        <telerik:RadTreeViewItem Header="Maxilaku" />
-	        <telerik:RadTreeViewItem Header="Valkoinen suklaa" />
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radpersistenceframework-features-persistence-framework-save-stream-block_1-xaml' />
 
 In order to persist the __RadTreeView__'s properties in a stream, you need to create an instance of the __PersistenceManager__:		
 
 
-```C#
-	private Stream stream;
-	private void Save(object sender, RoutedEventArgs e)
-	{
-	 PersistenceManager manager = new PersistenceManager();
-	 stream = manager.Save(treeView);
-	}
-```
-```VB.NET
-	Private stream As Stream
-	
-	Private Sub Save(sender As Object, e As RoutedEventArgs)
-		Dim manager As New PersistenceManager()
-		stream = manager.Save(treeView)
-	End Sub
-```
+<snippet id='radpersistenceframework-features-persistence-framework-save-stream-block_2-cs' />
+<snippet id='radpersistenceframework-features-persistence-framework-save-stream-block_2-vb' />
 
 The persisted visual state of the __RadTreeView__ control can be restored using the __PersistencaManager__.__Load__ method:		
 
 
-```C#
-	private void Load(object sender, RoutedEventArgs e)
-	{
-	 PersistenceManager manager = new PersistenceManager();
-	 stream.Position = 0L;
-	 manager.Load(treeView, stream);
-	}
-```
-```VB.NET
-	Private Sub Load(sender As Object, e As RoutedEventArgs)
-		Dim manager As New PersistenceManager()
-	        stream.Position = 0L
-		manager.Load(treeView, stream)
-	End Sub
-```
+<snippet id='radpersistenceframework-features-persistence-framework-save-stream-block_3-cs' />
+<snippet id='radpersistenceframework-features-persistence-framework-save-stream-block_3-vb' />
 
 >tip Please keep in mind that before loading the persisted data from a stream, you need to make sure that the stream's position matches the beginning of the persisted bytes. In case when the persisted data is saved in a new stream, before loading it, you should set the __Stream.Position__ to __0L__.

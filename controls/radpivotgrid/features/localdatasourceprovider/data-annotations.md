@@ -18,27 +18,8 @@ Let's create a simple application that will show data for different orders. Each
 
 
 
-```C#
-	public class Order
-	{
-	    public DateTime Date { get; set; }
-	    public string Product { get; set; }
-	    public int Quantity { get; set; }
-	    public double Net { get; set; }
-	    public string Promotion { get; set; }
-	    public string Advertisement { get; set; }
-	}
-```
-```VB.NET
-	Public Class Order
-		Public Property [Date]() As Date
-		Public Property Product() As String
-		Public Property Quantity() As Integer
-		Public Property Net() As Double
-		Public Property Promotion() As String
-		Public Property Advertisement() As String
-	End Class
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_1-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_1-vb' />
 
 And here is how __RadPivotGrid__ and __RadPivotFieldList__ will look like after we have added some sample data and group descriptions:
 
@@ -61,53 +42,22 @@ With Data Annotations you can apply attributes to the members of the class that 
 
 
 
-```C#
-	//Rename the Date property to Month in the UI
-	[Display (Name="Month")]
-	public DateTime Date { get; set; }
-	
-	//Hide Product from the UI
-	[Display (AutoGenerateField=false)]
-	public string Product { get; set; }
-```
-```VB.NET
-	<Display(Name:="Month")> _
-	Public Property [Date]() As Date
-	
-	'Hide Product from the UI
-	<Display(AutoGenerateField:=False)> _
-	Public Property Product() As String
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_2-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_2-vb' />
 
 * __Browsable__ - with this attribute you can define whether an item should be visible or not. There's no difference between setting browsable value to false or AutoGenerateField of Display attribute to false.             
 
 
 
-```C#
-	//Hide Product from the UI
-	[Browsable (false) ]
-	public string Product { get; set; }
-```
-```VB.NET
-	'Hide Product from the UI
-	<Browsable(False)> _
-	Public Property Product() As String
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_3-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_3-vb' />
 
 * __DisplayName__ - the value of the attribute will be shown in __RadPivotGrid__ and __RadPivotFieldList__ instead of PropertyName. There is no difference in the final result when you use DisplayName and Display attribute (setting Name property). This is an oboslete attribute and we suggest you to use Display instead of it.
 
 
 
-```C#
-	//Rename the Date property to Month in the UI
-	[DisplayName ("Month")]
-	public DateTime Date { get; set; }
-```
-```VB.NET
-	'Rename the Date property to Month in the UI
-	<DisplayName("Month")> _
-	Public Property [Date]() As Date
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_4-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_4-vb' />
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
@@ -115,87 +65,23 @@ With Data Annotations you can apply attributes to the members of the class that 
 
 
 
-```C#
-	//Rename the Date property to Month in the UI
-	[Display (Name="Month")]
-	public DateTime Date { get; set; }
-	
-	//Hide Product from the UI
-	[Display (AutoGenerateField=false)]
-	public string Product { get; set; }
-```
-```VB.NET
-	<Display(Name:="Month")> _
-	Public Property [Date]() As Date
-	
-	'Hide Product from the UI
-	<Display(AutoGenerateField:=False)> _
-	Public Property Product() As String
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_5-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_5-vb' />
 
 * __Browsable__ - with this attribute you can define wheather a property will be visible or not. There's no difference between setting browsable value to false or AutoGenerateField of Display attribute to false.             
 
 
 
-```C#
-	//Hide Product from the UI
-	[Browsable (false) ]
-	public string Product { get; set; }
-```
-```VB.NET
-	'Hide Product from the UI
-	<Browsable(False)> _
-	Public Property Product() As String
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_6-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_6-vb' />
 {% endif %}
 
 So let's modify our simple Order class and see the result in __RadPivotGrid__ and __RadPivotFieldList__.        
 
 
 
-```C#
-	public class Order
-	{
-	    //Rename the Date property to Month in the UI
-	    [Display (Name="Month")]
-	    public DateTime Date { get; set; }
-	
-	    public string Product { get; set; }
-	
-	    //Hide Quantiy from the UI
-	    [Display (AutoGenerateField=false)]
-	    public int Quantity { get; set; }
-	
-	    public double Net { get; set; }
-	
-	    public string Promotion { get; set; }
-	
-	    //Hide Product from the UI
-	    [Browsable(false)]
-	    public string Advertisement { get; set; }
-	}
-```
-```VB.NET
-	Public Class Order
-		'Rename the Date property to Month in the UI
-		<Display(Name:="Month")> _
-		Public Property [Date]() As Date
-	
-		Public Property Product() As String
-	
-		'Hide Quantiy from the UI
-		<Display(AutoGenerateField:=False)> _
-		Public Property Quantity() As Integer
-	
-		Public Property Net() As Double
-	
-		Public Property Promotion() As String
-	
-		'Hide Product from the UI
-		<Browsable(False)> _
-		Public Property Advertisement() As String
-	End Class
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_7-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-data-annotations-block_7-vb' />
 
 And here is the new result:
 

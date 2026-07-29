@@ -22,29 +22,8 @@ The __ScatterSplineAreaSeries__ is visualized on the screen as a smooth line con
 You can use the definition from __Example 1__ to display a ScatterSplineAreaSeries.
 
 __Example 1: Declaring a ScatterSplineAreaSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8">
-	<telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:LinearAxis />
-	</telerik:RadCartesianChart.HorizontalAxis>
-	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis />
-	</telerik:RadCartesianChart.VerticalAxis>
-	<telerik:RadCartesianChart.Series>
-		<telerik:ScatterSplineAreaSeries>
-			<telerik:ScatterSplineAreaSeries.DataPoints>
-				<telerik:ScatterDataPoint XValue="0" YValue="2" />
-				<telerik:ScatterDataPoint XValue="1" YValue="5" />
-				<telerik:ScatterDataPoint XValue="2" YValue="3" />
-				<telerik:ScatterDataPoint XValue="3" YValue="10" />
-				<telerik:ScatterDataPoint XValue="4" YValue="9" />
-				<telerik:ScatterDataPoint XValue="5" YValue="7" />
-				<telerik:ScatterDataPoint XValue="6" YValue="1" />
-			</telerik:ScatterSplineAreaSeries.DataPoints>
-		</telerik:ScatterSplineAreaSeries>
-	</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-scattersplineareaseries-example_1_declaring_a_scattersplineareaseries_in_xaml-xaml' />
+
 
 #### __Figure 1: ScatterSplineAreaSeries visual appearance__
 ![radchartview-series-scattersplineareaseries](images/radchartview-series-scattersplineareaseries.png)
@@ -76,25 +55,12 @@ You can use the YValueBinding and XValueBinding properties of the ScatterSplineA
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public double XValue { get; set; }
-        public double YValue { get; set; }
-    }
+<snippet id='radchartview-series-cartesianchart-series-area-series-scattersplineareaseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { XValue = 0, YValue = 2},
-		//....
-	};
-```	
 
 __Example 3: Specify a ScatterSplineAreaSeries in XAML__
-```XAML	
-	<telerik:ScatterSplineAreaSeries ItemsSource="{Binding}" YValueBinding="YValue" XValueBinding="XValue"/>
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-scattersplineareaseries-example_3_specify_a_scattersplineareaseries_in_xaml-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -103,9 +69,8 @@ __Example 3: Specify a ScatterSplineAreaSeries in XAML__
 The spline-type series provide two properties allowing to control the additional points calculated for the spline of the line. The tension is controlled via the `SplineTension` property. The tension works with relative values between 0 and 1. The default tension is set to `0.5d`.
 
 __Example 4: Setting SplineTension__
-```XAML	
-	 <telerik:ScatterSplineAreaSeries SplineTension="0.4" />
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-scattersplineareaseries-example_4_setting_splinetension-xaml' />
+
 
 __Spline tension 0.8 (left) and 0.4 (right)__
 
@@ -114,9 +79,8 @@ __Spline tension 0.8 (left) and 0.4 (right)__
 Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calculated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.35. The default value is `0.03d`.
 
 __Example 5: Setting SplinePointsDistanceFactor__
-```XAML	
-	 <telerik:ScatterSplineAreaSeries SplinePointsDistanceFactor="0.18" />
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-scattersplineareaseries-example_5_setting_splinepointsdistancefactor-xaml' />
+
 
 __SplinePointsDistanceFactor set to 0.18__
 

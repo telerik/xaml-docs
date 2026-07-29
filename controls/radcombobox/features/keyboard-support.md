@@ -48,9 +48,8 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 	__Example 1: RadComboBox with TabNavigationExtensions.IsTabStop__
 
-	```XAML
-		<telerik:RadComboBox IsEditable="True" telerik:TabNavigationExtensions.IsTabStop="False" />
-	```
+	<snippet id='radcombobox-features-keyboard-support-example_1_radcombobox_with_tabnavigationextensions_istabstop-xaml' />
+
 
 * The __TabIndex__ property defines the index of the control in the tab navigation cycle. The lower the number is, the earlier the control will be focused while navigating using the Tab key. 
 

@@ -29,68 +29,7 @@ The following tutorial will guide you how to bind a __RadTaskBoard__ to a collec
 First, we will create our data, which is going to be used to populate the RadTaskBoard control.
 
 #### __[C#] Example 1: Creating the ViewModel
-```C#
-    public class MainViewModel : ViewModelBase
-    {
-        public ObservableCollection<TaskBoardCardModel> Data { get; set; }
-
-        public MainViewModel()
-        {
-            Data = GetTasks();
-        }
-
-        public ObservableCollection<TaskBoardCardModel> GetTasks()
-        {
-            ObservableCollection<TaskBoardCardModel> tasks = new ObservableCollection<TaskBoardCardModel>();
-            TaskBoardCardModel task = new TaskBoardCardModel()
-            {
-                Assignee = "Bella",
-                Title = "RadDocking: Unit Test",
-                Description = "Add Unit Tests",
-                State = "Not Done",
-                CategoryName = "Low",
-                IconPath = @"/Project_NameSpace;component/Images/Bella.jpg"
-
-            };
-            task.Tags.Add(new TagModel() { TagName = "Important", TagColor = Brushes.Red });
-            task.Tags.Add(new TagModel() { TagName = "2", TagColor = Brushes.Yellow });
-            task.Tags.Add(new TagModel() { TagName = DateTime.Now.ToShortDateString(), TagColor = Brushes.Green });
-            tasks.Add(task);
-
-            task = new TaskBoardCardModel()
-            {
-                Assignee = "Tomas",
-                Title = "RadPanelBar: IsExpanded property is not respected",
-                Description = "Fix Bug",
-                State = "In Progress",
-                CategoryName = "Medium",
-                IconPath = @"/Project_NameSpace;component/Images/Tomas.jpg"
-            };
-            task.Tags.Add(new TagModel() { TagName = "R1", TagColor = Brushes.Blue });
-            tasks.Add(task);
-
-            task = new TaskBoardCardModel()
-            {
-                Assignee = "Peter",
-                Title = "RadChartView: Implement Animation Feature",
-                Description = "Implement animmations for all series in RadChartView.",
-                State = "Done",
-                CategoryName = "High",
-                IconPath = @"/Project_NameSpace;component/Images/Peter.jpg"
-            };
-            task.Tags.Add(new TagModel() { TagName = "Complex", TagColor = Brushes.Red });
-            tasks.Add(task);
-
-            return tasks;
-        }
-    }
-
-    public class TagModel
-    {
-        public string TagName { get; set; }
-        public Brush TagColor { get; set; }
-    }
-```
+<snippet id='radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel-block_1-cs' />
 
 Next, we can go ahead and define the RadTaskBoard in our view.
 
@@ -98,41 +37,7 @@ Next, we can go ahead and define the RadTaskBoard in our view.
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
 __Example 2: Defining RadTaskBoard in XAML__
-```XAML
-    <telerik:RadTaskBoard x:Name="taskBoard" ItemsSource="{Binding Data}" GroupMemberPath="State">
-        <telerik:RadTaskBoard.DataContext>
-            <local:MainViewModel />
-        </telerik:RadTaskBoard.DataContext>
-		<telerik:RadTaskBoard.Categories>
-			<taskBoard:CategoryCollection>
-				<taskBoard:CategoryModel CategoryName="Low" CategoryBrush="Green"/>
-				<taskBoard:CategoryModel CategoryName="Medium" CategoryBrush="Yellow"/>
-				<taskBoard:CategoryModel CategoryName="High" CategoryBrush="Red"/>
-			</taskBoard:CategoryCollection>
-		</telerik:RadTaskBoard.Categories>		
-        <telerik:RadTaskBoard.ItemTemplate>
-            <DataTemplate>
-                <telerik:RadTaskBoardCard Assignee="{Binding Assignee}"
-                                            CategoryName="{Binding CategoryName}"
-                                            ShowCategoryIndicator="True"
-                                            Content="{Binding Description}"
-                                            Header="{Binding Title}"
-                                            Icon="{Binding IconPath}"
-                                            Tags="{Binding Tags}">
-                    <telerik:RadTaskBoardCard.TagTemplate>
-                        <DataTemplate>
-                            <Border Background="{Binding TagColor}"
-                                    BorderThickness="1"
-                                    Margin="0 0 5 2">
-                                <TextBlock Text="{Binding TagName}" Padding="4 2" Foreground="White"/>
-                            </Border>
-                        </DataTemplate>
-                    </telerik:RadTaskBoardCard.TagTemplate>
-                </telerik:RadTaskBoardCard>
-            </DataTemplate>
-        </telerik:RadTaskBoard.ItemTemplate>
-	</telerik:RadTaskBoard>
-```
+<snippet id='radtaskboard-populating-with-data-data-binding-to-taskboardcardmodel-block_2-xaml' />
 
 >Note that you do not need to explicitly set the **ItemTemplate** property, but we do so in this example to demonstrate how you can apply customizations to the **RadTaskBoardCard** such as defining a **TagTemplate**.
 

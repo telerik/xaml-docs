@@ -35,44 +35,22 @@ To define columns in the RadGanttView control, you have to add them to the Colum
 
 __Example 1: Declaring RadGanttView__
 
-```XAML
-	<telerik:RadGanttView TasksSource="{Binding Tasks}"
-	       VerticalAlignment="Top"
-	       VisibleRange="{Binding VisibleTime}">
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-columns-types-example_1_declaring_radganttview-xaml' />
+
 
 * Then define the required columns in the Columns collection of the control:
 
 __Example 2: Adding columns__
 
-```XAML
-	<telerik:RadGanttView TasksSource="{Binding Tasks}"
-	 VerticalAlignment="Top"
-	    VisibleRange="{Binding VisibleTime}">
-	    <telerik:RadGanttView.Columns>
-	        <telerik:TreeColumnDefinition/>
-	        <telerik:ColumnDefinition/>
-	        <telerik:ColumnDefinition/>
-	    </telerik:RadGanttView.Columns>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-columns-types-example_2_adding_columns-xaml' />
+
 
 * Finally set the Header, MemberBinding, and other required properties of the columns: 
 
 __Example 3: Setting column properties__
 
-```XAML
-	<telerik:RadGanttView TasksSource="{Binding Tasks}"
-	             VerticalAlignment="Top"
-	             VisibleRange="{Binding VisibleTime}">
-	    <telerik:RadGanttView.Columns>
-	        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-	    </telerik:RadGanttView.Columns>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-columns-types-example_3_setting_column_properties-xaml' />
+
 
 __Figure 1__ shows an example of defined columns.
 
@@ -88,15 +66,8 @@ Let us, for example, set the first "Title" column to be frozen, as shown in __Ex
 
 __Example 4: Setting IsFrozenColumn property__
 
-```XAML
-	<telerik:RadGanttView TasksSource="{Binding Tasks}">
-	<telerik:RadGanttView.Columns>
-	<telerik:TreeColumnDefinition Header="Title" IsFrozenColumn="True" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent" />
-	<telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-	<telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-	</telerik:RadGanttView.Columns>  
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-columns-types-example_4_setting_isfrozencolumn_property-xaml' />
+
 
 __Figure 2__ illustrates how the "Title" column stays static while scrolling horizontally.
 

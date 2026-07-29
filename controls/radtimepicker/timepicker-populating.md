@@ -36,18 +36,12 @@ The __SelectedTime__ property holds the selected time. Examples 1 and 2 demonstr
 
 __Example 1: Setting the SelectedTime in xaml__
 
-```XAML
- 	<telerik:RadTimePicker x:Name="timePicker" SelectedTime="15:00" />
-```
+<snippet id='radtimepicker-timepicker-populating-block_1-xaml' />
 
 __Example 2: Setting the SelectedTime in code__
 
-```C#
-	timePicker.SelectedTime = new TimeSpan(15,0,0);
-```
-```VB.NET
-	timePicker.SelectedTime = New TimeSpan(15,0,0)
-```
+<snippet id='radtimepicker-timepicker-populating-block_2-cs' />
+<snippet id='radtimepicker-timepicker-populating-block_3-vb' />
 
 > In order to take some action when the SelectedTime is changed, you can handle the __SelectionChanged__ event. You can check out all of the available events in the [Events]({%slug raddatetimepicker-events%}) article of the RadDateTimePicker.
 
@@ -57,9 +51,7 @@ You can limit the times that can be selected by setting the __StartTime__ and __
 
 __Example 2: Setting the StartTime, EndTime and TimeInterval__
 
-```XAML
-	<telerik:RadTimePicker x:Name="timePicker" TimeInterval="0:30:0" StartTime="0:0:0" EndTime="7:0:0" />
-```
+<snippet id='radtimepicker-timepicker-populating-block_4-xaml' />
 
 ## Setting the ClockItemsSource
 
@@ -67,44 +59,15 @@ You can also populate the RadTimePicker from code behind by setting its ClockIte
 
 __Example 3: Setting the ClockItemsSource__
 
-```C#
-	public DataBinding()
-	{
-	    this.radTimePicker.ClockItemsSource = this.LoadDataObjects();
-	}
-	public ObservableCollection<TimeSpan> LoadDataObjects()
-	{
-	    ObservableCollection<TimeSpan> times = new ObservableCollection<TimeSpan>()
-	    { 
-	       new TimeSpan(9,0,0),
-	       new TimeSpan(10,0,0),
-	       new TimeSpan(10,5,0),
-	       new TimeSpan(10,22,0),
-	    };
-	    return times;
-	}
-```
-```VB.NET
-	Public Sub New()
-		Me.radTimePicker.ClockItemsSource = Me.LoadDataObjects()
-	End Sub
-	Public Function LoadDataObjects() As ObservableCollection(Of TimeSpan)
-		Dim times As New ObservableCollection(Of TimeSpan)() From {
-			New TimeSpan(9,0,0),
-			New TimeSpan(10,0,0),
-			New TimeSpan(10,5,0),
-			New TimeSpan(10,22,0)
-		}
-		Return times
-	End Function
-```
+<snippet id='radtimepicker-timepicker-populating-block_5-cs' />
+<snippet id='radtimepicker-timepicker-populating-block_6-vb' />
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
 * [Telerik UI for WPF TimePicker Component](https://www.telerik.com/products/wpf/datetimepicker.aspx)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Installation]({%slug installation-guide%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
@@ -117,4 +80,3 @@ __Example 3: Setting the ClockItemsSource__
 * [Layout Support]({%slug radtimepicker-layout-support%})
 * [Keyboard Support]({%slug raddatetimepicker-features-keyboard-support%})
 * [Parsing Without Separators]({%slug raddatetimepicker-features-parsing-without-separators%}#parsing-the-time-part)
-

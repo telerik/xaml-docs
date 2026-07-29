@@ -34,9 +34,7 @@ Read more about NuGet installation in the [Installing UI for WPF from NuGet Pack
 ## Adding RadCarousel to the Project
 
 __Example 1: Adding RadGridView to application__
-```XAML
-	<telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />	
-```
+<snippet id='radcarousel-carousel-getting-started-example_1_adding_radgridview_to_application-xaml' />
 
 ## Binding RadCarousel to a Collection of Custom Objects
 
@@ -44,178 +42,25 @@ For the purpose of this tutorial we will create a new **Employee** class with a 
 
 __Example 2: The Employee class__
 
-```C#
-	public class Employee
-	{
-	    public string FirstName
-	    {
-	        get;
-	        set;
-	    }
-	    public string LastName
-	    {
-	        get;
-	        set;
-	    }
-	    public int Age
-	    {
-	        get;
-	        set;
-	    }
-	    public string Position
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class Employee
-	    Public Property FirstName() As String
-	        Get
-	            Return m_FirstName
-	        End Get
-	        Set
-	            m_FirstName = Value
-	        End Set
-	    End Property
-	    Private m_FirstName As String
-	    Public Property LastName() As String
-	        Get
-	            Return m_LastName
-	        End Get
-	        Set
-	            m_LastName = Value
-	        End Set
-	    End Property
-	    Private m_LastName As String
-	    Public Property Age() As Integer
-	        Get
-	            Return m_Age
-	        End Get
-	        Set
-	            m_Age = Value
-	        End Set
-	    End Property
-	    Private m_Age As Integer
-	    Public Property Position() As String
-	        Get
-	            Return m_Position
-	        End Get
-	        Set
-	            m_Position = Value
-	        End Set
-	    End Property
-	    Private m_Position As String
-	End Class
-```
+<snippet id='radcarousel-carousel-getting-started-example_2_the_employee_class-cs' />
+<snippet id='radcarousel-carousel-getting-started-example_2_the_employee_class-vb' />
+
 
 Furthermore, as some data will be needed, we will create **EmployeeService** class that provides a static **GetEmployees()** method:
 
 __Example 3: The EmployeeService class__
 
-```C#
-	public class EmployeeService
-	{
-	    public static ObservableCollection<Employee> GetEmployees()
-	    {
-	        ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
-	        Employee employee = new Employee();
-	        employee.FirstName = "Margaret";
-	        employee.LastName = "Peacock";
-	        employee.Position = "Sales Representative";
-	        employee.Age = 24;
-	        employees.Add(employee);
-	        employee = new Employee();
-	        employee.FirstName = "Steven";
-	        employee.LastName = "Buchanan";
-	        employee.Position = "Sales Manager";
-	        employee.Age = 44;
-	        employees.Add(employee);
-	        employee = new Employee();
-	        employee.FirstName = "Michael";
-	        employee.LastName = "Suyama";
-	        employee.Position = "Sales Representative";
-	        employee.Age = 33;
-	        employees.Add(employee);
-	        employee = new Employee();
-	        employee.FirstName = "Robert";
-	        employee.LastName = "King";
-	        employee.Position = "Sales Representative";
-	        employee.Age = 28;
-	        employees.Add(employee);
-	        employee = new Employee();
-	        employee.FirstName = "Laura";
-	        employee.LastName = "Callahan";
-	        employee.Position = "Inside Sales Coordinator";
-	        employee.Age = 26;
-	        employees.Add(employee);
-	        employee = new Employee();
-	        employee.FirstName = "Anne";
-	        employee.LastName = "Dodsworth";
-	        employee.Position = "Sales Representative";
-	        employee.Age = 30;
-	        employees.Add(employee);
-	
-	        return employees;
-	    }
-	}
-```
-```VB.NET
-	Public Class EmployeeService
-	    Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
-	        Dim employees As New ObservableCollection(Of Employee)()
-	        Dim employee As New Employee()
-	        employee.FirstName = "Margaret"
-	        employee.LastName = "Peacock"
-	        employee.Position = "Sales Representative"
-	        employee.Age = 24
-	        employees.Add(employee)
-	        employee = New Employee()
-	        employee.FirstName = "Steven"
-	        employee.LastName = "Buchanan"
-	        employee.Position = "Sales Manager"
-	        employee.Age = 44
-	        employees.Add(employee)
-	        employee = New Employee()
-	        employee.FirstName = "Michael"
-	        employee.LastName = "Suyama"
-	        employee.Position = "Sales Representative"
-	        employee.Age = 33
-	        employees.Add(employee)
-	        employee = New Employee()
-	        employee.FirstName = "Robert"
-	        employee.LastName = "King"
-	        employee.Position = "Sales Representative"
-	        employee.Age = 28
-	        employees.Add(employee)
-	        employee = New Employee()
-	        employee.FirstName = "Laura"
-	        employee.LastName = "Callahan"
-	        employee.Position = "Inside Sales Coordinator"
-	        employee.Age = 26
-	        employees.Add(employee)
-	        employee = New Employee()
-	        employee.FirstName = "Anne"
-	        employee.LastName = "Dodsworth"
-	        employee.Position = "Sales Representative"
-	        employee.Age = 30
-	        employees.Add(employee)
-	        Return employees
-	    End Function
-	End Class
-```
+<snippet id='radcarousel-carousel-getting-started-example_3_the_employeeservice_class-cs' />
+<snippet id='radcarousel-carousel-getting-started-example_3_the_employeeservice_class-vb' />
+
 
 Once all the data is prepared, we may set the RadCarousel's **ItemsSource**:
 
 __Example 4: Setting RadCarousel's ItemsSource__
 
-```C#
-	this.MyCarousel.ItemsSource = EmployeeService.GetEmployees();
-```
-```VB.NET
-	Me.MyCarousel.ItemsSource = EmployeeService.GetEmployees()
-```
+<snippet id='radcarousel-carousel-getting-started-example_4_setting_radcarousel_s_itemssource-cs' />
+<snippet id='radcarousel-carousel-getting-started-example_4_setting_radcarousel_s_itemssource-vb' />
+
 
 After running the application, you will see the following result:
 
@@ -229,64 +74,9 @@ Generally, RadCarousel may be easily used for displaying images and navigating t
 
 __Example 5: Setting RadCarousel's ItemsSource to a list of images__
 
-```C#
-	List<Image> myImages = new List<Image>();
-	Image myImage = new Image();
-	myImage.Source = new BitmapImage(new Uri("/Images/nature1.jpg", UriKind.Relative));
-	myImage.Height = 200;
-	myImage.Width = 200;
-	myImages.Add(myImage);
-	Image myImage1 = new Image();
-	myImage1.Source = new BitmapImage(new Uri("/Images/nature2.jpg", UriKind.Relative));
-	myImage1.Height = 200;
-	myImage1.Height = 200;
-	myImages.Add(myImage1);
-	Image myImage2 = new Image();
-	myImage2.Source = new BitmapImage(new Uri("/Images/nature15.jpg", UriKind.Relative));
-	myImage2.Width = 200;
-	myImage.Height = 200;
-	myImages.Add(myImage2);
-	Image myImage3 = new Image();
-	myImage3.Source = new BitmapImage(new Uri("/Images/nature19.jpg", UriKind.Relative));
-	myImage3.Height = 200;
-	myImage3.Width = 200;
-	myImages.Add(myImage3);
-	Image myImage4 = new Image();
-	myImage4.Source = new BitmapImage(new Uri("/Images/nature26.jpg", UriKind.Relative));
-	myImage4.Height = 200;
-	myImage4.Width = 200;
-	myImages.Add(myImage4);
-	this.MyCarousel.ItemsSource = myImages;
-```
-```VB.NET
-	Dim myImages As New List(Of Image)()
-	Dim myImage As New Image()
-	myImage.Source = New BitmapImage(New Uri("/Images/nature1.jpg", UriKind.Relative))
-	myImage.Height = 200
-	myImage.Width = 200
-	myImages.Add(myImage)
-	Dim myImage1 As New Image()
-	myImage1.Source = New BitmapImage(New Uri("/Images/nature2.jpg", UriKind.Relative))
-	myImage1.Height = 200
-	myImage1.Height = 200
-	myImages.Add(myImage1)
-	Dim myImage2 As New Image()
-	myImage2.Source = New BitmapImage(New Uri("/Images/nature15.jpg", UriKind.Relative))
-	myImage2.Width = 200
-	myImage.Height = 200
-	myImages.Add(myImage2)
-	Dim myImage3 As New Image()
-	myImage3.Source = New BitmapImage(New Uri("/Images/nature19.jpg", UriKind.Relative))
-	myImage3.Height = 200
-	myImage3.Width = 200
-	myImages.Add(myImage3)
-	Dim myImage4 As New Image()
-	myImage4.Source = New BitmapImage(New Uri("/Images/nature26.jpg", UriKind.Relative))
-	myImage4.Height = 200
-	myImage4.Width = 200
-	myImages.Add(myImage4)
-	Me.MyCarousel.ItemsSource = myImages
-```
+<snippet id='radcarousel-carousel-getting-started-example_5_setting_radcarousel_s_itemssource_to_a_list_of_images-cs' />
+<snippet id='radcarousel-carousel-getting-started-example_5_setting_radcarousel_s_itemssource_to_a_list_of_images-vb' />
+
 
 **Figure 2** shows the final result:
 
@@ -312,17 +102,7 @@ To change the theme, you can follow the steps below:
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 2: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Material;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radcarousel-carousel-getting-started-example_5_setting_radcarousel_s_itemssource_to_a_list_of_images-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

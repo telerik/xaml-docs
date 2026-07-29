@@ -18,9 +18,7 @@ __RadSlider's__ properties - __LargeChange__ and __SmallChange__ allow you to de
 
 
 
-```XAML
-	<telerik:RadSlider LargeChange="2" Maximum="10" />
-```
+<snippet id='radslider-features-step-size-block_1-xaml' />
 
 ![{{ site.framework_name }} RadSlider Large Change](images/largeChange.png)
 
@@ -28,9 +26,7 @@ __SmallChange__ on the other hand is used when __RadSlider__ has its handles vis
 
 
 
-```XAML
-	<telerik:RadSlider SmallChange="1" HandlesVisibility="Visible" Maximum="10" />
-```
+<snippet id='radslider-features-step-size-block_2-xaml' />
 
 ![{{ site.framework_name }} RadSlider Small Change](images/smallChange.png)
 

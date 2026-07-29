@@ -22,14 +22,8 @@ The [RadDocumentEditor class]({%slug radrichtextbox-features-raddocumenteditor%}
 
 __Example 1: Insert vertical tab through RadDocumentEditor__
 
-```C#
-
-	radDocumentEditor.Insert("\v");
-```
-```VB.NET
-
-	radDocumentEditor.Insert("\v")
-```
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_1-cs' />
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_2-vb' />
 
 Another option is to create a [Span]({%slug radrichtextbox-features-document-elements-span%}) and assign the vertical tab character to it. 
 
@@ -37,14 +31,8 @@ Another option is to create a [Span]({%slug radrichtextbox-features-document-ele
 
 __Example 2: Create vertical tab through document model__
 
-```C#
-
-	Span span = new Span("\v");
-```
-```VB.NET
-
-	Dim span As New Span("\v")
-```
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_3-cs' />
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_4-vb' />
 
 When the vertical tab symbol is inserted in a document, it is replaced with a Break element of type LineBreak.
 
@@ -68,14 +56,8 @@ You could handle a similar scenario using the vertical tab symbol in the TextAft
 
 __Example 3: Insert vertical tab in the switch of a merge field__
 
-```C#
-
-	MergeField mergeField = new MergeField() { PropertyPath = "JobTitle", TextAfterIfNotEmpty="\v" };
-```
-```VB.NET
-
-	Dim mergeField As New MergeField() With {.PropertyPath = "JobTitle", .TextAfterIfNotEmpty = "\v"}
-```
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_5-cs' />
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_6-vb' />
 
 
 #### __Figure 3: Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value__
@@ -89,14 +71,8 @@ You could also use the *“\r\n”* in the TextBeforeIfNotEmpty or TextAfterIfNo
 
 __Example 4: Insert \r\n in the switch of a merge field__
 
-```C#
-
-	MergeField mergeField = new MergeField() { PropertyPath = "FirstName", TextAfterIfNotEmpty="\r\n" };
-```
-```VB.NET
-
-	Dim mergeField As New MergeField() With {.PropertyPath = "FirstName", .TextAfterIfNotEmpty = "\r\n"}
-```
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_7-cs' />
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_8-vb' />
 
 
 >important The vertical tab is serialized only when it is used as a value for a document variable. In all other cases, it is not included in the document content on export.
@@ -108,36 +84,8 @@ The suggested approach in scenarios that include export is to use a [document va
 
 __Example 5: Insert the vertical tab in the switch of a merge field__
 
-```C#
-
-	string verticalTabSymbol = "\v";
-	string verticalTabKey = "verticalTab";
-	this.radRichTextBox.Document.DocumentVariables.Add(verticalTabKey, verticalTabSymbol);
-	
-	DocumentVariableField documentVariableField = new DocumentVariableField();
-	documentVariableField.VariableName = verticalTabKey;
-	
-	var mergeField = new MergeField() { PropertyPath = "FirstName" };
-	mergeField.SetPropertyValue(MergeField.TextAfterIfNotEmptyProperty, documentVariableField);
-	
-	this.radRichTextBox.InsertField(mergeField, FieldDisplayMode.Result);
-
-```
-```VB.NET
-
-    Dim verticalTabSymbol As String = "\v"
-    Dim verticalTabKey As String = "verticalTab"
-    Me.radRichTextBox.Document.DocumentVariables.Add(verticalTabKey, verticalTabSymbol)
-
-    Dim documentVariableField As New DocumentVariableField()
-    documentVariableField.VariableName = verticalTabKey
-
-    Dim mergeField = New MergeField() With {.PropertyPath = "FirstName"}
-    mergeField.SetPropertyValue(MergeField.TextAfterIfNotEmptyProperty, documentVariableField)
-
-    Me.radRichTextBox.InsertField(mergeField, FieldDisplayMode.Result)
-
-```
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_9-cs' />
+<snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_10-vb' />
 
 As a value of the document variable, you could also insert the "\r\n". Keep in mind that this value is exported to DOCX files only.
 

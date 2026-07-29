@@ -50,197 +50,34 @@ The __Diagram Extensions__ provide a `HierarchicalGalleryItemsCollection` which 
 
 You can use it directly in XAML:
 
-```XAML
-	<Grid>
-		<Grid.DataContext>
-			<telerik:HierarchicalGalleryItemsCollection />
-		</Grid.DataContext>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="Auto" />
-			<ColumnDefinition Width="\*" />
-			<ColumnDefinition Width="Auto" />
-		</Grid.ColumnDefinitions>
-		<telerik:RadDiagramToolbox x:Name="toolbox"
-									Title="Gallery"
-									Width="330"
-									HorizontalAlignment="Right"
-									Header="{Binding SelectedItem.Header, RelativeSource={RelativeSource Self}}"
-									ItemsSource="{Binding}"/>
-	</Grid>
-```
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-xaml' />
+
 
 or define a property of type `HierarchicalGalleryItemsCollection` in your ViewModel:                
 
-```C#
-	public class MainViewModel
-	{
-	    public HierarchicalGalleryItemsCollection GalleryItems { get; set; }
-	
-	    public MainViewModel()
-	    {
-	        this.GalleryItems = new HierarchicalGalleryItemsCollection();
-	    }
-	}
-```
-```VB.NET
-	Public Class MainViewModel
-		Public Property GalleryItems() As HierarchicalGalleryItemsCollection
-			Get
-				Return _GalleryItems
-			End Get
-			Set
-				_GalleryItems = Value
-			End Set
-		End Property
-		Private _GalleryItems As HierarchicalGalleryItemsCollection
-	
-		Public Sub New()
-			Me.GalleryItems = New HierarchicalGalleryItemsCollection()
-		End Sub
-	End Class	
-```
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-cs' />
 
-```XAML
-	<Grid>
-		<Grid.DataContext>
-			 <!-- local is an alias pointing to your local namespace where the MainViewModel class is defined-->
-	        <local:MainViewModel />
-		</Grid.DataContext>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="Auto" />
-			<ColumnDefinition Width="\*" />
-			<ColumnDefinition Width="Auto" />
-		</Grid.ColumnDefinitions>
-		<telerik:RadDiagramToolbox x:Name="toolbox"
-								   Title="Gallery"
-								   Width="330"
-								   HorizontalAlignment="Right"
-								   Header="{Binding SelectedItem.Header, RelativeSource={RelativeSource Self}}"
-								   ItemsSource="{Binding GalleryItems}"/>
-	</Grid>
-```
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-vb' />
+
+
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-xaml' />
+
 
 ## Configure a RadDiagramToolbox to Display Part of the HierarchicalGalleryItemsCollection
 
 The `HierarchicalGalleryItemsCollection` is populated based on the items in the __Telerik.Windows.Controls.Diagrams.Extensions.GalleryItemsCollection__ grouped by the name of each gallery. This is why you can easily recreate it in your ViewModel:
 
-```C#
-	public class MainViewModel
-	{
-	    public ObservableCollection<Gallery> GalleryItems { get; set; }
-	
-	    public MainViewModel()
-	    {
-	        this.GalleryItems = new ObservableCollection<Gallery>();
-	        LoadData("Basic", "Flowchart", "Arrow", "Container");
-	    }
-	
-	    private void LoadData(params string[] galleryNames)
-	    {
-	        var allItems = new GalleryItemsCollection();
-	
-	        foreach (var galleryName in galleryNames)
-	        {
-	            var gallery = new Gallery { Header = galleryName };
-	            foreach (var item in allItems.GetItemsByType(galleryName).ToArray())
-	            {
-	                gallery.Items.Add(item);
-	            }
-	            this.GalleryItems.Add(gallery);
-	        }
-	    }
-	}	
-```
-```VB.NET
-	Public Class MainViewModel
-		Public Property GalleryItems() As ObservableCollection(Of Gallery)
-			Get
-				Return _GalleryItems
-			End Get
-			Set
-				_GalleryItems = Value
-			End Set
-		End Property
-		Private _GalleryItems As ObservableCollection(Of Gallery)
-	
-		Public Sub New()
-			Me.GalleryItems = New ObservableCollection(Of Gallery)()
-			LoadData("Basic", "Flowchart", "Arrow","Container")
-		End Sub
-	
-		Private Sub LoadData(ParamArray galleryNames As String())
-			Dim allItems = New GalleryItemsCollection()
-	
-			For Each galleryName As var In galleryNames
-				Dim gallery = New Gallery() With { .Header = galleryName }
-				For Each item As var In allItems.GetItemsByType(galleryName).ToArray()
-					gallery.Items.Add(item)
-				Next
-				Me.GalleryItems.Add(gallery)
-			Next
-		End Sub
-	End Class	
-```
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-cs' />
+
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-vb' />
+
 
 Next, you can customize your `GalleryItems` collection to display only the Basic Shapes gallery like so:
 
-```C#
-	public class MainViewModel
-	{
-	    public ObservableCollection<Gallery> GalleryItems { get; set; }
-	
-	    public MainViewModel()
-	    {
-	        this.GalleryItems = new ObservableCollection<Gallery>();
-	        LoadData("Basic");
-	    }
-	
-	    private void LoadData(params string[] galleryNames)
-	    {
-	        var allItems = new GalleryItemsCollection();
-	
-	        foreach (var galleryName in galleryNames)
-	        {
-	            var gallery = new Gallery { Header = galleryName };
-	            foreach (var item in allItems.GetItemsByType(galleryName).ToArray())
-	            {
-	                gallery.Items.Add(item);
-	            }
-	            this.GalleryItems.Add(gallery);
-	        }
-	    }
-	}
-```
-```VB.NET
-	Public Class MainViewModel
-		Public Property GalleryItems() As ObservableCollection(Of Gallery)
-			Get
-				Return _GalleryItems
-			End Get
-			Set
-				_GalleryItems = Value
-			End Set
-		End Property
-		Private _GalleryItems As ObservableCollection(Of Gallery)
-	
-		Public Sub New()
-			Me.GalleryItems = New ObservableCollection(Of Gallery)()
-			LoadData("Basic")
-		End Sub
-	
-		Private Sub LoadData(ParamArray galleryNames As String())
-			Dim allItems = New GalleryItemsCollection()
-	
-			For Each galleryName As var In galleryNames
-				Dim gallery = New Gallery() With { .Header = galleryName}
-				For Each item As var In allItems.GetItemsByType(galleryName).ToArray()
-					gallery.Items.Add(item)
-				Next
-				Me.GalleryItems.Add(gallery)
-			Next
-		End Sub
-	End Class
-```
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-cs' />
+
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-vb' />
+
 
 __RadDiagramToolbox with Basic Shapes Gallery__
 
@@ -252,145 +89,15 @@ In case you need to populate a RadDiagramToolbox instance with a custom collecti
 
 For the purpose of this tutorial we will create a class describing our shapes and a custom gallery class that defines a collection of shapes:
 
-```C#
-	public class MyShape
-	{
-	    public Geometry Geometry { get; set; }
-	    public string Header { get; set; }
-	}
-	public class MyGallery
-	{
-	    public string Header { get; set; }
-	    public ObservableCollection<MyShape> Shapes { get; set; }
-	    public MyGallery()
-	    {
-	        this.Shapes = new ObservableCollection<MyShape>();
-	    }
-	}
-	public class MainViewModel
-	{
-	    public ObservableCollection<MyGallery> Items { get; set; }
-	    public MainViewModel()
-	    {
-	        this.Items = new ObservableCollection<MyGallery>();
-	        //create and populate the first custom gallery
-	        MyGallery firstGallery = new MyGallery { Header = "First Gallery" };
-	        firstGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 1.1",
-	            Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.CloudShape)
-	        });
-	        firstGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 1.2",
-	            Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.EllipseShape)
-	        });
-	        firstGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 1.3",
-	            Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.HexagonShape)
-	        });
-	        firstGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 1.4",
-	            Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.PentagonShape)
-	        });
-	        firstGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 1.5",
-	            Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.RightTriangleShape)
-	        });
-	        this.Items.Add(firstGallery);
-	
-	        //create and populate the second custom gallery
-	        MyGallery secondGallery = new MyGallery { Header = "Second Gallery" };
-	        secondGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 2.1",
-	            Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.CardShape)
-	        });
-	        secondGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 2.2",
-	            Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.Database1Shape)
-	        });
-	        secondGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 2.3",
-	            Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.CollateShape)
-	        });
-	        secondGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 2.4",
-	            Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.DataShape)
-	        });
-	        secondGallery.Shapes.Add(new MyShape
-	        {
-	            Header = "Shape 2.5",
-	            Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.DisplayShape)
-	        });
-	        this.Items.Add(secondGallery);
-	    }
-	}
-```
-```VB.NET
-	Public Class MyShape
-		Public Property Geometry() As Geometry
-		Public Property Header() As String
-	End Class
-	Public Class MyGallery
-		Public Property Header() As String
-		Public Property Shapes() As ObservableCollection(Of MyShape)
-		Public Sub New()
-			Me.Shapes = New ObservableCollection(Of MyShape)()
-		End Sub
-	End Class
-	Public Class MainViewModel
-		Public Property Items() As ObservableCollection(Of MyGallery)
-		Public Sub New()
-			Me.Items = New ObservableCollection(Of MyGallery)()
-			'create and populate the first custom gallery'
-			Dim firstGallery As MyGallery = New MyGallery With {.Header = "First Gallery"}
-			firstGallery.Shapes.Add(New MyShape With {.Header = "Shape 1.1", .Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.CloudShape)})
-			firstGallery.Shapes.Add(New MyShape With {.Header = "Shape 1.2", .Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.EllipseShape)})
-			firstGallery.Shapes.Add(New MyShape With {.Header = "Shape 1.3", .Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.HexagonShape)})
-			firstGallery.Shapes.Add(New MyShape With {.Header = "Shape 1.4", .Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.PentagonShape)})
-			firstGallery.Shapes.Add(New MyShape With {.Header = "Shape 1.5", .Geometry = ShapeFactory.GetShapeGeometry(CommonShapeType.RightTriangleShape)})
-			Me.Items.Add(firstGallery)
-	
-			'create and populate the second custom gallery'
-			Dim secondGallery As MyGallery = New MyGallery With {.Header = "Second Gallery"}
-			secondGallery.Shapes.Add(New MyShape With {.Header = "Shape 2.1", .Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.CardShape)})
-			secondGallery.Shapes.Add(New MyShape With {.Header = "Shape 2.2", .Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.Database1Shape)})
-			secondGallery.Shapes.Add(New MyShape With {.Header = "Shape 2.3", .Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.CollateShape)})
-			secondGallery.Shapes.Add(New MyShape With {.Header = "Shape 2.4", .Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.DataShape)})
-			secondGallery.Shapes.Add(New MyShape With {.Header = "Shape 2.5", .Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.DisplayShape)})
-			Me.Items.Add(secondGallery)
-		End Sub
-	End Class
-```
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_with_basic_shapes_gallery-cs' />
+
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_with_basic_shapes_gallery-vb' />
+
 
 Once the ViewModels are all in place, you can use the *MainViewModel* as the `DataContext` of the RadDiagramToolbox and bind its `ItemsSource` to the `Items` collection. You will also need to define `DataTemplates` to visualize the `MyShape` and `MyGallery` items properly.
 
-```XAML
-	<Grid>
-		<Grid.DataContext>
-			<local:MainViewModel />
-		</Grid.DataContext>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="Auto" />
-			<ColumnDefinition Width="\*" />
-			<ColumnDefinition Width="Auto" />
-		</Grid.ColumnDefinitions>
-		<telerik:RadDiagramToolbox x:Name="toolbox"
-								   Title="Gallery"
-								   Width="330"
-								   HorizontalAlignment="Right"
-								   Header="{Binding SelectedItem.Header,
-													RelativeSource={RelativeSource Self}}"
-								   ItemsSource="{Binding Items}"/>
-	</Grid>
-```
+<snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_with_basic_shapes_gallery-xaml' />
+
 
 __RadDiagramToolbox with custom gallery__
 

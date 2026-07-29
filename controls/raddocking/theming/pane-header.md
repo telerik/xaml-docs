@@ -14,61 +14,31 @@ To modify the appearance of the __PaneHeader__ you have to create a custom theme
 
 Copy the created style with all of the resources it uses and place it in the __ResourceDictionary__ that represents the theme for your __RadDocking__ control.
 
-```XAML
-	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	    <!--Paste the style and all of the resources it uses here. -->
-	    <Style x:Key="PaneHeaderStyle" TargetType="telerik:PaneHeader">
-	        <!--...-->
-	    </Style>
-	</ResourceDictionary>
-```
+<snippet id='raddocking-theming-pane-header-block_1-xaml' />
+
 
 The next step is to declare the required namespaces in the __ResourceDictionary__.
 
-```XAML
-	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <!--...-->
-	</ResourceDictionary>
-```
+<snippet id='raddocking-theming-pane-header-block_2-xaml' />
+
 
 {% if site.site_name == 'Silverlight' %}
 
 Finally in order to make the style default for all of the __PaneHeader__ controls you have to leave it without a key. Remove the key from the style.{% endif %}
 
-```XAML
-	<Style TargetType="telerik:PaneHeader">
-	    <!--...-->
-	</Style>
-```
+<snippet id='raddocking-theming-pane-header-block_3-xaml' />
 
-```C#
-	public App()
-	{
-	    InitializeComponent();
-	    StyleManager.SetTheme(this.radDocking, new RadDockingTheme());
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		StyleManager.SetTheme(Me.radDocking, New Theme())
-	End Sub
-	
-	Private Property radDocking As DependencyObject
-```
+
+<snippet id='raddocking-theming-pane-header-block_4-cs' />
+
+<snippet id='raddocking-theming-pane-header-block_4-vb' />
+
 
 Finally in order to make the style default for all of the __PaneHeader__ controls you have to set it to the following value.
 
 
-```XAML
-	<Style x:Key="{telerik:ThemeResourceKey ThemeType={x:Type local:RadDockingTheme}, ElementType={x:Type telerik:PaneHeader}}"
-	       TargetType="{x:Type telerik:PaneHeader}">
-	    <!--...-->
-	</Style>
-```
+<snippet id='raddocking-theming-pane-header-block_5-xaml' />
+
 Here is a snapshot of a sample result.
 
 ![{{ site.framework_name }} RadDocking Themed Pane Header](images/RadDocking_ThemingPaneHeader_01.png)

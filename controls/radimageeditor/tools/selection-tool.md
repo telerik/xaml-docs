@@ -14,21 +14,8 @@ The SelectionTool is one of the tools that come out-of-the-box with RadImageEdit
 The selection isolates parts of the image. By selecting specific areas, the user can edit and apply effects to portions of the image while leaving the unselected areas untouched. When a selection is active it will be surrounded by a dashed outline to indicate the area.
 
 __Example 1: Define selection tool item__
-```XAML
-	<telerik:ImageToolItem ImageKey="Selection" 
-						   telerik:LocalizationManager.ResourceKey="ImageEditor_Selection" 
-						   Command="commands:ImageEditorRoutedCommands.ExecuteTool">
-		<telerik:ImageToolItem.CommandParameter>
-			<tools:SelectionTool >
-				<tools:SelectionTool.SelectionShapes>
-					<shapes:RectangleShape />
-					<shapes:EllipseShape />
-					<shapes:FreeformShape />
-				</tools:SelectionTool.SelectionShapes>
-			</tools:SelectionTool>
-		</telerik:ImageToolItem.CommandParameter>
-	</telerik:ImageToolItem>
-```
+<snippet id='radimageeditor-tools-selection-tool-example_1_define_selection_tool_item-xaml' />
+
 
 #### Figure 1: Selection tool selection area
 ![{{ site.framework_name }} RadImageEditor Selection tool selection area](images/radimageeditor-tools-selection-tool-0.png)

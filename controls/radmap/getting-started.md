@@ -38,13 +38,7 @@ You can find the required assemblies for each control from the suite in the[Cont
 After adding references to the aforementioned dlls, you can declare a new RadMap instance.        
 
 __Defining map in XAML__
-```XAML
-   	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-		<Grid x:Name="LayoutRoot">
-			<telerik:RadMap x:Name="radMap" />
-		</Grid>
-	</UserControl> 
-```
+<snippet id='radmap-getting-started-block_1-xaml' />
 
 ## Specifying a Provider
 
@@ -60,17 +54,7 @@ The RadMap control doesn't display a map on itself, it needs a map provider from
 This example will use Azure Maps as its provider. In order to do that you have to set the `Provider` property of the RadMap to the built-in `AzureMapProvider` class.        
 
 __Specifying a provider to the RadMap control__
-```XAML
-	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-		<Grid x:Name="LayoutRoot">
-			<telerik:RadMap x:Name="radMap">
-				<telerik:RadMap.Provider>
-					<telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key"/>
-				</telerik:RadMap.Provider>
-			</telerik:RadMap>
-		</Grid>
-	</UserControl> 
-```        
+<snippet id='radmap-getting-started-block_2-xaml' />
 
 >important To use the Azure Maps with the RadMap control, you have to provide a valid subscription key. To learn how to obtain such a key, read [this topic](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys). Note that the Azure Map will not appear in your RadMap control, without supplying a valid subscription key.          
 

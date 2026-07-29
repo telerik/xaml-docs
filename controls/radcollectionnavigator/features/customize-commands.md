@@ -22,24 +22,10 @@ The methods listed below in __Example 1__ identify the logic that is executed wh
 
 __Example 1: RadCollectionNavigator's executable commands__
 
-```C#
-	void MoveCurrentToFirst();
-	void MoveCurrentToLast();
-	void MoveCurrentToNext();
-	void MoveCurrentToPrevious();
-	void BeginEdit();
-	void Delete();
-	void AddNew();
-```
-```VB.NET
-	Sub MoveCurrentToFirst()
-	Sub MoveCurrentToLast()
-	Sub MoveCurrentToNext()
-	Sub MoveCurrentToPrevious()
-	Sub BeginEdit()
-	Sub Delete()
-	Sub AddNew()
-```
+<snippet id='radcollectionnavigator-features-customize-commands-example_1_radcollectionnavigator_s_executable_commands-cs' />
+
+<snippet id='radcollectionnavigator-features-customize-commands-example_1_radcollectionnavigator_s_executable_commands-vb' />
+
 	
 ## Can-execute logic methods
 
@@ -47,24 +33,10 @@ With the help of the methods listed in __Example 2__ you can identify whether a 
 
 __Example 2:RadCollectionNavigator "can-execute" methods__ 
 
-```C#
-	bool CanMoveCurrentToFirstExecute();
-	bool CanMoveCurrentToLastExecute();
-	bool CanMoveCurrentToNextExecute();
-	bool CanMoveCurrentToPreviousExecute();
-	bool CanBeginEditExecute();
-	bool CanDeleteExecute();
-	bool CanAddNewExecute();
-```
-```VB.NET
-	Function CanMoveCurrentToFirstExecute() As Boolean
-	Function CanMoveCurrentToLastExecute() As Boolean
-	Function CanMoveCurrentToNextExecute() As Boolean
-	Function CanMoveCurrentToPreviousExecute() As Boolean
-	Function CanBeginEditExecute() As Boolean
-	Function CanDeleteExecute() As Boolean
-	Function CanAddNewExecute() As Boolean
-```
+<snippet id='radcollectionnavigator-features-customize-commands-example_2_radcollectionnavigator_can_execute_methods-cs' />
+
+<snippet id='radcollectionnavigator-features-customize-commands-example_2_radcollectionnavigator_can_execute_methods-vb' />
+
 
 ## Designing a custom CommandProvider
 
@@ -72,31 +44,10 @@ The first step is to create your own class that inherits from CollectionNavigato
 
 __Example 3: Creating a class that provides the custom commands__
 
-```C#
-	public class CustomCommandProvider : CollectionNavigatorBaseCommandProvider
-	{
-	    public CustomCommandProvider() : base(null)
-	    {
-	    }
-	    public CustomCommandProvider(RadCollectionNavigator collectionNavigator)
-	        : base(collectionNavigator)
-	    {
-	    }
-	    //. . .
-	}
-```
-```VB.NET
-	Public Class CustomCommandProvider
-	    Inherits CollectionNavigatorBaseCommandProvider
-	    Public Sub New()
-	        MyBase.New(Nothing)
-	    End Sub
-	    Public Sub New(ByVal collectionNavigator As RadCollectionNavigator)
-	        MyBase.New(collectionNavigator)
-	    End Sub
-	    '. . .
-	End Class
-```
+<snippet id='radcollectionnavigator-features-customize-commands-example_3_creating_a_class_that_provides_the_custom_commands-cs' />
+
+<snippet id='radcollectionnavigator-features-customize-commands-example_3_creating_a_class_that_provides_the_custom_commands-vb' />
+
 
 You need to override the methods of the commands that will be customized. In the following example we will customize: MoveCurrentToNext, MoveCurrentToPrevious.
 
@@ -106,56 +57,24 @@ If we have a requirement to prompt for the user's approval when moving through t
 
 __Example 4: Overriding the default commands__ 
 
-```C#
-	public override void MoveCurrentToNext()
-	{
-	    MessageBoxResult result = MessageBox.Show("MoveCurrentToNext ?", "MoveCurrentToNext", MessageBoxButton.OKCancel);
-	    if (result == MessageBoxResult.OK)
-	    {
-	        this.CollectionNavigator.MoveCurrentToNext();
-	    }
-	}
-	public override void MoveCurrentToPrevious()
-	{
-	    MessageBoxResult result = MessageBox.Show("MoveCurrentToPrevious ?", "MoveCurrentToPrevious", MessageBoxButton.OKCancel);
-	    if (result == MessageBoxResult.OK)
-	    {
-	        this.CollectionNavigator.MoveCurrentToPrevious();
-	    }
-	}
-```
-```VB.NET
-	Public Overrides Sub MoveCurrentToNext()
-	    Dim result As MessageBoxResult = MessageBox.Show("MoveCurrentToNext ?", "MoveCurrentToNext", MessageBoxButton.OKCancel)
-	    If result = MessageBoxResult.OK Then
-	        Me.CollectionNavigator.MoveCurrentToNext()
-	    End If
-	End Sub
-	Public Overrides Sub MoveCurrentToPrevious()
-	    Dim result As MessageBoxResult = MessageBox.Show("MoveCurrentToPrevious ?", "MoveCurrentToPrevious", MessageBoxButton.OKCancel)
-	    If result = MessageBoxResult.OK Then
-	        Me.CollectionNavigator.MoveCurrentToPrevious()
-	    End If
-	End Sub
-```
+<snippet id='radcollectionnavigator-features-customize-commands-example_4_overriding_the_default_commands-cs' />
+
+<snippet id='radcollectionnavigator-features-customize-commands-example_4_overriding_the_default_commands-vb' />
+
 
 The last thing to be done is to set the CommandProvider property of the RadCollectionNavigator to be the newly-created CustomCommandProvider class.
 
 __Example 5: Assigning the CommandProvider__ 
 
-```XAML
-	<telerik:RadCollectionNavigator x:Name="CollectionNavigator"
-	              			Source="{Binding Employees}"/>
-```
+<snippet id='radcollectionnavigator-features-customize-commands-example_5_assigning_the_commandprovider-xaml' />
+
 
 __Example 5: Assigning the CommandProvider__ 
 
-```C#
-	this.CollectionNavigator.CommandProvider = new CustomCommandProvider(this.CollectionNavigator);
-```
-```VB.NET
-	Me.CollectionNavigator.CommandProvider = New CustomCommandProvider(Me.CollectionNavigator)
-```
+<snippet id='radcollectionnavigator-features-customize-commands-example_5_assigning_the_commandprovider-cs' />
+
+<snippet id='radcollectionnavigator-features-customize-commands-example_5_assigning_the_commandprovider-vb' />
+
 
 Modifying the methods will result in the action shown in the image below when trying to move to the next item:
 

@@ -21,79 +21,28 @@ As RadImageEditor is highly extensible, you can create your own format providers
 The format providers can load images from streams and bytes just like shown in the following.
 
 __Load an image__  
-```C#
-	this.imageEditor.Image = formatProvider.Import(stream);
-```
+<snippet id='radimageeditor-features-import-export-load_an_image-cs' />
+
 
 The below code shows how to load an image from a file using the open file dialog.
 
 __Load an image through the OpenFileDialog__
-```C#
-	private void AddImageInEditor()
-	{
-	    OpenFileDialog ofd = new OpenFileDialog();
-	    ofd.Filter = "PNG Images (*.png)|*.png|JPEG Images (*.jpg,*.jpeg)|*.jpg;*.jpeg|All images|*.*";
-	    ofd.FilterIndex = 3;
-	    if (ofd.ShowDialog() == true)
-	    {
-	        string extension = Path.GetExtension(ofd.SafeFileName).ToLower();
-	        Stream stream = ofd.OpenFile();
-	        IImageFormatProvider formatProvider = ImageFormatProviderManager.GetFormatProviderByExtension(extension);
-	        if (formatProvider == null)
-	        {
-	            StringBuilder sb = new StringBuilder();
-	            sb.Append("Unable to find format provider for extension: ")
-	              .Append(extension).Append(" .");
-	            return;
-	        }
-	        else
-	        {
-	            this.imageEditor.Image = formatProvider.Import(stream);
-	        }
-	    }
-	}
-```
+<snippet id='radimageeditor-features-import-export-load_an_image_through_the_openfiledialog-cs' />
+
 
 You can use the available format providers to export the images as well.  The following example shows how you can get the image of the editor, encode it in a specific format – BMP or PNG, and save it using the SaveFileDialog.
 
 __Save an image through the SaveFileDialog__  
-```C#
-	private void ExportImageInEditor()
-	{
-	    SaveFileDialog sfd = new SaveFileDialog();
-	    sfd.Filter = "PNG Images (*.png)|*.png|BMP Images (*.bmp)|*.bmp;*|All images|*.*";
-	    sfd.FilterIndex = 3;
-	    if (sfd.ShowDialog() == true)
-	    {
-	        string extension = System.IO.Path.GetExtension(sfd.SafeFileName).ToLower();
-	        Stream stream = sfd.OpenFile();
-	        IImageFormatProvider formatProvider = ImageFormatProviderManager.GetFormatProviderByExtension(extension);
-	        if (formatProvider == null)
-	        {
-	            StringBuilder sb = new StringBuilder();
-	            sb.Append("Unable to find format provider for extension: ")
-	                .Append(extension).Append(" .");
-	            return;
-	        }
-	        else
-	        {
-	            using (stream)
-	            {
-	                formatProvider.Export(this.imageEditorUI.ImageEditor.Image, stream);
-	            }
-	        }
-	    }
-	}
-```
+<snippet id='radimageeditor-features-import-export-save_an_image_through_the_savefiledialog-cs' />
+
 
 >important One thing to note is that the last applied change may not be committed (which normally happens when you press Enter or change the current tool).
 
 To commit this last change, use the `CommitTool` method of the RadImageEditor class as shown in the example below.
 
 __Commit a change__  
-```C#
-	this.imageEditorUI.ImageEditor.CommitTool();
-```
+<snippet id='radimageeditor-features-import-export-commit_a_change-cs' />
+
 
 ## ImageFormatProviderManager
 
@@ -104,9 +53,8 @@ The `ImageFormatProviderManager` class is a static class that manages the format
 * `GetFormatProviderByExtension`&mdash;this method returns a registered format provider by passing a string parameter that represents the file extension. For example, __".png"__.
 
 __Registering a format provider__  
-```C#
-	ImageFormatProviderManager.RegisterFormatProvider(new Jpeg2000FormatProvider());
-```
+<snippet id='radimageeditor-features-import-export-registering_a_format_provider-cs' />
+
 
 >tip To download a runnable project with the example from this article, visit [our SDK repository](https://github.com/telerik/xaml-sdk/). You can find the example in the __ImageEditor/CustomImageFormatProvider__ folder.
 

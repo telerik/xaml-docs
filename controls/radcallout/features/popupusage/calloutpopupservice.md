@@ -38,13 +38,7 @@ To close all opened RadCallout controls you can use the __CloseAll()__ method of
 To globally disable the animation for all Popups elements holding RadCallout controls, __CalloutPopupService.IsAnimationEnabled__ static property can be set to false.
 
 __Example 1: Disable Animation__
-```C#
-	public MainWindow()
-	{           
-		InitializeComponent();
-		CalloutPopupService.IsAnimationEnabled = false;
-	}
-```
+<snippet id='radcallout-features-popupusage-calloutpopupservice-example_1_disable_animation-cs' />
 
 ## See Also
 

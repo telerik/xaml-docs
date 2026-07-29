@@ -77,11 +77,8 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 As of **R1 2020 SP1**, the RadDocking control exposes a **UseNativeInitialToolWindowDrag** property through which you can set to **True** to use the native Windows drag operation when first undocking a pane/group. This is useful if you wish to be able to use the [Windows Snap Assist feature](https://support.microsoft.com/en-us/help/4027324/windows-10-snap-your-windows) or take into account the "Show window contents while dragging" Windows setting.
 
 __Enable Native ToolWindow Drag__  
-```XAML
-	<telerik:RadDocking x:Name="radDocking" UseNativeInitialToolWindowDrag="True">
-		<!-- ... -->
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-drag-and-drop-enable_native_toolwindow_drag-xaml' />
+
 
 ![Use Native ToolWindow Drag](images/RadDocking_Features_Drag_and_Drop_050.png)
 
@@ -90,22 +87,8 @@ __Enable Native ToolWindow Drag__
 By default the panes in a `RadDocking` instance can be docked (or drag and dropped) only in the same `RadDocking` instance. To allow docking panes from one `RadDocking` instance to another, set the `DragDropGroup.Name` attached property on the `RadDocking` elements. Both instances should have the same name.
 
 __Enable docking between separate RadDocking instances__
-```XAML
-	 <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-		
-        <telerik:RadDocking dock:DragDropGroup.Name="mainDragDropGroup">
-            <!-- other XAML here -->
-        </telerik:RadDocking>
+<snippet id='raddocking-features-drag-and-drop-enable_docking_between_separate_raddocking_instances-xaml' />
 
-		<telerik:RadDocking dock:DragDropGroup.Name="mainDragDropGroup" Grid.Column="1">
-           <!-- other XAML here -->
-        </telerik:RadDocking>
-    </Grid>
-```
 
 ## See Also
 

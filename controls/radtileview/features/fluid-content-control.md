@@ -23,25 +23,7 @@ By default the currently visible content of RadFluidContentControl is automatica
 The next example works with the following content sizes - SmallContent (200px X 200px), NormalContent (400px X 400px) and LargeContent (600px X 600px).
 
 __Example 1: Automatic Content Changing__  
-```XAML
-	<telerik:RadFluidContentControl NormalToSmallThreshold="400 400" NormalToLargeThreshold="600 600">
-		<telerik:RadFluidContentControl.SmallContent>
-			<Border Background="LightBlue" Width="200" Height="200">
-				<TextBlock Text="Small Content" />
-			</Border>
-		</telerik:RadFluidContentControl.SmallContent>
-		<telerik:RadFluidContentControl.Content>
-			<Border Background="LightGreen" Width="400" Height="400">
-				<TextBlock Text="Normal Content" />
-			</Border>
-		</telerik:RadFluidContentControl.Content>
-		<telerik:RadFluidContentControl.LargeContent>
-			<Border Background="LightYellow" Width="600" Height="600">
-				<TextBlock Text="Large Content" />
-			</Border>
-		</telerik:RadFluidContentControl.LargeContent>
-	</telerik:RadFluidContentControl>
-```
+<snippet id='radtileview-features-fluid-content-control-block_1-xaml' />
 
 The following list describes how to threshold properties work.
 
@@ -58,87 +40,11 @@ To change the currently visible content manually, set the `ContentChangeMode` pr
 The following example shows how to use the `TileStateChanged` event of RadTileView in order to  update the `State` property of RadFluidContentControl.
 
 __Example 2 (part 1): Manual Content Changing__
-```XAML
-	<telerik:RadTileView TileStateChanged="RadTileView_TileStateChanged" Width="600" Height="400">
-		<telerik:RadTileViewItem Header="Item A">
-			<telerik:RadFluidContentControl ContentChangeMode="Manual">
-				<telerik:RadFluidContentControl.SmallContent>
-					<TextBlock Text="Small Content A" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.SmallContent>
-				<telerik:RadFluidContentControl.Content>
-					<TextBlock Text="Normal Content A" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.Content>
-				<telerik:RadFluidContentControl.LargeContent>
-					<TextBlock Text="Large Content A" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.LargeContent>
-			</telerik:RadFluidContentControl>
-		</telerik:RadTileViewItem>
-
-		<telerik:RadTileViewItem Header="Item B">
-			<telerik:RadFluidContentControl ContentChangeMode="Manual">
-				<telerik:RadFluidContentControl.SmallContent>
-					<TextBlock Text="Small Content B" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.SmallContent>
-				<telerik:RadFluidContentControl.Content>
-					<TextBlock Text="Normal Content B" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.Content>
-				<telerik:RadFluidContentControl.LargeContent>
-					<TextBlock Text="Large Content B" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.LargeContent>
-			</telerik:RadFluidContentControl>
-		</telerik:RadTileViewItem>
-
-		<telerik:RadTileViewItem Header="Item C">
-			<telerik:RadFluidContentControl ContentChangeMode="Manual">
-				<telerik:RadFluidContentControl.SmallContent>
-					<TextBlock Text="Small Content C" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.SmallContent>
-				<telerik:RadFluidContentControl.Content>
-					<TextBlock Text="Normal Content C" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.Content>
-				<telerik:RadFluidContentControl.LargeContent>
-					<TextBlock Text="Large Content C" TextAlignment="Center" VerticalAlignment="Center"/>
-				</telerik:RadFluidContentControl.LargeContent>
-			</telerik:RadFluidContentControl>
-		</telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-fluid-content-control-block_2-xaml' />
 
 __Example 2 (part 2): Handling the TileStateChanged event__  
-```C#
-	private void RadTileView_TileStateChanged(object sender, Telerik.Windows.RadRoutedEventArgs e)
-	{
-		var item = (RadTileViewItem)e.Source;
-		var fluidControl = (RadFluidContentControl)item.Content;
-		switch (item.TileState)
-		{
-			case TileViewItemState.Maximized:
-				fluidControl.State = FluidContentControlState.Large;
-				break;
-			case TileViewItemState.Minimized:
-				fluidControl.State = FluidContentControlState.Small;
-				break;
-			case TileViewItemState.Restored:
-				fluidControl.State = FluidContentControlState.Normal;
-				break;
-		}
-	}
-```
-```VB.NET
-	Private Sub RadTileView_TileStateChanged(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
-		Dim item = CType(e.Source, RadTileViewItem)
-		Dim fluidControl = CType(item.Content, RadFluidContentControl)
-
-		Select Case item.TileState
-			Case TileViewItemState.Maximized
-				fluidControl.State = FluidContentControlState.Large
-			Case TileViewItemState.Minimized
-				fluidControl.State = FluidContentControlState.Small
-			Case TileViewItemState.Restored
-				fluidControl.State = FluidContentControlState.Normal
-		End Select
-	End Sub
-```
+<snippet id='radtileview-features-fluid-content-control-block_3-cs' />
+<snippet id='radtileview-features-fluid-content-control-block_4-vb' />
 
 ![Fluid Control Large and Small Content](images/radtileview-fluid-content-control-0.png)  
 ![Fluid Control Normal Content](images/radtileview-fluid-content-control-1.png)

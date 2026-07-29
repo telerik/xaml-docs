@@ -18,30 +18,8 @@ In order to style all __RadSplitContainers__ in a RadDocking, you should create 
 
 __Example 1: Creating an implicit style targetting RadSplitContainer__
 
-```XAML
-    <Application.Resources>
-        <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-        <Style TargetType="telerik:RadSplitContainer" BasedOn="{StaticResource RadSplitContainerStyle}">-->
+<snippet id='raddocking-styles-and-templates-styling-the-radsplitcontainer-example_1_creating_an_implicit_style_targetting_radsplitcontainer-xaml' />
 
-        <Style TargetType="telerik:RadSplitContainer">
-            <Setter Property="BorderBrush" Value="Red" />
-            <Setter Property="BorderThickness" Value="5" />
-        </Style>
-    </Application.Resources>
-
-    <Grid>
-        <telerik:RadDocking  x:Name="radDocking" >
-            <telerik:RadSplitContainer >
-                <telerik:RadPaneGroup >
-                    <telerik:RadPane Header="Pane 1" />
-                    <telerik:RadPane Header="Test 2"/>
-                    <telerik:RadPane Header="Test 3" />
-                    <telerik:RadPane Header="Test 4" />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-        </telerik:RadDocking>
-    </Grid>
-```
 
 #### __Figure 1: Styled RadSplitContainer in the Office2016 theme__
 ![Styled RadSplitContainer in the Office2016 theme](images/RadDocking_SplitContainer_Style.png)

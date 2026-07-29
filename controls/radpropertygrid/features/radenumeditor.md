@@ -18,23 +18,8 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 
 __Defining flag enum__
 
-```C#
-	[Flags]
-	public enum Permissions
-	{
-	    Read = 1,
-	    Write = 2,
-	    Execute = 4
-	}
-```
-```VB.NET
-	<Flags()>
-	Public Enum Permissions
-	    Read = 1
-	    Write = 2
-	    Execute = 4
-	End Enum
-```
+<snippet id='radpropertygrid-features-radenumeditor-block_1-cs' />
+<snippet id='radpropertygrid-features-radenumeditor-block_1-vb' />
 
 Each element should contain name and a value (which should be degree of 2 – 1, 2, 4, 8, 16, etc.).
 
@@ -48,27 +33,8 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 __Defining the flag enum__
 
-```C#
-	[Flags]
-	public enum PermissionsAllNone
-	{
-	    All = -1,
-	    None = 0,
-	    Read = 1,
-	    Write = 2,
-	    Execute = 4
-	}
-```
-```VB.NET
-	<Flags()>
-	Public Enum PermissionsAllNone
-	    All = -1
-	    None = 0
-	    Read = 1
-	    Write = 2
-	    Execute = 4
-	End Enum
-```
+<snippet id='radpropertygrid-features-radenumeditor-block_2-cs' />
+<snippet id='radpropertygrid-features-radenumeditor-block_2-vb' />
 
 >Do not define values with 0 and -1 values if you do not mean to use them as select no flag and select all flags.
 
@@ -76,15 +42,7 @@ You can manually define your __FlagEnumEditor__ in __XAML__, like so:
 
 __Defining the FlagEnumEditor__
 
-```XAML
-	<telerik:PropertyDefinition Binding="{Binding Permission}">
-	    <telerik:PropertyDefinition.EditorTemplate>
-	        <DataTemplate>
-	            <telerik:FlagEnumEditor Value="{Binding Permission}" EnumType="my:Permissions"/>
-	        </DataTemplate>
-	    </telerik:PropertyDefinition.EditorTemplate>
-	</telerik:PropertyDefinition>
-```
+<snippet id='radpropertygrid-features-radenumeditor-block_3-xaml' />
 
 Thus the __FlagEnumEditor__ will look like this:
 
@@ -98,34 +56,8 @@ As of **R2 2022 SP1**, the `FlagEnumEditor` control supports the `Display` and `
 
 __Using the Display and Description attributes__
 
-```C#
-    [Flags]
-    public enum Permissions
-    {
-        All = -1,
-        None = 0,
-        [Display(Name = "Reading")]
-        Read = 1,
-        [Description("Writing")]
-        Write = 2,
-        [Display(Name = "Executing")]
-        [Description("Exe")]
-        Execute = 4
-    }
-```
-```VB.NET
-	<Flags>
-	Public Enum Permissions
-		All = -1
-		None = 0
-		<Display(Name := "Reading")>
-		Read = 1
-		<Description("Writing")>
-		Write = 2
-		<Display(Name := "Executing")><Description("Exe")>
-		Execute = 4
-	End Enum
-```
+<snippet id='radpropertygrid-features-radenumeditor-block_4-cs' />
+<snippet id='radpropertygrid-features-radenumeditor-block_4-vb' />
 
 ![Enum Values from the Display and Description attributes](images/RadPropertyGrid_FlagEnumEditor_6.png)
 

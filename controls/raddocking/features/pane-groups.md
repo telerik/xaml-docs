@@ -26,38 +26,17 @@ In order to group two or more panes, you should add them to the __RadPaneGroup__
 
 __Example 1: Adding panes to a RadPaneGroup__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer>
-	
-	        <telerik:RadPaneGroup x:Name="Group1">
-	            <telerik:RadPane x:Name="Pane1" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="Pane2" Header="Toolbox"/>
-	        </telerik:RadPaneGroup>
-	
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-pane-groups-example_1_adding_panes_to_a_radpanegroup-xaml' />
+
 
 The same operation can be done in the code-behind. You can group panes using the __RadPaneGroup__'s __Items__ collection through procedural code:
 
 __Example 2: Adding panes to a RadPaneGroup__
 
-```C#
-	private void GroupPanes()
-	{
-	    Telerik.Windows.Controls.RadPane pane3 = new Telerik.Windows.Controls.RadPane();
-	    pane3.Header = "Properties";
-	    Group1.Items.Add(pane3);
-	}
-```
-```VB.NET
-	Private Sub GroupPanes()
-		Dim pane3 As New Telerik.Windows.Controls.RadPane()
-		pane3.Header = "Properties"
-		Group1.Items.Add(pane3)
-	End Sub
-```
+<snippet id='raddocking-features-pane-groups-example_2_adding_panes_to_a_radpanegroup-cs' />
+
+<snippet id='raddocking-features-pane-groups-example_2_adding_panes_to_a_radpanegroup-vb' />
+
 
 ## Removing Panes Run-Time
 
@@ -73,33 +52,19 @@ You can remove panes using procedural code in two ways:
 
 __Example 3: Removing panes from a RadPaneGroup__
 
-```C#
-	private void RemovePane(RadPane paneToRemove)
-	{
-	    Group1.Items.Remove(paneToRemove);
-	}
-```
-```VB.NET
-	Private Sub RemovePane(ByVal paneToRemove As RadPane)
-		Group1.Items.Remove(paneToRemove)
-	End Sub
-```
+<snippet id='raddocking-features-pane-groups-example_3_removing_panes_from_a_radpanegroup-cs' />
+
+<snippet id='raddocking-features-pane-groups-example_3_removing_panes_from_a_radpanegroup-vb' />
+
 
 * Using the __RemoveFromParent__ method of the __RadPane__ class
 
 __Example 4: Removing panes from a RadPaneGroup through the RemoveFromParent method__
 
-```C#
-	private void RemovePane(RadPane paneToRemove)
-	{
-	    paneToRemove.RemoveFromParent();
-	}
-```
-```VB.NET
-	Private Sub RemovePane(ByVal paneToRemove As RadPane)
-		paneToRemove.RemoveFromParent()
-	End Sub
-```
+<snippet id='raddocking-features-pane-groups-example_4_removing_panes_from_a_radpanegroup_through_the_removefromparent_method-cs' />
+
+<snippet id='raddocking-features-pane-groups-example_4_removing_panes_from_a_radpanegroup_through_the_removefromparent_method-vb' />
+
 
 ## Hiding All Panes
 
@@ -107,17 +72,10 @@ The __RadPaneGroup__ class exposes __HideAllPanes__ method, which allows you to 
 
 __Example 5: Hiding all group panes__
 
-```C#
-	private void HideAllPanes()
-	{
-	    Group1.HideAllPanes();
-	}
-```
-```VB.NET
-	Private Sub HideAllPanes()
-		Group1.HideAllPanes()
-	End Sub
-```
+<snippet id='raddocking-features-pane-groups-example_5_hiding_all_group_panes-cs' />
+
+<snippet id='raddocking-features-pane-groups-example_5_hiding_all_group_panes-vb' />
+
 
 >__HideAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
@@ -127,17 +85,10 @@ The __RadPaneGroup__ class exposes __ShowAllPanes__ method, which allows you to 
 
 __Example 6: Show all group panes__
 
-```C#
-	private void ShowAllPanes()
-	{
-	    Group1.ShowAllPanes();
-	}
-```
-```VB.NET
-	Private Sub ShowAllPanes()
-		Group1.ShowAllPanes()
-	End Sub
-```
+<snippet id='raddocking-features-pane-groups-example_6_show_all_group_panes-cs' />
+
+<snippet id='raddocking-features-pane-groups-example_6_show_all_group_panes-vb' />
+
 
 >__ShowAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
@@ -149,17 +100,10 @@ The __RadPaneGroup__ class exposes __PinAllPanes__ method, which allows you to p
 
 __Example 7: Pin all group panes__
 
-```C#
-	private void PinAllPanes()
-	{
-	    Group1.PinAllPanes();
-	}
-```
-```VB.NET
-	Private Sub PinAllPanes()
-		Group1.PinAllPanes()
-	End Sub
-```
+<snippet id='raddocking-features-pane-groups-example_7_pin_all_group_panes-cs' />
+
+<snippet id='raddocking-features-pane-groups-example_7_pin_all_group_panes-vb' />
+
 
 >__PinAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event has been fired.
 
@@ -169,17 +113,10 @@ The __RadPaneGroup__ class exposes __UnpinAllPanes__ method, which allows you to
 
 __Example 7: Unpin all group panes__
 
-```C#
-	private void UnpinAllPanes()
-	{
-	    Group1.UnpinAllPanes();
-	}
-```
-```VB.NET
-	Private Sub UnpinAllPanes()
-		Group1.UnpinAllPanes()
-	End Sub
-```
+<snippet id='raddocking-features-pane-groups-example_7_unpin_all_group_panes-cs' />
+
+<snippet id='raddocking-features-pane-groups-example_7_unpin_all_group_panes-vb' />
+
 
 >__UnpinAllPanes__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
@@ -193,12 +130,10 @@ You can, however, change this behavior by setting the **IsContentPreserved** pro
 
 __Example 8: Persist panes' content__
 
-```C#
-    	Group1.IsContentPreserved = true;
-```
-```VB.NET
-	Group1.IsContentPreserved = True
-```
+<snippet id='raddocking-features-pane-groups-example_8_persist_panes_content-cs' />
+
+<snippet id='raddocking-features-pane-groups-example_8_persist_panes_content-vb' />
+
 
 ## Set Relative Size to the RadPaneGroup
 
@@ -206,18 +141,8 @@ The sizes of the __RadPaneGroups__ that are not directly set in the __RadDocking
 
 __Example 9: Set relative size__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking1">
-	    <telerik:RadSplitContainer Height="200" InitialPosition="DockedTop" Orientation="Horizontal">
-	        <telerik:RadPaneGroup telerik:ProportionalStackPanel.RelativeSize="200, 200">
-	            <telerik:RadPane Header="pane" />
-	        </telerik:RadPaneGroup>
-	        <telerik:RadPaneGroup telerik:ProportionalStackPanel.RelativeSize="400, 200">
-	            <telerik:RadPane Header="pane" />
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-pane-groups-example_9_set_relative_size-xaml' />
+
 
 **Figure 1** illustrates the result.
 
@@ -245,25 +170,8 @@ Since version **R2 2017**, you can set fixed sizes to a __RadPaneGroup__ by sett
 
 __Example 10: Setting ProportionalStackPanel.ElementWidth__
 
-```XAML
-	<telerik:RadSplitContainer>
-		<telerik:RadPaneGroup telerik:ProportionalStackPanel.ElementWidth="300">
-	        <telerik:RadPane Header="Pane Bottom">
-	            <TextBlock Text="Pane Group with RelativeSize" />
-	        </telerik:RadPane>
-	    </telerik:RadPaneGroup>
-		<telerik:RadPaneGroup>
-		    <telerik:RadPane Header="Pane Bottom">
-		        <TextBlock Text="Pane Group with fixed Width (300)" />
-		    </telerik:RadPane>
-		</telerik:RadPaneGroup>
-		<telerik:RadPaneGroup>
-		    <telerik:RadPane Header="Pane Bottom">
-		        <TextBlock Text="Pane Group with RelativeSize" />
-		    </telerik:RadPane>
-		</telerik:RadPaneGroup>
-	</telerik:RadSplitContainer>
-```
+<snippet id='raddocking-features-pane-groups-example_10_setting_proportionalstackpanel_elementwidth-xaml' />
+
 
 As can be seen on **Figure 2**, even when pane groups with fixed sizes are present, the remaining groups with proportional sizes will still resize accordingly.
 

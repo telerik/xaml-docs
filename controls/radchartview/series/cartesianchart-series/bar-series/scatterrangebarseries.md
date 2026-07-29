@@ -19,29 +19,8 @@ This series can be used to create histogram visualization. This can be done by u
 The following example shows how to define `ScatterRangeBarSeries` and populate its `DataPoints` collection.
 
 __Declaring a RangeBarSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart Palette="Fluent">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.Grid>
-			<telerik:CartesianChartGrid MajorLinesVisibility="Y" />
-		</telerik:RadCartesianChart.Grid>
-		<telerik:ScatterRangeBarSeries>
-			<telerik:ScatterRangeBarSeries.DataPoints>
-				<telerik:ScatterRangeDataPoint HorizontalLow="10" HorizontalHigh="30" VerticalLow="0" VerticalHigh="5"/>
-				<telerik:ScatterRangeDataPoint HorizontalLow="30" HorizontalHigh="40" VerticalLow="0" VerticalHigh="6"/>
-				<telerik:ScatterRangeDataPoint HorizontalLow="40" HorizontalHigh="60" VerticalLow="0" VerticalHigh="5.5"/>
-				<telerik:ScatterRangeDataPoint HorizontalLow="60" HorizontalHigh="65" VerticalLow="0" VerticalHigh="6"/>
-				<telerik:ScatterRangeDataPoint HorizontalLow="65" HorizontalHigh="70" VerticalLow="0" VerticalHigh="7"/>
-				<telerik:ScatterRangeDataPoint HorizontalLow="70" HorizontalHigh="110" VerticalLow="0" VerticalHigh="6.5"/>
-			</telerik:ScatterRangeBarSeries.DataPoints>
-		</telerik:ScatterRangeBarSeries>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-scatterrangebarseries-declaring_a_rangebarseries_in_xaml-xaml' />
+
 
 __ScatterRangeBarSeries visual appearance__  
 
@@ -52,49 +31,16 @@ __ScatterRangeBarSeries visual appearance__
 To bind the series to a collection of business objects, use its `ItemsSource` property. The series will create a new `ScatterRangeDataPoint` for each data item in the collection. To map the data item properties to the data point, use the `HorizontalLowBinding`, `HorizontalHighBinding`, `VerticalLowBinding` and `VerticalHighBinding` properties of the series.
 
 __Defining the data item model__  
-```C#
-	public class ScatterBarInfo
-	{
-		public double HorizontalLow { get; set; }
-		public double HorizontalHigh { get; set; }
-		public double VerticalLow { get; set; }
-		public double VerticalHigh { get; set; }
+<snippet id='radchartview-series-cartesianchart-series-bar-series-scatterrangebarseries-defining_the_data_item_model-cs' />
 
- 		public ScatterBarInfo(double horizontalLow, double horizontalHigh, double verticalLow, double verticalHigh)
-		{
-			this.HorizontalLow = horizontalLow;
-			this.HorizontalHigh = horizontalHigh;
-			this.VerticalLow = verticalLow;
-			this.VerticalHigh = verticalHigh;
-		}
-	}
-```		
 
 __Populating with data__
-```C#
-	public MyUserControl() 
-	{ 
-		InitializeComponent();  
-	 
-		var source = new ObservableCollection<ScatterBarInfo>();
-		source.Add(new ScatterBarInfo(0, 4, 8, 10));
-		source.Add(new ScatterBarInfo(6, 10, 1, 6));
-		source.Add(new ScatterBarInfo(1, 1.5, 1, 6.5));
-		source.Add(new ScatterBarInfo(3, 3.5, 4, 5));
-		source.Add(new ScatterBarInfo(8, 11, 7, 11));
-		this.scatterRangeBarSeries.ItemsSource = source; 
-	} 
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-scatterrangebarseries-populating_with_data-cs' />
+
 
 __Specifying ScatterRangeBarSeries in XAML and setting its binding properties__
-```XAML
-	<telerik:ScatterRangeBarSeries x:Name="scatterRangeBarSeries" 
-				   HorizontalLowBinding="HorizontalLow" 
-                                   HorizontalHighBinding="HorizontalHigh"
-                                   VerticalLowBinding="VerticalLow"
-                                   VerticalHighBinding="VerticalHigh"
-				   ItemsSource="{Binding}" />
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-scatterrangebarseries-specifying_scatterrangebarseries_in_xaml_and_setting_its_binding_properties-xaml' />
+
 	
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

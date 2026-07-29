@@ -20,43 +20,25 @@ You could easily disable the moving functionality of __RadDesktopAlert__ using t
 
 __Enable moving__
 
-```C#
-	RadDesktopAlert alert = new RadDesktopAlert();
-	alert.CanMove = true;
-```
+<snippet id='raddesktopalert-moving-enable_moving-cs' />
+
 
 __Enable moving__
 
-```VB
-	Dim alert As New RadDesktopAlert()
-	alert.CanMove = True
-```
+<snippet id='raddesktopalert-moving-enable_moving-vb' />
+
 
 If you prefer visualizing __RadDesktopAlert__ by passing an object of type __DesktopAlertParameters__ to the __ShowAlert__ method the __DesktopAlertParameters__ class also supports the __CanMove__ property and you could set it through it:
 
 __Enable moving using DesktopAlertParameters__
 
-```C#
-	var manager = new RadDesktopAlertManager();
-	manager.ShowAlert(new DesktopAlertParameters
-	{
-	    CanMove = false,
-	    Header = "Message",
-	    Content = "A new message has arrived!"
-	});
-```
+<snippet id='raddesktopalert-moving-enable_moving_using_desktopalertparameters-cs' />
+
 
 __Enable moving using DesktopAlertParameters__
 
-```VB
-	Dim manager As New RadDesktopAlertManager()
-	manager.ShowAlert(New DesktopAlertParameters With
-	{
-	    .CanMove = True,
-	    .Header = "Message",
-	    .Content = "A new message has arrived!"
-	})
-```
+<snippet id='raddesktopalert-moving-enable_moving_using_desktopalertparameters-vb' />
+
 
 ## See Also
 

@@ -56,28 +56,8 @@ To learn more about the column headers take a look at the [Column Headers]({%slu
 __GridViewColumn__ provides out-of-the-box mechanism for customizing the visual appearance of its text content. This can be achieved through the __TextWrapping__, __TextAlignment__, __TextTrimming__ and __TextDecorations__ properties.
 
 __Example 1: Setting the Text Properties of GridViewColumn__
-```XAML
-	<telerik:RadGridView Name="clubsGrid" 
-                     ItemsSource="{Binding Clubs}"
-                     AutoGenerateColumns="False"
-                     GroupRenderMode="Flat"
-                     Margin="5">
-            <telerik:RadGridView.Columns>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" 
-	                                        TextWrapping="Wrap"/>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
-	                                        TextAlignment="Right"
-	                                        Header="Est." 
-	                                        DataFormatString="{}{0:yyyy}"/>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}"
-	                                        TextTrimming="WordEllipsis"
-	                                        Header="Stadium" 
-	                                        DataFormatString="{}{0:N0}"/>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding FanClubCount}"
-                                        TextDecorations="Underline"/>
-    		</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-customizing-columns-example_1_setting_the_text_properties_of_gridviewcolumn-xaml' />
+
 
 #### __Figure 1: GridViewColumn with customized text properties__ 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewColumn using custom text wrapping, alignment, trimming, and decorations](images/gridview-textproperties-column.png)

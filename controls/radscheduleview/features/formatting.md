@@ -46,17 +46,7 @@ Let’s for example set the formatting properties of DayViewDefinition:
 
 
 
-```XAML
-	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
-	    <telerik:RadScheduleView.ViewDefinitions>
-	        <telerik:DayViewDefinition
-	            TimerulerMajorTickStringFormat="{}{0:%H}:{0:%m} "
-	            TimerulerMinorTickStringFormat=":{0:mm} "
-	            GroupHeaderDateStringFormat="{}{0:dddd(MM/dd/yy)}" />
-	        ...  
-	    </telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-formatting-block_1-xaml' />
 
 ![DayViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsdayview.png)
 
@@ -66,18 +56,7 @@ Setting these properties to WeekViewDefinition will lead to similar result:
 
 
 
-```XAML
-	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
-	    <telerik:RadScheduleView.ViewDefinitions>
-	        ...
-	        <telerik:WeekViewDefinition
-	            TimerulerMajorTickStringFormat="{}{0:h tt}:{0:mm} "
-	            TimerulerMinorTickStringFormat=":{0:mm}"
-	            GroupHeaderDateStringFormat="{}{0:dddd(MM/dd)}"  />              
-	        ...  
-	    </telerik:RadScheduleView.ViewDefinitions>
-	 </telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-formatting-block_2-xaml' />
 
 ![WeekViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsweekview.png)
 
@@ -87,18 +66,7 @@ In MonthViewDefinition you can set the following formatting properties:
 
 
 
-```XAML
-	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
-	    <telerik:RadScheduleView.ViewDefinitions>
-	        ...                     
-	        <telerik:MonthViewDefinition
-	            TimerulerGroupStringFormat="&lt; {0:dddd} &gt;"
-	            TimerulerMajorTickStringFormat="{}{0:%M}.{0:%d}"             
-	            GroupHeaderDateStringFormat="{}{0:MM/dd}"/>
-	        ...
-	    </telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-formatting-block_3-xaml' />
 
 And the result is:
 
@@ -110,22 +78,7 @@ Setting the formatting properties in TimelineViewDefinition like this:
 
 
 
-```XAML
-	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
-	    <telerik:RadScheduleView.ViewDefinitions>
-	        ...       
-	        <telerik:TimelineViewDefinition
-	            TimerulerGroupStringFormat="{}{0:yyyy/MM/dd}"
-	            TimerulerMajorTickStringFormat="{}{0:%H}"
-	            TimerulerMinorTickStringFormat=":{0:%m}"
-	            MajorTickLength="1h"
-	            MinorTickLength="10min"
-	            MinTimeRulerExtent="30400"
-	            MaxTimeRulerExtent="30400" />
-	         ...
-	        </telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-formatting-block_4-xaml' />
 
 results in the following look:
 

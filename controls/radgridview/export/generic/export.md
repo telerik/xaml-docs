@@ -39,52 +39,10 @@ __Example 1__ shows how to display a "Save File" dialog asking the user to save 
 
 __Example 1: Save RadGridView`s content in Excel file__
 
-```C#
-	void btnExport_Click(object sender, RoutedEventArgs e)
-	{
-	    string extension = "xls";
-	    SaveFileDialog dialog = new SaveFileDialog()
-	    {
-	        DefaultExt = extension,
-	        Filter = String.Format("{1} files (\*.{0})|\*.{0}|All files (*.*)|*.*", extension, "Excel"),
-	        FilterIndex = 1
-	    };
-	    if (dialog.ShowDialog() == true)
-	    {
-	        using (Stream stream = dialog.OpenFile())
-	        {
-	            gridViewExport.Export(stream,
-	             new GridViewExportOptions()
-	             {
-	                 Format = ExportFormat.Html,
-	                 ShowColumnHeaders = true,
-	                 ShowColumnFooters = true,
-	                 ShowGroupFooters = false,
-	             });
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub btnExport_Click(sender As Object, e As RoutedEventArgs)
-	    Dim extension As String = "xls"
-	    Dim dialog As New SaveFileDialog() With {
-	     .DefaultExt = extension,
-	     .Filter = String.Format("{1} files (\*.{0})|\*.{0}|All files (*.*)|*.*", extension, "Excel"),
-	     .FilterIndex = 1
-	    }
-	    If dialog.ShowDialog() = True Then
-	        Using stream As Stream = dialog.OpenFile()
-	            gridViewExport.Export(stream, New GridViewExportOptions() With {
-	             .Format = ExportFormat.Html,
-	             .ShowColumnHeaders = True,
-	             .ShowColumnFooters = True,
-	             .ShowGroupFooters = False
-	            })
-	        End Using
-	    End If
-	End Sub
-```
+<snippet id='radgridview-export-generic-export-example_1_save_radgridview_s_content_in_excel_file-cs' />
+
+<snippet id='radgridview-export-generic-export-example_1_save_radgridview_s_content_in_excel_file-vb' />
+
         
 In addition, __RadGridView__ provides built-in methods to get the content of your GridView control in different formats:
 
@@ -101,12 +59,10 @@ In addition, __RadGridView__ provides built-in methods to get the content of you
 
 __Example 2: Save content to String__
 
-```C#
-	string htmlExport = this.gridViewExport.ToHtml(true);
-```
-```VB.NET
-	Dim htmlExport As String = Me.gridViewExport.ToHtml(True)
-```
+<snippet id='radgridview-export-generic-export-example_2_save_content_to_string-cs' />
+
+<snippet id='radgridview-export-generic-export-example_2_save_content_to_string-vb' />
+
 
         
 ## See Also

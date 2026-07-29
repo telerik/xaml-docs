@@ -20,17 +20,7 @@ __Example 1__ show how these properties can be used when the RadialContextMenu i
 
 __Example 1: Setting ShowEventName/HideEventName properties__
 
-```XAML
-	<TextBox Text="Some Text">
-	    <telerik:RadRadialMenu.RadialContextMenu>
-	        <telerik:RadRadialMenu ShowEventName="GotFocus" HideEventName="LostFocus">
-	            <telerik:RadRadialMenuItem Header="Item 1" />
-	            <telerik:RadRadialMenuItem Header="Item 2" />
-	            <telerik:RadRadialMenuItem Header="Item 3" />
-	        </telerik:RadRadialMenu>
-	    </telerik:RadRadialMenu.RadialContextMenu>
-	</TextBox>
-```
+<snippet id='radradialmenu-features-contextmenu-block_1-xaml' />
 
 >important The values set to ShowEventName/HideEventName should be valid event names of the target element.
 
@@ -44,48 +34,18 @@ __RadialMenuCommands__ class can be used in the following ways:
 
 	__Example 2: Using EventToCommandBehavior__
 
-	```XAML
-		<TextBox Text="Some Text">
-		    <telerik:EventToCommandBehavior.EventBindings>
-		        <telerik:EventBinding EventName="GotFocus" Command="{x:Static telerik:RadialMenuCommands.Show}" />
-		        <telerik:EventBinding EventName="LostFocus" Command="{x:Static telerik:RadialMenuCommands.Hide}" />
-		    </telerik:EventToCommandBehavior.EventBindings>
-		    <telerik:RadRadialMenu.RadialContextMenu>
-		        <telerik:RadRadialMenu>
-		            <!--...-->
-		        </telerik:RadRadialMenu>
-		    </telerik:RadRadialMenu.RadialContextMenu>
-		</TextBox>
-	```
+	<snippet id='radradialmenu-features-contextmenu-block_2-xaml' />
 
 * With InputBindings - you can add KeyBinding, for example, to the InputBindings collection of the target element in order to show/hide the RadialContextMenu when pressing a certain key. __Example 3__ demonstrates how to define showing it on clicking Ctrl+M and hiding it on clicking Escape key.         
 
 	__Example 3: Using InputBindings__
 
-	```XAML
-		<TextBox Text="Some Text">
-		    <TextBox.InputBindings>
-		        <KeyBinding Modifiers="Control" Key="M" Command="{x:Static telerik:RadialMenuCommands.Show}" />
-		        <KeyBinding Key="Escape" Command="{x:Static telerik:RadialMenuCommands.Hide}" />
-		    </TextBox.InputBindings>
-		    <telerik:RadRadialMenu.RadialContextMenu>
-		        <telerik:RadRadialMenu>
-		            <!--...-->
-		        </telerik:RadRadialMenu>
-		    </telerik:RadRadialMenu.RadialContextMenu>
-		</TextBox>
-	```
+	<snippet id='radradialmenu-features-contextmenu-block_3-xaml' />
 
 * In code-behind - __Example 4__ shows how you can explicitly call Show/Hide commands in code-behind.
 
 	__Example 4: In code-behind__
 
-	```C#
-		//show the RadialContextMenu
-		RadialMenuCommands.Show.Execute(null, textBox1);
-		
-		//hide the RadialContextMenu
-		RadialMenuCommands.Hide.Execute(null, textBox1);
-	```
+	<snippet id='radradialmenu-features-contextmenu-block_4-cs' />
 
 	where *textBox1* is the name of the target element to which the RadialContextMenu is attached.

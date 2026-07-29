@@ -26,18 +26,9 @@ Some ViewDefinitions have specific properties. Here is a list of specific proper
 
 	The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __WeekGroupHeaderStringFormat__ property in WeekView:        
 
-	```XAML
-		<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-			<telerik:RadScheduleView.ViewDefinitions>
-				<telerik:WeekViewDefinition ShowWeekGroupHeaders="True" WeekGroupHeaderStringFormat="Week number {0}, {1:D}" />
-			</telerik:RadScheduleView.ViewDefinitions>
-		</telerik:RadScheduleView>
-	```
+	<snippet id='radscheduleview-features-viewdefinitions-specificproperties-block_1-xaml' />
 
-	```C#
-		weekDefinition.ShowWeekGroupHeaders = true;
-		weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
-	```
+	<snippet id='radscheduleview-features-viewdefinitions-specificproperties-block_2-cs' />
 
 	![RadScheduleView with Week Headers](images/scheduleview_features_specific_properties_1.png)
 
@@ -69,13 +60,7 @@ Here is a list of the properties that are specific for TimelineView:
 
 It sets whether the appointments will be stretched to fill all available space in the TimeSlot - by default it is set to __False__.
 
-```XAML
-	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:TimelineViewDefinition StretchAppointments="True" />
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-viewdefinitions-specificproperties-block_3-xaml' />
 
 ![scheduleview features specific properties 2](images/scheduleview_features_specific_properties_2.png)
 
@@ -85,24 +70,10 @@ When the __DayStartTime__ and __DayEndTime__ properties are set to the TimelineV
 
 The following example illustrates how to set the DayStartTime, DayEndTime and ApplyStartEndTimeToEachDay for the TimelineView:
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:TimelineViewDefinition DayStartTime="13:00:00" DayEndTime="14:30:00" ApplyStartEndTimeToEachDay="True"/>
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-viewdefinitions-specificproperties-block_4-xaml' />
 
-```C#
-	timelineDefinition.DayStartTime = new TimeSpan(13, 00, 0);
-	timelineDefinition.DayEndTime = new TimeSpan(14, 30, 0);
-	timelineDefinition.ApplyStartEndTimeToEachDay = true;
-```
-```VB
-	timelineDefinition.DayStartTime = New TimeSpan(13, 0, 0)
-	timelineDefinition.DayEndTime = New TimeSpan(14, 30, 0)
-	timelineDefinition.ApplyStartEndTimeToEachDay = True
-```
+<snippet id='radscheduleview-features-viewdefinitions-specificproperties-block_5-cs' />
+<snippet id='radscheduleview-features-viewdefinitions-specificproperties-block_6-vb' />
 
 
 >important Please notice that the __DayStartTime__ property should always be set to a time earlier than the __DayEndTime__, otherwise the start and end times won't be applied for each day.

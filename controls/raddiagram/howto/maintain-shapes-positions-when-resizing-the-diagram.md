@@ -23,38 +23,10 @@ Below you can see this in action. The Window or UserControl is resized and the S
 ![raddiagrams howto preserverpositions 2](images/raddiagrams_howto_preserverpositions2.png)
 
 
-```C#
-    private void RadDiagram_SizeChanged(object sender, SizeChangedEventArgs e) 
-    { 
-        if(e.PreviousSize != null && e.PreviousSize.Width != 0 && e.PreviousSize.Height != 0) 
-        { 
-            double deltaX = (e.NewSize.Width / e.PreviousSize.Width); 
-            double deltaY = (e.NewSize.Height / e.PreviousSize.Height); 
+<snippet id='raddiagram-howto-maintain-shapes-positions-when-resizing-the-diagram-block_1-cs' />
 
-            this.radDiagram.Shapes.ToList().ForEach(x => 
-                { 
-                    x.Position = new Point(x.Position.X * deltaX, x.Position.Y * deltaY); 
-                    x.Width = x.Width * deltaX; 
-                    x.Height = x.Height * deltaY; 
-                }); 
-        } 
-    }   
-```
-```VB.NET
-    Private Sub RadDiagram_SizeChanged(sender As Object, e As SizeChangedEventArgs)
-        If e.PreviousSize IsNot Nothing AndAlso e.PreviousSize.Width <> 0 AndAlso e.PreviousSize.Height <> 0 Then
-            Dim deltaX As Double = (e.NewSize.Width / e.PreviousSize.Width)
-            Dim deltaY As Double = (e.NewSize.Height / e.PreviousSize.Height)
+<snippet id='raddiagram-howto-maintain-shapes-positions-when-resizing-the-diagram-block_1-vb' />
 
-            Me.radDiagram.Shapes.ToList().ForEach(Function(x) 
-				x.Position = New Point(x.Position.X * deltaX, x.Position.Y * deltaY)
-				x.Width = x.Width * deltaX
-				x.Height = x.Height * deltaY
-
-			End Function)
-        End If
-    End Sub
-```
 
 ## See Also
  * [Resizing]({%slug raddiagrams-features-resizing%})

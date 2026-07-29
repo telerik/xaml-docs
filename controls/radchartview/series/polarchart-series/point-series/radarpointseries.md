@@ -17,34 +17,8 @@ This series is visualized on the screen as separate points representing each of 
 You can use the following definition to display a simple RadarPointSeries
 
 
-```XAML
-	<telerik:RadPolarChart Palette="Windows8">
-		<telerik:RadPolarChart.PolarAxis>
-			<telerik:PolarAxis />
-		</telerik:RadPolarChart.PolarAxis>
-		<telerik:RadPolarChart.RadialAxis>
-			<telerik:CategoricalRadialAxis />
-		</telerik:RadPolarChart.RadialAxis>
-		<telerik:RadPolarChart.Series>
-			<telerik:RadarPointSeries>
-				<telerik:RadarPointSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="4" />
-					<telerik:CategoricalDataPoint Category="B" Value="4" />
-					<telerik:CategoricalDataPoint Category="C" Value="4" />
-					<telerik:CategoricalDataPoint Category="D" Value="4" />
-					<telerik:CategoricalDataPoint Category="E" Value="4" />
-					<telerik:CategoricalDataPoint Category="F" Value="4" />
-					<telerik:CategoricalDataPoint Category="G" Value="4" />
-					<telerik:CategoricalDataPoint Category="H" Value="4" />
-					<telerik:CategoricalDataPoint Category="J" Value="4" />
-					<telerik:CategoricalDataPoint Category="K" Value="4" />
-					<telerik:CategoricalDataPoint Category="L" Value="4" />
-					<telerik:CategoricalDataPoint Category="M" Value="4" />
-				</telerik:RadarPointSeries.DataPoints>
-			</telerik:RadarPointSeries>
-		</telerik:RadPolarChart.Series>
-	</telerik:RadPolarChart>
-```
+<snippet id='radchartview-series-polarchart-series-point-series-radarpointseries-block_1-xaml' />
+
 
 ![radchartview-series-radarpointseries](images/radchartview-series-radarpointseries.png)
 

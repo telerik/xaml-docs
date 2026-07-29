@@ -48,74 +48,23 @@ The categories available in the RadScheduleView are defined in the CategoriesSou
 
 
 
-```XAML
-	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">								
-		<telerik:RadScheduleView.CategoriesSource>
-			<telerik:CategoryCollection>
-				<telerik:Category CategoryName="Red Category">
-					<telerik:Category.CategoryBrush>
-						<SolidColorBrush Color="Red"></SolidColorBrush>
-					</telerik:Category.CategoryBrush>
-				</telerik:Category>
-				<telerik:Category CategoryName="Orange Category">
-					<telerik:Category.CategoryBrush>
-						<SolidColorBrush Color="Orange"></SolidColorBrush>
-					</telerik:Category.CategoryBrush>
-				</telerik:Category>
-				<telerik:Category CategoryName="Green Category">
-					<telerik:Category.CategoryBrush>
-						<SolidColorBrush Color="Green"></SolidColorBrush>
-					</telerik:Category.CategoryBrush>
-				</telerik:Category>
-			</telerik:CategoryCollection>
-		</telerik:RadScheduleView.CategoriesSource>
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition />
-		</telerik:RadScheduleView.ViewDefinitions>		
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-categories-block_1-xaml' />
 
 or
 
 
 
-```C#
-	public class MyViewModel : ViewModelBase
-	{
-		public ObservableCollection<Appointment> Appointments { get; set; }
-		public ObservableCollection<Category> Categories { get; set; }
-	
-		public MyViewModel()
-		{
-			this.Appointments = new ObservableCollection<Appointment>();
-			this.Categories = new ObservableCollection<Category>() {
-				new Category( "Red Category", new SolidColorBrush( Colors.Red ) ),
-				new Category( "Orange Category", new SolidColorBrush( Colors.Orange ) ),
-				new Category( "Green Category", new SolidColorBrush( Colors.Green ) )
-			};
-		}
-	}
-```
+<snippet id='radscheduleview-features-categories-block_2-cs' />
 
 
 
-```XAML
-	<telerik:RadScheduleView x:Name="scheduleView" 
-						AppointmentsSource="{Binding Appointments}"
-						CategoriesSource="{Binding Categories}">		
-				<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition />
-		</telerik:RadScheduleView.ViewDefinitions>		
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-categories-block_3-xaml' />
 
 Finally, set the DataContext:
 
 
 
-```C#
-	this.DataContext = new MyViewModel();
-```
+<snippet id='radscheduleview-features-categories-block_4-cs' />
 
 Here is how the new categories look like:
 

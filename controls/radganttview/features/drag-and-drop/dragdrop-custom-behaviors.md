@@ -28,31 +28,15 @@ The next example shows how to create a custom GanttDragDropBehavior in order to 
 
 
 
-```C#
-	public class CustomDragDropBehavior : Telerik.Windows.Controls.GanttView.GanttDragDropBehavior
-	{
-	    protected override bool CanStartDrag(SchedulingDragDropState state)
-	    {
-	        var task = state.DraggedItem as GanttTask;
-	        if (task.IsMilestone)
-	            return false;
-	
-	        return base.CanStartDrag(state);
-	    }
-	}
-```
+<snippet id='radganttview-features-drag-and-drop-dragdrop-custom-behaviors-block_1-cs' />
+
 
 * Set the just created class as RadGanttView DragDropBehavior:
 
 
 
-```XAML
-	<telerik:RadGanttView  x:Name="ganttView" TasksSource="{Binding Tasks}" >
-	    <telerik:RadGanttView.DragDropBehavior>
-	        <local:CustomDragDropBehavior />
-	    </telerik:RadGanttView.DragDropBehavior>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-drag-and-drop-dragdrop-custom-behaviors-block_2-xaml' />
+
 
 The dragging of milestone tasks will be disabled.
 
@@ -74,72 +58,15 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 
 
 
-```C#
-	public class SnappingSchedulingResizeBehavior : SchedulingResizeBehavior
-	{
-	    protected override void Resize(SchedulingResizeState state)
-	    {
-	        if (state.IsResizeFromEnd)
-	        {
-	            state.DestinationSlot.End = RoundUpDateTime(state.DestinationSlot.End);
-	        }
-	        else
-	        {
-	            state.DestinationSlot.Start = RoundUpDateTime(state.DestinationSlot.Start);
-	        }
-	
-	        base.Resize(state);
-	    }
-	
-	    private DateTime RoundUpDateTime(DateTime dateTime)
-	    {
-	        DateTime result;
-	        if (dateTime.Hour >= 12)
-	        {
-	            result = RoundUpToNextDay(dateTime);
-	        }
-	        else
-	        {
-	            result = new DateTime(dateTime.Year, dateTime.Month, dateTime.Day);
-	        }
-	
-	        return result;
-	    }
-	
-	    private static DateTime RoundUpToNextDay(DateTime dateTime)
-	    {
-	        DateTime result;
-	        if (dateTime.Day == DateTime.DaysInMonth(dateTime.Year, dateTime.Month))
-	        {
-	            if (dateTime.Month < 12)
-	            {
-	                result = new DateTime(dateTime.Year, dateTime.Month + 1, 1);
-	            }
-	            else
-	            {
-	                result = new DateTime(dateTime.Year + 1, 1, 1);
-	            }
-	        }
-	        else
-	        {
-	            result = new DateTime(dateTime.Year, dateTime.Month, dateTime.Day + 1);
-	        }
-	        return result;
-	    }
-	}
-```
+<snippet id='radganttview-features-drag-and-drop-dragdrop-custom-behaviors-block_3-cs' />
+
 
 * Set the newly created class to the RadGanttView ResizeBehavior:
 
 
 
-```XAML
-	<telerik:RadGanttView  x:Name="ganttView1" TasksSource="{Binding Tasks}" >
-	    <telerik:RadGanttView.ResizeBehavior>
-	        <local:SnappingSchedulingResizeBehavior />
-	    </telerik:RadGanttView.ResizeBehavior>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-drag-and-drop-dragdrop-custom-behaviors-block_4-xaml' />
+
 
 The next figures shows the final result. When the Start or End of a Task is resized by resizing the task object it is snapped to the nearest Day depending on if the Task has been resized above 12:00 PM or not:
 

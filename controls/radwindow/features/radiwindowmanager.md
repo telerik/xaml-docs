@@ -28,12 +28,8 @@ Here is an example of how to use __RadWindowManager__ to close all active __RadW
 
 
 
-```C#
-	RadWindowManager.Current.CloseAllWindows();
-```
-```VB.NET
-	RadWindowManager.Current.CloseAllWindows()
-```
+<snippet id='radwindow-features-radiwindowmanager-block_1-cs' />
+<snippet id='radwindow-features-radiwindowmanager-block_2-vb' />
 
 ## See Also
 

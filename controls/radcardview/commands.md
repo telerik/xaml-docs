@@ -32,27 +32,12 @@ As the commands provided by RadCardView are `ICommands` at their core, they do p
 Using the RadCardViewCommands class, you can set a sequence of commands to be performed one after another.  So, for example, you may easily handle the `Click` event of a button, move the selection down and then collapse it. However, when invoking the commands in such a manner a second parameter should be added, pointing out the target UI Element as shown in the following example:
 
 __Executing different commands__  
-```C#
-	private void Button1_Click(object sender, RoutedEventArgs e)
-    {
-		var moveDownCommand = RadCardViewCommands.MoveDown as RoutedUICommand;
-		var collapseCommand = RadCardViewCommands.CollapseCardViewItem as RoutedUICommand;
-		moveDownCommand.Execute(null, this.cardView);
-		collapseCommand.Execute(null, this.cardView);
-    }
-```
+<snippet id='radcardview-commands-block_1-cs' />
 
 In order to ensure that all commands will be executed in the correct sequence, it is advised to use RadCardView's `PendingCommands` collection as demonstrated below:
 
 __Executing different commands with the ExecutePendingCommand method__  
-```C#
-	private void Button2_Click(object sender, RoutedEventArgs e)
-	{
-		this.cardView.PendingCommands.Add(RadCardViewCommands.MoveDown);
-		this.cardView.PendingCommands.Add(RadCardViewCommands.CollapseCardViewItem);
-		this.cardView.ExecutePendingCommand();
-	}
-```
+<snippet id='radcardview-commands-block_2-cs' />
 
 ## Keyboard Command Provider
 
@@ -64,33 +49,7 @@ Another approach for accomplishing the purpose will be to create a separate clas
 The custom class responsible for the update of the commands needs to be similar to the one below:
 
 __Defining the custom IKeyboardCommandProvider__  
-```C#
-	public class CustomKeyboardCommandProvider : DefaultKeyboardCommandProvider
-	{
-	    private RadCardView parentCardView;
-	
-	    public CustomKeyboardCommandProvider(RadCardView cardView)
-	     : base(cardView)
-	    {
-	        this.parentCardView = cardView;
-	    }
-	
-	    public override IEnumerable<ICommand> ProvideCommandsForKey(Key key)
-	    {
-	        List<ICommand> commandsToExecute = base.ProvideCommandsForKey(key).ToList();
-	
-	        if (key == Key.Enter)
-	        {
-	            commandsToExecute.Clear();
-	            commandsToExecute.Add(RadCardViewCommands.CommitEdit);
-	            commandsToExecute.Add(RadCardViewCommands.MoveNext);
-	            commandsToExecute.Add(RadCardViewCommands.BeginEdit);
-	        }
-	
-	        return commandsToExecute;
-	    }
-	}
-```
+<snippet id='radcardview-commands-block_3-cs' />
 
 Following up the code-snippet above, a press of Enter key will result in saving the current changes,
 moving the focus to the next item and editing it. However, do not forget to remove the predefined
@@ -99,9 +58,7 @@ commands for that particular key by calling the `Clear` method.
 The last thing to be done is to set `KeyboardCommandProvider` property of the RadCardView control to be the newly-created CustomKeyboardCommandProvider class:
 
 __Setting the KeyboardCommandProvider property__  
-```C#
-	this.cardView.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.cardView);
-```
+<snippet id='radcardview-commands-block_4-cs' />
 
 ## See Also  
 * [Getting Started]({%slug radcardview-getting-started%})

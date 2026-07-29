@@ -26,34 +26,8 @@ In __R1 2016__, we introduced a new extension method related to the exporting of
 This method exports the associated RadGridView to a [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument) object. **Example 1** shows how you can rotate the exported page before exporting.
 
 __Example 1: Export RadGridView to a RadFixedDocument and rotate the page 90 degrees__
-```C#
-	private void Button_Click(object sender, RoutedEventArgs e)
-        {	
-			//Instantiate the RadFixedDocument object
-            RadFixedDocument fixedDoc = this.clubsGrid.ExportToRadFixedDocument();
-			
-			//Modify the RadFixedDocument object
-            foreach (var page in fixedDoc.Pages)
-            {
-                var actualPage = page as RadFixedPage;
-                actualPage.Rotation =  Telerik.Windows.Documents.Fixed.Model.Data.Rotation.Rotate90;
-            }
+<snippet id='radgridview-export-pdf-export-fixed-document-example_1_export_radgridview_to_a_radfixeddocument_and_rotate_the_page_90_degrees-cs' />
 
-			//Export the RadFixedDocument to a PDF file
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.DefaultExt = "*.pdf";
-          
-            if (dialog.ShowDialog() == true)
-            {
-
-                var provider = new PdfFormatProvider();
-                using (var output = dialog.OpenFile())
-                {
-                    provider.Export(fixedDoc, output, null);
-                }
-            }
-        }
-```
 
 ## GridViewDocumentExportOptions
 

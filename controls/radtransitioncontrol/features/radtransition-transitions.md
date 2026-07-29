@@ -38,9 +38,7 @@ The short syntax to set the transition in XAML is:
 
 
 
-```XAML
-	<telerik:RadTransitionControl Transition="Fade" />
-```
+<snippet id='radtransitioncontrol-features-radtransition-transitions-block_1-xaml' />
 
 >The transition could also be set to one of the:            
 >	* Fade
@@ -61,13 +59,7 @@ The __FadeTransition__ fades out the old content and fades in the new one. It ha
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTRansitionControl1">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:FadeTransition />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-transitions-block_2-xaml' />
 
 ![{{ site.framework_name }} RadTransitionControl Fade Transition](images/RadTransition_Features_Transitions_01.png)
 
@@ -77,13 +69,7 @@ The __FlipWarpTransition__ is a transition effect that makes zoom and slide tran
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTRansitionControl1">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:FlipWarpTransition />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-transitions-block_3-xaml' />
 
 ![{{ site.framework_name }} RadTransitionControl Flip Warp Transition](images/RadTransition_Features_Transitions_02.png)
 
@@ -99,15 +85,7 @@ The __LinearFadeTransition__ is a fade transition which follows a linear pattern
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTRansitionControl2">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:LinearFadeTransition Darker="0.5"
-	                                         Angle="0.5"
-	                                         Thickness="0.5" />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-transitions-block_4-xaml' />
 
 ![{{ site.framework_name }} RadTransitionControl Linear Fade Transition](images/RadTransition_Features_Transitions_03.png)
 
@@ -127,16 +105,7 @@ The __MotionBlurredZoomTransition__ is basically a fade transition with motion b
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTRansitionControl3">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:MotionBlurredZoomTransition Center="0.5,0.5"
-	                                                InBlurRatio="0.3"
-	                                                OutBlurRatio="-0.3"
-	                                                Samples="7" />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-transitions-block_5-xaml' />
 
 ![{{ site.framework_name }} RadTransitionControl Motion Blurred Zoom Transition](images/RadTransition_Features_Transitions_04.png)
 
@@ -160,19 +129,7 @@ The __RollTransition__ rolls out the new content above the old one. You can also
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTRansitionControl4">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:RollTransition InterpolationFunction="2"
-	                                    IsRollOut="False"
-	                                    IsTopToBottom="True"
-	                                    Orientation="Vertical"
-	                                    LightIntensity="0.5"
-	                                    RelativeRollWidth="0.15"
-	                                    RollSize="0.15" />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-transitions-block_6-xaml' />
 
 ![{{ site.framework_name }} RadTransitionControl Roll Transition](images/RadTransition_Features_Transitions_05.png)
 
@@ -190,16 +147,7 @@ The __SlideAndZoomTransition__ zooms out the old content and decreases its opaci
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTRansitionControl5">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:SlideAndZoomTransition MinAlpha="0.1"
-	                                            MinZoom="0.9"
-	                                            SlideDirection="LeftToRight"
-	                                            StartSlideAt="0.25" />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-transitions-block_7-xaml' />
 
 ![{{ site.framework_name }} RadTransitionControl Slide And Zoom Transition](images/RadTransition_Features_Transitions_06.png)
 
@@ -215,15 +163,7 @@ The __WaveTransition__ creates a wave effect over the old content. When the wave
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTRansitionControl6">
-	    <telerik:RadTransitionControl.Transition>
-	        <telerikTransitions:WaveTransition Amplitude="0.2"
-	                                    Angle="0.5"
-	                                    Fade="0.7" />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-transitions-block_8-xaml' />
 
 ![{{ site.framework_name }} RadTransitionControl Wave Transition](images/RadTransition_Features_Transitions_07.png)
 

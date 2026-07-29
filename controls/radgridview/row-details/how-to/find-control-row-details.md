@@ -16,45 +16,24 @@ Let assume that you have a control (RadComboBox) in the RowDetailsTemplate which
 
 
 
-```XAML
-	<telerik:RadGridView.RowDetailsTemplate>
-	    <DataTemplate>
-	        <StackPanel>
-	            <telerik:RadComboBox Name="rcbCountries" />
-	            <!-- some other controls here -->
-	        </StackPanel>
-	    </DataTemplate>
-	</telerik:RadGridView.RowDetailsTemplate>
-```
+<snippet id='radgridview-row-details-how-to-find-control-row-details-block_1-xaml' />
+
 
 The best way to do this is to subscribe to the [LoadingRowDetails]({%slug radgridview-row-details-programming%}) event and find the control there:
 
 
 
-```XAML
-	<telerik:RadGridView Name="gridView" 
-	ItemsSource="{Binding Source={StaticResource itemsList}}"
-	LoadingRowDetails="gridView_LoadingRowDetails"
-	RowDetailsVisibilityMode="VisibleWhenSelected">
-```
+<snippet id='radgridview-row-details-how-to-find-control-row-details-block_2-xaml' />
+
 
 In the [LoadingRowDetails]({%slug radgridview-row-details-programming%}) event handler use the [FindName](http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.findname.aspx) method of the __e.DetailsElement__:
 
 
 
-```C#
-	private void gridView_LoadingRowDetails(object sender, GridViewRowDetailsEventArgs e)
-	{
-	    RadComboBox countries = e.DetailsElement.FindName("rcbCountries") as RadComboBox;
-	    countries.ItemsSource = GetCountries();
-	}
-```
-```VB.NET
-	Private Sub gridView_LoadingRowDetails(sender As Object, e As GridViewRowDetailsEventArgs)
-	    Dim countries As RadComboBox = TryCast(e.DetailsElement.FindName("rcbCountries"), RadComboBox)
-	    countries.ItemsSource = GetCountries()
-	End Sub
-```
+<snippet id='radgridview-row-details-how-to-find-control-row-details-block_3-cs' />
+
+<snippet id='radgridview-row-details-how-to-find-control-row-details-block_3-vb' />
+
 
 ## See Also
 

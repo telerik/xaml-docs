@@ -36,19 +36,15 @@ Here is an example on how to copy column headers as well as selected data:
 
 __Example 1: Setting the ClipboardCopyMode in code__
 
-```C#
-	this.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells |
-	GridViewClipboardCopyMode.Header;
-```
-```VB.NET
-	Me.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells Or GridViewClipboardCopyMode.Header
-```
+<snippet id='radgridview-clipboard-copying-example_1_setting_the_clipboardcopymode_in_code-cs' />
+
+<snippet id='radgridview-clipboard-copying-example_1_setting_the_clipboardcopymode_in_code-vb' />
+
 
 __Example 2: Setting the ClipboardCopyMode in xaml__
 
-```XAML
-	<telerik:RadGridView ClipboardCopyMode="Cells, Header" />
-```
+<snippet id='radgridview-clipboard-copying-example_2_setting_the_clipboardcopymode_in_xaml-xaml' />
+
 
 ## Events
 
@@ -58,24 +54,10 @@ There are two events that allow you to control the copying operation: __Copying_
 
 __Example 3: The CopyingCellClipboardContent Event__
 
-```C#
-	private void radGridView_CopyingCellClipboardContent(object sender, GridViewCellClipboardEventArgs e)
-	{
-	    if (e.Cell.Column.UniqueName == "FullName")
-	    {
-	        var person = e.Cell.Item as Person;
-	        e.Value = string.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName);
-	    }
-	}
-```
-```VB.NET
-	Private Sub radGridView_CopyingCellClipboardContent(sender As Object, e As GridViewCellClipboardEventArgs)
-	    If e.Cell.Column.UniqueName = "FullName" Then
-	        Dim person = TryCast(e.Cell.Item, Person)
-	        e.Value = String.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName)
-	    End If
-	End Sub
-```
+<snippet id='radgridview-clipboard-copying-example_3_the_copyingcellclipboardcontent_event-cs' />
+
+<snippet id='radgridview-clipboard-copying-example_3_the_copyingcellclipboardcontent_event-vb' />
+
 
 >For some interesting examples, like how to skip copying of GridViewSelectColumn and GridViewToggleRowDetailsColumn, please check our [SDK example browser](https://demos.telerik.com/xaml-sdkbrowser/).
 

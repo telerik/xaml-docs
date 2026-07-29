@@ -15,58 +15,18 @@ __ColorPreset__ is an enum that represent all built-in palettes.
 You can use it to set  the __Palette__ property of RadColorPaletteView or __HeaderPalette__/__StandardPalette__/__MainPalette__ properties of the __RadColorSelector__.
 				
 
-```C#
-    public enum ColorPreset
-    {
-        None,
-        Default,
-        Standard,
-        Grayscale,
-        Web216,
-        ReallyWebSafe,
-        // MS word named presets below
-        Office,
-        Apex,
-        Aspect,
-        Civic,
-        Concourse,
-        Equity,
-        Flow,
-        Foundry,
-        Median,
-        Metro,
-        Module,
-        Opulent,
-        Oriel,
-        Origin,
-        Paper,
-        Solstice,
-        Technic,
-        Trek,
-        Urban,
-        Verve
-    }
-```
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-color-preset-block_1-cs' />
 
 
-```XAML
-	<telerik:RadColorPaletteView Palette="Office" />
-	<telerik:RadColorSelector MainPalette="Office" />
-```
+
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-color-preset-block_2-xaml' />
 
 
-```C#
-	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
-	colorPaletteView.Palette = ColorPreset.Office;
-	RadColorSelector colorSelector = new RadColorSelector();
-	colorSelector.MainPalette = ColorPreset.Office;
-```
-```VB.NET
-		Dim colorPaletteView As New RadColorPaletteView()
-		colorPaletteView.Palette = ColorPreset.Office
-		Dim colorSelector As New RadColorSelector()
-		colorSelector.MainPalette = ColorPreset.Office
-```
+
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-color-preset-block_3-cs' />
+
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-color-preset-block_3-vb' />
+
 
 ## Predefined Palettes Preview
 

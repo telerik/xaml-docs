@@ -23,36 +23,10 @@ The following list shows the commands that are exposed by the RadAIPrompt contro
 The following example shows how to utilize one of the above-listed commands.
 
 __Defining an ICommand property in the view model__
-```C#
-    public class MyViewModel
-    {
-        public MyViewModel()
-        {
-            this.PromptRequestCommand = new DelegateCommand(OnPromptRequestCommandExecuted);
-        }
-    
-        public ICommand PromptRequestCommand { get; set; }
-    
-        private void OnPromptRequestCommandExecuted(object obj)
-        {
-            //Execute your logic here when the PromptRequestCommand of RadAIPrompt is executed
-        }
-    }
-```
+<snippet id='radaiprompt-commands-defining_an_icommand_property_in_the_view_model-cs' />
 
 __Binding the view model ICommand to the PromptRequestCommand of RadAIPrompt__
-```XAML
-    <Grid>
-        <Grid.DataContext>
-            <local:MyViewModel/>
-        </Grid.DataContext>
-        <telerik:RadAIPrompt x:Name="aiPrompt"
-                             PromptRequestCommand="{Binding PromptRequestCommand}">
-            <telerik:RadAIPromptInputItem />
-            <telerik:RadAIPromptOutputItem />
-        </telerik:RadAIPrompt>
-    </Grid>
-```
+<snippet id='radaiprompt-commands-binding_the_view_model_icommand_to_the_promptrequestcommand_of_radaiprompt-xaml' />
 
 ## Configuring Custom Commands
 
@@ -70,45 +44,10 @@ To add a logic that will be executed when the user interacts with the commands v
 This class exposes the `Command` property that will allow you to set an `ICommand` implementation to it. It will be raised when the User interacts with it. 
 
 __Creating an AIPromptCommand instance__
-```C#
-    public class MyViewModel
-    {
-        public MyViewModel()
-        {
-    		AIPromptCommand simplifyCommand = new AIPromptCommand()
-    		{
-    			Command = new DelegateCommand(OnSimplifyCommandExecuted),
-    			Text = "Simplify",
-    		};
-
-    		this.MyCommands = new ObservableCollection<AIPromptCommandBase>()
-    		{
-                simplifyCommand
-            };
-        }
-
-        public ObservableCollection<AIPromptCommandBase> MyCommands { get; set; }
-
-        private void OnSimplifyCommandExecuted(object obj)
-        {
-    		MessageBox.Show("SimplifyCommand Executed");
-        }
-    }
-```
+<snippet id='radaiprompt-commands-creating_an_aipromptcommand_instance-cs' />
 
 __Binding the custom commands collection to RadAIPrompt__
-```XAML
-    <Grid>
-        <Grid.DataContext>
-            <local:MyViewModel/>
-        </Grid.DataContext>
-        <telerik:RadAIPrompt x:Name="aiPrompt" Commands="{Binding MyCommands}">
-            <telerik:RadAIPromptInputItem />
-            <telerik:RadAIPromptOutputItem />
-            <telerik:RadAIPromptCommandsItem />
-        </telerik:RadAIPrompt>
-    </Grid>
-```
+<snippet id='radaiprompt-commands-binding_the_custom_commands_collection_to_radaiprompt-xaml' />
 
 __RadAIPrompt with a custom commands collection__
 
@@ -119,55 +58,7 @@ __RadAIPrompt with a custom commands collection__
 The `AIPromptCommandGroup` object provides the `Commands` collection property. It will allow you to group `AIPromptCommand` instances.
 
 __Creating an AIPromptCommandGroup instance__
-```C#
-    public class MyViewModel
-    {
-        public MyViewModel()
-        {
-    		AIPromptCommand simplifyCommand = new AIPromptCommand()
-    		{
-    			Command = new DelegateCommand(OnSimplifyCommandExecuted),
-    			Text = "Simplify"
-    		};
-
-            AIPromptCommand extendCommand = new AIPromptCommand()
-            {
-                Command = new DelegateCommand(OnExtendCommandExecuted),
-                Text = "Extend"
-            };
-
-    		AIPromptCommandGroup aIPromptCommandGroup = new AIPromptCommandGroup()
-    		{
-    			Text = "Commands group"
-    		};
-
-    		List<AIPromptCommand> commands = new List<AIPromptCommand>()
-    		{
-    			simplifyCommand,
-    			extendCommand
-    		};
-
-    		aIPromptCommandGroup.Commands = commands;
-
-            this.MyCommands = new ObservableCollection<AIPromptCommandBase>()
-    		{
-                aIPromptCommandGroup
-            };
-        }
-
-        public ObservableCollection<AIPromptCommandBase> MyCommands { get; set; }
-
-        private void OnSimplifyCommandExecuted(object obj)
-        {
-    		MessageBox.Show("SimplifyCommand Executed");
-        }
-
-        private void OnExtendCommandExecuted(object obj)
-        {
-            MessageBox.Show("ExtendCommand Executed");
-        }
-    }
-```
+<snippet id='radaiprompt-commands-creating_an_aipromptcommandgroup_instance-cs' />
 
 __RadAIPrompt with grouped commands__
 

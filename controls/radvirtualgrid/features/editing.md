@@ -43,17 +43,7 @@ Through this event a custom editor for handling the editing operation can be def
 > The property of the editor that is being edited needs to be set manually as well.
 
 __Example 1: Handling the EditorNeeded event__  
-```C#
-	private void VirtualGrid_EditorNeeded(object sender, 
-            Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs e)
-        {
-            TextBox tb = new TextBox();
-
-            e.Editor = tb;
-            tb.Text = String.Format("{0}.{1}", e.RowIndex, e.ColumnIndex);
-            e.EditorProperty = TextBox.TextProperty;
-        }
-```
+<snippet id='radvirtualgrid-features-editing-block_1-cs' />
 
 > Most input controls (MaskedTextInput, RadNumericUpDown, RadComboBox, etc.) in the Material, Fluent and Transparent themes have an opacity applied. This means that you can see through them which could lead to a visual glitch when used as editors in RadVirtualGrid. To avoid this set the Background property of the editor to a solid color when you create it in the event handler.
 
@@ -68,13 +58,7 @@ This event is triggered each time the underlying property value that is edited h
 * __Value__: Provides information regarding the user input.
 
 __Example 2: Handling the EditorValueChanged event__  
-```C#
-	private void VirtualGrid_EditorValueChanged(object sender, 
-			Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
-        {
-            
-        }
-```
+<snippet id='radvirtualgrid-features-editing-block_2-cs' />
 
 ### CellEditEnded
 
@@ -87,12 +71,7 @@ The event is raised when the user ends editing the cell by setting the focus to 
 * __Value__: Provides information regarding the user input.
 
 __Example 3: Handling the CellEditEnded event__  
-```C#
-	   private void VirtualGrid_CellEditEnded_1(object sender, CellEditEndedEventArgs e)
-        {
-
-        }
-```
+<snippet id='radvirtualgrid-features-editing-block_3-cs' />
 
 ## Methods
 
@@ -121,13 +100,7 @@ When an edit is committed, the new property value needs to be manually pushed to
 * __PushCellValue(int rowIndex, int columnIndex, object value)__
 
 __Example 2: Updating RadVirtualGrid with the modified data__  	
-```C#
-	private void VirtualGrid_CellEditEnded(object sender, 
-            Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
-        {
-            this.VirtualGrid.PushCellValue(e.RowIndex, e.ColumnIndex, e.Value);
-        }
-```
+<snippet id='radvirtualgrid-features-editing-block_4-cs' />
 
 ## EditTriggers
 

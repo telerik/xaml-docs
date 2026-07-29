@@ -295,36 +295,7 @@ The table below lists the recommended palettes for each of the [available themes
 |Office_Blue|Light|
 
 __Example 1: Change the palette when using a specific theme__
-```C#
-    
-    switch (theme)
-    {
-       case "Crystal_Dark":
-			this.syntaxEditor.Palette = SyntaxPalettes.Dark;
-			break;
-		case "Fluent_Dark":
-			this.syntaxEditor.Palette = SyntaxPalettes.Dark;
-			break;
-		case "Green_Light":
-			this.syntaxEditor.Palette = SyntaxPalettes.Neutral;
-			break;
-		case "Green_Dark":
-			this.syntaxEditor.Palette = SyntaxPalettes.NeutralDark;
-			break;
-		case "VisualStudio2013_Dark":
-			this.syntaxEditor.Palette = SyntaxPalettes.Dark;
-			break;
-		case "Expression_Dark":
-			this.syntaxEditor.Palette = SyntaxPalettes.NeutralDark;
-			break;
-		case "Transparent":
-			this.syntaxEditor.Palette = SyntaxPalettes.Neutral;
-			break;
-		default:
-			this.syntaxEditor.Palette = SyntaxPalettes.Light;
-			break;
-    }
-```
+<snippet id='radsyntaxeditor-features-palettes-block_1-cs' />
 
 ## Custom Palettes
 
@@ -335,15 +306,7 @@ If you want to customize the colors shown in your RadSyntaxEditor control, you c
 ### Modify a Default Palette
 
 __Example 2: Modifying a default palette in XAML__
-```XAML
-    
-    <Grid xmlns:palettes="clr-namespace:Telerik.Windows.Controls.SyntaxEditor.Palettes;assembly=Telerik.Windows.Controls.SyntaxEditor">
-        <Grid.Resources>
-            <palettes:LightPalette x:Key="ModifiedLightPalette" KeywordColor="Green" CommentColor="Red" />
-        </Grid.Resources>
-        <telerik:RadSyntaxEditor x:Name="syntaxEditor" Palette="{StaticResource ModifiedLightPalette}"/>
-    </Grid>
-```
+<snippet id='radsyntaxeditor-features-palettes-block_2-xaml' />
 
 #### Figure 2: RadSyntaxEditor with a modified Light palette
 ![RadSyntaxEditor with a modified Light palette](images/syntaxeditor-modified-palette.png)
@@ -351,23 +314,7 @@ __Example 2: Modifying a default palette in XAML__
 ### Create a Custom Palette
 
 __Example 3: Creating a custom SyntaxEditorPalette in code-behind__
-```C#
-    
-    var customPalette = new SyntaxEditorPalette();
-    customPalette.KeywordColor = (Color)ColorConverter.ConvertFromString("#3232eb");
-    customPalette.PreprocessorKeywordColor = (Color)ColorConverter.ConvertFromString("#848484");
-    customPalette.CommentColor = (Color)ColorConverter.ConvertFromString("#006633");
-    customPalette.IdentifierColor = (Color)ColorConverter.ConvertFromString("#000000");
-    customPalette.OperatorColor = (Color)ColorConverter.ConvertFromString("#323232");
-    customPalette.XmlAttributeColor = (Color)ColorConverter.ConvertFromString("#cc2828");
-    customPalette.XmlElementColor = (Color)ColorConverter.ConvertFromString("#824910");
-    customPalette.XmlCommentColor = (Color)ColorConverter.ConvertFromString("#007b00");
-    customPalette.XmlContentColor = (Color)ColorConverter.ConvertFromString("#474747");
-    customPalette.XmlStringColor = (Color)ColorConverter.ConvertFromString("#0066cc");
-    customPalette.XmlCharacterDataColor = (Color)ColorConverter.ConvertFromString("#0066cc");
-    customPalette.XmlTagColor = (Color)ColorConverter.ConvertFromString("#7070ff");
-    this.syntaxEditor.Palette = customPalette;
-```
+<snippet id='radsyntaxeditor-features-palettes-block_3-cs' />
 
 #### Figure 2: RadSyntaxEditor with a custom palette
 ![RadSyntaxEditor with a custom palette](images/syntaxeditor-custom-palette.png)

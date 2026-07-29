@@ -27,46 +27,10 @@ The **CellLoaded** event handler receives two arguments:
 **Example 1** uses the CellLoaded event to handle the left-click on a **GridViewCell** and **GridViewHeaderCell**.
 
 __Example 1: Handling CellLoaded__
-```C#
-	private void RadGridView_CellLoaded(object sender, RowLoadedEventArgs e)  
-	{  
-		if (e.Cell is GridViewHeaderCell)
-		{
-			e.Cell.AddHandler(GridViewHeaderCell.MouseLeftButtonDownEvent, new MouseButtonEventHandler(OnHeaderCellMouseLeftButtonDown), true);
-		}
-		else if (e.Cell is GridViewCell)
-		{
-			e.Cell.AddHandler(GridViewCell.MouseLeftButtonDownEvent, new MouseButtonEventHandler(OnCellMouseLeftButtonDown), true);
-		}
-	}
+<snippet id='radgridview-how-to-handle-cell-row-mouse-events-example_1_handling_cellloaded-cs' />
 
-	private void OnHeaderCellMouseLeftButtonDown(object sender, MouseButtonEventArgs mouseButtonEventArgs)
-	{
-	    MessageBox.Show("Left-clicked header cell!");
-	}
+<snippet id='radgridview-how-to-handle-cell-row-mouse-events-example_1_handling_cellloaded-vb' />
 
-	private void OnCellMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-	{
-		MessageBox.Show("Left-clicked cell!");
-	}
-```
-```VB.NET
-	Private Sub RadGridView_CellLoaded(ByVal sender As Object, ByVal e As RowLoadedEventArgs)
-		If TypeOf e.Cell Is GridViewHeaderCell Then
-			e.Cell.AddHandler(GridViewHeaderCell.MouseLeftButtonDownEvent, New MouseButtonEventHandler(OnHeaderCellMouseLeftButtonDown), True)
-		ElseIf TypeOf e.Cell Is GridViewCell Then
-			e.Cell.AddHandler(GridViewCell.MouseLeftButtonDownEvent, New MouseButtonEventHandler(AddressOf OnCellMouseLeftButtonDown), True)
-		End If
-	End Sub
-
-	Private Sub OnHeaderCellMouseLeftButtonDown(ByVal sender As Object, ByVal mouseButtonEventArgs As MouseButtonEventArgs)
-		MessageBox.Show("Left-clicked header cell!")
-	End Sub
-
-	Private Sub OnCellMouseLeftButtonDown(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
-		MessageBox.Show("Left-clicked cell!")
-	End Sub
-```
 
 ## CellUnloaded event
 
@@ -81,19 +45,10 @@ The **CellUnloaded** event handler receives two arguments:
 A common scenario in which the CellUnloaded can be used is to remove the handler(s) added in the CellLoaded event.
 
 __Example 2: Handling CellUnloaded__
-```C#
-	private void RadGridView_CellUnloaded(object sender, CellEventArgs e)
-	{
-		e.Cell.RemoveHandler(GridViewHeaderCell.MouseLeftButtonDownEvent, new MouseButtonEventHandler(OnHeaderCellMouseLeftButtonDown));
-		e.Cell.RemoveHandler(GridViewHeaderCell.MouseLeftButtonDownEvent, new MouseButtonEventHandler(OnCellMouseLeftButtonDown));
-	}
-```
-```VB.NET
-	Private Sub RadGridView_CellUnloaded(ByVal sender As Object, ByVal e As CellEventArgs)
-		e.Cell.RemoveHandler(GridViewHeaderCell.MouseLeftButtonDownEvent, New MouseButtonEventHandler(OnHeaderCellMouseLeftButtonDown))
-		e.Cell.RemoveHandler(GridViewHeaderCell.MouseLeftButtonDownEvent, New MouseButtonEventHandler(OnCellMouseLeftButtonDown))
-	End Sub
-```
+<snippet id='radgridview-how-to-handle-cell-row-mouse-events-example_2_handling_cellunloaded-cs' />
+
+<snippet id='radgridview-how-to-handle-cell-row-mouse-events-example_2_handling_cellunloaded-vb' />
+
 
 ## RowLoaded Event
 
@@ -114,35 +69,10 @@ The **RowLoaded** event handler receives two arguments:
 **Example 1** uses the RowLoaded event to handle the right-click on a **GridViewRow**.
 
 __Example 3: Handling RowLoaded\RowUnloaded__
-```C#
-	private void RadGridView_RowLoaded(object sender, RowLoadedEventArgs e)  
-	{  
-		if (e.Row is GridViewRow && !(e.Row is GridViewNewRow))  
-	    {  
-	    	e.Row.AddHandler(GridViewRow.MouseRightButtonDownEvent, new MouseButtonEventHandler(OnMouseRightButtonDown), true);
-	    }  
-	}
+<snippet id='radgridview-how-to-handle-cell-row-mouse-events-example_3_handling_rowloaded_rowunloaded-cs' />
 
-	private void OnMouseRightButtonDown(object sender, MouseButtonEventArgs mouseButtonEventArgs)
-	{
-		var row = sender as GridViewRow;
-		var club = row.DataContext as Club;
-		MessageBox.Show($"Right-clicked {club.Name}!");
-	}
-```
-```VB.NET
-	Private Sub RadGridView_RowLoaded(ByVal sender As Object, ByVal e As RowLoadedEventArgs)
-		If TypeOf e.Row Is GridViewRow AndAlso Not (TypeOf e.Row Is GridViewNewRow) Then
-			e.Row.AddHandler(GridViewRow.MouseRightButtonDownEvent, New MouseButtonEventHandler(OnMouseRightButtonDown), True)
-		End If
-	End Sub
+<snippet id='radgridview-how-to-handle-cell-row-mouse-events-example_3_handling_rowloaded_rowunloaded-vb' />
 
-	Private Sub OnMouseRightButtonDown(ByVal sender As Object, ByVal mouseButtonEventArgs As MouseButtonEventArgs)
-		Dim row = TryCast(sender, GridViewRow)
-		Dim club = TryCast(row.DataContext, Club)
-		MessageBox.Show($"Right-clicked {club.Name}!")
-	End Sub
-```
 
 ## RowUnloaded event
 
@@ -163,14 +93,7 @@ The **RowUnloaded** event handler receives two arguments:
 A common scenario in which the RowUnloaded can be used is to remove the handler(s) added in the RowLoaded event.
 
 __Example 4: Handling CellUnloaded__
-```C#
-	private void RadGridView_RowUnloaded(object sender, RowUnloadedEventArgs e)
-	{
-		e.Row.RemoveHandler(GridViewRow.MouseRightButtonDownEvent, new MouseButtonEventHandler(OnMouseRightButtonDown));
-	}
-```
-```VB.NET
-	Private Sub RadGridView_RowUnloaded(ByVal sender As Object, ByVal e As RowUnloadedEventArgs)
-		e.Row.RemoveHandler(GridViewRow.MouseRightButtonDownEvent, New MouseButtonEventHandler(OnMouseRightButtonDown))
-	End Sub
-```
+<snippet id='radgridview-how-to-handle-cell-row-mouse-events-example_4_handling_cellunloaded-cs' />
+
+<snippet id='radgridview-how-to-handle-cell-row-mouse-events-example_4_handling_cellunloaded-vb' />
+

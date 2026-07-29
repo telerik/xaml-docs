@@ -17,16 +17,8 @@ To set up the indicator you can set its __CategoryBinding, ValueBinding and Item
 To set the number of standard deviations used to calculate the indicator values you can use the __StandardDeviations__ property. And the stroke of the lower band is set via __LowerBandStroke__ property.
 
 __Example 1: Defining BollingerBandsIndicator__
-```XAML
-	 <telerik:RadCartesianChart.Indicators>
-		  <telerik:BollingerBandsIndicator Period="5" 
-                                           StandardDeviations="2"
-                                           LowerBandStroke="Black"
-                                           CategoryBinding="Date"                                             
-                                           ValueBinding="Close"
-                                           ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-bollingerbandsindicator-example_1_defining_bollingerbandsindicator-xaml' />
+
 
 #### Figure 1: BollingerBandsIndicator
 <img src="images/radchartview-indicators-bollingerbandsindicator-0.png" style="width: 80%;">

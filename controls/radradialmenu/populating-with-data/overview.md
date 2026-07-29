@@ -16,14 +16,7 @@ In order to add items you need to use the __RadialMenu's Items__ property. The _
 
 __Example 1: Adding parent items__
 
-```XAML
-	<telerik:RadRadialMenu>
-	    <telerik:RadRadialMenuItem Header="File" />
-	    <telerik:RadRadialMenuItem Header="Upload" />
-	    <telerik:RadRadialMenuItem Header="Mail" />
-	    <telerik:RadRadialMenuItem Header="Favorites" />
-	</telerik:RadRadialMenu>
-```
+<snippet id='radradialmenu-populating-with-data-overview-block_1-xaml' />
 
 Figure 1: Adding parent items
 ![Rad Radial Menu Populating with data 01](images/RadRadialMenu_Populating_with_data_01.png)
@@ -32,19 +25,7 @@ Each of the __RadRadialMenuItems__ can have child items that are defined in the 
 
 __Example 2: Adding child items__
 
-```XAML
-	<telerik:RadRadialMenu Margin="50">
-	    <telerik:RadRadialMenuItem Header="File" />
-	    <telerik:RadRadialMenuItem Header="Upload" />
-	    <telerik:RadRadialMenuItem Header="Mail">
-	        <telerik:RadRadialMenuItem Header="Inbox" />
-	        <telerik:RadRadialMenuItem Header="Drafts" />
-	        <telerik:RadRadialMenuItem Header="Sent" />
-	        <telerik:RadRadialMenuItem Header="Deleted" />
-	    </telerik:RadRadialMenuItem>
-	    <telerik:RadRadialMenuItem Header="Favorites" />
-	</telerik:RadRadialMenu>
-```
+<snippet id='radradialmenu-populating-with-data-overview-block_2-xaml' />
 
 Clicking on the navigate button of the parent item will navigate to its child items:
 

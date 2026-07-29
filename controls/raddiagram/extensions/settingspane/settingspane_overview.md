@@ -27,13 +27,8 @@ In most __Diagramming__ examples you will find the __SettingsPane__ applied as a
 >tip xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
 
 __Example 1: Adding SettingsPane in XAML__
-```XAML
-	<telerik:RadDiagram x:Name="diagram">
-	    <primitives:ItemInformationAdorner.AdditionalContent>
-	        <telerik:SettingsPane Diagram="{Binding ElementName=diagram}" />
-	    </primitives:ItemInformationAdorner.AdditionalContent>
-	</telerik:RadDiagram>
-```
+<snippet id='raddiagram-extensions-settingspane-settingspane-overview-example_1_adding_settingspane_in_xaml-xaml' />
+
     
 ![Rad Diagram Settings Pane Overview](images/RadDiagram_SettingsPane_Overview.png)
 

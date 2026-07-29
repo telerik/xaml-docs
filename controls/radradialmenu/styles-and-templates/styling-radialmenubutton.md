@@ -28,45 +28,7 @@ The default Style could be extracted from the UI for {% if site.site_name == 'Si
 
 __Example 1: Extracting the default Style__
 
-```XAML
-	<UserControl.Resources>
-	    <Style x:Key="RadialMenuButtonStyle" TargetType="telerik:RadialMenuButton">
-	        <Setter Property="BorderThickness" Value="2"/>
-	        <Setter Property="BorderBrush" Value="{StaticResource RadialMenuButtonBorderBrush}"/>
-	        <Setter Property="Background" Value="{StaticResource RadialMenuButtonBackgroundBrush}"/>
-	        <Setter Property="Foreground" Value="{StaticResource RadialMenuButtonForegroundBrush}"/>
-	        <Setter Property="MinWidth" Value="0"/>
-	        <Setter Property="Width" Value="45"/>
-	        <Setter Property="Height" Value="45"/>
-	        <Setter Property="VerticalAlignment" Value="Top"/>
-	        <Setter Property="HorizontalAlignment" Value="Left"/>
-	        <Setter Property="FontWeight" Value="Normal"/>
-	        <Setter Property="FontSize" Value="12"/>
-	        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-	        <Setter Property="ContentTemplate">
-	            <Setter.Value>
-	                <DataTemplate>
-	                    <!--...-->
-	                </DataTemplate>
-	            </Setter.Value>
-	        </Setter>
-	        <Setter Property="BackContentTemplate">
-	            <Setter.Value>
-	                <DataTemplate>
-	                    <!--...-->
-	                </DataTemplate>
-	            </Setter.Value>
-	        </Setter>
-	        <Setter Property="Template">
-	            <Setter.Value>
-	                <ControlTemplate TargetType="telerikRadialMenu:RadialMenuButton">
-	                    <!--...-->
-	                </ControlTemplate>
-	            </Setter.Value>
-	        </Setter>
-	    </Style>
-	</UserControl.Resources>
-```
+<snippet id='radradialmenu-styles-and-templates-styling-radialmenubutton-block_1-xaml' />
 
 Note the __ContentTemplate__ and __BackContentTemplate__ properties inside the __RadialMenuButtonStyle__ - they are used depending on the state of the __RadialMenuButton__ - in its normal state the __ContentTemplate__ is used, while in the cases when the __RadialMenuButton__ is used to navigate to parent items, __BackContentTemplate__ is applied.      
 
@@ -78,25 +40,7 @@ We will need to create a new Style based on the default __RadialMenuButtonStyle_
 
 __Example 2: Custom ContentTemplate and BackContentTemplate__
 
-```XAML
-	<Style TargetType="telerik:RadialMenuButton" BasedOn="{StaticResource RadialMenuButtonStyle}">
-	    <Setter Property="Background" Value="#FF00B7E0" />
-	    <Setter Property="ContentTemplate">
-	        <Setter.Value>
-	            <DataTemplate>
-	                <Image Source="28-star.png" Height="24" Width="24" />
-	            </DataTemplate>
-	        </Setter.Value>
-	    </Setter>
-	    <Setter Property="BackContentTemplate">
-	        <Setter.Value>
-	            <DataTemplate>
-	                <TextBlock Text="BACK" Margin="0 4 0 0" FontFamily="Segoe UI Semibold" FontSize="10"/>
-	            </DataTemplate>
-	        </Setter.Value>
-	    </Setter>
-	</Style>
-```
+<snippet id='radradialmenu-styles-and-templates-styling-radialmenubutton-block_2-xaml' />
 
 __Figure 1__ shows the final result.      
 

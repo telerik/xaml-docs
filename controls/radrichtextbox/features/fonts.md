@@ -35,72 +35,36 @@ When initializing, **RadRichTextBox** loads its default fonts so they can be use
 {% endif %}
 
 #### [C#] Example 1: Setting font to a Span
-```C#
-
-    Span span = new Span();
-    span.FontFamily = new FontFamily("Arial");
-```
+<snippet id='radrichtextbox-features-fonts-block_1-cs' />
 
 #### [VB.NET] Example 1: Setting font to a Span
-```VB.NET
-
-    Dim span As Span = New Span()
-    span.FontFamily = New FontFamily("Arial")
-```
+<snippet id='radrichtextbox-features-fonts-block_2-vb' />
 
 To ensure the font you would like to use is registered and available for the control, you can use the **HasRegisteredFontFamily()** method of **FontManager**.
 
 #### [C#] Example 2: Ensuring font is registered before using it
-```C#
-
-    FontFamily fontFamily = new FontFamily("Arial");
-    if (FontManager.HasRegisteredFontFamily(fontFamily))
-    {
-        Span span = new Span();
-        span.FontFamily = fontFamily;
-    }
-```
+<snippet id='radrichtextbox-features-fonts-block_3-cs' />
 
 #### [VB.NET] Example 2: Ensuring font is registered before using it
-```VB.NET
-
-     Dim fontFamily As FontFamily = New FontFamily("Arial")
-
-    If FontManager.HasRegisteredFontFamily(fontFamily) Then
-        Dim span As Span = New Span()
-        span.FontFamily = fontFamily
-    End If 
-```
+<snippet id='radrichtextbox-features-fonts-block_4-vb' />
 
 Through the **FontManager** class, you can also traverse all the fonts that are currently registered and can be used in **RadRichTextBox**.
 
 #### [C#] Example 3: Obtain all registered fonts
-```C#
-
-    RegisteredFonts registeredFonts = FontManager.GetRegisteredFonts();
-```
+<snippet id='radrichtextbox-features-fonts-block_5-cs' />
 
 #### [VB.NET] Example 3: Obtain all registered fonts
-```VB.NET
-
-    Dim registeredFonts As RegisteredFonts = FontManager.GetRegisteredFonts()
-```
+<snippet id='radrichtextbox-features-fonts-block_6-vb' />
 
 ## Custom Fonts
 
 You might encounter a case where specific font is not installed on the machine. In this scenario, you can register it as a custom one and ensure that the users have access to it and can use it. All you need to do is to invoke the **RegisterFont()** method.
 
 #### [C#] Example 4: Register font
-```C#
-
-    FontManager.RegisterFont(new FontFamily("Helvetica"));
-```
+<snippet id='radrichtextbox-features-fonts-block_7-cs' />
 
 #### [VB.NET] Example 4: Register font
-```VB.NET
-
-    FontManager.RegisterFont(New FontFamily("Helvetica"))
-```
+<snippet id='radrichtextbox-features-fonts-block_8-vb' />
 
 {% if site.site_name == 'Silverlight' %}
 >When **registering custom fonts** in **Silverlight**, you might encounter a limitation where a TextBlock, using that font-family shall be added in the visual tree in order the font to be applied.
@@ -111,16 +75,10 @@ Once you have the font registered, you can use it as you would do with any other
 In case you need to remove a font so that it cannot be used in the control, RadRichTextBox enables you to achieve that by simply unregistering that font.
 
 #### [C#] Example 5: Unregister font
-```C#
-
-    FontManager.UnregisterFont(new FontFamily("Helvetica"));
-```
+<snippet id='radrichtextbox-features-fonts-block_9-cs' />
 
 #### [VB.NET] Example 5: Unregister font
-```VB.NET
-
-    FontManager.UnregisterFont(New FontFamily("Helvetica"))
-```
+<snippet id='radrichtextbox-features-fonts-block_10-vb' />
 
 
 ## See Also

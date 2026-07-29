@@ -26,19 +26,8 @@ To set a filter for the __RadOpenFileDialog__ dialog you can set the __Filter__ 
 
 __Example 1: Set Filter property of RadOpenFileDialog__
 
-```C#
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.FileName = "Document";
-	openFileDialog.Filter = "Word Documents|\*.doc|Excel Worksheets|\*.xls;\*.xlsx|" +
-							"PowerPoint Presentations|\*.ppt" +
-							"|Office Files|\*.doc;\*.xls;\*.xlsx;\*.ppt" +
-							"|Image Files|\*.jpg;\*.png" +
-							"|Text Files|\*.txt;" +
-							"|Archives Files|\*.zip;\*.rar" +
-							"|All Files|\*.\*";
-	openFileDialog.FilterIndex = 2;
-	openFileDialog.ShowDialog();
-```
+<snippet id='radfiledialogs-features-filtering-example_1_set_filter_property_of_radopenfiledialog-cs' />
+
 
 #### __Figure 1: Filter combo box visualization in RadOpenFileDialog__
 
@@ -52,19 +41,8 @@ To set a filter for the __RadSaveFileDialog__ dialog you can set the __Filter__ 
 
 __Example 2: Set Filter property of RadSaveFileDialog__
 
-```C#
-	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
-	saveFileDialog.FileName = "Document";
-	saveFileDialog.Filter = "Word Documents|\*.doc|Excel Worksheets|\*.xls;\*.xlsx|" +
-							"PowerPoint Presentations|\*.ppt" +
-							"|Office Files|\*.doc;\*.xls;\*.xlsx;\*.ppt" +
-							"|Image Files|\*.jpg;\*.png" +
-							"|Text Files|\*.txt;" +
-							"|Archives Files|\*.zip;\*.rar" +
-							"|All Files|\*.\*";
-	saveFileDialog.FilterIndex = 2;
-	saveFileDialog.ShowDialog();
-```
+<snippet id='radfiledialogs-features-filtering-example_2_set_filter_property_of_radsavefiledialog-cs' />
+
 
 #### __Figure 2: Filter combo box visualization in RadSaveFileDialog__
 

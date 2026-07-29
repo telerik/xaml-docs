@@ -19,14 +19,7 @@ The `RadMenu` allows you to display an icon for each of the menu items. This can
 When using static items you can directly access the Icon property of each item. Respectively you can set it directly:
 
 __Setting the Icon property declaratively__
-```XAML
-	<telerik:RadMenuItem Header="New File">
-	    <telerik:RadMenuItem.Icon>
-	        <Image Source="/Images/newFile.png" 
-	               Stretch="UniformToFill" />
-	    </telerik:RadMenuItem.Icon>
-	</telerik:RadMenuItem>
-```
+<snippet id='radmenu-features-icons-block_1-xaml' />
 
 __RadMenuItems with their Icon property set__
 
@@ -41,85 +34,20 @@ When using dynamic items, you have to bind the Icon property to a property of th
 Let's assume you've defined the following class which exposes the icon Uri as well as a read-only property which returns an image from this Uri.
 
 __MenuItem class with Uri and Image properties__
-```C#
-	public class MenuItem
-	{
-	    //...
-	
-	    public Uri IconUrl
-	    {
-	        get;
-	        set;
-	    }
-	
-	    public Image Icon
-	    {
-	        get
-	        {
-	            return new Image()
-	            {
-	                Source = new BitmapImage(this.IconUrl)
-	            };
-	        }
-	    }
-	
-	    //...
-	}
-```
-```VB.NET
-	Public Class MenuItem
-	    '...
-	    Public Property IconUrl() As Uri
-	        Get
-	        End Get
-	        Set(value As Uri)
-	        End Set
-	    End Property
-	    Public ReadOnly Property Icon() As Image
-	        Get
-	            Dim img As New Image()
-	            img.Source = New BitmapImage(Me.IconUrl)
-	            Return img
-	        End Get
-	    End Property
-	    '...
-	End Class
-```
+<snippet id='radmenu-features-icons-block_2-cs' />
+<snippet id='radmenu-features-icons-block_2-vb' />
 
 You can then bind the Icon using any of the two properties. Following the example from the [Binding to Dynamic Data]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}) article, you can add the following setters to `ItemContainerStyle`.
 
 * If you wish to bind directly to a property of type Image:
 
 	__Setting the Icon property to an Image__
-	```XAML
-		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-		<Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource RadMenuItemStyle}">--> 
-		
-		<Style x:Key="MenuItemStyle" TargetType="telerik:RadMenuItem">
-			<!-- ... -->
-			<Setter Property="Icon" Value="{Binding Icon}" />
-		</Style>
-	```
+	<snippet id='radmenu-features-icons-block_3-xaml' />
 
 * If you wish to bind directly to a property of type Uri/string:
 
 	__Setting the Icon property to an Uri/string__
-	```XAML
-		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-		<Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource RadMenuItemStyle}">--> 
-
-        <Style x:Key="MenuItemStyle" TargetType="telerik:RadMenuItem">
-			<!-- ... -->
-            <Setter Property="Icon" Value="{Binding IconUrl}" />
-            <Setter Property="IconTemplate" >
-                <Setter.Value>
-                    <DataTemplate>
-                        <Image Source="{Binding}" Stretch="UniformToFill"/>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-	```
+	<snippet id='radmenu-features-icons-block_4-xaml' />
 
 <!-- -->
 
@@ -137,18 +65,7 @@ The `RadMenuItem` element exposes the `ItemIconPosition` property that allows fo
 * `Right`&mdash;The icon will be displayed on the right side of the RadMenuItem's content.
 
 __Setting the ItemIconPosition property to Right__
-```XAML
-	<telerik:RadMenu>
-	    <telerik:RadMenuItem Header="Options">
-	        <telerik:RadMenuItem Header="Save" ItemIconPosition="Right">
-	            <telerik:RadMenuItem.Icon>
-	                <Image Source="/Images/save.png" 
-	           	       	   Stretch="UniformToFill"/>
-	            </telerik:RadMenuItem.Icon>
-	        </telerik:RadMenuItem>
-	    </telerik:RadMenuItem>
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-features-icons-block_5-xaml' />
 
 __RadMenuItem with its icon positioned on the right__
 

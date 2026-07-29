@@ -19,18 +19,7 @@ __DocxFormatProvider__ exposes __ExportSettings__, which allow customization in 
 __Example 1__ shows you how you can get a reference to the format provider used by the OpenDocumentCommand and the SaveCommand and adjust the export, so that the document is saved as a template:
 
 __Example 1: Setup default DocxFormatProvider__
-```C#
-	public void SetupDefaultDocxFormatProvider()
-	{
-		//Obtain a reference to the format provider used by the default UI - RadRichTextBoxRibbonUI
-		DocxFormatProvider docxFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("docx") as DocxFormatProvider;
-
-		DocxExportSettings docxExportSettings = new DocxExportSettings();
-		docxExportSettings.FieldResultMode = FieldDisplayMode.DisplayName;
-
-		docxFormatProvider.ExportSettings = docxExportSettings;
-	}
-```
+<snippet id='radrichtextbox-import-export-docx-settings-block_1-cs' />
 
 The __FieldResultMode__ property of the __DocxExportSettings__ is an enumeration and it allows the following values:
 

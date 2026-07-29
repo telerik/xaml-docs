@@ -54,9 +54,7 @@ The **SectionColumnCollection** class contains the information about the text co
 **Example 1** demonstrates how you can create an instance of the SectionColumnCollection class that represents two text columns with a custom space and a separator between them.
 
 #### **[C#] Example 1: Create SectionColumnCollection**
-```C#
-	SectionColumnCollection sectionColumnCollection = new SectionColumnCollection(2, 75, true);
-```
+<snippet id='radrichtextbox-features-section-columns-block_1-cs' />
 
 
 __Figure 2__ demonstrates the result of __Example 1__.
@@ -74,9 +72,7 @@ Depending on whether you prefer to insert columns with equal width or assign a s
 To create text columns with equal width, you could directly use the SectionColumnCollection constructor overloads that allow you to specify the number of columns you would like to insert. **Example 2** shows how to apply the SectionColumnCollection instance, created in **Example 1** to a Section object.
 
 #### **[C#] Example 2: Apply columns with equal width**
-```C#
-	section.Columns = sectionColumnCollection;
-```
+<snippet id='radrichtextbox-features-section-columns-block_2-cs' />
 
 
 ### Apply Columns With Different Width
@@ -84,18 +80,7 @@ To create text columns with equal width, you could directly use the SectionColum
 The API allows you to create the columns separately from each other with the SectionColumn class. Then, the created columns could be united in a single SectionColumnCollection and applied to a Section. **Example 3** creates a collection of 3 columns with different settings and applies it.
 
 #### **[C#] Example 3: Apply columns with different width**
-```C#
-
-	IEnumerable<SectionColumn> columns = new List<SectionColumn>()
-	{
-	    new SectionColumn(100, 5),
-	    new SectionColumn(200, 10),
-	    new SectionColumn(300, 15)
-	};
-	
-	SectionColumnCollection sectionColumnCollection = new SectionColumnCollection(columns);
-	section.Columns = sectionColumnCollection;
-```
+<snippet id='radrichtextbox-features-section-columns-block_3-cs' />
 
 ### Apply Columns With RadDocumentEditor
 
@@ -114,9 +99,7 @@ The **SectionColumnsLayout** enumeration could have the following values:
 * **Right**: Represents two text columns where the right one has a smaller width than the left one.
 
 #### **[C#] Example 4: Apply columns through editor**
-```C#
-	editor.ChangeSectionColumns(SectionColumnsLayout.Left);
-```
+<snippet id='radrichtextbox-features-section-columns-block_4-cs' />
 
 
 #### __Figure 3: SectionColumnsLayout.Left applied on a section__

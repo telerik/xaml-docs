@@ -39,59 +39,7 @@ However, there are some cases when MEF cannot find the assemblies and load the t
 
 __Example 1: Defining the catalog of types used by RadRichTextBox__
 
-```C#
-	RadCompositionInitializer.Catalog = new TypeCatalog(
-	    // format providers
-	    typeof(XamlFormatProvider),
-	    typeof(RtfFormatProvider),
-	    typeof(DocxFormatProvider),
-	    typeof(PdfFormatProvider),
-	    typeof(HtmlFormatProvider),
-	    typeof(TxtFormatProvider),
-	
-	    // mini toolbars
-	    typeof(SelectionMiniToolBar),
-	    typeof(ImageMiniToolBar),
-	
-	    // context menu
-	    typeof(Telerik.Windows.Controls.RichTextBoxUI.ContextMenu),
-	
-	    // the default English spellchecking dictionary
-	    typeof(RadEn_USDictionary),
-	
-	    // dialogs
-	    typeof(AddNewBibliographicSourceDialog),
-	    typeof(ChangeEditingPermissionsDialog),
-	    typeof(CodeFormattingDialog),
-	    typeof(EditCustomDictionaryDialog),
-	    typeof(FindReplaceDialog),
-	    typeof(FloatingBlockPropertiesDialog),
-	    typeof(FontPropertiesDialog),
-	    typeof(ImageEditorDialog),
-	    typeof(InsertCaptionDialog),
-	    typeof(InsertCrossReferenceWindow),
-	    typeof(InsertDateTimeDialog),
-	    typeof(InsertTableDialog),
-	    typeof(InsertTableOfContentsDialog),
-	    typeof(ManageBibliographicSourcesDialog),
-	    typeof(ManageBookmarksDialog),
-	    typeof(ManageStylesDialog),
-	    typeof(NotesDialog),
-	    typeof(ProtectDocumentDialog),
-	    typeof(RadInsertHyperlinkDialog),
-	    typeof(RadInsertSymbolDialog),
-	    typeof(RadParagraphPropertiesDialog),
-	    typeof(SectionColumnsDialog),
-	    typeof(SetNumberingValueDialog),
-	    typeof(SpellCheckingDialog),
-	    typeof(StyleFormattingPropertiesDialog),
-	    typeof(TableBordersDialog),
-	    typeof(TablePropertiesDialog),
-	    typeof(TabStopsPropertiesDialog),
-	    typeof(UnprotectDocumentDialog),
-	    typeof(WatermarkSettingsDialog)
-	    );
-```
+<snippet id='radrichtextbox-troubleshooting-common-problems-block_1-cs' />
 
 This can be done on application start-up or in the constructor of your page, just before InitializeComponent().
 
@@ -116,14 +64,7 @@ The exception is reproducible only in scenarios with heavy usage of new threads.
 
 #### **[C#] Example 2: Shut down Dispatcher of a thread**
 
-```C#
-
-    Thread thread = new Thread(() =>
-    {
-        // Thread logic
-        System.Windows.Threading.Dispatcher.CurrentDispatcher.BeginInvokeShutdown(System.Windows.Threading.DispatcherPriority.Normal);
-    });
-```
+<snippet id='radrichtextbox-troubleshooting-common-problems-block_2-cs' />
 
 ## See Also
 

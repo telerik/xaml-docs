@@ -25,13 +25,7 @@ In order to display the current time indicator, you must set the __ShowCurrentTi
 
 __Example 1: Enable CurrentTimeIndicator__
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowCurrentTimeIndicator="True">            
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition />               
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>	
-```
+<snippet id='radscheduleview-features-currenttimeindicator-block_1-xaml' />
 
 Running the code from __Example 1__ will result in RadScheduleView with current time marked as shown in __Figure 1__.
 
@@ -48,15 +42,7 @@ As of R2 2016, you can show the CurrentTimeIndicator not only in the TimeRuler o
 
 __Example 2: Set CurrentTimeIndicatorLocation__
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
-		ShowCurrentTimeIndicator="True"
-		CurrentTimeIndicatorLocation="WholeArea">            
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition />               
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-currenttimeindicator-block_2-xaml' />
 
 __Figure 2__ shows current time marked across the whole area of RadScheduleView.
 
@@ -73,42 +59,11 @@ __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows h
 
 __Example 3: Define CurrentTimeIndicator Styles__
 
-```XAML
-	<Style x:Key="CurrentTimeIndicatorStyle" TargetType="telerik:CurrentTimeIndicator">
-		<Setter Property="Canvas.ZIndex" Value="2"/>  
-		<Setter Property="Template">
-			<Setter.Value>
-				<ControlTemplate>
-					<Rectangle Margin="0 0 -1 -1" MinWidth="2" MinHeight="2" Fill="Red"/>
-				</ControlTemplate>
-			</Setter.Value>
-		</Setter>
-	</Style>
-	<Style x:Key="CurrentTimeIndicatorAppointmentsAreaStyle" TargetType="telerik:CurrentTimeIndicator">
-		<Setter Property="Canvas.ZIndex" Value="2"/>         
-		<Setter Property="Template">
-			<Setter.Value>
-				<ControlTemplate>
-					<Rectangle Margin="0 0 -1 -1" MinWidth="2" MinHeight="2" Fill="Blue"/>
-				</ControlTemplate>
-			</Setter.Value>
-		</Setter>
-	</Style>
-```
+<snippet id='radscheduleview-features-currenttimeindicator-block_3-xaml' />
 
 __Example 4: Set CurrentTimeIndicator Style Properties__
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
-		ShowCurrentTimeIndicator="True"
-		CurrentTimeIndicatorLocation="WholeArea" 
-        CurrentTimeIndicatorStyle="{StaticResource CurrentTimeIndicatorStyle}" 
-        CurrentTimeIndicatorAppointmentsAreaStyle="{StaticResource CurrentTimeIndicatorAppointmentsAreaStyle}">
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition />               
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-currenttimeindicator-block_4-xaml' />
 
 If you run the application at this stage, you will see RadScheduleView with CurrentTimeIndicator styled in different colors as shown in __Figure 3__.
 
@@ -119,19 +74,7 @@ Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeI
 
 __Example 5: Set AllowCustomSize__
 
-```XAML
-	<Style x:Key="CurrentTimeIndicatorStyle" TargetType="telerik:CurrentTimeIndicator">
-		<Setter Property="Canvas.ZIndex" Value="2"/>
-		<Setter Property="AllowCustomSize" Value="True" />
-		<Setter Property="Template">
-			<Setter.Value>
-				<ControlTemplate>
-					<Rectangle Margin="0 0 -1 -1" MinWidth="2" MinHeight="4" Fill="Red"/>
-				</ControlTemplate>
-			</Setter.Value>
-		</Setter>
-	</Style>
-```
+<snippet id='radscheduleview-features-currenttimeindicator-block_5-xaml' />
 
 Running the application will lead to the result shown in __Figure 4__.
 
@@ -139,5 +82,4 @@ Running the application will lead to the result shown in __Figure 4__.
 ![{{ site.framework_name }} RadScheduleView CurrentTimeIndicator with AllowCustomSize set](images/radscheduleview_currenttimeindicator_3.png)
 
 >tip For more advanced customizations, see the ScheduleView [Custom CurrentTimeIndicator Style](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/CustomCurrentTimeIndicatorStyle) example in our XAML SDK Repository.
-
 

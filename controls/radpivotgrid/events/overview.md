@@ -20,33 +20,11 @@ For example you can use the event in order to replace a __DoubleGroupDescription
 
 
 
-```C#
-	private void OnPrepareDescriptionForField(object sender, Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs e)
-	{
-		// Get the current DoubleGroupDescription description.
-		var doubleGroupDescription = e.Description as DoubleGroupDescription;
-	
-		if (e.DescriptionType == Telerik.Pivot.Core.DataProviderDescriptionType.Group && doubleGroupDescription != null)
-		{
-			// Replace it with PropertyGroupDescription.
-			e.Description = new Telerik.Pivot.Core.PropertyGroupDescription() { PropertyName = doubleGroupDescription.PropertyName };
-		}
-	}
-```
+<snippet id='radpivotgrid-events-overview-block_1-cs' />
 
 #### __VB__
 
-```VB
-	Private Sub OnPrepareDescriptionForField(ByVal sender As Object, ByVal e As Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs)
-		' Get the current DoubleGroupDescription description.
-		Dim doubleGroupDescription = TryCast(e.Description, DoubleGroupDescription)
-	
-		If e.DescriptionType = Telerik.Pivot.Core.DataProviderDescriptionType.Group AndAlso doubleGroupDescription IsNot Nothing Then
-			' Replace it with PropertyGroupDescription.
-			e.Description = New Telerik.Pivot.Core.PropertyGroupDescription() With {.PropertyName = doubleGroupDescription.PropertyName}
-		End If
-	End Sub
-```
+<snippet id='radpivotgrid-events-overview-block_2-vb' />
 
 * __StatusChanged__ - raised whenever the status of the DataProvider is changed. It can be used in order to execute custom logic whenever the DataProvider is updated.            
 
@@ -56,30 +34,11 @@ You can find an example below that demonstrates how to get the current status of
 
 
 
-```C#
-	private void OnDataProviderStatusChanged(object sender, DataProviderStatusChangedEventArgs e)
-	{
-	    if (e.NewStatus == DataProviderStatus.Ready)
-	    {
-	        Dispatcher.BeginInvoke(new Action(() => 
-			{
-				// Execute custom logic here.
-			}));
-	    }
-	}
-```
+<snippet id='radpivotgrid-events-overview-block_3-cs' />
 
 #### __VB__
 
-```VB
-	Private Sub OnDataProviderStatusChanged(ByVal sender As Object, ByVal e As DataProviderStatusChangedEventArgs)
-		If e.NewStatus = DataProviderStatus.Ready Then
-			Dispatcher.BeginInvoke(New Action(Sub()
-				' Execute custom logic here.
-			End Sub))
-		End If
-	End Sub
-```
+<snippet id='radpivotgrid-events-overview-block_4-vb' />
 
 >You can also check for errors through the __Error__ property of the arguments.              
 
@@ -91,62 +50,11 @@ You can find an example below that demonstrates how to get the current status of
 
 
 
-```C#
-	private void OnGetDescriptionsDataAsyncCompleted(object sender, GetDescriptionsDataCompletedEventArgs e)
-	{
-		var rootItem = e.DescriptionsData.RootFieldInfo;
-		var allContainers = rootItem.Children.ToList();
-		rootItem.Children.Clear();
-	
-		var firstFolder = new ContainerNode("First Folder", ContainerNodeRole.Folder);
-		var secondFolder = new ContainerNode("Second Folder", ContainerNodeRole.Folder);
-	
-		foreach (var item in allContainers)
-		{
-			if (item.Name == "Product" || item.Name == "Quantity")
-			{
-				firstFolder.Children.Add(item);
-			}
-			else if (item.Name == "Net" || item.Name == "Promotion")
-			{
-				secondFolder.Children.Add(item);
-			}
-			else
-			{
-				rootItem.Children.Add(item);
-			}
-		}
-	
-		rootItem.Children.Add(firstFolder);
-		rootItem.Children.Add(secondFolder);       
-	}
-```
+<snippet id='radpivotgrid-events-overview-block_5-cs' />
 
 #### __VB__
 
-```VB
-	Private Sub OnGetDescriptionsDataAsyncCompleted(ByVal sender As Object, ByVal e As GetDescriptionsDataCompletedEventArgs)
-		Dim rootItem = e.DescriptionsData.RootFieldInfo
-		Dim allContainers = rootItem.Children.ToList()
-		rootItem.Children.Clear()
-	
-		Dim firstFolder = New ContainerNode("First Folder", ContainerNodeRole.Folder)
-		Dim secondFolder = New ContainerNode("Second Folder", ContainerNodeRole.Folder)
-	
-		For Each item In allContainers
-			If item.Name = "Product" OrElse item.Name = "Quantity" Then
-				firstFolder.Children.Add(item)
-			ElseIf item.Name = "Net" OrElse item.Name = "Promotion" Then
-				secondFolder.Children.Add(item)
-			Else
-				rootItem.Children.Add(item)
-			End If
-		Next item
-	
-		rootItem.Children.Add(firstFolder)
-		rootItem.Children.Add(secondFolder)
-	End Sub
-```
+<snippet id='radpivotgrid-events-overview-block_6-vb' />
 
 You can observe the final result on __Figure 1__.
 

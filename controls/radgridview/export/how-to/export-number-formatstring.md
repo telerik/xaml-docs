@@ -26,67 +26,10 @@ When an element is exported through the [ExportToXlsx]({%slug gridview-export-xl
 
 __Example 1: Handling the ElementExportingToDocument event__
 
-```C#
-	private void Grid_ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
-	{
-		if (e.Element == ExportElement.Cell)
-		{
-			var cellExportingArgs = e as GridViewCellExportingEventArgs;
-			if (cellExportingArgs?.Value == null)
-				return;
+<snippet id='radgridview-export-how-to-export-number-formatstring-example_1_handling_the_elementexportingtodocument_event-cs' />
 
-			var tryDouble = double.TryParse(cellExportingArgs.Value.ToString(), out var d);
-			if (tryDouble)
-			{
-				var parameters = cellExportingArgs.VisualParameters as GridViewDocumentVisualExportParameters;
-				parameters.Style = new CellSelectionStyle()
-				{
-					Format = new CellValueFormat("0.00")
-				};
-				cellExportingArgs.Value = d;
-				return;
-			}
+<snippet id='radgridview-export-how-to-export-number-formatstring-example_1_handling_the_elementexportingtodocument_event-vb' />
 
-			var tryInt = int.TryParse(cellExportingArgs.Value.ToString(), out var i);
-			if (tryInt)
-			{
-				var parameters = cellExportingArgs.VisualParameters as GridViewDocumentVisualExportParameters;
-				parameters.Style = new CellSelectionStyle()
-				{
-					Format = new CellValueFormat("0")
-				};
-				cellExportingArgs.Value = i;
-				return;
-			}
-		}
-	}
-```
-```VB.NET
-	Private Sub Grid_ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewElementExportingToDocumentEventArgs)
-		If e.Element = ExportElement.Cell Then
-			Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
-			If cellExportingArgs?.Value Is Nothing Then
-				Return
-			End If
-
-			Dim tryDouble = Double.TryParse(cellExportingArgs.Value.ToString(), var d)
-			If tryDouble Then
-				Dim parameters = TryCast(cellExportingArgs.VisualParameters, GridViewDocumentVisualExportParameters)
-				parameters.Style = New CellSelectionStyle() With {.Format = New CellValueFormat("0.00")}
-				cellExportingArgs.Value = d
-				Return
-			End If
-
-			Dim tryInt = Integer.TryParse(cellExportingArgs.Value.ToString(), var i)
-			If tryInt Then
-				Dim parameters = TryCast(cellExportingArgs.VisualParameters, GridViewDocumentVisualExportParameters)
-				parameters.Style = New CellSelectionStyle() With {.Format = New CellValueFormat("0")}
-				cellExportingArgs.Value = i
-				Return
-			End If
-		End If
-	End Sub
-```
 
 __SOLUTION 2__
 
@@ -94,40 +37,10 @@ If you're exporting RadGridView's data with the [Export]({%slug gridview-export%
 
 __Example 2: Handling the ElementExporting event__
 
-```C#
-	private void Grid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
-	{
-		if (e.Element == ExportElement.Cell)
-		{
-			var tryInt = int.TryParse(e.Value.ToString().Replace(",", ""), out var i);
-			if (tryInt)
-			{
-				e.Value = i;
-			}
+<snippet id='radgridview-export-how-to-export-number-formatstring-example_2_handling_the_elementexporting_event-cs' />
 
-			var tryDouble = double.TryParse(e.Value.ToString().Replace(",", ""), out var d);
-			if (tryDouble)
-			{
-				e.Value = d;
-			}
-		}
-	}
-```
-```VB.NET
-	Private Sub Grid_ElementExporting(ByVal sender As Object, ByVal e As GridViewElementExportingEventArgs)
-		If e.Element = ExportElement.Cell Then
-			Dim tryInt = Integer.TryParse(e.Value.ToString().Replace(",", ""), var i)
-			If tryInt Then
-				e.Value = i
-			End If
+<snippet id='radgridview-export-how-to-export-number-formatstring-example_2_handling_the_elementexporting_event-vb' />
 
-			Dim tryDouble = Double.TryParse(e.Value.ToString().Replace(",", ""), var d)
-			If tryDouble Then
-				e.Value = d
-			End If
-		End If
-	End Sub
-```
 
 ## See Also
 

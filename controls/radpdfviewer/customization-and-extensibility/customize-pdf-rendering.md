@@ -74,37 +74,13 @@ The cod from **Example 1** shows the members that should be implemented when inh
 
 #### **[C#] Example 1: Members of IPdfFilter**
 
-```C#
-	public class CustomFilter : IPdfFilter
-	{
-	    public byte[] Encode(PdfObject encodedObject, byte[] inputData)
-	    {
-	        throw new NotImplementedException();
-	    }
-	
-	    public byte[] Decode(PdfObject decodedObject, byte[] inputData, DecodeParameters parms)
-	    {
-	        throw new NotImplementedException();
-	    }
-	
-	    public string Name { get { return PdfFilterNames.CCITTFaxDecode; } }
-	}
-```
+<snippet id='radpdfviewer-customization-and-extensibility-customize-pdf-rendering-block_1-cs' />
 
 You should also register the filter as demonstrated in **Example 2**:
 
 #### **[C#] Example 2: Register a custom filter**
 
-```C#
-	private PDFAndTiffFilter _filter;
-	
-	public MainWindow()
-	{
-	    _filter = new PDFAndTiffFilter();
-	    FiltersManager.RegisterFilter(_filter);
-	    InitializeComponent();
-	}
-```
+<snippet id='radpdfviewer-customization-and-extensibility-customize-pdf-rendering-block_2-cs' />
 
 The result that a custom filter should return depends on the type of the filter. For the binary filters it is enough to decode the byte array into decoded byte array using the respective algorithm. As for the filters listed below, additional transformation is required.
         

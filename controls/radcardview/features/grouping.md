@@ -30,9 +30,7 @@ The data items can be grouped by dragging a data field descriptor from the [data
 The RadCardView groups support sorting by clicking onto the associated [group member button]({%slug radcardview-visual-structure%}). To disable this, set the __CanUserSortGroups__ property to __False__.
 
 __Example 1: Setting the CanUserSortGroups property__
-```XAML
-	<telerik:RadCardView CanUserSortGroups="False" />
-```
+<snippet id='radcardview-features-grouping-example_1_setting_the_canusersortgroups_property-xaml' />
 
 Additionally, the grouping can be disabled per [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) by setting its __AllowGrouping__ property.
 
@@ -41,60 +39,15 @@ Additionally, the grouping can be disabled per [CardDataFieldDescriptor]({%slug 
 The following example shows how to setup RadCardView, populate it a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and add GroupDescriptors in code.
 
 __Example 2: Defining the model__
-```C#
-	public class CardInfo
-    {
-        public string Header { get; set; }
-        public string Name { get; set; }
-        public int Number { get; set; }
-        public string Category { get; set; }
-    }
-	
-	public class MainViewModel
-    {
-        public ObservableCollection<CardInfo> Items { get; private set; }
-        public QueryableCollectionView CollectionView { get; private set; }
-
-        public MainViewModel()
-        {
-            int counter = 0;
-            Items = new ObservableCollection<CardInfo>();
-            for (int g = 0; g < 3; g++)
-            {
-                for (int i = 0; i < 6; i++)
-                {
-                    Items.Add(new CardInfo()
-                    {
-                        Header = "Card " + counter,
-                        Name = "Name " + counter,
-                        Number = counter,
-                        Category = "Category " + g
-                    });
-                    counter++;
-                }
-            }
-
-            CollectionView = new QueryableCollectionView(Items);
-            CollectionView.GroupDescriptors.Add(new GroupDescriptor() { Member = "Category" });
-        }
-    }
-``` 
+<snippet id='radcardview-features-grouping-example_2_defining_the_model-cs' />
 
 >tip Read the [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}#grouping) to see how to use the GroupDescriptors collection of the QueryableCollectionView.
 
 __Example 3: Setting the DataContext__
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.DataContext = new MainViewModel();
-	}
-```
+<snippet id='radcardview-features-grouping-example_3_setting_the_datacontext-cs' />
 
 __Example 4: Setting up the view__
-```XAML
-	<telerik:RadCardView ItemsSource="{Binding CollectionView}" CardHeaderBinding="{Binding Header}" />
-```
+<snippet id='radcardview-features-grouping-example_4_setting_up_the_view-xaml' />
 
 ## Events
 
@@ -105,9 +58,7 @@ The grouping operations invoke several events that can be used to customize the 
 The [group panel area]({%slug radcardview-visual-structure%}) can be customized using several public properties. To hide the area, set the __ShowGroupPanel__ property to __False__. Read more in the [Customizing Groups]({%slug radcardview-appearance-customizing-groups%}) article.
 
 __Example 5: Setting the ShowGroupPanel property__
-```XAML
-	<telerik:RadCardView ShowGroupPanel="False" />
-```
+<snippet id='radcardview-features-grouping-example_5_setting_the_showgrouppanel_property-xaml' />
 
 ## See Also
 * [Getting Started]({%slug radcardview-getting-started%})

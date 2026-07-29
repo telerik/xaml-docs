@@ -33,14 +33,8 @@ You could do that using one of the following approaches:
 	
 	__Example 1: Merging the .xaml files__
 
-	```XAML
-		<ResourceDictionary>
-		    <ResourceDictionary.MergedDictionaries>
-		        <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.xaml" />
-		        <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
-		    </ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	```
+	<snippet id='raddesktopalert-styles-and-templates-setting-theme-example_1_merging_the_xaml_files-xaml' />
+
 	
 * Add references to the required assemblies from Binaries.NoXaml folder. Create a Themes folder in your project that contains the corresponding .xaml files from Themes.Implicit/../VisualStudio2013/../Themes/ folder located in the installation folder:
 
@@ -51,14 +45,8 @@ You could do that using one of the following approaches:
 
 	__Example 2: Merging the .xaml files__
 
-	```XAML
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
-				<ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	```
+	<snippet id='raddesktopalert-styles-and-templates-setting-theme-example_2_merging_the_xaml_files-xaml' />
+
 	
 Either way you choose, the end result will be the following:
 

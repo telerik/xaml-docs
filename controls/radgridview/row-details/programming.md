@@ -27,50 +27,17 @@ For example, if you have a __RadGridView__ with the following __RowDetailsTempla
 
 __Example 1: Defining the RowDetailsTemplate__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                LoadingRowDetails="radGridView_LoadingRowDetails">
-	    <telerik:RadGridView.RowDetailsTemplate>
-	        <DataTemplate>
-	            <StackPanel Orientation="Horizontal">
-	                <TextBlock Text="City: " />
-	                <TextBlock Text="{Binding City}" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </telerik:RadGridView.RowDetailsTemplate>
-	    <!--...-->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-row-details-programming-example_1_defining_the_rowdetailstemplate-xaml' />
+
 
 You can change the __StackPanel's Background__ depending on is the row alternating:
 
 __Example 2: Setting the Background of the DetailsElement__
 
-```C#
-	private void radGridView_LoadingRowDetails(object sender, GridViewRowDetailsEventArgs e)
-	{
-	    StackPanel element = e.DetailsElement as StackPanel;
-	    if (e.Row.IsAlternating)
-	    {
-	        element.Background = new SolidColorBrush(Colors.Black);
-	    }
-	    else
-	    {
-	        element.Background = new SolidColorBrush(Colors.White);
-	    }
-	}
-```
-```VB.NET
-	Private Sub radGridView_LoadingRowDetails(ByVal sender As Object, ByVal e As GridViewRowDetailsEventArgs)
-	    Dim element As StackPanel = TryCast(e.DetailsElement, StackPanel)
-	
-	    If e.Row.IsAlternating Then
-	        element.Background = New SolidColorBrush(Colors.Black)
-	    Else
-	        element.Background = New SolidColorBrush(Colors.White)
-	    End If
-	End Sub
-```
+<snippet id='radgridview-row-details-programming-example_2_setting_the_background_of_the_detailselement-cs' />
+
+<snippet id='radgridview-row-details-programming-example_2_setting_the_background_of_the_detailselement-vb' />
+
 
 ## Accessing the Expanded Item
 
@@ -78,19 +45,10 @@ The event arguments expose the __Row__ property through which the parent item of
 
 __Example 3: Accessing the expanded item__
 
-```C#
-	private void clubsGrid_LoadingRowDetails(object sender, 
-            Telerik.Windows.Controls.GridView.GridViewRowDetailsEventArgs e)
-        {
-            var club = e.Row.DataContext as Club;
-        }
-```
-```VB.NET
-	Private Sub clubsGrid_LoadingRowDetails(ByVal sender As Object, 
-			ByVal e As Telerik.Windows.Controls.GridView.GridViewRowDetailsEventArgs)
-    		Dim club = TryCast(e.Row.DataContext, Club)
-	End Sub	
-```
+<snippet id='radgridview-row-details-programming-example_3_accessing_the_expanded_item-cs' />
+
+<snippet id='radgridview-row-details-programming-example_3_accessing_the_expanded_item-vb' />
+
 
 * __UnloadingRowDetails__: When the __Row Details DataTemplate__ is modified or deleted, the __UnloadingRowDetails__ event is raised in case you need to perform some cleanup for the old template before the new one is loaded.
 

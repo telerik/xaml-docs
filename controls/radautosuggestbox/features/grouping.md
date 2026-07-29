@@ -17,76 +17,18 @@ The following example shows how to populate the ItemsSource of RadAutoSuggestBox
 > Read more about the GroupStyle object expected by the __GroupStyle__ property in [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.groupstyle?view=netframework-4.5).
 
 __Example 1: Define RadAutoSuggestBox and enable grouping__
-```XAML
-	<telerik:RadAutoSuggestBox x:Name="radAutoSuggestBox" 
-							   DisplayMemberPath="Name" 
-							   TextMemberPath="Name"
-							   TextChanged="RadAutoSuggestBox_TextChanged">
-		<telerik:RadAutoSuggestBox.GroupStyle>
-			<GroupStyle>
-				<GroupStyle.HeaderTemplate>
-					<DataTemplate>
-						<TextBlock Text="{Binding Name}" 
-								   FontSize="18"
-								   Foreground="#27C106" 
-								   Margin="5" />
-					</DataTemplate>
-				</GroupStyle.HeaderTemplate>
-			</GroupStyle>
-		</telerik:RadAutoSuggestBox.GroupStyle>
-	</telerik:RadAutoSuggestBox>
-```
+<snippet id='radautosuggestbox-features-grouping-example_1_define_radautosuggestbox_and_enable_grouping-xaml' />
 
 The GroupStyle setting is required in order to visualize the group headers.
 
 __Example 2: Create model for the items__
-```C#
-	public class SuggestionInfo
-    {
-        public string Name { get; set; }
-        public string GroupKey { get; set; }
-    }
-```
+<snippet id='radautosuggestbox-features-grouping-example_2_create_model_for_the_items-cs' />
 
 __Example 3: Populate the ItemsSource with ICollectionView object and prepare a filter__
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-
-		var source = new ObservableCollection<SuggestionInfo>();
-		for (int i = 0; i < 3; i++)
-		{
-			string currentGroup = "G" + i;
-			for (int k = 0; k < 4; k++)
-			{
-				source.Add(new SuggestionInfo() { Name = "Item " + k, GroupKey = currentGroup });
-			}
-		}
-
-		var collectionView = CollectionViewSource.GetDefaultView(source);
-		collectionView.GroupDescriptions.Add(new PropertyGroupDescription("GroupKey"));
-		collectionView.Filter = new Predicate<object>(FilterItem);
-		this.radAutoSuggestBox.ItemsSource = collectionView;
-	}
-
-	public bool FilterItem(object value)
-	{
-		return ((SuggestionInfo)value).Name.ToLowerInvariant().Contains(this.radAutoSuggestBox.Text.ToLowerInvariant());
-	}
-```
+<snippet id='radautosuggestbox-features-grouping-example_3_populate_the_itemssource_with_icollectionview_object_and_prepare_a_filter-cs' />
 
 __Example 4: Trigger the ICollectionView filtering on TextChanged__
-```C#
-	private void RadAutoSuggestBox_TextChanged(object sender, Telerik.Windows.Controls.AutoSuggestBox.TextChangedEventArgs e)
-	{
-		if (e.Reason == TextChangeReason.UserInput)
-		{
-			var collectionView = (ICollectionView)this.radAutoSuggestBox.ItemsSource;
-			collectionView.Refresh();
-		}
-	}
-```
+<snippet id='radautosuggestbox-features-grouping-example_4_trigger_the_icollectionview_filtering_on_textchanged-cs' />
 
 ![{{ site.framework_name }} RadAutoSuggestBox Grouping](images/radautosuggestbox-features-grouping-0.png)
 

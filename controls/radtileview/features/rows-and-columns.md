@@ -14,28 +14,7 @@ By default all __TileViewItems__ are ordered automatically like in the screensho
 
 
 
-```XAML
-	<telerik:RadTileView>
-		<telerik:RadTileViewItem Header="Item1">
-			<TextBlock Text="Item1 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item2">
-			<TextBlock Text="Item2 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item3">
-			<TextBlock Text="Item3 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item4">
-			<TextBlock Text="Item4 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item5">
-			<TextBlock Text="Item5 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item6">
-			<TextBlock Text="Item6 Content" />
-		</telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-rows-and-columns-block_1-xaml' />
 
 ![{{ site.framework_name }} RadTileView Automatic Rows and Columns](images/radtileview_features_rows_columns_default.png)
 
@@ -45,28 +24,7 @@ To set the number of columns you can use the __ColumnsCount__ property:
 
 
 
-```XAML
-	<telerik:RadTileView ColumnsCount="2">
-		<telerik:RadTileViewItem Header="Item1">
-			<TextBlock Text="Item1 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item2">
-			<TextBlock Text="Item2 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item3">
-			<TextBlock Text="Item3 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item4">
-			<TextBlock Text="Item4 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item5">
-			<TextBlock Text="Item5 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item6">
-			<TextBlock Text="Item6 Content" />
-		</telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-rows-and-columns-block_2-xaml' />
 
 ![{{ site.framework_name }} RadTileView Set Columns Count](images/radtileview_features_rows_columns_count.png)
 
@@ -74,28 +32,7 @@ To set the maximum number of columns you can use the __MaxColumns__ property:
 
 
 
-```XAML
-	<telerik:RadTileView MaxColumns="2">
-		<telerik:RadTileViewItem Header="Item1">
-			<TextBlock Text="Item1 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item2">
-			<TextBlock Text="Item2 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item3">
-			<TextBlock Text="Item3 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item4">
-			<TextBlock Text="Item4 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item5">
-			<TextBlock Text="Item5 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item6">
-			<TextBlock Text="Item6 Content" />
-		</telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-rows-and-columns-block_3-xaml' />
 
 The result from the above code is displayed below. As you can see now the items are ordered in two columns:
 ![{{ site.framework_name }} RadTileView Set Max Columns](images/radtileview_features_rows_columns_count.png)
@@ -106,28 +43,7 @@ To set the number of rows you can use the __RowsCount__ property.
 
 
 
-```XAML
-	<telerik:RadTileView RowsCount="1">
-		<telerik:RadTileViewItem Header="Item1">
-			<TextBlock Text="Item1 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item2">
-			<TextBlock Text="Item2 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item3">
-			<TextBlock Text="Item3 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item4">
-			<TextBlock Text="Item4 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item5">
-			<TextBlock Text="Item5 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item6">
-			<TextBlock Text="Item6 Content" />
-		</telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-rows-and-columns-block_4-xaml' />
 
 ![{{ site.framework_name }} RadTileView Set Rows Count](images/radtileview_features_rows_columns_rows_count.png)
 
@@ -135,28 +51,7 @@ To set the maximum number of rows you can use the __MaxRows__ property:
 
 
 
-```XAML
-	<telerik:RadTileView MaxRows="1">
-		<telerik:RadTileViewItem Header="Item1">
-			<TextBlock Text="Item1 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item2">
-			<TextBlock Text="Item2 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item3">
-			<TextBlock Text="Item3 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item4">
-			<TextBlock Text="Item4 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item5">
-			<TextBlock Text="Item5 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item6">
-			<TextBlock Text="Item6 Content" />
-		</telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-rows-and-columns-block_5-xaml' />
 
 As you can see now the items are ordered in one row only:
 ![{{ site.framework_name }} RadTileView Set Max Rows](images/radtileview_features_rows_columns_rows_count.png)
@@ -165,28 +60,7 @@ When both __ColumnsCount/MaxColumns__ and __RowsCount/MaxRows__ properties are s
 
 
 
-```XAML
-	<telerik:RadTileView ColumnsCount="2" RowsCount="1">
-		<telerik:RadTileViewItem Header="Item1">
-			<TextBlock Text="Item1 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item2">
-			<TextBlock Text="Item2 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item3">
-			<TextBlock Text="Item3 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item4">
-			<TextBlock Text="Item4 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item5">
-			<TextBlock Text="Item5 Content" />
-		</telerik:RadTileViewItem>
-		<telerik:RadTileViewItem Header="Item6">
-			<TextBlock Text="Item6 Content" />
-		</telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-rows-and-columns-block_6-xaml' />
 
 As you can see from the image below only the __ColumnsCount__ property is respected:
 ![{{ site.framework_name }} RadTileView Respected Columns Count](images/radtileview_features_rows_columns_count.png)

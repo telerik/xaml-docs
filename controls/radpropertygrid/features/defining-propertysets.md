@@ -22,96 +22,12 @@ For the means of illustrating the separate mode values, the following types will
 
 __Example 1: Preparing sample data__
 
-```C#
-	public class Ellipse
-	{
-	    public Color FillColor { get; set; }
-	    public double RadiusX1 { get; set; }
-	    public double RadiusX2 { get; set; }
-	    public Point Center { get; set; }
-	}
-
-	public class RegularPolygon
-	{
-	    public int CornersCount { get; set; }
-	    public Color FillColor { get; set; }
-	    public Point Center { get; set; }
-	    public double SideLength { get; set; }
-	}
-
-	public class ViewModel
-	{
-	    public IEnumerable<object> Shapes
-	    {
-	        get
-	        {
-	            return new List<object>()
-	            {
-	                new Ellipse()
-	                {
-	                    Center = new Point(1,1),
-	                    FillColor = Colors.Red,
-	                    RadiusX1 = 4, RadiusX2 = 2
-	                    },
-	                    new RegularPolygon()
-	                {
-	                    Center = new Point(3,2),
-	                    FillColor = Colors.Blue,
-	                    CornersCount = 3,
-	                    SideLength = 10
-	                }
-	            };
-	        }
-	    }
-	}
-```
-```VB.NET
-	Public Class Ellipse
-	    Public Property FillColor() As Color
-	    Public Property RadiusX1() As Double
-	    Public Property RadiusX2() As Double
-	    Public Property Center() As Point
-	End Class
-
-	Public Class RegularPolygon
-	    Public Property CornersCount() As Integer
-	    Public Property FillColor() As Color
-	    Public Property Center() As Point
-	    Public Property SideLength() As Double
-	End Class
-
-	Public Class ViewModel
-	    Public ReadOnly Property Shapes() As IEnumerable(Of Object)
-	        Get
-	            Return New List(Of Object)() From {
-	                New Ellipse() With {
-	                    .Center = New Point(1, 1),
-	                    .FillColor = Colors.Red,
-	                    .RadiusX1 = 4,
-	                    .RadiusX2 = 2
-	                },
-	                New RegularPolygon() With {
-	                    .Center = New Point(3, 2),
-	                    .FillColor = Colors.Blue,
-	                    .CornersCount = 3,
-	                    .SideLength = 10
-	                }
-	            }
-	        End Get
-	    End Property
-	End Class
-```
+<snippet id='radpropertygrid-features-defining-propertysets-block_1-cs' />
+<snippet id='radpropertygrid-features-defining-propertysets-block_1-vb' />
 
 __Example 2: Defining RadPropertyGrid__
 
-```XAML
-	<Grid>
-	    <Grid.Resources>
-	        <local:ViewModel x:Key="ViewModel" />
-	    </Grid.Resources>
-	    <telerik:RadPropertyGrid DataContext="{StaticResource ViewModel}" Item="{Binding Shapes}" />
-	</Grid>
-```
+<snippet id='radpropertygrid-features-defining-propertysets-block_2-xaml' />
 
 ## Property Set Modes
 
@@ -155,12 +71,8 @@ RadPropertyGrid exposes a **PropertySet** property of type PropertySet which is 
 
 __Example 3: Update PropertySet value__
 
-```C#
-	this.RadPropertyGrid.PropertySet["FillColor"] = Colors.Blue;
-```
-```VB.NET
-	Me.RadPropertyGrid.PropertySet("FillColor") = Colors.Blue
-```
+<snippet id='radpropertygrid-features-defining-propertysets-block_3-cs' />
+<snippet id='radpropertygrid-features-defining-propertysets-block_3-vb' />
 
 The control also provides an **UpdatePropertySetValue** which accepts three arguments:
 
@@ -172,12 +84,8 @@ The control also provides an **UpdatePropertySetValue** which accepts three argu
 
 __Example 4: Update PropertySet value without notifying underlying models__
 
-```C#
-	this.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, false);
-```
-```VB.NET
-	Me.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, False)
-```
+<snippet id='radpropertygrid-features-defining-propertysets-block_4-cs' />
+<snippet id='radpropertygrid-features-defining-propertysets-block_4-vb' />
 
 >You can check the __Validating Property Sets__ section from the control's [Validation]({%slug radpropertygrid-features-validation%}) article for information on how to apply validation for property sets.
 
@@ -189,67 +97,17 @@ When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the Data
 
 __Example 5: Defining editor template__
 
-```XAML
-	<Grid x:Name="LayoutRoot">
-	    <Grid.Resources>
-	        <local:ViewModel x:Key="vm" />
-	        <local:MyConverter x:Key="cnv" />
-	        <DataTemplate x:Key="editorTemplate">
-	            <telerik:RadNumericUpDown Value="{Binding CurrentPropertySet[CornersCount], Mode=TwoWay, Converter={StaticResource cnv}}" />
-	        </DataTemplate>
-	    </Grid.Resources>
-	    <telerik:RadPropertyGrid DataContext="{StaticResource vm}" 
-	                         Item="{Binding Shapes}" 
-	                         PropertySetMode="Union" 
-	                         AutoGeneratingPropertyDefinition="RadPropertyGrid_AutoGeneratingPropertyDefinition"/>
-	</Grid>
-```
+<snippet id='radpropertygrid-features-defining-propertysets-block_5-xaml' />
 
 __Example 6: Setting EditorTemplate of a PropertyDefinition__
 
-```C#
-	private void RadPropertyGrid_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
-	{
-	    if (e.PropertyDefinition.DisplayName == "CornersCount")
-	    {
-	        e.PropertyDefinition.EditorTemplate = LayoutRoot.Resources["editorTemplate"] as DataTemplate;
-	    }
-	}
-```
-```VB.NET
-	Private Sub RadPropertyGrid_AutoGeneratingPropertyDefinition(sender As Object, e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
-	    If e.PropertyDefinition.DisplayName = "CornersCount" Then
-	        e.PropertyDefinition.EditorTemplate = TryCast(LayoutRoot.Resources("editorTemplate"), DataTemplate)
-	    End If
-	End Sub
-```
+<snippet id='radpropertygrid-features-defining-propertysets-block_6-cs' />
+<snippet id='radpropertygrid-features-defining-propertysets-block_6-vb' />
 	
 __Example 7: Defining IValueConverter__
 
-```C#
-	public class MyConverter : IValueConverter
-	{
-	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-	    {
-	        return Int32.Parse(value.ToString());
-	    }
-	    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-	    {
-	        return value;
-	    }
-	}
-```
-```VB.NET
-	Public Class MyConverter
-	    Implements IValueConverter
-	    Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object Implements IValueConverter.Convert
-	        Return Int32.Parse(value.ToString())
-	    End Function
-	    Public Function ConvertBack(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object Implements IValueConverter.ConvertBack
-	        Return value
-	    End Function
-	End Class
-```
+<snippet id='radpropertygrid-features-defining-propertysets-block_7-cs' />
+<snippet id='radpropertygrid-features-defining-propertysets-block_7-vb' />
 
 #### Figure 4: RadNumericUpDown for integer property of property set
 
@@ -261,12 +119,7 @@ By default, __RadPropertyGrid__ will create an object instance for a property of
 
 __Example 8: Setting the ShouldAddNullForNonMatchingValues property to True__
 
-```XAML
-	  <telerik:RadPropertyGrid DataContext="{StaticResource vm}"
-								 Item="{Binding Shapes}"
-								 PropertySetMode="Union"
-								 telerik:PropertySet.ShouldAddNullForNonMatchingValues="True"/>
-```
+<snippet id='radpropertygrid-features-defining-propertysets-block_8-xaml' />
 
 ## See Also
 

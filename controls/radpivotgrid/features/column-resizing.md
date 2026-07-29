@@ -18,18 +18,12 @@ This functionality can be enabled by setting the **CanUserResizeColumns** proper
 
 __Example 1: Enable column resizing in XAML__
 
-```XAML
-    <pivot:RadPivotGrid x:Name="pivotGrid" CanUserResizeColumns="True" ... />
-```
+<snippet id='radpivotgrid-features-column-resizing-block_1-xaml' />
 
 __Example 2: Enable column resizing in code-behind__
 
-```C#
-    this.pivotGrid.CanUserResizeColumns = true;
-```
-```VB.NET
-    Me.pivotGrid.CanUserResizeColumns = True
-```
+<snippet id='radpivotgrid-features-column-resizing-block_2-cs' />
+<snippet id='radpivotgrid-features-column-resizing-block_2-vb' />
 
 __Resizing RadPivotGrid's columns__
 
@@ -43,21 +37,12 @@ The control now also exposes two new properties to control the width of the resi
 
 __Example 3: Set minimum and maximum resize width in XAML__
 
-```XAML
-    <pivot:RadPivotGrid x:Name="pivotGrid" CanUserResizeColumns="True"
-                        MinimumResizeWidth="50" MaximumResizeWidth="150" ... />
-```
+<snippet id='radpivotgrid-features-column-resizing-block_3-xaml' />
 
 __Example 4: Set minimum and maximum resize width in code-behind__
 
-```C#
-    this.pivotGrid.MinimumResizeWidth = 50;
-    this.pivotGrid.MaximumResizeWidth = 150;
-```
-```VB.NET
-    Me.pivotGrid.MinimumResizeWidth = 50
-	Me.pivotGrid.MaximumResizeWidth = 150
-```
+<snippet id='radpivotgrid-features-column-resizing-block_4-cs' />
+<snippet id='radpivotgrid-features-column-resizing-block_4-vb' />
 
 ## See Also
 

@@ -18,47 +18,8 @@ In order to style all __PaneHeader__ elements in a RadDocking, you should create
 
 __Example 1: Creating an implicit style targeting PaneHeader__
 
-```XAML
-	<Application.Resources>
-		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-		<Style TargetType="telerik:PaneHeader" BasedOn="{StaticResource PaneHeaderStyle}">-->
+<snippet id='raddocking-styles-and-templates-styling-the-pane-header-example_1_creating_an_implicit_style_targeting_paneheader-xaml' />
 
-		<Style TargetType="telerik:PaneHeader">
-			<Setter Property="Background" Value="Red" />
-		</Style>
-	</Application.Resources>
-
-	<Grid>
-        <telerik:RadDocking>
-            <telerik:RadDocking.DocumentHost>
-                <telerik:RadSplitContainer>
-                    <telerik:RadPaneGroup>
-                        <telerik:RadPane Header="Pane 1" />
-                        <telerik:RadPane Header="Test 2"/>
-                        <telerik:RadPane Header="Test 3" />
-                        <telerik:RadPane Header="Test 4" />
-                    </telerik:RadPaneGroup>
-                </telerik:RadSplitContainer>
-            </telerik:RadDocking.DocumentHost>
-            <telerik:RadSplitContainer >
-                <telerik:RadPaneGroup >
-                    <telerik:RadPane Header="Pane 1" />
-                    <telerik:RadPane Header="Test 2"/>
-                    <telerik:RadPane Header="Test 3" />
-                    <telerik:RadPane Header="Test 4" />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-            <telerik:RadSplitContainer InitialPosition="DockedRight" >
-                <telerik:RadPaneGroup  >
-                    <telerik:RadPane Header="Pane 1" />
-                    <telerik:RadPane Header="Test 2"/>
-                    <telerik:RadPane Header="Test 3" />
-                    <telerik:RadPane Header="Test 4" />
-                </telerik:RadPaneGroup>
-            </telerik:RadSplitContainer>
-        </telerik:RadDocking>
-    </Grid>
-```
 
 #### __Figure 1: PaneHeader with Red Background in the Office2016 theme__
 ![PaneHeader with Red Background](images/RadDocking_PaneHeader_Styling.png)

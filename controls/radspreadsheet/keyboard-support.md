@@ -83,19 +83,7 @@ By default, __RadSpreadSheet__ supports keyboard shortcuts that allow you to per
 The above shortcuts can be customized. To change a shortcut you need to register it using the __RegisterCommand__ method. For example you can change the behavior of the Enter key and make it go to next column instead of the next row. If the ActiveWorksheetEditor is changed you will need to register the command again. This is why it would be better to use the __ActiveSheetEditorChanged__ event for this.
 
 #### __C# Example 1: Change the behavior of the Enter key__
-```C#
-
-    private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
-    {
-        RadWorksheetEditor worksheetEditor = this.radSpreadsheet.ActiveWorksheetEditor;
-
-        if (this.radSpreadsheet.ActiveWorksheetEditor != null)
-        {
-            worksheetEditor.KeyBindings.RegisterCommand(worksheetEditor.Commands.UpdateActiveSelectionRangeCommand, Key.Enter, ModifierKeys.None, MovementType.MoveToNextColumn);
-        }
-    }
-   
-```
+<snippet id='radspreadsheet-keyboard-support-block_1-cs' />
 
 Please note that the above code will override the default enter command. 
 
@@ -105,22 +93,7 @@ It is possible to register a shortcut that executes a custom command. All you ne
 
 #### __C# Example 2: Associate a custom command with a shortcut__
 
-```C#
-
-    private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
-    {   
-        RadWorksheetEditor worksheetEditor = this.radSpreadsheet.ActiveWorksheetEditor;
-        if (worksheetEditor != null)
-        {
-            ICommand customPasteCommand = new DelegateCommand((parameter) =>
-                {
-                    MessageBox.Show("Custom paste command is executed!");
-                });
-            worksheetEditor.KeyBindings.RegisterCommand(customPasteCommand, Key.V, ModifierKeys.Control, PasteType.Values);
-        }
-    }
-
-```
+<snippet id='radspreadsheet-keyboard-support-block_2-cs' />
 
 ## Disable a Command
 
@@ -128,16 +101,4 @@ To disable a specific shortcut you can register the same key combination and pas
 
 #### __C# Example 3: Disable a specific command__
 
-```C#
-
-    private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
-    {   
-        RadWorksheetEditor worksheetEditor = this.radSpreadsheet.ActiveWorksheetEditor;
-        if (worksheetEditor != null)
-        {           
-            worksheetEditor.KeyBindings.RegisterCommand(new DelegateCommand((p) => { }), Key.V, ModifierKeys.Control, PasteType.Values);
-        }
-    }
-
-```
-
+<snippet id='radspreadsheet-keyboard-support-block_3-cs' />

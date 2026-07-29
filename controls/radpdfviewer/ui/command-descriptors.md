@@ -34,45 +34,13 @@ This example creates a custom command by inheriting from the __FixedDocumentView
 
 
 
-```C#
-	    public class FitToWidthCommand : FixedDocumentViewerCommandBase
-	    {
-	        private const double PageMargin = 20;
-	
-	        public FitToWidthCommand(FixedDocumentViewerBase fixedDocumentViewerBase)
-	            : base(fixedDocumentViewerBase)
-	        {
-	        }
-	
-	        public override void Execute(object parameter)
-	        {
-	            double width = this.Viewer.ActualWidth - 2 * PageMargin;
-	            double pageWidth = this.Viewer.CurrentPage.ActualWidth;
-	            this.Viewer.ScaleFactor = width / pageWidth;
-	        }
-	    }
-```
+<snippet id='radpdfviewer-ui-command-descriptors-block_1-cs' />
 
 
 
 #### __VB__
 
-```VB
-	    Public Class FitToWidthCommand
-	        Inherits FixedDocumentViewerCommandBase
-	        Private Const PageMargin As Double = 20
-	
-	        Public Sub New(fixedDocumentViewerBase As FixedDocumentViewerBase)
-	            MyBase.New(fixedDocumentViewerBase)
-	        End Sub
-	
-	        Public Overrides Sub Execute(parameter As Object)
-	            Dim width As Double = Me.Viewer.ActualWidth - 2 * PageMargin
-	            Dim pageWidth As Double = Me.Viewer.CurrentPage.ActualWidth
-	            Me.Viewer.ScaleFactor = width / pageWidth
-	        End Sub
-	    End Class
-```
+<snippet id='radpdfviewer-ui-command-descriptors-block_2-vb' />
 
 
 
@@ -90,47 +58,13 @@ The below snippet demosntrates how you can use the first of the mentioned method
 
 
 
-```C#
-	    public class CustomCommandDescriptors : DefaultCommandDescriptors
-	    {
-	        private readonly CommandDescriptor fitToWidthCommandDescriptor;
-	
-	        public CommandDescriptor FitToWidthCommandDescriptor
-	        {
-	            get
-	            {
-	                return this.fitToWidthCommandDescriptor;
-	            }
-	        }
-	
-	        public CustomCommandDescriptors(FixedDocumentViewerBase fixedDocumentViewerBase)
-	            : base(fixedDocumentViewerBase)
-	        {
-	            this.fitToWidthCommandDescriptor = new CommandDescriptor(new FitToWidthCommand(fixedDocumentViewerBase));
-	        }
-	    }
-```
+<snippet id='radpdfviewer-ui-command-descriptors-block_3-cs' />
 
 
 
 #### __VB__
 
-```VB
-	    Public Class FitToWidthCommand
-	        Inherits FixedDocumentViewerCommandBase
-	        Private Const PageMargin As Double = 20
-	
-	        Public Sub New(fixedDocumentViewerBase As FixedDocumentViewerBase)
-	            MyBase.New(fixedDocumentViewerBase)
-	        End Sub
-	
-	        Public Overrides Sub Execute(parameter As Object)
-	            Dim width As Double = Me.Viewer.ActualWidth - 2 * PageMargin
-	            Dim pageWidth As Double = Me.Viewer.CurrentPage.ActualWidth
-	            Me.Viewer.ScaleFactor = width / pageWidth
-	        End Sub
-	    End Class
-```
+<snippet id='radpdfviewer-ui-command-descriptors-block_4-vb' />
 
 
 
@@ -139,16 +73,12 @@ Once the custom command descriptors are implemented you just need to set __RadPd
 
 
 
-```C#
-	      this.customCommandDescriptors = new CustomCommandDescriptors(this.viewer);
-```
+<snippet id='radpdfviewer-ui-command-descriptors-block_5-cs' />
 
 
 
 #### __VB__
 
-```VB
-	    Me.customCommandDescriptors = New CustomCommandDescriptors(Me.viewer)
-```
+<snippet id='radpdfviewer-ui-command-descriptors-block_6-vb' />
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomCommandDescriptor).          

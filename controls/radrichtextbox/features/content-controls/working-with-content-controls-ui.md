@@ -33,32 +33,13 @@ The following commands related to the content controls functionality are availab
     In order to successfully execute the InsertStructuredDocumentTagCommand you have to pass the wanted content control type (**SdtType**) as a CommandParameter:
 
     #### [XAML] Example 1: Binding the command
-    ```XAML
-
-        <telerik:RadRibbonButton 
-                        telerik:ScreenTip.Description="Insert a picture content control."
-                        SmallImage="{telerik:IconResource IconRelativePath=16/contentControl-picture.png,IconSources={StaticResource IconSources}}" 
-                        telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding InsertStructuredDocumentTagCommand}"
-                        CommandParameter="Picture"
-                        Size="Small" telerik:ScreenTip.Title="Picture Content Control">
-        </telerik:RadRibbonButton>
-    ```
+    <snippet id='radrichtextbox-features-content-controls-working-with-content-controls-ui-block_1-xaml' />
 
 * **ShowContentControlPropertiesDialogCommand**
 
     #### [XAML] Example 2: Binding the command
 
-    ```XAML
-
-        <telerik:RadRibbonButton x:Name="propertiesDialogButton"
-                        telerik:ScreenTip.Description="View or modify properties for the selected control."
-                        SmallImage="{telerik:IconResource IconRelativePath=16/contentControl-properties.png,IconSources={StaticResource IconSources}}"
-                        telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding ShowContentControlPropertiesDialogCommand}"
-                        CommandParameter="Sdt"
-                        Size="Medium" telerik:ScreenTip.Title="Control Properties"
-                        Text="Properties">
-        </telerik:RadRibbonButton>
-    ```
+    <snippet id='radrichtextbox-features-content-controls-working-with-content-controls-ui-block_2-xaml' />
 
     >tip In order to learn more about commands and how to use them refer to [Commands]({%slug radrichtextbox-features-commands%}) help article.
 

@@ -30,34 +30,7 @@ Check out the rest of the topic, which is entirely dedicated to the __RadRibbonC
 Adding a __RadRibbonComboBox__ to a __RadRibbonGroup__ is an extremely simple process. The next example demonstrates how to do that.				
 
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup Header="Font">
-	            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-	                <telerik:RadRibbonComboBox Width="135" Height="28" SelectedIndex="1">
-	                    <telerik:RadRibbonComboBoxItem Content="Arial" />
-	                    <telerik:RadRibbonComboBoxItem Content="Calibri (Body)" />
-	                    <telerik:RadRibbonComboBoxItem Content="Tahoma" />
-	                    <telerik:RadRibbonComboBoxItem Content="Verdana" />
-	                    <telerik:RadRibbonComboBoxItem Content="Times New Roman" />
-	                    <telerik:RadRibbonComboBoxItem Content="Cambria" />
-	                </telerik:RadRibbonComboBox>
-	                <telerik:RadRibbonComboBox Name="comboFontSize" Height="28" Width="45" SelectedIndex="0">
-	                    <telerik:RadRibbonComboBoxItem Content="8" />
-	                    <telerik:RadRibbonComboBoxItem Content="9" />
-	                    <telerik:RadRibbonComboBoxItem Content="10" />
-	                    <telerik:RadRibbonComboBoxItem Content="11" />
-	                    <telerik:RadRibbonComboBoxItem Content="12" />
-	                    <telerik:RadRibbonComboBoxItem Content="14" />
-	                    <telerik:RadRibbonComboBoxItem Content="16" />
-	                    <telerik:RadRibbonComboBoxItem Content="18" />
-	                </telerik:RadRibbonComboBox>
-	            </StackPanel>
-	        </telerik:RadRibbonGroup>
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-combobox-block_1-xaml' />
 
 ![{{ site.framework_name }} RadRibbonView RibbonComboBox in Ribbon Group](images/RadRibbonView_ComboBox_Sample.png)
 

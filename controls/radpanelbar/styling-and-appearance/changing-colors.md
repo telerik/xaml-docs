@@ -16,34 +16,17 @@ Here is a list of the properties which can be used to change the colors of the _
 
 * __Background__ – changes the background of the whole control or just the background of the item if it is set locally to an item.			
 
-	```XAML
-		<telerik:RadPanelBar Background="#BADD27" />
-	```
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_1-xaml' />
 
-	```C#
-		RadPanelBar myPanelBar = new RadPanelBar()
-		{
-		    Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xBA, 0xDD, 0x27))
-		};
-	```
-	```VB.NET
-		Dim myPanelBar As New RadPanelBar() With {
-		.Background = New SolidColorBrush(Color.FromArgb(&HFF, &HBA, &HDD, &H27))
-		 }
-	```
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_2-cs' />
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_2-vb' />
 
 * __Foreground__ - changes the foreground of the whole control or just the foreground of the item if it is set locally to an item.			
 	
-	```XAML
-		<telerik:RadPanelBar Foreground="Red" />
-	```
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_3-xaml' />
 	
-	```C#
-		myPanelBar.Foreground = new SolidColorBrush(Colors.Red);
-	```
-	```VB.NET
-		myPanelBar.Foreground = New SolidColorBrush(Colors.Red)
-	```
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_4-cs' />
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_4-vb' />
 
 	*Before:*
 	![Rad Panel Bar foreground before](images/RadPanelBar_foreground_before.png)
@@ -52,18 +35,10 @@ Here is a list of the properties which can be used to change the colors of the _
 
 * __BorderBrush__ - changes the border brush of the control if its border thickness is set to a value greater than 0 i.e. the border is visible.			
 
-	```XAML
-		<telerik:RadPanelBar BorderBrush="Red" BorderThickness="2" />
-	```
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_5-xaml' />
 
-	```C#
-		myPanelBar.BorderThickness = new Thickness(2);
-		myPanelBar.BorderBrush = new SolidColorBrush(Colors.Red);
-	```
-	```VB.NET
-		myPanelBar.BorderThickness = New Thickness(2)
-		myPanelBar.BorderBrush = New SolidColorBrush(Colors.Red)
-	```
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_6-cs' />
+	<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_6-vb' />
 
 	*Before:*
 	![Rad Panel Bar foreground before](images/RadPanelBar_foreground_before.png)
@@ -78,36 +53,18 @@ We will continue with an example showing how to change the colors of the differe
 
 To change the color of the __MouseOver__ state, find in the template the element named *MouseOverVisual* and change the brushes it uses. Below you can see the default brushes:		
 
-```XAML
-	<SolidColorBrush x:Key="RadPanelBar_MouseOverBorder" Color="#FFdbdbdb" />
-	<LinearGradientBrush x:Key="RadPanelBar_SubMouseOver" EndPoint="0,1">
-	    <GradientStop Color="#FFf8f6f9" Offset="0" />
-	    <GradientStop Color="#FFf0f0f0" Offset="1" />
-	</LinearGradientBrush>
-```
+<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_7-xaml' />
 
 To change the color of the __Selected__ visual state, find in the template the element named *SelectionVisual* and change the brushes it uses. Below you can see the default brushes (same as above):		
 
-```XAML
-	<!-- Selection -->
-	<SolidColorBrush x:Key="RadPanelBar_MouseOverBorder" Color="#FFdbdbdb" />
-	<LinearGradientBrush x:Key="RadPanelBar_SubMouseOver" EndPoint="0,1">
-	    <GradientStop Color="#FFf8f6f9" Offset="0" />
-	    <GradientStop Color="#FFf0f0f0" Offset="1" />
-	</LinearGradientBrush>
-```
+<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_8-xaml' />
 
 To change the color of the __Disabled__ state, find in the template the element named *DisabledVisual* and change the brush it uses. Below you can see the default brush:		
 
-```XAML
-	<!-- Disabled -->
-	<SolidColorBrush x:Key="DisabledBrush" Color="#99FFFFFF"></SolidColorBrush>
-```
+<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_9-xaml' />
 
 Besides the visual states colors, you can also modify the appearance of the __RadPanelBarItem__ header. You can do so by finding the following code in __RadPanelBarItem's__ control template and applying your desired changes:		
 
-```XAML
-	<Grid x:Name="HeaderRow" Background="Transparent">
-```
+<snippet id='radpanelbar-styling-and-appearance-changing-colors-block_10-xaml' />
 
 This __Grid__ element wraps all header components, so by changing its background brush you will modify the panel bar item background.

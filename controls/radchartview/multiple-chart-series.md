@@ -17,54 +17,8 @@ The following article discusses the `RadCartesianChart` control, but the same AP
 To add multiple series instances, use the `Series` property of the chart.
 
 __Defining chart with multiple visualizations__
-```C#
-	<telerik:RadCartesianChart Palette="Windows8">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.Grid>
-			<telerik:CartesianChartGrid MajorLinesVisibility="XY" />
-		</telerik:RadCartesianChart.Grid>
-		<telerik:RadCartesianChart.Series>
-			<telerik:PointSeries>
-				<telerik:PointSeries.DataPoints>                       
-					<telerik:CategoricalDataPoint Category="January" Value="3" />
-					<telerik:CategoricalDataPoint Category="February" Value="9" />
-					<telerik:CategoricalDataPoint Category="March" Value="15" />
-					<telerik:CategoricalDataPoint Category="April" Value="16" />
-					<telerik:CategoricalDataPoint Category="May" Value="12" />
-					<telerik:CategoricalDataPoint Category="June" Value="14" />
-					<telerik:CategoricalDataPoint Category="July" Value="7" />
-				</telerik:PointSeries.DataPoints>
-			</telerik:PointSeries>
-			<telerik:BarSeries>
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="2" />
-					<telerik:CategoricalDataPoint Category="February" Value="5" />
-					<telerik:CategoricalDataPoint Category="March" Value="3" />
-					<telerik:CategoricalDataPoint Category="April" Value="10" />
-					<telerik:CategoricalDataPoint Category="May" Value="9" />
-					<telerik:CategoricalDataPoint Category="June" Value="7" />
-					<telerik:CategoricalDataPoint Category="July" Value="1" />
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-			<telerik:LineSeries>
-				<telerik:LineSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="2" />
-					<telerik:CategoricalDataPoint Category="February" Value="5" />
-					<telerik:CategoricalDataPoint Category="March" Value="3" />
-					<telerik:CategoricalDataPoint Category="April" Value="10" />
-					<telerik:CategoricalDataPoint Category="May" Value="9" />
-					<telerik:CategoricalDataPoint Category="June" Value="7" />
-					<telerik:CategoricalDataPoint Category="July" Value="1" />
-				</telerik:LineSeries.DataPoints>
-			</telerik:LineSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-multiple-chart-series-defining_chart_with_multiple_visualizations-cs' />
+
 
 ![A picture showing multiple chart visualizations in the same plot area](images/radchartview-multiple-series-0.png)
 

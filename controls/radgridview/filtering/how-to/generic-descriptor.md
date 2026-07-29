@@ -21,9 +21,8 @@ __Example 3: Create a generic FilterDescriptor<T>.__
 
 
 
-```C#
-	var descriptor = new FilterDescriptor<Employee> { FilteringExpression = e => prospects.Contains(e) };
-```
+<snippet id='radgridview-filtering-how-to-generic-descriptor-example_3_create_a_generic_filterdescriptor_t-cs' />
+
 
 
 Then, you should add the defined FilterDescriptor to the __FilterDescriptors collection__ of __RadGridView__.

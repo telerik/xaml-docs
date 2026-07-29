@@ -27,28 +27,16 @@ This tutorial will walk you through the common tasks of:
 For the purpose of this tutorial the following declaration will be used:
 
 
-```XAML
-	<telerik:RadGridView AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
-	                                Header="ID"/>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                                Header="Name"/>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}"
-	                                Header="Title"
-	                                UniqueName="Title" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-grouping-group-footers-block_1-xaml' />
+
 
 ## Enable Group Footers Functionality
 
 In order to enable the group footers functionality, merely set __ShowGroupFooters__ property of __RadGridView__ to __True__.
 
 
-```XAML
-	<telerik:RadGridView ShowGroupFooters="True" />
-```
+<snippet id='radgridview-grouping-group-footers-block_2-xaml' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with group footers enabled beneath each grouped section](images/RadGridView_Grouping_GroupFooters_010.png)
 
@@ -57,17 +45,10 @@ In order to enable the group footers functionality, merely set __ShowGroupFooter
 The same operation can be done in the code-behind.
 
 
-```C#
-	private void EnableGroupFooters()
-	{
-	    this.radGridView.ShowGroupFooters = true;
-	}
-```
-```VB.NET
-	Private Sub EnableGroupFooters()
-	    Me.radGridView.ShowGroupFooters = True
-	End Sub
-```
+<snippet id='radgridview-grouping-group-footers-block_3-cs' />
+
+<snippet id='radgridview-grouping-group-footers-block_3-vb' />
+
 
 ## Set the Group Footers Content
 
@@ -76,22 +57,8 @@ The same operation can be done in the code-behind.
 If you want your group footers to have a static content, simply configure __GroupFootersTemplate__ property.
 
 
-```XAML
-	<Grid.Resources>
-	    <DataTemplate x:Key="GroupFooterTemplate">
-	        <TextBlock Text="Hello"/>
-	    </DataTemplate>
-	</Grid.Resources>
-	<Grid x:Name="LayoutRoot" Background="White">
-	    <telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
-	        <telerik:RadGridView.Columns>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}" Header="ID"     GroupFooterTemplate="{StaticResource GroupFooterTemplate}"/>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name"/>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}" Header="Title" UniqueName="Title" />
-	        </telerik:RadGridView.Columns>
-	    </telerik:RadGridView>
-	</Grid>
-```
+<snippet id='radgridview-grouping-group-footers-block_4-xaml' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView group footer showing static template content](images/RadGridView_Grouping_GroupFooters_020.png)
 
@@ -100,19 +67,8 @@ If you want your group footers to have a static content, simply configure __Grou
 The group footers are most commonly used to visualize calculations from aggregate functions within the scope of the current group. Consider the following example:
 
 
-```XAML
-	<telerik:RadGridView AutoGenerateColumns="False" ShowGroupFooters="True">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}" Header="ID">
-	            <telerik:GridViewDataColumn.AggregateFunctions>
-	                <telerik:CountFunction Caption="Total: "/>
-	            </telerik:GridViewDataColumn.AggregateFunctions>
-	        </telerik:GridViewDataColumn>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name"/>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}" Header="Title" UniqueName="Title" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-grouping-group-footers-block_5-xaml' />
+
 
 The result can be seen on the next image.
 
@@ -137,37 +93,8 @@ Check out the following topics which explain in great details __RadGridView__'s 
 You can modify the default template of displaying group aggregates by applying a new __GroupFooterTemplate__ configured it per specific requirements.
 
 
-```XAML
-	<telerik:GridViewDataColumn.GroupFooterTemplate>
-	    <DataTemplate>
-	        <StackPanel Orientation="Vertical"
-	                    Margin="0,10">
-	            <TextBlock Text="Custom footer with aggregates:"
-	                       Margin="0,0,0,2" />
-	            <telerik:AggregateResultsList ItemsSource="{Binding}"
-	                                          VerticalAlignment="Center"
-	                                          Grid.Column="4">
-	                <ItemsControl.ItemTemplate>
-	                    <DataTemplate>
-	                        <StackPanel Orientation="Horizontal"
-	                                    VerticalAlignment="Center">
-	                            <TextBlockVerticalAlignment="Center"
-	                                       Text="{Binding Caption}" />
-	                            <TextBlockVerticalAlignment="Center"
-	                                       Text="{Binding FormattedValue}" />
-	                        </StackPanel>
-	                    </DataTemplate>
-	                </ItemsControl.ItemTemplate>
-	                <ItemsControl.ItemsPanel>
-	                    <ItemsPanelTemplate>
-	                        <StackPanel Orientation="Vertical" />
-	                    </ItemsPanelTemplate>
-	                </ItemsControl.ItemsPanel>
-	            </telerik:AggregateResultsList>
-	        </StackPanel>
-	    </DataTemplate>
-	</telerik:GridViewDataColumn.GroupFooterTemplate>
-```
+<snippet id='radgridview-grouping-group-footers-block_6-xaml' />
+
 
 > The GroupFooter's DataContext is __AggregateResultsList__.
 

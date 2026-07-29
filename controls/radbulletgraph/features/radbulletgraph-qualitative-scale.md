@@ -19,16 +19,7 @@ The scale of the bulletgraph control auto calculates its range by default. To ma
 To control the interval between the ticks on the scale use the __Step__ property.
 
 __Example 1: Setting the scale range manually__
-```XAML
-	<telerik:RadHorizontalBulletGraph AutoRange="False"
-									  Minimum="0"
-									  Maximum="120"
-									  Step="10" 
-									  
-									  FeaturedMeasure="50" 
-									  ComparativeMeasure="72" 
-									  ProjectedValue="81"/>
-```
+<snippet id='radbulletgraph-features-radbulletgraph-qualitative-scale-example_1_setting_the_scale_range_manually-xaml' />
 
 #### Figure 1: Setting the scale range between 0 and 120
 ![radbulletgraph-qualitative-scale-0.png](images/radbulletgraph-qualitative-scale-0.png)
@@ -38,13 +29,7 @@ __Example 1: Setting the scale range manually__
 To hide the scale's ticks and labels, set the __QuantitativeScaleVisibility__ property.
 
 __Example 2: Hiding the scale__
-```XAML
-	<telerik:RadHorizontalBulletGraph FeaturedMeasure="50" 
-                                      ComparativeMeasure="72" 
-                                      ProjectedValue="81" 
-									  
-                                      QuantitativeScaleVisibility="Hidden"/>
-```
+<snippet id='radbulletgraph-features-radbulletgraph-qualitative-scale-example_2_hiding_the_scale-xaml' />
 
 #### Figure 2: BulletGraph with hidden scale
 ![radbulletgraph-qualitative-scale-1.png](images/radbulletgraph-qualitative-scale-1.png)
@@ -58,13 +43,7 @@ __Example 2: Hiding the scale__
 To format the tick labels displayed under the scale, use the __TextFormatString__ property. The property allows you to set any of the [standart numeric string format strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).
 
 __Example 3: Using currency format__
-```XAML
-	<telerik:RadHorizontalBulletGraph FeaturedMeasure="50" 
-									  ComparativeMeasure="72" 
-									  ProjectedValue="81"
-									  
-									  TextFormatString="{}{0:C0}" />
-```
+<snippet id='radbulletgraph-features-radbulletgraph-qualitative-scale-example_3_using_currency_format-xaml' />
 
 #### Figure 3: Labels formatted using currency format
 ![radbulletgraph-qualitative-scale-2.png](images/radbulletgraph-qualitative-scale-2.png)
@@ -74,19 +53,7 @@ __Example 3: Using currency format__
 To inverse the scale you can set the __FlowDirection__ property of the control. 
 
 __Example 4: Setting FlowDirection__
-```XAML
-	<telerik:RadHorizontalBulletGraph FeaturedMeasure="40" 
-									ComparativeMeasure="65"                                           
-									ProjectedValue="60"
-                                    
-									FlowDirection="RightToLeft">
-		<telerik:RadHorizontalBulletGraph.QualitativeRanges>
-			<telerik:QualitativeRange Brush="#A8A8A8" Value="30" />
-			<telerik:QualitativeRange Brush="#C6C8C8" Value="70" />
-			<telerik:QualitativeRange Brush="#E8E8E8" Value="100"/>
-		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
-	</telerik:RadHorizontalBulletGraph>
-```
+<snippet id='radbulletgraph-features-radbulletgraph-qualitative-scale-example_4_setting_flowdirection-xaml' />
 
 #### Figure 4: Inversed scale
 ![radbulletgraph-qualitative-scale-2.png](images/radbulletgraph-qualitative-scale-3.png)

@@ -28,21 +28,11 @@ __Example 1__ shows how the property can be set in XAML and __Example 2__ – in
 
 __Example 1__
 
-```XAML
-	<telerik:RadScheduleView x:Name="ScheduleView"
-	    AppointmentsSource="{Binding Appointments}"                                  
-	                         FirstVisibleTime="8:00:00">
-	     <telerik:RadScheduleView.ViewDefinitions>
-	          <telerik:DayViewDefinition />
-	     </telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-timeruler-scrolling-block_1-xaml' />
 
 __Example 2__
 
-```C#
-	ScheduleView.FirstVisibleTime = TimeSpan.FromHours(8);
-```
+<snippet id='radscheduleview-features-timeruler-scrolling-block_2-cs' />
 
 The next screenshot shows how the ScheduleView looks on its initial load with and without FirstVisibleTIme set:
 
@@ -56,9 +46,7 @@ __Example 3__ shows how you can scroll to a particular appointment:
 
 __Example 3__
 
-```C#
-	ScheduleView.ScrollIntoView(meetingApp);
-```
+<snippet id='radscheduleview-features-timeruler-scrolling-block_3-cs' />
 
 The TimeRuler is scrolled, so that the appointment is visible:
 
@@ -68,9 +56,7 @@ Calling the same method with a second parameter set to true as shown in __Exampl
 
 __Example 4__
 
-```C#
-	ScheduleView.ScrollIntoView(meetingApp, true);
-```
+<snippet id='radscheduleview-features-timeruler-scrolling-block_4-cs' />
 
 leads to the following result:
 
@@ -86,9 +72,7 @@ __Example 5__ demonstrates how the method can be used:
 
 __Example 5__
 
-```C#
-	ScheduleView.ScrollTimeRuler(TimeSpan.FromHours(10), true);
-```
+<snippet id='radscheduleview-features-timeruler-scrolling-block_5-cs' />
 
 And the result is:
 

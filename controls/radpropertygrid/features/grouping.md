@@ -20,43 +20,14 @@ For example, lets have the following declaration of the RadPropertyGrid control:
 
 __Example 1: Declaring RadPropertyGrid__
 
-```XAML
-	<telerik:RadPropertyGrid Grid.Row="0" x:Name="PropertyGrid1"
-	                          RenderMode="Flat"
-	                          AutoGeneratePropertyDefinitions="False"
-	                          IsGrouped="True">
-	    <telerik:RadPropertyGrid.PropertyDefinitions>
-	        <telerik:PropertyDefinition Binding="{Binding FirstName}" GroupName="Group Name" DisplayName="First Name"/>
-	        <telerik:PropertyDefinition Binding="{Binding LastName}" GroupName="Group Name" DisplayName="Last Name"/>
-	        <telerik:PropertyDefinition Binding="{Binding Title}" GroupName="Group Title" DisplayName="Title"/>
-	        <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
-	    </telerik:RadPropertyGrid.PropertyDefinitions>
-	</telerik:RadPropertyGrid>
-```
+<snippet id='radpropertygrid-features-grouping-block_1-xaml' />
 
 Its Item is set like so:
 
 __Example 2: Setting RadPropertyGrid Item__
 
-```C#
-	Employee Employee = new Employee()
-	{
-	    FirstName = "Nancy",
-	    LastName = "Davolio",
-	    Title = "Sales Representative",
-	    HomePhone = "(206) 555-9857"
-	};
-	this.PropertyGrid1.Item = Employee;
-```
-```VB.NET
-	Dim Employee As New Employee() With {
-	    .FirstName = "Nancy",
-	    .LastName = "Davolio",
-	    .Title = "Sales Representative",
-	    .HomePhone = "(206) 555-9857"
-	}
-	Me.PropertyGrid1.Item = Employee
-```
+<snippet id='radpropertygrid-features-grouping-block_2-cs' />
+<snippet id='radpropertygrid-features-grouping-block_2-vb' />
 
 Now, if you run your application, you will see this result:
 
@@ -72,45 +43,29 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 __Example 3: Expanding RadPropertyGrid Group__
 
-```C#
-	this.PropertyGrid1.ExpandGroup("Group Name");
-```
-```VB.NET
-	Me.PropertyGrid1.ExpandGroup("Group Name")
-```
+<snippet id='radpropertygrid-features-grouping-block_3-cs' />
+<snippet id='radpropertygrid-features-grouping-block_3-vb' />
 
 * __CollapseGroup(object GroupKey)__: Collapses the visual group for the given GroupDefinition
 
 __Example 4: Collapsing RadPropertyGrid Group__
 
-```C#
-	this.PropertyGrid1.CollapseGroup("Group Name");
-```
-```VB.NET
-	Me.PropertyGrid1.CollapseGroup("Group Name")
-```
+<snippet id='radpropertygrid-features-grouping-block_4-cs' />
+<snippet id='radpropertygrid-features-grouping-block_4-vb' />
 
 * __ExpandAllGroups()__: Expands all groups recursively
 
 __Example 5: Expanding all RadPropertyGrid Groups__
 
-```C#
-	this.PropertyGrid1.ExpandAllGroups();
-```
-```VB.NET
-	Me.PropertyGrid1.ExpandAllGroups()
-```
+<snippet id='radpropertygrid-features-grouping-block_5-cs' />
+<snippet id='radpropertygrid-features-grouping-block_5-vb' />
 
 * __CollapseAllGroups()__: Collapses all groups recursively.
 
 __Example 6: Collapsing all RadPropertyGrid Groups__
 
-```C#
-	this.PropertyGrid1.CollapseAllGroups();
-```
-```VB.NET
-	Me.PropertyGrid1.CollapseAllGroups()
-```
+<snippet id='radpropertygrid-features-grouping-block_6-cs' />
+<snippet id='radpropertygrid-features-grouping-block_6-vb' />
 
 >important You need to set __RenderMode="Flat"__ in order to be able to execute the methods above. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
@@ -126,16 +81,8 @@ It has two methods:
 
 __Example 7: Suspending and Resuming notifications__
 
-```C#
-	this.PropertyGrid1.GroupDefinitions.SuspendNotifications();
-	// Execute additional logic
-	this.PropertyGrid1.GroupDefinitions.ResumeNotifications();
-```
-```VB.NET
-	Me.PropertyGrid1.GroupDefinitions.SuspendNotifications()
-	' Execute additional logic
-	Me.PropertyGrid1.GroupDefinitions.ResumeNotifications()
-```
+<snippet id='radpropertygrid-features-grouping-block_7-cs' />
+<snippet id='radpropertygrid-features-grouping-block_7-vb' />
 
 >important You need to set __RenderMode="Flat"__ in order to be able to work with the GroupDefinitions collection. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
@@ -145,12 +92,8 @@ As of **R2 2019**, the RadPropertyGrid control exposes a new boolean property - 
 
 __Example 8: Set groups' initial state to collapsed__
 
-```C#
-	this.PropertyGrid1.AutoExpandGroups = false;
-```
-```VB.NET
-	this.PropertyGrid1.AutoExpandGroups = False
-```
+<snippet id='radpropertygrid-features-grouping-block_8-cs' />
+<snippet id='radpropertygrid-features-grouping-block_8-vb' />
 
 ## See Also
 

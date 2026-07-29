@@ -22,29 +22,8 @@ This series is visualized on the screen as a straight line connecting all data p
 You can use the following definition to display a simple ScatterLineSeries
 
 __Example 1: Declaring a ScatterLineSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8">
-	<telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:LinearAxis/>
-	</telerik:RadCartesianChart.HorizontalAxis>
-	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis />
-	</telerik:RadCartesianChart.VerticalAxis>
-	<telerik:RadCartesianChart.Series>
-		<telerik:ScatterLineSeries>
-			<telerik:ScatterLineSeries.DataPoints>
-				<telerik:ScatterDataPoint XValue="0" YValue="2" />
-				<telerik:ScatterDataPoint XValue="1" YValue="5" />
-				<telerik:ScatterDataPoint XValue="2" YValue="3" />
-				<telerik:ScatterDataPoint XValue="3" YValue="10" />
-				<telerik:ScatterDataPoint XValue="4" YValue="9" />
-				<telerik:ScatterDataPoint XValue="5" YValue="7" />
-				<telerik:ScatterDataPoint XValue="6" YValue="1" />
-			</telerik:ScatterLineSeries.DataPoints>
-		</telerik:ScatterLineSeries>
-	</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-line-series-scatterlineseries-example_1_declaring_a_scatterlineseries_in_xaml-xaml' />
+
 
 #### __Figure 1: ScatterLineSeries visual appearance__
 ![radchartview-series-scatterlineseries](images/radchartview-series-scatterlineseries.png)
@@ -63,25 +42,12 @@ You can use the __YValueBinding__ and __XValueBinding__ properties of the Scatte
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public double XValue { get; set; }
-        public double YValue { get; set; }
-    }
+<snippet id='radchartview-series-cartesianchart-series-line-series-scatterlineseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { XValue = 0, YValue = 2},
-		//....
-	};
-```		
 
 __Example 3: Specify a ScatterLineSeries in XAML__
-```XAML
-	<telerik:ScatterLineSeries ItemsSource="{Binding}" YValueBinding="YValue" XValueBinding="XValue"/>
-```	
+<snippet id='radchartview-series-cartesianchart-series-line-series-scatterlineseries-example_3_specify_a_scatterlineseries_in_xaml-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 	

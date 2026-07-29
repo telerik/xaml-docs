@@ -24,9 +24,7 @@ The data items can be filtered using the [filtering control]({%slug radcardview-
 To disable user filtering, set the __IsFilteringAllowed__ property to __False__. 
 
 __Example 1: Setting the IsFilteringAllowed property__
-```XAML
-	<telerik:RadCardView IsFilteringAllowed="False" />
-```
+<snippet id='radcardview-features-filtering-example_1_setting_the_isfilteringallowed_property-xaml' />
 
 Additionally, the filtering can be disabled per [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) by setting its __AllowFiltering__ property.
 
@@ -35,65 +33,15 @@ Additionally, the filtering can be disabled per [CardDataFieldDescriptor]({%slug
 The following example shows how to setup RadCardView, populate it a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and add FilterDescriptors in code.
 
 __Example 2: Defining the model__
-```C#
-	public class CardInfo
-    {
-        public string Header { get; set; }
-        public string Name { get; set; }
-        public int Number { get; set; }
-        public string Category { get; set; }
-    }
-	
-	public class MainViewModel
-    {
-        public ObservableCollection<CardInfo> Items { get; private set; }
-        public QueryableCollectionView CollectionView { get; private set; }
-
-        public MainViewModel()
-        {
-            int counter = 0;
-            Items = new ObservableCollection<CardInfo>();
-            for (int g = 0; g < 3; g++)
-            {
-                for (int i = 0; i < 6; i++)
-                {
-                    Items.Add(new CardInfo()
-                    {
-                        Header = "Card " + counter,
-                        Name = "Name " + counter,
-                        Number = counter,
-                        Category = "Category " + g
-                    });
-                    counter++;
-                }
-            }
-
-            CollectionView = new QueryableCollectionView(Items);
-            CollectionView.FilterDescriptors.Add(new FilterDescriptor()
-            {
-                Member = "Name", 
-                Operator = FilterOperator.Contains,
-                Value = "1"
-            });
-        }
-    }
-``` 
+<snippet id='radcardview-features-filtering-example_2_defining_the_model-cs' />
 
 >tip Read the [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}#filtering) to see how to use the FilterDescriptors collection of the QueryableCollectionView.
 
 __Example 3: Setting the DataContext__
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.DataContext = new MainViewModel();
-	}
-```
+<snippet id='radcardview-features-filtering-example_3_setting_the_datacontext-cs' />
 
 __Example 4: Setting up the view__
-```XAML
-	<telerik:RadCardView ItemsSource="{Binding CollectionView}" CardHeaderBinding="{Binding Header}" />
-```
+<snippet id='radcardview-features-filtering-example_4_setting_up_the_view-xaml' />
 
 ## Events
 
@@ -104,22 +52,14 @@ The filtering operations invoke several events that can be used to customize the
 The filtering uses the property bound to the __DataMemberBinding__ property of the corresponding [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}). To change this, set the __FilterMemberPath__ property of the descriptor. The path should point to a property in the underlying data item.
 
 __Example 5: Setting the FilterMemberPath property__
-```XAML
-	<telerik:RadCardView.DataFieldDescriptors>
-		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" FilterMemberPath="Category" />
-	</telerik:RadCardView.DataFieldDescriptors>
-```
+<snippet id='radcardview-features-filtering-example_5_setting_the_filtermemberpath_property-xaml' />
 
 ## Deferred Filtering
 
 Selecting a filter in the filtering control will apply it immediately to the items. To change this, set the __IsFilteringDeferred__ property of the corresponding [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) to true. This will require a press of the __Filter button__ in order to commit the filters.
 
 __Example 6: Setting the IsFilteringDeferred property__
-```XAML
-	<telerik:RadCardView.DataFieldDescriptors>
-		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" IsFilteringDeferred="True" />
-	</telerik:RadCardView.DataFieldDescriptors>
-```
+<snippet id='radcardview-features-filtering-example_6_setting_the_isfilteringdeferred_property-xaml' />
 
 ## Customizing Filtering UI
 

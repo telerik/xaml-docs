@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadAIPrompt control.
+description: Check our "Getting Started" documentation article for the RadAIPrompt control.
 slug: radaiprompt-getting-started
 tags: getting started, radaiprompt
 published: True
@@ -36,10 +36,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 You can add RadAIPrompt manually in XAML as demonstrated in the following example:
 
 __Defining the RadAIPrompt in XAML__
-```XAML
-    <telerik:RadAIPrompt x:Name="aiPrompt">
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-aipromptgettingstarted-defining-xaml' />
 
 The RadAIPrompt control has views that you can add to its `Items` collection. 
 
@@ -48,12 +45,7 @@ The RadAIPrompt control has views that you can add to its `Items` collection.
 In this example, the input and output views will be added.
 
 __Adding the input and output views__
-```XAML
-    <telerik:RadAIPrompt x:Name="aiPrompt">
-        <telerik:RadAIPromptInputItem />
-        <telerik:RadAIPromptOutputItem />
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-aipromptgettingstarted-addingviews-xaml' />
 
 __RadAIPrompt with the input and output views__
 
@@ -64,31 +56,10 @@ __RadAIPrompt with the input and output views__
 When the input button is clicked, the RadAIPrompt control will raise the `PromptRequest` event. In it, you can contact your AI model with the request. The `PromptRequestEventArgs` event arguments provide information about the input text and if the request is initiated to retry an already generated response. You can create a new `AIPromptOutputItemModel` instance and fill it with returned response from the AI model. Then, add it to the `OutputItems` collection of RadAIPrompt. This will create a new card in the `RadAIPromptOutputItem` view where you can interact with the response.
 
 __Subscribing to the PromptRequest event__
-```C#
-    <telerik:RadAIPrompt x:Name="aiPrompt" PromptRequest="OnPromptRequested">
-        <telerik:RadAIPromptInputItem />
-        <telerik:RadAIPromptOutputItem />
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-aipromptgettingstarted-subscribingtoevent-xaml' />
 
 __Handling the PromptRequest event__
-```C#
-    private void OnPromptRequested(object sender, PromptRequestEventArgs e)
-    {
-    	RadAIPrompt radAIPrompt = (RadAIPrompt)sender;
-    
-    	//You can pass the e.InputText property to your AI model, in order to receive a response.
-
-    	AIPromptOutputItemModel responseAIPromptOutputItemModel = new AIPromptOutputItemModel()
-    	{ 
-    		Title = "Response from your AI model",
-    		InputText = e.InputText,
-    		ResponseText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", // Here you can set the string value returned from your AI model
-    	};
-
-    	radAIPrompt.OutputItems.Add(responseAIPromptOutputItemModel);
-    }
-```
+<snippet id='radaiprompt-aipromptgettingstarted-handlingpromptrequested-cs' />
 
 __RadAIPrompt with a response in the output view__
 
@@ -103,7 +74,7 @@ The controls from our suite support different themes. You can see how to apply a
 
 * Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the RadAIPrompt, you will need to merge the following resources:
 
-	* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls__
     * __Telerik.Windows.Controls.ConversationalUI__
     * __Telerik.Windows.Controls.Input__
     * __Telerik.Windows.Controls.Navigation__
@@ -111,19 +82,7 @@ The controls from our suite support different themes. You can see how to apply a
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Merge the ResourceDictionaries__
-```XAML
-    <Application.Resources>
-    	<ResourceDictionary>
-    		<ResourceDictionary.MergedDictionaries>
-    			<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
-    			<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
-                <ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.ConversationalUI.xaml"/>
-                <ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-                <ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-    		</ResourceDictionary.MergedDictionaries>
-    	</ResourceDictionary>
-    </Application.Resources>
-```
+<snippet id='radaiprompt-aipromptgettingstarted-mergingresourcedictionaries-xaml' />
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 The following image shows a RadAIPrompt with the __Fluent__ theme applied.

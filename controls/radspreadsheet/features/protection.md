@@ -16,57 +16,10 @@ The `RadSpreadSheet` control uses the [SpreadProcessing library](https://docs.te
 The following example showcases how to protect and unprotect the current worksheet:
 
 __Defining the RadSpreadsheet and the buttons for protecting and uprotecting the current worksheet__
-```XAML
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-            <telerik:RadButton Content="Protect" 
-                               Click="OnProtectButtonClicked">
-                <telerik:RadButton.ContentTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <telerik:RadGlyph Glyph="{StaticResource GlyphLock}"/>
-                            <TextBlock Text="{Binding}" Margin="3 0 0 0"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </telerik:RadButton.ContentTemplate>
-            </telerik:RadButton>
-            <telerik:RadButton Content="Unprotect"
-                               Click="OnUnprotectButtonClicked">
-                <telerik:RadButton.ContentTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <telerik:RadGlyph Glyph="{StaticResource GlyphUnlock}"/>
-                            <TextBlock Text="{Binding}" Margin="3 0 0 0"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </telerik:RadButton.ContentTemplate>
-            </telerik:RadButton>
-        </StackPanel>
-        <telerik:RadSpreadsheet x:Name="radSpreadsheet" Grid.Row="1">
-            <telerik:RadSpreadsheet.FormatProviders>
-                <Txt:TxtFormatProvider/>
-                <Csv:CsvFormatProvider/>
-            </telerik:RadSpreadsheet.FormatProviders>
-        </telerik:RadSpreadsheet>
-    </Grid>
-```
+<snippet id='radspreadsheet-features-protection-block_1-xaml' />
 
 __Adding logic to the buttons__
-```C#
-    private void OnProtectButtonClicked(object sender, RoutedEventArgs e)
-    {
-        this.radSpreadsheet.ActiveWorksheet.Protect("Telerik", WorksheetProtectionOptions.Default);
-    }
-
-    private void OnUnprotectButtonClicked(object sender, RoutedEventArgs e)
-    {
-        this.radSpreadsheet.ActiveWorksheet.Unprotect("Telerik");
-    }
-```
+<snippet id='radspreadsheet-features-protection-block_2-cs' />
 
 __RadSpreadsheet with protected/unprotected worksheet__
 

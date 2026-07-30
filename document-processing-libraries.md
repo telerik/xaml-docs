@@ -13,13 +13,60 @@ position: 8
 
 ![Telerik Document Processing  Libraries ](images/document-processing-libraries-overview-0.png) 
 
-|Library|Description|
-|----|----|
-| [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)|A processing library that allows you to create, import, and export PDF documents from your code. You can use it in any web or desktop .NET application without relying on third-party software like Adobe Acrobat.|
-|[RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)|A powerful library that enables you to create applications with native support for spreadsheet documents. With RadSpreadProcessing, you can create spreadsheets from scratch, modify existing documents or convert between the most common spreadsheet formats. You can save the generated workbook to a local file, stream, or stream it to the client browser.|
-|[RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview)|Spread streaming is a document processing paradigm that allows you to create or read big spreadsheet documents with great performance and minimal memory footprint. The key for the memory efficiency is that the spread streaming library writes the spreadsheet content directly to a stream without creating and preserving the spreadsheet document model in memory.|
-|[RadWordsProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview)|A processing library that allows you to create, modify and export documents to a variety of formats. Through the API, you can access each element in the document and modify, remove it or add a new one. The generated content you can save as a stream, as a file, or sent it to the client browser.|
-|[RadZipLibrary](https://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/overview)| It allows you to compress and combine files in ZIP archives, browse and extract files from existing ZIP archives and compress streams for easy file shipping and reduced storage space.|
+## Libraries and Tools
+
+Telerik Document Processing features the following libraries and tools:
+
+<article-card-container>
+  <article-card
+        href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radpdfprocessing/overview"
+        src="./images/pdfprocessing-banner.png"
+        darkSrc="./images/pdfprocessing-banner.png"
+        title="RadPdfProcessing"
+        subTitle="Document Processing"
+        description="Enables the creation, editing, and export of PDF files in your .NET applications. The library supports interactive forms and form filling, as well as digital signatures.">
+  </article-card>
+  <article-card
+        href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radspreadprocessing/overview"
+        src="./images/spreadprocessing-banner.jpg"
+        darkSrc="./images/spreadprocessing-banner.jpg"
+        title="RadSpreadProcessing"
+        subTitle="Document Processing"
+        description="Enables you to work with spreadsheet documents – create ones from scratch, modify existing documents or convert between the most common spreadsheet formats.">
+  </article-card>
+  <article-card
+        href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radspreadstreamprocessing/overview"
+        src="./images/spreadstreamprocessing-banner.png"
+        darkSrc="./images/spreadstreamprocessing-banner.png"
+        title="RadSpreadStreamProcessing"
+        subTitle="Document Processing"
+        description="Generates big spreadsheet documents with great performance and minimal memory footprint in your .NET applications.">
+  </article-card>
+  <article-card
+        href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radwordsprocessing/overview"
+        src="./images/wordsprocessing-banner.png"
+        darkSrc="./images/wordsprocessing-banner.png"
+        title="RadWordsProcessing"
+        subTitle="Document Processing"
+        description="Allows Word-like document manipulations in .NET applications and enables end-users to create, modify and export documents to various formats.">
+  </article-card>
+  <article-card
+        href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radziplibrary/overview"
+        src="./images/ziplibrary-banner.png"
+        darkSrc="./images/ziplibrary-banner.png"
+        title="RadZipLibrary"
+        subTitle="Document Processing"
+        description="Can compress data like images, DOCX, PDF, or any other type of files and send them over the wire. Thus, you will achieve fast and secure transactions.">
+  </article-card>
+    <article-card
+        href="https://www.telerik.com/document-processing-libraries/documentation/ai-tools/agent-tools/overview"
+        src="./images/agent-tools-banner.png"
+        darkSrc="./images/agent-tools-banner.png"
+        title="AI Tools"
+        subTitle="Agent Tools"
+        description="Provides document processing capabilities designed to be exposed to AI agents.">
+  </article-card>
+</article-card-container>
 
 ## Available Versions
 

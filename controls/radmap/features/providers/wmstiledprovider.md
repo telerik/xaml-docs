@@ -39,7 +39,6 @@ __RadMap displaying map tiles from a WMS server__
 ## See Also
 
  * [Providers Overview]({%slug radmap-features-providers%})
- * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%}) 
  * [OpenStreetMapProvider]({%slug radmap-features-providers-osm-provider%})
  * [Empty provider]({%slug radmap-features-empty-provider%})
  * [UriImageProvider]({%slug radmap-features-uriimageprovider%})

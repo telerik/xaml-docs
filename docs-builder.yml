@@ -572,9 +572,6 @@ meta:
     controls/touchmanager/gestures:
         title: "Gestures"
         position: 5
-    controls/radmap/features/providers/bing-rest-map-provider:
-        title: "Bing Rest Map Provider"
-        position: 2
     controls/radchartview/indicators:
         title: Financial Indicators
         position: 12
@@ -1067,6 +1064,14 @@ redirects:
 -
     from: "^/?$"
     to: "/introduction"
+    type: Permanent
+-
+    from: "^/controls/radmap/features/providers/bing-rest-map-provider/.*$"
+    to: "/controls/radmap/features/providers/providers"
+    type: Permanent
+-
+    from: "^/controls/radmap/changes-and-backward-compatibility/changes$"
+    to: "/controls/radmap/breaking-changes"
     type: Permanent
 -
     from: "^/api/html/.*$"
@@ -1906,19 +1911,19 @@ redirects:
     type: Permanent
 -
     from: "^controls/radmap/features/geocode$"
-    to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^controls/radmap/features/search$"
-    to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^controls/radmap/features/routing$"
-    to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^controls/radmap/features/providers/bing-map$"
-    to: "/controls/radmap/features/providers/bing-rest-map-provider/bing-map-rest"
+    to: "/controls/radmap/features/providers/providers"
     type: Permanent
 -
     from: "^controls/radchart/features/796308db-6789-4f88-8c96-7d29a8f49e8b$"

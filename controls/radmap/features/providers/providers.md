@@ -12,7 +12,6 @@ position: 0
 
 The `RadMap` control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently the control supports a few providers:      
 
-* [Bing Maps](#bing-maps-provider)
 * [OpenStreet Maps](#openstreet-maps-provider)
 * [Empty Provider](#empty-provider)
 * [UriImageProvider](#uriimage-provider)
@@ -39,14 +38,6 @@ Here is a list of the most important common properties shared by all map provide
 * `CommandBindingCollection`&mdash;Gets collection of the command bindings.          
 * `SupportedSources`&mdash;Gets the IDs of the supported sources. This property can be used in scenarios where it is necessary to get the list of supported sources and execute some action based on them (e.g. enable or disable source specific commands in the command bar).
 
-## Bing Maps Provider
-
-The RadMap control provides the support to visual [Bing Maps](http://www.bing.com/maps/) tile data via the `BingRestMapProvider` (RESTful imagery service) class. 
-
-For more information about the Bing Maps support, check the [Bing Map Rest Provider]({%slug radmap-features-providers-bing-rest-map%}) article.
-
->caution The Bing Maps REST Services is [deprecated](https://learn.microsoft.com/en-us/bingmaps/rest-services/). The BingRestMapProvider will be supported until 2026 Q2 inclusive. To avoid disruptions, you can use the [Azure Maps Services](https://learn.microsoft.com/en-us/azure/azure-maps/), which are supported by the RadMap control via the [AzureMapProvider](radmap-features-providers-azuremapprovider).
-
 ## OpenStreet Maps Provider
 
 RadMap supports displaying tile data from the [Open Street Map](https://www.openstreetmap.org/) services via the `OpenStreetMapProvider` class.
@@ -61,7 +52,7 @@ To learn more about the EmptyProvider, check the [Empty Provider]({%slug radmap-
 
 ## UriImage Provider
 
-RadMap provides support for single image provider through the `UriImageProvider` class besides the built-in support for tiled (MultiScaleImage) providers like BingRestMapProvider and OpenStreetMapProvider. You can either use it with single image for all zoom levels, or you can specify an image for every distinct zoom level.        
+RadMap provides support for single image provider through the `UriImageProvider` class besides the built-in support for tiled (MultiScaleImage) providers like OpenStreetMapProvider. You can either use it with single image for all zoom levels, or you can specify an image for every distinct zoom level.        
 
 To learn more about the UriImageProvider, check the [UriImageProvider]({%slug radmap-features-uriimageprovider%}) article.   
 
@@ -89,7 +80,6 @@ RadMap supports displaying map tiles from a Web Map Service (WMS) server via the
 
 ## See Also
 
- * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%}) 
  * [OpenStreetMapProvider]({%slug radmap-features-providers-osm-provider%})
  * [Empty provider]({%slug radmap-features-empty-provider%})
  * [UriImageProvider]({%slug radmap-features-uriimageprovider%})

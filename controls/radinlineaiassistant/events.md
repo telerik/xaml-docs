@@ -14,7 +14,7 @@ This topic covers the specific events exposed by the `RadInlineAIAssistant` cont
 
 ## PromptRequest
 
-The `PromptRequest` event is raised when the end user submits the prompt input or selects a command from the [Commands]({%slug radinlineaiassistant-commands%}) dropdown. The event arguments are of type `InlineAIAssistantPromptRequestEventArgs` and expose the following members:
+The `PromptRequest` event is raised when the end user submits the prompt input or selects a command from the [Commands]({%slug radinlineaiassistant-configuring-commands%}) dropdown. The event arguments are of type `InlineAIAssistantPromptRequestEventArgs` and expose the following members:
 
 * `Prompt`&mdash;Gets the prompt text that was requested by the user (the input text, or the selected command's `Text`).
 * `SelectedText`&mdash;Gets the currently selected text in the target element, as reported by the current `InteractionProvider`.

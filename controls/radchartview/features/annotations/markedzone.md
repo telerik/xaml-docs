@@ -12,7 +12,7 @@ position: 5
 
 The __CartesianMarkedzoneAnnotation__ is a rectangle defined by the __HorizontalFrom/To__ and __VerticalFrom/To__ properties.
 
- ![Rad Chart View-annotations-cartesian-markedzone-0](images/RadChartView-annotations-cartesian-markedzone-0.png)
+ ![Telerik UI for WPF RadChartView Cartesian marked zone annotation](images/RadChartView-annotations-cartesian-markedzone-0.png)
 
 ## Properties
 
@@ -75,10 +75,10 @@ The second declaration shows that you can use the __DashArray__ property to crea
 
 The last example in the above code snippet shows that you can use the __ZIndex__ property to place an annotation behind the ChartSeries (by default annotations are placed in front of the ChartSeries). 
 
-![Rad Chart View-annotations-cartesian-markedzone-1](images/RadChartView-annotations-cartesian-markedzone-1.png)
+![Telerik UI for WPF RadChartView marked zone annotations with fill and stroke styles](images/RadChartView-annotations-cartesian-markedzone-1.png)
 
 The flexible design of the MarkedZone annotation allows the user to omit one (or more) of the four Horizontal/VerticalFrom/To properties. The following table details relationship between the specified properties and the occupied interval on the axis: 
-![Rad Chart View-annotations-cartesian-markedzone-2](images/RadChartView-annotations-cartesian-markedzone-2.png)
+![Telerik UI for WPF RadChartView marked zone axis interval relationships](images/RadChartView-annotations-cartesian-markedzone-2.png)
 
 
 
@@ -89,7 +89,7 @@ The flexible design of the MarkedZone annotation allows the user to omit one (or
 
 In this example the MarkedZone takes the space between 0.5 and 1 on the vertical axis and between -infinity and 2.75 on the horizontal axis.
 
-![Rad Chart View-annotations-cartesian-markedzone-3](images/RadChartView-annotations-cartesian-markedzone-3.png)
+![Telerik UI for WPF RadChartView marked zone with a partially specified axis range](images/RadChartView-annotations-cartesian-markedzone-3.png)
 
 In addition to the possibility of not specifying one (or more) the four properties, the annotation also supports inverse axes. The combination of these factors produces 64 possible scenarios!
         
@@ -134,4 +134,4 @@ In addition to the possibility of not specifying one (or more) the four properti
 ```
 
 In this example last you can see that Cateogrical axes are also supported, adding to the versatile feature set of __CartesianMarkedzoneAnnotation__.
-![Rad Chart View-annotations-cartesian-markedzone-4](images/RadChartView-annotations-cartesian-markedzone-4.png)  
+![Telerik UI for WPF RadChartView Cartesian marked zone annotation with categorical axes](images/RadChartView-annotations-cartesian-markedzone-4.png)

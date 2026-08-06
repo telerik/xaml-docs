@@ -26,7 +26,7 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 1. Add the required assemblies from the **Binaries.NoXaml** folder located in the installation folder of the controls. You must also include the theme assemblies.
 	
-	![Dynamic Switch Themes dlls](images/DynamicSwitchThemes_dlls.png)
+	![Telerik UI for WPF assemblies required for switching themes at runtime](images/DynamicSwitchThemes_dlls.png)
 
 2. Add the needed resource dictionaries for the default theme in **App.xaml**.  
 
@@ -116,15 +116,15 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 	__Click the Office Black button to show a black and grey theme.__  
 	
-	![Controls with Office Black Theme](images/DynamicSwitchThemes_01.png)
+	![Telerik UI for WPF controls with the Office Black theme](images/DynamicSwitchThemes_01.png)
 
 	__The Windows8 theme shows a different set of colors for all controls – the flat styling of Windows 8.__  
 	
-	![Controls with Windows8 Theme](images/DynamicSwitchThemes_02.png)
+	![Telerik UI for WPF controls with the Windows8 theme](images/DynamicSwitchThemes_02.png)
 
 	__And finally, the Windows7 theme shows a blue-grey gradient set of colors for the controls.__  
 	
-	![Controls with Windows7 Theme](images/DynamicSwitchThemes_03.png)
+	![Telerik UI for WPF controls with the Windows7 theme](images/DynamicSwitchThemes_03.png)
 
 ## See Also
 

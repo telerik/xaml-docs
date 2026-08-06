@@ -14,7 +14,7 @@ Google Cloud Platform is a solution which allows businesses to leverage Google's
 
 > Only few of the available services that Google Cloud Platform provides are listed here. For more detailed information and resources, please visit [Google Cloud Platform's product page](https://cloud.google.com/products/).
 
-![Google Cloud Services](images/google_cloud_overview.png)
+![Google Cloud services available for Telerik UI for WPF integration](images/google_cloud_overview.png)
 
 Here are the currently available topics:
 

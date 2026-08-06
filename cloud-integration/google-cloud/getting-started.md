@@ -23,7 +23,7 @@ To create an account, go to the [Google Cloud website](https://cloud.google.com/
 
 In order to access all of the provided APIs, first you have to enable them from the [Google Cloud's console](https://console.cloud.google.com). For more information about that please visit the [Enable and disable APIs](https://support.google.com/cloud/answer/6158841?hl=en) article.
 
-![Google Cloud Api Library](images/google-cloud-api-library.png)
+![Google Cloud Console API Library for enabling service APIs](images/google-cloud-api-library.png)
 
 ## See Also
 

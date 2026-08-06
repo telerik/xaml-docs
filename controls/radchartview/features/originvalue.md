@@ -41,7 +41,7 @@ __Example 1: BarSeries with OriginValue__
 
 
 #### Figure 1: Result from Example 1 
-![RadChartView OriginValue](images/radchartview-originvalue.png)
+![Telerik UI for WPF RadChartView Bar Chart with a Custom OriginValue of 2](images/radchartview-originvalue.png)
 
 > For a demonstration in a different scenario, you can check out the [OriginValue](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/OriginValue) RadChartView SDK example.
 

@@ -85,7 +85,7 @@ __Changing the palette's default colors in code-behind__
 ```
 
 Figure 1: Some of the possible looks you will be able to easily achieve.
-![Common Metro Theme Colors](../images/Common_Metro_Theme_Colors.png)
+![Telerik UI for WPF Windows 8 theme colors](../images/Common_Metro_Theme_Colors.png)
 
 __Using the brush resources in XAML__
 
@@ -115,7 +115,7 @@ __Using the brush resources in XAML__
 
 __Result of the used resources__
 
-![Common Windows 8 Colors 01](../images/Common_Windows8_Colors_01.png)
+![Telerik UI for WPF Windows 8 theme color variations](../images/Common_Windows8_Colors_01.png)
 
 ## Changing Font Properties
 
@@ -201,7 +201,7 @@ This example shows how you can increase the __FontSize__ of a __RadCalendar__ wi
         
 __Result of clicking the button__
 
-![Common Windows 8 Font Change 01](../images/Common_Windows8_FontChange_01.png)
+![Telerik UI for WPF Windows 8 theme font customization](../images/Common_Windows8_FontChange_01.png)
 
 ## Changing Opacity 
 

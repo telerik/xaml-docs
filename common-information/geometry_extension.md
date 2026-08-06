@@ -30,7 +30,7 @@ In **R3 2021** we introduced the **Geometry Extension** class which provides eas
 **Figure 1**, demonstrate how all geometries which this extension provides look like when applied to the [RadBadge]({%slug radbadge-overview%}) control.
 
 #### **Figure 1: Geometries** 
-![Geometry Types](images/radbadge-key-properties_2.png)
+![Telerik UI for WPF RadBadge displaying the Geometry Extension shape types](images/radbadge-key-properties_2.png)
 
 __Example 1 and Example 2__ demonstrate how you can use the extension in XAML and code-behind. To apply a custom geometry in code-behind, you can use the `GeometryFactory.SetGeometry()` method.
 

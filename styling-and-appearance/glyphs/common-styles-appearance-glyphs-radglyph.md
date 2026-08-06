@@ -43,7 +43,7 @@ __Example 2: Use the RadGlyph markup extension__
 
 #### Figure 1: The result from examples 1 and 2
 
-![The C# RadGlyph](images/radglyph-1.png)
+![Telerik UI for WPF RadGlyph rendered from C# code](images/radglyph-1.png)
 
 > In order to use the glyph references (such as **GlyphCs** in **Example 2**) as static resources in a project, you need to include the **Telerik.Windows.Controls.dll** and merge the **FontResources.xaml** dictionary in the application resources as demonstrated in **Example 3**. A list of the available glyphs and their resource keys can be found in the [Telerik UI for WPF glyph reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
@@ -111,7 +111,7 @@ Another font that comes out of the box **since the R2 2022 release** is the **Te
 
 #### Figure 2: The calendar icon in the TelerikFluentIcons and TelerikWebUI fonts respectively
 
-![The calendar icon in the TelerikFluentIcons and TelerikWebUI fonts respectively](images/radglyph-5.png)
+![Telerik UI for WPF RadGlyph calendar icons from the TelerikFluentIcons and TelerikWebUI fonts](images/radglyph-5.png)
 
 ## Register Fonts
 
@@ -155,7 +155,7 @@ __Example 8: Use the Webdings glyphs__
 
 #### Figure 3: The resulting Webdings glyph
 
-![Webdings Globe Glyph](images/radglyph-2.png)
+![Telerik UI for WPF RadGlyph Webdings globe glyph](images/radglyph-2.png)
 
 ## Use Glyphs as Geometry
 
@@ -167,7 +167,7 @@ __Example 9: Set a RadPathButton's PathGeometry in XAML__
 
 #### Figure 4: The RadPathButton in normal and hovered states in the Office2016 theme
 
-![RadPathButton in normal and hovered states](images/radglyph-3.png)
+![Telerik UI for WPF RadPathButton in normal and hovered states](images/radglyph-3.png)
 
 The same result can be achieved in code behind as demonstrated in **Example 6**. Note that it uses the static **RadGlyph.GetGeometry** method which takes two parameters - a glyph string and a font family.
 
@@ -217,7 +217,7 @@ __Example 11: Provide ImageSource for RadTreeView items__
 
 #### Figure 5: The resulting RadTreeView in the Office2016 theme
 
-![RadTreeView with glyphs as item icons](images/radglyph-4.png)
+![Telerik UI for WPF RadTreeView with glyphs as item icons](images/radglyph-4.png)
 
 ## See Also
 

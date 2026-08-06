@@ -27,7 +27,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 1. Select the **DOWNLOADS** tab and then **Manage NuGet Keys**.
 
-    ![Manage NuGet Keys](images/installation-manage-nuget-keys.png)
+	![Telerik UI for WPF NuGet keys management page](images/installation-manage-nuget-keys.png)
 
 1. To create a new key, select the **Generate New Key** button.
 
@@ -35,7 +35,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 1. To copy the key, select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **NuGet Keys** page displays only a portion of the key.
 
-    ![Copy Generated NuGet Key](images/installation-copy-nuget-key.png)
+	![Telerik UI for WPF generated NuGet key ready to copy](images/installation-copy-nuget-key.png)
 
 ## Storing a NuGet Key
 

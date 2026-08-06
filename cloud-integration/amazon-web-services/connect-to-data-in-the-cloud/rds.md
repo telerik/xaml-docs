@@ -16,15 +16,15 @@ This article will show you to create a {{ site.framework_name }} application and
 
 Go to the AWS console, type in "Relational Database Services" and click the first result from the dropdown get to the Amazon RDS dashboard page. From the dashboard click the __Get Started Now__ button. 
 
-![aws-rds002](images/aws-rds002.png)
+![Amazon RDS dashboard with Relational Database Services selected](images/aws-rds002.png)
 
 This will lead you to the **Select Engine** page. Select **SQL server Express Edition** and click Next. 
 
-![aws-rds003](images/aws-rds003.png)
+![Amazon RDS Select Engine page with SQL Server Express Edition selected](images/aws-rds003.png)
 
 On the next screen choose any options you want. For this example we are using the free tier options. In the **Settings** section of the page choose database name and specify the user name an password.
 
-![aws-rds004](images/aws-rds004.png)
+![Amazon RDS database instance settings with database name and credentials](images/aws-rds004.png)
 
 Click next and choose the options that suit your desired setup. Make sure that **Publicly Accessible** option is set to **Yes**. Then click __Launch DB Instance__ and wait until the database is created.
 
@@ -49,11 +49,11 @@ At this point you are ready to connect to the instance using **Microsoft SQL Ser
 
 **2.** Give it a suitable name such as **MovieEntities** and click **Add**.
 
-![{{ site.framework_name }} Relational Database Service Set Model Name](images/ado-net-entities-rds.png)
+![Telerik UI for WPF ADO.NET Entity Data Model naming dialog for an Amazon RDS project](images/ado-net-entities-rds.png)
 
 **3.** Choose **Empty Code First model** from the **Choose Model Contents** dialog.
 
-![{{ site.framework_name }} Relational Database Service Set Model Select Empty Code First Model](images/ef-designer-rds.png)
+![Telerik UI for WPF Entity Framework Choose Model Contents dialog with Empty Code First model selected](images/ef-designer-rds.png)
 
 This will generate the MovieEntities class for you which inherits from **DbContext** and will be used by Entity Framework to communicate with the database.
 

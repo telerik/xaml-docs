@@ -66,7 +66,7 @@ __Defining chart with multiple visualizations__
 	</telerik:RadCartesianChart>
 ```
 
-![A picture showing multiple chart visualizations in the same plot area](images/radchartview-multiple-series-0.png)
+![Telerik UI for WPF RadChartView Showing Point, Bar, and Line Series in One Plot Area](images/radchartview-multiple-series-0.png)
 
 The different chart series work with different [axis combinations]({%slug radchartview-series-and-axes%}). Keep that in mind when defining multiple series. 
 

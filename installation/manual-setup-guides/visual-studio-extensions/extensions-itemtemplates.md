@@ -16,11 +16,11 @@ Since the __R1 2020__ version of the Progress Telerik UI for WPF Extension, item
 
 1. Right-click on your project, and select __Add__ -> __New Item__.
 
-    ![VSExtentions WPF Scenario Wizard Menu 2](images/extensions_wpf_add_item_template.png)
+    ![Telerik UI for WPF Visual Studio menu for adding an item template](images/extensions_wpf_add_item_template.png)
 
 1. Scroll down to the __Telerik__ item templates and choose the one that is best suitable for you.
 
-    ![VSExtentions WPF Scenario Wizard Menu 2](images/extensions_wpf_choose_item_template.png)
+    ![Telerik UI for WPF Visual Studio item template selection menu](images/extensions_wpf_choose_item_template.png)
 
 1. Click __Add__ and the needed Telerik references will be automatically added to your project. 
 

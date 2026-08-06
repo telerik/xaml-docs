@@ -45,7 +45,7 @@ __Example 1: Defining the view__
 
 Open the NuGet Package Manager and install the **AWSSDK.S3** package.
 
-![aws-storage-nuget](images/aws-storage-nuget.png)
+![NuGet Package Manager installing the AWSSDK.S3 package](images/aws-storage-nuget.png)
 
 In addition you need to add the following to your App.config file:
 
@@ -350,7 +350,7 @@ __Example 5: Set the DataContext__
 
 #### Figure 1: Example after uploading a file and listing it in the Office2016 theme
 
-![aws-storage-upload](images/aws-storage-listitems.png)
+![Telerik UI for WPF S3 storage application listing and uploading items](images/aws-storage-listitems.png)
 
 # See Also
 

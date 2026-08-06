@@ -12,7 +12,7 @@ position: 4
 
 Telerik WPF Demos application provides a rich list of examples showcasing all the important features of Telerik UI for WPF.
 
-![WPF Demos application picture](images/installing-wpf-demos-0.png)
+![Telerik UI for WPF demos application home screen](images/installing-wpf-demos-0.png)
 
 ## Installation
 
@@ -38,7 +38,7 @@ Follow the next steps in order to download it:
 
 1. Unzip the file and run the `ExamplesCS_WPF.sln` file.
 
-	![WPF ExamplesCS_WPF Solution](images/installing-wpf-demos-4.png)
+	![Telerik UI for WPF ExamplesCS_WPF solution](images/installing-wpf-demos-4.png)
 
 The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation (via the .msi installer) of the Telerik UI for WPF suite with the same version as the downloaded demos. This will create an __environment variable__ called `TelerikWPFDir` which points to the Binaries folder in the installation directory (example: *C:\Program Files (x86)\Progress\Telerik UI for WPF 2024 Q1*). The environment variable is used by the HintPaths in the source code to resolve the Telerik assemblies.
 

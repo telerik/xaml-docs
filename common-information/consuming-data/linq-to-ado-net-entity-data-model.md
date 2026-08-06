@@ -20,23 +20,23 @@ You can take advantage of the **Visual Studio Entity Data Model Wizard** to gene
 
 1. Right-click on your project in the Solution Explorer window and select the menu option **Add -> New Item**.
 	
-	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_1.png)
+	![Telerik UI for WPF Visual Studio Add New Item menu for an ADO.NET Entity Data Model](images/common_information_linq_ado.net_1.png)
 
 2. In the **Add New Item** dialog, select the **Data** category. Select the **ADO.NET Entity Data Model** template, give the Entity Data Model the name Northwind.edmx, and click the **Add** button. Clicking the **Add** button launches the **Data Model Wizard**.
 	
-	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_2.png)
+	![Telerik UI for WPF Visual Studio ADO.NET Entity Data Model template selection](images/common_information_linq_ado.net_2.png)
 
 3. In the **Choose Model Contents** step, choose the **EF Designer from Database** option and click the Next button.
 	
-	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_3.png)
+	![Telerik UI for WPF Entity Data Model Wizard Choose Model Contents step](images/common_information_linq_ado.net_3.png)
 
 4. In the **Choose Your Data Connection** step, select the Northwind.mdf database connection, enter the entities connection settings name NorthwindEntities, and click the Next button.
 	
-	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_4.png)
+	![Telerik UI for WPF Entity Data Model Wizard Northwind data connection step](images/common_information_linq_ado.net_4.png)
 
 5. In the **Choose Your Database Objects and Settings** step, select the desired database tables, specify the model namespace and click the **Finish** button.
 
-	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_5.png)
+	![Telerik UI for WPF Entity Data Model Wizard database objects and settings step](images/common_information_linq_ado.net_5.png)
 	
 ## Query an Entity from the Database
 

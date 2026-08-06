@@ -75,13 +75,13 @@ __Setting palette colors__
 The following are the supported color variations of the Office2013 theme:
 
 * `White`&mdash;White color theme palette. This is also the default variation of the theme.
-![Common Styling Appearance Office 2013 Theme 01](../images/Common_Styling_Appearance_Office2013_Theme_01.png)
+![Telerik UI for WPF Office 2013 theme white variation preview](../images/Common_Styling_Appearance_Office2013_Theme_01.png)
 
 * `LightGray`&mdash;Light gray theme palette.
-![Common Styling Appearance Office 2013 Theme 02](../images/Common_Styling_Appearance_Office2013_Theme_02.png)
+![Telerik UI for WPF Office 2013 theme light gray variation preview](../images/Common_Styling_Appearance_Office2013_Theme_02.png)
 
 * `DarkGray`&mdash;Dark gray theme palette.
-![Common Styling Appearance Office 2013 Theme 03](../images/Common_Styling_Appearance_Office2013_Theme_03.png)
+![Telerik UI for WPF Office 2013 theme dark gray variation preview](../images/Common_Styling_Appearance_Office2013_Theme_03.png)
 
 This is how the `ColorVariation` enumeration looks:
 
@@ -194,7 +194,7 @@ As the following example shows, you can change the default FontFamily from "Cali
 
 This will be the final result:
 
-![Common Styling Appearance Office 2013 Theme 03](../images/Common_Styling_Appearance_Office2013_Theme_04.png)
+![Telerik UI for WPF Office 2013 theme changed font preview](../images/Common_Styling_Appearance_Office2013_Theme_04.png)
 
 ## Changing Opacity 
 

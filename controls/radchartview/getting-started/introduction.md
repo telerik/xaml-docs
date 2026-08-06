@@ -56,7 +56,7 @@ __Example 1: Chart definition__
 If you run the project at this stage, __RadCartesianChart__ will inform you that there are no axes defined, as seen in __Figure 1__.
 
 #### __Figure 1: RadCartesianChart without its axes set__
-![Rad Chart View-Axis Not Set Message](images/RadChartView-AxisNotSetMessage.png)
+![Telerik UI for WPF RadChartView RadCartesianChart showing the message that no axes are defined](images/RadChartView-AxisNotSetMessage.png)
 
 The Cartesian coordinate system is constructed using horizontal and vertical axes. __RadChartView__ exposes different types of axes that can be combined horizontally and vertically in different ways based on the scenario. You can find more information about them in our [Axis]({%slug radchartview-axes-axis%}) article.
 
@@ -77,7 +77,7 @@ __Example 2: Chart axes definition__
 In the cases where no series are defined in the definition of the charting components, a message will be displayed to prompt you to enter a series.
 
 #### __Figure 2: RadCartesianChart without any series added in its Series collection__
-![Rad Chart View-No Series Added Message](images/RadChartView-NoSeriesAddedMessage.png)
+![Telerik UI for WPF RadChartView RadCartesianChart showing the message that no series are defined](images/RadChartView-NoSeriesAddedMessage.png)
 
 ## Defining a Series
 
@@ -111,7 +111,7 @@ __Example 3: Sample BarSeries definition__
 This chart definition will be rendered on the screen as demonstrated in __Figure 3__.
 
 #### __Figure 3: RadCartesianChart displaying a BarSeries__
-![Rad Chart View-Getting Started Bar Series](images/RadChartView-GettingStartedBarSeries.png)
+![Telerik UI for WPF RadChartView RadCartesianChart displaying a BarSeries with categorical data](images/RadChartView-GettingStartedBarSeries.png)
 
 If you feel more confident working with code than with markup, you can achieve the same layout with the snippet from __Example 4__.
 

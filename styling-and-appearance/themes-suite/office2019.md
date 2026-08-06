@@ -471,7 +471,7 @@ More information about each color and the respective brush that is created from 
 
 __Theme colors represented in RadOutlookBar__
 
-![Office2019 theme colors represented in RadOutlookBar](images/Office2019-theme-outlook.PNG)	
+![Telerik UI for WPF Office 2019 theme colors represented in RadOutlookBar](images/Office2019-theme-outlook.PNG)
 
 ## Default Theme Brushes
 
@@ -577,7 +577,7 @@ __Changing the color variation of the theme__
 
 __Office2019 theme color variations__
 
-![Office2019 theme colors represented in RadTaskBoard](images/Office2019-theme-variations.PNG)
+![Telerik UI for WPF Office 2019 theme colors represented in RadTaskBoard](images/Office2019-theme-variations.PNG)
 
 >important All variations of the theme are designed with a specific background in mind and it is recommended to use such a background in your application when working with it - it is represented by the theme palette's `BaseBackgroundBrush`.
 
@@ -614,7 +614,7 @@ __Changing the theme's FontSize and FontFamily__
 
 __Setting FontSize and FontFamily__
 
-![RadCalendar with modified FontSize and FontFamily](images/Office2019-theme-calendar-font-change.png)	
+![Telerik UI for WPF RadCalendar with modified font size and font family in the Office 2019 theme](images/Office2019-theme-calendar-font-change.png)
 
 ## Using Glyphs
 
@@ -640,7 +640,7 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 
 __Appearance of the RadToggleButton in the different states__
 
-![RadToggleButton States](images/Office2019-theme-togglebutton-states.png)
+![Telerik UI for WPF RadToggleButton states in the Office 2019 theme](images/Office2019-theme-togglebutton-states.png)
 
 ## Setting White Color Variation
 

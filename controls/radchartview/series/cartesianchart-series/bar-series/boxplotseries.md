@@ -15,7 +15,7 @@ This type of series visualizes its data points using box plot shapes. An alterna
 The box plot shape allows you to display a summarized information containing five values - minimum, maximum, lower quartile (Q1), upper quartile (Q3) and median - plotted on the numeric axis of the chart.
 
 #### Figure 1: Box Plot Visual Structure
-![{{ site.framework_name }} RadChartView Box Plot Visual Structure](images/radchartview-series-boxplotseries-0.png)
+![Telerik UI for WPF RadChartView Box Plot Structure Showing Minimum, Maximum, Quartiles, and Median](images/radchartview-series-boxplotseries-0.png)
 
 BoxPlotSeries works with one CategoricalAxis (or DateTime axis) as horizontal axis and one numeric axis (LinearAxis or LogarithmicAxis) as vertical axis. Any other combination of axes is unsupported.
 
@@ -43,7 +43,7 @@ __Example 1: Defining BoxPlotSeries in XAML__
 ```
 
 #### Figure 2: BoxPlotSeries example
-![radchartview-series-barseries](images/radchartview-series-boxplotseries-1.png)
+![Telerik UI for WPF RadChartView BoxPlotSeries example](images/radchartview-series-boxplotseries-1.png)
 
 >tip The box plot data points do not implement automatic coercion of the input values. This means that the provided values must be correct in order to display a proper visual element. Minimum must be smaller than Maximum and the interquartile range (between Q1 and Q3) must be within the Minimum/Maximum range.
 
@@ -116,7 +116,7 @@ __Example 4: Defining BoxPlotSeries in data binding scenario__
 ```
 
 #### Figure 3: BoxPlotSeries data binding example
-![{{ site.framework_name }} RadChartView BoxPlotSeries data binding example](images/radchartview-series-boxplotseries-2.png)
+![Telerik UI for WPF RadChartView BoxPlotSeries with Data-Bound Minimum, Maximum, Quartile, and Median Values](images/radchartview-series-boxplotseries-2.png)
 
 Read more about the data binding support in the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) article.
 
@@ -166,7 +166,7 @@ __Example 5: Using SeriesLegendSettings__
 ```
 
 #### Figure 4: Chart legend 
-![{{ site.framework_name }} RadChartView Chart legend](images/radchartview-series-boxplotseries-3.png)
+![Telerik UI for WPF RadChartView BoxPlotSeries with a Chart Legend](images/radchartview-series-boxplotseries-3.png)
 
 Read more about the chart's legend settings in the [RadLegend Support]({%slug radchartview-features-radlegend-support%}) article.
 
@@ -184,7 +184,7 @@ __Example 3: Setting LimitersLength__
 ```
 
 #### Figure 4: Minimum and maximum lines matching the box plot's width
-![{{ site.framework_name }} RadChartView Minimum and maximum lines matching the box plot's width](images/radchartview-series-boxplotseries-4.png)
+![Telerik UI for WPF RadChartView BoxPlotSeries with Minimum and Maximum Lines Matching the Box Width](images/radchartview-series-boxplotseries-4.png)
 
 ## See Also
  * [Getting Started]({%slug radchartview-introduction%})

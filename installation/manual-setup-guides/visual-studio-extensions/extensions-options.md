@@ -14,7 +14,7 @@ __Progress Telerik UI for WPF Extension__ options dialog provides settings, so y
 
 It can be accessed through the `Extensions --> Telerik --> Telerik UI for WPF --> Options` menu in Visual Studio.
 
-![VSExtentions Options Dialog Menu](images/VSExtentions_OptionsDialogMenu.png)
+![Telerik UI for WPF Visual Studio Extensions options menu](images/VSExtentions_OptionsDialogMenu.png)
 
 The __Options__ dialog contains two sets of options that affect Telerik UI for WPF - __General__ and __WPF__.
 
@@ -22,7 +22,7 @@ The __Options__ dialog contains two sets of options that affect Telerik UI for W
 
 The settings under the __General__ category affect all of the installed __Telerik Visual Studio Extensions__.
 
-![VSExtentions Options Dialog General](images/VSExtentions_GeneralSettings.PNG)
+![Telerik UI for WPF Visual Studio Extensions general settings](images/VSExtentions_GeneralSettings.PNG)
 
 * `Select a folder for downloads`&mdash;Configures the path where the extensions look for and store distributions.
 
@@ -36,7 +36,7 @@ The settings under the __General__ category affect all of the installed __Teleri
 
 All settings under the Telerik UI for WPF category affect only the Telerik WPF projects.
 
-![VSExtensions Options Dialog Product Specific](images/VSExtentions_WPF_Settings.PNG)
+![Telerik UI for WPF Visual Studio Extensions product-specific settings](images/VSExtentions_WPF_Settings.PNG)
 
 * `Include internal builds in Latest Version update and retrieval`&mdash;When enabled, the __[Latest Version Acquirer]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})__ tool will retrieve internal builds as well as official releases when checking for a new version.
 
@@ -52,7 +52,7 @@ The __Toolbox Configurator__ can be launched from the `Extensions --> Telerik --
 
 This setting is supported only for __.NET Framework__ projects.
 
-![VSExtentions WPF Toolbox Configurator](images/VSExtentions_WPF_ToolboxConfigurator.png)
+![Telerik UI for WPF Visual Studio toolbox configurator](images/VSExtentions_WPF_ToolboxConfigurator.png)
 
 After running the Toolbox Configurator it shows the version of the currently installed distribution (if available). The user can make a selection using the dropdown menu which lists all versions discovered on the machine. 
 

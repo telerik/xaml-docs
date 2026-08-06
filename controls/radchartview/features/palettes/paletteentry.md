@@ -63,7 +63,7 @@ __Example 1: Creating a custom palette__
 ```
 
 #### __Figure 1: OhlcSeries with Custom Palette__
-![OhlcSeries with Custom Palette](images/RadChartView-palettes-paletteentry-0.png)
+![Telerik UI for WPF RadChartView OhlcSeries with a custom palette](images/RadChartView-palettes-paletteentry-0.png)
 
 ## Getting a PaletteEntry of a Series
 

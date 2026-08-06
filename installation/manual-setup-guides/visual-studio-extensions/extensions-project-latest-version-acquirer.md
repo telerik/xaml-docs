@@ -14,25 +14,25 @@ With the Progress Telerik UI for {{ site.framework_name }} Extension you keep yo
 
 When a solution containing a Telerik UI for WPF project is loaded in Visual Studio, the Progress Telerik UI for WPF Extension queue the Telerik website for a new version of Telerik UI for {{ site.framework_name }}. A dialog gets displayed when a new version is discovered:
 
-![extensions acquirertool wpf 1](images/extensions_acquirertool_wpf_1.png)
+![Telerik UI for WPF Visual Studio latest version acquirer tool](images/extensions_acquirertool_wpf_1.png)
 
 >If you've disabled the notifications, you can use the [Telerik Visual Studio extension options dialog]({%slug radcontrols-vs-extensions-options%}) to activate them again.
 
 Clicking the __Update Now__ button starts the Latest Version Acquirer tool, prompting for your Telerik credentials and the type of license you own in its first page. If you do not have a [www.telerik.com](http://www.telerik.com/) account, you can create one through the __Create an account for free__ link.
 
-![extensions acquirertool wpf 2](images/extensions_acquirertool_wpf_2.png)
+![Telerik UI for WPF Visual Studio latest version acquirer tool package selection](images/extensions_acquirertool_wpf_2.png)
 
 You can use the __Save my password__ checkbox to save having to enter your Telerik credentials multiple times. The persistance is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
 
 If your subscription has expired, you could either proceed with downloading a trial distribution or you could renew it and initiate the download again.
 
-![extensions acquirertool wpf 3](images/extensions_acquirertool_wpf_3.png)
+![Telerik UI for WPF Visual Studio latest version acquirer tool download version](images/extensions_acquirertool_wpf_3.png)
 
 You can check the additional information about the release by clicking the __Release Notes__ link. This will start a browser, navigated to a page with the release notes related to the specific version.
 
-![extensions acquirertool wpf 4](images/extensions_acquirertool_wpf_4.png)
+![Telerik UI for WPF Visual Studio latest version acquirer tool version downloading](images/extensions_acquirertool_wpf_4.png)
 
-![extensions acquirertool wpf 5](images/extensions_acquirertool_wpf_5.png)
+![Telerik UI for WPF Visual Studio latest version acquirer tool completion](images/extensions_acquirertool_wpf_5.png)
 
 Once the download succeeds, the latest version of the Telerik UI for {{ site.framework_name }} will be available for use in the [Telerik UI for WPF Upgrade Project Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}) and the [Create New Project Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).
 

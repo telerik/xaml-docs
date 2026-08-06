@@ -48,7 +48,7 @@ __Example 1: Defining the view__
 
 Open the NuGet Package Manager and install the **Google.Cloud.Storage.V1** package.
 
-![Google Cloud Storage Nuget](images/google-cloud-storage-nuget.png)
+![NuGet Package Manager installing the Google Cloud Storage package](images/google-cloud-storage-nuget.png)
 
 ## Step 3: Define the ViewModel
 
@@ -333,7 +333,7 @@ __Example 4: Set the DataContext__
 
 #### Figure 1: Example after uploading a file and listing it in the Office2016 theme
 
-![Google Cloud Storage Upload](images/google-cloud-storage-listitems.png)
+![Telerik UI for WPF Google Cloud Storage application after uploading and listing a file](images/google-cloud-storage-listitems.png)
 
 
 ## See Also

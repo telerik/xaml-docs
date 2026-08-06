@@ -51,7 +51,7 @@ In **Visual Studio** open the **NuGet Package Manager** and install the **Dynamo
 
 #### Figure 2: Install DynamoDB package
 
-![Install DynamoDB package](images/aws-dynamo-db002.png)
+![Visual Studio NuGet Package Manager installing the AWS DynamoDB package](images/aws-dynamo-db002.png)
 
 Another option is to to type the following command in the **NuGet Package Manager Console**: *PM> Install-Package AWSSDK.DynamoDBv2*
 
@@ -251,7 +251,7 @@ __Example 7: Initialize the MainWindowViewModel__
 
 If you run the code at this point you will be able to see the data in your AWS console.
 
-![aws-dynamo-db003](images/aws-dynamo-db003.png)
+![Telerik UI for WPF DynamoDB table configuration](images/aws-dynamo-db003.png)
 
 ## Step 4: Get the Data from DynamoDb
 

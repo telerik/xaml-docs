@@ -46,7 +46,7 @@ You can use the following definition to display a simple PolarAreaSeries
 	</telerik:RadPolarChart>
 ```
 
-![radchartview-series-polarareaseries](images/radchartview-series-polarareaseries.png)
+![Telerik UI for WPF RadChartView PolarAreaSeries visual appearance](images/radchartview-series-polarareaseries.png)
 
 ## See Also
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

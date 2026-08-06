@@ -39,4 +39,4 @@ The axis range direction can be changed by setting the `IsInverse` property of t
 
 The following picture shows two charts - one with the default range direction (on the top) and another with inverted axes ranges (on the bottom).
 
-![Inverted Axis Range](images/radchartview-axes-invert-axis-0.png)
+![Telerik UI for WPF RadChartView Comparing Default and Inverted Axis Range Directions](images/radchartview-axes-invert-axis-0.png)

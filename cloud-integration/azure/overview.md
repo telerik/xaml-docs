@@ -14,7 +14,7 @@ Microsoft Azure is a cloud computing service created by Microsoft for building, 
 
 You can create a [free account](https://azure.microsoft.com/en-us/free/) and take advantage of a number of free services such as Cosmos DB, Blob/File Storage, serverless functions and more and integrate them with the controls from the UI for {{ site.framework_name }} suite. Here are some of the services that are available:
 
-![Azure Free Services](images/azure-free-services.png)
+![Microsoft Azure free services available for Telerik UI for WPF integration](images/azure-free-services.png)
 
 Here are the currently available topics:
 

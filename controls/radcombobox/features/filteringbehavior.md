@@ -131,10 +131,10 @@ Finally all you need to do is to set the newly created behavior to the Filtering
 
 The following figures demonstrate the final result:
 __Figure 1:__ The items whose length is bigger or equal to 10 are filtered and the item that fully matches is highlighted:
-![radcombobox-features-filteringbehavior-1](images/RadComboBox_Features_FilteringBehavior_01.png)
+![Telerik UI for WPF RadComboBox filtering items by length with a full match highlighted](images/RadComboBox_Features_FilteringBehavior_01.png)
 
 __Figure 2:__ Again the items are filtered and because there isn’t an item that exactly matches the entered length the __FindFullMatchIndex()__ returns -1 and the first item is highlighted:
-![radcombobox-features-filteringbehavior-2](images/RadComboBox_Features_FilteringBehavior_02.png)
+![Telerik UI for WPF RadComboBox filtering items by length with no exact match](images/RadComboBox_Features_FilteringBehavior_02.png)
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/ComboBox/CustomFiltering).
 

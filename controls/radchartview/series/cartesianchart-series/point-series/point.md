@@ -47,7 +47,7 @@ __Example 1: Declaring an PointSeries in XAML__
 ```
 
 #### __Figure 1: PointSeries visual appearance__
-![radchartview-series-pointseries](images/radchartview-series-pointseries.png)
+![Telerik UI for WPF RadChartView PointSeries visual appearance](images/radchartview-series-pointseries.png)
 
 ## Properties
 * __CategoryBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.

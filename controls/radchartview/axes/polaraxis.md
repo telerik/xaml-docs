@@ -38,4 +38,4 @@ Below is an example of RadPolarChart that demonstrates the properties of its pol
 	</telerikChart:RadPolarChart>
 ```
 
-![Rad Chart View-chart axes polaraxis](images/RadChartView-chart_axes_polaraxis.PNG)
+![Telerik UI for WPF RadChartView polar chart with a PolarAxis and radial axis](images/RadChartView-chart_axes_polaraxis.PNG)

@@ -41,7 +41,7 @@ __Example 1: Declaring an DoughnutSeries in XAML__
 ```
 
 #### __Figure 1: DoughnutSeries visual appearance__	
-![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries.png)
+![Telerik UI for WPF RadChartView DoughnutSeries visual appearance](images/radchartview-series-doughnutseries.png)
 
 ## Properties
 
@@ -117,7 +117,7 @@ __Example 4: Setting RadiusFactor and InnerRadiusFactor__
 ```	
 
 #### __Figure 2: RadiusFactor of 1 (left) and 0.5 (right), and InnerRadiusFactor of 0.2 (left) and 0.3 (right)__
-![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-1.png)
+![Telerik UI for WPF RadChartView DoughnutSeries with labels and different radius](images/radchartview-series-doughnutseries-1.png)
 
 ## Offset Doughnut Slice from Center
 
@@ -141,7 +141,7 @@ __Example 5: Offsetting pie slices__
 ```	
 
 #### __Figure 3: Exploding pie slices__
-![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-2.png)
+![Telerik UI for WPF RadChartView DoughnutSeries with slices offset](images/radchartview-series-doughnutseries-2.png)
 
 Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of DoughnutSeries. In this case when you select a data point, the corresponding doughnut slice will *explode* from the center of the doughnut.
 
@@ -166,7 +166,7 @@ __Example 6: Setting SelectedPointOffset__
 ```
 
 #### __Figure 4: Selected exploding pie slices__
-![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-3.png)
+![Telerik UI for WPF RadChartView DoughnutSeries with customized slice styling](images/radchartview-series-doughnutseries-3.png)
 
 > The OffsetFromCenter and SelectedPointOffset works in relative units between 0 and 1. 
 

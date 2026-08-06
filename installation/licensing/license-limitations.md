@@ -18,8 +18,8 @@ The free __Trial__ license of Telerik UI for WPF gives access to all functionali
 
 During the active trial the following popup will display on startup of the application.
 
-![A picture showing the trial message dialon](images/installation-installing-license-limitations-0.png)
+![Telerik UI for WPF trial message dialog](images/installation-installing-license-limitations-0.png)
 
 After the trial expires, the following message box and watermark overlay are displayed.
 
-![A picture showing the trial warning and watermark overlay](images/installation-installing-license-limitations-1.png)
+![Telerik UI for WPF trial warning and watermark overlay](images/installation-installing-license-limitations-1.png)

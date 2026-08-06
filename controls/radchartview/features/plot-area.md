@@ -13,7 +13,7 @@ position: 5
 The chart's plot area is the zone where all data points are drawn (see Figure 1). The API of the chart allows you to get information about the area or apply a custom style for the visual element that represents it.
 
 #### __Figure 1: Chart's plot area__
-![Chart's plot area](images/radchartview-features-plot-area-0.png)
+![Telerik UI for WPF RadChartView chart plot area where data points are drawn](images/radchartview-features-plot-area-0.png)
 
 The chart's axes are not included in the plot area.
 
@@ -33,7 +33,7 @@ __Example 1: Setting ClipToPlotArea of a chart series__
 ```
 
 #### __Figure 2: ClipToPlotArea example__
-![ClipToPlotArea example](images/radchartview-features-plot-area-1.png)
+![Telerik UI for WPF RadChartView ClipToPlotArea example showing chart content clipped to the plot area](images/radchartview-features-plot-area-1.png)
 
 ## Customize the plot area visual
 
@@ -49,7 +49,7 @@ __Example 2: Setting PlotAreaStyle__
 ```
 
 #### __Figure 3: PlotAreaStyle example__
-![PlotAreaStyle example](images/radchartview-features-plot-area-2.png)
+![Telerik UI for WPF RadChartView plot area with a customized visual style](images/radchartview-features-plot-area-2.png)
 
 ## Controlling the stack order of the elements
 
@@ -85,7 +85,7 @@ __Example 3: Setting the ZIndex property__
 ```
 
 #### __Figure 4: ZIndex example__
-![ZIndex example](images/radchartview-ZIndex.png)
+![Telerik UI for WPF RadChartView series displayed according to custom ZIndex values](images/radchartview-ZIndex.png)
  
 ## See Also  
 * [Getting Started]({%slug radchartview-introduction%})

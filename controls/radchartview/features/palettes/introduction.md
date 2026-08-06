@@ -29,7 +29,7 @@ __RadPieChart with Warm Pallete__
 
 __Pie chart with the built-in Warm palette__  
 
-![Rad Chart View-palettes-introduction-0](images/RadChartView-palettes-introduction-0.png)
+![Telerik UI for WPF RadPieChart using the built-in Warm palette](images/RadChartView-palettes-introduction-0.png)
 
 The palette coloring is index based, which means that each next chart item (series or data point) will get the next [palette entry]({%slug radchartview-features-palettes-paletteentry%}) from the palette collection. When the palette entries are exhausted, they will start repeating. For example, the built-in palettes have 8 colors defined. The first chart series will take the first palette color, the second series the second color, and so on. If you end up with, lets say, 9 series, the palette entries will start repeating and the first entry will be used for the 9th chart series.
 

@@ -29,15 +29,15 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 On the first step the wizard provides basic update process information  
 
-![VSExtentions WPF Upgrade Wizard Initial Page](images/VSExtentions_WPF_UpgradeWizardInitialPage.png)
+![Telerik UI for WPF Visual Studio upgrade wizard initial page](images/VSExtentions_WPF_UpgradeWizardInitialPage.png)
 
 You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively). The Compatibility button will invoke the [Upgrade API Analyzer tool](https://docs.telerik.com/devtools/wpf/upgrade-api-analyzer):
 
-![VSExtentions WPF Upgrade Wizard](images/VSExtentions_WPF_UpgradeWizard.png)
+![Telerik UI for WPF Visual Studio upgrade wizard project selection](images/VSExtentions_WPF_UpgradeWizard.png)
 
 The next screen allows you to update the Visual Studio Toolbox with the newly selected controls, so that you avoid accidental reference change during a control drag and drop, as well as creating a backup of your project:
 
-![VSExtentions WPF Upgrade Wizard Toolbox](images/VSExtentions_WPF_UpgradeWizardOptions.png)
+![Telerik UI for WPF Visual Studio upgrade wizard backup creation](images/VSExtentions_WPF_UpgradeWizardOptions.png)
 
 ### Notes
 
@@ -47,7 +47,7 @@ The next screen allows you to update the Visual Studio Toolbox with the newly se
 
 * The distribution, downloaded by the Upgrade Wizard contains only the .dll and related files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or any code examples.
 
-	![VSExtensions Themes Folder](images/VSExtensions_WPF_ThemeFilesUnderNamedFolder.png)
+	![Telerik UI for WPF Visual Studio theme files under a named folder](images/VSExtensions_WPF_ThemeFilesUnderNamedFolder.png)
 
 * A Visual Studio restart will be required in order to update your toolbox. If the automatic restart fails, a restart should be initiated manually in order to complete the toolbox upgrade.
 

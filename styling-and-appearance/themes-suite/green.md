@@ -192,7 +192,7 @@ Below you can find more details about each brush and where it is usually applied
 
 __Theme brushes preview__
 
-![Green Theme Image 02](../images/Common_Styling_Appearance_Green_Theme_02.png)
+![Telerik UI for WPF Green theme control preview](../images/Common_Styling_Appearance_Green_Theme_02.png)
 
 ## Changing Palette Colors
 
@@ -234,7 +234,7 @@ __The ColorVariation enumeration that determines which color variation should be
 
 __Light and Dark color variations demonstrated with RadCalendar__
 
-![Green Theme Image 01](../images/Common_Styling_Appearance_Green_Theme_01.png)
+![Telerik UI for WPF Green theme application preview](../images/Common_Styling_Appearance_Green_Theme_01.png)
 
 You can switch between the color variations by calling the `LoadPreset` method as shown below:
 
@@ -334,7 +334,7 @@ __Changing the FontSize and the FontFamily__
 
 __Change in theme fonts__
 
-![Green Theme Image 03](../images/Common_Styling_Appearance_Green_Theme_03.png)
+![Telerik UI for WPF Green theme styling changed font preview](../images/Common_Styling_Appearance_Green_Theme_03.png)
 	
 ## Changing Corner Radius 
 
@@ -411,7 +411,7 @@ __Changing the CornerRadius__
 
 __Changes in corner radius__	
 
-![Green Theme Image 04](../images/Common_Styling_Appearance_Green_Theme_04.png)
+![Telerik UI for WPF Green theme changes in corner radius preview](../images/Common_Styling_Appearance_Green_Theme_04.png)
 
 ## Changing Opacity 
 
@@ -432,7 +432,7 @@ __Changing the DisabledOpacity__
 	
 __Changes in the disabled elements opacity__
 
-![Green Theme Image 05](../images/Common_Styling_Appearance_Green_Theme_05.png)
+![Telerik UI for WPF Green theme changes in the disabled elements opacity preview](../images/Common_Styling_Appearance_Green_Theme_05.png)
 	
 The same is applicable for the ReadOnly state of controls by using the exposed `ReadOnlyOpacity` property of GreenPalette. The default values are __0.2__ for the `DisabledOpacity` and __1__ for the `ReadOnlyOpacity` property. 
 
@@ -457,7 +457,7 @@ __Changing the opacity__
 
 __Changes in the readonly elements opacity__
 
-![Green Theme Image 06](../images/Common_Styling_Appearance_Green_Theme_06.png)	
+![Telerik UI for WPF Green theme changes in the readonly elements opacity preview](../images/Common_Styling_Appearance_Green_Theme_06.png)
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 

@@ -47,7 +47,7 @@ __Example 1: Declaring an AreaSeries in XAML__
 ```
 
 #### __Figure 1: AreaSeries visual appearance__
-![radchartview-series-areaseries](images/radchartview-series-areaseries.png)
+![Telerik UI for WPF RadChartView AreaSeries visual appearance](images/radchartview-series-areaseries.png)
 
 ## Properties
 

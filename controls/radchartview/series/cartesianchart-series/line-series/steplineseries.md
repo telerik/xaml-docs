@@ -42,7 +42,7 @@ __Example 1: Declaring a StepLineSeries in XAML__
 ```
 
 #### __Figure 1: StepLineSeries visual appearance__
-![radchartview-series-steplineseries](images/radchartview-series-steplineseries.png)
+![Telerik UI for WPF RadChartView StepLineSeries visual appearance](images/radchartview-series-steplineseries.png)
 
 ## Properties
 
@@ -57,7 +57,7 @@ __Example 1: Declaring a StepLineSeries in XAML__
 	* __BetweenTicks__: The risers are plotted in the middle of the range, defined between each two ticks.
 
 #### __Figure 2: BetweenTicks and OnTicks RisersPosition values based on Example 1__
-![StepLineSeries with BetweenTicks and OnTicks RisersPosition](images/radchartview-series-risersposition.png)
+![Telerik UI for WPF RadChartView StepLineSeries with BetweenTicks and OnTicks riser positions](images/radchartview-series-risersposition.png)
 
 ## Data Binding
 

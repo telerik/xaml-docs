@@ -10,7 +10,7 @@ position: 5
 
 # Smart Paste Button
 
-The Telerik UI for Wpf SmartPasteButton is an AI-powered component that streamlines data entry by extracting structured information from clipboard content and automatically populating form fields. When users paste unstructured text copied from the clipboard, the SmartPasteButton sends the content to an AI service, which analyzes the text and returns structured values mapped to the appropriate fields based on the form structure. This improves data entry efficiency and enhances the user experience.
+The Telerik UI for WPF SmartPasteButton is an AI-powered component that streamlines data entry by extracting structured information from clipboard content and automatically populating form fields. When users paste unstructured text copied from the clipboard, the SmartPasteButton sends the content to an AI service, which analyzes the text and returns structured values mapped to the appropriate fields based on the form structure. This improves data entry efficiency and enhances the user experience.
 
 ![The Telerik UI for Wpf SmartPasteButton AI-powered component](images/radbuttons-features-smart-paste.gif) 
 
@@ -22,71 +22,70 @@ The **SmartPasteButton** is designed to work in conjunction with data-bound comp
 
 When the user clicks the `RadSmartPasteButton`, it reads the text clipboard content. The control obtains the fields from the provider and raises `SmartPasteRequest` with a `SmartPasteButtonRequestContextEventArgs` instance.
 
-1. Add the SmartPasteButton control to your page:
+1. Add the SmartPasteButton control to your page.
 
-```XAML
-<telerik:RadSmartPasteButton x:Name="smartPasteButton"
-                             SmartPasteRequest="OnSmartPasteRequest" />
-
-```
-
->caption Figure 1: RadSmartPasteButton
-
-![WPF RadSmartPasteButton](images/radbuttons-features-smart-paste.png)
+  ```XAML
+  <telerik:RadSmartPasteButton x:Name="smartPasteButton"
+                               SmartPasteRequest="OnSmartPasteRequest" />
+  
+  ```
+  
+  __RadSmartPasteButton__
+  
+  ![WPF RadSmartPasteButton](images/radbuttons-features-smart-paste.png)
 
 2.  Add add a `RadDataForm` to display the fields that the button will populate. Add a **Copy to Clipboard** button to place unstructured text on the clipboard for the Smart Paste operation.
 
-```XAML
-<telerik:RadButton Content="Copy to Clipboard"
-                   Click="OnCopyToClipboardClick" />
-<telerik:RadDataForm x:Name="dataForm"
-                     AutoEdit="True"
-                     EditMode="Default" />
-```
+  ```XAML
+  <telerik:RadButton Content="Copy to Clipboard"
+                     Click="OnCopyToClipboardClick" />
+  <telerik:RadDataForm x:Name="dataForm"
+                       AutoEdit="True"
+                       EditMode="Default" />
+  ```
 
 3. Set the `Provider` property to the container whose fields you want to populate. Handle the `SmartPasteRequest` event to send the clipboard content and field information to your AI service.
 
-```C#
- this.smartPasteButton.Provider = this.dataForm as ISmartPasteButtonProvider;
-```
+  ```C#
+   this.smartPasteButton.Provider = this.dataForm as ISmartPasteButtonProvider;
+  ```
 
-4. Handle the `SmartPasteRequest` event
+4. Handle the `SmartPasteRequest` event.
 
-`SmartPasteRequest` event occurs when a smart paste operation is requested. Subscribe to this event to initiate the smart paste logic.
-
-The event arguments provide the clipboard text through `Content` and the available target fields through `Fields`. Send that information to an AI service that can return values keyed by the `SmartPasteButtonField.Field` identifiers. When the service returns, call `SetResponse` with the extracted values.
-
-```C#
-private void OnCopyToClipboardClick(object sender, RoutedEventArgs e)
-{
-    Clipboard.SetText(SampleText);
-}
-
-private async void OnSmartPasteRequest(object sender, SmartPasteButtonRequestContextEventArgs e)
-{
-    try
-    {
-        var request = new { Content = e.Content, FormFields = e.Fields };
-        var httpResponse = await new HttpClient().PostAsJsonAsync(
-            "https://demos.telerik.com/service/v2/ai/smartpaste/smartpaste",
-            request,
-            e.CancellationToken);
-        httpResponse.EnsureSuccessStatusCode();
-
-        var response = await httpResponse.Content.ReadFromJsonAsync<SmartPasteResponse>(e.CancellationToken);
-        e.SetResponse(response.FieldValues);
-    }
-    catch (OperationCanceledException)
-    {
-        e.Cancel();
-    }
-    catch (Exception ex)
-    {
-        e.SetError(ex);
-    }
-}
-
-```
+  `SmartPasteRequest` event occurs when a smart paste operation is requested. Subscribe to this event to initiate the smart paste logic.
+  
+  The event arguments provide the clipboard text through `Content` and the available target fields through `Fields`. Send that information to an AI service that can return values keyed by the `SmartPasteButtonField.Field` identifiers. When the service returns, call `SetResponse` with the extracted values.
+  
+  ```C#
+  private void OnCopyToClipboardClick(object sender, RoutedEventArgs e)
+  {
+      Clipboard.SetText(SampleText);
+  }
+  
+  private async void OnSmartPasteRequest(object sender, SmartPasteButtonRequestContextEventArgs e)
+  {
+      try
+      {
+          var request = new { Content = e.Content, FormFields = e.Fields };
+          var httpResponse = await new HttpClient().PostAsJsonAsync(
+              "https://demos.telerik.com/service/v2/ai/smartpaste/smartpaste",
+              request,
+              e.CancellationToken);
+          httpResponse.EnsureSuccessStatusCode();
+  
+          var response = await httpResponse.Content.ReadFromJsonAsync<SmartPasteResponse>(e.CancellationToken);
+          e.SetResponse(response.FieldValues);
+      }
+      catch (OperationCanceledException)
+      {
+          e.Cancel();
+      }
+      catch (Exception ex)
+      {
+          e.SetError(ex);
+      }
+  }  
+  ```
 
 >tip Runnable example with the SmartPasteButton integration with DataForm is available in our [Telerik UI for Wpf Demo](https://demos.telerik.com/wpf/). 
 

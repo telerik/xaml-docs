@@ -30,17 +30,17 @@ This is straightforward as well. Just [download the installer](https://aws.amazo
 
 Now you should see the AWS start page:
 
-![aws-getting-started001](images/aws-getting-started001.png)
+![AWS Toolkit start page in Visual Studio](images/aws-getting-started001.png)
 
 ## Creating a user
 
 In order to access the AWS services you need a user. The user management is actually a service. So navigate to the **Security, Identity & Compliance** and click the **IAM** link.
 
-![aws-getting-started002](images/aws-getting-started002.png)
+![AWS Identity and Access Management service in the AWS console](images/aws-getting-started002.png)
 
 Click add new user and follow the instructions on the screen. There are 4 steps:
 
-![aws-getting-started003](images/aws-getting-started003.png)
+![AWS console Create User workflow with its four setup steps](images/aws-getting-started003.png)
 
 1. Chose the name and access (programmatic and/or management console).
 2. Chose permission policy - for the firs user you can use any of the existing policies(the third icon).
@@ -51,6 +51,6 @@ Click add new user and follow the instructions on the screen. There are 4 steps:
 
 This is the final step. If you do not see the AWS start page (see the first image) go to View - AWS Explorer. Click **Add New User** and import the csv file.
 
-![aws-getting-started004](images/aws-getting-started004.png)
+![AWS Toolkit Add New User dialog in Visual Studio](images/aws-getting-started004.png)
 
 > In order to see the codes of each region, please check out the [Amazon API Gateway](https://docs.aws.amazon.com/general/latest/gr/rande.html#apigateway_region)

@@ -44,7 +44,7 @@ __Example 1: Defining the view__
 
 Open the NuGet Package Manager and install the **AWSSDK Simple Email** package.
 
-![aws-ses002](images/aws-ses002.png)
+![NuGet Package Manager installing the AWSSDK Simple Email package](images/aws-ses002.png)
 
 In addition you need to add the following to your **App.config** file:
 
@@ -158,7 +158,7 @@ __Example 4: Defining the ViewModel__
 
 #### Figure 1: Result from the example in the Office2016 theme
 
-![aws-ses-result](images/aws-ses-result.png)
+![Telerik UI for WPF email form result in the Office2016 theme](images/aws-ses-result.png)
 
 ## Step 4: Add verified email addresses
 

@@ -34,4 +34,4 @@ The ChartView provides the following types of annotations:
 
 * Polar Custom
 
-![Rad Chart View-annotations-classes](images/RadChartView-annotations-classes.png)
+![Telerik UI for WPF RadChartView annotation classes including Cartesian, polar, radial, and custom annotations](images/RadChartView-annotations-classes.png)

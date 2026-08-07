@@ -60,7 +60,7 @@ Each [chart series]({%slug radchartview-series-chartseries%}) expose a __LegendS
 		</Grid>
 	```
 	
-	![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-0.png)
+	![Telerik UI for WPF RadChartView with RadLegend displaying series and data point legend items](images/radchartview-features-radlegend-support-0.png)
 
 Both legend settings allow you to set the geometry of the legend item's marker. You can do that via the __MarkerGeometry__ property of the settings.
 
@@ -118,7 +118,7 @@ __Example 2: Legend Settings Code Example__
 	</Grid>
 ```
 
-![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-1.png)
+![Telerik UI for WPF RadChartView legend settings example with series and data point entries](images/radchartview-features-radlegend-support-1.png)
 
 > If the default LegendItem objects created by the chart doesn't work for your scenario, you can manually populate the legend instead of using the __LegendItems__ collection. Read the [Getting Started]({%slug radlegend-getting-started%}) article of RadLegend to see how to populate the control with LegendItem objects manually.
 
@@ -203,4 +203,4 @@ __Example 6: Setting the SeriesProvider Source__
 	this.seriesProvider.Source = GetData();
 ```
 
-![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-2.png)
+![Telerik UI for WPF RadChartView with RadLegend populated by SeriesProvider-generated series](images/radchartview-features-radlegend-support-2.png)

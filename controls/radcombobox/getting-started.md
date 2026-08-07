@@ -192,7 +192,7 @@ Running the application at this stage will result in a populated __RadComboBox__
 
 __Figure 3: RadComboBox bound to collection of Cars__
 
-![Bound RadComboBox](images/RadComboBox_GettingStarted_2.png)
+![Telerik UI for WPF RadComboBox bound to a collection of cars](images/RadComboBox_GettingStarted_2.png)
 
 ## Working with AutoComplete
 

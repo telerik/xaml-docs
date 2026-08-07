@@ -106,7 +106,7 @@ __Example 3: Defining RadCartesianChart in XAML__
 If you run the application now, you should get a structure like in **Figure 1**. 
 
 #### Figure 1: Labels without Custom Smart Label Strategy
-![radchartview-labels-custom-smart-labels-strategy_NoStrategy](images/radchartview-labels-custom-smart-labels-strategy_1.png)
+![Telerik UI for WPF RadChartView Line Series with Overlapping Default Labels](images/radchartview-labels-custom-smart-labels-strategy_1.png)
 
 Looking at the Figure 1 you can easily observe that some of the labes are overlapped and it is not clear enough which label for which data point corresponds. To change the position of the label we can create custom label strategy. To do that we will need to create a custom class which inherits ChartSmartLabelsStrategyBase. You can use this class to control the positioning of the labels. The arranging of the labels is happening in the CalculateLabelsPositions() method. 
 
@@ -233,7 +233,7 @@ __Example 4: Setting the CustomSmartLabelStrategy__
 
 
 #### Figure 1: Labels with Custom Smart Label Strategy
-![radchartview-labels-custom-smart-labels-strategy_NoStrategy](images/radchartview-labels-custom-smart-labels-strategy_2.png)
+![Telerik UI for WPF RadChartView Line Series with Labels Repositioned by a Custom Smart Label Strategy](images/radchartview-labels-custom-smart-labels-strategy_2.png)
 
 ## See Also  
 * [GettingStarted]({%slug radchartview-introduction%})

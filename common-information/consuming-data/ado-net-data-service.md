@@ -31,13 +31,13 @@ The first step is to add a new connected service to your application. In order t
 >tipThe __OData Connected Service__ tool works only with __Visual Studio 2017 and 2019__.
 
 #### __Figure 1: Select the "References" folder, right click with your mouse button and choose "Add Connected Service"__ 
-![Common Consuming Data Wcf Service 010](images/Common_ConsumingDataWcfService_010.png)
+![Visual Studio WPF project References folder with Add Connected Service selected for an OData service](images/Common_ConsumingDataWcfService_010.png)
 
 #### __Figure 2: A new tab will be opened with the available conntected services. Click on the OData Connected Service.__
-![Common Consuming Data Wcf Service 020](images/Common_ConsumingDataWcfService_020.png)
+![Visual Studio OData Connected Service selection for a WPF data service project](images/Common_ConsumingDataWcfService_020.png)
 
 #### __Figure 3: A popup window will appear. In the Address TextBox, type the Northwind URL address and click on the Finish button below.__
-![Common Consuming Data Wcf Service 030](images/Common_ConsumingDataWcfService_030.png)
+![Visual Studio OData Connected Service address dialog with the Northwind service URL](images/Common_ConsumingDataWcfService_030.png)
 
 When a service reference is added to a project, any types defined in the service are generated in the local project. 
 

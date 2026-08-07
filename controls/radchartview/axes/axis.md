@@ -42,7 +42,7 @@ The chart axes share a set of common features that can be used via the following
 
 * [LabelFitMode]({%slug radchartview-axes-labels%}): The axis labels can be laid out in specific ways in order to improve their readability when they become too long and start to overlap each other. `LabelFitMode` positions the labels on different lines and the other fit mode rotates the labels some user defined degree so that they appear inclined or orthogonal to the axis, making them easier to read.        
 
-	![{{ site.framework_name }} RadChartView LabelFit Modes](images/radchartview-chart_axes_labelfitmode.png)
+	![Telerik UI for WPF RadChartView LabelFit Modes for Preventing Axis Label Overlap](images/radchartview-chart_axes_labelfitmode.png)
 
 * `ElementBrush`: A `Brush` typed property that colorizes all axis elements (line, ticks, labels and title) at once. You can see the property in action in the [Multiple Axes]({%slug radchartview-axes-multipleaxes%}) article.
 
@@ -154,7 +154,7 @@ __BinaryTemplateSelector Definition__
 	End Class
 ```
 
-![RadChartView Horizontal Axis with LabelTemplateSelector](images/radchartview-chart_axes_axisconfig.png)
+![Telerik UI for WPF RadChartView Horizontal Axis with a LabelTemplateSelector](images/radchartview-chart_axes_axisconfig.png)
 
 ## Getting the Axis Actual Range
 

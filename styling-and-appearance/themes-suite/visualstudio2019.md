@@ -214,7 +214,7 @@ The default values of the brushes in the theme are listed below.
 
 __Theme colors represented in RadOutlookBar__
 
-![VisualStudio2019 theme colors represented in RadOutlookBar](images/visualstudio2019-theme-outlook.PNG)	
+![Telerik UI for WPF Visual Studio 2019 theme colors represented in RadOutlookBar](images/visualstudio2019-theme-outlook.PNG)
 
 ## Default Theme Brushes
 
@@ -280,7 +280,7 @@ __Changing the color variation of the theme__
 
 __VisualStudio2019 theme color variations__
 
-![VisualStudio2019 theme colors represented in RadTaskBoard](images/VisualStudio2019-theme-variations.PNG)
+![Telerik UI for WPF Visual Studio 2019 theme colors represented in RadTaskBoard](images/VisualStudio2019-theme-variations.PNG)
 
 >important The `Dark` variation of the theme is designed with dark background in mind. It is recommended to use such a background in your application when working with it. 
 
@@ -318,7 +318,7 @@ __Changing the theme's FontSize and FontFamily__
 
 __Setting FontSize and FontFamily__
 
-![RadCalendar with modified FontSize and FontFamiliy](images/visualstudio2019-theme-calendar-font-change.png)	
+![Telerik UI for WPF RadCalendar with modified font size and font family in the Visual Studio 2019 theme](images/visualstudio2019-theme-calendar-font-change.png)
 
 ## Using Glyphs
 
@@ -343,7 +343,7 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 ```
 
 __Appearance of the RadToggleButton in the different states__
-![RadToggleButton States](images/visualstudio2019-theme-togglebutton-states.png)
+![Telerik UI for WPF RadToggleButton states in the Visual Studio 2019 theme](images/visualstudio2019-theme-togglebutton-states.png)
 
 ## Changing Opacity 
 

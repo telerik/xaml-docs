@@ -62,7 +62,7 @@ To install the product:
 
 1. Use the [Visual Studio's Reference Manager](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=visualstudio) to browse and reference the Telerik dlls in your WPF project. 
 
-	![WPF Added References](images/msi-or-zip-setup-lifecyle-5.png)
+	![Telerik UI for WPF assemblies added to Visual Studio project references](images/msi-or-zip-setup-lifecyle-5.png)
 	
 1. [Install a license key]({%slug installing-license-key%}#adding-a-license-to-projects-using-telerik-assembly-references-no-nuget-packages).
 
@@ -90,7 +90,7 @@ To install the product:
 
 1. Use the [Visual Studio's Reference Manager](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager?view=visualstudio) to browse and reference the Telerik dlls in your WPF project. 
 
-	![WPF Added References](images/msi-or-zip-setup-lifecyle-5.png)
+	![Telerik UI for WPF assemblies added to Visual Studio project references](images/msi-or-zip-setup-lifecyle-5.png)
 	
 1. [Install a license key]({%slug installing-license-key%}#adding-a-license-to-projects-using-telerik-assembly-references-no-nuget-packages).
 
@@ -105,25 +105,25 @@ The UI for WPF product can be installed also via the Telerik UI for WPF Extensio
 
 1. To get the extension, you can either install product via the [.msi installer](#tab-2-msi-installation) or use the [Extensions](https://learn.microsoft.com/en-us/visualstudio/ide/finding-and-using-visual-studio-extensions?view=visualstudio) menu in Visual Studio to download the extension from the marketplace (*"Progress Telerik UI for WPF Extension"*).
 
-	![](images/installation-options-vsx-extensions-manager.png)
+	![Visual Studio Extensions and Updates manager showing Telerik UI for WPF installation options](images/installation-options-vsx-extensions-manager.png)
 
 1. In Visual Studio use the Telerik WPF Application project template to create a WPF project.
 
-	![](images/installation-options-vsx-menu.png)
+	![Visual Studio Extensions menu showing Telerik UI for WPF options](images/installation-options-vsx-menu.png)
 
 2. Follow the Create New Project Wizard to setup the project.
 	
-	![Choosing an application template](images/installation-adding-to-application-create-application-and-adding-control-2.png)
+	![Visual Studio WPF application template selection for adding a Telerik UI for WPF control](images/installation-adding-to-application-create-application-and-adding-control-2.png)
 
 4. In case you haven't installed a [license key]({%slug installing-license-key%}) already, you can download one using the License Validation screen.
 	
 	__License validation screen (license not found)__  
 	
-	![License validation screen](images/installation-adding-to-application-create-application-and-adding-control-license-validation.png)
+	![Telerik UI for WPF license validation screen in Visual Studio](images/installation-adding-to-application-create-application-and-adding-control-license-validation.png)
 	
 	__License validation screen (successfully downloaded a license)__
 	
-	![License validation screen - successfull download](images/installation-adding-to-application-create-application-and-adding-control-successfull-download.png)
+	![Telerik UI for WPF license validation screen after a successful download](images/installation-adding-to-application-create-application-and-adding-control-successfull-download.png)
 
 	If you have a license key already installed the License Validation screen will be skipped.
 
@@ -131,7 +131,7 @@ You can further configure the project using the Project Configuration Wizard. Yo
 
 __Adding references to the charting controls__  
 	
-![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
+![Visual Studio WPF application with a Telerik UI for WPF control added](images/installation-adding-to-application-create-application-and-adding-control-3.png)
 
 This step is optional and you will only need it if you use controls that are not defined in `Telerik.Windows.Controls.dll`.
 
@@ -140,7 +140,7 @@ This step is optional and you will only need it if you use controls that are not
 
 The Telerik UI for WPF controls can also be installed via the **Progress Control Panel**.
 
-![Progress Control Panel](images/progress-control-panel-1.png)
+![Progress Control Panel showing Telerik UI for WPF products](images/progress-control-panel-1.png)
 
 To install the product:
 
@@ -150,15 +150,15 @@ To install the product:
 
 1. On the login screen use your Telerik account credentials.
 
-	![The Progress Control Panel Login Screen](images/progress-control-panel-2.png)
+	![Progress Control Panel login screen for Telerik UI for WPF installation](images/progress-control-panel-2.png)
 	
 1. Select the Telerik UI for WPF product in the products list on click __Proceed__.
 
-	![The Progress Control Panel List of Available Products](images/progress-control-panel-3.png)
+	![Progress Control Panel list of available Telerik UI for WPF products](images/progress-control-panel-3.png)
 
 1. Follow the screens to configure the installation.
 
-	![The Progress Control Panel Installation Configuration Page](images/progress-control-panel-4.png)
+	![Progress Control Panel Telerik UI for WPF installation configuration page](images/progress-control-panel-4.png)
 
 	The Progress Control Panel will download the necessary files for installation and then install them to the location you selected.
 	

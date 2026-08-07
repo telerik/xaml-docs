@@ -336,7 +336,7 @@ __Enabling Windows 11 Compact Mode__
 
 __Windows 11 standard vs. compact mode in RadGridView__  
 
-![A picture showing the difference between compact and standrad mode](Images/windows11-theme-compact-mode.png)
+![Telerik UI for WPF Windows 11 theme comparison of compact and standard modes](Images/windows11-theme-compact-mode.png)
 
 ## Default Theme Colors
 
@@ -393,7 +393,7 @@ The default values of the brushes in the theme are listed below.
 
 __Theme colors represented in RadOutlookBar__
 
-![Windows11 theme colors represented in RadOutlookBar](images/windows11-theme-outlook.PNG)	
+![Telerik UI for WPF Windows 11 theme colors represented in RadOutlookBar](images/windows11-theme-outlook.PNG)
 
 ## Default Theme Brushes
 
@@ -487,7 +487,7 @@ __Changing the color variation of the theme__
 
 __Windows11 theme color variations__
 
-![Windows11 theme colors represented in RadCardView](images/windows11-theme-variations.PNG)
+![Telerik UI for WPF Windows 11 theme colors represented in RadCardView](images/windows11-theme-variations.PNG)
 
 >important The `Dark` variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
 
@@ -503,7 +503,7 @@ Acrylic is mode aware; it supports both light and dark mode.
 
 __RadWindow with Acrylic Effect__
 
-![RadWindow with Acrylic Effect](images/windows11-theme-acrylic-effect.PNG)
+![Telerik UI for WPF RadWindow with the Windows 11 Acrylic effect](images/windows11-theme-acrylic-effect.PNG)
 
 ### Mica
 
@@ -513,7 +513,7 @@ Mica is mode aware; it supports both light and dark modes. Mica also indicates w
 
 __RadWindow with Mica Effect__
 
-![RadWindow with Mica Effect](images/windows11-theme-mica-effect.PNG)
+![Telerik UI for WPF RadWindow with the Windows 11 Mica effect](images/windows11-theme-mica-effect.PNG)
 
 ## Setting the Material
 
@@ -577,7 +577,7 @@ __Changing the theme's FontSize and FontFamily__
 
 __Setting FontSize and FontFamily__
 
-![RadCalendar with modified FontSize and FontFamily](images/windows11-theme-calendar-font-change.png)	
+![Telerik UI for WPF RadCalendar with modified font size and font family in the Windows 11 theme](images/windows11-theme-calendar-font-change.png)
 
 ## Using Glyphs
 
@@ -601,7 +601,7 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 
 __Appearance of the RadToggleButton in the different states__
 
-![RadToggleButton States](images/windows11-theme-togglebutton-states.png)
+![Telerik UI for WPF RadToggleButton states in the Windows 11 theme](images/windows11-theme-togglebutton-states.png)
 
 ## Changing Corner Radius
 
@@ -621,7 +621,7 @@ __Changing the default corner radius__
 
 __Appearance of a RadButton control after changing the default corner radius__
 
-![RadButton with a CornerRadius of 0](images/windows11-theme-button-cornerradius.png)	
+![Telerik UI for WPF RadButton with a corner radius of zero in the Windows 11 theme](images/windows11-theme-button-cornerradius.png)
 
 ## Changing ScrollBarsMode
 

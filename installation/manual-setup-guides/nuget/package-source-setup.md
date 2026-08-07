@@ -40,7 +40,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 1. Go to the [Telerik account API key management page](https://www.telerik.com/account/downloads/api-keys).
 1. Click Generate New Key +.
 
-	![Generate New Key + Button](images/nuget-package-source-setup-1.png)
+	![Telerik UI for WPF NuGet page with the Generate New Key button](images/nuget-package-source-setup-1.png)
 
 1. In the Key Note field, add a note that describes the API key.
 1. Click Generate Key.

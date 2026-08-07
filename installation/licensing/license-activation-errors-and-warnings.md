@@ -18,13 +18,13 @@ A missing, expired, or invalid license will result in:
 
 * A modal dialog appearing on application startup. Clicking the __OK__ button of the dialog closes the dialog and removes the banner until the next application startup.
 
-	![A picture showing the watermark and dialog that occurs when no valid license can be found](images/license-activation-errors-and-warnings-2.png)
+	![Telerik UI for WPF watermark and license dialog shown when no valid license is found](images/license-activation-errors-and-warnings-2.png)
 
 * A warning message similar to the following appearing in the build log:
 	
-	![A picture showing the license key errors in the Visual Studio Error List pane](images/license-activation-errors-and-warnings-0.png)
+	![Telerik UI for WPF license key errors in the Visual Studio Error List pane](images/license-activation-errors-and-warnings-0.png)
 	
-	![A picture showing the license key errors in the Visual Studio Output pane](images/license-activation-errors-and-warnings-1.png)
+	![Telerik UI for WPF license key errors in the Visual Studio Output pane](images/license-activation-errors-and-warnings-1.png)
 
 ## Invalid License
 

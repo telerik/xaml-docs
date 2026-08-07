@@ -55,7 +55,7 @@ __Example 1: Enabling the trackball__
 ```
 
 #### __Figure 1: RadCartesianChart with trackball__
-![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-0.png)
+![Telerik UI for WPF RadChartView with the trackball behavior enabled](images/radchartview-features-trackball-0.png)
 
 > By default the trackball shows the preview line that follows the data points closest to the mouse position and also the track info control (the information tooltip). The ellipses that snap to the data points are not displayed until explicitly enabled. Read more in the [Toggle the TrackBall Visual Elements](#toggle-the-trackball-visual-elements) section of this article.
 
@@ -66,17 +66,17 @@ The __SnapMode__ property of ChartTrackBallBehavior determines how the trackball
 * __None__: This mode disables the snapping of the line.
 	
 	#### __Figure 2: SnapMode: None__
-	![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-1.png)
+	![Telerik UI for WPF RadChartView trackball with SnapMode set to None](images/radchartview-features-trackball-1.png)
 
 * __ClosestPoint__ (default): This mode snaps the trackball line to the closest point of all data points in the chart.
 
 	#### __Figure 3: SnapMode: ClosestPoint__
-	![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-2.png)
+	![Telerik UI for WPF RadChartView trackball snapped to the closest point](images/radchartview-features-trackball-2.png)
 	
 * __AllClosestPoints__: This mode snaps the trackball line to the closest point from each series object in the chart.
 
 	#### __Figure 4: SnapMode: AllClosestPoints__
-	![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-3.png)
+	![Telerik UI for WPF RadChartView trackball snapped to the closest point in each series](images/radchartview-features-trackball-3.png)
 
 __Example 2: Setting the SnapMode__
 ```XAML
@@ -126,7 +126,7 @@ __Example 3: Setting the SnapSinglePointPerSeries property__
 ```
 
 #### __Figure 5: Snap to multiple points series__
-![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-4.png)
+![Telerik UI for WPF RadChartView trackball snapped to multiple series points](images/radchartview-features-trackball-4.png)
 
 ## Toggle the TrackBall Visual Elements
 
@@ -177,7 +177,7 @@ __Example 4: Toggle the trackball visuals__
 ```
 
 #### __Figure 6: TrackBall with only intersection points shown__
-![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-5.png)
+![Telerik UI for WPF RadChartView trackball showing only intersection points](images/radchartview-features-trackball-5.png)
 
 ## Customize the TrackBall Visual Elements
 
@@ -232,7 +232,7 @@ __Example 5: Setting the line and trackball info styles__
 ```
 
 #### __Figure 7: Customized line and trackball info__
-![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-6.png)
+![Telerik UI for WPF RadChartView trackball showing the preview line and information tooltip](images/radchartview-features-trackball-6.png)
 
 The trackball intersection points can be customized per series via the __TrackBallTemplate__ property of the corresponding chart series.
 
@@ -294,7 +294,7 @@ __Example 6: Setting the line and trackball templates__
 ```
 
 #### __Figure 8: Customized line and trackball templates__
-![Rad Chart View-chart behaviors trackball](images/radchartview-features-trackball-7.png)
+![Telerik UI for WPF RadChartView trackball with customized visual elements](images/radchartview-features-trackball-7.png)
 
 ## Update the TrackBall Position
 

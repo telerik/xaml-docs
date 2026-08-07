@@ -99,15 +99,15 @@ The Office2016Touch theme is, as the name suggests, very similar to the Office20
 
 __RadNumericUpDown__ 
 
-![RadNumericUpDown with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-0.png)
+![Telerik UI for WPF RadNumericUpDown with the Office 2016 Touch theme](images/common-styling-appearance-office2016touch-theme-0.png)
 
 __RadOutlookBar__
 
-![RadOutlookBar with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-1.png)
+![Telerik UI for WPF RadOutlookBar with the Office 2016 Touch theme](images/common-styling-appearance-office2016touch-theme-1.png)
 
 __RadRibbonView__ 
 
-![RadRibbonView with Office2016Touch theme](images/common-styling-appearance-office2016touch-theme-2.png)
+![Telerik UI for WPF RadRibbonView with the Office 2016 Touch theme](images/common-styling-appearance-office2016touch-theme-2.png)
 
 ## Default Theme Colors
 
@@ -188,7 +188,7 @@ __Changing the theme's FontSize and FontFamily__
 
 __Setting FontSize and FontFamily__
 
-![Setting FontSize and FontFamily](images/common-styling-appearance-office2016touch-theme-3.png)	
+![Telerik UI for WPF Office 2016 Touch theme font size and font family settings](images/common-styling-appearance-office2016touch-theme-3.png)
 
 ## Changing FocusThickness
 
@@ -201,7 +201,7 @@ __Changing the theme's FocusThickness__
 
 __Setting FocusThickness__ 
 
-![Setting FocusThickness](images/common-styling-appearance-office2016touch-theme-4.png)	
+![Telerik UI for WPF Office 2016 Touch theme focus thickness setting](images/common-styling-appearance-office2016touch-theme-4.png)
 
 ## Changing Corner Radius
 
@@ -227,7 +227,7 @@ __Changing the default corner radius__
 
 __Setting corner radius__ 
 
-![Setting corner radius](images/common-styling-appearance-office2016touch-theme-5.png)	
+![Telerik UI for WPF Office 2016 Touch theme corner radius setting](images/common-styling-appearance-office2016touch-theme-5.png)
 
 ## Using Glyphs
 
@@ -244,7 +244,7 @@ __Changing the disabled opacity__
 
 __Setting the disabled opacity__ 
 
-![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
+![Telerik UI for WPF Office 2016 Touch theme disabled opacity setting](images/common-styling-appearance-office2016touch-theme-6.png)
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 

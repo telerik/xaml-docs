@@ -39,7 +39,7 @@ __Setting up chart without series__
 	</telerik:RadCartesianChart>
 ```
 
-![{{ site.framework_name }} RadChartView Empty Content](images/radchartview-features-empty-content-0.png)
+![Telerik UI for WPF RadChartView Showing the Default Empty Content Message](images/radchartview-features-empty-content-0.png)
 
 ## Customizing the Content
 
@@ -61,7 +61,7 @@ __Setting the empty content__
 	</telerik:RadCartesianChart>
 ```
 
-![{{ site.framework_name }} RadChartView Custom Empty Content](images/radchartview-features-empty-content-1.png)
+![Telerik UI for WPF RadChartView Showing Custom Empty Content](images/radchartview-features-empty-content-1.png)
 
 The `EmptyContentTemplate` property is of type `DataTemplate` and it allows setting a template that will be applied to the empty content presenter. The data context in the template is the object assigned to the `EmptyContent` property.
 
@@ -86,7 +86,7 @@ __Setting the empty content template__
 	</telerik:RadCartesianChart>
 ```
 
-![{{ site.framework_name }} RadChartView Empty Content Template](images/radchartview-features-empty-content-2.png)
+![Telerik UI for WPF RadChartView with a Custom Empty Content Template](images/radchartview-features-empty-content-2.png)
 
 ## Hiding the Empty Content Message
 
@@ -107,4 +107,4 @@ __Setting the ShowEmptyContent property__
 	</telerik:RadCartesianChart>
 ```
 
-![{{ site.framework_name }} RadChartView Hiding Empty Content Message](images/radchartview-features-empty-content-3.png)
+![Telerik UI for WPF RadChartView with the Empty Content Message Hidden](images/radchartview-features-empty-content-3.png)

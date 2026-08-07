@@ -47,7 +47,7 @@ __Example 1: Declaring a SplineAreaSeries in XAML__
 ```
 
 #### __Figure 1: SplineAreaSeries visual appearance__
-![radchartview-series-splineareaseries](images/radchartview-series-splineareaseries.png)
+![Telerik UI for WPF RadChartView SplineAreaSeries visual appearance](images/radchartview-series-splineareaseries.png)
 
 ## Properties
 
@@ -109,7 +109,7 @@ __Example 4: Setting SplineTension__
 
 __Spline tension 0.8 (left) and 0.4 (right)__
 
-![{{ site.framework_name }} RadChartView SplineAreaSeries with Spline Tension 0.8 (Left) and 0.4 (Right)](images/splineseries-splinearea-tension.png)
+![Telerik UI for WPF RadChartView SplineAreaSeries with Spline Tension 0.8 on the Left and 0.4 on the Right](images/splineseries-splinearea-tension.png)
 
 Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calculated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.35. The default value is `0.03d`.
 
@@ -120,7 +120,7 @@ __Example 5: Setting SplinePointsDistanceFactor__
 
 __SplinePointsDistanceFactor set to 0.18__
 
-![{{ site.framework_name }} RadChartView SplineAreaSeries with SplinePointsDistanceFactor Set to 0.18](images/splineseries-splinearea-points-distance-factor.png)
+![Telerik UI for WPF RadChartView SplineAreaSeries with SplinePointsDistanceFactor Set to 0.18](images/splineseries-splinearea-points-distance-factor.png)
 
 ## Styling the Series
 

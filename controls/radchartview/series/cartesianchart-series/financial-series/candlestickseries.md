@@ -45,7 +45,7 @@ __Example 1: Declaring a CandlestickSeries in XAML__
 ```
 
 #### __Figure 1: CandlestickSeries visual appearance__
-![radchartview-series-candlestickseries](images/radchartview-series-candlestickseries.png)
+![Telerik UI for WPF RadChartView CandlestickSeries visual appearance](images/radchartview-series-candlestickseries.png)
 
 ## Properties
 

@@ -17,13 +17,13 @@ The project conversion feature is available only for .NET Framework projects.
 
 Progress Telerik UI for WPF Extension's __Convert Project Wizard__ could be accessed through the Visual Studio's __Extensions__ menu when you need to convert an existing WPF application to a Telerik WPF application. 
 
-![VSExtentions WPF Overview Menu Convert](images/VSExtentions_WPF_OverviewMenuConvert.png)
+![Telerik UI for WPF Visual Studio Extensions menu for converting a project](images/VSExtentions_WPF_OverviewMenuConvert.png)
 
 The wizard could be also reached through the context menu counterparts accessed by right clicking on the project you want to convert. 
 
 The Convert Project Wizard lets you tune your project's use of Telerik UI for WPF.
 
-![Project Configuration Wizard](images/VSExtensions_WPF_ProjectConvertWizard.png)
+![Telerik UI for WPF Visual Studio project conversion wizard](images/VSExtensions_WPF_ProjectConvertWizard.png)
 VSExtensions_WPF_ProjectConvertWizard
 
 The wizard’s first page lets you:        
@@ -38,7 +38,7 @@ If you prefer the Telerik assemblies to be copied into your solution folder, the
   
 The Convert Project Wizard’s second page is only available if you use theming based on [implicit styles]({%slug styling-apperance-implicit-styles-overview%}). 
 
-![VSExtensions WPF Project Config Wizard Step 2](images/VSExtensions_WPF_ProjectConvert_Themes.png)      
+![Telerik UI for WPF Visual Studio project conversion wizard theme selection](images/VSExtensions_WPF_ProjectConvert_Themes.png)
 
 The second page of the Convert Project Wizard’s lets you select which theme will be applied to your project. When you click the Finish button, the selected assembly references get added to your project and the default application-wide theme gets set.
 

@@ -17,7 +17,7 @@ RadChartView is a set of versatile charting components that offer unmatched perf
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![radchartview wpf](images/radchartview-overview-1.png)
+![Telerik UI for WPF RadChartView overview showing charting components and series visualizations](images/radchartview-overview-1.png)
 
 A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example categorical series may contain categorical data points. Data points may be added directly to series or a data binding mechanism may be used to create the appropriate data points from the raw data.
 

@@ -166,7 +166,7 @@ __Example 3: Creating the models__
 ```
 
 By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 4 categories, where each category represents a period of 5 days. The result is shown on the image below:
-![Rad Chart View-chart chartdatasource](images/RadChartView-chart_chartdatasource.PNG)
+![Telerik UI for WPF RadChartView using ChartDataSource sampling with five-day categories](images/RadChartView-chart_chartdatasource.PNG)
 
 ## Use custom aggregate function
 
@@ -231,7 +231,7 @@ __Example 5: Create custom series and override its aggregate function__
 > If you are using the [NoXaml]({%slug xaml-vs-noxaml%}) dlls, you should base the style of the custom series on the default one like so `<Style TargetType="local:MyBarSeries" BasedOn="{StaticResource BarSeriesStyle}" />`, otherwise a "No data to plot" message will be shown.
 
 The result is below:
-![Rad Chart View-chart chartdatasource 01](images/RadChartView-chart_chartdatasource_01.PNG)
+![Telerik UI for WPF RadChartView using a custom ChartDataSource aggregate function](images/RadChartView-chart_chartdatasource_01.PNG)
 
 ## DataPointSamplingInfo
 

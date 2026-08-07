@@ -49,7 +49,7 @@ __Example 1: Defining the view__
 
 Open the NuGet Package Manager and install the **Google.Cloud.Translation.V2** package.
 
-![Google Translation Nuget](images/translation-nuget.png)
+![NuGet Package Manager installing the Google Cloud Translation package](images/translation-nuget.png)
 
 ## Step 3: Define the ViewModel
 
@@ -274,6 +274,6 @@ __Example 3: Set the DataContext__
 
 #### Figure 1: Result from example after translation in the Office2016 theme
 
-![Google Cloud Translation example](images/translation-example.png)
+![Telerik UI for WPF Google Cloud Translation result in the Office2016 theme](images/translation-example.png)
 
 ## See Also

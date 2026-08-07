@@ -71,7 +71,7 @@ __Example 4: Define the custom command__
 
 **Figure 1** shows the final result.
 #### __Figure 1: Execute a command through the EventToCommandBehavior__
-![Common Event To Command Behavior 1](images/Common_EventToCommandBehavior_1.png)
+![Telerik UI for WPF EventToCommandBehavior executing a command from a control event](images/Common_EventToCommandBehavior_1.png)
 
 ## RaiseOnHandledEvents
 
@@ -120,7 +120,7 @@ __Example 7: Modify the method in the ViewModel class__
 
 The result is shown in **Figure 2**.
 #### **Figure 2: Modified method to use the command parameter**
-![Common Event To Command Behavior 2](images/Common_EventToCommandBehavior_2.png)
+![Telerik UI for WPF EventToCommandBehavior passing a command parameter to the ViewModel](images/Common_EventToCommandBehavior_2.png)
 
 ### PassEventArgsToCommand
 
@@ -152,7 +152,7 @@ __Example 9: Modify the method to use the EventArgs__
 The result is shown in **Figure 3**.
 
 #### **Figure 3: Pass the EventArgs to the method**
-![Common Event To Command Behavior 3](images/Common_EventToCommandBehavior_3.png)
+![Telerik UI for WPF EventToCommandBehavior passing event arguments to a command](images/Common_EventToCommandBehavior_3.png)
 
 ## CommandTarget
 

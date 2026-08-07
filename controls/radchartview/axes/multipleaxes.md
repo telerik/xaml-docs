@@ -63,7 +63,7 @@ This example shows two chart series with a common horizontal axis and two vertic
 	</telerik:RadCartesianChart>
 ```
 
-![Rad Chart View-chart axes twoverticalaxes](images/RadChartView-chart_axes_twoverticalaxes.PNG)
+![Telerik UI for WPF RadChartView with two vertical axes](images/RadChartView-chart_axes_twoverticalaxes.PNG)
 
 ## Two Horizontal Axes
 
@@ -106,7 +106,7 @@ This example shows two chart series with a common vertical axis and two horizont
 	</telerik:RadCartesianChart>
 ```
 
-![Rad Chart View-chart axes twohorizontalaxes](images/RadChartView-chart_axes_twohorizontalaxes.PNG)
+![Telerik UI for WPF RadChartView with two horizontal axes](images/RadChartView-chart_axes_twohorizontalaxes.PNG)
 
 ## Multiple Axes and SeriesProvider
 
@@ -137,7 +137,7 @@ To define multiple axes for the different chart series when [SeriesProvider]({%s
 	}
 ```
 
-![{{ site.framework_name }} RadChartView with Multiple Axes](images/radchartview-axes-multipleaxes-0.png)
+![Telerik UI for WPF RadChartView with Multiple Horizontal and Vertical Axes](images/radchartview-axes-multipleaxes-0.png)
 
 >tip Defining additional axis in a Style setter will apply the same axis instance to all series. 
 

@@ -12,7 +12,7 @@ position: 4
 
 __RadChartView__ provides a crosshair functionality through the __ChartCrosshairBehavior__ class. This behavior display vertical and horizontal lines across the chart's plot area that intersect on the mouse position. The lines are following the mouse position.
 
-![RadChartView - Crosshair Behavior](images/radchartview-features-behaviors-chrosshair_01.png)
+![Telerik UI for WPF RadChartView Crosshair Behavior Showing Vertical and Horizontal Guide Lines with Axis Labels](images/radchartview-features-behaviors-chrosshair_01.png)
 
 The behavior also displays two labels (one for each line) which, by default, are moving along the axes, outside the plot area, following the lines.
 

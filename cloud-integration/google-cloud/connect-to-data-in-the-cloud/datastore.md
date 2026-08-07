@@ -37,7 +37,7 @@ __Example 1: Defining the view__
 
 Open the NuGet Package Manager and install the **Google.Cloud.Datastore.V1** package.
 
-![Google DataStore Nuget](images/google-cloud-datascore.png)
+![NuGet Package Manager installing the Google Cloud Datastore package](images/google-cloud-datascore.png)
 
 ## Step 3: Define the business object
 
@@ -273,7 +273,7 @@ __Example 4: Set the DataContext__
 
 #### Figure 1: Result from example in the Office2016 theme
 
-![Google Cloud DataStore example](images/google-cloud-datastore-example.png)
+![Telerik UI for WPF Google Cloud Datastore example in the Office2016 theme](images/google-cloud-datastore-example.png)
 
 ## See Also
 

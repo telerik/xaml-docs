@@ -44,7 +44,7 @@ __Example 1: Declaring a OhlcSeries in XAML__
 ```
 
 #### __Figure 1: OhlcSeries visual appearance__
-![radchartview-series-ohlcseries](images/radchartview-series-ohlcseries.png)
+![Telerik UI for WPF RadChartView OhlcSeries visual appearance](images/radchartview-series-ohlcseries.png)
 
 ## Properties
 

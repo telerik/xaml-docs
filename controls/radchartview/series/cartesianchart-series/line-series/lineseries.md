@@ -47,7 +47,7 @@ __Example 1: Declaring a LineSeries in XAML__
 ```
 
 #### __Figure 1: LineSeries visual appearance__
-![radchartview-series-lineseries](images/radchartview-series-lineseries.png)
+![Telerik UI for WPF RadChartView LineSeries visual appearance](images/radchartview-series-lineseries.png)
 
 ## Properties
 

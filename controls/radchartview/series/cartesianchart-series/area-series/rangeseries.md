@@ -47,7 +47,7 @@ __Example 1: Declaring a RangeSeries in XAML__
 ```
 
 #### __Figure 1: RangeSeries visual appearance__  
-![radchartview-series-rangeseries](images/radchartview-series-rangeseries.png)
+![Telerik UI for WPF RadChartView RangeSeries visual appearance](images/radchartview-series-rangeseries.png)
  
 ## Properties
 

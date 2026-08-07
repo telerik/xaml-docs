@@ -39,7 +39,7 @@ __Example 1: Setting the GapLength property__
 	</telerik:RadCartesianChart>
 ```
 
-![{{ site.framework_name }} RadChartView Gap Length](images/radchartview-axes-gap-length.png)
+![Telerik UI for WPF RadChartView with Custom Gap Length Between Categorical Axis Items](images/radchartview-axes-gap-length.png)
 	
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})

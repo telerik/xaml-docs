@@ -119,7 +119,7 @@ __Example 4: Setting DataContext of the Window__
 If you run the application now, you should get a structure like in **Figure 1**. 
 
 #### Figure 1: Labels without Custom Label Strategy
-![radchartview-labels-shart-series-labels-strategy_NoStrategy](images/radchartview-labels-shart-series-labels-strategy_1.png)
+![Telerik UI for WPF RadChartView Stacked Bar Series with Default Centered Data Point Labels](images/radchartview-labels-shart-series-labels-strategy_1.png)
 
 Looking at **Figure 1** every bar has its label position in its center. Our task is to shows what percent every bar represent from the sum of every data point in one category. First, we need to create a custom class which inherits __ChartSeriesLabelStrategy__. In our case, we are going to override __GetLabelContent()__ and create custom logic which calculates what percent every value represent.
 
@@ -202,7 +202,7 @@ __Example 6: Setting custom ChartSeriesLabelStrategy__
 ```
 
 #### Figure 2: Labels with Custom Label Strategy
-![radchartview-labels-shart-series-labels-strategy_WithStrategy](images/radchartview-labels-shart-series-labels-strategy_2.png)
+![Telerik UI for WPF RadChartView Stacked Bar Series with Custom Percentage Labels](images/radchartview-labels-shart-series-labels-strategy_2.png)
 
 ## See Also  
 * [GettingStarted]({%slug radchartview-introduction%})

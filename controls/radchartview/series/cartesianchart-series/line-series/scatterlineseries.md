@@ -47,7 +47,7 @@ __Example 1: Declaring a ScatterLineSeries in XAML__
 ```
 
 #### __Figure 1: ScatterLineSeries visual appearance__
-![radchartview-series-scatterlineseries](images/radchartview-series-scatterlineseries.png)
+![Telerik UI for WPF RadChartView ScatterLineSeries visual appearance](images/radchartview-series-scatterlineseries.png)
 
 ## Properties
 

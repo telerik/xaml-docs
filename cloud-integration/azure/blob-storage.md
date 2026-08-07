@@ -48,7 +48,7 @@ __Example 1: Defining the view__
 
 Open the NuGet Package Manager and install the **WindowsAzure.Storage** package.
 
-![aws-blob-storage-nuget](images/azure-blob-storage-nuget.png)
+![NuGet Package Manager installing the WindowsAzure.Storage package](images/azure-blob-storage-nuget.png)
 
 ## Step 3: Define the ViewModel
 
@@ -353,7 +353,7 @@ __Example 4: Set the DataContext__
 
 #### Figure 1: Example after uploading a file and listing it in the Office2016 theme
 
-![azure-blob-storage-upload](images/azure-blob-storage-listitems.png)
+![Telerik UI for WPF Azure Blob Storage application listing and uploading items](images/azure-blob-storage-listitems.png)
 
 
 ## See Also

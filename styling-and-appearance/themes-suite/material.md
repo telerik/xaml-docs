@@ -211,7 +211,7 @@ The default values of the brushes in the theme are listed below:
 
 __Theme colors represented in RadOutlookBar__
 
-![material theme colors](images/materialOutlook.PNG)	
+![Telerik UI for WPF Material theme colors represented in RadOutlookBar](images/materialOutlook.PNG)
 
 ## Default Theme Brushes
 
@@ -299,7 +299,7 @@ __Changing the color variation of the theme__
 
 __Material theme color variations__
 
-![Material theme colors represented in RadCardView](images/Material-theme-variations.PNG)
+![Telerik UI for WPF Material theme colors represented in RadCardView](images/Material-theme-variations.PNG)
 
 >important The `Dark` variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when working with it.
 
@@ -341,7 +341,7 @@ __Changing the theme's FontSize and FontFamily__
 
 __Setting FontSize and FontFamily__
 
-![font changed](images/MaterialThemeFontChange.png)	
+![Telerik UI for WPF Material theme with changed font settings](images/MaterialThemeFontChange.png)
 
 ## Using Glyphs
 
@@ -374,7 +374,7 @@ __Changing the default corner radius__
 
 __Appearance of a RadButton control after changing the default corner radius__
 
-![corner radius](images/materialtheme-corner-radius.png)	
+![Telerik UI for WPF Material theme corner radius customization](images/materialtheme-corner-radius.png)
 
 ### Material Assist
 
@@ -407,7 +407,7 @@ __Set RadToggleButton's visual appearance through the helpers__
 
 __Appearance of the RadToggleButton in the different states__
 
-![pressed brush](images/materialtheme-pressed-brush.png)![mouseover brush](images/materialtheme-mouseover-brush.png)![checked brush](images/materialtheme-checked-brush.png) ![focusedbrush](images/materialtheme-modifiedfocused-brush.png)
+![Telerik UI for WPF Material theme pressed brush](images/materialtheme-pressed-brush.png)![Telerik UI for WPF Material theme mouse-over brush](images/materialtheme-mouseover-brush.png)![Telerik UI for WPF Material theme checked brush](images/materialtheme-checked-brush.png) ![Telerik UI for WPF Material theme focused brush](images/materialtheme-modifiedfocused-brush.png)
 
 ### Shadow 
 
@@ -433,7 +433,7 @@ The element exposes a `ShadowDepth` enum property which takes one of the followi
 
 __Shadow effect applied over a TextBlock__
 
-![shadow](images/materialtheme-shadow-control.png)
+![Telerik UI for WPF Material theme control shadow](images/materialtheme-shadow-control.png)
 
 ## Material Control
 
@@ -447,7 +447,7 @@ Another element specifically designed for the Material theme and used to display
 
 __Ripple effect on RadDropDownButton__
 
-![ripple effect](images/RadDropDownButton.gif)
+![Telerik UI for WPF Material theme ripple effect on RadDropDownButton](images/RadDropDownButton.gif)
 
 __Declaration of the Button element with a glyph as text__
 ```XAML
@@ -495,7 +495,7 @@ __Button's Style declaration__
 
 __Material Control used within a custom template applied to a Button__
 
-![custom button](images/custombtngif.gif)
+![Telerik UI for WPF custom button with Material theme effects](images/custombtngif.gif)
 
 > Note that for this button the `MouseOverBrush` and the `PressedBrush` properties from the above listed helpers are modified. They are are responsible for the mouse over and pressed animations and are automatically bound to the templated parent.
 

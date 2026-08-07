@@ -169,7 +169,7 @@ The default values of the colors in the theme are listed below:
 
 __Theme colors represented in RadOutlookBar__
 
-![Fluent theme colors represented in RadOutlookBar](images/fluent-theme-outlook.PNG)	
+![Telerik UI for WPF Fluent theme colors represented in RadOutlookBar](images/fluent-theme-outlook.PNG)
 
 ## FluentPalette Properties
 
@@ -260,7 +260,7 @@ __Changing the theme's FontSize and FontFamily__
 
 __Setting FontSize and FontFamily__
 
-![RadCalendar with default FontSize and FontFamiliy](images/fluent-theme-calendar-font-change-1.png)![RadCalendar with modified FontSize and FontFamiliy](images/fluent-theme-calendar-font-change-2.png)	
+![Telerik UI for WPF RadCalendar with default font size and font family in the Fluent theme](images/fluent-theme-calendar-font-change-1.png)![Telerik UI for WPF RadCalendar with modified font size and font family in the Fluent theme](images/fluent-theme-calendar-font-change-2.png)
 
 
 ## Using Glyphs
@@ -280,7 +280,7 @@ __Changing the default corner radius__
 
 __Apperance of a RadButton control after changing the default corner radius__
 
-![RadButton with a CornerRadius of 10](images/fluent-theme-button-cornerradius.png)	
+![Telerik UI for WPF RadButton with a corner radius of 10 in the Fluent theme](images/fluent-theme-button-cornerradius.png)
 
 ## Visual Helpers
 
@@ -325,7 +325,7 @@ __Set RadToggleButton's visual appearance through the helpers__
 
 __Appearance of the RadToggleButton in the different states__
 
-![RadToggleButton Pressed](images/fluent-theme-togglebutton-pressed-brush.png)![RadToggleButton MouseOver](images/fluent-theme-togglebutton-mouseover-brush.png)![RadToggleButton Checked](images/fluent-theme-togglebutton-checked-brush.png) 
+![Telerik UI for WPF RadToggleButton pressed brush in the Fluent theme](images/fluent-theme-togglebutton-pressed-brush.png)![Telerik UI for WPF RadToggleButton mouse-over brush in the Fluent theme](images/fluent-theme-togglebutton-mouseover-brush.png)![Telerik UI for WPF RadToggleButton checked brush in the Fluent theme](images/fluent-theme-togglebutton-checked-brush.png)
 
 ## Fluent Control
 
@@ -341,7 +341,7 @@ The `FluentControl` is an element designed for the Fluent theme and used to disp
 
 __Ripple effect оn RadDropDownButton__
 
-![Ripple effect оn RadDropDownButton](images/fluent-light-dropdown.gif)![Ripple effect оn RadDropDownButton with Dark Variation](images/fluent-dark-dropdown.gif)
+![Telerik UI for WPF Fluent theme ripple effect on RadDropDownButton](images/fluent-light-dropdown.gif)![Telerik UI for WPF Fluent theme ripple effect on RadDropDownButton with dark variation](images/fluent-dark-dropdown.gif)
 
 The following code snippets show how you can integrate the FluentControl with a RadButton  
   					
@@ -398,7 +398,7 @@ __RadButton's instancing__
 
 __FluentControl used within a custom template applied to a RadButton__
 
-![FluentControl used within a custom template applied to a RadButton](images/fluent-theme-light-effect.gif)![FluentControl used within a custom template applied to a RadButton in Dark variation](images/fluent-theme-dark-effect.gif)
+![Telerik UI for WPF FluentControl in a custom template applied to a RadButton](images/fluent-theme-light-effect.gif)![Telerik UI for WPF FluentControl in a custom template applied to a RadButton with dark variation](images/fluent-theme-dark-effect.gif)
 
 __Disabling the Ripple effect__
 ```XAML
@@ -423,7 +423,7 @@ By default, the scrollbars in the Fluent theme change their size depending on wh
 
 __ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__
 
-![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/fluent-light-scrollbarmode.gif)
+![Telerik UI for WPF ScrollBar in Auto, Compact, and Normal ScrollBarsMode in the Fluent theme](images/fluent-light-scrollbarmode.gif)
 
 __Setting the ScrollBarsMode property of the palette to Compact__
 ```C#	

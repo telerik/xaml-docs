@@ -28,7 +28,7 @@ When creating or configuring project using the [Telerik Visual Studio Extension]
 
 __Select Telerik template screen__
 
-![VisualStudio Templates](images/Common_VisualStudio_Templates_01.png)
+![Telerik UI for WPF Visual Studio project templates](images/Common_VisualStudio_Templates_01.png)
 
 ## Word-Inspired Template
 
@@ -36,7 +36,7 @@ The __Word-Inspired Template__ implements Word-like editing experience represent
 
 __Word-Inspired Template__
 
-![VisualStudio Templates](images/Common_VisualStudio_Templates_04.png)
+![Telerik UI for WPF Visual Studio Word-Inspired template](images/Common_VisualStudio_Templates_04.png)
 
 ## Excel-Inspired Template
 
@@ -44,7 +44,7 @@ The __Excel-Inspired Template__ implements Excel-like editing experience represe
 
 __Excel-Inspired Template__
 
-![VisualStudio Templates](images/Common_VisualStudio_Templates_05.png)
+![Telerik UI for WPF Visual Studio Excel-Inspired project template](images/Common_VisualStudio_Templates_05.png)
 
 ## Outlook-Inspired Template
 
@@ -57,14 +57,14 @@ The template is designed with MVVM in mind which is why most of the events that 
 The Outlook-Inspired Mail Template can be used separately and it has been integrated as the mail part of the [Outlook-Inspired Template](#outlook-inspired-template). You can see it on __Figure 4__.
 
 __Figure 4: Outlook-Inspired Mail Template__
-![VisualStudio Templates](images/Common_VisualStudio_Templates_03.png)
+![Telerik UI for WPF Visual Studio Outlook-Inspired Mail template](images/Common_VisualStudio_Templates_03.png)
 
 ### Outlook-Inspired Calendar Template
 
 The Outlook-Inspired Calendar Template can be used separately and it has been integrated as the calendar part of the [Outlook-Inspired Template](#outlook-inspired-template). You can see how the template looks like on __Figure 5__.
 
 __Figure 5: Outlook-Inspired Calendar Template__
-![VisualStudio Templates](images/Common_VisualStudio_Templates_02.png)
+![Telerik UI for WPF Visual Studio Outlook-Inspired Calendar template](images/Common_VisualStudio_Templates_02.png)
 
 ## See Also
 

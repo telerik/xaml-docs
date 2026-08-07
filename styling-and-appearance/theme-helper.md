@@ -60,7 +60,7 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 
 __Appearance of the RadToggleButton in the different states__
 
-![RadToggleButton States](/images/styling-appearance-theme-helper-toggle-button-states.png)
+![Telerik UI for WPF RadToggleButton visual states in the Theme Helper](/images/styling-appearance-theme-helper-toggle-button-states.png)
 
 ## See Also
 

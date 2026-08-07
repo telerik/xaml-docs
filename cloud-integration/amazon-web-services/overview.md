@@ -12,7 +12,7 @@ position: 0
 
 Amazon Web Services is a cloud platform that provides a wide range of cloud services. You can create a [free account](https://aws.amazon.com/free/?sc_channel=em&sc_campaign=wlcm&sc_publisher=aws&sc_medium=em_wlcm_3d&sc_detail=wlcm_3d&sc_content=other&sc_country=global&sc_geo=global&sc_category=mult&ref_=pe_1679150_261537980) that is available for a year and will allow you to explore the provided services. So do not hesitate to create a new account and explore the AWS and the examples from this section.
 
-![AWS Overview](images/aws-overview001.png)
+![AWS cloud services available for Telerik UI for WPF integration](images/aws-overview001.png)
 
 Here are the currently available topics:
 

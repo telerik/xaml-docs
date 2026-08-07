@@ -39,7 +39,7 @@ __Example 1: Setting LabelConnectorsSettings in XAML__
 ```
 
 #### __Figure 1: Label connectors visual appearance__
-![{{ site.framework_name }} RadChartView Label connectors visual appearance](images/radchartview-features-smart-labels-labelconnectors_01.png.png)
+![Telerik UI for WPF RadChartView Label Connectors Visual Appearance](images/radchartview-features-smart-labels-labelconnectors_01.png.png)
 
 ## Customizing labels connectors points
 
@@ -143,7 +143,7 @@ __Example 4: Specifying CustomFunnelSeries in XAML__
 ```
 
 #### __Figure 2: Customized connectors visual appereance__
-![{{ site.framework_name }} RadChartView Customized connectors visual appereance](images/radchartview-features-customized-labelconnectors_02.png)
+![Telerik UI for WPF RadChartView with Customized Label Connectors](images/radchartview-features-customized-labelconnectors_02.png)
 
 ## See Also
 * [GettingStarted]({%slug radchartview-introduction%})

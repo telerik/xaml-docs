@@ -29,7 +29,8 @@ The following example shows how to extract the **RadListBox** control template f
 
 1. Locate the __Telerik.Windows.Controls.xaml__ file and open it with your favorite editor.
 
-   To find the XAML file for any control, you need to know the name of the [assembly that contains the control]({%slug installation-installing-controls-dependencies-wpf%}). The name of the XAML file corresponds to the name of the assembly.
+   To find the XAML file for any control, you need to know the name of the [assembly that contains the control]({%slug installation-installing-controls-dependencies-wpf%}). The name of the XAML file corresponds to the name of the assembly.
+
 
    __Figure 1: Navigating to the required XAML file__
 
@@ -96,7 +97,7 @@ __Example 1: Adding a border around the RadListBox control__
 
 #### __Figure 2: RadListBox control with red border__
 
-![RadListBox control with red border](images/styling-apperance-editing-control-templates_2.png)
+![Telerik UI for WPF RadListBox control with a red border](images/styling-apperance-editing-control-templates_2.png)
 
 ## Extracting Control Templates Using Visual Studio
 
@@ -108,7 +109,7 @@ Another way to extract a control template is to use the **Visual Studio designer
 
    __Figure 3: Visual Studio designer context menu__
 
-   ![Visual Studio designer context menu](images/styling-apperance-editing-control-templates_3.png)
+   ![Telerik UI for WPF Visual Studio designer context menu for editing a control template](images/styling-apperance-editing-control-templates_3.png)
 
 1. In the **Create Style Resource** dialog, select one of the following options:
 
@@ -118,13 +119,13 @@ Another way to extract a control template is to use the **Visual Studio designer
 
       __Figure 4: Generating a style with a resource key__
 
-      ![styling-apperance-editing-control-templates 4](images/styling-apperance-editing-control-templates_4.png)
+	![Telerik UI for WPF generated control template in the Visual Studio designer](images/styling-apperance-editing-control-templates_4.png)
 
    * To create an implicit style.
 
       __Figure 5: Generating an implicit style__
 
-      ![Generating an implicit style](images/styling-apperance-editing-control-templates_5.png)
+	![Telerik UI for WPF implicit style generated from a control template](images/styling-apperance-editing-control-templates_5.png)
 
 Let's assume you just need to style one specific instance of the control and you have chosen to extract the style with a resource key in the current document. **Example 2** shows the generated XAML code.
 
@@ -147,8 +148,7 @@ __Example 2: The generated XAML code__
 	    <Grid>
 	        <telerik:RadListBox Style="{StaticResource RadListBoxStyle1}" ItemsSource="{Binding ListBoxItems}" />
 	    </Grid>
-	<UserControl>
-```
+	</UserControl>
 
 ## See Also
 

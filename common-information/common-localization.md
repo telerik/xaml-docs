@@ -72,7 +72,7 @@ Alternatively, you can place the resource folders along with the binaries you ha
 
 #### __Figure 1: Placing the resource folders in your project__
 
-![Common Localization 050](images/Common_Localization_050.PNG)
+![Telerik UI for WPF localization resource folders added to a project](images/Common_Localization_050.PNG)
 
 ### Setting the Application Culture
 
@@ -97,7 +97,7 @@ That's it. Your controls should now be localized in the preferred language.
 
 #### __Figure 2: RadGridView localized in German__
 
-![Common_Localization_070](images/Common_Localization_070.png)
+![Telerik UI for WPF RadGridView localized in German](images/Common_Localization_070.png)
 
 ## Resource Keys
 
@@ -107,7 +107,7 @@ In Figure 3 you can see some resource keys and the strings they are associated w
 
 #### __Figure 3: Some of RadGridView's resource keys and their values__
 
-![Common_Localization_060](images/Common_Localization_060.png)
+![Telerik UI for WPF RadGridView resource keys and localized strings](images/Common_Localization_060.png)
 
 >tip For a full list of __resource keys__, check out the __Localization__ topic for the specific control.
 
@@ -127,7 +127,7 @@ Imagine that you want to translate your control, RadGridView for example, into E
 
 #### __Figure 4: Creating separate .resx files for each of the supported languages__
           
-![Common Localization 030](images/Common_Localization_030.png)
+![Telerik UI for WPF localized resource files created for multiple languages](images/Common_Localization_030.png)
 
 Now that you have the needed files, it's time to localize only the text for the group panel. For that purpose, you need to create a single resource string in each one of the three resource files and translate it to the appropriate language.
       
@@ -139,7 +139,7 @@ Figure 5 shows the content of the __GridViewResources.de.resx__ file. The resour
 
 #### __Figure 5: The content of GridViewResources.de.resx__
 
-![Common Localization 040](images/Common_Localization_040.png)
+![Telerik UI for WPF German resource file with a translated RadGridView resource value](images/Common_Localization_040.png)
 
 The last step is to instantiate the __LocalizationManager__ class, which allows you to easily localize any Telerik UI controls, by going through all resource keys and returning the appropriate translation. You then set its __ResourceManager__ to the resources that have just  been created (you can do this in the default constructor of the Application class).
 

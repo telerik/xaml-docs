@@ -52,7 +52,7 @@ __Example 1: Adding CartesianGridLineAnnotations__
 ```
 
 #### __Figure 1: CartesianGridLineAnnotations in RadCartesianChart__
-![Rad Chart View-annotations-cartesian-gridline](images/RadChartView-annotations-cartesian-gridline.png)
+![Telerik UI for WPF RadChartView Cartesian grid line annotations](images/RadChartView-annotations-cartesian-gridline.png)
 
 ## Polar Axis GridLine Annotation
 
@@ -89,7 +89,7 @@ __Example 2: Adding PolarAxisGridLineAnnotation__
 ```
 
 #### __Figure 2: PolarAxisGridLineAnnotations in RadPolarChart__
-![Rad Chart View-annotations-polar-gridline](images/RadChartView-annotations-polar-gridline.png)
+![Telerik UI for WPF RadChartView polar axis grid line annotations](images/RadChartView-annotations-polar-gridline.png)
 
 ## Radial Axis GridLine Annotation
 
@@ -127,7 +127,7 @@ __Example 3: Defining RadialAxisGridLineAnnotation__
 ```
 
 #### __Figure 3: RadialAxisGridLineAnnotations in RadPolarChart__
-![Rad Chart View-annotations-radial-gridline](images/RadChartView-annotations-radial-gridline.png)
+![Telerik UI for WPF RadChartView radial axis grid line annotations](images/RadChartView-annotations-radial-gridline.png)
 
 ## Properties
 

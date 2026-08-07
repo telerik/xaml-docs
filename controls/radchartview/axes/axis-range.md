@@ -79,7 +79,7 @@ __Setting axis range in C#__
 	this.dateTimeContinuousAxis.Maximum = DateTime.Today.Months(12);	
 ```
 
-![WPF ChartView Axis Range Setting](images/radchartview-axis-range-0.png)
+![Telerik UI for WPF RadChartView Axis with Manually Set Minimum and Maximum Range](images/radchartview-axis-range-0.png)
 
 ## Setting the Step
 
@@ -92,7 +92,7 @@ __Setting major step__
 	<telerik:LinearAxis Minimum="100" MajorStep="150" Maximum="1000" />
 ```
 
-![WPF ChartView Axis Major Step Setting](images/radchartview-axis-range-1.png)
+![Telerik UI for WPF RadChartView Axis with a Manually Set Major Step](images/radchartview-axis-range-1.png)
 
 To get the actual major step, use the `ActualMajorStep` property of the axis. This is helpful if you don't assign the `MajorStep` property and rely on the automatically calculated one.
 
@@ -113,7 +113,7 @@ __Setting major step__
 	<telerik:LinearAxis Minimum="100" TickOrigin="500" MajorStep="150" Maximum="1000" />
 ```
 
-![WPF ChartView Axis Tick Origin Setting](images/radchartview-axis-range-2.png)
+![Telerik UI for WPF RadChartView Axis with a Custom Tick Origin](images/radchartview-axis-range-2.png)
 
 ## Setting the Desired Ticks Count
 
@@ -124,7 +124,7 @@ __Setting desired number of ticks__
 	<telerik:LinearAxis DesiredTickCount="5" />
 ```
 
-![WPF ChartView Axis Desired Tick Count Setting](images/radchartview-axis-range-3.png)
+![Telerik UI for WPF RadChartView Axis with a Desired Tick Count](images/radchartview-axis-range-3.png)
 	
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})

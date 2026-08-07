@@ -270,7 +270,7 @@ The default values of the colors in the theme are listed below. Please note that
 
 __Theme colors represented in RadOutlookBar__
 
-![Crystal theme colors represented in RadOutlookBar](images/crystal-theme-outlook.PNG)	
+![Telerik UI for WPF Crystal theme colors represented in RadOutlookBar](images/crystal-theme-outlook.PNG)
 
 ## Default Theme Brushes
 
@@ -369,7 +369,7 @@ __Changing the theme's FontSize and FontFamily__
 
 __Setting FontSize and FontFamily__
 
-![RadCalendar with modified FontSize and FontFamiliy](images/crystal-theme-calendar-font-change.png)	
+![Telerik UI for WPF RadCalendar with modified font size and font family in the Crystal theme](images/crystal-theme-calendar-font-change.png)
 
 ## Using Glyphs
 
@@ -388,7 +388,7 @@ __Changing the default corner radius__
 
 __Apperance of a RadButton control after changing the default corner radius__
 
-![RadButton with a CornerRadius of 0](images/crystal-theme-button-cornerradius.png)	
+![Telerik UI for WPF RadButton with a corner radius of zero in the Crystal theme](images/crystal-theme-button-cornerradius.png)
 
 ## Visual Helpers
 
@@ -420,7 +420,7 @@ __Set RadToggleButton's visual appearance through the visual helpers__
 
 __Appearance of the RadToggleButton in the different states__
 
-![RadToggleButton States](images/crystal-theme-togglebutton-states.png)
+![Telerik UI for WPF RadToggleButton states in the Crystal theme](images/crystal-theme-togglebutton-states.png)
 
 ## Window Buttons Alignment
 
@@ -433,7 +433,7 @@ __Changing the WindowButtonsAlignment__
 
 __Appearance of the RadWindow with the different alignments__
 
-![RadToggleButton States](images/crystal-theme-window-buttons-alignment.png)
+![Telerik UI for WPF window buttons alignment in the Crystal theme](images/crystal-theme-window-buttons-alignment.png)
 
 ## Changing ScrollBarsMode
 
@@ -447,7 +447,7 @@ By default, the scrollbars in the Crystal theme change their size depending on w
 
 __ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__ 
 
-![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/crystal-light-scrollbarsmode.gif)
+![Telerik UI for WPF ScrollBar in Auto, Compact, and Normal ScrollBarsMode in the Crystal theme](images/crystal-light-scrollbarsmode.gif)
 
 __Setting the ScrollBarsMode property of the palette to Compact__
 ```C#	

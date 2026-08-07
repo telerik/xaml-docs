@@ -148,8 +148,7 @@ __Example 2: The generated XAML code__
 	    <Grid>
 	        <telerik:RadListBox Style="{StaticResource RadListBoxStyle1}" ItemsSource="{Binding ListBoxItems}" />
 	    </Grid>
-	<UserControl>
-```
+	</UserControl>
 
 ## See Also
 

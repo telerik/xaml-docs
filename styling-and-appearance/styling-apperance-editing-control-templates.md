@@ -109,7 +109,7 @@ Another way to extract a control template is to use the **Visual Studio designer
 
    __Figure 3: Visual Studio designer context menu__
 
-![Telerik UI for WPF Visual Studio designer context menu for editing a control template](images/styling-apperance-editing-control-templates_3.png)
+   ![Telerik UI for WPF Visual Studio designer context menu for editing a control template](images/styling-apperance-editing-control-templates_3.png)
 
 1. In the **Create Style Resource** dialog, select one of the following options:
 

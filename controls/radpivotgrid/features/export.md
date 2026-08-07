@@ -35,7 +35,7 @@ In order to use Export to xlsx (Excel) format, you will have to add reference to
 * __Telerik.Windows.Documents.Spreadsheet__
 * __Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml__
 
-In order to export RadPivotGrid to xlsx format (Excel file), you have to use `XlsxFormatProvider` from *Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx* namespace. The XlsxFormatProvider has `Export` method, which has two arguments - first one is a `Workbook` that has to be exported and the second one is the output stream. In our case we'll create a simple Workbook (instance of *Telerik.Windows.Documents.Spreadsheet.Model.Workbook*) with a single Worksheet (instance of *Telerik.Windows.Documents.Spreadsheet.Model.Workbook*) in it.        
+In order to export RadPivotGrid to xlsx format (Excel file), you have to use `XlsxFormatProvider` from *Telerik.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx* namespace. The XlsxFormatProvider has `Export` method, which has two arguments - first one is a `Workbook` that has to be exported and the second one is the output stream. In our case we'll create a simple Workbook (instance of *Telerik.Documents.Spreadsheet.Model.Workbook*) with a single Worksheet (instance of *Telerik.Documents.Spreadsheet.Model.Workbook*) in it.        
 
 Our first task is to get needed information from RadPivotGrid by using Export method. After that we'll create a new Workbook and new Stylesheet. By using the information from the Export method, we'll set the cells in the stylesheet and we'll set the FontSize, FontFamily, Fill, Indent, Value, Borders, etc. The final step is to use the XlsxFormatProvider and its Export method, which will help us to create the xlsx file.        
 

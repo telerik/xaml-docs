@@ -53,6 +53,8 @@ meta:
         pdfHidden: true
     controls/radaiprompt:
         title: RadAIPrompt
+    controls/radinlineaiassistant:
+        title: RadInlineAIAssistant
     controls/radsvgimage:
         title: RadSvgImage
     controls/radhighlighttextblock:

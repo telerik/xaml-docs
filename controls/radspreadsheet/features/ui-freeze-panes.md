@@ -5,7 +5,7 @@ description: Check our &quot;Freeze Panes&quot; documentation article for the Ra
 slug: radspreadsheet-ui-freeze-panes
 tags: freeze,panes
 published: True
-position: 2
+position: 9
 ---
 
 # Freeze Panes

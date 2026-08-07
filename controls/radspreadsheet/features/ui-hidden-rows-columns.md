@@ -5,7 +5,7 @@ description: Check our &quot;Hidden Rows and Columns&quot; documentation article
 slug: radspreadsheet-features-hiding
 tags: hiding,hidden,rows,and,columns
 published: True
-position: 6
+position: 11
 ---
 
 # Hidden Rows and Columns

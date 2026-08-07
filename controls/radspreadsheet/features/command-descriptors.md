@@ -5,7 +5,7 @@ description: Describes how you can override the default command descriptors of R
 slug: radspreadsheet-command-descriptors
 tags: command, descriptors
 published: True
-position: 0
+position: 2
 ---
 
 # Command Descriptors

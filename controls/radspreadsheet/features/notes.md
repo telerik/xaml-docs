@@ -4,7 +4,7 @@ page_title: Notes
 slug: radspreadsheet-features-notes
 tags: notes, xlsx
 published: True
-position: 12
+position: 13
 ---
 
 # Notes

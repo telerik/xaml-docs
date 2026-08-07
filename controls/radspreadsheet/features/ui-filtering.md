@@ -5,7 +5,7 @@ description: Check our &quot;Filtering&quot; documentation article for the RadSp
 slug: radspreadsheet-ui-filtering
 tags: filtering
 published: True
-position: 5
+position: 7
 ---
 
 # Filtering

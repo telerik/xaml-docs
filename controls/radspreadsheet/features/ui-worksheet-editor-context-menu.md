@@ -5,7 +5,7 @@ description: Check our &quot;Context Menu&quot; documentation article for the Ra
 slug: radspreadsheet-ui-worksheet-editor-context-menu
 tags: context,menu
 published: True
-position: 1
+position: 4
 ---
 
 # Context Menu

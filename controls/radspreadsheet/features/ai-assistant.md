@@ -6,6 +6,7 @@ slug: radspreadsheet-ai-assistant
 tags: ai, assistant, spreadsheet, chat, analysis
 published: True
 position: 0
+tag: new
 ---
 
 # AI Assistant for RadSpreadsheet

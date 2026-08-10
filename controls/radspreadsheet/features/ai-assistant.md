@@ -145,38 +145,27 @@ All tools work together to process complex, multi-step natural language commands
 
 The AI assistant is represented by a chat panel that allows you to interact with the spreadsheet using natural language. To enable the AI features, set the `IsAIEnabled` property to `true`. This property activates the AI functionality and makes the AI panel available.
 
-#### __[XAML] Setting IsAIEnabled in XAML__
+#### __Setting IsAIEnabled in XAML__
 ```XAML
 <telerik:RadSpreadsheet x:Name="radSpreadsheet" IsAIEnabled="True" />
 ```
 
-#### __[C#] Setting IsAIEnabled in code-behind__
+#### __Setting IsAIEnabled in code-behind__
 ```C#
 this.radSpreadsheet.IsAIEnabled = true;
 ```
 
-#### __[VB.NET] Setting IsAIEnabled in code-behind__
-```VB
-Me.radSpreadsheet.IsAIEnabled = True
-```
-
 Once enabled, you can show or hide the AI panel using the `IsAIPanelVisible` property.
 
-#### __[C#] Controlling AI panel visibility__
+#### __Controlling AI panel visibility__
 ```C#
 // Show the AI panel
 this.radSpreadsheet.IsAIPanelVisible = true;
 ```
 
-#### __[VB.NET] Controlling AI panel visibility__
-```VB
-' Show the AI panel
-Me.radSpreadsheet.IsAIPanelVisible = True
-```
-
 Alternatively, you can use the `ToggleAIPanelCommand` to toggle the panel visibility. This command is useful for binding to buttons or other UI elements.
 
-#### __[XAML] Using ToggleAIPanelCommand__
+#### __Using ToggleAIPanelCommand__
 ```XAML
 <Button Content="Toggle AI Panel" 
         Command="{Binding ElementName=radSpreadsheet, Path=ToggleAIPanelCommand}" />
@@ -186,7 +175,7 @@ Alternatively, you can use the `ToggleAIPanelCommand` to toggle the panel visibi
 
 When using the `RadSpreadsheetRibbon`, you can display an **AI Assistant** toggle button that allows users to show or hide the AI panel directly from the ribbon UI. Set the `IsAIButtonVisible` property to `true` to display this button.
 
-#### __[XAML] Configuring RadSpreadsheetRibbon with AI button__
+#### __Configuring RadSpreadsheetRibbon with AI button__
 ```XAML
 <Grid>
     <Grid.RowDefinitions>
@@ -204,16 +193,10 @@ When using the `RadSpreadsheetRibbon`, you can display an **AI Assistant** toggl
 </Grid>
 ```
 
-#### __[C#] Configuring RadSpreadsheetRibbon in code-behind__
+#### __Configuring RadSpreadsheetRibbon in code-behind__
 ```C#
 this.spreadsheetRibbon.IsAIButtonVisible = true;
 this.spreadsheetRibbon.RadSpreadsheet = this.radSpreadsheet;
-```
-
-#### __[VB.NET] Configuring RadSpreadsheetRibbon in code-behind__
-```VB
-Me.spreadsheetRibbon.IsAIButtonVisible = True
-Me.spreadsheetRibbon.RadSpreadsheet = Me.radSpreadsheet
 ```
 
 The AI Assistant button appears in the ribbon and enables users to toggle the chat panel on and off. The button is automatically enabled or disabled based on the `IsAIEnabled` property of the associated RadSpreadsheet.
@@ -233,7 +216,7 @@ The `AIToolsProvider` requires two parameters:
 >- `using Microsoft.Extensions.AI;`
 >- `using Telerik.Windows.Controls.Spreadsheet.AI;`
 
-#### __[C#] Setting up AIToolsProvider__
+#### __Setting up AIToolsProvider__
 ```C#
 this.radSpreadsheet.IsAIEnabled = true;
 
@@ -254,45 +237,17 @@ var aiToolsProvider = new AIToolsProvider(chatClient, this.radSpreadsheet);
 this.radSpreadsheet.AIToolsProvider = aiToolsProvider;
 ```
 
-#### __[VB.NET] Setting up AIToolsProvider__
-```VB
-Me.radSpreadsheet.IsAIEnabled = True
-
-' Create the AI client (example using Azure OpenAI)
-Dim endpoint As String = "https://your-resource-name.openai.azure.com/"
-Dim apiKey As String = "your-api-key"
-Dim deploymentName As String = "gpt-4"
-
-Dim azureClient = New AzureOpenAIClient(
-    New Uri(endpoint), 
-    New System.ClientModel.ApiKeyCredential(apiKey)) _
-    .GetChatClient(deploymentName)
-
-Dim chatClient As IChatClient = azureClient.AsIChatClient()
-
-' Create and assign the AI tools provider
-Dim aiToolsProvider = New AIToolsProvider(chatClient, Me.radSpreadsheet)
-Me.radSpreadsheet.AIToolsProvider = aiToolsProvider
-```
-
 >The `AIToolsProvider` automatically registers a comprehensive set of spreadsheet manipulation tools that the AI agent can use, including tools for reading cell values, writing data, generating formulas, creating worksheets, and performing data analysis.
 
 ## Adjusting the Maximum Token Count
 
 The `AIToolsProvider` has a default maximum token limit of 128,000 tokens. You can adjust this limit using the `MaxTokenCount` property:
 
-#### __[C#] Adjusting MaxTokenCount__
+#### __Adjusting MaxTokenCount__
 ```C#
 var aiToolsProvider = new AIToolsProvider(chatClient, this.radSpreadsheet);
 aiToolsProvider.MaxTokenCount = 50000;
 this.radSpreadsheet.AIToolsProvider = aiToolsProvider;
-```
-
-#### __[VB.NET] Adjusting MaxTokenCount__
-```VB
-Dim aiToolsProvider = New AIToolsProvider(chatClient, Me.radSpreadsheet)
-aiToolsProvider.MaxTokenCount = 50000
-Me.radSpreadsheet.AIToolsProvider = aiToolsProvider
 ```
 
 ## See Also

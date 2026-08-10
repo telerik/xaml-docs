@@ -164,7 +164,7 @@ Code blocks must be annotated so that syntax-highlighting tools, screen reader e
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| Language tag on every fenced code block | Every ` ``` ` fence specifies a language: ` ```csharp `, ` ```bash `, ` ```json `, etc. | ` ``` ` with no language tag |
+| Language tag on every fenced code block | Every ` ``` ` fence specifies a language: ` ```C# `, ` ```bash `, ` ```json `, etc. | ` ``` ` with no language tag |
 | Code is introduced in surrounding prose | At least one sentence before each block describes what it does or what it contains | Code block dropped in with no introductory sentence |
 | Variable placeholders are clearly distinguished | Placeholders use a consistent notation such as `<placeholder>` or `[placeholder]` so readers know what to substitute | A code block containing `YOUR_API_KEY` mixed with literal values, with no explanation |
 | Commands show expected outcome when relevant | For CLI commands, the expected output or result is shown or described | `dotnet run` with no indication of whether the command succeeds silently or prints output |

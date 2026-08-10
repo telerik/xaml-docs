@@ -5,7 +5,7 @@ description: Check our &quot;Sorting&quot; documentation article for the RadSpre
 slug: radspreadsheet-ui-sorting
 tags: sorting
 published: True
-position: 4
+position: 17
 ---
 
 # Sorting

@@ -5,7 +5,7 @@ description: Check our &quot;Charts&quot; documentation article for the RadSprea
 slug: radspreadsheet-ui-charts
 tags: charts
 published: True
-position: 0
+position: 1
 ---
 
 # Charts

@@ -5,7 +5,7 @@ description: Check our &quot;Worksheet Editor Dialogs&quot; documentation articl
 slug: radspreadsheet-worksheet-editor-dialogs
 tags: worksheet,dialogs
 published: True
-position: 15
+position: 19
 ---
 
 # Worksheet Editor Dialogs

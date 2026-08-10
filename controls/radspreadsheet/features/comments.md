@@ -4,7 +4,7 @@ page_title: Threaded Comments
 slug: radspreadsheet-features-comments
 tags: thread, comments, xlsx, 
 published: True
-position: 13
+position: 18
 ---
 
 # Comments

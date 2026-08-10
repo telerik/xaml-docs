@@ -76,7 +76,7 @@ Source rules: front matter `description` field.
 | Includes an implicit call to action | Phrased to invite the click, e.g. "Learn how to…", "Discover…", "Find out…" | Flat declarative sentence with no engagement signal |
 
 **Scoring guide:**
-- 5: 120–155 chars, task-oriented, keyword-natural, unique, click-inviting.
+- 5: 120–150 chars, task-oriented, keyword-natural, unique, click-inviting.
 - 3: Present and unique but too short/long or purely declarative.
 - 1: Absent or a copy of another article's description.
 

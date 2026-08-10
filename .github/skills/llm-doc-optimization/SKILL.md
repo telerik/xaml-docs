@@ -88,7 +88,7 @@ The rules below are designed to prevent those failure modes.
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| Language tag on every fence | ` ```csharp `, ` ```ts `, ` ```yaml `, etc. | ` ``` ` with no language |
+| Language tag on every fence | ` ```C# `, ` ```ts `, ` ```yaml `, etc. | ` ``` ` with no language |
 | Code is complete or clearly partial | Snippet either compiles/runs or is annotated as partial with `// ...` | Unannounced mid-function snippet that omits necessary context |
 | Surrounding prose explains the code | At least one sentence before the block describes what it does | Code block dropped in with no introduction |
 | Identifiers match the prose | Variable/class names in code match the names discussed above the block | Prose says `UserService` but code uses `userSvc` without explanation |

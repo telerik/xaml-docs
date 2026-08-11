@@ -40,7 +40,7 @@ Telerik UI for WPF features the following controls:
             <IntroTableAnchor title="EntityFrameworkCoreDataSource" href="slug:entityframeworkcore-overview"></IntroTableAnchor>
             <IntroTableAnchor title="EntityFrameworkDataSource" href="slug:entityframework-overview"></IntroTableAnchor>
             <IntroTableAnchor title="ExpressionEditor" href="slug:radexpressioneditor-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="GridView (DataGrid)" href="slug:gridview-overview2"></IntroTableAnchor>
+            <IntroTableAnchor title="GridView (DataGrid)" href="slug:gridview-overview2" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="ListBox" href="slug:radlistbox-overview"></IntroTableAnchor>
             <IntroTableAnchor title="MultiColumnComboBox" href="slug:multicolumncombobox-overview"></IntroTableAnchor>
             <IntroTableAnchor title="PivotGrid" href="slug:radpivotgrid-overview"></IntroTableAnchor>
@@ -85,7 +85,7 @@ Telerik UI for WPF features the following controls:
             <IntroTableAnchor title="DesktopAlert" href="slug:raddesktopalert-overview"></IntroTableAnchor>
             <IntroTableAnchor title="DragDropManager" href="slug:dragdropmanager-overview"></IntroTableAnchor>
             <IntroTableAnchor title="HighlightTextBlock" href="slug:radhighlighttextblock-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="InlineAIAssistant" href="slug:radinlineaiassistant-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="InlineAIAssistant" href="slug:radinlineaiassistant-overview" tag="new"></IntroTableAnchor>
             <IntroTableAnchor title="PersistenceFramework" href="slug:persistence-framework-overview"></IntroTableAnchor>
             <IntroTableAnchor title="ProgressBar" href="slug:radprogressbar-overview"></IntroTableAnchor>
             <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview"></IntroTableAnchor>
@@ -97,7 +97,7 @@ Telerik UI for WPF features the following controls:
     <IntroTableColumn>
         <IntroTableSection title="Navigation">
             <IntroTableAnchor title="Breadcrumb" href="slug:radbreadcrumb-overvew"></IntroTableAnchor>
-            <IntroTableAnchor title="Buttons" href="slug:radbuttons-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="Buttons" href="slug:radbuttons-overview" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="ContextMenu" href="slug:contextmenu-overview1"></IntroTableAnchor>
             <IntroTableAnchor title="Menu" href="slug:radmenu-overview"></IntroTableAnchor>
             <IntroTableAnchor title="NavigationView (HamburgerMenu)" href="slug:radnavigationview-overview"></IntroTableAnchor>
@@ -144,7 +144,7 @@ Telerik UI for WPF features the following controls:
             <IntroTableAnchor title="RichTextBox" href="slug:radrichtextbox-overview"></IntroTableAnchor>
             <IntroTableAnchor title="Slider" href="slug:radslider-overview"></IntroTableAnchor>
             <IntroTableAnchor title="SpellChecker" href="slug:radspellchecker-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="SyntaxEditor" href="slug:radsyntaxeditor-overview"></IntroTableAnchor>
             <IntroTableAnchor title="WatermarkTextBox" href="slug:radwatermarktextbox-overview"></IntroTableAnchor>
         </IntroTableSection>

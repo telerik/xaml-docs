@@ -24,22 +24,15 @@ You can subscribe to the events either declaratively or from the code-behind lik
 
 __Example 1: Subscribe to events declaratively:__
 
-```XAML
-	<telerik:RadGridView x:Name="RadGridView1"
-	             ElementExporting="RadGridView1_ElementExporting"
-	             ElementExported="RadGridView1_ElementExported" />
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-example_1_subscribe_to_events_declaratively-xaml' />
+
 
 __Example 2: Subscribe to events from the code-behind:__
 
-```C#
-	RadGridView1.ElementExporting += RadGridView1_ElementExporting;
-	RadGridView1.ElementExported += RadGridView1_ElementExported;
-```
-```VB.NET
-	AddHandler RadGridView1.ElementExporting, AddressOf RadGridView1_ElementExporting
-	AddHandler RadGridView1.ElementExported, AddressOf RadGridView1_ElementExported
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-example_2_subscribe_to_events_from_the_code_behind-cs' />
+
+<snippet id='radgridview-export-events-elementexporting-elementexported-example_2_subscribe_to_events_from_the_code_behind-vb' />
+
 
 ## ElementExporting
 
@@ -79,42 +72,10 @@ You can use this event if you want to write additional data to the stream. A com
 	
 __Example 4: Add row details to the exported data with ExportFormat.Html__
 
-```C#
-	private void RadGridView1_ElementExported(object sender, GridViewElementExportedEventArgs e)
-	{
-	    if (e.Element == ExportElement.Row)
-	    {
-	        Employee obj = e.Context as Employee;
-	        if (obj != null)
-	        {
-	            e.Writer.Write(String.Format(@"<tr><td style=""background-color:#CCC;"" colspan=""{0}"">",
-	                ((IEnumerable<Telerik.Windows.Controls.GridViewColumn>)RadGridView1.Columns).Count()));
-	            e.Writer.Write(String.Format(@"<b>Birth date:</b> {0} <br />", obj.BirthDate));
-	            e.Writer.Write(String.Format(@"<b>Hire date:</b> {0} <br />", obj.HireDate));
-	            e.Writer.Write(String.Format(@"<b>Address:</b> {0} <br />", obj.Address));
-	            e.Writer.Write(String.Format(@"<b>City:</b> {0} <br />", obj.City));
-	            e.Writer.Write(String.Format(@"<b>Notes:</b> {0} <br />", obj.Notes));
-	            e.Writer.Write("</td></tr>");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub RadGridView1_ElementExported(ByVal sender As Object, ByVal e As GridViewElementExportedEventArgs)
-	    If e.Element = ExportElement.Row Then
-	        Dim obj As Employee = TryCast(e.Context, Employee)
-	        If obj IsNot Nothing Then
-	            e.Writer.Write(String.Format("<tr><td style=""background-color:#CCC;"" colspan=""{0}"">", DirectCast(RadGridView1.Columns, IEnumerable(Of Telerik.Windows.Controls.GridViewColumn)).Count()))
-	            e.Writer.Write(String.Format("<b>Birth date:</b> {0} <br />", obj.BirthDate))
-	            e.Writer.Write(String.Format("<b>Hire date:</b> {0} <br />", obj.HireDate))
-	            e.Writer.Write(String.Format("<b>Address:</b> {0} <br />", obj.Address))
-	            e.Writer.Write(String.Format("<b>City:</b> {0} <br />", obj.City))
-	            e.Writer.Write(String.Format("<b>Notes:</b> {0} <br />", obj.Notes))
-	            e.Writer.Write("</td></tr>")
-	        End If
-	    End If
-	End Sub
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-example_4_add_row_details_to_the_exported_data_with_exportformat_html-cs' />
+
+<snippet id='radgridview-export-events-elementexporting-elementexported-example_4_add_row_details_to_the_exported_data_with_exportformat_html-vb' />
+
 
 The result is:
 
@@ -141,11 +102,8 @@ For example:
         
 __Example 6: Define a style:__
 
-```C#
-	ExcelMLStyle style = new ExcelMLStyle("0");
-	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
-	e.Styles.Add(style);
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-example_6_define_a_style-cs' />
+
 
 You can find a list of the properties that could be set for __ExcelMLStyle__:
         
@@ -184,42 +142,8 @@ __NumberFormat:__
 
 __Example 7: Apply a style before exporting:__
 
-```C#
-	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
-	{
-	    ExcelMLStyle style = new ExcelMLStyle("0");
-	
-	    // Alignment
-	    style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
-	    style.Alignment.Vertical = ExcelMLVerticalAlignment.Top;
-	    style.Alignment.Indent = 5;
-	    style.Alignment.Rotate = 0;
-	    style.Alignment.ShrinkToFit = true;
-	    style.Alignment.VerticalText = true;
-	    style.Alignment.WrapText = true;
-	
-	    // Font
-	    style.Font.Bold = true;
-	    style.Font.Color = "Beige";
-	    style.Font.FontName = "Calibri";
-	    style.Font.Italic = true;
-	    style.Font.Outline = true;
-	    style.Font.Shadow = true;
-	    style.Font.Size = 10;
-	    style.Font.StrikeThrough = true;
-	    style.Font.Underline = ExcelMLUnderline.Double;
-	
-	    // Interior
-	    style.Interior.Color = "Green";
-	    style.Interior.Pattern = ExcelMLPattern.Solid;
-	    style.Interior.PatternColor = "#FF0000";
-	
-	    // NumberFormat
-	    style.NumberFormat.Format = "00.00";
-	
-	    e.Styles.Add(style);
-	}
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-example_7_apply_a_style_before_exporting-cs' />
+
         
 ## See Also
 

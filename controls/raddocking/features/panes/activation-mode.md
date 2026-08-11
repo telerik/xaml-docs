@@ -16,38 +16,15 @@ There are two possible approaches for activating/deactivating a pane - using the
         
 __Example 1: Activate panes__
 
-```XAML
-	<Grid>
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition Height="*"/>
-	    </Grid.RowDefinitions>
-	    <Button Content="Set IsActive" Click="Button_Click"/>
-	    <telerik:RadDocking Grid.Row="1" >
-	        <telerik:RadSplitContainer>
-	            <telerik:RadPaneGroup>
-	                <telerik:RadPane Header="Pane 1" IsActive="True"/>
-	                <telerik:RadPane Header="Pane 2"/>
-	                <telerik:RadPane Header="Pane 3" x:Name="Pane3"/>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	    </telerik:RadDocking>
-	</Grid>
-```
+<snippet id='raddocking-features-panes-activation-mode-example_1_activate_panes-xaml' />
+
 
 __Example 2: Activate panes__
 
-```C#
-	private void Button_Click(object sender, RoutedEventArgs e)
-	{
-	    this.Pane3.IsActive = true;
-	}
-```
-```VB.NET
-	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Me.Pane3.IsActive = True
-	End Sub
-```
+<snippet id='raddocking-features-panes-activation-mode-example_2_activate_panes-cs' />
+
+<snippet id='raddocking-features-panes-activation-mode-example_2_activate_panes-vb' />
+
 
 ## PaneActivationMode
 

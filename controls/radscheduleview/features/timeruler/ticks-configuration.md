@@ -15,15 +15,7 @@ The __MajorTickLength__ and __MinorTicklength__ properties of the RadScheduleVie
 Let’s have the RadScheduleView defined like this:
 
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition MinorTickLength="30min" MajorTickLength="2h"  />
-			<telerik:WeekViewDefinition MinorTickLength="1h" MajorTickLength="2h" />
-			<telerik:TimelineViewDefinition MinorTickLength="6h" MajorTickLength="1d" GroupTickLength="2d" />
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-timeruler-ticks-configuration-block_1-xaml' />
 
 This will lead to the following results:
 
@@ -65,10 +57,7 @@ Here are some examples:
 
 
 
-```XAML
-	<telerik:DayViewDefinition MinorTickLength="5min" MajorTickLength="1h" />				
-	<telerik:TimelineViewDefinition MinorTickLength="1day" MajorTickLength="2days" GroupTickLength="1week" />
-```
+<snippet id='radscheduleview-features-timeruler-ticks-configuration-block_2-xaml' />
 
 * In Code-Behind:
 
@@ -76,23 +65,7 @@ Here are some examples:
 
 
 
-```C#
-	var dayView = new DayViewDefinition()
-	{
-		MinorTickLength = new FixedTickProvider(new DateTimeInterval(5, 0, 0, 0, 0)),
-		MajorTickLength = new FixedTickProvider(new DateTimeInterval(0, 1, 0, 0, 0))
-	};
-	this.ScheduleView.ViewDefinitions.Add(dayView);
-	
-	
-	var timelineView = new TimelineViewDefinition()
-	{
-		MinorTickLength = new FixedTickProvider(new DateTimeInterval(1, 0)),
-		MajorTickLength = new FixedTickProvider(new DateTimeInterval(2, 0)),
-		GroupTickLength = new FixedTickProvider(new DateTimeInterval(0, 0, 1))
-	};
-	this.ScheduleView.ViewDefinitions.Add(timelineView);
-```
+<snippet id='radscheduleview-features-timeruler-ticks-configuration-block_3-cs' />
 
 
 You can check the ScheduleView Configurator example at {% if site.site_name == 'Silverlight' %}[UI for Silverlight demos](https://demos.telerik.com/silverlight/#ScheduleView/ScheduleViewConfigurator){% endif %}{% if site.site_name == 'WPF' %}[UI for WPF demos](https://demos.telerik.com/wpf/){% endif %} to see the tick length properties in action.

@@ -24,11 +24,7 @@ Setting the property to __True__ will make the child items appear upon a mouse c
 
 
 
-```XAML
-	<telerik:RadMenu ClickToOpen="True">
-	    ...
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-features-opening-modes-block_1-xaml' />
 
 To illustrate this case here is a snapshot of the menu upon a hover:
 

@@ -16,10 +16,8 @@ __Bound columns__ represent the data from __RadGridView's__ ItemsSource. They su
 
 
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
-	                Header="ID (Bound)" />
-```
+<snippet id='radgridview-columns-bound-unbound-columns-block_1-xaml' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView bound column showing an EmployeeID data field](images/RadGridView_BoundUnboundColumns_1.png)
 
@@ -29,21 +27,8 @@ Here is an example for unbound column:
 
 
 
-```XAML
-	<telerik:GridViewColumn Header="Name">
-	    <telerik:GridViewColumn.CellTemplate>
-	        <DataTemplate>
-	            <StackPanel Orientation="Horizontal">
-	                <Image Stretch="None"
-	       Source="../../Images/User.png"
-	       Margin="0,0,5,0" />
-	                <TextBlock Text="{Binding Name}"
-	           VerticalAlignment="Center" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </telerik:GridViewColumn.CellTemplate>
-	</telerik:GridViewColumn>
-```
+<snippet id='radgridview-columns-bound-unbound-columns-block_2-xaml' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView unbound column showing a custom image and name template](images/RadGridView_BoundUnboundColumns_2.png)
 
@@ -55,21 +40,8 @@ Here is the above sample of an unbound column transformed into a template column
 
 
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name (Unbound)">
-	    <telerik:GridViewDataColumn.CellTemplate>
-	        <DataTemplate>
-	            <StackPanel Orientation="Horizontal">
-	                <Image Stretch="None"
-	       Source="../../Images/User.png"
-	       Margin="0,0,5,0" />
-	                <TextBlock Text="{Binding Name}"
-	           VerticalAlignment="Center" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </telerik:GridViewDataColumn.CellTemplate>
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-columns-bound-unbound-columns-block_3-xaml' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewDataColumn using DataMemberBinding with a custom cell template](images/RadGridView_BoundUnboundColumns_3.png)
 

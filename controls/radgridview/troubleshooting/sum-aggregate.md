@@ -16,13 +16,8 @@ You declare an aggregate SumFunction for a column:
 
 
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
-	    <telerik:GridViewDataColumn.AggregateFunctions>
-	        <telerik:SumFunction/>
-	    </telerik:GridViewDataColumn.AggregateFunctions>
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-troubleshooting-sum-aggregate-problem-xaml' />
+
 
 As a result, the following error occurs: No generic method 'Sum' on type 'System.Linq.Enumerable' is compatible with the supplied type arguments and arguments. No type arguments should be provided if the method is non-generic.
         
@@ -41,13 +36,8 @@ For example you can define a generic AggregateFunction which calculates the Sum 
 
 
 
-```C#
-	var aggregate = new AggregateFunction<Player, int>()
-	{
-	    AggregationExpression = players => players.Select(x => x.Number).Sum()
-	};
-	playersGrid.Columns[0].AggregateFunctions.Add(aggregate);
-```
+<snippet id='radgridview-troubleshooting-sum-aggregate-solution-cs' />
+
 
 ## See Also
 

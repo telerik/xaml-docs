@@ -15,44 +15,14 @@ While developing an UI, which contains paging, you might want to ensure that the
 Here is an example of a __RadDataPager__ that shows a __MessageBox__ before changing the page when a condition is met.
 
 
-```XAML
-
-	<telerik:RadDataPager x:Name="radDataPager"
-	                        Grid.Row="1"
-	                        PageSize="5"
-	                        DisplayMode="All"
-	                        IsTotalItemCountFixed="True"
-	                        Margin="0,10,0,0" PageIndexChanging="radDataPager_PageIndexChanging" />
-```
+<snippet id='raddatapager-how-to-interact-with-with-user-before-page-changes-block_1-xaml' />
 
 
-```C#
 
-	private bool myCondition;
-	private void radDataPager_PageIndexChanging( object sender, PageIndexChangingEventArgs e )
-	{
-	    if ( myCondition )
-	    {
-	        MessageBoxResult result = MessageBox.Show( "There is unsaved data! Are you sure you want to continue?", "Confirm", MessageBoxButton.OKCancel );
-	        if ( result == MessageBoxResult.Cancel )
-	        {
-	            e.Cancel = true;
-	        }
-	    }
-	}
-```
-```VB.NET
+<snippet id='raddatapager-how-to-interact-with-with-user-before-page-changes-block_2-cs' />
 
-	Private myCondition As Boolean
-	Private Sub radDataPager_PageIndexChanging(sender As Object, e As PageIndexChangingEventArgs)
-	 If myCondition Then
-	  Dim result As MessageBoxResult = MessageBox.Show("There is unsaved data! Are you sure you want to continue?", "Confirm", MessageBoxButton.OKCancel)
-	  If result = MessageBoxResult.Cancel Then
-	   e.Cancel = True
-	  End If
-	 End If
-	End Sub
-```
+<snippet id='raddatapager-how-to-interact-with-with-user-before-page-changes-block_2-vb' />
+
 
 ![{{ site.framework_name }} RadDataPager Dialog Before Navigating to Next Page](images/RadDataPager_How_To_Interact_With_The_User_01.png)
 

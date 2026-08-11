@@ -14,21 +14,8 @@ In order to style **Columng Groups** you will need to create two styles targetin
 
 __Example 1: Styling the CommonHeaderPresenter and CommonColumnHeader__
 
-```XAML
-	<UserControl.Resources>
-		<!-- If you use NoXaml dlls and the implicit styles theming you will need to set also the BasedOn property to the Style object-->
+<snippet id='radgridview-styles-and-templates-styling-merged-column-headers-example_1_styling_the_commonheaderpresenter_and_commoncolumnheader-xaml' />
 
-		<!-- BasedOn="{StaticResource CommonHeaderPresenterStyle}" -->
-		<Style TargetType="telerik:CommonHeaderPresenter">
-		    <Setter Property="Background" Value="Red"/>
-		</Style>
-
-		<!-- BasedOn="{StaticResource CommonColumnHeaderStyle}" -->
-		<Style TargetType="telerik:CommonColumnHeader">
-		    <Setter Property="Background" Value="Red"/>
-		</Style>
-	</UserControl.Resources>
-```
 
 This will result in a red background for the merged header cells.
 

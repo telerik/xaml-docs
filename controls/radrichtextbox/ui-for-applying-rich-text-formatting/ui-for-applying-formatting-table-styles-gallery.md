@@ -43,11 +43,7 @@ The below snippet is an example of TableStylesGallery:
 
 
 
-```XAML
-    <telerik:TableStylesGallery
-        AssociatedRichTextBox="{Binding ElementName=radRichTextBox, Mode=OneWay}"
-        BuiltInStylesVersion="Office2013"/>
-```
+<snippet id='radrichtextbox-ui-for-applying-rich-text-formatting-ui-for-applying-formatting-table-styles-gallery-block_1-xaml' />
 
 
 

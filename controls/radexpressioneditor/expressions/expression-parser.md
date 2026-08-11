@@ -33,17 +33,8 @@ You can use the **Parse** method to try to directly parse the expression and ret
 
 __Example 1: Using the Parse method__
 
-```C#
-    try
-    {
-        var lambdaExpression = expressionParser.Parse(expression);
-        var result = lambdaExpression.Compile().DynamicInvoke().ToString();
-    }
-    catch (ExpressionParserException ex)
-    {
-        var errorMessages = string.Join("\n", ex.Errors.Select(er => er.Message));
-    }
-```
+<snippet id='radexpressioneditor-expressions-expression-parser-example_1_using_the_parse_method-cs' />
+
 
 ## ParseAsync
 
@@ -55,18 +46,8 @@ The **TryParse** method tries to convert the string representation of an express
 
 __Example 2: Using the TryParse method__
 
-```C#
-    LambdaExpression lambdaExpression;
-    var isExpressionValid = expressionParser.TryParse(expression, out lambdaExpression);
-    if (isExpressionValid)
-    {
-        var result = lambdaExpression.Compile().DynamicInvoke().ToString();
-    }
-    else
-    {
-        // display an error message
-    }
-```
+<snippet id='radexpressioneditor-expressions-expression-parser-example_2_using_the_tryparse_method-cs' />
+
 
 ## Item
 
@@ -74,26 +55,15 @@ You can use the **Item** property to be able to access the public members of the
 
 __Example 3: Setting the Item property__
 
-```C#
-    this.expressionParser.Item = this.ProductsGridView.SelectedItem;
-```
+<snippet id='radexpressioneditor-expressions-expression-parser-example_3_setting_the_item_property-cs' />
+
 
 Note that when using the generated expression, you would then need to pass the same item as the parameter as shown in **Example 4**.
 
 __Example 4: Passing the Item as a parameter of the expression__
 
-```C#
-    var lambdaExpression = this.expressionParser.Parse(expression);
-    string result;
-    if (lambdaExpression.Parameters.Count == 1)
-    {
-        result = lambdaExpression.Compile().DynamicInvoke(this.expressionParser.Item).ToString();
-    }
-    else
-    {
-        result = lambdaExpression.Compile().DynamicInvoke().ToString();
-    }
-```
+<snippet id='radexpressioneditor-expressions-expression-parser-example_4_passing_the_item_as_a_parameter_of_the_expression-cs' />
+
 
 ## See also
 

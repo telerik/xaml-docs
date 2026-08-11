@@ -68,26 +68,7 @@ FloatingImageBlock exposes members enabling you to control the image inside the 
 
 __Example 1: FloatingImageBlock definition__
 
-```XAML
-
-    <telerik:RadRichTextBox x:Name="radRichTextBox" Height="500">
-        <telerik:RadDocument>
-            <telerik:Section>
-                <telerik:Paragraph>
-                    <telerik:FloatingImageBlock AllowOverlap="False" AnnotationID="0" Margin="10,0,10,0" TextWrap="BothSides" WrappingStyle="Square">
-                        <telerik:FloatingImageBlock.HorizontalPosition>
-                            <telerik:FloatingBlockHorizontalPosition Alignment="Left" Offset="0" RelativeFrom="Paragraph" ValueType="Offset" />
-                        </telerik:FloatingImageBlock.HorizontalPosition>
-                        <telerik:FloatingImageBlock.VerticalPosition>
-                            <telerik:FloatingBlockVerticalPosition Alignment="Top" Offset="0" RelativeFrom="Paragraph" ValueType="Offset" />
-                        </telerik:FloatingImageBlock.VerticalPosition>
-                        <telerik:ImageInline Extension="png" Height="159" Width="318" UriSource="/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png" />
-                    </telerik:FloatingImageBlock>
-                </telerik:Paragraph>
-            </telerik:Section>
-        </telerik:RadDocument>
-    </telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-document-elements-features-floatingimage-block_1-xaml' />
 
 ## Add in Code Behind
 
@@ -95,74 +76,21 @@ You can work with FloatingImageBlock objects in code-behind as well.
 
 __Example 2: Define FloatingImageBlock in code-behind__
 
-```C#
-
-    private FloatingImageBlock CreateFloatingImageBlock()
-    {
-        Stream stream = Application.GetResourceStream(new Uri(@"/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream;
-        Size size = new Size(236, 50);
-        ImageInline image = new ImageInline(stream, size, "png");
-    
-        FloatingImageBlock floatingBlock = new FloatingImageBlock();
-        floatingBlock.ImageInline = image;
-        floatingBlock.HorizontalPosition = new FloatingBlockHorizontalPosition(HorizontalRelativeFrom.Paragraph, 120);
-    
-        return floatingBlock;
-    }
-```
-```VB.NET
-
-    Private Function CreateFloatingImageBlock() As FloatingImageBlock
-        Dim stream As Stream = Application.GetResourceStream(New Uri("/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream
-        Dim size As Size = New Size(236, 50)
-        Dim image As ImageInline = New ImageInline(stream, size, "png")
-        Dim floatingBlock As FloatingImageBlock = New FloatingImageBlock()
-        floatingBlock.ImageInline = image
-        floatingBlock.HorizontalPosition = New FloatingBlockHorizontalPosition(HorizontalRelativeFrom.Paragraph, 120)
-        Return floatingBlock
-    End Function
-```
+<snippet id='radrichtextbox-document-elements-features-floatingimage-block_2-cs' />
+<snippet id='radrichtextbox-document-elements-features-floatingimage-block_3-vb' />
 
 Once you have defined the image, you will need to insert it in the document. Two approaches are available: using directly the model, appropriate when you are just constructing the document, or through the methods of RadDocumentEditor, when the document is already visualized in RadRichTextBox.
 
 __Example 3: Insert FloatingImageBlock through the model__
 
-```C#
-
-    Section section = new Section();
-    Paragraph paragraph = new Paragraph();
-    paragraph.Inlines.Add(this.CreateFloatingImageBlock());
-    section.Children.Add(paragraph);
-    
-    RadDocument document = new RadDocument();
-    document.Sections.Add(section);
-    this.radRichTextBox.Document = document;
-```
-```VB.NET
-
-    Dim section As Section = New Section()
-    Dim paragraph As Paragraph = New Paragraph()
-    paragraph.Inlines.Add(Me.CreateFloatingImageBlock())
-    section.Children.Add(paragraph)
-    
-    Dim document As RadDocument = New RadDocument()
-    document.Sections.Add(section)
-    Me.radRichTextBox.Document = document
-```
+<snippet id='radrichtextbox-document-elements-features-floatingimage-block_4-cs' />
+<snippet id='radrichtextbox-document-elements-features-floatingimage-block_5-vb' />
 
 In case an existing document should be edited, you can add a floating image to it using the **InsertInline()** method exposed by the **RadRichTextBox** and **RadDocumentEditor** classes.
 
 __Example 4: Insert FloatingImageBlock using IDocumentEditor__
-```C#
-
-    FloatingImageBlock floatingBlock = this.CreateFloatingImageBlock();
-    this.radRichTextBox.InsertInline(floatingBlock);
-```
-```VB.NET
-
-    Dim floatingBlock As FloatingImageBlock = Me.CreateFloatingImageBlock()
-    Me.radRichTextBox.InsertInline(floatingBlock)
-```
+<snippet id='radrichtextbox-document-elements-features-floatingimage-block_6-cs' />
+<snippet id='radrichtextbox-document-elements-features-floatingimage-block_7-vb' />
 
 ## See Also
 

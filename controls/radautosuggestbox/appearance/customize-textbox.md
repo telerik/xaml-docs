@@ -14,17 +14,7 @@ The appearance of the TextBox part of RadAutoSuggestBox can be customized via th
 The TextBoxStyle property expects a Style object with a __TargetType__ set to __RadWatermarkTextBox__.
 
 __Example 1: Setting TextBoxStyle__
-```XAML
-	<telerik:RadAutoSuggestBox Foreground="Red">	
-		<telerik:RadAutoSuggestBox.TextBoxStyle>
-			<!-- The BasedOn property is required when using NoXaml dlls. Otherwise, remove the setting. -->
-			<Style TargetType="telerik:RadWatermarkTextBox" BasedOn="{StaticResource RadWatermarkTextBoxStyle}">				
-				<Setter Property="Opacity" Value="0.5" />
-				<Setter Property="FontWeight" Value="Bold" />                    
-			</Style>
-		</telerik:RadAutoSuggestBox.TextBoxStyle>
-	</telerik:RadAutoSuggestBox>
-```
+<snippet id='radautosuggestbox-appearance-customize-textbox-example_1_setting_textboxstyle-xaml' />
 
 ![{{ site.framework_name }} RadAutoSuggestBox Custom TextBoxStyle](images/radautosuggestbox-appearance-customize-textbox-0.png)
 

@@ -28,16 +28,8 @@ Here is an example of a __RadContextMenu__ that requires the Control button to b
 
 
 
-```XAML
-	<TextBox Width="200"
-	 VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu ModifierKey="Control">
-	            ...
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-features-key-modifiers-block_1-xaml' />
+
 
 If you run your application and just right-click the __TextBox__ control, nothing will happen. The combination of holding the "__Control__" key and then right-clicking the button actually opens the __RadContextMenu__.
 

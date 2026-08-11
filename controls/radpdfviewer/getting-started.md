@@ -58,9 +58,7 @@ You have to first declare the Telerik namespace.
 
 __Example 1: Declare the Telerik namespace__
 
-```XAML
-	telerik="http://schemas.telerik.com/2008/xaml/presentation"     
-```
+<snippet id='radpdfviewer-getting-started-block_1-xaml' />
 
 
 
@@ -68,11 +66,7 @@ After that, you can add a RadPdfViewer, as shown in __Example 2__.
 
 __Example 2: Create a PdfViewer__
 
-```XAML
-	<Grid>
-	    <telerik:RadPdfViewer x:Name="pdfViewer"/>
-	</Grid>
-```
+<snippet id='radpdfviewer-getting-started-block_2-xaml' />
 
 > When you create a RadPdfViewer, ensure that the control is __not__ placed in a container that measures its children in Infinity as this could lead to unexpected behavior of the viewer. Examples of such containers are __ScrollViewer__, __StackPanel__ or __Grid__ with row height and column width set to __*Auto__*. 
 
@@ -84,11 +78,7 @@ The navigation panel is separated from the control to provide better customizati
 {% endif %}
 __Example 3: Add a RadToolBar to RadPdfViewer__
 
-```XAML
-	<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
-	    <!--...-->
-	</telerik:RadToolBar>
-```
+<snippet id='radpdfviewer-getting-started-block_3-xaml' />
 
 >tip You can download a complete runnable example that shows the default RadPdfViewer with RadToolBar configuration from the [Telerik® SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). 
 
@@ -96,14 +86,7 @@ You can then add buttons, combo boxes, etc., bound to the respective command des
 
 __Example 4: Wire a CommandDescriptor to a RadButton__
 
-```XAML
-	<telerik:RadButton Command="{Binding OpenCommandDescriptor.Command}" Visibility="{Binding OpenCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsBackgroundVisible="False">
-	    <ToolTipService.ToolTip>
-	        <TextBlock Text="Open" />
-	    </ToolTipService.ToolTip>
-	    <Image Source="{telerik:IconResource IconRelativePath=open.png, IconSources={StaticResource IconPaths}}" Stretch="None" />
-	</telerik:RadButton>
-```
+<snippet id='radpdfviewer-getting-started-block_4-xaml' />
 
 
 >tip For the whole configuration of a RadToolBar with all commands of the viewer, you can refer to the [Wiring UI]({%slug radpdfviewer-wiring-ui%}) article. More information about the command descriptors is available [here]({%slug radpdfviewer-command-descriptors%}).
@@ -131,16 +114,7 @@ To change the theme, you can follow the steps below:
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 5: Merge the ResourceDictionaries__  
-```XAML
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-```
+<snippet id='radpdfviewer-getting-started-block_5-xaml' />
 
 __Figure 1__ shows RadPdfViewer with the __Windows8__ theme applied.
 	
@@ -164,4 +138,3 @@ __Figure 1__ shows RadPdfViewer with the __Windows8__ theme applied.
 ## See Also
 * [Showing a File]({%slug radpdfviewer-showing-a-file%})
 * [Wiring UI]({%slug radpdfviewer-wiring-ui%})
-

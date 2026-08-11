@@ -95,15 +95,7 @@ The key bindings of the viewer can be retrieved using the __KeyBindings__ proper
 
 
 
-```C#
-	public void Clear()                                                //Clears the collection
-	public void SetInputBindings(InputBindingCollection inputBindings) //Clears the current KeyBindings and sets the new ones.
-	
-	public void Add(InputBinding inputBinding)                          
-	public void AddRange(IEnumerable<InputBinding> inputBindings)
-	
-	public void RegisterCommand(ICommand command, Key key, ModifierKeys modifierKeys = ModifierKeys.None, object commandParameter = null)
-```
+<snippet id='radpdfviewer-keyboard-support-block_1-cs' />
 
 
 
@@ -111,8 +103,4 @@ Here is an example that shows how the default input bindings can be cleared and 
 
 
 
-```C#
-	this.pdfViewer.Clear();
-	this.pdfViewer.KeyBindings.Add(new KeyBinding(this.pdfViewer.Commands.PageUpCommand, new KeyGesture(Key.PageUp)));
-	this.pdfViewer.KeyBindings.RegisterCommandDescriptor(this.pdfViewer.CommandDescriptors.PageDownCommandDescriptor, Key.PageDown);
-```
+<snippet id='radpdfviewer-keyboard-support-block_2-cs' />

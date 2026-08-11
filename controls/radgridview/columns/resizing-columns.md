@@ -18,11 +18,8 @@ To resize a column in code, you can use its __Width__ property. For example:
 
 __Example 1: Setting a column with fixed width__
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                Header="Name"
-	                Width="100" />
-```
+<snippet id='radgridview-columns-resizing-columns-example_1_setting_a_column_with_fixed_width-xaml' />
+
 
 ## Disabling Resizing
 
@@ -31,12 +28,8 @@ __1.__ The first one is by setting the __CanUserResizeColumns__ property to __Fa
 
 __Example 2: Disable resizing for all columns within a RadGridView__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 CanUserResizeColumns="False">
-	    <!-- ... -->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-resizing-columns-example_2_disable_resizing_for_all_columns_within_a_radgridview-xaml' />
+
 
 This will disable resizing on __RadGridView__ level, which means that all of the columns won't be resizable. 
 
@@ -44,12 +37,8 @@ __2.__ If you want to disable resizing only for a particular column, use the __I
 
 __Example 3: Disable resizing for a specific column__
 
-```XAML
-	<telerik:GridViewDataColumn Header="ID"
-	                DataMemberBinding="{Binding EmployeeID}"
-	                UniqueName="ID" 
-	                IsResizable="False" />
-```
+<snippet id='radgridview-columns-resizing-columns-example_3_disable_resizing_for_a_specific_column-xaml' />
+
 
 ## Resizing Events
 

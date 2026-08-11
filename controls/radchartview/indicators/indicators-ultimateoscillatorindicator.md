@@ -15,18 +15,8 @@ UltimateOscillatorIndicator measures momentum across three timeframes. The indic
 To set up the indicator you can set its __CategoryBinding, HighBinding, LowBinding, CloseBinding, and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__, __Period2__ and __Period3__ properties.
 
 __Example 1: Defining UltimateOscillatorIndicator__
-```XAML
-	<telerik:RadCartesianChart.Indicators>
-	    <telerik:UltimateOscillatorIndicator Period="6" 
-                                             Period2="9"
-                                             Period3="12"
-                                             CategoryBinding="Date"                                             
-                                             HighBinding="High"                                           
-                                             LowBinding="Low"                                           
-                                             CloseBinding="Close"                                                      
-                                             ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-ultimateoscillatorindicator-example_1_defining_ultimateoscillatorindicator-xaml' />
+
 
 #### Figure 1: UltimateOscillatorIndicator
 <img src="images/radchartview-indicators-ultimateoscillatorindicator-0.png" style="width: 80%;">

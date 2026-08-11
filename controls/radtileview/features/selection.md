@@ -17,15 +17,7 @@ This article demonstrates the selection feature of the RadTileView control.
 The selection feature is disabled by default. To enable it set the __IsSelectionEnabled__ property of RadTileView to __True__. To select a RadTileViewItem, click on it in the UI, or set the SelectedItem property of the control.
 
 __Example 1: Enabling selection__
-```XAML
-	<telerik:RadTileView IsSelectionEnabled="True">
-		<telerik:RadTileViewItem Header="Item 1"/>
-		<telerik:RadTileViewItem Header="Item 2"/>
-		<telerik:RadTileViewItem Header="Item 3"/>
-		<telerik:RadTileViewItem Header="Item 4"/>
-		<telerik:RadTileViewItem Header="Item 5"/>   
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-selection-block_1-xaml' />
 
 #### Figure 1: Selected tile
 ![radtileview-selection-0.png](images/radtileview-selection-0.png)
@@ -41,16 +33,7 @@ The control supports three selection modes. They can be set via the __SelectionM
 * __Extended__: This mode allows the user to select multiple items at once by holding down the Ctrl or Shift keys and clicking multiple items with the mouse or by using the keyboard. A second click on a selected item will unselect that item.
 
 __Example 2: Setting selection mode__
-```XAML
-	<telerik:RadTileView IsSelectionEnabled="True"
-						 SelectionMode="Multiple">
-		<telerik:RadTileViewItem Header="Item 1"/>
-		<telerik:RadTileViewItem Header="Item 2"/>
-		<telerik:RadTileViewItem Header="Item 3"/>
-		<telerik:RadTileViewItem Header="Item 4"/>
-		<telerik:RadTileViewItem Header="Item 5"/>   
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-selection-block_2-xaml' />
 
 ## Setting and Getting Selected Items Manually
 
@@ -59,36 +42,12 @@ The selected tile is stored in the __SelectedItem__ property of RadTileView and 
 Depending on the setup the SelectedItem property can contain different values. If the control is populated directly using RadTileViewItem instances, the property will contain a value of type RadTileViewItem. If the control is populated via its ItemsSource property, the SelectedItem will contain an object from the ItemsSource (the model of the selected RadTileViewItem).
 
 __Example 3: Getting and setting selection manually via the SelectedItem property__
-```C#
-	// Getting the selection
-	object selectedItem = this.radTileView.SelectedItem;
-	
-	// Setting the selection. Selecting the first item in the Items collection of the control
-	this.radTileView.SelectedItem = this.radTileView.Items[0]	
-```
-```VB.NET
-	' Getting the selection
-	Dim selectedItem As Object = Me.radTileView.SelectedItem
-
-	' Setting the selection. Selecting the first item in the Items collection of the control
-	Me.radTileView.SelectedItem = Me.radTileView.Items(0)
-```
+<snippet id='radtileview-features-selection-block_3-cs' />
+<snippet id='radtileview-features-selection-block_4-vb' />
 
 __Example 4: Setting selection via the SelectedItems collection property__
-```C#
-	// Getting the selection
-	object selectedItem = this.radTileView.SelectedItems[0];
-
-	// Setting the selection. Selecting the first item in the Items collection of the control
-	this.radTileView.SelectedItems.Add(this.radTileView.Items[0]);
-```
-```VB.NET
-	' Getting the selection
-	Dim selectedItem As Object = Me.radTileView.SelectedItems(0)
-
-	' Setting the selection. Selecting the first item in the Items collection of the control
-	Me.radTileView.SelectedItems.Add(Me.radTileView.Items(0))
-```
+<snippet id='radtileview-features-selection-block_5-cs' />
+<snippet id='radtileview-features-selection-block_6-vb' />
 
 ## Events
 
@@ -107,106 +66,14 @@ The RadTileView control exposes several selection events. Please note that these
 This section demonstrates how to data bind the SelectedItem property of the control.
 
 __Example 5: Defining the model and populating it with data__
-```C#
-	public class MainViewModel : ViewModelBase
-    {
-        private TileInfo selectedItem;
-        public TileInfo SelectedItem
-        {
-            get { return selectedItem; }
-            set
-            {
-                if (this.selectedItem != value)
-                {
-                    this.selectedItem = value;
-                    this.OnPropertyChanged("SelectedItem");
-                }
-            }
-        }
-
-        public ObservableCollection<TileInfo> Tiles { get; set; }
-
-        public MainViewModel()
-        {
-            this.Tiles = new ObservableCollection<TileInfo>();
-            for (int i = 0; i < 6; i++)
-            {
-                this.Tiles.Add(new TileInfo() { Header = "Tile " + i, Content = "Tile Content " + i });
-            }
-
-            this.SelectedItem = this.Tiles[0];
-        }
-    }
-
-    public class TileInfo
-    {
-        public string Header { get; set; }
-        public string Content { get; set; }
-    }
-```
-```VB.NET
-	Public Class MainViewModel
-		Inherits ViewModelBase
-
-		Private _selectedItem As TileInfo
-		Public Property SelectedItem() As TileInfo
-			Get
-				Return _selectedItem
-			End Get
-			Set(ByVal value As TileInfo)
-				If Me._selectedItem IsNot value Then
-					Me._selectedItem = value
-					Me.OnPropertyChanged("SelectedItem")
-				End If
-			End Set
-		End Property
-
-		Public Property Tiles() As ObservableCollection(Of TileInfo)
-
-		Public Sub New()
-			Me.Tiles = New ObservableCollection(Of TileInfo)()
-			For i As Integer = 0 To 5
-				Me.Tiles.Add(New TileInfo() With {
-					.Header = "Tile " & i,
-					.Content = "Tile Content " & i
-				})
-			Next i
-
-			Me.SelectedItem = Me.Tiles(0)
-		End Sub
-	End Class
-
-	Public Class TileInfo
-		Public Property Header() As String
-		Public Property Content() As String
-	End Class
-```
+<snippet id='radtileview-features-selection-block_7-cs' />
+<snippet id='radtileview-features-selection-block_8-vb' />
 
 __Example 6: Setting the DataContext__
-```XAML
-	public partial class TileViewUserControl : UserControl
-    {
-        public TileViewUserControl()
-        {
-            InitializeComponent();
-            this.DataContext = new MainViewModel();
-        }
-    }
-```
+<snippet id='radtileview-features-selection-block_9-xaml' />
 
 __Example 7: Setting up the view and binding the SelectedItem property__
-```XAML
-	<telerik:RadTileView IsSelectionEnabled="True" 
-						 DisplayMemberPath="Header"
-						 ItemsSource="{Binding Tiles}"
-						 SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
-		<telerik:RadTileView.ContentTemplate>
-			<DataTemplate>
-				<TextBlock Text="{Binding Content}" />
-			</DataTemplate>                
-		</telerik:RadTileView.ContentTemplate>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-selection-block_10-xaml' />
 
 #### Figure 2: Data binding example
 ![radtileview-selection-1.png](images/radtileview-selection-1.png)

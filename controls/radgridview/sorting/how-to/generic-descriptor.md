@@ -20,50 +20,15 @@ The __RadGridView__ control allows for ordering the data items by the result of 
 
 __Example 1: Setting up the RadGridView__
 
-```XAML
-	<Grid>
-        <Grid.DataContext>
-            <my:MyViewModel />
-        </Grid.DataContext>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
+<snippet id='radgridview-sorting-how-to-generic-descriptor-example_1_setting_up_the_radgridview-xaml' />
 
-        <telerik:RadGridView Name="clubsGrid" 
-                             ItemsSource="{Binding Clubs}"
-                             AutoGenerateColumns="False"
-                             GroupRenderMode="Flat">
-            <telerik:RadGridView.Columns>
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"  />
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-                                            Header="Stadium" 
-                                            DataFormatString="{}{0:N0}"/>
-            </telerik:RadGridView.Columns>
-        </telerik:RadGridView>
-
-        <StackPanel Grid.Row="1">
-            <Button Content="Add Generic SortDescriptor" Click="Button_Click" />
-        </StackPanel>
-    </Grid>
-```
 
 After that, when the button is clicked we will create a generic SortDescriptor and add it to the __SortDescriptors__ collection of the RadGridView. Note, that in __Example 2__ we are simply returning a property of the bound object, however we have the option of working with all of its properties in order to construct a SortingExpression. 
 
 __Example 2: Create a generic SortDescriptor__
 
-```C#
-	private void Button_Click(object sender, RoutedEventArgs e)
-	{
-		var descriptor = new SortDescriptor<Club, int>
-		{
-			SortingExpression = c => c.StadiumCapacity,
-			SortDirection = ListSortDirection.Descending
-		};
+<snippet id='radgridview-sorting-how-to-generic-descriptor-example_2_create_a_generic_sortdescriptor-cs' />
 
-		this.clubsGrid.SortDescriptors.Add(descriptor);
-	}
-```
         
 > For more information you can check the [Sorting section]({%slug gridview-sorting-basics%}).
         

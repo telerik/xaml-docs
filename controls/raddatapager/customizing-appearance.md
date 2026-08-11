@@ -17,17 +17,8 @@ RadDataPager provides few properties that allows you to customize the appearance
 The numeric buttons of the DataPager components can be customized via the `NumericButtonStyle` property. The property expects a `Style` object with its `TargetType` set to `RadRadioButton`.
 
 __Setting NumericButtonStyle__
-```XAML
-	<telerik:RadDataPager DisplayMode="All">          
-		<telerik:RadDataPager.NumericButtonStyle>
-			<Style TargetType="telerik:RadRadioButton">
-				<Setter Property="Padding" Value="12 5" />
-				<Setter Property="Margin" Value="1 2" />
-				<Setter Property="Background" Value="#F56147" />                    
-			</Style>
-		</telerik:RadDataPager.NumericButtonStyle>
-	</telerik:RadDataPager>
-```
+<snippet id='raddatapager-customizing-appearance-setting_numericbuttonstyle-xaml' />
+
 
 ![{{ site.framework_name }} RadDataPager Customized Numeric Buttons](images/raddatapager-styles-and-templates-styling-the-numeric-buttons-0.png)
 
@@ -38,16 +29,7 @@ The data context passed to the button is an object of type {% if site.site_name 
 The text area that allows you to enter the page index can be customized via the `TextBoxStyle` property. The property expects a `Style` object with its `TargetType` set to `TextBox`.
 
 __Setting the TextBoxStyle__
-```XAML
-	<telerik:RadDataPager DisplayMode="All">          
-		<telerik:RadDataPager.TextBoxStyle>
-			<Style TargetType="TextBox">
-				<Setter Property="Width" Value="50" />                    
-				<Setter Property="Background" Value="#FFE680" />
-				<Setter Property="TextAlignment" Value="Right" />
-			</Style>
-		</telerik:RadDataPager.TextBoxStyle>
-	</telerik:RadDataPager>
-```
+<snippet id='raddatapager-customizing-appearance-setting_the_textboxstyle-xaml' />
+
 
 ![{{ site.framework_name }} RadDataPager Customized TextBox](images/raddatapager-styles-and-templates-styling-the-numeric-buttons-1.png)

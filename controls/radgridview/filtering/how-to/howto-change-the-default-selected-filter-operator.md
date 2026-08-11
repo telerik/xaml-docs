@@ -14,23 +14,9 @@ To change the default selected filter operators, you have to handle the __Filter
 
 
 
-```C#
-	private void OnRadGridViewFilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
-	{
-	    if (e.Column.UniqueName == "HireDate")
-	    {
-	        e.DefaultOperator1 = Telerik.Windows.Data.FilterOperator.IsGreaterThan;
-	        e.DefaultOperator2 = Telerik.Windows.Data.FilterOperator.IsLessThan;
-	    }
-	}
-```
-```VB.NET
-	Private Sub OnRadGridViewFilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
-	    If e.Column.UniqueName = "HireDate" Then
-	        e.DefaultOperator1 = Telerik.Windows.Data.FilterOperator.IsGreaterThan
-	        e.DefaultOperator2 = Telerik.Windows.Data.FilterOperator.IsLessThan
-	    End If
-	End Sub
-```
+<snippet id='radgridview-filtering-how-to-howto-change-the-default-selected-filter-operator-block_1-cs' />
+
+<snippet id='radgridview-filtering-how-to-howto-change-the-default-selected-filter-operator-block_1-vb' />
+
 
 >Please, note that you cannot reorder the available operators.

@@ -24,12 +24,8 @@ You have two options:
 
 __Example 1: Styling all row details of an application__
 
-```XAML
-	<Style TargetType="telerik:DetailsPresenter">
-	    <Setter Property="Background" Value="Red"/>
-	    <Setter Property="HorizontalContentAlignment" Value="Right"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-row-details-example_1_styling_all_row_details_of_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __DetailsPresenterStyle__.
 
@@ -38,9 +34,8 @@ __RadGridView__ exposes the __RowDetailsStyle__ property of type __Style__. It i
 
 __Example 2: Setting RadGridView's RowDetailsStyle__
 
-```XAML
-	<telerik:RadGridView RowDetailsStyle="{StaticResource RowDetailsStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-row-details-example_2_setting_radgridview_s_rowdetailsstyle-xaml' />
+
 
 #### __Figure 2: RadGridView with styled row details__
 

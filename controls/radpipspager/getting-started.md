@@ -32,22 +32,14 @@ If you are not using NuGet packages, you can add a reference to the following as
 You can add RadPipsPager manually in XAML as demonstrated in the following example:
 
 __Adding RadPipsPager in XAML__
-```XAML
-    <telerik:RadPipsPager/>
-```
+<snippet id='radpipspager-getting-started-block_1-xaml' />
 
 ## Adding Items
 
 The RadPipsPager control works with `RadPipsPagerItem` elements that are added to the `Items` collection of the control. These elements can be added both in XAML and in code.
 
 __Adding RadPipsPagerItems__
-```XAML
-    <telerik:RadPipsPager>
-        <telerik:RadPipsPagerItem/>
-        <telerik:RadPipsPagerItem/>
-        <telerik:RadPipsPagerItem/>
-    </telerik:RadPipsPager>
-```
+<snippet id='radpipspager-getting-started-block_2-xaml' />
 
 __RadPipsPager with manually added items__
 
@@ -60,81 +52,15 @@ The RadPipsPager component allows you to navigate the items of any `ItemsControl
 The following example a basic scenario where the RadPipsPager is used together with another control.
 
 __Creating the model__
-```C#
-    public class Person
-    {
-        public string Name { get; set; }
-    }
-```
-```VB.NET
-    Public Class Person
-        Public Property Name As String
-    End Class
-```
+<snippet id='radpipspager-getting-started-block_3-cs' />
+<snippet id='radpipspager-getting-started-block_3-vb' />
 
 __Creating the view model__
-```C#
-    public class MainViewModel
-    {
-        public MainViewModel()
-        {
-            this.People = new ObservableCollection<Person>
-            {
-                new Person() { Name = "Jack" },
-                new Person() { Name = "Mike" },
-                new Person() { Name = "Nick" }
-            };
-        }
-
-        public ObservableCollection<Person> People { get; set; }
-    }
-```
-```VB.NET
-    Public Class MainViewModel
-        Public Sub New()
-            Me.People = New ObservableCollection(Of Person) From {
-                New Person() With {
-                    .Name = "Jack"
-                },
-                New Person() With {
-                    .Name = "Mike"
-                },
-                New Person() With {
-                    .Name = "Nick"
-                }
-            }
-        End Sub
-
-        Public Property People As ObservableCollection(Of Person)
-    End Class
-```
+<snippet id='radpipspager-getting-started-block_4-cs' />
+<snippet id='radpipspager-getting-started-block_4-vb' />
 
 __Creating the view__
-```XAML
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Grid.DataContext>
-            <local:MainViewModel/>
-        </Grid.DataContext>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <telerik:RadSlideView x:Name="slideView"
-                              ItemsSource="{Binding People}"
-                              SelectedIndex="0">
-            <telerik:RadSlideView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Name}"
-                               HorizontalAlignment="Center"/>
-                </DataTemplate>
-            </telerik:RadSlideView.ItemTemplate>
-        </telerik:RadSlideView>
-        <telerik:RadPipsPager ItemsSource="{Binding ElementName=slideView, Path=ItemsSource}"
-                              SelectedItem="{Binding ElementName=slideView, Path=SelectedItem}"
-                              Grid.Row="1"
-                              ButtonVisibility="Visible"/>
-    </Grid>
-```
+<snippet id='radpipspager-getting-started-block_5-xaml' />
 
 __RadPipsPager and RadSlideView result__
 
@@ -155,16 +81,7 @@ The controls from our suite support different themes. You can see how to apply a
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Merge the ResourceDictionaries__
-```XAML
-    <Application.Resources>
-    	<ResourceDictionary>
-    		<ResourceDictionary.MergedDictionaries>
-    			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-    			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-    		</ResourceDictionary.MergedDictionaries>
-    	</ResourceDictionary>
-    </Application.Resources>
-```
+<snippet id='radpipspager-getting-started-block_6-xaml' />
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

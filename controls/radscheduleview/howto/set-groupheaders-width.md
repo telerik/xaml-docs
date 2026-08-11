@@ -30,25 +30,7 @@ First, we will [generate the default GroupHeaderContentTemplateSelector]({%slug 
 
 __Example 1: Modified GroupHeaderContentTemplateSelector__
 
-```XAML
-	<telerik:GroupHeaderTemplateSelector x:Key="GroupHeaderContentTemplateSelector">
-		<telerik:GroupHeaderTemplateSelector.HorizontalTemplate>
-			<DataTemplate>
-				<ContentPresenter Content="{Binding FormattedName}" Height="16" Margin="2" Width="30" />
-			</DataTemplate>
-		</telerik:GroupHeaderTemplateSelector.HorizontalTemplate>
-		<telerik:GroupHeaderTemplateSelector.VerticalTemplate>
-            <DataTemplate>
-                <telerik:LayoutTransformControl VerticalAlignment="Top">
-					<telerik:LayoutTransformControl.LayoutTransform>
-						<RotateTransform Angle="-90" />
-                    </telerik:LayoutTransformControl.LayoutTransform>
-					<ContentPresenter Content="{Binding FormattedName}" Margin="2" Width="30" Height="16"  />
-				</telerik:LayoutTransformControl>
-			</DataTemplate>
-		</telerik:GroupHeaderTemplateSelector.VerticalTemplate>
-	</telerik:GroupHeaderTemplateSelector>
-```
+<snippet id='radscheduleview-howto-set-groupheaders-width-block_1-xaml' />
 
 Then, we will apply the created GroupHeaderContentTemplateSelector to the ScheduleView, as shown in __Example 2__.
 
@@ -56,15 +38,7 @@ Additionally, we will change the format of the dates inside the GroupHeaders as 
 
 __Example 2: Apply GroupHeaderContentTemplateSelector__
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
-            GroupHeaderContentTemplateSelector="{StaticResource GroupHeaderContentTemplateSelector}"
-			MinAppointmentWidth="10">		
-		<telerik:RadScheduleView.ViewDefinitions>
-                <telerik:WeekViewDefinition  GroupHeaderDateStringFormat="{}{0:MM/dd}" />           
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-howto-set-groupheaders-width-block_2-xaml' />
 
 __Figure 1__ shows the RadScheduleView before and after applying the previously explained properties.
 

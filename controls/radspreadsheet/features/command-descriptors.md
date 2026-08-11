@@ -29,41 +29,7 @@ First you need to inherit the __WorksheetCommandDescriptors__ class. This will a
 
 #### __C# Example 1: Create a class that inherits WorksheetCommandDescriptors__
 
-```C#
-
-    class CustomDescriptors : WorksheetCommandDescriptors
-    {
-        private ICommand openCommand;
-        private CommandDescriptor openFile;
-        RadWorksheetEditor owner;
-    
-        public CustomDescriptors(RadWorksheetEditor owner) : base(owner)
-        {
-            this.owner = owner;
-            InitializeCommands();
-        }
-        public override CommandDescriptor OpenFile
-        {
-            get
-            {
-                return openFile;
-            }
-        }
-    
-        private void InitializeCommands()
-        {
-            this.openCommand = new DelegateCommand((p) =>
-            {
-                MessageBox.Show("Open command executed.");
-            });
-            openFile = new CommandDescriptor(openCommand);
-            this.owner.KeyBindings.RegisterCommand(new DelegateCommand(p => { this.openCommand.Execute(null); }), Key.O, ModifierKeys.Control, null);
-    
-        }
-    }
-
-
-```
+<snippet id='radspreadsheet-features-command-descriptors-block_1-cs' />
 
 
 
@@ -71,20 +37,6 @@ The second step is to set the newly created class to the active worksheet editor
 
 #### __C# Example 2: Change the default command descriptors__
 
-```C#
-
-    private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
-    {
-        RadWorksheetEditor editor = (RadWorksheetEditor)this.radSpreadsheet.ActiveSheetEditor;
-        if (editor != null)
-        {
-            editor.RadWorksheetCommandDescriptors = new CustomDescriptors(editor);
-        }
-
-    }
-
-
-
-```
+<snippet id='radspreadsheet-features-command-descriptors-block_2-cs' />
 
 That is everything that is required to change the default command. Now when the open button is pressed or the Ctrl + O combination is used the custom command will be executed. 

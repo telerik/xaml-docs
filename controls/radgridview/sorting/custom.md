@@ -42,13 +42,10 @@ To do so you can use the __Sorting__ event. As a start you need to attach an eve
        
 
 
-```C#
-	this.radGridView.Sorting += this.radGridView_Sorting;
-```
-```VB.NET
-	  
-	AddHandler Me.radGridView.Sorting, AddressOf Me.radGridView_Sorting
-```
+<snippet id='radgridview-sorting-custom-block_1-cs' />
+
+<snippet id='radgridview-sorting-custom-block_1-vb' />
+
 
 >When performing a custom sorting, you need to set the __IsCustomSortingEnabled__ property of the column to True. This is required in order to preserve the sorting direction of the column when another data operation (such as sorting, filtering or grouping) is performed.
 
@@ -70,65 +67,19 @@ The first thing to do is to get the value of __RadGridView.ItemsSource__ and ass
 
 
 
-```C#
-	private void radGridView_Sorting(object sender, GridViewSortingEventArgs e)
-	{
-	    //Gets the value of the ItemsSource property as IEnumerable.
-	    IEnumerable<Employee> employees = e.DataControl.ItemsSource as IEnumerable<Employee>;
-	    //Checks if the value of the collection is null.
-	    if (employees == null)
-	    {
-	        e.Cancel = true;
-	        return;
-	    }
-	}
-```
-```VB.NET
-	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
-	    'Gets the value of the ItemsSource property as IEnumerable.
-	    Dim employees As IEnumerable(Of Employee) = TryCast(e.DataControl.ItemsSource, IEnumerable(Of Employee))
-	
-	    'Checks if the value of the collection is null.
-	    If employees Is Nothing Then
-	        e.Cancel = True
-	        Exit Sub
-	    End If
-	End Sub
-```
+<snippet id='radgridview-sorting-custom-block_2-cs' />
+
+<snippet id='radgridview-sorting-custom-block_2-vb' />
+
 
 Next you have to check the value of the current sorting direction. To do that use __OldSortingState__ property of __GridViewSortingEventArgs__, adding the following lines of code to the sorting event handler:
         
 
 
-```C#
-	//If the sorting state is none, sort the items ascending.
-	if (e.OldSortingState == SortingState.None)
-	{
-	    e.NewSortingState = SortingState.Ascending;
-	}
-	//If the sorting state is ascending, sort the items descending.
-	else if (e.OldSortingState == SortingState.Ascending)
-	{
-	    e.NewSortingState = SortingState.Descending;
-	}
-	//If the sorting state is descending, apply default sorting to the items.
-	else
-	{
-	    e.NewSortingState = SortingState.None;
-	}
-```
-```VB.NET
-	'If the sorting state is none, sort the items ascending.
-	If e.OldSortingState = SortingState.None Then
-	    e.NewSortingState = SortingState.Ascending
-	    'If the sorting state is ascending, sort the items descending.
-	ElseIf e.OldSortingState = SortingState.Ascending Then
-	    e.NewSortingState = SortingState.Descending
-	    'If the sorting state is descending, apply default sorting to the items.
-	Else
-	    e.NewSortingState = SortingState.None
-	End If
-```
+<snippet id='radgridview-sorting-custom-block_3-cs' />
+
+<snippet id='radgridview-sorting-custom-block_3-vb' />
+
 
 You can see that after determining the sorting state, __NewSortingState__ property is set to match the new sorting state.
 
@@ -136,109 +87,28 @@ To sort the employees collection use __OrderBy__ and __OrderByDescending__ exten
         
 
 
-```C#
-	//Via the SortPropertyName value get 
-	//the value of the property to sort your data by.
-	employees = employees.OrderBy(employee => employee.GetType()
-	                                                  .GetProperty((e.Column as GridViewDataColumn).GetDataMemberName())
-	                                                  .GetValue(employee, null));
-```
-```VB.NET
-	'Via the SortPropertyName value get 
-	'the value of the property to sort your data by.
-	employees = employees.OrderBy(Function(employee) employee.GetType().GetProperty((TryCast(e.Column, GridViewDataColumn)).GetDataMemberName()).GetValue(employee, Nothing))
-	' #endregion
-	
-	'#region gridview-sorting-custom_9
-	e.DataControl.ItemsSource = employees.ToList()
-	e.Cancel = True
-```
+<snippet id='radgridview-sorting-custom-block_4-cs' />
+
+<snippet id='radgridview-sorting-custom-block_4-vb' />
+
 
 Do the same with __OrderByDescending__ extension method. In the end, set __RadGridView.ItemsSource__ to the sorted employees collection and set the __Cancel__ property of the __RadGridViewEventArgs__ to __True__ , so the built-in sorting functionality would be bypassed.
 
 
 
-```C#
-	e.DataControl.ItemsSource = employees.ToList();
-	e.Cancel = true;
-```
-```VB.NET
-	e.DataControl.ItemsSource = employees.ToList()
-	e.Cancel = True
-```
+<snippet id='radgridview-sorting-custom-block_5-cs' />
+
+<snippet id='radgridview-sorting-custom-block_5-vb' />
+
 
 Here is the final code that should represent __Sorting__ event handler.
 
 
 
-```C#
-	private void CustomSortingGrid_Sorting(object sender, GridViewSortingEventArgs e)
-	{
-	    //Gets the value of the ItemsSource property as IEnumerable.
-	    IEnumerable<Employee> employees = e.DataControl.ItemsSource as IEnumerable<Employee>;
-	    //Checks if the value of the collection is null.
-	    if (employees == null)
-	    {
-	        e.Cancel = true;
-	        return;
-	    }
-	    //If the sorting state is none, sort the items ascending.
-	    if (e.OldSortingState == SortingState.None)
-	    {
-	        e.NewSortingState = SortingState.Ascending;
-	        employees = employees.OrderBy(employee => employee.GetType()
-	                                                          .GetProperty((e.Column as GridViewDataColumn).GetDataMemberName())
-	                                                          .GetValue(employee, null));
-	    }
-	    //If the sorting state is ascending, sort the items descending.
-	    else if (e.OldSortingState == SortingState.Ascending)
-	    {
-	        e.NewSortingState = SortingState.Descending;
-	        employees = employees.OrderByDescending(employee => employee.GetType()
-	                                                           .GetProperty((e.Column as GridViewDataColumn).GetDataMemberName())
-	                                                           .GetValue(employee, null));
-	    }
-	    //If the sorting state is descending, apply default sorting to the items.
-	    else
-	    {
-	        e.NewSortingState = SortingState.None;
-	        employees = employees.OrderBy(employee => employee.EmployeeID);
-	    }
-	    //Set the sorted collection as source of the RadGridView
-	    e.DataControl.ItemsSource = employees.ToList();
-	    e.Cancel = true;
-	}
-```
-```VB.NET
-	Private Sub CustomSortingGrid_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
-	    'Gets the value of the ItemsSource property as IEnumerable.
-	    Dim employees As IEnumerable(Of Employee) = TryCast(e.DataControl.ItemsSource, IEnumerable(Of Employee))
-	
-	    'Checks if the value of the collection is null.
-	    If employees Is Nothing Then
-	        e.Cancel = True
-	        Exit Sub
-	    End If
-	
-	    'If the sorting state is none, sort the items ascending.
-	    If e.OldSortingState = SortingState.None Then
-	        e.NewSortingState = SortingState.Ascending
-	        employees = employees.OrderBy(Function(employee) employee.[GetType]().GetProperty(TryCast(e.Column, GridViewDataColumn).GetDataMemberName()).GetValue(employee, Nothing))
-	        'If the sorting state is ascending, sort the items descending.
-	    ElseIf e.OldSortingState = SortingState.Ascending Then
-	        e.NewSortingState = SortingState.Descending
-	        employees = employees.OrderByDescending(Function(employee) employee.[GetType]().GetProperty(TryCast(e.Column, GridViewDataColumn).GetDataMemberName()).GetValue(employee, Nothing))
-	    Else
-	        'If the sorting state is descending, apply default sorting to the items.
-	        e.NewSortingState = SortingState.None
-	        employees = employees.OrderBy(Function(employee) employee.EmployeeID)
-	    End If
-	
-	    'Set the sorted collection as source of the RadGridView
-	    e.DataControl.ItemsSource = employees.ToList()
-	    e.Cancel = True
-	End Sub
-```
+<snippet id='radgridview-sorting-custom-block_6-cs' />
+
+<snippet id='radgridview-sorting-custom-block_6-vb' />
+
 
 The same technique is not only usable with LINQ extension methods and RadGridView.ItemsSource__. You can implement whatever logic you like for getting data and sorting it. This is just a simple example that clarifies the logic around the implementation of the custom sorting and not the sorting functionality itself. 
 

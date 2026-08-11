@@ -95,28 +95,16 @@ Step 1: Define new instance of RadDocument and add Section in it:
 
 
 
-```C#
-	RadDocument document = new RadDocument();
-	Section section = new Section();
-	document.Sections.Add(section);
-```
-```VB.NET
-	Dim document = New RadDocument();
-	Dim section = New Section()
-	document.Sections.Add(section)
-```
+<snippet id='radrichtextbox-features-styles-list-styles-block_1-cs' />
+<snippet id='radrichtextbox-features-styles-list-styles-block_2-vb' />
 
 
 Step 2: Create list
 
 
 
-```C#
-	ListStyle list = new ListStyle();
-```
-```VB.NET
-	Dim list = new ListStyle()
-```
+<snippet id='radrichtextbox-features-styles-list-styles-block_3-cs' />
+<snippet id='radrichtextbox-features-styles-list-styles-block_4-vb' />
 
 Step 3: Add the list levels to the list
 
@@ -124,43 +112,15 @@ Initially, the list doesn’t have any associated list levels. The possible list
 
 
 
-```C#
-	for (int levelIndex = 0; levelIndex < 9; levelIndex++)
-	{
-	    ListLevelStyle listLevel = new ListLevelStyle();
-	    list.Levels.Add(listLevel);
-	}
-```
-```VB.NET
-	For i As Integer = 0 To 8
-	    Dim listLevel = New ListLevelStyle()
-	    list.Levels.Add(listLevel)
-	Next
-```
+<snippet id='radrichtextbox-features-styles-list-styles-block_5-cs' />
+<snippet id='radrichtextbox-features-styles-list-styles-block_6-vb' />
 
 Step 4: Customize list level. 
 
 
 
-```C#
-	for (int levelIndex = 0; levelIndex < 9; levelIndex++)
-	{
-	    bool isEven = (levelIndex % 2) == 0;
-	    list.Levels[levelIndex].StartingIndex = 1;
-	    list.Levels[levelIndex].NumberingFormat = ListNumberingFormat.Decimal;
-	    list.Levels[levelIndex].LevelText = isEven ? "{" + levelIndex + "}." : "o";
-	    list.Levels[levelIndex].Indent = 48 + (levelIndex * 24);
-	}
-```
-```VB.NET
-	For levelIndex As Integer = 0 To 8
-	    Dim isEven As Boolean = (levelIndex Mod 2) = 0
-	    list.Levels(levelIndex).StartingIndex = 1
-	    list.Levels(levelIndex).NumberingFormat = ListNumberingFormat.Decimal
-	    list.Levels(levelIndex).LevelText = If(isEven = True, "{" + levelIndex.ToString() + "}.", "o")
-	    list.Levels(levelIndex).Indent = 48 + (levelIndex * 24)
-	Next
-```
+<snippet id='radrichtextbox-features-styles-list-styles-block_7-cs' />
+<snippet id='radrichtextbox-features-styles-list-styles-block_8-vb' />
 
 
 >Note: It is mandatory the level text to be in the format “{levelIndex}”, where levelIndex is the list level index. Otherwise, the level text may not be shown correctly.
@@ -174,25 +134,15 @@ Here is how to add simple list to the document:
 
 
 
-```C#
-	DocumentList documentList = new DocumentList(list, document);
-```
-```VB.NET
-	Dim documentList = New DocumentList(list, document)
-```
+<snippet id='radrichtextbox-features-styles-list-styles-block_9-cs' />
+<snippet id='radrichtextbox-features-styles-list-styles-block_10-vb' />
 
 And how to add custom list:
 
 
 
-```C#
-	ListStyle newList = document.AddCustomListStyle(list);
-	DocumentList documentList = new DocumentList(newList, document);
-```
-```VB.NET
-    Dim newList = document.AddCustomListStyle(list)
-    Dim documentList = New DocumentList(newList, document)
-```
+<snippet id='radrichtextbox-features-styles-list-styles-block_11-cs' />
+<snippet id='radrichtextbox-features-styles-list-styles-block_12-vb' />
 
 ## Apply List
 
@@ -202,47 +152,15 @@ Approach 1: Apply the required paragraph properties on your own.
 
 
 
-```C#
-    for (int levelIndex = 0; levelIndex < list.Levels.Count; levelIndex++)
-    {
-        Paragraph paragraph = new Paragraph();
-        document.Sections.First.Blocks.Add(paragraph);
-        paragraph.Inlines.Add(new Span(string.Format("ListLevel: {0}", levelIndex + 1)));
-        paragraph.ListId = documentList.ID;
-        paragraph.ListLevel = levelIndex;
-    }
-```
-```VB.NET
-	For levelIndex As Integer = 0 To (list.Levels.Count - 1)
-	    Dim paragraph = New Paragraph()
-	    section.Blocks.Add(paragraph)
-	    paragraph.Inlines.Add(New Span(String.Format("ListLevel: {0}", levelIndex + 1)))
-	    paragraph.ListId = documentList.ID
-	    paragraph.ListLevel = levelIndex
-	Next
-```
+<snippet id='radrichtextbox-features-styles-list-styles-block_13-cs' />
+<snippet id='radrichtextbox-features-styles-list-styles-block_14-vb' />
 
 Approach 2: Pass the level Index and the paragraph to the DocumentList.AddParagraph method. By doing that the document list will automatically apply the required properties over the paragraph.
 
 
 
-```C#
-	for (int levelIndex = 0; levelIndex < list.Levels.Count; levelIndex++)
-	{
-	    Paragraph paragraph = new Paragraph();
-	    document.Sections.First.Blocks.Add(paragraph);
-	    paragraph.Inlines.Add(new Span(string.Format("ListLevel: {0}", levelIndex + 1)));
-	    documentList.AddParagraph(paragraph, levelIndex);
-	}
-```
-```VB.NET
-	For levelIndex As Integer = 0 To list.Levels.Count
-	    Dim paragraph = New Paragraph()
-	    section.Blocks.Add(paragraph)
-	    paragraph.Inlines.Add(New Span(String.Format("ListLevel: {0}", levelIndex + 1)))
-	    documentList.AddParagraph(paragraph, levelIndex)
-	Next
-```
+<snippet id='radrichtextbox-features-styles-list-styles-block_15-cs' />
+<snippet id='radrichtextbox-features-styles-list-styles-block_16-vb' />
 
 Figure 1: The result of the created list.
 ![{{ site.framework_name }} RadRichTextBox The result of the created list.](images/RadRichTextBox_lists_example_01.png)

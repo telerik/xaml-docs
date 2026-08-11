@@ -30,60 +30,15 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 
 {% if site.site_name == 'WPF' %}
 
-```XAML
+<snippet id='raddataservicedatasource-getting-started-creating-the-data-bound-controls-block_1-xaml' />
 
-	<Window x:Class="NorthwindExplorer.MainWindow"
-	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	        xmlns:local="clr-namespace:NorthwindExplorer"
-	        Title="MainWindow" Height="350" Width="525">
-	    <Grid>
-	       <Grid.RowDefinitions>
-	          <RowDefinition Height="*"/>
-	          <RowDefinition Height="Auto"/>
-	       </Grid.RowDefinitions>
-	       <telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
-	          <telerik:RadDataServiceDataSource.DataServiceContext>
-	             <local:MyNorthwindContext/>
-	          </telerik:RadDataServiceDataSource.DataServiceContext>
-	       </telerik:RadDataServiceDataSource>
-	       <telerik:RadGridView Grid.Row="0" ItemsSource="{Binding DataView, ElementName=customersDataSource}" IsBusy="{Binding IsBusy, ElementName=customersDataSource}" ShowGroupPanel="False"/>
-	       <telerik:RadDataPager Grid.Row="1" Source="{Binding DataView, ElementName=customersDataSource}" PageSize="10"/>
-	    </Grid>
-	</Window>
-```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 
 
-```XAML
+<snippet id='raddataservicedatasource-getting-started-creating-the-data-bound-controls-block_2-xaml' />
 
-	<UserControl x:Class="NorthwindExplorer.MainPage"
-	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	    xmlns:local="clr-namespace:NorthwindExplorer"
-	    mc:Ignorable="d"
-	    d:DesignHeight="300" d:DesignWidth="400">
-	    <Grid x:Name="LayoutRoot" Background="White">
-	       <Grid.RowDefinitions>
-	          <RowDefinition Height="*"/>
-	          <RowDefinition Height="Auto"/>
-	       </Grid.RowDefinitions>
-	       <telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
-	          <telerik:RadDataServiceDataSource.DataServiceContext>
-	             <local:MyNorthwindContext/>
-	          </telerik:RadDataServiceDataSource.DataServiceContext>
-	      </telerik:RadDataServiceDataSource>
-	      <telerik:RadGridView Grid.Row="0" ItemsSource="{Binding DataView, ElementName=customersDataSource}" IsBusy="{Binding IsBusy, ElementName=customersDataSource}" ShowGroupPanel="False"/>
-	      <telerik:RadDataPager Grid.Row="1" Source="{Binding DataView, ElementName=customersDataSource}" PageSize="10"/>
-	    </Grid>
-	</UserControl>
-```
 {% endif %}
 
 

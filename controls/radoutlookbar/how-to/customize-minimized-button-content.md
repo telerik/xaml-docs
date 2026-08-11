@@ -17,32 +17,14 @@ __RadOutlookBar__ exposes two properties that can be used to customize its __Min
 The first property is __MinimizedButtonContent__ - defines the Content of the button.
 
 
-```XAML
-	<telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button"/>
-```
+<snippet id='radoutlookbar-how-to-customize-minimized-button-content-block_1-xaml' />
 
 >When this property is not set the default value of the button is set to “Folders”.
 
 The second property is __MinimizedButtonContentTemplate__ - defines the __ContentTemplate__ of the button. You can use it to change the default appearance of the minimized button.        
 
 
-```XAML
-	<telerik:RadOutlookBar MinimizedButtonContent="My OutlookBar Custom Button" IsMinimized="True">
-	    <telerik:RadOutlookBar.MinimizedButtonContentTemplate>
-	        <DataTemplate>
-	            <StackPanel Orientation="Horizontal">
-	                <Polygon Points="8,0 0,5, 8,10" Fill="OrangeRed" Margin="0 0 5 0 " VerticalAlignment="Center" />
-	                <TextBlock Text="{Binding}" FontWeight="Bold" Foreground="OrangeRed" />
-	                <Polygon Points="0,0 8,5, 0,10" Fill="OrangeRed" Margin="5 0 0 0 " VerticalAlignment="Center" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </telerik:RadOutlookBar.MinimizedButtonContentTemplate>
-	
-	    <telerik:RadOutlookBarItem Header="Contacts" Icon="contacts.png" />
-	    <telerik:RadOutlookBarItem Header="Folders" Icon="folders.png" />
-	    <telerik:RadOutlookBarItem Header="Mail" Icon="mail.png" />
-	</telerik:RadOutlookBar>
-```
+<snippet id='radoutlookbar-how-to-customize-minimized-button-content-block_2-xaml' />
 
 You can see the end result on the picture below
 

@@ -29,9 +29,8 @@ The default value for the __StartTime__ property is equal to 12:00AM and the val
 Here is demonstrated how to change these properties in XAML:
 
   
-```XAML
-	<telerik:RadDateTimePicker StartTime="12:00" EndTime="18:00" TimeInterval="0:30"/>
-```
+<snippet id='raddatetimepicker-features-clock-items-block_1-xaml' />
+
 
 >The __TimeInterval__ property is also of type __TimeSpan__. In this example you set its value to 30 minutes, this is why you need to set the __TimeInterval__ to 0:30, meaning 0 hours and 30 minutes. You can also achieve the same result in code-behind.
          
@@ -44,42 +43,10 @@ If you want to completely change the set of clock items you can use the __ClockI
 For the purpose of the next example the __ClockItemsSource__ property is set in the code behind. However, you can also set it through binding.
 
   
-```C#
-	public ClockItemsSample()
-	{
-	    InitializeComponent();
-	    this.radDateTimePicker.ClockItemsSource = this.LoadDataObjects();
-	}
-	
-	public ObservableCollection<TimeSpan> LoadDataObjects()
-	{
-	    ObservableCollection<TimeSpan> times = new ObservableCollection<TimeSpan>()
-	    {
-	        new TimeSpan(9,0,0),
-	        new TimeSpan(10,0,0),
-	        new TimeSpan(10,5,0),
-	        new TimeSpan(10,22,0),
-	        new TimeSpan(13,15,0)
-	    };
-	    return times;
-	}
-```
-```VB.NET
-	Public Sub New()
-	    InitializeComponent()
-	    Me.radDateTimePicker.ClockItemsSource = Me.LoadDataObjects()
-	End Sub
-	Public Function LoadDataObjects() As ObservableCollection(Of TimeSpan)
-	    Dim times As New ObservableCollection(Of TimeSpan)() From {
-	      New TimeSpan(9, 0, 0),
-	      New TimeSpan(10, 0, 0),
-	      New TimeSpan(10, 5, 0),
-	      New TimeSpan(10, 22, 0),
-	      New TimeSpan(13, 15, 0)
-	     }
-	    Return times
-	End Function
-```
+<snippet id='raddatetimepicker-features-clock-items-block_2-cs' />
+
+<snippet id='raddatetimepicker-features-clock-items-block_2-vb' />
+
 
 ![{{ site.framework_name }} RadDateTimePicker with Custom ClockItemsSource](images/dateTimePicker_features_clock_items_020.png)
 

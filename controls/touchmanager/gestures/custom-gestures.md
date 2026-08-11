@@ -26,49 +26,8 @@ The __GestureRecognizerBase__ class exposes methods for the basic event handlers
 * __OnTouchLeave__: This method will be called when a TouchLeave event for the element is fired.
 
 __Example 1: Sample gesture recognizer__
-```C#
-	public class MyGestureRecognizer : GestureRecognizerBase
-    {
-		public override void OnTouchEnter(GestureRecognizerEventArgs args)
-        {
-        }
-		
-        public override void OnTouchDown(GestureRecognizerEventArgs args)
-        {   
-        }       
-
-		public override void OnTouchMove(GestureRecognizerEventArgs args)
-        {
-        }
-		
-		public override void OnTouchUp(GestureRecognizerEventArgs args)
-        {
-        }
-		
-        public override void OnTouchLeave(GestureRecognizerEventArgs args)
-        {
-        }
-    }
-```
-```VB.NET
-	Public Class MyGestureRecognizer
-		Inherits GestureRecognizerBase
-		Public Overrides Sub OnTouchEnter(args As GestureRecognizerEventArgs)
-		End Sub
-		
-		Public Overrides Sub OnTouchDown(args As GestureRecognizerEventArgs)
-		End Sub	
-
-		Public Overrides Sub OnTouchMove(args As GestureRecognizerEventArgs)
-		End Sub
-
-		Public Overrides Sub OnTouchUp(args As GestureRecognizerEventArgs)
-		End Sub
-		
-		Public Overrides Sub OnTouchLeave(args As GestureRecognizerEventArgs)
-		End Sub		
-	End Class
-```
+<snippet id='touchmanager-gestures-custom-gestures-block_1-cs' />
+<snippet id='touchmanager-gestures-custom-gestures-block_2-vb' />
 
 ## Gesture recognizer factory
 
@@ -78,44 +37,8 @@ The recognizer factory creates recognizers for the UI elements. In order to regi
 * __RegisterGestureTransitions__: A method that can be used to register the allowed gesture transitions.
 
 __Example 2: Sample gesture recognizer factory__
-```C#
-	public class MyGestureRecognizerFactory : IGestureRecognizerFactory
-    {
-        public GestureRecognizerBase CreateGestureRecognizer(System.Windows.UIElement element)
-        {
-            return new MyGestureRecognizer(element);
-        }
-
-        public int Priority
-        {
-            get
-            {
-                return 0;
-            }
-        }
-
-        public void RegisterGestureTransitions()
-        {
-        }
-    }
-```
-```VB.NET
-	Public Class MyGestureRecognizerFactory
-		Implements IGestureRecognizerFactory
-		Public Function CreateGestureRecognizer(element As System.Windows.UIElement) As GestureRecognizerBase
-			Return New MyGestureRecognizer(element)
-		End Function
-
-		Public ReadOnly Property Priority() As Integer
-			Get
-				Return 0
-			End Get
-		End Property
-
-		Public Sub RegisterGestureTransitions()
-		End Sub
-	End Class	
-```
+<snippet id='touchmanager-gestures-custom-gestures-block_3-cs' />
+<snippet id='touchmanager-gestures-custom-gestures-block_4-vb' />
 	
 > You can see how to implement a gesture in the [Creating Custom Gesture]() help article.
 

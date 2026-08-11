@@ -17,17 +17,8 @@ To set up the indicator you can set its __CategoryBinding, ValueBinding and Item
 To display the signal period you will need to set the __SignalStroke__ property.
 
 __Example 1: Defining MacdhIndicator__
-```XAML
-	 <telerik:RadCartesianChart.Indicators>
-		<telerik:MacdIndicator ShortPeriod="9" 
-							   LongPeriod="12"
-							   SignalPeriod="6"                                        
-							   CategoryBinding="Date"                                             
-							   ValueBinding="Close"
-							   SignalStroke="Black"
-							   ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-macdindicator-example_1_defining_macdhindicator-xaml' />
+
 
 #### Figure 1: MacdIndicator
 <img src="images/radchartview-indicators-macdindicator-0.png" style="width: 80%;">

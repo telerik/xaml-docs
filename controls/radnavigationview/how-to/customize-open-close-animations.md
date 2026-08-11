@@ -21,54 +21,14 @@ By default __RadNavigationView__ defines three animations named __ResizePaneAnim
 * __MinimalPaneCloseAnimation__: Played when the [DisplayMode]({%slug radnavigationview-display-mode%}) of the RadNavigationView is __Minimal__ and the NavigationPane is opened.
 
 __Example 1: RadNavigationView Animations Default Values__
-```XAML
-    <animation:ResizeAnimation AnimationName="ResizePaneAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" ResizeMode="Horizontal">
-        <animation:ResizeAnimation.Easing>
-            <ExponentialEase EasingMode="EaseOut" />
-        </animation:ResizeAnimation.Easing>
-    </animation:ResizeAnimation>
-    <animation:SlideAnimation AnimationName="MinimalPaneOpenAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="In" />
-    <animation:SlideAnimation AnimationName="MinimalPaneCloseAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="Out"/>
-```
+<snippet id='radnavigationview-how-to-customize-open-close-animations-block_1-xaml' />
 
 ## Customizing Animations
 
 In order to customize the animations supported by RadNavigationView, you can [extract its style]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) and modify it. This way you can customize the duration of the animations, change their easing function or replace the animation with a different one. __Example 2__ demonstrates how you can change the duration of the __ResizePaneAnimation__ from 0.2 seconds to 3 seconds.
 
 __Example 2: Changing the duration of the ResizePaneAnimation__
-```XAML
-    <Window.Resources>
-        <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so:
-        <Style TargetType="telerik:RadNavigationView" BasedOn="{StaticResource RadNavigationViewStyle}">-->
-
-        <Style TargetType="telerik:RadNavigationView">
-            <Setter Property="animation:AnimationManager.AnimationSelector">
-                <Setter.Value>
-                    <animation:AnimationSelector>
-                        <animation:ResizeAnimation AnimationName="ResizePaneAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:3" ResizeMode="Horizontal">
-                            <animation:ResizeAnimation.Easing>
-                                <ExponentialEase EasingMode="EaseOut" />
-                            </animation:ResizeAnimation.Easing>
-                        </animation:ResizeAnimation>
-                        <animation:SlideAnimation AnimationName="MinimalPaneOpenAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="In" />
-                        <animation:SlideAnimation AnimationName="MinimalPaneCloseAnimation" TargetElementName="PART_PaneRoot" Duration="0:0:0.2" PixelsToAnimate="250" Orientation="Horizontal" Direction="Out"/>
-                    </animation:AnimationSelector>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
-    <Grid>
-        <telerik:RadNavigationView PaneHeader="My Header">
-            <telerik:RadNavigationView.Items>
-                <telerik:RadNavigationViewItem Content="Bookmarks">
-                    <telerik:RadNavigationViewItem.Icon>
-                        <telerik:RadGlyph Glyph="&#xe303;" FontSize="16"/>
-                    </telerik:RadNavigationViewItem.Icon>
-                </telerik:RadNavigationViewItem>
-            </telerik:RadNavigationView.Items>
-        </telerik:RadNavigationView>
-    </Grid>
-```
+<snippet id='radnavigationview-how-to-customize-open-close-animations-block_2-xaml' />
 
 #### __Figure 1: Result from Example 2 in the Office2016 theme__
 ![NavigationPane slow animation](images/RadNavigationView_ResizeAnimation_Duration.gif)

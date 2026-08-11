@@ -19,9 +19,7 @@ By default users are able turn to a page by clicking *once* on any of the page c
 * __DoubleClick__ - the page flip will happen on double click.
 
 __Example 1: Setting the PageFlipMode property__  
-```XAML
-	<telerik:RadBook Margin="50" x:Name="RadBook1" PageFlipMode="DoubleClick" />
-```
+<snippet id='radbook-features-page-flip-mode-block_1-xaml' />
 
 ## See Also
  * [Events]({%slug radbook-events%})

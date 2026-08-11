@@ -23,13 +23,8 @@ This series expose the __DefaultSliceStyle__ property. It is of type __Style__ a
 
 
 
-```XAML
-    <telerik:PieSeries.DefaultSliceStyle>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="YellowGreen"/>
-      </Style>
-    </telerik:PieSeries.DefaultSliceStyle>
-```
+<snippet id='radchartview-styles-and-templates-customizing-piechart-series-block_1-xaml' />
+
 
 ![radchartview-styles-and-templates-Pie Series-defaultvisualstyle](images/radchartview-styles-and-templates-PieSeries-defaultvisualstyle.png)
 
@@ -39,22 +34,8 @@ This series also expose the __SliceStyles__ property. It is of type __Observable
             
 
 
-```XAML	
-    <telerik:PieSeries.SliceStyles>
-        <Style TargetType="Path">
-          <Setter Property="Fill" Value="YellowGreen"/>
-        </Style>
-        <Style TargetType="Path">
-          <Setter Property="Fill" Value="Red"/>
-        </Style>
-        <Style TargetType="Path">
-          <Setter Property="Fill" Value="Yellow"/>
-        </Style>
-        <Style TargetType="Path">
-          <Setter Property="Fill" Value="Green"/>
-        </Style>
-    </telerik:PieSeries.SliceStyles>
-```
+<snippet id='radchartview-styles-and-templates-customizing-piechart-series-block_2-xaml' />
+
 
 ![radchartview-styles-and-templates-Pie Series-Slice Styles](images/radchartview-styles-and-templates-PieSeries-SliceStyles.png)
 
@@ -66,13 +47,8 @@ This series expose the __DefaultSliceStyle__ property. It is of type __Style__ a
             
 
 
-```XAML
-    <telerik:DoughnutSeries.DefaultSliceStyle>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="YellowGreen"/>
-      </Style>
-    </telerik:DoughnutSeries.DefaultSliceStyle>
-```
+<snippet id='radchartview-styles-and-templates-customizing-piechart-series-block_3-xaml' />
+
 
 ![radchartview-styles-and-templates-Doughnut Series-defaultvisualstyle](images/radchartview-styles-and-templates-DoughnutSeries-defaultvisualstyle.png)
 
@@ -82,22 +58,8 @@ This series also expose the __SliceStyles__ property. It is of type __Observable
             
 
 
-```XAML
-    <telerik:DoughnutSeries.SliceStyles>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="YellowGreen"/>
-      </Style>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="Red"/>
-      </Style>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="Yellow"/>
-      </Style>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="Green"/>
-      </Style>
-    </telerik:DoughnutSeries.SliceStyles>
-```
+<snippet id='radchartview-styles-and-templates-customizing-piechart-series-block_4-xaml' />
+
 
 ![radchartview-styles-and-templates-Doughnut Series-Slice Styles](images/radchartview-styles-and-templates-DoughnutSeries-SliceStyles.png)
 

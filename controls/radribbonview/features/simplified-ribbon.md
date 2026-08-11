@@ -17,40 +17,7 @@ Since the __R2 2019__ version, you have the option of changing the default layou
 Before switching the layout, you have to define what will be shown in the simplified state of the RadRibboonView. This is done through the new __SimplifiedItems__ property of the [RadRibbonTab]({%slug radribbonview-ribbon-tab%}). You can also set the __SimplifiedContentHeight__ property in order to control the Height while the layout is simplified.
 
 __Example 1: Setting the SimplifiedItems property__
-```XAML
-    <telerik:RadRibbonView x:Name="ribbonView" ApplicationName="Example" Title="RibbonView" ShowLayoutModeButton="True" SimplifiedContentHeight="40">
-        <telerik:RadRibbonView.Resources>
-            <DataTemplate x:Key="IconTemplate">
-                <Image Stretch="Fill" Width="16" Height="16" Source="{Binding}" />
-            </DataTemplate>
-        </telerik:RadRibbonView.Resources>
-        
-        <telerik:RadRibbonTab Header="Home">
-            <telerik:RadRibbonTab.SimplifiedItems>
-                <telerik:RadRibbonGroup Header="Clipboard">
-                    <telerik:RadRibbonSplitButton SmallImage="{telerik:RadGlyph Glyph=&#xe65d;}"
-                        Size="Small">
-                        <telerik:RadRibbonSplitButton.DropDownContent>
-                            <telerik:RadContextMenu>
-                                <telerik:RadMenuItem Header="Cut"  Icon="{telerik:RadGlyph Type=Image, Glyph=&#xe65e;}" IconTemplate="{StaticResource IconTemplate}" />
-                                <telerik:RadMenuItem Header="Copy"   Icon="{telerik:RadGlyph Type=Image, Glyph=&#xe65d;}" IconTemplate="{StaticResource IconTemplate}" />
-                                <telerik:RadMenuItem Header="Paste"  Icon="{telerik:RadGlyph Type=Image, Glyph=&#xe65f;}" IconTemplate="{StaticResource IconTemplate}" />
-                            </telerik:RadContextMenu>
-                        </telerik:RadRibbonSplitButton.DropDownContent>
-                    </telerik:RadRibbonSplitButton>
-                </telerik:RadRibbonGroup>
-            </telerik:RadRibbonTab.SimplifiedItems>
-
-            <telerik:RadRibbonGroup Header="Clipboard">
-                <telerik:RadCollapsiblePanel>
-                    <telerik:RadRibbonButton Text="Cut" SmallImage="{telerik:RadGlyph Glyph=&#xe65e;}" />
-                    <telerik:RadRibbonButton Text="Copy" SmallImage="{telerik:RadGlyph Glyph=&#xe65d;}" />
-                    <telerik:RadRibbonButton Text="Paste" SmallImage="{telerik:RadGlyph Glyph=&#xe65f;}" />
-                </telerik:RadCollapsiblePanel>
-            </telerik:RadRibbonGroup>
-        </telerik:RadRibbonTab>
-    </telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-simplified-ribbon-block_1-xaml' />
 
 #### __Figure 1: Changing RadRibbonView layout in the Office2016 theme__
 ![Changing RadRibbonView layout in the Office2016 theme](images/RibbonView_LayoutMode_Change.gif)
@@ -70,9 +37,7 @@ In order to change the default layout mode, there are two options. Switch the la
 * __Switch the layout through the UI__: By default the button that switches between the default and the simplified layout is not visible. You can set the __ShowLayoutModeButton__ property to __True__ in order to show it. You can also set the __LayoutModeButtonContent__ property in order to change the Content of the switch button.
 
     __Example 2: Showing the LayoutMode button and changing its Content__
-    ```XAML
-        <telerik:RadRibbonView x:Name="ribbonView" ApplicationName="Example"  Title="RibbonView" ShowLayoutModeButton="True" LayoutModeButtonContent="Simplify" />
-    ```
+    <snippet id='radribbonview-features-simplified-ribbon-block_2-xaml' />
 
     #### __Figure 2: LayoutMode button in the Office2016 theme__
     ![LayoutMode button in the Office2016 theme](images/RibbonView_LayoutModeButtonContent.png)
@@ -80,20 +45,8 @@ In order to change the default layout mode, there are two options. Switch the la
 * __Switch the layout programmatically__: In order to change the layout in code, you can set the __LayoutMode__ property to __Simplified__ or execute the __ToggleLayoutModeCommand__ command.
 
     __Example 2: Switching the layout in code__
-    ```C#
-        this.ribbonView.LayoutMode = RibbonLayout.Simplified;
-                
-        // or
-
-        RibbonCommands.ToggleLayoutModeCommand.Execute(null, this.ribbonView);
-    ```
-	```VB.NET
-        Me.ribbonView.LayoutMode = RibbonLayout.Simplified
-
-        'or
-
-        RibbonCommands.ToggleLayoutModeCommand.Execute(Nothing, Me.ribbonView)
-    ```
+    <snippet id='radribbonview-features-simplified-ribbon-block_3-cs' />
+	<snippet id='radribbonview-features-simplified-ribbon-block_4-vb' />
 
 ## Simplifying the Layout
 

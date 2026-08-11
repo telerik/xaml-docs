@@ -20,94 +20,8 @@ Create a new application and add the following declaration.
                 
 
 
-```XAML
-	<Grid>
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto"/>
-	        <RowDefinition Height="*"/>
-	    </Grid.RowDefinitions>
-	    <StackPanel>
-	        <Button Content="Save layout to XElement" 
-	Click="OnSaveLayoutButtonClick"/>
-	        <Button Content="Load layout from XElement" 
-	Click="OnLoadLayoutButtonClick"
-	x:Name="LoadLayoutFromXElementButton"/>
-	    </StackPanel>
-	    <telerik:RadDocking x:Name="radDocking"
-	Grid.Row="1">
-	        <telerik:RadDocking.DocumentHost>
-	
-	            <telerik:RadSplitContainer>
-	                <telerik:RadPaneGroup x:Name="DocumentGroup">
-	                    <telerik:RadPane x:Name="LayoutXml" Header="Layout Xml"
-	                telerik:RadDocking.SerializationTag="LayoutXml"
-	                telerik:RadDocking.FloatingSize="450, 400">
-	                        <TextBox TextWrapping="Wrap" x:Name="XmlTextBox"
-	            VerticalScrollBarVisibility="Auto"
-	            Text="{Binding Xml, Mode=TwoWay}" />
-	                    </telerik:RadPane>
-	                    <telerik:RadDocumentPane Header="Document 1" Title="Document 1"
-	                        telerik:RadDocking.SerializationTag="DocumentPane">
-	                        <TextBox x:Name="DocumentTextBox" Text="Some text" />
-	                    </telerik:RadDocumentPane>
-	                </telerik:RadPaneGroup>
-	            </telerik:RadSplitContainer>
-	
-	        </telerik:RadDocking.DocumentHost>
-	
-	        <telerik:RadSplitContainer InitialPosition="DockedLeft">
-	            <telerik:RadPaneGroup>
-	                <telerik:RadPane Header="Pane Left 1"
-	            telerik:RadDocking.SerializationTag="PaneLeft1">
-	                    <TextBox x:Name="TextBox" Text="Some other text" />
-	                </telerik:RadPane>
-	                <telerik:RadPane Header="Pane Left 2"
-	            telerik:RadDocking.SerializationTag="PaneLeft2">
-	                    <TextBox Text="Pane Left 2" />
-	                </telerik:RadPane>
-	                <telerik:RadPane Header="Pane Left 3"
-	            telerik:RadDocking.SerializationTag="PaneLeft3">
-	                    <TextBox Text="Pane Left 3" />
-	                </telerik:RadPane>
-	                <telerik:RadPane Header="Pane Left 4"
-	            telerik:RadDocking.SerializationTag="PaneLeft4">
-	                    <TextBox Text="Pane Left 4" />
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	
-	        <telerik:RadSplitContainer InitialPosition="DockedRight">
-	            <telerik:RadPaneGroup>
-	                <telerik:RadPane Header="Pane Right 1"
-	            telerik:RadDocking.SerializationTag="PaneRight1">
-	                    <telerik:RadTreeView>
-	                        <telerik:RadTreeViewItem Header="RootItem">
-	                            <telerik:RadTreeViewItem Header="Item1" />
-	                            <telerik:RadTreeViewItem Header="Item2">
-	                                <telerik:RadTreeViewItem Header="Item21" />
-	                                <telerik:RadTreeViewItem Header="Item22" />
-	                                <telerik:RadTreeViewItem Header="Item23">
-	                                    <telerik:RadTreeViewItem Header="Item231" />
-	                                </telerik:RadTreeViewItem>
-	                            </telerik:RadTreeViewItem>
-	                            <telerik:RadTreeViewItem Header="Item3" />
-	                        </telerik:RadTreeViewItem>
-	                    </telerik:RadTreeView>
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	
-	        <telerik:RadSplitContainer InitialPosition="DockedTop">
-	            <telerik:RadPaneGroup>
-	                <telerik:RadPane Header="Pane Top 1"
-	            telerik:RadDocking.SerializationTag="PaneTop1">
-	                    <TextBox Text="Pane Top 1" />
-	                </telerik:RadPane>
-	            </telerik:RadPaneGroup>
-	        </telerik:RadSplitContainer>
-	    </telerik:RadDocking>
-	</Grid>
-```
+<snippet id='raddocking-features-save-load-layout-save-load-layout-linq-to-xml-block_1-xaml' />
+
 
 ## Save layout’s XML to XElement
 
@@ -123,23 +37,8 @@ Example 1 shows how you can convert the generated XML from the SaveLayout functi
 
 
 
-```C#
-	private XElement dockingLayout;
-	
-	private void OnSaveLayoutButtonClick(object sender, RoutedEventArgs e)
-	{
-	    this.dockingLayout = this.GetXLayoutAsElement();
-	}
-	
-	private XElement GetXLayoutAsElement()
-	{
-	    var destinationStream = new MemoryStream();
-	    this.radDocking.SaveLayout(destinationStream);
-	    destinationStream.Seek(0, SeekOrigin.Begin);
-	
-	    return XElement.Load(destinationStream);
-	}
-```
+<snippet id='raddocking-features-save-load-layout-save-load-layout-linq-to-xml-block_2-cs' />
+
 
 ## Load layout’s from XElement
 
@@ -156,12 +55,5 @@ Example 2 shows how to load a RadDocking control's layout stored as valid XEleme
 
 
 
-```C#
-	private void OnLoadLayoutButtonClick(object sender, RoutedEventArgs e)
-	{
-	    MemoryStream sourceAsStream = new MemoryStream();
-	    this.dockingLayout.Save(sourceAsStream);
-	    sourceAsStream.Seek(0, SeekOrigin.Begin);
-	    this.radDocking.LoadLayout(sourceAsStream);
-	}
-```
+<snippet id='raddocking-features-save-load-layout-save-load-layout-linq-to-xml-block_3-cs' />
+

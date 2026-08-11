@@ -27,16 +27,10 @@ When you add a new descriptor to the collection, RadGridView's data is automatic
 
 __Example 1: Initiate and configure group descriptors__
 
-```C#
-	GroupDescriptor descriptor = new GroupDescriptor();
-	descriptor.Member = "Country";
-	descriptor.SortDirection = ListSortDirection.Ascending;
-```
-```VB.NET
-	Dim descriptor As New GroupDescriptor()
-	descriptor.Member = "Country"
-	descriptor.SortDirection = ListSortDirection.Ascending
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_1_initiate_and_configure_group_descriptors-cs' />
+
+<snippet id='radgridview-grouping-programmatic-grouping-example_1_initiate_and_configure_group_descriptors-vb' />
+
 
 The __Member__ property defines the property, by which the data will be grouped, and the __SortDirection__ property allows you to define the direction in which the groups will be sorted.
 
@@ -44,34 +38,22 @@ The __Member__ property defines the property, by which the data will be grouped,
 
 __Example 2: Define group descriptors in XAML__
 
-```XAML
-	<telerik:GroupDescriptor Member="Country"
-	             SortDirection="Ascending" />
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_2_define_group_descriptors_in_xaml-xaml' />
+
 
 To use the created descriptor to group the data in the __RadGridView__ you have to add it to the __GroupDescriptors__ collection.
 
 __Example 3: Add descriptor to GroupDescriptors collection__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 AutoGenerateColumns="False">
-	    <telerik:RadGridView.GroupDescriptors>
-	        <telerik:GroupDescriptor Member="Country"
-	                             SortDirection="Ascending" />
-	    </telerik:RadGridView.GroupDescriptors>
-	    <!--...-->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_3_add_descriptor_to_groupdescriptors_collection-xaml' />
+
 
 __Example 3: Add descriptor to GroupDescriptors collection__
 
-```C#
-	this.radGridView.GroupDescriptors.Add(descriptor);
-```
-```VB.NET
-	Me.radGridView.GroupDescriptors.Add(descriptor)
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_3_add_descriptor_to_groupdescriptors_collection-cs' />
+
+<snippet id='radgridview-grouping-programmatic-grouping-example_3_add_descriptor_to_groupdescriptors_collection-vb' />
+
 
 After the descriptor is defined, the data will be grouped by the __Country__ property and will look as if you have dragged and dropped the __Country__ column header into the grouping area.
 
@@ -79,26 +61,15 @@ Except __Member__ and __SortDirection__ properties, the __GroupDescriptor__ expo
 
 __Example 4: Set the DisplayContent property__
 
-```XAML
-	<telerik:GroupDescriptor Member="Country"
-	             SortDirection="Ascending"
-	             DisplayContent="Country Group" />
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_4_set_the_displaycontent_property-xaml' />
+
 
 __Example 4: Set the DisplayContent property__
 
-```C#
-	GroupDescriptor descriptor2 = new GroupDescriptor();
-	descriptor2.Member = "Country";
-	descriptor2.SortDirection = ListSortDirection.Ascending;
-	descriptor2.DisplayContent = "Country Group";
-```
-```VB.NET
-	Dim descriptor2 As New GroupDescriptor()
-	descriptor2.Member = "Country"
-	descriptor2.SortDirection = ListSortDirection.Ascending
-	descriptor2.DisplayContent = "Country Group"
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_4_set_the_displaycontent_property-cs' />
+
+<snippet id='radgridview-grouping-programmatic-grouping-example_4_set_the_displaycontent_property-vb' />
+
 
 #### Figure 1: The box displayed in the group panel after the DisplayContent is set
 
@@ -124,26 +95,15 @@ As you see the last two properties are similar to the same properties of the Gro
 
 __Example 5: Add ColumnGroupDescriptor to RadGridView__
 
-```XAML
-	<telerik:ColumnGroupDescriptor Column="{Binding Columns[\Name\], ElementName=clubsGrid}"
-	             SortDirection="Descending"  />
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_5_add_columngroupdescriptor_to_radgridview-xaml' />
+
 
 __Example 5: Add ColumnGroupDescriptor to RadGridView__
 
-```C#
-	this.radGridView.GroupDescriptors.Add(new ColumnGroupDescriptor()
-	{
-	    Column = this.radGridView.Columns["Name"],
-	    SortDirection = ListSortDirection.Descending
-	});
-```
-```VB.NET
-	Me.radGridView.GroupDescriptors.Add(New ColumnGroupDescriptor() With {
-	 .Column = Me.radGridView.Columns("Name"),
-	 .SortDirection = ListSortDirection.Descending
-	})
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_5_add_columngroupdescriptor_to_radgridview-cs' />
+
+<snippet id='radgridview-grouping-programmatic-grouping-example_5_add_columngroupdescriptor_to_radgridview-vb' />
+
 
 ## Expanding and Collapsing a Group
 
@@ -151,14 +111,10 @@ The groups of the control can be programmatically expanded and collapsed through
 
 __Example 6: Call the ExpandGroup method of RadGridView__
 
-```C#
-	 var group = this.clubsGrid.Items.Groups[1] as IGroup;
-     this.clubsGrid.ExpandGroup(group);
-```
-```VB.NET
-    Dim group = TryCast(Me.clubsGrid.Items.Groups(1), IGroup)
-    Me.clubsGrid.ExpandGroup(group)
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_6_call_the_expandgroup_method_of_radgridview-cs' />
+
+<snippet id='radgridview-grouping-programmatic-grouping-example_6_call_the_expandgroup_method_of_radgridview-vb' />
+
 
 ## Check if a group is expanded
 
@@ -168,12 +124,10 @@ When checking whether a given group is expanded, the __IsExpanded__ method of __
 
 __Example 7: Call the IsExpanded method of RadGridView__
 
-```C#
-	bool isExpanded = this.clubsGrid.IsExpanded(this.clubsGrid.Items.Groups[1]);
-```
-```VB.NET
-	Dim isExpanded As Boolean = Me.clubsGrid.IsExpanded(Me.clubsGrid.Items.Groups(1))
-```
+<snippet id='radgridview-grouping-programmatic-grouping-example_7_call_the_isexpanded_method_of_radgridview-cs' />
+
+<snippet id='radgridview-grouping-programmatic-grouping-example_7_call_the_isexpanded_method_of_radgridview-vb' />
+
 
 ## See Also
 

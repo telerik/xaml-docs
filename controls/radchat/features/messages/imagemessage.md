@@ -17,12 +17,8 @@ The usage of the __ImageMessage__ is similar to the one of the [GifMessage]({%sl
 * __DateTime creationDate__
 
 __Example 1: Defining an ImageMessage__
-```C#
-	 ImageMessage imageMessage =
-                new ImageMessage(this.currentAuthor, new BitmapImage(new Uri("/Images/dog.jpeg", UriKind.RelativeOrAbsolute)));
+<snippet id='radchat-features-messages-imagemessage-example_1_defining_an_imagemessage-cs' />
 
-	this.chat.AddMessage(imageMessage);
-```
 
 #### __Figure 1: Defining ImageMessage__
 ![Defining ImageMessage](images/RadChat_Messages_Image_01.png)
@@ -30,15 +26,8 @@ __Example 1: Defining an ImageMessage__
 Furthermore, the __ImageMessage__ supports setting __Stretch__ and __Size__ for its image.
 
 __Example 2: Setting the Stretch and Size of the message__
-```C#
-	ImageMessage imageMessage =
-                new ImageMessage(this.currentAuthor, new BitmapImage(new Uri("/Images/dog.jpeg", UriKind.RelativeOrAbsolute)));
+<snippet id='radchat-features-messages-imagemessage-example_2_setting_the_stretch_and_size_of_the_message-cs' />
 
-            imageMessage.Stretch = Stretch.Fill;
-            imageMessage.Size = new Size(150, 90);
-
-	this.chat.AddMessage(imageMessage);
-```
 
 #### __Figure 2: Defining ImageMessage with Stretch and Size__
 ![Defining ImageMessage](images/RadChat_Messages_Image_02.png)

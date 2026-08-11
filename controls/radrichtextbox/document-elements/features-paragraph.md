@@ -28,80 +28,23 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 
 
 
-```XAML
-	<telerik:RadRichTextBox x:Name="radRichTextBox">
-	    <telerik:RadRichTextBox.Document>
-	        <telerik:RadDocument LayoutMode="Paged">
-	            <telerik:Section>
-	                <telerik:Paragraph />
-	                <telerik:Paragraph />
-	            </telerik:Section>
-	        </telerik:RadDocument>
-	    </telerik:RadRichTextBox.Document>
-	</telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-document-elements-features-paragraph-block_1-xaml' />
 
 
 
-```C#
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	section.Blocks.Add( paragraph );
-	RadDocument document = new RadDocument();
-	document.Sections.Add(section);
-	
-	this.radRichTextBox.Document = document;
-```
-```VB.NET
-	Dim section As New Section()
-	Dim paragraph As New Paragraph()
-	section.Blocks.Add(paragraph)
-	Dim document As New RadDocument()
-	document.Sections.Add(section)
-	
-	Me.radRichTextBox.Document = document
-```
+<snippet id='radrichtextbox-document-elements-features-paragraph-block_2-cs' />
+<snippet id='radrichtextbox-document-elements-features-paragraph-block_3-vb' />
 
 ## Add inline elements to a Paragraph
 
 To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage you have to use the Inlines collection of the Paragraph. In XAML you can directly wrap the inline elements inside the paragraph element.
 
 
-```XAML
-	<telerik:RadRichTextBox x:Name="radRichTextBox">
-	    <telerik:RadDocument>
-	        <telerik:Section>
-	            <telerik:Paragraph>
-	                <telerik:Span Text="Span declared in XAML" />
-	            </telerik:Paragraph>
-	        </telerik:Section>
-	    </telerik:RadDocument>
-	</telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-document-elements-features-paragraph-block_4-xaml' />
 
 
-```C#
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	Span span = new Span("Span declared in code-behind");
-	paragraph.Inlines.Add( span );
-	section.Blocks.Add( paragraph );
-	RadDocument document = new RadDocument();
-	document.Sections.Add(section);
-	
-	this.radRichTextBox.Document = document;
-```
-```VB.NET
-	Dim section As New Section()
-	Dim paragraph As New Paragraph()
-	Dim span As New Span("Span declared in code-behind")
-	paragraph.Inlines.Add(span)
-	section.Blocks.Add(paragraph)
-	Dim document As New RadDocument()
-	document.Sections.Add(section)
-	
-	Me.radRichTextBox.Document = document
-```
+<snippet id='radrichtextbox-document-elements-features-paragraph-block_5-cs' />
+<snippet id='radrichtextbox-document-elements-features-paragraph-block_6-vb' />
 
 ## Customize the Paragraph
 

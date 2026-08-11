@@ -39,40 +39,22 @@ __RadColorPicker__ is a control that displays  a set of palettes from which the 
 It has a __SelectedColor__ property, which is of __Color__ type and it is used to store selected color value.		
 
 __Example 1__
-```XAML
-	<telerik:RadColorPicker SelectedColor="Red" />
-```
+<snippet id='radcolorpicker-getting-started-example_1-xaml' />
+
 
 __Example 2__
-```C#
-	RadColorPicker colorPicker = new RadColorPicker();
-	colorPicker.SelectedColor = Colors.Red;
-```
-```VB.NET
-	Dim colorPicker As New RadColorPicker()
-	colorPicker.SelectedColor = Colors.Red
-```
+<snippet id='radcolorpicker-getting-started-example_2-cs' />
+
+<snippet id='radcolorpicker-getting-started-example_2-vb' />
+
     
 Whenever a color is selected the __SelectedColorChanged__ event is raised:		
 
 __Example 3__
-```C#
-	colorPicker.SelectedColorChanged += new EventHandler(RadColorPicker_SelectedColorChanged1);
-	
-	void RadColorPicker_SelectedColorChanged1(object sender, EventArgs e)
-	{
-	   RadColorPicker colorPicker = sender as RadColorPicker;
-	   Color selectedColor = colorPicker.SelectedColor;
-	}
-```
-```VB.NET
-	colorPicker.SelectedColorChanged += New EventHandler(RadColorPicker_SelectedColorChanged)
+<snippet id='radcolorpicker-getting-started-example_3-cs' />
 
-	Private Sub RadColorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-		Dim colorPicker As RadColorPicker = TryCast(sender, RadColorPicker)
-		Dim selectedColor As Color = colorPicker.SelectedColor
-	End Sub
-```
+<snippet id='radcolorpicker-getting-started-example_3-vb' />
+
 
 ## Populating
 
@@ -81,134 +63,76 @@ You can populate the __RadColorSelector__  with any of the built-in palettes usi
 * __MainPalette__ property:			
 
 	__Example 4__
-	```XAML
-		<telerik:RadColorPicker MainPalette="Grayscale" />
-	```
+	<snippet id='radcolorpicker-getting-started-example_4-xaml' />
+
 
 	__Example 4__
-	```C#
-		RadColorPicker colorPicker = new RadColorPicker();
-		colorPicker.MainPalette = ColorPreset.Grayscale;
-	```
-	```VB.NET
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.MainPalette = ColorPreset.Grayscale
-	```
+	<snippet id='radcolorpicker-getting-started-example_4-cs' />
+
+	<snippet id='radcolorpicker-getting-started-example_4-vb' />
+
 
 * __HeaderPalette__ property:
 
 	__Example 6__
-	```XAML
-		<telerik:RadColorPicker HeaderPalette="Office" />
-	```
+	<snippet id='radcolorpicker-getting-started-example_6-xaml' />
+
 
 	__Example 7__
-	```C#
-		RadColorPicker colorPicker = new RadColorPicker();
-		colorPicker.HeaderPalette = ColorPreset.Office;
-	```
-	```VB.NET
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPalette = ColorPreset.Office
-	```
+	<snippet id='radcolorpicker-getting-started-example_7-cs' />
+
+	<snippet id='radcolorpicker-getting-started-example_7-vb' />
+
 
 * __StandardPalette__ property:			
 
 	__Example 8__
-	```XAML
-		<telerik:RadColorPicker StandardPalette="Standard" />
-	```
+	<snippet id='radcolorpicker-getting-started-example_8-xaml' />
+
 
 	__Example 9__
-	```C#
-		RadColorPicker colorPicker = new RadColorPicker();
-		colorPicker.StandardPalette = ColorPreset.Standard;
-	```
-	```VB.NET
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPalette = ColorPreset.Standard
-	```
+	<snippet id='radcolorpicker-getting-started-example_9-cs' />
+
+	<snippet id='radcolorpicker-getting-started-example_9-vb' />
+
 
 If you prefer to use your own collection of Colors you can always use __HeaderPaletteItemsSource__, __MainPaletteItemsSource__ and __StandardPaletteItemsSource__.		
 
 * __StandardPaletteItemSource__ property			
 
 	__Example 10__
-	```XAML
-		<telerik:RadColorPicker StandardPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
-	```
+	<snippet id='radcolorpicker-getting-started-example_10-xaml' />
+
 
 	__Example 11__
-	```C#
-		RadColorPicker colorPicker = new RadColorPicker();
-		colorPicker.StandardPaletteVisibility = Visibility.Visible;
-		Collection<Color> colors = new Collection<Color>();
-		colors.Add(Colors.Red);
-		colors.Add(Colors.Green);
-		colors.Add(Colors.Blue);
-		colorPicker.StandardPaletteItemsSource = colors;
-	```
-	```VB.NET
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.StandardPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.StandardPaletteItemsSource = colors1
-	```
+	<snippet id='radcolorpicker-getting-started-example_11-cs' />
+
+	<snippet id='radcolorpicker-getting-started-example_11-vb' />
+
 
 * __HeaderPaletteItemSource__ property			
 
 	__Example 12__
-	```XAML
-		<telerik:RadColorPicker HeaderPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
-	```
+	<snippet id='radcolorpicker-getting-started-example_12-xaml' />
+
 
 	__Example 13__
-	```C#
-		RadColorPicker colorPicker = new RadColorPicker();
-		colorPicker.HeaderPaletteVisibility = Visibility.Visible;
-		Collection<Color> colors = new Collection<Color>();
-		colors.Add(Colors.Red);
-		colors.Add(Colors.Green);
-		colors.Add(Colors.Blue);
-		colorPicker.HeaderPaletteItemsSource = colors;
-	```
-	```VB.NET
-		Dim colorPicker As New RadColorPicker()
-		colorPicker.HeaderPaletteVisibility = Visibility.Visible
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.HeaderPaletteItemsSource = colors1
-	```
+	<snippet id='radcolorpicker-getting-started-example_13-cs' />
+
+	<snippet id='radcolorpicker-getting-started-example_13-vb' />
+
 
 * __MainPaletteItemSource__ property
 
 	__Example 14__
-	```XAML
-		<telerik:RadColorPicker MainPaletteItemsSource="{Binding Source={StaticResource ColorList}}" />
-	```
+	<snippet id='radcolorpicker-getting-started-example_14-xaml' />
+
 
 	__Example 15__
-	```C#
-		RadColorPicker colorPicker = new RadColorPicker();
-		Collection<Color> colors = new Collection<Color>();
-		colors.Add(Colors.Red);
-		colors.Add(Colors.Green);
-		colors.Add(Colors.Blue);
-		colorPicker.MainPaletteItemsSource = colors;
-	```
-	```VB.NET
-		Dim colorPicker As New RadColorPicker()
-		Dim colors1 As New Collection(Of Color)()
-		colors1.Add(Colors.Red)
-		colors1.Add(Colors.Green)
-		colors1.Add(Colors.Blue)
-		colorPicker.MainPaletteItemsSource = colors1
-	```
+	<snippet id='radcolorpicker-getting-started-example_15-cs' />
+
+	<snippet id='radcolorpicker-getting-started-example_15-vb' />
+
 
 ## Events
 

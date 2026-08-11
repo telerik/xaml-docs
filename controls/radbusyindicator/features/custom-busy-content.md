@@ -22,11 +22,7 @@ __BusyContent__ property sets the loading message while the indicator is active 
 
 __Setting BusyContent__
 
-```XAML
-	<telerik:RadBusyIndicator BusyContent="The report is currently loading..." >
-        <!-- the content here -->
-    </telerik:RadBusyIndicator>
-```
+<snippet id='radbusyindicator-features-custom-busy-content-setting_busycontent-xaml' />
 
 Here is the result:
 
@@ -42,20 +38,7 @@ To do this, first you have to define your __RadBusyIndicator__ control:
 
 __Defining RadBusyIndicator__
 
-```XAML
-	<telerik:RadBusyIndicator x:Name="radBusyIndicator"
-	                          Background="Transparent"
-	                          BusyContentTemplate="{StaticResource BusyContentDataTemplate}">
-	    <Grid>
-	         <TextBlock Text="Some Content"
-	                    TextAlignment="Center" />
-	         <Button Content="Show RadBusyIndicator"
-	                 VerticalAlignment="Bottom"
-	                 Click="showIndicatorButton_Click"
-	                 Width="150" />
-	    </Grid>
-	</telerik:RadBusyIndicator>
-```
+<snippet id='radbusyindicator-features-custom-busy-content-defining_radbusyindicator-xaml' />
 
 >Notice that the __RadBusyIndicator's Background__ property is set to __Transparent__. This will be the background applied to the indicator's content and the __Grid__ hosting the __RadBusyIndicator's__ progress bar and content elements.
 
@@ -63,19 +46,7 @@ In the __RadBusyIndicator's__ definition you have indicated the __BusyContentTem
 
 __Defining DataTemplate__
 
-```XAML
-	<DataTemplate x:Key="BusyContentDataTemplate">
-	    <StackPanel Orientation="Horizontal"
-	                DataContext="{Binding DataContext, ElementName=radBusyIndicator}">
-	        <TextBlock Text="Loading... "
-	                   FontWeight="Bold" />
-	        <TextBlock Text="{Binding ProgressValue}"
-	                   FontWeight="Bold" />
-	        <TextBlock Text="%"
-	                   FontWeight="Bold" />
-	    </StackPanel>
-	</DataTemplate>
-```
+<snippet id='radbusyindicator-features-custom-busy-content-defining_datatemplate-xaml' />
 
 In the code behind you have to:
 
@@ -101,96 +72,11 @@ In the code behind you have to:
 
 __BusyContentTemplateSample class implementation__
 
-```C#
-	public partial class BusyContentTemplateSample : UserControl, INotifyPropertyChanged
-	{
-	    private int progressValue;
-	    private DispatcherTimer progressTimer;
-	    public event PropertyChangedEventHandler PropertyChanged;
-	    public BusyContentTemplateSample()
-	    {
-	        InitializeComponent();
-	        this.DataContext = this;
-	
-	        this.progressTimer = new DispatcherTimer();
-	        this.progressTimer.Interval = TimeSpan.FromSeconds( 1 );
-	        this.progressTimer.Tick += new EventHandler( this.progressTimer_Tick );
-	    }
-	    public int ProgressValue
-	    {
-	        get
-	        {
-	            return this.progressValue;
-	        }
-	        set
-	        {
-	            if ( this.progressValue == value )
-	                return;
-	            this.progressValue = value;
-	            if ( this.PropertyChanged != null )
-	                this.PropertyChanged( this, new PropertyChangedEventArgs( "ProgressValue" ) );
-	        }
-	    }
-	    private void showIndicatorButton_Click( object sender, RoutedEventArgs e )
-	    {
-	        this.progressTimer.Start();
-	        this.ProgressValue = 100;
-	        this.radBusyIndicator.IsBusy = true;
-	    }
-	    private void progressTimer_Tick( object sender, EventArgs e )
-	    {
-	        this.ProgressValue--;
-	        if ( this.ProgressValue == 0 )
-	        {
-	            this.progressTimer.Stop();
-	            this.radBusyIndicator.IsBusy = false;
-	        }
-	    }
-	}
-```
+<snippet id='radbusyindicator-features-custom-busy-content-busycontenttemplatesample_class_implementation-cs' />
+
+<snippet id='radbusyindicator-features-custom-busy-content-busycontenttemplatesample_class_implementation-vb' />
 
 __BusyContentTemplateSample class implementation__
-
-```VB
-	Public Partial Class BusyContentTemplateSample
-	 Inherits UserControl
-	 Implements INotifyPropertyChanged
-	 Private m_progressValue As Integer
-	 Private progressTimer As DispatcherTimer
-	 Public Event PropertyChanged As PropertyChangedEventHandler
-	 Public Sub New()
-	  InitializeComponent()
-	  Me.DataContext = Me
-	  Me.progressTimer = New DispatcherTimer()
-	  Me.progressTimer.Interval = TimeSpan.FromSeconds(1)
-	  Me.progressTimer.Tick += New EventHandler(Me.progressTimer_Tick)
-	 End Sub
-	 Public Property ProgressValue() As Integer
-	  Get
-	   Return Me.m_progressValue
-	  End Get
-	  Set
-	   If Me.m_progressValue = value Then
-	    Return
-	   End If
-	   Me.m_progressValue = value
-	   RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("ProgressValue"))
-	  End Set
-	 End Property
-	 Private Sub showIndicatorButton_Click(sender As Object, e As RoutedEventArgs)
-	  Me.progressTimer.Start()
-	  Me.ProgressValue = 100
-	  Me.radBusyIndicator.IsBusy = True
-	 End Sub
-	 Private Sub progressTimer_Tick(sender As Object, e As EventArgs)
-	  Me.ProgressValue -= 1
-	  If Me.ProgressValue = 0 Then
-	   Me.progressTimer.[Stop]()
-	   Me.radBusyIndicator.IsBusy = False
-	  End If
-	 End Sub
-	End Class
-```
 
 Here is the final result:
 

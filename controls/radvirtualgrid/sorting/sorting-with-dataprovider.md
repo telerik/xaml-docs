@@ -23,9 +23,7 @@ The __ColumnSortDescriptor__ of a given column can be fetched through the __GetS
 
 __Example 1: Getting the ColumnSortDescriptor of a column__
 
-```C#
-	var sortDescriptor = this.VirtualGrid.GetSortDescriptorForColumn(0);
-```
+<snippet id='radvirtualgrid-sorting-sorting-with-dataprovider-block_1-cs' />
 
 Through the __ColumnSortDescriptor__, the sorting state can be set by manipulating its __SortDirection__ property.
 
@@ -33,10 +31,7 @@ Through the __ColumnSortDescriptor__, the sorting state can be set by manipulati
 
 __Example 2: Setting the SortDirection property__
 
-```C#
-	var sortDescriptor = this.VirtualGrid.GetSortDescriptorForColumn(0);
-	sortDescriptor.SortDirection = System.ComponentModel.ListSortDirection.Ascending;
-```
+<snippet id='radvirtualgrid-sorting-sorting-with-dataprovider-block_2-cs' />
 
 ## See Also
 

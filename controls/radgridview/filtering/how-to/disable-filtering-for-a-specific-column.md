@@ -14,28 +14,15 @@ You can disable the filtering for a specific column by setting its **IsFilterabl
 
 __Example 1: Disable the filtering of the Name column in XAML__
 
-```XAML
-    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" IsFilterable="False" />
-```
+<snippet id='radgridview-filtering-how-to-disable-filtering-for-a-specific-column-example_1_disable_the_filtering_of_the_name_column_in_xaml-xaml' />
+
 
 __Example 2: Disable the filtering of the Name column when generating it__
 
-```C#
-    private void Grid_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
-    {
-        if (e.ItemPropertyInfo.Name == "Name")
-        {
-            e.Column.IsFilterable = false;
-        }
-    }
-```
-```VB.NET
-    Private Sub Grid_AutoGeneratingColumn(ByVal sender As Object, ByVal e As GridViewAutoGeneratingColumnEventArgs)
-        If e.ItemPropertyInfo.Name = "Name" Then
-            e.Column.IsFilterable = False
-        End If
-    End Sub
-```
+<snippet id='radgridview-filtering-how-to-disable-filtering-for-a-specific-column-example_2_disable_the_filtering_of_the_name_column_when_generating_it-cs' />
+
+<snippet id='radgridview-filtering-how-to-disable-filtering-for-a-specific-column-example_2_disable_the_filtering_of_the_name_column_when_generating_it-vb' />
+
 
 #### Figure 1: The Name column with disabled filtering
 

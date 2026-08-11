@@ -40,9 +40,7 @@ You can add __RadPasswordBox__ manually by writing the XAML code in __Example 1_
 
 __Example 1: Adding RadPasswordBox in XAML__
 
-```XAML
-	<telerik:RadPasswordBox Width="150" />
-```
+<snippet id='radpasswordbox-getting-started-block_1-xaml' />
 
 >In order to use __RadPasswordBox__ in XAML you have to add the namespace declaration shown in __Example 2__:
 >__Example 2: Declaring Telerik Namespace__
@@ -61,9 +59,7 @@ When RadPasswordBox is empty and not focused, Watermark content can be shown. __
 
 __Example 2: Setting a watermark__
 
-```XAML
-	<telerik:RadPasswordBox Width="150" WatermarkContent="enter a password" />
-```
+<snippet id='radpasswordbox-getting-started-block_2-xaml' />
 
 __Figure 2__ shows the result.
 
@@ -78,37 +74,13 @@ First we will declare the RadPasswordBox in XAML and bind a RadButton's Command 
 
 __Example 3: Declare the RadPasswordBox in XAML__
 
-```XAML
-	<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
-		<telerik:RadPasswordBox x:Name="passwordBox" WatermarkContent="enter a password" Width="150" Margin="0 0 10 0" />
-		<telerik:RadButton Content="Log in" Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=passwordBox}"/>
-	</StackPanel>
-```
+<snippet id='radpasswordbox-getting-started-block_3-xaml' />
 
 Now we just need to create our view model.
 
 __Example 3: Create ViewModel__
 
-```C#
-	public  class ViewModel
-	{
-		public System.Windows.Input.ICommand LoginCommand { get; set; }
-		public ViewModel()
-		{
-			LoginCommand = new DelegateCommand(OnLoginCommand_Executed);
-		}
-
-		private void OnLoginCommand_Executed(object obj)
-		{
-			var passwordBox = obj as RadPasswordBox;
-			if(passwordBox != null)
-			{
-				// actual entered password
-				var password = passwordBox.Password;
-			}
-		}
-	}
-```
+<snippet id='radpasswordbox-getting-started-block_4-cs' />
 
 Voilà! Now when you click on the Login button, the __LoginCommand.Execute()__ method will be called. Inside the method you can get the __RadPasswordBox__ from the parameter and see the entered password from the __Password__ property.
 
@@ -130,16 +102,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radpasswordbox-getting-started-block_5-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -166,4 +129,3 @@ __Figure 2__ shows a RadPasswordBox with the **Windows8** theme applied.
  * [Overview]({%slug radpasswordbox-overview%})
 
  * [Visual Structure]({%slug radpasswordbox-visual-structure%})
-

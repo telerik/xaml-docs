@@ -14,18 +14,7 @@ For example, you may have the following treeview:
 
 
 
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView">
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	        <telerik:RadTreeViewItem Header="Tennis"/>
-	        <telerik:RadTreeViewItem Header="Cycling"/>
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-how-to-enable-horizontal-vertical-scrollbar-block_1-xaml' />
 	
 ![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_HowToEnableHorizontalAndVerticalScrollbar_001.png)
 
@@ -33,9 +22,7 @@ In order to enable horizontal and/or vertical scrollbar you need to add the foll
 
 
 
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible">
-```
+<snippet id='radtreeview-how-to-enable-horizontal-vertical-scrollbar-block_2-xaml' />
 
 And here is the result: 
 ![{{ site.framework_name }} RadTreeView Enabled Scrollbars](images/RadTreeView_HowToEnableHorizontalAndVerticalScrollbar_010.png)
@@ -44,41 +31,17 @@ The same operation can be done in the code-behind:
 
 
 
-```C#
-	private void EnableScrollBars()
-	{
-	    ScrollViewer.SetHorizontalScrollBarVisibility( radTreeView, ScrollBarVisibility.Visible );
-	    ScrollViewer.SetVerticalScrollBarVisibility( radTreeView, ScrollBarVisibility.Visible );
-	}
-```
-```VB.NET
-	Private Sub EnableScrollBars()
-	    ScrollViewer.SetHorizontalScrollBarVisibility(radTreeView, ScrollBarVisibility.Visible)
-	    ScrollViewer.SetVerticalScrollBarVisibility(radTreeView, ScrollBarVisibility.Visible)
-	End Sub
-```
+<snippet id='radtreeview-how-to-enable-horizontal-vertical-scrollbar-block_3-cs' />
+<snippet id='radtreeview-how-to-enable-horizontal-vertical-scrollbar-block_4-vb' />
 
 If you want to enable the scrollbars __on demand__, you need to set the scrollbars visibility to __Auto__:
 	
 
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
-```
+<snippet id='radtreeview-how-to-enable-horizontal-vertical-scrollbar-block_5-xaml' />
 	
 
-```C#
-	private void EnableScrollBars()
-	{
-		ScrollViewer.SetHorizontalScrollBarVisibility( radTreeView, ScrollBarVisibility.Auto );
-		ScrollViewer.SetVerticalScrollBarVisibility( radTreeView, ScrollBarVisibility.Auto );
-	}
-```
-```VB.NET
-	Private Sub EnableScrollBars()
-		ScrollViewer.SetHorizontalScrollBarVisibility(radTreeView, ScrollBarVisibility.Auto)
-		ScrollViewer.SetVerticalScrollBarVisibility(radTreeView, ScrollBarVisibility.Auto)
-	End Sub
-```
+<snippet id='radtreeview-how-to-enable-horizontal-vertical-scrollbar-block_6-cs' />
+<snippet id='radtreeview-how-to-enable-horizontal-vertical-scrollbar-block_7-vb' />
 	
 ## See Also
  * [Disable Default Animation in RadTreeView]({%slug radtreeview-how-to-disable-default-animation%})

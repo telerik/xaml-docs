@@ -67,11 +67,7 @@ After you make sure you have added the needed assembly references, you can eithe
 
 __Example 2: Adding RadTreeListView in XAML__
 
-```XAML
-
-	<telerik:RadTreeListView x:Name="radTreeListView">
-	</telerik:RadTreeListView>
-```
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_1-xaml' />
 
 ## Populating with Data
 
@@ -81,262 +77,27 @@ The example will use a collection that represents the contents of a warehouse. I
 
 __Example 3: Defining a Sample Business Model__
 
-```C#
-
-	public class WarehouseItem: INotifyPropertyChanged
-	{
-	    private string name;
-	    private int count;
-	    private ObservableCollection<WarehouseItem> items;
-	
-	    public WarehouseItem(string name, int count)
-	    {
-	        this.Name = name;
-	        this.Count = count;
-	        this.Items = new ObservableCollection<WarehouseItem>();
-	    }
-	    public string Name
-	    {
-	        get 
-	        {
-	            return this.name;
-	        }
-	        set 
-	        {
-	            if (value != this.name)
-	            {
-	                this.name = value;
-	                this.OnPropertyChanged("Name");
-	            }
-	        }
-	    }
-	    public ObservableCollection<WarehouseItem> Items
-	    {
-	        get 
-	        {
-	            return this.items;
-	        }
-	        set 
-	        {
-	            if (value != this.items)
-	            {
-	                this.items = value;
-	                this.OnPropertyChanged("Items");
-	            }
-	        }
-	    }
-	    public int Count
-	    {
-	        get 
-	        {
-	            return this.count;
-	        }
-	        set 
-	        {
-	            if (value != this.count)
-	            {
-	                this.count = value;
-	                this.OnPropertyChanged("Count");
-	            }
-	        }
-	    }
-	
-	    protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
-	    {
-	        PropertyChangedEventHandler handler = this.PropertyChanged;
-	        if (handler != null)
-	        {
-	            handler(this, args);
-	        }
-	    }
-	
-	    private void OnPropertyChanged(string propertyName)
-	    {
-	        this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-	    }
-	
-	    public event PropertyChangedEventHandler PropertyChanged;
-	}
-
-```
-```VB.NET
-
-		Public Class WarehouseItem
-		Implements INotifyPropertyChanged
-
-        Private _name As String
-        Private _count As Integer
-        Private _items As ObservableCollection(Of WarehouseItem)
-
-        Public Sub New(ByVal name As String, ByVal count As Integer)
-            Me.Name = name
-            Me.Count = count
-            Me.Items = New ObservableCollection(Of WarehouseItem)()
-        End Sub
-        Public Property Name() As String
-            Get
-                Return Me._name
-            End Get
-            Set(ByVal value As String)
-                If value <> Me._name Then
-                    Me._name = value
-                    Me.OnPropertyChanged("Name")
-                End If
-            End Set
-        End Property
-        Public Property Items() As ObservableCollection(Of WarehouseItem)
-            Get
-                Return Me._items
-            End Get
-            Set(ByVal value As ObservableCollection(Of WarehouseItem))
-                If value IsNot Me._items Then
-                    Me._items = value
-                    Me.OnPropertyChanged("Items")
-                End If
-            End Set
-        End Property
-        Public Property Count() As Integer
-            Get
-                Return Me._count
-            End Get
-            Set(ByVal value As Integer)
-                If value <> Me._count Then
-                    Me._count = value
-                    Me.OnPropertyChanged("Count")
-                End If
-            End Set
-        End Property
-
-		Protected Overridable Sub OnPropertyChanged(ByVal args As PropertyChangedEventArgs)
-			Dim handler As PropertyChangedEventHandler = Me.PropertyChangedEvent
-			If handler IsNot Nothing Then
-				handler(Me, args)
-			End If
-		End Sub
-
-		Private Sub OnPropertyChanged(ByVal propertyName As String)
-			Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
-		End Sub
-
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-	End Class
-```
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_2-cs' />
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_3-vb' />
 
 Here is an example class that dynamically creates the sample data.
 
 __Example 4: Create Sample Data__
 
-```C#
-
-	public class WarehouseService
-	{
-	    public static ObservableCollection<WarehouseItem> GetWarehouseData()
-	    {
-	        ObservableCollection<WarehouseItem> data = new ObservableCollection<WarehouseItem>();
-	        WarehouseItem drinks = new WarehouseItem( "Drinks", 35 );
-	        drinks.Items.Add( new WarehouseItem( "Water", 10 ) );
-	        WarehouseItem tea = new WarehouseItem( "Tea", 20 );
-	        tea.Items.Add( new WarehouseItem( "Black", 10 ) );
-	        tea.Items.Add( new WarehouseItem( "Green", 10 ) );
-	        drinks.Items.Add( tea );
-	        drinks.Items.Add( new WarehouseItem( "Coffee", 5 ) );
-	        data.Add( drinks );
-	        WarehouseItem vegetables = new WarehouseItem( "Vegeatbles", 75 );
-	        vegetables.Items.Add( new WarehouseItem( "Tomato", 40 ) );
-	        vegetables.Items.Add( new WarehouseItem( "Carrot", 25 ) );
-	        vegetables.Items.Add( new WarehouseItem( "Onion", 10 ) );
-	        data.Add( vegetables );
-	        WarehouseItem fruits = new WarehouseItem( "Fruits", 55 );
-	        fruits.Items.Add( new WarehouseItem( "Cherry", 30 ) );
-	        fruits.Items.Add( new WarehouseItem( "Apple", 20 ) );
-	        fruits.Items.Add( new WarehouseItem( "Melon", 5 ) );
-	        data.Add( fruits );
-	        return data;
-	    }
-	}
-```
-```VB.NET
-
-	Public Class WarehouseService
-	 Public Shared Function GetWarehouseData() As ObservableCollection(Of WarehouseItem)
-	  Dim data As New ObservableCollection(Of WarehouseItem)()
-	  Dim drinks As New WarehouseItem("Drinks", 35)
-	  drinks.Items.Add(New WarehouseItem("Water", 10))
-	  Dim tea As New WarehouseItem("Tea", 20)
-	  tea.Items.Add(New WarehouseItem("Black", 10))
-	  tea.Items.Add(New WarehouseItem("Green", 10))
-	  drinks.Items.Add(tea)
-	  drinks.Items.Add(New WarehouseItem("Coffee", 5))
-	  data.Add(drinks)
-	  Dim vegetables As New WarehouseItem("Vegeatbles", 75)
-	  vegetables.Items.Add(New WarehouseItem("Tomato", 40))
-	  vegetables.Items.Add(New WarehouseItem("Carrot", 25))
-	  vegetables.Items.Add(New WarehouseItem("Onion", 10))
-	  data.Add(vegetables)
-	  Dim fruits As New WarehouseItem("Fruits", 55)
-	  fruits.Items.Add(New WarehouseItem("Cherry", 30))
-	  fruits.Items.Add(New WarehouseItem("Apple", 20))
-	  fruits.Items.Add(New WarehouseItem("Melon", 5))
-	  data.Add(fruits)
-	  Return data
-	 End Function
-	End Class
-```
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_4-cs' />
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_5-vb' />
 
 Finally, define a view model containing the created sample data.
 
 __Example 5: Define a Sample View Model__
-```C#
-	public class WarehouseViewModel: ViewModelBase
-	{
-	    private ObservableCollection<WarehouseItem> warehouseItems;
-	
-	    public ObservableCollection<WarehouseItem> WarehouseItems 
-	    {
-	        get 
-	        {
-	            if (this.warehouseItems == null)
-	            {
-	                this.warehouseItems = WarehouseService.GetWarehouseData();
-	            }
-	
-	            return this.warehouseItems;
-	        }
-	    }
-	}
-```
-```VB.NET
-	Public Class WarehouseViewModel
-		Inherits ViewModelBase
-	
-	    Private _warehouseItems As ObservableCollection(Of WarehouseItem)
-	
-	    Public ReadOnly Property WarehouseItems() As ObservableCollection(Of WarehouseItem)
-	        Get
-	            If Me._warehouseItems Is Nothing Then
-	                Me._warehouseItems = WarehouseService.GetWarehouseData()
-	            End If
-	
-	            Return Me._warehouseItems
-	        End Get
-	    End Property
-	End Class
-```
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_6-cs' />
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_7-vb' />
 
 In order to display your data, you need to bind the __ItemsSource__ property of __RadTreeListView__.
 
 __Example 6: Bind RadTreeListView__
 
-```XAML
-
-	<Window.Resources>
-		<my:WarehouseViewModel x:Key="MyViewModel"/>
-	</Window.Resources>
-	<telerik:RadTreeListView DataContext="{StaticResource MyViewModel}" 
-							 x:Name="radTreeListView"
-							 ItemsSource="{Binding WarehouseItems}"/>
-
-```
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_8-xaml' />
 
 At this point, only the first level of the hierarchical data will get displayed and __RadTreeListView__ will look just like a __RadGridView__. 
 
@@ -349,15 +110,7 @@ In order to display the other levels of the hierarchy, you have to define a __Tr
 
 __Example 7: Define a ChildTableDefinition for RadTreeListView__
 
-```XAML
-
-	<telerik:RadTreeListView x:Name="radTreeListView"
-	                            ItemsSource="{Binding WarehouseItems}">
-	    <telerik:RadTreeListView.ChildTableDefinitions>
-	        <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
-	    </telerik:RadTreeListView.ChildTableDefinitions>
-	</telerik:RadTreeListView>
-```
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_9-xaml' />
 
 ## Columns
 
@@ -365,22 +118,7 @@ By default, __RadTreeListView__ will auto-generate the columns for its data by c
 
 __Example 8: Manually Define the Columns of RadTreeListView__
 
-```XAML
-
-	<telerik:RadTreeListView x:Name="radTreeListView"
-	                            AutoGenerateColumns="False"
-				    ItemsSource="{Binding WarehouseItems}">
-	    <telerik:RadTreeListView.ChildTableDefinitions>
-	        <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
-	    </telerik:RadTreeListView.ChildTableDefinitions>
-	    <telerik:RadTreeListView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                                    Header="Name" />
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Count}"
-	                                    Header="Count" />
-	    </telerik:RadTreeListView.Columns>
-	</telerik:RadTreeListView>
-```
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_10-xaml' />
 
 >tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns, read [here]({%slug radgridview-columns-column-types-basic-column%}).
         
@@ -409,18 +147,7 @@ To change the theme, you can follow the steps below:
 __Example 9__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 9: Merge the ResourceDictionaries__  
-```XAML
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-```
+<snippet id='radtreelistview-radtreeliestview-getting-started-block_11-xaml' />
 
 __Figure 3__ shows RadTreeListView with the **Windows8** theme applied.
 	
@@ -444,4 +171,3 @@ __Figure 3__ shows RadTreeListView with the **Windows8** theme applied.
  * [Data Binding]({%slug radtreelistview-features-data-binding%})
  * [Columns]({%slug radtreelistview-features-columns%})
  * [Hierarchy Column]({%slug radtreelistview-features-hierarchy-column%})
-

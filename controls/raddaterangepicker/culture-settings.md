@@ -19,9 +19,8 @@ The common [Localization]({%slug common-localization%}) article describes the lo
 The current culture of the control describes how the DateTime values will be formatted in the calendars. To change the culture, set the `Culture` property of `RadDateRangePicker`.
 
 __Setting Bulgarian culture__
-```C#
-	this.dateRangePicker.Culture = new System.Globalization.CultureInfo("bg-BG");
-```
+<snippet id='raddaterangepicker-culture-settings-setting_bulgarian_culture-cs' />
+
 
 ![A picture showing WPF RadDateRangePicker with Bulgarian culture](images/raddaterangepicker-culture-settings-0.png)
 
@@ -30,9 +29,8 @@ __Setting Bulgarian culture__
 To change the first day of the week displayed in the calendars, set the `FirstDayOfWeek` property of `RadDateRangePicker`.
 
 __Setting Monday as the first day of the week__
-```XAML
-	 <telerik:RadDateRangePicker FirstDayOfWeek="Monday" AreWeekNamesVisible="True" />                             
-```
+<snippet id='raddaterangepicker-culture-settings-setting_monday_as_the_first_day_of_the_week-xaml' />
+
 
 ![A picture showing WPF RadDateRangePicker with Monday as the first day of the week](images/raddaterangepicker-culture-settings-1.png)
 
@@ -45,9 +43,8 @@ To define when the first week of the year in the calendars should start, set the
 * `FirstFourDayWeek`&mdash; The first week of the year is the first week with four or more days before the designated first day of the week.
 
 __Setting the first week of the year rule__
-```XAML
-	  <telerik:RadDateRangePicker CalendarWeekRule="FirstFullWeek"/>
-```
+<snippet id='raddaterangepicker-culture-settings-setting_the_first_week_of_the_year_rule-xaml' />
+
 
 ## See Also  
 * [Getting Started]({%slug raddaterangepicker-getting-started%})

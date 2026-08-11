@@ -36,41 +36,23 @@ You can include the control in your page by either dragging it from the toolbox 
 
 __Example 1: Creating RadTimeSpanPicker__
 
-```XAML
-	<telerik:RadTimeSpanPicker GenerateDefaultComponents="True"/>
-```
+<snippet id='radtimespanpicker-getting-started-block_1-xaml' />
 
 You can also create __RadTimeSpanPicker__ in code-behind:
 
 __Example 2:  Creating RadTimeSpanPicker in code__
 
-```C#
-	RadTimeSpanPicker timeSpanPicker = new RadTimeSpanPicker();
-	timeSpanPicker.GenerateDefaultComponents = true;
-```
+<snippet id='radtimespanpicker-getting-started-block_2-cs' />
 
 __Example 2:  Creating RadTimeSpanPicker in code__
 
-```VB
-	Dim timeSpanPicker As New RadTimeSpanPicker()
-	timeSpanPicker.GenerateDefaultComponents = True
-```
+<snippet id='radtimespanpicker-getting-started-block_3-vb' />
 
 By setting the __GenerateDefaultComponents__ property to __True__ the control will use the default components for hours, minutes and seconds. If you need to visualize some of the other built-in components or a custom component of your own you could add them as shown below to the TimeSpanComponents collection:
 
 __Example 3: Adding TimeSpanComponents__
 
-```XAML
-	<telerik:RadTimeSpanPicker>
-	    <telerik:RadTimeSpanPicker.TimeSpanComponents>
-		<telerik:DayTimeSpanComponent/>
-		<telerik:HourTimeSpanComponent/>
-		<telerik:MinuteTimeSpanComponent/>
-		<telerik:SecondTimeSpanComponent/>
-		<telerik:MillisecondTimeSpanComponent/>
-	    </telerik:RadTimeSpanPicker.TimeSpanComponents>
-	</telerik:RadTimeSpanPicker>
-```
+<snippet id='radtimespanpicker-getting-started-block_4-xaml' />
 
 ## Setting a Theme
 
@@ -90,17 +72,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radtimespanpicker-getting-started-block_5-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -125,4 +97,3 @@ __Figure 1__ shows a RadTimeSpanPicker with the **Windows8** theme applied.
 ## See Also 
  * [Overview]({%slug radtimespanpicker-overview%}) 
  * [Visual Structure]({%slug radtimespanpicker-visual-structure%})
-

@@ -40,86 +40,44 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 
 
 
-```XAML
-	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="Ascending">
-	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_1-xaml' />
 
 
 
-```C#
-	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
-	groupDescription.MemberName = "[Product].[Category]";
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-```
-```VB.NET
-	Dim groupDescription As New XmlaGroupDescription()
-	groupDescription.MemberName = "[Product].[Category]"
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_2-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_2-vb' />
 
 {% if site.site_name == 'WPF' %}
 
 
-```XAML
-	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="Ascending"/>
-	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="Descending"/>
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_3-xaml' />
 
 
 
-```C#
-	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
-	groupDescription.MemberName = "[Product].[Category]";
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-```
-```VB.NET
-	Dim groupDescription As New AdomdGroupDescription()
-	groupDescription.MemberName = "[Product].[Category]"
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_4-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_4-vb' />
 {% endif %}
 
 * If you need to avoid the data to be sorted anyhow, you can set the __SortOrder__ property to __None__. This way the data will appear the way it is was received from the data source:            
 
 
 
-```XAML
-	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="None">
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_5-xaml' />
 
 
 
-```C#
-	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
-	groupDescription.MemberName = "[Product].[Category]";
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
-```
-```VB.NET
-	Dim groupDescription As New XmlaGroupDescription()
-	groupDescription.MemberName = "[Product].[Category]"
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_6-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_6-vb' />
 
 {% if site.site_name == 'WPF' %}
 
 
-```XAML
-	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="None"/>
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_7-xaml' />
 
 
 
-```C#
-	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
-	groupDescription.MemberName = "[Product].[Category]";
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
-```
-```VB.NET
-	Dim groupDescription As New AdomdGroupDescription()
-	groupDescription.MemberName = "[Product].[Category]"
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_8-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_8-vb' />
 {% endif %}
 
 >Note that the __SortOrder None__ property is available with the __Q1 2014 SP1__ version of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}.              
@@ -128,54 +86,22 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 
 
 
-```XAML
-	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
-	    <pivot:XmlaGroupDescription.GroupComparer>
-	        <pivot:GrandTotalComparer AggregateIndex="1"/>
-	    </pivot:XmlaGroupDescription.GroupComparer>
-	</pivot:XmlaGroupDescription>
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_9-xaml' />
 
 
 
-```C#
-	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
-	groupDescription.MemberName = "[Product].[Category]";
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
-	groupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 1 };
-```
-```VB.NET
-	Dim groupDescription As New XmlaGroupDescription()
-	groupDescription.MemberName = "[Product].[Category]"
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending
-	groupDescription.GroupComparer = New GrandTotalComparer() With {.AggregateIndex = 1}
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_10-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_10-vb' />
 
 {% if site.site_name == 'WPF' %}
 
 
-```XAML
-	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
-	    <pivot:AdomdGroupDescription.GroupComparer>
-	        <pivot:GrandTotalComparer AggregateIndex="1"/>
-	    </pivot:AdomdGroupDescription.GroupComparer>
-	</pivot:AdomdGroupDescription>
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_11-xaml' />
 
 
 
-```C#
-	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
-	groupDescription.MemberName = "[Product].[Category]";
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-	groupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 1 };
-```
-```VB.NET
-	Dim groupDescription As New AdomdGroupDescription()
-	groupDescription.MemberName = "[Product].[Category]"
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-	groupDescription.GroupComparer = New GrandTotalComparer() With {.AggregateIndex = 1}
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_12-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_12-vb' />
 {% endif %}
 
 >The __AggregateIndex__ property is set based on the count of your aggregate descriptions. If you have two aggregates the first one will have __AggregateIndex = 0__ and the second - __AggregateIndex = 1__.              
@@ -184,54 +110,22 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 
 
 
-```XAML
-	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
-	    <pivot:XmlaGroupDescription.GroupComparer>
-	        <pivot:OlapGroupComparer />
-	    </pivot:XmlaGroupDescription.GroupComparer>
-	</pivot:XmlaGroupDescription>
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_13-xaml' />
 
 
 
-```C#
-	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
-	groupDescription.MemberName = "[Product].[Category]";
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
-	groupDescription.GroupComparer = new OlapGroupComparer();
-```
-```VB.NET
-	Dim groupDescription As New XmlaGroupDescription()
-	groupDescription.MemberName = "[Product].[Category]"
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending
-	groupDescription.GroupComparer = New OlapGroupComparer()
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_14-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_14-vb' />
 
 {% if site.site_name == 'WPF' %}
 
 
-```XAML
-	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
-	    <pivot:AdomdGroupDescription.GroupComparer>
-	        <pivot:OlapGroupComparer />
-	    </pivot:AdomdGroupDescription.GroupComparer>
-	</pivot:AdomdGroupDescription>
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_15-xaml' />
 
 
 
-```C#
-	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
-	groupDescription.MemberName = "[Product].[Category]";
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-	groupDescription.GroupComparer = new OlapGroupComparer();
-```
-```VB.NET
-	Dim groupDescription As New AdomdGroupDescription()
-	groupDescription.MemberName = "[Product].[Category]"
-	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-	groupDescription.GroupComparer = New OlapGroupComparer()
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_16-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_16-vb' />
 {% endif %}
 
 >Note that the __OlapGroupComparer__ is available with the __Q1 2014 SP1__ version of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}. 
@@ -242,66 +136,22 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 
 
 
-```XAML
-	<pivot:XmlaDataProvider.RowGroupDescriptions>
-	    <pivot:XmlaGroupDescription MemberName="[Date].[Calendar]">
-	        <pivot:XmlaGroupDescription.Levels>
-	            <pivot:XmlaLevelGroupDescription MemberName="[Date].[Calendar].[Calendar Year]" SortOrder="Descending"/>
-	        </pivot:XmlaGroupDescription.Levels>
-	    </pivot:XmlaGroupDescription>
-	</pivot:XmlaDataProvider.RowGroupDescriptions>
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_17-xaml' />
 
 
 
-```C#
-	XmlaGroupDescription topGroupDescription = new XmlaGroupDescription();
-	topGroupDescription.MemberName = "[Date].[Calendar]";
-	XmlaLevelGroupDescription levelGroupDescription1 = new XmlaLevelGroupDescription();
-	levelGroupDescription1.MemberName = "[Date].[Calendar].[Calendar Year]";
-	levelGroupDescription1.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-	topGroupDescription.Levels.Add(levelGroupDescription1);
-```
-```VB.NET
-	Dim topGroupDescription As New XmlaGroupDescription()
-	topGroupDescription.MemberName = "[Date].[Calendar]"
-	Dim levelGroupDescription1 As New XmlaLevelGroupDescription()
-	levelGroupDescription1.MemberName = "[Date].[Calendar].[Calendar Year]"
-	levelGroupDescription1.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-	topGroupDescription.Levels.Add(levelGroupDescription1)
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_18-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_18-vb' />
 
 {% if site.site_name == 'WPF' %}
 
 
-```XAML
-	<pivot:AdomdDataProvider.RowGroupDescriptions>
-	    <pivot:AdomdGroupDescription MemberName="[Date].[Calendar]">
-	        <pivot:AdomdGroupDescription.Levels>
-	            <pivot:AdomdLevelGroupDescription MemberName="[Date].[Calendar].[Calendar Year]" SortOrder="Descending"/>
-	        </pivot:AdomdGroupDescription.Levels>
-	    </pivot:AdomdGroupDescription>
-	</pivot:AdomdDataProvider.RowGroupDescriptions>            
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_19-xaml' />
 
 
 
-```C#
-	AdomdGroupDescription topGroupDescription = new AdomdGroupDescription();
-	topGroupDescription.MemberName = "[Date].[Calendar]";
-	AdomdLevelGroupDescription levelGroupDescription1 = new AdomdLevelGroupDescription();
-	levelGroupDescription1.MemberName = "[Date].[Calendar].[Calendar Year]";
-	levelGroupDescription1.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-	topGroupDescription.Levels.Add(levelGroupDescription1);
-```
-```VB.NET
-	Dim topGroupDescription As New AdomdGroupDescription()
-	topGroupDescription.MemberName = "[Date].[Calendar]"
-	Dim levelGroupDescription1 As New AdomdLevelGroupDescription()
-	levelGroupDescription1.MemberName = "[Date].[Calendar].[Calendar Year]"
-	levelGroupDescription1.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-	topGroupDescription.Levels.Add(levelGroupDescription1)
-```
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_20-cs' />
+<snippet id='radpivotgrid-features-olap-providers-sorting-olap-block_20-vb' />
 {% endif %}
 
 ## Changing the Sorting at runtime

@@ -37,44 +37,14 @@ __Defining a sample SVG file__
 Create a custom Dictionary<string, Brush> collection to define it in XAML:
 
 __Defining a custom Dictionary collection__
-```C#
-    public class CustomDictionary : Dictionary<string, Brush> { }
-```
-```VB.NET
-    Public Class CustomDictionary
-        Inherits Dictionary(Of String, Brush)
-    End Class
-```
+<snippet id='radsvgimage-paint-servers-block_1-cs' />
+<snippet id='radsvgimage-paint-servers-block_2-vb' />
 
 __Creating a new instance of the custom Dictionary and add entries__
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <local:CustomDictionary x:Key="CustomBrushesDictionary">
-                <SolidColorBrush x:Key="sheet-part" Color="Red"/>
-                <SolidColorBrush x:Key="gear-part" Color="Yellow"/>
-            </local:CustomDictionary>
-        </Grid.Resources>
-    </Grid>
-```
+<snippet id='radsvgimage-paint-servers-block_3-xaml' />
 
 __Setting the new custom Dictionary instance to the CustomBrushes property__
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <local:CustomDictionary x:Key="CustomBrushesDictionary">
-                <SolidColorBrush x:Key="sheet-part" Color="Red"/>
-                <SolidColorBrush x:Key="gear-part" Color="Yellow"/>
-            </local:CustomDictionary>
-        </Grid.Resources>
-        <telerik:RadSvgImage x:Name="svgImage"
-                             UriSource="MySVGImage.svg" 
-                             CustomBrushes="{StaticResource CustomBrushesDictionary}"
-                             Width="128"
-                             Height="128">
-        </telerik:RadSvgImage>
-    </Grid>
-```
+<snippet id='radsvgimage-paint-servers-block_4-xaml' />
 
 __RadSvgImage with custom Dictionary set to the CustomBrushes property__
 

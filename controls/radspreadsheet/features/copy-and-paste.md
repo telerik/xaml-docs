@@ -17,36 +17,10 @@ The `RadSpreadSheet` control uses the [SpreadProcessing library](https://docs.te
 The following example shows how to copy cells and paste them:
 
 __Defining the Radspreadsheet and the UI elements for the copy and paste logic__
-```XAML
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
-            <telerik:RadButton Content="Copy cells from this worksheet"
-                               Click="OnCopyCellsButtonClicked"/>
-            <telerik:RadButton Content="Paste copied cells in the second worksheet"
-                               Click="OnPasteCellsButtonClicked"/>
-        </StackPanel>
-        <telerik:RadSpreadsheet x:Name="spreadsheet" Grid.Row="1"/>
-    </Grid>
-```
+<snippet id='radspreadsheet-features-copy-and-paste-block_1-xaml' />
 
 __Defining the copy and paste logic for the added UI elements__
-```C#
-    private void OnCopyCellsButtonClicked(object sender, RoutedEventArgs e)
-    {
-        Selection selection = this.spreadsheet.ActiveWorksheetEditor.Selection;
-    
-        this.spreadsheet.CommandDescriptors.Copy.Command.Execute(selection);
-    }
-    
-    private void OnPasteCellsButtonClicked(object sender, RoutedEventArgs e)
-    {
-        this.spreadsheet.ActiveWorksheetEditor.Paste();
-    }
-```
+<snippet id='radspreadsheet-features-copy-and-paste-block_2-cs' />
 
 ## RadSpreadsheetRibbon
 

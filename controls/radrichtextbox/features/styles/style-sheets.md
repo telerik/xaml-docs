@@ -34,55 +34,15 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 {% if site.site_name == 'WPF' %}
 
 
-```C#
-    OpenFileDialog ofd = new OpenFileDialog();
-    ofd.Filter = "Xaml Files|*.xaml";
-    if (ofd.ShowDialog() == true)
-    {
-        using (var stream = ofd.OpenFile())
-        {
-            Stylesheet stylesheet = XamlFormatProvider.LoadStylesheet(stream);
-            stylesheet.ApplyStylesheetToDocument(this.editor.Document);
-        }
-    }
-```
-```VB.NET
-    Dim ofd As New OpenFileDialog()
-    ofd.Filter = "Xaml Files|*.xaml"
-    If ofd.ShowDialog() = True Then
-	    Using stream = ofd.OpenFile()
-    Dim stylesheet As Stylesheet = XamlFormatProvider.LoadStylesheet(stream)
-		    stylesheet.ApplyStylesheetToDocument(Me.editor.Document)
-	    End Using
-    End If
-```
+<snippet id='radrichtextbox-features-styles-style-sheets-block_1-cs' />
+<snippet id='radrichtextbox-features-styles-style-sheets-block_2-vb' />
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
 
 
-```C#
-    OpenFileDialog ofd = new OpenFileDialog();
-    ofd.Filter = "Xaml Files|*.xaml";
-    if (ofd.ShowDialog() == true)
-    {
-        using (var stream = ofd.File.OpenRead())
-        {
-            Stylesheet stylesheet = XamlFormatProvider.LoadStylesheet(stream);
-            stylesheet.ApplyStylesheetToDocument(this.editor.Document);
-        }
-    }
-```
-```VB.NET
-    Dim ofd As New OpenFileDialog()
-    ofd.Filter = "Xaml Files|*.xaml"
-    If ofd.ShowDialog() = True Then
-	    Using stream = ofd.File.OpenRead()
-    Dim stylesheet As Stylesheet = XamlFormatProvider.LoadStylesheet(stream)
-		    stylesheet.ApplyStylesheetToDocument(Me.editor.Document)
-	    End Using
-    End If
-```
+<snippet id='radrichtextbox-features-styles-style-sheets-block_3-cs' />
+<snippet id='radrichtextbox-features-styles-style-sheets-block_4-vb' />
 {% endif %}
 
 This is how you can save a style sheet with the __SaveStyleSheet__ method of __XamlFormatProvider__:
@@ -90,29 +50,6 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 
 
 
-```C#
-    SaveFileDialog sfd = new SaveFileDialog();
-    sfd.Filter = "Xaml Files|\*.xaml";
-    if (sfd.ShowDialog() == true)
-    {
-        using (var stream = sfd.OpenFile())
-        {
-            Stylesheet stylesheet = new Stylesheet();
-            stylesheet.ExtractStylesheetFromDocument(this.editor.Document);
-            XamlFormatProvider.SaveStylesheet(stylesheet, stream);
-        }
-    }
-```
-```VB.NET
-    Dim sfd As New SaveFileDialog()
-    sfd.Filter = "Xaml Files|\*.xaml"
-    If sfd.ShowDialog() = True Then
-	    Using stream = sfd.OpenFile()
-    Dim stylesheet As New Stylesheet()
-		    stylesheet.ExtractStylesheetFromDocument(Me.editor.Document)
-		    XamlFormatProvider.SaveStylesheet(stylesheet, stream)
-	    End Using
-    End If
-```
-
+<snippet id='radrichtextbox-features-styles-style-sheets-block_5-cs' />
+<snippet id='radrichtextbox-features-styles-style-sheets-block_6-vb' />
 

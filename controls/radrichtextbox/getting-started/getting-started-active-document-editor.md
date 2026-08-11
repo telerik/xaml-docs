@@ -34,28 +34,12 @@ There are few types of document editors.
 You can get the active editor via the __ActiveDocumentEditor__ property of RadRichTextBox.
 
 __Example 1: Getting the active document editor__  
-```C# 
-	IDocumentEditor activeEditor = radRichTextBox.ActiveDocumentEditor;
-```
+<snippet id='radrichtextbox-getting-started-getting-started-active-document-editor-block_1-cs' />
 
 You can see when the active editor is changed using the __ActiveDocumentEditorChanged__ event. The event arguments contain the editor's type which you can get via the args' __DocumentEditorType__ property. This event is useful when you need to modify the active document editor or subscribe for its events.
 
 __Example 2: Using the ActiveDocumentEditorChanged event__  
-```C# 
-	private void Rtb_ActiveDocumentEditorChanged(object sender, Telerik.Windows.Documents.UI.ActiveDocumentEditorChangedEventArgs e)
-	{
-		var richTextBox = (RadRichTextBox)sender;
-		if (e.DocumentEditorType == Telerik.Windows.Documents.UI.DocumentEditorType.Header)
-		{
-			RadRichTextBox activeEditor = (RadRichTextBox)richTextBox.ActiveDocumentEditor;
-			activeEditor.CommandExecuting += ActiveEditor_CommandExecuting;
-		}
-	}
-	
-	private void ActiveEditor_CommandExecuting(object sender, Telerik.Windows.Documents.RichTextBoxCommands.CommandExecutingEventArgs e)
-	{		  
-	}
-```
+<snippet id='radrichtextbox-getting-started-getting-started-active-document-editor-block_2-cs' />
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
@@ -74,4 +58,3 @@ __Example 2: Using the ActiveDocumentEditorChanged event__
 * [Getting Started]({%slug radrichtextbox-getting-started%})
 * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})
 * [Developer Focused Examples]({%slug radrichtextbox-sdk-examples%})
-

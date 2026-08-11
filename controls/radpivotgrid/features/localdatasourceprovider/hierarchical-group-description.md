@@ -15,52 +15,10 @@ The default behavior of the `PropertyGroupDescription` in `LocalDataSourceProvid
 The `LocalDataSourceProvider` supports also hierarchical (or chained) property paths. To enable this, set the `EnableHierarchy` property of `LocalDataSourceProvider` to `True`.
 
 __Defining a basic model to illustrate how the PropertyName relates to the underlying data item__
-```C#
-	public class Order
-    {
-        public Customer Customer { get; set; }        
-        public string Product { get; set; }
-        public int Quantity { get; set; }        
-        public string Promotion { get; set; }        
-        public DateTime Date { get; set; }        
-    }
-	
-	public class Customer
-    {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public Company Company { get; set; }
-    }
-	
-	public class Company
-    {
-        public string Name { get; set; }
-        public string Industry { get; set; }
-    }
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-hierarchical-group-description-block_1-cs' />
 
 __Enabling hierarchical property paths and using nested property path__
-```XAML
-	<UserControl.Resources>
-		<!-- we can assume that the data source provider in this example is populated with a collection of Order objects -->
-		<pivot:LocalDataSourceProvider x:Key="dataProvider" EnableHierarchy="True">         
-			<pivot:LocalDataSourceProvider.RowGroupDescriptions>
-				
-				<!-- hierarchical property path -->
-				<pivot:PropertyGroupDescription PropertyName="Customer.Company.Industry" />
-				
-				<!-- standard/direct property path -->
-				<pivot:PropertyGroupDescription PropertyName="Promotion" />
-			</pivot:LocalDataSourceProvider.RowGroupDescriptions>
-			<pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-                <pivot:PropertyGroupDescription PropertyName="Product" />
-            </pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-            <pivot:LocalDataSourceProvider.AggregateDescriptions>
-                <pivot:PropertyAggregateDescription PropertyName="Quantity" />
-            </pivot:LocalDataSourceProvider.AggregateDescriptions>
-		</pivot:LocalDataSourceProvider>
-	</UserControl.Resources>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-hierarchical-group-description-block_2-xaml' />
 
 When `LocalDataSourceProvider` is linked to a [RadPivotFieldList]({%slug radpivotgrid-fieldlist%}), the corresponding properties hierarchy for the `PropertyGroupDescription` will be displayed in the fields list.
 

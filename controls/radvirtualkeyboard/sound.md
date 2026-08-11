@@ -15,9 +15,7 @@ The keyboard comes with a click sound on key press.
 To disable the click sound, set the `IsKeyPressSoundEnabled` property to `False`.
 
 __Disabling click sound__
-```XAML
-	<telerik:RadVirtualKeyboard IsKeyPressSoundEnabled="False" />
-```
+<snippet id='radvirtualkeyboard-sound-block_1-xaml' />
 
 The sound player that plays the sounds can be accessed or replaced using the `KeySoundPlayer` property of `RadVirtualKeyboard`.
 
@@ -26,10 +24,7 @@ The sound player that plays the sounds can be accessed or replaced using the `Ke
 To replace the default click sound, initialize a new `DefaultKeySoundPlayer` and provide it with a `Stream` containing a sound file information.
 
 __Setting custom sound file__
-```XAML
-	StreamResourceInfo info = Application.GetResourceStream(new Uri(@"/WpfApplication;component/myClickSoundFile.wav", UriKind.Relative));
-	virtualKeyboard.KeySoundPlayer = new DefaultKeySoundPlayer(info.Stream);
-```
+<snippet id='radvirtualkeyboard-sound-block_2-xaml' />
 
 The `DefaultKeySoundPlayer` uses the .NET native [SoundPlayer](https://docs.microsoft.com/en-us/dotnet/api/system.media.soundplayer?view=dotnet-plat-ext-6.0) class to playback .wav files. 
 
@@ -38,29 +33,10 @@ The `DefaultKeySoundPlayer` uses the .NET native [SoundPlayer](https://docs.micr
 The sound playback implementation can be fully replaced by implementing the sound player from scratch. To do so, implement the `IKeySoundPlayer` interface. The following example shows how to implement a very basic key sound player that uses the `SystemSounds.Beep` sound.
 
 __Implementing custom key sound player__
-```XAML
-	public class CustomKeySoundPlayer : IKeySoundPlayer
-    {
-        public bool IsSoundEnabled { get; set; }
-		
-        public void Play(BaseKeyViewModel viewModel)
-        {
-            if (IsSoundEnabled)
-            {
-                SystemSounds.Beep.Play();
-            }
-        }
-    }
-```
+<snippet id='radvirtualkeyboard-sound-block_3-xaml' />
 
 __Assigning the custom key sound player__
-```XAML
-	public Example()
-	{
-		InitializeComponent();
-		this.virtualKeyboard.KeySoundPlayer = new CustomKeySoundPlayer();
-	}
-```
+<snippet id='radvirtualkeyboard-sound-block_4-xaml' />
 
 ## See Also
 * [Getting Started]({%slug radvirtualkeyboard-getting-started%})

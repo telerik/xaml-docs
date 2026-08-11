@@ -20,82 +20,12 @@ __Example 1__ demonstrates how to define a RadTreeView in xaml and setup a DataT
 
 {% if site.site_name == 'Silverlight' %}
 __Example 1: Defining the ItemEditTemplate__
-```XAML
-
-	<Grid>
-        <Grid.Resources>
-            <sampleData:RadTreeViewSampleData x:Key="DataSource" />
-
-            <DataTemplate x:Key="Team">
-                <TextBlock Text="{Binding Name}" />
-            </DataTemplate>
-            <telerik:HierarchicalDataTemplate x:Key="Division"
-                                      ItemTemplate="{StaticResource Team}"
-                                      ItemsSource="{Binding Teams}">
-                <TextBlock Text="{Binding Name}" />
-            </telerik:HierarchicalDataTemplate>
-            <telerik:HierarchicalDataTemplate x:Key="League"
-                                      ItemTemplate="{StaticResource Division}"
-                                      ItemsSource="{Binding Divisions}">
-                <TextBlock Text="{Binding Name}" />
-            </telerik:HierarchicalDataTemplate>
-
-            <DataTemplate x:Key="LeagueItemEditTemplate">
-                <Grid>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox Text="{Binding Name, Mode=TwoWay}"/>
-                        <TextBlock Margin="5 0 0 0" Text="{Binding Items.Count, RelativeSource={RelativeSource AncestorType=telerik:RadTreeViewItem}, Mode=OneWay, StringFormat={}{0} children}"/>
-                    </StackPanel>
-                </Grid>
-            </DataTemplate>
-        </Grid.Resources>
-        <telerik:RadTreeView x:Name="radTreeView"
-	   IsEditable="True"
-	   ItemsSource="{Binding LeaguesDataSource, Source={StaticResource DataSource}}"
-	   ItemTemplate="{StaticResource League}" Margin="8" 
-	   ItemEditTemplate="{StaticResource LeagueItemEditTemplate}"/>
-    </Grid>
-```
+<snippet id='radtreeview-populating-with-data-item-edit-template-block_1-xaml' />
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 __Example 1: Defining the ItemEditTemplate__
-```XAML
-
-	<Grid>
-        <Grid.Resources>
-            <sampleData:RadTreeViewSampleData x:Key="DataSource" />
-
-            <DataTemplate x:Key="Team">
-                <TextBlock Text="{Binding Name}" />
-            </DataTemplate>
-            <HierarchicalDataTemplate x:Key="Division"
-                                      ItemTemplate="{StaticResource Team}"
-                                      ItemsSource="{Binding Teams}">
-                <TextBlock Text="{Binding Name}" />
-            </HierarchicalDataTemplate>
-            <HierarchicalDataTemplate x:Key="League"
-                                      ItemTemplate="{StaticResource Division}"
-                                      ItemsSource="{Binding Divisions}">
-                <TextBlock Text="{Binding Name}" />
-            </HierarchicalDataTemplate>
-
-            <DataTemplate x:Key="LeagueItemEditTemplate">
-                <Grid>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox Text="{Binding Name, Mode=TwoWay}"/>
-                        <TextBlock Margin="5 0 0 0" Text="{Binding Items.Count, RelativeSource={RelativeSource AncestorType=telerik:RadTreeViewItem}, Mode=OneWay, StringFormat={}{0} children}"/>
-                    </StackPanel>
-                </Grid>
-            </DataTemplate>
-        </Grid.Resources>
-        <telerik:RadTreeView x:Name="radTreeView"
-	   IsEditable="True"
-	   ItemsSource="{Binding LeaguesDataSource, Source={StaticResource DataSource}}"
-	   ItemTemplate="{StaticResource League}" Margin="8" 
-	   ItemEditTemplate="{StaticResource LeagueItemEditTemplate}"/>
-    </Grid>
-```
+<snippet id='radtreeview-populating-with-data-item-edit-template-block_2-xaml' />
 {% endif %}
 
 {% if site.site_name == 'WPF' %}

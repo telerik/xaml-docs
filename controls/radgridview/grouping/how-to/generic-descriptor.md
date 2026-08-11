@@ -19,13 +19,8 @@ __Example 1: Create a generic GroupDescriptor<T>.__
 
 
 
-```C#
-	var descriptor = new GroupDescriptor<Employee, int, int>
-	{
-	    GroupingExpression = e => e.Orders.Where(o => o.Details.Any(d => d.Product.ProductName.Contains("Syrup"))).Count(),
-	    SortDirection = ListSortDirection.Ascending
-	};
-```
+<snippet id='radgridview-grouping-how-to-generic-descriptor-example_1_create_a_generic_groupdescriptor_t-cs' />
+
 
 Then, add the defined GroupDescriptor to the __GroupDescriptors collection__ of __RadGridView__.
         

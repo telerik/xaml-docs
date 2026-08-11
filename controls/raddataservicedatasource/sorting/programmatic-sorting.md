@@ -16,20 +16,10 @@ For example:
 
 
 
-```C#
+<snippet id='raddataservicedatasource-sorting-programmatic-sorting-block_1-cs' />
 
-	SortDescriptor sd = new SortDescriptor();
-	sd.Member = "ContactTitle";
-	sd.SortDirection = ListSortDirection.Descending;
-	this.customersDataSource.SortDescriptors.Add(sd);
-```
-```VB.NET
+<snippet id='raddataservicedatasource-sorting-programmatic-sorting-block_1-vb' />
 
-	Dim sd As New SortDescriptor()
-	sd.Member = "ContactTitle"
-	sd.SortDirection = ListSortDirection.Descending
-	Me.customersDataSource.SortDescriptors.Add(sd)
-```
 
 Once the application is loaded, the __RadGridView__ will be visualized as follows:
 ![{{ site.framework_name }} RadDataServiceDataSource Programmatic Sorting](images/RadDataServiceDataSource_ProgrammaticSorting.png)

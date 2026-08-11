@@ -24,57 +24,12 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 
 
 
-```XAML
-	<telerik:RadWindow x:Class="RadWindowSamples.RadWindowControl"
-	                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid>
-	        <Grid.RowDefinitions>
-	            <RowDefinition Height="100" />
-	            <RowDefinition Height="*" />
-	        </Grid.RowDefinitions>
-	        <Rectangle Grid.Row="0"
-	                   Fill="LemonChiffon"
-	                   Width="100"
-	                   Height="100" />
-	        <StackPanel Grid.Row="1"
-	                    Orientation="Horizontal">
-	            <Button Click="OnButtonAcceptClicked"
-	                    Content="Accept"
-	                    telerik:RadWindow.ResponseButton="Accept" />
-	            <Button Click="OnButtonCancelClicked"
-	                    Content="Cancel"
-	                    telerik:RadWindow.ResponseButton="Cancel" />
-	        </StackPanel>
-	    </Grid>
-	</telerik:RadWindow>
-```
+<snippet id='radwindow-how-to-use-keyboard-to-get-user-response-block_1-xaml' />
 
 
 
-```C#
-	private void OnButtonAcceptClicked(object sender, RoutedEventArgs e)
-	{
-	    this.DialogResult = true;
-	    this.Close();
-	}
-	private void OnButtonCancelClicked(object sender, RoutedEventArgs e)
-	{
-	    this.DialogResult = false;
-	    this.Close();
-	}
-```
-```VB.NET
-	Private Sub OnButtonAcceptClicked(sender As Object, e As RoutedEventArgs)
-	    Me.DialogResult = True
-	    Me.Close()
-	End Sub
-	Private Sub OnButtonCancelClicked(sender As Object, e As RoutedEventArgs)
-	    Me.DialogResult = False
-	    Me.Close()
-	End Sub
-```
+<snippet id='radwindow-how-to-use-keyboard-to-get-user-response-block_2-cs' />
+<snippet id='radwindow-how-to-use-keyboard-to-get-user-response-block_3-vb' />
 
 ## See Also
 

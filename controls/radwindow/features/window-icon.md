@@ -20,19 +20,8 @@ You can display an icon in the RadWindow control's title bar, through its `Icon`
 
 __Setting the Icon property__
 
-```C#
-	RadWindow radWindow = new RadWindow();
-	radWindow.Icon = new Image()
-	{
-	    Source = new BitmapImage(new Uri("../../Images/WindowIcon.png", UriKind.Relative))
-	};
-```
-```VB.NET
-	Dim radWindow As New RadWindow()
-	Dim image As New Image()
-	image.Source = New BitmapImage(New Uri("../../Images/WindowIcon.png", UriKind.Relative))
-	radWindow.Icon = image
-```
+<snippet id='radwindow-features-window-icon-block_1-cs' />
+<snippet id='radwindow-features-window-icon-block_2-vb' />
 
 This will be the final result:
 
@@ -44,24 +33,12 @@ You can define a custom `DataTemplate` for the `IconTemplate` property that will
 
 __Setting the IconTemplate property in XAML__
 
-```XAML
-	<UserControl.Resources>
-	    <DataTemplate x:Key="WindowIconTemplate">
-	        <Image Source="/Images/WindowIcon.png" Stretch="None" />
-	    </DataTemplate>
-	</UserControl.Resources>
-```
+<snippet id='radwindow-features-window-icon-block_3-xaml' />
 
 __Setting the IconTemplate property in code-behind__
 
-```C#
-	RadWindow radWindow = new RadWindow();
-	radWindow.IconTemplate = this.Resources["WindowIconTemplate"] as DataTemplate;
-```
-```VB.NET
-	Dim radWindow As New RadWindow()
-	radWindow.IconTemplate = TryCast(Me.Resources("WindowIconTemplate"), DataTemplate)
-```
+<snippet id='radwindow-features-window-icon-block_4-cs' />
+<snippet id='radwindow-features-window-icon-block_5-vb' />
 
 ## Setting the IconMargin
 
@@ -69,15 +46,9 @@ You can control the margin that is applied to the chosen icon, through the `Icon
 
 __Setting the IconMargin property in XAML__
 
-```XAML
-	<telerik:RadWindow x:Name="radWindow" IconMargin="5 0 0 0"/>
-```
+<snippet id='radwindow-features-window-icon-block_6-xaml' />
 
 __Setting the IconMargin property in code-behind__
 
-```C#
-	this.radWindow.IconMargin = new Thickness(5, 0, 0, 0);
-```
-```VB.NET
-	Me.radWindow.IconMargin = New Thickness(5, 0, 0, 0)
-```
+<snippet id='radwindow-features-window-icon-block_7-cs' />
+<snippet id='radwindow-features-window-icon-block_8-vb' />

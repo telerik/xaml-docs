@@ -25,18 +25,7 @@ Currently __RadMap__ provides 2 colorizers out-of-the-box:
 To use the __ColorMeasureScale__ object in a layer, just set the __Colorizer__ property of the respective layer to a new instance of it. Here is an example.
         
 
-```XAML
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:EmptyProvider />
-		</telerik:RadMap.Provider>
-		<telerik:VisualizationLayer Name="visualizationLayer">
-			<telerik:VisualizationLayer.Colorizer>
-				<telerik:ColorMeasureScale />
-			</telerik:VisualizationLayer.Colorizer>
-		</telerik:VisualizationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_1-xaml' />
 
 ## Extended Data Property
 
@@ -47,21 +36,7 @@ The __ColorMeasureScale__ object colors the __MapShapeData__ objects inside a la
 For purposes of this example we will use __world.shp__ ESRI shape file. The extended data for the shapes from this file contains “SQKM” property which represents area of the country in square kilometers. Here is an example, in which the __MapShapeData__ objects get colored depending on the value of the country area.
         
 
-```XAML
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:EmptyProvider />
-		</telerik:RadMap.Provider>
-		<telerik:VisualizationLayer Name="visualizationLayer">
-			<telerik:VisualizationLayer.Colorizer>
-				<telerik:ColorMeasureScale ExtendedPropertyName="SQKM" />
-			</telerik:VisualizationLayer.Colorizer>
-			<telerik:VisualizationLayer.Reader>
-				<telerik:AsyncShapeFileReader DataSource="/TestMapFeatures;component/Resources/GeoData/world.dbf" Source="/TestMapFeatures;component/Resources/GeoData/world.shp" />
-			</telerik:VisualizationLayer.Reader>
-		</telerik:VisualizationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_2-xaml' />
 
 >The property specified through the __ExtendedPropertyName__ should be of type __Double__.          
 
@@ -84,89 +59,17 @@ The __ColorMeasureScale__ splits the values passed through its __ExtendedPropert
 Here is an example of a __ColorMeasureScale__ with 7 ranges:
         
 
-```XAML
-	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
-		<telerik:RadMap.Provider>
-			<telerik:EmptyProvider />
-		</telerik:RadMap.Provider>
-		<telerik:VisualizationLayer Name="visualizationLayer">
-			<telerik:VisualizationLayer.Colorizer>
-				<telerik:ColorMeasureScale ExtendedPropertyName="SQKM"
-										   Mode="Count"
-										   TickMarkCount="7" />
-			</telerik:VisualizationLayer.Colorizer>
-			<telerik:VisualizationLayer.Reader>
-				<telerik:AsyncShapeFileReader DataSource="/TestMapFeatures;component/Resources/GeoData/world.dbf" Source="/TestMapFeatures;component/Resources/GeoData/world.shp" />
-			</telerik:VisualizationLayer.Reader>
-		</telerik:VisualizationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_3-xaml' />
 
 The following example shows how to use the ColorMeasureScale with Ranges mode:
 
 
-```XAML
-	<telerik:VisualizationLayer.Colorizer>
-		<telerik:ColorMeasureScale ExtendedPropertyName="SQKM" Mode="Ranges">
-			<telerik:ColorMeasureScale.RangeCollection>
-				<telerik:MapRange MaxValue="2416216" MinValue="0" />
-				<telerik:MapRange MaxValue="4832060" MinValue="2416216" />
-				<telerik:MapRange MaxValue="7247904" MinValue="4832060" />
-				<telerik:MapRange MaxValue="9663749" MinValue="7247904" />
-				<telerik:MapRange MaxValue="12079593" MinValue="9663749" />
-				<telerik:MapRange MaxValue="14495437" MinValue="12079593" />
-				<telerik:MapRange MaxValue="16911282" MinValue="14495437" />
-			</telerik:ColorMeasureScale.RangeCollection>
-		</telerik:ColorMeasureScale>
-	</telerik:VisualizationLayer.Colorizer>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_4-xaml' />
 
 And the following demonstrates the __ColorMeasureScale__ with __RangesPredefinedColors__ mode:
         
 
-```XAML
-	<telerik:VisualizationLayer.Colorizer>
-		<telerik:ColorMeasureScale ExtendedPropertyName="SQKM" Mode="RangesPredefinedColors">
-			<telerik:ColorMeasureScale.RangeCollection>
-				<telerik:MapRange MaxValue="2416216" MinValue="0">
-					<telerik:MapRange.ShapeFill>
-						<telerik:MapShapeFill Fill="DarkBlue" />
-					</telerik:MapRange.ShapeFill>
-				</telerik:MapRange>
-				<telerik:MapRange MaxValue="4832060" MinValue="2416216">
-					<telerik:MapRange.ShapeFill>
-						<telerik:MapShapeFill Fill="Blue" />
-					</telerik:MapRange.ShapeFill>
-				</telerik:MapRange>
-				<telerik:MapRange MaxValue="7247904" MinValue="4832060">
-					<telerik:MapRange.ShapeFill>
-						<telerik:MapShapeFill Fill="SkyBlue" />
-					</telerik:MapRange.ShapeFill>
-				</telerik:MapRange>
-				<telerik:MapRange MaxValue="9663749" MinValue="7247904">
-					<telerik:MapRange.ShapeFill>
-						<telerik:MapShapeFill Fill="Aqua" />
-					</telerik:MapRange.ShapeFill>
-				</telerik:MapRange>
-				<telerik:MapRange MaxValue="12079593" MinValue="9663749">
-					<telerik:MapRange.ShapeFill>
-						<telerik:MapShapeFill Fill="Green" />
-					</telerik:MapRange.ShapeFill>
-				</telerik:MapRange>
-				<telerik:MapRange MaxValue="14495437" MinValue="12079593">
-					<telerik:MapRange.ShapeFill>
-						<telerik:MapShapeFill Fill="GreenYellow" />
-					</telerik:MapRange.ShapeFill>
-				</telerik:MapRange>
-				<telerik:MapRange MaxValue="16911282" MinValue="14495437">
-					<telerik:MapRange.ShapeFill>
-						<telerik:MapShapeFill Fill="Yellow" />
-					</telerik:MapRange.ShapeFill>
-				</telerik:MapRange>
-			</telerik:ColorMeasureScale.RangeCollection>
-		</telerik:ColorMeasureScale>
-	</telerik:VisualizationLayer.Colorizer>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_5-xaml' />
 
 In the snapshots below you can see how the above example will be displayed
 
@@ -185,52 +88,7 @@ The __ColorMeasureScale__ can apply a different color to each range it creates. 
 In case you have more ranges than colors the specified colors will be used as gradient stops along the scale to create filling for all ranges. For example if you want to have the same highlight color for all of the ranges, you just define one entry in the __HighlightFillCollection__ property.
         
 
-```XAML
-    <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-        <telerik:RadMap.Provider>
-            <telerik:EmptyProvider />
-        </telerik:RadMap.Provider>
-        <telerik:VisualizationLayer Name="visualizationLayer">
-            <telerik:VisualizationLayer.Colorizer>
-                <telerik:ColorMeasureScale ExtendedPropertyName="SQKM"
-                                           Mode="Count"
-                                           TickMarkCount="10">
-                    <telerik:ColorMeasureScale.ShapeFillCollection>
-                        <telerik:MapShapeFill Fill="#FFF0D9"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFE4BA"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFDBA3"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFD28D"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFBF5C"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFAF33"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#E2942D"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                    </telerik:ColorMeasureScale.ShapeFillCollection>
-                    <telerik:ColorMeasureScale.HighlightFillCollection>
-                        <telerik:MapShapeFill Fill="Orange"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                    </telerik:ColorMeasureScale.HighlightFillCollection>
-                </telerik:ColorMeasureScale>
-            </telerik:VisualizationLayer.Colorizer>
-            <telerik:VisualizationLayer.Reader>
-                <telerik:AsyncShapeFileReader DataSource="/TestMapFeatures;component/Resources/GeoData/world.dbf" Source="/TestMapFeatures;component/Resources/GeoData/world.shp" />
-            </telerik:VisualizationLayer.Reader>
-        </telerik:VisualizationLayer>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_6-xaml' />
 
 >With the approach shown above any 2 shapes (even if they are neighbors) may be colored equally. To avoid this you should use the [Graph Colorizer]({%slug radmap-visualization-layer-graph-colorizer%}).
 
@@ -239,149 +97,17 @@ In case you have more ranges than colors the specified colors will be used as gr
 The ranges for the __ColorMeasureScale__ can be defined in several different ways. The first one is by only using the __Mode__ and the __TickMarkCount__ or __TickMarkStep__ property. This approach is applicable when using the __VisualizationLayer__ object together with one of the asynchronous shape readers (AsyncShapeFileReader, for example). Here is an example:
         
 
-```XAML
-    <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-        <telerik:RadMap.Provider>
-            <telerik:EmptyProvider />
-        </telerik:RadMap.Provider>
-        <telerik:VisualizationLayer Name="visualizationLayer">
-            <telerik:VisualizationLayer.Colorizer>
-                <telerik:ColorMeasureScale ExtendedPropertyName="SQKM"
-                                           Mode="Count"
-                                           TickMarkCount="7">
-                    <telerik:ColorMeasureScale.ShapeFillCollection>
-                        <telerik:MapShapeFill Fill="#FFF0D9"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFE4BA"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFDBA3"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFD28D"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFBF5C"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFAF33"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#E2942D"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                    </telerik:ColorMeasureScale.ShapeFillCollection>
-                    <telerik:ColorMeasureScale.HighlightFillCollection>
-                        <telerik:MapShapeFill Fill="Orange"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                    </telerik:ColorMeasureScale.HighlightFillCollection>
-                </telerik:ColorMeasureScale>
-            </telerik:VisualizationLayer.Colorizer>
-            <telerik:VisualizationLayer.Reader>
-                <telerik:AsyncShapeFileReader DataSource="/TestMapFeatures;component/Resources/GeoData/world.dbf" Source="/TestMapFeatures;component/Resources/GeoData/world.shp" />
-            </telerik:VisualizationLayer.Reader>
-        </telerik:VisualizationLayer>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_7-xaml' />
 
 Another approach is to manually define the __Min__ and __Max__ values of the __ColorMeasureScale__ object and to use the __Mode__ property together with the __TickMarkCount__ or __TickMarkStep__ property. This approach is useful, when having __VisualizationLayer__ that displays manually generated shapes.
         
 
-```XAML
-	
-    <telerik:RadMap x:Name="radMap" ZoomLevel="1">
-        <telerik:RadMap.Provider>
-            <telerik:EmptyProvider />
-        </telerik:RadMap.Provider>
-        <telerik:VisualizationLayer Name="visualizationLayer">
-            <telerik:VisualizationLayer.Colorizer>
-                <telerik:ColorMeasureScale ExtendedPropertyName="SQKM"
-                                           MaxValue="17000000"
-                                           MinValue="0"
-                                           Mode="Count"
-                                           TickMarkCount="10">
-                    <telerik:ColorMeasureScale.ShapeFillCollection>
-                        <telerik:MapShapeFill Fill="#FFF0D9"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFE4BA"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFDBA3"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFD28D"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFBF5C"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#FFAF33"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                        <telerik:MapShapeFill Fill="#E2942D"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                    </telerik:ColorMeasureScale.ShapeFillCollection>
-                    <telerik:ColorMeasureScale.HighlightFillCollection>
-                        <telerik:MapShapeFill Fill="Orange"
-                                              Stroke="#B1946D"
-                                              StrokeThickness="1" />
-                    </telerik:ColorMeasureScale.HighlightFillCollection>
-                </telerik:ColorMeasureScale>
-            </telerik:VisualizationLayer.Colorizer>
-        </telerik:VisualizationLayer>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_8-xaml' />
 
 Additionally with the __Min__ and __Max__ values defined you can directly define the desired ranges at design-time via the __RangeCollection__ property of the __ColorMeasureScale__ object. In this case you can either use the __HighlightFillCollection__ and __ShapeFillCollection__ properties, or specify the desired colors via the __HighlightFill__ and __ShapeFill__ properties of the __MapRange__ object. Here is an example.
 
 
-```XAML
-    <telerik:VisualizationLayer.Colorizer>
-        <telerik:ColorMeasureScale ExtendedPropertyName="SQKM" Mode="RangesPredefinedColors">
-            <telerik:ColorMeasureScale.RangeCollection>
-                <telerik:MapRange MaxValue="2416216" MinValue="0">
-                    <telerik:MapRange.ShapeFill>
-                        <telerik:MapShapeFill Fill="DarkBlue" />
-                    </telerik:MapRange.ShapeFill>
-                </telerik:MapRange>
-                <telerik:MapRange MaxValue="4832060" MinValue="2416216">
-                    <telerik:MapRange.ShapeFill>
-                        <telerik:MapShapeFill Fill="Blue" />
-                    </telerik:MapRange.ShapeFill>
-                </telerik:MapRange>
-                <telerik:MapRange MaxValue="7247904" MinValue="4832060">
-                    <telerik:MapRange.ShapeFill>
-                        <telerik:MapShapeFill Fill="SkyBlue" />
-                    </telerik:MapRange.ShapeFill>
-                </telerik:MapRange>
-                <telerik:MapRange MaxValue="9663749" MinValue="7247904">
-                    <telerik:MapRange.ShapeFill>
-                        <telerik:MapShapeFill Fill="Aqua" />
-                    </telerik:MapRange.ShapeFill>
-                </telerik:MapRange>
-                <telerik:MapRange MaxValue="12079593" MinValue="9663749">
-                    <telerik:MapRange.ShapeFill>
-                        <telerik:MapShapeFill Fill="Green" />
-                    </telerik:MapRange.ShapeFill>
-                </telerik:MapRange>
-                <telerik:MapRange MaxValue="14495437" MinValue="12079593">
-                    <telerik:MapRange.ShapeFill>
-                        <telerik:MapShapeFill Fill="GreenYellow" />
-                    </telerik:MapRange.ShapeFill>
-                </telerik:MapRange>
-                <telerik:MapRange MaxValue="16911282" MinValue="14495437">
-                    <telerik:MapRange.ShapeFill>
-                        <telerik:MapShapeFill Fill="Yellow" />
-                    </telerik:MapRange.ShapeFill>
-                </telerik:MapRange>
-            </telerik:ColorMeasureScale.RangeCollection>
-        </telerik:ColorMeasureScale>
-    </telerik:VisualizationLayer.Colorizer>
-```
+<snippet id='radmap-features-visualization-layer-colorizer-block_9-xaml' />
 
 ## See Also
  * [Map Legend]({%slug radmap-features-map-legend%})

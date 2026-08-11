@@ -34,19 +34,9 @@ __SelectedItems__ is a collection of items containing all selected items in the 
 
 __Example 1: Working with SelectedItem and SelectedItems__
 
-```C#
-	private void AutoComplete_SelectionChanged(object sender, SelectionChangedEventArgs e)
-	{
-		var selectedCountries = autoComplete.SelectedItems;
-		var firstSelectedCountry = autoComplete.SelectedItem as Country;
-	}
-```
-```VB.NET	
-	Private Sub AutoComplete_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
-		Dim selectedCountries = autoComplete.SelectedItems
-		Dim firstSelectedCountry = TryCast(autoComplete.SelectedItem, Country)
-	End Sub
-```
+<snippet id='radautocompletebox-features-selection-example_1_working_with_selecteditem_and_selecteditems-cs' />
+<snippet id='radautocompletebox-features-selection-example_1_working_with_selecteditem_and_selecteditems-vb' />
+
 
 ## See Also
 

@@ -46,12 +46,7 @@ Here is an example usage of these commands:
 
 
 
-```XAML
-    <telerik:RadButton Content="New Comment" 
-                       Command="{Binding ElementName=radRichTextBox, Path=Commands.InsertCommentCommand}" />
-    <CheckBox Content="Show Comments" 
-              telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding ElementName=radRichTextBox, Path=Commands.ToggleCommentsCommand}" />
-```
+<snippet id='radrichtextbox-features-comments-block_1-xaml' />
 
 
 
@@ -104,23 +99,7 @@ You can customize the looks of the comments by attaching to the __CommentShowing
 
 
 
-```C#
-    private void RadRichTexBox_CommentShowing(object sender, CommentShowingEventArgs e)
-    {
-        if (e.Comment.Author == "Boss")
-        {
-            e.AppearanceSettings.BorderBrush = new SolidColorBrush(Colors.Red);
-            e.AppearanceSettings.BackgroundBrush = new SolidColorBrush(Colors.Orange);
-            e.AppearanceSettings.HighlightColor = Colors.Orange;
-        }
-        else
-        {
-            e.AppearanceSettings.BorderBrush = new SolidColorBrush(Colors.Green);
-            e.AppearanceSettings.BackgroundBrush = new SolidColorBrush(Colors.LightGray);
-            e.AppearanceSettings.HighlightColor = Colors.LightGray;
-        }
-    }
-```
+<snippet id='radrichtextbox-features-comments-block_2-cs' />
 
 
 

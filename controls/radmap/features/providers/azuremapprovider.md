@@ -19,13 +19,7 @@ The `RadMap` control supports visualizing tile data using the [Azure Maps servic
 To use this provider, create a new AzureMapProvider instance and add it to the `Providers` collection of the RadMap control. After that, you will need to set the subscription key of the user's Azure account to the `SubscriptionKey` property of the AzureMapProvider instance. To obtain a key, you can review the [Manage authentication in Azure Maps](https://learn.microsoft.com/en-gb/azure/azure-maps/how-to-manage-authentication#view-authentication-details/) article.
 
 __Adding the AzureMapProvider to the RadMap control__
-```XAML
-    <telerik:RadMap>
-        <telerik:RadMap.Providers>
-            <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key"/>
-        </telerik:RadMap.Providers>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-providers-azuremapprovider-block_1-xaml' />
 
 __RadMap with AzureMapProvider__
 
@@ -44,14 +38,7 @@ When using the AzureMapProvider, you have to display an attribution copyright la
 The Azure Maps services provide a set of different map layers ([tilesets](https://learn.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tileset?tabs=HTTP#tilesetid)). The AzureMapProvider class will allow you to specify one of these raster or vector tilesets, by setting the `TileSet` property.
 
 __Specifying the tileset__
-```XAML
-    <telerik:RadMap x:Name="map">
-        <telerik:RadMap.Providers>
-            <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key"
-                                      TileSet="DarkGrey"/>
-        </telerik:RadMap.Providers>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-providers-azuremapprovider-block_2-xaml' />
 
 __AzureMapProvider with specified tileset__
 
@@ -60,19 +47,7 @@ __AzureMapProvider with specified tileset__
 By default RadMap's navigation UI doesn't display any modes for the AzureMapProvider. To enable this, set the provider's `UserAccessibleModes` collection property.
 
 __Setting the tileset modes__
-```XAML
-    <telerik:RadMap>
-        <telerik:RadMap.Providers>
-            <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key"
-                                      TileSet="DarkGrey">
-                <telerik:AzureMapProvider.UserAccessibleModes>
-                    <telerik:AzureTileSet>DarkGrey</telerik:AzureTileSet>
-                    <telerik:AzureTileSet>HybridDarkGrey</telerik:AzureTileSet>
-                </telerik:AzureMapProvider.UserAccessibleModes>
-            </telerik:RadMap.Providers>
-        </telerik:AzureMapProvider>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-providers-azuremapprovider-block_3-xaml' />
 
 __AzureMapProvider with specified AzureTileSet instances for the UserAccessibleModes property__
 
@@ -95,52 +70,7 @@ The event arguments of the NoStyleVectorTileRendering event are of the type `NoS
 >important The NoStyleVectorTileRendering event will be raised when the `IgnoreStyle` property of the AzureMapProvider instance is set to `False`.
 
 __Manually customizing the appearance the vector tiles__
-```C#
-    private void AzureMapsProvider_NoStyleVectorTileRendering(object sender, NoStyleVectorTileRenderingEventArgs e)
-    {
-        VectorTileLayerRenderInfo trafficLayer = e.Layers.Where(x => x.Name == "Traffic flow").FirstOrDefault();
-    
-        if (trafficLayer != null)
-        {
-            foreach (VectorTileFeatureRenderInfo featureInfo in trafficLayer.Features)
-            {
-                // Set layer type 
-                featureInfo.LayerType = Telerik.Windows.Controls.Map.VectorTiles.Styles.LayerType.Line;
-    
-                // Get data values from Properties.
-                double trafficValue = (double)featureInfo.Properties["traffic_level"];
-    
-                if (trafficValue < 0)
-                {
-                    featureInfo.Cancel = true;
-                }
-    
-                if (!featureInfo.Cancel)
-                {
-                    featureInfo.Paint.LineWidth = 2;
-    
-                    this.SetLineColor(featureInfo, trafficValue);
-                }
-            }
-        }
-    }
-    
-    private void SetLineColor(VectorTileFeatureRenderInfo featureInfo, double trafficValue)
-    {
-        if (trafficValue >= 0 && trafficValue < 50)
-        {
-            featureInfo.Paint.LineColor = Brushes.Green.Color;
-        }
-        else if (trafficValue >= 50 && trafficValue < 65)
-        {
-            featureInfo.Paint.LineColor = Brushes.Yellow.Color;
-        }
-        else if (trafficValue >= 65)
-        {
-            featureInfo.Paint.LineColor = Brushes.Red.Color;
-        }
-    }
-```
+<snippet id='radmap-features-providers-azuremapprovider-block_4-cs' />
 
 __Manually customizing the appearance the vector tiles__
 
@@ -155,13 +85,7 @@ The Azure Maps services provide a culture parameter in its URL address and the A
 >tip Check the [Localization support in Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/supported-languages) article for the supported languages of the Azure Maps services.
 
 __Setting the Langauge property of the AzureMapProvider__
-```XAML
-    <telerik:RadMap x:Name="radMap">
-        <telerik:RadMap.Provider>
-            <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key" Language="bg-BG"/>
-        </telerik:RadMap.Provider>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-providers-azuremapprovider-block_5-xaml' />
 
 __AzureMapProvider with localized tile sets__
 
@@ -172,10 +96,4 @@ __AzureMapProvider with localized tile sets__
 The AzureMapProvider provides the functionality to specify the [Render](https://learn.microsoft.com/en-us/rest/api/maps/render?view=rest-maps-2025-01-01) Rest API version of the Azure Maps services. This is done via the `APIVersion` property of the provider. The lastest version of the Render Rest API is __2024-04-01__ and the AzureMapProvider uses it.
 
 __Setting a previous version of the Render Rest API version__
-```XAML
-    <telerik:RadMap x:Name="radMap">
-        <telerik:RadMap.Provider>
-            <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key" APIVersion="2022-08-01"/>
-        </telerik:RadMap.Provider>
-    </telerik:RadMap>
-```
+<snippet id='radmap-features-providers-azuremapprovider-block_6-xaml' />

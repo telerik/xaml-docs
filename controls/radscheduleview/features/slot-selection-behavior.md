@@ -24,57 +24,26 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 
 
 
-```C#
-	public class CustomSlotSelectionBehavior : SlotSelectionBehavior
-	{
-	}
-```
+<snippet id='radscheduleview-features-slot-selection-behavior-block_1-cs' />
 
 * Override the GetSelectionOverride method:
 
 
 
-```C#
-	public class CustomSlotSelectionBehavior : SlotSelectionBehavior
-	{
-		protected override Slot GetSelectionOverride(SlotSelectionState state, Slot currentSlot)
-		{
-			Slot newSlotSelection = new Slot(currentSlot.Start, currentSlot.End.AddMinutes(30));
-			return base.GetSelectionOverride(state, newSlotSelection);
-		}
-	}
-```
+<snippet id='radscheduleview-features-slot-selection-behavior-block_2-cs' />
 
 * All that is left is to attach the newly create custom behavior to the ScheduleView control:
 
 
 
 
-```XAML
-	<telerik:RadScheduleView>
-		...
-		<telerik:RadScheduleView.SlotSelectionBehavior>
-			<local:CustomSlotSelectionBehavior/>
-		</telerik:RadScheduleView.SlotSelectionBehavior>
-		...
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-slot-selection-behavior-block_3-xaml' />
 
 Finally the ScheduleView control in the XAML should look like this:
 
 
 
-```XAML
-	<telerik:RadScheduleView>
-		...
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition MinorTickLength="30min" MajorTickLength="2h"/>
-		</telerik:RadScheduleView.ViewDefinitions>
-		<telerik:RadScheduleView.SlotSelectionBehavior>
-			<local:CustomSlotSelectionBehavior/>
-		</telerik:RadScheduleView.SlotSelectionBehavior>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-slot-selection-behavior-block_4-xaml' />
 
 The end result is:
 

@@ -28,20 +28,8 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup>
-	            <telerik:RadPane x:Name="radPane" Header="Pane 1">
-	                <TextBlock Text="Some simple text here"/>
-	            </telerik:RadPane>
-	            <telerik:RadPane x:Name="radPane2" Header="Pane 2">
-	                <TextBlock Text="Some simple text here"/>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-how-to-implement-conditional-docking-block_1-xaml' />
+
 
 When you try to drag and dock the "Pane 2", then all [compass indicators]({%slug raddocking-features-compass%}) are available.
 
@@ -53,9 +41,8 @@ Attach to the __PreviewShowCompass__ event of the __RadDocking__ control.
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking1" PreviewShowCompass="radDocking_PreviewShowCompass">
-```
+<snippet id='raddocking-how-to-implement-conditional-docking-block_2-xaml' />
+
 
 Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compass__ property. You need to use the __Is<*>IndicatorVisible__ series of properties of the __Compass__ class in order to disable any of the compass indicators.
 
@@ -63,17 +50,10 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 
 
-```C#
-	private void radDocking_PreviewShowCompass(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
-	{
-	    e.Compass.IsLeftIndicatorVisible = false;
-	}
-```
-```VB.NET
-	Private Sub radDocking_PreviewShowCompass(sender As Object, e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-		e.Compass.IsLeftIndicatorVisible = False
-	End Sub
-```
+<snippet id='raddocking-how-to-implement-conditional-docking-block_3-cs' />
+
+<snippet id='raddocking-how-to-implement-conditional-docking-block_3-vb' />
+
 
 ![{{ site.framework_name }} RadDocking without Left Compass](images/RadDocking_HowTo_ConditionalDocking_020.png)
 
@@ -81,19 +61,10 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 
 
-```C#
-	private void radDocking_PreviewShowCompass1(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
-	{
-	    e.Compass.IsLeftIndicatorVisible = false;
-	    e.Compass.IsTopIndicatorVisible = false;
-	}
-```
-```VB.NET
-	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-		e.Compass.IsLeftIndicatorVisible = False
-		e.Compass.IsTopIndicatorVisible = False
-	End Sub
-```
+<snippet id='raddocking-how-to-implement-conditional-docking-block_4-cs' />
+
+<snippet id='raddocking-how-to-implement-conditional-docking-block_4-vb' />
+
 
  ![{{ site.framework_name }} RadDocking without Top and Left Compasses](images/RadDocking_HowTo_ConditionalDocking_030.png)
 
@@ -101,21 +72,10 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 
 
-```C#
-	private void radDocking_PreviewShowCompass2(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
-	{
-	    e.Compass.IsLeftIndicatorVisible = false;
-	    e.Compass.IsTopIndicatorVisible = false;
-	    e.Compass.IsRightIndicatorVisible = false;
-	}
-```
-```VB.NET
-	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-		e.Compass.IsLeftIndicatorVisible = False
-		e.Compass.IsTopIndicatorVisible = False
-		e.Compass.IsRightIndicatorVisible = False
-	End Sub
-```
+<snippet id='raddocking-how-to-implement-conditional-docking-block_5-cs' />
+
+<snippet id='raddocking-how-to-implement-conditional-docking-block_5-vb' />
+
 
 ![{{ site.framework_name }} RadDocking with Only Bottom Compass](images/RadDocking_HowTo_ConditionalDocking_040.png)
 
@@ -123,23 +83,10 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 
 
-```C#
-	private void radDocking_PreviewShowCompass3(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
-	{
-	    e.Compass.IsLeftIndicatorVisible = false;
-	    e.Compass.IsTopIndicatorVisible = false;
-	    e.Compass.IsRightIndicatorVisible = false;
-	    e.Compass.IsBottomIndicatorVisible = false;
-	}
-```
-```VB.NET
-	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-		e.Compass.IsLeftIndicatorVisible = False
-		e.Compass.IsTopIndicatorVisible = False
-		e.Compass.IsRightIndicatorVisible = False
-		e.Compass.IsBottomIndicatorVisible = False
-	End Sub
-```
+<snippet id='raddocking-how-to-implement-conditional-docking-block_6-cs' />
+
+<snippet id='raddocking-how-to-implement-conditional-docking-block_6-vb' />
+
 
 ![{{ site.framework_name }} RadDocking without Any Compasses](images/RadDocking_HowTo_ConditionalDocking_050.png)
 
@@ -147,25 +94,10 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 
 
-```C#
-	private void radDocking_PreviewShowCompass4(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
-	{
-	    e.Compass.IsLeftIndicatorVisible = false;
-	    e.Compass.IsTopIndicatorVisible = false;
-	    e.Compass.IsRightIndicatorVisible = false;
-	    e.Compass.IsBottomIndicatorVisible = false;
-	    e.Compass.IsCenterIndicatorVisible = false;
-	}
-```
-```VB.NET
-	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-		e.Compass.IsLeftIndicatorVisible = False
-		e.Compass.IsTopIndicatorVisible = False
-		e.Compass.IsRightIndicatorVisible = False
-		e.Compass.IsBottomIndicatorVisible = False
-		e.Compass.IsCenterIndicatorVisible = False
-	End Sub
-```
+<snippet id='raddocking-how-to-implement-conditional-docking-block_7-cs' />
+
+<snippet id='raddocking-how-to-implement-conditional-docking-block_7-vb' />
+
 
 In the last case, all compass indicators are disabled.
 

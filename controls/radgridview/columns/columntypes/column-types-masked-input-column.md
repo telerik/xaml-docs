@@ -27,18 +27,8 @@ For example add a __GridViewMaskedInputColumn__ that represents the OrderNumber 
 
 __Example 1: Define GridViewMaskedInputColumn in XAML:__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	         AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewMaskedInputColumn DataMemberBinding="{Binding OrderNO}" 
-	                           Header="Order No."
-	                           UniqueName="OrederNo"
-	                           MaskType="Standard"
-	                           Mask="SO#####"/>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-masked-input-column-example_1_define_gridviewmaskedinputcolumn_in_xaml-xaml' />
+
 
 ## See Also
 * [RadMaskedInput Overview]({%slug radmaskedinput-overview%})

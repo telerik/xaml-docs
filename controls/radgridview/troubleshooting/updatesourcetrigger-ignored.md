@@ -24,16 +24,8 @@ You can overcome that by using the __CellEditTemplate__ property of the column a
 
 __Example 1: Setting the UpdateSourceTrigger of a binding to a Property of the element in the CellEditTemplate__
 
-```XAML
-	<!-- In this example we have a column bound to the Name property of our model-->
-    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
-        <telerik:GridViewDataColumn.CellEditTemplate>
-            <DataTemplate>
-                <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
-            </DataTemplate>
-        </telerik:GridViewDataColumn.CellEditTemplate>
-    </telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-troubleshooting-updatesourcetrigger-ignored-example_1_setting_the_updatesourcetrigger_of_a_binding_to_a_property_of_the_element_in_the_celledittemplate-xaml' />
+
      
 ## See Also
 

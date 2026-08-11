@@ -35,19 +35,14 @@ When you want to create a new appointment and show the EditAppointmentDialog, th
 The difference between both commands is when neither the parameter nor the `SelectedSlot` is set. In this case only the `CreateAppointmentWithDialog` command will show EditAppointmentDialog for the first visible slot, while `CreateAppointment` command won’t be executed.
 
   
-```C#
-	RadScheduleViewCommands.CreateAppointment.Execute(null, ScheduleView);
-	RadScheduleViewCommands.CreateAppointmentWithDialog.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_1-cs' />
 
 ## CreateInlineAppointment Command
 
 Use it when you want to create a new appointment via the inline editing. If no parameter is passed, the `SelectedSlot` of `RadScheduleView` will be used for the new appointment start and end dates. If you want to explicitly specify which will be the start and end date you should pass a parameter of type `IDateSpan` (for example `Slot` is an IDateSpan):
 
    
-```C#
-	RadScheduleViewCommands.CreateInlineAppointment.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_2-cs' />
 
 >IsInlineEditingEnabled property of the RadScheduleView should be set in order to use the command.     		
 
@@ -56,18 +51,14 @@ Use it when you want to create a new appointment via the inline editing. If no p
 Use it when you want to show the edit dialog for an appointment. If no parameters are passed it uses the `SelectedAppointment` of `RadScheduleView`. By default this command is bound to double click on appointment.
 
   
-```C#
-	RadScheduleViewCommands.EditAppointment.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_3-cs' />
 
 ## DeleteAppointment Command
 
 When you want to remove an appointment from `AppointmentsSource` collection, then you need to use the `DeleteAppointment` command. If no parameter is passed the `SelectedAppointment` will be used.
 
   
-```C#
-	RadScheduleViewCommands.DeleteAppointment.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_4-cs' />
 
 ## EditRecurrenceRule Command
 
@@ -86,46 +77,35 @@ If you want to edit the master appointment, when the user has initiated editing 
 Executing this command will result in setting the RadScheduleView’s `ActiveViewDefinition` property to `DayViewDefinition`.
 
   
-```C#
-	RadScheduleViewCommands.SetDayViewMode.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_5-cs' />
 
 ## SetWeekViewMode Command
 
 Executing this command will result in setting the RadScheduleView's `ActiveViewDefinition` property to `WeekViewDefinition`.
 
   
-```C#
-	RadScheduleViewCommands.SetWeekViewMode.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_6-cs' />
 
 ## SetMonthViewMode Command
 
 Executing this command will result in setting the RadScheduleView's `ActiveViewDefinition` property to `MonthViewDefinition`.
 
   
-```C#
-	RadScheduleViewCommands.SetMonthViewMode.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_7-cs' />
 
 ## SetTimelineViewMode Command
 
 Executing this command will result in setting the RadScheduleView's `ActiveViewDefinition` property to `TimelineViewDefinition`.
 
 
-```C#
-	RadScheduleViewCommands.SetTimelineViewMode.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_8-cs' />
 
 ## IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands
 
 Increases/decreases the first visible date with n months or days, where n is the value of the `LargeChangeInterval` property of the ActiveViewDefinition. Executing this command is equivalent to changing the displayed days using the navigation buttons.
 
 
-```C#
-	RadScheduleViewCommands.IncreaseVisibleDateLarge.Execute(null, ScheduleView);
-	RadScheduleViewCommands.DecreaseVisibleDateLarge.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_9-cs' />
 
 ## SetAppointmentImportance Command
 
@@ -136,19 +116,14 @@ When you want to set the Appointment's Importance property, then you need to exe
 Use these commands when you want to navigate to the previous/next appointment outside the visible range:
 
   
-```C#
-	RadScheduleViewCommands.GoToPreviousAppointment.Execute(null, ScheduleView);
-	RadScheduleViewCommands.GoToNextAppointment.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_10-cs' />
 
 ## SetToday Command
 
 You can use the `SetToday` command to navigate to the current day in the active view definition.
 
   
-```C#
-	RadScheduleViewCommands.SetToday.Execute(null, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_11-cs' />
 
 ## RestoreOriginalOccurrence Command
 
@@ -163,33 +138,25 @@ Executing this command will result in setting the RadScheduleView's `ActiveViewD
 The `CommitEditAppointment` command allows you to commit the currently edited appointment.
 
 
-```C#
-	RadScheduleViewCommands.CommitEditAppointment.Execute(appointment, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_12-cs' />
 
 ## BeginEditAppointment Command
 
 You can use the `BeginEditAppointment` command to begin an editing proccess of an appointment.
 
 
-```C#
-	RadScheduleViewCommands.BeginEditAppointment.Execute(appointment, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_13-cs' />
 
 ## BeginInlineEditing Command
 
 The `BeginInlineEditing` command starts an inline editing process of an appointment.
 
 
-```C#
-	RadScheduleViewCommands.BeginInlineEditing.Execute(appointment, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_14-cs' />
 
 ## CancelEditAppointment Command
 
 The `CancelEditAppointment` allows you to cancel the editting of the current appointment and revert the applied changes.
 
 
-```C#
-	RadScheduleViewCommands.CancelEditAppointment.Execute(appointment, ScheduleView);
-```
+<snippet id='radscheduleview-features-commands-block_15-cs' />

@@ -28,17 +28,7 @@ You can find more info [here](http://www.telerik.com/help/wpf/installation-insta
 Here is a simple definition of a RadMaskedDateTimeInput control:
 
 __Define RadMaskedDateTimeInput in XAML__
-```XAML
-	<telerik:RadMaskedDateTimeInput Width="200"
-	                                Margin="20 20 20 10"
-	                                Culture="en-US"
-	                                EmptyContent="Enter digits"
-	                                InputBehavior="Replace"
-	                                Mask="dd-MM-yyyy"
-	                                SelectionOnFocus="SelectAll"
-	                                TextMode="PlainText"
-	                                UpdateValueEvent="LostFocus" />
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-datetime-block_1-xaml' />
 
 ![{{ site.framework_name }} RadMaskedInput DateTime Mask](images/radmaskedinput_datetimeinput_default.png)
 
@@ -49,60 +39,17 @@ RadMaskedDateTimeInput's `Value` property is of type `DateTime` and you can bind
 >important Binding to the __object__ type is not supported and may result in unpredictable behavior.
 
 __Define the view model__
-```XAML
-	public class ViewModel : ViewModelBase
-	{
-		private DateTime startDate;
-
-		public ViewModel()
-		{
-			this.StartDate = DateTime.Now;
-		}
-
-		public DateTime StartDate
-		{
-			get { return this.startDate; }
-			set
-			{
-				if (this.startDate != value)
-				{
-					this.startDate = value;
-					this.OnPropertyChanged("StartDate");
-				}
-			}
-		}
-	}
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-datetime-block_2-xaml' />
 
 __Binding the Value property__
-```C#
-	<telerik:RadMaskedDateTimeInput Width="200" x:Name="dateTime"
-	                        	Margin="20 20 20 10"
-	                        	Culture="en-US"
-	                        	EmptyContent="Enter digits"
-	                        	InputBehavior="Replace"
-	                        	Mask="dd-MM-yyyy"
-	                        	SelectionOnFocus="SelectAll"
-	                        	TextMode="PlainText"                                    
-	                        	UpdateValueEvent="LostFocus"
-                            		Value="{Binding StartDate}"/>
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-datetime-block_3-cs' />
 
 ## Change AM/PM
 
 With the built-in functionality of the control it is not necessary to type __AM__ or __PM__ in order to change the time period. When the caret is on the time period you can simply press __UP__ or __DOWN__ arrow keys from AM to PM and vice verse. In order to display the time period simply add "t" or "tt" in the Mask property.
 
 __Binding the Value property__
-```C#
-	<telerik:RadMaskedDateTimeInput HorizontalAlignment="Center" 
-	                                Culture="en-US"
-	                                FormatString="{}Day: {0:dd}, Month: {0:MM}, Year: {0:yyyy}, {0:tt}"
-	                                InputBehavior="Replace"
-	                                Mask="dd-MM-yyyy tt"
-	                                SelectionOnFocus="SelectAll"
-	                                TextMode="PlainText"
-	                                UpdateValueEvent="LostFocus" />
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-datetime-block_4-cs' />
 
 __Showing the time period__
 
@@ -114,17 +61,7 @@ __Showing the time period__
 You can further format the entered value by setting the `FormatString` property.
 
 __Setting the FormatString property__
-```XAML
-	<telerik:RadMaskedDateTimeInput HorizontalAlignment="Center"
-                                	VerticalAlignment="Center"
-                            		Culture="en-US"
-                            		FormatString="{}Day: {0:dd}, Month: {0:MM}, Year: {0:yyyy}"
-                            		InputBehavior="Replace"
-                            		Mask="dd-MM-yyyy"
-                            		SelectionOnFocus="SelectAll"
-                            		TextMode="PlainText"
-                            		UpdateValueEvent="LostFocus" />
-```
+<snippet id='radmaskedinput-features-maskedinput-controls-datetime-block_5-xaml' />
 
 __Showing the text value when the control is focused__
 

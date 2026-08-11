@@ -23,13 +23,9 @@ The dialog can be opened from the __Edit Image__ option in the context menu (rig
 The dialog can be shown by executing the `ShowImageEditorDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
 __Executing the show dialog command__
-```C#
-	this.richTextBox.Commands.ShowImageEditorDialogCommand.Execute(null);
-```
+<snippet id='radrichtextbox-dialogs-image-editor-dialog-block_1-cs' />
 
 Alternatively, call the `ShowImageEditorDialog` method of `RadRichTextBox`.
 
 __Using the show dialog method__
-```C#
-	this.richTextBox.ShowImageEditorDialog();
-```
+<snippet id='radrichtextbox-dialogs-image-editor-dialog-block_2-cs' />

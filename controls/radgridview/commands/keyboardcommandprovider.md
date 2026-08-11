@@ -23,55 +23,10 @@ The custom class responsible for the update of the commands needs to be similar 
 
 
 
-```C#
-	public class CustomKeyboardCommandProvider : DefaultKeyboardCommandProvider
-	{
-	    private GridViewDataControl parentGrid;
-	
-	    public CustomKeyboardCommandProvider(GridViewDataControl grid)
-	     : base(grid)
-	    {
-	        this.parentGrid = grid;
-	    }
-	
-	    public override IEnumerable<ICommand> ProvideCommandsForKey(Key key)
-	    {
-	        List<ICommand> commandsToExecute = base.ProvideCommandsForKey(key).ToList();
-	
-	        if (key == Key.Enter)
-	        {
-	            commandsToExecute.Clear();
-	            commandsToExecute.Add(RadGridViewCommands.CommitEdit);
-	            commandsToExecute.Add(RadGridViewCommands.MoveNext);
-	            commandsToExecute.Add(RadGridViewCommands.BeginEdit);
-	        }
-	
-	        return commandsToExecute;
-	    }
-	}
-```
-```VB.NET
-	Public Class CustomKeyboardCommandProvider
-	    Inherits DefaultKeyboardCommandProvider
-	    Private parentGrid As GridViewDataControl
-	
-	    Public Sub New(grid As GridViewDataControl)
-	        MyBase.New(grid)
-	        Me.parentGrid = grid
-	    End Sub
-	
-	    Public Overrides Function ProvideCommandsForKey(key As Key) As IEnumerable(Of ICommand)
-	        Dim commandsToExecute As List(Of ICommand) = MyBase.ProvideCommandsForKey(key).ToList()
-	        If key = Key.Enter Then
-	            commandsToExecute.Clear()
-	            commandsToExecute.Add(RadGridViewCommands.CommitEdit)
-	            commandsToExecute.Add(RadGridViewCommands.MoveNext)
-	            commandsToExecute.Add(RadGridViewCommands.BeginEdit)
-	        End If
-	        Return commandsToExecute
-	    End Function
-	End Class
-```
+<snippet id='radgridview-commands-keyboardcommandprovider-block_1-cs' />
+
+<snippet id='radgridview-commands-keyboardcommandprovider-block_1-vb' />
+
 
 
 Following up the code-snippet above, a press of Enter key will result in saving the current changes,
@@ -84,12 +39,10 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 
 
 
-```C#
-	this.RadGridView1.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.RadGridView1);
-```
-```VB.NET
-	Me.RadGridView1.KeyboardCommandProvider = New CustomKeyboardCommandProvider(Me.RadGridView1)
-```
+<snippet id='radgridview-commands-keyboardcommandprovider-block_2-cs' />
+
+<snippet id='radgridview-commands-keyboardcommandprovider-block_2-vb' />
+
 
 
 >tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomKeyboardCommandProvider).

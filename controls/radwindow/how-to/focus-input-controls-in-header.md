@@ -15,11 +15,7 @@ By default `RadWindow` handles the mouse events for the elements defined in its 
 This means that placing input controls like `TextBox` or `Button` won't react to the mouse events. To change this behavior, set the `WindowHost.HitTestable` attached property on the corresponding element to `true`.
 
 __Set the WindowHost.HitTestable property__  
-```XAML
-	<telerik:RadWindow.Header>
-		<TextBox Text="{Binding Text}" telerik:WindowHost.HitTestable="True" />
- 	<telerik:RadWindow.Header>
-```
+<snippet id='radwindow-how-to-focus-input-controls-in-header-block_1-xaml' />
 
 ## See Also  
  * [Center the Header of the RadWindow]({%slug radwindow-how-to-center-the-header-of-the-content%})

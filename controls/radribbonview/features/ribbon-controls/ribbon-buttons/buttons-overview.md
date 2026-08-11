@@ -71,15 +71,7 @@ As it was mentioned above all __RadRibbonButtons__ derive from the base button c
 
 Here is an example of a __RadRibbonButton__ with the following properties set.		
 
-```XAML
-	<telerik:RadRibbonButton CollapseToMedium="Never" 
-	                         CollapseToSmall="WhenGroupIsMedium"
-	                         IsAutoSize="True"
-	                         LargeImage="Icons/32/Equation.png"
-	                         Size="Large"
-	                         SmallImage="Icons/16/Equation.png"
-	                         Text="Equation" />
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-buttons-overview-block_1-xaml' />
 
 This button has its initial size set to __Large__ and its text label set to __"Equation"__. As the __IsAutoSize__ property is set to __True__, the button will change its size depending on the __RadRibbonGroup's__ size. The button will also never collapse to its __Medium__ size and will collapse to its Small size when the __RadRibbonGroup__ collapses to __Medium__. 
 ![{{ site.framework_name }} RadRibbonView Large Group Buttons](images/RibbonView_Buttons_Overview_LargeGroup.png)
@@ -94,76 +86,19 @@ There are two ways to implement a custom logic upon a button click - via event h
 
 The first one is the standard way. You have to attach an event handler to the __Click__ event of the button.		
 
-```XAML
-	<telerik:RadRibbonButton CollapseToMedium="Never" 
-	                         ...
-	                         Text="Equation" 
-	                         Click="RadRibbonButton_Click"/>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-buttons-overview-block_2-xaml' />
 
-```C#
-	private void RadRibbonButton_Click(object sender, RoutedEventArgs e)
-	{
-	 //place your custom logic here.
-	}
-```
-```VB.NET
-	Private Sub RadRibbonButton_Click(sender As Object, e As RoutedEventArgs)
-		'place your custom logic here.'
-	End Sub
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-buttons-overview-block_3-cs' />
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-buttons-overview-block_4-vb' />
 
 The other way is to set the __Command__ property to a certain command. Here is an example of the command defined in the code-behind file of your UserControl. In order to create a command you have to create a static read-only instance of {% if site.site_name == 'Silverlight' %}__Telerik.Windows.Controls.RoutedUICommand__{% endif %}{% if site.site_name == 'WPF' %}__System.Windows.Controls.RoutedUICommand__{% endif %} and then add execute and you can execute event handlers to the {% if site.site_name == 'Silverlight' %}__Telerik.Windows.Controls.CommandManager__{% endif %}{% if site.site_name == 'WPF' %}__System.Windows.Controls.CommandManager__{% endif %} class.		
 
-```C#
-	public partial class RibbonButtonsSample : UserControl
-	{
-	   public static readonly RoutedUICommand EquationCommand = new RoutedUICommand(
-	       "Equation",
-	       "EquationCommand",
-	       typeof( RibbonButtonsSample ) );
-	   public RibbonButtonsSample()
-	   {
-	       InitializeComponent();
-	       CommandManager.AddExecutedHandler( this, this.OnExecuted );
-	       CommandManager.AddCanExecuteHandler( this, this.OnCanExecute );
-	   }
-	   private void OnExecuted( object sender, ExecutedRoutedEventArgs e )
-	   {
-	       this.LayoutRoot.Background = new SolidColorBrush( Colors.Blue );
-	   }
-	   private void OnCanExecute( object sender, CanExecuteRoutedEventArgs e )
-	   {
-	       e.CanExecute = true;
-	   }
-	}
-```
-```VB.NET
-	Public Partial Class RibbonButtonsSample
-		Inherits UserControl
-			Public Shared ReadOnly EquationCommand As New RoutedUICommand("Equation", "EquationCommand", GetType(RibbonButtonsSample))
-	
-			Public Sub New()
-				InitializeComponent()
-				CommandManager.AddExecutedHandler(Me, AddressOf Me.OnExecuted)
-				CommandManager.AddCanExecuteHandler(Me, AddressOf Me.OnCanExecute)
-			End Sub
-			Private Sub OnExecuted(sender As Object, e As ExecutedRoutedEventArgs)
-				Me.LayoutRoot.Background = New SolidColorBrush(Colors.Blue)
-			End Sub
-			Private Sub OnCanExecute(sender As Object, e As CanExecuteRoutedEventArgs)
-				e.CanExecute = True
-			End Sub
-	
-	End Class
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-buttons-overview-block_5-cs' />
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-buttons-overview-block_6-vb' />
 
 After that set the __Command__ property of the __RadRibbonButton__ to the {% if site.site_name == 'Silverlight' %}full qualified path to the command. {% endif %}{% if site.site_name == 'WPF' %}static command defined in code behind. {% endif %}
 
-```XAML	
-	<telerik:RadRibbonButton Text="Equation"
-			Command="{x:Static local:RibbonButtonsSample.EquationCommand}" />
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-buttons-overview-block_7-xaml' />
 
 And now if you run your application and hit the 'Equation' button, the background of the user control will be changed to Blue as it is shown on the snapshot below.
 ![{{ site.framework_name }} RadRibbonView Change Background on Click of Button](images/RibbonView_Buttons_Overview_Command.png)
@@ -176,27 +111,7 @@ __RadRibbonView__ allows you to additionally organize your buttons with common f
 
 The next example shows you how to use __RadButtonGroup__.		
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup Header="Font">
-	            <telerik:RadOrderedWrapPanel>
-	                <telerik:RadButtonGroup>
-	                    <telerik:RadRibbonButton
-	                            SmallImage="Images/IconMSOffice/16/font-increasesize.png" />
-	                    <telerik:RadRibbonButton
-	                            SmallImage="Images/IconMSOffice/16/font-decreasesize.png" />
-	                </telerik:RadButtonGroup>
-	                <telerik:RadButtonGroup>
-	                    <telerik:RadRibbonButton
-	                            SmallImage="Images/IconMSOffice/16/ClearFormatting16.png"
-	                            Text="Clear Formatting" />
-	                </telerik:RadButtonGroup>
-	            </telerik:RadOrderedWrapPanel>
-	        </telerik:RadRibbonGroup>
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-buttons-overview-block_8-xaml' />
 
 ![{{ site.framework_name }} RadRibbonView Button Group](images/RibbonView_Buttons_Overview_ButtonGroup.png)
 

@@ -28,19 +28,8 @@ You can modify the menu by using the __ContextMenuTemplate__ property of the __R
 
 
 
-```XAML
-	<telerik:RadPane x:Name="radPane"
-	             Header="Pane 1">
-	    <telerik:RadPane.ContextMenuTemplate>
-	        <DataTemplate>
-	            <telerik:RadContextMenu>
-	                <telerik:RadMenuItem Header="Floating" />
-	                <telerik:RadMenuItem Header="Dockable" />
-	            </telerik:RadContextMenu>
-	        </DataTemplate>
-	    </telerik:RadPane.ContextMenuTemplate>
-	</telerik:RadPane>
-```
+<snippet id='raddocking-features-panes-panes-menu-block_1-xaml' />
+
 
 To make the menu items functional you can use the predefined __RadDocking__ commands, which are located in the __RadDockingCommands__ class:
 
@@ -66,27 +55,12 @@ Here is the final code:
 
 
 
-```XAML
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-```
+<snippet id='raddocking-features-panes-panes-menu-block_2-xaml' />
 
 
 
-```XAML
-	<telerik:RadPane x:Name="radPane1"
-	             Header="Pane 1">
-	    <telerik:RadPane.ContextMenuTemplate>
-	        <DataTemplate>
-	            <telerik:RadContextMenu>
-	                <telerik:RadMenuItem Header="Floating"
-	                                       Command="telerik:RadDockingCommands.Floating" />
-	                <telerik:RadMenuItem Header="Dockable"
-	                                       Command="telerik:RadDockingCommands.Dockable" />
-	            </telerik:RadContextMenu>
-	        </DataTemplate>
-	    </telerik:RadPane.ContextMenuTemplate>
-	    <TextBlock Text="Some simple text here" />
-	</telerik:RadPane>
-```
+
+<snippet id='raddocking-features-panes-panes-menu-block_3-xaml' />
+
 
 ![{{ site.framework_name }} RadDocking with Custom Pane Context Menu](images/RadDocking_Features_Panes_Pane_Menu_02.png)

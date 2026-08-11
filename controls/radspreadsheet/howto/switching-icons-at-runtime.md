@@ -21,10 +21,7 @@ __RadSpreadsheet__ comes with two separate sets of icons that can be used in its
 
 __Example 1: Creating IconSources__
 
-```XAML
-	<telerik:IconSources x:Key="SpreadsheetIconPaths" LightBasePath="/Telerik.Windows.Controls.Spreadsheet;component/Images/Light/"
-                               DarkBasePath="/Telerik.Windows.Controls.Spreadsheet;component/Images/Dark/"/>
-```
+<snippet id='radspreadsheet-howto-switching-icons-at-runtime-block_1-xaml' />
 
 
 >tip To browse all icons you can download the source code of the controls from your Telerik account. The images are located at {%if site.site_name == 'WPF' %}\Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\Spreadsheet\Controls\Images\Light.{%endif%} {%if site.site_name == 'Silverlight' %} \Telerik\_UI\_for\_Silverlight\_Source\_[Version]\Controls\Spreadsheet\Controls\Images\Light.{%endif%}

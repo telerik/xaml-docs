@@ -15,20 +15,13 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 
 ##### 1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__, otherwise you should set it to false:						
 
-```XAML
-	<telerik:RadColorSelector NoColorVisibility="Visible" />
-```
+<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_1-xaml' />
 
-```C#
-	RadColorSelector selector = new RadColorSelector();
-	selector.NoColorVisibility = Visibility.Visible;
-	// selector.NoColorVisibility= Visibility.Collapsed;
-```
-```VB.NET
-	Dim selector As New RadColorSelector()
-	selector.NoColorVisibility = Visibility.Visible
-	' selector.NoColorVisibility= Visibility.Collapsed '
-```
+
+<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_2-cs' />
+
+<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_2-vb' />
+
 
 ![No Color Field](images/NoColorField.png)
 
@@ -36,37 +29,23 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 
 * __StandardPaletteVisibility__
 
-	```XAML
-		<telerik:RadColorSelector StandardPaletteVisibility="Visible" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_3-xaml' />
 
-	```C#
-		RadColorSelector selector = new RadColorSelector();
-		selector.StandardPaletteVisibility = Visibility.Visible;
-		// selector.StandardPaletteVisibility = Visibility.Collapsed;
-	```
-	```VB.NET
-		Dim selector As New RadColorSelector()
-		selector.StandardPaletteVisibility = Visibility.Visible
-		' selector.StandardPaletteVisibility = Visibility.Collapsed '
-	```
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_4-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_4-vb' />
+
 
 * __HeaderPaletteVisibility__
 
-	```XAML
-		<telerik:RadColorSelector HeaderPaletteVisibility="Visible" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_5-xaml' />
+
 	
-	```C#
-		RadColorSelector selector = new RadColorSelector();
-		selector.HeaderPaletteVisibility = Visibility.Visible;
-		// selector.HeaderPaletteVisibility = Visibility.Collapsed;
-	```
-	```VB.NET
-		Dim selector As New RadColorSelector()
-		selector.HeaderPaletteVisibility = Visibility.Visible
-		' selector.HeaderPaletteVisibility =Visibility.Collapsed '
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_6-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_6-vb' />
+
 		
 
 ![Color Picker StructureWPF](images/ColorPickerStructureWPF.png)
@@ -75,45 +54,29 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 
 * StandardPaletteHeaderText
 	
-	```XAML
-		<telerik:RadColorSelector StandardPaletteHeaderText="Header" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_7-xaml' />
+
 	
-	```C#
-		RadColorSelector selector = new RadColorSelector();
-		selector.StandardPaletteHeaderText = "header";
-	```
-	```VB.NET
-		Dim selector As New RadColorSelector()
-		selector.StandardPaletteHeaderText = "header"
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_8-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_8-vb' />
+
 	
 * MainPaletteHeaderText
 	
-	```XAML
-		<telerik:RadColorSelector MainPaletteHeaderText="Header" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_9-xaml' />
+
 	
-	```C#
-		RadColorSelector selector = new RadColorSelector();
-		selector.MainPaletteHeaderText = "header";
-	```
-	```VB.NET
-		Dim selector As New RadColorSelector()
-		selector.MainPaletteHeaderText = "header"
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_10-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_10-vb' />
+
 
 * NoColorText
 	
-	```XAML
-		<telerik:RadColorSelector NoColorText="No Color Text" />
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_11-xaml' />
+
 	
-	```C#
-		RadColorSelector selector = new RadColorSelector();
-		selector.NoColorText = "No Color Text";
-	```
-	```VB.NET
-		Dim selector As New RadColorSelector()
-		selector.NoColorText = "No Color Text"
-	```
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_12-cs' />
+
+	<snippet id='radcolorpicker-features-radcolorselector-colorselector-appearance-block_12-vb' />

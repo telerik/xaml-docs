@@ -16,16 +16,8 @@ AverageTrueRangeIndicator measures the level of volatility across the plotted da
 To set up the indicator you can set its __CategoryBinding, HighBinding, LowBinding, CloseBinding, and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
 __Example 1: Defining AverageTrueRangeIndicator__
-```XAML
-	<telerik:RadCartesianChart.Indicators>
-		<telerik:AverageTrueRangeIndicator Period="5" 
-										   CategoryBinding="Date" 
-                                           HighBinding="High"
-                                           LowBinding="Low"
-                                           CloseBinding="Close" 
-										   ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-averagetruerangeindicator-example_1_defining_averagetruerangeindicator-xaml' />
+
 
 #### Figure 1: AverageTrueRangeIndicator
 <img src="images/radchartview-indicators-averagetruerangeindicator-0.png" style="width: 80%;">

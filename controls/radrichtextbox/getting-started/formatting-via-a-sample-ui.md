@@ -15,19 +15,7 @@ If you want to allow the user to edit and format the content of __RadRichTextBox
 
 __Example 1: Creating Formatting UI__
 
-```XAML
-    <StackPanel Orientation="Horizontal">
-        <ToggleButton Content="B"
-        x:Name="BoldButton"
-        Click="BoldButton_Click" />
-        <ToggleButton Content="I"
-        x:Name="ItalicButton"
-        Click="ItalicButton_Click" />
-        <ToggleButton Content="U"
-        x:Name="UnderlineButton"
-        Click="UnderlineButton_Click" />
-    </StackPanel>
-```
+<snippet id='radrichtextbox-getting-started-formatting-via-a-sample-ui-block_1-xaml' />
 
 
 
@@ -35,37 +23,8 @@ __Example 1: Creating Formatting UI__
 
 __Example 2: Using the Formatting API in Code-Behind__
 
-```C#
-    private void BoldButton_Click(object sender, RoutedEventArgs e)
-    {
-        this.radRichTextBox.ToggleBold();
-        this.radRichTextBox.Focus(); //return focus to the control
-    }
-    private void ItalicButton_Click(object sender, RoutedEventArgs e)
-    {
-        this.radRichTextBox.ToggleItalic();
-        this.radRichTextBox.Focus(); //return focus to the control
-    }
-    private void UnderlineButton_Click(object sender, RoutedEventArgs e)
-    {
-        this.radRichTextBox.ToggleUnderline();
-        this.radRichTextBox.Focus(); //return focus to the control
-    }
-```
-```VB.NET
-	Private Sub BoldButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.radRichTextBox.ToggleBold()
-	    Me.radRichTextBox.Focus()
-	End Sub
-	Private Sub ItalicButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.radRichTextBox.ToggleItalic()
-	    Me.radRichTextBox.Focus()
-	End Sub
-	Private Sub UnderlineButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.radRichTextBox.ToggleUnderline()
-	    Me.radRichTextBox.Focus()
-	End Sub
-```
+<snippet id='radrichtextbox-getting-started-formatting-via-a-sample-ui-block_2-cs' />
+<snippet id='radrichtextbox-getting-started-formatting-via-a-sample-ui-block_3-vb' />
 
 
 
@@ -74,36 +33,8 @@ The UI should also respond when the caret is on a document position where the te
 
 __Example 3: Changing the Toggle State of a Button Depending on the Caret Position__
 
-```C#
-
-	    InitializeComponent();
-	    this.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleCommand_ToggleStateChanged);
-	    this.radRichTextBox.Commands.ToggleItalicCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleCommand_ToggleStateChanged);
-	    this.radRichTextBox.Commands.ToggleUnderlineCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleCommand_ToggleStateChanged);
-	}
-	
-	void ToggleCommand_ToggleStateChanged(object sender, Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
-	{
-	    ToggleButton button = sender as ToggleButton;
-	    if (button != null)
-	    {
-	        button.IsChecked = e.NewValue;
-	    }
-	}
-```
-```VB.NET
-    Public Sub New()
-        InitializeComponent()
-
-        Me.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += New EventHandler(Of Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))(ToggleBoldCommand_ToggleStateChanged)
-        Me.radRichTextBox.Commands.ToggleItalicCommand.ToggleStateChanged += New EventHandler(Of Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))(ToggleItalicCommand_ToggleStateChanged)
-        Me.radRichTextBox.Commands.ToggleUnderlineCommand.ToggleStateChanged += New EventHandler(Of Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))(ToggleUnderlineCommand_ToggleStateChanged)
-    End Sub
-
-    Private Sub ToggleBoldCommand_ToggleStateChanged(sender As Object, e As Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
-        BoldButton.IsChecked = e.NewValue
-    End Sub
-```
+<snippet id='radrichtextbox-getting-started-formatting-via-a-sample-ui-block_4-cs' />
+<snippet id='radrichtextbox-getting-started-formatting-via-a-sample-ui-block_5-vb' />
 
 
 

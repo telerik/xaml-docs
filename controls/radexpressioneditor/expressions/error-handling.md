@@ -13,14 +13,8 @@ position: 0
 As of **R3 2021** the RadExpressionEditor exposes an **ExpressionError** event which is fired when an error occurs while parsing an expression. In addition, an **Errors** property was introduced which holds a collection of the errors from a failed parsing operation.
 
 __Example 1: Handling the ExpressionError event__
-```XAML
-    this.expressionEditor.ExpressionError += (s, e) =>
-    {
-        var errors = string.Join("\n", this.expressionEditor.Errors.Select(er => er.Message));
+<snippet id='radexpressioneditor-expressions-error-handling-example_1_handling_the_expressionerror_event-xaml' />
 
-        // display the errors to the user
-    };
-```
 
 The Errors collection holds instances of the **ExpressionParserError** class which exposes the following members:
 

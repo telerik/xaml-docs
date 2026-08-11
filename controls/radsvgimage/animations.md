@@ -68,9 +68,7 @@ __Sample SVG file with animations__
 ```
 
 __RadSvgImage instance using an SVG file with animations__
-```XAML
-    <telerik:RadSvgImage Width="256" Height="256" UriSource="MySvgWithAnimations.svg"/>
-```
+<snippet id='radsvgimage-animations-block_1-xaml' />
 
 __RadSvgImage displaying an SVG file with animations__
 

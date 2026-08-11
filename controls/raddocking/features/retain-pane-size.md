@@ -24,17 +24,13 @@ The following snippets show how the __RetainPaneSizeMode__ property could be set
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking" RetainPaneSizeMode="Floating">
-	    ...
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-retain-pane-size-block_1-xaml' />
 
 
 
-```C#
-	this.radDocking.RetainPaneSizeMode = RetainSizeMode.Floating;
-```
+
+<snippet id='raddocking-features-retain-pane-size-block_2-cs' />
+
 
 ## None
 
@@ -44,11 +40,8 @@ If a whole __PaneGroup__ (with multiple panes inside) is floated the __FloatingS
 
 
 
-```XAML
-	<telerik:RadPane telerik:RadDocking.FloatingSize="200 200">
-	    ...
-	</telerik:RadPane>
-```
+<snippet id='raddocking-features-retain-pane-size-block_3-xaml' />
+
 
 __Figure 1: __ Floating Pane with a set __FloatingSize__:
 ![{{ site.framework_name }} RadDocking Floating Pane with a set __FloatingSize__:](images/raddocking-features-retain-pane-size-1.png)

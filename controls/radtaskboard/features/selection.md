@@ -25,18 +25,12 @@ To disable the selection functionality you can set the __CanUserSelect__ propert
           
 __Example 1: Set the CanUserSelect property in XAML__
 
-```XAML
-	<telerik:RadTaskBoard x:Name="radTaskBoard" CanUserSelect="False" />	
-```
+<snippet id='radtaskboard-features-selection-block_1-xaml' />
 
 __Example 1: Set the CanUserSelect property in code-behind__
 
-```C#
-	this.radTaskBoard.CanUserSelect = false;
-```
-```VB.NET
-	Me.radTaskBoard.CanUserSelect = False
-```
+<snippet id='radtaskboard-features-selection-block_2-cs' />
+<snippet id='radtaskboard-features-selection-block_3-vb' />
 
 ## Events
 
@@ -44,15 +38,5 @@ The control exposes a __SelectionChanged__ which is fired each time an item has 
 
 __Example 2: Subscribing to the SelectionChanged event__
 
-```C#
-	private void SelectionChanged(object sender, SelectionChangedEventArgs e)
-	{
-		var selectedItem = e.AddedItems[0];
-	}
-```
-```VB.NET
-	Private Sub SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
-		Dim selectedItem = e.AddedItems(0)
-	End Sub
-```
-
+<snippet id='radtaskboard-features-selection-block_4-cs' />
+<snippet id='radtaskboard-features-selection-block_5-vb' />

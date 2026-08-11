@@ -40,12 +40,10 @@ The __TextSearch__ class exposes a static property named __AutoCompleteTimeout__
 
 __Example 1: Setting TextSearch.AutoCompleteTimeout__
 
-```C#
-	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
-```
-```VB.NET
-	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2)
-```
+<snippet id='radcombobox-features-textsearch-example_1_setting_textsearch_autocompletetimeout-cs' />
+
+<snippet id='radcombobox-features-textsearch-example_1_setting_textsearch_autocompletetimeout-vb' />
+
 
 ## See Also
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})

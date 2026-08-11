@@ -54,45 +54,14 @@ For the purposes of this example, the definition of __RadPropertyGrid__ is:
 
 __Example 1: Defining RadPropertyGrid__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="propertyGrid" Item="{Binding Captain}" />
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_1-xaml' />
 
 The property __Captain__ is defined in the ViewModel as follows:
 
 __Example 2: Defining property in the ViewModel__
 
-```C#
-	private Player captain;
-	public Player Captain
-	{
-	    get
-	    {
-	        if (this.captain == null)
-	        {
-	            this.captain = new Player("Pepe Reina", 25, Position.GK, "Spain") { PhoneNumber = new PhoneNumber() { CountryCode = "359", RegionCode = "885", Number = "434343" } };
-	        }
-	        return this.captain;
-	    }
-	}
-```
-```VB.NET
-	Private _captain As Player
-	Public ReadOnly Property Captain() As Player
-	    Get
-	        If Me._captain Is Nothing Then
-	            Me._captain = New Player("Pepe Reina", 25, Position.GK, "Spain") With {
-	                .PhoneNumber = New PhoneNumber() With {
-	                    .CountryCode = "359",
-	                    .RegionCode = "885",
-	                    .Number = "434343"
-	                }
-	            }
-	        End If
-	        Return Me._captain
-	    End Get
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_2-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_2-vb' />
 
 The definitions of the Custom editor __PhoneEditorControl__, the __Player business object__ used and the full implementation of the __PhoneNumber class__ can be found in the [Define Data](#define-data) section.
 
@@ -102,79 +71,15 @@ The definitions of the Custom editor __PhoneEditorControl__, the __Player busine
 
 __Example 3: Specifying the type of the editor__
 
-```C#
-	private PhoneNumber phoneNumber;
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl))]
-	public PhoneNumber PhoneNumber
-	{
-	    get
-	    {
-	        return this.phoneNumber;
-	    }
-	    set
-	    {
-	        if (this.phoneNumber != value)
-	        {
-	            this.phoneNumber = value;
-	            this.OnPropertyChanged("PhoneNumber");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private _phoneNumber As PhoneNumber
-	<Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(PhoneEditorControl))>
-	Public Property PhoneNumber() As PhoneNumber
-	    Get
-	        Return Me._phoneNumber
-	    End Get
-	    Set(ByVal value As PhoneNumber)
-	        If Me._phoneNumber IsNot value Then
-	            Me._phoneNumber = value
-	            Me.OnPropertyChanged("PhoneNumber")
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_3-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_3-vb' />
 
 * __EditorAttribute(string editorTypeName, string assemblyFile)__ – the string representation of the editor's type and the absolute file path of the assembly can be specified:
 
 __Example 4: Specifying the type of the editor as string and passing the absolute file path of the assembly__
 	
-```C#
-	private PhoneNumber phoneNumber;
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl", @"..\..\bin\Debug\PhoneEditor.dll")]
-	public PhoneNumber PhoneNumber
-	{
-	    get
-	    {
-	        return this.phoneNumber;
-	    }
-	    set
-	    {
-	        if (this.phoneNumber != value)
-	        {
-	            this.phoneNumber = value;
-	            this.OnPropertyChanged("PhoneNumber");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private _phoneNumber As PhoneNumber
-	<Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl", "..\..\bin\Debug\PhoneEditor.dll")> _
-	Public Property PhoneNumber() As PhoneNumber
-	    Get
-	        Return Me._phoneNumber
-	    End Get
-	    Set(value As PhoneNumber)
-	        If Not Me._phoneNumber Is value Then
-	            Me._phoneNumber = value
-	            Me.OnPropertyChanged("PhoneNumber")
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_4-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_4-vb' />
 
 
 It will look like:
@@ -187,81 +92,15 @@ __Figure 1__: EditorAtrribute with editorType specified
 
 __Example 5: Specifying the type of the editor and the style of the containing host__
 
-```C#
-	private PhoneNumber phoneNumber;
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl), Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.DropDown)]
-	public PhoneNumber PhoneNumber
-	{
-	    get
-	    {
-	        return this.phoneNumber;
-	    }
-	    set
-	    {
-	        if (this.phoneNumber != value)
-	        {
-	            this.phoneNumber = value;
-	            this.OnPropertyChanged("PhoneNumber");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private _phoneNumber As PhoneNumber
-	<Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(PhoneEditorControl), EditorStyle.DropDown)>
-	Public Property PhoneNumber() As PhoneNumber
-	    Get
-	        Return Me._phoneNumber
-	    End Get
-	    Set(ByVal value As PhoneNumber)
-	        If Me._phoneNumber IsNot value Then
-	            Me._phoneNumber = value
-	            Me.OnPropertyChanged("PhoneNumber")
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_5-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_5-vb' />
 
 * __EditorAttribute(string editorTypeName, string assemblyFile, EditorStyle editorStyle)__ - the style of the containing host can be specified:
 
 __Example 6: Specifying the type of the editor and the absolute file path of the assembly as string, as well the style of the containing host__
 
-```C#
-	private PhoneNumber phoneNumber;
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl", @"..\..\bin\Debug\PhoneEditor.dll",
-	Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
-	public PhoneNumber PhoneNumber
-	{
-	    get
-	    {
-	        return this.phoneNumber;
-	    }
-	    set
-	    {
-	        if (this.phoneNumber != value)
-	        {
-	            this.phoneNumber = value;
-	            this.OnPropertyChanged("PhoneNumber");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private _phoneNumber As PhoneNumber
-	<Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl",
-	    "..\..\bin\Debug\PhoneEditor.dll", Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)> _
-	Public Property PhoneNumber() As PhoneNumber
-	    Get
-	        Return Me._phoneNumber
-	    End Get
-	    Set(value As PhoneNumber)
-	        If Not Me._phoneNumber Is value Then
-	            Me._phoneNumber = value
-	            Me.OnPropertyChanged("PhoneNumber")
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_6-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_6-vb' />
 
 In this case PhoneEditorControl will be defined in a DropDownEditor control and it will look like:
 
@@ -273,75 +112,15 @@ __Figure 2__: EditorAtrribute with editorType and editorStyle specified
 
 __Example 7: Specifying the type of the editor and the target property__
 
-```C#
-	private int number;
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(RadNumericUpDown), "Value")]
-	public int Number
-	{
-	    get { return this.number; }
-	    set
-	    {
-	        if (value != this.number)
-	        {
-	            this.number = value;
-	            this.OnPropertyChanged("Number");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private _number As Integer
-	<Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(RadNumericUpDown), "Value")>
-	Public Property Number() As Integer
-	    Get
-	        Return Me._number
-	    End Get
-	    Set(ByVal value As Integer)
-	        If value <> Me._number Then
-	            Me._number = value
-	            Me.OnPropertyChanged("Number")
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_7-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_7-vb' />
 
 * __EditorAttribute(string editorTypeName, string assemblyFile, string targetProperty)__ - the target property can be specified:
 
 __Example 8: Specifying the type of the editor and the absolute file path of the assembly as string, as well the target property__
 
-```C#
-	private int number;
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("Telerik.Windows.Controls.RadNumericUpDown"
-	    , @"..\..\bin\Debug\Telerik.Windows.Controls.Input.dll", "Value")]
-	public int Number
-	{
-	    get { return this.number; }
-	    set
-	    {
-	        if (value != this.number)
-	        {
-	            this.number = value;
-	            this.OnPropertyChanged("Number");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private _number As Integer
-	<Telerik.Windows.Controls.Data.PropertyGrid.Editor("Telerik.Windows.Controls.RadNumericUpDown",
-	    "..\..\bin\Debug\Telerik.Windows.Controls.Input.dll", "Value")> _
-	Public Property Number() As Integer
-	    Get
-	        Return Me._number
-	    End Get
-	    Set(value As Integer)
-	        If value <> Me._number Then
-	            Me._number = value
-	            Me.OnPropertyChanged("Number")
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_8-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_8-vb' />
 	
 In this case the property from your business object – Number – will be bound to the ValueProperty of RadNumericUpDown control.     
         
@@ -356,77 +135,15 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 
 __Example 9: Specifying the type of the editor, the target property and style of the containing host__
 
-```C#
-	private string name;
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", EditorStyle.Modal)]
-	public string Name
-	{
-	    get { return this.name; }
-	    set
-	    {
-	        if (value != this.name)
-	        {
-	            this.name = value;
-	            this.OnPropertyChanged("Name");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private _name As String
-	<Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(TextBox), "Text", EditorStyle.Modal)>
-	Public Property Name() As String
-	    Get
-	        Return Me._name
-	    End Get
-	    Set(ByVal value As String)
-	        If value <> Me._name Then
-	            Me._name = value
-	            Me.OnPropertyChanged("Name")
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_9-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_9-vb' />
 
 * __EditorAttribute(string editorTypeName, string assemblyFile, string targetProperty, EditorStyle editorStyle)__ - specifying both the target property
 
 __Example 10: Specifying the type of the editor and the absolute file path of the assembly as string, the target property and the style for the containing host__
 
-```C#
-	private string name;
-	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("System.Windows.Controls.TextBox",
-	gram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationFramework.dll",
-	    "Text", Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
-	public string Name
-	{
-	    get { return this.name; }
-	    set
-	    {
-	        if (value != this.name)
-	        {
-	            this.name = value;
-	            this.OnPropertyChanged("Name");
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private _name As String
-	<Telerik.Windows.Controls.Data.PropertyGrid.Editor("System.Windows.Controls.TextBox",
-	    "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationFramework.dll", "Text",
-	    Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)> _
-	Public Property Name() As String
-	    Get
-	        Return Me._name
-	    End Get
-	    Set(value As String)
-	        If value <> Me._name Then
-	            Me._name = value
-	            Me.OnPropertyChanged("Name")
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_10-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_10-vb' />
 
 It will look like:
         
@@ -440,360 +157,21 @@ The definition of the Custom editor __PhoneEditorControl__ is:
 
 __Example 11: Defining the custom editor__
 
-```XAML
-	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-	      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-	      mc:Ignorable="d" >
-	    <UserControl.Resources>
-	        <Style TargetType="TextBox">
-	            <Setter Property="BorderBrush" Value="Transparent" />
-	        </Style>
-	    </UserControl.Resources>
-	
-	    <StackPanel Orientation="Horizontal" Height="20">
-	        <TextBlock Text="+" />
-	        <TextBox Text="{Binding CountryCode, Mode=TwoWay}" />
-	        <TextBlock Text=" (" />
-	        <TextBox Text="{Binding RegionCode, Mode=TwoWay}" />
-	        <TextBlock Text=") " />
-	        <TextBox Text="{Binding Number, Mode=TwoWay}" />
-	    </StackPanel>
-	
-	</UserControl>
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_11-xaml' />
 
 The definition of the __PhoneNumber__ class is:
 
 __Example 12: Defining PhoneNumber object__
 
-```C#
-	public class PhoneNumber : INotifyPropertyChanged
-	{
-	    private string countryCode;
-	    public string CountryCode
-	    {
-	        get
-	        {
-	            return this.countryCode;
-	        }
-	        set
-	        {
-	            if (this.countryCode != value)
-	            {
-	                this.countryCode = value;
-	                this.OnPropertyChanged("CountryCode");
-	            }
-	        }
-	    }
-	
-	    private string number;
-	    public string Number
-	    {
-	        get
-	        {
-	            return this.number;
-	        }
-	        set
-	        {
-	            if (this.number != value)
-	            {
-	                this.number = value;
-	                this.OnPropertyChanged("Number");
-	            }
-	        }
-	    }
-	
-	    private string regionCode;
-	    public string RegionCode
-	    {
-	        get
-	        {
-	            return this.regionCode;
-	        }
-	        set
-	        {
-	            if (this.regionCode != value)
-	            {
-	                this.regionCode = value;
-	                this.OnPropertyChanged("RegionCode");
-	            }
-	        }
-	    }
-	
-	    public event PropertyChangedEventHandler PropertyChanged;
-	
-	    private void OnPropertyChanged(string propertyName)
-	    {
-	        if (this.PropertyChanged != null)
-	            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-	    }
-	}
-```
-```VB.NET
-	Public Class PhoneNumber
-	    Implements INotifyPropertyChanged
-	
-	    Private _countryCode As String
-	    Public Property CountryCode() As String
-	        Get
-	            Return Me._countryCode
-	        End Get
-	        Set(ByVal value As String)
-	            If Me._countryCode <> value Then
-	                Me._countryCode = value
-	                Me.OnPropertyChanged("CountryCode")
-	            End If
-	        End Set
-	    End Property
-	
-	    Private _number As String
-	    Public Property Number() As String
-	        Get
-	            Return Me._number
-	        End Get
-	        Set(ByVal value As String)
-	            If Me._number <> value Then
-	                Me._number = value
-	                Me.OnPropertyChanged("Number")
-	            End If
-	        End Set
-	    End Property
-	
-	    Private _regionCode As String
-	    Public Property RegionCode() As String
-	        Get
-	            Return Me._regionCode
-	        End Get
-	        Set(ByVal value As String)
-	            If Me._regionCode <> value Then
-	                Me._regionCode = value
-	                Me.OnPropertyChanged("RegionCode")
-	            End If
-	        End Set
-	    End Property
-	
-	    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-	
-	    Private Sub OnPropertyChanged(ByVal propertyName As String)
-	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-	    End Sub
-	End Class
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_12-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_12-vb' />
 
 The definition of the __Player business object__ used for the example is:
 
 __Example 13: Defining Player object__
 	
-```C#
-	public class Player : INotifyPropertyChanged
-	{
-	    public event PropertyChangedEventHandler PropertyChanged;
-	
-	    private string name;
-	    private int number;
-	    private Position position;
-	    private string country;
-	    private PhoneNumber phoneNumber;
-	
-	    [Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", EditorStyle.Modal)]
-	    public string Name
-	    {
-	        get { return this.name; }
-	        set
-	        {
-	            if (value != this.name)
-	            {
-	                this.name = value;
-	                this.OnPropertyChanged("Name");
-	            }
-	        }
-	    }
-	
-	    [Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(RadNumericUpDown), "Value")]
-	    public int Number
-	    {
-	        get { return this.number; }
-	        set
-	        {
-	            if (value != this.number)
-	            {
-	                this.number = value;
-	                this.OnPropertyChanged("Number");
-	            }
-	        }
-	    }
-	
-	    public Position Position
-	    {
-	        get { return this.position; }
-	        set
-	        {
-	            if (value != this.position)
-	            {
-	                this.position = value;
-	                this.OnPropertyChanged("Position");
-	            }
-	        }
-	    }
-	
-	    [Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl), Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.DropDown)]
-	    public PhoneNumber PhoneNumber
-	    {
-	        get
-	        {
-	            return this.phoneNumber;
-	        }
-	        set
-	        {
-	            if (this.phoneNumber != value)
-	            {
-	                this.phoneNumber = value;
-	                this.OnPropertyChanged("PhoneNumber");
-	            }
-	        }
-	    }
-	
-	    public string Country
-	    {
-	        get { return this.country; }
-	        set
-	        {
-	            if (value != this.country)
-	            {
-	                this.country = value;
-	                this.OnPropertyChanged("Country");
-	            }
-	        }
-	    }
-	
-	    public Player()
-	    {
-	
-	    }
-	
-	    public Player(string name, int number, Position position, string country)
-	    {
-	        this.name = name;
-	        this.number = number;
-	        this.position = position;
-	        this.country = country;
-	    }
-	
-	    protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
-	    {
-	        PropertyChangedEventHandler handler = this.PropertyChanged;
-	        if (handler != null)
-	        {
-	            handler(this, args);
-	        }
-	    }
-	
-	    private void OnPropertyChanged(string propertyName)
-	    {
-	        this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-	    }
-	}
-```
-```VB.NET
-	Public Class Player
-	    Implements INotifyPropertyChanged
-	
-	    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
-	
-	    Private _name As String
-	    Private _number As Integer
-	    Private _position As Position
-	    Private _country As String
-	    Private _phoneNumber As PhoneNumber
-	
-	    <Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(TextBox), "Text", EditorStyle.Modal)>
-	    Public Property Name() As String
-	        Get
-	            Return Me._name
-	        End Get
-	        Set(ByVal value As String)
-	            If value <> Me._name Then
-	                Me._name = value
-	                Me.OnPropertyChanged("Name")
-	            End If
-	        End Set
-	    End Property
-	
-	    <Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(RadNumericUpDown), "Value")>
-	    Public Property Number() As Integer
-	        Get
-	            Return Me._number
-	        End Get
-	        Set(ByVal value As Integer)
-	            If value <> Me._number Then
-	                Me._number = value
-	                Me.OnPropertyChanged("Number")
-	            End If
-	        End Set
-	    End Property
-	
-	    Public Property Position() As Position
-	        Get
-	            Return Me._position
-	        End Get
-	        Set(ByVal value As Position)
-	            If value <> Me._position Then
-	                Me._position = value
-	                Me.OnPropertyChanged("Position")
-	            End If
-	        End Set
-	    End Property
-	
-	    <Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(PhoneEditorControl), EditorStyle.DropDown)>
-	    Public Property PhoneNumber() As PhoneNumber
-	        Get
-	            Return Me._phoneNumber
-	        End Get
-	        Set(ByVal value As PhoneNumber)
-	            If Me._phoneNumber IsNot value Then
-	                Me._phoneNumber = value
-	                Me.OnPropertyChanged("PhoneNumber")
-	            End If
-	        End Set
-	    End Property
-	
-	    Public Property Country() As String
-	        Get
-	            Return Me._country
-	        End Get
-	        Set(ByVal value As String)
-	            If value <> Me._country Then
-	                Me._country = value
-	                Me.OnPropertyChanged("Country")
-	            End If
-	        End Set
-	    End Property
-	
-	    Public Sub New()
-	
-	    End Sub
-	
-	    Public Sub New(ByVal name As String, ByVal number As Integer, ByVal position As Position, ByVal country As String)
-	        Me._name = name
-	        Me._number = number
-	        Me._position = position
-	        Me._country = country
-	    End Sub
-	
-	    Protected Overridable Sub OnPropertyChanged(ByVal args As PropertyChangedEventArgs)
-	        Dim handler As PropertyChangedEventHandler = Me.PropertyChangedEvent
-	        If handler IsNot Nothing Then
-	            handler(Me, args)
-	        End If
-	    End Sub
-	
-	    Private Sub OnPropertyChanged(ByVal propertyName As String)
-	        Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
-	    End Sub
-	End Class
-```
+<snippet id='radpropertygrid-features-editor-attribute-block_13-cs' />
+<snippet id='radpropertygrid-features-editor-attribute-block_13-vb' />
 
 ## See Also
 

@@ -74,16 +74,7 @@ Tables are one of the most complex elements which can be included in a __RadDocu
 The performance in versions *prior Q1 2014* was also hindered by the [UI layer]({%slug radrichtextbox-features-custom-ui-layers%}) responsible for re-sizing table borders. This can be worked around by removing the layer:        
 
   
-```C#
-    class MyCustomUILayerBuilder : UILayersBuilder
-    {
-        protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
-        {
-            base.BuildUILayersOverride(uiLayerContainer);
-            uiLayerContainer.UILayers.Remove(DefaultUILayers.TableCellBordersResizeLayer);
-        }
-    }
-```
+<snippet id='radrichtextbox-performance-block_1-cs' />
 
 ### Annotations
 

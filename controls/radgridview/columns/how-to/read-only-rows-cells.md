@@ -22,9 +22,8 @@ When you set __IsReadOnlyBinding__ property of RadGridView to True - the __full 
 
 __Example 1: Binding IsReadOnlyBinding at RadGridView level.__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView" IsReadOnlyBinding="{Binding IsActive}" />
-```
+<snippet id='radgridview-columns-how-to-read-only-rows-cells-example_1_binding_isreadonlybinding_at_radgridview_level-xaml' />
+
 
 ## IsReadOnlyBinding at column level [Read Only Cells]
 
@@ -32,15 +31,8 @@ When you set the __IsReadOnlyBinding__ property of the GridViewDataColumn - only
 
 __Example 2: Binding IsReadOnlyBinding at column level.__
 
-```XAML
-	<telerik:RadGridView>
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Age}" 
-	                    IsReadOnlyBinding="{Binding IsActive}" />
-	        <!--...-->
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-how-to-read-only-rows-cells-example_2_binding_isreadonlybinding_at_column_level-xaml' />
+
 
 In both cases the property to which IsReadOnlyBinding is bound is exposed by the business object. In the example above "IsActive" as well as "Age" are properties of one and the same data item.
 

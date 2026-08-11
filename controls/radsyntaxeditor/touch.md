@@ -30,20 +30,7 @@ When using touch, touch selector markers appear when the user taps on the editor
 If you wish to implement your own touch logic, you can override the **InitializeTouch** method of the **RadSyntaxEditor**.
 
 __Example 1: Default InitializeTouch method__
-```C#
-
-        protected override void InitializeTouch(SyntaxEditorPresenter presenter)
-        {
-            TouchManager.AddSwipeEventHandler(presenter, new SwipeEventHandler(OnSwipe));
-            base.InitializeTouch(presenter);
-        }
-
-        private void OnSwipe(object sender, SwipeEventArgs args)
-        {
-            // your custom logic for swiping
-            args.Handled = true; // you can omit this if your custom logic does not contradict with the default logic
-        }
-```
+<snippet id='radsyntaxeditor-touch-block_1-cs' />
 
 > You can read the [following article]({%slug touchmanager-events%}) article, which describes all of the events exposed by the TouchManager.
 
@@ -52,10 +39,7 @@ __Example 1: Default InitializeTouch method__
 By default, dragging the markers is possible if the swipe occurs up to **30 pixels** from their center. This area can be controlled via the **TouchMarkerDragDistance** property of the **RadSyntaxEditor** control.
 
 __Example 2: Increase markers drag area__
-```C#
-
-    this.syntaxEditor.TouchMarkerDragDistance = 40;
-```
+<snippet id='radsyntaxeditor-touch-block_2-cs' />
 
 ## See Also
 

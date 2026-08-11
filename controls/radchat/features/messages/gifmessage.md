@@ -20,11 +20,8 @@ So, a __GifMessage__ can be defined as follows.
 
 __Example 1: Defining a GifMessage__
 
-```C#
-	GifMessage gifMessage = new GifMessage(this.currentAuthor, new Uri("/Images/pbox.gif", UriKind.Relative));
+<snippet id='radchat-features-messages-gifmessage-example_1_defining_a_gifmessage-cs' />
 
-	this.chat.AddMessage(gifMessage);
-```
 
 #### __Figure 1: Defining GifMessage__
 ![Defining GifMessage](images/RadChat_Messages_Gif_01.gif)

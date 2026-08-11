@@ -30,9 +30,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 ## Adding RadWatermarkTextBox to the Project 
 
 __Example 1: Defining RadWatermarkTextBox__
-```XAML
-	<telerik:RadWatermarkTextBox/>
-```
+<snippet id='radwatermarktextbox-getting-started-block_1-xaml' />
 
 #### __Figure 1: Defining RadWatermarkTextBox__
 ![Defining RadWatermarkTextBox](images/RadWatermarkTextBox_GettingStarted_01.png)
@@ -42,9 +40,7 @@ __Example 1: Defining RadWatermarkTextBox__
 > __RadWatermarkTextBox__ supports setting its __WatermarkContent__ or __WatermarkTemplate__ for visualizing the needed information. These mechanisms are covered in details in the [Features]({%slug radwatermarktextbox-features%}) topic.
 
 __Example 2: Setting the WatermarkContent__
-```XAML
-	<telerik:RadWatermarkTextBox WatermarkContent="Please enter your name"/>
-```
+<snippet id='radwatermarktextbox-getting-started-block_2-xaml' />
 
 #### __Figure 2: Setting the WatermarkContent__
 
@@ -66,16 +62,7 @@ To change the theme, you can follow the steps below:
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 3: Merge the ResourceDictionaries__  
-```XAML
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-	                <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-```
+<snippet id='radwatermarktextbox-getting-started-block_3-xaml' />
 
 __Figure 3__ shows RadWatermarkTextBox with the **Windows8** theme applied.
 	
@@ -100,5 +87,3 @@ __Figure 3__ shows RadWatermarkTextBox with the **Windows8** theme applied.
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}
-
-

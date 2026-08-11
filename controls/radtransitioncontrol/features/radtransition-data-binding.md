@@ -18,16 +18,7 @@ Here is an example:
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTRansitionControl"
-	                        Content="{Binding MyDataItem}">
-	    <telerik:RadTransitionControl.ContentTemplate>
-	        <DataTemplate>
-	            <TextBlock Text="{Binding Text}" />
-	        </DataTemplate>
-	    </telerik:RadTransitionControl.ContentTemplate>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-data-binding-block_1-xaml' />
 
 The object that you have bound to the __Content__ property becomes the __DataContext__ of the __ContentTemplate__ and you can bind your __UIElements__ to its properties. In this example the __TextBlock's Text__ property is bound to the __Text__ property of the __MyDataItem__ object.
 
@@ -37,19 +28,7 @@ You can also bind the __RadTransitionControl__ to another __Control__ in your __
 
 
 
-```XAML
-	<ListBox x:Name="MyListBox">
-	    ...
-	</ListBox>
-	<telerik:RadTransitionControl x:Name="radTRansitionControl1"
-	                        Content="{Binding SelectedItem, ElementName=MyListBox}">
-	    <telerik:RadTransitionControl.ContentTemplate>
-	        <DataTemplate>
-	            <TextBlock Text="{Binding Text}" />
-	        </DataTemplate>
-	    </telerik:RadTransitionControl.ContentTemplate>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-features-radtransition-data-binding-block_2-xaml' />
 
 In this case the data item representing the __SelectedItem__ is the __DataContext__ of the __ControlTemplate__.
 

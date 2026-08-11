@@ -33,32 +33,18 @@ You can include the control in your page by either dragging it from the toolbox 
 
 __Example 1: Adding RadListBox__
 
-```XAML
-	<telerik:RadListBox x:Name="radListBox" Width="200" />
-```
+<snippet id='radlistbox-getting-started-block_1-xaml' />
 
 ## Populating with Items
 
 The control can either be populated by adding __RadListBoxItems__ to its __Items__ collection, or by its data binding support.
 
 __Example 2: Adding RadListBoxItems__
-```XAML
-	<telerik:RadListBox  Width="200" x:Name="radListBox">
-	    <telerik:RadListBoxItem Content="Australia" />
-	    <telerik:RadListBoxItem Content="Brazil" />
-	    <telerik:RadListBoxItem Content="Canada" />
-	    <telerik:RadListBoxItem Content="China" />
-	    <telerik:RadListBoxItem Content="England" />
-	    <telerik:RadListBoxItem Content="Germany" />
-	</telerik:RadListBox>
-```
+<snippet id='radlistbox-getting-started-block_2-xaml' />
 
 #### __[XAML] Example 3: Binding RadListBox__
 
-```XAML
-	<telerik:RadListBox x:Name="radListBox" Width="200" 
-						ItemsSource="{Binding Items}"/>
-```
+<snippet id='radlistbox-getting-started-block_3-xaml' />
 
 >More detailed information on how to populate __RadListBox__ with some data you can found [here]({%slug radlistbox-populating-with-data-overview%}).
 
@@ -82,4 +68,3 @@ __Example 2: Adding RadListBoxItems__
 * [Drag and Drop]({%slug radlistbox-features-dragdrop%})
 * [Selection]({%slug radlistbox-features-selection%})
 * [Auto Complete]({%slug radlistbox-features-autocomplete%})
-

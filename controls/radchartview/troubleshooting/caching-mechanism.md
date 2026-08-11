@@ -18,11 +18,6 @@ Lets take for example the scenario with custom LabelTemplate (of a chart axis) w
 	  	  
 __Example 1: Updating the chart's API by resetting the LabelTemplate__
 
-```C#	
-	// change the size here
-	
-	var template = axis.LabelTemplate;
-	axis.LabelTemplate = null;
-	axis.LabelTemplate = template;
-```
+<snippet id='radchartview-troubleshooting-caching-mechanism-example_1_updating_the_chart_s_api_by_resetting_the_labeltemplate-cs' />
+
 

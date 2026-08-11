@@ -26,19 +26,8 @@ The __Marker__ control is represented by a triangle shape. The appearance and th
 Here is an example of a __Marker__ definition:
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="12">
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:Marker Value="6"
-	                    telerik:LinearScale.RotateForVertical="True"
-	                    telerik:ScaleObject.RelativeWidth="0.1*"
-	                    telerik:ScaleObject.RelativeHeight="0.04*"
-	                    telerik:ScaleObject.Offset="0.04*" />
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-marker-block_1-xaml' />
+
 
 Here is a snapshot of the result:
 

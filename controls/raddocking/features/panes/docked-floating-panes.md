@@ -32,30 +32,17 @@ To dock your panes declaratively to a certain position you have to host your pan
 
 __Example 1: Set InitialPosition of RadSplitContainer__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer" InitialPosition="DockedRight">
-	        <telerik:RadPaneGroup x:Name="radPaneGroup">
-	            <telerik:RadPane x:Name="radPane" Header="Docked Pane">
-	                <TextBlock Text="Docked Pane."></TextBlock>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-panes-docked-floating-panes-example_1_set_initialposition_of_radsplitcontainer-xaml' />
+
 
 In order to programmatically dock a __RadPane__ to a group, you have to remove it from its current parent first and then add it to the __RadPaneGroup__'s __Items__ collection as demonstrated in __Example 2__.
 
 __Example 2: Remove RadPane from RadPaneGroup__
 
-```C#
-	radPane.RemoveFromParent();
-	radPaneGroup.Items.Add(radPane);
-```
-```VB.NET
-	radPane.RemoveFromParent()
-	radPaneGroup.Items.Add(radPane)
-```
+<snippet id='raddocking-features-panes-docked-floating-panes-example_2_remove_radpane_from_radpanegroup-cs' />
+
+<snippet id='raddocking-features-panes-docked-floating-panes-example_2_remove_radpane_from_radpanegroup-vb' />
+
 
 >tip If you need to control the docking run-time (while the user is dragging a pane), you could use the __PreviewShowCompass__ event of the __RadDocking__ control in combination with the __Is<*>IndicatorVisible__ series of properties of the __Compass__ class. Where <*> could be one of the following: Left, Top, Right, Bottom, Center. To learn more take a look at the [How to Implement Conditional Docking]({%slug raddocking-how-to-implement-conditional-docking%}) topic.
 
@@ -67,42 +54,15 @@ Here is the XAML declaration of the above docking structure. Notice that each [R
 
 __Example 3: Create Floating Panes__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking1">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer1" InitialPosition="FloatingDockable">
-	        <telerik:RadPaneGroup x:Name="radPaneGroup1">
-	            <telerik:RadPane x:Name="radPane1" Header="Floating Pane">
-	                <TextBlock TextWrapping="Wrap" Text="Floating pane hosted in a ToolWindow."></TextBlock>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	    <telerik:RadSplitContainer x:Name="radSplitContainer2" InitialPosition="FloatingDockable">
-	        <telerik:RadPaneGroup x:Name="radPaneGroup2">
-	            <telerik:RadPane x:Name="radPane2" Header="Floating Pane">
-	                <TextBlock TextWrapping="Wrap" Text="Floating pane hosted in a ToolWindow."></TextBlock>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-panes-docked-floating-panes-example_3_create_floating_panes-xaml' />
+
 
 >tip If you want to specify the exact position and size of the floating panes set the attached properties __RadDocking.FloatingLocation__ and __RadDocking.FloatingSize__ inside the declaration of the containing __RadSplitContainer__.
 
 __Example 4: Set the FloatingLocation and FloatingSize attached properties__
 
-```XAML
-	<telerik:RadSplitContainer x:Name="splitContainer1" InitialPosition="FloatingDockable"
-	                           telerik:RadDocking.FloatingLocation="50,50"
-	                           telerik:RadDocking.FloatingSize="200,200">
-	
-	    <telerik:RadPaneGroup x:Name="paneGroup1">
-	        <telerik:RadPane x:Name="pane2" Header="Floating Pane">
-	            <TextBlock TextWrapping="Wrap" Text="Floating pane hosted in a ToolWindow."></TextBlock>
-	        </telerik:RadPane>
-	    </telerik:RadPaneGroup>
-	
-	</telerik:RadSplitContainer>
-```
+<snippet id='raddocking-features-panes-docked-floating-panes-example_4_set_the_floatinglocation_and_floatingsize_attached_properties-xaml' />
+
 
 You can also make a pane floatable programmatically by either calling __MakeFloatingDockable()__ or __MakeFloatingOnly()__. Both of these methods are doing one and the same thing - they undock your pane and host it in a separate ToolWindow.
 
@@ -112,12 +72,10 @@ More specifically, when the pane is floated, it is removed from its RadPaneGroup
 
 __Example 5: Make a RadPane FloatingDockable__
 
-```C#
-	radPane.MakeFloatingDockable();
-```
-```VB.NET
-	radPane.MakeFloatingDockable()
-```
+<snippet id='raddocking-features-panes-docked-floating-panes-example_5_make_a_radpane_floatingdockable-cs' />
+
+<snippet id='raddocking-features-panes-docked-floating-panes-example_5_make_a_radpane_floatingdockable-vb' />
+
 
 >tip If you make your pane floating using the __MakeFloatingOnly()__ you will not be able to dock it back again using [drag and drop]({%slug raddocking-features-drag-and-drop%}). To make it dockable again you have to call the method __MakeDockable()__.
 
@@ -129,18 +87,15 @@ You can disable the floating functionality of a RadPane via the boolean property
 
 __Example 6: Disable the floating of a RadPane__
 
-```XAML
-	<telerik:RadPane x:Name="pane1" CanFloat="False"/>
-```
+<snippet id='raddocking-features-panes-docked-floating-panes-example_6_disable_the_floating_of_a_radpane-xaml' />
+
 
 __Example 6: Disable the floating of a RadPane__
 
-```C#
-	radPane.CanFloat = false;
-```
-```VB.NET
-	radPane.CanFloat = False
-```
+<snippet id='raddocking-features-panes-docked-floating-panes-example_6_disable_the_floating_of_a_radpane-cs' />
+
+<snippet id='raddocking-features-panes-docked-floating-panes-example_6_disable_the_floating_of_a_radpane-vb' />
+
 
 ## See Also
 

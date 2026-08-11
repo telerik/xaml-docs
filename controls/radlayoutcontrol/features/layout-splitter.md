@@ -13,23 +13,14 @@ position: 3
 The __LayoutControlSplitter__ component allows you to resize the elements in the layout at runtime when __RadLayoutControl__ is not in edit mode. The following examples show you how to define a splitter.
 
 __Example 1: Defining the splitter in XAML__ 
-```XAML
-    <telerik:RadLayoutControl>
-		<telerik:LayoutControlExpanderGroup Header="Expander group" />
-		<telerik:LayoutControlSplitter />
-		<Button Content="Button" />
-	</telerik:RadLayoutControl>
-```
+<snippet id='radlayoutcontrol-features-layout-splitter-example_1_defining_the_splitter_in_xaml-xaml' />
+
 	
 __Example 2: Defining the splitter in code__  
-```C#
-	LayoutControlSplitter splitter = new LayoutControlSplitter();
-	this.layoutControl.Items.Add(splitter);
-```
-```VB.NET
-	Dim splitter As New LayoutControlSplitter()
-	Me.layoutControl.Items.Add(splitter)
-```
+<snippet id='radlayoutcontrol-features-layout-splitter-example_2_defining_the_splitter_in_code-cs' />
+
+<snippet id='radlayoutcontrol-features-layout-splitter-example_2_defining_the_splitter_in_code-vb' />
+
 
 #### __Figure 1: LayoutControlSplitter__  
 ![{{ site.framework_name }} RadLayoutControl LayoutControlSplitter](images/layoutcontrol-features-layout-splitter-01.png)

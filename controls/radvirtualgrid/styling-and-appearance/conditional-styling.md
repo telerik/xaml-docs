@@ -18,14 +18,7 @@ This is achieved through the usage of the following three events in conjunction.
 
 __Adding Brushes through the OverlayBrushesNeeded event__
 
-```C#
-	private void VirtualGrid_OverlayBrushesNeeded(object sender, 
-            Telerik.Windows.Controls.VirtualGrid.OverlayBrushesEventArgs e)
-        {
-            e.Brushes.Add(Brushes.Red);
-            e.Brushes.Add(Brushes.Yellow);
-        }
-```
+<snippet id='radvirtualgrid-styling-and-appearance-conditional-styling-block_1-cs' />
 
 * `CellDecorationsNeeded`&mdash;This is the event through which the actual styling of the cells can be applied. The event arguments expose the following properties:
 
@@ -42,22 +35,7 @@ __Adding Brushes through the OverlayBrushesNeeded event__
 
 __Applying conditional styling through the CellDecorationsNeeded event__
 
-```C#
-	private void VirtualGrid_CellDecorationsNeeded(object sender, 
-            Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs e)
-        {
-            if (e.ColumnIndex % 2 == 0)
-            {
-                e.Background = Brushes.Red;
-            }
-            else
-            {
-                e.Background = Brushes.Yellow;
-                e.Foreground = Brushes.Red;
-                e.CellTextAlignment = TextAlignment.Right;
-            }
-        }
-```
+<snippet id='radvirtualgrid-styling-and-appearance-conditional-styling-block_2-cs' />
 
 >For the effects of the `CellTextAlignment` property to be applied, the control's [MeasureTextOnRender]({%slug virtualgrid-getting-started2%}#measuretextonrender) property has to be set to `True`.
 

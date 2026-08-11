@@ -30,130 +30,15 @@ Let's create a simple task tracking system. For our Custom Appointment class we 
 
 __Example 1: Create Custom Appointment__
 
-```C#
-	public class Task:Appointment
-	{
-	    private bool isDone;
-	    public bool IsDone
-	    {
-	        get
-	        {
-	             return this.Storage<Task>().isDone;
-	        }
-	        set
-	        {
-	             var storage = this.Storage<Task>();
-	             if (storage.isDone != value)
-	             {
-	                  storage.isDone = value;
-	                  this.OnPropertyChanged(() => this.IsDone);
-	             }
-	        }
-	    }
-	    public override IAppointment Copy()
-	    {
-	        var newAppointment = new Task();
-	        newAppointment.CopyFrom(this);
-	        return newAppointment;
-	    }
-	    public override void CopyFrom(IAppointment other)
-	    {
-	        var task = other as Task;
-	        if (task != null)
-	        {
-	                this.IsDone = task.IsDone;
-	        }
-	        base.CopyFrom(other);
-	    }
-	}
-```
-```VB.NET
-	Public Class Task
-	 Inherits Appointment
-	 Private m_isDone As Boolean
-	 Public Property IsDone() As Boolean
-	  Get
-	   Return Me.Storage(Of Task)().m_isDone
-	  End Get
-	  Set
-	   Dim storage = Me.Storage(Of Task)()
-	   If storage.m_isDone <> value Then
-	    storage.m_isDone = value
-	    Me.OnPropertyChanged("IsDone")
-	   End If
-	  End Set
-	 End Property
-	 Public Overrides Function Copy() As IAppointment
-	  Dim newAppointment = New Task()
-	  newAppointment.CopyFrom(Me)
-	  Return newAppointment
-	 End Function
-	 Public Overrides Sub CopyFrom(other As IAppointment)
-	  Dim task = TryCast(other, Task)
-	  If task IsNot Nothing Then
-	   Me.IsDone = task.IsDone
-	  End If
-	  MyBase.CopyFrom(other)
-	 End Sub
-	End Class
-```
+<snippet id='radscheduleview-features-appointments-custom-appointment-block_1-cs' />
+<snippet id='radscheduleview-features-appointments-custom-appointment-block_2-vb' />
 
 For the next step, it is important to set the __AppointmentsSource__ of RadScheduleView to be of type __IList<Task>__, because this way the ScheduleView knows that our custom appointments should be of type __Task__. __Example 2__ demonstrates how to create an __ObservableCollection<Task>__.        
 
 __Example 2: Create the TasksCollection__
 
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-		
-		// "this.scheduleView" refers to the RadScheduleView instance that we are targetting
-		this.scheduleView.AppointmentsSource = new TasksCollection();
-	}
-
-	public class TasksCollection : ObservableCollection<Task>
-	{
-	    public TasksCollection()
-	    {
-	         DateTime today = DateTime.Today;
-	         foreach (Task t in Enumerable.Range(9, 14).Select(i =>
-	            new Task
-	            {
-	                 Start = today.AddMinutes(i * 60 + 15),
-	                 End = today.AddMinutes((i + 1) * 60),
-	                 Subject = string.Format("Task num. {0}",i),
-	                 IsDone = today.AddMinutes((i + 1) * 60) < DateTime.Now
-	             }))
-	         {
-	          this.Add(t);
-	         }
-	    }
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-
-		' "this.scheduleView" refers to the RadScheduleView instance that we are targetting
-		Me.scheduleView.AppointmentsSource = New TasksCollection()
-	End Sub
-
-	Public Class TasksCollection
-		Inherits ObservableCollection(Of Task)
-
-			Public Sub New()
-				Dim today As Date = Date.Today
-				For Each t As Task In Enumerable.Range(9, 14).Select(Function(i) New Task With {
-					.Start = today.AddMinutes(i * 60 + 15),
-					.End = today.AddMinutes((i + 1) * 60),
-					.Subject = String.Format("Task num. {0}",i),
-					.IsDone = today.AddMinutes((i + 1) * 60) < Date.Now
-				})
-				Me.Add(t)
-				Next t
-			End Sub
-	End Class
-```
+<snippet id='radscheduleview-features-appointments-custom-appointment-block_3-cs' />
+<snippet id='radscheduleview-features-appointments-custom-appointment-block_4-vb' />
 
 #### __Figure 1: Result from Example 2__
 
@@ -169,9 +54,7 @@ After you have extracted the default __EditAppointmentTemplate__, you can add a 
 
 __Example 3: Bind the IsDone property__
 
-```XAML
-	 <CheckBox Grid.Row="4" Grid.Column="1" Margin="3" Content="Is done?" IsChecked="{Binding Occurrence.Appointment.IsDone, Mode=TwoWay}"/>
-```
+<snippet id='radscheduleview-features-appointments-custom-appointment-block_5-xaml' />
 
 #### __Figure 2: Result from Example 3__
 ![RadScheduleView with custom EditAppointmentDialogStyle](images/custom_appointment2.PNG)
@@ -186,9 +69,7 @@ The __DataContext__ of the AppointmentItem's ControlTemplate represents an __App
 
 __Example 4: Indicate the status of an appointment with an Ellipse__
 
-```XAML
-	<Ellipse Fill="Green" Width="12" Height="12" VerticalAlignment="Top" Margin="10 5 5 5" HorizontalAlignment="Left" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />
-```
+<snippet id='radscheduleview-features-appointments-custom-appointment-block_6-xaml' />
 
 ## Customizing the Appointment ToolTip
 
@@ -198,14 +79,7 @@ __Example 5__ demonstrates how you can modify the Appointment ToolTipTemplate in
 
 __Example 5: Define a ToolTipTemplate__
 
-```XAML
-	<DataTemplate x:Key="ToolTipTemplate">
-	   <StackPanel Orientation="Horizontal" MinWidth="140" Margin="0 5">
-	      <TextBlock MaxWidth="200" TextWrapping="Wrap" Text="{Binding Subject}"/>
-	      <TextBlock Text="(Done)" Grid.Row="1" Margin="5 0 5 0" Foreground="#FF191D1A" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" FontStyle="Italic" />
-	   </StackPanel> 
-	</DataTemplate>
-```
+<snippet id='radscheduleview-features-appointments-custom-appointment-block_7-xaml' />
 
 #### __Figure 3: Result from Examples 4 and 5__
 

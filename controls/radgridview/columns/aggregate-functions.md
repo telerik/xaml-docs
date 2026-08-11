@@ -42,49 +42,15 @@ Aggregate functions can be added in xaml or in code behind. __Examples 1 and 2__
 
 __Example 1: Populating the AggregateFunctions collection in xaml__
 
-```XAML
-	<telerik:RadGridView x:Name="clubsGrid"
-	                     ItemsSource="{Binding Clubs}"
-						 AutoGenerateColumns="False"
-						 GroupRenderMode="Flat"
-						 ShowColumnFooters="True">
-		<telerik:RadGridView.Columns>
+<snippet id='radgridview-columns-aggregate-functions-example_1_populating_the_aggregatefunctions_collection_in_xaml-xaml' />
 
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
-				<telerik:GridViewDataColumn.AggregateFunctions>
-					<telerik:CountFunction Caption="Number of clubs: " />
-					<telerik:MaxFunction Caption="Maximum capacity: " SourceField="StadiumCapacity" />
-				</telerik:GridViewDataColumn.AggregateFunctions>
-			</telerik:GridViewDataColumn>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
-										Header="Est." 
-										DataFormatString="{}{0:yyyy}"/>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-										Header="Stadium" 
-										DataFormatString="{}{0:N0}"/>
-		</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
 
 __Example 2: Populating the AggregateFunctions collection in code__
 
-```C#
-	var countFunction = new CountFunction() {  Caption = "Number of clubs: " };
-	var maxCapacityFunction = new MaxFunction() { Caption = "Maximum capacity: ", SourceField = "StadiumCapacity" };
-	var column = this.clubsGrid.Columns["Name"];
-	column.AggregateFunctions.Add(countFunction);
-	column.AggregateFunctions.Add(maxCapacityFunction);
-```
-```VB.NET
-	Dim countFunction = New CountFunction() With {.Caption = "Number of clubs: "}
-	Dim maxCapacityFunction = New MaxFunction() With {
-		.Caption = "Maximum capacity: ",
-		.SourceField = "StadiumCapacity"
-	}
-	Dim column = Me.clubsGrid.Columns("Name")
-	column.AggregateFunctions.Add(countFunction)
-	column.AggregateFunctions.Add(maxCapacityFunction)
-```
+<snippet id='radgridview-columns-aggregate-functions-example_2_populating_the_aggregatefunctions_collection_in_code-cs' />
+
+<snippet id='radgridview-columns-aggregate-functions-example_2_populating_the_aggregatefunctions_collection_in_code-vb' />
+
 
 #### __Figure 1: RadGridView with ShowColumnFooters set to True__
 
@@ -106,26 +72,10 @@ If your columns are auto-generated, you can subscribe to the **AutoGeneratingCol
 
 __Example 3: Configuring column on AutoGeneratingColumn__
 
-```C#
-	private void clubsGrid_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
-	{
-		var dataColumn = e.Column as GridViewBoundColumnBase;
-		if (dataColumn.DataMemberBinding.Path.Path == "Name")
-		{
-			var countFunction = new CountFunction() { Caption = "Number of clubs: " };
-			e.Column.AggregateFunctions.Add(countFunction);
-		}
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_AutoGeneratingColumn(ByVal sender As Object, ByVal e As GridViewAutoGeneratingColumnEventArgs)
-			Dim dataColumn = TryCast(e.Column, GridViewBoundColumnBase)
-			If dataColumn.DataMemberBinding.Path.Path = "Name" Then
-				Dim countFunction = New CountFunction() With {.Caption = "Number of clubs: "}
-				e.Column.AggregateFunctions.Add(countFunction)
-			End If
-	End Sub
-```
+<snippet id='radgridview-columns-aggregate-functions-example_3_configuring_column_on_autogeneratingcolumn-cs' />
+
+<snippet id='radgridview-columns-aggregate-functions-example_3_configuring_column_on_autogeneratingcolumn-vb' />
+
 
 ## ResultFormatString
 
@@ -133,11 +83,8 @@ You can specify a format string for the aggregate results by setting the __Resul
 
 __Example 4: Specifying ResultFormatString__
 
-```XAML
-	<telerik:GridViewDataColumn.AggregateFunctions>
-	    <telerik:SumFunction Caption="Total: $" ResultFormatString="{}{0:C2}"/>
-	</telerik:GridViewDataColumn.AggregateFunctions>
-```
+<snippet id='radgridview-columns-aggregate-functions-example_4_specifying_resultformatstring-xaml' />
+
 
 The code from __Example 4__ will display the aggregate results in the currency format with two digits after the decimal separator.
 
@@ -147,19 +94,10 @@ If you need to recalculate the aggregate results, you can call the **CalculateAg
 
 __Example 5: Invoke CalculateAggregates() method__
 
-```C#
+<snippet id='radgridview-columns-aggregate-functions-example_5_invoke_calculateaggregates_method-cs' />
 
-	private void Button1_Click(object sender, RoutedEventArgs e)
-	{
-		this.radGridView.CalculateAggregates();
-	}
-```
-```VB.NET
+<snippet id='radgridview-columns-aggregate-functions-example_5_invoke_calculateaggregates_method-vb' />
 
-	Private Sub Button1_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Me.radGridView.CalculateAggregates()
-	End Sub
-```
 
 >Note that group aggregates will not be updated using this approach. Please check this [troubleshooting article]({%slug gridview-troubleshooting-aggregates-not-updated%}#column-group-aggregates) on how to refresh them.
 
@@ -169,35 +107,8 @@ You can modify the default template of the displayed aggregates by setting the _
 
 __Example 6: Overriding GridViewDataColumn.Footer__
 
-```XAML
-	<telerik:GridViewDataColumn.Footer>
-		<StackPanel Orientation="Vertical"
-					Margin="0,10">
-			<TextBlock Text="Custom footer with aggregates:"
-					   Margin="0,0,0,2" />
-			<telerik:AggregateResultsList ItemsSource="{Binding}"
-										  VerticalAlignment="Center"
-										  Grid.Column="4">
-				<ItemsControl.ItemTemplate>
-					<DataTemplate>
-						<StackPanel Orientation="Horizontal"
-									VerticalAlignment="Center">
-							<TextBlock VerticalAlignment="Center"
-									   Text="{Binding Caption}" />
-							<TextBlock VerticalAlignment="Center"
-									   Text="{Binding FormattedValue}" />
-						</StackPanel>
-					</DataTemplate>
-				</ItemsControl.ItemTemplate>
-				<ItemsControl.ItemsPanel>
-					<ItemsPanelTemplate>
-						<StackPanel Orientation="Vertical" />
-					</ItemsPanelTemplate>
-				</ItemsControl.ItemsPanel>
-			</telerik:AggregateResultsList>
-		</StackPanel>
-	</telerik:GridViewDataColumn.Footer>
-```
+<snippet id='radgridview-columns-aggregate-functions-example_6_overriding_gridviewdatacolumn_footer-xaml' />
+
 
 #### __Figure 2: A GridViewDataColumn with a custom Footer__
 ![Telerik UI for {{ site.framework_name }} RadGridView aggregate functions with a custom GridViewDataColumn footer](images/RadGridView_AggregateFunctions_CustomFooter.png)
@@ -214,37 +125,10 @@ If you want to have a default aggregate function for the custom column which is 
 
 __Example 7: Adding a default AggregateFunction__
 
-```C#
-	public class MyColumn : GridViewDataColumn
-    {
-        public MyColumn()
-        {
-            
-        }
+<snippet id='radgridview-columns-aggregate-functions-example_7_adding_a_default_aggregatefunction-cs' />
 
-        public override void EndInit()
-        {
-            this.AggregateFunctions.Add(new SumFunction());
+<snippet id='radgridview-columns-aggregate-functions-example_7_adding_a_default_aggregatefunction-vb' />
 
-            base.EndInit();
-        }
-    }
-```
-```VB.NET
-	Public Class MyColumn
-		Inherits GridViewDataColumn
-
-			Public Sub New()
-
-			End Sub
-
-			Public Overrides Sub EndInit()
-				Me.AggregateFunctions.Add(New SumFunction())
-
-				MyBase.EndInit()
-			End Sub
-	End Class
-```
 
 ## See Also  
  * [Custom Aggregate Functions]({%slug radgridview-columns-custom-aggregate-functions%})

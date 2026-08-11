@@ -18,12 +18,10 @@ For example:
 
 
 
-```C#
-	this.radDateTimePicker.IsDropDownOpen = true;
-```
-```VB.NET
-	Me.radDateTimePicker.IsDropDownOpen = True
-```
+<snippet id='raddatetimepicker-how-to-hide-show-pop-up-in-code-block_1-cs' />
+
+<snippet id='raddatetimepicker-how-to-hide-show-pop-up-in-code-block_1-vb' />
+
 
 ## See Also
 

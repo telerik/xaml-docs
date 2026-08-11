@@ -25,93 +25,15 @@ The item container may be null if it isn't still generated from the runtime. Tha
 
 
 
-```C#
-	this.Loaded += new RoutedEventHandler( IterateTreeViewItems_Loaded );
-```
-```VB.NET
-	AddHandler Me.Loaded, AddressOf IterateTreeViewItems_Loaded
-```
+<snippet id='radtreeview-how-to-iterate-through-treeviewitems-block_1-cs' />
+<snippet id='radtreeview-how-to-iterate-through-treeviewitems-block_2-vb' />
 
 {% if site.site_name == 'Silverlight' %}
 
 
 
-```C#
-	private void IterateTreeViewItems_Loaded( object sender, RoutedEventArgs e )
-	{
-	    this.GetContainers();
-	}
-	
-	private void GetContainers()
-	{
-	    // gets all nodes from the TreeView  
-	    Collection<RadTreeViewItem> allTreeContainers = GetAllItemContainers( this.radTreeView );
-	    // gets all nodes (recursively) for the first node  
-	    RadTreeViewItem firstNode = this.radTreeView.ItemContainerGenerator.ContainerFromIndex( 0 ) as RadTreeViewItem;
-	    if ( firstNode != null )
-	    {
-	        Collection<RadTreeViewItem> firstNodeContainers = GetAllItemContainers( firstNode );
-	    }
-	}
-	
-	private Collection<RadTreeViewItem> GetAllItemContainers( Telerik.Windows.Controls.ItemsControl itemsControl )
-	{
-	    Collection<RadTreeViewItem> allItems = new Collection<RadTreeViewItem>();
-	    for ( int i = 0; i < itemsControl.Items.Count; i++ )
-	    {
-	        // try to get the item Container  
-	        RadTreeViewItem childItemContainer = itemsControl.ItemContainerGenerator.ContainerFromIndex( i ) as RadTreeViewItem;
-	        // the item container maybe null if it is still not generated from the runtime  
-	        if ( childItemContainer != null )
-	        {
-	            allItems.Add( childItemContainer );
-	            Collection<RadTreeViewItem> childItems = GetAllItemContainers( childItemContainer );
-	            foreach ( RadTreeViewItem childItem in childItems )
-	            {
-	                allItems.Add( childItem );
-	            }
-	        }
-	    }
-	    return allItems;
-	}
-```
-```VB.NET
-	Private Sub IterateTreeViewItems_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	    Me.GetContainers()
-		End Sub
-	
-		Private Sub GetContainers()
-			' gets all nodes from the TreeView  '
-			Dim allTreeContainers As Collection(Of RadTreeViewItem) = GetAllItemContainers(Me.radTreeView)
-	
-			' gets all nodes (recursively) for the first node  '
-			Dim firstNode As RadTreeViewItem = TryCast(Me.radTreeView.ItemContainerGenerator.ContainerFromIndex(0), RadTreeViewItem)
-			If firstNode IsNot Nothing Then
-				Dim firstNodeContainers As Collection(Of RadTreeViewItem) = GetAllItemContainers(firstNode)
-			End If
-		End Sub
-	
-		Private Function GetAllItemContainers(ByVal itemsControl As Telerik.Windows.Controls.ItemsControl) As Collection(Of RadTreeViewItem)
-	
-			Dim allItems As New Collection(Of RadTreeViewItem)()
-	
-			For i As Integer = 0 To itemsControl.Items.Count - 1
-				' try to get the item Container  '
-				Dim childItemContainer As RadTreeViewItem = TryCast(itemsControl.ItemContainerGenerator.ContainerFromIndex(i), RadTreeViewItem)
-	
-				' the item container maybe null if it is still not generated from the runtime  
-				If childItemContainer IsNot Nothing Then'
-					allItems.Add(childItemContainer)
-	
-					Dim childItems As Collection(Of RadTreeViewItem) = GetAllItemContainers(childItemContainer)
-					For Each childItem As RadTreeViewItem In childItems
-						allItems.Add(childItem)
-					Next
-				End If
-			Next
-			Return allItems
-		End Function
-```
+<snippet id='radtreeview-how-to-iterate-through-treeviewitems-block_3-cs' />
+<snippet id='radtreeview-how-to-iterate-through-treeviewitems-block_4-vb' />
 
 {% endif %}
 
@@ -119,82 +41,8 @@ The item container may be null if it isn't still generated from the runtime. Tha
 
 
 
-```C#
-	private void IterateTreeViewItems_Loaded( object sender, RoutedEventArgs e )
-	{
-	    this.GetContainers();
-	}
-	
-	private void GetContainers()
-	{
-	    // gets all nodes from the TreeView  
-	    Collection<RadTreeViewItem> allTreeContainers = GetAllItemContainers( this.radTreeView );
-	    // gets all nodes (recursively) for the first node  
-	    RadTreeViewItem firstNode = this.radTreeView.ItemContainerGenerator.ContainerFromIndex( 0 ) as RadTreeViewItem;
-	    if ( firstNode != null )
-	    {
-	        Collection<RadTreeViewItem> firstNodeContainers = GetAllItemContainers( firstNode );
-	    }
-	}
-	
-	private Collection<RadTreeViewItem> GetAllItemContainers( System.Windows.Controls.ItemsControl itemsControl )
-	{
-	    Collection<RadTreeViewItem> allItems = new Collection<RadTreeViewItem>();
-	    for ( int i = 0; i < itemsControl.Items.Count; i++ )
-	    {
-	        // try to get the item Container  
-	        RadTreeViewItem childItemContainer = itemsControl.ItemContainerGenerator.ContainerFromIndex( i ) as RadTreeViewItem;
-	        // the item container maybe null if it is still not generated from the runtime  
-	        if ( childItemContainer != null )
-	        {
-	            allItems.Add( childItemContainer );
-	            Collection<RadTreeViewItem> childItems = GetAllItemContainers( childItemContainer );
-	            foreach ( RadTreeViewItem childItem in childItems )
-	            {
-	                allItems.Add( childItem );
-	            }
-	        }
-	    }
-	    return allItems;
-	}
-```
-```VB.NET
-		Private Sub IterateTreeViewItems_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-			Me.GetContainers()
-		End Sub
-	
-		Private Sub GetContainers()
-			' gets all nodes from the TreeView  '
-			Dim allTreeContainers As Collection(Of RadTreeViewItem) = GetAllItemContainers(Me.radTreeView)
-	
-			' gets all nodes (recursively) for the first node  '
-			Dim firstNode As RadTreeViewItem = TryCast(Me.radTreeView.ItemContainerGenerator.ContainerFromIndex(0), RadTreeViewItem)
-			If firstNode IsNot Nothing Then
-				Dim firstNodeContainers As Collection(Of RadTreeViewItem) = GetAllItemContainers(firstNode)
-			End If
-		End Sub
-	
-		Private Function GetAllItemContainers(ByVal itemsControl As System.Windows.Controls.ItemsControl) As Collection(Of RadTreeViewItem)
-	
-			Dim allItems As New Collection(Of RadTreeViewItem)()
-	
-			For i As Integer = 0 To itemsControl.Items.Count - 1
-				' try to get the item Container  '
-				Dim childItemContainer As RadTreeViewItem = TryCast(itemsControl.ItemContainerGenerator.ContainerFromIndex(i), RadTreeViewItem)
-	
-				' the item container maybe null if it is still not generated from the runtime  '
-				If childItemContainer IsNot Nothing Then
-					allItems.Add(childItemContainer)
-	
-					Dim childItems As Collection(Of RadTreeViewItem) = GetAllItemContainers(childItemContainer)
-					For Each childItem As RadTreeViewItem In childItems
-						allItems.Add(childItem)
-					Next
-				End If
-			Next
-			Return allItems
-		End Function
-```
+<snippet id='radtreeview-how-to-iterate-through-treeviewitems-block_5-cs' />
+<snippet id='radtreeview-how-to-iterate-through-treeviewitems-block_6-vb' />
 
 {% endif %}
 

@@ -17,17 +17,11 @@ RadOfficeNavigationBar offers different item display modes that indicate whether
 When this mode is active, RadOfficeNavigationBar will use the values set to the `CompactContent`, `CompactContentTemplate`, and `CompactContentTemplateSelector` properties of each `RadOfficeNavigationBarItem` element. You can learn more about these properties in the [Custom Content]({%slug radofficenavigationbar-custom-content%}) article.
 
 __Setting the display mode to compact__
-```XAML
-    <telerik:RadOfficeNavigationBar x:Name="radOfficeNavigationBar" IsInCompactMode="True"/>
-```
+<snippet id='radofficenavigationbar-display-modes-block_1-xaml' />
 
 __Setting the display mode to compact in code__
-```C#
-    this.radOfficeNavigationBar.IsInCompactMode = true;
-```
-```VB.NET
-    Me.radOfficeNavigationBar.IsInCompactMode = True
-```
+<snippet id='radofficenavigationbar-display-modes-block_2-cs' />
+<snippet id='radofficenavigationbar-display-modes-block_2-vb' />
 
 ## Default
 

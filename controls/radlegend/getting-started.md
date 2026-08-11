@@ -40,28 +40,10 @@ You can find the required assemblies for each control from the suite in the {% i
 The RadLegend control is populated with data via its __Items__ collection. The collection is of type __LegendItemCollection__ and can be populated only with __LegendItem__ objects. By default the Items property is *null*.
 
 __Example 1: Defining RadLegend in XAML__
-```XAML
-	<telerik:RadLegend>
-	    <telerik:RadLegend.Items>
-	        <telerik:LegendItemCollection>
-	            <telerik:LegendItem MarkerFill="#FF55AA33" Title="Legend item 1" />
-	            <telerik:LegendItem MarkerFill="#FFCC3399" Title="Legend item 2" />
-	            <telerik:LegendItem MarkerFill="#FF5511BB" Title="Legend item 3" />
-	        </telerik:LegendItemCollection>
-	    </telerik:RadLegend.Items>
-	</telerik:RadLegend>
-```
+<snippet id='radlegend-getting-started-defining_radlegend_in_xaml-xaml' />
 
 __Example 2: Defining RadLegend in code__
-```C#
-	RadLegend legend = new RadLegend();
-	legend.Items = new LegendItemCollection()
-	{
-		new LegendItem() { Title = "Legend item 1", MarkerFill = new SolidColorBrush((Color)ColorConverter.ColorFromString("#FF55AA33")) },
-		new LegendItem() { Title = "Legend item 2", MarkerFill = new SolidColorBrush((Color)ColorConverter.ColorFromString("#FFCC3399")) },
-		new LegendItem() { Title = "Legend item 3", MarkerFill = new SolidColorBrush((Color)ColorConverter.ColorFromString("#FF5511BB")) },
-	};
-```
+<snippet id='radlegend-getting-started-defining_radlegend_in_code-cs' />
 
 #### __Figure 1: RadLegend__
 ![{{ site.framework_name }} RadLegend RadLegend](images/radlegend-getting-started-0.png)

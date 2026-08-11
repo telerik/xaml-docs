@@ -12,21 +12,11 @@ position: 10
 
 __RadTreeView__ exposes __SelectedItem__ property, which is a __DependencyProperty__ and can be used in a data binding.
 
-```XAML
-	<telerik:RadTreeView SelectedItem="{Binding SelectedItem, Mode=TwoWay}"/>
-```
+<snippet id='radtreeview-how-to-bind-selected-item-block_1-xaml' />
 
 If you want to bind to the __RadTreeViewItem__'s __IsSelected__ property when your treeview is [data bound to an object]({%slug radtreeview-populating-with-data-data-binding-to-object%}), then you need to use an __ItemContainerStyle__.
 
-```XAML
-	<telerik:RadTreeView>
-	    <telerik:RadTreeView.ItemContainerStyle>
-	        <Style TargetType="telerik:RadTreeViewItem">
-	            <Setter Property="IsSelected" Value="{Binding Path=Select, Mode=TwoWay}" />
-	        </Style >
-	    </telerik:RadTreeView.ItemContainerStyle>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-how-to-bind-selected-item-block_2-xaml' />
 
 > When using __NoXaml__ dlls, the __Style__ set to the __ItemContainerStyle__ property should have its __BasedOn__ property set to __{StaticResource RadTreeViewItemStyle}__.
 

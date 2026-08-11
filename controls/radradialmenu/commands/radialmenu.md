@@ -28,10 +28,7 @@ __Example 1__ demonstrates how to navigate to another view in the RadRadialMenu 
 
 __Example 1: Executing the NavigateToView command__
 
-```C#
-	NavigateContext context = new NavigateContext(menuItem);
-	this.radialMenu.CommandService.ExecuteCommand(Telerik.Windows.Controls.RadialMenu.Commands.CommandId.NavigateToView, context);
-```
+<snippet id='radradialmenu-commands-radialmenu-block_1-cs' />
 
 When the command executes the RadialMenu will navigate to the item passed as a parameter to the constructor of the NavigateContext class.
 
@@ -57,52 +54,13 @@ The next example will show how to implement custom command that will be executed
 
 	__Example 2: Creating a custom command__
 
-	```C#
-		public class CustomMenuCommand : RadialMenuCommand
-		{
-		    public CustomMenuCommand()
-		    {
-		        this.Id = CommandId.NavigateToView;
-		    }
-		
-		    public override void Execute(object parameter)
-		    {
-		        base.Execute(parameter);
-		        var context = parameter as NavigateContext;
-		        var source = context.MenuItemSource; // parent menu item
-		        var target = context.MenuItemTarget; // current menu item
-		
-		        // put your custom command logic here
-		
-		        this.Owner.CommandService.ExecuteDefaultCommand(CommandId.NavigateToView, context);
-		    }
-		
-		    public override bool CanExecute(object parameter)
-		    {
-		        return true;
-		    }
-		}
-	```
+	<snippet id='radradialmenu-commands-radialmenu-block_2-cs' />
 
 1. Then you have to define an instance of the custom command class in the __Commands__ collection of the __RadRadialMenu__ as demonstrated in __Example 3__.            
 
 	__Example 3: Setting the custom command__
 
-	```XAML
-		<telerik:RadRadialMenu>
-		    <telerik:RadRadialMenu.Commands>
-		        <local:CustomMenuCommand />
-		    </telerik:RadRadialMenu.Commands>
-		    <telerik:RadRadialMenuItem Header="Item 1" >
-		        <telerik:RadRadialMenuItem Header="Item 1.1">
-		            <telerik:RadRadialMenuItem Header="Item 1.1.1" />
-		        </telerik:RadRadialMenuItem>
-		        <telerik:RadRadialMenuItem Header="Item 1.2" >
-		            <telerik:RadRadialMenuItem Header="Item 1.2.1" />
-		        </telerik:RadRadialMenuItem>
-		    </telerik:RadRadialMenuItem>
-		</telerik:RadRadialMenu>
-	```
+	<snippet id='radradialmenu-commands-radialmenu-block_3-xaml' />
 
 ## See Also
 

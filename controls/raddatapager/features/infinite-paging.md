@@ -17,12 +17,8 @@ The infinite paging feature is useful when having a dynamic collection of items,
 The infinite paging is controlled by the __IsTotalItemCountFixed__ property. Its default value is __False__, which means that by default the infinite paging is enabled. To disable it you just have to set this property to __True__.
 
 
-```XAML
+<snippet id='raddatapager-features-infinite-paging-block_1-xaml' />
 
-	<telerik:RadDataPager x:Name="radDataPager"
-	                        PageSize="5"
-	                        IsTotalItemCountFixed="True" />
-```
 
  ![{{ site.framework_name }} RadDataPager Fixed Total Item Count](images/RadDataPager_Features_InfinitePaging_01.png)
 

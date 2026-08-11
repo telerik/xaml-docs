@@ -18,18 +18,15 @@ You can also hide/show your __RadPane__ instances programmatically using the boo
         
 __Example 1: Set IsHidden__
 
-```XAML
-	<telerik:RadPane x:Name="radPane" IsHidden="True"/>
-```
+<snippet id='raddocking-how-to-close-panes-example_1_set_ishidden-xaml' />
+
 
 __Example 1: Set IsHidden__
 
-```C#
-	radPane.IsHidden = true;
-```
-```VB.NET
-	radPane1.IsHidden = True
-```
+<snippet id='raddocking-how-to-close-panes-example_1_set_ishidden-cs' />
+
+<snippet id='raddocking-how-to-close-panes-example_1_set_ishidden-vb' />
+
 
 To learn how to disable the close button or how to handle the __RadDocking__'s __PreviewClose__ event take a look at the [How to Disable the Close Button]({%slug raddocking-how-to-disable-the-close-button%}) topic.
 
@@ -39,20 +36,15 @@ To close the panes of a **RadPaneGroup** on the click of the mouse middle button
         
 __Example 2: Set CloseTabsOnMouseMiddleButtonDown__
 
-```XAML
-	<telerik:RadPaneGroup CloseTabsOnMouseMiddleButtonDown="True">
-		<!-- ... -->
-	</telerik:RadPaneGroup>
-```
+<snippet id='raddocking-how-to-close-panes-example_2_set_closetabsonmousemiddlebuttondown-xaml' />
+
 
 __Example 2: Set CloseTabsOnMouseMiddleButtonDown__
 
-```C#
-	radPaneGroup.CloseTabsOnMouseMiddleButtonDown = true;
-```
-```VB.NET
-	radPaneGroup.CloseTabsOnMouseMiddleButtonDown = True
-```
+<snippet id='raddocking-how-to-close-panes-example_2_set_closetabsonmousemiddlebuttondown-cs' />
+
+<snippet id='raddocking-how-to-close-panes-example_2_set_closetabsonmousemiddlebuttondown-vb' />
+
 
 ## ClosePane Command
 

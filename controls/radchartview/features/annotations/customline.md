@@ -34,22 +34,8 @@ A __CartesianCustomLineAnnotation__ is defined like this:
 
 
 
-```XAML
-	<telerik:CartesianCustomLineAnnotation HorizontalFrom="0.5" VerticalFrom="1.5" 
-	                                       HorizontalTo="1.5" VerticalTo="0.0"/>
-	
-	<telerik:CartesianCustomLineAnnotation HorizontalFrom="0.0" VerticalFrom="2.25"
-	                                       HorizontalTo="3.75" VerticalTo="2.25"
-	                                       Stroke="CornflowerBlue" 
-	                                       StrokeThickness="3"
-	                                       DashArray="8 4 2 3"/>
-	
-	<telerik:CartesianCustomLineAnnotation HorizontalFrom="3.5" VerticalFrom="0.25"
-	                                       HorizontalTo="3.5"  VerticalTo="3.75"
-	                                       Stroke="Orange"
-	                                       StrokeThickness="2"
-	                                       ZIndex="-200"/>
-```
+<snippet id='radchartview-features-annotations-customline-block_1-xaml' />
+
 
 By default, the __Stroke__ of the CustomLine is *#FF828282*.        
 

@@ -41,79 +41,23 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 
 
 
-```XAML
-	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="Ascending"/>
-	<pivot:QueryableDoubleGroupDescription PropertyName="Freight" SortOrder="Descending"/>
-	<pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" SortOrder="Ascending"/>
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_1-xaml' />
 
 
 
-```C#
-	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
-	shipCountryGroupDescription.PropertyName = "ShipCountry";
-	shipCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
-	
-	var freightCountryGroupDescription = new QueryableDoubleGroupDescription();
-	freightCountryGroupDescription.PropertyName = "ShipCountry";
-	freightCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-	
-	var orderDateCountryGroupDescription = new QueryableDateTimeGroupDescription();
-	orderDateCountryGroupDescription.PropertyName = "OrderDate";
-	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
-```
-```VB.NET
-	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
-	shipCountryGroupDescription.PropertyName = "ShipCountry"
-	shipCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending
-	
-	Dim freightCountryGroupDescription = New QueryableDoubleGroupDescription()
-	freightCountryGroupDescription.PropertyName = "ShipCountry"
-	freightCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-	
-	Dim orderDateCountryGroupDescription = New QueryableDateTimeGroupDescription()
-	orderDateCountryGroupDescription.PropertyName = "OrderDate"
-	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_2-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_2-vb' />
 
 * If you need to avoid the data to be sorted anyhow, you can set the __SortOrder__ property to __None__. This way the data will appear the way it is was received from the data source:            
 
 
 
-```XAML
-	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="None"/>
-	<pivot:QueryableDoubleGroupDescription PropertyName="Freight" SortOrder="None"/>
-	<pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" SortOrder="None"/>
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_3-xaml' />
 
 
 
-```C#
-	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
-	shipCountryGroupDescription.PropertyName = "ShipCountry";
-	shipCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
-	
-	var freightCountryGroupDescription = new QueryableDoubleGroupDescription();
-	freightCountryGroupDescription.PropertyName = "ShipCountry";
-	freightCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
-	
-	var orderDateCountryGroupDescription = new QueryableDateTimeGroupDescription();
-	orderDateCountryGroupDescription.PropertyName = "OrderDate";
-	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
-```
-```VB.NET
-	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
-	shipCountryGroupDescription.PropertyName = "ShipCountry"
-	shipCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None
-	
-	Dim freightCountryGroupDescription = New QueryableDoubleGroupDescription()
-	freightCountryGroupDescription.PropertyName = "ShipCountry"
-	freightCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None
-	
-	Dim orderDateCountryGroupDescription = New QueryableDateTimeGroupDescription()
-	orderDateCountryGroupDescription.PropertyName = "OrderDate"
-	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_4-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_4-vb' />
 
 >Note that the __SortOrder None__ property is available with the __Q1 2014 SP1__ version of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}.              
 
@@ -121,58 +65,12 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 
 
 
-```XAML
-	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="Ascending">
-	    <pivot:QueryablePropertyGroupDescription.GroupComparer>
-	        <pivot:GrandTotalComparer AggregateIndex="0"/>
-	    </pivot:QueryablePropertyGroupDescription.GroupComparer>
-	</pivot:QueryablePropertyGroupDescription>
-	<pivot:QueryableDoubleGroupDescription PropertyName="Freight" SortOrder="Descending">
-	    <pivot:QueryablePropertyGroupDescription.GroupComparer>
-	        <pivot:GrandTotalComparer AggregateIndex="1"/>
-	    </pivot:QueryablePropertyGroupDescription.GroupComparer>
-	</pivot:QueryableDoubleGroupDescription>
-	<pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" SortOrder="Ascending">
-	    <pivot:QueryablePropertyGroupDescription.GroupComparer>
-	        <pivot:GrandTotalComparer AggregateIndex="0"/>
-	    </pivot:QueryablePropertyGroupDescription.GroupComparer>
-	</pivot:QueryableDateTimeGroupDescription>
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_5-xaml' />
 
 
 
-```C#
-	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
-	shipCountryGroupDescription.PropertyName = "ShipCountry";
-	shipCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
-	shipCountryGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
-	
-	var freightCountryGroupDescription = new QueryableDoubleGroupDescription();
-	freightCountryGroupDescription.PropertyName = "Freight";
-	freightCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-	freightCountryGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 1 };
-	
-	var orderDateCountryGroupDescription = new QueryableDateTimeGroupDescription();
-	orderDateCountryGroupDescription.PropertyName = "OrderDate";
-	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
-	orderDateCountryGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
-```
-```VB.NET
-	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
-	shipCountryGroupDescription.PropertyName = "ShipCountry"
-	shipCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending
-	shipCountryGroupDescription.GroupComparer = New GrandTotalComparer() With {.AggregateIndex = 0}
-	
-	Dim freightCountryGroupDescription = New QueryableDoubleGroupDescription()
-	freightCountryGroupDescription.PropertyName = "Freight"
-	freightCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-	freightCountryGroupDescription.GroupComparer = New GrandTotalComparer() With {.AggregateIndex = 1}
-	
-	Dim orderDateCountryGroupDescription = New QueryableDateTimeGroupDescription()
-	orderDateCountryGroupDescription.PropertyName = "OrderDate"
-	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending
-	orderDateCountryGroupDescription.GroupComparer = New GrandTotalComparer() With {.AggregateIndex = 0}
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_6-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-sorting-block_6-vb' />
 
 >The __AggregateIndex__ property is set based on the count of your aggregate descriptions. If you have two aggregates the first one will have __AggregateIndex = 0__ and the second - __AggregateIndex = 1__.
 

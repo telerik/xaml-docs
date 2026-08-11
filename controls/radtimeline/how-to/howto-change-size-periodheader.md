@@ -19,42 +19,12 @@ The period header zone can be customized by using __PeriodHeaderStyle__ property
 You can use a custom Style to customize the period header. The following example demonstrates this approach. First we are going to declare our RadTimeline control.
  
 __Example 1: Declare RadTimeline control__
-```XAML
-	<telerik:RadTimeline PeriodStart="2019-2-24" PeriodEnd="2020-2-24" Height="200">
-		<telerik:RadTimeline.Intervals>
-			<telerik:YearInterval />
-			<telerik:QuarterInterval />
-			<telerik:MonthInterval />
-			<telerik:WeekInterval />
-			<telerik:DayInterval />
-		</telerik:RadTimeline.Intervals>
-	</telerik:RadTimeline>
-```
+<snippet id='radtimeline-how-to-howto-change-size-periodheader-block_1-xaml' />
 
 Now to increase the size of the period header, we can create custom style targeting Border element and set its Height property to custom value.	
 	
 __Example 2: Customize the Period Header__
-```XAML
-	<telerik:RadTimeline PeriodStart="2019-2-24"
-						PeriodEnd="2020-2-24" 
-						Height="200">
-		<telerik:RadTimeline.PeriodHeaderStyle>
-			<Style TargetType="Border">
-				<Setter Property="VerticalAlignment" Value="Top"/>
-				<Setter Property="BorderBrush" Value="Bisque" />
-				<Setter Property="BorderThickness" Value="2" />
-				<Setter Property="Height" Value="50" />
-			</Style>
-		</telerik:RadTimeline.PeriodHeaderStyle>
-		<telerik:RadTimeline.Intervals>
-			<telerik:YearInterval />
-			<telerik:QuarterInterval />
-			<telerik:MonthInterval />
-			<telerik:WeekInterval />
-			<telerik:DayInterval />
-		</telerik:RadTimeline.Intervals>
-	</telerik:RadTimeline>
-```
+<snippet id='radtimeline-how-to-howto-change-size-periodheader-block_2-xaml' />
 
 ![RadTimeline - How to change the size of the period header 2](images/radtimeline-howto-change-size-periodheader-02.png)
 
@@ -63,19 +33,7 @@ __Example 2: Customize the Period Header__
 To update the padding of the __TimelineItemGroupsPanel__ element, we can create a custom implicit style. __Example 2__ demonstrates this:
 
 __Example 3: Update Padding of the TimelineItemGroupsPanel__
-```XAML
-	<Window.Resources>
-		<Style TargetType="telerik:TimelineItemContainer" >
-			<Setter Property="ItemsPanel">
-				<Setter.Value>
-					<ItemsPanelTemplate>
-						<telerik:TimelineItemGroupsPanel Padding="0 70 0 5" />
-					</ItemsPanelTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	</Window.Resources>
-```
+<snippet id='radtimeline-how-to-howto-change-size-periodheader-block_3-xaml' />
 
 
 ## See Also

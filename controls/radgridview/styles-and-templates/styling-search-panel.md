@@ -25,14 +25,8 @@ You have two options:
 You can apply a style to the Search Panel, similar to Example 1:
 
 __Applying a style to the search panel of RadGridView__
-```XAML
-    <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewSearchPanelStyle}" -->
-	<Style TargetType="telerik:GridViewSearchPanel">
-            <Setter Property="FontSize" Value="20"></Setter>
-            <Setter Property="FontWeight" Value="Bold"></Setter>
-            <Setter Property="Height" Value="50"></Setter>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-search-panel-applying_a_style_to_the_search_panel_of_radgridview-xaml' />
+
 
 __Appearance of the control after the style is applied__
 
@@ -43,12 +37,8 @@ __Appearance of the control after the style is applied__
 By default, the symbols matching the searching criteria are colored in red. You can easily change the highlighted text value to green by changing the value of the `HightlightBrush` in the `HighlightTextBlock`, as shown in the following example:
 
 __Change the HighlightBrush of the HighlightTextBlock__
-```XAML
-    <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource HighlightTextBlockStyle}" -->
-	<Style TargetType="telerik:HighlightTextBlock">
-			<Setter Property="HighlightBrush" Value="Green"/>		
-	</Style> 
-```
+<snippet id='radgridview-styles-and-templates-styling-search-panel-change_the_highlightbrush_of_the_highlighttextblock-xaml' />
+
 
 __Appearance of the highlighted text after the style is applied__
 
@@ -59,12 +49,8 @@ __Appearance of the highlighted text after the style is applied__
 Through the `HighlightedBackground` property you can modify the background color of the matched `GridViewCell` element when a search as you type is performed. This property is exposed by the GridViewCell class and it is of type `Brush`.
 
 __Set the HighlightedBackground property of the GridViewCell__
-```XAML
-    <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewCellStyle}" -->
-	<Style TargetType="telerik:GridViewCell">
-	    <Setter Property="HighlightedBackground" Value="Cyan"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-search-panel-set_the_highlightedbackground_property_of_the_gridviewcell-xaml' />
+
 
 __Appearance of the background color of the highlighted GridViewCell elements__
 

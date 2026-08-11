@@ -35,61 +35,11 @@ When generating shapes automatically from the various data formats via __MapShap
 In case you are manually generating the shapes inside a layer, you have to manually wrap and pass the data to the ExtendedData property. This one by using the __ExtendedData__ and the __ExtendedPropertySet__ classes. Here is an example:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:InformationLayer x:Name="informationLayer" />
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-extended-data-block_1-xaml' />
 
 
-```C#
-	// Create extended property set.
-	// It can be shared between the number
-	// of the map shapes.
-	ExtendedPropertySet propertySet = new ExtendedPropertySet();
-	propertySet.RegisterProperty( "Name", "City Name", typeof( string ), String.Empty );
-	propertySet.RegisterProperty( "Population", "Population", typeof( int ), 0 );
-	MapEllipse sofiaEllipse = new MapEllipse()
-	{
-	    ShapeFill = new MapShapeFill()
-	    {
-	        Stroke = new SolidColorBrush( Colors.Red ),
-	        StrokeThickness = 2,
-	        Fill = new SolidColorBrush( Colors.Transparent )
-	    },
-	    Width = 20,
-	    Height = 20,
-	    Location = new Location( 42.6957539183824, 23.3327663758679 ),
-	};
-	// Create extended data for the ellipse
-	// using existing property set.
-	ExtendedData sofiaData = new ExtendedData( propertySet );
-	// Set the extended properties.
-	sofiaData.SetValue( "Name", "Sofia" );
-	sofiaData.SetValue( "Population", 1300000 );
-	
-	// Assign extended data to the map shape.
-	sofiaEllipse.ExtendedData = sofiaData;
-	this.informationLayer.Items.Add( sofiaEllipse );
-```
-```VB.NET
-	' Create extended property set.'
-	' It can be shared between the number'
-	' of the map shapes.'
-	Dim propertySet As New ExtendedPropertySet()
-	propertySet.RegisterProperty("Name", "City Name", GetType(String), String.Empty)
-	propertySet.RegisterProperty("Population", "Population", GetType(Integer), 0)
-	Dim sofiaEllipse As New MapEllipse() With {.ShapeFill = New MapShapeFill() With {.Stroke = New SolidColorBrush(Colors.Red), .StrokeThickness = 2, .Fill = New SolidColorBrush(Colors.Transparent)}, .Width = 20, .Height = 20, .Location = New Location(42.6957539183824, 23.3327663758679)}
-	' Create extended data for the ellipse'
-	' using existing property set.'
-	Dim sofiaData As New ExtendedData(propertySet)
-	' Set the extended properties.'
-	sofiaData.SetValue("Name", "Sofia")
-	sofiaData.SetValue("Population", 1300000)
-	' Assign extended data to the map shape.'
-	sofiaEllipse.ExtendedData = sofiaData
-	Me.informationLayer.Items.Add(sofiaEllipse)
-```
+<snippet id='radmap-features-information-layer-extended-data-block_2-cs' />
+<snippet id='radmap-features-information-layer-extended-data-block_2-vb' />
 
 ## Extended Data Converter
 
@@ -98,61 +48,11 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 >tip You can pass a string to the ConvertParameter that combines the values of two or more properties from the Extended Data. 
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap">
-	    <telerik:InformationLayer x:Name="informationLayer" />
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-extended-data-block_3-xaml' />
 
 
-```C#
-	ExtendedPropertySet propertySet = new ExtendedPropertySet();
-	propertySet.RegisterProperty( "Name", "City Name", typeof( string ), String.Empty );
-	propertySet.RegisterProperty( "Population", "Population", typeof( int ), 0 );
-	MapEllipse sofiaEllipse = new MapEllipse()
-	{
-	    ShapeFill = new MapShapeFill()
-	    {
-	        Stroke = new SolidColorBrush( Colors.Red ),
-	        StrokeThickness = 2,
-	        Fill = new SolidColorBrush( Colors.Transparent )
-	    },
-	    Width = 20,
-	    Height = 20,
-	    Location = new Location( 42.6957539183824, 23.3327663758679 ),
-	};
-	ExtendedData sofiaData = new ExtendedData( propertySet );
-	sofiaData.SetValue( "Name", "Sofia" );
-	sofiaData.SetValue( "Population", 1300000 );
-	sofiaEllipse.ExtendedData = sofiaData;
-	// Assign tooltip which uses the extended properties.
-	ToolTip tooltip = new ToolTip();
-	Binding tooltipBinding = new Binding()
-	{
-	    Converter = new ExtendedDataConverter(),
-	    ConverterParameter = "{Name}: {Population} people",
-	    Source = sofiaEllipse.ExtendedData
-	};
-	tooltip.SetBinding(ContentProperty, tooltipBinding );
-	ToolTipService.SetToolTip( sofiaEllipse, tooltip );
-	this.informationLayer.Items.Add( sofiaEllipse );
-```
-```VB.NET
-	Dim propertySet As New ExtendedPropertySet()
-	propertySet.RegisterProperty("Name", "City Name", GetType(String), String.Empty)
-	propertySet.RegisterProperty("Population", "Population", GetType(Integer), 0)
-	Dim sofiaEllipse As New MapEllipse() With {.ShapeFill = New MapShapeFill() With {.Stroke = New SolidColorBrush(Colors.Red), .StrokeThickness = 2, .Fill = New SolidColorBrush(Colors.Transparent)}, .Width = 20, .Height = 20, .Location = New Location(42.6957539183824, 23.3327663758679)}
-	Dim sofiaData As New ExtendedData(propertySet)
-	sofiaData.SetValue("Name", "Sofia")
-	sofiaData.SetValue("Population", 1300000)
-	sofiaEllipse.ExtendedData = sofiaData
-	' Assign tooltip which uses the extended properties.'
-	Dim _tooltip As New ToolTip()
-	Dim tooltipBinding As New Binding() With {.Converter = New ExtendedDataConverter(), .ConverterParameter = "{Name}: {Population} people", .Source = sofiaEllipse.ExtendedData}
-	_tooltip.SetBinding(ContentProperty, tooltipBinding)
-	ToolTipService.SetToolTip(sofiaEllipse, _tooltip)
-	Me.informationLayer.Items.Add(sofiaEllipse)
-```
+<snippet id='radmap-features-information-layer-extended-data-block_4-cs' />
+<snippet id='radmap-features-information-layer-extended-data-block_4-vb' />
 
 Here is a snapshot of the result:
 

@@ -38,14 +38,7 @@ To retrieve the corresponding __IControlSpellChecker__ for your control (in our 
 
 
 
-```C#
-	//Here we take the IControlSpellChecker instance for the TextBox Control
-	IControlSpellChecker controlSpellchecker = ControlSpellCheckersManager.GetControlSpellChecker(typeof(TextBox));
-	//We get the SpellChecker property and cast it to DocumentSpellChecker (which inherits from ISpellChecker) 
-	DocumentSpellChecker documentSpellChecker = (DocumentSpellChecker) controlSpellchecker.SpellChecker; 
-	//Then we set the SpellCheckingCulture of DocumentSpellChecker to Spanish
-	documentSpellChecker.SpellCheckingCulture = new System.Globalization.CultureInfo("es-ES");
-```
+<snippet id='radspellchecker-features-multilanguage-support-block_1-cs' />
 
 
 
@@ -65,14 +58,7 @@ In fact the code here is pretty much the same as the code above:
 
 
 
-```C#
-	//Here we take the IControlSpellChecker instance for the TextBoxControl
-	IControlSpellChecker controlSpellchecker = ControlSpellCheckersManager.GetControlSpellChecker(typeof(TextBox));
-	//We get the SpellChecker property and cast it to DocumentSpellChecker(which inherits from ISpellChecker) 
-	DocumentSpellChecker documentSpellChecker = (DocumentSpellChecker) controlSpellchecker.SpellChecker; 
-	//Then we add the class deriving from RadDictionary and the Culture info to the DocumentSpellChecker(we are using Spanish again for the example)
-	documentSpellChecker.AddDictionary(new RadEs_ESDictionary(), new System.Globalization.CultureInfo("es-ES"));
-```
+<snippet id='radspellchecker-features-multilanguage-support-block_2-cs' />
 
 
 
@@ -81,20 +67,7 @@ In this case the RadEs_ESDictionary class is located in another assembly and inh
 
 
 
-```C#
-	public class RadEs_ESDictionary : RadDictionary
-	{
-	   public RadEs_ESDictionary()
-	   {
-	   }
-	   protected override void EnsureDictionaryLoadedOverride()
-	   {
-	        Stream stream = Application.GetResourceStream(new Uri("SpellCheckingInSpanishRRTB;component/es-ES.tdf", UriKind.Relative)).Stream;
-	        this.Load(stream);
-	   }
-	}
-```
-
+<snippet id='radspellchecker-features-multilanguage-support-block_3-cs' />
 
 
 

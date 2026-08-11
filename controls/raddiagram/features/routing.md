@@ -18,45 +18,8 @@ Routing in __RadDiagram__ is only available if the RadDiagram __RouteConnections
 > For optimal performance and better visual results, we recommend using the AStarRouter algorithm.    
 
 __Example 1: Setting RouteConnections property in XAML__
-```XAML
-	<Grid>
-		<Grid.Resources>
-			<Style TargetType="telerik:RadDiagramShape" BasedOn="{StaticResource RadDiagramShapeStyle}">
-				<Setter Property="Width" Value="100"/>
-				<Setter Property="Height" Value="40"/>
-			</Style>
-			<Style TargetType="telerik:RadDiagramConnection" BasedOn="{StaticResource RadDiagramConnectionStyle}">
-				<Setter Property="ConnectionType" Value="Polyline"/>
-			</Style>
-		</Grid.Resources>
-		<telerik:RadDiagram RouteConnections="True"  ConnectionRoundedCorners="True">
+<snippet id='raddiagram-features-routing-example_1_setting_routeconnections_property_in_xaml-xaml' />
 
-			<telerik:RadDiagramShape x:Name="xShape1"  
-							Content="Shape 1" 
-							Position="320,60"/>
-
-			<telerik:RadDiagramShape x:Name="xShape2"  
-							Content="Shape 2" 
-							Position="120,220"/>
-
-			<telerik:RadDiagramShape x:Name="xShape3"  
-							Content="Shape 3" 
-							Position="520,220"/>
-
-			<telerik:RadDiagramShape x:Name="xShape4" Width="260" Height="25" 
-							Content="Shape 4" 
-							Position="240,160"/>
-
-			<telerik:RadDiagramConnection x:Name="xConnection1" 
-								Source="{Binding ElementName=xShape1}" 
-								Target="{Binding ElementName=xShape2}"/>
-
-			<telerik:RadDiagramConnection x:Name="xConnection2" 
-								Source="{Binding ElementName=xShape1}" 
-								Target="{Binding ElementName=xShape3}"/>
-		</telerik:RadDiagram>
-	</Grid>  
-```
 
 #### __Figure 1: Default routing__
 ![raddiagram-features-routing 0](images/raddiagram-features-routing1_New.png)
@@ -64,13 +27,8 @@ __Example 1: Setting RouteConnections property in XAML__
 If you want to __exclude/include__ a connection from the routing process, you can use the __Route__ property of the __RadDiagramConnection__. Using the code above we will exclude the second connection from the routing by setting its __Route__ property to __False__.
 
 __Example 2: Setting Route property to False__
-```XAML
-	<telerik:RadDiagramConnection x:Name="xConnection2" Route="False"
-								  SourceConnectorPosition="Bottom"
-								  TargetConnectorPosition="Top"
-								  Source="{Binding ElementName=xShape1}"
-								  Target="{Binding ElementName=xShape3}"/>	
-```	
+<snippet id='raddiagram-features-routing-example_2_setting_route_property_to_false-xaml' />
+
 
 #### __Figure 2: Route property set to False__
 ![raddiagram-features-routing 1](images/raddiagram-features-routing2_New.png)	
@@ -97,56 +55,18 @@ In order to use the OrgTreeRouter , you have to instantiate an OrgTreeRouter obj
 
 __Example 3: Setting OrgTreeRouter__
 
-```C#
-	public MainPage()
-	{
-		InitializeComponent();
-		OrgTreeRouter router = new OrgTreeRouter()
-		{
-			 TreeLayoutType = TreeLayoutType.TreeDown,
-			 ConnectionOuterSpacing = 20,
-		};
-		this.diagram.RoutingService.Router = router;
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		Dim router As New OrgTreeRouter() With { 
-			 .TreeLayoutType = TreeLayoutType.TreeDown, 
-			 .ConnectionOuterSpacing = 20 _
-		
-		Me.diagram.RoutingService.Router = router
-	End Sub
-```
+<snippet id='raddiagram-features-routing-example_3_setting_orgtreerouter-cs' />
+
+<snippet id='raddiagram-features-routing-example_3_setting_orgtreerouter-vb' />
+
 
 The TreeLayoutType points to the type of Layout you wish to use. The routing logic is based on this LayoutType.
 
 The ConnectionOuterSpacing is the Minimum Margin between the Parent/Child Shape and the connection.
 
 __Example 4: Specifing RadDiagram in XAML__
-```XAML
-	<telerik:RadDiagram IsManipulationAdornerVisible="False" IsConnectorsManipulationEnabled="False" 
-					x:Name="diagram" Width="1000" Height="500" Grid.Row="1" RouteConnections="True">
-					<telerik:RadDiagramShape Width="45" Height="45" Content="Parent" x:Name="parentShape"/>
-					<telerik:RadDiagramShape Width="45" Height="45" Content="Child1" x:Name="childShape1"/>
-					<telerik:RadDiagramShape Width="45" Height="45" Content="Child2" x:Name="childShape2"/>
-					<telerik:RadDiagramShape Width="45" Height="45" Content="Child2" x:Name="childShape3" />
-					<telerik:RadDiagramShape Width="55" Height="25" Content="Child11" x:Name="subchildShape1" />
-					<telerik:RadDiagramShape Width="55" Height="25" Content="Child12" x:Name="subchildShape2" />
-					<telerik:RadDiagramConnection Source="{Binding ElementName=parentShape}" 
-												  Target="{Binding ElementName=childShape1}" />
-					<telerik:RadDiagramConnection Source="{Binding ElementName=childShape1}"
-												  Target="{Binding ElementName=subchildShape1}" />
-						<telerik:RadDiagramConnection Source="{Binding ElementName=childShape1}"
-													  Target="{Binding ElementName=subchildShape2}" />
-						<telerik:RadDiagramConnection Source="{Binding ElementName=parentShape}" 
-													  Target="{Binding ElementName=childShape2}" />
-					<telerik:RadDiagramConnection Source="{Binding ElementName=parentShape}"
-												  Target="{Binding ElementName=childShape3}" />	
-	
-	</telerik:RadDiagram>
-```
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-xaml' />
+
 
 __Figure 3__ demonstrate these shapes after TreeDown Layout operation performed on the Diagram.
 
@@ -160,39 +80,8 @@ The OrgTreeRouter is used in our __ClassDiagram__ and __OrgChart__ samples of Ra
 When the TreeLayoutType is set to TipOverTree, the OrgTreeRouter uses a special kind of router - the TipOverTreeRouter. It produces best visual results when a custom connectors are added in the bottom-left part of the shapes. In the following lines we will create a quick sample demonstrating the TipOverTree routing and how to configure it properly. Lets first define some shapes:
 
 
-```XAML
-	<Grid.Resources>
-		<Style TargetType="telerik:RadDiagramConnection">
-			<Setter Property="ConnectionType" Value="Polyline" />
-		</Style>
-		<Style TargetType="telerik:RadDiagramShape">
-			<Setter Property="Width" Value="80" />
-			<Setter Property="Height" Value="30" />
-		</Style>
-	</Grid.Resources>
-	<StackPanel>
-		<telerik:RadButton Width="300" Height="30" HorizontalAlignment="Center" Content="Layout"
-				Click="RadButton_Click" />
-		<telerik:RadDiagram x:Name="diagram" Width="1000" Height="500" RouteConnections="True">
-			<telerik:RadDiagramShape Content="Parent" x:Name="root"/>
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-xaml' />
 
-			<telerik:RadDiagramShape  Content="Child1" x:Name="child1"/>
-			<telerik:RadDiagramShape  Content="Child2" x:Name="child2"/>
-			<telerik:RadDiagramShape  Content="Child3" x:Name="child3"/>
-
-			<telerik:RadDiagramShape Content="SubChild1" x:Name="subChild1" />
-			<telerik:RadDiagramShape Content="SubChild1" x:Name="subChild2" />
-
-			<telerik:RadDiagramConnection Source="{Binding ElementName=root}" Target="{Binding ElementName=child1}" />
-			<telerik:RadDiagramConnection Source="{Binding ElementName=root}" Target="{Binding ElementName=child2}" />
-			<telerik:RadDiagramConnection Source="{Binding ElementName=root}" Target="{Binding ElementName=child3}" />
-
-			<telerik:RadDiagramConnection Source="{Binding ElementName=child1}" Target="{Binding ElementName=subChild1}" />
-			<telerik:RadDiagramConnection Source="{Binding ElementName=child1}" Target="{Binding ElementName=subChild2}" />
-
-		</telerik:RadDiagram>
-	</StackPanel>
-```
 
 On a button's click event handler we will perform 3 base steps:
 
@@ -201,67 +90,10 @@ On a button's click event handler we will perform 3 base steps:
 * Create Router and assign it to be the default one.
 
 
-```C#
-	private void RadButton_Click(object sender, RoutedEventArgs e)
-	{
-		PrepareShapesForTipOverTreeRouting();
-		TreeLayoutSettings settings = new TreeLayoutSettings()
-		{
-			TreeLayoutType = TreeLayoutType.TipOverTree,
-			UnderneathVerticalSeparation = 50,
-			VerticalDistance = 50,
-			UnderneathHorizontalOffset = 50,
-			UnderneathVerticalTopOffset = 50
-		};
-		settings.Roots.Add(this.diagram.Shapes[0]);
-		OrgTreeRouter router = new OrgTreeRouter()
-		{
-			TreeLayoutType = TreeLayoutType.TipOverTree,
-			ConnectionOuterSpacing = 10
-		};
-		this.diagram.RoutingService.Router = router;
-		this.diagram.Layout(LayoutType.Tree, settings);
-	}
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-cs' />
 
-	private void PrepareShapesForTipOverTreeRouting()
-	{
-		foreach (var item in this.diagram.Shapes)
-		{
-			var connector = new RadDiagramConnector(){Offset = new Point(0.2, 1)};
-			connector.Name = CustomConnectorPosition.TreeLeftBottom;
-			item.Connectors.Add(connector);
-		}
-	}
-```
-```VB.NET
-	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
-		PrepareShapesForTipOverTreeRouting()
-		Dim settings As New TreeLayoutSettings() With { 
-			 .TreeLayoutType = TreeLayoutType.TipOverTree, 
-			 .UnderneathVerticalSeparation = 50, 
-			 .VerticalDistance = 50, 
-			 .UnderneathHorizontalOffset = 50, 
-			 .UnderneathVerticalTopOffset = 50 
-		}
-		settings.Roots.Add(Me.diagram.Shapes(0))
-		Dim router As New OrgTreeRouter() With { 
-			 .TreeLayoutType = TreeLayoutType.TipOverTree, 
-			 .ConnectionOuterSpacing = 10 
-		}
-		Me.diagram.RoutingService.Router = router
-		Me.diagram.Layout(LayoutType.Tree, settings)
-	End Sub
-	
-	Private Sub PrepareShapesForTipOverTreeRouting()
-		For Each item As var In Me.diagram.Shapes
-			Dim connector = New RadDiagramConnector() With {
-				.Offset = New Point(0.2, 1)
-			}
-			connector.Name = CustomConnectorPosition.TreeLeftBottom
-			item.Connectors.Add(connector)
-		Next
-	End Sub
-```
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-vb' />
+
 
 Here is a possible result in Windows8 theme:
 
@@ -340,64 +172,26 @@ In the following section we will create a custom Router. This way we will be abl
 Lets first create some items:
 
 
-```XAML
-    <telerik:RadDiagram x:Name="diagram">
-	<telerik:RadDiagramShape Position="100 100" Width="100" Height="30" Content="Shape A" x:Name="shapeA"/>
-	<telerik:RadDiagramShape Position="300 100" Width="100" Height="30" Content="Shape B" x:Name="shapeB"/>
-	<telerik:RadDiagramConnection Source="{Binding ElementName=shapeA}" Target="{Binding ElementName=shapeB}" ConnectionType="Polyline"/>
-	</telerik:RadDiagram>
-```
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-xaml' />
+
 
 Now we have to create class that implements the __IRouter__ interface and override the GetRoutePoints() method:
 		
 
-```C#
-	public class CustomRouter : IRouter
-	{
-		public System.Collections.Generic.IList<Point> GetRoutePoints(IConnection connection, bool showLastLine)
-		{
-			List<Point> pointList = new List<Point>();
-			Point start = connection.StartPoint;
-			Point end = connection.EndPoint;
-	
-			pointList.Add(new Point(start.X + (end.X - start.X)*0.45, start.Y));
-			pointList.Add(new Point((start.X + end.X)/2 , (start.Y + end.Y) / 2 - 50));
-			pointList.Add(new Point((start.X + end.X)/2, (start.Y + end.Y) / 2 + 50));
-			pointList.Add(new Point(start.X + (end.X - start.X) * 0.55, end.Y));	
-	
-			return pointList;
-		}
-	}
-```
-```VB.NET
-	Public Class CustomRouter
-		Implements IRouter
-		Public Function GetRoutePoints(connection As IConnection, showLastLine As Boolean) As System.Collections.Generic.IList(Of Point)
-			Dim pointList As New List(Of Point)()
-			Dim start As Point = connection.StartPoint
-			Dim [end] As Point = connection.EndPoint
-	
-			pointList.Add(New Point(start.X + ([end].X - start.X) * 0.45, start.Y))
-			pointList.Add(New Point((start.X + [end].X) / 2, (start.Y + [end].Y) / 2 - 50))
-			pointList.Add(New Point((start.X + [end].X) / 2, (start.Y + [end].Y) / 2 + 50))
-			pointList.Add(New Point(start.X + ([end].X - start.X) * 0.55, [end].Y))
-	
-			Return pointList
-		End Function
-	End Class
-```
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-cs' />
+
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-vb' />
+
 
 Please note that we only have to add in the list the route points, no need to add the start and the end point of the connection.
 
 The final step is to make our Router the current one of the Diagram. This is done via Diagram's Routing Service;
 
 
-```C#
-	this.diagram.RoutingService.Router = new CustomRouter();
-```
-```VB.NET
-	this.diagram.RoutingService.Router = new CustomRouter();
-```
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-cs' />
+
+<snippet id='raddiagram-features-routing-example_4_specifing_raddiagram_in_xaml-vb' />
+
 
 Below you can see a possible output (Windows8 theme is applied). The custom points that router creates are marked with 1,2,3,4:
 ![raddiagram-features-customrouter](images/raddiagram-features-customrouter.png)

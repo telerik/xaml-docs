@@ -21,11 +21,8 @@ The PixelLength property of the RadGanttView control is responsible for setting 
 `PixelLength = (Ticks of the VisibleRange) / (desired pixels)`
 
   
-```C#	
-	double pixelsWidth = 760;
-	var maxTicks = this.GanttView.VisibleRange.End.Subtract(this.GanttView.VisibleRange.Start).Ticks / pixelsWidth;	
-	this.GanttView.PixelLength = TimeSpan.FromTicks(maxTicks);
-```
+<snippet id='radganttview-features-timeruler-conversion-block_1-cs' />
+
 
 ## Converting PixelLength to Pixels
 
@@ -34,9 +31,7 @@ The inverse conversion of PixelLength to pixels could be implemented with the fo
 `Pixels = (Ticks of the VisibleRange) / (desired PixelLength.Ticks)`
 
   
-```C#
-	var maxTicks = this.GanttView.PixelLength.Ticks;	
-	var pixels = this.GanttView.VisibleRange.End.Subtract(this.GanttView.VisibleRange.Start).Ticks / maxTicks;
-```
+<snippet id='radganttview-features-timeruler-conversion-block_2-cs' />
+
 
 >tip Find a runnable project showing the previous methods in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GanttView/PixelsToPixelLengthConversion).

@@ -26,23 +26,11 @@ Here is a list of the key properties which are used by BingRestMapProvider:
 >If the provider’s initialization fails, the BingRestMapProvider will raise its `InitializationFaulted` event. The event can be fired for example, when the internet connection is lost or when the service is unavailable. The event arguments are of type `InitializationFaultEventArgs` type. The arguments provides an `Error` property which contains the exception which is thrown while initialization.          
 
 __Setting BingRestMapProvider in XAML__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:BingRestMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-bing-map-rest-block_1-xaml' />
 
 __Defining BingRestMapProvider programmaticaly__
-```C#
-	BingRestMapProvider bingMap = new BingRestMapProvider( MapMode.Aerial, true, "Bing_Map_Key" );
-	this.radMap.Provider = bingMap;
-```
-```VB.NET
-	Dim bingMap As New BingRestMapProvider(MapMode.Aerial, True, "Bing_Map_Key")
-	Me.radMap.Provider = bingMap
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-bing-map-rest-block_2-cs' />
+<snippet id='radmap-features-providers-bing-rest-map-provider-bing-map-rest-block_2-vb' />
 
 __Aerial mode with labels__
 
@@ -67,13 +55,7 @@ Bing Rest Service provides culture parameter in its url address. This parameter 
 > For a list of supported cultures, see [Supported Culture Codes](https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes?redirectedfrom=MSDN).
 
 __Setting Language of RadMap in XAML__
-```XAML
-	<telerik:RadMap Language="fr-FR">
-		<telerik:RadMap.Provider>
-			<telerik:BingRestMapProvider ApplicationId="Bing_Map_Key" Mode="Aerial" IsLabelVisible="True"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-bing-map-rest-block_3-xaml' />
 
 __BingRestMapProvider with French culture parameter__
 

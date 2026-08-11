@@ -58,12 +58,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 
 
-```C#
-	LocalizationManager.Manager = new LocalizationManager()
-	{
-	    ResourceManager = RadPdfViewerResources.ResourceManager
-	};
-```
+<snippet id='radpdfviewer-localization-block_1-cs' />
 
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/Localization).
@@ -76,9 +71,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 
 
 
-```C#
-	            LocalizationManager.Manager = new CustomLocalizationManager();
-```
+<snippet id='radpdfviewer-localization-block_2-cs' />
 
 
 
@@ -89,46 +82,7 @@ What is left in order to fulfil the localization is to override the method __Get
 
 
 
-```C#
-	    public class CustomLocalizationManager : LocalizationManager
-	    {
-	        public override string GetStringOverride(string key)
-	        {
-	            switch (key)
-	            {
-	                //----------------------
-		            case "BusyIndicatorLoading":
-	                    return "Loading...";
-	                case "FixedDocumentViewers_BeginningOfDocumentReachedMessage":
-	                    return "You have reached the beginning of the document.";
-	                case "FixedDocumentViewers_CaseSensitive":
-	                    return "Case Sensitive";
-	                case "FixedDocumentViewers_EndOfDocumentReachedMessage":
-	                    return "You have reached the end of the document.";
-	                case "FixedDocumentViewers_FindDialogHeader":
-	                    return "Find";
-	                case "FixedDocumentViewers_FindNext":
-	                    return "Find Next";
-	                case "FixedDocumentViewers_FindPrevious":
-	                    return "Find Previous";
-	                case "FixedDocumentViewers_Options":
-	                    return "Options";
-	                case "FixedDocumentViewers_SearchInTheDocument":
-	                    return "Search in the document...dddddd";
-	                case "FixedDocumentViewers_UseRegularExpression":
-	                    return "Use Regular Expression";
-	                case "FixedDocumentViewers_WholeWordsOnly":
-	                    return "Whole Words Only";
-	                case "FixedDocumentViewers_FitWidth":
-	                    return "Fit Width";
-	                case "FixedDocumentViewers_ZoomToPageLevel":
-	                    return "Zoom to Page Level";
-	                //----------------------
-	            }
-	            return base.GetStringOverride(key);
-	        }
-	    }
-```
+<snippet id='radpdfviewer-localization-block_3-cs' />
 
 
 
@@ -137,19 +91,4 @@ Of course, if you don't want to hard-code your translation inside the source cod
 
 
 
-```C#
-	    public class CustomLocalizationManager : LocalizationManager
-	    {
-	        public override string GetStringOverride(string key)
-	        {
-	            switch (key)
-	            {
-	                //----------------------
-	                case "FixedDocumentViewers_BeginningOfDocumentReachedMessage":
-	                    return MyRadPdfViewerResources.FixedDocumentViewers_BeginningOfDocumentReachedMessage;
-	                //----------------------
-	            }
-	            return base.GetStringOverride(key);
-	        }
-	    }
-```
+<snippet id='radpdfviewer-localization-block_4-cs' />

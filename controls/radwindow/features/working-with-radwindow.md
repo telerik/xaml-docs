@@ -20,16 +20,8 @@ After the reference is available, you can declare a __RadWindow__. Here is an ex
 
 
 
-```C#
-	RadWindow radWindow = new RadWindow();
-	radWindow.Width = 400;
-	radWindow.Height = 300;
-```
-```VB.NET
-	Dim radWindow As New RadWindow()
-	radWindow.Width = 400
-	radWindow.Height = 300
-```
+<snippet id='radwindow-features-working-with-radwindow-block_1-cs' />
+<snippet id='radwindow-features-working-with-radwindow-block_2-vb' />
 
 ## Show the RadWindow
 
@@ -41,23 +33,15 @@ Call the __Show()__ method of the __RadWindow__ instance to open it as a __norma
 
 
 
-```C#
-	radWindow.Show();
-```
-```VB.NET
-	radWindow.Show()
-```
+<snippet id='radwindow-features-working-with-radwindow-block_3-cs' />
+<snippet id='radwindow-features-working-with-radwindow-block_4-vb' />
 
 Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a __modal dialog window__.
 
 
 
-```C#
-	radWindow.ShowDialog();
-```
-```VB.NET
-	radWindow.ShowDialog()
-```
+<snippet id='radwindow-features-working-with-radwindow-block_5-cs' />
+<snippet id='radwindow-features-working-with-radwindow-block_6-vb' />
 
 ![{{ site.framework_name }} RadWindow Shown As Modal Dialog](images/RadWindow_Working_with_RadWindow_01.png)
 
@@ -75,37 +59,19 @@ If you have a window-specific content, use the __Content__ property.
 
 
 
-```C#
-	Grid grid = new Grid();
-	grid.Background = new SolidColorBrush(Color.FromArgb(255, 240, 255, 255));
-	radWindow.Content = grid;
-```
-```VB.NET
-	Dim grid As New Grid()
-	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
-	radWindow.Content = grid
-```
+<snippet id='radwindow-features-working-with-radwindow-block_7-cs' />
+<snippet id='radwindow-features-working-with-radwindow-block_8-vb' />
 
 If you want to share a common layout structure for the content of multiple windows, define an appropriate __DataTemplate__ and set it to the __ContentTemplate__ property of the __RadWindow__.
 
 
 
-```XAML
-	<UserControl.Resources>
-	    <DataTemplate x:Key="WindowContentTemplate">
-	        <Grid Background="Azure" />
-	    </DataTemplate>
-	</UserControl.Resources>
-```
+<snippet id='radwindow-features-working-with-radwindow-block_9-xaml' />
 
 
 
-```C#
-	radWindow.ContentTemplate = this.Resources["WindowContentTemplate"] as DataTemplate;
-```
-```VB.NET
-	radWindow.ContentTemplate = TryCast(Me.Resources("WindowContentTemplate"), DataTemplate)
-```
+<snippet id='radwindow-features-working-with-radwindow-block_10-cs' />
+<snippet id='radwindow-features-working-with-radwindow-block_11-vb' />
 
 ![{{ site.framework_name }} RadWindow Custom Content Template](images/RadWindow_Working_with_RadWindow_02.png)
 

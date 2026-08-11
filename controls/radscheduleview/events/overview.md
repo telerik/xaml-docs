@@ -167,19 +167,7 @@ __RadScheduleView__ exposes the following events regarding the data manipulation
 
 
 
-```C#
-	private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
-	{
-	    // cast to CloseDialogEventArgs
-	    var eventArgs = e as CloseDialogEventArgs;
-	
-	    // you can get the DialogViewModel
-	    var currentDialogViewModel = eventArgs.DialogViewModel;
-	
-	    // you can also cancel the event
-	    eventArgs.Cancel = true;
-	}
-```
+<snippet id='radscheduleview-events-overview-block_1-cs' />
 
 ## See Also
 

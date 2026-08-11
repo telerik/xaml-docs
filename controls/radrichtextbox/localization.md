@@ -52,12 +52,7 @@ The three files should keep the same resource keys, whereas the values must be t
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.        
 
   
-```C#
-	LocalizationManager.Manager = new LocalizationManager()
-	{
-	   ResourceManager = RadRichTextBoxResources.ResourceManager
-	};
-```
+<snippet id='radrichtextbox-localization-block_1-cs' />
 
 >tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RichTextBox / Localization__.          
 
@@ -66,57 +61,16 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.        
 
   
-```C#
-	LocalizationManager.Manager = new CustomLocalizationManager();
-```
+<snippet id='radrichtextbox-localization-block_2-cs' />
 
 >Note that if you set the localization manager after the creation of the UI, some parts might remain not-localized.
 
 What is left in order to fulfill the localization is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize some of the strings in the FindReplaceDialog:        
 
   
-```C#
-	public class CustomLocalizationManager : LocalizationManager
-	{
-	   public override string GetStringOverride(string key)
-	   {
-	       switch(key)
-	       {
-	           case "Documents_FindReplaceDialog_FindNext":
-	               return "Weitersuchen";
-	           case "Documents_FindReplaceDialog_Header":
-	               return "Suchen und Ersetzen";
-	           case "Documents_FindReplaceDialog_Replace":
-	               return "Ersetzen";
-	           case "Documents_FindReplaceDialog_ReplaceAll":
-	               return "Alle ersetzen";
-	           case "Documents_FindReplaceDialog_ReplaceWith":
-	               return "Ersetzen durch"; 
-	           case "Documents_FindReplaceDialog_TextToFind":
-	               return "Suchen nach";
-	           case "Documents_FindReplaceDialog_RestartSearch":
-	               return "Zeigen unten die Multifunktionsleiste";
-	           case "Documents_FindReplaceDialog_SearchedTextNotFound":
-	               return "Der Suchbegriff wurde nicht gefunden";
-	       }
-	       return base.GetStringOverride(key);
-	   }
-	}
-```
+<snippet id='radrichtextbox-localization-block_3-cs' />
 
 If you don't want to hard-code your translation inside the source code, you can use resource files:        
 
   
-```C#
-	public override string GetStringOverride(string key)
-	{
-	   switch( key )
-	   {
-	       //----------------------
-	       case "Documents_FindReplaceDialog_TextToFind":
-	           return MyRadRichTextBoxResources.Documents_FindReplaceDialog_TextToFind;
-	       //----------------------
-	   }
-	   return base.GetStringOverride(key);
-	}
-```
+<snippet id='radrichtextbox-localization-block_4-cs' />

@@ -15,59 +15,13 @@ __RadTimeline__ provides an easy way to mark certain intervals along the visibl
 Below you can find a sample weekends generator implementation:
 	
 
-```C#
-	using Telerik.Windows.Controls;
-	using Telerik.Windows.Controls.TimeBar;
-
-	public class WeekendsGenerator : ITimeRangeGenerator
-	{
-	  public System.Collections.Generic.IEnumerable<IPeriodSpan> GetRanges(SelectionRange<DateTime> visibleRange)
-	  {
-		  TimeSpan slotSpan = TimeSpan.FromDays(2);
-		  var differenceFirstVisible = DayOfWeek.Saturday - visibleRange.Start.DayOfWeek;
-		  DateTime day = new DateTime(visibleRange.Start.Year, visibleRange.Start.Month, visibleRange.Start.Day);
-
-		  for (DateTime current = day.AddDays(differenceFirstVisible); current < visibleRange.End; current += TimeSpan.FromDays(7))
-		  {
-			  yield return new PeriodSpan(current, slotSpan);
-		  }
-	  }
-	}
-```
-```VB.NET
-	Imports Telerik.Windows.Controls
-	Imports Telerik.Windows.Controls.TimeBar
-
-	Public Class WeekendsGenerator
-	  Implements ITimeRangeGenerator
-	  Public Function GetRanges(visibleRange As SelectionRange(Of DateTime)) As System.Collections.Generic.IEnumerable(Of IPeriodSpan)
-		  Dim slotSpan As TimeSpan = TimeSpan.FromDays(2)
-		  Dim differenceFirstVisible = DayOfWeek.Saturday - visibleRange.Start.DayOfWeek
-		  Dim day As New DateTime(visibleRange.Start.Year, visibleRange.Start.Month, visibleRange.Start.Day)
-
-		  Dim current As DateTime = day.AddDays(differenceFirstVisible)
-		  While current < visibleRange.[End]
-			  yield Return New PeriodSpan(current, slotSpan)
-			  current += TimeSpan.FromDays(7)
-		  End While
-	  End Function
-	End Class
-```
+<snippet id='radtimeline-features-special-slots-block_1-cs' />
+<snippet id='radtimeline-features-special-slots-block_2-vb' />
 
 Using the __SpecialSlotsGenerator__ property of the __RadTimeline__ control you can specify a custom __ITimeRangeGenerator__ instance that defines certain time intervals as special. The example below shows how you can specify a time range generator for a __RadTimeline__ control:
 	
 
-```XAML
-	<telerik:RadTimeline PeriodStart="1-Jan-2010" PeriodEnd="1-Jan-2011">
-		<telerik:RadTimeline.SpecialSlotsGenerator>
-		  <example:WeekendsGenerator />
-		</telerik:RadTimeline.SpecialSlotsGenerator>
-		<telerik:RadTimeline.Intervals>
-		  <telerik:MonthInterval />
-		  <telerik:DayInterval />
-		</telerik:RadTimeline.Intervals>
-	</telerik:RadTimeline>
-```
+<snippet id='radtimeline-features-special-slots-block_3-xaml' />
 
 Using the sample weekends generator above, you will get the following result:
 ![Rad Timeline-features-special-slots](images/RadTimeline-features-special-slots.jpg)

@@ -18,12 +18,8 @@ If you want to change the appearance of a cell when it enters edit mode, you sho
 
 __Example 1: Styling the GridViewEditorPresenter__
 
-```XAML
-	<Style TargetType="{x:Type telerik:GridViewEditorPresenter}">
-		<Setter Property="Template" Value="{StaticResource GridViewEditorPresenterTemplate}"/>
-		<Setter Property="Padding" Value="5"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-editorpresenter-example_1_styling_the_gridvieweditorpresenter-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewEditorPresenterStyle__.
 

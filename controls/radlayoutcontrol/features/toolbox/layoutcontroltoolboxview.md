@@ -13,18 +13,8 @@ position: 1
 __LayoutControlToolBoxView__ is the control that represents the toolbox. This article demonstrates how to set it up and associate it with RadLayoutControl. 
 
 __Example 1: Setting up the toolbox__  
-```XAML
-	 <StackPanel Orientation="Horizontal">
-        <telerik:RadLayoutControl x:Name="layout" Width="300" Height="250">
-            <Button Content="Item" />
-            <telerik:LayoutControlGroup Orientation="Vertical">
-                <Button Content="Item" />
-                <Button Content="Item"/>
-            </telerik:LayoutControlGroup>
-        </telerik:RadLayoutControl>
-        <telerik:LayoutControlToolBoxView LayoutControl="{Binding ElementName=layout}" Width="300" Height="250"/>
-    </StackPanel>
-```
+<snippet id='radlayoutcontrol-features-toolbox-layoutcontroltoolboxview-example_1_setting_up_the_toolbox-xaml' />
+
 
 The toolbox can be associated with RadLayoutControl through its __LayoutControl__ property (see __Example 1__).
 	
@@ -42,9 +32,8 @@ The toolbox allows you to track and restore the items that was removed from the 
 >important This feature is disabled by default. You can enable it by setting the __TrackDeletedItems__ property to __True__.
 
 __Example 2: Enabling the deleted items tracking__
-```XAML
-	<telerik:LayoutControlToolBoxView TrackDeletedItems="True"/>
-```
+<snippet id='radlayoutcontrol-features-toolbox-layoutcontroltoolboxview-example_2_enabling_the_deleted_items_tracking-xaml' />
+
 	
 #### __Figure 2: Deleted items__
 ![{{ site.framework_name }} RadLayoutControl Deleted items](images/radlayoutcontrol-features-toolbox-toolboxview-02.png)

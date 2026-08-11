@@ -13,9 +13,7 @@ position: 7
 The providers that derives from OlapDataProvider (XmlaDataProvider{% if site.site_name == 'WPF' %} and AdomdDataProvider{% endif %}) has a default limit of 1000 distinct values that will be fetched from the database. This limit is set on purpose to avoid accidental performance hits. You can alter this limit by setting the __DistinctValuesLimit__ property of the provider. 
 
 
-```XAML
-	<pivot:XmlaDataProvider DistinctValuesLimit="5000">
-```
+<snippet id='radpivotgrid-features-olap-providers-distinct-values-limit-block_1-xaml' />
 
 <br/>
 >tip Check the [Using XmlaDataProvider]({%slug radpivotgrid-data-xmla%}){% if site.site_name == 'WPF' %} and [Using AdomdDataProvider]({%slug radpivotgrid-data-adomd%}){% endif %} to see how to set up the provider.

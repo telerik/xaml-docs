@@ -18,13 +18,7 @@ Here is an example of a __RadMenu__ with a delay before opening a menu equal to 
 
 
 
-```XAML
-	<telerik:RadMenu VerticalAlignment="Top"
-	                 ShowDelay="0:0:1"
-	                 HideDelay="0:0:1">
-	    ...
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-features-opening-and-closing-delays-block_1-xaml' />
 
 ## See Also
 

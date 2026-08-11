@@ -30,32 +30,8 @@ The visibility and appearance of the minor ticks can be controlled via the follo
 * `MinorTickStyle`&mdash;The style for each `Rectangle` instance created to represent a minor tick when no `MinorTickTemplate` is specified.
 
 __Cartesian Chart with customized minor ticks__
-```XAML
-    <telerik:RadCartesianChart>
-        <telerik:RadCartesianChart.HorizontalAxis>
-            <telerik:LinearAxis Maximum="100"
-                                DesiredTickCount="10" 
-                                MinorTicksPerMajor="3"
-                                MinorTickLength="10">
-                <telerik:LinearAxis.MinorTickStyle>
-                    <Style TargetType="Rectangle">
-                        <Setter Property="Fill" Value="Blue" />
-                    </Style>
-                </telerik:LinearAxis.MinorTickStyle>
-            </telerik:LinearAxis>
-        </telerik:RadCartesianChart.HorizontalAxis>
-        <telerik:RadCartesianChart.VerticalAxis>
-            <telerik:LinearAxis Maximum="100" />
-        </telerik:RadCartesianChart.VerticalAxis>
-        <telerik:RadCartesianChart.Series>
-            <telerik:ScatterPointSeries>
-                <telerik:ScatterPointSeries.DataPoints>
-                    <!-- ... -->
-                </telerik:ScatterPointSeries.DataPoints>
-            </telerik:ScatterPointSeries>
-        </telerik:RadCartesianChart.Series>
-    </telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-minor-ticks-and-stripes-cartesian_chart_with_customized_minor_ticks-xaml' />
+
 
 ![Cartesian Chart with customized minor ticks](images/radchartview-minor-ticks-and-stripes-0.png)
 
@@ -75,24 +51,8 @@ The CartesianChartGrid provides the following properties for customization of th
 * `MinorYLineDashArray`&mdash;The dash array used to define each minor X-line StrokeDashArray
 
 __Cartesian Chart with customized CartesianChartGrid__
-```XAML
-    <telerik:RadCartesianChart>
-        <telerik:RadCartesianChart.Grid>
-            <telerik:CartesianChartGrid MajorLinesVisibility="None"
-                                MinorLinesVisibility="X"
-                                StripLinesVisibility="None"
-                                MinorStripLinesVisibility="X"
-                                MinorXLineDashArray="6 3">
-                <telerik:CartesianChartGrid.MinorXLineStyle>
-                    <Style TargetType="Line">
-                        <Setter Property="Stroke" Value="Blue" />
-                    </Style>
-                </telerik:CartesianChartGrid.MinorXLineStyle>
-            </telerik:CartesianChartGrid>
-        </telerik:RadCartesianChart.Grid>
-        <!-- Axes defined in previous example -->
-    </telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-minor-ticks-and-stripes-cartesian_chart_with_customized_cartesianchartgrid-xaml' />
+
 
 ![Cartesian Chart with customized CartesianChartGrid](images/radchartview-minor-ticks-and-stripes-1.png)
 
@@ -108,41 +68,8 @@ The PolarChartGrid provides the following properties for customization of the gr
 * `MinorRadialDashArray`&mdash;The `DoubleCollection` that defines the pattern of the minor radial (angle) lines within the grid.
 
 __Polar Chart with customized PolarChartGrid__
-```XAML
-    <telerik:RadPolarChart Palette="Windows8">
-        <telerik:RadPolarChart.PolarAxis>
-            <telerik:PolarAxis MinorTicksPerMajor="1" />
-        </telerik:RadPolarChart.PolarAxis>
-        <telerik:RadPolarChart.RadialAxis>
-            <telerik:NumericRadialAxis MinorTicksPerMajor="2" />
-        </telerik:RadPolarChart.RadialAxis>
-        <telerik:RadPolarChart.Series>
-            <telerik:PolarLineSeries>
-                <telerik:PolarLineSeries.DataPoints>
-                    <!-- ... -->
-                </telerik:PolarLineSeries.DataPoints>
-            </telerik:PolarLineSeries>
-        </telerik:RadPolarChart.Series>
-        <telerik:RadPolarChart.Grid>
-            <telerik:PolarChartGrid GridLineVisibility="Both"
-                                    MinorGridLineVisibility="Both"
-                                    MinorStripesVisibility="Radial"
-                                    MinorRadialDashArray="2 1"
-                                    MinorPolarLineDashArray="6 3">
-                <telerik:PolarChartGrid.MinorPolarLineStyle>
-                    <Style TargetType="Line">
-                        <Setter Property="Stroke" Value="Blue" />
-                    </Style>
-                </telerik:PolarChartGrid.MinorPolarLineStyle>
-                <telerik:PolarChartGrid.MinorRadialLineStyle>
-                    <Style TargetType="Ellipse">
-                        <Setter Property="Stroke" Value="Red" />
-                    </Style>
-                </telerik:PolarChartGrid.MinorRadialLineStyle>
-            </telerik:PolarChartGrid>
-        </telerik:RadPolarChart.Grid>
-    </telerik:RadPolarChart>
-```
+<snippet id='radchartview-features-minor-ticks-and-stripes-polar_chart_with_customized_polarchartgrid-xaml' />
+
 
 ![Polar Chart with customized PolarChartGrid](images/radchartview-minor-ticks-and-stripes-2.png)
 

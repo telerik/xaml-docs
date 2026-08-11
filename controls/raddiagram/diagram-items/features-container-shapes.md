@@ -31,32 +31,16 @@ A container can be compared with a __HeaderedItemsControl__ but is also a true d
 The __RadDiagramContainerShape__ header is controlled via the __Content__ property:
 
 __Example 1: Specify container shape element in XAML__
-```XAML
-    <Grid>
-        <telerik:RadDiagram>
-            <telerik:RadDiagramContainerShape Content="Container" />
-        </telerik:RadDiagram>
-    </Grid>			  
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_1_specify_container_shape_element_in_xaml-xaml' />
+
 
 ![Rad Diagram Features Containers Content](images/RadDiagram_Features_Containers_Content.png)
 
 If you bind the __Content__ property to a business property, you can use the __ContentTemplate__ to apply a __DataTemplate__ and control the way your business data is displayed in the header of the __RadDiagramContainerShape__:		  
 
 __Example 2: Bind Content property of the container shape__
-```XAML
-    <Grid>
-        <telerik:RadDiagram>
-            <telerik:RadDiagramContainerShape Content="{Binding}">
-                <telerik:RadDiagramContainerShape.ContentTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding Header}" />
-                    </DataTemplate>
-                </telerik:RadDiagramContainerShape.ContentTemplate>
-            </telerik:RadDiagramContainerShape>
-        </telerik:RadDiagram>
-    </Grid>
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_2_bind_content_property_of_the_container_shape-xaml' />
+
 
 ## Edit Mode
 
@@ -71,106 +55,30 @@ The main purpose of the __RadDiagramContainerShape__ is to allow you to drop sha
 You can also populate it manually in xaml:
 			
 __Example 3: Declarativity populate container shape with items__
-```XAML	
-    <telerik:RadDiagram>
-        <telerik:RadDiagramContainerShape  x:Name="containerShape" Content="Container">
-            <telerik:RadDiagramShape Content="Shape1" />
-        </telerik:RadDiagramContainerShape>
-    </telerik:RadDiagram>	
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_3_declarativity_populate_container_shape_with_items-xaml' />
+
 
 Or in code-behind:
 
 __Example 4: Populate container shape with items in code behind__
-```C#
-    containerShape.Items.Add(new RadDiagramShape() { Content = "Shape 1"});			  
-```
-```VB.NET
-    containerShape.Items.Add(New RadDiagramShape() With {.Content = "Shape 1"})
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_4_populate_container_shape_with_items_in_code_behind-cs' />
+
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_4_populate_container_shape_with_items_in_code_behind-vb' />
+
 
 You can also populate the __RadDiagramContainerShape__ from a collection of business items. You can use the __ItemsSource__ property to bind it to your data objects. For example, if the __RadDiagram.DataContext__ contains a collection of business nodes:	  
 
 __Example 5: Create ViewModel which will hold custom collection of business objects__
-```C#
-    public class MainViewModel
-    {
-        public ObservableCollection<NodeViewModelBase> Nodes { get; set; }
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_5_create_viewmodel_which_will_hold_custom_collection_of_business_objects-cs' />
 
-        public MainViewModel()
-        {
-            this.Nodes = new ObservableCollection<NodeViewModelBase>();
-            for (int i = 1; i < 6; i++)
-            {
-                this.Nodes.Add(new NodeViewModelBase()
-                {
-                    Content = String.Format("Shape {0}", i),
-                    Position = new Point(i * 20, i * 45)
-                });
-            }
-        }
-    }
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_5_create_viewmodel_which_will_hold_custom_collection_of_business_objects-vb' />
 
-    public partial class ContainerShapeSample : UserControl
-    {
-        public ContainerShape()
-        {
-            InitializeComponent();
-            this.xDiagram.DataContext = new MainViewModel();
-        }
-    }    
-```
-```VB.NET
-    Public Class MainViewModel
-        Public Property Nodes() As ObservableCollection(Of NodeViewModelBase)
-            Get
-                Return m_Nodes
-            End Get
-            Set
-                m_Nodes = Value
-            End Set
-        End Property
-        Private m_Nodes As ObservableCollection(Of NodeViewModelBase)
-
-        Public Sub New()
-            Me.Nodes = New ObservableCollection(Of NodeViewModelBase)()
-            For i As Integer = 1 To 5
-                Me.Nodes.Add(New NodeViewModelBase() With { .Content = [String].Format("Shape {0}", i), 
-                                                            .Position = New Point(i * 20, i * 45)
-                                                          })
-            Next
-        End Sub
-    End Class
-
-    Public Partial Class ContainerShapeSample
-        Inherits UserControl
-        Public Sub New()
-            InitializeComponent()
-            Me.xDiagram.DataContext = New MainViewModel()
-        End Sub
-    End Class
-```
 
 You can display that collection in a __RadDiagramContainerShape__:		  
 
 __Example 6: Bind ItemsSource property of container shape__
-```XAML
-    <telerik:RadDiagram x:Name="xDiagram">
-        <telerik:RadDiagram.ShapeStyle>
-            <Style TargetType="telerik:RadDiagramShape">
-                <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
-            </Style>
-        </telerik:RadDiagram.ShapeStyle>
-        <telerik:RadDiagram.ShapeTemplate>
-            <DataTemplate>
-                <TextBlock Text="{Binding Content}" />
-            </DataTemplate>
-        </telerik:RadDiagram.ShapeTemplate>
-        <telerik:RadDiagramContainerShape x:Name="cShape"
-                                    Content="Container"
-                                    ItemsSource="{Binding Nodes}" />
-    </telerik:RadDiagram>			  			  
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_6_bind_itemssource_property_of_container_shape-xaml' />
+
 
 ![Rad Diagram Container Shape Items Source](images/RadDiagram_ContainerShape_ItemsSource.png)
 
@@ -185,24 +93,8 @@ With Q2 2013, you can make your __RadDiagramContainerShape__ collapsible. In ord
 For instance, if you take the above __RadDiagramContainerShape__ data-bound definition, you can extend it to set the __IsCollapsible__ property to __True__ in the following manner:	  
 
 __Example 7: Set IsCollapsible in XAML__
-```XAML
-    <telerik:RadDiagram x:Name="xDiagram">
-        <telerik:RadDiagram.ShapeStyle>
-            <Style TargetType="telerik:RadDiagramShape">
-                <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
-            </Style>
-        </telerik:RadDiagram.ShapeStyle>
-        <telerik:RadDiagram.ShapeTemplate>
-            <DataTemplate>
-                <TextBlock Text="{Binding Content}" />
-            </DataTemplate>
-        </telerik:RadDiagram.ShapeTemplate>
-        <telerik:RadDiagramContainerShape x:Name="cShape"
-                                          Content="Container"
-                                          IsCollapsible="True"
-                                          ItemsSource="{Binding Nodes}" />
-    </telerik:RadDiagram>		  
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_7_set_iscollapsible_in_xaml-xaml' />
+
 
 This should result in the following layout:
 ![Rad Diagram Container Shape Collapsible](images/RadDiagram_ContainerShape_Collapsible.png)
@@ -216,25 +108,8 @@ Below you can find a list of all __RadDiagramContainerShape__ members that are r
 * __CollapsedContent__: A property of type __object__ that gets or sets an __object__ that defines the content displayed inside a collapsed __RadDiagramContainerShape__.		  
 
 __Example 8: Set CollapsedContent property in XAML__
-```XAML
-    <telerik:RadDiagram x:Name="xDiagram">
-        <telerik:RadDiagram.ShapeStyle>
-            <Style TargetType="telerik:RadDiagramShape">
-                <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
-            </Style>
-        </telerik:RadDiagram.ShapeStyle>
-        <telerik:RadDiagram.ShapeTemplate>
-            <DataTemplate>
-                <TextBlock Text="{Binding Content}" />
-            </DataTemplate>
-        </telerik:RadDiagram.ShapeTemplate>
-        <telerik:RadDiagramContainerShape x:Name="cShape"
-                                          Content="Container"
-                                          CollapsedContent="Collapsed!"
-                                          IsCollapsible="True"
-                                          ItemsSource="{Binding Nodes}" />
-    </telerik:RadDiagram>
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_8_set_collapsedcontent_property_in_xaml-xaml' />
+
 
 ![Rad Diagram Container Shape Collapsed Content](images/RadDiagram_ContainerShape_CollapsedContent.png)
 
@@ -286,9 +161,8 @@ The __ContainerService__ is a static class which can be used to manipulate the c
 * __Prevent dropping a shape in container__: To prevent dropping a shape inside a container, you can set the __IsDropEnabled__ property of the __RadDiagramContainerShape__ to __False__.
 
 __Example : Setting IsDropEnabled property to False__
-```XAML
-	<telerik:RadDiagramContainerShape IsDropEnabled="False" />
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_setting_isdropenabled_property_to_false-xaml' />
+
 
 ## Customize drag and drop actions
 
@@ -302,23 +176,8 @@ __RadDiagramContainerShape__ implements __IDragDropAware__ interface. This inter
 To subscribe to the drag/drop events you can create a custom class which derives from __RadDiagramContainerShape__ and override the corresponding methods.
 
 __Example : Overriding event handlers__
-```C#
-	public class CustomShape : RadDiagramContainerShape
-	{
-		protected override void OnDragEnter(DragItemsEventArgs args)
-		{
-			base.OnDragEnter(args);
-		}
-		protected override void OnDragLeave(DragItemsEventArgs args)
-		{
-			base.OnDragLeave(args);
-		}
-		protected override void OnDrop(DragItemsEventArgs args)
-		{
-			base.OnDrop(args);
-		}
-	}
-```
+<snippet id='raddiagram-diagram-items-features-container-shapes-example_overriding_event_handlers-cs' />
+
 
 ## See Also
  * [Shapes]({%slug raddiagrams-features-shapes%})

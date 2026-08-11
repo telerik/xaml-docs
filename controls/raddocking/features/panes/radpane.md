@@ -20,55 +20,15 @@ The __RadPane__ is the main content unit of the __RadDocking__ control. Its main
 
 __Example 1: Add RadPanes to RadDocking__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer">
-	        <telerik:RadPaneGroup x:Name="radPaneGroup">
-	            <telerik:RadPane x:Name="radPane1" Header="Document 1">
-	                <TextBlock Text="Some simple text here"></TextBlock>
-	            </telerik:RadPane>
-	            <telerik:RadPane x:Name="radPane2" Header="Document 2">
-	                <TextBlock Text="Some simple text here"></TextBlock>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-panes-radpane-example_1_add_radpanes_to_raddocking-xaml' />
+
 
 __Example 1: Add RadPanes to RadDocking__
 
-```C#
-	RadPane radPane1 = new RadPane();
-	radPane1.Header = "Document 1";
-	radPane1.Content = new TextBlock() { Text = "Some simple text here" };
+<snippet id='raddocking-features-panes-radpane-example_1_add_radpanes_to_raddocking-cs' />
 
-	RadPane radPane2 = new RadPane();
-	radPane2.Header = "Document 2";
-	radPane2.Content = new TextBlock() { Text = "Some simple text here" };
+<snippet id='raddocking-features-panes-radpane-example_1_add_radpanes_to_raddocking-vb' />
 
-	var radPaneGroup = new RadPaneGroup();
-	radPaneGroup.Items.Add(radPane1);
-	radPaneGroup.Items.Add(radPane2);
-	var radSplitContainer = new RadSplitContainer();
-	radSplitContainer.Items.Add(radPaneGroup);
-	radDocking.Items.Add(radSplitContainer);
-```
-```VB.NET
-	Dim radPane1 As New RadPane()
-	radPane1.Header = "Document 1"
-	radPane1.Content = New TextBlock() With {.Text = "Some simple text here"}
-
-	Dim radPane2 As New RadPane()
-	radPane2.Header = "Document 2"
-	radPane2.Content = New TextBlock() With {.Text = "Some simple text here"}
-
-	Dim radPaneGroup = New RadPaneGroup()
-	radPaneGroup.Items.Add(radPane1)
-	radPaneGroup.Items.Add(radPane2)
-	Dim radSplitContainer = New RadSplitContainer()
-	radSplitContainer.Items.Add(radPaneGroup)
-	radDocking.Items.Add(radSplitContainer)
-```
 
 **Figure 1** displays the resulting RadDocking control.
 

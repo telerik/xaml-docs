@@ -16,20 +16,6 @@ An example for such an implementation is illustrated below:
 
 
 
-```C#
-	//Subscribing to the GiveFeedback event
-	DragDropManager.AddGiveFeedbackHandler(SampleListBox, OnGiveFeedBack);
-	//Handling the GiveFeedback event
-	private void OnGiveFeedBack(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs args)
-	{
-	      args.SetCursor(Cursors.Arrow);
-	      args.Handled = true;
-	}
-```
-```VB.NET
-	DragDropManager.AddGiveFeedbackHandler(Me, New GiveFeedbackEventHandler(AddressOf OnGiveFeedBack))
-	Private Sub OnGiveFeedBack(sender As Object, e As Telerik.Windows.DragDrop.GiveFeedbackEventArgs) 
-	   args.SetCursor(Cursors.Arrow)
-	   args.Handled = True
-	End Sub
-```
+<snippet id='dragdropmanager-how-to-howto-set-cursor-to-arrow-while-dragging-block_1-cs' />
+<snippet id='dragdropmanager-how-to-howto-set-cursor-to-arrow-while-dragging-block_1-vb' />
+

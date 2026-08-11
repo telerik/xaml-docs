@@ -31,9 +31,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 ## Defining the RadVirtualKeyboard
 
 __Defining RadVirtualKeyboard in XAML__
-```XAML
-	 <telerik:RadVirtualKeyboard />
-```
+<snippet id='radvirtualkeyboard-getting-started-block_1-xaml' />
 
 ![{{ site.framework_name }} RadVirtualKeyboard Default Layout](images/radvirtualkeyboard-overview-1.png)
 
@@ -56,4 +54,3 @@ There is no need to manually subscribe an input element to the keyboard control.
 * [Visual Structure]({%slug radvirtualkeyboard-visual-structure%})
 * [Keys Layout]({%slug radvirtualkeyboard-keys-layout%})
 * [Customize Keys]({%slug radvirtualkeyboard-customize-keys%})
-

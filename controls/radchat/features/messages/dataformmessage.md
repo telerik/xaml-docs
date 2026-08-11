@@ -18,24 +18,8 @@ The __DataFormMessage__ mimics the [RadDataForm]({%slug raddataform-overview%}) 
 * __DateTime creationDate__: the __creationDate__ parameter is optional.
 
 __Example 1: Defining a DataFormMessage__ 
-```C#
-	    Club chelsea = new Club()
-            {
-                Name = "Chelsea",
-                StadiumCapacity = 42055,
-                Established = new DateTime(1905, 1, 1)
-            };
+<snippet id='radchat-features-messages-dataformmessage-example_1_defining_a_dataformmessage-cs' />
 
-        List<string> listProperties = new List<string>();
-
-        listProperties.Add("Name");
-        listProperties.Add("StadiumCapacity");
-        listProperties.Add("Established");
-
-        DataFormMessage dataFormMessage 
-				= new DataFormMessage(MessageDisplayPosition.Inline, this.currentAuthor, chelsea, listProperties);
- 	    this.chat.AddMessage(dataFormMessage);
-```
 
 #### __Figure 1: Defining DataFormMessage__
 ![Defining DataFormMessage](images/RadChat_Messages_DataForm_01.png)

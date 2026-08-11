@@ -31,38 +31,8 @@ This article lists and describes the breaking changes introduced in the RadGridV
 	As of Q3 2013 `GridViewElementExportingEventArgs` exposes a new property called `VisualParameters`. The value of the property depends on the export format. You can use this to style the exported element.
 	
 	__Replacing the GridViewExportEventArgs styling with the GridViewElementExportingEventArgs__
-	```C#
-		// before
-		private void radGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e) 
-		{ 
-			e.Background = Colors.Red; 
-			e.FontFamily = new FontFamily("Verdana"); 
-			e.FontSize = 30; 
-			e.FontWeight = FontWeights.Bold; 
-			e.Foreground = Colors.Green; 
-			e.Height = 50; 
-			e.TextAlignment = TextAlignment.Center; 
-			e.VerticalAlignment = VerticalAlignment.Bottom; 
-		} 
-		
-		// after
-		private void clubsGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e) 
-		{ 
-			if (e.VisualParameters is GridViewHtmlVisualExportParameters) 
-			{ 
-				var param = e.VisualParameters as GridViewHtmlVisualExportParameters; 
-				param.Background = Colors.Red; 
-				param.FontFamily = new FontFamily("Verdana"); 
-				param.FontSize = 30; 
-				param.FontWeight = FontWeights.Bold; 
-				param.Foreground = Colors.Green; 
-				param.Height = 50; 
-				param.TextAlignment = TextAlignment.Center; 
-				param.VerticalAlignment = VerticalAlignment.Bottom; 
-				param.Width = 500; 
-			} 
-		}
-	```	
+	<snippet id='radgridview-breaking-changes-replacing_the_gridviewexporteventargs_styling_with_the_gridviewelementexportingeventargs-cs' />
+
 
 * Removed obsoleted property `DefaultOperator` of `FilterOperatorsLoadingEventArgs`. Use the `DefaultOperator1` and `DefaultOperator2` properties instead.
 
@@ -99,9 +69,8 @@ The filtering enablement in the `GridViewExpressionColumn` required to write to 
 * You can't directly instantiate a `ColumnFilterDescriptor` anymore since the class has been made internal. When you access the `GridViewColumn.ColumnFilterDescriptor` property, it will be automatically created on demand by the column and you will be given an `IColumnFilterDescriptor` to work with. 
 
 	__Accessing the ColumnFilterDescriptor of a column__
-	```C#
-		IColumnFilterDescriptor cfd = myColumnInstance.ColumnFilterDescriptor;
-	```	
+	<snippet id='radgridview-breaking-changes-accessing_the_columnfilterdescriptor_of_a_column-cs' />
+
 
 * The `IColumnFilterDescriptor.Column` property is now of type `GridViewColumn` instead of `IDataFieldDescriptor`.          
 
@@ -116,38 +85,12 @@ The filtering enablement in the `GridViewExpressionColumn` required to write to 
 The following examples show some of the changes.
 
 __Filtering a Column__
-```C#
-	// before	
-	GridViewColumn ageColumn = this.radGridView.Columns["Age"];
-	ColumnFilterDescriptor ageColumnFilter = new ColumnFilterDescriptor(ageColumn);	
-	ageColumnFilter.DistinctFilter.DistinctValues.Add(5);
-	ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
-	ageColumnFilter.FieldFilter.Filter1.Value = 10;
-	this.radGridView.FilterDescriptors.Add(ageColumnFilter);
-	
-	// after
-	GridViewColumn ageColumn = this.radGridView.Columns["Age"];	
-	IColumnFilterDescriptor ageColumnFilter = ageColumn.ColumnFilterDescriptor;
-	ageColumnFilter.SuspendNotifications();
-	ageColumnFilter.DistinctFilter.AddDistinctValue(5);
-	ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
-	ageColumnFilter.FieldFilter.Filter1.Value = 10;
-	ageColumnFilter.ResumeNotifications()
-```
+<snippet id='radgridview-breaking-changes-filtering_a_column-cs' />
+
 
 __Clearing All RadGridView Filters__  
-```C#
-	// before
-	this.radGridView.FilterDescriptors.Clear();
-	
-	// after
-	this.radGridView.FilterDescriptors.SuspendNotifications();
-	foreach (var column in this.radGridView.Columns)
-	{
-	    column.ClearFilters();
-	}
-	this.radGridView.FilterDescriptors.ResumeNotifications();
-```
+<snippet id='radgridview-breaking-changes-clearing_all_radgridview_filters-cs' />
+
 
 ## See Also  
  * [Getting Started]({%slug gridview-getting-started2%})

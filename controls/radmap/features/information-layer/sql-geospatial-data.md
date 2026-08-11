@@ -33,16 +33,7 @@ The __SqlGeospatialDataReader__ supports the following geometry types:
 The coordinates for geometries may be 2D (x, y), 3D (x, y, z), 4D (x, y, z, m) with an m value that is part of a linear referencing system or 2D with an m value (x, y, m). However the __SqlGeospatialDataReader__ uses the x and y coordinates only, so that the z and m coordinates will be ignored. The __SqlGeospatialDataReader__ can be used in the InformationLayer.Reader property the same way as the MapShapeReader. The sample code is below:        
 
 
-```XAML
-	<telerik:InformationLayer x:Name="informationLayer">
-	    <telerik:InformationLayer.Reader>
-	        <telerik:SqlGeospatialDataReader x:Name="sqlGeospatialDataReader" 
-	                   ExtendedPropertySet="Area,string Latitude,double Longitude,double"
-	                   Source="{Binding Source={StaticResource domainServiceContext}, Path=LocationsWKTs}"
-	                   GeospatialPropertyName="Point" ToolTipFormat="Area" PreviewReadCompleted="reader_PreviewReadCompleted" />
-	    </telerik:InformationLayer.Reader>
-	</telerik:InformationLayer>
-```
+<snippet id='radmap-features-information-layer-sql-geospatial-data-block_1-xaml' />
 
 It allows using the __ClearLayer__, __ExtendedPropertySet__, __ToolTipFormat__, __ToolTipTemplate__, __ToolTipStyle__ and __CoordinateConverter__ properties the same way they are used in MapShapeReader. Also it supports the PreviewReadCompleted and ReadCompleted events which are used in MapShapeReader.        
 
@@ -73,129 +64,14 @@ If you use *Entity Data Model*, *Linq to SQL* or *Telerik OpenAccess Domain Mode
 {% endif %}
 
 
-```XAML
-	<Window x:Class="EntityDataModelTest.MainWindow"
-	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	        xmlns:local="clr-namespace:EntityDataModelTest"
-	        Title="MainWindow" Height="350" Width="525">
-		<Window.Resources>
-			<local:Database1Entities x:Key="dataBase" />
-		</Window.Resources>
-		<Grid x:Name="LayoutRoot">
-			<telerik:RadMap x:Name="radMap"
-				Center="40,-100"
-				ZoomLevel="3">
-				<telerik:RadMap.Provider>
-					<telerik:OpenStreetMapProvider />
-				</telerik:RadMap.Provider>
-				<telerik:InformationLayer x:Name="informationLayer">
-					<telerik:InformationLayer.Reader>
-						<telerik:SqlGeospatialDataReader x:Name="sqlGeospatialDataReader" 
-											 GeospatialPropertyName="Point"
-											 Source="{Binding Source={StaticResource dataBase}, Path=LocationsWKB}"
-											 ToolTipFormat="{}{Area} ({Latitude} : {Longitude})"
-											 PreviewReadCompleted="reader_PreviewReadCompleted" />
-					</telerik:InformationLayer.Reader>
-				</telerik:InformationLayer>
-			</telerik:RadMap>
-		</Grid>
-	</Window>
-```
+<snippet id='radmap-features-information-layer-sql-geospatial-data-block_2-xaml' />
 
 {% if site.site_name == 'Silverlight' %}
 If you use *Wcf Data Service* or *Domain Service* in your Silverlight application, then their instances cannot be used directly to get the geospatial table data for the __SqlGeospatialDataReader__. Source property. In this case the geospatial data is retrieved asynchronously. So, you should use the __Completed__ event to set the *SqlGeospatialDataReader.Source*. It will be useful to use the small proxy class like to the following sample class for *Domain Service*:
 {% endif %}
 
 
-```C#
-	public class DomainServiceContext : INotifyPropertyChanged
-	{
-	  private DomainService1 domainService1Context = new DomainService1();
-	  private IEnumerable locationsWKTs;
-	  public new IEnumerable LocationsWKTs
-	  {
-	   get
-	  {
-	    if (this.locationsWKTs == null)
-	  {
-	    var loadOp = this.domainService1Context.Load(this.domainService1Context.GetLocationsWKTsQuery());
-	    loadOp.Completed += new EventHandler(loadOp_Completed);
-	  }
-	return this.locationsWKTs;
-	}
-	　set
-	  {
-	   this.locationsWKTs = value;
-	   this.OnPropertyChanged("LocationsWKTs");
-	   }
-	}　
-	private void loadOp_Completed(object sender, EventArgs e)
-	   {
-	    var loadOp = sender as LoadOperation;
-	    if (loadOp != null)
-	     {
-	      this.LocationsWKTs = loadOp.Entities;
-	     }
-	  }
-	
-	　public event PropertyChangedEventHandler PropertyChanged;
-	
-	private void OnPropertyChanged(string name)
-	 {
-	   PropertyChangedEventHandler handler = PropertyChanged;
-	  if (handler != null)
-	   {
-	     handler(this, new PropertyChangedEventArgs(name));
-	    }
-	  }
-	}
-```
-```VB.NET
-	Public Class DataBaseContext
-	      Inherits Database1Entities1
-	      Implements INotifyPropertyChanged
-		Public Sub New()
-			  MyBase.New(New Uri("http://localhost:6838/WcfDataService1.svc"))
-		End Sub
-		Private locationsWKBs_Renamed As IEnumerable
-		Public Shadows Property LocationsWKBs() As IEnumerable
-			  Get
-					If Me.locationsWKBs_Renamed Is Nothing Then
-						  Dim query = MyBase.LocationsWKBs
-						  Me.RunDataServiceQuery(query)
-					End If
-
-					Return Me.locationsWKBs_Renamed
-			  End Get
-
-			  Set(ByVal value As IEnumerable)
-					Me.locationsWKBs_Renamed = value
-					Me.OnPropertyChanged("LocationsWKBs")
-			  End Set
-		End Property
-
-		Public Sub RunDataServiceQuery(Of T)(ByVal query As IQueryable(Of T))
-			  Dim entity = New DataServiceCollection(Of T)()
-
-			  AddHandler entity.LoadCompleted, AddressOf entity_LoadCompleted
-			  entity.LoadAsync(query)
-		End Sub
-
-		Private Sub entity_LoadCompleted(ByVal sender As Object, ByVal e As LoadCompletedEventArgs)
-			  Me.LocationsWKBs = TryCast(sender, IEnumerable)
-		End Sub
-
-		Public Event PropertyChanged As PropertyChangedEventHandler
-
-		Private Sub OnPropertyChanged(ByVal name As String)
-			  Dim handler As PropertyChangedEventHandler = PropertyChangedEvent
-			  If handler IsNot Nothing Then
-					handler(Me, New PropertyChangedEventArgs(name))
-			  End If
-		End Sub
-	End Class
-```
+<snippet id='radmap-features-information-layer-sql-geospatial-data-block_3-cs' />
+<snippet id='radmap-features-information-layer-sql-geospatial-data-block_3-vb' />
 
 >tip In our {% if site.site_name == 'Silverlight' %}[SDK examples repository](https://github.com/telerik/xaml-sdk/tree/master/Map/Silverlight/SQLGeospatialData){% else %}[SDK examples repository](https://github.com/telerik/xaml-sdk/tree/master/Map/WPF/SQLGeospatialData){% endif %} you can find a runnable example showing how to define a Wkt reader that loads sample data from a collection of Wkt based objects. 

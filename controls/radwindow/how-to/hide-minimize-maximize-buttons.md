@@ -22,15 +22,7 @@ The easiest way to hide the minimize or maximize buttons is to set the __HideMin
 
 __Example 1: Hiding the Minimize and Maximize Buttons__
 
-```XAML
-	<telerik:RadWindow 
-		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-        	HideMaximizeButton="True" 
-        	HideMinimizeButton="True"
-		Header="MainWindow">
-		<TextBlock Text="My content" HorizontalAlignment="Center" />
-	</telerik:RadWindow>
-```
+<snippet id='radwindow-how-to-hide-minimize-maximize-buttons-block_1-xaml' />
 
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![RadWindow without Maximize and Minimize buttons](images/RadWindow_Hide_Maximize_And_Minimize.png)
@@ -41,14 +33,7 @@ By setting the __ResizeMode__ property to __CanMinimize__ only the __Minimize__ 
 
 __Example 2: Showing only the Minimize and Close Buttons__
 
-```XAML
-	<telerik:RadWindow 
-		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-    	        ResizeMode="CanMinimize"
-		Header="MainWindow">
-		<TextBlock Text="My content" HorizontalAlignment="Center" />
-	</telerik:RadWindow>
-```
+<snippet id='radwindow-how-to-hide-minimize-maximize-buttons-block_2-xaml' />
 
 #### __Figure 2: Result from Example 2 in the Office2016 theme__
 ![RadWindow with just Minimize button](images/RadWindow_Show_Only_Minimize.png)
@@ -57,14 +42,7 @@ __Example 2: Showing only the Minimize and Close Buttons__
 
 __Example 3: Showing only the Close button__
 
-```XAML
-	<telerik:RadWindow 
-		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-                ResizeMode="NoResize"
-		Header="MainWindow">
-		<TextBlock Text="My content" HorizontalAlignment="Center" />
-	</telerik:RadWindow>
-```
+<snippet id='radwindow-how-to-hide-minimize-maximize-buttons-block_3-xaml' />
 
 #### __Figure 3: Result from Example 3 in the Office2016 theme__
 ![RadWindow with just the Close button](images/RadWindow_Disable_Minimize_And_Maximize.png)

@@ -23,27 +23,8 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 > Note that when the ShowDialog method is called the UI of the host application will freeze until the dialog closes.
 
 __Example 1: Show a open file dialog__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			ShowOpenFileDialog();
-		}
+<snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_1_show_a_open_file_dialog-cs' />
 
-		private void ShowOpenFileDialog()
-		{
-			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-			openFileDialog.Owner = this;
-			openFileDialog.ShowDialog();
-			if (openFileDialog.DialogResult == true)
-			{
-				string fileName = openFileDialog.FileName;
-			}
-		}
-	}
-```
 
 > The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set.   
 
@@ -52,42 +33,16 @@ __Example 1: Show a open file dialog__
 You can open a read-only file stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName and FileNames properties and open the file manually.
 
 __Example 2: Open a file stream__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			ShowOpenFileDialog();
-		}
+<snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_2_open_a_file_stream-cs' />
 
-		private void ShowOpenFileDialog()
-		{
-			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-			openFileDialog.Owner = this;
-			openFileDialog.ShowDialog();
-			if (openFileDialog.DialogResult == true)
-			{
-				Stream fileStream = openFileDialog.OpenFile();
-			}
-		}
-	}
-```
 
 ## Enabling Multiple Selection
 
 The dialog supports single and multiple selection modes. By default you can select only one file at a time. To alter this you can set the __Multiselect__ property of RadOpenFileDialog.
 
 __Example 3: Enable multiple selection__
-```C#
-	private void ShowOpenFileDialog()
-    {
-        RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-        openFileDialog.Owner = this;
-        openFileDialog.Multiselect = true;
-        openFileDialog.ShowDialog();       
-    }
-```
+<snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_3_enable_multiple_selection-cs' />
+
 
 #### __Figure 2: Multiple selection__ 
 
@@ -100,30 +55,8 @@ You can get the paths of the selected files via the __FileName__ and __FileNames
 You can get only the name of the selected files, without the full path, via the __SafeFileNames__ collection property.
 
 __Example 3: Get the selected file names__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			ShowOpenFileDialog();
-		}
+<snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_3_get_the_selected_file_names-cs' />
 
-		private void ShowOpenFileDialog()
-		{
-			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-			openFileDialog.Owner = this;
-			openFileDialog.Multiselect = true;
-			openFileDialog.ShowDialog();
-			if (openFileDialog.DialogResult == true)
-			{
-				string filePath = openFileDialog.FileName;
-				IEnumerable<string> filePaths = openFileDialog.FileNames;
-				IEnumerable<string> fileNames = openFileDialog.SafeFileNames;
-			}
-		}
-	}
-```
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
@@ -134,35 +67,16 @@ You can save the last used directory by setting the __RestoreDirectory__ propert
 > The __RestoreDirectory__ property will save the last used directory only for the scope of its __RadOpenFileDialog__ class instance. Clicking __Cancel__ or __X__ instead of __Open__ in the RadOpenFileDialog, will not save the last used directory.
 
 __Example 4: Set RestoreDirectory property__
-```C#
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.RestoreDirectory = true;
-```
+<snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_4_set_restoredirectory_property-cs' />
+
 
 ## Enabling ReadOnly CheckBox
 
 You can display a checkbox to control whether the file should be opened in readonly mode with the __ShowReadOnly__ property of the RadOpenFileDialog. You can control the state of that checkbox by using the __ReadOnlyChecked__ property of the RadOpenFileDialog.
 
 __Example 4: Enabling the ReadOnly CheckBox__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			ShowOpenFileDialog();
-		}
+<snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_4_enabling_the_readonly_checkbox-cs' />
 
-		private void ShowOpenFileDialog()
-		{
-			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-			openFileDialog.Owner = this;
-			openFileDialog.ShowReadOnly = true;
-			openFileDialog.ReadOnlyChecked = true;
-			openFileDialog.ShowDialog();
-		}
-	}
-```
 
 #### __Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox__ 
 ![RadOpenFileDialog with ReadOnlyCheckBox](images/radopenfiledialog-readonlycheckbox.png)
@@ -172,31 +86,8 @@ __Example 4: Enabling the ReadOnly CheckBox__
 As of **R1 2018**, the **RadOpenFileDialog** exposes a **DereferenceLinks** property indicating whether a file dialog returns the location of the file referenced by a shortcut or the location of the actual shortcut file (with the **.lnk** extension).
 
 __Example 5: Using the DereferenceLinks property__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			ShowOpenFileDialog();
-		}
+<snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_5_using_the_dereferencelinks_property-cs' />
 
-		private void ShowOpenFileDialog()
-		{
-			RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-			openFileDialog.Owner = this;
-			openFileDialog.DereferenceLinks = true;
-			openFileDialog.ShowDialog();
-			if (openFileDialog.DialogResult == true)
-			{
-				string filePath = openFileDialog.FileName;
-				// If the selected file was C:\Users\\<user>\Desktop\Shortcut.lnk, for example,
-				// the FileName property will now contain the actual location of the file,
-				// for example - C:\Program Files\Program\Shortcut.exe.
-			}
-		}
-	}
-```
 
 > If in multiple or single selection the first selected item is a link to a **directory** and DereferenceLinks is set to **True**, clicking the **Open** button will actually navigate to this directory.
 

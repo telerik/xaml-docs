@@ -59,18 +59,8 @@ The diagram doesn't support undo custom type connectors when __Undo command__ is
 
 __Example 1: Undo Custom Connectors__
 
-```C#
-	public class CustomConnector : RadDiagramConnector, ICloneable
-	{
-		object ICloneable.Clone()
-		{
-			CustomConnector diagramConnector = new CustomConnector();
-			diagramConnector.Name = this.Name;
-			diagramConnector.Offset = this.Offset;
-			return diagramConnector;
-		}
-	}
-```
+<snippet id='raddiagram-diagram-items-shape-raddiagrams-features-shapes-connectors-example_1_undo_custom_connectors-cs' />
+
 
 ## See Also  
  * [Structure]({%slug raddiagram-structure%})

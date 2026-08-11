@@ -22,10 +22,7 @@ First, you need to declare the Telerik namespace as shown in the following examp
 
 __Define Telerik namespace__
 
-```XAML
-
-	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
-```
+<snippet id='radpdfviewer-showing-a-file-block_1-xaml' />
 
 After that, you can proceed to add the PdfViewer control to the user control as shown below.
 
@@ -33,11 +30,7 @@ After that, you can proceed to add the PdfViewer control to the user control as 
 
 __Create RadPdfViewer__
 
-```XAML
-	<Grid>
-	    <telerik:RadPdfViewer x:Name="pdfViewer" DocumentSource="PdfViewerDemo;component/SampleData/Sample.pdf"/>
-	</Grid>
-```
+<snippet id='radpdfviewer-showing-a-file-block_2-xaml' />
 
 In __Example 2__, a file named "Sample.pdf" embedded in a "Sample Data" folder in the WPF project will be shown when the page is loaded. PdfViewerDemo is the name of the project. 
 
@@ -51,26 +44,13 @@ The following example shows how a PDF file can be loaded from a file embedded as
 
 __Load PDF from a stream__
 
-```C#
-
-	private void LoadFromStream(object sender, System.Windows.RoutedEventArgs e)
-	{
-	    Stream str = App.GetResourceStream(new System.Uri("PdfViewerDemo;component/SampleData/Sample.pdf", System.UriKind.Relative)).Stream;
-	    this.pdfViewer.DocumentSource = new PdfDocumentSource(str);
-	}        
-```
+<snippet id='radpdfviewer-showing-a-file-block_3-cs' />
 
 The next shows how a PDF can be loaded from a file embedded as a resource by passing its URI:
 
 __Load PDF from a URI__
 
-```C#
-
-	private void LoadFromUri(object sender, System.Windows.RoutedEventArgs e)
-	{
-	    this.pdfViewer.DocumentSource = new PdfDocumentSource(new System.Uri("PdfViewerDemo;component/SampleData/Sample.pdf", System.UriKind.Relative)); 
-	}
-```
+<snippet id='radpdfviewer-showing-a-file-block_4-cs' />
 
 In the above two examples, PdfViewerDemo is the name of the project and the PDF file is embedded as a resource in a folder called SampleData.
 
@@ -82,21 +62,7 @@ PdfDocumentSource internally uses the `PdfFormatProvider` class to create a docu
               
 __Set RadFixedDocument through PdfFormatProvider__
 
-```C#
-
-    string pdfFilePath = "Sample.pdf";
-    MemoryStream stream = new MemoryStream();
-    
-    using (Stream input = File.OpenRead(pdfFilePath))
-    {
-        input.CopyTo(stream);
-    }
-    
-    PdfFormatProvider provider = new PdfFormatProvider();
-    provider.ImportSettings = PdfImportSettings.ReadOnDemand;
-    RadFixedDocument doc = provider.Import(stream, null);
-    this.pdfViewer.Document = doc;
-```
+<snippet id='radpdfviewer-showing-a-file-block_5-cs' />
 
 >It is important to set the `Document` property to __null__ prior to removing it from the visual tree as it is necessary for the RadPdfViewer control instance to be garbage collected.
 
@@ -108,35 +74,22 @@ The next two examples show how to declare the converter:
 
 __Define a Fixed namespace__
 
-```XAML
-	xmlns:fixed="clr-namespace:Telerik.Windows.Documents.Fixed;assembly=Telerik.Windows.Controls.FixedDocumentViewers"
-```
+<snippet id='radpdfviewer-showing-a-file-block_6-xaml' />
 
 __Define a PdfDocumentSourceValueConverter__
 
-```XAML
-	<Grid.Resources>
-	    <fixed:PdfDocumentSourceValueConverter x:Key="PdfDocumentSourceValueConverter" />
-	</Grid.Resources>
-```
+<snippet id='radpdfviewer-showing-a-file-block_7-xaml' />
 
 The bound property can be implemented as shown in the below two examples:
 
 __Create the property__
 
-```C#
-	public class Context
-	{
-	    public [string/Uri/Stream] Source { get; set; }
-	}
-```
+<snippet id='radpdfviewer-showing-a-file-block_8-cs' />
 Notice that regardless of the type of the property you choose to bind the DocumentSource of the PdfViewer to, the XAML is identical.
 
 __Bind the DocumentSource property of RadPdfViewer__
 
-```XAML
-	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Source, Converter={StaticResource PdfDocumentSourceValueConverter}}" />
-```
+<snippet id='radpdfviewer-showing-a-file-block_9-xaml' />
 
 ## Specifying Reading Mode
 
@@ -147,9 +100,7 @@ You can control how the document is loaded by setting the `PdfViewer.DefaultImpo
 
 __Setting DefaultImportSettings__
 
-```C#
-	this.pdfViewer.DefaultImportSettings = PdfImportSettings.ReadOnDemand;
-```
+<snippet id='radpdfviewer-showing-a-file-block_10-cs' />
 
 Another option to set the reading mode is through the constructors that accept `PdfImportSettings` when creating a new instance of the PdfDocumentSource class. 
 
@@ -159,18 +110,13 @@ If you want to change this behavior to read all the document pages at the beginn
 
 __Setting PdfImportSettings__
 
-```C#
-
-	PdfDocumentSource source = new PdfDocumentSource(stream/uri, PdfImportSettings.ReadOnDemand);      
-``` 
+<snippet id='radpdfviewer-showing-a-file-block_11-cs' />
 
 When you bind the DocumentSource property of RadPdfViewer and want to control the way bound documents are loaded, you can pass the desired settings as a ConverterParameter.
 
 __Applying settings in binding scenario__
 
-```XAML
-	<telerik:RadPdfViewer x:Name="viewer" DocumentSource="{Binding Uri, Converter={StaticResource PdfDocumentSourceValueConverter}, ConverterParameter=ReadOnDemand}" />
-```
+<snippet id='radpdfviewer-showing-a-file-block_12-xaml' />
 
 `ReadAllAtOnce` and `ReadOnDemand` are the valid values you can specify.
 

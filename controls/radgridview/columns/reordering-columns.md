@@ -36,21 +36,15 @@ There are two ways to disable reordering.
 
 __Example 1: Disable Reordering__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 CanUserReorderColumns="False">
-	    <!-- ... -->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-reordering-columns-example_1_disable_reordering-xaml' />
+
 
 __Example 2: Disable Reordering in code__
 
-```C#
-	this.radGridView.CanUserReorderColumns = false;
-```
-```VB.NET
-	Me.radGridView.CanUserReorderColumns = False
-```
+<snippet id='radgridview-columns-reordering-columns-example_2_disable_reordering_in_code-cs' />
+
+<snippet id='radgridview-columns-reordering-columns-example_2_disable_reordering_in_code-vb' />
+
 
 The headers will be still draggable, but when you drop them nothing will happen.
 
@@ -58,44 +52,28 @@ The headers will be still draggable, but when you drop them nothing will happen.
 
 __Example 3: Disable Reordering for a particular column__
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                Header="Name"
-	                IsReorderable="False" />
-```
+<snippet id='radgridview-columns-reordering-columns-example_3_disable_reordering_for_a_particular_column-xaml' />
+
 
 __Example 4: Disable Reordering for a particular column in code__
-```C#
-	this.radGridView.Columns[0].IsReorderable = false;
-```
-```VB.NET
-	Me.radGridView.Columns(0).IsReorderable = False
-```
+<snippet id='radgridview-columns-reordering-columns-example_4_disable_reordering_for_a_particular_column_in_code-cs' />
+
+<snippet id='radgridview-columns-reordering-columns-example_4_disable_reordering_for_a_particular_column_in_code-vb' />
+
 
 ## Reordering programmatically 
 
 The order of the columns may also be configured by setting the __DisplayIndex__ property of each of them:
 
 __Example 5: Reorder using DisplayIndex__
-```XAML
-	<telerik:RadGridView.Columns>
-	    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" DisplayIndex="0"/>
-	    <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" DisplayIndex="2"/>
-	    <telerik:GridViewDataColumn DataMemberBinding="{Binding Country}" DisplayIndex="1"/>
-	</telerik:RadGridView.Columns>
-```
+<snippet id='radgridview-columns-reordering-columns-example_5_reorder_using_displayindex-xaml' />
+
 
 __Example 6: Reorder using DisplayIndex in code__
-```C#
-	this.radGridView.Columns[0].DisplayIndex = 0;
-	this.radGridView.Columns[1].DisplayIndex = 2;
-	this.radGridView.Columns[2].DisplayIndex = 1;
-```
-```VB.NET
-	Me.radGridView.Columns(0).DisplayIndex = 0
-    Me.radGridView.Columns(1).DisplayIndex = 2
-    Me.radGridView.Columns(2).DisplayIndex = 1
-```
+<snippet id='radgridview-columns-reordering-columns-example_6_reorder_using_displayindex_in_code-cs' />
+
+<snippet id='radgridview-columns-reordering-columns-example_6_reorder_using_displayindex_in_code-vb' />
+
 
 In this case the columns will be visualized in the following order - Name, Country and Number.
 
@@ -104,30 +82,14 @@ In this case the columns will be visualized in the following order - Name, Count
 The default scrolling behavior of __RadGridView__ while dragging its columns can be modified by configuring the __ScrollingSettingsBehavior__.
 
 __Example 7: Using the ScrollingSettingsBehavior__
-```XAML
-	<telerik:RadGridView x:Name="radGridView" 
-                     ScrollViewer.HorizontalScrollBarVisibility="Visible"
-                     telerik:ScrollingSettingsBehavior.IsEnabled="True"
-                     telerik:ScrollingSettingsBehavior.ScrollAreaPadding="5 20 5 20"
-                     telerik:ScrollingSettingsBehavior.ScrollStep="1.5"
-                     telerik:ScrollingSettingsBehavior.ScrollStepTime="00:00:00.5"/>
-```
+<snippet id='radgridview-columns-reordering-columns-example_7_using_the_scrollingsettingsbehavior-xaml' />
+
 
 __Example 8: Using the ScrollingSettingsBehavior in code__
-```C#
-	ScrollViewer.SetHorizontalScrollBarVisibility(this.radGridView, ScrollBarVisibility.Visible);
-	ScrollingSettingsBehavior.SetIsEnabled(this.radGridView, true);
-	ScrollingSettingsBehavior.SetScrollAreaPadding(this.radGridView, new Thickness(5, 20, 5, 20));
-	ScrollingSettingsBehavior.SetScrollStep(this.radGridView, 1.5);
-	ScrollingSettingsBehavior.SetScrollStepTime(this.radGridView, new TimeSpan(0, 0, 0, 5));
-```
-```VB.NET
-	ScrollViewer.SetHorizontalScrollBarVisibility(Me.radGridView, ScrollBarVisibility.Visible)
-    ScrollingSettingsBehavior.SetIsEnabled(Me.radGridView, True)
-    ScrollingSettingsBehavior.SetScrollAreaPadding(Me.radGridView, New Thickness(5, 20, 5, 20))
-    ScrollingSettingsBehavior.SetScrollStep(Me.radGridView, 1.5)
-    ScrollingSettingsBehavior.SetScrollStepTime(Me.radGridView, New TimeSpan(0, 0, 0, 5))
-```
+<snippet id='radgridview-columns-reordering-columns-example_8_using_the_scrollingsettingsbehavior_in_code-cs' />
+
+<snippet id='radgridview-columns-reordering-columns-example_8_using_the_scrollingsettingsbehavior_in_code-vb' />
+
 
 To learn more read the [Scrolling]({%slug gridview-scrolling%}) topic.
 

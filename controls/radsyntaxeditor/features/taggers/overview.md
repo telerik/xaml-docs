@@ -42,20 +42,7 @@ The RadSyntaxEditor comes with a number of predefined taggers:
 To be able to use these taggers in the RadSyntaxEditor control, you first need to register them in its **TaggersRegistry**. This registry keeps track of all the registered taggers. Through the **IsTaggerRegistered** method you can check whether a specific tagger is already registered.
 
 __Example 1: Registering taggers__
-```C#
-    
-    var cSharpTagger = new CSharpTagger(this.syntaxEditor);            
-    if (!this.syntaxEditor.TaggersRegistry.IsTaggerRegistered(cSharpTagger))
-    {
-        this.syntaxEditor.TaggersRegistry.RegisterTagger(this.cSharpTagger);
-    }
-
-    var textSearchTagger = new TextSearchHighlightTagger(this.syntaxEditor, TextSearchHighlightTagger.SearchFormatDefinition);
-    if (!this.syntaxEditor.TaggersRegistry.IsTaggerRegistered(textSearchTagger))
-    {
-        this.syntaxEditor.TaggersRegistry.RegisterTagger(this.textSearchTagger);
-    }
-```
+<snippet id='radsyntaxeditor-features-taggers-overview-block_1-cs' />
 
 ## See Also
 

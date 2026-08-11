@@ -25,92 +25,19 @@ Here are the steps that you should follow to create a RadTimeBar with implicit W
 
 3. Declare the XAML resources that you will use. In our case this is Telerik.Windows.Controls.DataVisualization.xaml:
 
-	```XAML
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-					<ResourceDictionary Source="Telerik.Windows.Controls.DataVisualization.xaml" />
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-	```
+	<snippet id='radtimebar-styles-and-templates-hide-selection-range-title-block_1-xaml' />
 
 4. Set *Telerik.Windows.Controls.StyleManager.IsEnabled* to false in your application constructor.
 
 Now let's add a sample TimeBar:
 
-```XAML
-	<telerik:RadTimeBar Width="950" Height="250"
-	        Margin="0,30,0,0" 
-	        PeriodStart="01-01-2012"
-	        PeriodEnd="01-01-2013"
-	        VisiblePeriodStart="01/01/2012"
-	        VisiblePeriodEnd="06/01/2012"
-	        SelectionStart="02/01/2012"
-	        SelectionEnd="03/01/2012"                          
-	        IsSnapToIntervalEnabled="True">
-	    <telerik:RadTimeBar.Intervals>
-	        <telerik:YearInterval />
-	        <telerik:MonthInterval />
-	        <telerik:WeekInterval />
-	    </telerik:RadTimeBar.Intervals>
-	</telerik:RadTimeBar>
-```
+<snippet id='radtimebar-styles-and-templates-hide-selection-range-title-block_2-xaml' />
 
 ![{{ site.framework_name }} RadTimeBar with Selection Rectangle](images/radtimebar_hide_selection_range_title.PNG)
 
 To hide the range selection title you'll need to remove it from the SelectionRange Style, which can be found in *Telerik.Windows.Controls.DataVisualization.xaml*:
 
-```XAML
-	  <Style x:Key="SelectionRangeStyle" TargetType="Thumb">
-	    <Setter Property="BorderBrush" Value="{StaticResource TimeBar_SelectionThumb_Range_OuterBorder}" />
-	    <Setter Property="BorderThickness" Value="{StaticResource TimeBar_SelectionThumb_Range_OuterBorder_BorderThickness}" />
-	    <Setter Property="Background" Value="#01FFFFFF" />
-	    <Setter Property="IsTabStop" Value="False" />
-	    <Setter Property="Margin" Value="{StaticResource TimeBar_SelectionThumb_Range_Margin}" />
-	    <Setter Property="Cursor" Value="Hand" />
-	    <Setter Property="FontSize" Value="{StaticResource TimeBar_SelectionThumb_Range_Title_FontSize}" />
-	    <Setter Property="Foreground" Value="{StaticResource TimeBar_SelectionThumb_Range_Title_Foreground}" />
-	    <Setter Property="Template">
-	      <Setter.Value>
-	        <ControlTemplate TargetType="Thumb">
-	          <Grid>
-	            <Grid.InputBindings>
-	              <MouseBinding MouseAction="LeftDoubleClick" Command="timeBars:RadTimeBarCommands.SelectGroupInterval" />
-	            </Grid.InputBindings>
-	            <VisualStateManager.VisualStateGroups>
-	              <VisualStateGroup x:Name="CommonStates">
-	                <VisualState x:Name="Normal" />
-	                <VisualState x:Name="MouseOver">
-	                  <Storyboard>
-	                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundAnimation" Storyboard.TargetProperty="Background" Duration="0.00:00:00.05">
-	                      <DiscreteObjectKeyFrame KeyTime="0.00:00:00.0" Value="{StaticResource TimeBar_SelectionThumb_Range_Background_MouseOver}" />
-	                    </ObjectAnimationUsingKeyFrames>
-	                  </Storyboard>
-	                </VisualState>
-	              </VisualStateGroup>
-	            </VisualStateManager.VisualStateGroups>
-	            <Grid>
-	              <!--<Grid.RowDefinitions>
-	                <RowDefinition Height="*" />
-	                <RowDefinition Height="14" />
-	              </Grid.RowDefinitions>-->
-	              <Border x:Name="BackgroundAnimation" Grid.Row="0" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Background="{TemplateBinding Background}" Style="{StaticResource BorderWithActualWidth}" SnapsToDevicePixels="True"></Border>
-	              <!--<Canvas Grid.Row="1">
-	                <Border Height="14" MinWidth="{Binding ElementName=Title,Path=(timeBars:ActualSizeProxy.ActualWidth)}"
-					Width="{Binding ElementName=BackgroundAnimation,Path=(timeBars:ActualSizeProxy.ActualWidth)}"
-					Background="{StaticResource TimeBar_SelectionThumb_Range_Title_Background}" BorderThickness="1,0,1,1" BorderBrush="{TemplateBinding BorderBrush}" SnapsToDevicePixels="True">
-	                  <TextBlock x:Name="Title" Text="{Binding ElementName=PART_SelectionThumb, Path=Title}" Padding="{StaticResource TimeBar_SelectionThumb_Range_Title_Padding}" MinHeight="12" HorizontalAlignment="Left" VerticalAlignment="Center"
-					  Style="{StaticResource TextBlockWithActualWidth}" />
-	                </Border>
-	              </Canvas>-->
-	            </Grid>
-	          </Grid>
-	        </ControlTemplate>
-	      </Setter.Value>
-	    </Setter>
-	  </Style>
-```
+<snippet id='radtimebar-styles-and-templates-hide-selection-range-title-block_3-xaml' />
 
 Run the application and check the result:
 

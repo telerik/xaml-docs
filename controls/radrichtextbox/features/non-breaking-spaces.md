@@ -23,10 +23,7 @@ The API of RadRichTextBox also enables you to insert a non-breaking space. There
 
 #### [C#] Example 1: Insert non-breaking space
 
-```C#
-
-    this.radRichTextBox.InsertNonBreakingSpace();
-```
+<snippet id='radrichtextbox-features-non-breaking-spaces-block_1-cs' />
 
 
 ## See Also

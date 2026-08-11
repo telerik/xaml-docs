@@ -14,11 +14,4 @@ Along with the context, you need to specify the name of the query that will be e
 
 
 
-```XAML
-
-	<telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
-	   <telerik:RadDataServiceDataSource.DataServiceContext>
-	      <local:MyNorthwindContext/>
-	   </telerik:RadDataServiceDataSource.DataServiceContext>
-	</telerik:RadDataServiceDataSource>
-```
+<snippet id='raddataservicedatasource-loading-the-dataservicequery-block_1-xaml' />

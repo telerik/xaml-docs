@@ -13,24 +13,8 @@ position: 4
 The Bar indicator is a colored bar that is drawn around scale bar. One of ends of this bar points to the scale value. To add bar indicator to the scale you have to include RadialBar element to the list of the scale indicators:
 
 
-```XAML
-	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale>
-	        <telerik:RadialScale.Indicators>
-	            <telerik:BarIndicator
-	                    Value="70"
-	                    StartWidth="0.1"
-	                    EndWidth="0.1"
-	                    EmptyFill="Transparent"
-	                    Background="Yellow"
-	                    BorderBrush="Transparent"
-	                    StrokeThickness="0"
-	                    telerik:ScaleObject.Location="Outside">
-	            </telerik:BarIndicator>
-	        </telerik:RadialScale.Indicators>
-	    </telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-radial-scale-bar-indicator-block_1-xaml' />
+
 
 The Bar indicator supports the following features:
 
@@ -78,59 +62,13 @@ or
 To do it you need add few ranges to your scale and specify background of the indicator for every range. Then you should set UseRangeColor property of the bar indicator to true:
 
 
-```XAML
-	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale>
-	        <telerik:RadialScale.Ranges>
-	            <telerik:GaugeRange Min="0" Max="25"
-	                StartWidth="0.05"
-	                EndWidth="0.05"
-	                Background="Blue"
-	                TickBackground="Blue"
-	                LabelForeground="Blue"
-	                IndicatorBackground="Blue" />
-	            <telerik:GaugeRange Min="25" Max="50"
-	                StartWidth="0.05"
-	                EndWidth="0.05"
-	                Background="SkyBlue"
-	                TickBackground="SkyBlue"
-	                LabelForeground="SkyBlue"
-	                IndicatorBackground="SkyBlue" />
-	            <telerik:GaugeRange Min="50" Max="75"
-	                StartWidth="0.05"
-	                EndWidth="0.05"
-	                Background="Green"
-	                TickBackground="Green"
-	                LabelForeground="Green"
-	                IndicatorBackground="Green" />
-	            <telerik:GaugeRange Min="75" Max="100"
-	                StartWidth="0.05"
-	                EndWidth="0.05"
-	                Background="Yellow"
-	                TickBackground="Yellow"
-	                LabelForeground="Yellow"
-	                IndicatorBackground="Yellow" />
-	        </telerik:RadialScale.Ranges>
-	        <telerik:RadialScale.Indicators>
-	            <telerik:BarIndicator Name="radialBar" 
-	                UseRangeColor="True" 
-	                RangeColorMode="Default"
-	                Value="70" />
-	        </telerik:RadialScale.Indicators>
-	    </telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-radial-scale-bar-indicator-block_2-xaml' />
+
 
 There several modes which can be used to colorize bar indicator. Example above uses default mode. If you'd like to have bar indicator with background consists of the stack of the range colors, then you should set RangeColorMode property to ProportionalBrush:
 
 
-```XAML
-	<telerik:RadialScale.Indicators telerik:StyleManager.Theme="Windows8">
-		<telerik:BarIndicator Name="radialBar" 
-			UseRangeColor="True" 
-			RangeColorMode="ProportionalBrush"
-			Value="70" />
-	 </telerik:RadialScale.Indicators>
-```
+<snippet id='radgauge-radial-scale-bar-indicator-block_3-xaml' />
+
 
 ![{{ site.framework_name }} RadGauge RadialScale RangeColorMode ProportionalBrush](images/RadialBarProportionalBrush.png)

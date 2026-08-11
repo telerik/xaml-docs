@@ -43,10 +43,7 @@ Methods:
 This method is used to scroll to horizontal offset.
 
 #### [C#] Example 1: Scroll to horizontal offset
-```C#
-
-    this.pdfViewer.ScrollToHorizontalOffset(50);
-```
+<snippet id='radpdfviewer-scrolling-block_1-cs' />
 
 The value is in device independent pixels (DIP) (1/96 inch).
 
@@ -55,10 +52,7 @@ The value is in device independent pixels (DIP) (1/96 inch).
 This method is used to scroll to vertical offset. 
 
 #### [C#] Example 2: Scroll to vertical offset.
-```C#
-
-    this.pdfViewer.ScrollToVerticalOffset(50);
-```
+<snippet id='radpdfviewer-scrolling-block_2-cs' />
 
 The value is in device independent pixels (DIP) (1/96 inch).
 
@@ -67,46 +61,7 @@ The value is in device independent pixels (DIP) (1/96 inch).
 Specific points can be defined as [Destination](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.model.navigation.destination) objects and can be used to scroll to them. The _GoToDestination()_ method of **RadPdfViewer** will scroll the document to the destination passed.
 
 #### [C#] Example 3: Scroll to destination
-```C#
-
-    string search = "word";
-    RadFixedDocument document = this.pdfViewer.Document;
-
-    SearchResult result = this.pdfViewer.Find(search);
-
-    if (result == null || result == SearchResult.NotFound)
-    {
-        MessageBox.Show("Not Found");
-        return;
-    }
-
-    document.Selection.Clear();
-    document.CaretPosition.MoveToPosition(result.Range.StartPosition);
-    this.pdfViewer.Select(result.Range);
-
-    RadFixedPage page = result.Range.StartPosition.Page;
-    PathGeometry geometry = document.Selection.GetSelectionGeometry(page);
-
-    double top = double.MaxValue;
-    foreach (PathFigure figure in geometry.Figures)
-    {
-        top = Math.Min(top, figure.StartPoint.Y);
-
-        PolyLineSegment polyline = (System.Windows.Media.PolyLineSegment)figure.Segments[0];
-        foreach (Point point in polyline.Points)
-        {
-            top = Math.Min(top, point.Y);
-        }
-    }
-
-    Location location = new Location
-    {
-        Page = page,
-        Top = top,
-    };
-
-    this.pdfViewer.GoToDestination(location);
-```
+<snippet id='radpdfviewer-scrolling-block_3-cs' />
 
 More information about the **Destination** objects and the usage of the _GoToDestination()_ method is available in the [Annotations]({%slug radpdfviewer-document-model-annotations%}) help article.
 
@@ -115,15 +70,6 @@ More information about the **Destination** objects and the usage of the _GoToDes
 The scroll bars are of type [ScrollBar](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.scrollbar?view=netcore-3.1) which inherits from the [FrameworkElement](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement?view=netcore-3.1) class some properties that lets you change its visualization.
 
 #### [C#] Example 4: Changing the size of the scrollbars
-```C#
-
-    this.pdfViewer.VerticalScrollBar.Width = 20;
-    this.pdfViewer.VerticalScrollBar.MinHeight = 20;
-    this.pdfViewer.VerticalScrollBar.MaxHeight = 200;
-
-    this.pdfViewer.HorizontalScrollBar.Height = 30;
-    this.pdfViewer.HorizontalScrollBar.MinWidth = 100;
-    this.pdfViewer.HorizontalScrollBar.MaxWidth = 400;
-```
+<snippet id='radpdfviewer-scrolling-block_4-cs' />
 
 >note Disabling the scrolling functionality of RadPdfViewer: Go to [Disable scrolling in the RadPdfViewer]({%slug kb-pdfviewer-disable-scrolling%}) knowledge base article. 

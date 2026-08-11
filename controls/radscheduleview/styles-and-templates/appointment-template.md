@@ -22,44 +22,13 @@ Let's for example have a [Custom Appointment]({%slug radscheduleview-features-ap
 
 
 
-```C#
-	public class Task : Appointment
-	{
-	    private bool isDone;
-	    public bool IsDone
-	    {
-	        get
-	        {
-	            return this.Storage<Task>().isDone;
-	        }
-	        set
-	        {
-	            var storage = this.Storage<Task>();
-	            if (storage.isDone != value)
-	            {
-	                storage.isDone = value;
-	                this.OnPropertyChanged(() => this.IsDone);
-	            }
-	        }
-	    }
-		...
-	}
-```
+<snippet id='radscheduleview-styles-and-templates-appointment-template-block_1-cs' />
 
 We will create the following DataTemplate in order to show some additional information about the appointment:
 
 
 
-```XAML
-	<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-	<DataTemplate x:Key="AppointmentTemplate">
-		<StackPanel>
-			<TextBlock Text="{Binding Subject}" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
-			<TextBlock Text="{Binding Body}" FontStyle="Italic" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
-			<TextBlock Text="Finished" Foreground="Red" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />            
-		</StackPanel>
-	</DataTemplate>
-```
+<snippet id='radscheduleview-styles-and-templates-appointment-template-block_2-xaml' />
 
 >Note that custom properties should be bound through Appointment property of the DataContext.
 
@@ -67,13 +36,7 @@ Then the DataTemplate should be set to __AppointmentContentTemplate__ property o
 
 
 
-```XAML
-	<telerik:RadScheduleView 
-			AppointmentsSource="{Binding Appointments}"						
-			AppointmentItemContentTemplate="{StaticResource AppointmentTemplate}">
-		...
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-styles-and-templates-appointment-template-block_3-xaml' />
 
 Here is the end result:
 
@@ -89,60 +52,19 @@ First, we will have to create a custom class which inherits from Telerik.Windows
 
 
 
-```C#
-	public class CustomAppointmentTemplateSelector : Telerik.Windows.Controls.ScheduleViewDataTemplateSelector
-	{
-	    public DataTemplate DayAppointmentTemplate { get; set; }
-		public DataTemplate DefaultAppointmentTemplate { get; set; }
-			
-	
-		public override DataTemplate SelectTemplate(object item, DependencyObject container, Telerik.Windows.Controls.ViewDefinitionBase activeViewDefinition)
-		{
-	        if (activeViewDefinition is WeekViewDefinition)
-	            return this.DefaultAppointmentTemplate;
-	
-			if (activeViewDefinition is DayViewDefinition)
-				return this.DayAppointmentTemplate;		
-	
-			return base.SelectTemplate(item, container, activeViewDefinition);
-		}
-	}
-```
+<snippet id='radscheduleview-styles-and-templates-appointment-template-block_4-cs' />
 
 Then define the CustomAppointmentTemplateSelector and the DataTemplates in XAML:
 
 
 
-```XAML
-	<local:CustomAppointmentTemplateSelector x:Key="CustomAppointmentTemplateSelector">
-	    <local:CustomAppointmentTemplateSelector.DayAppointmentTemplate>
-	        <DataTemplate>
-	            <StackPanel>
-	                <TextBlock Text="{Binding Subject}" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
-	                <TextBlock Text="{Binding Body}" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
-	                <TextBlock Text="Finished" Foreground="Red" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </local:CustomAppointmentTemplateSelector.DayAppointmentTemplate>
-	    <local:CustomAppointmentTemplateSelector.DefaultAppointmentTemplate>
-	        <DataTemplate>
-	            <TextBlock Text="{Binding Subject}" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
-	        </DataTemplate>
-	    </local:CustomAppointmentTemplateSelector.DefaultAppointmentTemplate>
-	</local:CustomAppointmentTemplateSelector>
-```
+<snippet id='radscheduleview-styles-and-templates-appointment-template-block_5-xaml' />
 
 And apply it to the ScheduleView:
 
 
 
-```XAML
-	<telerik:RadScheduleView 
-			AppointmentsSource="{Binding Appointments}"						
-			AppointmentItemContentTemplateSelector="{StaticResource CustomAppointmentTemplateSelector}">
-			...
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-styles-and-templates-appointment-template-block_6-xaml' />
 
 The following screenshot shows how the same appointment looks in different ViewDefinitions:
 

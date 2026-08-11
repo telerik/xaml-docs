@@ -15,14 +15,8 @@ __LayoutControlExpanderGroup__ is one of the few layout groups supported by the 
 > You can read the [Layout Panel]({%slug radlayoutcontrol-getting-started-layoutpanel%}) article to get better understanding on how the layout groups are arranging their children. 
 
 __Example 1: Setting up LayoutControlExpanderGroup__
-```XAML
-	<telerik:RadLayoutControl >            
-		<telerik:LayoutControlExpanderGroup Header="Layout Control Expander Group">                    
-			<Button Content="Item 1" />
-			<Button Content="Item 2" />
-		</telerik:LayoutControlExpanderGroup>            
-	</telerik:RadLayoutControl>  
-```
+<snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup-example_1_setting_up_layoutcontrolexpandergroup-xaml' />
+
 
 #### __Figure 1: LayoutControlExpanderGroup__
 ![{{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup](images/layoutcontrol-features-layoutcontrolexpandergroup-01.png)
@@ -30,20 +24,8 @@ __Example 1: Setting up LayoutControlExpanderGroup__
 The header of the expander group can be set through its __Header__ property. The property is of type __Object__ which allows you to place any visual (or not) element in it.
 
 __Example 2: Setting up the header of LayoutControlExpanderGroup__
-```XAML
-	<telerik:RadLayoutControl>            
-		<telerik:LayoutControlExpanderGroup>
-			<telerik:LayoutControlExpanderGroup.Header>
-				<StackPanel Orientation="Horizontal">
-					<Rectangle Width="10" Height="10" Fill="Orange" Margin="0 0 5 0" />
-					<TextBlock Text="Layout Control Expander Group" FontWeight="Bold" />
-				</StackPanel>
-			</telerik:LayoutControlExpanderGroup.Header>
-			<Button Content="Item 1" />
-			<Button Content="Item 2" />
-		</telerik:LayoutControlExpanderGroup>            
-	</telerik:RadLayoutControl>   
-```	
+<snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup-example_2_setting_up_the_header_of_layoutcontrolexpandergroup-xaml' />
+
 
 #### __Figure 2: LayoutControlExpanderGroup with UIElements in its header__
 ![{{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup with UIElements in its header](images/layoutcontrol-features-layoutcontrolexpandergroup-02.png)
@@ -51,9 +33,8 @@ __Example 2: Setting up the header of LayoutControlExpanderGroup__
 The group’s content state (collapsed/expanded) can be manually controlled via the __IsExpanded__ property. 
 
 __Example 3: Setting the state of LayoutControlExpanderGroup__
-```XAML
-	<telerik:LayoutControlExpanderGroup IsExpanded="False">
-```
+<snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup-example_3_setting_the_state_of_layoutcontrolexpandergroup-xaml' />
+
 	
 #### __Figure 3: Collapsed LayoutControlExpanderGroup__
 ![{{ site.framework_name }} RadLayoutControl Collapsed LayoutControlExpanderGroup](images/layoutcontrol-features-layoutcontrolexpandergroup-03.png)
@@ -63,9 +44,8 @@ __Example 3: Setting the state of LayoutControlExpanderGroup__
 The __IsExpandable__ property of LayoutControlExpanderGroup controls whether the expanding arrow should be displayed and the collapse/expand action can be executed by clicking on the header.
 	
 __Example 4: Setting the IsExpandable property of LayoutControlExpanderGroup__
-```XAML
-	<telerik:LayoutControlExpanderGroup IsExpandable="False">
-```
+<snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup-example_4_setting_the_isexpandable_property_of_layoutcontrolexpandergroup-xaml' />
+
 
 #### __Figure 4: LayoutControlExpanderGroup with disabled collapse/expand interactions__
 ![{{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup with disabled collapse/expand interactions](images/layoutcontrol-features-layoutcontrolexpandergroup-04.png)

@@ -22,23 +22,13 @@ In order to automatically export a custom column, without handling some of the e
 
 #### **[C#]Example 1: Overriden GetCellContent method**
  
-```C#
- 	protected override object GetCellContent(object item)
-	{
-		var columnProperty = item.GetType().GetProperty(this.DataMemberBinding.Path.Path);
-		return string.Format("@ {0} @", columnProperty.GetValue(item, null) as string);
-	}
-```
+<snippet id='radgridview-export-how-to-export-custom-column-block_1-cs' />
+
 
 #### **[C#]Example 2: Overriden GetExportCellContent method**
 
-```C#
-	protected override object GetExportCellContent(object item)
-	{
-		var columnProperty = item.GetType().GetProperty(this.DataMemberBinding.Path.Path);
-		return string.Format("@ {0} @", columnProperty.GetValue(item, null) as string);
-	}
-```
+<snippet id='radgridview-export-how-to-export-custom-column-block_2-cs' />
+
 
 The values from the exported column will appear in Excel as shown in **Figure 1**.
 

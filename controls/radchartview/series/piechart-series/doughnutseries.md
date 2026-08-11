@@ -24,21 +24,8 @@ This series is visualized on the screen as separate slices representing each of 
 You can use the following definition to display a simple DoughnutSeries
 
 __Example 1: Declaring an DoughnutSeries in XAML__
-```XAML
-	<telerik:RadPieChart Palette="Windows8">
-		<telerik:RadPieChart.Series>
-			<telerik:DoughnutSeries>
-				<telerik:DoughnutSeries.DataPoints>
-					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
-					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
-					<telerik:PieDataPoint Label="15.11%" Value="15.11"/>
-					<telerik:PieDataPoint Label="10.35%" Value="10.35"/>
-					<telerik:PieDataPoint Label="3.55%" Value="3.55"/>
-				</telerik:DoughnutSeries.DataPoints>
-			</telerik:DoughnutSeries>
-		</telerik:RadPieChart.Series>
-	</telerik:RadPieChart>
-```
+<snippet id='radchartview-series-piechart-series-doughnutseries-example_1_declaring_an_doughnutseries_in_xaml-xaml' />
+
 
 #### __Figure 1: DoughnutSeries visual appearance__	
 ![Telerik UI for WPF RadChartView DoughnutSeries visual appearance](images/radchartview-series-doughnutseries.png)
@@ -58,24 +45,12 @@ You can use the __ValueBinding__ property of the DoughnutSeries to bind the Data
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public double Value { get; set; }
-    }
+<snippet id='radchartview-series-piechart-series-doughnutseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { Value = 43.46},
-		//....
-	};
-```		
 
 __Example 3: Specify a DoughnutSeries in XAML__
-```XAML
-	<telerik:DoughnutSeries ItemsSource="{Binding}" ValueBinding="Value" />
-```	
+<snippet id='radchartview-series-piechart-series-doughnutseries-example_3_specify_a_doughnutseries_in_xaml-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -112,9 +87,8 @@ Setting __InnerRadiusFactor__ to a value bigger than 1 (ex: 1.4) will make the e
 The default value of __InnerRadiusFactor__ is 0.5
 
 __Example 4: Setting RadiusFactor and InnerRadiusFactor__
-```XAML
-	<telerik:DoughnutSeries RadiusFactor="1" InnerRadiusFactor="0.3">
-```	
+<snippet id='radchartview-series-piechart-series-doughnutseries-example_4_setting_radiusfactor_and_innerradiusfactor-xaml' />
+
 
 #### __Figure 2: RadiusFactor of 1 (left) and 0.5 (right), and InnerRadiusFactor of 0.2 (left) and 0.3 (right)__
 ![Telerik UI for WPF RadChartView DoughnutSeries with labels and different radius](images/radchartview-series-doughnutseries-1.png)
@@ -124,21 +98,8 @@ __Example 4: Setting RadiusFactor and InnerRadiusFactor__
 The DoughnutSeries allows you to offset each doughnut slice from the center of the doughnut. To do this set the __OffsetFromCenter__ property of the corresponding PieDataPoint.
 
 __Example 5: Offsetting pie slices__
-```XAML
-	<telerik:RadPieChart Palette="Windows8">
-		<telerik:RadPieChart.Series>
-			<telerik:DoughnutSeries>
-				<telerik:DoughnutSeries.DataPoints>
-					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
-					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
-					<telerik:PieDataPoint Label="15.11%" Value="15.11" OffsetFromCenter="0.2"/>
-					<telerik:PieDataPoint Label="10.35%" Value="10.35" />
-					<telerik:PieDataPoint Label="3.55%" Value="3.55"/>
-				</telerik:DoughnutSeries.DataPoints>
-			</telerik:DoughnutSeries>
-		</telerik:RadPieChart.Series>
-	</telerik:RadPieChart>
-```	
+<snippet id='radchartview-series-piechart-series-doughnutseries-example_5_offsetting_pie_slices-xaml' />
+
 
 #### __Figure 3: Exploding pie slices__
 ![Telerik UI for WPF RadChartView DoughnutSeries with slices offset](images/radchartview-series-doughnutseries-2.png)
@@ -146,24 +107,8 @@ __Example 5: Offsetting pie slices__
 Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of DoughnutSeries. In this case when you select a data point, the corresponding doughnut slice will *explode* from the center of the doughnut.
 
 __Example 6: Setting SelectedPointOffset__
-```XAML
-	<telerik:RadPieChart Palette="Windows8">
-		<telerik:RadPieChart.Series>
-			<telerik:DoughnutSeries SelectedPointOffset="0.25" RadiusFactor="0.7">
-				<telerik:DoughnutSeries.DataPoints>
-					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
-					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
-					<telerik:PieDataPoint Label="15.11%" Value="15.11" />
-					<telerik:PieDataPoint Label="10.35%" Value="10.35" />
-					<telerik:PieDataPoint Label="3.55%" Value="3.55" />
-				</telerik:DoughnutSeries.DataPoints>
-			</telerik:DoughnutSeries>                
-		</telerik:RadPieChart.Series>
-		<telerik:RadPieChart.Behaviors>
-			<telerik:ChartSelectionBehavior />
-		</telerik:RadPieChart.Behaviors>
-	</telerik:RadPieChart>
-```
+<snippet id='radchartview-series-piechart-series-doughnutseries-example_6_setting_selectedpointoffset-xaml' />
+
 
 #### __Figure 4: Selected exploding pie slices__
 ![Telerik UI for WPF RadChartView DoughnutSeries with customized slice styling](images/radchartview-series-doughnutseries-3.png)

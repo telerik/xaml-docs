@@ -32,48 +32,23 @@ __RadTabControl__ provides two events in regards to its selection: __PreviewSele
 
 __Example 1: Subscribing to the PreviewSelectionChanged Event__
 
-```XAML
-	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="1" PreviewSelectionChanged="radTabControl_PreviewSelectionChanged">
-	</telerik:RadTabControl>
-```
+<snippet id='radtabcontrol-features-selection-block_1-xaml' />
 
 __Example 2: Handling the PreviewSelectionChanged Event__
 
-```C#
-	private void radTabControl_PreviewSelectionChanged(object sender, Telerik.Windows.Controls.RadSelectionChangedEventArgs e)
-        {
-            e.Handled = true;
-        }
-```
-```VB.NET
-	Private Sub radTabControl_PreviewSelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.RadSelectionChangedEventArgs)
-    	e.Handled = True
-	End Sub
-``` 
+<snippet id='radtabcontrol-features-selection-block_2-cs' />
+<snippet id='radtabcontrol-features-selection-block_3-vb' />
 
 The __SelectionChanged__ event is raised after the selection has already completed.
 
 __Example 3: Subscribing to the SelectionChanged Event__
 
-```XAML
-	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="1" SelectionChanged="radTabControl_SelectionChanged" />
-```
+<snippet id='radtabcontrol-features-selection-block_4-xaml' />
 
 __Example 4: Implementing the SelectionChanged Event Handler__
 
-```C#
-	private void radTabControl_SelectionChanged( System.Object sender, System.Windows.RoutedEventArgs e )
-	{
-	    RadSelectionChangedEventArgs selectionArgs = ( RadSelectionChangedEventArgs )e;
-	    MessageBox.Show( “The selected tab item is ” + ( ( RadTabItem )selectionArgs.AddedItems[ 0 ] ).Header.ToString() );
-	}
-```
-```VB.NET
-	Private Sub radTabControl_SelectionChanged( ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs)
-	        Dim selectionArgs As RadSelectionChangedEventArgs = DirectCast(e,RadSelectionChangedEventArgs)
-	        MessageBox.Show("The selected tab item is " + DirectCast(selectionArgs.AddedItems(0), RadTabItem).Header.ToString() )
-	End Sub
-```
+<snippet id='radtabcontrol-features-selection-block_5-cs' />
+<snippet id='radtabcontrol-features-selection-block_6-vb' />
 
 >If your tab control is bound to a custom collection, the code above will fail with __InvalidCastException__, because the __AddedItems__ collection will no longer contain items of type __RadTabItem__ and the explicit cast will fail. The collection will contain items that are of the same type that the source collection contains i.e. __Person__, __TabModel__ etc.
 

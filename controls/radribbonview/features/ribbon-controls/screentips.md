@@ -33,24 +33,11 @@ The class that represents the screen tip is `Telerik.Windows.Controls.ScreenTip`
 To enable the screen tip, set the `ScreenTip.Title` attached property on the associated ribbon control.
 
 __Setting the screen tip title on a RadRibbonGroup element__
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup x:Name="radRibbonGroupClipboard" 
-	                                DialogLauncherVisibility="Visible"
-	                                Header="Clipboard"
-	                                telerik:ScreenTip.Title="Clipboard" />
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_1-xaml' />
 
 __Setting screen tip title in code-behind__
-```C#
-	ScreenTip.SetTitle(this.radRibbonGroupClipboard, "Clipboard");
-```
-```VB.NET
-	ScreenTip.SetTitle(Me.radRibbonGroupClipboard, "Clipboard")
-```
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_2-cs' />
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_3-vb' />
 
 __ScreenTip's Title example__  
 
@@ -61,27 +48,11 @@ __ScreenTip's Title example__
 The description is displayed in the content area under the Title. To set the description, use `ScreenTip.Description` attached property.
 
 __Setting the screen tip description on a RadRibbonGroup element__
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup x:Name="radRibbonGroupClipboard" 
-	                                DialogLauncherVisibility="Visible"
-	                                Header="Clipboard"
-	                                telerik:ScreenTip.Description="Show the Clipboard Task options."
-	                                telerik:ScreenTip.Title="Clipboard" />
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_4-xaml' />
 
 __Setting screen tip description in code-behind__
-```C#
-	ScreenTip.SetTitle(this.radRibbonGroupClipboard, "Clipboard");
-	ScreenTip.SetDescription(this.radRibbonGroupClipboard, "Show the Clipboard Task options.");
-```
-```VB.NET
-	ScreenTip.SetTitle(Me.radRibbonGroupClipboard, "Clipboard")
-	ScreenTip.SetDescription(Me.radRibbonGroupClipboard, "Show the Clipboard Task options.")
-```
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_5-cs' />
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_6-vb' />
 
 __ScreenTip's Description example__  
 
@@ -92,30 +63,11 @@ __ScreenTip's Description example__
 The screen tip allows you to display an image next to the Description content. To set the icon, use the `ScreenTip.Icon` attached property.
 
 __Setting screen tip icon__
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup x:Name="radRibbonGroupClipboard" 
-	                                DialogLauncherVisibility="Visible"
-	                                Header="Clipboard"
-	                                telerik:ScreenTip.Description="Show the Clipboard Task options."
-	                                telerik:ScreenTip.Icon="Images/IconMSOffice/ClipboardScreenTipIcon.png"
-	                                telerik:ScreenTip.Title="Clipboard" />
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_7-xaml' />
 
 __Setting screen tip icon in code-behind__
-```C#
-	ScreenTip.SetTitle(this.radRibbonGroupClipboard, "Clipboard");
-	ScreenTip.SetDescription(this.radRibbonGroupClipboard, "Show the Clipboard Task options.");
-	ScreenTip.SetIcon(this.radRibbonGroupClipboard, new BitmapImage(new Uri("Images/IconMSOffice/ClipboardScreenTipIcon.png",UriKind.Relative)));
-```
-```VB.NET
-	ScreenTip.SetTitle(Me.radRibbonGroupClipboard, "Clipboard")
-	ScreenTip.SetDescription(Me.radRibbonGroupClipboard, "Show the Clipboard Task options.")
-	ScreenTip.SetIcon(Me.radRibbonGroupClipboard, New BitmapImage(New Uri("Images/IconMSOffice/ClipboardScreenTipIcon.png", UriKind.Relative)))
-```
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_8-cs' />
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_9-vb' />
 
 __ScreenTip's Icon example__  
 
@@ -130,30 +82,11 @@ The initial show delay is the time that should pass from the moment the mouse en
 The delays are controlled with the `ScreenTip.InitialShowDelay` and `ScreenTip.BetweenShowDelay` attached properties.
 
 __Setting screen tip show delay properties__
-```XAML
-	<telerik:RadRibbonView>
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup x:Name="radRibbonGroupClipboard" 
-	                                DialogLauncherVisibility="Visible"
-	                                Header="Clipboard"
-	                                telerik:ScreenTip.Title="Clipboard"
-	                                telerik:ScreenTip.InitialShowDelay="3000"
-	                                telerik:ScreenTip.BetweenShowDelay="1000"/>
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_10-xaml' />
 
 __Setting screen tip show delay properties in code-behind__
-```C#
-	ScreenTip.SetTitle(this.radRibbonGroupClipboard, "Clipboard");
-	ScreenTip.SetInitialShowDelay(this.radRibbonGroupClipboard, 3000);
-	ScreenTip.SetBetweenShowDelay(this.radRibbonGroupClipboard, 1000);
-```
-```VB.NET
-	ScreenTip.SetTitle(Me.radRibbonGroupClipboard, "Clipboard");
-	ScreenTip.SetInitialShowDelay(Me.radRibbonGroupClipboard, 3000);
-	ScreenTip.SetBetweenShowDelay(Me.radRibbonGroupClipboard, 1000);
-```
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_11-cs' />
+<snippet id='radribbonview-features-ribbon-controls-screentips-block_12-vb' />
 
 ## See Also  
 * [Application Menu]({%slug radribbonview-applicationmenu%})

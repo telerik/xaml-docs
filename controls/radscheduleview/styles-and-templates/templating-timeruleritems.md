@@ -51,22 +51,7 @@ __Example 1__ shows TimeRulerItemTemplateSelector with modified VerticalDayMajor
 
 __Example 1: Modified TimeRulerItemTemplateSelector__
 
-```XAML
-	<telerikScheduleView:TimeRulerItemTemplateSelector x:Key="TimeRulerItemTemplateSelector">
-		...    
-		<telerikScheduleView:TimeRulerItemTemplateSelector.VerticalDayMajorItemTemplate>
-			<DataTemplate>
-				<TextBlock Text="{Binding FormattedValue}" TextAlignment="Right" FontSize="11" MinWidth="50"/>
-			</DataTemplate>
-		</telerikScheduleView:TimeRulerItemTemplateSelector.VerticalDayMajorItemTemplate>
-		<telerikScheduleView:TimeRulerItemTemplateSelector.VerticalDayMinorItemTemplate>
-			<DataTemplate>                
-				<TextBlock Text="{Binding FormattedValue}" FontSize="10" Foreground="Gray" TextAlignment="Right" MinWidth="50"/>
-			</DataTemplate>
-		</telerikScheduleView:TimeRulerItemTemplateSelector.VerticalDayMinorItemTemplate>   
-		...
-	</telerikScheduleView:TimeRulerItemTemplateSelector>
-```
+<snippet id='radscheduleview-styles-and-templates-templating-timeruleritems-block_1-xaml' />
 
 >The text of the TextBlock inside the templates is bound to the __FormattedValue__ property, which is formed after the StringFormat is set through the [Formatting properties]({%slug radscheduleview-features-formatting%}) of the ViewDefinitions is applied.
 
@@ -78,15 +63,7 @@ __Example 2__ shows how the __RadScheduleView__ is defined.
 
 __Example 2: RadScheduleView with TimeRulerItemTemplateSelector set__
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
-            TimeRulerItemTemplateSelector="{StaticResource TimeRulerItemTemplateSelector}">
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition MajorTickLength="1h" MinorTickLength="15min" 
-									   TimerulerMinorTickStringFormat=":{0:mm}" />            
-		</telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>   
-```
+<snippet id='radscheduleview-styles-and-templates-templating-timeruleritems-block_2-xaml' />
 
 __Figure 8__ shows the final result.
 

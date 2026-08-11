@@ -25,26 +25,10 @@ You can examine the full power of this feature in the {% if site.site_name == 'S
 In order to use the Path Tool or Pencil Tool in the RadDiagram, you have to set the __ActiveTool__ property. Its default value is PointerTool.
 		
 	
-```C#
-        private void Button_Click_PathTool(object sender, RoutedEventArgs e)
-		{
-			this.diagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.PathTool;
-		}
+<snippet id='raddiagram-diagram-tools-features-drawing-block_1-cs' />
 
-		private void Button_Click_PencilTool(object sender, RoutedEventArgs e)
-		{
-			this.diagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.PencilTool;
-		}
-```
-```VB.NET
-       Private Sub Button_Click_PathTool(sender As Object, e As RoutedEventArgs)
-	      Me.diagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.PathTool
-       End Sub
+<snippet id='raddiagram-diagram-tools-features-drawing-block_1-vb' />
 
-       Private Sub Button_Click_PencilTool(sender As Object, e As RoutedEventArgs)
-	     Me.diagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.PencilTool
-       End Sub 
-```
 
 When the __Path Tool__ is active you click on the RadDiagram and this way you create the polyline points. When you need to finish the drawing you just have to press the Enter key. When the __Pencil Tool__ is active you click the __Mouse Left Button Down__ and move the mouse, this way draw your custom shape. On Mouse Up the shape is added to the Shapes collection of the RadDiagram.
 
@@ -53,32 +37,25 @@ When the __Path Tool__ is active you click on the RadDiagram and this way you cr
 You are able to set the __Fill__, __Stroke__, __StrokeThickness__ of the shapes you draw via the following attached properties:
 
 
-```XAML
-	xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
-```
+<snippet id='raddiagram-diagram-tools-features-drawing-block_2-xaml' />
 
 
-```XAML
-	<telerik:RadDiagram x:Name="diagram" primitives:DrawingAdorner.Fill="Blue"
-	   								     primitives:DrawingAdorner.Stroke="Orange"
-										 primitives:DrawingAdorner.StrokeThickness="5">
-```
+
+<snippet id='raddiagram-diagram-tools-features-drawing-block_3-xaml' />
+
 
 When you use __Path Tool__ you can choose the way the polylines are intersected via the __FillRule__ property:		
 
 FillRule takes one of the following values: __EvenOdd__ or __NonZero__. For more information about the FillRule you can visit [this MSDN article](http://msdn.microsoft.com/en-us/library/system.windows.media.pathgeometry.fillrule.aspx).		
 
 
-```XAML
-	primitives:DrawingAdorner.FillRule="EvenOdd"
-```	
+<snippet id='raddiagram-diagram-tools-features-drawing-block_4-xaml' />
+
 
 The IsShapeFilled and IsShapeClosed properties determine whether the shapes will have Fill and whether the first and last editing points of the shape you draw will be automatically linked.		
 
 
-```XAML
-	primitives:DrawingAdorner.IsShapeClosed="False"
-	primitives:DrawingAdorner.IsShapeFilled="False"		
-```
+<snippet id='raddiagram-diagram-tools-features-drawing-block_5-xaml' />
+
 
 ![raddiagram-features-drawing 2](images/raddiagram-features-drawing2.png)

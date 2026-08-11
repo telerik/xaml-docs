@@ -25,68 +25,8 @@ To implement a custom readonlybehavior, you have to create a class which inherit
 
 __Example 1: Custom ReadOnlyBehavior__
 
-```C#
-    public class CustomReadonlyBehavior : ReadOnlyBehavior
-    {
-        public override bool CanSaveAppointment(IReadOnlySettings readOnlySettings, IOccurrence occurrence)
-        {
-            return base.CanSaveAppointment(readOnlySettings, occurrence);
-        }
-
-        public override bool CanEditAppointment(IReadOnlySettings readOnlySettings, IOccurrence occurrence)
-        {
-            return base.CanEditAppointment(readOnlySettings, occurrence);
-        }
-
-        public override bool CanDragAppointment(IReadOnlySettings readOnlySettings, IOccurrence occurrence)
-        {
-            return base.CanDragAppointment(readOnlySettings, occurrence);
-        }
-
-        public override bool CanResizeAppointment(IReadOnlySettings readOnlySettings, IOccurrence occurrence)
-        {
-            return base.CanResizeAppointment(readOnlySettings, occurrence);
-        }
-
-        public override bool CanDeleteAppointment(IReadOnlySettings readOnlySettings, IOccurrence occurrence)
-        {
-            return base.CanDeleteAppointment(readOnlySettings, occurrence);
-        }
-
-        public override bool CanEditSlot(IReadOnlySettings readOnlySettings, Slot slot)
-        {
-            return base.CanEditSlot(readOnlySettings, slot);
-        }
-    }
-```
-```VB.NET
-    Public Class CustomReadonlyBehavior
-	Inherits ReadOnlyBehavior
-        Public Overrides Function CanSaveAppointment(readOnlySettings As IReadOnlySettings, occurrence As IOccurrence) As Boolean
-            Return MyBase.CanSaveAppointment(readOnlySettings, occurrence)
-        End Function
-
-        Public Overrides Function CanEditAppointment(readOnlySettings As IReadOnlySettings, occurrence As IOccurrence) As Boolean
-            Return MyBase.CanEditAppointment(readOnlySettings, occurrence)
-        End Function
-
-        Public Overrides Function CanDragAppointment(readOnlySettings As IReadOnlySettings, occurrence As IOccurrence) As Boolean
-            Return MyBase.CanDragAppointment(readOnlySettings, occurrence)
-        End Function
-
-        Public Overrides Function CanResizeAppointment(readOnlySettings As IReadOnlySettings, occurrence As IOccurrence) As Boolean
-            Return MyBase.CanResizeAppointment(readOnlySettings, occurrence)
-        End Function
-
-        Public Overrides Function CanDeleteAppointment(readOnlySettings As IReadOnlySettings, occurrence As IOccurrence) As Boolean
-            Return MyBase.CanDeleteAppointment(readOnlySettings, occurrence)
-        End Function
-
-        Public Overrides Function CanEditSlot(readOnlySettings As IReadOnlySettings, slot As Slot) As Boolean
-            Return MyBase.CanEditSlot(readOnlySettings, slot)
-        End Function
-End Class
-```
+<snippet id='radscheduleview-features-readonlybehavior-block_1-cs' />
+<snippet id='radscheduleview-features-readonlybehavior-block_2-vb' />
 
 > Note, that by default the base class implementation of the ReadOnlyBehavior class works with the [ReadOnlySlots]({%slug radscheduleview-features-speacialslots%}) of the RadScheduleView. If you want to change the default behavior, you can introduce custom logic. For an example implementation, check out the [ReadOnlyBehavior](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/CustomReadOnlyBehavior) SDK example.
 
@@ -94,13 +34,7 @@ Then you need to set it to RadScheduleView's **ReadOnlyBehavior** property.
 
 __Example 2: Setting ReadOnlyBehavior__
 
-```XAML
-    <telerik:RadScheduleView>
-        <telerik:RadScheduleView.ReadOnlyBehavior>
-            <local:CustomReadonlyBehavior />
-        </telerik:RadScheduleView.ReadOnlyBehavior>
-    </telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-readonlybehavior-block_3-xaml' />
 
 > In this example the namespace **"local"** is referring to the namespace in which the CustomReadonlyBehavior is declared.
 

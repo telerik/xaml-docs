@@ -47,12 +47,8 @@ The three files should keep the same resource keys, whereas the values must be t
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.        
 
 __Create LocalizationManager__  
-```C#
-	LocalizationManager.Manager = new LocalizationManager()
-	{
-	    ResourceManager = RadImageEditorResources.ResourceManager
-	};
-```
+<snippet id='radimageeditor-localization-create_localizationmanager-cs' />
+
 
 >tip You can download a runnable project of the previous example from our online SDK repository: [Localization](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization).          
 
@@ -61,63 +57,22 @@ __Create LocalizationManager__
 __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.        
 
 __Create custom LocalizationManager__  
-```C#
-	LocalizationManager.Manager = new CustomLocalizationManager();
-```
+<snippet id='radimageeditor-localization-create_custom_localizationmanager-cs' />
+
 
 >Note that if you set the localization manager after the creation of the UI, some parts might remain not-localized.
 
 What is left in order to fulfill the localization, is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize some of the strings in the two SpellCheckingDialogs:        
 
 __Localize strings__  
-```C#
-	public class CustomLocalizationManager : LocalizationManager
-	{
-	    public override string GetStringOverride(string key)
-	    {
-	        switch (key)
-	        {
-	            case "ImageEditor_Resize":
-	                return "New Resize";
-	            case "ImageEditor_CanvasResize":
-	                return "New Canvas Resize";
-	            case "ImageEditor_Rotate90":
-	                return "New Rotate at 90";
-	            case "ImageEditor_Rotate180":
-	                return "New Rotate at 180";
-	            case "ImageEditor_Rotate270":
-	                return "New Rotate at 270";
-	            case "ImageEditor_RoundCorners":
-	                return "New Round Corners";
-	            case "ImageEditor_FlipHorizontal":
-	                return "New Flip Horizontal";
-	            case "ImageEditor_FlipVertical":
-	                return "New Flip Vertical";
-	            case "ImageEditor_Crop":
-	                return "New Crop";
-	            //...
-	        }
-	        return base.GetStringOverride(key);
-	    }
-	}
-```
+<snippet id='radimageeditor-localization-localize_strings-cs' />
+
 
 Of course, if you don't want to hard-code your translation inside the source code, you can always use resource files.        
 
 __Localization using resource files__  
-```C#
-	public override string GetStringOverride(string key)
-	{
-	    switch (key)
-	    {
-	        //----------------------
-	        case "ImageEditor_Resize":
-	            return MyRadImageEditorResources.ImageEditor_Resize;
-	        //----------------------
-	    }
-	    return base.GetStringOverride(key);
-	}
-```
+<snippet id='radimageeditor-localization-localization_using_resource_files-cs' />
+
 
 ## See Also  
 * [Localization SDK Example](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization)

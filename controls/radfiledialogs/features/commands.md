@@ -17,21 +17,12 @@ If you use the __ExplorerControl__ it might be useful to execute the commands ma
 > All commands in the FileDialogsCommands class are objects of type [RoutedUICommand](https://msdn.microsoft.com/en-us/library/system.windows.input.routeduicommand(v=vs.110).aspx).
 
 __Example 1: Executing a command in code__
-```C#
-	RoutedUICommand command = (RoutedUICommand)FileDialogsCommands.Delete;
-	command.Execute(this.explorerControl, this.explorerControl);
-```
+<snippet id='radfiledialogs-features-commands-example_1_executing_a_command_in_code-cs' />
+
 
 __Example 2: Assigning a command to a Button in XAML__
-```XAML
-	<Grid>
-        <fileDialogs:ExplorerControl x:Name="explorerControl"/>
-        <Button Command="fileDialogs:FileDialogsCommands.Delete"
-                CommandParameter="{Binding ElementName=explorerControl}"
-                CommandTarget="{Binding ElementName=explorerControl}"
-                Content="Delete"/>
-    </Grid>
-```
+<snippet id='radfiledialogs-features-commands-example_2_assigning_a_command_to_a_button_in_xaml-xaml' />
+
 
 ## List of Commands
 
@@ -54,29 +45,12 @@ __Example 2: Assigning a command to a Button in XAML__
 To cancel the command executed for a specific key or a keycombo you can handle the __PreviewKeyDown event__ of the dialog control.
 
 __Example 3: Canceling Delete command in ExplorerControl__
-```C#
-	private void ExplorerControl_PreviewKeyDown(object sender, KeyEventArgs args)
-	{
-		if (args.Key == Key.Delete)
-		{
-			args.Handled = true;
-		}
-	}
-```
+<snippet id='radfiledialogs-features-commands-example_3_canceling_delete_command_in_explorercontrol-cs' />
+
 
 __Example 4: Canceling Delete command in a dialog control__
-```XAML
-	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-	openFileDialog.Owner = this;
-	openFileDialog.PreviewKeyDown += (s, args) =>
-	{
-		if (args.Key == Key.Delete)
-		{
-			args.Handled = true;
-		}
-	};
-	openFileDialog.ShowDialog();
-```
+<snippet id='radfiledialogs-features-commands-example_4_canceling_delete_command_in_a_dialog_control-xaml' />
+
 
 ## See Also
 

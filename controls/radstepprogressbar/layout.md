@@ -16,13 +16,7 @@ The RadStepProgressBar control is arranged horizontally by default which means t
 To change the orientation of the control, set the __Orientation__ property. The orientation can be __Horizontal__ or __Vertical__.
 
 
-```XAML
-	<telerik:RadStepProgressBar SelectedIndex="1" Orientation="Vertical">
-		<telerik:RadStepProgressBarItem Content="Step 1" />
-		<telerik:RadStepProgressBarItem Content="Step 2" />
-		<telerik:RadStepProgressBarItem Content="Step 3" />
-	</telerik:RadStepProgressBar>
-```
+<snippet id='radstepprogressbar-layout-block_1-xaml' />
 
 __Vertically Oriented RadStepProgressBar__  
 
@@ -31,13 +25,7 @@ __Vertically Oriented RadStepProgressBar__
 To change the horizontal flow direction, set the __FlowDirection__ property. This property is applicable only in Horizontal orientation.
 
 
-```XAML
-	<telerik:RadStepProgressBar SelectedIndex="1" FlowDirection="RightToLeft">
-		<telerik:RadStepProgressBarItem Content="Step 1" />
-		<telerik:RadStepProgressBarItem Content="Step 2" />
-		<telerik:RadStepProgressBarItem Content="Step 3" />
-	</telerik:RadStepProgressBar>
-```
+<snippet id='radstepprogressbar-layout-block_2-xaml' />
 
 __Horizontally oriented RadStepProgressBar with changed flow direction__  
 
@@ -46,13 +34,7 @@ __Horizontally oriented RadStepProgressBar with changed flow direction__
 To change the vertical flow direction, set the __ReverseVerticalDirection__ property to True. This property is applicable only in Vertical orientation.
 
 
-```XAML
-	<telerik:RadStepProgressBar SelectedIndex="1" ReverseVerticalDirection="True" Orientation="Vertical">
-		<telerik:RadStepProgressBarItem Content="Step 1" />
-		<telerik:RadStepProgressBarItem Content="Step 2" />
-		<telerik:RadStepProgressBarItem Content="Step 3" />
-	</telerik:RadStepProgressBar>
-```
+<snippet id='radstepprogressbar-layout-block_3-xaml' />
 
 __Vertically oriented RadStepProgressBar with changed flow direction__  
 
@@ -63,13 +45,7 @@ __Vertically oriented RadStepProgressBar with changed flow direction__
 The default spacing between two adjacent steps is 100px. To change this, set the __StepSpacing__ property of RadStepProgressBar.
 
 
-```XAML
-	<telerik:RadStepProgressBar StepSpacing="250">
-		<telerik:RadStepProgressBarItem Content="Step 1" />
-		<telerik:RadStepProgressBarItem Content="Step 2" />
-		<telerik:RadStepProgressBarItem Content="Step 3" />
-	</telerik:RadStepProgressBar>
-```
+<snippet id='radstepprogressbar-layout-block_4-xaml' />
 
 __Custom step spacing__  
 

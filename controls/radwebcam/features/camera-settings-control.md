@@ -21,16 +21,7 @@ __Settings dialog__
 You can also use the `CameraSettingsControl` as a stand alone element.
 
 __Using CameraSettingsControl__
-```XAML
-	<Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition />
-			<ColumnDefinition />
-		</Grid.ColumnDefinitions>
-		<telerik:RadWebCam x:Name="radWebCam" />
-		<telerik:CameraSettingsControl WebCam="{Binding ElementName=radWebCam}" Grid.Column="1"/>
-	</Grid>
-```
+<snippet id='radwebcam-features-camera-settings-control-block_1-xaml' />
 
 ## Showing Audio Settings
 
@@ -39,9 +30,7 @@ The `ShowAudioSettings` property allows you to control the addition of the Audio
 >important The Audio tab will automatically appear if a microphone is provided during the initialization of the camera.
 
 __Adding the Audio Tab__
-```XAML
-	<telerik:CameraSettingsControl WebCam="{Binding ElementName=radWebCam}" ShowAudioSettings="True"/>
-```
+<snippet id='radwebcam-features-camera-settings-control-block_2-xaml' />
 
 __Audio Tab__
 

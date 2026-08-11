@@ -54,23 +54,7 @@ the correct way to create it is as follows:
 
 
 
-```C#
-	Table table = new Table();
-	TableRow row1 = new TableRow();
-	TableRow row2 = new TableRow();
-	TableCell cell11 = new TableCell() { ColumnSpan = 2};
-	TableCell cell12 = new TableCell();
-	TableCell cell21 = new TableCell();
-	TableCell cell22 = new TableCell() { ColumnSpan = 2 };
-	
-	row1.Cells.Add(cell11);
-	row1.Cells.Add(cell12);
-	row2.Cells.Add(cell21);
-	row2.Cells.Add(cell22);
-	
-	table.Rows.Add(row1);
-	table.Rows.Add(row2);
-```
+<snippet id='radrichtextbox-how-to-guidelines-for-printing-with-raddocument-block_1-cs' />
 
 
 
@@ -87,9 +71,7 @@ Here is how you can set the PreferredWidth of the columns in __Fixed TableLayout
 
 
 
-```C#
-	cell.PreferredWidth = new TableWidthUnit(TableWidthUnitType.Fixed, width);
-```
+<snippet id='radrichtextbox-how-to-guidelines-for-printing-with-raddocument-block_2-cs' />
 
 
 
@@ -103,9 +85,7 @@ Customization of the __TableCells__ is possible with regard to their Padding. Th
 
 
 
-```C#
-	TableCell cell11 = new TableCell() { Padding = new Padding(20) };
-```
+<snippet id='radrichtextbox-how-to-guidelines-for-printing-with-raddocument-block_3-cs' />
 
 
 
@@ -114,18 +94,7 @@ TableCells are BlockContainers like Sections. That is why it is possible to embe
 
 
 
-```C#
-	private void AddContentToCell(TableCell cell)
-	{
-	    Paragraph paragraph1 = new Paragraph();
-	    Paragraph paragraph2 = new Paragraph();
-	    Span span1 = new Span("Some text in the first paragraph");
-	    paragraph1.Inlines.Add(span1);
-	
-	    cell.Blocks.Add(paragraph1);
-	    cell.Blocks.Add(paragraph2);            
-	}
-```
+<snippet id='radrichtextbox-how-to-guidelines-for-printing-with-raddocument-block_4-cs' />
 
 
 
@@ -139,15 +108,7 @@ Paragraphs can be added to BlockContainers – Sections and TableCells. Here is 
 
 
 
-```C#
-	Paragraph paragraph = new Paragraph();
-	Span span = new Span("Text in the first paragraph");
-	paragraph.Inlines.Add(span);
-	Paragraph emptyParagraph = new Paragraph();
-	
-	section.Blocks.Add(paragraph);
-	section.Blocks.Add(emptyParagraph);
-```
+<snippet id='radrichtextbox-how-to-guidelines-for-printing-with-raddocument-block_5-cs' />
 
 
 

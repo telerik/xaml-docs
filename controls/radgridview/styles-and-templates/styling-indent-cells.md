@@ -32,26 +32,8 @@ Similarly to other __RadGridView__ elements, you may alter their appearance by [
 
 __Example 1: Styling Indent Cells__
 
-```XAML
+<snippet id='radgridview-styles-and-templates-styling-indent-cells-example_1_styling_indent_cells-xaml' />
 
-	<Application.Resources>
-        <Style TargetType="telerik:GridViewIndentCell">
-            <Setter Property="Background" Value="Red" />
-        </Style>
-
-        <Style TargetType="telerik:GridViewHeaderIndentCell">
-            <Setter Property="Background" Value="Blue" />
-        </Style>
-        
-        <Style TargetType="telerik:GridViewFooterIndentCell">
-            <Setter Property="Background" Value="Green" />
-        </Style>
-
-        <Style TargetType="telerik:GridViewGroupFooterIndentCell">
-            <Setter Property="Background" Value="Yellow" />
-        </Style>
-    </Application.Resources>
-```
 
 #### __Figure 2: A grouped RadGridView with styled indent cells__
 ![Telerik UI for {{ site.framework_name }} RadGridView with custom styles applied to grouped indent cells](images/gridview-styling-indent-cells.png)

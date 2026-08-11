@@ -15,22 +15,7 @@ For performance optimization the __ControlTemplate__ of the __RadTabControl__ de
 
 However, if you need to keep each __RadTabItem__'s content you can set the __IsContentPreserved__ property to __True__.
 
-```XAML
-    <telerik:RadTabControl x:Name="tabControl" 
-                           IsContentPreserved="True"
-                           ItemsSource="{Binding Tabs}">
-        <telerik:RadTabControl.ItemTemplate>
-            <DataTemplate>
-                <TextBlock Text="{Binding Header}" />
-            </DataTemplate>
-        </telerik:RadTabControl.ItemTemplate>
-        <telerik:RadTabControl.ContentTemplate>
-            <DataTemplate>
-                <telerik:RadCalendar HorizontalAlignment="Left" VerticalAlignment="Top" />
-            </DataTemplate>
-        </telerik:RadTabControl.ContentTemplate>
-    </telerik:RadTabControl>
-```
+<snippet id='radtabcontrol-howto-how-to-keep-content-block_1-xaml' />
 
 ![{{ site.framework_name }} RadTabControl Keep Content Preserved Tab 1](images/RadTabControl_HowTo_TabContentPreserve_15.png)
 ![{{ site.framework_name }} RadTabControl Keep Content Preserved Tab 2](images/RadTabControl_HowTo_TabContentPreserve_16.png)

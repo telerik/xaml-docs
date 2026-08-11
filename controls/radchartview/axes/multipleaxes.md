@@ -25,43 +25,8 @@ The following sections show a couple of sample scenarios where you can use multi
 This example shows two chart series with a common horizontal axis and two vertical axes. In this case one of the series has its `VerticalAxis` property set and the other one uses the `VerticalAxis` of the `RadCartesianChart`. 
 
  
-```XAML
-	 <telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-	
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis Maximum="100" ElementBrush="Orange"/>
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:LineSeries Stroke="Orange" StrokeThickness="2">
-				<telerik:LineSeries.DataPoints>
-					<telerik:CategoricalDataPoint Value="20"/>
-					<telerik:CategoricalDataPoint Value="40"/>
-					<telerik:CategoricalDataPoint Value="35"/>
-					<telerik:CategoricalDataPoint Value="40"/>
-					<telerik:CategoricalDataPoint Value="30"/>
-					<telerik:CategoricalDataPoint Value="50"/>
-				</telerik:LineSeries.DataPoints>
-			</telerik:LineSeries>
-			
-			<telerik:LineSeries Stroke="Blue" StrokeThickness="2">
-				<telerik:LineSeries.VerticalAxis>
-					<telerik:LinearAxis HorizontalLocation="Right" ElementBrush="Blue" />
-				</telerik:LineSeries.VerticalAxis>
-				<telerik:LineSeries.DataPoints>
-					<telerik:CategoricalDataPoint Value="30"/>
-					<telerik:CategoricalDataPoint Value="20"/>
-					<telerik:CategoricalDataPoint Value="15"/>
-					<telerik:CategoricalDataPoint Value="50"/>
-					<telerik:CategoricalDataPoint Value="20"/>
-					<telerik:CategoricalDataPoint Value="60"/>
-				</telerik:LineSeries.DataPoints>
-			</telerik:LineSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-multipleaxes-block_1-xaml' />
+
 
 ![Telerik UI for WPF RadChartView with two vertical axes](images/RadChartView-chart_axes_twoverticalaxes.PNG)
 
@@ -70,41 +35,8 @@ This example shows two chart series with a common horizontal axis and two vertic
 This example shows two chart series with a common vertical axis and two horizontal axes. In this case one of the series has its `HorizontalAxis` property set and the other one uses the `HorizontalAxis` of the `RadCartesianChart`. 
 
   
-```XAML
-	<telerik:RadCartesianChart>
-	    <telerik:RadCartesianChart.HorizontalAxis>
-	        <telerik:CategoricalAxis ElementBrush="Orange"/>
-	    </telerik:RadCartesianChart.HorizontalAxis>	
-	    <telerik:RadCartesianChart.VerticalAxis>
-	        <telerik:LinearAxis Maximum="100"/>
-	    </telerik:RadCartesianChart.VerticalAxis>	
-	    <telerik:RadCartesianChart.Series>
-	        <telerik:LineSeries Stroke="Orange" StrokeThickness="2">
-	            <telerik:LineSeries.DataPoints>
-	                <telerik:CategoricalDataPoint Value="20"/>
-	                <telerik:CategoricalDataPoint Value="40"/>
-	                <telerik:CategoricalDataPoint Value="35"/>
-	                <telerik:CategoricalDataPoint Value="40"/>
-	                <telerik:CategoricalDataPoint Value="30"/>
-	                <telerik:CategoricalDataPoint Value="50"/>
-	            </telerik:LineSeries.DataPoints>
-	        </telerik:LineSeries>
-	        <telerik:LineSeries Stroke="Blue" StrokeThickness="2">
-	            <telerik:LineSeries.HorizontalAxis>
-	                <telerik:CategoricalAxis ElementBrush="Blue" VerticalLocation="Top" />
-	            </telerik:LineSeries.HorizontalAxis>
-	            <telerik:LineSeries.DataPoints>
-	                <telerik:CategoricalDataPoint Category="A" Value="30"/>
-	                <telerik:CategoricalDataPoint Category="B" Value="20"/>
-	                <telerik:CategoricalDataPoint Category="C" Value="15"/>
-	                <telerik:CategoricalDataPoint Category="D" Value="50"/>
-	                <telerik:CategoricalDataPoint Category="E" Value="20"/>
-	                <telerik:CategoricalDataPoint Category="F" Value="60"/>
-	            </telerik:LineSeries.DataPoints>
-	        </telerik:LineSeries>
-	    </telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-multipleaxes-block_2-xaml' />
+
 
 ![Telerik UI for WPF RadChartView with two horizontal axes](images/RadChartView-chart_axes_twohorizontalaxes.PNG)
 
@@ -113,29 +45,12 @@ This example shows two chart series with a common vertical axis and two horizont
 To define multiple axes for the different chart series when [SeriesProvider]({%slug radchartview-features-chartseriesprovider%}) is setup, you can use the `SeriesCreated` event of the provider. In the event handler, you can define a new instance of an axis to each series.
 
   
-```XAML
-	<telerik:ChartSeriesProvider Source="{Binding Data}" 
-								 SeriesCreated="ChartSeriesProvider_SeriesCreated">
-		<telerik:CategoricalSeriesDescriptor CategoryPath="Category"
-											 ValuePath="Value"
-											 ItemsSourcePath="Items">
-			<telerik:CategoricalSeriesDescriptor.Style>
-				<Style TargetType="telerik:LineSeries">
-					<Setter Property="StrokeThickness" Value="4" />                                    
-				</Style>
-			</telerik:CategoricalSeriesDescriptor.Style>
-		</telerik:CategoricalSeriesDescriptor>
-	</telerik:ChartSeriesProvider>
-```
+<snippet id='radchartview-axes-multipleaxes-block_3-xaml' />
+
 
   
-```C#
-	private void ChartSeriesProvider_SeriesCreated(object sender, ChartSeriesCreatedEventArgs e)
-	{
-		var series = (CartesianSeries)e.Series;
-		series.VerticalAxis = new LinearAxis() { Title = "Series Axis" };
-	}
-```
+<snippet id='radchartview-axes-multipleaxes-block_4-cs' />
+
 
 ![Telerik UI for WPF RadChartView with Multiple Horizontal and Vertical Axes](images/radchartview-axes-multipleaxes-0.png)
 

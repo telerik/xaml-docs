@@ -35,13 +35,8 @@ The __StringFilterEditor__ is nothing more than a __TextBox__ and a __ToggleButt
 
 __Example 1: Styling the StringFilterEditor__
 
-```XAML
-	<Style TargetType="Editors:StringFilterEditor">
-	    <Setter Property="Template" Value="{StaticResource StringFilterEditorTemplate}"/>
-	    <Setter Property="IsTabStop" Value="False"/>
-	    <Setter Property="SnapsToDevicePixels" Value="True"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-filterrow-example_1_styling_the_stringfiltereditor-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __StringFilterEditorStyle__.
           
@@ -51,12 +46,8 @@ In order to change RadDropDownButton's (the funnel) visual appearance, you shoul
 
 __Example 2: Styling the FieldFilterControl__
 
-```XAML
-	<Style TargetType="telerik:FieldFilterControl">
-	    <Setter Property="Template" Value="{StaticResource FieldFilterControlTemplate}"/>
-	    <Setter Property="Padding" Value="5"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-filterrow-example_2_styling_the_fieldfiltercontrol-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __FieldFilterControlStyle__.
 
@@ -66,29 +57,10 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 
 __Example 3: Setting a background for the filtering row TextBox__
 
-```C#
-	private void clubsGrid_FieldFilterEditorCreated(object sender, EditorCreatedEventArgs e)
-	{
-	    if (e.Column.UniqueName == "StadiumCapacity")
-	    {
-	        TextBox txtBox = e.Editor as TextBox;
-	        if (txtBox != null)
-	        {
-	            txtBox.Background = new SolidColorBrush(Colors.Yellow);
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
-	    If e.Column.UniqueName = "StadiumCapacity" Then
-	        Dim txtBox As TextBox = TryCast(e.Editor, TextBox)
-	        If txtBox IsNot Nothing Then
-	            txtBox.Background = New SolidColorBrush(Colors.Yellow)
-	        End If
-	    End If
-	End Sub
-```
+<snippet id='radgridview-styles-and-templates-styling-filterrow-example_3_setting_a_background_for_the_filtering_row_textbox-cs' />
+
+<snippet id='radgridview-styles-and-templates-styling-filterrow-example_3_setting_a_background_for_the_filtering_row_textbox-vb' />
+
 
 #### __Figure 2: RadGridView with styled filter row__
 

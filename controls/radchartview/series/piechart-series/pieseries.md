@@ -24,21 +24,8 @@ This series is visualized on the screen as a circle constructed with separate pi
 You can use the following definition to display a simple PieSeries:
 
 __Example 1: Declaring an PieSeries in XAML__
-```XAML
-	<telerik:RadPieChart Palette="Windows8">
-		<telerik:RadPieChart.Series>
-			<telerik:PieSeries>
-				<telerik:PieSeries.DataPoints>
-					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
-					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
-					<telerik:PieDataPoint Label="15.11%" Value="15.11"/>
-					<telerik:PieDataPoint Label="10.35%" Value="10.35"/>
-					<telerik:PieDataPoint Label="3.55%" Value="3.55"/>
-				</telerik:PieSeries.DataPoints>
-			</telerik:PieSeries>
-		</telerik:RadPieChart.Series>
-	</telerik:RadPieChart>
-```
+<snippet id='radchartview-series-piechart-series-pieseries-example_1_declaring_an_pieseries_in_xaml-xaml' />
+
 
 #### __Figure 1: PieSeries visual appearance__
 ![Telerik UI for WPF RadChartView PieSeries visual appearance](images/radchartview-series-pieseries.png)
@@ -57,24 +44,12 @@ You can use the __ValueBinding__ property of the PieSeries to bind the DataPoint
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public double Value { get; set; }
-    }
+<snippet id='radchartview-series-piechart-series-pieseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { Value = 43.46},
-		//....
-	};
-```		
 
 __Example 3: Specify a PieSeries in XAML__
-```XAML
-	<telerik:PieSeries ItemsSource="{Binding}" ValueBinding="PieValue" />
-```	
+<snippet id='radchartview-series-piechart-series-pieseries-example_3_specify_a_pieseries_in_xaml-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -91,9 +66,8 @@ Setting the property to a value bigger than 1 (ex: 1.4) will make the pie bigger
 The default value of the property is 0.85
 
 __Example 4: Setting RadiusFactor__
-```XAML
-	<telerik:PieSeries RadiusFactor="0.4" />
-```	
+<snippet id='radchartview-series-piechart-series-pieseries-example_4_setting_radiusfactor-xaml' />
+
 
 #### __Figure 2: RadiusFactor of 1 (left) and 0.4 (right)__
 ![Telerik UI for WPF RadChartView PieSeries with labels](images/radchartview-series-pieseries-1.png)
@@ -103,21 +77,8 @@ __Example 4: Setting RadiusFactor__
 The PieSeries allows you to offset each pie slice from the center of the pie. To do this set the __OffsetFromCenter__ property of the corresponding PieDataPoint.
 
 __Example 5: Offsetting pie slices__
-```XAML
-	<telerik:RadPieChart Palette="Windows8">
-		<telerik:RadPieChart.Series>
-			<telerik:PieSeries>
-				<telerik:PieSeries.DataPoints>
-					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
-					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
-					<telerik:PieDataPoint Label="15.11%" Value="15.11" OffsetFromCenter="0.2"/>
-					<telerik:PieDataPoint Label="10.35%" Value="10.35" OffsetFromCenter="0.2"/>
-					<telerik:PieDataPoint Label="3.55%" Value="3.55"/>
-				</telerik:PieSeries.DataPoints>
-			</telerik:PieSeries>
-		</telerik:RadPieChart.Series>
-	</telerik:RadPieChart>
-```	
+<snippet id='radchartview-series-piechart-series-pieseries-example_5_offsetting_pie_slices-xaml' />
+
 
 #### __Figure 3: Exploding pie slices__
 ![Telerik UI for WPF RadChartView PieSeries with slices offset](images/radchartview-series-pieseries-2.png)
@@ -125,24 +86,8 @@ __Example 5: Offsetting pie slices__
 Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of PieSeries. In this case when you select a data point, the correspondign pie slice will *explode* from the center of the pie.
 
 __Example 6: Setting SelectedPointOffset__
-```XAML
-	<telerik:RadPieChart Palette="Windows8">
-		<telerik:RadPieChart.Series>
-			<telerik:PieSeries SelectedPointOffset="0.32" RadiusFactor="0.7">
-				<telerik:PieSeries.DataPoints>
-					<telerik:PieDataPoint Label="43.46%" Value="43.46"/>
-					<telerik:PieDataPoint Label="27.53%" Value="27.53"/>
-					<telerik:PieDataPoint Label="15.11%" Value="15.11" />
-					<telerik:PieDataPoint Label="10.35%" Value="10.35" />
-					<telerik:PieDataPoint Label="3.55%" Value="3.55" />
-				</telerik:PieSeries.DataPoints>
-			</telerik:PieSeries>                
-		</telerik:RadPieChart.Series>
-		<telerik:RadPieChart.Behaviors>
-			<telerik:ChartSelectionBehavior />
-		</telerik:RadPieChart.Behaviors>
-	</telerik:RadPieChart>
-```
+<snippet id='radchartview-series-piechart-series-pieseries-example_6_setting_selectedpointoffset-xaml' />
+
 
 #### __Figure 4: Selected exploding pie slices__
 ![Telerik UI for WPF RadChartView PieSeries with customized slice styling](images/radchartview-series-pieseries-3.png)

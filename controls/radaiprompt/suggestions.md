@@ -13,21 +13,7 @@ position: 3
 The `RadAIPrompt` control allows you to define suggestions for the user prior to initiating a request. To do so, set the `AreSuggestionsVisible` property to __True__ of RadAIPrompt and add entries of the type of __string__ to its `Suggestions` collection. The Suggestions property expects a collection that implements the `IEnumerable` interface.
 
 __Showing Suggestions in the RadAIPrompt__
-```C#
-    <telerik:RadAIPrompt x:Name="aiPrompt" AreSuggestionsVisible="True">
-        <telerik:RadAIPromptInputItem />
-        <telerik:RadAIPrompt.Suggestions>
-            <x:Array Type="sys:String"
-                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
-                <sys:String>What is the weather in New York?</sys:String>
-                <sys:String>What is the weather in Tokyo?</sys:String>
-                <sys:String>What is the weather in Seoul?</sys:String>
-                <sys:String>What is the weather in London?</sys:String>
-            </x:Array>
-        </telerik:RadAIPrompt.Suggestions>
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-suggestions-showing_suggestions_in_the_radaiprompt-cs' />
 
 __RadAIPrompt with suggestions__
 
@@ -45,62 +31,10 @@ RadAIPrompt control exposes properties that will allow you to customize the appe
 The following example showscases the RadAIPrompt when the above properties are used:
 
 __Defining a sample model and a view model__
-```C#
-    public class SuggestionItem
-    {
-        public string SuggestionItemName { get; set; }
-    }
-
-    public class SuggestionsViewModel
-    {
-        public SuggestionsViewModel()
-        {
-    		this.SuggestionItems = new ObservableCollection<SuggestionItem>()
-    		{
-    			new SuggestionItem(){ SuggestionItemName = "Hello" },
-    			new SuggestionItem(){ SuggestionItemName = "World" },
-    		};
-        }
-
-        public ObservableCollection<SuggestionItem> SuggestionItems { get; set; }
-    }
-```
+<snippet id='radaiprompt-suggestions-defining_a_sample_model_and_a_view_model-cs' />
 
 __Defining the RadAIPrompt and its properties__
-```XAML
-    <Grid>
-        <Grid.DataContext>
-            <local:SuggestionsViewModel/>
-        </Grid.DataContext>
-        <telerik:RadAIPrompt x:Name="aiPrompt" 
-                             Suggestions="{Binding SuggestionItems}" 
-                             SuggestionsHeaderContent="Choose a suggestion" 
-                             AreSuggestionsVisible="True">
-            <telerik:RadAIPromptInputItem />
-            <telerik:RadAIPrompt.SuggestionItemTemplate>
-                <DataTemplate>
-                    <telerik:RadButton Content="{Binding SuggestionItemName}"
-                                       Command="{Binding SuggestionClickedCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=telerik:RadAIPrompt}}"
-                                       CommandParameter="{Binding SuggestionItemName}"
-                                       FontWeight="Thin"
-                                       Background="White"
-                                       Foreground="Red"/>
-                </DataTemplate>
-            </telerik:RadAIPrompt.SuggestionItemTemplate>
-            <telerik:RadAIPrompt.SuggestionsHeaderContentTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding}" FontWeight="Thin" FontStyle="Italic" Foreground="White"/>
-                </DataTemplate>
-            </telerik:RadAIPrompt.SuggestionsHeaderContentTemplate>
-            <telerik:RadAIPrompt.SuggestionsExpanderStyle>
-                <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource SuggestionsExpanderStyle}" -->
-                <Style TargetType="telerik:RadExpander">
-                    <Setter Property="Background" Value="Orange"/>
-                </Style>
-            </telerik:RadAIPrompt.SuggestionsExpanderStyle>
-        </telerik:RadAIPrompt>
-    </Grid>
-```
+<snippet id='radaiprompt-suggestions-defining_the_radaiprompt_and_its_properties-xaml' />
 
 __RadAIPrompt suggestions with custom appearance__
 

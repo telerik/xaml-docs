@@ -35,16 +35,7 @@ The users that will be able to edit the document and the groups they are in can 
 
 __Example 1: Set Permissions to Users__
 
-```C#
-	this.radRichTextBox.Users = new PermissionInfoCollection() 
-	                        {
-	                            PermissionInfo.CreateEveryonePermissionInfo(),
-	                            new PermissionInfo("jmiller", PermissionType.Individual, "James Miller"),
-	                            new PermissionInfo("jsmith", PermissionType.Individual, "John Smith"),
-	                            new PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"),
-	                            new PermissionInfo("Administrators", PermissionType.Group, "Administrators"),
-	                        };
-```
+<snippet id='radrichtextbox-features-document-protection-block_1-cs' />
 
 
 
@@ -61,9 +52,7 @@ The current user of the document is set using the __CurrentUser__ property of th
 
 __Example 2: Change CurrentUser__
 
-```C#
-	 this.radRichTextBox.CurrentUser = new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com");
-```
+<snippet id='radrichtextbox-features-document-protection-block_2-cs' />
 
 
 
@@ -72,14 +61,7 @@ You can also create a collection with the UserInfos that will be interracting wi
 
 __Example 3: Create Collection of UserInfo objects__
 
-```C#
-	List<UserInfo> CurrentUsers = new List<UserInfo>() 
-	                {
-	                    new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
-	                    new UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
-	                    new UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com"),
-	                };
-```
+<snippet id='radrichtextbox-features-document-protection-block_3-cs' />
 
 
 
@@ -87,9 +69,7 @@ You can declare a __RadComboBox__ which will be used to change the current user 
 
 __Example 1: Declaring RadComboBox__
 
-```XAML
-	<telerik:RadRibbonComboBox x:Name="comboBoxLoggedUser" Height="23" Width="150" DisplayMemberPath="RealName" SelectionChanged="comboBoxLoggedUser_SelectionChanged" />
-```
+<snippet id='radrichtextbox-features-document-protection-block_4-xaml' />
 
 
 
@@ -97,10 +77,7 @@ and populate it like this:
 
 __Example 4: Populating RadComboBox__
 
-```C#
-	this.comboBoxLoggedUser.ItemsSource = dataContext.CurrentUsers;
-	this.comboBoxLoggedUser.SelectedIndex = 0;
-```
+<snippet id='radrichtextbox-features-document-protection-block_5-cs' />
 
 
 
@@ -108,12 +85,7 @@ Then, when the selected item of the combo changes, the CurrentUser of the editor
 
 __Example 5: Update CurrentUser__
 
-```C#
-	private void comboBoxLoggedUser_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-	{
-	    this.radRichTextBox.CurrentUser = this.comboBoxLoggedUser.SelectedItem as UserInfo;
-	}
-```
+<snippet id='radrichtextbox-features-document-protection-block_6-cs' />
 
 
 
@@ -130,14 +102,7 @@ The command opens a dialog that allows you to enter a password. By clicking OK, 
 
 __Example 2: Binding a button to ToggleDocumentProtectionCommand__
 
-```XAML
-    <telerik:RadRibbonToggleButton DataContext="{Binding ElementName=editor, Path=Commands}"  
-                                   LargeImage="{telerik:IconResource IconRelativePath=32/ProtectDocument.png, IconSources={StaticResource IconSources}}" 
-                                   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=ToggleDocumentProtectionCommand}" 
-                                   Size="Large" Text="Protect Document" 
-                                   telerik:ScreenTip.Title="Toggle Document Protection" 
-                                   telerik:ScreenTip.Description="Restrict how people edit specific parts of the document." />
-```
+<snippet id='radrichtextbox-features-document-protection-block_7-xaml' />
 
 
 
@@ -145,9 +110,7 @@ It is also possible to toggle document protection in code-behind, without showin
 
 __Example 6: Protect Document in Code-Behind__
 
-```C#
-    this.radRichTextBox.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password");
-```
+<snippet id='radrichtextbox-features-document-protection-block_8-cs' />
 
 
 
@@ -155,9 +118,7 @@ The reverse operations can be executed like this:
 
 __Example 7: Unprotect Document in Code-Behind__
 
-```C#
-    this.radRichTextBox.Document.UnprotectDocument("password");
-```
+<snippet id='radrichtextbox-features-document-protection-block_9-cs' />
 
 
 
@@ -172,13 +133,7 @@ Here is an example:
 
 __Example 8: Editing Permissions__
 
-```C#
-	PermissionRangeInfo info = new PermissionRangeInfo();
-	info.Type = PermissionType.Individual;
-	info.Name = this.radRichTextBox.CurrentUser.Username;
-	List<PermissionRangeInfo> infos = new List<PermissionRangeInfo>() { info };
-	this.radRichTextBox.InsertPermissionRange(infos);
-```
+<snippet id='radrichtextbox-features-document-protection-block_10-cs' />
 
 
 

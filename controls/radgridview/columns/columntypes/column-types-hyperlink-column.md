@@ -28,69 +28,10 @@ For the purposes of this article we will assume that the data objects expose **N
 
 __Example 1: The Club class__
 
-```C#
-	public class Club : ViewModelBase
-	{   
-	    private string name;
-		public string Name
-        {
-            get { return this.name; }
-            set
-            {
-                if (value != this.name)
-                {
-                    this.name = value;
-                    this.OnPropertyChanged("Name");
-                }
-            }
-        }
+<snippet id='radgridview-columns-columntypes-column-types-hyperlink-column-example_1_the_club_class-cs' />
 
-	    private string teamUrl;
-	    public string TeamUrl
-	    {
-	        get { return this.teamUrl; }
-	        set
-	        {
-	            if (value != this.teamUrl)
-	            {
-	                this.teamUrl = value;
-	                this.OnPropertyChanged("TeamUrl");
-	            }
-	        }
-	    }
-	}
-```
-```VB.NET
-	Public Class Club
-	    Inherits ViewModelBase		
-		
-		Private m_name As String
-		Public Property Name() As String
-			Get
-				Return Me.m_name
-			End Get
-			Set(ByVal value As String)
-				If value <> Me.m_name Then
-					Me.m_name = value
-					Me.OnPropertyChanged("Name")
-				End If
-			End Set
-		End Property
+<snippet id='radgridview-columns-columntypes-column-types-hyperlink-column-example_1_the_club_class-vb' />
 
-	    Private m_teamUrl As String
-	    Public Property TeamUrl() As String
-	        Get
-	            Return Me.m_teamUrl
-	        End Get
-	        Set(value As String)
-	            If value <> Me.m_teamUrl Then
-	                Me.m_teamUrl = value
-	                Me.OnPropertyChanged("TeamUrl")
-	            End If
-	        End Set
-	    End Property
-	End Class
-```
 
 ## Set Up the Hyperlink Column
 
@@ -98,13 +39,8 @@ If you bind the RadGridView control to a collection of **Club** objects, you can
 
 __Example 2: Define GridViewHyperlinkColumn in XAML__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding Clubs}" AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewHyperlinkColumn Header="Team Url" DataMemberBinding="{Binding TeamUrl}" ContentBinding="{Binding Name}" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-hyperlink-column-example_2_define_gridviewhyperlinkcolumn_in_xaml-xaml' />
+
 
 **Figure 1** illustrates the result of the code in **Example 1**.
 

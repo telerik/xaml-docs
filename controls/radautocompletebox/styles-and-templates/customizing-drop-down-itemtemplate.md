@@ -25,52 +25,12 @@ The next steps show how to create and set a custom DropDownItemTemplate to the R
 1. Next we need to create a valid __DataTemplate__ and set the necessary binding for the __Name__, __Capital__ properties of the ItemsSource items:
 
 __Example 1: Declaring valid DataTemplate__
-```XAML
-	<DataTemplate x:Key="CustomDropDownItemTemplate">
-		<Border BorderBrush="Gray" BorderThickness="1" Margin="2">
-			<Grid>
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="Auto"/>
-					<ColumnDefinition Width="Auto"/>
-					<ColumnDefinition Width="*"/>
-				</Grid.ColumnDefinitions>
-				<Grid.RowDefinitions>
-					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
-				</Grid.RowDefinitions>
-				<TextBlock Grid.Column="0" Grid.Row="0"
-							Margin="5"
-							FontWeight="Bold"
-							Text="Name" />
-				<TextBlock Grid.Row="0" Grid.Column="1" Margin="0 5 0 0"
-							Text=":"
-							FontWeight="Bold"/>
-				<TextBlock Grid.Column="2" Grid.Row="0" Margin="5"
-							Text="{Binding Name}" />
-				<Border BorderBrush="Gray" BorderThickness="0.5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
-				<TextBlock Grid.Column="0" Grid.Row="2" Margin="5"
-							FontWeight="Bold"
-							Text="Capital" />
-				<TextBlock Grid.Row="2" Grid.Column="1" Margin="0 5 0 0"
-							Text=":"
-							FontWeight="Bold"/>
-				<TextBlock Grid.Column="2" Grid.Row="2" Margin="5"
-							Text="{Binding Capital}" />
-			</Grid>
-		</Border>
-	</DataTemplate>
-```
+<snippet id='radautocompletebox-styles-and-templates-customizing-drop-down-itemtemplate-example_1_declaring_valid_datatemplate-xaml' />
 
 1. Finally you will need to declare the __RadAutoCompleteBox__ in the xaml and set its __ItemsSource__, __DisplayMemberPath__ and __DropDownItemTemplate__ properties:
 
 __Example 2: Setting the DropDownItemTemplate__
-```XAML
-	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}"
-								Width="200"
-								DisplayMemberPath="Name"
-								DropDownItemTemplate="{StaticResource CustomDropDownItemTemplate}"/>
-```
+<snippet id='radautocompletebox-styles-and-templates-customizing-drop-down-itemtemplate-example_2_setting_the_dropdownitemtemplate-xaml' />
 
 The next screenshots show the final result:
 #### __Figure 1__
@@ -87,78 +47,12 @@ The next screenshots show the final result:
 This section will describe how you can create a custom __DropDownItemTemplateSelector__ in order to display different template depending on a property. We are going to extend the __Example 1__. First, we need to create a class which derives from __DataTemplateSelector__ and overrides the SelectTemplate method. Inside the method, we can return different template depending on our condition.
 
 __Example 3: Custom DataTemplateSelector class__
-```XAML
-	public class MyDropDownItemTemplateSelector : DataTemplateSelector
-	{
-		public DataTemplate CustomDropDownItemTemplate { get; set; }
-		public DataTemplate RegularDropDownItemTemplate { get; set; }
-		
-		public override DataTemplate SelectTemplate(object item, DependencyObject container)
-		{
-			var country = item as Country;
-			if(country.Name == "United States")
-			{
-				return RegularDropDownItemTemplate;
-			}
-			return CustomDropDownItemTemplate;
-		}
-	}
-```
+<snippet id='radautocompletebox-styles-and-templates-customizing-drop-down-itemtemplate-example_3_custom_datatemplateselector_class-xaml' />
 
 The next step is to specify the MyDropDownItemTemplateSelector in the Resources of the Window and set our custom templates. Then we can set our custom DataTemplateSelector to the __DropDownItemTemplateSelector__ property.
 
 __Example 4: Setting the DropDownItemTemplateSelector__
-```XAML
-	<Window.Resources>
-        <DataTemplate x:Key="CustomDropDownItemTemplate">
-            <Border BorderBrush="Gray" BorderThickness="1" Margin="2">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Grid.Column="0" Grid.Row="0" 
-                            Margin="5" 
-                            FontWeight="Bold" 
-                            Text="Name" />
-                    <TextBlock Grid.Row="0" Grid.Column="1" Margin="0 5 0 0" 
-                            Text=":" 
-                            FontWeight="Bold"/>
-                    <TextBlock Grid.Column="2" Grid.Row="0" Margin="5" 
-                            Text="{Binding Name}" />
-                    <Border BorderBrush="Gray" BorderThickness="0.5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
-                    <TextBlock Grid.Column="0" Grid.Row="2" Margin="5" 
-                            FontWeight="Bold" 
-                            Text="Capital" />
-                    <TextBlock Grid.Row="2" Grid.Column="1" Margin="0 5 0 0" 
-                            Text=":" 
-                            FontWeight="Bold"/>
-                    <TextBlock Grid.Column="2" Grid.Row="2" Margin="5" 
-                            Text="{Binding Capital}" />
-                </Grid>
-            </Border>
-        </DataTemplate>
-
-        <DataTemplate x:Key="RegularDropDownItemTemplate">
-            <TextBlock Text="{Binding Name}" Foreground="Red" FontWeight="Bold"/>
-        </DataTemplate>
-        
-        <local:MyDropDownItemTemplateSelector x:Key="dropDownItemTemplateSelector" CustomDropDownItemTemplate="{StaticResource CustomDropDownItemTemplate}"
-                                              RegularDropDownItemTemplate="{StaticResource RegularDropDownItemTemplate}" />
-    </Window.Resources>
-    <Grid>
-        <telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" 
-                                Width="200" VerticalAlignment="Center"
-                                DisplayMemberPath="Name" 
-                                DropDownItemTemplateSelector="{StaticResource dropDownItemTemplateSelector}"/>
-    </Grid>
-```
+<snippet id='radautocompletebox-styles-and-templates-customizing-drop-down-itemtemplate-example_4_setting_the_dropdownitemtemplateselector-xaml' />
 
 ![radautocompletebox-customizing-drop-down-itemtemplate-1](images/radautocompletebox-customizing-drop-down-itemtemplate-selector.png)
 

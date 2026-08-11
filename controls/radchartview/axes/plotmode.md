@@ -18,29 +18,8 @@ You can set the PlotMode from XAML like this:
 
 
 
-```XAML
-	<telerik:RadCartesianChart x:Name="telerik">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis PlotMode="BetweenTicks"/>
-		</telerik:RadCartesianChart.HorizontalAxis>
-	
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis/>
-		</telerik:RadCartesianChart.VerticalAxis>
-	
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries>
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Value="10" Category="1"/>
-					<telerik:CategoricalDataPoint Value="4" Category="2"/>
-					<telerik:CategoricalDataPoint Value="7" Category="3"/>
-					<telerik:CategoricalDataPoint Value="11" Category="4"/>
-					<telerik:CategoricalDataPoint Value="15" Category="5"/>
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-plotmode-block_1-xaml' />
+
 
 The PlotMode property can be used with the following predefined values:        
 

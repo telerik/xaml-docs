@@ -18,9 +18,4 @@ The default value of `Telerik.Windows.Documents.Spreadsheet.Model.Printing.Sheet
 
 If you need to keep the document with A4 PaperType, you can apply this setting before exporting it:
 
-```C#  
-	foreach (Worksheet worksheet in workbook.Worksheets)
-	{
-		worksheet.WorksheetPageSetup.PaperType = PaperTypes.A4;
-	}
-```
+<snippet id='radspreadsheet-breaking-changes-block_1-cs' />

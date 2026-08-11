@@ -27,28 +27,7 @@ Since *Q2 2011* two new attachable properties were added that allow you to confi
 Here is an example of a __Border__ that holds a __TextBlock__ with some information about the location:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer x:Name="informationLayer">
-	        <Border x:Name="SofiaBorder"
-	                telerik:MapLayer.BaseZoomLevel="5"
-	                telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                telerik:MapLayer.ZoomRange="5,12"
-	                HorizontalAlignment="Right"
-	                VerticalAlignment="Bottom"
-	                Background="#80808080"
-	                BorderBrush="Black"
-	                BorderThickness="1"
-	                CornerRadius="2"
-	                Padding="5">
-	            <TextBlock Text="Sofia - the capital of Bulgaria"
-	                        Foreground="#FFFFFFFF" />
-	        </Border>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-framework-elements-block_1-xaml' />
 
 Here is a snapshot of the result: 
 

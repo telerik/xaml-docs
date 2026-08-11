@@ -58,16 +58,8 @@ position: 17
 * An entry point to improve the memory performance is to limit the rows' automation peers cache. To do this, set the `MaxCachedPeersSize` property of the `RadGridViewAutomationPeer`. The default value is __10000__. Minimizing this value may also resolve some corner cases related to memory leaks.
 
 	__Setting the MaxCachedPeersSize property after the data is loaded and the RadGridView automation peer are created__
-	```C#
-		private void RadGridView_DataLoaded(object sender, EventArgs e)
-		{
-			var peer = RadGridViewAutomationPeer.FromElement((RadGridView)sender) as RadGridViewAutomationPeer;
-			if (peer != null)
-			{
-				peer.MaxCachedPeersSize = 100;
-			}
-		}
-	```
+	<snippet id='radgridview-performance-tips-tricks-setting_the_maxcachedpeerssize_property_after_the_data_is_loaded_and_the_radgridview_automation_peer_are_created-cs' />
+
 
 * Consider using the [RadObservableCollection]({%slug consuming-data-radobservablecollection%}) for the `ItemsSource` of the `RadGridView` control, instead of the native WPF __ObservableCollection__. The RadObservableCollection provides support for suspending change notification events via the `SuspendNotifications` and `ResumeNotifications` methods. This can be very useful when you need to add, remove or update a large number of items in the collection, as it prevents the raising of collection changed event on each item, thus improving performance.
 

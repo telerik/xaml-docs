@@ -20,9 +20,7 @@ Here is an example of a definition of a checkable __RadMenuItem__:
 
 __Example 1: Define a checkable menu item__
 
-```XAML
-	<telerik:RadMenuItem Header="Status Bar" IsCheckable="True" />
-```
+<snippet id='radmenu-features-checkable-items-block_1-xaml' />
 
 Upon clicking on the item it will get checked and the tick will appear as an icon for the item.
 
@@ -38,13 +36,7 @@ As of **R1 2022**, the menu items also expose **CheckedIcon** and **CheckedIconT
 
 __Example 2: Using a custom check icon__
 
-```XAML
-	<telerik:RadMenuItem IsCheckable="True" Header="Status Bar" CheckedIconTemplate="{x:Null}">
-		<telerik:RadMenuItem.CheckedIcon>
-			<Image Source="check-icon.png" Width="16" Height="16" Stretch="UniformToFill" />
-		</telerik:RadMenuItem.CheckedIcon>
-	</telerik:RadMenuItem>
-```
+<snippet id='radmenu-features-checkable-items-block_2-xaml' />
 
 >important Note that you also need to set the **CheckedIconTemplate** to **null** to override the default icon.
 
@@ -52,22 +44,7 @@ If you're generating the items [dynamically]({%slug radmenu-populating-with-data
 
 __Example 3: Setting the checked icon for dynamically generated items__
 
-```XAML
-    <!-- If you are using the NoXaml binaries, you need to base the style on the default one for the theme like so:  
-    <Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource RadMenuItemStyle}"> -->  
- 
-    <Style x:Key="MenuItemStyle" TargetType="telerik:RadMenuItem"> 
-        <!-- ... --> 
-        <Setter Property="CheckedIcon" Value="{Binding CheckedIconUrl}" />
-        <Setter Property="CheckedIconTemplate">
-            <Setter.Value>
-                <DataTemplate>
-                    <Image Source="{Binding}" Width="16" Height="16" Stretch="UniformToFill"/>
-                </DataTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-```
+<snippet id='radmenu-features-checkable-items-block_3-xaml' />
 
 ![Custom Checked Icon](images/RadMenu_Features_Checkable_Items_02.png)
 

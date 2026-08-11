@@ -15,14 +15,8 @@ RelativeMomentumIndexIndicator counts up and down periods from the current close
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
 __Example 1: RelativeMomentumIndexIndicator__
-```XAML
-	 <telerik:RadCartesianChart.Indicators>
-		<telerik:RelativeMomentumIndexIndicator Period="8"
-												CategoryBinding="Date"                                             
-												ValueBinding="Close"
-												ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-relativemomentumindexindicator-example_1_relativemomentumindexindicator-xaml' />
+
 
 #### Figure 1: RelativeMomentumIndexIndicator
 <img src="images/radchartview-indicators-relativemomentumindexindicator-0.png" style="width: 80%;">

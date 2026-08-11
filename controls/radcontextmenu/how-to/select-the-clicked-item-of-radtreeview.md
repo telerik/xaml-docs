@@ -22,71 +22,31 @@ Before starting, here is a sample __RadTreeView__ with a sample __RadContextMenu
 
 
 
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu">
-	            <telerik:RadMenuItem Header="Menu Option 1" />
-	            <telerik:RadMenuItem Header="Menu Option 2" />
-	            <telerik:RadMenuItem Header="Menu Option 3" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	    <telerik:RadTreeViewItem Header="Category1">
-	        <telerik:RadTreeViewItem Header="Product1" />
-	        <telerik:RadTreeViewItem Header="Product2" />
-	        <telerik:RadTreeViewItem Header="Product3" />
-	    </telerik:RadTreeViewItem>
-	    <telerik:RadTreeViewItem Header="Category2" />
-	    <telerik:RadTreeViewItem Header="Category3" />
-	    <telerik:RadTreeViewItem Header="Category4">
-	        <telerik:RadTreeViewItem Header="Product A" />
-	        <telerik:RadTreeViewItem Header="Product B" />
-	        <telerik:RadTreeViewItem Header="Product C" />
-	    </telerik:RadTreeViewItem>
-	    <telerik:RadTreeViewItem Header="Category5" />
-	</telerik:RadTreeView>
-```
+<snippet id='radcontextmenu-how-to-select-the-clicked-item-of-radtreeview-block_1-xaml' />
+
 
 To handle the __Opened__ event attach an event handler to it.
 
 
 
-```XAML
-	<telerik:RadContextMenu x:Name="radContextMenu1" 
-	                        Opened="RadContextMenu_Opened">
-	    <telerik:RadMenuItem Header="Menu Option 1" />
-	    <telerik:RadMenuItem Header="Menu Option 2" />
-	    <telerik:RadMenuItem Header="Menu Option 3" />
-	</telerik:RadContextMenu>
-```
+<snippet id='radcontextmenu-how-to-select-the-clicked-item-of-radtreeview-block_2-xaml' />
 
 
 
-```C#
-	private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
-	{
-	}
-```
-```VB.NET
-	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
-	End Sub
-```
+
+<snippet id='radcontextmenu-how-to-select-the-clicked-item-of-radtreeview-block_3-cs' />
+
+<snippet id='radcontextmenu-how-to-select-the-clicked-item-of-radtreeview-block_3-vb' />
+
 
 In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetClickedElement\<T\>()__ method of the __RadContextMenu__.
 
 
 
-```C#
-	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
-	{
-	    RadTreeViewItem item = this.radContextMenu.GetClickedElement<RadTreeViewItem>();
-	}
-```
-```VB.NET
-	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
-	    Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
-	End Sub
-```
+<snippet id='radcontextmenu-how-to-select-the-clicked-item-of-radtreeview-block_4-cs' />
+
+<snippet id='radcontextmenu-how-to-select-the-clicked-item-of-radtreeview-block_4-vb' />
+
 
 The last thing to do is to set the __SelectedItem__ property of the __RadTreeView__ to the __instance__ of the __RadTreeView__ item that has been clicked.
 
@@ -94,24 +54,10 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 
 
 
-```C#
-	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
-	{
-	    RadTreeViewItem item = this.radContextMenu.GetClickedElement<RadTreeViewItem>();
-	    if (item != null)
-	    {
-	        this.radTreeView.SelectedItem = item;
-	    }
-	}
-```
-```VB.NET
-	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
-	    Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
-	    If item Is Nothing Then
-	        Me.radTreeView.SelectedItem = item
-	    End If
-	End Sub
-```
+<snippet id='radcontextmenu-how-to-select-the-clicked-item-of-radtreeview-block_5-cs' />
+
+<snippet id='radcontextmenu-how-to-select-the-clicked-item-of-radtreeview-block_5-vb' />
+
 
 ## See Also
 

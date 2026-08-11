@@ -38,59 +38,10 @@ To populate the control with tiles you will need to provide a collection of item
 For this example we will use a simple hierarchical structure consisting of teams, managers and employees.
 
 __Defining the models__
-```C#
-	public class Team
-    {
-        public string Name { get; set; }
-        public ObservableCollection<Manager> Managers { get; set; }
-        public int ManagersCount
-        {
-            get { return this.Managers.Count; }
-        }
-    }
-
-    public class Manager
-    {
-        public string Name { get; set; }
-        public ObservableCollection<Employee> Employees { get; set; }
-        public int EmployeesCount
-        {
-            get { return this.Employees.Count; }
-        }
-    }
-
-    public class Employee
-    {
-        public string Name { get; set; }
-        public double Salary { get; set; }
-    }
-```
+<snippet id='radtreemap-getting-started-getting-started-treemap-block_1-cs' />
 
 __Populating a collection with the data__
-```C#
-	public ObservableCollection<Team> GetData()
-	{
-		Random r = new Random();            
-		var teams = new ObservableCollection<Team>();            
-		for (int i = 0; i < 3; i++)
-		{
-			var team = new Team() { Name = "Team " + i, Managers = new ObservableCollection<Manager>() };               
-			for (int k = 0; k < 2; k++)
-			{
-				var manager = new Manager() { Name = "Manager " + k, Employees = new ObservableCollection<Employee>() };
-				int employeesCount = r.Next(3, 6);
-				for (int y = 0; y < 3; y++)
-				{
-					manager.Employees.Add(new Employee() { Name = "Employee " + y, Salary = r.Next(3000, 10000) });
-				}                    
-				team.Managers.Add(manager);
-			}
-			teams.Add(team);
-		}
-		
-		return team;
-	}
-```
+<snippet id='radtreemap-getting-started-getting-started-treemap-block_2-cs' />
 
 ## Setting up the RadTreeMap
 
@@ -105,33 +56,13 @@ The __TargetTypeName__ contains the class name of the corresponding object in th
 The __ChildrenPath__ is the path to the property that holds the children's collection.
 
 __Defining RadTreeMap__
-```XAML
-	<telerik:RadTreeMap x:Name="radTreeMap">
-		<telerik:RadTreeMap.TypeDefinitions>
-			<telerik:TypeDefinition TargetTypeName="Team" ValuePath="ManagersCount" ChildrenPath="Managers" LabelPath="Name" />
-			<telerik:TypeDefinition TargetTypeName="Manager" ValuePath="EmployeesCount" ChildrenPath="Employees" LabelPath="Name" />
-			<telerik:TypeDefinition TargetTypeName="Employee" ValuePath="Salary" LabelPath="Name">
-				<telerik:TypeDefinition.Mappings>
-					<telerik:ValueGradientColorizer RangeMinimum="3000" RangeMaximum="10000">
-						<GradientStop Offset="0" Color="Red" />
-						<GradientStop Offset="0.50" Color="Yellow" />
-						<GradientStop Offset="1" Color="Green" />
-					</telerik:ValueGradientColorizer>
-				</telerik:TypeDefinition.Mappings>
-			</telerik:TypeDefinition>               
-		</telerik:RadTreeMap.TypeDefinitions>
-	</telerik:RadTreeMap>
-```
+<snippet id='radtreemap-getting-started-getting-started-treemap-block_3-xaml' />
 
 __Setting the ItemsSource in XAML__
-```XAML
-	<telerik:RadTreeMap ItemsSource="{Binding MyDataSourceProperty}" />
-```
+<snippet id='radtreemap-getting-started-getting-started-treemap-block_4-xaml' />
 
 __Setting the ItemsSource in code (see Example 2)__
-```XAML
-	this.radTreeMap.ItemsSource = GetData();
-```
+<snippet id='radtreemap-getting-started-getting-started-treemap-block_5-xaml' />
 
 __RadTreeMap__  
 

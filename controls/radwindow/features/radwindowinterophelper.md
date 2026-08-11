@@ -25,42 +25,12 @@ Here is a brief list of all attached properties exposed by the class:
 
 __Example 1: Set RadWindowInteropHelper attached properties__
 
-```XAML
-	<telerik:RadWindow x:Class="ProjectNamespace.CustomWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-		xmlns:navigation="clr-namespace:Telerik.Windows.Controls.Navigation;assembly=Telerik.Windows.Controls.Navigation" 
-		navigation:RadWindowInteropHelper.ClipMaskCornerRadius="0"
-		navigation:RadWindowInteropHelper.AllowTransparency="False"
-		navigation:RadWindowInteropHelper.OpaqueWindowBackground="Red"
-		navigation:RadWindowInteropHelper.Title="Custom Window"
-		navigation:RadWindowInteropHelper.Icon="icon.png"
-		navigation:RadWindowInteropHelper.ShowInTaskbar="True" >
-	    <Grid>
-		<!-- ... -->
-	    </Grid>
-	</telerik:RadWindow>
-```
+<snippet id='radwindow-features-radwindowinterophelper-block_1-xaml' />
 
 __Example 1: Set RadWindowInteropHelper attached properties__
 
-```C#
-	RadWindowInteropHelper.SetClipMaskCornerRadius(this, new CornerRadius(0));
-	RadWindowInteropHelper.SetAllowTransparency(this, false);
-	RadWindowInteropHelper.SetOpaqueWindowBackground(this, Brushes.Red);
-	RadWindowInteropHelper.SetTitle(this, "Custom Window");
-	RadWindowInteropHelper.SetIcon(this, new BitmapImage(new Uri("../../icon.png", UriKind.RelativeOrAbsolute)));
-	RadWindowInteropHelper.SetShowInTaskbar(this, true);
-```
-```VB.NET
-	RadWindowInteropHelper.SetClipMaskCornerRadius(Me, New CornerRadius(0))
-	RadWindowInteropHelper.SetAllowTransparency(Me, False)
-	RadWindowInteropHelper.SetOpaqueWindowBackground(Me, Brushes.Red)
-	RadWindowInteropHelper.SetTitle(Me, "Custom Window")
-	RadWindowInteropHelper.SetIcon(Me, New BitmapImage(New Uri("../../icon.png", UriKind.RelativeOrAbsolute)))
-	RadWindowInteropHelper.SetShowInTaskbar(Me, True)
-```
+<snippet id='radwindow-features-radwindowinterophelper-block_2-cs' />
+<snippet id='radwindow-features-radwindowinterophelper-block_3-vb' />
 
 #### __Figure 1: The customized RadWindow__
 
@@ -69,6 +39,19 @@ __Example 1: Set RadWindowInteropHelper attached properties__
 #### __Figure 1: The customized RadWindow's taskbar thumbnail preview__
 
 ![The customized RadWindow's taskbar thumbnail preview](images/custom-radwindow-toolbar.png)
+
+## Hiding RadWindow from the Task Switcher
+
+By default, `RadWindow` appears in the Windows Task Switcher (`Alt+Tab` menu). To hide it from the Task Switcher, create a custom class that derives from `RadWindow` and override the `ShouldShowInTaskSwitcher` virtual method to return `false`.
+
+>important For the Task Switcher hiding to work correctly, the `ShowInTaskbar` property of the underlying window must also be set to `False`. Use the `RadWindowInteropHelper.ShowInTaskbar` attached property to control this behavior.
+
+__Example 2: Create a custom RadWindow class that is hidden from the Task Switcher__
+
+<snippet id='radwindow-features-radwindowinterophelper-block_4-cs' />
+<snippet id='radwindow-features-radwindowinterophelper-block_5-vb' />
+
+The `ShouldShowInTaskSwitcher` method is called when the window is shown. Returning `false` prevents the window from appearing in the `Alt+Tab` menu. This approach is useful for widget-style applications where the window acts as a small, hideable overlay that does not need to be selectable through the Task Switcher.
 
 ## See Also
 

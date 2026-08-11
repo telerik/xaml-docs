@@ -36,84 +36,17 @@ Follow these steps to configure __CellStyleSelector__:
 
 __Example 1: The StadiumCapacityStyle class__
 
-```C#
-	public class StadiumCapacityStyle : StyleSelector
-	{
-	    public override Style SelectStyle(object item, DependencyObject container)
-	    {
-	        if (item is Club)
-	        {
-	            Club club = item as Club;
-	            if (club.StadiumCapacity > 50000)
-	            {
-	                return BigStadiumStyle;
-	            }
-	            else
-	            {
-	                return SmallStadiumStyle;
-	            }
-	        }
-	        return null;
-	    }
-	    public Style BigStadiumStyle { get; set; }
-	    public Style SmallStadiumStyle { get; set; }
-	}
-```
-```VB.NET
-	Public Class StadiumCapacityStyle
-	    Inherits StyleSelector
-	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
-	        If TypeOf item Is Club Then
-	            Dim club As Club = TryCast(item, Club)
-	            If club.StadiumCapacity > 50000 Then
-	                Return BigStadiumStyle
-	            Else
-	                Return SmallStadiumStyle
-	            End If
-	        End If
-	        Return Nothing
-	    End Function
-	    Public Property BigStadiumStyle() As Style
-	        Get
-	            Return m_BigStadiumStyle
-	        End Get
-	        Set
-	            m_BigStadiumStyle = Value
-	        End Set
-	    End Property
-	    Private m_BigStadiumStyle As Style
-	    Public Property SmallStadiumStyle() As Style
-	        Get
-	            Return m_SmallStadiumStyle
-	        End Get
-	        Set
-	            m_SmallStadiumStyle = Value
-	        End Set
-	    End Property
-	    Private m_SmallStadiumStyle As Style
-	End Class
-```
+<snippet id='radgridview-style-selectors-cell-style-selector-example_1_the_stadiumcapacitystyle_class-cs' />
+
+<snippet id='radgridview-style-selectors-cell-style-selector-example_1_the_stadiumcapacitystyle_class-vb' />
+
 
 3. In the XAML file, define the style selector as a resource and set the properties of __BigStadiumStyle__ and __SmallStadiumStyle__:
 
 __Example 2: Set the different styles for the style selector__
 
-```XAML
-		<Grid.Resources>
-			<my:StadiumCapacityStyle x:Key="stadiumCapacityStyle">
-				<my:StadiumCapacityStyle.BigStadiumStyle>
-					<Style TargetType="telerik:GridViewCell">
-						<Setter Property="Background" Value="Red"/>
-					</Style>
-				</my:StadiumCapacityStyle.BigStadiumStyle>
-				<my:StadiumCapacityStyle.SmallStadiumStyle>
-					<Style TargetType="telerik:GridViewCell">
-						<Setter Property="Background" Value="Yellow" />
-					</Style>
-				</my:StadiumCapacityStyle.SmallStadiumStyle>
-			</my:StadiumCapacityStyle>
-		</Grid.Resources>
-```
+<snippet id='radgridview-style-selectors-cell-style-selector-example_2_set_the_different_styles_for_the_style_selector-xaml' />
+
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__.
 
@@ -121,12 +54,8 @@ If you use our [Implicit Themes]({%slug styling-apperance-implicit-styles-overvi
 
 __Example 3: Set the style when using implicit styles__
 
-```XAML
+<snippet id='radgridview-style-selectors-cell-style-selector-example_3_set_the_style_when_using_implicit_styles-xaml' />
 
-	<Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellStyle}">
-		<Setter Property="Background" Value="Yellow" />
-	</Style>
-```
 
 >tip The __GridViewCellStyle__ resource is accessible when you use the NoXaml dlls and you merged the associated .xaml files. The Style is defined in the __Telerik.Windows.Controls.GridView.xaml__ file which is why you can access it using the `StaticResource` keyword.
 
@@ -134,22 +63,8 @@ __Example 3: Set the style when using implicit styles__
 
 __Example 4: Set CellStyleSelector for the column__
 
-```XAML
+<snippet id='radgridview-style-selectors-cell-style-selector-example_4_set_cellstyleselector_for_the_column-xaml' />
 
-	<telerik:RadGridView ItemsSource="{Binding Clubs}"                   
-	                     AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
-	                                    Header="Est."
-	                                    DataFormatString="{}{0:yyyy}"/>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}"
-	                                    Header="Stadium"
-	                                    CellStyleSelector="{StaticResource stadiumCapacityStyle}"
-	                                    DataFormatString="{}{0:N0}"/>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
 
 >Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. You should not set properties of GridViewCell inside SelectStyle method. [Read more on UI Virtualization]({%slug radgridview-features-ui-virtualization%}).
           

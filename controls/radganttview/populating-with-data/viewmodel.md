@@ -18,87 +18,43 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView" />
-```
+<snippet id='radganttview-populating-with-data-viewmodel-block_1-xaml' />
+
 
 * Create a new class named __MyViewModel__:
 
 
 
-```C#
-	public class MyViewModel
-	{
-	}
-```
+<snippet id='radganttview-populating-with-data-viewmodel-block_2-cs' />
+
 
 * In the __MyViewModel__ class add Tasks property. We will bind the __TasksSource__ property of the __RadGanttView__ to this property. 
 
 
 
-```C#
-	public class MyViewModel : PropertyChangedBase
-	{
-	    private ObservableCollection<GanttTask> tasks;
-	
-	    public ObservableCollection<GanttTask> Tasks
-	    {
-	        get
-	        {
-	            return tasks;
-	        }
-	        set
-	        {
-	            tasks = value;
-	            OnPropertyChanged(() => Tasks);
-	        }
-	    }
-	}
-```
+<snippet id='radganttview-populating-with-data-viewmodel-block_3-cs' />
+
 
 * All we have to do is to initialize the tasks field: 
 
 
 
-```C#
-	public MyViewModel()
-	{
-	    var date = DateTime.Now;
-	
-	    var ganttAPI = new GanttTask() { Start = date, End = date.AddDays(2), Title = "Design public API" };
-	    var ganttRendering = new GanttTask() { Start = date.AddDays(2).AddHours(8), End = date.AddDays(4), Title = "Gantt Rendering" };
-	    var ganttDemos = new GanttTask() { Start = date.AddDays(5), End = date.AddDays(7), Title = "Gantt Demos" };
-	
-	    var milestone = new GanttTask() { Start = date.AddDays(7), End = date.AddDays(7).AddHours(1), Title = "Review", IsMilestone = true };
-	
-	    ganttRendering.Dependencies.Add(new Dependency() { FromTask = ganttAPI });
-	    ganttDemos.Dependencies.Add(new Dependency() { FromTask = ganttRendering });
-	
-	    var iterationTask = new GanttTask(date, date.AddDays(7), "Iteration 1")
-	    {
-	        Children = { ganttAPI, ganttRendering, ganttDemos, milestone }
-	    };
-	
-	
-	    this.tasks = new ObservableCollection<GanttTask>() { iterationTask };
-	}
-```
+<snippet id='radganttview-populating-with-data-viewmodel-block_4-cs' />
+
 
 * The ViewModel is complete. Now, let's return to the View. Add TasksSource property to the definition of the __GanttView__:
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}"  />
-```
+<snippet id='radganttview-populating-with-data-viewmodel-block_5-xaml' />
+
 
 * Finally, set the DataContext: 	
 
 
 
-```C#
-	this.DataContext = new MyViewModel();
-```
+<snippet id='radganttview-populating-with-data-viewmodel-block_6-cs' />
+
 
 And the result is:
 

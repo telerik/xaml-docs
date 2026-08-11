@@ -22,29 +22,8 @@ To resolve the problem you just have to change __RadComboBox's ItemsPanel with S
       
 
 
-```XAML
-	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}"
-	                    UniqueName="Country"
-	                    SelectedValueMemberPath="Id"
-	                    DisplayMemberPath="Name" 
-	                    IsComboBoxEditable="True"
-	                    EditTriggers="CellClick">
-	    <telerik:GridViewComboBoxColumn.EditorStyle>
-	        <Style TargetType="telerik:RadComboBox">
-	            <Setter Property="IsFilteringEnabled" Value="True"/>
-	            <Setter Property="StaysOpenOnEdit" Value="True"/>
-		    <Setter Property="OpenDropDownOnFocus" Value="True"/>
-	            <Setter Property="ItemsPanel">
-	                <Setter.Value>
-	                    <ItemsPanelTemplate>
-	                        <StackPanel/>
-	                    </ItemsPanelTemplate>
-	                </Setter.Value>
-	            </Setter>
-	        </Style>
-	    </telerik:GridViewComboBoxColumn.EditorStyle>
-	</telerik:GridViewComboBoxColumn>
-```
+<snippet id='radgridview-columns-how-to-filter-the-items-in-comboboxcolumn-solution-xaml' />
+
 
 ## See Also
 

@@ -17,13 +17,7 @@ To use the MapBox services, assign a `MapBoxMapProvider` instance to the `Provid
 In order to download data from the services, the provider needs to assign its `AccessToken` property. An access token can be acquired from the [MapBox tokens API](https://docs.mapbox.com/help/glossary/access-token/). Keep in mind that the token is related to a specific number of requests to the services. Read more on the [MapBox website](https://docs.mapbox.com/accounts/guides/invoices/#details-of-charges).
 
 __Setting up MapBoxMapProvider__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:MapBoxMapProvider AccessToken="Your Access Token"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-mapboxprovider-block_1-xaml' />
 
 ![A picture showing RadMap with MapBoxMapProvider](images/radmap-features-mapboxprovider-0.png)
 
@@ -40,35 +34,12 @@ The MapBox services provide a set of different map layers ([tilesets](https://do
 The `Mode` property is a flag enum of type `MapboxVectorTileset` which allows you to set the mode to Streets, Terrain, Traffic or any combination of the modes. Currently, [the default style file source](https://github.com/mapbox/mapbox-gl-styles/blob/master/styles/basic-v9.json) deployed with the provider supports only the `Streets` mode. To visualize other modes, you should [provide a custom style file](#loading-custom-styles).
 
 __Setting the Mode property__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>			
-			<telerik:MapBoxMapProvider AccessToken="Your Access Token"
-									   StyleFileSource="C:\MyMapVectorResources\Styles\custom-styles.json"
-									   Mode="Streets,Terrain"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-mapboxprovider-block_2-xaml' />
 
 By default RadMap's navigation UI doesn't display any modes for the `MapBoxMapProvider`. To enable this, set the provider's `UserAccessibleModes` collection property.
 
 __Setting up the tileset modes__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>			
-			<telerik:MapBoxMapProvider AccessToken="Your Access Token"
-									   StyleFileSource="C:\MyMapVectorResources\Styles\custom-styles.json">
-				<telerik:MapBoxMapProvider.UserAccessibleModes>
-					<telerik:MapboxVectorTileset>Streets</telerik:MapboxVectorTileset>
-					<telerik:MapboxVectorTileset>Terrain</telerik:MapboxVectorTileset>
-					<telerik:MapboxVectorTileset>Streets,Terrain</telerik:MapboxVectorTileset>
-					<telerik:MapboxVectorTileset>Terrain, Traffic</telerik:MapboxVectorTileset>
-					<telerik:MapboxVectorTileset>Streets, Terrain, Traffic</telerik:MapboxVectorTileset>
-				</telerik:MapBoxMapProvider.UserAccessibleModes>
-			</telerik:MapBoxMapProvider>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-mapboxprovider-block_3-xaml' />
 
 ![A picture showing RadMap with MapBoxMapProvider and the UserAccessibleModes](images/radmap-features-mapboxprovider-1.png)
 
@@ -77,15 +48,7 @@ __Setting up the tileset modes__
 To assign a custom [style](https://docs.mapbox.com/mapbox-gl-js/style-spec/) `.json` file, set the `StyleFileSource` property of `MapBoxMapProvider`.
 
 __Setting custom styles__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:MapBoxMapProvider AccessToken="Your Access Token"\
-									   StyleFileSource="C:\MyMapVectorResources\Styles\custom-styles.json"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-mapboxprovider-block_4-xaml' />
 
 ## See Also 
 * [Vector Tile Providers]({%slug radmap-features-urivectortilemapprovider%})
-

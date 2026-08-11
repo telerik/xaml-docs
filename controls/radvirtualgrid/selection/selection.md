@@ -51,34 +51,19 @@ When the __SelectionUnit__ of __RadVirtualGrid__ is set to __Column__, all cells
 
 __Example 1: Subscribing to the SelectionCellsChanging event__
 
-```C#
-	private void VirtualGrid_SelectedCellsChanging(object sender, VirtualGridSelectedCellsChangingEventArgs e)
-        {
-
-        }
-```
+<snippet id='radvirtualgrid-selection-selection-block_1-cs' />
 
 * __SelectedCellsChanged__ - raised when the __SelectedCells__ collection has changed. The event arguments expose the following specific properties: __AddedItems__ and __RemovedItems__. 
 
 __Example 2: Subscribing to the SelectionCellsChanged event__
 
-```C#
-	private void VirtualGrid_SelectedCellsChanged(object sender, VirtualGridSelectedCellsChangedEventArgs e)
-        {
-
-        }
-```
+<snippet id='radvirtualgrid-selection-selection-block_2-cs' />
 
 * __SelectionChanged__ - raised when the selection of the control has changed. It is triggered only when the __SelectionUnit__ is different from __Cell__. The event arguments expose the following specific properties: __AddedItems__ and __RemovedItems__. 
 
 __Example 3: Subscribing to the SelectionChanged event__
 
-```C#
-	  private void VirtualGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-```
+<snippet id='radvirtualgrid-selection-selection-block_3-cs' />
 
 ## See Also
 

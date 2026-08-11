@@ -17,15 +17,7 @@ The `RadAIPrompt` supports paging on the output items from the output view. To e
 * `CurrentPageIndex`&mdash;Gets or sets the current page index.
 
 __Enabling the paging functionality__
-```XAML
-    <telerik:RadAIPrompt x:Name="aiPrompt" 
-                         PromptRequest="OnPromptRequested" 
-                         IsPagingEnabled="True"
-                         PageSize="3">
-        <telerik:RadAIPromptInputItem />
-        <telerik:RadAIPromptOutputItem />
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-paging-enabling_the_paging_functionality-xaml' />
 
 __RadAIPrompt with paged data in the output view__
 

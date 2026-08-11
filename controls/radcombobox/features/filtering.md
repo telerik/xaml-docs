@@ -18,22 +18,8 @@ The next code snippet shows a regular __RadComboBox__ with static data (defined 
 
 
 
-```XAML
-	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox">
-	    <telerik:RadComboBoxItem Content="Alapattah" />
-	    <telerik:RadComboBoxItem Content="Brickell Avenue" />
-	    <telerik:RadComboBoxItem Content="Downtown Miami" />
-	    <telerik:RadComboBoxItem Content="El Portal" />
-	    <telerik:RadComboBoxItem Content="Cutler Ridge" />
-	    <telerik:RadComboBoxItem Content="Florida City" />
-	    <telerik:RadComboBoxItem Content="Homestead" />
-	    <telerik:RadComboBoxItem Content="Kendall" />
-	    <telerik:RadComboBoxItem Content="Leisure City" />
-	    <telerik:RadComboBoxItem Content="Medley" />
-	    <telerik:RadComboBoxItem Content="Pinecrest" />
-	    <telerik:RadComboBoxItem Content="Virginia Gardens" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-filtering-block_1-xaml' />
+
 
 To control the text filtering you can set the __IsFilteringEnabled__ property. By default the __IsFilteringEnabled__ is set to False. You can see on the snapshot below that in this case the items in the drop-down are not filtered.
 
@@ -43,11 +29,8 @@ Now go back in the initial __RadComboBox__ declaration and set the __TextSearchM
 
 
 
-```XAML
-	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox" TextSearchMode="Contains" IsFilteringEnabled="True">
-	....
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-filtering-block_2-xaml' />
+
 
 Start your demo and write "al" in the __input box__. Now only items containing the "al" text will be displayed.
 
@@ -62,11 +45,8 @@ The final scenario is when you have a __TextSearchMode__ set to __TextSearchMode
 
 
 
-```XAML
-	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox" TextSearchMode="StartsWith" IsFilteringEnabled="True">
-	....
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-filtering-block_3-xaml' />
+
 
 Start your demo and write "al" in the __input box__. Now only items, which text starts with the "al" text, will be shown in the drop-down list.
 

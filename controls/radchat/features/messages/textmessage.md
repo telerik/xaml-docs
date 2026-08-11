@@ -18,12 +18,8 @@ The __TextMessage__ is intended to be used for sending a simple string type mess
 * __DateTime creationDate__: the __creationDate__ parameter can be set optionally.
 
 __Example 1: Defining a TextMessage__ 
-```C#
-	var textMessage = new TextMessage(this.currentAuthor, "Some text message", "sent", DateTime.Now);
-    textMessage.InlineViewModel.StatusVisibility = Visibility.Visible;
+<snippet id='radchat-features-messages-textmessage-example_1_defining_a_textmessage-cs' />
 
-    this.chat.AddMessage(textMessage);
-```
 
 #### __Figure 1: Defining TextMessage__
 ![TextMessage with Status set](images/RadChat_Messages_Text_01.png)

@@ -56,6 +56,5 @@ __TabNavigationExtensions.IsTabStop__ attached property indicates whether RadDat
 
 __Example 1: RadDateTimePicker with TabNavigationExtensions.IsTabStop__
 
-```XAML
-	<telerik:RadDateTimePicker telerik:TabNavigationExtensions.IsTabStop="False" />
-```
+<snippet id='raddatetimepicker-features-keyboard-support-example_1_raddatetimepicker_with_tabnavigationextensions_istabstop-xaml' />
+

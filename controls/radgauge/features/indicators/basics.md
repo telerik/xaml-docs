@@ -20,17 +20,8 @@ The indicator controls, except the __NumericIndicator__, derive from the __Indic
 
 When the value of the indicator gets changed, it will get positioned on the appropriate place on the scale. By default the indicator will directly go to the respective position, but you are able to make this transition smoother by animating it. To do it, just enable the indicators animation by setting the __IsAnimated__ property to __True__ and set the __Duration__ property to the desired value. Here is an example.
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale  Min="1" Max="12"
-	                                  IsInteractive="True">
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:Marker IsAnimated="True" Duration="0:0:0.5"
-	                            telerik:ScaleObject.RelativeHeight="0.05*" />
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-basics-block_1-xaml' />
+
 
 ## Refreshing the Indicator
 
@@ -49,17 +40,8 @@ To implement this feature you have to use the __RefreshRate__ and __RefreshMode_
 Here is an example:
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="1" Max="12">
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:Marker RefreshMode="Min"
-	                            RefreshRate="0:0:5"
-	                            telerik:ScaleObject.RelativeHeight="0.05*" />
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-basics-block_2-xaml' />
+
 
 ## Snapping the Indicator
 
@@ -78,18 +60,8 @@ In order to enable and configure the __Snapping__ you have to use the __SnapType
 Here is an example:
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="20"
-	                         IsInteractive="True">
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:Marker SnapType="ToInterval"
-	                            SnapInterval="5" 
-	                            telerik:ScaleObject.RelativeHeight="0.05*" />
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-basics-block_3-xaml' />
+
 
 ## Indicator's Size
 
@@ -100,17 +72,8 @@ To manipulate the indicator's size, simply use the __RelativeHeight__ and __Rela
 Here is an example:
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="20"
-	                         IsInteractive="True">
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:Marker telerik:ScaleObject.RelativeWidth="0.1*"
-	                            telerik:ScaleObject.RelativeHeight="0.05*" />
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-basics-block_4-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -129,34 +92,8 @@ If you use ranges in your scale, you can make the indicator consistent with thei
 Here is an example.
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="32"
-	                    IsInteractive="True"
-	                    RangeLocation="OverCenter">
-	        <telerik:VerticalLinearScale.Ranges>
-	            <telerik:GaugeRange Background="#F5E7B3"
-	                            Min="0"
-	                            Max="8"
-	                            IndicatorBackground="#F5E7B3"/>
-	            <telerik:GaugeRange Background="#acd47b"
-	                            Min="8"
-	                            Max="20"
-	                            IndicatorBackground="#acd47b" />
-	            <telerik:GaugeRange Background="#ad95c9"
-	                            Min="20"
-	                            Max="32"
-	                            IndicatorBackground="#ad95c9" />
-	        </telerik:VerticalLinearScale.Ranges>
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:Marker telerik:ScaleObject.RelativeWidth="0.16*"
-	                    telerik:ScaleObject.RelativeHeight="0.03*"
-	                    telerik:ScaleObject.Location="Inside"
-	                    UseRangeColor="True"/>
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-basics-block_5-xaml' />
+
 
 Here is a snapshot of the result.
 

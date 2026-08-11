@@ -42,26 +42,17 @@ __Applying changes__ on the current item keeps the commands enabled. __Moving to
 
 #### __Example 1: Setting AutoCommit to True in XAML__
 
-```XAML
-<UserControl xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-    <Grid>
-        <telerik:RadDataForm x:Name="radDataForm" AutoCommit="True" />
-    </Grid>
-</UserControl>
-```
+<snippet id='raddataform-features-auto-commit-block_1-xaml' />
+
 
 This XAML configuration keeps `AutoCommit` enabled with the default value.
 
 #### __Example 2: Setting AutoCommit to True in Code__
 
-```C#
-this.radDataForm.AutoCommit = true;
-```
+<snippet id='raddataform-features-auto-commit-block_2-cs' />
 
-```VB.NET
-Me.radDataForm.AutoCommit = True
-```
+<snippet id='raddataform-features-auto-commit-block_2-vb' />
+
 
 Use this configuration when you want __RadDataForm__ to commit pending changes automatically while the user navigates through items or executes commands other than Delete and Cancel.
         
@@ -86,26 +77,17 @@ __When changes are applied, the Navigation and AddNew commands get disabled__, u
 
 #### __Example 3: Setting AutoCommit to False in XAML__
 
-```XAML
-<UserControl xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-    <Grid>
-        <telerik:RadDataForm x:Name="radDataForm" AutoCommit="False" />
-    </Grid>
-</UserControl>
-```
+<snippet id='raddataform-features-auto-commit-block_3-xaml' />
+
 
 Set `AutoCommit` to `False` in XAML when the edit operation must remain pending until the user confirms it.
 
 #### __Example 4: Setting AutoCommit to False in Code__
 
-```C#
-this.radDataForm.AutoCommit = false;
-```
+<snippet id='raddataform-features-auto-commit-block_4-cs' />
 
-```VB.NET
-Me.radDataForm.AutoCommit = False
-```
+<snippet id='raddataform-features-auto-commit-block_4-vb' />
+
 
 Use this mode when you need the user to confirm or cancel the current edit operation explicitly before moving to another item.
         

@@ -42,73 +42,8 @@ The class responsible for customizing the keyboard navigation should be similar 
 
 __Example 1: Creating custom command provider__
 
-```C#
-	public class CustomKeyboardCommandProvider : PropertyGridCommandProvider
-	{
-	    public CustomKeyboardCommandProvider()
-	        : base(null)
-	    {
-	    }
-	    public CustomKeyboardCommandProvider(RadPropertyGrid propertyGrid)
-	        : base(propertyGrid)
-	    {
-	        this.PropertyGrid = propertyGrid;
-	    }
-	    public override List<DelegateCommandWrapper> ProvideCommandsForKey(KeyEventArgs args)
-	    {
-	        List<DelegateCommandWrapper> actionsToExecute = base.ProvideCommandsForKey(args);
-	        if (args.Key == Key.Tab)
-	        {
-	            actionsToExecute.Clear();
-	            actionsToExecute.Add(new PropertyGridDelegateCommandWrapper(RadPropertyGridCommands.MoveToNext, this.PropertyGrid));
-	            if (!this.PropertyGrid.SelectedPropertyDefinition.IsExpanded)
-	            {
-	                actionsToExecute.Add(new PropertyGridDelegateCommandWrapper(RadPropertyGridCommands.ExpandCurrentField, this.PropertyGrid));
-	            }
-	        }
-	        if (args.Key == Key.Tab && Keyboard.Modifiers == ModifierKeys.Shift)
-	        {
-	            actionsToExecute.Clear();
-	            actionsToExecute.Add(new PropertyGridDelegateCommandWrapper(RadPropertyGridCommands.MoveToPrevious, this.PropertyGrid));
-	            if (!this.PropertyGrid.SelectedPropertyDefinition.IsExpanded)
-	            {
-	                actionsToExecute.Add(new PropertyGridDelegateCommandWrapper(RadPropertyGridCommands.ExpandCurrentField, this.PropertyGrid));
-	            }
-	        }
-	        return actionsToExecute;
-	    }
-	}
-```
-```VB.NET
-	Public Class CustomKeyboardCommandProvider
-	    Inherits PropertyGridCommandProvider
-	    Public Sub New()
-	        MyBase.New(Nothing)
-	    End Sub
-	    Public Sub New(ByVal propertyGrid As RadPropertyGrid)
-	        MyBase.New(propertyGrid)
-	        Me.PropertyGrid = propertyGrid
-	    End Sub
-	    Public Overrides Function ProvideCommandsForKey(ByVal args As KeyEventArgs) As List(Of DelegateCommandWrapper)
-	        Dim actionsToExecute As List(Of DelegateCommandWrapper) = MyBase.ProvideCommandsForKey(args)
-	        If args.Key = Key.Tab Then
-	            actionsToExecute.Clear()
-	            actionsToExecute.Add(New PropertyGridDelegateCommandWrapper(RadPropertyGridCommands.MoveToNext, Me.PropertyGrid))
-	            If Not Me.PropertyGrid.SelectedPropertyDefinition.IsExpanded Then
-	                actionsToExecute.Add(New PropertyGridDelegateCommandWrapper(RadPropertyGridCommands.ExpandCurrentField, Me.PropertyGrid))
-	            End If
-	        End If
-	        If args.Key = Key.Tab AndAlso Keyboard.Modifiers = ModifierKeys.Shift Then
-	            actionsToExecute.Clear()
-	            actionsToExecute.Add(New PropertyGridDelegateCommandWrapper(RadPropertyGridCommands.MoveToPrevious, Me.PropertyGrid))
-	            If Not Me.PropertyGrid.SelectedPropertyDefinition.IsExpanded Then
-	                actionsToExecute.Add(New PropertyGridDelegateCommandWrapper(RadPropertyGridCommands.ExpandCurrentField, Me.PropertyGrid))
-	            End If
-	        End If
-	        Return actionsToExecute
-	    End Function
-	End Class
-```
+<snippet id='radpropertygrid-features-keyboard-support-block_1-cs' />
+<snippet id='radpropertygrid-features-keyboard-support-block_1-vb' />
 
 Following up the code-snippet above, a press of Tab/ Shift + Tab keys will result in moving the focus to the property field above/ below and expanding it if possible. However, do not forget to remove the predefined commands for that particular key by calling the Clear() method.
 
@@ -116,22 +51,12 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 __Example 2: Defining the custom command provider in XAML__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="RadPropertyGrid">
-	    <telerik:RadPropertyGrid.CommandProvider>
-	        <my:CustomKeyboardCommandProvider PropertyGrid="{Binding ElementName=PropertyGrid1}" />
-	    </telerik:RadPropertyGrid.CommandProvider>
-	</telerik:RadPropertyGrid>
-```
+<snippet id='radpropertygrid-features-keyboard-support-block_2-xaml' />
 
 __Example 3: Set the custom command provider to RadPropertyGrid__
 
-```C#
-	this.RadPropertyGrid.CommandProvider = new CustomKeyboardCommandProvider(this.RadPropertyGrid);
-```
-```VB.NET
-	Me.RadPropertyGrid.CommandProvider = New CustomKeyboardCommandProvider
-```
+<snippet id='radpropertygrid-features-keyboard-support-block_3-cs' />
+<snippet id='radpropertygrid-features-keyboard-support-block_3-vb' />
 
 ## Text Search Navigation
 
@@ -141,9 +66,7 @@ With the __R2 2020__ release, the __RadPropertyGrid__ allows you to navigate to 
 
 __Example 4: Enabling keyboard search navigation__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True"/>
-```
+<snippet id='radpropertygrid-features-keyboard-support-block_4-xaml' />
 
 ### Text Search Mode
 
@@ -151,9 +74,7 @@ When the user searches for a property by pressing a letter from the keyboard, th
 
 __Example 5: Contains Text Search Mode__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True" TextSearchMode="Contains"/>
-```
+<snippet id='radpropertygrid-features-keyboard-support-block_5-xaml' />
 
 ### Text Searh With Case Sensitive
 
@@ -161,9 +82,7 @@ By default, text search navigation is case-insensitive. You can make your search
 
 __Example 6: Search with Case-Sensitive__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True" TextSearchMode="Contains" IsTextSearchCaseSensitive="True"/>
-```
+<snippet id='radpropertygrid-features-keyboard-support-block_6-xaml' />
 
 ### Text Search Timeout
 
@@ -171,13 +90,7 @@ In a scenario with a larger text for a property name, you may need to increase t
 
 __Example 8: Increase the timeout for resetting the typed text__
 
-```XAML
-	public MainWindow()
-	{
-		InitializeComponent();
-		Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = new TimeSpan(1500);
-	}
-```
+<snippet id='radpropertygrid-features-keyboard-support-block_7-xaml' />
 
 ## Disabling Navigation
 
@@ -185,34 +98,8 @@ As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBu
 
 __Example 10: Disabling navigation__
 
-```C#
-	public class CustomKeyboardCommandProviderWithoutNavigation : PropertyGridCommandProvider
-	{
-	    public CustomKeyboardCommandProviderWithoutNavigation()
-	        : base(null)
-	    {
-	    }
-	    public CustomKeyboardCommandProviderWithoutNavigation(RadPropertyGrid propertyGrid)
-	        : base(propertyGrid)
-	    {
-	        this.PropertyGrid = propertyGrid;
-	        this.EnableBuiltInNavigation = false;
-	    }
-	}
-```
-```VB.NET
-	Public Class CustomKeyboardCommandProviderWithoutNavigation
-	    Inherits PropertyGridCommandProvider
-	    Public Sub New()
-	        MyBase.New(Nothing)
-	    End Sub
-	    Public Sub New(ByVal propertyGrid As RadPropertyGrid)
-	        MyBase.New(propertyGrid)
-	        Me.PropertyGrid = propertyGrid
-	        Me.EnableBuiltInNavigation = False
-	    End Sub
-	End Class
-```
+<snippet id='radpropertygrid-features-keyboard-support-block_8-cs' />
+<snippet id='radpropertygrid-features-keyboard-support-block_8-vb' />
 
 ## See Also
 

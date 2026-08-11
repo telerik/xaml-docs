@@ -19,19 +19,8 @@ Specific for the __ListMessage__ is that it has to be populated with a source co
 * __DateTime creationDate__
 
 __Example 1: Defining an ListMessage__
-```C#
-	   List<string> coffee = new List<string>();
-            coffee.Add("Caffe Latte");
-            coffee.Add("Cafe mocha");
-            coffee.Add("Frappuccino");
-            coffee.Add("Cuban espresso");
-            coffee.Add("Iced Coffee");
-            coffee.Add("Americano");
+<snippet id='radchat-features-messages-listmessage-example_1_defining_an_listmessage-cs' />
 
-            ListMessage listMessageInline = new ListMessage(MessageDisplayPosition.Inline, this.currentAuthor, coffee, SelectionMode.Single);
-
-            this.chat.AddMessage(listMessageInline);
-```
 
 #### __Figure 1: Defining ListMessage__
 ![Defining ListMessage](images/RadChat_Messages_List_01.png)

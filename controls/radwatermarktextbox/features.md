@@ -43,9 +43,7 @@ In scenarios, where you want to show custom content, when an empty string is ent
 In the following example, the user is asked to enter four digits:
 
 __Setting the WatermarkContent property__
-```XAML
-	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox" WatermarkContent="Please Enter Four Digits:" />
-```
+<snippet id='radwatermarktextbox-features-block_1-xaml' />
 
 __RadWatermarkTextBox with watermark text__
 
@@ -54,16 +52,7 @@ __RadWatermarkTextBox with watermark text__
 The WatermarkContent property is of type `object`, which means that you can set a value of any type. For example:
 
 __Defining custom content for the WatermarkContent property__
-```XAML
-	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox1">
-	    <telerik:RadWatermarkTextBox.WatermarkContent>
-	        <StackPanel Orientation="Horizontal">
-	            <Image Source="/Silverlight.Help.RadMaskedTextBox;component/Images/EURFlag.png" />
-	            <TextBlock Margin="3,0,0,0" Text="Please Enter Four Digits" />
-	        </StackPanel>
-	    </telerik:RadWatermarkTextBox.WatermarkContent>
-	</telerik:RadWatermarkTextBox>
-```
+<snippet id='radwatermarktextbox-features-block_2-xaml' />
 
 __RadWatermarkTextBox with custom watermark content__
 
@@ -74,18 +63,7 @@ __RadWatermarkTextBox with custom watermark content__
 Similarly, you can use the `WatermarkTemplate` property for the same sort of scenarios. Note that in this case you should define a new `DataTemplate` for the WatermarkTemplate property.
 
 __Defining the WatermarkTemplate__
-```XAML
-	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox2">
-	    <telerik:RadWatermarkTextBox.WatermarkTemplate>
-	        <DataTemplate>
-	            <StackPanel Orientation="Horizontal">
-	                <Image Source="/Silverlight.Help.RadMaskedTextBox;component/Images/EURFlag.png" />
-	                <TextBlock Margin="3,0,0,0" Text="Please Enter Four Digits" />
-	            </StackPanel>
-	        </DataTemplate>
-	    </telerik:RadWatermarkTextBox.WatermarkTemplate>
-	</telerik:RadWatermarkTextBox>
-```
+<snippet id='radwatermarktextbox-features-block_3-xaml' />
 
 __RadWatermarkTextBox with custom WatermarkTemplate__
 
@@ -96,11 +74,7 @@ __RadWatermarkTextBox with custom WatermarkTemplate__
 The `SelectionOnFocus` property of RadWatermarkTextBox allows you to specify what will happen with the cursor when the control gets focus. In the following example the SelectionOnFocus property is set to `SelectAll`. Once the RadWatermarkTextBox gets focused, it will select its whole text.
 
 __Setting the SelectionOnFocus property__
-```XAML
-	<telerik:RadWatermarkTextBox x:Name="radWatermarkTextBox3" 
-	                             SelectionOnFocus="SelectAll"
-	                             WatermarkContent="Please Enter Four Digits:" />
-```
+<snippet id='radwatermarktextbox-features-block_4-xaml' />
 
 ## WatermarkBehavior
 
@@ -117,18 +91,14 @@ The default value is `HiddenWhenFocused`.
 RadWatermarkTextBox control exposes two properties to set its background when it's in a disabled or in read-only state. The properties are named `DisabledBackground` and `ReadOnlyBackground` respectively.
 
 __Setting the DisabledBackground property__
-```XAML
-        <telerik:RadWatermarkTextBox WatermarkContent="Please Enter Four Digits:" IsEnabled="False" DisabledBackground="DarkGray" />
-```
+<snippet id='radwatermarktextbox-features-block_5-xaml' />
 
 __Disabled RadWatermarkTextBox with and without DisabledBackground__
 
 ![{{ site.framework_name }} RadWatermarkTextBox with and without Disabled Background](images/DisabledBackground.png)
 
 __Setting the ReadOnlyBackground property__
-```XAML
-        <telerik:RadWatermarkTextBox WatermarkContent="Please Enter Four Digits:" IsReadOnly="True" ReadOnlyBackground="DarkGray" />
-```
+<snippet id='radwatermarktextbox-features-block_6-xaml' />
 
 __Read-only RadWatermarkTextBox with and without ReadOnlyBackground__
 
@@ -141,16 +111,7 @@ __Read-only RadWatermarkTextBox with and without ReadOnlyBackground__
 The `RadWatermarkTextBoxCommands` class, exposes the `Clear` command which clears the content of the textbox. 
 
 __Using the Clear Command__
-```XAML
-	<StackPanel>
-        <telerik:RadWatermarkTextBox x:Name="watermarkTextBox" />
-
-        <telerik:RadButton Command="telerik:RadWatermarkTextBoxCommands.Clear"
-                           CommandTarget="{Binding ElementName=watermarkTextBox}">
-            <telerik:RadGlyph Glyph="&#xe11b;"  />
-        </telerik:RadButton>
-    </StackPanel>
-```
+<snippet id='radwatermarktextbox-features-block_7-xaml' />
 
 ## AdditionalContent and AdditionalContentTemplate
 
@@ -159,23 +120,7 @@ The RadWatermarkTextBox control exposes two properties, which allow for displayi
 The following example demonstrates the `AdditionalContent` and `AdditionalContentTemplate` properties along with the `Clear` command.
 
 __Setting the AdditionalContent and AdditionalContentTemplate properties__
-```XAML
-	<Grid>
-	    <Grid.Resources>
-	        <DataTemplate x:Key="ClearWatermarkTextBoxAdditionalContentTemplate">
-	            <telerik:RadButton Focusable="False" 
-	                       IsBackgroundVisible="False" 
-	                       Command="telerik:RadWatermarkTextBoxCommands.Clear" 
-	                       CommandTarget="{Binding ElementName=watermarkTextBox}">
-	                <telerik:RadGlyph Glyph="{Binding}"/>
-	            </telerik:RadButton>
-	        </DataTemplate>
-	    </Grid.Resources>
-	    <telerik:RadWatermarkTextBox Name="watermarkTextBox"
-	                                 AdditionalContent="&#xe11b;"
-	                                 AdditionalContentTemplate="{StaticResource ClearWatermarkTextBoxAdditionalContentTemplate}"/>
-	</Grid>
-```
+<snippet id='radwatermarktextbox-features-block_8-xaml' />
 
 __RadWatermarkTextBox with custom AdditionalContent and AdditionalContentTemplate properties__
 

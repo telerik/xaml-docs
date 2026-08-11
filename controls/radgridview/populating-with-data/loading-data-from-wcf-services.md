@@ -16,9 +16,8 @@ The purpose of this tutorial is to show you how to populate __RadGridView__ with
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadGridView__ declaration in your XAML: 
 
-```XAML
-	<telerik:RadGridView />
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_1-xaml' />
+
 
 ## Plain Method Calls
 
@@ -26,48 +25,24 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 * Switch to the code-behind and create a new instance of your WCF Service client.
 
-```C#
-	WcfServiceClient serviceClient = new WcfServiceClient();
-```
-```VB.NET
-	Private serviceClient As New WcfServiceClient()
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_2-cs' />
+
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_2-vb' />
+
 
 >tip For more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the {% if site.site_name == 'Silverlight' %}[Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html){% endif %} topic.
 
 * The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects.
 
-```C#
-	private void BeginRequest()
-	{
-	    serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>(serviceClient_LoadCustomersCompleted);
-	    serviceClient.LoadCustomersAsync();
-	}
-	
-	private void serviceClient_LoadCustomersCompleted(object sender, LoadCustomersCompletedEventArgs e)
-	{
-	    var customers = e.Result;
-	    this.radGridView.ItemsSource = customers;
-	}
-```
-```VB.NET
-	Private Sub BeginRequest()
-	    AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
-	    serviceClient.LoadCustomersAsync()
-	End Sub
-	
-	Private Sub serviceClient_LoadCustomersCompleted(ByVal sender As Object, ByVal e As LoadCustomersCompletedEventArgs)
-	    Dim customers = e.Result
-	    Me.radGridView.ItemsSource = customers
-	End Sub
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_3-cs' />
 
-```C#
-	this.radGridView.ItemsSource = serviceClient.LoadCustomers();
-```
-```VB.NET
-	Me.radGridView.ItemsSource = serviceClient.LoadCustomers()
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_3-vb' />
+
+
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_4-cs' />
+
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_4-vb' />
+
 
 Run your demo, the result can be seen on the next image:
 
@@ -81,15 +56,10 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 
 
-```C#
-	public class NorthwindDataSource
-	{
-	}
-```
-```VB.NET
-	Public Class NorthwindDataSource
-	End Class
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_5-cs' />
+
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_5-vb' />
+
 
 * Add a reference to your WCF Service 
 
@@ -99,95 +69,46 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 
 
-```C#
-	public class NorthwindDataSource
-	{
-	    private SampleWcfServiceClient serviceClient;
-	    public NorthwindDataSource()
-	    {
-	        serviceClient = new SampleWcfServiceClient();
-	        this.Customers = new ObservableCollection<Customer>();
-	    }
-	    public ObservableCollection<Customer> Customers
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class NorthwindDataSource
-	    Private serviceClient As SampleWcfServiceClient
-	    Public Sub New()
-	        serviceClient = New SampleWcfServiceClient()
-	        Me.Customers = New ObservableCollection(Of Customer)()
-	    End Sub
-	    Public Property Customers() As ObservableCollection(Of Customer)
-	End Class
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_6-cs' />
+
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_6-vb' />
+
 
 >tip For more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html) topic.
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Customers__ from the database: 
 
-```C#
-	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>(serviceClient_LoadCustomersCompleted);
-	serviceClient.LoadCustomersAsync();
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_7-cs' />
 
 
 
-```C#
-	foreach (Customer c in serviceClient.LoadCustomers())
-	{
-	    this.Customers.Add(c);
-	}
-```
-```VB.NET
-	AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
-	serviceClient.LoadCustomersAsync()
-```
 
-```VB.NET
-	For Each c As Customer In serviceClient.LoadCustomers()
-	    Me.Customers.Add(c)
-	Next c
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_8-cs' />
 
-```C#
-	if (e.Error == null && e.Result != null)
-	{
-	    foreach (Customer c in e.Result)
-	    {
-	        this.Customers.Add(c);
-	    }
-	}
-```
-```VB.NET
-	If e.Error Is Nothing AndAlso e.Result IsNot Nothing Then
-	    For Each c As Customer In e.Result
-	        Me.Customers.Add(c)
-	    Next c
-	End If
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_8-vb' />
+
+
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_9-vb' />
+
+
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_10-cs' />
+
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_10-vb' />
+
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
 
 
-```XAML
-	<UserControl.Resources>
-	    <local:NorthwindDataSource x:Key="DataSource"/>
-	</UserControl.Resources>
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_11-xaml' />
+
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
 
 
-```XAML
-	<telerik:RadGridView ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
-```
+<snippet id='radgridview-populating-with-data-loading-data-from-wcf-services-block_12-xaml' />
+
 
 Run your demo, the result can be seen on the next picture: 
 

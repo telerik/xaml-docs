@@ -38,113 +38,34 @@ The snapshot below shows the content of the DiagramResources.de.resx file. The r
 The last step is to instantiate the `LocalizationManager` class and set its `ResourceManager` to the resources that have been just created (you can do this in the default constructor of the `Application` class).		
 
 
-```C#
-    LocalizationManager.Manager = new LocalizationManager()
-    {
-        ResourceManager = DiagramResources.ResourceManager
-    };
-```
-```VB.NET
-    LocalizationManager.Manager = New LocalizationManager()
-    LocalizationManager.Manager.ResourceManager = DiagramResources.ResourceManager  
-```
+<snippet id='raddiagram-localization-block_1-cs' />
+
+<snippet id='raddiagram-localization-block_1-vb' />
+
 
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and German languages, you can store the localized strings in `Resources.resx` and `Resources.de.resx` files. For the Resources.resx file you can set `ResXFileCodeGenerator` to `Internal` or `Public` and for the others - to `No code generation`. Then, open the project file in a text-mode and insert the code below into the <PropertyGroup> section. In this way you notify the framework about the supported cultures.
 
 
-```XAML
-	<SupportedCultures>en;de</SupportedCultures>			
-```
+<snippet id='raddiagram-localization-block_2-xaml' />
+
 
 ## Localization Using Custom Localization Manager
 
 The other way to localize your `RadDiagram` is to create a class that derives from the `LocalizationManager` object and to override its method `GetStringOverride()`. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below: 
 		
 
-```C#
-    public class CustomLocalizationManager : LocalizationManager
-    {
-        public override string GetStringOverride(string key)
-        {
-            switch (key)
-            {
-                case "Diagram_Rotate":
-                    return "Rotate";
-                case "Auto_fit":
-                    return "Auto Fit";
-                //SettingsPane parts localization strings
-                case "SettingsPane_SizeTab":
-                    return "Size";
-                case "SettingsPane_HomeTab":
-                    return "Home";
-                case "SettingsPane_Copy":
-                    return "Copy";
-                case "SettingsPane_Cut":
-                    return "Cut";
-                case "SettingsPane_Paste":
-                    return "Paste";
-                case "SettingsPane_Delete":
-                    return "Delete";
-            }
-            return base.GetStringOverride(key);
-        }
-    }
-```
-```VB.NET	
-	Public Class CustomLocalizationManager
-		Inherits LocalizationManager
-		Public Overrides Function GetStringOverride(key As String) As String
-			Select Case key
-				Case "Diagram_Rotate"
-					Return "Rotate"
-				Case "Auto_fit"
-					Return "Auto Fit"
-				'SettingsPane parts localization strings
-				Case "SettingsPane_SizeTab"
-					Return "Size"
-				Case "SettingsPane_HomeTab"
-					Return "Home"
-				Case "SettingsPane_Copy"
-					Return "Copy"
-				Case "SettingsPane_Cut"
-					Return "Cut"
-				Case "SettingsPane_Paste"
-					Return "Paste"
-				Case "SettingsPane_Delete"
-					Return "Delete"
-			End Select
-			Return MyBase.GetStringOverride(key)
-		End Function
-	End Class	
-```
+<snippet id='raddiagram-localization-block_3-cs' />
+
+<snippet id='raddiagram-localization-block_3-vb' />
+
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 		
 
-```C#	
-    public override string GetStringOverride(string key)
-    {
-        switch (key)
-        {
-            //----------------------
-            case "Diagram_Rotate":
-                return DiagramResources.Diagram_Rotate;
-            //----------------------
-        }
-        return base.GetStringOverride(key);
-    }	    
-```
-```VB.NET	
-	Public Overrides Function GetStringOverride(key As String) As String
-		Select Case key
-			'----------------------'
-			Case "Diagram_Rotate"
-				Return DiagramResources.Diagram_Rotate
-			'----------------------'
-		End Select
-		Return MyBase.GetStringOverride(key)
-	End Function		
-```
+<snippet id='raddiagram-localization-block_4-cs' />
+
+<snippet id='raddiagram-localization-block_4-vb' />
+
 
 ## Diagram Localization Strings
 

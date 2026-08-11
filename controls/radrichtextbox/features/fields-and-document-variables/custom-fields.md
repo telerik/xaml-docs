@@ -30,25 +30,12 @@ This topic will list the steps for creating such a custom field.
 
 __Example 1: Inherit from MergeField or CodeBasedField__
 
-```C#
-
-	    public class CustomField : CodeBasedField
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_1-cs' />
 
 
 
 __Example 2: Give a FieldTypeName to instances of your field__
-```C#
-
-    private static readonly string FieldType = "CUSTOMFIELD";
-    public override string FieldTypeName
-    {
-        get
-        {
-            return CustomField.FieldType;
-        }
-    }
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_2-cs' />
 
 The field type is shown when the field is in code mode, just after the opening curly bracket. If you toggle the field to **Code** mode and modify this first word, the type of the field will also change. That is why it is important to give a meaningful name to the field.
 
@@ -56,22 +43,13 @@ Register your custom field type in the factory that RadDocument uses. To ensure 
 
 __Example 3: Register the custom field__
 	
-```C#
-
-	CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, () => new CustomField());
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_3-cs' />
 	
 The function passed as a second parameter essentially tells the document how it could create a new instance of the field. This is required because fields have to be created internally when you copy/paste or even when you toggle field modes.
 
 __Example 3: Override the CreateInstance() method to return a new instance of your custom field__
 	
-```C#
-
-    public override Field CreateInstance()
-    {
-        return new CustomField();
-    }
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_4-cs' />
 
 
 If you have inherited from **CodeBasedField** or you would like to customize the way the field appears in the document in **ResultMode**, you can override the **GetResultFragment()** method. In short, it will return a **DocumentFragment** with the content that should be shown when the field is updated and its mode is changed to **Result**.
@@ -85,93 +63,40 @@ If you would like to add some properties to this field, similar to the PropertyP
 
 __Example 4: Create a readonly FieldProperty__
 
-```C#
-    private readonly FieldProperty myProperty;
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_5-cs' />
 
 __Example 5: Add a public CLR property__ 
 	
-```C#
-
-    [XamlSerializable]
-    public string MyProperty
-    {
-        get
-        {
-            return this.myProperty.GetValue();
-        }
-        set
-        {
-            if (!this.myProperty.IsNestedField && this.myProperty.GetValue() == value)
-            {
-                return;
-            }
-
-            this.myProperty.SetValue(value);
-            this.InvalidateCode();
-        }
-    }
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_6-cs' />
 
 Properties of type string can be set and retrieved from the FieldProperty directly. No other types are accepted, as it would not be possible to convert them correctly to text for the purpose of field evaluation when inserted in the document. Therefore, if you would like to have non-string properties, you would have to make the conversion to/from string yourself.
 
 The XamlSerializable attribute ensures that this property will be exported and imported to/from XAML when XamlFormatProvider is used. The other part of the code ensures that the field will be reset only if the new value is different and that the code will be invalidated, so as to be correctly updated on the next pass.
 
 __Example 6: Declare a static FieldPropertyDefinition wired to your property__
-```C#
-
-    public static readonly FieldPropertyDefinition MyPropertyProperty = new FieldPropertyDefinition("MyProperty");
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_7-cs' />
 
 
 __Example 7: Make sure to initialize the FieldProperty in the constructor of your field__
 
-```C#
-
-    public CustomField()
-    {
-        this.myProperty = new FieldProperty(this, CustomField.MyPropertyProperty);
-    }
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_8-cs' />
 
 
 __Example 8: Ensure that your custom property is copied along with the other field properties__
 
-```C#
-
-    protected override void CopyPropertiesFromCodeExpression(FieldCodeExpression fieldCodeExpression)
-    {
-        base.CopyPropertiesFromCodeExpression(fieldCodeExpression);
-        this.myProperty.SetValue(fieldCodeExpression.FieldArgumentNode);
-    }
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_9-cs' />
 
 This method is used when a field is created from field fragment. This happens when you update a field and is what enables changing the property path of a merge field by typing in the editor or even changing a PageField to a DateField. As the type of the new field is inferred from the text in the document, it is required that the field be created anew and the respective properties must be copied as well.
 
 __Example 9: Add the custom property to the code fragment of the field__
 	
-```C#
-
-    protected override void BuildCodeOverride()
-    {
-        base.BuildCodeOverride();
-        this.CodeBuilder.SetFieldArgument(this.myProperty);
-    }
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_10-cs' />
 
 This method is invoked when the **CodeFragment** of the field is requested. In it, the field arguments and switches must be added, so that they are properly included in the field.
 	
 __Example 10: Ensure the custom property is copied__
 	
-```C#
-
-    public override void CopyPropertiesFrom(Field fromField)
-    {
-        base.CopyPropertiesFrom(fromField);
-        CustomField customField = (CustomField)fromField;
-        this.myProperty.CopyPropertiesFrom(customField.myProperty);
-    }
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_11-cs' />
 
 As field ranges are copyable, this method must be overridden in order to ensure that the added properties will also be copied.
 
@@ -179,13 +104,7 @@ If you like, you can also customize the fragment that is returned when the **Res
 
 __Example 11: Override GetResultFragment()__
 	
-```C#
-
-    protected override DocumentFragment GetResultFragment()
-    {
-        return DocumentFragment.CreateFromInline(new Span(this.MyProperty));
-    }
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_12-cs' />
 
 
 ## Integrating with UpdateAllFields Operation
@@ -196,10 +115,7 @@ To change the default update order and behavior, additional update information c
 
 __Example 12: Control the update order__
 
-```C#
-
-	FieldsUpdateManager.RegisterFieldUpdateInfo(typeof(CustomField), new FieldTypeUpdateInfo() { Priority = -1000 });
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-custom-fields-block_13-cs' />
 
 The properties influencing the update operation are grouped in __FieldTypeUpdateInfo__ class:
 

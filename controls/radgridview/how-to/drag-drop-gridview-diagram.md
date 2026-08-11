@@ -21,107 +21,21 @@ First we will specify the following ViewModels which are going to be used to pop
 * __MainViewModel:__ The main ViewModel class of the application.
 	
 __Example 1: Creating ViewModels__
-```C#	
-	public class Employee
-	{
-		public Employee(string firstName, string lastName)
-		{
-			this.FirstName = firstName;
-			this.LastName = lastName;
-		}
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
-	}		
-	public class EmployeeGraphSource : ObservableGraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>>
-	{
-	}
-	public class MainViewModel
-	{
-		public EmployeeGraphSource EmployeeGraphSource { get; set; }
-		public ObservableCollection<Employee> EmployeeData { get; set; }
+<snippet id='radgridview-how-to-drag-drop-gridview-diagram-example_1_creating_viewmodels-cs' />
 
-		public MainViewModel()
-		{
-			EmployeeData = GetEmployee();
-			EmployeeGraphSource = new EmployeeGraphSource();
-		}
-
-		private ObservableCollection<Employee> GetEmployee()
-		{
-			var data = new ObservableCollection<Employee>();
-			data.Add(new Employee("Nancy", "Davolio"));
-			data.Add(new Employee("Andrew", "Fuller"));
-			data.Add(new Employee("Janet", "Leverling"));
-			data.Add(new Employee("Margaret", "Peacock"));
-			data.Add(new Employee("Steven", "Buchanan"));
-			data.Add(new Employee("Michael", "Suyama"));
-			data.Add(new Employee("Robert", "King"));
-			data.Add(new Employee("Laura", "Callahan"));
-			data.Add(new Employee("Anne", "Dodsworth"));
-			return data;
-		}
-	}
-```
 
 Next, we can go ahead and define the __RadDiagram__ and __RadGridView__ controls in our view:
 
 __Example 2: Defining RadDiagram and RadGridView in XAML__
 
-```XAML
-	<Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+<snippet id='radgridview-how-to-drag-drop-gridview-diagram-example_2_defining_raddiagram_and_radgridview_in_xaml-xaml' />
 
-        <telerik:RadGridView x:Name="gridView" Margin="5" Grid.Column="0" 
-                             CanUserReorderColumns="False"                          
-                             ItemsSource="{Binding EmployeeData}"                              
-                             VerticalAlignment="Top">
-        </telerik:RadGridView>
-
-        <telerik:RadDiagram Grid.Column="1" GraphSource="{Binding EmployeeGraphSource}" 
-                            x:Name="xDiagram">
-            <telerik:RadDiagram.ShapeStyle>
-                <Style TargetType="telerik:RadDiagramShape" BasedOn="{StaticResource RadDiagramShapeStyle}">
-                    <Setter Property="Width" Value="120"/>
-                    <Setter Property="Height" Value="30"/>
-                    <Setter Property="ContentTemplate">
-                        <Setter.Value>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Content}"/>
-                            </DataTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Setter Property="Position" Value="{Binding Position,Mode=TwoWay}"/>
-                </Style>
-            </telerik:RadDiagram.ShapeStyle>
-            <telerik:RadDiagram.ContainerShapeStyle>
-                <Style TargetType="telerik:RadDiagramContainerShape" BasedOn="{StaticResource RadDiagramContainerShapeStyle}">
-                    <Setter Property="ContentTemplate">
-                        <Setter.Value>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Content}"/>
-                            </DataTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Setter Property="Position" Value="{Binding Position}"/>
-                </Style>
-            </telerik:RadDiagram.ContainerShapeStyle>
-        </telerik:RadDiagram>
-    </Grid>
-```
 
 And finally, we need to set the DataContext of the MainWindow:
 
 __Example 3: Setting DataContext__
-```C#	
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.DataContext = new MainViewModel();
-	}
-```	
+<snippet id='radgridview-how-to-drag-drop-gridview-diagram-example_3_setting_datacontext-cs' />
+
 
 If you run the application now, you should get a structure like in **Figure 1**:
 
@@ -133,97 +47,28 @@ You can observe that you still can't drag-drop a row from the RadGridView to the
 The next step is to make sure that the GridViewRows are draggable. We can do so by applying an implicit style that sets the __DragDropManager.AllowDrag__ attached property to __True__ on every __GridViewRow__.
 
 __Example 4: Setting AllowDrag attached property__
-```XAML	
-	<telerik:RadGridView.RowStyle>
-		<Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
-			<Setter Property="telerik:DragDropManager.AllowDrag" Value="True" />
-		</Style>
-	</telerik:RadGridView.RowStyle>	
-```
+<snippet id='radgridview-how-to-drag-drop-gridview-diagram-example_4_setting_allowdrag_attached_property-xaml' />
+
 	
 To create a visual clue that the user has started dragging a row, we can create a custom attached property. In the property changed callback we can subscribe to the __DragInitialize__ event of the __RadGridView__ using __DragDropManager__. In the event handler we can set the __DragVisual__ property from the event arguments.
 
 __Example 5: Creating custom attached property__
-```C#	
-	public class DragDropBehavior
-    {
-        public static readonly DependencyProperty IsEnabledProperty =
-            DependencyProperty.RegisterAttached(
-                "IsEnabled", 
-                typeof(bool),
-                typeof(DragDropBehavior), 
-                new PropertyMetadata(new PropertyChangedCallback(OnIsEnabledPropertyChanged)));
+<snippet id='radgridview-how-to-drag-drop-gridview-diagram-example_5_creating_custom_attached_property-cs' />
 
-        public static bool GetIsEnabled(DependencyObject obj)
-        {
-            return (bool)obj.GetValue(IsEnabledProperty);
-        }
-
-        public static void SetIsEnabled(DependencyObject obj, bool value)
-        {
-            obj.SetValue(IsEnabledProperty, value);
-        }    
-
-        private static void OnIsEnabledPropertyChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
-        {
-            var gridView = dependencyObject as RadGridView;
-            if (gridView != null)
-            {
-                DragDropManager.AddDragInitializeHandler(gridView, OnGridViewRowDragInitialize);
-            }
-        }
-
-       private static void OnGridViewRowDragInitialize(object sender, DragInitializeEventArgs args)
-		{
-			args.AllowedEffects = DragDropEffects.All;
-			args.DragVisualOffset = new Point(args.RelativeStartPoint.X, args.RelativeStartPoint.Y);
-			var employee = (args.OriginalSource as FrameworkElement).DataContext as Employee;
-			args.DragVisual = new TextBlock() { Margin = new Thickness(5), Background = Brushes.Bisque, Text = employee.FirstName + " " + employee.LastName };
-		}
-    }
-```
 
 __Example 6: Setting the attached property to the RadGridView__
-```C#	
-	<telerik:RadGridView x:Name="gridView" Margin="5" Grid.Column="0" 
-						 CanUserReorderColumns="False"                          
-						 ItemsSource="{Binding EmployeeData}"                              
-						 VerticalAlignment="Top"
-						 local:DragDropBehavior.IsEnabled="True">
-		<telerik:RadGridView.RowStyle>
-			<Style TargetType="telerik:GridViewRow">
-				<Setter Property="telerik:DragDropManager.AllowDrag" Value="True" />
-			</Style>
-		</telerik:RadGridView.RowStyle>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-how-to-drag-drop-gridview-diagram-example_6_setting_the_attached_property_to_the_radgridview-cs' />
+
 
 The final step which we need to do is to subscribe to the **PreviewDrop** event of the RadDiagram. In the event handler we can get the current dragged row using the GetData() method of the Data property from the event arguments. Then you can add the item to the GraphSource of the RadDiagram.
 
 __Example 7: Subcribe to the PreviewDrop event__
-```C#	
-	<telerik:RadDiagram Grid.Column="1" GraphSource="{Binding EmployeeGraphSource}"                             
-                        x:Name="xDiagram"
-						PreviewDrop="RadDiagram_PreviewDrop" > 
-	. . . .
-	</telerik:RadDiagram>
-```
+<snippet id='radgridview-how-to-drag-drop-gridview-diagram-example_7_subcribe_to_the_previewdrop_event-cs' />
+
 
 __Example 8: PreviewDrop event handler__
-```C#	
-	private void RadDiagram_PreviewDrop(object sender, System.Windows.DragEventArgs e)
-	{
-		var droppedRow = e.Data.GetData(typeof(GridViewRow));
-		var employee = (droppedRow as GridViewRow).DataContext as Employee;
+<snippet id='radgridview-how-to-drag-drop-gridview-diagram-example_8_previewdrop_event_handler-cs' />
 
-		NodeViewModelBase node = new NodeViewModelBase();
-		node.Position = e.GetPosition(this.xDiagram);
-		node.Content = employee.FirstName + " " + employee.LastName;
-
-		(this.DataContext as MainViewModel).EmployeeGraphSource.AddNode(node);
-		(this.DataContext as MainViewModel).EmployeeData.Remove(employee);
-	}
-```
 
 >For a more complex example, you can check out the [DragDropToDiagram](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropToDiagram) example in the RadGridView SDK examples section.
 

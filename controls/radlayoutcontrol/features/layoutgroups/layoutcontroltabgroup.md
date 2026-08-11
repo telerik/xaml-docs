@@ -13,18 +13,8 @@ position: 2
 __LayoutControlTabGroup__ is one of the few layout groups supported by the __RadLayoutControl__. __LayoutControlTabGroup__ behaves a little differently than the other types of groups. Basically, it its children are displayed in a __tab control__ and each tab item is represented by a __LayoutControlTabGroupItem__ element.
 
 __Example 1: Setting up LayoutControlTabGroup__
-```XAML
-	<telerik:RadLayoutControl>	
-		<telerik:LayoutControlTabGroup>
-			<telerik:LayoutControlTabGroupItem Header="Tab 1">
-				<Button Content="Item 1" />                    
-			</telerik:LayoutControlTabGroupItem>
-			<telerik:LayoutControlTabGroupItem Header="Tab 2">
-				<Button Content="Item 2" />
-			</telerik:LayoutControlTabGroupItem>                
-		</telerik:LayoutControlTabGroup>	
-	</telerik:RadLayoutControl>
-```
+<snippet id='radlayoutcontrol-features-layoutgroups-layoutcontroltabgroup-example_1_setting_up_layoutcontroltabgroup-xaml' />
+
 	
 #### __Figure 1: LayoutControlTabGroup__
 ![{{ site.framework_name }} RadLayoutControl LayoutControlTabGroup](images/layoutcontrol-features-layoutcontroltabgroup-01.png)
@@ -34,22 +24,8 @@ __Example 1: Setting up LayoutControlTabGroup__
 The header of the tab group item can be set through its __Header__ property. The property is of type __Object__ which allows you to place any visual (or not) element in it.
 
 __Example 2:  Setting up the header of LayoutControlTabGroupItem__
-```XAML
-	<telerik:RadLayoutControl>	
-		<telerik:LayoutControlTabGroup>
-			<telerik:LayoutControlTabGroupItem>
-				<telerik:LayoutControlTabGroupItem.Header>
-					<StackPanel Orientation="Horizontal">
-						<Rectangle Width="10" Height="10" Fill="Orange" Margin="0 0 5 0" />
-						<TextBlock Text="Tab 1" FontWeight="Bold" />
-					</StackPanel>
-				</telerik:LayoutControlTabGroupItem.Header>
-				<Button Content="Item 1" />                    
-			</telerik:LayoutControlTabGroupItem>
-			<telerik:LayoutControlTabGroupItem Header="Tab 2" />
-		</telerik:LayoutControlTabGroup>	
-	</telerik:RadLayoutControl>
-```	
+<snippet id='radlayoutcontrol-features-layoutgroups-layoutcontroltabgroup-example_2_setting_up_the_header_of_layoutcontroltabgroupitem-xaml' />
+
 
 #### __Figure 2: LayoutControlExpanderGroup with UIElements in its header__
 ![{{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup with UIElements in its header](images/layoutcontrol-features-layoutcontroltabgroup-02.png)
@@ -61,18 +37,8 @@ __Example 2:  Setting up the header of LayoutControlTabGroupItem__
 The tab group allows you to select its child tab items. The selection can be change through the __SelectedItem__ property of __LayoutControlTabGroup__ or the __IsSelected__ property __LayoutControlTabGroupItem__.
 
 __Example 3: Setting up the selection in LayoutControlTabGroup__
-```XAML
-	<telerik:RadLayoutControl>	
-		<telerik:LayoutControlTabGroup>
-			<telerik:LayoutControlTabGroupItem Header="Tab 1">
-				<Button Content="Item 1" />                    
-			</telerik:LayoutControlTabGroupItem>
-			<telerik:LayoutControlTabGroupItem Header="Tab 2" IsSelected="True">
-				<Button Content="Item 2" />
-			</telerik:LayoutControlTabGroupItem>                
-		</telerik:LayoutControlTabGroup>	
-	</telerik:RadLayoutControl>       
-```
+<snippet id='radlayoutcontrol-features-layoutgroups-layoutcontroltabgroup-example_3_setting_up_the_selection_in_layoutcontroltabgroup-xaml' />
+
 
 #### __Figure 3: LayoutControlTabGroupItem selection__
 ![{{ site.framework_name }} RadLayoutControl LayoutControlTabGroupItem selection](images/layoutcontrol-features-layoutcontroltabgroup-03.png)

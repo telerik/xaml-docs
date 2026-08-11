@@ -19,57 +19,8 @@ This relates the UI in the following way – there is simply no separate Style f
 For the purpose of this tutorial, we will create a sample chart with LineSeries. Then to customize the horizontal and vertical axes we will create two implicit styles which target the axes correspondingly. __Example 1__ demonstrates the full XAML code.
 
 __Example 1: Customizing axes by using implicit styles__	
-```XAML
-	<Window.Resources>
-		<Style TargetType="telerik:CategoricalAxis" BasedOn="{StaticResource AxisStyle}">         
-			<Setter Property="FontSize" Value="16" />
-			<Setter Property="LabelStyle">
-				<Setter.Value>
-					<Style TargetType="TextBlock">
-						<Setter Property="Foreground" Value="Red"/>
-					</Style>
-				</Setter.Value>
-			</Setter>
-		</Style>        
-		<Style TargetType="telerik:LinearAxis" BasedOn="{StaticResource AxisStyle}">
-			<Setter Property="FontSize" Value="18" />
-			<Setter Property="LineStroke" Value="Blue" />
-			<Setter Property="LineDashArray" Value="8 2" />
-			<Setter Property="LabelTemplate">
-				<Setter.Value>
-					<DataTemplate>
-						<Border BorderBrush="Blue" BorderThickness="1">
-							<TextBlock Text="{Binding }"/>
-						</Border>
-					</DataTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	</Window.Resources>
-	<Grid>
-		<telerik:RadCartesianChart>
-			<telerik:RadCartesianChart.HorizontalAxis>
-				<telerik:CategoricalAxis/>
-			</telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:RadCartesianChart.VerticalAxis>
-				<telerik:LinearAxis />
-			</telerik:RadCartesianChart.VerticalAxis>
-			<telerik:RadCartesianChart.Series>
-				<telerik:LineSeries>
-					<telerik:LineSeries.DataPoints>
-						<telerik:CategoricalDataPoint Category="January" Value="2" />
-						<telerik:CategoricalDataPoint Category="February" Value="5" />
-						<telerik:CategoricalDataPoint Category="March" Value="3" />
-						<telerik:CategoricalDataPoint Category="April" Value="10" />
-						<telerik:CategoricalDataPoint Category="May" Value="9" />
-						<telerik:CategoricalDataPoint Category="June" Value="7" />
-						<telerik:CategoricalDataPoint Category="July" Value="1" />
-					</telerik:LineSeries.DataPoints>
-				</telerik:LineSeries>
-			</telerik:RadCartesianChart.Series>
-		</telerik:RadCartesianChart>
-	</Grid>
-```
+<snippet id='radchartview-styles-and-templates-customizing-axes-example_1_customizing_axes_by_using_implicit_styles-xaml' />
+
 
 #### __Figure 1: Customizing axes by using implicit styles__
 ![Customizing axes by using implicit styles](images/radchartview-styles-and-templates-customizing-axes-0.png)

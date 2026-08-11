@@ -38,44 +38,15 @@ Each aggregate function has a caption and a result, which are displayed next to 
 
 __Example 1: Defining a GroupDescriptor with AggregateFunction__
 
-```XAML
+<snippet id='radgridview-grouping-aggregates-example_1_defining_a_groupdescriptor_with_aggregatefunction-xaml' />
 
-	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
-	    <telerik:RadGridView.GroupDescriptors>
-	        <telerik:GroupDescriptor Member="Country"
-	                                     SortDirection="Ascending">
-	            <telerik:GroupDescriptor.AggregateFunctions>
-	                <telerik:CountFunction Caption="Entries count: " />
-	            </telerik:GroupDescriptor.AggregateFunctions>
-	        </telerik:GroupDescriptor>
-	    </telerik:RadGridView.GroupDescriptors>
-	    ...
-	</telerik:RadGridView>
-```
 
 __Example 2: Defining a GroupDescriptor with AggregateFunction programmatically__
 
-```C#
+<snippet id='radgridview-grouping-aggregates-example_2_defining_a_groupdescriptor_with_aggregatefunction_programmatically-cs' />
 
-	CountFunction f = new CountFunction();
-	f.Caption = "Entries Count: ";
-	GroupDescriptor countryDescriptor = new GroupDescriptor();
-	countryDescriptor.Member = "Country";
-	countryDescriptor.SortDirection = ListSortDirection.Ascending;
-	countryDescriptor.AggregateFunctions.Add( f );
-	this.radGridView.GroupDescriptors.Add( countryDescriptor );
-```
-```VB.NET
+<snippet id='radgridview-grouping-aggregates-example_2_defining_a_groupdescriptor_with_aggregatefunction_programmatically-vb' />
 
-	Dim f As New CountFunction()
-	f.Caption = "Entries Count: "
-	Dim countryDescriptor As New GroupDescriptor()
-	countryDescriptor.Member = "Country"
-	countryDescriptor.SortDirection = ListSortDirection.Ascending
-	countryDescriptor.AggregateFunctions.Add(f)
-	Me.radGridView.GroupDescriptors.Add(countryDescriptor)
-```
 
 #### Figure 1: RadGridView With Group Aggregates
 
@@ -85,51 +56,15 @@ You can add multiple functions to the __AggregateFunctions__ collection and they
 
 __Example 3: Defining a GroupDescriptor with multiple AggregateFunctions__
 
-```XAML
+<snippet id='radgridview-grouping-aggregates-example_3_defining_a_groupdescriptor_with_multiple_aggregatefunctions-xaml' />
 
-	<telerik:RadGridView x:Name="radGridView"
-	                         AutoGenerateColumns="False">
-	    <telerik:RadGridView.GroupDescriptors>
-	        <telerik:GroupDescriptor Member="Country"
-	                                     SortDirection="Ascending">
-	            <telerik:GroupDescriptor.AggregateFunctions>
-	                <telerik:CountFunction Caption="Entries count: " />
-	                <telerik:FirstFunction Caption="First entry: " />            
-	            </telerik:GroupDescriptor.AggregateFunctions>
-	        </telerik:GroupDescriptor>
-	    </telerik:RadGridView.GroupDescriptors>
-	    ...
-	</telerik:RadGridView>
-```
 
 __Example 4: Defining a GroupDescriptor with multiple AggregateFunctions programmatically__
 
-```C#
+<snippet id='radgridview-grouping-aggregates-example_4_defining_a_groupdescriptor_with_multiple_aggregatefunctions_programmatically-cs' />
 
-	CountFunction f = new CountFunction();
-	f.Caption = "Entries Count: ";
-	FirstFunction f1 = new FirstFunction();
-	f.Caption = "FirstEntry: ";
-	GroupDescriptor countryDescriptor = new GroupDescriptor();
-	countryDescriptor.Member = "Country";
-	countryDescriptor.SortDirection = ListSortDirection.Ascending;
-	countryDescriptor.AggregateFunctions.Add( f );
-	countryDescriptor.AggregateFunctions.Add( f1 );
-	this.radGridView.GroupDescriptors.Add( countryDescriptor );
-```
-```VB.NET
+<snippet id='radgridview-grouping-aggregates-example_4_defining_a_groupdescriptor_with_multiple_aggregatefunctions_programmatically-vb' />
 
-	Dim f As New CountFunction()
-	f.Caption = "Entries Count: "
-	Dim f1 As New FirstFunction()
-	f.Caption = "FirstEntry: "
-	Dim countryDescriptor As New GroupDescriptor()
-	countryDescriptor.Member = "Country"
-	countryDescriptor.SortDirection = ListSortDirection.Ascending
-	countryDescriptor.AggregateFunctions.Add(f)
-	countryDescriptor.AggregateFunctions.Add(f1)
-	Me.radGridView.GroupDescriptors.Add(countryDescriptor)
-```
 
 #### __Figure 2: RadGridView with GroupDescriptor and AggregateFunctions defined__
 
@@ -143,28 +78,8 @@ You can also add [aggregate functions on a column level]({%slug gridview-columns
 
 __Example 5: Aggregate functions on a column level__
 
-```XAML
+<snippet id='radgridview-grouping-aggregates-example_5_aggregate_functions_on_a_column_level-xaml' />
 
-	<telerik:RadGridView Name="playersGrid"
-							ItemsSource="{Binding Players}" 
-							AutoGenerateColumns="False"
-							GroupRenderMode="Flat"
-                            ShowGroupFooters="True">
-		<telerik:RadGridView.GroupDescriptors>
-			<telerik:GroupDescriptor Member="Country" SortDirection="Ascending" />
-		</telerik:RadGridView.GroupDescriptors>
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Number}"/>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Position}"/>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Country}">
-				<telerik:GridViewDataColumn.AggregateFunctions>
-					<telerik:CountFunction Caption="Entries count: " />
-				</telerik:GridViewDataColumn.AggregateFunctions>
-			</telerik:GridViewDataColumn>
-		</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
 
 In this case, you can show the aggregate results for a particular group in a special row just below the group header row. This row is divided into cells which are aligned with the respective columns and show the aggregate results for the particular column.
 
@@ -172,11 +87,8 @@ This feature can be controlled by applying a __Style__ targeting the **GroupHead
 
 __Example 6: Settng the ShowGroupHeaderColumnAggregates property of the GroupHeaderRow__
 
-```XAML
-	<Style TargetType="telerik:GroupHeaderRow">
-		<Setter Property="ShowGroupHeaderColumnAggregates" Value="True" />
-	</Style>
-```
+<snippet id='radgridview-grouping-aggregates-example_6_settng_the_showgroupheadercolumnaggregates_property_of_the_groupheaderrow-xaml' />
+
 
 #### __Figure 3: Aggregates aligned with columns__
 
@@ -188,12 +100,8 @@ When using this feature, it is likely that you don't need the default group row 
         
 __Example 7: Setting the ShowHeaderAggregates property of GroupHeaderRow to False__
 
-```XAML
-	<Style TargetType="telerik:GroupHeaderRow">
-		<Setter Property="ShowGroupHeaderColumnAggregates" Value="True" />
-		<Setter Property="ShowHeaderAggregates" Value="False" />  
-	</Style>
-```
+<snippet id='radgridview-grouping-aggregates-example_7_setting_the_showheaderaggregates_property_of_groupheaderrow_to_false-xaml' />
+
 
 #### __Figure 4: RadGridView with ShowHeaderAggregates set to False__
 ![Telerik UI for {{ site.framework_name }} RadGridView group header with column-aligned aggregates and hidden inline header aggregates](images/RadGridView_GroupAggregates_4.png)

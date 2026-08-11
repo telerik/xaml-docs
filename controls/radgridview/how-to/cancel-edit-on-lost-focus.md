@@ -24,14 +24,8 @@ Let's say, for example, that you want to have two buttons outside of your RadGri
 
 __Example 1: Buttons Bound to RadGridView Commands__
 
-```XAML
-    <Button Content="Confirm" 
-            Command="telerik:RadGridViewCommands.CommitEdit"
-            CommandTarget="{Binding ElementName=GridView}"/>
-	<Button Content="Cancel" 
-            Command="telerik:RadGridViewCommands.CancelRowEdit"
-            CommandTarget="{Binding ElementName=GridView}"/>
-```
+<snippet id='radgridview-how-to-cancel-edit-on-lost-focus-example_1_buttons_bound_to_radgridview_commands-xaml' />
+
 
 With the default behavior, once you edit a cell and click the "Cancel" button, the changes will be actually committed, because RadGridView loses focus prior to the command being executed.
 
@@ -42,9 +36,8 @@ To overcome this, you can simply set the ActionOnLostFocus property to **None**.
 
 __Example 2: Set ActionOnLostFocus to None__
 
-```XAML
-    <telerik:RadGridView ActionOnLostFocus="None" ...>
-```
+<snippet id='radgridview-how-to-cancel-edit-on-lost-focus-example_2_set_actiononlostfocus_to_none-xaml' />
+
 
 This way the "Cancel" button will work as expected as illustrated on **Figure 2**.
 

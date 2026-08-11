@@ -19,9 +19,8 @@ The ExplorerControl element can be used as a stand-alone control, thus allowing 
 >tip The explorer control can be found in the Telerik.Windows.Controls.FileDialogs namespace, so in order to use it in XAML you can define the following namespace: `xmlns:fileDialogs="clr-namespace:Telerik.Windows.Controls.FileDialogs;assembly=Telerik.Windows.Controls.FileDialogs"`.
 
 __Define explorer control__
-```XAML
-	<fileDialogs:ExplorerControl CurrentDirectoryPath="C:\Program Files"  />
-```
+<snippet id='radfiledialogs-dialog-controls-explorercontrol-define_explorer_control-xaml' />
+
 
 __ExplorerControl__ 
 
@@ -78,9 +77,8 @@ The ExplorerControl provides you with the option display directories to the left
 The control can work in two modes - the first one allows you to select folders and files. The second one allows you to select only folders. You can control this via the `IsFolderBrowser` property. If you set the property to __True__ you will be able to see and select only folders.
 
 __Allow selecting folders only__
-```XAML
-	<fileDialogs:ExplorerControl IsFolderBrowser="True" />
-```
+<snippet id='radfiledialogs-dialog-controls-explorercontrol-allow_selecting_folders_only-xaml' />
+
 
 > Changing the `IsFolderBrowser` property during runtime is not supported. The property is respected only during initializing of the ExplorerControl.
 
@@ -95,43 +93,22 @@ To get the selected files or folders you can use the `SelectedFileName`, `Select
 > The difference between SelectedFileNames and SelectedSafeFileNames is that the first collection contains the full paths of the files/folders. And the second collection contains only the names (safe names) of the files/folders.
 
 __Getting the first item from the selected files/folders__
-```C#
-	string selectedFile = this.explorerControl.SelectedFileNames[0];
-```
+<snippet id='radfiledialogs-dialog-controls-explorercontrol-getting_the_first_item_from_the_selected_files_folders-cs' />
+
 
 By default the selection mode is single which allows you to select a single file or folder. To change this you can set the `Multiselect` property to __True__.
 
 __Enable multi selection__
-```XAML
-	<fileDialogs:ExplorerControl Multiselect="True" />
-```
+<snippet id='radfiledialogs-dialog-controls-explorercontrol-enable_multi_selection-xaml' />
+
 
 ## Filtering 
 
 In order to filter the ExplorerControl, you can bind its `Filter` and `FilterIndex` properties.  The following example demonstrates how you can bind the FilterIndex property to the SelectedValue property of a RadComboBox which is bound to the FilterDescriptors property of the ExplorerControl.
 
 __Filtering ExplorerControl__
-```XAML
-	<Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <fileDialogs:ExplorerControl x:Name="explorer"
-                                     IsFolderBrowser="False"
-                                     Filter="{Binding Text, ElementName=filtertext}"
-                                     FilterIndex="{Binding SelectedIndex, ElementName=filterindex}" />
+<snippet id='radfiledialogs-dialog-controls-explorercontrol-filtering_explorercontrol-xaml' />
 
-       
-        <StackPanel Orientation="Vertical" Margin="2 4" Grid.Row="1">
-            <TextBlock Text="Filter and FilterIndex " FontWeight="Bold" />
-            <TextBlock  TextWrapping="Wrap" Text="Office Files (*.doc, *.xls)|*.doc;*.xls;*.xlsx;*.ppt|Image Files (*.jpg, *.png)|*.jpg;*.png|Text Files (*.txt)|*.txt;|Archives Files (*.zip, *.rar)|*.zip;*.rar|All Files (*.*)|*.*" x:Name="filtertext"/>
-            <telerik:RadComboBox  x:Name="filterindex" SelectedIndex="4"
-                                          ItemsSource="{Binding FilterDescriptors, ElementName=explorer}" DisplayMemberPath="FilterName"/>
-        </StackPanel>
-        
-    </Grid>
-```
 
 __Result from the above example before filtering__ 
 

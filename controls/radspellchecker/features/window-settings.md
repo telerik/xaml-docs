@@ -28,27 +28,7 @@ The `RadSpellChecker` class exposes the `WindowSettings` property which allows y
 
 The following example showcases how to hide the __Add to Dictionary__, the __Ignore All__ and the __Edit Custom Dictionary__ buttons in the proofing window:
 
-```C#
-public partial class MainWindow : Window
-{
-    static MainWindow()
-    {
-        RadSpellChecker.WindowSettings.IsAddToDictionaryButtonVisible = false;
-        RadSpellChecker.WindowSettings.IsIgnoreAllButtonVisible = false;
-        RadSpellChecker.WindowSettings.IsEditCustomDictionaryButtonVisible = false;
-    }
-
-    public MainWindow()
-    {
-        InitializeComponent();
-    }
-
-    private void Button_Click(object sender, RoutedEventArgs e)
-    {
-        RadSpellChecker.Check(this.textBox, SpellCheckingMode.AllAtOnce);
-    }
-}
-```
+<snippet id='radspellchecker-features-window-settings-block_1-cs' />
 
 __Proofing window with the Add to Dictionary, the Ignore All and the Edit Custom Dictionary buttons hidden:__
 

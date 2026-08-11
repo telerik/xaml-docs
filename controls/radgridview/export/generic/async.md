@@ -22,28 +22,8 @@ The ExportAsync method can be used similar to the Export method:
 
 __Example 1: Save RadGridView`s conteint in a Excel file__
 
-```C#
-	string extension = "xls";
-	SaveFileDialog dialog = new SaveFileDialog()
-	{
-	    DefaultExt = extension,
-	    Filter = String.Format("{1} files (*.{0})|*.{0}|All files (*.*)|*.*", extension, "Excel"),
-	    FilterIndex = 1
-	};
-	if (dialog.ShowDialog() == true)
-	{
-	    Stream stream = dialog.OpenFile();
-	    clubsGrid.ExportAsync(stream,
-	    new GridViewExportOptions()
-	    {
-	        Format = ExportFormat.ExcelML,
-	        ShowColumnHeaders = true,
-	        ShowColumnFooters = true,
-	        ShowGroupFooters = false,
-	    }, true);
-	}
-	        }
-```
+<snippet id='radgridview-export-generic-async-example_1_save_radgridview_s_conteint_in_a_excel_file-cs' />
+
 
 >Please note that you should specify a __True__ value for the __shouldDisposeStream__ parameter. That way the used resources will be disposed. Prior to version 2015 Q1 SP, the parameter is called __shouldDisposeString__.
           

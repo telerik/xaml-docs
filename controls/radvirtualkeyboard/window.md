@@ -15,10 +15,7 @@ VirtualKeyboard provides a special window element that is styled according to th
 To open the keyboard window, use the `RadVirtualKeyboardWindow` control and its `Show` method. 
 
 __Showing RadVirtualKeyboardWindow__
-```C#
-	var keyboardWindow = new RadVirtualKeyboardWindow(new RadVirtualKeyboard());
-	keyboardWindow.Show();
-```
+<snippet id='radvirtualkeyboard-window-block_1-cs' />
 
 ![{{ site.framework_name }} RadVirtualKeyboard Keyboard Window](images/radvirtualkeyboard-window-0.png)
 

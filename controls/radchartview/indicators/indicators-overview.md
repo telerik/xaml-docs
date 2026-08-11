@@ -22,15 +22,8 @@ RadChartView provides a rich set of __financial indicators__ which can be used t
 The indicator itself is a [chart series]({%slug radchartview-series-chartseries%}) but with some additional sampling applied over the data before it gets plotted on the chart. The indicators are added in the __Indicators__ collection of RadCartesianChart.
 
 __Example 1: Defining TrueRangeIndicator__
-```XAML
-	<telerik:RadCartesianChart.Indicators>
-		<telerik:TrueRangeIndicator CategoryBinding="Date" 
-                                    HighBinding="High"
-                                    LowBinding="Low"
-                                    CloseBinding="Close" 
-									ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-overview-example_1_defining_truerangeindicator-xaml' />
+
 
 The indicator is populate using the same approach as shown in the [Data Bind to Data-Object]({%slug radchartview-series-databinding%}) article. You can set the corresponding value binding properties - for example, ValueBinding, CategoryBinding, HighBinding, CloseBinding, etc. Additionally, you can apply different options based on the concrete indicator's implementation. 
 

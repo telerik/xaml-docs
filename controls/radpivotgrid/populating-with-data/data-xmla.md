@@ -40,40 +40,12 @@ You can extend the parameters passed to the OLAP cube by using *QueryProperties*
 
 
 
-```XAML
-	<pivot:XmlaConnectionSettings Cube="LocalizedCube" Database="OrdersCube" ServerAddress="http://localhost/olap/msmdpump.dll">
-	    <pivot:XmlaConnectionSettings.QueryProperties>
-	        <pivot:XmlaQueryProperty Name="LocaleIdentifier" Value="1036"/>
-	    </pivot:XmlaConnectionSettings.QueryProperties>
-	</pivot:XmlaConnectionSettings>
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_1-xaml' />
 
 
 
-```C#
-	XmlaConnectionSettings cubeConnectionDetails = new XmlaConnectionSettings();
-	cubeConnectionDetails.Cube = "LocalizedCube";
-	cubeConnectionDetails.Database = "OrdersCube";
-	cubeConnectionDetails.ServerAddress = "http://localhost/olap/msmdpump.dll";
-	
-	XmlaQueryProperty localization = new XmlaQueryProperty();
-	localization.Name = "LocaleIdentifier";
-	localization.Value = "1036";
-	
-	cubeConnectionDetails.QueryProperties.Add(localization);
-```
-```VB.NET
-	Dim cubeConnectionDetails As New XmlaConnectionSettings()
-	cubeConnectionDetails.Cube = "LocalizedCube"
-	cubeConnectionDetails.Database = "OrdersCube"
-	cubeConnectionDetails.ServerAddress = "http://localhost/olap/msmdpump.dll"
-	
-	Dim localization As New XmlaQueryProperty()
-	localization.Name = "LocaleIdentifier"
-	localization.Value = "1036"
-	
-	cubeConnectionDetails.QueryProperties.Add(localization)
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_2-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_2-vb' />
 
 * __AggregatesLevel__ - set the position where groups for the aggregates should be placed.
 
@@ -89,34 +61,14 @@ __XmlaDataProvider__ can be defined in the __XAML__ as a *StaticResource* and us
 
 
 
-```XAML
-	<Grid>
-	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition Width="3*" />
-	        <ColumnDefinition Width="*" />
-	    </Grid.ColumnDefinitions>
-	    <Grid.Resources>
-	        <pivot:XmlaDataProvider x:Key="XMLADataProvider"/>
-	    </Grid.Resources>
-	    <pivot:RadGridView x:Name="radPivotGrid" DataProvider="{StaticResource XMLADataProvider}" />
-	    <pivot:RadGridView x:Name="radPivotFieldList" Grid.Column="1" DataProvider="{StaticResource XMLADataProvider}" />
-	</Grid>
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_3-xaml' />
 
 You can also create an object of type __XmlaDataProvider__ in the code behind and set it for your controls:
 
 
 
-```C#
-	XmlaDataProvider xmlaDataProvider = new XmlaDataProvider();
-	this.radPivotGrid.DataProvider = xmlaDataProvider;
-	this.radPivotFieldList.DataProvider = xmlaDataProvider;
-```
-```VB.NET
-	Dim xmlaDataProvider As New XmlaDataProvider()
-	Me.radPivotGrid.DataProvider = xmlaDataProvider
-	Me.radPivotFieldList.DataProvider = xmlaDataProvider
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_4-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_4-vb' />
 
 ## Connection to OLAP Cube
 
@@ -124,36 +76,12 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 
 
 
-```XAML
-	<pivot:XmlaDataProvider.ConnectionSettings>
-	    <pivot:XmlaConnectionSettings 
-	        Cube="Adventure Works" 
-	        Database="Adventure Works DW 2008R2" 
-	        ServerAddress="https://demos.telerik.com/olap/msmdpump.dll">
-	    </pivot:XmlaConnectionSettings>
-	</pivot:XmlaDataProvider.ConnectionSettings>
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_5-xaml' />
 
 
 
-```C#
-	XmlaConnectionSettings cubeConnectionDetails = new XmlaConnectionSettings();
-	cubeConnectionDetails.Cube = "Adventure Works";
-	cubeConnectionDetails.Database = "Adventure Works DW 2008R2";
-	cubeConnectionDetails.ServerAddress = "https://demos.telerik.com/olap/msmdpump.dll";
-	
-	XmlaDataProvider xmlaDataProvider = new XmlaDataProvider();
-	xmlaDataProvider.ConnectionSettings = cubeConnectionDetails;
-```
-```VB.NET
-	Dim cubeConnectionDetails As New XmlaConnectionSettings()
-	cubeConnectionDetails.Cube = "Adventure Works"
-	cubeConnectionDetails.Database = "Adventure Works DW 2008R2"
-	cubeConnectionDetails.ServerAddress = "https://demos.telerik.com/olap/msmdpump.dll"
-	
-	Dim xmlaDataProvider As New XmlaDataProvider()
-	xmlaDataProvider.ConnectionSettings = cubeConnectionDetails
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_6-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_6-vb' />
 
 >You can set credentials if your connection requires username and password. The *Credentials* property of __XmlaDataProvider__ expects object of type *XmlaNetworkCredential* which gives you properties for *UserName*, *Password*, *SecurePassword* and *Domain*.    			
 
@@ -183,93 +111,23 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 
 
 
-```XAML
-	<pivot:XmlaDataProvider.RowGroupDescriptions>
-	    <pivot:XmlaGroupDescription MemberName="[Date].[Calendar Year]"/>
-	</pivot:XmlaDataProvider.RowGroupDescriptions>
-	
-	<pivot:XmlaDataProvider.ColumnGroupDescriptions>
-	    <pivot:XmlaGroupDescription MemberName="[Promotion].[Promotion Category]"/>
-	</pivot:XmlaDataProvider.ColumnGroupDescriptions>
-	
-	<pivot:XmlaDataProvider.AggregateDescriptions>
-	    <pivot:XmlaAggregateDescription MemberName="[Measures].[Internet Order Quantity]" />
-	</pivot:XmlaDataProvider.AggregateDescriptions>
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_7-xaml' />
 
 
 
-```C#
-	XmlaGroupDescription rowGroupDescription1 = new XmlaGroupDescription();
-	rowGroupDescription1.MemberName = "[Date].[Calendar Year]";
-	
-	XmlaGroupDescription columnGroupDescription1 = new XmlaGroupDescription();
-	columnGroupDescription1.MemberName = "[Promotion].[Promotion Category]";
-	
-	XmlaAggregateDescription aggregateDescription1 = new XmlaAggregateDescription();
-	aggregateDescription1.MemberName = "[Measures].[Internet Order Quantity]";
-	
-	XmlaDataProvider xmlaDataProvider = new XmlaDataProvider();
-	xmlaDataProvider.BeginInit();
-	xmlaDataProvider.RowGroupDescriptions.Add(rowGroupDescription1);
-	xmlaDataProvider.ColumnGroupDescriptions.Add(columnGroupDescription1);
-	xmlaDataProvider.AggregateDescriptions.Add(aggregateDescription1);
-	xmlaDataProvider.EndInit();
-```
-```VB.NET
-	Dim rowGroupDescription1 As New XmlaGroupDescription()
-	rowGroupDescription1.MemberName = "[Date].[Calendar Year]"
-	
-	Dim columnGroupDescription1 As New XmlaGroupDescription()
-	columnGroupDescription1.MemberName = "[Promotion].[Promotion Category]"
-	
-	Dim aggregateDescription1 As New XmlaAggregateDescription()
-	aggregateDescription1.MemberName = "[Measures].[Internet Order Quantity]"
-	
-	Dim xmlaDataProvider As New XmlaDataProvider()
-	xmlaDataProvider.BeginInit()
-	xmlaDataProvider.RowGroupDescriptions.Add(rowGroupDescription1)
-	xmlaDataProvider.ColumnGroupDescriptions.Add(columnGroupDescription1)
-	xmlaDataProvider.AggregateDescriptions.Add(aggregateDescription1)
-	xmlaDataProvider.EndInit()
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_8-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_8-vb' />
 
 The __XmlaFilterDescription__ is used to filter the data that will be included in the report. Filtering is applied for a specific member defined in *MemberName* property. *Condition* property defines the way to filter the items. Only the ones that pass the filter will be shown in __RadPivotGrid__. The filtering is based on the Unique Name of the members. For example, if you want to show only data for year 2005, you can define it like this:        
 
 
 
-```XAML
-	<pivot:XmlaDataProvider.FilterDescriptions>
-	    <pivot:XmlaFilterDescription MemberName="[Date].[Calendar Year]">
-	        <pivot:XmlaFilterDescription.Condition>
-	            <pivot:OlapSetCondition Comparison="Includes">
-	                <pivot:OlapSetCondition.Items>
-	                    <sys:String>[Date].[Calendar Year].&amp;[2005]</sys:String>
-	                </pivot:OlapSetCondition.Items>
-	            </pivot:OlapSetCondition>
-	        </pivot:XmlaFilterDescription.Condition>
-	    </pivot:XmlaFilterDescription>
-	</pivot:XmlaDataProvider.FilterDescriptions>
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_9-xaml' />
 
 
 
-```C#
-	XmlaFilterDescription filterDescription = new XmlaFilterDescription();
-	filterDescription.MemberName = "[Date].[Calendar Year]";
-	OlapSetCondition condition = new OlapSetCondition();
-	condition.Comparison = SetComparison.Includes;
-	condition.Items.Add("[Date].[Calendar Year].&[2005]");
-	filterDescription.Condition = condition;
-```
-```VB.NET
-	Dim filterDescription As New XmlaFilterDescription()
-	filterDescription.MemberName = "[Date].[Calendar Year]"
-	Dim condition As New OlapSetCondition()
-	condition.Comparison = SetComparison.Includes
-	condition.Items.Add("[Date].[Calendar Year].&[2005]")
-	filterDescription.Condition = condition
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_10-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_10-vb' />
 
 As you can see, __XmlaFilterDescription__ Condition expects object of type *OlapSetCondition*. *Items* property of the *OlapSetCondition* object is a collection of all objects that each item must match. In our case we are using string objects as the member names in OLAP Cubes are strings.        
 
@@ -281,75 +139,12 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 
 
 
-```XAML
-	<pivot:XmlaFilterDescription MemberName="[Date].[Calendar]">
-	    <pivot:XmlaFilterDescription.Levels>
-	        <pivot:XmlaLevelFilterDescription MemberName="[Date].[Calendar].[Calendar Year]">
-	            <pivot:XmlaLevelFilterDescription.Condition>
-	                <pivot:OlapSetCondition Comparison="Includes">
-	                    <pivot:OlapSetCondition.Items>
-	                        <sys:String>[Date].[Calendar].[Calendar Year].&amp;[2007]</sys:String>
-	                    </pivot:OlapSetCondition.Items>
-	                </pivot:OlapSetCondition>
-	            </pivot:XmlaLevelFilterDescription.Condition>
-	        </pivot:XmlaLevelFilterDescription>
-	        <pivot:XmlaLevelFilterDescription MemberName="[Date].[Calendar].[Calendar Semester]">
-	                <pivot:XmlaLevelFilterDescription.Condition>
-	                    <pivot:OlapSetCondition Comparison="Includes">
-	                        <pivot:OlapSetCondition.Items>
-	                            <sys:String>[Date].[Calendar].[Calendar Semester].&amp;[2007]&amp;[2]</sys:String>
-	                        </pivot:OlapSetCondition.Items>
-	                    </pivot:OlapSetCondition>
-	                </pivot:XmlaLevelFilterDescription.Condition>
-	            </pivot:XmlaLevelFilterDescription>
-	    </pivot:XmlaFilterDescription.Levels>
-	</pivot:XmlaFilterDescription>
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_11-xaml' />
 
 
 
-```C#
-	XmlaFilterDescription topFilterDescription = new XmlaFilterDescription();
-	topFilterDescription.MemberName = "[Date].[Calendar]";
-	
-	OlapSetCondition condition1 = new OlapSetCondition();
-	condition1.Comparison = SetComparison.Includes;
-	condition1.Items.Add("[Date].[Calendar].[Calendar Year].&[2007]");
-	XmlaLevelFilterDescription levelFilterDescription1 = new XmlaLevelFilterDescription();
-	levelFilterDescription1.MemberName = "[Date].[Calendar].[Calendar Year]";
-	levelFilterDescription1.Condition = condition1;
-	
-	OlapSetCondition condition2 = new OlapSetCondition();
-	condition2.Comparison = SetComparison.Includes;
-	condition2.Items.Add("[Date].[Calendar].[Calendar Semester].&[2007]&[2]");
-	XmlaLevelFilterDescription levelFilterDescription2 = new XmlaLevelFilterDescription();
-	levelFilterDescription2.MemberName = "[Date].[Calendar].[Calendar Semester]";
-	levelFilterDescription2.Condition = condition2;
-	
-	topFilterDescription.Levels.Add(levelFilterDescription1);
-	topFilterDescription.Levels.Add(levelFilterDescription2);
-```
-```VB.NET
-	Dim topFilterDescription As New XmlaFilterDescription()
-	topFilterDescription.MemberName = "[Date].[Calendar]"
-	
-	Dim condition1 As New OlapSetCondition()
-	condition1.Comparison = SetComparison.Includes
-	condition1.Items.Add("[Date].[Calendar].[Calendar Year].&[2007]")
-	Dim levelFilterDescription1 As New XmlaLevelFilterDescription()
-	levelFilterDescription1.MemberName = "[Date].[Calendar].[Calendar Year]"
-	levelFilterDescription1.Condition = condition1
-	
-	Dim condition2 As New OlapSetCondition()
-	condition2.Comparison = SetComparison.Includes
-	condition2.Items.Add("[Date].[Calendar].[Calendar Semester].&[2007]&[2]")
-	Dim levelFilterDescription2 As New XmlaLevelFilterDescription()
-	levelFilterDescription2.MemberName = "[Date].[Calendar].[Calendar Semester]"
-	levelFilterDescription2.Condition = condition2
-	
-	topFilterDescription.Levels.Add(levelFilterDescription1)
-	topFilterDescription.Levels.Add(levelFilterDescription2)
-```
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_12-cs' />
+<snippet id='radpivotgrid-populating-with-data-data-xmla-block_12-vb' />
 
 ## See Also
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})

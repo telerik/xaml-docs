@@ -35,70 +35,10 @@ If you want to adjust many properties at once without triggering a data engine u
 
 __Example 1: Filtering single column programmatically__
 
-```C#
-	Telerik.Windows.Controls.GridViewColumn countryColumn = this.radGridView.Columns["Country"];
-	Telerik.Windows.Controls.GridView.IColumnFilterDescriptor countryFilter = countryColumn.ColumnFilterDescriptor;
-	
-	// Suspend the notifications to avoid multiple data engine updates
-	countryFilter.SuspendNotifications();
-	
-	// This is the same as the end user selecting a distinct value through the UI.
-	countryFilter.DistinctFilter.AddDistinctValue("Poland");
-	countryFilter.DistinctFilter.AddDistinctValue("Spain");
-	countryFilter.DistinctFilter.AddDistinctValue("Uzbekistan");
-	countryFilter.DistinctFilter.AddDistinctValue("Netherlands");
-	countryFilter.DistinctFilter.AddDistinctValue("Austria");
-	countryFilter.DistinctFilter.AddDistinctValue("Finland");
-	countryFilter.DistinctFilter.AddDistinctValue("Pakistan");
-	
-	// This is the same as the end user configuring the upper field filter.
-	countryFilter.FieldFilter.Filter1.Operator = Telerik.Windows.Data.FilterOperator.Contains;
-	countryFilter.FieldFilter.Filter1.Value = "land";
-	countryFilter.FieldFilter.Filter1.IsCaseSensitive = true;
-	
-	// This is the same as the end user changing the logical operator between the two field filters.
-	countryFilter.FieldFilter.LogicalOperator = Telerik.Windows.Data.FilterCompositionLogicalOperator.Or;
-	
-	// This is the same as the end user configuring the lower field filter.
-	countryFilter.FieldFilter.Filter2.Operator = Telerik.Windows.Data.FilterOperator.Contains;
-	countryFilter.FieldFilter.Filter2.Value = "stan";
-	countryFilter.FieldFilter.Filter2.IsCaseSensitive = true;
-	
-	// Resume the notifications to force the data engine to update the filter.
-	countryFilter.ResumeNotifications();
-```
-```VB.NET
-	Dim countryColumn As Telerik.Windows.Controls.GridViewColumn = Me.radGridView.Columns("Country")
-	Dim countryFilter As Telerik.Windows.Controls.GridView.IColumnFilterDescriptor = countryColumn.ColumnFilterDescriptor
-	
-	' Suspend the notifications to avoid multiple data engine updates
-	countryFilter.SuspendNotifications()
-	
-	' This is the same as the end user selecting a distinct value through the UI.
-	countryFilter.DistinctFilter.AddDistinctValue("Poland")
-	countryFilter.DistinctFilter.AddDistinctValue("Spain")
-	countryFilter.DistinctFilter.AddDistinctValue("Uzbekistan")
-	countryFilter.DistinctFilter.AddDistinctValue("Netherlands")
-	countryFilter.DistinctFilter.AddDistinctValue("Austria")
-	countryFilter.DistinctFilter.AddDistinctValue("Finland")
-	countryFilter.DistinctFilter.AddDistinctValue("Pakistan")
-	
-	' This is the same as the end user configuring the upper field filter.
-	countryFilter.FieldFilter.Filter1.[Operator] = Telerik.Windows.Data.FilterOperator.Contains
-	countryFilter.FieldFilter.Filter1.Value = "land"
-	countryFilter.FieldFilter.Filter1.IsCaseSensitive = True
-	
-	' This is the same as the end user changing the logical operator between the two field filters.
-	countryFilter.FieldFilter.LogicalOperator = Telerik.Windows.Data.FilterCompositionLogicalOperator.[Or]
-	
-	' This is the same as the end user configuring the lower field filter.
-	countryFilter.FieldFilter.Filter2.[Operator] = Telerik.Windows.Data.FilterOperator.Contains
-	countryFilter.FieldFilter.Filter2.Value = "stan"
-	countryFilter.FieldFilter.Filter2.IsCaseSensitive = True
-	
-	' Resume the notifications to force the data engine to update the filter.
-	countryFilter.ResumeNotifications()
-```
+<snippet id='radgridview-filtering-programmatic-example_1_filtering_single_column_programmatically-cs' />
+
+<snippet id='radgridview-filtering-programmatic-example_1_filtering_single_column_programmatically-vb' />
+
 
 #### __Figure 1: Pre-filtered RadGridView__
 
@@ -120,16 +60,10 @@ In case you want to pre-filter multiple columns at once without triggering a dat
 
 __Example 2: Filtering multiple columns programmatically__
 
-```C#
-	this.radGridView.FilterDescriptors.SuspendNotifications();
-	// ... filter as many columns as you wish here...
-	this.radGridView.FilterDescriptors.ResumeNotifications();
-```
-```VB.NET
-	Me.radGridView.FilterDescriptors.SuspendNotifications()
-	' ... filter as many columns as you wish here...
-	Me.radGridView.FilterDescriptors.ResumeNotifications()
-```
+<snippet id='radgridview-filtering-programmatic-example_2_filtering_multiple_columns_programmatically-cs' />
+
+<snippet id='radgridview-filtering-programmatic-example_2_filtering_multiple_columns_programmatically-vb' />
+
 
 ### Clearing Multiple Column Filters
 
@@ -137,21 +71,10 @@ Clearing multiple column filters is again done by using the Suspend/Resume patte
 
 __Example 3: Clearing multiple column filters__
 
-```C#
-	this.radGridView.FilterDescriptors.SuspendNotifications();
-	foreach (Telerik.Windows.Controls.GridViewColumn column in this.radGridView.Columns)
-	{
-	    column.ClearFilters();
-	}
-	this.radGridView.FilterDescriptors.ResumeNotifications();
-```
-```VB.NET
-	Me.radGridView.FilterDescriptors.SuspendNotifications()
-	For Each column As Telerik.Windows.Controls.GridViewColumn In Me.radGridView.Columns
-	    column.ClearFilters()
-	Next
-	Me.radGridView.FilterDescriptors.ResumeNotifications()
-```
+<snippet id='radgridview-filtering-programmatic-example_3_clearing_multiple_column_filters-cs' />
+
+<snippet id='radgridview-filtering-programmatic-example_3_clearing_multiple_column_filters-vb' />
+
 
 ## Custom Filtering
 
@@ -181,26 +104,10 @@ So a typical FilterDescriptor might look something like this:
 
 __Example 4: A custom FilterDescriptor__
 
-```C#
-	// Give me all people that are named John.
-	Telerik.Windows.Data.FilterDescriptor fd = new Telerik.Windows.Data.FilterDescriptor();
-	fd.Member = "FirstName";
-	fd.Operator = Telerik.Windows.Data.FilterOperator.IsEqualTo;
-	fd.Value = "John";
-	fd.IsCaseSensitive = true;
-	// In most cases the data engine will discover this automatically so you do not need to set it.
-	fd.MemberType = typeof(string);
-```
-```VB.NET
-	' Give me all people that are named John.
-	Dim fd As New Telerik.Windows.Data.FilterDescriptor()
-	fd.Member = "FirstName"
-	fd.[Operator] = Telerik.Windows.Data.FilterOperator.IsEqualTo
-	fd.Value = "John"
-	fd.IsCaseSensitive = True
-	' In most cases the data engine will discover this automatically so you do not need to set it.
-	fd.MemberType = GetType(String)
-```
+<snippet id='radgridview-filtering-programmatic-example_4_a_custom_filterdescriptor-cs' />
+
+<snippet id='radgridview-filtering-programmatic-example_4_a_custom_filterdescriptor-vb' />
+
 
 When choosing the **Operator**, you have to make sure that the respective **MemberType** supports this operator. For example, you cannot use the **Contains** operator if your MemberType is **Int32** because the data engine will crash. Here is a table of filter operators and the types that support them.
 
@@ -219,12 +126,10 @@ To help you understand how this FilterDescriptor is used by the data engine, let
 
 __Example 5: The generated LINQ expression__
 	
-```C#
-	people.Where(person => person.FirstName == "John");
-```
-```VB.NET
-	people.Where(Function(person) person.FirstName = "John")
-```
+<snippet id='radgridview-filtering-programmatic-example_5_the_generated_linq_expression-cs' />
+
+<snippet id='radgridview-filtering-programmatic-example_5_the_generated_linq_expression-vb' />
+
 
 The data engine builds, compiles and executes this LINQ expression at run-time. If the information stored in the FilterDescriptor is not consistent you will receive an exception at run-time.
 
@@ -235,14 +140,10 @@ There is one special singleton value called **FilterDesciptor.UnsetValue**. If y
 As of __R2 2018__ (2018.1.226 latest internal build) a specific Culture can be applied to a FilterDescriptor. This is done through an additional constructor that accepts a System.Globalization.CultureInfo parameter.
 
 __Example 6: Setting the Culture of a FilterDescriptor__
-```C#
-	 FilterDescriptor descriptor 
-                = new FilterDescriptor("Name", FilterOperator.IsNotEqualTo, "Liverpool", new CultureInfo("fr-FR"));
-```
-```VB.NET
-	 Private descriptor As FilterDescriptor
-		 = New FilterDescriptor("Name", FilterOperator.IsNotEqualTo, "Liverpool", New CultureInfo("fr-FR"))
-```
+<snippet id='radgridview-filtering-programmatic-example_6_setting_the_culture_of_a_filterdescriptor-cs' />
+
+<snippet id='radgridview-filtering-programmatic-example_6_setting_the_culture_of_a_filterdescriptor-vb' />
+
 
 
 ### CompositeFilterDescriptor
@@ -253,43 +154,10 @@ Imagine that we would like to get only people between the ages of 18 and 60 who 
 
 __Example 7: Creating a CompositeFilterDescriptor__
 
-```C#
-	Telerik.Windows.Data.FilterDescriptor olderThan18Filter = new Telerik.Windows.Data.FilterDescriptor("Age", Telerik.Windows.Data.FilterOperator.IsGreaterThanOrEqualTo, 18);
-	Telerik.Windows.Data.FilterDescriptor youngerThan60Filter = new Telerik.Windows.Data.FilterDescriptor("Age", Telerik.Windows.Data.FilterOperator.IsLessThan, 60);
-	
-	Telerik.Windows.Data.CompositeFilterDescriptor ageFilter = new Telerik.Windows.Data.CompositeFilterDescriptor();
-	ageFilter.FilterDescriptors.Add(olderThan18Filter);
-	ageFilter.FilterDescriptors.Add(youngerThan60Filter);
-	ageFilter.LogicalOperator = Telerik.Windows.Data.FilterCompositionLogicalOperator.And;
-	
-	Telerik.Windows.Data.FilterDescriptor liveInSpainFilter = new Telerik.Windows.Data.FilterDescriptor("Country", Telerik.Windows.Data.FilterOperator.IsEqualTo, "Spain");
-	
-	Telerik.Windows.Data.CompositeFilterDescriptor mainFilter = new Telerik.Windows.Data.CompositeFilterDescriptor();
-	mainFilter.FilterDescriptors.Add(ageFilter);
-	mainFilter.FilterDescriptors.Add(liveInSpainFilter);
-	mainFilter.LogicalOperator = Telerik.Windows.Data.FilterCompositionLogicalOperator.And;
-	
-	this.radGridView.FilterDescriptors.Add(mainFilter);
-```
-```VB.NET
-	' Give me all people that are named John.
-	Dim olderThan18Filter As New Telerik.Windows.Data.FilterDescriptor("Age", Telerik.Windows.Data.FilterOperator.IsGreaterThanOrEqualTo, 18)
-	Dim youngerThan60Filter As New Telerik.Windows.Data.FilterDescriptor("Age", Telerik.Windows.Data.FilterOperator.IsLessThan, 60)
-	
-	Dim ageFilter As New Telerik.Windows.Data.CompositeFilterDescriptor()
-	ageFilter.FilterDescriptors.Add(olderThan18Filter)
-	ageFilter.FilterDescriptors.Add(youngerThan60Filter)
-	ageFilter.LogicalOperator = Telerik.Windows.Data.FilterCompositionLogicalOperator.[And]
-	
-	Dim liveInSpainFilter As New Telerik.Windows.Data.FilterDescriptor("Country", Telerik.Windows.Data.FilterOperator.IsEqualTo, "Spain")
-	
-	Dim mainFilter As New Telerik.Windows.Data.CompositeFilterDescriptor()
-	mainFilter.FilterDescriptors.Add(ageFilter)
-	mainFilter.FilterDescriptors.Add(liveInSpainFilter)
-	mainFilter.LogicalOperator = Telerik.Windows.Data.FilterCompositionLogicalOperator.[And]
-	
-	Me.radGridView.FilterDescriptors.Add(mainFilter)
-```
+<snippet id='radgridview-filtering-programmatic-example_7_creating_a_compositefilterdescriptor-cs' />
+
+<snippet id='radgridview-filtering-programmatic-example_7_creating_a_compositefilterdescriptor-vb' />
+
 
 So in the end you will get the following filtering criteria tree:
 
@@ -301,12 +169,10 @@ The data engine will generate something similar in pseudo-code:
 
 __Example 8: The generated LINQ expression__
 
-```C#
-	people.Where(person => (person.Country == "Spain" && (person.Age >= 18 && person.Age < 60)));
-```
-```VB.NET
-	people.Where(Function(person) (person.Country = "Spain" AndAlso (person.Age >= 18 AndAlso person.Age < 60)))
-```
+<snippet id='radgridview-filtering-programmatic-example_8_the_generated_linq_expression-cs' />
+
+<snippet id='radgridview-filtering-programmatic-example_8_the_generated_linq_expression-vb' />
+
 
 The lambda expression that you see inside the Where clause was build based upon the descriptors that we defined. But if you implement the IFilterDescriptor yourself you can supply any kind of custom expression that will be used by data engine as long as it is valid and can be compiled and executed at runtime.
 

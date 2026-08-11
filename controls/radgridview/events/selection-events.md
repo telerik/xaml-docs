@@ -24,15 +24,10 @@ It is fired once a selection is about to be performed and a change in the __Sele
 
 __Subscribing to the SelectionChanging event__
 
-```C#
-	private void SelectionChanging(object sender, SelectionChangingEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub SelectionChanging(sender As Object, e As SelectionChangingEventArgs)
-	End Sub
-```
+<snippet id='radgridview-events-selection-events-subscribing_to_the_selectionchanging_event-cs' />
+
+<snippet id='radgridview-events-selection-events-subscribing_to_the_selectionchanging_event-vb' />
+
 
 __SelectionChangingEventArgs__ exposes the following specific properties:
 
@@ -47,15 +42,10 @@ Fires each time there is a change in the __SelectedItems__ collection. This happ
 
 __Subscribing to the SelectionChanged event__
 
-```C#
-	private void SelectionChanged(object sender, SelectionChangeEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangeEventArgs)
-	End Sub
-```
+<snippet id='radgridview-events-selection-events-subscribing_to_the_selectionchanged_event-cs' />
+
+<snippet id='radgridview-events-selection-events-subscribing_to_the_selectionchanged_event-vb' />
+
 
 The __SelectionChangeEventArgs__ class exposes the following specific properties:
 
@@ -68,15 +58,10 @@ This event is raised when a cell is selected. It fires before the __SelectionCha
 
 __Subscribing to the CurrentCellInfoChanged event__
 
-```C#
-	private void CurrentCellInfoChanged(object sender, GridViewCurrentCellInfoChangedEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub CurrentCellInfoChanged(ByVal sender As Object, ByVal e As GridViewCurrentCellInfoChangedEventArgs)
-	End Sub
-```
+<snippet id='radgridview-events-selection-events-subscribing_to_the_currentcellinfochanged_event-cs' />
+
+<snippet id='radgridview-events-selection-events-subscribing_to_the_currentcellinfochanged_event-vb' />
+
 
 The __GridViewCurrentCellInfoChangedEventArgs__ class exposes the following specific properties:
 
@@ -89,15 +74,10 @@ This event is fired when a change in the __SelectedCells__ collection is about t
 
 __Subscribing to the SelectedCellsChanging event__
 
-```C#
-	private void SelectedCellsChanging(object sender, GridViewSelectedCellsChangingEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub SelectedCellsChanging(sender As Object, e As GridViewSelectedCellsChangingEventArgs)
-	End Sub
-```
+<snippet id='radgridview-events-selection-events-subscribing_to_the_selectedcellschanging_event-cs' />
+
+<snippet id='radgridview-events-selection-events-subscribing_to_the_selectedcellschanging_event-vb' />
+
 
 The __GridViewSelectedCellsChangingEventArgs__ class exposes the following specific properties:
 
@@ -112,15 +92,10 @@ Fires each time there is change in the __SelectedCells__ collection. This happen
 
 __Subscribing to the SelectedCellsChanged event__
 
-```C#
-	private void SelectedCellsChanged(object sender, GridViewSelectedCellsChangedEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub SelectedCellsChanged(sender As Object, e As GridViewSelectedCellsChangedEventArgs)
-	End Sub
-```
+<snippet id='radgridview-events-selection-events-subscribing_to_the_selectedcellschanged_event-cs' />
+
+<snippet id='radgridview-events-selection-events-subscribing_to_the_selectedcellschanged_event-vb' />
+
 
 The __GridViewSelectedCellsChangedEventArgs__ class exposes the following specific properties:
 

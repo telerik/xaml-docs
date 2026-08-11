@@ -57,25 +57,11 @@ Due to the merging of the assemblies, the resources' paths are modified as well.
 
 
 
-```XAML
-    <!-- old path -->
-	pack://application:,,,/Telerik.Windows.Controls.RichTextBox;component/*
-	
-	<!-- new path -->
-    pack://application:,,,/Telerik.Windows.Controls.RichTextBox;component/RichTextBoxUI/*
-```
+<snippet id='radrichtextbox-getting-started-net-core-support-block_1-xaml' />
 
 ## Reorganized Resource Dictionaries 
 
 When using implicit themes, you need to merge the XAML resources so you can have styling for the controls. RadRichTextBox for .NET needs the following resources:
 
 
-```XAML
-    <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/System.Windows.xaml" />
-    <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/Telerik.Windows.Controls.xaml" />
-    <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/Telerik.Windows.Controls.Input.xaml" />
-    <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
-    <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/Telerik.Windows.Controls.RibbonView.xaml" />
-    <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/Telerik.Windows.Controls.RichTextBox.xaml" />
-    <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2019;component/Themes/Telerik.Windows.Controls.ImageEditor.xaml" />
-```
+<snippet id='radrichtextbox-getting-started-net-core-support-block_2-xaml' />

@@ -18,14 +18,7 @@ This article lists the events specific for __RadCardView__.
 	* __ItemPropertyInfo__: Gets the associated item property info.
 
 	__Example 1: AutoGeneratingDataFieldDescriptor event handler__
-	```C#
-		private void RadCardView_AutoGeneratingDataFieldDescriptor(object sender, CardViewAutoGeneratingDataFieldDescriptorEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            CardDataFieldDescriptor dataFieldDescritor = e.DataFieldDescriptor;
-            ItemPropertyInfo propertyInfo = e.ItemPropertyInfo;
-        }
-	```
+<snippet id='radcardview-events-block_1-cs' />
 	
 * __CardDataFieldPreparedEditor__: Occurs when the editor control of a card's data field is prepared, just before the editing of the field starts. The event arguments are of type `CardDataFieldPreparedEditorEventArgs` which expose the following members:
 	
@@ -33,14 +26,7 @@ This article lists the events specific for __RadCardView__.
 	* __DataField__: Gets the associated `DataFormDataField` object.
 
 	__Example 2: CardDataFieldPreparedEditor event handler__
-	```C#
-		private void RadCardView_CardDataFieldPreparedEditor(object sender, Telerik.Windows.Controls.Data.CardView.CardDataFieldPreparedEditorEventArgs e)
-        {
-            RadCardViewItem card = e.CardViewItem;
-            DataFormDataField dataField = e.DataField;
-            FrameworkElement editor = e.Editor;
-        }
-	```
+<snippet id='radcardview-events-block_2-cs' />
 	
 * __SelectionChanged__: Occurs when the selected card is changed. The event arguments are of type `SelectionChangedEventArgs` which expose the following members:
 	
@@ -48,13 +34,7 @@ This article lists the events specific for __RadCardView__.
 	* __RemovedItems__: Gets a collection containing the previously selected card.
 
 	__Example 3: SelectionChanged event handler__
-	```C#
-		private void RadCardView_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-        {
-            IList addedItems = e.AddedItems;
-            IList removedItems = e.RemovedItems;
-        }
-	```
+<snippet id='radcardview-events-block_3-cs' />
 	
 ## Editing 
 
@@ -63,13 +43,7 @@ This article lists the events specific for __RadCardView__.
 	* __CardViewItem__: Gets the associated `RadCardViewItem` object.
 	
 	__Example 4: CardBeginningEdit event handler__
-	```C#
-		private void RadCardView_CardBeginningEdit(object sender, Telerik.Windows.Controls.Data.CardView.CardViewItemCancelEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            RadCardViewItem card = e.CardViewItem;
-        }
-	```
+<snippet id='radcardview-events-block_4-cs' />
 	
 * __CardEditEnding__: Occurs just before an edit operation is finished. The event arguments are of type `CardDataFieldCancelEventArgs` which expose the following members: 
 
@@ -77,14 +51,7 @@ This article lists the events specific for __RadCardView__.
 	* __DataField__: Gets the associated `DataFormDataField` object.
 
 	__Example 5: CardEditEnding event handler__
-	```C#
-		private void RadCardView_CardEditEnding(object sender, Telerik.Windows.Controls.Data.CardView.CardViewEditEndingEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            RadCardViewItem card = e.CardViewItem;
-            EditAction editAction = e.EditAction;
-        }
-	```
+<snippet id='radcardview-events-block_5-cs' />
 	
 * __CardEditEnded__: Occurs when an edit operation is finished. The event arguments are of type `CardViewEditEndedEventArgs` which expose the following members:
 
@@ -92,13 +59,7 @@ This article lists the events specific for __RadCardView__.
 	* __EditAction__: Gets the edit action - __Cancel__ or __Commit__.
 
 	__Example 6: CardEditEnded event handler__
-	```C#
-		private void RadCardView_CardEditEnded(object sender, CardViewEditEndedEventArgs e)
-        {
-            RadCardViewItem card = e.CardViewItem;
-            EditAction editAction = e.EditAction;
-        }
-	```
+<snippet id='radcardview-events-block_6-cs' />
 	
 * __CardDataFieldBeginningEdit__: Occurs just before an edit operation is started for a data field. The event arguments are of type `CardDataFieldCancelEventArgs` which expose the following members:
 
@@ -106,14 +67,7 @@ This article lists the events specific for __RadCardView__.
 	* __DataField__: Gets the associated `DataFormDataField` object.
 	
 	__Example 7: CardDataFieldBeginningEdit event handler__
-	```C#
-		private void RadCardView_CardDataFieldBeginningEdit(object sender, Telerik.Windows.Controls.Data.CardView.CardDataFieldCancelEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            RadCardViewItem card = e.CardViewItem;
-            DataFormDataField dataField = e.DataField;
-        }
-	```	
+<snippet id='radcardview-events-block_7-cs' />
 	
 * __CardDataFieldEditEnded__: Occurs when an edit operation is finished for a data field. The event arguments are of type `CardDataFieldEditEndedEventArgs` which expose the following members:
 
@@ -123,16 +77,7 @@ This article lists the events specific for __RadCardView__.
 	* __OldValue__: Gets the previous value.
 
 	__Example 8: CardDataFieldEditEnded event handler__
-	```C#
-		private void RadCardView_CardDataFieldEditEnded(object sender, Telerik.Windows.Controls.Data.CardView.CardDataFieldEditEndedEventArgs e)
-        {
-            RadCardViewItem card = e.CardViewItem;
-            DataFormDataField dataField = e.DataField;
-            EditAction editAction = e.EditAction;
-            object oldValue = e.OldValue;
-            object newValue = e.NewValue;
-        }
-	```	
+<snippet id='radcardview-events-block_8-cs' />
 
 ## Validation
 
@@ -141,13 +86,7 @@ This article lists the events specific for __RadCardView__.
 	* __CardViewItem__: Gets the associated `RadCardViewItem` object.
 
 	__Example 9: CardValidating event handler__
-	```C#
-		private void RadCardView_CardValidating(object sender, Telerik.Windows.Controls.Data.CardView.CardViewItemCancelEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            RadCardViewItem card = e.CardViewItem;
-        }
-	```
+<snippet id='radcardview-events-block_9-cs' />
 	
 * __CardDataFieldValidating__: Occurs when a data field starts data validating. The event arguments are of type `CardDataFieldValidatingEventArgs` which expose the following members:
 		
@@ -157,15 +96,7 @@ This article lists the events specific for __RadCardView__.
 	* __DataField__: Gets the associated `DataFormDataField` object.
 
 	__Example 10: CardDataFieldValidating event handler__
-	```C#
-		private void RadCardView_CardDataFieldValidating(object sender, Telerik.Windows.Controls.Data.CardView.CardDataFieldValidatingEventArgs e)
-        {
-            bool isValid = e.IsValid;
-            RadCardViewItem card = e.CardViewItem;
-            DataFormDataField dataField = e.DataField;
-            IEnumerable<ValidationResult> results = e.ValidationResults;
-        }
-	```
+<snippet id='radcardview-events-block_10-cs' />
 	
 * __CardDataFieldValidated__: Occurs when data field is being validated. The event arguments are of type `CardDataFieldEditEndedEventArgs` which expose the following members:
 
@@ -174,14 +105,7 @@ This article lists the events specific for __RadCardView__.
 	* __DataField__: Gets the associated `DataFormDataField` object.
 
 	__Example 11: CardDataFieldValidated event handler__
-	```C#
-		private void RadCardView_CardDataFieldValidated(object sender, Telerik.Windows.Controls.Data.CardView.CardDataFieldValidatedEventArgs e)
-        {
-            RadCardViewItem card = e.CardViewItem;
-            DataFormDataField dataField = e.DataField;
-            IEnumerable<ValidationResult> results = e.ValidationResults;
-        }
-	```
+<snippet id='radcardview-events-block_11-cs' />
 
 ## Filtering
 
@@ -191,13 +115,7 @@ This article lists the events specific for __RadCardView__.
 	* __Editor__: Gets the control rerpesenting the editor of the data field. 
 
 	__Example 12: FieldFilterEditorCreated event handler__
-	```C#
-		private void RadCardView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.Data.CardView.CardViewFilterEditorCreatedEventArgs e)
-        {
-            FrameworkElement editor = e.Editor;
-            CardDataFieldDescriptor dataFieldDescritor = e.CardDataFieldDescriptor;
-        }
-	```
+<snippet id='radcardview-events-block_12-cs' />
 
 * __Filtering__: Occurs before the filtering operation takes effect. The event can be used to cancel the filtering by setting the event arguments __Cancel__ property to `true`. The event arguments are of type `CardViewFilteringEventArgs` which expose the following members:
 	
@@ -206,15 +124,7 @@ This article lists the events specific for __RadCardView__.
 	* __CardDataFieldFilterDescriptor__: This property gets the corresponding `CardDataFieldFilterDescriptor` object.
 
 	__Example 13: Filtering event handler__
-	```C#
-		private void RadCardView_Filtering(object sender, Telerik.Windows.Controls.Data.CardView.CardViewFilteringEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            IEnumerable<IFilterDescriptor> addedDescriptors = e.Added;
-            IEnumerable<IFilterDescriptor> removedDescriptors = e.Removed;
-            ICardDataFieldFilterDescriptor dataFieldFilterDescritor = e.CardDataFieldFilterDescriptor;
-        }
-	```
+<snippet id='radcardview-events-block_13-cs' />
 	
 * __Filtered__: Occurs after the filtering operation is executed. The event arguments are of type `CardViewFilteredEventArgs` which expose the following members:
 	
@@ -223,14 +133,7 @@ This article lists the events specific for __RadCardView__.
 	* __CardDataFieldFilterDescriptor__: This property gets the corresponding `CardDataFieldFilterDescriptor` object.
 
 	__Example 14: Filtered event handler__
-	```C#
-		private void RadCardView_Filtered(object sender, CardViewFilteredEventArgs e)
-        {
-            IEnumerable<IFilterDescriptor> addedDescriptors = e.Added;
-            IEnumerable<IFilterDescriptor> removedDescriptors = e.Removed;
-            ICardDataFieldFilterDescriptor dataFieldFilterDescritor = e.CardDataFieldFilterDescriptor;
-        }
-	```
+<snippet id='radcardview-events-block_14-cs' />
 		
 * __FilterOperatorsLoading__: Occurs before the filter operators are loaded. The event can be used to remove some of the default operators or change the currently selected one. The event arguments are of type `FilterOperatorsLoadingEventArgs` which expose the following members:
 	
@@ -240,15 +143,7 @@ This article lists the events specific for __RadCardView__.
 	* __CardDataFieldFilterDescriptor__: This property gets the corresponding `CardDataFieldFilterDescriptor` object.
 
 	__Example 15: FilterOperatorsLoading event handler__
-	```C#
-		private void RadCardView_FilterOperatorsLoading(object sender, FilterOperatorsLoadingEventArgs e)
-        {
-            RemoveOnlyCollection<FilterOperator> availableOperators = e.AvailableOperators;
-            CardDataFieldDescriptor dataFieldDescritor = e.CardDataFieldDescriptor;
-            FilterOperator? operator1 = e.DefaultOperator1;
-            FilterOperator? operator2 = e.DefaultOperator2;
-        }
-	```
+<snippet id='radcardview-events-block_15-cs' />
 	
 * __DistinctValuesLoading__: Occurs before the distinct values of the associated data field descriptor are loaded. The event arguments are of type `CardViewDistinctValuesLoadingEventArgs` which expose the following members:
 	
@@ -256,14 +151,7 @@ This article lists the events specific for __RadCardView__.
 	* __CardDataFieldFilterDescriptor__: This property gets the corresponding `CardDataFieldFilterDescriptor` object.
 
 	__Example 16: DistinctValuesLoading event handler__
-	```C#
-		private void RadCardView_DistinctValuesLoading(object sender, CardViewDistinctValuesLoadingEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            CardDataFieldDescriptor dataFieldDescritor = e.CardDataFieldDescriptor;
-            IEnumerable distinctValuesSource = e.ItemsSource;
-        }
-	```
+<snippet id='radcardview-events-block_16-cs' />
 
 ## Sorting
 
@@ -275,28 +163,14 @@ This article lists the events specific for __RadCardView__.
 	* __DataFieldFilterDescriptor__: Gets the corresponding `CardDataFieldFilterDescriptor` object.
 
 	__Example 17: Sorting event handler__
-	```C#
-		private void RadCardView_Sorting(object sender, CardViewSortingEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            CardDataFieldDescriptor dataFieldDescritor = e.DataFieldDescriptor;
-            bool isMultipleSorting = e.IsMultipleDataFieldDescriptorSorting;
-            SortingState previousSortingState = e.OldSortingState;
-            SortingState newSortingState = e.NewSortingState;
-        }
-	```
+<snippet id='radcardview-events-block_17-cs' />
 		
 * __Sorted__: Occurs after the sorting operation is executed. The event arguments are of type `CardViewSortedEventArgs` which expose the following members:	
 	
 	* __DataFieldFilterDescriptor__: Gets the corresponding `CardDataFieldFilterDescriptor` object.
 
 	__Example 18: Sorted event handler__
-	```C#
-		private void RadCardView_Sorted(object sender, CardViewSortedEventArgs e)
-        {
-            CardDataFieldDescriptor dataFieldDescritor = e.DataFieldDescriptor;
-        }
-	```
+<snippet id='radcardview-events-block_18-cs' />
 
 ## Grouping
 
@@ -307,15 +181,7 @@ This article lists the events specific for __RadCardView__.
 	* __Index__: Gets the group descriptor's position.
 
 	__Example 19: Grouping event handler__
-	```C#
-		private void RadCardView_Grouping(object sender, CardViewGroupingEventArgs e)
-        {
-            bool isCanceled = e.Cancel;
-            CardViewGroupingEventAction action = e.Action;
-            IGroupDescriptor groupDescriptor = e.GroupDescriptor;
-            int? groupDescriptorPosition = e.Index;
-        }
-	```
+<snippet id='radcardview-events-block_19-cs' />
 		
 * __Grouped__: Occurs after the grouping operation is executed. The event arguments are of type `CardViewGroupedEventArgs` which expose the following members:	
 	
@@ -323,13 +189,7 @@ This article lists the events specific for __RadCardView__.
 	* __GroupDescriptor__: Gets the corresponding `IGroupDescriptor` object.
 	
 	__Example 20: Grouped event handler__
-	```C#
-		private void RadCardView_Grouped(object sender, CardViewGroupedEventArgs e)
-        {
-            CardViewGroupingEventAction action = e.Action;
-            IGroupDescriptor groupDescriptor = e.GroupDescriptor;
-        }
-	```
+<snippet id='radcardview-events-block_20-cs' />
 
 ## See Also  
 * [Getting Started]({%slug radcardview-getting-started%})

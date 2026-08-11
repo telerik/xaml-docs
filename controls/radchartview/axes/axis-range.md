@@ -26,11 +26,8 @@ To get the actual range when the axis is zoom-in, use the `ActualVisibleRange` p
 To get the actual major step, use the `ActualMajorStep` property of the axis.
 
 __Getting the actual range of a LinearAxis__
-```C#
-	ValueRange<double> actualRange = linearAxis.ActualRange;
-	ValueRange<double> actualVisibleRange = linearAxis.ActualVisibleRange;
-	double actualMajorStep = linearAxis.ActualMajorStep;
-```
+<snippet id='radchartview-axes-axis-range-getting_the_actual_range_of_a_linearaxis-cs' />
+
 
 The axis also provides a couple of __events raised when the range changes__.
 
@@ -39,45 +36,20 @@ The axis also provides a couple of __events raised when the range changes__.
 * `ActualMajorStepChanged`
 
 __Actual range and step changed event handlers__
-```C#
-	private void LinearAxis_ActualMajorStepChanged(object sender, EventArgs e)
-	{
-		var axis = (LinearAxis)sender;
-		double majorStep = axis.ActualMajorStep;
-	}
+<snippet id='radchartview-axes-axis-range-actual_range_and_step_changed_event_handlers-cs' />
 
-	private void LinearAxis_ActualVisibleRangeChanged(object sender, NumericalRangeChangedEventArgs e)
-	{
-		ValueRange<double> newRange = e.NewRange;
-		ValueRange<double> oldRange = e.PreviousRange;
-	}
-
-	private void LinearAxis_ActualRangeChanged(object sender, NumericalRangeChangedEventArgs e)
-	{
-		ValueRange<double> newRange = e.NewRange;
-		ValueRange<double> oldRange = e.PreviousRange;
-	}
-```
 
 ## Setting the Range Manually
 
 The axis range can be adjusted manually by setting the `Minimum` and `Maximum` properties of the axis.
 
 __Setting axis range in XAML__
-```XAML
-	<telerik:LinearAxis Minimum="100" Maximum="1000" />
-	
-	<telerik:DateTimeContinuousAxis Minimum="05/13/2024" Maximum="06/13/2024" />	
-```
+<snippet id='radchartview-axes-axis-range-setting_axis_range_in_xaml-xaml' />
+
 
 __Setting axis range in C#__
-```XAML
-	this.linearAxis.Minimum = 100;
-	this.linearAxis.Maximum = 100;
-	
-	this.dateTimeContinuousAxis.Minimum = DateTime.Today;
-	this.dateTimeContinuousAxis.Maximum = DateTime.Today.Months(12);	
-```
+<snippet id='radchartview-axes-axis-range-setting_axis_range_in_c-xaml' />
+
 
 ![Telerik UI for WPF RadChartView Axis with Manually Set Minimum and Maximum Range](images/radchartview-axis-range-0.png)
 
@@ -88,9 +60,8 @@ The chart axes allow you to manually set the major and minor step, which determi
 To set the major step, use the `MajorStep` property of the axis.
 
 __Setting major step__
-```XAML
-	<telerik:LinearAxis Minimum="100" MajorStep="150" Maximum="1000" />
-```
+<snippet id='radchartview-axes-axis-range-setting_major_step-xaml' />
+
 
 ![Telerik UI for WPF RadChartView Axis with a Manually Set Major Step](images/radchartview-axis-range-1.png)
 
@@ -109,9 +80,8 @@ The tick origin determines the value where the ticks originate. The positions of
 To set the origin, use the `TickOrigin` property of the axis (available in `LinearAxis` and `DateTimeContinuousAxis`).
 
 __Setting major step__
-```XAML
-	<telerik:LinearAxis Minimum="100" TickOrigin="500" MajorStep="150" Maximum="1000" />
-```
+<snippet id='radchartview-axes-axis-range-setting_major_step-xaml' />
+
 
 ![Telerik UI for WPF RadChartView Axis with a Custom Tick Origin](images/radchartview-axis-range-2.png)
 
@@ -120,9 +90,8 @@ __Setting major step__
 The axis allows you to set the desired tick count via the `DesiredTickCount` property. The axis will try to calculate a proper step based on the axis range and the desired number of ticks. Note, that the actual number of ticks may be slightly higher or lower since the automatic range calculation takes into account different factors and it tries to display a reasonable step between the ticks. For example, if the `DesiredTickCount` is 7, then 6 or 8 ticks may be drawn, depending on the range of the axis.
 
 __Setting desired number of ticks__
-```XAML
-	<telerik:LinearAxis DesiredTickCount="5" />
-```
+<snippet id='radchartview-axes-axis-range-setting_desired_number_of_ticks-xaml' />
+
 
 ![Telerik UI for WPF RadChartView Axis with a Desired Tick Count](images/radchartview-axis-range-3.png)
 	

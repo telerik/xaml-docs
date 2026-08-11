@@ -54,15 +54,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 
 
 
-```C#
-	private void ReplaceContentOfBookmark(string bookmarkName)
-	{
-	    BookmarkRangeStart bookmark = this.radRichTextBox.Document.GetBookmarkByName(bookmarkName);
-	    this.radRichTextBox.Document.Selection.SelectAnnotationRange(bookmark);
-	    this.radRichTextBox.Delete(false);
-	    this.radRichTextBox.Insert(bookmarksToContent[bookmarkName]);
-	}
-```
+<snippet id='radrichtextbox-features-document-elements-bookmarks-block_1-cs' />
 
 
 
@@ -70,29 +62,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 
 
 
-```C#
-	private void ChangeAllBookmarks(RadRichTextBox radRichTextBox)
-	{
-	    BookmarkRangeStart[] bookmarks = this.radRichTextBox.Document.GetAllBookmarks().ToArray<BookmarkRangeStart>();
-	    DocumentPosition start = new DocumentPosition(radRichTextBox.Document);
-	    DocumentPosition end = new DocumentPosition(radRichTextBox.Document);
-	    foreach (BookmarkRangeStart item in bookmarks)
-	    {
-	        radRichTextBox.Document.GoToBookmark(item);
-	
-	        start.MoveToInline(item.FirstLayoutBox as InlineLayoutBox, 0);
-	        end.MoveToInline(item.End.FirstLayoutBox as InlineLayoutBox, 0);
-	        start.MoveToNextInline();
-	        radRichTextBox.Document.Selection.SetSelectionStart(start);
-	        radRichTextBox.Document.Selection.AddSelectionEnd(end);
-	
-	        radRichTextBox.Delete(false);
-	
-	        radRichTextBox.Insert(bookmarksToContent[item.Name]);
-	    }
-	}
-```
-
+<snippet id='radrichtextbox-features-document-elements-bookmarks-block_2-cs' />
 
 
 

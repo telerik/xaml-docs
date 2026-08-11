@@ -27,50 +27,16 @@ The RadScheduleView allows for importing and exporting data to the [ICalendar](h
 You can import data in the ICalendar format by using the AppointmentCalendarImporter. It exposes an __Import__ method, which expects a __TextReader__ object with the content that should be imported and returns a collection of IAppointment objects, which can be set to the AppointmentsSource of the RadScheduleView.
 
 __Example 1: Using the AppointmentCalendarImporter__
-```C#
-	using (StreamReader reader = File.OpenText("myfile.ics"))
-    {
-        var importer = new AppointmentCalendarImporter();
-        var appointments = importer.Import(reader);
-
-        // "this.scheduleView" refers to the RadScheduleView instance that you are targeting
-        this.scheduleView.AppointmentsSource = appointments;
-    }	
-```
-```VB.NET
-	Using reader As StreamReader = File.OpenText("myfile.ics")
-		Dim importer = New AppointmentCalendarImporter()
-		Dim appointments = importer.Import(reader)
-
-		' "this.scheduleView" refers to the RadScheduleView instance that you are targeting
-		Me.scheduleView.AppointmentsSource = appointments
-    End Using
-```
+<snippet id='radscheduleview-features-import-export-ical-block_1-cs' />
+<snippet id='radscheduleview-features-import-export-ical-block_2-vb' />
 
 ## AppointmentCalendarExporter
 
 You can export the appointments from RadScheduleView to a file in the ICalendar format with the help of the AppointmentCalendarExporter. You can use its __Export__ method, which receives a collection of appointments and a __TextWriter__ object. 
 
 __Example 2: Using the AppointmentCalendarExporter__
-```C#
-	using (StreamWriter writer = File.CreateText("myfile.ics"))
-    {
-        var exporter = new AppointmentCalendarExporter();
-
-        // "this.scheduleView" refers to the RadScheduleView instance that you are targeting
-        var apps = this.scheduleView.AppointmentsSource.OfType<Appointment>();
-        exporter.Export(apps, writer);
-    }
-```
-```VB.NET
-	Using writer As StreamWriter = File.CreateText("myfile.ics")
-		Dim exporter = New AppointmentCalendarExporter()
-
-		' "this.scheduleView" refers to the RadScheduleView instance that you are targeting
-		Dim apps = Me.scheduleView.AppointmentsSource.OfType(Of Appointment)()
-		exporter.Export(apps, writer)
-    End Using
-```
+<snippet id='radscheduleview-features-import-export-ical-block_3-cs' />
+<snippet id='radscheduleview-features-import-export-ical-block_4-vb' />
 
 >tip The AppointmentCalendarExporter and AppointmentCalendarImporter classes expose some useful virtual methods, which can be overriden in a derived class in cases where the import or export behavior needs to be customized.
 

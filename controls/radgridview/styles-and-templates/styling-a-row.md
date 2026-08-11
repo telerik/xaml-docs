@@ -29,12 +29,8 @@ You have two options:
 > To learn how to modify the default `GridViewCell` style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
 __Styling all rows of an application__
-```XAML
-	<Style TargetType="telerik:GridViewRow">
-	    <Setter Property="Background" Value="Red"/>
-	    <Setter Property="Foreground" Value="White"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-a-row-styling_all_rows_of_an_application-xaml' />
+
 
 > If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
 
@@ -46,27 +42,12 @@ __Styling all rows of an application__
 
 __Creating styles for the RowStyle and AlternativeRowStyle properties__
 
-```XAML
-	<Application.Resources>
-		 <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewRowStyle}" -->
-		<Style x:Key="GridViewRowStyle" TargetType="telerik:GridViewRow">
-			<Setter Property="Background" Value="Red"/>
-        	<Setter Property="Foreground" Value="White"/>
-		</Style>
-		 <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewAlternateRowStyle}" -->
-		<Style x:Key="GridViewAlternateRowStyle" TargetType="telerik:GridViewRow">
-			<Setter Property="Background" Value="Blue"/>
-            <Setter Property="Foreground" Value="White"/>
-		</Style>
-	</Application.Resources>
-```
+<snippet id='radgridview-styles-and-templates-styling-a-row-creating_styles_for_the_rowstyle_and_alternativerowstyle_properties-xaml' />
+
 
 __Applying styles to the RowStyle and AlternateRowStyle properties__
-```XAML
-	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
-			     AlternationCount="2"
-			     AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-a-row-applying_styles_to_the_rowstyle_and_alternaterowstyle_properties-xaml' />
+
 
 #### __RadGridView with styled rows__
 

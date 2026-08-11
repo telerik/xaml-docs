@@ -15,69 +15,46 @@ This article demonstrates how you can declare a __RadColorPaletteView__ and popu
 ## XAML Declaration
 
 
-```XAML
-	<telerik:RadColorPaletteView />
-```
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_1-xaml' />
+
 
 ## Dynamic creation
 
 
-```C#
-	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
-```
-```VB.NET
-	Dim colorPaletteView As New RadColorPaletteView()
-```
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_2-cs' />
+
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_2-vb' />
+
 
 ## Selection
 
 The __SelectedItem__ property holds the selected color:				
 
 
-```XAML
-	colorPaletteView.SelectedItem = Colors.Red;
-```
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_3-xaml' />
+
 
 ## Populating
 
 You can use the __Palette__ property of __RadColorPaletteView__ to populate the paletteview with one of the built-in palettes.				
 
 
-```XAML
-	<telerik:RadColorPaletteView Palette="ColorPreset.Office" />
-```
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_4-xaml' />
 
 
-```C#
-	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
-	colorPaletteView.Palette = ColorPreset.Office;
-```
-```VB.NET
-	Dim colorPaletteView As New RadColorPaletteView()
-	colorPaletteView.Palette = ColorPreset.Office
-```
+
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_5-cs' />
+
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_5-vb' />
+
     
 __RadColorPaletteView__  also allows binding to various data source types through the __ItemSource__ property.				
 
 
-```XAML
-	<telerik:RadColorPaletteView ItemsSource="{Binding Source={StaticResource MyColorList}}" />
-```
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_6-xaml' />
 
 
-```C#
-	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
-	Collection<Color> colors = new Collection<Color>();
-	colors.Add(Colors.Red);
-	colors.Add(Colors.Green);
-	colors.Add(Colors.Blue);
-	colorPaletteView.ItemsSource = colors;
-```
-```VB.NET
-	Dim colorPaletteView As New RadColorPaletteView()
-	Dim colors1 As New Collection(Of Color)()
-	colors1.Add(Colors.Red)
-	colors1.Add(Colors.Green)
-	colors1.Add(Colors.Blue)
-	colorPaletteView.ItemsSource = colors1
-```
+
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_7-cs' />
+
+<snippet id='radcolorpicker-features-radcolorpaletteview-paletteview-populating-block_7-vb' />

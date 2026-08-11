@@ -28,35 +28,17 @@ The possible imagery sets which can be used are:
 To choose an imagery set, you can set the __Mode__ property of the __BingRestMapProvider__.
 
 __Example 1: Setting Mode property in XAML__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:BingRestMapProvider x:Name="bingRestMapProvider" ApplicationId="Bing_Map_Key" Mode="Aerial"/>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-modes-block_1-xaml' />
 
 The __CanvasLight, CanvasDark, CanvasGray, AerialOnDemand, RoadOnDemand__ are not added to the toolbar of the control by default. To add them to the map view mode commands bar, you can use the __RegisterSetSourceCommand()__ method of __BingRestMapProvider__.
 
 __Example 2: Adding CanvasGray mode to the view mode commands bar__
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.bingRestMapProvider.RegisterSetSourceCommand(MapMode.CanvasGray, LocalizationManager.GetString("MapCanvasGrayCommand"));
-	}
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-modes-block_2-cs' />
 
 You can remove specific imagery set from the map view mode commands bar, by removing them from the Commands collection of the __BingRestMapProvider__.
 
 __Example 3: Remove mode from the view mode commands bar__
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
-		this.bingRestMapProvider.Commands.RemoveAt(0);
-	}
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-modes-block_3-cs' />
 
 ## Aerial with Labels
 

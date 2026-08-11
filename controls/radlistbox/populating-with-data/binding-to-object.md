@@ -26,28 +26,13 @@ In order to bind a __RadListBox__ to a collection of business objects, you shoul
 
 __Declaring RadListBox__
 
-```XAML
-	<telerik:RadListBox x:Name="radListBox" Width="300" />
-```
+<snippet id='radlistbox-populating-with-data-binding-to-object-block_1-xaml' />
 
 * Create a new business object named Customer. Its structure is shown on the next code-snippet:
 
 __Business object implementation__
 
-```C#
-	public class Customer
-	{
-		public string Name { get; set; }
-		public string City { get; set; }		
-		public string Phone { get; set; }
-		public Customer(string name, string city, string phone)
-		{
-			this.Name = name;
-			this.City = city;
-			this.Phone = phone;
-		}
-	}
-```
+<snippet id='radlistbox-populating-with-data-binding-to-object-block_2-cs' />
 
 The __RadListBox__ control will be bound to an ObservableCollection of Customer objects.
 
@@ -55,43 +40,19 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 
 __ViewModel__
 
-```C#
-	public class CustomerViewModel
-	{
-		public ObservableCollection<Customer> Customers { get; set; }
-		public CustomerViewModel()
-		{
-			this.Customers = new ObservableCollection<Customer>()
-			{
-				new Customer("Maria Anders", "Berlin", "030-0074321"),
-				new Customer("Lino Rodriguez", "Lisbon", "(1) 354-2534"),
-				new Customer("Yoshi Tannamuri", "Vancouver","(604) 555-3392"),
-				new Customer("Renate Messner","Frankfurt a.M.","069-0245984"),
-				new Customer("Paolo Accorti","Torino","011-4988260"),
-				new Customer("Philip Cramer","Brandenburg","0555-09876")
-			};
-		}
-	}
-```
+<snippet id='radlistbox-populating-with-data-binding-to-object-block_3-cs' />
 
 * Declare the __CustomerViewModel__ as a resource in your XAML:    		
 
 __Declaring the ViewModel as resource__
 
-```XAML
-	  <UserControl.Resources>
-	    <example:CustomerViewModel x:Key="CustomerViewModel" />
-	  </UserControl.Resources>
-```
+<snippet id='radlistbox-populating-with-data-binding-to-object-block_4-xaml' />
 
 * Update your __RadListBox__ declaration and its __ItemsSource__ property:    		
 
 __Setting the ItemsSource__
 
-```XAML
-	<telerik:RadListBox x:Name="radListBox1" Width="300" 
-			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}" />
-```
+<snippet id='radlistbox-populating-with-data-binding-to-object-block_5-xaml' />
 
 ## Using Custom ItemTemplate
 
@@ -99,37 +60,13 @@ __Setting the ItemsSource__
 
 __Declaring the ItemTemplate__
 
-```XAML
-	<DataTemplate x:Key="ListBoxCustomTemplate">
-	  <Grid Margin="0" Width="300">
-	    <Grid.ColumnDefinitions>
-	      <ColumnDefinition />
-	      <ColumnDefinition />
-	    </Grid.ColumnDefinitions>
-	    <Grid.RowDefinitions>
-	      <RowDefinition />
-	      <RowDefinition />
-	    </Grid.RowDefinitions>
-	    <TextBlock FontWeight="Bold" Grid.ColumnSpan="2" Text="{Binding Name}" />
-	    <TextBlock Grid.Row="1" Text="City:" />
-	    <TextBlock Grid.Row="1" Foreground="Blue" Margin="40,0,0,0"
-	                Text="{Binding City}" />
-	    <TextBlock Grid.Row="1" Grid.Column="1" Text="Phone:" />
-	    <TextBlock Grid.Row="1" Foreground="Blue" Grid.Column="1" Margin="40,0,0,0"
-	                Text="{Binding Phone}" />
-	  </Grid>
-	</DataTemplate>
-```
+<snippet id='radlistbox-populating-with-data-binding-to-object-block_6-xaml' />
 
 * Update your __RadListBox__ declaration and set its __ItemTemplate__ property like in the example below:           	
 
 __Setting the ItemTemplate__
 
-```XAML
-	<telerik:RadListBox Width="300" 
-			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
-			ItemTemplate="{StaticResource ListBoxCustomTemplate}"/>
-```
+<snippet id='radlistbox-populating-with-data-binding-to-object-block_7-xaml' />
 
 Run your demo, the end result is shown on the snapshot below:
 
@@ -143,11 +80,7 @@ For example, instead of setting the __ItemTemplate__, set the __RadListBox__'s _
 
 __Setting the DisplayMemberPath__
 
-```XAML
-	<telerik:RadListBox Width="300" 
-			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
-			DisplayMemberPath="Name"/>
-```
+<snippet id='radlistbox-populating-with-data-binding-to-object-block_8-xaml' />
 
 The end result is shown on the next snapshot:
 

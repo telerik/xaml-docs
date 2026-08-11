@@ -34,40 +34,19 @@ You can find the required assemblies for each control from the suite in the [Con
 The control can be used as a static element to highlight an element from your application. This gives you the freedom to place the control in any type of parent.
 
 __Example 1: Defining in XAML__
-```XAML
-    <Grid>
-		<telerik:RadButton Content="My Button" VerticalAlignment="Center" HorizontalAlignment="Center" />
-		<telerik:RadCallout Margin="0 0 0 100" Content="Click on the button" />
-	</Grid>
-```
+<snippet id='radcallout-getting-started-example_1_defining_in_xaml-xaml' />
 
 ## Defining as a Popup
 
 The control can be placed inside a Popup element. This way, you can dynamically show/hide the control per your needs. For the purpose of this tutorial, we are going to show the RadCallout on a button click. First, we need to define our RadButton control and subscribe to its __Click__ event.
 
 __Example 2: Defining RadButton__
-```XAML
-    <Grid>        
-		<telerik:RadButton Content="My Button" VerticalAlignment="Center" HorizontalAlignment="Center" Click="RadButton_Click" />
-	</Grid>
-```
+<snippet id='radcallout-getting-started-example_2_defining_radbutton-xaml' />
 
 In the click event handler, we can declare our RadCallout control. To show the control, we need to use the CalloutPopupService.Show() static method. The third parameter (not required) of this method accepts CalloutPopupSettings object. You can use these settings, for example, to change the position of the control, add animation, etc.
 
 __Example 3: Setting RadCallout in code behind__
-```C#
-    private void RadButton_Click(object sender, RoutedEventArgs e)
-	{
-		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout" };
-
-		CalloutPopupSettings settings = new CalloutPopupSettings()
-		{
-			Placement = System.Windows.Controls.Primitives.PlacementMode.Top,
-		};
-
-		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
-	}
-```
+<snippet id='radcallout-getting-started-example_3_setting_radcallout_in_code_behind-cs' />
 
 If you run the application now, you should see the RadCallout control on top of the button when you click it like in __Figure 1__:
 
@@ -91,16 +70,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radcallout-getting-started-example_3_setting_radcallout_in_code_behind-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

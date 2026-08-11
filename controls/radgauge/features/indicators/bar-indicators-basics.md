@@ -25,25 +25,8 @@ The __Empty__ __Fill__ feature allows you to specify a color for the empty part 
 Here is an example:        
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="200" >
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:BarIndicator Value="100" 
-	                                  StartWidth="0.06"
-	                                  EmptyFill="#20606060"/>
-	        </telerik:VerticalLinearScale.Indicators>
-	            <telerik:VerticalLinearScale.CustomItems>
-	                <Border BorderBrush="#FF606060"
-	                    BorderThickness="1,0"
-	                    telerik:ScaleObject.Value="100"
-	                    telerik:ScaleObject.Location="OverCenter"
-	                    telerik:ScaleObject.RelativeHeight="0.8*"
-	                    telerik:ScaleObject.RelativeWidth="0.14*"/>
-	        </telerik:VerticalLinearScale.CustomItems>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-bar-indicators-basics-block_1-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -58,18 +41,8 @@ The __Bar Indicators__ allow you to specify their end and start width. This way 
 Here is an example:
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="200" >
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:BarIndicator Value="200" 
-	                                  StartWidth="0.01"
-	                                  EndWidth="0.1"
-	                                  telerik:ScaleObject.Location="OverOutside"/>
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-bar-indicators-basics-block_2-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -102,40 +75,8 @@ As the __Bar Indicators__ cover the range from the start of the scale to the sel
 Here is an example:
 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="30"
-	                         IsInteractive="True"
-	                         RangeLocation="Outside"
-	                         MajorTickOffset="0.02*"
-	                         MiddleTickOffset="0.02*"
-	                         MinorTickOffset="0.02*">
-	        <telerik:VerticalLinearScale.Ranges>
-	            <telerik:GaugeRange Background="#FFA3A3A3"
-	                                StartWidth="0.02"
-	                                EndWidth="0.02"
-	                                Min="0" Max="10"
-	                                IndicatorBackground="#FFA3A3A3"/>
-	            <telerik:GaugeRange Background="#FF000000"
-	                                StartWidth="0.02"
-	                                EndWidth="0.02"
-	                                Min="10" Max="20"
-	                                IndicatorBackground="#FF000000" />
-	            <telerik:GaugeRange Background="#FFE50000"
-	                                StartWidth="0.02"
-	                                EndWidth="0.02"
-	                                Min="20" Max="30"
-	                                IndicatorBackground="#FFE50000" />
-	        </telerik:VerticalLinearScale.Ranges>
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:BarIndicator Value="15"
-	                                  RangeColorSmoothing="0.5"
-	                                  RangeColorMode="ProportionalGradient"
-	                                  UseRangeColor="True" /> 
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-indicators-bar-indicators-basics-block_3-xaml' />
+
 
 Here is a snapshot of the result:
 

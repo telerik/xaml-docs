@@ -24,12 +24,8 @@ You have two options:
 
 __Example 1: Styling all footer rows of an application__
 
-```XAML
-	<Style TargetType="telerik:GridViewFooterRow">
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="Background" Value="LightBlue"/>
-    </Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-column-footers-example_1_styling_all_footer_rows_of_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewFooterRowStyle__.
 
@@ -39,9 +35,8 @@ RadGridView's footer rows can also be styled by creating an appropriate __Style_
 
 __Example 2: Setting RadGridView's FooterRowStyle__
 
-```XAML
-	<telerik:RadGridView FooterRowStyle="{StaticResource GridViewFooterRowStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-column-footers-example_2_setting_radgridview_s_footerrowstyle-xaml' />
+
 
 #### __Figure 1: RadGridView with styled footer rows__
 
@@ -53,12 +48,8 @@ In order to style all RadGridView cells of an application, you should create an 
 
 __Example 3: Styling all footer cells of an application__
 
-```XAML
-	<Style TargetType="telerik:GridViewFooterCell">
-	    <Setter Property="BorderBrush" Value="Red"/>
-	    <Setter Property="Background" Value="Blue"/>
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-column-footers-example_3_styling_all_footer_cells_of_an_application-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewFooterCellStyle__.
 
@@ -68,12 +59,8 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 
 __Example 4: Setting a column's CellStyle__
 
-```XAML
-	<telerik:GridViewDataColumn Header="ID"
-	                DataMemberBinding="{Binding EmployeeID}"
-	                Footer="ID"
-	                FooterCellStyle="{StaticResource GridViewFooterCellStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-column-footers-example_4_setting_a_column_s_cellstyle-xaml' />
+
 
 #### __Figure 2: RadGridView with styled footer cells__
 

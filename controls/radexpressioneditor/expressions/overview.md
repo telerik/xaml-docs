@@ -17,15 +17,8 @@ __RadExpressionEditor__ always generates a __LambdaExpression__ with one paramet
 Once the Expression is available, you can also compile it manually like so:
 
 
-```C#
-	var expr = (LambdaExpression)ExpressionEditor.Expression;
-    if (expr != null)
-    {
-        var newBody = System.Linq.Expressions.Expression.Convert(expr.Body, typeof(int));
-        var expr2 = System.Linq.Expressions.Expression.Lambda(newBody, expr.Parameters) as Expression<Func<Club, int>>;
-        var func = expr2.Compile();
-    }
-```
+<snippet id='radexpressioneditor-expressions-overview-block_1-cs' />
+
 
 Here are the basic concepts of the expression engine: 
 

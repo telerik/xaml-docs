@@ -17,26 +17,15 @@ To start recording a video you can press the "Start recording" button or call th
 To enable video recording set the `RecordingFilePath` property of the control. This is the path to the video where the recording will be stored.
 
 __Set the recording file path in XAML__
-```XAML
-	<telerik:RadWebCam RecordingFilePath="C:\\temp\\video.mp4"/>
-```
+<snippet id='radwebcam-features-recording-video-block_1-xaml' />
 
 __Set the recording file path in code__
-```C#
-	string videoFileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "video.mp4");
-	
-	// If there is no "video.mp4" file, such file will get created. If the file exists, it will get overridden.
-	radWebCam.RecordingFilePath = videoFileName
-	
-	radWebCam.StartRecording();
-```
+<snippet id='radwebcam-features-recording-video-block_2-cs' />
 
 To stop recording, press the "Stop" button or call the `StopRecording` method of RadWebCam. This will stop the recording and close the file stream.
 
 __Stop capturing a video__
-```C#
-	radWebCam.StopRecording();
-```
+<snippet id='radwebcam-features-recording-video-block_3-cs' />
 
 You can indicate that the camera control is recording via its `IsRecording` property.
 
@@ -51,14 +40,10 @@ __Elapsed time default format__
 ![{{ site.framework_name }} RadWebCam Elapsed Time Default Format](images/radwebcam-features-recording-video-1.png)
 
 __Set VideoRecordingElapsedTimeFormat in XAML__
-```XAML
-	<telerik:RadWebCam VideoRecordingElapsedTimeFormat="ss" />
-```
+<snippet id='radwebcam-features-recording-video-block_4-xaml' />
 
 __Set VideoRecordingElapsedTimeFormat in code__
-```C#
-	this.radWebCam.VideoRecordingElapsedTimeFormat = "ss";
-```
+<snippet id='radwebcam-features-recording-video-block_5-cs' />
 
 __Elapsed time custom format__
 

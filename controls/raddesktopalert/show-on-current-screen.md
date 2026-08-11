@@ -18,10 +18,8 @@ As of **R2 2022**, the `RadDesktopAlertManager` allows you to show alerts on the
 
 __Attach the RadDesktopAlertManager to the MainWindow__
 
-```C#
-    var manager = new RadDesktopAlertManager();
-    manager.Attach(App.Current.MainWindow);
-```
+<snippet id='raddesktopalert-show-on-current-screen-attach_the_raddesktopalertmanager_to_the_mainwindow-cs' />
+
 
 After this, if you move the `MainWindow` of the application to another screen (different than the primary), any new alerts shown via the `ShowAlert` will be displayed on this screen.
 
@@ -29,10 +27,8 @@ Actually, you can pass any `DependencyObject` to the Attach method and it will a
 
 __Attach the RadDesktopAlertManager to a DependencyObject__
 
-```C#
-    var manager = new RadDesktopAlertManager();
-    manager.Attach(this.LayoutRoot);
-```
+<snippet id='raddesktopalert-show-on-current-screen-attach_the_raddesktopalertmanager_to_a_dependencyobject-cs' />
+
 
 >If you attach the same RadDesktopAlertManager instance on a new element, any alerts which are already displayed will remain open. Alerts which are displayed on a different screen will also stay open.
 >
@@ -44,9 +40,8 @@ If you want to bring back the default behavior and show the alerts only on the p
 
 __Detach the RadDesktopAlertManager__
 
-```C#
-    manager.Detach();
-```
+<snippet id='raddesktopalert-show-on-current-screen-detach_the_raddesktopalertmanager-cs' />
+
 
 >important Doing so will close all previously opened alerts.
 

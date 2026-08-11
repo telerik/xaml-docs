@@ -20,108 +20,24 @@ The following examples illustrate two possible hierarchies based on the followin
 
 __Example 1: Prepare sample objects__
 
-```C#
-	public class Employee
-	{
-	    public string Name { get; set; }
-	    public DateTime HireDate { get; set; }
-	    public Department Department { get; set; }
-	}
-	public class Department
-	{
-	    public string Name { get; set; }
-	    public int ID { get; set; }
-	}
-```
-```VB.NET
-	Public Class Employee
-	    Public Property Name() As String
-	    Public Property HireDate() As Date
-	    Public Property Department() As Department
-	End Class
-	Public Class Department
-	    Public Property Name() As String
-	    Public Property ID() As Integer
-	End Class
-```
+<snippet id='radpropertygrid-features-unbound-mode-block_1-cs' />
+<snippet id='radpropertygrid-features-unbound-mode-block_1-vb' />
 
 And the sample data:
 
 __Example 2: Prepare sample data__
 
-```C#
-	InitializeComponent();
-	this.rpg.Item = new Employee()
-	{
-	    Name = "Nancy Davolio",
-	    HireDate = DateTime.Now,
-	    Department = new Department()
-	    {
-	        ID = 1,
-	        Name = "US Department"
-	    }
-	};
-```
-```VB.NET
-	Public Sub New()
-	    InitializeComponent()
-	    Me.rpg.Item = New Employee() With {
-	        .Name = "Nancy Davolio",
-	        .HireDate = Date.Now,
-	        .Department = New Department() With {
-	            .ID = 1,
-	            .Name = "US Department"
-	        }
-	    }
-	End Sub
-```
+<snippet id='radpropertygrid-features-unbound-mode-block_2-cs' />
+<snippet id='radpropertygrid-features-unbound-mode-block_2-vb' />
 
 __Example 3: RadPropertyGrid UnboundMode first example__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="rpg" 
-	                         AutoGenerateBindingPaths="False" 
-	                         AutoGeneratePropertyDefinitions="False" 
-	                         NestedPropertiesVisibility="Visible">
-	    <telerik:RadPropertyGrid.PropertyDefinitions>
-	        <telerik:PropertyDefinition DisplayName="Employee Info">
-	            <telerik:PropertyDefinition.NestedProperties>
-	                <telerik:PropertyDefinition DisplayName="Name" Binding="{Binding Name}" />
-	                <telerik:PropertyDefinition DisplayName="HireDate" Binding="{Binding HireDate}" />
-	            </telerik:PropertyDefinition.NestedProperties>
-	        </telerik:PropertyDefinition>
-	        <telerik:PropertyDefinition DisplayName="Department Info">
-	            <telerik:PropertyDefinition.NestedProperties>
-	                <telerik:PropertyDefinition DisplayName="Department Name" Binding="{Binding Department.Name}" />
-	                <telerik:PropertyDefinition DisplayName="Department ID" Binding="{Binding Department.ID}" />
-	            </telerik:PropertyDefinition.NestedProperties>
-	        </telerik:PropertyDefinition>
-	    </telerik:RadPropertyGrid.PropertyDefinitions>
-	</telerik:RadPropertyGrid>
-```
+<snippet id='radpropertygrid-features-unbound-mode-block_3-xaml' />
 
 ![Rad Property Grid Unboud Mode 1](images/RadPropertyGrid_UnboudMode1.png)
 
 __Example 4: RadPropertyGrid UnboundMode second example__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="rpg1" 
-	                         AutoGenerateBindingPaths="False" 
-	                         AutoGeneratePropertyDefinitions="False" 
-	                         NestedPropertiesVisibility="Visible">
-	    <telerik:RadPropertyGrid.PropertyDefinitions>
-	        <telerik:PropertyDefinition DisplayName="Name" Binding="{Binding Name}" >
-	            <telerik:PropertyDefinition.NestedProperties>
-	                <telerik:PropertyDefinition DisplayName="Department Name" Binding="{Binding Department.Name}">
-	                    <telerik:PropertyDefinition.NestedProperties>
-	                        <telerik:PropertyDefinition DisplayName="Department ID" Binding="{Binding Department.ID}" />
-	                    </telerik:PropertyDefinition.NestedProperties>
-	                </telerik:PropertyDefinition>
-	            </telerik:PropertyDefinition.NestedProperties>
-	        </telerik:PropertyDefinition>
-	        <telerik:PropertyDefinition DisplayName="HireDate" Binding="{Binding HireDate}" />
-	    </telerik:RadPropertyGrid.PropertyDefinitions>
-	</telerik:RadPropertyGrid>
-```
+<snippet id='radpropertygrid-features-unbound-mode-block_4-xaml' />
 
 ![Rad Property Grid Unboud Mode 2](images/RadPropertyGrid_UnboudMode2.png)

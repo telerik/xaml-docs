@@ -15,61 +15,23 @@ This article demonstrates how to cancel the drop operation. This is useful when 
 To do so, you can subscribe the RadTreeView element to the [DragDropManager.Drop]({%slug dragdropmanager-events%}#drop-target-events) event and set the **DropAction** of the [TreeViewDragDropOptions]({%slug radtreeview-features-drag-and-drop%}) to **DropAction.None**.
 
 __Example 1: Subscribing the control for the Drop event__
-```C#
-	DragDropManager.AddDropHandler(this.radTreeView, OnDrop, true);
-```	
+<snippet id='radtreeview-how-to-drag-and-drop-cancel-drop-block_1-cs' />
 
 __Example 2: Canceling the drag__
-```C#
-	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
-	{
-		TreeViewDragDropOptions options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
-		if (options != null && options.DragSourceItem != null)
-		{
-			// cancel the drop operation under a certain condition
-			options.DropAction = DropAction.None;
-		}
-	}
-```
+<snippet id='radtreeview-how-to-drag-and-drop-cancel-drop-block_2-cs' />
 
 ## Code Example
 
 This section contains a runnable code example showing how to cancel dropping on a specific item.
 
 __Example 3: Treeview definition__
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" IsDragDropEnabled="True">
-		<telerik:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
-			<telerik:RadTreeViewItem Header="Football" IsExpanded="True">
-				<telerik:RadTreeViewItem Header="Futsal"/>
-				<telerik:RadTreeViewItem Header="Soccer"/>
-			</telerik:RadTreeViewItem>
-			<telerik:RadTreeViewItem Header="Tennis"/>
-			<telerik:RadTreeViewItem Header="Cycling"/>
-		</telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-how-to-drag-and-drop-cancel-drop-block_3-xaml' />
 
 __Example 4: Subscribing the control for DragInitialize__
-```C#
-	DragDropManager.AddDropHandler(this.radTreeView, OnDrop, true);
-```
+<snippet id='radtreeview-how-to-drag-and-drop-cancel-drop-block_4-cs' />
 	
 __Example 5: Defining the DragInitialize handler and implementing logic that checks if the item can be dragged__
-```C#
-	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
-	{
-		TreeViewDragDropOptions options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
-		if (options != null && options.DragSourceItem != null)
-		{
-			RadTreeViewItem dropTargetItem = options.DropTargetItem;
-			if (dropTargetItem.Header.ToString() == "Football")
-			{
-				options.DropAction = DropAction.None;
-			}
-		}
-	}
-```
+<snippet id='radtreeview-how-to-drag-and-drop-cancel-drop-block_5-cs' />
 
 In this case you cannot drop items on the "Football" item.
 

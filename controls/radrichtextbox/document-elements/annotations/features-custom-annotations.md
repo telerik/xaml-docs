@@ -32,26 +32,12 @@ The most common scenarios for the use of custom annotations is for associating s
 * Override the CreateNewElementInstance method and have it return an instance of your annotation range start/end in both classes. Override the required CopyContentFromOverride method as well. In most cases, it should be left empty.
 
 
-```C#
-	protected override DocumentElement CreateNewElementInstance()
-	{
-	    return new CustomRangeStart();
-	}
-	
-	protected override void CopyContentFromOverride(DocumentElement fromElement)
-	{
-	}
-```
+<snippet id='radrichtextbox-document-elements-annotations-features-custom-annotations-block_1-cs' />
 
 * Override the CreateRangeStartInstance in the RangeEnd class.
 
 
-```C#
-	protected override AnnotationRangeStart CreateRangeStartInstance()
-	{
-	    return new CustomRangeStart();
-	}
-```
+<snippet id='radrichtextbox-document-elements-annotations-features-custom-annotations-block_2-cs' />
 
 At this point, you will have the basic functionality working and can continue to customize the behavior of the ranges, i.e. if it will be possible to edit the content in them, what will be the behavior when you hit backspace or delete, if it will be possible to copy the ranges, etc. 
 
@@ -63,13 +49,7 @@ The behavior of the annotations when edited, copied and deleted is determined by
 * `CopyPropertiesFromOverride`&mdash;This method should be used when you have custom properties you would like to have copied. This should be done as follows:
 
 
-```C#
-	protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
-	{
-	    base.CopyPropertiesFromOverride(fromElement);
-	    this.Name = ((CustomRangeStart)fromElement).Name;
-	}
-```
+<snippet id='radrichtextbox-document-elements-annotations-features-custom-annotations-block_3-cs' />
 
 * `IsWordSeparator`&mdash;This property determines whether the annotation should be used as a separator between words or not.
 * `SkipPositionBefore`&mdash;Specifies where text will appear if you position the caret next to the range start/end. For example, if it returns true in the range start and false in the range end, the text you enter when you position the caret next to the start/end, will appear in the range.
@@ -99,50 +79,17 @@ For example hyperlinks keep the default settings in FieldRangeStart and FieldRan
 HyperlinkRangeStart: 
 
 
-```C#
-	public override AnnotationMarkerDeleteBehavior DeleteBehavior
-	{
-	    get { return AnnotationMarkerDeleteBehavior.SelectAnnotation; }
-	}
-	
-	public override AnnotationMarkerDeleteBehavior BackspaceBehavior
-	{
-	    get { return AnnotationMarkerDeleteBehavior.SelectAnnotation; }
-	}
-	
-	public override AnnotationMarkerDeleteBehavior DeleteSelectedBehavior
-	{
-	    get { return AnnotationMarkerDeleteBehavior.RemoveAnnotation; }
-	}
-```
+<snippet id='radrichtextbox-document-elements-annotations-features-custom-annotations-block_4-cs' />
 
 HyperlinkRangeEnd:
 
 
-```C#
-	public override AnnotationMarkerDeleteBehavior DeleteBehavior
-	{
-	    get { return AnnotationMarkerDeleteBehavior.PreserveAnnotation; }
-	}
-	
-	public override AnnotationMarkerDeleteBehavior BackspaceBehavior
-	{
-	    get { return AnnotationMarkerDeleteBehavior.RemoveAnnotation; }
-	}
-	
-	public override AnnotationMarkerDeleteBehavior DeleteSelectedBehavior
-	{
-	    get { return AnnotationMarkerDeleteBehavior.RemoveAnnotation; }
-	}
-```
+<snippet id='radrichtextbox-document-elements-annotations-features-custom-annotations-block_5-cs' />
 
 * You can also define custom properties in your annotation range start/end. If you want to be able to serialize them, you can just mark them with the `XamlSerializable` attribute:
 
 
-```C#
-	[XamlSerializable]
-	public string Name { get; set; } 
-```
+<snippet id='radrichtextbox-document-elements-annotations-features-custom-annotations-block_6-cs' />
 
 For additional reading, you can refer to [this blog post](http://blogs.telerik.com/xamlteam/posts/12-03-06/structured-content-editing-with-richtextbox-for-silverlight-wpf.aspx) or play with the *RichTextBox | Structured Content Editing* demo from our [official examples](https://demos.telerik.com/wpf/). 
 

@@ -21,11 +21,8 @@ The RadChartView suite supports couple of smart mechanisms which control the axi
 You can enable the smart labels mode by setting the `SmartLabelsMode` property of the axis.
 
 __Setting the smart labels mode to SmartStep__
-```XAML
-	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis SmartLabelsMode="SmartStep"/>
-	</telerik:RadCartesianChart.VerticalAxis>
-```
+<snippet id='radchartview-axes-axis-smart-labels-setting_the_smart_labels_mode_to_smartstep-xaml' />
+
 
 The `SmartLabelMode` property is of type `AxisSmartLabelsMode` enum and it determines the algorithm which should be used for generating the labels. The enumeration expose the following properties:
 
@@ -48,11 +45,8 @@ __Example illustrating the SmartStepAndRange mode applied on the vertical axis__
 The chart axis major step is automatically recalculated on zoom. To disable this, set the `IsStepRecalculationOnZoomEnabled` property of the axis to `False`.
 
 __Disabling the automatic step recalculation on zoom__
-```XAML
-	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis IsStepRecalculationOnZoomEnabled="False"/>
-	</telerik:RadCartesianChart.VerticalAxis>
-```
+<snippet id='radchartview-axes-axis-smart-labels-disabling_the_automatic_step_recalculation_on_zoom-xaml' />
+
 
 __Example illustrating how the IsStepRecalculationOnZoomEnabled property affects the axis (applied only on the vertical axis)__
 

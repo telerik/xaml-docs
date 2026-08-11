@@ -24,97 +24,26 @@ To bind the __RadListBox__ to a collection of business objects, you should use i
 
 __Exmaple 1: Create an objects class__
 
-```C#
-	public class Country
-	{
-		public string Name { get; set; }
-		public string Capital { get; set; }
-	}
-```
+<snippet id='radlistbox-populating-with-data-binding-support-overview-block_1-cs' />
 
 __Exmaple 2: Create the ViewModel__
 
-```C#
-	public class MyViewModel : ViewModelBase
-    {
-        private ObservableCollection<Country> countries;
-        public ObservableCollection<Country> Countries
-        {
-            get
-            {
-                if (this.countries == null)
-                {
-                    this.countries = new ObservableCollection<Country>();
-                    this.countries.Add(new Country() { Name = "Australia", Capital = "Canberra" });
-                    this.countries.Add(new Country() { Name = "Bulgaria", Capital = "Sofia" });
-                    this.countries.Add(new Country() { Name = "Canada", Capital = "Ottawa" });
-                    this.countries.Add(new Country() { Name = "Denmark", Capital = "Copenhagen" });
-                    this.countries.Add(new Country() { Name = "France", Capital = "Paris" });
-                    this.countries.Add(new Country() { Name = "Germany", Capital = "Berlin" });
-                    this.countries.Add(new Country() { Name = "India", Capital = "New Delhi" });
-                    this.countries.Add(new Country() { Name = "Italy", Capital = "Rome" });
-                    this.countries.Add(new Country() { Name = "Norway", Capital = "Oslo" });
-                    this.countries.Add(new Country() { Name = "Russia", Capital = "Moscow" });
-                    this.countries.Add(new Country() { Name = "Spain", Capital = "Madrid" });
-                    this.countries.Add(new Country() { Name = "United Kingdom", Capital = "London" });
-                    this.countries.Add(new Country() { Name = "United States", Capital = "Washington, D.C." });
-                }
-                return countries;
-            }
-        }
-    }
-```
+<snippet id='radlistbox-populating-with-data-binding-support-overview-block_2-cs' />
 
 __Example 3: Create the RadListBox and set its ItemsSource__
-```XAML
-	<Window.DataContext>
-        <local:MyViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <telerik:RadListBox x:Name="listBox"
-                            Width="200" Height="100"
-                            ItemsSource="{Binding Countries}"/>
-    </Grid>
-```
+<snippet id='radlistbox-populating-with-data-binding-support-overview-block_3-xaml' />
 
 ## Data Templates
 
 The __ItemsSource__ property allows the __RadListBox__ to be bound to any collection that implements the __IEnumerable__ interface. For each item in the collection, a container of type __RadListBoxItem__ is created. By using the __ItemTemplate__, __ItemContainerStyle__ and __TemplateSelectors__ you can control the appearance of the dynamically created items.
 
 __Example 4: Create DataTemplate and bind the Text property of the TextBlock to 'Name' to show the names of the countries or set it to 'Capital' to show their capitals__
-```XAML
-	<Window.DataContext>
-        <local:MyViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <Grid.Resources>
-            <DataTemplate x:Key="ListBoxCustomItemTemplate">
-                <Grid>
-                    <TextBlock Text="{Binding Name}"/>
-                </Grid>
-            </DataTemplate>
-        </Grid.Resources>
-        <telerik:RadListBox x:Name="listBox"
-                            Width="200" Height="100"
-                            ItemsSource="{Binding Countries}"
-                            ItemTemplate="{StaticResource ListBoxCustomItemTemplate}"/>
-    </Grid>
-```
+<snippet id='radlistbox-populating-with-data-binding-support-overview-block_4-xaml' />
 
 Besides the __RadListBox's ItemTemplate__ property, you could use the __DisplayMemberPath__ property for controlling the appearance of the created items.
 
 __Example 5: Set DisplayMemberPath to 'Name' to show the names of the countries or set it to 'Capital' to show their capitals__
-```XAML
-	<Window.DataContext>
-        <local:MyViewModel/>
-    </Window.DataContext>
-    <Grid>
-        <telerik:RadListBox x:Name="listBox"
-                            Width="200" Height="100"
-                            ItemsSource="{Binding Countries}"
-                            DisplayMemberPath="Capital"/>
-    </Grid>
-```
+<snippet id='radlistbox-populating-with-data-binding-support-overview-block_5-xaml' />
 
 #### __Figure 1: Result of Examples 4 and 5__
 ![Rad List Box ItemsSource DisplayMemberPath 01](images/RadListBox_PopulatingWithData_DataBindingSupportOverview_01.png)

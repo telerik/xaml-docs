@@ -22,23 +22,13 @@ __Example 1__ shows how to use HtmlFormatProvider to import an HTML document fro
 
 __Example 1: Import HTML file__
 
-```C#
-    using (Stream input = File.OpenRead(@"Sample.html"))
-    {
-        HtmlFormatProvider provider = new HtmlFormatProvider();
-        RadDocument document = provider.Import(input);
-    }
-```
+<snippet id='radrichtextbox-import-export-html-htmlformatprovider-block_1-cs' />
 
 __Example 2__ shows how you can import an HTML string.
  
 __Example 2: Import HTML string__
 
-```C#
-    string html = "<p>hello world!</p>";
-    HtmlFormatProvider provider = new HtmlFormatProvider();
-    RadDocument document = provider.Import(html);
-```
+<snippet id='radrichtextbox-import-export-html-htmlformatprovider-block_2-cs' />
 
 The resulting __RadDocument__ can be used like any code-generated document.
         
@@ -50,24 +40,13 @@ __Example 3__ shows how to use the HtmlFormatProvider to export an instance of R
 
 __Example 3: Export HTML to file__
 
-```C#
-    HtmlFormatProvider provider = new HtmlFormatProvider();
-    using (Stream output = File.Create("Sample.html"))
-    {
-        RadDocument document = CreateRadDocument();
-        provider.Export(document, output);
-    }
-```
+<snippet id='radrichtextbox-import-export-html-htmlformatprovider-block_3-cs' />
 
 You can also export the document to a string variable like shown in __Example 4__.
 
 __Example 4: Export HTML to string__
 
-```C#
-    RadDocument document = CreateRadDocument();
-    HtmlFormatProvider provider = new HtmlFormatProvider();
-    string html = provider.Export(document);
-```
+<snippet id='radrichtextbox-import-export-html-htmlformatprovider-block_4-cs' />
 
 >tip However, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using RadRichTextBox in a data bound scenarios. For such cases, the [DataProvider]({%slug radrichtextbox-features-data-providers%}) classes are used. They wrap the FormatProviders' functionality and allow its usage in XAML.
 

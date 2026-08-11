@@ -19,17 +19,7 @@ The qualitative ranges are visual annotations used to separate the scale into di
 The ranges are defined manually in the __QualitativeRanges__ collection of the control. Each range is presented by the QualitativeRange control which exposes the following properties - __Brush__ and __Value__.
 
 __Example 1: Showing qualitative ranges__
-```XAML
-	<telerik:RadHorizontalBulletGraph FeaturedMeasure="40" 
-									  ComparativeMeasure="65"                                           
-									  ProjectedValue="60">
-		<telerik:RadHorizontalBulletGraph.QualitativeRanges>
-			<telerik:QualitativeRange Brush="#83904D" Value="30" />
-			<telerik:QualitativeRange Brush="#A2B44C" Value="70" />
-			<telerik:QualitativeRange Brush="#D8E841" Value="100"/>
-		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
-	</telerik:RadHorizontalBulletGraph>
-```
+<snippet id='radbulletgraph-features-radbulletgraph-qualitative-ranges-example_1_showing_qualitative_ranges-xaml' />
 
 > The QualitativeRange is drawn from the Minimum of the scale to the value set in the Value property. If the Value property is not set, the range will be drawn to the Maximum of the scale.
 
@@ -51,18 +41,7 @@ The quality brushes are stored in the following properties.
 * __QualityGoodBrush__
 
 __Example 2: Using the quality brushes__
-```XAML
-	<telerik:RadHorizontalBulletGraph x:Name="radBulletGraph" 
-									  FeaturedMeasure="40" 
-									  ComparativeMeasure="65" 
-									  ProjectedValue="60">
-		<telerik:RadHorizontalBulletGraph.QualitativeRanges>
-			<telerik:QualitativeRange Brush="{Binding ElementName=radBulletGraph, Path=QualityPoorBrush}" Value="30" />
-			<telerik:QualitativeRange Brush="{Binding ElementName=radBulletGraph, Path=QualitySatisfactoryBrush}" Value="70" />
-			<telerik:QualitativeRange Brush="{Binding ElementName=radBulletGraph, Path=QualityGoodBrush}" />
-		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
-	</telerik:RadHorizontalBulletGraph>
-```
+<snippet id='radbulletgraph-features-radbulletgraph-qualitative-ranges-example_2_using_the_quality_brushes-xaml' />
 
 #### Figure 2: Predefined quality brushes in the Office2016 theme
 ![radbulletgraph-features-qualitative-ranges-1.png](images/radbulletgraph-features-qualitative-ranges-1.png)

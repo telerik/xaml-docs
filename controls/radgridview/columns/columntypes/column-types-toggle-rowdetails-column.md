@@ -13,14 +13,8 @@ position: 10
 `GridViewToggleRowDetailsColumn` derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class, which means that it isn't used to display data. The column is represented by an `GridViewToggleButton` control. Clicking on it will show [RowDetails]({%slug radgridview-row-details-overview%}) if they are available. This column will automatically link the created toggle buttons to the DetailsVisibilityProperty of each GridViewRow.
 
 __Defining GridViewToggleRowDetailsColumn in XAML__
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewToggleRowDetailsColumn />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-toggle-rowdetails-column-defining_gridviewtogglerowdetailscolumn_in_xaml-xaml' />
+
 
 __GridViewToggleRowDetailsColumn__
 
@@ -42,22 +36,8 @@ The GridViewToggleRowDetailsColumn exposes the `ExpandMode` property that will a
 The GridViewToggleRowDetailsColumn allows you to set a Style for the expand/collapse button. This is done via the `ToggleButtonStyle` property.
 
 __Setting a Style for the ToggleButtonStyle__
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                     AutoGenerateColumns="False">
-	    <telerik:RadGridView.Columns>
-			<telerik:GridViewToggleRowDetailsColumn ExpandMode="Single">
-			    <telerik:GridViewToggleRowDetailsColumn.ToggleButtonStyle>
-			        <Style TargetType="ToggleButton">
-			            <Setter Property="Height" Value="26"/>
-			            <Setter Property="Width" Value="26"/>
-			            <Setter Property="Background" Value="Orange"/>
-			        </Style>
-			    </telerik:GridViewToggleRowDetailsColumn.ToggleButtonStyle>
-			</telerik:GridViewToggleRowDetailsColumn>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-column-types-toggle-rowdetails-column-setting_a_style_for_the_togglebuttonstyle-xaml' />
+
 
 __GridViewToggleRowDetailsColumn with custom Style for the ToggleButtonStyle property__
 

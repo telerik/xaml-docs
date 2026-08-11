@@ -21,36 +21,8 @@ The RadRichTextBox class exposes the `UsePreviousVersionOfMicrosoftIme` property
 >important When using Japanese, the UsePreviousVersionOfMicrosoftIme property needs to be synchronized with the OS settings. To learn more about how to revert to the previous version of the IME, you check this [article](https://support.microsoft.com/en-us/windows/revert-to-a-previous-version-of-an-ime-input-method-editor-adcc9caa-17cb-44d8-b46e-f5b473b4dd77).
 
 __Reverting to the previous version of Microsoft IME__
-```C#
-	public partial class MainWindow : Window
-	{
-	    public MainWindow()
-	    {
-	        InitializeComponent();
-
-	        this.radRichTextBox.Loaded += RadRichTextBox_Loaded;
-	    }
-
-	    private void RadRichTextBox_Loaded(object sender, RoutedEventArgs e)
-	    {
-	       this.radRichTextBox.UsePreviousVersionOfMicrosoftIme = true;
-	    }
-	}
-```
-```VB.NET
-	Public Partial Class MainWindow
-	    Inherits Window
-
-	    Public Sub New()
-	        InitializeComponent()
-	        Me.radRichTextBox.Loaded += AddressOf RadRichTextBox_Loaded
-	    End Sub
-
-	    Private Sub RadRichTextBox_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	        Me.radRichTextBox.UsePreviousVersionOfMicrosoftIme = True
-	    End Sub
-	End Class
-```
+<snippet id='radrichtextbox-ime-support-block_1-cs' />
+<snippet id='radrichtextbox-ime-support-block_2-vb' />
 
 ## Caret class
 
@@ -98,60 +70,20 @@ The `ICaretFactory` interface has a `CreateCaret` method which is responsible fo
 To achieve a different than the Microsoft IME support, you should implement your own caret which inherits RadRichTextBox’s Caret class and overrides the handlers of the above mentioned events. In these overridden methods you can execute the specific logic for the corresponding input method editor. 
 
 __Extending the Caret class__
-```C#
-	public class SogouCaret : Caret
-	{
-	    protected override void OnTextInputStart(object sender, TextCompositionEventArgs e)
-	
-	    protected override void OnTextInputUpdate(object sender, TextCompositionEventArgs e)
-	
-	    protected override void OnTextInput(TextCompositionEventArgs e)
-	}
-```
-```VB.NET
-	Public Class SogouCaret
-	    Inherits Caret
-	
-	    Protected Overloads Sub OnTextInputStart(ByVal sender As Object, ByVal e As TextCompositionEventArgs)
-	
-	    Protected Overloads Sub OnTextInputUpdate(ByVal sender As Object, ByVal e As TextCompositionEventArgs)
-	
-	    Protected Overloads Sub OnTextInput(ByVal e As TextCompositionEventArgs)
-	End Class
-```
+<snippet id='radrichtextbox-ime-support-block_3-cs' />
+<snippet id='radrichtextbox-ime-support-block_4-vb' />
 
 The inherited caret should be created by a factory class, which should implement the `ICaretFactory` interface.
 
 __Implementing a custom caret factory__
-```C#
-	public class SogouCaretFactory : ICaretFactory
-	{
-	    public Caret CreateCaret()
-	    {
-	        return new SogouCaret();
-	    }
-	}
-```
-```VB.NET
-	Public Class SogouCaretFactory
-	    Implements ICaretFactory
-	
-	    Public Function CreateCaret() As Caret Implements ICaretFactory.CreateCaret
-	        Return New SogouCaret()
-	    End Function
-	
-	End Class
-```
+<snippet id='radrichtextbox-ime-support-block_5-cs' />
+<snippet id='radrichtextbox-ime-support-block_6-vb' />
 
 The last thing you should do, is to set the RadRichTextBox’ `CaretFactory` property to be your factory class.
 
 __Setting the custom caret factory__
-```C#
-	this.radRichTextBox.CaretFactory = new SogouCaretFactory();
-```
-```VB.NET
-	Me.radRichTextBox.CaretFactory = new SogouCaretFactory()
-```
+<snippet id='radrichtextbox-ime-support-block_7-cs' />
+<snippet id='radrichtextbox-ime-support-block_8-vb' />
 
 >tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret).
 

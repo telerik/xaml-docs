@@ -23,86 +23,28 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 * use the __RadDiagram Layout()__ method:
 			  
 
-```XAML
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-            <telerik:RadButton Margin="5,0"
-                               Click="Layout"
-                               Content="Layout" />
-        </StackPanel>
-        <telerik:RadDiagram x:Name="diagram"
-                            Grid.Row="1"
-                            Margin="5" />
-    </Grid>		
-```
+<snippet id='raddiagram-features-diagram-layout-block_1-xaml' />
 
 
-```C#
-    private void Layout(object sender, RoutedEventArgs e)
-    {
-        diagram.Layout();
-    }		  
-```
-```VB.NET
-    Private Sub Layout(sender As Object, e As RoutedEventArgs)
-        diagram.Layout()
-    End Sub			  
-```
+
+<snippet id='raddiagram-features-diagram-layout-block_2-cs' />
+
+<snippet id='raddiagram-features-diagram-layout-block_2-vb' />
+
 
 * use the __DiagramCommands Layout__ command:
 			  
 
-```XAML
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-            <telerik:RadButton Margin="5,0"
-                               Command="telerik:DiagramCommands.Layout"
-                               CommandTarget="{Binding ElementName=diagram}"
-                               Content="LayoutCommand" />
-        </StackPanel>
-        <telerik:RadDiagram x:Name="diagram"
-                            Grid.Row="1"
-                            Margin="5" />
-    </Grid>		
-```	
+<snippet id='raddiagram-features-diagram-layout-block_3-xaml' />
+
 
 The __Layout()__ method provides two optional parameters - the type of the Layout (Sugiyama or Tree) and the corresponding layout settings (SugiyamaSettings or TreeLayoutSettings):
 
 
-```C#
-	private void RadButton_Click(object sender, RoutedEventArgs e)
-	{
-		SugiyamaSettings settings = new SugiyamaSettings()
-		{
-			HorizontalDistance = 50,
-			VerticalDistance = 20,
-			Orientation =  Telerik.Windows.Diagrams.Core.Orientation.Horizontal,
-			TotalMargin = new Size(20,20),
-			ShapeMargin = new Size(10,10),	
-		};
-		this.diagram.Layout(LayoutType.Sugiyama, settings);
-	}
-```
-```VB.NET
-	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
-		Dim settings As New SugiyamaSettings() With { 
-			 .HorizontalDistance = 50, 
-			 .VerticalDistance = 20, 
-			 .Orientation = Telerik.Windows.Diagrams.Core.Orientation.Horizontal, 
-			 .TotalMargin = New Size(20, 20), 
-			 .ShapeMargin = New Size(10, 10) 
-		}
-		Me.diagram.Layout(LayoutType.Sugiyama, settings)
-	End Sub
-```
+<snippet id='raddiagram-features-diagram-layout-block_4-cs' />
+
+<snippet id='raddiagram-features-diagram-layout-block_4-vb' />
+
 
 Below you can see how random shapes and connections are being arranged with the given layout configuration:
 ![raddiagram-features-layout-Sugiyama](images/raddiagram-features-layout-Sugiyama.png)
@@ -148,28 +90,10 @@ Below you can see a snapshots of random diagrams laid out with Tree Layout types
 Here is how this could be achieved in code behind.	
 
 
-```C#
-	private void RadButton_Click(object sender, RoutedEventArgs e)
-	{
-		TreeLayoutSettings settings = new TreeLayoutSettings()
-		{
-			TreeLayoutType = TreeLayoutType.TreeDown,
-			VerticalDistance = 20,				
-		};
-		settings.Roots.Add(this.diagram.Shapes[0]);
-		this.diagram.Layout(LayoutType.Tree, settings);
-	}
-```
-```VB.NET
-	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
-		Dim settings As New TreeLayoutSettings() With { 
-			 .TreeLayoutType = TreeLayoutType.TreeDown, 
-			 .VerticalDistance = 20 
-		}
-		settings.Roots.Add(Me.diagram.Shapes(0))
-		Me.diagram.Layout(LayoutType.Tree, settings)
-	End Sub
-```
+<snippet id='raddiagram-features-diagram-layout-block_5-cs' />
+
+<snippet id='raddiagram-features-diagram-layout-block_5-vb' />
+
 
 ## Layout Settings
 

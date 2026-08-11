@@ -39,38 +39,16 @@ In order to change the way the __Selection Adorner Rectangle__ behaves, you can 
 In order to select items in XAML, you only need to set their __IsSelected__ property to true:		
 
 
-```XAML
-	<telerik:RadDiagram>
-		<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								IsSelected="True"
-								Position="200 100"/>
-	</telerik:RadDiagram>
-```
+<snippet id='raddiagram-items-manipulation-raddiagrams-features-selection-block_1-xaml' />
+
 
 ![raddiagram features selection isselected](images/raddiagram_features_selection_isselected.png)
 
 When multiple items are selected, they are automatically added in one Selection Adorner:
 
 
-```XAML
-	<telerik:RadDiagram>
-		<telerik:RadDiagramShape x:Name="db1"
-								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								IsSelected="True"
-								Position="100 100" />
+<snippet id='raddiagram-items-manipulation-raddiagrams-features-selection-block_2-xaml' />
 
-		<telerik:RadDiagramConnection Source="{Binding ElementName=db1}"
-									SourceConnectorPosition="Right"
-									Target="{Binding ElementName=db2}"
-									TargetConnectorPosition="Left"
-									IsSelected="True"/>
-
-		<telerik:RadDiagramShape x:Name="db2"
-								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								IsSelected="True"
-								Position="300 100" />
-	</telerik:RadDiagram>		
-```
 
 ![raddiagram features selection multiselection](images/raddiagram_features_selection_multiselection.png)
 
@@ -78,32 +56,14 @@ You may also want to use the __SelectedIndex__ or the __SelectedItem__ property 
 		
 
 
-```XAML
-	<telerik:RadDiagram  SelectedIndex="1"
-						x:Name="diagram">
-		<telerik:RadDiagramShape x:Name="db1"
-								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								Position="100 100" />
-		<telerik:RadDiagramShape x:Name="db2"
-								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								Position="300 100" />
-	</telerik:RadDiagram>
-```
+<snippet id='raddiagram-items-manipulation-raddiagrams-features-selection-block_3-xaml' />
+
 
 Or
 
 
-```XAML
-	<telerik:RadDiagram  SelectedItem="{Binding ElementName=db2}"
-						x:Name="diagram">
-		<telerik:RadDiagramShape x:Name="db1"
-								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								Position="100 100" />
-		<telerik:RadDiagramShape x:Name="db2"
-								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								Position="300 100" />
-	</telerik:RadDiagram>
-```
+<snippet id='raddiagram-items-manipulation-raddiagrams-features-selection-block_4-xaml' />
+
 
 Below is the result of the code snippets above:![raddiagram features selection selectedindex](images/raddiagram_features_selection_selectedindex.png)
 
@@ -114,32 +74,16 @@ When the __RadDiagram__ is bound to collection of business objects or ViewModels
 For example, you can have Selected property in your ViewModel and bind it to the Shape's __IsSelected__ like so:		
 
 
-```XAML
-	<Style TargetType="telerik:RadDiagramShape">
-		<Setter Property="IsSelected" Value="{Binding Selected, Mode=TwoWay}" />
-	</Style>
-```
+<snippet id='raddiagram-items-manipulation-raddiagrams-features-selection-block_5-xaml' />
+
 
 ## SelectAll
 
 You are able to select all __RadDiagramItems__ interactively (by Mouse or by pressing Ctrl + A), programmatically (via the __SelectAll()__ method), set IsSelected to every Shape and Connection via StyleBindings, or with Command. Below is shown how you can use the __SelectAll__ command:
 
 
-```XAML
-	<telerik:RadDiagram x:Name="diagram" Height="200">
-		<telerik:RadDiagramShape x:Name="db1"
-								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								Position="100 100" />
-		<telerik:RadDiagramShape x:Name="db2"
-								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
-								Position="300 100" />
-	</telerik:RadDiagram>
-	
-	<telerik:RadButton Height="30"
-						Command="telerik:DiagramCommands.SelectAll"
-						CommandTarget="{Binding ElementName=diagram}"
-						Content="SelectAll" />
-```
+<snippet id='raddiagram-items-manipulation-raddiagrams-features-selection-block_6-xaml' />
+
 
 ![raddiagram features selection select All](images/raddiagram_features_selection_selectAll.png)
 

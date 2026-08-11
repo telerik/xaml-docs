@@ -30,12 +30,8 @@ Dragging an item to another drive will copy it there. To change the operation yo
 To enable or disable the feature you can use the __IsDragDropEnabled__ property of the file dialog.
 
 __Example 1: Disabling drag and drop__ 
-```C#
-	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
-	saveFileDialog.Owner = theOwnerWindow;	
-	saveFileDialog.IsDragDropEnabled = false;	
-	saveFileDialog.ShowDialog();	
-```
+<snippet id='radfiledialogs-features-drag-drop-overview-example_1_disabling_drag_and_drop-cs' />
+
 
 ## Customizing Drag and Drop
 

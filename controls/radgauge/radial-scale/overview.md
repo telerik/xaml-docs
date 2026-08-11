@@ -36,11 +36,8 @@ Scales can be of type __Linear__ or __Logarithmic__. When the IsLogarithmic prop
 The scale elements like tick mark, label or indicator can have dynamically changed tooltip associated with it. This behavior is controlled by TootipFormat property which can be set at the correspondent property element:
 
 
-```XAML
-	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale MajorTickTooltipFormat="0.00"/>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-radial-scale-overview-block_1-xaml' />
+
 
 ![{{ site.framework_name }} RadGauge RadialScale Major Tick Tooltip Format](images/RadialScaleTickMarkTooltip.png)
 

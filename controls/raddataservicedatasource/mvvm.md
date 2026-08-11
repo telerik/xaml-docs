@@ -22,86 +22,17 @@ The __QueryableDataServiceCollectionView&lt;T&gt;__ class has the same API as th
 
 __Example 1: Creating the viewmodel class__
 
-```C#
+<snippet id='raddataservicedatasource-mvvm-example_1_creating_the_viewmodel_class-cs' />
 
-	public class MainViewModel : ViewModelBase
-    {
-        private MyNorthwindContext ordersContext;
-        private DataServiceQuery<Order> ordersQuery;
-		private QueryableDataServiceCollectionView<Order> ordersView;
+<snippet id='raddataservicedatasource-mvvm-example_1_creating_the_viewmodel_class-vb' />
 
-		public MainViewModel()
-		{
-			this.ordersContext = new MyNorthwindContext();
-			this.ordersQuery = ordersContext.Orders;
-			this.ordersView = new QueryableDataServiceCollectionView<Order>(this.ordersContext, this.ordersQuery);
-			this.ordersView.AutoLoad = true;
-		}
-
-        public QueryableDataServiceCollectionView<Order> OrdersView
-		{
-            get { return this.ordersView; }
-            set 
-			{
-				if (this.ordersView != value)
-				{
-					this.ordersView = value;
-					this.OnPropertyChanged("OrdersView");
-				}
-			}
-        }
-    }
-```
-```VB.NET
-
-	Public Class MainViewModel
-		Inherits ViewModelBase
-
-		Private northwindContext As MyNorthwindContext
-		Private ordersQuery As DataServiceQuery(Of Order)
-		Private _ordersView As QueryableDataServiceCollectionView(Of Order)
-
-		Public Sub New()
-			Me.northwindContext = New MyNorthwindContext()
-			Me.ordersQuery = northwindContext.Orders
-			Me._ordersView = New QueryableDataServiceCollectionView(Of Order)(Me.northwindContext, Me.ordersQuery)
-			Me._ordersView.AutoLoad = True
-		End Sub
-
-		Public Property OrdersView() As QueryableDataServiceCollectionView(Of Order)
-			Get
-				Return Me._ordersView
-			End Get
-			Set(ByVal value As QueryableDataServiceCollectionView(Of Order))
-				If Me._ordersView <> value Then
-					Me._ordersView = value
-					Me.OnPropertyChanged("OrdersView")
-				End If
-			End Set
-		End Property
-	End Class
-```
 
 You can then set up your data controls in the same way you would if you were using the RadDataServiceDataSource control.
 
 __Example 2: Binding the data controls__
 
-```XAML
-	
-	<UserControl>
-		<UserControl.DataContext>
-			<local:MainViewModel />
-		</UserControl.DataContext>
-		<Grid>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="Auto"/>
-			</Grid.RowDefinitions>
-			<telerik:RadGridView Grid.Row="0" ItemsSource="{Binding OrdersView}" IsReadOnly="True" IsBusy="{Binding OrdersView.IsBusy}" ShowGroupPanel="False"/>
-			<telerik:RadDataPager Grid.Row="1" Source="{Binding OrdersView}" PageSize="20" />
-		</Grid>
-	</UserControl>
-```
+<snippet id='raddataservicedatasource-mvvm-example_2_binding_the_data_controls-xaml' />
+
 
 ## See Also
 * [ViewModelBase class]({%slug common-viewmodelbase-class%})

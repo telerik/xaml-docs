@@ -22,14 +22,8 @@ As a typical data control the __RadGridView__ displays data by binding to a sour
 
 
 
-```C#
-
-	this.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData();
-```
-```VB.NET
-
-	Me.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData()
-```
+<snippet id='radtreelistview-features-data-binding-block_1-cs' />
+<snippet id='radtreelistview-features-data-binding-block_2-vb' />
 
 
 
@@ -47,18 +41,7 @@ The data in the __RadGridView__ is separated in columns. There are different typ
 
 
 
-```XAML
-
-	<telerik:RadTreeListView x:Name="radTreeListView"
-	                            AutoGenerateColumns="False">
-	    <telerik:RadTreeListView.Columns>
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-	                                    Header="Name" />
-	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Count}"
-	                                    Header="Count" />
-	    </telerik:RadTreeListView.Columns>
-	</telerik:RadTreeListView>
-```
+<snippet id='radtreelistview-features-data-binding-block_3-xaml' />
 
 
 
@@ -70,15 +53,7 @@ In order to display the hierarchical data the __RadTreeListView__ uses child tab
 
 
 
-```XAML
-
-	<telerik:RadTreeListView x:Name="radTreeListView">
-	    <telerik:RadTreeListView.ChildTableDefinitions>
-	        <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}">
-	        </telerik:TreeListViewTableDefinition>
-	    </telerik:RadTreeListView.ChildTableDefinitions>
-	</telerik:RadTreeListView>
-```
+<snippet id='radtreelistview-features-data-binding-block_4-xaml' />
 
 
 

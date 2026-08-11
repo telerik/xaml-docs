@@ -17,13 +17,7 @@ To change the color of the track's part that shows the progress, set the __Track
 To change the thickness of the track, set the __TrackThickness__ property of RadStepProgressBar.
 
 
-```XAML
-	<telerik:RadStepProgressBar TrackFill="#34A852" TrackThickness="30" SelectedIndex="1">
-		<telerik:RadStepProgressBarItem Content="Step 1" />
-		<telerik:RadStepProgressBarItem Content="Step 2" />
-		<telerik:RadStepProgressBarItem Content="Step 3" />
-	</telerik:RadStepProgressBar>
-```
+<snippet id='radstepprogressbar-appearance-customizing-track-appearance-block_1-xaml' />
 
 ![{{ site.framework_name }} RadStepProgressBar Customizing Track Appearance](images/stepprogressbar-appearance-track-0.png)
 

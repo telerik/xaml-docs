@@ -17,76 +17,14 @@ position: 23
 The following example shows how to display the new row:
 
 __Defining the underlying object and view model__
-```C#
-    public class Person
-    {
-        //Expose an empty constructor to create a new row
-        public Person()
-        { 
-        }
+<snippet id='radgridview-features-gridview-new-row-defining_the_underlying_object_and_view_model-cs' />
 
-        public string Name { get; set; }
-        public int Age { get; set; }
-    }
+<snippet id='radgridview-features-gridview-new-row-defining_the_underlying_object_and_view_model-vb' />
 
-    public class MainViewModel
-    {
-        public MainViewModel()
-        {
-            this.People = new ObservableCollection<Person>()
-            {
-                new Person() { Name = "Jack", Age = 25 },
-                new Person() { Name = "Nick", Age = 35 },
-                new Person() { Name = "Mike", Age = 45 },
-            };
-        }
-
-        public ObservableCollection<Person> People { get; set; }
-    }
-```
-```VB.NET
-    Public Class Person
-        'Expose an empty constructor to create a new row
-        Public Sub New()
-        End Sub
-
-        Public Property Name As String
-        Public Property Age As Integer
-    End Class
-
-    Public Class MainViewModel
-        Public Sub New()
-            Me.People = New ObservableCollection(Of Person)() From {
-                New Person() With {
-                    .Name = "Jack",
-                    .Age = 25
-                },
-                New Person() With {
-                    .Name = "Nick",
-                    .Age = 35
-                },
-                New Person() With {
-                    .Name = "Mike",
-                    .Age = 45
-                }
-            }
-        End Sub
-
-        Public Property People As ObservableCollection(Of Person)
-    End Class
-```
 
 __Defining the RadGridView to show the new row__
-```XAML
-    <Grid>
-        <Grid.DataContext>
-            <local:MainViewModel/>
-        </Grid.DataContext>
-        <telerik:RadGridView x:Name="radGridView"
-                             ItemsSource="{Binding People}"
-                             NewRowPosition="Top"/>
-    </Grid>
-```
+<snippet id='radgridview-features-gridview-new-row-defining_the_radgridview_to_show_the_new_row-xaml' />
+
 
 __The new row of RadGridView for inserting data__
 
@@ -101,17 +39,8 @@ The `NewRowPosition` property allows you to specify whether the new row will be 
 * `Bottom`&mdash;Displays the new row on the bottom of the items in the current view port. For this option, the `GroupRenderMode` property of RadGridView has to be set to `Flat`.
 
 __Setting the new row position to be on the bottom__
-```XAML
-    <Grid>
-        <Grid.DataContext>
-            <local:MainViewModel/>
-        </Grid.DataContext>
-        <telerik:RadGridView x:Name="radGridView"
-                             ItemsSource="{Binding People}"
-                             GroupRenderMode="Flat"
-                             NewRowPosition="Bottom"/>
-    </Grid>
-```
+<snippet id='radgridview-features-gridview-new-row-setting_the_new_row_position_to_be_on_the_bottom-xaml' />
+
 
 __RadGridView's new row positioned on the bottom__
 
@@ -122,27 +51,8 @@ __RadGridView's new row positioned on the bottom__
 RadGridView provides the ability to customize the content of the new row. To do so, you can utilize the `GridViewNewRowContent` and `GridViewNewRowContentTemplate` properties. 
 
 __Using the GridViewNewRowContent and GridViewNewRowContentTemplate__
-```XAML
-    <Grid>
-        <Grid.DataContext>
-            <local:MainViewModel/>
-        </Grid.DataContext>
-        <telerik:RadGridView x:Name="radGridView"
-                             ItemsSource="{Binding People}"
-                             GroupRenderMode="Flat"
-                             GridViewNewRowContent="Add new user"
-                             NewRowPosition="Top">
-            <telerik:RadGridView.GridViewNewRowContentTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <telerik:RadGlyph Glyph="{StaticResource GlyphUser}" Margin="0 0 10 0" Foreground="Red"/>
-                        <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </DataTemplate>
-            </telerik:RadGridView.GridViewNewRowContentTemplate>
-        </telerik:RadGridView>
-    </Grid>
-```
+<snippet id='radgridview-features-gridview-new-row-using_the_gridviewnewrowcontent_and_gridviewnewrowcontenttemplate-xaml' />
+
 
 __RadGridView's new row with customized content__
 

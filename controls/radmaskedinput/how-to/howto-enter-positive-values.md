@@ -15,20 +15,7 @@ You can control the values entered in the __RadMaskedNumericInput__ and __RadMas
 You can use the __MaskedInputExtensions.Minimum__ attached property to define 0 as the minimum value that can be entered in the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls. This way you will restrict the user to only entering positive values in the controls.
 
 __Example 1:  Setting the MaskedInputExtensions.Minimum attached property__
-```XAML
-	<UserControl x:Class="MaskedInputSample.MainPage" 
-	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	             xmlns:maskedInput="clr-namespace:Telerik.Windows.Controls.MaskedInput;assembly=Telerik.Windows.Controls.Input"
-	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	             d:DesignHeight="300"
-	             d:DesignWidth="400"
-	             mc:Ignorable="d">
-	    <telerik:RadMaskedNumericInput maskedInput:MaskedInputExtensions.Minimum="0" />
-	</UserControl>
-```
+<snippet id='radmaskedinput-how-to-howto-enter-positive-values-block_1-xaml' />
 
 You can find more information about the __MaskedInputExtensions__ class properties in the [MaskedInputExtensions]({%slug radmaskedinput-features-extensions%}) article.
 

@@ -24,19 +24,6 @@ The __RadCalendar__ has several static methods (__IsDisplayDateValid__, __IsDisp
 
 
 
-```C#
-	if (RadCalendar.IsDisplayDateValid(calendar, DateTime.Today))
-	{
-	    calendar.DisplayDate = DateTime.Today;
-	}
-	if (RadCalendar.IsDisplayDateStartValid(calendar, DateTime.Today.AddDays(-13)))
-	{
-	    calendar.DisplayDateStart = DateTime.Today.AddDays(-13);
-	}
-	if (RadCalendar.IsSelectableDateStartValid(calendar, DateTime.Today.AddDays(-5)))
-	{
-	    calendar.SelectableDateStart = DateTime.Today.AddDays(-5);
-	}
-```
+<snippet id='radcalendar-howto-constraining-selection-and-visible-dates-block_1-cs' />
 
 To add constraints for specific dates, use the __TemplateSelector__ properties.

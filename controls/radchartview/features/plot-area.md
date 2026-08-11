@@ -28,9 +28,8 @@ You can get information about the plot area's boundaries via the __PlotAreaClip_
 By default the elements presented by the chart (series and annotations) are clipped into the plot area. Anything that leaves the boundaries won't be rendered. To alter this you can use the __ClipToPlotArea__ property that is exposed by the elements. Its __default value__ is __True__.
 
 __Example 1: Setting ClipToPlotArea of a chart series__
-```XAML
-	 <telerik:PointSeries ClipToPlotArea="False" />
-```
+<snippet id='radchartview-features-plot-area-example_1_setting_cliptoplotarea_of_a_chart_series-xaml' />
+
 
 #### __Figure 2: ClipToPlotArea example__
 ![Telerik UI for WPF RadChartView ClipToPlotArea example showing chart content clipped to the plot area](images/radchartview-features-plot-area-1.png)
@@ -40,13 +39,8 @@ __Example 1: Setting ClipToPlotArea of a chart series__
 You can customize the plot area visual via the __PlotAreaStyle__ property of the chart. It is of type __Style__ and the expected __TargetType__ is __Border__ - the area's visual element.
 
 __Example 2: Setting PlotAreaStyle__
-```XAML
-	<telerik:RadCartesianChart.PlotAreaStyle>
-		<Style TargetType="Border">
-			<Setter Property="Background" Value="#FFFDB3" />
-		</Style>
-	</telerik:RadCartesianChart.PlotAreaStyle>
-```
+<snippet id='radchartview-features-plot-area-example_2_setting_plotareastyle-xaml' />
+
 
 #### __Figure 3: PlotAreaStyle example__
 ![Telerik UI for WPF RadChartView plot area with a customized visual style](images/radchartview-features-plot-area-2.png)
@@ -56,33 +50,8 @@ __Example 2: Setting PlotAreaStyle__
 The stack order of the elements in the chart is determined by their positions in the items collection that holds them. You can additionally control which element is displayed on top by setting the elements' **ZIndex** property. RadChartView elements which have this property are [Series]({%slug radchartview-series-chartseries%}), [Annotations]({%slug radchartview-annotations-overview%}) and [Axes]({%slug radchartview-axes-axis%}).
 
 __Example 3: Setting the ZIndex property__
-```XAML
-	<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
-            <telerik:RadCartesianChart.HorizontalAxis>
-                <telerik:CategoricalAxis/>
-            </telerik:RadCartesianChart.HorizontalAxis>
+<snippet id='radchartview-features-plot-area-example_3_setting_the_zindex_property-xaml' />
 
-            <telerik:RadCartesianChart.VerticalAxis >
-                <telerik:LinearAxis />
-            </telerik:RadCartesianChart.VerticalAxis>
-
-            <telerik:RadCartesianChart.Series>
-                <telerik:LineSeries ZIndex="100">
-                    <telerik:LineSeries.DataPoints >
-                        <telerik:CategoricalDataPoint Category="January" Value="1" />
-                        <telerik:CategoricalDataPoint Category="February" Value="5" />
-                    </telerik:LineSeries.DataPoints>
-                </telerik:LineSeries>
-
-                <telerik:BarSeries>
-                    <telerik:BarSeries.DataPoints>
-                        <telerik:CategoricalDataPoint Category="January" Value="3" />
-                        <telerik:CategoricalDataPoint Category="February" Value="5" />
-                    </telerik:BarSeries.DataPoints>
-                </telerik:BarSeries>
-            </telerik:RadCartesianChart.Series>
-        </telerik:RadCartesianChart>
-```
 
 #### __Figure 4: ZIndex example__
 ![Telerik UI for WPF RadChartView series displayed according to custom ZIndex values](images/radchartview-ZIndex.png)

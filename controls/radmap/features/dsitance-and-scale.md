@@ -15,20 +15,14 @@ The __RadMap__ uses two measure units for distance - mile and kilometer. The mea
 >The default DistanceUnit is __Kilometer__.          
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                DistanceUnit="Mile" />
-```
+<snippet id='radmap-features-dsitance-and-scale-block_1-xaml' />
 
 The __DistanceUnit__ also affects the __Scale__ control displayed at the lower right corner of the __RadMap__.       
 
 If you want to hide it, you just have to set the __ScaleVisibility__ property to __False__.        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                ScaleVisibility="Collapsed" />
-```
+<snippet id='radmap-features-dsitance-and-scale-block_2-xaml' />
 
 The UI control is represented by the __MapScale__ control. You are able to use it outside the __RadMap__ and place it somewhere around it. In this case you have to either hide the original one by using the __ScaleVisibility__ property of the __RadMap__ or the __UseDefaultLayout__ one.        
 
@@ -41,23 +35,7 @@ Here is an example:
 >When using an outside __MapScale__ control, it's the value of the __DistanceUnit__ property of this control that will be counted, not the one of the __RadMap's__ __DistanceUnit__ property.          
 
 
-```XAML
-	<StackPanel>
-	    <telerik:MapScale MapControl="{Binding ElementName=radMap}"
-	                        ScaleLabelBackground="Orange"
-	                        ScaleLabelBorderBrush="DarkRed"
-	                        BorderBrush="DarkRed"
-	                        Background="Orange"
-	                        Foreground="DarkRed"
-	                        HorizontalAlignment="Right"
-	                        Margin="10"
-	                        DistanceUnit="Kilometer" />
-	    <telerik:RadMap x:Name="radMap"
-	                    Width="600"
-	                    Height="480"
-	                    ScaleVisibility="Collapsed" />
-	</StackPanel>
-```
+<snippet id='radmap-features-dsitance-and-scale-block_3-xaml' />
 
 Here is a snapshot of the result:
 

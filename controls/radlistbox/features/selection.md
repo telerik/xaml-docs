@@ -30,17 +30,13 @@ The purpose of the SelectedItem property is to get or set the currently selected
 
 __Getting the SelectedItem of type RadListBoxItem__
 
-```C#
-	var selectedItem = radListBox.SelectedItem as RadListBoxItem;
-```
+<snippet id='radlistbox-features-selection-block_1-cs' />
 
 * When your __RadListBox__ is [data bound to a collection of custom objects]({%slug radlistbox-populating-with-data-binding-to-object%}), the SelectedItem is of the type of the custom object.     			
 
 __Getting the SelectedItem of type custom object__
 
-```C#
-	var customer = radListBox.SelectedItem as Customer;
-```
+<snippet id='radlistbox-features-selection-block_2-cs' />
 
 ## Using SelectedValue and SelectedValuePath/SelectedValueBinding
 
@@ -58,22 +54,11 @@ Imagine that you have a business object named Customer with two members(properti
 
 __Business object named Customer__
 
-```C#
-	public class Customer
-	{
-		public string Name { get; set; }
-		public string City { get; set; }
-	}
-```
+<snippet id='radlistbox-features-selection-block_3-cs' />
 
 __Initializing of RadListBox__
 
-```XAML
-	<telerik:RadListBox  Width="300" x:Name="radListBox1" 
-			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
-			SelectedValuePath="City"				
-			DisplayMemberPath="Name"/>
-```
+<snippet id='radlistbox-features-selection-block_4-xaml' />
 
 ![radlistbox populatingwithdata bindingtoobject 020](images/radlistbox_populatingwithdata_bindingtoobject_020.png)
 
@@ -85,17 +70,13 @@ Use the __SelectedIndex__ property to get or set the index of the selected item.
 
 __Setting SelectedIndex__
 
-```XAML
-	<telerik:RadListBox x:Name="radListBox" Width="200" SelectedIndex="3" />
-```
+<snippet id='radlistbox-features-selection-block_5-xaml' />
 
 ## Using the SelectedItems Collection
 
 The selection is also saved in the `SelectedItems` collection of `RadListBox`. The collection stores multiple items when multiple selection is enabled. It can be used to access or add/remove items from the selection.
 
-```C#
-	IList selection = this.radListBox.SelectedItems;	
-```
+<snippet id='radlistbox-features-selection-block_6-cs' />
 
 The `SelectedItems` property cannot be set, thus it cannot be data bound. In case the selection should be synced with the view model, the [ListBoxSelectedItemsBehavior.SelectedItemsSource]({%slug radlistbox-features-selecteditemssource
 %}) attached property can be used.

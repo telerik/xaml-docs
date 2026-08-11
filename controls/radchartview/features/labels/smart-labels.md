@@ -18,11 +18,8 @@ In order to enable a smart label strategy in a __RadCartesianChart__ you can uti
 
 
 
-```XAML
-     <telerik:RadCartesianChart.SmartLabelsStrategy>
-          <telerik:ChartSmartLabelsStrategy />
-      </telerik:RadCartesianChart.SmartLabelsStrategy>
-```
+<snippet id='radchartview-features-labels-smart-labels-block_1-xaml' />
+
 
 Let's say that you have line series with large number of data points and visualized labels:
 
@@ -40,11 +37,8 @@ In order to enable a smart label strategy in a __RadPieChart__ you can utilize t
 
 
 
-```XAML
-    <telerik:RadPieChart.SmartLabelsStrategy>
-      <telerik:PieChartSmartLabelsStrategy/>
-    </telerik:RadPieChart.SmartLabelsStrategy>
-```
+<snippet id='radchartview-features-labels-smart-labels-block_2-xaml' />
+
 
 Let's say that you have __PieSeries__ with small slices and visualized labels
 

@@ -14,9 +14,7 @@ To activate the __RadBusyIndicator__ control you have to set its __IsBusy__ bool
 
 __Setting the IsBusy property__
 
-```XAML
-	<telerik:RadBusyIndicator IsBusy="True"/>
-```
+<snippet id='radbusyindicator-features-enabling-the-indicator-setting_the_isbusy_property-xaml' />
 
 You can data bind this property in any way that suits your custom logic. The __RadBusyIndicator__ control will be visible only when the __IsBusy__ property is set to __True__.
 

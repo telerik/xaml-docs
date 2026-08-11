@@ -18,96 +18,7 @@ Firstly, we need an object model that will be used to populate __RadVirtualGrid_
 
 __Example 1: Defining the Club object__
 
-```C#
-	public class Club : ViewModelBase
-    {
-        private string name;
-        private DateTime established;
-        private int stadiumCapacity;
-        private int primaryKey;
-
-        public int PrimaryKey
-        {
-            get { return this.primaryKey; }
-            set
-            {
-                this.primaryKey = value;
-                this.OnPropertyChanged("PrimaryKey");
-            }
-        }
-
-        public string Name
-        {
-            get { return this.name; }
-            set
-            {
-                if (value != this.name)
-                {
-                    this.name = value;
-                    this.OnPropertyChanged("Name");
-                }
-            }
-        }
-
-        public DateTime Established
-        {
-            get { return this.established; }
-            set
-            {
-                if (value != this.established)
-                {
-                    this.established = value;
-                    this.OnPropertyChanged("Established");
-                }
-            }
-        }
-
-        public int StadiumCapacity
-        {
-            get { return this.stadiumCapacity; }
-            set
-            {
-                if (value != this.stadiumCapacity)
-                {
-                    this.stadiumCapacity = value;
-                    this.OnPropertyChanged("StadiumCapacity");
-                }
-            }
-        }
-
-        public Club()
-        {
-
-        }
-
-        public Club(string name, DateTime established, int stadiumCapacity)
-        {
-            this.name = name;
-            this.established = established;
-            this.stadiumCapacity = stadiumCapacity;
-        }
-
-        public static ObservableCollection<Club> GetClubs()
-        {
-            ObservableCollection<Club> clubs = new ObservableCollection<Club>();
-            Club club;
-            
-            club = new Club("Liverpool", new DateTime(1892, 1, 1), 45362) { PrimaryKey = 1};
-            clubs.Add(club);
-
-            club = new Club("Manchester Utd.", new DateTime(1878, 1, 1), 76212) {PrimaryKey = 2};
-            clubs.Add(club);
-
-            club = new Club("Chelsea", new DateTime(1905, 1, 1), 42055) { PrimaryKey = 3 };
-            clubs.Add(club);
-
-            club = new Club("Arsenal", new DateTime(1886, 1, 1), 60355) { PrimaryKey = 4 };
-            clubs.Add(club);
-
-            return clubs;
-        }
-    }
-```
+<snippet id='radvirtualgrid-mvvm-block_1-cs' />
 
 ## Implementing a custom DataProvider
 
@@ -115,130 +26,7 @@ The next step is to define a custom __DataProvider__ that handles some specific 
 
 __Example 2: Implementing a Custom DataProvider__
 
-```C#
-	public class MyDataProvider : DataProvider
-	    {
-	        private List<int> selectedIndexes;
-	        public MyDataProvider(IEnumerable source) : base(source)
-	        {
-	            this.selectedIndexes = new List<int>();
-	        }
-	
-	        //At this state the SelectedIndexes are not cleared yet and can be persisted.
-	        protected override void SortDescriptorPrepared(SortedEventArgs e)
-	        {
-	            var selectedIndexes = this.ParentGrid.SelectedIndexes.ToList();
-	            if (selectedIndexes.Count > 0)
-	            {
-	                this.PersistSelection(selectedIndexes);
-	            }
-	            base.SortDescriptorPrepared(e);
-	        }
-	
-	        //Update the selection after the sorting is processed.
-	        protected override void OnSortingCompleted()
-	        {
-	            base.OnSortingCompleted();
-	            this.UpdateSelection(this.selectedIndexes);
-	        }
-	
-	        //Hide the primary key property
-	        public override IList<ItemPropertyInfo> ItemProperties
-	        {
-	            get
-	            {
-	                return base.ItemProperties.Skip(1).ToList();
-	            }
-	        }
-	
-	        protected override void OnHeaderValueNeeded(HeaderValueEventArgs e)
-	        {
-	            if (e.HeaderOrientation == VirtualGridOrientation.Horizontal)
-	            {
-	                int propertyIndex = this.GetPropertyIndex("Name");
-	
-	                if (e.Index == propertyIndex)
-	                {
-	                    e.Value = "Club Name";
-	                }
-	                else
-	                {
-	                    base.OnHeaderValueNeeded(e);
-	                }
-	            }
-	        }
-	
-	        protected override void OnEditorNeeded(EditorNeededEventArgs args)
-	        {
-	            int propertyIndex = this.GetPropertyIndex("Established");
-	            if (args.ColumnIndex == propertyIndex)
-	            {
-	                var editor = new RadDateTimePicker();
-	                var item = (this.Source.GetItemAt(args.RowIndex) as Club);
-	
-	                args.Editor = editor;
-	                editor.SelectedValue = item.Established;
-	                args.EditorProperty = RadDateTimePicker.SelectedValueProperty;
-	            }
-	            else
-	            {
-	                base.OnEditorNeeded(args);
-	            }
-	            
-	        }
-	
-	        protected override bool IsColumnReadOnly(int columnIndex)
-	        {
-	            int propertyIndex = this.GetPropertyIndex("Name");
-	            if (columnIndex == propertyIndex)
-	            {
-	                return true;
-	            }
-	
-	            return base.IsColumnReadOnly(columnIndex);
-	        }
-	
-	        /// <summary>
-	        /// Gets the index of a given property
-	        /// </summary>
-	        /// <param name="propertyName">The property name</param>
-	        /// <returns>The property index</returns>
-	        private int GetPropertyIndex(string propertyName)
-	        {
-	            ItemPropertyInfo itemProperty = this.ItemProperties.Where(ip => ip.Name == propertyName).FirstOrDefault();
-	            int index = this.ItemProperties.IndexOf(itemProperty);
-	
-	            return index;
-	        }
-	
-	        /// <summary>
-	        /// Persists the selected indexes
-	        /// </summary>
-	        /// <param name="selectedIndexes"></param>
-	        private void PersistSelection(IEnumerable<int> selectedIndexes)
-	        {
-	            foreach (int index in selectedIndexes)
-	            {
-	                this.selectedIndexes.Add(index);
-	            }
-	        }
-	
-	        /// <summary>
-	        /// Adds the previously persisted indexes
-	        /// </summary>
-	        /// <param name="selectedIndexes"></param>
-	        private void UpdateSelection(IEnumerable<int> selectedIndexes)
-	        {
-	            foreach (int index in selectedIndexes)
-	            {
-	                if (!this.ParentGrid.SelectedIndexes.Contains(index))
-	                {
-	                    this.ParentGrid.ToggleIndexSelection(index);
-	                }
-	            }
-	        }
-    }
-```
+<snippet id='radvirtualgrid-mvvm-block_2-cs' />
 
 ## Defining the View Model
 
@@ -246,25 +34,7 @@ The following code snippet demonstrates how the custom DataProvider can be expos
 
 __Example 2: Defining the View Model__
 
-```C#
-	public class MyViewModel: ViewModelBase
-    {
-        private MyDataProvider dataProvider;
-
-        public MyDataProvider DataProvider 
-        {
-            get 
-            {
-                if (this.dataProvider == null)
-                {
-                    this.dataProvider = new MyDataProvider(Club.GetClubs());
-                }
-
-                return this.dataProvider;
-            }
-        }
-    }
-```
+<snippet id='radvirtualgrid-mvvm-block_3-cs' />
 
 ## Populate RadVirtualGrid
 
@@ -272,16 +42,7 @@ This section shows how the View Model can be set to be the DataContext of __RadV
 
 __Example 3: Populating RadVirtualGrid__
 
-```XAML
-	<Window.Resources>
-        <local:MyViewModel x:Key="MyViewModel"/>
-    </Window.Resources>
-    <Grid DataContext="{StaticResource MyViewModel}">
-        <telerik:RadVirtualGrid DataProvider="{Binding DataProvider}" 
-                                Margin="5" >
-        </telerik:RadVirtualGrid>
-    </Grid>
-```
+<snippet id='radvirtualgrid-mvvm-block_4-xaml' />
 
 ## See Also
 

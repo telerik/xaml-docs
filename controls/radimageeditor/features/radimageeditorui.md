@@ -59,29 +59,17 @@ When it comes to image editing tools which have settings and a live preview, the
 
 __Example 1: RadImageEditorUI with a resize tool__
 
-```XAML
-	<telerik:RadImageEditorUI x:Name="ImageEditorUI">
-	    <telerik:RadImageEditorUI.ImageToolsSections>
-	        <telerik:ImageToolsSection Header="Transform">
-	            <telerik:ImageToolItem ImageKey="Resize" Text="Resize" Command="commands:ImageEditorRoutedCommands.ExecuteTool">
-	                <telerik:ImageToolItem.CommandParameter>
-	                    <tools:ResizeTool x:Name="resizeTool" />
-	                </telerik:ImageToolItem.CommandParameter>
-	            </telerik:ImageToolItem>
-	        </telerik:ImageToolsSection>
-	    </telerik:RadImageEditorUI.ImageToolsSections>
-	</telerik:RadImageEditorUI>
-```
+<snippet id='radimageeditor-features-radimageeditorui-example_1_radimageeditorui_with_a_resize_tool-xaml' />
+
+
+
 
 The namespaces that have to be registered are listed in **Example 2**
 
 __Example 2: Required namespaces__
 
-```XAML
-xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"
-xmlns:commands="clr-namespace:Telerik.Windows.Media.Imaging.ImageEditorCommands.RoutedCommands;assembly=Telerik.Windows.Controls.ImageEditor"
-```
+<snippet id='radimageeditor-features-radimageeditorui-example_2_required_namespaces-xaml' />
+
 
 
 >The code that defines the default UI and includes all implemented image editing tools is available in the [First Look example](https://github.com/telerik/xaml-sdk/blob/master/ImageEditor/RadImageEditorUIFirstLook/MainPage.xaml) from our SDK repository. 
@@ -91,17 +79,17 @@ The image to be used will be chosen depending on the Theme applied to the editor
 
 __Example 3: Set the Image property__
 
-```XAML
-<telerik:ImageToolItem Text="Resize" Image="/RadImageEditorApplication;component/Images/resize.png" Command="commands:ImageEditorRoutedCommands.ExecuteTool">
-	<telerik:ImageToolItem.CommandParameter>
-		<tools:ResizeTool x:Name="resizeTool1" />
-	</telerik:ImageToolItem.CommandParameter>
-</telerik:ImageToolItem>
-```
+<snippet id='radimageeditor-features-radimageeditorui-example_3_set_the_image_property-xaml' />
 
->You can see how the tools and commands can be declared in code-behind and modified on the fly in the __CustomizingDefaultUI__ demo in the [WPF demos application](https://demos.telerik.com/wpf/)
 
->tip A custom UI that is not based on RadImageEditorUI can also be created and used. This approach is illustrated in the demo __CustomUI__, which can be viewed in the [WPF demos application](https://demos.telerik.com/wpf/).
+>You can see how the tools and commands can be declared in code-behind and modified on the fly in the __CustomizingDefaultUI__ demo 
+{% if site.site_name == 'WPF' %}in the [WPF demos application](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}at [https://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI](https://demos.telerik.com/silverlight/#ImageEditor/CustomizingDefaultUI){% endif %}
+
+.
+
+>tip A custom UI that is not based on RadImageEditorUI can also be created and used. This approach is illustrated in the demo __CustomUI__, which can be viewed  
+{% if site.site_name == 'WPF' %}in the [WPF demos application](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}here: [https://demos.telerik.com/silverlight/#ImageEditor/CustomUI](https://demos.telerik.com/silverlight/#ImageEditor/CustomUI){% endif %}
+.
 
 ## See Also
 

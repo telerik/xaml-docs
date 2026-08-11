@@ -43,19 +43,8 @@ You can find the required assemblies for each control from the UI for WPF suite 
 To display the __RadCartesianChart3D__ you will need to define it along with its axes (see __Example 1__). You can find more information about the chart's axes in the [Axes]({%slug radchartview3d-axes%}) help article.
 
 __Example 1: Empty RadCartesianChart3D__
-```XAML
-	<telerik:RadCartesianChart3D>
-		<telerik:RadCartesianChart3D.XAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.XAxis>
-		<telerik:RadCartesianChart3D.ZAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.ZAxis>
-		<telerik:RadCartesianChart3D.YAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.YAxis>
-	</telerik:RadCartesianChart3D>	
-```
+<snippet id='radchartview3d-getting-started-example_1_empty_radcartesianchart3d-xaml' />
+
 	
 At this point the viewport of the chart is rendered.
 
@@ -67,40 +56,8 @@ At this point the viewport of the chart is rendered.
 The data in the chart is presented with the chart series objects. You can find more information about this in the [Series]({%slug radchartview3d-pointseries3d%}) section of the help documentation.
 
 __Example 2: Defining series__
-```XAML
-	<telerik:RadCartesianChart3D>
-		<telerik:RadCartesianChart3D.XAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.XAxis>
-		<telerik:RadCartesianChart3D.ZAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.ZAxis>
-		<telerik:RadCartesianChart3D.YAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.YAxis>
-		<telerik:RadCartesianChart3D.Series>
-			<telerik:PointSeries3D PointSize="60 60 60">
-				<telerik:PointSeries3D.DataPoints>
-					<telerik:XyzDataPoint3D XValue="66" YValue="48" ZValue="81" />
-					<telerik:XyzDataPoint3D XValue="94" YValue="15" ZValue="67" />
-					<telerik:XyzDataPoint3D XValue="26" YValue="32" ZValue="21" />
-					<telerik:XyzDataPoint3D XValue="25" YValue="72" ZValue="59" />
-					<telerik:XyzDataPoint3D XValue="15" YValue="73" ZValue="24" />
-					<telerik:XyzDataPoint3D XValue="65" YValue="32" ZValue="17" />
-					<telerik:XyzDataPoint3D XValue="20" YValue="44" ZValue="29" />
-					<telerik:XyzDataPoint3D XValue="31" YValue="10" ZValue="43" />
-					<telerik:XyzDataPoint3D XValue="17" YValue="55" ZValue="39" />
-					<telerik:XyzDataPoint3D XValue="52" YValue="40" ZValue="94" />
-					<telerik:XyzDataPoint3D XValue="98" YValue="60" ZValue="68" />
-					<telerik:XyzDataPoint3D XValue="87" YValue="40" ZValue="35" />
-					<telerik:XyzDataPoint3D XValue="20" YValue="27" ZValue="87" />
-					<telerik:XyzDataPoint3D XValue="88" YValue="35" ZValue="87" />
-					<telerik:XyzDataPoint3D XValue="91" YValue="60" ZValue="51" />
-				</telerik:PointSeries3D.DataPoints>
-			</telerik:PointSeries3D>
-		</telerik:RadCartesianChart3D.Series>
-	</telerik:RadCartesianChart3D>
-```
+<snippet id='radchartview3d-getting-started-example_2_defining_series-xaml' />
+
 
 #### __Figure 2: PointSeries3D__
 ![{{ site.framework_name }} RadChartView3D PointSeries3D](images/radchartview-3d-getting-started-1.png)	
@@ -108,11 +65,8 @@ __Example 2: Defining series__
 For precisely reading the elements in the 3D space you can enable the chart's grid. You can read more about this in the [Chart Grid]({%slug radchartview3d-chartgrid%}) help article.
 
 __Example 3: Adding chart grid__  
-```XAML
-	<telerik:RadCartesianChart3D.Grid>
-		<telerik:CartesianChart3DGrid />                    
-	</telerik:RadCartesianChart3D.Grid>
-```
+<snippet id='radchartview3d-getting-started-example_3_adding_chart_grid-xaml' />
+
 
 #### __Figure 3: Chart grid__
 ![{{ site.framework_name }} RadChartView3D Chart grid](images/radchartview-3d-getting-started-2.png)
@@ -122,73 +76,24 @@ __Example 3: Adding chart grid__
 This section demonstrates how to setup the chart from __Example 1__, but in a data binding scenario. 
 
 __Example 4: Define the data points model__  
-```C#
-	public class PlotInfo
-	{
-		public double XValue { get; set; }
-		public double YValue { get; set; }
-		public double ZValue { get; set; }
-	}
-```
+<snippet id='radchartview3d-getting-started-example_4_define_the_data_points_model-cs' />
+
 
 __Example 5: Set up the DataContext of the view__
-```C#  
-	var source = new ObservableCollection<PlotInfo>()
-	{
-		new PlotInfo() { XValue = 66, YValue = 48, ZValue = 81 },
-		new PlotInfo() { XValue = 94, YValue = 15, ZValue = 67 },
-		new PlotInfo() { XValue = 26, YValue = 32, ZValue = 21 },
-		new PlotInfo() { XValue = 25, YValue = 72, ZValue = 59 },
-		new PlotInfo() { XValue = 15, YValue = 73, ZValue = 24 },
-		new PlotInfo() { XValue = 65, YValue = 32, ZValue = 17 },
-		new PlotInfo() { XValue = 20, YValue = 44, ZValue = 29 },
-		new PlotInfo() { XValue = 31, YValue = 10, ZValue = 43 },
-		new PlotInfo() { XValue = 17, YValue = 55, ZValue = 39 },
-		new PlotInfo() { XValue = 52, YValue = 40, ZValue = 94 },
-		new PlotInfo() { XValue = 98, YValue = 60, ZValue = 68 },
-		new PlotInfo() { XValue = 87, YValue = 40, ZValue = 35 },
-		new PlotInfo() { XValue = 20, YValue = 27, ZValue = 87 },
-		new PlotInfo() { XValue = 88, YValue = 35, ZValue = 87 },
-		new PlotInfo() { XValue = 91, YValue = 60, ZValue = 51 },
-	};
-	
-	this.series.DataContext = source;
-```
+<snippet id='radchartview3d-getting-started-example_5_set_up_the_datacontext_of_the_view-cs' />
+
 
 __Example 6: Set up the view__  
-```XAML
-	<telerik:RadCartesianChart3D>
-		<telerik:RadCartesianChart3D.XAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.XAxis>
-		<telerik:RadCartesianChart3D.ZAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.ZAxis>
-		<telerik:RadCartesianChart3D.YAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.YAxis>		
-		<telerik:RadCartesianChart3D.Grid>
-			<telerik:CartesianChart3DGrid />                    
-		</telerik:RadCartesianChart3D.Grid>		
-		<telerik:RadCartesianChart3D.Series>                
-			<telerik:PointSeries3D x:Name="series" 
-								   PointSize="60 60 60"                                        
-								   XValueBinding="XValue"
-								   YValueBinding="YValue"
-								   ZValueBinding="ZValue"
-								   ItemsSource="{Binding}"/>
-		</telerik:RadCartesianChart3D.Series>
-	</telerik:RadCartesianChart3D>
-```
+<snippet id='radchartview3d-getting-started-example_6_set_up_the_view-xaml' />
+
 
 ## Setting chart size
 
 The size of the chart's plot area can be changed via the __PlotAreaSize__ property of the chart. The property is of type System.Windows.Media.Media3D.__Size3D__, thus allowing you to set all 3 dimensions of the area. 
 
 __Example 7: Setting PlotAreaSize__  
-```XAML
-	<telerik:RadCartesianChart3D PlotAreaSize="500, 500, 500"/>
-```
+<snippet id='radchartview3d-getting-started-example_7_setting_plotareasize-xaml' />
+
 
 The default size is X=1000, Y=1000, Z=800
 
@@ -199,11 +104,8 @@ The default size is X=1000, Y=1000, Z=800
 In order to interact with the chart's scene you can use the __Chart3DCameraBehavior__. You can find more information about this in the [Camera Behavior]({%slug radchartview3d-behaviors-camera%}) article.
 
 __Example 8: Defining camera behavior__  
-```XAML
-	<telerik:RadCartesianChart3D.Behaviors>
-		<telerik:Chart3DCameraBehavior />
-	</telerik:RadCartesianChart3D.Behaviors>
-```
+<snippet id='radchartview3d-getting-started-example_8_defining_camera_behavior-xaml' />
+
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources

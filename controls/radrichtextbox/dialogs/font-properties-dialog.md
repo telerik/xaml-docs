@@ -25,13 +25,9 @@ The dialog can be opened from the dialog launcher button at the bottom right cor
 The dialog can be shown by executing the `ShowFontPropertiesDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
 __Executing the show dialog command__
-```C#
-	this.richTextBox.Commands.ShowFontPropertiesDialogCommand.Execute(null);
-```
+<snippet id='radrichtextbox-dialogs-font-properties-dialog-block_1-cs' />
 
 Alternatively, call the `ShowFontPropertiesDialog` method of `RadRichTextBox`.
 
 __Using the show dialog method__
-```C#
-	this.richTextBox.ShowFontPropertiesDialog();
-```
+<snippet id='radrichtextbox-dialogs-font-properties-dialog-block_2-cs' />

@@ -44,56 +44,12 @@ __RadRibbonView__ supports single __RadRibbonTab__ selection. You can select it 
 This code snippet shows you how to attach to the selection events:
 
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView" PreviewSelectionChanged="radRibbonView_PreviewSelectionChanged" SelectionChanged="radRibbonView_SelectionChanged">
-	...
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-selection-block_1-xaml' />
 
 Below is a sample implementation of both of the event handlers:
 
 
-```C#
-	private void radRibbonView_PreviewSelectionChanged(object sender, RadSelectionChangedEventArgs e)
-	{
-	 // Get the ribbonView
-	 RadRibbonView ribbonView = sender as RadRibbonView;
-	 //Get the selected items
-	 IList selectedItems = e.AddedItems;
-	 //Get the unselected items
-	 IList unselectedItems = e.RemovedItems;
-	 // Cancel the selection
-	 e.Handled = true;
-	}
-	private void radRibbonView_SelectionChanged(object sender, RadSelectionChangedEventArgs e)
-	{
-	 // Get the ribbonView
-	 RadRibbonView ribbonView = sender as RadRibbonView;
-	 //Get the selected items
-	 IList selectedItems = e.AddedItems;
-	 //Get the unselected items
-	 IList unselectedItems = e.RemovedItems;
-	}
-```
-```VB.NET
-	Private Sub radRibbonView_PreviewSelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
-	 ' Get the ribbonView'
-	 Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)
-	 'Get the selected items'
-	 Dim selectedItems As IList = e.AddedItems
-	 'Get the unselected items'
-	 Dim unselectedItems As IList = e.RemovedItems
-	 ' Cancel the selection'
-	 e.Handled = True
-	End Sub
-	Private Sub radRibbonView_SelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
-	 ' Get the ribbonView'
-	 Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)
-	 'Get the selected items'
-	 Dim selectedItems As IList = e.AddedItems
-	 'Get the unselected items'
-	 Dim unselectedItems As IList = e.RemovedItems
-	End Sub
-```
+<snippet id='radribbonview-features-selection-block_2-cs' />
+<snippet id='radribbonview-features-selection-block_3-vb' />
 
 For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview]({%slug radribbonview-events-overview%}) topic.

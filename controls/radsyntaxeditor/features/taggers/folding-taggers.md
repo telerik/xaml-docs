@@ -12,10 +12,7 @@ position: 2
 The folding taggers are used when you want to create collapsible (foldable) sections of code in a document. The base class responsible for this functionality is the **FoldingTaggerBase** class with concrete implementations provided out of the box being the **BracketFoldingTagger**, **CSharpFoldingTagger**, **VisualBasicFoldingTagger** and **XMLFoldingTagger**.
 
 __Example 1: Registering a folding tagger__
-```C#
-    this.foldingTagger = new CSharpFoldingTagger(this.syntaxEditor);
-    this.syntaxEditor.TaggersRegistry.RegisterTagger(this.foldingTagger);
-```
+<snippet id='radsyntaxeditor-features-taggers-folding-taggers-block_1-cs' />
 
 #### Figure 1: RadSyntaxEditor with a registered CSharpFoldingTagger
 
@@ -32,30 +29,12 @@ __Example 1: Registering a folding tagger__
 * __IsMatchingCaseSensitive__: A __boolean__ property that gets or sets whether the matching between the start and end folding tags is case sensitive.
 
 __Example 2: Adding FoldingRegionDefinitions__
-```C#
-    public CustomFoldingTagger(ITextDocumentEditor editor) : base(editor)
-    {
-        this.FoldingRegionDefinitions.Add(new FoldingRegionDefinition("FUNCTION", "END"));
-        this.FoldingRegionDefinitions.Add(new FoldingRegionDefinition("IF", "END IF"));
-    }
-```
+<snippet id='radsyntaxeditor-features-taggers-folding-taggers-block_2-cs' />
 
 In addition, you may also want to override the **BuildStartRegionBlockPattern** and **BuildEndRegionBlockPattern** and return a custom regular expression to match the start and end.
 
 __Example 3: Default implementation of the BuildStartRegionBlockPattern and BuildEndRegionBlockPattern methods__
-```C#
-    protected override string BuildStartRegionBlockPattern(Dictionary<string, string> startToEndMap)
-    {
-        // returns \bFUNCTION\b|\bIF\b
-        return string.Join("|", startToEndMap.Keys.Select(x => string.Format("\\b{0}\\b", x)));
-    }
-
-    protected override string BuildEndRegionBlockPattern(Dictionary<string, string> startToEndMap)
-    {
-        // returns \bEND\b|\bEND IF\b
-        return string.Join("|", startToEndMap.Values.Select(x => string.Format("\\b{0}\\b", x)));
-    }
-```
+<snippet id='radsyntaxeditor-features-taggers-folding-taggers-block_3-cs' />
 
 Here's a full list of the overridable methods which you can use in order to create your own custom folding taggers. You can check their default implementations in the various out of the box folding taggers to get a general understanding of how to use them by {% if site.site_name == 'WPF' %}[downloading the source code]({%slug download-product-files-wpf%}){% else %}[downloading the source code]({%slug download-product-files%}){% endif %} of the UI for {{ site.framework_name }} suite.
 
@@ -78,13 +57,7 @@ Here's a full list of the overridable methods which you can use in order to crea
 If you want to change the appearance of the folding buttons which appear next to each folding region, you can create an appropriate style targeting the **FoldingToggleButton** element.
 
 __Example 1: Styling the FoldingToggleButton__
-```XAML
-    <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-    <Style TargetType="syntaxEditor:FoldingToggleButton" BasedOn="{StaticResource FoldingToggleButtonStyle}">--> 
-    <Style xmlns:syntaxEditor="clr-namespace:Telerik.Windows.Controls.SyntaxEditor.UI;assembly=Telerik.Windows.Controls.SyntaxEditor" TargetType="syntaxEditor:FoldingToggleButton">
-        <Setter Property="Foreground" Value="Red" />
-    </Style>
-```
+<snippet id='radsyntaxeditor-features-taggers-folding-taggers-block_4-xaml' />
 
 ## See Also
 

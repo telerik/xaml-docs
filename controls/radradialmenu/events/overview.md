@@ -56,16 +56,7 @@ Available, since the __R1 2021__ release and occurs before a menu level changes.
 
 __Example 1: Handling the Navigating event__
 
-```C#
-	private void RadRadialMenu_Navigating(object sender, Controls.RadialMenuNavigatingEventArgs e)
-	{
-		// Auto-size menu items only when they are more than 2
-		if (e.MenuItemTarget != null && e.MenuItemTarget.ChildItems.Count <= 2)
-		{
-			e.AutoSizeMenuItems = false;
-		}
-	}
-```
+<snippet id='radradialmenu-events-overview-block_1-cs' />
 
 ## RadRadialMenuItem Events
 

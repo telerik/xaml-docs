@@ -14,38 +14,7 @@ __RadTileView__ support nesting. You can nest different __TileViews__ in order t
 
 
 
-```XAML
-	<telerik:RadTileView x:Name="RadTileView1" MinimizedItemsPosition="Bottom">
-	    <telerik:RadTileViewItem Header="Item1" TileState="Maximized">
-	        <telerik:RadTileView>
-	            <telerik:RadTileViewItem Header="Item1">
-	                <TextBlock Text="Item1 Content"/>
-	            </telerik:RadTileViewItem>
-	            <telerik:RadTileViewItem Header="Item2">
-	                <TextBlock Text="Item2 Content"/>
-	            </telerik:RadTileViewItem>
-	            <telerik:RadTileViewItem Header="Item3" >
-	                <TextBlock Text="Item3 Content"/>
-	            </telerik:RadTileViewItem>
-	        </telerik:RadTileView>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item2">
-	        <TextBlock Text="Item2 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item3" >
-	        <TextBlock Text="Item3 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item4" >
-	        <TextBlock Text="Item4 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item5" >
-	        <TextBlock Text="Item5 Content"/>
-	    </telerik:RadTileViewItem>
-	    <telerik:RadTileViewItem Header="Item6" >
-	        <TextBlock Text="Item6 Content"/>
-	    </telerik:RadTileViewItem>
-	</telerik:RadTileView>
-```
+<snippet id='radtileview-features-nesting-tile-views-block_1-xaml' />
 
 ![Nested RadTileView](images/tileview_nesting.png)
 

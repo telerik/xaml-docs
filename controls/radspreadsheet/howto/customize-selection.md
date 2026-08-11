@@ -29,35 +29,12 @@ The examples below demonstrate one way to customize the properties of the select
 
 __Customizing selection__
 
-```XAML
-	<telerik:RadSpreadsheet x:Name="radSpreadsheet" SelectionStrokeThickness="2" SelectionStroke="Green">
-	    <telerik:RadSpreadsheet.SelectionFill>
-	        <SolidColorBrush Color="GreenYellow" Opacity="0.5" />
-	    </telerik:RadSpreadsheet.SelectionFill>
-	</telerik:RadSpreadsheet>
-```
+<snippet id='radspreadsheet-howto-customize-selection-block_1-xaml' />
 
 __Customizing selection__ 
 
-```C#
-	Brush strokeBrush = new SolidColorBrush(Colors.Green);
-	Brush fillBrush = new SolidColorBrush(Colors.GreenYellow);
-	fillBrush.Opacity = 0.5;
-	
-	this.radSpreadsheet.SelectionFill = fillBrush;
-	this.radSpreadsheet.SelectionStroke = strokeBrush;
-	this.radSpreadsheet.SelectionStrokeThickness = 2;
-```
-```VB.NET
-
-	Dim strokeBrush As Brush = New SolidColorBrush(Colors.Green)
-	Dim fillBrush As Brush = New SolidColorBrush(Colors.GreenYellow)
-	fillBrush.Opacity = 0.5
-	
-	Me.radSpreadsheet.SelectionFill = fillBrush
-	Me.radSpreadsheet.SelectionStroke = strokeBrush
-	Me.radSpreadsheet.SelectionStrokeThickness = 2
-```
+<snippet id='radspreadsheet-howto-customize-selection-block_2-cs' />
+<snippet id='radspreadsheet-howto-customize-selection-block_3-vb' />
 
 
 ## See Also

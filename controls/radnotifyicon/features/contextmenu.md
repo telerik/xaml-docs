@@ -16,20 +16,7 @@ You can display a context menu when the user interacts with the notify icon with
 The __TrayContextMenu__ property expects a value of type [RadContextMenu]({%slug contextmenu-getting-started%}). __Example 1__ demonstrates how it can be used. 
 
 __Example 1: Setting TrayContextMenu__
-```XAML
-    
-    <telerik:RadNotifyIcon
-        x:Name="icon">
-        <telerik:RadNotifyIcon.TrayContextMenu>
-            <telerik:RadContextMenu IconColumnWidth="0">
-                <telerik:RadMenuItem Header="Item 1" />
-                <telerik:RadMenuItem Header="Item 2" />
-
-                <telerik:RadMenuItem Header="Item 3" />
-            </telerik:RadContextMenu>
-        </telerik:RadNotifyIcon.TrayContextMenu>
-    </telerik:RadNotifyIcon>
-```
+<snippet id='radnotifyicon-features-contextmenu-block_1-xaml' />
 
 #### __Figure 1: RadContextMenu displayed over the icon__
 
@@ -40,10 +27,7 @@ __Example 1: Setting TrayContextMenu__
 The __ContextMenuActivationMouseEvent__ property determines when the context menu will be shown. The default value is __RightClick__.
 
 __Example 2: Setting ContextMenuActivationMouseEvent__
-```XAML
-    
-    <telerik:RadNotifyIcon ContextMenuActivationMouseEvent="RightDoubleClick" />
-```
+<snippet id='radnotifyicon-features-contextmenu-block_2-xaml' />
 
 ## See Also 
 

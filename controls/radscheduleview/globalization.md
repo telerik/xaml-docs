@@ -44,18 +44,8 @@ You can set the default calendar as demonstrated in **Example 1**.
 
 __Example 1: Setting the default calendar__
 
-```C#
-	CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
-	Thread.CurrentThread.CurrentCulture = arSA;
-	Thread.CurrentThread.CurrentUICulture = arSA;
-	arSA.DateTimeFormat.Calendar = new HijriCalendar();
-```
-```VB.NET
-	Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
-	Thread.CurrentThread.CurrentCulture = arSA
-	Thread.CurrentThread.CurrentUICulture = arSA
-	arSA.DateTimeFormat.Calendar = New HijriCalendar()
-```
+<snippet id='radscheduleview-globalization-block_1-cs' />
+<snippet id='radscheduleview-globalization-block_2-vb' />
 
 **Figure 1** demonstrates the final result:
 

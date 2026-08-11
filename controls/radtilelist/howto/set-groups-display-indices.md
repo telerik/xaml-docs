@@ -20,31 +20,7 @@ Once you create the groups in the definition of the tiles, you can set directly 
 
 __Example 1: Setting the DisplayIndex property of the TileGroups__
 
-```XAML
-	<telerik:RadTileList x:Name="RadTileList">
-	  <telerik:RadTileList.Groups>
-	    <telerik:TileGroup Header="Europe" DisplayIndex="2">
-	      <telerik:TileGroup.Items>
-	        <telerik:Tile Background="#FF006AC1" Content="Italy" />
-	        <telerik:Tile Background="#FF006AC1" Content="Germany" />
-	      </telerik:TileGroup.Items>
-	    </telerik:TileGroup>
-	    <telerik:TileGroup Header="Asia" DisplayIndex="1">
-	      <telerik:TileGroup.Items>
-	        <telerik:Tile Background="#FF006AC1" Content="China" />
-	        <telerik:Tile Background="#FF006AC1" Content="India" />
-	      </telerik:TileGroup.Items>
-	    </telerik:TileGroup>
-	    <telerik:TileGroup Header="Africa" DisplayIndex="0">
-	      <telerik:TileGroup.Items>
-	        <telerik:Tile Background="#FF006AC1" Content="Nigeria" />
-	        <telerik:Tile Background="#FF006AC1" Content="Egipt" />
-	      </telerik:TileGroup.Items>
-	    </telerik:TileGroup>
-	  </telerik:RadTileList.Groups>
-	</telerik:RadTileList>
-	<telerik:RadTileList GroupTemplate="{StaticResource GroupTemplate}"/>
-```
+<snippet id='radtilelist-howto-set-groups-display-indices-block_1-xaml' />
 
 
 
@@ -52,30 +28,7 @@ __Example 1: Setting the DisplayIndex property of the TileGroups__
 
 __Example 1: Setting the DisplayIndex property of the TileGroups__
 
-```XAML
-	<telerik:RadTileList x:Name="RadTileList1">
-	  <telerik:RadTileList.Groups>
-	    <telerik:TileGroup Header="Europe" DisplayIndex="2">
-	      <telerik:TileGroup.Items>
-	        <telerik:Tile Background="#FFA300AB" Content="Italy" />
-	        <telerik:Tile Background="#FFA300AB" Content="Germany" />
-	      </telerik:TileGroup.Items>
-	    </telerik:TileGroup>
-	    <telerik:TileGroup Header="Asia" DisplayIndex="1">
-	      <telerik:TileGroup.Items>
-	        <telerik:Tile Background="#FFA300AB" Content="China" />
-	        <telerik:Tile Background="#FFA300AB" Content="India" />
-	      </telerik:TileGroup.Items>
-	    </telerik:TileGroup>
-	    <telerik:TileGroup Header="Africa" DisplayIndex="0">
-	      <telerik:TileGroup.Items>
-	        <telerik:Tile Background="#FFA300AB" Content="Nigeria" />
-	        <telerik:Tile Background="#FFA300AB" Content="Egipt" />
-	      </telerik:TileGroup.Items>
-	    </telerik:TileGroup>
-	  </telerik:RadTileList.Groups>
-	</telerik:RadTileList>
-```
+<snippet id='radtilelist-howto-set-groups-display-indices-block_2-xaml' />
 
 ![Manually Generated Tiles Group Display Index WPF](images/ManuallyGeneratedTiles_GroupDisplayIndex_WPF.PNG){% endif %}
 
@@ -86,28 +39,13 @@ When you set __ItemsSource__ of __RadTileList__ and you need to control the orde
 
 __Example 2: Subscribing to the AutoGeneratingTile event__
 
-```XAML
-	<telerik:RadTileList x:Name="RadTileList2"
-	           GroupMember="Occupation"
-	                   AutoGeneratingTile="OnAutoGeneratingTile"
-	                   ItemTemplate="{StaticResource ItemTemplate}"/>
-```
+<snippet id='radtilelist-howto-set-groups-display-indices-block_3-xaml' />
 
 
 
 __Example 3: Handling the AutoGeneratingTile event__
 
-```C#
-	private void OnAutoGeneratingTile(object sender, AutoGeneratingTileEventArgs e)
-	{
-	    var item = e.Tile.DataContext as Employee;
-	    if (item.Occupation.Contains("Manager"))
-	    {
-	        e.Tile.Group.DisplayIndex = 0;
-	        e.Tile.Group.Header = "Managers";
-	    }
-	}
-```
+<snippet id='radtilelist-howto-set-groups-display-indices-block_4-cs' />
 
 
 

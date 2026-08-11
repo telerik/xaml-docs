@@ -19,19 +19,8 @@ The 3D series allows you to change the default appearance of their data point vi
 The material of a 3D object specifies the brush or the texture that will be applied to it. You can set the material of the series’ data points via the __DefaultVisualMaterial__ property which is of type __System.Windows.Media.Media3D.Material__. You can use any of the material types provided by the WPF framework. 
 
 __Example 1: Setting default visual material__
-```XAML
-	<telerik:RadCartesianChart3D>          
-		<telerik:RadCartesianChart3D.Series>
-			<telerik:BarSeries3D>
-				<telerik:BarSeries3D.DefaultVisualMaterial>
-					<MaterialGroup>
-						<DiffuseMaterial Brush="#DD5044"/>
-						<SpecularMaterial Brush="#BF444444" SpecularPower="30" />
-					</MaterialGroup>
-				</telerik:BarSeries3D.DefaultVisualMaterial>
-			</telerik:BarSeries3D>
-	</telerik:RadCartesianChart3D>
-```
+<snippet id='radchartview3d-styles-and-templates-cutomizing-3d-series-example_1_setting_default_visual_material-xaml' />
+
 
 #### __Figure 1: BarSeries3D and PointSeries3D with custom material__
 ![{{ site.framework_name }} RadChartView3D BarSeries3D and PointSeries3D with custom material](images/radchartview-3d-cutomizing-cartesian-series-0.png)
@@ -41,30 +30,12 @@ __Example 1: Setting default visual material__
 The geometry of a 3D object describes its shape. You can define a geometry for the series’ data points via the __DefaultVisualGeometry__ property. The property is of type __System.Windows.Media.Media3D.Geometry3D__ and accepts an object of type __MeshGeometry3D__.
 
 __Example 2: Defining a geometry presenting a cube and applying it to a PointSeries3D__
-```XAML
-	<telerik:PointSeries3D>                    
-		<telerik:PointSeries3D.DefaultVisualGeometry>                       
-			<MeshGeometry3D Positions="0 0 0  0 0 1  0 1 1  0 1 0 
-									   1 1 0  1 1 1  1 0 1  1 0 0"						
-							TriangleIndices="0 1 2  0 2 3  
-											 2 5 3  3 5 4  
-											 4 5 7  7 5 6  
-											 0 7 6  0 6 1  
-											 0 3 7  3 4 7
-											 2 1 6  5 2 6"/>
-		</telerik:PointSeries3D.DefaultVisualGeometry> 
-	</telerik:PointSeries3D> 
-```
+<snippet id='radchartview3d-styles-and-templates-cutomizing-3d-series-example_2_defining_a_geometry_presenting_a_cube_and_applying_it_to_a_pointseries3d-xaml' />
+
 	
 __Example 3: Defining a geometry presenting a pyramid and applying it to a BarSeries3D__
-```XAML
-	<telerik:BarSeries3D.DefaultVisualGeometry>                      
-		<MeshGeometry3D Positions="0 0 0  0 1 0  1 1 0  1 0 0  0.5 0.5 1"
-						TriangleIndices="2 0 1  0 2 3
-										 2 1 4  0 4 1  
-										 0 3 4  2 4 3"/>
-	</telerik:BarSeries3D.DefaultVisualGeometry>
-```
+<snippet id='radchartview3d-styles-and-templates-cutomizing-3d-series-example_3_defining_a_geometry_presenting_a_pyramid_and_applying_it_to_a_barseries3d-xaml' />
+
 	
 > The __Positions__ are defined in relative units between 0 and 1, according to the bounds of the data point visual.
 
@@ -78,88 +49,24 @@ The chart allows you to choose different geometries and materials for each data 
 You can use the __DefaultVisualMaterialSelector__ property to set a material selector and choose material dynamically.
 
 __Example 4: Implementing material selector__
-```C#
-	public class MyDefaultVisualMaterialSelector : MaterialSelector
-	{
-		public Material MaterialA { get; set; }
-		public Material MaterialB { get; set; }
+<snippet id='radchartview3d-styles-and-templates-cutomizing-3d-series-example_4_implementing_material_selector-cs' />
 
-		public override Material SelectMaterial(object context)
-		{
-			if (context is ModelA)
-			{
-				return this.MaterialA;
-			}
-			else if (context is ModelB)
-			{
-				return this.MaterialB;
-			}
-			else
-			{
-				return base.SelectMaterial(context);
-			}
-		}
-	}
-```
 
 __Example 5: Defining material selector__	
-```XAML
-	<FrameworkElement.Resources>
-        <local:MyDefaultVisualMaterialSelector x:Key="materialSelector">
-            <local:MyDefaultVisualMaterialSelector.MaterialA>
-                <DiffuseMaterial Brush="Green" />
-            </local:MyDefaultVisualMaterialSelector.MaterialA>
-            <local:MyDefaultVisualMaterialSelector.MaterialB>
-                <DiffuseMaterial Brush="Orange" />
-            </local:MyDefaultVisualMaterialSelector.MaterialB>
-        </local:MyDefaultVisualMaterialSelector>
-    </FrameworkElement.Resources>
-```
+<snippet id='radchartview3d-styles-and-templates-cutomizing-3d-series-example_5_defining_material_selector-xaml' />
+
 
 > To improve the chart's performance, it is recommended to cache and reuse the Material objects instead of creating new ones for each model. You can find a runnable project demonstrating how to implement a material selector in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ChartView3D/WPF/DefaultVisualMaterialSelector). The project also demonstrates a simple material caching implementation.
 
 You can use the __DefaultVisualGeometrySelector__ property to choose different geometry for each data point dynamically.	
 
 __Example 6: Implementing geometry selector__
-```C#
-	public class MyDefaultGeometry3DSelector : Geometry3DSelector
-    {
-        public Material GeometryA { get; set; }
-        public Material GeometryB { get; set; }
+<snippet id='radchartview3d-styles-and-templates-cutomizing-3d-series-example_6_implementing_geometry_selector-cs' />
 
-        public override Geometry3D SelectGeometry(object context)
-        {			
-            if (context is ModelA)
-            {
-                return this.GeometryA;
-            }
-            else if (context is ModelB)
-            {
-                return this.GeometryB;
-            }
-            else
-            {
-                return base.SelectGeometry(context);
-            }
-        }
-	}
-```
 
 __Example 7: Defining geometry selector__	
-```XAML
-	<FrameworkElement.Resources>
-		<local:DefaultVisualGeometrySelector  x:Key="geometrySelector">
-			<local:DefaultVisualGeometrySelector.GeometryA >
-				<!--Set up the geometry-->
-				<MeshGeometry3D />
-			</local:DefaultVisualGeometrySelector.GeometryA>
-			<local:DefaultVisualGeometrySelector.GeometryA >
-				<!--Set up the geometry-->
-				<MeshGeometry3D />
-			</local:DefaultVisualGeometrySelector.GeometryA>
-		</local:DefaultVisualGeometrySelector>
-	</FrameworkElement.Resources>
-```
+<snippet id='radchartview3d-styles-and-templates-cutomizing-3d-series-example_7_defining_geometry_selector-xaml' />
+
 	
 ## See Also
 

@@ -15,9 +15,7 @@ The label feature allows you to display additional information about the text.
 The label displays as a watermark content (placeholder) when the RadWatermarkTextBox control is unfocused and the text is empty. When the control gets focused or any text is entered, the label is positioned on top (floating) of the text input area.
 
 __Setting the Label property__
-```XAML
-	<telerik:RadWatermarkTextBox Label="First Name" />
-```
+<snippet id='radwatermarktextbox-embedded-label-block_1-xaml' />
 
 #### Label default visualization  
 ![{{ site.framework_name }} RadWatermarkTextBox Label Default Visualization](images/radwatermarktextbox-features-label-0.png)
@@ -28,34 +26,19 @@ __Setting the Label property__
 To keep the label always positioned on top of the text input area, set the __KeepLabelFloated__ property of RadWatermarkTextBox to True.
 
 __Setting the KeepLabelFloated property__
-```XAML
-	<telerik:RadWatermarkTextBox KeepLabelFloated="True" />
-```
+<snippet id='radwatermarktextbox-embedded-label-block_2-xaml' />
 
 To get the current state of the label, use the __IsLabelFloated__ property of RadWatermarkTextBox.
 
 __Getting the state of the label__
-```C#
-	bool isLabelFloated = this.watermarkTextBox.IsLabelFloated;
-```
+<snippet id='radwatermarktextbox-embedded-label-block_3-cs' />
 
 ## Customizing Appearance
 
 The label visual element is of type `Telerik.Windows.Controls.Label`. To customize its appearance, use the `LabelStyle` property of `RadWatermarkTextBox`.
 
 __Customizing the label__
-```XAML
-	<telerik:RadWatermarkTextBox Label="First Name">
-		<telerik:RadWatermarkTextBox.LabelStyle>
-			<!-- if you use the NoXaml dlls, set the BasedOn property as well: -->
-			<!--  <Style TargetType="telerik:Label" BasedOn="{StaticResource WatermarkTextBoxLabelStyle}"> -->			
-			<Style TargetType="telerik:Label">
-				<Setter Property="Foreground" Value="#5CB9DE" />                    
-				<Setter Property="FontStyle" Value="Italic" />                    
-			</Style>
-		</telerik:RadWatermarkTextBox.LabelStyle>
-	</telerik:RadWatermarkTextBox>
-```
+<snippet id='radwatermarktextbox-embedded-label-block_4-xaml' />
 
 #### Customized label  
 ![{{ site.framework_name }} RadWatermarkTextBox Customized Label](images/radwatermarktextbox-features-label-2.png)
@@ -67,22 +50,7 @@ The label comes with a built-in animation that moves the label on top of the inp
 The following example shows the default `AnimationSelector` used with the control but with slightly changed `Duration` of the animations.
 
 __Customizing the label__
-```XAML
-	<telerik:RadWatermarkTextBox Label="First Name">         
-		<telerik:AnimationManager.AnimationSelector>
-			<telerik:AnimationSelector>
-				<telerik:AnimationGroup AnimationName="LabelFloatAnimation">
-					<telerik:LabelPositionAnimation TargetElementName="PART_LabelVisualElement" Duration="00:00:00.500" Direction="Out"  />
-					<telerik:FontSizeAnimation TargetElementName="PART_LabelVisualElement" Duration="00:00:00.500" Direction="Out" />                        
-				</telerik:AnimationGroup>
-				<telerik:AnimationGroup AnimationName="LabelCenterAnimation">
-					<telerik:LabelPositionAnimation TargetElementName="PART_LabelVisualElement" Duration="00:00:00.500" Direction="In"  />
-					<telerik:FontSizeAnimation TargetElementName="PART_LabelVisualElement" Duration="00:00:00.500" Direction="In" />
-				</telerik:AnimationGroup>
-			</telerik:AnimationSelector>
-		</telerik:AnimationManager.AnimationSelector>
-	</telerik:RadWatermarkTextBox>
-```
+<snippet id='radwatermarktextbox-embedded-label-block_5-xaml' />
 
 ## See also  
 * [Overview]({%slug radwatermarktextbox-overview%})

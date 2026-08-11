@@ -43,25 +43,13 @@ The following examples show how to create a __RadAutoCompleteBox__ control in th
 
 __Example 1: Creating a RadAutoCompleteBox in code-behind__
 
-```C#
-	RadAutoCompleteBox autoCompleteBox = new RadAutoCompleteBox();
-```
+<snippet id='radautocompletebox-getting-started-example_1_creating_a_radautocompletebox_in_code_behind-cs' />
 
 __Example 1: Creating a RadAutoCompleteBox in code-behind__
 
-```VB
-	Dim autoCompleteBox As New RadAutoCompleteBox()
-```
-
 __Example 1: Creating a RadAutoCompleteBox in XAML__
 
-```XAML
-	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <Grid x:Name="LayoutRoot" Background="White">
-	        <telerik:RadAutoCompleteBox x:Name="radAutoCompleteBox"/>
-	    </Grid>
-	</UserControl>
-```
+<snippet id='radautocompletebox-getting-started-example_1_creating_a_radautocompletebox_in_xaml-xaml' />
 
 ## Populate with Data
 
@@ -69,30 +57,7 @@ In order to populate the RadAutoCompleteBox with data, you can set its **ItemsSo
 
 __Example 2: Set RadAutoCompleteBox's ItemsSource__
 
-```C#
-    public MainWindow()
-    {
-        InitializeComponent();
-        var countries = new ObservableCollection<Country>()
-        {
-            new Country() { Name = "Australia", Capital = "Canberra" },
-            new Country() { Name = "Bulgaria", Capital = "Sofia" },
-            new Country() { Name = "Canada", Capital = "Ottawa" },
-            new Country() { Name = "Denmark", Capital = "Copenhagen" },
-            new Country() { Name = "France", Capital = "Paris" },
-            new Country() { Name = "Germany", Capital = "Berlin" },
-            new Country() { Name = "India", Capital = "New Delhi" },
-            new Country() { Name = "Italy", Capital = "Rome" },
-            new Country() { Name = "Norway", Capital = "Oslo" },
-            new Country() { Name = "Russia", Capital = "Moscow" },
-            new Country() { Name = "Spain ", Capital = "Madrid" },
-            new Country() { Name = "United Kingdom", Capital = "London" },
-            new Country() { Name = "United States", Capital = "Washington, D.C." },
-        };
-
-        this.AutoComplete.ItemsSource = countries;
-    }
-```
+<snippet id='radautocompletebox-getting-started-example_2_set_radautocompletebox_s_itemssource-cs' />
 
 ## Customize the Control
 
@@ -102,14 +67,7 @@ You can then set the control's [abundance of properties]({%slug radautocompleteb
 
 __Example 3: Customize the RadAutoCompleteBox__
 
-```C#
-    <telerik:RadAutoCompleteBox x:Name="autoComplete" 
-                                    AutoCompleteMode="Suggest" 
-                                    DisplayMemberPath="Name"
-                                    TextSearchPath="Capital"
-                                    TextSearchMode="Contains"
-                                    WatermarkContent="Select a country..." />
-```
+<snippet id='radautocompletebox-getting-started-example_3_customize_the_radautocompletebox-cs' />
 
 **Figure 1** illustrates the result from the code in **Example 3**.
 
@@ -133,17 +91,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Office2016;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radautocompletebox-getting-started-example_3_customize_the_radautocompletebox-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

@@ -17,12 +17,7 @@ The __RadRibbonDropDownButton__ represents an extension of the __RadDropDownButt
 Here is a sample definition of a __RadRibbonDropDownButton__ without having any drop down content defined:			
 
 
-```XAML
-	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
-	                                 Size="Large"
-	                                 SmallImage="Icons/16/paste.png"
-	                                 Text="Paste" />
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-dropdown-button-block_1-xaml' />
 
 >tip As all buttons in the RadRibbonView's set slightly expose the same functionality, take a look at the [Overview]({%slug radribbonview-buttons-overview%}) topic.			
 
@@ -34,32 +29,7 @@ This button has its initial size set to __Large__ and its text label set to __"P
 To set the popup content you have to simply set the __DropDownContent__ property of the button. Here is an example of a __RadRibbonDropDownButton__ with three menu items inside its drop down.				
 
 
-```XAML
-	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
-	                                 Size="Large"
-	                                 SmallImage="Icons/16/paste.png"
-	                                 Text="Paste">
-	    <telerik:RadRibbonDropDownButton.DropDownContent>
-	        <telerik:RadContextMenu BorderThickness="0">
-	            <telerik:RadMenuItem Header="Paste">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="Icons/16/paste.png" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem Header="Paste Special...">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="Icons/16/pastespecial.png" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	            <telerik:RadMenuItem Header="Paste as Hyperlink" IsEnabled="False">
-	                <telerik:RadMenuItem.Icon>
-	                    <Image Source="Icons/16/pastehyperlink.png" />
-	                </telerik:RadMenuItem.Icon>
-	            </telerik:RadMenuItem>
-	        </telerik:RadContextMenu>
-	    </telerik:RadRibbonDropDownButton.DropDownContent>
-	</telerik:RadRibbonDropDownButton>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-dropdown-button-block_2-xaml' />
 
 ![{{ site.framework_name }} RadRibbonView DropDown Button Content](images/RibbonView_Buttons_DropDownButton_DDContent.png)
 
@@ -74,38 +44,11 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 * __DropDownOpened__ - fires after the popup area has been opened.					
 
 
-```XAML
-	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
-	                                 ...
-	                                 DropDownClosed="RadRibbonDropDownButton_DropDownClosed"
-	                                 DropDownOpened="RadRibbonDropDownButton_DropDownOpened"
-	                                 DropDownOpening="RadRibbonDropDownButton_DropDownOpening">
-	 ...
-	</telerik:RadRibbonDropDownButton>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-dropdown-button-block_3-xaml' />
 
 
-```C#
-	private void RadRibbonDropDownButton_DropDownClosed(object sender, RoutedEventArgs e)
-	{
-	}
-	private void RadRibbonDropDownButton_DropDownOpened(object sender, RoutedEventArgs e)
-	{
-	}
-	private void RadRibbonDropDownButton_DropDownOpening(object sender, RoutedEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub RadRibbonDropDownButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
-	End Sub
-	
-	Private Sub RadRibbonDropDownButton_DropDownOpened(sender As Object, e As RoutedEventArgs)
-	End Sub
-	
-	Private Sub RadRibbonDropDownButton_DropDownOpening(sender As Object, e As RoutedEventArgs)
-	End Sub
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-dropdown-button-block_4-cs' />
+<snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-dropdown-button-block_5-vb' />
 
 ## See Also
  * [Styling the RadRibbonDropDownButton]({%slug radribbonview-styling-ribbondropdownbutton%})

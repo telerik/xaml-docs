@@ -17,18 +17,8 @@ To set up the indicator you can set its __CategoryBinding, HighBinding, LowBindi
 To display the signal period you will need to set the __SignalStroke__ property.
 
 __Example 1: Defining StochasticFastIndicator__
-```XAML
-	<telerik:RadCartesianChart.Indicators>
-		<telerik:StochasticFastIndicator MainPeriod="14" 
-										 SignalPeriod="3"
-										 SignalStroke="Black"
-										 CategoryBinding="Date"                                             
-										 HighBinding="High"                                           
-										 LowBinding="Low"                                           
-										 CloseBinding="Close"                                             
-										 ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-stochasticfastindicator-example_1_defining_stochasticfastindicator-xaml' />
+
 
 #### Figure 1: StochasticFastIndicator
 <img src="images/radchartview-indicators-stochasticfastindicator-0.png" style="width: 80%;">

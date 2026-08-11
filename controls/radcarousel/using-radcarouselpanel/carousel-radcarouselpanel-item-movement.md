@@ -16,28 +16,15 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 
 
 
-```XAML
-	<Grid>
-	  <telerik:RadCarouselPanel x:Name="Panel" ItemsPerPage="7" PathPadding="50, 0, 50, 0">
-	    <Image Source="Carousel\1.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	    <Image Source="Carousel\2.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	    <Image Source="Carousel\3.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	    <Image Source="Carousel\4.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	    <Image Source="Carousel\5.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	  </telerik:RadCarouselPanel>
-	</Grid>
-```
+<snippet id='radcarousel-using-radcarouselpanel-carousel-radcarouselpanel-item-movement-block_1-xaml' />
 
 ![{{ site.framework_name }} RadCarousel RadCarouselPanel Item Movement](images/CarouselPanelMovement_01.png)
 
 
 
-```C#
-	this.Panel.MoveBy(2);
-```
-```VB.NET
-	Me.Panel.MoveBy(2)
-```
+<snippet id='radcarousel-using-radcarouselpanel-carousel-radcarouselpanel-item-movement-block_2-cs' />
+<snippet id='radcarousel-using-radcarouselpanel-carousel-radcarouselpanel-item-movement-block_2-vb' />
+
 
 ![{{ site.framework_name }} RadCarousel RadCarouselPanel Item Movement after MoveBy](images/CarouselPanelMovement_02.png)
 
@@ -47,18 +34,6 @@ __RadCarouselPanel__ is a scrollable panel that can use __ScrollViewer__ to move
 
 
 
-```XAML
-	<Grid>
-	  <ScrollViewer CanContentScroll="True">
-	    <telerik:RadCarouselPanel x:Name="Panel2" ItemsPerPage="7" PathPadding="50, 0, 50, 0">
-	      <Image Source="Carousel\1.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	      <Image Source="Carousel\2.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	      <Image Source="Carousel\3.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	      <Image Source="Carousel\4.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	      <Image Source="Carousel\5.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-	    </telerik:RadCarouselPanel>
-	  </ScrollViewer>
-	</Grid>
-```
+<snippet id='radcarousel-using-radcarouselpanel-carousel-radcarouselpanel-item-movement-block_3-xaml' />
 
 ![{{ site.framework_name }} RadCarousel RadCarouselPanel Item Movement via ScrollViewer](images/CarouselPanelMovement_03_thumb.png)

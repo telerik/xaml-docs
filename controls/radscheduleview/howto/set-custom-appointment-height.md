@@ -19,13 +19,7 @@ In order to be able to display appointments with different heights in the MonthV
 
 
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
-	    <telerik:RadScheduleView.ViewDefinitions>
-	        <telerik:MonthViewDefinition AllowCustomAppointmentSize="True" />
-	    </telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-howto-set-custom-appointment-height-block_1-xaml' />
 
 >The default value of the __AllowCustomAppointmentSize__ property is __false__ - the appointments in the MonthViewDefinition are displayed with their default height.
 
@@ -35,105 +29,20 @@ Now since you are able to display appointments with different heights you should
         
 
 
-```C#
-	public class AppointmentStyleSelector : OrientedAppointmentItemStyleSelector
-	{
-	    public Style SmallAppointmentStyle { get; set; }
-	    public Style RegularAppointmentStyle { get; set; }
-	    public Style BigAppointmentStyle { get; set; }
-	
-	    public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDefinition)
-	    {
-	        var appointment = item as Appointment;
-	
-	        if (appointment != null)
-	        {
-	            if (appointment.Duration() <= new TimeSpan(1, 0, 0))
-	            {
-	                return this.SmallAppointmentStyle;
-	            }
-	            else if (appointment.Duration() <= new TimeSpan(2, 0, 0))
-	            {
-	                return this.RegularAppointmentStyle;
-	            }
-	            else if (appointment.Duration() > new TimeSpan(2, 0, 0))
-	            {
-	                return this.BigAppointmentStyle;
-	            }
-	        }
-	
-	        return base.SelectStyle(item, container, activeViewDefinition);
-	    }
-	}
-```
-```VB
-	    Public Class AppointmentStyleSelector
-	        Inherits OrientedAppointmentItemStyleSelector
-	
-	        Public Property SmallAppointmentStyle() As Style
-	        Public Property RegularAppointmentStyle() As Style
-	        Public Property BigAppointmentStyle() As Style
-	
-	        Public Overrides Function SelectStyle(ByVal item As Object, ByVal container As DependencyObject, ByVal activeViewDefinition As ViewDefinitionBase) As Style
-	            Dim appointment = TryCast(item, Appointment)
-	
-	            If appointment IsNot Nothing Then
-	                If appointment.Duration() <= New TimeSpan(1, 0, 0) Then
-	                    Return Me.SmallAppointmentStyle
-	                ElseIf appointment.Duration() <= New TimeSpan(2, 0, 0) Then
-	                    Return Me.RegularAppointmentStyle
-	                ElseIf appointment.Duration() > New TimeSpan(2, 0, 0) Then
-	                    Return Me.BigAppointmentStyle
-	                End If
-	            End If
-	
-	            Return MyBase.SelectStyle(item, container, activeViewDefinition)
-	        End Function
-	    End Class
-```
+<snippet id='radscheduleview-howto-set-custom-appointment-height-block_2-cs' />
+<snippet id='radscheduleview-howto-set-custom-appointment-height-block_3-vb' />
 
 Afterwards you will have declare the custom AppointmentStyleSelector as resource in XAML. Here you can set the desired heights and background colors of the different Appointment types:        
 
 
 
-```XAML
-	<local:AppointmentStyleSelector x:Key="AppointmentStyleSelector">
-	    <local:AppointmentStyleSelector.SmallAppointmentStyle>
-	        <Style TargetType="telerik:AppointmentItem" BasedOn="{StaticResource AppointmentItemBaseStyle}">
-	            <Setter Property="Background" Value="#FF3366CC" />
-	            <!-- Set the desired height -->
-	            <Setter Property="Height" Value="24" />
-	        </Style>
-	    </local:AppointmentStyleSelector.SmallAppointmentStyle>
-	    <local:AppointmentStyleSelector.RegularAppointmentStyle>
-	        <Style TargetType="telerik:AppointmentItem" BasedOn="{StaticResource AppointmentItemBaseStyle}">
-	            <Setter Property="Background" Value="#FF16ABA9" />
-	            <!-- Set the desired height -->
-	            <Setter Property="Height" Value="42" />
-	        </Style>
-	    </local:AppointmentStyleSelector.RegularAppointmentStyle>
-	    <local:AppointmentStyleSelector.BigAppointmentStyle>
-	        <Style TargetType="telerik:AppointmentItem" BasedOn="{StaticResource AppointmentItemBaseStyle}">
-	            <Setter Property="Background" Value="#FF8EBC00" />
-	            <!-- Set the desired height -->
-	            <Setter Property="Height" Value="64" />
-	        </Style>
-	    </local:AppointmentStyleSelector.BigAppointmentStyle>
-	</local:AppointmentStyleSelector>
-```
+<snippet id='radscheduleview-howto-set-custom-appointment-height-block_4-xaml' />
 
 And the final step would be to assign it to __RadScheduleView__:       
 
 
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
-	                         AppointmentStyleSelector="{StaticResource AppointmentStyleSelector}">
-	    <telerik:RadScheduleView.ViewDefinitions>
-	        <telerik:MonthViewDefinition AllowCustomAppointmentSize="True" />
-	    </telerik:RadScheduleView.ViewDefinitions>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-howto-set-custom-appointment-height-block_5-xaml' />
 
 You can see the final result in __Figure 1__:
 

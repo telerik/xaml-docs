@@ -15,42 +15,8 @@ Categorical series in RadChartView have a mechanism which can be used for combin
 >tip Categorical series which supports this mechanism are: __AreaSeries, BarSeries, LineSeries, PointSeries, RangeBarSeries, BoxPlotSeries__. RangeBarSeries and BoxPlotSeries support only None and Cluster modes.
 
 __Example 1: Setting the CombineMode property__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries CombineMode="None">
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="14" />
-					<telerik:CategoricalDataPoint Category="February" Value="10" />
-					<telerik:CategoricalDataPoint Category="March" Value="7" />
-					<telerik:CategoricalDataPoint Category="April" Value="15" />
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-			<telerik:BarSeries CombineMode="None">
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="11" />
-					<telerik:CategoricalDataPoint Category="February" Value="15" />
-					<telerik:CategoricalDataPoint Category="March" Value="3" />
-					<telerik:CategoricalDataPoint Category="April" Value="10" />
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-			<telerik:BarSeries CombineMode="None">
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="8" />
-					<telerik:CategoricalDataPoint Category="February" Value="12" />
-					<telerik:CategoricalDataPoint Category="March" Value="19" />
-					<telerik:CategoricalDataPoint Category="April" Value="11" />
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-combinemode-example_1_setting_the_combinemode_property-xaml' />
+
 
 <!-- -->
 
@@ -79,42 +45,8 @@ __Example 1: Setting the CombineMode property__
 If the **CombineMode** property of the series is either **Stack** or **Stack100**, the **StackGroupKey** property of the series can be set in order to define in which stack group it will be included. **Example 2** demonstrates this property.
 
 __Example 2: Setting the StackGroupKey property__
-```XAML
-	 <telerik:RadCartesianChart Palette="Windows8">
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries CombineMode="Stack"  StackGroupKey="FirstStackGroup">
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="14" />
-					<telerik:CategoricalDataPoint Category="February" Value="10" />
-					<telerik:CategoricalDataPoint Category="March" Value="7" />
-					<telerik:CategoricalDataPoint Category="April" Value="15" />
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-			<telerik:BarSeries CombineMode="Stack" StackGroupKey="FirstStackGroup">
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="11" />
-					<telerik:CategoricalDataPoint Category="February" Value="15" />
-					<telerik:CategoricalDataPoint Category="March" Value="3" />
-					<telerik:CategoricalDataPoint Category="April" Value="10" />
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-			<telerik:BarSeries CombineMode="Stack" StackGroupKey="SecondStackGroup" >
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="January" Value="8" />
-					<telerik:CategoricalDataPoint Category="February" Value="12" />
-					<telerik:CategoricalDataPoint Category="March" Value="19" />
-					<telerik:CategoricalDataPoint Category="April" Value="11" />
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-combinemode-example_2_setting_the_stackgroupkey_property-xaml' />
+
 
 #### __Figure 5: Result from Example 2__
 ![Telerik UI for WPF RadChartView Series Grouped into Separate Stacks with StackGroupKey](images/radchartview-combinemode-stackgroupkey.png)
@@ -126,46 +58,8 @@ By default when you have mixed values (negative and positive) in the same catego
 To change this behavior and use a single stack for all values, set the __ChartViewExtensions.StackNegativeValuesSeparately__ attached property to __False__. The property is applied to the RadCartesianChart control.
 
 __Example 3: Setting the ChartViewExtensions.StackNegativeValuesSeparately property__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8" chartView:ChartViewExtensions.StackNegativeValuesSeparately="False">
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis />
-		</telerik:RadCartesianChart.VerticalAxis>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis PlotMode="OnTicksPadded" />
-		</telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:RadCartesianChart.Series>
-			<telerik:AreaSeries CombineMode="Stack" ShowLabels="True">
-				<telerik:AreaSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="10" />
-					<telerik:CategoricalDataPoint Category="B" Value="5" />
-					<telerik:CategoricalDataPoint Category="C" Value="10" />
-				</telerik:AreaSeries.DataPoints>
-			</telerik:AreaSeries>
-			<telerik:AreaSeries CombineMode="Stack" Opacity="0.5" ShowLabels="True">
-				<telerik:AreaSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="10" />
-					<telerik:CategoricalDataPoint Category="B" Value="-5" />
-					<telerik:CategoricalDataPoint Category="C" Value="10" />
-				</telerik:AreaSeries.DataPoints>
-			</telerik:AreaSeries>
-			<telerik:AreaSeries CombineMode="Stack" Opacity="0.5" ShowLabels="True">
-				<telerik:AreaSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="10" />
-					<telerik:CategoricalDataPoint Category="B" Value="5" />
-					<telerik:CategoricalDataPoint Category="C" Value="10" />
-				</telerik:AreaSeries.DataPoints>
-			</telerik:AreaSeries>
-			<telerik:AreaSeries CombineMode="Stack" Opacity="0.5" ShowLabels="True">
-				<telerik:AreaSeries.DataPoints>
-					<telerik:CategoricalDataPoint Category="A" Value="10" />
-					<telerik:CategoricalDataPoint Category="B" Value="-5" />
-					<telerik:CategoricalDataPoint Category="C" Value="10" />
-				</telerik:AreaSeries.DataPoints>
-			</telerik:AreaSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-features-combinemode-example_3_setting_the_chartviewextensions_stacknegativevaluesseparately_property-xaml' />
+
 
 > The "chartView" namespace refers to the following - `xmlns:chartView="clr-namespace:Telerik.Windows.Controls.ChartView;assembly=Telerik.Windows.Controls.Chart"`
 

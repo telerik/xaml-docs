@@ -35,21 +35,7 @@ You can include the control in your page by either dragging it from the toolbox 
 
 __Example 1: Creating RadTimeline control__
 
-```XAML
-	   <telerik:RadTimeline PeriodStart="2016/01/01" 
-                            PeriodEnd="2016/06/01" 
-                            VisiblePeriodStart="2016/01/01" 
-                            VisiblePeriodEnd="2016/03/22"
-                            StartPath="Date"
-                            DurationPath="Duration">
-            <telerik:RadTimeline.Intervals>
-                <telerik:MonthInterval />
-                <telerik:WeekInterval />
-                <telerik:DayInterval />
-                <telerik:HourInterval />
-            </telerik:RadTimeline.Intervals>
-        </telerik:RadTimeline>
-```
+<snippet id='radtimeline-getting-started-block_1-xaml' />
 
 #### __Figure 1: RadTimeline visualization__
 ![{{ site.framework_name }} RadTimeline RadTimeline visualization](images/RadTimeline_Getting_Started_0.png)
@@ -81,17 +67,7 @@ To change the theme, you can follow the steps below:
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 2: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.DataVisualization.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radtimeline-getting-started-block_2-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -116,4 +92,3 @@ __Figure 2__ shows a RadTimeline with the **Windows8** theme applied.
 ## See Also
  * [Overview]({%slug radtimeline-overview%})
  * [MVVM Support]({%slug radtimeline-mvvm-support%})
-

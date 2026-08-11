@@ -37,15 +37,8 @@ The scales, derived from the [GraphicScale]({%slug radgauge-features-linear-and-
 The [GraphicScale]({%slug radgauge-features-linear-and-radial-scales-basics%}) class exposes a __LabelLocation__ property, which allows you to specify the location of the labels towards the scale. This property is an enumeration of type ScaleObjectLocation. Here is an example.
 
 
-```XAML
-	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale
-	                    Min="0"
-	                    Max="100"
-	                    LabelLocation="Outside" >
-	    </telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-labels-basics-block_1-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -58,15 +51,8 @@ Besides using the __LabelLocation__ property, you can also use the __LabelOffset
 >To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
 
-```XAML
-	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale
-	                    Min="0"
-	                    Max="100"
-	                    LabelOffset="0.1*" >
-	    </telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-labels-basics-block_2-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -78,17 +64,8 @@ In order to allow you to format the value, that the labels display, The GraphicS
 
 >Defining format strings in XAML can be done in the following way - `{} {0:your format string}`. To learn more about formatting visit the [Formatting Overview](http://msdn.microsoft.com/en-us/library/26etazsy.aspx) chapter in MSDN.
 
-```XAML
-	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale
-	                    Min="0"
-	                    Max="100"
-	                    LabelOffset="0.05*"
-	                    LabelRotationMode="None"
-	                    LabelFormat="{}{0}%" >
-	    </telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-labels-basics-block_3-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -102,15 +79,8 @@ The RadialScale and LinearScale objects which inherit the GraphicScale class pro
 
 To modify the labels foreground, simply set the Foreground property of the GraphicScale object (RadialScale or LinearScale) to the desired color. Here is an example:
 
-```XAML
-	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale
-	                    Min="0"
-	                    Max="100"
-	                    Foreground="Red">
-	    </telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-labels-basics-block_4-xaml' />
+
 
 ![Rad Gauge Features Labels Basics 04](images/RadGauge_Features_Labels_Basics_04.PNG)
 
@@ -118,33 +88,8 @@ To modify the labels foreground, simply set the Foreground property of the Graph
 
 The other way of specifying the appearance of the label is by defining an entire LabelTemplate for it, which will get applied to each of the labels. In it you can define the visual appearance of the label as you desire and bind the used elements to the data context of the template, where needed. The data context of the template would be an object of type TickLabel. You can bind to its properties as desired, but the most important of them is the FormattedValue property. It stores the display value for the label according to the label format which is specified in the scale.
 
-```XAML
-	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:RadialScale Min="10"
-	                         Max="90"
-	                         LabelRotationMode="None">
-	            <telerik:RadialScale.LabelTemplate>
-	                <DataTemplate>
-	                    <Border BorderBrush="#FF606060" 
-	                            BorderThickness="1"
-	                            CornerRadius="10"
-	                            Width="20"
-	                            Height="20">
-	                        <TextBlock HorizontalAlignment="Center"
-	                                   VerticalAlignment="Center"
-	                                   FontFamily="{Binding FontFamily}"
-	                                   FontSize="{Binding FontSize}"
-	                                   FontStretch="{Binding FontStretch}"
-	                                   FontStyle="{Binding FontStyle}"
-	                                   FontWeight="{Binding FontWeight}"
-	                                   Foreground="{Binding Foreground}"
-	                                   Text="{Binding FormattedValue}" />
-	                    </Border>
-	                </DataTemplate>
-	            </telerik:RadialScale.LabelTemplate>
-	        </telerik:RadialScale>
-	</telerik:RadRadialGauge>
-```
+<snippet id='radgauge-features-labels-basics-block_5-xaml' />
+
 
 Here is a snapshot of the result:
 

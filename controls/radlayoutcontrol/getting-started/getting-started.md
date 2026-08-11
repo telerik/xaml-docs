@@ -45,9 +45,8 @@ You can find a list with the required assemblies for each control from the UI fo
 You can add __RadLayoutControl__ manually in XAML as demonstrated in __Example 1__. 
 
 __Example 1: Adding RadLayoutControl in XAML__
-```XAML
-	<telerik:RadLayoutControl />
-```
+<snippet id='radlayoutcontrol-getting-started-getting-started-example_1_adding_radlayoutcontrol_in_xaml-xaml' />
+
 	
 __RadLayoutControl__ doesn't display any content when it is not populated with items or layout groups, so at this point only the border of the control should be displayed on the screen.
 
@@ -59,15 +58,8 @@ __RadLayoutControl__ doesn't display any content when it is not populated with i
 You can add items through the __Items__ collection of RadLayoutControl. The layout component works with __LayoutControlGroup__ controls and __UIElements__. In other words you can populate it with all visual elements provided by the framework. __Example 2__ demonstrates this.
 
 __Example 2: Adding items in the RadLayoutControl.__
-```XAML
-	<telerik:RadLayoutControl>           
-		<Button Content="Button"/>
-		<Border Background="Bisque"/>
-		<telerik:LayoutControlGroup>
-			<TextBlock Text="TextBlock" Background="LightGray" TextAlignment="Center"/>
-		</telerik:LayoutControlGroup>
-	</telerik:RadLayoutControl>
-```
+<snippet id='radlayoutcontrol-getting-started-getting-started-example_2_adding_items_in_the_radlayoutcontrol-xaml' />
+
 
 #### __Figure 2: RadLayoutControl with few elements added__
 ![{{ site.framework_name }} RadLayoutControl RadLayoutControl with few elements added](images/layoutcontrol-getting-started-02.png)
@@ -77,25 +69,8 @@ __Example 2: Adding items in the RadLayoutControl.__
 You can nest LayoutControlGroups into one another which allows you to separate the layout into different groups that can be arranged along with their items.
 
 __Example 3: Nesting LayoutControlGroups__
-```XAML
-	<telerik:RadLayoutControl>           
-		<Button Content="Button"/>
-		<Border Background="Bisque"/>
-		<telerik:LayoutControlGroup Orientation="Vertical">
-			<TextBlock Text="TextBlock" Background="LightGray" TextAlignment="Center" VerticalAlignment="Center"/>
-			<telerik:LayoutControlGroup Orientation="Vertical" VerticalAlignment="Center" Margin="2">
-				<StackPanel Orientation="Horizontal">
-					<TextBlock Text="Text field:" Margin="5 0 5 0" />
-					<TextBox MinWidth="100"/>
-				</StackPanel>
-				<StackPanel Orientation="Horizontal">
-					<TextBlock Text="Text field:" Margin="5 0 5 0" />
-					<TextBox MinWidth="100"/>
-				</StackPanel>
-			</telerik:LayoutControlGroup>
-		</telerik:LayoutControlGroup>
-	</telerik:RadLayoutControl>
-```
+<snippet id='radlayoutcontrol-getting-started-getting-started-example_3_nesting_layoutcontrolgroups-xaml' />
+
 
 #### __Figure 3: RadLayoutControl with nested groups__
 ![{{ site.framework_name }} RadLayoutControl RadLayoutControl with nested groups](images/layoutcontrol-getting-started-03.png)
@@ -115,9 +90,8 @@ The RadLayoutControl and its groups wrap their content in a ScrollViewer. The Sc
 The control allows you to rearrange its children at runtime. To enable this the __IsInEditMode__ property of the control should be set to __True__.
 
 __Example 4: Enabling the edit mode of the control__
-```XAML
-	<telerik:RadLayoutControl IsInEditMode="True" />
-```
+<snippet id='radlayoutcontrol-getting-started-getting-started-example_4_enabling_the_edit_mode_of_the_control-xaml' />
+
 	
 #### __Figure 4: The layout setup from Example 3 with one of the groups selected.__
 ![{{ site.framework_name }} RadLayoutControl The layout setup from Example 3 with one of the groups selected.](images/layoutcontrol-getting-started-04.png)
@@ -129,56 +103,8 @@ __Example 4: Enabling the edit mode of the control__
 This section demonstrates a basic layout set up with nested groups and different group types.
 
 __Example 5: Complete code example__
-```XAML
-	<telerik:RadLayoutControl IsInEditMode="True">
-		<telerik:LayoutControlGroup Orientation="Vertical">
-			<telerik:LayoutControlExpanderGroup Margin="2" Header="Layout Control Expander Group">
-				<telerik:LayoutControlGroup Orientation="Vertical">
-					<telerik:LayoutControlGroup>
-						<RadioButton Content="RadioButton 1" Padding="5" VerticalAlignment="Center" Margin="2" />
-						<RadioButton Content="RadioButton 2" IsChecked="True" Padding="5" VerticalAlignment="Center" Margin="2" />
-						<RadioButton Content="RadioButton 3" Padding="5" VerticalAlignment="Center" Margin="2" />
-					</telerik:LayoutControlGroup>
+<snippet id='radlayoutcontrol-getting-started-getting-started-example_5_complete_code_example-xaml' />
 
-					<Grid>
-						<Grid.ColumnDefinitions>
-							<ColumnDefinition Width="Auto" />
-							<ColumnDefinition />
-						</Grid.ColumnDefinitions>
-						<TextBlock Text="TextBlock:" Foreground="Black" VerticalAlignment="Center" Margin="5 0 5 0"/>
-						<TextBox Grid.Column="1" Foreground="Black" VerticalAlignment="Center" Margin="5 0 5 0"/>
-					</Grid>
-				</telerik:LayoutControlGroup>
-
-				<ListBox  Padding="8" Margin="2" >
-					<ListBoxItem Content="ListBoxItem 1" />
-					<ListBoxItem Content="ListBoxItem 2" />
-					<ListBoxItem Content="ListBoxItem 3" />
-					<ListBoxItem Content="ListBoxItem 4" />
-					<ListBoxItem Content="ListBoxItem 5" />
-					<ListBoxItem Content="ListBoxItem 6" />
-				</ListBox>
-			</telerik:LayoutControlExpanderGroup>
-
-			<telerik:LayoutControlTabGroup Margin="2">
-				<telerik:LayoutControlTabGroupItem Header="Tab 1">
-					<telerik:LayoutControlGroup>
-						<TextBlock Text="TextBlock" Padding="5" Margin="2" Foreground="Black" Background="LightGray" TextAlignment="Center" VerticalAlignment="Stretch" />
-						<TextBlock Text="TextBlock" Padding="5" Margin="2" Foreground="Black" Background="LightGray" TextAlignment="Center" VerticalAlignment="Stretch" />
-					</telerik:LayoutControlGroup>
-				</telerik:LayoutControlTabGroupItem>
-				<telerik:LayoutControlTabGroupItem Header="Tab 2" />
-			</telerik:LayoutControlTabGroup>
-		</telerik:LayoutControlGroup>
-
-		<telerik:LayoutControlGroup Orientation="Vertical" HorizontalAlignment="Right">
-			<Button Content="Button 1" Padding="10 20 10 20" Margin="2" VerticalAlignment="Top" />
-			<Button Content="Button 2" Padding="10 20 10 20" Margin="2" VerticalAlignment="Bottom" />
-		</telerik:LayoutControlGroup>
-
-		<ToggleButton Content="ToggleButton" Padding="5 0 5 0" HorizontalAlignment="Right" Margin="2" />
-	</telerik:RadLayoutControl>
-```
 
 #### __Figure 5: RadLayoutPanel example__  
 ![{{ site.framework_name }} RadLayoutControl RadLayoutPanel example](images/layoutcontrol-getting-started-05.png)
@@ -203,17 +129,8 @@ To change the theme, you can follow the steps below:
 __Example 6__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 6: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radlayoutcontrol-getting-started-getting-started-example_6_merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

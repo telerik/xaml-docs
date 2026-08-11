@@ -23,70 +23,13 @@ Finally, the implementation should be as follows:
 
 
 
-```XAML
-	<Grid.Resources>
-	  <ResourceDictionary>
-	    <ResourceDictionary.MergedDictionaries>
-	      <ResourceDictionary Source="/Telerik.Windows.Controls.Navigation;component/Themes/GenericOfficeBlack.xaml"/>
-	    </ResourceDictionary.MergedDictionaries>
-	  </ResourceDictionary>
-	</Grid.Resources>
-	<Grid Background="Black">
-	  <Grid.RowDefinitions>
-	    <RowDefinition />
-	    <RowDefinition Height="30"/>
-	  </Grid.RowDefinitions>
-	  <telerik:RadCarousel x:Name="RadCarousel1" HorizontalScrollBarVisibility="Hidden" Background="Black"
-	     Grid.Row="0"/>
-	  <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-	    <telerik:CarouselScrollButton x:Name="pageDownButton"  CarouselScrollButtonType="PageLeft" Click="pageDownButton_Click"  Style="{StaticResource CarouselScrollButtonStyle}"/>
-	    <telerik:CarouselScrollButton x:Name="pageLeftButton" CarouselScrollButtonType="LineUp"
-	              Click="pageLeftButton_Click"  Style="{StaticResource CarouselScrollButtonStyle}"/>
-	    <telerik:CarouselScrollButton x:Name="pageRightButton" CarouselScrollButtonType="LineDown"
-	              Click="pageRightButton_Click"  Style="{StaticResource CarouselScrollButtonStyle}"/>
-	    <telerik:CarouselScrollButton x:Name="pageUpButton" CarouselScrollButtonType="PageRight"
-	       Click="pageUpButton_Click"  Style="{StaticResource CarouselScrollButtonStyle}"/>
-	  </StackPanel>
-	</Grid>
-```
+<snippet id='radcarousel-how-to-change-scroll-buttons-block_1-xaml' />
 
 
 
-```C#
-	private void pageDownButton_Click(object sender, RoutedEventArgs e)
-	{
-	    this.RadCarousel1.FindCarouselPanel().PageDown();
-	}
-	private void pageLeftButton_Click(object sender, RoutedEventArgs e)
-	{
-	    this.RadCarousel1.FindCarouselPanel().MoveBy(-1);
-	}
-	private void pageRightButton_Click(object sender, RoutedEventArgs e)
-	{
-	    this.RadCarousel1.FindCarouselPanel().MoveBy(1);
-	}
-	private void pageUpButton_Click(object sender, RoutedEventArgs e)
-	{
-	    this.RadCarousel1.FindCarouselPanel().PageUp();
-	}
-```
-```VB.NET
-	Private Sub pageDownButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.RadCarousel1.FindCarouselPanel().PageDown()
-	End Sub
-	
-	Private Sub pageLeftButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.RadCarousel1.FindCarouselPanel().MoveBy(-1)
-	End Sub
-	
-	Private Sub pageRightButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.RadCarousel1.FindCarouselPanel().MoveBy(1)
-	End Sub
-	
-	Private Sub pageUpButton_Click(sender As Object, e As RoutedEventArgs)
-	    Me.RadCarousel1.FindCarouselPanel().PageUp()
-	End Sub
-```
+<snippet id='radcarousel-how-to-change-scroll-buttons-block_2-cs' />
+<snippet id='radcarousel-how-to-change-scroll-buttons-block_2-vb' />
+
 
 Once you are done, the RadCarousel should be visualized as the image below:
 ![{{ site.framework_name }} RadCarousel Customized Buttons](images/RadCarousel_ChangeScrollButtons.png)

@@ -20,24 +20,10 @@ To make the editing textbox wraps the text as well you need to subscribe to the 
 
 
 
-```C#
-	private void clubsGrid_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
-	{
-	    if ((string)e.Column.Header == "Name")
-	    {
-	        var tb = e.EditingElement as TextBox;
-	        tb.TextWrapping = TextWrapping.Wrap;
-	    }
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
-	    If DirectCast(e.Column.Header, String) = "Name" Then
-	        Dim tb = TryCast(e.EditingElement, TextBox)
-	        tb.TextWrapping = TextWrapping.Wrap
-	    End If
-	End Sub
-```
+<snippet id='radgridview-managing-data-how-to-access-editing-element-block_1-cs' />
+
+<snippet id='radgridview-managing-data-how-to-access-editing-element-block_1-vb' />
+
 
 Now it is better:
 
@@ -47,26 +33,10 @@ Ok, what if I do not want have this text selected, but want to have the cursor p
 
 
 
-```C#
-	private void clubsGrid_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
-	{
-	    if ((string)e.Column.Header == "Name")
-	    {
-	        var tb = e.EditingElement as TextBox;
-	        tb.SelectionLength = 0;
-	        tb.SelectionStart = tb.Text.Length;
-	    }
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
-	    If DirectCast(e.Column.Header, String) = "Name" Then
-	        Dim tb = TryCast(e.EditingElement, TextBox)
-	        tb.SelectionLength = 0
-	        tb.SelectionStart = tb.Text.Length
-	    End If
-	End Sub
-```
+<snippet id='radgridview-managing-data-how-to-access-editing-element-block_2-cs' />
+
+<snippet id='radgridview-managing-data-how-to-access-editing-element-block_2-vb' />
+
 
 
 

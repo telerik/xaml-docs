@@ -37,15 +37,7 @@ The class that wraps the shader effect should inherit the __BaseTransitionEffect
 
 
 
-```C#
-	public class CircleRevealTransitionEffect : BaseTransitionEffect
-	{
-	    protected override PixelShader LoadShader()
-	    {
-	        return new PixelShader();
-	    }
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_1-cs' />
 
 In the override for the __LoadShader()__ method you have to create a __PixelShader__ instance and link it to the __Shader Effect__. Here it is:
 
@@ -53,17 +45,7 @@ In the override for the __LoadShader()__ method you have to create a __PixelShad
 
 
 
-```C#
-	public class CircleRevealTransitionEffect : BaseTransitionEffect
-	{
-	    protected override PixelShader LoadShader()
-	    {
-	        PixelShader pixelShader = new PixelShader();
-	        pixelShader.UriSource = TransitionEffect.PackUri<CircleRevealTransitionEffect>("CustomTransitions/CircleRevealTransitionEffect.ps");
-	        return pixelShader;
-	    }
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_2-cs' />
 
 ## Wrap Transition Effects within Transition Providers
 
@@ -71,25 +53,13 @@ As the Transition is of type __TransitionProvider__, you have to wrap your __Tra
 
 
 
-```C#
-	public class CircleRevealTransition : ShaderTransitionProvider
-	{
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_3-cs' />
 
 In it you have to override the __CreateTransitionEffect()__ method and return an instance of your __Transition Effect__ class.
 
 
 
-```C#
-	public class CircleRevealTransition : ShaderTransitionProvider
-	{
-	    protected override TransitionEffect CreateTransitionEffect()
-	    {
-	        return new CircleRevealTransitionEffect();
-	    }
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_4-cs' />
 
 ## Pass Parameters to the Shader Effect
 
@@ -101,24 +71,7 @@ In order to pass the fuzzy amount constant create an appropriate __DependencyPro
 
 
 
-```C#
-	public static readonly DependencyProperty FuzzyAmountProperty =
-	    DependencyProperty.Register("FuzzyAmount",
-	                                    typeof(double),
-	                                    typeof(CircleRevealTransitionEffect),
-	                                    new PropertyMetadata(0.1, ShaderEffect.PixelShaderConstantCallback(1)));
-	public double FuzzyAmount
-	{
-	    get
-	    {
-	        return (double)this.GetValue(FuzzyAmountProperty);
-	    }
-	    set
-	    {
-	        this.SetValue(FuzzyAmountProperty, value);
-	    }
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_5-cs' />
 
 In order to link the __DependencyProperty__ with the appropriate __Shader Effect__ constant you have to use the __PixelShaderConstantCallback()__ static method of the __ShaderEffect__ class. For its parameter you have to pass the index of the constant in the context of the __Shader Effect__. In this case the fuzzy amount is the first and the only constant that can be passed to the effect. If you have more than one constant just increment the index for the next ones (2, 3, 4 etc).
 
@@ -126,37 +79,19 @@ You also have to force an update of the __Shader Effect__ constant, when your __
 
 
 
-```C#
-	public CircleRevealTransitionEffect()
-	{
-	    base.UpdateShaderValue(FuzzyAmountProperty);
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_6-cs' />
 
 The next step is to add a __FuzzyAmount__ property in the __CircleRevealTransition__ class, so you can pass the constants via the __Transition__ instance.
 
 
 
-```C#
-	public double FuzzyAmount
-	{
-	    get;
-	    set;
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_7-cs' />
 
 In order to pass the value of the __FuzzyAmount__ to the __CircleRevealTransitionEffect__ use the override for the __CreateTransitionEffect__() method.
 
 
 
-```C#
-	protected override ShaderEffect CreateTransitionEffect()
-	{
-	    CircleRevealTransitionEffect effect = new CircleRevealTransitionEffect();
-	    effect.FuzzyAmount = this.FuzzyAmount;
-	    return effect;
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_8-cs' />
 
 ## Use Custom Transitions
 
@@ -164,21 +99,15 @@ In order to use the custom transition that you have just created, you have to de
 
 
 
-```XAML
-	xmlns:customTransitions="clr-namespace:Controls.CustomTransitions;assembly=CustomTransitions"
+```xml
+xmlns:customTransitions="clr-namespace:Controls.CustomTransitions;assembly=CustomTransitions"
 ```
 
 Now you can use it as any of the built-in transition effects.
 
 
 
-```XAML
-	<telerik:RadTransitionControl x:Name="radTransitionControl">
-	    <telerik:RadTransitionControl.Transition>
-	        <customTransitions:CircleRevealTransition FuzzyAmount="0.2" />
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-create-custom-transitions-block_10-xaml' />
 
 ## See Also
 

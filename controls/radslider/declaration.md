@@ -34,25 +34,11 @@ You can add __RadSlider__ in XAML or in code as demonstrated in examples 1 and 2
 > In order to use the RadSlider control, you need to declare the following namespace: xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
 __Example 1: Adding RadSlider in XAML__
-```XAML
-	<telerik:RadSlider Value="5" Minimum="0" Maximum="100" SmallChange="1" />
-```
+<snippet id='radslider-declaration-block_1-xaml' />
 
 __Example 2: Adding RadSlider in code__
-```C#
-	RadSlider slider = new RadSlider();
-	slider.Maximum = 100;
-	slider.Minimum = 0;
-	slider.Value = 5;
-	slider.SmallChange = 1;
-```
-```VB.NET
-	Dim slider As New RadSlider()
-	slider.Maximum = 100
-	slider.Minimum = 0
-	slider.Value = 5
-	slider.SmallChange = 1
-```
+<snippet id='radslider-declaration-block_2-cs' />
+<snippet id='radslider-declaration-block_3-vb' />
 
 #### Figure 1: Result from Examples 1 and 2
 ![RadSlider](images/radslider_gettingstarted.png)
@@ -76,16 +62,7 @@ To change the theme, you can follow the steps below:
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 3: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radslider-declaration-block_4-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -112,4 +89,3 @@ __Figure 1__ shows a RadSlider with the **Windows8** theme applied.
 * [Events]({%slug radslider-events-overview%})
 * [Orientation]({%slug radslider-orientation%})
 * [Ticks and tick frequency]({%slug radslider-ticks-and-tick-frequency%})
-

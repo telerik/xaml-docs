@@ -86,9 +86,7 @@ All the styles defined for a document are stored in its **StyleRepository** prop
 
 #### [C#] Example 1: Accessing a style from a document
 
-```C#
-	StyleDefinition normalStyle = this.editor.Document.StyleRepository[RadDocumentDefaultStyles.NormalStyleName];
-```
+<snippet id='radrichtextbox-features-styles-styles-block_1-cs' />
 
 
 ## Declaring New Styles
@@ -101,18 +99,7 @@ New styles can be declared and added to the **StylesRepository** of the document
 
 __Example 2: Create and register a Character style__
 
-```C#
-
-	StyleDefinition charStyle = new StyleDefinition();
-	charStyle.Type = StyleType.Character;
-	charStyle.SpanProperties.FontFamily = new FontFamily("Calibri");
-	charStyle.SpanProperties.FontSize = Unit.PointToDip(20);
-	charStyle.SpanProperties.ForeColor = Colors.Orange;
-	charStyle.DisplayName = "charStyle";
-	charStyle.Name = "charStyle";
-	
-	this.editor.Document.StyleRepository.Add(charStyle);
-```
+<snippet id='radrichtextbox-features-styles-styles-block_2-cs' />
 
 
 
@@ -124,16 +111,7 @@ A paragraph style can be defined as follows:
 
 __Example 3: Create and register a Paragraph style__
 
-```C#
-	StyleDefinition paragraphStyle = new StyleDefinition();
-	paragraphStyle.Type = StyleType.Paragraph;
-	paragraphStyle.ParagraphProperties.Background = Colors.Red;
-	paragraphStyle.ParagraphProperties.TextAlignment = RadTextAlignment.Center;
-	paragraphStyle.DisplayName = "paragraphStyle";
-	paragraphStyle.Name = "paragraphStyle";
-	
-	this.editor.Document.StyleRepository.Add(paragraphStyle);
-```
+<snippet id='radrichtextbox-features-styles-styles-block_3-cs' />
 
 
 
@@ -145,25 +123,7 @@ Linked styles should be used when both properties of Paragraph and Span should b
 
 __Example 4: Create and register a linked style__
 
-```C#
-	StyleDefinition linkedParagraphStyle = new StyleDefinition();
-	linkedParagraphStyle.Type = StyleType.Paragraph;
-	linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow;
-	linkedParagraphStyle.DisplayName = "linkedParagraphStyle";
-	linkedParagraphStyle.Name = "linkedParagraphStyle";
-	
-	StyleDefinition linkedCharStyle = new StyleDefinition();
-	linkedCharStyle.Type = StyleType.Character;
-	linkedCharStyle.SpanProperties.FontWeight = FontWeights.Bold;
-	linkedCharStyle.SpanProperties.FontSize = Unit.PointToDip(30);
-	linkedCharStyle.SpanProperties.ForeColor = Colors.Purple;
-	linkedCharStyle.DisplayName = "linkedCharStyle";
-	linkedCharStyle.Name = "linkedCharStyle";
-	linkedParagraphStyle.LinkedStyle = linkedCharStyle;
-	
-	this.editor.Document.StyleRepository.Add(linkedParagraphStyle);
-	this.editor.Document.StyleRepository.Add(linkedCharStyle);
-```
+<snippet id='radrichtextbox-features-styles-styles-block_4-cs' />
 
 
 
@@ -183,9 +143,7 @@ The code from **Example 5** applies the "linkedParagraphStyle" to the current Pa
 
 __Example 5: Apply custom style__
 
-```C#
-	this.editor.ChangeStyleName("linkedParagraphStyle");
-```
+<snippet id='radrichtextbox-features-styles-styles-block_5-cs' />
 
 
 
@@ -205,10 +163,7 @@ All default styles as well as some other predefined styles can be applied using 
       
 __Example 6: Apply built-in style to a Table__
 
-```C#
-
-	table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
-```
+<snippet id='radrichtextbox-features-styles-styles-block_6-cs' />
 
 
 
@@ -217,10 +172,7 @@ And a paragraph can have __Heading 1__ style applied to it like this:
 
 __Example 7: Apply built-in style to a Paragraph__
 
-```C#
-
-	paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
-```
+<snippet id='radrichtextbox-features-styles-styles-block_7-cs' />
 
 ### Change Properties of the Default Styles
 
@@ -228,11 +180,7 @@ You can obtain each of the pre-defined styles and modify it according to your pr
 
 __Example 8: Modify default style__
 
-```C#
-	StyleDefinition normalStyle = this.editor.Document.StyleRepository[RadDocumentDefaultStyles.NormalStyleName];
-	normalStyle.ParagraphProperties.AutomaticSpacingAfter = false;
-	normalStyle.ParagraphProperties.SpacingAfter = 0;
-```
+<snippet id='radrichtextbox-features-styles-styles-block_8-cs' />
 
 >The styles are defined on document level and thus, if the document changes, the styles will be reset as well.
 

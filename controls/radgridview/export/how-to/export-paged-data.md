@@ -27,26 +27,7 @@ You will need to format the exported string column appropriately so that the Exc
 Here is a small sample code:        
 
 __Example 1: Handling the ElementExporting event:__  
-```C#
-	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
-	{
-	    if (e.Element == ExportElement.Cell)
-	    {
-	        var column = e.Context as GridViewDataColumn;
-	        if (column.Header.ToString() == "My String Column")
-	        {
-	            e.Value = string.Format(@"=T(""{0}"")", e.Value);
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_ElementExporting(sender As Object, e As GridViewElementExportingEventArgs)
-	    Dim column = TryCast(e.Context, GridViewDataColumn)
-	    If e.Element = ExportElement.Cell Then
-	        If column.Header.ToString() = "My String Column" Then
-	            e.Value = String.Format("=T(""{0}"")", e.Value)
-	        End If
-	    End If
-	End Sub
-```
+<snippet id='radgridview-export-how-to-export-paged-data-example_1_handling_the_elementexporting_event-cs' />
+
+<snippet id='radgridview-export-how-to-export-paged-data-example_1_handling_the_elementexporting_event-vb' />
+

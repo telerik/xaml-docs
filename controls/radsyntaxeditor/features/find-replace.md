@@ -82,20 +82,11 @@ The RadSyntaxEditor control exposes a `SearchPanelWidth` property which you can 
 >Setting this property may be necessary if you've localized the control in a language other than English or have defined custom strings for the buttons of the dialog, which, in turn, clips their content.
 
 __Setting SearchPanelWidth__
-```XAML
-
-    <telerik:RadSyntaxEditor x:Name="SyntaxEditor" SearchPanelWidth="600" />
-```
+<snippet id='radsyntaxeditor-features-find-replace-block_1-xaml' />
 
 __Setting SearchPanelWidth__
-```C#
-
-    this.SyntaxEditor.SearchPanelWidth = 600;
-```
-```VB.NET
-
-    Me.SyntaxEditor.SearchPanelWidth = 600
-```
+<snippet id='radsyntaxeditor-features-find-replace-block_2-cs' />
+<snippet id='radsyntaxeditor-features-find-replace-block_3-vb' />
 
 ## See Also
 

@@ -47,51 +47,11 @@ The Mini Map control can also be used as a separate control like other map contr
 Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadExpander* as its wrapper and change the size of the Mini Map by respecting the size of the RadMap:        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap1"
-	                MiniMapExpanderVisibility="Collapsed"
-	                SizeChanged="MapSizeChanged">
-	    <telerik:RadMap.Providers>
-	        <telerik:OpenStreetMapProvider/>
-	    </telerik:RadMap.Providers>
-	
-	    <telerik:RadExpander VerticalAlignment="Top"
-	                        HorizontalAlignment="Left">
-	        <telerik:MiniMap x:Name="MiniMap1"
-	                        UseParentMapProvider="False"
-	                        MapControl="{Binding ElementName=radMap1}"
-	                        UseSpringAnimations="True"
-	                        IsViewportAreaVisible="True"
-	                        ViewportAreaZoomReduction="1" ViewportAreaFill="Red"
-	                        Width="256" Height="200">
-	            <telerik:RadMap.Provider>
-	                <telerik:OpenStreetMapProvider />
-	            </telerik:RadMap.Provider>
-	        </telerik:MiniMap>
-	    </telerik:RadExpander>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-mini-map-block_1-xaml' />
 
 
-```C#
-	private const double MiniMapWidthScaleFactor = 0.15;
-	private const double MiniMapHeightScaleFactor = 0.2;
-	
-	private void MapSizeChanged(object sender, SizeChangedEventArgs e)
-	{
-	    this.MiniMap1.Width = e.NewSize.Width * MiniMapWidthScaleFactor;
-	    this.MiniMap1.Height = e.NewSize.Height * MiniMapHeightScaleFactor;
-	}
-```
-```VB.NET
-	Private Const MiniMapWidthScaleFactor As Double = 0.15
-	Private Const MiniMapHeightScaleFactor As Double = 0.2
-	
-	Private Sub MapSizeChanged(ByVal sender As Object, ByVal e As SizeChangedEventArgs)
-		Me.MiniMap1.Width = e.NewSize.Width * MiniMapWidthScaleFactor
-		Me.MiniMap1.Height = e.NewSize.Height * MiniMapHeightScaleFactor
-	End Sub
-```
+<snippet id='radmap-features-mini-map-block_2-cs' />
+<snippet id='radmap-features-mini-map-block_2-vb' />
 
 By wiring to __MapSizeChanged__ event we are setting our Height and Width for the Mini Map so that it is always scaled by our own custom factor. This way the size of the MiniMap will respect the size of its parent Map.        
 

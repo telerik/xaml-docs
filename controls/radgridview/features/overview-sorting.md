@@ -18,34 +18,18 @@ You can define sorting criteria either in the XAML or in the code-behind.
 
 
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 AutoGenerateColumns="False">
-	    <telerik:RadGridView.SortDescriptors>
-	        <telerik:SortDescriptor Member="EmployeeID"
-	                            SortDirection="Ascending" />
-	    </telerik:RadGridView.SortDescriptors>
-	    <!--...-->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-features-overview-sorting-block_1-xaml' />
+
 
 
 You can achieve the same result if you define your sorting criteria in the code-behind like this:
 
 
 
-```C#
-	SortDescriptor descriptor = new SortDescriptor();
-	descriptor.Member = "EmployeeID";
-	descriptor.SortDirection = ListSortDirection.Ascending;
-	this.radGridView.SortDescriptors.Add(descriptor);
-```
-```VB.NET
-	Dim descriptor As New SortDescriptor()
-	descriptor.Member = "EmployeeID"
-	descriptor.SortDirection = ListSortDirection.Ascending
-	Me.radGridView.SortDescriptors.Add(descriptor)
-```
+<snippet id='radgridview-features-overview-sorting-block_2-cs' />
+
+<snippet id='radgridview-features-overview-sorting-block_2-vb' />
+
 
 
 >Note that since __SortDescriptors__ property is a __collection__, you can add more than one __SortDescriptor__ to a __RadGridView__.

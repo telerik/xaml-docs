@@ -22,28 +22,19 @@ __RadToggleButton__ inherits from the native __ToggleButton__ control and implem
 You can instantiate __RadToggleButton__ in both XAML and code as shown in Examples 1 and 2.
 
 __Example 1: Defining a button in XAML__
-```XAML
-	<telerik:RadToggleButton Content="Toggle Me!" />
-```
+<snippet id='radbuttons-features-toggle-button-example_1_defining_a_button_in_xaml-xaml' />
 
 __Example 2: Defining a button in code__
-```C#
-	RadToggleButton radToggleButton = new RadToggleButton() { Content = "Toggle Me!" };
-```
-```VB.NET
-	Dim radToggleButton As New RadToggleButton() With { _
-	    .Content = "Toggle Me!" _
-	}
-```
+<snippet id='radbuttons-features-toggle-button-example_2_defining_a_button_in_code-cs' />
+<snippet id='radbuttons-features-toggle-button-example_2_defining_a_button_in_code-vb' />
+
 
 ## Enable Three State Mode
 
 To make __RadToggleButton__ to go into a three state mode you can just set its __IsThreeState__ property to __True__.
 
 __Example 5: Enabling the three-state mode__
-```XAML
-	<telerik:RadToggleButton IsThreeState="True" />
-```
+<snippet id='radbuttons-features-toggle-button-example_5_enabling_the_three_state_mode-xaml' />
 
 ## Toggle Events
 
@@ -60,30 +51,22 @@ The toggle state of the button can be manually controlled via its __IsChecked__ 
 Here is an example of handling the __Checked__ event of a button.
 
 __Example 3: Subscribing to the Checked event__
-```XAML
-	<telerik:RadToggleButton Content="Toggle Me!" Checked="RadToggleButton_Checked" />
-```
+<snippet id='radbuttons-features-toggle-button-example_3_subscribing_to_the_checked_event-xaml' />
 
 __Example 4: Defining a Checked event handler__
-```C#
-	private void RadToggleButton_Checked(object sender, RoutedEventArgs e)
-	{
-	    //implement your logic here
-	}
-```
-```VB.NET
-	Private Sub RadToggleButton_Checked(sender As Object, e As RoutedEventArgs)
-	    'implement your logic here'
-	End Sub
-```
+<snippet id='radbuttons-features-toggle-button-example_4_defining_a_checked_event_handler-cs' />
+<snippet id='radbuttons-features-toggle-button-example_4_defining_a_checked_event_handler-vb' />
+
 
 ## Customizing RadToggleButton
 
 * __IsBackgroundVisible__: This property controls the visibility of the background and the border of the button when in normal state.
-	#### __Figure 2: Toggle button with hidden background__	![{{ site.framework_name }} RadButtons Toggle button with hidden background](images/radbuttons-features-toggle-button-1.png)
+	#### __Figure 2: Toggle button with hidden background__
+	![{{ site.framework_name }} RadButtons Toggle button with hidden background](images/radbuttons-features-toggle-button-1.png)
 
 * __CornerRadius__: This property controls the corner radius of the button.
-	#### __Figure 3: Toggle button with its CornerRadius set to 15__	![{{ site.framework_name }} RadButtons Toggle button with its CornerRadius set to 15](images/radbuttons-features-toggle-button-2.png)
+	#### __Figure 3: Toggle button with its CornerRadius set to 15__
+	![{{ site.framework_name }} RadButtons Toggle button with its CornerRadius set to 15](images/radbuttons-features-toggle-button-2.png)
 
 ## See Also 
  * [Button]({%slug radbuttons-features-button%})

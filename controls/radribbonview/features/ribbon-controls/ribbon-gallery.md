@@ -52,32 +52,7 @@ Ribbon gallery can be always rendered in two ways - inside a [RadRibbonDropDownB
 When you want to declare a __Ribbon Gallery__ as popup inside a [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%})/[RadRibbonSplitButton]({%slug radribbonview-split-button%}), you should use the __RadGallery__ class. The next example demonstrates how to do that.			
 
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup Header="Font" DialogLauncherVisibility="Visible">
-	            <StackPanel>
-	                <telerik:RadRibbonSplitButton x:Name="UnderlineButton"
-	                        SmallImage="Images/IconMSOffice/16/underline.png">
-	                    <telerik:RadRibbonSplitButton.DropDownContent>
-	                        <StackPanel>
-	                            <telerik:RadGallery ViewportWidth="157" ItemWidth="156"
-	                                    ItemHeight="26">
-	                                <telerik:RadGalleryItem Image="Images/IconMSOffice/underline1.png"
-	                                        ToolTipService.ToolTip="Underline" />
-	                                <telerik:RadGalleryItem Image="Images/IconMSOffice/underline2.png"
-	                                        ToolTipService.ToolTip="Double underline" />
-	                                <telerik:RadGalleryItem Image="Images/IconMSOffice/underline3.png"
-	                                        ToolTipService.ToolTip="Thick underline" />
-	                            </telerik:RadGallery>
-	                        </StackPanel>
-	                    </telerik:RadRibbonSplitButton.DropDownContent>
-	                </telerik:RadRibbonSplitButton>
-	            </StackPanel>
-	        </telerik:RadRibbonGroup>
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_1-xaml' />
 
 Note that when you use the __RadGallery__, you should specify the __ViewportWidth__ property. It controls the horizontal size of the content's viewport. On the other hand, the size of the items themselves is controlled by the __ItemWidth__ and __ItemHeight__ properties. The result from the example is shown on the next two snapshots.
 
@@ -92,69 +67,7 @@ When you press the popup launch button, the gallery is shown.
 When you want to declare a __Ribbon Gallery__ directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}), you should use the __RadRibbonGallery__ class. Consider again the previous example, add an additional __RadRibbonGroup__ and declare a __RadRibbonGallery__ like in the example below.			
 
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup Header="Font" DialogLauncherVisibility="Visible">
-	            <StackPanel>
-	                <telerik:RadRibbonSplitButton x:Name="UnderlineButton"
-	                        SmallImage="Images/IconMSOffice/16/underline.png">
-	                    <telerik:RadRibbonSplitButton.DropDownContent>
-	                        <StackPanel>
-	                            <telerik:RadGallery ViewportWidth="157" ItemWidth="156"
-	                                    ItemHeight="26">
-	                                <telerik:RadGalleryItem
-	                                        Image="Images/IconMSOffice/underline1.png"
-	                                        ToolTipService.ToolTip="Underline" />
-	                                <telerik:RadGalleryItem
-	                                        Image="Images/IconMSOffice/underline2.png"
-	                                        ToolTipService.ToolTip="Double underline" />
-	                                <telerik:RadGalleryItem
-	                                        Image="Images/IconMSOffice/underline3.png"
-	                                        ToolTipService.ToolTip="Thick underline" />
-	                            </telerik:RadGallery>
-	                        </StackPanel>
-	                    </telerik:RadRibbonSplitButton.DropDownContent>
-	                </telerik:RadRibbonSplitButton>
-	            </StackPanel>
-	        </telerik:RadRibbonGroup>
-	        <telerik:RadRibbonGroup Header="Styles" DialogLauncherVisibility="Visible">
-	            <telerik:RadRibbonGallery Title="Quick Styles" x:Name="QuickStyles" ItemWidth="72" ItemHeight="56">
-	                <telerik:RadGalleryItem IsSelected="True" Name="Normal"
-	                        Image="Images/IconMSOffice/paragraph.png"
-	                        ToolTipService.ToolTip="Normal" />
-	                <telerik:RadGalleryItem Name="No_Spacing"
-	                        Image="Images/IconMSOffice/paragraph9.png"
-	                        ToolTipService.ToolTip="No Spacing" />
-	                <telerik:RadGalleryItem Name="Heading1"
-	                        Image="Images/IconMSOffice/paragraph8.png"
-	                        ToolTipService.ToolTip="Heading 1" />
-	                <telerik:RadGalleryItem Name="Heading2"
-	                        Image="Images/IconMSOffice/paragraph7.png"
-	                        ToolTipService.ToolTip="Heading 2" />
-	                <telerik:RadGalleryItem Name="Title"
-	                        Image="Images/IconMSOffice/paragraph6.png"
-	                        ToolTipService.ToolTip="Title" />
-	                <telerik:RadGalleryItem Name="Subtitle"
-	                        Image="Images/IconMSOffice/paragraph5.png"
-	                        ToolTipService.ToolTip="Subtitle" />
-	                <telerik:RadGalleryItem Name="Subtitle_Emphasis"
-	                        Image="Images/IconMSOffice/paragraph4.png"
-	                        ToolTipService.ToolTip="Subtitle Emphasis" />
-	                <telerik:RadGalleryItem Name="Emphasis"
-	                        Image="Images/IconMSOffice/paragraph3.png"
-	                        ToolTipService.ToolTip="Emphasis" />
-	                <telerik:RadGalleryItem Name="Intense_Emphasis"
-	                        Image="Images/IconMSOffice/paragraph2.png"
-	                        ToolTipService.ToolTip="Intense Emphasis" />
-	                <telerik:RadGalleryItem Name="Strong"
-	                        Image="Images/IconMSOffice/paragraph1.png"
-	                        ToolTipService.ToolTip="Strong" />
-	            </telerik:RadRibbonGallery>
-	        </telerik:RadRibbonGroup>
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_2-xaml' />
 
 The result is shown on the image below.
 ![{{ site.framework_name }} RadRibbonView Ribbon Gallery](images/RibbonView_Gallery_ribbongallery.png)
@@ -171,40 +84,7 @@ The __RadGallery__ allows you to place in the popup additional menu options rega
 The next code snippet demonstrates how to add additional menu items.
 
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup Header="Font" DialogLauncherVisibility="Visible">
-	            <StackPanel>
-	                <telerik:RadRibbonSplitButton x:Name="UnderlineButton"
-	                        SmallImage="Images/IconMSOffice/16/underline.png">
-	                    <telerik:RadRibbonSplitButton.DropDownContent>
-	                        <StackPanel>
-	                            <telerik:RadGallery ViewportWidth="157" ItemWidth="156"
-	                                    ItemHeight="26">
-	                                <telerik:RadGalleryItem Image="Images/IconMSOffice/underline1.png"
-	                                        ToolTipService.ToolTip="Underline" />
-	                                <telerik:RadGalleryItem Image="Images/IconMSOffice/underline2.png"
-	                                        ToolTipService.ToolTip="Double underline" />
-	                                <telerik:RadGalleryItem Image="Images/IconMSOffice/underline3.png"
-	                                        ToolTipService.ToolTip="Thick underline" />
-	                            </telerik:RadGallery>
-	                            <telerik:RadContextMenu BorderThickness="0">
-	                                <telerik:RadMenuItem Header="More underlines ..." />
-	                                <telerik:RadMenuItem Header="Underline color">
-	                                    <telerik:RadMenuItem.Icon>
-	                                        <Image Source="Images/IconMSOffice/colorpicker.png" />
-	                                    </telerik:RadMenuItem.Icon>
-	                                </telerik:RadMenuItem>
-	                            </telerik:RadContextMenu>
-	                        </StackPanel>
-	                    </telerik:RadRibbonSplitButton.DropDownContent>
-	                </telerik:RadRibbonSplitButton>
-	            </StackPanel>
-	        </telerik:RadRibbonGroup>
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_3-xaml' />
 
 And the result is shown on the next image.
 ![{{ site.framework_name }} RadRibbonView Gallery Group Context Menu](images/RibbonView_Gallery_group_contextMenu.png)
@@ -216,41 +96,7 @@ You could also associate additional menu options with the __RadRibbonGallery__ p
 In the next example several __RadMenuItem__ objects are added to the __RadRibbonGallery__'s __PopupMenuItems__ collection.		
 
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView">
-	    <telerik:RadRibbonTab Header="Home">
-	        <telerik:RadRibbonGroup Header="Styles" DialogLauncherVisibility="Visible">
-	            <telerik:RadRibbonGallery Title="Quick Styles" x:Name="QuickStyles" ItemWidth="72" ItemHeight="56">
-	                <telerik:RadRibbonGallery.PopupMenuItems>
-	                    <telerik:RadMenuItem Header="Save Selection as a Quick Style..." />
-	                    <telerik:RadMenuItem Header="Clear Formatting" />
-	                    <telerik:RadMenuItem Header="Apply Styles..." />
-	                </telerik:RadRibbonGallery.PopupMenuItems>
-	                <telerik:RadGalleryItem IsSelected="True" Name="Normal"
-	                        Image="Images/IconMSOffice/paragraph.png" ToolTipService.ToolTip="Normal" />
-	                <telerik:RadGalleryItem Name="No_Spacing" Image="Images/IconMSOffice/paragraph9.png"
-	                        ToolTipService.ToolTip="No Spacing" />
-	                <telerik:RadGalleryItem Name="Heading1" Image="Images/IconMSOffice/paragraph8.png"
-	                        ToolTipService.ToolTip="Heading 1" />
-	                <telerik:RadGalleryItem Name="Heading2" Image="Images/IconMSOffice/paragraph7.png"
-	                        ToolTipService.ToolTip="Heading 2" />
-	                <telerik:RadGalleryItem Name="Title" Image="Images/IconMSOffice/paragraph6.png"
-	                        ToolTipService.ToolTip="Title" />
-	                <telerik:RadGalleryItem Name="Subtitle" Image="Images/IconMSOffice/paragraph5.png"
-	                        ToolTipService.ToolTip="Subtitle" />
-	                <telerik:RadGalleryItem Name="Subtitle_Emphasis" Image="Images/IconMSOffice/paragraph4.png"
-	                        ToolTipService.ToolTip="Subtitle Emphasis" />
-	                <telerik:RadGalleryItem Name="Emphasis" Image="Images/IconMSOffice/paragraph3.png"
-	                        ToolTipService.ToolTip="Emphasis" />
-	                <telerik:RadGalleryItem Name="Intense_Emphasis" Image="Images/IconMSOffice/paragraph2.png"
-	                        ToolTipService.ToolTip="Intense Emphasis" />
-	                <telerik:RadGalleryItem Name="Strong" Image="Images/IconMSOffice/paragraph1.png"
-	                        ToolTipService.ToolTip="Strong" />
-	            </telerik:RadRibbonGallery>
-	        </telerik:RadRibbonGroup>
-	    </telerik:RadRibbonTab>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_4-xaml' />
 
 ![{{ site.framework_name }} RadRibbonView Ribbon Gallery Context Menu](images/RibbonView_Gallery_ribbongallery_contextMenu.png)
 
@@ -261,26 +107,7 @@ You can visually group the __RadRibbonGallery__ items when the gallery is in ope
 However, in order to properly display header items in the __RadRibbonGallery__, you need to change its default __ItemsPanel__ to a __RibbonGalleryPanel__:		
 
 
-```XAML
-	<telerik:RadRibbonGallery>
-	    <telerik:RadRibbonGallery.ItemsPanel>
-	        <ItemsPanelTemplate>
-	            <telerikRibbonViewPrimitives:RibbonGalleryPanel />
-	        </ItemsPanelTemplate>
-	    </telerik:RadRibbonGallery.ItemsPanel>
-	    <telerik:RadGalleryItem Content="Header1" IsHeader="True" />
-	    <telerik:RadGalleryItem Content="Item 1.1" />
-		<telerik:RadGalleryItem Content="Item 1.2" />
-		<telerik:RadGalleryItem Content="Item 1.3" />
-	    <telerik:RadGalleryItem Content="Header2" IsHeader="True" />
-	    <telerik:RadGalleryItem Content="Item 2.1" />
-		<telerik:RadGalleryItem Content="Item 2.2" />
-		<telerik:RadGalleryItem Content="Item 2.3" />
-	    <telerik:RadGalleryItem Content="Header3" IsHeader="True" />
-	    <telerik:RadGalleryItem Content="Item 3.1" />
-		<telerik:RadGalleryItem Content="Item 3.2" />
-	</telerik:RadRibbonGallery>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_5-xaml' />
 
 ![Rad Ribbon View Ribbon Gallery Headers](images/RadRibbonView_RibbonGallery_Headers.png)
 
@@ -292,11 +119,7 @@ However, in order to properly display header items in the __RadRibbonGallery__, 
 The __RadRibbonGallery__ class allows you to set the visibility of the launch popup button. The next example shows you how to set the __RadRibbonGallery__'s __PopupLaunchButtonVisibility__ property to __Visibility.Collapsed__.		
 
 
-```XAML
-	<telerik:RadRibbonGallery Title="Quick Styles" x:Name="QuickStyles" ItemWidth="72" ItemHeight="56" PopupLaunchButtonVisibility="Collapsed">
-	 ...
-	</telerik:RadRibbonGallery>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_6-xaml' />
 
 ![{{ site.framework_name }} RadRibbonView Ribbon Gallery Disabled Popup Button](images/RibbonView_Gallery_disable_popup.png)
 
@@ -335,48 +158,12 @@ The __DeactivatePreview__ event is raised when the mouse cursor leaves the galle
 >tip Since the __RadRibbonGallery__ inherits the __RadGallery__ class, you can handle the __ActivatePreview__ and __DeactivatePreview__ events in the __RadRibbonGallery__ control as well.		  
 
 
-```XAML
-	<telerik:RadRibbonGallery Title="Quick Styles" x:Name="QuickStyles" ItemWidth="72" ItemHeight="56" 
-	                          ActivatePreview="QuickStyles_ActivatePreview" 
-	                          DeactivatePreview="QuickStyles_DeactivatePreview">
-	 ...
-	</telerik:RadRibbonGallery>
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_7-xaml' />
 
 
 
-```C#
-	private void QuickStyles_ActivatePreview(object sender, Telerik.Windows.RadRoutedEventArgs e)
-	{
-	 // Grab the RadRibbonGallery object
-	 RadRibbonGallery gallery = sender as RadRibbonGallery;
-	 // Get the selected item
-	 RadGalleryItem selectedItem = gallery.SelectedItem as RadGalleryItem;
-	}
-	private void QuickStyles_DeactivatePreview(object sender, Telerik.Windows.RadRoutedEventArgs e)
-	{
-	 // Grab the RadRibbonGallery object
-	 RadRibbonGallery gallery = sender as RadRibbonGallery;
-	 // Get the selected item
-	 RadGalleryItem selectedItem = gallery.SelectedItem as RadGalleryItem;
-	}
-```
-```VB.NET
-	Private Sub QuickStyles_ActivatePreview(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)
-		' Grab the RadRibbonGallery object'
-		Dim gallery As RadRibbonGallery = TryCast(sender, RadRibbonGallery)
-		' Get the selected item'
-		Dim selectedItem As RadGalleryItem = TryCast(gallery.SelectedItem, RadGalleryItem)
-	
-	End Sub
-	
-	Private Sub QuickStyles_DeactivatePreview(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)
-		' Grab the RadRibbonGallery object'
-		Dim gallery As RadRibbonGallery = TryCast(sender, RadRibbonGallery)
-		' Get the selected item'
-		Dim selectedItem As RadGalleryItem = TryCast(gallery.SelectedItem, RadGalleryItem)
-	End Sub
-```
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_8-cs' />
+<snippet id='radribbonview-features-ribbon-controls-ribbon-gallery-block_9-vb' />
 
 For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview]({%slug radribbonview-events-overview%}) topic.		
 

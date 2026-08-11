@@ -15,11 +15,8 @@ This article describes the global settings applied in the __Diagramming Framewor
 The __Diagramming Framework__ provides a list of constants that are applied throughout the different diagramming tools and items. You can change their default values to customize the global settings in the __RadDiagram__ elements. The constants can be accessed via the __DiagramConstants__ class.	
 
 __Example 1: Setting diagram constants__
-```C#
-	DiagramConstants.MinimumZoom = 0.5;
-	DiagramConstants.MaximumZoom = 4;
-	DiagramConstants.StartDragDelta = 10;
-```
+<snippet id='raddiagram-features-global-settings-example_1_setting_diagram_constants-cs' />
+
 	
 * __BezierAutoOffset__: Gets or sets the default offset between the Bezier handle points and the endpoints of the connection when the handle points coordinates are automatically calculated according to a connector's position. The default value of this constant is 30px. [Read More]({%slug raddiagrams-features-connections%}).			
 

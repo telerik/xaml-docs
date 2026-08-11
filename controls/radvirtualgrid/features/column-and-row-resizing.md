@@ -39,12 +39,7 @@ RadVirtualGrid supports setting the width of a given column to be as large as bi
 A possible way to ensure that the visual elements of RadVirtualGrid are already generated, is to handle the `Loaded` event of the control. 
 
 __Invoking the FitColumnWidthToContent method__
-```C#
-	private void VirtualGrid_Loaded(object sender, RoutedEventArgs e)
-        {
-            this.VirtualGrid.FitColumnWidthToContent(1);
-        }
-```
+<snippet id='radvirtualgrid-features-column-and-row-resizing-block_1-cs' />
 
 ## See Also
 

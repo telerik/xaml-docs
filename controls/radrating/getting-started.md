@@ -41,17 +41,11 @@ You can include the control in your page by either dragging it from the toolbox 
 > In order to use the RadRating control, you need to declare the following namespace: xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
 __Example 1: Instantiating a RadRating control in Xaml__
-```XAML
-	<telerik:RadRating />
-```
+<snippet id='radrating-getting-started-block_1-xaml' />
 
 __Example 2: Instantiating a RadRating control in code__
-```C#
-	RadRating ratingControl = new RadRating();
-```
-```VB.NET
-	Dim ratingControl As New RadRating()
-```
+<snippet id='radrating-getting-started-block_2-cs' />
+<snippet id='radrating-getting-started-block_3-vb' />
 
 #### Figure 1: RadRating
 ![RadRating](images/rating_default.png)
@@ -87,17 +81,7 @@ To change the theme, you can follow the steps below:
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 3: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radrating-getting-started-block_4-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -123,5 +107,3 @@ __Figure 2__ shows a RadRating with the **Windows8** theme applied.
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}
-
-

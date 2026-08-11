@@ -14,20 +14,8 @@ The __ExpandDirection__ property gets or sets the direction in which the content
 
 __Example 1: Setting ExpandDirection property__
 
-```XAML
-	<Grid>
-		<telerik:RadExpander Width="200" Height="200"
-							ExpandDirection="Down" Background="Bisque"
-							Header="ExpandDirection Down">
-			<StackPanel Orientation="Vertical">
-				<Ellipse Width="99"  
-						Height="99" 
-						Margin="5" 
-						Fill="Blue" />
-			</StackPanel>
-		</telerik:RadExpander>
-	</Grid>
-```
+<snippet id='radexpander-features-expand-direction-example_1_setting_expanddirection_property-xaml' />
+
 
 #### __Figure 1: ExpandDirection set to Down__
 ![{{ site.framework_name }} RadExpander ExpandDirection set to Down](images/RadExpander_Features_ExpandDirection_Down.gif)

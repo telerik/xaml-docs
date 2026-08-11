@@ -21,17 +21,7 @@ RadMap providers use the `FileSystemCache` class to enable the tiles caching. Ad
 `FileSystemCache` saves the requested tiles to the file system. This type of cache allows you to define few settings like max size of the storage, an expiration date-time for the tiles and also the file system directory where the tiles are saved.
 
 __Example 1: Setting FileSystemCache and changing the default path__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider IsTileCachingEnabled="True">
-				<telerik:OpenStreetMapProvider.CacheStorage>
-					<telerik:FileSystemCache CachePath="C:\temp\OSMCache" />
-				</telerik:OpenStreetMapProvider.CacheStorage>
-			</telerik:OpenStreetMapProvider>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>	
-```
+<snippet id='radmap-features-providers-tiles-cache-block_1-xaml' />
 
  `FileSystemCache` is the default storage object that is automatically created when the `CacheStorage` property of the provider is not assigned. When the file system cache is atuomatically created its `CachePath` is assigned to the ApplicationData folder on the OS: `C:\Users\<username>\AppData\Local\TelerikMapCache\<providername>`.
 
@@ -40,91 +30,31 @@ __Example 1: Setting FileSystemCache and changing the default path__
 `MemoryCache` saves each tile in a byte array stored in memory.
 
 __Example 2: Replacing the default FileSystemCache with MemoryCache__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider IsTileCachingEnabled="True">
-				<telerik:OpenStreetMapProvider.CacheStorage>
-					<telerik:MemoryCache />
-				</telerik:OpenStreetMapProvider.CacheStorage>
-			</telerik:OpenStreetMapProvider>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>	
-```
+<snippet id='radmap-features-providers-tiles-cache-block_2-xaml' />
 
 ## IsolatedStorageCache
 
 `IsolatedStorageCache` saves the requested tiles into the [isolated storage](https://docs.microsoft.com/en-us/dotnet/standard/io/isolated-storage).
 
 __Example 3: Replacing the default FileSystemCache with IsolatedStorageCache__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider IsTileCachingEnabled="True">
-				<telerik:OpenStreetMapProvider.CacheStorage>
-					<telerik:IsolatedStorageCache />
-				</telerik:OpenStreetMapProvider.CacheStorage>
-			</telerik:OpenStreetMapProvider>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>	
-```
+<snippet id='radmap-features-providers-tiles-cache-block_3-xaml' />
 
 ## Custom Cache Storage
 
 Besides the built-in cache storages, a custom storage can be created by implementing the `ICacheStorage` interface. This allows to introduce a saving mechanism different then the originally provided ones. The interface requests to implement `Load`, `LoadAsync` and `Save` methods.
 
 __Example 4: Creating custom cache storage__
-```C#
-	public class CustomCacheStorage : ICacheStorage
-    {
-        public Stream Load(string fileName)
-        {
-            // Load the tile using the 'fileName' as an unique identifier to retrieve the corresponding tile.
-        }
-
-        public void LoadAsync(string fileName, Action<byte[]> callback)
-        {
-            // Load the tile (a byte array) using the 'fileName' as an unique identifier to retrieve the corresponding tile.
-            // Pass it to the callback that will be called to return a tile if it is available.
-
-            // callback(tile);
-        }
-
-        public void Save(string fileName, DateTime expirationDate, byte[] tile)
-        {
-            // Save the tile using:
-            // the 'fileName' as an unique identifier, 
-            // the 'expirationDate' as the date until when the tile will be cached and
-            // the 'tile' as the body of the tile image
-        }
-    }
-```
+<snippet id='radmap-features-providers-tiles-cache-block_4-cs' />
 
 __Example 5: Using the custom cache storage__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider IsTileCachingEnabled="True">
-				<telerik:OpenStreetMapProvider.CacheStorage>
-					<local:CustomCacheStorage />
-				</telerik:OpenStreetMapProvider.CacheStorage>
-			</telerik:OpenStreetMapProvider>
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>	
-```
+<snippet id='radmap-features-providers-tiles-cache-block_5-xaml' />
 
 ## Request Cache Level
 
 The `RadMap` control uses the [built-in .NET caching mechanism](https://docs.microsoft.com/en-us/dotnet/api/system.net.cache.requestcachelevel?view=netcore-3.1) for downloading map tiles. The tiled providers expose a `RequestCacheLevel` property which is used to control the current caching level. The default level is `System.Net.Cache.RequestCacheLevel.CacheIfAvailable`. 
 
 __Example 6: Setting the RequestCacheLevel__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider RequestCacheLevel="Revalidate" />
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>	
-```
+<snippet id='radmap-features-providers-tiles-cache-block_6-xaml' />
 
 ## See Also
  * [Providers Overview]({%slug radmap-features-providers%})

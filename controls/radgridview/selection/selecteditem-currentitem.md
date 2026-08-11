@@ -18,50 +18,15 @@ The **SelectedItem** property of RadGridView is used to access the data item of 
 
 __Example 1: Binding to SelectedItem__
 
-```XAML
-	<telerik:RadGridView SelectedItem="{Binding SelectedItem}" />
-```
+<snippet id='radgridview-selection-selecteditem-currentitem-example_1_binding_to_selecteditem-xaml' />
+
 
 __Example 2: The viewmodel's SelectedItem property__
 
-```C#
-	public class MainViewModel : ViewModelBase
-	{
-		private object selectedItem;
+<snippet id='radgridview-selection-selecteditem-currentitem-example_2_the_viewmodel_s_selecteditem_property-cs' />
 
-		public object SelectedItem
-		{
-			get { return this.selectedItem; }
-			set
-			{
-				if (value != this.selectedItem)
-				{
-					this.selectedItem = value;
-					this.OnPropertyChanged("SelectedItem");
-				}
-			}
-		}
-	}
-```
-```VB.NET
-	Public Class MainViewModel
-	Inherits ViewModelBase
+<snippet id='radgridview-selection-selecteditem-currentitem-example_2_the_viewmodel_s_selecteditem_property-vb' />
 
-		Private _selectedItem As Object
-
-		Public Property SelectedItem() As Object
-			Get
-				Return Me._selectedItem
-			End Get
-			Set(ByVal value As Object)
-				If value IsNot Me._selectedItem Then
-					Me._selectedItem = value
-					Me.OnPropertyChanged("SelectedItem")
-				End If
-			End Set
-		End Property
-	End Class
-```
 
 ## CurrentItem
 

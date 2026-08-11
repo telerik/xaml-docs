@@ -16,13 +16,8 @@ By default, when an item is matched by the text entered in an editable RadComboB
 
 __Example 1: Set the UpdateSelectionOnLostFocus property__
 
-```XAML
-	<telerik:RadComboBox IsEditable="True" UpdateSelectionOnLostFocus="True">
-		<telerik:RadComboBoxItem Content="Item 1" />
-		<telerik:RadComboBoxItem Content="Item 2" />
-		<telerik:RadComboBoxItem Content="Item 3" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-howto-perform-selection-only-lost-focus-example_1_set_the_updateselectiononlostfocus_property-xaml' />
+
 
 When the __UpdateSelectionOnLostFocus__ property is set to true, you have to take into account the following scenarios when the control loses focus or the __Enter__ key is pressed:
 

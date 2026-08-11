@@ -29,66 +29,20 @@ For demonstration purposes we will use a simple class that will represent one ce
 * __Value__: Аn integer property which gets or sets the value of the corresponding cell.
 
 
-```C#
-	public class PlotInfo
-	{
-		public string Row { get; set; }
+<snippet id='radheatmap-labels-block_1-cs' />
 
-		public string Column { get; set; }
-
-		public double Value { get; set; }
-	}
-```
 
 To fill the RadHeatMap with sample data we can create a list of *PlotInfo* objects and set it as DataContext of the control. 
 	
 
-```C#
-	public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            this.InitializeComponent(); 
+<snippet id='radheatmap-labels-block_2-cs' />
 
-            var data = new List<PlotInfo>();
-
-            for (int r = 0; r <= 20; r++)
-            {
-                for (int c = 0; c <= 20; c++)
-                {
-                    var pi = new PlotInfo
-                    {
-                        Row = string.Format("Row {0}", r),
-                        Column = string.Format("Col {0}", c),
-                        Value = r + c
-                    };
-                    data.Add(pi);
-                }
-            }
-			
-            this.heatMap.DataContext = data;
-        }
-    } 
-```
 
 After having the sample data ready we can go in the XAML code and define the RadHeatMap and the CellLabelSettings.
 
 
-```XAML
-	<telerik:RadHeatMap x:Name="heatMap"
-						CellBorderColor="Black"
-						CellBorderThickness="1">
-		<telerik:RadHeatMap.Definition>
-				<telerik:CategoricalDefinition RowGroupMemberPath="Row"
-											   ColumnGroupMemberPath="Column"
-											   ValuePath="Value"
-											   ItemsSource="{Binding}" />
-		 </telerik:RadHeatMap.Definition>
-		 <telerik:RadHeatMap.CellLabelSettings>
-				<telerik:HeatMapCellLabelSettings Foreground="Yellow" />
-		 </telerik:RadHeatMap.CellLabelSettings>		
-	 </telerik:RadHeatMap>
-```
+<snippet id='radheatmap-labels-block_3-xaml' />
+
 	 
 The final look of the example will be similar to the following picture:
 ![labels picture](images/RadHeatMap_labels_01.png)

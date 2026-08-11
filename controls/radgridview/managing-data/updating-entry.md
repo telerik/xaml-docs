@@ -16,42 +16,26 @@ There are three ways for the row to enter edit mode. The first one is when the u
 
 
 
-```C#
-	this.radGridView.BeginEdit();
-```
-```VB.NET
-	Me.radGridView.BeginEdit()
-```
+<snippet id='radgridview-managing-data-updating-entry-block_1-cs' />
+
+<snippet id='radgridview-managing-data-updating-entry-block_1-vb' />
+
 
 For example, you can use a button to call this method.
 
 
 
-```XAML
-	<StackPanel x:Name="LayoutRoot">
-	    <Button Content="Edit"
-	    Click="Button_Click" />
-	    <telerik:RadGridView AutoGenerateColumns="False">
-	        <!--...-->
-	    </telerik:RadGridView>
-	</StackPanel>
-```
+<snippet id='radgridview-managing-data-updating-entry-block_2-xaml' />
+
 
 And in the event handler call the method for the Click event.
 
 
 
-```C#
-	private void Button_Click(object sender, RoutedEventArgs e)
-	{
-	    this.radGridView.BeginEdit();
-	}
-```
-```VB.NET
-	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-	    Me.radGridView.BeginEdit()
-	End Sub
-```
+<snippet id='radgridview-managing-data-updating-entry-block_3-cs' />
+
+<snippet id='radgridview-managing-data-updating-entry-block_3-vb' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView row in edit mode with editable cells highlighted](images/RadGridView_EditingItems_1.png)
 
@@ -63,27 +47,18 @@ The next step in implementing the adding functionality is to attach event handle
 
 
 
-```XAML
-	<telerik:RadGridView BeginningEdit="radGridView_BeginningEdit"
-	             RowEditEnded="radGridView_RowEditEnded">
-	    <!--...-->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-managing-data-updating-entry-block_4-xaml' />
+
 
 
 The __BeginningEdit__ event is raised before the row enters edit mode. In the event handler you can cancel the operation or modify the cell being edited via the __Cancel__ and __Cell__ properties of the __GridViewBeginningEditRoutedEvenArgs__.
 
 
 
-```C#
-	private void radGridView_BeginningEdit(object sender, GridViewBeginningEditRoutedEventArgs e)
-	{
-	}
-```
-```VB.NET
-	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As GridViewBeginningEditRoutedEventArgs)
-	End Sub
-```
+<snippet id='radgridview-managing-data-updating-entry-block_5-cs' />
+
+<snippet id='radgridview-managing-data-updating-entry-block_5-vb' />
+
 
 There are several ways to commit the edited data and all of them will raise the __RowEditEnded__ event. The first one occurs when the user presses __Enter__, the second when the __CommitEdit()__ method is called and the last one when another row is selected. The editing operation can also be cancelled by pressing __Escape.__ The first time you press __Escape__ only the cell cancels the edit. By pressing the __Escape__ second time, the whole row leaves edit mode. Another way to make the row cancel the edit is by calling the __CancelEdit()__ method. In this case the __RowEditEnded__ event will be raised again.
 
@@ -91,30 +66,10 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 
 
 
-```C#
-	private void radGridView_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
-	{
-	    if (e.EditAction == GridViewEditAction.Cancel)
-	    {
-	        return;
-	    }
-	    if (e.EditOperationType == GridViewEditOperationType.Edit)
-	    {
-	        //Update the entry in the data base based on your logic.
-	    }
-	}
-```
-```VB.NET
-	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
-	    If e.EditAction = GridViewEditAction.Cancel Then
-	        Exit Sub
-	    End If
-	
-	    If e.EditOperationType = GridViewEditOperationType.Edit Then
-	        'Edit the entry in the data base based on your logic.
-	    End If
-	End Sub
-```
+<snippet id='radgridview-managing-data-updating-entry-block_6-cs' />
+
+<snippet id='radgridview-managing-data-updating-entry-block_6-vb' />
+
 
 >You can also use the __CellEditEnded__ event to handle the committing or the cancelling actions and the logic in the event handler will be executed every time a cell gets edited. In some cases this might be inconvenient because different calls to a service might be made for each cell.
 

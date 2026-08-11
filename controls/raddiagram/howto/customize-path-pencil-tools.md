@@ -24,68 +24,22 @@ In order to create a custom tool you need to create a class and derive it from y
 Here is how this can be done with both tools:
 
 #### **[C#] Example 1: Defining a custom tool**
-```C#
-    public class MyPathTool : PathTool
-    {
-    }
+<snippet id='raddiagram-howto-customize-path-pencil-tools-block_1-cs' />
 
-    public class MyPencilTool : PencilTool
-    {
-    }
-```
 
 #### **[VB.NET] Example 1: Defining a custom tool**
-```VB.NET
-	Public Class MyPathTool
-	Inherits PathTool
+<snippet id='raddiagram-howto-customize-path-pencil-tools-block_2-vb' />
 
-	End Class
-
-	Public Class MyPencilTool
-	Inherits PencilTool
-
-	End Class
-```
 
 You will also need to create a constructor for those tools which receives and assigns a string to the __Name__ property of the tool. Based on this Name, RadDiagram (de)selects the tools. 
 
 #### **[C#] Example 2: Defining constructor for the custom tool** 
-```C#
-	public class MyPathTool : PathTool
-    {
-		public MyPathTool(string name): base()
-        {
-            this.Name = name;
-        }
-	}
+<snippet id='raddiagram-howto-customize-path-pencil-tools-block_3-cs' />
 
-	public class MyPencilTool : PencilTool
-    {
-		public MyPencilTool(string name):base()
-        {
-            this.Name = name;
-        }
-	}
-```
 
 #### **[VB.NET] Example 2: Defining constructor for the custom tool**
-```VB.NET
-	Public Class MyPathTool
-		Inherits PathTool
-		Public Sub New(name As String)
-			MyBase.New()
-			Me.Name = name
-		End Sub
-	End Class
-	
-	Public Class MyPencilTool
-		Inherits PencilTool
-		Public Sub New(name As String)
-			MyBase.New()
-			Me.Name = name
-		End Sub
-	End Class
-```
+<snippet id='raddiagram-howto-customize-path-pencil-tools-block_4-vb' />
+
 
 ## Replace the Default Tools
 
@@ -94,46 +48,12 @@ Now you are ready to replace the existing tool in the RadDiagram. To do this, yo
 >You need to always replace the default tools if you need to customize some of the existing functionality. For this you need to use the exact same names to create your customized tools. Otherwise, the RadDiagram will not replace the default ones.
 
 #### **[C#] Example 3: Replacing the default tool**
-```C#
-	void diagram_Loaded(object sender, RoutedEventArgs e)
-	{
-	    IToolService iservice = this.diagram.ServiceLocator.GetService<IToolService>();
-	    ToolService service = iservice as ToolService;
-	    if (service != null)
-	    {
-	        //create the custom tools
-	        var path = new MyPathTool("PathTool");
-	        var pencil = new MyPencilTool("PencilTool");
-	
-	        //replace the default tools
-	        service.ToolList[1] = path;
-	        service.ToolList[2] = pencil;
-	
-	        //activate the custom tools
-	        service.ActivateTool("PencilTool");
-	    }
-	}
-```
+<snippet id='raddiagram-howto-customize-path-pencil-tools-block_5-cs' />
+
 
 #### **[VB.NET] Example 3: Replacing the default tool**
-```VB.NET
-	Private Sub diagram_Loaded(sender As Object, e As RoutedEventArgs)
-		Dim iservice As IToolService = Me.diagram.ServiceLocator.GetService(Of IToolService)()
-		Dim service As ToolService = TryCast(iservice, ToolService)
-		If service IsNot Nothing Then
-			'create the custom tools'
-			Dim path = New MyPathTool("PathTool")
-			Dim pencil = New MyPencilTool("PencilTool")
-	
-			'replace the default tools'
-			service.ToolList(1) = path
-			service.ToolList(2) = pencil
-	
-			'activate the custom tools'
-			service.ActivateTool("PencilTool")
-		End If
-	End Sub
-```
+<snippet id='raddiagram-howto-customize-path-pencil-tools-block_6-vb' />
+
 
 >tip If you need to extend the list of available tools, you should add them to the **ToolList** collection of the ToolService.
 
@@ -144,25 +64,12 @@ If you attempt to use the custom tools at this point, they will act just like th
 To accomplish this, override the __CompleteTool()__ method of the Drawing tools like shown in **Example 4**.
 
 #### **[C#] Example 4: Override the CompleteTool() method**
-```C#
-	public override void CompleteTool()
-	{
-	    base.CompleteTool();
-	
-	    var service = (this.Graph as RadDiagram).ServiceLocator.GetService<IToolService>();
-	    service.ActivateTool(PointerTool.ToolName);
-	}
-```
+<snippet id='raddiagram-howto-customize-path-pencil-tools-block_7-cs' />
+
 
 #### **[VB.NET] Example 4: Override the CompleteTool() method**
-```VB.NET
-	Public Overrides Sub CompleteTool()
-		MyBase.CompleteTool()
-	
-		Dim service = TryCast(Me.Graph, RadDiagram).ServiceLocator.GetService(Of IToolService)()
-		service.ActivateTool(PointerTool.ToolName)
-	End Sub
-```
+<snippet id='raddiagram-howto-customize-path-pencil-tools-block_8-vb' />
+
 
 In **Example 4**, the **ToolService** of the RadDiagram is used to switch the active tool. Invoking **ActivateTool()** after the **base()** method ensures that the tool will be switched after the new shape is created.
 

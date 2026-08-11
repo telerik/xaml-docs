@@ -37,34 +37,10 @@ __SOLUTIONs__
 When an element is exported through the [ExportToXlsx]({%slug gridview-export-xlsx%}), [ExportToPdf]({%slug gridview-export-pdf%}) or [ExportToWorkbook]({%slug gridview-export-workbook%}) or methods, the arguments of the [ElementExportingToDocument]({%slug gridview-export-events-elementexporting-elementexported-todocument%}) event can be used to modify the visual appearance of the exported values and specify how they should be [formatted](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes#date-and-time-formatting) in Excel. This is achieved through the  `VisualParameters` property of the `GridViewCellExportingEventArgs`.
 
 __Exporting DateTime Values to Excel__
-```C#
-	this.radGridView.ElementExportingToDocument += (s, e) =>
-	{
-	    if (e.Element == ExportElement.Cell)
-	    {
-	        var cellExportingArgs = e as GridViewCellExportingEventArgs;
-	        if ((cellExportingArgs.Column as GridViewDataColumn) == this.radGridView.Columns[1])
-	        {
-	            var parameters = cellExportingArgs.VisualParameters as GridViewDocumentVisualExportParameters;
-	            parameters.Style = new CellSelectionStyle()
-	            {
-	                Format = new CellValueFormat("m/d/yyyy")
-	            };
-	        }
-	    }
-	};
-```
-```VB.NET
-	AddHandler Me.radGridView.ElementExportingToDocument, Sub(s, e)
-	                                                          If e.Element = ExportElement.Cell Then
-	                                                              Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
-	                                                              If (TryCast(cellExportingArgs.Column, GridViewDataColumn)) Is Me.radGridView.Columns(1) Then
-	                                                                  Dim parameters = TryCast(cellExportingArgs.VisualParameters, GridViewDocumentVisualExportParameters)
-	                                                                  parameters.Style = New CellSelectionStyle() With {.Format = New CellValueFormat("m/d/yyyy")}
-	                                                              End If
-	                                                          End If
-	                                                      End Sub 
-```
+<snippet id='radgridview-export-how-to-export-datetime-exporting_datetime_values_to_excel-cs' />
+
+<snippet id='radgridview-export-how-to-export-datetime-exporting_datetime_values_to_excel-vb' />
+
 
 __Exporting DateTime values with ElementExportingToDocument__
 
@@ -75,32 +51,10 @@ __Exporting DateTime values with ElementExportingToDocument__
 When exporting the RadGridView with the [GridViewSpreadStreamExport class]({%slug gridview-export-spreadsheetstreamingexport%}), the event arguments of `ElementExportingToDocument` event will be of the type of `GridViewSpreadStreamElementExportingEventArgs`. To format the number value, create a new `SpreadCellFormat` instance and set the `NumberFormat` property. To apply the formatting, create a new SpreadStreamCellStyle instance, set the created `SpreadCellFormat` to its `CellFormat` property, and apply it to the `e.Style` property of the event arguments. 
 
 __Specify a format when exporting with the GridViewSpreadStreamExport class__
-```C#
-	private static void SpreadStreamExport_ElementExportingToDocument(object sender, GridViewSpreadStreamElementExportingEventArgs e)
-	{
-		if (e.Element == SpreadStreamExportElement.Cell && e.Value is DateTime)
-		{
-			e.Style = new SpreadStreamCellStyle()
-			{
-				CellFormat = new SpreadCellFormat()
-				{
-					NumberFormat = BuiltInNumberFormats.GetDayMonthLongYear() + " " + BuiltInNumberFormats.GetHourMinuteSecondAMPM()
-				}
-			};
-		}
-	}
-```
-```VB.NET
-	Private Shared Sub SpreadStreamExport_ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewSpreadStreamElementExportingEventArgs)
-	    If e.Element = SpreadStreamExportElement.Cell AndAlso TypeOf e.Value Is DateTime Then
-	        e.Style = New SpreadStreamCellStyle() With {
-	            .CellFormat = New SpreadCellFormat() With {
-	                .NumberFormat = BuiltInNumberFormats.GetDayMonthLongYear() & " " + BuiltInNumberFormats.GetHourMinuteSecondAMPM()
-	            }
-	        }
-	    End If
-	End Sub
-```
+<snippet id='radgridview-export-how-to-export-datetime-specify_a_format_when_exporting_with_the_gridviewspreadstreamexport_class-cs' />
+
+<snippet id='radgridview-export-how-to-export-datetime-specify_a_format_when_exporting_with_the_gridviewspreadstreamexport_class-vb' />
+
 
 ## See Also
 

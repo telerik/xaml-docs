@@ -32,14 +32,8 @@ The RadOfficeNavigationBar controls exposes the `OfficeNavigationBarDialogViewMo
 * `Items`&mdash;Gets or sets the items displayed in the OfficeNavigationBarDialogListBox.
 
 __Executing the Reset command__
-```C#
-    ICommand resetCommand = radOfficeNavigationBar.OfficeNavigationBarDialogViewModel.ResetCommand;
-    resetCommand.Execute(null);
-```
-```VB.NET
-    Dim resetCommand As ICommand = radOfficeNavigationBar.OfficeNavigationBarDialogViewModel.ResetCommand
-    resetCommand.Execute(Nothing)
-```
+<snippet id='radofficenavigationbar-navigation-options-block_1-cs' />
+<snippet id='radofficenavigationbar-navigation-options-block_1-vb' />
 
 ## See Also
 * [Custom Content]({%slug radofficenavigationbar-custom-content%})

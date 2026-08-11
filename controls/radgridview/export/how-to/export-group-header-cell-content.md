@@ -14,35 +14,10 @@ By handling the [ElementExportingToDocument]({%slug gridview-export-events%}) of
 
 __Example 1: Custom Group Header Cell Export Content__
 
-```C#
-    private void Grid_ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
-    {
-        if (e.Element == ExportElement.GroupHeaderCell)
-        {
-            var group = e.DataContext as QueryableCollectionViewGroup;
-            string value = group.Key.ToString() + " (" + group.ItemCount + " items)" + new String(' ', 4);
-            foreach (var result in group.AggregateResults)
-            {
-                value += result.Caption + " " + result.FormattedValue + new String(' ', 4);
-            }
+<snippet id='radgridview-export-how-to-export-group-header-cell-content-example_1_custom_group_header_cell_export_content-cs' />
 
-            e.Value = value;
-        }
-    }
-```
-```VB.NET
-	Private Sub Grid_ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewElementExportingToDocumentEventArgs)
-		If e.Element = ExportElement.GroupHeaderCell Then
-			Dim group = TryCast(e.DataContext, QueryableCollectionViewGroup)
-			Dim value As String = group.Key.ToString() & " (" & group.ItemCount & " items)" & New String(" "c, 4)
-			For Each result In group.AggregateResults
-				value &= result.Caption & " " & result.FormattedValue + New String(" "c, 4)
-			Next result
+<snippet id='radgridview-export-how-to-export-group-header-cell-content-example_1_custom_group_header_cell_export_content-vb' />
 
-			e.Value = value
-		End If
-	End Sub
-```
 
 __Custom Group Header Cell Export Content__
 

@@ -30,28 +30,15 @@ To set value for the header use the __Header__ property of the column.
 
 __Example 1: Setting the Header Property__
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
-	                Header="ID" />
-```
+<snippet id='radgridview-columns-column-headers-example_1_setting_the_header_property-xaml' />
+
 
 The __Header__ property is of type __object__ and you are not limited to just using plain text. For example, you can add a corresponding picture to be displayed as header.
 
 __Example 2: Setting Custom Content to the Header Property__
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}">
-	    <telerik:GridViewDataColumn.Header>
-	        <StackPanel Orientation="Horizontal">
-	            <Image Stretch="None"
-	   Source="../../Images/User.png"
-	   Margin="0,0,5,0" />
-	            <TextBlock Text="ID"
-	       VerticalAlignment="Center" />
-	        </StackPanel>
-	    </telerik:GridViewDataColumn.Header>
-	</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-columns-column-headers-example_2_setting_custom_content_to_the_header_property-xaml' />
+
 
 #### __Figure 2: Displaying custom content in column headers__ 
 
@@ -70,12 +57,8 @@ Column headers can only be hidden by setting __ShowColumnHeaders__ property of _
 
 __Example 3: Setting the ShowColumnHeaders property to False__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 ShowColumnHeaders="False">
-	    <!-- ... -->
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-column-headers-example_3_setting_the_showcolumnheaders_property_to_false-xaml' />
+
 
 #### __Figure 3: Hiding the column headers__ 
 
@@ -123,40 +106,8 @@ As of __Q2 2016__, __GridViewHeaderCell__ exposes __TextWrapping__, __TextAlignm
 
 
 __Example 5: Setting the Text Properties of GridViewHeaderCell and GridViewColumn__
-```XAML
-	<Window.Resources>
-	    <Style TargetType="telerik:GridViewHeaderCell"
-	           		x:Key="HeaderCellStyle">
-	        <Setter Property="TextAlignment" 
-	                Value="Left"/>
-	    </Style>
-	</Window.Resources>
+<snippet id='radgridview-columns-column-headers-example_5_setting_the_text_properties_of_gridviewheadercell_and_gridviewcolumn-xaml' />
 
-
-	<telerik:RadGridView Name="clubsGrid" 
-                     ItemsSource="{Binding Clubs}"
-                     AutoGenerateColumns="False"
-                     GroupRenderMode="Flat">
-         <telerik:RadGridView.Columns>
-            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
-                                        HeaderCellStyle="{StaticResource HeaderCellStyle}"
-                                        HeaderTextAlignment="Right"/>
-                
-            <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}"
-                                        Header="Est." 
-                                        DataFormatString="{}{0:yyyy}"
-                                        HeaderTextAlignment="Right"/>
-               
-            <telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
-                                        Header="Stadium" 
-                                        DataFormatString="{}{0:N0}"
-                                        HeaderTextTrimming="WordEllipsis"/>
-
-            <telerik:GridViewDataColumn DataMemberBinding="{Binding FanClubCount}"
-                                        HeaderTextDecorations="Underline"/>
-    	</telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
 
 #### Figure 5: Setting the text properties of GridViewHeaderCell and GridViewColumn
 

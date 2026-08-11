@@ -44,60 +44,23 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 
 
 
-```XAML
-	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-			<telerik:RadScheduleView.TimeMarkersSource>
-				<telerik:TimeMarkerCollection>
-					<telerik:TimeMarker TimeMarkerName="Busy" TimeMarkerBrush="Red"  />
-					<telerik:TimeMarker TimeMarkerName="Free" TimeMarkerBrush="Green" />
-				</telerik:TimeMarkerCollection>
-			</telerik:RadScheduleView.TimeMarkersSource>
-				<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition />
-		</telerik:RadScheduleView.ViewDefinitions>		
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-timemarkers-block_1-xaml' />
 
 or
 
 
 
-```C#
-	public class MyViewModel : ViewModelBase
-	{
-		public ObservableCollection<Appointment> Appointments { get; set; }
-		public ObservableCollection<TimeMarker> TimeMarkers { get; set; }
-	
-		public MyViewModel()
-		{
-			this.Appointments = new ObservableCollection<Appointment>();
-			this.TimeMarkers = new ObservableCollection<TimeMarker>() {
-				new TimeMarker("Busy", new SolidColorBrush( Colors.Red ) ),
-				new TimeMarker("Free", new SolidColorBrush( Colors.Green ) )
-			};
-		}
-	}
-```
+<snippet id='radscheduleview-features-timemarkers-block_2-cs' />
 
 
 
-```XAML
-	<telerik:RadScheduleView x:Name="scheduleView" 
-				AppointmentsSource="{Binding Appointments}"
-				TimeMarkersSource="{Binding TimeMarkers}">		
-				<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:DayViewDefinition />
-		</telerik:RadScheduleView.ViewDefinitions>		
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-timemarkers-block_3-xaml' />
 
 Finally, set the DataContext:
 
 
 
-```C#
-	this.DataContext = new MyViewModel();
-```
+<snippet id='radscheduleview-features-timemarkers-block_4-cs' />
 
 Here is the result:
 

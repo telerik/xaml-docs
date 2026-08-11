@@ -22,29 +22,7 @@ The DataContract attribute is added to all classes used by the QueryableDataProv
 
 __Example 1: Using the DataContract attribute__	
 
-```C#
-	[DataContract]
-    public class DataProviderSettings
-    {
-        [DataMember]
-        public object[] Aggregates { get; set; }
-
-        [DataMember]
-        public object[] Filters { get; set; }
-
-        [DataMember]
-        public object[] Rows { get; set; }
-
-        [DataMember]
-        public object[] Columns { get; set; }
-
-        [DataMember]
-        public int AggregatesLevel { get; set; }
-
-        [DataMember]
-        public PivotAxis AggregatesPosition { get; set; }
-    }
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-serialization-block_1-cs' />
 
 ## Implementing the Serializer
 
@@ -52,85 +30,7 @@ The next step is to implement the serializer. When serializing the provider an i
 
 __Example 2: Implementing the Serializer__
 
-```C#
-	 public abstract class DataProviderSerializer
-    {
-        public abstract IEnumerable<Type> KnownTypes { get; }
-
-        public string Serialize(object context)
-        {
-            string serialized = string.Empty;
-
-            IDataProvider dataProvider = context as IDataProvider;
-            if (dataProvider != null)
-            {
-                MemoryStream stream = new MemoryStream();
-
-                DataProviderSettings settings = new DataProviderSettings()
-                {
-                    Aggregates = dataProvider.Settings.AggregateDescriptions.OfType<object>().ToArray(),
-                    Filters = dataProvider.Settings.FilterDescriptions.OfType<object>().ToArray(),
-                    Rows = dataProvider.Settings.RowGroupDescriptions.OfType<object>().ToArray(),
-                    Columns = dataProvider.Settings.ColumnGroupDescriptions.OfType<object>().ToArray(),
-                    AggregatesLevel = dataProvider.Settings.AggregatesLevel,
-                    AggregatesPosition = dataProvider.Settings.AggregatesPosition
-                };
-
-                DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
-                serializer.WriteObject(stream, settings);
-
-                stream.Position = 0;
-                var streamReader = new StreamReader(stream);
-                serialized += streamReader.ReadToEnd();
-            }
-
-            return serialized;
-        }
-
-        public void Deserialize(object context, string savedValue)
-        {
-            IDataProvider dataProvider = context as IDataProvider;
-            if (dataProvider != null)
-            {
-                var stream = new MemoryStream();
-                var tw = new StreamWriter(stream);
-                tw.Write(savedValue);
-                tw.Flush();
-                stream.Position = 0;
-
-                DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
-                var result = serializer.ReadObject(stream);
-
-                dataProvider.Settings.AggregateDescriptions.Clear();
-                foreach (var aggregateDescription in (result as DataProviderSettings).Aggregates)
-                {
-                    dataProvider.Settings.AggregateDescriptions.Add(aggregateDescription);
-                }
-
-                dataProvider.Settings.FilterDescriptions.Clear();
-                foreach (var filterDescription in (result as DataProviderSettings).Filters)
-                {
-                    dataProvider.Settings.FilterDescriptions.Add(filterDescription);
-                }
-
-                dataProvider.Settings.RowGroupDescriptions.Clear();
-                foreach (var rowDescription in (result as DataProviderSettings).Rows)
-                {
-                    dataProvider.Settings.RowGroupDescriptions.Add(rowDescription);
-                }
-
-                dataProvider.Settings.ColumnGroupDescriptions.Clear();
-                foreach (var columnDescription in (result as DataProviderSettings).Columns)
-                {
-                    dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription);
-                }
-
-                dataProvider.Settings.AggregatesPosition = (result as DataProviderSettings).AggregatesPosition;
-                dataProvider.Settings.AggregatesLevel = (result as DataProviderSettings).AggregatesLevel;
-            }
-        }
-    }
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-serialization-block_2-cs' />
 
 ## Specifying the KnownTypes
 
@@ -138,18 +38,7 @@ In the previous example a collection of KnownTypes is passed to the __DataContra
 
 __Example 3: Specifying the KnownTypes__
 
-```C#
-	public class QueryableProviderSerializer: DataProviderSerializer
-    {
-        public override IEnumerable<Type> KnownTypes
-        {
-            get 
-            {
-                return QueryablePivotSerializationHelper.KnownTypes;
-            }
-        }
-    }
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-serialization-block_3-cs' />
 
 ## Serialize and Deserialize 
 
@@ -157,18 +46,7 @@ The final step is to serialize and deserialize the data provider.
 
 __Example 4: Serialize and Deserialize the Data Provider__
 
-```C#
-
-	string lastSerializedProvider;
-
-	//serialization
-	QueryableProviderSerializer serializer = new QueryableProviderSerializer();
-    this.lastSerializedProvider = serializer.Serialize(this.PivotGrid.DataProvider);
-
-	//deserialization
-	QueryableProviderSerializer serializer = new QueryableProviderSerializer();
-    serializer.Deserialize(this.PivotGrid.DataProvider, this.lastSerializedProvider);
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-queryable-serialization-block_4-cs' />
 
 ## See Also
 

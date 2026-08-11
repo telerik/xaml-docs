@@ -42,40 +42,10 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 
 __Example 1: Handling the PreviewShowCompass event__
 
-```C#
-	       
-	public CompassSample()
-	{
-	    InitializeComponent();
-	
-	    this.radDocking.PreviewShowCompass += new EventHandler<Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs>(radDocking_PreviewShowCompass);
-	}
-	
-	private void radDocking_PreviewShowCompass(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
-	{
-		// The Compass property of the event arguments allows you to check whether the event is thrown for the Compass or the RootCompass
-		if(e.Compass is RootCompass)
-		{
-			e.Compass.IsLeftIndicatorVisible = false;
-			e.Compass.IsRightIndicatorVisible = false;
-		}
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-	
-		AddHandler radDocking.PreviewShowCompass, AddressOf radDocking_PreviewShowCompass
-	End Sub
-	
-	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
-		' The Compass property of the event arguments allows you to check whether the event is thrown for the Compass or the RootCompass
-		If TypeOf e.Compass Is RootCompass Then
-			e.Compass.IsLeftIndicatorVisible = False
-			e.Compass.IsRightIndicatorVisible = False
-		End If
-	End Sub	
-```
+<snippet id='raddocking-features-compass-example_1_handling_the_previewshowcompass_event-cs' />
+
+<snippet id='raddocking-features-compass-example_1_handling_the_previewshowcompass_event-vb' />
+
 
 ## See Also
  * [Pane Groups]({%slug raddocking-features-pane-groups%})

@@ -14,17 +14,7 @@ Changing the look of the tick marks can be done by setting the __TickTemplate__ 
 
 
 
-```XAML
-	<telerik:RadSlider Maximum="10" TickFrequency="2" TickPlacement="BottomRight">
-	    <telerik:RadSlider.TickTemplate>
-	        <DataTemplate>
-	            <Grid>
-	                <Ellipse Width="5" Height="5" Fill="Black" />
-	            </Grid>
-	        </DataTemplate>
-	    </telerik:RadSlider.TickTemplate>
-	</telerik:RadSlider>
-```
+<snippet id='radslider-features-tick-marks-tick-template-block_1-xaml' />
 
 ![{{ site.framework_name }} RadSlider Ellipse Tick Template](images/radslider_features_ellipse_ticktemplate.png)
 
@@ -32,17 +22,7 @@ If you want to display the numeric value of each tick, you have to add a __TextB
 
 
 
-```XAML
-	<telerik:RadSlider Maximum="10" TickFrequency="1" TickPlacement="Both">
-	    <telerik:RadSlider.TickTemplate>
-	        <DataTemplate>
-	            <Grid>
-	                <TextBlock Text="{Binding}" FontSize="11"/>
-	            </Grid>
-	        </DataTemplate>
-	    </telerik:RadSlider.TickTemplate>
-	</telerik:RadSlider>
-```
+<snippet id='radslider-features-tick-marks-tick-template-block_2-xaml' />
 
 ![{{ site.framework_name }} RadSlider Digit Tick Template](images/radslider_features_digit_ticktemplate.png)
 

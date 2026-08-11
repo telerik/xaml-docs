@@ -44,9 +44,7 @@ You can find the required assemblies for each control from the UI for WPF suite 
 You can add __RadTreeView__ manually in XAML as demonstrated in __Example 1__. 
 
 __Example 1: Adding RadTreeView in XAML__
-```XAML
-	<telerik:RadTreeView />
-```
+<snippet id='radtreeview-getting-started-getting-started-block_1-xaml' />
 	
 __RadTreeView__ doesn't display any content when it is not populated with items, so at this point there should be nothing displayed on the screen.
 
@@ -55,40 +53,11 @@ __RadTreeView__ doesn't display any content when it is not populated with items,
 __RadTreeView__ works with __RadTreeViewItem__ elements, which should be added in the __Items__ collection of the control.
 
 __Example 2: Adding RadTreeViewItems in XAML__
-```XAML
-	<telerik:RadTreeView>
-		<telerik:RadTreeView.Items>
-			<telerik:RadTreeViewItem Header="Football" />
-			<telerik:RadTreeViewItem Header="Tennis" />
-			<telerik:RadTreeViewItem Header="Cycling" />
-			<telerik:RadTreeViewItem Header="Basketball" />
-		</telerik:RadTreeView.Items>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-getting-started-getting-started-block_2-xaml' />
 	
 __Example 3: Adding RadTreeViewItems in code__
-```C#
-	RadTreeView treeView = new RadTreeView();
-	treeView.Items.Add(new RadTreeViewItem() { Header = "Football" });
-	treeView.Items.Add(new RadTreeViewItem() { Header = "Tennis" });
-	treeView.Items.Add(new RadTreeViewItem() { Header = "Cycling" });
-	treeView.Items.Add(new RadTreeViewItem() { Header = "Basketball" });
-```
-```VB.NET
-	Dim treeView As New RadTreeView()
-	treeView.Items.Add(New RadTreeViewItem() With { _
-		.Header = "Football" _
-	})
-	treeView.Items.Add(New RadTreeViewItem() With { _
-		.Header = "Tennis" _
-	})
-	treeView.Items.Add(New RadTreeViewItem() With { _
-		.Header = "Cycling" _
-	})
-	treeView.Items.Add(New RadTreeViewItem() With { _
-		.Header = "Basketball" _
-	})
-```
+<snippet id='radtreeview-getting-started-getting-started-block_3-cs' />
+<snippet id='radtreeview-getting-started-getting-started-block_4-vb' />
 
 #### __Figure 1: RadTreeView flat data example__
 ![{{ site.framework_name }} RadTreeView RadTreeView flat data example](images/radtreeview-getting-started-01.png)
@@ -100,18 +69,7 @@ __RadTreeViewItem__ is hierarchical items control, which means that it can conta
 > The __RadTreeViewItem__ class expose a __Header__ property that is used to define the content of its header.
 
 __Example 4: Nesting RadTreeViewItems__
-```XAML
-	<telerik:RadTreeView>
-		<telerik:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
-			<telerik:RadTreeViewItem Header="Football" IsExpanded="True">
-				<telerik:RadTreeViewItem Header="Futsal"/>
-				<telerik:RadTreeViewItem Header="Soccer"/>
-			</telerik:RadTreeViewItem>
-			<telerik:RadTreeViewItem Header="Tennis"/>
-			<telerik:RadTreeViewItem Header="Cycling"/>
-		</telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-getting-started-getting-started-block_5-xaml' />
 		
 #### __Figure 2: RadTreeView nested items example__
 ![{{ site.framework_name }} RadTreeView RadTreeView nested items example](images/radtreeview-getting-started-02.png)	
@@ -125,25 +83,12 @@ The __RadTreeView__ control allows you to data bind it to a collection of busine
 __RadTreeView__ supports drag and drop functionality. To enable this feature, you only need to set the __IsDragDropEnabled__ property to __True__.
 
 __Example 5: IsDragDropEnabled setting__
-```XAML
-	<telerik:RadTreeView IsDragDropEnabled="True">
-``` 
+<snippet id='radtreeview-getting-started-getting-started-block_6-xaml' />
 
 __Example 6__ demonstrates a runnable code snippet using __RadTreeView__ with its drag and drop enabled.
   
 __Example 6: Drag and drop set up__
-```XAML
-	<telerik:RadTreeView IsDragDropEnabled="True">
-		<telerik:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
-			<telerik:RadTreeViewItem Header="Football" IsExpanded="True">
-				<telerik:RadTreeViewItem Header="Futsal"/>
-				<telerik:RadTreeViewItem Header="Soccer"/>
-			</telerik:RadTreeViewItem>
-			<telerik:RadTreeViewItem Header="Tennis"/>
-			<telerik:RadTreeViewItem Header="Cycling"/>
-		</telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-getting-started-getting-started-block_7-xaml' />
 
 #### __Figure 3: Drag and drop visual example__
 ![{{ site.framework_name }} RadTreeView Drag and drop visual example](images/radtreeview-getting-started-03.png)	
@@ -166,21 +111,7 @@ To change the theme, you can follow the steps below:
 	__Example 8__ demonstrates where you can merge the ResourceDictionaries so they are applied globally for the entire application.
 	
 	__Example 8: Merge the ResourceDictionaries__  
-	```XAML
-		<Application x:Class="MyTestApplication.App"
-				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-				 StartupUri="MainWindow.xaml">
-			<Application.Resources>
-				<ResourceDictionary>
-					<ResourceDictionary.MergedDictionaries>
-						<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml" />
-						<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
-					</ResourceDictionary.MergedDictionaries>
-				</ResourceDictionary>
-			</Application.Resources>
-		</Application>
-	```
+	<snippet id='radtreeview-getting-started-getting-started-block_8-xaml' />
 
 __Figure 4__ shows __RadTreeView__ with Windows8 theme applied.
 	
@@ -209,4 +140,3 @@ __Figure 4__ shows __RadTreeView__ with Windows8 theme applied.
  * [Populating with Data - Overview]({%slug radtreeview-populating-with-data-overview%})
  * [Styles and Templates - Overview]({%slug radtreeview-styling-and-appearance-overview2%}) 
  * [Events - Overview]({%slug radtreeview-events-overview%})
-

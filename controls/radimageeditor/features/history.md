@@ -20,23 +20,19 @@ Undoing the effect of a command can be done as follows:
 
 __Example 1: Undo a command__
 
-```C#
-	this.imageEditor.Undo();
-```
-```VB.NET
-	Me.imageEditor.Undo()
-```
+<snippet id='radimageeditor-features-history-example_1_undo_a_command-cs' />
+
+<snippet id='radimageeditor-features-history-example_1_undo_a_command-vb' />
+
 
 Оr, if you are using __RadImageEditorUI__:
 
 __Example 2: Undo a command__
 
-```C#
-	this.imageEditorUI.ImageEditor.Undo();
-```
-```VB.NET
-	Me.imageEditorUI.ImageEditor.Undo()
-```
+<snippet id='radimageeditor-features-history-example_2_undo_a_command-cs' />
+
+<snippet id='radimageeditor-features-history-example_2_undo_a_command-vb' />
+
 
 Redo can be executed in the same way.
 
@@ -68,43 +64,19 @@ For example, if you subscribe to the CurrentImageChanged in the following way, y
 
 __Example 3: Subscribe to CurrentImageChanged__
 
-```C#
-	this.imageEditorUI.ImageEditor.History.CurrentImageChanged += History_CurrentImageChanged;
-```
-```VB.NET
-	AddHandler Me.imageEditorUI.ImageEditor.History.CurrentImageChanged, AddressOf History_CurrentImageChanged
-```
+<snippet id='radimageeditor-features-history-example_3_subscribe_to_currentimagechanged-cs' />
+
+<snippet id='radimageeditor-features-history-example_3_subscribe_to_currentimagechanged-vb' />
+
 
 Аnd change the value of some Boolean property in the handler of the event:
 
 __Example 4: Handle CurrentImageChanged__
 
-```C#
-	private bool hasImageBeenChanged;
-	void History_CurrentImageChanged(object sender, EventArgs e)
-	{
-	    ImageHistory history = (ImageHistory)sender;
-	    if (!history.CanRedo && !history.CanUndo)
-	    {
-	        hasImageBeenChanged = true;
-	    }
-	    else
-	    {
-	        hasImageBeenChanged = false;
-	    }
-	}
-```
-```VB.NET
-	Private hasImageBeenChanged As Boolean
-	Private Sub History_CurrentImageChanged(sender As Object, e As EventArgs)
-	    Dim history As ImageHistory = DirectCast(sender, ImageHistory)
-	    If Not history.CanRedo AndAlso Not history.CanUndo Then
-	        hasImageBeenChanged = True
-	    Else
-	        hasImageBeenChanged = False
-	    End If
-	End Sub
-```
+<snippet id='radimageeditor-features-history-example_4_handle_currentimagechanged-cs' />
+
+<snippet id='radimageeditor-features-history-example_4_handle_currentimagechanged-vb' />
+
 
 
 

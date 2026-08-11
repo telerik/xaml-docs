@@ -40,13 +40,7 @@ If you want to change the default position of the __Quick Access Toolbar__, set 
 
 * If you want to change the default __Height__ of the __RadRibbonView__, you can set the __ContentHeight__ property.				  
 
-	```XAML
-		<telerik:RadRibbonView ContentHeight="120"
-						   Title="Document1"
-						   ApplicationName="Telerik Word">
-
-		</telerik:RadRibbonView>					  
-	```
+	<snippet id='radribbonview-styling-and-appearance-styling-controlling-appearance-block_1-xaml' />
 
 	![Rad Ribbon View Styling Appearance Content Height](images/RadRibbonView_Styling_Appearance_ContentHeight.png)
 

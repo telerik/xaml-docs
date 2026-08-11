@@ -62,32 +62,16 @@ __Example 1__ demonstrates how you can set up the RadEntityFrameworkCoreDataSour
 > In case you don't have a DbContext/database setup, you can check out the [MVVM Usage]({%slug entityframeworkcore-mvvm-usage%}) article, which shows how you can set them up from scratch.
 
 __Example 1: Defining RadEntityFrameworkCoreDataSource in xaml__
-```XAML
+<snippet id='radentityframeworkcoredatasource-entityframeworkcore-getting-started-example_1_defining_radentityframeworkcoredatasource_in_xaml-xaml' />
 
-    <telerik:RadEntityFrameworkCoreDataSource Name="EntityFrameworkCoreDataSource" QueryName="Customers"> 
-        <telerik:RadEntityFrameworkCoreDataSource.DbContext> 
-            <local:MyEntityModel/> 
-        </telerik:RadEntityFrameworkCoreDataSource.DbContext> 
-    </telerik:RadEntityFrameworkCoreDataSource> 
-    <telerik:RadGridView ItemsSource="{Binding DataView, ElementName=EntityFrameworkCoreDataSource}"/>
-```
 
 ## RelatedObjects
 
 The __RelatedObjects__ property of the RadEntityFrameworkCoreDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders"  collection in case you want to get the related Orders for each Customer from the database. You can also specify several navigational property names separated by "/" characters and the control will use the ".ThenInclude()" method when retrieving them. 
 
 __Example 2: Using the RelatedObjects__
-```XAML
+<snippet id='radentityframeworkcoredatasource-entityframeworkcore-getting-started-example_2_using_the_relatedobjects-xaml' />
 
-    <telerik:RadEntityFrameworkCoreDataSource x:Name="coreDataSource" QueryName="Customers">
-        <telerik:RadEntityFrameworkCoreDataSource.RelatedObjects>
-            <sys:String>Orders/OrderDetails</sys:String>
-        </telerik:RadEntityFrameworkCoreDataSource.RelatedObjects>
-        <telerik:RadEntityFrameworkCoreDataSource.DbContext>
-            <local:NorthwindContext />
-        </telerik:RadEntityFrameworkCoreDataSource.DbContext>
-    </telerik:RadEntityFrameworkCoreDataSource>
-```
 
 ## See also
 

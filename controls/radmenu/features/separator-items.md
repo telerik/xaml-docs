@@ -13,13 +13,7 @@ position: 9
 To show separators between the menu items, you can use the `RadMenuSeparatorItem` element. Its orientation can be horizontal and vertical and it is automatically set depending on the menu orientation.
 
 
-```XAML
-	<telerik:RadMenu> 
-	    <!-- other items here --> 
-	    <telerik:RadMenuSeparatorItem /> 
-	    <!-- other items here -->
-	</telerik:RadMenu> 
-```
+<snippet id='radmenu-features-separator-items-block_1-xaml' />
 
 ![{{ site.framework_name }} RadMenu Separator Item](images/RadMenu_Features_Separator_Items_01.png)
  

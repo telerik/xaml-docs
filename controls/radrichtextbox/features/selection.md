@@ -18,25 +18,11 @@ The user is able to select the content inside RadRichTextBox in the same way as 
 You can modify the appearance of the selection in the control through the `SelectionFill` and `SelectionStroke` properties of RadRichTextBox.
 
 __Customize the appearance of the selection__
-```XAML
-	<telerik:RadRichTextBox Name="radRichTextBox" SelectionStroke="DarkRed">
-	    <telerik:RadRichTextBox.SelectionFill>
-	        <SolidColorBrush Color="Red" Opacity="0.5" />
-	    </telerik:RadRichTextBox.SelectionFill>
-	</telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-features-selection-block_1-xaml' />
 
 __Customize the appearance of the selection__
-```C#
-	this.radRichTextBox.SelectionFill = new System.Windows.Media.SolidColorBrush(Colors.Red); 
-	this.radRichTextBox.SelectionFill.Opacity = 0.2;
-	this.radRichTextBox.SelectionStroke = System.Windows.Media.Brushes.DarkRed;
-```
-```VB.NET
-	Me.radRichTextBox.SelectionFill = New SolidColorBrush(Colors.Red)
-	Ме.radRichTextBox.SelectionFill.Opacity = 0.2
-	Ме.radRichTextBox.SelectionStroke = Brushes.DarkRed
-```
+<snippet id='radrichtextbox-features-selection-block_2-cs' />
+<snippet id='radrichtextbox-features-selection-block_3-vb' />
 
 __Custom selection colors__
 
@@ -98,50 +84,14 @@ Events:
 * `SelectionChanged`&mdash;Occurs after the selection is changed. Such an event is exposed by the RadRichTextBox class as well.
 
 __Select current word__
-```C#
-    DocumentPosition startPosition = new DocumentPosition(this.radRichTextBox.Document.CaretPosition);
-    DocumentPosition endPosition = new DocumentPosition(startPosition);
-    startPosition.MoveToCurrentWordStart();
-    endPosition.MoveToCurrentWordEnd();
-    this.radRichTextBox.Document.Selection.SetSelectionStart(startPosition);
-    this.radRichTextBox.Document.Selection.AddSelectionEnd(endPosition);
-```
-```VB.NET
-	Dim startPosition As New DocumentPosition(Me.radRichTextBox.Document.CaretPosition)
-	Dim endPosition As New DocumentPosition(startPosition)
-	startPosition.MoveToCurrentWordStart()
-	endPosition.MoveToCurrentWordEnd()
-	Me.radRichTextBox.Document.Selection.SetSelectionStart(startPosition)
-	Me.radRichTextBox.Document.Selection.AddSelectionEnd(endPosition)
-```
+<snippet id='radrichtextbox-features-selection-block_4-cs' />
+<snippet id='radrichtextbox-features-selection-block_5-vb' />
 
 The next snippet demonstrates how you can check the content that is selected and select and delete the current paragraph if the text in the selection contains the word "Test".
 
 __Select current paragraph and delete it__
-```C#
-	string selectedText = this.radRichTextBox.Document.Selection.GetSelectedText();
-	
-	if (selectedText.Contains("Test"))
-	{
-	    this.radRichTextBox.Document.Selection.Clear();
-	    Paragraph currentParagraph = this.radRichTextBox.Document.CaretPosition.GetCurrentParagraph();
-	
-	    this.radRichTextBox.Document.Selection.AddDocumentElementToSelection(currentParagraph);
-	    this.radRichTextBox.Delete(true);
-	}
-```
-```VB.NET
-	Dim selectedText As String = Me.radRichTextBox.Document.Selection.GetSelectedText()
-	
-	If (selectedText.Contains("Test")) Then
-	
-	    Me.radRichTextBox.Document.Selection.Clear()
-	    Dim currentParagraph As Paragraph = Me.radRichTextBox.Document.CaretPosition.GetCurrentParagraph()
-	
-	    Me.radRichTextBox.Document.Selection.AddDocumentElementToSelection(currentParagraph)
-	    Me.radRichTextBox.Delete(True)
-	End If
-```
+<snippet id='radrichtextbox-features-selection-block_6-cs' />
+<snippet id='radrichtextbox-features-selection-block_7-vb' />
 
 ### What is Selection Range?
 
@@ -161,19 +111,8 @@ The selection in RadRichTextBox consists of selection ranges. These ranges are r
 * `TableCell`&mdash;TableCell selection range.
 
 __Check the type of the elements inside the selection__
-```C#
-	SelectionRange selectionRange = this.radRichTextBox.Document.Selection.Ranges.First();
-	if (selectionRange.RangeType == SelectionRangeType.Table)
-	{
-	    SetTableProperties();
-	}
-```
-```VB.NET
-	Dim selectionRange As SelectionRange = Me.radRichTextBox.Document.Selection.Ranges.First()
-	If selectionRange.RangeType = SelectionRangeType.Table Then
-		SetTableProperties()
-	End If
-```
+<snippet id='radrichtextbox-features-selection-block_8-cs' />
+<snippet id='radrichtextbox-features-selection-block_9-vb' />
 
 ## Multi-Range Selection
 
@@ -182,37 +121,8 @@ You can implement multi-range Selection by either calling multiple times the `Ad
 Here is an example of how you can use the first approach.
 
 __Select all occurrences of the "RadRichTextBox" word__
-```C#
-	DocumentPosition position = new DocumentPosition(this.radRichTextBox.Document);
-	do
-	{
-	    //GetCurrentSpan().Text returns the word at the position
-	    string word = position.GetCurrentSpanBox().Text;
-	    if (word.Contains("RadRichTextBox"))
-	    {
-	        DocumentPosition wordEndPosition = new DocumentPosition(position);
-	        wordEndPosition.MoveToCurrentWordEnd();
-	        this.radRichTextBox.Document.Selection.AddSelectionStart(position);
-	        this.radRichTextBox.Document.Selection.AddSelectionEnd(wordEndPosition);
-	
-	    }
-	} 
-	while (position.MoveToNextWordStart());
-```
-```VB.NET
-	Dim position As New DocumentPosition(Me.radRichTextBox.Document)
-	Do
-	 'GetCurrentSpan().Text returns the word at the position
-	 Dim word As String = position.GetCurrentSpanBox().Text
-	 If word.Contains("RadRichTextBox") Then
-	  Dim wordEndPosition As New DocumentPosition(position)
-	  wordEndPosition.MoveToCurrentWordEnd()
-	  Me.radRichTextBox.Document.Selection.AddSelectionStart(position)
-	
-	  Me.radRichTextBox.Document.Selection.AddSelectionEnd(wordEndPosition)
-	 End If
-	Loop While position.MoveToNextWordStart()
-```
+<snippet id='radrichtextbox-features-selection-block_10-cs' />
+<snippet id='radrichtextbox-features-selection-block_11-vb' />
 
 __Multiple selection in RadRichTextBox__
 
@@ -233,32 +143,10 @@ The keyboard selection that happens on __Shift + arrow keys__ press can be custo
 The selection handler allows you to override the `MoveActiveEnd` method, which is invoked on selection when using the `Shift` key.
 
 __Creating custom KeyboardSelectionHandler__
-```C#
-	public class CustomSelectionHandler : KeyboardSelectionHandler
-	{
-		public CustomSelectionHandler(RadDocument document) : base(document)
-		{
-		}
-
-		public override void MoveActiveEnd(NavigationUnit unit, Direction direction)
-		{
-			base.MoveActiveEnd(unit, direction);
-			
-			RadDocument document = this.Document;
-			DocumentPosition position = document.CaretPosition;
-			// update the document position
-		}
-	}
-```
+<snippet id='radrichtextbox-features-selection-block_12-cs' />
 
 __Assigning the custom KeyboardSelectionHandler__
-```C#
-	private void RadRichTextBox_Loaded(object sender, RoutedEventArgs e)
-	{
-		var documentPresenter = (DocumentPresenterBase)this.radRichTextBox.ActiveEditorPresenter;
-		documentPresenter.KeyboardSelectionHandler = new CustomSelectionHandler(this.radRichTextBox.Document);
-	}
-```
+<snippet id='radrichtextbox-features-selection-block_13-cs' />
 
 ## Customizing Mouse Selection Behavior
 
@@ -267,108 +155,10 @@ The mouse selection behavior in the RichTextBox control can be customized by cre
 The following example shows how to implement a custom selection handler which selects specific words on a single click.
 
 __Creating custom MouseSelectionHandler__
-```C#
-	public class CustomMouseSelectionHandler : MouseSelectionHandler
-	{
-		RadDocument currentDocument;
-		private List<string> predefinedSingleClickWords;
-
-		internal List<string> PredefinedSingleClickWords
-		{
-			get 
-			{
-				if (predefinedSingleClickWords == null)
-				{
-					predefinedSingleClickWords = new List<string>();
-				}
-				return predefinedSingleClickWords; 
-			}
-		}
-
-		public CustomMouseSelectionHandler(RadDocument document, DocumentPresenterBase presenter)
-			: base(document, presenter)
-		{
-			currentDocument = document;
-		}
-
-		public override void RegisterDocumentMouseUp(SourceType source = SourceType.Mouse, Point? position = null)
-		{
-			base.RegisterDocumentMouseUp(source, position);
-			TrySelectWordUnderMouse();
-		}
-
-		public bool TrySelectWordUnderMouse()
-		{
-			var position = currentDocument.CaretPosition;
-			var clickedInlineBox = position.GetCurrentInlineBox();
-
-			if (predefinedSingleClickWords.Any(x => x.ToLower().Equals(clickedInlineBox.Text.ToLower())))
-			{
-				DocumentPosition startPosition = new DocumentPosition(position);
-				DocumentPosition endPosition = new DocumentPosition(startPosition);
-				startPosition.MoveToCurrentWordStart();
-				endPosition.MoveToCurrentWordEnd();
-				this.currentDocument.Selection.SetSelectionStart(startPosition);
-				this.currentDocument.Selection.AddSelectionEnd(endPosition);
-				return true;
-			}
-			return false;
-		}
-
-		// Below you can see other methods that can be overridden:
-
-		protected override void RegisterDocumentMultipleMouseDown(bool ctrlPressed, bool shiftPressed, Point position)
-		{
-			base.RegisterDocumentMultipleMouseDown(ctrlPressed, shiftPressed, position);
-		}
-
-		public override void RegisterDocumentMouseRightButtonDown(UIElement originalSource, SourceType source = SourceType.Mouse)
-		{
-			base.RegisterDocumentMouseRightButtonDown(originalSource, source);
-		}
-
-		public override void RegisterDocumentMouseDown(bool ctrlPressed, bool shiftPressed, Point position, UIElement originalSource = null, SourceType source = SourceType.Mouse)
-		{
-			base.RegisterDocumentMouseDown(ctrlPressed, shiftPressed, position, originalSource, source);
-		}
-
-		public override void RegisterDocumentMouseMove(Point position, SourceType source = SourceType.Mouse)
-		{
-			base.RegisterDocumentMouseMove(position, source);
-		}
-
-		protected override void RegisterDocumentSingleMouseDown(bool ctrlPressed, bool shiftPressed, Point position, UIElement originalSource)
-		{
-			base.RegisterDocumentSingleMouseDown(ctrlPressed, shiftPressed, position, originalSource);
-		}
-	}
-```
+<snippet id='radrichtextbox-features-selection-block_14-cs' />
 
 __Assigning the custom MouseSelectionHandler__
-```C#
-	private void RadRichTextBox_Loaded(object sender, RoutedEventArgs e)
-	{
-		UpdateMouseSelectionHandler((RadRichTextBox)sender);
-	}
-
-	private void RadRichTextBox_DocumentChanged(object sender, EventArgs e)
-	{
-		UpdateMouseSelectionHandler((RadRichTextBox)sender);
-	}
-
-	private void UpdateMouseSelectionHandler(RadRichTextBox rtb)
-	{
-		var presenter = rtb.ActiveEditorPresenter as DocumentPresenterBase;
-		if (presenter != null)
-		{
-			var selectionHandler = new CustomMouseSelectionHandler(rtb.Document, presenter);
-			selectionHandler.PredefinedSingleClickWords.Add("Telerik");
-			selectionHandler.PredefinedSingleClickWords.Add("Microsoft");
-			selectionHandler.PredefinedSingleClickWords.Add("NET");
-			presenter.MouseSelectionHandler = selectionHandler;
-		}
-	}
-```
+<snippet id='radrichtextbox-features-selection-block_15-cs' />
 
 ## See Also  
  * [Positioning]({%slug radrichtextbox-features-positioning%})

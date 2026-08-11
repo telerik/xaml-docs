@@ -20,8 +20,7 @@ For example you can update the source of the binding on every text change. You c
         
 
 
-```XAML
-	<TextBox Text="{Binding Name}" telerik:TextBoxBehavior.UpdateTextOnTextChanged="True" />
-```
+<snippet id='radgridview-how-to-update-on-every-text-changed-block_1-xaml' />
+
 
 

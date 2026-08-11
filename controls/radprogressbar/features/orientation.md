@@ -13,37 +13,21 @@ position: 1
 `RadProgressBar` has an `Orientation` property which can be set to either __Horizontal__ or __Vertical__. The two allowed values specify the direction in which the control is being "filled".
 
 __Setting the Orientation property to Horizontal__
-```XAML
-	<telerik:RadProgressBar Value="35" Height="30" Width="150" Orientation="Horizontal" />
-```
+<snippet id='radprogressbar-features-orientation-block_1-xaml' />
 
 __Setting the Orientation property to Horizontal__
-```C#
-	RadProgressBar progressBar = new RadProgressBar();
-	progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal;
-```
-```VB.NET
-	Dim progressBar As New RadProgressBar()
-	progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal
-```
+<snippet id='radprogressbar-features-orientation-block_2-cs' />
+<snippet id='radprogressbar-features-orientation-block_2-vb' />
 
 ![{{ site.framework_name }} RadProgressBar Horizontal Orientation](images/progress_horizontal.jpg)
 
 
 __Setting the Orientation property to Vertical__
-```XAML
-	<telerik:RadProgressBar Value="35" Height="150" Width="30" Orientation="Vertical" />
-```
+<snippet id='radprogressbar-features-orientation-block_3-xaml' />
 
 __Setting the Orientation property to Vertical__
-```C#
-	RadProgressBar progressBar = new RadProgressBar();
-	progressBar.Orientation = System.Windows.Controls.Orientation.Vertical;
-```
-```VB.NET
-	Dim progressBar As New RadProgressBar()
-	progressBar.Orientation = System.Windows.Controls.Orientation.Vertical
-```	
+<snippet id='radprogressbar-features-orientation-block_4-cs' />
+<snippet id='radprogressbar-features-orientation-block_4-vb' />
 
 ![{{ site.framework_name }} RadProgressBar Vertical Orientation](images/progress_vertical.jpg)
 

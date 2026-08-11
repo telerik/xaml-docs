@@ -28,18 +28,15 @@ You can subscribe to these events declaratively or at runtime. **Example 1** sho
 
 __Example 1: Subscribing to column events__
 
-```XAML
-	<telerik:RadGridView Name="gridView" AutoGeneratingColumn="gridView_AutoGeneratingColumn"/>
-```
+<snippet id='radgridview-events-column-resize-event-example_1_subscribing_to_column_events-xaml' />
+
 
 __Example 1: Subscribing to column events__
 
-```C#
-	gridView.AutoGeneratingColumn += gridView_AutoGeneratingColumn;
-```
-```VB.NET
-	AddHandler gridView.AutoGeneratingColumn, AddressOf gridView_AutoGeneratingColumn
-```
+<snippet id='radgridview-events-column-resize-event-example_1_subscribing_to_column_events-cs' />
+
+<snippet id='radgridview-events-column-resize-event-example_1_subscribing_to_column_events-vb' />
+
 
 ## AutoGeneratingColumn
 
@@ -57,22 +54,10 @@ You can use the following properties of the **GridViewAutoGeneratingColumnEventA
 
 __Example 2: Cancelling the creation of DateTime columns__
 
-```C#
-	private void gridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
-	{
-	    if (e.ItemPropertyInfo.PropertyType == typeof(DateTime))
-	    {
-	        e.Cancel = true;
-	    }
-	}
-```
-```VB.NET
-	Private Sub gridView_AutoGeneratingColumn(sender As Object, e As GridViewAutoGeneratingColumnEventArgs)
-	    If e.ItemPropertyInfo.PropertyType = GetType(DateTime) Then
-	        e.Cancel = True
-	    End If
-	End Sub
-```
+<snippet id='radgridview-events-column-resize-event-example_2_cancelling_the_creation_of_datetime_columns-cs' />
+
+<snippet id='radgridview-events-column-resize-event-example_2_cancelling_the_creation_of_datetime_columns-vb' />
+
 
 ## ColumnReordering
 
@@ -124,22 +109,10 @@ The following example shows you how to allow the user to widen a column, but not
 
 __Example 3: Disable decreasing the column width__
 
-```C#
-	void gridView_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
-	{
-	    if (e.HorizontalChangeWidth.Value < 0)
-	    {
-	        e.Cancel = true;
-	    }
-	}
-```
-```VB.NET
-	Private Sub gridView_ColumnWidthChanging(sender As Object, e As ColumnWidthChangingEventArgs)
-	    If e.HorizontalChangeWidth.Value < 0 Then
-	        e.Cancel = True
-	    End If
-	End Sub
-```
+<snippet id='radgridview-events-column-resize-event-example_3_disable_decreasing_the_column_width-cs' />
+
+<snippet id='radgridview-events-column-resize-event-example_3_disable_decreasing_the_column_width-vb' />
+
 
 >When the user __double-clicks__ the header cell gripper and the column is resized according to its content, only the  __ColumnWidthChanged__ event is triggered.
 

@@ -17,9 +17,7 @@ The RadTreeView's drag drop feature works with the Telerik DragDropManager, but 
 The default drag drop execution mode is using the new DragDropManager (since Q2 2014), but this can be changed by setting the  __TreeViewSettings.DragDropExecutionMode__ property to __Legacy__. This is useful in case you upgrade from a very old version of Telerik UI for WPF to a more recent one and you have heavy customization on the drag/drop functionality using the drag/drop events of RadTreeView.
 
 #__Example 1: Setting DragDropExecutionMode__
-```XAML
-	<telerik:RadTreeView treeView:TreeViewSettings.DragDropExecutionMode="Legacy" />
-```
+<snippet id='radtreeview-features-dragdrop-drag-drop-legacy-block_1-xaml' />
 
 The `treeView` namespace points to `xmlns:treeView="clr-namespace:Telerik.Windows.Controls.TreeView;assembly=Telerik.Windows.Controls.Navigation"`
 
@@ -41,17 +39,8 @@ __RadTreeView__ actually handles the drag/drop events of RadDragAndDropManager w
 When RadTreeView detects a valid drag operation, it invokes the __PreviewDragStarted__ and __DragStarted__  events. When a valid drop operation (the selected Item is dropped onto another Item or in between Items) is detected, the __PreviewDragEnded__ and __DragEnded__ events are invoked. Both __PreviewDragStarted__ and __PreviewDragEnded__ events can be cancelled by setting the __Handled__ property of the event argument to __True__ in the event handler.
 
 __Example 2: Cancel drag operation__  
-```C#
-	private void radTreeView_PreviewDragEnded( object sender, RadTreeViewDragEndedEventArgs e )
-	{
-		e.Handled = true;
-	}
-```
-```VB.NET
-	Private Sub radTreeView_PreviewDragEnded(ByVal sender As Object, ByVal e As RadTreeViewDragEndedEventArgs)
-	    e.Handled = True
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-drag-drop-legacy-block_2-cs' />
+<snippet id='radtreeview-features-dragdrop-drag-drop-legacy-block_3-vb' />
 
 >tip Handling the __PreviewDragStarted__ event will cancel the __drag__ operation. This is equivalent to set the __RadTreeView__'s __IsDragDropEnabled__ property to __False__. 'e.Handled = True' - where 'e' is the RadTreeViewDragEventArgs class passed as an argument of the event handler.
 
@@ -60,17 +49,8 @@ __Example 2: Cancel drag operation__
 The type of the event arguments for the __PreviewDragStarted__ and __DragStarted__ events is __RadTreeViewDragEventArgs__. Via the __RadTreeViewDragEventArgs__ you can get access to the items being dragged:
 
 __Example 3: Get current dragged items__  
-```C#
-	private void radTreeView_DragStarted( object sender, RadTreeViewDragEventArgs e )
-	{
-	    Collection<Object> draggedItems = e.DraggedItems;
-	}
-```
-```VB.NET
-	Private Sub radTreeView_DragStarted(ByVal sender As Object, ByVal e As RadTreeViewDragEventArgs)
-	    Dim draggedItems As Collection(Of [Object]) = e.DraggedItems
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-drag-drop-legacy-block_4-cs' />
+<snippet id='radtreeview-features-dragdrop-drag-drop-legacy-block_5-vb' />
 
 The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ events is __RadTreeViewDragEndedEventArgs__. Via the __RadTreeViewDragEndedEventArgs__ you can get access to the following items and properties:
 
@@ -80,79 +60,13 @@ The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ e
 * __IsCanceled__: A boolean property, indicates whether the drag and drop operation is cancelled or not.
 
 __Example 4: Subscribing to the DragEnded event__  
-```C#
-	private void radTreeView_DragEnded( object sender, RadTreeViewDragEndedEventArgs e )
-	{
-	    // Get the dragged items.
-	    Collection<Object> draggedItems = e.DraggedItems;
-	    // Get the drop position.
-	    DropPosition dropPosition = e.DropPosition;
-	    switch ( dropPosition )
-	    {
-	        case DropPosition.After:
-	            MessageBox.Show( "After" );
-	            break;
-	        case DropPosition.Before:
-	            MessageBox.Show( "Before" );
-	            break;
-	        case DropPosition.Inside:
-	            MessageBox.Show( "Inside" );
-	            break;
-	    }
-	    // Get is canceled
-	    bool isCanceled = e.IsCanceled;
-	    // Target drop item
-	    RadTreeViewItem targetDropItem = e.TargetDropItem;
-	    if ( targetDropItem.Header.ToString() == "Tennis" )
-	    {
-	        // Do something
-	    }
-	}
-```
-```VB.NET
-	Private Sub radTreeView_DragEnded(ByVal sender As Object, ByVal e As RadTreeViewDragEndedEventArgs)
-	    ' Get the dragged items. '
-	    Dim draggedItems As Collection(Of [Object]) = e.DraggedItems
-	
-	    ' Get the drop position. '
-	    Dim dropPosition__1 As DropPosition = e.DropPosition
-	    Select Case dropPosition__1
-	        Case DropPosition.After
-	            MessageBox.Show("After")
-	            Exit Select
-	        Case DropPosition.Before
-	            MessageBox.Show("Before")
-	            Exit Select
-	        Case DropPosition.Inside
-	            MessageBox.Show("Inside")
-	            Exit Select
-	    End Select
-	
-	    ' Get is canceled '
-	    Dim isCanceled As Boolean = e.IsCanceled
-	
-	    ' Target drop item '
-	    Dim targetDropItem As RadTreeViewItem = e.TargetDropItem
-	    If targetDropItem.Header.ToString() = "Tennis" Then
-	        ' Do something '
-	    End If
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-drag-drop-legacy-block_6-cs' />
+<snippet id='radtreeview-features-dragdrop-drag-drop-legacy-block_7-vb' />
 
 Note that the __TargetDropItem__ property may be null if the drop is in an empty treeview. That's why when you use that property it always has to be checked:
 
 __Example 5: Checking TargetDropItem property__  
-```C#
-	private void radTreeView_DragEnded(object sender, RadTreeViewDragEndedEventArgs e)
-	{
-	  // Target drop item
-	  RadTreeViewItem targetDropItem = e.TargetDropItem;
-	  if (targetDropItem != null && targetDropItem.Header.ToString() == "Tennis" )
-	  {
-		// Do something
-	  }
-	}	
-```
+<snippet id='radtreeview-features-dragdrop-drag-drop-legacy-block_8-cs' />
 
 ## See Also
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})

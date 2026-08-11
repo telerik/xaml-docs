@@ -68,60 +68,14 @@ The type of the passed event arguments is `ValueEditingEventArgs` and expose the
 If you want to increase or decrease the TimeSpan section with a specific interval when the spin operation is performed, you can create custom code to specify the step for each section. In the event handler of the ValueEditing event, we can check the current section and modify the step of our needs. The following example demonstrates how we can change the spin step for Days (5 days) and Hours (2 hours).
 
 __Custom spin steps__
-```XAML
-	private void RadTimeSpanPicker_ValueEditing(object sender, ValueEditingEventArgs e)
-	{
-		if (e.NewValue.HasValue)
-		{
-			if (e.SpinAction != SpinAction.None)
-			{
-				int spinStepMultiplier = (e.SpinAction == SpinAction.KeyUp || e.SpinAction == SpinAction.MouseWheelUp) ? 1 : -1;
-				switch (e.SectionType)
-				{
-					case EditSectionType.Hours:
-						e.NewValue = ((TimeSpan)e.CurrentValue).Add((double)TimeSpan.FromHours(5 * spinStepMultiplier));
-						break;
-					case EditSectionType.Days:
-						e.NewValue = ((TimeSpan)e.CurrentValue).Add((double)TimeSpan.FromDays(2 * spinStepMultiplier));
-						break;
-					default:
-						return;
-				}
-			}
-		}
-	}
-```
+<snippet id='radtimespanpicker-features-text-editing-block_1-xaml' />
 
 ### Set Minimum and Maximum TimeSpan values
 
 To set minimum and maximum TimeSpan, we can again achieve this using custom code. In the ValueEditing event handler, we can use the NewValue property from the event arguments to check if the value falls inside a specific TimeSpan range. The following example demonstrates how we can achieve this.
 
 __Set Minimum and Maximum TimeSpan__
-```XAML
-	private void RadTimeSpanPicker_ValueEditing(object sender, ValueEditingEventArgs e)
-	{
-		if (e.NewValue.HasValue)
-		{
-		    e.NewValue = this.CoerceTimeSpanValue(e.NewValue.Value);
-		}
-	}
-	
-	private TimeSpan CoerceTimeSpanValue(TimeSpan newTimeSpan)
-	{
-		TimeSpan minValue = new TimeSpan(2,15,20,20,100);
-		TimeSpan maxValue = new TimeSpan(20,25,30,35,500);
-
-		if (newTimeSpan > maxValue)
-		{
-			return maxValue;
-		} 
-		else if (newTimeSpan < minValue)
-		{
-			return minValue;
-		}
-		return newTimeSpan;
-	}
-```
+<snippet id='radtimespanpicker-features-text-editing-block_2-xaml' />
 
 ## Pasting new TimeSpan value
 

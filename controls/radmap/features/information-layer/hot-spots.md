@@ -27,24 +27,7 @@ This example will show an ellipse, which should be positioned over the geographi
 To mark an element as a __HotSpot__ you have to set its __MapLayer__.__HotSpot__ attached property.        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer>
-	        <Ellipse x:Name="Ellipse"
-	                    telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                    Width="20"
-	                    Height="20"
-	                    Stroke="Red"
-	                    StrokeThickness="3">
-	            <telerik:MapLayer.HotSpot>
-	                <telerik:HotSpot />
-	            </telerik:MapLayer.HotSpot>
-	        </Ellipse>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-hot-spots-block_1-xaml' />
 
 ## Positioning a Hot Spot
 
@@ -59,27 +42,7 @@ To adjust the position of the element via the __HotSpot__ you have to set its __
 Here is the ellipse element that is centered over the location point:
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer>
-	        <Ellipse x:Name="PART_Ellipse"
-	                    telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                    Width="20"
-	                    Height="20"
-	                    Stroke="Red"
-	                    StrokeThickness="3">
-	            <telerik:MapLayer.HotSpot>
-	                <telerik:HotSpot X="0.5"
-	                                    Y="0.5"
-	                                    XUnits="Fraction"
-	                                    YUnits="Fraction" />
-	            </telerik:MapLayer.HotSpot>
-	        </Ellipse>
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-hot-spots-block_2-xaml' />
 
 Here is a snapshot of the final result:
 
@@ -92,40 +55,7 @@ In some cases you might have a more complex structure, where the element represe
 Here is an example of an __Ellipse__, that is placed inside a __Grid__ control with two rows and two columns. Note that the Ellipse is still the control that is centered over the location.        
 
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                Width="600"
-	                Height="480">
-	    <telerik:InformationLayer>
-	        <Grid telerik:MapLayer.Location="42.6957539183824, 23.3327663758679"
-	                ShowGridLines="True"
-	                Background="#80808080">
-	            <Grid.RowDefinitions>
-	                <RowDefinition Height="20" />
-	                <RowDefinition Height="20" />
-	            </Grid.RowDefinitions>
-	            <Grid.ColumnDefinitions>
-	                <ColumnDefinition Width="20" />
-	                <ColumnDefinition Width="20" />
-	            </Grid.ColumnDefinitions>
-	            <telerik:MapLayer.HotSpot>
-	                <telerik:HotSpot X="0.5"
-	                                    Y="0.5"
-	                                    XUnits="Fraction"
-	                                    YUnits="Fraction"
-	                                    ElementName="PART_Ellipse" />
-	            </telerik:MapLayer.HotSpot>
-	            <Ellipse x:Name="PART_Ellipse"
-	                        Grid.Row="1"
-	                        Grid.Column="1"
-	                        Width="20"
-	                        Height="20"
-	                        Stroke="Red"
-	                        StrokeThickness="3" />
-	        </Grid>                
-	    </telerik:InformationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-information-layer-hot-spots-block_3-xaml' />
 
 Here is a snapshot of the final result:
 

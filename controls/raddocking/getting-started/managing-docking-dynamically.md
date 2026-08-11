@@ -40,17 +40,8 @@ For the purpose of this tutorial, you will need to create an empty WPF Applicati
 
 For the purpose of this tutorial the following __RadDocking__ declaration will be used:
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer">
-	        <telerik:RadPaneGroup x:Name="radGroup">
-	            <telerik:RadPane x:Name="radPane1" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="radPane2" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane3" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_1-xaml' />
+
  
 ![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_GettingStarted_ManagingDockingDynamically_010.png)
 
@@ -60,31 +51,17 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 
 * Using the __MakeFloatingDockable()__ method 
 
-```C#
-	private void MakeFloatingDockable()
-	{
-	    radPane1.MakeFloatingDockable();
-	}
-```
-```VB.NET
-	Private Sub MakeFloatingDockable()
-		radPane1.MakeFloatingDockable()
-	End Sub
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_2-cs' />
+
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_2-vb' />
+
 
 * Using the __MakeFloatingOnly()__ method 
 
-```C#
-	private void MakeFloatingOnly()
-	{
-	    radPane1.MakeFloatingOnly();
-	}
-```
-```VB.NET
-	Private Sub MakeFloatingOnly()
-		radPane1.MakeFloatingOnly()
-	End Sub
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_3-cs' />
+
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_3-vb' />
+
 
 >tip Note that if you make your pane floating using the __MakeFloatingOnly()__ you will not be able to dock it back again using [drag and drop]({%slug raddocking-features-drag-and-drop%}), to make it dockable again you have to call the method __MakeDockable()__.
 
@@ -100,31 +77,13 @@ In order to make a pane floatable during design-time, you need to set the __Init
 
 * Using the __FloatingDockable__ initial position 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking1">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer1" InitialPosition="FloatingDockable">
-	        <telerik:RadPaneGroup x:Name="radGroup1">
-	            <telerik:RadPane x:Name="radPane11" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="radPane21" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane31" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_4-xaml' />
+
 
 * Using the __FloatingOnly__ initial position 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking2">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer2" InitialPosition="FloatingOnly">
-	        <telerik:RadPaneGroup x:Name="radGroup2">
-	            <telerik:RadPane x:Name="radPane12" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="radPane22" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane32" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_5-xaml' />
+
 
 >Note, that when setting the __InitialPosition__ to __FloatingOnly__, you won't be able to dock the pane during run-time. In order to make the pane dockable again, you need to invoke the __MakeDockable()__ method of the __RadPane__ class.
 
@@ -132,17 +91,10 @@ In order to make a pane floatable during design-time, you need to set the __Init
 
 In order to make a pane dockable, you need to invoke the __MakeDockable()__ method of an instance of the __RadPane__ class.
 
-```C#
-	private void MakeDockable()
-	{
-	    radPane1.MakeDockable();
-	}
-```
-```VB.NET
-	Private Sub MakeDockable()
-		radPane1.MakeDockable()
-	End Sub
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_6-cs' />
+
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_6-vb' />
+
 
 >__MakeDockable__ method works only when all of the objects are constructed and added to the object tree. Which means that you should invoke it after the __Loaded__ event of the __RadDocking__ control has been fired.
 
@@ -152,17 +104,8 @@ In order to make a pane dockable, you need to invoke the __MakeDockable()__ meth
 
 In order to make a pane dockable during design-time, you need to set the __InitialPosition__ property of the respective [RadSplitContainer]({%slug raddocking-features-split-container%}) to __FloatingDockable__, like it is shown in the code below.
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking3">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer3" InitialPosition="FloatingDockable">
-	        <telerik:RadPaneGroup x:Name="radGroup3">
-	            <telerik:RadPane x:Name="radPane13" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="radPane23" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane33" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_7-xaml' />
+
 
 >tip Setting the __InitialPosition__ to __FloatingDockable__ or __FloatingOnly__ will make your pane(s) [floating]({%slug raddocking-features-panes-docked-floating-panes%}). However, using the __FloatingOnly__ value __will not allow__ the user to dock the pane during run-time.
 
@@ -170,13 +113,10 @@ In order to make a pane dockable during design-time, you need to set the __Initi
 
 In order to dock a pane in the code-behind, you need to use the __AddItem__ method of the [RadGroupPane]({%slug raddocking-features-pane-groups%}) class.
 
-```C#
-	public void AddItem(RadPane item, DockPosition dockPosition) { }
-```
-```VB.NET
-	Public Sub AddItem(ByVal item As RadPane, ByVal dockPosition As DockPosition)
-	End Sub
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_8-cs' />
+
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_8-vb' />
+
 
 ## Docking a Pane Design-Time
 
@@ -184,65 +124,29 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 
 * __DockedLeft__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking4">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer4" InitialPosition="DockedLeft">
-	        <telerik:RadPaneGroup x:Name="radGroup4">
-	            <telerik:RadPane x:Name="radPane14" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="radPane24" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane34" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_9-xaml' />
+
   
 ![{{ site.framework_name }} RadDocking Panes Docked Left](images/RadDocking_GettingStarted_ManagingDockingDynamically_030.png)
 
 * __DockedTop__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking5">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer5" InitialPosition="DockedTop">
-	        <telerik:RadPaneGroup x:Name="radGroup5">
-	            <telerik:RadPane x:Name="radPane15" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="radPane25" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane35" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_10-xaml' />
+
 
 ![{{ site.framework_name }} RadDocking Panes Docked Top](images/RadDocking_GettingStarted_ManagingDockingDynamically_040.png)
 
 * __DockedRight__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking6">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer6" InitialPosition="DockedRight">
-	        <telerik:RadPaneGroup x:Name="radGroup6">
-	            <telerik:RadPane x:Name="radPane16" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="radPane26" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane36" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_11-xaml' />
+
 
  ![{{ site.framework_name }} RadDocking Panes Docked Right](images/RadDocking_GettingStarted_ManagingDockingDynamically_050.png)
 
 * __DockedBottom__
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking7">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer7" InitialPosition="DockedBottom">
-	        <telerik:RadPaneGroup x:Name="radGroup7">
-	            <telerik:RadPane x:Name="radPane17" Header="Server Explorer"/>
-	            <telerik:RadPane x:Name="radPane27" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane37" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_12-xaml' />
+
 
 ![{{ site.framework_name }} RadDocking Panes Docked Bottom](images/RadDocking_GettingStarted_ManagingDockingDynamically_060.png)
 
@@ -250,31 +154,17 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 
 In order to __pin__ a pane in the code-behind, you need to set the __IsPinned__ property of the __RadPane__ class to __True__.
 
-```C#
-	private void PinPane()
-	{
-	    radPane1.IsPinned = true;
-	}
-```
-```VB.NET
-	Private Sub PinPane()
-		radPane1.IsPinned = True
-	End Sub
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_13-cs' />
+
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_13-vb' />
+
 
 Respectively, in order to __unpin__ a pane in the code-behind, you need to set the __IsPinned__ property of the __RadPane__ class to __False__.
 
-```C#
-	private void UnpinPane()
-	{
-	    radPane1.IsPinned = false;
-	}
-```
-```VB.NET
-	Private Sub UnpinPane()
-		radPane1.IsPinned = False
-	End Sub
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_14-cs' />
+
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_14-vb' />
+
 
 >If you intend to use the __IsPinned__ property in the code-behind, make sure you are setting its value after the __Loaded__ event has been fired. Otherwise it won't work.
 
@@ -284,41 +174,24 @@ In order to __pin__ a pane in XAML, you need to set the __IsPinned__ attribute o
 
 Respectively, in order to __unpin__ a pane in XAML, you need to set the __IsPinned__ attribute of the RadPane to __False__.
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking8">
-	    <telerik:RadSplitContainer x:Name="radSplitContainer8">
-	        <telerik:RadPaneGroup x:Name="radGroup8">
-	            <telerik:RadPane x:Name="radPane18" Header="Server Explorer" IsPinned="False"/>
-	            <telerik:RadPane x:Name="radPane28" Header="Toolbox"/>
-	            <telerik:RadPane x:Name="radPane38" Header="Properties"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_15-xaml' />
+
 
 ## Closing a Pane in the Code-Behind
 
 If you want to close a pane in the code-behind, then you need to set the __IsHidden__ property of the __RadPane__ class to __True__.
 
-```C#
-	private void ClosePane()
-	{
-	    radPane1.IsHidden = true;
-	}
-```
-```VB.NET
-	Private Sub ClosePane()
-		radPane1.IsHidden = true
-	End Sub
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_16-cs' />
+
+<snippet id='raddocking-getting-started-managing-docking-dynamically-block_16-vb' />
+
 
 To re-open the closed pane set `IsHidden` back to `false`.
 
 __Re-opening a closed pane__  
 
-```C#	
-	radPane1.IsHidden = true;
-```
+<snippet id='raddocking-getting-started-managing-docking-dynamically-re_opening_a_closed_pane-cs' />
+
 
 If you need further management of the __RadDocking__ you can take a look at some of the following topics:
 

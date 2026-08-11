@@ -22,20 +22,16 @@ Furthermore, you may also define __nested Lambdas__. For example the __LINQ expr
 
 
 
-```C#
+<snippet id='radexpressioneditor-expressions-lambdas-block_1-cs' />
 
-	item => item.Tasks.Where(param0 => param0.SubTasks.Count > 2)
-```
 
 
 is equivalent to:
 
 
 
-```XAML
+<snippet id='radexpressioneditor-expressions-lambdas-block_2-xaml' />
 
-	Tasks.Where(SubTasks.Count > 20)
-```
 
 
 ![{{ site.framework_name }} RadExpressionEditor Nested Lambda Expression](images/RadExpressionEditor_NestedLambda.png)

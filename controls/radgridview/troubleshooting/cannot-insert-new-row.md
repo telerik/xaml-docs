@@ -32,19 +32,10 @@ For example if you have a collection of Orders when you want to add a new Order 
         
 
 
-```C#
-	private void ordersGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)
-	{
-	    e.NewObject = new Order() { CustomerID = myCustomerID };
-	}
-```
-```VB.NET
-	Private Sub ordersGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)
-	    e.NewObject = New Order() With {
-	     .CustomerID = myCustomerID
-	    }
-	End Sub
-```
+<snippet id='radgridview-troubleshooting-cannot-insert-new-row-solution-cs' />
+
+<snippet id='radgridview-troubleshooting-cannot-insert-new-row-solution-vb' />
+
 
 ## See Also
 

@@ -52,9 +52,7 @@ The following snippet demonstrates how to set __NoResultsContent__ to simple tex
 
 __Using NoResultsContent__
 
-```XAML
-	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" NoResultsContent="No Matches" /> 
-```
+<snippet id='radautocompletebox-features-key-properties-using_noresultscontent-xaml' />
 
 And this would be the result:
 
@@ -64,21 +62,7 @@ For more complex representation you could use __NoResultsContentTemplate__ in or
 
 __Using NoResultsContentTemplate__
 
-```XAML
-	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" NoResultsContent="No Matches">
-		<telerik:RadAutoCompleteBox.NoResultsContentTemplate>
-			<DataTemplate>
-				<StackPanel Orientation="Horizontal">
-					<Grid  Width="16" Height="16" VerticalAlignment="Center" HorizontalAlignment="Left">
-						<Ellipse Stroke="Red" StrokeThickness="1" />
-						<Path Data="M0,8 L2,8 2,10 0,10 z M0,0 L2,0 2,7 0,7 z" Fill="Red" Stretch="Fill" Margin="7 3" />
-					</Grid>
-					<TextBlock Text="{Binding}" Margin="3 0" />
-				</StackPanel>
-			</DataTemplate>
-		</telerik:RadAutoCompleteBox.NoResultsContentTemplate>
-	</telerik:RadAutoCompleteBox> 
-```
+<snippet id='radautocompletebox-features-key-properties-using_noresultscontenttemplate-xaml' />
 
 The result would be the following:
 

@@ -56,9 +56,7 @@ The `WorksheetEditorDialogs` class contains the following properties:
 The RadSpreadsheet control provides the `ActiveWorksheetEditor` property that gives you access to the active worksheet editor. You can use this property to access the `Dialogs` property of the active worksheet editor and utilize the dialogs as needed.
 
 __Accessing the Dialogs__
-```C#
-var findAndReplaceDialog = this.radSpreadsheet.ActiveWorksheetEditor.Dialogs.FindAndReplaceDialog;
-```
+<snippet id='radspreadsheet-features-ui-worksheet-editor-dialogs-block_1-cs' />
 
 ## Customizing the Dialogs
 
@@ -67,28 +65,7 @@ You can customize the dialogs by creating a new class that inherits from the dia
 The following example showcases how to customize one of the properties provided by the WorksheetEditorDialogs class. It showcases how to introduce a custom `FindAndReplaceDialogContent` type for the `FindAndReplaceDialog` property. In the example, the `OnKeyDown` method is overridden to add custom logic for handling the Escape and Enter keys.
 
 __Extending the FindAndReplaceDialogContent__
-```C#
-public class CustomFindAndReplaceDialogContent : FindAndReplaceDialogContent
-{
-    public CustomFindAndReplaceDialogContent()
-    {
-    }
-
-    protected override void OnKeyDown(KeyEventArgs e)
-    {
-        if (e.Key == Key.Escape)
-        {
-            this.Close();
-        }
-        else if (e.Key == Key.Enter)
-        {
-            FindNextCommand.Execute(null);
-        }
-    }
-}
-```
+<snippet id='radspreadsheet-features-ui-worksheet-editor-dialogs-block_2-cs' />
 
 __Setting the CustomFindAndReplaceDialogContent__
-```C#
-this.radSpreadsheet.ActiveWorksheetEditor.Dialogs.FindAndReplaceDialog = new CustomFindAndReplaceDialogContent();
-```
+<snippet id='radspreadsheet-features-ui-worksheet-editor-dialogs-block_3-cs' />

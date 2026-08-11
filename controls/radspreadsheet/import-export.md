@@ -46,65 +46,25 @@ The **RadSpreadsheet** class exposes the **FormatProviders** property. It is of 
 
 {% if site.site_name == 'WPF' %}
 #### [XAML] Namespaces for the format provider classes
-```XAML
-
-	xmlns:Txt="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Txt;assembly=Telerik.Windows.Documents.Spreadsheet" 
-    xmlns:Csv="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Csv;assembly=Telerik.Windows.Documents.Spreadsheet" 
-    xmlns:Pdf="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf;assembly=Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf" 
-    xmlns:Xlsx="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx;assembly=Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml"
-    xmlns:Xls="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls;assembly=Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls"
-```
+<snippet id='radspreadsheet-import-export-block_1-xaml' />
 
 #### [XAML] Example 1: Register format provider through the FormatProviders property
 
-```XAML
-
-	<telerik:RadSpreadsheet x:Name="radSpreadsheet" DataContext="{Binding CommandDescriptors, ElementName=radSpreadsheet}" Grid.Row="2">
-	    <telerik:RadSpreadsheet.FormatProviders>
-	        <Txt:TxtFormatProvider/>
-	        <Csv:CsvFormatProvider/>
-	        <Pdf:PdfFormatProvider/>
-	        <Xlsx:XlsxFormatProvider/>
-	        <Xls:XlsFormatProvider/>
-	    </telerik:RadSpreadsheet.FormatProviders>
-	</telerik:RadSpreadsheet>
-```
+<snippet id='radspreadsheet-import-export-block_2-xaml' />
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 #### [XAML] Namespaces for the format provider classes
-```XAML
-
-	xmlns:Txt="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Txt;assembly=Telerik.Windows.Documents.Spreadsheet" 
-    xmlns:Csv="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Csv;assembly=Telerik.Windows.Documents.Spreadsheet" 
-    xmlns:Pdf="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf;assembly=Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf" 
-    xmlns:Xlsx="clr-namespace:Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx;assembly=Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml"
-```
+<snippet id='radspreadsheet-import-export-block_3-xaml' />
 
 #### [XAML] Example 1: Register format provider through the FormatProviders property
 
-```XAML
-
-	<telerik:RadSpreadsheet x:Name="radSpreadsheet" DataContext="{Binding CommandDescriptors, ElementName=radSpreadsheet}" Grid.Row="2">
-	    <telerik:RadSpreadsheet.FormatProviders>
-	        <Txt:TxtFormatProvider/>
-	        <Csv:CsvFormatProvider/>
-	        <Pdf:PdfFormatProvider/>
-	        <Xlsx:XlsxFormatProvider/>
-	    </telerik:RadSpreadsheet.FormatProviders>
-	</telerik:RadSpreadsheet>
-```
+<snippet id='radspreadsheet-import-export-block_4-xaml' />
 {% endif %}
 
 #### [C#] Example 1: Register format provider through the FormatProviders property
 
-```C#
-
-	this.radSpreadsheet.FormatProviders.Add(new Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Txt.TxtFormatProvider());
-	this.radSpreadsheet.FormatProviders.Add(new Telerik.Windows.Documents.Spreadsheet.FormatProviders.TextBased.Csv.CsvFormatProvider());
-	this.radSpreadsheet.FormatProviders.Add(new Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.PdfFormatProvider());
-	this.radSpreadsheet.FormatProviders.Add(new Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx.XlsxFormatProvider());
-```
+<snippet id='radspreadsheet-import-export-block_5-cs' />
 
 
 ## Open/Save Document
@@ -116,27 +76,11 @@ To open or save a document with RadSpreadsheet, you can use the **Import()** and
 
 #### [C#] Example 2: Import XLSX document
 
-```C#
-
-	XlsxFormatProvider formatProvider = new XlsxFormatProvider();
-	
-	using (Stream input = new FileStream(fileName, FileMode.Open))
-	{
-	    this.radSpreadsheet.Workbook = formatProvider.Import(input, null);
-	}
-```
+<snippet id='radspreadsheet-import-export-block_6-cs' />
 
 #### [C#] Example 3: Export XLSX document
 
-```C#
-
-	XlsxFormatProvider formatProvider = new XlsxFormatProvider();
-	
-	using (Stream output = new FileStream(fileName, FileMode.Create))
-	{
-	    formatProvider.Export(this.radSpreadsheet.Workbook, output, null);
-	}
-```
+<snippet id='radspreadsheet-import-export-block_7-cs' />
 
 >More information about the usage of the format providers is available in the [Formats and Conversion](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/general-information) section of the documentation for the model of **RadSpreadsheet** - [**RadSpreadProcessing**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
 

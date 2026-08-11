@@ -20,9 +20,7 @@ There are four __Calendar modes__ that specify what is visible in the Calendar v
 
 
 
-```XAML
-	<telerik:RadCalendar DisplayMode="YearView" x:Name="calendar"/>
-```
+<snippet id='radcalendar-basics-block_1-xaml' />
 
 >The navigation between different __DisplayModes__ depends on the currently set __DisplayDate__. If, for example in the MonthView, the currently shown Month is August, but the SelectedDate is in September, clicking on the header button will navigate to YearView and will highlight August button.
 
@@ -32,9 +30,7 @@ The __SelectedDate__ property holds the selected date, __null__ means that __no 
 
 
 
-```C#
-	calendar.SelectedDate = DateTime.Today.AddDays(1);
-```
+<snippet id='radcalendar-basics-block_2-cs' />
 
 The __SelectedDates__ property is a collection of all the selected dates in the Calendar. Note that it is read-only and cannot be bound in XAML - you can only add Dates to it with code.
 
@@ -44,22 +40,7 @@ The following example selects all the work days (Monday to Friday) of the curren
 
 
 
-```C#
-	//Make sure that more than one date can be selected:
-	calendar.SelectionMode = SelectionMode.Extended;
-	//Which month is it today?
-	int thisMonthIndex = DateTime.Today.Month;
-	DateTime dayOfMonth = new DateTime(DateTime.Today.Year, thisMonthIndex, 1);
-	while (thisMonthIndex == dayOfMonth.Month)
-	{
-	    //Add the date if is a Mon - Fri week day:
-	    if (dayOfMonth.DayOfWeek != DayOfWeek.Sunday && dayOfMonth.DayOfWeek != DayOfWeek.Saturday)
-	    {
-	        calendar.SelectedDates.Add(dayOfMonth);
-	    }
-	    dayOfMonth = dayOfMonth.AddDays(1);
-	}
-```
+<snippet id='radcalendar-basics-block_3-cs' />
 
 ## Week Settings
 

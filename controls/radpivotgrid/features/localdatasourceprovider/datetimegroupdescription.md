@@ -26,46 +26,12 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider.RowGroupDescriptions>
-	    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Quarter"/>
-	    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
-	    <pivot:PropertyGroupDescription PropertyName="Date"/>
-	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_1-xaml' />
 
 
 
-```C#
-	DateTimeGroupDescription dateTimeGroupDescription1 = new DateTimeGroupDescription();
-	dateTimeGroupDescription1.PropertyName = "Date";
-	dateTimeGroupDescription1.Step = DateTimeStep.Quarter;
-	DateTimeGroupDescription dateTimeGroupDescription2 = new DateTimeGroupDescription();
-	dateTimeGroupDescription2.PropertyName = "Date";
-	dateTimeGroupDescription2.Step = DateTimeStep.Month;
-	Telerik.Pivot.Core.PropertyGroupDescription propertyGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
-	propertyGroupDescription.PropertyName = "Date";
-	
-	var dataProvider = new LocalDataSourceProvider();
-	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription1);
-	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2);
-	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription);
-```
-```VB.NET
-	Dim dateTimeGroupDescription1 As New DateTimeGroupDescription()
-	dateTimeGroupDescription1.PropertyName = "Date"
-	dateTimeGroupDescription1.Step = DateTimeStep.Quarter
-	Dim dateTimeGroupDescription2 As New DateTimeGroupDescription()
-	dateTimeGroupDescription2.PropertyName = "Date"
-	dateTimeGroupDescription2.Step = DateTimeStep.Month
-	Dim propertyGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
-	propertyGroupDescription.PropertyName = "Date"
-	
-	Dim dataProvider = New LocalDataSourceProvider()
-	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription1)
-	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2)
-	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription)
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_2-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_2-vb' />
 
 
 
@@ -83,30 +49,12 @@ The solution of this problem is to use AddingContainerNode event of LocalDataSou
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider x:Key="dataProvider" ItemsSource="{StaticResource source}">
-	    <pivot:LocalDataSourceProvider.FieldDescriptionsProvider>
-	        <pivot:LocalDataSourceFieldDescriptionsProvider AddingContainerNode="LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded_1"/>
-	    </pivot:LocalDataSourceProvider.FieldDescriptionsProvider>
-	</pivot:LocalDataSourceProvider>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_3-xaml' />
 
 
 
-```C#
-	var dataProvider = new LocalDataSourceProvider();
-	dataProvider.ItemsSource = new Source();
-	var descriptionProvider = new LocalDataSourceFieldDescriptionsProvider();
-	descriptionProvider.AddingContainerNode += LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded;
-	dataProvider.FieldDescriptionsProvider = descriptionProvider;
-```
-```VB.NET
-	Dim dataProvider = New LocalDataSourceProvider()
-	dataProvider.ItemsSource = New Source()
-	Dim descriptionProvider = New LocalDataSourceFieldDescriptionsProvider()
-	descriptionProvider.AddingContainerNode += LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded
-	dataProvider.FieldDescriptionsProvider = descriptionProvider
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_4-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_4-vb' />
 
 By using the ContainerNodeEventArgs you are able to access the information foreach ContainerNode in the FieldTree, its children. You can decide whether to include each of the children by using AutoGenerateField property. If you want you can remove the whole container (the folder) from the UI, by setting e.Cancel = true:       
 
@@ -114,125 +62,29 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 
 
 
-```C#
-	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
-	{
-	    //Use the name of the DateTime property, in our case it is Date
-	    if (e.ContainerNode.Name == "Date")
-	    {
-	        foreach (var containerNode in e.ContainerNode.Children)
-	        {
-	            FieldInfoNode fin = containerNode as FieldInfoNode;
-	            if (containerNode.Name == "Date.Hour")
-	            {
-	                //Show Hour from the DateTime tree
-	                (fin.FieldInfo as PropertyFieldInfo).AutoGenerateField = true;
-	            }
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
-		'Use the name of the DateTime property, in our case it is Date
-		If e.ContainerNode.Name = "Date" Then
-			For Each containerNode In e.ContainerNode.Children
-				Dim fin As FieldInfoNode = TryCast(containerNode, FieldInfoNode)
-				If containerNode.Name = "Date.Hour" Then
-					'Show Hour from the DateTime tree
-					TryCast(fin.FieldInfo, PropertyFieldInfo).AutoGenerateField = True
-				End If
-			Next containerNode
-		End If
-	End Sub
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_5-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_5-vb' />
 
 * __Remove children from the container node (folder)__ - for example you may remove Year Step to the FieldTree:            
 
 
 
-```C#
-	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
-	{
-	    //Use the name of the DateTime property, in our case it is Date
-	    if (e.ContainerNode.Name == "Date")
-	    {
-	        foreach (var containerNode in e.ContainerNode.Children)
-	        {
-	            FieldInfoNode fin = containerNode as FieldInfoNode;
-	            if (containerNode.Name == "Date.Year")
-	            {
-	                //Remove Year from the DateTime tree
-	                (fin.FieldInfo as PropertyFieldInfo).AutoGenerateField = false;
-	            }
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
-		'Use the name of the DateTime property, in our case it is Date
-		If e.ContainerNode.Name = "Date" Then
-			For Each containerNode In e.ContainerNode.Children
-				Dim fin As FieldInfoNode = TryCast(containerNode, FieldInfoNode)
-				If containerNode.Name = "Date.Year" Then
-					'Remove Year from the DateTime tree
-					TryCast(fin.FieldInfo, PropertyFieldInfo).AutoGenerateField = False
-				End If
-			Next containerNode
-		End If
-	End Sub
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_6-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_6-vb' />
 
 * __Remove the whole container node (folder) from the FieldTree__:            
 
 
 
-```C#
-	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
-	{
-	    //Use the name of the DateTime property, in our case it is Date
-	    if (e.ContainerNode.Name == "Date")
-	    {
-	        e.Cancel = true;
-	    }
-	}
-```
-```VB.NET
-	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
-		'Use the name of the DateTime property, in our case it is Date
-		If e.ContainerNode.Name = "Date" Then
-			e.Cancel = True
-		End If
-	End Sub
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_7-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_7-vb' />
 
 * __Remove the whole container node (folder) from the FieldTree and show a single DateTime with chosen Step:__:            
 
 
 
-```C#
-	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
-	{
-	    //Use the name of the DateTime property, in our case it is Date
-	    if (e.ContainerNode.Name == "Date")
-	    {
-	        //Find the children Date.Month and show it.
-	        FieldInfoNode fin = e.ContainerNode.Children.First<ContainerNode>(cn => cn.Name == "Date.Month") as FieldInfoNode;
-	        e.ContainerNode = fin;
-	    }
-	}
-```
-```VB.NET
-	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
-		'Use the name of the DateTime property, in our case it is Date
-		If e.ContainerNode.Name = "Date" Then
-			'Find the children Date.Month and show it.
-			Dim fin As FieldInfoNode = TryCast(e.ContainerNode.Children.First(Function(cn) cn.Name = "Date.Month"), FieldInfoNode)
-			e.ContainerNode = fin
-		End If
-	End Sub
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_8-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-datetimegroupdescription-block_8-vb' />
 
 ## See Also
 

@@ -44,18 +44,11 @@ To get notified when the cluster elements are created, the __ClustersInvalidated
 
 __Example 1: Subscribe to ClustersInvalidated event__
 
-```XAML
-    <telerik:VisualizationLayer x:Name="VisualizationLayer1" ClustersInvalidated="VisualizationLayer_ClustersInvalidated"/>
-```
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_1-xaml' />
 
 __Example 2: ClustersInvalidated event handler__
 
-```C#
-    private void VisualizationLayer_ClustersInvalidated(object sender, System.EventArgs e)
-	{
-		// custom logic		
-	}
-```
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_2-cs' />
 
 ## Items Grouping Example
 
@@ -64,32 +57,7 @@ The following example demonstrates how to use the __Clustering__ feature to disp
 If you try to load this file using the shape-file reader directly, like the sample XAML code below, then the performance of zooming and panning will be slow. Also the data items will be overlapped for low zoom levels (1-7).
         
 __Example 3: Displaying Airports of USA__
-```XAML
-    <UserControl x:Class="ItemsGroupingExample.MainPage"
-                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-                 d:DesignHeight="300"
-                 d:DesignWidth="400"
-                 mc:Ignorable="d">
-        <Grid x:Name="LayoutRoot">
-            <telerik:RadMap x:Name="RadMap1"
-                            Center="40, -100"
-                            ZoomLevel="3">
-                <telerik:RadMap.Provider>
-                    <telerik:OpenStreetMapProvider />
-                </telerik:RadMap.Provider>
-                <telerik:VisualizationLayer x:Name="VisualizationLayer1">
-                    <telerik:VisualizationLayer.Reader>
-                        <telerik:AsyncShapeFileReader Source="/ItemsGroupingExample;component/Resources/airports.shp" ToolTipFormat="AIRPT_NAME" />
-                    </telerik:VisualizationLayer.Reader>
-                </telerik:VisualizationLayer>
-            </telerik:RadMap>
-        </Grid>
-    </UserControl>
-```
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_3-xaml' />
 
 Here is a snapshot of the displayed items for zoom level 3:
 
@@ -101,13 +69,7 @@ You can set the __ClusteringEnabled__ property to __true__ for enabling the feat
 
 __Example 4: Enable clustering functionality__
 
-```XAML
-    <telerik:VisualizationLayer x:Name="VisualizationLayer1" ClusteringEnabled="True">
-        <telerik:VisualizationLayer.Reader>
-            <telerik:AsyncShapeFileReader Source="/ItemsGroupingExample;component/Resources/airports.shp" ToolTipFormat="AIRPT_NAME" />
-        </telerik:VisualizationLayer.Reader>
-    </telerik:VisualizationLayer>
-```
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_4-xaml' />
 
 Here is a snapshot of the displayed items for zoom level 3 when the grouping is used:
 
@@ -118,81 +80,7 @@ By default the cluster looks like above and it shows how many items it contains.
 You can configure the __ItemTemplate__ and __ClusterItemTemplate__ properties to customize the appearance of the item and of the cluster.
         
 __Example 5: Customizing the appearance of the cluster__
-```XAML
-    <UserControl x:Class="ItemsGroupingExample.MainPage"
-                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-                 d:DesignHeight="300"
-                 d:DesignWidth="400"
-                 mc:Ignorable="d">
-        <UserControl.Resources>
-            <DataTemplate x:Key="ItemTemplate">
-                <Border>
-                    <telerik:MapLayer.HotSpot>
-                        <telerik:HotSpot ElementName="Pin"
-                                         X="0.5"
-                                         Y="1.0" />
-                    </telerik:MapLayer.HotSpot>
-                    <Canvas x:Name="Pin"
-                            Width="20"
-                            Height="32">
-                        <Path Width="20.01"
-                              Height="32.005"
-                              Data="M1054.5088,458.105L1065.5188,458.105C1067.7278,458.105,1069.5188,459.896,1069.5188,462.105L1069.5188,473.084C1069.5188,475.293,1067.7278,477.084,1065.5188,477.084C1065.5188,477.084,1062.6868,476.831,1062.2128,479.103C1061.6608,481.751,1060.2208,489.11,1060.2208,489.11L1059.3548,489.11C1059.3548,489.11,1058.0138,482.546,1057.2888,479.106C1056.8538,477.041,1054.5088,477.084,1054.5088,477.084C1052.2998,477.084,1050.5088,475.293,1050.5088,473.084L1050.5088,462.105C1050.5088,459.896,1052.2998,458.105,1054.5088,458.105z"
-                              Fill="Yellow"
-                              Stretch="Fill"
-                              Stroke="Black"
-                              StrokeEndLineCap="Flat"
-                              StrokeLineJoin="Miter"
-                              StrokeMiterLimit="10"
-                              StrokeStartLineCap="Flat"
-                              StrokeThickness="1" />
-                        <Path Canvas.Left="3.188"
-                              Canvas.Top="2.989"
-                              Width="13.42"
-                              Height="14.219"
-                              Data="M1066.6162,472.8125C1066.6212,473.9125,1065.7252,474.8125,1064.6252,474.8125L1055.2502,474.8125C1054.1502,474.8125,1053.2462,473.9125,1053.2412,472.8125L1053.1962,462.5935C1053.1912,461.4935,1054.0872,460.5935,1055.1872,460.5935L1064.5622,460.5935C1065.6622,460.5935,1066.5662,461.4935,1066.5712,462.5935z"
-                              Fill="Black"
-                              Stretch="Fill" />
-                    </Canvas>
-                </Border>
-            </DataTemplate>
-
-            <DataTemplate x:Key="ClusterTemplate">
-                <Border Background="#af3f3f3f"
-                        CornerRadius="3"
-                        telerik:MapLayer.HotSpot="0.5,0.5">
-                    <StackPanel x:Name="Text" Margin="3">
-                        <TextBlock HorizontalAlignment="Center"
-                                   Foreground="Yellow"
-                                   Text="{Binding Path=Count}" />
-                    </StackPanel>
-                </Border>
-            </DataTemplate>
-        </UserControl.Resources>
-
-        <Grid x:Name="LayoutRoot">
-            <telerik:RadMap x:Name="RadMap1"
-                            Center="40, -100"
-                            ZoomLevel="3">
-                <telerik:RadMap.Provider>
-                    <telerik:OpenStreetMapProvider />
-                </telerik:RadMap.Provider>
-                <telerik:VisualizationLayer x:Name="VisualizationLayer1"
-                                            ClusterItemTemplate="{StaticResource ClusterTemplate}"
-                                            ClusteringEnabled="True"
-                                            ItemTemplate="{StaticResource ItemTemplate}">
-                    <telerik:VisualizationLayer.Reader>
-                        <telerik:AsyncShapeFileReader Source="/ItemsGroupingExample;component/Resources/airports.shp" ToolTipFormat="AIRPT_NAME" />
-                    </telerik:VisualizationLayer.Reader>
-                </telerik:VisualizationLayer>
-            </telerik:RadMap>
-        </Grid>
-    </UserControl>
-```
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_5-xaml' />
 
 There are the results of using custom templates for clusters and items:
 ![Rad Map Features Virtualization Layer Clustering 2](images/RadMap_Features_VirtualizationLayer_Clustering_2.png)
@@ -252,113 +140,19 @@ Many of these properties are used by the cluster generator, only. It calculates 
 The __ClusterState__ property allows displaying the items of cluster without increasing of the zoom level. You can attach the mouse events in the cluster template like the XAML code below.
         
 __Example 6: Subscribing to MouseLeftButtonDown and MouseRightButtonDown events__
-```XAML
-    <DataTemplate x:Key="ClusterTemplate">
-        <Border Background="#af3f3f3f"
-                CornerRadius="3"
-                MouseLeftButtonDown="ExpandClusterToPolygon"
-                MouseRightButtonDown="ExpandCluster"
-                telerik:MapLayer.HotSpot="0.5,0.5">
-            <StackPanel x:Name="Text" Margin="3">
-                <TextBlock HorizontalAlignment="Center"
-                           Foreground="Yellow"
-                           Text="{Binding Path=Count}" />
-            </StackPanel>
-        </Border>
-    </DataTemplate>
-```
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_6-xaml' />
 
 The following *MouseLeftButtonDown* event handler uses to expand the items of cluster to the polygon vertices:
         
 __Example 8: MouseLeftButtonDown event handler__
-```C#
-	private void ExpandClusterToPolygon(object sender, MouseButtonEventArgs e)
-	{
-	    FrameworkElement element = sender as FrameworkElement;
-	    if (element != null)
-	    {
-	        ClusterData data = element.DataContext as ClusterData;
-	        if (data != null)
-	        {
-	            if (data.ClusterState != ClusterState.ExpandedToPolygon)
-	            {
-	                data.HideExpanded = false;
-	                data.ClusterState = ClusterState.ExpandedToPolygon;
-	            }
-	            else
-	            {
-	                data.ClusterState = ClusterState.Collapsed;
-	            }
-	        }
-	    }
-	
-	    e.Handled = true;
-	}
-```
-```VB.NET
-    Private Sub ExpandClusterToPolygon(sender As Object, e As MouseButtonEventArgs)
-        Dim element As FrameworkElement = TryCast(sender, FrameworkElement)
-        If element IsNot Nothing Then
-            Dim data As ClusterData = TryCast(element.DataContext, ClusterData)
-            If data IsNot Nothing Then
-                If data.ClusterState <> ClusterState.ExpandedToPolygon Then
-                    data.HideExpanded = False
-                    data.ClusterState = ClusterState.ExpandedToPolygon
-                Else
-                    data.ClusterState = ClusterState.Collapsed
-                End If
-            End If
-        End If
-
-        e.Handled = True
-    End Sub
-```
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_7-cs' />
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_7-vb' />
 
 The following *MouseRightButtonDown* event handler uses to expand the items of cluster to their original locations:
         
 __Example 9: MouseRightButtonDown event handler__
-```C#
-	private void ExpandCluster(object sender, MouseButtonEventArgs e)
-	{
-	    FrameworkElement element = sender as FrameworkElement;
-	    if (element != null)
-	    {
-	        ClusterData data = element.DataContext as ClusterData;
-	        if (data != null)
-	        {
-	            if (data.ClusterState != ClusterState.Expanded)
-	            {
-	                data.HideExpanded = false;
-	                data.ClusterState = ClusterState.Expanded;
-	            }
-	            else
-	            {
-	                data.ClusterState = ClusterState.Collapsed;
-	            }
-	        }
-	    }
-	
-	    e.Handled = true;
-	}
-```
-```VB.NET
-    Private Sub ExpandCluster(sender As Object, e As MouseButtonEventArgs)
-        Dim element As FrameworkElement = TryCast(sender, FrameworkElement)
-        If element IsNot Nothing Then
-            Dim data As ClusterData = TryCast(element.DataContext, ClusterData)
-            If data IsNot Nothing Then
-                If data.ClusterState <> ClusterState.Expanded Then
-                    data.HideExpanded = False
-                    data.ClusterState = ClusterState.Expanded
-                Else
-                    data.ClusterState = ClusterState.Collapsed
-                End If
-            End If
-        End If
-
-        e.Handled = True
-    End Sub
-```
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_8-cs' />
+<snippet id='radmap-features-visualization-layer-heatures-clustering-block_8-vb' />
 
 In the snapshots below you can see how the above example will be displayed using different __ClusterState__ values. The __ClusterState__ of cluster which contains six items is __Collapsed__.
 ![Rad Map Features Virtualization Layer Clustering 4](images/RadMap_Features_VirtualizationLayer_Clustering_4.png)

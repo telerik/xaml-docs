@@ -16,26 +16,7 @@ __Conversational UI__ supports adding message suggestions in the chat's UI that 
 
 To add suggestions, use the `SuggestedActions` collection of `RadChat`. 
 
-```C#
-private Author currentAuthor;
-private Author otherAuthor;
-
-public MainWindow()
-{
-	InitializeComponent();
-
-	currentAuthor = new Author("1") { Name = "Peter" };
-	otherAuthor = new Author("2") { Name = "Steven" };
-	this.chat.CurrentAuthor = currentAuthor;
-
-	var textMessage = new TextMessage(this.currentAuthor, "Hello", "sent");
-	textMessage.InlineViewModel.StatusVisibility = Visibility.Visible;
-
-	this.chat.AddMessage(textMessage);
-
-	this.chat.SuggestedActions.Add(new SuggestedAction("Hi, there!"));
-}
-```
+<snippet id='radchat-features-suggested-actions-example_1_adding_suggestedaction-cs' />
 
 ![Adding a SuggestedAction](images/RadChat_Items_SuggestedActions_01.png)
 
@@ -49,18 +30,7 @@ When the user selects a given suggestion, the `SuggestedActionReported` is raise
 * `PostResultInline`: A boolean property that determines whether the suggestion should be posted as an inline text message or not.
 * `Text`: The text result.
 
-```C#
-private void Chat_SuggestedActionReported(object sender, SuggestedActionsEventArgs e)
-{
-	if (e.Text == "Hi, there!")
-	{
-		e.CloseAfterReport = false;
-		e.PostResultInline = false;
-
-		this.chat.AddMessage(this.otherAuthor, e.Text);
-	}
-}
-```
+<snippet id='radchat-features-suggested-actions-example_2_handling_the_suggestedactionreported_event-cs' />
 
 ![Handling the SuggestedActionReported event](images/RadChat_Items_SuggestedActions_02.png)
 
@@ -68,9 +38,7 @@ private void Chat_SuggestedActionReported(object sender, SuggestedActionsEventAr
 
 To set the layout orientation of the suggested actions, use the `SuggestedActionsOrientation` property of `RadChat`.
 
-```XAML
-<telerik:RadChat x:Name="chat" SuggestedActionsOrientation="Vertical"/>
-```
+<snippet id='radchat-features-suggested-actions-example_3_setting_the_suggestedactionsorientation-xaml' />
 
 ![SuggestedActions with Vertical orientation](images/RadChat_Items_SuggestedActions_03.png)
 

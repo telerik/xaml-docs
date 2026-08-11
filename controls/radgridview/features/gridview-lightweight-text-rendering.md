@@ -14,9 +14,8 @@ The `RadGridView` control provides the functionality to use a lightweight render
 
 __Enabling the lightweight rendering mode__
 
-```XAML
-    <telerik:RadGridView EnableLightweightTextRendering="True" GroupRenderMode="Flat"/>
-```
+<snippet id='radgridview-features-gridview-lightweight-text-rendering-enabling_the_lightweight_rendering_mode-xaml' />
+
 
 ## Redraw Actions
 

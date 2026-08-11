@@ -38,9 +38,8 @@ You can find the required assemblies for each control from the suite in the [Con
 __Example 1__ demonstrates how you can define a RadFilePathPicker in xaml.
 
 __Example 1: Defining RadFilePathPicker__
-```XAML
-    <telerik:RadFilePathPicker x:Name="filePathPicker"  />
-```
+<snippet id='radfilepathpicker-getting-started-example_1_defining_radfilepathpicker-xaml' />
+
 
 #### __Figure 1: RadFilePathPicker in the Office2016 theme__
 ![RadFilePathPicker Getting started](images/FilePathPicker_GettingStarted.png)
@@ -52,9 +51,8 @@ Even at this point, you are ready to start using the control. The following few 
 By default the RadFilePathPicker is read-only, which means that you cannot input text in the RadWatermarkTextBox inside it. In order to change this, you can set the __IsReadOnly__ property to __False__ as demonstrated in __Example 2__.
 
 __Example 2: Setting the IsReadOnly property__
-```XAML
-    <telerik:RadFilePathPicker IsReadOnly="False"  />
-```
+<snippet id='radfilepathpicker-getting-started-example_2_setting_the_isreadonly_property-xaml' />
+
 
 ## Text and FilePath
 
@@ -65,9 +63,8 @@ The __RadFilePathPicker__ control exposes two properties that come in handy for 
 There are two properties that allow for modifying the appearance of the button on the right side of the control, which opens the dialog. The __ShowDialogButtonContent__ expects a glyph as a value, since the default __ShowDialogButtonTemplate__ contains a [RadGlyph]({%slug common-styling-appearance-radglyph%}). __Example 3__ demonstrates how to change the default glyph shown in the button.
 
 __Example 3: Setting the ShowDialogButtonContent__
-```XAML
-    <telerik:RadFilePathPicker ShowDialogButtonContent="&#xe11f;" />
-```
+<snippet id='radfilepathpicker-getting-started-example_3_setting_the_showdialogbuttoncontent-xaml' />
+
 
 #### __Figure 2: RadFilePathPicker with ShowDialogButtonContent set in the Office2016 theme__
 ![RadFilePathPicker with ShowDialogButtonContent](images/FilePathPicker_GettingStarted_ShowDialogButtonContent.png)
@@ -75,18 +72,8 @@ __Example 3: Setting the ShowDialogButtonContent__
 If you don't want to show a RadGlyph in the show dialog button, you can set the __ShowDialogButtonTemplate__ property to a custom DataTemplate. Note, that whatever is set to the __ShowDialogButtonContent__ will be the DataContext inside the __ShowDialogButtonTemplate__. 
 
 __Example 4: Setting the ShowDialogButtonTemplate__
-```XAML
+<snippet id='radfilepathpicker-getting-started-example_4_setting_the_showdialogbuttontemplate-xaml' />
 
-    <StackPanel>
-        <StackPanel.Resources>
-            <DataTemplate x:Key="ShowDialogButtonTemplate">
-                <TextBlock Text="{Binding}" />
-            </DataTemplate>
-        </StackPanel.Resources>
-
-        <telerik:RadFilePathPicker ShowDialogButtonContent="Show" ShowDialogButtonTemplate="{StaticResource ShowDialogButtonTemplate}"  />
-    </StackPanel>
-```
 
 #### __Figure 3: RadFilePathPicker with ShowDialogButtonTemplate set in the Office2016 theme__
 ![RadFilePathPicker with ShowDialogButtonTemplate](images/FilePathPicker_GettingStarted_ShowDialogButtonTemplate.png)
@@ -96,9 +83,8 @@ __Example 4: Setting the ShowDialogButtonTemplate__
 There are two properties that allow for modifying the appearance of the clear button, which is shown when some text is entered. The __ClearButtonContent__ expects a glyph as a value, since the default __ClearButtonTemplate__ contains a [RadGlyph]({%slug common-styling-appearance-radglyph%}). __Example 5__ demonstrates how to change the default glyph shown in the button.
 
 __Example 5: Setting the ClearButtonContent__
-```XAML
-    <telerik:RadFilePathPicker IsReadOnly="False" ClearButtonContent="&#xe11d;" />
-```
+<snippet id='radfilepathpicker-getting-started-example_5_setting_the_clearbuttoncontent-xaml' />
+
 
 #### __Figure 4: RadFilePathPicker with ClearButtonContent set in the Office2016 theme__
 ![RadFilePathPicker with ClearButtonContent](images/FilePathPicker_GettingStarted_ClearButtonContent.png)
@@ -106,18 +92,8 @@ __Example 5: Setting the ClearButtonContent__
 To avoid showing a RadGlyph in the clear button, you can set the __ClearButtonTemplate__ property to a custom DataTemplate. Note, that whatever is set to the __ClearButtonContent__ will be the DataContext inside the __ClearButtonTemplate__. 
 
 __Example 6: Setting the ClearButtonTemplate__
-```XAML
+<snippet id='radfilepathpicker-getting-started-example_6_setting_the_clearbuttontemplate-xaml' />
 
-    <StackPanel>
-        <StackPanel.Resources>
-            <DataTemplate x:Key="ClearButtonTemplate">
-                <TextBlock Text="{Binding}" />
-            </DataTemplate>
-        </StackPanel.Resources>
-
-        <telerik:RadFilePathPicker IsReadOnly="False" ClearButtonContent="Clear" ClearButtonTemplate="{StaticResource ClearButtonTemplate}"/>
-    </StackPanel>
-```
 
 #### __Figure 5: RadFilePathPicker with ClearButtonTemplate set in the Office2016 theme__
 ![RadFilePathPicker with ClearButtonTemplate](images/FilePathPicker_GettingStarted_ClearButtonTemplate.png)
@@ -150,20 +126,8 @@ To change the theme, you can follow the steps below:
 __Example 7__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 7: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.GridView.xaml"/>				
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.FileDialogs.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radfilepathpicker-getting-started-example_7_merge_the_resourcedictionaries-xaml' />
+
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

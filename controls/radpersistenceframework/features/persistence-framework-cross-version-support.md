@@ -24,10 +24,7 @@ There are two mechanisms that can be used to resolve this.
 The __AllowCrossVersion__ property gives you the ability to serialize Telerik controls with one version and deserialize them with another version. To enable this set the property to True.
 
 __Example 2: Setting AllowCrossVersion__
-```C#
-	PersistenceManager manager = new PersistenceManager();
-	manager.AllowCrossVersion = true;
-```
+<snippet id='radpersistenceframework-features-persistence-framework-cross-version-support-block_1-cs' />
 
 > This is applicable only for Telerik controls.
 
@@ -36,22 +33,7 @@ __Example 2: Setting AllowCrossVersion__
 The __TypeRestored__ event allows you to manually restore the type of the deserialized object. This can be used as an alternative to the AllowCrossVersion property. Additionally, the event is useful if you migrate to a newer version of the .NET framework and there is a native type stored with the previous version.
 
 __Example 3: Using the TypeRestored event__
-```C#
-	private void SubscribeToTypeRestored()
-	{       
-		PersistenceManager manager = new PersistenceManager();
-		manager.TypeRestored += OnPresistenceManagerTypeRestored;
-	}
-	
-	private void OnPresistenceManagerTypeRestored(object sender, Telerik.Windows.Persistence.Events.TypeRestoredEventArgs e)
-	{
-		if (e.Type == null)
-		{
-			var assemblyName = e.AssemblyQualifiedName.Substring(0, e.AssemblyQualifiedName.IndexOf(", Version"));
-			e.Type = Type.GetType(assemblyName);
-		}
-	}
-```
+<snippet id='radpersistenceframework-features-persistence-framework-cross-version-support-block_2-cs' />
 
 ## See Also
 * [Getting Started]({%slug persistence-framework-getting-started%})

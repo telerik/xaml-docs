@@ -17,40 +17,10 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 
 
 
-```C#
-	public class EditableComboBox
-	{
-	    public static int GetCharacterCasing( DependencyObject obj )
-	    {
-	        return ( int )obj.GetValue( CharacterCasingProperty );
-	    }
-	
-	    public static void SetCharacterCasing( DependencyObject obj, int value )
-	    {
-	        obj.SetValue( CharacterCasingProperty, value );
-	    }
-	
-	    public static readonly DependencyProperty CharacterCasingProperty =
-	        DependencyProperty.RegisterAttached( "CharacterCasing", typeof( int ), typeof( EditableComboBox ), new UIPropertyMetadata( OnCharacterCasingChanged ) );
-	
-	    private static void OnCharacterCasingChanged( DependencyObject obj, DependencyPropertyChangedEventArgs e )
-	    {
-	    }
-	}
-```
-```VB.NET
-	Public Class EditableComboBox
-	    Public Shared Function GetCharacterCasing(ByVal obj As DependencyObject) As Integer
-	        Return CInt(obj.GetValue(CharacterCasingProperty))
-	    End Function
-	    Public Shared Sub SetCharacterCasing(ByVal obj As DependencyObject, ByVal value As Integer)
-	        obj.SetValue(CharacterCasingProperty, value)
-	    End Sub
-	    Public Shared ReadOnly CharacterCasingProperty As DependencyProperty = DependencyProperty.RegisterAttached("CharacterCasing", GetType(Integer), GetType(EditableComboBox), New UIPropertyMetadata(OnCharacterCasingChanged))
-	    Private Shared Sub OnCharacterCasingChanged(ByVal obj As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
-	    End Sub
-	End Class
-```
+<snippet id='radcombobox-howto-set-character-casing-block_1-cs' />
+
+<snippet id='radcombobox-howto-set-character-casing-block_1-vb' />
+
 
 In the __OnCharacterCasingChanged()__ event handler you should perform the following step.
 
@@ -62,50 +32,14 @@ In the __OnCharacterCasingChanged()__ event handler you should perform the follo
 
 
 
-```C#
-	public class EditableComboBox
-	{
-	    public static int GetCharacterCasing( DependencyObject obj )
-	    {
-	        return ( int )obj.GetValue( CharacterCasingProperty );
-	    }
-	    public static void SetCharacterCasing( DependencyObject obj, int value )
-	    {
-	        obj.SetValue( CharacterCasingProperty, value );
-	    }
-	    public static readonly DependencyProperty CharacterCasingProperty =
-	        DependencyProperty.RegisterAttached( "CharacterCasing", typeof( int ), typeof( EditableComboBox ), new UIPropertyMetadata( OnCharacterCasingChanged ) );
-	    private static void OnCharacterCasingChanged( DependencyObject obj, DependencyPropertyChangedEventArgs e )
-	    {
-	        var comboBox = obj as Telerik.Windows.Controls.RadComboBox;
-	        if ( comboBox == null )
-	        {
-	            return;
-	        }
-	        comboBox.Dispatcher.BeginInvoke( DispatcherPriority.Loaded,
-	            ( DispatcherOperationCallback )delegate
-	            {
-	                var childrenCount = VisualTreeHelper.GetChildrenCount( comboBox );
-	                if ( childrenCount > 0 )
-	                {
-	                    var rootElement = VisualTreeHelper.GetChild( comboBox, 0 ) as FrameworkElement;
-	                    TextBox textBox = ( TextBox )rootElement.FindName( "PART_EditableTextBox" );
-	                    if ( textBox != null )
-	                        textBox.SetValue( TextBox.CharacterCasingProperty, ( CharacterCasing )e.NewValue );
-	                }
-	                return null;
-	            }
-	            , null );
-	    }
-	}
-```
+<snippet id='radcombobox-howto-set-character-casing-block_2-cs' />
+
 
 Finally set the property in XAML.
 
 
 
-```XAML
-	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.CharacterCasingProperty="1"/>
-```
+<snippet id='radcombobox-howto-set-character-casing-block_3-xaml' />
+
 
 >tip Note that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.

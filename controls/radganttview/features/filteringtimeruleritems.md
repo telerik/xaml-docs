@@ -34,13 +34,8 @@ SingleRangeGenerator allows you view the whole TimeRuler specified by the visibl
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
-	    <telerik:RadGanttView.TimeLineFilteringBehavior>
-	        <telerik:SingleRangeGenerator />
-	    </telerik:RadGanttView.TimeLineFilteringBehavior>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-filteringtimeruleritems-block_1-xaml' />
+
 
 And here is the end result:
 
@@ -60,13 +55,8 @@ So it can be used to mark the working days, for example:
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}">
-	    <telerik:RadGanttView.TimeLineFilteringBehavior>
-	        <telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
-	    </telerik:RadGanttView.TimeLineFilteringBehavior>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-filteringtimeruleritems-block_2-xaml' />
+
 
 And here is the end result:
 
@@ -80,35 +70,15 @@ In RadGanttView it is possible to implement a custom IRangeGenerator. You just n
 
 
 
-```C#
-	public class CustomRangeGenerator : ViewModelBase, IRangeGenerator
-	{
-		public System.Collections.Generic.IEnumerable<IDateRange> GetRanges(IDateRange visibleRange)
-		{
-			for (DateTime current = visibleRange.Start; current < visibleRange.End; current += TimeSpan.FromDays(1))
-			{
-				int addDays = (int)current.DayOfWeek;
-				if (addDays < 7 && (int)current.DayOfWeek % 2 != 0)
-				{
-					yield return new DateRange(current, current.AddDays(1));
-					addDays = addDays + 1;
-				}
-			}
-		}
-	}
-```
+<snippet id='radganttview-features-filteringtimeruleritems-block_3-cs' />
+
 
 All that's left is to set the newly created class to the TimeLineFilteringBehavior property:
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}">
-	    <telerik:RadGanttView.TimeLineFilteringBehavior>
-	        <example:CustomRangeGenerator />
-	    </telerik:RadGanttView.TimeLineFilteringBehavior>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-filteringtimeruleritems-block_4-xaml' />
+
 
 And here is the end result:
 

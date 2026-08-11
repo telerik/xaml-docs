@@ -37,9 +37,7 @@ __Password__ property returns the current password as a string representation. I
 
 __Example 1: Setting initial Password__
 
-```XAML
-	<telerik:RadPasswordBox Width="150" Password="defaultpassword" />
-```
+<snippet id='radpasswordbox-key-properties-block_1-xaml' />
 
 __Figure 1__ illustates __RadPasswordBox__ when loaded.
 
@@ -61,9 +59,7 @@ __IsPasswordVisible__ is a read-only property indicating whether the password is
 __PasswordChar__ property defines the masking character used to hide the actual password. The default value is bullet character (●). __Example 2__ demonstrates how it could be set.
  
 __Example 2: Setting PasswordChar__
-```XAML
-	<telerik:RadPasswordBox Width="150" PasswordChar="*"/>
-```
+<snippet id='radpasswordbox-key-properties-block_2-xaml' />
 
 #### __Figure 2: RadPasswordBox with PasswordChar set__
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with PasswordChar set](images/RadPasswordBox_KeyProperties_0.png)
@@ -86,9 +82,7 @@ The default value is Auto.
 To completely remove the __ShowPasswordButton__, you could set this property to Never as demonstrated in __Example 3__.
  
 __Example 3: Setting ShowPasswordButtonVisibility__
-```XAML
-	<telerik:RadPasswordBox Width="150" ShowPasswordButtonVisibility="Never" />
-```
+<snippet id='radpasswordbox-key-properties-block_3-xaml' />
 
 #### __Figure 3: RadPasswordBox with ShowPasswordButtonVisibility set__
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with ShowPasswordButtonVisibility set](images/RadPasswordBox_KeyProperties_1.png)
@@ -100,18 +94,12 @@ __ShowPasswordButtonContent__ and  __ShowPasswordButtonContentTemplate__ identif
 First, we will create a simple DataTemplate as demonstrated in __Example 4__.
 
 __Example 4: Adding ImageTemplate__
-```XAML
-	<DataTemplate x:Key="ImageTemplate">
-		<Image Source="{Binding}" Stretch="None" />
-	</DataTemplate>
-```
+<snippet id='radpasswordbox-key-properties-block_4-xaml' />
 
 __Example 5__ illustates how to set the ImageTemplate to the __ShowPasswordButtonContentTemplate__ property of __RadPasswordBox__ as well as define its __ShowPasswordButtonContent__ property.
 
 __Example 5: Setting ShowPasswordButton content properties__
-```XAML
-	<telerik:RadPasswordBox Width="150" ShowPasswordButtonContent="star.png" ShowPasswordButtonContentTemplate="{StaticResource ImageTemplate}" />
-```
+<snippet id='radpasswordbox-key-properties-block_5-xaml' />
 
 #### __Figure 4: RadPasswordBox with ShowPasswordButton content properties applied__
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with ShowPasswordButton content properties applied](images/RadPasswordBox_KeyProperties_2.png)
@@ -125,21 +113,12 @@ __WatermarkContent__ and  __WatermarkTemplate__ identify the content and respect
 First, we will create a simple DataTemplate as demonstrated in __Example 6__.
 
 __Example 6: Adding WatermarkWithImageTemplate__
-```XAML
-	<DataTemplate x:Key="WatermarkWithImageTemplate">
-		<StackPanel Orientation="Horizontal">
-			<Image Source="passwordImage.png" Width="14" Height="14" />
-			<TextBlock Text="Enter password" />
-		</StackPanel>           
-	</DataTemplate>
-```
+<snippet id='radpasswordbox-key-properties-block_6-xaml' />
 
 Then, set the defined WatermarkWithImageTemplate to the __WatermarkTemplate__ of the __RadPasswordBox__.
 
 __Example 7: Setting WatermarkTemplate__
-```XAML
-	<telerik:RadPasswordBox Width="150"  WatermarkTemplate="{StaticResource WatermarkWithImageTemplate}" />
-```
+<snippet id='radpasswordbox-key-properties-block_7-xaml' />
 
 __Figure 5__ shows the result.
 

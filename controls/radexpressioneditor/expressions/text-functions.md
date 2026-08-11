@@ -49,12 +49,10 @@ The same can be achieved via code-behind as well by using the code from **Exampl
 
 __Example 1: Creating the expression in code-behind__
 
-```C#
-    this.ExpressionEditor.ExpressionText = @"Name.EndsWith(""l"")";
-```
-```VB.NET
-    Me.ExpressionEditor.ExpressionText = "Name.EndsWith(""l"")"
-```
+<snippet id='radexpressioneditor-expressions-text-functions-example_1_creating_the_expression_in_code_behind-cs' />
+
+<snippet id='radexpressioneditor-expressions-text-functions-example_1_creating_the_expression_in_code_behind-vb' />
+
 
 ## See Also
 

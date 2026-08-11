@@ -48,19 +48,7 @@ There are several methods that allow you to change the properties of a shape.
 
 #### [C#] Example 1: Insert and modify shape with text
 
-```C#
-
-    RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
-    editor.InsertShape(ShapeType.Cube, new Size(100, 100));
-
-    ShapeInline shape = this.radRichTextBox.Document.EnumerateChildrenOfType<ShapeInline>().First();
-    editor.AddShapeTextBox(shape);
-    editor.ChangeShapeTextOutlineDash(shape, LineDashType.DashDot);
-    editor.ChangeShapeTextOutlineFill(shape, new ShapeSolidFill(Colors.Chocolate));
-    editor.ChangeShapeTextOutlineWidth(shape, 3);
-    editor.ChangeShapeTextRotation(shape, Telerik.Windows.Documents.DrawingML.Model.TextRotation.Degrees90);
-
-```
+<snippet id='radrichtextbox-features-shapes-shapes-text-block_1-cs' />
 
 # See Also
 

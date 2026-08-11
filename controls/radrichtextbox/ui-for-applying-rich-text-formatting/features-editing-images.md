@@ -53,15 +53,7 @@ To remove the image adorner from your application you can create a new __UILayer
 
 
 
-```C#
-    public class CustomLayersBuilder : UILayersBuilder
-    {
-        protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
-        {
-            uiLayerContainer.UILayers.Remove("AdornerLayer");
-        }
-    }
-```
+<snippet id='radrichtextbox-ui-for-applying-rich-text-formatting-features-editing-images-block_1-cs' />
 
 
 
@@ -70,11 +62,7 @@ Alternatively, you can disable the capabilities of the image adorner by accessin
 
 
 
-```C#
-    this.radRichTextBox.ImageSelectionAdornerSettings.CanDrag = false;
-    this.radRichTextBox.ImageSelectionAdornerSettings.CanResize = false;
-    this.radRichTextBox.ImageSelectionAdornerSettings.CanRotate = false;
-```
+<snippet id='radrichtextbox-ui-for-applying-rich-text-formatting-features-editing-images-block_2-cs' />
 
 
 
@@ -83,17 +71,13 @@ In order to prevent the __ImageMiniToolBar__ from showing you should set the __I
 
 
 
-```XAML
-    <telerik:RadRichTextBox Name="radRichTextBox" IsImageMiniToolBarEnabled="False" />
-```
+<snippet id='radrichtextbox-ui-for-applying-rich-text-formatting-features-editing-images-block_3-xaml' />
 
 
 
 
 
-```C#
-    this.radRichTextBox.IsImageMiniToolBarEnabled = false;
-```
+<snippet id='radrichtextbox-ui-for-applying-rich-text-formatting-features-editing-images-block_4-cs' />
 
 
 
@@ -102,56 +86,7 @@ As for removing the image editing option from the context menu, you can do that 
 
 
 
-```C#
-    public class CustomMenuBuilder : ContextMenuContentBuilder
-    {
-        private RadRichTextBox radRichTextBox;
-
-        public CustomMenuBuilder(RadRichTextBox radRichTextBox)
-            : base(radRichTextBox)
-        {
-            this.radRichTextBox = radRichTextBox;
-        }
-
-        protected override ContextMenuGroup CreateImageCommands()
-        {
-            ContextMenuGroup imageCommands = new ContextMenuGroup(ContextMenuGroupType.ImageCommands);
-            imageCommands.Add(RadMenuItemFactory.CreateMenuItem(LocalizationManager.GetString("Documents_ContextMenu_Image_InsertCaption"), "16/InsertCaption.png", this.radRichTextBox.Commands.ShowInsertCaptionDialogCommand));
-
-            return imageCommands;
-        }
-    }
-
-    internal static class RadMenuItemFactory
-    {
-        private const string BaseImagePath = "/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/";
-
-        public static RadMenuItem CreateMenuItem(string text, string relativePath)
-        {
-            return CreateMenuItem(text, relativePath, null, null);
-        }
-
-        public static RadMenuItem CreateMenuItem(string text, string imageRelativePath, RichTextBoxCommandBase command, object commandParameter = null)
-        {
-            RadMenuItem menuItem = new RadMenuItem();
-            menuItem.Header = text;
-
-            if (imageRelativePath != null)
-            {
-                menuItem.Icon = new System.Windows.Controls.Image() { Source = new BitmapImage(new Uri(BaseImagePath + imageRelativePath, UriKind.Relative)), Stretch = Stretch.None };
-            }
-
-            menuItem.Command = command;
-
-            if (commandParameter != null)
-            {
-                menuItem.CommandParameter = commandParameter;
-            }
-
-            return menuItem;
-        }
-    }
-```
+<snippet id='radrichtextbox-ui-for-applying-rich-text-formatting-features-editing-images-block_5-cs' />
 
 
 
@@ -160,10 +95,7 @@ What is left to do is assign an instance of your class to the __ContentBuilder__
 
 
 
-```C#
-    Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;
-    contextMenu.ContentBuilder = new CustomMenuBuilder(this.radRichTextBox);
-```
+<snippet id='radrichtextbox-ui-for-applying-rich-text-formatting-features-editing-images-block_6-cs' />
 
 
 

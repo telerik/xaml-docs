@@ -18,47 +18,19 @@ We will consider two scenarios - getting the data from the selected row and gett
 
 
 
-```C#
-	private void Button1_Click(object sender, RoutedEventArgs e)
-	{
-	    Club club = this.clubsGrid.SelectedItem as Club;
-	    string message = string.Format("Name: {0} \n Established: {1} \n Capacity: {2}", club.Name,
-	                         club.Established,
-	                         club.StadiumCapacity);
-	    MessageBox.Show(message);
-	}
-```
-```VB.NET
-	Private Sub Button2_Click(sender As Object, e As RoutedEventArgs)
-	    Dim club As Club = TryCast(Me.clubsGrid.SelectedItem, Club)
-	    Dim message As String = String.Format("Name: {0} " & vbLf & " Established: {1} " & vbLf & " Capacity: {2}", club.Name, club.Established, club.StadiumCapacity)
-	    MessageBox.Show(message)
-	End Sub
-```
+<snippet id='radgridview-managing-data-how-to-get-data-from-row-block_1-cs' />
+
+<snippet id='radgridview-managing-data-how-to-get-data-from-row-block_1-vb' />
+
 
 * Getting the data from an __arbitrary GridViewRow__ is almost the same - you just need to cast its __DataContext__ or __Item__ property to your business object:
 
 
 
-```C#
-	void clubsGrid_RowActivated(object sender, Telerik.Windows.Controls.GridView.RowEventArgs e)
-	{
-	    var row = e.Row as GridViewRow;
-	    Club club = row.Item as Club;
-	    string message = string.Format("Name: {0} \n Established: {1} \n Capacity: {2}", club.Name,
-	                         club.Established,
-	                         club.StadiumCapacity);
-	    MessageBox.Show(message);
-	}
-```
-```VB.NET
-	Private Sub clubsGrid_RowActivated(sender As Object, e As Telerik.Windows.Controls.GridView.RowEventArgs)
-	    Dim row = TryCast(e.Row, GridViewRow)
-	    Dim club As Club = TryCast(row.Item, Club)
-	    Dim message As String = String.Format("Name: {0} " & vbLf & " Established: {1} " & vbLf & " Capacity: {2}", club.Name, club.Established, club.StadiumCapacity)
-	    MessageBox.Show(message)
-	End Sub
-```
+<snippet id='radgridview-managing-data-how-to-get-data-from-row-block_2-cs' />
+
+<snippet id='radgridview-managing-data-how-to-get-data-from-row-block_2-vb' />
+
 
 
 

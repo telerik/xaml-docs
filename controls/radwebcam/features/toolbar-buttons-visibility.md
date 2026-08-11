@@ -27,18 +27,14 @@ The following properties are used to control the visibility of the buttons.
 >tip Check the [Visual Structure]({%slug radwebcam-visual-structure%}) article to see the different buttons in the RadWebCam's UI.
 
 __Hiding the toolbar panel__
-```XAML
-	<telerik:RadWebCam ToolbarPanelVisibility="Collapsed" />
-```
+<snippet id='radwebcam-features-toolbar-buttons-visibility-block_1-xaml' />
 
 __Hidden button's toolbar__
 
 ![{{ site.framework_name }} RadWebCam Hidden Button's Toolbar](images/radwebcam-features-toolbar-buttons-visibility-0.png)
 
 __Hiding the recording button__
-```XAML
-	<telerik:RadWebCam RecordingButtonVisibility="Collapsed" />
-```
+<snippet id='radwebcam-features-toolbar-buttons-visibility-block_2-xaml' />
 
 __Hidden recording button__
 

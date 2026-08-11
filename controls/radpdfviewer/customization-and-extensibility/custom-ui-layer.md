@@ -27,63 +27,21 @@ The IUILayer interface provides the following API:
 * `Clear()`&mdash;This method clears the elements from the UI layer. It is called internally by RadPdfViewer when the pages are removed. For example, this may happen during updates in the control which change the currently visible pages. 
 
 __Creating a custom UI layer__
-```C#
-    public class AddTextUILayer : IUILayer
-    {
-    	public Canvas UIElement => throw new NotImplementedException();
-    
-    	public string Name => throw new NotImplementedException();
-    
-    	public void Clear()
-    	{
-    		throw new NotImplementedException();
-    	}
-    
-    	public void Initialize(UILayerInitializeContext context)
-    	{
-    		throw new NotImplementedException();
-    	}
-    
-    	public void Update(UILayerUpdateContext context)
-    	{
-    		throw new NotImplementedException();
-    	}
-    }
-```
+<snippet id='radpdfviewer-customization-and-extensibility-custom-ui-layer-block_1-cs' />
 
 ## Registering the custom UI layer
 
 All of the UI layers of the RadPdfViewer control are managed by the `UILayersBuilder` class. To register the custom UI layers, derive from this class and override the `BuildUILayersOverride` method. The parameter will be of the type of `IUILayerContainer` that provides information about the registered UI layers.
 
 __Registering the custom UI layer__
-```C#
-    public class CustomUILayersBuilder : UILayersBuilder
-    {
-        protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
-        {
-            base.BuildUILayersOverride(uiLayerContainer);
-
-            uiLayerContainer.UILayers.AddAfter(DefaultUILayers.ContentElementsUILayer, new AddTextUILayer());
-        }
-    }
-```
+<snippet id='radpdfviewer-customization-and-extensibility-custom-ui-layer-block_2-cs' />
 
 ## Registering the custom UILayersBuilder
 
 To use the custom UILayersBuilder in the RadPdfViewer control, create a new instance of it, and pass it to the `ExtensibilityManager.RegisterLayersBuilder` static method.
 
 __Registering the custom UILayersBuilder__
-```C#
-    public class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            ExtensibilityManager.RegisterLayersBuilder(new CustomUILayersBuilder());
-
-            InitializeComponent();
-        }
-    }
-```
+<snippet id='radpdfviewer-customization-and-extensibility-custom-ui-layer-block_3-cs' />
 
 >tip To download a runnable project with the example from this article, visit [our SDK repository](https://github.com/telerik/xaml-sdk/). You can find the example in the __PdfViewer/AddDocumentContent__ folder.
 

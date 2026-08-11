@@ -17,72 +17,8 @@ Find a list of all built-in mask tokens that can be used with the __RadMaskedInp
 To create a custom token, you should implement the [ITokenValidationRule](https://www.telerik.com/products/wpf/documentation/api/telerik.windows.controls.maskedinput.tokens.itokenvalidationrule) interface.
 
 __Example 1: Creating custom class which inherits ITokenValidationRule interface__
-```C#
-	using System.Linq;
-	using Telerik.Windows.Controls.MaskedInput.Tokens;
-
-	public class CustomToken : ITokenValidationRule
-	{
-		public bool IsRequired
-		{
-			get { throw new NotImplementedException(); }
-		}
-
-		public bool IsValid(char ch)
-		{
-			throw new NotImplementedException();
-		}
-
-		public char Token
-		{
-			get { throw new NotImplementedException(); }
-		}
-
-		public TokenTypes Type
-		{
-			get { throw new NotImplementedException(); }
-		}
-
-		public string ValidChars
-		{
-			get { throw new NotImplementedException(); }
-		}
-	}
-```
-```VB.NET
-	Public Class CustomToken
-        Implements ITokenValidationRule
-
-        Public ReadOnly Property IsRequired() As Boolean Implements ITokenValidationRule.IsRequired
-            Get
-                Throw New NotImplementedException()
-            End Get
-        End Property
-
-        Public Function IsValid(ByVal ch As Char) As Boolean Implements ITokenValidationRule.IsValid
-
-            Throw New NotImplementedException()
-        End Function
-
-        Public ReadOnly Property Token() As Char Implements ITokenValidationRule.Token
-            Get
-                Throw New NotImplementedException()
-            End Get
-        End Property
-
-        Public ReadOnly Property Type() As TokenTypes Implements ITokenValidationRule.Type
-            Get
-                Throw New NotImplementedException()
-            End Get
-        End Property
-
-        Public ReadOnly Property ValidChars() As String Implements ITokenValidationRule.ValidChars
-            Get
-                Throw New NotImplementedException()
-            End Get
-        End Property
-    End Class
-```	
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_1-cs' />
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_1-vb' />
 
 Then you can start configuring the custom token through the following properties:					
 
@@ -99,149 +35,26 @@ Then you can start configuring the custom token through the following properties
 * __ValidChars__ - this property is of type __string__ and it holds the string of characters that the mask token will represent.						
 
 __Example 2: Create CustomToken class__
-```C#
-	public class CustomToken : ITokenValidationRule
-	{
-		public bool IsRequired
-		{
-			get { return false; }
-		}
-		public bool IsValid(char ch)
-		{
-			throw new NotImplementedException();
-		}
-		public char Token
-		{
-			get { return '$'; }
-		}
-		public TokenTypes Type
-		{
-			get { return TokenTypes.AlphaNumeric; }
-		}
-		private string myValidChars = "0123456789#*";
-		public string ValidChars
-		{
-			get { return myValidChars; }
-		}
-	}
-```
-```VB.NET
-	Public Class CustomToken
-		Implements ITokenValidationRule
-		Public ReadOnly Property IsRequired() As Boolean Implements ITokenValidationRule.IsRequired
-			Get
-				Return False
-			End Get
-		End Property
-		Public Function IsValid(ByVal ch As Char) As Boolean Implements ITokenValidationRule.IsValid
-			Throw New NotImplementedException()
-		End Function
-		Public ReadOnly Property Token() As Char Implements ITokenValidationRule.Token
-			Get
-				Return "$"c
-			End Get
-		End Property
-		Public ReadOnly Property Type() As TokenTypes Implements ITokenValidationRule.Type
-			Get
-				Return TokenTypes.AlphaNumeric
-			End Get
-		End Property
-		Private myValidChars As String = "0123456789#*"
-		Public ReadOnly Property ValidChars() As String Implements ITokenValidationRule.ValidChars
-			Get
-				Return myValidChars
-			End Get
-		End Property
-	End Class
-```	
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_2-cs' />
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_2-vb' />
 When you define the properties that describe the custom token, you need to implement a logic that controls whether the entered character is valid for that custom token. This logic should be placed in the __IsValid()__ method, that should validate the user input to return a bool value.				
 
 __Example 3: Validating the entered character__
-```C#
-	public bool IsValid(char ch)
-	{
-		return ValidChars.Contains(ch);
-	}
-```
-```VB.NET
-	Public Function IsValid(ByVal ch As Char) As Boolean
-		Return ValidChars.Contains(ch)
-	End Function
-```
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_3-cs' />
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_3-vb' />
 
 Finally our custom token will have the following dеfinition: 
 
 __Example 4: Final custom token definition__
-```C#
-	public class CustomToken : ITokenValidationRule
-	{
-		public bool IsRequired
-		{
-			get { return false; }
-		}
-		public bool IsValid(char character)
-		{
-			return ValidChars.Contains(character);
-		}
-		public char Token
-		{
-			get { return '$'; }
-		}
-		public TokenTypes Type
-		{
-			get { return TokenTypes.AlphaNumeric; }
-		}
-		private string myValidChars = "0123456789#*";
-		public string ValidChars
-		{
-			get { return myValidChars; }
-		}
-	}
-```
-```VB.NET
-	Public Class CustomToken
-		Implements ITokenValidationRule
-		Public ReadOnly Property IsRequired() As Boolean Implements ITokenValidationRule.IsRequired
-			Get
-				Return False
-			End Get
-		End Property
-		Public Function IsValid(ByVal ch As Char) As Boolean Implements ITokenValidationRule.IsValid
-			Return ValidChars.Contains(ch)
-		End Function
-		Public ReadOnly Property Token() As Char Implements ITokenValidationRule.Token
-			Get
-				Return "$"c
-			End Get
-		End Property
-		Public ReadOnly Property Type() As TokenTypes Implements ITokenValidationRule.Type
-			Get
-				Return TokenTypes.AlphaNumeric
-			End Get
-		End Property
-		Private myValidChars As String = "0123456789#*"
-		Public ReadOnly Property ValidChars() As String Implements ITokenValidationRule.ValidChars
-			Get
-				Return myValidChars
-			End Get
-		End Property
-	End Class
-```	
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_4-cs' />
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_4-vb' />
 
 To use this custom token in the __MaskedInput__ controls, add it in the __MaskedInput.Tokens__ using the `AddCustomValidationRule` method of the [TokenLocator](https://www.telerik.com/products/wpf/documentation/api/telerik.windows.controls.maskedinput.tokens.tokenlocator) class.
 
 After the custom token is added in the Tokens collection of the __RadMaskedInput__ controls, you can use it in the __RadMaskedTextInput__ control definition:
 
 __Example 5:  Defining RadMaskedTextInput control in XAML__
-```XAML
-	<Grid Background="White">
-	    <telerik:RadMaskedTextInput Width="200" 
-	                                Margin="20 20 20 10"
-	                                HorizontalAlignment="Center"
-	                                VerticalAlignment="Center"
-	                                Mask="$$-$$$$-$$$$" />
-	</Grid>
-```
+<snippet id='radmaskedinput-how-to-howto-create-custom-token-block_5-xaml' />
 
 ![radmaskedinput-howto-create-custom-token](images/radmaskedinput-howto-create-custom-token.png)
 

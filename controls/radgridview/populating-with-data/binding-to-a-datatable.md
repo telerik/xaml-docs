@@ -18,103 +18,17 @@ __Example 1__ demonstrates how you can set up a ViewModel containing a DataTable
 
 __Example 1: Setting up the ViewModel__
 
-```C#
-	public class MyViewModel : ViewModelBase
-    {
-        private DataTable datatable;
-        public DataTable DataTable
-        {
-            get
-            {
-                if (this.datatable == null)
-                {
-                    this.datatable = this.CreateDataTable();
-                }
+<snippet id='radgridview-populating-with-data-binding-to-a-datatable-example_1_setting_up_the_viewmodel-cs' />
 
-                return this.datatable;
-            }
-        }
+<snippet id='radgridview-populating-with-data-binding-to-a-datatable-example_1_setting_up_the_viewmodel-vb' />
 
-        private DataTable CreateDataTable()
-        {
-            var dataTable = new DataTable();
-
-            dataTable.Columns.Add(new System.Data.DataColumn("FirstName", typeof(string)));
-            dataTable.Columns.Add(new System.Data.DataColumn("LastName", typeof(string)));
-            dataTable.Columns.Add(new System.Data.DataColumn("City", typeof(string)));
-
-            for (int i = 1; i <= 50; i++)
-            {
-                var row = dataTable.NewRow();
-                row["FirstName"] = "FirstName " + i;
-                row["LastName"] = "LastName" + i;
-                row["City"] = "City " + i;
-                dataTable.Rows.Add(row);
-            }
-
-            return dataTable;
-        }
-    }
-```
-```VB.NET
-    Public Class MyViewModel
-        Inherits ViewModelBase
-
-            Private _datatable As DataTable
-            Public ReadOnly Property DataTable() As DataTable
-                Get
-                    If Me._datatable Is Nothing Then
-                        Me._datatable = Me.CreateDataTable()
-                    End If
-
-                    Return Me._datatable
-                End Get
-            End Property
-
-            Private Function CreateDataTable() As DataTable
-                Dim _datatable = New DataTable()
-
-                _datatable.Columns.Add(New System.Data.DataColumn("FirstName", GetType(String)))
-                _datatable.Columns.Add(New System.Data.DataColumn("LastName", GetType(String)))
-                _datatable.Columns.Add(New System.Data.DataColumn("City", GetType(String)))
-
-                For i As Integer = 1 To 50
-                    Dim row = _datatable.NewRow()
-                    row("FirstName") = "FirstName " & i
-                    row("LastName") = "LastName" & i
-                    row("City") = "City " & i
-                    _datatable.Rows.Add(row)
-                Next i
-
-                Return _datatable
-            End Function
-    End Class
-
-```
 
 __Example 2__ demonstrates how the RadGridView is set up in XAML. Please, pay attention to the fact that the __ItemsSource__ is bound to the __DefaultView__ property of the DataTable.
 
 __Example 2: Setting up the RadGridView__
 
-```XAML
-	<Grid>
-        <Grid.DataContext>
-            <!-- The namespace "my" refers to the namespace where the MyViewModel class is defined-->
-            <my:MyViewModel />
-        </Grid.DataContext>
-        <telerik:RadGridView ItemsSource="{Binding DataTable.DefaultView}"
-                             AutoGenerateColumns="False"
-                             GroupRenderMode="Flat"
-                             Margin="5">
-            <telerik:RadGridView.Columns>
-                <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}"/>
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}"/>
-				<telerik:GridViewDataColumn DataMemberBinding="{Binding City}" />
-			</telerik:RadGridView.Columns>
-		</telerik:RadGridView>
-		
-	</Grid>
-```
+<snippet id='radgridview-populating-with-data-binding-to-a-datatable-example_2_setting_up_the_radgridview-xaml' />
+
 
 ## See Also
 

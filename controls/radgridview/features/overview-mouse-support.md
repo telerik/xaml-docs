@@ -52,9 +52,8 @@ In the example below you can see how to attach to __MouseWheel__ event from XAML
 
 
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView" MouseWheel="radGridView_MouseWheel" />
-```
+<snippet id='radgridview-features-overview-mouse-support-block_1-xaml' />
+
 
 
 >It is always a good practice to attach your event handlers in the XAML, whenever your application logic allows this.
@@ -63,29 +62,20 @@ The implementation of the event handler __radGridView_MouseWheel__ is located in
 
 
 
-```C#
-	private void radGridView_MouseWheel(object sender, MouseWheelEventArgs e)
-	{
-	    MessageBox.Show("The mouse wheel has changed: " + e.Delta);
-	}
-```
-```VB.NET
-	Private Sub radGridView_MouseWheel(ByVal sender As Object, ByVal e As MouseWheelEventArgs)
-	    MessageBox.Show("The mouse wheel has changed: " & e.Delta)
-	End Sub
-```
+<snippet id='radgridview-features-overview-mouse-support-block_2-cs' />
+
+<snippet id='radgridview-features-overview-mouse-support-block_2-vb' />
+
 
 The RadGridView actually uses and handles many of the mouse events. If you would like to handle them yourself, you should use the AddHandler() method of the GridView and set True for the __HandledEventsToo__ input parameter.
         
 
 
 
-```C#
-	this.radGridView.AddHandler(RadGridView.MouseWheelEvent, new MouseWheelEventHandler(radGridView_MouseWheel), true);
-```
-```VB.NET
-	Me.radGridView.AddHandler(RadGridView.MouseWheelEvent, New MouseWheelEventHandler(AddressOf radGridView_MouseWheel), True)
-```
+<snippet id='radgridview-features-overview-mouse-support-block_3-cs' />
+
+<snippet id='radgridview-features-overview-mouse-support-block_3-vb' />
+
 
 
 ## See Also

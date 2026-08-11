@@ -18,85 +18,17 @@ To achieve this, first create a new class that inherits from the **StyleSelector
 
 __Example 1: The GroupRowStyleSelector class__
 
-```C#
-	public class GroupRowStyleSelector : StyleSelector
-	{
-	    public override Style SelectStyle(object item, DependencyObject container)
-	    {
-	        var group = item as QueryableCollectionViewGroup;
-	        if (group.ItemCount > 1)
-	        {
-	            return BigGroupStyle;
-	        }
-	        else
-	        {
-	            return SmallGroupStyle;
-	        }
-	    }
-	
-	    public Style BigGroupStyle { get; set; }
-	    public Style SmallGroupStyle { get; set; }
-	}
-```
-```VB.NET
-	Public Class GroupRowStyleSelector
-	    Inherits StyleSelector
-	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
-	        Dim group = TryCast(item, CollectionViewGroup)
-	
-	        If group IsNot Nothing Then
-	            If group.ItemCount > 1 Then
-	                Return BigGroupStyle
-	            Else
-	                Return SmallGroupStyle
-	            End If
-	        End If
-	
-	        Return Nothing
-	    End Function
-	
-	    Public Property BigGroupStyle() As Style
-	        Get
-	            Return m_BigGroupStyle
-	        End Get
-	        Set
-	            m_BigGroupStyle = Value
-	        End Set
-	    End Property
-	    Private m_BigGroupStyle As Style
-	
-	    Public Property SmallGroupStyle() As Style
-	        Get
-	            Return m_SmallGroupStyle
-	        End Get
-	        Set
-	            m_SmallGroupStyle = Value
-	        End Set
-	    End Property
-	    Private m_SmallGroupStyle As Style
-	End Class
-```
+<snippet id='radgridview-style-selectors-group-row-style-selector-example_1_the_grouprowstyleselector_class-cs' />
+
+<snippet id='radgridview-style-selectors-group-row-style-selector-example_1_the_grouprowstyleselector_class-vb' />
+
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigGroupStyle** and **SmallGroupStyle**:
 
 __Example 2: Setting the BigGroupStyle and SmallGroupStyle__
 
-```XAML
-	<Window.Resources>
-	    <my:GroupRowStyleSelector x:Key="GroupRowStyleSelector">
-	        <my:GroupRowStyleSelector.BigGroupStyle>
-	            <Style TargetType="telerik:GroupHeaderRow">
-	                <Setter Property="Background" Value="Red" />
-	            </Style>
-	        </my:GroupRowStyleSelector.BigGroupStyle>
-	        <my:GroupRowStyleSelector.SmallGroupStyle>
-	            <Style TargetType="telerik:GroupHeaderRow">
-	                <Setter Property="Background" Value="Yellow" />
-	            </Style>
-	        </my:GroupRowStyleSelector.SmallGroupStyle>
-	    </my:GroupRowStyleSelector>
-	</Window.Resources>
-```
+<snippet id='radgridview-style-selectors-group-row-style-selector-example_2_setting_the_biggroupstyle_and_smallgroupstyle-xaml' />
+
 
 >If you're using **GroupRenderMode="Nested"** the style should target the **GridViewGroupRow** element.
 
@@ -106,9 +38,8 @@ Finally, set the **GroupRowStyleSelector** property:
 
 __Example 3: Setting the GroupRowStyleSelector property__
 
-```XAML
-	<telerik:RadGridView GroupRowStyleSelector="{StaticResource GroupRowStyleSelector}" />
-```
+<snippet id='radgridview-style-selectors-group-row-style-selector-example_3_setting_the_grouprowstyleselector_property-xaml' />
+
 
 And here is the final result:
 

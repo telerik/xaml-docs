@@ -21,86 +21,14 @@ In the code below you can see how to save and load a RadDiagram using Commands. 
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the [Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind) article, you can find more information on how to set an application-wide theme.
 
 __RadDiagram Xaml__
-```XAML
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="*" />
-		</Grid.RowDefinitions>
-		<StackPanel Orientation="Horizontal">
-			<telerik:RadButton Width="125" 
-							   Command="telerik:DiagramCommands.Save"
-							   CommandTarget="{Binding ElementName=diagram}"
-							   Content="Save" />
-			<telerik:RadButton Width="125" 
-							   Command="telerik:DiagramCommands.Clear"
-							   CommandTarget="{Binding ElementName=diagram}"
-							   Content="Clear" />
-			<telerik:RadButton Width="125" 
-							   Command="telerik:DiagramCommands.Open"
-							   CommandTarget="{Binding ElementName=diagram}"
-							   Content="Load" />
-		</StackPanel>
-		<telerik:RadDiagram x:Name="diagram" Grid.Row="1">
-			<telerik:RadDiagramShape  />
-			<telerik:RadDiagram.CommandBindings>
-				<CommandBinding Command="telerik:DiagramCommands.Save" Executed="CommandBinding_Executed_Save" CanExecute="CommandBinding_CanExecute"/>
-				<CommandBinding Command="telerik:DiagramCommands.Open" Executed="CommandBinding_Executed_Open" />
-			</telerik:RadDiagram.CommandBindings>
-		</telerik:RadDiagram>
-	</StackPanel>
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-raddiagram_xaml-xaml' />
+
 
 __Save-Load logic__
-```C#
-	private string diagramXMLString;       
-	
-	public MainWindow()
-	{
-		StyleManager.ApplicationTheme = new Windows8Theme();
-		InitializeComponent();          
-	}
-	
-	private void CommandBinding_Executed_Save(object sender, ExecutedRoutedEventArgs e)
-	{
-	   diagramXMLString =  this.diagram.Save();
-	}
-	
-	private void CommandBinding_Executed_Open(object sender, ExecutedRoutedEventArgs e)
-	{
-		if (diagramXMLString != null)
-		{
-			this.diagram.Load(diagramXMLString);
-		}
-	}
-	
-	private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
-	{
-		e.CanExecute = this.diagram.Items.Count > 0;
-	}
-```
-```VB.NET
-	Private diagramXMLString As String
-	
-	Public MainWindow()
-		StyleManager.ApplicationTheme = New Windows8Theme()
-		InitializeComponent()
-	End Sub
-	
-	Private Sub CommandBinding_Executed_Save(ByVal sender As Object, ByVal e As ExecutedRoutedEventArgs)
-		diagramXMLString = Me.diagram.Save()
-	End Sub
-	
-	Private Sub CommandBinding_Executed_Open(ByVal sender As Object, ByVal e As ExecutedRoutedEventArgs)
-		If diagramXMLString IsNot Nothing Then
-			Me.diagram.Load(diagramXMLString)
-		End If
-	End Sub
-	
-	Private Sub CommandBinding_CanExecute(ByVal sender As Object, ByVal e As CanExecuteRoutedEventArgs)
-		e.CanExecute = Me.diagram.Items.Count > 0
-	End Sub
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-save_load_logic-cs' />
+
+<snippet id='raddiagram-features-raddiagrams-serialization-save_load_logic-vb' />
+
 
 __RadDiagram Serialization__
 
@@ -113,25 +41,8 @@ __RadDiagram Serialization__
 When zooming with a mouse or panning the RadDiagram, the ViewPort position will be changed. The viewPort is not saved/load during the serialization mechanism, thus you will have to manually restore it. The BringIntoView(position, zoom level) method can be used for this purpose. The following example demonstrates how you can preserve and restore the ViewPort position.
 
 __Save-Load Diagram ViewPort__
-```C#
-	private double savedZoomFactor;
-	Point savedDiagramPosition;
-	private void CommandBinding_Executed_Save(object sender, ExecutedRoutedEventArgs e) 
-	{ 
-		savedZoomFactor = this.diagram.Zoom;
-		savedDiagramPosition = this.diagram.Viewport.TopLeft;
-		diagramXMLString =  this.diagram.Save(); 
-	} 
-	 
-	private void CommandBinding_Executed_Open(object sender, ExecutedRoutedEventArgs e) 
-	{ 
-		if (diagramXMLString != null) 
-		{ 
-			this.diagram.Load(diagramXMLString);
-			this.diagram.BringIntoView(savedDiagramPosition, savedZoomFactor);			
-		} 
-	}
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-save_load_diagram_viewport-cs' />
+
 
 ## Extending RadDiagram Serialization
 
@@ -252,30 +163,10 @@ For every other property that you need to be part of the Serialization/Deseriali
 >If you are using MVVM approach and need to serialize databound properties you can take a look at our [Serialize a Databound Diagram]({%slug raddiagrams-howto-serialize-databound-diagram%}) article.
 
 __Handling the ShapeSerialized and ShapeDeserialized events__
-```C#
-	void diagram_ShapeDeserialized(object sender, ShapeSerializationRoutedEventArgs e)
-	{
-		 // load the saved property
-		 (e.Shape as RadDiagramShape).Opacity = Convert.ToDouble(e.SerializationInfo["Opacity"], CultureInfo.InvariantCulture);
-	}
+<snippet id='raddiagram-features-raddiagrams-serialization-handling_the_shapeserialized_and_shapedeserialized_events-cs' />
 
-	void diagram_ShapeSerialized(object sender, ShapeSerializationRoutedEventArgs e)
-	{
-		 // save custom or other property
-		 e.SerializationInfo["Opacity"] = (e.Shape as RadDiagramShape).Opacity.ToInvariant();
-	}		  
-```
-```VB.NET  
-	Private Sub diagram_ShapeDeserialized(ByVal sender As Object, ByVal e As ShapeSerializationRoutedEventArgs)
-		 ' load the saved property'
-		 TryCast(e.Shape, RadDiagramShape).Opacity = Convert.ToDouble(e.SerializationInfo("Opacity"), CultureInfo.InvariantCulture)
-	End Sub
+<snippet id='raddiagram-features-raddiagrams-serialization-handling_the_shapeserialized_and_shapedeserialized_events-vb' />
 
-	Private Sub diagram_ShapeSerialized(ByVal sender As Object, ByVal e As ShapeSerializationRoutedEventArgs)
-		 ' save custom or other property'
-		 e.SerializationInfo("Opacity") = (TryCast(e.Shape, RadDiagramShape)).Opacity.ToInvariant()
-	End Sub	
-```
 
 >Please note that the `Double.ToInvariant()` extension method is defined in the __Telerik.Windows.Diagrams.Core__ namespace and in order to use it in your application, you'll have to add a using statement: using Telerik.Windows.Diagrams.Core;
 
@@ -286,36 +177,18 @@ __Handling the ShapeSerialized and ShapeDeserialized events__
 To include additional information in the generated XML when the RadDiagram control is being serialized, you can handle its `MetadataSerialized` event.
 
 __Handling the MetadataSerialized event__
-```C#
-	private void OnMetadataSerialized(object sender, DiagramSerializationRoutedEventArgs e)
-	{
-	    RadDiagram diagram = (RadDiagram)sender; 
-	    e.SerializationInfo["Opacity"] = diagram.Opacity.ToInvariant();
-	}
-```
-```VB.NET
-    Private Sub OnMetadataSerialized(ByVal sender As Object, ByVal e As DiagramSerializationRoutedEventArgs)
-        Dim diagram As RadDiagram = CType(sender, RadDiagram)
-        e.SerializationInfo("Opacity") = diagram.Opacity.ToInvariant()
-    End Sub
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-handling_the_metadataserialized_event-cs' />
+
+<snippet id='raddiagram-features-raddiagrams-serialization-handling_the_metadataserialized_event-vb' />
+
 
 To load the serialized property of the RadDiagram control, handle its `MetadataDeserialized` event. 
 
 __Handling the MetadataDeserialized event__
-```C#
-	private void OnMetadataDeserialized(object sender, Telerik.Windows.Controls.Diagrams.DiagramSerializationRoutedEventArgs e)
-    {
-    	RadDiagram diagram = (RadDiagram)sender;
-    	diagram.Opacity = Convert.ToDouble(e.SerializationInfo["Opacity"], CultureInfo.InvariantCulture);
-    }
-```
-```VB.NET
-    Private Sub OnMetadataDeserialized(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Diagrams.DiagramSerializationRoutedEventArgs)
-        Dim diagram As RadDiagram = CType(sender, RadDiagram)
-        diagram.Opacity = Convert.ToDouble(e.SerializationInfo("Opacity"), CultureInfo.InvariantCulture)
-    End Sub
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-handling_the_metadatadeserialized_event-cs' />
+
+<snippet id='raddiagram-features-raddiagrams-serialization-handling_the_metadatadeserialized_event-vb' />
+
 
 ## Preserve Bindings to the Automatically Serialized Properties of the RadDiagram's Items
 
@@ -327,88 +200,35 @@ For example, if you have a binding to the Position property you can use the foll
 
 * Override the `SerializeNode()` method of the diagram’s `GraphSource` and set the value of the bound property to __null__ in the `SerializationInfo`. Then add the value with a new key in the serialization info. 
 	__SerializeNode override__
-	```C#
-		public override void SerializeNode(NodeViewModelBase node, SerializationInfo info)
-		{
-			   var position = info["Position"];
-			   info["Position"] = null;
-			   info["MyPosition"] = position;
-			   base.SerializeNode(node, info);
-		}	
-	```
-	```VB.NET
-		public Overrides Sub SerializeNode(node As NodeViewModelBase, info As SerializationInfo)
-			Dim position = info("Position")
-			info("Position") = Nothing
-			info("MyPosition") = position
-			MyBase.SerializeNode(node, info)
-		End Sub
-	```
+	<snippet id='raddiagram-features-raddiagrams-serialization-serializenode_override-cs' />
+
+	<snippet id='raddiagram-features-raddiagrams-serialization-serializenode_override-vb' />
+
 	
 * Override the `DeserializeNode()` method of the diagram’s `GraphSource` and get the value of the bound property. Then assign it to the property of the view model.
 	__DeserializeNode override__
-	```C#
-		public override NodeViewModelBase DeserializeNode(IShape shape, Telerik.Windows.Diagrams.Core.SerializationInfo info)
-		{
-			var node = base.DeserializeNode(shape, info);
-			if (info["MyPosition"] != null)
-			{
-				 var position = Utils.ToPoint(info["MyPosition"].ToString());
-			 node.Position = position.Value;
-			}
-			return node;
-		}
-	```
-	```VB.NET
-		Public Overrides Function DeserializeNode(shape As IShape, info As Telerik.Windows.Diagrams.Core.SerializationInfo) As NodeViewModelBase
-			Dim node = MyBase.DeserializeNode(shape, info)
-			If info("MyPosition") IsNot Nothing Then
-				Dim position = Utils.ToPoint(info("MyPosition").ToString())
-				node.Position = position.Value
-			End If
-			Return node
-		End Function
-	```
+	<snippet id='raddiagram-features-raddiagrams-serialization-deserializenode_override-cs' />
+
+	<snippet id='raddiagram-features-raddiagrams-serialization-deserializenode_override-vb' />
+
 		
 > The code snippets above demonstrate how to preserve the bindings in an __MVVM__ scenario with a custom GraphSource. If you have statically declared shapes you can use the `ShapeSerialized` and `ShapeDeserialized` events of the diagram.
 
 >important If you are using the [RadDiagramToolbox]({%slug raddiagram-extensions-toolbox%}) in order to drag and drop shapes and you have bindings declared in a style, make sure that the style is added in the Application's Resources as in the above example. 
 
 __Style containing Position binding in Application's Resources__
-```XAML
-	<Application.Resources>
-        <Style TargetType="telerik:RadDiagramShape">
-            <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
-        </Style>
-    </Application.Resources>
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-style_containing_position_binding_in_application_s_resources-xaml' />
+
 
 ## Preserve Bindings of the Automatically Serialized Properties of the RadDiagram's Metadata
 
 To preserve the bindings of the automatically serialized properties of RadDiagram's metadata, you can derive from it and override the `Deserialize` method. Through the __info__ parameter, you can retrieve the property that is used in a data-binding scenario and set its value to __null__. This will avoid the local setting of a value for it in the base implementation of the `Deserialize` method.
 
 __Extending the RadDiagram control and overriding the Deserialize method__
-```C#
-    public class CustomDiagram : RadDiagram
-    {
-        public override void Deserialize(SerializationInfo info)
-        {
-            info[SerializationConstants.BackgroundGridLineStroke] = null;
+<snippet id='raddiagram-features-raddiagrams-serialization-extending_the_raddiagram_control_and_overriding_the_deserialize_method-cs' />
 
-            base.Deserialize(info);
-        }
-    }
-```
-```VB.NET
-    Public Class CustomDiagram
-        Inherits RadDiagram
+<snippet id='raddiagram-features-raddiagrams-serialization-extending_the_raddiagram_control_and_overriding_the_deserialize_method-vb' />
 
-        Public Overrides Sub Deserialize(ByVal info As SerializationInfo)
-            info(SerializationConstants.BackgroundGridLineStroke) = Nothing
-            MyBase.Deserialize(info)
-        End Sub
-    End Class
-```
 
 ## Allowing Safe Types and Assemblies
 
@@ -427,32 +247,26 @@ The default registered types are the following ones:
 The following example shows how to register your custom element's Type:
 
 __Registering the Type of а custom RadDiagramShape__
-```C#
-	DiagramConstants.AllowedSerializationTypes.Add(typeof(MyCustomShape));
-```
-```VB.NET
-	DiagramConstants.AllowedSerializationTypes.Add(GetType(MyCustomShape))
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-registering_the_type_of_custom_raddiagramshape-cs' />
+
+<snippet id='raddiagram-features-raddiagrams-serialization-registering_the_type_of_custom_raddiagramshape-vb' />
+
 
 If the custom elements are defined in a separate assembly, the RadDiagram control provides the option to register it. This is done via the `SafeSerializationAssemblies` collection of the `DiagramContants` class. This collection is of the type of Dictionary&lt;string, string&gt; where the key is the name of the registered assembly and value is the `PublicKeyToken`. Setting a public key token is optional.
 
 __Registring an assembly that contains the custom elements types without public key token__
-```C#
-	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", string.Empty);
-```
-```VB.NET
-	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", String.Empty)
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-registring_an_assembly_that_contains_the_custom_elements_types_without_public_key_token-cs' />
+
+<snippet id='raddiagram-features-raddiagrams-serialization-registring_an_assembly_that_contains_the_custom_elements_types_without_public_key_token-vb' />
+
 
 If your assembly has a set public key token, you can add as a parameter to the `Add` method as shown in the below example:
 
 __Registring an assembly that contains the custom elements types with public key token__
-```C#
-	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", "customdiagramelements-public-key-token-here");
-```
-```VB.NET
-	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", "customdiagramelements-public-key-token-here")
-```
+<snippet id='raddiagram-features-raddiagrams-serialization-registring_an_assembly_that_contains_the_custom_elements_types_with_public_key_token-cs' />
+
+<snippet id='raddiagram-features-raddiagrams-serialization-registring_an_assembly_that_contains_the_custom_elements_types_with_public_key_token-vb' />
+
 
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

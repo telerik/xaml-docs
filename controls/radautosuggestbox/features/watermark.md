@@ -15,9 +15,7 @@ The watermark of RadAutoSuggestBox is the content shown in the TextBox when no t
 The default watermark is empty. To change this, set the __WatermarkContent__ property of RadAutoSuggestBox.
 
 __Example 1: Set watermark content__
-```XAML
-	<telerik:RadAutoSuggestBox WatermarkContent="Type here" />
-```
+<snippet id='radautosuggestbox-features-watermark-example_1_set_watermark_content-xaml' />
 
 #### Figure 1: Watermark content
 ![{{ site.framework_name }} RadAutoSuggestBox Watermark content](images/radautosuggestbox-features-watermark-0.png)
@@ -37,15 +35,7 @@ The default behavior of the watermark is to get displayed only when no text is e
 The default UI of the watermark is a simple content presenter that shows the value of the __WatermarkContent__ property. You can change this via the __WatermarkTemplate__ property of RadAutoSuggestBox.
 
 __Example 2: Set watermark content template__
-```XAML	 
-	<telerik:RadAutoSuggestBox WatermarkContent="Type here">                       
-		<telerik:RadAutoSuggestBox.WatermarkTemplate>
-			<DataTemplate>
-				<TextBlock Text="{Binding}" Foreground="#DAB170" FontStyle="Normal" />
-			</DataTemplate>
-		</telerik:RadAutoSuggestBox.WatermarkTemplate>
-	</telerik:RadAutoSuggestBox>
-```
+<snippet id='radautosuggestbox-features-watermark-example_2_set_watermark_content_template-xaml' />
 
 #### Figure 2: Watermark content template
 ![{{ site.framework_name }} RadAutoSuggestBox Watermark content template](images/radautosuggestbox-features-watermark-1.png)

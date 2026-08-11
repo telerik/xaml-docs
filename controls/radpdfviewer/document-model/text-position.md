@@ -16,12 +16,7 @@ __TextPosition__ is a position in the text of a __RadFixedDocument__. They enabl
 
 One can create a __TextPostion__ for a particular document, page and index using one of the constructors:
 
-```C#
-	public TextPosition(RadFixedDocument document) 
-	public TextPosition(RadFixedPage page)
-	public TextPosition(RadFixedPage page, int index) 
-	public TextPosition(TextPosition position)
-```
+<snippet id='radpdfviewer-document-model-text-position-block_1-cs' />
 
 The constructors that accept a __RadFixedPage__ as parameter create a TextPosition for the particular page.
 
@@ -42,21 +37,7 @@ The members that the __TextPosition__ class exposes are:
     * __TextPosition__ overrides the equality operator, so that you can compare positions in the document depending on their position using <, > and =.
     * The other methods of the class provide the means for navigation in the document and have self-explanatory names and arguments:
 
-	```C#
-		public bool MoveToNextPosition()
-		public bool MoveToPreviousPosition()
-		public bool MoveToPosition(TextPosition position)
-		public bool MoveToNextWord()
-		public bool MoveToPreviousWord()
-		public bool MoveToCurrentWordStart()
-		public bool MoveToCurrentWordEnd()
-		public bool MoveToLineStart()
-		public bool MoveToLineEnd()
-		public bool MoveLineUp()
-		public bool MoveLineDown()
-		public bool MoveToStartOfDocument()
-		public bool MoveToEndOfDocument()
-	```
+	<snippet id='radpdfviewer-document-model-text-position-block_2-cs' />
 
 * Events:
     * __PositionChanging__ - occurs just before the position is moved;
@@ -64,9 +45,7 @@ The members that the __TextPosition__ class exposes are:
 
 The caret position of __RadFixedDocument__ is also a __TextPosition__ and all methods and properties listed above could be used with it as well. 
 
-```C#
-	this.pdfViewer.Document.CaretPosition.MoveToEndOfDocument();
-```
+<snippet id='radpdfviewer-document-model-text-position-block_3-cs' />
 
 This will not only move the caret to the end of the document, but will also [scroll]({%slug radpdfviewer-scrolling%}) the document to bring it into view, as the view port follows the caret.
 

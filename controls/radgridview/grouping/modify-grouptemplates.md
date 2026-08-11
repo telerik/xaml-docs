@@ -21,43 +21,20 @@ This article explains how you can modify the default header and footer templates
 The following examples demonstrates how to set the `GroupHeaderTemplate` for a `GridViewDataColumn`.
 
 __Setting the GridViewDataColumn GroupHeaderTemplate__
-```XAML
-	<telerik:GridViewDataColumn.GroupHeaderTemplate>
-	    <DataTemplate>
-	        <StackPanel>
-	            <TextBlock Foreground="#FFED7971" Text="Test Key" />
-	            <TextBlock Foreground="#FFED7971" Text="{Binding Column.Header}" />
-	            <TextBlock Foreground="#FFED7971" Text="{Binding Group.Key}" />
-	        </StackPanel>
-	    </DataTemplate>
-	</telerik:GridViewDataColumn.GroupHeaderTemplate>
-```
+<snippet id='radgridview-grouping-modify-grouptemplates-setting_the_gridviewdatacolumn_groupheadertemplate-xaml' />
+
 
 You could do the same for all the columns by defining a `GroupHeaderTemplate` for the `RadGridView`.
 
 __Setting the RadGridView GroupHeaderTemplate__
-```XAML
-	<telerik:RadGridView.GroupHeaderTemplate>
-	    <DataTemplate>
-	        <StackPanel>
-	            <TextBlock Foreground="#FFED7971" Text="Test Key" />
-	     	    <TextBlock Foreground="#FFED7971" Text="{Binding Column.Header}" />
-	            <TextBlock Foreground="#FFED7971" Text="{Binding Group.Key}" />
-	        </StackPanel>
-	    </DataTemplate>
-	</telerik:RadGridView.GroupHeaderTemplate>
-```
+<snippet id='radgridview-grouping-modify-grouptemplates-setting_the_radgridview_groupheadertemplate-xaml' />
+
 
 If you have any AggregateFunctions defined and you do not want the default aggregate reasults to show after predefining the GroupHeaderTemplate, you can hide them as demonstrated below.
 
 __Hiding the aggregates in the group row__
-```XAML
-	<!--If you are using the NoXaml binaries, you should based the style on the default one like so-->
-	<!-- <Style TargetType="telerik:GroupHeaderRow" BasedOn="{StaticResource GroupHeaderRowStyle}">-->
-	<Style TargetType="telerik:GroupHeaderRow">
-		<Setter Property="ShowHeaderAggregates" Value="False" />
-	</Style>
-```
+<snippet id='radgridview-grouping-modify-grouptemplates-hiding_the_aggregates_in_the_group_row-xaml' />
+
 
 >The `GroupHeaderRow` element is the default grouping visual element when the `GroupRenderMode` of the `RadGridView` is set to __Flat__. You can learn more about this in the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
 
@@ -66,23 +43,8 @@ __Hiding the aggregates in the group row__
 You can override the visual representation of the group footers by setting the `GroupFooterTemplate` of the GridViewDataColumn.
 
 __Setting the GridViewDataColumn GroupFooterTemplate__
-```XAML
-    <telerik:GridViewDataColumn.GroupFooterTemplate>
-       <DataTemplate>
-          <telerik:AggregateResultsList ItemsSource="{Binding}">
-              <ItemsControl.ItemTemplate>
-                  <DataTemplate>
-                      <StackPanel Orientation="Horizontal"
-              VerticalAlignment="Center" >
-                          <TextBlock VerticalAlignment="Center" Text="{Binding Caption}" />
-                          <TextBlock VerticalAlignment="Center" Text="{Binding FormattedValue, StringFormat=' {0:hh\\:mm}'}" />
-                      </StackPanel>
-                  </DataTemplate>
-              </ItemsControl.ItemTemplate>
-          </telerik:AggregateResultsList>
-      </DataTemplate>
-    </telerik:GridViewDataColumn.GroupFooterTemplate>
-```
+<snippet id='radgridview-grouping-modify-grouptemplates-setting_the_gridviewdatacolumn_groupfootertemplate-xaml' />
+
 
 >tip You can check the implementation of {% if site.site_name == 'Silverlight' %}the [Totals demo](https://demos.telerik.com/silverlight/#GridView/Totals){% endif %}{% if site.site_name == 'WPF' %}__Totals__ RadGridView example from the [WPF Demos](https://demos.telerik.com/wpf/){% endif %}. 
 
@@ -91,8 +53,7 @@ __Setting the GridViewDataColumn GroupFooterTemplate__
 RadGridView exposes the `GroupHeaderRowMinHeight` property that allows you to specify the minimum height for the `GroupHeaderRow` element. This property will be taken into account only when the `GroupRenderMode` property of RadGridView is set to __Flat__.
 
 __Setting the GroupHeaderRowMinHeight property__
-```XAML
-	<telerik:RadGridView GroupHeaderRowMinHeight="20"/>
-```
+<snippet id='radgridview-grouping-modify-grouptemplates-setting_the_groupheaderrowminheight_property-xaml' />
+
 
 >If you want to style the GroupHeaderRow further, you can check out [this article]({%slug gridview-styling-group-row%}).

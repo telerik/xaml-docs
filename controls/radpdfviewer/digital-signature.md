@@ -61,19 +61,14 @@ To use the **SignSignatureDialog** you should first register it. You can do this
 
 #### **[C#] Example 1: Registering SignSignatureDialog using ExtensibilityManager**
 
-```C#
-	ExtensibilityManager.RegisterSignSignatureDialog(new SignSignatureDialog());
-```
+<snippet id='radpdfviewer-digital-signature-block_1-cs' />
 
 If you prefer adding the dialog through XAML, you can use the **RegisterSignSignatureDialog** property of the **RadPdfViewerAttachedComponents** class.
 
 
 #### **[XAML] Example 2: Registering SignSignatureDialog through XAML**
  
-```XAML
-
-	<telerik:RadPdfViewer telerik:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" />
-```
+<snippet id='radpdfviewer-digital-signature-block_2-xaml' />
 
 
 #### **Figure 1: Signing a document in RadPdfViewer**
@@ -98,12 +93,7 @@ To enable this panel, you should add it to the XAML as demonstrated in **Example
 
 #### **[XAML] Example 3: Declaring SignaturePanel and wiring it with RadPdfViewer**
 
-```XAML
-
-        <telerik:SignaturePanel Grid.Row="1" x:Name="signaturePanel" PdfViewer="{Binding ElementName=pdfViewer, Mode=OneWay}" Height="0"/>
-        
-        <telerik:RadPdfViewer Grid.Row="2" x:Name="pdfViewer"  DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}" />
-```
+<snippet id='radpdfviewer-digital-signature-block_3-xaml' />
 
 
 ### Using SignaturePropertiesDialog
@@ -114,32 +104,21 @@ To use this dialog, you should register it first. This can be done through the *
 
 #### **[C#] Example 4: Registering SignaturePropertiesDialog**
 
-```C#
-
-	ExtensibilityManager.RegisterSignaturePropertiesDialog(new SignaturePropertiesDialog());
-```
+<snippet id='radpdfviewer-digital-signature-block_4-cs' />
 
 
 If you prefer adding the dialog through XAML, you can use the **RegisterSignaturePropertiesDialog** property of the RadPdfViewerAttachedComponents class.
 
 #### **[XAML] Example 5: Registering SignaturePropertiesDialog through XAML**
 
-```XAML
-
-	<telerik:RadPdfViewer telerik:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" />
-```
+<snippet id='radpdfviewer-digital-signature-block_5-xaml' />
 
 
 When registered, SignaturePropertiesDialog can be shown by clicking on the SignatureField that holds the particular signature or by invoking the ShowSignaturePropertiesDialogCommand. **Example 4** shows how you can access this command, instantiate a context for it, which points to the first signature field in the document, and invoke it.
 
 #### **[C#] Example 6: Showing SignaturePropertiesDialog from code-behind**
 
-```C#
-
-	ShowSignaturePropertiesDialogCommandContext context = new ShowSignaturePropertiesDialogCommandContext();
-	context.SignatureField = this.pdfViewer.Document.AcroForm.FormFields.Where(sf => sf.FieldType == FormFieldType.Signature).First() as SignatureField;
-	this.pdfViewer.CommandDescriptors.ShowSignaturePropertiesDialogCommandDescriptor.Command.Execute(context);
-```
+<snippet id='radpdfviewer-digital-signature-block_6-cs' />
 
 **Figure 3** shows how it looks like the **SignaturePropertiesDialog** when visualizing a signature whose validation result is Unknown.
 
@@ -166,43 +145,7 @@ The **Signature** class exposes two methods allowing you to validate a signature
 #### **[C#] Example 7: Validate a field**
 
 
-```C#
-	
-	string validationStatus;
-	
-	// For simplicity, the example handles only the first signature.
-	SignatureField firstSignatureField = this.pdfViewer.Document.AcroForm.FormFields.FirstOrDefault(field => field.FieldType == FormFieldType.Signature) as SignatureField;
-	if (firstSignatureField != null && firstSignatureField.Signature != null)
-	{
-	    SignatureValidationResult validationResult;
-	    if (firstSignatureField.Signature.TryValidate(out validationResult))
-	    {
-	        if (!validationResult.IsDocumentModified)
-	        {
-	            if (validationResult.IsCertificateValid)
-	            {
-	                validationStatus = "Valid";
-	            }
-	            else
-	            {
-	                validationStatus = "Unknown";
-	            }
-	        }
-	        else
-	        {
-	            validationStatus = "Invalid";
-	        }
-	    }
-	    else
-	    {
-	        validationStatus = "Invalid";
-	    }
-	}
-	else
-	{
-	    validationStatus = "None";
-	}
-```
+<snippet id='radpdfviewer-digital-signature-block_7-cs' />
 
 
 ## Limitations

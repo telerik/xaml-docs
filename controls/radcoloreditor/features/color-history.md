@@ -17,27 +17,8 @@ The __RadColorEditor__ control enables you to keep track of the previously selec
 * __ColorHistory__: This property exposes a collection of all previously selected colors.						
 
 	
-	```XAML
-		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-			<StackPanel.Resources>
-				<telerik:ColorToBrushConverter x:Key="ColorConverter" />
-			</StackPanel.Resources>
-			<telerik:RadColorEditor x:Name="colorEditor1" Width="400" Height="220" HistoryCapacity="5" />
-			<ItemsControl ItemsSource="{Binding ColorHistory, ElementName=colorEditor1}" Height="20" Margin="8 0">
-				<ItemsControl.ItemTemplate>
-					<DataTemplate>
-						<Border Width="20" Height="20" Margin="5 0"
-								Background="{Binding Converter={StaticResource ColorConverter} }" />
-					</DataTemplate>
-				</ItemsControl.ItemTemplate>
-				<ItemsControl.ItemsPanel>
-					<ItemsPanelTemplate>
-						<telerik:RadWrapPanel />
-					</ItemsPanelTemplate>
-				</ItemsControl.ItemsPanel>
-			</ItemsControl>
-		</StackPanel>
-	```					
+	<snippet id='radcoloreditor-features-color-history-block_1-xaml' />
+
 
 * __HistoryCapacity__: This property is of type __int__. It gets/set the number of previously used colors to be stored in the __ColorHistory__ collection.					
 

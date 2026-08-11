@@ -26,19 +26,8 @@ This could be done in __XAML__ by applying a Style targeting the RadComboBox ele
 
 __Example 1: Setting the OpenDropDownOnFocus through the EditorStyle property__
 
-```XAML
-	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding ClubID}"
-					SelectedValueMemberPath="ID"
-					EditTriggers="CellClick"
-					DisplayMemberPath="Name"
-					ItemsSource="{Binding Clubs}">
-	    <telerik:GridViewComboBoxColumn.EditorStyle>
-		<Style TargetType="telerik:RadComboBox">
-		    <Setter Property="OpenDropDownOnFocus" Value="True"/>
-		</Style>
-	    </telerik:GridViewComboBoxColumn.EditorStyle>
-	</telerik:GridViewComboBoxColumn>
-```
+<snippet id='radgridview-columns-how-to-combobox-column-clicks-example_1_setting_the_opendropdownonfocus_through_the_editorstyle_property-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base your style on the __RadComboBoxStyle__.
 
@@ -46,24 +35,10 @@ You can also achieve this in code-behind by handling the [PreparingCellForEdit](
 
 __Example 2: Handling the PreparingCellForEdit event__
 
-```C#
-	private void GridView_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
-	{
-		var comboBox = e.EditingElement as RadComboBox;
-		if (comboBox != null)
-		{
-			comboBox.OpenDropDownOnFocus = true;
-		}
-	}
-```
-```VB.NET
-	Private Sub GridView_PreparingCellForEdit(ByVal sender As Object, ByVal e As GridViewPreparingCellForEditEventArgs)
-		Dim comboBox = TryCast(e.EditingElement, RadComboBox)
-		If comboBox IsNot Nothing Then
-			comboBox.OpenDropDownOnFocus = True
-		End If
-	End Sub
-```
+<snippet id='radgridview-columns-how-to-combobox-column-clicks-example_2_handling_the_preparingcellforedit_event-cs' />
+
+<snippet id='radgridview-columns-how-to-combobox-column-clicks-example_2_handling_the_preparingcellforedit_event-vb' />
+
 
 ## Single-click Selection
 
@@ -71,34 +46,10 @@ In addition, you can have the cell leave edit mode when a selection in the dropd
 
 __Example 3: Handling the PreparedCellForEdit event__
 
-```C#
-	private void GridView_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
-	{
-		var comboBox = e.EditingElement as RadComboBox;
-		if (comboBox != null)
-		{
-			comboBox.SelectionChanged += (s, a) =>
-			{
-				if (a.AddedItems.Count > 0)
-				{
-					(a.OriginalSource as RadComboBox).ParentOfType<GridViewCell>().CommitEdit();
-				}
-			};
-		}
-	}
-```
-```VB.NET
-	Private Sub GridView_PreparedCellForEdit(ByVal sender As Object, ByVal e As GridViewPreparingCellForEditEventArgs)
-		Dim comboBox = TryCast(e.EditingElement, RadComboBox)
-		If comboBox IsNot Nothing Then
-			AddHandler comboBox.SelectionChanged, Sub(s, a)
-				If a.AddedItems.Count > 0 Then
-					TryCast(a.OriginalSource, RadComboBox).ParentOfType(Of GridViewCell)().CommitEdit()
-				End If
-			End Sub
-		End If
-	End Sub
-```
+<snippet id='radgridview-columns-how-to-combobox-column-clicks-example_3_handling_the_preparedcellforedit_event-cs' />
+
+<snippet id='radgridview-columns-how-to-combobox-column-clicks-example_3_handling_the_preparedcellforedit_event-vb' />
+
 
 ## See Also
 

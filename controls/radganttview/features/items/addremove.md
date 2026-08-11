@@ -18,39 +18,15 @@ In order to add new item to __RadGanttView__, first you have to create an instan
 
 
 
-```C#
-	var summaryTask = new GanttTask()
-	{
-	 Start = new DateTime(2012,2,13),
-	 End = new DateTime(2012,2,20),
-	 Title = "Iteration 3",
-	 Progress = 45
-	};
-	
-	Tasks.Add(summaryTask);
-```
+<snippet id='radganttview-features-items-addremove-block_1-cs' />
+
 
 In case you need to add a child to a __summary task__, you should add it to its Children collection:
 
 
 
-```C#
-	var task1 = new GanttTask()
-	{
-	 Start = new DateTime(2012,2,13),
-	 End = new DateTime(2012, 2, 16),
-	 Title = "testing"
-	};
-	
-	var task2 = new GanttTask()
-	{
-	 Start = new DateTime(2012, 2, 16),
-	 End = new DateTime(2012, 2, 20),
-	 Title = "fixing"
-	};
-	summaryTask.Children.Add(task1);
-	summaryTask.Children.Add(task2);
-```
+<snippet id='radganttview-features-items-addremove-block_2-cs' />
+
 
 ## Remove Items
 
@@ -58,12 +34,8 @@ In order to remove a task you have to remove it from the __TasksSource__ collect
 
 
 
-```C#
-	summaryTask.Children.Remove(task1);
-	summaryTask.Children.RemoveAt(0);
-	
-	Tasks.Remove(summaryTask);
-```
+<snippet id='radganttview-features-items-addremove-block_3-cs' />
+
 
 >Note that when removing a task, you should also remove programmatically the relations to this item.
 

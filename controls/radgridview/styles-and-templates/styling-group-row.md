@@ -30,11 +30,8 @@ You have two options:
 
 __Example 1: Targetting GridViewGroupRow__
 
-```XAML
-	<Style TargetType="{x:Type telerik:GridViewGroupRow}">
-	    <Setter Property="MinHeight" Value="60" />
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-group-row-example_1_targetting_gridviewgrouprow-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupRowStyle__.
 
@@ -48,11 +45,8 @@ If you have set your **GroupRenderMode** to **Flat**, your style should target t
 
 __Example 2: Targetting GroupHeaderRow__
 
-```XAML
-	<Style TargetType="{x:Type telerik:GroupHeaderRow}">
-	    <Setter Property="MinHeight" Value="60" />
-	</Style>
-```
+<snippet id='radgridview-styles-and-templates-styling-group-row-example_2_targetting_groupheaderrow-xaml' />
+
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GroupHeaderRowStyle__.
 
@@ -62,9 +56,8 @@ The __RadGridView__ exposes the __GroupRowStyle__ property of type __Style__. It
 
 __Example 2: Setting RadGridView's GroupRowStyle__
 
-```XAML
-	<telerik:RadGridView GroupRowStyle="{StaticResource GroupRowStyle}" />
-```
+<snippet id='radgridview-styles-and-templates-styling-group-row-example_2_setting_radgridview_s_grouprowstyle-xaml' />
+
 
 #### __Figure 3: RadGridView with styled group rows__
 

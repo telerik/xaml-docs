@@ -32,14 +32,8 @@ Before getting to the commands, you have to prepare the UI on which they will ge
 
 
 
-```XAML
-	<ListBox x:Name="listBox">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu">
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</ListBox>
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_1-xaml' />
+
 
 Having the UI prepared, you have to add some data to it.
 
@@ -49,131 +43,26 @@ As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for y
 
 
 
-```C#
-	public class ExampleViewModel : INotifyPropertyChanged
-	{
-	    private DataItem selectedItem;
-	    public ExampleViewModel()
-	    {
-	        this.InitItems();
-	    }
-	    public event PropertyChangedEventHandler PropertyChanged;
-	    public ObservableCollection<DataItem> Items
-	    {
-	        get;
-	        set;
-	    }
-	    public DataItem SelectedItem
-	    {
-	        get
-	        {
-	            return this.selectedItem;
-	        }
-	        set
-	        {
-	            if (this.selectedItem != value)
-	            {
-	                this.selectedItem = value;
-	                this.OnNotifyPropertyChanged("SelectedItem");
-	            }
-	        }
-	    }
-	    private void OnNotifyPropertyChanged(string propertyName)
-	    {
-	        if (this.PropertyChanged != null)
-	        {
-	            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-	        }
-	    }
-	    private void InitItems()
-	    {
-	        ObservableCollection<DataItem> items = new ObservableCollection<DataItem>();
-	        items.Add(new DataItem("Item 1"));
-	        items.Add(new DataItem("Item 2"));
-	        items.Add(new DataItem("Item 3"));
-	        this.Items = items;
-	    }
-	}
-```
-```VB.NET
-	Public Class ExampleViewModel
-	    Implements INotifyPropertyChanged
-	    Private selectedItemField As DataItem
-	    Public Sub New()
-	        Me.InitItems()
-	    End Sub
-	    Public Property Items() As ObservableCollection(Of DataItem)
-	        Get
-	        End Get
-	        Set(value As ObservableCollection(Of DataItem))
-	        End Set
-	    End Property
-	    Public Property SelectedItem() As DataItem
-	        Get
-	            Return Me.selectedItemField
-	        End Get
-	        Set(value As DataItem)
-	            If Me.selectedItemField Is value Then
-	                Me.selectedItemField = value
-	                Me.NotifyPropertyChanged("SelectedItem")
-	            End If
-	        End Set
-	    End Property
-	
-	    Private Sub InitItems()
-	        Dim items As New ObservableCollection(Of DataItem)()
-	        items.Add(New DataItem("Item 1"))
-	        items.Add(New DataItem("Item 2"))
-	        items.Add(New DataItem("Item 3"))
-	        Me.Items = items
-	    End Sub
-	
-	    Public Event PropertyChanged As PropertyChangedEventHandler _
-	        Implements INotifyPropertyChanged.PropertyChanged
-	
-	    Private Sub NotifyPropertyChanged(<CallerMemberName()> Optional ByVal propertyName As String = Nothing)
-	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-	    End Sub
-	End Class
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_2-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_2-vb' />
+
 
 In the constructor of the __UserControl__ you have to create an instance of the __ViewModel__, store it in a field and pass it as a __DataContext__ of the entire __UserControl__.        
 
 
 
-```C#
-	private ExampleViewModel viewModel;
-	public Default_Cs()
-	{
-	    InitializeComponent();
-	    this.viewModel = new ExampleViewModel();
-	    this.DataContext = viewModel;
-	}
-```
-```VB.NET
-	Private viewModel As ExampleViewModel
-	Public Sub New()
-	    InitializeComponent()
-	    Me.viewModel = New ExampleViewModel()
-	    Me.DataContext = viewModel
-	End Sub
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_3-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_3-vb' />
+
 
 In the XAML you have to set the __SelectedItem__, the __DisplayMemberPath__ and the __ItemsSource__ properties of the __ListBox__ in order to visualize the data.        
 
 
 
-```XAML
-	<ListBox x:Name="listBox1"
-	         DisplayMemberPath="Value"
-	         ItemsSource="{Binding Items}"
-	         SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu1">
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</ListBox>
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_4-xaml' />
+
 
 ## Selecting the right-clicked ListBoxItem
 
@@ -181,46 +70,16 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 
 
 
-```XAML
-	<ListBox x:Name="listBox2"
-	         DisplayMemberPath="Value"
-	         ItemsSource="{Binding Items}"
-	         SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu2"
-	                                  Opened="RadContextMenu_Opened">
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</ListBox>
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_5-xaml' />
 
 
 
 
-```C#
-	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
-	{
-	    System.Windows.Controls.ListBoxItem item = this.radContextMenu.GetClickedElement<System.Windows.Controls.ListBoxItem>();
-	    if (item != null)
-	    {
-	        this.listBox.SelectedItem = item.DataContext;
-	    }
-	    else
-	    {
-	        this.listBox.SelectedItem = null;
-	    }
-	}
-```
-```VB.NET
-	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
-	    Dim item As System.Windows.Controls.ListBoxItem = Me.radContextMenu.GetClickedElement(Of System.Windows.Controls.ListBoxItem)()
-	    If item Is Nothing Then
-	        Me.listBox.SelectedItem = item.DataContext
-	    Else
-	        Me.listBox.SelectedItem = Nothing
-	    End If
-	End Sub
-```
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_6-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_6-vb' />
+
 
 ## Preparing the RoutedUICommands
 
@@ -228,127 +87,36 @@ The next step is to create your commands. They will be host by the __ViewModel__
 
 
 
-```C#
-	public RoutedUICommand MoveUpCommand
-	{
-	    get;
-	    private set;
-	}
-	public RoutedUICommand MoveDownCommand
-	{
-	    get;
-	    private set;
-	}
-```
-```VB.NET
-	Public Property MoveUpCommand() As RoutedUICommand
-	    Get
-	    End Get
-	    Private Set(value As RoutedUICommand)
-	    End Set
-	End Property
-	Public Property MoveDownCommand() As RoutedUICommand
-	    Get
-	    End Get
-	    Private Set(value As RoutedUICommand)
-	    End Set
-	End Property
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_7-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_7-vb' />
+
 
 Initialize them in the constructor of the __ViewModel__:        
 
 
 
-```C#
-	public ExampleViewModel()
-	{
-	    this.MoveUpCommand = new RoutedUICommand("Move Up", "MoveUp", typeof(ExampleViewModel));
-	    this.MoveDownCommand = new RoutedUICommand("Move Down", "MoveDown", typeof(ExampleViewModel));
-	    this.InitItems();
-	}
-```
-```VB.NET
-	Public Sub New()
-	    Me.MoveUpCommand = New RoutedUICommand("Move Up", "MoveUp", GetType(ExampleViewModel))
-	    Me.MoveDownCommand = New RoutedUICommand("Move Down", "MoveDown", GetType(ExampleViewModel))
-	    Me.InitItems()
-	End Sub
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_8-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_8-vb' />
+
 
 Bind them in the __View__.
         
 
 
 
-```XAML
-	<ListBox x:Name="listBox3"
-	         DisplayMemberPath="Value"
-	         ItemsSource="{Binding Items}"
-	         SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu3"
-	                                Opened="RadContextMenu_Opened">
-	            <telerik:RadMenuItem Header="{Binding MoveUpCommand.Text}"
-	                                 Command="{Binding MoveUpCommand}" />
-	            <telerik:RadMenuItem Header="{Binding MoveDownCommand.Text}"
-	                                 Command="{Binding MoveDownCommand}" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</ListBox>
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_9-xaml' />
+
 
 You will also need methods that will get called when the command is executed. In the next section is explained how to connect the methods to the command. Here are sample methods for the two commands.
 
 
 
-```C#
-	public void MoveUp(object sender, ExecutedRoutedEventArgs e)
-	{
-	    if (this.SelectedItem == null || this.Items.IndexOf(this.SelectedItem as DataItem) == 0)
-	    {
-	        return;
-	    }
-	    DataItem item = this.SelectedItem;
-	    int index = this.Items.IndexOf(item as DataItem);
-	    this.Items.Remove(item as DataItem);
-	    this.Items.Insert(index - 1, item as DataItem);
-	    this.SelectedItem = item;
-	}
-	public void MoveDown(object sender, ExecutedRoutedEventArgs e)
-	{
-	    if (this.SelectedItem == null || this.Items.IndexOf(this.SelectedItem as DataItem) == this.Items.Count - 1)
-	    {
-	        return;
-	    }
-	    DataItem item = this.SelectedItem;
-	    int index = this.Items.IndexOf(item as DataItem);
-	    this.Items.Remove(item as DataItem);
-	    this.Items.Insert(index + 1, item as DataItem);
-	    this.SelectedItem = item;
-	}
-```
-```VB.NET
-	Public Sub MoveUp(sender As Object, e As ExecutedRoutedEventArgs)
-	    If Me.SelectedItem Is Nothing OrElse Me.Items.IndexOf(TryCast(Me.SelectedItem, DataItem)) = 0 Then
-	        Return
-	    End If
-	    Dim item As DataItem = Me.SelectedItem
-	    Dim index As Integer = Me.Items.IndexOf(TryCast(item, DataItem))
-	    Me.Items.Remove(TryCast(item, DataItem))
-	    Me.Items.Insert(index - 1, TryCast(item, DataItem))
-	    Me.SelectedItem = item
-	End Sub
-	Public Sub MoveDown(sender As Object, e As ExecutedRoutedEventArgs)
-	    If Me.SelectedItem Is Nothing OrElse Me.Items.IndexOf(TryCast(Me.SelectedItem, DataItem)) = Me.Items.Count - 1 Then
-	        Return
-	    End If
-	    Dim item As DataItem = Me.SelectedItem
-	    Dim index As Integer = Me.Items.IndexOf(TryCast(item, DataItem))
-	    Me.Items.Remove(TryCast(item, DataItem))
-	    Me.Items.Insert(index + 1, TryCast(item, DataItem))
-	    Me.SelectedItem = item
-	End Sub
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_10-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_10-vb' />
+
 
 ## Creating the CommandBindings
 
@@ -357,23 +125,10 @@ In order to use the commands in the UI you have to provide a __CommandBinding__ 
 
 
 
-```C#
-	public CommandBindingCollection GetCommandBindings()
-	{
-	    CommandBindingCollection bindings = new CommandBindingCollection();
-	    bindings.Add(new CommandBinding(this.MoveUpCommand, this.MoveUp));
-	    bindings.Add(new CommandBinding(this.MoveDownCommand, this.MoveDown));
-	    return bindings;
-	}
-```
-```VB.NET
-	Public Function GetCommandBindings() As CommandBindingCollection
-	    Dim bindings As New CommandBindingCollection()
-	    bindings.Add(New CommandBinding(Me.MoveUpCommand, Me.MoveUp))
-	    bindings.Add(New CommandBinding(Me.MoveDownCommand, Me.MoveDown))
-	    Return bindings
-	End Function
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_11-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_11-vb' />
+
 
 ## Setting the CommandBindings
 
@@ -382,54 +137,19 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 {% if site.site_name == 'Silverlight' %}
 
 
-```C#
-	public Default_Cs()
-	{
-	    InitializeComponent();
-	    this.viewModel = new ExampleViewModel();
-	    this.DataContext = viewModel;
-	    CommandManager.SetCommandBindings(this, this.viewModel.GetCommandBindings());
-	}
-```
-```VB.NET
-	Public Sub New()
-	    InitializeComponent()
-	    Me.viewModel = New ExampleViewModel()
-	    Me.DataContext = viewModel
-	    CommandManager.SetCommandBindings(Me, Me.viewModel.GetCommandBindings())
-	End Sub
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_12-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_12-vb' />
+
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 
 
-```C#
-	public Default_Cs()
-	{
-	    InitializeComponent();
-	    this.viewModel = new ExampleViewModel();
-	    this.DataContext = viewModel;
-	
-	    CommandBindingCollection collection = this.viewModel.GetCommandBindings();
-	    foreach (CommandBinding commandBinding in collection)
-	    {
-	        CommandManager.RegisterClassCommandBinding(typeof(ListBoxItem), commandBinding);
-	    }
-	}
-```
-```VB.NET
-	Public Sub New()
-	    InitializeComponent()
-	    Me.viewModel = New ExampleViewModel()
-	    Me.DataContext = viewModel
-	
-	    Dim collection As CommandBindingCollection = Me.viewModel.GetCommandBindings()
-	    For Each commandBinding As CommandBinding In collection
-	        CommandManager.RegisterClassCommandBinding(GetType(ListBoxItem), commandBinding)
-	    Next commandBinding
-	End Sub
-```
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_13-cs' />
+
+<snippet id='radcontextmenu-how-to-use-commands-with-the-radcontextmenu-block_13-vb' />
+
 {% endif %}
 
 ## See Also

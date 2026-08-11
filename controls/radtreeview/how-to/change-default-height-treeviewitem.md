@@ -14,16 +14,7 @@ This tutorial will show you how to change the __default height__ of a treeview.
 
 Here is a simple treeview declaration: 
 
-```XAML
-	<telerik:RadTreeView>
-	    <telerik:RadTreeViewItem Header="Sport Categories">
-	        <telerik:RadTreeViewItem Header="Football">
-	            <telerik:RadTreeViewItem Header="Futsal"/>
-	            <telerik:RadTreeViewItem Header="Soccer"/>
-	        </telerik:RadTreeViewItem>
-	    </telerik:RadTreeViewItem>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-how-to-change-default-height-treeviewitem-block_1-xaml' />
 
 ![{{ site.framework_name }} RadTreeView Default Item Height](images/RadTreeView_HowToChangeDefaultHeight_001.png)
 
@@ -31,24 +22,11 @@ In order to change the default height of the treeview item, you need to perform 
 
 1. Add an appropriate style in the resources: 
 
-	```XAML
-		<Style TargetType="telerik:RadTreeViewItem" x:Key="TreeViewItemStyle">
-			<Setter Property="MinHeight" Value="50"></Setter>
-		</Style>
-	```
+	<snippet id='radtreeview-how-to-change-default-height-treeviewitem-block_2-xaml' />
 
 2. Set the __ItemContainerStyle__ of the __RadTreeView__ and the __RadTreeViewItem__. 
 
-	```XAML
-		<telerik:RadTreeView ItemContainerStyle="{StaticResource TreeViewItemStyle}">
-			<telerik:RadTreeViewItem Header="Sport Categories" ItemContainerStyle="{StaticResource TreeViewItemStyle}">
-				<telerik:RadTreeViewItem Header="Football" ItemContainerStyle="{StaticResource TreeViewItemStyle}">
-					<telerik:RadTreeViewItem Header="Futsal" ItemContainerStyle="{StaticResource TreeViewItemStyle}"/>
-					<telerik:RadTreeViewItem Header="Soccer" ItemContainerStyle="{StaticResource TreeViewItemStyle}"/>
-				</telerik:RadTreeViewItem>
-			</telerik:RadTreeViewItem>
-		</telerik:RadTreeView>
-	```
+	<snippet id='radtreeview-how-to-change-default-height-treeviewitem-block_3-xaml' />
 
 And here is the result: 
 ![{{ site.framework_name }} RadTreeView Custom Item Height](images/RadTreeView_HowToChangeDefaultHeight_010.png)

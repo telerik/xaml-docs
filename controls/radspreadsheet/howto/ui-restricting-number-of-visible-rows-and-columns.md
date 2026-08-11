@@ -22,9 +22,7 @@ __RadSpreadsheet__ exposes a __VisibleSize__ property of type __SizeI__ that det
 
 
 
-```C#
-	            radSpreadsheet.VisibleSize = new SizeI(50, 100);
-```
+<snippet id='radspreadsheet-howto-ui-restricting-number-of-visible-rows-and-columns-block_1-cs' />
 
 
 

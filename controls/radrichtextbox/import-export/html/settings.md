@@ -48,41 +48,7 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 * __Title__: A property of type __string__ that allows you to set a Title to the generated HTML file. 
 
 __Example 1: Exclude properties__
-```C#
-
-	HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
-	htmlExportSettings.PropertiesToIgnore["span"].Add("color");
-	htmlExportSettings.PropertiesToIgnore["span"].Add("text-decoration");
-	htmlExportSettings.PropertiesToIgnore["span"].Add("font-weight");
-	htmlExportSettings.PropertiesToIgnore["span"].Add("font-style");
-	htmlExportSettings.PropertiesToIgnore["span"].Add("font-family");
-	htmlExportSettings.PropertiesToIgnore["span"].Add("font-size");
-	htmlExportSettings.PropertiesToIgnore["span"].Add("dir");
-
-	htmlExportSettings.PropertiesToIgnore["p"].Add("margin-top");
-	htmlExportSettings.PropertiesToIgnore["p"].Add("margin-bottom");
-	htmlExportSettings.PropertiesToIgnore["p"].Add("margin-left");
-	htmlExportSettings.PropertiesToIgnore["p"].Add("margin-right");
-	htmlExportSettings.PropertiesToIgnore["p"].Add("line-height");
-	htmlExportSettings.PropertiesToIgnore["p"].Add("text-indent");
-	htmlExportSettings.PropertiesToIgnore["p"].Add("text-align");
-	htmlExportSettings.PropertiesToIgnore["p"].Add("direction");
-
-	htmlExportSettings.PropertiesToIgnore["table"].Add("border-top");
-	htmlExportSettings.PropertiesToIgnore["table"].Add("border-bottom");
-	htmlExportSettings.PropertiesToIgnore["table"].Add("border-left");
-	htmlExportSettings.PropertiesToIgnore["table"].Add("border-right");
-	htmlExportSettings.PropertiesToIgnore["table"].Add("table-layout");
-	htmlExportSettings.PropertiesToIgnore["table"].Add("margin-left");
-	htmlExportSettings.PropertiesToIgnore["table"].Add("border-spacing");
-
-	htmlExportSettings.PropertiesToIgnore["td"].Add("border-top");
-	htmlExportSettings.PropertiesToIgnore["td"].Add("border-bottom");
-	htmlExportSettings.PropertiesToIgnore["td"].Add("border-left");
-	htmlExportSettings.PropertiesToIgnore["td"].Add("border-right");
-	htmlExportSettings.PropertiesToIgnore["td"].Add("padding");
-	htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
-```
+<snippet id='radrichtextbox-import-export-html-settings-block_1-cs' />
 
 
 >important **Microsoft Office** does not support HTML that has multiple CSS class selectors applied on a single element. As we are aiming for compliance with the HTML standard, this syntax should be supported in RadDocument. In order to generate HTML that is compliant with MS Office, please use the **StylesExportMode.Inline** setting of HtmlExportSettings.
@@ -100,14 +66,7 @@ __Example 1: Exclude properties__
 * __InlineUIContainerExporting__: This event is fired on every attempt to export an __InlineUIContainer__. For more information, please refer to the article about InlineUIContainers.
 		
 __Example 2: Setting the ExportSettings of the HtmlFormatProvider__
-```C#
-	HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
-	htmlExportSettings.ExportBoldAsStrong = true;
-	htmlExportSettings.SpanExportMode = SpanExportMode.AlwaysExport;
-	
-	HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
-	htmlFormatProvider.ExportSettings = htmlExportSettings;
-```
+<snippet id='radrichtextbox-import-export-html-settings-block_2-cs' />
 
 ## Import Settings
 
@@ -130,13 +89,7 @@ With the 2024 Q2 (2024.3.924) release the `HtmlImportSettings` class now inherit
 * __LoadImageFromUrl__: This event was introduced at a time when __HtmlFormatProvider__ did not automatically load images from URLs. The feature is currently supported out of the box, but this event can be useful if using virtual directories and files on the server.
 
 __Example 3: Setting the ImportSettings of the HtmlFormatProvider__
-```C#
-	HtmlImportSettings htmlImportSettings = new HtmlImportSettings();
-	htmlImportSettings.UseDefaultStylesheetForFontProperties = true;	
-	
-	HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
-	htmlFormatProvider.ImportSettings = htmlImportSettings;
-```
+<snippet id='radrichtextbox-import-export-html-settings-block_3-cs' />
 
 ## See Also
 

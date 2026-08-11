@@ -51,17 +51,14 @@ These key gestures are defined in the __RadDiagram InputBindings__ collection. Y
 For example if you want to create a custom key combination that triggers the __DiagramCommands.Layout__ command, you can add a new __KeyBinding__ to the __RadDiagram InputBindings__ collection as follows:
 	  
 
-```XAML
-    <telerik:RadDiagram x:Name="diagram" />		  
-```
+<snippet id='raddiagram-features-raddiagrams-shortcuts-block_1-xaml' />
+
 		  
 
-```C#
-    diagram.InputBindings.Add(new KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control));		  
-```
-```VB.NET
-    diagram.InputBindings.Add(New KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control))		  
-```
+<snippet id='raddiagram-features-raddiagrams-shortcuts-block_2-cs' />
+
+<snippet id='raddiagram-features-raddiagrams-shortcuts-block_2-vb' />
+
 		  
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

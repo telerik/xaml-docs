@@ -26,17 +26,13 @@ You can __disable whole column__ by changing the __IsEnabled__ property of each 
 
 
 
-```XAML
-	<Style x:Key="disabledStyle" TargetType="telerik:GridViewCell">
-	    <Setter Property="IsEnabled" Value="False"/>
-	</Style>
-```
+<snippet id='radgridview-how-to-enable-disable-grid-elements-block_1-xaml' />
 
 
 
-```XAML
-	<telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" CellStyle="{StaticResource disabledStyle}"/>
-```
+
+<snippet id='radgridview-how-to-enable-disable-grid-elements-block_2-xaml' />
+
 
 The screenshot below illustrates RadGridView control with a few disabled cells along with the "CompanyName" column.
 
@@ -46,11 +42,8 @@ To __disable all the rows__ you need to apply a Style targeting the __GridViewRo
 
 
 
-```XAML
-	<Style TargetType="telerik:GridViewRow">
-	    <Setter Property="IsEnabled" Value="False"/>
-	</Style>
-```
+<snippet id='radgridview-how-to-enable-disable-grid-elements-block_3-xaml' />
+
 
 The defined Style is implicit and it will be applied to all elements of type GridViewRow.
 

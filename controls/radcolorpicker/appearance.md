@@ -21,18 +21,16 @@ The default automatic color is `Black`. To change this, set the `AutomaticColor`
 To change the word "Automatic" shown in the button, set the `NoColorText` property of `RadColorPicker`.
 
 
-```XAML
-	 <telerik:RadColorPicker NoColorText="Select default" AutomaticColor="Green" />
-```
+<snippet id='radcolorpicker-appearance-block_1-xaml' />
+
 
 ![A picture showing RadColorPicker with custom automatic color and button text](images/radcolorpicker-appearance-0.png)
 
 To hide the automatic color button, set the `NoColorVisibility` property of `RadColorPicker`.
 
 
-```XAML
-	<telerik:RadColorPicker NoColorVisibility="Collapsed" />
-```
+<snippet id='radcolorpicker-appearance-block_2-xaml' />
+
 
 ![A picture showing RadColorPicker with hidden automatic color button](images/radcolorpicker-appearance-1.png)
 
@@ -41,12 +39,8 @@ To hide the automatic color button, set the `NoColorVisibility` property of `Rad
 To change the palette header text contents, set the `MainPaletteHeaderText`, `StandardPaletteHeaderText` and `RecentColorsHeaderText` properties of `RadColorPicker`.
 
 
-```XAML
-	<telerik:RadColorPicker MainPaletteHeaderText="Main Palette"
-				StandardPaletteHeaderText="Standard Palette"
-				RecentColorsHeaderText="Recent Colors"
-				IsRecentColorsActive="true"/>
-```
+<snippet id='radcolorpicker-appearance-block_3-xaml' />
+
 
 ![A picture showing RadColorPicker with custom palette header texts](images/radcolorpicker-appearance-2.png)
 
@@ -59,19 +53,8 @@ The button of the ColorPicker component is represented by `RadSplitButton`.
 The default visualization of the button content is the letter __A__ with an underline matching the selected color. To replace this with custom content, use the `ContentTemplate` property of the `RadColorPicker`.
 
 
-```XAML
-    <telerik:RadColorPicker x:Name="colorPicker" SelectedColor="DeepSkyBlue" IsDropDownOpen="True">	
-        <telerik:RadColorPicker.ContentTemplate>
-            <DataTemplate>
-                <TextBlock Text="Ab">
-                    <TextBlock.Foreground>
-                        <SolidColorBrush Color="{Binding ElementName=colorPicker, Path=SelectedColor}"/>
-                    </TextBlock.Foreground>
-                </TextBlock>			
-            </DataTemplate>
-        </telerik:RadColorPicker.ContentTemplate>
-    </telerik:RadColorPicker>
-```
+<snippet id='radcolorpicker-appearance-block_4-xaml' />
+
 
 __RadColorPicker with custom button content__
 
@@ -80,23 +63,13 @@ __RadColorPicker with custom button content__
 To change other properties of the button, use the `SplitButtonStyle` property of `RadColorPicker`.
 
 
-```XAML
-	<telerik:RadColorPicker.SplitButtonStyle>
-		<Style TargetType="telerik:RadSplitButton">
-			<Setter Property="Foreground" Value="Purple"/>
-		</Style>
-	</telerik:RadColorPicker.SplitButtonStyle>
-```
+<snippet id='radcolorpicker-appearance-radcolorpicker_with_custom_button_content-xaml' />
+
 
 ## Customizing the Color Selector
 
 The content in the drop down of the ColorPicker component is a `RadColorSelector` control. To change its appearance, set the `ColorSelectorStyle` property of `RadColorPicker`.
 
 
-```XAML	
-	<telerik:RadColorPicker.ColorSelectorStyle>
-		<Style TargetType="telerik:RadColorSelector">
-			<Setter Property="Background" Value="OliveDrab"/>
-		</Style>
-	</telerik:RadColorPicker.ColorSelectorStyle>
-```
+<snippet id='radcolorpicker-appearance-customizing_the_color_selector-xaml' />
+

@@ -24,26 +24,10 @@ For example:
 
 __Example 1: Handling the ValidatingItem Event__
 
-```C#
-	private void DataForm1_ValidatingItem(object sender, System.ComponentModel.CancelEventArgs e)
-	{
-	    var employer = this.DataForm1.CurrentItem as Employee;
-	    if (employer.Salary < 1000)
-	    {
-	      	e.Cancel = true;
-	        RadWindow.Alert("You have to raise " + employer.LastName + " salary");
-	    }
-	}
-```
-```VB.NET
-	Private Sub DataForm1_ValidatingItem(sender As Object, e As System.ComponentModel.CancelEventArgs)
-	    Dim employer = TryCast(Me.DataForm1.CurrentItem, Employee)
-	    If employer.Salary < 1000 Then
-	    	e.Cancel = True
-	        RadWindow.Alert("You have to raise " & Convert.ToString(employer.LastName) & " salary")
-	    End If
-	End Sub
-```
+<snippet id='raddataform-validation-validation-example_1_handling_the_validatingitem_event-cs' />
+
+<snippet id='raddataform-validation-validation-example_1_handling_the_validatingitem_event-vb' />
+
 
 In this case the RadDataForm will be displayed as the image below:
 
@@ -53,55 +37,17 @@ Yet another approach applicable when defining custom fields is to specify the va
 
 __Example 2: Perform the Validation inside the Property Setter__
 
-```C#
-	public DateTime StartingDate
-	{
-	    get
-	    {
-	        return this.startingDate;
-	    }
-	    set
-	    {
-	        if (value != this.startingDate)
-	        {
-	            if (value > DateTime.Now)
-	            {
-	                throw new ValidationException("Starting date should not be earlier than 2011");
-	            }
-	            else
-	            {
-	                this.startingDate = value;
-	                this.OnPropertyChanged("StartingDate");
-	            }
-	        }
-	    }
-	}
-```
-```VB.NET
-	Public Property StartingDate() As DateTime
-	    Get
-	        Return Me.m_startingDate
-	    End Get
-	    Set(value As DateTime)
-	        If value <> Me.StartingDate Then
-	            If value > DateTime.Now Then
-	                Throw New ValidationException("Starting date should not be earlier than 2011")
-	            Else
-	                Me.m_startingDate = value
-	                Me.OnPropertyChanged("StartingDate")
-	            End If
-	        End If
-	    End Set
-	End Property
-```
+<snippet id='raddataform-validation-validation-example_2_perform_the_validation_inside_the_property_setter-cs' />
+
+<snippet id='raddataform-validation-validation-example_2_perform_the_validation_inside_the_property_setter-vb' />
+
 
 The definition of the DataFormDataField should be like follows:
 
 __Example 3: Defining the DataFormDataField__
 
-```XAML
-	<telerik:DataFormDateField Label="Starting date" DataMemberBinding="{Binding StartingDate, Mode=TwoWay, ValidatesOnExceptions=True, NotifyOnValidationError=True}"/>
-```
+<snippet id='raddataform-validation-validation-example_3_defining_the_dataformdatafield-xaml' />
+
 
 Once the validation is performed, the RadDataForm will be displayed as in the image below:
 

@@ -17,14 +17,12 @@ The property is an enumeration of type __System.Windows.Controls.Orientation__ a
 * __Vertical__: The layout will be oriented vertically.
 
 __Example 1: Setting the Orientation property of RadLayoutControl__
-```XAML
-	<telerik:RadLayoutControl Orientation="Vertical"/>
-```
+<snippet id='radlayoutcontrol-features-orientation-example_1_setting_the_orientation_property_of_radlayoutcontrol-xaml' />
+
 	
 __Example 2: Setting the Orientation property of LayoutControlGroup__
-```XAML
-	<telerik:LayoutControlGroup Orientation="Vertical"/>
-```
+<snippet id='radlayoutcontrol-features-orientation-example_2_setting_the_orientation_property_of_layoutcontrolgroup-xaml' />
+
 
 #### __Figure 1: Horizontal and Vertical orientations__  
 ![{{ site.framework_name }} RadLayoutControl Horizontal and Vertical orientations](images/layoutcontrol-features-orientation-01.png)

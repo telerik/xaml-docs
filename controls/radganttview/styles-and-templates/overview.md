@@ -20,26 +20,8 @@ Let’s for example have a GanttView control defined like this:
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
-	    <telerik:RadGanttView.TimeRulerLines>
-	        <telerik:GroupTickLine>
-	            <telerik:TickInterval Interval="OneWeek" />
-	        </telerik:GroupTickLine>
-	        <telerik:MajorTickLine>
-	            <telerik:TickInterval Interval="OneDay" />
-	        </telerik:MajorTickLine>
-	        <telerik:MinorTickLine>
-	            <telerik:TickInterval Interval="ThreeHours" />
-	        </telerik:MinorTickLine>
-	    </telerik:RadGanttView.TimeRulerLines>
-	    <telerik:RadGanttView.Columns>
-	        <telerik:TreeColumnDefinition MemberBinding="{Binding Title}" Header="Title" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-	    </telerik:RadGanttView.Columns>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-styles-and-templates-overview-block_1-xaml' />
+
 
 The following scheme shows the name of each element  that can be styled:
 
@@ -53,38 +35,8 @@ If we have CellTemplate and/or CellEditTemplate defined, the generated container
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}" >
-	    <!--...-->
-	    <telerik:RadGanttView.Columns>
-	        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent">
-	            <telerik:TreeColumnDefinition.CellTemplate >
-	                <DataTemplate>
-	                    <TextBlock Text="{Binding Title}" />
-	                </DataTemplate>
-	            </telerik:TreeColumnDefinition.CellTemplate>
-	            <telerik:TreeColumnDefinition.CellEditTemplate>
-	                <DataTemplate>
-	                    <TextBox Text="{Binding Title,Mode=TwoWay}" />
-	                </DataTemplate>
-	            </telerik:TreeColumnDefinition.CellEditTemplate>
-	        </telerik:TreeColumnDefinition>
-	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent">
-	            <telerik:ColumnDefinition.CellTemplate >
-	                <DataTemplate>
-	                    <TextBlock Text="{Binding Start}" />
-	                </DataTemplate>
-	            </telerik:ColumnDefinition.CellTemplate>
-	            <telerik:ColumnDefinition.CellEditTemplate>
-	                <DataTemplate>
-	                    <telerik:RadDateTimePicker SelectedValue="{Binding Start,Mode=TwoWay}" />
-	                </DataTemplate>
-	            </telerik:ColumnDefinition.CellEditTemplate>
-	        </telerik:ColumnDefinition>
-	        <!--...-->
-	    </telerik:RadGanttView.Columns>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-styles-and-templates-overview-block_2-xaml' />
+
 
 The containers in the grid will be Cell/TreeCell instead of SimpleCell/SimpleTreeCell. Also the containers for editing will be CellEditing/TreeCellEditing:
 
@@ -94,14 +46,8 @@ In case we have SpecialSlots defined:
 
 
 
-```XAML
-	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}" >
-	    <!--...-->
-	    <telerik:RadGanttView.SpecialSlotsGenerator>
-	        <telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
-	    </telerik:RadGanttView.SpecialSlotsGenerator>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-styles-and-templates-overview-block_3-xaml' />
+
 
 We can style them as well:
 
@@ -163,12 +109,8 @@ So, let’s create the following implicit style:
 
 
 
-```XAML
-	<Style TargetType="telerik:EventContainer" BasedOn="{StaticResource EventContainerStyle}">
-	    <Setter Property="Foreground" Value="White" />
-	    <Setter Property="Background" Value="Navy" />
-	</Style>
-```
+<snippet id='radganttview-styles-and-templates-overview-block_4-xaml' />
+
 
 This will lead to the following result:
 
@@ -180,30 +122,7 @@ In case you need to further customize an element, you could create an implicit s
 
 
 
-```XAML
-	<Style TargetType="gantt:DragResizeSlotHighlightContainer">
-	    <Setter Property="BorderBrush" Value="{x:Null}" />
-	    <Setter Property="BorderThickness" Value="0" />
-	    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-	    <Setter Property="VerticalContentAlignment" Value="Stretch" />
-	    <Setter Property="VerticalAlignment" Value="Center" />
-	    <Setter Property="MinHeight" Value="17" />
-	    <Setter Property="Padding" Value="5 0" />
-	    <Setter Property="Background" Value="Orange" />
-	    <Setter Property="Foreground" Value="{StaticResource MainBrush}" />
-	    <Setter Property="scheduling:ZIndexManager.ZIndex" Value="35" />
-	    <Setter Property="Template">
-	        <Setter.Value>
-	            <ControlTemplate TargetType="gantt:DragResizeSlotHighlightContainer">
-	                <Grid>
-	                    <Border Background="{TemplateBinding Background}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.7"></Border>
-	                    <Border Background="{StaticResource BasicBrush}" Opacity="0.3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-	                    <TextBlock Text="{Binding Task.Title}" Foreground="{TemplateBinding Foreground}" Margin="{TemplateBinding Padding}" />
-	                </Grid>
-	            </ControlTemplate>
-	        </Setter.Value>
-	    </Setter>
-	</Style>
-```
+<snippet id='radganttview-styles-and-templates-overview-block_5-xaml' />
+
 
 After adding this Style, the element will look like this:![ganttview styles 07](images/ganttview_styles_07.png)

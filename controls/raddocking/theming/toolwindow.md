@@ -14,54 +14,26 @@ To modify the appearance of the ToolWindow you __have__ to create a custom theme
 
 Copy the created style with all of the resources it uses and place it in the __ResourceDictionary__ that represents the theme for your __RadDocking__ control.
 
-```XAML
-	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	    <!--Paste the style and all of the resources it uses here. -->
-	    <Style x:Key="ToolWindowStyle" TargetType="telerik:ToolWindow">
-	        <!--...-->
-	    </Style>
-	</ResourceDictionary>
-```
+<snippet id='raddocking-theming-toolwindow-block_1-xaml' />
+
 
 The next step is to declare the required namespaces in the resource dictionary.
 
-```XAML
-	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	    <!--...-->
-	</ResourceDictionary>
-```
+<snippet id='raddocking-theming-toolwindow-block_2-xaml' />
 
-```XAML
-	<Style TargetType="telerik:ToolWindow">
-	    <!--...-->
-	</Style>
-```
 
-```C#
-	public App()
-	{
-	    InitializeComponent();
-	    StyleManager.SetTheme( this.radDocking, new RadDockingTheme());
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
-		StyleManager.SetTheme(Me.radDocking, New Theme())
-	End Sub
-```
+<snippet id='raddocking-theming-toolwindow-block_3-xaml' />
+
+
+<snippet id='raddocking-theming-toolwindow-block_4-cs' />
+
+<snippet id='raddocking-theming-toolwindow-block_4-vb' />
+
 
 Finally in order to make the style default for all of the __ToolWindow__ controls you have to set it to the following value.
 
-```XAML
-	<Style x:Key="{telerik:ThemeResourceKey ThemeType={x:Type local:RadDockingTheme}, ElementType={x:Type telerik:ToolWindow}}"
-	TargetType="{x:Type telerik:ToolWindow}">
-	    <!--...-->
-	</Style>
-```
+<snippet id='raddocking-theming-toolwindow-block_5-xaml' />
+
 
 ![{{ site.framework_name }} RadDocking Themed ToolWindow](images/RadDocking_ThemingToolWindow_01.png)
 

@@ -15,9 +15,7 @@ This tutorial will show the way of populating __RadRating__ using the __NumberOf
 Example 1 demonstrates a regular __RadRating__ declaration:
 
 __Example 1: Declare a RadRating__
-```XAML
-	<telerik:RadRating x:Name="radRating"/>
-```
+<snippet id='radrating-populating-with-data-populating-number-of-items-to-genarate-block_1-xaml' />
 
 #### __Figure 1: Result from Example 1__
 ![RadRating](images/rating_default.png)
@@ -25,9 +23,7 @@ __Example 1: Declare a RadRating__
 If you want to set a specific number of rating items you should set the __NumberOfItemsToGenerate__ property:
 
 __Example 2: Setting the NumberOfItemsToGenerate__
-```XAML
-    <telerik:RadRating x:Name="radRating" NumberOfItemsToGenerate="3" />
-```
+<snippet id='radrating-populating-with-data-populating-number-of-items-to-genarate-block_2-xaml' />
 
 #### __Figure 2: Result from Example 2__
 ![RadRating](images/rating_with_3_items.png)

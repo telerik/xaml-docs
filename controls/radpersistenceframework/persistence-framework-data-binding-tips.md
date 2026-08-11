@@ -27,22 +27,7 @@ In some situations, the serialized data bound properties could get overridden by
 To avoid this, make sure that the load method is called after the data bindings are evaluated. For example, you can do this in the **Loaded** event handler of the view.
 
 __Example 1: Load the persisted UI in the Loaded event handler__
-```C#
-	public class MyUserControl : UserControl
-	{
-		public MyUserControl()
-		{
-			InitializeComponent();
-			this.Loaded += MyUserControl_Loaded;
-		}
-
-		private void MyUserControl_Loaded(object sender, RoutedEventArgs e)
-		{
-			PersistenceManager manager = new PersistenceManager();
-			manager.Load(myControl, mySavedStream);
-		}
-	}
-```
+<snippet id='radpersistenceframework-persistence-framework-data-binding-tips-block_1-cs' />
 
 ## See Also
 * [Getting Started]({%slug persistence-framework-getting-started%})

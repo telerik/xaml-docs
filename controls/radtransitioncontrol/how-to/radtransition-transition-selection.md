@@ -46,53 +46,13 @@ Such converter would look like:
 
 
 
-```C#
-	public class BooleanToTransitionConverter : IValueConverter
-	{
-	    public TransitionProvider TransitionForward { get; set; }
-	    public TransitionProvider TransitionBackward { get; set; }
-	
-	    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-	    {
-	        if (!(value is bool) || (bool)value)
-	        {
-	            return TransitionForward;
-	        }
-	        else
-	        {
-	            return TransitionBackward;
-	        }
-	    }
-	
-	    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-	    {
-	        throw new NotImplementedException();
-	    }
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-transition-selection-block_1-cs' />
 
 And could be used in XAML:
 
 
 
-```XAML
-	<telerik:RadTransitionControl Content="{Binding SelectedImageSource}">
-	    <telerik:RadTransitionControl.Transition>
-	        <Binding Path="IsNavigatingForward">
-	            <Binding.Converter>
-	                <local:BooleanToTransitionConverter>
-	                    <local:BooleanToTransitionConverter.TransitionForward>
-	                        <telerik:SlideAndZoomTransition SlideDirection="LeftToRight" />
-	                    </local:BooleanToTransitionConverter.TransitionForward>
-	                    <local:BooleanToTransitionConverter.TransitionBackward>
-	                        <telerik:SlideAndZoomTransition SlideDirection="RightToLeft" />
-	                    </local:BooleanToTransitionConverter.TransitionBackward>
-	                </local:BooleanToTransitionConverter>
-	            </Binding.Converter>
-	        </Binding>
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-transition-selection-block_2-xaml' />
 
 ## Switch in a Custom TransitionProvider
 
@@ -108,49 +68,13 @@ In general implementing a custom TransitionProvider would use quite a few lines 
 
 
 
-```C#
-	public class WizzardPageTransition : TransitionProvider
-	{
-	    public TransitionProvider BackTransition { get; set; }
-	    public TransitionProvider ForwardTransition { get; set; }
-	    public override Transition CreateTransition(TransitionContext context)
-	    {
-	        WizzardPage oldPage = context.OldContent as WizzardPage;
-	        WizzardPage newPage = context.CurrentContent as WizzardPage;
-	        if (oldPage == null || newPage == null)
-	        {
-	            return null;
-	        }
-	        else if (newPage.PageIndex > oldPage.PageIndex)
-	        {
-	            return this.ForwardTransition.CreateTransition(context);
-	        }
-	        else
-	        {
-	            return this.BackTransition.CreateTransition(context);
-	        }
-	    }
-	}
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-transition-selection-block_3-cs' />
 
 And in XAML you could use it like:
 
 
 
-```XAML
-	<telerik:RadTransitionControl Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=SelectedContent}" >
-	    <telerik:RadTransitionControl.Transition>
-	        <local:WizzardPageTransition>
-	            <local:WizzardPageTransition.BackTransition>
-	                <telerik:SlideAndZoomTransition SlideDirection="LeftToRight"/>
-	            </local:WizzardPageTransition.BackTransition>
-	            <local:WizzardPageTransition.ForwardTransition>
-	                <telerik:SlideAndZoomTransition SlideDirection="RightToLeft"/>
-	            </local:WizzardPageTransition.ForwardTransition>
-	        </local:WizzardPageTransition>
-	    </telerik:RadTransitionControl.Transition>
-	</telerik:RadTransitionControl>
-```
+<snippet id='radtransitioncontrol-how-to-radtransition-transition-selection-block_4-xaml' />
 
 If the Content is non-UI element you could define simple properties that can be compared in the if-statements.      	
 

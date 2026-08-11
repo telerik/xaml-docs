@@ -18,12 +18,7 @@ The status text is set via the `Status` property of the message's view model.
 
 __Creating a new message and setting the message status__
 
-```C#
-var message = new TextMessage(this.radChat.CurrentAuthor, "Hi there ☺");
-message.InlineViewModel.StatusVisibility = Visibility.Visible;
-message.InlineViewModel.Status = "Sent";
-this.radChat.AddMessage(message);
-```
+<snippet id='radchat-message-status-creating_a_new_message_and_setting_the_message_status-cs' />
 
 ![Telerik UI for WPF RadChat message status displayed beneath a chat message](images/chat-message-status-0.png)
 
@@ -31,7 +26,4 @@ You can later access the message and update its status if necessary.
 
 __Updating the message status__
 
-```C#
-var message = this.radChat.GetMessageByIndex(0) as TextMessage;
-message.InlineViewModel.Status = "Delivered";
-```
+<snippet id='radchat-message-status-updating_the_message_status-cs' />

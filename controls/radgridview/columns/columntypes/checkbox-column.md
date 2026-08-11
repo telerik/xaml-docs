@@ -14,15 +14,8 @@ __GridViewCheckBoxColumn__ derives from __GridViewBoundColumnBase__ class and it
 
 __Example 1: Declare a column of type GridViewCheckBoxColumn__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                AutoGenerateColumns="False"
-					ItemsSource="{Binding Items}">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsActive}" />
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-checkbox-column-example_1_declare_a_column_of_type_gridviewcheckboxcolumn-xaml' />
+
 
 #### __Figure 1: Declared CheckBox Column.__
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewCheckBoxColumn showing a bound checkbox in each row](images/RadGridView_Columns_CheckBoxColumn_01.png)
@@ -41,15 +34,8 @@ Here are the possible cases:
 
 __Example 2: Change the value of the CheckBox with one click__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                AutoGenerateColumns="False"
-					ItemsSource="{Binding Items}">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsSelected}" AutoSelectOnEdit="True" EditTriggers="CellClick"/>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-columns-columntypes-checkbox-column-example_2_change_the_value_of_the_checkbox_with_one_click-xaml' />
+
 
 > Since the __GridViewCheckBoxColumn__ is specially designed to dispay checkboxes, setting its __CellTemplate__, __CellEditTemplate__, __CellTemplateSelector__ and __CellEditTemplateSelector__ is not supported. For such requirements, you can use a [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%}). How to style the templates is [described here](https://docs.telerik.com/devtools/wpf/controls/radgridview/styles-and-templates/columns-styling-checkboxcolumn).
 

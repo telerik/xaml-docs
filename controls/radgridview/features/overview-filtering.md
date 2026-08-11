@@ -18,34 +18,17 @@ You can define filtering either in the XAML or in the code-behind.
 
 
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView">
-	    <telerik:RadGridView.FilterDescriptors>
-	        <telerik:FilterDescriptor Member="Country"
-	                             Operator="IsEqualTo"
-	                             Value="Germany"/>
-	    </telerik:RadGridView.FilterDescriptors>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-features-overview-filtering-block_1-xaml' />
+
 
 You can achieve the same result if you define your filtering in your code-behind like this.
 
 
 
-```C#
-	FilterDescriptor descriptor = new FilterDescriptor();
-	descriptor.Member = "Country";
-	descriptor.Operator = FilterOperator.IsEqualTo;
-	descriptor.Value = "Germany";
-	this.radGridView.FilterDescriptors.Add(descriptor);
-```
-```VB.NET
-	Dim descriptor As New FilterDescriptor()
-	descriptor.Member = "Country"
-	descriptor.Operator = FilterOperator.IsEqualTo
-	descriptor.Value = "Germany"
-	Me.radGridView.FilterDescriptors.Add(descriptor)
-```
+<snippet id='radgridview-features-overview-filtering-block_2-cs' />
+
+<snippet id='radgridview-features-overview-filtering-block_2-vb' />
+
 
 >Note that since __FilterDescriptors__ property is a collection, you can add more than one __FilterDescriptor__ to a __RadGridView__.
 

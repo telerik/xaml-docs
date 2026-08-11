@@ -17,57 +17,10 @@ The `RadSpreadSheet` control uses the [SpreadProcessing library](https://docs.te
 The following example showcases how to implement custom undo/redo buttons:
 
 __Adding buttons in the UI for the Undo and Redo methods__
-```XAML
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-            <telerik:RadButton Content="Undo last action" 
-                               Click="OnUndoButtonClicked">
-                <telerik:RadButton.ContentTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <telerik:RadGlyph Glyph="{StaticResource GlyphUndo}"/>
-                            <TextBlock Text="{Binding}" Margin="3 0 0 0"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </telerik:RadButton.ContentTemplate>
-            </telerik:RadButton>
-            <telerik:RadButton Content="Redo last action"
-                               Click="OnRedoButtonClicked">
-                <telerik:RadButton.ContentTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <telerik:RadGlyph Glyph="{StaticResource GlyphRedo}"/>
-                            <TextBlock Text="{Binding}" Margin="3 0 0 0"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </telerik:RadButton.ContentTemplate>
-            </telerik:RadButton>
-        </StackPanel>
-        <telerik:RadSpreadsheet x:Name="radSpreadsheet" Grid.Row="1">
-            <telerik:RadSpreadsheet.FormatProviders>
-                <Txt:TxtFormatProvider/>
-                <Csv:CsvFormatProvider/>
-            </telerik:RadSpreadsheet.FormatProviders>
-        </telerik:RadSpreadsheet>
-    </Grid>
-```
+<snippet id='radspreadsheet-features-history-block_1-xaml' />
 
 __Adding the logic for the buttons to execute the Undo and Redo methods__
-```C#
-    private void OnUndoButtonClicked(object sender, RoutedEventArgs e)
-    {
-        this.radSpreadsheet.Workbook.History.Undo();
-    }
-
-    private void OnRedoButtonClicked(object sender, RoutedEventArgs e)
-    {
-        this.radSpreadsheet.Workbook.History.Redo();
-    }
-```
+<snippet id='radspreadsheet-features-history-block_2-cs' />
 
 __RadSpreadsheet with custom redo/undo buttons__
 

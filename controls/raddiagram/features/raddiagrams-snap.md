@@ -22,25 +22,8 @@ Note that the __IsSnapToGridEnabled__ property of the RadDiagram must be set to 
 
 
 
-```XAML
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="*" />
-		</Grid.RowDefinitions>
-		
-		<StackPanel>
-			<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Snap" CommandTarget="{Binding ElementName=diagram}" Content="Snap" />
-			<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Align" CommandTarget="{Binding ElementName=diagram}" Content="Align" />
-		</StackPanel>
-		
-		<telerik:RadDiagram Grid.Row="1" x:Name="diagram">
-			<telerik:RadDiagramShape Width="45" Height="45" Geometry="{telerik:CommonShape ShapeType=RectangleShape}" Position="123 50" />
-			<telerik:RadDiagramShape Width="45" Height="45" Geometry="{telerik:CommonShape ShapeType=RectangleShape}" Position="183 100" />
-			<telerik:RadDiagramShape Width="45" Height="45" Geometry="{telerik:CommonShape ShapeType=RectangleShape}" Position="243 150" />
-		</telerik:RadDiagram>
-	</Grid>
-```
+<snippet id='raddiagram-features-raddiagrams-snap-block_1-xaml' />
+
 
 ![raddiagram features align and snap to grid](images/raddiagram_features_align_and_snap_to_grid.png)
 
@@ -48,11 +31,8 @@ You can give argument to the Align Command with the __CommandParameter__ propert
 
 
 
-```XAML
-	<StackPanel>
-		<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Align" CommandParameter="Right" CommandTarget="{Binding ElementName=diagram}" Content="Align" />
-	</StackPanel>
-```
+<snippet id='raddiagram-features-raddiagrams-snap-block_2-xaml' />
+
 
 >Please keep in mind that you cannot use __HorizontalAlignment__ and __VerticalAlignment__ of the RadDiagramItem because the Diagram is created over a Canvas. In other word, use only the Position property.                    
 
@@ -66,23 +46,8 @@ Once the snapping is enabled, when a __DiagramItem__ is dragged its X and Y coor
 
 
 
-```XAML
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="*" />
-		</Grid.RowDefinitions>
-		
-		<StackPanel>
-			<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Snap" CommandTarget="{Binding ElementName=diagram}" Content="Snap" />
-			<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Align" CommandTarget="{Binding ElementName=diagram}" Content="Align" />	
-		</StackPanel>
-		
-		<telerik:RadDiagram Grid.Row="1" GridCellWidth="20" GridCellHeight="20" x:Name="diagram">
-			<telerik:RadDiagramShape Width="45" Height="45" Geometry="{telerik:CommonShape ShapeType=RectangleShape}" Position="125 55" />
-		</telerik:RadDiagram>
-	</Grid>
-```
+<snippet id='raddiagram-features-raddiagrams-snap-block_3-xaml' />
+
 
 ![raddiagram features align and snap to grid 2](images/raddiagram_features_align_and_snap_to_grid2.png)
 
@@ -129,15 +94,8 @@ The alignment lines are part of the __AlignmentAdorner__ and therefore their app
 
 
 
-```XAML
-	<telerik:RadDiagram x:Name="xDiagram"
-						primitives:AlignmentAdorner.HorizontalLineStroke="Green"
-						primitives:AlignmentAdorner.HorizontalLineStrokeDashArray="2 1"
-						primitives:AlignmentAdorner.HorizontalLineStrokeThickness="2"
-						primitives:AlignmentAdorner.VerticalLineStroke="Green"
-						primitives:AlignmentAdorner.VerticalLineStrokeDashArray="1 2"
-						primitives:AlignmentAdorner.VerticalLineStrokeThickness="2" />
-```
+<snippet id='raddiagram-features-raddiagrams-snap-block_4-xaml' />
+
 
 ![raddiagram-features-align-customstyle](images/raddiagram-features-align-customstyle.png)
 

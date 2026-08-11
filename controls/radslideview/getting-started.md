@@ -32,9 +32,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 You can add RadSlideView manually in XAML as demonstrated in the following example:
 
 __Adding RadSlideView in XAML__
-```XAML
-    <telerik:RadSlideView/>
-```
+<snippet id='radslideview-getting-started-block_1-xaml' />
 
 __Empty RadSlideView__
 
@@ -47,101 +45,18 @@ RadSlideView allows you to data bind it to a collection of business objects. To 
 The following example will demonstrate a simple data binding scenario.
 
 __Defining the model__
-```C#
-    public class Photo
-    {
-        public string Title { get; set; }
-        public string ImagePath { get; set; }
-    }
-```
-```VB.NET
-    Public Class Photo
-        Public Property Title As String
-        Public Property ImagePath As String
-    End Class
-```
+<snippet id='radslideview-getting-started-block_2-cs' />
+<snippet id='radslideview-getting-started-block_3-vb' />
 
 __Defining the view model__
-```C#
-    public class PhotosViewModel
-    {
-        public PhotosViewModel()
-        {
-            this.Photos = new ObservableCollection<Photo>()
-            {
-                new Photo() { Title = "First Photo", ImagePath = "FirstPhoto.png" },
-                new Photo() { Title = "Second Photo", ImagePath = "SecondPhoto.png" },
-                new Photo() { Title = "Third Photo", ImagePath = "ThirdPhoto.png" },
-            };
-        }
-        public ObservableCollection<Photo> Photos { get; set; } 
-    }
-```
-```VB.NET
-    Public Class PhotosViewModel
-        Public Sub New()
-            Me.Photos = New ObservableCollection(Of Photo)() From {
-                New Photo() With {
-                    .Title = "First Photo",
-                    .ImagePath = "FirstPhoto.png"
-                },
-                New Photo() With {
-                    .Title = "Second Photo",
-                    .ImagePath = "SecondPhoto.png"
-                },
-                New Photo() With {
-                    .Title = "Third Photo",
-                    .ImagePath = "ThirdPhoto.png"
-                }
-            }
-        End Sub
-
-        Public Property Photos As ObservableCollection(Of Photo)
-    End Class
-```
+<snippet id='radslideview-getting-started-block_4-cs' />
+<snippet id='radslideview-getting-started-block_5-vb' />
 
 __Binding the collection to the ItemsSource property__
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <local:PhotosViewModel x:Key="PhotosViewModel"/>
-        </Grid.Resources>
-        <telerik:RadSlideView DataContext="{StaticResource PhotosViewModel}"
-                              ItemsSource="{Binding Photos}">
-        </telerik:RadSlideView>
-    </Grid>
-```
+<snippet id='radslideview-getting-started-block_6-xaml' />
 
 __Customizing the appearance of the bound items via the ItemTemplate property of RadSlideView__
-```XAML
-    <Grid>
-        <Grid.Resources>
-            <local:PhotosViewModel x:Key="PhotosViewModel"/>
-        </Grid.Resources>
-        <telerik:RadSlideView DataContext="{StaticResource PhotosViewModel}"
-                              ItemsSource="{Binding Photos}"
-                              SelectedIndex="0"
-                              ShowButtonsOverContent="False"
-                              HorizontalAlignment="Center"
-                              VerticalAlignment="Center">
-            <telerik:RadSlideView.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <TextBlock Text="{Binding Title}"
-                                   FontSize="18"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                        <Image Source="{Binding ImagePath}" Grid.Row="1"/>
-                    </Grid>
-                </DataTemplate>
-            </telerik:RadSlideView.ItemTemplate>
-        </telerik:RadSlideView>
-    </Grid>
-```
+<snippet id='radslideview-getting-started-block_7-xaml' />
 
 __RadSlideView in a sample data-binding scenario__
 
@@ -162,16 +77,7 @@ The controls from our suite support different themes. You can see how to apply a
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Merge the ResourceDictionaries__
-```XAML
-    <Application.Resources>
-    	<ResourceDictionary>
-    		<ResourceDictionary.MergedDictionaries>
-    			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-    			<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-    		</ResourceDictionary.MergedDictionaries>
-    	</ResourceDictionary>
-    </Application.Resources>
-```
+<snippet id='radslideview-getting-started-block_8-xaml' />
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

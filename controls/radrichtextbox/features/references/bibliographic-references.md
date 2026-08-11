@@ -66,14 +66,7 @@ This is how you can add a new source:
 
 
 
-```C#
-	BibliographicSource bibliographicSource = new BibliographicSource("test");
-	bibliographicSource.Author = "authorTest";
-	bibliographicSource.Title = "titleTest";
-	bibliographicSource.Editor = "editorTest";
-	bibliographicSource.SourceType = BibliographicSourceType.Book;
-	this.editor.Document.BibliographicSources.Add(bibliographicSource);
-```
+<snippet id='radrichtextbox-features-references-bibliographic-references-block_1-cs' />
 
 
 
@@ -81,18 +74,7 @@ To create a custom __BibliographicStyle__ you have to derive from __Bibliographi
 
 
 
-```C#
-	APAFifthEditionStyle APAFifthEdition = new APAFifthEditionStyle();
-	this.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition);
-	 
-	HarvardAnglia2008Style HarvardAnglia2008 = new HarvardAnglia2008Style();
-	this.BibliographicStyles.Add(HarvardAnglia2008.Key, HarvardAnglia2008);
-	 
-	ISO690_FirstElementAndDateStyle ISO690_FirstElementAndDate = 
-	new ISO690_FirstElementAndDateStyle();
-	this.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key, 
-	ISO690_FirstElementAndDate);
-```
+<snippet id='radrichtextbox-features-references-bibliographic-references-block_2-cs' />
 
 Insert Citation Field using code behind
 
@@ -100,11 +82,7 @@ The Citation field is a field not different from every other field. You can use 
 
 
 
-```C#
-	CitationField citationField = new CitationField();
-	citationField.SourceName = "test";
-	this.editor.Document.InsertField(citationField, FieldDisplayMode.Result);
-```
+<snippet id='radrichtextbox-features-references-bibliographic-references-block_3-cs' />
 
 Insert Bibliography Field using code behind
 
@@ -112,10 +90,7 @@ The Bibliography field is a field not different from every other field. You can 
 
 
 
-```C#
-	BibliographyField bibliographyField = new BibliographyField();
-	this.editor.Document.InsertField(bibliographyField, FieldDisplayMode.Result);
-```
+<snippet id='radrichtextbox-features-references-bibliographic-references-block_4-cs' />
 
 Changing Bibliographic Style using code behind
 
@@ -123,8 +98,5 @@ There is a method called __ChangeBibliographicStyle()__ on __RadRichTextBox__. I
 
 
 
-```C#
-	this.editor.ChangeBibliographicStyle(new HarvardAnglia2008Style());
-```
-
+<snippet id='radrichtextbox-features-references-bibliographic-references-block_5-cs' />
 

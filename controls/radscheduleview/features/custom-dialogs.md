@@ -29,12 +29,7 @@ In order to create a custom EditAppointmentDialog, use __EditAppointmentDialogSt
 
 
 
-```XAML
-	<TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="3"
-	   IsReadOnly="{Binding IsReadOnly}"
-	   Text="{Binding Occurrence.Appointment.Subject, Mode=TwoWay}"
-	   telerik:StyleManager.Theme="{StaticResource Theme}" />
-```
+<snippet id='radscheduleview-features-custom-dialogs-block_1-xaml' />
 
 Other important properties of the AppointmentDialogViewModel class include:
 
@@ -86,4 +81,3 @@ Choose one of the following approaches to obtain the source code of the needed d
 >If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) and merge the ResourceDictionaries, you will be able to reference the needed resources directly (there is no need to copy them together with the used Style). 
 
 * __Generate the style from RadScheduleView template__ - Generate first the __RadScheduleView__ template from Expression Blend ( Edit Template > Edit a Copy). Search for the needed Style and copy it together with all needed resources that it uses.
-

@@ -16,27 +16,8 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking">
-	
-	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup >
-	            <telerik:RadPane Header="Pane 1">
-	                <TextBlock Text="Some simple text here"/>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	
-	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup >
-	            <telerik:RadPane Header="Pane 2">
-	                <TextBlock Text="Some simple text here"/>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-how-to-add-icon-pane-header-block_1-xaml' />
+
 
 ![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_HowTo_AddPaneHeaderIcon_010.png)
 
@@ -44,45 +25,15 @@ In order to add an icon to the __RadPane's__ header, you should create a custom 
 
 
 
-```XAML
-	<UserControl.Resources>
-	
-	    <DataTemplate x:Key="HeaderTemplate">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding}"/>
-	            <Image Source="Icon.jpg" Width="16" Height="16"/>
-	        </StackPanel>
-	    </DataTemplate>
-	
-	</UserControl.Resources>
-```
+<snippet id='raddocking-how-to-add-icon-pane-header-block_2-xaml' />
+
 
 Set the created data template to the __HeaderTemplate__ property of the __RadPane__.
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking1">
-	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup>
-	
-	            <telerik:RadPane Header="Pane 1" HeaderTemplate="{StaticResource HeaderTemplate}">
-	                <TextBlock Text="Some simple text here"/>
-	            </telerik:RadPane>
-	
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup >
-	
-	            <telerik:RadPane Header="Pane 2" HeaderTemplate="{StaticResource HeaderTemplate}">
-	
-	                <TextBlock Text="Some simple text here"/>
-	            </telerik:RadPane>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-how-to-add-icon-pane-header-block_3-xaml' />
+
 
 Here is the final result:
 

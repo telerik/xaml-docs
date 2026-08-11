@@ -22,25 +22,8 @@ __Example 1__ shows a basic row details template. You can observe the result in 
 
 __Example 1: Basic RowDetails Template__
 
-```XAML
-	<telerik:RadGridView Name="rowTemplateRadGridView"
-						 AutoGenerateColumns="False"
-						 GroupRenderMode="Flat"
-						 RowDetailsVisibilityMode="VisibleWhenSelected">
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-		</telerik:RadGridView.Columns>
+<snippet id='radgridview-row-details-template-example_1_basic_rowdetails_template-xaml' />
 
-		<telerik:RadGridView.RowDetailsTemplate>
-			<DataTemplate>
-				<StackPanel Orientation="Horizontal" Margin="10">
-					<TextBlock Text="ID: " />
-					<TextBlock Text="{Binding Id}" />
-				</StackPanel>
-			</DataTemplate>
-		</telerik:RadGridView.RowDetailsTemplate>
-	</telerik:RadGridView>
-```
 
 __Figure 1:__ Displays the result of the applied __Basic RowDetails Template__.
 
@@ -52,31 +35,8 @@ __Example 2__ shows a complex row details template, which contains another RadGr
 
 __Example 2: Definition of Complex RowDetails Template__
 
-```XAML
-	<telerik:RadGridView Name="rowTemplateRadGridView"
-							AutoGenerateColumns="False"
-							GroupRenderMode="Flat"
-							RowDetailsVisibilityMode="VisibleWhenSelected">
-		<telerik:RadGridView.Columns>
-			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-		</telerik:RadGridView.Columns>
+<snippet id='radgridview-row-details-template-example_2_definition_of_complex_rowdetails_template-xaml' />
 
-		<telerik:RadGridView.RowDetailsTemplate>
-			<DataTemplate>
-				<telerik:RadGridView Name="playersGrid" 
-									 ItemsSource="{Binding Teams}" 
-									 AutoGenerateColumns="False"
-									 MaxHeight="200">
-					<telerik:RadGridView.Columns>
-						<telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"/>
-						<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"/>
-						<telerik:GridViewDataColumn DataMemberBinding="{Binding Place}"/>
-					</telerik:RadGridView.Columns>
-				</telerik:RadGridView>
-			</DataTemplate>
-		</telerik:RadGridView.RowDetailsTemplate>
-	</telerik:RadGridView>
-```
 
 >important You should specify fixed dimensions for the RadGridView in the RowDetailsTemplate (Height/MaxHeight and Width/MaxWidth). Otherwise the [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
 
@@ -85,21 +45,10 @@ __Figure 2:__ Displays the result of the applied __Complex RowDetails Template__
 
 __Example 3: Setting the ItemsSource for Examples 1 and 2__
 
-```C#
-	public MainWindow()
-	{
-		InitializeComponent();
+<snippet id='radgridview-row-details-template-example_3_setting_the_itemssource_for_examples_1_and_2-cs' />
 
-		this.rowTemplateRadGridView.ItemsSource = DivisionsService.GetDivisions();
-	}
-```
-```VB.NET
-	Public Sub New()
-		InitializeComponent()
+<snippet id='radgridview-row-details-template-example_3_setting_the_itemssource_for_examples_1_and_2-vb' />
 
-		Me.rowTemplateRadGridView.ItemsSource = DivisionsService.GetDivisions()
-	End Sub
-```
 
 ## See Also  
  * [RowDetails Overview]({%slug radgridview-row-details-overview%})  

@@ -15,13 +15,7 @@ The WrapAround feature provides infinite horizontal panning to the __RadMap__ co
 The feature is not enabled by default. To turn it on you can set the __WrapAround__ property of the RadMap to __True__.
 
 __Example 1: Setting the WrapAround property__
-```XAML
-	<telerik:RadMap WrapAround="True">
-		<telerik:RadMap.Provider>
-			<telerik:OpenStreetMapProvider />
-		</telerik:RadMap.Provider>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-wraparound-block_1-xaml' />
 
 
 #### __Figure 1: Wraparound functionality enabled__
@@ -40,18 +34,14 @@ RadMap exposes two methods which you can use to convert map coordinates.
 	This method accepts a location in the standard longitude range of the Mercator projection ( from -180 to 180 degrees), and returns a shifted location based on the shift of the map's center when panned outside of the standard longitude range.
 	
 	__Example 2: GetShiftedLocation method__
-	```C#
-		Location shiftedLocation = this.myRadMap.GetShiftedLocation(standardLocation);	
-	```	
+	<snippet id='radmap-features-wraparound-block_2-cs' />
 
 * __GetCoercedLocation(Location shiftedLocation)__
 
 	This method accepts shifted coordinates and returns a Location object by converting shifted location's to standard location in the range from -180 to 180 degrees.
 
 	__Example 3: GetCoercedLocation method__
-	```C#
-		Location desiredLocation = this.myRadMap.GetCoercedLocation(shiftedLocation);
-	```
+	<snippet id='radmap-features-wraparound-block_3-cs' />
 
 ## MiniMap Support
 

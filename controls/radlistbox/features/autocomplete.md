@@ -42,12 +42,7 @@ Setting __TextPath__ /__TextBinding__ property will allow to use "Name" property
 
 __Setting TextPath__
 
-```XAML
-	<telerik:RadListBox  Width="300" x:Name="radListBox1"
-	ItemsSource="{Binding Customers}"
-	ItemTemplate="{StaticResource ListBoxCustomTemplate}"
-	TextPath="Name" />
-```
+<snippet id='radlistbox-features-autocomplete-block_1-xaml' />
 
 Typing, for example "L" will select the corresponding item:
 
@@ -65,15 +60,11 @@ By default the autocomplete feature of __RadListBox__ is always enabled. In orde
 
 __Setting IsTextSearchEnabled__
 
-```XAML
-	<telerik:RadListBox x:Name="radListBox" IsTextSearchEnabled="False"/>
-```
+<snippet id='radlistbox-features-autocomplete-block_2-xaml' />
 
 __Setting IsTextSearchEnabled__
 
-```C#
-	radListBox.IsTextSearchEnabled = false;
-```
+<snippet id='radlistbox-features-autocomplete-block_3-cs' />
 
 ## Using AutocompleteBehavior.AutoCompleteTimeout
 
@@ -81,9 +72,5 @@ The __AutocompleteBehavior__ class exposes a static property named __AutoComplet
 
 __Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
 
-```C#
-	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
-```
-```VB.NET
-	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2)
-```
+<snippet id='radlistbox-features-autocomplete-block_4-cs' />
+<snippet id='radlistbox-features-autocomplete-block_4-vb' />

@@ -40,59 +40,17 @@ You can find the required assemblies for each control from the suite in the [Con
 First, we can go ahead and create our ViewModel with some tasks. The control API provides a built-in __TaskBoardCardModel__ model class which exposes the most needed properties to start organizing your tasks.
 
 #### __[C#] Example 1: Defining ViewModel
-```C#
-    public class MainViewModel
-	{
-		public ObservableCollection<TaskBoardCardModel> Data { get; set; }
-		public MainViewModel()
-		{
-			Data = GetTasks();
-		}
-		public ObservableCollection<TaskBoardCardModel> GetTasks()
-		{
-			ObservableCollection<TaskBoardCardModel> tasks = new ObservableCollection<TaskBoardCardModel>
-			{
-				new TaskBoardCardModel() { Assignee = "Nancy Davolio", Description = "Task Description", State = "In Progress", Title = "Task Title" },
-
-				new TaskBoardCardModel() { Assignee = "Andrew Fuller", Description = "Task Description", State = "Not Done", Title = "Task Title" },
-
-				new TaskBoardCardModel() { Assignee = "Janet Leverling", Description = "Task Description", State = "Not Done", Title = "Task Title" },
-
-				new TaskBoardCardModel() { Assignee = "Margaret Peacock", Description = "Task Description", State = "Not Done", Title = "Task Title" },
-
-				new TaskBoardCardModel() { Assignee = "Steven Buchanan", Description = "Task Description", State = "Done", Title = "Task Title" },
-
-				new TaskBoardCardModel() { Assignee = "Michael Suyama", Description = "Task Description", State = "Done", Title = "Task Title" },
-
-				new TaskBoardCardModel() { Assignee = "Robert King", Description = "Task Description", State = "Done", Title = "Task Title" },
-
-				new TaskBoardCardModel() { Assignee = "Laura Callahan", Description = "Task Description", State = "In Progress", Title = "Task Title" },
-
-				new TaskBoardCardModel() { Assignee = "Anne Dodsworth", Description = "Task Description", State = "In Progress", Title = "Task Title" }
-			};
-
-			return tasks;
-		}
-	}
-```
+<snippet id='radtaskboard-getting-started-block_1-cs' />
 
 Next we need to define RadTaskBoard in XAML, bind the ItemsSource property of the RadTaskBoard and set the __GroupMemberPath__ property. The __GroupMemberPath__ property indicates which property from your model will be used to group the tasks.
 
 #### __[XAML] Example 2: Binding RadTaskBoard
-```XAML
-    <telerik:RadTaskBoard ItemsSource="{Binding Data}" GroupMemberPath="State" />
-```
+<snippet id='radtaskboard-getting-started-block_2-xaml' />
 
 And finally, we need to set the DataContext of the MainWindow:
 
 #### __[C#] Example 3: Setting DataContext
-```C#
-    public MainWindow() 
-    { 
-        InitializeComponent(); 
-        this.DataContext = new MainViewModel(); 
-    }
-```
+<snippet id='radtaskboard-getting-started-block_3-cs' />
 
 If you run the application now, you should get a structure like in Figure 1:
 #### Figure 1: RadTaskBoard with sample data
@@ -115,16 +73,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radtaskboard-getting-started-block_4-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -150,4 +99,3 @@ __Figure 2__ shows a RadTaskBoard with the **Windows8** theme applied.
  * [Column]({%slug radtaskboard-features-column%})
  * [Binding to TaskBoardCardModel]({%slug radtaskboard-populating-with-data-binding-taskboardcardmodel%})
  * [Indicator Color]({%slug radtaskboard-features-category-indicator%})
-

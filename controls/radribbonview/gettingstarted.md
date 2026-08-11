@@ -50,9 +50,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 You can add a RadRibbonView manually in XAML as demonstrated in the following example:
 
 __Adding a RadRibbonView in XAML__
-```XAML
-	<telerik:RadRibbonView />
-```
+<snippet id='radribbonview-gettingstarted-block_1-xaml' />
 	
 At this state, the ribbonview is empty - there are not tabs, backstage or any other ribbon components. You can learn about the controls that the RadRibbonView can contain from the [Features]({%slug radribbonview-ribbon-tab%}) section of the documentation.
 
@@ -71,40 +69,11 @@ The tabs can be added in the `Items` collection of RadRibbonView. The RadRibbonT
 The next examples demonstrate how to do this in XAML and code-behind:
 
 __Adding RadRibbonTabs in XAML__  
-```XAML
-    <telerik:RadRibbonView>
-		<telerik:RadRibbonView.Items>
-			<telerik:RadRibbonTab Header="Home" />
-			<telerik:RadRibbonTab Header="View" />
-			<telerik:RadRibbonTab Header="Insert" />
-			<telerik:RadRibbonTab Header="References" />
-		</telerik:RadRibbonView.Items>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-gettingstarted-block_2-xaml' />
 	
 __Adding RadRibbonTabs in code__
-```C#
-	RadRibbonView ribbonView = new RadRibbonView();
-	ribbonView.Items.Add(new RadRibbonTab() { Header = "Home" });
-	ribbonView.Items.Add(new RadRibbonTab() { Header = "View" });
-	ribbonView.Items.Add(new RadRibbonTab() { Header = "Insert" });
-	ribbonView.Items.Add(new RadRibbonTab() { Header = "References" });
-```
-```VB.NET
-	Dim ribbonView As New RadRibbonView()
-	ribbonView.Items.Add(New RadRibbonTab() With { _
-		.Header = "Home" _
-	})
-	ribbonView.Items.Add(New RadRibbonTab() With { _
-		.Header = "View" _
-	})
-	ribbonView.Items.Add(New RadRibbonTab() With { _
-		.Header = "Insert" _
-	})
-	ribbonView.Items.Add(New RadRibbonTab() With { _
-		.Header = "References" _
-	})
-```
+<snippet id='radribbonview-gettingstarted-block_3-cs' />
+<snippet id='radribbonview-gettingstarted-block_4-vb' />
 
 __RadRibbonView with several RadRibbonTabs defined in its Items collection__
 
@@ -115,19 +84,7 @@ __RadRibbonView with several RadRibbonTabs defined in its Items collection__
 RadRibbonTab is a `HeaderedItemsControl`, which means that it can contain a collection of items. The children of the ribbon tab should be objects of type `RadRibbonGroup`. They expose a Header property that is used to define the content of their header.
 
 __Adding RadRibbonGroups__
-```XAML
-	<telerik:RadRibbonView>
-		<telerik:RadRibbonView.Items>
-			<telerik:RadRibbonTab Header="Home">
-				<telerik:RadRibbonGroup Header="Clipboard">                        
-				</telerik:RadRibbonGroup>
-				<telerik:RadRibbonGroup Header="Font">
-				</telerik:RadRibbonGroup>
-			</telerik:RadRibbonTab>
-			<telerik:RadRibbonTab Header="View" />
-		</telerik:RadRibbonView.Items>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-gettingstarted-block_5-xaml' />
 
 #### __A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection__
 
@@ -136,28 +93,7 @@ __Adding RadRibbonGroups__
 The RadRibbonGroup element is also a HeaderedItemsControl and it can have child elements on its own.
 
 __Adding RadRibbonGroup content__
-```XAML
-	<telerik:RadRibbonView>
-		<telerik:RadRibbonView.Items>
-			<telerik:RadRibbonTab Header="Home">
-				<telerik:RadRibbonGroup Header="Clipboard">                        
-					<telerik:RadRibbonButton Text="Copy" />
-					<telerik:RadRibbonSplitButton Text="Paste">
-						<telerik:RadRibbonSplitButton.DropDownContent>
-							<telerik:RadMenu>
-								<telerik:RadMenuItem Header="Paste" />
-								<telerik:RadMenuItem Header="Paste from" />
-							</telerik:RadMenu>
-						</telerik:RadRibbonSplitButton.DropDownContent>
-					</telerik:RadRibbonSplitButton>
-				</telerik:RadRibbonGroup>
-				<telerik:RadRibbonGroup Header="Font">
-				</telerik:RadRibbonGroup>
-			</telerik:RadRibbonTab>
-			<telerik:RadRibbonTab Header="View" />
-		</telerik:RadRibbonView.Items>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-gettingstarted-block_6-xaml' />
 
 __A RadRibbonGroup with a couple ribbon buttons defined in its Items collection__
 
@@ -182,19 +118,11 @@ Check out the following topics, which are tightly connected to the resizing beha
 You can se the icon of the ribbonview's application button through the `ApplicationButtonImageSource` property, which is of type `ImageSource`.
 
 __Setting the RadRibbonView application button image source in XAML__
-```XAML
-	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png" />
-```
+<snippet id='radribbonview-gettingstarted-block_7-xaml' />
 	
 __Setting the RadRibbonView application button image source in code__
-```C#
-	RadRibbonView ribbonView = new RadRibbonView();
-	ribbonView.ApplicationButtonImageSource = new BitmapImage(new Uri(appIconStringPath));
-```
-```VB.NET
-	Dim ribbonView As New RadRibbonView()
-	ribbonView.ApplicationButtonImageSource = New BitmapImage(New Uri(appIconStringPath))
-```
+<snippet id='radribbonview-gettingstarted-block_8-cs' />
+<snippet id='radribbonview-gettingstarted-block_9-vb' />
 
 __RadRibbonView application button image__
 
@@ -205,9 +133,7 @@ __RadRibbonView application button image__
 The header displayed at the title bar of RadRibbonView is constructed by its `Title` and `ApplicationName` properties with a dash separator between them. You can take a peek at the [Visual Structure]({%slug radribbonview-visual-structure%}) article to see how it looks.
 
 __Setting the RadRibbonView application title and name__
-```XAML
-	<telerik:RadRibbonView ApplicationName="RadRibbonView" Title="Document 1" />
-```
+<snippet id='radribbonview-gettingstarted-block_10-xaml' />
 
 __Title and ApplicationName properties reflected in the UI__
 
@@ -220,28 +146,7 @@ __Title and ApplicationName properties reflected in the UI__
 The RadRibbonView control exposes the `TitleBarBackground` property that will allow you to customize the color of the control's title.
 
 __Setting the color of the RadRibbonView's title__
-```XAML
-	<telerik:RadRibbonView TitleBarBackground="Red">
-		<telerik:RadRibbonView.Items>
-			<telerik:RadRibbonTab Header="Home">
-				<telerik:RadRibbonGroup Header="Clipboard">                        
-					<telerik:RadRibbonButton Text="Copy" />
-					<telerik:RadRibbonSplitButton Text="Paste">
-						<telerik:RadRibbonSplitButton.DropDownContent>
-							<telerik:RadMenu>
-								<telerik:RadMenuItem Header="Paste" />
-								<telerik:RadMenuItem Header="Paste from" />
-							</telerik:RadMenu>
-						</telerik:RadRibbonSplitButton.DropDownContent>
-					</telerik:RadRibbonSplitButton>
-				</telerik:RadRibbonGroup>
-				<telerik:RadRibbonGroup Header="Font">
-				</telerik:RadRibbonGroup>
-			</telerik:RadRibbonTab>
-			<telerik:RadRibbonTab Header="View" />
-		</telerik:RadRibbonView.Items>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-gettingstarted-block_11-xaml' />
 
 __RadRibbonView with a different color set to the title__
 
@@ -254,27 +159,7 @@ The __backstage menu__ is equivalent to the __File__ menu of the traditional men
 To declare a backstage menu in RadRibbonView you can set its `Backstage` property to an object of type `RadRibbonBackstage`. 
 
 __Sample backstage definition with several child RadRibbonBackstageItems in its Items collection.__
-```XAML
-	<telerik:RadRibbonView>
-		<telerik:RadRibbonView.Backstage>                
-			<telerik:RadRibbonBackstage>
-				<telerik:RadRibbonBackstageItem Header="Save" IsSelectable="False" />
-				<telerik:RadRibbonBackstageItem Header="Open" IsSelectable="False" />
-				<telerik:RadRibbonBackstageItem Header="Recent">
-					<StackPanel Margin="10">
-						<TextBlock Text="Recent files: " Margin="0 0 0 5" />
-						<telerik:RadListBox>
-							<telerik:RadListBoxItem Content="Document 1" />
-							<telerik:RadListBoxItem Content="Document 2" />
-							<telerik:RadListBoxItem Content="Document 3" />
-							<telerik:RadListBoxItem Content="Document 4" />
-						</telerik:RadListBox>
-					</StackPanel>
-				</telerik:RadRibbonBackstageItem>
-			</telerik:RadRibbonBackstage>
-		</telerik:RadRibbonView.Backstage>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-gettingstarted-block_12-xaml' />
 
 __RadRibbon Backstage example__
 
@@ -287,17 +172,7 @@ __RadRibbon Backstage example__
 The Quick Access Toolbar is used to render a set of RadRibbonView controls (commands) that are most commonly used in the application. It is rendered right above the ApplicationButton to make it easily accessible to users. To declare the Quick Access ToolBar, you need to set the `QuickAccessToolBar` property. 
 
 __Sample setup of QuickAccessToolBar__
-```XAML
-	 <telerik:RadRibbonView>
-		<telerik:RadRibbonView.QuickAccessToolBar>
-			<telerik:QuickAccessToolBar>
-				<telerik:RadRibbonButton SmallImage="images/save.png" telerik:RadToolTipService.ToolTipContent="Save"/>
-				<telerik:RadRibbonButton SmallImage="images/undo.png" telerik:RadToolTipService.ToolTipContent="Undo"/>
-				<telerik:RadRibbonButton SmallImage="images/print.png" telerik:RadToolTipService.ToolTipContent="Print"/>
-			</telerik:QuickAccessToolBar>
-		</telerik:RadRibbonView.QuickAccessToolBar>		
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-gettingstarted-block_13-xaml' />
 
 __QuickAccessToolBar visualization with one of its buttons hovered__  
 
@@ -310,54 +185,7 @@ __QuickAccessToolBar visualization with one of its buttons hovered__
 This section contains all features demonstrated in the article assembled into a single example.
 
 __Complete code example__
-```XAML
-	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png"
-						   ApplicationName="RadRibbonView"
-						   Title="Document 1">
-		<telerik:RadRibbonView.QuickAccessToolBar>
-			<telerik:QuickAccessToolBar>
-				<telerik:RadRibbonButton SmallImage="images/save.png" telerik:RadToolTipService.ToolTipContent="Save"/>
-				<telerik:RadRibbonButton SmallImage="images/undo.png" telerik:RadToolTipService.ToolTipContent="Undo"/>
-				<telerik:RadRibbonButton SmallImage="images/print.png" telerik:RadToolTipService.ToolTipContent="Print"/>
-			</telerik:QuickAccessToolBar>
-		</telerik:RadRibbonView.QuickAccessToolBar>
-		<telerik:RadRibbonView.Backstage>
-			<telerik:RadRibbonBackstage>
-				<telerik:RadRibbonBackstageItem Header="Save" IsSelectable="False" />
-				<telerik:RadRibbonBackstageItem Header="Open" IsSelectable="False" />
-				<telerik:RadRibbonBackstageItem Header="Recent">
-					<StackPanel Margin="10">
-						<TextBlock Text="Recent files:" Margin="0 0 0 5" />
-						<telerik:RadListBox>
-							<telerik:RadListBoxItem Content="Document 1" />
-							<telerik:RadListBoxItem Content="Document 2" />
-							<telerik:RadListBoxItem Content="Document 3" />
-							<telerik:RadListBoxItem Content="Document 4" />
-						</telerik:RadListBox>
-					</StackPanel>
-				</telerik:RadRibbonBackstageItem>
-			</telerik:RadRibbonBackstage>
-		</telerik:RadRibbonView.Backstage>
-		<telerik:RadRibbonView.Items>
-			<telerik:RadRibbonTab Header="Home">
-				<telerik:RadRibbonGroup Header="Clipboard">
-					<telerik:RadRibbonButton Text="Copy" />
-					<telerik:RadRibbonSplitButton Text="Paste">
-						<telerik:RadRibbonSplitButton.DropDownContent>
-							<telerik:RadMenu>
-								<telerik:RadMenuItem Header="Paste" />
-								<telerik:RadMenuItem Header="Paste from" />
-							</telerik:RadMenu>
-						</telerik:RadRibbonSplitButton.DropDownContent>
-					</telerik:RadRibbonSplitButton>
-				</telerik:RadRibbonGroup>
-				<telerik:RadRibbonGroup Header="Font">
-				</telerik:RadRibbonGroup>
-			</telerik:RadRibbonTab>
-			<telerik:RadRibbonTab Header="View" />
-		</telerik:RadRibbonView.Items>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-gettingstarted-block_14-xaml' />
 
 __RadRibbonView example__  
 
@@ -383,19 +211,7 @@ To change the theme, you can follow the steps below:
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.RibbonView.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radribbonview-gettingstarted-block_15-xaml' />
 
 >Alternatively, you can use the theme of the control via the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach.
 

@@ -26,20 +26,15 @@ The following properties hold the information about the selection in the __RadDa
 * 
 
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker"
-	   SelectedDate="11/15/2010"
-	   SelectedTime="10:00"/>
-```
+<snippet id='raddatetimepicker-features-selection-block_1-xaml' />
 
 
 
-```C#
-	this.radDateTimePicker.SelectedValue = new DateTime(2010, 1, 5, 10, 0, 0);
-```
-```VB.NET
-	Me.radDateTimePicker.SelectedValue = New DateTime(2010, 1, 5, 10, 0, 0)
-```
+
+<snippet id='raddatetimepicker-features-selection-block_2-cs' />
+
+<snippet id='raddatetimepicker-features-selection-block_2-vb' />
+
 
 ## Restricting the date item's selection
 
@@ -51,11 +46,8 @@ In the __RadDateTimePicker's__ calendar you can restrict the selectable items by
 
 
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker1" 
-	   SelectableDateStart="8/10/2010"
-	   SelectableDateEnd="10/10/2010"/>
-```
+<snippet id='raddatetimepicker-features-selection-block_3-xaml' />
+
 
 ![{{ site.framework_name }} RadDateTimePicker with Custom Selectable Start and End Date](images/dateTimePicker_features_selection_010.png)
 
@@ -73,12 +65,8 @@ Telerik introduced the __IsInputRestrictedToSelectableDates__ boolean property i
 
 
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker2" 
-	   SelectableDateStart="8/10/2015"
-	   SelectableDateEnd="10/11/2015"
-	   IsInputRestrictedToSelectableDates="True"/>
-```
+<snippet id='raddatetimepicker-features-selection-block_4-xaml' />
+
 
 ## See Also
 

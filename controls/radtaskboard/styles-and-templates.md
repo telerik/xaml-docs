@@ -18,18 +18,7 @@ You can configure the visualization of the data and the appearance of the card i
 
 __Define a custom ItemTemplate__
 
-```XAML
-   <telerik:RadTaskBoard.ItemTemplate> 
-		<DataTemplate> 
-			<StackPanel> 
-				<TextBlock Text={Binding State}/> 
-				<TextBlock Text={Binding Assignee}/> 
-				<TextBlock Text={Binding Header}/> 
-				<TextBlock Text={Binding Description}/> 
-			</StackPanel> 
-		</DataTemplate> 
-	</telerik:RadTaskBoard.ItemTemplate> 
-```
+<snippet id='radtaskboard-styles-and-templates-block_1-xaml' />
 
 If you wish to return different templates for the card items, you can use the **ItemTemplateSelectior** property and pass a custom **DataTemplateSelector** to it.
 
@@ -39,15 +28,7 @@ To further customize the headers of all columns, you can create your own DataTem
 
 __Set ColumnHeaderTemplate__
 
-```XAML
-   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" ItemsSource="{Binding Data}">
-		<telerik:RadTaskBoard.ColumnHeaderTemplate>
-			<DataTemplate>
-				<TextBlock Text="{Binding }" FontSize="25" Foreground="Red"/>
-			</DataTemplate>
-		</telerik:RadTaskBoard.ColumnHeaderTemplate>
-	</telerik:RadTaskBoard>
-```
+<snippet id='radtaskboard-styles-and-templates-block_2-xaml' />
 
 ## ItemContainerStyle and ItemContainerStyleSelectior
 
@@ -55,15 +36,7 @@ The task inside the __RadTaskBoard__ control are represented by a __RadTaskBoard
 
 __Specify ItemContainerStyle__
 
-```XAML
-	<telerik:RadTaskBoard.ItemContainerStyle>
-		<Style TargetType="telerik:RadTaskBoardItem">
-			<Setter Property="Background" Value="Bisque"/>
-			<Setter Property="FontWeight" Value="Bold" />
-			<Setter Property="FontSize" Value="50" />
-		</Style>
-	</telerik:RadTaskBoard.ItemContainerStyle>
-```
+<snippet id='radtaskboard-styles-and-templates-block_3-xaml' />
 
 If you wish to return different styles for the card items, you can use the **ItemContainerStyleSelectior** property and pass a custom **StyleSelector** to it.	
 	

@@ -14,40 +14,8 @@ The `LocalDataSourceProvider` exposes a `GetUnderlyingData` method that allows y
 
 __Calling GetUnderlyingData on Cell Double-Click__
 
-```C#
-	private void pivotGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-	{
-		var pivotGrid = sender as RadPivotGrid;
-		if (pivotGrid != null)
-	    {
-		    var cellData = (e.OriginalSource as FrameworkElement).DataContext as CellData;
-		    if (cellData != null)
-		    {
-		        var cellAggregateValue = cellData.Data as CellAggregateValue;
-		        var localProvider = pivotGrid.DataProvider as LocalDataSourceProvider;
-				if (localProvider != null)
-				{
-		        	localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup);
-				}          
-		    }
-		}
-	}
-```
-```VB.NET
-	Private Sub pivotGrid_MouseDoubleClick(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
-			Dim pivotGrid = TryCast(sender, RadPivotGrid)
-			If pivotGrid IsNot Nothing Then
-				Dim cellData = TryCast((TryCast(e.OriginalSource, FrameworkElement)).DataContext, CellData)
-				If cellData IsNot Nothing Then
-					Dim cellAggregateValue = TryCast(cellData.Data, CellAggregateValue)
-					Dim localProvider = TryCast(pivotGrid.DataProvider, LocalDataSourceProvider)
-					If localProvider IsNot Nothing Then
-						localProvider.GetUnderlyingData(cellAggregateValue.RowGroup, cellAggregateValue.ColumnGroup)
-					End If
-				End If
-			End If
-	End Sub
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-drilldown-block_1-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-drilldown-block_1-vb' />
 
 Once RadPivotGrid has finished processing the underlying data, the newly-introduced GetUnderlyingDataCompleted event will be fired. Its `DrillDownCompletedEventArgs` have two properties:
 
@@ -60,33 +28,8 @@ Once RadPivotGrid has finished processing the underlying data, the newly-introdu
 
 __Example 2: The GetUnderlyingDataCompleted Event Handler__
 
-```C#
-	private void dataProvider_GetUnderlyingDataCompleted(object sender, DrillDownCompletedEventArgs e)
-    {
-		Dispatcher.BeginInvoke(new Action(() => 
-        {
-		    if (e.InnerExceptions.Count() == 0)
-		    {
-		        this.underlyingDataGridView.ItemsSource = e.Result;
-		    }
-		    else
-	        {
-	            this.errorText = e.InnerExceptions.First().Message;
-	        }
-		}));
-    }
-```
-```VB.NET
-	Private Sub dataProvider_GetUnderlyingDataCompleted(ByVal sender As Object, ByVal e As DrillDownCompletedEventArgs)
-			Dispatcher.BeginInvoke(New Action(Sub()
-				If e.InnerExceptions.Count() = 0 Then
-					Me.underlyingDataGridView.ItemsSource = e.Result
-				Else
-					Me.errorText = e.InnerExceptions.First().Message
-				End If
-			End Sub))
-	End Sub
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-drilldown-block_2-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-drilldown-block_2-vb' />
 
 >A better example of the Drill Down functionality can be found in the [WPF Controls Samples](https://demos.telerik.com/wpf/) under **PivotGrid -> Underlying data**.
 

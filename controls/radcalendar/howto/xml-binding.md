@@ -16,34 +16,10 @@ The __DataSource.xml__ file has the following content:
 
 
 
-```XAML
-	<ChosenDates>
-	    <Date>08/21/2010</Date>
-	    <Date>08/04/2010</Date>
-	    <Date>08/01/2010</Date>
-	    <Date>08/26/2010</Date>
-	    <Date>08/02/2010</Date>
-	    <Date>08/03/2010</Date>
-	    <Date>08/19/2010</Date>
-	    <Date>08/10/2010</Date>
-	</ChosenDates>
-```
+<snippet id='radcalendar-howto-xml-binding-block_1-xaml' />
 
 The following code snippet loads the file and extracts the Date nodes out of it, then assigns the respective dates as selection:
 
 
 
-```C#
-	// Make sure that more than one date can be selected:
-	calendar.SelectionMode = SelectionMode.Extended;
-	// Load the xml document and get the culture with wich the dates were serialized:
-	XDocument xmlSource = XDocument.Load("DataSource.xml");
-	CultureInfo usCulture = new CultureInfo("En-US");
-	// Add Get all the dates in the xml document and add them as selected dates:
-	foreach (var dateNode in xmlSource.Descendants("Date"))
-	{
-	    calendar.SelectedDates.Add(DateTime.Parse(dateNode.Value, usCulture.DateTimeFormat));
-	}
-	// Set the display date to the forst selected date, so that the selection is visible.
-	calendar.DisplayDate = (DateTime)calendar.SelectedDates[0];
-```
+<snippet id='radcalendar-howto-xml-binding-block_2-cs' />

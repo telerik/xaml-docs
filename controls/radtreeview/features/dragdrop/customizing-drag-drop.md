@@ -37,22 +37,11 @@ More details about how to disable each one of the elements you will find later i
 To disable the drop action on a specific RadTreeViewItem, set its __IsDropAllowed__ to False.
 		
 __Example 1: Disable drop in XAML__ 
-```XAML
-	<telerik:RadTreeViewItem x:Name="radTreeViewItem" IsDropAllowed="False">
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_1-xaml' />
 
 __Example 2: Disable drop in code-behind__
-```C#
-	private void DisableDropOnSpecificItem()
-	{
-	    radTreeViewItem.IsDropAllowed = false;
-	}
-```
-```VB.NET
-	Private Sub DisableDropOnSpecificItem()
-	    radTreeViewItem.IsDropAllowed = False
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_2-cs' />
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_3-vb' />
 
 #### Figure 3: Disabled drop action
 ![Rad Tree View-Drag Drop-Disable Drop](images/RadTreeView-DragDrop-DisableDrop.png)
@@ -62,22 +51,11 @@ __Example 2: Disable drop in code-behind__
 To disable the [Drag Preview](#visual-elements-of-the-drag-and-drop-operation), set the __IsDragPreviewEnabled__ property of RadTreeView to False.
 
 __Example 3: Disable drag preview in XAML__  
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" IsDragDropEnabled="True" IsDragPreviewEnabled="False">
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_4-xaml' />
 
 __Example 4: Disable drag preview in code-behind__  
-```C#
-	private void DisableDragPreview()
-	{
-	    radTreeView.IsDragPreviewEnabled = false;
-	}
-```
-```VB.NET
-	Private Sub DisableDragPreview()
-	    radTreeView.IsDragPreviewEnabled = False
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_5-cs' />
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_6-vb' />
 
 #### Figure 4: Hidden drag preview element
 ![{{ site.framework_name }} RadTreeView Hidden drag preview element](images/RadTreeView_TreeViewDragAndDrop_050.png)
@@ -87,25 +65,11 @@ __Example 4: Disable drag preview in code-behind__
 To disable the [Drag Tooltip](#visual-elements-of-the-drag-and-drop-operation), set the __IsDragTooltipEnabled__ property of RadTreeView to False.
 
 __Example 5: Disable drag tooltip in XAML__  
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" 
-						 IsDragDropEnabled="True"
-						 IsDragPreviewEnabled="False"
-						 IsDragTooltipEnabled="False">
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_7-xaml' />
 
 __Example 6: Disable drag tooltip in code-behind__  
-```C#
-	private void DisableDragTooltip()
-	{
-	    radTreeView.IsDragTooltipEnabled = false;
-	}
-```
-```VB.NET
-	Private Sub DisableDragTooltip()
-	    radTreeView.IsDragTooltipEnabled = False
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_8-cs' />
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_9-vb' />
 
 #### Figure 5: Hidden drag tooltip
 ![{{ site.framework_name }} RadTreeView Hidden drag tooltip](images/RadTreeView_TreeViewDragAndDrop_060.png)
@@ -115,26 +79,11 @@ __Example 6: Disable drag tooltip in code-behind__
 To disable the [Drag Preview Line](#visual-elements-of-the-drag-and-drop-operation), set the __IsDropPreviewLineEnabled__ property of RadTreeView to False.
 
 __Example 7: Disable drop preview line__  
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" 
-						IsDragDropEnabled="True"
-						IsDragPreviewEnabled="False"
-						IsDragTooltipEnabled="False"
-						IsDropPreviewLineEnabled="False">
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_10-xaml' />
 
 __Example 8: Disable drop preview line in code-behind__  
-```C#
-	private void DisableDropPreviewLine()
-	{
-	    radTreeView.IsDropPreviewLineEnabled = false;
-	}
-```
-```VB.NET
-	Private Sub DisableDropPreviewLine()
-	    radTreeView.IsDropPreviewLineEnabled = False
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_11-cs' />
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_12-vb' />
 
 #### Figure 6: Hidden drag/drop visual elements
 ![{{ site.framework_name }} RadTreeView Hidden drag/drop visual elements](images/RadTreeView_TreeViewDragAndDrop_070.png)
@@ -160,29 +109,16 @@ RadTreeView internally handles the following __DragDropManager events__:
 As RadTreeView handles internally the above DragDropManager events, in order to add a custom handler, you need to explicitly specify that you're adding a __handler that should be invoked even for already handled events__. This is done through the last - __bool__ - argument of the __DragDropManager.Add[Event]Handler__ extension method.
 
 __Example 9: Subscribe to the DragOver event__  
-```C#
-	DragDropManager.AddDragOverHandler(xTreeView, OnTreeViewDragOver, true);  
-```
-```VB.NET
-	DragDropManager.AddDragOverHandler(xTreeView, OnTreeViewDragOver, True) 
-```		
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_13-cs' />
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_14-vb' />
 
 >tip Find more information about the __DragDropManager__ events in the [Events]({%slug dragdropmanager-events%}) tutorial.
 
 The RadTreeView drag/drop operation creates a __TreeViewDragDropOptions__ object which is the payload and passed to the __Data__ property of the drag/drop event arguments. You can extract that object through the event arguments of the __DragDropManager__ events.
 
 __Example 10: Getting the TreeViewDragDropOptions__  
-```C#
-	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e) 
-    { 
-        var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
-    } 
-```
-```VB.NET
-	Private Sub OnDragOver(ByVal sender As Object, ByVal e As Telerik.Windows.DragDrop.DragEventArgs)
-		Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
-	End Sub
-```	
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_15-cs' />
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_16-vb' />
 
 The __TreeViewDragDropOptions__ class exposes the following properties:		
 
@@ -212,27 +148,8 @@ The __TreeViewDragDropOptions__ class exposes the following properties:
 In order to __reflect changes in the TreeViewDragDropOptions object to the drag visual__, call the TreeViewDragDropOptions' __UpdateDragVisual method__. For instance, if you need to disable a drag operation and you set the TreeViewDragDropOptions DropAction value to None, the visual feedback of the operation won't reflect that change although the drop operation will be forbidden. And in order to make the RadTreeView instance update its drag visual to display a *DropImpossible* indicator, you need to invoke the UpdateDragVisual method.
 
 __Example 11: Using the UpdateDragVisual method__  
-```C#
-	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e) 
-    { 
-        var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions; 
-        if (options!=null && options.DropPosition != Telerik.Windows.Controls.DropPosition.Inside) 
-        { 
-            options.DropPosition = Telerik.Windows.Controls.DropPosition.Inside; 
-            options.UpdateDragVisual(); 
-        } 
-    } 
-```
-```VB.NET
-	Private Sub OnDragOver(ByVal sender As Object, ByVal e As Telerik.Windows.DragDrop.DragEventArgs)
-		Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
-
-		If options IsNot Nothing AndAlso options.DropPosition <> Telerik.Windows.Controls.DropPosition.Inside Then
-			options.DropPosition = Telerik.Windows.Controls.DropPosition.Inside
-			options.UpdateDragVisual()
-		End If
-	End Sub
-```
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_17-cs' />
+<snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_18-vb' />
 
 ## See Also
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})

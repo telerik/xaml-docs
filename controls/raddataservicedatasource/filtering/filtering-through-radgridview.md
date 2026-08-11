@@ -18,19 +18,8 @@ If you bind __RadGridView.ItemsSource__ to __RadDataServiceDataSource.DataView__
 
 
 
-```XAML
+<snippet id='raddataservicedatasource-filtering-filtering-through-radgridview-block_1-xaml' />
 
-	<Grid x:Name="LayoutRoot" Background="White">
-	 <telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
-	  <telerik:RadDataServiceDataSource.DataServiceContext>
-	   <local:MyNorthwindContext/>
-	  </telerik:RadDataServiceDataSource.DataServiceContext>
-	 </telerik:RadDataServiceDataSource>
-	 <telerik:RadGridView Grid.Row="0" ItemsSource="{Binding DataView, ElementName=customersDataSource}" 
-	      IsBusy="{Binding IsBusy, ElementName=customersDataSource}" 
-	    ShowGroupPanel="False"/>  
-	</Grid>
-```
 
 
 

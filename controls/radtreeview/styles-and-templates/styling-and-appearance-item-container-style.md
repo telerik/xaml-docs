@@ -16,52 +16,10 @@ To style the items you can use the __ItemContainerStyle__ property of RadTreeVie
 
 {% if site.site_name == 'Silverlight' %}
 __Example 1: RadTreeView definition__  
-```XAML
-	<UserControl.Resources>	
-	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>	
-	    <DataTemplate x:Key="Team">
-	        <TextBlock Text="{Binding Name}" />
-	    </DataTemplate>	
-	    <telerik:HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-	       ItemsSource="{Binding Teams}">
-	        <TextBlock Text="{Binding Name}" />
-	    </telerik:HierarchicalDataTemplate>	
-	    <telerik:HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-	       ItemsSource="{Binding Divisions}">
-	        <TextBlock Text="{Binding Name}" />
-	    </telerik:HierarchicalDataTemplate>	
-	</UserControl.Resources>
-	
-	<Grid x:Name="LayoutRoot" Background="White">	
-	    <telerik:RadTreeView x:Name="radTreeView"
-	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-	       ItemTemplate="{StaticResource League}"/>	
-	</Grid>
-```  
+<snippet id='radtreeview-styles-and-templates-styling-and-appearance-item-container-style-block_1-xaml' />
 {% else %}
 __Example 1: RadTreeView definition__  
-```XAML
-	<UserControl.Resources>	
-	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>	
-	    <DataTemplate x:Key="Team">
-	        <TextBlock Text="{Binding Name}" />
-	    </DataTemplate>	
-	    <HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-	       ItemsSource="{Binding Teams}">
-	        <TextBlock Text="{Binding Name}" />
-	    </HierarchicalDataTemplate>	
-	    <HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-	       ItemsSource="{Binding Divisions}">
-	        <TextBlock Text="{Binding Name}" />
-	    </HierarchicalDataTemplate>	
-	</UserControl.Resources>
-	
-	<Grid x:Name="LayoutRoot" Background="White">	
-	    <telerik:RadTreeView x:Name="radTreeView"
-	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-	       ItemTemplate="{StaticResource League}"/>	
-	</Grid>
-```
+<snippet id='radtreeview-styles-and-templates-styling-and-appearance-item-container-style-block_2-xaml' />
 {% endif %}
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
@@ -76,23 +34,10 @@ The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ 
 __Example 2__ demonstrates how to create an ItemContainerStyle, which sets the Foreground and IsExpanded properties of the items. 
 
 __Example 2: ItemContainerStyle Definition__  
-```XAML
- 	<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-	<Style x:Key="myItemContainerStyle" TargetType="telerik:RadTreeViewItem" BasedOn="{StaticResource RadTreeViewItemStyle}">-->
-
-	<Style x:Key="myItemContainerStyle" TargetType="telerik:RadTreeViewItem">
-	    <Setter Property="Foreground" Value="Red"/>
-	    <Setter Property="IsExpanded" Value="True"/>
-	</Style>
-```
+<snippet id='radtreeview-styles-and-templates-styling-and-appearance-item-container-style-block_3-xaml' />
 
 __Example 3: Setting the ItemContainerStyle property__  
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView"
-	   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-	   ItemTemplate="{StaticResource League}"
-	   ItemContainerStyle="{StaticResource myItemContainerStyle}"/>
-```
+<snippet id='radtreeview-styles-and-templates-styling-and-appearance-item-container-style-block_4-xaml' />
 
 #### __Figure 2: Result from Example 3__
 ![RadTreeView with custom ItemContainerStyle](images/RadTreeView_TemplatingItemContainerStyle_010.PNG)

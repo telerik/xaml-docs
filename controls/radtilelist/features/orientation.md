@@ -19,9 +19,7 @@ The tiles in a group can be arranged horizontally or vertically. This is control
 * __Vertical orientation__: Tiles are arranged top to bottom and if a scrollbar is needed it is horizontal. This is the __default value__.
 
 __Example 1: Setting tiles arrangement orientation__
-```XAML
-	<telerik:RadTileList Orientation="Horizontal" />
-```
+<snippet id='radtilelist-features-orientation-block_1-xaml' />
 
 #### Figure 1: Vertically arranged tiles
 ![{{ site.framework_name }} RadTileList Vertically arranged tiles](images/radtilelist-tiles-arrangement-0.png)
@@ -32,14 +30,10 @@ __Example 1: Setting tiles arrangement orientation__
 To control the alignment of the tiles in the different orientations, use the __VerticalTilesAlignment__ and __HorizontalTilesAlignment__ properties. The properties are applicable only for the currently applied orientation. When the Orientation property is set to Horizontal, the VerticalTilesAlignment won't work. When the Orientation is set to Vertical, the HorizontalTilesAlignment won't work. The available alignments are __Stretch, Top, Bottom, Left, Right, Center__.
 
 __Example 2: Setting tiles horizontal alignment__
-```XAML
-	<telerik:RadTileList Orientation="Horizontal" HorizontalTilesAlignment="Center" />
-```
+<snippet id='radtilelist-features-orientation-block_2-xaml' />
 
 __Example 3: Setting tiles vertical alignment__
-```XAML
-	<telerik:RadTileList Orientation="Vertical" VerticalTilesAlignment="Center" />
-```
+<snippet id='radtilelist-features-orientation-block_3-xaml' />
 
 ## See Also
 * [Getting Started]({%slug radtilelist-getting-started%})

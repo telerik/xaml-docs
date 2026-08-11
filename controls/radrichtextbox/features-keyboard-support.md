@@ -247,53 +247,21 @@ Now these key bindings can be overridden and customized to the liking of the use
 
 __Example 1: Customize InputBindings__
 
-```XAML
-
-	<telerik:RadRichTextBox Grid.Row="1" Name="editor">
-		<telerik:CommandManager.InputBindings>
-			<telerik:InputBindingCollection>
-				<!-- Bind Spell Checking to Ctrl+Shift+S -->
-				<telerik:KeyBinding Gesture="Ctrl+Shift+S" Command="RichTextBoxCommands.ShowSpellCheckingDialog"/>
-				<!-- Stop Toggle Bold on Ctrl+Shift+B -->
-				<telerik:KeyBinding Gesture="Ctrl+Shift+B"/>
-				<!-- Re-map Ctrl+Space from Clear Formating to ShowManageBookmarksDialog -->
-				<telerik:KeyBinding Gesture="Ctrl+Space" Command="RichTextBoxCommands.ShowManageBookmarksDialog"/>
-			</telerik:InputBindingCollection>
-		</telerik:CommandManager.InputBindings>
-	</telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-features-keyboard-support-block_1-xaml' />
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
 __Example 1: Customize InputBindings__
 
-```XAML
-
-    <telerik:RadRichTextBox Name="radRichTextBox">
-      <telerik:RadRichTextBox.InputBindings>
-        <!-- Bind Spell Checking to Ctrl+Shift+S -->
-        <KeyBinding Gesture="Ctrl+Shift+S" Command="telerikDocs:RichTextBoxCommands.ShowSpellCheckingDialog"/>
-        <!-- Stop Toggle Bold on Ctrl+Shift+B -->
-        <KeyBinding Gesture="Ctrl+Shift+B"/>
-        <!-- Re-map Ctrl+Space from Clear Formating to ShowManageBookmarksDialog -->
-        <KeyBinding Gesture="Ctrl+Space" Command="telerikDocs:RichTextBoxCommands.ShowManageBookmarksDialog"/>
-      </telerik:RadRichTextBox.InputBindings>
-    </telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-features-keyboard-support-block_2-xaml' />
 
 Please note that in the above code snippet the telerikDocs namespace is defined as follows: 
 
 __Example 2: Namespace definition__
-```XAML
-
-	xmlns:telerikDocs="clr-namespace:Telerik.Windows.Documents.RichTextBoxCommands;assembly=Telerik.Windows.Documents"
-```
+<snippet id='radrichtextbox-features-keyboard-support-block_3-xaml' />
 
 __Example 3: Disable the shortcut for creating a new document in code-behind__
-```C#
-    
-    this.radRichTextBox.RegisteredApplicationCommands.Remove(System.Windows.Input.ApplicationCommands.New);
-```
+<snippet id='radrichtextbox-features-keyboard-support-block_4-cs' />
 
 Some of the key combinations included by default in RadRichTextBox pass different parameters to the commands so that they can execute according to the current context. An example of such commands are TabForward and TabBackward. 
 - By default, the tab symbol can always be inserted with **Ctrl+Tab** shortcut.
@@ -301,24 +269,12 @@ Some of the key combinations included by default in RadRichTextBox pass differen
 - By default, the Tab shortcut is bound to the **TabForward** command - a command with more complex, context-dependent behavior. You can remap the shortcut to the InsertText command with the tab symbol as a parameter.
 
 __Example 4: Remap the shortcut to different command__
-```XAML
-
-    <telerik:RadRichTextBox >
-        <telerik:RadRichTextBox.InputBindings>
-            <KeyBinding Gesture="Tab" Command="telerikDocs:RichTextBoxCommands.InsertText" CommandParameter="&#x09;" />
-        </telerik:RadRichTextBox.InputBindings>
-    </telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-features-keyboard-support-block_5-xaml' />
 
  You can fine-tune the behavior of the **TabForward** command, which is bound to the Tab shortcut by default using the exposed parameter values.
  
 __Example 5: Customize command behavior through its parameters__
-```XAML
-
-    <telerik:RadRichTextBox.InputBindings>
-        <KeyBinding Gesture="Tab" Command="telerikDocs:RichTextBoxCommands.TabForward" CommandParameter="InsertTabSymbol, ChangeParagraphListLevel, ChangeParagraphLeftIndent, NavigateInTable, AppendTableRow" />
-    </telerik:RadRichTextBox.InputBindings>
-```
+<snippet id='radrichtextbox-features-keyboard-support-block_6-xaml' />
 
 {% endif %}
 
@@ -328,18 +284,7 @@ Sometimes overriding the key bindings does not provide sufficient support, as de
 
 __Example 6: Customizing the behavior of a keyboard combination__
 
-```C#
-
-	  this.radRichTextBox.PreviewEditorKeyDown += (sender, args) =>
-         {
-             if (Keyboard.Modifiers.HasFlag(ModifierKeys.Alt) && Keyboard.Modifiers.HasFlag(ModifierKeys.Control) && args.Key == Key.E)
-             {
-                 args.SuppressDefaultAction = true;
-                 args.OriginalArgs.Handled = true;
-                 this.radRichTextBox.Insert("€");
-             }
-         };
-```
+<snippet id='radrichtextbox-features-keyboard-support-block_7-cs' />
 
 
 

@@ -18,30 +18,8 @@ In order to style all __VisualCues__ in a RadDocking, you should create a style 
 
 __Example 1: Creating a style targeting VisualCue__
 
-```XAML
-    <Application.Resources>
-        <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-            <Style x:Key="CustomVisualCueStyle" TargetType="telerik:VisualCue" BasedOn="{StaticResource VisualCueStyle}">-->
+<snippet id='raddocking-styles-and-templates-styling-the-visual-cue-example_1_creating_a_style_targeting_visualcue-xaml' />
 
-        <Style x:Key="CustomVisualCueStyle" TargetType="telerik:VisualCue">
-            <Setter Property="Background" Value="Red" />
-        </Style>
-    </Application.Resources>
-
-    <telerik:RadDocking VisualCueStyle="{StaticResource CustomVisualCueStyle}">
-		<telerik:RadSplitContainer InitialPosition="FloatingDockable">
-			<telerik:RadPaneGroup >
-				<telerik:RadPane Header="Pane 1"/>
-			</telerik:RadPaneGroup>
-		</telerik:RadSplitContainer>
-
-		<telerik:RadSplitContainer >
-			<telerik:RadPaneGroup >
-				<telerik:RadPane Header="Pane 1"/>
-			</telerik:RadPaneGroup>
-		</telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
 
 #### __Figure 1: RadDocking with styled VisualCue in the Office2016 theme__
 ![RadDocking with styled VisualCue](images/RadDocking_VisualCue_Style.png)

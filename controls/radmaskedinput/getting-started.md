@@ -62,18 +62,7 @@ You can find more info [here]({%slug installation-installing-controls-dependenci
 After adding the NuGet package or manually referencing the assemblies, you can declare a new __RadMaskedInput__ control as any normal {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control.				
 
 __Example 1: Declare RadMaskedInput controls in XAML__
-```XAML
-	<UserControl 
-	            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	   <StackPanel x:Name="LayoutRoot"
-	         Background="White"> 
-	       <telerik:RadMaskedTextInput x:Name="radMaskedTextInput" />
-	       <telerik:RadMaskedCurrencyInput x:Name="radMaskedCurrencyInput" />
-	       <telerik:RadMaskedDateTimeInput x:Name="radMaskedDateTimeInput" /> 
-	       <telerik:RadMaskedNumericInput x:Name="radMaskedNumericInput" /> 
-	   </StackPanel>
-	</UserControl>
-```
+<snippet id='radmaskedinput-getting-started-block_1-xaml' />
 
 ## Set the Mask Property
 
@@ -84,18 +73,14 @@ Although each __RadMaskedInput__ component is designed to work with specific typ
 The following code example initializes the __RadMaskedDateTimeInput__ to accept a date in a long date format.				
 
 __Example 2: Set mask property__
-```XAML
-	<telerik:RadMaskedDateTimeInput  Mask="D"/>
-```
+<snippet id='radmaskedinput-getting-started-block_2-xaml' />
 
 ## Change the Default Placeholder Character
 
 The __Placeholder__ property represents the character displayed in any blank space defined by a __Mask__ character. By default the character is an underscore.				
 
 __Example 3: Set custom character to the Placeholder property__
-```XAML
-	<telerik:RadMaskedCurrencyInput Placeholder="$" />
-```
+<snippet id='radmaskedinput-getting-started-block_3-xaml' />
 
 ## Change the Culture
 
@@ -104,10 +89,7 @@ The __Culture__ property allows you to set the current language and culture from
 The following code example initializes the __RadMaskedDateTimeInput__ to accept a Bulgarian date in a long date format.				
 
 __Example 3: Change the Culture property__
-```XAML
-	<telerik:RadMaskedDateTimeInput Mask="D"
-	                                Culture="bg-BG" />
-```
+<snippet id='radmaskedinput-getting-started-block_4-xaml' />
 
 ![{{ site.framework_name }} RadMaskedInput Bulgarian Culture](images/RadMaskedInput_getting_started_culture_datetime.png)
 
@@ -118,9 +100,7 @@ __Example 3: Change the Culture property__
 You can set a watermark content to the __RadMaskedInput__ controls by using the __EmptyContent__ and the __EmptyContentTemplate__ properties. When the __Value__ of a __RadMaskedTextInput__ control is null or empty the __EmptyContent__ will be displayed.				
 
 __Example 4: Set custom value to the EmptyContent property__
-```XAML
-	<telerik:RadMaskedTextInput Mask="####" EmptyContent="Please Enter Four Digits" />
-```
+<snippet id='radmaskedinput-getting-started-block_5-xaml' />
 
 ## Setting a Theme
 
@@ -139,17 +119,7 @@ To change the theme, you can follow the steps below:
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 4: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>				
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radmaskedinput-getting-started-block_6-xaml' />
 
 __Figure 1__ shows __RadMaskedInput__ with the **Windows8** theme applied.
 	
@@ -176,4 +146,3 @@ __Figure 1__ shows __RadMaskedInput__ with the **Windows8** theme applied.
  * [Common Features]({%slug radmaskedinput-features-common%})
  * [MaskTokens]({%slug radmaskedinput-features-mask-tokens%})
  * [Template Structure]({%slug radmaskedinput-styles-templates-template-structure%})
-

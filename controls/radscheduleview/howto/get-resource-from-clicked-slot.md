@@ -16,36 +16,7 @@ Let’s start with the following __RadScheduleView__ definition which includes R
 
 __Example 1: Defining RadScheduleView__
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
-	    <telerik:RadScheduleView.ViewDefinitions>
-	        <telerik:DayViewDefinition />
-	        <telerik:WeekViewDefinition />
-	        <telerik:MonthViewDefinition />
-	    </telerik:RadScheduleView.ViewDefinitions>
-	    <telerik:RadScheduleView.ResourceTypesSource>
-	        <telerik:ResourceTypeCollection>
-	            <telerik:ResourceType Name="Location">
-	                <telerik:Resource ResourceName="Room 1" />
-	                <telerik:Resource ResourceName="Room 2" />
-	            </telerik:ResourceType>
-	        </telerik:ResourceTypeCollection>
-	    </telerik:RadScheduleView.ResourceTypesSource>
-	    <telerik:RadScheduleView.GroupDescriptionsSource>
-	        <telerik:GroupDescriptionCollection>
-	            <telerik:DateGroupDescription />
-	            <telerik:ResourceGroupDescription ResourceType="Location" />
-	        </telerik:GroupDescriptionCollection>
-	    </telerik:RadScheduleView.GroupDescriptionsSource>
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu>
-	            <telerik:RadMenuItem Header="New Appointment" />
-	            <telerik:RadMenuItem Header="Edit Appointment" />
-	            <telerik:RadMenuItem Header="Delete Appointment" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-howto-get-resource-from-clicked-slot-block_1-xaml' />
 
 ## Determine Whether an Appointment or a Slot is Clicked
 
@@ -59,12 +30,7 @@ The built-in __NullToVisibilityConverer__  will set the __Visibility__ of the __
 
 __Example 2: Defined the needed IValueConverters__
 
-```XAML
-	<Grid.Resources>
-	    <telerik:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
-	    <local:ClickedElementToResourceNameConverter x:Key="ClickedElementToResourceNameConverter" />
-	</Grid.Resources>
-```
+<snippet id='radscheduleview-howto-get-resource-from-clicked-slot-block_2-xaml' />
 
 
 **2.** Implement the __ClickedElementToResourceNameConverter__. 
@@ -73,34 +39,7 @@ As its name hints, it will get the clicked item and return a simple string with 
 
 __Example 3: Implement the ClickedElementToResourceNameConverter__
 
-```C#
-	public class ClickedElementToResourceNameConverter : IValueConverter
-	{
-	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-	    {
-	        if (value is Appointment)
-	        {
-	            var appointment = value as Appointment;
-	
-	            return "The Resource for this Appointment is: " + appointment.Resources.First();
-	
-	        }
-	        else if (value is Slot)
-	        {
-	            var slot = value as Slot;
-	
-	            return "The Resource for this Slot is: " + slot.Resources.First();
-	        }
-	
-	        return null;
-	    }
-	
-	    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-	    {
-	        return value;
-	    }
-	}
-```
+<snippet id='radscheduleview-howto-get-resource-from-clicked-slot-block_3-cs' />
 
 **3.** Add two additional __RadMenuItems__. The first one will be shown when an Appointment is clicked and the second one when a Slot is clicked. 
 
@@ -109,14 +48,7 @@ In order to get the __SelectedAppointment__ and the __SelectedSlot__, the __Menu
 
 __Define the two RadMenuItems__
 
-```XAML
-	<telerik:RadMenuItem
-	        Header="{Binding Path=Menu.UIElement.SelectedAppointment, RelativeSource={RelativeSource Self}, Converter={StaticResource ClickedElementToResourceNameConverter}}" 
-	        Visibility="{Binding Header, RelativeSource={RelativeSource Self}, Converter={StaticResource NullToVisibilityConverter}}" />
-	<telerik:RadMenuItem 
-	        Header="{Binding Path=Menu.UIElement.SelectedSlot, RelativeSource={RelativeSource Self}, Converter={StaticResource ClickedElementToResourceNameConverter}}" 
-	        Visibility="{Binding Header, RelativeSource={RelativeSource Self}, Converter={StaticResource NullToVisibilityConverter}}" />
-```  
+<snippet id='radscheduleview-howto-get-resource-from-clicked-slot-block_4-xaml' />
 
 
 __Figure 1__ and __Figure 2__ demonstrate the final result.

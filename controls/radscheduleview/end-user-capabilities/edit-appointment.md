@@ -47,19 +47,8 @@ You can edit an appointment using the code. Here are the steps to accomplish thi
 
 
 
-```C#
-	if (this.radScheduleView.BeginEdit(appointment))
-	{
-	    appointment.Subject = "New Subject";
-	    this.radScheduleView.Commit();
-	}
-```
-```VB.NET
-	If Me.radScheduleView.BeginEdit(appointment) Then
-	 appointment.Subject = "New Subject"
-	 Me.radScheduleView.Commit()
-	End If
-```
+<snippet id='radscheduleview-end-user-capabilities-edit-appointment-block_1-cs' />
+<snippet id='radscheduleview-end-user-capabilities-edit-appointment-block_2-vb' />
 
 ## See Also
 

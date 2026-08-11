@@ -31,15 +31,8 @@ Here is an example of using these properties:
 
 
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker" ErrorTooltipContent="Enter a valid date and time!">
-	    <telerik:RadDateTimePicker.TooltipTemplate>
-	        <DataTemplate>
-	            <TextBlock Text="{Binding Path=TooltipContent, ElementName=radDateTimePicker}" FontWeight="Bold" Foreground="Red"/>
-	        </DataTemplate>
-	    </telerik:RadDateTimePicker.TooltipTemplate>
-	</telerik:RadDateTimePicker>
-```
+<snippet id='raddatetimepicker-features-preview-tooltip-block_1-xaml' />
+
 
 Here is the result:
 

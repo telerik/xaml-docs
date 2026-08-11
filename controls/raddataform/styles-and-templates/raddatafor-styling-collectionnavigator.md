@@ -17,21 +17,8 @@ The __CollectionNavigator__ control hosts the buttons allowing to move the curre
 In order to style the __CollectionNavigator__ element inside RadDataForm, you can create an implicit style targeting __CollectionNavigator__. 
 
 __Example 1: Creating an implicit style targeting CollectionNavigator__
-```XAML
-	<Window.Resources>
-        <!-- If you are using the NoXaml binaries, you should base the style on the default one like so:-->
-        <!--<Style TargetType="dataForm:CollectionNavigator" BasedOn="{StaticResource CollectionNavigatorStyle}">-->
-        <Style xmlns:dataForm="clr-namespace:Telerik.Windows.Controls.Data.DataForm;assembly=Telerik.Windows.Controls.Data"
-               TargetType="dataForm:CollectionNavigator">
-            <Setter Property="Background" Value="Red" />
-            <Setter Property="BorderBrush" Value="Green" />
-            <Setter Property="BorderThickness" Value="3" />
-        </Style>
-    </Window.Resources>
-    <Grid>              
-        <telerik:RadDataForm AutoGenerateFields="True" />
-    </Grid>
-```
+<snippet id='raddataform-styles-and-templates-raddatafor-styling-collectionnavigator-example_1_creating_an_implicit_style_targeting_collectionnavigator-xaml' />
+
 
 #### __Figure 1: CollectionNavigator with custom style in the Office2016 theme__
 ![CollectionNavigator with custom style in the Office2016 theme](images/RadDataForm_CollectionNavigator_Style.png)

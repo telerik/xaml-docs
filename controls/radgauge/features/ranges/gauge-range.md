@@ -20,22 +20,8 @@ Each range should have a start and and end points. They are defined via the Min 
 
 >tip Typically each range should be colored in a specific color. To set the desired color to the range use its Background property. 
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="30"
-	                    MajorTicks="3"
-	                    RangeLocation="OverCenter">
-	        <telerik:VerticalLinearScale.Ranges>
-	            <telerik:GaugeRange Background="#FFA3A3A3" 
-	                        Min="0" Max="10" />
-	            <telerik:GaugeRange Background="#FF000000" 
-	                        Min="10" Max="20"  />
-	            <telerik:GaugeRange Background="#FFE50000" 
-	                        Min="20" Max="30" />
-	        </telerik:VerticalLinearScale.Ranges>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-ranges-gauge-range-block_1-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -47,28 +33,8 @@ You can control the width of a range at its start and at its end point. This is 
 
 >tip To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="30"
-	                    MajorTicks="3"
-	                    RangeLocation="OverOutside">
-	        <telerik:VerticalLinearScale.Ranges>
-	            <telerik:GaugeRange Background="#FFA3A3A3"
-	                        StartWidth="0.02"
-	                        EndWidth="0.02"
-	                        Min="0" Max="10"/>
-	            <telerik:GaugeRange Background="#FF000000" 
-	                        StartWidth="0.02"
-	                        EndWidth="0.02"
-	                        Min="10" Max="20"  />
-	            <telerik:GaugeRange Background="#FFE50000"
-	                        StartWidth="0.02"
-	                        EndWidth="0.02" 
-	                        Min="20" Max="30" />
-	        </telerik:VerticalLinearScale.Ranges>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-ranges-gauge-range-block_2-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -84,31 +50,8 @@ To control the appearance of a range you can use the following properties:
 
 * __StrokeThickness__ - specifies the thickness of the range's stroke.
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="30"
-	                            MajorTicks="3"
-	                            RangeLocation="OverOutside">
-	        <telerik:VerticalLinearScale.Ranges>
-	            <telerik:GaugeRange Stroke="#FFA3A3A3"
-	                        StrokeThickness="2"
-	                        StartWidth="0.04"
-	                        EndWidth="0.04"
-	                        Min="0" Max="10"/>
-	            <telerik:GaugeRange Stroke="#FF000000"
-	                        StrokeThickness="2"
-	                        StartWidth="0.04"
-	                        EndWidth="0.04"
-	                        Min="10" Max="20"  />
-	            <telerik:GaugeRange Stroke="#FFE50000"
-	                        StrokeThickness="2"
-	                        StartWidth="0.04"
-	                        EndWidth="0.04"
-	                        Min="20" Max="30" />
-	        </telerik:VerticalLinearScale.Ranges>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-ranges-gauge-range-block_3-xaml' />
+
 
 Here is a snapshot of the result:
 
@@ -128,41 +71,8 @@ You can specify an appearance for the scale's indicator, when it enters inside t
 
 It specifies the background color for the indicator's background when it is in the range. Here is an example:
 
-```XAML
-	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale Min="0" Max="30"
-	                            MajorTicks="3"
-	                            RangeLocation="OverOutside">
-	        <telerik:VerticalLinearScale.Ranges>
-	            <telerik:GaugeRange Background="#FFA3A3A3"
-	                        IndicatorBackground="#FFA3A3A3"
-	                        StrokeThickness="2"
-	                        StartWidth="0.02"
-	                        EndWidth="0.02"
-	                        Min="0" Max="10"/>
-	            <telerik:GaugeRange Background="#FF000000"
-	                        IndicatorBackground="#FF000000"
-	                        StrokeThickness="2"
-	                        StartWidth="0.02"
-	                        EndWidth="0.02"
-	                        Min="10" Max="20"  />
-	            <telerik:GaugeRange Background="#FFE50000"
-	                        IndicatorBackground="#FFE50000"
-	                        StrokeThickness="2"
-	                        StartWidth="0.02"
-	                        EndWidth="0.02"
-	                        Min="20" Max="30" />
-	        </telerik:VerticalLinearScale.Ranges>
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:Marker Value="25" 
-	                    UseRangeColor="True"
-	                    telerik:ScaleObject.RelativeWidth="0.1*"
-	                    telerik:ScaleObject.RelativeHeight="0.04*"
-	                    telerik:ScaleObject.Offset="0.02*" />
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-ranges-gauge-range-block_4-xaml' />
+
 
 Here is a snapshot with the end result:
 
@@ -176,30 +86,8 @@ This property is applicable when RangeColorMode property of the indicator is set
 
 This sample demonstrates how the indicator changes its background in this case:        
 
-```XAML
-	<telerik:RadVerticalLinearGauge Name="gauge" Width="100" Height="300" telerik:StyleManager.Theme="Windows8">
-	    <telerik:VerticalLinearScale x:Name="scale" MajorTickStep="10" IsInteractive="True">
-	        <telerik:VerticalLinearScale.Ranges>
-	            <telerik:GaugeRange Min="0" Max="50"
-	                                                StartWidth="0.05"
-	                                                EndWidth="0.05"
-	                                                Background="Green"
-	                                                IndicatorBackground="Green" />
-	            <telerik:GaugeRange Min="50" Max="100"
-	                                                StartWidth="0.05"
-	                                                EndWidth="0.05"
-	                                                Background="Yellow"
-	                                                IndicatorBackground="Yellow"
-	                                                IndicatorColorMixSensitivity="0.5" />
-	        </telerik:VerticalLinearScale.Ranges>
-	        <telerik:VerticalLinearScale.Indicators>
-	            <telerik:BarIndicator UseRangeColor="True"
-	                                                        RangeColorMode="MixedColor"
-	                                                        Value="60" />
-	        </telerik:VerticalLinearScale.Indicators>
-	    </telerik:VerticalLinearScale>
-	</telerik:RadVerticalLinearGauge>
-```
+<snippet id='radgauge-features-ranges-gauge-range-block_5-xaml' />
+
 
 Here are snapshots for different values of the bar indicator:        
 
@@ -213,35 +101,8 @@ The appearance of the labels in the range can be controlled via the following pr
 
 * __LabelForeground__ - specifies the foreground color for the labels that belong to the range.
 
-	```XAML
-		<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-			<telerik:VerticalLinearScale Min="0" Max="30"
-									MajorTicks="3"
-									RangeLocation="OverOutside"                         
-									LabelUseRangeColor="True">
-				<telerik:VerticalLinearScale.Ranges>
-					<telerik:GaugeRange Background="#FFA3A3A3"
-								LabelForeground="#FFA3A3A3"
-								StrokeThickness="2"
-								StartWidth="0.02"
-								EndWidth="0.02"
-								Min="0" Max="10"/>
-					<telerik:GaugeRange Background="#FF000000"
-								LabelForeground="#FF000000"
-								StrokeThickness="2"
-								StartWidth="0.02"
-								EndWidth="0.02"
-								Min="10" Max="20"  />
-					<telerik:GaugeRange Background="#FFE50000"
-								LabelForeground="#FFE50000"
-								StrokeThickness="2"
-								StartWidth="0.02"
-								EndWidth="0.02"
-								Min="20" Max="30" />
-				</telerik:VerticalLinearScale.Ranges>
-			</telerik:VerticalLinearScale>
-		</telerik:RadVerticalLinearGauge>
-	```
+	<snippet id='radgauge-features-ranges-gauge-range-block_6-xaml' />
+
 	
 	![{{ site.framework_name }} RadGauge Range Label Appearance](images/RadGauge_Features_Ranges_Basics_06.png)
 
@@ -255,34 +116,4 @@ The appearance of the ticks in the range can be controlled via the following pro
 
 	Here is an example, where only the major ticks use the range's color for them:
 
-	```XAML
-		<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
-			<telerik:VerticalLinearScale Min="0" Max="30"
-								MajorTicks="3" 
-								MajorTickUseRangeColor="True"
-								MiddleTickUseRangeColor="True"
-								MinorTickUseRangeColor="True"
-								RangeLocation="OverOutside">
-				<telerik:VerticalLinearScale.Ranges>
-					<telerik:GaugeRange Background="#FFA3A3A3"
-								TickBackground="#FFA3A3A3"
-								StrokeThickness="2"
-								StartWidth="0.02"
-								EndWidth="0.02"
-								Min="0" Max="10"/>
-					<telerik:GaugeRange Background="#FF000000"
-								TickBackground="#FF000000"
-								StrokeThickness="2"
-								StartWidth="0.02"
-								EndWidth="0.02"
-								Min="10" Max="20"  />
-					<telerik:GaugeRange Background="#FFE50000"
-								TickBackground="#FFE50000"
-								StrokeThickness="2"
-								StartWidth="0.02"
-								EndWidth="0.02"
-								Min="20" Max="30" />
-				</telerik:VerticalLinearScale.Ranges>
-			</telerik:VerticalLinearScale>
-		</telerik:RadVerticalLinearGauge>
-	```
+	<snippet id='radgauge-features-ranges-gauge-range-block_7-xaml' />

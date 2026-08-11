@@ -22,33 +22,20 @@ The following snippets show how __DragDropMode__ property can be set in XAML and
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking" DragDropMode="Deferred">
-	    ...
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-dragdropmode-block_1-xaml' />
 
 
 
-```C#
-	radDocking.DragDropMode = DockingDragDropMode.Deferred;
-```
+
+<snippet id='raddocking-features-dragdropmode-block_2-cs' />
+
 
 Let's, for example, have the following RadDocking definition:
 
 
 
-```XAML
-	<telerik:RadDocking x:Name="radDocking1">
-	    <telerik:RadSplitContainer>
-	        <telerik:RadPaneGroup>
-	            <telerik:RadPane Header="Pane1" >
-	            </telerik:RadPane>
-	            <telerik:RadPane Header="Pane2" CanFloat="False" />
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-dragdropmode-block_3-xaml' />
+
 
 Note how the dragging of "Pane1" looks in both DragDropModes:
 

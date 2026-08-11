@@ -25,32 +25,10 @@ This article lists the events specific to RadCarouselPanel.
 You can use the approach in __Example 1__ to subscrube to the RadCarouselPanel events.
 
 __Example 1: Subscribe to RadCarouselPanel Events__  
-```XAML
-	<telerik:RadCarousel x:Name="listView"  ItemsSource="{Binding Employees}"  ItemTemplate="{StaticResource customItemTemplate}">
-		<telerik:RadCarousel.ItemsPanel>
-			<ItemsPanelTemplate>
-				<telerik:RadCarouselPanel SelectedIsTopItem="MyCarousel_SelectedIsTopItem" 
-											TopContainerChanged="RadCarouselPanel_TopContainerChanged" 
-											IsAnimatingChanged="RadCarouselPanel_IsAnimatingChanged"/>
-			</ItemsPanelTemplate>
-		</telerik:RadCarousel.ItemsPanel>            
-	</telerik:RadCarousel>
-```
+<snippet id='radcarousel-using-radcarouselpanel-events-block_1-xaml' />
 
 __Example 2: Events Handlers__  
-```C#
-	private void MyCarousel_SelectedIsTopItem(object sender, RoutedEventArgs e)
-	{
-	}
-
-	private void RadCarouselPanel_TopContainerChanged(object sender, RoutedEventArgs e)
-	{
-	}
-
-	private void RadCarouselPanel_IsAnimatingChanged(object sender, RoutedEventArgs e)
-	{
-	}
-```
+<snippet id='radcarousel-using-radcarouselpanel-events-block_2-cs' />
 	
 ## See Also  
  * [Getting Started]({%slug carousel-getting-started%}) 

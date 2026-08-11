@@ -42,35 +42,29 @@ In the following example, the first two columns are frozen starting from __left 
 
 __Setting LeftFrozenColumnCount__
 
-```XAML
-	<telerik:RadGridView LeftFrozenColumnCount="2" />
-```
+<snippet id='radgridview-columns-frozen-columns-setting_leftfrozencolumncount-xaml' />
+
 
 __Setting LeftFrozenColumnCount__
 
-```C#
-	this.radGridView.LeftFrozenColumnCount = 2;
-```
-```VB.NET
-	Me.radGridView.LeftFrozenColumnCount = 2
-```
+<snippet id='radgridview-columns-frozen-columns-setting_leftfrozencolumncount-cs' />
+
+<snippet id='radgridview-columns-frozen-columns-setting_leftfrozencolumncount-vb' />
+
 
 In the following example, the first two columns are frozen starting from __right to left__.
 
 __Setting RightFrozenColumnCount__
 
-```XAML
-	<telerik:RadGridView RightFrozenColumnCount="2" />
-```
+<snippet id='radgridview-columns-frozen-columns-setting_rightfrozencolumncount-xaml' />
+
 
 __Setting RightFrozenColumnCount__
 
-```C#
-	this.radGridView.RightFrozenColumnCount = 2;
-```
-```VB.NET
-	Me.radGridView.RightFrozenColumnCount = 2
-```
+<snippet id='radgridview-columns-frozen-columns-setting_rightfrozencolumncount-cs' />
+
+<snippet id='radgridview-columns-frozen-columns-setting_rightfrozencolumncount-vb' />
+
 
 ## Disabling Frozen Columns
 
@@ -78,10 +72,8 @@ To disable the freezing of a column, just set the `CanUserFreezeColumns` to __Fa
 
 __Disabling Frozen Columns__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	             CanUserFreezeColumns="False" />
-```
+<snippet id='radgridview-columns-frozen-columns-disabling_frozen_columns-xaml' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with column freezing disabled and the splitter hidden](images/RadGridView_Frozencolumns_4.png)
 
@@ -108,19 +100,15 @@ The following example shows that you can subscribe to the event either declarati
 
 __Subscribing to the FrozenColumnsChanged Event__
 
-```XAML
-	<telerik:RadGridView x:Name="gridView"
-	             FrozenColumnsChanged="gridView_FrozenColumnsChanged" />
-```
+<snippet id='radgridview-columns-frozen-columns-subscribing_to_the_frozencolumnschanged_event-xaml' />
+
 
 __Subscribing to the FrozenColumnsChanged Event__
 
-```C#
-	gridView.FrozenColumnsChanged += new EventHandler<FrozenColumnsChangedEventArgs>(gridView_FrozenColumnsChanged);
-```
-```VB.NET
-	AddHandler Me.gridView.FrozenColumnsChanged, AddressOf gridView_FrozenColumnsChanged
-```
+<snippet id='radgridview-columns-frozen-columns-subscribing_to_the_frozencolumnschanged_event-cs' />
+
+<snippet id='radgridview-columns-frozen-columns-subscribing_to_the_frozencolumnschanged_event-vb' />
+
 
 Via the `FrozenColumnsChangedEventArgs`, you can get the:
 
@@ -132,21 +120,10 @@ The next example shows how you can get the names of the columns currently in the
 
 __Using the FrozenColumnsChanged Event__
 
-```C#
-	private void gridView_FrozenColumnsChanged(object sender, Telerik.Windows.Controls.GridView.GridView.FrozenColumnsChangedEventArgs e)
-	{
-	    var msg = "Added: " + string.Join(", ", e.AddedFrozenColumns.Select(x => x.UniqueName)) +
-	        "\nRemoved: " + string.Join(", ", e.RemovedFrozenColumns.Select(x => x.UniqueName)) +
-	        "\nAll: " + string.Join(", ", e.AllFrozenColumns.Select(x => x.UniqueName));
-	    MessageBox.Show(msg);
-	}
-```
-```VB.NET
-	Private Sub gridView_FrozenColumnsChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridView.GridView.FrozenColumnsChangedEventArgs)
-	    Dim msg = "Added: " & String.Join(", ", e.AddedFrozenColumns.Select(Function(x) x.UniqueName)) & ControlChars.Lf & "Removed: " & String.Join(", ", e.RemovedFrozenColumns.Select(Function(x) x.UniqueName)) & ControlChars.Lf & "All: " & String.Join(", ", e.AllFrozenColumns.Select(Function(x) x.UniqueName))
-	    MessageBox.Show(msg)
-	End Sub
-```
+<snippet id='radgridview-columns-frozen-columns-using_the_frozencolumnschanged_event-cs' />
+
+<snippet id='radgridview-columns-frozen-columns-using_the_frozencolumnschanged_event-vb' />
+
 
 ![Telerik UI for {{ site.framework_name }} RadGridView after freezing columns and raising the FrozenColumnsChanged event](images/RadGridView_FrozenColumnsChanged_1.png)
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the FrozenColumnsChanged event output for added and removed columns](images/RadGridView_FrozenColumnsChanged_2.png)
@@ -157,20 +134,13 @@ The RadGridView control allows you to specify a threshold for both the left and 
 
 __Setting the LeftFrozenColumnSplitterThreshold and RightFrozenColumnSplitterThreshold Properties__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	             	LeftFrozenColumnSplitterThreshold="0.3"
-	             	RightFrozenColumnSplitterThreshold="0.7" />
-```
+<snippet id='radgridview-columns-frozen-columns-setting_the_leftfrozencolumnsplitterthreshold_and_rightfrozencolumnsplitterthreshold_properties-xaml' />
 
-```C#
-	this.radGridView.LeftFrozenColumnSplitterThreshold = 0.3;
-	this.radGridView.RightFrozenColumnSplitterThreshold = 0.7;
-```
-```VB.NET
-	Me.radGridView.LeftFrozenColumnSplitterThreshold = 0.3
-	Me.radGridView.RightFrozenColumnSplitterThreshold = 0.7
-```
+
+<snippet id='radgridview-columns-frozen-columns-setting_the_leftfrozencolumnsplitterthreshold_and_rightfrozencolumnsplitterthreshold_properties-cs' />
+
+<snippet id='radgridview-columns-frozen-columns-setting_the_leftfrozencolumnsplitterthreshold_and_rightfrozencolumnsplitterthreshold_properties-vb' />
+
 
 ## See Also
 

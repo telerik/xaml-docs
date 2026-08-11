@@ -16,74 +16,19 @@ In order to enable this kind of validation you first need to include the System.
 
 __Example 1: Including System.ComponentModel.DataAnnotations__
 
-```C#
-	using System.ComponentModel.DataAnnotations;
-```
-```VB.NET
-	Imports System.ComponentModel.DataAnnotations
-```
+<snippet id='raddataform-validation-item-level-example_1_including_system_componentmodel_dataannotations-cs' />
+
+<snippet id='raddataform-validation-item-level-example_1_including_system_componentmodel_dataannotations-vb' />
+
 
 Now, let's define a simple Employee class with validation attributes.
 
 __Example 2: Creating an Employee class with validation attributes__
 
-```C#
-	public class Employee
-	{
-	    [Required]
-	    public string FirstName { get; set; }
-	    [Required(ErrorMessage = "LastName is required")]
-	    public string LastName { get; set; }
-	    [Range(21, 70)]
-	    public int Age { get; set; }
-	    [RegularExpression("[a-z]#[0-9]*")]
-	    public string EmployeeID { get; set; }
-	}
-```
-```VB.NET
-	Public Class Employee
-	    <Required()>
-	    Public Property FirstName() As String
-	        Get
-	            Return m_FirstName
-	        End Get
-	        Set(value As String)
-	            m_FirstName = value
-	        End Set
-	    End Property
-	    Private m_FirstName As String
-	    <Required(ErrorMessage:="LastName is required")>
-	    Public Property LastName() As String
-	        Get
-	            Return m_LastName
-	        End Get
-	        Set(value As String)
-	            m_LastName = value
-	        End Set
-	    End Property
-	    Private m_LastName As String
-	    <Range(21, 70)>
-	    Public Property Age() As Integer
-	        Get
-	            Return m_Age
-	        End Get
-	        Set(value As Integer)
-	            m_Age = value
-	        End Set
-	    End Property
-	    Private m_Age As Integer
-	    <RegularExpression("[a-z]#[0-9]*")>
-	    Public Property EmployeeID() As String
-	        Get
-	            Return m_EmployeeID
-	        End Get
-	        Set(value As String)
-	            m_EmployeeID = value
-	        End Set
-	    End Property
-	    Private m_EmployeeID As String
-	End Class
-```
+<snippet id='raddataform-validation-item-level-example_2_creating_an_employee_class_with_validation_attributes-cs' />
+
+<snippet id='raddataform-validation-item-level-example_2_creating_an_employee_class_with_validation_attributes-vb' />
+
 
 **Figure 1** shows RadDataForm's state after validation has been performed.
 
@@ -97,44 +42,9 @@ In order to notify the UI that validation has failed, you will need to throw a *
 
 __Example 3: Set validation through data DataAnnotations__
 
-```C#
-	private string firstName;
+<snippet id='raddataform-validation-item-level-example_3_set_validation_through_data_dataannotations-cs' />
 
-        [Required]
-        public string FirstName
-        {
-            get { return this.firstName; }
-            set
-            {
-                if (value != this.firstName)
-                {
-                    ValidationContext validationContext = new ValidationContext(this, null, null);
-                    validationContext.MemberName = "FirstName";
-                    Validator.ValidateProperty(value, validationContext);
-                    this.firstName = value;
-                    this.OnPropertyChanged("FirstName");
-                }
-            }
-        }
-```
-```VB.NET
-	Private _firstName As String
+<snippet id='raddataform-validation-item-level-example_3_set_validation_through_data_dataannotations-vb' />
 
-        <Required>
-        Public Property FirstName() As String
-            Get
-                Return Me._firstName
-            End Get
-            Set(ByVal value As String)
-                If value <> Me._firstName Then
-                    Dim validationContext As New ValidationContext(Me, Nothing, Nothing)
-                    validationContext.MemberName = "FirstName"
-                    Validator.ValidateProperty(value, validationContext)
-                    Me._firstName = value
-                    Me.OnPropertyChanged("FirstName")
-                End If
-            End Set
-        End Property
-```
 
 Please, have in mind that __those errors are removed from the validation summary__ on the next committing operation, __unlike the property level ones__, which are removed on property change. 

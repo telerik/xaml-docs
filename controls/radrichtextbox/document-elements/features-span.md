@@ -28,36 +28,12 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug radricht
 
 
 
-```XAML
-	<telerik:RadRichTextBox x:Name="radRichTextBox">
-	    <telerik:RadDocument>
-	        <telerik:Section>
-	            <telerik:Paragraph>
-	                <telerik:Span Text="Span declared in XAML" />
-	            </telerik:Paragraph>
-	        </telerik:Section>
-	    </telerik:RadDocument>
-	</telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-document-elements-features-span-block_1-xaml' />
 
 
 
-```C#
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	Span span = new Span("Span declared in code-behind");
-	paragraph.Inlines.Add( span );
-	section.Blocks.Add( paragraph );
-	this.radRichTextBox.Document.Sections.Add( section );
-```
-```VB.NET
-	Dim section As New Section()
-	Dim paragraph As New Paragraph()
-	Dim span As New Span("Span declared in code-behind")
-	paragraph.Inlines.Add(span)
-	section.Blocks.Add(paragraph)
-	Me.radRichTextBox.Document.Sections.Add(section)
-```
+<snippet id='radrichtextbox-document-elements-features-span-block_2-cs' />
+<snippet id='radrichtextbox-document-elements-features-span-block_3-vb' />
 
 ## Add Text to a Span
 
@@ -65,20 +41,12 @@ To specify the text in the __Span__ you can use its __Text__ property.
 
 
 
-```XAML
-	<telerik:Span Text="Thank you for choosing Telerik RadRichTextBox!" />
-```
+<snippet id='radrichtextbox-document-elements-features-span-block_4-xaml' />
 
 
 
-```C#
-	Span span = new Span();
-	span.Text = "Thank you for choosing Telerik RadRichTextBox!";
-```
-```VB.NET
-	Dim span As New Span()
-	span.Text = "Thank you for choosing Telerik RadRichTextBox!"
-```
+<snippet id='radrichtextbox-document-elements-features-span-block_5-cs' />
+<snippet id='radrichtextbox-document-elements-features-span-block_6-vb' />
 
 ## Customize a Span
 

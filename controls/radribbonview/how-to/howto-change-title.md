@@ -17,18 +17,12 @@ The RadRibbonView exposes a string property named __Title__, which should be use
 
 
 
-```XAML
-	<telerik:RadRibbonView x:Name="xRibbonView" Title="RadRibbonView Demo" />
-```
+<snippet id='radribbonview-how-to-howto-change-title-block_1-xaml' />
 
 
 
-```C#
-	xRibbonView.Title = "RadRibbonView Demo";
-```
-```VB.NET
-	xRibbonView.Title = "RadRibbonView Demo";
-```
+<snippet id='radribbonview-how-to-howto-change-title-block_2-cs' />
+<snippet id='radribbonview-how-to-howto-change-title-block_3-vb' />
 
 ![Rad Ribbon View How To Change The Title 2](images/RadRibbonView_HowTo_ChangeTheTitle_2.png)
 

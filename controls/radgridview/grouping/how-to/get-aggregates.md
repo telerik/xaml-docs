@@ -16,27 +16,10 @@ In some cases when you define aggregates in RadGridView you need to access the o
 
 __Example 1: Obtaining Group Aggregates__
 
-```C#
-	private void Button1_Click(object sender, RoutedEventArgs e)
-	{
-	    foreach (QueryableCollectionViewGroup item in this.radGridView.Items.Groups)
-	    {
-	        if (item.Key.Equals("24"))
-	        {
-	            MessageBox.Show(item.AggregateResults[0].FormattedValue.ToString());
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs)
-	    For Each item As QueryableCollectionViewGroup In Me.radGridView.Items.Groups
-	        If (item.Key.Equals("24")) Then
-	            MessageBox.Show(item.AggregateResults(0).FormattedValue.ToString())
-	        End If
-	    Next
-	End Sub
-```
+<snippet id='radgridview-grouping-how-to-get-aggregates-example_1_obtaining_group_aggregates-cs' />
+
+<snippet id='radgridview-grouping-how-to-get-aggregates-example_1_obtaining_group_aggregates-vb' />
+
 
 The [QueryableCollectionViewGroup](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.queryablecollectionviewgroup) class represents a wrapper over an __AggregateFunctionsGroup__ that allows for adding and removing of child items/groups. The snippet above simply checks for a key value equal to 24 and gets the formatted value of the first aggregate result.
 

@@ -71,12 +71,7 @@ Footnotes and endnotes all contain the __Note__ class which defines the note bod
 
 
 
-```C#
-	public void InsertFootnote()
-	public void InsertFootnote(Note footnote)
-	public void InsertEndnote()
-	public void InsertEndnote(Note endnote)
-```
+<snippet id='radrichtextbox-features-references-footnotes-endnotes-block_1-cs' />
 
 
 
@@ -84,22 +79,14 @@ There is a set of document styles that are used inside notes content. It is reco
 
 
 
-```C#
-	public static Note CreateCustomMarkFootnote(string symbol, FontFamily fontFamily = null)
-	public static Note CreateCustomMarkEndnote(string symbol, FontFamily fontFamily = null)
-	public static Note CreateDefaultFootnote()
-	public static Note CreateDefaultEndnote()
-```
+<snippet id='radrichtextbox-features-references-footnotes-endnotes-block_2-cs' />
 
 
 Here is for example how to insert a footnote with a custom mark – dollar sign with Calibri font:
 
 
 
-```C#
-	Note note = Note.CreateCustomMarkFootnote("$", new FontFamily("Calibri"));
-	this.radRichtextBox.InsertFootnote(note);
-```
+<snippet id='radrichtextbox-features-references-footnotes-endnotes-block_3-cs' />
 
 
 ## Navigating and Scrolling
@@ -108,12 +95,7 @@ You can programmatically navigate the document caret position through the notes 
 
 
 
-```C#
-	public void GoToNextFootnote()
-	public void GoToPreviousFootnote()
-	public void GoToNextEndnote()
-	public void GoToPreviousEndnote()
-```
+<snippet id='radrichtextbox-features-references-footnotes-endnotes-block_4-cs' />
 
 
 
@@ -121,13 +103,5 @@ You can use the __ScrollToNote()__ method to scroll the viewport so that a note 
 
 
 
-```C#
-	EndnoteRangeStart noteRangeStart = this.radRichtextBox.Document.EnumerateChildrenOfType<EndnoteRangeStart>().FirstOrDefault();
-	
-	if (noteRangeStart != null)
-	{ 
-	    this.radRichtextBox.ScrollToNote(noteRangeStart.Note);
-	}
-```
-
+<snippet id='radrichtextbox-features-references-footnotes-endnotes-block_5-cs' />
 

@@ -28,11 +28,5 @@ By default, the __SelectionMiniToolBar__ has a transparency effect. This effect 
         
 __Example 1:  Disable the transparensy effect of the SelectionMiniToolBar__
 
-```C#
-
-    var miniToolbar = radRichTextBox.SelectionMiniToolBar as SelectionMiniToolBar;
-    miniToolbar.IsTransparencyEnabled = false;
-
-```
-
+<snippet id='radrichtextbox-ui-for-applying-rich-text-formatting-features-selection-mini-toolbar-block_1-cs' />
 

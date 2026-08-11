@@ -22,9 +22,8 @@ You can stick the headers of the group to the top until its items are scrolled o
 
 __Example 1: Enable Sticky Group Headers__
 
-```XAML
-	<telerik:RadGridView EnableStickyGroupHeaders="True" />
-```
+<snippet id='radgridview-grouping-stickygroupheaders-example_1_enable_sticky_group_headers-xaml' />
+
 
 #### __Figure 2: RadGridView with Enabled Sticky Group Headers__
 

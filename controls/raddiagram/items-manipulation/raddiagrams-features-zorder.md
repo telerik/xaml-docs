@@ -19,46 +19,8 @@ __RadDiagram__ gives you the ability to control the __Z-Order__ of shapes and co
 Consider the following code:
 		
 
-```XAML
-	<telerik:RadDiagram x:Name="diagram" Grid.Row="1">
-		<telerik:RadDiagramShape x:Name="shape1" 
-								 Width="150"
-								 Height="150"
-								 Background="DeepSkyBlue"
-								 Content="Zindex = 3"
-								 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
-								 Position="80 120"
-								 ZIndex="3" />
-		<telerik:RadDiagramShape x:Name="shape2" 
-								 Width="150"
-								 Height="150"
-								 Background="CadetBlue"
-								 Content="Zindex = 2"
-								 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
-								 Position="180 120"
-								 ZIndex="2" />
-		<telerik:RadDiagramShape x:Name="shape3" 
-								 Width="150"
-								 Height="150"
-								 Background="DodgerBlue"
-								 Content="Zindex = 1"
-								 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
-								 Position="120 20"
-								 ZIndex="1" />
+<snippet id='raddiagram-items-manipulation-raddiagrams-features-zorder-block_1-xaml' />
 
-		<telerik:RadDiagramConnection Source="{Binding ElementName=shape3}" 
-									  SourceConnectorPosition="Right"
-									  Target="{Binding ElementName=shape2}"
-									  TargetConnectorPosition="Right"
-									  ZIndex="4" />
-
-		<telerik:RadDiagramConnection Source="{Binding ElementName=shape3}" 
-									  SourceConnectorPosition="Left"
-									  Target="{Binding ElementName=shape1}"
-									  TargetConnectorPosition="Left"
-									  ZIndex="0" />
-	</telerik:RadDiagram>
-```
 
 We have reversed the natural ZOrder of the 3 Shapes. On the other hand, the connection on the right is on top of the shapes and connection on the left is below them: 
 ![Rad Diagrams-Features-ZIndex](images/RadDiagrams-Features-ZIndex.png)
@@ -68,64 +30,8 @@ We have reversed the natural ZOrder of the 3 Shapes. On the other hand, the conn
 __RadDiagram__ provides a set of predefined commands for manipulating the selected items' ZIndices. __"BringForward"__ and __"SendBackward"__ allow you to increase/decrease the Z-Indices of the selected RadDiagramItems. If you need to bring the selected item(s) on top of all other items or below them, you can use __"BringToFront"__ and __"SentToback"__:
 		
 
-```XAML
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="*" />
-		</Grid.RowDefinitions>
-		<StackPanel Orientation="Horizontal">
-			<telerik:RadButton Width="200" 
-							   Height="30"
-							   Command="telerik:DiagramCommands.BringToFront"
-							   CommandTarget="{Binding ElementName=diagram}"
-							   Content="Bring Up" />
-			<telerik:RadButton Width="200" 
-							   Height="30"
-							   Command="telerik:DiagramCommands.SendToBack"
-							   CommandTarget="{Binding ElementName=diagram}"
-							   Content="Bring Down" />
-		</StackPanel>
-		<telerik:RadDiagram x:Name="diagram" Grid.Row="1">
-			<telerik:RadDiagramShape x:Name="shape1" 
-									 Width="150"
-									 Height="150"
-									 Background="DeepSkyBlue"
-									 Content="Zindex = 3"
-									 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
-									 Position="80 120"
-									 ZIndex="3" />
-			<telerik:RadDiagramShape x:Name="shape2" 
-									 Width="150"
-									 Height="150"
-									 Background="CadetBlue"
-									 Content="Zindex = 2"
-									 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
-									 Position="180 120"
-									 ZIndex="2" />
-			<telerik:RadDiagramShape x:Name="shape3" 
-									 Width="150"
-									 Height="150"
-									 Background="DodgerBlue"
-									 Content="Zindex = 1"
-									 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
-									 Position="120 20"
-									 ZIndex="1" />
+<snippet id='raddiagram-items-manipulation-raddiagrams-features-zorder-block_2-xaml' />
 
-			<telerik:RadDiagramConnection Source="{Binding ElementName=shape3}" 
-										  SourceConnectorPosition="Right"
-										  Target="{Binding ElementName=shape2}"
-										  TargetConnectorPosition="Right"
-										  ZIndex="4" />
-
-			<telerik:RadDiagramConnection Source="{Binding ElementName=shape3}" 
-										  SourceConnectorPosition="Left"
-										  Target="{Binding ElementName=shape1}"
-										  TargetConnectorPosition="Left"
-										  ZIndex="0" />
-		</telerik:RadDiagram>
-	</Grid>
-```
 
 This way configured, the two buttons are ready to bring to front or sent to back the selected items of the __RadDiagram__: 
 ![raddiagrams-features-zindex-bringup 1](images/raddiagrams-features-zindex-bringup1.png)

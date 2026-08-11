@@ -18,23 +18,10 @@ Setting the __Deadline__ property of the GanttTask visualizes a vertical line sh
 
 __Example 1__ shows how the Deadline can be set.
 
-```C#
-	var task = new GanttTask()
-	{
-	    Start = new DateTime(2014, 6, 6),
-	    End = new DateTime(2014, 6, 8),
-	    Deadline = new DateTime(2014, 6, 9),
-	    Title = "Gantt Rendering"
-	};
-```
-```VB
-	Dim task = New GanttTask() With { _
-	    .Start = New DateTime(2014, 6, 6), _
-	    .[End] = New DateTime(2014, 6, 8), _
-	    .Deadline = New DateTime(2014, 6, 9), _
-	    .Title = "Gantt Rendering" _
-	}
-```
+<snippet id='radganttview-features-items-gantttask-deadline-block_1-cs' />
+
+<snippet id='radganttview-features-items-gantttask-deadline-block_1-vb' />
+
 
 When the __End__ time is before the set __Deadline__ of the Task, the Indicator is in green color, however, as soon as you expand the task after the __End__, the Indicator is replaced with one that has red color.
 
@@ -50,23 +37,10 @@ In order to change this behavior, you will need to create a custom GanttTask and
 
 __Example 2__ shows how to override CheckIsExpired method.
 
-```C#
-	public class CustomGanttTask : GanttTask
-	{
-	    protected override bool CheckIsExpired()
-	    {
-	        return this.Deadline < this.Start;
-	    }
-	}
-```
-```VB
-	Public Class CustomGanttTask
-	    Inherits GanttTask
-	    Protected Overrides Function CheckIsExpired() As Boolean
-	        Return Me.Deadline < Me.Start
-	    End Function
-	End Class
-```
+<snippet id='radganttview-features-items-gantttask-deadline-block_2-cs' />
+
+<snippet id='radganttview-features-items-gantttask-deadline-block_2-vb' />
+
 
 __Figure 2__ and __Figure 3__ show the result:
 

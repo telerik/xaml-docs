@@ -22,20 +22,12 @@ The default AppointmentSelectionBehavior used by the RadScheduleView control has
 
 __Set IsSynchronizedWithCurrentItem to False__
 
-```XAML
-	<telerik:RadScheduleView.AppointmentSelectionBehavior>
-		<telerik:AppointmentSelectionBehavior IsSynchronizedWithCurrentItem="False" />
-	</telerik:RadScheduleView.AppointmentSelectionBehavior>
-```
+<snippet id='radscheduleview-features-appointment-selection-behavior-block_1-xaml' />
 
 __Set IsSynchronizedWithCurrentItem to False__
 
-```C#
-	this.scheduleView.AppointmentSelectionBehavior = new AppointmentSelectionBehavior() { IsSynchronizedWithCurrentItem = false };
-```
-```VB.NET
-	Me.scheduleView.AppointmentSelectionBehavior = New AppointmentSelectionBehavior() With {.IsSynchronizedWithCurrentItem = False}
-```
+<snippet id='radscheduleview-features-appointment-selection-behavior-block_2-cs' />
+<snippet id='radscheduleview-features-appointment-selection-behavior-block_3-vb' />
 
 ## Disable Multiple Appointments Selection Based on ResourceName
 
@@ -47,82 +39,25 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 
 
-```C#
-	public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
-	{
-	}
-```
+<snippet id='radscheduleview-features-appointment-selection-behavior-block_4-cs' />
 
 * Override the GetSelectedAppointments method:
 
 
 
-```C#
-	public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
-	{
-		protected override IEnumerable<IOccurrence> GetSelectedAppointments(AppointmentSelectionState state, IOccurrence target)
-		{
-			var result = base.GetSelectedAppointments(state, target);
-	
-			if (result.Skip(1).Any())
-			{
-				var firstSelected = state.CurrentSelectedAppointments.First();
-				var firstSelectedAppointment = GetAppointment(firstSelected);
-				var firstSelectedResource = firstSelectedAppointment.Resources[0];
-	
-				return result.Where(occ => GetAppointment(occ).Resources.Contains(firstSelectedResource));
-			}
-			return result;
-		}
-	
-		private static IAppointment GetAppointment(IOccurrence occurence)
-		{
-			return occurence is IAppointment ? ((IAppointment)occurence) : ((Occurrence)occurence).Appointment;
-		}
-	}
-```
+<snippet id='radscheduleview-features-appointment-selection-behavior-block_5-cs' />
 
 * All that is left is to attach the newly created custom behavior to the ScheduleView:
 
 
 
-```XAML
-	<telerik:RadScheduleView ...>
-		<!-- ... -->
-		<telerik:RadScheduleView.AppointmentSelectionBehavior>
-			<local:CustomAppointmentSelectionBehavior/>
-		</telerik:RadScheduleView.AppointmentSelectionBehavior>
-		<!-- ... -->
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-appointment-selection-behavior-block_6-xaml' />
 
 Finally the ScheduleView control in the XAML should look like this:
 
 
 
-```XAML
-	<telerik:RadScheduleView ...>
-		<!-- ... -->
-		<telerik:RadScheduleView.ResourceTypesSource>
-			<telerik:ResourceTypeCollection>
-				<telerik:ResourceType Name="Location">
-					<telerik:Resource ResourceName="Room 1" />
-					<telerik:Resource ResourceName="Room 2" />
-					<telerik:Resource ResourceName="Room 3" />
-				</telerik:ResourceType>
-			</telerik:ResourceTypeCollection>
-		</telerik:RadScheduleView.ResourceTypesSource>
-		<telerik:RadScheduleView.GroupDescriptionsSource>
-			<telerik:GroupDescriptionCollection>
-				<telerik:ResourceGroupDescription ResourceType="Location" />
-			</telerik:GroupDescriptionCollection>
-		</telerik:RadScheduleView.GroupDescriptionsSource>
-		<telerik:RadScheduleView.AppointmentSelectionBehavior>
-			<local:CustomAppointmentSelectionBehavior />
-		</telerik:RadScheduleView.AppointmentSelectionBehavior>
-		<!-- ... -->
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-features-appointment-selection-behavior-block_7-xaml' />
 
 The end result is:
 

@@ -23,22 +23,13 @@ The code from __Example 1__ shows how to use __RtfFormatProvider__ to import an 
      
 __Example 1: Import document from a file__
 
-```C#
-    RtfFormatProvider provider = new RtfFormatProvider();
-    using (Stream input = File.OpenRead("Sample.rtf"))
-    {
-        RadDocument document = provider.Import(input);
-    }
-```
+<snippet id='radrichtextbox-import-export-rtf-rtfformatprovider-block_1-cs' />
 
 And here is how you can import a document from string containing the RTF document:
 
 __Example 2: Import document from a string__
 
-```C#
-    RtfFormatProvider provider = new RtfFormatProvider();
-    RadDocument document = provider.Import(input);
-```
+<snippet id='radrichtextbox-import-export-rtf-rtfformatprovider-block_2-cs' />
 
 The resulting __RadDocument__ can be used like any code-generated document.
  
@@ -50,24 +41,13 @@ __Example 3__ shows how to use __RtfFormatProvider__ to export __RadDocument__ t
 
 __Example 3: Export a document to a file__
 
-```C#
-    RtfFormatProvider provider = new RtfFormatProvider();
-    using (Stream output = File.Create("sample.rtf"))
-    {
-        RadDocument document = CreateRadDocument();
-        provider.Export(document, output);
-    }
-```
+<snippet id='radrichtextbox-import-export-rtf-rtfformatprovider-block_3-cs' />
 
 You can also export the document to a string and preserve it in a database.
 
 __Example 4: Export a document to a string__
 
-```C#
-    RtfFormatProvider provider = new RtfFormatProvider();
-    RadDocument document = CreateRadDocument();
-    string output = provider.Export(document);
-```
+<snippet id='radrichtextbox-import-export-rtf-rtfformatprovider-block_4-cs' />
 
 The resulting documents can be opened in any application that supports RTF documents.
 

@@ -15,75 +15,12 @@ RadMap provides a rich set of [geocoordinate-enabled shapes]({%slug radmap-featu
 
 First of all we’ll need two Information layers – one for the polyline and the other one for the points that we will use for the shape manipulation. We will disable the default pan / drag actions of the Map as we will attach our own mouse events on the pinpoints only:
 
-```XAML
-	<telerik:RadMap x:Name="radMap"
-	                        InitializeCompleted="radMap_InitializeCompleted"
-	                        Center="40,-100"
-	                        MouseClickMode="None"
-	                        MouseDragMode="None"
-	                        MouseDoubleClickMode="None"
-	                        ZoomLevel="4">
-	            <telerik:RadMap.Provider>
-	                <telerik:OpenStreetMapProvider />
-	            </telerik:RadMap.Provider>
-	
-	            <telerik:InformationLayer x:Name="polylineLayer" />
-	            <telerik:InformationLayer x:Name="pointLayer" />
-	
-	        </telerik:RadMap>
-```
+<snippet id='radmap-how-to-howto-resize-map-shapes-with-mouse-dragging-block_1-xaml' />
 
 Now we will create a sample polyline and add it to the first information layer. Note that it is better to do this after the map provider has been initialized in order to prevent your items from appearing in the upper left corner before the map is initialized and loaded:
 
-```C#
-	private void radMap_InitializeCompleted(object sender, EventArgs e)
-	{
-		if (!initialized)
-		{
-			initialized = true;
-
-			this.BuildPolyline();
-		}
-	}
-
-	private void BuildPolyline()
-	{
-		LocationCollection points = new LocationCollection();
-		points.Add(new Location(40, -100));
-		points.Add(new Location(41, -101));
-		points.Add(new Location(40, -102));
-		points.Add(new Location(43, -103));
-		points.Add(new Location(45, -97));
-
-		MapPolyline polyline = new MapPolyline();
-		polyline.Points = points;
-
-		this.polylineLayer.Items.Add(polyline);
-	}
-```
-```VB.NET
-	Private Sub radMap_InitializeCompleted(ByVal sender As Object, ByVal e As EventArgs)
-				If Not initialized Then
-					initialized = True
-	
-					Me.BuildPolyline()
-				End If
-	End Sub
-	
-	Private Sub BuildPolyline()
-		Dim points As New LocationCollection()
-		points.Add(New Location(40, -100))
-		points.Add(New Location(41, -101))
-		points.Add(New Location(40, -102))
-		points.Add(New Location(43, -103))
-		points.Add(New Location(45, -97))
-
-		Dim polyline As New MapPolyline()
-		polyline.Points = points
-
-		Me.polylineLayer.Items.Add(polyline)
-	End Sub
-```
+<snippet id='radmap-how-to-howto-resize-map-shapes-with-mouse-dragging-block_2-cs' />
+<snippet id='radmap-how-to-howto-resize-map-shapes-with-mouse-dragging-block_2-vb' />
 
 And now to the essential part of our scenario – the pinpoints. Add a MapPinPoint instance for each vertex of the original polyline shape you are displaying. This is easy since the polyline itself was created from a set of predefined locations. To be able to modify the shape of our polyline on dragging the pinpoints we’ll attach the following three mouse events:
 
@@ -93,52 +30,7 @@ And now to the essential part of our scenario – the pinpoints. Add a MapPinPoi
 
 * __MouseMove__ - gets the coordinates of the clicked pinpoint relative to the map control screen coordinates. Then redraw the polyline respecting the new location of its vertex.  Both actions are easily achieved via the static SetLocation() and GetLocation() methods of the MapLayer helper class:
 
-	```C#
-		private void pinPoint_MouseMove(object sender, MouseEventArgs e)
-		{
-			if (!this.isDragging)
-				return;
-
-			var pinPoint = sender as MapPinPoint;
-			var oldLocation = MapLayer.GetLocation(pinPoint);
-			var location = Location.GetCoordinates(radMap, e.GetPosition(radMap));
-			MapLayer.SetLocation(sender as DependencyObject, location);
-
-			var polyline = this.polylineLayer.Items[0] as MapPolyline;
-			for (int i = 0; i < polyline.Points.Count; i++)
-			{
-				var locationPoint = polyline.Points[i];
-				if (locationPoint == oldLocation)
-				{
-					polyline.Points[i] = location;
-					break;
-				}
-			}
-			e.Handled = true;
-
-		}
-	```
-	```VB.NET
-		Private Sub pinPoint_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
-				If Not Me.isDragging Then
-					Return
-				End If
-
-				Dim pinPoint = TryCast(sender, MapPinPoint)
-				Dim oldLocation = MapLayer.GetLocation(pinPoint)
-				Dim location = Location.GetCoordinates(radMap, e.GetPosition(radMap))
-				MapLayer.SetLocation(TryCast(sender, DependencyObject), location)
-
-				Dim polyline = TryCast(Me.polylineLayer.Items(0), MapPolyline)
-				For i As Integer = 0 To polyline.Points.Count - 1
-					Dim locationPoint = polyline.Points(i)
-					If locationPoint Is oldLocation Then
-						polyline.Points(i) = location
-						Exit For
-					End If
-				Next i
-			        e.Handled = True
-		End Sub
-	```
+	<snippet id='radmap-how-to-howto-resize-map-shapes-with-mouse-dragging-block_3-cs' />
+	<snippet id='radmap-how-to-howto-resize-map-shapes-with-mouse-dragging-block_3-vb' />
 
 >tip The full source code can be downloaded from our blogpost [here](http://blogs.telerik.com/xamlteam/posts/12-01-09/radmap-for-silverlight-wpf-how-to-resize-map-shapes-with-mouse-dragging.aspx).

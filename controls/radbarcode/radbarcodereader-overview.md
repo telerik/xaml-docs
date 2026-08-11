@@ -20,10 +20,7 @@ When decoding a barcode image, the control will either display the type and text
 And here is the XAML that produces the result:        
 
 __Example 1: Barcode reader definition__  
-```XAML
-	<!--The values below are the default ones, so you do not need to specify them-->
-	<telerik:RadBarcodeReader OpenButtonText="Choose Image" DecodeButtonText="Decode Image"/>
-```
+<snippet id='radbarcode-radbarcodereader-overview-block_1-xaml' />
 
 The Choose Image button lets the user choose an image path, to the image which will be decoded. The Decode Image triggers the decoding algorithm. The underlying text area is updated with the result of the decoding process.        
 
@@ -50,51 +47,9 @@ The class also exposes a **DecodingComplete** event which is fired once the deco
 
 __Example 2: Decoding an image with the BarcodeDecoder__
 
-```C#
-	private void Button_Click(object sender, RoutedEventArgs e)
-	{
-		var imageUri = new Uri("../../barcode.jpg", UriKind.Relative);
-		var imageSource = new BitmapImage(imageUri);
-		BarcodeDecoder decoder = new BarcodeDecoder();
-		decoder.ImageSource = imageSource;
-		decoder.DecodingComplete += new EventHandler<DecodingEventArgs>(this.OnDecodingComplete);
-		decoder.StartDecoding();           
-	}
+<snippet id='radbarcode-radbarcodereader-overview-example_2_decoding_an_image_with_the_barcodedecoder-cs' />
+<snippet id='radbarcode-radbarcodereader-overview-example_2_decoding_an_image_with_the_barcodedecoder-vb' />
 
-	private void OnDecodingComplete(object sender, DecodingEventArgs e)
-	{
-		string decodeResult;
-
-		if (string.IsNullOrEmpty(e.ErrorMessage))
-		{
-			decodeResult = string.Format("Code Type: {0}\nResult: {1}", e.CodeType, e.Result);
-		}
-		else
-		{
-			decodeResult = e.ErrorMessage;
-		}
-	}
-```
-```VB.NET
-	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim imageUri = New Uri("../../barcode.jpg", UriKind.Relative)
-		Dim imageSource = New BitmapImage(imageUri)
-		Dim decoder As New BarcodeDecoder()
-		decoder.ImageSource = imageSource
-		AddHandler decoder.DecodingComplete, AddressOf OnDecodingComplete
-		decoder.StartDecoding()
-	End Sub
-
-	Private Sub OnDecodingComplete(ByVal sender As Object, ByVal e As DecodingEventArgs)
-		Dim decodeResult As String
-
-		If String.IsNullOrEmpty(e.ErrorMessage) Then
-			decodeResult = String.Format("Code Type: {0}" & ControlChars.Lf & "Result: {1}", e.CodeType, e.Result)
-		Else
-			decodeResult = e.ErrorMessage
-		End If
-	End Sub
-```
 
 ## Decoded Types
 
@@ -137,21 +92,14 @@ In addition, the following values can also be set:
 * **TwoDimensional**: All 2D barcodes.
 
 __Example 3: Specify DecodeTypes of RadBarcodeReader__  
-```XAML
-	<telerik:RadBarcodeReader DecodeTypes="Code11,Code39Extended,Codebar" />
-```
+<snippet id='radbarcode-radbarcodereader-overview-example_2_decoding_an_image_with_the_barcodedecoder-xaml' />
 
 If you're using the **BarcodeDecoder** class to decode the barcode, similarly, you can use its **DecodeTypes** property to predefine the barcode types to be decoded.
 
 __Example 4: Specify DecodeTypes of BarcodeDecoder__  
-```C#
-	BarcodeDecoder decoder = new BarcodeDecoder();
-	decoder.DecodeTypes = BarcodeType.HeightModulated1D | BarcodeType.TwoDimensional;
-```
-```VB.NET	
-	Dim decoder As New BarcodeDecoder()
-	decoder.DecodeTypes = BarcodeType.HeightModulated1D Or BarcodeType.TwoDimensional
-```
+<snippet id='radbarcode-radbarcodereader-overview-example_3_decoding_an_image_with_the_barcodedecoder-cs' />
+<snippet id='radbarcode-radbarcodereader-overview-example_3_decoding_an_image_with_the_barcodedecoder-vb' />
+
 
 ## See Also
 

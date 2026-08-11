@@ -20,19 +20,7 @@ The RadAIPromptButton provides the following properties:
 * `IsPopupOpen`&mdash;Allows you to open/close the popup holding the RadAIPrompt.
 
 __Creating a RadAIPromptButton__
-```XAML
-    <telerik:RadAIPromptButton x:Name="aiPromptButton">
-    	<telerik:RadAIPromptButton.AIPrompt>
-    		<telerik:RadAIPrompt x:Name="aiPrompt" 
-                                 Commands="{Binding MyCommands}"
-                                 Suggestions="{Binding MySuggestions}">
-    			<telerik:RadAIPromptInputItem />
-    			<telerik:RadAIPromptOutputItem />
-    			<telerik:RadAIPromptCommandsItem />
-    		</telerik:RadAIPrompt>
-    	</telerik:RadAIPromptButton.AIPrompt>
-    </telerik:RadAIPromptButton>
-```
+<snippet id='radaiprompt-aiprompt-button-creating_a_radaipromptbutton-xaml' />
 
 __RadAIPromptButton__
 

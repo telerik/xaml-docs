@@ -36,12 +36,8 @@ When the RadGridView is setup, you can configure it to display the merged cells 
       
 __Example 1: Configure RadGridView to merge cells vertically__
 
-```XAML
-	<telerik:RadGridView ColumnWidth="*"
-	                    MergedCellsDirection="Vertical"
-	                    CanUserFreezeColumns="False"
-	                    GroupRenderMode="Flat"/>
-```
+<snippet id='radgridview-features-merged-cells-example_1_configure_radgridview_to_merge_cells_vertically-xaml' />
+
 
 __Figure 1: RadGridView with vertically merged cells__
 
@@ -51,12 +47,8 @@ Similarly, you can set the cells to be merged horizontally configuring RadGridVi
 
 __Example 2: Configure RadGridView to merge cells horizontally__
 
-```XAML
-	<telerik:RadGridView ColumnWidth="*"
-	                    MergedCellsDirection="Horizontal"
-	                    CanUserFreezeColumns="False"
-	                    GroupRenderMode="Flat"/>
-```
+<snippet id='radgridview-features-merged-cells-example_2_configure_radgridview_to_merge_cells_horizontally-xaml' />
+
 
 
 __Figure 2: RadGridView with horizontally merged cells__
@@ -69,16 +61,8 @@ You can also configure merging for GridViewDataColumn through setting its __IsCe
         
 __Example 3: Configure cell merging per column__
 
-```XAML
-	<telerik:RadGridView ColumnWidth="*"
-	                      MergedCellsDirection="Vertical"
-	                      CanUserFreezeColumns="False"
-	                      GroupRenderMode="Flat">
-	    <telerik:RadGridView.Columns>
-	        <telerik:GridViewDataColumn IsCellMergingEnabled="False"/>
-	    </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-features-merged-cells-example_3_configure_cell_merging_per_column-xaml' />
+
 
 >Please note RadGridView's definition in __Example 3__ is specific to illustrate it
 
@@ -92,34 +76,13 @@ Merged cells are also supported when there are [RowDetails]({%slug radgridview-r
    
 __Example 4: Define RowDetailsTemplate__
 
-```XAML
+<snippet id='radgridview-features-merged-cells-example_4_define_rowdetailstemplate-xaml' />
 
-	<DataTemplate x:Key="RowDetailsTemplate">
-	  <StackPanel>
-	    <TextBlock Text="First Name: " FontWeight="Bold"/>
-	    <TextBlock Text="{Binding FirstName}" />
-	    <TextBlock Text="Last Name: " FontWeight="Bold"/>
-	    <TextBlock Text="{Binding LastName}" />
-	  </StackPanel>
-	</DataTemplate>
-```
 
 __Example 5: Specify RowDetailsTemplate for RadGridView__
 
-```XAML
+<snippet id='radgridview-features-merged-cells-example_5_specify_rowdetailstemplate_for_radgridview-xaml' />
 
-	<telerik:RadGridView
-	  Name="radGridView"
-	  ColumnWidth="100"
-	  MergedCellsDirection="Vertical"
-	  GroupRenderMode="Flat"
-	  CanUserFreezeColumns="False"
-	  RowDetailsTemplate="{StaticResource RowDetailsTemplate}">
-	  <telerik:RadGridView.Columns>
-	    <telerik:GridViewToggleRowDetailsColumn/>
-	  </telerik:RadGridView.Columns>
-	</telerik:RadGridView>
-```
 
 __Figure 4: RadGridView with merged cells and RowDetails defined__
 

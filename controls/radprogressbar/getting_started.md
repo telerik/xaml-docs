@@ -34,23 +34,11 @@ You can find the required assemblies for each control from the suite in the {% i
 To set up a RadProgressBar, set its __Minimum__, __Maximum__ and __Value__ properties. They control the value range of the control and the current position of the [progress indicator]({%slug radprogressbar-structure%}).
 
 __Example 1: Defining RadProgressBar in XAML__
-```XAML
-	<telerik:RadProgressBar Minimum="-50" Maximum="50" Value="10"/>
-```
+<snippet id='radprogressbar-getting-started-block_1-xaml' />
 
 __Example 2: Defining RadProgressBar in code__
-```C#
-	RadProgressBar progressBar = new RadProgressBar();
-	progressBar.Minimum = -50;
-	progressBar.Maximum = 50;
-	progressBar.Value = 10;
-```
-```VB.NET
-	Dim progressBar = New RadProgressBar()
-	progressBar.Minimum = -50
-	progressBar.Maximum = 50
-	progressBar.Value = 10
-```
+<snippet id='radprogressbar-getting-started-block_2-cs' />
+<snippet id='radprogressbar-getting-started-block_2-vb' />
 
 ![{{ site.framework_name }} RadProgressBar Minimum Maximum and Value Setup](images/radprogressbar-getting-started-0.png)
 
@@ -59,31 +47,11 @@ __Example 2: Defining RadProgressBar in code__
 The default orientation of RadProgressBar is horizontal. To change this, set the __Orientation__ property to __Vertical__.
 
 __Example 3: Setting orientation in XAML__
-```XAML
-	<telerik:RadProgressBar Minimum="-50" Maximum="50" Value="10" 
-							Width="8" Height="200"
-							Orientation="Vertical"/>
-```
+<snippet id='radprogressbar-getting-started-block_3-xaml' />
 
 __Example 4: Setting orientation in code__
-```C#
-	RadProgressBar progressBar = new RadProgressBar();
-	progressBar.Minimum = -50;
-	progressBar.Maximum = 50;
-	progressBar.Value = 10;
-	progressBar.Width = 8;
-	progressBar.Height = 200;
-	progressBar.Orientation = Orientation.Vertical;
-```
-```VB.NET
-	Dim progressBar = New RadProgressBar()
-	progressBar.Minimum = -50
-	progressBar.Maximum = 50
-	progressBar.Value = 10
-	progressBar.Width = 8
-	progressBar.Height = 200
-	progressBar.Orientation = Orientation.Vertical
-```
+<snippet id='radprogressbar-getting-started-block_4-cs' />
+<snippet id='radprogressbar-getting-started-block_4-vb' />
 
 ![{{ site.framework_name }} RadProgressBar with Vertical Orientation](images/radprogressbar-getting-started-1.png)
 
@@ -92,19 +60,11 @@ __Example 4: Setting orientation in code__
 This state presents a visualization of an unspecified waiting time. To enable it, set the the __IsIndeterminate__ property of RadProgressBar to __True__.
 
 __Example 5: Enabling intereminate state in XAML__
-```XAML
-	<telerik:RadProgressBar IsIndeterminate="True" />
-```
+<snippet id='radprogressbar-getting-started-block_5-xaml' />
 
 __Example 6: Enabling intereminate state in code__
-```C#
-	RadProgressBar progressBar = new RadProgressBar();
-	progressBar.IsIndeterminate = true;
-```
-```VB.NET
-	Dim progressBar = New RadProgressBar()
-	progressBar.IsIndeterminate = True
-```
+<snippet id='radprogressbar-getting-started-block_6-cs' />
+<snippet id='radprogressbar-getting-started-block_6-vb' />
 
 ![{{ site.framework_name }} RadProgressBar Indeterminate](images/radprogressbar-getting-started-2.gif)
 
@@ -125,16 +85,7 @@ To change the theme, you can follow the steps below:
 __Example 7__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 7: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radprogressbar-getting-started-block_7-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -158,4 +109,3 @@ __Figure 1__ shows a RadProgressBar with the **Windows8** theme applied.
 
 ## See Also  
 * [Changing Colors]({%slug radprogressbar-changing-colors%})
-

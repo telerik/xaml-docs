@@ -16,10 +16,7 @@ If you set this property to __True__, the menu won't get closed upon a click on 
 
 
 
-```XAML
-	<telerik:RadMenuItem Header="Sidebar"
-	             StaysOpenOnClick="True" />
-```
+<snippet id='radmenu-features-click-modes-block_1-xaml' />
 
 ![{{ site.framework_name }} RadMenu Stays Open On Click](images/RadMenu_Click_Modes_01.png)
 

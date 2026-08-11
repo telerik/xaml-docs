@@ -15,14 +15,8 @@ MovingAverageIndicator measures and shows the simple average for a period of pas
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
 __Example 1: MovingAverageIndicator__
-```XAML
-	 <telerik:RadCartesianChart.Indicators>
-		<telerik:MovingAverageIndicator Period="5" 													
-										CategoryBinding="Date"                                             
-										ValueBinding="Close"
-										ItemsSource="{Binding Data}"/>
-	</telerik:RadCartesianChart.Indicators>
-```
+<snippet id='radchartview-indicators-indicators-movingaverageindicator-example_1_movingaverageindicator-xaml' />
+
 
 #### Figure 1: MovingAverageIndicator
 <img src="images/radchartview-indicators-movingaverageindicator-0.png" style="width: 80%;">

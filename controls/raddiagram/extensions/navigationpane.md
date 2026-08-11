@@ -37,12 +37,8 @@ RadDiagramNavigationPane is consisted of:
 In order to use with the DiagramNavigationPane you have to bind its Diagram property to a RadDiagram:		
 
 
-```XAML
-	<telerik:RadDiagram x:Name="diagram" />
-	<telerik:RadDiagramNavigationPane Diagram="{Binding ElementName=diagram}"
-								      HorizontalAlignment="Left"
-   									  VerticalAlignment="Bottom"/>
-```
+<snippet id='raddiagram-extensions-navigationpane-block_1-xaml' />
+
 
 Once you bind the Diagram property you have to decide whether the control will be expanded or not.
 

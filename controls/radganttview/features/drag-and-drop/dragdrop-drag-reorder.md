@@ -61,68 +61,22 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 
 
 
-```C#
-	public class CustomGanttTask : GanttTask
-	{
-	    private bool isDragReorderAllowed;
-	
-	    public bool IsDragReorderAllowed
-	    {
-	        get
-	        {
-	            return this.isDragReorderAllowed;
-	        }
-	
-	        set
-	        {
-	            if (this.isDragReorderAllowed != value)
-	            {
-	                this.isDragReorderAllowed = value;
-	                this.OnPropertyChanged(() => this.IsDragReorderAllowed);
-	            }
-	        }
-	    }
-	}
-```
+<snippet id='radganttview-features-drag-and-drop-dragdrop-drag-reorder-block_1-cs' />
+
 
 * After that you will need to create the custom DragDropBehavior with one of the previously mentioned approaches. In the __CanStartDrag__ method you can use the __SchedulingDragDropState__ to determine if the drag and drop operation is in the GridView or the Timeline part of the control with the use of the Boolean __IsReorderOperation__ property. If the value of that property is true the drag drop operation is triggered in the [GridView part]({%slug radganttview-visual-structure%}) of the control:
 
 
 
-```C#
-	public class CustomGanttDragDropBehavior : GanttDragDropBehavior
-	{
-	    protected override bool CanStartDrag(SchedulingDragDropState state)
-	    {
-	        if (state.IsReorderOperation)
-	        {
-	            return ((CustomGanttTask)state.DraggedItem).IsDragReorderAllowed;
-	        }
-	
-	        return base.CanStartDrag(state);
-	    }
-	}
-```
+<snippet id='radganttview-features-drag-and-drop-dragdrop-drag-reorder-block_2-cs' />
+
 
 * After populating the control with some sample data the declared in the xaml control should look like this:
 
 
 
-```XAML
-	<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="20"
-	VerticalAlignment="Top" 
-	VisibleRange="{Binding VisibleTime}">
-	    <telerik:RadGanttView.DragDropBehavior>
-	        <local:CustomGanttDragDropBehavior/>
-	    </telerik:RadGanttView.DragDropBehavior>
-	    <telerik:RadGanttView.Columns>
-	        <telerik:TreeColumnDefinition Header="Title" MemberBinding="{Binding Title}" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
-	        <telerik:ColumnDefinition MemberBinding="{Binding IsDragReorderAllowed}" Header="Is Drag Reorder Allowed" Width="AutoHeaderAndContent"/>
-	    </telerik:RadGanttView.Columns>
-	</telerik:RadGanttView>
-```
+<snippet id='radganttview-features-drag-and-drop-dragdrop-drag-reorder-block_3-xaml' />
+
 
 The local namespace is the namespace of the project.
 

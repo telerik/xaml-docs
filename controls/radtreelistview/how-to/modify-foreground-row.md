@@ -19,36 +19,7 @@ In order to achieve this you can create a style targeting TreeListViewRow and ad
 > __Example 1__ uses the WarehouseViewModel and its dependencies defined in the [Getting Started]({%slug radtreeliestview-getting-started%}) article of the RadTreeListView.
 
 __Example 1: Custom style targeting TreeListViewRow__
-```XAML
-
-    <Window.DataContext>
-        <my:WarehouseViewModel />
-    </Window.DataContext>
-    <Window.Resources>
-        <!-- If you are using the NoXaml binaries, you should base the style on the default one for the theme like so-->
-        <!-- <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowStyle}"> -->
-        <Style TargetType="telerik:TreeListViewRow" >
-            <Style.Triggers>
-                <Trigger Property="IsSelected" Value="True">
-                    <Setter Property="Foreground" Value="Red" />
-                </Trigger>
-                <MultiTrigger >
-                    <MultiTrigger.Conditions>
-                        <Condition Property="IsMouseOver" Value="True"/>
-                        <Condition Property="IsSelected" Value="False"/>
-                    </MultiTrigger.Conditions>
-                    <Setter Property="Foreground" Value="Green" />
-                </MultiTrigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
-    <telerik:RadTreeListView x:Name="radTreeListView" 
-                            ItemsSource="{Binding WarehouseItems}">
-        <telerik:RadTreeListView.ChildTableDefinitions>
-            <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
-        </telerik:RadTreeListView.ChildTableDefinitions>
-    </telerik:RadTreeListView>
-```
+<snippet id='radtreelistview-how-to-modify-foreground-row-block_1-xaml' />
 
 > The demonstrated approach may not be relevant for all UI for WPF themes. 
 

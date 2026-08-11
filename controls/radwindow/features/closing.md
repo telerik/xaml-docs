@@ -16,18 +16,8 @@ The __RadWindow__ can be closed by either clicking on its 'Close' button at the 
 
 __Example 1: Closing a RadWindow__
 
-```C#
-	RadWindow radWindow = new RadWindow();
-	radWindow.Show();
-	//...
-	radWindow.Close();
-```
-```VB.NET
-	Dim radWindow As New RadWindow()
-	radWindow.Show()
-	'...'
-	radWindow.Close()
-```
+<snippet id='radwindow-features-closing-block_1-cs' />
+<snippet id='radwindow-features-closing-block_2-vb' />
 
 >tip When the __RadWindow__ gets closed, the __Closed__ event is raised. More about events can be found [here]({%slug radwindow-events-overview%}).
 
@@ -37,14 +27,8 @@ To disable the closing of the __RadWindow__ via the UI you can set the __CanClos
 
 __Example 2: Setting the CanClose property__
 
-```C#
-	RadWindow radWindow = new RadWindow();
-	radWindow.CanClose = false;
-```
-```VB.NET
-	Dim radWindow As New RadWindow()
-	radWindow.CanClose = False
-```
+<snippet id='radwindow-features-closing-block_3-cs' />
+<snippet id='radwindow-features-closing-block_4-vb' />
 
 ![{{ site.framework_name }} RadWindow Hidden Close Button](images/RadWindow_Features_Closing_02.png)
 
@@ -52,17 +36,8 @@ Alternatively, you can also handle the __PreviewClosed__ event and set the __Can
 
 __Example 3: Canceling the PreviewClosed event__
 
-```C#
-	private void RadWindow_PreviewClosed(object sender, WindowPreviewClosedEventArgs e)
-	{
-		e.Cancel = true;
-	}
-```
-```VB.NET
-	Private Sub RadWindow_PreviewClosed(ByVal sender As Object, ByVal e As WindowPreviewClosedEventArgs)
-		e.Cancel = True
-	End Sub
-```
+<snippet id='radwindow-features-closing-block_5-cs' />
+<snippet id='radwindow-features-closing-block_6-vb' />
 
 ## See Also
 

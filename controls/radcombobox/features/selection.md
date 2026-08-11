@@ -26,21 +26,17 @@ The purpose of the __SelectedItem__ property is to get or set the currently sele
 
 * When your __RadComboBox__ is with static data (declared in XAML), the __SelectedItem__ property is of type __RadComboBoxItem__.
 
-```C#
-	RadComboBoxItem selectedItem = radComboBox.SelectedItem as RadComboBoxItem;
-```
-```VB.NET
-	Dim selectedItem As RadComboBoxItem = TryCast(radComboBox.SelectedItem, RadComboBoxItem)
-```
+<snippet id='radcombobox-features-selection-block_1-cs' />
+
+<snippet id='radcombobox-features-selection-block_1-vb' />
+
 
 * When your __RadComboBox__ is [data bound to a collection of custom objects]({%slug radcombobox-populating-with-data-binding-to-object%}), the __SelectedItem__ is of the type of the custom object.
 
-```C#
-	Agency agency = radComboBox.SelectedItem as Agency;
-```
-```VB.NET
-	Dim agency As Agency = TryCast(radComboBox.SelectedItem, Agency)
-```
+<snippet id='radcombobox-features-selection-block_2-cs' />
+
+<snippet id='radcombobox-features-selection-block_2-vb' />
+
 
 ## Using SelectedValue and SelectedValuePath
 
@@ -54,49 +50,12 @@ The following example demonstrates the usage of the __SelectedItem__, __Selected
 
 Imagine that you have a business object named __Agency__ with two members (properties): __Name__ and __Phone__. And a __RadComboBox__ object which is [data bound]({%slug radcombobox-populating-with-data-binding-to-object%}) to a list of __Agency__ objects
 
-```C#
-	public class Agency
-	{
-	    public string Name
-	    {
-	        get;
-	        set;
-	    }
-	    public string Phone
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
-	Public Class Agency
-	Private _Name As String
-	    Public Property Name() As String
-	        Get
-	            Return _Name
-	        End Get
-	        Set(ByVal value As String)
-	            _Name = value
-	        End Set
-	    End Property
-	Private _Phone As String
-	    Public Property Phone() As String
-	        Get
-	            Return _Phone
-	        End Get
-	        Set(ByVal value As String)
-	            _Phone = value
-	        End Set
-	    End Property
-	End Class
-```
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox"
-	    ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}"
-	    DisplayMemberPath="Name"
-	    SelectedValuePath="Phone"/>
-```
+<snippet id='radcombobox-features-selection-block_3-cs' />
+
+<snippet id='radcombobox-features-selection-block_3-vb' />
+
+<snippet id='radcombobox-features-selection-block_4-xaml' />
+
 
 ![{{ site.framework_name }} RadComboBox with Selected Item](images/RadComboBox_Features_Selection_005.png)
 
@@ -106,20 +65,17 @@ When you select an agency name from the combo box, the __SelectedItem__ property
 
 Use the __SelectedIndex__ property to get or set the index of the selected item. For example, by using the __SelectedIndex__ property, you could specify which the default selected item is.
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" SelectedIndex="3"/>
-```
+<snippet id='radcombobox-features-selection-block_5-xaml' />
+
 
 ## Using the Text Property
 
 Use the __RadComboBox__'s __Text__ property, whenever you want to get or set the text of the currently selected item. This is the currently displayed text in the input box.
 
-```C#
-	string text = radComboBox.Text;
-```
-```VB.NET
-	Dim text As String = radComboBox.Text
-```
+<snippet id='radcombobox-features-selection-block_6-cs' />
+
+<snippet id='radcombobox-features-selection-block_6-vb' />
+
 
 ## See Also
 

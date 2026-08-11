@@ -31,15 +31,8 @@ In order to use the `SkiaRenderOptions`, you will need to reference the followin
 After that you can set the `RenderOptions` property of the series.
 
 
-```XAML
-	<telerik:RadCartesianChart.Series>
-		<telerik:LineSeries>
-			<telerik:LineSeries.RenderOptions>
-				<telerik:SkiaRenderOptions/>
-			</telerik:LineSeries.RenderOptions>
-		</telerik:LineSeries>
-	</telerik:RadCartesianChart.Series>
-```
+<snippet id='radchartview-features-rendering-block_1-xaml' />
+
 
 The Skia rendering supports anti-aliasing feature which is enabled by default. If you need to disable this, you can set the set the `IsAntialias` property of the `SkiaRenderOptions` to `false`.
 
@@ -66,15 +59,8 @@ In order to use the Direct2DRenderOptions, you will need to reference the follow
 After referencing those binaries, you will be able to set the RenderOptions property of the series like this:
 
 
-```XAML
-	<telerik:RadCartesianChart.Series>
-	  <telerik:LineSeries>
-		  <telerik:LineSeries.RenderOptions>
-			  <telerik:Direct2DRenderOptions/>
-		  </telerik:LineSeries.RenderOptions>
-	  </telerik:LineSeries>
-	</telerik:RadCartesianChart.Series>
-```
+<snippet id='radchartview-features-rendering-block_2-xaml' />
+
 
 The Direct2DRenderOptions class exposes the following properties:
 
@@ -105,15 +91,8 @@ Using this rendering mode, the __RadChartView__ will create one Bitmap image and
 You can enable this rendering mode with the following code:
 
 
-```XAML
-	<telerik:RadCartesianChart.Series>
-		<telerik:LineSeries>
-			<telerik:LineSeries.RenderOptions>
-				<telerik:BitmapRenderOptions/>
-			</telerik:LineSeries.RenderOptions>
-		</telerik:LineSeries>
-	</telerik:RadCartesianChart.Series>
-```
+<snippet id='radchartview-features-rendering-block_3-xaml' />
+
 	
 You can control the number of components created to visualize the data points in this rendering mode through the __DefaultVisualsRenderMode__ property. As an enumeration of style __DefaultVisualsRenderModeand__ it provides the following options:
 

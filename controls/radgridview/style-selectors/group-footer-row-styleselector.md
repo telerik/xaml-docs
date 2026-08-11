@@ -18,91 +18,17 @@ To do so, first create a new class that inherits the **StyleSelector** class and
 
 __Example 1: The GroupFooterRowStyleSelector class__
 
-```C#
-	public class GroupFooterRowStyleSelector : StyleSelector
-    {
-        public override Style SelectStyle(object item, DependencyObject container)
-        {
-            var group = item as QueryableCollectionViewGroup;
+<snippet id='radgridview-style-selectors-group-footer-row-styleselector-example_1_the_groupfooterrowstyleselector_class-cs' />
 
-            if (group != null)
-            {
-                if (group.ItemCount > 1)
-                {
-                    return BigGroupStyle;
-                }
-                else
-                {
-                    return SmallGroupStyle;
-                }
-            }
+<snippet id='radgridview-style-selectors-group-footer-row-styleselector-example_1_the_groupfooterrowstyleselector_class-vb' />
 
-            return null;
-        }
-
-        public Style BigGroupStyle { get; set; }
-        public Style SmallGroupStyle { get; set; }
-    }
-```
-```VB.NET
-	Public Class GroupFooterRowStyleSelector
-	Inherits StyleSelector
-		Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
-			Dim group = TryCast(item, CollectionViewGroup)
-	
-			If group IsNot Nothing Then
-				If group.ItemCount > 1 Then
-					Return BigGroupStyle
-				Else
-					Return SmallGroupStyle
-				End If
-			End If
-	
-			Return Nothing
-		End Function
-
-		Public Property BigGroupStyle() As Style
-			Get
-				Return m_BigGroupStyle
-			End Get
-			Set
-				m_BigGroupStyle = Value
-			End Set
-		End Property
-		Private m_BigGroupStyle As Style
-
-		Public Property SmallGroupStyle() As Style
-			Get
-				Return m_SmallGroupStyle
-			End Get
-			Set
-				m_SmallGroupStyle = Value
-			End Set
-		End Property
-		Private m_SmallGroupStyle As Style
-	End Class
-```
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigGroupStyle** and **SmallGroupStyle**:
 
 __Example 2: Setting the BigGroupStyle and SmallGroupStyle__
 
-```XAML
-	<Grid.Resources>
-		<my:GroupFooterRowStyleSelector x:Key="StadiumCapacityStyleSelector">
-			<my:GroupFooterRowStyleSelector.BigGroupStyle>
-				<Style TargetType="telerik:GridViewGroupFooterRow">
-					<Setter Property="Background" Value="Red"/>
-				</Style>
-			</my:GroupFooterRowStyleSelector.BigGroupStyle>
-			<my:GroupFooterRowStyleSelector.SmallGroupStyle>
-				<Style TargetType="telerik:GridViewGroupFooterRow">
-					<Setter Property="Background" Value="Yellow" />
-				</Style>
-			</my:GroupFooterRowStyleSelector.SmallGroupStyle>
-		</my:GroupFooterRowStyleSelector>
-	</Grid.Resources>
-```
+<snippet id='radgridview-style-selectors-group-footer-row-styleselector-example_2_setting_the_biggroupstyle_and_smallgroupstyle-xaml' />
+
 
 >The **"my:"** prefix before **GroupFooterRowStyleSelector** specifies the mapping for the namespace of the project: **xmlns:my="..."**
 
@@ -110,9 +36,8 @@ Finally, set the **GroupFooterRowStyleSelector** property:
 
 __Example 3: Setting the GroupFooterRowStyleSelector property__
 
-```XAML
-	<telerik:RadGridView GroupFooterRowStyleSelector="{StaticResource GroupFooterRowStyleSelector}" />
-```
+<snippet id='radgridview-style-selectors-group-footer-row-styleselector-example_3_setting_the_groupfooterrowstyleselector_property-xaml' />
+
 
 And here is the final result:
 

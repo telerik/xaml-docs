@@ -23,13 +23,9 @@ The dialog can be opened from the __More Columns__ option in the __Page Layout__
 The dialog can be shown by executing the `ShowSectionColumnsDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
 __Executing the show dialog command__
-```C#
-	this.richTextBox.Commands.ShowSectionColumnsDialogCommand.Execute(null);
-```
+<snippet id='radrichtextbox-dialogs-section-columns-dialog-block_1-cs' />
 
 Alternatively, call the `ShowSectionColumnsDialog` method of `RadRichTextBox`.
 
 __Using the show dialog method__
-```C#
-	this.richTextBox.ShowSectionColumnsDialog();
-```
+<snippet id='radrichtextbox-dialogs-section-columns-dialog-block_2-cs' />

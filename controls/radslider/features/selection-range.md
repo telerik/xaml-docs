@@ -14,9 +14,7 @@ __RadSlider__ supports the functionality of having two thumbs, thus enabling ran
 
 __Example 1: Enabling Selection Range__
 
-```XAML
-	<telerik:RadSlider x:Name="slider" IsSelectionRangeEnabled="True" />
-```
+<snippet id='radslider-features-selection-range-block_1-xaml' />
 
 ![{{ site.framework_name }} RadSlider Default Selection Range](images/radslider_features_default_range.png)
 
@@ -28,20 +26,14 @@ Modifying the range can be done either via the __SelectionStart__ and __Selectio
 
 __Example 2: Setting SelectionStart and SelectionEnd in XAML__
 
-```XAML
-	<telerik:RadSlider IsSelectionRangeEnabled="True" SelectionStart="0.2" SelectionEnd="0.4" />
-```
+<snippet id='radslider-features-selection-range-block_2-xaml' />
 
 * __Selection__: It is of type __SelectionRange<double>__ and it sets __Start__ and __End__ double values to define the selection range
 
 __Example 3: Setting Selection in code-behind__
 
-```C#
-	slider.Selection = new SelectionRange<double>(0.2, 0.4);
-```
-```VB.NET
-	slider.Selection = New SelectionRange(Of Double)(0.2, 0.4)
-```
+<snippet id='radslider-features-selection-range-block_3-cs' />
+<snippet id='radslider-features-selection-range-block_4-vb' />
 
 ![{{ site.framework_name }} RadSlider Custom Selection Range](images/radslider_features_custom_range.png)
 
@@ -59,20 +51,12 @@ The RadSlider control also exposes properties to control the minimum and maximum
 
 __Example 4: Setting MinimumRangeSpan and MaximumRangeSpan in XAML__
 
-```XAML
-	<telerik:RadSlider IsSelectionRangeEnabled="True" MinimumRangeSpan="5" MaximumRangeSpan="30" />
-```
+<snippet id='radslider-features-selection-range-block_5-xaml' />
 
 __Example 5: Setting MinimumRangeSpan and MaximumRangeSpan in code-behind__
 
-```C#            
-	slider.MinimumRangeSpan = 5;
-    slider.MaximumRangeSpan = 30;
-```
-```VB.NET	
-	slider.MinimumRangeSpan = 5
-    slider.MaximumRangeSpan = 30
-```
+<snippet id='radslider-features-selection-range-block_6-cs' />
+<snippet id='radslider-features-selection-range-block_7-vb' />
 
 ## Suppress Coercion
 
@@ -80,18 +64,12 @@ Through the **IsCoercionSuppressed** property you can control whether the slider
 
 __Example 6: Setting IsCoercionSuppressed in XAML__
 
-```XAML
-	<telerik:RadSlider IsCoercionSuppressed="True" IsSelectionRangeEnabled="True" MinimumRangeSpan="5" MaximumRangeSpan="30" />
-```
+<snippet id='radslider-features-selection-range-block_8-xaml' />
 
 __Example 7: Setting IsCoercionSuppressed in code-behind__
 
-```C#            
-	slider.IsCoercionSuppressed = true;
-```
-```VB.NET	
-	slider.IsCoercionSuppressed = true
-```
+<snippet id='radslider-features-selection-range-block_9-cs' />
+<snippet id='radslider-features-selection-range-block_10-vb' />
 
 If set to **True**, the coercion is done only when the user manipulates the slider and not if the related properties are set in code or through bindings.
 

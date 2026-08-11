@@ -16,11 +16,8 @@ You declare a custom header for a column (__Example 1__):
 
 __Example 1: Initial declaration of a custom header__
 
-```XAML
-	<telerik:GridViewDataColumn.Header>
-	    <TextBlock Text="My Custom Header" TextWrapping="Wrap" />
-	</telerik:GridViewDataColumn.Header>
-```
+<snippet id='radgridview-troubleshooting-styling-custom-header-example_1_initial_declaration_of_a_custom_header-xaml' />
+
 
 As a result, the __Foreground__ color of the custom header does not change on mouse hover (__Figure 1__ ), sorting, etc.		
 
@@ -39,42 +36,12 @@ You can bind the __Foreground__ property of the custom header (in this example t
 For this to also work when the [UI virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism of the control is enabled, however, you need to ensure that the TextBlock has been loaded when the binding is performed. For the purpose, you can create the following attached behavior.
 
 __Example 2: The custom attached behavior__
-```C#
-    public static class HeaderInheritForegroundBehavior
-    {
-        public static bool GetIsEnabled(DependencyObject obj)
-        {
-            return (bool)obj.GetValue(IsEnabledProperty);
-        }
+<snippet id='radgridview-troubleshooting-styling-custom-header-example_2_the_custom_attached_behavior-cs' />
 
-        public static void SetIsEnabled(DependencyObject obj, bool value)
-        {
-            obj.SetValue(IsEnabledProperty, value);
-        }
-
-        public static readonly DependencyProperty IsEnabledProperty =
-            DependencyProperty.RegisterAttached("IsEnabled", typeof(bool), typeof(HeaderInheritForegroundBehavior), new PropertyMetadata(OnAttachedChanged));
-
-        private static void OnAttachedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            var textBlock = d as TextBlock;
-            textBlock.Loaded += (s, a) =>
-            {
-                var parent = textBlock.ParentOfType<ContentControl>();
-                var binding = new Binding() { Source = parent, Path = new PropertyPath("Foreground") };
-
-                textBlock.SetBinding(TextBlock.ForegroundProperty, binding);
-            };
-        }
-    }
-```
 
 __Example 3: Final declaration of a custom header__
-```XAML
-	<telerik:GridViewDataColumn.Header>
-	    <TextBlock Text="My Custom Header" local:HeaderInheritForegroundBehavior.IsEnabled="True" TextWrapping="Wrap" />
-	</telerik:GridViewDataColumn.Header>
-```
+<snippet id='radgridview-troubleshooting-styling-custom-header-example_3_final_declaration_of_a_custom_header-xaml' />
+
 
 >Please note that the "local" namespace needs to point to the namespace where the HeaderInheritForegroundBehavior is defined.
 

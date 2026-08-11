@@ -25,14 +25,7 @@ With all settings for its AutoCompleteMode, RadMultiColumnComboBox will highligh
 When there is no selection applied, the control will display an empty AutoCompleteBox. In case a custom text needs to be displayed in it, the `NullText` property comes in handy.
 
 __Setting the NullText property__
-```XAML
-	<telerik:RadMultiColumnComboBox VerticalAlignment="Top" DisplayMemberPath="Name" 
-                                         NullText="Please enter input">
-            <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-                <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}"/>
-            </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
-        </telerik:RadMultiColumnComboBox>
-```
+<snippet id='radmulticolumncombobox-key-properties-and-methods-block_1-xaml' />
 
 __MultiColumnComboBox with NullText set__
 
@@ -81,9 +74,7 @@ The values for the SelectionOnFocus property are predefined in the `SelectionOnF
 The RadMultiColumnComboBox control provides the ability to control if the selected item/s will be removed when pressing the Delete or Back key when typing into the input box. This is done via the `ClearSelectionOnDeleteOrBackKey` property and its default value is __True__. Setting it to __False__ will prevent the removal of selected items when pressing the  into the input box
 
 __Setting the ClearSelectionOnDeleteOrBackKey property__
-```XAML
-	<telerik:RadMultiColumnComboBox ClearSelectionOnDeleteOrBackKey="False"/>
-```
+<snippet id='radmulticolumncombobox-key-properties-and-methods-block_2-xaml' />
 
 ## See Also
 

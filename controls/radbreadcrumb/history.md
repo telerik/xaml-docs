@@ -17,25 +17,19 @@ The history feature allows you to keep track of the items that were selected in 
 The history tracking is enabled by default. To disable it, set the `IsHistoryEnabled` property of `RadBreadcrumb` to `false`.
 
 __Disabling the history feature__
-```XAML
-	<telerik:RadBreadcrumb IsHistoryEnabled="False"/>
-```
+<snippet id='radbreadcrumb-history-disabling_the_history_feature-xaml' />
 
 The drop down area where the history items appear can be toggled manually via the `IsHistoryOpen` property of `RadBreadcrumb`. The property can be used also to get the current state of the drop down.
 
 To access the history items, use the `HistoryItems` collection property of `RadBreadcrumb`. The collection contains `RadBreadcrumbBarItem` objects.
 
 __Getting history items__
-```C#
-	var historyItem = this.breadcrumb.HistoryItems[0] as RadBreadcrumbBarItem;
-```
+<snippet id='radbreadcrumb-history-getting_history_items-cs' />
 
 By default the history stores up to 10 items. To change this, set the `HistorySize` property of `RadBreadcrumb`.
 
 __Changing the history size__
-```XAML
-	<telerik:RadBreadcrumb HistorySize="20"/>
-```
+<snippet id='radbreadcrumb-history-changing_the_history_size-xaml' />
 
 ## See Also  
  * [Getting Started]({%slug radbreadcrumb-getting-started%})

@@ -16,14 +16,7 @@ First open the XAML file and replace the generated declaration with a __RadWindo
 
 
 
-```XAML
-	<telerik:RadWindow x:Class="RadWindowSamples.MainWindow"
-	   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation""
-	   xmlns:local="clr-namespace:RadWindowSamples">
-	</telerik:RadWindow>
-```
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_1-xaml' />
 
 >You need to replace RadWindowSamples with the namespace of the generated class.
 
@@ -31,23 +24,8 @@ Also in the code behind your user control should inherit the __RadWindow__ inste
 
 
 
-```C#
-	public partial class MainWindow : RadWindow
-	{
-	    public MainWindow()
-	    {
-	        InitializeComponent();
-	    }
-	}
-```
-```VB.NET
-	Partial Public Class MainWindow
-	    Inherits RadWindow
-	    Public Sub New()
-	        InitializeComponent()
-	    End Sub
-	End Class
-```
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_2-cs' />
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_3-vb' />
 
 >tip If you have installed UI for {{ site.framework_name }}, you can easily create the __RadWindow UserControl__ with the Telerik templates - just click Add -> New Item... in the project Context Menu and choose "Telerik Scenario" from the installed templates. In the Scenario Wizard select __RadWindow__.
 
@@ -56,73 +34,28 @@ In the XAML you can declare the content of the __RadWindow__ directly in XAML an
 As this is an user control of type __RadWindow__ you can use any of the features that are provided by the __RadWindow__. So if you want to show it, you have to call the __Show()__ method.
 
   
-```C#
-	MainWindow window = new MainWindow();
-	window.Show();
-```
-```VB.NET
-	Dim window As New MainWindow()
-	window.Show()
-```
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_4-cs' />
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_5-vb' />
 
 If you want to use RadWindow as the main window of the application, remove the __StartupUri__ setting in the App.xaml file.
 
   
-```XAML
-	<Application x:Class="RadWindowSamples.App"
-				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-				 <!--StartupUri="MainWindow.xaml"-->
-		<Application.Resources>
-			 
-		</Application.Resources>
-	</Application>
-```
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_6-xaml' />
 
 Then create a new instance of the custom RadWindow and show it in the __OnStartup__ method override of the __App__ class.
 
   
-```C#
-	public partial class App : Application
-	{
-		protected override void OnStartup(StartupEventArgs e)
-		{
-			MainWindow window = new MainWindow();
-			window.Show();
-		}
-	}
-```
-```VB.NET
-	Public Partial Class App
-	    Inherits Application
-	    Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
-		Dim window As MainWindow = New MainWindow()
-		window.Show()
-	    End Sub
-	End Class
-```
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_7-cs' />
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_8-vb' />
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, note that the newly created user control will not receive automatically the Window style. You should add the following style after the merged dictionaries to fix this:
 
   
-```XAML
-	<Application.Resources>
-	    <ResourceDictionary>
-	        <ResourceDictionary.MergedDictionaries>
-	            <ResourceDictionary Source="Themes/System.Windows.xaml" />
-	            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
-	            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
-	        </ResourceDictionary.MergedDictionaries>
-	        <Style TargetType="local:MainWindow" BasedOn="{StaticResource RadWindowStyle}" />
-	    </ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_9-xaml' />
 
 The important part is setting __TargetType__ property to the type of the user control.
 
 >In addition, due to a change in the XAML Designer in Visual Studio version 16.9 (and newer), if the RadWindow is used as Main Window or UserControl, it will __not__ be displayed in design time. To display it, you need to apply the following explicit style:
 
   
-```XAML
-	<telerik:RadWindow (namespaces omitted) ... Style="{StaticResource RadWindowStyle}"/>
-```
+<snippet id='radwindow-how-to-use-radwindow-as-user-control-block_10-xaml' />

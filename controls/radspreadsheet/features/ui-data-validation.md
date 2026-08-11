@@ -45,23 +45,8 @@ __Example 1__ shows the use of the two methods that toggle this functionality - 
 
 __Example 1: Turn on and off Invalid Data Circles.__
 
-```C#
-	if (showCircles)
-	{
-	    this.radSpreadsheet.ActiveWorksheetEditor.CircleInvalidData();
-	}
-	else
-	{
-	    this.radSpreadsheet.ActiveWorksheetEditor.ClearInvalidDataCircles();
-	}
-```
-```VB.NET
-	If showCircles Then
-		Me.radSpreadsheet.ActiveWorksheetEditor.CircleInvalidData()
-	Else
-		Me.radSpreadsheet.ActiveWorksheetEditor.ClearInvalidDataCircles()
-	End If
-```
+<snippet id='radspreadsheet-features-ui-data-validation-block_1-cs' />
+<snippet id='radspreadsheet-features-ui-data-validation-block_2-vb' />
 
 ## See Also
 

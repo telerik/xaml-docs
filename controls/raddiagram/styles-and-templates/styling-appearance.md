@@ -30,27 +30,23 @@ The settings and appearance of the __RadDiagram__ background grid are controlled
 
 * __BackgroundGrid.IsGridVisible__ - this is a __Boolean__ property that controls the visibility of the background grid. Its default value is __True__.				
 	
-	```XAML
-		<telerik:RadDiagram primitives:BackgroundGrid.IsGridVisible="True" />					  
-	```
+	<snippet id='raddiagram-styles-and-templates-styling-appearance-block_1-xaml' />
+
 	
 * __BackgroundGrid.IsDynamic__ - this is a __Boolean__ property that determines whether the background grid should be moved and resized accordingly to the __RadDiagram__ viewport changes (panning and zooming). Its default value is __True__ thus enabling the background grid to reflect the changes implemented by a pan and/or a zoom operation.
 	
-	```XAML
-		<telerik:RadDiagram primitives:BackgroundGrid.IsDynamic="True" />
-	```
+	<snippet id='raddiagram-styles-and-templates-styling-appearance-block_2-xaml' />
+
 	
 * __BackgroundGrid.CellSize__ - this property is of type __Size__ and it controls the size of the cells in the __RadDiagram.BackgroundGrid__ surface. The default value of this property is a size of __20x20__ units.				
 
-	```XAML
-		<telerik:RadDiagram primitives:BackgroundGrid.CellSize="40,40" />					  
-	```
+	<snippet id='raddiagram-styles-and-templates-styling-appearance-block_3-xaml' />
+
 	
 * __BackgroundGrid.LineStroke__ - this property is of type __Brush__ and it specifies how the cells outline is painted.				
 
-	```XAML
-		<telerik:RadDiagram primitives:BackgroundGrid.LineStroke="Red" />  					  					  
-	```
+	<snippet id='raddiagram-styles-and-templates-styling-appearance-block_4-xaml' />
+
 	
 	![Rad Diagram Styling Line Stroke](images/RadDiagram_Styling_LineStroke.png)
 
@@ -58,9 +54,8 @@ The settings and appearance of the __RadDiagram__ background grid are controlled
 
 * __BackgroundGrid.LineStrokeThickness__ - this property is of type __double__ and it gets or sets the thickness of the __RadDiagram__ background grid lines.				
 
-	```XAML
-		<telerik:RadDiagram primitives:BackgroundGrid.LineThickness="5" />					  					  
-	```
+	<snippet id='raddiagram-styles-and-templates-styling-appearance-block_5-xaml' />
+
 
 	![Rad Diagram Styling Line Thickness](images/RadDiagram_Styling_LineThickness.png)
 	

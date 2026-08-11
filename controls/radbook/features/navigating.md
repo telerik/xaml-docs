@@ -21,22 +21,12 @@ When you want to make a prev/next navigation the property should be increased wi
 Below is a sample of a button which shows the next set of pages when clicked:
 
 __Example 1: Defining a Next button__  
-```XAML
-	<Button Content="Next >>" Click="NextButton_Click"/>
-```
+<snippet id='radbook-features-navigating-block_1-xaml' />
 
 __Example 2: Updating the RightPageIndex property__  
-```C#
-	private void NextButton_Click(object sender, System.Windows.RoutedEventArgs e)
-	{
-		this.RadBook1.RightPageIndex += 2;
-	}
-```
-```VB.NET
-	Private Sub NextButton_Click(ByVal sender As Object, ByVal e As System.Windows.RoutedEventArgs)
-		RadBook1.RightPageIndex += 2
-	End Sub
-```
+<snippet id='radbook-features-navigating-block_2-cs' />
+<snippet id='radbook-features-navigating-block_2-vb' />
+
 
 ## See Also
  * [Getting Started]({%slug radbook-getting-started%})

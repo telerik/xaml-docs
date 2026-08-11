@@ -29,63 +29,10 @@ To do so follow these steps:
 
 __Example 1: The StadiumCapacityStyle class__
 
-```C#
-	public class StadiumCapacityStyle : StyleSelector
-	{
-	    public override Style SelectStyle(object item, DependencyObject container)
-	    {
-	        if (item is Club)
-	        {
-	            Club club = item as Club;
-	            if (club.StadiumCapacity > 50000)
-	            {
-	                return BigStadiumStyle;
-	            }
-	            else
-	            {
-	                return SmallStadiumStyle;
-	            }
-	        }
-	        return null;
-	    }
-	    public Style BigStadiumStyle { get; set; }
-	    public Style SmallStadiumStyle { get; set; }
-	}
-```
-```VB.NET
-	Public Class StadiumCapacityStyle
-	    Inherits StyleSelector
-	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
-	        If TypeOf item Is Club Then
-	            Dim club As Club = TryCast(item, Club)
-	            If club.StadiumCapacity > 50000 Then
-	                Return BigStadiumStyle
-	            Else
-	                Return SmallStadiumStyle
-	            End If
-	        End If
-	        Return Nothing
-	    End Function
-	    Public Property BigStadiumStyle() As Style
-	        Get
-	            Return m_BigStadiumStyle
-	        End Get
-	        Set
-	            m_BigStadiumStyle = Value
-	        End Set
-	    End Property
-	    Private m_BigStadiumStyle As Style
-	    Public Property SmallStadiumStyle() As Style
-	        Get
-	            Return m_SmallStadiumStyle
-	        End Get
-	        Set
-	            m_SmallStadiumStyle = Value
-	        End Set
-	    End Property
-	    Private m_SmallStadiumStyle As Style
-	End Class
-```
+<snippet id='radgridview-style-selectors-rowstyleselector-example_1_the_stadiumcapacitystyle_class-cs' />
+
+<snippet id='radgridview-style-selectors-rowstyleselector-example_1_the_stadiumcapacitystyle_class-vb' />
+
 
 In this case we have two different styles that could be applied:
 
@@ -98,22 +45,8 @@ Depending on the underlying data you cab select which style to apply.
 
 __Example 2: Set the different styles for the style selector__
 
-```XAML
-	<Window.Resources>
-	    <my:StadiumCapacityStyle x:Key="StadiumCapacityStyle">
-	        <my:StadiumCapacityStyle.BigStadiumStyle>
-	            <Style TargetType="telerik:GridViewRow">
-	                <Setter Property="Background" Value="Red"/>
-	            </Style>
-	        </my:StadiumCapacityStyle.BigStadiumStyle>
-	        <my:StadiumCapacityStyle.SmallStadiumStyle>
-	            <Style TargetType="telerik:GridViewRow">
-	                <Setter Property="Background" Value="Yellow" />
-	            </Style>
-	        </my:StadiumCapacityStyle.SmallStadiumStyle>
-	    </my:StadiumCapacityStyle>
-	</Window.Resources>
-```
+<snippet id='radgridview-style-selectors-rowstyleselector-example_2_set_the_different_styles_for_the_style_selector-xaml' />
+
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
@@ -121,19 +54,15 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 __Example 3: Base the style when using implicit styles__
 
-```XAML
-	<Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
-	    <Setter Property="Background" Value="Yellow" />
-	</Style>
-```
+<snippet id='radgridview-style-selectors-rowstyleselector-example_3_base_the_style_when_using_implicit_styles-xaml' />
+
 
 4.Finally, set the __RowStyleSelector__ property:
 
 __Example 4: Set RadGridView's RowStyleSelector__
 
-```XAML
-	<telerik:RadGridView RowStyleSelector="{StaticResource StadiumCapacityStyle}" />
-```
+<snippet id='radgridview-style-selectors-rowstyleselector-example_4_set_radgridview_s_rowstyleselector-xaml' />
+
 
 >Since the virtualization of the control is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewRow) and their properties. You should not set properties of GridViewRow inside SelectStyle method. [Read mode on UI Virtualization]({%slug radgridview-features-ui-virtualization%}).
 		 
@@ -145,10 +74,8 @@ If you've set the **AlternationCount** property, you can apply conditional style
 
 __Example 5: Set RadGridView's AlternateRowStyleSelector__
 
-```XAML
+<snippet id='radgridview-style-selectors-rowstyleselector-example_5_set_radgridview_s_alternaterowstyleselector-xaml' />
 
-	<telerik:RadGridView AlternateRowStyleSelector="{StaticResource StadiumCapacityStyle}" />
-```
 
 **Figure 2** shows the result of using the same StyleSelector from the previous example, but setting it as the AlternateRowStyleSelector for the RadGridView.
 

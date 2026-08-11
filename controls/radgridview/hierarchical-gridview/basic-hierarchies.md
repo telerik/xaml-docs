@@ -22,49 +22,28 @@ The __ParentPropertyName__ of the __PropertyRelation__ object represents the nam
 
 __Example 1: Defining the GridViewTableDefinition__
 
-```XAML
-	<telerik:GridViewTableDefinition>
-	    <telerik:GridViewTableDefinition.Relation>
-	        <telerik:PropertyRelation ParentPropertyName="Orders" />
-	    </telerik:GridViewTableDefinition.Relation>
-	</telerik:GridViewTableDefinition>
-```
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_1_defining_the_gridviewtabledefinition-xaml' />
+
 
 __Example 2: Defining the GridViewTableDefinition programmatically__
-```C#
-	GridViewTableDefinition td = new GridViewTableDefinition();
-	td.Relation = new PropertyRelation("Orders");
-```
-```VB.NET
-	Dim td As New GridViewTableDefinition()
-	td.Relation = New Telerik.Windows.Data.PropertyRelation("Orders")
-```
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_2_defining_the_gridviewtabledefinition_programmatically-cs' />
+
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_2_defining_the_gridviewtabledefinition_programmatically-vb' />
+
 
 Now you can add the definition to the __ChildTableDefinitions__ collection.
 
 __Example 3: Adding the GridViewTableDefinition to the ChildTableDefinitions__
 
-```XAML
-	<telerik:RadGridView x:Name="radGridView"
-	                 AutoGenerateColumns="False">
-	    <telerik:RadGridView.ChildTableDefinitions>
-	        <telerik:GridViewTableDefinition>
-	            <telerik:GridViewTableDefinition.Relation>
-	                <telerik:PropertyRelation ParentPropertyName="Orders" />
-	            </telerik:GridViewTableDefinition.Relation>
-	        </telerik:GridViewTableDefinition>
-	    </telerik:RadGridView.ChildTableDefinitions>
-	</telerik:RadGridView>
-```
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_3_adding_the_gridviewtabledefinition_to_the_childtabledefinitions-xaml' />
+
 
 __Example 4: Adding the GridViewTableDefinition to the ChildTableDefinitions programmatically__
 
-```C#
-	this.radGridView.ChildTableDefinitions.Add(td);
-```
-```VB.NET
-	Me.radGridView.ChildTableDefinitions.Add(d)
-```
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_4_adding_the_gridviewtabledefinition_to_the_childtabledefinitions_programmatically-cs' />
+
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_4_adding_the_gridviewtabledefinition_to_the_childtabledefinitions_programmatically-vb' />
+
 
 >tip The __GridViewTableDefinition__ object also exposes a __ChildTableDefinitions__ property, which means that you can nest grids on more than one level.
 
@@ -76,12 +55,10 @@ In case when checking whether a given hierarchical item is expanded the __IsExpa
 
 __Example 5: Call the IsExpanded method of RadGridView__
 
-```C#
-	bool isExpanded = this.clubsGrid.IsExpanded(this.clubsGrid.Items[0]);
-```
-```VB.NET
-	Dim isExpanded As Boolean = Me.clubsGrid.IsExpanded(Me.clubsGrid.Items(0))
-```
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_5_call_the_isexpanded_method_of_radgridview-cs' />
+
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_5_call_the_isexpanded_method_of_radgridview-vb' />
+
 
 ## Style the Hierarchy Expand Button
 
@@ -91,80 +68,20 @@ RadGridView exposes the **HierarchyExpandButtonStyle** and **HierarchyExpandButt
 
 __Example 6: Defining the StyleSelector for the expand button__
 
-```C#
-    public class MyHierarchyExpandButtonStyleSelector : System.Windows.Controls.StyleSelector
-	{
-		public Style BigStadiumStyle { get; set; }
-		public Style SmallStadiumStyle { get; set; }
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_6_defining_the_styleselector_for_the_expand_button-cs' />
 
-		public override Style SelectStyle(object item, DependencyObject container)
-		{
-			if (item is Club)
-			{
-				Club club = item as Club;
-				if (club.StadiumCapacity > 50000)
-				{
-					return BigStadiumStyle;
-				}
-				else
-				{
-					return SmallStadiumStyle;
-				}
-			}
-			return null;
-		}
-	}
-```
-```VB.NET
-	Public Class MyHierarchyExpandButtonStyleSelector
-		Inherits System.Windows.Controls.StyleSelector
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_6_defining_the_styleselector_for_the_expand_button-vb' />
 
-		Public Property BigStadiumStyle() As Style
-		Public Property SmallStadiumStyle() As Style
-
-		Public Overrides Function SelectStyle(ByVal item As Object, ByVal container As DependencyObject) As Style
-			If TypeOf item Is Club Then
-				Dim club As Club = TryCast(item, Club)
-				If club.StadiumCapacity > 50000 Then
-					Return BigStadiumStyle
-				Else
-					Return SmallStadiumStyle
-				End If
-			End If
-			Return Nothing
-		End Function
-	End Class
-```
 
 __Example 7: Adding the style selector as a resource__
 
-```XAML
-		<Application.Resources>
-			<local:MyHierarchyExpandButtonStyleSelector x:Key="StadiumCapacityStyleSelector">
-				<local:MyHierarchyExpandButtonStyleSelector.BigStadiumStyle>
-                    <!-- If you're using the NoXaml binaries you need to add the following attribute to the style:
-                    BasedOn="{StaticResource GridViewToggleButtonStyle}" -->
-                    <Style TargetType="telerik:GridViewToggleButton">
-						<Setter Property="Background" Value="Red"/>
-					</Style>
-				</local:MyHierarchyExpandButtonStyleSelector.BigStadiumStyle>
-				<local:MyHierarchyExpandButtonStyleSelector.SmallStadiumStyle>
-                    <!-- If you're using the NoXaml binaries you need to add the following attribute to the style:
-                    BasedOn="{StaticResource GridViewToggleButtonStyle}" -->
-					<Style TargetType="telerik:GridViewToggleButton">
-						<Setter Property="Background" Value="Yellow" />
-					</Style>
-				</local:MyHierarchyExpandButtonStyleSelector.SmallStadiumStyle>
-			</local:MyHierarchyExpandButtonStyleSelector>
-		</Grid.Resources>
-```
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_7_adding_the_style_selector_as_a_resource-xaml' />
+
 
 __Example 8: Setting the HierarchyExpandButtonStyleSelector property__
 
-```XAML
-	<telerik:RadGridView HierarchyExpandButtonStyleSelector="{StaticResource StadiumCapacityStyleSelector}">
-	<!-- ... -->
-```
+<snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_8_setting_the_hierarchyexpandbuttonstyleselector_property-xaml' />
+
 
 #### Figure 1: RadGridView with the custom HierarchyExpandButtonStyleSelector applied
 

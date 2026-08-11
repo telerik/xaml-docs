@@ -20,19 +20,8 @@ Here is the final code snippet.
 
 
 
-```XAML
-	<ToggleButton Content="Click me"
-	              HorizontalAlignment="Left"
-	              IsChecked="{Binding IsOpen, ElementName=radContextMenu, Mode=TwoWay}">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu" Placement="Bottom">
-	            <telerik:RadMenuItem Header="Item 1" />
-	            <telerik:RadMenuItem Header="Item 2" />
-	            <telerik:RadMenuItem Header="Item 3" />
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</ToggleButton>
-```
+<snippet id='radcontextmenu-how-to-create-menu-button-with-radcontextmenu-and-togglebutton-block_1-xaml' />
+
 
 The things you have to make attention to here are: how the __RadContextMenu__ is attached to the __ToggleButton__ and the __ElementBinding__ applied to the __ToggleButton's__ __IsChecked__ property.
 

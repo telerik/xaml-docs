@@ -18,62 +18,10 @@ In this case you can use the __Display__ attribute and set the __AutoGenerateFil
 
 __Defining class Person__
 
-```C# 
-	public class Person
-	{
-	    [Display( AutoGenerateFilter = false )]
-	    public string Name
-	    {
-	        get;
-	        set;
-	    }
-	    [Display( ShortName = "Company's Name" )]
-	    public string CompanyName
-	    {
-	        get;
-	        set;
-	    }
-	    public string Title
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
+<snippet id='raddatafilter-features-data-annotations-defining_class_person-cs' />
 
-	Public Class Person
-	 <Display(AutoGenerateFilter = False)> _
-	 Public Property Name() As String
-	  Get
-	   Return m_Name
-	  End Get
-	  Set
-	   m_Name = Value
-	  End Set
-	 End Property
-	 Private m_Name As String
-	 <Display(ShortName = "Company's Name")> _
-	 Public Property CompanyName() As String
-	  Get
-	   Return m_CompanyName
-	  End Get
-	  Set
-	   m_CompanyName = Value
-	  End Set
-	 End Property
-	 Private m_CompanyName As String
-	 Public Property Title() As String
-	  Get
-	   Return m_Title
-	  End Get
-	  Set
-	   m_Title = Value
-	  End Set
-	 End Property
-	 Private m_Title As String
-	End Class
-```
+<snippet id='raddatafilter-features-data-annotations-defining_class_person-vb' />
+
 
 If you filter a collection of __Person__ objects via the __RadDataFilter__ control, in the DropDown for the Data Members you should see the following:
 
@@ -86,15 +34,8 @@ For example, you can apply the attribute like so:
 
 __Setting a property to not be displayed__
 
-```C#	
-	[Browsable(false)]
-	[Display(ShortName = "Company's Address")]
-	public string CompanyAddress
-	{
-	    get;
-	    set;
-	}
-```
+<snippet id='raddatafilter-features-data-annotations-setting_a_property_to_not_be_displayed-cs' />
+
 
 Figure 2: RadDataFilter displaying the Browsable members.
 

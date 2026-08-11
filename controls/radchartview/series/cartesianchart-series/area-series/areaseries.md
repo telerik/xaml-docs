@@ -22,29 +22,8 @@ The __AreaSeries__ is visualized on the screen as a straight line connecting all
  You can use the definition from __Example 1__ to display an AreaSeries.      
 
 __Example 1: Declaring an AreaSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8">
-	<telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:CategoricalAxis/>
-	</telerik:RadCartesianChart.HorizontalAxis>
-	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis />
-	</telerik:RadCartesianChart.VerticalAxis>
-	<telerik:RadCartesianChart.Series>
-		<telerik:AreaSeries>
-			<telerik:AreaSeries.DataPoints>
-				<telerik:CategoricalDataPoint Category="January" Value="2" />
-				<telerik:CategoricalDataPoint Category="February" Value="5" />
-				<telerik:CategoricalDataPoint Category="March" Value="3" />
-				<telerik:CategoricalDataPoint Category="April" Value="10" />
-				<telerik:CategoricalDataPoint Category="May" Value="9" />
-				<telerik:CategoricalDataPoint Category="June" Value="7" />
-				<telerik:CategoricalDataPoint Category="July" Value="1" />
-			</telerik:AreaSeries.DataPoints>
-		</telerik:AreaSeries>
-	</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-areaseries-example_1_declaring_an_areaseries_in_xaml-xaml' />
+
 
 #### __Figure 1: AreaSeries visual appearance__
 ![Telerik UI for WPF RadChartView AreaSeries visual appearance](images/radchartview-series-areaseries.png)
@@ -76,25 +55,12 @@ You can use the ValueBinding and CategoryBinding properties of the AreaSeries to
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public string Category { get; set; }
-        public double Value { get; set; }
-    }
+<snippet id='radchartview-series-cartesianchart-series-area-series-areaseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { Category = "January", Value = 2},
-		//....
-	};
-```	
 
 __Example 3: Specify a AreaSeries in XAML__
-```XAML	
-	<telerik:AreaSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value" />
-```
+<snippet id='radchartview-series-cartesianchart-series-area-series-areaseries-example_3_specify_a_areaseries_in_xaml-xaml' />
+
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

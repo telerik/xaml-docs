@@ -23,27 +23,16 @@ In the figure below you can see two ToolWindows with a floating pane inside of e
 RadDocking provides the ability to easily set the initial floating size and location of the ToolWindows. To do that, use the `RadDocking.FloatingSize` and `RadDocking.FloatingLocation` attached properties, as shown in the following example:
 
 __Setting RadDocking.FloatingSize and RadDocking.FloatingLocation__
-```XAML
-	<telerik:RadDocking>
-	    <telerik:RadSplitContainer InitialPosition="FloatingOnly">
-	        <telerik:RadPaneGroup>
-	            <telerik:RadPane telerik:RadDocking.FloatingSize="500, 500" telerik:RadDocking.FloatingLocation="400, 400"/>
-	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
-	</telerik:RadDocking>
-```
+<snippet id='raddocking-features-tool-window-setting_raddocking_floatingsize_and_raddocking_floatinglocation-xaml' />
+
 
 ## Setting the Draggable Area
 
 The ToolWindow element allows you to change the threshold of its titlebar's draggable area. To do that, set the `CaptionHeight` property. 
 
 __Setting the CaptionHeight property via a Style__
-```XAML
-	<!--Set BasedOn property if NoXaml assemblies are used: BasedOn="{StaticResource ToolWindowStyle}"-->
-	<Style TargetType="telerik:ToolWindow">
-	    <Setter Property="CaptionHeight" Value="50"/>
-	</Style>
-```
+<snippet id='raddocking-features-tool-window-setting_the_captionheight_property_via_a_style-xaml' />
+
 
 >important Changing the height of the titlebar will not automatically update the CaptionHeight property's value. 
 

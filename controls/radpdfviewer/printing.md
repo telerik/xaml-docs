@@ -19,14 +19,7 @@ __RadPdfViewer__'s sample UI allows you to print the currently shown PDF documen
 
 The button shown in the above picture is actually bound to the __PrintPdfDocumentCommand__ with the help of the __PrintCommandDescriptor__, so you can modify the UI to fit your needs.
 
-```XAML
-	      <telerik:RadButton Command="{Binding PrintCommandDescriptor.Command}" Visibility="{Binding PrintCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsBackgroundVisible="False">
-	        <ToolTipService.ToolTip>
-	          <TextBlock Text="Print" />
-	        </ToolTipService.ToolTip>
-	        <Image Source="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/printer.png" Stretch="None" />
-	      </telerik:RadButton>
-```
+<snippet id='radpdfviewer-printing-block_1-xaml' />
 
 >tip More about command descriptors you can find [here]({%slug radpdfviewer-command-descriptors%}).
 
@@ -44,16 +37,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
 * __UseDefaultPrinter__: Forces silent printing to the default printer. 
 
-```C#
-	    PrintSettings settings = new PrintSettings()
-	    {
-	        DocumentName = "My document",
-	        PageMargins = new Thickness(50),
-	        UseDefaultPrinter = true
-	    };
-
-	    this.pdfViewer.Print(settings);
-```
+<snippet id='radpdfviewer-printing-block_2-cs' />
 
 RadPdfViewer also provides a __Print(PrintDialog printDialog, PrintSettings settings)__ method. It allows you to pass an already initialized PrintDialog instance to the method and print the PDF document shown in the viewer. This means that you have control over the way the document is printed and can, for example, print it silently to a printer other than the default one.
 

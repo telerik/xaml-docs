@@ -30,9 +30,8 @@ Using the __AllowMultipleSelection__ property you can enable or disable the mult
 
 __Example 1: Allowing multiple selection__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" AllowMultipleSelection="True"/>
-```
+<snippet id='radcombobox-features-multiple-selection-example_1_allowing_multiple_selection-xaml' />
+
 
 ### MultipleSelectionSeparator
 
@@ -42,14 +41,8 @@ __Example 2__ demonstrates how to change the default separator to a dash.
 
 __Example 2: Changing multiple selection separator__
 
-```XAML
-	<telerik:RadComboBox AllowMultipleSelection="True" MultipleSelectionSeparator="-">
-		<telerik:RadComboBoxItem Content="Alapattah" />
-		<telerik:RadComboBoxItem Content="Brickell Avenue" />
-		<telerik:RadComboBoxItem Content="Downtown Miami" />
-		<telerik:RadComboBoxItem Content="El Portal" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-multiple-selection-example_2_changing_multiple_selection_separator-xaml' />
+
 
 #### __Figure 1: Selected items separated by dash set in Example 2__
 ![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection showing selected items separated by a dash](images/RadComboBox_Features_MultipleSelection_01.png)
@@ -66,15 +59,8 @@ __Example 3__ demonstrates how to set the __MultipleSelectionSeparatorStringForm
 
 __Example 3: Changing multiple selection separator StringFormat__
 
-```XAML
-	<telerik:RadComboBox AllowMultipleSelection="True" MultipleSelectionSeparator="-"
-						 MultipleSelectionSeparatorStringFormat="{}&ast;{0}&ast;">
-		<telerik:RadComboBoxItem Content="Alapattah" />
-		<telerik:RadComboBoxItem Content="Brickell Avenue" />
-		<telerik:RadComboBoxItem Content="Downtown Miami" />
-		<telerik:RadComboBoxItem Content="El Portal" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-multiple-selection-example_3_changing_multiple_selection_separator_stringformat-xaml' />
+
 
 #### __Figure 2: Selected items separated by the MultipleSelectionSeparatorStringFormat set in Example 3__
 ![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection showing selected items formatted with MultipleSelectionSeparatorStringFormat](images/RadComboBox_Features_MultipleSelection_02.png)
@@ -113,16 +99,8 @@ In __Example 4__ a __Button__ is linked to the __RadComboBoxCommands.SelectAll__
 
 __Example 4: SelectAll command__
 
-```XAML
-	<telerik:RadButton Content="SelectAll" Command="{x:Static telerik:RadComboBoxCommands.SelectAll}"
-                    CommandTarget="{Binding ElementName=radComboBox}"/>
-	<telerik:RadComboBox x:Name="radComboBox" AllowMultipleSelection="True">
-		<telerik:RadComboBoxItem Content="Alapattah" />
-		<telerik:RadComboBoxItem Content="Brickell Avenue" />
-		<telerik:RadComboBoxItem Content="Downtown Miami" />
-		<telerik:RadComboBoxItem Content="El Portal" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-multiple-selection-example_4_selectall_command-xaml' />
+
 
 #### __Figure 3: RadCombobBox after executing SelectAll command__
 ![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection after executing the SelectAll command](images/RadComboBox_Features_MultipleSelection_03.png)
@@ -135,16 +113,8 @@ __Example 5__ demonstrates how __UnselectAll__ command could be attached to the 
 
 __Example 5: UnselectAll command__
 
-```XAML
-	<telerik:RadButton Content="UnselectAll" Command="{x:Static telerik:RadComboBoxCommands.UnselectAll}"
-					   CommandTarget="{Binding ElementName=radComboBox}"/>
-	<telerik:RadComboBox x:Name="radComboBox" AllowMultipleSelection="True">
-		<telerik:RadComboBoxItem Content="Alapattah" />
-		<telerik:RadComboBoxItem Content="Brickell Avenue" />
-		<telerik:RadComboBoxItem Content="Downtown Miami" />
-		<telerik:RadComboBoxItem Content="El Portal" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-multiple-selection-example_5_unselectall_command-xaml' />
+
 
 #### __Figure 4: Before executing UnselectAll command__
 ![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection before executing the UnselectAll command](images/RadComboBox_Features_MultipleSelection_04.png)
@@ -160,17 +130,8 @@ __Example 6__ demonstrates how __ToggleSelectAll__ command could be attached and
 
 __Example 6: ToggleSelectAll command__
 
-```XAML
-	<CheckBox Content="ToggleSelectAll" Command="{x:Static telerik:RadComboBoxCommands.ToggleSelectAll}"
-              CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=IsChecked}"
-              CommandTarget="{Binding ElementName=radComboBox}"/>
-	<telerik:RadComboBox x:Name="radComboBox" AllowMultipleSelection="True">
-		<telerik:RadComboBoxItem Content="Alapattah" />
-		<telerik:RadComboBoxItem Content="Brickell Avenue" />
-		<telerik:RadComboBoxItem Content="Downtown Miami" />
-		<telerik:RadComboBoxItem Content="El Portal" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-multiple-selection-example_6_toggleselectall_command-xaml' />
+
 
 #### __Figure 6: After checking the CheckBox with ToggleSelectAll command__
 ![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection after checking the ToggleSelectAll CheckBox](images/RadComboBox_Features_MultipleSelection_06.png)
@@ -190,27 +151,15 @@ You can create a custom __DataTemplate__ as shown in __Example 7__.
 
 __Example 7: Custom DataTemplate__
 
-```XAML
-	<UserControl.Resources>
-		<DataTemplate x:Key="MultipleSelectionBoxTemplate">
-			<TextBlock Text="{Binding ElementName=radComboBox, Path=SelectedItems.Count, StringFormat='Selected Items Count: {0}'}" Foreground="Red" FontWeight="Bold" />
-		</DataTemplate>
-	</UserControl.Resources>
-```
+<snippet id='radcombobox-features-multiple-selection-example_7_custom_datatemplate-xaml' />
+
 
 The created __DataTemplate__ should be set to the __MultipleSelectionBoxTemplate__ property of __RadComboBox__ as demonstrated in __Example 8__.
 
 __Example 8: Set the MultipleSelectionBoxTemplate__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" AllowMultipleSelection="True"
-                     MultipleSelectionBoxTemplate="{StaticResource MultipleSelectionBoxTemplate}">
-		<telerik:RadComboBoxItem Content="Alapattah" />
-		<telerik:RadComboBoxItem Content="Brickell Avenue" />
-		<telerik:RadComboBoxItem Content="Downtown Miami" />
-		<telerik:RadComboBoxItem Content="El Portal" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-multiple-selection-example_8_set_the_multipleselectionboxtemplate-xaml' />
+
 
 #### __Figure 8: RadComboBox after applying MultipleSelectionBoxTemplate__
 ![Telerik UI for {{ site.framework_name }} RadComboBox multiple selection with a custom MultipleSelectionBoxTemplate](images/RadComboBox_Features_MultipleSelection_08.png)

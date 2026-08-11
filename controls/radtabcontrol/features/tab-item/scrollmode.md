@@ -15,25 +15,7 @@ __RadTabControl__ exposes the __ScrollMode__ property which allows you to contro
 >The default value of the ScrollMode is __Pixel__.
 
 __Example 1: Setting the ScrollMode property__
-```XAML
-	<telerik:RadTabControl ScrollMode="Viewport" >
-		<telerik:RadTabControl.Resources>
-			<Style TargetType="telerik:RadTabItem">
-				<Setter Property="CloseButtonVisibility" Value="Visible"/>
-				<Setter Property="PinButtonVisibility" Value="Visible"/>
-			</Style>
-		</telerik:RadTabControl.Resources>
-		<telerik:RadTabItem Header="Tab Item 1" />
-		<telerik:RadTabItem Header="Tab Item 2"/>
-		<telerik:RadTabItem Header="Tab Item 3"/>
-		<telerik:RadTabItem Header="Tab Item 4"/>
-		<telerik:RadTabItem Header="Tab Item 5"/>
-		<telerik:RadTabItem Header="Tab Item 6"/>
-		<telerik:RadTabItem Header="Tab Item 7"/>
-		<telerik:RadTabItem Header="Tab Item 8"/>
-		<telerik:RadTabItem Header="Tab Item 9"/>
-	</telerik:RadTabControl>
-```
+<snippet id='radtabcontrol-features-tab-item-scrollmode-block_1-xaml' />
 
 ### __Pixel__
 

@@ -18,22 +18,7 @@ In order to style all __RadMenu__ elements in the application, you can create an
 
 __Example 1: Styling RadMenu__
 
-```XAML
-	<Grid>
-        <Grid.Resources>
-            <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-            <Style TargetType="telerik:RadMenu" BasedOn="{StaticResource RadMenuStyle}">-->
-
-            <Style TargetType="telerik:RadMenu">
-                <Setter Property="Background" Value="Red" />
-            </Style>
-        </Grid.Resources>
-        <telerik:RadMenu VerticalAlignment="Top" >
-            <telerik:RadMenuItem Header="File" />
-            <telerik:RadMenuItem Header="Edit" />
-        </telerik:RadMenu>
-    </Grid>
-```
+<snippet id='radmenu-styles-and-templates-styling-and-templates-styling-radmenu-block_1-xaml' />
 
 #### __Figure 1: RadMenu with red Background in the Fluent theme__
 ![RadMenu with red Background in the Fluent theme](images/RadMenu_Styling.png)

@@ -20,77 +20,19 @@ The RadMap contains two built-in converters which convert coordinates from EPSG:
 The converter (OSGB36Converter/ EPSG900913Converter) can be specified by setting it to the __MapShapeReader.CoordinateConverter__ property.
 
 __Example 1: Setting CoordinateConverter property__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Providers>
-			<telerik:OpenStreetMapProvider />
-		</telerik:RadMap.Providers>
-		<telerik:VisualizationLayer >
-			<telerik:VisualizationLayer.Reader>
-				<telerik:AsyncShapeFileReader >
-					<telerik:AsyncShapeFileReader.CoordinateConverter>
-						<telerik:EPSG900913Converter />
-					</telerik:AsyncShapeFileReader.CoordinateConverter>
-				</telerik:AsyncShapeFileReader>
-			</telerik:VisualizationLayer.Reader>
-		</telerik:VisualizationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-coordinate_converters-block_1-xaml' />
 
 ## Custom Coordinate Converter
 
 The API of the RadMap allows you to use a custom coordinate converter by implementing the __ICoordinateConverter__ interface.
 
 __Example 2: Implement ICoordinateConverter__
-```C#
-	public class CustomCoordinateConverter : ICoordinateConverter
-	{
-		public LocationCollection ConvertBack(LocationCollection collection)
-		{			
-			return new LocationCollection();
-		}
-
-		public LocationCollection ConvertTo(LocationCollection collection)
-		{
-			return new LocationCollection();
-		}
-
-		public Location FromLocation(Location location)
-		{
-			return new Location();
-		}
-
-		public Location ToLocation(object coordinates)
-		{
-			return new Location();
-		}
-
-		public string ToString(Location location)
-		{
-			return location.ToString();
-		}
-	}
-```
+<snippet id='radmap-features-coordinate_converters-block_2-cs' />
 
 The custom coordinate converter can be assigned to the __MapShapeReader.CoordinateConverter__ property.
 
 __Example 3: Setting CustomCoordinateConverter in XAML__
-```XAML
-	<telerik:RadMap>
-		<telerik:RadMap.Providers>
-			<telerik:OpenStreetMapProvider />
-		</telerik:RadMap.Providers>
-		<telerik:VisualizationLayer >
-			<telerik:VisualizationLayer.Reader>
-				<telerik:AsyncShapeFileReader >
-					<telerik:AsyncShapeFileReader.CoordinateConverter>
-						<local:CustomCoordinateConverter />
-					</telerik:AsyncShapeFileReader.CoordinateConverter>
-				</telerik:AsyncShapeFileReader>
-			</telerik:VisualizationLayer.Reader>
-		</telerik:VisualizationLayer>
-	</telerik:RadMap>
-```
+<snippet id='radmap-features-coordinate_converters-block_3-xaml' />
 
 ## See Also
  * [Navigation]({%slug radmap-features-navigation%})

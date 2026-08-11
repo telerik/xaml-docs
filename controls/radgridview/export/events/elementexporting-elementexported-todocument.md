@@ -24,22 +24,15 @@ You can subscribe to the events either declaratively or from the code-behind lik
 
 __Example 1: Subscribe to events declaratively:__
 
-```XAML
-	<telerik:RadGridView x:Name="RadGridView1"
-	             ElementExportingToDocument="RadGridView1_ElementExportingToDocument"
-	             ElementExportedToDocument="RadGridView1_ElementExportedToDocument" />
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-todocument-example_1_subscribe_to_events_declaratively-xaml' />
+
 
 __Example 2: Subscribe to events from the code-behind:__
 
-```C#
-	RadGridView1.ElementExportingToDocument += RadGridView1_ElementExportingToDocument;
-	RadGridView1.ElementExportedToDocument += RadGridView1_ElementExportedToDocument;
-```
-```VB.NET
-	AddHandler RadGridView1.ElementExportingToDocument, AddressOf RadGridView1_ElementExportingToDocument
-	AddHandler RadGridView1.ElementExportedToDocument, AddressOf RadGridView1_ElementExportedToDocument
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-todocument-example_2_subscribe_to_events_from_the_code_behind-cs' />
+
+<snippet id='radgridview-export-events-elementexporting-elementexported-todocument-example_2_subscribe_to_events_from_the_code_behind-vb' />
+
 
 ## ElementExportingToDocument
 
@@ -67,11 +60,8 @@ For example:
         
 __Example 6: Define a style:__
 
-```C#
-	ExcelMLStyle style = new ExcelMLStyle("0");
-	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
-	e.Styles.Add(style);
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-todocument-example_6_define_a_style-cs' />
+
 
 You can find a list of the properties that could be set for __ExcelMLStyle__:
         
@@ -111,42 +101,8 @@ __NumberFormat:__
 
 __Example 7: Apply a style before exporting:__
 
-```C#
-	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
-	{
-	    ExcelMLStyle style = new ExcelMLStyle("0");
-	
-	    // Alignment
-	    style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
-	    style.Alignment.Vertical = ExcelMLVerticalAlignment.Top;
-	    style.Alignment.Indent = 5;
-	    style.Alignment.Rotate = 0;
-	    style.Alignment.ShrinkToFit = true;
-	    style.Alignment.VerticalText = true;
-	    style.Alignment.WrapText = true;
-	
-	    // Font
-	    style.Font.Bold = true;
-	    style.Font.Color = "Beige";
-	    style.Font.FontName = "Calibri";
-	    style.Font.Italic = true;
-	    style.Font.Outline = true;
-	    style.Font.Shadow = true;
-	    style.Font.Size = 10;
-	    style.Font.StrikeThrough = true;
-	    style.Font.Underline = ExcelMLUnderline.Double;
-	
-	    // Interior
-	    style.Interior.Color = "Green";
-	    style.Interior.Pattern = ExcelMLPattern.Solid;
-	    style.Interior.PatternColor = "#FF0000";
-	
-	    // NumberFormat
-	    style.NumberFormat.Format = "00.00";
-	
-	    e.Styles.Add(style);
-	}
-```
+<snippet id='radgridview-export-events-elementexporting-elementexported-todocument-example_7_apply_a_style_before_exporting-cs' />
+
         
 ## See Also
 

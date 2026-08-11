@@ -22,37 +22,8 @@ The bar series visualizes three dimensional data represented by 3D bars. Each da
 You can use the code from __Example 1__ to create a __BarSeries3D__. 
 
 __Example 1: Defining series in XAML__	
-```XAML
-	<telerik:RadCartesianChart3D>
-		<telerik:RadCartesianChart3D.XAxis>
-			<telerik:CategoricalAxis3D />
-		</telerik:RadCartesianChart3D.XAxis>
-		<telerik:RadCartesianChart3D.YAxis>
-			<telerik:CategoricalAxis3D />
-		</telerik:RadCartesianChart3D.YAxis>
-		<telerik:RadCartesianChart3D.ZAxis>
-			<telerik:LinearAxis3D />
-		</telerik:RadCartesianChart3D.ZAxis>
-		<telerik:RadCartesianChart3D.Series>
-			<telerik:BarSeries3D>
-				<telerik:BarSeries3D.DataPoints>
-					<telerik:XyzDataPoint3D XValue="R1" YValue="2013" ZValue="40" />
-					<telerik:XyzDataPoint3D XValue="R1" YValue="2014" ZValue="50" />
-					<telerik:XyzDataPoint3D XValue="R1" YValue="2015" ZValue="60" />
-					<telerik:XyzDataPoint3D XValue="R2" YValue="2013" ZValue="30" />
-					<telerik:XyzDataPoint3D XValue="R2" YValue="2014" ZValue="40" />
-					<telerik:XyzDataPoint3D XValue="R2" YValue="2015" ZValue="50" />
-					<telerik:XyzDataPoint3D XValue="R3" YValue="2013" ZValue="20" />
-					<telerik:XyzDataPoint3D XValue="R3" YValue="2014" ZValue="30" />
-					<telerik:XyzDataPoint3D XValue="R3" YValue="2015" ZValue="40" />
-				</telerik:BarSeries3D.DataPoints>
-			</telerik:BarSeries3D>
-		</telerik:RadCartesianChart3D.Series>
-		<telerik:RadCartesianChart3D.Grid>
-			<telerik:CartesianChart3DGrid />
-		</telerik:RadCartesianChart3D.Grid>
-	</telerik:RadCartesianChart3D>
-```
+<snippet id='radchartview3d-series-barseries3d-example_1_defining_series_in_xaml-xaml' />
+
 	
 #### __Figure 1: BarSeries3D__
 ![{{ site.framework_name }} RadChartView3D BarSeries3D](images/radchartview-3d-barseries3d-0.png)
@@ -62,26 +33,12 @@ __Example 1: Defining series in XAML__
 You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ properties of __BarSeries3D__ to bind the __XyzDataPoints__’ properties to the properties of the view models. The __ItemsSource__ property is used to pass the data collection to the series.
 
 __Example 2: Defining a model for the data points and setting up the data context__
-```C#
-	public class PlotInfo
-	{
-		public double XValue { get; set; }
-		public double YValue { get; set; }
-		public double ZValue { get; set; }
-	}
+<snippet id='radchartview3d-series-barseries3d-example_2_defining_a_model_for_the_data_points_and_setting_up_the_data_context-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo { XValue = 10, YValue = 20, ZValue = 150, },
-		//....
-	};
-```
 
 __Example 3: Setting up the series__
-```XAML
-	<telerik:BarSeries3D XValueBinding="XValue"  YValueBinding="YValue" ZValueBinding=”ZValue” ItemsSource="{Binding}"/>
-```
+<snippet id='radchartview3d-series-barseries3d-example_3_setting_up_the_series-xaml' />
+
 	
 ## Display direction
 
@@ -90,9 +47,8 @@ The display direction of the series specifies which axis determines the start (o
 You can use the __OriginValue__ property to define the origin of the bars on the corresponding axis determined by the __DisplayDirection__ property. The default origin value is __0__.
 
 __Example 4: Setting the origin value__
-```XAML
-	<telerik:BarSeries3D OriginValue="15">
-```
+<snippet id='radchartview3d-series-barseries3d-example_4_setting_the_origin_value-xaml' />
+
 
 __Figure 2__ demonstrates the result from __Example 1__ but with its OriginValue set to 15.
 	

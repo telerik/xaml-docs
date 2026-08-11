@@ -23,9 +23,7 @@ To change the layout using one of the predefined schemes, set the `DefaultKeyboa
 * `Numpad`&mdash;Only the numpad keys
 
 __Changing the default keyboard layout__
-```XAML	
-	<telerik:RadVirtualKeyboard DefaultKeyboardLayout="Compact" />
-```
+<snippet id='radvirtualkeyboard-keys-layout-block_1-xaml' />
 
 __Predefined key layouts in the following order - Numpad, Compact and Extended__
 ![{{ site.framework_name }} RadVirtualKeyboard Numpad Compact and Extended Layouts](images/radvirtualkeyboard-keys-layout-0.png)
@@ -260,15 +258,10 @@ The following list describes the tags used in the XML file:
 Once the XML file with the layout is defined, you can load it using the `LoadLayout` method of `RadVirtualKeyboard`. The method allows you to provide an XML `string` or a `Stream` with the XML file information. In order to load the XML file when using the approach with the Stream, you may need to set its __Build Action__ in Visual Studio's Properties menu to __Resource__.
 
 __LoadLayout call with a string argument__
-```C#	
-	virtualKeyboard.LoadLayout(xmlString);
-```
+<snippet id='radvirtualkeyboard-keys-layout-block_2-cs' />
 
 __LoadLayout call with a Stream argument__
-```C#	
-	StreamResourceInfo info = Application.GetResourceStream(new Uri(@"/WpfApplication;component/keys-layout-file.xml", UriKind.Relative));
-	virtualKeyboard.LoadLayout(info.Stream);
-```
+<snippet id='radvirtualkeyboard-keys-layout-block_3-cs' />
 
 When the file is loaded, the control parses the XML and provides its values to the key factory that creates view models for the buttons. The key factory can be accessed or replaced through the `KeyFactory` property of `RadVirtualKeyboard`. The default key factory implementation is the `DefaultKeyFactory` class. Implementing a custom factory class will allow you to provide extended key view models (`BaseKeyViewModel`) in case you need to customize the keys appearance and functionalities.
 
@@ -277,9 +270,7 @@ When the file is loaded, the control parses the XML and provides its values to t
 When the `LoadLayout` method is used to load custom layout, the `DefaultKeyboardLayout` property is no longer applicable. Changing its value won't do anything. To enable the property again and return the default keys layouts, call the `LoadLayout` method with a `null` value.
 
 __Reset the default layout__
-```C#		
-	  virtualKeyboard.LoadLayout(filename:null);
-```
+<snippet id='radvirtualkeyboard-keys-layout-block_4-cs' />
 
 ## Keys Factory
 

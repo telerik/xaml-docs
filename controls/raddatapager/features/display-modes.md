@@ -55,12 +55,8 @@ Here is an example of a __RadDataPager__ that displays the previous, next and nu
 
 
 
-```XAML
+<snippet id='raddatapager-features-display-modes-block_1-xaml' />
 
-	<telerik:RadDataPager x:Name="radDataPager"
-	                        PageSize="5"
-	                        DisplayMode="PreviousNextNumeric" />
-```
 
 ![{{ site.framework_name }} RadDataPager DisplayMode PreviousNextNumeric](images/RadDataPager_Features_DisplayModes_01.png)
 
@@ -68,12 +64,8 @@ If the combination of visual elements doesn't exist in the enumeration, you can 
 
 
 
-```XAML
+<snippet id='raddatapager-features-display-modes-block_2-xaml' />
 
-	<telerik:RadDataPager x:Name="radDataPager"
-	                        PageSize="5"
-	                        DisplayMode="PreviousNext,Text" />
-```
 
 ![{{ site.framework_name }} RadDataPager DisplayMode PreviousNext and Text](images/RadDataPager_Features_DisplayModes_02.png)
 

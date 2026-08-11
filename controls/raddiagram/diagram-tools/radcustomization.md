@@ -61,50 +61,32 @@ You can easily add, remove or replace tools from the above collection. It is als
 A tool can be get from the Tools collection of the diagram's ToolService.
 
 __Example 1: Getting a tool by name__
-```C#
-	ToolService toolService = xDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
-	PencilTool pencilTool  = (PencilTool)toolService.FindTool(PencilTool.ToolName);
-```
-```VB.NET
-	Dim toolService As ToolService = TryCast(xDiagram.ServiceLocator.GetService(Of IToolService)(), ToolService)
-    Dim pencilTool As PencilTool = CType(toolService.FindTool(PencilTool.ToolName), PencilTool)
-```
+<snippet id='raddiagram-diagram-tools-radcustomization-example_1_getting_a_tool_by_name-cs' />
+
+<snippet id='raddiagram-diagram-tools-radcustomization-example_1_getting_a_tool_by_name-vb' />
+
 
 __Example 2: Getting a tool by index__
-```C#
-	ToolService toolService = xDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
-	PencilTool pencilTool = (PencilTool)toolService.ToolList[2];
-```
-```VB.NET
-	Dim toolService As ToolService = TryCast(xDiagram.ServiceLocator.GetService(Of IToolService)(), ToolService)
-	Dim pencilTool As PencilTool = CType(toolService.ToolList(2), PencilTool)
-```
+<snippet id='raddiagram-diagram-tools-radcustomization-example_2_getting_a_tool_by_index-cs' />
+
+<snippet id='raddiagram-diagram-tools-radcustomization-example_2_getting_a_tool_by_index-vb' />
+
 
 ## Registering a Tool
 
 To register or replace a tool you can use the __Tools__ collection of the diagram's ToolService.
 
 __Example 3: Replace an existing tool__
-```C#
-	ToolService toolService = xDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
-	toolService.ToolList[2] = new MyPencilTool("MyPencilTool");	
-```
-```VB.NET
-	Dim toolService As ToolService = TryCast(xDiagram.ServiceLocator.GetService(Of IToolService)(), ToolService)
-    toolService.ToolList(2) = New MyPencilTool("MyPencilTool")
-```
+<snippet id='raddiagram-diagram-tools-radcustomization-example_3_replace_an_existing_tool-cs' />
+
+<snippet id='raddiagram-diagram-tools-radcustomization-example_3_replace_an_existing_tool-vb' />
+
 
 __Example 4: Register a new tool__
-```C#
-	ToolService toolService = xDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
-	MyCustomTool myCustomTool = new MyCustomTool("MyCustomTool");
-	toolService.ToolList.Add(myCustomTool);
-```
-```VB.NET
-	Dim toolService As ToolService = TryCast(xDiagram.ServiceLocator.GetService(Of IToolService)(), ToolService)
-    Dim myCustomTool As MyCustomTool = New MyCustomTool("MyCustomTool")
-    toolService.ToolList.Add(myCustomTool)
-```
+<snippet id='raddiagram-diagram-tools-radcustomization-example_4_register_a_new_tool-cs' />
+
+<snippet id='raddiagram-diagram-tools-radcustomization-example_4_register_a_new_tool-vb' />
+
 
 ## Creating a Custom Tool
 

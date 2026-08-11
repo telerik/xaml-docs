@@ -19,15 +19,8 @@ In some scenarios it is required to load thousands of items in a __RadComboBox__
 
 
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox">
-	    <telerik:RadComboBox.ItemsPanel>
-	        <ItemsPanelTemplate>
-	            <VirtualizingStackPanel />
-	        </ItemsPanelTemplate>
-	    </telerik:RadComboBox.ItemsPanel>
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-howto-virtualization-block_1-xaml' />
+
 
 >important When RadComboBox is virtualized the filtering is not supported.
 

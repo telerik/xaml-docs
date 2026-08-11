@@ -21,25 +21,13 @@ To define contextual tabs in the __RadRibbonView__ control you have to first def
 
 	__Example 1: Set the ContextualGroups property__
 
-	```XAML
-		<telerik:RadRibbonView x:Name="radRibbonView" 
-							   Title="Document1"
-							   ApplicationName="Telerik Word">
-					<telerik:RadRibbonView.ContextualGroups>
-				<telerik:RadRibbonContextualGroup x:Name="ContextualGroup1" Header="Group 1"/>
-				<telerik:RadRibbonContextualGroup x:Name="ContextualGroup2" Header="Group 2"/>
-					</telerik:RadRibbonView.ContextualGroups>
-		</telerik:RadRibbonView>
-	```
+	<snippet id='radribbonview-features-contextual-tabs-block_1-xaml' />
 	
 * __ContextualGroupsItemsSource__: Gets or sets an __IEnumerable__ collection of **business items** used to generate the contextual groups. You can bind this property to a collection of data items in XAML or populate it in code-behind.
 
 	__Example 2: Set the ContextualGroups property__
 
-	```XAML
-		<telerik:RadRibbonView  ItemsSource="{Binding Tabs}" 
-								ContextualGroupsItemsSource="{Binding ContextualGroups}" />
-	```
+	<snippet id='radribbonview-features-contextual-tabs-block_2-xaml' />
 
 ## Adding Contextual RadRibbonTabs Declaratively
 
@@ -47,33 +35,7 @@ In order to add contextual tabs, you need to define __RadRibbonTabs__ associated
 
 __Example 3: Define RadRibbonTabs__
 
-```XAML
-	<Grid>
-	        <Grid.RowDefinitions>
-	            <RowDefinition Height="Auto" />
-	            <RowDefinition Height="*" />
-	        </Grid.RowDefinitions>
-	<telerik:RadRibbonView x:Name="radRibbonView" 
-						   ApplicationButtonImageSource="Images/IconMSOffice/AppIcon.png"
-						   telerik:KeyTipService.IsKeyTipsEnabled="True">
-		<telerik:RadRibbonTab Header="Home" telerik:KeyTipService.AccessText="H" />
-		<telerik:RadRibbonTab Header="Insert" telerik:KeyTipService.AccessText="N" />
-		<telerik:RadRibbonTab Header="Page Layout" telerik:KeyTipService.AccessText="P" />
-		<telerik:RadRibbonTab Header="References" telerik:KeyTipService.AccessText="S" />
-		<telerik:RadRibbonTab Header="Mailings" telerik:KeyTipService.AccessText="M" />
-		<telerik:RadRibbonTab Header="Review" telerik:KeyTipService.AccessText="R" />
-		<telerik:RadRibbonTab Header="View" telerik:KeyTipService.AccessText="W" />
-		<telerik:RadRibbonTab ContextualGroupName="ContextualGroup1" Header="ContextualTab 1.1" />
-		<telerik:RadRibbonTab ContextualGroupName="ContextualGroup1" Header="ContextualTab 1.2" />
-		<telerik:RadRibbonTab ContextualGroupName="ContextualGroup2" Header="ContextualTab 2.1" />
-		<telerik:RadRibbonTab ContextualGroupName="ContextualGroup2" Header="ContextualTab 2.2" />
-		<telerik:RadRibbonView.ContextualGroups>
-			<telerik:RadRibbonContextualGroup x:Name="ContextualGroup1" Header="Group 1"/>
-			<telerik:RadRibbonContextualGroup x:Name="ContextualGroup2" Header="Group 2"/>
-		</telerik:RadRibbonView.ContextualGroups>
-	</telerik:RadRibbonView>
-	</Grid>
-```
+<snippet id='radribbonview-features-contextual-tabs-block_3-xaml' />
 
 This is why it is important to set the __x:Name__ property of all __RadRibbonContextualGroups__ in the __RadRibbonView ContextualGroups__ collection, otherwise you won't be able to associate any __RibbonTabs__ with them.
 
@@ -85,12 +47,7 @@ You can bind the __RadRibbonTab ContextualGroupName__ to a business property usi
 
 __Example 4: Style the contextual tabs__
 
-```XAML
-	<Style TargetType="telerik:RadRibbonTab">
-		<Setter Property="Header" Value="{Binding Header}" />
-		<Setter Property="ContextualGroupName" Value="{Binding ContextualGroupName}" />
-	</Style>
-```
+<snippet id='radribbonview-features-contextual-tabs-block_4-xaml' />
 
 Once you have the __ItemsSource__ collection properly data-bound, you will need to also bind the __ContextualGroupsItemsSource__.		
 
@@ -100,11 +57,7 @@ In order to data-bind the __ContextualGroups__ properties you can also use style
 
 __Example 5: Bind the group names in a style__
 
-```XAML
-	<Style TargetType="telerik:RadRibbonContextualGroup">
-		<Setter Property="telerik:RadRibbonContextualGroup.GroupName" Value="{Binding GroupName}" />
-	</Style>
-```
+<snippet id='radribbonview-features-contextual-tabs-block_5-xaml' />
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/RibbonView/ContextualGroups-DataBinding).		  
 
@@ -124,90 +77,24 @@ You can set these properties in the definition of declaratively defined __RadRib
 
 __Example 6: Set group properties declaratively__
 
-```XAML
-	<telerik:RadRibbonView x:Name="radRibbonView" 
-						   ApplicationButtonImageSource="Images/IconMSOffice/AppIcon.png">
-		<telerik:RadRibbonView.ContextualGroups>
-			<telerik:RadRibbonContextualGroup x:Name="ContextualGroup1" 
-											  Header="Group 1"
-											  IsActive="False"
-											  Color="Coral" />
-			<telerik:RadRibbonContextualGroup x:Name="ContextualGroup2" 
-											  Header="Group 2"
-											  IsActive="True"
-											  Color="Orchid" />
-		</telerik:RadRibbonView.ContextualGroups>
-	</telerik:RadRibbonView>
-```
+<snippet id='radribbonview-features-contextual-tabs-block_6-xaml' />
 
 or in an implicit style targeting the contextual groups:
 
 __Example 7: Set group properties via a style__
 
-```XAML
-	<Style TargetType="telerik:RadRibbonContextualGroup">
-	    <Setter Property="telerik:RadRibbonContextualGroup.GroupName" Value="{Binding Name}" />
-	    <Setter Property="Color" Value="{Binding Color}" />
-	    <Setter Property="Header" Value="{Binding Header}" />
-	    <Setter Property="IsActive" Value="{Binding IsActive}" />
-	</Style>
-```
+<snippet id='radribbonview-features-contextual-tabs-block_7-xaml' />
 
 You can easily control the active groups from code-behind. For instance, the __IsActive__ property of the declaratively defined contextual groups demonstrated above can be easily changed when clicking a button:
 
 __Example 8: Activate the groups on a button click__
 
-```XAML
-	<StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Top">
-	    <Button x:Name="Group1Button"
-	            Content="Activate Group 1"
-	            Click="Group1Button_Click"
-	            Margin="0,0,10,0" />
-	    <Button x:Name="Group2Button"
-	            Content="Activate Group 2"
-	            Click="Group2Button_Click" />
-	</StackPanel>
-```
+<snippet id='radribbonview-features-contextual-tabs-block_8-xaml' />
 
 __Example 9: Change the groups' IsActive property__
 
-```C#
-	private void Group1Button_Click( object sender, RoutedEventArgs e )
-	{
-	    if ( !this.ContextualGroup1.IsActive )
-	        this.ContextualGroup1.IsActive = true;
-	    if ( this.ContextualGroup2.IsActive )
-	        this.ContextualGroup2.IsActive = false;
-	}
-	private void Group2Button_Click( object sender, RoutedEventArgs e )
-	{
-	    if ( !this.ContextualGroup2.IsActive )
-	        this.ContextualGroup2.IsActive = true;
-	    if ( this.ContextualGroup1.IsActive )
-	        this.ContextualGroup1.IsActive = false;
-	}
-```
-```VB.NET
-	Private Sub Group1Button_Click(sender As Object, e As RoutedEventArgs)
-		If Not Me.ContextualGroup1.IsActive Then
-			Me.ContextualGroup1.IsActive = True
-		End If
-	
-		If Me.ContextualGroup2.IsActive Then
-			Me.ContextualGroup2.IsActive = False
-		End If
-	End Sub
-	
-	Private Sub Group2Button_Click(sender As Object, e As RoutedEventArgs)
-		If Not Me.ContextualGroup2.IsActive Then
-			Me.ContextualGroup2.IsActive = True
-		End If
-	
-		If Me.ContextualGroup1.IsActive Then
-			Me.ContextualGroup1.IsActive = False
-		End If
-	End Sub
-```
+<snippet id='radribbonview-features-contextual-tabs-block_9-cs' />
+<snippet id='radribbonview-features-contextual-tabs-block_10-vb' />
 
 ![Rad Ribbon View Contextual Groups Activate 1](images/RadRibbonView_ContextualGroups_Activate1.png)
 ![Rad Ribbon View Contextual Groups Activate 2](images/RadRibbonView_ContextualGroups_Activate2.png)
@@ -218,27 +105,19 @@ By default, scrolling the **mouse wheel** while the mouse is over the control wi
 
 __Example 10: Disable mouse wheel scrolling in XAML__
 
-```XAML
-	<telerik:RadRibbonView IsMouseWheelTabScrollingEnabled="False" />
-```
+<snippet id='radribbonview-features-contextual-tabs-block_11-xaml' />
 
 __Example 10: Disable mouse wheel scrolling in code-behind__
 
-```C#
-	this.ribbonView.IsMouseWheelTabScrollingEnabled = false;
-```
-```VB.NET
-	Me.ribbonView.IsMouseWheelTabScrollingEnabled = False
-```
+<snippet id='radribbonview-features-contextual-tabs-block_12-cs' />
+<snippet id='radribbonview-features-contextual-tabs-block_13-vb' />
 
 ## Prevent the Selection of a Contextual Tab When It Is Activated
 
 By default, when a contextual tab is activated, the first tab element inside will be selected. To disable this behavior you can set the __SelectFirstTabOnActivation__ property of the __RadRibbonContextualGroup__ to __false__.
 
 __Example 11: Disable selection of the first tab inside contextual tab__
-```XAML
-	<telerik:RadRibbonContextualGroup x:Name="ContextualGroup1" Header="Group 1" SelectFirstTabOnActivation="False"/>
-```
+<snippet id='radribbonview-features-contextual-tabs-block_14-xaml' />
   
 
 ## See Also

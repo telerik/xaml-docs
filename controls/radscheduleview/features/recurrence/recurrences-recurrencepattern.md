@@ -177,20 +177,8 @@ When you want to create a new instance of __RecurrencePattern__ with the same va
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    Frequency = RecurrenceFrequency.Monthly,
-	    MaxOccurrences = 10
-	};
-	var copyPattern = pattern.Copy();
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	    .Frequency = RecurrenceFrequency.Monthly,
-	    .MaxOccurrences = 10
-	}
-	Dim copyPattern = pattern.Copy()
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_1-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_2-vb' />
 
 In the above example, a new __monthly__ recurrence pattern is created. It also has a limit of __10 occurrences__. When you invoke the __pattern.Copy()__ method this creates a new instance of the __RecurrencePattern__ class with exactly the same characteristics as the source object (the __Frequency__ property will be set to __RecurrenceFrequency.Monthly__ and the __MaxOccurrences__ property will be set to 10).        
 
@@ -200,22 +188,8 @@ Use the __CopyFrom()__ method to duplicate the pattern properties of the specifi
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    Frequency = RecurrenceFrequency.Monthly,
-	    MaxOccurrences = 10
-	};
-	var newPattern = new RecurrencePattern();
-	newPattern.CopyFrom(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	    .Frequency = RecurrenceFrequency.Monthly,
-	    .MaxOccurrences = 10
-	}
-	Dim newPattern As New RecurrencePattern()
-	newPattern.CopyFrom(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_3-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_4-vb' />
 
 All properties in the current instance (newPattern object) will be replaced by the corresponding properties in the specified __RecurrencePattern__ object.
 
@@ -225,22 +199,8 @@ For the next examples the following appointment declaration will be used.
 
 
 
-```C#
-	var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
-	var appointment = new Appointment() {
-	    Start = startDate,
-	    End = startDate.AddHours(2),
-	    Subject = "Example"
-	};
-```
-```VB.NET
-	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
-	Dim appointment = New Appointment() With {
-	    .Start = startDate,
-	    .End = startDate.AddHours(2),
-	    .Subject = "Example"
-	}
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_5-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_6-vb' />
 
 A simple appointment that starts at 11/05/2011 10:00 AM and lasts two hours is created.
 
@@ -250,18 +210,8 @@ If you want to create an appointment that occurs every day, the only thing you s
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    Frequency = RecurrenceFrequency.Daily
-	};
-	appointment.RecurrenceRule = new RecurrenceRule(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	    Frequency = RecurrenceFrequency.Daily
-	}
-	appointment.RecurrenceRule = New RecurrenceRule(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_7-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_8-vb' />
 
 The result can be seen on the next figure. As you can see the appointment with subject "Example" occurs on every day of the week.![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_1.png)
 
@@ -271,20 +221,8 @@ Creating an every day recurring event is extremely simple - you just need to set
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	      Frequency = RecurrenceFrequency.Weekly,
-	      DaysOfWeekMask = RecurrenceDays.WeekDays
-	};
-	appointment.RecurrenceRule = new RecurrenceRule(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	     .Frequency = RecurrenceFrequency.Weekly,
-	     .DaysOfWeekMask = RecurrenceDays.WeekDays
-	}
-	appointment.RecurrenceRule = New RecurrenceRule(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_9-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_10-vb' />
 
 The result of the above example will be a __RecurrencePattern__ which will create an appointment every week day, like on the image below.
 
@@ -306,22 +244,8 @@ When you want to create an appointment that occurs on every "n" days, you should
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    Frequency = RecurrenceFrequency.Daily,
-	    DaysOfWeekMask = RecurrenceDays.EveryDay,
-	    Interval = 3
-	};
-	appointment.RecurrenceRule = new RecurrenceRule(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	     .Frequency = RecurrenceFrequency.Daily,
-	     .DaysOfWeekMask = RecurrenceDays.EveryDay,
-	     .Interval = 3
-	}
-	appointment.RecurrenceRule = New RecurrenceRule(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_11-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_12-vb' />
 
 Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.
 
@@ -343,22 +267,8 @@ For example, if you want to create an appointment that occurs on every __fifth__
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    DaysOfMonth = new int[] { 5 },
-	    Frequency = RecurrenceFrequency.Monthly,
-	    Interval = 2
-	};
-	appointment.RecurrenceRule = new RecurrenceRule(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	     .DaysOfMonth = New int[] { 5 },
-	     .Frequency = RecurrenceFrequency.Monthly,  
-	     .Interval = 2
-	}
-	appointment.RecurrenceRule = New RecurrenceRule(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_13-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_14-vb' />
 
 ## How to Create an Appointment that Occurs on Every "n-th" Week Day and the Interval Between Each Recurrence is "m" Months?
 
@@ -374,24 +284,8 @@ For example, if you want to create an appointment that occurs on every second Mo
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    DayOrdinal = 2,
-	    DaysOfWeekMask = RecurrenceDays.Monday,
-	    Frequency = RecurrenceFrequency.Monthly,
-	    Interval = 2
-	};
-	appointment.RecurrenceRule = new RecurrenceRule(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	     .DayOrdinal = 2,
-	     .DaysOfWeekMask = RecurrenceDays.Monday,
-	     .Frequency = RecurrenceFrequency.Monthly,  
-	     .Interval = 2
-	}
-	appointment.RecurrenceRule = New RecurrenceRule(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_15-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_16-vb' />
 
 ## How to Create an Yearly Appointment?
 
@@ -405,22 +299,8 @@ For example, if you want to create an appointment that occurs on 13th of Novembe
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    Frequency = RecurrenceFrequency.Yearly,
-	    MonthOfYear = 11,
-	    DaysOfMonth = new int[] { 13 }
-	};
-	appointment.RecurrenceRule = new RecurrenceRule(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	    .Frequency = RecurrenceFrequency.Yearly,
-	    .MonthOfYear = 11,
-	    .DaysOfMonth = New int[] { 13 }
-	}
-	appointment.RecurrenceRule = New RecurrenceRule(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_17-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_18-vb' />
 
 ## Set the Maximum Occurrences of the Appointment
 
@@ -428,20 +308,8 @@ When you want to specify a limit of the occurrences for the appointment, then yo
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    Frequency = RecurrenceFrequency.Daily,
-	    MaxOccurrences = 3
-	};
-	appointment.RecurrenceRule = new RecurrenceRule(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	    .Frequency = RecurrenceFrequency.Daily,
-	    .MaxOccurrences = 3
-	}
-	appointment.RecurrenceRule = New RecurrenceRule(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_19-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_20-vb' />
 
 ## Set the End Date of the Appointment Occurrences
 
@@ -449,20 +317,8 @@ When you want to specify the end date of the appointment's occurrences, then you
 
 
 
-```C#
-	var pattern = new RecurrencePattern() {
-	    Frequency = RecurrenceFrequency.Daily,
-	    RecursUntil = new DateTime( 2011, 05, 24, 10, 0, 0 )
-	};
-	appointment.RecurrenceRule = new RecurrenceRule(pattern);
-```
-```VB.NET
-	Dim pattern = New RecurrencePattern() With {
-	     .Frequency = RecurrenceFrequency.Daily,
-	     .RecursUntil = New DateTime(2011, 5, 24, 10, 0, 0)
-	}
-	appointment.RecurrenceRule = New RecurrenceRule(pattern)
-```
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_21-cs' />
+<snippet id='radscheduleview-features-recurrence-recurrences-recurrencepattern-block_22-vb' />
 
 The appointment that starts on 11.05.201 will occur until 24.05.2011. See the next image.
 

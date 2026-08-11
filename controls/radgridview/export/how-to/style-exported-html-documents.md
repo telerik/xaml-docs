@@ -33,24 +33,8 @@ For example:
 
 __Example 1: Set the properties of the VisualParameters:__
 
-```C#
-	private void clubsGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
-	{
-	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
-	    {
-	        var param = e.VisualParameters as GridViewHtmlVisualExportParameters;
-	        param.Background = Colors.Red;
-	        param.FontFamily = new FontFamily("Verdana");
-	        param.FontSize = 30;
-	        param.FontWeight = FontWeights.Bold;
-	        param.Foreground = Colors.Green;
-	        param.Height = 50;
-	        param.TextAlignment = TextAlignment.Center;
-	        param.VerticalAlignment = VerticalAlignment.Bottom;
-	        param.Width = 500;
-	    }
-	}
-```
+<snippet id='radgridview-export-how-to-style-exported-html-documents-example_1_set_the_properties_of_the_visualparameters-cs' />
+
 
 You can read more about the export events [here]({%slug gridview-export-events%}).
 

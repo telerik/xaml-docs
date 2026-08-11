@@ -18,27 +18,8 @@ Here is the XAML for the example. In it you can see a __RadGridView__ and a __Ra
 
 
 
-```XAML
+<snippet id='raddatafilter-features-unbound-mode-block_1-xaml' />
 
-	<Grid x:Name="LayoutRoot"
-	        Background="White">
-	    <Grid.RowDefinitions>
-	        <RowDefinition Height="Auto" />
-	        <RowDefinition />
-	    </Grid.RowDefinitions>
-	    <telerik:RadDataFilter x:Name="radDataFilter" />
-	    <telerik:RadGridView x:Name="radGridView"
-	                            ItemsSource="{Binding FilteredSource, ElementName=radDataFilter}"
-	                            AutoGenerateColumns="False"
-	                            Grid.Row="1">
-	        <telerik:RadGridView.Columns>
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" />
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" />
-	            <telerik:GridViewDataColumn DataMemberBinding="{Binding Title}" />
-	        </telerik:RadGridView.Columns>
-	    </telerik:RadGridView>
-	</Grid>
-```
 
 
 When in __Unbound Mode__, __RadDataFilter__ has no __Source__. The developer instructs it what properties to show in its drop-downs by assigning its __ItemPropertyDefinitions__ property. This is a collection of __ItemPropertyDefinition objects__ that contains all the information regarding the properties, their type, their attributes, etc. 
@@ -49,50 +30,10 @@ Here is the code-behind for the example. In it you should take notice at the ins
 
 
 
-```C#
+<snippet id='raddatafilter-features-unbound-mode-block_2-cs' />
 
-	    public UnboundModeSample()
-	    {
-	        InitializeComponent();
-	        ItemPropertyDefinition nameDefinition = new ItemPropertyDefinition( "Name", typeof( string ), "Employee's Name" );
-	        this.radDataFilter.ItemPropertyDefinitions.Add( nameDefinition );
-	        this.radDataFilter.FilterDescriptors.CollectionChanged += this.FilterDescriptors_CollectionChanged;
-	        this.radGridView.ItemsSource = RadGridViewSampleData.GetEmployees();
-	    }
-	    private void FilterDescriptors_CollectionChanged( object sender, NotifyCollectionChangedEventArgs e )
-	    {
-	        if ( e.Action == NotifyCollectionChangedAction.Add )
-	        {
-	            this.radGridView.FilterDescriptors.AddRange( e.NewItems.OfType<IFilterDescriptor>() );
-	        }
-	        else if ( e.Action == NotifyCollectionChangedAction.Remove )
-	        {
-	            foreach ( var item in e.OldItems.OfType<IFilterDescriptor>() )
-	            {
-	                this.radGridView.FilterDescriptors.Remove( item );
-	            }
-	        }
-	    }
-```
-```VB.NET
+<snippet id='raddatafilter-features-unbound-mode-block_2-vb' />
 
-	    Public Sub New()
-	        InitializeComponent()
-	        Dim nameDefinition As New ItemPropertyDefinition("Name", GetType(String), "Employee's Name")
-	        Me.radDataFilter.ItemPropertyDefinitions.Add(nameDefinition)
-	        AddHandler Me.radDataFilter.FilterDescriptors.CollectionChanged, AddressOf FilterDescriptors_CollectionChanged
-	        Me.radGridView.ItemsSource = RadGridViewSampleData.GetEmployees()
-	    End Sub
-	    Private Sub FilterDescriptors_CollectionChanged(ByVal sender As Object, ByVal e As NotifyCollectionChangedEventArgs)
-	        If e.Action = NotifyCollectionChangedAction.Add Then
-	            Me.radGridView.FilterDescriptors.AddRange(e.NewItems.OfType(Of IFilterDescriptor)())
-	        ElseIf e.Action = NotifyCollectionChangedAction.Remove Then
-	            For Each item In e.OldItems.OfType(Of IFilterDescriptor)()
-	                Me.radGridView.FilterDescriptors.Remove(item)
-	            Next item
-	        End If
-	    End Sub
-```
 
 
 
@@ -100,70 +41,10 @@ Here is also the code for the __Employee__ class, used in the example.
 
 
 
-```C#
+<snippet id='raddatafilter-features-unbound-mode-block_3-cs' />
 
-	public class Employee
-	{
-	    public Employee( string name, string companyName, string title )
-	    {
-	        this.Name = name;
-	        this.CompanyName = companyName;
-	        this.Title = title;
-	    }
-	    public string Name
-	    {
-	        get;
-	        set;
-	    }
-	    public string CompanyName
-	    {
-	        get;
-	        set;
-	    }
-	    public string Title
-	    {
-	        get;
-	        set;
-	    }
-	}
-```
-```VB.NET
+<snippet id='raddatafilter-features-unbound-mode-block_3-vb' />
 
-	Public Class Employee
-	    Public Sub New(name As String, companyName As String, title As String)
-	        Me.Name = name
-	        Me.CompanyName = companyName
-	        Me.Title = title
-	    End Sub
-	    Public Property Name() As String
-	        Get
-	            Return m_Name
-	        End Get
-	        Set(value As String)
-	            m_Name = Value
-	        End Set
-	    End Property
-	    Private m_Name As String
-	    Public Property CompanyName() As String
-	        Get
-	            Return m_CompanyName
-	        End Get
-	        Set(value As String)
-	            m_CompanyName = Value
-	        End Set
-	    End Property
-	    Private m_CompanyName As String
-	    Public Property Title() As String
-	        Get
-	            Return m_Title
-	        End Get
-	        Set(value As String)
-	            m_Title = Value
-	        End Set
-	    End Property
-	    Private m_Title As String
-	End Class
-```
 
 
 

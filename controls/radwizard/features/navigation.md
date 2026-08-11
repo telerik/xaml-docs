@@ -38,22 +38,8 @@ Here's an example of handling the **SelectionChanged** event using the __Selecte
 
 __Example 1: Jump to particular page__
 
-```C#
-    private void RadWizard_SelectionChanged(object sender, SelectedPageChangedEventArgs e)
-    {
-        if (e.NewPage == this.page2)
-        {
-            ((RadWizard)sender).SelectedPage = this.page3;
-        }
-    }
-```
-```VB.NET
-	Private Sub RadWizard_SelectionChanged(ByVal sender As Object, ByVal e As SelectedPageChangedEventArgs)
-		If e.NewPage = Me.page2 Then
-			DirectCast(sender, RadWizard).SelectedPage = Me.page3
-		End If
-	End Sub
-```
+<snippet id='radwizard-features-navigation-block_1-cs' />
+<snippet id='radwizard-features-navigation-block_2-vb' />
 
 ## SelectedPageIndex
 The __SelectedPageIndex__ property is of type __int__ and gets or sets the index of the currently selected page.
@@ -62,17 +48,8 @@ The __SelectedPageIndex__ property is of type __int__ and gets or sets the index
 
 __Example 2: Restart the wizard when the Finish button is clicked__
 
-```C#
-    private void RadWizard_Finish(object sender, NavigationButtonsEventArgs e)
-    {
-        ((RadWizard)sender).SelectedPageIndex = 0;
-    }
-```
-```VB.NET
-	Private Sub RadWizard_Finish(ByVal sender As Object, ByVal e As NavigationButtonsEventArgs)
-		DirectCast(sender, RadWizard).SelectedPageIndex = 0
-	End Sub
-```
+<snippet id='radwizard-features-navigation-block_3-cs' />
+<snippet id='radwizard-features-navigation-block_4-vb' />
 
 ## See Also
 

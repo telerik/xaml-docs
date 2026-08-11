@@ -32,32 +32,15 @@ Here is an example of an event handler attached to the __Click__ event and how t
 
 
 
-```XAML
-	<telerik:RadContextMenu>
-	    <telerik:RadMenuItem Header="Item 1"
-	                         Click="RadMenuItem_Click" />
-	    <telerik:RadMenuItem Header="Item 2"
-	                         Click="RadMenuItem_Click" />
-	    <telerik:RadMenuItem Header="Item 3"
-	                         Click="RadMenuItem_Click" />
-	</telerik:RadContextMenu>
-```
+<snippet id='radcontextmenu-how-to-handle-item-clicks-block_1-xaml' />
 
 
 
-```C#
-	private void RadMenuItem_Click( object sender, RadRoutedEventArgs e )
-	{
-	    RadMenuItem item = sender as RadMenuItem;
-	    //implement the logic regarding the instance here.
-	}
-```
-```VB.NET
-	Private Sub RadMenuItem_Click(sender As Object, e As RadRoutedEventArgs)
-	    Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
-	    'implement the logic regarding the instance here.
-	End Sub
-```
+
+<snippet id='radcontextmenu-how-to-handle-item-clicks-block_2-cs' />
+
+<snippet id='radcontextmenu-how-to-handle-item-clicks-block_2-vb' />
+
 
 ## Handle the ItemClick event of the RadContextMenu
 
@@ -69,29 +52,15 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 
 
 
-```XAML
-	<telerik:RadContextMenu ItemClick="radContextMenu_ItemClick">
-	    <telerik:RadMenuItem Header="Item 1" />
-	    <telerik:RadMenuItem Header="Item 2" />
-	    <telerik:RadMenuItem Header="Item 3" />
-	</telerik:RadContextMenu>
-```
+<snippet id='radcontextmenu-how-to-handle-item-clicks-block_3-xaml' />
 
 
 
-```C#
-	private void radContextMenu_ItemClick(object sender, RadRoutedEventArgs e)
-	{
-	    RadMenuItem item = e.OriginalSource as RadMenuItem;
-	    //implement the logic regarding the instance here.
-	}
-```
-```VB.NET
-	Private Sub radContextMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)
-	    Dim item As RadMenuItem = TryCast(e.OriginalSource, RadMenuItem)
-	    'implement the logic regarding the instance here.
-	End Sub
-```
+
+<snippet id='radcontextmenu-how-to-handle-item-clicks-block_4-cs' />
+
+<snippet id='radcontextmenu-how-to-handle-item-clicks-block_4-vb' />
+
 
 ## See Also
 

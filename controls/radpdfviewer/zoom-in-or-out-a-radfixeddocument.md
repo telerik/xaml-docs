@@ -28,12 +28,8 @@ By using the **RadPdfViewer**'s **ScaleFactor** property. The default value of t
 
 __Zoom in__
 
-```C#
-    this.pdfViewer.ScaleFactor = 2;
-```
+<snippet id='radpdfviewer-zoom-in-or-out-a-radfixeddocument-block_1-cs' />
 
 __Zoom out__
 
-```C#
-    this.pdfViewer.ScaleFactor = 0.5;
-```
+<snippet id='radpdfviewer-zoom-in-or-out-a-radfixeddocument-block_2-cs' />

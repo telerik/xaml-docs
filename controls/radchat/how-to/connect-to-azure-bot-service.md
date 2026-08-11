@@ -27,28 +27,16 @@ In order to connect the RadChat component to a chat bot using the Direct Line ch
 In order to prepare the RadChat control for interaction with a bot, you can create two authors: one for the client and one for the bot. You can set the CurrentAuthor of the of the RadChat to the client author. Optionally you can also set the TypingIndicatorText property. This way you can indicate that the chat bot is about to respond to a message. **Example 1** demonstrates how you can achieve this.
 
 __Example 1: Setting up the RadChat__ 
-```C#
-    this.BotAuthor = new Author("Virtual Assistant");
-    this.ClientAuthor = new Author("Client");
-    this.radChat.CurrentAuthor = this.ClientAuthor;
-    this.radChat.TypingIndicatorText = "Virtual Assistance is typing...";
-```
+<snippet id='radchat-how-to-connect-to-azure-bot-service-example_1_setting_up_the_radchat-cs' />
+
 
 ## Send and receive messages
 
 Messages between the bot and the client application can be exchanged using **HTTP GET** and **HTTP POST** requests or by using a websocket. **Example 2** shows a possible implementation of connecting to a chat bot using a WebSocket.
 
 __Example 2: Setting up the RadChat__ 
-```C#
-    Conversation tokenResponse = new DirectLineClient("your direct line secret").Tokens.GenerateTokenForNewConversation();
- 
-    this.directLineClient = new DirectLineClient(tokenResponse.Token);
-    this.conversation = directLineClient.Conversations.StartConversation();
+<snippet id='radchat-how-to-connect-to-azure-bot-service-example_2_setting_up_the_radchat-cs' />
 
-    this.webSocketClient = new WebSocket(conversation.StreamUrl);
-    this.webSocketClient.OnMessage += WebSocketClient_OnMessage;
-    this.webSocketClient.Connect();
-```
 
 > For an example implementation of connecting to Direct Line using **HTTP GET** and **HTTP POST** requests, check out the [Direct Line Bot Sample](https://github.com/microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/core-DirectLine) demo and for one using a websocket, check out the [Direct Line Bot Sample (using client WebSockets)](https://github.com/microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/core-DirectLineWebSockets) demo.
 
@@ -61,43 +49,8 @@ In order to exchange more than simple text messages, you can use [Activities](ht
 Using the Azure Bot Service you can create and return many different types of cards. You can check out the [Add rich card attachments to messages](https://docs.microsoft.com/en-us/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) article in order to see all of the available types. When you receive a card from a chat bot, you can visualize it with one of the [Messages]({%slug chat-items-messages-overview%}) that the RadChat component provides. **Example 3** shows how you can add a [CarouselMessage]({%slug chat-items-carouselmessage%}) to the RadChat depending on the received Activity.
 
 __Example 3: Adding a CarouselMessage to the RadChat__ 
-```C#
-    private void HandleCarouselMessage(Activity activity)
-    {
-        List<ImageCardMessage> cards = new List<ImageCardMessage>();
-        var carouselMessage = new CarouselMessage(MessageDisplayPosition.Inline, this.BotAuthor, null)
-        {
-            CloseAfterReport = true
-        };
+<snippet id='radchat-how-to-connect-to-azure-bot-service-example_3_adding_a_carouselmessage_to_the_radchat-cs' />
 
-        foreach (Attachment attachment in activity.Attachments)
-        {
-            HeroCard card = JsonConvert.DeserializeObject<HeroCard>(attachment.Content.ToString());
-
-            var imageCardMessage = new ImageCardMessage(this.BotAuthor) { Title = card.Title, SubTitle = card.Subtitle, Text = card.Text };
-            if (card.Images != null && card.Images.Count > 0)
-            {
-                imageCardMessage.ImageSource = this.DownloadImage(card.Images[0].Url);
-            }
-
-            foreach (var action in card.Buttons)
-            {
-                imageCardMessage.ReportActions.Add(new ValueResponseAction(imageCardMessage)
-                {
-                    CommandButtonVisibility = Visibility.Visible,
-                    DataObjectValue = action.Value,
-                    TextResultValue = action.Title,
-                    Text = action.Title
-                });
-            }
-
-            cards.Add(imageCardMessage);
-        }
-
-        carouselMessage.Source = cards;
-        this.radChat.AddMessage(carouselMessage);
-    }
-```
 
 > A useful nuget package for working with rich cards received from a bot is the [AdaptiveCards](https://www.nuget.org/packages/AdaptiveCards) package.
 
@@ -106,23 +59,8 @@ __Example 3: Adding a CarouselMessage to the RadChat__
 The Azure Bot Service makes it possible to attach suggested actions to messages which contain possible options to the user. You can check out the [Add suggested actions to messages](https://docs.microsoft.com/en-us/azure/bot-service/dotnet/bot-builder-dotnet-add-suggested-actions?view=azure-bot-service-3.0) article. When you receive a message with suggested actions, you can visualize them by adding them to the [SuggestedActions]({%slug chat-items-suggested-actions%}) collection of the RadChat. **Example 4** shows demonstrates how you can add suggested actions depending on the received Activity.
 
 __Example 4: Adding suggested action to the RadChat__ 
-```C#
-    private void HandleSuggestedActions(Activity activity)
-    {
-        if (activity.SuggestedActions != null)
-        {
-            this.radChat.SuggestedActions.Clear();
+<snippet id='radchat-how-to-connect-to-azure-bot-service-example_4_adding_suggested_action_to_the_radchat-cs' />
 
-            if (activity.SuggestedActions != null)
-            {
-                foreach (var action in activity.SuggestedActions.Actions)
-                {
-                    this.radChat.SuggestedActions.Add(new SuggestedAction(action.Value.ToString()));
-                }
-            }
-        }
-    }
-```
 
 ## See Also
 

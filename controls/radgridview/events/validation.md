@@ -58,48 +58,24 @@ The parameters passed to the validating event handler are two:
 You can subscribe to the __CellValidating__ event declaratively or in code-behind like this:        
 
 
-```XAML
-	<telerik:RadGridView CellValidating="radGridView_CellValidating"/>
-```
+<snippet id='radgridview-events-validation-block_1-xaml' />
 
 
-```C#
-	this.radGridView.CellValidating += radGridView_CellValidating;
-```
-```VB.NET
-	AddHandler Me.radGridView.CellValidating, AddressOf radGridView_CellValidating
-```
+
+<snippet id='radgridview-events-validation-block_2-cs' />
+
+<snippet id='radgridview-events-validation-block_2-vb' />
+
 
 >tip To stop the commit process of a cell just set the __IsValid__ property of the __GridViewCellValidatingEventArgs__ to __False__.          
 
 The code snippet below checks whether the value entered in the "CountryId" column falls between 0 and 12. If the rule is not satisfied then the commit process is cancelled.
 
   
-```C#
-	private void radGridView_CellValidating(object sender, GridViewCellValidatingEventArgs e)
-	{
-	    if (e.Cell.Column.UniqueName == "CountryId")
-	    {
-	        int newValue = Int32.Parse(e.NewValue.ToString());
-	        if (newValue < 0 || newValue > 12)
-	        {
-	            e.IsValid = false;
-	            e.ErrorMessage = "The entered value must be between 0 and 12";
-	        }
-	    }
-	}
-```
-```VB.NET
-	Private Sub radGridView_CellValidating(ByVal sender As Object, ByVal e As GridViewCellValidatingEventArgs)
-	    If e.Cell.Column.UniqueName = "CountryId" Then
-	        Dim newValue As Integer = Int32.Parse(e.NewValue.ToString())
-	        If newValue < 0 OrElse newValue > 12 Then
-	            e.IsValid = False
-	            e.ErrorMessage = "The entered value must be between 0 and 12"
-	        End If
-	    End If
-	End Sub
-```
+<snippet id='radgridview-events-validation-block_3-cs' />
+
+<snippet id='radgridview-events-validation-block_3-vb' />
+
 
 And here is how the error message is displayed:
 
@@ -118,17 +94,14 @@ The parameters passed to the validated event handler are two:
 You can subscribe to the __CellValidated__ event declaratively or in code-behind like this:        
 
   
-```XAML
-	<telerik:RadGridView CellValidated="radGridView_CellValidated"/>
-```
+<snippet id='radgridview-events-validation-block_4-xaml' />
 
 
-```C#
-	this.radGridView.CellValidated += radGridView_CellValidated;
-```
-```VB.NET
-	AddHandler Me.radGridView.CellValidated, AddressOf radGridView_CellValidated
-```
+
+<snippet id='radgridview-events-validation-block_5-cs' />
+
+<snippet id='radgridview-events-validation-block_5-vb' />
+
 
 ## RowValidating Event
 
@@ -158,58 +131,30 @@ The parameters passed to the validating event handler are two:
 You can subscribe to the __RowValidating__ event declaratively or in code-behind like this:        
 
   
-```XAML
-	<telerik:RadGridView RowValidating="radGridView_RowValidating"/>
-```
+<snippet id='radgridview-events-validation-block_6-xaml' />
+
 
   
-```C#
-	this.radGridView.RowValidating += radGridView_RowValidating;
-```
-```VB.NET
-	AddHandler Me.radGridView.RowValidating, AddressOf radGridView_RowValidating
-```
+<snippet id='radgridview-events-validation-block_7-cs' />
+
+<snippet id='radgridview-events-validation-block_7-vb' />
+
 
 To stop the commit process just set the __IsValid__ property of the __GridViewRowValidatingEventArgs__ to __False__, like this:
         
  
-```C#
-	private void radGridView_RowValidating(object sender, GridViewRowValidatingEventArgs e)
-	{
-	    e.IsValid = false;
-	}
-```
-```VB.NET
-	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As GridViewRowValidatingEventArgs)
-	    e.IsValid = False
-	End Sub
-```
+<snippet id='radgridview-events-validation-block_8-cs' />
+
+<snippet id='radgridview-events-validation-block_8-vb' />
+
 
 In versions prior to R1 2020, the event was firing only when a new row was inserted or edited. In later versions, the event fires each time a GridViewRow gets loaded. This can happen on loaded of RadGridView and also when scrolling the rows. In those situations, you can avoid executing your code defined in the RowValidating event, by setting the __EditOperationType__ property of the event arguments to __None__.
 
  
-```C#
-	private void radGridView_RowValidating(object sender, GridViewRowValidatingEventArgs e)
-	{
-	    if (e.EditOperationType == Telerik.Windows.Controls.GridView.GridViewEditOperationType.None)
-		{
-			return;
-		}
-		else
-		{
-			// execute the validation
-		}   
-	}
-```
-```VB.NET
-	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As GridViewRowValidatingEventArgs)
-	    If e.EditOperationType = Telerik.Windows.Controls.GridView.GridViewEditOperationType.None Then
-			Return
-		Else
-			'execute the validation
-		End If
-	End Sub
-```
+<snippet id='radgridview-events-validation-block_9-cs' />
+
+<snippet id='radgridview-events-validation-block_9-vb' />
+
 
 ## RowValidated Event
 
@@ -224,17 +169,14 @@ The parameters passed to the validated event handler are two:
 You can subscribe to the __RowValidated__ event declaratively or in code-behind like this:        
 
 
-```XAML
-	<telerik:RadGridView RowValidated="radGridView_RowValidated"/>
-```
+<snippet id='radgridview-events-validation-block_10-xaml' />
 
 
-```C#
-	this.radGridView.RowValidated += radGridView_RowValidated;
-```
-```VB.NET
-	AddHandler Me.radGridView.RowValidated, AddressOf radGridView_RowValidated
-```
+
+<snippet id='radgridview-events-validation-block_11-cs' />
+
+<snippet id='radgridview-events-validation-block_11-vb' />
+
 
 ## See Also  
  * [Validating]({%slug gridview-managing-data-validation%})

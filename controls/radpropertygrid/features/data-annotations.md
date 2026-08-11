@@ -28,60 +28,21 @@ First, for the purpose of this article, we will create a new **Employee** class 
 
 __Example 1: Creating the Employee class__
 
-```C#
-	public class Employee
-	{
-	    public string FirstName { get; set; }
-	    public string LastName { get; set; }
-	    public string PhoneNum { get; set; }
-	    public int Salary { get; set; }
-	    public string Occupation { get; set; }
-	    public DateTime StartingDate { get; set; }
-	}
-```
-```VB.NET
-	Public Class Employee
-	    Public Property FirstName() As String
-	    Public Property LastName() As String
-	    Public Property PhoneNum() As String
-	    Public Property Salary() As Integer
-	    Public Property Occupation() As String
-	    Public Property StartingDate() As Date
-	End Class
-```
+<snippet id='radpropertygrid-features-data-annotations-block_1-cs' />
+<snippet id='radpropertygrid-features-data-annotations-block_1-vb' />
 
 The declaration of RadPropertyGrid control inside the Grid:        
 
 __Example 2: Declaring RadPropertyGrid__
 
-```XAML
-	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
-```
+<snippet id='radpropertygrid-features-data-annotations-block_2-xaml' />
 
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to RadPropertyGrid:
 
 __Example 3: Binding Employee instance to RadPropertyGrid__
 
-```C#
-	this.propertyGrid1.Item = new Employee()
-	{
-	    FirstName = "Sarah",
-	    LastName = "Blake",
-	    PhoneNum = "(555) 943-231",
-	    Occupation = "Supplies Manager",
-	    Salary = 3500,
-	    StartingDate = new DateTime(2005, 12, 4)
-	};
-```
-```VB.NET
-	Me.propertyGrid1.Item = New Employee() With {
-	  .FirstName = "Sarah",
-	  .LastName = "Blake",
-	  .Occupation = "Supplied Manager",
-	  .StartingDate = New DateTime(2005, 4, 12),
-	  .Salary = 3500
-	}
-```
+<snippet id='radpropertygrid-features-data-annotations-block_3-cs' />
+<snippet id='radpropertygrid-features-data-annotations-block_3-vb' />
 
 After you run the application you should see the following:
 
@@ -107,28 +68,8 @@ The **Display** attribute specifies localizable strings for data types and membe
 
 __Example 4: Setting Display attribute__
 
-```C#
-	//Rename the StartingDate property to Year in the UI
-	[Display(Name = "Year")]
-	public DateTime StartingDate { get; set; }
-	//Set a description to the FirstName property and categorize it to be from the group "Personal Information"
-	[Display(Description = "Employee's first name.", GroupName = "Personal Information")]
-	public string FirstName { get; set; }
-	//Set a description to the LastName property and categorize it to be from the group "Personal Information"
-	[Display(Description = "Employee's last name.", GroupName = "Personal Information")]
-	public string LastName { get; set; }
-```
-```VB.NET
-	'Rename the StartingDate property to Year in the UI
-	<Display(Name:="Year")>
-	Public Property StartingDate() As Date
-	'Set a description to the FirstName property and categorize it to be from the group "Personal Information"
-	<Display(Description:="Employee's first name.", GroupName:="Personal Information")>
-	Public Property FirstName() As String
-	'Set a description to the LastName property and categorize it to be from the group "Personal Information"
-	<Display(Description:="Employee's last name.", GroupName:="Personal Information")>
-	Public Property LastName() As String
-```
+<snippet id='radpropertygrid-features-data-annotations-block_4-cs' />
+<snippet id='radpropertygrid-features-data-annotations-block_4-vb' />
 
 ## Browsable
 
@@ -136,16 +77,8 @@ The **Browsable** attribute specifies whether a property should be displayed or 
 
 __Example 5: Setting Browsable attribute__
 
-```C#
-	//Hide StartingDate from the UI
-	[Browsable(false)]
-	public DateTime StartingDate { get; set; }
-```
-```VB.NET
-	'Hide StartingDate from the UI
-	<Browsable(False)>
-	Public Property StartingDate() As Date
-```
+<snippet id='radpropertygrid-features-data-annotations-block_5-cs' />
+<snippet id='radpropertygrid-features-data-annotations-block_5-vb' />
 
 ## ReadOnly
 
@@ -153,49 +86,15 @@ The **ReadOnly** attribute specifies whether the property this attribute is boun
 
 __Example 6: Setting ReadOnly attribute__
 
-```C#
-	//Set StartingDate as Read-Only
-	[ReadOnly(true)]
-	public DateTime StartingDate { get; set; }
-```
-```VB.NET
-	'Set StartingDate as Read-Only
-	<[ReadOnly](True)>
-	Public Property StartingDate() As Date
-```
+<snippet id='radpropertygrid-features-data-annotations-block_6-cs' />
+<snippet id='radpropertygrid-features-data-annotations-block_6-vb' />
 
 To see these attributes in action, let's modify the Employee class and see the result in RadPropertGrid.
 
 __Example 7: Modifying sample data__
 
-```C#
-	[Display(Description = "Employee's first name.", GroupName = "Personal Information")]
-	public string FirstName { get; set; }
-	[Display(Description = "Employee's last name.", GroupName = "Personal Information")]
-	public string LastName { get; set; }
-	[Display(Name = "Occupation", GroupName = "Job Description")]
-	public string Occupation { get; set; }
-	[Browsable(false)]
-	public int Salary { get; set; }
-	[Display(Name = "Number", GroupName = "Job Description")]
-	public string PhoneNum { get; set; }
-	[ReadOnly(true)]
-	public DateTime StartingDate { get; set; }
-```
-```VB.NET
-	<Display(Description:="Employee's first name.", GroupName:="Personal Information")>
-	Public Property FirstName() As String
-	<Display(Description:="Employee's last name.", GroupName:="Personal Information")>
-	Public Property LastName() As String
-	<Display(Name:="Occupation", GroupName:="Job Description")>
-	Public Property Occupation() As String
-	<Browsable(False)>
-	Public Property Salary() As Integer
-	<Display(Name:="Number", GroupName:="Job Description")>
-	Public Property PhoneNum() As String
-	<[ReadOnly](True)>
-	Public Property StartingDate() As Date
-```
+<snippet id='radpropertygrid-features-data-annotations-block_7-cs' />
+<snippet id='radpropertygrid-features-data-annotations-block_7-vb' />
 
 Here's the resulting RadPropertyGrid sorted alphabetically and in grouped mode:
 

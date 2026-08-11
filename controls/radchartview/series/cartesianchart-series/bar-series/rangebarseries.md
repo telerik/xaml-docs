@@ -22,29 +22,8 @@ This series is visualized on the screen as separate rectangles representing each
 You can use the definition from __Example 1__ to display a RangeBarSeries.
 
 __Example 1: Declaring a RangeBarSeries in XAML__
-```XAML
-	<telerik:RadCartesianChart Palette="Windows8">
-	<telerik:RadCartesianChart.HorizontalAxis>
-		<telerik:CategoricalAxis/>
-	</telerik:RadCartesianChart.HorizontalAxis>
-	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis />
-	</telerik:RadCartesianChart.VerticalAxis>
-	<telerik:RadCartesianChart.Series>
-		<telerik:RangeBarSeries>
-			<telerik:RangeBarSeries.DataPoints>
-				<telerik:RangeDataPoint Category="January"  High="5" Low="0"/>
-				<telerik:RangeDataPoint Category="February" High="7" Low="2"/>
-				<telerik:RangeDataPoint Category="March" High="6" Low="4"/>
-				<telerik:RangeDataPoint Category="April" High="8" Low="5"/>
-				<telerik:RangeDataPoint Category="May" High="4" Low="3"/>
-				<telerik:RangeDataPoint Category="June" High="9" Low="7"/>
-				<telerik:RangeDataPoint Category="July" High="3" Low="1"/>
-			</telerik:RangeBarSeries.DataPoints>
-		</telerik:RangeBarSeries>
-	</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-rangebarseries-example_1_declaring_a_rangebarseries_in_xaml-xaml' />
+
 
 #### __Figure 1: RangeBarSeries visual appearance__  
 ![Telerik UI for WPF RadChartView RangeBarSeries visual appearance](images/radchartview-series-rangebarseries.png)
@@ -67,26 +46,12 @@ You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properti
 
 __Example 2: Defining the view model__
 
-```C#
-	public class PlotInfo
-    {
-        public string Category { get; set; }
-        public double HighValue { get; set; }
-        public double LowValue { get; set; }
-    }
+<snippet id='radchartview-series-cartesianchart-series-bar-series-rangebarseries-example_2_defining_the_view_model-cs' />
 
-	//.......
-	this.DataContext = new ObservableCollection<PlotInfo>
-	{
-		new PlotInfo() { Category = "January", HighValue = 5, LowValue = 0},
-		//....
-	};
-```		
 
 __Example 3: Specify a RangeBarSeries in XAML__
-```XAML
-	<telerik:RangeBarSeries ItemsSource="{Binding}" HighBinding="HighValue" LowBinding="LowValue" CategoryBinding="Category"/>
-```
+<snippet id='radchartview-series-cartesianchart-series-bar-series-rangebarseries-example_3_specify_a_rangebarseries_in_xaml-xaml' />
+
 	
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

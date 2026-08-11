@@ -25,71 +25,20 @@ The request needs two settings - the route points, defined via the __RoutePoints
 > The BingRestTruckRouteRequest options are described in the [Truck Routing Settings](#truck-routing-settings) section of this article.
 
 __Example 1: Defining RadMap__
-```XAML
-	<telerik:RadMap x:Name="radMap">
-		<telerik:RadMap.Provider>
-			<telerik:BingRestMapProvider x:Name="bingRestMapProvider" 
-										 ApplicationId="Your Bing Maps Application Id" 																				  										
-										 CalculateTruckRouteCompleted="BingRestMapProvider_CalculateTruckRouteCompleted"
-										 CalculateTruckRouteError="BingRestMapProvider_CalculateTruckRouteError"/>
-		</telerik:RadMap.Provider>
-		<telerik:VisualizationLayer Name="routeLayer" />
-	</telerik:RadMap>	
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-truck-routing-block_1-xaml' />
 
 __Example 2: Creating a truck route request__
-```C#	
-	private void RequestTruckRoute()
-	{
-		BingRestTruckRouteRequest request = new BingRestTruckRouteRequest();		
-		request.RoutePoints.Add(new BingRestTruckWaypoint("590 Crane Ave, Pittsburgh, PA"));
-		request.RoutePoints.Add(new BingRestTruckWaypoint("600 Forbes Ave, Pittsburgh, PA"));
-		request.Options.RouteAttributes = BingRestTruckRouteAttribute.RoutePath;            
-		request.Options.VehicleSpec = new BingRestVehicleSpec() { VehicleHazardousMaterials = HazardousMaterial.Flammable };
-
-		this.bingRestMapProvider.CalculateTruckRouteAsync(request);
-	}
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-truck-routing-block_2-cs' />
 
 The response from the BingRestTruckRouteRequest is get via the __CalculateTruckRouteCompleted__ event of BingRestMapProvider.
 
 __Example 3: Collecting the truck route response__
-```C#
-	private void BingRestMapProvider_CalculateTruckRouteCompleted(object sender, BingRestRoutingCompletedEventArgs e)
-	{
-		Telerik.Windows.Controls.DataVisualization.Map.BingRest.Route route = e.Route;
-		if (route != null)
-		{
-			PolylineData routeLine = new PolylineData()
-			{
-				ShapeFill = new MapShapeFill() { Stroke = Brushes.Green, StrokeThickness = 5, },
-				Points = new LocationCollection(),
-			};
-							
-			foreach (double[] coordinatePair in route.RoutePath.Line.Coordinates)
-			{
-				Location point = new Location(coordinatePair[0], coordinatePair[1]);
-				routeLine.Points.Add(point);
-			}
-
-			this.routeLayer.Items.Add(routeLine);
-
-			double[] bbox = e.Route.BoundingBox;
-			LocationRect rect = new LocationRect(new Location(bbox[2], bbox[1]), new Location(bbox[0], bbox[3]));
-			this.radMap.SetView(rect);
-		}
-	}
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-truck-routing-block_3-cs' />
 
 To listen for errors returned by the Bing Maps service, use the __CalculateTruckRouteError__ event of BingRestMapProvider.
 
 __Example 4: Collecting truck route response errors__
-```C#
-	private void BingRestMapProvider_CalculateTruckRouteError(object sender, Telerik.Windows.Controls.Map.BingRestCalculateRouteErrorEventArgs e)
-	{
-		Exception error = e.Error;
-	}
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-truck-routing-block_4-cs' />
 
 #### Figure 1: Route shape representing the route response returned by the truck route API
 ![{{ site.framework_name }} RadMap Route shape representing the route response returned by the truck route API](images/radmap-features-providers-bing-rest-map-provider-truck-routing-0.png)
@@ -123,20 +72,7 @@ The settings can be used via the __Options__ property of __BingRestTruckRouteReq
 An additional setting is the distance unit that can be set via the __DistanceUnit__ property of BingRestTruckRouteRequest.
 
 __Example 5: Set request options__
-```C#	
-	private void RequestTruckRoute()
-	{
-		BingRestTruckRouteRequest request = new BingRestTruckRouteRequest();		
-	
-		request.DistanceUnit = DistanceUnit.Kilometer;	
-		request.Options.RouteAttributes = BingRestTruckRouteAttribute.RoutePath;            
-		request.Options.Heading = 270;
-		request.Options.Avoid = BingRestTruckRouteAvoidance.Tolls;
-		request.Options.VehicleSpec = new BingRestVehicleSpec() { VehicleHazardousMaterials = HazardousMaterial.Flammable };
-		
-		// add RoutePoints and request the route here
-	}
-```
+<snippet id='radmap-features-providers-bing-rest-map-provider-truck-routing-block_5-cs' />
 
 ## See Also
  * [Providers Overview] ({%slug radmap-features-providers%})

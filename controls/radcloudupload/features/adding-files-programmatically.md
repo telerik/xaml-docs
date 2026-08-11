@@ -17,12 +17,10 @@ __RadCloudUpload__ allows you to prepare files for upload in code using the __Ad
 The AddFile method expects a __file stream__ with the file that will be uploaded, along with a __file name__ to indicate the name of the file to be saved. In addition, you can control whether the stream should be automatically closed after the upload finishes or not by passing __true__ as the last parameter of the method (__autoCloseStream__).
 
 __Example 1: Add a file using the RadCloudUpload AddFile method__	
-```C#
-	this.cloudUpload.AddFile(theNameOfTheFileToBeAdded, fileStream, true);
-```
-```VB.NET
-	Me.cloudUpload.AddFile(theNameOfTheFileToBeAdded, fileStream, True);
-```
+<snippet id='radcloudupload-features-adding-files-programmatically-example_1_add_a_file_using_the_radcloudupload_addfile_method-cs' />
+
+<snippet id='radcloudupload-features-adding-files-programmatically-example_1_add_a_file_using_the_radcloudupload_addfile_method-vb' />
+
 
 ## See Also
 * [Providers]({%slug radcloudupload-features-providers%})

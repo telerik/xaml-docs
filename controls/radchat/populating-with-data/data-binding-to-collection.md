@@ -21,72 +21,19 @@ The __MessageConverter__ allows you to use an implementation of the [IMessageCon
 The following example shows how to define custom models and use the converter.
 
 __Example 1: Defining the messages view model__
-```C#
-	public class TextMessageModel
-	{
-		public string Text { get; set; }
-		public Author Author { get; set; }
-		public DateTime CreationDate { get; set; }
-	}
-```
+<snippet id='radchat-populating-with-data-data-binding-to-collection-example_1_defining_the_messages_view_model-cs' />
+
 
 __Example 2: Defining the main view model and populating the data source with data__
-```C#
-	public class MainViewModel
-    {
-        public ObservableCollection<TextMessageModel> Messages { get; set; }
-        public Author CurrentAuthor { get; private set; }
+<snippet id='radchat-populating-with-data-data-binding-to-collection-example_2_defining_the_main_view_model_and_populating_the_data_source_with_data-cs' />
 
-        public MainViewModel()
-        {
-            this.CurrentAuthor = new Author("Martin");
-            this.Messages = new ObservableCollection<TextMessageModel>();
-            
-            var otherAuthor = new Author("Virtual Assistant");
-            this.Messages.Add(new TextMessageModel() { Text = "Hello Martin,", Author = otherAuthor, CreationDate = DateTime.Now });
-            this.Messages.Add(new TextMessageModel() { Text = "I am your Virtual Assistant", Author = otherAuthor, CreationDate = DateTime.Now });
-            this.Messages.Add(new TextMessageModel() { Text = "How can I help you?", Author = otherAuthor, CreationDate = DateTime.Now });
-            
-            this.Messages.Add(new TextMessageModel() { Text = "Hi", Author = this.CurrentAuthor, CreationDate = DateTime.Now.AddMinutes(5) });
-            this.Messages.Add(new TextMessageModel() { Text = "Show me the weather for this week", Author = this.CurrentAuthor, CreationDate = DateTime.Now.AddMinutes(5) });
-        }
-    }
-```
 
 __Example 3: Implementing message converter__
-```C#
-	public class MessageConverter : IMessageConverter
-    {
-		public MessageBase ConvertItem(object item)
-        {
-            var messageModel = (TextMessageModel)item;
-            return new TextMessage(messageModel.Author, messageModel.Text, messageModel.CreationDate);
-        }
+<snippet id='radchat-populating-with-data-data-binding-to-collection-example_3_implementing_message_converter-cs' />
 
-        public object ConvertMessage(MessageBase message)
-        {
-            var textMessage = (TextMessage)message;
-            return new TextMessageModel()
-            { 
-                Author = textMessage.Author, 
-                Text = textMessage.Text,
-                CreationDate = textMessage.CreationDate 
-            };
-        }
-    }
-```
 
 __Example 4: Setting up the RadChat control__
-```XAML
-	  <telerik:RadChat CurrentAuthor="{Binding CurrentAuthor}" DataSource="{Binding Messages}">
-            <telerik:RadChat.DataContext>
-                <local:MainViewModel />
-            </telerik:RadChat.DataContext>
-            <telerik:RadChat.MessageConverter>
-                <local:MessageConverter />
-            </telerik:RadChat.MessageConverter>
-        </telerik:RadChat>
-```
+<snippet id='radchat-populating-with-data-data-binding-to-collection-example_4_setting_up_the_radchat_control-xaml' />
 
 ![{{ site.framework_name }} RadChat with Data-Bound Messages](images/chat-populating-with-data-binding-to-collection-0.png)
 

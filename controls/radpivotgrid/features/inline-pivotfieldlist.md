@@ -16,19 +16,13 @@ As of **R3 2022**, the RadPivotFieldList can also be displayed inline in the Rad
 >	*xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"*
 
 __Show pivot field list inline__  
-```XAML
-	<pivot:RadPivotGrid x:Name="pivotGrid" pivot:FieldListBehavior.ShowInline="True" />
-```
+<snippet id='radpivotgrid-features-inline-pivotfieldlist-block_1-xaml' />
 
 __Show pivot field list inline__  
-```C#
-	FieldListBehavior.SetShowInline(pivotGrid, true);
-```
+<snippet id='radpivotgrid-features-inline-pivotfieldlist-block_2-cs' />
 
 __Show pivot field list inline__  
-```VB
-	FieldListBehavior.SetShowInline(pivotGrid, true)
-```
+<snippet id='radpivotgrid-features-inline-pivotfieldlist-block_3-vb' />
 
 ![Inline Pivot Field List](images/inlinepivotfieldlist-0.png)
 

@@ -26,17 +26,11 @@ This article describes the selection API exposed by __RadTreeView__. The control
 You can select a __RadTreeViewItem__ by setting its __IsSelected__ to True.
 
 __Example 1: Setting IsSelected in XAML__  
-```XAML
-	<telerik:RadTreeViewItem x:Name="radTreeViewItem" IsSelected="True"/>
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_1-xaml' />
 
 __Example 2: Setting IsSelected in code__  
-```C#
-	radTreeViewItem.IsSelected = true;
-```
-```VB.NET
-	radTreeViewItem.IsSelected = True
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_2-cs' />
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_3-vb' />
 
 >Note that the code snippets above cover a scenario when the __RadTreeView__ is [populated declaratively]({%slug radtreeview-populating-with-data-declaratively%}) (with static data). If you want to bind the __IsSelected__ property to a property of a custom business object, check out the [Binding the IsSelected Property](#binding-the-isselected-property) section at the end of this topic.
 
@@ -47,22 +41,14 @@ Another way to select a treeview item programmatically is to add it in the __Sel
 * If __RadTreeView__ is populated in XAML (with static data), then the __SelectedItems__ collection will contain instances of the __RadTreeViewItem__ class.
 
 	__Example 3: Adding RadTreeViewItem in the SelectedItems collection__  
-	```C#
-		radTreeView.SelectedItems.Add( radTreeViewItem );
-	```
-	```VB.NET
-		radTreeView.SelectedItems.Add(radTreeViewItem)
-	```
+	<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_4-cs' />
+	<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_5-vb' />
 
 * If __RadTreeView__ is [data bound to a business object]({%slug radtreeview-populating-with-data-data-binding-to-object%}), then the __SelectedItems__ collection will contain instances of the custom business object.
 
 	__Example 4: Adding a business object in the SelectedItems collection__  
-	```C#
-		radTreeView.SelectedItems.Add( myViewModel );
-	```
-	```VB.NET
-		radTreeView.SelectedItems.Add(myViewModel)
-	```
+	<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_6-cs' />
+	<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_7-vb' />
 
 ## Changing the Selection Mode
 
@@ -77,22 +63,11 @@ The __RadTreeView__ API allows you to change the selection mode. You can do that
 	>important Until Q3 2015 __Multiple__ and __Extended__ SelectionModes worked the same way.  
 
 __Example 5: Setting SelectionMode in XAML__  
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" SelectionMode="Multiple">
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_8-xaml' />
 	
 __Example 6: Setting SelectionMode in code__  
-```C#
-	private void ChangeSelectionMode()
-	{
-		radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple;
-	}
-```
-```VB.NET
-	Private Sub ChangeSelectionMode()
-		radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple
-	End Sub
-```	
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_9-cs' />
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_10-vb' />
 
 As you can see in __Figure 1__, when the SelectionMode is set to Multiple you are able to select more than one item.
 
@@ -131,30 +106,13 @@ The SelectedItem and SelectedItems properties will contain different objects dep
 __RadTreeView__ and __RadTreeViewItem__ classes have several events for managing the selection process.		
 
 __Example 7: RadTreeView selection events__  
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView"
-	        PreviewSelected="radTreeView_PreviewSelected"
-	        Selected="radTreeView_Selected"
-	        PreviewUnselected="radTreeView_PreviewUnselected"
-	        Unselected="radTreeView_Unselected"
-			PreviewSelectionChanged="radTreeView_PreviewSelectionChanged"
-	        SelectionChanged="radTreeView_SelectionChanged"/>
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_11-xaml' />
 
 The __PreviewSelected__ event occurs when the treeview item is about to be selected. The __Selected__ event is fired when the treeview item is already selected. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__. In the event handlers you can place some code.
 
 __Example 8: Setting the FontSize of the selected RadTreeViewItem__  
-```C#
-	private void radTreeView_Selected( object sender, RadRoutedEventArgs e )
-	{
-	    ( e.Source as RadTreeViewItem ).FontSize = 14;
-	}
-```
-```VB.NET
-	Private Sub radTreeView_Selected(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
-	    TryCast(e.Source, RadTreeViewItem).FontSize = 14
-	End Sub
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_12-cs' />
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_13-vb' />
 
 >Note that the e.Source property in __Example 8__ from the event arguments will have a different value depending on if the RadTreeView is bound. In __Example 8__ the e.Source property will be of type RadTreeViewitem if the RadTreeView is not data-bound (the RadTreeViewItem is declared in XAML or added in code). When we bind the control the e.Source property will be the RadTreeView. In this case, you can utilize the PreviewSelectionChanged and SelectionChanged events of the RadTreeView, explained below.
 
@@ -163,35 +121,8 @@ The __PreviewUnselected__ event is fired just before the currently selected item
 In order to handle a change in the selection you can use the __PreviewSelectionChanged__ or the __SelectionChanged__ event. They are available only in the __RadTreeView__ class. The events are fired each time an item or multiple items are added/removed from the selection. The type of the passed event arguments for the event is __SelectionChangedEventArgs__.
 
 __Example 9: Working with the SelectionChanged event arguments__  
-```C#
-	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
-	{
-	    // Get a reference to the treeview
-	    Telerik.Windows.Controls.RadTreeView treeView = sender as Telerik.Windows.Controls.RadTreeView;
-	
-	    // Get the currently selected items
-	    ObservableCollection<Object> selectedItems = treeView.SelectedItems;
-	    // Get the newly added items to the collection
-	    IList addedItems = e.AddedItems;
-	    // Get the removed items from the collection
-	    IList removedItems = e.RemovedItems;
-	}
-```
-```VB.NET
-	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
-	    ' Get a reference to the treeview '
-	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
-	
-	    ' Get the currently selected items '
-	    Dim selectedItems As ObservableCollection(Of [Object]) = treeView.SelectedItems
-	
-	    ' Get the newly added items to the collection '
-	    Dim addedItems As IList = e.AddedItems
-	
-	    ' Get the removed items from the collection '
-	    Dim removedItems As IList = e.RemovedItems
-	End Sub
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_14-cs' />
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_15-vb' />
 	
 > Four out of the six events (__PreviewSelected, Selected, PreviewUnselected__ and __Unselected__) are exposed by both __RadTreeView__ and __RadTreeViewItem__ classes. While the __SelectionChanged__ and __PreviewSelectionChanged__ events are available only in the __RadTreeView__ class.
 
@@ -209,58 +140,11 @@ The __SelectedItem__ represents an object from the __Items__ collection and the 
 Imagine that you have a business object named __MyViewModel__, with three members (properties): __Title__, __Price__ and __Children__. And a __RadTreeView__ that is data bound to a list of __MyViewModel__ objects. The __Title__ property is the property that is displayed. The __Price__ is set to the __SelectedValuePath__ property.
 
 __Example 10: Defining business object's model__ 
-```C#
-	private class MyViewModel
-	{
-	    public string Title { get; set; }
-	    public string Price { get; set; }
-	    public IList<MyViewModel> Children { get; set; }
-	}
-```
-```VB.NET
-	Private Class MyViewModel
-	Private _Title As String
-	    Public Property Title() As String
-	        Get
-	            Return _Title
-	        End Get
-	        Set(ByVal value As String)
-	            _Title = value
-	        End Set
-	    End Property
-	
-	Private _Price As String
-	    Public Property Price() As String
-	        Get
-	            Return _Price
-	        End Get
-	        Set(ByVal value As String)
-	            _Price = value
-	        End Set
-	    End Property
-	
-	Private _Children As IList(Of MyViewModel)
-	    Public Property Children() As IList(Of MyViewModel)
-	        Get
-	            Return _Children
-	        End Get
-	        Set(ByVal value As IList(Of MyViewModel))
-	            _Children = value
-	        End Set
-	    End Property
-	End Class
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_16-cs' />
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_17-vb' />
 
 __Example 11: Setting SelectedValuePath__  
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" SelectedValuePath="Price">
-	    <telerik:RadTreeView.ItemTemplate>
-	        <HierarchicalDataTemplate ItemsSource="{Binding RelatedItems}">
-	            <TextBlock Text="{Binding Title}" />
-	        </HierarchicalDataTemplate>
-	    </telerik:RadTreeView.ItemTemplate>
-	</telerik:RadTreeView>
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_18-xaml' />
 
 When you select a __MyViewModel.Title__ from the __RadTreeView__, the __SelectedItem__ property returns the	 __MyViewModel__ data item that corresponds to the selected __Title__. However, because the __SelectedValuePath__ of this __RadTreeView__ is set to the __MyViewModel__'s __Price__ property, the __SelectedValue__ will return the __Price__ property of the __MyViewModel__ business object (e.g. 101.56$).		
 
@@ -271,13 +155,7 @@ A very common scenario is to have the __RadTreeViewItem__'s __IsSelected__ prope
 Let's use the following example. There is a business object that defines a boolean property named *IsSelected* and we want to bind it to the __IsSelected__ property of __RadTreeViewItem__. In this case we can define a Style and set its TargetType to RadTreeViewItem. And then bind the IsSelected property as demonstrated in __Example 12__.
 
 __Example 12: Setting ItemContainerStyle__  
-```XAML
-	<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
-	    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}"/>
-	</Style>
-	<!-- -->
-	<telerik:RadTreeView ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_19-xaml' />
 
 If you remove the x:Key setting of the style, it will become an implicit style. This means that it will be applied globally to all RadTreeViewItems in the scope where the style is defined. In this case you will also need to remove the ItemContainerStyle setting.
 
@@ -286,13 +164,7 @@ If you remove the x:Key setting of the style, it will become an implicit style. 
 __RadTreeViewItem__ provides the option to control whether the item can be selected through the UI or not. This is done through its __IsSelectable__ property. Similarly to the previous example, the __IsSelectable__ property can be set through a Style targeting RadTreeViewItem. 
 
 __Example 13: Binding the IsSelectable property__  
-```XAML
-	<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
-	    <Setter Property="IsSelectable" Value="{Binding IsSelectable}"/>
-	</Style>
-	<!-- -->
-	<telerik:RadTreeView ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_20-xaml' />
 
 > The __IsSelectable__ property is available since the __R3 2018__ version.
 
@@ -301,9 +173,7 @@ __Example 13: Binding the IsSelectable property__
 RadTreeView exposes the `PerformSelectionOnMouseUp` property that allows you to specify if the selection will be executed on the `MouseLeftButtonUp` or the `MoseLeftButtonDown` event. The default value of this property is __False__. Setting the PerformSelectionOnMouseUp property to __True__ will execute the selection logic on the MouseLeftButtonUp event.
 
 __Example 14: Setting the PerformSelectionOnMouseUp property__
-```XAML
-	<telerik:RadTreeView PerformSelectionOnMouseUp="True"/>
-```
+<snippet id='radtreeview-features-feautres-treeviewitem-selection-block_21-xaml' />
 		
 ## See Also  
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})

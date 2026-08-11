@@ -17,16 +17,7 @@ The __TypingIndicator__ functionality of the Conversational UI can be used to in
 * __TypingIndicatorIcon__: An ImageSource property through which a custom icon for the __TypingIndicator__ can be applied.
 
 __Example 1: Setting the TypingIndicator__
-```C#
-var textMessage = new TextMessage(this.currentAuthor, "Hello", "sent");
-textMessage.InlineViewModel.StatusVisibility = Visibility.Visible;
-
-this.chat.AddMessage(textMessage);
-
-this.chat.TypingIndicatorText = this.otherAuthor.Name + " is typing...";
-this.chat.TypingIndicatorVisibility = Visibility.Visible;
-this.chat.TypingIndicatorIcon = new BitmapImage(new Uri("/Images/PeterJohnson.jpeg", UriKind.RelativeOrAbsolute));
-```
+<snippet id='radchat-features-typing-indicator-example_1_setting_the_typingindicator-cs' />
 
 Setting the __TypingIndicator__ in such manner will have the following result.
 

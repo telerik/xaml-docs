@@ -41,9 +41,7 @@ You can add __Conversational UI__ manually by writing the XAML code in __Example
 
 __Example 1: Adding RadChat in XAML__
 
-```XAML
-<telerik:RadChat x:Name="chat" />
-```
+<snippet id='radchat-getting-started-getting-started-example_1_adding_radchat_in_xaml-xaml' />
 
 Running the application at this state will result in an empty chat.
 
@@ -57,44 +55,22 @@ Two authors will be defined for this example. Note, that the __CurrentAuthor__ p
 
 __Adding Authors to RadChat__
 
-```C#
-public partial class MainWindow : Window
-{
-	private Author currentAuthor;
-	private Author otherAuthor;
+<snippet id='radchat-getting-started-getting-started-example_3_adding_authors_to_radchat-cs' />
 
-	public MainWindow()
-	{
-		InitializeComponent();
-
-		currentAuthor = new Author("Peter");
-		otherAuthor = new Author("Steven");
-		this.chat.CurrentAuthor = currentAuthor;
-	}
-}
-```
+<snippet id='radchat-getting-started-getting-started-example_3_adding_authors_to_radchat-vb' />
 
 ## Handling the Sent Message
 
 The user's input can be handled by hooking up to the __SendMessage__ event of __RadChat__. The event arguments are of type __RoutedEventArgs__ which are extended by the __Message__ property.
 
 __Subscribing to the SendMessage event__
-```C#
-<telerik:RadChat x:Name="chat" SendMessage="RadChat_SendMessage" />
-```
+<snippet id='radchat-getting-started-getting-started-example_4_subscribing_to_the_sendmessage_event-cs' />
 
 __SendMessage event handler__
 
-```C#
-private void RadChat_SendMessage(object sender, SendMessageEventArgs e)
-{
-	// We will handle the event in order to add a new message manually
-	e.Handled = true;
+<snippet id='radchat-getting-started-getting-started-example_5_sendmessage_event_handler-cs' />
 
-	var updatedMessageText = "[Updated from event handler] " + (e.Message as TextMessage).Text;
-	this.chat.AddMessage(this.chat.CurrentAuthor, updatedMessageText);
-}
-```
+<snippet id='radchat-getting-started-getting-started-example_5_sendmessage_event_handler-vb' />
 
 This setup will have the following result.
 

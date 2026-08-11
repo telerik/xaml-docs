@@ -24,39 +24,12 @@ __DoubleGroupDescription__ is used when you want to group your data by numeric p
 
 
 
-```XAML
-	<pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-	    <pivot:DoubleGroupDescription PropertyName="Quantity" />
-		<pivot:DoubleGroupDescription PropertyName="Quantity" Step="200" />
-	</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-doublegroupdescription-block_1-xaml' />
 
 
 
-```C#
-	DoubleGroupDescription doubleGroupDescription1 = new DoubleGroupDescription();
-	doubleGroupDescription1.PropertyName = "Quantity";
-
-	DoubleGroupDescription doubleGroupDescription2 = new DoubleGroupDescription();
-	doubleGroupDescription2.PropertyName = "Quantity";
-	doubleGroupDescription2.Step = 200;
-
-	var dataProvider = new LocalDataSourceProvider();
-	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription1);
-	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription2);
-```
-```VB.NET
-	Dim doubleGroupDescription1 As New DoubleGroupDescription()
-	doubleGroupDescription1.PropertyName = "Quantity"
-	
-	Dim doubleGroupDescription2 As New DoubleGroupDescription()
-	doubleGroupDescription2.PropertyName = "Quantity"
-	doubleGroupDescription2.Step = 200
-	
-	Dim dataProvider = New LocalDataSourceProvider()
-	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription1)
-	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription2)
-```
+<snippet id='radpivotgrid-features-localdatasourceprovider-doublegroupdescription-block_2-cs' />
+<snippet id='radpivotgrid-features-localdatasourceprovider-doublegroupdescription-block_2-vb' />
 
 >You may also create a *PropertyGroupDescription* instead of *DoubleGroupDescription* - this way the numeric data will be treated as a string and will be grouped and sorted as such. However by using *PropertyGroupDescription* you will loose the grouping interval feature of the *DoubleGroupDescription* (the *Step* property).
 

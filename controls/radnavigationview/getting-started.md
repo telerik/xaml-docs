@@ -35,39 +35,14 @@ If you are not using NuGet packages, you can add a reference to the following as
 __Example 1__ demonstrates how you can define a RadNavigationView in xaml.
 
 __Example 1: Defining RadNavigationView__
-```XAML
-    <telerik:RadNavigationView x:Name="navigationView"  />
-```
+<snippet id='radnavigationview-getting-started-block_1-xaml' />
 
 ## Populating with Items
 
 Populate the control with items by adding RadNavigationViewItems to its Items collection:
 
 __Example 2: Populating with Items in xaml__
-```XAML
-    <telerik:RadNavigationView x:Name="navigationView" PaneHeader="Header">
-        <telerik:RadNavigationView.Items>
-            <telerik:RadNavigationViewItem Content="Bookmarks">
-                <telerik:RadNavigationViewItem.Icon>
-                    <telerik:RadGlyph Glyph="&#xe303;" FontSize="16"/>
-                </telerik:RadNavigationViewItem.Icon>
-            </telerik:RadNavigationViewItem>
-            <telerik:RadNavigationViewItem Content="Favorites">
-                <telerik:RadNavigationViewItem.Icon>
-                    <telerik:RadGlyph Glyph="&#xe301;" FontSize="16"/>
-                </telerik:RadNavigationViewItem.Icon>
-            </telerik:RadNavigationViewItem>
-            <telerik:RadNavigationViewItem Content="Files">
-                <telerik:RadNavigationViewItem.Icon>
-                    <telerik:RadGlyph Glyph="&#xe901;" FontSize="16"/>
-                </telerik:RadNavigationViewItem.Icon>
-            </telerik:RadNavigationViewItem>
-        </telerik:RadNavigationView.Items>
-        <telerik:RadNavigationView.Content>
-            <TextBlock Text="Content" Foreground="Black" Margin="5"/>
-        </telerik:RadNavigationView.Content>
-    </telerik:RadNavigationView>
-```
+<snippet id='radnavigationview-getting-started-block_2-xaml' />
 
 Another way to populate RadNavigationView with items is to use data binding. See the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article for details.
 
@@ -81,17 +56,11 @@ Another way to populate RadNavigationView with items is to use data binding. See
 By default, users can open or close the NavigationPane that hosts the RadNavigationViewItems by clicking the RadToggleButton. You can manage the state of the control programmatically by setting the __IsPaneOpen__ property of the __RadNavigationView__. This is demonstrated in __Examples 3 and 4__:
 
 __Example 3: Setting the IsPaneOpen property in xaml__
-```XAML
-     <telerik:RadNavigationView x:Name="navigationView" IsPaneOpen="True" />
-```
+<snippet id='radnavigationview-getting-started-block_3-xaml' />
 
 __Example 4: Setting the IsPaneOpen property in code__
-```C#
-    this.navigationView.IsPaneOpen = true;
-```
-```VB.NET
-    Me.navigationView.IsPaneOpen = True
-```
+<snippet id='radnavigationview-getting-started-block_4-cs' />
+<snippet id='radnavigationview-getting-started-block_4-vb' />
 
 ## Changing the Width of the Navigation Pane
 
@@ -102,30 +71,7 @@ __Example 4: Setting the IsPaneOpen property in code__
 __Example 5__ demonstrates how you can set the  property in order to increase the default width when the navigation pane is closed.
 
 __Example 5: Setting the CompactPaneWidth property__
-```XAML
-     <telerik:RadNavigationView x:Name="navigationView" PaneHeader="Header" CompactPaneWidth="150">
-        <telerik:RadNavigationView.Items>
-            <telerik:RadNavigationViewItem Content="Bookmarks">
-                <telerik:RadNavigationViewItem.Icon>
-                    <telerik:RadGlyph Glyph="&#xe303;" FontSize="16"/>
-                </telerik:RadNavigationViewItem.Icon>
-            </telerik:RadNavigationViewItem>
-            <telerik:RadNavigationViewItem Content="Favorites">
-                <telerik:RadNavigationViewItem.Icon>
-                    <telerik:RadGlyph Glyph="&#xe301;" FontSize="16"/>
-                </telerik:RadNavigationViewItem.Icon>
-            </telerik:RadNavigationViewItem>
-            <telerik:RadNavigationViewItem Content="Files">
-                <telerik:RadNavigationViewItem.Icon>
-                    <telerik:RadGlyph Glyph="&#xe901;" FontSize="16"/>
-                </telerik:RadNavigationViewItem.Icon>
-            </telerik:RadNavigationViewItem>
-        </telerik:RadNavigationView.Items>
-        <telerik:RadNavigationView.Content>
-            <TextBlock Text="My Content" Foreground="Black" Margin="5"/>
-        </telerik:RadNavigationView.Content>
-    </telerik:RadNavigationView>
-```
+<snippet id='radnavigationview-getting-started-block_5-xaml' />
 
 #### __Figure 2: Result from Example 5 in the Office 2016 theme__
 ![RadNavigationView with CompactPaneWidth set](images/NavigationView_CompactPaneWidth.png)
@@ -170,17 +116,7 @@ To change the theme, you can follow the steps below:
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 __Example 3: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
+<snippet id='radnavigationview-getting-started-block_6-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
@@ -207,4 +143,3 @@ __Figure 3__ shows a RadNavigationView with the **Windows8** theme applied.
 * [DataBinding]({%slug radnavigationview-populating-with-data-databinding%})
 * [Display Mode]({%slug radnavigationview-display-mode%})
 * [Icon and IconTemplate]({%slug radnavigationview-icon-and-icontemplate%})
-

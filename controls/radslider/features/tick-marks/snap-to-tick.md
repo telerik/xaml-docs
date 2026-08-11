@@ -21,12 +21,7 @@ When the __IsSnapToTickEnabled__ property is set to __True__ and you drag the th
 
 
 
-```XAML
-	<telerik:RadSlider IsSnapToTickEnabled="True" 
-	                   Maximum="10"
-	                   TickFrequency="2"
-	                   TickPlacement="BottomRight" />
-```
+<snippet id='radslider-features-tick-marks-snap-to-tick-block_1-xaml' />
 
 
 
@@ -34,13 +29,7 @@ When the __IsSnapToTickEnabled__ property is set to __True__ and you drag the th
 
 
 
-```XAML
-	<telerik:RadSlider HandlesVisibility="Visible" 
-	                   IsSnapToTickEnabled="True"
-	                   Maximum="10"
-	                   TickPlacement="BottomRight"
-	                   Ticks="2,4,6" />
-```
+<snippet id='radslider-features-tick-marks-snap-to-tick-block_2-xaml' />
 
 
 

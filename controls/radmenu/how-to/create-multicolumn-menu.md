@@ -16,35 +16,13 @@ We are going to use a __RadMenuGroupItem__ for the dropdown and set an IconTempl
 
 
 
-```XAML
-	<Style x:Key="MultiColumnMenuItemStyle" TargetType="telerik:RadMenuGroupItem">
-	    <Setter Property="ItemsPanel">
-	        <Setter.Value>
-	            <ItemsPanelTemplate >
-	                <telerik:RadWrapPanel MaxHeight="350" Orientation="Vertical" />
-	            </ItemsPanelTemplate>
-	        </Setter.Value>
-	    </Setter>
-	</Style>
-```
+<snippet id='radmenu-how-to-create-multicolumn-menu-block_1-xaml' />
 
 Apply the created style to the __RadMenuGroupItem__ items by setting it to the __ItemContainerStyle__ property of the desired top-level __RadMenuItem__.
 
 
 
-```XAML
-	<telerik:RadMenu>
-	    <telerik:RadMenuItem Header="File" />
-	    <telerik:RadMenuItem Header="Options" ItemContainerStyle="{StaticResource MultiColumnMenuItemStyle}">
-	        <telerik:RadMenuGroupItem>
-	            <telerik:RadMenuItem Header="Options 1" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="35" Height="35" />
-	            <telerik:RadMenuItem Header="Options 2" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="35" Height="35" />
-	            <!-- More Menu Items -->
-	            <telerik:RadMenuItem Header="Options 30" IconTemplate="{StaticResource IconTemplate}" IconColumnWidth="35" Height="35" />
-	        </telerik:RadMenuGroupItem>
-	    </telerik:RadMenuItem>
-	</telerik:RadMenu>
-```
+<snippet id='radmenu-how-to-create-multicolumn-menu-block_2-xaml' />
 
 Here is a snapshot of the result.
 

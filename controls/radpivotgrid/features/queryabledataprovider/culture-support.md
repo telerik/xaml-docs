@@ -18,20 +18,12 @@ You can easily apply the required culture by setting the __Culture__ property of
 
 __Example 1: Setting the Culture in xaml__
 
-```XAML
-	<pivot:QueryableDataProvider x:Key="LocalDataProvider" Culture="en-US">
-		...
-	</pivot:QueryableDataProvider>
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-culture-support-block_1-xaml' />
 
 __Example 2: Setting the Culture in code__
 
-```C#
-	var dataProvider = new QueryableDataProvider { Culture = new CultureInfo("en-US") };
-```
-```VB.NET
-	Dim dataProvider = New QueryableDataProvider With {.Culture = New CultureInfo("en-US")}
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-culture-support-block_2-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-culture-support-block_2-vb' />
 
 >By default when there isn't any Culture set the __QueryableDataProvider__ will use __InvariantCulture__ to display the data. In this case the currency symbol from the CurrentCulture will be displayed.
 
@@ -41,20 +33,8 @@ If you would like to change the Culture at runtime you will need to manualy rese
 
 __Example 3: Changing the Culture at Runtime__
 
-```C#
-	var provider = this.Resources["QueryableProvider"] as QueryableDataProvider;
-    var source = provider.Source;
-    provider.Source = null;
-    provider.Culture = new CultureInfo("fr-FR");
-    provider.Source = source;
-```
-```VB.NET
-	Dim provider = TryCast(Me.Resources("QueryableProvider"), QueryableDataProvider)
-	Dim source = provider.Source
-	provider.Source = Nothing
-	provider.Culture = New CultureInfo("fr-FR")
-	provider.Source = source
-```
+<snippet id='radpivotgrid-features-queryabledataprovider-culture-support-block_3-cs' />
+<snippet id='radpivotgrid-features-queryabledataprovider-culture-support-block_3-vb' />
 
 ## See Also
 

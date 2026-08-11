@@ -31,46 +31,10 @@ The class provides the following useful properties:
 
 __Example 1: Style exported XLSX/PDF document__
 
-```C#
-	private void ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
-	{
-	    if (e.Element == ExportElement.HeaderRow)
-	    {
-	        (e.VisualParameters as GridViewDocumentVisualExportParameters).Style = new CellSelectionStyle()
-	        {
-	            FontSize = 20,
-	            IsBold = true,
-	            Fill = new PatternFill(PatternType.Solid, Colors.Blue, Colors.Blue),
-	            ForeColor = new ThemableColor(Colors.White)
-	        };
-	    }
-	    else if (e.Element == ExportElement.Row)
-	    {
-	        (e.VisualParameters as GridViewDocumentVisualExportParameters).Style = new CellSelectionStyle()
-	        {
-	            Fill = new PatternFill(PatternType.Solid, Colors.White, Colors.White),
-	            ForeColor = new ThemableColor(Colors.Black)
-	        };
-	    }
-	}
-```
-```VB.NET
-	Private Sub ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewElementExportingToDocumentEventArgs)
-	    If e.Element = ExportElement.HeaderRow Then
-	        TryCast(e.VisualParameters, GridViewDocumentVisualExportParameters).Style = New CellSelectionStyle() With {
-	            .FontSize = 20,
-	            .IsBold = True,
-	            .Fill = New PatternFill(PatternType.Solid, Colors.Blue, Colors.Blue),
-	            .ForeColor = New ThemableColor(Colors.White)
-	        }
-	    ElseIf e.Element = ExportElement.Row Then
-	        TryCast(e.VisualParameters, GridViewDocumentVisualExportParameters).Style = New CellSelectionStyle() With {
-	            .Fill = New PatternFill(PatternType.Solid, Colors.White, Colors.White),
-	            .ForeColor = New ThemableColor(Colors.Black)
-	        }
-	    End If
-	End Sub
-```
+<snippet id='radgridview-export-how-to-style-exported-documents-example_1_style_exported_xlsx_pdf_document-cs' />
+
+<snippet id='radgridview-export-how-to-style-exported-documents-example_1_style_exported_xlsx_pdf_document-vb' />
+
 
 ## See Also
 

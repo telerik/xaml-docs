@@ -15,9 +15,8 @@ As of Q1 2016, we've introduced the **ShouldRespectIEditableObject** property. T
 
 __Example 1: Setting ShouldRespectIEditableObject__
 
-```XAML
-	<telerik:RadGridView Name="gridView" ShouldRespectIEditableObject="False" />
-```
+<snippet id='radgridview-managing-data-how-to-disable-ieditableobject-support-example_1_setting_shouldrespectieditableobject-xaml' />
+
 
 ## See Also
 

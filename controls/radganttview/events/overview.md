@@ -17,22 +17,10 @@ __RadGanttView__ raises the following events, when a task is edited through the 
 * __TaskEditing__: Occurs when the task editing is initiated through the UI. __Example 1__ demonstrates how you can handle the event in order to cancel the editing based on a specific condition.
 
 	__Example 1: Canceling the editing of a task__
-	```C#
-		private void GanttView_TaskEditing(object sender, Telerik.Windows.Controls.GanttView.TaskEditingEventArgs e)
-        {
-            if (your condition here)
-			{
-				e.Cancel = true;
-			}
-        }
-	```
-	```VB.NET
-		Private Sub GanttView_TaskEditing(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GanttView.TaskEditingEventArgs)
-			If your condition here Then
-				e.Cancel = True
-			End If
-		End Sub
-	```
+	<snippet id='radganttview-events-overview-example_1_canceling_the_editing_of_a_task-cs' />
+
+	<snippet id='radganttview-events-overview-example_1_canceling_the_editing_of_a_task-vb' />
+
 
 * __TaskSaving__: Occurs when an edit operation is being committed through the UI. Please, note that you can handle this event to cancel the editing similarly to __Example 1__.
 
@@ -49,19 +37,10 @@ __RadGanttView__ raises the following events, when a task is edited through the 
 	* A __TaskEditedEventArgs__ object. It contains the task that has been edited.
 
 	__Example 2: Show Task duration after it has been edited__
-	```C#
-		private void GanttView_TaskEdited(object sender, Telerik.Windows.Controls.GanttView.TaskEditedEventArgs e)
-        {
-            var durationAfterEditing = e.Task.Duration;
-            MessageBox.Show($"The duration after editing is - {durationAfterEditing}");
-        }
-	```
-	```VB.NET
-		Private Sub GanttView_TaskEdited(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GanttView.TaskEditedEventArgs)
-			Dim durationAfterEditing = e.Task.Duration
-			MessageBox.Show($"The duration after editing is - {durationAfterEditing}")
-		End Sub
-	```
+	<snippet id='radganttview-events-overview-example_2_show_task_duration_after_it_has_been_edited-cs' />
+
+	<snippet id='radganttview-events-overview-example_2_show_task_duration_after_it_has_been_edited-vb' />
+
 
 ## See Also
 

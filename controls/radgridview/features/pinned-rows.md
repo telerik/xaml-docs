@@ -41,17 +41,14 @@ RadGridView's **PinnedRowsPosition** property lets you determine where the pinne
 **Example 1** shows that you can set the property either declaratively or at runtime, like this:
 
 __Example 1: Setting the PinnedRowsPosition property__
-```XAML
-	<telerik:RadGridView PinnedRowsPosition="Top" />
-```
+<snippet id='radgridview-features-pinned-rows-example_1_setting_the_pinnedrowsposition_property-xaml' />
+
 
 __Example 1: Setting the PinnedRowsPosition property__
-```C#
-	this.RadGridView.PinnedRowsPosition = GridViewPinnedRowsPosition.Top;
-```
-```VB.NET
-	Me.RadGridView.PinnedRowsPosition = GridViewPinnedRowsPosition.Top
-```
+<snippet id='radgridview-features-pinned-rows-example_1_setting_the_pinnedrowsposition_property-cs' />
+
+<snippet id='radgridview-features-pinned-rows-example_1_setting_the_pinnedrowsposition_property-vb' />
+
 
 If the PinnedRowsPosition property is set to either Top or Bottom, a pin button will appear on hovering over the [row indicator]({%slug gridview-customizing-rows%}).
 
@@ -66,11 +63,8 @@ Pressing the button will pin the respective row. Clicking on it again will remov
 Another way to allow your users to pin rows with the click of a button is to define a **GridViewPinRowColumn**, which enables pinning and unpinning of the rows.
 
 __Example 2: Defining a GridViewPinRowColumn__
-```XAML
-	<telerik:RadGridView.Columns>
-    	<telerik:GridViewPinRowColumn />
-	</telerik:RadGridView.Columns>
-```
+<snippet id='radgridview-features-pinned-rows-example_2_defining_a_gridviewpinrowcolumn-xaml' />
+
 
 #### __Figure 2: Pinning rows from the GridViewPinRowColumn__
 
@@ -97,14 +91,10 @@ Filtering RadGridView displays all items (along with the pinned ones) in the fil
 The **TogglePinnedRowState Command** toggles a row's **IsPinned** property. It takes as parameters the item to pin and the target RadGridView to pin that item to.
 
 __Example 3: Using the TogglePinnedRowState Command__
-```C#
-	var togglePinnedStateCommand = RadGridViewCommands.TogglePinnedRowState as RoutedUICommand;
-    togglePinnedStateCommand.Execute(this.RadGridView.Items[0], this.RadGridView); 
-```
-```VB.NET
-	Dim togglePinnedStateCommand = TryCast(RadGridViewCommands.TogglePinnedRowState, RoutedUICommand)
-    togglePinnedStateCommand.Execute(Me.RadGridView.Items(0), Me.RadGridView)
-```
+<snippet id='radgridview-features-pinned-rows-example_3_using_the_togglepinnedrowstate_command-cs' />
+
+<snippet id='radgridview-features-pinned-rows-example_3_using_the_togglepinnedrowstate_command-vb' />
+
 	
 ## See Also
 * [Defining Columns]({%slug gridview-columns-defining-columns%})

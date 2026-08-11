@@ -38,17 +38,7 @@ Here is an example of an __ImageInline__ element used in XAML at design time.
 
 
 
-```XAML
-	<telerik:RadRichTextBox x:Name="radRichTextBox" Height="500">
-	    <telerik:RadDocument>
-	        <telerik:Section>
-	            <telerik:Paragraph>
-	                <telerik:ImageInline UriSource="/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png" Width="236" Height="50" />
-	             </telerik:Paragraph>
-	        </telerik:Section>
-	    </telerik:RadDocument>
-	</telerik:RadRichTextBox>
-```
+<snippet id='radrichtextbox-document-elements-features-inlineimage-block_1-xaml' />
 
 ## Add in Code Behind
 
@@ -56,27 +46,8 @@ Here is an example of how to add an __ImageInline__ element in the code behind.
 
 
 
-```C#	
-	Section section = new Section();
-	Paragraph paragraph = new Paragraph();
-	Stream stream = Application.GetResourceStream(new Uri(@"/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream;
-	Size size = new Size(236, 50);
-	ImageInline image = new ImageInline(stream, size, "png");
-	paragraph.Inlines.Add(image);
-	section.Children.Add(paragraph);
-	this.radRichTextBox.Document.Sections.Add(section);
-```
-```VB.NET
-
-	Dim section As New Section()
-	Dim paragraph As New Paragraph()
-	Dim stream As Stream = Application.GetResourceStream(New Uri("/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream
-	Dim size As New Size(236, 50)
-	Dim image As New ImageInline(stream, size, "png")
-	paragraph.Inlines.Add(image)
-	section.Children.Add(paragraph)
-	Me.radRichTextBox.Document.Sections.Add(section)
-```
+<snippet id='radrichtextbox-document-elements-features-inlineimage-block_2-cs' />
+<snippet id='radrichtextbox-document-elements-features-inlineimage-block_3-vb' />
 
 ## Add via UI
 
@@ -84,42 +55,12 @@ Here is an example of how to allow the user to select an image and add it to the
 
 
 
-```XAML
-    <telerik:RadButton Content="Add Image" x:Name="ImageButton" Click="ImageButton_Click" />
-    <telerik:RadRichTextBox x:Name="radRichTextBox" Height="500" LayoutMode="Paged" />
-```
+<snippet id='radrichtextbox-document-elements-features-inlineimage-block_4-xaml' />
 
 
 
-```C#
-
-    private void ImageButton_Click(object sender, RoutedEventArgs e)
-    {
-        OpenFileDialog openDialog = new OpenFileDialog();
-        openDialog.Filter = "Images|*.jpg;*.png";
-        openDialog.Multiselect = false;
-        bool? dialogResult = openDialog.ShowDialog();
-        if (dialogResult == true)
-        {
-            Stream stream = openDialog.OpenFile();
-            string extension = Path.GetExtension(openDialog.FileName);
-            this.radRichTextBox.InsertImage(stream, extension);
-        }
-    }
-```
-```VB.NET
-	Private Sub ImageButton_Click(sender As Object, e As RoutedEventArgs)
-	 Dim openDialog As New OpenFileDialog()
-	 openDialog.Filter = "Images|*.jpg;*.png"
-	 openDialog.Multiselect = False
-	 Dim dialogResult As System.Nullable(Of Boolean) = openDialog.ShowDialog()
-	 If dialogResult = True Then
-	  Dim stream As Stream = openDialog.OpenFile()
-	  Dim extension As String = Path.GetExtension(openDialog.FileName)
-	  Me.radRichTextBox.InsertImage(stream, extension)
-	 End If
-	End Sub
-```
+<snippet id='radrichtextbox-document-elements-features-inlineimage-block_5-cs' />
+<snippet id='radrichtextbox-document-elements-features-inlineimage-block_6-vb' />
 
 ## See Also  
  * [Editing Images]({%slug radrichtextbox-features-editing-images%}) 

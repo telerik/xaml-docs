@@ -18,24 +18,17 @@ Let's assume you've defined RadDateTimePicker as shown in **Example 1**.
 
 __Example 1: RadDateTimePicker definition__
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="radDateTimePicker"/>
-```
+<snippet id='raddatetimepicker-how-to-set-first-day-calendar-example_1_raddatetimepicker_definition-xaml' />
+
 
 You can then set the **FirstDayOfWeek** property of the current culture's **DateTimeFormat** as demonstrated in **Example 2**.
 
 __Example 2: Setting FirstDayOfWeek__
 
-```C#
-	CultureInfo cultureInfo = new CultureInfo("en-US");
-	cultureInfo.DateTimeFormat.FirstDayOfWeek = DayOfWeek.Friday;
-	this.radDateTimePicker.Culture = cultureInfo;
-```
-```VB.NET
-	Dim cultureInfo As New CultureInfo("en-US")
-	cultureInfo.DateTimeFormat.FirstDayOfWeek = DayOfWeek.Friday
-	Me.radDateTimePicker.Culture = cultureInfo
-```
+<snippet id='raddatetimepicker-how-to-set-first-day-calendar-example_2_setting_firstdayofweek-cs' />
+
+<snippet id='raddatetimepicker-how-to-set-first-day-calendar-example_2_setting_firstdayofweek-vb' />
+
 
 ## Through the CalendarStyle property
 
@@ -43,11 +36,8 @@ Another way to achieve the same result is to define a style targeting the **RadC
 
 __Example 3: Defining a custom RadCalendar style__
 
-```XAML
-	<Style x:Key="CalendarStyle" TargetType="telerik:RadCalendar">
-		<Setter Property="FirstDayOfWeek" Value="Friday" />
-	</Style>
-```
+<snippet id='raddatetimepicker-how-to-set-first-day-calendar-example_3_defining_a_custom_radcalendar_style-xaml' />
+
 
 >If you're using [implicit styles]({%slug implicit-styles-styling-the-controls%}), you should base your style on the __RadCalendarStyle__.
 
@@ -55,19 +45,15 @@ You can then use this style implicitly or set it for a single RadDateTimePicker 
 
 __Example 4: Defining an implicit style__
 
-```XAML
-	<Style TargetType="telerik:RadDateTimePicker">
-		<Setter Property="CalendarStyle" Value="{StaticResource CalendarStyle}" />
-	</Style>
-```
+<snippet id='raddatetimepicker-how-to-set-first-day-calendar-example_4_defining_an_implicit_style-xaml' />
+
 
 >If you're using [implicit styles]({%slug implicit-styles-styling-the-controls%}), you should base your style on the __RadDateTimePickerStyle__.
 
 __Example 5: Setting an individual calendar's CalendarStyle property__
 
-```XAML
-	<telerik:RadDateTimePicker CalendarStyle="{StaticResource CalendarStyle}" />
-```
+<snippet id='raddatetimepicker-how-to-set-first-day-calendar-example_5_setting_an_individual_calendar_s_calendarstyle_property-xaml' />
+
 
 **Figure 1** shows the final result.
 

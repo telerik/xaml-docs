@@ -18,28 +18,7 @@ In order to style all __RadTreeViewItem__ elements in a RadTreeView, you should 
 
 __Example 1: Creating an implicit style targeting RadTreeViewItem__
 
-```XAML
-	<Grid>
-        <Grid.Resources>
-            <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
-			<Style TargetType="telerik:RadTreeViewItem" BasedOn="{StaticResource RadTreeViewItemStyle}">-->
-
-			<Style TargetType="telerik:RadTreeViewItem">
-				<Setter Property="Foreground" Value="Red" />
-			</Style>
-        </Grid.Resources>
-        
-        <telerik:RadTreeView>
-            <telerik:RadTreeView.Items>
-                <telerik:RadTreeViewItem Header="Item 1">
-                    <telerik:RadTreeViewItem Header="Item 1.1" />
-                    <telerik:RadTreeViewItem Header="Item 1.2" />
-                </telerik:RadTreeViewItem>
-                <telerik:RadTreeViewItem Header="Item 2" />
-            </telerik:RadTreeView.Items>
-        </telerik:RadTreeView>
-    </Grid>
-```
+<snippet id='radtreeview-styles-and-templates-styling-and-appearance-styling-radtreeviewitem-block_1-xaml' />
 
 #### __Figure 1: RadTreeViewItem with Red Foreground in the Fluent theme__
 ![RadTreeViewItems with Red Foreground](images/RadTreeView_RadTreeViewItem_Style.png)

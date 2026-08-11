@@ -22,21 +22,8 @@ In the simplest scenario your data source will be a list of strings. In this cas
 
 __Create sample data__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" Width="200" IsEditable="True">
-	    <telerik:RadComboBoxItem Content="Alapattah" />
-	    <telerik:RadComboBoxItem Content="Brickell Avenue" />
-	    <telerik:RadComboBoxItem Content="Downtown Miami" />
-	    <telerik:RadComboBoxItem Content="El Portal" />
-	    <telerik:RadComboBoxItem Content="Cutler Ridge" />
-	    <telerik:RadComboBoxItem Content="Florida City" />
-	    <telerik:RadComboBoxItem Content="Homestead" />
-	    <telerik:RadComboBoxItem Content="Kendall" />
-	    <telerik:RadComboBoxItem Content="Leisure City" />
-	    <telerik:RadComboBoxItem Content="Medley" />
-	    <telerik:RadComboBoxItem Content="Pinecrest" />
-	</telerik:RadComboBox>
-```
+<snippet id='radcombobox-features-autocomplete-create_sample_data-xaml' />
+
 
 Now, if you type only "down", the combo will complete your result with the first matching item.
 
@@ -50,9 +37,8 @@ For example, if you set the __DisplayMemberPath__ to __Name__ as you suppose tha
 
 __Set DisplayMemberPath property__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" DisplayMemberPath="Name" IsEditable="True"/>
-```
+<snippet id='radcombobox-features-autocomplete-set_displaymemberpath_property-xaml' />
+
 
 Note that you have also set the __IsEditable__ property to __True__ in order to better distinguish the benefit of __AutoComplete__. If you are not using __IsEditable__ property you can still benefit from this feature, but instead of __AutoComplete__ your items will be __AutoSelected__.        
 
@@ -76,12 +62,8 @@ The following example shows you how to use the __TextSearch.TextPath__ property.
 
 __Set TextSearch attached property__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" 
-	                     ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" 
-	                     ItemTemplate="{StaticResource ComboBoxCustomTemplate}" IsEditable="True" 
-	                     telerik:TextSearch.TextPath="Name" />
-```
+<snippet id='radcombobox-features-autocomplete-set_textsearch_attached_property-xaml' />
+
 
 ### Using TextSearch.AutoCompleteTimeout Property
 
@@ -91,9 +73,8 @@ The following example shows how to set __TextSearch.AutoCompleteTimeout__ proper
 
 __Set AutoCompleteTimeout property__
 
-```C#
-	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
-```
+<snippet id='radcombobox-features-autocomplete-set_autocompletetimeout_property-cs' />
+
 
 ## Disable Autocomplete
 
@@ -101,18 +82,15 @@ By default the autocomplete feature of __RadComboBox__ is always enabled. In ord
 
 __Disable AutoComplete mechanism__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" IsTextSearchEnabled="False"/>
-```
+<snippet id='radcombobox-features-autocomplete-disable_autocomplete_mechanism-xaml' />
+
 
 __Disable AutoComplete mechanism in code behind__
 
-```C#
-	radComboBox.IsTextSearchEnabled = false;
-```
-```VB.NET
-	radComboBox.IsTextSearchEnabled = False
-```
+<snippet id='radcombobox-features-autocomplete-disable_autocomplete_mechanism_in_code_behind-cs' />
+
+<snippet id='radcombobox-features-autocomplete-disable_autocomplete_mechanism_in_code_behind-vb' />
+
 
 ## Select Items on AutoComplete
 
@@ -126,18 +104,15 @@ You can, however, manually set the `CanAutocompleteSelectItems` property to `tru
 
 __Disable AutoComplete item selection__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" CanAutocompleteSelectItems="False"/>
-```
+<snippet id='radcombobox-features-autocomplete-disable_autocomplete_item_selection-xaml' />
+
 
 __Disable AutoComplete item selection in code behind__
 
-```C#
-	radComboBox.CanAutocompleteSelectItems = false;
-```
-```VB.NET
-	radComboBox.CanAutocompleteSelectItems = False
-```
+<snippet id='radcombobox-features-autocomplete-disable_autocomplete_item_selection_in_code_behind-cs' />
+
+<snippet id='radcombobox-features-autocomplete-disable_autocomplete_item_selection_in_code_behind-vb' />
+
 
 ## Select Partial Matches
 
@@ -150,18 +125,15 @@ The next examples demonstrate how to set the AutoCompleteSelectionMode property 
 
 __Set the AutoCompleteSelectionMode__
 
-```XAML
-	<telerik:RadComboBox x:Name="radComboBox" AutoCompleteSelectionMode="FullMatch"/>
-```
+<snippet id='radcombobox-features-autocomplete-set_the_autocompleteselectionmode-xaml' />
+
 
 __Set the AutoCompleteSelectionMode in code behind__
 
-```C#
-	radComboBox.AutoCompleteSelectionMode = ComboBoxAutoCompleteSelectionMode.FullMatch;
-```
-```VB.NET
-	radComboBox.AutoCompleteSelectionMode = ComboBoxAutoCompleteSelectionMode.FullMatch
-```
+<snippet id='radcombobox-features-autocomplete-set_the_autocompleteselectionmode_in_code_behind-cs' />
+
+<snippet id='radcombobox-features-autocomplete-set_the_autocompleteselectionmode_in_code_behind-vb' />
+
 
 ## See Also
 

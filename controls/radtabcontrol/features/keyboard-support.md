@@ -26,30 +26,12 @@ Set the __IsTabStop__ property to include/exclude the control in the tab navigat
 
 >tip To obtain the pressed key, the object that raised the event or some other information, use the instance of __System.Windows.Input.KeyEventArgs__ passed as a parameter to the event handler method.
 
-```XAML
-	<telerik:RadTabControl x:Name="tabControl" KeyDown="tabControl_KeyDown" KeyUp="tabControl_KeyUp"/>
-```
+<snippet id='radtabcontrol-features-keyboard-support-block_1-xaml' />
 
 The implementation of both event handlers __tabControl_KeyDown__ and __tabControl_KeyUp__ is located in the code-behind file and looks like this:
 
-```C#
-	private void tabControl_KeyDown( System.Object sender, System.Windows.Input.KeyEventArgs e)
-	{
-	    MessageBox.Show("The pressed key is: " + e.Key.ToString());
-	}
-	private void tabControl_KeyUp( System.Object sender, System.Windows.Input.KeyEventArgs e)
-	{
-	    MessageBox.Show("The released key is: " + e.Key.ToString());
-	}
-```
-```VB.NET
-	Private Sub tabControl_KeyDown( ByVal sender As System.Object, ByVal e As System.Windows.Input.KeyEventArgs)
-	    MessageBox.Show("The pressed key is: " + e.Key.ToString())
-	End Sub
-	Private Sub tabControl_KeyUp( ByVal sender As System.Object, ByVal e As System.Windows.Input.KeyEventArgs)
-	    MessageBox.Show("The released key is: " + e.Key.ToString())
-	End Sub
-```
+<snippet id='radtabcontrol-features-keyboard-support-block_2-cs' />
+<snippet id='radtabcontrol-features-keyboard-support-block_3-vb' />
 
 ## See Also
 

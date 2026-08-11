@@ -22,21 +22,8 @@ The `RadDateRangePicker` control has the following built-in ranges, that can be 
 ![Picture showing the pre-defined custom date ranges of WPF RadDateRangePicker](images/raddaterangepicker-custom-date-ranges-0.png)
 
 __Adding and removing ranges in the CustomRangesLoadingEventArgs event handler__
-```C#
-	private void RadDateRangePicker_CustomRangesLoading(object sender, CustomRangesLoadingEventArgs e)
-	{
-		// removes the first predefined range
-		e.CustomRanges.RemoveAt(0);
+<snippet id='raddaterangepicker-custom-ranges-adding_and_removing_ranges_in_the_customrangesloadingeventargs_event_handler-cs' />
 
-		// adds a new custom range
-		var newRange = new CustomRange("Last 42 days")
-		{
-			StartDate = DateTime.Today.AddDays(-42),
-			EndDate = DateTime.Today
-		};
-		e.CustomRanges.Add(newRange);
-	}
-```
 
 ![Picture showing a new custom date range added to WPF RadDateRangePicker](images/raddaterangepicker-custom-date-ranges-1.png)
 
@@ -45,9 +32,8 @@ __Adding and removing ranges in the CustomRangesLoadingEventArgs event handler__
 To hide the date ranges from the UI, set the `IsDefaultRangesPanelVisible` property of `RadDateRangePicker` to `false`.
 
 __Hiding the date ranges panel__
-```C#
-	<telerik:RadDateRangePicker IsDefaultRangesPanelVisible="False" />
-```
+<snippet id='raddaterangepicker-custom-ranges-hiding_the_date_ranges_panel-cs' />
+
 
 ![Picture showing WPF RadDateRangePicker without the data ranges panel](images/raddaterangepicker-custom-date-ranges-2.png)
 

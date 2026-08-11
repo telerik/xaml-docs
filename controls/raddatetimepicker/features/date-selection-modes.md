@@ -26,35 +26,16 @@ You can change the value of the __DateSelectionMode__ property in XAML as shown 
 
 __Example 1: Setting the DateSelectionMode property__
 
-```XAML
-	<telerik:RadDateTimePicker x:Name="dateTimePicker" InputMode="DatePicker" DateSelectionMode="Month"/>
-```
+<snippet id='raddatetimepicker-features-date-selection-modes-example_1_setting_the_dateselectionmode_property-xaml' />
+
 
 __Example 2__ demonstrates how you can change it in code.
 
 __Example 2: Setting the DateSelectionMode property programmatically__
-```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			this.dateTimePicker.DateSelectionMode = Telerik.Windows.Controls.Calendar.DateSelectionMode.Month;
-		}
-	   
-	}
-```
-```VB.NET
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			this.dateTimePicker.DateSelectionMode = Telerik.Windows.Controls.Calendar.DateSelectionMode.Month;
-		}
-	   
-	}
-```
+<snippet id='raddatetimepicker-features-date-selection-modes-example_2_setting_the_dateselectionmode_property_programmatically-cs' />
+
+<snippet id='raddatetimepicker-features-date-selection-modes-example_2_setting_the_dateselectionmode_property_programmatically-vb' />
+
 
 This example will achieve the following:
 

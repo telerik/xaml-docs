@@ -14,17 +14,13 @@ By default the __RadTreeView__ control's items are __expanded__ and __collapsed_
 
 
 
-```XAML
-	<telerik:RadTreeView telerik:AnimationManager.IsAnimationEnabled="False"/>
-```
+<snippet id='radtreeview-how-to-disable-default-animation-block_1-xaml' />
 
 The referenced namespace is defined as follows: 
 
 
 
-```XAML
-	xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation
-```
+<snippet id='radtreeview-how-to-disable-default-animation-block_2-xaml' />
 
 Once you have declared the needed namespace, the only thing you have to do is setting the attached property to __False__. All treeview items will inherit that property from their parent __RadTreeView__.
 

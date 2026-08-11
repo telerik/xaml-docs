@@ -21,11 +21,7 @@ The input view is represented by the `RadAIPromptInputItem` class. This view con
 >tip For more information on the suggestions feature of the component, check this [article]({%slug radaiprompt-suggestions%}).
 
 __Adding the input view in the RadAIPrompt__
-```XAML
-    <telerik:RadAIPrompt>
-        <telerik:RadAIPromptInputItem/>
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-views-adding_the_input_view_in_the_radaiprompt-xaml' />
 
 __RadAIPrompt with the input view defined in it__
 
@@ -45,12 +41,7 @@ The `AIPromptOutputItemModel` class provides the following properties:
 >tip Check the [Requesting a Response]({%slug radaiprompt-getting-started%}#requesting-a-response) section of the Getting Started article of the component's documentation to see how to add a new item in this view.
 
 __Adding the output view in the RadAIPrompt__
-```XAML
-    <telerik:RadAIPrompt>
-        <telerik:RadAIPromptInputItem/>
-        <telerik:RadAIPromptOutputItem/>
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-views-adding_the_output_view_in_the_radaiprompt-xaml' />
 
 __RadAIPrompt with the input and output views defined in it__
 
@@ -63,11 +54,7 @@ The commands view is an additional view that will display the commands set to th
 >tip To learn more about the commands functionality of RadAIPrompt, check the [Commands]({%slug radaiprompt-commands%}) documentation article.
 
 __Adding the commands view in the RadAIPrompt__
-```XAML
-    <telerik:RadAIPrompt Commands="{Binding MyCommandsCollection}">
-        <telerik:RadAIPromptCommandsItem/>
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-views-adding_the_commands_view_in_the_radaiprompt-xaml' />
 
 __RadAIPrompt with the commands view in the RadAIPrompt__
 
@@ -83,24 +70,7 @@ Each view that is supported by the RadAIPrompt extends the `RadAIPromptItem` cla
 Additionally, the RadAIPromptItem class derives from the native WPF `HeaderedContentControl` class. The properties that are exposed by it can also be set.
 
 __Customizing the views__
-```XAML
-    <telerik:RadAIPrompt>
-        <telerik:RadAIPromptInputItem Header="My Input View">
-            <telerik:RadAIPromptInputItem.IconTemplate>
-                <DataTemplate>
-                    <Rectangle Width="8" Height="8" Fill="Red"/>
-                </DataTemplate>
-            </telerik:RadAIPromptInputItem.IconTemplate>
-        </telerik:RadAIPromptInputItem>
-        <telerik:RadAIPromptOutputItem Header="My Output View">
-            <telerik:RadAIPromptOutputItem.IconTemplate>
-                <DataTemplate>
-                    <Ellipse Width="8" Height="8" Fill="LightGreen"/>
-                </DataTemplate>
-            </telerik:RadAIPromptOutputItem.IconTemplate>
-        </telerik:RadAIPromptOutputItem>
-    </telerik:RadAIPrompt>
-```
+<snippet id='radaiprompt-views-customizing_the_views-xaml' />
 
 __RadAIPrompt with customized views__
 

@@ -24,18 +24,11 @@ The default speech recognizer of the button requires you to install the [Microso
 
 __Setting up a RadSpeechToTextButton__
 
-```XAML
-<telerik:RadSpeechToTextButton SpeechRecognized="RadSpeechToTextButton_SpeechRecognized"/>
-```
+<snippet id='radbuttons-features-speech-to-text-button-setting_up_a_radspeechtotextbutton-xaml' />
 
 __Using the SpeechRecognized event__
 
-```C#
-private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.SpeechRecognizer.SpeechRecognizerSpeechRecognizedEventArgs e)
-{
-    string fullText = e.FullText;
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-using_the_speechrecognized_event-cs' />
 
 ## Processing Recognized Text
 
@@ -45,13 +38,7 @@ The `SpeechRecognizerSpeechRecognizedEventArgs` provides the recognized text and
  
 __Defining a SpeechRecognized event handler__
 
-```C#
-private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.SpeechRecognizer.SpeechRecognizerSpeechRecognizedEventArgs e)
-{
-    string fullText = e.FullText;
-    double confidenceScore = e.FullTextConfidenceScore;
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-defining_a_speechrecognized_event_handler-cs' />
 
 > The default speech recognizer uses the Web Speech API via the WebView2 engine, which does not provide usable confidence score.
 
@@ -61,9 +48,7 @@ By default when the RadSpeechToTextButton is pressed this will start a continuou
 
 __Disabling continuous speech recognition__
 
-```XAML
-<telerik:RadSpeechToTextButton IsContinuousRecognition="False" />
-```
+<snippet id='radbuttons-features-speech-to-text-button-disabling_continuous_speech_recognition-xaml' />
 
 ## Recognizer States
 
@@ -84,9 +69,7 @@ The recognizer can be in the following states:
 
 __Getting the current status of the recognizer__
 
-```C#
-SpeechRecognizerState state = this.speechToTextButton.State;
-```
+<snippet id='radbuttons-features-speech-to-text-button-getting_the_current_status_of_the_recognizer-cs' />
 
 The states lifecycle is shown in the [Architecture and States](#architecture-and-states) section of this article.
 
@@ -97,13 +80,7 @@ To handle errors related to the speech recognition service, use the `ErrorOccurr
 
 __Defining a ErrorOccurred event handler__
 
-```C#
-private void Btn_ErrorOccurred(object? sender, Telerik.SpeechRecognizer.SpeechRecognizerErrorOccurredEventArgs e)
-{
-	string errorMessage = e.Message;
-	Exception exception = e.Exception;
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-defining_a_erroroccurred_event_handler-cs' />
 
 ## Language Support
 
@@ -111,9 +88,7 @@ The service used by the default WebView2 speech recognizer supports multiple lan
 
 __Setting the language of the default speech recognizer to German__
 
-```XAML
-<telerik:RadSpeechToTextButton LanguageTag="de-DE"/>
-```
+<snippet id='radbuttons-features-speech-to-text-button-setting_the_language_of_the_default_speech_recognizer_to_german-xaml' />
 
 ## Customizing the ToolTip
 
@@ -125,20 +100,7 @@ The tooltip content and behavior can be customized using the `CalloutOpening` ev
 
 __Replacing the tooltip content of the button when in Ready and Listening states__
 
-```C#
-private void RadSpeechToTextButton_CalloutOpening(object? sender, SpeechToTextTooltipOpeningEventArgs e)
-{
-    var button = (RadSpeechToTextButton)sender;
-    if (button.State == SpeechRecognizerState.Ready)
-    {
-        e.Callout.Content = "Click when you're ready to speak";
-    }
-    else if (button.State == SpeechRecognizerState.Listening)
-    {
-        e.Callout.Content = "I’m listening";
-    }
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-replacing_the_tooltip_content_of_the_button_when_in_ready_and_listening_states-cs' />
 
 The event is invoked only for the [states](#recognizer-states) added in the `ToolTipStates` collection of `RadSpeechToTextButton`. By default the collection contains only the `Ready` and `Listening` states. If the recognizer is in another state the tooltip won't be displayed. 
 
@@ -146,28 +108,7 @@ To __show the tooltip for other states__ as well, add these in the `ToolTipState
 
 __Adding extra states and adjust their content__
 
-```C#
-public MainWindow()
-{
-    InitializeComponent();
-    
-	this.speechToTextButton.ToolTipStates.Add(SpeechRecognizerState.StartingListening);
-	this.speechToTextButton.ToolTipStates.Add(SpeechRecognizerState.Faulted);
-}
-
-private void RadSpeechToTextButton_CalloutOpening(object? sender, SpeechToTextTooltipOpeningEventArgs e)
-{
-    var button = (RadSpeechToTextButton)sender;            
-    if (button.State == SpeechRecognizerState.StartingListening)
-    {
-        e.Callout.Content = "Starting listening...";
-    }
-    else if (button.State == SpeechRecognizerState.Faulted)
-    {
-        e.Callout.Content = "Error";
-    }
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-adding_extra_states_and_adjust_their_content-cs' />
 
 In the example above, only the content for the `StartingListening` and `Faulted` states is set in the event handler, because the internal logic of the control manages the only content for the `Ready` and `Listening` states by default.
 
@@ -175,25 +116,13 @@ To __prevent the tooltip from opening__, set the `e.Cancel` property of the even
 
 __Using the CalloutOpening event to cancel the tooltip opening__
 
-```C#
-private void RadSpeechToTextButton_CalloutOpening(object? sender, SpeechToTextTooltipOpeningEventArgs e)
-{
-    e.Cancel = true;
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-using_the_calloutopening_event_to_cancel_the_tooltip_opening-cs' />
 
 The tooltip visual is implemented with the [RadCallout]({%slug radcallout-overview%}) control. The `SpeechToTextTooltipOpeningEventArgs` provide [settings]({%slug radcallout-features-calloutpopupsettings%}) for customizing the callout via the `CalloutPopupSettings` property of the event args. 
 
 __Using the CalloutOpening event to change the show/close animation__
 
-```C#
-private void RadSpeechToTextButton_CalloutOpening(object? sender, SpeechToTextTooltipOpeningEventArgs e)
-{
-    CalloutPopupSettings settings = e.CalloutPopupSettings;            
-    settings.CloseAnimationType = CalloutAnimation.FadeAndScale;
-    settings.ShowAnimationType = CalloutAnimation.FadeAndScale;
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-using_the_calloutopening_event_to_change_the_show_close_animation-cs' />
 
 ## Customizing the Button Content
 
@@ -201,58 +130,11 @@ The content of the button can be changed via the the `ContentTemplateSelector` p
 
 __Defining custom content template selector__
 
-```C#
- public class CustomContentTemplateSelector : DataTemplateSelector
- {
-     public DataTemplate ReadyTemplate { get; set; }
-     public DataTemplate StartingListeningTemplate { get; set; }
-     public DataTemplate ListeningTemplate { get; set; }
-
-     public override DataTemplate SelectTemplate(object item, DependencyObject container)
-     {
-         var state = (SpeechRecognizerState)item;
-         if (state == SpeechRecognizerState.Ready)
-         {
-             return ReadyTemplate;
-         }
-         else if (state == SpeechRecognizerState.StartingListening)
-         {
-             return StartingListeningTemplate;
-         }
-         else if (state == SpeechRecognizerState.Listening)
-         {
-             return ListeningTemplate;
-         }
-         return ReadyTemplate;
-     }
- }
-```
+<snippet id='radbuttons-features-speech-to-text-button-defining_custom_content_template_selector-cs' />
 
 __Defining custom content__
 
-```XAML
-<telerik:RadSpeechToTextButton>
-    <telerik:RadSpeechToTextButton.ContentTemplateSelector>
-        <local:CustomContentTemplateSelector>
-            <local:CustomContentTemplateSelector.ReadyTemplate>
-                <DataTemplate>
-                    <telerik:RadGlyph Glyph="&#xe655;" Foreground="Green" />
-                </DataTemplate>
-            </local:CustomContentTemplateSelector.ReadyTemplate>
-            <local:CustomContentTemplateSelector.ListeningTemplate>
-                <DataTemplate>
-                    <telerik:RadGlyph Glyph="&#xe20e;" Foreground="#ffffff" />
-                </DataTemplate>
-            </local:CustomContentTemplateSelector.ListeningTemplate>
-            <local:CustomContentTemplateSelector.StartingListeningTemplate>
-                <DataTemplate>
-                    <telerik:RadGlyph Glyph="&#xe032;"/>
-                </DataTemplate>
-            </local:CustomContentTemplateSelector.StartingListeningTemplate>
-        </local:CustomContentTemplateSelector>
-    </telerik:RadSpeechToTextButton.ContentTemplateSelector>
-</telerik:RadSpeechToTextButton>
-```
+<snippet id='radbuttons-features-speech-to-text-button-defining_custom_content-xaml' />
 
 ![A picture showing customized speech to text button content](images/radbuttons-features-speech-to-text-button-2.png)
 
@@ -264,123 +146,15 @@ A custom recognizer is created by implementing the `IRadSpeechRecognizer` interf
 
 __Implementing custom speech recognizer__
 
-```C#
-public class CustomSpeechRecognizer : IRadSpeechRecognizer
-{
-	private const string MockText = "This is a mocked speech recognizer response for testing purposes and it will not really do a voice transcription in your system.";
-	
-	private SpeechRecognizerState state;
-	private int reportingSessionId;
-
-	public SpeechRecognizerState State
-	{
-		get => this.state;
-		private set
-		{
-			if (this.state != value)
-			{
-				this.state = value;
-				this.StateChanged?.Invoke(this, EventArgs.Empty);
-			}
-		}
-	}
-
-	public event EventHandler StateChanged;
-	public event EventHandler<SpeechRecognizerErrorOccurredEventArgs> ErrorOccurred;
-	public event EventHandler<SpeechRecognizerSpeechRecognizedEventArgs> SpeechRecognized;
-
-	public Task Init(SpeechRecognizerInitializationContext context)
-	{
-		this.State = SpeechRecognizerState.Ready;
-		this.reportingSessionId++;
-		return Task.CompletedTask;
-	}
-
-	public Task StartListening()
-	{
-		this.State = SpeechRecognizerState.StartingListening;
-		this.reportingSessionId++;
-		int localSessionId = this.reportingSessionId;
-
-		Task.Run(() =>
-		{
-			this.State = SpeechRecognizerState.Listening;
-			int i = 0;
-			string[] words = MockText.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-			string fullText = string.Empty;
-
-			while (true)
-			{
-				string word = words[i % words.Length];
-				fullText += $" {word}";
-				i++;
-
-				Thread.Sleep(333);
-
-				if (localSessionId != this.reportingSessionId)
-				{
-					break;
-				}
-
-				this.SpeechRecognized?.Invoke(this, new SpeechRecognizerSpeechRecognizedEventArgs(fullText));
-			}
-		});
-
-		return Task.CompletedTask;
-	}
-
-	public async Task StopListening()
-	{
-		this.State = SpeechRecognizerState.Ready;
-		this.reportingSessionId++;
-		await Task.Yield();
-	}
-
-	public Task Reset()
-	{
-		this.State = SpeechRecognizerState.NotInitialized;
-		this.reportingSessionId++;
-		return Task.CompletedTask;
-	}
-
-	public ValueTask DisposeAsync()
-	{
-		this.State = SpeechRecognizerState.Disposed;
-		this.reportingSessionId++;
-		return new ValueTask(Task.CompletedTask);
-	}
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-implementing_custom_speech_recognizer-cs' />
 
 __Defining example view with RadSpeechToTextButton__
 
-```XAML
- <StackPanel Orientation="Horizontal">
-     <telerik:RadWatermarkTextBox x:Name="tbInput" Width="200" TextWrapping="Wrap" AcceptsReturn="True"/>
-     <telerik:RadSpeechToTextButton x:Name="speechToTextButton" SpeechRecognized="RadSpeechToTextButton_SpeechRecognized" Focusable="False"/>           
- </StackPanel>
-```
+<snippet id='radbuttons-features-speech-to-text-button-defining_example_view_with_radspeechtotextbutton-xaml' />
 
 __Assigning the custom speech recognizer and handling the result__
 
-```C#
-public MainWindow()
-{    
-    InitializeComponent();
- 
-    this.speechToTextButton.SpeechRecognizerCreator = () =>
-    {
-        return new CustomSpeechRecognizer();
-    };
-}
-
-private void RadSpeechToTextButton_SpeechRecognized(object sender, Telerik.SpeechRecognizer.SpeechRecognizerSpeechRecognizedEventArgs e)
-{
-    string fullText = e.FullText;
-    this.tbInput.Text = fullText;
-    this.tbInput.CaretIndex = this.tbInput.Text.Length;
-}
-```
+<snippet id='radbuttons-features-speech-to-text-button-assigning_the_custom_speech_recognizer_and_handling_the_result-cs' />
 
 ![A gif animation showing the behavior of the custom speech recognizer](images/radbuttons-features-speech-to-text-button-3.gif)
 

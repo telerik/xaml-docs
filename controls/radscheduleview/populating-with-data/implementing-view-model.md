@@ -18,23 +18,14 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 
 
-```XAML
-	<telerik:RadScheduleView />
-```
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_1-xaml' />
 
 * Create a new class named __MyViewModel__.
 
 
 
-```C#
-	public class MyViewModel
-	{
-	}
-```
-```VB.NET
-	Public Class MyViewModel
-	End Class
-```
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_2-cs' />
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_3-vb' />
 
 * In the __MyViewModel__ class add two properties:
 
@@ -44,154 +35,35 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 
 
-```C#
-	private ObservableCollection<Appointment> appointments;
-	private ObservableCollection<ResourceType> resourceTypes;
-	public ObservableCollection<Appointment> Appointments
-	{
-	    get
-	    {
-	        return this.appointments;
-	    }
-	    set
-	    {
-	        this.appointments = value;
-	    }
-	}
-	public ObservableCollection<ResourceType> ResourcesTypes
-	{
-	    get
-	    {
-	        return this.resourceTypes;
-	    }
-	    set
-	    {
-	        this.resourceTypes= value;
-	    }
-	}
-```
-```VB.NET
-	Private m_Appointments As ObservableCollection(Of Appointment)
-	Private m_ResourceTypes As ObservableCollection(Of ResourceType)
-	
-	Public Property Appointments() As ObservableCollection(Of Appointment)
-		Get
-			Return Me.m_Appointments
-		End Get
-		Private Set(value As ObservableCollection(Of Appointment))
-			Me.m_Appointments = value
-		End Set
-	End Property
-	
-	Public Property ResourceTypes() As ObservableCollection(Of ResourceType)
-		Get
-			Return Me.m_ResourceTypes
-		End Get
-		Private Set(value As ObservableCollection(Of ResourceType))
-			Me.m_ResourceTypes = value
-		End Set
-	End Property
-```
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_4-cs' />
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_5-vb' />
 
 * Let's create a method in the ViewModel that generates some Resources:            
 
 
 
-```C#
-	private ObservableCollection<ResourceType> GenerateResourceTypes()
-	{
-	    ObservableCollection<ResourceType> result = new ObservableCollection<ResourceType>();
-	
-	    ResourceType roomType = new ResourceType("Room");
-	    Resource room102 = new Resource("Room 102");
-	    Resource room203 = new Resource("Room 203");
-	    Resource room406 = new Resource("Room 406");
-	    roomType.Resources.Add(room102);
-	    roomType.Resources.Add(room203);
-	    roomType.Resources.Add(room406);
-	
-	    ResourceType speakerType = new ResourceType("Speaker");
-	    Resource tomSpeaker = new Resource("Tom");
-	    Resource peterSpeaker = new Resource("Peter");
-	    speakerType.Resources.Add(tomSpeaker);
-	    speakerType.Resources.Add(peterSpeaker);
-	
-	    result.Add(roomType);
-	    result.Add(speakerType);
-	    return result;
-	}
-```
-```VB.NET
-	Private Function GenerateResourceTypes() As ObservableCollection(Of ResourceType)
-	 Dim result As New ObservableCollection(Of ResourceType)()
-	 Dim roomType As New ResourceType("Room")
-	 Dim room102 As New Resource("Room 102")
-	 Dim room203 As New Resource("Room 203")
-	 Dim room406 As New Resource("Room 406")
-	 roomType.Resources.Add(room102)
-	 roomType.Resources.Add(room203)
-	 roomType.Resources.Add(room406)
-	 Dim speakerType As New ResourceType("Speaker")
-	 Dim tomSpeaker As New Resource("Tom")
-	 Dim peterSpeaker As New Resource("Peter")
-	 speakerType.Resources.Add(tomSpeaker)
-	 speakerType.Resources.Add(peterSpeaker)
-	 result.Add(roomType)
-	 result.Add(speakerType)
-	 Return result
-	End Function
-```
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_6-cs' />
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_7-vb' />
 
 * All we have to do is to initialize the __resourceTypes__ and __appointments__ fields:            
 
 
 
-```C#
-	public MyViewModel()
-	{
-	    this.resourceTypes = this.GenerateResourceTypes();
-	    this.appointments = new ObservableCollection<Appointment>();
-	}
-```
-```VB.NET
-	Public Sub New()
-	 Me.resourceTypes = Me.GenerateResourceTypes()
-	 Me.appointments = New ObservableCollection(Of Appointment)()
-	End Sub
-```
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_8-cs' />
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_9-vb' />
 
 * The ViewModel is complete. Now, let's return to the View. Add some __ViewDefinitions__, __GroupDescriptionsSource__ and bind the __AppointmentsSource__ and __ResourceTypes__
 
 
 
-```XAML
-	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
-	                         ResourceTypesSource="{Binding ResourcesTypes}" >
-	    <telerik:RadScheduleView.ViewDefinitions>
-	        <telerik:DayViewDefinition />
-	        <telerik:WeekViewDefinition />
-	        <telerik:TimelineViewDefinition />
-	    </telerik:RadScheduleView.ViewDefinitions>
-	    <telerik:RadScheduleView.GroupDescriptionsSource>
-	        <telerik:GroupDescriptionCollection>
-	            <telerik:DateGroupDescription />
-	            <telerik:ResourceGroupDescription ResourceType="Speaker" />
-	            <telerik:ResourceGroupDescription ResourceType="Room" />
-	        </telerik:GroupDescriptionCollection>
-	    </telerik:RadScheduleView.GroupDescriptionsSource>
-	</telerik:RadScheduleView>
-```
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_10-xaml' />
 
 * Finally, set the DataContext:            
 
 
 
-```C#
-	this.DataContext = new MyViewModel();
-```
-```VB.NET
-	Me.DataContext = New MyViewModel()
-```
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_11-cs' />
+<snippet id='radscheduleview-populating-with-data-implementing-view-model-block_12-vb' />
 
 ## See Also
 

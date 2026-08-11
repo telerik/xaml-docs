@@ -36,12 +36,8 @@ Unlike the [radial]({%slug radgauge-getting-started-creating-radial-gauge%}#defi
 >`xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
 __Example 1: Creating RadHorizontalLinearGauge with a NumericScale__
-```XAML
-	<telerik:RadHorizontalLinearGauge Width="200" Height="50">
-	    <telerik:NumericScale Min="0" Max="999">
-	    </telerik:NumericScale>
-	</telerik:RadHorizontalLinearGauge>
-```
+<snippet id='radgauge-getting-started-creating-numeric-gauge-example_1_creating_radhorizontallineargauge_with_a_numericscale-xaml' />
+
 
 >tip To learn more about the usage of the __NumericScale__ control read the [Numeric Scale]({%slug numeric-scale-overview%}) topic.
 
@@ -50,28 +46,8 @@ __Example 1: Creating RadHorizontalLinearGauge with a NumericScale__
 The __NumericScale__ control allows you to display numeric indicators that represent a value on the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator.
 
 __Example 2: Adding Indicators__
-```XAML
-	<telerik:RadHorizontalLinearGauge Width="200" Height="50">
-	    <telerik:NumericScale Min="0" Max="999">
-	        <telerik:NumericScale.Indicators>
-	            <telerik:NumericIndicator telerik:ScaleObject.RelativeX="0.05"
-	                                telerik:ScaleObject.RelativeY="0.05"
-	                                telerik:ScaleObject.RelativeHeight="0.9*"
-	                                telerik:ScaleObject.RelativeWidth="0.9*"
-	                                FontSize="30">
-	                <telerik:NumericIndicator.Positions>
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                </telerik:NumericIndicator.Positions>
-	            </telerik:NumericIndicator>
-	        </telerik:NumericScale.Indicators>
-	    </telerik:NumericScale>
-	</telerik:RadHorizontalLinearGauge>
-```
+<snippet id='radgauge-getting-started-creating-numeric-gauge-example_2_adding_indicators-xaml' />
+
 
 >tip To learn more about the usage of the __NumericIndicator__ control, read the [Numeric Indicator]({%slug radgauge-features-indicators-numeric-indicator%}) topic.
 
@@ -86,29 +62,8 @@ __Example 2: Adding Indicators__
 To make the indicator display a certain value on the scale, you have to use the __Value__ property of the indicator.
 
 __Example 3: Setting indicator's position__
-```XAML
-	<telerik:RadHorizontalLinearGauge Width="200" Height="50">
-	    <telerik:NumericScale Min="0" Max="999">
-	        <telerik:NumericScale.Indicators>
-	            <telerik:NumericIndicator telerik:ScaleObject.RelativeX="0.05"
-	                                telerik:ScaleObject.RelativeY="0.05"
-	                                telerik:ScaleObject.RelativeHeight="0.9*"
-	                                telerik:ScaleObject.RelativeWidth="0.9*"
-	                                FontSize="30"
-	                                Value="100">
-	                <telerik:NumericIndicator.Positions>
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                    <telerik:FontNumberPosition Background="#FFD6D4D4" />
-	                </telerik:NumericIndicator.Positions>
-	            </telerik:NumericIndicator>
-	        </telerik:NumericScale.Indicators>
-	    </telerik:NumericScale>
-	</telerik:RadHorizontalLinearGauge>
-```
+<snippet id='radgauge-getting-started-creating-numeric-gauge-example_3_setting_indicator_s_position-xaml' />
+
 
 #### __Image 2: Result from Example 3__
 

@@ -19,7 +19,6 @@ The __TypingIndicator__ functionality of the Conversational UI can be used to in
 __Example 1: Setting the TypingIndicator__
 <snippet id='radchat-features-typing-indicator-example_1_setting_the_typingindicator-cs' />
 
-
 Setting the __TypingIndicator__ in such manner will have the following result.
 
 #### __Figure 1: Setting the TypingIndicator__

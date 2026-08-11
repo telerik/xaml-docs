@@ -47,21 +47,21 @@ If you want to add your custom non-static functions to the control you need to s
 
 #### [C#] Example 4: Custom ExpressionFunctionContext
 
-<snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_category-cs' />
+<snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_context_class-cs' />
 
 
 **Example 4** defines two custom instance functions which we can now pass to the ExpressionParser as show in **Example 5**.
 
 #### [C#] Example 5: Set the ExpressionFunctionContext.Context
 
-<snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_category-cs' />
+<snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_set_context-cs' />
 
 
 You can then add these functions in the **GetFunctionsItemModels** override as well as remove some of the predefined functions.
 
 #### [C#] Example 6: Add custom functions
 
-<snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_category-cs' />
+<snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_get_functions_item_models-cs' />
 
 
 **Example 6** adds the two custom functions defined in Example 4 to the **Other** subcategory. The results before and after respectively are illustrated in **Figure 2**. 

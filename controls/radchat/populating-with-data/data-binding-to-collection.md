@@ -35,7 +35,6 @@ __Example 3: Implementing message converter__
 __Example 4: Setting up the RadChat control__
 <snippet id='radchat-populating-with-data-data-binding-to-collection-example_4_setting_up_the_radchat_control-xaml' />
 
-
 ![{{ site.framework_name }} RadChat with Data-Bound Messages](images/chat-populating-with-data-binding-to-collection-0.png)
 
 > The example demonstrates how to work with text messages, but the same approach is also applicable for the other message types. 

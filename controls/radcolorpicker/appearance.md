@@ -71,5 +71,5 @@ To change other properties of the button, use the `SplitButtonStyle` property of
 The content in the drop down of the ColorPicker component is a `RadColorSelector` control. To change its appearance, set the `ColorSelectorStyle` property of `RadColorPicker`.
 
 
-<snippet id='radcolorpicker-appearance-radcolorpicker_with_custom_button_content-xaml' />
+<snippet id='radcolorpicker-appearance-customizing_the_color_selector-xaml' />
 

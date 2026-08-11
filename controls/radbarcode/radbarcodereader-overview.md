@@ -97,8 +97,8 @@ __Example 3: Specify DecodeTypes of RadBarcodeReader__
 If you're using the **BarcodeDecoder** class to decode the barcode, similarly, you can use its **DecodeTypes** property to predefine the barcode types to be decoded.
 
 __Example 4: Specify DecodeTypes of BarcodeDecoder__  
-<snippet id='radbarcode-radbarcodereader-overview-example_2_decoding_an_image_with_the_barcodedecoder-cs' />
-<snippet id='radbarcode-radbarcodereader-overview-example_2_decoding_an_image_with_the_barcodedecoder-vb' />
+<snippet id='radbarcode-radbarcodereader-overview-example_3_decoding_an_image_with_the_barcodedecoder-cs' />
+<snippet id='radbarcode-radbarcodereader-overview-example_3_decoding_an_image_with_the_barcodedecoder-vb' />
 
 
 ## See Also

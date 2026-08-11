@@ -10,7 +10,7 @@ position: 2
 
 # DataTemplate Selectors
 
-This article shows how to conditionally load different __ReadOnly/Edit DataTemplates__, according to __RadDataForm’s CurrentItem__. For some additional information on __DataTemplateSelectors__, please refer to [General FAQ]({%slug common-faq%}) documentation article.
+This article shows how to conditionally load different __ReadOnly/Edit DataTemplates__, according to __RadDataForm’s CurrentItem__.
 
 >__DataTemplate selectors__ affect both __RadDataForm’s__ auto-generated fields and manually defined ones.
 

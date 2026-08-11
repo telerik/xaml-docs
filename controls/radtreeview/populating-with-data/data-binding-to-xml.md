@@ -20,7 +20,38 @@ The final result should look like the snapshot below:
 	* __Telerik.Windows.Controls__
 * Then add the xml file describing the data that will be displayed in the __RadTreeView__ control. Below you can find a simple XML declaration, that we will use in this tutorial:
 
-	<snippet id='radtreeview-populating-with-data-data-binding-to-xml-block_1-xaml' />
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<Items>
+	<XmlNodeItem Header="Animal">
+		<Items>
+			<XmlNodeItem Header="Dog" />
+			<XmlNodeItem Header="Cat" />
+		</Items>
+	</XmlNodeItem>
+	<XmlNodeItem Header="Fish">
+		<Items>
+			<XmlNodeItem Header="Fresh Water">
+				<Items>
+					<XmlNodeItem Header="Roach"/>
+					<XmlNodeItem Header="Bream"/>
+				</Items>
+			</XmlNodeItem>
+			<XmlNodeItem Header="Salt Water">
+				<Items>
+					<XmlNodeItem Header="Edible"/>
+					<XmlNodeItem Header="Flat">
+						<Items>
+							<XmlNodeItem Header="Skate"/>
+							<XmlNodeItem Header="Soul"/>
+						</Items>
+					</XmlNodeItem>
+				</Items>
+			</XmlNodeItem>
+		</Items>
+	</XmlNodeItem>
+</Items>
+```
 		
 * Create a new class named __XmlNodeItem__. The class is pretty simple and it represents a separate node from the XML document. It has a __Header__ property and a collection of __XmlNodeItem__. Here is the source code:
 

@@ -22,7 +22,136 @@ This tutorial will show you two of them:
 
 1. Define a XML source:
 
-	<snippet id='radtreeview-how-to-howto-bind-treeview-wpf-block_1-xaml' />
+	```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+		<Artists>
+			<Artist>
+				<ArtistID>1</ArtistID>
+				<ArtistName>Sting</ArtistName>
+				<ImageName>Add.png</ImageName>
+				<Albums>
+					<Album>
+						<AlbumID>1</AlbumID>
+						<ArtistID>1</ArtistID>
+						<AlbumName>Brand New Day</AlbumName>
+						<ImageName>-1</ImageName>
+						<Songs>
+							<Song>
+								<SongID>1</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>1. A Thousand Years</SongName>
+							</Song>
+							<Song>
+								<SongID>2</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>2. Desert Rose</SongName>
+							</Song>
+							<Song>
+								<SongID>3</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>3. Big Lie Small World</SongName>
+							</Song>
+							<Song>
+								<SongID>4</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>4. After The Rain Has Fallen</SongName>
+							</Song>
+							<Song>
+								<SongID>5</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>5. Perfect Love...Gone Wrong</SongName>
+							</Song>
+							<Song>
+								<SongID>6</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>6. Tomorrow We&apos;ll See</SongName>
+							</Song>
+							<Song>
+								<SongID>7</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>7. Prelude To The End Of The Game</SongName>
+							</Song>
+							<Song>
+								<SongID>8</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>8. Fill Her Up</SongName>
+							</Song>
+							<Song>
+								<SongID>9</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>9. Ghost Story</SongName>
+							</Song>
+							<Song>
+								<SongID>10</SongID>
+								<AlbumID>1</AlbumID>
+								<SongName>10. Brand New Day</SongName>
+							</Song>
+						</Songs>
+					</Album>
+				</Albums>
+			</Artist>
+			<Artist>
+				<ArtistID>2</ArtistID>
+				<ArtistName>Depeche Mode</ArtistName>
+				<ImageName>Favorites.png</ImageName>
+				<Albums>
+					<Album>
+						<AlbumID>4</AlbumID>
+						<ArtistID>2</ArtistID>
+						<AlbumName>Violator</AlbumName>
+						<ImageName>-1</ImageName>
+						<Songs>
+							<Song>
+								<SongID>34</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>1. World In My Eyes</SongName>
+							</Song>
+							<Song>
+								<SongID>35</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>2. Sweetest Perfection</SongName>
+							</Song>
+							<Song>
+								<SongID>36</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>3. Personal Jesus</SongName>
+							</Song>
+							<Song>
+								<SongID>37</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>4. Halo</SongName>
+							</Song>
+							<Song>
+								<SongID>38</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>5. Waiting For The Night</SongName>
+							</Song>
+							<Song>
+								<SongID>39</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>6. Enjoy The Silence</SongName>
+							</Song>
+							<Song>
+								<SongID>40</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>7. Policy Of Truth</SongName>
+							</Song>
+							<Song>
+								<SongID>41</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>8. Blue Dress</SongName>
+							</Song>
+							<Song>
+								<SongID>42</SongID>
+								<AlbumID>4</AlbumID>
+								<SongName>9. Clean</SongName>
+							</Song>
+						</Songs>
+					</Album>
+				</Albums>
+			</Artist>
+		</Artists>
+	```
 
 2. Define __HierarchicalDataTemplates__, which will "tell" the __RadTreeView__ how to display the XML data.
 

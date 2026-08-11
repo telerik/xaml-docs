@@ -45,8 +45,6 @@ __Example 1: Creating a RadAutoCompleteBox in code-behind__
 
 <snippet id='radautocompletebox-getting-started-example_1_creating_a_radautocompletebox_in_code_behind-cs' />
 
-<snippet id='radautocompletebox-getting-started-example_1_creating_a_radautocompletebox_in_code_behind-vb' />
-
 __Example 1: Creating a RadAutoCompleteBox in code-behind__
 
 __Example 1: Creating a RadAutoCompleteBox in XAML__

@@ -59,13 +59,9 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 
 * If you select the treeview item with header "Futsal", then both of the properties will return you the treeview item with header "Soccer". 
 
-
-
 <snippet id='radtreeview-how-to-get-previous-next-parent-sibling-node-block_7-cs' />
 
-
-
-<snippet id='radtreeview-how-to-get-previous-next-parent-sibling-node-block_8-xaml' />
+<snippet id='radtreeview-how-to-get-previous-next-parent-sibling-node-block_8-vb' />
 
 ## Accessing the ParentItem and RootItem 
 

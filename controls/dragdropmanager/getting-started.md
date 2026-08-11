@@ -42,17 +42,8 @@ __Create ApplicationInfo__
 
 Then we need to define our ListBoxes with suitable ItemTemplates. We also enable dragging the ListBoxItems (through style) and allow drop to each of the ListBoxes (through setting AllowDrop property):
 
-{% if site.site_name == 'Silverlight' %}
-
 __Define ListBoxes, style and DataTemplate__
 <snippet id='dragdropmanager-getting-started-define_listboxes_style_and_datatemplate-xaml' />
-
-{% else %}
-
-__Define ListBoxes, style and DataTemplate__
-<snippet id='dragdropmanager-getting-started-define_listboxes_style_and_datatemplate-xaml' />
-
-{% endif %}
 
 >To use the DragDropManager and its components in XAML you have to declare the following namespace:
 >	*xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"*

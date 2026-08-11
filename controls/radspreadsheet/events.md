@@ -100,6 +100,17 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 	
 	__Accessing the CellIndex of the clicked cell__
 	<snippet id='radspreadsheet-events-block_6-cs' />
+	
+
+>The events related to selection in RadSpreadsheet are described in the [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%}) topic.
+
+## Cells Events
+
+* `CellPropertyChanged`&mdash;Occurs when a property of a cell is changed. The event arguments are of type **CellPropertyChangedEventArgs** and expose information about the exact property that was changed as well as the affected cell range.
+
+	**Using the CellPropertyChangedEvent to show a notification when the users change the fill of a cell**
+	
+	<snippet id='radspreadsheet-events-block_7-cs' />
 	<snippet id='radspreadsheet-events-block_7-vb' />
 
 * `CellRangeInsertedOrRemoved`&mdash;Occurs when a cell range is inserted or removed. Through the arguments, you can obtain information about the affected ranges, as well as whether the range is removed or not.

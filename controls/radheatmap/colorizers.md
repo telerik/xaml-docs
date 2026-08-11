@@ -114,13 +114,13 @@ The result, where there is no complete white, nor green.
 The complete code of the example:        
 
 
-<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-cs' />
+<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-complete-cs' />
 
-<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-vb' />
+<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-complete-vb' />
 
 
 
-<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-xaml' />
+<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-complete-xaml' />
 
 
 ![RadHeatMap_colorizers_05jpg](images/RadHeatMap_colorizers_05.jpg)
@@ -131,13 +131,13 @@ The only difference between the Categorical and the Horizontal/Vertical definiti
 Here is a little demonstration:        
 
 
-<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-cs' />
+<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-categorical-cs' />
 
-<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-vb' />
+<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-categorical-vb' />
 
 
 
-<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-xaml' />
+<snippet id='radheatmap-colorizers-heatmapdesaturationcolorizer-categorical-xaml' />
 
 
 And the result:

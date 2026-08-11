@@ -20,7 +20,6 @@ __Creating a new message and setting the message status__
 
 <snippet id='radchat-message-status-creating_a_new_message_and_setting_the_message_status-cs' />
 
-
 ![Telerik UI for WPF RadChat message status displayed beneath a chat message](images/chat-message-status-0.png)
 
 You can later access the message and update its status if necessary.

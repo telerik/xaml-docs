@@ -19,8 +19,6 @@ The packages can be installed from the [Telerik NuGet server]({%slug nuget-packa
 	
 ## Telerik NuGet Server Packages
 
->important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
-
 There is a [configured Telerik NuGet feed]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to the [locally hosted NuGet packages](#nuget-local-packages).
 
 ### Full Packages (Server)

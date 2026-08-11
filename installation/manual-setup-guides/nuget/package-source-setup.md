@@ -9,9 +9,25 @@ position: 1
 
 # Setting NuGet Package Source
 
-The Telerik NuGet packages are available as `.nupkg` files that can be downloaded into a local package source, and they can also be installed from the online Telerik NuGet server. 
+You can install Telerik UI for WPF NuGet packages from three different sources:
 
-## Telerik NuGet Server - Telerik CLI Setup
+* [Download Telerik UI for WPF packages from NuGet.org (Recommended)](#download-from-nugetorg) (**Recommended for Q3 2026 and later**) — The packages are available on the default NuGet source. No configuration or authentication needed.
+* [Download Telerik UI for WPF packages from the Telerik NuGet server](#download-from-the-telerik-nuget-server) — An online private Telerik NuGet feed available for all releases.
+* [Download Telerik UI for WPF packages from a local NuGet feed](#manually-download-nuget-packages-from-a-local-nuget-feed) — Download `.nupkg` files from the [Telerik product download page](https://www.telerik.com/account/product-download?product=RCWPF) and configure a local package source.
+
+You are free to choose the installation method that best fits your preferences and project requirements.
+
+## How to Choose the NuGet Installation Source
+
+All three installation methods are fully supported. The following guidance can help you decide:
+
+* Use **NuGet.org** for current Telerik UI for WPF releases (**Q3 2026 and later**). NuGet.org is the default package source in Visual Studio and the .NET CLI, so it requires the least configuration.
+
+* Use the **Telerik NuGet server** when you need package versions released before Q3 2026, or when your organization already standardizes on the Telerik private feed. All new release versions are also available on the Telerik NuGet server.
+
+* Use a **local NuGet feed** when you need offline installation, reproducible restores inside a controlled network, or a mirrored package source for build agents.
+
+## Automated Setup with Telerik CLI
 
 The easiest way to setup the Telerik package source is to use the [Telerik CLI setup tool]({%slug telerik-cli%}).
 
@@ -19,21 +35,27 @@ The easiest way to setup the Telerik package source is to use the [Telerik CLI s
 
 1. If you don't have Telerik CLI installed, run the `dotnet tool install` command.
 
-	```
-	dotnet tool install -g Telerik.CLI
-	```
+   ```
+   dotnet tool install -g Telerik.CLI
+   ```
 
-1. Run the `nuget config` command.
+1. Run the `nuget config` command:
 
-	```
-	telerik nuget config
-	```
+   ```
+   telerik nuget config
+   ```
 
-## Telerik NuGet Server Manual Setup
+>tip Telerik CLI uses NuGet.org to download Telerik UI for Wpf packages.
+
+## Download from NuGet.org
+
+Starting with **Q3 2026**, Telerik UI for Wpf NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. You can find and install the Telerik packages directly from NuGet.org without configuring the private Telerik NuGet feed.
+
+This is the recommended installation path for new development. Both Visual Studio and the .NET CLI use NuGet.org by default.
+
+## Download from the Telerik NuGet server
 
 The Telerik server is an online package source that can be accessed through Visual Studio's Nuget Package Manager in order to easily install and upgrade Telerik assemblies. The NuGet server resides at: [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json). 
-
-> The NuGet v2 server at https://nuget.telerik.com/nuget was sunset in November 2024. The new v3 protocol offers faster package searches and restores, improved security, and more reliable infrastructure. To redirect your feed to the NuGet v3 protocol, all you have to do is to change  your NuGet package source URL to https://nuget.telerik.com/v3/index.json. 
 
 As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password.
 
@@ -96,7 +118,7 @@ If you previously stored credentials for the Telerik NuGet server, you need to r
 1. Restart Visual Studio.
 1. Add the Telerik NuGet package source again through Visual Studio or .NET CLI.
 
-## Using a Local Package Source
+## Manually Download NuGet Packages from a local NuGet feed
 
 The Telerik packages are available as `.nupkg` files that can be downloaded from your telerik.com account. The following steps describe what to download and how to setup the package source:
 

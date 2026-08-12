@@ -16,6 +16,8 @@ With every release of Telerik UI for WPF, we try to avoid introducing changes th
 
 Telerik Upgrade API Analyzer could be used when upgrading your desktop application such as WPF or WinForms as well as your Silverlight or ASP.NET Web application.
 
+>tip For an actively developed, command-line alternative, see the [Telerik CLI migrate analyze command]({%slug telerik-cli-migrate-analyzer%}).
+
 ## Why Do You Need This Tool?
            
 In short, the __Telerik Upgrade API Analyzer__ tool will help you with the upgrade of the Telerik controls to a newer version. It thoroughly analyzes the code of your project and provides a list of the changes found between the currently used release and the release youâ€™re planning to upgrade to. Such changes could include obsolete and removed methods and properties as well as modified methods and properties. Additionally, the tool points out the exact piece of code that is affected by a certain change and in cases that involve an obsolete method/property, the tool gives suggestions of how to modify that code.                      
@@ -94,3 +96,8 @@ __Upgrade API Analyzer__ is a subject of current and future development and weâ€
 Please send us your comments either through the Feedback link inside __API Analyzer__ or directly at [UpgradeApiAnalyzer@telerik.com](mailto:UpgradeApiAnalyzer@telerik.com).
 
 Additionally, please review the Frequently Asked Questions section in the [API Analyzer Helps Upgrading Telerik Projects](http://www.telerik.com/blogs/api-analyzer-helps-upgrading-telerik-projects) blog post.
+
+## See Also
+
+* [Detecting Breaking Changes with the Telerik CLI migrate Command]({%slug telerik-cli-migrate-analyzer%})
+* [Setup and Installation with Telerik CLI]({%slug telerik-cli%})

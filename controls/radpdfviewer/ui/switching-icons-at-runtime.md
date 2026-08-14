@@ -28,7 +28,7 @@ __Example 1: Creating IconSources__
 ```
 
 
->tip To browse all icons you can download the source code of the controls from your Telerik account. The images are located at {%if site.site_name == 'WPF' %}\Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\PdfViewer\FixedDocumentViewers\Images{%endif%}{%if site.site_name == 'Silverlight' %}\Telerik\_UI\_for\_Silverlight\_Source\_[Version]Controls\PdfViewer\FixedDocumentViewers\Images{%endif%}.
+>tip To browse the Light, Dark, and Modern icon sets you can download the source code of the controls from your Telerik account. The images are located at \Telerik\_UI\_for\_WPF\_Source\_[Version]\Source\Controls\PdfViewer\Core\Code\Images\.
 
 
 ## See Also

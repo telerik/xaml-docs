@@ -12,6 +12,10 @@ position: 1
 
 __RadGridView__ has inbuilt default scrolling mechanism. There are also options provided to additionally configure it for a better user experience.
 
+## Mouse-Wheel Scrolling and Keyboard Focus
+
+When the mouse pointer is over __RadGridView__, the grid's scroll viewer handles the mouse-wheel input and scrolls the view. Before scrolling, it preserves the current focus, so the grid can scroll while another control in the window remains the keyboard-focused control. Scrolling the grid with the mouse wheel does not, by itself, move keyboard focus to the grid.
+
 ## Scroll Modes
 
 __RadGridView__ provides two built-in scrolling modes, which allow you to manipulate the type of scrolling. 

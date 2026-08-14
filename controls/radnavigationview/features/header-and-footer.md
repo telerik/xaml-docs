@@ -101,7 +101,7 @@ As of **R3 2020**, you can also define RadNavigationViewItems in the footer sect
 __Example 4: Place items in the footer__
 ```XAML
     <DataTemplate x:Key="PaneFooterTemplate">
-        <telerik:NavigationViewSubItemsHost>
+        <telerik:NavigationViewSubItemsHost MaxHeight="100">
             <telerik:RadNavigationViewItem Content="Footer Item 1">
                 <telerik:RadNavigationViewItem.Items>
                     <telerik:RadNavigationViewItem Content="Footer SubItem 1" />
@@ -113,6 +113,8 @@ __Example 4: Place items in the footer__
         </telerik:NavigationViewSubItemsHost>
     </DataTemplate>
 ```
+
+To limit the height of the footer items host, set its `MaxHeight` property in the `PaneFooterTemplate`, as shown in the example.
 
 ## Customizing the Pane Toggle Button
 

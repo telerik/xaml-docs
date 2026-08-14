@@ -63,6 +63,46 @@ Afterwards you will only have to add a new instance of __RadDocking__ inside of 
 
 This will be the final result:![Features Nested Docking 02](images/Features_NestedDocking_02.png)
 
+## Creating a Tab with a Vertical Split
+
+To create one full-height tab and another tab that contains two simultaneously visible vertically stacked panes, place the nested `RadDocking` inside the second outer `RadPane`. Use a separate `RadPaneGroup` for each inner pane. Adding both inner panes to the same `RadPaneGroup` would create tabs instead of a split layout.
+
+```XAML
+	<telerik:RadDocking x:Name="OuterDocking">
+	    <telerik:RadDocking.DocumentHost>
+	        <telerik:RadSplitContainer>
+	            <telerik:RadPaneGroup>
+	                <telerik:RadPane Header="Full Height">
+	                    <TextBlock Text="Full-height content" />
+	                </telerik:RadPane>
+	                <telerik:RadPane Header="Two Panes">
+	                    <telerik:RadDocking x:Name="InnerDocking" CloseButtonPosition="InPane">
+	                        <telerik:RadDocking.DocumentHost>
+	                            <telerik:RadSplitContainer Orientation="Vertical">
+	                                <telerik:RadPaneGroup>
+	                                    <telerik:RadPane Header="Top Pane">
+	                                        <TextBlock Text="Top content" />
+	                                    </telerik:RadPane>
+	                                </telerik:RadPaneGroup>
+	                                <telerik:RadPaneGroup>
+	                                    <telerik:RadPane Header="Bottom Pane">
+	                                        <TextBlock Text="Bottom content" />
+	                                    </telerik:RadPane>
+	                                </telerik:RadPaneGroup>
+	                            </telerik:RadSplitContainer>
+	                        </telerik:RadDocking.DocumentHost>
+	                    </telerik:RadDocking>
+	                </telerik:RadPane>
+	            </telerik:RadPaneGroup>
+	        </telerik:RadSplitContainer>
+	    </telerik:RadDocking.DocumentHost>
+	</telerik:RadDocking>
+```
+
+The outer `RadPaneGroup` creates the two tabs. When the `Two Panes` tab is selected, the nested `RadSplitContainer` displays the `Top Pane` and `Bottom Pane` at the same time:
+
+![RadDocking with two tabs and a nested vertical split showing top and bottom panes](images/nested-dcking-with-vertical-split.gif)
+
 ## Specific User Case Scenarios
 
 In this section you can see screenshots of few layouts achieved with nested __RadDockings__:

@@ -75,11 +75,32 @@ The RadGridView defined above will be displayed as shown in **Figure 1**.
 
 ![Telerik UI for {{ site.framework_name }} RadGridView using CellTemplate and CellEditTemplate for date and salary columns](images/RadGridView_CellTemplate_CellEditTemplate.png)
 
+## Making Buttons Accessible
+
+You do not need to set a RadGridView property for a button defined in a `CellTemplate` to be exposed to UI Automation. RadGridView exposes the cell content as a child automation element. Make sure that the global [AutomationMode]({%slug common-ui-automation%}) setting is not `Disabled`.
+
+The button owns its accessible name. Set the `AutomationProperties.Name` property when the button content does not provide a meaningful name, such as when the button displays an icon or a custom visual.
+
+__Example 2: Set the accessible name of a button in a CellTemplate__
+
+```XAML
+	<telerik:GridViewDataColumn Header="Actions">
+		<telerik:GridViewDataColumn.CellTemplate>
+			<DataTemplate>
+				<Button Content="Open"
+				        AutomationProperties.Name="Open item" />
+			</DataTemplate>
+		</telerik:GridViewDataColumn.CellTemplate>
+	</telerik:GridViewDataColumn>
+```
+
+Use an accessibility testing tool to verify that the button is exposed with the expected name and control type in your application.
+
 >important When you define a __CellEditTemplate__ for a column, the __default validation__ mechanism is __bypassed__ as you're directly binding to the source property. If you require this validation, [create a custom column editor]({%slug radgridview-howto-create-custom-editor%}) instead.
 
 The first example illustrates how to define either a __CellTemplate__ or __CellEditTemplate__. In the next example, we demonstrate how to set them both for the same column.
 
-__Example 2: Setting the CellTemplate and CellEditTemplate of a single column__
+__Example 3: Setting the CellTemplate and CellEditTemplate of a single column__
 
 ```XAML
 	<telerik:RadGridView x:Name="EmployeesGrid" AutoGenerateColumns="False" ItemsSource="{Binding Employees}">

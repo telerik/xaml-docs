@@ -13,7 +13,7 @@ This article shows how to get or create a DataTemplate in code using few differe
 
 ## Defining the Template in XAML
 
-The most conveninent approach is to define the DataTemplate in XAML and get it in code when needed.
+The most convenient approach is to define the DataTemplate in XAML and get it in code when needed.
 
 __Example 1: Defining the DataTemplate in XAML__
 ```XAML
@@ -68,7 +68,7 @@ __Example 3: Parsing a string containing a DataTemplate__
 
 ## Using FrameworkElementFactory 
 
-Creating a DataTemplate in code is not as simple as creating a visual element, like аn heir of UIelement for example. To do so you will need to use the __FrameworkElementFactory__ class. As this is the least recommended approach for creating a DataTemplate in code there won't be example for it. But, if you need to use it check the [FrameworkElementFactory](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelementfactory?view=netframework-4.7.2) documentation in MSDN.
+Creating a DataTemplate in code is not as simple as creating a visual element, like an heir of UIelement for example. To do so you will need to use the __FrameworkElementFactory__ class. As this is the least recommended approach for creating a DataTemplate in code there won't be example for it. But, if you need to use it check the [FrameworkElementFactory](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelementfactory?view=netframework-4.7.2) documentation in MSDN.
 
 ## See Also 
 * [Introduction]({%slug introduction%})

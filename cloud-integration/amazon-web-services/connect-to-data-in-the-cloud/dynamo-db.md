@@ -12,7 +12,7 @@ position: 0
 
 This article will show you how to create a {{ site.framework_name }} application and access data stored in a DynamoDB table by connecting to the **AWS DynamoDB** service.
 
-> Please note that you can use the [local version](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html) of DynamoDB to setup and test your application. This article shows a real example where an actual DynamoDB web service is used.
+> Please note that you can use the [local version](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html) of DynamoDB to set up and test your application. This article shows a real example where an actual DynamoDB web service is used.
 
 ## Step 1: Create the Application
 
@@ -53,7 +53,7 @@ In **Visual Studio** open the **NuGet Package Manager** and install the **Dynamo
 
 ![Visual Studio NuGet Package Manager installing the AWS DynamoDB package](images/aws-dynamo-db002.png)
 
-Another option is to to type the following command in the **NuGet Package Manager Console**: *PM> Install-Package AWSSDK.DynamoDBv2*
+Another option is to type the following command in the **NuGet Package Manager Console**: *PM> Install-Package AWSSDK.DynamoDBv2*
 
 In addition you need to [configure your AWS credentials](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-config.html). One way to do this is to specify the credentials in the **App.config** file of your application as demonstrated in **Example 1**.
 

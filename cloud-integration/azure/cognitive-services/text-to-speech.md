@@ -149,7 +149,7 @@ The Checked handler creates a new instance of the **MicrophoneRecognitionClient*
 
 ## Use the User Control
 
-That's it. You can now use the control however you find necessary to record you speech.
+That's it. You can now use the control however you find necessary to record your speech.
 
 __Example 4: Use the User Control__
 

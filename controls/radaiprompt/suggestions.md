@@ -42,7 +42,7 @@ RadAIPrompt control exposes properties that will allow you to customize the appe
 * `SuggestionHeaderContentTemplate`&mdash;Allows you to specify a custom DataTemplate for the header of the element that visualizes the suggestions.
 * `SuggestionsExpanderStyle`&mdash;This property lets you set a custom Style for the RadExpander element that displays the suggestions.
 
-The following example showscases the RadAIPrompt when the above properties are used:
+The following example showcases the RadAIPrompt when the above properties are used:
 
 __Defining a sample model and a view model__
 ```C#
@@ -109,6 +109,6 @@ __RadAIPrompt suggestions with custom appearance__
 ## See Also
 * [Views]({%slug radaiprompt-views%})
 * [Events]({%slug radaiprompt-events%})
-* [RadAIPromptButon]({%slug radaiprompt-prompt-button%})
+* [RadAIPromptButton]({%slug radaiprompt-prompt-button%})
 * [Commands]({%slug radaiprompt-commands%})
 * [Paging]({%slug radaiprompt-paging%})

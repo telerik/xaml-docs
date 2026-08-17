@@ -10,7 +10,7 @@ position: 0
 
 # Axis
 
-The `RadCartesianChart` and `RadPolarChart` plot data points in a coordinate system defined by two axes. There are a few different types of axes and they are: __Linear__, __Logarithmic__, __DateTime__ and __Categorical__. This article discusses the common characteristics of the axes, as well as the specifics of the `LinerAxis`. The other types are discussed in their respective help articles.        
+The `RadCartesianChart` and `RadPolarChart` plot data points in a coordinate system defined by two axes. There are a few different types of axes and they are: __Linear__, __Logarithmic__, __DateTime__ and __Categorical__. This article discusses the common characteristics of the axes, as well as the specifics of the `LinearAxis`. The other types are discussed in their respective help articles.        
 
 The chart axis is represented by the abstract `Axis` class and is responsible for displaying ticks that simply mark values on the axis at fixed positions. The axis also displays labels that are used to provide a visualization of the values at some or all of the ticks. The default visualization of the labels is text.        
 
@@ -162,7 +162,7 @@ The range of the chart's continuous axes (LinearAxis, LogarithmicAxis and DateTi
 
 * `ActualRange`&mdash;The property returns an object of type `ValueRange<T>` that contains the actual visible range of the axis. This is the range visible in the plot area of the control. The `ActualVisibleRange` will be different than the `ActualRange` when you zoom-in the chart. See also the `ActualRangeChanged` event in the [Common Events](#common-events) section of this article.
 
-* `ActualVisibleRange`&mdash;The property returns an object of type `ValueRange<T>` that contains the the actual range of the axis - minimum and maximum. See also the `ActualVisibleRangeChanged` event in the [Common Events](#common-events) section of this article.
+* `ActualVisibleRange`&mdash;The property returns an object of type `ValueRange<T>` that contains the actual range of the axis - minimum and maximum. See also the `ActualVisibleRangeChanged` event in the [Common Events](#common-events) section of this article.
 
 * `ActualMajorStep`&mdash;The property returns a numeric value that determines the actual major step of the axis. Available only for `LinearAxis`. See also the `ActualMajorStepChanged` event in the [Common Events](#common-events) section of this article.
 

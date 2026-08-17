@@ -11,7 +11,7 @@ CTAControlName: RadChat
 
 # WPF Chat Overview
 
-The __RadChat__ component enables easy implementation of conversational UI in WPF applications, whether by utilizing certain chatbot framework, by following a predefined logical tree, or just for integrating P2P chat capabilites.
+The __RadChat__ component enables easy implementation of conversational UI in WPF applications, whether by utilizing certain chatbot framework, by following a predefined logical tree, or just for integrating P2P chat capabilities.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}

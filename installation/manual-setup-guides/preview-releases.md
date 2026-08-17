@@ -1,7 +1,7 @@
 ---
 title: Preview Releases
 page_title: Preview Releases
-description: This article describes the Telerik WPF Preview release and how to download it to get the lastest bug fixes.
+description: This article describes the Telerik WPF Preview release and how to download it to get the latest bug fixes.
 slug: installation-preview-releases
 tags: using,the,hotfix,(dlls,only), lib, latest, internal, build, preview
 published: True

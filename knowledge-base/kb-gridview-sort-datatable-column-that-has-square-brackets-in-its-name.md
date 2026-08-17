@@ -109,4 +109,4 @@ To achieve a sorting functionality in this scenario, implement custom sorting lo
         }
     ```
 
->important The [IsCustomSortingEnabled]({%slug gridview-set-sortingstate-on-column%}) property of the column needes to be set to __true__, when implementing custom sorting logic.
+>important The [IsCustomSortingEnabled]({%slug gridview-set-sortingstate-on-column%}) property of the column needs to be set to __true__, when implementing custom sorting logic.

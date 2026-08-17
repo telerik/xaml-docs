@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 
-How to change the Foreground of а GridViewRow that is selected or hovered. 
+How to change the Foreground of a GridViewRow that is selected or hovered. 
 
 ## Solution
 

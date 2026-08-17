@@ -10,7 +10,7 @@ position: 7
 
 # Input Box Settings
 
-The input box is represented by the `RadPromptInput` contorl which allows you to write text, speak and to attach files.
+The input box is represented by the `RadPromptInput` control which allows you to write text, speak and to attach files.
 
 ![A picture showing the input box element](images/chat-input-box-settings-0.png)
 

@@ -212,7 +212,7 @@ article table
 
 # Crystal Theme
 
-Inspired by MacOS, the Crystal theme delivers the renown Mac OS look and feel to your WPF apps. The team at Apple have been a trend setter with their clean UI and with the Crystal theme you will be able to bring that style to your own apps.
+Inspired by MacOS, the Crystal theme delivers the renowned Mac OS look and feel to your WPF apps. The team at Apple have been a trend setter with their clean UI and with the Crystal theme you will be able to bring that style to your own apps.
 
 Jump to the following topics to learn about the specifics of the theme's palette and features.
 
@@ -373,7 +373,7 @@ __Setting FontSize and FontFamily__
 
 ## Using Glyphs
 
-The `Crystal` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. The `RadGlyph` provides a lightweight, flexble and design-time-friendly implementation of our glyph font.  
+The `Crystal` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
  
@@ -386,7 +386,7 @@ __Changing the default corner radius__
 	CrystalPalette.Palette.CornerRadius = new CornerRadius(0); 	
 ```
 
-__Apperance of a RadButton control after changing the default corner radius__
+__Appearance of a RadButton control after changing the default corner radius__
 
 ![Telerik UI for WPF RadButton with a corner radius of zero in the Crystal theme](images/crystal-theme-button-cornerradius.png)
 

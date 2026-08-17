@@ -27,7 +27,7 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
 
 ## Solution
 
-1. Handle the **Loaded** event of the parent **RadRropertyGrid**.
+1. Handle the **Loaded** event of the parent **RadPropertyGrid**.
 	
 	```C#
 		private void RadPropertyGrid_Loaded(object sender, RoutedEventArgs e)

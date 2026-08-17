@@ -26,7 +26,7 @@ The application requires the following component in order to be installed and ru
 
 ## Getting the Source Code
 
-Visual Studio solution containing the source code of the examples is available in the in your Telerik account. 
+Visual Studio solution containing the source code of the examples is available in your Telerik account. 
 
 Follow the next steps in order to download it:
 

@@ -10,7 +10,7 @@ position: 1
 
 # Relational Database Service (RDS)
 
-This article will show you to create a {{ site.framework_name }} application and access data stored in the cloud by using the **Amazon Relational Database Service**. You will then display the data using the [RadGridView]({%slug gridview-getting-started2%}) and [RadDataPager]({%slug raddatapager-getting-started%}) controls. For the purpose, you will use the **QueryableEntityCollectionView** class which will transfer all the group, filter, sort and paging operations to the cloud.
+This article will show you how to create a {{ site.framework_name }} application and access data stored in the cloud by using the **Amazon Relational Database Service**. You will then display the data using the [RadGridView]({%slug gridview-getting-started2%}) and [RadDataPager]({%slug raddatapager-getting-started%}) controls. For the purpose, you will use the **QueryableEntityCollectionView** class which will transfer all the group, filter, sort and paging operations to the cloud.
 
 ## Step 1: Set up the Database Instance
 
@@ -107,7 +107,7 @@ __Example 3: Set the connection string__
     }
 ```
 
-Open the Package Manager Console and run the **Enable-Migrations** command which will in turn crate a **Migrations** folder with a **Configuration** class in it.
+Open the Package Manager Console and run the **Enable-Migrations** command which will in turn create a **Migrations** folder with a **Configuration** class in it.
 
 Enable automatic migrations for the database by setting the **AutomaticMigrationsEnabled** property to **True** and seed some records to the database by overriding the **Seed** method.
 
@@ -144,7 +144,7 @@ Run the **Update-Database** command in the Package Manager Console to create the
 
 ## Step 5: Define the ViewModel
 
-Now that the database is created an populated, you can create the viewmodel which will handle all the interaction with the database. First define the properties which will be used to interact with the view.
+Now that the database is created and populated, you can create the viewmodel which will handle all the interaction with the database. First define the properties which will be used to interact with the view.
 
 __Example 5: Define public properties__
 
@@ -236,7 +236,7 @@ The **RunWorkerCompleted** event handler then creates a new instance of the gene
 
 ## Step 7: Save and Load Changes To and From the Database
 
-The final step is to actually save any changes that are made the database as well as obtain the updated data in case any changes on the cloud have occured. **Example 4** demonstrates the code for these two operations.
+The final step is to actually save any changes that are made to the database as well as obtain the updated data in case any changes on the cloud have occurred. **Example 4** demonstrates the code for these two operations.
 
 __Example 7: Save and Load changes__
 

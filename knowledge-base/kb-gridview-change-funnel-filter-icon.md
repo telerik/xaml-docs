@@ -20,7 +20,7 @@ res_type: kb
 
 ## Description
 
-How to change the filter icon of the FilteringDropDown control in RadGrdView
+How to change the filter icon of the FilteringDropDown control in RadGridView
 
 ## Solution
 

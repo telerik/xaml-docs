@@ -61,7 +61,7 @@ Expander	|	Yes	|
 ExpressionEditor	|	Yes	|	
 GanttView	|	No	|	
 Gauge	|	Yes	|	
-GridView	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission for any operation that includes dragging of an element ( grouping, columns reording, frozen columns, rows reordering, rows resizing, etc.) LinqToSql data - Requires additional permission for System.Security.Permissions.ReflectionPermission
+GridView	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission for any operation that includes dragging of an element ( grouping, columns reordering, frozen columns, rows reordering, rows resizing, etc.) LinqToSql data - Requires additional permission for System.Security.Permissions.ReflectionPermission
 HeatMap	|	Yes	|	
 ImageEditor	|	Yes	|	
 ImageEditorUI	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission
@@ -95,7 +95,7 @@ TimeBar	|	Yes	|
 Timeline	|	Yes	|	
 ToolBar	|	Yes	|	
 TransitionControl	|	Yes	|	
-TreeListView	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission for any operation that includes dragging of an element (columns reording, frozen columns, rows reordering, rows resizing, etc.)
+TreeListView	|	Partially	|	Requires additional permission for System.Security.Permissions.MediaPermission for any operation that includes dragging of an element (columns reordering, frozen columns, rows reordering, rows resizing, etc.)
 TreeMap	|	No	|	
 TreeView	|	Yes	|	
 VirtualizingWrapPanel	|	Yes	|	

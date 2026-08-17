@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-The content control inside of RadComboBox gets clipped when the Height of the combobox is less than 26px in Office2016 them.
+The content control inside of RadComboBox gets clipped when the Height of the combobox is less than 26px in Office2016 theme.
 
 Note that only the content gets clipped and not the control itself. The expected behavior is that the content is clipped, but also the control becomes smaller.
 

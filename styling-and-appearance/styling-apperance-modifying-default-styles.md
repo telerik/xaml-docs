@@ -27,7 +27,7 @@ For the purposes of this article, we will modify RadGridView's **FilteringDropDo
 
 ### Editing Additional Styles
 
-The first option to create the needed style is to right-click on your instance of RadGridView and from the context menu select **Edit Additional Templates -> _Desired Style_ -> Edit a Copy**. You can then procede to the [Create Style Resource](#create-style-resource) section.
+The first option to create the needed style is to right-click on your instance of RadGridView and from the context menu select **Edit Additional Templates -> _Desired Style_ -> Edit a Copy**. You can then proceed to the [Create Style Resource](#create-style-resource) section.
 
 #### __Figure 1: Editing additional templates__
 

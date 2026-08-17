@@ -21,7 +21,7 @@ Before you start, make sure to:
 
 >tip If you have already set up your Telerik development environment and it doesn't need updating, skip to [create the WPF project](#create-the-wpf-project).
 
-The fastest way to set up your Telerik development environment is to use the [Telerik CLI]({%slug telerik-cli%}) .NET tool commands in a command shell (cmd, powershell, etc.).
+The fastest way to set up your Telerik development environment is to use the [Telerik CLI]({%slug telerik-cli%}) .NET tool commands in a command shell (cmd, PowerShell, etc.).
 
 1. Install Telerik CLI
 
@@ -35,7 +35,7 @@ The fastest way to set up your Telerik development environment is to use the [Te
 	telerik setup wpf
 	```
 
-The `setup` command performs [multiple Telerik CLI setup steps at once]({%slug telerik-cli%}) to configure your Telerik development environment - login, license key installation, nuget package source configuration and mcp server setup.
+The `setup` command performs [multiple Telerik CLI setup steps at once]({%slug telerik-cli%}) to configure your Telerik development environment - login, license key installation, NuGet package source configuration and MCP server setup.
 
 ## Create the WPF Project
 
@@ -51,7 +51,7 @@ Create a new WPF project in Visual Studio.
 
 1. Right-click on the project name in Visual Studio and select **Manage NuGet Packages**.
 1. Open the **Browse** tab.
-1. In the __Package source__ drop down menu on the right, make sure to select the Telerik nuget package source or the __All__ option.
+1. In the __Package source__ drop down menu on the right, make sure to select the Telerik NuGet package source or the __All__ option.
 1. Search for `Telerik.UI.for.Wpf.AllControls.Xaml` and install it in the project.
 
 	```

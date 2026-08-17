@@ -28,7 +28,7 @@ __RadColorEditor__ for {% if site.site_name == 'Silverlight' %}Silverlight{% end
 
 * __Unified Color__: RadColorEditor’s UnifiedColor functionality represents an entity that exposes all the values of a color in the different color models. [Read more]({%slug radcoloreditor-features-unified-color%})
 
-* __Active Sections__: You can easly customize the __RadColorEditor__ control. Using the active sections functionality you can combine/remove different parts of the control. [Read more]({%slug radcoloreditor-activesections%})
+* __Active Sections__: You can easily customize the __RadColorEditor__ control. Using the active sections functionality you can combine/remove different parts of the control. [Read more]({%slug radcoloreditor-activesections%})
 
 >tip Get started with the control with its [Getting Started]({%slug radcoloreditor-getting-started%}) help article that shows how to use it in a basic scenario.
 

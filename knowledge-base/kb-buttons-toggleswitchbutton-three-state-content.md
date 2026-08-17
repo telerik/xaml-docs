@@ -292,6 +292,6 @@ __Setting the Content and ContentTemplate when the IsChecked property is null__
     </telerik:RadToggleSwitchButton>
 ```
 
-__RadToggleSwichButton with content when the IsChecked property is null__
+__RadToggleSwitchButton with content when the IsChecked property is null__
 
-![RadToggleSwichButton with content when the IsChecked property is null](images/kb-buttons-toggleswitchbutton-three-state-content-0.png)
+![RadToggleSwitchButton with content when the IsChecked property is null](images/kb-buttons-toggleswitchbutton-three-state-content-0.png)

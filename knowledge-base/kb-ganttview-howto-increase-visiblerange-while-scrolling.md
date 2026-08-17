@@ -55,4 +55,4 @@ Handle the __Loaded__ event of the RadGanttView and obtain a reference to the Sc
 
 ## See also
 
-* [ChildreOfTypeExtensions]({%slug common-visual-tree-helpers%}#childrenoftypeextensions)
+* [ChildrenOfTypeExtensions]({%slug common-visual-tree-helpers%}#childrenoftypeextensions)

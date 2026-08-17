@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-By default, the orientation of the RadCarouselPanel is horizontal. When the RadCarouselPanel is set in vertical mode, the swipe animation does not work correctly. The build-in swiping logic only checks the horizontal offset of the swipe, which occurs. 
+By default, the orientation of the RadCarouselPanel is horizontal. When the RadCarouselPanel is set in vertical mode, the swipe animation does not work correctly. The built-in swiping logic only checks the horizontal offset of the swipe, which occurs. 
 
 ## Solution
 

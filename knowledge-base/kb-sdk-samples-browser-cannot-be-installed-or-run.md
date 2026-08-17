@@ -34,7 +34,7 @@ If you're unable to install the ClickOnce application and receive the following 
 
 "Your administrator has blocked this application because it potentially poses a security risk to your computer."
 
-This is means that you do not have the required permissions to install ClickOnce applications on the machine and need to [configure the ClickOnce trust prompt](https://docs.microsoft.com/en-us/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior?view=vs-2019) and ensure the current user has the necessary permissions.
+This means that you do not have the required permissions to install ClickOnce applications on the machine and need to [configure the ClickOnce trust prompt](https://docs.microsoft.com/en-us/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior?view=vs-2019) and ensure the current user has the necessary permissions.
 
 ## Errors when Running the Browser
 

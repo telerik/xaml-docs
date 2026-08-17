@@ -1,7 +1,7 @@
 ---
 title: Getting Started 
 page_title: Getting Started 
-description: This article shows how to set up an environment and start using Azure Web Services (AWS).
+description: This article shows how to set up an environment and start using Amazon Web Services (AWS).
 slug: cloud-services/aws/getting-started
 tags: cloud, aws
 published: True
@@ -10,7 +10,7 @@ position: 1
 
 # Getting Started
 
-This article will help you to setup your environment and start using AWS. Here are the main steps that you need to take:
+This article will help you to set up your environment and start using AWS. Here are the main steps that you need to take:
 
 1. [Create an AWS account](#create-an-aws-account)
 2. [Install the AWS SDK for .NET](#install-the-aws-sdk)
@@ -42,8 +42,8 @@ Click add new user and follow the instructions on the screen. There are 4 steps:
 
 ![AWS console Create User workflow with its four setup steps](images/aws-getting-started003.png)
 
-1. Chose the name and access (programmatic and/or management console).
-2. Chose permission policy - for the firs user you can use any of the existing policies(the third icon).
+1. Choose the name and access (programmatic and/or management console).
+2. Choose permission policy - for the first user you can use any of the existing policies(the third icon).
 3. Just confirm by pressing *Create User*.
 4. This is a summary page which allows you to download the user details in a csv file. Click Download and save the file. You will import this in Visual Studio. 
 

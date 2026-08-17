@@ -23,7 +23,7 @@ The following list shows the supported memory actions with example.
 	1. Input - '3' -> M+ -> Memory Value - '3'
 	1. Input - '6' -> M+ -> Memory Value - '9'
 
-* __Memory Minus (M-)__&mdash;Substracts the current input value from the memory value.
+* __Memory Minus (M-)__&mdash;Subtracts the current input value from the memory value.
 
 	Example:  
 

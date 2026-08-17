@@ -16,7 +16,7 @@ Keep properties in a separate class from your view model, which should be open f
 
 ## Solution
 
-In such a scenario, the separate class can follow the __singleton pattern__. This will allow you to separate the view model and the additional logic that should not be part of it, while maintaning data-binding and property changes that will be reflected in the UI.
+In such a scenario, the separate class can follow the __singleton pattern__. This will allow you to separate the view model and the additional logic that should not be part of it, while maintaining data-binding and property changes that will be reflected in the UI.
 
 The following example showcases a simple scenario with a view model and a separate class that will contains settings that the user can modify.
 

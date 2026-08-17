@@ -9,7 +9,7 @@ position: 0
 
 # Customize the Buttons
 
-RadAutoSuggestBox has two customizeable buttons - the clear button and the query button.
+RadAutoSuggestBox has two customizable buttons - the clear button and the query button.
 
 You can customize those by setting the __ClearButtonContent__ and __QueryButtonContent__ properties.
 

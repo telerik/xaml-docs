@@ -33,7 +33,7 @@ __RadCardView__ allows you to display data in a card-like layout where you can s
 
 * __Different card layouts__: The layout of the cards and groups can be altered between row and column based ordering. Read more in the [Card Layout]({%slug radcardview-features-layout%}) article.
 
-* __Customizeable elements__: The visualization of RadCardView's groups and cards can be easily customized using the control's API. Read more in the [Appearance]({%slug radcardview-appearance-customizing-cards%}) section of the documentation.
+* __Customizable elements__: The visualization of RadCardView's groups and cards can be easily customized using the control's API. Read more in the [Appearance]({%slug radcardview-appearance-customizing-cards%}) section of the documentation.
 
 * __Data Validation__: The control comes with a built-in data validation feature and visual feedback for values that don't match the validation criteria. Read more in the [Data Validation]({%slug radcardview-features-validation%}) article.
 

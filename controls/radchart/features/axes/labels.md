@@ -18,7 +18,7 @@ The axes of the RadChart display a label for each of the major ticks
 
 You can specify custom Axis Items Labels by either specifying a [XCategory]({%slug radchart-features-categorical-charts%}) or by manually setting TickPoint's labels. 
 
-XCategory is used when the data is not sequential, i.e. values on the X Axis have no meaning, for examle when the chart presents information for different companies (whose names are placed on the X axis) or other entities. In case X value is present in the data, and something else should be placed on the X axis, you need to go through the __RadChart.DefaultView.ChartArea.AxisX.TickPoints__ collection and set __Label__ for each TickPoint. Since the XCategory is already described in another help article - [Categorical Charts]({%slug radchart-features-categorical-charts%}) this topic will demonstrate the second approach:
+XCategory is used when the data is not sequential, i.e. values on the X Axis have no meaning, for example when the chart presents information for different companies (whose names are placed on the X axis) or other entities. In case X value is present in the data, and something else should be placed on the X axis, you need to go through the __RadChart.DefaultView.ChartArea.AxisX.TickPoints__ collection and set __Label__ for each TickPoint. Since the XCategory is already described in another help article - [Categorical Charts]({%slug radchart-features-categorical-charts%}) this topic will demonstrate the second approach:
 
 
 

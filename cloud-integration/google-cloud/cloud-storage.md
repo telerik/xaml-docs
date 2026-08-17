@@ -52,7 +52,7 @@ Open the NuGet Package Manager and install the **Google.Cloud.Storage.V1** packa
 
 ## Step 3: Define the ViewModel
 
-The next step is to create the ViewModel. It will need an [StorageClient](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Storage.V1/api/Google.Cloud.Storage.V1.StorageClient.html) object which will be used for uploading, deleting and listing files. We also need to implement all of the commands that the RadButtons are bound to.
+The next step is to create the ViewModel. It will need a [StorageClient](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Storage.V1/api/Google.Cloud.Storage.V1.StorageClient.html) object which will be used for uploading, deleting and listing files. We also need to implement all of the commands that the RadButtons are bound to.
 
 __Example 2: Defining the ViewModel__
 

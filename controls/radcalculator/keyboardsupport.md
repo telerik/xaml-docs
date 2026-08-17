@@ -20,7 +20,7 @@ The following list shows the supported keys:
 
 * `Add key (+)`&mdash;Allows performing addition both from the keyboard and the numeric pad.			  
 
-* `Substract key (-)`&mdash;Allows performing subtraction subtraction both from the keyboard and the numeric pad.			  
+* `Subtract key (-)`&mdash;Allows performing subtraction both from the keyboard and the numeric pad. 		  
 
 * `Multiply key (*)`&mdash;Allows performing multiplication both from the keyboard and the numeric pad.
 

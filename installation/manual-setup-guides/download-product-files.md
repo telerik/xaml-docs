@@ -10,7 +10,7 @@ position: 2
 
 # Downloading Product Files
 
-Telerik UI for WPF distributes a set of installation files which can be downloaded from your telerik.com account. This includes, installers, demos, source code (with the commericial license), documentation, nugets and more.
+Telerik UI for WPF distributes a set of installation files which can be downloaded from your telerik.com account. This includes, installers, demos, source code (with the commercial license), documentation, nugets and more.
 
 To download product files:
 
@@ -24,5 +24,5 @@ When it comes to installation, most of the time, you may not need to download pr
 
 >important Please note that if you do not see the desired version you can contact our [sales team](mailto:sales@telerik.com) and they will enable the version for download.
 
-> In versions prior Q1 2024, there is a .zip file with digitally signed version of the Telerik assembles - __Telerik_UI_for_WPF_[version]_Hotfix_DIGITALLY_SIGNED.zip__. With the Q1 2024 release __all Telerik dlls are digitally signed__ and there is no need of a separate package, which is why this .zip is no longer distributed.
+> In versions prior Q1 2024, there is a .zip file with digitally signed version of the Telerik assemblies - __Telerik_UI_for_WPF_[version]_Hotfix_DIGITALLY_SIGNED.zip__. With the Q1 2024 release __all Telerik dlls are digitally signed__ and there is no need of a separate package, which is why this .zip is no longer distributed.
 

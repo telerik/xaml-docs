@@ -34,7 +34,7 @@ Currently, this section of the documentation contains only the latest release no
 
 * Removed the `ElementSaving` and `ElementCleaning` events of `RadDocking`. Use the `ElementLayoutSaving` and `ElementLayoutCleaning` events instead. 
 
-* Removed the `Telerik.Windows.Controls.PaneHeaderAutomationPeer` class. Use the `Telerik.Windows.Automation.Peers.PaneHeaderAutomationPeer` class insteand.
+* Removed the `Telerik.Windows.Controls.PaneHeaderAutomationPeer` class. Use the `Telerik.Windows.Automation.Peers.PaneHeaderAutomationPeer` class instead.
 
 * Removed the `PreviewResizeStart` event of `RadGridResizer` as was not used.
 
@@ -317,7 +317,7 @@ Currently, this section of the documentation contains only the latest release no
 
 * Removed the `AbsoluteValueBrushColorizer` class. Use the `ValueBrushColorizer` class instead. 
 
-* Removed the `AbsoluteValueGradientColorizer` class. Use use `ValueGradientColorizer` class instead. 
+* Removed the `AbsoluteValueGradientColorizer` class. Use `ValueGradientColorizer` class instead. 
 
 * Removed the `RelativeValueBrushColorizer` class. Use the `ValueBrushColorizer` class instead. 
 

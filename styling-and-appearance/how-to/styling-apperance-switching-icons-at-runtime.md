@@ -30,7 +30,7 @@ __Example 1: Creating IconSources__
 ```
 
 
->__IconsSources__ resides in the __Telerik.Windows.Controls.dll__, so you need to add a reference to the assembly  to your project first.
+>__IconSources__ resides in the __Telerik.Windows.Controls.dll__, so you need to add a reference to the assembly  to your project first.
 
 
 __IconSources__ has three distinct properties to which you can assign base paths for your images.

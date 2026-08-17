@@ -105,4 +105,4 @@ The chart's design-time adorner allows you to easily clean up the chart's conten
 
 ## See Also
 * [Chart Series Overview]({%slug radchartview-series-chartseries%})
-* [Customizing Series Apperance]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%})
+* [Customizing Series Appearance]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%})

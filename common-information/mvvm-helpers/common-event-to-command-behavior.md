@@ -77,7 +77,7 @@ __Example 4: Define the custom command__
 
 Sometimes it appears that the event you need to handle is already handled in the code of the control. In the previous example the event wasn't handled in the code so there weren't any problems. However if you need to handle the MouseLeftButtonDown for an example you won't be able unless you set the __RaiseOnHandledEvents__ property to True which allows you to raise handled events:
        
-__Example 5: Set the RasedOnHandledEvents property__
+__Example 5: Set the RaiseOnHandledEvents property__
 
 ```XAML
 	<telerik:EventToCommandBehavior.EventBindings>
@@ -160,7 +160,7 @@ The __CommandTarget__ property of the __EventBinding__ specifies the element whe
         
 ## Multiple Commands
 
-The __EventToCommandBehavior__ gives you the ability to add multiple __EventBinidings__. You can easily bind multiple commands to a single event as well as a single command to multiple events. For example we can execute two commands in the ViewModel when the MouseLeftButtonDown event of __RadListBox__ is fired:
+The __EventToCommandBehavior__ gives you the ability to add multiple __EventBindings__. You can easily bind multiple commands to a single event as well as a single command to multiple events. For example we can execute two commands in the ViewModel when the MouseLeftButtonDown event of __RadListBox__ is fired:
         
 __Example 10: Set multiple event bindings__
 

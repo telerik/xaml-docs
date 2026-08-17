@@ -29,7 +29,7 @@ If you already have a WPF project, you can go directly to the [Deploy the Applic
 
 ## Deploy the Application
 
-1. Right click the project in Visual Studio and select the __Publish__ option. This will open the __Pick a publish taget__ dialog.
+1. Right click the project in Visual Studio and select the __Publish__ option. This will open the __Pick a publish target__ dialog.
 
 	![Telerik UI for WPF Visual Studio project menu with the Publish option selected](images/netcore-support-deploy-using-visual-studio-3.png)
 

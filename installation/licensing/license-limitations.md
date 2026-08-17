@@ -14,7 +14,7 @@ The following topic explains the main differences between the licenses available
 
 Currently there are two main types of licenses used for UI for WPF - __Developer__ and __Trial__. The license is applied through a [license key]({%slug installing-license-key%}) installed on the developer's machine. 
 
-The free __Trial__ license of Telerik UI for WPF gives access to all functionalities of the product and it will work for an unlimited time. However, once the trial period expires a trial message banner along with a watermakr overlay will be displayed. 
+The free __Trial__ license of Telerik UI for WPF gives access to all functionalities of the product and it will work for an unlimited time. However, once the trial period expires a trial message banner along with a watermark overlay will be displayed. 
 
 During the active trial the following popup will display on startup of the application.
 

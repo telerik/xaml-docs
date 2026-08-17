@@ -38,7 +38,7 @@ https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPE
 
 ### Animation Base Class
 
-The build-in animations of the chart derives from the __ChartAnimationBase__ base class. All animation expose the following properties which can be used to further customize their effect.
+The built-in animations of the chart derives from the __ChartAnimationBase__ base class. All animation expose the following properties which can be used to further customize their effect.
 
 * __Delay:__ A property of type __TimeSpan__ that gets or sets the delay of the chart animation instance.
 * __Duration:__ A property of type __TimeSpan__ that gets or sets the duration of the chart animation instance.

@@ -42,7 +42,7 @@ All settings under the Telerik UI for WPF category affect only the Telerik WPF p
 
 * `Show me a message when a newer version is available on www.telerik.com`&mdash;When enabled, you will receive notifications if a new version of __Telerik UI for WPF__ is available on the Telerik website.
 
-* `Register credentials in local NuGet.config`&mdash;By default the Telerik feed credentials are registered in the global NuGet.config. When this option is enabled,a NuGet.config file will be created in the solution and the credentials registered there.
+* `Register credentials in local NuGet.config`&mdash;By default the Telerik feed credentials are registered in the global NuGet.config. When this option is enabled, a NuGet.config file will be created in the solution and the credentials registered there.
 
 ## Setting Toolbox Version
 

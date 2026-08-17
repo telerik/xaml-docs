@@ -108,7 +108,7 @@ __Example 1: Modifying the RadTreeMapItem ControlTemplate in the Office_Black th
     </Style>
 ``` 
 
->If you are using a different theme, make sure to exract and edit the ControlTemplate for the corresponding theme. 
+>If you are using a different theme, make sure to extract and edit the ControlTemplate for the corresponding theme. 
 
 ## See Also
 

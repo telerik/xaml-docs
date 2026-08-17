@@ -49,7 +49,7 @@ To protect the NuGet Key, store it as a secret environment variable. The exact s
 
 * In Azure DevOps YAML pipelines, save the key as a secret variable as well. Click the YAML editor's **Variables** button and complete the **New variable** form.
 
-If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username filed and the NuGet Key as the password in the **New NuGet service connection** form editor.
+If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username field and the NuGet Key as the password in the **New NuGet service connection** form editor.
 
 For more details on storing and protecting your NuGet Key, read Lance McCarthy's blog post on [using Telerik NuGet keys for secure package restores](https://www.telerik.com/blogs/announcing-nuget-keys).
 

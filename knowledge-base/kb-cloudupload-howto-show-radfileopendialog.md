@@ -65,5 +65,5 @@ Handle the __AddingFiles__ event of the RadCloudUpload control, cancel the creat
 
 ## See Also
 
-* [RadCloudUpload Eventts]({%slug radcloudupload-features-events%})
+* [RadCloudUpload Events]({%slug radcloudupload-features-events%})
 * [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%})

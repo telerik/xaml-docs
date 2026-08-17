@@ -16,7 +16,7 @@ position: 20
 
 __RadChart__ allows you to export the chart in several file formats:
 
-* __Png__ - Portable Netwok Graphic. Use __RadChart.ExportToImage(Stream)__.
+* __Png__ - Portable Network Graphic. Use __RadChart.ExportToImage(Stream)__.
 
 * __Bmp__ - Bitmap file. Use __RadChart.ExportToImage(Stream, BitmapEncoder)__ where the encoder is of type __BmpBitmapEncoder()__.
 

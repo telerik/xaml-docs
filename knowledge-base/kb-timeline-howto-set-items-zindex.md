@@ -91,7 +91,7 @@ __Example 3: Defining a RowIndexGenerator__
     }
 ```
 
-What is left to setup up the code behind and xaml of our MainWindow.
+What is left to set up the code behind and xaml of our MainWindow.
 
 __Example 4: Creating a collection of TimelineData objects and setting their ZIndex__
 ```C#

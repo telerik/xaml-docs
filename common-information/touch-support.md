@@ -1,7 +1,7 @@
 ---
 title: Touch Support
 page_title: Touch Support
-description: This article will describe the build-in touch support.
+description: This article will describe the built-in touch support.
 slug: touch-support
 tags: touch,support
 published: True
@@ -45,7 +45,7 @@ RadImageEditor | Scroll	|	Zoom	|	-	|	-	|	-	|	-
 RadListBox | Scroll with inertia	|	-	|	Click	|	Drag&Drop	|	-	|	-
 RadMap | Pan	|	Zoom	|	Click/Selection	|	-	|	-	|	Double Tap -> Zoom
 RadPdfViewer | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection
-RadRropertyGrid | Scroll	|	-	|	Click/Selection	|	-	|	-	|	-
+RadPropertyGrid | Scroll	|	-	|	Click/Selection	|	-	|	-	|	-	
 RadRichTextBox | Scroll	|	Zoom	|	Click (move caret to position)	|	-	|	Show context menu	|	Selection markers to extend the selection
 RadScheduleView | Horizontally - Previous/Next; Vertically - Scroll	|	Timeline - Zoom, others - switching the views	|	Click/Selection	|	On item - Drag&Drop; on slot - multiple slots selection	|	-	|	-
 RadSpreadsheet | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection

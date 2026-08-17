@@ -1,7 +1,7 @@
 ---
 title: Installation Methods
 page_title: Installation Approaches
-description: Find all Telerik UI for WOF installation approaches listed in this article.
+description: Find all Telerik UI for WPF installation approaches listed in this article.
 slug: installation-guide
 tags: installation,options,methods
 published: True
@@ -10,14 +10,14 @@ position: 1
 
 # Installing Telerik UI for WPF
 
-The Telerik UI for WPF suite is distributed with multiple installation methods that can be used according the the developer's needs. 
+The Telerik UI for WPF suite is distributed with multiple installation methods that can be used according to the developer's needs. 
 
 >important The recommended methods are using the [Telerik CLI]({%slug telerik-cli%}) and the [NuGet packages](#tab-1-nuget-installation)
 
 <TabStrip>
 <TabStripTab title="NuGet Installation">
 
-Telerik UI for WPF is distributed via nuget packages, allowing easier installation and maintenance. 
+Telerik UI for WPF is distributed via NuGet packages, allowing easier installation and maintenance. 
 
 To install the product:
 

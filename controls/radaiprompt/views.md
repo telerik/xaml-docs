@@ -10,7 +10,7 @@ position: 6
 
 # Views
 
-The `RadAIPrompt` control provides 3 default items that have as their content the dfault views. They will need to be included in its `Items` collection. The control supports only one instance of each view to be defined in this collection.
+The `RadAIPrompt` control provides 3 default items that have as their content the default views. They will need to be included in its `Items` collection. The control supports only one instance of each view to be defined in this collection.
 
 >important Setting the ItemsSource collection of the RadAIPrompt control is not supported. The Items collection has to be used instead.
 
@@ -58,7 +58,7 @@ __RadAIPrompt with the input and output views defined in it__
 
 ## Commands View
 
-The commands view is an additional view that will display the commands set to the `Commands` collection of RadAIPrompt. This view is repsented by a `RadAIPromptCommandsItem` class and it displays the Commands collection of the control via a `RadPanelBar` element.
+The commands view is an additional view that will display the commands set to the `Commands` collection of RadAIPrompt. This view is represented by a `RadAIPromptCommandsItem` class and it displays the Commands collection of the control via a `RadPanelBar` element.
 
 >tip To learn more about the commands functionality of RadAIPrompt, check the [Commands]({%slug radaiprompt-commands%}) documentation article.
 

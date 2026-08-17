@@ -69,7 +69,7 @@ __Replacing a default palette resource for a single control instance__
 
 Some of the Telerik themes provide predefined sets of colors (color variations). Applying a color variation goes through the palette color settings and apply the predefined values. See what themes support color variations in the [available Telerik UI for WPF themes overview]({%slug common-styling-appearance-available-themes%}). 
 
-To apply a color variation, call the `LoadPreset` method of the corresponding palette clas (ex: `Windows11Palette`). The variations are acessed through the `ColorVariation` enum of the palette.
+To apply a color variation, call the `LoadPreset` method of the corresponding palette class (ex: `Windows11Palette`). The variations are accessed through the `ColorVariation` enum of the palette.
 
 __Setting color variation__
 ```C#

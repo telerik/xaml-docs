@@ -10,7 +10,7 @@ position: 1
 
 # ListBox DragDropBehavior
 
-The `ListBoxDragDropBehavior` class enables customizeable drag/drop functionality in `RadListBox` and the {{ site.framework_name }} native `ListBox`.
+The `ListBoxDragDropBehavior` class enables customizable drag/drop functionality in `RadListBox` and the {{ site.framework_name }} native `ListBox`.
 
 This article shows how to use the behavior in the `ListBox` control. For `RadListBox`, see its [Drag and Drop]({%slug radlistbox-features-dragdrop%}) documentation.
 

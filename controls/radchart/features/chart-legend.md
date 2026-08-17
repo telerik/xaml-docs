@@ -145,9 +145,9 @@ The __SeriesDefinitions__ expose the __LegendDisplayMode__ property, which allow
 
 >tip The default value is different depending on the type of the series.
 
-Here is an example of how the legend looks, when the __LegednDisplayMode__ of the __DefaultSeriesDeifinition__ is set to __DataPointLabel__.
+Here is an example of how the legend looks, when the __LegendDisplayMode__ of the __DefaultSeriesDefinition__ is set to __DataPointLabel__.
 
->tip When using dynamic data and you want the __LegednDisplayMode__ to be set to __DataPointLabel__, you have to create an __ItemMapping__ for the __LegendLabel__ property of the __DataPoint__. More information about __ItemMappings__ can be found [here]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}).
+>tip When using dynamic data and you want the __LegendDisplayMode__ to be set to __DataPointLabel__, you have to create an __ItemMapping__ for the __LegendLabel__ property of the __DataPoint__. More information about __ItemMappings__ can be found [here]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}).
 
 
 
@@ -228,7 +228,7 @@ You are able to specify the shape of the Legend Item Markers just by setting the
 
 ## Reverse Legend Items Order
 
-There are scenarios where you would like to have the Legend Items displayed in reverse order. For example when you have a *Horizontal Bar Series* the series will be displayed in the Legend in the way they are populated. The bottom Serie will appear first on the Legend and the topmost will be last in the Legend. For such scenarios RadChart exposes a __ReverseLegendItemsOrder__ boolean property to reverse the Legend Items order as its name implies.
+There are scenarios where you would like to have the Legend Items displayed in reverse order. For example when you have a *Horizontal Bar Series* the series will be displayed in the Legend in the way they are populated. The bottom Series will appear first on the Legend and the topmost will be last in the Legend. For such scenarios RadChart exposes a __ReverseLegendItemsOrder__ boolean property to reverse the Legend Items order as its name implies.
 
 ## See Also
 

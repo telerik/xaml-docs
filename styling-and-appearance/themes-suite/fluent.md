@@ -265,7 +265,7 @@ __Setting FontSize and FontFamily__
 
 ## Using Glyphs
 
-The `Fluent` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. With this theme we are introducting the `RadGlyph` which provides a lightweight, flexble and design-time-friendly implementation of out glyph font.  
+The `Fluent` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. With this theme we are introducing the `RadGlyph` which provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
  
@@ -278,7 +278,7 @@ __Changing the default corner radius__
 	FluentPalette.Palette.CornerRadius = new CornerRadius(10); 	
 ```
 
-__Apperance of a RadButton control after changing the default corner radius__
+__Appearance of a RadButton control after changing the default corner radius__
 
 ![Telerik UI for WPF RadButton with a corner radius of 10 in the Fluent theme](images/fluent-theme-button-cornerradius.png)
 
@@ -339,7 +339,7 @@ The `FluentControl` is an element designed for the Fluent theme and used to disp
 * `BorderGradient`&mdash;Sets the border gradient brush. This brush should be RadialGradientBrush and is cloned in code because it is modified runtime and should not be frozen.
 * `EffectMode`&mdash;Sets the opacity of the ripple effect mode of the control - Ripple or Glow. The default effect is Ripple.
 
-__Ripple effect оn RadDropDownButton__
+__Ripple effect on RadDropDownButton__
 
 ![Telerik UI for WPF Fluent theme ripple effect on RadDropDownButton](images/fluent-light-dropdown.gif)![Telerik UI for WPF Fluent theme ripple effect on RadDropDownButton with dark variation](images/fluent-dark-dropdown.gif)
 

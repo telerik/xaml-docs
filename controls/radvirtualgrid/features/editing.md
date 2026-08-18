@@ -36,9 +36,9 @@ The editor lifecycle is:
 
 * [Action on LostFocus](#action-on-lostfocus)
 
-## Editing paths
+## Editing Paths
 
-### Direct event handling
+### Direct Event Handling
 
 Use direct event handling when you populate the grid through __InitialRowCount__ and __InitialColumnCount__ and keep the data outside a __DataProvider__. Handle __CellValueNeeded__ to display values, create the editor in __EditorNeeded__, and persist the value in __CellEditEnded__.
 

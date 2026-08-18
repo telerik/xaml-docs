@@ -875,8 +875,6 @@ meta:
         title: RadDomainDataSource
     controls/radwizard:
         title: RadWizard
-    controls/radwizard/features:
-        title: Features
     controls/radvirtualgrid:
         title: RadVirtualGrid
     controls/radvirtualgrid/styling-and-appearance:
@@ -1069,6 +1067,26 @@ redirects:
 -
     from: "^/?$"
     to: "/introduction"
+    type: Permanent
+-
+    from: "^/controls/radwizard/styles-and-templates/templates-structure/?$"
+    to: "/controls/radwizard/overview"
+    type: Permanent
+-
+    from: "^/controls/radwizard/features/navigation/?$"
+    to: "/controls/radwizard/navigation"
+    type: Permanent
+-
+    from: "^/controls/radwizard/features/buttons/?$"
+    to: "/controls/radwizard/buttons"
+    type: Permanent
+-
+    from: "^/controls/radwizard/features/pages/?$"
+    to: "/controls/radwizard/pages"
+    type: Permanent
+-
+    from: "^/controls/radwizard/features/commands/?$"
+    to: "/controls/radwizard/commands"
     type: Permanent
 -
     from: "^/api/html/.*$"

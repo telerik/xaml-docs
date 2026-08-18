@@ -5,7 +5,7 @@ description: Check our &quot;Wizard Buttons&quot; documentation article for the 
 slug: wizard-buttons
 tags: wizard, buttons
 published: True
-position: 0
+position: 6
 ---
 
 # Wizard Buttons

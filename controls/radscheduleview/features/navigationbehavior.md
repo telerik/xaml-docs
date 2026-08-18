@@ -90,6 +90,8 @@ __Example 2: Applying the custom NavigationBehavior__
 
 ## See Also
 
+ * [Scroll an Appointment or Slot into View]({%slug radscheduleview-features-commands%}#scroll-an-appointment-or-slot-into-view)
+
  * [SlotSelectionBehavior]({%slug radscheduleview-features-slot-selection-behavior%})
 
  * [AppointmentSelectionBehavior]({%slug radscheduleview-features-appointment-selection-behavior%})

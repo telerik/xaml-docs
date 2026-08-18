@@ -10,7 +10,7 @@ position: 12
 
 # Visual Tree Helpers
 
-The UI for {{ site.framework_name }} provides with several extension methods that allow you to enumerate the UI children of an element or find its parents. This way you can get a specific control from the visual tree and interact with it.
+The UI for {{ site.framework_name }} provides several extension methods that allow you to enumerate the UI children of an element or find its parents. This way you can get a specific control from the visual tree and interact with it.
 
 The methods are available in the __ChildrenOfTypeExtensions__ and __ParentOfTypeExtensions__ static classes. They extend the DependencyObject class so you can call them on any UI element.
 

@@ -43,7 +43,7 @@ Click add new user and follow the instructions on the screen. There are 4 steps:
 ![AWS console Create User workflow with its four setup steps](images/aws-getting-started003.png)
 
 1. Choose the name and access (programmatic and/or management console).
-2. Choose permission policy - for the first user you can use any of the existing policies(the third icon).
+2. Choose permission policy - for the first user you can use any of the existing policies (the third icon).
 3. Just confirm by pressing *Create User*.
 4. This is a summary page which allows you to download the user details in a csv file. Click Download and save the file. You will import this in Visual Studio. 
 

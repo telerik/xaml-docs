@@ -250,3 +250,5 @@ __Example 8: Copying the properties of one column to another__
  * [Column Groups]({%slug gridview-column-groups%})
 
  * [Data Formatting]({%slug gridview-columns-data-formatting%})
+
+ * [Customizing Rows]({%slug gridview-customizing-rows%})

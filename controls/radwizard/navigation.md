@@ -5,7 +5,7 @@ description: This article describes how you can navigate through different pages
 slug: wizard-navigation
 tags: wizard, navigation
 published: True
-position: 0
+position: 5
 ---
 
 # Navigation

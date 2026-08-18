@@ -5,7 +5,7 @@ description: This article goes over the predefined commands exposed by the RadWi
 slug: wizard-features-commands
 tags: commands
 published: True
-position: 2
+position: 8
 ---
 
 # Commands

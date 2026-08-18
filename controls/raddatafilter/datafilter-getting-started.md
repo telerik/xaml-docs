@@ -59,7 +59,7 @@ __Example 2: Creating RadDataFilter__
 
 You can configure __RadDataFilter__ via the properties that it exposes. You can do the following:
 
-* Use __DataAnotations__ to mark the members of your business objects. [Read more]({%slug raddatafilter-features-data-annotations%})
+* Use __DataAnnotations__ to mark the members of your business objects. [Read more]({%slug raddatafilter-features-data-annotations%})
 
 * Use the __RadDataFilter__ in __Unbound Mode__. [Read more]({%slug raddatafilter-features-unbound-mode%})
 

@@ -20,7 +20,7 @@ This article will show you how to change the default colors applied when you ent
 
 The first thing to do would be to define a RadButton in XAML and extract its default Style. Read how to do this in the [Editing ControlTemplates]({%slug styling-apperance-editing-control-templates%}) article. Basically, you will need to use the Visual Studio designer or copy the XAML manually in your project.
 
-This article will demonstrate how to modify the visual states in the __Office2016__ and the __Office_Black__ themes as they show the two main template structures used accross the Telerik [themes]({%slug common-styling-appearance-available-themes%}).
+This article will demonstrate how to modify the visual states in the __Office2016__ and the __Office_Black__ themes as they show the two main template structures used across the Telerik [themes]({%slug common-styling-appearance-available-themes%}).
 
 ## Step 2: Applying Changes in the ControlTemplate of the Button
 

@@ -14,7 +14,7 @@ Setting a theme using [implicit styles]({%slug styling-apperance-implicit-styles
 
 The resources in a merged dictionary occupy a location in the resource lockup scope that is just after the scope of the main resource dictionary they are merged into. What you can do is to isolate your custom styles in separate resource dictionaries and add them after the default dictionaries each time you change the theme.
 
-As an example, you can follow the steps bellow:
+As an example, you can follow the steps below:
 
 **1.** Create a new application and add the required assemblies from the **Binaries.NoXaml** folder located in the Telerik UI for {{ site.framework_name }} installation folder as well as the theme assemblies:
 
@@ -131,7 +131,8 @@ __Example 5: Clear and merge dictionaries upon button click__
     }
 ```
 
->Please note that the theme provided in the MergeDictionaries should match the name of the respective theme assembly, for example - **Expression_Dark**, **Office2016Touch**, **Material**. Using this approach you can switch to any of the [available themes]({%slug common-styling-appearance-available-themes%}) provided by the UI for {{ site.framework_name }} suite.
+>Please note that the theme provided in the MergeDictionaries should match the name of the respective theme assembly, for example - **Expression_Dark**, **Office2016Touch**, **Material**. Using this approach you can switch to any of the [available themes]({%slug common-styling-appearance-available-themes%}) provided by the UI for {{ site.framework_name }} suite.
+
 
 The result based on the above code is illustrated in **Figure 1**.
 

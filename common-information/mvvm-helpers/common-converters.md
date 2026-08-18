@@ -145,7 +145,7 @@ The converter converts __string__ to a __DateTime__ format value.
 
 ### UppercaseConverter
 
-This converter converts all __lowcase__ to __uppercase__ letters.
+This converter converts all __lowercase__ to __uppercase__ letters.
 
 ### BinaryImageConverter
 

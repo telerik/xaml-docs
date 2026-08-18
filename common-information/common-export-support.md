@@ -72,7 +72,7 @@ Some controls can be exported directly using the __ExportExtensions__ class whic
 
  __Image formats__
 
-* __Png:__ Portable Netwok Graphic. Use __ExportToImage(FrameworkElement, Stream)__ method.
+* __Png:__ Portable Network Graphic. Use __ExportToImage(FrameworkElement, Stream)__ method.
 
 * __Bmp:__ Bitmap file. Use __ExportToImage(FrameworkElement, Stream, BitmapEncoder)__ where the encoder is of type __BmpBitmapEncoder__.
 

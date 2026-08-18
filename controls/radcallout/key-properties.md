@@ -24,7 +24,7 @@ The properties are of type Point and represent relative coordinates (between 0 a
 X = 0 and Y = 0 means the topleft point of the callout body and X= 1, Y = 1 means the 'bottom-right'
 point. In the figures you can see the default values of the properties [0.25, 0.5], [0.75, 0.5] and [0.5, 1.25].
 
-> Important to note here is that the widht and height of the callout apply only to the body of the geometry 
+> Important to note here is that the width and height of the callout apply only to the body of the geometry 
 but not to the arrow. This way it is very easy to keep a fixed size of the main shape while making the big arrow exceeding the shape size.
 
 #### Figure 1: 
@@ -32,7 +32,7 @@ but not to the arrow. This way it is very easy to keep a fixed size of the main 
 
 * __MeasurePathWithInfinity__: A __boolean__ property that gets or sets a value indicating whether the path in the control template is measured with infinity or not.
 
-* __Stretch__: A property of type __Strech__ that gets or sets the stretch of the path from the control template.
+* __Stretch__: A property of type __Stretch__ that gets or sets the stretch of the path from the control template.
 
 * __CornerRadius__: A property of type __double__ that gets or sets the corner radius used for the __Telerik.Windows.Controls.CalloutType.RoundedRectangle__ geometry.
 
@@ -61,7 +61,7 @@ but not to the arrow. This way it is very easy to keep a fixed size of the main 
 	#### Figure 2: RadCallout types
 	![Telerik Callout Key Properties 2](images/radcallout-key-properties_1.png)
 
-* __ArrowType__: A property of type __CalloutArrowType__ that gets or sets gets or sets the arrow type of the callout control. The __ArrowType__ is an enumeration and it allows the following values:
+* __ArrowType__: A property of type __CalloutArrowType__ that gets or sets the arrow type of the callout control. The __ArrowType__ is an enumeration and it allows the following values:
 	* __None__: No arrow.
 	* __Triangle__: Triangle or line arrow consisted of 3 pivot points.
 	* __Circles__: Series of circles.
@@ -72,7 +72,7 @@ but not to the arrow. This way it is very easy to keep a fixed size of the main 
 
 ### Custom Geometry	
 
-If none of the build-in callout types satisfy your needs, the control allows you to set a custom one. For example, using the Geometry property, you can set your own look for the control. In this case, don't forget to set the __CalloutType__ property to __Custom__ to force the engine to use your geometry.
+If none of the built-in callout types satisfy your needs, the control allows you to set a custom one. For example, using the Geometry property, you can set your own look for the control. In this case, don't forget to set the __CalloutType__ property to __Custom__ to force the engine to use your geometry.
 
 __Example 1: Setting Custom Type__
 ```C#

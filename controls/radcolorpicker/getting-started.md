@@ -230,13 +230,13 @@ If you prefer to use your own collection of Colors you can always use __HeaderPa
 
 * __ContentTemplate__ - Should be used to define the custom Content of the RadColorPicker. Content property should not be used for this purpose			
 
-* __PaletteItemsTemplate__ - Should be used in MVVM scenarios to get or set the ContentTemplate of the RadColorPaletteViewItems from the MainPalette, HeaderPalette, StandartPalette. It is not applied to RecentPalette items.			
+* __PaletteItemsTemplate__ - Should be used in MVVM scenarios to get or set the ContentTemplate of the RadColorPaletteViewItems from the MainPalette, HeaderPalette, StandardPalette. It is not applied to RecentPalette items.			
 
 * __ColorPropertyPath__ - the control uses this path to find the property of type __System.Windows.Media.Color__ in the DataContext of the RadColorPaletteViewItems. The behavior of this property mimics the behavior of the __ItemsControl.DisplayMemberPath__ property. 			
 
 * __SelectedItem__ - should be used in MVVM scenarios and it holds the selected ViewModel - the DataContext of the selected RadColorPaletteViewItem.			
 
-* __IsRecentColorsActive__ - defines wether a customized color, not existing in the MainPalette, HeaderPalette, StandartPalette or RecentPalette should be added in the RecentColorsPaletteView. If there is such a color this palette will be visible.			
+* __IsRecentColorsActive__ - defines whether a customized color, not existing in the MainPalette, HeaderPalette, StandardPalette or RecentPalette should be added in the RecentColorsPaletteView. If there is such a color this palette will be visible.			
 
 * __AdditionalContent__ - can be used to add customized content under RadColorPicker control.
 

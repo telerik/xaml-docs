@@ -103,8 +103,8 @@ __Example 7: Setting the custom FilteringControl__
 	}
 ```
 
-#### Figure 5: Customized FiltertingControl
-![{{ site.framework_name }} RadCardView Customized FiltertingControl](images/radcardview-appearance-customizing-filtering-control-4.png)
+#### Figure 5: Customized FilteringControl
+![{{ site.framework_name }} RadCardView Customized FilteringControl](images/radcardview-appearance-customizing-filtering-control-4.png)
 
 The UI of the __FilteringControl__ can be customized using the __FilteringControlStyle__ property of the CardDataFieldDescriptor.
 
@@ -119,8 +119,8 @@ __Example 8: Setting the custom FilteringControlStyle__
 
 The "cardView:" namespace points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`
 
-#### Figure 6: Customized FiltertingControlStyle
-![{{ site.framework_name }} RadCardView Customized FiltertingControlStyle](images/radcardview-appearance-customizing-filtering-control-5.png)
+#### Figure 6: Customized FilteringControlStyle
+![{{ site.framework_name }} RadCardView Customized FilteringControlStyle](images/radcardview-appearance-customizing-filtering-control-5.png)
 
 ## See Also  
 * [Data Binding]({%slug radcardview-populating-with-data-data-binding%})

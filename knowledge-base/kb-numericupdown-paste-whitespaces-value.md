@@ -30,7 +30,7 @@ Pasting a copied numeric value that contains untrimmed text does not work. In th
 
 ## Solution
 
-Subscribe the RadNumericUpDown control to the DataObject's [Pastring event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.dataobject.addpastinghandler?view=net-5.0) and implement the pasting manually. 
+Subscribe the RadNumericUpDown control to the DataObject's [Pasting event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.dataobject.addpastinghandler?view=net-5.0) and implement the pasting manually. 
 
 
 ```C#

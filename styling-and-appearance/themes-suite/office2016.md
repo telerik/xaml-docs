@@ -122,7 +122,7 @@ The Office2016 has one color variation, but it is designed to be easily modified
 Below you can find more details about each brush and where it is usually applied.
 
 * `MainBrush`&mdash;This brush is white by default and it is mainly used as background of the controls.
-* `MarkerBrush`&mdash;This brush is dark by default and it is used as foregound color. 
+* `MarkerBrush`&mdash;This brush is dark by default and it is used as foreground color. 
 * `MarkerInvertedBrush`&mdash;This brush is a light color by default and it is mostly used as foreground color while you interact with the control. If the control has accent interaction states, we apply the brush for better contrast.
 
 The Office2016 palette provides both accent and non-accent brushes for the different interaction states. 

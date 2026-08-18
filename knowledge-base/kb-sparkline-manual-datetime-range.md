@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-How to set the minimum (MinXValue) and maximum (MaxXValue) when DateTime values are plotted on the horizonal axis.
+How to set the minimum (MinXValue) and maximum (MaxXValue) when DateTime values are plotted on the horizontal axis.
 
 ## Solution
 

@@ -50,5 +50,5 @@ The PlotMode property can be used with the following predefined values:
 * __BetweenTicks__ - ticks are margins (labels are between two ticks); a small margin on both sides is provided. Useful for Bar series.  
 			![Telerik UI for WPF RadChartView Using the BetweenTicks Plot Mode](images/RadChartView-chart_betweenticks.PNG)
 
-* __OnTicksPadded__ - ticks match labels; a small margin on both sides is provided for better presentation. It is recomended to be used with Scatter series.  
+* __OnTicksPadded__ - ticks match labels; a small margin on both sides is provided for better presentation. It is recommended to be used with Scatter series.  
 			![Telerik UI for WPF RadChartView Using the OnTicksPadded Plot Mode](images/RadChartView-chart_ontickspadded.PNG)

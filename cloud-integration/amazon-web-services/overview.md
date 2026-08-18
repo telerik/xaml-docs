@@ -32,4 +32,4 @@ Here are the currently available topics:
 
 In order to build and run the examples from the articles you will need an active AWS account. Your system should have .NET Framework 4 or later and Visual Studio 2013 or later. In addition, we use the [AWS SDK for .NET](https://aws.amazon.com/sdk-for-net/), which provides everything you need in order to build your application using Visual Studio. You will need to set up a security profile for DynamoDB in Visual Studio. 
 
-The [Getting Started]({%slug cloud-services/aws/getting-started%}) article shows how you can setup your environment.
+The [Getting Started]({%slug cloud-services/aws/getting-started%}) article shows how you can set up your environment.

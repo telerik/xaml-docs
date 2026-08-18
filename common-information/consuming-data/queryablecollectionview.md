@@ -10,15 +10,15 @@ position: 14
 
 # QueryableCollectionView
 
-`QueryableCollectionView` enables а collection to have the functionalities of sorting, filtering, grouping, and paging. 
+`QueryableCollectionView` enables a collection to have the functionalities of sorting, filtering, grouping, and paging. 
 
-This article descibes the features and provides examples on the QueryableCollectionView (QCV) usage.
+This article describes the features and provides examples on the QueryableCollectionView (QCV) usage.
 
 The QCV requires an `IEnumerable` source for the data and it works with three major properties to enable sorting, filtering and grouping. The `GroupDescriptors`, `FilterDescriptors`, and `SortDescriptors`. For paging, check the [Paging]({%slug consuming-data-queryablecollectionview%}#paging) section of this article.
 
 ## Defining and Using QueryableCollectionView
 
-The following example shows a basic QueryableCollectionView definintion without any sorting, filtering, grouping or paging applied.
+The following example shows a basic QueryableCollectionView definition without any sorting, filtering, grouping or paging applied.
 
 __Defining a collection item model__
 ```C#

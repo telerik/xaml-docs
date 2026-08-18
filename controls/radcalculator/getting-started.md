@@ -10,7 +10,7 @@ position: 2
 
 # Getting Started with {{ site.framework_name }} Calculator
 
-This tutorial will walk your through the creation of a sample application that contains `RadCalculator`.		  
+This tutorial will walk you through the creation of a sample application that contains `RadCalculator`. 		  
 
 ## Adding Telerik Assemblies Using NuGet
 

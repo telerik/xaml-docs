@@ -26,7 +26,7 @@ How to scroll a programmatically selected item to the top.
 
 ## Solution
 
-Create an attached behavior that handles the __SelectionChanged__ event of the RadGridView. Access the GridViewsScrollViewer element using the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) extesion method. Using its __VerticalOffset__ and __ViewportHeight__ properties determine whether the SelectedItem is within the viewport. If it is not, the selection was made from code and you can use the __ScrollToVerticalOffset__ method in order to scroll the selected item to the top of the RadGridView.
+Create an attached behavior that handles the __SelectionChanged__ event of the RadGridView. Access the GridViewsScrollViewer element using the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) extension method. Using its __VerticalOffset__ and __ViewportHeight__ properties determine whether the SelectedItem is within the viewport. If it is not, the selection was made from code and you can use the __ScrollToVerticalOffset__ method in order to scroll the selected item to the top of the RadGridView.
 
 
 ```C#

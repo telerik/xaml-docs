@@ -176,6 +176,6 @@ __RadAIPrompt with grouped commands__
 ## See Also
 * [Views]({%slug radaiprompt-views%})
 * [Events]({%slug radaiprompt-events%})
-* [RadAIPromptButon]({%slug radaiprompt-prompt-button%})
+* [RadAIPromptButton]({%slug radaiprompt-prompt-button%})
 * [Suggestions]({%slug radaiprompt-suggestions%})
 * [Paging]({%slug radaiprompt-paging%})

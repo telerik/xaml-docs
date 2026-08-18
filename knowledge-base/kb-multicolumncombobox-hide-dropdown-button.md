@@ -31,7 +31,7 @@ How to hide the drop-down button of the `RadMultiColumnComboBox` control.
 
 ## Solution
 
-Subscribe to the `Loaded` event of RadMultiColumnComboBox and utilize the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) method to retrive the `RadDropDownButton` element with __x:Name="PART_DropDownButton"__. Then, set its `Visibility` property to `Visibility.Collapsed`.
+Subscribe to the `Loaded` event of RadMultiColumnComboBox and utilize the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) method to retrieve the `RadDropDownButton` element with __x:Name="PART_DropDownButton"__. Then, set its `Visibility` property to `Visibility.Collapsed`.
 
 __Retrieve the RadDropDownButton element on the Loaded event of RadMultiColumnComboBox__
 ```C#

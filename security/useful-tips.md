@@ -31,7 +31,7 @@ __The following resources show which Telerik controls support safe deserializati
 
 In WPF hyperlink navigation actions can start a new process on the user machine. This can execute a malicious command untrusted by the user. Most of the time this can be controlled in the application's logic, where such addresses can be validated, thus mitigating the security risk. 
 
-In cases when the hyperlink is loaded dynamically from an unknown source, like from a document loaded in Telerik PdfViewer or RichTexBox, the link may be insecure. For such scenarios the Telerik's document hyperlink components come with a built-in URI validation logic. If the hyperlink doesn't point to a valid address, the navigation won't work and a message box will be displayed. Additional to that, the Telerik document viewer components that support hyperlinks expose a `HyperlinkClicked` event that can be handled in order to further modify the click action, thus improving the security even more.
+In cases when the hyperlink is loaded dynamically from an unknown source, like from a document loaded in Telerik PdfViewer or RichTextBox, the link may be insecure. For such scenarios the Telerik's document hyperlink components come with a built-in URI validation logic. If the hyperlink doesn't point to a valid address, the navigation won't work and a message box will be displayed. Additional to that, the Telerik document viewer components that support hyperlinks expose a `HyperlinkClicked` event that can be handled in order to further modify the click action, thus improving the security even more.
 
 <br />  
 __The following resources show how to use the `HyperlinkClicked` event in the corresponding controls:__

@@ -30,7 +30,7 @@ This behavior comes from the WPF framework. When dragging and dropping an elemen
 
 ## Solution
 
-Create a new class that derives from the `ListBoxDragDropBehavior` and override the `Drop` method. In it, retrieve the return value of the the `CanDrop` method invocation. If the return value is __true__, call the base Drop method.
+Create a new class that derives from the `ListBoxDragDropBehavior` and override the `Drop` method. In it, retrieve the return value of the `CanDrop` method invocation. If the return value is __true__, call the base Drop method.
 
 __Custom ListBoxDragDropBehavior with overridden Drop method__
 ```C#

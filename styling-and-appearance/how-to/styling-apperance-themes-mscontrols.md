@@ -72,7 +72,7 @@ __Merging the System.Windows.xaml file__
 	</Application.Resources>
 ```
 
-To set the theme seprately per control, you can merge the System.Windows.xaml resource in the `Resources` dictionary of the corresponding control.
+To set the theme separately per control, you can merge the System.Windows.xaml resource in the `Resources` dictionary of the corresponding control.
 
 __Setting a theme per control using implicit styles__ 
 ```XAML

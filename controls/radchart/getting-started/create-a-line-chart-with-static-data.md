@@ -34,7 +34,7 @@ For the purpose of this tutorial, you will need to create an empty WPF Applicati
 
 * Drag a __RadChart__ on the artboard.
 
-As result you can see the __RadChart__ with some demo data displayed. The underlaying XAML is pretty simple and looks like this:
+As result you can see the __RadChart__ with some demo data displayed. The underlying XAML is pretty simple and looks like this:
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"

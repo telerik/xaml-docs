@@ -33,7 +33,7 @@ To customize RadRibbonTab in code, follow the next few steps:
 1. Subscribe to the Loaded event of RadRibbonTab.
 2. In the event handler call the [ChildrenOfType<T>()]({%slug common-visual-tree-helpers%}) method to get all Border elements of the loaded RadRibbonTab. 
 3. Call the FirstOrDefault() method (from the System.Linq namespace) to find the Border with x:Name="SelectedVisual". This is the element presenting the border around the selected tab.
-4. Set the BorderBrush and BorderThicknes properties of the Border control.
+4. Set the BorderBrush and BorderThickness properties of the Border control.
 
 
 ```XAML

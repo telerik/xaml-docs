@@ -31,7 +31,7 @@ __Key Features:__
 
 * __Multiple Months View__: RadCalendar can be easily configured to show more than one month in the calendar area. Thus, you can make the navigation easier and faster.
 
-* __Powerful DataBinding__: Telerik RadCalendar for Silverlight can be bound to various datasoure types, such as such as Object, XML and WCF services.
+* __Powerful DataBinding__: Telerik RadCalendar for Silverlight can be bound to various datasource types, such as Object, XML and WCF services.
 
 * __Selection Mode__: RadCalendar supports both single and multi-date selection. This behavior can be changed by using a single property.         
 
@@ -53,7 +53,7 @@ __Key Features:__
 
 * __Keyboard support__: Users can navigate through the items (dates) using keys.          
 
-* __Advanced Event-handling model__: RadCalender supports routed events.
+* __Advanced Event-handling model__: RadCalendar supports routed events.
 {% endif %}
 
 {% if site.site_name == 'WPF' %}

@@ -93,7 +93,7 @@ __Host the virtualized controls in panels that measure its children with the ava
 	</Grid>
 ```
 
-The UI virtualization feature is created with a special [Panel](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-a-custom-panel-element?view=netframeworkdesktop-4.8) implementation. In most controls this panel is assined via the `ItemsPanel` property of the control. Replacing the `ItemsPanel` setting will disable the virtualization.
+The UI virtualization feature is created with a special [Panel](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-a-custom-panel-element?view=netframeworkdesktop-4.8) implementation. In most controls this panel is assigned via the `ItemsPanel` property of the control. Replacing the `ItemsPanel` setting will disable the virtualization.
 
 ## See Also  
 * [RadTreeView UI Virtualization]({%slug radtreeview-features-ui-virtualization%})

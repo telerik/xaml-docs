@@ -26,7 +26,7 @@ This article shows how to use the Telerik Analytics API to implement a custom Go
 
 5. In order to test the data you send, disable the __Internal Traffic__ filter from the following menu, __Admin &mdash;> Data Settings &mdash;> Data Filters__. Also, event sending can be tested with the [Google Analytics Event Builder](https://ga-dev-tools.google/ga4/event-builder/).
 
-The Measurement Id and API secret copied in setps 3 and 4 will be used in the .NET API shown in the [Implementing the Analytics Provider](#implementing-the-analytics-provider) section of this article.
+The Measurement Id and API secret copied in steps 3 and 4 will be used in the .NET API shown in the [Implementing the Analytics Provider](#implementing-the-analytics-provider) section of this article.
 
 ## Setting up the Project
 
@@ -42,7 +42,7 @@ To send information to the Google Analytics dashboard manually, use the [Measure
 
 4. Add a reference to __Telerik.Windows.Controls.dll__.
 
-5. Install the __Microsoft.Extensions.Http__ nuget package.
+5. Install the __Microsoft.Extensions.Http__ NuGet package.
 
 ## Implementing the Analytics Provider
 

@@ -1,7 +1,7 @@
 ---
 title: Simple Email Service
 page_title: Simple Email Service
-description: This article shows how one can use thе Simple Email Service from a {{ site.framework_name }} application and send an email to a specific address.
+description: This article shows how one can use the Simple Email Service from a {{ site.framework_name }} application and send an email to a specific address.
 slug: cloud-services/aws/ses
 tags: cloud,aws
 published: True
@@ -17,7 +17,7 @@ This article will demonstrate how one can use this service from a {{ site.framew
 
 ## Step 1: Create the {{ site.framework_name }} Application
 
-Create a standard {{ site.framework_name }} application and add 3 [RadWaterMarkTextBoxes]({%slug radwatermarktextbox-overview%}) and a [RadButton]({%slug radbuttons-getting-started%}) to it. The watermarktextboxes will contain the sender and receiver emails and the subject. The button will be responsible for sending the email.
+Create a standard {{ site.framework_name }} application and add 3 [RadWaterMarkTextBoxes]({%slug radwatermarktextbox-overview%}) and a [RadButton]({%slug radbuttons-getting-started%}) to it. The watermark text boxes will contain the sender and receiver emails and the subject. The button will be responsible for sending the email.
 
 __Example 1: Defining the view__
 
@@ -63,7 +63,7 @@ __Example 2: Adding the AWS Profile in App.config__
 
 ## Step 3: Define the ViewModel
 
-The Next step is to create the ViewModel. It will need an [IAmazonSimpleEmailService](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/SimpleEmail/TISimpleEmailService.html) instance which will be used for sending the emails. We also need to implement the command that the RadButton is bound to.
+The next step is to create the ViewModel. It will need an [IAmazonSimpleEmailService](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/SimpleEmail/TISimpleEmailService.html) instance which will be used for sending the emails. We also need to implement the command that the RadButton is bound to.
 
 __Example 3: Defining the ViewModel__
 

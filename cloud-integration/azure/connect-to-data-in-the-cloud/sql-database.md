@@ -143,7 +143,7 @@ The **RunWorkerCompleted** event handler then creates a new instance of the gene
 
 ## Save and Load Changes To and From the Database
 
-The final step is to actually save any changes that are made the database as well as obtain the updated data in case any changes on the cloud have occured. **Example 4** demonstrates the code for these two operations.
+The final step is to actually save any changes that are made the database as well as obtain the updated data in case any changes on the cloud have occurred. **Example 4** demonstrates the code for these two operations.
 
 __Example 3: Save and load changes__
 

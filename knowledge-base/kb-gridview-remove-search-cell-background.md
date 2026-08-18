@@ -47,7 +47,7 @@ How to remove or change the background of a matching cell when you search as you
 	
 3. Remove the Storyboard that targets the "PART_CellBorder" from the VisualState. If you want only to change the color instead of removing it, change the Color property of the SolidColorBrush element.
 
-> This example is based on the [Fluent theme]({%slug common-styling-appearance-fluent-theme%}). The ControlTemplate content could vary accross the different themes.
+> This example is based on the [Fluent theme]({%slug common-styling-appearance-fluent-theme%}). The ControlTemplate content could vary across the different themes.
 
 ## See Also  
 * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

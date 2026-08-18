@@ -18,7 +18,7 @@ You can populate your chart with __DateTime__ values by using __SeriesMapping__ 
 
 ## Using data binding (SeriesMapping/ItemMapping)
 
-On the example below, __RadChart.ItemSource__ is set to a collection of __TradeData__ object. __TradeData__ has the following definition:
+On the example below, __RadChart.ItemsSource__ is set to a collection of __TradeData__ object. __TradeData__ has the following definition:
 
 
 

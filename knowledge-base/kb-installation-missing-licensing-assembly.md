@@ -36,4 +36,4 @@ This may happen if you upgrade to 2025 Q1 from an older version. With 2025 Q1, a
 
 To resolve the error, reference the `Telerik.Licensing.Runtime.dll` file in the project or install the `Telerik.Licensing` NuGet package.
 
-If you install the Telerik UI for WPF assemblies using NuGet packages, the `Telerik.Licensing` package is installed automatically and you should not see the beforementioned error.
+If you install the Telerik UI for WPF assemblies using NuGet packages, the `Telerik.Licensing` package is installed automatically and you should not see the aforementioned error.

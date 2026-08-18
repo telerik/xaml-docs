@@ -10,7 +10,7 @@ position: 3
 
 # Attached Behavior/Properties
 
-Ever found your self in a situation where a control is missing the one feature that would make it perfect for your requirements? Or maybe you want to modify its default behavior in a specific scenario? This is where attached properties come handy.
+Ever found yourself in a situation where a control is missing the one feature that would make it perfect for your requirements? Or maybe you want to modify its default behavior in a specific scenario? This is where attached properties come handy.
 
 [Attached properties](https://msdn.microsoft.com/en-us/library/ms749011(v=vs.110).aspx) could be used to extend the functionality of a control with very little implementation on our side. A great benefit is that an additional behavior can be added without performing the logic in the code-behind of the window where the control is situated.
 
@@ -92,7 +92,7 @@ There is a demo available in our **SDK repository located at GitHub** - [ListBox
 
 ## TextBoxBehavior
 
-The built-in behavior of the standard TextBox control can be manipulated through as set of members exposed by the __TextBoxBehavior__ class. It is defined in the __Telerik.Windows.Controls__ namespace. 
+The built-in behavior of the standard TextBox control can be manipulated through a set of members exposed by the __TextBoxBehavior__ class. It is defined in the __Telerik.Windows.Controls__ namespace. 
 
 * __SelectAllOnGotFocus__: Selects the whole Text when the TextBox receives focus.
 * __SelectAllOnTripleClick__: Selects the whole Text when the user performs a triple mouse click.

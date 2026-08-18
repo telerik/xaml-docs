@@ -24,7 +24,7 @@ How to display a tooltip showing a datetime on mouse location in the eventspanel
 
 ## Solution
 
-1. Obtain a reference to the EventsPanel inside the RadGanttView using the [ChildlrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) extension method. 
+1. Obtain a reference to the EventsPanel inside the RadGanttView using the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) extension method. 
 2. Handle its MouseLeave, MouseEnter and MouseMove events.  
 3. Create a tooltip and set its PlacementTarget to the EventsPanel. The tooltip will be opened/closed in the MouseEnter/MouseLeave events and its Content and position will changed in the MouseMove event.
 4. Introduce logic that translates the mouse coordinates to a datetime as demonstrated in the following example. Note, that the logic will be different depending on whether the VisibleRange of the RadGanttView is set or not.

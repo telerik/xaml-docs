@@ -22,7 +22,7 @@ Clicking the __Update Now__ button starts the Latest Version Acquirer tool, prom
 
 ![Telerik UI for WPF Visual Studio latest version acquirer tool package selection](images/extensions_acquirertool_wpf_2.png)
 
-You can use the __Save my password__ checkbox to save having to enter your Telerik credentials multiple times. The persistance is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
+You can use the __Save my password__ checkbox to save having to enter your Telerik credentials multiple times. The persistence is done in a secure manner and credentials are saved in a per-user context. This way, other users on the machine will not be able to download through your account, as they do not have access to your user data.
 
 If your subscription has expired, you could either proceed with downloading a trial distribution or you could renew it and initiate the download again.
 

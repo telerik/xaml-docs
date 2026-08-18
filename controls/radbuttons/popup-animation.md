@@ -31,7 +31,7 @@ The property is an enum of type __System.Windows.Controls.Primitives.PopupAnimat
 	
 	![{{ site.framework_name }} RadButtons Slide Popup Animation](images/radbuttons-features-popup-animations-1.gif)
 
-* __Scroll__: The popup control scrolls from the lower left corner of the button. If the screen doesn't have enought space for the popup, the scrolling behaves differently according to the position of the popup.
+* __Scroll__: The popup control scrolls from the lower left corner of the button. If the screen doesn't have enough space for the popup, the scrolling behaves differently according to the position of the popup.
 	
 	![{{ site.framework_name }} RadButtons Scroll Popup Animation](images/radbuttons-features-popup-animations-2.gif)
 

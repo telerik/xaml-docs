@@ -33,7 +33,7 @@ The first step is to add a new connected service to your application. In order t
 #### __Figure 1: Select the "References" folder, right click with your mouse button and choose "Add Connected Service"__ 
 ![Visual Studio WPF project References folder with Add Connected Service selected for an OData service](images/Common_ConsumingDataWcfService_010.png)
 
-#### __Figure 2: A new tab will be opened with the available conntected services. Click on the OData Connected Service.__
+#### __Figure 2: A new tab will be opened with the available connected services. Click on the OData Connected Service.__
 ![Visual Studio OData Connected Service selection for a WPF data service project](images/Common_ConsumingDataWcfService_020.png)
 
 #### __Figure 3: A popup window will appear. In the Address TextBox, type the Northwind URL address and click on the Finish button below.__

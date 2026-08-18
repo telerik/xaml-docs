@@ -29,7 +29,7 @@ This article lists the events specific for __RadCardView__.
 	
 * __CardDataFieldPreparedEditor__: Occurs when the editor control of a card's data field is prepared, just before the editing of the field starts. The event arguments are of type `CardDataFieldPreparedEditorEventArgs` which expose the following members:
 	
-	* __FrameworkElement__: Gets the control rerpesenting the editor of the data field. 
+	* __FrameworkElement__: Gets the control representing the editor of the data field. 
 	* __DataField__: Gets the associated `DataFormDataField` object.
 
 	__Example 2: CardDataFieldPreparedEditor event handler__
@@ -188,7 +188,7 @@ This article lists the events specific for __RadCardView__.
 * __FieldFilterEditorCreated__: Occurs when a field filter editor is created. The event arguments are of type `CardViewFilterEditorCreatedEventArgs` which expose the following members:
 
 	* __CardDataFieldFilterDescriptor__: This property gets the corresponding `CardDataFieldFilterDescriptor` object.
-	* __Editor__: Gets the control rerpesenting the editor of the data field. 
+	* __Editor__: Gets the control representing the editor of the data field. 
 
 	__Example 12: FieldFilterEditorCreated event handler__
 	```C#

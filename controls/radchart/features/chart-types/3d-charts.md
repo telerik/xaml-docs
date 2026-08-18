@@ -83,7 +83,7 @@ The Stacked Spline Area 3D chart is a variation of the Spline Area 3D chart that
 
 * Stacked Spline Area 100% 3D 
 {% if site.site_name == 'WPF' %} ![{{ site.framework_name }} RadChart  ](images/RadChart_types_stackedsplinearea1003d_wpf_thumb.png)
-The Stacked Spline Area 100% 3D charts are a variation of the Spline Area 3D chart. The areas are stacked so that each series adjoins but does not overlap the preceding series and where the combined total for each category is 100 percent.{% endif %} Can be used for data modelling. It takes a limited number of data points and interpolates the intervening values. This chart type allows the entire surface area for all sequences to be displayed at onece. Use this chart type when the relationship between values in a category is more significant than the amounts.
+The Stacked Spline Area 100% 3D charts are a variation of the Spline Area 3D chart. The areas are stacked so that each series adjoins but does not overlap the preceding series and where the combined total for each category is 100 percent.{% endif %} Can be used for data modelling. It takes a limited number of data points and interpolates the intervening values. This chart type allows the entire surface area for all sequences to be displayed at once. Use this chart type when the relationship between values in a category is more significant than the amounts.
 
 * Bubble3D 
 {% if site.site_name == 'WPF' %} ![{{ site.framework_name }} RadChart  ](images/RadChart_types_bubble3d_wpf_thumb.png)

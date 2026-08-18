@@ -31,11 +31,11 @@ UI for WPF
 
 ## Description
 
-How to restict the dragging of a WPF Window to a specific bounding rectangle.
+How to restrict the dragging of a WPF Window to a specific bounding rectangle.
 
 ## Solution
 
-To restrict the dragging of a window, you can add a WndProct hook to the `HwndSource` of the `Window` object.
+To restrict the dragging of a window, you can add a WndProc hook to the `HwndSource` of the `Window` object.
 
 ```csharp
 	private RECT restrictedBounds = new RECT() { Left = 150, Top = 150, Right = 795, Bottom = 577 };

@@ -497,7 +497,7 @@ __Material Control used within a custom template applied to a Button__
 
 ![Telerik UI for WPF custom button with Material theme effects](images/custombtngif.gif)
 
-> Note that for this button the `MouseOverBrush` and the `PressedBrush` properties from the above listed helpers are modified. They are are responsible for the mouse over and pressed animations and are automatically bound to the templated parent.
+> Note that for this button the `MouseOverBrush` and the `PressedBrush` properties from the above listed helpers are modified. They are responsible for the mouse over and pressed animations and are automatically bound to the templated parent.
 
 It is possible to disable the ripple effect of the MaterialControl through a style. The following example demonstrates how this can be achieved. The style can be included in the scope of the Telerik control(s) whose ripple effect needs to be disabled. 
 

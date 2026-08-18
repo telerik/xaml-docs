@@ -36,7 +36,7 @@ By default, double-clicking on the header causes the window to switch states fro
 
 To prevent the default behavior, you can use interop methods to remove the maximize box of the host window of the RadWindow control. Then, you can add a procedure hook and prevent the button double click on the titlebar or on the top resize handle of the window.
 
-The example below checks for the `HTTOP` and `HTCAPTION` hit test messages. You an read about these in the [official win32 docs](https://learn.microsoft.com/en-us/windows/win32/inputdev/wm-nchittest).
+The example below checks for the `HTTOP` and `HTCAPTION` hit test messages. You can read about these in the [official win32 docs](https://learn.microsoft.com/en-us/windows/win32/inputdev/wm-nchittest).
 
 
 ```csharp

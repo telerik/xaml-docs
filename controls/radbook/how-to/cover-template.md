@@ -22,7 +22,7 @@ First, lets begin by creating 4 different templates:
 
 * back cover page template
 
-For the sake of the example, each template will will have the following structure:
+For the sake of the example, each template will have the following structure:
 
 ![{{ site.framework_name }} RadBook Page Structure](images/book_howto_covertemplates_img01.png)
 

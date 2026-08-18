@@ -28,7 +28,7 @@ How to show a readonly schedule in RadScheduleView.
 
 ## Solution
 
-Create a class inheriting [ReadOnlyBehavior](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.scheduleview.readonlybehavior) and set an instance of it to the __ReadOnlyBehavior__ property of the RadScheduleView. Override the virtual methods in order to disable deleting, dragging, editing, resizing, saving an appoitment and editing a slot by simply returning __false__ in all of them.
+Create a class inheriting [ReadOnlyBehavior](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.scheduleview.readonlybehavior) and set an instance of it to the __ReadOnlyBehavior__ property of the RadScheduleView. Override the virtual methods in order to disable deleting, dragging, editing, resizing, saving an appointment and editing a slot by simply returning __false__ in all of them.
 
 1. Define the ViewModel
 	

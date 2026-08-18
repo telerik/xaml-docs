@@ -70,10 +70,10 @@ This section provides prompt ideas for the [currently supported Telerik UI for W
 
 * `#telerikwpf How to import and export different formats in the RadRichTextBox. Add toolbar items for import and export options.`
 
-### ComboxBox
+### ComboBox
 
 [RadComboBox for WPF]({%slug radcombobox-overview%}) is a drop-down list component with a number of advanced features.
 
 * `#telerikwpf Add RadComboBox data bound to a collection of business objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI.`
 
-* `#telerikwpf Define RadComboBox with its ItemsSource set to collection of custom CLR objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI. Show all of the properties in the drop down and allow multipe selection.`
+* `#telerikwpf Define RadComboBox with its ItemsSource set to collection of custom CLR objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI. Show all of the properties in the drop down and allow multiple selection.`

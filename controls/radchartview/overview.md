@@ -34,11 +34,11 @@ A charting component in general is used to visualize (or plot) some data in a hu
 
 * __Behaviors__: The charts have a behaviors collection that accepts ChartBehavior objects. Each object represents a special interaction behavior such as [Scroll and Zoom]({%slug radchartview-features-panzoom%}) or [TrackBall]({%slug radchartview-features-trackball%}).
 
-* __Annotations__: The chart components support different annotations. Those are visual elements that can be used to highlight certain areas on the plo area and denote statistical significance. Read more about this in the [Annotations]({%slug radchartview-annotations-overview%}) section in the documentation.
+* __Annotations__: The chart components support different annotations. Those are visual elements that can be used to highlight certain areas on the plot area and denote statistical significance. Read more about this in the [Annotations]({%slug radchartview-annotations-overview%}) section in the documentation.
 
 * __Light rendering modes__: RadChartView allows you to specify the series rendering surface for some series. This way you can adjust the overall performance of the chart. Read more about this in [Rendering]({%slug radchartview-features-rendering%}) article.
 
-* __Dynamic number of series__: You can create a dynamic number of chart series based on a collection of custom business objects. Read more abou this in the [ChartSeriesProvider]({%slug radchartview-features-chartseriesprovider%}) article.
+* __Dynamic number of series__: You can create a dynamic number of chart series based on a collection of custom business objects. Read more about this in the [ChartSeriesProvider]({%slug radchartview-features-chartseriesprovider%}) article.
 
 * __Easy label customization__: The chart series allows you to easily customize the axis and item labels. Read more about the series item labels customization in the [Label Definition]({%slug radchartview-features-label-definition%}) help article. About axis labels check the [Axis]({%slug radchartview-axes-axis%}) article.
 

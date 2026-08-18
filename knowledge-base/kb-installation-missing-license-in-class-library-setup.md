@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-The invalid or missing Telerik license key dialog and watermark are displayed when the Telerik assmeblies are referenced, even when a valid license is installed. This happens when Telerik UI for WPF is installed in a class library that is referenced in the main project, where the main project doesn't explicitly reference the Telerik assemblies. 
+The invalid or missing Telerik license key dialog and watermark are displayed when the Telerik assemblies are referenced, even when a valid license is installed. This happens when Telerik UI for WPF is installed in a class library that is referenced in the main project, where the main project doesn't explicitly reference the Telerik assemblies. 
 
 This behavior occurs in .NET projects and .NET Framework projects using the SDK-Style template.
 

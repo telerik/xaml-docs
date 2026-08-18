@@ -17,7 +17,7 @@ The examples in the article work mostly with numeric values, but if you use the 
 
 ## Actual Range
 
-The actual range is a read-only information that tells what are the real minimum and maximum properties of the axis. This concept exists to ensure that the axis range can be accessed regardless if it is calcuilated automatically or set manually.
+The actual range is a read-only information that tells what are the real minimum and maximum properties of the axis. This concept exists to ensure that the axis range can be accessed regardless if it is calculated automatically or set manually.
 
 To get the actual range, use the `ActualRange` property of the axis.
 

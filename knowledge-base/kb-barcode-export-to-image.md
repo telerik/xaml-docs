@@ -32,7 +32,7 @@ How to setup RadBarcode in code-behind and export it to an image, without adding
 
 To create an image from a WPF control, the control should be measured and arranged. This is done automatically by the framework when you add the control in the visual tree. To export the barcode without displaying it in the UI, measure and arrange it in code and then export it.
 
-The export iself, can be done with [ExportExtensions.ExportToImage]({%slug common-export-support%}) method.
+The export itself, can be done with [ExportExtensions.ExportToImage]({%slug common-export-support%}) method.
 
 
 ```C#

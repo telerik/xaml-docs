@@ -18,7 +18,7 @@ To enable the attachments, set the `IsMoreButtonVisible` property of `RadChat` t
 <telerik:RadChat x:Name="chat" IsMoreButtonVisible="True" />
 ```
 
-![A picture showing the chat attachemnts](images/chat-attachments-0.png)
+![A picture showing the chat attachments](images/chat-attachments-0.png)
 
 ## Handling Attachment Actions
 

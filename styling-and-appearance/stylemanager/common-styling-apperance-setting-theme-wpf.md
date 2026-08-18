@@ -13,7 +13,7 @@ site_name: WPF
 
 This help article will show you how to set a built-in theme to Telerik UI for WPF. 
 
-See the Telerik themes in the [Avilable Themes]({%slug common-styling-appearance-available-themes%}) article.
+See the Telerik themes in the [Available Themes]({%slug common-styling-appearance-available-themes%}) article.
 
 In order to use one of the themes with the StyleManager you need to add references to the Telerik assemblies in your WPF project. You can find more information about the control dependencies in the [Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) topic.
 

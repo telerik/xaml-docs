@@ -34,7 +34,7 @@ An error with code XLS0503 and message "A Value of Type LineSeries Cannot be Add
 
 This error appears when referencing both the *Telerik.Windows.Controls.Chart* and *Telerik.Windows.Controls.Charting* assemblies in the same project. The Chart assembly contains the newer RadChartView component. The Charting dll contains the old RadChart which is not recommended. Use RadChartView instead. There are few classes with the same names that are defined in both the Chart and Charting assemblies and are mapped to the "telerik" XAML schema. When you try to use "telerik" to access one of those classes (like LineSeries for example) and error appears.
 
-This issue can be observed also if you reference the Telerik UI for WPF nuget package wich contains all Telerik WPF dlls.
+This issue can be observed also if you reference the Telerik UI for WPF nuget package which contains all Telerik WPF dlls.
 
 To resolve this remove the *Telerik.Windows.Controls.Charting* assembly from the project references. Or use a XAML namespace that points to the Telerik.Windows.Controls.ChartView namespace.
 

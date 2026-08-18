@@ -107,7 +107,7 @@ If you run the application you will see __RadBusyIndicator__ placed on top of it
 
 ### Progress Determination
 
-__RadBusyIndicator__  supports two main modes of execution that could be used to visualize the progress of the control - determined and indetermined. If you need a determined __RadBusyIndicator__ you have to set the value of the __IsIndeterminated__ property to __False__. Please, check [this]({%slug radbusyindicator-features-progress-determination%}) article for some information concerning the progress determination of __RadBusyIndicator__.
+__RadBusyIndicator__  supports two main modes of execution that could be used to visualize the progress of the control - determined and indeterminate. If you need a determined __RadBusyIndicator__ you have to set the value of the __IsIndeterminated__ property to __False__. Please, check [this]({%slug radbusyindicator-features-progress-determination%}) article for some information concerning the progress determination of __RadBusyIndicator__.
 
 ### Custom Busy Content
 

@@ -279,7 +279,7 @@ __Using resource files in the GetStringOverride() method__
 	End Function
 ```
 
-All that's left to do is to set our CustomLocalizationManager to the static Manager property of the LocalizationManager. Please note that you need to do this assingnment prior to invoking the InitializeComponent method of the affected controls.
+All that's left to do is to set our CustomLocalizationManager to the static Manager property of the LocalizationManager. Please note that you need to do this assignment prior to invoking the InitializeComponent method of the affected controls.
 
 __Applying the custom LocalizationManager__
 ```C#

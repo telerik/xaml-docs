@@ -16,7 +16,7 @@ The article explains the events of the __DragDropManager__.
 
 The event that was fired when the drag Starts was __DragQuery__ for the RadDragAndDropManager. Now it is __OnDragInitialize__.
 
-Bellow is the code for the DragQuery event is its corresponding code for the OnDragInitialize event:
+Below is the code for the DragQuery event and its corresponding code for the OnDragInitialize event:
 
 
 ```C#
@@ -124,7 +124,7 @@ The __Drop__ event in DragDropManager corresponds to the __DropInfo event with s
 
 The __DragInfo__ event corresponds to the __GiveFeedback__ event. Basically the GiveFeedback event can be used on the DragSource control to update the Cursor, and the DragEffects for the DragOperation.        
 
-The __DropInfo__ event corresponds to the __DragOver__ event of DradDropManager. The __DragOver__ event can be used as a replacement for the __DropQuery/Info__ events for various purposes, one of which is to __update the AllowedEffects__ for the drag drop operation.  Works both on Source and Destination.
+The __DropInfo__ event corresponds to the __DragOver__ event of DragDropManager. The __DragOver__ event can be used as a replacement for the __DropQuery/Info__ events for various purposes, one of which is to __update the AllowedEffects__ for the drag drop operation.  Works both on Source and Destination.
 
 
 ```C#

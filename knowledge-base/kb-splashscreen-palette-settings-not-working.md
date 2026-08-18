@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-The palette settings are not working if you apply them just before openning a [RadSplashScreen]({%slug radsplashscreen-getting-started%}) in the App's OnStartup override. The following code snippet shows this setup.
+The palette settings are not working if you apply them just before opening a [RadSplashScreen]({%slug radsplashscreen-getting-started%}) in the App's OnStartup override. The following code snippet shows this setup.
 
 
 ```C#
@@ -46,7 +46,7 @@ The palette settings are not working if you apply them just before openning a [R
 
 ## Solution
 
-To resolve this, create a UserControl that hosts RadSplashScreen instance and apply the platte settings in the constructor of the UserControl. Then use the [generic Show method]({%slug radsplashscreen-getting-started%}#showing-custom-user-control-in-the-splash-screen) in order to display it.
+To resolve this, create a UserControl that hosts RadSplashScreen instance and apply the palette settings in the constructor of the UserControl. Then use the [generic Show method]({%slug radsplashscreen-getting-started%}#showing-custom-user-control-in-the-splash-screen) in order to display it.
 
 
 ```XAML

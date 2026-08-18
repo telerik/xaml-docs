@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 
-How to updade the visual representation of the CollectionEditor control.
+How to update the visual representation of the CollectionEditor control.
 
 ## Solution
 
@@ -170,7 +170,7 @@ __Example 1: Modifying the CollectionEditor ControlTemplate in the Fluent theme_
 #### __Figure 1: CollectionEditor with modified ControlTemplate in the Fluent theme__
 ![CollectionEditor with modified ControlTemplate in the Fluent theme](images/kb-propertygrid-collectioneditor-template.png)
 
->If you are using a different theme, make sure to exract and edit the ControlTemplate for the corresponding theme. 
+>If you are using a different theme, make sure to extract and edit the ControlTemplate for the corresponding theme. 
 
 ## See Also
 

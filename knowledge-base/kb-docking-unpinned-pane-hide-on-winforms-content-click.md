@@ -26,7 +26,7 @@ ticketid: 1672937
 
 ## Description
 
-Unpinned RadPane elements with HwndHost (like WinFormsHost) content auto-hide on click insde the pane (over the HwndHost area).
+Unpinned RadPane elements with HwndHost (like WinFormsHost) content auto-hide on click inside the pane (over the HwndHost area).
 
 ## Cause
 

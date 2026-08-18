@@ -10,7 +10,7 @@ position: 12
 
 # Visual Tree Helpers
 
-The UI for {{ site.framework_name }} provides with several extension methods that allows you to enumerate the UI children of an element or find its parents. This way you can get a specific control from the visual tree interact with it.
+The UI for {{ site.framework_name }} provides several extension methods that allow you to enumerate the UI children of an element or find its parents. This way you can get a specific control from the visual tree and interact with it.
 
 The methods are available in the __ChildrenOfTypeExtensions__ and __ParentOfTypeExtensions__ static classes. They extend the DependencyObject class so you can call them on any UI element.
 
@@ -33,7 +33,7 @@ This class exposes several methods that you can use to get the children of an el
 		IEnumerable<RadToggleButton> toggleButtons = ChildrenOfTypeExtensions.ChildrenOfType<RadToggleButton>(radExpander);
 	```
 	
-* __FindChildByType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the control for an element of the concrete type. The methods returns the first element it founds.
+* __FindChildByType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the control for an element of the concrete type. The method returns the first element it finds.
 	
 	__Example 2: Getting a child type RadToggleButton from a RadExpander control__
 	```C#	
@@ -48,7 +48,7 @@ This class exposes several methods that you can use to get the children of an el
 
 This class exposes several methods that you can use to get the parents of an element.
 
-* __ParentOfType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the application for parent elements of the concrete type. The method returns the first parent if founds.
+* __ParentOfType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the application for parent elements of the concrete type. The method returns the first parent if found.
 	
 	__Example 3: Getting the parent of type RadExpander from a RadToggleButton control__
 	```C#

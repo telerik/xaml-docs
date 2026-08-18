@@ -31,7 +31,7 @@ How to increase the CheckBox size of the GridViewSelectColumn.
 
 ## Solution
 
-1. Define the following style targetting the **CheckBox** control.
+1. Define the following style targeting the **CheckBox** control.
 
   
   ```XAML

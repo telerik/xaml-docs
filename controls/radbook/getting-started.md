@@ -93,7 +93,7 @@ __Example 2: Adding RadBookItems__
 
 To set the initial page that will be displayed - set the __RightPageIndex__ property:
 
-__Example 3: Setting the intially displayed page__  
+__Example 3: Setting the initially displayed page__  
 ```XAML
 	<telerik:RadBook Margin="50" x:Name="RadBook1" RightPageIndex="3">
 		<telerik:RadBookItem Background="Red">

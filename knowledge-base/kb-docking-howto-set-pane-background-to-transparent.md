@@ -30,7 +30,7 @@ How to set the background of a RadDocking's pane to transparent (including RadPa
 
 ## Solution
 
-To remove the backround of a RadPane, add the following Styles:
+To remove the background of a RadPane, add the following Styles:
 
 
 ```XAML

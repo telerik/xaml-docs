@@ -35,7 +35,7 @@ In this section you will find:
 
 ## Understanding DataPoint
 
-__DataPoint__ class represents a single piece of data that is visualized in a chart series. Each __DataPoint__ has various properties that allow you to define every chart piece, such as: __XValue__, __YValue__, __BubleSize__, etc. Notice that depending on the selected chart type only a subset of them will be applied to the distinct chart series e.g. __DataPoint.BubbleSize__ is applicable only to __Bubble__ / __Bubble3D__ series types, while the __Open__, __Close__, __High__, __Low__ values are applicable only to __Stick__ / __CandleStick__ charts.
+__DataPoint__ class represents a single piece of data that is visualized in a chart series. Each __DataPoint__ has various properties that allow you to define every chart piece, such as: __XValue__, __YValue__, __BubbleSize__, etc. Notice that depending on the selected chart type only a subset of them will be applied to the distinct chart series e.g. __DataPoint.BubbleSize__ is applicable only to __Bubble__ / __Bubble3D__ series types, while the __Open__, __Close__, __High__, __Low__ values are applicable only to __Stick__ / __CandleStick__ charts.
 
 However, even if some of the __DataPoint__ properties are not required for the selected chart type, you can still bind or set them in order to use their values to format the item labels and/or tooltips. See [Format Expressions]({%slug radchart-features-format-expressions%}).
 

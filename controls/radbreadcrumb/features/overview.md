@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properties to allow further customization of their behavior and layout:
+The __RadBreadcrumb__ and __RadBreadcrumbItem__ controls expose a set of properties to allow further customization of their behavior and layout:
 
 ## RadBreadcrumb Common Properties
 

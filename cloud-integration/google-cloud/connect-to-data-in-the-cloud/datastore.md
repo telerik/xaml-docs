@@ -8,9 +8,9 @@ published: True
 position: 0
 ---
 
-# Google Cloud Datastore(NoSQL database)
+# Google Cloud Datastore (NoSQL database)
 
-Cloud Datastore is a highly-scalable NoSQL database which Google promotes for scenarios that require high-availabilty and durability, and is capable of multiple features such as ACID transactions, SQL-like queries, indexes and many more. This in combination with the characteristic for the NoSQL database solutions of being able to handle different data types, great scalability and the great performance makes it a choice you should have in mind when considering the architecture of your application. 
+Cloud Datastore is a highly-scalable NoSQL database which Google promotes for scenarios that require high-availability and durability, and is capable of multiple features such as ACID transactions, SQL-like queries, indexes and many more. This in combination with the characteristic for the NoSQL database solutions of being able to handle different data types, great scalability and the great performance makes it a choice you should have in mind when considering the architecture of your application. 
 
 >You can find more detailed information regarding the **Cloud Datastore** product on its [official documentation page](https://cloud.google.com/datastore/docs/).
 
@@ -277,5 +277,5 @@ __Example 4: Set the DataContext__
 
 ## See Also
 
-* [Google Cloud Cloud Storage]({%slug cloud-integration-google-cloud-storage%})
+* [Google Cloud Storage]({%slug cloud-integration-google-cloud-storage%})
 * [Google Cloud Translation]({%slug cloud-integration-cognitive-services-google-translation%})

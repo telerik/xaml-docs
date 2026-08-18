@@ -87,7 +87,7 @@ The following steps show how to setup the package source in Visual Studio.
 	
 1. The Telerik Server is added and ready to use. 
 
-Using the Telerik package source gives acces to versions starting from __2016.3.1024__. If you need to use a previous version of the suite you will need to create a [local package source](#using-a-local-package-source).
+Using the Telerik package source gives access to versions starting from __2016.3.1024__. If you need to use a previous version of the suite you will need to create a [local package source](#using-a-local-package-source).
 
 ### Telerik NuGet Server Authentication
 

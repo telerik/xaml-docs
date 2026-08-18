@@ -13,7 +13,7 @@ CTAControlName: RadCollectionNavigator
 
 Thank you for choosing __RadCollectionNavigator__!				
 
-__RadCollectionNavigator__ provides UI for seemless editing and navigation of а given data collection.
+__RadCollectionNavigator__ provides UI for seamless editing and navigation of a given data collection.
 
 RadCollectionNavigator is part of the powerful UI for WPF data management framework, which includes components as [RadDataFilter]({%slug datafilter-overview%}), [RadDataForm]({%slug raddataform-overview%}), [RadDataPager]({%slug datapager-overview%}), [RadGridView]({%slug gridview-overview2%}), [RadPivotGrid]({%slug radpivotgrid-overview%}) and more.		
 

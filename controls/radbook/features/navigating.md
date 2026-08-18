@@ -12,7 +12,7 @@ position: 3
 
 To change the set of pages that are displayed, you should use the __RightPageIndex__ property. This property represents the index of the page that is displayed in the right side of the book. It is zero based. 
 
-On initial load, when the first and second pages are displayed, the value of this property will be 1. When the next pages are displayed - e.g. 3rd and 4rh the value of this property will be 3.
+On initial load, when the first and second pages are displayed, the value of this property will be 1. When the next pages are displayed - e.g. 3rd and 4th the value of this property will be 3.
 
 If you want to display the 50th and 51st page you should set this property to 50.
 

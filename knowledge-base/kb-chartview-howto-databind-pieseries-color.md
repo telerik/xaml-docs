@@ -88,7 +88,7 @@ You can use the Series **DefaultSliceStyle** and bind the data item's `Brush` pr
 
 #### Example 2 - Dynamically Setting Color
 
-If the data model does not have a `Brush` property that can be directly bound to `Path` **Fill**, you can use an `IValueConverter` to return a `Brush` value that can use used to set the **Fill** value. 
+If the data model does not have a `Brush` property that can be directly bound to `Path` **Fill**, you can use an `IValueConverter` to return a `Brush` value that can be used to set the **Fill** value. 
 
 1. Use the code from Example 1 to get started, then take the following additional steps.
 

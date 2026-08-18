@@ -41,6 +41,6 @@ __Using the PromptRequest event to add a new response in the AIPrompt control__
 
 ## See Also
 * [Suggestions]({%slug radaiprompt-suggestions%})
-* [RadAIPromptButon]({%slug radaiprompt-prompt-button%})
+* [RadAIPromptButton]({%slug radaiprompt-prompt-button%})
 * [Commands]({%slug radaiprompt-commands%})
 * [Paging]({%slug radaiprompt-paging%})

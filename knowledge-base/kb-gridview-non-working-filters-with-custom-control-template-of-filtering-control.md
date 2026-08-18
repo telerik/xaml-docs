@@ -39,4 +39,4 @@ __Modifying the Path property of the ItemsSource Binding instance__
     </ListBox>
 ```
 
-To ensure that everything works properly, it is recommended to replace the customized `ControlTemplate` with the original one from the latest Telerik version. Then you can re-apply any customizaions in the new template.
+To ensure that everything works properly, it is recommended to replace the customized `ControlTemplate` with the original one from the latest Telerik version. Then you can re-apply any customizations in the new template.

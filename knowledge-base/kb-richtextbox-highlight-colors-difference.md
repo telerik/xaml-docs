@@ -27,7 +27,7 @@ ticketid: 1023476
 
 ## Description
 
-The highlight colors that the RadRichTextBox control provides differ from the ones that are present in Microsoft Word. This cause the DOCX format to not use these additional colors when exporting a paragraph. 
+The highlight colors that the RadRichTextBox control provides differ from the ones that are present in Microsoft Word. This causes the DOCX format to not use these additional colors when exporting a paragraph. 
 
 ## Solution
 

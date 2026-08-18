@@ -19,7 +19,7 @@ This topic defines terms and concepts related to __RadAutoSuggestBox__ that you 
 
 The following table lists the elements that make up a RadAutoSuggestBox:
 
-* __Watermark Content__: Shows the empty content of RadAutoSuggestBox when there is no text enterted into the TextBox.
+* __Watermark Content__: Shows the empty content of RadAutoSuggestBox when there is no text entered into the TextBox.
 
 * __TextBox__: Shows the current text query or the chosen suggestion. 
 

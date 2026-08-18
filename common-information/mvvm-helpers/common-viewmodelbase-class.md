@@ -49,7 +49,7 @@ The `ViewModelBase` abstract class is designed to serve as a base class for all 
 
 As shown in the previous example the `OnPropertyChanged` method gives a couple of overloads that can be used.
 
-The `ViewModelBase` class supports an additional approach for notifying the property change, via the the [CallerMemberName](https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.callermembernameattribute(v=vs.110).aspx) attribute which is implemented in the `RaisePropertyChanged` method.
+The `ViewModelBase` class supports an additional approach for notifying the property change, via the [CallerMemberName](https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.callermembernameattribute(v=vs.110).aspx) attribute which is implemented in the `RaisePropertyChanged` method.
 
 #### **[C#] Example 2: Using the CallerMemberName attribute**:
 ```C#

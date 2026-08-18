@@ -29,7 +29,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 ## Defining the RadBadge
 
-__Defining RadBage in XAML__
+__Defining RadBadge in XAML__
 ```C#
 	<telerik:RadButton Content="Notifications" VerticalAlignment="Center" HorizontalAlignment="Center">
 		<telerik:RadBadge.Badge>

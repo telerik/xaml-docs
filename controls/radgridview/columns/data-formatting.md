@@ -40,7 +40,7 @@ __Example 1: Set DataFormatString property of DateTime column__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView DateTime column formatted with a custom DataFormatString](images/RadGridView_DataFormatting_1.png)
 
->The DataFormatString property uses the __string.Format__ method. To learn more, check the [string.Format](http://msdn.microsoft.com/en-us/library/system.string.format.aspx) MSDN article. The resulting string is also dependent on the [IsLocalizationLanguageRespected]({%slug gridview-how-to-custom-format%}) property.
+>The DataFormatString property uses the __string.Format__ method. To learn more, check the [string.Format](http://msdn.microsoft.com/en-us/library/system.string.format.aspx) MSDN article. The resulting string is also dependent on the [IsLocalizationLanguageRespected]({%slug gridview-how-to-custom-format%}) property. To use a different culture for an individual column, see [Apply a Different Culture to a Column]({%slug gridview-how-to-custom-format%}#apply-a-different-culture-to-a-column).
 
 To learn more about formatting visit the [Formatting Overview](http://msdn.microsoft.com/en-us/library/26etazsy.aspx) chapter in MSDN.
 

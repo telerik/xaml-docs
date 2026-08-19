@@ -20,7 +20,6 @@ Fields are a convenient way to show non-static data in the document. In this way
 
 This topic explains how custom fields can be created in order to suit application-specific purposes. 
 
-
 ## Create Custom Field
 
 In some cases, it is convenient to extend the currently available fields to suit application-specific scenarios. This can be done by inheriting from __CodeBasedField__ or (if the functionality of the new field will be closely connected to Mail Merge) from __MergeField__.
@@ -250,6 +249,44 @@ The properties influencing the update operation are grouped in __FieldTypeUpdate
 * __NeedsPagination__: Determines whether the field needs the document to be paginated during the update. The default value is false. 
 	
 	For performance reasons, the document is not always paginated during the UpdateAllFields operation, which may lead to incorrect field values for some fields, for example ones using current page number or total number of pages in section/document. In these cases, you can set NeedsPagination property to true. 
+
+
+## Create and Format a Field Without RadRichTextBox
+
+You can create and insert a custom field without placing a __RadRichTextBox__ in the visual tree. Define the field by inheriting from __CodeBasedField__, apply the font settings to the __Span__ returned by __GetResultFragment__, and insert the field through __RadDocumentEditor__.
+
+__Format the custom field result__
+
+```C#
+public class StyledField : CodeBasedField
+{
+    protected override DocumentFragment GetResultFragment()
+    {
+        Span span = new Span("Field content")
+        {
+            FontFamily = new FontFamily("Arial"),
+            FontSize = 16,
+            FontWeight = FontWeights.Bold
+        };
+
+        return DocumentFragment.CreateFromInline(span);
+    }
+}
+```
+
+Create a __RadDocument__ and pass it to __RadDocumentEditor__ when you need to modify the document without an editor control:
+
+__Insert the field with RadDocumentEditor__
+
+```C#
+RadDocument document = new RadDocument();
+RadDocumentEditor documentEditor = new RadDocumentEditor(document);
+documentEditor.InsertField(new StyledField());
+```
+
+Use the field editor methods to update or change the display mode of an existing field. These methods accept the corresponding __FieldRangeStart__, for example __UpdateField(FieldRangeStart)__ and __ChangeFieldDisplayMode(FieldRangeStart, FieldDisplayMode)__.
+
+The exact constructors and range-marker relationships for manually creating __FieldRangeStart__ and __FieldRangeEnd__ instances are not covered by this article. Use __RadDocumentEditor__ field methods unless you have verified the applicable API for your Telerik version.
 
 ## See Also
 

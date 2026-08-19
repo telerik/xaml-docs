@@ -1,13 +1,13 @@
 ---
-title: Upgrade Tool
-page_title: Telerik UI for WPF Upgrade Tool
+title: Upgrade Assistant
+page_title: Telerik UI for WPF MCP Upgrade Tool
 description: Learn how to use the telerik_upgrade_assistant tool from the Telerik WPF MCP Server to analyze your WPF projects for breaking changes when upgrading between Telerik UI for WPF versions.
-slug: ai-upgrade-tool
+slug: ai-upgrade-assistant
 tags: telerik,wpf,ai,coding assistant,upgrade,migration,breaking changes,mcp
 position: 2
 ---
 
-# Telerik UI for WPF Upgrade Tool
+# Telerik UI for WPF MCP Upgrade Assistant
 
 The `telerik_upgrade_assistant` tool is part of the [Telerik WPF MCP Server]({%slug ai-mcp-server%}) (version 1.8.0 and later). It helps you analyze your existing WPF projects for breaking changes when upgrading between Telerik UI for WPF versions.
 
@@ -50,46 +50,7 @@ To analyze your WPF project for Telerik-related upgrade issues, follow these ste
 
 ![Telerik WPF Assistant](images/ai-upgrade-tool_03.png)
 
->tip The `telerik_upgrade_assistant` tool uses the [Telerik CLI]({%slug telerik-cli%}) `telerik migrate analyze` command under the hood. You can also run this command directly from the terminal. See the [Telerik CLI Command Options](#telerik-cli-command-options) section below for all available options.
-
-## How It Works
-
-The upgrade tool follows a four-step process:
-
-1. **CLI Readiness**&mdash;Checks whether the `Telerik.CLI` is installed globally (`dotnet tool list --global`). If it is missing, the tool asks for your permission and installs it. It also checks for updates via `telerik upgrade --global` and applies them if needed.
-
-2. **Project Resolution**&mdash;Validates the provided `.csproj` path. If the path is invalid or missing, the tool uses MCP elicitation to prompt you for the correct path directly in the IDE.
-
-3. **Analysis**&mdash;Invokes the `telerik migrate analyze --product wpf --project <path-to-csproj> --json` command. When `--from-version` and `--to-version` are explicitly provided, the tool passes them to the CLI. Otherwise, the CLI auto-detects the currently installed Telerik version.
-
-4. **Results**&mdash;Parses the JSON output and returns a structured markdown report grouped by file, including line numbers, member names, change kinds, old/new signatures (if available), and a next-steps section for the AI model to act on.
-
-## Telerik CLI Command Options
-
-The underlying `telerik migrate analyze` command supports the following options for the WPF product:
-
-| Option | Description |
-|--------|-------------|
-| `--product wpf` | Specifies the Telerik product to analyze (required). |
-| `--project <path>` | Path to a `.csproj` file to analyze. |
-| `--directory <path>` | Path to a directory containing source files to analyze. |
-| `--file <paths>` | One or more specific source files to analyze. |
-| `--from-version <version>` | The source Telerik version to migrate from. Auto-detected if omitted. |
-| `--to-version <version>` | The target Telerik version to migrate to. Defaults to the latest version if omitted. |
-| `--json` | Returns machine-readable JSON output (used internally by the MCP tool). |
-
-#### Example CLI Commands
-
-```powershell
-# Analyze an entire WPF project
-@telerik migrate analyze --product wpf --project ./MyApp.csproj
-
-# Specify a version range and analyze a directory
-@telerik migrate analyze --product wpf --directory ./src --from-version 2024.4.1111 --to-version 2025.1.130
-
-# Analyze specific files with JSON output
-@telerik migrate analyze --product wpf --file Form1.cs Form2.cs --json
-```
+>tip The `telerik_upgrade_assistant` tool uses the [Telerik CLI]({%slug telerik-cli%}) `telerik migrate analyze` command under the hood. You can also run this command directly from the terminal. For all available command options, see the [Telerik CLI Migrate Analyzer]({%slug telerik-cli-migrate-analyzer%}) article.
 
 ## Understanding the Results
 
@@ -109,4 +70,5 @@ The AI model uses this information to suggest precise code modifications or appl
 
 * [Telerik WPF MCP Server]({%slug ai-mcp-server%})
 * [Telerik CLI]({%slug telerik-cli%})
+* [Telerik CLI Migrate Analyzer]({%slug telerik-cli-migrate-analyzer%})
 * [Telerik WPF AI Coding Assistant Overview]({%slug ai-overview%})

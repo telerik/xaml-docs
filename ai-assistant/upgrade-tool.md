@@ -23,6 +23,35 @@ To use the upgrade tool, you need:
 
 >tip If the Telerik CLI is not installed on your machine, the tool will ask for your permission to install it via `dotnet tool install --global Telerik.CLI`. It will also check for available updates and apply them when needed.
 
+
+## Using the Upgrade Tool
+
+To analyze your WPF project for Telerik-related upgrade issues, follow these steps:
+
+1. Open your WPF solution in Visual Studio.
+2. Open the **Copilot Chat** window.
+3. Make sure the `telerik-wpf-assistant` MCP tool is enabled in the Copilot Chat tool selection dropdown. For setup instructions, see [Getting Started with Telerik WPF MCP Server]({%slug ai-mcp-server%}).
+
+![Telerik WPF Assistant](images/ai-upgrade-tool_01.png)
+
+4. Type a prompt such as:
+
+    `@telerik Analyze this WPF project for Telerik-related upgrade issues.`
+
+    You can also specify version details:
+
+    `@telerik Analyze my WPF project for breaking changes when upgrading from version 2024.4.1111 to 2025.2.513.`
+
+![Telerik WPF Assistant](images/ai-upgrade-tool_02.png)
+
+5. Grant permissions when prompted (per session, workspace, or always). The AI model automatically invokes the `telerik_upgrade_assistant` tool, which runs the analysis and returns a structured report of any breaking changes found in your project.
+
+6. Review the results. The AI model presents the findings grouped by file, with line numbers, affected API members, and recommended actions. You can then ask the AI to apply the suggested fixes directly to your code.
+
+![Telerik WPF Assistant](images/ai-upgrade-tool_03.png)
+
+>tip The `telerik_upgrade_assistant` tool uses the [Telerik CLI]({%slug telerik-cli%}) `telerik migrate analyze` command under the hood. You can also run this command directly from the terminal. See the [Telerik CLI Command Options](#telerik-cli-command-options) section below for all available options.
+
 ## How It Works
 
 The upgrade tool follows a four-step process:
@@ -53,13 +82,13 @@ The underlying `telerik migrate analyze` command supports the following options 
 
 ```powershell
 # Analyze an entire WPF project
-telerik migrate analyze --product wpf --project ./MyApp.csproj
+@telerik migrate analyze --product wpf --project ./MyApp.csproj
 
 # Specify a version range and analyze a directory
-telerik migrate analyze --product wpf --directory ./src --from-version 2024.4.1111 --to-version 2025.1.130
+@telerik migrate analyze --product wpf --directory ./src --from-version 2024.4.1111 --to-version 2025.1.130
 
 # Analyze specific files with JSON output
-telerik migrate analyze --product wpf --file Form1.cs Form2.cs --json
+@telerik migrate analyze --product wpf --file Form1.cs Form2.cs --json
 ```
 
 ## Understanding the Results

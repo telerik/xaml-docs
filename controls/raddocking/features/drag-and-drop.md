@@ -60,6 +60,8 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 >tip To dock a pane to a [Tabbed Document]({%slug raddocking-features-pane-groups%}), drag and drop it over the center indicator of the Compass.
 
+>tip To create a split layout inside a single tab, use a nested [RadDocking]({%slug raddocking-features-nesteddocking%}) with separate `RadPaneGroup` elements inside a `RadSplitContainer`. Dragging a pane to the center indicator creates a tab in the current group; it does not create a nested split layout.
+
 ## Undocking Panes
 
 1. Click on the docked pane's header and start dragging it. 

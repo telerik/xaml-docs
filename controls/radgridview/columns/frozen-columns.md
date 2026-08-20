@@ -178,4 +178,6 @@ __Setting the LeftFrozenColumnSplitterThreshold and RightFrozenColumnSplitterThr
  * [Bound/Unbound Columns]({%slug gridview-columns-bound-unbound-columns%})
  * [Customizing Columns]({%slug gridview-columns-customizing-columns%})
 
+ * [Customizing Rows]({%slug gridview-customizing-rows%})
+
  * [Column Groups]({%slug gridview-column-groups%})

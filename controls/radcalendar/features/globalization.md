@@ -76,6 +76,26 @@ __Example 2: Setting the calendar for a specific RadCalendar instance__
 
 ![Hijri calendar](images/calendar-hijri.png)
 
+## Right-to-Left Calendar
+
+Set the `FlowDirection` property to `RightToLeft` when the calendar should use a right-to-left layout and keyboard direction:
+
+```XAML
+	<telerik:RadCalendar FlowDirection="RightToLeft" />
+```
+
+`FlowDirection` and `Culture` control different aspects of the calendar. `FlowDirection` controls the right-to-left direction, while `Culture` controls localized date information and the calendar system. To configure both for an Arabic calendar, use the following code:
+
+```C#
+	CultureInfo culture = CultureInfo.CreateSpecificCulture("ar-SA");
+	culture.DateTimeFormat.Calendar = new HijriCalendar();
+
+	calendar.FlowDirection = FlowDirection.RightToLeft;
+	calendar.Culture = culture;
+```
+
+The calendar uses its `FlowDirection` when processing horizontal keyboard navigation. Set `Culture` only when you also need culture-specific date formatting or a specific calendar implementation.
+
 >For more information on how to use the calendar classes when working with date values, please read the following [MSDN article](https://msdn.microsoft.com/en-us/library/82aak18x).
 
 ## See Also

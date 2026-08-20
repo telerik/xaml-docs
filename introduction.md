@@ -170,6 +170,10 @@ Throughout this article, you will find the following sections that describe all 
 
 This UI for WPF library is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a Telerik UI for WPF license](https://www.telerik.com/purchase/individual/wpf.aspx). Feel free to review the Telerik UI for WPF [license agreement terms](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s) to get acquainted with the full terms of use.	
 
+## Export Classification
+
+Telerik products, including Telerik UI for WPF, are classified as **EAR99** for export-control purposes. For more information about the EAR99 classification, see the [U.S. Department of Commerce guidance on ECCN and EAR99](https://www.trade.gov/eccn-and-export-administration-regulation-ear99).
+
 ## Support Options
 
 For any issues you might encounter while working with UI for {{site.framework_name}}, use any of the available communication channels:

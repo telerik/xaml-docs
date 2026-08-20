@@ -52,6 +52,44 @@ __Figure 2__: RadGridView displaying data with IsLocalizationLanguageRespected s
 
 ![Telerik UI for {{ site.framework_name }} RadGridView formatting data with IsLocalizationLanguageRespected set to False and custom CurrentCulture applied](images/gridview_customformat_after.png)
 
+## Apply a Different Culture to a Column
+
+The built-in `DataFormatString` formatter uses the culture from the `RadGridView` (or its containing element). Setting `Language` directly on a `GridViewDataColumn` is not the formatter path used for generated cells.
+
+To use a different culture for an individual column, define a `CellTemplate` and set the `xml:lang` attribute on the element that displays the value. The following example uses the same `Amount` property with two different cultures:
+
+```XAML
+	<telerik:RadGridView ItemsSource="{Binding Items}"
+	                     AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn Header="US amount"
+	                                    DataMemberBinding="{Binding Amount}">
+	            <telerik:GridViewDataColumn.CellTemplate>
+	                <DataTemplate>
+	                    <TextBlock Text="{Binding Amount, StringFormat={}{0:N2}}"
+	                               xml:lang="en-US" />
+	                </DataTemplate>
+	            </telerik:GridViewDataColumn.CellTemplate>
+	        </telerik:GridViewDataColumn>
+	        <telerik:GridViewDataColumn Header="German amount"
+	                                    DataMemberBinding="{Binding Amount}">
+	            <telerik:GridViewDataColumn.CellTemplate>
+	                <DataTemplate>
+	                    <TextBlock Text="{Binding Amount, StringFormat={}{0:N2}}"
+	                               xml:lang="de-DE" />
+	                </DataTemplate>
+	            </telerik:GridViewDataColumn.CellTemplate>
+	        </telerik:GridViewDataColumn>
+	    </telerik:RadGridView.Columns>
+	</telerik:RadGridView>
+```
+
+Use the format string and `xml:lang` value that correspond to the required output for each column. If a required separator pattern is not provided by a culture, format the value with a converter and bind the resulting text in the `CellTemplate`.
+
+__Figure 3__: RadGridView displaying the same amount with US and German culture-specific formatting
+
+![Telerik UI for WPF RadGridView displaying US and German culture-specific amount formatting in separate columns](images/gridview-columns-culture.png)
+
 ## See Also
 
  * [Data Formatting]({%slug gridview-columns-data-formatting%})

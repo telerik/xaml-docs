@@ -64,8 +64,6 @@ The upgrade tool returns a structured report that includes:
 * **New signature**&mdash;The replacement API signature (when available).
 * **Next steps**&mdash;Recommended actions for resolving each finding.
 
-The AI model uses this information to suggest precise code modifications or apply them directly to your project files.
-
 ## See Also
 
 * [Telerik WPF MCP Server]({%slug ai-mcp-server%})

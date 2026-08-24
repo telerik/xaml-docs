@@ -986,30 +986,6 @@ meta:
         position: 14
     "common-information/winforms-integration":
         title: "WinForms Integration"
-    "cloud-integration/amazon-web-services":
-        title: "Amazon Web Services"
-        position: 2
-    "cloud-integration/amazon-web-services/connect-to-data-in-the-cloud":
-        title: "Connect to Data in the Cloud"
-        position: 5
-    "cloud-integration/azure":
-        title: "Azure"
-        position: 2
-    "cloud-integration/azure/cognitive-services":
-        title: "Cognitive Services"
-        position: 5
-    "cloud-integration/azure/connect-to-data-in-the-cloud":
-        title: "Connect to Data in the Cloud"
-        position: 6
-    "cloud-integration/google-cloud":
-        title: "Google Cloud"
-        position: 4
-    "cloud-integration/google-cloud/cognitive-services":
-        title: "Cognitive Services"
-        position: 4
-    "cloud-integration/google-cloud/connect-to-data-in-the-cloud":
-        title: "Connect to Data in the Cloud"
-        position: 5
     "installation/manual-setup-guides/visual-studio-extensions":
         title: "Visual Studio Extensions"
         position: 17
@@ -1053,9 +1029,6 @@ meta:
     "common-information":
         title: "Common Information"
         position: 7
-    "cloud-integration":
-        title: "Cloud Integration"
-        position: 9
     "testing":
         title: "Testing"
         position: 10
@@ -1066,6 +1039,10 @@ meta:
 redirects:
 -
     from: "^/?$"
+    to: "/introduction"
+    type: Permanent
+-
+    from: "^/cloud-integration/.*$"
     to: "/introduction"
     type: Permanent
 -

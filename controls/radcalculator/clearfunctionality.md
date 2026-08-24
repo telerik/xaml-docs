@@ -2,6 +2,7 @@
 title: Clear the Value
 page_title: Clear Value
 description: Check our &quot;Clear Functionality&quot; documentation article for the RadCalculator {{ site.framework_name }} control.
+components: ["calculator"]
 slug: radcalculator-clearfunctionality
 tags: clear,functionality
 published: True

@@ -2,6 +2,7 @@
 title: Changes
 page_title: Changes
 description: Check our &quot;Changes&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-changes
 tags: changes
 published: True

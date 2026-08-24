@@ -2,6 +2,7 @@
 title: Expanding and Collapsing Items
 page_title: Expanding and Collapsing Items
 description: Check our &quot;Expanding and Collapsing Items&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelsitview-how-to-control-expand-settings
 tags: isexpandedbinding,and,isexpandablebinding,expand,collapse
 published: True

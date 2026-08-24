@@ -2,6 +2,7 @@
 title: Basic Filtering
 page_title: RadGridView Basic Filtering
 description: Learn how to use Popup, Filter Row, and Filter Editor modes in Telerik {{ site.framework_name }} RadGridView and configure column filtering behavior.
+components: ["gridview"]
 slug: gridview-filtering-basic
 tags: basic,filtering
 published: True

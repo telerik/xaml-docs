@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadOfficeNavigationBar control.
+components: ["officenavigationbar"]
 slug: radofficenavigationbar-getting-started
 tags: getting started, officenavigationbar getting started
 published: True

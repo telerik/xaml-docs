@@ -2,6 +2,7 @@
 title: PathButton
 page_title: PathButton
 description: Check our &quot;PathButton&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-features-pathbutton
 tags: pathbutton
 published: True

@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-localization
 tags: daterangepicker,input,culture,settings,localization
 published: True

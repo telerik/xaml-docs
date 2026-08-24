@@ -2,6 +2,7 @@
 title: Keyboard Window
 page_title: Keyboard Window
 description: Check our &quot;Keyboard Window; documentation article for the RadVirtualKeyboard WPF control.
+components: ["virtualkeyboard"]
 slug: radvirtualkeyboard-window
 tags: window,dialog
 published: True

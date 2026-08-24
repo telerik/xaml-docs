@@ -2,6 +2,7 @@
 title: Data Binding 
 page_title: Data Binding - Breadcrumb
 description: Check our &quot;Data Binding&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
+components: ["breadcrumb"]
 slug: radbreadcrumb-databinding
 tags: databinding,
 published: True

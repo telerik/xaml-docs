@@ -2,6 +2,7 @@
 title: Export
 page_title: Export
 description: Check our &quot;Export&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-export
 tags: export
 published: True

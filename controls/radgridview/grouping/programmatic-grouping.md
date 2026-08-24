@@ -2,6 +2,7 @@
 title: Programmatic Grouping
 page_title: Programmatic Grouping
 description: Read this article to learn how to programmatically group Telerik's {{ site.framework_name }} DataGrid by adding group descriptors to the control's GroupDescriptors collection.
+components: ["gridview"]
 slug: gridview-programmatic-grouping
 tags: programmatic,grouping
 published: True

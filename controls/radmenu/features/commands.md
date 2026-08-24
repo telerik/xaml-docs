@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: Check our &quot;Commands&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-features-commands
 tags: commands
 published: True

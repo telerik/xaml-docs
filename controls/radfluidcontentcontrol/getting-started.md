@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This tutorial will walk you through the creation of a sample application that contains RadFluidContentControl.
+components: ["fluidcontentcontrol"]
 slug: fluidcontentcontrol-getting-started
 tags: getting,started
 published: True

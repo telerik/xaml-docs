@@ -2,6 +2,7 @@
 title: Read Only Ranges
 page_title: Read Only Ranges
 description: Check our &quot;Read Only Ranges&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-read-only-ranges
 tags: read,only,ranges
 published: True

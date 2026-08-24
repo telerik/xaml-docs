@@ -2,6 +2,7 @@
 title: Peek Popup
 page_title: Peek Popup
 description: Check our &quot;Peek Popup&quot; documentation article for the RadOfficeNavigationBar control.
+components: ["officenavigationbar"]
 slug: radofficenavigationbar-peek-popup
 tags: peek popup, radofficenavigationbar
 published: True

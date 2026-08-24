@@ -2,6 +2,7 @@
 title: Mouse Support
 page_title: Mouse Support
 description: Learn how you can control the mouse interaction and get notified when mouse events occur within RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
+components: ["gridview"]
 slug: gridview-overview-mouse-support
 tags: mouse,support
 published: True

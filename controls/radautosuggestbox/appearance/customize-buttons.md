@@ -2,6 +2,7 @@
 title: Customize the Buttons
 page_title: Customize the Buttons
 description: This article shows how to customize the appearance of the query and clear buttons of RadAutoSuggestBox.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-appearance-customize-buttons
 tags: delete,style,customize,buttons,query,clear
 position: 0

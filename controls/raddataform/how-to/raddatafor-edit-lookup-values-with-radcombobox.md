@@ -2,6 +2,7 @@
 title: Edit Lookup Values with RadComboBox
 page_title: Edit Lookup Values with RadComboBox
 description: Check our &quot;Edit Lookup Values with RadComboBox&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddatafor-edit-lookup-values-with-radcombobox
 tags: edit,lookup,values,with,radcombobox
 published: True

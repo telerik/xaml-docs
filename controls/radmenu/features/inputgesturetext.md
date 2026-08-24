@@ -2,6 +2,7 @@
 title: InputGestureText
 page_title: InputGestureText
 description: Check our &quot;InputGestureText&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-features-inputgesturetext
 tags: inputgesturetext
 published: True

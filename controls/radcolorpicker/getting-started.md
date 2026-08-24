@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
+components: ["colorpicker"]
 slug: radcolorpicker-getting-started
 tags: getting,started
 published: True

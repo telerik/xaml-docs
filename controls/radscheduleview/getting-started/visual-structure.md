@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-getting-started-visual-structure
 tags: visual,structure
 published: True

@@ -2,6 +2,7 @@
 title: Styling the Visual Cue
 page_title: Styling the Visual Cue
 description: This article demonstrates how to create a style targeting VisualCue.
+components: ["docking"]
 slug: raddocking-styling-the-visual-cue
 tags: styling,the,visual,cue
 published: True

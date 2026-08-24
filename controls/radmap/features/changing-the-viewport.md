@@ -2,6 +2,7 @@
 title: Changing the Viewport
 page_title: Change the Current Viewport
 description: This article will provide information about what is a viewport and how to change it.
+components: ["map"]
 slug: radmap-changing-the-viewport
 tags: radmap, viewport, set, view, setview
 published: True

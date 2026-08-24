@@ -2,6 +2,7 @@
 title: BollingerBandsIndicator
 page_title: BollingerBandsIndicator
 description: Check our &quot;BollingerBandsIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-bollingerbandsindicator
 tags: financial, indicators, bollingerbandsindicator
 publish: True

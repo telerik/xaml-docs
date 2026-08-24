@@ -2,6 +2,7 @@
 title: Add Screen Tips in the Code Behind
 page_title: Add Screen Tips in the Code Behind
 description: Check our &quot;Add Screen Tips in the Code Behind&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-howto-add-screentips-code-behind
 tags: add,screen,tips,in,the,code,behind
 published: True

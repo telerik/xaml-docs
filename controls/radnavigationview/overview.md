@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article lists the main features of the RadNavigationView control.
+components: ["navigationview"]
 slug: radnavigationview-overview
 tags: overview, radnavigationview
 position: 0

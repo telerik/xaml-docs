@@ -2,6 +2,7 @@
 title: Styling DataFormDataField
 page_title: Styling DataFormDataField
 description: This article demonstrates how to create a style targeting the DataFormDataField control. 
+components: ["dataform"]
 slug: raddataform-styles-and-templates-styling-dataformdatafield
 tags: styling,dataformdatafield
 published: True

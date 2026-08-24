@@ -2,6 +2,7 @@
 title: Image Editor Dialog
 page_title: Image Editor Dialog
 description: Check our &quot;Image Editor Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-image-editor
 tags: image,editor
 published: True

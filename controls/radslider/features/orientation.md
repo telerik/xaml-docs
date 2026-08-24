@@ -2,6 +2,7 @@
 title: Orientation
 page_title: Orientation
 description: Check our &quot;Orientation&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+components: ["slider"]
 slug: radslider-orientation
 tags: orientation
 published: True

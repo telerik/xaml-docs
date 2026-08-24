@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
+components: ["heatmap"]
 sdk_example: true
 slug: radheatmap-sdk-examples
 tags: sdk,examples

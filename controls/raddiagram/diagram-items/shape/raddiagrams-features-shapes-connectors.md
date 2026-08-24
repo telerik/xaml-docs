@@ -2,6 +2,7 @@
 title: Connectors
 page_title: Shape Connectors - WPF Diagram
 description: Telerik RadDiagram for {{ site.framework_name }} Shape Connectors.
+components: ["diagram"]
 slug: raddiagrams-features-shapes-connectors
 tags: shapes,connectors
 published: True

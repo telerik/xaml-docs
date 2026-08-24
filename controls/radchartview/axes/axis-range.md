@@ -2,6 +2,7 @@
 title: Controlling Axis Range
 page_title: Controlling Axis Range
 description: This article describes how to control the axis range in RadChartView for WPF.
+components: ["chartview"]
 slug: radchartview-axis-range
 tags: axis,range,majorstep,step,interval
 published: True

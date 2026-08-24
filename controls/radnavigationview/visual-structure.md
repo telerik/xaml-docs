@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: The article demonstrates the Visual Structure of the RadNavigationView.
+components: ["navigationview"]
 slug: radnavigationview-visual-structure
 tags: visual,structure
 published: True

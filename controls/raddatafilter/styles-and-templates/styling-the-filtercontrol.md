@@ -2,6 +2,7 @@
 title: Styling FilterControl
 page_title: Styling FilterControl
 description: Check our &quot;Styling FilterControl&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: raddatafilter-styles-and-templates-styling-the-filtercontrol
 tags: styling,the,filtercontrol
 published: True

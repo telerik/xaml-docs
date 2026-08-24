@@ -2,6 +2,7 @@
 title: Troubleshooting Common Problems
 page_title: Troubleshooting Common Problems
 description: Check our &quot;Troubleshooting Common Problems&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-troubleshooting-common-problems
 tags: troubleshooting,common,problems
 published: True

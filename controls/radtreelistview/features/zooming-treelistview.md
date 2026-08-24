@@ -2,6 +2,7 @@
 title: Zooming
 page_title: Zooming
 description: This article provides information regarding the zooming functionality of the RadTreeListView control. 
+components: ["treelistview"]
 slug: radtreelistview-zooming
 tags: radtreelistview, zooming, zoom
 published: True

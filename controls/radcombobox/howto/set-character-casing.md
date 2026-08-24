@@ -2,6 +2,7 @@
 title: Set CharacterCasing Property of the Input Area
 page_title: Set CharacterCasing Property of the Input Area
 description: Check our &quot;Set CharacterCasing Property of the Input Area&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-howto-set-character-casing
 tags: set,charactercasing,property,of,the,input,area
 published: True

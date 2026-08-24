@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting
 description: Learn how you can easily sort grid data by one of the columns thanks to the sorting functionality of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-overview-sorting
 tags: sorting
 published: True

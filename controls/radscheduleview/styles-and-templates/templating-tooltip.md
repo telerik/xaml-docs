@@ -2,6 +2,7 @@
 title: Templating the ToolTip
 page_title: Templating the ToolTip
 description: Check our &quot;Templating the ToolTip&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-styles-and-templates-templating-tooltip
 tags: templating,the,tooltip
 published: True

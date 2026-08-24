@@ -2,6 +2,7 @@
 title: Add Control to the EditAppointmentDialog
 page_title: Add Control to the EditAppointmentDialog
 description: This article shows how to extend the UI of the RadScheduleView EditAppointmentDialog by adding a custom control in it.
+components: ["scheduleview"]
 slug: radscheduleview-howto-add-radcombobox-to-editappointmentdialog
 tags: add,radcombobox,custom,editappointmentdialog
 published: True

@@ -2,6 +2,7 @@
 title: Multilanguage Support
 page_title: Multilanguage Support
 description: Check our &quot;Multilanguage Support&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
+components: ["spellchecker"]
 slug: radspellchecker-multilanguage-support
 tags: multilanguage,support
 published: True

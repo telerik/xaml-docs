@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadHighlightTextBlock control.
+components: ["highlighttextblock"]
 slug: radhighlighttextblock-overview
 tags: overview, radhighlighttextblock
 published: True

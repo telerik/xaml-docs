@@ -2,6 +2,7 @@
 title: Row Details
 page_title: Row Details
 description: Check our &quot;Row Details&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-row-details
 tags: row,details
 published: True

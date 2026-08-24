@@ -2,6 +2,7 @@
 title: ContainerNodeViewModelBase
 page_title: ContainerNodeViewModelBase
 description: Check our &quot;ContainerNodeViewModelBase&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-data-containernodeviewmodel
 tags: containernodeviewmodelbase
 published: True

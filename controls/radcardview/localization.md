@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: The article describes the localization feature of RadCardView.
+components: ["cardview"]
 slug: radcardview-features-localization
 tags: globalization,cardview,localization
 published: True

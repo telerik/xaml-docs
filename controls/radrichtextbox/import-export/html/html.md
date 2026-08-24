@@ -2,6 +2,7 @@
 title: Html
 page_title: Html
 description: Check our &quot;Html&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-Html
 tags: Html
 published: True

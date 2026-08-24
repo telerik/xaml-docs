@@ -2,6 +2,7 @@
 title: ScatterAreaSeries
 page_title: ScatterAreaSeries
 description: Check our &quot;ScatterAreaSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-scatterareaseries
 tags: scatterareaseries
 published: True

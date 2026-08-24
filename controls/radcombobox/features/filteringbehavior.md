@@ -2,6 +2,7 @@
 title: Filtering Behavior
 page_title: Filtering Behavior
 description: Check our &quot;Filtering Behavior&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-features-filteringbehavior
 tags: filteringbehavior
 published: True

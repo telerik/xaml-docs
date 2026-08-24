@@ -2,6 +2,7 @@
 title: Chart Grid
 page_title: Chart Grid
 description: Show grid lines ands stripes in RadChartView using CartesianChartGrid and PolarChartGrid.
+components: ["chartview"]
 slug: radchartview-cartesianchartgrid-and-polarchartgrid
 tags: cartesianchartgrid,and,polarchartgrid
 published: True

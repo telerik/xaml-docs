@@ -2,6 +2,7 @@
 title: CandlestickSeries
 page_title: CandlestickSeries
 description: Check our &quot;CandlestickSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-candlestickseries
 tags: candlesticseries
 published: True

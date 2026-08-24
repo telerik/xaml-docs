@@ -2,6 +2,7 @@
 title: RadDocumentMerger
 page_title: RadDocumentMerger
 description: Check our &quot;RadDocumentMerger&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-merge-raddocumentmerger
 tags: raddocumentmerger, merge, insert, append, documents
 published: True

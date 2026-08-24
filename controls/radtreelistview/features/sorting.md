@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting
 description: Check our &quot;Sorting&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-sorting
 tags: sorting
 published: True

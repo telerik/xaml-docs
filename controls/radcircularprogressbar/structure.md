@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: This article demonstrates the visual structure of the RadCircularProgressBar control.
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-visual-structure
 tags: visual, structure
 published: True

@@ -2,6 +2,7 @@
 title: Item Alignment
 page_title: Item Alignment
 description: Check our &quot;Item Alignment&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
+components: ["toolbar"]
 slug: radtoolbar-features-itemalignment
 tags: item,alignment
 publish: True

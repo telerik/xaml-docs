@@ -2,6 +2,7 @@
 title: Protection
 page_title: Protection
 description: Check our &quot;Protection&quot; documentation article for the RadSpreadsheet control.
+components: ["spreadsheet"]
 slug: radspreadsheet-protection
 tags: protection, radspreadsheet
 published: True

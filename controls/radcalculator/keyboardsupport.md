@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: Check our &quot;Keyboard Support&quot; documentation article for the RadCalculator {{ site.framework_name }} control.
+components: ["calculator"]
 slug: radcalculator-keyboardsupport
 tags: keyboard,support
 published: True

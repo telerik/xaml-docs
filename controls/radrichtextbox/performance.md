@@ -2,6 +2,7 @@
 title: Performance
 page_title: Performance
 description: Check our &quot;Performance&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-performance
 tags: performance
 published: True

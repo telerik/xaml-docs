@@ -2,6 +2,7 @@
 title: Touch Support
 page_title: Touch Support
 description: Check our &quot;Touch Support&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-features-touch-support
 tags: touch,support
 published: True

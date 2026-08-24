@@ -2,6 +2,7 @@
 title: FlyoutBehavior
 page_title: FlyoutBehavior
 description: Check our &quot;FlyoutBehavior&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-panes-flyoutbehavior
 tags: flyoutbehavior
 published: True

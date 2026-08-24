@@ -2,6 +2,7 @@
 title: Using DayTemplateSelector
 page_title: Using DayTemplateSelector
 description: Check our &quot;Using DayTemplateSelector&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
+components: ["calendar"]
 slug: radcalendar-styles-and-templates-using-daytemplateselector
 tags: how,to,customize,the,calendar,buttons,template,selector
 published: True

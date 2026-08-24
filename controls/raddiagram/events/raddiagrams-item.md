@@ -2,6 +2,7 @@
 title: Items Events
 page_title: Items Events
 description: This article describes the events of the items inside the RadDiagram framework.
+components: ["diagram"]
 slug: raddiagrams-events-item
 tags: items,events
 published: True

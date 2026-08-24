@@ -2,6 +2,7 @@
 title: Navigation
 page_title: Navigation
 description: This article describes how you can navigate through different pages of RadWizard control.
+components: ["wizard"]
 slug: wizard-navigation
 tags: wizard, navigation
 published: True

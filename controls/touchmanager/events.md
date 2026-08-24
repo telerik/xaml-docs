@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the TouchManager {{ site.framework_name }} control.
+components: ["touchmanager"]
 slug: touchmanager-events
 tags: events,touch,manager,touchmanager,touchenter,touchdown,touchleave,touchup,touchmove
 published: True

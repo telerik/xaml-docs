@@ -2,6 +2,7 @@
 title: Settings
 page_title: Settings
 description: Check our &quot;Settings&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-html-settings
 tags: settings
 published: True

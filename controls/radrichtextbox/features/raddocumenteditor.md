@@ -2,6 +2,7 @@
 title: RadDocumentEditor
 page_title: RadDocumentEditor
 description: Check our &quot;RadDocumentEditor&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-raddocumenteditor
 tags: raddocumenteditor
 published: True

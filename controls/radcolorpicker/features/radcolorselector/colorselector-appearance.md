@@ -2,6 +2,7 @@
 title: Appearance
 page_title: Appearance
 description: Check our &quot;Appearance&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
+components: ["colorpicker"]
 slug: colorselector-appearance
 tags: appearance
 published: True

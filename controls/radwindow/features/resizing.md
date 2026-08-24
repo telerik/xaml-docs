@@ -2,6 +2,7 @@
 title: Resizing
 page_title: Resizing
 description: Check our &quot;Resizing&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-resizing
 tags: resizing
 published: True

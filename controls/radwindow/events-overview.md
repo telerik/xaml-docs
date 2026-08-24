@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-events-overview
 tags: events
 published: True

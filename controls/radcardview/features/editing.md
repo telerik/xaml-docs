@@ -2,6 +2,7 @@
 title: Editing
 page_title: Editing
 description: The article describes the editing feature of RadCardView.
+components: ["cardview"]
 slug: radcardview-features-editing
 tags: editing,cardview
 published: True

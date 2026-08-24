@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article gives an overview of the RadExpressionEditor control.
+components: ["expressioneditor"]
 slug: radexpressioneditor-overview
 tags: overview
 published: True

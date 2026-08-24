@@ -2,6 +2,7 @@
 title: Filter Editor
 page_title: Filter Editor
 description: Learn more about the filtering functionality of Telerik's {{ site.framework_name }} DataGrid that allows the user to select which of the values of a current column to be displayed.
+components: ["gridview"]
 slug: gridview-filter-editor
 tags: basic,filtering
 position: 3

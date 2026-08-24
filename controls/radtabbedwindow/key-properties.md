@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: This article lists the main properties exposed by the RadTabbedWindow control.
+components: ["tabbedwindow"]
 slug: radtabbedwindow-key-properties
 tags: key, properties
 published: True

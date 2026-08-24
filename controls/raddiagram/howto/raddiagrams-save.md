@@ -2,6 +2,7 @@
 title: Save the Diagram in the File System
 page_title: Save the Diagram in the File System
 description: This article explains how you can save and load the RadDiagram control to and from an XML file on your system.
+components: ["diagram"]
 slug: raddiagrams-howto-save
 tags: save,the,diagram,in,the,file,system
 published: True

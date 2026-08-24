@@ -2,6 +2,7 @@
 title: Layout Modes
 page_title: Layout Modes
 description: Check our &quot;Layout Modes&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-layout-modes
 tags: layout,modes
 published: True

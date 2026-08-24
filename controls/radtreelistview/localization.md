@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-localization
 tags: localization
 published: True

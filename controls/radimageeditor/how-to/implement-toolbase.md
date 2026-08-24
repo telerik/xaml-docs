@@ -2,6 +2,7 @@
 title: Implement ToolBase Class
 page_title: Implement ToolBase Class
 description: Check our &quot;Implement ToolBase Class&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-howto-implement-toolbase
 tags: implement,toolbase
 published: True

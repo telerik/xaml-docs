@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding
 description: Check our &quot;Data Binding&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-features-data-binding
 tags: data,binding
 published: True

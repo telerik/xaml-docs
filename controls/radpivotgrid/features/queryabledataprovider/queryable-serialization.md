@@ -2,6 +2,7 @@
 title: Serialization
 page_title: Serialization
 description: Check our &quot;Serialization&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-queryable-serialization
 tags: queryable, dataprovider, serialization
 published: True

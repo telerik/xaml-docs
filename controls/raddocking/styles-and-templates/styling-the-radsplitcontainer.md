@@ -2,6 +2,7 @@
 title: Styling the RadSplitContainer
 page_title: Styling the RadSplitContainer
 description: This article demonstrates how to create a style targetting RadSplitContainer. 
+components: ["docking"]
 slug: raddocking-styling-the-radsplitcontainer
 tags: styling,the,radsplitcontainer
 published: True

@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - MVVM
 description: Check our &quot;Data Binding&quot; MVVM documentation article for the RadStepProgressBar control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-data-binding
 tags: data,binding,mvvm
 published: True

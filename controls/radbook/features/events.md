@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadBook {{ site.framework_name }} control.
+components: ["book"]
 slug: radbook-events
 tags: events
 published: True

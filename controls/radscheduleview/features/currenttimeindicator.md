@@ -2,6 +2,7 @@
 title: CurrentTimeIndicator
 page_title: CurrentTimeIndicator
 description: Check our &quot;CurrentTimeIndicator&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-currenttimeindicator
 tags: currenttimeindicator
 published: True

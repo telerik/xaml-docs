@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
+components: ["dragdropmanager"]
 slug: dragdropmanager-overview
 tags: overview
 published: True

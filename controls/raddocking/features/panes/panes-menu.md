@@ -2,6 +2,7 @@
 title: Pane's Menu
 page_title: Pane's Menu
 description: Check our &quot;Pane's Menu&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-panes-panes-menu
 tags: pane's,menu
 published: True

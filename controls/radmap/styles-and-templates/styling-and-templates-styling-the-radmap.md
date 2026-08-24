@@ -2,6 +2,7 @@
 title: Styling the RadMap
 page_title: Styling the RadMap
 description: Check our &quot;Styling the RadMap&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-styling-and-templates-styling-the-radmap
 tags: styling,the,radmap
 published: True

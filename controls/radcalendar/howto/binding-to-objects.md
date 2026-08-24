@@ -2,6 +2,7 @@
 title: Binding to Objects
 page_title: Binding to Objects
 description: Check our &quot;Binding to Objects&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
+components: ["calendar"]
 slug: radcalendar-binding-to-objects
 tags: binding,to,objects
 published: True

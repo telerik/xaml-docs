@@ -2,6 +2,7 @@
 title: Linear Scale Overview
 page_title: Linear Scale Overview
 description: Check our &quot;Linear Scale Overview&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: linear-scale-overview
 tags: linear,scale,overview
 published: True

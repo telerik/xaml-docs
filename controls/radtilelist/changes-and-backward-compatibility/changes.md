@@ -2,6 +2,7 @@
 title: Changes
 page_title: Changes
 description: Check our &quot;Changes&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+components: ["tilelist"]
 slug: radtilelist-changes
 tags: changes
 published: True

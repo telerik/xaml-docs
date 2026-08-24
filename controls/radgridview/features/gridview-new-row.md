@@ -2,6 +2,7 @@
 title: Add New Row Button
 page_title: Add New Row Button
 description: This article will provide information about the new row functionality of Telerik UI for WPF RadGridView.
+components: ["gridview"]
 slug: gridview-new-row
 tags: gridview, new, row, new row, position
 published: True

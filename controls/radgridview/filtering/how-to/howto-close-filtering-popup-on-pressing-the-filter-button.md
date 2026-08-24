@@ -2,6 +2,7 @@
 title: Close Filtering Popup on Pressing Filter Button
 page_title: Close Filtering Popup on Pressing Filter Button
 description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to close filtering popup on pressing filter button.
+components: ["gridview"]
 slug: gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button
 tags: close,filtering,popup,on,pressing,filter,button
 published: True

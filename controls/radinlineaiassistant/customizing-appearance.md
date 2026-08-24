@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance
 description: Check our &quot;Customizing Appearance&quot; documentation article for the RadInlineAIAssistant control.
+components: ["inlineaiassistant"]
 slug: radinlineaiassistant-customizing-appearance
 tags: appearance, customizing appearance, radinlineaiassistant
 published: True

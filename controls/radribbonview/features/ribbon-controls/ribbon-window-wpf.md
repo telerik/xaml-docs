@@ -2,6 +2,7 @@
 title: Ribbon Window
 page_title: Ribbon Window
 description: This article demonstrates how the RadRibbonWindow can be used.
+components: ["ribbonview"]
 slug: radribbonview-ribbon-window-wpf
 tags: ribbon,window
 published: True

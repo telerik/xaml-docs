@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadPipsPager control.
+components: ["pipspager"]
 slug: radpipspager-visual-structure
 tags: visual structure, radpipspager
 published: True

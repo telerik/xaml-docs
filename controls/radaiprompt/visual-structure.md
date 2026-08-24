@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: radaiprompt-visual-structure
 tags: visual structure, radaiprompt
 published: True

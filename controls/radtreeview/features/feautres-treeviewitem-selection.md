@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: Check our &quot;Selection&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-feautres-treeviewitem-selection
 tags: selection
 published: True

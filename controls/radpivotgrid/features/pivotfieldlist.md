@@ -2,6 +2,7 @@
 title: PivotFieldList
 page_title: PivotFieldList
 description: Check our &quot;RadPivotFieldList&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-fieldlist
 tags: adding,radpivotfieldlist,to,your,project
 published: True

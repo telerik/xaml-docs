@@ -2,6 +2,7 @@
 title: Custom Language
 page_title: Custom Language
 description: This article explains how to create highlighting for a custom language with the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-custom-language
 tags: custom,language,radsyntaxeditor
 position: 3

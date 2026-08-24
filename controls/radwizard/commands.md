@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: This article goes over the predefined commands exposed by the RadWizard. 
+components: ["wizard"]
 slug: wizard-features-commands
 tags: commands
 published: True

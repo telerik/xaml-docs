@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 sdk_example: true
 slug: radgauge-sdk-examples
 tags: sdk,examples

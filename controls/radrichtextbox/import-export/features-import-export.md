@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-import-export
 tags: import/export
 published: True

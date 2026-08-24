@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-events
 tags: events
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
+components: ["spellchecker"]
 slug: radspellchecker-overview
 tags: overview
 published: True

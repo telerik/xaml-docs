@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadRibbonView WPF control.
+components: ["ribbonview"]
 slug: radribbonview-gettingstarted
 tags: getting,started
 published: True

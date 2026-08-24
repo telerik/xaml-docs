@@ -2,6 +2,7 @@
 title: Separator
 page_title: Separator
 description: Check our &quot;Separator&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-separator
 tags: separator
 published: True

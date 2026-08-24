@@ -2,6 +2,7 @@
 title: RadOpenFolderDialog
 page_title: RadOpenFolderDialog
 description: Check our &quot;RadOpenFolderDialog&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-radopenfolderdialog
 tags: open,folder,dialog
 published: True

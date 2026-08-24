@@ -2,6 +2,7 @@
 title: GridViewHyperlinkColumn Click Event
 page_title: HyperlinkColumn Click Event
 description: Learn about two ways of subscribing to the Click event in the HyperlinkColumn in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-hyperlink-column-click-event
 tags: click, event, hyperlink, column, gridview
 published: True

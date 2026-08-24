@@ -2,6 +2,7 @@
 title: Resetting the Capacity
 page_title: Resetting the Capacity
 description: Check our &quot;Resetting the Capacity&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-resetting-the-capacity
 tags: resetting, capacity
 published: True

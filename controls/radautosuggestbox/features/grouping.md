@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping
 description: RadAutoSuggestBox allows you take advantage of the grouping feature of ICollectionView.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-features-grouping
 tags: visual,structure
 published: True

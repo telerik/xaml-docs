@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance
 description: Check our &quot;Customizing Appearance&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
+components: ["colorpicker"]
 slug: radcolorpicker-appearance
 tags: appearance
 published: True

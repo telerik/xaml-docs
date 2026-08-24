@@ -2,6 +2,7 @@
 title: Command Support
 page_title: Command Support
 description: Check our Command Support documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-features-command-support
 tags: command,support
 published: True

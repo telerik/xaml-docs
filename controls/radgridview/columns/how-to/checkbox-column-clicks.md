@@ -2,6 +2,7 @@
 title: Number of clicks in GridViewCheckBoxColumn
 page_title: Clicks in the CheckBox Column
 description: Check out how you can control the number of clicks needed to change the value of the CheckBox Column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-checkbox-column-clicks
 tags: number,of,clicks,checkbox,column
 published: True

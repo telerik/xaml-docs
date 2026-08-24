@@ -2,6 +2,7 @@
 title: Clipping
 page_title: Clipping
 description: Check our &quot;Clipping&quot; documentation article for the RadSvgImage control.
+components: ["svgimage"]
 slug: radsvgimage-clipping
 tags: clipping, radsvgimage
 published: True

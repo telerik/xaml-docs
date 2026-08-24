@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding
 description: This article shows how to data bind the selected color of the RadColorPicker control to a property of the view model. 
+components: ["colorpicker"]
 slug: radcolorpicker-data-binding
 tags: data,binding,mvvm,selectedcolor,property
 published: True

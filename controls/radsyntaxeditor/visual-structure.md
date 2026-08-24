@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: The article demonstrates the visual structure of the RadSyntaxEditor.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-visual-structure
 tags: visual,structure,radsyntaxeditor
 published: True

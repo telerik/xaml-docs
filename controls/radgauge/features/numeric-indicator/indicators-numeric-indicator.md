@@ -2,6 +2,7 @@
 title: Numeric Indicator
 page_title: Numeric Indicator
 description: Check our &quot;Numeric Indicator&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radgauge-features-indicators-numeric-indicator
 tags: numeric,indicator
 published: True

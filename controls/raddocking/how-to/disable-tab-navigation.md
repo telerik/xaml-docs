@@ -2,6 +2,7 @@
 title: How to Disable the Tab Navigation of RadDocking Elements
 page_title: How to Disable the Tab Navigation of RadDocking Elements
 description: Check our &quot;How to Disable the Tab Navigation of RadDocking Elements&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-how-to-disable-tab-navigation
 tags: tab, navigation, disable
 published: True

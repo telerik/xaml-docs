@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadExpressionEditor {{ site.framework_name }} control.
+components: ["expressioneditor"]
 slug: radexpressioneditor-styles-and-templates-overview
 tags: overview
 published: True

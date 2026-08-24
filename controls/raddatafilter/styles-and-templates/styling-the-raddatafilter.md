@@ -2,6 +2,7 @@
 title: Styling RadDataFilter
 page_title: Styling RadDataFilter
 description: Check our &quot;Styling RadDataFilter&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: raddatafilter-styles-and-templates-styling-the-raddatafilter
 tags: styling,the,raddatafilter
 published: True

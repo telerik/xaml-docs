@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadOfficeNavigationBar control.
+components: ["officenavigationbar"]
 slug: radofficenavigationbar-visual-structure
 tags: visual structure, officenavigationbar structure
 published: True

@@ -2,6 +2,7 @@
 title: Changes
 page_title: Changes
 description: Check our &quot;Changes&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
 slug: radpanelbar-changes
 tags: changes
 published: True

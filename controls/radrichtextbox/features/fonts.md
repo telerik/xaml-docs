@@ -2,6 +2,7 @@
 title: Fonts
 page_title: Fonts
 description: Learn how you can work with the fonts RadRichTextBox for {{ site.framework_name }} uses and how you can control them.
+components: ["richtextbox"]
 slug: radrichtextbox-features-fonts
 tags: font, font-family
 published: True

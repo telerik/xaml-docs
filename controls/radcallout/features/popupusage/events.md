@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article lists and explains the events exposed by the RadCallout control.
+components: ["callout"]
 slug: radcallout-events
 tags: radcallout, events
 published: True

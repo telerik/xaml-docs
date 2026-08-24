@@ -2,6 +2,7 @@
 title: GraphSourceBase
 page_title: GraphSourceBase
 description: Check our &quot;GraphSourceBase&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-data-graphsourcebase
 tags: graphsourcebase
 published: True

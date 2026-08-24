@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: Check our &quot;Selection&quot; documentation article for the RadTaskBoard {{ site.framework_name }} control.
+components: ["taskboard"]
 slug: radtaskboard-features-selection
 tags: selection
 published: True

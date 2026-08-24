@@ -2,6 +2,7 @@
 title: ScrollBar Functionality
 page_title: ScrollBar Functionality
 description: Check our &quot;ScrollBar Functionality&quot; documentation article for the RadLegend {{ site.framework_name }} control.
+components: ["legend"]
 slug: radlegend-scrollbar-functionality
 tags: scrollbar,functionality
 published: True

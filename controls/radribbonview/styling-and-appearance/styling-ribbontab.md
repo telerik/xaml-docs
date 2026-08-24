@@ -2,6 +2,7 @@
 title: Styling the RadRibbonTab
 page_title: Styling the RadRibbonTab
 description: Check our &quot;Styling the RadRibbonTab&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-ribbontab
 tags: styling,the,radribbontab
 published: True

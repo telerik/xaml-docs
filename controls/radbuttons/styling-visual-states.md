@@ -2,6 +2,7 @@
 title: Styling Visual States
 page_title: Styling Visual States
 description: This article will show you how to change the default colors applied when you enter the different visual states of RadButton - MouseOver, Pressed, Disabled, etc.
+components: ["buttons"]
 slug: radbuttons-styles-and-templates-styling-visual-states
 tags: styling,visualstates,trigger,pressed,mouseover
 published: True

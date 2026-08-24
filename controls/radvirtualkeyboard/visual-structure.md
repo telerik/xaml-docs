@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: The article demonstrates the visual structure of the RadVirtualKeyboard component.
+components: ["virtualkeyboard"]
 slug: radvirtualkeyboard-visual-structure
 tags: visual, structure, virtualkeyboard
 published: True

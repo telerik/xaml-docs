@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: Check our &quot;Key Properties&quot; documentation article for the RadTimeSpanPicker {{ site.framework_name }} control.
+components: ["timespanpicker"]
 slug: radtimespanpicker-features-key-properties
 tags: properties,features,key,properties
 published: True

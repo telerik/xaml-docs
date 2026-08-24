@@ -2,6 +2,7 @@
 title: Docx
 page_title: Docx
 description: Check our &quot;Docx&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-docx
 tags: docx
 published: True

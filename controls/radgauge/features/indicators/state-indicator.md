@@ -2,6 +2,7 @@
 title: State Indicator
 page_title: State Indicator
 description: Check our &quot;State Indicator&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radgauge-features-indicators-state-indicator
 tags: state,indicator
 published: True

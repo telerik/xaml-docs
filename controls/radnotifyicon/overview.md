@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article lists the main features of the RadNotifyIcon control.
+components: ["notifyicon"]
 slug: radnotifyicon-overview
 tags: overview, radnotifyicon
 position: 0

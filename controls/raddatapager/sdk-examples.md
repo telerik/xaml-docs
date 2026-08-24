@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
+components: ["datapager"]
 sdk_example: true
 slug: raddatapager-sdk-examples
 tags: sdk,examples

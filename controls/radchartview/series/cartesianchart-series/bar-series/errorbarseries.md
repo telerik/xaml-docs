@@ -2,6 +2,7 @@
 title: ErrorBarSeries
 page_title: ErrorBarSeries
 description: RadChartView for WPF Error Bar Series for {{ site.framework_name }} allows you to display error bars chart visualization.
+components: ["chartview"]
 slug: radchartview-series-errorbarseries
 tags: error,uncertainty,box,plot,whiskers,errorbar
 published: True

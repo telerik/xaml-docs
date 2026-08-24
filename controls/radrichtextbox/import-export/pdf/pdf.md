@@ -2,6 +2,7 @@
 title: Pdf
 page_title: Pdf
 description: Check our &quot;Pdf&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-pdf
 tags: Pdf
 published: True

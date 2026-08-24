@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: The RadWebCam control allows you to display the stream provided by a web camera.
+components: ["webcam"]
 slug: radwebcam-overview
 tags: overview
 published: True

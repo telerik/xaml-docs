@@ -2,6 +2,7 @@
 title: ScatterRangeBarSeries
 page_title: ScatterRangeBarSeries
 description: Check our &quot;ScatterRangeBarSeries&quot; (Histogram) documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-barseries-scatterrangebarseries
 tags: scatterrangebarseries,histogram
 published: True

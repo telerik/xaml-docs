@@ -2,6 +2,7 @@
 title: Layout Strategies
 page_title: Layout Strategies
 description: Check our &quot;Layout Strategies&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
+components: ["treemapandpivotmap"]
 slug: radtreemap-layout-strategies
 tags: layout,strategies
 published: True

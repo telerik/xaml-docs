@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Get started with the Telerik RadStepProgressBar control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-getting-started
 tags: get,started
 published: True

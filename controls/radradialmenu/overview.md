@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: RadRadialMenu is a circular menu that comes with support for selection, commands, events and many customization options.
+components: ["radialmenu"]
 slug: radradialmenu-overview
 tags: overview
 published: True

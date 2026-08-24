@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article lists all of the events specific for the RadTabControl control.
+components: ["tabcontrol"]
 slug: radtabcontrol-events
 tags: events, radtabcontrol, events
 publish: True

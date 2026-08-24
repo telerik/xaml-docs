@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
+components: ["busyindicator"]
 slug: radbusyindicator-overview
 tags: overview
 published: True

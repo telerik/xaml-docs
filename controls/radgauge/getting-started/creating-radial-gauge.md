@@ -2,6 +2,7 @@
 title: Creating Radial Gauge
 page_title: Creating Radial Gauge
 description: Check our &quot;Creating Radial Gauge&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radgauge-getting-started-creating-radial-gauge
 tags: creating,radial,gauge
 published: True

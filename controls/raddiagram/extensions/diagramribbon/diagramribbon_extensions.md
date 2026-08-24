@@ -2,6 +2,7 @@
 title: Extensions
 page_title: Extensions
 description: This article will get you familiar with the RadDiagramRibbon control extensions.
+components: ["diagram"]
 slug: raddiagram-extensions-diagramribbon-extensions
 tags: diagram,ribbon,extensions
 published: True

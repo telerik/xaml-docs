@@ -2,6 +2,7 @@
 title: DragDropManager Migration
 page_title: DragDropManager Migration
 description: Check our &quot;DragDropManager Migration&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
+components: ["dragdropmanager"]
 slug: dragdropmanager-migration
 tags: dragdropmanager,migration
 published: True

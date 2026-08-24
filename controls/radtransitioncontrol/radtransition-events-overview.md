@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article lists the events that the RadTransitionControl exposes. 
+components: ["transitioncontrol"]
 slug: radtransition-events-overview
 tags: events, radtransition, triggeringtransion, transitionstatuschanged, istransitionidle
 published: True

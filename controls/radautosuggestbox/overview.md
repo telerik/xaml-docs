@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article lists the main features of the RadAutoSuggestBox control.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-overview
 tags: overview, autosuggestbox
 position: 0

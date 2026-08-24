@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadTimeBar {{ site.framework_name }} control.
+components: ["timebar"]
 slug: radtimebar-overview
 tags: overview
 published: True

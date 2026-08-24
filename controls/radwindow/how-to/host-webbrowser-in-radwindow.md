@@ -2,6 +2,7 @@
 title: Host WebBrowser in RadWindow
 page_title: Host WebBrowser in RadWindow
 description: Check our &quot;Host WebBrowser in RadWindow&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-how-to-host-webbrowser-in-radwindow
 tags: host, webbrowser
 published: True

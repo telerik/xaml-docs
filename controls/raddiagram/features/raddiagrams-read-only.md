@@ -2,6 +2,7 @@
 title: Read-Only Diagram
 page_title: Read-Only Diagram
 description: Check our &quot;Read-Only Diagram&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-read-only
 tags: read-only,diagram
 published: True

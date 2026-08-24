@@ -2,6 +2,7 @@
 title: Navigation Buttons
 page_title: Navigation Buttons
 description: Check our &quot;Navigation Buttons&quot; documentation article for the RadSlideView control.
+components: ["slideview"]
 slug: radslideview-navigation-buttons
 tags: navigation buttons, radslideview
 published: True

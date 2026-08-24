@@ -2,6 +2,7 @@
 title: Pin and Close
 page_title: Pin and Close
 description: RadTabControl allows you to pin/unpin and close its RadTabItems.
+components: ["tabcontrol"]
 slug: radtabcontrol-features-pinandclose
 tags: pinned,closed,buttonclose, radtabitem,radtabcontrol,plus,
 published: True

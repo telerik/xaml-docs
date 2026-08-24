@@ -2,6 +2,7 @@
 title: UI Layers
 page_title: UI Layers
 description: Check our &quot;UI Layers&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-ui-layers
 tags: ui, layer, visualization
 published: True

@@ -2,6 +2,7 @@
 title: Date Time Axes
 page_title: Date Time Axes
 description: Check our &quot;Date Time Axes&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-datetimeaxes
 tags: date,time,axes
 published: True

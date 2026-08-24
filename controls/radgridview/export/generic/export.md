@@ -2,6 +2,7 @@
 title: Export
 page_title: Export
 description: Learn how to export data from Telerik's {{ site.framework_name }} DataGrid by using the Export method gives you control over which elements are included in the exported data.
+components: ["gridview"]
 slug: gridview-export
 tags: grid,export
 published: True

@@ -2,6 +2,7 @@
 title: Read Only PropertyDefinition
 page_title: Read Only PropertyDefinition
 description: Check our &quot;Read Only PropertyDefinition&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-howto-readonly-propertydefinitions
 tags: read,only,propertydefinition
 published: True

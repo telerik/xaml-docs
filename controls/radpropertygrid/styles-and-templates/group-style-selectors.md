@@ -2,6 +2,7 @@
 title: Group Style Selector
 page_title: GroupStyleSelector
 description: GroupStyleSelector.
+components: ["propertygrid"]
 slug: radpropertygrid-group-style-selector
 tags: group, style, selector, style-selector
 published: True

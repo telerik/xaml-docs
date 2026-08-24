@@ -2,6 +2,7 @@
 title: Alternation
 page_title: Alternation
 description: Check our &quot;Alternation&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-alternation
 tags: alternation
 published: True

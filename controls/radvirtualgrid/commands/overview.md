@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-commands-overview
 tags: commands, overview
 published: True

@@ -2,6 +2,7 @@
 title: Integration Examples
 page_title: Integration Examples
 description: The article contains a list with RadFluidContentControl examples demonstrating how to integrate it with other controls.
+components: ["fluidcontentcontrol"]
 slug: radfluidcontentcontrol-integration-examples
 tags: integration,tileview,samples
 published: True

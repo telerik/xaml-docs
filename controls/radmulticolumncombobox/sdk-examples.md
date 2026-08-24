@@ -3,6 +3,7 @@ title: Developer Focused Examples
 page_title: Developer Focused Examples
 sdk_example: true
 description: Developer Focused Examples
+components: ["multicolumncombobox"]
 slug: radmulticolumncombobox-sdk-examples
 tags: sdk,examples
 published: True

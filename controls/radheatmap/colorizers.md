@@ -2,6 +2,7 @@
 title: Colorizers
 page_title: Colorizers
 description: Check our &quot;Colorizers&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
+components: ["heatmap"]
 slug: radheatmap-colorizers
 tags: colorizers
 published: True

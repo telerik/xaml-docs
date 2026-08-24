@@ -2,6 +2,7 @@
 title: Animations
 page_title: Animations
 description: Check our &quot;Animations&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-animations
 tags: Animations
 published: True

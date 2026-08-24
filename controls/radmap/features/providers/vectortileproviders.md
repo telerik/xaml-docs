@@ -2,6 +2,7 @@
 title: Vector Tile Providers
 page_title: Vector Tile Providers - Map
 description: Check our &quot;Vector Tile Providers&quot; documentation article for the RadMap WPF control.
+components: ["map"]
 slug: radmap-features-urivectortilemapprovider
 tags: urivectortilemapprovider
 published: True

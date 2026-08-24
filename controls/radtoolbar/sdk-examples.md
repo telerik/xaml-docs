@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
+components: ["toolbar"]
 sdk_example: true
 slug: radtoolbar-sdk-examples
 tags: sdk,examples

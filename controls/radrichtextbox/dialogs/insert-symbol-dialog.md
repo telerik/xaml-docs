@@ -2,6 +2,7 @@
 title: Insert Symbol Dialog
 page_title: Insert Symbol Dialog
 description: Check our &quot;Insert Symbol Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-insert-symbol
 tags: insert,symbol,special,characters
 published: True

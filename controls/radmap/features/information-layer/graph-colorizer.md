@@ -2,6 +2,7 @@
 title: Graph Colorizer
 page_title: Graph Colorizer
 description: Check our &quot;Graph Colorizer&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-graph-colorizer
 tags: graph,colorizer
 published: True

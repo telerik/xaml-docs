@@ -2,6 +2,7 @@
 title: AI Assistant
 page_title: AI Assistant
 description: Check our AI Assistant documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-ai-assistant
 tags: ai, assistant, spreadsheet, chat, analysis
 published: True

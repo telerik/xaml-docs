@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
+components: ["layoutcontrol"]
 slug: radlayoutcontrol-features-layoutgroups-overview
 tags: feature, displaymode, display, mode, overivew, layoutcontrolgroup, layoutcontroltabgroup, layoutcontrolexpandergroup
 published: True

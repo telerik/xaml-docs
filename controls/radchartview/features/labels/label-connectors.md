@@ -2,6 +2,7 @@
 title: Label Connectors
 page_title: Label Connectors
 description: Check our &quot;Label Connectors&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-label-connectors
 tags: label,connectors,settings
 published: True

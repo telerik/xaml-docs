@@ -2,6 +2,7 @@
 title: Required Parts
 page_title: Required Parts
 description: Check our &quot;Required Parts&quot; documentation article for the RadProgressBar {{ site.framework_name }} control.
+components: ["progressbar"]
 slug: radprogressbar-required-template-parts
 tags: required,parts
 published: True

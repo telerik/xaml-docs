@@ -2,6 +2,7 @@
 title: Zoom In or Out a Worksheet
 page_title:  Zoom In or Out a Worksheet
 description:  Zoom In or Out a Worksheet.
+components: ["spreadsheet"]
 slug: radspreadsheet-zoom-in-or-out-a-worksheet
 tags: worksheet, zoom, scale, slider, scalefactor
 published: True

@@ -2,6 +2,7 @@
 title: WatermarkTextBox Properties
 page_title: WatermarkTextBox Properties
 description: The article will list the properties that the RadFilePathPicker control exposes for controlling the behavior of the RadWatermarkTextBox inside it.
+components: ["filepathpicker"]
 slug: radfilepathpicker-watermarktextbox-properties
 tags: watermarktextbox, properties
 position: 3

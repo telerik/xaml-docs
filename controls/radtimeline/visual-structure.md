@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: This section defines the terms and concepts used in the scope of the __RadTimeline__ control.
+components: ["timeline"]
 slug: radtimeline-visual-structure
 tags: visual,structure
 published: True

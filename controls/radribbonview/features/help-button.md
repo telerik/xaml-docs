@@ -2,6 +2,7 @@
 title: Help Button
 page_title: Help Button
 description: The article documents the help button of RadRibbonView.
+components: ["ribbonview"]
 slug: radribbonview-help-button
 tags: help, help button, ribbon
 published: True

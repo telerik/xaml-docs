@@ -2,6 +2,7 @@
 title: How to serialize ViewPort after Save/Load operation
 page_title: How to serialize ViewPort after Save/Load operation
 description: This article explains how you can serialize RadDiagram ViewPort after save and load operation.
+components: ["diagram"]
 slug: raddiagrams-howto-serialize-viewport-save-load
 tags: save,the,diagram,in,the,file,system, metadataserialized, MetadataDeserialized
 published: True

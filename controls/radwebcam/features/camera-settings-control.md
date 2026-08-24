@@ -2,6 +2,7 @@
 title: Camera Settings Control
 page_title: Camera Settings Control
 description: This article describes the settings dialog and the CameraSettingsControl of RadWebCam.
+components: ["webcam"]
 slug: radwebcam-features-camera-settings-control
 tags: camerasettingscontrol,dialog
 published: True

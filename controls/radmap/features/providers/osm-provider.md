@@ -2,6 +2,7 @@
 title: Open Street Maps Provider
 page_title: Open Street Maps Provider
 description: This article describes the support Open Street Maps services support in RadMap.
+components: ["map"]
 slug: radmap-features-providers-osm-provider
 tags: providers,osm, openstreetmapprovider
 published: True

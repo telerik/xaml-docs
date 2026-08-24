@@ -2,6 +2,7 @@
 title: Bind to Object Data
 page_title: Bind to Object Data
 description: Check our &quot;Bind to Object Data&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
 slug: radpanelbar-object-data
 tags: bind,to,object,data
 published: True

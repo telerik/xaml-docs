@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-features-events
 tags: events
 published: True

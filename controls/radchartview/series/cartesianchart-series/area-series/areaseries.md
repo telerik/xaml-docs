@@ -2,6 +2,7 @@
 title: AreaSeries
 page_title: AreaSeries
 description: Check our &quot;AreaSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-areaseries
 tags: areaseries
 published: True

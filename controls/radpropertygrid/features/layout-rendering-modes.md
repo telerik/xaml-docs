@@ -2,6 +2,7 @@
 title: Layout Rendering Modes
 page_title: Layout Rendering Modes
 description: Check our &quot;Layout Rendering Modes&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-features-layout-rendering-modes
 tags: layout,rendering,modes
 published: True

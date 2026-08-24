@@ -2,6 +2,7 @@
 title: FlagEnumEditor
 page_title: FlagEnumEditor
 description: Check our &quot;FlagEnumEditor&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-radenumeditor
 tags: flagenumeditor
 published: True

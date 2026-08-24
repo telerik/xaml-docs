@@ -2,6 +2,7 @@
 title: UltimateOscillatorIndicator
 page_title: UltimateOscillatorIndicator
 description: Check our &quot;UltimateOscillatorIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-ultimateoscillatorindicator
 tags: financial, indicators, ultimateoscillatorindicator
 publish: True

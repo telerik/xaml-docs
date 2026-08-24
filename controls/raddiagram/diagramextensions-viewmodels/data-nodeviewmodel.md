@@ -2,6 +2,7 @@
 title: NodeViewModelBase
 page_title: NodeViewModelBase
 description: Check our &quot;NodeViewModelBase&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-data-nodeviewmodel
 tags: nodeviewmodelbase
 published: True

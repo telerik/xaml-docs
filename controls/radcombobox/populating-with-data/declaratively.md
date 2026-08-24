@@ -2,6 +2,7 @@
 title: Adding ComboBox Items Directly
 page_title: Directly Adding ComboBox Items Directly
 description: Check our &quot;Directly Adding ComboBox Items Directly&quot; documentation article for the RadComboBox WPF control.
+components: ["combobox"]
 slug: radcombobox-populating-with-data-declaratively
 tags: declaratively
 published: True

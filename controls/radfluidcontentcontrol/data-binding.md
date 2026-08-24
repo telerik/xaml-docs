@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding
 description: This article demonstrates how to data bind the RadFluidContentControl to a simple business model.
+components: ["fluidcontentcontrol"]
 slug: fluidcontentcontrol-data-binding
 tags: data,binding
 published: True

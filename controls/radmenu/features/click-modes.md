@@ -2,6 +2,7 @@
 title: Click Modes
 page_title: Click Modes
 description: Check our &quot;Click Modes&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-features-click-modes
 tags: click,modes
 published: True

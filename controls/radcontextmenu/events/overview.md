@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-events-overview
 tags: overview
 published: True

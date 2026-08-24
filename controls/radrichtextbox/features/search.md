@@ -2,6 +2,7 @@
 title: Search
 page_title: Search
 description: Check our &quot;Search&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-search
 tags: search
 published: True

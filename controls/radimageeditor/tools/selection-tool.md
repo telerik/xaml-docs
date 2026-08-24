@@ -2,6 +2,7 @@
 title: Selection Tool
 page_title: Selection Tool
 description: Check our &quot;Selection Tool&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-tools-selection-tool
 tags: shape, tool, selection
 published: True

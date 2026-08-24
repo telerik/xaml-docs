@@ -2,6 +2,7 @@
 title: Plain Text
 page_title: Plain Text
 description: Check our &quot;Plain Text&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-plain-text
 tags: Plain Text
 published: True

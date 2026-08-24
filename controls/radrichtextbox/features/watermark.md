@@ -2,6 +2,7 @@
 title: Watermark
 page_title: Watermark
 description: Check our &quot;Watermark&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-watermark
 tags: watermark
 published: True

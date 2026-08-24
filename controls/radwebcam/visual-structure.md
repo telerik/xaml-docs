@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: This article shows the visual structure of RadWebCam.
+components: ["webcam"]
 slug: radwebcam-visual-structure
 tags: overview
 published: True

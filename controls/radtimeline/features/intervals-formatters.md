@@ -2,6 +2,7 @@
 title: Intervals Formatters
 page_title: Intervals Formatters
 description: Check our &quot;Intervals Formatters&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
+components: ["timeline"]
 slug: radtimeline-features-intervals-formatters
 tags: intervals,formatters
 published: True

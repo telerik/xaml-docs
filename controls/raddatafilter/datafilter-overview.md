@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: RadDataFilter allows you to create complex filter criteria within unlimited number of filter conditions combined by logical operators.
+components: ["datafilter"]
 slug: datafilter-overview
 tags: overview
 published: True

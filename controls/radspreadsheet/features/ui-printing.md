@@ -2,6 +2,7 @@
 title: Printing
 page_title: Printing
 description: Check our &quot;Printing&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-printing
 tags: printing
 published: True

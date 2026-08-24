@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: Check our &quot;Keyboard Support&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-keyboard-support
 tags: keyboard,support
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
+components: ["calendar"]
 slug: radcalendar-overview
 tags: overview
 published: True

@@ -2,6 +2,7 @@
 title: Grip Visibility
 page_title: Grip Visibility
 description: Check our &quot;Grip Visibility&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
+components: ["toolbar"]
 slug: radtoolbar-features-grip-visibility
 tags: gripvisibility,visibility,collapsed
 published: True

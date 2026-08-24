@@ -2,6 +2,7 @@
 title: Open File Dialog
 page_title: Open File Dialog
 description: Check our &quot;Open File Dialog&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-features-custom-open-file-dialog
 tags: open,file,dialog
 published: True

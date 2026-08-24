@@ -2,6 +2,7 @@
 title: Upgrade Assistant
 page_title: Telerik UI for WPF MCP Upgrade Tool
 description: Learn how to use the telerik_upgrade_assistant tool from the Telerik WPF MCP Server to analyze your WPF projects for breaking changes when upgrading between Telerik UI for WPF versions.
+components: ["general"]
 slug: ai-upgrade-assistant
 tags: telerik,wpf,ai,coding assistant,upgrade,migration,breaking changes,mcp
 position: 2

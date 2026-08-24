@@ -2,6 +2,7 @@
 title: RadPane
 page_title: RadPane
 description: This article describes the RadPane, its visual structure and the different states it can be in.
+components: ["docking"]
 slug: raddocking-panes-radpane
 tags: radpane
 published: True

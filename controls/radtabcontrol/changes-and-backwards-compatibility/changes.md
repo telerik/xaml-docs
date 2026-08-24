@@ -2,6 +2,7 @@
 title: Changes
 page_title: Changes
 description: Check our &quot;Changes&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-changes
 tags: changes
 published: True

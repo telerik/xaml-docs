@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: This article defines terms and concepts used in the scope of the RadSplashScreen control with which you have to get familiar before you continue to read its documentation.
+components: ["splashscreen"]
 slug: radsplashscreen-visual-structure-0
 tags: getting,started,splashscreen,busyindicator,visual,structure
 published: True

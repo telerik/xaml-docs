@@ -2,6 +2,7 @@
 title: Printing
 page_title: Printing
 description: Learn how you can print the data in Telerik's {{ site.framework_name }} DataGrid with RadSpreadProcessing, the model of which is completely independent from the UI.
+components: ["gridview"]
 slug: gridview-export-printing
 tags: grid,printing
 published: True

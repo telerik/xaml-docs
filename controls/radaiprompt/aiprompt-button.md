@@ -2,6 +2,7 @@
 title: AIPrompt Button
 page_title: AIPrompt Button
 description: Check our &quot;AIPrompt Button&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: radaiprompt-prompt-button
 tags: prompt button, button, radaiprompt
 published: True

@@ -2,6 +2,7 @@
 title: Nested RadDocking Support
 page_title: Nested RadDocking Support
 description: Check our &quot;Nested RadDocking Support&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-nesteddocking
 tags: nested,raddocking,support
 published: True

@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping
 description: Check our &quot;How to group items&quot; documentation article for the RadListBox {{ site.framework_name }} control.
+components: ["listbox"]
 slug: radlistbox-how-to-group-items
 tags: how,to,group,items
 published: True

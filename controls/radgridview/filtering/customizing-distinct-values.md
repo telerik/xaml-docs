@@ -2,6 +2,7 @@
 title: Customizing Distinct Values 
 page_title: Customizing Distinct Values
 description: Customize the number of items used in the distinct values filter of the Telerik WPF DataGrid.
+components: ["gridview"]
 slug: gridview-filtering-customizing-distinct-values
 tags: display,all,distinct,values
 published: True

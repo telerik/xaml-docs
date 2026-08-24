@@ -2,6 +2,7 @@
 title: Caret
 page_title: Caret
 description: Check our &quot;Caret&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-caret
 tags: radrichtextbox, caret
 published: True

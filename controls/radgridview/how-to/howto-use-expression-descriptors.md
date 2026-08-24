@@ -2,6 +2,7 @@
 title: Use expression descriptors
 page_title: Use Expression Descriptors
 description: Learn how to create generic expression descriptors (SortDescriptor, GroupDescriptors and FilterDescriptors) for RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-howto-use-expression-descriptors
 tags: use,expression,descriptors
 published: True

@@ -2,6 +2,7 @@
 title: Changes
 page_title: Changes
 description: Check our &quot;Changes&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-changes
 tags: changes
 published: True

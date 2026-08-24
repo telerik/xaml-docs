@@ -2,6 +2,7 @@
 title: Binding to a DataSet
 page_title: Binding to a DataSet
 description: This article demonstrates how to bind Telerik's DataGrid to a DataSet.
+components: ["gridview"]
 slug: gridview-binding-to-dataset
 tags: binding, dataset, datagrid
 published: True

@@ -2,6 +2,7 @@
 title: Sampling
 page_title: Sampling
 description: Check our &quot;Sampling&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
+components: ["chartview3d"]
 slug: radchartview3d-populating-data-sampling
 tags: sampling,3d,chartview
 published: True

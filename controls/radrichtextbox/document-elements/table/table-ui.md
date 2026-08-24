@@ -2,6 +2,7 @@
 title: UI for Working with Tables
 page_title: UI for Working with Tables
 description: The following articles describe how you can create, edit, and style the tables inside RadRichTextBox.
+components: ["richtextbox"]
 slug: radrichtextbox-tables-ui
 tags: table
 published: True

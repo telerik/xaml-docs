@@ -2,6 +2,7 @@
 title: Shapes Text
 page_title: Shapes Text
 description: Check our &quot;Shapes Text&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-shapes-text
 tags: shapes, richtextbox, text
 published: True

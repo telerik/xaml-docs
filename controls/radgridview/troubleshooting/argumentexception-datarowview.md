@@ -2,6 +2,7 @@
 title: First Chance 'System.ArgumentException'
 page_title: First Chance 'System.ArgumentException'
 description: Learn how to avoid getting a first chance exception for an 'id' property or 'System.ArgumentException' within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-troubleshooting-argumentexception-datarowview
 tags: first,chance,'system.argumentexception'
 published: True

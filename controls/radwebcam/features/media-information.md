@@ -2,6 +2,7 @@
 title: Media Information
 page_title: Media Information
 description: RadWebCam gives the ability to get information about the connected devices (cameras and microphones) and change the control's device and video format based on this.
+components: ["webcam"]
 slug: radwebcam-features-media-information
 tags: mediafoundationdeviceinfo, mediafoundationvideoformatinfo
 published: True

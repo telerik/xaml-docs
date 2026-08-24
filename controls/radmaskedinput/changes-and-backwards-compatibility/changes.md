@@ -2,6 +2,7 @@
 title: Changes
 page_title: Changes
 description: Check our &quot;Changes&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-changes
 tags: changes
 published: True

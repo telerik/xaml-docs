@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-localization
 tags: localization
 published: True

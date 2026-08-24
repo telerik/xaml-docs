@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: Check our &quot;Commands&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-commands
 tags: commands, close, today
 published: True

@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-localization
 tags: localization
 published: True

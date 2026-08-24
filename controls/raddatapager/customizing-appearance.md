@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance
 description: Check our &quot;Customizing Appearance&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
+components: ["datapager"]
 slug: raddatapager-styles-and-templates-styling-the-numeric-buttons
 tags: styling,the,numeric,buttons
 published: True

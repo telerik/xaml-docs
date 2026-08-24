@@ -2,6 +2,7 @@
 title: CollectionEditors
 page_title: CollectionEditors
 description: Check our &quot;CollectionEditors&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-collectioneditor
 tags: collectioneditors
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-save-load-layout-overview
 tags: save/load,layout
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadSlideView control.
+components: ["slideview"]
 slug: radslideview-overview
 tags: overview, radslideview
 published: True

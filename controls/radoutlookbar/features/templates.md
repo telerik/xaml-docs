@@ -2,6 +2,7 @@
 title: Templates
 page_title: Templates
 description: Check our &quot;Templates&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
+components: ["outlookbar"]
 slug: radoutlookbar-templates
 tags: templates
 published: True

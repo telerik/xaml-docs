@@ -2,6 +2,7 @@
 title: Categorical Axis
 page_title: Categorical Axis
 description: Check our &quot;Categorical Axis&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-categoricalaxis
 tags: categorical,axis
 published: True

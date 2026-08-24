@@ -2,6 +2,7 @@
 title: Radiuses
 page_title: Radiuses
 description: This article provides information about the track and indicator radiuses of RadCircularProgressBar control.
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-radiuses
 tags: radiuses, indicator radius, track radius
 published: True

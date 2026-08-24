@@ -2,6 +2,7 @@
 title: MarkedZone Annotations
 page_title: MarkedZone Annotations
 description: Check our &quot;MarkedZone Annotations&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-annotations-markedzone
 tags: markedzone,annotations
 published: True

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadInlineAIAssistant control.
+components: ["inlineaiassistant"]
 slug: radinlineaiassistant-events
 tags: events, radinlineaiassistant
 published: True

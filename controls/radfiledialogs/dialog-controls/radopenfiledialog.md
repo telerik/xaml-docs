@@ -2,6 +2,7 @@
 title: RadOpenFileDialog
 page_title: RadOpenFileDialog
 description: This article describes the RadOpenFileDialog control which can be used to specify one or multiple filenames to open. 
+components: ["filedialogs"]
 slug: radfiledialogs-radopenfiledialog
 tags: open,file,dialog,show
 published: True

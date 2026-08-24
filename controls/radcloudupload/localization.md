@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: This article lists the resource keys which can be used to localize the RadCloudUpload control.
+components: ["cloudupload"]
 slug: radcloudupload-localization
 tags: localization
 published: True

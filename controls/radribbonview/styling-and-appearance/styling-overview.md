@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-overview
 tags: overview
 published: True

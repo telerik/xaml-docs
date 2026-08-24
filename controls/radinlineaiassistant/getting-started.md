@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadInlineAIAssistant control.
+components: ["inlineaiassistant"]
 slug: radinlineaiassistant-getting-started
 tags: getting started, radinlineaiassistant
 published: True

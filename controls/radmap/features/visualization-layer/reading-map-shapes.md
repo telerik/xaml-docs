@@ -2,6 +2,7 @@
 title: Reading Map Shapes
 page_title: Reading Map Shapes
 description: This article lists the different readers avaialable for the different geospatial data formats. It mainly focuses on the AsyncShapeFileReader, its properties and also on how you can read multiple shape files at once.
+components: ["map"]
 slug: radmap-visualization-layer-reading-map-shapes
 tags: reading,map,shapes
 published: True

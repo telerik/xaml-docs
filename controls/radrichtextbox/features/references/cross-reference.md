@@ -2,6 +2,7 @@
 title: Cross-Reference
 page_title: Cross-Reference
 description: Check our &quot;Cross-Reference&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-cross-reference
 tags: cross-reference
 published: True

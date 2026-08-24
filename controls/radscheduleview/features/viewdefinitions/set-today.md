@@ -2,6 +2,7 @@
 title: Set Today
 page_title: Set Today
 description: Check our &quot;Set Today&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-viewdefinitions-set-today
 tags: settoday, todaybuttonvisibility
 published: True

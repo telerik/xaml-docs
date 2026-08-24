@@ -2,6 +2,7 @@
 title: ToolTip
 page_title: ToolTip
 description: Check our &quot;ToolTip&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
+components: ["heatmap"]
 slug: radheatmap-tooltip
 tags: tooltip, heatmap, tooltipcell, celltooltip, heatmaptooltipsettings
 published: True

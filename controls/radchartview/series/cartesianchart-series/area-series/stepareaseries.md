@@ -2,6 +2,7 @@
 title: StepAreaSeries
 page_title: StepAreaSeries
 description: This article describes the StepAreaSeries component from the RadChartView suite.
+components: ["chartview"]
 slug: radchartview-series-stepareaseries
 tags: stepareaseries
 published: True

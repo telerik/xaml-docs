@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Discover RadPdfViewer and the functionalities it comes with. 
+components: ["pdfviewer"]
 slug: radpdfviewer-overview
 tags: overview
 published: True

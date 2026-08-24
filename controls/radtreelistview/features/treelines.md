@@ -2,6 +2,7 @@
 title: Connecting Lines
 page_title: Connecting Lines
 description: Check our &quot;Connecting Lines&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-treelines
 tags: connecting,lines
 published: True

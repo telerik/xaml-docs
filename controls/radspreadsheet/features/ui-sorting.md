@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting
 description: Check our &quot;Sorting&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-sorting
 tags: sorting
 published: True

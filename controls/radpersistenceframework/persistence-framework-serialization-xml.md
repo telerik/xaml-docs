@@ -2,6 +2,7 @@
 title: XML Serialization String
 page_title: XML Serialization String
 description: This article describes the XML-based format used by the PersistenceFramework to store settings.
+components: ["persistenceframework"]
 slug: persistence-framework-serialization-xml
 tags: getting,started
 published: True

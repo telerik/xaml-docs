@@ -2,6 +2,7 @@
 title: Styling the RadRibbonToggleButton
 page_title: Styling the RadRibbonToggleButton
 description: Check our &quot;Styling the RadRibbonToggleButton&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-ribbontogglebutton
 tags: styling,the,radribbontogglebutton
 published: True

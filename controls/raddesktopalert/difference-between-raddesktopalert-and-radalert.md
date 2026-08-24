@@ -2,6 +2,7 @@
 title: Difference from RadAlert
 page_title: Difference from RadAlert
 description: Check our &quot;Difference from RadAlert&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
+components: ["desktopalert"]
 slug: raddesktopalert-difference-between-raddesktopalert-and-radalert
 tags: visual,structure,difference,alert
 published: True

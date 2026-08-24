@@ -2,6 +2,7 @@
 title: Document Protection
 page_title: Document Protection
 description: Check our &quot;Document Protection&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-protection
 tags: document,protection
 published: True

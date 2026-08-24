@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: Check our &quot;Commands&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-commands
 tags: commands
 published: True

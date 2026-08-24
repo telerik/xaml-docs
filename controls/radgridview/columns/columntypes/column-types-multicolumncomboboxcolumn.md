@@ -2,6 +2,7 @@
 title: MultiColumnComboBox Column
 page_title: MultiColumnComboBox Column
 description: See examples of how you can define some data and set up the MultiColumnComboBox column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: radgridview-columns-column-types-multicolumncombobox-column
 tags: multicolumncombobox,column
 published: True

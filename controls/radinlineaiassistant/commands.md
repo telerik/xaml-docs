@@ -2,6 +2,7 @@
 title: Commands
 page_title: Configuring Commands
 description: Check our &quot;Configuring Commands&quot; documentation article for the RadInlineAIAssistant control.
+components: ["inlineaiassistant"]
 slug: radinlineaiassistant-configuring-commands
 tags: commands, configuring commands, radinlineaiassistant
 published: True

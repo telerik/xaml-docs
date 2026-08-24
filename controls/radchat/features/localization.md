@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-localization
 tags: localization
 published: True

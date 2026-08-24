@@ -2,6 +2,7 @@
 title: Performance Tips
 page_title: Performance Tips
 description: This article lists several settings that can be applied in order to improve the RadMap's performance.
+components: ["map"]
 slug: radmap-performance-tips
 tags: performance,tips,many,items,huge,shapes
 published: True

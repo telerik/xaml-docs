@@ -2,6 +2,7 @@
 title: AutoScrolling
 page_title: AutoScrolling - GanttView WPF
 description: Check our &quot;AutoScrolling&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-autoscrolling
 tags: autoscrolling
 published: True

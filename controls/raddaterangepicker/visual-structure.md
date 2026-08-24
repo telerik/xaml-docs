@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-visual-structure
 tags: visual,structure
 published: True

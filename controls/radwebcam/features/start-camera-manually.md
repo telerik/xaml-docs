@@ -2,6 +2,7 @@
 title: Start the Camera
 page_title: Start Camera
 description: This article shows how to start the RadWebCam control manually by selecting a camera, video format and recording device.
+components: ["webcam"]
 slug: radwebcam-features-start-camera-manually
 tags: autostart,initialize,stop,shutdown
 published: True

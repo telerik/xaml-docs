@@ -2,6 +2,7 @@
 title: Freeze Panes
 page_title: Freeze Panes
 description: Check our &quot;Freeze Panes&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-freeze-panes
 tags: freeze,panes
 published: True

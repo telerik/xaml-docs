@@ -2,6 +2,7 @@
 title: Styling Group Row
 page_title: Styling Group Row
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the GroupRow element.
+components: ["gridview"]
 slug: gridview-styling-group-row
 tags: styling,group,row
 published: True

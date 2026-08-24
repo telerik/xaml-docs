@@ -2,6 +2,7 @@
 title: Styling the RootCompass
 page_title: Styling the RootCompass
 description: This article describes how the RootCompass element can be styled. 
+components: ["docking"]
 slug: raddocking-styling-the-root-compass
 tags: styling,the,rootcompass
 published: True

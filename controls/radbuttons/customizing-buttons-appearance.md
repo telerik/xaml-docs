@@ -2,6 +2,7 @@
 title: Customizing Button Appearance
 page_title: Customizing Buttons Appearance
 description: Check our &quot;Customizing Buttons Appearance&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-customizing-buttons-appearance
 tags: styling, templates, style, customize
 published: True

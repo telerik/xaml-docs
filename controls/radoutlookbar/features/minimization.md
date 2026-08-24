@@ -2,6 +2,7 @@
 title: Minimization
 page_title: Minimization
 description: Check our &quot;Minimization&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
+components: ["outlookbar"]
 slug: radoutlookbar-features-minimization
 tags: minimization
 published: True

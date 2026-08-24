@@ -2,6 +2,7 @@
 title: Styling the RadRibbonComboBox
 page_title: Styling the RadRibbonComboBox
 description: Check our &quot;Styling the RadRibbonComboBox&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-ribboncombobox
 tags: styling,the,radribboncombobox
 published: True

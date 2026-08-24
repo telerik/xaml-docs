@@ -2,6 +2,7 @@
 title: Empty Data Points
 page_title: Empty Data Points
 description: This article describes how to add empty data points to the chart and display gaps in the data.
+components: ["chartview"]
 slug: radchartview-empty-data-points
 tags: radchartview, chartview, empty, data, points, gap
 published: True

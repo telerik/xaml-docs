@@ -2,6 +2,7 @@
 title: Performance
 page_title: Performance
 description: Check our &quot;Performance&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-performance
 tags: performance
 published: True

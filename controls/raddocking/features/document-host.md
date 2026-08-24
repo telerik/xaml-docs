@@ -2,6 +2,7 @@
 title: Document Host
 page_title: Document Host
 description: Check our &quot;Document Host&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-document-host
 tags: document,host
 published: True

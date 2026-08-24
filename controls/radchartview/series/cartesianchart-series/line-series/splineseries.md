@@ -2,6 +2,7 @@
 title: SplineSeries
 page_title: SplineSeries
 description: Check our &quot;SplineSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-splineseries
 tags: splineseries
 published: True

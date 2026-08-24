@@ -2,6 +2,7 @@
 title: Blackout Dates
 page_title: Blackout Dates
 description: RadDateTimePicker allows you to disable certain dates via the BlackoutDates property.
+components: ["datetimepicker"]
 slug: raddatetimepicker-features-blackoutdates
 tags: blackoutdates
 published: True

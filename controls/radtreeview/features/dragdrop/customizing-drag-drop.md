@@ -2,6 +2,7 @@
 title: Customizing Drag and Drop
 page_title: Customizing Drag and Drop
 description: Check our &quot;Customizing Drag and Drop&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-features-drag-and-drop-customizing
 tags: drag,and,drop
 published: True

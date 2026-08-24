@@ -2,6 +2,7 @@
 title: Data Annotations
 page_title: Data Annotations
 description: Check our &quot;Data Annotations&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: raddatafilter-features-data-annotations
 tags: data,annotations
 published: True

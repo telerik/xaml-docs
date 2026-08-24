@@ -2,6 +2,7 @@
 title: Binding To Collection
 page_title: Binding To Collection
 description: Check our &quot;Binding To Collection&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-populating-binding-to-collection
 tags: binding,to,collection
 published: True

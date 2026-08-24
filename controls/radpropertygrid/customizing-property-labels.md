@@ -2,6 +2,7 @@
 title: Customizing Property Labels
 page_title: Customizing Property Labels
 description: Learn how to customize the text, style and template of the field labels displayed by the RadPropertyGrid control for WPF.
+components: ["propertygrid"]
 slug: radpropertygrid-customizing-property-labels
 tags: new
 published: True

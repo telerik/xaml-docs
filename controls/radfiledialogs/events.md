@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-events
 tags: events
 published: True

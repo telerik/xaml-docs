@@ -2,6 +2,7 @@
 title: Shapefiles Support
 page_title: Shapefiles Support
 description: Check our &quot;Shapefiles Support&quot; documentation article for the RadMap control.
+components: ["map"]
 slug: radmap-features-shapefiles-support
 tags: shapefiles,support
 published: True

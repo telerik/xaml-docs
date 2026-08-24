@@ -2,6 +2,7 @@
 title: Access filtered and sorted items
 page_title:  Access Filtered and Sorted items
 description: Get started with the Items property of the Telerik {{ site.framework_name }} DataGrid allowing you to access a newly created view after data operations have been applied.
+components: ["gridview"]
 slug: gridview-how-to-access-filtered-and-sorted-items
 tags: sorted, filtered, items
 published: True

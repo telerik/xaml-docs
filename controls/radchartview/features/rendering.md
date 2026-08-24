@@ -2,6 +2,7 @@
 title: Rendering
 page_title: Rendering
 description: Check our &quot;Rendering&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-rendering
 tags: rendering
 published: True

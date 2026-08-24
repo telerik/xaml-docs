@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article lists and explains the events exposed by the RadTaskBoard control.
+components: ["taskboard"]
 slug: radtaskboard-events
 tags: radtaskboard, events
 published: True

@@ -2,6 +2,7 @@
 title: Data Formatting
 page_title: Data Formatting
 description: Learn how to format data in Telerik's {{ site.framework_name }} DataGrid by specifying an appropriate format string and assigning it to the DataFormatString property.
+components: ["gridview"]
 slug: gridview-columns-data-formatting
 tags: data,formatting
 published: True

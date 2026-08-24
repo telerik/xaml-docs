@@ -2,6 +2,7 @@
 title: Create Custom Drag Arrow
 page_title: Create Custom Drag Arrow
 description: Check our &quot;Create Custom Drag Arrow&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
+components: ["dragdropmanager"]
 slug: dragdropmanager-howto-create-custom-drag-arrow
 tags: create,custom,drag,arrow
 published: True

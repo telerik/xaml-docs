@@ -2,6 +2,7 @@
 title: Common
 page_title: Common
 description: Check our &quot;Common&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-features-common
 tags: common,features
 published: True

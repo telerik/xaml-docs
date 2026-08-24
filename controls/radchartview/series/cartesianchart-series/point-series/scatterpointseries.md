@@ -2,6 +2,7 @@
 title: ScatterPointSeries
 page_title: ScatterPointSeries
 description: Check our &quot;ScatterPointSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-scatterpointseries
 tags: scatterpointseries
 published: True

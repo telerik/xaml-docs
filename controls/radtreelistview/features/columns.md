@@ -2,6 +2,7 @@
 title: Columns
 page_title: Columns
 description: Check our &quot;Columns&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-columns
 tags: columns
 published: True

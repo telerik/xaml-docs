@@ -2,6 +2,7 @@
 title: Main Menu
 page_title: Main Menu
 description: This article describes the IsMainMenu property which controls whether RadMenu receives a main menu activation notification.
+components: ["menu"]
 slug: radmenu-features-main-menu
 tags: main,menu
 published: True

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article describes the RadAutoSuggestBox events.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-events
 tags: events
 published: True

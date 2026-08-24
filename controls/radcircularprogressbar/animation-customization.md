@@ -2,6 +2,7 @@
 title: Indeterminate State Animation Customization
 page_title: Indeterminate State Animation Customization
 description: This article will show you how to modify the default animation of RadCircularProgressBar control.
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-animation-customization
 tags: customize animation, animation
 published: True

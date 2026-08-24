@@ -2,6 +2,7 @@
 title: Styling RadSpellChecker
 page_title: Styling RadSpellChecker
 description: Check our &quot;Styling RadSpellChecker&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
+components: ["spellchecker"]
 slug: radspellchecker-styling-radspellchecker
 tags: styling,radspellchecker
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
+components: ["heatmap"]
 slug: radheatmap-overview
 tags: overview
 published: True

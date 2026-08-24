@@ -2,6 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: Check our &quot;Breaking Changes&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: radrichtextbox-backward-compatibility
 tags: breaking,changes
 published: True

@@ -2,6 +2,7 @@
 title: RadCloudUploadListItem
 page_title: RadCloudUploadListItem
 description: Check our &quot;RadCloudUploadListItem&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-radclouduploadlistitem
 tags: radclouduploadlistitem
 published: True

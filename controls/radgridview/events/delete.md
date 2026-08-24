@@ -2,6 +2,7 @@
 title: Delete
 page_title: Delete Events
 description: Learn more about the delete events of Telerik's {{ site.framework_name }} DataGrid that occur when data is about to be deleted or has been already deleted by the user.
+components: ["gridview"]
 slug: gridview-events-delete
 tags: delete
 published: True

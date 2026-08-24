@@ -2,6 +2,7 @@
 title: TextBoxStyle
 page_title: TextBoxStyle
 description: The input area of an editable RadComboBox can be customized via the TextBoxStyle property.
+components: ["combobox"]
 slug: radcombobox-features-textboxstyle
 tags: textboxstyle
 published: True

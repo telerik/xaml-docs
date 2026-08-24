@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-localization
 tags: localization
 published: True

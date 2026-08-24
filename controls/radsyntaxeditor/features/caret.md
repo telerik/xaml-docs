@@ -2,6 +2,7 @@
 title: Caret
 page_title: Caret
 description: This article explains the caret functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-caret
 tags: caret,radsyntaxeditor
 position: 5

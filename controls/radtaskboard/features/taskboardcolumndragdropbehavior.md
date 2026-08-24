@@ -2,6 +2,7 @@
 title: TaskBoardColumnDragDropBehavior
 page_title: TaskBoardColumnDragDropBehavior
 description: Check our &quot;TaskBoardColumnDragDropBehavior&quot; documentation article for the RadTaskBoard WPF control.
+components: ["taskboard"]
 slug: radtaskboard-features-taskboardcolumndragdropbehavior
 tags: reordering,the,task,drag-drop
 published: True

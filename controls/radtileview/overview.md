@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 slug: radtileview-overview
 tags: overview
 published: True

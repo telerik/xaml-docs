@@ -2,6 +2,7 @@
 title: How to Freeze the Layout
 page_title: How to Freeze the Layout
 description: Check our &quot;How to Freeze the Layout&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-how-to-freeze-the-layout
 tags: how,to,freeze,the,layout
 published: True

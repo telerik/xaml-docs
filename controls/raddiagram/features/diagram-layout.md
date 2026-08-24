@@ -2,6 +2,7 @@
 title: Layout
 page_title: Layout
 description: Check our &quot;Layout&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-features-diagram-layout
 tags: layout
 published: True

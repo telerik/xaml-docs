@@ -2,6 +2,7 @@
 title: Function Invocation
 page_title: Function Invocation
 description: Check our &quot;Function Invocation&quot; documentation article for the RadExpressionEditor {{ site.framework_name }} control.
+components: ["expressioneditor"]
 slug: radexpressioneditor-expressions-function-invocation
 tags: function,invocation
 published: True

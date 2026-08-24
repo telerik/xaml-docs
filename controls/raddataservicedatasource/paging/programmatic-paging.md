@@ -2,6 +2,7 @@
 title: Programmatic Paging
 page_title: Programmatic Paging
 description: Check our &quot;Programmatic Paging&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-paging-programmatic-paging
 tags: programmatic,paging
 published: True

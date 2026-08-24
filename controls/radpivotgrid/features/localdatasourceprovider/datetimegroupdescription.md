@@ -2,6 +2,7 @@
 title: DateTimeGroupDescription
 page_title: DateTimeGroupDescription
 description: Check our &quot;DateTimeGroupDescription&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-datetimegroupdescription
 tags: datetimegroupdescription
 published: True

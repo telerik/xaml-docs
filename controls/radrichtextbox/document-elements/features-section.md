@@ -2,6 +2,7 @@
 title: Section
 page_title: Section
 description: Check our &quot;Section&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-section
 tags: section, column
 published: True

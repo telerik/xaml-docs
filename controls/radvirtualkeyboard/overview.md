@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the on-screen RadVirtualKeyboard WPF control.
+components: ["virtualkeyboard"]
 slug: radvirtualkeyboard-overview
 tags: overview
 published: True

@@ -2,6 +2,7 @@
 title: Insert New Row in Read-Only Grid
 page_title: Add New Item to Read-Only RadGridView
 description: Check out our example of how to insert a new row when the RadGridView is ReadOnly and Bound to List - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-add-new-row-read-only-grid
 tags: insert,new,row,tab,read-only,list,cell,column,row
 published: True

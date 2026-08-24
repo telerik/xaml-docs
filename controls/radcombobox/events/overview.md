@@ -2,6 +2,7 @@
 title: Overview
 page_title: Events Overview
 description: Learn how to handle RadComboBox events, subscribe in XAML or code-behind, and reset the drop-down scroll position in multiple-selection scenarios.
+components: ["combobox"]
 slug: radcombobox-events-overview
 tags: overview
 published: True

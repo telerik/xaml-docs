@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering
 description: Check our &quot;Filtering&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-filtering
 tags: filtering
 published: True

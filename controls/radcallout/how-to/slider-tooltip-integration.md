@@ -2,6 +2,7 @@
 title: Use Callout as RadToolTip in RadSlider
 page_title: Use Callout as RadToolTip in RadSlider
 description: Check our &quot;Overview&quot; documentation article for the RadCallout {{ site.framework_name }} control.
+components: ["callout"]
 slug: radcallout-howto-tooltip-slider
 tags: tooltip, callout, slider
 published: True

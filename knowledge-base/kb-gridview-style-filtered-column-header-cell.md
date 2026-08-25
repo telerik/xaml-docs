@@ -1,6 +1,7 @@
 ---
 title: How to Highlight Header Cell when the Column is Filtered
 description: This article demonstrates how to apply styling to the header cells of a column which is filtered.
+components: ["gridview"]
 type: how-to
 page_title: Style the Header Cells of a Column with an Applied Filter
 slug: kb-gridview-style-filtered-column-header-cell

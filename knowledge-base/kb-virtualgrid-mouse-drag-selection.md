@@ -1,6 +1,7 @@
 ---
 title: Select a Cell Region by Dragging the Mouse from One Cell to Another
 description: How to enable selection of cells via continuous drag of the mouse between two cells.
+components: ["virtualgrid"]
 page_title: Add Cells to the Selection on Mouse Drag Between Two Cells
 type: how-to
 slug: kb-virtualgrid-mouse-drag-selection

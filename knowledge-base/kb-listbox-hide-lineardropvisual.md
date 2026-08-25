@@ -1,6 +1,7 @@
 ---
 title: Remove the Preview Drop Line from RadListBox
 description: How to hide the LinearDropVisual element when using ListBoxDragDropBehavior.
+components: ["listbox"]
 type: how-to
 page_title: Hide the Linear Drop Visual in Telerik WPF ListBox
 slug: kb-listbox-hide-lineardropvisual

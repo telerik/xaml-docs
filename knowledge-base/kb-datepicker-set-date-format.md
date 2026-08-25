@@ -1,6 +1,7 @@
 ---
 title: Setting the Display Format of RadDatePicker's TextBox
 description: How to change the date format used for the RadDatePicker's selected date.
+components: ["datepicker"]
 type: how-to
 page_title: Customize the DateTime Format of the Selected Date in RadDatePicker 
 slug: kb-datepicker-set-date-format

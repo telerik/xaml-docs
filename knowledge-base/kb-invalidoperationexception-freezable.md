@@ -1,6 +1,7 @@
 ---
 title: InvalidOperationException - Cannot use a DependencyObject that Belongs to a Different Thread than its Parent Freezable
 description: An InvalidOperationException is thrown if you try to access a **Brush** from a different thread.
+components: ["general"]
 type: troubleshooting
 page_title: InvalidOperationException when Accessing a Freezable from a Different Thread
 slug: kb-invalidoperationexception-freezable

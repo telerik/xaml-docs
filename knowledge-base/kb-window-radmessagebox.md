@@ -1,6 +1,7 @@
 ---
 title: Create Telerik RadMessageBox
 description: This article shows how to utilize the RadWindow predefined dialogs to show a themed Telerik MessageBox dialog.
+components: ["window"]
 type: how-to
 page_title: Display Custom RadMessageBox Dialog
 slug: kb-window-radmessagebox

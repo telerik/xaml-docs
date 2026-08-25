@@ -1,6 +1,7 @@
 ---
 title: How to Attach Context Menu to Gantt Event Containers
 description: Show context menu only for event containers of RadGanttView control.
+components: ["ganttview"]
 type: how-to
 page_title: Add RadContextMenu in RadGanttView EventContainer elements
 slug: kb-ganttview-add-contextmenu-for-event-containers

@@ -2,6 +2,7 @@
 title: How to Auto Size the Tab Items From TabbedWindow
 page_title: How to Set Auto Width to RadTabbedWindow TabItem Headers
 description: How to auto size the tab headers of RadTabbedWindow using TabStripPanel.
+components: ["tabbedwindow"]
 type: how-to
 slug: kb-tabbedwindow-auto-size-tab-headers
 position: 0

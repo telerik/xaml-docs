@@ -1,6 +1,7 @@
 ---
 title: No License Key Found Warning in Visual Studio 2019 When License Key is Present
 description: No license key found error shown in Visual Studio 2019 .NET Framework project even when license key is installed.
+components: ["installerandvsextensions"]
 page_title: No Product Reference Detected Licensing Error Shown in .NET Framework Project
 type: troubleshooting
 slug: kb-installation-missing-license-vs-2019

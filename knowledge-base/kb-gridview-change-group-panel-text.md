@@ -2,6 +2,7 @@
 title: Change Group Panel Text of RadGridView
 page_title: RadGridView with Modified Group Panel Text
 description: This article showcases how to change the group panel text of RadGridView.
+components: ["gridview"]
 type: how-to
 slug: kb-gridview-change-group-panel-text
 tags: radgridview, gridview, group panel, panel, text, group

@@ -2,6 +2,7 @@
 title: Save RadDocking Layout When the Control is Unloaded
 page_title: How to Save the Layout of the RadDocking When it is Unloaded
 description: This article shows how to save the layout of the RadDocking control when its unloaded.
+components: ["docking"]
 type: how-to
 slug: kb-docking-save-layout-on-unloaded-event
 position: 0

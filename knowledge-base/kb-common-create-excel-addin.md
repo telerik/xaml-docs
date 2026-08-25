@@ -1,6 +1,7 @@
 ---
 title: Integration With Visual Studio Tools for Microsoft Office (VSTO) Templates
 description: Create an Excel/Word/PowerPoint/Outlook VSTO template with Telerik UI for WPF components.
+components: ["general"]
 page_title: Telerik UI for WPF Integration With Microsoft VSTO Templates
 type: how-to
 slug: kb-common-create-excel-addin

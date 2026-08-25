@@ -1,6 +1,7 @@
 ---
 title: How to get the contents of a row (Model) by mousing over the row
 description: Retrieve the underlying data item when the user mouses over a row.
+components: ["gridview"]
 type: howto
 page_title: Access the model shown in the hovered GridViewRow 
 slug: kb-gridview-howto-get-item-on-mouseover

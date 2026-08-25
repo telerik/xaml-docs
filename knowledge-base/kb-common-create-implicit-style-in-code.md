@@ -1,6 +1,7 @@
 ---
 title: How to Create Implicit Style in Code
 description: How to Add Implicit Style in code-behind.
+components: ["general"]
 type: how-to
 page_title: How to Define Implicit Style in Code
 slug: kb-common-create-implicit-style-in-code

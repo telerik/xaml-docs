@@ -1,6 +1,7 @@
 ---
 title: Exporting RadGridView to PDF with Header, Footer, and Repositioning
 description: Learn how to export RadGridView content to a PDF document, including adding headers, footers, and centering the grid horizontally using RadFixedDocument.
+components: ["gridview"]
 type: how-to
 page_title: How to Export RadGridView to PDF with Custom Headers and Footers in WPF
 slug: export-radgridview-to-pdf-wpf

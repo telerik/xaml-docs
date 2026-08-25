@@ -1,6 +1,7 @@
 ---
 title: Execute saving the exported Excel document on a separate thread in GridView
 description: How to execute the Excel export on a separate thread in order to make the application more responsive.
+components: ["gridview"]
 type: how-to
 page_title: Move the exporting to a file execution of an Excel data to new thread in RadGridView
 slug: kb-gridview-separate-excel-export-execution

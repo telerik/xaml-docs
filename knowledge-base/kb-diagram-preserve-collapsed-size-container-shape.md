@@ -2,6 +2,7 @@
 title: How to Change Size in Collapsed RadDiagramContainerShape
 page_title: How to Cache Collapsed Width and Height of RadDiagram Container Shape
 description: How to preserve the collapsed size of RadDiagramContainerShape.
+components: ["diagram"]
 type: how-to
 slug: kb-diagram-preserve-collapsed-size-container-shape
 position: 0

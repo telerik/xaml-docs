@@ -1,6 +1,7 @@
 ---
 title: Cannot Edit the ControlTemplate of a Telerik WPF Control 
 description: Steps to access and modify the control template of Telerik UI for WPF control (like RadNumericUpDown).
+components: ["general"]
 type: troubleshooting
 page_title: The Edit Template Edit a Copy Option in Visual Studio is Disabled on Some Telerik Controls
 slug: kb-common-find-control-templates

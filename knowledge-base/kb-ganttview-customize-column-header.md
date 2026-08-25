@@ -1,6 +1,7 @@
 ---
 title: Customize Columns Headers of RadGanttView
 description: This article will show you how to display complex structure in the headers of the columns of RadGanttView.
+components: ["ganttview"]
 page_title: Display Complex Structure in the Columns Headers of RadGanttView
 type: how-to
 slug: kb-ganttview-customize-column-header

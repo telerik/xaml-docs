@@ -1,6 +1,7 @@
 ---
 title: UI Automation Issue with RadGridView on .NET 8
 description: This article provides workaround for the issue where UI Automation doesn't work in WPF after migrating to .NET 8.
+components: ["general"]
 type: troubleshooting
 page_title: UI Automation Not Created in WPF Under .NET 8
 slug: kb-common-net8-automationpeers-issue

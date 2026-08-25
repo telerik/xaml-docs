@@ -2,6 +2,7 @@
 title: How to Add Chart Title to RadChartView
 page_title: Add Header to RadCartesianChart
 description: Add a caption on top of RadCartesianChart using a TextBlock.
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-add-chart-title
 position: 0

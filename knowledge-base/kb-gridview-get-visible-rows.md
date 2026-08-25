@@ -1,6 +1,7 @@
 ---
 title: Get Visible Rows in RadGridView
 description: How to get the visible rows (GridViewRow) containers of RadGridView in the viewport.
+components: ["gridview"]
 type: how-to
 page_title: Access the GridViewRow Containers in the Viewport of Telerik DataGrid
 slug: kb-gridview-get-visible-rows

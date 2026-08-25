@@ -1,6 +1,7 @@
 ---
 title: Retrieve the Clicked Item When Opening a RadContextMenu
 description: This article shows how to retrieve the clicked item when opening the RadContextMenu
+components: ["contextmenu"]
 page_title: Retrieve the Item That is Clicked on When a RadContextMenu is Opened
 type: troubleshooting
 slug: kb-contextmenu-retrieve-clicked-item-when-opening

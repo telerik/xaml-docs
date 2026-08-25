@@ -1,6 +1,7 @@
 ---
 title: How to Set the Background of RadDocking's Pane to Transparent
 description: How to remove the background of a RadPane including the corresponding RadPaneGroup and AutoHideArea.
+components: ["docking"]
 type: how-to
 page_title: Remove the Background of RadDocking's Pane
 slug: kb-docking-howto-set-pane-background-to-transparent

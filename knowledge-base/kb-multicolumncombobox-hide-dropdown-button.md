@@ -1,6 +1,7 @@
 ---
 title: Hide the Drop-Down Button of of RadMultiColumnComboBox
 description: This article will show you how hide the drop-down button of RadMultiColumnComboBox.
+components: ["multicolumncombobox"]
 page_title: RadMultiColumnComboBox without drop-down button
 type: how-to
 slug: kb-multicolumncombobox-hide-drop-down-button

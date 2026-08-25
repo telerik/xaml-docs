@@ -1,6 +1,7 @@
 ---
 title: Displaying Standard Clipboard Context Menu in RichTextBox
 description: How to keep only the copy, cut and paste options in the context menu with of RadRichTextBox in UI for WPF.
+components: ["richtextbox"]
 type: how-to
 page_title: How to Modify the ContextMenu of RadRichTextBox
 meta_title: How to Show Standard Clipboard Context Menu in RadRichTextBox

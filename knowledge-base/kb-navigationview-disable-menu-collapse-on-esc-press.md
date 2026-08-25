@@ -1,6 +1,7 @@
 ---
 title: Disable Esc Key Press in RadNavigationView
 description: Disable closing of the RadNavigationView menu when the Esc key is pressed. 
+components: ["navigationview"]
 type: how-to
 page_title: Cancel Menu Collapsing When Escape Button is Pressed
 slug: kb-navigationview-disable-menu-collapse-on-esc-press

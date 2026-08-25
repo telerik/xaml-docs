@@ -2,6 +2,7 @@
 title: Cross Version Support with IsolatedStorageProvider
 page_title: How to Use AllowCrossVersion Property with IsolatedStorageProvider
 description: Enable cross version support when using RadPersistenceFramework IsolatedStorageProvider. 
+components: ["persistenceframework"]
 type: how-to
 slug: kb-persistenceframework-allowcrossversion-isolatedstorageprovider
 position: 0

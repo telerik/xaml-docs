@@ -1,6 +1,7 @@
 ---
 title: Save Executed Event in RadSpreadsheet
 description: How to subscribe to command executed of the save file command in RadSpreadsheet for WPF using the UICommandExecuted event.
+components: ["spreadsheet"]
 type: how-to
 page_title: Listen to SaveFile Command Executed in RadSpreadsheet
 slug: kb-spreadsheet-savefile-command-executed-event

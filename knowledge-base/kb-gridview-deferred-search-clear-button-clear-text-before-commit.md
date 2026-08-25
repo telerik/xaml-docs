@@ -2,6 +2,7 @@
 title: GridView Clear Input Before Commit in Deferred Search Mode
 page_title: Clear the Input via the Clear Button Before Commit
 description: This article shows how to clear the input in the search box using the clear button when IsSearchingDeferred is True of RadGridView.
+components: ["gridview"]
 type: how-to
 slug: kb-gridview-deferred-search-clear-button-clear-text-before-commit
 position: 0

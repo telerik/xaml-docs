@@ -1,6 +1,7 @@
 ---
 title: Implementing Load on Demand in RadTreeListView
 description: Learn how to improve the performance in RadTreeListView by loading data one level at a time on row expanded.
+components: ["treelistview"]
 type: how-to
 page_title: Enable Children Load on Demand on Expand of RadTreeListView Row
 slug: kb-treelistview-load-on-demand

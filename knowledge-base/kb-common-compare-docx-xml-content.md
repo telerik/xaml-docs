@@ -1,6 +1,7 @@
 ---
 title: Open and Compare the XML Contents of Word Documents (.docx)
 description: How to open the XML of Word .docx documents and compare their contents using Visual Studio
+components: ["general"]
 type: how-to
 page_title: Diff the XML Content of DOCX Files
 slug: kb-common-compare-docx-xml-content

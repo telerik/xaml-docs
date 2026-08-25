@@ -1,6 +1,7 @@
 ---
 title: Black Screen When Showing RadWindow or RadRibbonWindow With NoXaml dlls
 description: Black screen displaying when Window or Ribbon is used in Telerik WPF NoXaml scenario.
+components: ["window"]
 type: troubleshooting
 page_title: Blank black screen displayed instead of RadWindow or RadRibbonWindow when NoXaml assemblies are used
 slug: kb-window-black-screen

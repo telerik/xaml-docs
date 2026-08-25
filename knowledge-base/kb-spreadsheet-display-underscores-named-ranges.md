@@ -1,6 +1,7 @@
 ---
 title: Displaying Underscores in Named Ranges in WPF Spreadsheet
 description: Avoid the removal of underscores from named ranges in the WPF Spreadsheet control.
+components: ["spreadsheet"]
 type: how-to
 page_title: How to Display Underscores in Named Ranges in WPF Spreadsheet
 meta_title: Display Underscores in Named Ranges in WPF Spreadsheet

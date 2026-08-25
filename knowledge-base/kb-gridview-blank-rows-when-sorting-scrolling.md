@@ -1,6 +1,7 @@
 ---
 title: Child Hierarchy Blank Rows When Sorting or Scrolling RadGridView
 description: Rows content missing when sorting or scrolling RadGridView control.
+components: ["gridview"]
 page_title: Empty Rows In RadGridView After Order or Scroll DataGrid
 type: troubleshooting
 slug: kb-gridview-blank-rows-when-sorting-scrolling

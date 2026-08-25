@@ -1,6 +1,7 @@
 ---
 title: Dynamic Creation of RadGauge Indicators
 description: Data binding the Indicators collection of RadGauge using an attached property.
+components: ["gauge"]
 page_title: Setting the Indicators property of RadGauge
 type: how-to
 slug: kb-gauge-indicators-databinding

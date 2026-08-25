@@ -1,6 +1,7 @@
 ---
 title: Change the Colors of the Shape Dropped from RadDiagram Toolbox
 description: How to modify the brush of the drag/dropped shape added from the RadDiagram Toolbox to the RadDiagram canvas in a WPF application.
+components: ["diagram"]
 type: how-to
 page_title: Modify the Color of the Shape Dragged from RadDiagramToolbox
 slug: change-shape-colors-raddiagram-wpf

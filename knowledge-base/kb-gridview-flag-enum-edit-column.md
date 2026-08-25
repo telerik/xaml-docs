@@ -1,6 +1,7 @@
 ---
 title: Editing Flag Enum Column in RadGridView
 description: How to use FlagEnumEditor to create flag enum editor in the Telerik WPF DataGrid cells.
+components: ["gridview"]
 type: how-to
 page_title: How to Create Flag Enums Column in RadGridView
 slug: kb-gridview-flag-enum-edit-column

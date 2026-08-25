@@ -1,6 +1,7 @@
 ---
 title: Scroll to Top of WPF RadGridView after Page Change
 description: "How to automatically scroll to the top of RadGridView when changing pages using RadDataPager buttons."
+components: ["gridview"]
 type: how-to
 page_title: Move the Vertical Scrollbar to Top of RadGridView on PageIndexChanged of DataPager
 slug: kb-gridview-scroll-to-top-on-pagechanged

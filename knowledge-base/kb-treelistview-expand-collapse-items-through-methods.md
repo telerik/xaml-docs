@@ -1,6 +1,7 @@
 ---
 title: How to Expand and Collapse Items in an MVVM Manner
 description: An article explaining how to expand and collapse items via the control's public API.
+components: ["treelistview"]
 type: how-to
 page_title: Expand and Collapse Items with TreeListView's Public Methods
 slug: kb-treelistview-expand-collapse-items-through-methods

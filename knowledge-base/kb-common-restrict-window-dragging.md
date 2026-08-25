@@ -1,6 +1,7 @@
 ---
 title: Restricting the Drag of a WPF Window in Predefined Bounds
 description: Learn how to restrict the dragging bounding box of a WPF Window.
+components: ["window"]
 type: how-to
 page_title: Pevent WPF to be Moved Outside of Specifid Boundaries
 meta_title: Restricting RadPane Movement Within Parent UserControl

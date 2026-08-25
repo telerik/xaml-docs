@@ -1,6 +1,7 @@
 ---
 title: Resolve RadGauge ArgumentException - The provided DependencyObject is not a context for this Freezable
 description: Resolve the provided DependencyObject is not a context for this Freezable error when animated marker is used.
+components: ["gauge"]
 type: how-to
 page_title: ArgumentException - The provided DependencyObject is not a context for this Freezable (RadGauge)
 slug: kb-gauge-dependencyobject-not-context-for-this-freezable

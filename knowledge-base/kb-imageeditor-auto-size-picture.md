@@ -2,6 +2,7 @@
 title: Auto Size RadImageEditor Picture
 page_title: AutoSize ImageEditor Image
 description: Show the RadImageEditor image without zoom applied.
+components: ["imageeditor"]
 type: how-to
 slug: kb-imageeditor-auto-size-picture
 position: 0

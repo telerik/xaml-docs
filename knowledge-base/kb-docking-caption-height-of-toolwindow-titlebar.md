@@ -2,6 +2,7 @@
 title: How to Set the Caption Height of the ToolWindow's Titlebar of the RadDocking Control
 page_title: Change the Caption Height of the Titlebar of ToolWindow
 description: This article shows how to change the caption height of the toolWindow's titlebar.
+components: ["docking"]
 type: how-to
 slug: kb-docking-caption-height-of-toolwindow-titlebar
 tags: raddocking, docking, toolwindow, captionheight, drag, threshold

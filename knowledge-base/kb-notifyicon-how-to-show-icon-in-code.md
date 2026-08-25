@@ -1,6 +1,7 @@
 ---
 title: How to show a RadNotifyIcon without opening any WPF windows
 description: This article shows how to create a system tray application with the RadNotifyIcon.
+components: ["notifyicon"]
 type: how-to
 page_title: Showing an icon in the system tray area without opening a window
 slug: kb-notifyicon-how-to-show-icon-in-code

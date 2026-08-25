@@ -1,6 +1,7 @@
 ---
 title: Handle RadRichTextBox Unsupported Format Exception when Saving/Loading Using RadRibbonViewUI
 description: This article will show you how to prevent unsupported format exception when saving/loading a document when invoked via the RadRibbonViewUI.
+components: ["richtextbox"]
 page_title: Prevent Unsupported Format Exception when Saving/Loading a File Using RadRibbonViewUI
 type: how-to
 slug: kb-richtextbox-unsupported-format-exception

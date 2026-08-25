@@ -1,6 +1,7 @@
 ---
 title: Distinct Values Work Only the First Time in RadGridView
 description: The RadGridView filters work only the first time they are applied
+components: ["gridview"]
 page_title: Filters Work Only the First Time in RadGridView
 type: how-to
 slug: kb-gridview-non-working-filters-with-custom-control-template-of-filtering-control

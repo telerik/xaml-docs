@@ -1,6 +1,7 @@
 ---
 title: GridView FilteringControl Changes Its Width While Scrolling
 description: Distinct values with longer text lead to size change of RadGridView's FilteringControl.
+components: ["gridview"]
 page_title: When Scrolling to Longer Distinct Value GridView FilteringControl Increases Its Width
 type: troubleshooting
 slug: kb-gridview-filteringcontrol-changes-its-width-while-scrolling

@@ -1,6 +1,7 @@
 ---
 title: Prevent Maximize and Restore on RadWindow TitleBar Double Click
 description: Learn how to block the default double-click actions on the header of a RadWindow in UI for WPF to prevent state changes from maximized to restored.
+components: ["window"]
 type: how-to
 page_title: Prevent Double-Click on RadWindow Header in UI for WPF
 meta_title: Prevent Double-Click on RadWindow Header in UI for WPF

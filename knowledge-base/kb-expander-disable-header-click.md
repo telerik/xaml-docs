@@ -1,6 +1,7 @@
 ---
 title: How to Disable RadExpander Header Click
 description: This article demonstrates how to disable the header click of the RadExpander.
+components: ["expander"]
 type: how-to
 page_title: Cancel the Action of the RadExpander Header upon Button Click 
 slug: kb-expander-disable-header-click

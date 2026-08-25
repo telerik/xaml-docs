@@ -1,6 +1,7 @@
 ---
 title: Cannot Find Source for Data Binding with ElementName Reference
 description: Data binding two elements in RadWizardPage's Content using ElementName doesn't work.
+components: ["wizard"]
 page_title: Binding with ElementName in RadWizardPage Content doesn't work
 type: troubleshooting
 slug: kb-wizard-cannot-bind-elementname

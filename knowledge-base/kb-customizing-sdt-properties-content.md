@@ -1,6 +1,7 @@
 ---
 title: Customizing the Document Content of Sdt Element in RadRichTextBox
 description: Learn how to create a custom content for a content controls (structured document tags) in RadRichTextBox.
+components: ["richtextbox"]
 type: how-to
 page_title: Creating Custom Sdt Properties in RichTextBox for WPF
 meta_title: Implementing Custom RadDocument Content for Sdt Properties Element

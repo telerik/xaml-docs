@@ -1,6 +1,7 @@
 ---
 title: Setting Owner of RadWindow to Form Handle in UI for WPF
 description: Learn how to set the Owner of a Telerik UI for WPF RadWindow to a WinForms form's handle (IntPtr) in a WinForms application.
+components: ["window"]
 type: how-to
 page_title: Set RadWindow Owner to Form Handle in Telerik UI for WPF
 meta_title: Set RadWindow Owner to Form Handle in Telerik UI for WPF

@@ -1,6 +1,7 @@
 ---
 title: Subscribe to SelectionChanged of RadComboBox in RadGridView Column FilteringControl
 description: How to attach to the SelectionChanged event of the RadComboBox elements hosted in the FilteringControl of RadGridView's GridViewColumn.
+components: ["gridview"]
 type: how-to
 page_title: Add SelectionChanged Handler to the RadComboBoxes of RadGridView's FilteringControl
 slug: kb-gridview-filter-combo-selectionchanged

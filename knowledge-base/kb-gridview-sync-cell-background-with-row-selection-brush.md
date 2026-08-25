@@ -1,6 +1,7 @@
 ---
 title: Sync Custom GridViewCell Background with the GridViewRow Hover and Selection Background
 description: How to fix the background of GridViewCell to match the selection and hover states of the parent GridViewRow
+components: ["gridview"]
 type: how-to
 page_title: Match a Custom Set GridViewCell Background with the Mouse Over and Selection Brushes of the Parent Row
 meta_title: Match a Custom Set GridViewCell Background with the Mouse Over and Selection Brushes of the Parent Row

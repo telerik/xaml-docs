@@ -1,6 +1,7 @@
 ---
 title: Custom Style for Selected Tab Border Color and Thickness in Fluent theme
 description: Create a style for the underline border of the selected tab. Change its color and thickness in code behind. 
+components: ["ribbonview"]
 type: how-to
 page_title: Customize RadRibbonTab bottom border without extracting ControlTemplate in Fluent theme
 slug: kb-ribbonview-customize-tab-bottom-border-fluent-theme

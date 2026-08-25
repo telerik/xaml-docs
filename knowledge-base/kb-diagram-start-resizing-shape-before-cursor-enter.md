@@ -2,6 +2,7 @@
 title: How to Start Resizing Diagram Shape Before Mouse Cursor Enters it
 page_title: Change Shape Size When Mouse is Outside of RadDiagramShape
 description: Begin resizing a shape with SizeAll cursor before the mouse entering the RadDiagramShape, like in Microsoft PowerPoint.
+components: ["diagram"]
 type: how-to
 slug: kb-diagram-start-resizing-shape-before-cursor-enter
 position: 0

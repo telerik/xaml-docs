@@ -1,6 +1,7 @@
 ---
 title: How to export the RadChartView without the pan and zoom scrollbars
 description: Create an image of the chart without scrollbars.
+components: ["chartview"]
 page_title: Remove scrollbars when exporting RadCartesianChart
 type: how-to
 slug: kb-chartview-howto-export-without-panzoom-scrollbars

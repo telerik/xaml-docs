@@ -1,6 +1,7 @@
 ---
 title: How to determine when the user has scrolled to the last page of a document in PdfViewer for WPF
 description: Learn how to detect when the last page of a PDF document has been reached while the users scroll a document.
+components: ["pdfviewer"]
 type: how-to
 page_title: Determine when the user reached the last page of a PDF document when scrolling
 slug: kb-pdfviewer-scroll-to-last-page

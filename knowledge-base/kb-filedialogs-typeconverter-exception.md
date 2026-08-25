@@ -1,6 +1,7 @@
 ---
 title: FileDialogs Crash On Show Dialog When OS Color Profile is Changed
 description: "ArithmeticException is thrown when the device model profile of the OS is set to sRGB virtual device model profile."
+components: ["filedialogs"]
 type: troubleshooting
 page_title: Overflow or Underflow in the Arithmetic Operation Exception Thrown on Open RadFileDialog
 slug: kb-filedialogs-typeconverter-exception

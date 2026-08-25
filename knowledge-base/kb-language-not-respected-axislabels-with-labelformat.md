@@ -1,6 +1,7 @@
 ---
 title: Language property is not respected by axis labels when LabelFormat is set
 description: Language property is not respected by axis labels when LabelFormat is set.
+components: ["chartview"]
 type: troubleshooting
 page_title: Language property is not respected by axis labels when LabelFormat is set
 slug: kb-language-not-respected-axislabels-with-labelformat

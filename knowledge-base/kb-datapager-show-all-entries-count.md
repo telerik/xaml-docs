@@ -2,6 +2,7 @@
 title: Show the Total Count of Items in RadDataPager.
 page_title: Show the Count of All Items in RadDataPager.
 description: This article demonstrates how to show the total count of the items in RadDataPager and RadGridView scenario.
+components: ["datapager"]
 type: how-to
 slug: kb-datapager-show-all-entries-count
 position: 0

@@ -1,6 +1,7 @@
 ---
 title: Hiding Add and Remove Buttons in CollectionEditor for WPF
 description: Learn how to hide the Add and Remove buttons in the CollectionEditor part of RadPropertyGrid.
+components: ["propertygrid"]
 type: how-to
 page_title: How to Hide CollectionEditor Add New and Delete Buttons in WPF
 slug: kb-collection-editor-hide-add-remove-buttons

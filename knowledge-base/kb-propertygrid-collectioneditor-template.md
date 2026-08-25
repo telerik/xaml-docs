@@ -1,6 +1,7 @@
 ---
 title: Modify the ControlTemplate of the CollectionEditor
 description: Change the Appearance of the CollectionEditor Used for Editing Collection Properties in RadPropertyGrid.
+components: ["propertygrid"]
 type: how-to
 page_title: Add an Additional Element in the CollectionEditor Control
 slug: kb-propertygrid-collectioneditor-template

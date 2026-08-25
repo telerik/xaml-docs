@@ -2,6 +2,7 @@
 title: Display Telerik.SvgIcons in RadSvgImage
 page_title: RadSvgImage Displaying Telerik.SvgIcons
 description: How to display SVG icons from the Telerik.SvgIcons NuGet package in RadSvgImage.
+components: ["svgimage"]
 type: how-to
 slug: kb-radsvgimage-display-telerik-svgicons
 position: 0

@@ -1,6 +1,7 @@
 ---
 title: Adjusting InlineUIContainer Vertical Position in RadRichTextBox
 description: Learn how to adjust the vertical position and font size of InlineUIContainer in RichTextBox.
+components: ["richtextbox"]
 type: how-to
 page_title: Vertical Positioning of InlineUIContainer in RadRichTextBox
 meta_title: BaselineOffset Adjustment of InlineUIContainer in RadRichTextBox

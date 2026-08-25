@@ -1,6 +1,7 @@
 ---
 title: Save and Restore the Last Opened Directory in RadFileDialogs
 description: How to implement save and restore last opened directory in RadOpenFileDialog.
+components: ["filedialogs"]
 type: how-to
 page_title: Persist the Last Directory on the File System When Using RadFileDialog
 slug: kb-file-dialogs-save-load-last-opened-directory

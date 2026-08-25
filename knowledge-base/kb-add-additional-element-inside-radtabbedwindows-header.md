@@ -1,6 +1,7 @@
 ---
 title: Add additional element inside RadTabbedWindow's header
 description: This article demonstrates how to add additional element inside RadTabbedWindow's header.
+components: ["tabbedwindow"]
 type: how-to
 page_title: How to add additional element inside RadTabbedWindow's header
 slug: kb-add-additional-element-inside-radtabbedwindows-header

@@ -480,8 +480,6 @@ meta:
         title: RadOutlookBar
     controls/radpanelbar:
         title: RadPanelBar
-    controls/radpanelbar/styling-and-appearance:
-        title: Styling and Appearance
     controls/radprogressbar:
         title: RadProgressBar
     controls/radprogressbar/styling-and-appearance:
@@ -1064,6 +1062,34 @@ redirects:
 -
     from: "^/controls/radwizard/features/commands/?$"
     to: "/controls/radwizard/commands"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/changes-and-backwards-compatibility/(.*)$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/features/(.*)$"
+    to: "/controls/radpanelbar/$1"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/howto/object-data/?$"
+    to: "/controls/radpanelbar/object-data"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/howto/display-hierarchical-data/?$"
+    to: "/controls/radpanelbar/object-data"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/styling-and-appearance/required-template-parts/?$"
+    to: "/controls/radpanelbar/overview"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/styling-and-appearance/changing-colors/?$"
+    to: "/controls/radpanelbar/overview"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/events/overview/?$"
+    to: "/controls/radpanelbar/events"
     type: Permanent
 -
     from: "^/api/html/.*$"

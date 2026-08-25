@@ -1,11 +1,11 @@
 ---
 title: Text Search Navigation
 page_title: Text Search Navigation
-description: Check our &quot;Overview&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+description: Check our &quot;Text Search Navigation&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
 slug: radpanelbar-features-text-search-navigation
 tags: text, search, navigation
 published: True
-position: 0
+position: 7
 ---
 
 # Text Search Navigation
@@ -21,39 +21,37 @@ To change the search mode that is used to match the results, set the __TextSearc
 * __StartsWithCaseSensitive__
 * __ContainsCaseSensitive__
 
-{% if site.site_name == 'WPF' %}
 You can also utilize the __IsTextSearchCaseSensitive__ property of RadPanelBar in order to determine if the search is case sensitive. 
-{% endif %}
 
-__Example 1: Setting up text search navigation__  
+__Setting Up Text Search Navigation__
 ```XAML
-	<telerik:RadPanelBar IsTextSearchEnabled="True" TextSearchMode="Contains" />
+<telerik:RadPanelBar IsTextSearchEnabled="True" TextSearchMode="Contains" />
 ```
 
 When binding the RadPanelBar's ItemsSource property to a collection of business objects, you should set the __TextSearch.TextPath__ attached property in order to tell what property should be used for the text search. 
 
-__Example 2: Setting TextPath__  
+__Setting the TextPath__
 ```XAML
-	<telerik:RadPanelBar IsTextSearchEnabled="True" telerik:TextSearch.TextPath="MyProperty" />
+<telerik:RadPanelBar IsTextSearchEnabled="True" telerik:TextSearch.TextPath="MyProperty" />
 ```
 
-In __Example 2__ `MyProperty` points to a property defined in the view model of the panelbar items. If the typed text matches the value of this property, the corresponding item will get selected.
+In the previous example, `MyProperty` points to a property defined in the view model of the panelbar items. If the typed text matches the value of this property, the corresponding item will get selected.
 
 To increase the time interval for typing before the text is reset, set the __TextSearch.AutoCompleteTimeout__ static property.
 
-__Example 3: Setting search text reset timeout__  
-```XAML
-	public MyUserControl() 
-	{  
-		Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = new TimeSpan(1500); 
-		InitializeComponent();
-	} 
+__Setting the Search Text Reset Timeout__
+```C#
+public MyUserControl() 
+{  
+	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = new TimeSpan(1500); 
+	this.InitializeComponent();
+} 
 ```
 
 Note that this property is used in several other Telerik controls and setting it will affect them as well.
 
 ## See Also
 
-* [Structure]({%slug radpanelbar-structure%})
-* [Bind to object]({%slug radpanelbar-object-data%})
+* [Visual Structure]({%slug radpanelbar-structure%})
+* [Data Binding]({%slug radpanelbar-object-data%})
 * [Developer Focused Examples]({%slug radpanelbar-sdk-examples%})

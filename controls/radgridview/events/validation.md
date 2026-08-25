@@ -2,6 +2,7 @@
 title: Validation
 page_title: Validation Events
 description: Learn more about the validation events of Telerik's {{ site.framework_name }} DataGrid that occur when the new content entered by the user is about to be committed.
+components: ["gridview"]
 slug: gridview-events-validation
 tags: validation
 published: True

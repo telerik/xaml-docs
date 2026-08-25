@@ -2,6 +2,7 @@
 title: Styling the Controls 
 page_title: Styling the Controls 
 description: This article shows how to customize the Telerik controls in NoXaml scenario. An important step to remember is to always base your custom styles.
+components: ["general"]
 slug: implicit-styles-styling-the-controls
 tags: setting,a,theme,(using,,implicit,styles)
 published: True

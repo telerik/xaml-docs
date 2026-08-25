@@ -2,6 +2,7 @@
 title: Using LocalDataSourceProvider
 page_title: Using LocalDataSourceProvider
 description: Check our &quot;Using LocalDataSourceProvider&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-data-localdatasource
 tags: using,localdatasourceprovider
 published: True

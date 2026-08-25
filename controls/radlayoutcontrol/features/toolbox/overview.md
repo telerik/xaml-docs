@@ -2,6 +2,7 @@
 title: ToolBox Overview
 page_title: ToolBox Overview
 description: Check our &quot;ToolBox Overview&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
+components: ["layoutcontrol"]
 slug: radlayoutcontrol-features-toolbox-overview
 tags: layout, toolbox, toolboxview, layoutcontroltoolbox, layoutcontroltoolboxview
 published: True

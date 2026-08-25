@@ -2,6 +2,7 @@
 title: How to Resize Shape Below 15 Pixels
 page_title: Change RadDiagramShape Minimum Size
 description: Use the DiagramConstants class to lower the minimum width and height of the RadDiagram shapes.
+components: ["diagram"]
 type: how-to
 slug: kb-diagram-change-shape-minimum-size
 position: 0

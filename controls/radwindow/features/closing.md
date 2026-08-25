@@ -2,6 +2,7 @@
 title: Closing
 page_title: Closing
 description: This article demonstrates how a RadWindow can be closed and also how the closing can be prevented.
+components: ["window"]
 slug: radwindow-features-closing
 tags: closing
 published: True

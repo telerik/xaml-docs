@@ -2,6 +2,7 @@
 title: Show on Current Screen
 page_title: Show on Current Screen
 description: Learn how to display the RadDesktopAlerts only on the current screen.
+components: ["desktopalert"]
 slug: raddesktopalert-show-on-current-screen
 tags: visual,structure,difference,alert
 published: True

@@ -2,6 +2,7 @@
 title: Styles and Templates
 page_title: Styles and Templates
 description: This article explains how to modify the apperance of the RadTabbedWindow control.
+components: ["tabbedwindow"]
 slug: radtabbedwindow-styles-and-templates
 tags: getting,started
 published: True

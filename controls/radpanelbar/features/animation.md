@@ -2,6 +2,7 @@
 title: Animation
 page_title: Animation - RadPanelBar
 description: Expand and collapse animation for the RadPanelBar {{site.framework_name}} control.
+components: ["panelbar"]
 slug: radpanelbar-features-animation
 tags: expand, collapse, animation
 published: True

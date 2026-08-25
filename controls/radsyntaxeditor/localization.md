@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: This article lists the resource keys which can be used to localize the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-localization
 tags: localization
 published: True

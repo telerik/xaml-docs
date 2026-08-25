@@ -2,6 +2,7 @@
 title: Overview
 page_title:  Data Export Overview
 description: Learn more about exporting data to various formats in Telerik's {{ site.framework_name }} DataGrid by utilizing the RadSpreadProcessing and RadSpreadStreamProcessing libraries.
+components: ["gridview"]
 slug: gridview-export-overview
 tags: grid,export,overview
 published: True

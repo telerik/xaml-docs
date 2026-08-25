@@ -2,6 +2,7 @@
 title: HierarchicalNodeViewModel
 page_title: HierarchicalNodeViewModel
 description: Check our &quot;HierarchicalNodeViewModel&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-data-hierarchicalnodeviewmodel
 tags: hierarchicalnodeviewmodel
 published: True

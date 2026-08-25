@@ -2,6 +2,7 @@
 title: Colorizer
 page_title: Colorizer
 description: Check our &quot;Colorizer&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-visualization-layer-colorizer
 tags: colorizer
 published: True

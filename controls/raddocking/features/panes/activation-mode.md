@@ -2,6 +2,7 @@
 title: Pane Activation
 page_title: Pane Activation
 description: Check our &quot;Pane Activation&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-panes-activation-mode
 tags: paneactivationmode
 published: True

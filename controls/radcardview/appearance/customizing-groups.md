@@ -2,6 +2,7 @@
 title: Customizing Groups
 page_title: Customizing Groups
 description: RadCardView groups can be cusomized using several properties of the control.
+components: ["cardview"]
 slug: radcardview-appearance-customizing-groups
 tags: customize, group, style, panel
 published: True

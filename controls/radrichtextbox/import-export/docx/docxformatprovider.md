@@ -2,6 +2,7 @@
 title: Using DocxFormatProvider
 page_title: Using DocxFormatProvider
 description: Check our &quot;Using DocxFormatProvider&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-using-docxformatprovider
 tags: using-docxFormatProvider
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Selecting Initial File in RadOpenFileDialog in UI for WPF
 description: Learn how to select the initial file in RadOpenFileDialog when opening it.
+components: ["filedialogs"]
 type: how-to
 page_title: How to Select an Initial File in RadOpenFileDialog in UI for WPF
 meta_title: How to Select an Initial File in RadOpenFileDialog in UI for WPF

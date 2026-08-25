@@ -2,6 +2,7 @@
 title: DataForm DataFormComboBoxField SelectedItem Becomes Null After Commit Button Click
 page_title: DataFormComboBoxField Selection Cleared When the Control Gets Unloaded from the Visual Tree
 description: The SelectedItem property of the DataFormComboBoxField is set to null after the changes are committed and RadDataForm control is unloaded.
+components: ["dataform"]
 type: troubleshooting
 slug: kb-dataform-comboboxfield-null-selection
 position: 0

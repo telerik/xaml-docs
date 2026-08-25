@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article will get you familiar with the DiagramRibbon control which is part of Telerik Diagramming Framework.
+components: ["diagram"]
 slug: raddiagram-extensions-diagramribbon-overview
 tags: Overview
 published: True

@@ -2,6 +2,7 @@
 title: Reapply data operations when property changes
 page_title: Reapply data operations when property changes
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to reapply the filtering, sorting and grouping when a property of the data item is changed.
+components: ["gridview"]
 slug: edit-item-outside-gridview
 tags: edit,an,item,outside,radgridview
 published: True

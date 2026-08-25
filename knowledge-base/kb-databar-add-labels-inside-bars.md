@@ -1,6 +1,7 @@
 ---
 title: How to Add Labels Inside Bars of RadStackedDataBar and RadStacked100DataBar
 description: This article demonstrates how to add labels inside the bars of RadStacked100DataBar.
+components: ["databar"]
 type: how-to
 page_title: Place Labels In RadStackedDataBar and RadStacked100DataBar
 slug: kb-databar-add-labels-inside-bars

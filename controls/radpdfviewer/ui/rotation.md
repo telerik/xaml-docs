@@ -2,6 +2,7 @@
 title: Rotation
 page_title: Rotation
 description: Check our &quot;Rotation&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-rotation
 tags: rotation
 published: True

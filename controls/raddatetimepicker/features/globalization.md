@@ -2,6 +2,7 @@
 title: Globalization
 page_title: Globalization
 description: Check our &quot;Globalization&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-features-globalization
 tags: globalization
 published: True

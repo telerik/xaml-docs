@@ -2,6 +2,7 @@
 title: Show Categorical and DateTime Axes in RadChartView
 page_title: Add One Categorical and One DateTime Axis in the Chart
 description: How to add a combination of categorical vertical axis and DateTime-like horizontal axis in RadChartView.
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-categorical-and-datetime-axis
 position: 0

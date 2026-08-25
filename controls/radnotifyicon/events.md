@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article describes the RadNotifyIcon events.
+components: ["notifyicon"]
 slug: radnotifyicon-events
 tags: events
 position: 3

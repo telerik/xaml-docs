@@ -1,6 +1,7 @@
 ---
 title: Get Visible Items in RadGridView When Full Text Search and Search Filtering is Disabled
 description: How to access the search results in the data view of WPF RadGridView when a Full Text Search operation is executed.
+components: ["gridview"]
 type: how-to
 page_title: Access Found Rows in DataGrid for WPF When Search as you Type and IsSearchFilteringEnabled is False
 slug: kb-gridview-get-search-results-when-filtering-disabled

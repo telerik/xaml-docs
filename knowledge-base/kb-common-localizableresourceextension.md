@@ -1,6 +1,7 @@
 ---
 title: How to Utilize the LocalizableResourceExtension Markup Extension
 description: This article shows how you can use the LocalizableResourceExtension markup extension.
+components: ["general"]
 page_title: Utilizing the LocalizationResourceExtension Markup Extension
 type: how-to
 slug: kb-common-localizableresourceextension

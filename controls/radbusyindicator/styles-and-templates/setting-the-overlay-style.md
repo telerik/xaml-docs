@@ -2,6 +2,7 @@
 title: Setting the OverlayStyle
 page_title: Setting the OverlayStyle
 description: Check our &quot;Setting the OverlayStyle&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
+components: ["busyindicator"]
 slug: radbusyindicator-styles-and-templates-setting-the-overlay-style
 tags: setting,the,overlaystyle
 published: True

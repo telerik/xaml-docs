@@ -2,6 +2,7 @@
 title: FAQ
 page_title: FAQ
 description: "Find answers to common questions about Telerik UI for WPF best security practices and guidelines"
+components: ["general"]
 slug: security-faq
 tags: telerik, security, wpf, faq, desktop, development
 published: True

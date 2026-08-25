@@ -2,6 +2,7 @@
 title: First Steps
 page_title: Get Started with Telerik UI for WPF
 description: Learn how to create a WPF project, install Telerik UI for WPF via Telerik CLI, verify the setup, and upgrade the referenced assemblies.
+components: ["general"]
 slug: getting-started-first-steps
 tags: nuget,lifecycle,application,telerik,cli
 published: True

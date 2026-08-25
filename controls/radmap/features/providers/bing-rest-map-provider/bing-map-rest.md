@@ -2,6 +2,7 @@
 title: Bing Rest Map Provider
 page_title: Bing Rest Map Provider
 description: Check our &quot;Bing Rest Map Provider&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-providers-bing-rest-map
 tags: bing,map,provider,rest
 published: True

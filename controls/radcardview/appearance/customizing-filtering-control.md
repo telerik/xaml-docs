@@ -2,6 +2,7 @@
 title: Customizing Filtering Control
 page_title: Customizing Filtering Control
 description: RadCardView filtering control can be cusomized using several properties of the control.
+components: ["cardview"]
 slug: radcardview-appearance-customizing-filtering-control
 tags: customize, filteringcontrol
 published: True

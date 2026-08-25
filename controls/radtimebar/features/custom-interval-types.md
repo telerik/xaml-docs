@@ -2,6 +2,7 @@
 title: Custom Interval Types
 page_title: Custom Interval Types
 description: Check our &quot;Custom Interval Types&quot; documentation article for the RadTimeBar {{ site.framework_name }} control.
+components: ["timebar"]
 slug: radtimebar-features-custom-interval-types
 tags: interval,types,custom
 published: True

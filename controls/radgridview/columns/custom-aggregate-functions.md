@@ -2,6 +2,7 @@
 title: Custom Aggregate Functions
 page_title: Custom Aggregate Functions
 description: This article shows how to create custom EnumerableSelectorAggregateFunction and EnumerableAggregateFunction that can be used with the Telerik's data APIs.
+components: ["gridview"]
 slug: radgridview-columns-custom-aggregate-functions
 tags: aggregatefunction,customfunctions
 published: True

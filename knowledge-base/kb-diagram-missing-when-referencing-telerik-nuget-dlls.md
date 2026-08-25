@@ -1,6 +1,7 @@
 ---
 title: Control not Showing When Referencing Telerik dlls via NuGet Package
 description: RadDiagram control not displayed after using NoXaml NuGet assemblies without referencing theme.
+components: ["diagram"]
 type: troubleshooting
 page_title: Missing element if reference UI for WPF dlls from nuget manager
 slug: kb-diagram-missing-when-referencing-telerik-nuget-dlls

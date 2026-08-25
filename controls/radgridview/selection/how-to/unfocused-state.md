@@ -2,6 +2,7 @@
 title: Stop Showing the Unfocused State
 page_title: Stop Showing the Unfocused State
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to stop showing the unfocused state for the selected row.
+components: ["gridview"]
 slug: gridview-selection-unfocused-state
 tags: stop,showing,the,unfocused,state
 published: True

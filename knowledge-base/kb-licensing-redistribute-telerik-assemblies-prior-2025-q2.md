@@ -1,6 +1,7 @@
 ---
 title: How to Redistribute Telerik Assemblies Prior to 2025 Q2 (2025.2.521)
 description: Technical guidance for redistributing and protecting Telerik UI for WPF assemblies in versions prior to 2025 Q2 (2025.2.521).
+components: ["licensing"]
 type: how-to
 page_title: Redistributing Telerik Assemblies Prior to 2025 Q2 (2025.2.521)
 slug: kb-licensing-redistribute-telerik-assemblies-prior-2025-q2

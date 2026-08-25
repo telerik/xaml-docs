@@ -1,6 +1,7 @@
 ---
 title: How to Auto-Size RadGridView's Rows
 description: Auto-size the rows of the RadGridView control based on its height.
+components: ["gridview"]
 type: how-to
 page_title: Automatically adjust the RowHeight based on the size of the RadGridView control.
 slug: kb-gridview-howto-autosize-rows

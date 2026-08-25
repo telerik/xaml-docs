@@ -2,6 +2,7 @@
 title: How to Display Hierarchical Data
 page_title: How to Display Hierarchical Data
 description: Check our &quot;How to Display Hierarchical Data&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
 slug: howto-display-hierarchical-data
 tags: how,to,display,hierarchical,data
 published: True

@@ -2,6 +2,7 @@
 title: Lightweight Templates
 page_title: Lightweight Templates
 description: Check our &quot;Lightweight Templates&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-lightweight-templates
 tags: lightweight,templates
 published: True

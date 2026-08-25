@@ -2,6 +2,7 @@
 title: Axis Title
 page_title: Axis Title
 description: This article outlines the axis title customization abilities in the RadChartView suite.
+components: ["chartview"]
 slug: radchartview-axes-title
 tags: axis,title
 published: True

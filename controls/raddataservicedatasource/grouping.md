@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping
 description: Check our &quot;Grouping&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-grouping
 tags: grouping
 published: True

@@ -2,6 +2,7 @@
 title: Resolving Design Time Errors
 page_title: Resolving Design Time Errors
 description: This article shows how to resolve common design-time errors that appear in the Visual Studio designer.
+components: ["general"]
 slug: troubleshooting-design-time-errors
 tags: design, time, error
 published: True

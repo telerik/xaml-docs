@@ -2,6 +2,7 @@
 title: Insert a New Line in Merge Field
 page_title: Insert a New Line in Merge Field
 description: Check our &quot;Insert a New Line in Merge Field&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-mail-merge-insert-new-line-in-merge-field
 tags: mail,merge,vertical,tab,line
 published: True

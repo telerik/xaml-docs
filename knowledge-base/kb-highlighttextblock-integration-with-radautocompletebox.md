@@ -2,6 +2,7 @@
 title: RadHighlightTextBlock in an RadAutoCompleteBox
 page_title: Use RadHighlightTextBlock in an RadAutoCompleteBox
 description: How to use RadHighlightTextBlock control in an RadAutoCompleteBox.
+components: ["highlighttextblock"]
 type: how-to
 slug: kb-highlighttextblock-integration-with-radautocompletebox
 position: 0

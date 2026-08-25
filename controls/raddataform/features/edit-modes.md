@@ -2,6 +2,7 @@
 title: Edit Modes
 page_title: Edit Modes
 description: The RadDataForm control exposes an EditMode property of type DataFormEditMode, which provides different options for its editing behavior.
+components: ["dataform"]
 slug: raddataform-edit-modes
 tags: edit, modes
 position: 2

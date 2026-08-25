@@ -2,6 +2,7 @@
 title: Conditional Styling
 page_title: Conditional Styling
 description: Check our &quot;Conditional Styling&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-conditional-styling
 tags: conditional,styling
 published: True

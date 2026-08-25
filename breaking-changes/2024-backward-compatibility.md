@@ -1,6 +1,7 @@
 ---
 title: 2024 Releases
 description: Handle the changes in the 2024 releases of the Telerik UI for WPF components.
+components: ["general"]
 page_title: Breaking Changes in Telerik UI for WPF 2024
 slug: breaking-changes-2024-releases
 position: 1

@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization
 description: Learn more about the horizontal and vertical virtualization in Telerik's {{ site.framework_name }} DataGrid that help speed up the loading time and enhance the UI performance.
+components: ["gridview"]
 slug: radgridview-features-ui-virtualization
 tags: ui,virtualization
 published: True

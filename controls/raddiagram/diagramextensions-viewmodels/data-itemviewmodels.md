@@ -2,6 +2,7 @@
 title: ItemViewModelBase
 page_title: ItemViewModelBase
 description: Check our &quot;ItemViewModelBase&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-data-itemviewmodels
 tags: itemviewmodelbase
 published: True

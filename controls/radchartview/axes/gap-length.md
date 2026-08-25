@@ -2,6 +2,7 @@
 title: Gap Length
 page_title: Gap Length
 description: This article describe the GapLength property of the CategoricalSeries.
+components: ["chartview"]
 slug: radchartview-axes-gap-length
 tags: axis, gaplength
 published: True

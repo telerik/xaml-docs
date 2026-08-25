@@ -2,6 +2,7 @@
 title: Overview
 page_title: Rows Overview
 description: Check out this overview of the most commonly used row classes in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-rows-overview
 tags: overview
 published: True

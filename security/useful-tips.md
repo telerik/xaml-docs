@@ -2,6 +2,7 @@
 title: Security Tips
 page_title: Security Tips
 description: "Learn Telerik's best security practices, vulnerability reporting, and control-specific security guidelines, and useful tips."
+components: ["general"]
 slug: security-tips
 tags: telerik, security, wpf, redistributing, report, tips, useful, vulnerability
 published: True

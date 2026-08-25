@@ -2,6 +2,7 @@
 title: Update the Resources
 page_title: Update the Resources
 description: Check our &quot;Update the Resources&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-howto-update-resources
 tags: update,the,resources
 published: True

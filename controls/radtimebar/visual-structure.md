@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: This article defines the terms and concepts used in the scope of the __RadTimeBar__ control.
+components: ["timebar"]
 slug: radtimebar-visual-structure
 tags: visual,structure
 published: True

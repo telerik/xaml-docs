@@ -2,6 +2,7 @@
 title: Multiple Selection
 page_title: Multiple Selection
 description: Get started with Telerik's {{ site.framework_name }} DataGrid allowing users to select more than one item from the displayed data.
+components: ["gridview"]
 slug: gridview-multiple-selection
 tags: multiple,selection
 published: True

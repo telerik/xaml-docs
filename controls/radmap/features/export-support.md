@@ -2,6 +2,7 @@
 title: Export Support
 page_title: Export Support
 description: Check our &quot;Export Support&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-export-support
 tags: export,support,image,screenshot,picture,save,stream
 published: True

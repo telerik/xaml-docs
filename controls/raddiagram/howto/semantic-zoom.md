@@ -2,6 +2,7 @@
 title: Implement Semantic Zoom on a Shape level
 page_title: Implement Semantic Zoom on a Shape level
 description: Check our &quot;Implement Semantic Zoom on a Shape level&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-howto-semantic-zoom
 tags: implement,semantic,zoom,on,a,shape,level
 published: True

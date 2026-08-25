@@ -2,6 +2,7 @@
 title: Overview
 page_title: Providers Overview
 description: This article describes the supported by the RadMap providers.
+components: ["map"]
 slug: radmap-features-providers
 tags: providers,overview
 published: True

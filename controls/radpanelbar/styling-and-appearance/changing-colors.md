@@ -2,6 +2,7 @@
 title: Colors
 page_title: Colors
 description: Check our &quot;Colors&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
 slug: radpanelbar-changing-colors
 tags: colors
 published: True

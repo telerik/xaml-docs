@@ -2,6 +2,7 @@
 title: Paint Servers
 page_title: Paint Servers
 description: Check our &quot;Paint Servers&quot; documentation article for the RadSvgImage control.
+components: ["svgimage"]
 slug: radsvgimage-paint-servers
 tags: paint servers, radsvgimage
 published: True

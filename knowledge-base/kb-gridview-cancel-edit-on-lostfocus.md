@@ -1,6 +1,7 @@
 ---
 title: Cancel Invalid Cell Edit on Click Outside of RadGridView 
 description: Revert changes in invalid GridViewCell when another control gets the focus.
+components: ["gridview"]
 page_title: Cancel Invalid Cell Edit Mode on Button Click
 type: how-to
 slug: kb-gridview-cancel-edit-on-lostfocus

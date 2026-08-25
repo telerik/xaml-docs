@@ -2,6 +2,7 @@
 title: Modifying TileList view
 page_title: Modifying TileList view
 description: Check our &quot;Modifying TileList view&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+components: ["tilelist"]
 slug: radtilelist-modifying-tilelist-view
 tags: modifying,tilelist,view
 published: True

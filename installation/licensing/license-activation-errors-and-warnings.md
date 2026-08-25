@@ -2,6 +2,7 @@
 title: License Activation Errors and Warnings
 page_title: License Activation Errors and Warnings
 description: The article lists common license activation errors and warnings for the Telerik UI for WPF product.
+components: ["general"]
 slug: license-activation-errors-and-warnings
 tags: installing,ui,for,wpf,file,license,key,activation,errors,warnings
 published: True

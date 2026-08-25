@@ -2,6 +2,7 @@
 title: MaskedTextInput
 page_title: MaskedTextInput
 description: RadMaskedTextInput represents a control that can be used to restrict the input of text values.
+components: ["maskedinput"]
 slug: radmaskedinput-features-controls-text
 tags: maskedtextinput
 published: True

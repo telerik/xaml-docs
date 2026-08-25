@@ -2,6 +2,7 @@
 title: Default Layout
 page_title: Default Layout
 description: Check our &quot;Default Layout&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-default-layout
 tags: default,layout
 published: True

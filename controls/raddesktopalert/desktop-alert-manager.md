@@ -2,6 +2,7 @@
 title: DesktopAlertManager
 page_title: DesktopAlertManager
 description: Check our &quot;DesktopAlertManager&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
+components: ["desktopalert"]
 slug: raddesktopalert-desktop-alert-manager
 tags: desktopalertmanager,alert
 published: True

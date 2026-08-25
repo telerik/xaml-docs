@@ -2,6 +2,7 @@
 title: Sorting with DataProvider
 page_title: Sorting with DataProvider
 description: Check our &quot;Sorting with DataProvider&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-sorting-dataprovider
 tags: sorting, dataprovider
 published: True

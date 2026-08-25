@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: This article lists and explains the commands exposed by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-commands
 tags: commands,radsyntaxeditor
 position: 5

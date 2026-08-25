@@ -2,6 +2,7 @@
 title: Bind to a Selected Item
 page_title: Bind to a Selected Item
 description: Check our &quot;Bind to a Selected Item&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-bind-selected-item
 tags: bind,to,a,selected,item
 published: True

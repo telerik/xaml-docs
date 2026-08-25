@@ -2,6 +2,7 @@
 title: Implementing View-ViewModel 
 page_title: Implementing View-ViewModel 
 description: Check our &quot;Implementing View-ViewModel&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-populating-with-data-implementing-view-model
 tags: implementing,view-viewmodel,
 published: True

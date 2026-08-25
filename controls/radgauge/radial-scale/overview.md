@@ -2,6 +2,7 @@
 title: Radial Scale Overview
 page_title: Radial Scale Overview
 description: Check our &quot;Radial Scale Overview&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radial-scale-overview
 tags: radial,scale,overview
 published: True

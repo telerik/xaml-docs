@@ -2,6 +2,7 @@
 title: Animation
 page_title: Animation
 description: Check our &quot;Animation&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 slug: radtileview-animation
 tags: animation
 published: True

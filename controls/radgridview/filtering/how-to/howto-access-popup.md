@@ -2,6 +2,7 @@
 title: Access Filtering Popup
 page_title: Access Filtering Popup
 description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to access a filtering popup.
+components: ["gridview"]
 slug: gridview-filtering-howto-access-popup
 tags: filtering,popup
 published: True

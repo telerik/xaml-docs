@@ -1,6 +1,7 @@
 ---
 title: Pasting Value With Spaces in Front and Back Does Not Work
 description: Pasting a copied numeric value that contains untrimmed text does not work.
+components: ["numericupdown"]
 page_title: Pasting Number String Containing Trailing or Leading White Spaces Not Shown
 type: howto
 slug: kb-numericupdown-paste-whitespaces-value

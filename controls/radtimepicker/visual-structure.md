@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadTimePicker {{ site.framework_name }} control.
+components: ["timepicker"]
 slug: radtimepicker-structure
 tags: structure
 published: True

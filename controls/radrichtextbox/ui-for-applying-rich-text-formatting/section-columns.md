@@ -2,6 +2,7 @@
 title: Section Columns
 page_title: Section Columns
 description: Check our &quot;Section Columns&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-ui-for-applying-rich-text-formatting-section-columns
 tags: section, column
 published: True

@@ -2,6 +2,7 @@
 title: RadRichTextBoxRibbonUI
 page_title: RadRichTextBoxRibbonUI
 description: Check our &quot;RadRichTextBoxRibbonUI&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-radrichtextboxribbonui
 tags: radrichtextboxribbonui
 published: True

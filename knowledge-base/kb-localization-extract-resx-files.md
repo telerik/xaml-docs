@@ -2,6 +2,7 @@
 title: Extract the Default Telerik Localization Resources
 page_title: Extract the default Telerik .resx files containing the localization strings and save them to files.
 description: Get the Telerik .resx Files Values
+components: ["general"]
 type: how-to
 slug: kb-localization-extract-resx-files
 position: 0

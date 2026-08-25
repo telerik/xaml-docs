@@ -1,6 +1,7 @@
 ---
 title: Select Text in a ReadOnly RadGridView Cell
 description: How to select the cell text when the GridView column is in readonly mode.
+components: ["gridview"]
 type: how-to
 page_title: Select text using the mouse when a DataGrid cell is read-only.
 slug: kb-gridview-text-selection-on-readonly-cell

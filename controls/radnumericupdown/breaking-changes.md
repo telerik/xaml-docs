@@ -2,6 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: Check our &quot;Breaking Changes&quot; documentation article for the RadNumericUpDown control.
+components: ["numericupdown"]
 slug: numericupdown-breaking-changes
 tags: breaking, changes
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Adding Double-Click Behavior to Expand/Collapse GanttTask in RadGanttView for WPF
 description: Learn how to implement a double-click function to expand and collapse the gantt task in RadGanttView for WPF.
+components: ["ganttview"]
 type: how-to
 page_title: How to Add Double-Click Behavior to Expand/Collapse Task in RadGanttView for WPF
 slug: kb-ganttview-double-click-expand-collapse-task

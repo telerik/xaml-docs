@@ -2,6 +2,7 @@
 title: Views
 page_title: Views
 description: Check our &quot;Views&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: radaiprompt-views
 tags: views, radaiprompt
 published: True

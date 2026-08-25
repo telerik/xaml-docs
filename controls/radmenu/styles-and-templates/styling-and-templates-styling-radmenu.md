@@ -2,6 +2,7 @@
 title: Styling the RadMenu
 page_title: Styling the RadMenu
 description: Check our &quot;Styling the RadMenu&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-styling-and-templates-styling-radmenu
 tags: styling,the,radmenu
 published: True

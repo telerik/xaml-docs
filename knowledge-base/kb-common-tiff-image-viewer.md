@@ -1,6 +1,7 @@
 ---
 title: Create Tiff Image Viewer for WPF
 description: This article explains how to create a custom image viewer control that shows .tiff images 
+components: ["imageeditor"]
 type: how-to
 page_title: How to Implement Tif Image Format Viewer
 slug: kb-common-tiff-image-viewer

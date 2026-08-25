@@ -1,6 +1,7 @@
 ---
 title: Disable scrolling in the RadPdfViewer
 description: Create a template and use it to disable scrolling in a RadPdfViewer.
+components: ["pdfviewer"]
 type: how-to
 page_title: How to disable scrolling in the RadPdfViewer
 slug: kb-pdfviewer-disable-scrolling

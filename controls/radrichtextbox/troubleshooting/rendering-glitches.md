@@ -2,6 +2,7 @@
 title: Rendering Glitches
 page_title: Rendering Glitches
 description: A description of how you can setup RadRichTextBox to avoid glitches of the content rendering.
+components: ["richtextbox"]
 slug: radrichtextbox-troubleshooting-rendering-glitches
 tags: troubleshooting,render,glitch,content
 published: True

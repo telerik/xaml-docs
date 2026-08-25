@@ -2,6 +2,7 @@
 title: Add Context Menu
 page_title: Add Context Menu
 description: This article will demonstrate how you can attach a RadContextMenu to the items in a RadTreeView in an MVVM scenario.
+components: ["treeview"]
 slug: radtreeview-how-to-add-context-menu
 tags: add,context,menu, mvvm
 published: True

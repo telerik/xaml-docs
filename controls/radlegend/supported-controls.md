@@ -2,6 +2,7 @@
 title: Supported Controls
 page_title: Supported Controls
 description: Check our &quot;Supported Controls&quot; documentation article for the RadLegend {{ site.framework_name }} control.
+components: ["legend"]
 slug: radlegend-supported-controls
 tags: supported,controls
 published: True

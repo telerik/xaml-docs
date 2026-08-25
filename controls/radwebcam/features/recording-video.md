@@ -2,6 +2,7 @@
 title: Recording Video
 page_title: Recording Video
 description: This article shows how to record a video using the RadWebCam control.
+components: ["webcam"]
 slug: radwebcam-features-recording-video
 tags: startrecording,capture
 published: True

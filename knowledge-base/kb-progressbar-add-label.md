@@ -1,6 +1,7 @@
 ---
 title: Display Label with ProgressBar Value
 description: Show label on top of the progress bar indicating the current progress.
+components: ["progressbar"]
 type: how-to
 page_title: Add Label in the ProgressBar Control
 slug: kb-progressbar-add-label

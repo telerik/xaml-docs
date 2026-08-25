@@ -2,6 +2,7 @@
 title: DataBinding
 page_title: DataBinding
 description: Check our &quot;DataBinding&quot; documentation article for the RadSparkLine {{ site.framework_name }} control.
+components: ["sparkline"]
 slug: radsparkline_databinding
 tags: databinding
 published: True

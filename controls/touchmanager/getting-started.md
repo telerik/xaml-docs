@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the TouchManager {{ site.framework_name }} control.
+components: ["touchmanager"]
 slug: touchmanager-getting-started
 tags: getting,started,touch,manager,touchmanager
 published: True

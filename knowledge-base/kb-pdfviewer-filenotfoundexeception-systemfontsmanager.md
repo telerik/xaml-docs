@@ -1,6 +1,7 @@
 ---
 title: FileNotFoundException Thrown in RadPdfViewer when PDF Document gets Loaded
 description: Resolving an error shown when the Telerik UI for WPF PDF Viewer an assembly used in the SystemFontsManager class cannot be found .
+components: ["pdfviewer"]
 type: troubleshooting
 page_title: System.Drawing.Common Assembly not Found Error When the Telerik WPF PdfViewer is Displayed
 meta_title: FileNotFoundException When the Telerik WPF PdfViewer is Arranged

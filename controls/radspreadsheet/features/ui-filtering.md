@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering
 description: Check our &quot;Filtering&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-filtering
 tags: filtering
 published: True

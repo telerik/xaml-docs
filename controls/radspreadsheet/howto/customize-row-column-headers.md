@@ -2,6 +2,7 @@
 title: Customize Row and Column Headers
 page_title: Customize Row and Column Headers
 description: Check our &quot;Customize Row and Column Headers&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-howto-customize-row-column-headers
 tags: customize,row,and,column,headers
 published: True

@@ -2,6 +2,7 @@
 title: Create Horizontal TreeView
 page_title: Create Horizontal TreeView
 description: Check our &quot;Create Horizontal TreeView&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-create-horizontal-treeview
 tags: create,horizontal,treeview
 published: True

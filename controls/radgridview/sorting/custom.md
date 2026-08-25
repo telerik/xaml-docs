@@ -2,6 +2,7 @@
 title: Custom Sorting
 page_title: Custom Sorting
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn more about the different ways to enable custom sorting.
+components: ["gridview"]
 slug: gridview-sorting-custom
 tags: custom,sorting
 published: True

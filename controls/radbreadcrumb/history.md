@@ -2,6 +2,7 @@
 title: History Support
 page_title: History Support - Breadcrumb
 description: The history support allows you to save a list of previously selected items in RadBreadcrumb.
+components: ["breadcrumb"]
 slug: radbreadcrumb-history
 tags: support,history
 published: True

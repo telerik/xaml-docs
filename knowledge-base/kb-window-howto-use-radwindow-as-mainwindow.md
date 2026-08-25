@@ -1,6 +1,7 @@
 ---
 title: How to Use RadWindow as MainWindow
 description: Change the main window with RadWindow.
+components: ["window"]
 type: how-to
 page_title: Replace the Default Application Window with a RadWindow
 slug: kb-window-howto-use-radwindow-as-mainwindow

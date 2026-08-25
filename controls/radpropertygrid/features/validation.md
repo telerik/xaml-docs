@@ -2,6 +2,7 @@
 title: Validation Support
 page_title: Validation Support
 description: Check our &quot;Validation Support&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-features-validation
 tags: validation,support
 published: True

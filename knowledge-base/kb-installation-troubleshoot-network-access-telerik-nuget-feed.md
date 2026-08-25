@@ -1,6 +1,7 @@
 ---
 title: Troubleshoot Network Access to Telerik NuGet Feed
 description: Verify and troubleshoot network or proxy issues when the Telerik NuGet feed is unreachable.
+components: ["installerandvsextensions"]
 page_title: Troubleshoot Network or Proxy Access to Telerik NuGet Feed
 type: troubleshooting
 slug: kb-installation-troubleshoot-network-access-telerik-nuget-feed

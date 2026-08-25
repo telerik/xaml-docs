@@ -1,6 +1,7 @@
 ---
 title: How to Migrate a Telerik UI for WPF Project to .NET 4.6.2 and .NET
 description: Migrate Telerik UI for WPF applications from .NET Framework 4.0/4.5 or .NET Core 3.1 to .NET Framework 4.6.2 or .NET.
+components: ["general"]
 type: how-to
 page_title: Migrate Telerik UI for WPF Project to .NET 4.6.2 and .NET
 slug: kb-upgrade-migrate-to-net

@@ -1,6 +1,7 @@
 ---
 title: Field Filters Not Visible when Filtering Control Is First Opened
 description: When the Filtering Control is first opened, its field filters are not displayed.
+components: ["gridview"]
 page_title: Filter TextBoxes Missing On Initial Load of Filtering Popup
 type: troubleshooting
 slug: kb-gridview-field-filters-not-visible-first-open

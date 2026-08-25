@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: Check our &quot;Selection&quot; documentation article for the RadStepProgressBar control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-selection
 tags: selection
 published: True

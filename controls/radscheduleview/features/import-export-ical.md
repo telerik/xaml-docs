@@ -2,6 +2,7 @@
 title: Import/Export to ICalendar
 page_title: Import/Export to ICalendar
 description: This article demonstrates how the appointments displayed in a RadScheduleView can be exported to the ICalendar format or imported from a file in the that format. 
+components: ["scheduleview"]
 slug: radscheduleview-import-export-ical
 tags: import, export, ical
 published: True

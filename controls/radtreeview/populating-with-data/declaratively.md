@@ -2,6 +2,7 @@
 title: Declaratively
 page_title: Declaratively
 description: Check our &quot;Declaratively&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-populating-with-data-declaratively
 tags: declaratively
 published: True

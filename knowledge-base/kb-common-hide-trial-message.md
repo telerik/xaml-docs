@@ -1,6 +1,7 @@
 ---
 title: Seeing the Trial Message After Upgrading to Licensed Version of Telerik UI for WPF
 description: "Remove the trial message after upgrading to the paid version of Telerik UI for WPF."
+components: ["general"]
 page_title: Still Showing the Trial Message Box After Updating to Licensed Assemblies of UI for WPF
 type: troubleshooting
 slug: kb-common-hide-trial-message

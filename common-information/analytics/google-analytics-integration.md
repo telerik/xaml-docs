@@ -2,6 +2,7 @@
 title: Google Analytics Integration
 page_title: Google Analytics Integration
 description: This article demonstrates how you can use Telerik Analytics API to implement a custom Google Analytics provider.
+components: ["general"]
 slug: google-analytics-integration
 tags: google,analytics,integration
 published: True

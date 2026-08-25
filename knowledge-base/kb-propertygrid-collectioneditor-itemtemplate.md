@@ -1,6 +1,7 @@
 ---
 title: Set Generic ItemTemplate Property of CollectionEditorPicker 
 description: Set in generic way the ItemTemplate property for all CollectionEditorPicker editors.
+components: ["propertygrid"]
 type: how-to
 page_title: How to Make a Generic Template to Display the Items in a CollectionEditorPicker
 slug: kb-propertygrid-collectioneditor-itemtemplate

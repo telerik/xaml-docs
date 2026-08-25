@@ -2,6 +2,7 @@
 title: Applied DataFormatString on a Column
 page_title: Applied DataFormatString on a Column
 description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn why DataFormatString is used for presentation purposes only.
+components: ["gridview"]
 slug: gridview-filtering-faq-dataformatstring-and-filtering
 tags: applied,dataformatstring,on,a,column
 published: True

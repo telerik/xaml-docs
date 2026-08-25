@@ -2,6 +2,7 @@
 title: Customizing Step Appearance
 page_title: Customizing Step Appearance
 description: Check our &quot;Customizing Step Appearance&quot; documentation article for the RadStepProgressBar control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-appearance-step
 tags: step,style,template
 published: True

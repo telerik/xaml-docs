@@ -2,6 +2,7 @@
 title: Options
 page_title: Options
 description: Progress Telerik WPF Visual Studio Extension options dialog provides settings, so you can configure the extension to best suit your needs.
+components: ["general"]
 slug: radcontrols-vs-extensions-options
 tags: options
 published: True

@@ -2,6 +2,7 @@
 title: Add, Edit and Delete Operations
 page_title: Add, Edit and Delete Operations
 description: Check our &quot;Add, Edit and Delete Operations&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddataform-add-edit-delete-buttons
 tags: add,delete,and,edit,operations
 published: True

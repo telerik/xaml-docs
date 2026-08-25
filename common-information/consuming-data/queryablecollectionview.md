@@ -2,6 +2,7 @@
 title: QueryableCollectionView
 page_title: QueryableCollectionView
 description: 
+components: ["general"]
 slug: consuming-data-queryablecollectionview
 tags: queryablecollectionview,queryablecollectionviewsource,filtering,sorting,grouping,linq,expression
 published: True

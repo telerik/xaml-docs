@@ -2,6 +2,7 @@
 title: Tick placement
 page_title: Tick placement
 description: Check our &quot;Tick placement&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+components: ["slider"]
 slug: radslider-tick-placement
 tags: tick,placement
 published: True

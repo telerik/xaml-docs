@@ -2,6 +2,7 @@
 title: Setting a Theme
 page_title: Setting a Theme
 description: Check our &quot;Setting a Theme&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-styles-and-templates-setting-theme
 tags: setting,a,theme
 published: True

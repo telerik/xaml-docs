@@ -2,6 +2,7 @@
 title: Style GridViewCheckBoxColumn
 page_title: Style GridViewCheckBoxColumn
 description: Learn how to style the Telerik {{ site.framework_name }} DataGrid in view and edit mode, how to apply the styles to the CheckBoxColumn explicitly and how to center it.
+components: ["gridview"]
 slug: gridview-columns-how-to-styling-checkboxcolumn
 tags: style,gridviewcheckboxcolumn
 published: True

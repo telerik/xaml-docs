@@ -2,6 +2,7 @@
 title: Chart Types
 page_title: Chart Types
 description: Check our &quot;Chart Types&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-chart-types
 tags: chart,types
 published: True

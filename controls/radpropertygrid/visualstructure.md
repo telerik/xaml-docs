@@ -2,6 +2,7 @@
 title: VisualStructure
 page_title: VisualStructure
 description: Check our &quot;VisualStructure&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-visualstructure
 tags: visualstructure
 published: True

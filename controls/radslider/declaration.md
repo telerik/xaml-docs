@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This article demonstrates how to create a sample application containing a RadSlider.
+components: ["slider"]
 slug: radslider-declaration
 tags: getting,started
 published: True

@@ -2,6 +2,7 @@
 title: Scrolling
 page_title: Scrolling
 description: Learn more about the default scrolling mechanism of Telerik's {{ site.framework_name }} DataGrid and the options to additionally configure it for a better user experience.
+components: ["gridview"]
 slug: gridview-scrolling
 tags: scrolling
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Scroll Multiple Items with Page Up and Down
 description: An article explaining how to enable the scrolling of an arbitrary number of items.
+components: ["autocompletebox"]
 type: how-to
 page_title: Allow Scrolling of an Arbitrary Number of Items with Page Up and Page Down
 slug: kb-autocompletebox-scroll-with-page-up-down

@@ -2,6 +2,7 @@
 title: Diagram Events
 page_title: Diagram Events
 description: This article describes the events of the RadDiagram.
+components: ["diagram"]
 slug: raddiagrams-events-diagram
 tags: diagram,events
 published: True

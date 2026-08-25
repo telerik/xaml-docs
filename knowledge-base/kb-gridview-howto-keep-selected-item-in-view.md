@@ -1,6 +1,7 @@
 ---
 title: How to Keep the Selected Item in the Viewport when the Collection is Changed
 description: Keep the selection in view when items are added or removed.
+components: ["gridview"]
 type: how-to
 page_title: Keep Selected Item in Viewport when Collection Changes
 slug: kb-gridview-howto-keep-selected-item-in-view

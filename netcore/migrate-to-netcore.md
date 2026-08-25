@@ -2,6 +2,7 @@
 title: Migrating to .NET
 page_title: Migrating to .NET
 description: This article shows how to migrate from an existing Telerik WPF .NET Framework project to a .NET 8 and later.
+components: ["general"]
 slug: netcore-support-migration
 tags: get,started,first,steps,migrate,core,standard,visual,studio,
 published: True

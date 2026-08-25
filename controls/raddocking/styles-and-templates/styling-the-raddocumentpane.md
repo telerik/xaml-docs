@@ -2,6 +2,7 @@
 title: Styling the RadDocumentPane
 page_title: Styling the RadDocumentPane
 description: Check our &quot;Styling the RadDocumentPane&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-styling-the-raddocumentpane
 tags: styling,the,raddocumentpane
 published: True

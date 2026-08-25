@@ -2,6 +2,7 @@
 title: Cell ToolTip
 page_title: Cell ToolTip
 description: Check our &quot;Cell ToolTip&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: radvirtualgrid-celltooltip
 tags: celltooltip,virtualgrid,
 published: True

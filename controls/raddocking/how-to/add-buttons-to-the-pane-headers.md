@@ -2,6 +2,7 @@
 title: How to Add Buttons to the Pane Header
 page_title: How to Add Buttons to the Pane Header
 description: Check our &quot;How to Add Buttons to the Pane Header&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-how-to-add-buttons-to-the-pane-headers
 tags: how,to,add,buttons,to,the,pane,header
 published: True

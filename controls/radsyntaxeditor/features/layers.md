@@ -2,6 +2,7 @@
 title: Layers
 page_title: Layers
 description: This article explains the layers functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-layers
 tags: layers,radsyntaxeditor
 position: 10

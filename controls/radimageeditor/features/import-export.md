@@ -2,6 +2,7 @@
 title: Import/Export
 page_title: Import/Export
 description: Check our &quot;Import/Export&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-features-import-export
 tags: import/export
 published: True

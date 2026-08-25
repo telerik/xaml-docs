@@ -2,6 +2,7 @@
 title: Printing
 page_title: Printing
 description: Check our &quot;Printing&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-printing
 tags: printing
 published: True

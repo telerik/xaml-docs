@@ -1,6 +1,7 @@
 ---
 title: Last Row Disappears in RadGridView
 description: The vertical scrolling cannot reach the last row when RowHeight smaller than pinned rows.
+components: ["gridview"]
 type: troubleshooting
 page_title: RadGridView Cannot Scroll to the Last Rows 
 slug: kb-gridview-cannot-scroll-last-rows

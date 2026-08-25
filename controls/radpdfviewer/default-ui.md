@@ -2,6 +2,7 @@
 title: Default UI
 page_title: Default UI
 description: Check our &quot;Default UI&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-default-ui
 tags: default, ui, radpdfviewertoolbar
 published: True

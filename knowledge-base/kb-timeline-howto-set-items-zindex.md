@@ -1,6 +1,7 @@
 ---
 title: How to set the ZIndex of the items within the RadTimeLine
 description: Control the stacking order of the timeline items.
+components: ["timeline"]
 type: howto
 page_title: Change the stacking of the items shown in the RadTimeLine
 slug: kb-timeline-howto-set-items-zindex

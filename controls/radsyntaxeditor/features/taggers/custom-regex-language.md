@@ -2,6 +2,7 @@
 title: Custom Regex Language
 page_title: Custom Regex Language
 description: This article explains how to create highlighting for a custom language which uses regular expressions with the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-custom-regex-language
 tags: custom,regex,regular,expression,language,radsyntaxeditor
 position: 3

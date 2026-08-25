@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure
 description: Check our &quot;Structure&quot; documentation article for the RadProgressBar {{ site.framework_name }} control.
+components: ["progressbar"]
 slug: radprogressbar-structure
 tags: structure
 published: True

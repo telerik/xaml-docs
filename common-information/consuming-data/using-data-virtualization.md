@@ -2,6 +2,7 @@
 title: Using Data Virtualization
 page_title: Using Data Virtualization
 description: The data virtualization technique ensures much better performance as well as user experience improvements when handling big amounts of data.
+components: ["general"]
 slug: using-data-virtualization
 tags: using,data,virtualization, VQCV
 published: True

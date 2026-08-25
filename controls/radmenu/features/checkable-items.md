@@ -2,6 +2,7 @@
 title: Checkable Items
 page_title: Checkable Items
 description: Check our &quot;Checkable Items&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-features-checkable-items
 tags: checkable,items
 published: True

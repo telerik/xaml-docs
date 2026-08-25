@@ -2,6 +2,7 @@
 title: Suggestions
 page_title: Suggestions
 description: Check our &quot;Suggestions&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: radaiprompt-suggestions
 tags: suggestions, radaiprompt
 published: True

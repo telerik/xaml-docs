@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadListBox {{ site.framework_name }} control.
+components: ["listbox"]
 sdk_example: true
 slug: radlistbox-sdk-examples
 tags: sdk,examples

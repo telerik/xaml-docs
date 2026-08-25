@@ -1,6 +1,7 @@
 ---
 title: Remove the collapsed area of the RadDiagramContainerShape 
 description: Get Rid of the Body Area When the RadDiagramContainerShape is Collapsed.
+components: ["diagram"]
 type: how-to
 page_title: Hide the collapse area of the RadDiagramContainerShape
 slug: kb-diagram-remove-diagramcontainer-collapsearea

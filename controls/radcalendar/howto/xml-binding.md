@@ -2,6 +2,7 @@
 title: XML Binding
 page_title: XML Binding
 description: Check our &quot;XML Binding&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
+components: ["calendar"]
 slug: radcalendar-xml-binding
 tags: xml,binding
 published: True

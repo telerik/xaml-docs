@@ -1,6 +1,7 @@
 ---
 title: How to set the cell's tooltip duration 
 description: Control the duration of a cell's tooltip.
+components: ["gridview"]
 type: howto
 page_title: Change the timespan that a cell's tooltip is shown 
 slug: kb-gridview-howto-change-cells-tooltip-duration

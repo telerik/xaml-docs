@@ -2,6 +2,7 @@
 title: Snapping Appointments
 page_title: Snapping Appointments
 description: Check our &quot;Snapping Appointments&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-snapappointments
 tags: snapping,appointments
 published: True

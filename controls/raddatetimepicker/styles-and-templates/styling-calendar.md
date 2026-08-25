@@ -2,6 +2,7 @@
 title: Styling the Calendar
 page_title: Styling the Calendar
 description: Check our &quot;Styling the Calendar&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-styling-calendar
 tags: styling,the,calendar
 published: True

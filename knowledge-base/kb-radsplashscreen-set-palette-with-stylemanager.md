@@ -1,6 +1,7 @@
 ---
 title: Palette Settings are not Applied When Using RadSplashScreen
 description: LoadPreset method does not work when using RadSplashScreen.
+components: ["splashscreen"]
 type: troubleshooting
 page_title: Palette properties not changed when using RadSplashScreen
 slug: kb-radsplashscreen-set-palette-with-stylemanager

@@ -2,6 +2,7 @@
 title: Auto Ellipsis
 page_title: Auto Ellipsis
 description: Check our &quot;Auto Ellipsis&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
+components: ["datapager"]
 slug: raddatapager-features-auto-ellipsis
 tags: auto,ellipsis
 published: True

@@ -2,6 +2,7 @@
 title: Format String Values as Numbers in HTML Export
 page_title: Format String Values as Numbers in HTML Export
 description: Read this article to learn how to format string values as numbers in HTML export - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-export-troubleshooting-export-paged-data
 tags: export,paged,data
 published: True

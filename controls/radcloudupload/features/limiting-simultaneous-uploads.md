@@ -2,6 +2,7 @@
 title: Limiting the Simultaneous Uploads
 page_title: Limiting the Simultaneous Uploads
 description: Check our &quot;Limiting the Simultaneous Uploads&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-features-limiting-simultaneous-uploads
 tags: limiting, limit, simultaneous, upload, uploads, count, maximum, max, maximumsimultaneousuploadscount
 published: True

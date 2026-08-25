@@ -2,6 +2,7 @@
 title: Installation Methods
 page_title: Installation Approaches
 description: Find all Telerik UI for WPF installation approaches listed in this article.
+components: ["general"]
 slug: installation-guide
 tags: installation,options,methods
 published: True

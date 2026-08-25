@@ -1,6 +1,7 @@
 ---
 title: Deleting a Content Control in a Context Menu
 description: Learn how to delete a content control in a RichTextBox context menu in the ContextMenu_Showing event for UI for WPF.
+components: ["richtextbox"]
 type: how-to
 page_title: How to Remove Content Control in RichTextBox Context Menu for WPF
 meta_title: How to Remove Content Control in RichTextBox Context Menu for WPF

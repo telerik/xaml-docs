@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - Breadcrumb
 description: Check our &quot;Overview&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
+components: ["breadcrumb"]
 slug: radbreadcrumb-overvew
 tags: overview
 published: True

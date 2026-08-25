@@ -2,6 +2,7 @@
 title: Styling Indent Cells
 page_title: Styling Indent Cells
 description: Learn how to alter the appearance of indent cells by modifying their default styles or by directly editing their control templates.
+components: ["gridview"]
 slug: radgridview-styling-indent-cells
 tags: styling,indent,cells,in,radgridview
 published: True

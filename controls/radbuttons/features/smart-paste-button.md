@@ -2,6 +2,7 @@
 title: Smart Paste Button
 page_title: RadSmartPasteButton for WPF
 description: Check our &quot;Smart Paste Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-features-smart-paste-button
 tags: smart-paste,button
 published: True

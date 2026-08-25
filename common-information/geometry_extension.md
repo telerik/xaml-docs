@@ -2,6 +2,7 @@
 title: Geometry Extension
 page_title: WPF Documentation - Geometry Extension
 description: Check our &quot;Geometry Extension&quot; documentation article for WPF controls 
+components: ["general"]
 slug: common-geometry-extension
 tags: geometry, extension
 published: True

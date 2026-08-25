@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadWizard {{ site.framework_name }} control.
+components: ["wizard"]
 slug: wizard-overview
 tags: overview
 published: True

@@ -2,6 +2,7 @@
 title: Adding Rows
 page_title: Adding Rows
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to add new rows by using the GridViewNewRow control.
+components: ["gridview"]
 slug: gridview-rows-adding-rows
 tags: adding,rows
 published: True

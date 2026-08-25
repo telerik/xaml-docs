@@ -2,6 +2,7 @@
 title: LayoutControlGroup
 page_title: LayoutControlGroup
 description: Check our &quot;LayoutControlGroup&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
+components: ["layoutcontrol"]
 slug: radlayoutcontrol-features-layougroups-layoutcontrolgroup
 tags: feature, displaymode, display, mode, layoutcontrolgroup
 published: True

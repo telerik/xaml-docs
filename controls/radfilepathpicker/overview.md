@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article lists the main features of the RadFilePathPicker control.
+components: ["filepathpicker"]
 slug: radfilepathpicker-overview
 tags: overview, radfilepathpicker
 position: 0

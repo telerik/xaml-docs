@@ -2,6 +2,7 @@
 title: Load on Demand
 page_title: Load on Demand
 description: Check our &quot;Load on Demand - Lazy Loading &quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-load-on-demand
 tags: group,load,demand,on,lazy,loading
 published: True

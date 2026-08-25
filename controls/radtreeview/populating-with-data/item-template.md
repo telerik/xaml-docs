@@ -2,6 +2,7 @@
 title: ItemTemplate
 page_title: ItemTemplate
 description: Check our &quot;ItemTemplate&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-populating-with-data-item-template
 tags: itemtemplate
 published: True

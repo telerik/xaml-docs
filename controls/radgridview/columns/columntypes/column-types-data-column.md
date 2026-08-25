@@ -2,6 +2,7 @@
 title: Data Column
 page_title: Data Column
 description: Learn how to easily generate appropriate editor elements based on the bound data type by using the Data Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: radgridview-columns-column-types-data-column
 tags: data,column
 published: True

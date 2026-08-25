@@ -2,6 +2,7 @@
 title: Reordering Columns
 page_title: Reordering Columns
 description: Learn more about the column reordering in run-time and the different reordering modes available in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-columns-reordering-columns
 tags: reordering,columns
 published: True

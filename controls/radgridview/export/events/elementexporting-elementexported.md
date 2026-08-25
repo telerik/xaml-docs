@@ -2,6 +2,7 @@
 title: ElementExporting and ElementExported
 page_title:  ElementExporting and ElementExported
 description:  Learn how to utilize the ElementExporting and ElementExported events which are fired when you export data from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-export-events-elementexporting-elementexported
 tags: grid,export,events,elementexporting,elementexported
 published: True

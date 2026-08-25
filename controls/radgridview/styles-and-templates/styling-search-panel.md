@@ -2,6 +2,7 @@
 title: Styling Search Panel
 page_title: Styling Search Panel
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the SearchPanel element.
+components: ["gridview"]
 slug: gridview-styling-search-panel
 tags: styling,search,panel
 published: True

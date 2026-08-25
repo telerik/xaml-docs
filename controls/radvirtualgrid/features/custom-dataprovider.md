@@ -2,6 +2,7 @@
 title: Custom DataProvider
 page_title: Custom DataProvider
 description: Check our &quot;Custom DataProvider&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-custom-dataprovider
 tags: dataprovider
 published: True

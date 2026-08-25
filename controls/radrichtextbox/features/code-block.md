@@ -2,6 +2,7 @@
 title: Code Block
 page_title: Code Block
 description: Check our &quot;Code Block&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-code-block
 tags: code,block
 published: True

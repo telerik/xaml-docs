@@ -2,6 +2,7 @@
 title: Create Chart With Static Data
 page_title: Create Chart With Static Data
 description: Check our &quot;Create Chart With Static Data&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-populating-with-data-static-data
 tags: create,chart,with,static,data
 published: True

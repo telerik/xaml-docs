@@ -2,6 +2,7 @@
 title: Templated Nodes
 page_title: Templated Nodes
 description: Check our &quot;Templated Nodes&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-styles-and-templates-templated-nodes
 tags: templated,nodes
 published: True

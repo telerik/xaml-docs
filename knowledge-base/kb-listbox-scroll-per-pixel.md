@@ -2,6 +2,7 @@
 title: Listbox Scroll Per Pixel
 page_title: Scroll RadListBox Items Per Pixel
 description: Scroll per pixel instead per item when scrolling the items of the RadListBox control.
+components: ["listbox"]
 type: how-to
 slug: kb-listbox-scroll-per-pixel
 position: 0

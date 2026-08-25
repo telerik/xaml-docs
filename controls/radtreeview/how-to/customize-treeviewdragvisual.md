@@ -2,6 +2,7 @@
 title: Customize the TreeViewDragVisual
 page_title: Customize the TreeViewDragVisual
 description: Check our &quot;Customize the TreeViewDragVisual&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-howto-customize-treeviewdragvisual
 tags: radtreeview,customize,treeviewdragvisual,drag,visual,treeview
 published: True

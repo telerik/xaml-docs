@@ -2,6 +2,7 @@
 title: Drop event not fired
 page_title: Get ListBoxItem Under the Mouse When DragOver
 description: How to catch the RadListBoxItem element under the mouse when drag over or drop on RadListBox.
+components: ["listbox"]
 type: how-to
 slug: kb-listbox-get-listboxitem-under-mouse-when-dragover
 position: 0

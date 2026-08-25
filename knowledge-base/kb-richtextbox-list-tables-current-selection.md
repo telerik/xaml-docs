@@ -1,6 +1,7 @@
 ---
 title: Getting a List of All Tables in the Current Selection
 description: Learn how to retrieve a list of all tables in the current selection in RadRichTextBox for WPF.
+components: ["richtextbox"]
 type: how-to
 page_title: Retrieve a List of Tables in the Current Selection | RadRichTextBox for WPF
 slug: kb-richtextbox-list-tables-current-selection

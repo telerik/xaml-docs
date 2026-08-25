@@ -2,6 +2,7 @@
 title: RadSaveFileDialog
 page_title: RadSaveFileDialog
 description: Check our &quot;RadSaveFileDialog&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-radsavefiledialog
 tags: save,file,dialog
 published: True

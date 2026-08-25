@@ -2,6 +2,7 @@
 title: MultiColumnComboBox DropDown Doesn't Close After Context Menu Is Opened
 page_title: KeepDropDownOpen of RadMultiColumnComboBox Set to False Doesn't Auto-Close the Popup After a Context Menu Is Opened Inside the Popup
 description: Opening a ContextMenu inside the dropdown of a MultiColumnComboBox is breaking the KeepDropDownOpen setting.
+components: ["multicolumncombobox"]
 type: troubleshooting
 slug: kb-multicolumncombobox-auto-close-not-working-with-contextmenu
 position: 0

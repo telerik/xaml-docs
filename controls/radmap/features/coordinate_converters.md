@@ -2,6 +2,7 @@
 title: Coordinate Converters
 page_title: Coordinate Converters
 description: This article describes the build-in coordinate converters.
+components: ["map"]
 slug: radmap-features-coordinate-converters
 tags: osgb36converter, epsg900913converter, coordinateconverter, projection, mercator
 published: True

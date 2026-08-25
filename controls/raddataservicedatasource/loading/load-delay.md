@@ -2,6 +2,7 @@
 title: Load Delay
 page_title: Load Delay
 description: Check our &quot;Load Delay&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-loading-load-delay
 tags: load,delay
 published: True

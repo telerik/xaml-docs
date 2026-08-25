@@ -2,6 +2,7 @@
 title: IntelliPrompts
 page_title: IntelliPrompts
 description: This article explains the IntelliPrompts functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-intelliprompts
 tags: intelliprompts,radsyntaxeditor
 position: 1

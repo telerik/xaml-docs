@@ -2,6 +2,7 @@
 title: Text Position
 page_title: Text Position
 description: Check our &quot;Text Position&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-text-text-position
 tags: text,position
 published: True

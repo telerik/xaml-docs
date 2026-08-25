@@ -2,6 +2,7 @@
 title: Create Appointment
 page_title: Create Appointment
 description: Check our &quot;Create Appointment&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-end-user-capabilities-create-appointment
 tags: create,appointment
 published: True

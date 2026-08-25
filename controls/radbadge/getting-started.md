@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - Badge WPF
 description: Check our &quot;Getting Started&quot; documentation article for the RadBadge WPF control.
+components: ["badge"]
 slug: radbadge-getting-started
 tags: getting,started
 published: True

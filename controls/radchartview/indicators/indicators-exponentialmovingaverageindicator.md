@@ -2,6 +2,7 @@
 title: ExponentialMovingAverageIndicator
 page_title: ExponentialMovingAverageIndicator
 description: Check our &quot;ExponentialMovingAverageIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-exponentialmovingaverageindicator
 tags: financial, indicators, exponentialmovingaverageindicator
 publish: True

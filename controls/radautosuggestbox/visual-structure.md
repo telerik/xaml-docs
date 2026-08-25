@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: The article demonstrates the Visual Structure of the RadAutoSuggestBox.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-visual-structure
 tags: visual,structure
 published: True

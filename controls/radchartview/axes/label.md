@@ -2,6 +2,7 @@
 title: Customizing Axis Labels
 page_title: Customizing Axis Labels
 description: This article outlines the axis label customization abilities in the RadChartView suite.
+components: ["chartview"]
 slug: radchartview-axes-labels
 tags: axis,labels
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to close RadWindow dialog in MVVM using custom button
 description: Closing a RadWindow dialog from within the command that is being executed from a custom button specified in the template.
+components: ["window"]
 type: how-to
 page_title: Using button command to close a RadWindow dialog in MVVM.
 slug: kb-window-close-radwindow-dialog-in-mvvm

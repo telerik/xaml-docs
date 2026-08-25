@@ -1,6 +1,7 @@
 ---
 title: Display CheckBox in Merged Cell for Column Bound to Boolean Property
 description: How to Have Merged Cells in CheckBox Column.
+components: ["gridview"]
 type: how-to
 page_title: Show CheckBox in Merged Cells
 slug: kb-gridview-merged-cells-in-checkbox-column

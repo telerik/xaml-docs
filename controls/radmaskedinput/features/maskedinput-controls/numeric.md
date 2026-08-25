@@ -2,6 +2,7 @@
 title: MaskedNumericInput
 page_title: MaskedNumericInput
 description: Describing the MaskedNumericInput control and its features.
+components: ["maskedinput"]
 slug: radmaskedinput-features-controls-numeric
 tags: maskednumericinput
 published: True

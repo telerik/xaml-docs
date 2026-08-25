@@ -2,6 +2,7 @@
 title: NavigationBehavior
 page_title: NavigationBehavior
 description: This article will demonstrate the NavigationBehavior feature of RadScheduleView.
+components: ["scheduleview"]
 slug: radscheduleview-features-navigationbehavior
 tags: navigationbehavior
 published: True

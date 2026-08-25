@@ -2,6 +2,7 @@
 title: Populating With Data RadPivotMap
 page_title: Populating With Data RadPivotMap
 description: Check our &quot;Populating With Data RadPivotMap&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
+components: ["treemapandpivotmap"]
 slug: radtreemap-populating-with-data-radpivotmap
 tags: populating,with,data,radpivotmap
 published: True

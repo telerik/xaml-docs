@@ -2,6 +2,7 @@
 title: Visual Studio Templates
 page_title: Visual Studio Templates
 description: The UI for WPF Extensions provides few built-in Visual Studio templates showing Microsoft Office (Word, Excel and Outlook) inspired UI.  
+components: ["general"]
 slug: visual-studio-templates
 tags: visual,studio,templates
 published: True

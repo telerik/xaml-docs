@@ -2,6 +2,7 @@
 title:  Switching Icons at Runtime
 page_title:  Switching Icons at Runtime
 description: Check our &quot;Switching Icons at Runtime&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-ui-switching-icons-at-runtime
 tags: switching,themes,icons,at,runtime
 published: True

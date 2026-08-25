@@ -2,6 +2,7 @@
 title: Step Item Contents
 page_title: Step Item Contents
 description: Change the step contents in the Telerik RadStepProgressBar control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-step-contents
 tags: get,started
 published: True

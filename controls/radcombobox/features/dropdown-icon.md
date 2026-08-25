@@ -2,6 +2,7 @@
 title: Drop-Down Button Icon
 page_title: Drop-Down Button Icon
 description: Modifying the drop-down button icon of the RadComboBox control.
+components: ["combobox"]
 slug: radcombobox-features-dropdown-icon
 tags: dropdown button icon, combobox button icon
 published: True

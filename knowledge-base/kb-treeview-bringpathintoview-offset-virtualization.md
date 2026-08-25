@@ -1,6 +1,7 @@
 ---
 title: Bring RadTreeViewItem Into View With Offset When UI Virtualization is Enabled
 description: How to bring RadTreeViewItem by path into the view with an offset, when UI virtualization is enabled.
+components: ["treeview"]
 type: how-to
 page_title: BringPathIntoView With Offset When RadTreeView IsVirtualizing is True
 slug: kb-treeview-bringpathintoview-offset-virtualization

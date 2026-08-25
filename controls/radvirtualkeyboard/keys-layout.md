@@ -2,6 +2,7 @@
 title: Keys Layout
 page_title: Keys Layout
 description: Check our &quot;Keys Layout&quot; documentation article for the on-screen RadVirtualKeyboard WPF control.
+components: ["virtualkeyboard"]
 slug: radvirtualkeyboard-keys-layout
 tags: layout,customize
 published: True

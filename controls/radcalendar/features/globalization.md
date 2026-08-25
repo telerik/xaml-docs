@@ -2,6 +2,7 @@
 title: Globalization
 page_title: Globalization
 description: Check our &quot;Globalization&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
+components: ["calendar"]
 slug: radcalendar-globalization
 tags: globalization
 published: True

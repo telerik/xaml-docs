@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadHighlightTextBlock control.
+components: ["highlighttextblock"]
 slug: radhighlighttextblock-visual-structure
 tags: visual structure, radhighlighttextblock
 published: True

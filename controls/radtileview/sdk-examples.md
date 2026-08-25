@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 sdk_example: true
 slug: radtileview-sdk-examples
 tags: sdk,examples

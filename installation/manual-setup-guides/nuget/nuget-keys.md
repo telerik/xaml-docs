@@ -2,6 +2,7 @@
 title: Restoring NuGet Packages in CI
 page_title: Restoring NuGet Packages in CI
 description: "Learn how to use NuGet Keys to authenticate with the Telerik NuGet server and restore WPF packages in your CI or desktop environment."
+components: ["general"]
 slug: nuget-keys
 tags: restore,nuget,keys,packages,ci
 published: True

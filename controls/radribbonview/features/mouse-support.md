@@ -2,6 +2,7 @@
 title: Mouse Support
 page_title: Mouse Support
 description: Check our &quot;Mouse Support&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-mouse-support
 tags: mouse,support
 published: True

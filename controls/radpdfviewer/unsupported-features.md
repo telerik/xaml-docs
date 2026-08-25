@@ -2,6 +2,7 @@
 title: Unsupported Features
 page_title: Unsupported Features
 description: Check our &quot;Unsupported Features&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-unsupported-features
 tags: unsupported,features
 published: True

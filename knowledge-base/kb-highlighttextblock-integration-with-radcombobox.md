@@ -2,6 +2,7 @@
 title: RadHighlightTextBlock in an editable RadComboBox
 page_title: Use RadHighlightTextBlock in an editable RadComboBox
 description: How to use RadHighlightTextBlock control in an editable RadComboBox.
+components: ["highlighttextblock"]
 type: how-to
 slug: kb-highlighttextblock-integration-with-radcombobox
 position: 0

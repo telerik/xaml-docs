@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadSpellChecker {{ site.framework_name }} control.
+components: ["spellchecker"]
 slug: radspellchecker-localization
 tags: localization
 published: True

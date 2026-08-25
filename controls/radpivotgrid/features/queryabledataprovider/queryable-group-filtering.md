@@ -2,6 +2,7 @@
 title: Group Filtering
 page_title: Group Filtering
 description: Check our &quot;Group Filtering&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-queryable-group-filtering
 tags: group,filtering
 published: True

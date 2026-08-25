@@ -2,6 +2,7 @@
 title: Button
 page_title: Button
 description: Check our &quot;Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-features-button
 tags: button
 published: True

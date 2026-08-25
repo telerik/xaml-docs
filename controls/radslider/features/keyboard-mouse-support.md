@@ -2,6 +2,7 @@
 title: Keyboard and Mouse support
 page_title: Keyboard and Mouse support
 description: Check our &quot;Keyboard and Mouse support&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+components: ["slider"]
 slug: radslider-keyboard-mouse-support
 tags: keyboard,and,mouse,support
 published: True

@@ -2,6 +2,7 @@
 title: SelectedBackground and MouseOverBackground
 page_title: SelectedBackground and MouseOverBackground
 description: RadGridView provides support for changing the background of its selected row through SelectedBackground property and the MouseOver Background through the MouseOverBackground property.
+components: ["gridview"]
 slug: radgridview-rows-selected-background
 tags: selected,row,background, mouseover
 published: True

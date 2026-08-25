@@ -2,6 +2,7 @@
 title: Styling the RadRibbonRadioButton
 page_title: Styling the RadRibbonRadioButton
 description: Check our &quot;Styling the RadRibbonRadioButton&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-ribbonradiobutton
 tags: styling,the,radribbonradiobutton
 published: True

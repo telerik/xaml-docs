@@ -1,6 +1,7 @@
 ---
 title: Preventing Tooltip Display for Error Content in RadDateTimePicker
 description: Learn how to prevent the tooltip of the RadDateTimePicker control in WPF from showing when its content equals "Error".
+components: ["datetimepicker"]
 type: how-to
 page_title: Avoid Tooltip Display for RadDateTimePicker Error Content
 meta_title: Avoid Tooltip Display for RadDateTimePicker Error Content

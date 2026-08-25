@@ -2,6 +2,7 @@
 title: DataBinding Support Overview
 page_title: DataBinding Support Overview
 description: Check our &quot;DataBinding Support Overview&quot; documentation article for the RadRating {{ site.framework_name }} control.
+components: ["rating"]
 slug: databinding-support
 tags: databinding,support,overview
 published: True

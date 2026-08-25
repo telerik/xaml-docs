@@ -2,6 +2,7 @@
 title: Prevent Double-Click Maximization on RadWindow
 page_title: Prevent double-click maximization on RadWindow
 description: When the title bar of the RadWindow control is double-clicked, it gets maximized.
+components: ["window"]
 type: how-to
 slug: kb-window-prevent-double-click-maximization
 position: 0

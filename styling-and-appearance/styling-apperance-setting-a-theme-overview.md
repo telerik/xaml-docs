@@ -2,6 +2,7 @@
 title: Setting a Theme
 page_title: Setting a Theme 
 description: This article provides an overview of the different mechanisms for setting a theme in Telerik UI for {{ site.framework_name }}. 
+components: ["general"]
 slug: styling-apperance-implicit-styles-overview
 tags: setting,a,theme,(using,implicit,styles)
 published: True

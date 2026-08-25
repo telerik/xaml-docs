@@ -2,6 +2,7 @@
 title: Animations
 page_title: Animations
 description: Check our &quot;Animations&quot; documentation article for the RadSvgImage control.
+components: ["svgimage"]
 slug: radsvgimage-animations
 tags: animations, radsvgimage
 published: True

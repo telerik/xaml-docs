@@ -2,6 +2,7 @@
 title: Crystal Theme
 page_title: Crystal Theme
 description: This article provides an overview of the Crystal theme from the UI for WPF suite.
+components: ["general"]
 slug: common-styling-appearance-crystal-theme
 tags: crystal,theme,glyphs,fontsize,fontfamily,cornerradius
 published: True

@@ -2,6 +2,7 @@
 title: CurrentCulture Format Settings are not respected
 page_title: CurrentCulture Format Settings are not respected
 description: Learn which property of Telerik's {{ site.framework_name }} DataGrid will enable you to control whether the CurrentCulture or the Language are respected.
+components: ["gridview"]
 slug: gridview-troubleshooting-apply-currentculture
 tags: currentculture,format,settings,are,not,respected
 published: True

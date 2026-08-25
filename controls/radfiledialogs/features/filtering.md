@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering
 description: This article describes the filter functionality of the RadOpenFileDialog and RadSaveFileDialog.
+components: ["filedialogs"]
 slug: radfiledialogs-features-filtering
 tags: filtering,features,radopenfiledialog,radsavefiledialog
 published: True

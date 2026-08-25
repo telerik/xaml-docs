@@ -2,6 +2,7 @@
 title: Label
 page_title: Label
 description: "The embedded label feature of RadWatermarkTextBox allows you to display additional information about the entered text."
+components: ["watermarktextbox"]
 slug: radwatermarktextbox-features-label
 tags: label, embedded
 published: True

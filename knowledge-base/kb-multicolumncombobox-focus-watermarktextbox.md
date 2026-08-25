@@ -1,6 +1,7 @@
 ---
 title: Focus the RadWatermakTextBox Element of RadMultiColumnComboBox
 description: This article will show you how to focus the RadWatermarkTextBox element of RadMultiColumnComboBox.
+components: ["multicolumncombobox"]
 page_title: Focus the Input Control of RadMultiColumnComboBox
 type: how-to
 slug: kb-multicolumncombobox-focus-radwatermarktextbox

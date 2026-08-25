@@ -2,6 +2,7 @@
 title: ItemContainerStyle
 page_title: ItemContainerStyle
 description: This article describes the ItemContainerStyle property of the RadTreeView.
+components: ["treeview"]
 slug: radtreeview-styling-and-appearance-item-container-style
 tags: itemcontainerstyle
 published: True

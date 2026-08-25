@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Introduction, Getting Started.
+components: ["chartview"]
 slug: radchartview-introduction
 tags: introduction, getting, started
 published: True

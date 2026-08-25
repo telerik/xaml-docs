@@ -1,6 +1,7 @@
 ---
 title: Enabling Keyboard Shortcuts for RadMenu
 description: Learn how to implement keyboard shortcuts for RadMenu items in WPF applications, ensuring functionality across the entire application window.
+components: ["menu"]
 type: how-to
 page_title: How to Add Keyboard Shortcuts to RadMenu Items
 slug: kb-menu-enable-keyboard-shortcuts

@@ -2,6 +2,7 @@
 title: Angles
 page_title: Angles
 description: This article provides information about the angles functionality of RadCircularProgressBar control.
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-angles
 tags: angles, radcircularprogressbar angles
 published: True

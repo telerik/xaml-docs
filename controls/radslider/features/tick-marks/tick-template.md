@@ -2,6 +2,7 @@
 title: Tick template
 page_title: Tick template
 description: Check our &quot;Tick template&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+components: ["slider"]
 slug: radslider-tick-template
 tags: tick,template
 published: True

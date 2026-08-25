@@ -2,6 +2,7 @@
 title: Selection Box Template
 page_title: Selection Box Template
 description: The SelectionBoxTemplate of RadComboBox allows you to define a DataTemplate for the selected item.
+components: ["combobox"]
 slug: radcombobox-populating-with-data-selectionbox
 tags: selectionboxtemplate
 published: True

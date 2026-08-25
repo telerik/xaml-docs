@@ -2,6 +2,7 @@
 title: Animation
 page_title: Animation
 description: This article shows how to modify of remove the default animations of the RadTreeView items.
+components: ["treeview"]
 slug: radtreeview-features-animation
 tags: mouse,animation
 published: True

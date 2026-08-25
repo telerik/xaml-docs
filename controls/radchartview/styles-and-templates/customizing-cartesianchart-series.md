@@ -2,6 +2,7 @@
 title: Customizing CartesianChart Series
 page_title: Customizing CartesianChart Series
 description: Check our &quot;Customizing CartesianChart Series&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-styles-and-templates-customizing-cartesianchart-series
 tags: customizing,cartesianchart,series
 published: True

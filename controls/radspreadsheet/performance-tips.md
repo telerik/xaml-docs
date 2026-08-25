@@ -2,6 +2,7 @@
 title: Performance Tips
 page_title: Performance Tips
 description: Check our &quot;Performance Tips&quot; documentation article for the RadSpreadsheet WPF control.
+components: ["spreadsheet"]
 slug: spreadsheet-performance-tips
 tags: ui,performance,tips,tricks
 published: True

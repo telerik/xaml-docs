@@ -2,6 +2,7 @@
 title: Styling Column Editor
 page_title: Styling Column Editor
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to apply an appropriate style to a column editor. 
+components: ["gridview"]
  tyling Column Editor
 slug: radgridview-styling-column-editor
 tags: styling,column,editor

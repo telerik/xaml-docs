@@ -2,6 +2,7 @@
 title: Upgrade API Analyzer tool
 page_title: How to Use the Upgrade API Analyzer
 description: How to use the Upgrade API Analyzer. 
+components: ["general"]
 slug: upgrade-api-analyzer
 tags: api, analyzer, upgrade
 published: True

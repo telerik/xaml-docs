@@ -2,6 +2,7 @@
 title: Copying
 page_title: Copying
 description: Check our &quot;Copying&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-copying
 tags: copying
 published: True

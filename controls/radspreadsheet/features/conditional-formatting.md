@@ -5,6 +5,7 @@ slug: radspreadsheet-features-conditional-formatting
 tags: conditional, formatting, xlsx, rule
 published: True
 position: 3
+components: ["spreadsheet"]
 ---
 
 # Conditional Formatting

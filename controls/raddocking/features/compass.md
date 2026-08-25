@@ -2,6 +2,7 @@
 title: Compass
 page_title: Compass
 description: This article describes the Compass and RootCompass elements, which guide the user while the panes are rearranged.
+components: ["docking"]
 slug: raddocking-features-compass
 tags: compass
 published: True

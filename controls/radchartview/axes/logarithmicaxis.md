@@ -2,6 +2,7 @@
 title: Logarithmic Axis
 page_title: Logarithmic Axis
 description: Check our &quot;Logarithmic Axis&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-logarithmicaxis
 tags: logarithmic,axis
 published: True

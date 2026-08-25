@@ -2,6 +2,7 @@
 title: Drag and Drop
 page_title: Drag and Drop
 description: Check our &quot;Drag and Drop&quot; documentation article for the RadOfficeNavigationBar control.
+components: ["officenavigationbar"]
 slug: radofficenavigationbar-drag-drop
 tags: drag and drop, drag, drop, radofficenavigationbar
 published: True

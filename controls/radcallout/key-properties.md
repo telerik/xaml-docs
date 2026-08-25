@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: This article lists and explains the events exposed by the RadCallout control.
+components: ["callout"]
 slug: radcallout-key-properties
 tags: radcallout, key, property, properties
 published: True

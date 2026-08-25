@@ -2,6 +2,7 @@
 title: Get the Resource of the Clicked Slot/Appointment
 page_title: Get the Resource of the Clicked Slot/Appointment
 description: Check our &quot;Get the Resource of the Clicked Slot/Appointment&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-howto-get-resource-from-clicked-slot
 tags: get,the,resource,of,the,clicked,slot/appointment
 published: True

@@ -2,6 +2,7 @@
 title: Getting Start with RadTreeMap
 page_title: Getting Start with RadTreeMap
 description: Check our &quot;Getting Start with RadTreeMap&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
+components: ["treemapandpivotmap"]
 slug: radtreemap-getting-started-treemap
 tags: getting-started, treemap
 published: True

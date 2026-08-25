@@ -2,6 +2,7 @@
 title: Implement Custom Map Provider
 page_title: Implement Custom Map Provider
 description: Check our &quot;Implement Custom Map Provider&quot; documentation article for the RadMap control.
+components: ["map"]
 slug: radmap-howto-custom-provider
 tags: implement,custom,map,provider
 published: True

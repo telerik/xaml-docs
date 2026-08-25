@@ -2,6 +2,7 @@
 title: Interact with the User before the Page Changes
 page_title: Interact with the User before the Page Changes
 description: Check our &quot;Interact with the User before the Page Changes&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
+components: ["datapager"]
 slug: raddatapager-how-to-interact-with-with-user-before-page-changes
 tags: interact,with,the,user,before,the,page,changes
 published: True

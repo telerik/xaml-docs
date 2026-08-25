@@ -2,6 +2,7 @@
 title: Shape Appearance
 page_title: Shape Appearance
 description: Check our &quot;Shape Appearance&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-shape-appearance
 tags: shape,appearance
 published: True

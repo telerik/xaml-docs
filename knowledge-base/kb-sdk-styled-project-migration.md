@@ -1,6 +1,7 @@
 ---
 title: How to Migrate a .NET Framework Project to SDK-Style
 description: Convert an existing Telerik UI for WPF .NET Framework project to SDK-style format and move packages.config dependencies to PackageReference.
+components: ["general"]
 type: how-to
 page_title: Migrate .NET Framework Project to SDK-Style
 slug: kb-sdk-styled-project-migration

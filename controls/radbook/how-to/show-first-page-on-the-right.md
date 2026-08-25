@@ -2,6 +2,7 @@
 title: Show First Page On The Right
 page_title: Show First Page On The Right
 description: Check our &quot;Show First Page On The Right&quot; documentation article for the RadBook {{ site.framework_name }} control.
+components: ["book"]
 slug: radbook-show-first-page-on-the-right
 tags: show,first,page,on,the,right
 published: True

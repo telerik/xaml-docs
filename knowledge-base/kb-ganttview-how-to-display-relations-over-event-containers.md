@@ -1,6 +1,7 @@
 ---
 title: How to Display Relations over Event Containers
 description: An article explaining how to position the relations arrows over the containers of the GanttView events.
+components: ["ganttview"]
 type: how-to
 page_title: Position the Event Containers under the GanttView Task Relations
 slug: kb-ganttview-how-to-display-relations-over-event-containers

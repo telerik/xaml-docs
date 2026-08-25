@@ -2,6 +2,7 @@
 title: Window Settings
 page_title: Window Settings
 description: Check our &quot;Window Settings&quot; documentation article for the RadSpellChecker WPF control.
+components: ["spellchecker"]
 slug: radspellchecker-window-settings
 tags: window,settings
 published: True

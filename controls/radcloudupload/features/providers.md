@@ -2,6 +2,7 @@
 title: Providers
 page_title: Providers
 description: Check our &quot;Providers&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-features-providers
 tags: providers
 published: True

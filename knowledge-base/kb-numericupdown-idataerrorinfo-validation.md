@@ -2,6 +2,7 @@
 title: RadNumericUpDown Validation Using IDataErrorInfo Interface
 page_title: Validation for RadNumericUpDown Using the IDataErrorInfo Interface
 description: This article shows how to achieve validation for the RadNumericUpDown control using the IDataErrorInfo interface.
+components: ["numericupdown"]
 type: how-to
 slug: kb-numericupdown-validation-idataerrorinfo
 position: 0

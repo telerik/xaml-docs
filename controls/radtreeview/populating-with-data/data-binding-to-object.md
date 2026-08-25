@@ -2,6 +2,7 @@
 title: Binding to Object
 page_title: Binding to Object
 description: Check our &quot;Binding to Object&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-populating-with-data-data-binding-to-object
 tags: binding,to,object
 published: True

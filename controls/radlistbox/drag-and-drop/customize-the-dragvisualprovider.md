@@ -2,6 +2,7 @@
 title: How to customize the DragVisualProvider
 page_title: How to customize the DragVisualProvider
 description: Check our &quot;How to customize the DragVisualProvider&quot; documentation article for the RadListBox {{ site.framework_name }} control.
+components: ["listbox"]
 slug: radlistbox-styles-and-templates-customize-the-dragvisualprovider
 tags: how,to,customize,the,dragvisualprovider
 published: True

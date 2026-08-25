@@ -2,6 +2,7 @@
 title: Watermark
 page_title: Watermark
 description: The watermark of RadAutoSuggestBox shows when there is not text entered into the TextBox part of the control.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-features-watermark
 tags: watermark,placeholder,support
 published: True

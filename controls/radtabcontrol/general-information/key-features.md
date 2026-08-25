@@ -2,6 +2,7 @@
 title: Key Features
 page_title: Key Features
 description: Check our &quot;Key Features&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-key-features
 tags: key,features
 published: True

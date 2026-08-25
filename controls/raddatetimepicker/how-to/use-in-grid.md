@@ -2,6 +2,7 @@
 title: How to use RadDateTimePicker in a Grid
 page_title: How to use RadDateTimePicker in a Grid
 description: Check our &quot;How to use RadDateTimePicker in a Grid&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-how-to-use-in-grid
 tags: how,to,use,raddatetimepicker,in,a,grid
 published: True

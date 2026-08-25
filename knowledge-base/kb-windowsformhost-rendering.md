@@ -1,6 +1,7 @@
 ---
 title: WinForms Host is Not Rendering if The RadRibbonView Panel is Collapsible
 description: "The content of RadRibbonView is not visible when the control is minimizable and WindowsFormsHost is used."
+components: ["general"]
 type: troubleshooting
 page_title: Render Windows Form Host when the RibbonView content is minimized
 slug: kb-ribbonview-window-host-rendering

@@ -1,6 +1,7 @@
 ---
 title: How to Set Theme's Color Variation in Design Time
 description: This article explains how to set he color variation of a given theme so that it is visible in the Visual Studio designer.
+components: ["general"]
 type: how-to
 page_title: View Theme Variation in the Visual Studio Designer
 slug: kb-themes-set-color-variation-design-time

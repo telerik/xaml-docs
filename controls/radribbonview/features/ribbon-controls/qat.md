@@ -2,6 +2,7 @@
 title: Quick Access Toolbar
 page_title: Quick Access Toolbar
 description: Check our &quot;Quick Access Toolbar&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-qat
 tags: quick,access,toolbar
 published: True

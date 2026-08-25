@@ -2,6 +2,7 @@
 title: Theming the Pane Header
 page_title: Theming the Pane Header
 description: Check our &quot;Theming the Pane Header&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-theming-pane-header
 tags: theming,the,pane,header
 published: True

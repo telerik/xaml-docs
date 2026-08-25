@@ -2,6 +2,7 @@
 title: Invert Axis Range
 page_title: Invert Axis Range
 description: Check our &quot;Inverse Axis Range&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-invert-axis
 tags: plot,mode
 published: True

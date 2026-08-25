@@ -1,6 +1,7 @@
 ---
 title: Keep Properties in a Separate Class from Your View Model, Which Should be Open for Modifications by the User
 description: This article will show you how to bind to properties in a separate class from your view model.
+components: ["general"]
 page_title: Properties Modifiable by the User that are Kept In a Separate Class from Your View Model
 type: how-to
 slug: kb-common-singleton-pattern-binding-to-properties

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article lists the most important features of the RadContextMenu control.
+components: ["contextmenu"]
 slug: contextmenu-overview1
 tags: overview
 published: True

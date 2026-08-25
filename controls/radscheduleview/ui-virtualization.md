@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization
 description: RadScheduleView for {{ site.framework_name}} supports UI virtualization in its group resource headers and appointments.
+components: ["scheduleview"]
 slug: radscheduleview-ui-virtualization
 tags: ui,virtualization, features,group,resources,headers,appointments
 published: True

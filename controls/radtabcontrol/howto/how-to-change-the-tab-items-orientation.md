@@ -2,6 +2,7 @@
 title: How to Change the Tab Items Orientation
 page_title: How to Change the Tab Items Orientation
 description: Check our &quot;How to Change the Tab Items Orientation&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-how-to-change-the-tab-items-orientation
 tags: how,to,change,the,tab,items,orientation
 published: True

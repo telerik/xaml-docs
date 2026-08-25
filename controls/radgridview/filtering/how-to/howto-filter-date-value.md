@@ -2,6 +2,7 @@
 title: Filter on Date and Time
 page_title: Filter on Date and Time
 description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to filter on both the date and time portion.
+components: ["gridview"]
 slug: gridview-filtering-howto-filter-date-time-value
 tags: filter,on,date,and,time
 published: True

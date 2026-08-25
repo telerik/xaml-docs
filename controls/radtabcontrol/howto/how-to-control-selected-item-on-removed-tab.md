@@ -2,6 +2,7 @@
 title: How to Control the Selection When the SelectedItem is Removed
 page_title: How to Control the Selection When the SelectedItem is Removed
 description: Check our &quot;How to Control the Selection When the SelectedItem is Removed&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-how-to-control-selected-item-on-removed-tab
 tags: how,to,control,the,selection,when,the,selecteditem,is,removed
 published: True

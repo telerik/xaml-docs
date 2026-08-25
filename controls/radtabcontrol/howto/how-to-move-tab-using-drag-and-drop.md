@@ -2,6 +2,7 @@
 title: How to Move Tabs Using Drag and Drop
 page_title: How to Move Tabs Using Drag and Drop
 description: Check our &quot;How to Move Tabs Using Drag and Drop&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-how-to-move-tab-using-drag-and-drop
 tags: how,to,move,tabs,using,drag,and,drop
 published: True

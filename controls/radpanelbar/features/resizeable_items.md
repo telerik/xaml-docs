@@ -2,6 +2,7 @@
 title: Resizing Items
 page_title: Resize panel bar items
 description: This article provides information on how to resize the panel bar items.
+components: ["panelbar"]
 slug: radpanelbar-features-resize-items
 tags: resize, items, panelbar resize item
 published: True

@@ -2,6 +2,7 @@
 title: Non-Breaking Spaces
 page_title: Non-Breaking Spaces
 description: Learn how you can work non-breaking spaces in RadRichTextBox for {{ site.framework_name }}.
+components: ["richtextbox"]
 slug: radrichtextbox-features-non-breaking-spaces
 tags: space, nbsp, non-breaking, insert
 published: True

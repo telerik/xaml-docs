@@ -2,6 +2,7 @@
 title: Printing
 page_title: Printing
 description: Check our &quot;Printing&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-features-printing
 tags: printing
 published: True

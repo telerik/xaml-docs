@@ -2,6 +2,7 @@
 title: PointSeries3D
 page_title: PointSeries3D
 description: Check our &quot;PointSeries3D&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
+components: ["chartview3d"]
 slug: radchartview3d-pointseries3d
 tags: axes, 3d, chartview, pointseries, sphere
 published: True

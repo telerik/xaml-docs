@@ -1,6 +1,7 @@
 ---
 title: Display Custom Error Message in RadMaskedInput
 description: Implement custom validation by adding a ValidationError in code.
+components: ["maskedinput"]
 type: how-to
 page_title: Implement Custom Validation Mechanism
 slug: kb-maskedinput-manual-validation

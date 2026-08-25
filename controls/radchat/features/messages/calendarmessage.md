@@ -2,6 +2,7 @@
 title: CalendarMessage
 page_title: CalendarMessage
 description: Check our &quot;CalendarMessage&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-items-calendarmessage
 tags: messages,calendarmessage
 published: True

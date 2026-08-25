@@ -2,6 +2,7 @@
 title: Customize a ContainerShape
 page_title: Customize a ContainerShape
 description: Check our &quot;Customize a ContainerShape&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-howto-customize-containers
 tags: customize,a,containershape
 published: True

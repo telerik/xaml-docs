@@ -2,6 +2,7 @@
 title: RadarLineSeries
 page_title: RadarLineSeries
 description: Check our &quot;RadarLineSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-radarlineseries
 tags: radarlineseries
 published: True

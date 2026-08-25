@@ -1,6 +1,7 @@
 ---
 title: Style the Column Resizers
 description: Apply a style to the thumbs responsible for resizing the columns.
+components: ["gridview"]
 type: how-to
 page_title: Style the Thumbs for Resizing the Columns
 slug: kb-gridview-style-column-resizer

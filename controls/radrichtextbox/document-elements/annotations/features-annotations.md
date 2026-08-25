@@ -2,6 +2,7 @@
 title: Annotations Overview
 page_title: Annotations Overview
 description: Check our &quot;Annotations Overview&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-annotations
 tags: annotations,overview
 published: True

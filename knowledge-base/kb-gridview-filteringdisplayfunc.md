@@ -1,6 +1,7 @@
 ---
 title: Customize the Distinct Values of a Column When Filtering
 description: This article will show you how to customize the distinct values of a column when opening the filtering control.
+components: ["gridview"]
 page_title: Modify the Distinct Values of a Column of RadGridView
 type: how-to
 slug: kb-gridview-filteringdisplayfunc

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: RadFluidContentControl exposes an additional StateChanged event that allows you to listen for changes in the current state of the control.
+components: ["fluidcontentcontrol"]
 slug: fluidcontentcontrol-events
 tags: events
 published: True

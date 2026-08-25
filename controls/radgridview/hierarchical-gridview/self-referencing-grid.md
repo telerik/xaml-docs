@@ -2,6 +2,7 @@
 title: Self-Referencing GridView
 page_title: Self-Referencing GridView
 description: Learn how you can build a self-referencing hierarchy in Telerik's {{ site.framework_name }} DataGrid when the hierarchical data is build from one type of items.
+components: ["gridview"]
 slug: gridview-self-referencing-grid
 tags: self-referencing,gridview
 published: True

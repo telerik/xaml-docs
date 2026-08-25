@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadPersistenceFramework {{ site.framework_name }} control.
+components: ["persistenceframework"]
 sdk_example: true
 slug: radpersistenceframework-sdk-examples
 tags: sdk,examples

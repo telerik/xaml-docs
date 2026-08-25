@@ -2,6 +2,7 @@
 title: Manipulating Annotations
 page_title: Manipulating Annotations
 description: Check our &quot;Manipulating Annotations&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-manipulating-annotations
 tags: manipulating,annotations
 published: True

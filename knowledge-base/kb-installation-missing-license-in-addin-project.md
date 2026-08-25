@@ -1,6 +1,7 @@
 ---
 title: Telerik License Not Found Dialog Shown When UI for WPF Used in Addin Project
 description: The invalid or missing Telerik license key warning is displayed in an addin project, like Excel/Word VSTO, Revit, AutoCAD and others.
+components: ["installerandvsextensions"]
 page_title: Telerik License Key Invalid or Missing Message Box and Watermark Displayed in a Excel VSTO, Revit, AutoCAD and other Add-in/Plugin Projects
 type: troubleshooting
 slug: kb-installation-missing-license-addin-project

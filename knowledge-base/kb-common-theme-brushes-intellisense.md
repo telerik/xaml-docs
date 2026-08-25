@@ -1,6 +1,7 @@
 ---
 title: Themes Brushes Intellisense
 description: This article will show you how to add intellisense when using the brushes of the themes in XAML.
+components: ["general"]
 page_title: Intellisense when Using the Themes' Brushes
 type: how-to
 slug: kb-common-theme-brushes-intellisense

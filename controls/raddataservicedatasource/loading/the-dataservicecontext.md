@@ -2,6 +2,7 @@
 title: The DataServiceContext
 page_title: The DataServiceContext
 description: Check our &quot;The DataServiceContext&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-loading-the-dataservicecontext
 tags: the,dataservicecontext
 published: True

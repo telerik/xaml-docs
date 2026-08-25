@@ -2,6 +2,7 @@
 title: Implement Drag and Drop Between TreeViews
 page_title: Implement Drag and Drop Between TreeViews
 description: Check our &quot;Implement Drag and Drop Between TreeViews&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-implement-drag-and-drop-between-two-treeviews
 tags: implement,drag,and,drop,between,treeviews
 published: True

@@ -1,6 +1,7 @@
 ---
 title: 2025 Releases
 description: Handle the changes in the 2025 releases of the Telerik UI for WPF components.
+components: ["general"]
 page_title: Breaking Changes in Telerik UI for WPF 2025
 slug: breaking-changes-2025-releases
 position: 0

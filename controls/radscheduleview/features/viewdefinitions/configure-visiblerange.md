@@ -2,6 +2,7 @@
 title: How to configure the VisibleRange
 page_title: How to configure the VisibleRange
 description: Check our &quot;How to configure the VisibleRange&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-viewdefinitions-configure-visiblerange
 tags: how,to,configure,the,visiblerange
 published: True

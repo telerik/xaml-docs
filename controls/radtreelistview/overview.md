@@ -2,6 +2,7 @@
 title: Overview
 page_title: RadTreeListView Overview
 description: Learn what Telerik UI for WPF RadTreeListView does, when to use it, and which features to explore first.
+components: ["treelistview"]
 slug: radtreelistview-overview
 tags: overview
 published: True

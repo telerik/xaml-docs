@@ -2,6 +2,7 @@
 title: Create Compass
 page_title: Create Compass
 description: Check our &quot;Create Compass&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: chart-customize-radialgauge-layout
 tags: create,compass
 published: True

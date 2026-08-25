@@ -1,6 +1,7 @@
 ---
 title: XamlParseException When Using EventToCommandBehavior with the IsEnabledChanged Event
 description: This article describes the issue where ArgumentException or XamlParseException occurs when using EventToCommandBehavior with the IsEnabledChanged Event
+components: ["general"]
 type: troubleshooting
 page_title: Cannot Bind to the Target Method Error When Binding IsEnabledChanged Event to View Model Command
 slug: kb-eventtocommandbehavior-xamlparseexception-isenabledchanged

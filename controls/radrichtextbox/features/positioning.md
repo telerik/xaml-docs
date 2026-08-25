@@ -2,6 +2,7 @@
 title: Positioning
 page_title: Positioning
 description: Check our &quot;Positioning&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-positioning
 tags: positioning
 published: True

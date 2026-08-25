@@ -2,6 +2,7 @@
 title: Overview
 page_title: Row Details Overview
 description: Check our &quot;Overview&quot; documentation article for the RadGridView {{ site.framework_name }} control.
+components: ["gridview"]
 slug: radgridview-row-details-overview
 tags: overview
 published: True

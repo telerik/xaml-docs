@@ -2,6 +2,7 @@
 title: XAML Verification
 page_title: XAMLVerification
 description: This article shows how the default XAML verification works. 
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-xaml-verification
 tags: XAML
 published: True

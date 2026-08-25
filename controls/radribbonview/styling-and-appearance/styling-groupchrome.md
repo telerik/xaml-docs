@@ -2,6 +2,7 @@
 title: Styling the Ribbon GroupChrome
 page_title: Styling the Ribbon GroupChrome
 description: Check our &quot;Styling the Ribbon GroupChrome&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-groupchrome
 tags: styling,the,ribbon,groupchrome
 published: True

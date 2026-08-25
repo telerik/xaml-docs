@@ -2,6 +2,7 @@
 title: Show a Copyright Attribution Label in RadMap
 page_title: Display a Copyright Attribution Label
 description: This article showcases how to add a copyright attribution label
+components: ["map"]
 type: how-to
 slug: kb-map-copyright-label
 position: 0

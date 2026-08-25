@@ -2,6 +2,7 @@
 title: Switching Icons at Runtime
 page_title: Switching Icons at Runtime
 description: This article explains how to switch the icon set during runtime to go with the look and feel of your application.
+components: ["general"]
 slug: styling-apperance-switching-icons-at-runtime
 tags: switching,themes,icons,at,runtime
 published: True

@@ -2,6 +2,7 @@
 title: XAML
 page_title: XAML
 description: Check our &quot;XAML&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-xaml
 tags: XAML
 published: True

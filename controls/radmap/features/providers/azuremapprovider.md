@@ -2,6 +2,7 @@
 title: Azure Map Provider
 page_title: Azure Map Provider
 description: Check our &quot;Azure Map Provider&quot; documentation article for the RadMap WPF control.
+components: ["map"]
 slug: radmap-features-providers-azuremapprovider
 tags: azure, map, azuremap
 published: True

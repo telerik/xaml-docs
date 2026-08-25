@@ -2,6 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: This article lists the breaking changes introduced in the RadChat for WPF component through the releases.
+components: ["chat"]
 slug: chat-breaking-changes
 tags: breaking, changes, backward,compatibility
 published: True

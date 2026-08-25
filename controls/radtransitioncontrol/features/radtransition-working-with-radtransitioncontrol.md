@@ -2,6 +2,7 @@
 title: Working with the RadTransitionControl
 page_title: Working with the RadTransitionControl
 description: Check our &quot;Working with the RadTransitionControl&quot; documentation article for the RadTransitionControl {{ site.framework_name }} control.
+components: ["transitioncontrol"]
 slug: radtransition-features-working-with-radtransitioncontrol
 tags: working,with,the,radtransitioncontrol
 published: True

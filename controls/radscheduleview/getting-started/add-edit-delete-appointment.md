@@ -2,6 +2,7 @@
 title: Understanding Appointments
 page_title: Understanding Appointments
 description: Check our &quot;Understanding Appointments&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-getting-started-add-edit-delete-appointment
 tags: understanding,appointments
 published: True

@@ -2,6 +2,7 @@
 title: To Which Assemblies do I Have to Add Reference in my Project
 page_title: To Which Assemblies do I Have to Add Reference in my Project
 description: Check our &quot;To Which Assemblies do I Have to Add Reference in my Project&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-needed-assemblies
 tags: to,which,assemblies,do,i,have,to,add,reference,in,my,project
 published: True

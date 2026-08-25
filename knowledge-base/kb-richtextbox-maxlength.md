@@ -1,6 +1,7 @@
 ---
 title: How to implement a MaxLength on RichTextBox
 description: Learn how to limit the number of characters in a document.
+components: ["richtextbox"]
 type: how-to
 page_title: Restrict number of characters in RadRichTextBox
 slug: kb-richtextbox-maxlength

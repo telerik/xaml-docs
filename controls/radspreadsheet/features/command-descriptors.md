@@ -2,6 +2,7 @@
 title: Command Descriptors
 page_title: Command Descriptors
 description: Describes how you can override the default command descriptors of RadSpreadsheet for WPF and create custom commands.
+components: ["spreadsheet"]
 slug: radspreadsheet-command-descriptors
 tags: command, descriptors
 published: True

@@ -2,6 +2,7 @@
 title: Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item
 page_title: Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item
 description: Check our &quot;Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-get-previous-next-parent-sibling-node
 tags: get,previous,,next,,parent,and,sibling,node,of,a,specific,treeview,item
 published: True

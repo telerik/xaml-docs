@@ -2,6 +2,7 @@
 title: Use Commands with the RadContextMenu
 page_title: Use Commands with the RadContextMenu
 description: Check our &quot;Use Commands with the RadContextMenu&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-how-to-use-commands-with-the-radcontextmenu
 tags: use,commands,with,the,radcontextmenu
 published: True

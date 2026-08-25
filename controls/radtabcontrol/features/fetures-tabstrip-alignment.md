@@ -2,6 +2,7 @@
 title: Tabstrip Alignment
 page_title: Tabstrip Alignment
 description: Check our &quot;Tabstrip alignment&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-fetures-tabstrip-alignment
 tags: tabstrip,alignment
 published: True

@@ -2,8 +2,9 @@
 title: Visual Structure
 page_title: Visual Structure
 description: The article demonstrates the visual structure of the RadCallout.
+components: ["callout"]
 slug: radcallout-visual-structure
-tags: visual, structure, radtaskboard
+tags: visual, structure, callout
 published: True
 position: 1
 ---

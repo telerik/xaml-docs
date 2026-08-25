@@ -2,6 +2,7 @@
 title: Content Control Properties Dialog
 page_title: Content Control Properties Dialog
 description: Check our &quot;Content Controls Properties Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-content-controls
 tags: link,insert
 published: True

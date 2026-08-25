@@ -2,6 +2,7 @@
 title: Drag and Drop from RadGridView to RadDiagram
 page_title: Drag and Drop from RadGridView to RadDiagram
 description: Check out our tutorial describing how to implement a drag/drop operation from a data-bound RadGridView to a RadDiagram control using DragDropManager.
+components: ["gridview"]
 slug: drag-and-drop-from-radgridview-to-raddiagram
 tags: drag,and,drop,diagram
 published: True

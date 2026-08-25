@@ -1,6 +1,7 @@
 ---
 title: Could Not Load File or Assembly Error in WPF Demos Application
 description: Resolve the "Could not load file or assembly" error when running an example from the Telerik UI for WPF Demos application.
+components: ["installerandvsextensions"]
 type: troubleshooting
 page_title: Fix Could Not Load File or Assembly Error in WPF Demos
 slug: kb-installation-could-not-load-file-or-assembly-demos

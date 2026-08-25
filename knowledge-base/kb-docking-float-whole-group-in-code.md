@@ -1,6 +1,7 @@
 ---
 title: How to Float a PaneGroup in Code-Behind
 description: This article demonstrates how to float a RadPaneGroup via code.
+components: ["docking"]
 type: how-to
 page_title: Undock a Whole PaneGroup Programmatically
 slug: kb-docking-float-whole-group-in-code

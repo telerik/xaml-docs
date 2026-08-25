@@ -2,6 +2,7 @@
 title: Special Slots
 page_title: Special Slots
 description: Check our &quot;Special Slots&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-specialslots
 tags: special,slots
 published: True

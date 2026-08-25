@@ -2,6 +2,7 @@
 title: StepLineSeries
 page_title: StepLineSeries
 description: This article describes the StepLineSeries component from the RadChartView suite.
+components: ["chartview"]
 slug: radchartview-series-steplineseries
 tags: steplineseries
 published: True

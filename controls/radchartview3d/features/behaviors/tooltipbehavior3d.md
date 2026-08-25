@@ -2,6 +2,7 @@
 title: Tooltip
 page_title: Tooltip
 description: Check our &quot;Tooltip&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
+components: ["chartview3d"]
 slug: radchartview3d-behaviors-tooltip
 tags: 3d, chartview, tooltip, behaviors, chart3dtooltipbehavior
 published: True

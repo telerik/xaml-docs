@@ -2,6 +2,7 @@
 title: Style Exported ExcelML
 page_title: Style Exported ExcelML
 description: Read this article to learn how to style exported ExcelML type of data from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-export-excelml
 tags: exportformat.excelml
 published: True

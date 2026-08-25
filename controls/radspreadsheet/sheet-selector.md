@@ -2,6 +2,7 @@
 title: Sheet Selector
 page_title: Sheet (Page) Selector
 description: Check our &quot;Sheet Selector&quot; documentation article for the RadSpreadsheet WPF control.
+components: ["spreadsheet"]
 slug: radspreadsheet-sheet-selector
 tags: selector,sheet, pages
 published: True

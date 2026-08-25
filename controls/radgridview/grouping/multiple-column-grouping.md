@@ -2,6 +2,7 @@
 title: Multiple-column Grouping
 page_title: Multiple-Column Grouping
 description: Learn how to enable multiple-column grouping in Telerik's {{ site.framework_name }} DataGrid by dragging and dropping more than one column headers into the grouping area. 
+components: ["gridview"]
 slug: gridview-multiple-column-grouping
 tags: multiple-column,grouping
 published: True

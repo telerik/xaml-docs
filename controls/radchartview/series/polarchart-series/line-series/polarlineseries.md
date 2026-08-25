@@ -2,6 +2,7 @@
 title: PolarLineSeries
 page_title: PolarLineSeries
 description: Check our &quot;PolarLineSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-polarlineseries
 tags: polarlineseries
 published: True

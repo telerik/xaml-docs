@@ -2,6 +2,7 @@
 title: Managing Data
 page_title: Managing Data
 description: Check our &quot;Managing Data&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-managing-data
 tags: managing,data
 published: True

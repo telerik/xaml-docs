@@ -2,6 +2,7 @@
 title: Downloading Product Files
 page_title: Downloading Product Files
 description: This article shows where to find the Telerik UI for WPF downloads.
+components: ["general"]
 slug: download-product-files-wpf
 tags: download, files, installation
 published: True

@@ -2,6 +2,7 @@
 title: Tiles Cache
 page_title: Tiles Cache
 description: RadMap allows you to cache the tile images downloaded by the map provider.
+components: ["map"]
 slug: radmap-features-providers-tiles-cache
 tags: providers,overview,cache,caching
 published: True

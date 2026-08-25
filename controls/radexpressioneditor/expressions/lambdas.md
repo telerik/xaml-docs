@@ -2,6 +2,7 @@
 title: Lambdas
 page_title: Lambdas
 description: Check our &quot;Lambdas&quot; documentation article for the RadExpressionEditor {{ site.framework_name }} control.
+components: ["expressioneditor"]
 slug: radexpressioneditor-expressions-lambdas
 tags: lambdas
 published: True

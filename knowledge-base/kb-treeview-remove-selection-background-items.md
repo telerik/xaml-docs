@@ -1,6 +1,7 @@
 ---
 title: How to Remove or Change the Selected and Highlighted Backgrounds of the RadTreeViewItems
 description: An article explaining how to remove or change the selection and mouse-over backgrounds of the RadTreeViewItems.
+components: ["treeview"]
 type: how-to
 page_title: Hide or Modify the Selection and Highlight Background of the TreeView Items
 slug: kb-treeview-remove-selection-background-items

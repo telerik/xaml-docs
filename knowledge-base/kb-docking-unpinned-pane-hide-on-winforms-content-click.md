@@ -1,6 +1,7 @@
 ---
 title: Unpinned RadPane with WindowsFormsHost Hides on Click
 description: This article describes a scenario where an unpinned RadPane containing a HwndHost content (like WinForms view) auto-hides when clicked, and provides a solution to prevent this behavior.
+components: ["docking"]
 type: troubleshooting
 page_title: Prevent Unpinned RadPane with HwndHost from Hiding on Click in WPF
 slug: kb-docking-unpinned-pane-hide-on-winforms-content-click

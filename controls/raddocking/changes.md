@@ -2,6 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: Check our &quot;Breaking Changes&quot; documentation article for the RadDocking WPF control.
+components: ["docking"]
 slug: raddocking-changes
 tags: changes, breaking changes
 published: True

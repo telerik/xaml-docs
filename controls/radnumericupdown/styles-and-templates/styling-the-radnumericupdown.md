@@ -2,6 +2,7 @@
 title: Styling the RadNumericUpDown
 page_title: Styling the RadNumericUpDown
 description: This article demonstrates how to Style the RadNumericUpDown control. 
+components: ["numericupdown"]
 slug: styling-the-radnumericupdown
 tags: styling, radnumericupdown
 published: True

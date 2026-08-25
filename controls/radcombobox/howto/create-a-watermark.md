@@ -2,6 +2,7 @@
 title: Show an Empty Text Placeholder
 page_title: Show an Empty Text Placeholder
 description: This article demonstrates how to customize what is shown when there is no selection in a RadComboBox.
+components: ["combobox"]
 slug: radcombobox-create_a_watermark
 tags: create,a,watermark
 published: True

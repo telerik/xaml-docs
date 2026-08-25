@@ -2,6 +2,7 @@
 title: ScatterBubbleSeries
 page_title: ScatterBubbleSeries
 description: Check our &quot;ScatterBubbleSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-scatterbubbleseries
 tags: ScatterBubbleSeries
 published: True

@@ -2,6 +2,7 @@
 title: Custom Vector Tile Provider
 page_title: Custom Vector Tile Provider
 description: Check our &quot;Custom Vector Tile Provider&quot; vector tiles documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-custom-vector-tile-provider
 tags: custom,tile,provider,arcgis
 published: True

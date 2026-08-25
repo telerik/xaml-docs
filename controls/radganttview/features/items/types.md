@@ -2,6 +2,7 @@
 title: Types of Items
 page_title: Types of Items
 description: Check our &quot;Types of Items&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-items-types
 tags: types,of,items
 published: True

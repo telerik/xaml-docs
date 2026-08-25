@@ -2,6 +2,7 @@
 title: Folding Taggers
 page_title: Folding Taggers
 description: This article explains the use of folding taggers in the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-folding-taggers
 tags: folding,taggers,radsyntaxeditor
 position: 2

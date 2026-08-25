@@ -2,6 +2,7 @@
 title: Exception with Sum AggregateFuntion
 page_title: Exception with Sum AggregateFuntion
 description: Learn how to troubleshoot an error occuring when you declare an aggregate SumFunction for a column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-troubleshooting-sum-aggregate
 tags: exception,with,sum,aggregatefuntion
 published: True

@@ -2,6 +2,7 @@
 title: Conversion API
 page_title: Conversion API
 description: Check our &quot;Conversion API&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-conversion
 tags: conversion,api
 published: True

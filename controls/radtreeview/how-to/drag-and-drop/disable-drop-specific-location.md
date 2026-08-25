@@ -2,6 +2,7 @@
 title: Disable Drop at Specific Location
 page_title: Disable Drop at Specific Location
 description: Check our &quot;Disable Drop at Specific Location&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-disable-drop-specific-location
 tags: disable,drop,at,specific,location
 published: True

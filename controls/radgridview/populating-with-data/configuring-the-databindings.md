@@ -2,6 +2,7 @@
 title: Configure the Data Bindings
 page_title: Configure the Data Bindings
 description: Read this article to understand how to bind Telerik's {{ site.framework_name }} DataGrid to a collection of items and configure the data bindings for its columns.
+components: ["gridview"]
 slug: gridview-configuring-the-databindings
 tags: configure,the,data,bindings
 published: True

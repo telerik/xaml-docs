@@ -2,6 +2,7 @@
 title: Styling TileList
 page_title: Styling TileList
 description: Check our &quot;Styling TileList&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+components: ["tilelist"]
 slug: tilelist-styling
 tags: styling
 published: True

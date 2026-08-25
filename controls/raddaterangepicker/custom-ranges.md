@@ -2,6 +2,7 @@
 title: Custom Date Ranges
 page_title: Custom Date Ranges
 description: Check our &quot;Custom Date Ranges&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-custom-date-ranges
 tags: daterangepicker,custom,ranges,dates,disabled,readonly
 published: True

@@ -2,6 +2,7 @@
 title: Templates Structure
 page_title: Templates Structure
 description: Check our &quot;Templates Structure&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddataform-styles-and-templates-templates-structure
 tags: templates,structure
 published: True

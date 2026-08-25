@@ -1,6 +1,7 @@
 ---
 title: License .licx File Appeared in the Project Directory
 description: A license.licx file is automatically generated on build and added in the Properties folder of the WPF project.
+components: ["installerandvsextensions"]
 page_title: License.licx File is Automatically Generated and Could Bring Compile Time Errors
 type: troubleshooting
 slug: kb-installation-license-licx-file

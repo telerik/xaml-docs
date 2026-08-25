@@ -5,6 +5,7 @@ slug: radspreadsheet-features-comments
 tags: thread, comments, xlsx, 
 published: True
 position: 18
+components: ["spreadsheet"]
 ---
 
 # Comments

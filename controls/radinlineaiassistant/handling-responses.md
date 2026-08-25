@@ -2,6 +2,7 @@
 title: Handling Responses
 page_title: Handling Responses
 description: Check our &quot;Handling Responses&quot; documentation article for the RadInlineAIAssistant control.
+components: ["inlineaiassistant"]
 slug: radinlineaiassistant-handling-responses
 tags: responses, handling responses, radinlineaiassistant
 published: True

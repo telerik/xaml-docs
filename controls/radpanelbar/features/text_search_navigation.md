@@ -2,6 +2,7 @@
 title: Text Search Navigation
 page_title: Text Search Navigation
 description: Check our &quot;Overview&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
 slug: radpanelbar-features-text-search-navigation
 tags: text, search, navigation
 published: True

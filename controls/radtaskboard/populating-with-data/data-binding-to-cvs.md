@@ -2,6 +2,7 @@
 title: Binding to CollectionViewSource
 page_title: Binding to CollectionViewSource
 description: Check our &quot;Binding to CollectionViewSource&quot; documentation article for the RadTaskBoard {{ site.framework_name }} control.
+components: ["taskboard"]
 slug: radtaskboard-populating-with-data-data-binding-to-collectionviewsource
 tags: binding,to,collectionviewsource
 published: True

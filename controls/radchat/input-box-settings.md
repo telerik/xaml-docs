@@ -2,6 +2,7 @@
 title: Input Box Settings
 page_title: Input Box Settings
 description: See how to configure the input box (RadPromptInput) of RadChat for WPF
+components: ["chat"]
 slug: chat-input-box-settings
 tags: inputbox,promptinput,speech,text
 published: True

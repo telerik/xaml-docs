@@ -2,6 +2,7 @@
 title: Set HTTP access to SQL Server
 page_title: Set HTTP access to SQL Server
 description: Check our &quot;Set HTTP access to SQL Server&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-howto-set-http-access-to-sqlserver
 tags: set,http,access,to,sql,server
 published: True

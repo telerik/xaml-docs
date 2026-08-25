@@ -2,6 +2,7 @@
 title: Available Themes
 page_title: Available Themes
 description: Check out all available themes inside Telerik UI for {{ site.framework_name }} suite.
+components: ["general"]
 slug: common-styling-appearance-available-themes
 tags: themes, available
 published: True

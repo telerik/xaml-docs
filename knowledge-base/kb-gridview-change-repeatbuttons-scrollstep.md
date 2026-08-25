@@ -1,6 +1,7 @@
 ---
 title: Change GridView Scroll Step on ScrollViewer Click
 description: Change the default scrolling offset applied when you click on the scrollbar track.
+components: ["gridview"]
 type: how-to
 page_title: Scroll Manually on ScrollBar Track Click
 slug: kb-gridview-change-repeatbuttons-scrollstep 

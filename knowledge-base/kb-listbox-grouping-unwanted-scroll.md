@@ -1,6 +1,7 @@
 ---
 title: Prevent Scroll Jumping When Selecting an Item in a Grouping Scenario With ScrollViewer.CanContentScroll Set to False.
 description: This article shows how you can disable the jumping of the scroll when selecting an item in a grouping scenario with CanContentScroll set to False.
+components: ["listbox"]
 page_title: Disable Scroll Jumping in Grouping and ScrollViewer.CanContentScroll Set to False Scenario When Selecting an Item.
 type: troubleshooting
 slug: kb-listbox-grouping-unwanted-scroll

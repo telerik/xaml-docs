@@ -2,6 +2,7 @@
 title: States
 page_title: States
 description: This article provides information about the states of RadCircularProgressBar control.
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-states
 tags: states, indeterminate, determinate
 published: True

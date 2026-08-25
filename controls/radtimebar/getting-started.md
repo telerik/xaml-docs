@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This article explains how you can setup the RadTimeBar control in xaml or in code and also how you can integrate the RadSparkLine component with it. 
+components: ["timebar"]
 slug: radtimebar-getting-started
 tags: getting,started
 published: True

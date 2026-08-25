@@ -2,6 +2,7 @@
 title: Text Selection
 page_title: Text Selection
 description: Check our &quot;Text Selection&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-text-text-selection
 tags: text,selection
 published: True

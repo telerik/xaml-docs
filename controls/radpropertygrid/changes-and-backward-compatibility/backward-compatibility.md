@@ -2,6 +2,7 @@
 title: Backward Compatibility
 page_title: Backward Compatibility
 description: Check our &quot;Backward Compatibility&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-backward-compatibility
 tags: backward,compatibility
 published: True

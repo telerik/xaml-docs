@@ -2,6 +2,7 @@
 title: Configuration
 page_title: Configuration
 description: Check our &quot;Configuration&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-viewdefinitions-configuration
 tags: configuration
 published: True

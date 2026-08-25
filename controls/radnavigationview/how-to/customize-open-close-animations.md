@@ -2,6 +2,7 @@
 title: Customize Open/Close Animations
 page_title: Customize Open/Close Animations
 description: This article describes how the open and close animations of the NavigationPane can be customized.
+components: ["navigationview"]
 slug: radnavigationview-how-to-customize-open-close-animations
 tags: custom, open, close, animation, navigationpane
 published: True

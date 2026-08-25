@@ -2,6 +2,7 @@
 title: Display Trackball Info on Right Mouse Click
 page_title: Show RadCartesianChart Trackball when Right Mouse Button is Pressed
 description: How to display the ChartView trackball on right mouse button click.
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-display-trackball-right-click
 position: 0

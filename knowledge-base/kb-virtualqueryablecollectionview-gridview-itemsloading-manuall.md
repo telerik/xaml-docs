@@ -1,6 +1,7 @@
 ---
 title: Load items in the ItemsLoading event of VirtualQueryableCollectionView manually When Used in RadGridView
 description: Handle the VirtualQueryableCollectionView.ItemsLoading event in RadGridView for WPF to load data on demand, suitable for large data sources.
+components: ["gridview"]
 type: how-to
 page_title: How to Use VirtualQueryableCollectionView for On-Demand Data Loading in RadGridView
 slug: kb-virtualqueryablecollectionview-gridview-itemsloading-manuall

@@ -2,6 +2,7 @@
 title: Get the Column of the Corresponding Cell
 page_title: Get the Column of the Corresponding Cell
 description: Read this article to learn how to access the column of the corresponding cell when exporting data from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-troubleshooting-cell-column
 tags: column, corresponding, cell,
 published: True

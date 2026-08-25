@@ -2,6 +2,7 @@
 title: Consuming WCF Data Service
 page_title: Consuming WCF Data Service
 description: This article will demonstrate how to consume data from a WCF Data Service.
+components: ["general"]
 slug: consuming-data-ado-net-data-service
 tags: consuming,wcf,data,service
 published: True

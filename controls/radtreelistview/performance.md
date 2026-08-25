@@ -2,6 +2,7 @@
 title: Performance
 page_title: Performance
 description: Check our &quot;Performance&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-performance
 tags: performance
 published: True

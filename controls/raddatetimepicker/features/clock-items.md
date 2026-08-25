@@ -2,6 +2,7 @@
 title: Clock Items
 page_title: Clock Items
 description: Check our &quot;Clock Items&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-features-clock-items
 tags: clock,items
 published: True

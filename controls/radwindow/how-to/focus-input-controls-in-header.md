@@ -2,6 +2,7 @@
 title: Allow Hit Test on Controls in the Header
 page_title: Allow Hit Test on Controls in the Header
 description: Check our &quot;Focus Input Controls In Header&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-how-to-focus-input-controls-in-header
 tags: focus,input,controls,in,header
 published: True

@@ -2,6 +2,7 @@
 title: Enable Filtering in GridViewComboBoxColumn of RadGridView
 page_title: Make GridViewComboBoxColumn Editable and Allow Filtering
 description: How to turn on filtering of the ComboBox in GridViewComboBoxColumn part of Telerik RadGridView.
+components: ["gridview"]
 type: how-to
 slug: kb-gridview-comboboxcolumn-enable-filtering
 position: 0

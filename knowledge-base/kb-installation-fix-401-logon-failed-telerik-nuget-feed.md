@@ -1,6 +1,7 @@
 ---
 title: Error 401 (Logon failed) When Connecting to Telerik NuGet Feed
 description: Resolve the Error 401 (Logon failed) issue when authenticating to the Telerik NuGet feed.
+components: ["installerandvsextensions"]
 page_title: Fix Error 401 (Logon failed) for Telerik NuGet Feed
 type: troubleshooting
 slug: kb-installation-fix-401-logon-failed-telerik-nuget-feed

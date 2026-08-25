@@ -2,6 +2,7 @@
 title: Add a Breakpoints Margin
 page_title: Allow Creating Breakpoints in the RadSyntaxEditor
 description: This article explains how to create a margin to hold a collection of breakpoints to the RadSyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to
 slug: kb-syntaxeditor-how-to-add-breakpoints-margin
 position: 0

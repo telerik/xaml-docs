@@ -2,6 +2,7 @@
 title: Styling FilteringControl and FilteringDropDown
 page_title: Styling FilteringControl and FilteringDropDown
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the FilteringControl and FilteringDropDown elements.
+components: ["gridview"]
 slug: gridview-styling-filteringcontrol
 tags: styling,filteringcontrol
 published: True

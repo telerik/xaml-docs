@@ -2,6 +2,7 @@
 title: Customizing Drag Drop Behavior
 page_title: Customizing Drag Drop Behavior
 description: Check our &quot;Customizing Drag Drop Behavior&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-features-dragdrop-customizing-drag-drop-behavior
 tags: features,dragdropbehavior,custom
 published: True

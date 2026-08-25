@@ -2,6 +2,7 @@
 title: Useful Links
 page_title: Useful Links
 description: Check our &quot;Useful Links&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-how-to-useful-links
 tags: useful,links
 published: True

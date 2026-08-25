@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadPipsPager control.
+components: ["pipspager"]
 slug: radpipspager-overview
 tags: overview, radpipspager
 published: True

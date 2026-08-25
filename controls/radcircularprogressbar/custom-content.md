@@ -2,6 +2,7 @@
 title: Custom Content
 page_title: Custom Content
 description: This article will show you how to customize the content of RadCircularProgressBar control.
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-custom-content
 tags: custom content, radcircularprogressbar
 published: True

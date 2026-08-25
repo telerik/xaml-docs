@@ -1,6 +1,7 @@
 ---
 title: Add a Separator between Title and RibbonView for the RibbonWindow
 description: Create a custom separator for the title and the RibbonView of the RibbonWindow.
+components: ["ribbonview"]
 type: how-to
 page_title: Customize RadRibbonView - modify the ControlTemplate to add a separator between the title and the ribbon
 slug: kb-ribbonview-add-separator-between-title-and-ribbon-for-ribbonwindow

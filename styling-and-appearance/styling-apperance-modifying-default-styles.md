@@ -2,6 +2,7 @@
 title: Modifying Default Styles
 page_title: Modifying Default Styles
 description: How to modify default Telerik styles and create custom ones.
+components: ["general"]
 slug: styling-apperance-modifying-default-styles
 tags: modifying,default,styles
 published: True

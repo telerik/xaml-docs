@@ -2,6 +2,7 @@
 title: Theming Support for WPF Native Controls
 page_title: Setting a Theme on MS Controls
 description: Telerik themes define styles also for few {{ site.framework_name }} native controls like TextBox, Button, ScrollViewer and more.
+components: ["general"]
 slug: styling-apperance-themes-mscontrols
 tags: setting,a,theme,on,ms,controls
 published: True

@@ -2,6 +2,7 @@
 title: Attached Behavior
 page_title: Attached Behavior/Properties
 description: AttachedBehavior.
+components: ["general"]
 slug: common-mvvm-attached-behavior
 tags: attached,behavior
 published: True

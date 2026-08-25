@@ -2,6 +2,7 @@
 title: CI and CD Automated Builds
 page_title: CI and CD Automated Builds
 description: "How to use Continuous Integration and Continuous Delivery pipelines with Telerik NuGet server."
+components: ["general"]
 slug: installation-automated-builds
 tags: ci,cd,automated,builds
 published: True

@@ -2,6 +2,7 @@
 title: Download New Version
 page_title: Download New Version
 description: With the Progress Telerik Visual Studio Extension you keep your projects in an up-to-date state.
+components: ["general"]
 slug: radcontrols-vs-extensions-project-latest-version-acquirer
 tags: latest,version,acquirer,tool
 published: True

@@ -2,6 +2,7 @@
 title: VisualStudio2019 Theme
 page_title: VisualStudio2019 Theme
 description: Bring the Visual Studio 2019 appearance to your desktop applications by using the VisualStudio2019 theme.
+components: ["general"]
 slug: common-styling-appearance-visualstudio2019-theme
 tags: visualstudio2019,theme,glyphs,fontsize,fontfamily,cornerradius
 published: True

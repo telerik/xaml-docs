@@ -2,6 +2,7 @@
 title: Installing NuGet Packages
 page_title: Install Telerik UI for WPF from NuGet Packages
 description: Learn how to install Telerik UI for WPF from NuGet packages, configure the Telerik feed, and fix common authentication issues.
+components: ["general"]
 slug: nuget-installation
 tags: nuget,installation,getting,started
 position: 2

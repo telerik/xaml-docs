@@ -2,6 +2,7 @@
 title: Earlier Versions Support Policy
 page_title: Support Policy for Earlier UI for WPF Versions
 description: "Learn about the support policy on old versions, how bug fixes and feature requests are implemented, and how you can get them."
+components: ["general"]
 slug: earlier-versions-support-policy
 position: 3
 ---

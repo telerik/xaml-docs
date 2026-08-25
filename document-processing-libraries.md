@@ -2,6 +2,7 @@
 title: Document Processing  Libraries 
 page_title: Telerik Document Processing Libraries
 description: "Get started with Telerik UI for WPF and learn how to work with the PdfProcessing, SpreadStreamProcessing, WordsProcessing, and ZipLibrary libraries as part of the Telerik Document Processing Libraries."
+components: ["general"]
 slug: document-processing-libraries-overview
 tags: dpl,processing,pdf,word,excel
 position: 8

@@ -2,6 +2,7 @@
 title: Delegate Command
 page_title: DelegateCommand
 description: This article describes the DelegateCommand class, which provides a simple ICommand implementation.
+components: ["general"]
 slug: common-mvvm-delegate-command-implementation
 tags: delegate,command
 published: True

@@ -2,6 +2,7 @@
 title: Create Project
 page_title: Create Project
 description: The article shows how to use the UI for WPF Extension wizard to create a new project.
+components: ["general"]
 slug: radcontrols-for-wpf-vs-extensions-project-creation
 tags: project,creation
 published: True

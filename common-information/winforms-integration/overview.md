@@ -2,6 +2,7 @@
 title: WinForms Integration
 page_title: WinForms Integration
 description: This section demonstrates how the Telerik UI for {{ site.framework_name }} controls can be integrated in a WinForms application and vice versa.
+components: ["general"]
 slug: winforms-integration
 tags: winforms, integration
 published: True

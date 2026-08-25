@@ -2,6 +2,7 @@
 title: Configure Project
 page_title: Configure Project
 description: This article shows how to configure a Telerik project created with the Progress Telerik UI for WPF Extension.
+components: ["general"]
 slug: radcontrols-for-wpf-vs-extensions-project-configuration
 tags: project,and,configuration
 published: True

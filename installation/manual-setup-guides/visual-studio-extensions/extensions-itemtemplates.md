@@ -2,6 +2,7 @@
 title: Telerik Item Тemplates
 page_title: Telerik Item Тemplates
 description: This article lists the available Item Templates that allow you to quickly start using the Telerik controls.
+components: ["general"]
 slug: radcontrols-vs-extensions-item-templates
 tags: item,templates
 published: True

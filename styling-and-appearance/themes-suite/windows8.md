@@ -2,6 +2,7 @@
 title: Windows8 and Windows8Touch Themes
 page_title: Windows8 and Windows8Touch Colors and Fonts
 description: Check our Windows8 and Windows8Touch themes for Telerik UI for {{ site.framework_name }} and how to change their Colors and Fonts.
+components: ["general"]
 slug: common-styles-appearance-colorizing-metro-theme
 tags: windows8,and,windows8touch,colors,and,fonts
 published: True

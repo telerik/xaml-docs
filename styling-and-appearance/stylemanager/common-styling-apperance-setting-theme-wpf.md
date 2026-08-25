@@ -2,6 +2,7 @@
 title: Setting a Theme with StyleManager
 page_title: Setting a Theme with StyleManager
 description: How to set a Telerik theme with StyleManager.
+components: ["general"]
 slug: common-styling-apperance-setting-theme-wpf
 tags: setting,a,theme,with,stylemanager
 published: True

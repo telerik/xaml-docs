@@ -2,6 +2,7 @@
 title: .NET Version Distributions
 page_title: Version Distributions
 description: This article lists the .NET versions supported by Telerik UI for WPF.
+components: ["general"]
 slug: installation-distributions
 tags: distributions,versions
 published: True

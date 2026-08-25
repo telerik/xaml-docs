@@ -2,6 +2,7 @@
 title: Xaml vs. NoXaml
 page_title: Xaml vs. NoXaml
 description: Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This article will describe the difference and help you to choose a version. 
+components: ["general"]
 slug: xaml-vs-noxaml
 tags: xaml,noxaml
 published: True

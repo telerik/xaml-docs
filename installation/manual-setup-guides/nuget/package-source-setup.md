@@ -2,6 +2,7 @@
 title: Setting NuGet Package Source
 page_title: Setting NuGet Package Source
 description: "Telerik UI for WPF provides .nupkg files and also an online NuGet package source for downloading the Telerik dlls."
+components: ["general"]
 slug: nuget-package-source-setup
 tags: package,source,setup,nuget
 position: 1

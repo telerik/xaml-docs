@@ -2,6 +2,7 @@
 title: Available NuGet Packages
 page_title: Available NuGet Packages
 description: "Telerik UI for WPF provides a set of NuGet packages targeting different .NET versions."
+components: ["general"]
 slug: nuget-available-packages
 tags: available,packages,noxaml,xaml
 position: 0

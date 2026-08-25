@@ -2,6 +2,7 @@
 title: Analyze API Changes Before Upgrade
 page_title: Telerik CLI migrate analyze - Detect WPF Breaking Changes
 description: Use the Telerik CLI migrate analyze command to scan Telerik UI for WPF projects for API breaking changes between versions before upgrading.
+components: ["general"]
 slug: telerik-cli-migrate-analyzer
 tags: telerik,cli,migrate,analyze,breaking changes,upgrade,upgrading,wpf,command line
 published: True

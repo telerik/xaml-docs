@@ -2,6 +2,7 @@
 title: Minimizing And Maximizing
 page_title: Minimizing And Maximizing
 description: Check our &quot;Minimizing And Maximizing&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 slug: radtileview-minimizing-and-maximizing
 tags: minimizing,and,maximizing
 published: True

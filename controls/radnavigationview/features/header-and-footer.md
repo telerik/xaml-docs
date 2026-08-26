@@ -2,6 +2,7 @@
 title: Header and Footer
 page_title: Header and Footer
 description: This article will demonstrate how the RadNavigationView header and footer can be customized.
+components: ["navigationview"]
 slug: radnavigationview-header-and-footer
 tags: header, footer
 position: 1

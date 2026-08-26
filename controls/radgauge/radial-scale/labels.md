@@ -2,6 +2,7 @@
 title: Labels
 page_title: Labels
 description: Check our &quot;Labels&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radial-scale-labels
 tags: labels
 published: True

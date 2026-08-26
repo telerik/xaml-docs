@@ -2,6 +2,7 @@
 title: Page Size
 page_title: Page Size
 description: Check our &quot;Page Size&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
+components: ["datapager"]
 slug: raddatapager-features-page-size
 tags: page,size
 published: True

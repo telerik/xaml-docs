@@ -2,6 +2,7 @@
 title: How to apply different templates for front and back cover page.
 page_title: How to apply different templates for front and back cover page.
 description: Check our &quot;How to apply different templates for front and back cover page.&quot; documentation article for the RadBook {{ site.framework_name }} control.
+components: ["book"]
 slug: radbook-cover-template
 tags: how,to,apply,different,templates,for,front,and,back,cover,page.
 published: True

@@ -2,6 +2,7 @@
 title: Editing
 page_title: Editing
 description: Check our &quot;Editing&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-editing
 tags: editing
 published: True

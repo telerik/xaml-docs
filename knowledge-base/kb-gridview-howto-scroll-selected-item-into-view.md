@@ -1,6 +1,7 @@
 ---
 title: Scroll Selected in Code Item to top of RadGridView   
 description: How to bring programmatically selected row to top.
+components: ["gridview"]
 type: how-to
 page_title: Bring selected object in code to the top 
 slug: kb-gridview-howto-scroll-selected-item-into-view

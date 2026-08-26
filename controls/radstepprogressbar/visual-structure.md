@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadStepProgressBar control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-visual-structure
 tags: visual,structure
 position: 1

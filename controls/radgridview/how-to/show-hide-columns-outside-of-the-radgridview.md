@@ -2,6 +2,7 @@
 title: Show/Hide Columns outside of RadGridView
 page_title: Show/Hide Columns outside of RadGridView
 description: Check out our tutorial showing you how to choose which columns to be visible from outside of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: radgridview-how-to-show-hide-columns-outside-of-the-radgridview
 tags: show/hide,columns,outside,radgridview
 published: True

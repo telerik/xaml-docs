@@ -1,6 +1,7 @@
 ---
 title: Show ToolTip With DateTime Under Mouse in Eventspanel
 description: How to display a datetime tooltip in eventspanel.
+components: ["ganttview"]
 type: how-to
 page_title: Convert mouse coordinates to datetime in eventspanel
 slug: kb-ganttview-show-datetime-tooltip-in-eventspanel

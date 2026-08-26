@@ -2,6 +2,7 @@
 title: OhlcSeries
 page_title: OhlcSeries
 description: Check our &quot;OhlcSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-ohlcseries
 tags: ohlcseries
 published: True

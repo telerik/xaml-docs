@@ -2,6 +2,7 @@
 title: Navigating
 page_title: Navigating
 description: Check our &quot;Navigating&quot; documentation article for the RadBook {{ site.framework_name }} control.
+components: ["book"]
 slug: radbook-navigating
 tags: navigating
 published: True

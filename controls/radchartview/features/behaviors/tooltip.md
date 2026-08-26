@@ -2,6 +2,7 @@
 title: Tooltip
 page_title: Tooltip
 description: Check our &quot;Tooltip&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-tooltip
 tags: tooltip
 published: True

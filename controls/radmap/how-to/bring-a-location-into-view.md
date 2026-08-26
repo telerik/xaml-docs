@@ -2,6 +2,7 @@
 title: Bring a Location into View
 page_title: Bring a Location into View
 description: Check our &quot;Bring a Location into View&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-how-to-bring-a-location-into-view
 tags: bring,a,location,into,view
 published: True

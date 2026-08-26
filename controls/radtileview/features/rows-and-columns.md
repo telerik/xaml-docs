@@ -2,6 +2,7 @@
 title: Rows and Columns
 page_title: Rows and Columns
 description: Check our &quot;Rows and Columns&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 slug: radtileview-rows-and-columns
 tags: rows,and,columns
 published: True

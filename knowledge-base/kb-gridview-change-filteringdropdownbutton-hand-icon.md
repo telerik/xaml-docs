@@ -1,6 +1,7 @@
 ---
 title: Change Hand Cursor Icon to Loading Icon Upon Clicking on Filter in RadGridView Column Header
 description: "How to modify hand mouse cursor icon upon clicking on the filter drop down button of the GridView column header."
+components: ["gridview"]
 type: how-to
 page_title: How to Replace the Hand Mouse Cursor When GridView Column Header Filter Icon is Clicked
 slug: kb-gridview-change-filteringdropdownbutton-hand-icon

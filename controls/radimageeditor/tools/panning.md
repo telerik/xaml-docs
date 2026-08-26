@@ -2,6 +2,7 @@
 title: Panning
 page_title: Panning
 description: Check our &quot;Panning&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-tools-panning
 tags: panning,tool,pan
 published: True

@@ -2,6 +2,7 @@
 title: Mouse Support
 page_title: Mouse Support
 description: Check our &quot;Mouse Support&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-features-mouse-support
 tags: mouse,support
 published: True

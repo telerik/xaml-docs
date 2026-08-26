@@ -1,6 +1,7 @@
 ---
 title: How to Change the RadGlyph Icons' Color when Changing the Theme Variation During Runtime
 description: This article explains how to change the color of a RadGlyph when the theme's variation changes while the application is running.
+components: ["general"]
 type: how-to
 page_title: Switch RadGlyph Color when Changing Theme Variation During Runtime
 slug: kb-theming-change-icon-color-variation

@@ -2,6 +2,7 @@
 title: Bind the StackGroupKey of the BarSeries when Using ChartSeriesProvider
 page_title: ChartSeriesProvider with BarSeries and a Bound StackGroupKey
 description: How to bind the StackGroupKey of the BarSeries when using ChartSeriesProvider.
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-series-provider-bind-stackgroupkey
 position: 0

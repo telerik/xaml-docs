@@ -2,6 +2,7 @@
 title: Trial License Limitations
 page_title: Trial License Limitations
 description: This article explains the main differences between the licenses available for the Telerik UI for WPF suite and the limitations of the Trial license.
+components: ["general"]
 slug: installation-installing-license-limitations-wpf
 tags: trial,license,limitations
 published: True

@@ -2,6 +2,7 @@
 title: Hide Selection Range Title
 page_title: Hide Selection Range Title
 description: Check our &quot;Hide Selection Range Title&quot; documentation article for the RadTimeBar {{ site.framework_name }} control.
+components: ["timebar"]
 slug: radtimebar-hide-selection-range-title
 tags: hide,selection,range,title
 published: True

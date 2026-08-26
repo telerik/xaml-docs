@@ -1,6 +1,7 @@
 ---
 title: Return Focus to RadMultiColumnComboBox After its Drop Down Closes
 description: Focus back the control when its drop down popup gets closed.
+components: ["multicolumncombobox"]
 page_title: Bring Back the Focus to RadMultiColumnComboBox or GridViewMultiColumnComboBoxColumn When its Popup gets Closed.
 type: how-to
 slug: kb-multicolumncombobox-return-focus-after-popup-close

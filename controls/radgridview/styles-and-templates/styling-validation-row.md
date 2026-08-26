@@ -2,6 +2,7 @@
 title: Styling Invalid Row
 page_title: Styling Invalid Row
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style its invalid row.
+components: ["gridview"]
 slug: styling-invalid-row-in-gridview
 tags: styling,invalid,row,gridview
 published: True

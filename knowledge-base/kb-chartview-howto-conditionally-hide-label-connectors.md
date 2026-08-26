@@ -1,6 +1,7 @@
 ---
 title: How to hide/not show the label connector based on datapoint's value or property.
 description: Conditionally hide label connector.
+components: ["chartview"]
 type: how-to
 page_title: Show label connector only for certain datapoints.
 slug: kb-chartview-howto-conditionally-hide-label-connectors

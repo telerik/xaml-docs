@@ -2,6 +2,7 @@
 title: Display Number Suffix in Axis Labels
 page_title:  Show Letter Ending for the Numbers in Axis Labels
 description: How to convert the label values on the axis from standard numbers to shorthands with letters at the end (like K for thousands).
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-axis-label-number-suffix
 position: 0

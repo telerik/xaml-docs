@@ -2,6 +2,7 @@
 title: Custom Hierarchies
 page_title: Custom Hierarchies
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can use the RowDetails option for implementing Custom Hierarchies. 
+components: ["gridview"]
 slug: gridview-custom-hierarchies
 tags: custom,hierarchies
 published: True

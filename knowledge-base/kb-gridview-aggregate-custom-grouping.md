@@ -1,6 +1,7 @@
 ---
 title: Apply Aggregate Functions When Using Generic Group Descriptors
 description: This article showcases how to apply aggregate functions when using the generic group descriptors.
+components: ["gridview"]
 page_title: Set Aggregate Functions On Generic Group Descriptors
 type: how-to
 slug: kb-gridview-aggregate-custom-grouping

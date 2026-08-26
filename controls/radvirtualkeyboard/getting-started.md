@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadVirtualKeyboard WPF control.
+components: ["virtualkeyboard"]
 slug: radvirtualkeyboard-getting-started
 tags: getting,started
 published: True

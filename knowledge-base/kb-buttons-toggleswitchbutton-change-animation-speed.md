@@ -1,6 +1,7 @@
 ---
 title: Change the Animation Speed of RadToggleSwitchButton
 description: How to change the switch animation speed of RadToggleSwitchButton by modifying the AnimationSelector.
+components: ["buttons"]
 type: how-to
 page_title: Modify the SpeedRatio of the Default Switch Animation of ToggleSwitchButton
 slug: kb-buttons-toggleswitchbutton-change-animation-speed

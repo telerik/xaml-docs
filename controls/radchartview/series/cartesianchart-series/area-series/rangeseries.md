@@ -2,6 +2,7 @@
 title: RangeSeries
 page_title: RangeSeries
 description: Check our &quot;RangeSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-rangeseries
 tags: rangeseries
 published: True

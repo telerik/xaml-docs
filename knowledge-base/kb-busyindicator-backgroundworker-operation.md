@@ -1,6 +1,7 @@
 ---
 title: Perform Time-Consuming Operation while Showing Busy Indicator
 description: Display a busy indicator while executing a heavy operation.
+components: ["busyindicator"]
 type: how-to
 page_title: Show a Busy Indicator while a Heavy Operation is Executed
 slug: kb-busyindicator-backgroundworker-operation

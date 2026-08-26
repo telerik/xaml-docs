@@ -2,6 +2,7 @@
 title: Binding to Dynamic Data
 page_title: Binding to Dynamic Data
 description: Check our &quot;Binding to Dynamic Data&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-populating-with-data-binding-to-dynamic-data
 tags: binding,to,dynamic,data
 published: True

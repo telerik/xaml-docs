@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Learn more about the different events of the RadDocking control.
+components: ["docking"]
 slug: raddocking-events-overview
 tags: overview
 published: True

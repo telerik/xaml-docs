@@ -2,6 +2,7 @@
 title: Data Bind to Dynamic Object with CLR and Dynamic Properties
 page_title: Data Bind to Dynamic Object with CLR and Dynamic Properties
 description: This article describes how to implement DynamicObject with dynamic (DLR) and static (CLR) fields, and data bind it to Progress Telerik RadGridView (DataGrid).
+components: ["gridview"]
 slug: gridview-how-to-use-mixed-clr-dlr-properties
 tags: have,mixed,clr,and,dlr,properties
 published: True

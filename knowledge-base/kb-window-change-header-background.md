@@ -1,6 +1,7 @@
 ---
 title: Change Header Background of RadWindow
 description: Modify Color RadWindow Header Background.
+components: ["window"]
 page_title: Replace Window Header Brush in Office2016 Theme
 type: how-to
 slug: kb-window-change-header-background

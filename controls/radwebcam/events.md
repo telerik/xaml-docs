@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: RadWebCam exposes a single event that is specific for the control - SnapshotTaken. 
+components: ["webcam"]
 slug: radwebcam-events
 tags: events, snapshottaken
 published: True

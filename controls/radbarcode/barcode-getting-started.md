@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started with WPF Barcode Control 
 description: Check our &quot;Getting Started&quot; documentation article for Telerik Barcode for WPF control.
+components: ["barcode"]
 position: 1
 slug: barcode-getting-started
 ---

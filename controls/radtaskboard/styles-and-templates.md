@@ -2,6 +2,7 @@
 title: Styles and Templates
 page_title: Styles and Templates
 description: This article explains how to modify the appearance of the RadTaskBoard control and its elements.
+components: ["taskboard"]
 slug: radtaskboard-styles-and-templates
 tags: getting,started
 published: True

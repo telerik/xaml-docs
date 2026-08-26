@@ -2,6 +2,7 @@
 title: Change the size of the timelines' period header
 page_title: Change the size of the timelines' period header
 description: Check our &quot;Change the size of the timelines' period header&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
+components: ["timeline"]
 slug: radtimeline-howto-change-size-periodheader
 tags: change,timeline,size, height, timelineitemcontainer, 
 published: True

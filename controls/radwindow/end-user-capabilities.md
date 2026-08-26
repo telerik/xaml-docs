@@ -2,6 +2,7 @@
 title: End-User Capabilities
 page_title: End-User Capabilities
 description: Check our &quot;End-User Capabilities&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-end-user-capabilities
 tags: end-user,capabilities
 published: True

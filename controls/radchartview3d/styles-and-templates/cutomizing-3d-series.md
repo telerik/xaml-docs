@@ -2,6 +2,7 @@
 title: Customizing Cartesian Chart 3D Series
 page_title: Customizing 3D Cartesian Series
 description: Customizing 3D Cartesian Series.
+components: ["chartview3d"]
 slug: radchartview3d-customizing-cartesian-series
 tags: chartview, 3d, customizing, styles, templates, series, material, geometry, defaultvisualmaterial, defaultvisualgeometry
 published: True

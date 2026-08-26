@@ -1,6 +1,7 @@
 ---
 title: How to add a data source to the PaneHeader
 description: Bind a collection of items to the pane header.
+components: ["navigationview"]
 type: how-to
 page_title: Bind a Collection of Items to the PaneHeader
 slug: kb-navigationview-howto-display-items-in-header

@@ -2,6 +2,7 @@
 title: AverageTrueRangeIndicator
 page_title: AverageTrueRangeIndicator
 description: Check our &quot;AverageTrueRangeIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-averagetruerangeindicator
 tags: financial, indicators, averagetruerangeindicator
 publish: True

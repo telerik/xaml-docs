@@ -2,6 +2,7 @@
 title: Implementing View-ViewModel
 page_title: Implementing View-ViewModel
 description: Check our &quot;Implementing View-ViewModel&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-populating-with-data-viewmodel
 tags: implementing,view-viewmodel
 published: True

@@ -2,6 +2,7 @@
 title: Customize Presentation through UI Layers
 page_title: Customize Presentation through UI Layers
 description: Check our &quot;Customize Presentation through UI Layers&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-custom-ui-layers
 tags: customize,presentation,through,ui,layers
 published: True

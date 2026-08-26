@@ -2,6 +2,7 @@
 title: How to Change Drop Preview Line Color
 page_title: Change the Drop Preview Line Color when Dragging an Item
 description: This article explains how to change the color of the drop preview line by setting a style targeting the LinearDropVisual element.
+components: ["dragdropmanager"]
 type: how-to
 slug: kb-dragdropmanager-change-drop-preview-line-color
 position: 0

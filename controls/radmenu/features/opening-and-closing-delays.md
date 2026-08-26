@@ -2,6 +2,7 @@
 title: Opening and Closing Delays
 page_title: Opening and Closing Delays
 description: Check our &quot;Opening and Closing Delays&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-features-opening-and-closing-delays
 tags: opening,and,closing,delays
 published: True

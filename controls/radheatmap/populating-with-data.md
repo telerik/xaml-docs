@@ -2,6 +2,7 @@
 title: Populating With Data
 page_title: Populating With Data
 description: This article demonstrates how to populate the RadHeatMap with data.
+components: ["heatmap"]
 slug: radheatmap-populating-with-data
 tags: populating,with,data
 published: True

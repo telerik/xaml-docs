@@ -2,6 +2,7 @@
 title: Overview
 page_title: Events Overview
 description: Learn more about the data, selection, edit, delete, sorting, filtering, grouping and other events exposed by RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
+components: ["gridview"]
 slug: gridview-events-overview
 tags: overview
 published: True

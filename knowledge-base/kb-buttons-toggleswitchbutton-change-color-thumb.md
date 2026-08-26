@@ -1,6 +1,7 @@
 ---
 title: How To Change The Color Of The RadToggleSwitchButton Thumb
 description: This topic will described how to customize the RadToggleSwitchButton Thumb.
+components: ["buttons"]
 type: how-to
 page_title: Change RadToggleSwitchButton Thumb Background Color
 slug: kb-buttons-toggleswitchbutton-change-color-thumb

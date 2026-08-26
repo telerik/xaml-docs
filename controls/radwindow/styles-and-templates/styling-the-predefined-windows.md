@@ -2,6 +2,7 @@
 title: Styling the Predefined Dialogs
 page_title: Styling the Predefined Dialogs
 description: Check our &quot;Styling the Predefined Dialogs&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-styles-and-templates-styling-the-predefined-windows
 tags: styling,the,predefined,windows
 published: True

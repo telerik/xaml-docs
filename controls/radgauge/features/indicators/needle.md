@@ -2,6 +2,7 @@
 title: Needle
 page_title: Needle
 description: Check our &quot;Needle&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radgauge-features-indicators-needle
 tags: needle
 published: True

@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: Check our &quot;Keyboard Support&quot; documentation article for the RadNumericUpDown {{ site.framework_name }} control.
+components: ["numericupdown"]
 slug: radnumericupdown-navigation
 tags: keyboard,navigation
 published: True

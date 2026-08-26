@@ -2,6 +2,7 @@
 title: Use IsRecentColorsActive property
 page_title: Use IsRecentColorsActive property
 description: Check our &quot;Use IsRecentColorsActive property&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
+components: ["colorpicker"]
 slug: radcolorpicker-howto-use-isrecentcolorsactive
 tags: use,isrecentcolorsactive,property
 published: True

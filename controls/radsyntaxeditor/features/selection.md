@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: This article explains the selection functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-selection
 tags: selection,radsyntaxeditor
 position: 3

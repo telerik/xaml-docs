@@ -2,6 +2,7 @@
 title: Scrolling into View
 page_title: Scrolling into View
 description: Check our &quot;Scrolling into View&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-scrolling
 tags: scrolling,into,view
 published: True

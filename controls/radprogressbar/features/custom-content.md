@@ -2,6 +2,7 @@
 title: Custom Content
 page_title: Custom Content
 description: Check our &quot;Custom Content&quot; documentation article for the RadProgressBar {{ site.framework_name }} control.
+components: ["progressbar"]
 slug: progressbar-custom-content
 tags: progressbar, custom content, content
 published: True

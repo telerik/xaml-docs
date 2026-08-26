@@ -2,6 +2,7 @@
 title: Ribbon SplitButton
 page_title: Ribbon SplitButton
 description: Check our &quot;Ribbon SplitButton&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-split-button
 tags: ribbon,splitbutton
 published: True

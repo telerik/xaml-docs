@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
+components: ["chartview3d"]
 slug: radchartview3d-getting-started
 tags: chartview, 3d, getting, started
 published: True

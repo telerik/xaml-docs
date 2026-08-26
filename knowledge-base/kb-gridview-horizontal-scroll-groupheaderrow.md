@@ -1,6 +1,7 @@
 ---
 title: Enabling Horizontal Scroll for Group Header in RadGridView
 description: Learn how to make the GroupHeaderRow in DataGrid for WPF scroll horizontally together with the grid content.
+components: ["gridview"]
 type: how-to
 page_title: How to Enable Horizontal Scrolling on GroupHeaderRow in RadGridView
 slug: kb-gridview-horizontal-scroll-groupheaderrow

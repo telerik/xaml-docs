@@ -2,6 +2,7 @@
 title: Icons
 page_title: Icons
 description: Check our &quot;Icons&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
+components: ["outlookbar"]
 slug: radoutlookbar-features-icons
 tags: icons
 published: True

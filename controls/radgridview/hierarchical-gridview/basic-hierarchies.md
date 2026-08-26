@@ -2,6 +2,7 @@
 title: Basic Hierarchies
 page_title: Basic Hierarchies
 description: Get started with Telerik's {{ site.framework_name }} DataGrid that allows you to display hierarchical data in the form of nested grid views.
+components: ["gridview"]
 slug: gridview-basic-hierarchies
 tags: basic,hierarchies
 published: True

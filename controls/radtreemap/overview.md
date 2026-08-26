@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
+components: ["treemapandpivotmap"]
 slug: radtreemap-overview
 tags: overview
 published: True

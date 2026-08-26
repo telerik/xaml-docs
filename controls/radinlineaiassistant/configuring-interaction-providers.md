@@ -2,6 +2,7 @@
 title: Configuring Interaction Providers
 page_title: Configuring Interaction Providers
 description: Check our &quot;Configuring Interaction Providers&quot; documentation article for the RadInlineAIAssistant control.
+components: ["inlineaiassistant"]
 slug: radinlineaiassistant-configuring-interaction-providers
 tags: interaction providers, configuring interaction providers, radinlineaiassistant
 published: True

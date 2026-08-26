@@ -2,6 +2,7 @@
 title: Key Features
 page_title: Key Features
 description: Check our &quot;Key Features&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-key-features
 tags: key,features
 published: True

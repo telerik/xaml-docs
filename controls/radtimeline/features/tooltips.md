@@ -2,6 +2,7 @@
 title: Tooltips
 page_title: Tooltips
 description: Check our &quot;Tooltips&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
+components: ["timeline"]
 slug: radtimeline-features-tooltips
 tags: tooltips
 published: True

@@ -2,6 +2,7 @@
 title: Cannot insert new row
 page_title: Cannot insert new row
 description: Learn how to solve the problem of not being able to add new rows to RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-troubleshooting-cannot-insert-new-row
 tags: cannot,insert,new,row
 published: True

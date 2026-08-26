@@ -2,6 +2,7 @@
 title: Columns Width
 page_title: Columns Width
 description: Check out our examples of how you can control the column width either on a grid or column level within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-setting-columns-width
 tags: width,columns
 published: True

@@ -2,6 +2,7 @@
 title: Smart Tags
 page_title: Smart Tags
 description: SmartTags.
+components: ["general"]
 slug: common-smart-tags
 tags: smart, tags
 published: True

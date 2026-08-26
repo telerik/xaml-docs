@@ -2,6 +2,7 @@
 title: Controlling RadCarousel Appearance
 page_title: Controlling RadCarousel Appearance
 description: Check our &quot;Controlling RadCarousel Appearance&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
+components: ["carousel"]
 slug: carousel-properties
 tags: controlling,radcarousel,appearance
 published: True

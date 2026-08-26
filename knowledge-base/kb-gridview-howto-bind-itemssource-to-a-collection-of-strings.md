@@ -1,6 +1,7 @@
 ---
 title: RadGridView with ItemsSource of ObservableCollection&lt;string&gt; does not allow row additions or edits
 description: How to set RadGridView ItemsSource to a collection of strings.
+components: ["gridview"]
 type: how-to
 page_title: Binding RadGridView ItemsSource to a string collection
 slug: kb-gridview-howto-bind-itemssource-to-a-collection-of-strings

@@ -2,6 +2,7 @@
 title: Document Ruler
 page_title: Document Ruler
 description: Check our &quot;Document Ruler&quot; documentation article for the RadRichTextBox control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-ruler
 tags: document ruler, ruler, richtextbox, document editor, editor
 published: True

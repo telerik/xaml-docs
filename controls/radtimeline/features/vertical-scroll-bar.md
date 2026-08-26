@@ -2,6 +2,7 @@
 title: Vertical ScrollBar
 page_title: Vertical ScrollBar
 description: Check our &quot;Vertical ScrollBar&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
+components: ["timeline"]
 slug: radtimeline-features-vertical-scroll-bar
 tags: vertical,scrollbar
 published: True

@@ -2,6 +2,7 @@
 title: Methods
 page_title: Methods
 description: The article describes the methods exposed by the RadCardView control.
+components: ["cardview"]
 slug: radcardview-methods
 tags: methods,cardview
 published: True

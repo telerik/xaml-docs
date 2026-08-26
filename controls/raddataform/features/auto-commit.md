@@ -2,6 +2,7 @@
 title: AutoCommit Settings
 page_title: AutoCommit Settings
 description: Check our &quot;AutoCommit Settings&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddataform-auto-commit
 tags: autocommit,settings
 published: True

@@ -2,6 +2,7 @@
 title: BarSeries
 page_title: BarSeries
 description: Check our &quot;BarSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-barseries
 tags: barseries
 published: True

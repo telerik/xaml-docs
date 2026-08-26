@@ -2,6 +2,7 @@
 title: Diagram Shape
 page_title: Diagram Shape
 description: Telerik RadDiagram for {{ site.framework_name }} Shapes.
+components: ["diagram"]
 slug: raddiagrams-features-shapes
 tags: shapes
 published: True

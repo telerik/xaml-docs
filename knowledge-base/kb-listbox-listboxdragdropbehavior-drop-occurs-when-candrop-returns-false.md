@@ -1,6 +1,7 @@
 ---
 title: The ListBoxDragDropBehavior's Drop Event Occurs When CanDrop Returns False
 description: Drop event can occur even when CanDrop returns false when moving fast with the mouse.
+components: ["listbox"]
 page_title: Returning False From CanDrop Can Sometimes Raise the Drop Event From the RadListBox's Default DragDropBehavior
 type: how-to
 slug: kb-listbox-listboxdragdropbehavior-drop-occurs-when-candrop-returns-false

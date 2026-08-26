@@ -2,6 +2,7 @@
 title: Text Search
 page_title: Text Search
 description: Check our &quot;Text Search&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-features-textsearch
 tags: textsearch
 published: True

@@ -2,6 +2,7 @@
 title: Ribbon Tab
 page_title: Ribbon Tab
 description: Check our &quot;Ribbon Tab&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-ribbon-tab
 tags: ribbon,tab
 published: True

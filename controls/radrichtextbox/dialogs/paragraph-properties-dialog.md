@@ -2,6 +2,7 @@
 title: Paragraph Properties
 page_title: Paragraph Properties Dialog
 description: Check our &quot;Paragraph Properties Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-paragraph-properties
 tags: link,insert
 published: True

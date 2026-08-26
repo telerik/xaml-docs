@@ -2,6 +2,7 @@
 title: RadGlyph
 page_title: RadGlyph
 description: This article describes the RadGlyph FrameworkElement which enables seamless visualization of font glyphs.
+components: ["general"]
 slug: common-styling-appearance-radglyph
 tags: radglyphs, telerikwebui, fonts, foregrounds, text, frameworkelement, design, time
 published: True

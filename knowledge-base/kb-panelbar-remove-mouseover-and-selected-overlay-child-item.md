@@ -1,6 +1,7 @@
 ---
 title: Remove MouseOver and Selected Overlay on Child Item
 description: Avoid mouse enter and selection backgrounds for child RadPanelBarItem when selected or hovered.
+components: ["panelbar"]
 type: how-to
 page_title: Clear MouseOver and Selected Backgrounds from Child Item
 slug: kb-panelbar-remove-mouseover-and-selected-overlay-child-item

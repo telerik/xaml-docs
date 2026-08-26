@@ -1,6 +1,7 @@
 ---
 title: DataTrigger Defined in CellTemplate of RadGridView Column Doesn't Work.
 description: A DataTrigger defined in a column's CellTemplate or CellEditTemplate of RadGridView doesn't get executed.
+components: ["gridview"]
 type: troubleshooting
 page_title: DataTrigger Added in CellTemplate of GridViewColumn of DataGrid won't work
 slug: kb-gridview-datatrigger-doesnt-work-in-celltemplate

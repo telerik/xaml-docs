@@ -2,6 +2,7 @@
 title: Selection Range
 page_title: Selection Range
 description: Check our &quot;Selection Range&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+components: ["slider"]
 slug: radslider-selection-range
 tags: selection,range
 published: True

@@ -2,6 +2,7 @@
 title: ImageCard
 page_title: ImageCard
 description: Check our &quot;ImageCard&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-items-imagecard
 tags: messages,imagecard
 published: True

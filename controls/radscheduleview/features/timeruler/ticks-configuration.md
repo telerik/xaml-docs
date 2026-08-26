@@ -2,6 +2,7 @@
 title: Configuring the TimeRuler ticks
 page_title: Configuring the TimeRuler ticks
 description: Check our &quot;Configuring the TimeRuler ticks&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-timeruler-ticks-configuration
 tags: configuring,the,timeruler,ticks
 published: True

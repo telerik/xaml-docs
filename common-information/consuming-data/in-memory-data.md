@@ -2,6 +2,7 @@
 title: In-Memory Data
 page_title: In-Memory Data
 description: This article will demonstrate how you can create in-memory data and use it in your {{ site.framework_name }} application.
+components: ["general"]
 slug: consuming-data-in-memory-data
 tags: in-memory,data
 published: True

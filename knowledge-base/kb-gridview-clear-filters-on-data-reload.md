@@ -1,6 +1,7 @@
 ---
 title: Reset GridView Column Filter When RadGridView Data is Reloaded
 description: How to remove the column filter when the ItemsSource of RadGridView is reset.
+components: ["gridview"]
 type: how-to
 page_title: Clear the Applied GridViewDataColumn Filters on Data Refresh in RadGridView
 slug: kb-gridview-clear-filters-on-data-reload

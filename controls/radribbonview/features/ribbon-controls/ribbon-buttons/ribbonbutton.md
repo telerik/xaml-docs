@@ -2,6 +2,7 @@
 title: Ribbon Button
 page_title: Ribbon Button
 description: Check our &quot;Ribbon Button&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-ribbonbutton
 tags: ribbon,button
 published: True

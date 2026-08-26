@@ -2,6 +2,7 @@
 title: Grouping Modes
 page_title: Grouping Modes
 description: Get started with the grouping modes property in Telerik's {{ site.framework_name }} DataGrid that allows you to choose either nested or flat mode. 
+components: ["gridview"]
 slug: gridview-grouping-groupingmodes
 tags: grouping,modes
 published: True

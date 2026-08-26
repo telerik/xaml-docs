@@ -1,6 +1,7 @@
 ---
 title: Open File Dialogs from View Model
 description: This article explains how to open the RadFileDialogs using an MVVM approach.
+components: ["filedialogs"]
 type: how-to
 page_title: How to Open RadFileDialogs in a MVVM-Friendly Manner
 slug: kb-filedialogs-open-dialogs-mvvm

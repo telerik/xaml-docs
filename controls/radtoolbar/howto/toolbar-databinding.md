@@ -2,6 +2,7 @@
 title: How To Databind RadToolBar 
 page_title: How To Databind RadToolBar 
 description: Check our &quot;How To Databind RadToolBar&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
+components: ["toolbar"]
 slug: toolbar-databinding
 tags: how,to,databind,radtoolbar,
 include_in_navigation: False

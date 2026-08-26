@@ -2,6 +2,7 @@
 title: Editing
 page_title: Editing
 description: Check our &quot;Editing&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-editing
 tags: editing
 published: True

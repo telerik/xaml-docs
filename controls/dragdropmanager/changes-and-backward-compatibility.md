@@ -2,6 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: Check our &quot;Breaking Changes&quot; documentation article for the DragDropManager WPF control.
+components: ["dragdropmanager"]
 slug: dragdropmanager-changes-and-backward-compatibility
 tags: changes, compatibility, breaking changes
 published: True

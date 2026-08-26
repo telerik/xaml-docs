@@ -2,6 +2,7 @@
 title: Fluent Theme
 page_title: Fluent Theme
 description: Add transparency, acrylic effects, shadows, animations and more to modernize your app with the latest UX and UI trends by using the Fluent theme.
+components: ["general"]
 slug: common-styling-appearance-fluent-theme
 tags: fluent,theme,acrylic,glyphs,fontsize,fontfamily,shadow
 published: True

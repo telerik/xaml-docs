@@ -2,6 +2,7 @@
 title: .NET Support Overview 
 page_title: .NET Core Support Overview 
 description: Telerik UI for WPF allows you to create .NET Core, .NET 6 and dot NET 7 and 8 projects. 
+components: ["general"]
 slug: netcore-support-overview
 tags: get,started,first,steps,netcore,standard,sdk,visual,studio,vs
 published: True

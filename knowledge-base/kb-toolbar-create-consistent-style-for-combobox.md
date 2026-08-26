@@ -2,6 +2,7 @@
 title: Create Consistent Style for RadComboBox in a RadToolBar Control
 page_title: Preserve Custom Style for RadComboBox element Defined in RadToolBar Control
 description: Create a style for the RadComboBox element, present in a RadToolBar control, that is preserved when the theme is changed.
+components: ["toolbar"]
 type: how-to
 slug: kb-toolbar-create-consistent-style-for-combobox
 position: 0

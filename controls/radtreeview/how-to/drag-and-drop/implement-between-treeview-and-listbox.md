@@ -2,6 +2,7 @@
 title: Implement Drag and Drop Between TreeView and ListBox
 page_title: Implement Drag and Drop Between TreeView and ListBox
 description: Check our &quot;Implement Drag and Drop Between TreeView and ListBox&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox
 tags: implement,drag,and,drop,between,treeview,and,listbox
 published: True

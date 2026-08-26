@@ -2,6 +2,7 @@
 title: Set Drag Visual Offset
 page_title: Set Drag Visual Offset
 description: Check our &quot;Set Drag Visual Offset&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
+components: ["dragdropmanager"]
 slug: dragdropmanager-howto-set-dragvisualoffset
 tags: set,drag,visual,offset
 published: True

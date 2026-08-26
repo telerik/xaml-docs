@@ -1,6 +1,7 @@
 ---
 title: Remove Indenting From IconTemplate in RadNavigationView
 description: "How to remove indenting from IconTemplate of the NavigationView element."
+components: ["general"]
 page_title: How to Hide Indentation From Icon Template of RadNavigationView for WPF
 type: how-to 
 slug: kb-icontemplate-remove-indenting

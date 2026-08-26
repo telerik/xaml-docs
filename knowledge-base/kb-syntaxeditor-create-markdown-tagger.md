@@ -2,6 +2,7 @@
 title: Create a Custom Markdown Tagger for RadSyntaxEditor
 page_title: Highlight Markdown Syntax with a Custom Tagger
 description: Highlight Markdown syntax elements in RadSyntaxEditor by creating and registering a custom classification tagger.
+components: ["syntaxeditor"]
 type: how-to
 slug: kb-syntaxeditor-create-markdown-tagger
 position: 0

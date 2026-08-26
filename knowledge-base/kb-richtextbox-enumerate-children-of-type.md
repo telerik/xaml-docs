@@ -1,6 +1,7 @@
 ---
 title: Getting All RadDocument child Elements of the Same Type in RadRichTextBox
 description: Learn how to use the EnumerateChildrenOfType method to get all children of a specific type from RadRichTextBox RadDocument.
+components: ["richtextbox"]
 type: how-to
 page_title: Enumerating Elements of the Same Type in RadDocument
 meta_title: Enumerating Elements of the Same Type in RadDocument

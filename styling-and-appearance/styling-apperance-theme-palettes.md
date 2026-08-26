@@ -2,6 +2,7 @@
 title: Theme Palettes
 page_title: Theme Palettes
 description: How to access and modify the Telerik theme palettes in WPF.
+components: ["general"]
 slug: styling-apperance-theme-palettes
 tags: switching,custom,styles,with,themes,at,runtime,palettes,dynamic,change,update
 published: True

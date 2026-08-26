@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - Breadcrumb
 description: This article lists the events exposed by the RadBreadcrumb control.
+components: ["breadcrumb"]
 slug: radbreadcrumb-events
 tags: events,overview
 published: True

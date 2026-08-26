@@ -2,6 +2,7 @@
 title: ChartDataSource (Data Sampling)
 page_title: ChartDataSource (Data Sampling)
 description: This article shows how to use ChartDataSource to apply data sampling over the original data.
+components: ["chartview"]
 slug: radchartview-populating-with-data-chartdatasource
 tags: chartdatasource,sampling
 published: True

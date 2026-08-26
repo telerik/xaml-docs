@@ -2,6 +2,7 @@
 title: Retain Pane Size
 page_title: Retain Pane Size
 description: Check our &quot;Retain Pane Size&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-retain-pane-size
 tags: retain,size,pane
 published: True

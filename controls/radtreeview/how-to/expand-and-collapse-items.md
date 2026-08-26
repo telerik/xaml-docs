@@ -2,6 +2,7 @@
 title: Expand and Collapse Items
 page_title: Expand and Collapse Items
 description: Check our &quot;Expand and Collapse Items&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-expand-and-collapse-items
 tags: expand,and,collapse,items
 published: True

@@ -2,6 +2,7 @@
 title: Find and Replace
 page_title: Find and Replace
 description: This article explains the find and replace functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-find-replace
 tags: find,replace,radsyntaxeditor
 position: 2

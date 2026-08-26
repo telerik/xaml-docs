@@ -2,6 +2,7 @@
 title: Keyboard support 
 page_title:  Keyboard support 
 description:  Keyboard support. 
+components: ["spreadsheet"]
 slug: radspreadsheet-keyboard-support
 tags: customize, keyboard, shortcuts
 published: True

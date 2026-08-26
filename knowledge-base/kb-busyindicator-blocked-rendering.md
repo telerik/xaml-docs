@@ -2,6 +2,7 @@
 title: Display RadBusyIndicator When UI is Blocked During Layout Operation
 page_title: "Show RadBusyIndicator when the main UI thread is blocked."
 description: Show BusyIndicator on New UI Thread When the UI is Frozen
+components: ["busyindicator"]
 type: how-to
 slug: kb-busyindicator-blocked-rendering
 position: 0

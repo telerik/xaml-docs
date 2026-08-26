@@ -2,6 +2,7 @@
 title: Using PdfFormatProvider
 page_title: Using PdfFormatProvider
 description: Check our &quot;Using PdfFormatProvider&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-pdf-pdfformatprovider
 tags: using-pdfFormatProvider
 published: True

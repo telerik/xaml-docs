@@ -2,6 +2,7 @@
 title: Measures
 page_title: Measures
 description: The measures allows you to show the data performance on the RadBulletGraph controls.
+components: ["bulletgraph"]
 slug: radbulletgraph-features-measures
 tags: measures
 published: True

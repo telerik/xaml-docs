@@ -2,6 +2,7 @@
 title: BoxPlotSeries
 page_title: BoxPlotSeries
 description: RadChartView for WPF Box Plot Series for {{ site.framework_name }} allows you to display box and whiskers chart visualization.
+components: ["chartview"]
 slug: radchartview-series-boxplotseries
 tags: boxplotseries,box,plot,whiskers
 published: True

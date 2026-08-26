@@ -2,6 +2,7 @@
 title: Reordering the Tiles
 page_title: Reordering the Tiles
 description: Check our &quot;Reordering the Tiles&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+components: ["tilelist"]
 slug: radtilelist-reordering-tiles
 tags: reordering,the,tiles
 published: True

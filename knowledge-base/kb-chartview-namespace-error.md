@@ -1,6 +1,7 @@
 ---
 title: The Specified Value Cannot be Assigned to the Collection. The Following Type was Expected CartesianSeries
 description: Compile time error XLS0503 Value of type LineSeries cannot be added to collection of type PresenterCollection when adding chart series in XAML.
+components: ["chartview"]
 type: troubleshooting
 page_title: A Value of Type LineSeries Cannot be Added to Collection or Dictionary of Type PresenterCollection Error in RadChartView
 slug: kb-chartview-namespace-error

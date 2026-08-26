@@ -1,6 +1,7 @@
 ---
 title: Making RadCalculatorPicker Recognize Period or Comma Key as Decimal
 description: Learn how to configure the RadCalculatorPicker in WPF to recognize the period or comma key as a decimal separator.
+components: ["calculator"]
 type: how-to
 page_title: Configuring RadCalculatorPicker to Accept Period or Comma as Decimal Separator in WPF
 slug: kb-calculator-recognize-period-comma-decimal

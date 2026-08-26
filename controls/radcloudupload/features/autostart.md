@@ -2,6 +2,7 @@
 title: Autostart
 page_title: Autostart
 description: Check our &quot;Autostart&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-features-autostart
 tags: autostart
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How Disable the RadMenuItem Element's Animations
 description: This article showcases how to disable the animations of the RadMenuItem element.
+components: ["menu"]
 page_title: Disable the Animations of the RadMenuItem Element
 type: how-to
 slug: kb-menuitem-disable-animations

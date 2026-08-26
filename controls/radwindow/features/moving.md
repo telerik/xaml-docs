@@ -2,6 +2,7 @@
 title: Moving
 page_title: Moving
 description: Check our &quot;Moving&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-moving
 tags: moving
 published: True

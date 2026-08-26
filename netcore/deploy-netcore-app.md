@@ -2,6 +2,7 @@
 title: Deploying WPF .NET Application
 page_title: Deploying WPF .NET 8 Application
 description: This article shows how to deploy Telerik WPF .NET 6 Application using Visual Studio.
+components: ["general"]
 slug: netcore-support-deploy-using-visual-studio
 tags: get,started,first,steps,net,core,deploy
 published: True

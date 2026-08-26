@@ -2,6 +2,7 @@
 title: Screen Tips
 page_title: Screen Tips
 description: Check our &quot;Screen Tips&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-screentips
 tags: screen,tips
 published: True

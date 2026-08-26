@@ -2,6 +2,7 @@
 title: InvalidOperationException When Using RadDocking on Different UI Threads
 page_title: InvalidOperationException Thrown If RadDocking Used on Multi Threads
 description: The calling thread cannot access this object because a different thread owns it - message shown when RadDocking is shown on a separate UI thread.
+components: ["docking"]
 type: troubleshooting
 slug: kb-docking-invalidoperationexception-multi-threading
 position: 0

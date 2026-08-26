@@ -2,6 +2,7 @@
 title: Globalization
 page_title: Globalization
 description: Check our &quot;Globalization&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-globalization
 tags: globalization
 published: True

@@ -2,6 +2,7 @@
 title: Prevent Dragging Off the Screen
 page_title: Prevent Dragging Off the Screen
 description: Check our &quot;Prevent Dragging Off the Screen&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-how-to-prevent-dragging-off-the-screen
 tags: prevent,dragging,off,the,screen
 published: True

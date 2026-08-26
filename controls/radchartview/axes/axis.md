@@ -2,6 +2,7 @@
 title: Axis
 page_title: Axis
 description: This article outlines the common functionality for the different types of axes available in the RadChartView suite.
+components: ["chartview"]
 slug: radchartview-axes-axis
 tags: axis
 published: True

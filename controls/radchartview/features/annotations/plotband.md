@@ -2,6 +2,7 @@
 title: PlotBand Annotations
 page_title: PlotBand Annotations
 description: Check our &quot;PlotBand Annotations&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-annotations-plotband
 tags: plotband,annotations
 published: True

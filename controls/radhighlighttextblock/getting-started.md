@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadHighlightTextBlock control.
+components: ["highlighttextblock"]
 slug: radhighlighttextblock-getting-started
 tags: getting started, radhighlighttextblock
 published: True

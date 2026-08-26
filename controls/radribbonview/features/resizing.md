@@ -2,6 +2,7 @@
 title: Resizing
 page_title: Resizing
 description: Check our &quot;Resizing&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-resizing
 tags: resizing
 published: True

@@ -2,6 +2,7 @@
 title: Handle Cell\Row Mouse Events
 page_title: Handle Cell\Row Mouse Events
 description: Check out our article demonstrating how to add handlers for the various mouse events to the cell and row elements in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-how-to-handle-cell-row-mouse-events
 tags: handle,cell,row,mouse,events
 published: True

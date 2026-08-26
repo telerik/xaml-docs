@@ -1,6 +1,7 @@
 ---
 title: Cannot access Freezable System.Windows.Media.SolidColorBrush across threads because it cannot be frozen
 description: InvalidOperationException occurs with the Windows8 Telerik theme
+components: ["general"]
 type: troubleshooting
 page_title: InvalidOperationException Cannot access Freezable SolidColorBrush across threads because it cannot be frozen
 slug: kb-common-windows8-brushes

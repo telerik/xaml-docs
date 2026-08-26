@@ -1,6 +1,7 @@
 ---
 title: Recurrence Dialog Not Shown When SelectedAppointment Is Bound
 description: The edit recurrence dialog is not shown on the selected appointment, for which a recurrence rule has been applied.
+components: ["scheduleview"]
 page_title: Recurrence Dialog is Not Displayed When SelectedAppointment Is Bound
 type: troubleshooting
 slug: scheduleview-selected-appointment-recurrence

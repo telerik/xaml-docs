@@ -2,6 +2,7 @@
 title: Numeric Scale Overview
 page_title: Numeric Scale Overview
 description: Check our &quot;Numeric Scale Overview&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: numeric-scale-overview
 tags: numeric,scale,overview
 published: True

@@ -2,6 +2,7 @@
 title: Hide The Title
 page_title: Hide The Title
 description: Check our &quot;Hide The Title&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-howto-hide-title
 tags: hide,the,title
 published: True

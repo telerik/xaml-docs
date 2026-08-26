@@ -1,6 +1,7 @@
 ---
 title: Changing Background Color of Regular WPF Window with Windows 11 OS Theme
 description: This article explains how to change the background color of a WPF window according to the system setting in the Windows 11 theme.
+components: ["window"]
 type: how-to
 page_title: Change Background Color of WPF Window with Windows 11 Theme
 slug: kb-window-change-background-color-regular-window-windows-11-theme

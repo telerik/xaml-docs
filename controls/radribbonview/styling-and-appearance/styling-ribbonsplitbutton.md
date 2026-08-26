@@ -2,6 +2,7 @@
 title: Styling the RadRibbonSplitButton
 page_title: Styling the RadRibbonSplitButton
 description: Check our &quot;Styling the RadRibbonSplitButton&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-ribbonsplitbutton
 tags: styling,the,radribbonsplitbutton
 published: True

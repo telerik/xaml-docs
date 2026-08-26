@@ -1,6 +1,7 @@
 ---
 title: Error 503 (Service Unavailable) with Telerik NuGet Packages
 description: Learn how to resolve the "503 (Service Unavailable)" error encountered when trying to restore Telerik NuGet packages in your project.
+components: ["installerandvsextensions"]
 type: troubleshooting
 page_title: Resolve Error 'Retrying FindPackagesByIdAsyncCore for Source https://nuget.telerik.com/nuget/FindPackagesById()' 
 slug: kb-installing-nuget-fix-503-service-unavailable-error-telerik-nuget-packages

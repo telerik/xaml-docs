@@ -2,6 +2,7 @@
 title: Fix Pixelated or Distorted Buttons on DELL Machines
 page_title: Resolve Stretched Pixels in Telerik RadButton
 description: Avoid pixelated or distorted pixels rendering when using Telerik WPF controls on DELL Machines.
+components: ["buttons"]
 type: how-to
 slug: kb-buttons-distorted-or-pixelated-buttons
 position: 0

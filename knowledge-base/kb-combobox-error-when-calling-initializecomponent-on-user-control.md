@@ -1,6 +1,7 @@
 ---
 title: Resolving Error when Calling InitializeComponent() on a User Control
 description: Learn how to resolve an error that occurs when calling InitializeComponent on a user control in RadComboBox for WPF.
+components: ["combobox"]
 type: troubleshooting
 page_title: Error when Calling InitializeComponent() on a UserControl With RadComboBox
 slug: kb-combobox-initialize-component-error

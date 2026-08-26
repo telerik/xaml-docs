@@ -2,6 +2,7 @@
 title: Customize the ItemInformationAdorner
 page_title: Customize the ItemInformationAdorner
 description: Check our &quot;Customize the ItemInformationAdorner&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-howto-customize-itemiformationadorner
 tags: customize,the,iteminformationadorner
 publish: True

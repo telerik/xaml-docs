@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization
 description: The article describes the UI Virtualization in WPF and Telerik Rad controls.
+components: ["general"]
 slug: common-ui-virtualization
 tags: virtualization,ui
 published: True

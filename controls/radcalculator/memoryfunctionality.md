@@ -2,6 +2,7 @@
 title: Memory Support
 page_title: Memory Support
 description: Check our &quot;Memory Functionality&quot; documentation article for the RadCalculator {{ site.framework_name }} control.
+components: ["calculator"]
 slug: radcalculator_memoryfunctionality
 tags: memory,functionality
 published: True

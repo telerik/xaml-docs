@@ -2,6 +2,7 @@
 title: Features
 page_title: Features
 description: This article lists the most important features of the RadWatermarkTextBox.
+components: ["watermarktextbox"]
 slug: radwatermarktextbox-features
 tags: features
 published: True

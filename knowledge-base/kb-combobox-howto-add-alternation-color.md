@@ -1,6 +1,7 @@
 ---
 title: Add alternation color to the drop-down items of RadComboBox
 description: Using AlternationCount property of RadComboBox 
+components: ["combobox"]
 type: how-to
 page_title: How to add alternation color to the drop-down items of RadComboBox
 slug: kb-combobox-howto-add-alternation-color

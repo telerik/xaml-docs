@@ -2,6 +2,7 @@
 title: Hyperlink Dialog
 page_title: Hyperlink Dialog
 description: Check our &quot;Hyperlink Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-hyperlink
 tags: link,insert
 published: True

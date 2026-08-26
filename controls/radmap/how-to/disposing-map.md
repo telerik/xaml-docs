@@ -2,6 +2,7 @@
 title: Disposing RadMap
 page_title: Disposing RadMap
 description: Check our &quot;Disposing RadMap&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-how-to-dispose-radmap
 tags: dispose,release,memory,clear,resources
 published: True

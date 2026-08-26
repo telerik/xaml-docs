@@ -2,6 +2,7 @@
 title: RadCarouselPanel Item Movement
 page_title: RadCarouselPanel Item Movement
 description: Check our &quot;RadCarouselPanel Item Movement&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
+components: ["carousel"]
 slug: carousel-radcarouselpanel-item-movement
 tags: radcarouselpanel,item,movement
 published: True

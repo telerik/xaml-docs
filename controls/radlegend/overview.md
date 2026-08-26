@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadLegend {{ site.framework_name }} control.
+components: ["legend"]
 slug: radlegend-overview
 tags: overview
 published: True

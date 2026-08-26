@@ -2,6 +2,7 @@
 title: Find
 page_title: Find Text in RadPdfViewer
 description: Learn how to search PDF text programmatically in RadPdfViewer with Find, FindAll, FindPrevious, TextSearchOptions, and SearchResult.
+components: ["pdfviewer"]
 slug: radpdfviewer-find
 tags: find, findall, findprevious
 published: True

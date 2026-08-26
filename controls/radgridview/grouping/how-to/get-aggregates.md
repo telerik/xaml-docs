@@ -2,6 +2,7 @@
 title: Get aggregates from a group
 page_title: Get aggregates from a group
 description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to access the aggregates in a specific group.
+components: ["gridview"]
 slug: gridview-grouping-how-to-get-aggregates
 tags: get,aggregates,from,a,group
 published: True

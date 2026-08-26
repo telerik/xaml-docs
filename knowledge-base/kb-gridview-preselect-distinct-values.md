@@ -1,6 +1,7 @@
 ---
 title: Pre-Check Distinct Values CheckBoxes in FilteringControl of RadGridView
 description: How to manually check options in the distinct values list of the FilteringControl.
+components: ["gridview"]
 type: how-to
 page_title: Preselect Distinct Values in Column Filtering Popup of RadGridView
 slug: kb-gridview-preselect-distinct-values

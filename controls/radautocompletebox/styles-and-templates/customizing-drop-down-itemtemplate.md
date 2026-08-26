@@ -2,6 +2,7 @@
 title: Customizing the DropDownItemTemplate and DropDownItemTemplateSelector
 page_title: Customizing the DropDownItemTemplate and DropDownItemTemplateSelector
 description: The RadAutoCompleteBox control expose DropDownItemTemplate and DropDownItemTemplateSelector which can be used to customize the drop down item.
+components: ["autocompletebox"]
 slug: radautocompletebox-customizing-drop-down-itemtemplate
 tags: customizing,the,dropdownitemtemplate
 published: True

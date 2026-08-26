@@ -2,6 +2,7 @@
 title: Custom Slots
 page_title: Custom Slots
 description: Check our &quot;Custom Slots&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-customslots
 tags: custom,slots
 published: True

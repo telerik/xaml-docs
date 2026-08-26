@@ -2,6 +2,7 @@
 title: Does Telerik UI for WPF Provide a RadCheckBox Control?
 page_title: RadCheckBox Support in Telerik UI for WPF
 description: Find out whether Telerik UI for WPF provides a dedicated RadCheckBox control and which checkbox-related options are supported.
+components: ["buttons"]
 type: how-to
 slug: kb-buttons-radcheckbox-control
 position: 0

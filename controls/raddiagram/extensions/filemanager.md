@@ -2,6 +2,7 @@
 title: FileManager
 page_title: FileManager
 description: This article describes the FileManager extension of the RadDiagram Framework.
+components: ["diagram"]
 slug: raddiagram-extensions-filemanager
 tags: extensions
 published: True

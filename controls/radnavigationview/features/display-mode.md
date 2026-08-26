@@ -2,6 +2,7 @@
 title: Display Mode
 page_title: Display Mode
 description: This article describes the DisplayMode property of the RadNavigationView and how you can control the layout adjustment.
+components: ["navigationview"]
 slug: radnavigationview-display-mode
 tags: threshold, mode, display, pane, size
 position: 0

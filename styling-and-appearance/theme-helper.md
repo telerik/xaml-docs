@@ -2,6 +2,7 @@
 title: Theme Helper
 page_title: Theme Helper
 description: The UI for WPF suite comes with a theming helper class which you can use to bring the theming of your application to a next level. 
+components: ["general"]
 slug: styling-appearance-theme-helper
 tags: theming,theme,helper
 published: True

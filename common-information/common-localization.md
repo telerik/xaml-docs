@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: The article describes the localization (globalization or translation) feature of the Telerik for {{ site.framework_name }} controls.
+components: ["general"]
 slug: common-localization
 tags: localization
 published: True

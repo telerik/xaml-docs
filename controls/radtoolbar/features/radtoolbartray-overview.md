@@ -2,6 +2,7 @@
 title: ToolBarTray
 page_title: ToolBarTray
 description: Check our &quot;ToolBarTray&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
+components: ["toolbar"]
 slug: radtoolbartray-overview
 tags: toolbartray,overview
 published: True

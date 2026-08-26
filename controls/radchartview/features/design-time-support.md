@@ -2,6 +2,7 @@
 title: Design-Time Support
 page_title: Design-Time Support
 description: This article demonstrates the Design-Time Support feature of the RadChartView.
+components: ["chartview"]
 slug: radchartview-features-design-time-support
 tags: rendering
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Handle Animation Swipe Direction When RadCarouselPanel is Vertical Orientated 
 description: Swipe animation respect horizontal orientated RadCarouselPanel.
+components: ["carousel"]
 type: troubleshooting
 page_title: Vertical Swipe Animation is Always in The Same Direction
 slug: kb-carousel-troubleshooting-handle-verticalorientation-swipe

@@ -2,6 +2,7 @@
 title: Indexer Support
 page_title: Indexer Support
 description: Check our &quot;Indexer Support&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-features-indexer-support
 tags: indexer,support
 published: True

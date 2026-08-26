@@ -2,6 +2,7 @@
 title: Preview ToolTip
 page_title: Preview ToolTip
 description: Check our &quot;Preview ToolTip&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-features-preview-tooltip
 tags: preview,tooltip
 published: True

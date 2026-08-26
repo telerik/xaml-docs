@@ -1,6 +1,7 @@
 ---
 title: Creating a Viewport snapshot in RadPdfViewer
 description: Create a snapshot of the visible part of a PDF document in RadPdfViewer for WPF.
+components: ["pdfviewer"]
 type: how-to
 page_title: How to create a Viewport snapshot in RadPdfViewer
 slug: kb-pdfviewer-viewport-snapshot

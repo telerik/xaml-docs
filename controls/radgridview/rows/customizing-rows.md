@@ -2,6 +2,7 @@
 title: Customizing Rows
 page_title: Customizing Rows
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to easily customize each of the row types by just assigning a style to it. 
+components: ["gridview"]
 slug: gridview-customizing-rows
 tags: customizing,rows
 published: True

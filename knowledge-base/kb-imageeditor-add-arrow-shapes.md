@@ -1,6 +1,7 @@
 ---
 title: Adding Custom Arrow Shapes to RadImageEditor
 description: Learn how to integrate custom arrow shapes in the ImageEditor dialog accessed from the RadRichTextBox context menu in UI for WPF.
+components: ["imageeditor"]
 type: how-to
 page_title: How to Add Custom Arrow Shapes to RadImageEditor
 meta_title: How to Add Custom Arrow Shapes to RadImageEditorUI

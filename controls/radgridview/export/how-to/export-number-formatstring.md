@@ -2,6 +2,7 @@
 title: Export Numeric Values
 page_title: Export Numeric Values
 description: Learn how to handle the ElementExportingToDocument and ElementExporting event in Telerik's {{ site.framework_name }} DataGrid in order to parse an exported value back to a numeric type.
+components: ["gridview"]
 slug: gridview-export-numeric-values
 tags: export,string,values
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: WPF Barcode Documentation - PDF417 Overview
 description: Check our &quot;Overview&quot; documentation article for Telerik Barcode for WPF control.
+components: ["barcode"]
 position: 0
 slug: barcode-pdf417-overview
 ---

@@ -2,6 +2,7 @@
 title: Prevent GridView Column Resize on Mouse Double-Click
 page_title: How to Prevent Resize of Column On Double-Click
 description: This article shows how to prevent the column from resizing when double clicking its header.
+components: ["gridview"]
 type: how-to
 slug: kb-gridview-prevent-column-resize-on-mouse-double-click
 position: 0

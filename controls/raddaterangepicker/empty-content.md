@@ -2,6 +2,7 @@
 title: Empty Content
 page_title: Empty Content
 description: Check our &quot;Empty Content&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-empty-content
 tags: daterangepicker,empty,content
 published: True

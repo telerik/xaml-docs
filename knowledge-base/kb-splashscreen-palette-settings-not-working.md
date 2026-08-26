@@ -1,6 +1,7 @@
 ---
 title: Palette Settings not Working When Using RadSplashScreen
 description: The palette settings are not working when RadSplashScreen control is opened in the App OnStartup override 
+components: ["splashscreen"]
 type: troubleshooting
 page_title: Palette Property Changes not Applied When Open SplashScreen App OnStartup
 slug: kb-splashscreen-palette-settings-not-working

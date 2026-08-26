@@ -2,6 +2,7 @@
 title: Resolve Axis Labels Clipping
 page_title: Resolve Axis Labels Clipping
 description: This article described the caching mechanism of the chartview.
+components: ["chartview"]
 slug: radchartview-troubleshooting-clipped-axis-labels
 tags: troubleshooting,caching,mechanism,clipped,chart,label
 published: True

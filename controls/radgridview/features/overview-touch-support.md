@@ -2,6 +2,7 @@
 title: Touch Support
 page_title: Touch Support
 description: Read this article to learn more about the touch gestures supported by RadGridView - Telerik's {{ site.framework_name }} DataGrid. 
+components: ["gridview"]
 slug: gridview-overview-touch-support
 tags: touch,support
 published: True

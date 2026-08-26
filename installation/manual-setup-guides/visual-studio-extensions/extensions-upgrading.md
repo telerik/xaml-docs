@@ -2,6 +2,7 @@
 title: Upgrade Project
 page_title: Upgrade Project
 description: Upgrade Wizard is used to change the version of Telerik UI for WPF dlls referenced in the project.
+components: ["general"]
 slug: radcontrols-for-wpf-vs-extensions-upgrading
 tags: upgrading,to,a,new,ui,for,wpf,distribution
 published: True

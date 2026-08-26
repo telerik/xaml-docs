@@ -1,6 +1,7 @@
 ---
 title:  Adding License Key File (TelerikLicense) in a Managed CPP Project loading Telerik WPF Controls Module
 description: Include License Key File (TelerikLicense) in a Managed C++ Project loading Telerik WPF Controls Module
+components: ["licensing"]
 type: how-to
 page_title: Creating License Script Key File (TelerikLicense) in a Managed CPP Solution
 slug: kb-licensing-add-license-key-file-cpp-project

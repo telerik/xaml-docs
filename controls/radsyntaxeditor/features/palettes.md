@@ -2,6 +2,7 @@
 title: Palettes
 page_title: Palettes
 description: This article lists the palettes provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-palettes
 tags: palettes,radsyntaxeditor
 position: 6

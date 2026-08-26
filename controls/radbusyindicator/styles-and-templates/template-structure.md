@@ -2,6 +2,7 @@
 title: Template Structure
 page_title: Template Structure
 description: Check our &quot;Template Structure&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
+components: ["busyindicator"]
 slug: radbusyindicator-styles-and-templates-template-structure
 tags: template,structure
 published: True

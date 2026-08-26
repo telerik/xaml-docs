@@ -2,6 +2,7 @@
 title: ListBox DragDropBehavior
 page_title: ListBoxDragDropBehavior - DragDropManager - ListBox
 description: Check our &quot;ListBoxDragDropBehavior&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
+components: ["dragdropmanager"]
 slug: dragdropmanager-behaviors-listboxdragdropbehavior
 tags: listboxdragdropbehavior
 published: True

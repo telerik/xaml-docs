@@ -2,6 +2,7 @@
 title: Windows11 Theme
 page_title: Windows 11 Theme
 description: Bring the Windows 11 appearance to your desktop applications by using the Windows11 theme.
+components: ["general"]
 slug: common-styling-appearance-windows11-theme
 tags: windows11,theme,glyphs,fontsize,fontfamily,cornerradius,mica,effect,material
 published: True

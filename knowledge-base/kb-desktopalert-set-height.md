@@ -1,6 +1,7 @@
 ---
 title: How to Make RadDesktopAlert's Height scale Based on its Content.
 description: This article shows how you can set the height of RadDesktopAlert to be set based on its content's height.
+components: ["desktopalert"]
 page_title: Make DesktopAlert's Height Change Based on its Content.
 type: how-to
 slug: kb-desktopalert-set-height

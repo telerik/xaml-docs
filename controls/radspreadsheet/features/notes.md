@@ -5,6 +5,7 @@ slug: radspreadsheet-features-notes
 tags: notes, xlsx
 published: True
 position: 13
+components: ["spreadsheet"]
 ---
 
 # Notes

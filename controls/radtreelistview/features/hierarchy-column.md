@@ -2,6 +2,7 @@
 title: Hierarchy Column and Hierarchy Indent
 page_title: Hierarchy Column and Hierarchy Indent
 description: Check our &quot;Hierarchy Column and Hierarchy Indent&quot; documentation article for the RadTreeListView WPF control.
+components: ["treelistview"]
 slug: radtreelistview-features-hierarchy-column
 tags: hierarchy,column
 published: True

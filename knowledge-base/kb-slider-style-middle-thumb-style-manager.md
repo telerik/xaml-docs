@@ -1,6 +1,7 @@
 ---
 title: Slider Middle Thumb Is not Displayed as Expected when Setting a Custom Style
 description: The middle thumb of the RadSlider control is not displayed correctly after setting a custom style for it.
+components: ["slider"]
 page_title: When Creating a Custom Style for the Middle Thumb It Is not Displayed Correctly
 type: troubleshooting
 slug: kb-slider-style-middle-thumb-style-manager

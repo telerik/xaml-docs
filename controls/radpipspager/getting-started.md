@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadPipsPager control.
+components: ["pipspager"]
 slug: radpipspager-getting-started
 tags: getting started, radpipspager
 published: True

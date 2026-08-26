@@ -2,6 +2,7 @@
 title: Camera
 page_title: Camera
 description: Check our &quot;Camera&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
+components: ["chartview3d"]
 slug: radchartview3d-behaviors-camera
 tags: 3d, chartview, camera, behaviors, chart3dcamerabehavior
 published: True

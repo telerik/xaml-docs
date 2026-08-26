@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadSvgImage control.
+components: ["svgimage"]
 slug: radsvgimage-getting-started
 tags: getting started, radsvgimage
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Increase Tooltip Duration for Items Added to Visualization Layer
 description: How to set show tooltip duration to items in VisualizationLayer.
+components: ["map"]
 type: how-to
 page_title: How to Set Tooltip Timeout Duration for Elements Added to RadMap
 slug: kb-map-increase-tooltip-duration

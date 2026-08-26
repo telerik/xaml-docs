@@ -2,6 +2,7 @@
 title: Data Binding Tips
 page_title: Data Binding Tips
 description: What to have in mind when using the PersistanceFramework to save/load data bound properties.
+components: ["persistenceframework"]
 slug: persistence-framework-data-binding-tips
 tags: databinding, mvvm, tricks, loaded
 published: True

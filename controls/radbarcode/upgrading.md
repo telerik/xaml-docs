@@ -2,6 +2,7 @@
 title: Upgrading to the new version of RadBarcode
 page_title: WPF Barcode Documentation - Upgrading to the new version of RadBarcode
 description: Check our &quot;Upgrading to the new version of RadBarcode&quot; documentation article for Telerik Barcode for WPF control.
+components: ["barcode"]
 position: 2
 slug: barcode-upgrading
 ---

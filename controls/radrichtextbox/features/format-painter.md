@@ -2,6 +2,7 @@
 title: Format Painter
 page_title: Format Painter
 description: Check our &quot;Format Painter&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-format-painter
 tags: format, painter
 published: True

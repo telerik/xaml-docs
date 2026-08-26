@@ -2,6 +2,7 @@
 title: Globalization Support
 page_title: Globalization Support
 description: Check our &quot;Globalization Support&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-features-globalization
 tags: globalization,support
 published: True

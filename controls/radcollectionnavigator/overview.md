@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article provides an overview for the RadCollectionNavigator control.
+components: ["collectionnavigator"]
 slug: collectionnavigator_overview
 tags: overview
 published: True

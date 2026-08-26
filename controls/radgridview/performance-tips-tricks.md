@@ -2,6 +2,7 @@
 title: Performance Tips and Tricks
 page_title: Performance Tips and Tricks
 description: Check out our list of tips and tricks related to Telerik's {{ site.framework_name }} DataGrid that will help you tweak your application for optimal performance.
+components: ["gridview"]
 slug: radgridview-performance-tips-tricks
 tags: tips,and,tricks
 published: True

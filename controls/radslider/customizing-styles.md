@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance
 description: This article lists the properties RadSlider, which allow for easy modification of its looks.
+components: ["slider"]
 slug: radslider-styling-overview
 tags: overview
 published: True

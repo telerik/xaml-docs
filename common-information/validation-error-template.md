@@ -2,6 +2,7 @@
 title: Validation Error Visual
 page_title: Validation Error Visual - Telerik WPF
 description: This article shows general information for ValidationErrorTemplate accros our controls.
+components: ["general"]
 slug: validaton-error-template
 tags: validaton,error,datatemplate
 published: True

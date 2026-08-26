@@ -2,6 +2,7 @@
 title: Missing Controls in the UI
 page_title: Missing Controls in the UI
 description: The article describes a common issue where Telerik controls are not visible in the view when using NoXaml dlls.
+components: ["general"]
 slug: troubleshooting-invisible-controls
 tags: missing, controls, invisible, troubleshooting
 published: True

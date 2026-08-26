@@ -2,6 +2,7 @@
 title: DoughnutSeries
 page_title: DoughnutSeries
 description: RadChartView DoughnutSeries is visualized on the screen as separate slices representing each of the data points.
+components: ["chartview"]
 slug: radchartview-series-doughnutseries
 tags: doughnutseries
 published: True

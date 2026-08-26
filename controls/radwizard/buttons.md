@@ -2,6 +2,7 @@
 title: Wizard Buttons
 page_title: Wizard Buttons
 description: Check our &quot;Wizard Buttons&quot; documentation article for the RadWizard {{ site.framework_name }} control.
+components: ["wizard"]
 slug: wizard-buttons
 tags: wizard, buttons
 published: True

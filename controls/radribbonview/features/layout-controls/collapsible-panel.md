@@ -2,6 +2,7 @@
 title: Collapsible Panel
 page_title: Collapsible Panel
 description: Check our &quot;Collapsible Panel&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-collapsible-panel
 tags: collapsible,panel
 published: True

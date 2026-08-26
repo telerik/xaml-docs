@@ -2,6 +2,7 @@
 title: Styles Dialog
 page_title: Styles Dialog
 description: Check our &quot;Styles Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-styles
 tags: styles,dialog,change
 published: True

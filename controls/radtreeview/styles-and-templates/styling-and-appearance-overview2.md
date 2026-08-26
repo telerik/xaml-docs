@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article provides an overview of the different topics that cover the customization of the RadTreeView and RadTreeViewItem visuals.
+components: ["treeview"]
 slug: radtreeview-styling-and-appearance-overview2
 tags: overview
 published: True

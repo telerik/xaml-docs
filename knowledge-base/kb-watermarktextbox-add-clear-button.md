@@ -1,6 +1,7 @@
 ---
 title: Add Clear Button to WatermarkTextBox
 description: How to add a button which clears the text of the WatermarkTextBox Control.
+components: ["watermarktextbox"]
 page_title: Button to Clear The Text of the WatermarkTextBox Control
 type: how-to
 slug: kb-watermarktextbox-add-clear-button

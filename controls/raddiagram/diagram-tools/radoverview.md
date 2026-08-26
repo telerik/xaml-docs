@@ -2,6 +2,7 @@
 title: Tools Overview
 page_title: Tools Overview
 description: Check our &quot;Tools Overview&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-tools-overview
 tags: tools,overview
 published: True

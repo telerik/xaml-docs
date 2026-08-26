@@ -2,6 +2,7 @@
 title: Key Properties and Methods
 page_title: Key Properties and Methods
 description: Check our &quot;Key Properties and Methods&quot; documentation article for the RadMultiColumnComboBox WPF control.
+components: ["multicolumncombobox"]
 slug: multicolumncombobox-dropdown-key-properties-and-methods
 tags: key, properties, methods
 published: True

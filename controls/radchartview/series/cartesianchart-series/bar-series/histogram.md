@@ -2,6 +2,7 @@
 title: Histogram
 page_title: Histogram
 description: Check our &quot;Histogram&quot; (ScatterRangeBarSeries) documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-barseries-histogram
 tags: scatterrangebarseries,histogram
 published: True

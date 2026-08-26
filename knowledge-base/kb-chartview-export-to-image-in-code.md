@@ -2,6 +2,7 @@
 title: Export RadChartView with SeriesProvider in Code
 page_title: Save RadCartesianChart to Image Without Adding it to View
 description: How to export RadChartView with series provider to picture without adding it to the visual tree.
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-export-to-image-in-code
 position: 

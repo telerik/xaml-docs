@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadWatermarkTextBox {{ site.framework_name }} control.
+components: ["watermarktextbox"]
 slug: radwatermarktextbox-overview
 tags: overview
 published: True

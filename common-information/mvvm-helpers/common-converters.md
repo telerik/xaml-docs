@@ -2,6 +2,7 @@
 title: Converters
 page_title: Converters 
 description: This article describe Telerik built-in converters which can be used.
+components: ["general"]
 slug: common-converters
 tags: converter
 published: True

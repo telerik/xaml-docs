@@ -2,6 +2,7 @@
 title: Create Scrollable Menus
 page_title: Create Scrollable Menus
 description: Check our &quot;Create Scrollable Menus&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-how-to-create-scrollable-menus
 tags: create,scrollable,menus
 published: True

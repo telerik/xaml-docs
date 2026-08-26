@@ -2,6 +2,7 @@
 title: Convert Project
 page_title: Convert Project
 description: This article shows how to convert a standard WPF project to a Progress Telerik WPF project.
+components: ["general"]
 slug: radcontrols-for-wpf-vs-extensions-project-convert
 tags: project,configuration
 published: True

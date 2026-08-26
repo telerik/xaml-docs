@@ -1,6 +1,7 @@
 ---
 title: Get RadDocument Elements Between Annotation Range in RadRichTextBox
 description: Learn how to get the elements between AnnotationRangeStart and AnnotationRangeEnd in RadRichTextBox
+components: ["richtextbox"]
 type: how-to
 page_title: Getting the Inlines In Annotation Range in RichTextBox
 meta_title: Iterating the DocumentElement Objects In Annotation Range of RichTextBox

@@ -2,6 +2,7 @@
 title: Smart Labels
 page_title: Smart Labels
 description: Check our &quot;Smart Labels&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-smart-labels
 tags: smart,labels
 published: True

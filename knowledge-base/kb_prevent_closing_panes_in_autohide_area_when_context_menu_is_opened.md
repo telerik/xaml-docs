@@ -1,6 +1,7 @@
 ---
 title: Prevent the Closing of Panes in the Auto-Hide Area When ContextMenu is Opened
 description: This article demonstrates how to prevent RadPanes from closing in the auto-hide area when a ContextMenu is opened.
+components: ["docking"]
 type: how-to
 page_title: Disable Auto Hiding RadPanes While Right Click Menu is Shown
 slug: kb-prevent-panes-auto-hide-context-menu-is-opened

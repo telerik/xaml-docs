@@ -2,6 +2,7 @@
 title: UriImageProvider
 page_title: UriImageProvider
 description: Check our &quot;UriImageProvider&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-uriimageprovider
 tags: uriimageprovider
 published: True

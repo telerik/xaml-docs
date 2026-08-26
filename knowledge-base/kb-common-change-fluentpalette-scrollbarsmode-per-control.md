@@ -1,6 +1,7 @@
 ---
 title: Set the FluentPalette ScrollBarsMode on a Single Control
 description: Replace the ThemeHelper.ScrollBarsMode attached property for a specific ScrollViewer control.
+components: ["general"]
 page_title: Change ScrollBarsMode per Control in the Fluent Theme
 slug: kb-common-change-fluentpalette-scrollbarsmode-per-control
 position: 0

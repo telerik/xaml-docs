@@ -1,6 +1,7 @@
 ---
 title: Show Popup on Top of RadAutoCompleteBox
 description: Display auto suggestion list above the RadAutoCompleteBox control.
+components: ["autocompletebox"]
 type: how-to
 page_title: Align the search results dropdown of RadAutoCompleteBox at Top
 slug: kb-autocompletebox-show-popup-on-top

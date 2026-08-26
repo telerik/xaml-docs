@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article lists the main features of the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-overview
 tags: overview,radsyntaxeditor
 position: 0

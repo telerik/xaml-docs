@@ -2,6 +2,7 @@
 title: Tables Dialogs
 page_title: Tables Dialogs
 description: Check our &quot;Tables Dialogs Changes&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-tables
 tags: tables,dialogs,insert,modify,manage
 published: True

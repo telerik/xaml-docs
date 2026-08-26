@@ -2,6 +2,7 @@
 title: Axes
 page_title: Axes
 description: Check our &quot;Axes&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
+components: ["chartview3d"]
 slug: radchartview3d-axes
 tags: axes, 3d, chartview, linearaxis3d, categoricalaxis3d
 published: True

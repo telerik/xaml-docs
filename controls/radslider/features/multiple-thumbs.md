@@ -2,6 +2,7 @@
 title: Multiple Thumbs
 page_title: Multiple Thumbs
 description: Check our &quot;Multiple Thumbs&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+components: ["slider"]
 slug: radslider-multiple-thumbs
 tags: multiple, thumbs, ranges, slider
 published: True

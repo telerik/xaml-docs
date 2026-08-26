@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization
 description: Check our &quot;UI Virtualization&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-ui-virtualization
 tags: ui,virtualization
 published: True

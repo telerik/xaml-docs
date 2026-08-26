@@ -2,6 +2,7 @@
 title: Enable Row Reordering within two RadGridView-s
 page_title: Enable Row Reordering within two RadGridView-s
 description: Learn how to implement additional functionality to Telerik's {{ site.framework_name }} DataGrid by enabling row reordering within two RadGridView-s.
+components: ["gridview"]
 slug: radgridview-row-reorder
 tags: enable,row,reordering,within,two,radgridview-s
 published: True

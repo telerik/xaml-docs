@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article describes the RadTabbedWindow events.
+components: ["tabbedwindow"]
 slug: radtabbedwindow-events
 tags: overview
 published: True

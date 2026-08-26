@@ -2,6 +2,7 @@
 title: How to Use RadDocking in Prism
 page_title: How to Use RadDocking in Prism
 description: Check our &quot;How to Use RadDocking in Prism&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-how-to-use-raddocking-in-prism
 tags: how,to,prism
 published: True

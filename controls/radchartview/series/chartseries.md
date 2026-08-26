@@ -2,6 +2,7 @@
 title: Chart Series Overview
 page_title: Chart Series Overview
 description: Check our &quot;Chart Series Overview&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-chartseries
 tags: chart,series,overview
 published: True

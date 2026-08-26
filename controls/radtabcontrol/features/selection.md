@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: This article goes over the selection feature of the RadTabControl.
+components: ["tabcontrol"]
 slug: radtabcontrol-features-selection
 tags: selection
 published: True

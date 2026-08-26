@@ -2,6 +2,7 @@
 title: Highlighting Items
 page_title: Highlighting Items
 description: Check our &quot;Highlighting Items&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-items-highlighting
 tags: highlighting,items
 published: True

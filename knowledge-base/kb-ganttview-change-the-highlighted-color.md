@@ -1,6 +1,7 @@
 ---
 title: Change the Highlight Color for the Highlighted Items of RadGanttView
 description: This article will show you how to change the highlight color for the highlighted items of RadGanttView.
+components: ["ganttview"]
 page_title: Use Different Color for the Highlighted Items of RadGanttView
 type: how-to
 slug: kb-ganttview-change-the-highlighted-color

@@ -2,6 +2,7 @@
 title: Polar Axis
 page_title: Polar Axis
 description: Check our &quot;Polar Axis&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-polaraxis
 tags: polar,axis
 published: True

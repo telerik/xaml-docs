@@ -2,6 +2,7 @@
 title: Zooming
 page_title: Zooming
 description: This article demonstrates the zooming capabilities of the RadImageEditor control.
+components: ["imageeditor"]
 slug: radimageeditor-features-zooming
 tags: zooming
 published: True

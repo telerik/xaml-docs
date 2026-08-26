@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article lists the most important features of the RadColorPicker control. 
+components: ["colorpicker"]
 slug: radcolorpicker-overview
 tags: overview
 published: True

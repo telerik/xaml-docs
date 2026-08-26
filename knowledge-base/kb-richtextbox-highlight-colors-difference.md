@@ -1,6 +1,7 @@
 ---
 title: Highlight Colors Difference Between MS Word and RadRichTextBox
 description: This article will describe the difference between the highlight colors of MS Word and RadRichTextBox.
+components: ["richtextbox"]
 page_title: Difference of Highlight Colors in Ms Word and RadRichTextBox
 type: how-to
 slug: kb-radrichtextbox-difference-in-the-highlighted-colors

@@ -1,6 +1,7 @@
 ---
 title: Track changes in workbook
 description: Learn how to track whether the content of a Workbook has been modified.
+components: ["spreadsheet"]
 type: how-to
 page_title: Track changes in workbook
 slug: workbook-track-changes

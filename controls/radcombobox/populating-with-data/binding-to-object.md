@@ -2,6 +2,7 @@
 title: Binding to Collection
 page_title: Binding to Collection
 description: This article demonstrates how to bind RadComboBox to a collection of business objects. It also shows the use of the ItemTemplate and DisplayMemberPath properties.
+components: ["combobox"]
 slug: radcombobox-populating-with-data-binding-to-object
 tags: binding,to,object
 published: True

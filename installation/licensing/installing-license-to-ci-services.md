@@ -2,6 +2,7 @@
 title: Adding License Key to CI Services
 page_title: Installing License Key to CI Services
 description: The article describes how to install a license key for the Telerik UI for WPF product to CI Services.
+components: ["general"]
 slug: installing-license-to-ci-services
 tags: installing,ui,for,wpf,file,license,key,ci,service,continuous,integration,cd,cicd
 published: True

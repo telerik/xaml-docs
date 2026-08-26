@@ -2,6 +2,7 @@
 title: Customize the TimeRuler Data and Containers
 page_title: Customize the TimeRuler Data and Containers
 description: Check our &quot;Customize the TimeRuler Data and Containers&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-howto-customize-the-timeruler
 tags: customize,the,timeruler,data,and,containers
 published: True

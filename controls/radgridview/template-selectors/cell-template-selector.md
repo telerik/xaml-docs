@@ -2,6 +2,7 @@
 title: CellTemplateSelector and CellEditTemplateSelector
 page_title: CellTemplateSelector and CellEditTemplateSelector
 description: Learn how to apply different data templates to grid cells by using the CellTemplateSelector and CellEditTemplateSelector properties of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-cell-template-selector
 tags: celltemplateselector
 published: True

@@ -2,6 +2,7 @@
 title: Relative Measurements
 page_title: Relative Measurements
 description: Check our &quot;Relative Measurements&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radgauge-features-relative-measurements
 tags: relative,measurements
 published: True

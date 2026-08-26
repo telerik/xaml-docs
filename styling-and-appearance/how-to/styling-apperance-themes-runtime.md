@@ -2,6 +2,7 @@
 title: Switching Themes at Runtime
 page_title: Switching Themes at Runtime
 description: This article demonstrates how to switch the themes at runtime while using the implicit styling mechanism.
+components: ["general"]
 slug: styling-apperance-themes-runtime
 tags: switching,themes,at,runtime
 published: True

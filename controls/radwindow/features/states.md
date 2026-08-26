@@ -2,6 +2,7 @@
 title: States
 page_title: States
 description: Check our &quot;States&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-states
 tags: states
 published: True

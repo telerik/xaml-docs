@@ -2,6 +2,7 @@
 title: Material Theme
 page_title: Material Theme
 description: The article shows the Telerik WPF Material theme and its features and colors.
+components: ["general"]
 slug: common-styling-appearance-material-theme
 tags: material,theme,glyphs,fontsize,fontfamily,shadow
 published: True

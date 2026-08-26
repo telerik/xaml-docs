@@ -1,6 +1,7 @@
 ---
 title: Set Can Content Scroll of TaskBoard Columns
 description: This article showcases how to set the ScrollViewer.CanContentScroll on the RadTaskBoard's columns.
+components: ["taskboard"]
 page_title: TaskBoard Columns With Set Can Content Scroll
 type: how-to
 slug: taskboard-columns-content-scroll

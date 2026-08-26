@@ -2,6 +2,7 @@
 title: Handle Item Clicks
 page_title: Handle Item Clicks
 description: Check our &quot;Handle Item Clicks&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-how-to-handle-item-clicks
 tags: handle,item,clicks
 published: True

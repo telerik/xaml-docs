@@ -2,6 +2,7 @@
 title: SDK Samples Browser Cannot Be Installed or Crashes
 page_title: Errors when Installing or Running the SDK Samples Browser
 description: This article lists the possible errors when installing and running the SDK Samples Browser and provides possible solutions for them.
+components: ["general"]
 type: troubleshooting
 slug: kb-sdk-samples-browser-cannot-be-installed-or-run
 position: 0

@@ -2,6 +2,7 @@
 title: Validation
 page_title: Validation
 description: Check our &quot;Validation&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-features-validation
 tags: validation, idataerrorinfo
 published: True

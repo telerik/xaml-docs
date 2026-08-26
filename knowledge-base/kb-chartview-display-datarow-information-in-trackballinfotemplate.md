@@ -2,6 +2,7 @@
 title: How to Display DataTable DataRow Information in TrackBallInfoTemplate
 page_title: Displaying DataTable DataRow Data in Series's TrackBallInfoTemplate
 description: This article explains how to bind DataRow information in TrackBallInfoTemplate.
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-datarow-info-in-trackballinfotemplate
 position: 0

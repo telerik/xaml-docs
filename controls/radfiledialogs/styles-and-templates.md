@@ -2,6 +2,7 @@
 title: Styles and Templates
 page_title: Styles and Templates
 description: Check our &quot;Styles and Templates&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-styles-and-templates
 tags: styles,templates
 published: True

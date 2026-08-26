@@ -2,6 +2,7 @@
 title: Ribbon Backstage
 page_title: Ribbon Backstage
 description: Check our &quot;Ribbon Backstage&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-ribbon-backstage
 tags: ribbon,backstage
 published: True

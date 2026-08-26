@@ -1,6 +1,7 @@
 ---
 title: Restrict the First Axis Label to be Within the RadChartView Pane Width
 description: "How to restrict the first axis label to be within the plot area width of CartesianChart element."
+components: ["chartview"]
 type: how-to
 page_title: Avoid First Axis Label to be Rendered Outside of the Plot Area Clip of RadChartView.
 slug: kb-chartview-clip-first-label-to-plotarea

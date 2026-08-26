@@ -2,6 +2,7 @@
 title: DataBinding
 page_title: DataBinding
 description: This article describes how you can setup a databound diagram. It also shows how you can perform two-way updates between the viewmodel and the UI.
+components: ["diagram"]
 slug: raddiagram-data-databinding
 tags: databinding
 published: True

@@ -2,6 +2,7 @@
 title: SurfaceSeries3D
 page_title: SurfaceSeries3D
 description: This article describes the SurfaceSeries3D of RadChartView3D.
+components: ["chartview3d"]
 slug: radchartview3d-surfaceseries3d
 tags: axes, 3d, chartview, surface, surfaceseries3d
 published: True

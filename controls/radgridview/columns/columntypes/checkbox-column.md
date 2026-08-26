@@ -2,6 +2,7 @@
 title: CheckBox Column
 page_title: CheckBox Column
 description: Find out how you can display a checkbox for each grid row using the CheckBox column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-checkbox-column
 tags: checkbox,column
 published: True

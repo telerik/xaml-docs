@@ -2,6 +2,7 @@
 title: Series Labels
 page_title: Label Definition
 description: Check our &quot;Label Definition&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-label-definition
 tags: label,definition
 published: True

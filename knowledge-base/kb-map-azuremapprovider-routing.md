@@ -2,6 +2,7 @@
 title: Implement Routing Functionality with the Azure Maps Services
 page_title: Routing Support Using Azure Maps Services
 description: This article showcases how to achieve routing using the Azure Maps services.
+components: ["map"]
 type: how-to
 slug: kb-map-azuremapprovider-routing
 tags: radmap, map, azure, search, routing, azure map, provider

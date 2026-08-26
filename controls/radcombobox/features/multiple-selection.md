@@ -2,6 +2,7 @@
 title: Multiple Selection
 page_title: Multiple Selection
 description: This article will describe the Multiple Selection feature of the RadComboBox. 
+components: ["combobox"]
 slug: radcombobox-features-multiple-selection
 tags: multiple, selection
 published: True

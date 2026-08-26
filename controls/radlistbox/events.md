@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadListBox {{ site.framework_name }} control.
+components: ["listbox"]
 slug: radlistbox-events
 tags: events
 published: True

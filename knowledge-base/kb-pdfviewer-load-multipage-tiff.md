@@ -1,6 +1,7 @@
 ---
 title: Loading a multipage Tiff file in a RadPdfViewer
 description: Create a PDF document from a multipage TIFF file and show it in the RadPdfViewer.
+components: ["pdfviewer"]
 type: how-to
 page_title: How to show a multipage Tiff file in the RadPdfViewer
 slug: kb-pdfviewer-load-multipage-tiff

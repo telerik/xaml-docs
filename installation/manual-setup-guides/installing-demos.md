@@ -2,6 +2,7 @@
 title: Installing WPF Demos
 page_title: Installing WPF Demos application
 description: Installing WPF Demos application.
+components: ["general"]
 slug: installing-wpf-demos
 tags: installing, wpf, demos
 published: True

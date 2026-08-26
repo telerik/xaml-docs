@@ -2,6 +2,7 @@
 title: TrixIndicator
 page_title: TrixIndicator
 description: Check our &quot;TrixIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-trixindicator
 tags: financial, indicators, trixindicator
 publish: True

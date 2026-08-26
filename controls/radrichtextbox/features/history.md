@@ -2,6 +2,7 @@
 title: History
 page_title: History
 description: Check our &quot;History&quot; documentation article for the RadRichTextBox control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-history
 tags: history
 published: True

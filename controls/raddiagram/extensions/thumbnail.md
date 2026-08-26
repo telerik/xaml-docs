@@ -2,6 +2,7 @@
 title: Thumbnail
 page_title: Thumbnail
 description: Check our &quot;Thumbnail&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-extensions-thumbnail
 tags: thumbnail
 published: True

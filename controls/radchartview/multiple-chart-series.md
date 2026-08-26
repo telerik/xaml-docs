@@ -2,6 +2,7 @@
 title: Multiple Chart Series
 page_title: Multiple Chart Series
 description: This article shows how to display multiple chart series visualization in the same RadChartView plot area.
+components: ["chartview"]
 slug: radchartview-multiple-series
 tags: multiline,mutlibar,chart,multiple,visualization
 publish: True

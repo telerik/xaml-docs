@@ -2,6 +2,7 @@
 title: Telerik UI for WinForms Controls in WPF Application
 page_title: Telerik UI for WinForms Controls in WPF Application
 description: This article demonstrates how the Telerik UI for WinForms controls can be integrated in a {{ site.framework_name }} application.
+components: ["general"]
 slug: wf-controls-wpf-app
 tags: wpf, controls, winforms, application, integration
 published: True

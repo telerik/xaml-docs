@@ -1,6 +1,7 @@
 ---
 title: Formatting Display of DateTime Values in RadComboBox
 description: "How to convert all DateTime values to list of formatted strings in RadComboBox."
+components: ["combobox"]
 type: how-to
 page_title: How to Display DateTime Values as Formatted Strings in RadComboBox
 slug: kb-combobox-datetimevalues-to-formattedstrings

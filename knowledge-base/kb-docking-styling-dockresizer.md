@@ -1,6 +1,7 @@
 ---
 title: How to edit Dockresizer
 description: How to style the resizer element of RadDocking.
+components: ["docking"]
 type: how-to
 page_title: Customizing the normal and preview state colors of the GridResizer
 slug: kb-docking-styling-dockresizer

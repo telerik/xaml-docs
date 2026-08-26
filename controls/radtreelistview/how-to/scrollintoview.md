@@ -2,6 +2,7 @@
 title: Scroll Item into View
 page_title: Scroll Item into View
 description: Check our &quot;Scroll Item into View&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-how-to-scrollintoview
 tags: scroll,item,into,view
 published: True

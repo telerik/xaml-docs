@@ -2,6 +2,7 @@
 title: Badge is Missing When a Control has a Custom Control Template
 page_title: Control with Custom Control Template Does Not Display a RadBadge that is Set to it
 description: The RadBadge is not present when a control has a custom control template set to it.
+components: ["badge"]
 type: how-to
 slug: kb-badge-missing-with-custom-control-template-for-control
 position: 0

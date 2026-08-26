@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadEntityFrameworkDataSource WPF control.
+components: ["entityframeworkdatasource"]
 slug: entityframework-getting-started
 tags: getting,started
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Selection not Displayed Correctly when Special Slots are Used
 description: The selection is not highlighted correctly when using special slots.
+components: ["scheduleview"]
 type: troubleshooting
 page_title: Selected Slots Not Drawn Properly when Using Special Slots
 slug: kb-scheduleview-selection-not-correct-when-using-special-slots

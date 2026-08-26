@@ -2,6 +2,7 @@
 title: Export
 page_title: Export
 description: Export to PDF.
+components: ["chartview"]
 slug: radchartview-export
 tags: export, pdf, radchartview, chartview
 published: True

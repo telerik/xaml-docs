@@ -1,6 +1,7 @@
 ---
 title: Removing Connected Connections on Item Deletion in RadDiagram
 description: How to automatically remove connections in RadDiagram when deleting a RadDiagramShape that the connections are attached to.
+components: ["diagram"]
 type: how-to
 page_title: Delete RadDiagramConnections When Removing Shapes in RadDiagram
 slug: kb-diagram-remove-connections-on-item-deletion

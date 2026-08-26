@@ -1,6 +1,7 @@
 ---
 title: Convert Self-Referencing Data Model to Hierarchical Data Structure in RadTreeListView
 description: Learn how to present hierarchical data in RadTreeListView by converting self-referencing data into a hierarchical structure suitable for the control.
+components: ["treelistview"]
 type: how-to
 page_title: Convert Self-Referencing Data ot Hierarchy for Use with RadTreeListView
 slug: kb-treelistview-convert-flat-data-to-hierarchical-data

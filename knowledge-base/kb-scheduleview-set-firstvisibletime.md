@@ -2,6 +2,7 @@
 title: How do I Set FirstVisibleTime on DayView and WeekView Definitions
 page_title: Apply First Visible Time Different Than 12 o Clock When Switching View Definitions
 description: How to change the first FirstVisibleTime of RadScheduleView when the active view definition gets changed. 
+components: ["scheduleview"]
 type: how-to
 slug: kb-scheduleview-set-firstvisibletime
 position: 0

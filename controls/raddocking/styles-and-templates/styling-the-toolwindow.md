@@ -2,6 +2,7 @@
 title: Styling the ToolWindow
 page_title: Styling the ToolWindow
 description: This article will demonstrate how to create a style targeting ToolWindow.
+components: ["docking"]
 slug: raddocking-styling-the-toolwindow
 tags: styling,the,toolwindow
 published: True

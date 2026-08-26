@@ -2,6 +2,7 @@
 title: Mouse Tools
 page_title: Mouse Tools
 description: Check our &quot;Mouse Tools&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-mouse-tools
 tags: mouse,tools
 published: True

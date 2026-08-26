@@ -2,6 +2,7 @@
 title: Populating RadTileList with Tiles 
 page_title: Populating RadTileList with Tiles 
 description: Check our &quot;Populating RadTileList with Tiles&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+components: ["tilelist"]
 slug: radtilelist-getting-started-populating-with-tiles
 tags: populating,radtilelist,with,tiles,
 published: True

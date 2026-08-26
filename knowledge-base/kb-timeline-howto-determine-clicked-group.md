@@ -1,6 +1,7 @@
 ---
 title: How to determine what group was clicked inside
 description: Find out within which group did a mouse click happen.
+components: ["timeline"]
 type: how-to
 page_title: Check which TimelineItemGroupControl was clicked
 slug: kb-timeline-howto-determine-clicked-group

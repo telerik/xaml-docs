@@ -2,6 +2,7 @@
 title: Tiles Orientation
 page_title: Tiles Orientation - TileList - Features
 description: Check our &quot;Tiles Arrangement&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+components: ["tilelist"]
 slug: radtilelist-tiles-arrangement
 tags: verticalalignment,horizontal,orietation
 published: True

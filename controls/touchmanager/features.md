@@ -2,6 +2,7 @@
 title: Features
 page_title: Features - TouchManager
 description: This article lists the main properties and methods exposed by the TouchManager control.
+components: ["touchmanager"]
 slug: touchmanager-features
 tags: touch,manager,touchmanager,features,properties,methods,gestures,swipe,tap,distance,duration,
 published: True

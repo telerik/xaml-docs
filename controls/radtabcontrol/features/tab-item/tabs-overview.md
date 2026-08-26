@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article goes over the more important features of the RadTabItem.
+components: ["tabcontrol"]
 slug: radtabcontrol-features-tabs-overview
 tags: overview
 published: True

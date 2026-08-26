@@ -1,6 +1,7 @@
 ---
 title: Allow Line Selection in RadChartView LineSeries
 description: How to implement custom RadChartView LineSeries selection that happens on line click instead of data point click.
+components: ["chartview"]
 type: how-to
 page_title: Enable Selection on Click Over the LineSeries of RadCartesianChart
 slug: kb-chartview-line-series-selection

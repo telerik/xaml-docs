@@ -2,6 +2,7 @@
 title: Exception Handling 
 page_title: Exception Handling 
 description: Check our &quot;Exception Handling&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-document-model-exceptionhandling
 tags: exception,handling,
 published: True

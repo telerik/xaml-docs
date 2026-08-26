@@ -2,6 +2,7 @@
 title: IconTemplateSelector
 page_title: IconTemplateSelector
 description: This article will demonstrate the IconTemplateSelector property of the RadFilePathPicker control.
+components: ["filepathpicker"]
 slug: radfilepathpicker-icontemplateselector
 tags: radfilepathpicker, icontemplateselector
 position: 0

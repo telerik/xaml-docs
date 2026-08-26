@@ -2,6 +2,7 @@
 title: Implementation
 page_title: Implementation
 description: Check our &quot;Implementation&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-commands-implementation
 tags: commands, implementation
 published: True

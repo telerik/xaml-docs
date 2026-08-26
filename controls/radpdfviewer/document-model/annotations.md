@@ -2,6 +2,7 @@
 title: Annotations
 page_title: Annotations
 description: Check our &quot;Annotations&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-document-model-annotations
 tags: annotations
 published: True

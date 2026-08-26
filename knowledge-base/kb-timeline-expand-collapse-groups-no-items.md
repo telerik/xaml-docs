@@ -1,6 +1,7 @@
 ---
 title: Expanding or Collapsing Groups While New Items are Added Cause the RadTimeline to Display No Items
 description: Expand/collapse groups when new elements inserted at runtime leads to blank control.
+components: ["timeline"]
 type: troubleshooting
 page_title: Expanding and Collapsing Groups After New Items are Added Cause the RadTimeline to Show No Items
 slug: kb-timeline-expand-collapse-groups-no-items

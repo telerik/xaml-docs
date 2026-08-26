@@ -2,6 +2,7 @@
 title: Undo and Redo
 page_title: Undo and Redo
 description: Check our &quot;Undo and Redo&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-undo-redo
 tags: undo,and,redo
 published: True

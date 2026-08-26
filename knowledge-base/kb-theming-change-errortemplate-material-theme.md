@@ -1,6 +1,7 @@
 ---
 title: Validation Tooltip Clipped When No Space
 description: The error template visual feedback is clipped if it goes outside of the element that hosts its owner control
+components: ["general"]
 type: troubleshooting
 page_title: Error Template Position Outside of Window If Not Enough Space in Material Theme
 slug: kb-theming-change-errortemplate-material-theme

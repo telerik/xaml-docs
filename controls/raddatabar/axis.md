@@ -2,6 +2,7 @@
 title: Axis
 page_title: Axis
 description: Check our &quot;Axis&quot; documentation article for the RadDataBar {{ site.framework_name }} control.
+components: ["databar"]
 slug: databar-axis
 tags: axis,radhorizontalaxis,radverticalaxis
 published: True

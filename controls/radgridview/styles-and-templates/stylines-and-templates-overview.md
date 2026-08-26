@@ -2,6 +2,7 @@
 title: Overview
 page_title: Styling Overview
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about the possible ways by which you can change the visual appearance of its elements.
+components: ["gridview"]
 slug: gridview-stylines-and-templates-overview
 tags: overview
 published: True

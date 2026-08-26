@@ -2,6 +2,7 @@
 title: Scroll and Zoom 
 page_title: Scroll and Zoom 
 description: RadChartView provides zoom and scroll interactivity via the ChartPanAndZoomBehavior class.
+components: ["chartview"]
 slug: radchartview-features-panzoom
 tags: scroll,and,zoom,
 published: True

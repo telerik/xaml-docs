@@ -2,6 +2,7 @@
 title: Paging
 page_title: Paging
 description: Check our &quot;Paging&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: radaiprompt-paging
 tags: paging, radaiprompt
 published: True

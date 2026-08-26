@@ -2,6 +2,7 @@
 title: Customizing FunnelChart Series
 page_title: Customizing FunnelChart Series
 description: Check our &quot;Customizing FunnelChart Series&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-styles-and-templates-customizing-funnelchart-series
 tags: customizing,funnelchart,series
 published: True

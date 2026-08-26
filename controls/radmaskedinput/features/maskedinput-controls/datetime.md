@@ -2,6 +2,7 @@
 title: MaskedDateTimeInput
 page_title: MaskedDateTimeInput
 description: Check our &quot;MaskedDateTimeInput&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-features-controls-datetime
 tags: maskeddatetimeinput
 published: True

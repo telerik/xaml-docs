@@ -2,6 +2,7 @@
 title: CheckBox Support
 page_title: CheckBox Support
 description: Check our &quot;CheckBox Support&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: check-box-support
 tags: checkbox,support
 published: True

@@ -2,6 +2,7 @@
 title: FunnelSeries
 page_title: FunnelSeries
 description: Check our &quot;FunnelSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-funnelchart-funnelseries
 tags: funnelseries
 published: True

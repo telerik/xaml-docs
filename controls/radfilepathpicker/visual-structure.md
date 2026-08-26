@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: The article demonstrates the Visual Structure of the RadFilePathPicker.
+components: ["filepathpicker"]
 slug: radfilepathpicker-visual-structure
 tags: visual,structure
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Unable to Load the Service Index for Source https://nuget.telerik.com/v3/index.json
 description: Resolve the unable to load service index error for the Telerik NuGet source.
+components: ["installerandvsextensions"]
 page_title: Fix Unable to Load Service Index for Telerik NuGet Source
 type: troubleshooting
 slug: kb-installation-unable-load-service-index-telerik-nuget-feed

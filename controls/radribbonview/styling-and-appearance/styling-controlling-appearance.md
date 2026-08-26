@@ -2,6 +2,7 @@
 title: Controlling Appearance
 page_title: Controlling Appearance
 description: Check our &quot;Controlling Appearance&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-controlling-appearance
 tags: controlling,appearance
 published: True

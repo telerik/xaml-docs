@@ -1,6 +1,7 @@
 ---
 title: Select GridView row on Row Indicator Click 
 description: How to select RadGridView row when you click on the cell on the left side of the row (the row indicator).
+components: ["gridview"]
 type: how-to
 page_title: Row selection on click over the button on the left side of the row.
 slug: kb-gridview-select-row-on-rowindicator-click

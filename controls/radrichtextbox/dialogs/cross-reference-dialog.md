@@ -2,6 +2,7 @@
 title: Cross-Reference Dialog
 page_title: Cross-Reference Dialog
 description: Check our &quot;Cross-Reference Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-cross-reference
 tags: link,insert,cross,reference,dialog
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Replace the RadGridView element in the dropdown
 description: Use a RadTreeView instead of a RadGridView in the RadMultiColumnComboBox dropdown.
+components: ["multicolumncombobox"]
 type: how-to
 page_title: Switch the RadGridView element inside the popup for a RadTreeView.
 slug: kb-multicolumncombobox-howto-replace-gridview-in-dropdown

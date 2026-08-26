@@ -2,6 +2,7 @@
 title: Creating Custom Palettes
 page_title: Creating Custom Palettes
 description: Check our &quot;Creating Custom palettes&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-palettes-custom-palettes
 tags: creating,custom,palettes
 published: True

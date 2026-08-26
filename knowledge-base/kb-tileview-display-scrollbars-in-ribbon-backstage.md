@@ -1,6 +1,7 @@
 ---
 title: How to Show RadTileView Scrollbars in RadRibbonView Backstage
 description: This article shows how to display the scrollbars of a RadTileView in the backstage of a RadRibbonView.
+components: ["tileview"]
 type: how-to
 page_title: Scrolling RadTileView in RadRibbonView Backstage
 slug: kb-tileview-display-scrollbars-in-ribbon-backstage

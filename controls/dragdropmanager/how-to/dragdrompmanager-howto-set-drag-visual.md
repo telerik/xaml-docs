@@ -2,6 +2,7 @@
 title: Set Drag Visual
 page_title: Set Drag Visual
 description: Check our &quot;Set Drag Visual&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
+components: ["dragdropmanager"]
 slug: dragdrompmanager-howto-set-drag-visual
 tags: set,drag,visual
 published: True

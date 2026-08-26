@@ -2,6 +2,7 @@
 title: Styling RadToolBar
 page_title: Styling RadToolBar
 description: Check our &quot;Styling RadToolBar&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
+components: ["toolbar"]
 slug: radtoolbar-style-selector
 tags: style,selector
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadSlideView control.
+components: ["slideview"]
 slug: radslideview-getting-started
 tags: getting started, radslideview
 published: True

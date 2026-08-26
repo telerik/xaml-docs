@@ -2,6 +2,7 @@
 title: Positioning
 page_title: Positioning
 description: This article will describe the ways to position a RadWindow prior to opening.
+components: ["window"]
 slug: radwindow-features-positioning
 tags: positioning
 published: True

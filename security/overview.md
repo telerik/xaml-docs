@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: "Learn Telerik's best security practices, vulnerability reporting, and control-specific security guidelines."
+components: ["general"]
 slug: security-overview
 tags: telerik, security, wpf, redistributing, report
 published: True

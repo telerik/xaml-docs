@@ -1,6 +1,7 @@
 ---
 title: Format the Text Displayed by the MapMouseLocationIndicator Element
 description: This article showcases how to format the text that is displayed by the MapMouseLocationIndicator element.
+components: ["map"]
 page_title: Customize the Format of the Text Shown by the MapMouseLocationIndicator Element
 type: how-to
 slug: kb-map-format-the-text-of-the-mapmouselocationindicator

@@ -1,6 +1,7 @@
 ---
 title: Printing the RadGridView Control with a Print Preview Dialog
 description: This article describes how to show a print preview dialog and print RadGridView
+components: ["gridview"]
 type: how-to
 page_title: How to Open Print Preview Dialog for RadGridView
 slug: kb-gridview-printing

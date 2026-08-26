@@ -2,6 +2,7 @@
 title: Wizard Pages
 page_title: Wizard Pages
 description: Check our &quot;Wizard Pages&quot; documentation article for the RadWizard {{ site.framework_name }} control.
+components: ["wizard"]
 slug: wizard-pages
 tags: wizard, pages
 published: True

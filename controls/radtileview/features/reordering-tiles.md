@@ -2,6 +2,7 @@
 title: Reordering Tiles
 page_title: Reordering Tiles
 description: Check our &quot;Reordering Tiles&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 slug: radtileview-features-reordering-tiles
 tags: reordering, dragging, drop, tiles
 published: True

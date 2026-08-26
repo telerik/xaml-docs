@@ -2,6 +2,7 @@
 title: MovingAverageIndicator
 page_title: MovingAverageIndicator
 description: Check our &quot;MovingAverageIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-movingaverageindicator
 tags: financial, indicators, movingaverageindicator
 publish: True

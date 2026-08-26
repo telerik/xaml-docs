@@ -2,6 +2,7 @@
 title: Toolbar Buttons Visibility
 page_title: Toolbar Buttons Visibility
 description: This article shows how to hide/show the buttons of RadWebCam.
+components: ["webcam"]
 slug: radwebcam-features-toolbar-buttons-visibility
 tags: commands, radwebcamcommands
 published: True

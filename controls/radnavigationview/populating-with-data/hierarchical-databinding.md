@@ -2,6 +2,7 @@
 title: Hierarchical Data Binding
 page_title: Hierarchical Data Binding
 description: This article demonstrates how the RadNavigationView can be bound to a hierarchical collection of custom objects in order to get a menu with nested child items.
+components: ["navigationview"]
 slug: radnavigationview-populating-with-data-hierarchical-databinding
 tags: databinding, populating, data, hierarchical, sub, children, neste
 position: 1

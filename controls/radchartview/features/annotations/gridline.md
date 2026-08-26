@@ -2,6 +2,7 @@
 title: GridLine Annotations
 page_title: GridLine Annotations
 description: This article demonstrates the basic types of annotations available for the RadCartesianChart and RadPolarChart. 
+components: ["chartview"]
 slug: radchartview-annotations-gridline
 tags: gridline,annotations
 published: True

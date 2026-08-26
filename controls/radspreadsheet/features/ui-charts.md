@@ -2,6 +2,7 @@
 title: Charts
 page_title: Charts
 description: Check our &quot;Charts&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-charts
 tags: charts
 published: True

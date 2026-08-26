@@ -2,6 +2,7 @@
 title: Break
 page_title: Break
 description: Check our &quot;Break&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-break
 tags: Break
 published: True

@@ -2,6 +2,7 @@
 title: Validation
 page_title: Validation
 description: Check our &quot;Validation&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-features-validation
 tags: validation
 published: True

@@ -2,6 +2,7 @@
 title: ExportAsync
 page_title: ExportAsync
 description: Learn how to export data from Telerik's {{ site.framework_name }} DataGrid asynchronously by using the ExportAsync method with two parameters.
+components: ["gridview"]
 slug: gridview-export-async
 tags: grid,async,export
 published: True

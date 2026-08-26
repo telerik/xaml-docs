@@ -1,6 +1,7 @@
 ---
 title: Enable Keyboard Input in WPF Window Opened from WinForms Application
 description: This article explains how to enable keyboard input in the Label Filter dialog of RadPivotGrid opened from a WinForms application.
+components: ["pivotgrid"]
 type: how-to
 page_title: Enable Keyboard Input in the RadPivotFieldList Label Filter Window Used in WinForms Application
 slug: kb-pivotgrid-enable-keyboard-input-in-winforms

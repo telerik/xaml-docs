@@ -2,6 +2,7 @@
 title: Navigation Buttons
 page_title: Navigation Buttons
 description: Check our &quot;Navigation Buttons&quot; documentation article for the RadPipsPager control.
+components: ["pipspager"]
 slug: radpipspager-navigation-buttons
 tags: navigation buttons, radpipspager
 published: True

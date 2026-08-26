@@ -1,6 +1,7 @@
 ---
 title: Increase the CheckBox Size of the GridViewSelectColumn
 description: Make the CheckBox displayed in the GridViewSelectColumn larger.
+components: ["gridview"]
 type: how-to
 page_title: Enlarge the CheckBox shown by the GridViewSelectColumn
 slug: kb-gridview-howto-increase-size-checkbox-selectcolumn

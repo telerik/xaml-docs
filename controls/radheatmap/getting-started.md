@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
+components: ["heatmap"]
 slug: radheatmap-getting-started
 tags: getting,started
 published: True

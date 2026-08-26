@@ -1,6 +1,7 @@
 ---
 title: AnimationException in WPF RadBusyIndicator 
 description: Cannot animate the IsEnabled property on a System.Windows.Controls.ContentControl using a System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames in BusyIndicator for WPF.
+components: ["busyindicator"]
 type: troubleshooting
 page_title: AnimationException - Cannot animate the IsEnabled property on System.Windows.Controls.ContentControl Error on BudyIndicator Unloading
 slug: radbusyindicator-wpf-crash-animation

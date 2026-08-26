@@ -2,6 +2,7 @@
 title: Split Container
 page_title: Split Container
 description: Check our &quot;Split Container&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-split-container
 tags: split,container
 published: True

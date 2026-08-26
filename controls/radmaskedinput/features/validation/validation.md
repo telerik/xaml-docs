@@ -2,6 +2,7 @@
 title: Throwing Validation Exceptions
 page_title: Throwing Validation Exceptions
 description: Check our &quot;Throwing Validation Exceptions&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-features-validation
 tags: throwing,validation,exceptions
 published: True

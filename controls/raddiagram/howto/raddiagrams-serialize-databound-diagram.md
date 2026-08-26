@@ -2,6 +2,7 @@
 title: Serialize a Databound Diagram
 page_title: Serialize a Databound Diagram
 description: Check our &quot;Serialize a Databound Diagram&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-howto-serialize-databound-diagram
 tags: serialize,a,databound,diagram
 published: True

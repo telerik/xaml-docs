@@ -2,6 +2,7 @@
 title: TextBoxStyle
 page_title: TextBoxStyle
 description: Check our &quot;TextBoxStyle&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
+components: ["autocompletebox"]
 slug: radautocompletebox-textboxstyle
 tags: textboxstyle
 published: True

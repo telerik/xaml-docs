@@ -2,6 +2,7 @@
 title: Sparkline Types
 page_title: Sparkline Types
 description: Check our &quot;Sparkline Types&quot; documentation article for the RadSparkLine {{ site.framework_name }} control.
+components: ["sparkline"]
 slug: radsparkline-getting-started-types
 tags: visualization,types
 published: True

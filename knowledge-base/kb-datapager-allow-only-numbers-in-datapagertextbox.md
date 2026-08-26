@@ -1,6 +1,7 @@
 ---
 title: Allow Numbers Only in the PageIndex TextBox of RadDataPager
 description: Allow entering only numeric input in the DataPagerTextBox.
+components: ["datapager"]
 page_title: Disable Alphabetical Characters in the Page Index Input of DataPager
 type: how-to
 slug: kb-allow-only-numbers-in-datapagertextbox

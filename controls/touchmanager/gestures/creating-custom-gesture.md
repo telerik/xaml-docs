@@ -2,6 +2,7 @@
 title: Creating a Custom Gesture
 page_title: Creating a Custom Gesture
 description: Custom Gesture.
+components: ["touchmanager"]
 slug: touchmanager-creating-custom-gesture
 tags: creating,gestures,gesture,custom,touch,manager,touchmanager
 published: True

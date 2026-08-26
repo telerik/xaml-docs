@@ -2,6 +2,7 @@
 title: Binding to ADO.NET Data Service
 page_title: Binding to ADO.NET Data Service
 description: Check our &quot;Binding to ADO.NET Data Service&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-populating-with-data-databinding-to-adonet-service
 tags: binding,to,ado.net,data,service
 published: True

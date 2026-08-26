@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: Check our &quot;Key Properties&quot; documentation article for the RadCollectionNavigator {{ site.framework_name }} control.
+components: ["collectionnavigator"]
 slug: collectionnavigator_key_properties
 tags: key,properties
 published: True

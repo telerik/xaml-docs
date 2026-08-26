@@ -1,6 +1,7 @@
 ---
 title: Improve Initial Load Performance of RadSpreadsheet
 description: How to pre-load the RadSpreadsheet control in order to load its WPF/XAML resources beforehand.
+components: ["spreadsheet"]
 type: how-to
 page_title: Improve RadSpreadsheet Performance by Preloading the Associated XAML Resources
 slug: kb-spreadsheet-preload-resources

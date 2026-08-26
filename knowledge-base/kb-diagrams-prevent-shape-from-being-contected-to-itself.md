@@ -1,6 +1,7 @@
 ---
 title: How to Prevent Shapes from Being Connected to Themselves
 description: Way to avoid self connecting the same shape on click over its connector, using ReflexiveRouter and ConnectionManipulationCompleted event.
+components: ["diagram"]
 page_title: Prevent RadDiagramShape from connect to itself.
 type: how-to
 slug: kb-diagrams-prevent-shape-from-being-contected-to-itself

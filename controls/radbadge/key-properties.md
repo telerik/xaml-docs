@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: This article lists and explains the key properties exposed by the RadBadge control.
+components: ["badge"]
 slug: radbadge-key-properties
 tags: radbadge, key, property, properties,badgetype,geometry,anchorposition
 published: True

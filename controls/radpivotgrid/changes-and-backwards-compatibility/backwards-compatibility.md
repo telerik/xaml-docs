@@ -2,6 +2,7 @@
 title: Backwards compatibility
 page_title: Backwards compatibility
 description: Check our &quot;Backwards compatibility&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-backwards-compatibility
 tags: backwards,compatibility
 published: True

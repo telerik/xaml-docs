@@ -2,6 +2,7 @@
 title: Touch Support
 page_title: Touch Support
 description: This article will describe the built-in touch support.
+components: ["general"]
 slug: touch-support
 tags: touch,support
 published: True

@@ -2,6 +2,7 @@
 title: Alignment
 page_title: Alignment
 description: Check our &quot;Alignment&quot; documentation article for the RadExpander {{ site.framework_name }} control.
+components: ["expander"]
 slug: radexpander-features-alignment
 tags: alignment
 published: True

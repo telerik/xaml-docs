@@ -2,6 +2,7 @@
 title: Show/Hide RadRadialMenu When Used As a Context Menu In an MVVM Scenario
 page_title: Change Visibility of RadRadialMenu When Used As a Context Menu Using The MVVM Pattern
 description: How to how to show/hide the RadRadialMenu in an MVVM scenario
+components: ["radialmenu"]
 type: how-to
 slug: kb-radialmenu-show-hide-mvvm
 tags: radradialmenu, radialmenu, mvvm, show, hide, visibility

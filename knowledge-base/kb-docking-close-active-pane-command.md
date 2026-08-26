@@ -1,6 +1,7 @@
 ---
 title: How to Close the Active Pane with a Key Combination
 description: This article explains how to bind the ClosePane command to a key combination in order to close the currently active pane.
+components: ["docking"]
 type: how-to
 page_title: Using the ClosePane Command to Close the Currently Active Pane
 slug: kb-docking-close-active-pane-command

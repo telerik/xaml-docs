@@ -2,6 +2,7 @@
 title: Customize the ToolTip
 page_title: Customize the ToolTip
 description: Check our &quot;Customize the ToolTip&quot; documentation article for the RadRadialMenu {{ site.framework_name }} control.
+components: ["radialmenu"]
 slug: radradialmenu-howto-customize-tooltip
 tags: customize,the,tooltip
 published: True

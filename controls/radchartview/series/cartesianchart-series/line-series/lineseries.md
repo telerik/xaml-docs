@@ -2,6 +2,7 @@
 title: LineSeries
 page_title: LineSeries
 description: Check our &quot;LineSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-lineseries
 tags: lineseries
 published: True

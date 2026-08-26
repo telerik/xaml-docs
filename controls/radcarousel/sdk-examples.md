@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
+components: ["carousel"]
 sdk_example: true
 slug: radcarousel-sdk-examples
 tags: sdk,examples

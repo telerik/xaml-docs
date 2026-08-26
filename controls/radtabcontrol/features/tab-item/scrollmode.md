@@ -2,6 +2,7 @@
 title: ScrollMode
 page_title: ScrollMode
 description: This article describes the ScrollMode property.
+components: ["tabcontrol"]
 slug: radtabcontrol-features-tabs-scrollmode
 tags: scrollmode, tabs
 published: True

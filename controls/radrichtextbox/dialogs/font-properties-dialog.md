@@ -2,6 +2,7 @@
 title: Font Properties Dialog
 page_title: Font Properties Dialog
 description: Check our &quot;Font Properties Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-font-properties
 tags: font,properties,dialog
 published: True

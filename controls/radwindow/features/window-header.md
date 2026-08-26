@@ -2,6 +2,7 @@
 title: Window Header
 page_title: Window Header
 description: Check our &quot;Window Header&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-window-header
 tags: window,header
 published: True

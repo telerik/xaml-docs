@@ -1,6 +1,7 @@
 ---
 title: Remove Space around RadPaneGroup and DocumentHost
 description: How to remove the padding around the pane groups of the RadDocking control.
+components: ["docking"]
 type: how-to
 page_title: Get Rid of the Margin around the RadPaneGroup and DocumentHost
 slug: kb-docking-remove-space-around-panegroup-documenthost

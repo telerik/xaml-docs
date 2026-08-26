@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: This article described the localization strings of the RadDiagramRibbon.
+components: ["diagram"]
 slug: raddiagram-extensions-diagramribbon-localization
 tags: diagram,ribbon,localization
 published: True

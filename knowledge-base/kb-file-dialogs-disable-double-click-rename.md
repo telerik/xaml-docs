@@ -1,6 +1,7 @@
 ---
 title: Disable File Rename on Double Click in ExplorerControl
 description: How to disable file rename on fast double click in RadFileDialogs ExplorerControl.
+components: ["filedialogs"]
 type: how-to
 page_title: Cancel Rename on Fast File Double Click in ExplorerControl
 slug: kb-file-dialogs-disable-double-click-rename

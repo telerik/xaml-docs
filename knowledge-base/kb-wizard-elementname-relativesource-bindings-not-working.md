@@ -1,6 +1,7 @@
 ---
 title: ElementName and RelativeSource Bindings Don't Work in the Content of Not-Selected Wizard Pages
 description: This article explains how to set up the bindings in the wizard pages so that they work even if the page is not selected.
+components: ["wizard"]
 type: troubleshooting
 page_title: Bindings are not Evaluated When Wizard Page is Changed
 slug: kb-wizard-elementname-relativesource-bindings-not-working

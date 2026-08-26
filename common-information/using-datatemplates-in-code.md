@@ -2,6 +2,7 @@
 title: Using DataTemplate in Code
 page_title: Using DataTemplate in Code
 description: This article shows how to get or create a DataTemplate in code using few different approaches.
+components: ["general"]
 slug: using-datatemplate-in-code
 tags: xamlreader,parse,datatemplate,resources
 position: 14

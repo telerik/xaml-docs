@@ -1,6 +1,7 @@
 ---
 title: How to Disable the Scroll Wheel in RadNumericUpDown
 description: Remove the effect of the mouse wheel in RadNumericUpDown.
+components: ["numericupdown"]
 type: how-to
 page_title: Ignore the Effect of the Mouse Wheel in RadNumericUpDown
 slug: kb-numericupdown-howto-disable-mousewheel

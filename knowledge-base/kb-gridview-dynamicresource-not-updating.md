@@ -1,6 +1,7 @@
 ---
 title: DynamicResource not Updating When Used With Properties of GridViewColumn
 description: DynamicResource setting on properties of the Telerik GridViewColumn not updated when the associated resource is changed.
+components: ["gridview"]
 type: troubleshooting
 page_title: DynamicResource Bindings not Updating Header of GridViewDataColumn
 slug: kb-gridview-dynamicresource-not-updating

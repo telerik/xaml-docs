@@ -2,6 +2,7 @@
 title: BubbleSeries
 page_title: BubbleSeries
 description: Check our &quot;BubbleSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-bubbleseries
 tags: BubbleSeries
 published: True

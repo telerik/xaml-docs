@@ -2,6 +2,7 @@
 title: Get the Row or Column Index of the Mouse Position
 page_title: Get the Row or Column Index of the Mouse Position
 description: Check our &quot;Get the Row or Column Index of the Mouse Position&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-get-row-or-column-index-of-the-mouse-position
 tags: row, column, index, mouse
 published: True

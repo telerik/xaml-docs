@@ -2,6 +2,7 @@
 title: Template Structure
 page_title: Template Structure
 description: Check our &quot;Template Structure&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-styles-and-templates-template-structure
 tags: template,structure
 published: True

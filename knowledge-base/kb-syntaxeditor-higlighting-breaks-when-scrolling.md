@@ -2,6 +2,7 @@
 title: Code Highlighting Breaks when Scrolling
 page_title: Incorrect Portions are Highlighted when Scrolling
 description: The code highlighting is incorrect when scrolling the RadSyntaxEditor control horizontally.
+components: ["syntaxeditor"]
 type: troubleshooting
 slug: kb-syntaxeditor-higlighting-breaks-when-scrolling
 position: 0

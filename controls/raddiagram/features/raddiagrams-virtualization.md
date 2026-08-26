@@ -2,6 +2,7 @@
 title: Virtualization
 page_title: Virtualization
 description: Check our &quot;Virtualization&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-virtualization
 tags: virtualization
 published: True

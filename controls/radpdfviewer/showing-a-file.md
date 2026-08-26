@@ -2,6 +2,7 @@
 title: Showing a File
 page_title: Showing a File
 description: Check our &quot;Showing a File&quot; documentation article for the RadPdfViewer WPF control.
+components: ["pdfviewer"]
 slug: radpdfviewer-showing-a-file
 tags: showing,a,file
 published: True

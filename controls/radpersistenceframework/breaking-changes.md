@@ -2,6 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: This article lists the breaking changes introduced in the RadPersistenceFramework for WPF component through the releases.
+components: ["persistenceframework"]
 slug: persistence-framework-breaking-changes
 tags: breaking, changes, backward,compadibility
 published: True

@@ -2,6 +2,7 @@
 title: Display RadGridView Row Details in RadWindow
 page_title: Display Row Details in RadWindow
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to display Row Details in RadWindow.
+components: ["gridview"]
 slug: gridview-how-to-display-row-details-window
 tags: display,radgridview,row,details,in,radwindow
 published: True

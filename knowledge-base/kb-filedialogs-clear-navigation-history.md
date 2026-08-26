@@ -1,6 +1,7 @@
 ---
 title: Clearing Navigation History in RadFileDialogs Explorer Control
 description: Learn how to manipulate or clear the navigation history of the Explorer Control in RadFileDialogs for WPF.
+components: ["filedialogs"]
 type: how-to
 page_title: How to Clear the Navigation History in RadFileDialogs Explorer Control
 slug: kb-filedialogs-clear-navigation-history

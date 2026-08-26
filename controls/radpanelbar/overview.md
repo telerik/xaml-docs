@@ -24,7 +24,7 @@ __RadPanelBar__ is a versatile component allowing you to build different navigat
 
 ## Key Features
 
-* __Hierarchical Data Binding__: You can bind RadPanelBar to various [hierarchical structures]({%slug howto-display-hierarchical-data%}) specific to your application. The control can be bound to a collection of Objects, XML, or you can use a WCF service to populate it.						  
+* __Hierarchical Data Binding__: You can bind RadPanelBar to various [hierarchical structures]({%slug radpanelbar-object-data%}) specific to your application. The control can be bound to a collection of Objects, XML, or you can use a WCF service to populate it.						  
 
 * __Keyboard Support__: Use your keyboard to navigate, expand, collapse or select items in RadPanelBar. Additionally, all corresponding [events]({%slug radpanelbar-events-overview%}) will be fired when using the keys to manage the panelbar items. 
 
@@ -34,9 +34,8 @@ __RadPanelBar__ is a versatile component allowing you to build different navigat
 
 >tip Get started with the control with its [Getting Started]({%slug radpanelbar-populating%}) help article that shows how to use it in a basic scenario.
 
-> Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#PanelBar/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+> Check out the control demos at [demos.telerik.com](https://demos.telerik.com/wpf/).
 
-{% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources
 
 * [Telerik UI for WPF PanelBar Homepage](https://www.telerik.com/products/wpf/panelbar.aspx)
@@ -46,10 +45,9 @@ __RadPanelBar__ is a versatile component allowing you to build different navigat
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF PanelBar Forums](https://www.telerik.com/forums/wpf)
 * [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
-{% endif %}
 
 ## See Also
 
-* [Structure]({%slug radpanelbar-structure%})
-* [Bind to object]({%slug radpanelbar-object-data%})
+* [Visual Structure]({%slug radpanelbar-structure%})
+* [Data Binding]({%slug radpanelbar-object-data%})
 * [Developer Focused Examples]({%slug radpanelbar-sdk-examples%})

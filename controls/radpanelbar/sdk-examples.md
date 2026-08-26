@@ -7,7 +7,7 @@ sdk_example: true
 slug: radpanelbar-sdk-examples
 tags: sdk,examples
 published: True
-position: 2
+position: 8
 ---
 
 # Developer Focused Examples

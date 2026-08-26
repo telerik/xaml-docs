@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding
 description: Check our &quot;Data Binding&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
 slug: radpanelbar-object-data
 tags: bind,to,object,data
 published: True

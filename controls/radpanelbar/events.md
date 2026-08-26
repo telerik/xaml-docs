@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
 slug: radpanelbar-events-overview
 tags: overview
 published: True

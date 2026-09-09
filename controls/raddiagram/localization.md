@@ -45,8 +45,9 @@ The last step is to instantiate the `LocalizationManager` class and set its `Res
 
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and German languages, you can store the localized strings in `Resources.resx` and `Resources.de.resx` files. For the Resources.resx file you can set `ResXFileCodeGenerator` to `Internal` or `Public` and for the others - to `No code generation`. Then, open the project file in a text-mode and insert the code below into the <PropertyGroup> section. In this way you notify the framework about the supported cultures.
 
-
-<snippet id='raddiagram-localization-block_2-xaml' />
+```xml
+<SupportedCultures>en;de</SupportedCultures>
+```
 
 
 ## Localization Using Custom Localization Manager

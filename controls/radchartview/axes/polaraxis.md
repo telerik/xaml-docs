@@ -39,11 +39,11 @@ The radial axis is the circular (angle) axis of the `RadPolarChart`.
 * __MinorTickStyle__: Gets or sets the style applied to minor ticks.
 
 ## Example
-Below is an example of `RadPolarChart` that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
+Below is an example of `RadPolarChart` that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
+
 Below is an example of RadPolarChart that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
 
-```XAML
- <telerik:RadPolarChart Palette="Windows8" MinWidth="400" MinHeight="400"
+<telerik:RadPolarChart Palette="Windows8" MinWidth="400" MinHeight="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 					   HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
      <telerik:RadPolarChart.Grid>
          <telerik:PolarChartGrid />

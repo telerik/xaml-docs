@@ -24,6 +24,7 @@ The following article list Knowledge Base articles related to this section of th
 |[How to set the Command property of the button part]({%slug kb-buttons-splitbutton-howto-bind-command-of-button-part%})|
 |[Minimize and Minus Glyphs are Stretched When Shown in RadPathButton]({%slug kb-buttons-minimize-minus-glyphs-stretched-in-pathbutton%})|
 |[Move the Cursor Away From the RadButton Control]({%slug kb-buttons-manually-move-the-cursor%})|
+|[RadButton TargetType Does Not Match Type of Element in Side-by-Side Add-ins]({%slug kb-buttons-targettype-does-not-match-addins-side-by-side%})|
 
 ## See Also
 

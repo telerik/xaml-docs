@@ -11,7 +11,8 @@ position: 4
 
 # Polar Axis
 
-To create a valid `RadPolarChart`, set its `PolarAxis` and `RadialAxis` properties to `PolarAxis` and `NumericRadialAxis` objects, respectively.
+To create a valid `RadPolarChart`, set its `PolarAxis` and `RadialAxis` properties to `PolarAxis` and `NumericRadialAxis` objects, respectively.
+
 
 ## PolarAxis
 
@@ -38,7 +39,7 @@ The radial axis is the circular (angle) axis of the `RadPolarChart`.
 * __MinorTickStyle__: Gets or sets the style applied to minor ticks.
 
 ## Example
-
+Below is an example of `RadPolarChart` that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
 Below is an example of RadPolarChart that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
 
 ```XAML

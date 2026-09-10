@@ -43,12 +43,13 @@ Below is an example of `RadPolarChart` that demonstrates configuring the polar a
 
 Below is an example of RadPolarChart that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
 
-<telerik:RadPolarChart Palette="Windows8" MinWidth="400" MinHeight="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+<telerik:RadPolarChart Palette="Windows8" MinWidth="400" MinHeight="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
 					   HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
      <telerik:RadPolarChart.Grid>
          <telerik:PolarChartGrid />
      </telerik:RadPolarChart.Grid>
-     <telerik:RadPolarChart.PolarAxis>
+        <telerik:PolarAxis LabelInterval="2" MajorStep="2" Maximum="10" IsInverse="True" />
          <telerik:PolarAxis LabelInterval="2" MajorStep="2" Maximum="10" IsInverse="True"  />
      </telerik:RadPolarChart.PolarAxis>
      <telerik:RadPolarChart.RadialAxis>

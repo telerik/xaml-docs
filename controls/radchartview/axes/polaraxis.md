@@ -11,7 +11,7 @@ position: 4
 
 # Polar Axis
 
-In order to create a valid RadPolarChart object users must set its __PolarAxis__ and __RadialAxis__ properties to __PolarAxis__ and __NumericRadialAxis__ objects respectively.
+To create a valid `RadPolarChart`, set its `PolarAxis` and `RadialAxis` properties to `PolarAxis` and `NumericRadialAxis` objects, respectively.
 
 ## PolarAxis
 

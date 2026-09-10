@@ -15,7 +15,7 @@ The chart axis range is moving from left to right when horizontal and from botto
 
 The axis range direction can be changed by setting the `IsInverse` property of the corresponding chart axis.
 
-In addition to Cartesian axes, `PolarAxis` in `RadPolarChart` also supports `IsInverse` to invert the radial distance (radius) range. For the circular angle axis (`NumericRadialAxis` or `CategoricalRadialAxis`), you can reverse the angle progression from counterclockwise to clockwise using the `SweepDirection` property (`SweepDirection="Clockwise"`).
+In addition to Cartesian axes, `PolarAxis` in `RadPolarChart` supports `IsInverse` to invert the radial distance (radius) range. For the circular angle axis (`NumericRadialAxis` or `CategoricalRadialAxis`), set `SweepDirection="Clockwise"` to make angles advance clockwise.
 
 ```XAML
 	<telerik:RadCartesianChart>

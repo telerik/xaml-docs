@@ -58,7 +58,7 @@ You can edit the `.csproj` file directly to update the versions of all Telerik p
 
 ### Clear Cached Build Artifacts
 
-After updating package versions, clear the local compiler and package cache:
+After updating package versions, clear the local build artifacts:
 
 1. Close Visual Studio.
 2. Delete the `bin` and `obj` folders in your project directory.

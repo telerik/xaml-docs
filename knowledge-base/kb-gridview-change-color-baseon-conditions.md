@@ -47,6 +47,8 @@ To achieve the desired result, you need to create a converter with multiple cond
                 return new SolidColorBrush(Colors.GreenYellow);
             else if (count > 2)
                 return new SolidColorBrush(Colors.Green);
+            if (parameter?.ToString() == "Foreground")
+                return new SolidColorBrush(Colors.Black);
             return new SolidColorBrush(Colors.White);
         }
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -64,7 +66,7 @@ To achieve the desired result, you need to create a converter with multiple cond
         <!-- You can set Background, Foreground (text color), or both based on the converter -->
         <Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellStyle}">
             <Setter Property="Background" Value="{Binding Value, Converter={StaticResource ColorConverter}}"/>
-            <Setter Property="Foreground" Value="{Binding Value, Converter={StaticResource ColorConverter}}"/>
+            <Setter Property="Foreground" Value="{Binding Value, Converter={StaticResource ColorConverter}, ConverterParameter=Foreground}"/>
         </Style>
     </Grid.Resources>
 ```

@@ -52,7 +52,7 @@ The next screen allows you to update the Visual Studio Toolbox with the newly se
 
 * A Visual Studio restart will be required in order to update your toolbox. If the automatic restart fails, a restart should be initiated manually in order to complete the toolbox upgrade.
 
-* The Upgrade Wizard won't work if the Telerik assemblies are installed with a NuGet package. In this case, you can [update the package via the NuGet Package Manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#update-a-package).
+* The Upgrade Wizard won't work if the Telerik assemblies are installed with a NuGet package, or if the project is an SDK-style project targeting modern .NET (.NET 8, .NET 9, .NET 10, etc.). In these scenarios, the wizard displays the message **"Project target framework is not compatible. Please upgrade target framework."** To upgrade such projects, [update the packages via the NuGet Package Manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#update-a-package) or directly in your `.csproj` file. For more details, see the troubleshooting article ["Project Target Framework Is Not Compatible" Error in Upgrade Project Wizard]({%slug kb-upgrade-wizard-target-framework-not-compatible%}).
 
 ## See Also  
  * [Configure a Telerik UI for WPF Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})

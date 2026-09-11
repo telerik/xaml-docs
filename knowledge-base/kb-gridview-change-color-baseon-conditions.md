@@ -1,6 +1,6 @@
 ---
 title: Change the Color or Text Color of GridViewCell Based on a Property's Value
-description: Using a Property's Value to Change the Background or Foreground (text color) of a GridViewCell.
+description: Use a property's value to change the background or foreground (text color) of a GridViewCell in a conditional style.
 components: ["gridview"]
 type: how-to
 page_title: Apply a Different Background or Foreground on the GridViewCell Based on a Condition

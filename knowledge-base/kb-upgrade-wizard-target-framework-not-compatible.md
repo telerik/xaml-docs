@@ -34,7 +34,9 @@ When the wizard inspects an SDK-style or NuGet-based project, it cannot manage t
 
 ## Solution
 
-Do not use the Upgrade Project Wizard for projects that consume Telerik assemblies through NuGet packages or target modern .NET. Instead, update the project using standard NuGet workflows:
+Do not use the Upgrade Project Wizard for SDK-style projects that consume Telerik assemblies through NuGet packages. Instead, update the project using standard NuGet workflows.
+
+If your modern .NET project uses direct Telerik assembly references (without NuGet), update the Telerik DLL references manually as described in [Upgrade Projects via Visual Studio Extension]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}).
 
 ### Update Packages via NuGet Package Manager
 

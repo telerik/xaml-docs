@@ -4,7 +4,7 @@ page_title: Customize the Drop Down Items
 description: This article shows how to customize the appearance of the drop down and the items of RadAutoSuggestBox.
 components: ["autosuggestbox"]
 slug: radautosuggestbox-appearance-customize-drop-down-items
-tags: dropdown,style,customize,item,suggestion,itemtemplate,selector
+tags: dropdown,style,customize,item,suggestion,itemtemplate,selector,icon,emoji
 position: 1
 ---
 

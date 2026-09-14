@@ -25,7 +25,7 @@ __Example 1: Changing the default glyphs or setting emojis__
 	  <!-- Using glyph codes -->
 	  <telerik:RadAutoSuggestBox QueryButtonContent="&#xe019;" ClearButtonContent="&#xe10c;" />
 
-	  <!-- Using emojis or unicode symbols -->
+	  <!-- Using emojis or Unicode symbols -->
 	  <telerik:RadAutoSuggestBox QueryButtonContent="🔍" ClearButtonContent="❌" />
 ```
 

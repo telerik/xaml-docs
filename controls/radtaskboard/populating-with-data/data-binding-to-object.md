@@ -4,7 +4,7 @@ page_title: Binding to Object
 description: Check our &quot;Binding to Object&quot; documentation article for the RadTaskBoard {{ site.framework_name }} control.
 components: ["taskboard"]
 slug: radtaskboard-populating-with-data-data-binding-to-object
-tags: binding,to,object
+tags: binding,to,object,dynamic,add,runtime,troubleshooting
 published: True
 position: 3
 ---
@@ -155,6 +155,14 @@ __Example 3: Defining RadTaskBoard in XAML__
 		</telerik:RadTaskBoard.ItemTemplate>
 	</telerik:RadTaskBoard>
 ```
+
+## Troubleshooting Dynamically Added Tasks
+
+If you add new items to your bound `ObservableCollection` at runtime (for example, on a button click) and they do not appear on the board:
+
+* **Verify the Grouping Property:** RadTaskBoard distributes items into columns using the property specified by `GroupMemberPath` (such as `State`). Ensure that the new item has this property populated with a valid value before or upon calling `Add()`.
+* **Column Matching:** If `AutoGenerateColumns` is set to `False`, the item's grouping value must match the `GroupName` of one of the declared `TaskBoardColumn`s. If no column matches, the task cannot be assigned to any column and will not be displayed.
+* **Null Group Values:** Items where the grouping property evaluates to `null` will not generate a column and will not be rendered.
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})

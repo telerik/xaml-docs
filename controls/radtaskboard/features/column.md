@@ -4,7 +4,7 @@ page_title: Column
 description: Check our &quot;Column&quot; documentation article for the RadTaskBoard {{ site.framework_name }} control.
 components: ["taskboard"]
 slug: radtaskboard-features-column
-tags: Column
+tags: Column,columns,manual columns,autogeneratecolumns,grouping
 published: True
 position: 1
 ---
@@ -104,6 +104,8 @@ __Cancel Auto Generation of a Specific Column__
 When the built-in order of the auto generation of columns does not fit in your case you can declare them manually. You can first disable the autogenerating of the columns by setting the __AutoGenerateColumns__ property of the RadTaskBoard to False. Then you can populate the __Columns__ collection property of the control.
 
 > If the __Header__ property of the TaskBoardColumn is not set, the GroupName property will be used as a Header.
+
+>important When `AutoGenerateColumns` is set to `False`, any items added to the underlying collection at runtime whose `GroupMemberPath` property does not match a defined `TaskBoardColumn.GroupName` (or evaluates to `null`) will not be assigned to any column and will not be displayed on the board.
 
 __Define RadTaskBoard with custom columns__
 

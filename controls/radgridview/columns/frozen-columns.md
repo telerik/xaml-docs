@@ -4,7 +4,7 @@ page_title: Frozen Columns
 description: Find out how easily you can select columns and exclude them from the horizontal or vertical scrolling when using RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 components: ["gridview"]
 slug: gridview-columns-frozen-columns
-tags: frozen,columns
+tags: frozen,columns,splitter,delta,drag delta,splitter delta,splitter threshold
 published: True
 position: 10
 ---
@@ -154,7 +154,7 @@ __Using the FrozenColumnsChanged Event__
 
 ## Frozen Columns Threshold
 
-The RadGridView control allows you to specify a threshold for both the left and right frozen columns' splitters when dragging. This controls the amount of drag that needs to be performed for the column to be frozen or unfrozen. To customize the threshold, you can set utilize the `LeftFrozenColumnSplitterThreshold` and `RightFrozenColumnSplitterThreshold` properties of the RadGridView control. The properties are of type `double` and accepted values are between __0__ and __1__. Setting one of the properties to __0__ means that the column will be frozen/unfrozen immediately when the splitter is dragged and __1__ means that the column will be frozen/unfrozen only when the splitter is dragged all the way to the end of the column's width. The default value for both properties is __0.5__, which means that the column will be frozen/unfrozen when the splitter is dragged at least half of the column's width.
+The RadGridView control allows you to specify a threshold for both the left and right frozen columns' splitters when dragging. The drag delta (distance) required for the splitter to freeze or unfreeze a column is controlled by the `LeftFrozenColumnSplitterThreshold` and `RightFrozenColumnSplitterThreshold` properties of RadGridView. The properties are of type `double` and accepted values are between __0__ and __1__. Setting one of the properties to __0__ means that the column will be frozen/unfrozen immediately when the splitter is dragged and __1__ means that the column will be frozen/unfrozen only when the splitter is dragged all the way to the end of the column's width. The default value for both properties is __0.5__, which means that the column will be frozen/unfrozen when the splitter drag delta reaches at least half (50%) of the column's width.
 
 __Setting the LeftFrozenColumnSplitterThreshold and RightFrozenColumnSplitterThreshold Properties__
 

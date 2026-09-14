@@ -23,7 +23,7 @@ This article lists the events specific for RadAutoSuggestBox.
 			{
 				if (e.Reason == TextChangeReason.UserInput)
 				{
-					this.radAutoSuggestBox.ItemsSource = CountryDataProvider.GetCountriesByText(this.radAutoSuggestBox.Text);
+					this.radAutoSuggestBox.ItemsSource = MyGetFilteredItems(this.radAutoSuggestBox.Text);
 				}            
 			}
 		```
@@ -32,7 +32,7 @@ This article lists the events specific for RadAutoSuggestBox.
 
 	* __QueryText__: A property that holds the currently searched text.
 	* __Suggestion__: A property of type object, that holds a reference to the chosen suggestion. If no suggestion was selected the property value is `null`.
-	* The following example uses the `CountryInfo` model from the [Getting Started]({%slug radautosuggestbox-getting-started%}) article together with `System.Collections.Generic` and `System.Linq`.
+	* The following example uses the `CountryInfo` model from the [Getting Started]({%slug radautosuggestbox-getting-started%}) article.
 	
 		__Example 2: QuerySubmitted event handler__
 		```C#
@@ -42,15 +42,6 @@ This article lists the events specific for RadAutoSuggestBox.
 				if (suggestion != null)
 				{
 					this.radAutoSuggestBox.Text = suggestion.Name;
-				}
-				else
-				{
-					// Submitted without a chosen suggestion (e.g., Enter pressed). Fallback to the first filtered CountryInfo item if desired:
-					var firstItem = CountryDataProvider.GetCountriesByText(this.radAutoSuggestBox.Text).FirstOrDefault();
-					if (firstItem != null)
-					{
-						this.radAutoSuggestBox.Text = firstItem.Name;
-					}
 				}
 			}
 		```

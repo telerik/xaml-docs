@@ -105,7 +105,7 @@ When the built-in order of the auto generation of columns does not fit in your c
 
 > If the __Header__ property of the TaskBoardColumn is not set, the GroupName property will be used as a Header.
 
->important When `AutoGenerateColumns` is set to `False`, any items added to the underlying collection at runtime whose `GroupMemberPath` property does not match a defined `TaskBoardColumn.GroupName` (or evaluates to `null`) will not be assigned to any column and will not be displayed on the board.
+>important When `AutoGenerateColumns` is set to `False`, any items added to the underlying collection at runtime for which the property specified by `GroupMemberPath` has a value that does not match a defined `TaskBoardColumn.GroupName` (or is `null`) will not be assigned to any column and will not be displayed on the board.
 
 __Define RadTaskBoard with custom columns__
 

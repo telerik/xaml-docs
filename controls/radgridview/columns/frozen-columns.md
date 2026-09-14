@@ -4,7 +4,7 @@ page_title: Frozen Columns
 description: Find out how easily you can select columns and exclude them from the horizontal or vertical scrolling when using RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 components: ["gridview"]
 slug: gridview-columns-frozen-columns
-tags: frozen,columns,splitter,delta,drag delta,splitter threshold
+tags: frozen,columns,splitter,delta,drag delta,splitter delta,splitter threshold
 published: True
 position: 10
 ---

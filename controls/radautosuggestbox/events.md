@@ -23,7 +23,7 @@ This article lists the events specific for RadAutoSuggestBox.
 			{
 				if (e.Reason == TextChangeReason.UserInput)
 				{
-					this.radAutoSuggestBox.ItemsSource = MyGetFilteredItems(this.radAutoSuggestBox.Text);
+					this.radAutoSuggestBox.ItemsSource = CountryDataProvider.GetCountriesByText(this.radAutoSuggestBox.Text);
 				}            
 			}
 		```
@@ -44,7 +44,7 @@ This article lists the events specific for RadAutoSuggestBox.
 				}
 				else
 				{
-					// Submitted without a chosen suggestion (e.g., Enter pressed). Fallback to the first filtered item if desired:
+					// Submitted without a chosen suggestion (e.g., Enter pressed). Fallback to the first filtered CountryInfo item if desired:
 					var items = this.radAutoSuggestBox.ItemsSource as IEnumerable<CountryInfo>;
 					var firstItem = items?.FirstOrDefault();
 					if (firstItem != null)

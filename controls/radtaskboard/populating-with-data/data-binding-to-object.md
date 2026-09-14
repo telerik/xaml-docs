@@ -162,7 +162,7 @@ If you add new items to your bound `ObservableCollection` at runtime (for exampl
 
 * **Verify the Grouping Property:** RadTaskBoard distributes items into columns using the property specified by `GroupMemberPath` (such as `State`). Ensure that the new item has this property populated with a valid value before or upon calling `Add()`.
 * **Column Matching:** If `AutoGenerateColumns` is set to `False`, the item's grouping value must match the `GroupName` of one of the declared `TaskBoardColumn`s. If no column matches, the task cannot be assigned to any column and will not be displayed.
-* **Null Group Values:** Items where the grouping property evaluates to `null` will not generate a column and will not be rendered.
+* **Null or Empty Group Values:** Items whose grouping property evaluates to `null` or an empty string will not generate a column and will not be rendered.
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})

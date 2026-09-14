@@ -37,10 +37,10 @@ This article lists the events specific for RadAutoSuggestBox.
 		```C#
 			private void RadAutoSuggestBox_QuerySubmitted(object sender, QuerySubmittedEventArgs e)
 			{     
-				if (e.Suggestion != null)
+				var suggestion = e.Suggestion as CountryInfo;
+				if (suggestion != null)
 				{
-					// An item was explicitly chosen from the drop-down list
-					this.radAutoSuggestBox.Text = e.Suggestion.ToString();
+					this.radAutoSuggestBox.Text = suggestion.Name;
 				}
 				else
 				{

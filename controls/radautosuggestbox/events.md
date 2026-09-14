@@ -4,7 +4,7 @@ page_title: Events
 description: This article describes the RadAutoSuggestBox events.
 components: ["autosuggestbox"]
 slug: radautosuggestbox-events
-tags: events
+tags: events,querysubmitted,suggestionchosen,textchanged,enter
 published: True
 position: 3
 ---
@@ -37,6 +37,21 @@ This article lists the events specific for RadAutoSuggestBox.
 		```C#
 			private void RadAutoSuggestBox_QuerySubmitted(object sender, QuerySubmittedEventArgs e)
 			{     
+				if (e.Suggestion != null)
+				{
+					// An item was explicitly chosen from the drop-down list
+					this.radAutoSuggestBox.Text = e.Suggestion.ToString();
+				}
+				else
+				{
+					// Submitted without a chosen suggestion (e.g., Enter pressed). Fallback to the first filtered item if desired:
+					var items = this.radAutoSuggestBox.ItemsSource as IEnumerable<CountryInfo>;
+					var firstItem = items?.FirstOrDefault();
+					if (firstItem != null)
+					{
+						this.radAutoSuggestBox.Text = firstItem.Name;
+					}
+				}
 			}
 		```
 

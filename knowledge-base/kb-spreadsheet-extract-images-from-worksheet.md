@@ -53,7 +53,7 @@ public static void ExtractImagesFromWorkbook(string workbookPath, string outputD
     Workbook workbook;
     using (var stream = File.OpenRead(workbookPath))
     {
-        workbook = provider.Import(stream, TimeSpan.FromSeconds(10));
+        workbook = provider.Import(stream, null);
     }
 
     // Iterate through worksheets and save extracted images as files.

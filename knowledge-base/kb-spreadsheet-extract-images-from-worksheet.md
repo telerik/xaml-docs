@@ -28,7 +28,7 @@ To extract and save all images from an imported XLSX file:
 1. Import the workbook using `XlsxFormatProvider`.
 2. Iterate through each `Worksheet` in `workbook.Worksheets`.
 3. Iterate through `worksheet.Images` to access each `FloatingImage`.
-4. Use `image.ImageSource.Extension` to determine the image format (e.g. `png`, `jpeg`).
+4. Use `image.ImageSource.Extension` to determine the image format (such as `png`, `jpeg`).
 5. Write `image.ImageSource.Data` to disk using `File.WriteAllBytes()`.
 
 ### Required Assembly References

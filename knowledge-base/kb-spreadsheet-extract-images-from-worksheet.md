@@ -77,5 +77,5 @@ public static void ExtractImagesFromWorkbook(string workbookPath, string outputD
 ## See Also
 
 * [Import/Export in RadSpreadsheet]({%slug radspreadsheet-import-export%})
-* [Worksheet Model in RadSpreadsheet]({%slug radspreadsheet-model-worksheet%})
+* [Worksheet Model in RadSpreadsheet]({%slug radspreadsheet-model%})
 * [Knowledge Base Articles]({%slug radspreadsheet-kb-articles%})

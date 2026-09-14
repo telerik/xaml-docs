@@ -46,8 +46,7 @@ This article lists the events specific for RadAutoSuggestBox.
 				else
 				{
 					// Submitted without a chosen suggestion (e.g., Enter pressed). Fallback to the first filtered CountryInfo item if desired:
-					var items = this.radAutoSuggestBox.ItemsSource as IEnumerable<CountryInfo>;
-					var firstItem = items?.FirstOrDefault();
+					var firstItem = CountryDataProvider.GetCountriesByText(this.radAutoSuggestBox.Text).FirstOrDefault();
 					if (firstItem != null)
 					{
 						this.radAutoSuggestBox.Text = firstItem.Name;

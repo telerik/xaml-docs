@@ -40,7 +40,7 @@ Ensure your project references the following assemblies:
 
 ### Example
 
-```csharp
+```C#
 using System;
 using System.IO;
 using Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx;

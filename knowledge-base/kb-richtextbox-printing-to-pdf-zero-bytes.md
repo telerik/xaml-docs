@@ -1,6 +1,6 @@
 ---
 title: Printing to Microsoft Print to PDF Produces 0-Byte PDF File
-description: Learn why printing a RadRichTextBox document to Microsoft Print to PDF can result in a 0-byte corrupt file and how to resolve it using PdfFormatProvider.
+description: Learn why RadRichTextBox printing to Microsoft Print to PDF can produce a 0-byte corrupt file and how PdfFormatProvider resolves it.
 components: ["richtextbox"]
 type: troubleshooting
 page_title: RadRichTextBox Print to Microsoft Print to PDF Results in 0-Byte Corrupt PDF

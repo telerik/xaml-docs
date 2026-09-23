@@ -2,6 +2,7 @@
 title: Message Reports
 page_title: Message Reports
 description: Check our &quot;Message Reports&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-items-message-reports
 tags: messages, reports
 published: True

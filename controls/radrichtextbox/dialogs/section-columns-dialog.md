@@ -2,6 +2,7 @@
 title: Section Columns Dialog
 page_title: Section Columns Dialog
 description: Check our &quot;Section Columns Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-section-columns
 tags: section, columns, text
 published: True

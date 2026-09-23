@@ -2,6 +2,7 @@
 title: Telerik Item Тemplates
 page_title: Telerik Item Тemplates
 description: This article lists the available Item Templates that allow you to quickly start using the Telerik controls.
+components: ["general"]
 slug: radcontrols-vs-extensions-item-templates
 tags: item,templates
 published: True
@@ -12,15 +13,15 @@ position: 5
 
 Since the __R1 2020__ version of the Progress Telerik UI for WPF Extension, item templates for creating a new UserControls are available. They allow you to quickly setup Telerik controls in your existing projects. Follow these steps in order to add an item template.
 
-> This feature is availbale only for .NET Framework projects.
+> This feature is available only for .NET Framework projects.
 
 1. Right-click on your project, and select __Add__ -> __New Item__.
 
-    ![VSExtentions WPF Scenario Wizard Menu 2](images/extensions_wpf_add_item_template.png)
+    ![Telerik UI for WPF Visual Studio menu for adding an item template](images/extensions_wpf_add_item_template.png)
 
 1. Scroll down to the __Telerik__ item templates and choose the one that is best suitable for you.
 
-    ![VSExtentions WPF Scenario Wizard Menu 2](images/extensions_wpf_choose_item_template.png)
+    ![Telerik UI for WPF Visual Studio item template selection menu](images/extensions_wpf_choose_item_template.png)
 
 1. Click __Add__ and the needed Telerik references will be automatically added to your project. 
 

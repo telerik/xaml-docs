@@ -2,6 +2,7 @@
 title: Display All Distinct Values
 page_title: Display All Distinct Values
 description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to display all distinct values.
+components: ["gridview"]
 slug: gridview-filtering-howto-display-all-distinct-values
 tags: display,all,distinct,values
 published: True

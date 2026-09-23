@@ -2,6 +2,7 @@
 title: Errors
 page_title: Errors
 description: This article demonstrates how to customize the error content shown when one of the few known camera errors appear.
+components: ["webcam"]
 slug: radwebcam-features-errors
 tags: nocameracontent,busycameracontent,datatemplate,errorcontenttemplate,cameraerror,event
 published: True

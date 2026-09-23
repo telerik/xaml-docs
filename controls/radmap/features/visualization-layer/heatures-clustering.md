@@ -2,6 +2,7 @@
 title: Clustering
 page_title: Clustering
 description: Check our &quot;Clustering&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-heatures-visualization-layer-clustering
 tags: clustering
 published: True

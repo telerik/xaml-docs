@@ -1,6 +1,7 @@
 ---
 title: Customizing the Document Content of Sdt Element in RadRichTextBox
 description: Learn how to create a custom content for a content controls (structured document tags) in RadRichTextBox.
+components: ["richtextbox"]
 type: how-to
 page_title: Creating Custom Sdt Properties in RichTextBox for WPF
 meta_title: Implementing Custom RadDocument Content for Sdt Properties Element
@@ -31,7 +32,7 @@ How to customize or replace the document content of a content control ([structur
 
 ## Solution
 
-To replace or customize the default DocumentFragment that is created for a Sdt element (like `DateProperties` or `CheckBoxProperties`), the content builder of the associated SdtProperties class can be overridden. To do this, override the `GetBuilder` method of the properties class. Then. you can create a custom `SdtContentGenerator` and use it in the `GetBuilder` method override.
+To replace or customize the default DocumentFragment that is created for a Sdt element (like `DateProperties` or `CheckBoxProperties`), the content builder of the associated SdtProperties class can be overridden. To do this, override the `GetBuilder` method of the properties class. Then, you can create a custom `SdtContentGenerator` and use it in the `GetBuilder` method override.
 
 ```C#
   public class CustomDateProperties : DateProperties

@@ -1,6 +1,7 @@
 ---
 title: How to Have Infinite Horizontal Scrolling
 description: How to increase VisibleRange while scrolling the TimeRuler part.
+components: ["ganttview"]
 type: how-to
 page_title: Add to the VisibleRange While Scrolling
 slug: kb-ganttview-howto-increase-visiblerange-while-scrolling
@@ -55,4 +56,4 @@ Handle the __Loaded__ event of the RadGanttView and obtain a reference to the Sc
 
 ## See also
 
-* [ChildreOfTypeExtensions]({%slug common-visual-tree-helpers%}#childrenoftypeextensions)
+* [ChildrenOfTypeExtensions]({%slug common-visual-tree-helpers%}#childrenoftypeextensions)

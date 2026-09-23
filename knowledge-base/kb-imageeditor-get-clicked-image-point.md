@@ -1,6 +1,7 @@
 ---
 title: Get Click Coordinates Relative to the Image of RadImageEditor
-description: How to get the image cooridnates of clicked point in the RadImageEditor control.
+description: How to get the image coordinates of clicked point in the RadImageEditor control.
+components: ["imageeditor"]
 type: how-to
 page_title: Get Clicked Point on the ImageEditor Image Control
 slug: kb-imageeditor-get-clicked-image-point
@@ -27,7 +28,7 @@ res_type: kb
 
 ## Description
 
-How to get the image cooridnates of the clicked point in the RadImageEditor control.
+How to get the image coordinates of the clicked point in the RadImageEditor control.
 
 ## Solution
 

@@ -2,6 +2,7 @@
 title: Floating Images
 page_title: FloatingImage
 description: FloatingImage.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-floatingimage
 tags: Image,floating,FloatingImageBlock
 published: True

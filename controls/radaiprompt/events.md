@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: radaiprompt-events
 tags: events, radaiprompt
 published: True
@@ -24,6 +25,6 @@ __Using the PromptRequest event to add a new response in the AIPrompt control__
 
 ## See Also
 * [Suggestions]({%slug radaiprompt-suggestions%})
-* [RadAIPromptButon]({%slug radaiprompt-prompt-button%})
+* [RadAIPromptButton]({%slug radaiprompt-prompt-button%})
 * [Commands]({%slug radaiprompt-commands%})
 * [Paging]({%slug radaiprompt-paging%})

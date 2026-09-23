@@ -2,6 +2,7 @@
 title: Filtering Behavior
 page_title: Filtering Behavior
 description: Check our &quot;Filtering Behavior&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
+components: ["autocompletebox"]
 slug: radautocompletebox-features-filteringbehavior
 tags: filtering,behavior
 published: True
@@ -14,7 +15,7 @@ The main functionality of the __RadAutoCompleteBox__ control is its filtering me
 
 ## Async Filtering Behavior
 
-When it comes to filtering a huge amount of data the performance is that what really matters. Now with the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadAutoCompleteBox__ provides a new built-in __AsyncFilteringBehavior__ which solves that scenario really easy and makes the filtering of huge amount of items unnoticeable. Unlike the default __FilteringBehavior__ the new __AsyncFilteringBehavior__ performes the filtering operation on a different threads if possible and helps you to achieve a better user experience.
+When it comes to filtering a huge amount of data the performance is that what really matters. Now with the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadAutoCompleteBox__ provides a new built-in __AsyncFilteringBehavior__ which solves that scenario really easy and makes the filtering of huge amount of items unnoticeable. Unlike the default __FilteringBehavior__ the new __AsyncFilteringBehavior__ performs the filtering operation on a different threads if possible and helps you to achieve a better user experience.
 
 The behavior should be set up the following way:
 

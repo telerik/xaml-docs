@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples
 description: Check our &quot;Developer Focused Examples&quot; documentation article for the RadTimeBar {{ site.framework_name }} control.
+components: ["timebar"]
 sdk_example: true
 slug: radtimebar-sdk-examples
 tags: sdk,examples

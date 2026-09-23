@@ -2,6 +2,7 @@
 title: Work With Selection
 page_title: Work With Selection
 description: Check our &quot;Work With Selection&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-howto-work-with-selection
 tags: work,with,selection
 published: True

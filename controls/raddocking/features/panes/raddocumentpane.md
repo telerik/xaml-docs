@@ -2,6 +2,7 @@
 title: RadDocumentPane
 page_title: RadDocumentPane
 description: Check our &quot;RadDocumentPane&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-panes-raddocumentpane
 tags: raddocumentpane
 published: True

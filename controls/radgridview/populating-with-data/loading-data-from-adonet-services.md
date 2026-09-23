@@ -2,6 +2,7 @@
 title: Loading Data from ADO.NET Services
 page_title: Loading Data from ADO.NET Services
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with data from an ADO.NET Data Service.
+components: ["gridview"]
 slug: gridview-loading-data-from-adonet-services
 tags: loading,data,from,ado.net,services
 published: True

@@ -2,6 +2,7 @@
 title: Export DateTime Value
 page_title: Export DateTime Value
 description: Read this article to learn how to export DateTime values from Telerik's DataGrid without having the values appear as numbers.
+components: ["gridview"]
 slug: gridview-export-datetime
 tags: export, datetime, value
 published: True

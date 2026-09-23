@@ -2,6 +2,7 @@
 title: Showing a File
 page_title: Showing a File
 description: Check our &quot;Showing a File&quot; documentation article for the RadPdfViewer WPF control.
+components: ["pdfviewer"]
 slug: radpdfviewer-showing-a-file
 tags: showing,a,file
 published: True
@@ -42,13 +43,27 @@ In code-behind, you can set the DocumentSource to either a URI or a stream.
 
 The following example shows how a PDF file can be loaded from a file embedded as a resource through a _stream_:
 
-__Load PDF from a stream__
+#### Load PDF from a stream
 
 <snippet id='radpdfviewer-showing-a-file-block_3-cs' />
 
+#### Load PDF from a byte array
+
+Wrap the PDF bytes in a `MemoryStream` and pass the stream to the `PdfDocumentSource` constructor:
+
+```C#
+	private void LoadFromBytes(byte[] pdfBytes)
+	{
+	    MemoryStream stream = new MemoryStream(pdfBytes, writable: false);
+	    this.pdfViewer.DocumentSource = new PdfDocumentSource(stream);
+	}
+```
+
+The `PdfDocumentSource(Stream)` constructor uses the default PDF import settings. If you need to configure the import settings, use the overload that accepts a `PdfImportSettings` value.
+
 The next shows how a PDF can be loaded from a file embedded as a resource by passing its URI:
 
-__Load PDF from a URI__
+#### Load PDF from a URI
 
 <snippet id='radpdfviewer-showing-a-file-block_4-cs' />
 

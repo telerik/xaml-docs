@@ -2,6 +2,7 @@
 title: Changes
 page_title: Changes
 description: Check our &quot;Changes&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: datafilter-changes-backward-compatibility
 tags: changes
 published: True

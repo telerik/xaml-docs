@@ -2,6 +2,7 @@
 title: Floating Containers
 page_title: Floating Containers
 description: Check our &quot;Floating Containers&quot; documentation article for the RadRichTextBox control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-floatinguicontainer
 tags: floatinguicontainer
 published: True

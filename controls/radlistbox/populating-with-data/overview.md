@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadListBox {{ site.framework_name }} control.
+components: ["listbox"]
 slug: radlistbox-populating-with-data-overview
 tags: overview
 published: True

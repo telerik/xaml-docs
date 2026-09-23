@@ -2,6 +2,7 @@
 title: Expand and Collapse
 page_title: Expand and Collapse
 description: Check our &quot;Expand and Collapse&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-items-expand-collapse
 tags: expand,and,collapse
 published: True

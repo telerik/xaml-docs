@@ -2,6 +2,7 @@
 title: Navigator
 page_title: Navigator
 description: The DockingNavigator allows for navigating through the RadDocking panes by pressing the Ctrl + Tab or Alt + F7 key combinations. 
+components: ["docking"]
 slug: raddocking-navigator
 tags: navigator
 published: True

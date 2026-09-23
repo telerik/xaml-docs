@@ -2,6 +2,7 @@
 title: Menu Items
 page_title: Menu Items
 description: Check our &quot;Menu Items&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-features-menuitems
 tags: menu,items
 published: True

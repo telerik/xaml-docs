@@ -2,6 +2,7 @@
 title: Save As
 page_title: Save As
 description: Check our &quot;Save As&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-save-as
 tags: save
 published: True

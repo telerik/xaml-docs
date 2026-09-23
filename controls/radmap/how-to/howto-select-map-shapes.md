@@ -2,6 +2,7 @@
 title: Select Map Shapes
 page_title: Select Map Shapes
 description: Check our &quot;Select Map Shapes&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-howto-select-map-shapes
 tags: select,map,shapes
 published: True

@@ -2,6 +2,7 @@
 title: Color History
 page_title: Color History
 description: Check our &quot;Color History&quot; documentation article for the RadColorEditor {{ site.framework_name }} control.
+components: ["coloreditor"]
 slug: radcoloreditor-features-color-history
 tags: color,history
 published: True

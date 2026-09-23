@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: The actions in the UI of RadWebCam control are executed via commands from the RadWebCamCommands static class. 
+components: ["webcam"]
 slug: radwebcam-features-commands
 tags: commands, radwebcamcommands
 published: True

@@ -2,6 +2,7 @@
 title: Custom Gestures
 page_title:  Custom Gestures - Gestures - TouchManager
 description: Check our &quot;Custom Gestures&quot; documentation article for the TouchManager {{ site.framework_name }} control.
+components: ["touchmanager"]
 slug: touchmanager-custom-gestures-overview
 tags: gestures,custom,touch,manager,touchmanager,overview
 published: True

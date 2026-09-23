@@ -2,6 +2,7 @@
 title: Converters
 page_title: Converters 
 description: This article describe Telerik built-in converters which can be used.
+components: ["general"]
 slug: common-converters
 tags: converter
 published: True
@@ -145,7 +146,7 @@ The converter converts __string__ to a __DateTime__ format value.
 
 ### UppercaseConverter
 
-This converter converts all __lowcase__ to __uppercase__ letters.
+This converter converts all __lowercase__ to __uppercase__ letters.
 
 ### BinaryImageConverter
 

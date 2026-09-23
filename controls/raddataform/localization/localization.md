@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddataform-localization
 tags: localization
 published: True

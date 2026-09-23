@@ -2,6 +2,7 @@
 title: Transitions
 page_title: Transitions
 description: The RadFluidContentControl supports transition animations that are triggered when you change between the contents.
+components: ["fluidcontentcontrol"]
 slug: fluidcontentcontrol-transitions
 tags: transitions,animation,effect
 published: True

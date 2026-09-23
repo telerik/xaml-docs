@@ -2,6 +2,7 @@
 title: MVVM Support
 page_title: MVVM Support
 description: Check our &quot;MVVM Support&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-mvvm
 tags: virtualgrid,mvvm
 published: True

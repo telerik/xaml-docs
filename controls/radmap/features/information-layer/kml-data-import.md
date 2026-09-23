@@ -2,6 +2,7 @@
 title: KML Data Import
 page_title: KML Data Import
 description: Check our &quot;KML Data Import&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-kml-data-import
 tags: kml,data,import
 published: True

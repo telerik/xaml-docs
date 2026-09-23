@@ -2,6 +2,7 @@
 title: Styling CollectionNavigator
 page_title: Styling CollectionNavigator
 description: This article demonstrates how to create a style targeting the CollectionNavigator control. 
+components: ["dataform"]
 slug: raddatafor-styles-and-templates-styling-collectionnavigator
 tags: styling,collectionnavigator
 published: True

@@ -2,6 +2,7 @@
 title: Color Ranges
 page_title: Color Ranges
 description: This article provides information about the color ranges functionality of RadCircularProgressBar control.
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-color-ranges
 tags: color ranges, ranges
 published: True

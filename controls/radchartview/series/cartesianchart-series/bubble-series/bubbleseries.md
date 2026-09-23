@@ -2,6 +2,7 @@
 title: BubbleSeries
 page_title: BubbleSeries
 description: Check our &quot;BubbleSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-bubbleseries
 tags: BubbleSeries
 published: True
@@ -21,7 +22,7 @@ You can use the following definition to display a simple BubbleSeries:
 
 
 The following image demonstrates the end result:  
-![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_01.png)
+![Telerik UI for WPF RadChartView BubbleSeries visual appearance](images/radchartview-series-bubbleseries_01.png)
 
 ## Data bound series
 
@@ -44,12 +45,12 @@ The series supports all standard features exposed by all other categorical serie
 	<snippet id='radchartview-series-cartesianchart-series-bubble-series-bubbleseries-block_4-xaml' />
 
 	
-	![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_02.png)
+	![Telerik UI for WPF RadChartView BubbleSeries with data binding](images/radchartview-series-bubbleseries_02.png)
 	
 * __PaletteMode__ – the BubbleSeries supports two modes that determine whether the applied palette should be applied per series or per data point. The mode can be controlled through the PalleteMode property. The modes are called Series and DataPoint.
 
 	The following image demonstrates the DataPoint PaletteMode with the Windows8 palette applied:  
-	![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_03.png)
+	![Telerik UI for WPF RadChartView BubbleSeries with custom bubble size binding](images/radchartview-series-bubbleseries_03.png)
 
 	Setting the PaletteMode to Series will apply different color for each series defined in the chart.
 
@@ -58,7 +59,7 @@ The series supports all standard features exposed by all other categorical serie
 	<snippet id='radchartview-series-cartesianchart-series-bubble-series-bubbleseries-block_5-xaml' />
 
 	
-	![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_04.png)
+	![Telerik UI for WPF RadChartView BubbleSeries with customized visual styling](images/radchartview-series-bubbleseries_04.png)
 	
 * __BubbleSizeSelector__ – this feature allows you to customize the size of each bubble. The BubbleSeries exposes a __BubbleSizeSelector__ property that accepts a property of type __ChartBubbleSizeSelector__. 
 

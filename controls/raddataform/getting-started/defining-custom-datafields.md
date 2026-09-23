@@ -2,6 +2,7 @@
 title: Defining Custom DataFields
 page_title: Defining Custom DataFields
 description: Check our &quot;Defining Custom DataFields&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddataform-defining-custom-datafields
 tags: defining,custom,datafields
 published: True

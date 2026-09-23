@@ -2,6 +2,7 @@
 title: Additional Content
 page_title: Additional Content
 description: Check our &quot;Additional Content&quot; documentation article for the RadComboBox WPF control.
+components: ["combobox"]
 slug: radcombobox-features-additional-content
 tags: radcombobox, additional content, additional, content
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Pasting Value With Spaces in Front and Back Does Not Work
 description: Pasting a copied numeric value that contains untrimmed text does not work.
+components: ["numericupdown"]
 page_title: Pasting Number String Containing Trailing or Leading White Spaces Not Shown
 type: howto
 slug: kb-numericupdown-paste-whitespaces-value
@@ -30,7 +31,7 @@ Pasting a copied numeric value that contains untrimmed text does not work. In th
 
 ## Solution
 
-Subscribe the RadNumericUpDown control to the DataObject's [Pastring event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.dataobject.addpastinghandler?view=net-5.0) and implement the pasting manually. 
+Subscribe the RadNumericUpDown control to the DataObject's [Pasting event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.dataobject.addpastinghandler?view=net-5.0) and implement the pasting manually. 
 
 
 ```C#

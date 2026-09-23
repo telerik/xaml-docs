@@ -2,6 +2,7 @@
 title: Empty Content
 page_title: Empty Content
 description: Check our &quot;Empty Content&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-empty-content
 tags: empty,content
 published: True
@@ -31,7 +32,7 @@ __Setting up chart without series__
 <snippet id='radchartview-features-empty-content-setting_up_chart_without_series-xaml' />
 
 
-![{{ site.framework_name }} RadChartView Empty Content](images/radchartview-features-empty-content-0.png)
+![Telerik UI for WPF RadChartView Showing the Default Empty Content Message](images/radchartview-features-empty-content-0.png)
 
 ## Customizing the Content
 
@@ -45,7 +46,7 @@ __Setting the empty content__
 <snippet id='radchartview-features-empty-content-setting_the_empty_content-xaml' />
 
 
-![{{ site.framework_name }} RadChartView Custom Empty Content](images/radchartview-features-empty-content-1.png)
+![Telerik UI for WPF RadChartView Showing Custom Empty Content](images/radchartview-features-empty-content-1.png)
 
 The `EmptyContentTemplate` property is of type `DataTemplate` and it allows setting a template that will be applied to the empty content presenter. The data context in the template is the object assigned to the `EmptyContent` property.
 
@@ -53,7 +54,7 @@ __Setting the empty content template__
 <snippet id='radchartview-features-empty-content-setting_the_empty_content_template-xaml' />
 
 
-![{{ site.framework_name }} RadChartView Empty Content Template](images/radchartview-features-empty-content-2.png)
+![Telerik UI for WPF RadChartView with a Custom Empty Content Template](images/radchartview-features-empty-content-2.png)
 
 ## Hiding the Empty Content Message
 
@@ -63,4 +64,4 @@ __Setting the ShowEmptyContent property__
 <snippet id='radchartview-features-empty-content-setting_the_showemptycontent_property-xaml' />
 
 
-![{{ site.framework_name }} RadChartView Hiding Empty Content Message](images/radchartview-features-empty-content-3.png)
+![Telerik UI for WPF RadChartView with the Empty Content Message Hidden](images/radchartview-features-empty-content-3.png)

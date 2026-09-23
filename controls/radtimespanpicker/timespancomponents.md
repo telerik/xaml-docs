@@ -2,6 +2,7 @@
 title: TimeSpanComponents
 page_title: TimeSpanComponents
 description: Check our &quot;TimeSpanComponents&quot; documentation article for the RadTimeSpanPicker {{ site.framework_name }} control.
+components: ["timespanpicker"]
 slug: radtimespanpicker-timespancomponents
 tags: visual,structure
 published: True

@@ -2,6 +2,7 @@
 title: Filter Editors
 page_title: Filter Editors
 description: Check our &quot;Filter Editors&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: datafilter-editors
 tags: filter,editors
 published: True

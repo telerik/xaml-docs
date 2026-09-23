@@ -2,6 +2,7 @@
 title: Column Footers
 page_title: Column Footers
 description: See examples of setting value and adding a corresponding picture to the column's footer in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-columns-column-footers
 tags: column,footers
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Implement RadGridView Endless Scrolling
 description: How to add more items in RadGridView when the user scrolls to the bottom, by using the ScrollChanged event.
+components: ["gridview"]
 type: how-to
 page_title: Implement Infinity Scrolling in RadGridView
 slug: kb-gridview-infinity-scrolling

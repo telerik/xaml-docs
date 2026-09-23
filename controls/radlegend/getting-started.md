@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadLegend {{ site.framework_name }} control.
+components: ["legend"]
 slug: radlegend-getting-started
 tags: getting,started,legend
 published: True

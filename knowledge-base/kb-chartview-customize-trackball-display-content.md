@@ -2,6 +2,7 @@
 title: Customize RadChartView Trackball DisplayContent 
 page_title: Change the Appearance of RadCartesianChart Track Ball Content
 description: How to modify the display content of ChartTrackBallBehavior's TrackBallInfoControl in RadChartView.
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-customize-trackball-display-content
 position: 0

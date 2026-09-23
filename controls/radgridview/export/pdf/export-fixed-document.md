@@ -2,6 +2,7 @@
 title: ExportToRadFixedDocument
 page_title: ExportToRadFixedDocument
 description: Read about the ExportToRadFixedDocument functionality of Telerik's {{ site.framework_name }} DataGrid used to modify the content of the exported grid without any manual styling.
+components: ["gridview"]
 slug: gridview-export-fixed-document
 tags: gridview,export,fixed,document
 published: True

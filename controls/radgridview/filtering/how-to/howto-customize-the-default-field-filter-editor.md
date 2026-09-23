@@ -2,6 +2,7 @@
 title: Customize the Default Field Filter Editor
 page_title: Customize the Default Field Filter Editor
 description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to customize the default field filter editor.
+components: ["gridview"]
 slug: gridview-filtering-howto-customize-the-default-field-filter-editor
 tags: customize,the,default,field,filter,editor
 published: True

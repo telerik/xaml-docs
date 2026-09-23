@@ -1,6 +1,7 @@
 ---
 title: WPF Controls Demos Not Available in WPF Control Examples App
 description: "Telerik WPF controls Demos application not available. Loading stays at 0 percents." 
+components: ["general"]
 type: troubleshooting
 page_title: Run Progress WPF Controls Demos Doesn't Load Any Examples .
 slug: kb-wpfdemos-cannot-load-examples.md

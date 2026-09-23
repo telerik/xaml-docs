@@ -1,6 +1,7 @@
 ---
 title: Limit selection when DateSelectionMode="Month"
 description: Disable selection in Month DateSelectionMode.
+components: ["datetimepicker"]
 type: how-to
 page_title: Prevent certain months from being selected
 slug: kb-datetimepicker-limit-selection-in-dateselectionmode-month

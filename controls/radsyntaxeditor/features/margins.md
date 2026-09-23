@@ -2,6 +2,7 @@
 title: Margins
 page_title: Margins
 description: This article documents the margins functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-margins
 tags: margins,radsyntaxeditor
 position: 10

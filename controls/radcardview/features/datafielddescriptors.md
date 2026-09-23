@@ -2,6 +2,7 @@
 title: Data Field Descriptor
 page_title: DataFieldDescriptors
 description: This article describes the DataFieldDescriptors of RadCardView.
+components: ["cardview"]
 slug: radcardview-features-datafielddescriptors
 tags: descriptor,data,field
 published: True

@@ -2,6 +2,7 @@
 title: Append Documents
 page_title: Append Documents
 description: Check our &quot;Append Documents&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-merge-append-documents
 tags: raddocumentmerger, merge, insert, documents
 published: True

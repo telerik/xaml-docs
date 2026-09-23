@@ -2,6 +2,7 @@
 title: Use RadRibbonView with Other controls
 page_title: Use RadRibbonView with Other controls
 description: Check our &quot;Use RadRibbonView with Other controls&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-howto-use-ribbonview-other-controls
 tags: use,radribbonview,with,other,controls
 published: True

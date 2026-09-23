@@ -1,6 +1,7 @@
 ---
 title: Enabling Keyboard Shortcuts for RadMenu
 description: Learn how to implement keyboard shortcuts for RadMenu items in WPF applications, ensuring functionality across the entire application window.
+components: ["menu"]
 type: how-to
 page_title: How to Add Keyboard Shortcuts to RadMenu Items
 slug: kb-menu-enable-keyboard-shortcuts
@@ -21,7 +22,7 @@ How to enable keyboard shortcuts for RadMenu items using the WPF KeyBinding obje
 
 ## Solution
 
-In WPF, in order to recieve a `KeyDown` event, the corresponding element needs to be focused. Since `RadMenu` is usually not constantly focused, you cannot rely on its `KeyDown` event. Instead, you can use the `KeyDown` of the host `Window`.
+In WPF, in order to receive a `KeyDown` event, the corresponding element needs to be focused. Since `RadMenu` is usually not constantly focused, you cannot rely on its `KeyDown` event. Instead, you can use the `KeyDown` of the host `Window`.
 
 To add shortcuts for the menu, you can add `KeyBinding` objects in the host `Window`'s `InputBindings` collection. 
 

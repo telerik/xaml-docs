@@ -1,6 +1,7 @@
 ---
 title: RadTreeView SelectedItems collection is not Updated When Items are Removed
 description: The SelectedItems collection of RadTreeView contains items removed from the ItemsSource
+components: ["treeview"]
 type: troubleshooting
 page_title: TreeView SelectedItems Contains Child Items Removed from the ItemsSource
 slug: kb-treeview-selecteditems-contains-irrelevant-items
@@ -25,7 +26,7 @@ This issue is a limitation coming from the UI virtualization of RadTreeView.
 
 To resolve this, you will need to manually remove the child items from the `SelectedItems` collection before removing the parent item. 
 
-The exact solution will depend on the exact models strucutre in the application, but the idea is the same. The following example shows how to apply this approach with a very basic model used to populate the TreeView control.
+The exact solution will depend on the exact model structure in the application, but the idea is the same. The following example shows how to apply this approach with a very basic model used to populate the TreeView control.
 
 __Creating the data model__
 ```C#

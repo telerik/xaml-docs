@@ -2,6 +2,7 @@
 title: Input Modes
 page_title: Input Modes
 description: Check our &quot;Input Modes&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-features-input-modes
 tags: input,modes
 published: True

@@ -2,6 +2,7 @@
 title: Drill-Down
 page_title: Drill-Down
 description: Check our &quot;Drill-Down&quot; documentation article for the RadExpressionEditor {{ site.framework_name }} control.
+components: ["expressioneditor"]
 slug: radexpressioneditor-expressions-drill-down
 tags: drill,down
 published: True

@@ -2,6 +2,7 @@
 title: How to Add Icon to the RadPane's Header
 page_title: How to Add Icon to the RadPane's Header
 description: Check our &quot;How to Add Icon to the RadPane's Header&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-how-to-add-icon-pane-header
 tags: how,to,add,icon,to,the,radpane's,header
 published: True

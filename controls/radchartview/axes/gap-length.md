@@ -2,6 +2,7 @@
 title: Gap Length
 page_title: Gap Length
 description: This article describe the GapLength property of the CategoricalSeries.
+components: ["chartview"]
 slug: radchartview-axes-gap-length
 tags: axis, gaplength
 published: True
@@ -18,7 +19,7 @@ __Example 1: Setting the GapLength property__
 <snippet id='radchartview-axes-gap-length-example_1_setting_the_gaplength_property-xaml' />
 
 
-![{{ site.framework_name }} RadChartView Gap Length](images/radchartview-axes-gap-length.png)
+![Telerik UI for WPF RadChartView with Custom Gap Length Between Categorical Axis Items](images/radchartview-axes-gap-length.png)
 	
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})

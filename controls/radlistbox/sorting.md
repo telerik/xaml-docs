@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting
 description: Check our &quot;How to group items&quot; documentation article for the RadListBox {{ site.framework_name }} control.
+components: ["listbox"]
 slug: radlistbox-sorting
 tags: how,to,group,items
 published: True

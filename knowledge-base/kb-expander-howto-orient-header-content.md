@@ -1,6 +1,7 @@
 ---
 title: How to Orient RadExpander Header Content Vertically
 description: This article demonstrates how to switch the header orientation of RadExpander.
+components: ["expander"]
 type: how-to
 page_title: Rotate the header of the RadExpander when the ExpandDirection is Right or Left
 slug: kb-expander-howto-orient-header-content

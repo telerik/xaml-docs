@@ -2,6 +2,7 @@
 title: Data Point
 page_title: Data Point
 description: Check our &quot;Data Point&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-getting-started-data-point
 tags: getting, started, datapoint,data,point,categorical,scatter,pie,polar,bubble,range
 published: True

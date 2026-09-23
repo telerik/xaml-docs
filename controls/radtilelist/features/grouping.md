@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping
 description: Check our &quot;Grouping&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+components: ["tilelist"]
 slug: radtilelist-grouping
 tags: grouping
 published: True

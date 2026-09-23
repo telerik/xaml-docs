@@ -2,6 +2,7 @@
 title: Upgrade Project
 page_title: Upgrade Project
 description: Upgrade Wizard is used to change the version of Telerik UI for WPF dlls referenced in the project.
+components: ["general"]
 slug: radcontrols-for-wpf-vs-extensions-upgrading
 tags: upgrading,to,a,new,ui,for,wpf,distribution
 published: True
@@ -29,15 +30,15 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 On the first step the wizard provides basic update process information  
 
-![VSExtentions WPF Upgrade Wizard Initial Page](images/VSExtentions_WPF_UpgradeWizardInitialPage.png)
+![Telerik UI for WPF Visual Studio upgrade wizard initial page](images/VSExtentions_WPF_UpgradeWizardInitialPage.png)
 
 You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to and whether or not all binaries should get copied to your solution folder (useful when utilizing a build server or working on a project collaboratively). The Compatibility button will invoke the [Upgrade API Analyzer tool](https://docs.telerik.com/devtools/wpf/upgrade-api-analyzer):
 
-![VSExtentions WPF Upgrade Wizard](images/VSExtentions_WPF_UpgradeWizard.png)
+![Telerik UI for WPF Visual Studio upgrade wizard project selection](images/VSExtentions_WPF_UpgradeWizard.png)
 
 The next screen allows you to update the Visual Studio Toolbox with the newly selected controls, so that you avoid accidental reference change during a control drag and drop, as well as creating a backup of your project:
 
-![VSExtentions WPF Upgrade Wizard Toolbox](images/VSExtentions_WPF_UpgradeWizardOptions.png)
+![Telerik UI for WPF Visual Studio upgrade wizard backup creation](images/VSExtentions_WPF_UpgradeWizardOptions.png)
 
 ### Notes
 
@@ -47,11 +48,11 @@ The next screen allows you to update the Visual Studio Toolbox with the newly se
 
 * The distribution, downloaded by the Upgrade Wizard contains only the .dll and related files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or any code examples.
 
-	![VSExtensions Themes Folder](images/VSExtensions_WPF_ThemeFilesUnderNamedFolder.png)
+	![Telerik UI for WPF Visual Studio theme files under a named folder](images/VSExtensions_WPF_ThemeFilesUnderNamedFolder.png)
 
 * A Visual Studio restart will be required in order to update your toolbox. If the automatic restart fails, a restart should be initiated manually in order to complete the toolbox upgrade.
 
-* The Upgrade Wizard won't work if the Telerik assemblies are installed with a NuGet package. In this case, you can [update the package via the NuGet Package Manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#update-a-package).
+* The Upgrade Wizard won't work if the Telerik assemblies are installed with a NuGet package, or if the project is an SDK-style project targeting modern .NET (.NET 8, .NET 9, .NET 10, etc.). In these scenarios, the wizard displays the message **"Project target framework is not compatible. Please upgrade target framework."** For NuGet-based projects, [update the packages via the NuGet Package Manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#update-a-package) or directly in your `.csproj` file. For projects with direct assembly references, update the Telerik DLL references manually. For more details, see the troubleshooting article ["Project Target Framework Is Not Compatible" Error in Upgrade Project Wizard]({%slug kb-upgrade-wizard-target-framework-not-compatible%}).
 
 ## See Also  
  * [Configure a Telerik UI for WPF Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%})

@@ -2,6 +2,7 @@
 title: Invert Axis Range
 page_title: Invert Axis Range
 description: Check our &quot;Inverse Axis Range&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-invert-axis
 tags: plot,mode
 published: True
@@ -14,10 +15,11 @@ The chart axis range is moving from left to right when horizontal and from botto
 
 The axis range direction can be changed by setting the `IsInverse` property of the corresponding chart axis.
 
+In addition to Cartesian axes, `PolarAxis` in `RadPolarChart` supports `IsInverse` to invert the radial distance (radius) range. For the circular angle axis (`NumericRadialAxis` or `CategoricalRadialAxis`), set `SweepDirection="Clockwise"` to make angles advance clockwise.
 
 <snippet id='radchartview-axes-inversed-axis-block_1-xaml' />
 
 
 The following picture shows two charts - one with the default range direction (on the top) and another with inverted axes ranges (on the bottom).
 
-![Inverted Axis Range](images/radchartview-axes-invert-axis-0.png)
+![Telerik UI for WPF RadChartView Comparing Default and Inverted Axis Range Directions](images/radchartview-axes-invert-axis-0.png)

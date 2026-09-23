@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadRichTextBox control.
+components: ["richtextbox"]
 slug: radrichtextbox-getting-started
 tags: getting,started
 published: True

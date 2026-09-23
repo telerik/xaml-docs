@@ -2,6 +2,7 @@
 title: Marker Geometry
 page_title: Marker Geometry
 description: Check our &quot;Marker Geometry&quot; documentation article for the RadLegend {{ site.framework_name }} control.
+components: ["legend"]
 slug: radlegend-marker-geometry
 tags: marker,geometry
 published: True

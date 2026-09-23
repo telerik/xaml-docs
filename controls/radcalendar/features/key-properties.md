@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: Check our &quot;Key Properties&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
+components: ["calendar"]
 slug: radcalendar-key-properties
 tags: key,properties
 published: True
@@ -22,7 +23,7 @@ The purpose of this help article is to show you the key properties of the `RadCa
 * `SelectedDate`&mdash;Gets or sets the currently selected date. If the SelectionMode is set to Multiple or Extended, returns the first date from the SelectedDates.
 * `SelectedDates`&mdash;Gets the currently selected dates. Useful when the SelectionMode is set to Multiple or Extended.  
 * `SelectableDateStart`&mdash;Gets or sets the first date that can be selected.
-* `SelectableDateEnd`&mdash;Gets of sets the last date that can be selected.
+* `SelectableDateEnd`&mdash;Gets or sets the last date that can be selected.
 * `BlackoutDates`&mdash;Gets or sets a collection of dates that cannot be selected.
 
 ## Setting the Current Display Date

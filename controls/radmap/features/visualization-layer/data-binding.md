@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding
 description: Check our &quot;Data Binding&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-visualization-layer-data-binding
 tags: data,binding
 published: True

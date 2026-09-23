@@ -2,6 +2,7 @@
 title: Layout Support
 page_title: Layout Support
 description: Check our &quot;Layout Support&quot; documentation article for the RadTimePicker {{ site.framework_name }} control.
+components: ["timepicker"]
 slug: radtimepicker-layout-support
 tags: layout,support
 published: True

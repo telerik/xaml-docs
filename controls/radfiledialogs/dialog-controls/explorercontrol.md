@@ -2,6 +2,7 @@
 title: ExplorerControl
 page_title: ExplorerControl
 description: Check our &quot;ExplorerControl&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-explorercontrol
 tags: open,folder,dialog
 published: True

@@ -2,6 +2,7 @@
 title: Remove the Delete Button
 page_title: Remove the Delete Button
 description: Check our &quot;Remove the Delete Button&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-howto-remove-delete-button
 tags: remove,the,delete,button
 published: True

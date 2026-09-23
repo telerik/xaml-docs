@@ -2,6 +2,7 @@
 title:  Switching Icons at Runtime
 page_title:  Switching Icons at Runtime
 description: Check our &quot;Switching Icons at Runtime&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-ui-switching-icons-at-runtime
 tags: switching,themes,icons,at,runtime
 published: True
@@ -24,7 +25,7 @@ __Example 1: Creating IconSources__
 <snippet id='radpdfviewer-ui-switching-icons-at-runtime-block_1-xaml' />
 
 
->tip To browse all icons you can download the source code of the controls from your Telerik account. The images are located at {%if site.site_name == 'WPF' %}\Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\PdfViewer\FixedDocumentViewers\Images{%endif%}{%if site.site_name == 'Silverlight' %}\Telerik\_UI\_for\_Silverlight\_Source\_[Version]Controls\PdfViewer\FixedDocumentViewers\Images{%endif%}.
+>tip To browse the Light, Dark, and Modern icon sets you can download the source code of the controls from your Telerik account. The images are located at \Telerik\_UI\_for\_WPF\_Source\_[Version]\Source\Controls\PdfViewer\Core\Code\Images\.
 
 
 ## See Also

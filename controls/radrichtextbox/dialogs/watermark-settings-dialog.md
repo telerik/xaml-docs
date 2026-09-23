@@ -2,6 +2,7 @@
 title: Watermark Settings
 page_title: Watermark Settings Dialog
 description: Check our &quot;Watermark Settings Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-watermark-settings
 tags: link,insert,watermark
 published: True

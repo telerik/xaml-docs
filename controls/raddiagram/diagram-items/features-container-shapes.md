@@ -2,6 +2,7 @@
 title: ContainerShapes
 page_title: ContainerShapes
 description: The article describes the containers shapes inside the RadDiagram.
+components: ["diagram"]
 slug: raddiagram-features-container-shapes
 tags: containershapes
 published: True

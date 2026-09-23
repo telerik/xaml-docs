@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This article shows how to create a sample .NET Core 3.1 application using RadEntityFrameworkCoreDataSource and RadGridView.
+components: ["entityframeworkcoredatasource"]
 slug: entityframeworkcore-getting-started
 tags: getting,started, entity, framework, core
 published: True

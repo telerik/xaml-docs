@@ -2,6 +2,7 @@
 title: MVVM Support
 page_title: MVVM Support
 description: Check our &quot;MVVM Support&quot; documentation article for the RadTimeBar {{ site.framework_name }} control.
+components: ["timebar"]
 slug: radtimebar-mvvm-support
 tags: mvvm,support
 published: True

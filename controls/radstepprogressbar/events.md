@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadStepProgressBar control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-events
 tags: events
 position: 3

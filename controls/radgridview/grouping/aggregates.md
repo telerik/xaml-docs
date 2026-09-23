@@ -2,6 +2,7 @@
 title: Group Aggregates
 page_title: Group Aggregates
 description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how you can add aggregate functions to the group rows. 
+components: ["gridview"]
 slug: gridview-grouping-aggregates
 tags: group,aggregates
 published: True

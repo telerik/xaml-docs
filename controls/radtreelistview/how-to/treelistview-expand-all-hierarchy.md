@@ -2,6 +2,7 @@
 title: Expand all rows
 page_title: Expand all rows
 description: Check our &quot;Expand all rows&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: treelistview-expand-all-hierarchy
 tags: expand,all,rows
 published: True

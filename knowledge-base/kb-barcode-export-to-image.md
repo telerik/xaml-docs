@@ -2,6 +2,7 @@
 title: Create Image From Barcode Without Adding the Control the UI
 page_title: Generate Picture From QR Code Without Adding the Component in a Visual Tree
 description: Export the RadBarcode control without adding it to the visual tree.
+components: ["barcode"]
 type: how-to
 slug: kb-barcode-export-to-image
 position: 0
@@ -32,7 +33,7 @@ How to setup RadBarcode in code-behind and export it to an image, without adding
 
 To create an image from a WPF control, the control should be measured and arranged. This is done automatically by the framework when you add the control in the visual tree. To export the barcode without displaying it in the UI, measure and arrange it in code and then export it.
 
-The export iself, can be done with [ExportExtensions.ExportToImage]({%slug common-export-support%}) method.
+The export itself, can be done with [ExportExtensions.ExportToImage]({%slug common-export-support%}) method.
 
 
 ```C#

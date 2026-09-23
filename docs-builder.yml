@@ -54,6 +54,8 @@ meta:
         pdfHidden: true
     controls/radaiprompt:
         title: RadAIPrompt
+    controls/radinlineaiassistant:
+        title: RadInlineAIAssistant
     controls/radsvgimage:
         title: RadSvgImage
     controls/radhighlighttextblock:
@@ -479,8 +481,6 @@ meta:
         title: RadOutlookBar
     controls/radpanelbar:
         title: RadPanelBar
-    controls/radpanelbar/styling-and-appearance:
-        title: Styling and Appearance
     controls/radprogressbar:
         title: RadProgressBar
     controls/radprogressbar/styling-and-appearance:
@@ -874,8 +874,6 @@ meta:
         title: RadDomainDataSource
     controls/radwizard:
         title: RadWizard
-    controls/radwizard/features:
-        title: Features
     controls/radvirtualgrid:
         title: RadVirtualGrid
     controls/radvirtualgrid/styling-and-appearance:
@@ -987,30 +985,6 @@ meta:
         position: 14
     "common-information/winforms-integration":
         title: "WinForms Integration"
-    "cloud-integration/amazon-web-services":
-        title: "Amazon Web Services"
-        position: 2
-    "cloud-integration/amazon-web-services/connect-to-data-in-the-cloud":
-        title: "Connect to Data in the Cloud"
-        position: 5
-    "cloud-integration/azure":
-        title: "Azure"
-        position: 2
-    "cloud-integration/azure/cognitive-services":
-        title: "Cognitive Services"
-        position: 5
-    "cloud-integration/azure/connect-to-data-in-the-cloud":
-        title: "Connect to Data in the Cloud"
-        position: 6
-    "cloud-integration/google-cloud":
-        title: "Google Cloud"
-        position: 4
-    "cloud-integration/google-cloud/cognitive-services":
-        title: "Cognitive Services"
-        position: 4
-    "cloud-integration/google-cloud/connect-to-data-in-the-cloud":
-        title: "Connect to Data in the Cloud"
-        position: 5
     "installation/manual-setup-guides/visual-studio-extensions":
         title: "Visual Studio Extensions"
         position: 17
@@ -1054,9 +1028,6 @@ meta:
     "common-information":
         title: "Common Information"
         position: 7
-    "cloud-integration":
-        title: "Cloud Integration"
-        position: 9
     "testing":
         title: "Testing"
         position: 10
@@ -1068,6 +1039,58 @@ redirects:
 -
     from: "^/?$"
     to: "/introduction"
+    type: Permanent
+-
+    from: "^/cloud-integration/.*$"
+    to: "/introduction"
+    type: Permanent
+-
+    from: "^/controls/radwizard/styles-and-templates/templates-structure/?$"
+    to: "/controls/radwizard/overview"
+    type: Permanent
+-
+    from: "^/controls/radwizard/features/navigation/?$"
+    to: "/controls/radwizard/navigation"
+    type: Permanent
+-
+    from: "^/controls/radwizard/features/buttons/?$"
+    to: "/controls/radwizard/buttons"
+    type: Permanent
+-
+    from: "^/controls/radwizard/features/pages/?$"
+    to: "/controls/radwizard/pages"
+    type: Permanent
+-
+    from: "^/controls/radwizard/features/commands/?$"
+    to: "/controls/radwizard/commands"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/changes-and-backwards-compatibility/(.*)$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/features/(.*)$"
+    to: "/controls/radpanelbar/$1"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/howto/object-data/?$"
+    to: "/controls/radpanelbar/object-data"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/howto/display-hierarchical-data/?$"
+    to: "/controls/radpanelbar/object-data"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/styling-and-appearance/required-template-parts/?$"
+    to: "/controls/radpanelbar/overview"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/styling-and-appearance/changing-colors/?$"
+    to: "/controls/radpanelbar/overview"
+    type: Permanent
+-
+    from: "^/controls/radpanelbar/events/overview/?$"
+    to: "/controls/radpanelbar/events"
     type: Permanent
 -
     from: "^/api/html/.*$"

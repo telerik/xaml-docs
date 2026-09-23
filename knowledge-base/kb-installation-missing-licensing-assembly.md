@@ -1,6 +1,7 @@
 ---
 title: Could not Find Assembly Telerik.Licensing.Runtime Compile Error After Upgrade
 description: Unknown build error 'Could not find assembly Telerik.Licensing.Runtime' exception after upgrade.
+components: ["installerandvsextensions"]
 page_title: The Project Cannot Find Telerik.Licensing.Runtime Assembly After Upgrade
 type: troubleshooting
 slug: kb-installation-missing-licensing-assembly
@@ -36,4 +37,4 @@ This may happen if you upgrade to 2025 Q1 from an older version. With 2025 Q1, a
 
 To resolve the error, reference the `Telerik.Licensing.Runtime.dll` file in the project or install the `Telerik.Licensing` NuGet package.
 
-If you install the Telerik UI for WPF assemblies using NuGet packages, the `Telerik.Licensing` package is installed automatically and you should not see the beforementioned error.
+If you install the Telerik UI for WPF assemblies using NuGet packages, the `Telerik.Licensing` package is installed automatically and you should not see the aforementioned error.

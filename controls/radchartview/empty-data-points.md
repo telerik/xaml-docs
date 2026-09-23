@@ -2,6 +2,7 @@
 title: Empty Data Points
 page_title: Empty Data Points
 description: This article describes how to add empty data points to the chart and display gaps in the data.
+components: ["chartview"]
 slug: radchartview-empty-data-points
 tags: radchartview, chartview, empty, data, points, gap
 published: True
@@ -16,7 +17,7 @@ __Adding an empty data point in LineSeries__
 <snippet id='radchartview-empty-data-points-adding_an_empty_data_point_in_lineseries-xaml' />
 
 
-![Picture showing gaps in the chart created with an empty data point](images/radchartview-empty-data-points-0.png)
+![Telerik UI for WPF RadChartView Line Chart Showing a Gap for an Empty Data Point](images/radchartview-empty-data-points-0.png)
 
 The following example shows how to assign the value of the data point in code.
 

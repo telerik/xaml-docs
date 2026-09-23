@@ -2,6 +2,7 @@
 title: Styling the QuickAccessToolbar
 page_title: Styling the QuickAccessToolbar
 description: Check our &quot;Styling the QuickAccessToolbar&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-quickaccesstoolbar
 tags: styling,the,quickaccesstoolbar
 published: True

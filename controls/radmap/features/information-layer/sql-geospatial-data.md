@@ -2,6 +2,7 @@
 title: SQL Geospatial Data
 page_title: SQL Geospatial Data
 description: Check our &quot;SQL Geospatial Data&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-sql-geospatial-data
 tags: sql,geospatial,data
 published: True

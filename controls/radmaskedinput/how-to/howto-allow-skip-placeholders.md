@@ -2,6 +2,7 @@
 title: How to Define Consecutive Input
 page_title: How to Define Consecutive Input
 description: Check our &quot;How to Define Consecutive Input&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-howto-allow-skip-placeholders
 tags: how,to,define,consecutive,input
 published: True

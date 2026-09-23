@@ -2,6 +2,7 @@
 title: Bookmarks Dialog
 page_title: Bookmarks Dialog
 description: Check our &quot;Bookmarks Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-bookmarks
 tags: link,insert
 published: True

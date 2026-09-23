@@ -2,6 +2,7 @@
 title: Styling RadDataForm
 page_title: Styling RadDataForm
 description: This article demonstrates how to create a style targeting the RadDataForm control. 
+components: ["dataform"]
 slug: raddatafor-styles-and-templates-styling-raddataform
 tags: styling,raddataform
 published: True

@@ -2,6 +2,7 @@
 title: Coded UI support
 page_title: Coded UI support
 description: The article describes the CodedUI support of the Telerik suite.
+components: ["general"]
 slug: coded-ui-support
 tags: coded,ui,support
 published: True
@@ -19,7 +20,7 @@ For Visual Studio versions 2017 and later, please make sure that you have [Insta
 
 >important The supported Visual Studio editions for coded UI tests are __Microsoft Visual Studio Ultimate, Premium and Enterprise__. You can also check [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](https://msdn.microsoft.com/en-us/library/dd380742(v=vs.110).aspx).
 
-> Coded UI is supported up to Visual Studio 2019. Visual Studio 2022 droppped the Coded UI feature.
+> Coded UI is supported up to Visual Studio 2019. Visual Studio 2022 dropped the Coded UI feature.
 
 In order to create a CodedUI test, you need to perform the following steps:
 
@@ -64,11 +65,11 @@ In order to create a CodedUI test, you need to perform the following steps:
 
 Below you can find information about the supported level of CodedUI tests throughout our controls.     
 
-There is [Level 2 and Level 3 Coded UI test support](https://devblogs.microsoft.com/devops/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained/) across our controls. For exceptions see bellow.
+There is [Level 2 and Level 3 Coded UI test support](https://devblogs.microsoft.com/devops/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained/) across our controls. For exceptions see below.
         
 ## Q2 2015
 
-The controls that currently do __not__ support Level 2 and Level 3 Coded UI tests are listed bellow:
+The controls that currently do __not__ support Level 2 and Level 3 Coded UI tests are listed below:
         
 Control	|	Level 1	|	Level 2	|	Level 3
 ---	|	---	|	---	|	---

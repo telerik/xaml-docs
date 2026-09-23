@@ -1,6 +1,7 @@
 ---
 title: Change Style of Filtered Column Headers
 description: How to highlight the header cells of a filtered column.
+components: ["gridview"]
 type: how-to
 page_title: Highlight Filtered Header Cells
 slug: kb-gridview-style-filtered-columns

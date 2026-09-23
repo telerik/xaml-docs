@@ -2,6 +2,7 @@
 title: How to Use BringPathIntoView Method
 page_title: How to Use BringPathIntoView Method
 description: Check our &quot;How to Use BringPathIntoView Method&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-bring-path-into-view
 tags: how,to,use,bringpathintoview,method
 published: True

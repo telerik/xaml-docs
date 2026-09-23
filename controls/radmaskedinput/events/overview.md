@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-events-overview
 tags: overview
 published: True

@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering
 description: Check our &quot;Filtering&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-filtering
 tags: filtering
 published: True

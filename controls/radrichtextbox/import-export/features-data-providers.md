@@ -2,6 +2,7 @@
 title: Data Providers
 page_title: Data Providers
 description: Check our &quot;Data Providers&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-data-providers
 tags: data,providers
 published: True

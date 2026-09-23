@@ -2,6 +2,7 @@
 title: Serialization Options
 page_title: Serialization Options
 description: The PersistenceManager class allows you to specify which properties of the UIElements to be saved. To take advantage of this feature you need to set the PersistenceManager.SerializationOptions attached property.
+components: ["persistenceframework"]
 slug: persistence-framework-defining-properties
 tags: serialization,options
 published: True

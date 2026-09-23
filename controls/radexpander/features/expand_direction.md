@@ -2,6 +2,7 @@
 title: Expand Direction
 page_title: Expand Direction
 description: You can change the expander direction through its ExpandDirection property.
+components: ["expander"]
 slug: radexpander-features-expand_direction
 tags: expand,direction
 published: True

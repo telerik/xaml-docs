@@ -2,6 +2,7 @@
 title: Knowledge Base Articles
 page_title: Knowledge Base Articles - Telerik UI for WPF
 description: Custom examples built on top of the Telerik UI for WPF control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-kb-articles
 tags: knowledge,base, sdk, examples, custom, help
 position: 1000
@@ -18,6 +19,7 @@ The following article list Knowledge Base articles related to this section of th
 |[Change ToolTip ShowDuration]({%slug kb-syntaxeditor-how-to-create-custom-tooltip-layer%})|
 |[Code Highlighting Breaks when Scrolling]({%slug kb-syntaxeditor-higlighting-breaks-when-scrolling%})|
 |[Colorize Public Classes from an Assembly with a Custom CSharpTagger]({%slug kb-syntaxeditor-how-to-classify-class-names-from-assembly%})|
+|[Create a Custom Markdown Tagger for RadSyntaxEditor]({%slug kb-syntaxeditor-create-markdown-tagger%})|
 
 ## See Also
 

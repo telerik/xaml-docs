@@ -2,6 +2,7 @@
 title: Semicircle gauge
 page_title: Semicircle gauge
 description: Check our &quot;Semicircle gauge&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radial-scale-semicircle-gauge
 tags: semicircle,gauge
 published: True

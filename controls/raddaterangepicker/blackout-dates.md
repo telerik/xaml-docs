@@ -2,6 +2,7 @@
 title: Blackout Dates
 page_title: Blackout Dates
 description: Check our &quot;Blackout Dates&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-blackout-dates
 tags: daterangepicker,blackout,dates,disabled,readonly
 published: True

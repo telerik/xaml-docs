@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: Check our &quot;Selection&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-selection
 tags: selection
 published: True

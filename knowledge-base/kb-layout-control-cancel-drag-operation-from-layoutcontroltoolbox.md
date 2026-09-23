@@ -1,6 +1,7 @@
 ---
 title: How to Cancel Drop Operation from LayoutControlToolBox to LayoutControl
 description: This article explains how to disallow the dropping of a particular item from the LayoutControlToolBox to the RadLayoutControl.
+components: ["layoutcontrol"]
 type: how-to
 page_title: Disallow Dropping of an Item from the LayoutControlToolBox
 slug: kb-layout-control-cancel-drag-operation-from-layoutcontroltoolbox

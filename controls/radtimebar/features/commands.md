@@ -2,6 +2,7 @@
 title: Commands
 page_title: RadTimeBar Commands
 description: Learn more about the commands of Telerik's {{ site.framework_name }} TimeBar that allow you to easily handle the user interface actions.
+components: ["timebar"]
 slug: timebar-commands
 tags: commands, timebar, timebar commands
 published: True

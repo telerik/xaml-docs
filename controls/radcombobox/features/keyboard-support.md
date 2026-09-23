@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: Check our &quot;Keyboard Support&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-features-keyboard-support
 tags: keyboard,support
 published: True

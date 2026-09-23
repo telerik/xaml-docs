@@ -2,6 +2,7 @@
 title: Set Custom Appointment Height
 page_title: Set Custom Appointment Height
 description: Check our &quot;Set Custom Appointment Height&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-howto-set-custom-appointment-height
 tags: set,custom,appointment,height
 published: True

@@ -2,6 +2,7 @@
 title: Selection Mini Tool Bar
 page_title: Selection Mini Tool Bar
 description: Check our &quot;Selection Mini Tool Bar&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-selection-mini-toolbar
 tags: selection,mini,tool,bar
 published: True

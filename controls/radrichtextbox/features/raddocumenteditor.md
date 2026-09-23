@@ -2,6 +2,7 @@
 title: RadDocumentEditor
 page_title: RadDocumentEditor
 description: Check our &quot;RadDocumentEditor&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-raddocumenteditor
 tags: raddocumenteditor
 published: True
@@ -23,6 +24,8 @@ On the other hand, __RadRichTextBox__ provides a much richer [API](https://docs.
         
 
 The appropriate API, however, should be available in cases when you want to modify a document from code without having a __RadRichTextBox__. For this purpose, a __RadDocumentEditor__ class has been introduced. It also implements the __IDocumentEditor__ interface and includes all relevant methods of __RadRichTextBox__ for manipulating the document programmatically.
+
+For an editor-free custom field workflow, see [Create and Format a Field Without RadRichTextBox]({%slug radrichtextbox-features-custom-fields%}#create-and-format-a-field-without-radrichtextbox).
         
 
 ## How to use RadDocumentEditor

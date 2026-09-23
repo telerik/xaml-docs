@@ -2,6 +2,7 @@
 title: Data Annotations
 page_title: Data Annotations
 description: Check our &quot;Data Annotations&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-data-annotations
 tags: data,annotations
 published: True

@@ -2,6 +2,7 @@
 title: Tools
 page_title: Tools
 description: Check our &quot;Tools&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-features-tools
 tags: tools
 published: True

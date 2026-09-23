@@ -2,6 +2,7 @@
 title: WeatherCard
 page_title: WeatherCard
 description: Check our &quot;WeatherCard&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-items-weathercard
 tags: messages,weathercard
 published: True

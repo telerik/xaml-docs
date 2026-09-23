@@ -2,6 +2,7 @@
 title: Styling Header Row
 page_title: Styling Header Row
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the HeaderRow element.
+components: ["gridview"]
 slug: gridview-styling-header-row
 tags: styling,header,row
 published: True

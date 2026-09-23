@@ -2,6 +2,7 @@
 title: Modifying Group Row
 page_title: Modifying Group Row
 description: Learn how you can modify the default GroupRow's header and footer templates in Telerik's {{ site.framework_name }} DataGrid either on grid or column level.
+components: ["gridview"]
 slug: gridview-grouping-how-to-modify-grouptemplates
 tags: modify,grouprow
 published: True

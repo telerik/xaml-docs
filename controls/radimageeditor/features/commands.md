@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: Check our &quot;Commands&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-features-commands-and-tools
 tags: commands,and,tools
 published: True

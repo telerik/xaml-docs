@@ -2,6 +2,7 @@
 title: Hyperlink Column
 page_title: Hyperlink Column
 description: Learn how to define the Hyperlink Column and have the bound value automatically displayed as a link when using RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: radgridview-columns-column-types-hyperlink-column
 tags: hyperlink,column
 published: True

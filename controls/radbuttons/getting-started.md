@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-getting-started
 tags: getting,started
 published: True

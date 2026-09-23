@@ -2,6 +2,7 @@
 title: Pixels and PixelLength Conversion
 page_title: Conversion between Pixels and PixelLength
 description: Check our &quot;Conversion between Pixels and PixelLength&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-timeruler-conversion
 tags: conversion,between,pixels,and,pixellength
 published: True

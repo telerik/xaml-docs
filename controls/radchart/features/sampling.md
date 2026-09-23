@@ -14,7 +14,7 @@ position: 24
 
 When the chart is populated by thousands of items, the visual representation might not be that clear. It is possible that there are two or more __DataPoints__ shown with a very close Y and X values. This is when sampling comes in handy. The chart combines the items, so that the __DataPoints__ are limited to a certain number (__200__ by default). The sampling engine does not detect/determine whether the datapoints will be on similar pixel coordinates. Instead, it visualizes a subset of the original data. For example, if you have 1000 points, 95% of which are clustered together, and you choose a sampling threshold of 300 points, 95% of these 300 points will be clustered as well. In such a scenario, one possible option is to use [Zooming and Scrolling]({%slug radchart-features-zooming-and-scrolling%}). 
 
-Determining the number of __DataPoints__ to be displayed is done by setting the __SamplingTh reshold__ property of the __SamplingSettings__:
+Determining the number of __DataPoints__ to be displayed is done by setting the __SamplingThreshold__ property of the __SamplingSettings__:
 
 
 

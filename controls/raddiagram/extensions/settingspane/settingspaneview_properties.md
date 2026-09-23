@@ -2,6 +2,7 @@
 title: Extensions
 page_title: Extensions
 description: This article will get you familiar with the SettingsPaneView attached properties.
+components: ["diagram"]
 slug: raddiagram-extensions-extensions-settingspaneview-attachedproperties
 tags: diagram,ribbon,extensions, settingspaneview, editoritemtype, editorpropertyname, editorvalue, containeredititemtype, currentedittype
 published: True

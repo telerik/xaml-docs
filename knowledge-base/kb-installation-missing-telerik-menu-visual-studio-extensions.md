@@ -1,6 +1,7 @@
 ---
 title: Missing Telerik Menu in Visual Studio (Telerik UI for WPF Extensions)
 description: Resolve the issue when the Telerik menu is missing in Visual Studio because Telerik UI for WPF extensions are disabled or not installed.
+components: ["installerandvsextensions"]
 type: troubleshooting
 page_title: Missing Telerik Menu in Visual Studio for Telerik UI for WPF Extensions
 slug: kb-installation-missing-telerik-menu-visual-studio-extensions

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article lists the events exposed by the RadNumericUpDown.
+components: ["numericupdown"]
 slug: radnumericupdown-events
 tags: events
 published: True

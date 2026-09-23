@@ -2,6 +2,7 @@
 title: Cancel Drag Start
 page_title: Cancel Drag Start
 description: Check our &quot;Cancel Drag Start&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-cancel-drag-start
 tags: drag,drop,cancel,start,draginitialize
 published: True

@@ -2,10 +2,11 @@
 title: Selection
 page_title: Working with Selection
 description: Check our &quot;Working with Selection&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-working-with-selection
 tags: working,with,ui,selection
 published: True
-position: 0
+position: 16
 ---
 
 # Working with Selection

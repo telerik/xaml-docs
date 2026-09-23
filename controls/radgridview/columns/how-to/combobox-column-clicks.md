@@ -2,6 +2,7 @@
 title: Number of Clicks to Open ComboBox in GridViewComboBoxColumn
 page_title: Number of Clicks to Open ComboBox in GridViewComboBoxColumn
 description: Check out how you can control the number of clicks needed to change the value of the ComboBox Column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-combobox-column-clicks
 tags: number,of,clicks,in,combobox,column
 published: True

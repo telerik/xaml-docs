@@ -2,9 +2,11 @@
 title: Find and Replace
 page_title: Find and Replace
 description: Check our &quot;Find and Replace&quot; documentation article for the RadSpreadsheet control.
+components: ["spreadsheet"]
 slug: radspreadsheet-find-and-replace
 tags: find, replace, radspreadsheet
 published: True
+position: 8
 ---
 
 # Find and Replace

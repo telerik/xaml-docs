@@ -2,6 +2,7 @@
 title: RateOfChangeIndicator
 page_title: RateOfChangeIndicator
 description: Check our &quot;RateOfChangeIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-rateofchangeindicator
 tags: financial, indicators, rateofchangeindicator
 publish: True

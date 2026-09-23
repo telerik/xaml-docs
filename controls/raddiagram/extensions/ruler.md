@@ -2,6 +2,7 @@
 title: Ruler
 page_title: Ruler
 description: Check our &quot;Ruler&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-extensions-ruler
 tags: ruler
 published: True

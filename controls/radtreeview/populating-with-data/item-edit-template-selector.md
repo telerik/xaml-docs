@@ -2,6 +2,7 @@
 title: ItemEditTemplateSelector
 page_title: ItemEditTemplateSelector
 description: Check our &quot;ItemEditTemplateSelector&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-populating-with-data-item-edit-template-selector
 tags: itemedittemplateselector
 published: True

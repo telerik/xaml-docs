@@ -2,6 +2,7 @@
 title: NullReferenceException When Using TypePath of CategoricalSeriesDescriptor
 page_title: Error If TypePath Property is Used with Chart SeriesDescriptor
 description: Null Reference Exception occurs when TypePath of RadCartesianChart series descriptor is set.
+components: ["chartview"]
 type: how-to
 slug: kb-chartview-nullreferenceexception-when-use-typepath
 position: 0

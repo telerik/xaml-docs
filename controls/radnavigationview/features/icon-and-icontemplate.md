@@ -2,6 +2,7 @@
 title: Icon and IconTemplate
 page_title: Icon and IconTemplate
 description: The article describes the Icon and IconTemplate properties of the RadNavigationViewItem.
+components: ["navigationview"]
 slug: radnavigationview-icon-and-icontemplate
 tags: icon, icontemplate,radnavigationviewitem
 position: 2

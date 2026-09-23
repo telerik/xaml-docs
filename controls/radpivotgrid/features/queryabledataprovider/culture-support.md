@@ -2,6 +2,7 @@
 title: Culture Support
 page_title: Culture Support
 description: This article will describe the Culture support of the QueryableDataProvider.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-queryabledataprovider-culture-support
 tags: culture,support
 published: True

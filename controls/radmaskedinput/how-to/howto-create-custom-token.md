@@ -2,6 +2,7 @@
 title: How to Create Custom Mask Tokens
 page_title: How to Create Custom Mask Tokens
 description: Check our &quot;How to Create Custom Mask Tokens&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-howto-create-custom-token
 tags: how,to,create,custom,mask,tokens
 published: True

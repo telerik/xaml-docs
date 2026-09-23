@@ -14,7 +14,7 @@ position: 29
 
 The purpose of this topic is to demonstrate the selection/hover interactivity effects supported by the RadChart control.
 
-Thе hover and selection interactivity effects greatly enhance the data presentation and readability in various business analysis scenarios. The hover and selection interactivity is supported for all 2D series types (note that "selection" for pie and doughnut types is implemented in the form of exploding the respective item slices). The interactivity support is __disabled by default__ and can be controlled through the Interactivity API under __SeriesDefinition.InteractivitySettings__ complex property:
+The hover and selection interactivity effects greatly enhance the data presentation and readability in various business analysis scenarios. The hover and selection interactivity is supported for all 2D series types (note that "selection" for pie and doughnut types is implemented in the form of exploding the respective item slices). The interactivity support is __disabled by default__ and can be controlled through the Interactivity API under __SeriesDefinition.InteractivitySettings__ complex property:
 
 * __HoverScope__ - gets or sets a value indicating the scope of interactivity for hover effects.
 
@@ -22,7 +22,7 @@ Thе hover and selection interactivity effects greatly enhance the data presenta
 
 * __SelectionMode__ - gets or sets a value indicating the selection mode used by the chart control (single item or multiple items).
 
-In the following example a new __RadChart__ control is declared along with two series definitions - __SplineAreaSeriesDefinition__ and __BarSeriesDefintion__.
+In the following example a new __RadChart__ control is declared along with two series definitions - __SplineAreaSeriesDefinition__ and __BarSeriesDefinition__.
 
 
 
@@ -80,7 +80,7 @@ Take a look at the way the __InteractivitySettings__ are declared for a specific
 
 
 
-For example if __HoverScope__ is set to __InteractivityScope.Series__ for a given bar series, when one hovers over a bar item, the whole series will be highlighted (i.e. all of the other series within the ChartArea will become temporarily transparent); otherwise if __HoverScope__ is set to __InteractivityScope.Item__, when one hovers over a bar item, only the respective item will be highlighted (i.e. all of the other series as well all of the other bar items within the originating bar series will become temporarily transparent). The same principle applies for __SelectionScope__ as well - if it is set to __InteractivityScope.Series__, all items within the series will be selected; alternatively if it set to __InteractivtyScope.Item__, only the respective item will be selected.
+For example if __HoverScope__ is set to __InteractivityScope.Series__ for a given bar series, when one hovers over a bar item, the whole series will be highlighted (i.e. all of the other series within the ChartArea will become temporarily transparent); otherwise if __HoverScope__ is set to __InteractivityScope.Item__, when one hovers over a bar item, only the respective item will be highlighted (i.e. all of the other series as well all of the other bar items within the originating bar series will become temporarily transparent). The same principle applies for __SelectionScope__ as well - if it is set to __InteractivityScope.Series__, all items within the series will be selected; alternatively if it set to __InteractivityScope.Item__, only the respective item will be selected.
 
 ![{{ site.framework_name }} RadChart with Hover Effect](images/RadChart_Features_InteractivityEffects_010.png)
 

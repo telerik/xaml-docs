@@ -2,6 +2,7 @@
 title: Unsupported Features
 page_title: Unsupported Features
 description: Check our &quot;Unsupported Features&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-unsupported-features
 tags: unsupported,features
 published: True

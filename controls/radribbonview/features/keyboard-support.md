@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: Check our &quot;Keyboard Support&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-keyboard-support
 tags: keyboard,support,keytips,iskeytipsenabled,iskeyboardnavigationenabled
 published: True

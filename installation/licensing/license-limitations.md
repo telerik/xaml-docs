@@ -2,6 +2,7 @@
 title: Trial License Limitations
 page_title: Trial License Limitations
 description: This article explains the main differences between the licenses available for the Telerik UI for WPF suite and the limitations of the Trial license.
+components: ["general"]
 slug: installation-installing-license-limitations-wpf
 tags: trial,license,limitations
 published: True
@@ -14,12 +15,12 @@ The following topic explains the main differences between the licenses available
 
 Currently there are two main types of licenses used for UI for WPF - __Developer__ and __Trial__. The license is applied through a [license key]({%slug installing-license-key%}) installed on the developer's machine. 
 
-The free __Trial__ license of Telerik UI for WPF gives access to all functionalities of the product and it will work for an unlimited time. However, once the trial period expires a trial message banner along with a watermakr overlay will be displayed. 
+The free __Trial__ license of Telerik UI for WPF gives access to all functionalities of the product and it will work for an unlimited time. However, once the trial period expires a trial message banner along with a watermark overlay will be displayed. 
 
 During the active trial the following popup will display on startup of the application.
 
-![A picture showing the trial message dialon](images/installation-installing-license-limitations-0.png)
+![Telerik UI for WPF trial message dialog](images/installation-installing-license-limitations-0.png)
 
 After the trial expires, the following message box and watermark overlay are displayed.
 
-![A picture showing the trial warning and watermark overlay](images/installation-installing-license-limitations-1.png)
+![Telerik UI for WPF trial warning and watermark overlay](images/installation-installing-license-limitations-1.png)

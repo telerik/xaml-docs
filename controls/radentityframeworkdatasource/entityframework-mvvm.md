@@ -2,6 +2,7 @@
 title: MVVM Usage
 page_title: MVVM Usage
 description: This article shows how to create a database using the code first approach and display data with the help of RadEntityFrameworkDataSource and RadGridView.
+components: ["entityframeworkdatasource"]
 slug: entityframework-mvvm-usage
 tags: mvvvm, usage, entity, framework, queryableentitycollectionview
 published: True

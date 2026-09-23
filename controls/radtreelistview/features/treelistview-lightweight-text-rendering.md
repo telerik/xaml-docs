@@ -2,6 +2,7 @@
 title: Lightweight Text Rendering
 page_title: Lightweight Text Rendering
 description: This article will provide information about the lightweight text rendering functionality of Telerik UI for WPF RadTreeListView.
+components: ["treelistview"]
 slug: treelistview-lightweight-text-rendering
 tags: treelistvew, lightweight, render, text render, cell text
 published: True

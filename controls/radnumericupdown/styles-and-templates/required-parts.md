@@ -2,6 +2,7 @@
 title: Required parts
 page_title: Required parts
 description: Check our &quot;Required parts&quot; documentation article for the RadNumericUpDown {{ site.framework_name }} control.
+components: ["numericupdown"]
 slug: radnumericupdown-required-parts
 tags: required,parts
 published: True

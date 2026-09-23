@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: Check our &quot;Selection&quot; documentation article for the RadMultiColumnComboBox {{ site.framework_name }} control.
+components: ["multicolumncombobox"]
 slug: multicolumncombobox-selection
 tags: selection
 published: True

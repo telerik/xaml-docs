@@ -2,6 +2,7 @@
 title: How To Change the Action Trigering an Expand
 page_title: How To Change the Action Trigering an Expand
 description: This article shows how to change the action that triggers an expand.
+components: ["expander"]
 slug: radexpander-howto-change-expand-action
 tags: how,to,change,the,action,trigering,an,expand
 published: True

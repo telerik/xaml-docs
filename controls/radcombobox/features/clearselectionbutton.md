@@ -2,6 +2,7 @@
 title: Clear Selection Button
 page_title: Clear Selection Button
 description: Check our &quot;Clear Selection Button&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-features-clearselectionbutton
 tags: clear,selection,button
 published: True

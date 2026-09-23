@@ -2,6 +2,7 @@
 title: HoverMode
 page_title: HoverMode
 description: Check our &quot;HoverMode&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-hovermode
 tags: radchartview,hover, mode
 published: True
@@ -25,7 +26,7 @@ __Define the RadCartesianChart with HoverMode__
 
 __Result from the above example comparing hovering over different series__
 
-![RadChartView HoverMode](images/RadChartView-HoverMode.png)
+![Telerik UI for WPF RadChartView Comparing Hover Effects on Different Data Series](images/RadChartView-HoverMode.png)
 
 >important For series whose `RenderOptions` property is set to `Bitmap` or `Direct2D`, the `FadeOtherSeries` option will only be supported by hovering the series' associated `RadLegendItem` element. To learn more about the `RadLegend`control integration with RadChartView, check our [RadLegend Support]({%slug radchartview-features-radlegend-support%}) article.
 

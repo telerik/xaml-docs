@@ -2,6 +2,7 @@
 title: Network Locations Support
 page_title: Network Locations Support
 description: Check our &quot;Network Locations Support&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-features-network-locations
 tags: network,locations
 published: True

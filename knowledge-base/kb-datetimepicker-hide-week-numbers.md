@@ -1,6 +1,7 @@
 ---
 title: Hide the Week Numbers in RadDateTimePicker
 description: How to hide the week numbers in the calendar of RadDateTimePicker.
+components: ["datetimepicker"]
 type: how-to
 page_title: Change the Visibility of the Week Numbers in DateTimePicker's Calendar  
 slug: kb-datetimepicker-hide-week-numbers

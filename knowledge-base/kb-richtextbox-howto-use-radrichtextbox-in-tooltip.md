@@ -1,6 +1,7 @@
 ---
 title: Use RadRichTextBox in Tooltip
 description: Shows how you can bind the content of RadRichTextBox to HTML when the control is defined in a ToolTip.
+components: ["richtextbox"]
 type: how-to
 page_title: Use RadRichTextBox in a tooltip to show HTML content
 slug: kb-richtextbox-howto-use-radrichtextbox-in-tooltip

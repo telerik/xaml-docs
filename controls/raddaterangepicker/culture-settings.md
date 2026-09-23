@@ -2,6 +2,7 @@
 title: Culture Settings
 page_title: Culture Settings
 description: Check our &quot;Culture Settings&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-culture-settings
 tags: daterangepicker,input,culture,settings,localization
 published: True

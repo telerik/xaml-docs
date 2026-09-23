@@ -2,6 +2,7 @@
 title: Palette Entry
 page_title: Palette Entry
 description: Check our &quot;Palette Entry&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-palettes-paletteentry
 tags: palette,entry
 published: True
@@ -26,7 +27,7 @@ __Example 1: Creating a custom palette__
 
 
 #### __Figure 1: OhlcSeries with Custom Palette__
-![OhlcSeries with Custom Palette](images/RadChartView-palettes-paletteentry-0.png)
+![Telerik UI for WPF RadChartView OhlcSeries with a custom palette](images/RadChartView-palettes-paletteentry-0.png)
 
 ## Getting a PaletteEntry of a Series
 

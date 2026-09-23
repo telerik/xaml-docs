@@ -2,6 +2,7 @@
 title: Binding To Object
 page_title: Binding To Object
 description: Check our &quot;Binding To Object&quot; documentation article for the RadListBox {{ site.framework_name }} control.
+components: ["listbox"]
 slug: radlistbox-populating-with-data-binding-to-object
 tags: binding,to,object
 published: True

@@ -2,6 +2,7 @@
 title: Routing
 page_title: Routing
 description: This article describes the routing functionality of the RadDiagram framework.
+components: ["diagram"]
 slug: raddiagram-features-routing
 tags: routing,astarrouter, treelayout,custom routertree, inflatedrectrouter, orgTreeRouter, tipovertreerouter, avoidshapes, avoidconnectionoverlap, overlap
 published: True

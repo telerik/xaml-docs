@@ -2,6 +2,7 @@
 title: Protect Document Dialogs
 page_title: Protect Document Dialog
 description: Check our &quot;Protect Document Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-protect-document
 tags: protect,document,restrict
 published: True

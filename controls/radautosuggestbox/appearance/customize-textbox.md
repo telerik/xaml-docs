@@ -2,6 +2,7 @@
 title: Customize the TextBox
 page_title: Customize the TextBox
 description: This article shows how to customize the appearance of the TextBox part of RadAutoSuggestBox.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-appearance-customize-textbox
 tags: watermarktextbox,style,customize
 position: 2

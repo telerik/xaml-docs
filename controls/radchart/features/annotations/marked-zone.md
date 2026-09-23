@@ -14,7 +14,7 @@ position: 2
 
 ## 
 
-The Marked Zone feature allows you to place a rectangle inside the __ChartArea__. This allows you to mark a specific part of it, in order to easily look at all the data that belongs to this area. In order to creat a Marked Zone you have to use the __MarkedZone__ class and add an instance of it to the __Annotations__ collection of the __ChartArea__. You also have to set its __StartY__ and __EndY__ properties for a rectangle that spans along the entire X-Axis, or the __StartX__ and __EndX__ properties for a rectangle that spans along the entire Y-Axis, or set the four properties at once in order to create a rectangle that is limited in both directions.
+The Marked Zone feature allows you to place a rectangle inside the __ChartArea__. This allows you to mark a specific part of it, in order to easily look at all the data that belongs to this area. In order to create a Marked Zone you have to use the __MarkedZone__ class and add an instance of it to the __Annotations__ collection of the __ChartArea__. You also have to set its __StartY__ and __EndY__ properties for a rectangle that spans along the entire X-Axis, or the __StartX__ and __EndX__ properties for a rectangle that spans along the entire Y-Axis, or set the four properties at once in order to create a rectangle that is limited in both directions.
 
 >tip You can place more than one __MarkedZone__in your __ChartArea__.
 

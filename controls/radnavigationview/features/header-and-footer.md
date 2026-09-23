@@ -2,6 +2,7 @@
 title: Header and Footer
 page_title: Header and Footer
 description: This article will demonstrate how the RadNavigationView header and footer can be customized.
+components: ["navigationview"]
 slug: radnavigationview-header-and-footer
 tags: header, footer
 position: 1
@@ -51,6 +52,8 @@ As of **R3 2020**, you can also define RadNavigationViewItems in the footer sect
 
 __Example 4: Place items in the footer__
 <snippet id='radnavigationview-features-header-and-footer-block_4-xaml' />
+
+To limit the height of the footer items host, set its `MaxHeight` property in the `PaneFooterTemplate`, as shown in the example.
 
 ## Customizing the Pane Toggle Button
 

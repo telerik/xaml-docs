@@ -2,6 +2,7 @@
 title: Date Items
 page_title: Date Items
 description: Check our &quot;Date Items&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-features-date-items
 tags: date,items
 published: True

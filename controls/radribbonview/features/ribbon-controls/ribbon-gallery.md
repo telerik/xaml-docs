@@ -2,6 +2,7 @@
 title: Ribbon Gallery
 page_title: Ribbon Gallery
 description: Check our &quot;Ribbon Gallery&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-ribbon-gallery
 tags: ribbon,gallery
 published: True

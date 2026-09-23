@@ -2,6 +2,7 @@
 title: Line Numbers Dialog
 page_title: Line Numbering Dialog
 description: Check our &quot;Line Numbers Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-line-numbers
 tags: line,numbers,numbering
 published: True

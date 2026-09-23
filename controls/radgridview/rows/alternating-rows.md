@@ -2,6 +2,7 @@
 title: Alternating Rows
 page_title: Alternating Rows
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to improve the readability by having alternating rows.
+components: ["gridview"]
 slug: radgridview-rows-alternating-rows
 tags: alternating,rows
 published: True

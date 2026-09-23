@@ -2,6 +2,7 @@
 title: Use DataFormValidationSummary outside RadDataForm
 page_title: Use DataFormValidationSummary outside RadDataForm
 description: Check our &quot;Use DataFormValidationSummary outside RadDataForm&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: validationsummary-outside-raddataform
 tags: validationsummary,outside,raddataform
 published: True

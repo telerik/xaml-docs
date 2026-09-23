@@ -2,6 +2,7 @@
 title: Scrolling
 page_title: Scrolling
 description: Check our &quot;Scrolling&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-scrolling
 tags: scrolling
 published: True

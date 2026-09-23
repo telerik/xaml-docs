@@ -2,6 +2,7 @@
 title: Using TxtFormatProvider
 page_title: Using TxtFormatProvider
 description: Check our &quot;Using TxtFormatProvider&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-import-export-txt-txtformatprovider
 tags: using-txtFormatProvider
 published: True

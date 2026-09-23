@@ -2,6 +2,7 @@
 title: Fluid Content Control
 page_title: Fluid Content Control
 description: Check our &quot;Fluid Content Control&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 slug: radtileview-fluid-content-control
 tags: fluid,content,control
 published: True

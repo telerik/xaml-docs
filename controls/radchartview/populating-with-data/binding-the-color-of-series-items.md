@@ -2,6 +2,7 @@
 title: Binding the Color of Series Items
 page_title: Binding the Color of Series Items
 description: Check our &quot;Binding the Color of Series Items&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-populating-with-data-binding-the-color-of-series-items
 tags: binding,the,color,of,series,items
 published: True
@@ -74,7 +75,7 @@ There are couple approaches which could be used to bind the color from the data 
 You can use those approaches with most series types of the chart.
 
 #### __Figure 1: Different colored bars__
-![Result](images/RadChartView-binding_colors_0.png)
+![Telerik UI for WPF RadChartView BarSeries with differently colored bars](images/RadChartView-binding_colors_0.png)
 
 ## Scatter Point Series      
 
@@ -107,7 +108,7 @@ The ScatterPointSeries can be customized using the same manner as with the [BarS
 You can see the data model used for this example in the [Example Data Model Definition](#example-data-model-definition) section.
 	
 #### __Figure 2: Different colored points__
-![Result](images/RadChartView-binding_colors_1.png)
+![Telerik UI for WPF RadChartView ScatterPointSeries with differently colored points](images/RadChartView-binding_colors_1.png)
 
 ## Pie Series      
 
@@ -120,7 +121,7 @@ __Example 8: Setting Pie Series default visual style__
 You can see the data model used for this example in the [Example Data Model Definition](#example-data-model-definition) section.
 
 #### __Figure 3: Different colored pie slices__
-![Rad Chart View-binding colors 2](images/RadChartView-binding_colors_2.png)
+![Telerik UI for WPF RadPieChart with differently colored pie slices](images/RadChartView-binding_colors_2.png)
 		
 ## See Also
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

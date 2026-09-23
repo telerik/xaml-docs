@@ -1,7 +1,7 @@
 ---
 title: Copyright
 page_title: Copyright
-description: Telerirk UI for {{ site.framework_name }} Copyright.
+description: Telerik UI for {{ site.framework_name }} Copyright.
 slug: license-copyright
 tags: copyright
 published: False

@@ -2,6 +2,7 @@
 title: EventToCommandBehavior
 page_title: EventToCommandBehavior
 description: The EventToCommandBehavior enables you to bind any control's routed event to an ICommand property of the view model.
+components: ["general"]
 slug: common-event-to-command-behavior
 tags: eventtocommandbehavior
 published: True
@@ -71,13 +72,13 @@ __Example 4: Define the custom command__
 
 **Figure 1** shows the final result.
 #### __Figure 1: Execute a command through the EventToCommandBehavior__
-![Common Event To Command Behavior 1](images/Common_EventToCommandBehavior_1.png)
+![Telerik UI for WPF EventToCommandBehavior executing a command from a control event](images/Common_EventToCommandBehavior_1.png)
 
 ## RaiseOnHandledEvents
 
 Sometimes it appears that the event you need to handle is already handled in the code of the control. In the previous example the event wasn't handled in the code so there weren't any problems. However if you need to handle the MouseLeftButtonDown for an example you won't be able unless you set the __RaiseOnHandledEvents__ property to True which allows you to raise handled events:
        
-__Example 5: Set the RasedOnHandledEvents property__
+__Example 5: Set the RaiseOnHandledEvents property__
 
 ```XAML
 	<telerik:EventToCommandBehavior.EventBindings>
@@ -120,7 +121,7 @@ __Example 7: Modify the method in the ViewModel class__
 
 The result is shown in **Figure 2**.
 #### **Figure 2: Modified method to use the command parameter**
-![Common Event To Command Behavior 2](images/Common_EventToCommandBehavior_2.png)
+![Telerik UI for WPF EventToCommandBehavior passing a command parameter to the ViewModel](images/Common_EventToCommandBehavior_2.png)
 
 ### PassEventArgsToCommand
 
@@ -152,7 +153,7 @@ __Example 9: Modify the method to use the EventArgs__
 The result is shown in **Figure 3**.
 
 #### **Figure 3: Pass the EventArgs to the method**
-![Common Event To Command Behavior 3](images/Common_EventToCommandBehavior_3.png)
+![Telerik UI for WPF EventToCommandBehavior passing event arguments to a command](images/Common_EventToCommandBehavior_3.png)
 
 ## CommandTarget
 
@@ -160,7 +161,7 @@ The __CommandTarget__ property of the __EventBinding__ specifies the element whe
         
 ## Multiple Commands
 
-The __EventToCommandBehavior__ gives you the ability to add multiple __EventBinidings__. You can easily bind multiple commands to a single event as well as a single command to multiple events. For example we can execute two commands in the ViewModel when the MouseLeftButtonDown event of __RadListBox__ is fired:
+The __EventToCommandBehavior__ gives you the ability to add multiple __EventBindings__. You can easily bind multiple commands to a single event as well as a single command to multiple events. For example we can execute two commands in the ViewModel when the MouseLeftButtonDown event of __RadListBox__ is fired:
         
 __Example 10: Set multiple event bindings__
 

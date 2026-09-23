@@ -2,6 +2,7 @@
 title: Filter Descriptors
 page_title: Filter Descriptors
 description: Check our &quot;Filter Descriptors&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: raddatafilter-features-filter-descriptors
 tags: filter,descriptors
 published: True

@@ -2,6 +2,7 @@
 title: Customizing the CellSelectionTemplate
 page_title: Customizing the CellSelectionTemplate
 description: Check our &quot;Customizing the CellSelectionTemplate&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-columns-selection-template
 tags: customizing,the,cellselectiontemplate
 published: True

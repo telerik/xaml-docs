@@ -2,8 +2,9 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-overview2
-tags: overview
+tags: overview, tab, pageview, stripview
 published: True
 position: 0
 CTAControlName: RadTabControl

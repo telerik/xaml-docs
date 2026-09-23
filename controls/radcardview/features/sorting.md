@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting
 description: The article describes the sorting feature of RadCardView.
+components: ["cardview"]
 slug: radcardview-features-sorting
 tags: sorting,cardview
 published: True

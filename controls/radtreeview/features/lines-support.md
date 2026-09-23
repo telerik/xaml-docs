@@ -2,6 +2,7 @@
 title: Lines Support
 page_title: Lines Support
 description: Check our &quot;Lines Support&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-features-lines-support
 tags: lines,support
 published: True

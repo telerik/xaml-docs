@@ -2,6 +2,7 @@
 title: Close RadPane Instances
 page_title: Close RadPane Instances
 description: Check our &quot;Close RadPane Instances&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-how-to-close-panes
 tags: how,to,close,panes
 published: True

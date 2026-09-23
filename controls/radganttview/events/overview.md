@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article shows the events exposed by RadGanttView.
+components: ["ganttview"]
 slug: radganttview-events-overview
 tags: overview
 published: True

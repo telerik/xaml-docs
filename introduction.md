@@ -40,7 +40,7 @@ Telerik UI for WPF features the following controls:
             <IntroTableAnchor title="EntityFrameworkCoreDataSource" href="slug:entityframeworkcore-overview"></IntroTableAnchor>
             <IntroTableAnchor title="EntityFrameworkDataSource" href="slug:entityframework-overview"></IntroTableAnchor>
             <IntroTableAnchor title="ExpressionEditor" href="slug:radexpressioneditor-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="GridView (DataGrid)" href="slug:gridview-overview2"></IntroTableAnchor>
+            <IntroTableAnchor title="GridView (DataGrid)" href="slug:gridview-overview2" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="ListBox" href="slug:radlistbox-overview"></IntroTableAnchor>
             <IntroTableAnchor title="MultiColumnComboBox" href="slug:multicolumncombobox-overview"></IntroTableAnchor>
             <IntroTableAnchor title="PivotGrid" href="slug:radpivotgrid-overview"></IntroTableAnchor>
@@ -85,6 +85,7 @@ Telerik UI for WPF features the following controls:
             <IntroTableAnchor title="DesktopAlert" href="slug:raddesktopalert-overview"></IntroTableAnchor>
             <IntroTableAnchor title="DragDropManager" href="slug:dragdropmanager-overview"></IntroTableAnchor>
             <IntroTableAnchor title="HighlightTextBlock" href="slug:radhighlighttextblock-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="InlineAIAssistant" href="slug:radinlineaiassistant-overview" tag="new"></IntroTableAnchor>
             <IntroTableAnchor title="PersistenceFramework" href="slug:persistence-framework-overview"></IntroTableAnchor>
             <IntroTableAnchor title="ProgressBar" href="slug:radprogressbar-overview"></IntroTableAnchor>
             <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview"></IntroTableAnchor>
@@ -96,7 +97,7 @@ Telerik UI for WPF features the following controls:
     <IntroTableColumn>
         <IntroTableSection title="Navigation">
             <IntroTableAnchor title="Breadcrumb" href="slug:radbreadcrumb-overvew"></IntroTableAnchor>
-            <IntroTableAnchor title="Buttons" href="slug:radbuttons-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="Buttons" href="slug:radbuttons-overview" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="ContextMenu" href="slug:contextmenu-overview1"></IntroTableAnchor>
             <IntroTableAnchor title="Menu" href="slug:radmenu-overview"></IntroTableAnchor>
             <IntroTableAnchor title="NavigationView (HamburgerMenu)" href="slug:radnavigationview-overview"></IntroTableAnchor>
@@ -143,7 +144,7 @@ Telerik UI for WPF features the following controls:
             <IntroTableAnchor title="RichTextBox" href="slug:radrichtextbox-overview"></IntroTableAnchor>
             <IntroTableAnchor title="Slider" href="slug:radslider-overview"></IntroTableAnchor>
             <IntroTableAnchor title="SpellChecker" href="slug:radspellchecker-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="SyntaxEditor" href="slug:radsyntaxeditor-overview"></IntroTableAnchor>
             <IntroTableAnchor title="WatermarkTextBox" href="slug:radwatermarktextbox-overview"></IntroTableAnchor>
         </IntroTableSection>
@@ -168,6 +169,10 @@ Throughout this article, you will find the following sections that describe all 
 ## Trial Version and Commercial License
 
 This UI for WPF library is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a Telerik UI for WPF license](https://www.telerik.com/purchase/individual/wpf.aspx). Feel free to review the Telerik UI for WPF [license agreement terms](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s) to get acquainted with the full terms of use.	
+
+## Export Classification
+
+Telerik products, including Telerik UI for WPF, are classified as **EAR99** for export-control purposes. For more information about the EAR99 classification, see the [U.S. Department of Commerce guidance on ECCN and EAR99](https://www.trade.gov/eccn-and-export-administration-regulation-ear99).
 
 ## Support Options
 
@@ -212,7 +217,8 @@ We believe that the documentation for a product is at its best when the content 
 
 __Submit a New Issue at GitHub__
 
-If you find an issue with our docs that needs to be addressed, the best way to let us know is by creating an issue in the [Telerik XAML docs GitHub repository](https://github.com/telerik/xaml-docs/issues?q=is%3Aopen). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closest anchor to the issue, that is even better.
+If you find an issue with our docs that needs to be addressed, the best way to let us know is by creating an issue in the [Telerik XAML docs GitHub repository](https://github.com/telerik/xaml-docs/issues?q=is%3Aopen). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closest anchor to the issue, that is even better.
+
 
 __Update the Documentation at GitHub__
 

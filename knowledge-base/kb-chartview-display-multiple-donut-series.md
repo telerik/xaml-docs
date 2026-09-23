@@ -1,6 +1,7 @@
 ---
 title: How to Display Multiple Doughnut Series
 description: How to show several pie charts in RadChartView.
+components: ["chartview"]
 type: how-to
 page_title: Plot Multiple Donuts
 slug: kb-chartview-display-multiple-donut-series

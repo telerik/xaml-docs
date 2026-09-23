@@ -2,6 +2,7 @@
 title: Truck Routing
 page_title: Truck Routing
 description: RadMap provides an infrastructure which allows you to use the Bing Maps Truck Routing API via BingRestMapProvider.
+components: ["map"]
 slug: radmap-features-providers-bing-rest-map-provider-truck-routing
 tags: bing,map,provider,rest,routing
 published: True

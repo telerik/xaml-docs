@@ -1,6 +1,7 @@
 ---
 title: CreateShell Method Can't Return RadWindow in Prism 7
 description: The return value of the CreateShell method is of type Shell. This breaks the application if the return type is not a sub class of WPF Window.
+components: ["window"]
 type: troubleshooting
 page_title: Using RadWindow with Prism 7
 slug: kb-radwindow-prismapplication-createshell

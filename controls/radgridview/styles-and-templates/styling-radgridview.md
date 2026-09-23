@@ -2,6 +2,7 @@
 title: Styling RadGridView
 page_title: Styling RadGridView
 description: Learn how to create an appropriate style targeting the RadGridView control in order to style all instances of Telerik's {{ site.framework_name }} DataGrid in your application.
+components: ["gridview"]
 slug: radgridview-styles-and-templates-styling-radgridview
 tags: styling,radgridview
 published: True

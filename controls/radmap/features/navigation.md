@@ -2,6 +2,7 @@
 title: Navigation
 page_title: Navigation
 description: Check our &quot;Navigation&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-navigation
 tags: navigation
 published: True

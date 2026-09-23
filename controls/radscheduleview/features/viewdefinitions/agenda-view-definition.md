@@ -2,6 +2,7 @@
 title: Agenda View
 page_title: AgendaViewDefinition
 description: AgendaViewDefinition allows you to display a set of appointments for a specific period of time.
+components: ["scheduleview"]
 slug: radscheduleview-viewdefinitions-agenda
 tags: agendaviewdefinition, appointments
 published: True

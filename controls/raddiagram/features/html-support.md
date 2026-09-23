@@ -2,6 +2,7 @@
 title: Html Export
 page_title: Html Export
 description: Check our &quot;Html Export&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-features-html-support
 tags: html,support
 published: True

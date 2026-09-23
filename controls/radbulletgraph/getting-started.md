@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This tutorial will walk you through the creation of a RadBulletGraph.
+components: ["bulletgraph"]
 slug: radbulletgraph-getting-started
 tags: getting,started
 published: True

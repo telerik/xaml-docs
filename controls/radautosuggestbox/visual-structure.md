@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: The article demonstrates the Visual Structure of the RadAutoSuggestBox.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-visual-structure
 tags: visual,structure
 published: True
@@ -19,7 +20,7 @@ This topic defines terms and concepts related to __RadAutoSuggestBox__ that you 
 
 The following table lists the elements that make up a RadAutoSuggestBox:
 
-* __Watermark Content__: Shows the empty content of RadAutoSuggestBox when there is no text enterted into the TextBox.
+* __Watermark Content__: Shows the empty content of RadAutoSuggestBox when there is no text entered into the TextBox.
 
 * __TextBox__: Shows the current text query or the chosen suggestion. 
 

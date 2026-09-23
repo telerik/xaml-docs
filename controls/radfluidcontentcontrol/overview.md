@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: RadFluidContentControl is a flexible content control used to built responsive layouts.
+components: ["fluidcontentcontrol"]
 slug: fluidcontentcontrol-overview
 tags: overview
 published: True

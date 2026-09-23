@@ -2,6 +2,7 @@
 title: Dialog Types
 page_title: Dialog Types
 description: This article will demonstrate the DialogTypes property of the RadFilePathPicker control.
+components: ["filepathpicker"]
 slug: radfilepathpicker-dialog-types
 tags: radfilepathpicker, dialog, types
 position: 0

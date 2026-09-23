@@ -2,6 +2,7 @@
 title: Editing Start Triggers
 page_title: Editing Start Triggers - GridView
 description: RadGridView supports a set of few different triggers that start the cell editing, like mouse click, typing, F2 key press and more.
+components: ["gridview"]
 slug: gridview-edittriggers
 tags: edittriggers,triggers,editing,f2
 published: True

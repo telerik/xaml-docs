@@ -2,6 +2,7 @@
 title: Breaking Changes
 page_title: Backward Compatibility
 description: Check our &quot;Backward Compatibility&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-backward-compatibility
 tags: backward,compatibility
 published: True

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article describes the RadCarouselPanel events.
+components: ["carousel"]
 slug: carousel-radcarouselpanel-events
 tags: events
 published: True

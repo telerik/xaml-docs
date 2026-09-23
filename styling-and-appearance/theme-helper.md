@@ -2,6 +2,7 @@
 title: Theme Helper
 page_title: Theme Helper
 description: The UI for WPF suite comes with a theming helper class which you can use to bring the theming of your application to a next level. 
+components: ["general"]
 slug: styling-appearance-theme-helper
 tags: theming,theme,helper
 published: True
@@ -60,7 +61,7 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 
 __Appearance of the RadToggleButton in the different states__
 
-![RadToggleButton States](/images/styling-appearance-theme-helper-toggle-button-states.png)
+![Telerik UI for WPF RadToggleButton visual states in the Theme Helper](/images/styling-appearance-theme-helper-toggle-button-states.png)
 
 ## See Also
 

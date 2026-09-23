@@ -2,6 +2,7 @@
 title: Programmatic Sorting
 page_title: Programmatic Sorting
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to sort data programmatically using the SortDescriptors collection.
+components: ["gridview"]
 slug: gridview-sorting-programmatic
 tags: programmatic,sorting
 published: True

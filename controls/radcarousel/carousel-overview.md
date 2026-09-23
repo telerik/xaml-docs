@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
+components: ["carousel"]
 slug: carousel-overview
 tags: overview
 published: True

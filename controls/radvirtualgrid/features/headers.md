@@ -2,6 +2,7 @@
 title: Headers
 page_title: Headers
 description: Check our &quot;Headers&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-headers
 tags: headers
 published: True

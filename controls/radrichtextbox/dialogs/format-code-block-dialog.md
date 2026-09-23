@@ -2,6 +2,7 @@
 title: Format Code Block Dialog
 page_title: Format Code Block Dialog
 description: Check our &quot;Format Code Block Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-format-code-block
 tags: format,code,snippet,block
 published: True

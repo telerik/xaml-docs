@@ -2,6 +2,7 @@
 title: Active Sections
 page_title: Active Sections
 description: Check our &quot;Active Sections&quot; documentation article for the RadColorEditor {{ site.framework_name }} control.
+components: ["coloreditor"]
 slug: radcoloreditor-activesections
 tags: active,sections
 published: True

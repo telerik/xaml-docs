@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: The RadAutoSuggestBox control provides a built-in support for the Up, Down, Esc and Enter keys.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-features-keyboard-support
 tags: visual,structure
 published: True

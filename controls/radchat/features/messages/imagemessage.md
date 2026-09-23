@@ -2,6 +2,7 @@
 title: ImageMessage
 page_title: ImageMessage
 description: Check our &quot;ImageMessage&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-items-imagemessage
 tags: messages,imagemessage
 published: True

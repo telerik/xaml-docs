@@ -2,6 +2,7 @@
 title: Table of Contents Dialog
 page_title: Table of Contents Dialog
 description: Check our &quot;Table of Contents Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-contents-table
 tags: link,insert,table,contents,toc
 published: True

@@ -2,6 +2,7 @@
 title: TimeRuler Configuration
 page_title: TimeRuler Configuration
 description: Check our &quot;TimeRuler Configuration&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-end-user-capabilities-timerulerconfiguration
 tags: timeruler,configuration
 published: True

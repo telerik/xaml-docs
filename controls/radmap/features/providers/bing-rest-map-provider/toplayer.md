@@ -2,6 +2,7 @@
 title: Top Layer
 page_title: Top Layer
 description: Check our &quot;Top Layer&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-providers-top-layer
 tags: map, top layer, bing provider
 published: true

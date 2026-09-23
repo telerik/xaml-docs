@@ -2,6 +2,7 @@
 title: Style Sheets
 page_title: Style Sheets
 description: Check our &quot;Style Sheets&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-style-sheets
 tags: style,sheets
 published: True

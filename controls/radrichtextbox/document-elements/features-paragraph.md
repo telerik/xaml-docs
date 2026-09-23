@@ -2,6 +2,7 @@
 title: Paragraph
 page_title: Paragraph
 description: Check our &quot;Paragraph&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-paragraph
 tags: paragraph
 published: True

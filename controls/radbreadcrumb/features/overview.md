@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
+components: ["breadcrumb"]
 slug: radbreadcrumb-features-overview
 tags: overview
 published: True
@@ -10,7 +11,7 @@ position: 0
 
 # Overview
 
-The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properties to allow further customization of their behavior and layout:
+The __RadBreadcrumb__ and __RadBreadcrumbItem__ controls expose a set of properties to allow further customization of their behavior and layout:
 
 ## RadBreadcrumb Common Properties
 

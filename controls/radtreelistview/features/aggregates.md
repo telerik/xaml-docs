@@ -2,6 +2,7 @@
 title: Aggregates
 page_title: Aggregates
 description: Check our &quot;Aggregates&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-features-aggregates
 tags: aggregates
 published: True

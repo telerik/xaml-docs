@@ -2,6 +2,7 @@
 title: Toggle RowDetails Column
 page_title: Toggle RowDetails Column
 description: Learn how to use the Toggle RowDetails Column in Telerik's DataGrid to show RowDetails if they are available.
+components: ["gridview"]
 slug: radgridview-columns-column-types-toggle-rowdetails-column
 tags: toggle,rowdetails,column
 published: True

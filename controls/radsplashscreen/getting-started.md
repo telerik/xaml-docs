@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This tutorial will walk you through the creation of a sample application that shows a RadSplashScreen using RadSplashScreenManager.
+components: ["splashscreen"]
 slug: radsplashscreen-getting-started
 tags: getting,started,splashscreen,busyindicator
 published: True

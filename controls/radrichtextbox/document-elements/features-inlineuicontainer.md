@@ -2,6 +2,7 @@
 title: InlineUIContainer
 page_title: InlineUIContainer
 description: Check our &quot;InlineUIContainer&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-inlineuicontainer
 tags: inlineuicontainer
 published: True

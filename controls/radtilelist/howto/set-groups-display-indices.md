@@ -2,6 +2,7 @@
 title: Set Group's Display Indices
 page_title: Set Group's Display Indices
 description: Check our &quot;Set Group's Display Indices&quot; documentation article for the RadTileList {{ site.framework_name }} control.
+components: ["tilelist"]
 slug: radtilelist-howto-set-groups-display-indices
 tags: set,group's,display,indices
 published: True

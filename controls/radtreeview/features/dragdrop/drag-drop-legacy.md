@@ -2,6 +2,7 @@
 title: Legacy Drag Drop Mode
 page_title: Legacy Drag Drop Mode
 description: Check our &quot;Legacy Drag Drop Mode&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-features-drag-and-drop-legacy
 tags: drag,and,drop
 published: True

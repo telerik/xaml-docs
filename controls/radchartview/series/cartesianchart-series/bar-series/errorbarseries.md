@@ -2,6 +2,7 @@
 title: ErrorBarSeries
 page_title: ErrorBarSeries
 description: RadChartView for WPF Error Bar Series for {{ site.framework_name }} allows you to display error bars chart visualization.
+components: ["chartview"]
 slug: radchartview-series-errorbarseries
 tags: error,uncertainty,box,plot,whiskers,errorbar
 published: True
@@ -22,7 +23,7 @@ __Defining ErrorBarSeries in XAML__
 
 __ErrorBarSeries example__  
 
-![radchartview-series-errorbar](images/radchartview-series-errorbarseries-0.png)
+![Telerik UI for WPF RadChartView ErrorBarSeries visual appearance](images/radchartview-series-errorbarseries-0.png)
 
 >tip The error bar data points do not implement automatic coercion of the input values. This means that the provided values must be correct in order to display a proper visual element. Low must be smaller than High and the Value must be between low and high.
 
@@ -36,7 +37,7 @@ __Showing ErrorBarSeries markers__
 
 __ErrorBar markers__  
 
-![radchartview-series-errorbar](images/radchartview-series-errorbarseries-1.png)
+![Telerik UI for WPF RadChartView ErrorBarSeries with value markers](images/radchartview-series-errorbarseries-1.png)
 
 ## Data Binding
 
@@ -63,7 +64,7 @@ __Defining ErrorBarSeries in data binding scenario__
 
 __ErrorBarSeries data binding example__  
 
-![{{ site.framework_name }} RadChartView ErrorBarSeries Data Binding Example](images/radchartview-series-errorbarseries-2.png)
+![Telerik UI for WPF RadChartView ErrorBarSeries with Data-Bound Error Values](images/radchartview-series-errorbarseries-2.png)
 
 Read more about the data binding support in the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) article.
 

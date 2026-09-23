@@ -2,6 +2,7 @@
 title: Use generic GroupDescriptor
 page_title: Use Generic GroupDescriptor
 description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to create generic expression GroupDescriptors. 
+components: ["gridview"]
 slug: gridview-grouping-generic-descriptor
 tags: use,generic,groupdescriptor
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Taggers Overview
 description: This article explains the taggers functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-taggers
 tags: taggers,radsyntaxeditor
 position: 0

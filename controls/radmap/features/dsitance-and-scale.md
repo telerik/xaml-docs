@@ -2,6 +2,7 @@
 title: Distance and Scale
 page_title: Distance and Scale
 description: Check our &quot;Distance and Scale&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-dsitance-and-scale
 tags: distance,and,scale
 published: True

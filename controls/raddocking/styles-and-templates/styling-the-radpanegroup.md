@@ -2,6 +2,7 @@
 title: Styling the RadPaneGroup
 page_title: Styling the RadPaneGroup
 description: This article demonstrates how to create a style targeting RadPaneGroup.
+components: ["docking"]
 slug: raddocking-styling-the-radpanegroup
 tags: styling,the,radpanegroup
 published: True

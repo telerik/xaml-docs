@@ -2,6 +2,7 @@
 title: Styling FilterRow
 page_title: Styling FilterRow
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to style the FilterRow element.
+components: ["gridview"]
 slug: gridview-styling-filterrow
 tags: styling,filterrow
 published: True

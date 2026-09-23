@@ -14,9 +14,9 @@ position: 0
 
 ## 
 
-The __RadChart__ control displays drill down data in a hierarchical manner. In order to define the different level of the drill down hierarchy you have to use the __HierachicalViewDescriptors__ property of the __RadChart__ control. It is a collection which contains __ChartHierarchicalViewDescriptor__ objects. The __ChartHierarchicalViewDescriptor__ object is used to define a hierarchy level. The level of the descriptor in the hierarchy depends on the position it has in the collection.
+The __RadChart__ control displays drill down data in a hierarchical manner. In order to define the different level of the drill down hierarchy you have to use the __HierarchicalViewDescriptors__ property of the __RadChart__ control. It is a collection which contains __ChartHierarchicalViewDescriptor__ objects. The __ChartHierarchicalViewDescriptor__ object is used to define a hierarchy level. The level of the descriptor in the hierarchy depends on the position it has in the collection.
 
-For example if you have 3 descriptors in the __HierachicalViewDescriptors__ collection, the first one will be the main chart or the first level of hierarchy, the second one will be one level below and the third will be the last in the hierarchy.
+For example if you have 3 descriptors in the __HierarchicalViewDescriptors__ collection, the first one will be the main chart or the first level of hierarchy, the second one will be one level below and the third will be the last in the hierarchy.
 
 In order to use a selector you simply have to create an instance of it. If it is the first level of the hierarchy you only have to define its __SeriesMappings__. If its below the first level, you have to define its __Relation__ property, in order to specify the relation between it and its parent descriptor.
 

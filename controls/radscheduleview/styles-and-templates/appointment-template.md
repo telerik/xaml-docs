@@ -2,6 +2,7 @@
 title: Appointment Template
 page_title: Appointment Template
 description: Check our &quot;Appointment Template&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-styles-and-templates-appointment-template
 tags: appointment,template
 published: True

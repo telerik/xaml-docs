@@ -2,6 +2,7 @@
 title: Add ToolTip for columns and headers
 page_title: Add ToolTip for Columns and Headers
 description: Check out our article demonstrating how to set the tooltip of the rows, columns and column headers of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-how-to-create-tooltip
 tags: add,tooltip,for,columns,and,headers
 published: True

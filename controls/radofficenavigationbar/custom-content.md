@@ -2,6 +2,7 @@
 title: Custom Content
 page_title: Custom Content
 description: Check our &quot;Custom Content&quot; documentation article for the RadOfficeNavigationBar control.
+components: ["officenavigationbar"]
 slug: radofficenavigationbar-custom-content
 tags: custom content, radofficenavigationbar
 published: True

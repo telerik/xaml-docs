@@ -2,6 +2,7 @@
 title: Drawing
 page_title: Drawing
 description: Check our &quot;Drawing&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-tools-drawing
 tags: drawing
 published: True

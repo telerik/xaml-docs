@@ -2,6 +2,7 @@
 title: ScatterAreaSeries
 page_title: ScatterAreaSeries
 description: Check our &quot;ScatterAreaSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-scatterareaseries
 tags: scatterareaseries
 published: True
@@ -26,7 +27,7 @@ __Example 1: Declaring a ScatterAreaSeries in XAML__
 
 
 #### __Figure 1: ScatterAreaSeries visual appearance__  
-![radchartview-series-scatterlineareaseries](images/radchartview-series-scatterlineareaseries.png)
+![Telerik UI for WPF RadChartView ScatterAreaSeries visual appearance](images/radchartview-series-scatterlineareaseries.png)
 
 ## Properties
 

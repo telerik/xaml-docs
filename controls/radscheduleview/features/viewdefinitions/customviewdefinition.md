@@ -2,6 +2,7 @@
 title: Define a Custom ViewDefinition
 page_title: Define a Custom ViewDefinition
 description: Check our &quot;Define a Custom ViewDefinition&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-viewdefinitions-define-custom-viewdefinition
 tags: custom, viewdefinition
 published: True

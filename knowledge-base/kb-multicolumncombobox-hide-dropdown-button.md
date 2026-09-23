@@ -1,6 +1,7 @@
 ---
 title: Hide the Drop-Down Button of of RadMultiColumnComboBox
 description: This article will show you how hide the drop-down button of RadMultiColumnComboBox.
+components: ["multicolumncombobox"]
 page_title: RadMultiColumnComboBox without drop-down button
 type: how-to
 slug: kb-multicolumncombobox-hide-drop-down-button
@@ -31,7 +32,7 @@ How to hide the drop-down button of the `RadMultiColumnComboBox` control.
 
 ## Solution
 
-Subscribe to the `Loaded` event of RadMultiColumnComboBox and utilize the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) method to retrive the `RadDropDownButton` element with __x:Name="PART_DropDownButton"__. Then, set its `Visibility` property to `Visibility.Collapsed`.
+Subscribe to the `Loaded` event of RadMultiColumnComboBox and utilize the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) method to retrieve the `RadDropDownButton` element with __x:Name="PART_DropDownButton"__. Then, set its `Visibility` property to `Visibility.Collapsed`.
 
 __Retrieve the RadDropDownButton element on the Loaded event of RadMultiColumnComboBox__
 ```C#

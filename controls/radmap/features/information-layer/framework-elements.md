@@ -2,6 +2,7 @@
 title: Framework Elements
 page_title: Framework Elements
 description: Check our &quot;Framework Elements&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-information-layer-framework-elements
 tags: framework,elements
 published: True

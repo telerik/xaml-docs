@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadTransitionControl {{ site.framework_name }} control.
+components: ["transitioncontrol"]
 slug: radtransition-overview
 tags: overview
 published: True

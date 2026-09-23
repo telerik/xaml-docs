@@ -2,6 +2,7 @@
 title: Property Sets
 page_title: Property Sets
 description: Check our &quot;Property Sets&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-defining-propertysets
 tags: defining,property-sets
 published: True

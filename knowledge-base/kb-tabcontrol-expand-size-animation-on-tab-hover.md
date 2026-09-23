@@ -1,6 +1,7 @@
 ---
 title: Tab Expand Animation in RadTabControl
 description: This article shows how to implement size expanding animation when you mouse over a RadTabItem
+components: ["tabcontrol"]
 type: how-to
 page_title: Implement Tab Size Change Animation on RadTabControl Hover
 slug: kb-tabcontrol-expand-size-animation-on-tab-hover

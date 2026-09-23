@@ -2,6 +2,7 @@
 title: ItemsPanel
 page_title: ItemsPanel
 description: Check our &quot;ItemsPanel&quot; documentation article for the RadLegend {{ site.framework_name }} control.
+components: ["legend"]
 slug: radlegend-itemspanel
 tags: itemspanel
 published: True

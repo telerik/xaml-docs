@@ -3,6 +3,7 @@ title: Calling thread cannot access this object when opening RadDocking on anoth
 type: how-to
 page_title: InvalidOperationException is thrown when showing Docking on separate thread.
 description: "The calling thread cannot access this object because a different thread owns it, when RadDocking is started on a new UI thread."
+components: ["docking"]
 slug: kb-docking-invalidoperationexception-input-bindings
 tags: raddocking, multiple-threads, exception, thread
 res_type: kb

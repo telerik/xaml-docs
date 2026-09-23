@@ -2,6 +2,7 @@
 title: Avoid Raising ValidatingItem on Add Button Click
 page_title: Prevent Validating Property When Add New Item
 description: Create custom command provider to avoid calling ValidatingItem event when creating new item.
+components: ["dataform"]
 type: how-to
 slug: kb-dataform-avoid-raise-validatingitem-on-add-item
 position: 0

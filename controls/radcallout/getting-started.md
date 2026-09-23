@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadCallout {{ site.framework_name }} control.
+components: ["callout"]
 slug: radcallout-getting-started
 tags: getting,started
 published: True

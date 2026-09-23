@@ -2,6 +2,7 @@
 title: Custom Dialogs
 page_title: Custom Dialogs
 description: Check our &quot;Custom Dialogs&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-custom-dialogs
 tags: custom,dialogs
 published: True

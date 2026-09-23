@@ -2,6 +2,7 @@
 title: Orientation
 page_title: Orientation
 description: Check our &quot;Orientation&quot; documentation article for the RadToolBar {{ site.framework_name }} control.
+components: ["toolbar"]
 slug: radtoolbar-orientation
 tags: orientation
 published: True

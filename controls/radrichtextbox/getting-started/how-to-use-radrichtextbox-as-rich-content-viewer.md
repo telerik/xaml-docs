@@ -2,6 +2,7 @@
 title: Use the RadRichTextBox as Rich Content Viewer
 page_title: Use the RadRichTextBox as Rich Content Viewer
 description: Check our &quot;Use the RadRichTextBox as Rich Content Viewer&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer
 tags: use,the,radrichtextbox,as,rich,content,viewer
 published: True

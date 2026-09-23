@@ -1,6 +1,7 @@
 ---
 title: Add alternation color to the drop-down items of RadComboBox
 description: Using AlternationCount property of RadComboBox 
+components: ["combobox"]
 type: how-to
 page_title: How to add alternation color to the drop-down items of RadComboBox
 slug: kb-combobox-howto-add-alternation-color
@@ -30,7 +31,7 @@ How to add alternation color to the items inside the drop-down content of RadCom
 
 ## Solution
 
-To add alternation color to the items inside the drop-down content you can take advantage of the AlternationCount property. This property comes from the native ItemsControl class. As the RadComboBox inherits ItemsControl you can take advante of this funtionality.
+To add alternation color to the items inside the drop-down content you can take advantage of the AlternationCount property. This property comes from the native ItemsControl class. As the RadComboBox inherits ItemsControl you can take advantage of this functionality.
 
 The following example demonstrates how to use this property and how to apply custom color to the alternation items.
 

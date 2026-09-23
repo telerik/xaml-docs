@@ -1,6 +1,7 @@
 ---
 title: How to Set Theme's Color Variation in Design Time
 description: This article explains how to set he color variation of a given theme so that it is visible in the Visual Studio designer.
+components: ["general"]
 type: how-to
 page_title: View Theme Variation in the Visual Studio Designer
 slug: kb-themes-set-color-variation-design-time
@@ -32,7 +33,7 @@ How to set a theme's color variation in Visual Studio's designer.
 
 Visual Studio will run code for designer use if you have enabled the __Project Code__ setting in the designer. 
 
-To change the color variation of the theme at design-time, create a new UserControl that will contain the controls or a custom control. In in its static constructor, call the `LoadPreset` method of the palette of the chosen theme.
+To change the color variation of the theme at design-time, create a new UserControl that will contain the controls or a custom control. In its static constructor, call the `LoadPreset` method of the palette of the chosen theme.
 
 __MainWindow displaying a custom UserControl__
 ```XAML

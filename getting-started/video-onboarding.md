@@ -2,6 +2,7 @@
 title: Video Onboarding
 page_title: Video Onboarding
 description: "Get started with Telerik UI for WPF by following a step-by-step video tutorial that helps you develop a real-life project."
+components: ["general"]
 slug: getting-started-video-onboarding
 tags: onboarding,video,virtual,classroom,course,learning
 published: True

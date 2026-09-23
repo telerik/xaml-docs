@@ -1,6 +1,7 @@
 ---
 title: Modifying GridView Exported XLSX Spreadsheet
 description: Apply custom changes to the spreadsheet document when exporting GridView to Excel xlsx.
+components: ["gridview"]
 type: how-to
 page_title: Customize Excel XLSX Spreadsheet When Exporting From RadGridView
 slug: kb-gridview-modifying-exported-xlsx-spreadsheet
@@ -26,7 +27,7 @@ res_type: kb
 
 There are several ways to export the RadGridView as a spreadsheet. This article shows you how to leverage the RadGridView's `ExportToWorkbook` method to make changes to the spreadsheet before saving as Excel xlsx file.
 
-This article will show you how to add an extra row at the top of the speadsheet and insert a title.
+This article will show you how to add an extra row at the top of the spreadsheet and insert a title.
 
 ## Solution
 

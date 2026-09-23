@@ -2,6 +2,7 @@
 title: Glyphs Reference Sheet
 page_title: Telerik UI for WPF Glyphs Reference Sheet
 description: Browse the available Telerik UI for WPF glyphs, learn how to use each glyph value, and choose between TelerikWebUI and TelerikFluentIcons.
+components: ["general"]
 slug: common-styling-appearance-glyphs-reference-sheet
 tags: glyphs,telerikwebui,office2016,fonts,foregrounds,text,icons,reference,sheet
 published: True

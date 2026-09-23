@@ -1,6 +1,7 @@
 ---
 title: Customize the RadToggleSwitchButton to Display Content when the IsChecked property is null
 description: This article will show you how to display content when the RadToggleSwitchButton's IsChecked property is null.
+components: ["buttons"]
 page_title: Display Content When RadToggleSwitchButton's IsChecked property is null
 type: how-to
 slug: kb-buttons-toggleswitchbutton-three-state-content
@@ -292,6 +293,6 @@ __Setting the Content and ContentTemplate when the IsChecked property is null__
     </telerik:RadToggleSwitchButton>
 ```
 
-__RadToggleSwichButton with content when the IsChecked property is null__
+__RadToggleSwitchButton with content when the IsChecked property is null__
 
-![RadToggleSwichButton with content when the IsChecked property is null](images/kb-buttons-toggleswitchbutton-three-state-content-0.png)
+![RadToggleSwitchButton with content when the IsChecked property is null](images/kb-buttons-toggleswitchbutton-three-state-content-0.png)

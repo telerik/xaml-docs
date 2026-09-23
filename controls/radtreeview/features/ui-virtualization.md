@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization
 description: This article will go through the UI Virtualization mechanism of the RadTreeView.
+components: ["treeview"]
 slug: radtreeview-features-ui-virtualization
 tags: ui,virtualization
 published: True

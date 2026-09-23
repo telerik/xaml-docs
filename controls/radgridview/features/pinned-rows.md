@@ -2,6 +2,7 @@
 title: Pinned Rows
 page_title: Pinned Rows
 description: Learn how you can pin particular rows to the top or bottom of your Telerik's {{ site.framework_name }} DataGrid so that they do not participate in the vertical scrolling.
+components: ["gridview"]
 slug: radgridview-pinned-rows
 tags: pinned-rows
 published: True

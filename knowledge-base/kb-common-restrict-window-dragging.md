@@ -1,6 +1,7 @@
 ---
 title: Restricting the Drag of a WPF Window in Predefined Bounds
 description: Learn how to restrict the dragging bounding box of a WPF Window.
+components: ["window"]
 type: how-to
 page_title: Pevent WPF to be Moved Outside of Specifid Boundaries
 meta_title: Restricting RadPane Movement Within Parent UserControl
@@ -31,11 +32,11 @@ UI for WPF
 
 ## Description
 
-How to restict the dragging of a WPF Window to a specific bounding rectangle.
+How to restrict the dragging of a WPF Window to a specific bounding rectangle.
 
 ## Solution
 
-To restrict the dragging of a window, you can add a WndProct hook to the `HwndSource` of the `Window` object.
+To restrict the dragging of a window, you can add a WndProc hook to the `HwndSource` of the `Window` object.
 
 ```csharp
 	private RECT restrictedBounds = new RECT() { Left = 150, Top = 150, Right = 795, Bottom = 577 };

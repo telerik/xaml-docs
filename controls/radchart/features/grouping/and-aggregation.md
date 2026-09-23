@@ -18,7 +18,7 @@ Grouping is a process which groups the data by one or more parameters. __RadChar
 
 ## Understanding Grouping and Aggregation
 
-Consider the following data for Apple and Banana consumption in thee regions for years 2008 and 2009:
+Consider the following data for Apple and Banana consumption in three regions for years 2008 and 2009:
 
 
 |Year|Region|Description|Value|

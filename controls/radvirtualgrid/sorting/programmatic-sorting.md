@@ -2,6 +2,7 @@
 title: Programmatic Sorting
 page_title: Programmatic Sorting
 description: Check our &quot;Programmatic Sorting&quot; documentation article for the RadVirtualGrid {{ site.framework_name }} control.
+components: ["virtualgrid"]
 slug: virtualgrid-sorting-programmatic-sorting
 tags: sorting, programmatic
 published: True

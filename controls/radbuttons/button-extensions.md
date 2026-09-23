@@ -2,6 +2,7 @@
 title: Button Extensions
 page_title: Button Extensions
 description: This article lists the built-in extensions that can change different behaviors of the button controls.
+components: ["buttons"]
 slug: radbuttons-features-button-extensions
 tags: button, extensions, dropdown, attached, property,
 published: True

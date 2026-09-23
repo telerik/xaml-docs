@@ -2,6 +2,7 @@
 title: Styling Column Groups
 page_title: Styling Column Groups
 description: Learn how to create styles targeting the CommonHeaderPresenter and CommonColumnHeader elements in order to style column groups in Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-styling-merged-column-headers
 tags: styling,merged,column,headers,groups
 published: True

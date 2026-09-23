@@ -1,6 +1,7 @@
 ---
 title: Prevent Maximize and Restore on RadWindow TitleBar Double Click
 description: Learn how to block the default double-click actions on the header of a RadWindow in UI for WPF to prevent state changes from maximized to restored.
+components: ["window"]
 type: how-to
 page_title: Prevent Double-Click on RadWindow Header in UI for WPF
 meta_title: Prevent Double-Click on RadWindow Header in UI for WPF
@@ -36,7 +37,7 @@ By default, double-clicking on the header causes the window to switch states fro
 
 To prevent the default behavior, you can use interop methods to remove the maximize box of the host window of the RadWindow control. Then, you can add a procedure hook and prevent the button double click on the titlebar or on the top resize handle of the window.
 
-The example below checks for the `HTTOP` and `HTCAPTION` hit test messages. You an read about these in the [official win32 docs](https://learn.microsoft.com/en-us/windows/win32/inputdev/wm-nchittest).
+The example below checks for the `HTTOP` and `HTCAPTION` hit test messages. You can read about these in the [official win32 docs](https://learn.microsoft.com/en-us/windows/win32/inputdev/wm-nchittest).
 
 
 ```csharp

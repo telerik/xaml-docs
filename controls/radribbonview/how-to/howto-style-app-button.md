@@ -2,6 +2,7 @@
 title: Customize the Application Menu Button
 page_title: Customize the Application Menu Button
 description: This article demonstrates how the application button of a RadRibbonView can be customized. 
+components: ["ribbonview"]
 slug: radribbonview-howto-style-app-button
 tags: style,the,application,button
 published: True

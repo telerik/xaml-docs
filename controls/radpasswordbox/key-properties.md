@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: Check our &quot;Key Properties&quot; documentation article for the RadPasswordBox {{ site.framework_name }} control.
+components: ["passwordbox"]
 slug: radpasswordbox-key-properties
 tags: properties,key
 published: True

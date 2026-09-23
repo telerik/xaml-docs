@@ -2,6 +2,7 @@
 title: Predefined Dialogs
 page_title: Predefined Dialogs
 description: This article describes the predefined modal dialogs, which can be used in order to alert, prompt or request confirmation from the user. 
+components: ["window"]
 slug: radwindow-features-predefined-dialogs
 tags: predefined,dialogs
 published: True

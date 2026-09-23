@@ -2,6 +2,7 @@
 title: Binding to XML
 page_title: Binding to XML
 description: Check our &quot;Binding to XML&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-populating-with-data-binding-xml
 tags: binding,to,xml
 published: True

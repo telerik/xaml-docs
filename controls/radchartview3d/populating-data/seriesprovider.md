@@ -2,6 +2,7 @@
 title: Dynamic Number of Series
 page_title: Dynamic Number of Series (ChartSeriesProvider3D)
 description: Check our &quot;Dynamic Number of Series (ChartSeriesProvider3D)&quot; documentation article for the RadChartView3D {{ site.framework_name }} control.
+components: ["chartview3d"]
 slug: radchartview3D-features-chartseriesprovider3D
 tags: dynamic,number,of,series,chartseriesprovider,3d
 published: True

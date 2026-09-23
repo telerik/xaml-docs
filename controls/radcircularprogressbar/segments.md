@@ -2,6 +2,7 @@
 title: Segments
 page_title: Segments
 description: This article provides information about the segments functionality of RadCircularProgressBar control.
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-segments
 tags: segments, circular segments
 published: True

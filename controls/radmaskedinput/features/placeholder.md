@@ -2,6 +2,7 @@
 title: Placeholder
 page_title: Placeholder
 description: This article describe the placeholder property.
+components: ["maskedinput"]
 slug: radmaskedinput-features-placeholder
 tags: placeholder
 published: True

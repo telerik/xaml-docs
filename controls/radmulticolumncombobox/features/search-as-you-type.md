@@ -2,6 +2,7 @@
 title: Search As You Type
 page_title: Search As You Type
 description: Check out our &quot;Search As You Type&quot; documentation article for the RadMultiColumnComboBox control.
+components: ["multicolumncombobox"]
 slug: radmulticolumncombobox-search-as-you-type
 tags: search, radmulticolumncombobox
 published: True

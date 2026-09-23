@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
+components: ["breadcrumb"]
 slug: radbreadcrumb-getting-started
 tags: getting,started
 published: True
@@ -45,7 +46,7 @@ __Example 2: Defining a RadBreadcrumb in code__
 
 ![{{ site.framework_name }} RadBreadcrumb from Code](images/breadcrumb_gettingstarted_breadcrumb.png)
 
->The __RadBreacrumb__ control is a __HeaderedItemsControl__ and its Header is used as a root element. Therefore the control always has one root element. If you don't set the __Breadcrumb.Header__ property an empty root element will be created.		  
+>The __RadBreadcrumb__ control is a __HeaderedItemsControl__ and its Header is used as a root element. Therefore the control always has one root element. If you don't set the __Breadcrumb.Header__ property an empty root element will be created.		  
 
 So far there is an empty __RadBreadcrumb__ containing no items.		
 

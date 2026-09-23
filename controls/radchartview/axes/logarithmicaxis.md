@@ -2,6 +2,7 @@
 title: Logarithmic Axis
 page_title: Logarithmic Axis
 description: Check our &quot;Logarithmic Axis&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-logarithmicaxis
 tags: logarithmic,axis
 published: True
@@ -18,11 +19,11 @@ __Example 1: Setting the LogarithmBase property__
 
 
 #### Figure 1: Result from Example 1
-![LogarithmicAxis with LogarithmBase](images/radchartview-features-axis-logarithmicaxis-logarithmbase.png)
+![Telerik UI for WPF RadChartView Logarithmic Axis with a Custom Logarithm Base](images/radchartview-features-axis-logarithmicaxis-logarithmbase.png)
 
 __Example 2: Setting the ExponentStep property__
 <snippet id='radchartview-axes-logarithmicaxis-example_2_setting_the_exponentstep_property-xaml' />
 
 
 #### Figure 2: Result from Example 2
-![LogarithmicAxis with ExponentStep](images/radchartview-features-axis-logarithmicaxis-exponentstep.png)
+![Telerik UI for WPF RadChartView Logarithmic Axis with a Custom Exponent Step](images/radchartview-features-axis-logarithmicaxis-exponentstep.png)

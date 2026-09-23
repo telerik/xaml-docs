@@ -2,6 +2,7 @@
 title: Color Mode
 page_title: Color Mode
 description: Check our &quot;Color Mode&quot; documentation article for the RadColorEditor {{ site.framework_name }} control.
+components: ["coloreditor"]
 slug: radcoloreditor-features-color-mode
 tags: color,mode
 published: True

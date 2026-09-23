@@ -2,6 +2,7 @@
 title: How to Hide the Header Row
 page_title: How to Hide the Header Row
 description: Check our &quot;How to Hide the Header Row&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
+components: ["outlookbar"]
 slug: radoutlookbar-how-to-hide-the-header-row
 tags: how,to,hide,the,header,row
 published: True

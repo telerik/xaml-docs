@@ -2,6 +2,7 @@
 title: Text Editing
 page_title: Text Editing
 description: Check our &quot;Text Editing&quot; documentation article for the RadTimeSpanPicker {{ site.framework_name }} control.
+components: ["timespanpicker"]
 slug: radtimespanpicker-features-text-input-behavior
 tags: text,input, behavior
 published: True

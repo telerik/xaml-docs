@@ -44,7 +44,7 @@ __AxisX.Step__ and __AxisX.LabelStep__ are related:
 * First,__AxisX.Step__ is used to calculate which tick should be visible and which not. 
 
 
-* Second, having the ticks,__AxisX.LabelStep__ is used to calculate for which ticks the label should be visible and for which it souldn't. It means that the __AxisX.LabelStep__ takes the ticks as a base.Here is 
+* Second, having the ticks,__AxisX.LabelStep__ is used to calculate for which ticks the label should be visible and for which it shouldn't. It means that the __AxisX.LabelStep__ takes the ticks as a base.Here is 
 
 Here is an example for a __RadChart__ that makes use of the __Step__, __LabelStep__, __StepLableLevelCount__, __StepLabelLevelHeight__:
 

@@ -2,6 +2,7 @@
 title: Open File Dialog
 page_title: Open File Dialog
 description: Check our &quot;Open File Dialog&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-features-custom-open-file-dialog
 tags: open,file,dialog
 published: True
@@ -10,7 +11,7 @@ position: 4
 
 # Open File Dialog
 
-__RadCloudUpload__ allows you to open a custom dialog to browse the files for upload. To do this set the __CreateOpenFileDialog__ property. It is of type __Func&lt;Microsoft.Win32.OpenFileDialog&gt;__ and can be used to provide a function that returns an OpeFileDialog instance. This is useful to customize the dialog settings. For example, to restrict users to upload certain type of files.        
+__RadCloudUpload__ allows you to open a custom dialog to browse the files for upload. To do this set the __CreateOpenFileDialog__ property. It is of type __Func&lt;Microsoft.Win32.OpenFileDialog&gt;__ and can be used to provide a function that returns an OpenFileDialog instance. This is useful to customize the dialog settings. For example, to restrict users to upload certain type of files.        
 
 __Example 1: Defining the cloud upload control__
 <snippet id='radcloudupload-features-custom-open-file-dialog-example_1_defining_the_cloud_upload_control-xaml' />

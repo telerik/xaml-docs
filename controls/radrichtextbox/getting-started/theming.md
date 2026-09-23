@@ -2,6 +2,7 @@
 title: Setting a Theme
 page_title: Setting a Theme
 description: Learn how to style the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-getting-started-theming
 tags: theme, implicit
 published: True

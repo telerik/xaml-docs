@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding
 description: Check our &quot;Data Binding&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radgauge-features-data-binding
 tags: data,binding
 published: True

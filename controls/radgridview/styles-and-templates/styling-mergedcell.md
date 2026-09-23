@@ -2,6 +2,7 @@
 title: Styling Merged Cells
 page_title: Styling Merged Cells
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the MergedCell element.
+components: ["gridview"]
 slug: gridview-styling-mergedcell
 tags: styling,merged,cells
 published: True

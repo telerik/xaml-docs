@@ -1,6 +1,7 @@
 ---
 title: Release UnmanagedMemoryStream Resources 
 description: Learn how to fix the issue of steady memory growth in RadGridView for WPF caused by font references leading to UnmanagedMemoryStream accumulation.
+components: ["general"]
 type: troubleshooting
 page_title: UnmanagedMemoryStream Resources are not Released When Using Glyphs
 slug: kb-common-unmanagedmemorystream-memory-leak
@@ -17,7 +18,7 @@ ticketid: 1659703
 
 ## Description
 
-`UnmanagedMemoryStream` objects are stacking up in memory and never released on refresh of Telerik controls. For example, when resetting the ItemsSource of RadGridView. The issues occurs in newer Telerik themes - Material and later.
+`UnmanagedMemoryStream` objects are stacking up in memory and never released on refresh of Telerik controls. For example, when resetting the ItemsSource of RadGridView. The issue occurs in newer Telerik themes - Material and later.
 
 This happens because of a [memory leak in WPF](https://stackoverflow.com/questions/31452443/wpf-textblock-memory-leak-when-using-font). In the Telerik's context this manifests when using the RadGlyph controls, which registers the custom Telerik font (TelerikWebUI) which holds the glyph icons.
 

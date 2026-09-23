@@ -2,6 +2,7 @@
 title: RadWindowInteropHelper
 page_title: RadWindowInteropHelper
 description: Check our &quot;RadWindowInteropHelper&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-radwindowinterophelper
 tags: radwindowinterophelper
 published: True

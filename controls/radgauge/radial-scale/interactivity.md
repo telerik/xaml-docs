@@ -2,6 +2,7 @@
 title: Interactivity
 page_title: Interactivity
 description: Check our &quot;Interactivity&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radial-scale-interactivity
 tags: interactivity
 published: True

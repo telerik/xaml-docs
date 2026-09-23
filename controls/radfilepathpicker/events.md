@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article describes the RadFilePathPicker events.
+components: ["filepathpicker"]
 slug: radfilepathpicker-events
 tags: events
 position: 3

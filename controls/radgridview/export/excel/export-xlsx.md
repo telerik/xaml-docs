@@ -2,6 +2,7 @@
 title: ExportToXlsx
 page_title: ExportFormat.Xlsx
 description: Learn how to export to XLSX format from Telerik's {{ site.framework_name }} DataGrid by using the ExportToXlsx method without any need for the user to make the integration manually.
+components: ["gridview"]
 slug: gridview-export-xlsx
 tags: exportformat,xlsx
 published: True

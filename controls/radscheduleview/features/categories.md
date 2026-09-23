@@ -2,6 +2,7 @@
 title: Categories
 page_title: Categories
 description: Check our &quot;Categories&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-categories
 tags: categories
 published: True

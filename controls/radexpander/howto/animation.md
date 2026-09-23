@@ -2,6 +2,7 @@
 title: Customize Expander Animation
 page_title: Customize Expander Animation
 description: This article shows how to disable or enable and also customize the RadExpander default expand/collapse animations.
+components: ["expander"]
 slug: radexpander-howto-animation
 tags: expander,animation
 published: True

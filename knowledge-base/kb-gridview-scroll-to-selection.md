@@ -1,6 +1,7 @@
 ---
 title: Programmatically Binding Selected Item Into View in RadGridView
 description: Bring the RadGridView selected item into view programmatically
+components: ["gridview"]
 type: how-to
 page_title: Scroll Automatically to the Selected Row in RadGridView 
 slug: kb-gridview-scroll-to-selection

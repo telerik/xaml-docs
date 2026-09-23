@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: Check our &quot;Events&quot; documentation article for the RadWizard {{ site.framework_name }} control.
+components: ["wizard"]
 slug: wizard-events
 tags: events
 published: True

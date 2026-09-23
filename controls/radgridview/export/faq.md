@@ -2,6 +2,7 @@
 title: Useful Tips
 page_title: Useful DataGrid Export Tips
 description: Check out the FAQ about exporting data from Telerik's {{ site.framework_name }} DataGrid and learn how to export paged data, how to modify the exported value and much more.
+components: ["gridview"]
 slug: gridview-export-faq
 tags: export,faq
 published: True

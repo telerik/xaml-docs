@@ -2,6 +2,7 @@
 title: DiagramToolbox
 page_title: DiagramToolbox
 description: Check our &quot;DiagramToolbox&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-extensions-toolbox
 tags: diagramtoolbox
 published: True

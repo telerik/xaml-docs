@@ -2,6 +2,7 @@
 title: Group Footers
 page_title: Group Footers
 description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid which that allows you to render a footer under each group in the grid.
+components: ["gridview"]
 slug: gridview-group-footers
 tags: group,footers
 published: True

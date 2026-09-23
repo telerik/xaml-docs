@@ -2,6 +2,7 @@
 title: Working with RadWindow
 page_title: Working with RadWindow
 description: Check our &quot;Working with RadWindow&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-working-with-radwindow
 tags: working,with,radwindow
 published: True

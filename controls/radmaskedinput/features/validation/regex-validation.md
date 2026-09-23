@@ -2,6 +2,7 @@
 title: Regex Validation
 page_title: Regex Validation
 description: Check our &quot;Regex Validation&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-validation-regex-validation
 tags: using,dataannotation,attributes,regex,radmaskedtextinput
 published: True

@@ -2,6 +2,7 @@
 title: Disable Filtering for the Entire Grid
 page_title: Disable Filtering for the Entire Grid
 description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to disable filtering for the entire grid.
+components: ["gridview"]
 slug: gridview-filtering-howto-disable-filtering-for-the-entire-grid
 tags: disable,filtering,for,the,entire,grid
 published: True

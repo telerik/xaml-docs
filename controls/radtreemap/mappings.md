@@ -2,6 +2,7 @@
 title: Mappings
 page_title: Mappings
 description: Check our &quot;Mappings&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
+components: ["treemapandpivotmap"]
 slug: radtreemap-mappings
 tags: mappings
 published: True

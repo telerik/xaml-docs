@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This article will walk you through the creation of a sample application that contains a RadNotifyIcon control.
+components: ["notifyicon"]
 slug: radnotifyicon-getting-started
 tags: getting,started,radnotifyicon
 position: 2

@@ -2,6 +2,7 @@
 title: Move the Cursor Away From the RadButton Control
 page_title:  Manually Move the Cursor From the RadButton Instance
 description: Manually move the cursor away when a button is touched via a touch device.
+components: ["buttons"]
 type: how-to
 slug: kb-buttons-manually-move-the-cursor
 position: 0

@@ -2,6 +2,7 @@
 title: Show Tooltip On Trimmed Text
 page_title: Show Tooltip On Trimmed Text
 description: This example explains how to show a tooltip for the trimmed text by setting the ComboBoxToolTipHelper.ShowToolTipOnTrimmedText attached property.
+components: ["combobox"]
 slug: radcombobox-how-to-show-tooltip-on-trimmed-text
 tags: how,to,show,tooltip,on,trimmed,text
 published: True

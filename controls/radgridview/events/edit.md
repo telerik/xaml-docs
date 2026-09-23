@@ -2,6 +2,7 @@
 title: Edit
 page_title: Edit Events
 description: Learn more about the edit events of Telerik's {{ site.framework_name }} DataGrid that occur when data is about to be edited or has been already edited by the user.
+components: ["gridview"]
 slug: gridview-events-edit
 tags: edit
 published: True

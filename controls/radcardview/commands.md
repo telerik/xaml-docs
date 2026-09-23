@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: The article describes the available commands exposed by RadCardView.
+components: ["cardview"]
 slug: radcardview-features-commands
 tags: commands,cardview
 published: True

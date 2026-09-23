@@ -2,6 +2,7 @@
 title: Multiple Chart Series
 page_title: Multiple Chart Series
 description: This article shows how to display multiple chart series visualization in the same RadChartView plot area.
+components: ["chartview"]
 slug: radchartview-multiple-series
 tags: multiline,mutlibar,chart,multiple,visualization
 publish: True
@@ -20,7 +21,7 @@ __Defining chart with multiple visualizations__
 <snippet id='radchartview-multiple-chart-series-defining_chart_with_multiple_visualizations-cs' />
 
 
-![A picture showing multiple chart visualizations in the same plot area](images/radchartview-multiple-series-0.png)
+![Telerik UI for WPF RadChartView Showing Point, Bar, and Line Series in One Plot Area](images/radchartview-multiple-series-0.png)
 
 The different chart series work with different [axis combinations]({%slug radchartview-series-and-axes%}). Keep that in mind when defining multiple series. 
 

@@ -2,6 +2,7 @@
 title: DropDown Button
 page_title: DropDown Button
 description: Check our &quot;DropDown Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-features-dropdown-button
 tags: dropdown,button
 published: True

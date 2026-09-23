@@ -1,6 +1,7 @@
 ---
 title: StyleManager.ApplicationTheme is Null
 description: The ApplicationTheme property of the StyleManager is not set
+components: ["general"]
 type: troubleshooting
 page_title: Application Theme Cannot Be Set by StyleManager
 slug: kb-stylemanager-applicationtheme-is-null

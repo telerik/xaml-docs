@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;RadCalculator&quot; documentation article for the RadCalculator {{ site.framework_name }} control.
+components: ["calculator"]
 slug: radcalculator-gettingstarted
 tags: radcalculator
 published: True
@@ -10,7 +11,7 @@ position: 2
 
 # Getting Started with {{ site.framework_name }} Calculator
 
-This tutorial will walk your through the creation of a sample application that contains `RadCalculator`.		  
+This tutorial will walk you through the creation of a sample application that contains `RadCalculator`. 		  
 
 ## Adding Telerik Assemblies Using NuGet
 

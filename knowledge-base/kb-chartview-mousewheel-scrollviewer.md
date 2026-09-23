@@ -1,6 +1,7 @@
 ---
 title: How to Prevent Scrolling the Parent ScrollViewer When Using the Zoom Functionality of RadCartesianChart.
 description: This article shows how you can prevent the parent ScrollViewer from scrolling when zooming in/out on/of RadCartesianChart.
+components: ["chartview"]
 page_title: Handle Scrolling of the Parent ScrollViewer When Zooming In and Out of the RadCartesianChart.
 type: how-to
 slug: kb-chartview-mousewheel-scrollviewer

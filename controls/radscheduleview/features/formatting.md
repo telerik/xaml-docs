@@ -2,6 +2,7 @@
 title: Formatting
 page_title: Formatting
 description: Check our &quot;Formatting&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-formatting
 tags: formatting
 published: True

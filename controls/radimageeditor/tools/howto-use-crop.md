@@ -2,6 +2,7 @@
 title: Cropping
 page_title: Cropping
 description: This article demonstrates the Cropping functionality available with the RadImageEditor.
+components: ["imageeditor"]
 slug: radimageeditor-tools-crop
 tags: cropping
 published: True

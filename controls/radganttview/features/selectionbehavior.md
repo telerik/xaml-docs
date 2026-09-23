@@ -2,6 +2,7 @@
 title: Selection Behavior
 page_title: Selection Behavior
 description: Check our &quot;Selection Behavior&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-selectionbehavior
 tags: selectionbehavior
 published: True

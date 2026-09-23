@@ -2,6 +2,7 @@
 title: MEF
 page_title: MEF
 description: Check our &quot;MEF&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-mef
 tags: mef
 published: True

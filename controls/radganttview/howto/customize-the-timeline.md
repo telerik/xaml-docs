@@ -2,6 +2,7 @@
 title: Customize the TimeLine Data and Containers
 page_title: Customize the TimeLine Data and Containers
 description: Check our &quot;Customize the TimeLine Data and Containers&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-howto-customize-the-timeline
 tags: customize,the,timeline,data,and,containers
 published: True

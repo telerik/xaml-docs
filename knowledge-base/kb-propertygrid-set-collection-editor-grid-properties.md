@@ -1,6 +1,7 @@
 ---
 title: Set Properties on the RadPropertyGrid inside the CollectionEditor
 description: How to customize the child RadPropertyGrid of the CollectionEditor.
+components: ["propertygrid"]
 page_title: Customize the CollectionEditor's Child RadPropertyGrid
 type: how-to
 slug: kb-propertygrid-set-collection-editor-grid-properties
@@ -27,7 +28,7 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
 
 ## Solution
 
-1. Handle the **Loaded** event of the parent **RadRropertyGrid**.
+1. Handle the **Loaded** event of the parent **RadPropertyGrid**.
 	
 	```C#
 		private void RadPropertyGrid_Loaded(object sender, RoutedEventArgs e)

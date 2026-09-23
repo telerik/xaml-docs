@@ -2,6 +2,7 @@
 title: How to Save Uncropped Image While CropTool is Active
 page_title: Save Image Without Clipping it When Crop Tool is Enabled
 description: How to save an image without cropping it when the RadImageEditor CropTool is still Activated.
+components: ["imageeditor"]
 type: how-to
 slug: kb-imageeditor-save-uncropped-image-when-croptool-active
 position: 0
@@ -30,7 +31,7 @@ How to save an image without cropping it while the CropTool is active.
 
 ## Solution
 
-1. Create a custom SaveImage command and override its ExecuteOverride method. If the executing tool is CropTool avoid commiting the tool, thus cropping the picture.
+1. Create a custom SaveImage command and override its ExecuteOverride method. If the executing tool is CropTool avoid committing the tool, thus cropping the picture.
 
 	```C#
 		public class CustomSaveImageCommand : SaveImageCommand

@@ -2,6 +2,7 @@
 title: Message Status
 page_title: Message Status
 description: See how to add a message status under the RadChat messages, like sent, delivered, seen, etc.
+components: ["chat"]
 slug: chat-message-status
 tags: status,message,seen
 published: True

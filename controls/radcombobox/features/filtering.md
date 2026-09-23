@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering
 description: RadComboBox provides filtering behavior for its items. This article explained in details this mechanism.
+components: ["combobox"]
 slug: radcombobox-features-filtering
 tags: filtering
 published: True

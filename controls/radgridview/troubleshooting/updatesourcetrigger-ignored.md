@@ -2,6 +2,7 @@
 title: UpdateSourceTrigger Property is Ignored
 page_title: UpdateSourceTrigger Property is Ignored
 description: Read this article about Telerik's {{ site.framework_name }} DataGrid to learn what to do when the UpdateSourceTrigger property of the column's DataMemberBinding is ignored.
+components: ["gridview"]
 slug: gridview-troubleshooting-updatesourcetrigger-ignored
 tags: the,updatesourcetrigger,property,is,ignored
 published: True

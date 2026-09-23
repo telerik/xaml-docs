@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding
 description: This article demonstrates how to bind the RadTabbedWindow control to a collection of business objects.
+components: ["tabbedwindow"]
 slug: radtabbedwindow-data-binding
 tags: getting,started
 published: True

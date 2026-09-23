@@ -2,6 +2,7 @@
 title: Using Data Virtualization
 page_title: Using Data Virtualization
 description: Learn how to use data virtualization within Telerik's {{ site.framework_name }} DataGrid that ensures much better performance as well as user experience improvements.
+components: ["gridview"]
 slug: gridview-populating-datavirtualization
 tags: using,data,virtualization, VCQV
 published: True

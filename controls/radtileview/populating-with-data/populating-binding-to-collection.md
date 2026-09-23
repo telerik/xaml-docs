@@ -2,6 +2,7 @@
 title: DataBinding
 page_title: DataBinding
 description: Check our &quot;DataBinding&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 slug: radtileview-populating-with-data-databinding
 tags: databinding,binding,data,radtileview
 published: True

@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: Check our &quot;Selection&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
+components: ["timeline"]
 slug: radtimeline-features-selection
 tags: selection
 published: True

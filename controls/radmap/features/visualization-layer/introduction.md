@@ -2,6 +2,7 @@
 title: Visualization Layer Introduction
 page_title: Visualization Layer Introduction
 description: Check our &quot;Introduction&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-visualization-layer-introduction
 tags: introduction
 published: True

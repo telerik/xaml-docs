@@ -2,6 +2,7 @@
 title: Style The Title
 page_title: Style RadRibbonView Title
 description: Check our &quot;Style The Title&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-howto-style-title
 tags: hide,the,title
 published: True

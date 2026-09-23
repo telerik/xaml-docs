@@ -2,6 +2,7 @@
 title: Customize the Path and Pencil tools
 page_title: Customize the Path and Pencil tools
 description: Check our &quot;Customize the Path and Pencil tools&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-howto-customize-path-pencil-tools
 tags: how,to,customize,path,pencil,tools
 published: True

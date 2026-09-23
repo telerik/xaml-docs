@@ -2,6 +2,7 @@
 title: Theming Support for WPF Native Controls
 page_title: Setting a Theme on MS Controls
 description: Telerik themes define styles also for few {{ site.framework_name }} native controls like TextBox, Button, ScrollViewer and more.
+components: ["general"]
 slug: styling-apperance-themes-mscontrols
 tags: setting,a,theme,on,ms,controls
 published: True
@@ -72,7 +73,7 @@ __Merging the System.Windows.xaml file__
 	</Application.Resources>
 ```
 
-To set the theme seprately per control, you can merge the System.Windows.xaml resource in the `Resources` dictionary of the corresponding control.
+To set the theme separately per control, you can merge the System.Windows.xaml resource in the `Resources` dictionary of the corresponding control.
 
 __Setting a theme per control using implicit styles__ 
 ```XAML

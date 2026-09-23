@@ -2,6 +2,7 @@
 title: Shapes
 page_title: Shapes
 description: Check our &quot;Shapes&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-shapes
 tags: shapes, richtextbox
 position: 0

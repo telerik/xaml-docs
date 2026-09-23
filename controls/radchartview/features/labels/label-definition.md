@@ -2,6 +2,7 @@
 title: Series Labels
 page_title: Label Definition
 description: Check our &quot;Label Definition&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-label-definition
 tags: label,definition
 published: True
@@ -19,7 +20,7 @@ __Example 1: Enabling Labels__
 
 
 #### Figure 1: Series labels
-![{{ site.framework_name }} RadChartView Series labels](images/radchartview-features-label-definition-0.png)
+![Telerik UI for WPF RadChartView with Default Series Labels](images/radchartview-features-label-definition-0.png)
 
 ## Customizing Labels
 
@@ -40,7 +41,7 @@ __Example 4: Defining two label definitions which add two label per data point__
 
 
 #### Figure 2: Customized labels
-![{{ site.framework_name }} RadChartView Customized labels](images/radchartview-features-label-definition-1.png)
+![Telerik UI for WPF RadChartView with Customized Series Labels](images/radchartview-features-label-definition-1.png)
 
 The following list describes the properties available in the __ChartSeriesLabelDefinition__ class.
 
@@ -101,7 +102,7 @@ __Example 6: Populating the data__
 
 	
 #### Figure 3: Customized labels with SeriesProvider
-![{{ site.framework_name }} RadChartView Customized labels with SeriesProvider](images/radchartview-features-label-definition-2.png)
+![Telerik UI for WPF RadChartView with Customized SeriesProvider Labels](images/radchartview-features-label-definition-2.png)
 
 ## See Also  
  * [Smart Labels]({%slug radchartview-features-smart-labels%})

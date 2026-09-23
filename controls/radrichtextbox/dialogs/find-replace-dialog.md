@@ -2,6 +2,7 @@
 title: Find and Replace Dialog
 page_title: Find and Replace Dialog
 description: Check our &quot;Find and Replace Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-find-replace
 tags: find,replace,search
 published: True

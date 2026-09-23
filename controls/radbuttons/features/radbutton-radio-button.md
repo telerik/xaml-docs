@@ -2,6 +2,7 @@
 title: Radio Button
 page_title: Radio Button
 description: Check our &quot;Radio Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbutton-features-radio-button
 tags: radio,button
 published: True

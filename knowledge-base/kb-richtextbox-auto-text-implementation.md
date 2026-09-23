@@ -1,6 +1,7 @@
 ---
 title: RadRichTextBox AutoText implementation
 description: Shows how you can create reusable text snippets.
+components: ["richtextbox"]
 type: how-to
 page_title: Implement custom functionality for reusable text snippets
 slug: kb-richtextbox-auto-text-implementation

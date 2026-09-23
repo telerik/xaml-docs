@@ -2,6 +2,7 @@
 title: Using custom connectors in MVVM
 page_title: Using custom connectors in MVVM
 description: Using custom connectors in MVVM.
+components: ["diagram"]
 slug: raddiagram-using-custom-connectors-in-mvvm
 tags: create,custom,shape,connectors,mvvm,graphsource
 published: True

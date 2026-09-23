@@ -2,6 +2,7 @@
 title: Customize RadTreeListView
 page_title: Customize RadTreeListView
 description: Check our &quot;Customize RadTreeListView&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-howto-cutomize-radtreelistview
 tags: customize,radtreelistview
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Hide Empty Tooltips in SelectionBoxTemplate
 description: This article explains how to hide the tooltips from the RadComboBox's SelectionBoxTemplate when they don't have content.
+components: ["combobox"]
 type: how-to
 page_title: How to Show SelectionBox Tooltip Only when the Tooltip Has Content
 slug: kb-combobox-hide-empty-tooltips-selectionboxtemplate

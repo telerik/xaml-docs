@@ -2,6 +2,7 @@
 title: RadFixedDocument
 page_title: RadFixedDocument
 description: Check our &quot;RadFixedDocument&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-document-model-radfixeddocument
 tags: radfixeddocument
 published: True

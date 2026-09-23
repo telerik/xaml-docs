@@ -2,6 +2,7 @@
 title: Binding to XML
 page_title: Binding to XML
 description: Check our &quot;Binding to XML&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-populating-with-data-data-binding-to-xml
 tags: binding,to,xml
 published: True

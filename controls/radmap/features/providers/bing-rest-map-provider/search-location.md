@@ -2,6 +2,7 @@
 title: Search Location
 page_title: Search Location
 description: Check our &quot;Search Location&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-providers-bing-rest-map-provider-search-location
 tags: bing,map,provider,rest,location api, search
 published: True

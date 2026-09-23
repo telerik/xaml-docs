@@ -2,6 +2,7 @@
 title: Edit Modes
 page_title: Edit Modes
 description: Check our &quot;Edit Modes&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-features-edit-modes
 tags: edit,modes
 published: True

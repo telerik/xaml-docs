@@ -2,6 +2,7 @@
 title: Animations
 page_title: Animations
 description: Check our &quot;Animations&quot; documentation article for the RadSlideView control.
+components: ["slideview"]
 slug: radslideview-animations
 tags: animations, radslideview
 published: True

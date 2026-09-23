@@ -2,6 +2,7 @@
 title: Grouping Support
 page_title: Grouping Support
 description: Check our &quot;Grouping Support&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-grouping
 tags: grouping,support
 published: True

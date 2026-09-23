@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: This article describes the selection functionality that the RadHeatMap exposes.
+components: ["heatmap"]
 slug: radheatmap-selection
 tags: Selection
 published: True

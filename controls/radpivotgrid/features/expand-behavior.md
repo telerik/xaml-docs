@@ -2,6 +2,7 @@
 title: Expand Behavior
 page_title: Expand Behavior
 description: Check our &quot;Expand Behavior&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-expand-behavior
 tags: expand,behavior
 published: True

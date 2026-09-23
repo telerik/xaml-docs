@@ -2,6 +2,7 @@
 title: Creating ItemTemplate and SelectionBoxTemplate
 page_title: Creating ItemTemplate and SelectionBoxTemplate
 description: Check our &quot;Creating ItemTemplate and SelectionBoxTemplate&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-creating-itemtemplate
 tags: creating,itemtemplate,and,selectionboxtemplate
 published: True

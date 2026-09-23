@@ -2,6 +2,7 @@
 title: Styling the Pane Header
 page_title: Styling the Pane Header
 description: This article demonstrates how to create a style targeting the PaneHeader element.
+components: ["docking"]
 slug: raddocking-styling-the-pane-header
 tags: styling,the,pane,header
 published: True

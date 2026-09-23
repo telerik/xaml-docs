@@ -2,6 +2,7 @@
 title: Create Data-Bound Chart
 page_title: Create Data-Bound Chart
 description: Check our &quot;Create Data-Bound Chart&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-databinding
 tags: create,data-bound,chart
 published: True
@@ -45,7 +46,7 @@ __Example 3: Binding BarSeries in XAML__
 
 #### Figure 1: Binding BarSeries in XAML 
 
-![Binding BarSeries in XAML](images/series-databinding_1.png)
+![Telerik UI for WPF RadChartView BarSeries Bound to a Collection of Custom Objects in XAML](images/series-databinding_1.png)
 
 ## Binding BarSeries to primitive types
 
@@ -63,7 +64,7 @@ __Example 4: Binding BarSeries to primitive types__
 
 
 #### Figure 2: Binding BarSeries to primitive types
-![Binding BarSeries to primitive types](images/series-databinding_2.png)
+![Telerik UI for WPF RadChartView BarSeries Bound to an Array of Primitive Numeric Values](images/series-databinding_2.png)
 
 ## Binding BarSeries in code behind
 

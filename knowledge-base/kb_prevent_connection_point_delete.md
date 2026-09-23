@@ -1,6 +1,7 @@
 ---
 title: Prevent RadDiagramConnection Point from Delete
 description: How to prevent RadDiagramConnection point from delete.
+components: ["diagram"]
 type: how-to
 page_title: Prevent RadDiagramConnection Point from Delete
 slug: kb-prevent-diagramconnection-point-from-delete

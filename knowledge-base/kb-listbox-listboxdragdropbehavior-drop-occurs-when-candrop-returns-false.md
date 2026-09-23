@@ -1,6 +1,7 @@
 ---
 title: The ListBoxDragDropBehavior's Drop Event Occurs When CanDrop Returns False
 description: Drop event can occur even when CanDrop returns false when moving fast with the mouse.
+components: ["listbox"]
 page_title: Returning False From CanDrop Can Sometimes Raise the Drop Event From the RadListBox's Default DragDropBehavior
 type: how-to
 slug: kb-listbox-listboxdragdropbehavior-drop-occurs-when-candrop-returns-false
@@ -30,7 +31,7 @@ This behavior comes from the WPF framework. When dragging and dropping an elemen
 
 ## Solution
 
-Create a new class that derives from the `ListBoxDragDropBehavior` and override the `Drop` method. In it, retrieve the return value of the the `CanDrop` method invocation. If the return value is __true__, call the base Drop method.
+Create a new class that derives from the `ListBoxDragDropBehavior` and override the `Drop` method. In it, retrieve the return value of the `CanDrop` method invocation. If the return value is __true__, call the base Drop method.
 
 __Custom ListBoxDragDropBehavior with overridden Drop method__
 ```C#

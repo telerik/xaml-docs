@@ -2,6 +2,7 @@
 title: Customizing Header Button
 page_title: Header Button Style
 description: This article will show you how to customize the header button style of the RadExpander control.
+components: ["expander"]
 slug: radexpander-features-header-button-style
 tags: button style, header button, expander, expander button
 published: True

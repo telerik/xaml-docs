@@ -2,6 +2,7 @@
 title: Customizing Selected Tab Content
 page_title: Customizing Selected Tab Content
 description: Check our &quot;Customizing Selected Tab Content&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-appearance-customizing-selected-tab-content
 tags: selected, tab, content
 published: True

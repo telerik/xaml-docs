@@ -2,6 +2,7 @@
 title: Keyboard and Mouse Support
 page_title: Keyboard and Mouse Support
 description: Check our &quot;Keyboard and Mouse Support&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-features-keyboard-mouse
 tags: keyboard,and,mouse,support
 published: True

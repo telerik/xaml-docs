@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: The article describes the properties that the RadNavigationView exposes for working with selection.
+components: ["navigationview"]
 slug: radnavigationview-features-selection
 tags: selection
 position: 0

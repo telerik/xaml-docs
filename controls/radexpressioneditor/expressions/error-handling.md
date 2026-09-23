@@ -2,6 +2,7 @@
 title: Error Handling
 page_title: Error Handling
 description: Check out the documentation article for handling errors in the RadExpressionEditor {{ site.framework_name }} control.
+components: ["expressioneditor"]
 slug: radexpressioneditor-error-handling
 tags: expressionerror, errors, expressioneditor
 published: True

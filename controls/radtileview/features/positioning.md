@@ -2,6 +2,7 @@
 title: Customize Position
 page_title: Customize Position
 description: This article will demonstrate how the position of the RadTileViewItems can be changed via their Position property.
+components: ["tileview"]
 slug: radtileview-positioning
 tags: customize,position
 published: True

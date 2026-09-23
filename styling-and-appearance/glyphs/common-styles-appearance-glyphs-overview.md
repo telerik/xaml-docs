@@ -2,6 +2,7 @@
 title: Font Glyphs Overview
 page_title: Font Glyphs Overview
 description: The glyphs are vector symbols that can be used as information-carrying icons or interaction indicators in the Telerik UI for {{ site.framework_name }} controls.
+components: ["general"]
 slug: common-styling-appearance-glyphs-overview
 tags: glyphs, telerikwebui, office2016, fonts, foregrounds, text, icons
 published: True

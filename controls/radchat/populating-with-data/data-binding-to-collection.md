@@ -2,6 +2,7 @@
 title: Data Binding to Collection
 page_title: Data Binding to Collection
 description: This article shows how to use Telerik RadChat for WPF in MVVM scenario and data bind its DataSource collection.
+components: ["chat"]
 slug: chat-populating-with-data-binding-to-collection
 tags: overview
 published: True

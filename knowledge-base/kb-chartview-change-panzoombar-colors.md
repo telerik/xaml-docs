@@ -1,6 +1,7 @@
 ---
 title: Change ChartView PanZoomBar Colors
 description: Modify the Style of RadCartesianChart PanZoomBar Brush and Border.
+components: ["chartview"]
 type: how-to
 page_title: Customize the Colors of the Chart Scroller
 slug: kb-chartview-change-panzoombar-colors 
@@ -30,7 +31,7 @@ How to change the colors of the RadCartesianChart PanZoomBar (scroll) control.
 
 ## Solution
 
->important The Styles shown in this solution are based on the ExpressionDark [theme]({%slug common-styling-appearance-available-themes%}). The same approach can be used accross the different Telerik themes, but the styles may vary between them.
+>important The Styles shown in this solution are based on the ExpressionDark [theme]({%slug common-styling-appearance-available-themes%}). The same approach can be used across the different Telerik themes, but the styles may vary between them.
 
 This example shows how to change the colors of the scroll to match the ExpressionDark theme colors.
 

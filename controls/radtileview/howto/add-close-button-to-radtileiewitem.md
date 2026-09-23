@@ -2,6 +2,7 @@
 title: Add a Close Button to a RadTileViewItem
 page_title: Add a Close Button to a RadTileViewItem
 description: Check our &quot;Add a Close Button to a RadTileViewItem&quot; documentation article for the RadTileView {{ site.framework_name }} control.
+components: ["tileview"]
 slug: radtileview-howto-add-close-button-to-radtileiewitem
 tags: add,a,close,button,to,a,radtileviewitem
 publish: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
+components: ["outlookbar"]
 slug: radoutlookbar-getting-started
 tags: getting,started
 published: True

@@ -2,6 +2,7 @@
 title: List Styles
 page_title: List Styles
 description: Check our &quot;List Styles&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-list-styles
 tags: list,styles
 published: True

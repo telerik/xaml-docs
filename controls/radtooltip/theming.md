@@ -2,6 +2,7 @@
 title: Customizing ToolTip Content
 page_title: Customizing ToolTip Content
 description: Check our &quot;Customizing ToolTip Content&quot; documentation article for the RadToolTip {{ site.framework_name }} control.
+components: ["tooltip"]
 slug: radtooltip-theming
 tags: theming
 published: True

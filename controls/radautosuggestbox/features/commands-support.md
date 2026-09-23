@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: RadAutoSuggestBox executes its search and clear query actions using a couple of commands. You can replace them via the ClearButtonCommand and QueryButtonCommand properties.
+components: ["autosuggestbox"]
 slug: radautosuggestbox-features-commands
 tags: commands, support
 published: True

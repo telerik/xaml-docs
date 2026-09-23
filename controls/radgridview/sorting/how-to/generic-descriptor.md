@@ -2,6 +2,7 @@
 title: Use generic SortDescriptor
 page_title: Use generic SortDescriptor
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create generic expression SortDescriptor.
+components: ["gridview"]
 slug: gridview-sorting-generic-descriptor
 tags: use,generic,sortdescriptor
 published: True

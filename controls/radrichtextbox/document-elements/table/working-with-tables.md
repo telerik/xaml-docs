@@ -2,6 +2,7 @@
 title: Working with Tables in Code
 page_title: Working with Tables in Code
 description: The article demonstrates how to work with the Table element and create/retrieve tables in code behind. 
+components: ["richtextbox"]
 slug: radrichtextbox-working-with-tables
 tags: table
 published: True

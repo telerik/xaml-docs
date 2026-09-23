@@ -2,6 +2,7 @@
 title: Drill Down
 page_title: Drill Down
 description: Check our &quot;Drill Down&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-localdatasourceprovider-drilldown
 tags: culture,support
 published: True

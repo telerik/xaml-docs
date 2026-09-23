@@ -2,6 +2,7 @@
 title: Scrolling the TimeRuler
 page_title: Scrolling the TimeRuler
 description: Check our &quot;Scrolling the TimeRuler&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-timeruler-scrolling
 tags: scrolling,the,timeruler
 published: True

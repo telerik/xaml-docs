@@ -2,6 +2,7 @@
 title: Plot Mode
 page_title: Plot Mode
 description: Check our &quot;Plot Mode&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-plotmode
 tags: plot,mode
 published: True
@@ -24,10 +25,10 @@ You can set the PlotMode from XAML like this:
 The PlotMode property can be used with the following predefined values:        
 
 * __OnTicks__ - in this mode, the ticks match labels. Best for Linear series.  
-            ![{{ site.framework_name }} RadChartView Plot Mode OnTicks](images/RadChartView-chart_onticks.PNG)
+			![Telerik UI for WPF RadChartView Using the OnTicks Plot Mode](images/RadChartView-chart_onticks.PNG)
 
 * __BetweenTicks__ - ticks are margins (labels are between two ticks); a small margin on both sides is provided. Useful for Bar series.  
-            ![{{ site.framework_name }} RadChartView Plot Mode BetweenTicks](images/RadChartView-chart_betweenticks.PNG)
+			![Telerik UI for WPF RadChartView Using the BetweenTicks Plot Mode](images/RadChartView-chart_betweenticks.PNG)
 
-* __OnTicksPadded__ - ticks match labels; a small margin on both sides is provided for better presentation. It is recomended to be used with Scatter series.  
-            ![{{ site.framework_name }} RadChartView Plot Mode OnTicksPadded](images/RadChartView-chart_ontickspadded.PNG)
+* __OnTicksPadded__ - ticks match labels; a small margin on both sides is provided for better presentation. It is recommended to be used with Scatter series.  
+			![Telerik UI for WPF RadChartView Using the OnTicksPadded Plot Mode](images/RadChartView-chart_ontickspadded.PNG)

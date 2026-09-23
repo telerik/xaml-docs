@@ -2,6 +2,7 @@
 title: Change ToolTip ShowDuration
 page_title: Show the ToolTips Indefinitely
 description: This article explains how to create a custom UILayer to customize the way that tooltips are shown such as extending their ShowDuration.
+components: ["syntaxeditor"]
 type: how-to
 slug: kb-syntaxeditor-how-to-create-custom-tooltip-layer
 position: 0

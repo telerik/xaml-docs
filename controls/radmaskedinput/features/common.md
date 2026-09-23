@@ -2,6 +2,7 @@
 title: Common
 page_title: Common
 description: Check our &quot;Common&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-features-common
 tags: common
 published: True

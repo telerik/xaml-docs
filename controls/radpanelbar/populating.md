@@ -2,15 +2,16 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
 slug: radpanelbar-populating
 tags: getting,started
 published: True
-position: 2
+position: 1
 ---
 
 # Getting Started
 
-This tutorial will walk you through the creation of a sample application that contains __RadPanelBar__. 
+This tutorial will walk you through the creation of a sample application that contains __RadPanelBar__.
 
 ## Adding Telerik Assemblies Using NuGet
 
@@ -31,31 +32,31 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 ## Adding RadPanelBar to the Project
 
-**Example 1** demonstrates how you can add a RadPanelBar in xaml.
+The following example demonstrates how you can add a RadPanelBar in XAML.
 
-__Example 1: RadPanelBar with statically declared items in xaml__
+__RadPanelBar with Statically Declared Items in XAML__
 <snippet id='radpanelbar-populating-block_1-xaml' />
 
-#### __Figure 1: Result from Example 1 in Office2016 Theme__
+__Result from the Previous Example in the Office2016 Theme__
 ![RadPanelBar Getting Started](images/panelbar_getting_started.png)
 
 ## Declaratively Populating the Items Collection of the RadPanelBar Control
 
-**Example 2** demonstrates how you can add __RadPanelBarItems__ directly to the __Items__ collection of the RadPanelBar in code behind:			
+The following example demonstrates how you can add __RadPanelBarItems__ directly to the __Items__ collection of the RadPanelBar in code behind:
 
-__Example 2: Adding RadPanelBarItems in code__
+__Adding RadPanelBarItems in Code__
 <snippet id='radpanelbar-populating-block_2-cs' />
 <snippet id='radpanelbar-populating-block_2-vb' />
 
-## Databinding the RadPanelBar Control		  
+## Databinding the RadPanelBar Control
 
-**RadPanelBar** can be also be bound to a collection of objects. You can learn more about this in the [Bind to Object Data]({%slug radpanelbar-object-data%}) article in our documentation.
+**RadPanelBar** can be also be bound to a collection of objects. You can learn more about this in the [Data Binding]({%slug radpanelbar-object-data%}) article in our documentation.
 
-## Setting a Theme
+For information on how to apply a theme different than the default one, see the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article.
 
 The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
 
->important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
+>important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged.
 
 To change the theme, you can follow the steps below:
 
@@ -68,7 +69,7 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-__Example 3: Merge the ResourceDictionaries__  
+__Example 3: Merge the ResourceDictionaries__
 <snippet id='radpanelbar-populating-block_3-xaml' />
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
@@ -87,10 +88,9 @@ __Figure 2__ shows a RadPanelBar with the **Windows8** theme applied.
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
-* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf)
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
-{% endif %}
 
 ## See Also
 * [Events]({%slug radpanelbar-events-overview%})
-* [How to Display Hierarchical Data]({%slug howto-display-hierarchical-data%})
+* [Data Binding]({%slug radpanelbar-object-data%})

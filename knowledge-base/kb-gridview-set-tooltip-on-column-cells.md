@@ -1,6 +1,7 @@
 ---
 title: Set a Tooltip on the Cells of a Column
 description: This article will show you how to set a tooltip on the cells of a column.
+components: ["gridview"]
 page_title: Display a ToolTip on a Column's Cells
 type: how-to
 slug: kb-gridview-set-tooltip-on-column-cells

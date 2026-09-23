@@ -2,6 +2,7 @@
 title: Basic Column
 page_title: Basic Column
 description: Learn how to define GridViewColumn, the basic column of the Telerik {{ site.framework_name }} DataGrid, either in XAML or code.
+components: ["gridview"]
 slug: radgridview-columns-column-types-basic-column
 tags: basic,column
 published: True

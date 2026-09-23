@@ -1,6 +1,7 @@
 ---
 title: Resizing RadRating Item Visuals in Telerik Themes with Glyph Icons
 description: Learn how to customize the size of rating visuals in the RadRating control for WPF applications.
+components: ["rating"]
 type: how-to
 page_title: How to Resize Rating Item Symbols in RadRating for WPF
 slug: kb-rating-resize-item-symbols

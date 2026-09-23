@@ -2,6 +2,7 @@
 title: Customizing Items
 page_title: Customizing Items
 description: Check our &quot;Customizing Items&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
+components: ["timeline"]
 slug: radtimeline-customizing-items
 tags: customizing,items
 published: True

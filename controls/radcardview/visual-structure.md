@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: The article demonstrates the visual structure of the RadCardView component.
+components: ["cardview"]
 slug: radcardview-visual-structure
 tags: visual, structure, cardview
 published: True

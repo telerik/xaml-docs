@@ -2,6 +2,7 @@
 title: Templates Structure
 page_title: Templates Structure
 description: Check our &quot;Templates Structure&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-styles-and-templates-templates-structure
 tags: templates,structure
 published: True

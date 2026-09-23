@@ -2,6 +2,7 @@
 title: Frequently Asked Questions
 page_title: Frequently Asked Questions
 description: Check our &quot;Frequently Asked Questions&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-frequently-asked-questions
 tags: frequently,asked,questions
 published: True

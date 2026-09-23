@@ -2,6 +2,7 @@
 title: Deployment and Application Do Not Have Matching Security Zones - Error When Launching Demos
 page_title: Deployment Error When Starting WPF Demo Application
 description: Cannot install Color Theme Generator solution because of no matching security zones error occurs.
+components: ["general"]
 type: troubleshooting
 slug: kb-cannot-install-wpf-demos-error
 position: 0

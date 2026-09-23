@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadNumericUpDown {{ site.framework_name }} control.
+components: ["numericupdown"]
 slug: radnumericupdown-overview
 tags: overview
 published: True

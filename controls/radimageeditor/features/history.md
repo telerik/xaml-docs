@@ -2,6 +2,7 @@
 title: History
 page_title: History
 description: Check our &quot;History&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-features-history
 tags: history
 published: True

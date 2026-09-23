@@ -2,6 +2,7 @@
 title: Inline PivotFieldList
 page_title: Inline PivotFieldList
 description: Check our &quot;RadPivotFieldList&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-inline-pivotfieldlist
 tags: inline,radpivotfieldlist
 published: True

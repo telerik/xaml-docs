@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization
 description: The article describes the UI Virtualization in WPF and Telerik Rad controls.
+components: ["general"]
 slug: common-ui-virtualization
 tags: virtualization,ui
 published: True
@@ -93,7 +94,7 @@ __Host the virtualized controls in panels that measure its children with the ava
 	</Grid>
 ```
 
-The UI virtualization feature is created with a special [Panel](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-a-custom-panel-element?view=netframeworkdesktop-4.8) implementation. In most controls this panel is assined via the `ItemsPanel` property of the control. Replacing the `ItemsPanel` setting will disable the virtualization.
+The UI virtualization feature is created with a special [Panel](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-a-custom-panel-element?view=netframeworkdesktop-4.8) implementation. In most controls this panel is assigned via the `ItemsPanel` property of the control. Replacing the `ItemsPanel` setting will disable the virtualization.
 
 ## See Also  
 * [RadTreeView UI Virtualization]({%slug radtreeview-features-ui-virtualization%})

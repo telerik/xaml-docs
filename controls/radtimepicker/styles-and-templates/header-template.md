@@ -2,6 +2,7 @@
 title: Header Template
 page_title: Header Template
 description: Check our &quot;Header Template&quot; documentation article for the RadTimePicker {{ site.framework_name }} control.
+components: ["timepicker"]
 slug: radtimepicker-header-template
 tags: header,template
 published: True

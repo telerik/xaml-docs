@@ -2,6 +2,7 @@
 title: Styling Column Headers
 page_title: Styling Column Headers
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to create an appropriate style targeting the HeaderCell element.
+components: ["gridview"]
 slug: gridview-styling-column-headers
 tags: styling,column,headers
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Changing Validation Color in Telerik UI for WPF Controls
 description: Learn how to change the validation color of Telerik controls for the Telerik theme (like Windows8) using Xaml or NoXaml assemblies.
+components: ["general"]
 type: how-to
 page_title: Modifying Validation Color for Telerik TextBox Elements
 meta_title: Modifying Validation Color for Telerik Input Control

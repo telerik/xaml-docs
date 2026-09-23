@@ -1,6 +1,7 @@
 ---
 title: Change Localization of the FindDialog of PdfViewer During Runtime
 description: "How to change the language of the find dialog of RadPdfViewer at runtime."
+components: ["general"]
 type: how-to
 page_title: Dynamically Update the Culture of the FindDialog of RadPdfViewer
 slug: kb-pdfviewer-change-localization-at-runtime
@@ -31,7 +32,7 @@ How to change the culture of the [find dialog]({%slug radpdfviewer-find-dialog%}
 
 ## Solution
 
-To change the localization settings of the find dialog, you will need to unregiser it in order to unload it. Then set the application culture and, register the dialog again.
+To change the localization settings of the find dialog, you will need to unregister it in order to unload it. Then set the application culture and, register the dialog again.
 
 
 ```C#

@@ -1,6 +1,7 @@
 ---
 title: Set Width of Filter Dialog in RadGridView for WPF
 description: "This article provides a solution for controlling the width of the filter dialog in RadGridView for WPF when the checkbox list contains long text items."
+components: ["gridview"]
 type: how-to
 page_title: How to Limit the Width of the Filter Dialog in RadGridView for WPF
 slug: kb-gridview-set-width-filteringcontrol

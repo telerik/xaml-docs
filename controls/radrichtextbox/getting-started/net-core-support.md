@@ -2,6 +2,7 @@
 title: .NET Support
 page_title: .NET 6 Support
 description: Check our &quot;.NET Support&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: radrichtextbox-getting-started-net-core-support
 tags: netcore,.net core,6,7
 published: True

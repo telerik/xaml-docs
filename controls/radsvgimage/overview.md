@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadSvgImage control.
+components: ["svgimage"]
 slug: radsvgimage-overview
 tags: overview, radsvgimage
 published: True

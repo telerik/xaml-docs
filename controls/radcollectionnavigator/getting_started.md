@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This article will walk you through creating a sample application using the RadCollectionNavigator.
+components: ["collectionnavigator"]
 slug: collectionnavigator_getting_started
 tags: getting,started
 published: True

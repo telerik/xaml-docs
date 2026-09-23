@@ -2,6 +2,7 @@
 title: Custom UI Layer
 page_title: Custom UI Layer
 description: Check our &quot;Custom UI Layer&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-customization-and-extensibility-custom-ui-layer
 tags: custom,ui,layer
 published: True

@@ -2,6 +2,7 @@
 title: Items Indent
 page_title: Items Indent
 description: Check our &quot;Items Indent&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-features-itemsindent
 tags: lines,support,itemsindent
 published: True

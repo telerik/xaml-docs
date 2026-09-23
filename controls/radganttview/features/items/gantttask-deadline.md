@@ -2,6 +2,7 @@
 title: GanttTask Deadline
 page_title: GanttTask Deadline
 description: Check our &quot;GanttTask Deadline&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-items-gantttask-deadline
 tags: gantttask,deadline
 published: True

@@ -2,6 +2,7 @@
 title: Connect to Web API 2
 page_title: Connect to Web API 2
 description: CRUD.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-how-to-connect-to-web-api
 tags: connect, web, api
 published: True

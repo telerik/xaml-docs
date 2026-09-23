@@ -1,7 +1,8 @@
 ---
 title: Basic Filtering
-page_title: Basic Filtering
-description: Learn more about the filtering functionality of Telerik's {{ site.framework_name }} DataGrid that allows the user to easily filter data by one or more columns.
+page_title: RadGridView Basic Filtering
+description: Learn how to use Popup, Filter Row, and Filter Editor modes in Telerik {{ site.framework_name }} RadGridView and configure column filtering behavior.
+components: ["gridview"]
 slug: gridview-filtering-basic
 tags: basic,filtering
 published: True

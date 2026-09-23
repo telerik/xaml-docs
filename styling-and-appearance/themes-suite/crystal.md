@@ -2,6 +2,7 @@
 title: Crystal Theme
 page_title: Crystal Theme
 description: This article provides an overview of the Crystal theme from the UI for WPF suite.
+components: ["general"]
 slug: common-styling-appearance-crystal-theme
 tags: crystal,theme,glyphs,fontsize,fontfamily,cornerradius
 published: True
@@ -212,7 +213,7 @@ article table
 
 # Crystal Theme
 
-Inspired by MacOS, the Crystal theme delivers the renown Mac OS look and feel to your WPF apps. The team at Apple have been a trend setter with their clean UI and with the Crystal theme you will be able to bring that style to your own apps.
+Inspired by MacOS, the Crystal theme delivers the renowned Mac OS look and feel to your WPF apps. The team at Apple have been a trend setter with their clean UI and with the Crystal theme you will be able to bring that style to your own apps.
 
 Jump to the following topics to learn about the specifics of the theme's palette and features.
 
@@ -270,7 +271,7 @@ The default values of the colors in the theme are listed below. Please note that
 
 __Theme colors represented in RadOutlookBar__
 
-![Crystal theme colors represented in RadOutlookBar](images/crystal-theme-outlook.PNG)	
+![Telerik UI for WPF Crystal theme colors represented in RadOutlookBar](images/crystal-theme-outlook.PNG)
 
 ## Default Theme Brushes
 
@@ -369,11 +370,11 @@ __Changing the theme's FontSize and FontFamily__
 
 __Setting FontSize and FontFamily__
 
-![RadCalendar with modified FontSize and FontFamiliy](images/crystal-theme-calendar-font-change.png)	
+![Telerik UI for WPF RadCalendar with modified font size and font family in the Crystal theme](images/crystal-theme-calendar-font-change.png)
 
 ## Using Glyphs
 
-The `Crystal` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. The `RadGlyph` provides a lightweight, flexble and design-time-friendly implementation of our glyph font.  
+The `Crystal` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
  
@@ -386,9 +387,9 @@ __Changing the default corner radius__
 	CrystalPalette.Palette.CornerRadius = new CornerRadius(0); 	
 ```
 
-__Apperance of a RadButton control after changing the default corner radius__
+__Appearance of a RadButton control after changing the default corner radius__
 
-![RadButton with a CornerRadius of 0](images/crystal-theme-button-cornerradius.png)	
+![Telerik UI for WPF RadButton with a corner radius of zero in the Crystal theme](images/crystal-theme-button-cornerradius.png)
 
 ## Visual Helpers
 
@@ -420,7 +421,7 @@ __Set RadToggleButton's visual appearance through the visual helpers__
 
 __Appearance of the RadToggleButton in the different states__
 
-![RadToggleButton States](images/crystal-theme-togglebutton-states.png)
+![Telerik UI for WPF RadToggleButton states in the Crystal theme](images/crystal-theme-togglebutton-states.png)
 
 ## Window Buttons Alignment
 
@@ -433,7 +434,7 @@ __Changing the WindowButtonsAlignment__
 
 __Appearance of the RadWindow with the different alignments__
 
-![RadToggleButton States](images/crystal-theme-window-buttons-alignment.png)
+![Telerik UI for WPF window buttons alignment in the Crystal theme](images/crystal-theme-window-buttons-alignment.png)
 
 ## Changing ScrollBarsMode
 
@@ -447,7 +448,7 @@ By default, the scrollbars in the Crystal theme change their size depending on w
 
 __ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__ 
 
-![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/crystal-light-scrollbarsmode.gif)
+![Telerik UI for WPF ScrollBar in Auto, Compact, and Normal ScrollBarsMode in the Crystal theme](images/crystal-light-scrollbarsmode.gif)
 
 __Setting the ScrollBarsMode property of the palette to Compact__
 ```C#	

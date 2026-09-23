@@ -2,6 +2,7 @@
 title: Setting a Theme with StyleManager
 page_title: Setting a Theme with StyleManager
 description: How to set a Telerik theme with StyleManager.
+components: ["general"]
 slug: common-styling-apperance-setting-theme-wpf
 tags: setting,a,theme,with,stylemanager
 published: True
@@ -13,7 +14,7 @@ site_name: WPF
 
 This help article will show you how to set a built-in theme to Telerik UI for WPF. 
 
-See the Telerik themes in the [Avilable Themes]({%slug common-styling-appearance-available-themes%}) article.
+See the Telerik themes in the [Available Themes]({%slug common-styling-appearance-available-themes%}) article.
 
 In order to use one of the themes with the StyleManager you need to add references to the Telerik assemblies in your WPF project. You can find more information about the control dependencies in the [Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) topic.
 
@@ -38,7 +39,7 @@ __Changing the theme of a RadSlider to Windows11 in code__
 
 __RadSlider with Windows11 theme applied__  
 
-![Common Styling Theming Setting Built In Theme 020 WPF](images/Common_StylingThemingSettingBuiltInTheme_020_WPF.png)
+![Telerik UI for WPF RadSlider displayed with a built-in theme](images/Common_StylingThemingSettingBuiltInTheme_020_WPF.png)
 
 ## Setting Application-Wide Theme
 

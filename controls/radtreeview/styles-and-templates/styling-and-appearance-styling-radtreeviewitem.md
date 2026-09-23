@@ -2,6 +2,7 @@
 title: Styling the RadTreeViewItem
 page_title: Styling the RadTreeViewItem
 description: This article demonstrates how the RadTreeViewItem elements can be styled.
+components: ["treeview"]
 slug: radtreeview-styling-and-appearance-styling-radtreeviewitem
 tags: styling,the,radtreeviewitem
 published: True

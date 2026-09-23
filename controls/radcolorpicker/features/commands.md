@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: Check our &quot;Commands&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
+components: ["colorpicker"]
 slug: radcolorpicker-commands
 tags: commands
 published: True

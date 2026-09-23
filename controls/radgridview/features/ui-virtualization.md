@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization
 description: Learn more about the horizontal and vertical virtualization in Telerik's {{ site.framework_name }} DataGrid that help speed up the loading time and enhance the UI performance.
+components: ["gridview"]
 slug: radgridview-features-ui-virtualization
 tags: ui,virtualization
 published: True
@@ -13,6 +14,8 @@ position: 13
 __RadGridView's API__ supports __UI Virtualization__ which processes only these visual elements that are loaded in its viewable area. This reduces the memory footprint of the application and speeds up the loading time, thus immensely enhancing the **UI performance**. 
 
 The grid control utilizes **horizontal** and **vertical** virtualization and introduces container recycling for speed improvement and reduction in memory usage. This is of great importance when the control is bound to large data sets. The container recycling pushes further the speed of horizontal and vertical scrolling, allowing **RadGridView** to reuse the existing containers for the different data items from the source collection instead of creating new ones.
+
+During mouse-wheel scrolling, the virtualizing panel updates the visible range and can reuse the row and cell containers as the view changes. Do not use container recreation or scrolling as an indication that keyboard focus has moved to the grid.
 
 >important You should **not work** with the visual elements of **RadGridView**(GridViewCell, GridViewRow, etc.) directly as this will result in inconsistent behavior due to the containers recycling mechanism. Instead, you should use the underlying data items as explained in the [Style Selectors]({%slug gridview-cell-style-selector%}) section.
 

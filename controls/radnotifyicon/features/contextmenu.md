@@ -2,6 +2,7 @@
 title: ContextMenu
 page_title: ContextMenu
 description: This article allows demonstrates the context menu feature of the RadNotifyIcon. 
+components: ["notifyicon"]
 slug: radnotifyicon-contextmenu
 tags: context, menu, notifyicon
 position: 2

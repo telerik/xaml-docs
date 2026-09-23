@@ -2,6 +2,7 @@
 title: Trimmed Text Tooltips
 page_title: Trimmed Text Tooltips
 description: Check our &quot;Trimmed Text Tooltips&quot; documentation article for the RadTreeListView {{ site.framework_name }} control.
+components: ["treelistview"]
 slug: radtreelistview-trimmed-text-tooltips
 tags: trimmed,text,tooltips
 published: True

@@ -2,6 +2,7 @@
 title: Carousel Items
 page_title: Carousel Items
 description: Check our &quot;Carousel Items&quot; documentation article for the RadCarousel {{ site.framework_name }} control.
+components: ["carousel"]
 slug: carousel-items
 tags: carousel,items
 published: True

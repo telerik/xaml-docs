@@ -2,6 +2,7 @@
 title: Empty Provider
 page_title: Empty Provider
 description: Check our &quot;Empty provider&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-empty-provider
 tags: empty,provider
 published: True

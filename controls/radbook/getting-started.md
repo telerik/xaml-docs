@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadBook {{ site.framework_name }} control.
+components: ["book"]
 slug: radbook-getting-started
 tags: getting,started
 published: True
@@ -26,9 +27,9 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Navigation__ 
+* __Telerik.Windows.Controls.Navigation__
 {% if site.site_name == 'WPF' %}
-* __Telerik.Windows.Data__  
+* __Telerik.Windows.Data__
 {% endif %}
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
@@ -37,7 +38,7 @@ You can find the required assemblies for each control from the suite in the {% i
 
 __RadBook__ is an __ItemsControl__. The pages of the book are represented by the __RadBookItem__ control. __RadBookItem__ is a __ContentControl__. Below is a basic declaration of __RadBook__ with several pages:
 
-__Example 1: Defining a RadBook__  
+__Example 1: Defining a RadBook__
 <snippet id='radbook-getting-started-block_1-xaml' />
 
 This is the result of the above code:
@@ -48,7 +49,7 @@ This is the result of the above code:
 
 You can add any UIElement as a content of the pages. RadBookItem has a Content property which you can populate with a single root panel which contains the page content.
 
-__Example 2: Adding RadBookItems__  
+__Example 2: Adding RadBookItems__
 <snippet id='radbook-getting-started-block_2-xaml' />
 
 ![RadBook Getting Started - Step2](images/book_step2.png)
@@ -57,7 +58,7 @@ __Example 2: Adding RadBookItems__
 
 To set the initial page that will be displayed - set the __RightPageIndex__ property:
 
-__Example 3: Setting the intially displayed page__  
+__Example 3: Setting the initially displayed page__
 <snippet id='radbook-getting-started-block_3-xaml' />
 
 ![RadBook Getting Started - Step3](images/book_step3.png)
@@ -71,7 +72,7 @@ __Example 3: Setting the intially displayed page__
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
-* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf)
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}
 

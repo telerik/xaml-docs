@@ -2,6 +2,7 @@
 title: MapBox Provider
 page_title: MapBox Provider
 description: Check our &quot;MapBox Provider&quot; vector tiles documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-mapboxprovider
 tags: mapboxprovider
 published: True

@@ -2,6 +2,7 @@
 title: Axis
 page_title: Axis
 description: Check our &quot;Axis&quot; documentation article for the RadSparkLine {{ site.framework_name }} control.
+components: ["sparkline"]
 slug: radsparkline-features-axis
 tags: axis,origin,value
 published: True

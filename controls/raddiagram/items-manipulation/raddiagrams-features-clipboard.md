@@ -2,6 +2,7 @@
 title: Clipboard Operations
 page_title: Clipboard Operations
 description: Check our &quot;Clipboard Operations&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-clipboard
 tags: clipboard,operations
 published: True

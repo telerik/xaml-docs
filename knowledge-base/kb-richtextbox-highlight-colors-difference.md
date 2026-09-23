@@ -1,6 +1,7 @@
 ---
 title: Highlight Colors Difference Between MS Word and RadRichTextBox
 description: This article will describe the difference between the highlight colors of MS Word and RadRichTextBox.
+components: ["richtextbox"]
 page_title: Difference of Highlight Colors in Ms Word and RadRichTextBox
 type: how-to
 slug: kb-radrichtextbox-difference-in-the-highlighted-colors
@@ -27,7 +28,7 @@ ticketid: 1023476
 
 ## Description
 
-The highlight colors that the RadRichTextBox control provides differ from the ones that are present in Microsoft Word. This cause the DOCX format to not use these additional colors when exporting a paragraph. 
+The highlight colors that the RadRichTextBox control provides differ from the ones that are present in Microsoft Word. This causes the DOCX format to not use these additional colors when exporting a paragraph. 
 
 ## Solution
 

@@ -2,6 +2,7 @@
 title: Multiple-Column Sorting
 page_title: Multiple-Column Sorting
 description: Learn how you can sort data in Telerik's WPF DataGrid ascending by the Est. column and then sort again by the Stadium column without removing previous sorting.
+components: ["gridview"]
 slug: gridview-multiple-column-sorting
 tags: multiple-column,sorting
 published: True

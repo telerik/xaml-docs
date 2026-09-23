@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-overview
 tags: overview
 published: True
@@ -21,7 +22,7 @@ The Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %
 
 #### __Figure 1: RadComboBox in different modes__
 
-![Rad Combo Box Overview 01](images/RadComboBox_Overview_01.png)  
+![Telerik UI for WPF RadComboBox shown in multiple edit and display modes](images/RadComboBox_Overview_01.png)  
 
 The list below describes several of the top-of-the-line features of the Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} __RadComboBox__ control:        
 

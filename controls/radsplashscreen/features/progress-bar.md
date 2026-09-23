@@ -2,6 +2,7 @@
 title: Progress Bar
 page_title: Progress Bar
 description: By default the RadSplashScreen shows an indeterminate RadProgressBar which notifies the user that something is loading. 
+components: ["splashscreen"]
 slug: radsplashscreen-features-progress-bar
 tags: progress,bar,splashscreen,busyindicator
 published: True

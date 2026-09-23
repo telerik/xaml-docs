@@ -2,6 +2,7 @@
 title: Word Taggers
 page_title: Word Taggers
 description: This article explains the use of word taggers in the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-word-taggers
 tags: word,taggers,radsyntaxeditor
 position: 1

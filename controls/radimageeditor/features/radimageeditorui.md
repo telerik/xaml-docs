@@ -2,6 +2,7 @@
 title: RadImageEditorUI
 page_title: RadImageEditorUI
 description: Check our &quot;RadImageEditorUI&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-features-radimageeditorui
 tags: radimageeditorui
 published: True

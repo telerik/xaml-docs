@@ -2,6 +2,7 @@
 title: Exclude shape from serialization
 page_title: Exclude shape from serialization
 description: This article explains how you can exclude shapes from serialization.
+components: ["diagram"]
 slug: raddiagrams-howto-exclude-shape-from-serialization
 tags: save,the,diagram,in,the,file,system, serialization,serialize,
 published: True

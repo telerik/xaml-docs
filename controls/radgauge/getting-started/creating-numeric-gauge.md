@@ -2,6 +2,7 @@
 title: Creating Numeric Gauge
 page_title: Creating Numeric Gauge
 description: Check our &quot;Creating Numeric Gauge&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radgauge-getting-started-creating-numeric-gauge
 tags: creating,numeric,gauge
 published: True

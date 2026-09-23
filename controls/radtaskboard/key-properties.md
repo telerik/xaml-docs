@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: This article lists and explains the events exposed by the RadTaskBoard control.
+components: ["taskboard"]
 slug: radtaskboard-key-properties
 tags: radtaskboard, key, property, properties
 published: True

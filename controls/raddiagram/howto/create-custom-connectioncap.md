@@ -2,6 +2,7 @@
 title: Create Custom Connection Cap
 page_title: Create Custom ConnectionCap
 description: Create Custom ConnectionCap.
+components: ["diagram"]
 slug: raddiagram-howto-create-custom-connectioncap
 tags: create,custom,connectioncap
 published: True

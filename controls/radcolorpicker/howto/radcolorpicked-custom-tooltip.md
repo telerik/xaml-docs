@@ -2,6 +2,7 @@
 title: Customize the PaletteViewItem's ToolTip
 page_title: Customize the PaletteViewItem's ToolTip
 description: Check our &quot;Customize the PaletteViewItem's ToolTip&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
+components: ["colorpicker"]
 slug: radcolorpicked-howto-custom-tooltip
 tags: customize,the,paletteviewitem's,tooltip
 published: True

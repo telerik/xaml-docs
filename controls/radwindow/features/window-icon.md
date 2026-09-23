@@ -2,6 +2,7 @@
 title: Window Icon
 page_title: Window Icon
 description: Check our &quot;Window Icon&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-window-icon
 tags: window,icon
 published: True

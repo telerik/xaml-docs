@@ -2,6 +2,7 @@
 title: Layout Splitter
 page_title: Layout Splitter
 description: Check our &quot;Layout Splitter&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
+components: ["layoutcontrol"]
 slug: radlayoutcontrol-features-layout-splitter
 tags: splitter, layout, separator
 published: True

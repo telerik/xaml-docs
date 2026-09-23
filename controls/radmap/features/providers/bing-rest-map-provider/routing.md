@@ -2,6 +2,7 @@
 title: Routing
 page_title: Routing
 description: Check our &quot;Routing&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-providers-bing-rest-map-provider-routing
 tags: bing,map,provider,rest,routing
 published: True

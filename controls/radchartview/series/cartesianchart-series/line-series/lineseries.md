@@ -2,6 +2,7 @@
 title: LineSeries
 page_title: LineSeries
 description: Check our &quot;LineSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-lineseries
 tags: lineseries
 published: True
@@ -26,7 +27,7 @@ __Example 1: Declaring a LineSeries in XAML__
 
 
 #### __Figure 1: LineSeries visual appearance__
-![radchartview-series-lineseries](images/radchartview-series-lineseries.png)
+![Telerik UI for WPF RadChartView LineSeries visual appearance](images/radchartview-series-lineseries.png)
 
 ## Properties
 

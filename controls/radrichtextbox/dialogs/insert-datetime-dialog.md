@@ -2,6 +2,7 @@
 title: Insert Date and Time Dialog
 page_title: Insert Date and Time Dialog
 description: Check our &quot;Insert Date and Time Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-insert-date-time
 tags: insert,date,time,datetime
 published: True

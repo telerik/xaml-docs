@@ -2,6 +2,7 @@
 title: Simplified Ribbon
 page_title: Simplified Ribbon
 description: The article describes how the layout of the RadRibbonView can be changed to a simplified one.
+components: ["ribbonview"]
 slug: radribbonview-simplified-ribbon
 tags: simplified, ribbon
 published: True

@@ -2,6 +2,7 @@
 title: Zooming
 page_title: Zooming
 description: This article explains the zooming functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-zooming
 tags: zooming,radsyntaxeditor
 position: 4

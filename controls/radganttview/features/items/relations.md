@@ -2,6 +2,7 @@
 title: Items Relations
 page_title: Items Relations
 description: Check our &quot;Items Relations&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-items-relations
 tags: items,relations
 published: True

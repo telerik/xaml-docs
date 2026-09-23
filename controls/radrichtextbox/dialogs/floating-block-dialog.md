@@ -2,6 +2,7 @@
 title: Floating Blocks Properties Dialog
 page_title: Floating Blocks Properties Dialog
 description: Check our &quot;Floating Block Properties Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-floating-block
 tags: link,insert,floating,block,image
 published: True

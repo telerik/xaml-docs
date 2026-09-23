@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadDataBar {{ site.framework_name }} control.
+components: ["databar"]
 slug: raddatabar-overview
 tags: overview
 published: True
@@ -25,7 +26,7 @@ The __RadDataBar__ control is an information graphic, which is characterized by 
 
 * __Data binding support__: The data bar controls can be data bound to properties in the view model.
 
-* __Customizeable axis and bar visuals__: The appearance of the bar visuals and the axis elements of the control can be easily customized using the public API.
+* __Customizable axis and bar visuals__: The appearance of the bar visuals and the axis elements of the control can be easily customized using the public API.
 	
 >tip Get started with the control with its [Getting Started]({%slug databar-getting-started2%}) help article that shows how to use it in a basic scenario.
 

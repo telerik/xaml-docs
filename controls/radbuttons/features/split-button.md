@@ -2,6 +2,7 @@
 title: Split Button
 page_title: Split Button
 description: Check our &quot;Split Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-features-split-button
 tags: split,button
 published: True

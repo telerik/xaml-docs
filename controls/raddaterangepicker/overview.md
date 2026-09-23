@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-overview
 tags: overview
 published: True

@@ -2,6 +2,7 @@
 title: Telerik CLI Setup
 page_title: Telerik CLI - Installation, Setup, and Command Reference for Telerik UI for WPF
 description: Install and use the Telerik CLI to set up the Telerik NuGet feed, create WPF projects from templates, and update Telerik UI for WPF packages from the command line.
+components: ["general"]
 slug: telerik-cli
 tags: telerik,cli,command line,cli,dotnet tool,nuget,setup,install,create project,update,template,wpf,telerik,getting started,environment
 published: True
@@ -30,6 +31,7 @@ The following table lists all Telerik CLI commands with their purpose and usage.
 | `telerik login` | Authenticates with your Telerik account. Use `--no-browser` for manual authentication. | Run to store credentials for subsequent commands. |
 | `telerik whoami` | Displays the currently logged-in Telerik user account email. | Run to verify your authentication state. |
 | `telerik logout` | Logs out from the Telerik CLI. | Run to log out the credentials from your Telerik account. |
+| `telerik migrate analyze --product wpf` | Scans a WPF project for Telerik API breaking changes between two versions. | Run before upgrading to see which of your usages need to change. |
 
 ## How to Install the Telerik CLI
 
@@ -237,6 +239,16 @@ You can use the `nuget config` command with the following options:
 telerik nuget config --scope project --path . --force
 ```
 
+## Analyze Breaking Changes When Upgrading
+
+To scan a Telerik UI for WPF project for API breaking changes before upgrading to a newer version, use the `migrate analyze` command:
+
+```powershell
+telerik migrate analyze --product wpf --project ./MyWpfApp.csproj
+```
+
+The command reports every affected file, the exact line and column, and guidance on how to update the code. For more usage examples and output formats, see [Detecting Breaking Changes with the Telerik CLI migrate Command]({%slug telerik-cli-migrate-analyzer%}).
+
 ## Help
 
 To get help about the tool or a specific command in the Telerik CLI, use the `-h` option:
@@ -271,6 +283,7 @@ The following table lists the requirements to run the Telerik CLI.
 
 ## See Also
 
+* [Detecting Breaking Changes with the Telerik CLI migrate Command]({%slug telerik-cli-migrate-analyzer%})
 * [Set up the Telerik NuGet Package Source]({%slug nuget-package-source-setup%})
 * [Continue with the First Steps for Telerik UI for WPF]({%slug getting-started-first-steps%})
 * [Restore Telerik NuGet Packages in Your CI Workflow]({%slug nuget-keys%})

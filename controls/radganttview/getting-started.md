@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This article walks you through the creation of a sample application containing RadGanttView.
+components: ["ganttview"]
 slug: radganttview-getting-started
 tags: getting,started
 published: True

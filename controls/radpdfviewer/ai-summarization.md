@@ -2,6 +2,7 @@
 title: AI Summarization
 page_title: AI Summarization
 description: Check our &quot;AI Summarization&quot; documentation article for the RadPdfViewer WPF control.
+components: ["pdfviewer"]
 slug: radpdfviewer-ai-summarization
 tags: getting,started
 published: True

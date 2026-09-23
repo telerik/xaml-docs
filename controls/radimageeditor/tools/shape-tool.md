@@ -2,6 +2,7 @@
 title: Shape Tool
 page_title: Shape Tool
 description: Check our &quot;Shape Tool&quot; documentation article for the RadImageEditor {{ site.framework_name }} control.
+components: ["imageeditor"]
 slug: radimageeditor-tools-shape-tool
 tags: shape, tool
 published: True

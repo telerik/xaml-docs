@@ -2,6 +2,7 @@
 title: Customizing PolarChart Series
 page_title: Customizing PolarChart Series
 description: Check our &quot;Customizing PolarChart Series&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-styles-and-templates-customizing-polarchart-series
 tags: customizing,polarchart,series
 published: True

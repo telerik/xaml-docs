@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: This article lists RadNumericUpDown's key properties.
+components: ["numericupdown"]
 slug: radnumericupdown-behavior
 tags: key, properties
 published: True

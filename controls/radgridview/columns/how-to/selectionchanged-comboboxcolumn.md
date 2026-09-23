@@ -2,6 +2,7 @@
 title: Handle SelectionChanged for GridViewComboBoxColumn
 page_title: SelectionChanged for ComboBoxColumn
 description: Learn how to handle the SelectionChanged event in case you need it to implement additional logic for the ComboBoxColumn in Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-columns-howto-selectionchanged-comboboxcolumn
 tags: handle,selectionchanged,gridviewcomboboxcolumn
 published: True

@@ -2,6 +2,7 @@
 title: .NET Support Overview 
 page_title: .NET Core Support Overview 
 description: Telerik UI for WPF allows you to create .NET Core, .NET 6 and dot NET 7 and 8 projects. 
+components: ["general"]
 slug: netcore-support-overview
 tags: get,started,first,steps,netcore,standard,sdk,visual,studio,vs
 published: True
@@ -28,7 +29,7 @@ To work with the Telerik .{{ site.minimum_net_core_version }} DLLs you will need
 
 ## Design-Time Support and Visual Studio ToolBox
 
-The Telerik controls can be drag/dropped from the __Visual Studio Toolbox__. To enable this under .NET you will need to [reference the Telerik dlls via nuget]({%slug nuget-installation%}). Installing the nuget packages will add the corresponding controls in the toolbox. Drag and drop from the toolbox is available only for the projects that have the Telerik nuget packages installed.
+The Telerik controls can be drag/dropped from the __Visual Studio Toolbox__. To enable this under .NET you will need to [reference the Telerik dlls via NuGet]({%slug nuget-installation%}). Installing the NuGet packages will add the corresponding controls in the toolbox. Drag and drop from the toolbox is available only for the projects that have the Telerik NuGet packages installed.
 
 Additionally, the Telerik controls introduce customized design-time support as using [smart tags]({%slug common-smart-tags%}), design-time selection, and also the standard control properties changing through the __Visual Studio Designer__
 

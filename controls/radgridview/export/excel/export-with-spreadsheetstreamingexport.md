@@ -2,6 +2,7 @@
 title: SpreadsheetStreamingExport
 page_title: SpreadsheetStreamingExport
 description: Learn more about the SpreadsheetStreamingExport functionality of Telerik's {{ site.framework_name }} DataGrid that allows you to create big documents and export them to XLSX and CSV.
+components: ["gridview"]
 slug: gridview-export-spreadsheetstreamingexport
 tags: export,spreadsheetstreamingexport
 published: True

@@ -2,6 +2,7 @@
 title: Nested Properties
 page_title: Nested Properties
 description: Check our &quot;Nested Properties&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+components: ["propertygrid"]
 slug: radpropertygrid-nested-properties
 tags: nested,properties
 published: True

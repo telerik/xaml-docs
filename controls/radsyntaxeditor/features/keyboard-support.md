@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: This article lists the key bindings provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-keyboard-support
 tags: keyboard,support,radsyntaxeditor
 position: 7

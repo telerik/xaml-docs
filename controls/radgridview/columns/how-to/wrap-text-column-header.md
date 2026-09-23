@@ -2,6 +2,7 @@
 title: Wrap Text in Column Header
 page_title: Wrap Text in Column Header
 description: Check out how you can wrap the text of the column header and have a multi-line header within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-howto-wrap-text-column-header
 tags: wrap,text,in,column,header
 published: True

@@ -2,6 +2,7 @@
 title: SDK Samples Browser Cannot Be Installed or Crashes
 page_title: Errors when Installing or Running the SDK Samples Browser
 description: This article lists the possible errors when installing and running the SDK Samples Browser and provides possible solutions for them.
+components: ["general"]
 type: troubleshooting
 slug: kb-sdk-samples-browser-cannot-be-installed-or-run
 position: 0
@@ -34,7 +35,7 @@ If you're unable to install the ClickOnce application and receive the following 
 
 "Your administrator has blocked this application because it potentially poses a security risk to your computer."
 
-This is means that you do not have the required permissions to install ClickOnce applications on the machine and need to [configure the ClickOnce trust prompt](https://docs.microsoft.com/en-us/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior?view=vs-2019) and ensure the current user has the necessary permissions.
+This means that you do not have the required permissions to install ClickOnce applications on the machine and need to [configure the ClickOnce trust prompt](https://docs.microsoft.com/en-us/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior?view=vs-2019) and ensure the current user has the necessary permissions.
 
 ## Errors when Running the Browser
 

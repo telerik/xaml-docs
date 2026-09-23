@@ -1,6 +1,7 @@
 ---
 title: Setting the FontSize in C# when a Telerik theme is applied
 description: Change the default FontSize in code-behind when a Telerik theme is applied.
+components: ["general"]
 type: how-to
 page_title: Set a different FontSize which has a Telerik theme applied
 slug: kb-common-setting-fontsize-in-code-behind-for-a-telerik-theme

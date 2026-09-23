@@ -2,6 +2,7 @@
 title: Insert New Row into Paged GridView
 page_title: Insert New Row into Paged GridView
 description: Check out the code you will have to execute in order to page to a newly inserted row in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-how-to-insert-new-row-into-paged-gridview
 tags: insert,new,row,into,paged,gridview
 published: True

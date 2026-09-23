@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding
 description: This article demonstrates how the RadNavigationView can be bound to a collection of custom objects.
+components: ["navigationview"]
 slug: radnavigationview-populating-with-data-databinding
 tags: databinding, populating, data
 position: 0

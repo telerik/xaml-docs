@@ -2,6 +2,7 @@
 title: Integrate RadDataForm with RadGridView
 page_title: Integrate RadDataForm with RadGridView
 description: Check our &quot;Integrate RadDataForm with RadGridView&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddataform-integrate-with-radgridview
 tags: integrate,raddataform,with,radgridview
 published: True

@@ -2,6 +2,7 @@
 title: Use MVVM in RadRibbonView
 page_title: Use MVVM in RadRibbonView
 description: This article demonstrates how to setup a RadRibbonView in an MVVM scenario. 
+components: ["ribbonview"]
 slug: howto-use-mvvm-in-radribbonview
 tags: mvvm,support, databinding
 published: True

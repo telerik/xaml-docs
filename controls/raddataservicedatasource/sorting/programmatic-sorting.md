@@ -2,6 +2,7 @@
 title: Programmatic Sorting
 page_title: Programmatic Sorting
 description: Check our &quot;Programmatic Sorting&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-sorting-programmatic-sorting
 tags: programmatic,sorting
 published: True

@@ -2,6 +2,7 @@
 title: Axis
 page_title: Axis
 description: Check our &quot;Axis&quot; documentation article for the RadDataBar {{ site.framework_name }} control.
+components: ["databar"]
 slug: databar-axis
 tags: axis,radhorizontalaxis,radverticalaxis
 published: True
@@ -41,7 +42,7 @@ The data axis control provides the following public properties that can be used 
 
 * __MinorTickLength__: Controls the size of the minor ticks.
 
-* __Step__: Indicates the step of the ticks. For instance, if the minumum is "-20" and the maximum is "10", and the step is "3" - ticks will be visualized to indicate -20, -17, -14 .. 4, 7, 10.
+* __Step__: Indicates the step of the ticks. For instance, if the minimum is "-20" and the maximum is "10", and the step is "3" - ticks will be visualized to indicate -20, -17, -14 .. 4, 7, 10.
 
 * __Stroke__: The stroke brush for the axis.
 

@@ -2,6 +2,7 @@
 title: Iterate Over the Diagram Items
 page_title: Iterate Over the Diagram Items
 description: Check our &quot;Iterate Over the Diagram Items&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-howto-iterate-over-the-diagram-items
 tags: iterate,over,the,diagram,items
 published: True

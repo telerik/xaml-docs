@@ -2,6 +2,7 @@
 title: GifMessage
 page_title: GifMessage
 description: Check our &quot;GifMessage&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-items-gifmessage
 tags: messages,gifmessage
 published: True

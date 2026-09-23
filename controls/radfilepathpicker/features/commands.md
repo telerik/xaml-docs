@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: This article will list the RoutedUICommands that the RadFilePathPicker exposes.
+components: ["filepathpicker"]
 slug: radfilepathpicker-commands
 tags: commands, filepathpicker
 position: 3

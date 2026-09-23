@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadTimeBar {{ site.framework_name }} control.
+components: ["timebar"]
 slug: radtimebar-localization
 tags: localization
 published: True

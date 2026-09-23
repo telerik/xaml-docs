@@ -2,6 +2,7 @@
 title: Properties
 page_title: Properties
 description: Check our &quot;Properties&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
+components: ["timeline"]
 slug: radtimeline-properties
 tags: properties
 published: True

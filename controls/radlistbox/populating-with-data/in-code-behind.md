@@ -2,6 +2,7 @@
 title: In Code Behind
 page_title: In Code Behind
 description: This article demonstrates how to populate the RadListBox with items in code. 
+components: ["listbox"]
 slug: radlistbox-populating-with-data-in-code-behind
 tags: in,code,behind
 published: True

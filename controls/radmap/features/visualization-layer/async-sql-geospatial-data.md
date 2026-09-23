@@ -2,6 +2,7 @@
 title: Async SQL Geospatial Data Reader
 page_title: SQL Geospatial Data Reader
 description: RadMap VisualizationLayer supports async reading from an SQL Geospatial data source via the AsyncSqlGeospatialDataReader class.
+components: ["map"]
 slug: radmap-features-async-sql-geospatial-data
 tags: sql,geospatial,data
 published: True

@@ -2,6 +2,7 @@
 title: Special Slots
 page_title: Special Slots
 description: Check our &quot;Special Slots&quot; documentation article for the RadTimeline {{ site.framework_name }} control.
+components: ["timeline"]
 slug: radtimeline-features-special-slots
 tags: special,slots
 published: True

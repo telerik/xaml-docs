@@ -2,6 +2,7 @@
 title: Current Page
 page_title: Current Page
 description: Check our &quot;Current Page&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
+components: ["datapager"]
 slug: raddatapager-features-current-page
 tags: current,page
 published: True

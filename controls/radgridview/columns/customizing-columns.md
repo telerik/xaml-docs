@@ -2,6 +2,7 @@
 title: Customizing Columns
 page_title: Customizing Columns
 description: Check out how you can customize a column's content, footer and header cells seperately from each other in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-columns-customizing-columns
 tags: customizing,columns
 published: True

@@ -2,6 +2,7 @@
 title: BlackoutDates
 page_title: BlackoutDates
 description: Check our &quot;BlackoutDates&quot; documentation article for the RadCalendar {{ site.framework_name }} control.
+components: ["calendar"]
 slug: radcalendar-features-blackoutdates
 tags: blackoutdates
 published: True

@@ -2,6 +2,7 @@
 title: Upgrade API Analyzer tool
 page_title: How to Use the Upgrade API Analyzer
 description: How to use the Upgrade API Analyzer. 
+components: ["general"]
 slug: upgrade-api-analyzer
 tags: api, analyzer, upgrade
 published: True
@@ -15,6 +16,8 @@ The Upgrade API Analyzer tool allows you compare two Telerik versions and see th
 With every release of Telerik UI for WPF, we try to avoid introducing changes that affect the public API. However, sometimes such changes are needed for the product to evolve. We understand that this could cause issues when you upgrade your app to the latest Telerik release. That is why we have the **Telerik Upgrade API Analyzer**. Its purpose is to make your upgrade process easier by comparing both versions and determining the problematic areas.
 
 Telerik Upgrade API Analyzer could be used when upgrading your desktop application such as WPF or WinForms as well as your Silverlight or ASP.NET Web application.
+
+>tip For an actively developed, command-line alternative, see the [Telerik CLI migrate analyze command]({%slug telerik-cli-migrate-analyzer%}).
 
 ## Why Do You Need This Tool?
            
@@ -35,7 +38,7 @@ In short, the __Telerik Upgrade API Analyzer__ tool will help you with the upgra
 Running the __Telerik Upgrade API Analyzer__ opens the screen shown in __Figure 1__.
 
 #### __Figure 1: Initial screen of  Telerik Upgrade API Analyzer__
-![{{ site.framework_name }} Initial screen of  Telerik Upgrade API Analyzer](images/upgrade-api-analyzer_0.png)
+![Telerik UI for WPF Upgrade API Analyzer initial screen](images/upgrade-api-analyzer_0.png)
 
 All you need to do is:
 
@@ -52,15 +55,15 @@ All you need to do is:
 >tipYou can also run the Telerik Upgrade API Analyzer from the [Upgrade Project Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}), by clicking the *Compatibility* button (see **Figure 2**). In this case, the tool opens with *Technology*, *Your Version* and *Version to Upgrade* parameters pointed out in the wizard. When Upgrade API Analyzer is started directly through the *Compatibility* button without installing the tool first, the installation starts automatically. In case .NET Framework 4.7.2 is not present on your machine, the application prompts you to install it manually at the end of the installation.
 
 #### __Figure 2: Compatibility button in Upgrade Project Wizard__
-![{{ site.framework_name }} Compatibility button in Upgrade Project Wizard](images/upgrade-api-analyzer_5.png)
+![Telerik UI for WPF Upgrade Project Wizard Compatibility button](images/upgrade-api-analyzer_5.png)
 
 The tool starts analyzing the code, as shown in __Figure 3__, and lists all the changes found between both versions, as demonstrated in __Figure 4__. 
 
 #### __Figure 3: The tool starts analyzing as soon as you open a solution__
-![{{ site.framework_name }} The tool starts analyzing as soon as you open a solution](images/upgrade-api-analyzer_1.png)
+![Telerik UI for WPF Upgrade API Analyzer analyzing an opened solution](images/upgrade-api-analyzer_1.png)
 
 #### __Figure 4: Upgrade API Analyzer lists the found differences__
-![{{ site.framework_name }} Upgrade API Analyzer lists the found differences](images/upgrade-api-analyzer_2.png)
+![Telerik UI for WPF Upgrade API Analyzer differences list](images/upgrade-api-analyzer_2.png)
  
 __Upgrade API Analyzer__ provides a detailed list of the found differences between both versions in a convenient way for reviewing.  The tool uses [RadGridView for WPF](https://docs.telerik.com/devtools/wpf/controls/radgridview/overview2.html) to present the results, so you can benefit from its features such as sorting, filtering and resizing columns. 
 
@@ -71,7 +74,7 @@ For each of the changes, you can see the following information:
 By default, the Modified changes are not shown as they actually indicate that there is an internal change in the method/class, which does not affect its function as a whole and does not require any action from your side. Still, you could see the __Modified__ changes by updating the Filter of the __Difference__ column as shown in __Figure 5__.
 
 #### __Figure 5: Displaying all the changes found including the Modified ones.__
-![{{ site.framework_name }} Displaying all the changes found including the Modified ones.](images/upgrade-api-analyzer_3.png)
+![Telerik UI for WPF Upgrade API Analyzer showing all changes including Modified items](images/upgrade-api-analyzer_3.png)
 
 * __Kind__: It could be Type, Property, Method, and Field.
 * __Node__: The name of the Type/Property/Method/Field.
@@ -85,7 +88,7 @@ By default, the Modified changes are not shown as they actually indicate that th
 Additionally, __Upgrade API Analyzer__ provides the option to save the gathered information for a later moment through the __Export button__ in the upper right corner, as shown in __Figure 6__. The data will be arranged and exported to a HTML document. The exported information include the currently visible (filtered) data in the grid. 
 
 #### __Figure 6: API Analyzer provides export to a HTML document__
-![{{ site.framework_name }} API Analyzer provides export to a HTML document](images/upgrade-api-analyzer_4.png)
+![Telerik UI for WPF Upgrade API Analyzer exporting results to an HTML document](images/upgrade-api-analyzer_4.png)
 
 ## Do You Have a Question?
 
@@ -94,3 +97,8 @@ __Upgrade API Analyzer__ is a subject of current and future development and weâ€
 Please send us your comments either through the Feedback link inside __API Analyzer__ or directly at [UpgradeApiAnalyzer@telerik.com](mailto:UpgradeApiAnalyzer@telerik.com).
 
 Additionally, please review the Frequently Asked Questions section in the [API Analyzer Helps Upgrading Telerik Projects](http://www.telerik.com/blogs/api-analyzer-helps-upgrading-telerik-projects) blog post.
+
+## See Also
+
+* [Detecting Breaking Changes with the Telerik CLI migrate Command]({%slug telerik-cli-migrate-analyzer%})
+* [Setup and Installation with Telerik CLI]({%slug telerik-cli%})

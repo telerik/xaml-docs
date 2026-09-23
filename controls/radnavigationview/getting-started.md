@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: This article will walk you through the creation of a sample application that contains a RadNavigationView control.
+components: ["navigationview"]
 slug: radnavigationview-getting-started
 tags: getting,started,navigationviewitem
 position: 2

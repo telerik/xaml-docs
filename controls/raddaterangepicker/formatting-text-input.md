@@ -2,6 +2,7 @@
 title: Text Input Formatting
 page_title: Text Input Formatting
 description: Check our &quot;Text Input Formatting&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-text-input-formatting
 tags: daterangepicker,input,formatting
 published: True

@@ -2,6 +2,7 @@
 title: Customizing Commands
 page_title: Customizing Commands
 description: Check our &quot;Customizing Commands&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddataform-customize-commands
 tags: customizing,commands
 published: True

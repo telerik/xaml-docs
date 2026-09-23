@@ -2,6 +2,7 @@
 title: Unbound Mode
 page_title: Unbound Mode
 description: Check our &quot;Unbound Mode&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: raddatafilter-features-unbound-mode
 tags: unbound,mode
 published: True

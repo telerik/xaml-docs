@@ -1,6 +1,7 @@
 ---
 title: Get Clicked Data Point in RadChartView 
 description: Click data point visual in RadCartesianChart BarSeries.
+components: ["chartview"]
 page_title: Execute action on mouse down on chart data point element 
 type: how-to
 slug: kb-chartview-howto-get-clicked-data-point

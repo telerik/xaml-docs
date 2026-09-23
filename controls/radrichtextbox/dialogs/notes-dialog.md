@@ -2,6 +2,7 @@
 title: Footnote and Endnote
 page_title: Notes Dialog
 description: Check our &quot;Notes Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-footnotes-endnotes
 tags: footenotes,endnotes
 published: True

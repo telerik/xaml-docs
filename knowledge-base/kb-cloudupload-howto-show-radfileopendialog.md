@@ -1,6 +1,7 @@
 ---
 title: Open a RadOpenFileDialog when Using the RadCloudUpload
 description: Replace the Default OpenFileDialog when Browsing Files.
+components: ["cloudupload"]
 type: how-to
 page_title: Use a RadOpenFileDialog to Select the Files to be Uploaded
 slug: kb-cloudupload-howto-show-radfileopendialog
@@ -65,5 +66,5 @@ Handle the __AddingFiles__ event of the RadCloudUpload control, cancel the creat
 
 ## See Also
 
-* [RadCloudUpload Eventts]({%slug radcloudupload-features-events%})
+* [RadCloudUpload Events]({%slug radcloudupload-features-events%})
 * [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%})

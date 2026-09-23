@@ -2,6 +2,7 @@
 title: RadDocument
 page_title: RadDocument
 description: Check our &quot;RadDocument&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-raddocument
 tags: raddocument
 published: True

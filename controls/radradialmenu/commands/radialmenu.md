@@ -2,6 +2,7 @@
 title: RadialMenu Commands
 page_title: RadialMenu Commands
 description: Check our &quot;RadialMenu Commands&quot; documentation article for the RadRadialMenu {{ site.framework_name }} control.
+components: ["radialmenu"]
 slug: radradialmenu-commands-radialmenu
 tags: radialmenu,commands
 published: True

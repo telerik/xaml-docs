@@ -1,6 +1,7 @@
 ---
 title: Create Multi-Select GridViewComboBoxColumn
 description: How to add a column with a RadComboBox editor which supports multiple selection.
+components: ["gridview"]
 type: howto
 page_title: Multiselection ComboBox column for RadGridView
 slug: kb-gridview-howto-create-multiselection-combobox-column

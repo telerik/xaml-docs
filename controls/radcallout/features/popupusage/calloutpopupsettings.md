@@ -2,6 +2,7 @@
 title: CalloutPopupSettings
 page_title: CalloutPopupSettings
 description: Check our &quot;Overview&quot; documentation article for the RadCallout {{ site.framework_name }} control.
+components: ["callout"]
 slug: radcallout-features-calloutpopupsettings
 tags: calloutpopupsettings
 published: True

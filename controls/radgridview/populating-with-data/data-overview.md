@@ -2,6 +2,7 @@
 title: Overview
 page_title: Populating with Data
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about all ways that can be used to populate the grid with data. 
+components: ["gridview"]
 slug: gridview-data-overview
 tags: overview
 published: True

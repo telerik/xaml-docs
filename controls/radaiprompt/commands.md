@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: Check our &quot;Commands&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: radaiprompt-commands
 tags: commands, radaiprompt
 published: True
@@ -67,6 +68,6 @@ __RadAIPrompt with grouped commands__
 ## See Also
 * [Views]({%slug radaiprompt-views%})
 * [Events]({%slug radaiprompt-events%})
-* [RadAIPromptButon]({%slug radaiprompt-prompt-button%})
+* [RadAIPromptButton]({%slug radaiprompt-prompt-button%})
 * [Suggestions]({%slug radaiprompt-suggestions%})
 * [Paging]({%slug radaiprompt-paging%})

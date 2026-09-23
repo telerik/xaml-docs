@@ -2,6 +2,7 @@
 title: Drag and Drop with RadScheduleView
 page_title: Drag and Drop with RadScheduleView
 description: Check our &quot;Drag and Drop with RadScheduleView&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-dragdrop-radscheduleview
 tags: drag,and,drop,with,radscheduleview
 published: True

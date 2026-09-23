@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadStepProgressBar {{ site.framework_name }} control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-overview
 tags: overview
 published: True

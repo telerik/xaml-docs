@@ -2,6 +2,7 @@
 title: How to Enter Only Positive Numbers
 page_title: How to Enter Only Positive Numbers
 description: Check our &quot;How to Enter Only Positive Numbers&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-howto-enter-positive-values
 tags: how,to,enter,only,positive,numbers
 published: True

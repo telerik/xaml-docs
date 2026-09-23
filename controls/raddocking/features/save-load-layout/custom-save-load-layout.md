@@ -2,6 +2,7 @@
 title: Save/Load Layout Events
 page_title: Save/Load Layout Events
 description: Custom Save/Load Layout.
+components: ["docking"]
 slug: raddocking-features-custom-save-load-layout
 tags: save/load,layout,custom
 published: True

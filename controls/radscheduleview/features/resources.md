@@ -2,6 +2,7 @@
 title: Resources
 page_title: Resources
 description: Check our &quot;Resources&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-resources
 tags: resources
 published: True

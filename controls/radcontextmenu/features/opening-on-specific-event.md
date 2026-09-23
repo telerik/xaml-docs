@@ -2,6 +2,7 @@
 title: Opening on a Specific Event
 page_title: Opening on a Specific Event
 description: Check our &quot;Opening on a Specific Event&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-features-opening-on-specific-event
 tags: opening,on,a,specific,event
 published: True

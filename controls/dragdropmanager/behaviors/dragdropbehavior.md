@@ -2,6 +2,7 @@
 title: DragDropBehavior
 page_title: DragDropBehavior
 description: Check our &quot;DragDropBehavior&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
+components: ["dragdropmanager"]
 slug: dragdropmanager-behaviors-dragdropbehavior
 tags: dragdropbehavior
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the TouchManager {{ site.framework_name }} control.
+components: ["touchmanager"]
 slug: touchmanager-overview
 tags: overview,touch,manager,touchmanager
 published: True

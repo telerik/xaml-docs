@@ -2,6 +2,7 @@
 title: Implement custom commands for MapCommandBar UI
 page_title: Implement custom commands for MapCommandBar UI
 description: Check our &quot;Implement custom commands for MapCommandBar UI&quot; documentation article for the RadMap control.
+components: ["map"]
 slug: radmap-howto-customize-commands
 tags: implement,custom,commands,for,mapcommandbar,ui
 published: True

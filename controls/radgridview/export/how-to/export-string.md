@@ -2,6 +2,7 @@
 title: Export String Value
 page_title: Export String Value
 description: Read this article to learn how to export string values to Excel from RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-export-troubleshooting-export-string
 tags: export,string,value
 published: True

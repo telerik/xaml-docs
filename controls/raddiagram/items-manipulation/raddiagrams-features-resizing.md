@@ -2,6 +2,7 @@
 title: Resizing
 page_title: Resizing
 description: Check our &quot;Resizing&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-resizing
 tags: resizing
 published: True

@@ -2,6 +2,7 @@
 title: Templating the GroupHeaders
 page_title: Templating the GroupHeaders
 description: Check our &quot;Templating the GroupHeaders&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-styles-and-templates-templating-groupheaders
 tags: templating,the,groupheaders
 published: True

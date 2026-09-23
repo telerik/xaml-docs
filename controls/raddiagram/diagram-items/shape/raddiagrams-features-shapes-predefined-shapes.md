@@ -2,6 +2,7 @@
 title: Predefined Shape Geometries
 page_title: Predefined Shape Geometries
 description: Telerik RadDiagram for {{ site.framework_name }} Predefined Shape Geometries.
+components: ["diagram"]
 slug: raddiagrams-features-shapes-predefined-shapes
 tags: shapes,predefined,geometry,shapefactory
 published: True

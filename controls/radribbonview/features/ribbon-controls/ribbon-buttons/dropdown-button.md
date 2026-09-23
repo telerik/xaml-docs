@@ -2,6 +2,7 @@
 title: Ribbon DropDownButton
 page_title: Ribbon DropDownButton
 description: Check our &quot;Ribbon DropDownButton&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-dropdown-button
 tags: ribbon,dropdownbutton
 published: True

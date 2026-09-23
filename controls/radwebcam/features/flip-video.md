@@ -2,6 +2,7 @@
 title: Video Flip
 page_title: Video Flip
 description: This article shows how to flip the video using the FlipHorizontally and FlipVertically properties of RadWebCam.
+components: ["webcam"]
 slug: radwebcam-features-video-flip
 tags: vertical,horizontal,flip
 published: True

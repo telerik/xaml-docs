@@ -2,6 +2,7 @@
 title: Https Support
 page_title: Https Support
 description: Use ProtocolHelper.UseHttps in order to enable HTTPS requests to tile image providers.
+components: ["map"]
 slug: radmap-providers-https-support
 tags: providers,overview,cache,caching,https
 published: True

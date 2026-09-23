@@ -2,6 +2,7 @@
 title: How to Auto Size the Tab Items From TabbedWindow
 page_title: How to Set Auto Width to RadTabbedWindow TabItem Headers
 description: How to auto size the tab headers of RadTabbedWindow using TabStripPanel.
+components: ["tabbedwindow"]
 type: how-to
 slug: kb-tabbedwindow-auto-size-tab-headers
 position: 0
@@ -30,7 +31,7 @@ How to auto size the RadTabItem headers in RadTabbedWindow, instead of showing a
 
 ## Solution
 
-Change the the default ItemsPanel of RadTabbedWindow to __TabStripPanel__. You can do this in the Loaded event handler of RadTabbedWindow.
+Change the default ItemsPanel of RadTabbedWindow to __TabStripPanel__. You can do this in the Loaded event handler of RadTabbedWindow.
 
 
 ```XAML

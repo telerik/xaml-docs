@@ -2,6 +2,7 @@
 title: Styling the MapCommandBar
 page_title: Styling the MapCommandBar
 description: Check our &quot;Styling the MapCommandBar&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-styles-and-templates-styling-the-mapcommandbar
 tags: styling,the,mapcommandbar
 published: True

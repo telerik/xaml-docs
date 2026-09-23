@@ -1,6 +1,7 @@
 ---
 title: Adding Custom Icon Marker on Click in RadMap with VisualizationLayer
 description: Add custom visual element on the clicked location in RadMap via VisualizationLayer and handling the MapMouseClick event.
+components: ["map"]
 type: how-to
 page_title: Show Custom Pin in VisualizationLayer on the Click Point in RadMap WPF
 slug: kb-map-add-icon-on-map-click

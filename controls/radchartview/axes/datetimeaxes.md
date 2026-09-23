@@ -2,6 +2,7 @@
 title: Date Time Axes
 page_title: Date Time Axes
 description: Check our &quot;Date Time Axes&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-datetimeaxes
 tags: date,time,axes
 published: True
@@ -55,7 +56,7 @@ __Example 3: Creating the businesses object__
 <snippet id='radchartview-axes-datetimeaxes-example_3_creating_the_businesses_object-vb' />
 
 
-![{{ site.framework_name }} RadChartView with Horizontal DateTime Continuous Axis](images/radchartview-chart_datetime_continuous_axis.png)
+![Telerik UI for WPF RadChartView with a Horizontal DateTime Continuous Axis](images/radchartview-chart_datetime_continuous_axis.png)
 
 ## Date Time Categorical Axis
 
@@ -70,7 +71,7 @@ __Example 4: Setting the DateTimeCategoricalAxis axes__
 <snippet id='radchartview-axes-datetimeaxes-example_4_setting_the_datetimecategoricalaxis_axes-xaml' />
 
 
-![{{ site.framework_name }} RadChartView with Horizontal DateTime Categorical Axis](images/radchartview-chart_datetime_categorical_axis.png)
+![Telerik UI for WPF RadChartView with a Horizontal DateTime Categorical Axis](images/radchartview-chart_datetime_categorical_axis.png)
 
 ### See also
 

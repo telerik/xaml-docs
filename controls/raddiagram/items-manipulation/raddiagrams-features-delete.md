@@ -2,6 +2,7 @@
 title: Removing Items
 page_title: Removing Items
 description: Check our &quot;Removing Items&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-delete
 tags: removing,items
 published: True

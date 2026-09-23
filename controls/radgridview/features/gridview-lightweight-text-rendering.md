@@ -2,6 +2,7 @@
 title: Lightweight Text Rendering
 page_title: Lightweight Text Rendering
 description: This article will provide information about the lightweight text rendering functionality of Telerik UI for WPF RadGridView.
+components: ["gridview"]
 slug: gridview-lightweight-text-rendering
 tags: gridview, lightweight, render, text render, cell text
 published: True

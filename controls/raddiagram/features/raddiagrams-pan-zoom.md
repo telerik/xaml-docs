@@ -2,6 +2,7 @@
 title: Pan and Zoom
 page_title: Pan and Zoom
 description: Check our &quot;Pan and Zoom&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-pan-zoom
 tags: pan,and,zoom
 published: True

@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: This article lists the main properties exposed by the RadDesktopAlert control.
+components: ["desktopalert"]
 slug: raddesktopalert-features-key-properties
 tags: properties,features,key,properties
 published: True

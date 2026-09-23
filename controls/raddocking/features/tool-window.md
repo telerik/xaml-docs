@@ -2,6 +2,7 @@
 title: Tool Window
 page_title: Tool Window
 description: Check our &quot;Tool Window&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-tool-window
 tags: tool,window
 published: True

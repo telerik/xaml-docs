@@ -7,6 +7,7 @@ position: 0
 tags: radgridview, highlighted background, cell background, cell, search, highlighted foreground
 ticketid: 1560393
 res_type: kb
+components: ["gridview"]
 ---
 
 ## Environment

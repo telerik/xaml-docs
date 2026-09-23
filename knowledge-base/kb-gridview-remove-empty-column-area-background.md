@@ -1,6 +1,7 @@
 ---
 title: Remove the Empty Column Space Background Color After the Last RadGridView column
 description: How to change the background color of the empty space to the right of the last column in a RadGridView for WPF.
+components: ["gridview"]
 type: how-to
 page_title: How to Set the Fill of the Empty Cells Shown After Last Column in RadGridView
 slug: kb-gridview-remove-empty-column-area-background

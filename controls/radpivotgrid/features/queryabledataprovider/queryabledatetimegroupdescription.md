@@ -2,6 +2,7 @@
 title: QueryableDateTimeGroupDescription
 page_title: QueryableDateTimeGroupDescription
 description: This article will describe the QueryableDateTimeGroupDescription class.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-queryabledatetimegroupdescription
 tags: queryabledatetimegroupdescription
 published: True

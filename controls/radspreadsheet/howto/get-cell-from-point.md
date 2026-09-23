@@ -2,6 +2,7 @@
 title: Get Cell from Point
 page_title:  Get Cell from Point
 description:  Get Cell from Point.
+components: ["spreadsheet"]
 slug: radspreadsheet-get-cell-from-point
 tags: cell, point, location
 published: True

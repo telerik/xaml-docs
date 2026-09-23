@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Check our &quot;Localization&quot; documentation article for the RadDataPager {{ site.framework_name }} control.
+components: ["datapager"]
 slug: raddatapager-localization
 tags: localization
 published: True

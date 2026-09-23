@@ -2,6 +2,7 @@
 title: RadContextMenu Usage
 page_title: RadContextMenu Usage
 description: Check our &quot;RadContextMenu Usage&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-features-working-with-radcontext-menu
 tags: radcontextmenu,usage
 published: True

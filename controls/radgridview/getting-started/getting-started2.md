@@ -1,7 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started
-description: Check out our tutorial that will walk you through the creation of a sample application containing RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+page_title: RadGridView Getting Started
+description: Create a sample Telerik {{ site.framework_name }} RadGridView application, bind data, define columns, and verify the grid setup.
+components: ["gridview"]
 slug: gridview-getting-started2
 tags: getting,started
 published: True

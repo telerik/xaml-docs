@@ -2,6 +2,7 @@
 title: Styling the MapScale
 page_title: Styling the MapScale
 description: Check our &quot;Styling the MapScale&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-styles-and-templates-styling-the-mapscale
 tags: styling,the,mapscale
 published: True

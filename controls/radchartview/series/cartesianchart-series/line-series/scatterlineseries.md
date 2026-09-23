@@ -2,6 +2,7 @@
 title: ScatterLineSeries
 page_title: ScatterLineSeries
 description: Check our &quot;ScatterLineSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-scatterlineseries
 tags: scatterlineseries
 published: True
@@ -26,7 +27,7 @@ __Example 1: Declaring a ScatterLineSeries in XAML__
 
 
 #### __Figure 1: ScatterLineSeries visual appearance__
-![radchartview-series-scatterlineseries](images/radchartview-series-scatterlineseries.png)
+![Telerik UI for WPF RadChartView ScatterLineSeries visual appearance](images/radchartview-series-scatterlineseries.png)
 
 ## Properties
 

@@ -2,6 +2,7 @@
 title: Insert Caption Dialog
 page_title: Insert Caption Dialog
 description: Check our &quot;Insert Caption Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-insert-captions
 tags: link,insert
 published: True

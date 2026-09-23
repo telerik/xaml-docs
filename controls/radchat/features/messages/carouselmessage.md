@@ -2,6 +2,7 @@
 title: CarouselMessage
 page_title: CarouselMessage
 description: Check our &quot;CarouselMessage&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-items-carouselmessage
 tags: messages,carouselmessage
 published: True

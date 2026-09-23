@@ -2,6 +2,7 @@
 title: Image Export
 page_title: Image Export
 description: Check our &quot;Image Export&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-features-image-export
 tags: image,export
 published: True

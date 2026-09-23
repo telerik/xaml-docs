@@ -2,6 +2,7 @@
 title: Navigation Options
 page_title: Navigation Options
 description: Check our &quot;Navigation Options&quot; documentation article for the RadOfficeNavigationBar control.
+components: ["officenavigationbar"]
 slug: radofficenavigationbar-navigation-options
 tags: navigation, options, radofficenavigationbar
 published: True

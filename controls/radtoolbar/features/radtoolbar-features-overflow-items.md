@@ -2,6 +2,7 @@
 title: Overflow Items
 page_title: Overflow Items
 description: The RadToolBar control automatically hides part of its items in the overflow area if there is not enough space to display all.
+components: ["toolbar"]
 slug: radtoolbar-features-overflow-items
 tags: overflowmode, autohide, events
 published: True

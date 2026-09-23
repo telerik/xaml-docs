@@ -2,6 +2,7 @@
 title: ArcGIS Online Map Provider
 page_title: ArcGIS Online Map Provider
 description: Check our &quot;ArcGIS Online Map Provider&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-providers-arcgis
 tags: arcgis,online,map,provider
 published: True

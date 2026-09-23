@@ -1,6 +1,7 @@
 ---
 title: How to center labels in RadPivotMap
 description: Align RadTreeMapItem labels towards the center.
+components: ["treemapandpivotmap"]
 type: how-to
 page_title: Position the labels of RadTreeMapItems without children in the center 
 slug: kb-pivotmap-howto-center-labels
@@ -108,7 +109,7 @@ __Example 1: Modifying the RadTreeMapItem ControlTemplate in the Office_Black th
     </Style>
 ``` 
 
->If you are using a different theme, make sure to exract and edit the ControlTemplate for the corresponding theme. 
+>If you are using a different theme, make sure to extract and edit the ControlTemplate for the corresponding theme. 
 
 ## See Also
 

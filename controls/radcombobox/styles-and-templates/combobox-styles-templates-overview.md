@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance
 description: This article points to the RadComboBox API that can be used to customize its appearance using styles and templates.
+components: ["combobox"]
 slug: combobox-styles-templates-overview
 tags: textboxstyle,selectionboxtemplate
 published: True

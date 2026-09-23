@@ -2,6 +2,7 @@
 title: Colorizers
 page_title: Colorizers
 description: Check our &quot;Colorizers&quot; documentation article for the RadTreeMap {{ site.framework_name }} control.
+components: ["treemapandpivotmap"]
 slug: radtreemap-colorizers
 tags: colorizers
 published: True

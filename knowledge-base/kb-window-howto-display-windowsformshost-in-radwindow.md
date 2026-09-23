@@ -1,6 +1,7 @@
 ---
 title: WindowsFormsHost inside RadWindow is not visible
 description: Example showing how to host WindowsFormsHost control in RadWindow.
+components: ["window"]
 type: how-to
 page_title: How to Display WinForms controls in RadWindow
 slug: kb-window-howto-display-windowsformshost-in-radwindow

@@ -2,6 +2,7 @@
 title: Connections
 page_title: Connections
 description: This article describes the connection item of the RadDiagram Framework.
+components: ["diagram"]
 slug: raddiagrams-features-connections
 tags: connections
 published: True

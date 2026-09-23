@@ -1,6 +1,7 @@
 ---
 title: Set StaysOpen Property to False of Parent Popup of FilteringControl
 description: How to set StaysOpen property of FilteringControl's parent Popup to False.
+components: ["virtualgrid"]
 page_title: Set FilteringControl Parent Popup StaysOpen Property
 type: how-to
 slug: kb-virtualgrid-filteringcontrol-parent-popup-staysopen

@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping
 description: This article demonstrates the Grouping feature of the RadTimeline in an MVVM scenario. 
+components: ["timeline"]
 slug: radtimeline-features-grouping
 tags: grouping
 published: True

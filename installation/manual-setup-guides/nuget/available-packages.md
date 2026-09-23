@@ -2,6 +2,7 @@
 title: Available NuGet Packages
 page_title: Available NuGet Packages
 description: "Telerik UI for WPF provides a set of NuGet packages targeting different .NET versions."
+components: ["general"]
 slug: nuget-available-packages
 tags: available,packages,noxaml,xaml
 position: 0
@@ -18,8 +19,6 @@ The Telerik dlls are built against different versions of .NET starting from .NET
 The packages can be installed from the [Telerik NuGet server]({%slug nuget-package-source-setup%}) or downloaded as `.nupkg` files, which you can use to [configure a local NuGet package source]({%slug nuget-package-source-setup%}). These two different options contain a slightly different set of packages. This article aims to list and describe the packages.
 	
 ## Telerik NuGet Server Packages
-
->important Starting with the **Q3 2026** release, all Telerik UI for WPF NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you will not need to configure the Telerik NuGet server.
 
 There is a [configured Telerik NuGet feed]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to the [locally hosted NuGet packages](#nuget-local-packages).
 

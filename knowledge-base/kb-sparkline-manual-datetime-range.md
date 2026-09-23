@@ -1,6 +1,7 @@
 ---
 title: Set MinXValue and MaxXValue When DateTime Values are Used in RadSparkline
 description: Define minimum and maximum values for the sparkline horizontal axis when DateTime values are added in the control.
+components: ["sparkline"]
 page_title: Set Manual Range When Date Time Data is Plotted on the Sparkline
 type: how-to
 slug: kb-sparkline-manual-datetime-range
@@ -26,7 +27,7 @@ res_type: kb
 
 ## Description
 
-How to set the minimum (MinXValue) and maximum (MaxXValue) when DateTime values are plotted on the horizonal axis.
+How to set the minimum (MinXValue) and maximum (MaxXValue) when DateTime values are plotted on the horizontal axis.
 
 ## Solution
 

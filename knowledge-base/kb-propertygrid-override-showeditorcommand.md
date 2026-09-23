@@ -2,6 +2,7 @@
 title: Override the ShowEditorCommand of RadPropertyGrid
 page_title: Override the Show Modal Dialog Action of PropertyGrid
 description: Replace the show editor action executed when the modal editor of the PropertyGrid is used.
+components: ["propertygrid"]
 type: how-to
 slug: kb-propertygrid-override-showeditorcommand
 position: 0

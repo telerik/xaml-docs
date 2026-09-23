@@ -2,6 +2,7 @@
 title: Formatting
 page_title: Formatting
 description: Check our &quot;Formatting&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-features-formatting
 tags: formatting
 published: True

@@ -2,6 +2,7 @@
 title: Zooming
 page_title: Zooming
 description: This article provides information regarding the zooming functionality of the RadGridView control.
+components: ["gridview"]
 slug: radgridview-zooming
 tags: radgridview, zooming, zoom
 published: True

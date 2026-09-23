@@ -1,6 +1,7 @@
 ---
 title: Replace the RadGridView element in the dropdown
 description: Use a RadTreeView instead of a RadGridView in the RadMultiColumnComboBox dropdown.
+components: ["multicolumncombobox"]
 type: how-to
 page_title: Switch the RadGridView element inside the popup for a RadTreeView.
 slug: kb-multicolumncombobox-howto-replace-gridview-in-dropdown
@@ -27,7 +28,7 @@ Replace the RadGridView in the dropdown popup of the RadMultiColumnComboBox.
 
 1. Create a class inheriting [DropDownContentManager](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.multicolumncombobox.dropdowncontentmanager) and implement the necessary methods. This class provides interaction with the DropDown element of the RadMultiColumnComboBox.
 
-2. Create a class inheriting [SelectionBridge](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.multicolumncombobox.selectionbridge). This class is reponsible for synchronizing the selection between the dropdown element and the RadMultiColumnComboBox. Return an instance of this class in the __InitializeSelectionBridge__ method of the DropDownContentManager. 
+2. Create a class inheriting [SelectionBridge](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.multicolumncombobox.selectionbridge). This class is responsible for synchronizing the selection between the dropdown element and the RadMultiColumnComboBox. Return an instance of this class in the __InitializeSelectionBridge__ method of the DropDownContentManager. 
 
 3. Create a class inheriting [ItemsSourceProvider](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.multicolumncombobox.itemssourceprovider). This class is responsible for providing the ItemsSource to the element inside the dropdown along with any other relevant properties. 
 

@@ -2,6 +2,7 @@
 title: Balloon Notifications
 page_title: Balloon Notifications
 description: This article allows demonstrates how to display a balloon notification via the API exposed by the RadNotifyIcon.
+components: ["notifyicon"]
 slug: radnotifyicon-balloon-notifications
 tags: balloon, notifications, notifyicon
 position: 4

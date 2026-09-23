@@ -2,6 +2,7 @@
 title: Captions for Tables and Figures
 page_title: Captions for Tables and Figures
 description: Check our &quot;Captions for Tables and Figures&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-captions-for-tables-and-figures
 tags: captions,for,tables,and,figures
 published: True

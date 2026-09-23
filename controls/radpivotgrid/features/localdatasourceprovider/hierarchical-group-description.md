@@ -2,6 +2,7 @@
 title: Enable Hierarchical Property Paths
 page_title: Enable Hierarchical Property Paths - Features
 description: Check our &quot;Enable Hierarchical Property Paths&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-localdatasourceprovider-hierarchy-0
 tags: hierarchy,nested,chained,properties,path
 published: True

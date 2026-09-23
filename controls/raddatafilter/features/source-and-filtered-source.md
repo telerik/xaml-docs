@@ -2,6 +2,7 @@
 title: Source and Filtered Source
 page_title: Source and Filtered Source
 description: Check our &quot;Source and Filtered Source&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: raddatafilter-features-source-and-filtered-source
 tags: source,and,filtered,source
 published: True

@@ -2,6 +2,7 @@
 title: Prerequisites
 page_title: Prerequisites
 description: Check our &quot;Prerequisites&quot; documentation article for the RadEntityFrameworkDataSource {{ site.framework_name }} control.
+components: ["entityframeworkdatasource"]
 slug: entityframework-prerequisites
 tags: prerequisites
 published: True

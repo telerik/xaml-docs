@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: The article describes the Keyboard Support feature of RadNavigationView.
+components: ["navigationview"]
 slug: radnavigationview-features-keyboard-support
 tags: keyboard, support, shortcut
 position: 4

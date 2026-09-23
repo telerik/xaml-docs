@@ -2,6 +2,7 @@
 title: Styling the MapMouseLocationIndicator
 page_title: Styling the MapMouseLocationIndicator
 description: Check our &quot;Styling the MapMouseLocationIndicator&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-styles-and-templates-styling-the-mapmouselocationindicator
 tags: styling,the,mapmouselocationindicator
 published: True

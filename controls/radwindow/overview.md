@@ -2,6 +2,7 @@
 title: Overview
 page_title: RadWindow Overview
 description: Learn what Telerik UI for WPF RadWindow does, when to use it, and which RadWindow features to explore first.
+components: ["window"]
 slug: radwindow-overview
 tags: overview
 published: True

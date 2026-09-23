@@ -2,6 +2,7 @@
 title: Moving
 page_title: Moving
 description: Check our &quot;Moving&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
+components: ["desktopalert"]
 slug: raddesktopalert-moving
 tags: moving
 published: True

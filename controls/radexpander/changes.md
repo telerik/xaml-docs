@@ -2,6 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: Check our &quot;Breaking&quot; documentation article for the RadExpander WPF control.
+components: ["expander"]
 slug: radexpander-changes
 tags: changes, breaking changes
 published: True

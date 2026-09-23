@@ -1,6 +1,7 @@
 ---
 title: FontSize of RadRichTextBox not Respected
 description: This article explains what you need to do for RadRichTextBox to respect its FontSize setting.
+components: ["richtextbox"]
 type: troubleshooting
 page_title: The Size of the Text of the RadRichTextBox cannot Be Changed
 slug: kb-richtextbox-fontsize-not-respected

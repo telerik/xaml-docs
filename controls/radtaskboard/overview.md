@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadTaskBoard {{ site.framework_name }} control.
+components: ["taskboard"]
 slug: radtaskboard-overview
 tags: overview
 published: True

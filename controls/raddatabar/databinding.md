@@ -2,6 +2,7 @@
 title: DataBinding
 page_title: DataBinding
 description: Check our &quot;DataBinding&quot; documentation article for the RadDataBar {{ site.framework_name }} control.
+components: ["databar"]
 slug: raddatabar-databinding
 tags: databinding
 published: True

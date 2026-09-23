@@ -2,6 +2,7 @@
 title: Map Shapes Virtualization
 page_title: Map Shapes Virtualization
 description: Check our &quot;Map Shapes Virtualization&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-visualization-layer-shapes-virtualization
 tags: map,shapes,virtualization
 published: True

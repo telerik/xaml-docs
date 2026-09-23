@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance
 description: Check our &quot;Customizing Appearance&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-customizing-appearance
 tags: daterangepicker,input,customizing,styles,templates
 published: True

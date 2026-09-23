@@ -2,6 +2,7 @@
 title: Modal Editor
 page_title: Modal Editor
 description: Check our &quot;Modal Editor&quot; documentation article for the RadPropertyGrid WPF control.
+components: ["propertygrid"]
 slug: radpropertygrid-features-modal-editor
 tags: propertygrid, editor, modal editor
 published: True

@@ -2,6 +2,7 @@
 title: Binding to Dynamic Data
 page_title: Binding to Dynamic Data
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to bind the control to different types of dynamic data.
+components: ["gridview"]
 slug: gridview-binding-dynamic-data
 tags: binding,dynamic,data
 published: True

@@ -2,6 +2,7 @@
 title: View Specific Properties
 page_title: View Specific Properties
 description: This article lists and explains the properties which are specific for a particular ViewDefinition.
+components: ["scheduleview"]
 slug: radscheduleview-viewdefinitions-specificproperties
 tags: view,specific,properties
 published: True

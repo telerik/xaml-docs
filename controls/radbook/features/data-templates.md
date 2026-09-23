@@ -2,6 +2,7 @@
 title: Data Binding and Data Templates
 page_title: Data Binding and Data Templates
 description: Check our &quot;Data Binding and Data Templates&quot; documentation article for the RadBook {{ site.framework_name }} control.
+components: ["book"]
 slug: radbook-data-templates
 tags: data,binding,and,data,templates
 published: True

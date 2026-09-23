@@ -2,6 +2,7 @@
 title: Frequently Asked Questions
 page_title: Installing License Key - Frequently Asked Questions
 description: The article lists the frequently asked questions (FAQ) on how to install a license key for the Telerik UI for WPF product.
+components: ["general"]
 slug: license-frequently-asked-questions
 tags: installing,ui,for,wpf,file,license,key,ci,service,faq,asked,questions
 published: True

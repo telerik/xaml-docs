@@ -2,6 +2,7 @@
 title: Ticks and Tick frequency
 page_title: Ticks and Tick frequency
 description: Check our &quot;Ticks and Tick frequency&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+components: ["slider"]
 slug: radslider-ticks-and-tick-frequency
 tags: ticks,and,tick,frequency
 published: True

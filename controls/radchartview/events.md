@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article lists the events exposed by the controls in the RadChartView suite.
+components: ["chartview"]
 slug: radchartview-events
 tags: events
 publish: True

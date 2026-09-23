@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article lists and explains the events exposed by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-events
 tags: events,radsyntaxeditor
 position: 3

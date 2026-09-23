@@ -2,6 +2,7 @@
 title: Bookmarks (Outlines)
 page_title: Bookmarks (Outlines)
 description: Check our &quot;Bookmarks (Outlines)&quot; documentation article for the RadPdfViewer WPF control.
+components: ["pdfviewer"]
 slug: radpdfviewer-features-bookmarks
 tags: bookmarks, outlines
 published: True

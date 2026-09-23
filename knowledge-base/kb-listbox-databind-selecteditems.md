@@ -1,6 +1,7 @@
 ---
 title: Data Binding RadListBox SelectedItems Property
 description: How to data bind the SeletedItems of RadListBox to a view model collection.
+components: ["listbox"]
 type: how-to
 page_title: How to Data Bind the SelectedItemsSource collection of Telerik ListBox
 slug: kb-listbox-databind-selecteditems

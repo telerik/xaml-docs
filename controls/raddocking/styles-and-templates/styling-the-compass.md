@@ -2,6 +2,7 @@
 title: Styling the Compass
 page_title: Styling the Compass
 description: This article describes how the Compass control can be styled. 
+components: ["docking"]
 slug: raddocking-styling-the-compass
 tags: styling,the,compass
 published: True

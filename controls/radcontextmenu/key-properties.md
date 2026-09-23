@@ -2,6 +2,7 @@
 title: Key Properties
 page_title: Key Properties
 description: Check our &quot;Key Properties&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-key-properties
 tags: key,properties
 published: True

@@ -2,6 +2,7 @@
 title: Filtering through RadGridView
 page_title: Filtering through RadGridView
 description: Check our &quot;Filtering through RadGridView&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-filtering-filtering-through-radgridview
 tags: filtering,through,radgridview
 published: True

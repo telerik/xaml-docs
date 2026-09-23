@@ -2,6 +2,7 @@
 title: Suggested Actions Menu
 page_title: Suggested Actions
 description: Suggested Actions give you access to common properties of a control selected within the WPF XAML Designer.
+components: ["general"]
 slug: netcore-suggested-actions
 tags: smart, tags
 published: True

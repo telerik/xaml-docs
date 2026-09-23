@@ -2,6 +2,7 @@
 title: Switching Icons at Runtime
 page_title: Switching Icons at Runtime
 description: This article explains how to switch the icon set during runtime to go with the look and feel of your application.
+components: ["general"]
 slug: styling-apperance-switching-icons-at-runtime
 tags: switching,themes,icons,at,runtime
 published: True
@@ -30,7 +31,7 @@ __Example 1: Creating IconSources__
 ```
 
 
->__IconsSources__ resides in the __Telerik.Windows.Controls.dll__, so you need to add a reference to the assembly  to your project first.
+>__IconSources__ resides in the __Telerik.Windows.Controls.dll__, so you need to add a reference to the assembly  to your project first.
 
 
 __IconSources__ has three distinct properties to which you can assign base paths for your images.
@@ -69,7 +70,7 @@ Presuming there is an image with file name *background.png* in the *Icons/Light/
 
 #### __Figure 1: ImageSource Set by IconResource__ 
 
-![ImageSource Set by IconResource](images/Switching_Icons_Runtime_01.png)
+![Telerik UI for WPF icon resource assigned to an ImageSource](images/Switching_Icons_Runtime_01.png)
 
 
 Changing the image is achieved by calling the static __ChangeIconsSet()__ method of __IconSources__.
@@ -93,7 +94,7 @@ __Figure 2__ shows the result after the code in __Example 4__ is executed.
 
 #### __Figure 2: Image After Changing the IconSet__
 
-![Image After Changing the IconSet](images/Switching_Icons_Runtime_02.png)
+![Telerik UI for WPF control after changing its icon set](images/Switching_Icons_Runtime_02.png)
 
 
 >tip You can find the complete code of the previous example in our online [Telerik XAML SDK Common samples repository](https://github.com/telerik/xaml-sdk/tree/master/Common).
@@ -131,7 +132,7 @@ Both __IconSource__ resources defined in the article are in the same view pointi
 
 #### __Figure 3: ImageSource Set to RadPdfViewer Icon__
 
-![ImageSource Set to RadPdfViewer Icon](images/Switching_Icons_Runtime_03.png)
+![Telerik UI for WPF RadPdfViewer icon assigned to an ImageSource](images/Switching_Icons_Runtime_03.png)
 
 
 Changing the icon set used in the application with the code from __Example 4__ will change it for both images, regardless of the fact that they use separate base paths. The result is demonstrated on __Figure 4__.
@@ -139,7 +140,7 @@ Changing the icon set used in the application with the code from __Example 4__ w
 
 #### __Figure 4: Images After Changing the IconSet__
 
-![Images After Changing the IconSet](images/Switching_Icons_Runtime_04.png)
+![Telerik UI for WPF controls after changing their icon set](images/Switching_Icons_Runtime_04.png)
 
 
 >tip You can find the complete code of the previous example in our online [Telerik XAML SDK Common samples repository](https://github.com/telerik/xaml-sdk/tree/master/Common).

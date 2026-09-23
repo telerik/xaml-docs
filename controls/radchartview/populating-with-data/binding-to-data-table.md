@@ -2,6 +2,7 @@
 title: Binding to a DataTable
 page_title: Binding to a DataTable
 description: Check our &quot;Binding to a DataTable&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-populating-with-data-binding-to-data-table
 tags: binding,to,a,datatable
 published: True
@@ -43,7 +44,7 @@ Using lambda syntax (as shown below) we set the path to the values in the DataTa
 
 
 The final result:
-![Result](images/RadChartView-binding_to_datatable.png)
+![Telerik UI for WPF RadChartView BarSeries bound to data from a DataTable](images/RadChartView-binding_to_datatable.png)
 
 ## See Also
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})

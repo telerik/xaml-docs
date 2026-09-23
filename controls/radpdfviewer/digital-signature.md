@@ -2,6 +2,7 @@
 title: Digital Signature
 page_title: Digital Signature
 description: Check our &quot;Digital Signature&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-features-digital-signature
 tags: digital, signature
 published: True

@@ -2,6 +2,7 @@
 title: Display Modes
 page_title: Display Modes
 description: Check our &quot;Display Modes&quot; documentation article for the RadOfficeNavigationBar control.
+components: ["officenavigationbar"]
 slug: radofficenavigationbar-display-modes
 tags: display modes, radofficenavigationbar
 published: True

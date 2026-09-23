@@ -2,6 +2,7 @@
 title: Manage Bibliographic References Dialog
 page_title: Manage Bibliographic Sources Dialog
 description: Check our &quot;Manage Bibliographic References Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-bibliographic-sources
 tags: link,insert,bibliographic,references,dialog
 published: True

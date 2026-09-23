@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting
 description: Check our &quot;Sorting&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-queryable-sorting
 tags: sorting
 published: True

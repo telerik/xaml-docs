@@ -2,6 +2,7 @@
 title: Line Numbering
 page_title: Line Numbering
 description: Check our &quot;Line Numbering&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-line-numbering
 tags: line, numbering
 published: True

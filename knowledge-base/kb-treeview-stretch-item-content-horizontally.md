@@ -2,6 +2,7 @@
 title: Get Content of RadTreeViewItem to Fill Full Size of Container
 page_title: How to Stretch RadTreeViewItem Content Horizontally
 description: Stretching Telerik RadTreeView item's content horizontally to fill the available space.
+components: ["treeview"]
 type: how-to
 slug: kb-treeview-stretch-item-content-horizontally
 position: 0

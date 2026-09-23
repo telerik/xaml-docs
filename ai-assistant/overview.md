@@ -2,6 +2,7 @@
 title: Overview
 page_title: Telerik UI for WPF AI Coding Assistant - Overview, License Requirements, and Usage
 description: Overview of the Telerik UI for WPF AI Coding Assistant and MCP Server. Covers license requirements for subscription, perpetual, and trial licenses, usage limits, supported components, privacy, and getting started prerequisites.
+components: ["general"]
 slug: ai-overview
 tags: telerik,wpf,ai,coding assistant,mcp,mcp server,license,perpetual license,subscription license,trial,code generation,usage limits,intended use
 position: 0

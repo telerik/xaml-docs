@@ -2,6 +2,7 @@
 title: Customizing Button Appearance
 page_title: Customizing Buttons Appearance
 description: Check our &quot;Customizing Buttons Appearance&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-customizing-buttons-appearance
 tags: styling, templates, style, customize
 published: True
@@ -22,7 +23,7 @@ The corners of the button can be rounded by setting the `CornerRadius` property.
 
 ## Setting Background Brush Visibility 
 
-The background brush of the button in its __Normal__ state can be hidden via the `IsBackgroundVisible` property. This is helpful when you want to hide the backround without handling brush objects.
+The background brush of the button in its __Normal__ state can be hidden via the `IsBackgroundVisible` property. This is helpful when you want to hide the background without handling brush objects.
 
 <snippet id='radbuttons-customizing-buttons-appearance-block_2-xaml' />
 

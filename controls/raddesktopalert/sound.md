@@ -2,6 +2,7 @@
 title: Sound
 page_title: Sound
 description: Check our &quot;Sound&quot; documentation article for the RadDesktopAlert {{ site.framework_name }} control.
+components: ["desktopalert"]
 slug: raddesktopalert-sound
 tags: play, sound
 published: True

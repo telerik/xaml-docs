@@ -2,6 +2,7 @@
 title: Animations
 page_title: Animations
 description: RadSplashScreen provides two built-in animations - one for opening and one for closing of the screen. Replace them with any RadAnimation.
+components: ["splashscreen"]
 slug: radsplashscreen-features-animations
 tags: progress,bar,splashscreen,busyindicator
 published: True

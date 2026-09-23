@@ -2,6 +2,7 @@
 title: AutoScrolling
 page_title: AutoScrolling
 description: Check our &quot;AutoScrolling&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-autoscrolling
 tags: autoscrolling
 published: True

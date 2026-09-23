@@ -2,6 +2,7 @@
 title: Expression Parser
 page_title: Expression Parser
 description: Check out the documentation article for the RadExpressionParser {{ site.framework_name }} control.
+components: ["expressioneditor"]
 slug: radexpressioneditor-expression-parser
 tags: expression, parser
 published: True

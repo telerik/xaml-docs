@@ -2,6 +2,7 @@
 title: RadSaveFileDialog
 page_title: RadSaveFileDialog
 description: Check our &quot;RadSaveFileDialog&quot; documentation article for the RadFileDialogs {{ site.framework_name }} control.
+components: ["filedialogs"]
 slug: radfiledialogs-radsavefiledialog
 tags: save,file,dialog
 published: True
@@ -12,7 +13,7 @@ position: 3
 
 __RadSaveFileDialog__ is a modal dialog box that allows you to specify a filename to save.
 
-#### __Figure 1: RadSaveFileDialog__ 
+#### __Figure 1: RadSaveFileDialog__
 ![RadSaveFileDialog](images/radsavefiledialog-01.png)
 
 ## Showing the dialog
@@ -25,7 +26,7 @@ __Example 1: Show a save file dialog__
 <snippet id='radfiledialogs-dialog-controls-radsavefiledialog-example_1_show_a_save_file_dialog-cs' />
 
 
-> The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set. 
+> The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set.
 
 ## Creating a stream for the selected file
 
@@ -37,16 +38,31 @@ __Example 2: Open a file stream__
 
 ## Working with the selected file
 
-You can get the path of the selected file via the __FileName__ property (see __Example 1__). Note that the property is empty until the DialogResult is valid. When the dialog closes and if DialogResutl is True the property will return the corresponding file path.
+You can get the path of the selected file via the __FileName__ property (see __Example 1__). Note that the property is empty until the __DialogResult__ is valid. When the dialog closes and __DialogResult__ is True, the property returns the corresponding file path.
+
+To check whether the selected path identifies an existing file, use the `System.IO.File.Exists` method after the dialog returns successfully.
+
+__Example 3: Check whether the selected file exists__
+```C#
+	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
+	saveFileDialog.Owner = this;
+	saveFileDialog.ShowDialog();
+	if (saveFileDialog.DialogResult == true)
+	{
+		bool fileExists = System.IO.File.Exists(saveFileDialog.FileName);
+	}
+```
+
+When the selected file already exists, __RadSaveFileDialog__ displays an overwrite confirmation automatically. If the user confirms the overwrite, __DialogResult__ is set to True. There is no separate overwrite event. Use the __DialogResult__ and __FileName__ properties after the dialog closes to determine whether the save operation was accepted.
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
-__Example 3: Set the file name__
+__Example 4: Set the file name__
 <snippet id='radfiledialogs-dialog-controls-radsavefiledialog-example_3_set_the_file_name-cs' />
 
 
 #### __Figure 2: Setting the file name__
-![Setting the file name](images/radsavefiledialog-02.png)	
+![Setting the file name](images/radsavefiledialog-02.png)
 
 ## See Also
 * [Visual Structure]({%slug radfiledialogs-visual-structure%})

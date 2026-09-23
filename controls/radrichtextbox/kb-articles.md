@@ -2,6 +2,7 @@
 title: Knowledge Base Articles
 page_title: Knowledge Base Articles - Telerik UI for WPF
 description: Custom examples built on top of the Telerik UI for WPF control.
+components: ["richtextbox"]
 slug: radrichtextbox-kb-articles
 tags: knowledge,base, sdk, examples, custom, help
 position: 1000
@@ -21,6 +22,7 @@ The following article list Knowledge Base articles related to this section of th
 |[Handle RadRichTextBox Unsupported Format Exception when Saving/Loading Using RadRibbonViewUI]({%slug kb-richtextbox-unsupported-format-exception%})|
 |[Highlight Colors Difference Between MS Word and RadRichTextBox]({%slug kb-radrichtextbox-difference-in-the-highlighted-colors%})|
 |[How to implement a MaxLength on RichTextBox]({%slug kb-richtextbox-maxlength%})|
+|[Printing to Microsoft Print to PDF Produces 0-Byte PDF File]({%slug kb-richtextbox-printing-to-pdf-zero-bytes%})|
 |[RadRichTextBox AutoText implementation]({%slug kb-richtextbox-auto-text-implementation%})|
 |[RichTextBox limit input to view area]({%slug kb-richtextbox-limit-text-size%})|
 |[Use RadRichTextBox in Tooltip]({%slug kb-richtextbox-howto-use-radrichtextbox-in-tooltip%})|

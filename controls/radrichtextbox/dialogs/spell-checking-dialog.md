@@ -2,6 +2,7 @@
 title: Spell Checking
 page_title: Spell Checking Dialog
 description: Check our &quot;Spell Checking Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-spell-checking
 tags: spell, checking, typo
 published: True

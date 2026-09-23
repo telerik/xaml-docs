@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping
 description: The article describes the grouping feature of RadCardView.
+components: ["cardview"]
 slug: radcardview-features-grouping
 tags: grouping,cardview
 published: True

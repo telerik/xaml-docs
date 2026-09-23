@@ -2,6 +2,7 @@
 title: Item Images
 page_title: Item Images
 description: Check our &quot;Item Images&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-feautres-treeviewitem-item-images
 tags: item,images
 published: True

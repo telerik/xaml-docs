@@ -2,6 +2,7 @@
 title: ScatterRangeBarSeries
 page_title: ScatterRangeBarSeries
 description: Check our &quot;ScatterRangeBarSeries&quot; (Histogram) documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-barseries-scatterrangebarseries
 tags: scatterrangebarseries,histogram
 published: True
@@ -24,7 +25,7 @@ __Declaring a RangeBarSeries in XAML__
 
 __ScatterRangeBarSeries visual appearance__  
 
-![Picture showing WPF ScatterRangeBarSeries with basic setup](images/radchartview-series-scatterrangebarseries-0.png)
+![Telerik UI for WPF RadChartView ScatterRangeBarSeries with a basic setup](images/radchartview-series-scatterrangebarseries-0.png)
 	
 ## Data Binding
 
@@ -46,7 +47,7 @@ __Specifying ScatterRangeBarSeries in XAML and setting its binding properties__
 
 __ScatterRangeBarSeries populated with data binding__  
 
-![Picture showing WPF ScatterRangeBarSeries populated with a collection of data items](images/radchartview-series-scatterrangebarseries-1.png)
+![Telerik UI for WPF RadChartView ScatterRangeBarSeries populated with a collection of data items](images/radchartview-series-scatterrangebarseries-1.png)
 
 ## Palette Coloring
 

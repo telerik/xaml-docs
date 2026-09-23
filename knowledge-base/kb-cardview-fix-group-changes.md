@@ -1,6 +1,7 @@
 ---
 title: CardView Refresh Collection After Group Changes
 description: CardView reaply GroupDescriptors after changing card property of the item
+components: ["cardview"]
 type: how-to
 page_title: Reaply GroupDescriptors in RadCardView After Changing Group Item
 slug: kb-cardview-fix-group-changes

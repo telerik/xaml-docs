@@ -2,6 +2,7 @@
 title: Knowledge Base Articles
 page_title: Knowledge Base Articles - Telerik UI for WPF
 description: Custom examples built on top of the Telerik UI for WPF control.
+components: ["imageeditor"]
 slug: radimageeditor-kb-articles
 tags: knowledge,base, sdk, examples, custom, help
 position: 1000

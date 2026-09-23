@@ -2,6 +2,7 @@
 title: Custom Tagger
 page_title: Custom Tagger
 description: This article explains how to create a custom tagger with the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-custom-tagger
 tags: custom,tagger,radsyntaxeditor
 position: 4

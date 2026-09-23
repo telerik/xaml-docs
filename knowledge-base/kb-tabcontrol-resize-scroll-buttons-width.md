@@ -2,6 +2,7 @@
 title: How to Resize RadTabControl Scroll Button Width
 page_title: How to Change the Horizontal Scroll Buttons Width
 description: How to change the width of the scroll buttons when OverflowMode set to Scroll.
+components: ["tabcontrol"]
 type: how-to
 slug: kb-tabcontrol-resize-scroll-buttons-width
 position: 0 

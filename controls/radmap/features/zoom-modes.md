@@ -2,6 +2,7 @@
 title: Zooming
 page_title: Zooming
 description: Check our &quot;Zooming&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-zoom-modes
 tags: zoom,modes
 published: True

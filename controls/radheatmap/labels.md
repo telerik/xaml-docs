@@ -2,6 +2,7 @@
 title: Labels
 page_title: Labels
 description: Check our &quot;Labels&quot; documentation article for the RadHeatMap {{ site.framework_name }} control.
+components: ["heatmap"]
 slug: radheatmap-labels
 tags: Labels
 published: True

@@ -2,6 +2,7 @@
 title: How to implement custom parsing
 page_title: How to implement custom parsing
 description: Check our &quot;How to implement custom parsing&quot; documentation article for the RadDateTimePicker {{ site.framework_name }} control.
+components: ["datetimepicker"]
 slug: raddatetimepicker-how-to-implement-custom-parsing
 tags: how,to,implement,custom,parsing
 published: True

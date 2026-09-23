@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping
 description: Check our &quot;Grouping&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-features-grouping
 tags: grouping
 published: True

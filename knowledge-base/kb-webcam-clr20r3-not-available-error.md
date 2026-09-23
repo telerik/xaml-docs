@@ -1,6 +1,7 @@
 ---
 title: DllNotFoundException - CLR20r3 Error When Using RadWebCam on Windows 10 Pro N
 description: Unable to load DLL mfplat.dll - The specified module could not be found error appears when you start the webcam control on a operating system with limited media packages installed.
+components: ["webcam"]
 page_title: Unable to load DLL mfplat.dll When Opening RadWebCam
 type: how-to
 slug: kb-webcam-clr20r3-not-available-error

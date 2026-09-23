@@ -1,6 +1,7 @@
 ---
 title: Strikeout the Rows of RadGridView
 description: This article will show you how to draw horizontal lines (strikeout/strikethrough) accross the RadGridView rows.
+components: ["gridview"]
 page_title: Strikethrough the GridViewRow of RadGridView
 type: how-to
 slug: kb-gridview-strikeout-row

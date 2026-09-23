@@ -2,6 +2,7 @@
 title: Resizing and Item Positions
 page_title: Resizing and Item Positions
 description: Check our &quot;Resizing&quot; documentation article for the RadOutlookBar {{ site.framework_name }} control.
+components: ["outlookbar"]
 slug: radoutlookbar-resizing
 tags: resizing
 published: True

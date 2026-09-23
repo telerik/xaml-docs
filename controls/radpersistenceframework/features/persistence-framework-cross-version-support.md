@@ -2,6 +2,7 @@
 title: Cross-Version Support
 page_title: Cross-Version Support
 description: Check our &quot;Cross-Version Support&quot; documentation article for the RadPersistenceFramework {{ site.framework_name }} control.
+components: ["persistenceframework"]
 slug: persistence-framework-cross-version-support
 tags: allowcrossversion,
 published: True

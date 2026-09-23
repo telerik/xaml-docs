@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check out our tutorial that will walk you through the creation of a sample application containing RadLayoutControl.
+components: ["layoutcontrol"]
 slug: radlayoutcontrol-getting-started
 tags: getting, started, tutorial
 published: True

@@ -2,6 +2,7 @@
 title: CRUD
 page_title: CRUD
 description: This article explains how you can perform CRUD operations in RadDataServiceDataSource.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-crud
 tags: crud
 published: True

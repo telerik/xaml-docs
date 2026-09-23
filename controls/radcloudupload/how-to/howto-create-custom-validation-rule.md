@@ -2,6 +2,7 @@
 title: Create Custom Validaton Rule
 page_title: Create Custom Validaton Rule
 description: Check our &quot;Create Custom Validaton Rule&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-howto-create-custom-validation-rule
 tags: create,custom,validaton,rule
 published: True

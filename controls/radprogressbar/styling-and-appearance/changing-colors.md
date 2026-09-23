@@ -2,6 +2,7 @@
 title: Changing colors
 page_title: Changing colors
 description: This article will demonstrate a few examples of using RadProgressBar's properties to change the appearance of the control.
+components: ["progressbar"]
 slug: radprogressbar-changing-colors
 tags: changing,colors
 published: True

@@ -2,6 +2,7 @@
 title: Column Selection
 page_title: Column Selection
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn about the three approaches to adding entire columns to the grid's selection.
+components: ["gridview"]
 slug: gridview-column-selection
 tags: column,selection
 published: True

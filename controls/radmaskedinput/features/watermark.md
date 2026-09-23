@@ -2,6 +2,7 @@
 title: Watermark
 page_title: Watermark
 description: Check our &quot;Watermark&quot; documentation article for the RadMaskedInput {{ site.framework_name }} control.
+components: ["maskedinput"]
 slug: radmaskedinput-features-watermark
 tags: watermark
 published: True

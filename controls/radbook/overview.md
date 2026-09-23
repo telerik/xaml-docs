@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: This article gives a general overview and lists the key features of the RadBook control.
+components: ["book"]
 slug: radbook-overview
 tags: overview, radbook
 published: True

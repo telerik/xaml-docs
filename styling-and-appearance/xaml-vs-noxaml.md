@@ -2,6 +2,7 @@
 title: Xaml vs. NoXaml
 page_title: Xaml vs. NoXaml
 description: Telerik UI for {{ site.framework_name }} comes with two types of assemblies - Xaml and NoXaml. This article will describe the difference and help you to choose a version. 
+components: ["general"]
 slug: xaml-vs-noxaml
 tags: xaml,noxaml
 published: True
@@ -49,7 +50,7 @@ Alternatively, you check the Properties of the **Telerik.Windows.Controls.dll** 
 3. Check the __File description__ attribute. It should contain the Telerik.Windows.Controls + "(No XAML)" postfix if the dlls are NoXaml. Otherwise, there will be only the dll's name. 
 
 #### Figure 1: Telerik.Windows.Controls.dll Properties
-![Telerik.Windows.Controls.dll Properties](images/xaml-vs-noxaml-0.png)
+![Telerik UI for WPF Telerik.Windows.Controls.dll properties in Visual Studio](images/xaml-vs-noxaml-0.png)
 
 ## See Also
 * [Apply Telerik Themes]({%slug styling-apperance-implicit-styles-overview%})

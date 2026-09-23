@@ -2,6 +2,7 @@
 title: Customizing the CellTemplate
 page_title: Customizing the CellTemplate
 description: Check our &quot;Customizing the CellTemplate&quot; documentation article for the RadGanttView {{ site.framework_name }} control.
+components: ["ganttview"]
 slug: radganttview-features-columns-cell-template
 tags: customizing,the,celltemplate
 published: True

@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support
 description: Using the keyboard you can easily navigate through RadListbox's items. This article describes the available key shortucts as well as some specific use cases.
+components: ["listbox"]
 slug: radlistbox-features-keyboard-support
 tags: keyboard,support
 published: True

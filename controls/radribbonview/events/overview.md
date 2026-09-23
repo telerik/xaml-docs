@@ -2,6 +2,7 @@
 title: Events Overview
 page_title: Events Overview
 description: Check our &quot;Events Overview&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-events-overview
 tags: events,overview
 published: True

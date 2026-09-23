@@ -1,6 +1,7 @@
 ---
 title: Distinct Values Work Only the First Time in RadGridView
 description: The RadGridView filters work only the first time they are applied
+components: ["gridview"]
 page_title: Filters Work Only the First Time in RadGridView
 type: how-to
 slug: kb-gridview-non-working-filters-with-custom-control-template-of-filtering-control
@@ -39,4 +40,4 @@ __Modifying the Path property of the ItemsSource Binding instance__
     </ListBox>
 ```
 
-To ensure that everything works properly, it is recommended to replace the customized `ControlTemplate` with the original one from the latest Telerik version. Then you can re-apply any customizaions in the new template.
+To ensure that everything works properly, it is recommended to replace the customized `ControlTemplate` with the original one from the latest Telerik version. Then you can re-apply any customizations in the new template.

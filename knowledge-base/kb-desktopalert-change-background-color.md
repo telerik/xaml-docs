@@ -2,6 +2,7 @@
 title: Set RadDesktopAlert Control's Background Color
 page_title: Set RadDesktopAlert control's background color when showing a new object of type RadDesktopAlert.
 description: Change default background color of the RadDesktopAlert control when creating a new class instance.
+components: ["desktopalert"]
 type: how-to
 slug: kb-desktopalert-change-background-color
 position: 0

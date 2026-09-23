@@ -2,6 +2,7 @@
 title: Custom HighlightTextBlock
 page_title: Custom HighlightTextBlock
 description: Check our &quot;Custom HighlightTextBlockd&quot; documentation article for the RadHighlightTextBlock control.
+components: ["highlighttextblock"]
 slug: radhighlighttextblock-custom-highlighttextblock
 tags: custom, radhighlighttextblock
 published: True

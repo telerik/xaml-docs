@@ -2,6 +2,7 @@
 title: Find Dialog
 page_title: Find Dialog
 description: Check our &quot;Find Dialog&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-find-dialog
 tags: find,dialog
 published: True

@@ -2,6 +2,7 @@
 title: Placement
 page_title: Placement
 description: Check our &quot;Placement&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-features-placement
 tags: placement
 published: True

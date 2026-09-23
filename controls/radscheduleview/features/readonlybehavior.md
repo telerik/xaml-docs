@@ -2,6 +2,7 @@
 title: ReadOnlyBehavior
 page_title: ReadOnlyBehavior
 description: Check our &quot;ReadOnlyBehavior&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-readonly-behavior
 tags: readonlybehavior
 published: True

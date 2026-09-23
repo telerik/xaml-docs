@@ -2,6 +2,7 @@
 title: Tick marks
 page_title: Tick marks
 description: Check our &quot;Tick marks&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radial-scale-tick-marks
 tags: tick,marks
 published: True

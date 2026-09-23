@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Learn more about the localization mechanism built in Telerik's {{ site.framework_name }} DataGrid and see a list of the supported languages.
+components: ["gridview"]
 slug: gridview-localization2
 tags: localization
 published: True

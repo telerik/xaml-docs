@@ -2,6 +2,7 @@
 title: Hiding Rows
 page_title: Hiding Rows
 description: Learn how you can hide or show rows in Telerik's {{ site.framework_name }} DataGrid by configuring a FilterDescriptor that filters the bound items by a certain condition.
+components: ["gridview"]
 slug: gridview-rows-hiding-rows
 tags: hiding,rows
 published: True

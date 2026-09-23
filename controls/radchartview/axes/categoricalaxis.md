@@ -2,6 +2,7 @@
 title: Categorical Axis
 page_title: Categorical Axis
 description: Check our &quot;Categorical Axis&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-categoricalaxis
 tags: categorical,axis
 published: True
@@ -17,7 +18,7 @@ __Example 1: Chart with categorical axis__
 
 
 #### __Figure 1: Result from Example 1__
-![RadChartView with CategoricalAxis](images/radchartview-categoricalaxis.png)
+![Telerik UI for WPF RadChartView Bar Chart with a Categorical Axis](images/radchartview-categoricalaxis.png)
 
 If a data point category is not defined, the series will set a category automatically. The category will be a numeric value determined by the position of the data point in the data source. For example, "1", "2", "3",etc."
 
@@ -26,7 +27,7 @@ __Example 2: Chart with no category defined for datapoints__
 
 
 #### __Figure 2: Result from Example 2__
-![RadChartView with CategoricalAxis](images/radchartview-chart_axes_categoricalaxis.png)
+![Telerik UI for WPF RadChartView Line Chart with Automatically Assigned Categorical Axis Labels](images/radchartview-chart_axes_categoricalaxis.png)
 
 You can customize the CategoricalAxis by utilizing its **LabelTemplate** property. Here is a simple implementation of a rectangle added in the LabelTemplate.
 
@@ -35,7 +36,7 @@ __Example 3: CategoricalAxis with LabelTemplate__
 
 
 #### __Figure 3: Result from Example 3__
-![CategoricalAxis with LabelTemplate](images/radchartview-categoricalaxis-labeltemplate.png)
+![Telerik UI for WPF RadChartView Categorical Axis with a Custom Label Template](images/radchartview-categoricalaxis-labeltemplate.png)
 
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})

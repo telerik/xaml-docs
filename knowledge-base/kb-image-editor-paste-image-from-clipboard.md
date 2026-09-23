@@ -1,6 +1,7 @@
 ---
 title: Paste an Image from the Clipboard to RadImageEditor
 description: How to paste an image file or selection from the clipboard to RadImageEditor.
+components: ["imageeditor"]
 type: how-to
 page_title: Get an Image from the Clipboard and Load it in RadImageEditor
 slug: kb-image-editor-paste-image-from-clipboard

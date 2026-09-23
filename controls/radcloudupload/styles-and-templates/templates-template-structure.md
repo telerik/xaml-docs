@@ -2,6 +2,7 @@
 title: Template Structure
 page_title: Template Structure
 description: Check our &quot;Template Structure&quot; documentation article for the RadCloudUpload {{ site.framework_name }} control.
+components: ["cloudupload"]
 slug: radcloudupload-templates-template-structure
 tags: template,structure
 published: True

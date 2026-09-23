@@ -1,6 +1,7 @@
 ---
 title: Create a Custom TimeSpanPickerColumn
 description: Implement a GridViewDataColumn, which displays a property of type TimeSpan.
+components: ["gridview"]
 type: howto
 page_title: Create a column, which can display, edit and filter a property of type TimeSpan
 slug: kb-gridview-howto-create-timespanpickercolumn

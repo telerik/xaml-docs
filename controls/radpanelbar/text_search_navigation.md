@@ -1,0 +1,48 @@
+---
+title: Text Search Navigation
+page_title: Text Search Navigation
+description: Check our &quot;Text Search Navigation&quot; documentation article for the RadPanelBar {{ site.framework_name }} control.
+components: ["panelbar"]
+slug: radpanelbar-features-text-search-navigation
+tags: text, search, navigation
+published: True
+position: 7
+---
+
+# Text Search Navigation
+
+RadPanelBar allows you to navigate through its items by typing on the keyboard __while the control is focused__. This will search and select the corresponding item.
+
+To enable the feature, set the __IsTextSearchEnabled__ property to True.
+
+To change the search mode that is used to match the results, set the __TextSearchMode__ property. This allows you to set one of the following modes:
+
+* __StartsWith__: This is the default mode.
+* __Contains__
+* __StartsWithCaseSensitive__
+* __ContainsCaseSensitive__
+
+You can also utilize the __IsTextSearchCaseSensitive__ property of RadPanelBar in order to determine if the search is case sensitive.
+
+__Setting Up Text Search Navigation__
+<snippet id='radpanelbar-features-text-search-navigation-block_1-xaml' />
+
+When binding the RadPanelBar's ItemsSource property to a collection of business objects, you should set the __TextSearch.TextPath__ attached property in order to tell what property should be used for the text search.
+
+__Setting the TextPath__
+<snippet id='radpanelbar-features-text-search-navigation-block_2-xaml' />
+
+In the previous example, `MyProperty` points to a property defined in the view model of the panelbar items. If the typed text matches the value of this property, the corresponding item will get selected.
+
+To increase the time interval for typing before the text is reset, set the __TextSearch.AutoCompleteTimeout__ static property.
+
+__Setting the Search Text Reset Timeout__
+<snippet id='radpanelbar-features-text-search-navigation-block_3-xaml' />
+
+Note that this property is used in several other Telerik controls and setting it will affect them as well.
+
+## See Also
+
+* [Visual Structure]({%slug radpanelbar-structure%})
+* [Data Binding]({%slug radpanelbar-object-data%})
+* [Developer Focused Examples]({%slug radpanelbar-sdk-examples%})

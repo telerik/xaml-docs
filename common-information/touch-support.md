@@ -1,7 +1,8 @@
 ---
 title: Touch Support
 page_title: Touch Support
-description: This article will describe the build-in touch support.
+description: This article will describe the built-in touch support.
+components: ["general"]
 slug: touch-support
 tags: touch,support
 published: True
@@ -18,11 +19,11 @@ Touch gestures describe gestures in which you use a finger or stylus to a moveme
 
 Gesture | - | Description 
 ---	|	---	|	---	
-![Common Touch Support 01](images/Common_TouchSupport_01.png) | Swipe | The user presses and holds on the screen and then drags the finger / stylus in any direction.
-![Common Touch Support 02](images/Common_TouchSupport_02.png)	|	Pinch	|	The user touches the screen with two (or more) fingers and moves them inwards or outwards.
-![Common Touch Support 03](images/Common_TouchSupport_03.png)	|	Tap	|	The user touches the screen. 
-![Common Touch Support 04](images/Common_TouchSupport_04.png)	|	Tap and Move	|	The user presses and holds the screen for a short period of time (between **600ms** and **800ms**) and drags his finger / stylus in any direction.
-![Common Touch Support 05](images/Common_TouchSupport_05.png)	|	Tap and Hold	|	The user presses and holds the screen for a short period of time (more than **800ms**).
+![Telerik UI for WPF TouchManager swipe gesture](images/Common_TouchSupport_01.png) | Swipe | The user presses and holds on the screen and then drags the finger / stylus in any direction.
+![Telerik UI for WPF TouchManager pinch gesture](images/Common_TouchSupport_02.png)	|	Pinch	|	The user touches the screen with two (or more) fingers and moves them inwards or outwards.
+![Telerik UI for WPF TouchManager tap gesture](images/Common_TouchSupport_03.png)	|	Tap	|	The user touches the screen. 
+![Telerik UI for WPF TouchManager tap-and-move gesture](images/Common_TouchSupport_04.png)	|	Tap and Move	|	The user presses and holds the screen for a short period of time (between **600ms** and **800ms**) and drags his finger / stylus in any direction.
+![Telerik UI for WPF TouchManager tap-and-hold gesture](images/Common_TouchSupport_05.png)	|	Tap and Hold	|	The user presses and holds the screen for a short period of time (more than **800ms**).
 
 >As of version __Q2 2015__, the __TouchIndicator is represented by a single circle__. 
 
@@ -45,7 +46,7 @@ RadImageEditor | Scroll	|	Zoom	|	-	|	-	|	-	|	-
 RadListBox | Scroll with inertia	|	-	|	Click	|	Drag&Drop	|	-	|	-
 RadMap | Pan	|	Zoom	|	Click/Selection	|	-	|	-	|	Double Tap -> Zoom
 RadPdfViewer | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection
-RadRropertyGrid | Scroll	|	-	|	Click/Selection	|	-	|	-	|	-
+RadPropertyGrid | Scroll	|	-	|	Click/Selection	|	-	|	-	|	-	
 RadRichTextBox | Scroll	|	Zoom	|	Click (move caret to position)	|	-	|	Show context menu	|	Selection markers to extend the selection
 RadScheduleView | Horizontally - Previous/Next; Vertically - Scroll	|	Timeline - Zoom, others - switching the views	|	Click/Selection	|	On item - Drag&Drop; on slot - multiple slots selection	|	-	|	-
 RadSpreadsheet | Scroll	|	Zoom	|	Click	|	-	|	-	|	Selection markers to extend the selection

@@ -1,6 +1,7 @@
 ---
 title: Style Aggregate Results Displayed in the GroupHeaderRow
 description: Update the style of aggregate function representation based on the result.
+components: ["gridview"]
 type: how-to
 page_title: Conditionally style aggregate results shown in the header of the group
 slug: kb-gridview-style-aggregate-results-in-group-header

@@ -2,6 +2,7 @@
 title: Increase/decrease handles
 page_title: Increase/decrease handles
 description: Check our &quot;Increase/decrease handles&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+components: ["slider"]
 slug: radslider-handles
 tags: increase/decrease,handles
 published: True

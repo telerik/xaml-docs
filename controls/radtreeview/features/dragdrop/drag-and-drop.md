@@ -2,6 +2,7 @@
 title: Drag and Drop Support
 page_title: Drag and Drop Support
 description: Check our &quot;Drag and Drop&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-features-drag-and-drop
 tags: drag,and,drop
 published: True

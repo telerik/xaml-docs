@@ -1,6 +1,7 @@
 ---
 title: Hiding the Field Filters in RadGridView Popup Filter Control
 description: This article shows how to hide the field filters shown in the RadGridView's WPF FilteringControl.
+components: ["gridview"]
 type: how-to
 page_title: How to Remove the FieldFilters in RadGridView Popup Filter Control
 slug: kb-gridview-hide-fieldfilters

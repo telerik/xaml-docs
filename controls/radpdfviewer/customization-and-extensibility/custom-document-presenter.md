@@ -2,6 +2,7 @@
 title: Custom Document Presenter
 page_title: Custom Document Presenter
 description: Check our &quot;Custom Document Presenter&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-customization-and-extensibility-custom-document-presenter
 tags: custom,document,presenter
 published: True

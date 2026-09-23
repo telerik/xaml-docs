@@ -2,6 +2,7 @@
 title: Change Title
 page_title: Change Title
 description: Check our &quot;Change Title&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-howto-change-title
 tags: change,title
 published: True

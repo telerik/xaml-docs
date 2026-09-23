@@ -2,6 +2,7 @@
 title: Collapsing
 page_title: Collapsing
 description: This article describes the collapsing feature of the RadRibbonView.
+components: ["ribbonview"]
 slug: radribbonview-collapsing
 tags: collapsing
 published: True

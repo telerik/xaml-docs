@@ -2,6 +2,7 @@
 title: Sticky Group Headers
 page_title: Sticky Group Headers
 description: Get started with the grouping functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to stick the headers of a group to the top. 
+components: ["gridview"]
 slug: gridview-sticky-group-headers
 tags: sticky,group,headers
 published: True

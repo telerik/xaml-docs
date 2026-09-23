@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands
 description: Check our &quot;Commands&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-commands
 tags: commands
 published: True
@@ -124,6 +125,26 @@ You can use the `SetToday` command to navigate to the current day in the active 
 
   
 <snippet id='radscheduleview-features-commands-block_11-cs' />
+
+## Scroll an Appointment or Slot into View
+
+To bring an appointment or slot into the view, call the `ScrollIntoView` method on `RadScheduleView`. 
+
+Use an `IOccurrence` value to scroll an appointment into view or a `Slot` value to scroll a selected time range into view:
+
+```C#
+	ScheduleView.ScrollIntoView(occurrence);
+	ScheduleView.ScrollIntoView(slot);
+```
+
+To align the start of the appointment or slot with the start of the visible area, pass `true` as the second parameter:
+
+```C#
+	ScheduleView.ScrollIntoView(occurrence, true);
+	ScheduleView.ScrollIntoView(slot, true);
+```
+
+The overload without the Boolean parameter scrolls by the minimum amount needed to display the item. For date-only navigation, set the `CurrentDate` property or use the visible-date commands described above.
 
 ## RestoreOriginalOccurrence Command
 

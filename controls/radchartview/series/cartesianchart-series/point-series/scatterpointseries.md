@@ -2,6 +2,7 @@
 title: ScatterPointSeries
 page_title: ScatterPointSeries
 description: Check our &quot;ScatterPointSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-scatterpointseries
 tags: scatterpointseries
 published: True
@@ -26,7 +27,7 @@ __Example 1: Declaring an ScatterPointSeries in XAML__
 
 
 #### __Figure 1: ScatterPointSeries visual appearance__
-![radchartview-series-scatterpointseries](images/radchartview-series-scatterpointseries.png)
+![Telerik UI for WPF RadChartView ScatterPointSeries visual appearance](images/radchartview-series-scatterpointseries.png)
 
 ## Properties
 * __CategoryBinding__: A property of type __DataPointBinding__ that gets or sets the property path that determines the category value of the data point.

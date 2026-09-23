@@ -2,6 +2,7 @@
 title: Time Break
 page_title: Time Break
 description: Check our &quot;Time Break&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-items-time-break
 tags: time, break
 published: True

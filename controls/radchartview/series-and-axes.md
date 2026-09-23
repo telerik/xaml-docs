@@ -2,6 +2,7 @@
 title: Series to Axes Dependencies
 page_title: Series to Axes Dependencies
 description: The purpose of this topic is to make you familiar with the axes supported by each series in RadChartView.
+components: ["chartview"]
 slug: radchartview-series-and-axes
 tags: series,and,axes
 publish: True

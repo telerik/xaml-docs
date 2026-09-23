@@ -2,6 +2,7 @@
 title: RadComboBox Virtualization
 page_title: RadComboBox Virtualization
 description: Check our &quot;RadComboBox Virtualization&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-howto-virtualization
 tags: radcombobox,virtualization
 published: True

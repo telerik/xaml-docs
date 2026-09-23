@@ -2,6 +2,7 @@
 title: Programmatic Selection
 page_title: Programmatic Selection
 description: Check our &quot;Programmatic Selection&quot; documentation article for the RadDateRangePicker WPF control.
+components: ["daterangepicker"]
 slug: raddaterangepicker-programmatic-selection
 tags: daterangepicker,selection,range
 published: True

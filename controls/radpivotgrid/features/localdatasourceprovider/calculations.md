@@ -2,6 +2,7 @@
 title: Calculations
 page_title: Calculations
 description: Check our &quot;Calculations&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-calculations
 tags: calculations
 published: True

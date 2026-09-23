@@ -2,6 +2,7 @@
 title: Customizing Items Layout
 page_title: Customizing Items Layout
 description: Check our &quot;Customizing Items Layout&quot; documentation article for the RadTabControl {{ site.framework_name }} control.
+components: ["tabcontrol"]
 slug: radtabcontrol-appearance-customizing-items-layout
 tags: overview
 published: True

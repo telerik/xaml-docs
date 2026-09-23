@@ -2,8 +2,9 @@
 title: Custom Filtering Controls
 page_title: Custom Filtering Controls
 description: Learn how to easily craft any filtering control that you like by using the custom filtering controls feature of RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-filtering-custom-filtering-controls
-tags: custom,filtering,controls
+tags: custom,filtering,controls,staticresource,resource,app.xaml
 published: True
 position: 13
 ---
@@ -52,6 +53,24 @@ Finally, you have to tell the column to use this custom filtering control like t
 
 <snippet id='radgridview-filtering-custom-filtering-controls-the_example_in_this_article_produces_the_following_result-xaml' />
 
+
+>tip You can also define the custom filtering control as a resource (for example, in `App.xaml` or `UserControl.Resources`) by assigning an `x:Key`. If you reference the control as a `{StaticResource}` across multiple columns, specify `x:Shared="False"` so that each column receives its own instance with independent filter state:
+>
+>```XAML
+><Application.Resources>
+>    <local:FromDateToDateFilterControl x:Key="CustomFromDateToDateFilter" 
+>                                       x:Shared="False" 
+>                                       FromDate="1/1/1990" 
+>                                       ToDate="1/1/1995" />
+></Application.Resources>
+>```
+>
+>Then assign it to the column's `FilteringControl` property:
+>
+>```XAML
+><telerik:GridViewDataColumn DataMemberBinding="{Binding ModifiedAt}"
+>                            FilteringControl="{StaticResource CustomFromDateToDateFilter}" />
+>```
 
 >In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please refer to the [Styling custom controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) section.
 

@@ -2,6 +2,7 @@
 title: Customizing Track Appearance
 page_title: Customizing Track Appearance
 description: Check our &quot;Customizing Track Appearance&quot; documentation article for the RadStepProgressBar control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-appearance-track
 tags: track,style,template
 published: True

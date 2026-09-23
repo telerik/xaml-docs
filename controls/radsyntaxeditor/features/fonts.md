@@ -2,6 +2,7 @@
 title: Fonts
 page_title: Fonts
 description: This article lists and explains the fonts settings exposed by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: radsyntaxeditor-features-fonts
 tags: fonts,radsyntaxeditor
 position: 8

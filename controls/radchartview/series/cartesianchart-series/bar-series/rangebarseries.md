@@ -2,6 +2,7 @@
 title: RangeBarSeries
 page_title: RangeBarSeries
 description: Check our &quot;RangeBarSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-barseries-rangebarseries
 tags: rangebarseries
 published: True
@@ -26,7 +27,7 @@ __Example 1: Declaring a RangeBarSeries in XAML__
 
 
 #### __Figure 1: RangeBarSeries visual appearance__  
-![radchartview-series-rangebarseries](images/radchartview-series-rangebarseries.png)
+![Telerik UI for WPF RadChartView RangeBarSeries visual appearance](images/radchartview-series-rangebarseries.png)
 
 ## Properties
 

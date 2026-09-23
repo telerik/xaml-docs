@@ -2,6 +2,7 @@
 title: Refresh GridView After Language Change
 page_title: Update RadGridView UI When Localization Culture is Changed
 description: Update the UI of RadGridView when the current culture is changed bringing dynamic localization in versions prior 2025.4.1320.
+components: ["gridview"]
 type: how-to
 slug: kb-gridview-dynamic-localization
 position: 0

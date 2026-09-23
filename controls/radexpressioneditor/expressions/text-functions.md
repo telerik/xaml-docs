@@ -2,6 +2,7 @@
 title: Text Functions
 page_title: Text Functions
 description: As of R1 2019, the RadExpression control also provides a number of functions for string manipulation.
+components: ["expressioneditor"]
 slug: radexpressioneditor-expressions-text-functions
 tags: text,functions
 published: True

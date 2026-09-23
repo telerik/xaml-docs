@@ -2,6 +2,7 @@
 title: DataTemplate Selectors
 page_title: DataTemplate Selectors
 description: Check our &quot;DataTemplate Selectors&quot; documentation article for the RadDataForm {{ site.framework_name }} control.
+components: ["dataform"]
 slug: raddataform-datatemplate-selectors
 tags: datatemplate,selectors
 published: True

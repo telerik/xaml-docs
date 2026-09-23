@@ -2,6 +2,7 @@
 title: Defining Columns
 page_title: Defining Columns
 description: See examples of how you can define, either automatically or manually, the columns in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-columns-defining-columns
 tags: defining,columns
 published: True
@@ -146,3 +147,5 @@ __Example 8: Copying the properties of one column to another__
  * [Column Groups]({%slug gridview-column-groups%})
 
  * [Data Formatting]({%slug gridview-columns-data-formatting%})
+
+ * [Customizing Rows]({%slug gridview-customizing-rows%})

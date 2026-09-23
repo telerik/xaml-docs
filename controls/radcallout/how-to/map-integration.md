@@ -2,6 +2,7 @@
 title: Use Callout with RadMap
 page_title: Use Callout with RadMap
 description: Check our &quot;Overview&quot; documentation article for the RadCallout {{ site.framework_name }} control.
+components: ["callout"]
 slug: radcallout-howto-map-integration
 tags: map,callout,
 published: True

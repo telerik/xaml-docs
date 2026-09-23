@@ -2,6 +2,7 @@
 title: ExportToWorkbook
 page_title: ExportToWorkbook
 description: Read about the ExportToWorkbook functionality of Telerik's {{ site.framework_name }} DataGrid used to modify the content of the exported grid and avoid styling the document manually.
+components: ["gridview"]
 slug: gridview-export-workbook
 tags: gridview,export,workbook
 published: True

@@ -2,6 +2,7 @@
 title: Key Modifiers
 page_title: Key Modifiers
 description: Check our &quot;Key Modifiers&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
+components: ["contextmenu"]
 slug: radcontextmenu-key-modifiers
 tags: key,modifiers
 published: True

@@ -2,6 +2,7 @@
 title: Inline Editing
 page_title: Inline Editing
 description: Check our &quot;Inline Editing&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-inline-editing
 tags: inline,editing
 published: True

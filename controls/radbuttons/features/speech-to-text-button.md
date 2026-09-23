@@ -2,6 +2,7 @@
 title: Speech-to-Text Button
 page_title: SpeechToTextButton for WPF
 description: Check our &quot;Speech Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-features-speech-to-text-button
 tags: toggle,button,switch
 published: True

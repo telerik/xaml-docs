@@ -2,6 +2,7 @@
 title: Wms Tile Provider
 page_title: Wms Tile Provider
 description: Check our &quot;Wms Tile Provider&quot; documentation article for the RadMap WPF control.
+components: ["map"]
 slug: radmap-features-providers-wms
 tags: wms,tile,provider
 published: True

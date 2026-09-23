@@ -2,6 +2,7 @@
 title: Page Flip Mode
 page_title: Page Flip Mode
 description: Check our &quot;Page Flip Mode&quot; documentation article for the RadBook {{ site.framework_name }} control.
+components: ["book"]
 slug: radbook-page-flip-mode
 tags: page,flip,mode
 published: True

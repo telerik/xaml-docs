@@ -2,6 +2,7 @@
 title: Filter the Items in GridViewComboBoxColumn
 page_title: Filter Items in ComboBox Column
 description: Learn how you can benefit from the advanced filtering mechanisms of the ComboBox Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+components: ["gridview"]
 slug: gridview-columns-how-to-filter-the-items-in-comboboxcolumn
 tags: filter,the,items,in,gridviewcomboboxcolumn
 published: True

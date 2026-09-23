@@ -2,6 +2,7 @@
 title: Restoring NuGet Packages in CI
 page_title: Restoring NuGet Packages in CI
 description: "Learn how to use NuGet Keys to authenticate with the Telerik NuGet server and restore WPF packages in your CI or desktop environment."
+components: ["general"]
 slug: nuget-keys
 tags: restore,nuget,keys,packages,ci
 published: True
@@ -27,7 +28,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 1. Select the **DOWNLOADS** tab and then **Manage NuGet Keys**.
 
-    ![Manage NuGet Keys](images/installation-manage-nuget-keys.png)
+	![Telerik UI for WPF NuGet keys management page](images/installation-manage-nuget-keys.png)
 
 1. To create a new key, select the **Generate New Key** button.
 
@@ -35,7 +36,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 1. To copy the key, select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **NuGet Keys** page displays only a portion of the key.
 
-    ![Copy Generated NuGet Key](images/installation-copy-nuget-key.png)
+	![Telerik UI for WPF generated NuGet key ready to copy](images/installation-copy-nuget-key.png)
 
 ## Storing a NuGet Key
 
@@ -49,7 +50,7 @@ To protect the NuGet Key, store it as a secret environment variable. The exact s
 
 * In Azure DevOps YAML pipelines, save the key as a secret variable as well. Click the YAML editor's **Variables** button and complete the **New variable** form.
 
-If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username filed and the NuGet Key as the password in the **New NuGet service connection** form editor.
+If you use Azure DevOps Service connection instead of secret environment variables, enter `api-key` in the username field and the NuGet Key as the password in the **New NuGet service connection** form editor.
 
 For more details on storing and protecting your NuGet Key, read Lance McCarthy's blog post on [using Telerik NuGet keys for secure package restores](https://www.telerik.com/blogs/announcing-nuget-keys).
 

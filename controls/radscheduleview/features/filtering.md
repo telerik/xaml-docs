@@ -2,8 +2,9 @@
 title: Filtering
 page_title: Filtering
 description: Check our &quot;Filtering&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-filtering
-tags: filtrering
+tags: filtering
 published: True
 position: 10
 ---

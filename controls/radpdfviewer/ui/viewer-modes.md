@@ -2,6 +2,7 @@
 title: Viewer Modes
 page_title: Viewer Modes
 description: Check our &quot;Viewer Modes&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+components: ["pdfviewer"]
 slug: radpdfviewer-viewer-modes
 tags: viewer,modes
 published: True

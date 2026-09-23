@@ -1,6 +1,7 @@
 ---
 title: Handle Animation Swipe Direction When RadCarouselPanel is Vertical Orientated 
 description: Swipe animation respect horizontal orientated RadCarouselPanel.
+components: ["carousel"]
 type: troubleshooting
 page_title: Vertical Swipe Animation is Always in The Same Direction
 slug: kb-carousel-troubleshooting-handle-verticalorientation-swipe
@@ -26,7 +27,7 @@ res_type: kb
 
 
 ## Description
-By default, the orientation of the RadCarouselPanel is horizontal. When the RadCarouselPanel is set in vertical mode, the swipe animation does not work correctly. The build-in swiping logic only checks the horizontal offset of the swipe, which occurs. 
+By default, the orientation of the RadCarouselPanel is horizontal. When the RadCarouselPanel is set in vertical mode, the swipe animation does not work correctly. The built-in swiping logic only checks the horizontal offset of the swipe, which occurs. 
 
 ## Solution
 

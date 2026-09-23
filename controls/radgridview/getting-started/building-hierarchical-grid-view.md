@@ -2,6 +2,7 @@
 title: Building Hierarchical Grid View
 page_title: Building Hierarchical Grid
 description: Check out our tutorial that will walk you through the process of displaying hierarchical data in RadGridView - Telerik's WPF DataGrid.
+components: ["gridview"]
 slug: gridview-building-hierarchical-grid-view
 tags: building,hierarchical,grid,view
 published: True

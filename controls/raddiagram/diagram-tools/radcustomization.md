@@ -2,6 +2,7 @@
 title: Tools Customization
 page_title: Tools Customization
 description: Check our &quot;Tools Customization&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-tools-customization
 tags: tools,customization
 published: True

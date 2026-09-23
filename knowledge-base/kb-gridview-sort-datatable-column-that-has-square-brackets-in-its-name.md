@@ -2,6 +2,7 @@
 title: Sort а DataTable Column That Contains Square Brackets in its Name in a RadGridView Scenario
 page_title: Sorting DataTable Column That Has Square Bracket Characters in its Name
 description: This article shows how to sort a DataTable column that contains square brackets in its name when the DataTable is used with RadGridView.
+components: ["gridview"]
 type: how-to
 slug: kb-gridview-sort-datatable-column-that-has-square-brackets-in-its-name
 position: 0
@@ -109,4 +110,4 @@ To achieve a sorting functionality in this scenario, implement custom sorting lo
         }
     ```
 
->important The [IsCustomSortingEnabled]({%slug gridview-set-sortingstate-on-column%}) property of the column needes to be set to __true__, when implementing custom sorting logic.
+>important The [IsCustomSortingEnabled]({%slug gridview-set-sortingstate-on-column%}) property of the column needs to be set to __true__, when implementing custom sorting logic.

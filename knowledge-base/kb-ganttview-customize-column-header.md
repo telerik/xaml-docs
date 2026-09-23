@@ -1,6 +1,7 @@
 ---
 title: Customize Columns Headers of RadGanttView
 description: This article will show you how to display complex structure in the headers of the columns of RadGanttView.
+components: ["ganttview"]
 page_title: Display Complex Structure in the Columns Headers of RadGanttView
 type: how-to
 slug: kb-ganttview-customize-column-header
@@ -32,7 +33,7 @@ The header of the RadGanttView's ColumnDefinition class is represented by a Colu
 
 Create a new `Style` with `TargetType="ColumnHeaderContainer"` and add a new `Setter` for the `ContentTemplate` property. Then, set it to a new `DataTemplate` with a `ContentPresenter` instance in it.
 
-__Creatring a new Style that targets the ColumnHeaderContainer and sets a custom DataTemplate to its ContentTemplate property__
+__Creating a new Style that targets the ColumnHeaderContainer and sets a custom DataTemplate to its ContentTemplate property__
 ```XAML
     <!--If NoXaml is used base the Style on the default one: BasedOn="{StaticResource ColumnHeaderContainerStyle}"-->
     <Style TargetType="telerik:ColumnHeaderContainer">

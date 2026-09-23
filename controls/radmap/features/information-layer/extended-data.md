@@ -2,6 +2,7 @@
 title: Extended Data
 page_title: Extended Data
 description: Check our &quot;Extended Data&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-extended-data
 tags: extended,data
 published: True

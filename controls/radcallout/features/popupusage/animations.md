@@ -2,6 +2,7 @@
 title: Animations
 page_title: Animations
 description: Check our &quot;Overview&quot; documentation article for the RadCallout {{ site.framework_name }} control.
+components: ["callout"]
 slug: radcallout-features-animations
 tags: animations
 published: True

@@ -2,6 +2,7 @@
 title: LayoutControlExpanderGroup
 page_title: LayoutControlExpanderGroup
 description: Check our &quot;LayoutControlExpanderGroup&quot; documentation article for the RadLayoutControl {{ site.framework_name }} control.
+components: ["layoutcontrol"]
 slug: radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup
 tags: feature, displaymode, display, mode, layoutcontrolexpandergroup, expander, expand, collapse
 published: True

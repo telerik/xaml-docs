@@ -2,6 +2,7 @@
 title: Mail Merge
 page_title: Mail Merge
 description: Check our &quot;Mail Merge&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-mail-merge
 tags: mail,merge
 published: True

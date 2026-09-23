@@ -2,6 +2,7 @@
 title: PanesSource - MVVM Support
 page_title: PanesSource - MVVM Support
 description: Check our &quot;PanesSource - MVVM Support&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-panes-panesource
 tags: panessource,-,mvvm,support
 published: True

@@ -2,6 +2,7 @@
 title: Settings
 page_title: WPF Barcode Documentation - Data Matrix Settings
 description: Check our &quot;Settings&quot; documentation article for Telerik Barcode for WPF control.
+components: ["barcode"]
 position: 0
 published: True
 slug: barcode-data-matrix-settings

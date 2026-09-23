@@ -2,6 +2,7 @@
 title: Separator Items
 page_title: Separator Items
 description: Check our &quot;Separator Items&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-features-separator-items
 tags: separator,items
 published: True

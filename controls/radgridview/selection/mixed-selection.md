@@ -2,6 +2,7 @@
 title: Mixed Selection
 page_title: Mixed Selection
 description: Get started with Telerik's {{ site.framework_name }} DataGrid allowing the user to select a cell as well as to select a row. 
+components: ["gridview"]
 slug: gridview-mixed-selection
 tags: mixed,selection
 published: True

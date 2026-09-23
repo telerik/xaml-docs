@@ -2,6 +2,7 @@
 title: Control Panel
 page_title: Control Panel
 description: The article describes the control panel feature of RadCardView.
+components: ["cardview"]
 slug: radcardview-features-control-panel
 tags: control,panel,cardview
 published: True

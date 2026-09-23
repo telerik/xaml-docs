@@ -2,6 +2,7 @@
 title: Declaration
 page_title: Declaration
 description: Check our &quot;Declaration&quot; documentation article for the RadColorPicker {{ site.framework_name }} control.
+components: ["colorpicker"]
 slug: colorselector-populating
 tags: declaration
 published: True

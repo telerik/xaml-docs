@@ -2,6 +2,7 @@
 title: Allowed Types
 page_title: Allowed Types
 description: Register types that are allowed to be instantiated by the deserialization mechanism of PersistenceFramework.
+components: ["persistenceframework"]
 slug: persistence-framework-allowed-types
 tags: allowed types, types, persistence framework
 published: True

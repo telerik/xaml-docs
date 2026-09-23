@@ -2,6 +2,7 @@
 title: Working with AutoComplete
 page_title: Working with AutoComplete
 description: Check our &quot;Working with AutoComplete&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-end-user-capabilities-working-with-autocomplete
 tags: working,with,autocomplete
 published: True

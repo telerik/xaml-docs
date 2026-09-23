@@ -1,6 +1,7 @@
 ---
 title: Customizing MonthView in ScheduleView for UI for WPF
 description: Learn how to customize the MonthView in ScheduleView for UI for WPF to highlight days of the current month.
+components: ["scheduleview"]
 type: how-to
 page_title: How to Highlight Days in MonthView in ScheduleView for UI for WPF
 meta_title: Highlight Days in MonthView in ScheduleView for UI for WPF

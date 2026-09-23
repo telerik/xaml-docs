@@ -2,6 +2,7 @@
 title: Access the default editing element
 page_title: Access the default editing element
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to access the default editing element of the cells and set its properties.
+components: ["gridview"]
 slug: gridview-access-editing-element
 tags: access,the,default,editing,element
 published: True

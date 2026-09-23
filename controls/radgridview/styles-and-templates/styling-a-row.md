@@ -2,6 +2,7 @@
 title: Styling Rows
 page_title: Styling Rows
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how to set the background of the selected row.
+components: ["gridview"]
 slug: gridview-styling-a-row
 tags: styling,rows
 published: True

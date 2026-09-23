@@ -103,7 +103,7 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 
 The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additional thing which it allows you to control is the __LabelDisplayMode__. It allows you to specify where to place the label relatively to the bar object. It can be set to one of the following values:
 
-* __Auto__ - automatically chooses the bes position for the label.
+* __Auto__ - automatically chooses the best position for the label.
 
 * __Inside__ - the labels are placed inside the bar, near the top (or bottom for negative values).
 
@@ -166,7 +166,7 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 
 The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addition, it allows you to control the following:
 
-* __LabelOffset__ - the position of the label relative to the Pie/Doughnut radius. Set it to 0.5 to place the label in the center of the slice. By setting it to a value of 2.0, the label will be placed at distance twice as the radius form the center.
+* __LabelOffset__ - the position of the label relative to the Pie/Doughnut radius. Set it to 0.5 to place the label in the center of the slice. By setting it to a value of 2.0, the label will be placed at distance twice as the radius from the center.
 
 * __SpirderModeEnabled__ - indicates whether the Spider mode is enabled or not. In this mode the labels are ordered around the Pie/Doughnut as spider legs. Combine it with __ShowConnectors__ for a greater effect.
 

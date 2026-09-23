@@ -2,6 +2,7 @@
 title: Styling RadWindow
 page_title: Styling RadWindow
 description: Check our &quot;Styling RadWindow&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-styles-and-templates-styling-the-radwindow
 tags: styling,the,radwindow
 published: True

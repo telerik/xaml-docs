@@ -2,6 +2,7 @@
 title: List Numbering Value
 page_title: List Numbering Value Dialog
 description: Check our &quot;Set List Numbering Dialog&quot; documentation article for the RadRichTextBox WPF control.
+components: ["richtextbox"]
 slug: richtextbox-dialogs-list-numbering
 tags: list,numbering,set,value
 published: True

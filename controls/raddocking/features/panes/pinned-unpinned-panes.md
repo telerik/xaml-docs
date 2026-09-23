@@ -2,6 +2,7 @@
 title: Pinned/Unpinned Panes
 page_title: Pinned/Unpinned Panes
 description: Check our &quot;Pinned/Unpinned Panes&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-panes-pinned-unpinned-panes
 tags: pinned/unpinned,panes
 published: True

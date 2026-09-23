@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure
 description: Check our &quot;Visual Structure&quot; documentation article for the RadDataFilter {{ site.framework_name }} control.
+components: ["datafilter"]
 slug: raddatafilter-visual-structure
 tags: visual,structure
 published: True
@@ -21,7 +22,7 @@ This section defines the terms and concepts used in the scope of the __RadDataFi
 
 * __Nested Operator__ - represents an operator that is nested under the Root Operator or another operator.
 
-* __Filter Criteria__ - represents the UI for creating a filtering condition, that gets translated into a FilterDescritpor.
+* __Filter Criteria__ - represents the UI for creating a filtering condition, that gets translated into a FilterDescriptor.
 
 * __Delete Button__ - removes the respective element from the tree. 
 

@@ -2,6 +2,7 @@
 title: Knowledge Base Articles
 page_title: Knowledge Base Articles - Telerik UI for WPF
 description: Custom examples built on top of the Telerik UI for WPF control.
+components: ["chartview"]
 slug: radchartview-kb-articles
 tags: knowledge,base, sdk, examples, custom, help
 position: 1000
@@ -37,7 +38,7 @@ The following article list Knowledge Base articles related to this section of th
 |[Language property is not respected by axis labels when LabelFormat is set]({%slug kb-language-not-respected-axislabels-with-labelformat%})|
 |[NullReferenceException When Using TypePath of CategoricalSeriesDescriptor]({%slug kb-chartview-nullreferenceexception-when-use-typepath%})|
 |[Restrict the First Axis Label to be Within the RadChartView Pane Width]({%slug kb-chartview-clip-first-label-to-plotarea%})|
-|[Show Categorica and DateTime Axes in RadChartView]({%slug kb-chartview-categorical-and-datetime-axis%})|
+|[Show Categorical and DateTime Axes in RadChartView]({%slug kb-chartview-categorical-and-datetime-axis%})|
 |[The Specified Value Cannot be Assigned to the Collection. The Following Type was Expected CartesianSeries]({%slug kb-chartview-namespace-error%})|
 
 ## See Also

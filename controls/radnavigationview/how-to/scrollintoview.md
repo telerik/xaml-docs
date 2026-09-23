@@ -2,6 +2,7 @@
 title: Scroll Item into View
 page_title: Scroll Item into View
 description: This article demonstrates the ScrollIntoView suppport of RadNavigationView.
+components: ["navigationview"]
 slug: radnavigationview-how-to-scrollintoview
 tags: scroll,item,into,view
 published: True

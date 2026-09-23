@@ -2,6 +2,7 @@
 title: Map Legend
 page_title: Map Legend
 description: Check our &quot;Map Legend&quot; documentation article for the RadMap {{ site.framework_name }} control.
+components: ["map"]
 slug: radmap-features-map-legend
 tags: map,legend
 published: True

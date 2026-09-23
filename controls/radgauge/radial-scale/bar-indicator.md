@@ -2,6 +2,7 @@
 title: Bar Indicator
 page_title: Bar Indicator
 description: Check our &quot;Bar Indicator&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radial-scale-bar-indicator
 tags: bar,indicator
 published: True

@@ -2,6 +2,7 @@
 title: Minor Ticks and Stripes
 page_title: Minor Ticks and Stripes
 description: Display minor ticks and stripes in RadChartView.
+components: ["chartview"]
 slug: radchartview-minor-ticks-and-stripes
 tags: minor, ticks, stripes
 published: True

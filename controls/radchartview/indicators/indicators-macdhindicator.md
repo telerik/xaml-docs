@@ -2,6 +2,7 @@
 title: MacdhIndicator
 page_title: MacdhIndicator
 description: Check our &quot;MacdhIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-macdhindicator
 tags: financial, indicators, macdhindicator
 publish: True

@@ -2,6 +2,7 @@
 title: Using in-memory Data
 page_title: Using In-Memory Data
 description: Get started with Telerik's {{ site.framework_name }} DataGrid and learn how you can populate the grid with in-memory data.
+components: ["gridview"]
 slug: gridview-in-memory-date
 tags: using,in-memory,data
 published: True

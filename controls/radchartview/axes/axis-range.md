@@ -2,6 +2,7 @@
 title: Controlling Axis Range
 page_title: Controlling Axis Range
 description: This article describes how to control the axis range in RadChartView for WPF.
+components: ["chartview"]
 slug: radchartview-axis-range
 tags: axis,range,majorstep,step,interval
 published: True
@@ -17,7 +18,7 @@ The examples in the article work mostly with numeric values, but if you use the 
 
 ## Actual Range
 
-The actual range is a read-only information that tells what are the real minimum and maximum properties of the axis. This concept exists to ensure that the axis range can be accessed regardless if it is calcuilated automatically or set manually.
+The actual range is a read-only information that tells what are the real minimum and maximum properties of the axis. This concept exists to ensure that the axis range can be accessed regardless if it is calculated automatically or set manually.
 
 To get the actual range, use the `ActualRange` property of the axis.
 
@@ -51,7 +52,7 @@ __Setting axis range in C#__
 <snippet id='radchartview-axes-axis-range-setting_axis_range_in_c-xaml' />
 
 
-![WPF ChartView Axis Range Setting](images/radchartview-axis-range-0.png)
+![Telerik UI for WPF RadChartView Axis with Manually Set Minimum and Maximum Range](images/radchartview-axis-range-0.png)
 
 ## Setting the Step
 
@@ -63,7 +64,7 @@ __Setting major step__
 <snippet id='radchartview-axes-axis-range-setting_major_step-xaml' />
 
 
-![WPF ChartView Axis Major Step Setting](images/radchartview-axis-range-1.png)
+![Telerik UI for WPF RadChartView Axis with a Manually Set Major Step](images/radchartview-axis-range-1.png)
 
 To get the actual major step, use the `ActualMajorStep` property of the axis. This is helpful if you don't assign the `MajorStep` property and rely on the automatically calculated one.
 
@@ -83,7 +84,7 @@ __Setting major step__
 <snippet id='radchartview-axes-axis-range-setting_major_step-xaml' />
 
 
-![WPF ChartView Axis Tick Origin Setting](images/radchartview-axis-range-2.png)
+![Telerik UI for WPF RadChartView Axis with a Custom Tick Origin](images/radchartview-axis-range-2.png)
 
 ## Setting the Desired Ticks Count
 
@@ -93,7 +94,7 @@ __Setting desired number of ticks__
 <snippet id='radchartview-axes-axis-range-setting_desired_number_of_ticks-xaml' />
 
 
-![WPF ChartView Axis Desired Tick Count Setting](images/radchartview-axis-range-3.png)
+![Telerik UI for WPF RadChartView Axis with a Desired Tick Count](images/radchartview-axis-range-3.png)
 	
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events
 description: This article describes the RadNavigationView events.
+components: ["navigationview"]
 slug: radnavigationview-events
 tags: events, paneopened, paneclosed
 position: 3

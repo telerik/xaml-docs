@@ -2,6 +2,7 @@
 title: Document Variables
 page_title: Document Variables
 description: Check our &quot;Document Variables&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-document-variables
 tags: document,variables
 published: True

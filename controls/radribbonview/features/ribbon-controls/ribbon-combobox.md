@@ -2,6 +2,7 @@
 title: Ribbon ComboBox
 page_title: Ribbon ComboBox
 description: Check our &quot;Ribbon ComboBox&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-ribbon-combobox
 tags: ribbon,combobox
 published: True

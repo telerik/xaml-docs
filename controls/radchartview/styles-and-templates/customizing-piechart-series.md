@@ -2,6 +2,7 @@
 title: Customizing PieChart Series
 page_title: Customizing PieChart Series
 description: Check our &quot;Customizing PieChart Series&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-styles-and-templates-customizing-piechart-series
 tags: customizing,piechart,series
 published: True

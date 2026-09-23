@@ -2,6 +2,7 @@
 title: Validation Error Visual
 page_title: Validation Error Visual - Telerik WPF
 description: This article shows general information for ValidationErrorTemplate accros our controls.
+components: ["general"]
 slug: validaton-error-template
 tags: validaton,error,datatemplate
 published: True
@@ -14,7 +15,7 @@ The Telerik controls that support text input provide a validation error visual t
 
 When the control has validation errors, the border around the control turns red and an error message is visualized. 
 
-![WPF Validation Error Template](images/validaton-error-template-0.png)
+![Telerik UI for WPF validation error template with a red input border and error message](images/validaton-error-template-0.png)
 
 The message visualization can vary based on the applied display mode.
 

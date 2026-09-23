@@ -2,6 +2,7 @@
 title: Secondary Progress Indicator
 page_title: Secondary Progress Indicator
 description: Check our &quot;Secondary Progress Indicator&quot; documentation article for the RadCircularProgressBar control. 
+components: ["circularprogressbar"]
 slug: radcircularprogressbar-secondary-indicator
 tags: buffer, radcircularprogressbar
 published: True

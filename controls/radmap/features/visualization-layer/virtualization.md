@@ -2,6 +2,7 @@
 title: Items Virtualization
 page_title: Items Virtualization
 description: Check our &quot;Items Virtualization&quot; documentation article for the RadMap  control.
+components: ["map"]
 slug: radmap-visualization-layer-virtualization
 tags: items,virtualization
 published: True

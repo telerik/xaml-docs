@@ -2,6 +2,7 @@
 title: Bind RadTreeView to Self-Referencing Data
 page_title: Bind RadTreeView to Self-Referencing Data
 description: Check our &quot;Bind RadTreeView to Self-Referencing Data&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+components: ["treeview"]
 slug: radtreeview-how-to-bind-to-self-referencing-data
 tags: bind,radtreeview,to,self-referencing,data
 published: True

@@ -2,6 +2,7 @@
 title: Services
 page_title: Services
 description: Check our &quot;Services&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-features-services
 tags: services
 published: True

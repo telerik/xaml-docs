@@ -1,6 +1,7 @@
 ---
 title: Use the Telerik EventToCommandBehavior in Style Setter
 description: How to add  EventBinding objects to EventToCommandBehavior in a WPF Style Setter.
+components: ["general"]
 type: how-to
 page_title: Adding Event to Command Behavior's EventBindings for a Control in Style Setter
 slug: kb-common-eventtocommandbehavior-style-setter

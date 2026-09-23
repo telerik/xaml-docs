@@ -2,6 +2,7 @@
 title: The DataServiceQuery
 page_title: The DataServiceQuery
 description: Check our &quot;The DataServiceQuery&quot; documentation article for the RadDataServiceDataSource {{ site.framework_name }} control.
+components: ["dataservicedatasource"]
 slug: raddataservicedatasource-loading-the-dataservicequery
 tags: the,dataservicequery
 published: True

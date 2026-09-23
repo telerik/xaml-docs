@@ -1,6 +1,7 @@
 ---
 title: How to Tell When Tabs are Being Re-ordered
 description: How to use a notification to tell when tabs start reordering by dragging.
+components: ["tabcontrol"]
 type: how-to
 page_title: Listen for Tab Rearrange on DragInitialize
 slug: kb-tabcontrol-listen-for-tab-reorder-on-drag-started

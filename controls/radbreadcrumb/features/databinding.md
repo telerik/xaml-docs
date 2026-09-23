@@ -2,6 +2,7 @@
 title: Data Binding 
 page_title: Data Binding - Breadcrumb
 description: Check our &quot;Data Binding&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
+components: ["breadcrumb"]
 slug: radbreadcrumb-databinding
 tags: databinding,
 published: True
@@ -10,7 +11,7 @@ position: 1
 
 # Data Binding
 
-The __RadBreacrumb__ provides extensive data binding support. You can  display flat data collections as well as hierarchical data. The following properties are exposed to help you implement data binding scenarios with the control:	  
+The __RadBreadcrumb__ provides extensive data binding support. You can  display flat data collections as well as hierarchical data. The following properties are exposed to help you implement data binding scenarios with the control:	  
 
 * __IconPath__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem.Image__.		  
 

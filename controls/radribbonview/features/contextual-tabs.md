@@ -2,6 +2,7 @@
 title: Contextual Tabs
 page_title: Contextual Tabs
 description: This article will show you how to set up contextual RadRibbonTabs and organize them in RadRibbonContextualGroups.
+components: ["ribbonview"]
 slug: radribbonview-contextual-tabs
 tags: contextual,tabs
 published: True

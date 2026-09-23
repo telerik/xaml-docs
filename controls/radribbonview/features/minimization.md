@@ -2,6 +2,7 @@
 title: Minimization
 page_title: Minimization
 description: Check our &quot;Minimization&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-minimization
 tags: minimization
 published: True

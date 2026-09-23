@@ -2,6 +2,7 @@
 title: Use generic FilterDescriptor
 page_title: Use generic FilterDescriptor
 description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to use generic FilterDescriptor.
+components: ["gridview"]
 slug: gridview-filtering-generic-descriptor
 tags: use,generic,filterdescriptor
 published: True

@@ -2,6 +2,7 @@
 title: DragReorder of Tabs
 page_title: DragReorder of Tabs
 description: Check our &quot;DragReorder of Tabs&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+components: ["docking"]
 slug: raddocking-features-dragreorder
 tags: dragreorder,of,tabs
 published: True

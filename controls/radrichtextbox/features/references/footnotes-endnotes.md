@@ -2,6 +2,7 @@
 title: Footnotes and Endnotes
 page_title: Footnotes and Endnotes
 description: Check our &quot;Footnotes and Endnotes&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-footnotes-endnotes
 tags: footnotes,and,endnotes
 published: True

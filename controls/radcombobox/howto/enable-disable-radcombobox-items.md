@@ -2,6 +2,7 @@
 title: Enable\Disable RadComboBoxItems
 page_title: Enable\Disable RadComboBoxItems
 description: Check our &quot;Enable\Disable RadComboBoxItems&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-howto-enable-disable-radcombobox-items
 tags: enable\disable,radcomboboxitems
 published: True
@@ -29,7 +30,7 @@ __Example 2: Disabling specific RadComboBoxItems using the IsEnabled property__
 
 
 #### __Figure 1: Result of Example 2__
-![{{ site.framework_name }} RadComboBox Result of Example 2](images/RadComboBox_HowTo_EnableDisableItems_010.png)
+![Telerik UI for WPF RadComboBox with disabled items](images/RadComboBox_HowTo_EnableDisableItems_010.png)
 
 ## Enable\Disable Items Using ItemContainerStyle
 
@@ -53,7 +54,7 @@ __Example 5: Set the ItemContainerStyle of a RadComboBox__
 Note that in this case all __RadComboBoxItems__ will be disabled. However, you have the ability to determine which items to be disabled based on your custom logic. [Check out](#enabledisable-items-using-itemcontainerstyleselector) the next section to see the solution.
 
 #### __Figure 2: Result of Example 5__
-![{{ site.framework_name }} RadComboBox Result of Example 5](images/RadComboBox_HowTo_EnableDisableItems_020.png)
+![Telerik UI for WPF RadComboBox with all items disabled by an ItemContainerStyle](images/RadComboBox_HowTo_EnableDisableItems_020.png)
 
 ## Enable\Disable Items Using ItemContainerStyleSelector
 
@@ -72,7 +73,7 @@ __Example 7: Apply styles based on custom logic__
 
 
 #### __Figure 3: The result is that every odd item is disabled__
-![{{ site.framework_name }} RadComboBox The result is that every odd item is disabled](images/RadComboBox_HowTo_EnableDisableItems_030.png)
+![Telerik UI for WPF RadComboBox with every odd item disabled by an ItemContainerStyleSelector](images/RadComboBox_HowTo_EnableDisableItems_030.png)
 
 ## Using Style Binding
 
@@ -89,7 +90,7 @@ __Example 8: Use of style binding__
 Two things should be mentioned here. First, note how the __IsEnabled__ property is bound in the __Style__. Second, the declared __Style__ is set as a __ItemContainerStyle__ of the __RadComboBox__. The result is shown on the image below.
 
 #### __Picture 4: Result of Example 5__
-![{{ site.framework_name }} RadComboBox with Styled Disabled Items](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
+![Telerik UI for WPF RadComboBox with disabled items styled through property binding](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
 {% endif %}
 
 ## See Also  

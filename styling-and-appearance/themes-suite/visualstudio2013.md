@@ -2,6 +2,7 @@
 title: VisualStudio2013 Theme
 page_title: VisualStudio2013 Theme
 description: This article provides an overview of the VisualStudio2013 theme from the UI for {{ site.framework_name }} suite.
+components: ["general"]
 slug: common-styling-appearance-visualstudio2013-theme
 tags: visualstudio2013,theme,dynamic,fontsize,fontfamily
 published: True
@@ -94,7 +95,7 @@ The only resource that is of type Color and does not have a respective SolidColo
 
 The following screenshot shows the usage of some of the brushes:
 
-![Common Styling Appearance VS 2013 Theme 01](../images/Common_Styling_Appearance_VS2013_Theme_01.png)
+![Telerik UI for WPF Visual Studio 2013 theme brushes usage](../images/Common_Styling_Appearance_VS2013_Theme_01.png)
 
 ## Changing Palette Colors
 
@@ -115,7 +116,7 @@ There are three palettes of colors which can be easily set by choosing one of th
 
 The next screenshot displays RadCalendar in the three color variations:
 
-![Common Styling Appearance VS 2013 Theme 02](../images/Common_Styling_Appearance_VS2013_Theme_02.png)
+![Telerik UI for WPF Visual Studio 2013 theme color variations for RadCalendar preview](../images/Common_Styling_Appearance_VS2013_Theme_02.png)
 
 You can switch the three color palettes by calling the `LoadPreset` method as shown below:        
 
@@ -205,7 +206,7 @@ As the following example shows, you can change the default FontFamily from "Sego
 
 This will be the final result:
 
-![Common Styling Appearance VS 2013 Theme](../images/Common_Styling_Appearance_VS2013_Theme_03.png)
+![Telerik UI for WPF Visual Studio 2013 theme changed font preview](../images/Common_Styling_Appearance_VS2013_Theme_03.png)
 
 ## Changing Opacity
 

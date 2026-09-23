@@ -2,6 +2,7 @@
 title: Tooltip
 page_title: Tooltip
 description: This article allows demonstrates how to display a tooltip when the user's mouse is over the RadNotifyIcon.
+components: ["notifyicon"]
 slug: radnotifyicon-tooltip
 tags: tooltip, notifyicon
 position: 3

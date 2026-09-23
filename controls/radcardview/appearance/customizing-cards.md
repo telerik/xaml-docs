@@ -2,6 +2,7 @@
 title: Customizing Cards
 page_title: Customizing Cards
 description: RadCardView cards can be cusomized using several properties of the control.
+components: ["cardview"]
 slug: radcardview-appearance-customizing-cards
 tags: cards,customize
 published: True

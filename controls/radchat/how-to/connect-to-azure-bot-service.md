@@ -2,6 +2,7 @@
 title: Connect to Azure Bot Service 
 page_title: Connect to Azure Bot Service 
 description: Check our &quot;Connect to Azure Bot Service&quot; documentation article for the RadChat {{ site.framework_name }} control.
+components: ["chat"]
 slug: chat-azure-bot-service
 tags: azure, service
 published: True
@@ -66,6 +67,3 @@ __Example 4: Adding suggested action to the RadChat__
 
 * [Getting Started]({%slug chat-getting-started%})
 * [Typing Indicator]({%slug chat-items-typing-indicator%})
-* [Azure Cloud Integration Getting Started]({%slug cloud-integration-azure-getting-started%})
-* [Azure Cloud Integration Blob Storage]({%slug cloud-integration-azure-blob-storage%})
-* [Azure Cloud Integration TextAnalysis]({%slug cloud-integration-cognitive-services-text-analysis%})

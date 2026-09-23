@@ -2,6 +2,7 @@
 title: Using XML
 page_title: Using XML
 description: This article will demonstrate how you can create in-memory data and use it in your {{ site.framework_name }} application.
+components: ["general"]
 slug: consuming-data-using-xml
 tags: using,xml
 published: True

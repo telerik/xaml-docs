@@ -2,6 +2,7 @@
 title: Axis
 page_title: Axis
 description: This article outlines the common functionality for the different types of axes available in the RadChartView suite.
+components: ["chartview"]
 slug: radchartview-axes-axis
 tags: axis
 published: True
@@ -10,7 +11,7 @@ position: 0
 
 # Axis
 
-The `RadCartesianChart` and `RadPolarChart` plot data points in a coordinate system defined by two axes. There are a few different types of axes and they are: __Linear__, __Logarithmic__, __DateTime__ and __Categorical__. This article discusses the common characteristics of the axes, as well as the specifics of the `LinerAxis`. The other types are discussed in their respective help articles.        
+The `RadCartesianChart` and `RadPolarChart` plot data points in a coordinate system defined by two axes. There are a few different types of axes and they are: __Linear__, __Logarithmic__, __DateTime__ and __Categorical__. This article discusses the common characteristics of the axes, as well as the specifics of the `LinearAxis`. The other types are discussed in their respective help articles.        
 
 The chart axis is represented by the abstract `Axis` class and is responsible for displaying ticks that simply mark values on the axis at fixed positions. The axis also displays labels that are used to provide a visualization of the values at some or all of the ticks. The default visualization of the labels is text.        
 
@@ -42,7 +43,7 @@ The chart axes share a set of common features that can be used via the following
 
 * [LabelFitMode]({%slug radchartview-axes-labels%}): The axis labels can be laid out in specific ways in order to improve their readability when they become too long and start to overlap each other. `LabelFitMode` positions the labels on different lines and the other fit mode rotates the labels some user defined degree so that they appear inclined or orthogonal to the axis, making them easier to read.        
 
-	![{{ site.framework_name }} RadChartView LabelFit Modes](images/radchartview-chart_axes_labelfitmode.png)
+	![Telerik UI for WPF RadChartView LabelFit Modes for Preventing Axis Label Overlap](images/radchartview-chart_axes_labelfitmode.png)
 
 * `ElementBrush`: A `Brush` typed property that colorizes all axis elements (line, ticks, labels and title) at once. You can see the property in action in the [Multiple Axes]({%slug radchartview-axes-multipleaxes%}) article.
 
@@ -66,7 +67,7 @@ __BinaryTemplateSelector Definition__
 <snippet id='radchartview-axes-axis-binarytemplateselector_definition-vb' />
 
 
-![RadChartView Horizontal Axis with LabelTemplateSelector](images/radchartview-chart_axes_axisconfig.png)
+![Telerik UI for WPF RadChartView Horizontal Axis with a LabelTemplateSelector](images/radchartview-chart_axes_axisconfig.png)
 
 ## Getting the Axis Actual Range
 
@@ -74,7 +75,7 @@ The range of the chart's continuous axes (LinearAxis, LogarithmicAxis and DateTi
 
 * `ActualRange`&mdash;The property returns an object of type `ValueRange<T>` that contains the actual visible range of the axis. This is the range visible in the plot area of the control. The `ActualVisibleRange` will be different than the `ActualRange` when you zoom-in the chart. See also the `ActualRangeChanged` event in the [Common Events](#common-events) section of this article.
 
-* `ActualVisibleRange`&mdash;The property returns an object of type `ValueRange<T>` that contains the the actual range of the axis - minimum and maximum. See also the `ActualVisibleRangeChanged` event in the [Common Events](#common-events) section of this article.
+* `ActualVisibleRange`&mdash;The property returns an object of type `ValueRange<T>` that contains the actual range of the axis - minimum and maximum. See also the `ActualVisibleRangeChanged` event in the [Common Events](#common-events) section of this article.
 
 * `ActualMajorStep`&mdash;The property returns a numeric value that determines the actual major step of the axis. Available only for `LinearAxis`. See also the `ActualMajorStepChanged` event in the [Common Events](#common-events) section of this article.
 

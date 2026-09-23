@@ -2,6 +2,7 @@
 title: Drawing Tools
 page_title: Drawing Tools
 description: Check our &quot;Drawing Tools&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagram-features-drawing
 tags: drawing,tools
 published: True

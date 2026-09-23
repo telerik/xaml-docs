@@ -2,6 +2,7 @@
 title: Load on Demand
 page_title: Load on Demand
 description: This article demonstrates how to load only the appointments in the visible range of the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: scheduleview-features-loadondemand
 tags: load,on,demand,with,radscheduleview
 published: True

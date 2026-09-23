@@ -2,6 +2,7 @@
 title: Custom Appointment
 page_title: Custom Appointment
 description: Check our &quot;Custom Appointment&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-appointments-custom-appointment
 tags: custom,appointment
 published: True

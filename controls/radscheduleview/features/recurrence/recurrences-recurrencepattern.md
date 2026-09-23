@@ -2,6 +2,7 @@
 title: RecurrencePattern
 page_title: RecurrencePattern
 description: Check our &quot;RecurrencePattern&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-features-recurrences-recurrencepattern
 tags: recurrencepattern
 published: True

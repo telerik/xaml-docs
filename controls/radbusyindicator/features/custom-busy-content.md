@@ -2,6 +2,7 @@
 title: Custom Busy Content
 page_title: Custom Busy Content
 description: Check our &quot;Custom Busy Content&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
+components: ["busyindicator"]
 slug: radbusyindicator-features-custom-busy-content
 tags: custom,busy,content
 published: True

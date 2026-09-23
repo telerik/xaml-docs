@@ -2,6 +2,7 @@
 title: Active State Visualization Mode
 page_title: Active State Visualization Mode
 description: Check our &quot;Active State Visualization Mode&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-active-state-visualisation-mode
 tags: state, active, visualisation 
 published: True

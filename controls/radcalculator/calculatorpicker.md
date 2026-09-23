@@ -2,6 +2,7 @@
 title: Calculator Picker
 page_title: Calculator Picker
 description: Check our &quot;RadCalculatorPicker&quot; documentation article for the RadCalculator {{ site.framework_name }} control.
+components: ["calculator"]
 slug: radcalculatorpicker-gettingstarted
 tags: radcalculatorpicker
 published: True

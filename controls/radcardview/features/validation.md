@@ -2,6 +2,7 @@
 title: Data Validation
 page_title: Data Validation
 description: The article describes the data validation feature of RadCardView.
+components: ["cardview"]
 slug: radcardview-features-validation
 tags: editing,cardview
 published: True

@@ -2,6 +2,7 @@
 title: RadarAreaSeries
 page_title: RadarAreaSeries
 description: Check our &quot;RadarAreaSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-radarareaseries
 tags: radarareaseries
 published: True
@@ -20,7 +21,7 @@ You can use the following definition to display a simple RadarAreaSeries
 <snippet id='radchartview-series-polarchart-series-area-series-radarareaseries-block_1-xaml' />
 
 
-![radchartview-series-radarareaseries](images/radchartview-series-radarareaseries.png)
+![Telerik UI for WPF RadChartView RadarAreaSeries visual appearance](images/radchartview-series-radarareaseries.png)
 
 ## See Also
  * [Chart Series Overview]({%slug radchartview-series-chartseries%})

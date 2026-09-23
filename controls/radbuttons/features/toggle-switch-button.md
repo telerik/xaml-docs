@@ -2,6 +2,7 @@
 title: Toggle Switch Button
 page_title: Toggle Switch Button
 description: Check our &quot;Toggle Switch Button&quot; documentation article for the RadButtons {{ site.framework_name }} control.
+components: ["buttons"]
 slug: radbuttons-features-toggle-switch-button
 tags: toggle,button,switch
 published: True

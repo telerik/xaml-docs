@@ -2,6 +2,7 @@
 title: Custom Cell Content
 page_title: Custom Cell Content
 description: Learn how you can use custom controls as the content of the RadVirtualGrid cells by specifying a custom DataTemplate.
+components: ["virtualgrid"]
 slug: radvirtualgrid-custom-cell-content
 tags: celltooltip,virtualgrid,
 published: True

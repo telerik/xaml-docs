@@ -2,6 +2,7 @@
 title: Import/Export
 page_title: Import/Export
 description: Check our &quot;Import/Export&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-import-export
 tags: import, export, save, open
 published: True

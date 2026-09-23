@@ -2,6 +2,7 @@
 title: NavigationBehavior
 page_title: NavigationBehavior
 description: This article will demonstrate the NavigationBehavior feature of RadScheduleView.
+components: ["scheduleview"]
 slug: radscheduleview-features-navigationbehavior
 tags: navigationbehavior
 published: True
@@ -25,6 +26,8 @@ __Example 2: Applying the custom NavigationBehavior__
 <snippet id='radscheduleview-features-navigationbehavior-block_3-xaml' />
 
 ## See Also
+
+ * [Scroll an Appointment or Slot into View]({%slug radscheduleview-features-commands%}#scroll-an-appointment-or-slot-into-view)
 
  * [SlotSelectionBehavior]({%slug radscheduleview-features-slot-selection-behavior%})
 

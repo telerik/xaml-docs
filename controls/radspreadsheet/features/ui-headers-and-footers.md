@@ -2,10 +2,11 @@
 title: Headers and Footers
 page_title: Headers and Footers
 description: Check our &quot;Headers and Footers&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-headers-and-footers
 tags: header,footer
 published: True
-position: 6
+position: 10
 ---
 
 # Headers and Footers

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadRating {{ site.framework_name }} control.
+components: ["rating"]
 slug: populating-overview
 tags: overview
 published: True

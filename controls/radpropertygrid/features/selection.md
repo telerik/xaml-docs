@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: This article demonstrates the Selection functionality of the RadPropertyGrid.
+components: ["propertygrid"]
 slug: radpropertygrid-selection
 tags: selection
 published: True

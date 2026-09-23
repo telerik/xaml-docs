@@ -2,6 +2,7 @@
 title: Spellcheck
 page_title: Spellcheck
 description: Check our &quot;Spellcheck&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-spellcheck
 tags: spellcheck
 published: True

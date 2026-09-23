@@ -2,6 +2,7 @@
 title: DoubleGroupDescription
 page_title: DoubleGroupDescription
 description: Check our &quot;DoubleGroupDescription&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-doublegroupdescription
 tags: doublegroupdescription
 published: True

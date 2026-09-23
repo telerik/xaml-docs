@@ -2,6 +2,7 @@
 title: RelativeStrengthIndexIndicator
 page_title: RelativeStrengthIndexIndicator
 description: Check our &quot;RelativeStrengthIndexIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-relativestrengthindexindicator
 tags: financial, indicators, relativestrengthindexindicator
 publish: True

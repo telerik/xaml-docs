@@ -2,6 +2,7 @@
 title: Styling the RadRibbonView TitleBar
 page_title: Styling the RadRibbonView TitleBar
 description: Check our &quot;Styling the RadRibbonView TitleBar&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+components: ["ribbonview"]
 slug: radribbonview-styling-titlebar
 tags: styling,the,radribbonview,titlebar
 published: True

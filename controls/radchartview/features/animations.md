@@ -2,6 +2,7 @@
 title: Animations
 page_title: Animations
 description: Check our &quot;Animations&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-features-animations
 tags: Animations
 published: True
@@ -27,7 +28,7 @@ With the __R2 2018__ version of our controls, you can now animate RadChartView s
 * [Notes](#notes)
 
 #### __Figure 1: Chart Animations__
-![{{ site.framework_name }} RadChartView Chart Animations](images/radchartview-features-animations-main-animations.gif)
+![Telerik UI for WPF RadChartView Chart Animation Demonstration](images/radchartview-features-animations-main-animations.gif)
 
 ## Animation Types
 
@@ -38,7 +39,7 @@ https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPE
 
 ### Animation Base Class
 
-The build-in animations of the chart derives from the __ChartAnimationBase__ base class. All animation expose the following properties which can be used to further customize their effect.
+The built-in animations of the chart derives from the __ChartAnimationBase__ base class. All animation expose the following properties which can be used to further customize their effect.
 
 * __Delay:__ A property of type __TimeSpan__ that gets or sets the delay of the chart animation instance.
 * __Duration:__ A property of type __TimeSpan__ that gets or sets the duration of the chart animation instance.
@@ -59,7 +60,7 @@ __Example 1: Setting move animation in XAML__
 
 
 #### __Figure 2: This animation look as follows__
-![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-MoveAnimation.gif)
+![Telerik UI for WPF RadChartView Move Animation](images/radchartview-features-animations-MoveAnimation.gif)
 
 ### Reveal Animation
 
@@ -77,7 +78,7 @@ __Example 2: Setting reveal animation in XAML__
 
 
 #### __Figure 3: This animation look as follows__
-![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-reveal-animation.gif)
+![Telerik UI for WPF RadChartView Reveal Animation](images/radchartview-features-animations-reveal-animation.gif)
 
 ### Fade Animation
 
@@ -91,7 +92,7 @@ __Example 3: Setting fade animation in XAML__
 
 
 #### __Figure 4: This animation look as follows__
-![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-fade-animation.gif)
+![Telerik UI for WPF RadChartView Fade Animation](images/radchartview-features-animations-fade-animation.gif)
 
 ### Drop and Fade Animation
 
@@ -102,7 +103,7 @@ __Example 4: Setting drop and fade animation in XAML__
 
 
 #### __Figure 5: This animation look as follows__
-![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-drop-fade-animation.gif)
+![Telerik UI for WPF RadChartView Drop-Fade Animation](images/radchartview-features-animations-drop-fade-animation.gif)
 
 ### Scale Animation
 
@@ -121,7 +122,7 @@ __Example 5: Setting scale animation in XAML__
 
 
 #### __Figure 6: This animation look as follows__
-![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-scale-animation.gif)
+![Telerik UI for WPF RadChartView Scale Animation](images/radchartview-features-animations-scale-animation.gif)
 
 ### Pie Chart Angle Range Animation
 
@@ -137,7 +138,7 @@ __Example 6: Setting pie chart angle range animation in XAML__
 
 
 #### __Figure 7: This animation look as follows__
-![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-pie-angle-range-animation.gif)
+![Telerik UI for WPF RadChartView Pie Chart Angle Range Animation](images/radchartview-features-animations-pie-angle-range-animation.gif)
 
 ### Pie Chart Radius Factor Animation
 
@@ -150,7 +151,7 @@ __Example 7: Setting pie chart radius factor animation in XAML__
 
 
 #### __Figure 8: This animation look as follows__
-![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-pie-radius-factor-animation.gif)
+![Telerik UI for WPF RadChartView Pie Chart Radius Factor Animation](images/radchartview-features-animations-pie-radius-factor-animation.gif)
 
 ## Custom Animation
 
@@ -165,7 +166,7 @@ __Example 8: Setting custom animation in XAML__
 
 
 #### __Figure 9: This custom animation look as follows__
-![{{ site.framework_name }} RadChartView This custom animation look as follows](images/radchartview-features-animations-custom-animation.gif)
+![Telerik UI for WPF RadChartView Custom Chart Animation](images/radchartview-features-animations-custom-animation.gif)
 
 ## Events
 

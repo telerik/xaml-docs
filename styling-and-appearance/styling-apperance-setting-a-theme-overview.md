@@ -2,6 +2,7 @@
 title: Setting a Theme
 page_title: Setting a Theme 
 description: This article provides an overview of the different mechanisms for setting a theme in Telerik UI for {{ site.framework_name }}. 
+components: ["general"]
 slug: styling-apperance-implicit-styles-overview
 tags: setting,a,theme,(using,implicit,styles)
 published: True
@@ -95,7 +96,7 @@ All styles and templates for the themes are encapsulated in **theme dlls** locat
 The default styles and resources for each theme are shipped also in the **/Telerik UI for {{ site.framework_name }} installation folder/Themes.Implicit** folder. In order to apply a certain theme for your application you can copy all the required **XAML** files from the respective theme's folder (depends on the set of controls you are using) in a folder from your application. And then merge the ResourceDictionaries in the application's **MergedDictionaries** collection. You should merge all .xaml files corresponding to each assembly reference you have in your project, as shown in **Example 2** and **Figure 1**. 
 
 #### Figure 1: Copy the needed XAML files in a separate folder in your application
-![implicit styles 3](images/implicit-styles-themes-folder.PNG)
+![Telerik UI for WPF implicit styles theme folder in the project](images/implicit-styles-themes-folder.PNG)
 
 __The MergedDictionaries in your application resources__
 

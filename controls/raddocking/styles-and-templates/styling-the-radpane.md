@@ -2,6 +2,7 @@
 title: Styling the RadPane
 page_title: Styling the RadPane
 description: This article demonstrates how the RadPane elements can be styled.
+components: ["docking"]
 slug: raddocking-styling-the-radpane
 tags: styling,the,radpane
 published: True

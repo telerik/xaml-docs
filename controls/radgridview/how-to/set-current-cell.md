@@ -2,6 +2,7 @@
 title: Set the Current Cell
 page_title: Set the Current Cell
 description: Learn how to set the current cell of the Telerik {{ site.framework_name }} DataGrid by specifying an item from the Items collection and a column from the Columns collection.
+components: ["gridview"]
 slug: gridview-how-to-set-current-cell
 tags: set,the,current,cell
 published: True

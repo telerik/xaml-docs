@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection
 description: This article demonstrates the selection feature of the RadTileView control.
+components: ["tileview"]
 slug: radtileview-selection
 tags: animation
 published: True

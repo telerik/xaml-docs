@@ -2,6 +2,7 @@
 title: RadWindowManager
 page_title: RadWindowManager
 description: Check our &quot;RadWindowManager&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-features-radiwindowmanager
 tags: radwindowmanager
 published: True

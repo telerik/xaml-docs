@@ -2,10 +2,11 @@
 title: Worksheet Editor Dialogs
 page_title: Worksheet Editor Dialogs
 description: Check our &quot;Worksheet Editor Dialogs&quot; documentation article for the RadSpreadsheet WPF control.
+components: ["spreadsheet"]
 slug: radspreadsheet-worksheet-editor-dialogs
 tags: worksheet,dialogs
 published: True
-position: 15
+position: 19
 ---
 
 # Worksheet Editor Dialogs

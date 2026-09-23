@@ -2,6 +2,7 @@
 title: Custom RadDiagramConnection With Additional Caps
 page_title: Custom RadDiagramConnection 
 description: Extend the base implementation of the RadDiagramConnection element, by adding additional Path elements for displaying Caps, to its ControlTemplate.
+components: ["diagram"]
 type: how-to
 slug: kb-diagram-custom-connection-cap
 position: 0

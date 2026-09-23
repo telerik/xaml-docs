@@ -2,6 +2,7 @@
 title: Groups
 page_title: Groups
 description: Check our &quot;Groups&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radgauge-features-groups
 tags: groups
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Check our &quot;Overview&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-annotations-overview
 tags: overview
 published: True
@@ -34,4 +35,4 @@ The ChartView provides the following types of annotations:
 
 * Polar Custom
 
-![Rad Chart View-annotations-classes](images/RadChartView-annotations-classes.png)
+![Telerik UI for WPF RadChartView annotation classes including Cartesian, polar, radial, and custom annotations](images/RadChartView-annotations-classes.png)

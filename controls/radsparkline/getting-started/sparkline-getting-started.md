@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started
 description: Check our &quot;Getting Started&quot; documentation article for the RadSparkLine {{ site.framework_name }} control.
+components: ["sparkline"]
 slug: radsparkline-getting-started
 tags: databinding,mvvm,getting,started
 published: True

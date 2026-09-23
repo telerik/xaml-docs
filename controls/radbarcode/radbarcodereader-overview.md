@@ -2,6 +2,7 @@
 title: RadBarcodeReader 
 page_title: RadBarcodeReader 
 description: Check our &quot;RadBarcodeReader&quot; documentation article for the RadBarcode {{ site.framework_name }} control.
+components: ["barcode"]
 slug: radbarcodereader-overview
 tags: radbarcodereader,
 published: True

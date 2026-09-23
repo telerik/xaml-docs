@@ -2,6 +2,7 @@
 title: Persistence
 page_title: Persistence
 description: Check our &quot;Persistence&quot; documentation article for the RadPivotGrid {{ site.framework_name }} control.
+components: ["pivotgrid"]
 slug: radpivotgrid-features-persistence
 tags: persistence
 published: True

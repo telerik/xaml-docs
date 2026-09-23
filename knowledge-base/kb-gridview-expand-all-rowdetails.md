@@ -2,6 +2,7 @@
 title: Expand and Collapse All Row Details in RadGridView
 page_title: Toggle Expand State of Row Details in DataGrid
 description: Expand or collapse all row details in GridView by binding the DetailsVisibility property.
+components: ["gridview"]
 type: how-to
 slug: kb-gridview-expand-all-rowdetails
 position: 0

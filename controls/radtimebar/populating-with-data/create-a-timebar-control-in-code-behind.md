@@ -2,6 +2,7 @@
 title: Create a TimeBar control in Code-behind
 page_title: Create a TimeBar control in Code-behind
 description: Check our &quot;Create a TimeBar control in Code-behind&quot; documentation article for the RadTimeBar {{ site.framework_name }} control.
+components: ["timebar"]
 slug: radtimebar-create-a-timebar-control-in-code-behind
 tags: create,a,timebar,control,in,code-behind
 published: True

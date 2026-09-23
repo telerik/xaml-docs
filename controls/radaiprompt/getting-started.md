@@ -1,7 +1,8 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our "Getting Started" documentation article for the RadAIPrompt control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: radaiprompt-getting-started
 tags: getting started, radaiprompt
 published: True

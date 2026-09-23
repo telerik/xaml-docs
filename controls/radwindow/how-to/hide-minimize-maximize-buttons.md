@@ -2,6 +2,7 @@
 title: Hide the Maximize and Minimize buttons
 page_title: Hide the Maximize and Minimize buttons
 description: Check our &quot;Hide the Maximize and Minimize buttons&quot; documentation article for the RadWindow {{ site.framework_name }} control.
+components: ["window"]
 slug: radwindow-how-to-hide-minimize-maximize-buttons
 tags: hide,the,maximize,and,minimize,buttons
 published: True

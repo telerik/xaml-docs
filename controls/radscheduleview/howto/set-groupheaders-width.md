@@ -2,6 +2,7 @@
 title: Set GroupHeaders Width
 page_title: Set GroupHeaders Width
 description: Check our &quot;Set GroupHeaders Width&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
+components: ["scheduleview"]
 slug: radscheduleview-howto-set-groupheaders-width
 tags: set,custom,groupheaders,width
 published: True

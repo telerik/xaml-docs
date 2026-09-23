@@ -2,6 +2,7 @@
 title: Layout
 page_title: Layout
 description: Check our &quot;Layout&quot; documentation article for the RadStepProgressBar WPF control.
+components: ["stepprogressbar"]
 slug: stepprogressbar-layout
 tags: layout
 position: 5

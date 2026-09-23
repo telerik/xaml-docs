@@ -2,6 +2,7 @@
 title: Export
 page_title: Export Events
 description: Learn more about the export events of Telerik's {{ site.framework_name }} DataGrid that occur when you export data from the grid.
+components: ["gridview"]
 slug: gridview-events-export-events
 tags: export
 published: True

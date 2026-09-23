@@ -2,6 +2,7 @@
 title: PlotBand Annotations
 page_title: PlotBand Annotations
 description: Check our &quot;PlotBand Annotations&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-annotations-plotband
 tags: plotband,annotations
 published: True
@@ -21,7 +22,7 @@ Here is what __CartesianPlotBandAnnotation__ looks like:
 <snippet id='radchartview-features-annotations-plotband-block_1-xaml' />
 
 
-![Rad Chart View-annotations-cartesian-plotband](images/RadChartView-annotations-cartesian-plotband.png)
+![Telerik UI for WPF RadChartView Cartesian plot band annotations](images/RadChartView-annotations-cartesian-plotband.png)
 
 ## Polar Axis PlotBand Annotation
 
@@ -32,7 +33,7 @@ Here is what __PolarAxisPlotBandAnnotation__ looks like:
 <snippet id='radchartview-features-annotations-plotband-block_2-xaml' />
 
 
-![Rad Chart View-annotations-polar-plotband](images/RadChartView-annotations-polar-plotband.png)
+![Telerik UI for WPF RadChartView polar axis plot band annotation](images/RadChartView-annotations-polar-plotband.png)
 
 ## Radial Axis PlotBand Annotation
 
@@ -43,14 +44,14 @@ A plotband starting from *180* degrees and ending in *270* degrees will look lik
 <snippet id='radchartview-features-annotations-plotband-block_3-xaml' />
 
 
-![{{ site.framework_name }} RadChartView Radial Axis PlotBand Annotation from 180 to 270](images/RadChartView-annotations-polar-plotband-180-270.png)
+![Telerik UI for WPF RadChartView Polar Chart PlotBand Annotation on the Radial Axis from 180 to 270 Degrees](images/RadChartView-annotations-polar-plotband-180-270.png)
 
 If you wonder how to annotate the bigger segment from the image above, then you should switch the __From__ and __To__ values.
 
 <snippet id='radchartview-features-annotations-plotband-block_4-xaml' />
 
 
-![{{ site.framework_name }} RadChartView Radial Axis PlotBand Annotation from 270 to 180](images/RadChartView-annotations-polar-plotband-270-180.png)
+![Telerik UI for WPF RadChartView Polar Chart PlotBand Annotation on the Radial Axis from 270 to 180 Degrees](images/RadChartView-annotations-polar-plotband-270-180.png)
 
 ## Properties
 

@@ -2,6 +2,7 @@
 title: FunnelSeries
 page_title: FunnelSeries
 description: Check our &quot;FunnelSeries&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-series-funnelchart-funnelseries
 tags: funnelseries
 published: True
@@ -27,7 +28,7 @@ __Example 1: Declaring an FunnelSeries in XAML__
 
 
 #### __Figure 1: FunnelSeries visual appearance__
-![ radchartview-series-funnelchart-funnelseries](images/radchartview-series-funnelseries.png)
+![Telerik UI for WPF RadChartView FunnelSeries visual appearance](images/radchartview-series-funnelseries.png)
 
 ## Properties
 
@@ -73,7 +74,7 @@ __Example 4: Set label connectors__
 
 
 #### __Figure 1: Label connectors visual appearance__
-![ radchartview-series-funnelseries_labels](images/radchartview-series-funnelseries_labels.png)
+![Telerik UI for WPF RadChartView FunnelSeries with data point labels](images/radchartview-series-funnelseries_labels.png)
 
 ## Styling the Series
 

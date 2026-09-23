@@ -2,6 +2,7 @@
 title: Polar Axis
 page_title: Polar Axis
 description: Check our &quot;Polar Axis&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-axes-polaraxis
 tags: polar,axis
 published: True
@@ -10,17 +11,36 @@ position: 4
 
 # Polar Axis
 
+To create a valid `RadPolarChart`, set its `PolarAxis` and `RadialAxis` properties to `PolarAxis` and `NumericRadialAxis` objects, respectively.
 
+## PolarAxis
 
-## 
+The `PolarAxis` class plots points along the radius of the chart. It provides the following properties:
 
-In order to create a valid RadPolarChart object users must set its __PolarAxis__ and __RadialAxis__ properties to __PolarAxis__ and __NumericRadialAxis__ objects respectively.
-The PolarAxis class contains three properties and these are __MajorStep__, __Minimum__ and __Maximum__ which define the tick step, the minimum value and the maximum value of the axis.
-NumericRadialAxis does not define any properties specific to it.
+* __MajorStep__: Defines the major step between each axis tick.
+* __Minimum__: Defines the user-defined minimum value of the axis.
+* __Maximum__: Defines the user-defined maximum value of the axis.
+* __IsInverse__: A boolean property inherited from `LineAxis` that determines whether the axis range is inverted (moving inward from the outer edge).
 
-Below is an example of RadPolarChart that demonstrates the properties of its polar axis:
+## RadialAxis and NumericRadialAxis
+
+The radial axis is the circular (angle) axis of the `RadPolarChart`.
+
+`RadialAxis` provides the following properties:
+
+* __SweepDirection__: A property of type `System.Windows.Media.SweepDirection` that controls the direction in which the radial angles and numbers advance. By default, it is set to `Counterclockwise`. Setting it to `Clockwise` reverses the sweep direction so values advance clockwise around the chart.
+
+`NumericRadialAxis` extends `RadialAxis` to plot numerical angle values and defines:
+
+* __MajorStep__: Gets or sets the step of the ticks on the axis ellipse.
+* __MinorTicksPerMajor__: Gets or sets the number of minor ticks per major interval.
+* __MinorTickTemplate__: Gets or sets the data template for minor ticks.
+* __MinorTickStyle__: Gets or sets the style applied to minor ticks.
+
+## Example
+
+Below is an example of `RadPolarChart` that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
 
 <snippet id='radchartview-axes-polaraxis-block_1-xaml' />
 
-
-![Rad Chart View-chart axes polaraxis](images/RadChartView-chart_axes_polaraxis.PNG)
+![Telerik UI for WPF RadChartView polar chart with a PolarAxis and radial axis](images/RadChartView-chart_axes_polaraxis.PNG)

@@ -2,6 +2,7 @@
 title: Mentions (Suggestions)
 page_title: Mentions (Suggestions)
 description: Check our &quot;Mentions (Suggestions)&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+components: ["richtextbox"]
 slug: radrichtextbox-features-mentions
 tags: mentions, suggestions, autocomplete, automatic, docx, richtextbox
 published: True

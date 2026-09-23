@@ -2,10 +2,11 @@
 title: Worksheet UI Layers Builder
 page_title: Worksheet UI Layers Builder
 description: Check our &quot;Worksheet UI Layers Builder&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
+components: ["spreadsheet"]
 slug: radspreadsheet-worksheet-ui-layers-builder
 tags: worksheet,ui,layers,builder
 published: True
-position: 14
+position: 20
 ---
 
 # Worksheet UI Layers Builder

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - Badge WPF
 description: Check our &quot;Getting Started&quot; documentation article for the RadBadge WPF control.
+components: ["badge"]
 slug: radbadge-getting-started
 tags: getting,started
 published: True
@@ -29,7 +30,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 ## Defining the RadBadge
 
-__Defining RadBage in XAML__
+__Defining RadBadge in XAML__
 <snippet id='radbadge-getting-started-defining_radbage_in_xaml-cs' />
 
 #### Figure 1: RadBadge Example

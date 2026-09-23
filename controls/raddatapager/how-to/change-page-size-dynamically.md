@@ -2,6 +2,7 @@
 title: Change PageSize Dynamically
 page_title: Change PageSize Dynamically
 description: This article demonstrates how to dynamically change the PageSize of the RadDataPager control.
+components: ["datapager"]
 slug: raddatapager-change-page-size-dynamically
 tags: change,pagesize,dynamically
 published: True

@@ -2,6 +2,7 @@
 title: StochasticSlowIndicator
 page_title: StochasticSlowIndicator
 description: Check our &quot;StochasticSlowIndicator&quot; documentation article for the RadChartView {{ site.framework_name }} control.
+components: ["chartview"]
 slug: radchartview-indicators-stochasticslowindicator
 tags: financial, indicators, stochasticslowindicator
 publish: True

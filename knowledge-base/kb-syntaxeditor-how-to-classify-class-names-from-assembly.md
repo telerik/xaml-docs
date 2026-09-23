@@ -2,6 +2,7 @@
 title: Colorize Public Classes from an Assembly with a Custom CSharpTagger
 page_title: Add the Class Names from an Assembly to the Keywords Colored by the CSharpTagger
 description: Display the Class Names from an Assembly with a Different Color.
+components: ["syntaxeditor"]
 type: how-to
 slug: kb-syntaxeditor-how-to-classify-class-names-from-assembly
 position: 0

@@ -1,6 +1,7 @@
 ---
 title: Rendering Issue in RadChartView3D On Specific Devices
 description: The 3D ChartView element is rendered fragmented on devices with specific video and processor models and drivers.
+components: ["chartview3d"]
 type: troubleshooting
 page_title: Wrong 3D rendering of RadChartView3D On Some Hardware - for example Intel Iris Graphics
 slug: kb-chartview3d-general-rendering-issue

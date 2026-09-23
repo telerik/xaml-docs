@@ -2,6 +2,7 @@
 title: Marker
 page_title: Marker
 description: Check our &quot;Marker&quot; documentation article for the RadGauge {{ site.framework_name }} control.
+components: ["gauge"]
 slug: radial-scale-marker
 tags: marker
 published: True

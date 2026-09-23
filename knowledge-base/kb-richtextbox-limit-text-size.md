@@ -1,6 +1,7 @@
 ---
 title: RichTextBox limit input to view area
 description: Describes how you can ensure that the content of the control doesn't exceed the applied size.
+components: ["richtextbox"]
 type: how-to
 page_title: Limit content length of RadRichTextBox
 slug: kb-richtextbox-limit-text-size

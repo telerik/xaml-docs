@@ -1,6 +1,7 @@
 ---
 title: How to Change Theme Variation During Runtime
 description: This article explains how to change a theme's variation while the application is running.
+components: ["general"]
 type: how-to
 page_title: Switch Theme's Variation while Application Is Running
 slug: kb-theming-change-theme-variation-runtime

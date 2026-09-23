@@ -2,6 +2,7 @@
 title: ZOrder
 page_title: ZOrder
 description: Check our &quot;ZOrder&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+components: ["diagram"]
 slug: raddiagrams-features-zorder
 tags: zorder
 published: True

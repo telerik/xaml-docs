@@ -2,6 +2,7 @@
 title: Perform Selection Only On Lost Focus or Enter Key Press
 page_title: Perform Selection Only On Lost Focus or Enter Key Press
 description: Check our &quot;Perform Selection Only On Lost Focus or Enter Key Press&quot; documentation article for the RadComboBox {{ site.framework_name }} control.
+components: ["combobox"]
 slug: radcombobox-how-to-perform-selection-only-lost-focus
 tags: how,to,perform,selection,only,lost,focus,enter,key
 published: True

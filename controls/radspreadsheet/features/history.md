@@ -2,9 +2,11 @@
 title: History
 page_title: History
 description: Check our &quot;History&quot; documentation article for the RadSpreadsheet control.
+components: ["spreadsheet"]
 slug: radspreadsheet-history
 tags: history
 published: True
+position: 12
 ---
 
 # History

@@ -2,6 +2,7 @@
 title: Restore the focus
 page_title: Restore the focus
 description: Check our &quot;Restore the focus&quot; documentation article for the RadBusyIndicator {{ site.framework_name }} control.
+components: ["busyindicator"]
 slug: radbusyindicator-how-to-restore-the-focus
 tags: restore,the,focus
 published: True

@@ -2,6 +2,7 @@
 title: Enable and Disable Menu Items
 page_title: Enable and Disable Menu Items
 description: Check our &quot;Enable and Disable Menu Items&quot; documentation article for the RadMenu {{ site.framework_name }} control.
+components: ["menu"]
 slug: radmenu-how-to-enable-disable-menu-items
 tags: enable,and,disable,menu,items
 published: True

@@ -1,6 +1,6 @@
 ---
 title: RadButton TargetType Does Not Match Type of Element in Side-by-Side Add-ins
-description: Resolving the "'RadButton' TargetType does not match type of element 'RadButton'" XamlParseException when loading multiple add-ins side by side in ArcGIS Pro, Revit, AutoCAD, or Office.
+description: Fix the "'RadButton' TargetType does not match type of element 'RadButton'" error in WPF add-ins loaded side by side in host apps.
 components: ["buttons"]
 type: troubleshooting
 page_title: RadButton TargetType Does Not Match Type of Element in Add-in Projects

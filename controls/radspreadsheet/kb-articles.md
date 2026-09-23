@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of th
 
 |KB Article|
 |----|
+|[Extract All Images from a Worksheet and Save Them as Files]({%slug kb-spreadsheet-extract-images-from-worksheet%})|
 |[Improve Initial Load Performance of RadSpreadsheet]({%slug kb-spreadsheet-preload-resources%})|
 |[Save Executed Event in RadSpreadsheet]({%slug kb-spreadsheet-savefile-command-executed-event%})|
 |[Track changes in workbook]({%slug workbook-track-changes%})|

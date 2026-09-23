@@ -1,6 +1,6 @@
 ---
 title: Using RadioButton ClickMode and Resolving Selection Flipping in RadListBox DataTemplate
-description: Learn how RadioButton.ClickModeProperty works in code or XAML and how to resolve the issue where IsSelected flips to true and immediately to false when clicking a RadioButton inside a RadListBox DataTemplate.
+description: Set RadioButton.ClickMode in code or XAML and prevent IsSelected from reverting when a RadioButton is hosted in a RadListBox DataTemplate.
 components: ["buttons"]
 type: troubleshooting
 page_title: RadioButton ClickMode and Selection Flipping in RadListBox DataTemplate

@@ -4,7 +4,7 @@ page_title: Events
 description: This article describes the RadAutoSuggestBox events.
 components: ["autosuggestbox"]
 slug: radautosuggestbox-events
-tags: events
+tags: events,querysubmitted,suggestionchosen,textchanged,enter
 published: True
 position: 3
 ---
@@ -32,11 +32,17 @@ This article lists the events specific for RadAutoSuggestBox.
 
 	* __QueryText__: A property that holds the currently searched text.
 	* __Suggestion__: A property of type object, that holds a reference to the chosen suggestion. If no suggestion was selected the property value is `null`.
+	* The following example uses the `CountryInfo` model from the [Getting Started]({%slug radautosuggestbox-getting-started%}) article.
 	
 		__Example 2: QuerySubmitted event handler__
 		```C#
 			private void RadAutoSuggestBox_QuerySubmitted(object sender, QuerySubmittedEventArgs e)
 			{     
+				var suggestion = e.Suggestion as CountryInfo;
+				if (suggestion != null)
+				{
+					this.radAutoSuggestBox.Text = suggestion.Name;
+				}
 			}
 		```
 

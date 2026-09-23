@@ -4,7 +4,7 @@ page_title: Customize the Buttons
 description: This article shows how to customize the appearance of the query and clear buttons of RadAutoSuggestBox.
 components: ["autosuggestbox"]
 slug: radautosuggestbox-appearance-customize-buttons
-tags: delete,style,customize,buttons,query,clear
+tags: delete,style,customize,buttons,query,clear,icon,glyph,emoji
 position: 0
 ---
 
@@ -16,13 +16,17 @@ You can customize those by setting the __ClearButtonContent__ and __QueryButtonC
 
 ## Changing Button Icons
 
-The default content template of the buttons contains a [RadGlyph]({%slug common-styling-appearance-radglyph%}) control, so you can use a [glyph code]({%slug common-styling-appearance-glyphs-reference-sheet%}) to easily change the default icons.
+The default content template of the buttons contains a [RadGlyph]({%slug common-styling-appearance-radglyph%}) control, so you can use a [glyph code]({%slug common-styling-appearance-glyphs-reference-sheet%}) to easily change the default icons. You can also specify an emoji or text character directly as the button content.
 
 >tip See the default buttons appearance in the [Visual Structure]({%slug radautosuggestbox-visual-structure%}) article.
 
-__Example 1: Changing the default glyphs__
+__Example 1: Changing the default glyphs or setting emojis__
 ```XAML
+	  <!-- Using glyph codes -->
 	  <telerik:RadAutoSuggestBox QueryButtonContent="&#xe019;" ClearButtonContent="&#xe10c;" />
+
+	  <!-- Using emojis or Unicode symbols -->
+	  <telerik:RadAutoSuggestBox QueryButtonContent="🔍" ClearButtonContent="❌" />
 ```
 
 #### Figure 1: Query and clear buttons with changed glyph icons

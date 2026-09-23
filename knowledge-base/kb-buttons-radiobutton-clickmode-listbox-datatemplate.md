@@ -48,13 +48,15 @@ While changing `ClickMode` to `Press` changes the input event timing, **it does 
 
 When a `RadioButton` is hosted inside a `RadListBox.ItemTemplate`, three common issues trigger the immediate `true -> false` flip:
 
-1. **Incorrect `SelectedValuePath` Binding on `RadListBox`:**
-   `SelectedValuePath` expects a literal **string property name** (for example, `"IsSelected"` or `"Id"`), NOT a `Binding` object. Writing:
-   ```csharp
-   // INCORRECT: assigns a Binding object to a property expecting a string
-   feListBox.SetBinding(RadListBox.SelectedValuePathProperty, new Binding("IsSelected") { Mode = BindingMode.TwoWay });
+1. **Bind the correct selection property:**
+   `SelectedValuePath` accepts a string property path. If you need a binding, use the `RadListBox.SelectedValueBinding` property:
+   ```C#
+   feListBox.SetBinding(RadListBox.SelectedValueBindingProperty, new Binding("Id"));
    ```
-   binds `SelectedValuePath` itself, corrupting the internal selection lookup and resetting the selected item to `null` or unselected when clicked.
+   Otherwise, set `SelectedValuePath` with a string literal:
+   ```C#
+   feListBox.SetValue(RadListBox.SelectedValuePathProperty, "Id");
+   ```
 
 2. **Shared `GroupName` Across Items:**
    Setting a hardcoded `GroupName="BindingGroup"` on the `RadioButton` inside the template causes all radio buttons in every row to share a single mutually exclusive group. When clicking an item, WPF attempts to deselect other items, conflicting with the list box's item container selection and triggering a deselection cascade.

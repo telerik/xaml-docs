@@ -79,7 +79,7 @@ __Figure 2__ shows a RadPanelBar with the **Windows8** theme applied.
 #### __Figure 2: RadPanelBar with the Windows8 theme__
 ![RadPanelBar with Windows8 theme](images/radpanelbar-setting-theme.png)
 
-{% if site.site_name == 'WPF' %}
+
 ## Telerik UI for WPF Learning Resources
 
 * [Telerik UI for WPF PanelBar Component](https://www.telerik.com/products/wpf/panelbar.aspx)

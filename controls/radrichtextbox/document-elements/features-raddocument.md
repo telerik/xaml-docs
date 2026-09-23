@@ -29,7 +29,7 @@ The **RadDocument** class exposes numerous properties and methods enabling you t
 
 * __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the **RadDocument**. To assign different margins for each of the sections, use the respective property of the [__Section__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.section) class.
 
-* __SectionDefaultPageOrientation__: Defines the default section page orientation. This property is of type [**PageOrientation**](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.pageorientation) and could be set to **Portrait** or **Landscape**.
+* __SectionDefaultPageOrientation__: Defines the default section page orientation. This property is of type [**PageOrientation**](https://www.telerik.com/document-processing-libraries/documentation/api/telerik.documents.model.pageorientation) with a default value of **Portrait** (its possible values are **Portrait** or **Landscape**). Note that flow document orientation is distinct from fixed document rotation (such as `Rotation.Rotate0` in PDF/fixed pages).
 
 * __ParagraphDefaultSpacingAfter__: Defines the default spacing after for each of the paragraphs in the __RadDocument__. To assign different spacing after each of the paragraphs, use the respective property of the [__Paragraph__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.paragraph) class.      
 

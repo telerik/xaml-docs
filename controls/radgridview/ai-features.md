@@ -4,7 +4,7 @@ page_title: RadGridView AI Smart Grid Features
 description: Learn how to enable AI-powered natural language interactions in RadGridView for WPF to sort, filter, group, select, export, and manipulate columns through text prompts.
 components: ["gridview"]
 slug: radgridview-ai-features
-tags: radgridview, ai, smart, grid, prompt, natural language, filter, sort, group, export
+tags: radgridview, ai, smart, grid, prompt, natural language, filter, sort, group, export, version, 2026 Q2, release
 published: True
 position: 6
 tag: new
@@ -12,7 +12,7 @@ tag: new
 
 # AI Features
 
-The AI features of __RadGridView__ enable natural language interactions with the grid. Users type a text prompt and the grid translates the AI model response into grid operations such as sorting, filtering, grouping, selection, paging, column manipulation, and data export.
+With the **2026 Q2** release, the AI features of **RadGridView** enable natural language interactions with the grid. Users type a text prompt and the grid translates the AI model response into grid operations such as sorting, filtering, grouping, selection, paging, column manipulation, and data export.
 
 The feature introduces a built-in prompt input panel, an extensible command-based API for communicating with an AI model, and a JSON response processor that applies the returned commands to the grid.
 

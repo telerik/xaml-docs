@@ -4,7 +4,7 @@ page_title: Printing
 description: Check our &quot;Printing&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
 components: ["richtextbox"]
 slug: radrichtextbox-printing
-tags: printing
+tags: printing, pdf, microsoft print to pdf, 0-byte, calibri, pdfformatprovider
 published: True
 position: 9
 ---
@@ -69,3 +69,25 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
     this.radRichTextBox.Print(settings);
 ```
+
+## Printing to PDF and Virtual Printers
+
+When you need to create a PDF file from a `RadDocument`, it is strongly recommended to use [PdfFormatProvider]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%}) instead of printing to a virtual printer such as **Microsoft Print to PDF**.
+
+Printing via `PrintDialog` passes WPF visual elements through the Windows print spooler (`XpsDocumentWriter` pipeline). Some virtual PDF printer drivers have known limitations when subsetting and embedding certain OpenType/TrueType fonts (such as **Calibri**), which can cause the driver to silently output a 0-byte or corrupted `.pdf` file without raising an exception.
+
+Using `PdfFormatProvider` circumvents the Windows print spooler entirely, producing clean, spec-compliant PDF documents with properly embedded fonts directly from code:
+
+```C#
+    PdfFormatProvider provider = new PdfFormatProvider();
+    using (Stream output = File.OpenWrite("document.pdf"))
+    {
+        provider.Export(this.radRichTextBox.Document, output, null);
+    }
+```
+
+## See Also
+
+* [Using PdfFormatProvider]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%})
+* [Getting Started]({%slug radrichtextbox-getting-started%})
+* [Troubleshooting Common Problems]({%slug radrichtextbox-troubleshooting-common-problems%})

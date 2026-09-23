@@ -36,6 +36,12 @@ In code (such as with `FrameworkElementFactory`), you can set it via:
 feRadio.SetValue(System.Windows.Controls.Primitives.ButtonBase.ClickModeProperty, ClickMode.Press);
 ```
 
+In XAML, you can set it directly on the control:
+
+```xaml
+<RadioButton Content="Option 1" ClickMode="Press" />
+```
+
 While changing `ClickMode` to `Press` changes the input event timing, **it does not prevent `IsSelected` from reverting to `false`** if the underlying bindings or group definitions conflict with `RadListBox` selection mechanics.
 
 ## Cause of the Selection Reverting to False

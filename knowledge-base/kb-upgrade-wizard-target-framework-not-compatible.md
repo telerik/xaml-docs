@@ -1,5 +1,5 @@
 ---
-title: "Project Target Framework Is Not Compatible" Error in Upgrade Project Wizard
+title: Project Target Framework Is Not Compatible Error in Upgrade Project Wizard
 description: Resolving the "Project target framework is not compatible. Please upgrade target framework." message in the Telerik UI for WPF Upgrade Project Wizard.
 components: ["installerandvsextensions"]
 type: troubleshooting

@@ -1102,7 +1102,7 @@ redirects:
     type: Permanent
 -
     from: "^/xamlflix-step-by-step-guide/xamlflix-radbarcode$"
-    to: "/controls/radbarcode/radbarcode-getting-started"
+    to: "/controls/radbarcode/barcode-getting-started"
     type: Permanent
 -
     from: "^/xamlflix-step-by-step-guide/xamlflix-chartview$"
@@ -1258,11 +1258,11 @@ redirects:
     type: Permanent
 -
     from: "^/controls/radcombobox/styles-and-templates/styles-templates-modifying-brushes$"
-    to: "/controls/radcombobox/radcombobox-getting-started"
+    to: "/controls/radcombobox/getting-started"
     type: Permanent
 -
     from: "^/controls/radcombobox/styles-and-templates/styles-templates-controlling-appearance$"
-    to: "/controls/radcombobox/radcombobox-getting-started"
+    to: "/controls/radcombobox/getting-started"
     type: Permanent
 -
     from: "^/controls/radgridview/troubleshooting/performance$"
@@ -1273,28 +1273,12 @@ redirects:
     to: "/controls/radtoolbar/howto/use-mvvm-in-radtoolbar"
     type: Permanent
 -
-    from: "^/integration/visual-studio-extensions/for-silverlight-vs-extensions-overview$"
-    to: "/integration/visual-studio-extensions/vs-extensions-overview"
-    type: Permanent
--
     from: "^/integration/visual-studio-extensions/for-wpf-vs-extensions-overview-wpf$"
-    to: "/integration/visual-studio-extensions/vs-extensions-overview"
+    to: "/installation/manual-setup-guides/visual-studio-extensions/extensions-overview"
     type: Permanent
 -
     from: "^/controls/radmenu/styles-and-templates/templates-structure$"
     to: "/controls/radmenu/styles-and-templates/overview"
-    type: Permanent
--
-    from: "^/controls/radupload/features/working-with-radupload$"
-    to: "/controls/radupload/getting-started"
-    type: Permanent
--
-    from: "^/controls/radupload/changes-and-backwards-compatibility/changes$"
-    to: "https://www.telerik.com/support/whats-new/silverlight/release-history"
-    type: Permanent
--
-    from: "^/controls/radupload/changes-and-backwards-compatibility/changes-backward-compatibility$"
-    to: "/controls/radupload/overview"
     type: Permanent
 -
     from: "^/controls/radwindow/styles-and-templates/overview$"
@@ -1429,10 +1413,6 @@ redirects:
     to: "/controls/radfluidcontentcontrol/transitions"
     type: Permanent
 -
-    from: "^/devtools/silverlight/controls/radbarcode/(.*)$"
-    to: "/devtools/silverlight/controls/radbarcodelegacy/$1"
-    type: Permanent
--
     from: "^/controls/radgridview/filtering/how-to/howto-filter-on-a-property-different-from-the-displayed-one$"
     to: "/controls/radgridview/filtering/basic#filtermemberpath"
     type: Permanent
@@ -1442,7 +1422,7 @@ redirects:
     type: Permanent
 -
     from: "^/controls/raddatapager/styles-and-templates/(.*)$"
-    to: "/controls/raddatapager/appearance/customizing-appearance"
+    to: "/controls/raddatapager/customizing-appearance"
     type: Permanent
 -
     from: "^/controls/radscheduleview/changes-and-backwards-compatibility/(.*)$"
@@ -1534,7 +1514,7 @@ redirects:
     type: Permanent
 -
     from: "^/getting-started/installation/installation-installing-lib$"
-    to: "/getting-started/installation/preview-releases"
+    to: "/installation/manual-setup-guides/preview-releases"
     type: Permanent
 -
     from: "^/controls/radgridview/columns/how-to/exclude-column-from-search$"
@@ -1558,11 +1538,11 @@ redirects:
     type: Permanent
 -
     from: "^/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration$"
-    to: "/getting-started/telerik-namespace-declaration"
+    to: "/installation/manual-setup-guides/installation-guide"
     type: Permanent
 -
     from: "^/getting-started/installation/for-wpf-vs-extensions-releases$"
-    to: "/getting-started/installation/distributions"
+    to: "/installation/distributions"
     type: Permanent
 -
     from: "^/controls/radentityframeworkdatasource/entityframework-changes$"
@@ -1770,11 +1750,11 @@ redirects:
     type: Permanent
 -
     from: "^/upgrade/installation-upgrading-from-trial-to-developer-license-wpf$"
-    to: "/getting-started/licensing/installing-license-key"
+    to: "/installation/licensing/installing-license-key"
     type: Permanent
 -
     from: "^/upgrade/upgrade-migrate-to-net$"
-    to: "/getting-started/upgrade-migrate-to-net"
+    to: "/netcore/migrate-to-netcore"
     type: Permanent
 -
     from: "^/controls/radgridview/how-to/enable-horiz-vertic-scrollbar$"
@@ -1813,714 +1793,686 @@ redirects:
     to: "/controls/raddocking/features/save-load-layout/overview"
     type: Permanent    
 -
-    from: "^controls/radtreeview/populating-with-data/radtreeview-features-load-on-demand$"
+    from: "^/controls/radtreeview/populating-with-data/radtreeview-features-load-on-demand$"
     to: "/controls/radtreeview/features/load-on-demand"
     type: Permanent
 -
-    from: "^data-binding/common-overview$"
+    from: "^/data-binding/common-overview$"
     to: "/introduction"
     type: Permanent
 -
-    from: "^patterns-and-practices/event-to-command/eventtocommand-blend$"
+    from: "^/patterns-and-practices/event-to-command/eventtocommand-blend$"
     to: "/common-event-to-command-behavior"
     type: Permanent
 -
-    from: "^styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project-telerik-approach$"
+    from: "^/styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project-telerik-approach$"
     to: "/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf"
     type: Permanent
 -
-    from: "^controls/radexpander/overview/expander-getting-started$"
+    from: "^/controls/radexpander/overview/expander-getting-started$"
     to: "/controls/radexpander/expander-getting-started"
     type: Permanent
 -
-    from: "^controls/radgridview/clipboard/gridview-copying$"
+    from: "^/controls/radgridview/clipboard/gridview-copying$"
     to: "/controls/radgridview/clipboard/copying"
     type: Permanent
 -
-    from: "^controls/radgridview/clipboard/gridview-pasting$"
+    from: "^/controls/radgridview/clipboard/gridview-pasting$"
     to: "/controls/radgridview/clipboard/pasting"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/composite-filter-descriptors$"
+    from: "^/controls/radgridview/filtering/composite-filter-descriptors$"
     to: "/controls/radgridview/filtering/programmatic#compositefilterdescriptor"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/faq/gridview-dataformatstring-and-filtering$"
+    from: "^/controls/radgridview/filtering/faq/gridview-dataformatstring-and-filtering$"
     to: "/controls/radgridview/filtering/faq/dataformatstring-and-filtering"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/faq/gridview-datetime-filtering$"
+    from: "^/controls/radgridview/filtering/faq/gridview-datetime-filtering$"
     to: "/controls/radgridview/filtering/faq/datetime-filtering"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/faq/gridview-ivalueconverter-and-filtering$"
+    from: "^/controls/radgridview/filtering/faq/gridview-ivalueconverter-and-filtering$"
     to: "/controls/radgridview/filtering/faq/ivalueconverter-and-filtering"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/faq/gridview-stackoverflow-exception$"
+    from: "^/controls/radgridview/filtering/faq/gridview-stackoverflow-exception$"
     to: "/controls/radgridview/filtering/faq/stackoverflow-exception"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/basic-filtering2$"
+    from: "^/controls/radgridview/filtering/basic-filtering2$"
     to: "/controls/radgridview/filtering/basic"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/gridview-not-all-values-shown-filtering$"
+    from: "^/controls/radgridview/filtering/gridview-not-all-values-shown-filtering$"
     to: "/controls/radgridview/filtering/how-to/howto-display-all-distinct-values"
     type: Permanent
 -
-    from: "^controls/radgridview/grouping/how-to/gridview-generic-descriptor$"
+    from: "^/controls/radgridview/grouping/how-to/gridview-generic-descriptor$"
     to: "/controls/radgridview/grouping/how-to/generic-descriptor"
     type: Permanent
 -
-    from: "^controls/radgridview/grouping/how-to/gridview-modify-grouptemplates$"
-    to: "/controls/radgridview/grouping/how-to/modify-grouptemplates"
+    from: "^/controls/radgridview/grouping/how-to/gridview-modify-grouptemplates$"
+    to: "/controls/radgridview/grouping/modify-grouptemplates"
     type: Permanent
 -
-    from: "^controls/radgridview/row-details/how-to/gridview-display-window$"
+    from: "^/controls/radgridview/row-details/how-to/gridview-display-window$"
     to: "/controls/radgridview/row-details/how-to/display-window"
     type: Permanent
 -
-    from: "^controls/radgridview/row-details/how-to/gridview-find-control-row-details$"
+    from: "^/controls/radgridview/row-details/how-to/gridview-find-control-row-details$"
     to: "/controls/radgridview/row-details/how-to/find-control-row-details"
     type: Permanent
 -
-    from: "^controls/radgridview/selection/how-to/gridview-unfocused-state$"
+    from: "^/controls/radgridview/selection/how-to/gridview-unfocused-state$"
     to: "/controls/radgridview/selection/how-to/unfocused-state"
     type: Permanent
 -
-    from: "^controls/radgridview/sorting/how-to/gridview-generic-descriptor$"
+    from: "^/controls/radgridview/sorting/how-to/gridview-generic-descriptor$"
     to: "/controls/radgridview/sorting/how-to/generic-descriptor"
     type: Permanent
 -
-    from: "^controls/radgridview/troubleshooting/gridview-styling-custom-header$"
+    from: "^/controls/radgridview/troubleshooting/gridview-styling-custom-header$"
     to: "/controls/radgridview/troubleshooting/styling-custom-header"
     type: Permanent
 -
-    from: "^controls/radoutlookbar/general-information/visual-structure$"
+    from: "^/controls/radoutlookbar/general-information/visual-structure$"
     to: "/controls/radoutlookbar/visual-structure"
     type: Permanent
 -
-    from: "^controls/radoutlookbar/getting-started/getting-started$"
+    from: "^/controls/radoutlookbar/getting-started/getting-started$"
     to: "/controls/radoutlookbar/getting-started"
     type: Permanent
 -
-    from: "^controls/radspreadsheet/getting-started/ui-what-is-radspreadsheet$"
+    from: "^/controls/radspreadsheet/getting-started/ui-what-is-radspreadsheet$"
     to: "/controls/radspreadsheet/overview"
     type: Permanent
 -
-    from: "^controls/radcolorpicker/features/colorselector-getting-started$"
+    from: "^/controls/radcolorpicker/features/colorselector-getting-started$"
     to: "/controls/radcolorpicker/features/radcolorselector/colorselector-populating"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/how-to/howto-clear-all-filters$"
+    from: "^/controls/radgridview/filtering/how-to/howto-clear-all-filters$"
     to: "/controls/radgridview/filtering/programmatic#clearing-multiple-column-filters"
     type: Permanent
 -
-    from: "^controls/radtilelist/howto/modifying-tilelist-view$"
+    from: "^/controls/radtilelist/howto/modifying-tilelist-view$"
     to: "/controls/radtilelist/howto/modifying-view"
     type: Permanent
 -
-    from: "^controls/radtimeline/features/howto-control-vertical-position-of-timeline-items$"
+    from: "^/controls/radtimeline/features/howto-control-vertical-position-of-timeline-items$"
     to: "/controls/radtimeline/features/howto-control-vertical-position-of-items"
     type: Permanent
 -
-    from: "^controls/radrichtextbox/import-export/radrichtextbox-features-import-export-settings$"
+    from: "^/controls/radrichtextbox/import-export/radrichtextbox-features-import-export-settings$"
     to: "/controls/radrichtextbox/import-export/features-import-export"
     type: Permanent
 -
-    from: "^controls/radmap/features/geocode$"
+    from: "^/controls/radmap/features/geocode$"
     to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
     type: Permanent
 -
-    from: "^controls/radmap/features/search$"
+    from: "^/controls/radmap/features/search$"
     to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
     type: Permanent
 -
-    from: "^controls/radmap/features/routing$"
+    from: "^/controls/radmap/features/routing$"
     to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
     type: Permanent
 -
-    from: "^controls/radmap/features/providers/bing-map$"
+    from: "^/controls/radmap/features/providers/bing-map$"
     to: "/controls/radmap/features/providers/bing-rest-map-provider/bing-map-rest"
     type: Permanent
 -
-    from: "^controls/radchart/features/796308db-6789-4f88-8c96-7d29a8f49e8b$"
+    from: "^/controls/radchart/features/796308db-6789-4f88-8c96-7d29a8f49e8b$"
     to: "/controls/radchart/overview"
     type: Permanent
 -
-    from: "^controls/radchart/styles-and-templates/b3d82ec6-5928-4f61-a4ee-7a58bce31bca$"
+    from: "^/controls/radchart/styles-and-templates/b3d82ec6-5928-4f61-a4ee-7a58bce31bca$"
     to: "/controls/radchart/overview"
     type: Permanent
 -
-    from: "^controls/radchart/features/bf9585df-c6c5-440b-9445-9c321ea345a8$"
+    from: "^/controls/radchart/features/bf9585df-c6c5-440b-9445-9c321ea345a8$"
     to: "/controls/radchart/overview"
     type: Permanent
 -
-    from: "^controls/raddiagram/diagramextensions-viewmodels/5a2d6cbf-4f5c-466c-baec-19360d30803d$"
+    from: "^/controls/raddiagram/diagramextensions-viewmodels/5a2d6cbf-4f5c-466c-baec-19360d30803d$"
     to: "/controls/raddiagram/diagramextensions-viewmodels/overview"
     type: Permanent
 -
-    from: "^controls/raddiagram/extensions/settingspane$"
+    from: "^/controls/raddiagram/extensions/settingspane$"
     to: "/controls/raddiagram/extensions/settingspane/settingspane_overview"
     type: Permanent
 -
-    from: "^controls/raddiagram/raddiagram/styles-and-templates/a0973f36-f74e-44df-ac8f-d124c3e948aa$"
+    from: "^/controls/raddiagram/raddiagram/styles-and-templates/a0973f36-f74e-44df-ac8f-d124c3e948aa$"
     to: "/controls/raddiagram/styles-and-templates/raddiagrams-styling-overview"
     type: Permanent
 -
-    from: "^controls/radgridview/changes-and-backward-compatibility/74308197-b2e6-4a20-9390-04937f1d845e$"
+    from: "^/controls/radgridview/changes-and-backward-compatibility/74308197-b2e6-4a20-9390-04937f1d845e$"
     to: "/controls/radgridview/changes-and-backward-compatibility/backward-compatibility"
     type: Permanent
 -
-    from: "^api/html/gridview-data-editors.htm$"
-    to: "/controls/radgridview/overview"
-    type: Permanent
--
-    from: "^controls/radribbonview/how-to/f2af28eb-a2e2-4e27-b5cf-419888d9e25e$"
+    from: "^/controls/radribbonview/how-to/f2af28eb-a2e2-4e27-b5cf-419888d9e25e$"
     to: "/controls/radribbonview/overview"
     type: Permanent
 -
-    from: "^controls/radfiledialogs/radopenfiledialog$"
+    from: "^/controls/radfiledialogs/radopenfiledialog$"
     to: "/controls/radfiledialogs/dialog-controls/radopenfiledialog"
     type: Permanent
 -
-    from: "^controls/radfiledialogs/radopenfolderdialog$"
+    from: "^/controls/radfiledialogs/radopenfolderdialog$"
     to: "/controls/radfiledialogs/dialog-controls/radopenfolderdialog"
     type: Permanent
 -
-    from: "^controls/radfiledialogs/radsavefiledialog$"
+    from: "^/controls/radfiledialogs/radsavefiledialog$"
     to: "/controls/radfiledialogs/dialog-controls/radsavefiledialog"
     type: Permanent
 -
-    from: "^controls/radtransitioncontrol/overview$"
+    from: "^/controls/radtransitioncontrol/overview$"
     to: "/controls/radtransitioncontrol/radtransition-overview"
     type: Permanent
 -
-    from: "^controls/radbreadcrumb/overview$"
+    from: "^/controls/radbreadcrumb/overview$"
     to: "/controls/radbreadcrumb/overvew"
     type: Permanent
 -
-    from: "^controls/raddocking/overview$"
+    from: "^/controls/raddocking/overview$"
     to: "/controls/raddocking/overview2"
     type: Permanent
 -
-    from: "^controls/radcarousel/overview$"
+    from: "^/controls/radcarousel/overview$"
     to: "/controls/radcarousel/carousel-overview"
     type: Permanent
 -
-    from: "^controls/radcontextmenu/overview$"
+    from: "^/controls/radcontextmenu/overview$"
     to: "/controls/radcontextmenu/contextmenu-overview1"
     type: Permanent
 -
-    from: "^controls/radtabcontrol/overview$"
+    from: "^/controls/radtabcontrol/overview$"
     to: "/controls/radtabcontrol/overview2"
     type: Permanent
 -
-    from: "^controls/radtreeview/overview$"
+    from: "^/controls/radtreeview/overview$"
     to: "/controls/radtreeview/overview2"
     type: Permanent
 -
-    from: "^controls/raddatafilter/overview$"
+    from: "^/controls/raddatafilter/overview$"
     to: "/controls/raddatafilter/datafilter-overview"
     type: Permanent
 -
-    from: "^controls/raddatapager/overview$"
+    from: "^/controls/raddatapager/overview$"
     to: "/controls/raddatapager/datapager-overview"
     type: Permanent
 -
-    from: "^controls/raddomaindatasource/overview$"
-    to: "/controls/raddomaindatasource/dds-overview"
+    from: "^/controls/raddomaindatasource/overview$"
+    to: "/common-information/consuming-data/overview"
     type: Permanent
 -
-    from: "^controls/radentityframeworkdatasource/overview$"
+    from: "^/controls/radentityframeworkdatasource/overview$"
     to: "/controls/radentityframeworkdatasource/entityframework-overview"
     type: Permanent
 -
-    from: "^controls/radgridview/overview$"
+    from: "^/controls/radgridview/overview$"
     to: "/controls/radgridview/overview2"
     type: Permanent
 -
-    from: "^controls/raddiagram/diagram-items/raddiagrams-features-shapes$"
+    from: "^/controls/raddiagram/diagram-items/raddiagrams-features-shapes$"
     to: "/controls/raddiagram/diagram-items/shape/raddiagrams-features-shapes"
     type: Permanent
 -
-    from: "^styling-and-appearance/styling-apperance-themes-runtime$"
+    from: "^/styling-and-appearance/styling-apperance-themes-runtime$"
     to: "/styling-and-appearance/how-to/styling-apperance-themes-runtime"
     type: Permanent
 -
-    from: "^styling-and-appearance/styling-apperance-switching-themes-design-time$"
+    from: "^/styling-and-appearance/styling-apperance-switching-themes-design-time$"
     to: "/styling-and-appearance/how-to/styling-apperance-switching-themes-design-time"
     type: Permanent
 -
-    from: "^styling-and-appearance/styling-apperance-custom-styles-themes-runtime$"
+    from: "^/styling-and-appearance/styling-apperance-custom-styles-themes-runtime$"
     to: "/styling-and-appearance/how-to/styling-apperance-custom-styles-themes-runtime"
     type: Permanent
 -
-    from: "^styling-and-appearance/styling-apperance-switching-icons-at-runtime$"
+    from: "^/styling-and-appearance/styling-apperance-switching-icons-at-runtime$"
     to: "/styling-and-appearance/how-to/styling-apperance-switching-icons-at-runtime"
     type: Permanent
 -
-    from: "^styling-and-appearance/common-styling-appearance-office2016-theme$"
+    from: "^/styling-and-appearance/common-styling-appearance-office2016-theme$"
     to: "/styling-and-appearance/themes-suite/common-styling-appearance-office2016-theme"
     type: Permanent
 -
-    from: "^styling-and-appearance/common-styles-appearance-colorizing-metro-theme$"
+    from: "^/styling-and-appearance/common-styles-appearance-colorizing-metro-theme$"
     to: "/styling-and-appearance/themes-suite/common-styles-appearance-colorizing-metro-theme"
     type: Permanent
 -
-    from: "^styling-and-appearance/common-styling-appearance-green-theme$"
+    from: "^/styling-and-appearance/common-styling-appearance-green-theme$"
     to: "/styling-and-appearance/themes-suite/common-styling-appearance-green-theme"
     type: Permanent
 -
-    from: "^styling-and-appearance/common-styling-appearance-office2013-theme$"
+    from: "^/styling-and-appearance/common-styling-appearance-office2013-theme$"
     to: "/styling-and-appearance/themes-suite/common-styling-appearance-office2013-theme"
     type: Permanent
 -
-    from: "^styling-and-appearance/common-styling-appearance-visualstudio2013-theme$"
+    from: "^/styling-and-appearance/common-styling-appearance-visualstudio2013-theme$"
     to: "/styling-and-appearance/themes-suite/common-styling-appearance-visualstudio2013-theme"
     type: Permanent
 -
-    from: "^styling-and-appearance/styling-apperance-themes-mscontrols$"
+    from: "^/styling-and-appearance/styling-apperance-themes-mscontrols$"
     to: "/styling-and-appearance/how-to/styling-apperance-themes-mscontrols"
     type: Permanent
 -
-    from: "^styling-and-appearance/styling-apperance-implicit-styles-overview$"
+    from: "^/styling-and-appearance/styling-apperance-implicit-styles-overview$"
     to: "/styling-and-appearance/styling-apperance-setting-a-theme-overview"
     type: Permanent
 -
-    from: "^controls/radgridview/commands/eventtocommandbehavior$"
+    from: "^/controls/radgridview/commands/eventtocommandbehavior$"
     to: "/common-event-to-command-behavior"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/how-to/howto-clear-a-specific-column-filter$"
+    from: "^/controls/radgridview/filtering/how-to/howto-clear-a-specific-column-filter$"
     to: "/controls/radgridview/filtering/programmatic#clearing-a-single-column-filter"
     type: Permanent
 -
-    from: "^controls/radcarousel/overview/carousel-overview$"
+    from: "^/controls/radcarousel/overview/carousel-overview$"
     to: "/controls/radcarousel/carousel-overview"
     type: Permanent
 -
-    from: "^controls/radcarousel/getting-started/carousel-getting-started$"
+    from: "^/controls/radcarousel/getting-started/carousel-getting-started$"
     to: "/controls/radcarousel/carousel-getting-started"
     type: Permanent
 -
-    from: "^controls/radbulletgraph/overview$"
+    from: "^/controls/radbulletgraph/overview$"
     to: "/controls/radbulletgraph/radbulletgraph_overview"
     type: Permanent
 -
-    from: "^controls/radsparkline/overview$"
+    from: "^/controls/radsparkline/overview$"
     to: "/controls/radsparkline/radsparkline_overview"
     type: Permanent
 -
-    from: "^controls/radsparkline/radsparkline_most_important_properties,_settings_and_elements$"
+    from: "^/controls/radsparkline/radsparkline_most_important_properties,_settings_and_elements$"
     to: "/controls/radsparkline/features/radsparkline-features-indicators"
     type: Permanent
 -
-    from: "^common-event-to-command-behavior$"
+    from: "^/common-event-to-command-behavior$"
     to: "/mvvm-helpers/common-event-to-command-behavior"
     type: Permanent
 -
-    from: "^controls/raddatafilter/how-to/filter-radgridview$"
+    from: "^/controls/raddatafilter/how-to/filter-radgridview$"
     to: "/controls/raddatafilter/datafilter-getting-started#filter-radgridview"
     type: Permanent
 -
-    from: "^common-blend-support$"
+    from: "^/common-blend-support$"
     to: "/styling-and-appearance/stylemanager/common-styling-appearance-edit-control-templates-blend"
     type: Permanent
 -
-    from: "^controls/radgridview/hierarchical-gridview/custom-hierarchies$"
+    from: "^/controls/radgridview/hierarchical-gridview/custom-hierarchies$"
     to: "/controls/radgridview/row-details/overview"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/icolumn-filter-descriptors$"
+    from: "^/controls/radgridview/filtering/icolumn-filter-descriptors$"
     to: "/controls/radgridview/filtering/programmatic"
     type: Permanent
 -
-    from: "^controls/radgridview/filtering/how-to/howto-replace-the-default-filtering-control-with-your-own$"
+    from: "^/controls/radgridview/filtering/how-to/howto-replace-the-default-filtering-control-with-your-own$"
     to: "/controls/radgridview/filtering/custom-filtering-controls"
     type: Permanent
 -
-    from: "^controls/radgridview/export/export-xlsx$"
+    from: "^/controls/radgridview/export/export-xlsx$"
     to: "/controls/radgridview/export/export-formats/export-xlsx"
     type: Permanent
 -
-    from: "^controls/radpersistenceframework/overview$"
+    from: "^/controls/radpersistenceframework/overview$"
     to: "/controls/radpersistenceframework/persistence-framework-overview"
     type: Permanent
 -
-    from: "^controls/raddatavirtualization/overview$"
+    from: "^/controls/raddatavirtualization/overview$"
     to: "/consuming-data/using-data-virtualization"
     type: Permanent
 -
-    from: "^eqatec-analytics-application-integration$"
+    from: "^/eqatec-analytics-application-integration$"
     to: "/analytics/analytics-support"
     type: Permanent
 -
-    from: "^xaml-vs-noxaml$"
+    from: "^/xaml-vs-noxaml$"
     to: "/styling-and-appearance/xaml-vs-noxaml"
     type: Permanent
 -
-    from: "^what-is-new$"
-    to: "/https://www.telerik.com/support/whats-new/wpf/release-history"
+    from: "^/what-is-new$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
-    from: "^common-faq$"
-    to: "/getting-started/common-faq"
-    type: Permanent
--
-    from: "^licensing/copyright$"
-    to: "/copyright"
-    type: Permanent
--
-    from: "^analytics/(.*)$"
-    to: "/common-information/analytics/{R:1}"
-    type: Permanent
--
-    from: "^consuming-data/(.*)$"
-    to: "/common-information/consuming-data/{R:1}"
-    type: Permanent
--
-    from: "^mvvm-helpers/(.*)$"
-    to: "/common-information/mvvm-helpers/{R:1}"
-    type: Permanent
--
-    from: "^troubleshooting/(.*)$"
-    to: "/common-information/troubleshooting/{R:1}"
-    type: Permanent
--
-    from: "^visual-studio-extensions/(.*)$"
-    to: "/integration/visual-studio-extensions/{R:1}"
-    type: Permanent
--
-    from: "^installation-and-deployment/installing-telerik-ui-on-your-computer/(.*)$"
-    to: "/getting-started/installation/{R:1}"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-an-application/(.*)$"
-    to: "/getting-started/adding-telerik-ui-to-an-application/{R:1}"
-    type: Permanent
--
-    from: "^common-information/?$"
-    to: "/common-information/coded-ui-support"
-    type: Permanent
--
-    from: "^coded-ui-support$"
-    to: "/common-information/coded-ui-support"
-    type: Permanent
--
-    from: "^personal-data-collection$"
-    to: "/licensing/personal-data-collection"
-    type: Permanent
--
-    from: "^common-command-support$"
-    to: "/common-information/common-command-support"
-    type: Permanent
--
-    from: "^common-export-support$"
-    to: "/common-information/common-export-support"
-    type: Permanent
--
-    from: "^common-localization$"
-    to: "/common-information/common-localization"
-    type: Permanent
--
-    from: "^common-partial-trust$"
-    to: "/common-information/common-partial-trust"
-    type: Permanent
--
-    from: "^common-routed-events-support$"
-    to: "/common-information/common-routed-events-support"
-    type: Permanent
--
-    from: "^common-ui-automation$"
-    to: "/common-information/common-ui-automation"
-    type: Permanent
--
-    from: "^common-visual-tree-helpers$"
-    to: "/common-information/common-visual-tree-helpers"
-    type: Permanent
--
-    from: "^section_508_compliance$"
-    to: "/common-information/section_508_compliance"
-    type: Permanent
--
-    from: "^smarttags-overview$"
-    to: "/common-information/smarttags-overview"
-    type: Permanent
--
-    from: "^touch-support$"
-    to: "/common-information/touch-support"
-    type: Permanent
--
-    from: "^upgrade-api-analyzer$"
-    to: "/common-information/upgrade-api-analyzer"
-    type: Permanent
--
-    from: "^upgrade-api-analyzer-sl$"
-    to: "/common-information/upgrade-api-analyzer-sl"
-    type: Permanent
--
-    from: "^installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies$"
-    to: "/common-information/installation-installing-dependencies"
-    type: Permanent
--
-    from: "^installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies-wpf$"
-    to: "/common-information/installation-installing-dependencies-wpf"
-    type: Permanent
--
-    from: "^installation-and-deployment/deploying-telerik-ui/protecting-telerik-assembly$"
-    to: "/licensing/protecting-telerik-assembly"
-    type: Permanent
--
-    from: "^installation-and-deployment/installation-system-requirements$"
-    to: "/getting-started/installation/installation-system-requirements"
-    type: Permanent
--
-    from: "^installation-and-deployment/installation-system-requirements-wpf$"
-    to: "/getting-started/installation/installation-system-requirements-wpf"
-    type: Permanent
--
-    from: "^installation-and-deployment/download-product-files-wpf$"
-    to: "/getting-started/installation/download-product-files-wpf"
-    type: Permanent
--
-    from: "^installation-and-deployment/download-product-files$"
-    to: "/getting-started/installation/download-product-files"
-    type: Permanent
--
-    from: "^installation-and-deployment/installing-wpf-demos$"
-    to: "/getting-started/installation/installing-wpf-demos"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox-wpf$"
-    to: "/integration/installation-adding-to-vs-toolbox"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox$"
-    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox-wpf$"
-    to: "/integration/installation-adding-to-vs-toolbox"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox$"
-    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox-wpf$"
-    to: "/integration/installation-adding-to-vs-toolbox"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox$"
-    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox-wpf$"
-    to: "/integration/installation-adding-to-vs-toolbox"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox$"
-    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2015-toolbox-silverlight$"
-    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2015-toolbox$"
-    to: "/integration/installation-adding-to-vs-toolbox"
-    type: Permanent
--
-    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2017-toolbox$"
-    to: "/integration/installation-adding-to-vs-toolbox"
-    type: Permanent
--
-    from: "^for-more-help$"
+    from: "^/common-faq$"
     to: "/introduction"
     type: Permanent
 -
-    from: "^installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license$"
-    to: "/upgrade/installation-upgrading-from-trial-to-developer-license"
+    from: "^/licensing/copyright$"
+    to: "/introduction"
     type: Permanent
 -
-    from: "^installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license-wpf$"
+    from: "^/analytics/(.*)$"
+    to: "/common-information/analytics/$1"
+    type: Permanent
+-
+    from: "^/consuming-data/(.*)$"
+    to: "/common-information/consuming-data/$1"
+    type: Permanent
+-
+    from: "^/mvvm-helpers/(.*)$"
+    to: "/common-information/mvvm-helpers/$1"
+    type: Permanent
+-
+    from: "^/troubleshooting/(.*)$"
+    to: "/common-information/troubleshooting/$1"
+    type: Permanent
+-
+    from: "^/visual-studio-extensions/(.*)$"
+    to: "/integration/visual-studio-extensions/$1"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/installing-telerik-ui-on-your-computer/(.*)$"
+    to: "/getting-started/installation/$1"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/adding-telerik-ui-to-an-application/(.*)$"
+    to: "/getting-started/adding-telerik-ui-to-an-application/$1"
+    type: Permanent
+-
+    from: "^/common-information/?$"
+    to: "/common-information/coded-ui-support"
+    type: Permanent
+-
+    from: "^/coded-ui-support$"
+    to: "/common-information/coded-ui-support"
+    type: Permanent
+-
+    from: "^/personal-data-collection$"
+    to: "/licensing/personal-data-collection"
+    type: Permanent
+-
+    from: "^/common-command-support$"
+    to: "/common-information/coded-ui-support"
+    type: Permanent
+-
+    from: "^/common-export-support$"
+    to: "/common-information/common-export-support"
+    type: Permanent
+-
+    from: "^/common-localization$"
+    to: "/common-information/common-localization"
+    type: Permanent
+-
+    from: "^/common-partial-trust$"
+    to: "/common-information/common-partial-trust"
+    type: Permanent
+-
+    from: "^/common-routed-events-support$"
+    to: "/common-information/coded-ui-support"
+    type: Permanent
+-
+    from: "^/common-ui-automation$"
+    to: "/common-information/common-ui-automation"
+    type: Permanent
+-
+    from: "^/common-visual-tree-helpers$"
+    to: "/common-information/common-visual-tree-helpers"
+    type: Permanent
+-
+    from: "^/section_508_compliance$"
+    to: "/common-information/section_508_compliance"
+    type: Permanent
+-
+    from: "^/smarttags-overview$"
+    to: "/common-information/smarttags-overview"
+    type: Permanent
+-
+    from: "^/touch-support$"
+    to: "/common-information/touch-support"
+    type: Permanent
+-
+    from: "^/upgrade-api-analyzer$"
+    to: "/common-information/upgrade-api-analyzer"
+    type: Permanent
+-
+    from: "^/upgrade-api-analyzer-sl$"
+    to: "/common-information/upgrade-api-analyzer"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies$"
+    to: "/common-information/installation-installing-dependencies-wpf"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies-wpf$"
+    to: "/common-information/installation-installing-dependencies-wpf"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/deploying-telerik-ui/protecting-telerik-assembly$"
+    to: "/knowledge-base/kb-licensing-redistribute-telerik-assemblies-prior-2025-q2"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/installation-system-requirements$"
+    to: "/installation/system-requirements"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/installation-system-requirements-wpf$"
+    to: "/installation/system-requirements"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/download-product-files-wpf$"
+    to: "/installation/manual-setup-guides/download-product-files"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/download-product-files$"
+    to: "/installation/manual-setup-guides/download-product-files"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/installing-wpf-demos$"
+    to: "/installation/manual-setup-guides/installing-demos"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox-wpf$"
+    to: "/installation/manual-setup-guides/vs-toolbox"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox-wpf$"
+    to: "/installation/manual-setup-guides/vs-toolbox"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox-wpf$"
+    to: "/installation/manual-setup-guides/vs-toolbox"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox-wpf$"
+    to: "/installation/manual-setup-guides/vs-toolbox"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2015-toolbox$"
+    to: "/installation/manual-setup-guides/vs-toolbox"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2017-toolbox$"
+    to: "/installation/manual-setup-guides/vs-toolbox"
+    type: Permanent
+-
+    from: "^/for-more-help$"
+    to: "/introduction"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license$"
+    to: "/installation/licensing/installing-license-key"
+    type: Permanent
+-
+    from: "^/installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license-wpf$"
     to: "/upgrade/installation-upgrading-from-trial-to-developer-license-wpf"
     type: Permanent
 -
-    from: "^visual-studio-templates$"
-    to: "/integration/visual-studio-templates"
+    from: "^/visual-studio-templates$"
+    to: "/installation/manual-setup-guides/visual-studio-templates"
     type: Permanent
 -
-    from: "^sdk-examples$"
+    from: "^/sdk-examples$"
     to: "/developer-focused-examples/sdk-examples"
     type: Permanent
 -
-    from: "^sdk-samples-browser$"
+    from: "^/sdk-samples-browser$"
     to: "/developer-focused-examples/sdk-samples-browser"
     type: Permanent
 -
-    from: "^controls/radbulletgraph/radbulletgraph_properties$"
+    from: "^/controls/radbulletgraph/radbulletgraph_properties$"
     to: "/controls/radbulletgraph/getting-started"
     type: Permanent
 -
-    from: "^getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS-wpf$"
+    from: "^/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS-wpf$"
     to: "/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS"
     type: Permanent
 -
-    from: "^getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration-wpf$"
+    from: "^/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration-wpf$"
     to: "/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration"
     type: Permanent
 -
-    from: "^getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control-wpf$"
+    from: "^/getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control-wpf$"
     to: "/getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control"
     type: Permanent
 -
-    from: "^controls/radgridview/how-to/drag-drop-scenario$"
+    from: "^/controls/radgridview/how-to/drag-drop-scenario$"
     to: "/controls/dragdropmanager/how-to/howto-draganddrop-within-radgridview"
     type: Permanent
 -
-    from: "^controls/radgridview/how-to/row-reorder$"
+    from: "^/controls/radgridview/how-to/row-reorder$"
     to: "/controls/dragdropmanager/how-to/howto-draganddrop-within-radgridview"
     type: Permanent
 -
-    from: "^controls/radgridview/export/export$"
+    from: "^/controls/radgridview/export/export$"
     to: "/controls/radgridview/export/generic/export"
     type: Permanent
 -
-    from: "^controls/radgridview/export/async$"
+    from: "^/controls/radgridview/export/async$"
     to: "/controls/radgridview/export/generic/async"
     type: Permanent
 -
-    from: "^controls/radgridview/export/export-events$"
+    from: "^/controls/radgridview/export/export-events$"
     to: "/controls/radgridview/export/events/elementexporting-elementexported-todocument"
     type: Permanent
 -
-    from: "^controls/radgridview/export/export-formats/export-xlsx$"
+    from: "^/controls/radgridview/export/export-formats/export-xlsx$"
     to: "/controls/radgridview/export/excel/export-xlsx"
     type: Permanent
 -
-    from: "^controls/radgridview/export/export-formats/export-pdf$"
+    from: "^/controls/radgridview/export/export-formats/export-pdf$"
     to: "/controls/radgridview/export/pdf/export-pdf"
     type: Permanent
 -
-    from: "^controls/radgridview/export/export-formats/excelml$"
+    from: "^/controls/radgridview/export/export-formats/excelml$"
     to: "/controls/radgridview/export/how-to/style-exported-excelml-documents"
     type: Permanent
 -
-    from: "^controls/radgridview/export/export-formats/html$"
+    from: "^/controls/radgridview/export/export-formats/html$"
     to: "/controls/radgridview/export/how-to/style-exported-html-documents"
     type: Permanent
 -
-    from: "^getting-started/installation/installation-installing-hotfix-wpf$"
+    from: "^/getting-started/installation/installation-installing-hotfix-wpf$"
     to: "/getting-started/installation/installation-installing-lib"
     type: Permanent
 -
-    from: "^getting-started/installation/installation-installing-hotfix$"
+    from: "^/getting-started/installation/installation-installing-hotfix$"
     to: "/getting-started/installation/installation-installing-lib"
     type: Permanent
 -
-    from: "^getting-started/installation/installation-installing-from-zip$"
-    to: "/getting-started/installation/installation-installing-from-zip-wpf"
+    from: "^/getting-started/installation/installation-installing-from-zip$"
+    to: "/installation/manual-setup-guides/installation-guide"
     type: Permanent
 -
-    from: "^controls/radgridview/columns/how-to/styling-checkboxcolumn$"
-    to: "/controls/radgridview/styles-and-templates/columns-styling-checkboxcolumn"
-    type: Permanent
--
-    from: "^controls/radrichtextbox/document-elements/features-tables$"
+    from: "^/controls/radrichtextbox/document-elements/features-tables$"
     to: "/controls/radrichtextbox/document-elements/table/table-overview"
     type: Permanent
 -
-    from: "^controls/radrichtextbox/features/repeat-table-header-row$"
+    from: "^/controls/radrichtextbox/features/repeat-table-header-row$"
     to: "/controls/radrichtextbox/document-elements/table/repeat-table-header-row"
     type: Permanent
 -
-    from: "^controls/radpivotgrid/radpivotfieldlist$"
+    from: "^/controls/radpivotgrid/radpivotfieldlist$"
     to: "/controls/radpivotgrid/features/pivotfieldlist"
     type: Permanent    
 -
-    from: "^controls/radchartview/changes-and-backward-compatibility/changes$"
+    from: "^/controls/radchartview/changes-and-backward-compatibility/changes$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
-    from: "^controls/radchartview/changes-and-backward-compatibility/changes-backward-compatibility$"
+    from: "^/controls/radchartview/changes-and-backward-compatibility/changes-backward-compatibility$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
-    from: "^controls/raddiagram/changes-and-backwards-compatibility/changes$"
+    from: "^/controls/raddiagram/changes-and-backwards-compatibility/changes$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
-    from: "^controls/raddiagram/changes-and-backwards-compatibility/backward-compatibility$"
+    from: "^/controls/raddiagram/changes-and-backwards-compatibility/backward-compatibility$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
-    from: "^controls/radgridview/styles-and-templates/templates-structure$"
+    from: "^/controls/radgridview/styles-and-templates/templates-structure$"
     to: "/controls/radgridview/overview2"
     type: Permanent 
 -
-    from: "^controls/radtreelistview/styles-and-templates/overview$"
+    from: "^/controls/radtreelistview/styles-and-templates/overview$"
     to: "/controls/radtreelistview/overview"
     type: Permanent 
 -
-    from: "^controls/radtreelistview/styles-and-templates/templates-structure$"
+    from: "^/controls/radtreelistview/styles-and-templates/templates-structure$"
     to: "/controls/radtreelistview/overview"
     type: Permanent 
 -
-    from: "^controls/radtreelistview/styles-and-templates/styling-validation-tooltips$"
+    from: "^/controls/radtreelistview/styles-and-templates/styling-validation-tooltips$"
     to: "/controls/radtreelistview/overview"
     type: Permanent
 -
-    from: "^controls/radtreelistview/changes-and-backward-compatibility/changes$"
+    from: "^/controls/radtreelistview/changes-and-backward-compatibility/changes$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
-    from: "^controls/radtreelistview/changes-and-backward-compatibility/radtreeliestview-backward-compatibility$"
+    from: "^/controls/radtreelistview/changes-and-backward-compatibility/radtreeliestview-backward-compatibility$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
-    from: "^controls/radpdfviewer/howto/zoom-in-or-out-a-radfixeddocument$"
+    from: "^/controls/radpdfviewer/howto/zoom-in-or-out-a-radfixeddocument$"
     to: "/controls/radpdfviewer/zoom-in-or-out-a-radfixeddocument"
     type: Permanent 
 -
-    from: "^controls/radpdfviewer/changes-and-backward-compatibility/changes$"
+    from: "^/controls/radpdfviewer/changes-and-backward-compatibility/changes$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
-    from: "^controls/radpdfviewer/changes-and-backward-compatibility/backward-compatibility$"
+    from: "^/controls/radpdfviewer/changes-and-backward-compatibility/backward-compatibility$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent    
 -
-    from: "^controls/radpdfviewer/features/(.*)$"
+    from: "^/controls/radpdfviewer/features/(.*)$"
     to: "/controls/radpdfviewer/$1"
     type: Permanent 
 -
-    from: "^controls/radpdfviewer/document-model/text/(.*)$"
+    from: "^/controls/radpdfviewer/document-model/text/(.*)$"
     to: "/controls/radpdfviewer/document-model/$1"
     type: Permanent 
 -
-    from: "^ai-assistant/copilot-extension$"
+    from: "^/ai-assistant/copilot-extension$"
     to: "/ai-assistant/mcp-server"
     type: Permanent 
 -
-    from: "^controls/radbuttons/features/appearance$"
+    from: "^/controls/radbuttons/features/appearance$"
     to: "/controls/radbuttons/customizing-buttons-appearance"
     type: Permanent
 -
-    from: "^controls/radbuttons/features/commands$"
+    from: "^/controls/radbuttons/features/commands$"
     to: "/controls/radbuttons/commands"
     type: Permanent
 -
-    from: "^controls/radbuttons/features/button-extensions$"
+    from: "^/controls/radbuttons/features/button-extensions$"
     to: "/controls/radbuttons/button-extensions"
     type: Permanent
 -
-    from: "^controls/radbuttons/features/popup-animation$"
+    from: "^/controls/radbuttons/features/popup-animation$"
     to: "/controls/radbuttons/popup-animation"
     type: Permanent
 -
-    from: "^ai-assistant/mcp-server-as-a-nuget$"
+    from: "^/ai-assistant/mcp-server-as-a-nuget$"
     to: "/ai-assistant/mcp-server"
     type: Permanent

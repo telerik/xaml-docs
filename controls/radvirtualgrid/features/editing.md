@@ -142,18 +142,8 @@ Through this event a custom editor for handling the editing operation can be def
 
 > The property of the editor that is being edited needs to be set manually as well.
 
-__Example 1: Handling the EditorNeeded event__  
-```C#
-	private void VirtualGrid_EditorNeeded(object sender, 
-            Telerik.Windows.Controls.VirtualGrid.EditorNeededEventArgs e)
-        {
-            TextBox tb = new TextBox();
-
-            e.Editor = tb;
-            tb.Text = e.TextInput;
-            e.EditorProperty = TextBox.TextProperty;
-        }
-```
+__Example 1: Handling the EditorNeeded event__
+<snippet id='radvirtualgrid-features-editing-block_1-cs' />
 
 > Most input controls (MaskedTextInput, RadNumericUpDown, RadComboBox, etc.) in the Material, Fluent and Transparent themes have an opacity applied. This means that you can see through them which could lead to a visual glitch when used as editors in RadVirtualGrid. To avoid this set the Background property of the editor to a solid color when you create it in the event handler.
 
@@ -167,14 +157,8 @@ This event is triggered each time the editor dependency property changes. With a
 
 * __Value__: Provides the current editor value.
 
-__Example 2: Handling the EditorValueChanged event__  
-```C#
-	private void VirtualGrid_EditorValueChanged(object sender, 
-			Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
-        {
-            
-        }
-```
+__Example 2: Handling the EditorValueChanged event__
+<snippet id='radvirtualgrid-features-editing-block_2-cs' />
 
 ### CellEditEnded
 
@@ -188,17 +172,8 @@ The event is raised when the edit ends. The event can result from __CommitEdit__
 
 * __EditAction__: Indicates whether the edit was committed through __VirtualGridEditAction.Commit__ or cancelled through __VirtualGridEditAction.Cancel__.
 
-__Example 3: Handling the CellEditEnded event__  
-```C#
-	   private void VirtualGrid_CellEditEnded_1(object sender, CellEditEndedEventArgs e)
-        {
-            if (e.EditAction == VirtualGridEditAction.Commit)
-            {
-                this.SaveValue(e.RowIndex, e.ColumnIndex, e.Value);
-                this.VirtualGrid.PushCellValue(e.RowIndex, e.ColumnIndex, e.Value);
-            }
-        }
-```
+__Example 3: Handling the CellEditEnded event__
+<snippet id='radvirtualgrid-features-editing-block_3-cs' />
 
 ## Methods
 
@@ -216,7 +191,7 @@ Calling this method causes __RadVirtualGrid__ to cancel the current edit, revert
 
 ### CommitEdit
 
-Commits the current edit and exits edit mode. 
+Commits the current edit and exits edit mode.
 
 * __CommitEdit()__
 
@@ -226,18 +201,8 @@ When an edit is committed through direct event handling, persist the new value i
 
 * __PushCellValue(int rowIndex, int columnIndex, object value)__
 
-__Example 4: Updating RadVirtualGrid with the modified data__  	
-```C#
-	private void VirtualGrid_CellEditEnded(object sender, 
-            Telerik.Windows.Controls.VirtualGrid.CellEditEndedEventArgs e)
-        {
-            if (e.EditAction == VirtualGridEditAction.Commit)
-            {
-                this.SaveValue(e.RowIndex, e.ColumnIndex, e.Value);
-                this.VirtualGrid.PushCellValue(e.RowIndex, e.ColumnIndex, e.Value);
-            }
-        }
-```
+__Example 4: Updating RadVirtualGrid with the modified data__
+<snippet id='radvirtualgrid-features-editing-block_4-cs' />
 
 ## EditTriggers
 

@@ -22,32 +22,22 @@ To change the search mode that is used to match the results, set the __TextSearc
 * __StartsWithCaseSensitive__
 * __ContainsCaseSensitive__
 
-You can also utilize the __IsTextSearchCaseSensitive__ property of RadPanelBar in order to determine if the search is case sensitive. 
+You can also utilize the __IsTextSearchCaseSensitive__ property of RadPanelBar in order to determine if the search is case sensitive.
 
 __Setting Up Text Search Navigation__
-```XAML
-<telerik:RadPanelBar IsTextSearchEnabled="True" TextSearchMode="Contains" />
-```
+<snippet id='radpanelbar-features-text-search-navigation-block_1-xaml' />
 
-When binding the RadPanelBar's ItemsSource property to a collection of business objects, you should set the __TextSearch.TextPath__ attached property in order to tell what property should be used for the text search. 
+When binding the RadPanelBar's ItemsSource property to a collection of business objects, you should set the __TextSearch.TextPath__ attached property in order to tell what property should be used for the text search.
 
 __Setting the TextPath__
-```XAML
-<telerik:RadPanelBar IsTextSearchEnabled="True" telerik:TextSearch.TextPath="MyProperty" />
-```
+<snippet id='radpanelbar-features-text-search-navigation-block_2-xaml' />
 
 In the previous example, `MyProperty` points to a property defined in the view model of the panelbar items. If the typed text matches the value of this property, the corresponding item will get selected.
 
 To increase the time interval for typing before the text is reset, set the __TextSearch.AutoCompleteTimeout__ static property.
 
 __Setting the Search Text Reset Timeout__
-```C#
-public MyUserControl() 
-{  
-	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = new TimeSpan(1500); 
-	this.InitializeComponent();
-} 
-```
+<snippet id='radpanelbar-features-text-search-navigation-block_3-xaml' />
 
 Note that this property is used in several other Telerik controls and setting it will affect them as well.
 

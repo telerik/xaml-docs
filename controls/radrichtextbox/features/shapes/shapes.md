@@ -45,11 +45,7 @@ The InsertShape() method of [RadDocumentEditor]({%slug radrichtextbox-features-r
 
 #### [C#] Example 1: Insert shape in a document
 
-```C#
-
-    RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
-    editor.InsertShape(ShapeType.Heart, new Size(100, 100));
-```
+<snippet id='radrichtextbox-features-shapes-shapes-block_1-cs' />
 
 ## Editing Shapes in Code
 
@@ -57,10 +53,7 @@ The [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) clas
 
 #### [C#] Example 2: Getting all shapes in a document
 
-```C#
-
-    IEnumerable<ShapeInline> shapes = this.radRichTextBox.Document.EnumerateChildrenOfType<ShapeInline>();
-```
+<snippet id='radrichtextbox-features-shapes-shapes-block_2-cs' />
 
 Once you have obtained the desired ShapeInline, you can apply the changes to it through the exposed methods:
 
@@ -74,17 +67,7 @@ Once you have obtained the desired ShapeInline, you can apply the changes to it 
 
 #### [C#] Example 3: Insert and modify shape
 
-```C#
-
-    RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
-    editor.InsertShape(ShapeType.ArrowPentagon, new Size(100, 100));
-    
-    ShapeInline shape = this.radRichTextBox.Document.EnumerateChildrenOfType<ShapeInline>().First();
-    editor.ChangeShapeOutlineDash(shape, LineDashType.DashDot);
-    editor.ChangeShapeOutlineFill(shape, new ShapeSolidFill(Colors.Chocolate));
-    editor.ChangeShapeOutlineWidth(shape, 3);
-    editor.ChangeShapeRotateAngle(shape, 99);
-```
+<snippet id='radrichtextbox-features-shapes-shapes-block_3-cs' />
 
 
 ### Shape Fill 
@@ -95,13 +78,7 @@ The fill colors related to shapes are defined by two interfaces: **IShapeFill** 
 
 #### [C#] Example 4: Create different fill types
 
-```C#
-
-    ShapeNoFill noFill = new ShapeNoFill();  
-    ShapeSolidFill solidFill = new ShapeSolidFill(Colors.Green);
-    ShapePatternFill patternFill = new ShapePatternFill(Telerik.Windows.Documents.Model.DrawingML.PatternType.Cross, Colors.White, Colors.Green);
-    ShapeGradientFill gradientFill = new ShapeGradientFill(new RadialGradientBrush(Colors.White, Colors.Green));
-```
+<snippet id='radrichtextbox-features-shapes-shapes-block_4-cs' />
 
 ## Getting the Content of a Shape
 
@@ -109,11 +86,7 @@ The **ShapeInline** class exposes the **Body** property to enable you access the
 
 #### [C#] Example 5: Get the shape content
 
-```C#
-
-    ShapeInline shape = new ShapeInline();
-    RadDocument doc = shape.Body;
-```
+<snippet id='radrichtextbox-features-shapes-shapes-block_5-cs' />
 
 ## See Also
 * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})

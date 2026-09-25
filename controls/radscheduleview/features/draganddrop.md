@@ -67,17 +67,7 @@ The __CanDrop__(*DragDropState* state) method gets the value specifying whether 
 
 __Example 1: Overriding the CanDrop method__
 
-```C#
-	public override bool CanDrop(DragDropState state)
-	{
-	    if (state.IsControlPressed)
-	    {
-	        return false;
-	    }
-	
-	    return base.CanDrop(state);
-	}
-```
+<snippet id='radscheduleview-features-draganddrop-block_1-cs' />
 
 ### CanStartDrag(DragDropState state)
 
@@ -85,17 +75,7 @@ __CanStartDrag__(*DragDropState* state) - Gets the value specifying whether the 
 
 __Example 2: Overriding the CanStartDrag method__
 
-```C#
-	public override bool CanStartDrag(DragDropState state)
-	{
-	    if (state.DraggedAppointments.Count() > 2)
-	    {
-	        return false;
-	    }
-	
-	    return base.CanStartDrag(state);
-	} 
-```
+<snippet id='radscheduleview-features-draganddrop-block_2-cs' />
 
 ### Drop(DragDropState state)
 
@@ -103,19 +83,7 @@ __Drop__(*DragDropState* state) - The method is called right after the Appointme
 
 __Example 3: Override the Drop method__
 
-```C#
-	public override void Drop(DragDropState state)
-	{
-	    var appointment = state.Appointment as Appointment;
-	
-	    if (appointment.Category == null)
-	    {
-	        appointment.Category = new Category("Green Category", Brushes.Green);
-	    }
-	
-	    base.Drop(state);
-	}
-```
+<snippet id='radscheduleview-features-draganddrop-block_3-cs' />
 
 ### CanResize(DragDropState state)
 
@@ -123,20 +91,7 @@ __CanResize__(*DragDropState* state) - Gets the value specifying whether the res
 
 __Example 4: Override the CanResize method__
 
-```C#
-	public override bool CanResize(DragDropState state)
-	{
-	    var destinationSlot = state.DestinationSlots.First() as Slot;
-	    var duration = destinationSlot.End - destinationSlot.Start;
-	
-	    if (duration <= new TimeSpan(0, 30, 0) || duration > new TimeSpan(2, 0, 0))
-	    {
-	        return false;
-	    }
-	
-	    return base.CanResize(state);
-	}
-```
+<snippet id='radscheduleview-features-draganddrop-block_4-cs' />
 
 ### CanStartResize(DragDropState state)
 
@@ -144,19 +99,7 @@ __CanStartResize__(*DragDropState* state) - Gets the value specifying whether th
 
 __Example 5: Override the CanStartResize method__
 
-```C#
-	public override bool CanStartResize(DragDropState state)
-	{
-	    var appointment = state.Appointment as Appointment;
-	
-	    if (appointment.TimeMarker != null && appointment.TimeMarker.Equals(TimeMarker.Busy))
-	    {
-	        return false;
-	    }
-	
-	    return base.CanStartResize(state);
-	}
-```
+<snippet id='radscheduleview-features-draganddrop-block_5-cs' />
 
 ### Resize(DragDropState state)
 
@@ -164,16 +107,7 @@ __Resize__(*DragDropState* state) - The method is called right after the resize 
 
 __Example 6: Override the Resize method__
 
-```C#
-	public override void Resize(DragDropState state)
-	{
-	    var appointment = state.Appointment as Appointment;
-	    var destinationSlot = state.DestinationSlots.First() as Slot;
-	    var duration = destinationSlot.End - destinationSlot.Start;
-	    appointment.Subject = "New duration: " + duration.ToString("h\\:mm\\:ss");
-	    base.Resize(state);
-	}
-```
+<snippet id='radscheduleview-features-draganddrop-block_6-cs' />
 
 This is the result:
 
@@ -187,23 +121,7 @@ __ConvertDraggedData__(Object data) - This method is fired when you drag appoint
 
 __Example 7: Override the ConvertDraggedData method__
 
-```C#
-	public override IEnumerable<IOccurrence> ConvertDraggedData(object data)
-	{
-	    if (Telerik.Windows.DragDrop.Behaviors.DataObjectHelper.GetDataPresent(data, typeof(Meeting), false))
-	    {
-	        var customers = Telerik.Windows.DragDrop.Behaviors.DataObjectHelper.GetData(data, typeof(Customer), true) as IEnumerable;
-	        if (customers != null)
-	        {
-	            var newApp = customers.OfType<Customer>().Select(c => new Appointment { Subject = c.Name });
-	
-	            return newApp;
-	        }
-	    }
-	
-	    return base.ConvertDraggedData(data);
-	}
-```
+<snippet id='radscheduleview-features-draganddrop-block_7-cs' />
 
 This will create a new Appointment with the Subject being the Name of the dropped customer as shown below:
 
@@ -215,16 +133,7 @@ __CoerceDraggedItems__(*DragDropState* state) - Initializes the drag operation. 
 
 __Example 8: Override the CoerceDraggedItems method__
 
-```C#
-	public override IEnumerable<IOccurrence> CoerceDraggedItems(DragDropState state)
-	{
-	    var resource = (state.Appointment as Appointment).Resources.First();
-	    var allAppointments = state.SourceAppointmentsSource.Cast<IOccurrence>();
-	    var desiredAppointments = allAppointments.Where(a => (a as Appointment).Resources.Any(r => r == resource));
-	
-	    return desiredAppointments;
-	}
-```
+<snippet id='radscheduleview-features-draganddrop-block_8-cs' />
 
 ### DragDropCompleted(DragDropState state)
 
@@ -241,11 +150,7 @@ After the CustomDragDropBehavior is implemented, all you need is to set it as Ra
 
 __Example 9: Set the CustomDragDropBehavior__
 
-```XAML
-	<telerik:RadScheduleView.DragDropBehavior>
-	  <local:CustomDragDropBehavior />
-	</telerik:RadScheduleView.DragDropBehavior>
-```
+<snippet id='radscheduleview-features-draganddrop-block_9-xaml' />
 
 ### ResizeCursor
 
@@ -253,22 +158,7 @@ The __ResizeCursor__ property was introduced with Q1 2016 release of UI for {% i
 
 __Example 10: Setting the ResizeCursor property__
 
-```C#
-	public override bool CanResize(DragDropState state)
-	{
-		var destinationSlot = state.DestinationSlots.First() as Slot;
-		var duration = destinationSlot.End - destinationSlot.Start;
-
-		if (duration <= new TimeSpan(0, 30, 0) || duration >= new TimeSpan(2, 0, 1))
-		{
-			this.ResizeCursor = Cursors.Wait;
-			return false;
-		}
-
-		this.ResizeCursor = Cursors.SizeNS;
-		return base.CanResize(state);
-	}
-```
+<snippet id='radscheduleview-features-draganddrop-block_10-cs' />
 
 >The default cursor is represented by setting the ResizeCursor property value to null.
 

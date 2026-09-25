@@ -14,32 +14,22 @@ position: 6
 By default, the __RadPanelBar__ items cannot be resized through the UI. To enable the UI resizing on the items you can use the __IsResizingEnabled__ property of the __RadPanelBar__ control. It is enabled by setting the __IsResizingEnabled__ property to __True__.
 
 __Enabling Items Resizing__
-```XAML
-<telerik:RadPanelBar IsResizingEnabled="True"/>
-```
+<snippet id='radpanelbar-features-resizeable-items-block_1-xaml' />
 
 The __IsResizingEnabled__ property can be set in code as well.
 
 __Enabling Items Resizing in Code__
-```C#
-radPanelBar.IsResizingEnabled = true;
-```
+<snippet id='radpanelbar-features-resizeable-items-block_2-cs' />
 
 __Enabling Items Resizing in Code__
-```VB.NET
-radPanelBar.IsResizingEnabled = True
-```
+<snippet id='radpanelbar-features-resizeable-items-block_5-vb' />
 
 ## Controling the Items Expanded Length
 
 The expanded length of the __RadPanelBarItem__ element can be controlled via its __ExpandedLength__ property. To control the minimum and maximum expanded length, set the __ExpandedMinLength__ and __ExpandedMaxLength__ properties. The expanded length values will be applied only when the __IsResizingEnabled__ property is set to __True__.
 
 __Setting PanelBarItem Expanded Length Constraints__
-```XAML
-<telerik:RadPanelBar Name="radPanelBar">
-        <telerik:RadPanelBarItem Header="Item 1" ExpandedLength="200" ExpandedMinLength="150" ExpandedMaxLength="250"/>
-    </telerik:RadPanelBar>
-```
+<snippet id='radpanelbar-features-resizeable-items-block_3-xaml' />
 
 __RadPanelBarItem with Expanded Length Constraints__
 
@@ -52,9 +42,7 @@ The __RadPanelBar__ control exposes an __IsScrollViewerInsideItemsEnabled__ prop
 To allow the __RadPanelBarItem__ control to scroll its content, set the __IsScrollViewerInsideItemsEnabled__ property to __True__.
 
 __Setting the IsScrollViewerInsideItemsEnabled Property__
-```XAML
-<telerik:RadPanelBar IsScrollViewerInsideItemsEnabled="True"/>
-```
+<snippet id='radpanelbar-features-resizeable-items-block_4-xaml' />
 
 ## See Also
 

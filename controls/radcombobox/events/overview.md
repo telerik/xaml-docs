@@ -19,15 +19,11 @@ Subscribe to a `RadComboBox` event in XAML or in code-behind.
 
 __Example 1: Subscribe to an event in XAML__
 
-```xaml
-<telerik:RadComboBox x:Name="radComboBox" DropDownOpened="RadComboBox_DropDownOpened" />
-```
+<snippet id='radcombobox-events-overview-example_1_subscribing_to_an_event_in_xaml-xaml' />
 
 __Example 2: Subscribe to an event in code-behind__
 
-```csharp
-this.radComboBox.DropDownOpened += RadComboBox_DropDownOpened;
-```
+<snippet id='radcombobox-events-overview-example_2_subscribing_to_an_event_in_code-cs' />
 
 ## Events
 
@@ -39,12 +35,7 @@ Use `DropDownOpened` when you need to change the drop-down state after the popup
 
 __Example 3: Handle the DropDownOpened event__
 
-```csharp
-private void RadComboBox_DropDownOpened(object sender, EventArgs e)
-{
-	var radComboBox = (RadComboBox)sender;
-}
-```
+<snippet id='radcombobox-events-overview-example_3_dropdownopened_event_handler-cs' />
 
 ### DropDownClosed
 
@@ -52,12 +43,7 @@ Use `DropDownClosed` when you need to react after the user dismisses the drop-do
 
 __Example 4: Handle the DropDownClosed event__
 
-```csharp
-private void RadComboBox_DropDownClosed(object sender, EventArgs e)
-{
-	var radComboBox = (RadComboBox)sender;
-}
-```
+<snippet id='radcombobox-events-overview-example_4_dropdownclosed_event_handler-cs' />
 
 ### SelectionChanged
 
@@ -65,14 +51,7 @@ Use `SelectionChanged` when you need to inspect the selected and unselected item
 
 __Example 5: Handle the SelectionChanged event__
 
-```csharp
-private void RadComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-{
-	var radComboBox = (RadComboBox)sender;
-	IList selectedItems = e.AddedItems;
-	IList unselectedItems = e.RemovedItems;
-}
-```
+<snippet id='radcombobox-events-overview-example_5_selectionchanged_event_handler-cs' />
 
 >note `SelectionChanged` is inherited from the [Selector class](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.selector?view=windowsdesktop-9.0).
 
@@ -135,7 +114,8 @@ __Example 7: Reset the drop-down scroll position in code-behind__
         }
 ```
 
-Add the required `using` directives (for example `System.Windows`, `System.Windows.Controls`, `System.Windows.Controls.Primitives`, `System.Windows.Media`, and `System.Windows.Threading`) if they are not already present in the code-behind file.
+Add the required `using` directives (for example `System.Windows`, `System.Windows.Controls`, `System.Windows.Controls.Primitives`, `System.Windows.Media`, and `System.Windows.Threading`) if they are not already present in the code-behind file.
+
 
 Because the code runs after `DropDownOpened` fires, the popup is already created and the `ScrollViewer` is available to scroll back to the top.
 

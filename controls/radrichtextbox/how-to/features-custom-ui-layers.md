@@ -28,9 +28,7 @@ All UILayers implement the __IUILayer__ interface. There is an abstract class, w
 
 
 
-```C#
-	public override void UpdateUIViewPortOverride(UILayerUpdateContext context)
-```
+<snippet id='radrichtextbox-how-to-features-custom-ui-layers-block_1-cs' />
 
 
 
@@ -41,15 +39,7 @@ Last but not least, you should not forget to override the Name property of the l
 
 
 
-```C#
-	public override string Name
-	{
-	    get
-	    {
-	        return this.customLayerName;
-	    }
-	}
-```
+<snippet id='radrichtextbox-how-to-features-custom-ui-layers-block_2-cs' />
 
 
 
@@ -58,10 +48,7 @@ After having implemented the logic of your custom UI layer, you can plug it in t
 
 
 
-```C#
-	[CustomUILayersBuilder]
-	public class CustomLayersBuilder : UILayersBuilder
-```
+<snippet id='radrichtextbox-how-to-features-custom-ui-layers-block_3-cs' />
 
 
 
@@ -70,9 +57,7 @@ In this way, your custom layer will be utilized in all instances of __RadRichTex
 
 
 
-```C#
-	this.editor.UILayersBuilder = new CustomLayersBuilder();
-```
+<snippet id='radrichtextbox-how-to-features-custom-ui-layers-block_4-cs' />
 
 
 
@@ -81,12 +66,7 @@ All that is left is to specify the place of your layer, i.e. which layers should
 
 
 
-```C#
-	protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
-	{
-	    uiLayerContainer.UILayers.AddAfter(DefaultUILayers.HighlightDecoration, new MyCustomLayer());
-	}
-```
+<snippet id='radrichtextbox-how-to-features-custom-ui-layers-block_5-cs' />
 
 
 

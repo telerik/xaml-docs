@@ -33,18 +33,8 @@ Here is an example:
 
 
 
-```XAML
-	<TextBox x:Name="InputBox"
-	         Width="200"
-	         VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu"
-	                                Placement="Bottom">
-	            ...
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-features-placement-block_1-xaml' />
+
 
 ![{{ site.framework_name }} RadContextMenu with Placement Bottom](images/RadContextMenu_Features_Placement_01.png)
 
@@ -56,19 +46,8 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 
 
 
-```XAML
-	<TextBox x:Name="InputBox1"
-	 Width="200"
-	 VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu1"
-	                                Placement="Bottom"
-	                                PlacementRectangle="0,0,100,100">
-	            ...
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-features-placement-block_2-xaml' />
+
 
 ![{{ site.framework_name }} RadContextMenu with Placement Rectangle](images/RadContextMenu_Features_Placement_02.png)
 
@@ -80,14 +59,8 @@ The __PlacementTarget__ property is used when the __RadContextMenu__ should be d
 
 
 
-```C#
-	public Default_Cs()
-	{
-	    InitializeComponent();
-	    this.radContextMenu.PlacementTarget = this.InputBox;
-	    this.radContextMenu.IsOpen = true;
-	}
-```
+<snippet id='radcontextmenu-features-placement-block_3-cs' />
+
 
 ![{{ site.framework_name }} RadContextMenu with Placement Target](images/RadContextMenu_Features_Placement_01.png)
 
@@ -123,22 +96,8 @@ Here is an example:
 
 
 
-```XAML
-	<TextBox x:Name="InputBox2"
-	         Width="200"
-	         VerticalAlignment="Top">
-	    <telerik:RadContextMenu.ContextMenu>
-	        <telerik:RadContextMenu x:Name="radContextMenu2">
-	            ...
-	            <telerik:RadMenuItem Header="Sub Menu" DropDownPlacement="Right">
-	                <telerik:RadMenuItem Header="Item 1" />
-	                <telerik:RadMenuItem Header="Item 2" />
-	            </telerik:RadMenuItem>
-	            ...
-	        </telerik:RadContextMenu>
-	    </telerik:RadContextMenu.ContextMenu>
-	</TextBox>
-```
+<snippet id='radcontextmenu-features-placement-block_4-xaml' />
+
 
 ![{{ site.framework_name }} RadContextMenu with Menu Item DropDownPlacement](images/RadContextMenu_Features_Placement_03.png)
 

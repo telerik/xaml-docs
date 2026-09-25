@@ -61,12 +61,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 
 
-```C#
-	            LocalizationManager.Manager = new LocalizationManager()
-	            {
-	                ResourceManager = RadSpreadsheetResources.ResourceManager
-	            };
-```
+<snippet id='radspreadsheet-localization-block_1-cs' />
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/WPF/Localization).          
 
@@ -77,9 +72,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 
 
 
-```C#
-	            LocalizationManager.Manager = new CustomLocalizationManager();
-```
+<snippet id='radspreadsheet-localization-block_2-cs' />
 
 
 
@@ -90,22 +83,7 @@ What is left in order to fulfil the localization is to override the method __Get
 
 
 
-```C#
-	    public class CustomLocalizationManager : LocalizationManager
-	    {
-	        public override string GetStringOverride(string key)
-	        {
-	            switch (key)
-	            {
-	                //----------------------
-	                case "Spreadsheet_Workbook":
-	                    return RadSpreadsheetResources.Spreadsheet_Workbook;
-	                //----------------------
-	            }
-	            return base.GetStringOverride(key);
-	        }
-	    }
-```
+<snippet id='radspreadsheet-localization-block_3-cs' />
 
 
 
@@ -114,20 +92,5 @@ Of course, if you don't want to hard-code your translation inside the source cod
 
 
 
-```C#
-	        public override string GetStringOverride(string key)
-	        {
-	            switch (key)
-	            {
-	                case "Ok":
-	                    return "~Ok~";
-	                case "Cancel":
-	                    return "~Cancel~";
-	
-	                //Insert any other keys that you need.
-	            }
-	            return base.GetStringOverride(key);
-	        }
-```
-
+<snippet id='radspreadsheet-localization-block_4-cs' />
 

@@ -17,27 +17,8 @@ The axis range direction can be changed by setting the `IsInverse` property of t
 
 In addition to Cartesian axes, `PolarAxis` in `RadPolarChart` supports `IsInverse` to invert the radial distance (radius) range. For the circular angle axis (`NumericRadialAxis` or `CategoricalRadialAxis`), set `SweepDirection="Clockwise"` to make angles advance clockwise.
 
-```XAML
-	<telerik:RadCartesianChart>
-		<telerik:RadCartesianChart.HorizontalAxis>
-			<telerik:CategoricalAxis IsInverse="True"/>
-		</telerik:RadCartesianChart.HorizontalAxis>	
-		<telerik:RadCartesianChart.VerticalAxis>
-			<telerik:LinearAxis IsInverse="True"/>
-		</telerik:RadCartesianChart.VerticalAxis>	
-		<telerik:RadCartesianChart.Series>
-			<telerik:BarSeries>
-				<telerik:BarSeries.DataPoints>
-					<telerik:CategoricalDataPoint Value="10" Category="1"/>
-					<telerik:CategoricalDataPoint Value="4" Category="2"/>
-					<telerik:CategoricalDataPoint Value="7" Category="3"/>
-					<telerik:CategoricalDataPoint Value="11" Category="4"/>
-					<telerik:CategoricalDataPoint Value="15" Category="5"/>
-				</telerik:BarSeries.DataPoints>
-			</telerik:BarSeries>
-		</telerik:RadCartesianChart.Series>
-	</telerik:RadCartesianChart>
-```
+<snippet id='radchartview-axes-inversed-axis-block_1-xaml' />
+
 
 The following picture shows two charts - one with the default range direction (on the top) and another with inverted axes ranges (on the bottom).
 

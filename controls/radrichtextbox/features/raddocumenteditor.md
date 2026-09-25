@@ -35,12 +35,8 @@ When a __RadDocument__ instance was for some reason created from code – built 
 
 
 
-```C#
-	RadDocumentEditor documentEditor = new RadDocumentEditor(document);
-```
-```VB.NET
-	Dim documentEditor As New RadDocumentEditor(document)
-```
+<snippet id='radrichtextbox-features-raddocumenteditor-block_1-cs' />
+<snippet id='radrichtextbox-features-raddocumenteditor-block_2-vb' />
 
 
 
@@ -49,31 +45,8 @@ The newly created *documentEditor* instance now provides all capabilities that a
 
 
 
-```C#
-	documentEditor.BeginUndoGroup();
-
-	if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
-	{
-		documentEditor.InsertTableRow();
-		documentEditor.InsertTableRow();
-		documentEditor.InsertTableRow();
-		documentEditor.Document.Selection.Clear();
-	}
-	
-	documentEditor.EndUndoGroup("Insert three table rows");
-```
-```VB.NET
-	documentEditor.BeginUndoGroup()
-	
-	If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-		documentEditor.InsertTableRow()
-		documentEditor.InsertTableRow()
-		documentEditor.InsertTableRow()
-		documentEditor.Document.Selection.Clear()
-	End If
-	
-	documentEditor.EndUndoGroup("Insert three table rows")
-```
+<snippet id='radrichtextbox-features-raddocumenteditor-block_3-cs' />
+<snippet id='radrichtextbox-features-raddocumenteditor-block_4-vb' />
 
 
 
@@ -81,31 +54,8 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 
 
 
-```C#
-	documentEditor.BeginUndoGroup();
-
-	if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
-	{
-		documentEditor.InsertTableRow();
-		documentEditor.InsertTableRow();
-		documentEditor.InsertTableRow();
-		documentEditor.Document.Selection.Clear();
-	}
-	
-	documentEditor.CancelUndoGroup();
-```
-```VB.NET
-	documentEditor.BeginUndoGroup()
-	
-	If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-		documentEditor.InsertTableRow()
-		documentEditor.InsertTableRow()
-		documentEditor.InsertTableRow()
-		documentEditor.Document.Selection.Clear()
-	End If
-	
-	documentEditor.CancelUndoGroup()
-```
+<snippet id='radrichtextbox-features-raddocumenteditor-block_5-cs' />
+<snippet id='radrichtextbox-features-raddocumenteditor-block_6-vb' />
 
 
 

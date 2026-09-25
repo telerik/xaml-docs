@@ -33,17 +33,8 @@ There are two ways to reference the needed xaml files:
 
 	Then merge the xaml files in the App.xaml like this:
 
-	```XAML
-		<Application.Resources>
-		    <ResourceDictionary>
-		        <ResourceDictionary.MergedDictionaries>
-		            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-		            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-		            <ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.GanttView.xaml"/>
-		        </ResourceDictionary.MergedDictionaries>
-		    </ResourceDictionary>
-		</Application.Resources>
-	```
+	<snippet id='radganttview-styles-and-templates-setting-theme-block_1-xaml' />
+
 
 * Copy the xaml files to a folder in the project:
 
@@ -53,17 +44,8 @@ There are two ways to reference the needed xaml files:
 	
 	Then merge the xaml files in the App.xaml like this:
 
-	```XAML
-		<Application.Resources>
-		    <ResourceDictionary>
-		        <ResourceDictionary.MergedDictionaries>
-		            <ResourceDictionary Source="Themes/System.Windows.xaml" />
-		            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
-		            <ResourceDictionary Source="Themes/Telerik.Windows.Controls.GanttView.xaml" />
-		        </ResourceDictionary.MergedDictionaries>
-		    </ResourceDictionary>
-		</Application.Resources>
-	```
+	<snippet id='radganttview-styles-and-templates-setting-theme-block_2-xaml' />
+
 
 Either way you choose, the end result will be the following:
 

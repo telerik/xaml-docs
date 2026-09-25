@@ -25,18 +25,8 @@ position: 5
 
 __Example 1: Set Table Properties__
 
-```C#
-    Table table = new Table();
-    table.LayoutMode = TableLayoutMode.AutoFit;
-    table.CellPadding = new Telerik.Windows.Documents.Layout.Padding(5);
-    table.CellSpacing = 10;
-```
-```VB.NET
-    Dim table As New Table()
-	table.LayoutMode = TableLayoutMode.AutoFit
-	table.CellPadding = New Telerik.Windows.Documents.Layout.Padding(5)
-	table.CellSpacing = 10
-```
+<snippet id='radrichtextbox-document-elements-table-api-block_1-cs' />
+<snippet id='radrichtextbox-document-elements-table-api-block_2-vb' />
 
 ### Methods for adding or Inserting Rows
 
@@ -50,18 +40,8 @@ __Example 1: Set Table Properties__
  
 __Example 2: Add Rows__
 
-```C#
-    Table table = new Table();
-
-    var row = table.AddRow();
-    var row2 = table.AddRowAtIndex(5);
-```
-```VB.NET
-    Dim table As New Table()
-
-	Dim row = table.AddRow()
-	Dim row2 = table.AddRowAtIndex(5)
-```
+<snippet id='radrichtextbox-document-elements-table-api-block_3-cs' />
+<snippet id='radrichtextbox-document-elements-table-api-block_4-vb' />
 
 ### Inserting and Deleting a Table
 
@@ -80,14 +60,8 @@ __Example 2: Add Rows__
  
 __Example 3: Add or Delete Table__
 
-```C#
-    radRichTextBox.DeleteTable();
-    radRichTextBox.InsertTable(table);
-```
-```VB.NET
-    radRichTextBox.DeleteTable()
-    radRichTextBox.InsertTable(table)
-```
+<snippet id='radrichtextbox-document-elements-table-api-block_5-cs' />
+<snippet id='radrichtextbox-document-elements-table-api-block_6-vb' />
 
 ### Methods for Formatting Tables
 
@@ -112,11 +86,5 @@ __Example 3: Add or Delete Table__
 >important In versions earlier than Q1 2015 before and after each Table element is inserted a Paragraph. When the Table is inserted via the UI or the InsertTable() method this is done automatically, otherwise paragraphs should be inserted manually. In next versions the Paragraph before the Table is not mandatory.
 
 __Example 4: Change Existing Table Properties__
-```C#
-    radRichTextBox.UnmergeTableCells();
-    radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.AutoFit);
-```
-```VB.NET
-    radRichTextBox.UnmergeTableCells()
-    radRichTextBox.ChangeTableLayoutMode(table, TableLayoutMode.AutoFit)
-```
+<snippet id='radrichtextbox-document-elements-table-api-block_7-cs' />
+<snippet id='radrichtextbox-document-elements-table-api-block_8-vb' />

@@ -21,17 +21,8 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
             
 
 
-```XAML
+<snippet id='radchartview-styles-and-templates-customizing-polarchart-series-block_1-xaml' />
 
-    <telerik:PolarLineSeries.ShapeStyle>
-      <Style TargetType="Path">
-          <Setter Property="StrokeDashArray" Value="10 5"/>
-          <Setter Property="Stroke" Value="Red"/>
-          <Setter Property="StrokeThickness" Value="3"/>
-      </Style>
-    </telerik:PolarLineSeries.ShapeStyle>
-
-```
 
 ![radchartview-styles-and-templates-Polar Line Series-Shape Style](images/radchartview-styles-and-templates-PolarLineSeries-ShapeStyle.png)
 
@@ -41,17 +32,8 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
             
 
 
-```XAML	
+<snippet id='radchartview-styles-and-templates-customizing-polarchart-series-block_2-xaml' />
 
-    <telerik:RadarLineSeries.ShapeStyle>
-      <Style TargetType="Path">
-          <Setter Property="StrokeDashArray" Value="10 5"/>
-          <Setter Property="Stroke" Value="Red"/>
-          <Setter Property="StrokeThickness" Value="3"/>
-      </Style>
-    </telerik:RadarLineSeries.ShapeStyle>
-
-```
 
 ![radchartview-styles-and-templates-Radar Line Series-Shape Style](images/radchartview-styles-and-templates-RadarLineSeries-ShapeStyle.png)
 
@@ -63,18 +45,8 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
             
 
 
-```XAML
+<snippet id='radchartview-styles-and-templates-customizing-polarchart-series-block_3-xaml' />
 
-    <telerik:PolarAreaSeries.ShapeStyle>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="Bisque"/>
-          <Setter Property="StrokeDashArray" Value="10 5"/>
-          <Setter Property="Stroke" Value="Red"/>
-          <Setter Property="StrokeThickness" Value="3"/>
-      </Style>
-    </telerik:PolarAreaSeries.ShapeStyle>
-
-```
 
 ![radchartview-styles-and-templates-Polar Area Series-Shape Style](images/radchartview-styles-and-templates-PolarAreaSeries-ShapeStyle.png)
 
@@ -84,17 +56,8 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
             
 
 
-```XAML
+<snippet id='radchartview-styles-and-templates-customizing-polarchart-series-block_4-xaml' />
 
-    <telerik:RadarAreaSeries.ShapeStyle>
-      <Style TargetType="Path">
-          <Setter Property="StrokeDashArray" Value="10 5"/>
-          <Setter Property="Stroke" Value="Red"/>
-          <Setter Property="StrokeThickness" Value="3"/>
-      </Style>
-    </telerik:RadarAreaSeries.ShapeStyle>
-  
-```
 
 ![radchartview-styles-and-templates-Radar Area Series-Shape Style](images/radchartview-styles-and-templates-RadarAreaSeries-ShapeStyle.png)
 
@@ -106,15 +69,8 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
             
 
 
-```XAML
+<snippet id='radchartview-styles-and-templates-customizing-polarchart-series-block_5-xaml' />
 
-    <telerik:PolarPointSeries.DefaultVisualStyle>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="YellowGreen"/>
-      </Style>
-    </telerik:PolarPointSeries.DefaultVisualStyle>
-    
-```
 
 >tip Since __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
 
@@ -126,15 +82,8 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
             
 
 
-```XAML
+<snippet id='radchartview-styles-and-templates-customizing-polarchart-series-block_6-xaml' />
 
-    <telerik:RadarPointSeries.DefaultVisualStyle>
-      <Style TargetType="Path">
-          <Setter Property="Fill" Value="YellowGreen"/>
-      </Style>
-    </telerik:RadarPointSeries.DefaultVisualStyle>
-    
-```
 
 
 >tip Since __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.

@@ -13,10 +13,9 @@ position: 4
 
 To create a valid `RadPolarChart`, set its `PolarAxis` and `RadialAxis` properties to `PolarAxis` and `NumericRadialAxis` objects, respectively.
 
-
 ## PolarAxis
 
-The PolarAxis class plots points along the radius of the chart. It provides the following properties:
+The `PolarAxis` class plots points along the radius of the chart. It provides the following properties:
 
 * __MajorStep__: Defines the major step between each axis tick.
 * __Minimum__: Defines the user-defined minimum value of the axis.
@@ -25,7 +24,7 @@ The PolarAxis class plots points along the radius of the chart. It provides the 
 
 ## RadialAxis and NumericRadialAxis
 
-The radial axis is the circular (angle) axis of the `RadPolarChart`. 
+The radial axis is the circular (angle) axis of the `RadPolarChart`.
 
 `RadialAxis` provides the following properties:
 
@@ -39,42 +38,9 @@ The radial axis is the circular (angle) axis of the `RadPolarChart`.
 * __MinorTickStyle__: Gets or sets the style applied to minor ticks.
 
 ## Example
+
 Below is an example of `RadPolarChart` that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
 
-Below is an example of RadPolarChart that demonstrates configuring the polar axis and reversing the radial sweep direction using `SweepDirection`:
-
-<telerik:RadPolarChart Palette="Windows8" MinWidth="400" MinHeight="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-
-					   HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-     <telerik:RadPolarChart.Grid>
-         <telerik:PolarChartGrid />
-     </telerik:RadPolarChart.Grid>
-        <telerik:PolarAxis LabelInterval="2" MajorStep="2" Maximum="10" IsInverse="True" />
-         <telerik:PolarAxis LabelInterval="2" MajorStep="2" Maximum="10" IsInverse="True"  />
-     </telerik:RadPolarChart.PolarAxis>
-     <telerik:RadPolarChart.RadialAxis>
-         <telerik:NumericRadialAxis SweepDirection="Clockwise" MajorStep="15" />
-     </telerik:RadPolarChart.RadialAxis>
-     <telerik:RadPolarChart.Series>
-         <telerik:PolarAreaSeries>
-             <telerik:PolarAreaSeries.DataPoints>
-                 <telerik:PolarDataPoint Angle="30" Value="4"/>
-                 <telerik:PolarDataPoint Angle="60" Value="4"/>
-                 <telerik:PolarDataPoint Angle="90" Value="4"/>
-                 <telerik:PolarDataPoint Angle="120" Value="4"/>
-                 <telerik:PolarDataPoint Angle="150" Value="4"/>
-                 <telerik:PolarDataPoint Angle="180" Value="4"/>
-                 <telerik:PolarDataPoint Angle="210" Value="4"/>
-                 <telerik:PolarDataPoint Angle="240" Value="4"/>
-                 <telerik:PolarDataPoint Angle="270" Value="4"/>
-                 <telerik:PolarDataPoint Angle="300" Value="4"/>
-                 <telerik:PolarDataPoint Angle="330" Value="4"/>
-                 <telerik:PolarDataPoint Angle="360" Value="4"/>
-             </telerik:PolarAreaSeries.DataPoints>
-         </telerik:PolarAreaSeries>
-     </telerik:RadPolarChart.Series>
- </telerik:RadPolarChart>
-
-```
+<snippet id='radchartview-axes-polaraxis-block_1-xaml' />
 
 ![Telerik UI for WPF RadChartView polar chart with a PolarAxis and radial axis](images/RadChartView-chart_axes_polaraxis.PNG)

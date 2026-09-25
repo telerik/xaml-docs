@@ -49,9 +49,7 @@ This document presenter displays the pages in a vertical order and is used by de
 
 __Example 1: Using FixedDocumentPagesPresenter__
 
-```C#
-	this.radPdfViewer.FixedDocumentPresenter = this.radPdfViewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentPagesPresenter);
-```
+<snippet id='radpdfviewer-ui-document-presenters-block_1-cs' />
 
 
 
@@ -66,9 +64,7 @@ This document presenter displays a single page inside the viewport. The page is 
 
 __Example 2: Using FixedDocumentSinglePageViewPresenter__
 
-```C#
-	this.radPdfViewer.FixedDocumentPresenter = this.radPdfViewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentSinglePageViewPresenter);
-```
+<snippet id='radpdfviewer-ui-document-presenters-block_2-cs' />
 
 
 

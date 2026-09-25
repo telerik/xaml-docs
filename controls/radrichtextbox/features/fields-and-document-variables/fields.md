@@ -56,9 +56,7 @@ Insert a page field:
 
 
 
-```C#
-    this.radRichTextBox.InsertField(new PageField());
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-fields-block_1-cs' />
 
 ## Updating a Field
 
@@ -69,9 +67,7 @@ Update a field:
 
 
 
-```C#
-    this.radRichTextBox.UpdateField(fieldRangeStart);
-```
+<snippet id='radrichtextbox-features-fields-and-document-variables-fields-block_2-cs' />
 
 ## Updating all Fields
 

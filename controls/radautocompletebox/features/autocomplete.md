@@ -29,12 +29,7 @@ The XAML should look like this:
 
 __Example 1: Declaring RadAutoCompleteBox with Suggest AutoCompleteMode__
 
-```XAML
-	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
-	                            ItemsSource="{Binding Countries}"
-	                            DisplayMemberPath="Name" 
-	                            AutoCompleteMode="Suggest"/>
-```
+<snippet id='radautocompletebox-features-autocomplete-example_1_declaring_radautocompletebox_with_suggest_autocompletemode-xaml' />
 
 The next screenshots show how the control looks in __Suggest__ mode:
 
@@ -54,12 +49,7 @@ The XAML should look like this:
 
 __Example 2: Declaring RadAutoCompleteBox with Append AutoCompleteMode__
 
-```XAML
-	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
-	                            ItemsSource="{Binding Countries}"
-	                            DisplayMemberPath="Name" 
-	                            AutoCompleteMode="Append"/>
-```
+<snippet id='radautocompletebox-features-autocomplete-example_2_declaring_radautocompletebox_with_append_autocompletemode-xaml' />
 
 The next screenshots show how the control looks in Append mode:
 
@@ -79,12 +69,7 @@ The XAML should look like this:
 
 __Example 3: Declaring RadAutoCompleteBox with SuggestAppend AutoCompleteMode__
 
-```XAML
-	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
-	                            ItemsSource="{Binding Countries}"
-	                            DisplayMemberPath="Name"
-	                            AutoCompleteMode="SuggestAppend"/>
-```
+<snippet id='radautocompletebox-features-autocomplete-example_3_declaring_radautocompletebox_with_suggestappend_autocompletemode-xaml' />
 
 The next screenshots show how the control looks in SuggestAppend mode:
 

@@ -27,12 +27,7 @@ The following examples show how RadPropertyGrid will look like when the ReadOnly
 
 __Example 1: Setting ReadOnlyEditorState property to Disabled__
 
-```XAML
-	<telerik:RadPropertyGrid 
-	    Item="{Binding Employee}"
-	    IsReadOnly="True"
-	    ReadOnlyEditorState="Disabled"/>
-```
+<snippet id='radpropertygrid-features-readonlyeditorstate-block_1-xaml' />
 
 #### __Figure 1: RadPropertyGrid with ReadOnlyEditorState set to Disabled__
 
@@ -40,12 +35,7 @@ __Example 1: Setting ReadOnlyEditorState property to Disabled__
 
 __Example 2: Setting ReadOnlyEditorState to ReadOnly__
 
-```XAML
-	<telerik:RadPropertyGrid
-	    Item="{Binding Employee}"
-	    IsReadOnly="True"
-	    ReadOnlyEditorState="ReadOnly"/>
-```
+<snippet id='radpropertygrid-features-readonlyeditorstate-block_2-xaml' />
 
 #### __Figure 2: RadPropertyGrid with ReadOnlyEditorState set to ReadOnly__
 

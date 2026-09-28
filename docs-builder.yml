@@ -1979,10 +1979,6 @@ redirects:
     to: "/controls/radcarousel/carousel-overview"
     type: Permanent
 -
-    from: "^/controls/radcontextmenu/overview$"
-    to: "/controls/radcontextmenu/contextmenu-overview1"
-    type: Permanent
--
     from: "^/controls/radtabcontrol/overview$"
     to: "/controls/radtabcontrol/overview2"
     type: Permanent

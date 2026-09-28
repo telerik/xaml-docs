@@ -42,8 +42,6 @@ This tutorial will show you how to select the item that was clicked, while openi
 
 Before starting, here is a sample __RadTreeView__ with a sample __RadContextMenu__ attached.
 
-
-
 __Attach RadContextMenu to RadTreeView__
 ```XAML
 <telerik:RadTreeView xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Name="radTreeView">
@@ -85,8 +83,6 @@ __Handle the RadContextMenu Opened Event__
 </telerik:RadContextMenu>
 ```
 
-
-
 __Define the Opened Event Handler in C#__
 ```C#
 private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
@@ -95,8 +91,6 @@ private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
 ```
 
 In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetClickedElement\<T\>()__ method of the __RadContextMenu__.
-
-
 
 __Get the Clicked RadTreeViewItem in C#__
 ```C#
@@ -109,8 +103,6 @@ private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
 The last thing to do is to set the __SelectedItem__ property of the __RadTreeView__ to the __instance__ of the __RadTreeView__ item that has been clicked.
 
 >note If you are having a dynamic data scenario, where the __RadTreeView__ is bound to a collection, you have to set the __SelectedItem__ property to the __DataContext__ of the clicked __RadTreeViewItem__.
-
-
 
 __Select the Clicked Item in C#__
 ```C#

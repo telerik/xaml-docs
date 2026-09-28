@@ -1,6 +1,6 @@
 ---
 title: Using Commands with the RadContextMenu
-description: Learn how to use RoutedUICommands with a RadContextMenu and the MVVM pattern.
+description: Learn how to use RoutedUICommands with a RadContextMenu and the MVVM pattern to move selected ListBox items up or down.
 type: how-to
 page_title: Using Commands with RadContextMenu and MVVM
 slug: kb-contextmenu-use-commands

@@ -33,7 +33,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
-## Add RadContextMenu
+## Attaching Context Menu to UI Element
 
 In order to add a __RadContextMenu__ control to your __UserControl__ you have to declare the following namespace:
 
@@ -78,7 +78,7 @@ If you run the application and right-click on the TextBox you will see an empty 
 __RadContextMenu with an Empty Context Menu__
 ![WPF RadContextMenu with Empty Context Menu](images/RadContextMenu_Getting_Started_01.png)
 
-## Add Menu Items
+## Adding Menu Items
 
 >note The class that represents the menu item is __Telerik.Windows.Controls.RadMenuItem__. To learn more about it, please take a look at the [RadMenu help content]({%slug radmenu-overview%}).
 
@@ -115,11 +115,9 @@ However, in most of the cases you have to bind your __RadContextMenu__ to a coll
 
 To adjust the appearance of the __RadContextMenu's__ items depending on the data they hold, read the [Item Template and Style Selectors]({%slug radcontextmenu-features-template-and-style-selectors%}) article.
 
-## Work with the RadContextMenu
+## Working with the RadContextMenu
 
 In order to learn how to use the __RadContextMenu__ and what capabilities it holds, read the various topics that describe its features.
-
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
 
 * [Setting the Opening Event]({%slug radcontextmenu-features-opening-on-specific-event%})
 

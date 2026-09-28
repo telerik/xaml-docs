@@ -1,6 +1,6 @@
 ---
-title: Item Template and Style Selectors
-page_title: Item Template and Style Selectors
+title: Customizing MenuItem Appearance
+page_title: Customizing MenuItem Appearance
 description: Check our &quot;Item Template and Style Selectors&quot; documentation article for the RadContextMenu {{ site.framework_name }} control.
 components: ["contextmenu"]
 slug: radcontextmenu-features-template-and-style-selectors
@@ -9,7 +9,7 @@ published: True
 position: 12
 ---
 
-# Item Template and Style Selectors
+# Customizing MenuItem Appearance
 
 The `RadContextMenu` and the `RadMenuItem` controls come with a set of selector properties. Typically, you use a template or style selector when you have more than one data template or style defined for the same type of objects.
 
@@ -154,4 +154,4 @@ The `HierarchicalDataTemplate` used with the `RadContextMenu` also exposes `Item
 
 * [Data Binding]({%slug radcontextmenu-features-data-binding%})
 
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
+* [Getting Started]({%slug contextmenu-getting-started%})

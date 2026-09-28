@@ -114,7 +114,7 @@ The `ItemClick` handler receives the clicked item from `e.OriginalSource`.
 
 ## See Also
 
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
+* [Getting Started]({%slug contextmenu-getting-started%})
 
 * [Events - Overview]({%slug radcontextmenu-events-overview%})
 

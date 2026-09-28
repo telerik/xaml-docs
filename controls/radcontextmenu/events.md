@@ -63,6 +63,6 @@ private void RadContextMenu_ItemClick(object sender, RadRoutedEventArgs e)
 
 * [Visual Structure]({%slug radcontextmenu-visual-structure%})
 
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
+* [Getting Started]({%slug contextmenu-getting-started%})
 
 * [Handle Item Clicks]({%slug kb-contextmenu-handle-item-clicks%})

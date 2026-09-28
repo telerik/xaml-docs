@@ -91,5 +91,5 @@ __RadMenuGroupItem Scrolling__
 
 ## See Also
 
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
+* [Getting Started]({%slug contextmenu-getting-started%})
 * [RadContextMenu Overview]({%slug contextmenu-overview%})

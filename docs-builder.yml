@@ -2480,6 +2480,10 @@ redirects:
     to: "/controls/radcontextmenu/overview"
     type: Permanent
 -
+    from: "^/controls/radcontextmenu/features/working-with-radcontext-menu/?$"
+    to: "/controls/radcontextmenu/getting-started"
+    type: Permanent
+-
     from: "^/controls/radcontextmenu/features/(.*)$"
     to: "/controls/radcontextmenu/$1"
     type: Permanent

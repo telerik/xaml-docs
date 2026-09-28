@@ -319,7 +319,7 @@ public MainWindow()
 ```
 ## See Also
 
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
+* [Getting Started]({%slug contextmenu-getting-started%})
 
 * [Data Binding]({%slug radcontextmenu-features-data-binding%})
 

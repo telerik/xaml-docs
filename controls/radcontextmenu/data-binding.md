@@ -229,7 +229,7 @@ __Add RadMenuItems Manually__
 
 ## See Also
 
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
+* [Getting Started]({%slug contextmenu-getting-started%})
 
 * [Item Template and Style Selectors]({%slug radcontextmenu-features-template-and-style-selectors%})
 

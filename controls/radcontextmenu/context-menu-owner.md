@@ -56,7 +56,7 @@ __Restore Focus to the Context Menu Owner__
 
 ## See Also
 
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
+* [Getting Started]({%slug contextmenu-getting-started%})
 
 * [Setting the Opening Event]({%slug radcontextmenu-features-opening-on-specific-event%})
 

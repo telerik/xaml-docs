@@ -57,6 +57,6 @@ __RadContextMenu Menu Button__
 
 ## See Also
 
-* [Attaching a Context Menu]({%slug radcontextmenu-features-working-with-radcontext-menu%})
+* [Getting Started]({%slug contextmenu-getting-started%})
 * [Menu Placement]({%slug radcontextmenu-features-placement%})
 * [RadContextMenu Overview]({%slug contextmenu-overview%})

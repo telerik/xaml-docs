@@ -46,8 +46,6 @@ __RadContextMenu Submenu Scrolling__
 
 Here's a simple code that shows how to use Height and DropDownHeight properties:
 
-
-
 __Set RadContextMenu Height and RadMenuItem DropDownHeight__
 ```XAML
 <TextBox xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"

@@ -52,8 +52,6 @@ Handling the __Click__ event of each item is the straight-forward way. But it ha
 
 Here is an example of an event handler attached to the __Click__ event and how to get the instance of the clicked item.
 
-
-
 __Attach RadMenuItem Click Handlers__
 ```XAML
 <telerik:RadContextMenu xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
@@ -65,8 +63,6 @@ __Attach RadMenuItem Click Handlers__
                          Click="RadMenuItem_Click" />
 </telerik:RadContextMenu>
 ```
-
-
 
 __Handle the Click Event in C#__
 ```C#
@@ -87,8 +83,6 @@ Handling the __ItemClick__ event of the __RadContextMenu__ gives you more flexib
 
 Here is an example of an event handler attached to the __ItemClick__ event and how to get the instance of the clicked item.
 
-
-
 __Attach the RadContextMenu ItemClick Handler__
 ```XAML
 <telerik:RadContextMenu xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -98,8 +92,6 @@ __Attach the RadContextMenu ItemClick Handler__
     <telerik:RadMenuItem Header="Item 3" />
 </telerik:RadContextMenu>
 ```
-
-
 
 __Handle the ItemClick Event in C#__
 ```C#

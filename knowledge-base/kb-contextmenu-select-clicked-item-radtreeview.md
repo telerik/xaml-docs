@@ -1,6 +1,6 @@
 ---
 title: Selecting the Clicked Item of a RadTreeView
-description: Learn how to select the RadTreeViewItem clicked before a RadContextMenu opens.
+description: Learn how to select the clicked RadTreeViewItem when a RadContextMenu opens and use it as the tree view's selected item.
 type: how-to
 page_title: Selecting the Clicked RadTreeViewItem with RadContextMenu
 slug: kb-contextmenu-select-clicked-item-radtreeview

@@ -31,3 +31,7 @@ apiRules:
 - exclude:
     type: Interface
     uidRegex: ^Telerik\.Pivot\.Core\.IPivotResults$
+- exclude:
+    uidRegex: ^Telerik\.Windows\.Documents\.Model\.Merging\.InsertDocumentOptions(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Windows\.Diagrams\.Core\.GraphBase`2(\..*)?$

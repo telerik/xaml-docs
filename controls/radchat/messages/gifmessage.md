@@ -19,12 +19,12 @@ As its name states, the __GifMessage__ is intended to be used for displaying gif
 
 So, a __GifMessage__ can be defined as follows.
 
-__Example 1: Defining a GifMessage__
+__Defining a GifMessage__
 
 <snippet id='radchat-features-messages-gifmessage-example_1_defining_a_gifmessage-cs' />
 
 
-#### __Figure 1: Defining GifMessage__
+__Defining GifMessage__
 ![Defining GifMessage](images/RadChat_Messages_Gif_01.gif)
 
 ## See Also

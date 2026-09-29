@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-attachments
 tags: attach,message,seen
 published: True
-position: 4
+position: 7
 ---
 
 # Message Attachments

@@ -18,11 +18,11 @@ The __DataFormMessage__ mimics the [RadDataForm]({%slug raddataform-overview%}) 
 * __IEnumerable<string> propertyNames__: the properties of the __item__ have to be passed as collection of strings.  
 * __DateTime creationDate__: the __creationDate__ parameter is optional.
 
-__Example 1: Defining a DataFormMessage__ 
+__Defining a DataFormMessage__
 <snippet id='radchat-features-messages-dataformmessage-example_1_defining_a_dataformmessage-cs' />
 
 
-#### __Figure 1: Defining DataFormMessage__
+__Defining DataFormMessage__
 ![Defining DataFormMessage](images/RadChat_Messages_DataForm_01.png)
 
 ## See Also

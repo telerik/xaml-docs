@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-azure-bot-service
 tags: chat, bot, azure, directline, ai, llm, openai, agents
 published: True
-position: 8
+position: 13
 ---
 
 # Connect RadChat to Bot and AI Services

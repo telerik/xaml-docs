@@ -19,11 +19,11 @@ Specific for the __ListMessage__ is that it has to be populated with a source co
 * __SelectionMode selectionMode__
 * __DateTime creationDate__
 
-__Example 1: Defining an ListMessage__
+__Defining a ListMessage__
 <snippet id='radchat-features-messages-listmessage-example_1_defining_an_listmessage-cs' />
 
 
-#### __Figure 1: Defining ListMessage__
+__Defining ListMessage__
 ![Defining ListMessage](images/RadChat_Messages_List_01.png)
 
 ## See Also

@@ -49,3 +49,9 @@ Chat_Attachment_Download | Download
 Chat_Attachment_DownloadAll | Download All
 Chat_Attachment_Share | Share
 
+## See Also
+
+* [Overview]({%slug chat-overview%})
+* [Getting Started]({%slug chat-getting-started%})
+
+

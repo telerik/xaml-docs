@@ -895,11 +895,10 @@ meta:
         position: 9
     controls/radchat:
         title: RadChat (Conversational UI)
-    controls/radchat/features:
-        title: Features
-    controls/radchat/features/messages:
+    controls/radchat/messages:
         title: Messages
-    controls/radchat/features/messages/card-messages:
+        position: 8
+    controls/radchat/messages/card-messages:
         title: Cards
     controls/radwebcam:
         title: RadWebCam
@@ -1043,6 +1042,18 @@ redirects:
 -
     from: "^/controls/radchat/how-to/connect-to-azure-bot-service$"
     to: "/controls/radchat/connect-to-azure-bot-service"
+    type: Permanent
+-
+    from: "^/controls/radchat/features/(.*)$"
+    to: "/controls/radchat/$1"
+    type: Permanent
+-
+    from: "^/controls/radchat/getting-started/getting-started/?$"
+    to: "/controls/radchat/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radchat/populating-with-data/data-binding-to-collection/?$"
+    to: "/controls/radchat/data-binding-to-collection"
     type: Permanent
 -
     from: "^/cloud-integration/.*$"

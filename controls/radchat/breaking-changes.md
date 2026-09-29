@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-breaking-changes
 tags: breaking, changes, backward,compatibility
 published: True
-position: 7
+position: 4
 ---
 
 # Breaking Changes

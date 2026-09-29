@@ -1,6 +1,6 @@
 ---
 title: RadRichTextBox Fails to Load Dialogs, Menus, and the Spell Checker
-description: Learn why RadRichTextBox dialogs, menus, import/export, and spell checking fail to load when MEF cannot discover the required assemblies, and how to resolve it.
+description: Learn why MEF discovery failures prevent RadRichTextBox dialogs, menus, import/export, and spell checking from loading, and how to fix them.
 components: ["richtextbox"]
 type: troubleshooting
 page_title: RadRichTextBox Missing Dialogs and Menus, Failed Save/Load, and Spell Checker Not Working

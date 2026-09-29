@@ -170,12 +170,6 @@ meta:
         position: 6
     controls/radscheduleview/populating-with-data/binding-to-database:
         title: Binding To Database
-    controls/radcontextmenu/changes-and-backwards-compatibility:
-        title: Changes and Backwards Compatibility
-        position: 5
-    controls/radcontextmenu/features:
-        title: Features
-        position: 6
     controls/radmenu/changes-and-backwards-compatibility:
         title: Changes and Backwards Compatibility
         position: 5
@@ -1214,7 +1208,7 @@ redirects:
     type: Permanent
 -
     from: "^/controls/radcontextmenu/populating-with-data/overview$"
-    to: "/controls/radcontextmenu/populating-with-data/data-binding-support-overview"
+    to: "/controls/radcontextmenu/data-binding"
     type: Permanent
 -
     from: "^/controls/radcombobox/howto/grid-like-dropdown$"
@@ -1985,10 +1979,6 @@ redirects:
     to: "/controls/radcarousel/carousel-overview"
     type: Permanent
 -
-    from: "^/controls/radcontextmenu/overview$"
-    to: "/controls/radcontextmenu/contextmenu-overview1"
-    type: Permanent
--
     from: "^/controls/radtabcontrol/overview$"
     to: "/controls/radtabcontrol/overview2"
     type: Permanent
@@ -2475,4 +2465,89 @@ redirects:
 -
     from: "^/ai-assistant/mcp-server-as-a-nuget$"
     to: "/ai-assistant/mcp-server"
+    type: Permanent
+
+-
+    from: "^/controls/radcontextmenu/changes-and-backwards-compatibility/(.*)$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/features/key-properties/?$"
+    to: "/controls/radcontextmenu/overview"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/features/working-with-radcontext-menu/?$"
+    to: "/controls/radcontextmenu/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/features/(.*)$"
+    to: "/controls/radcontextmenu/$1"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/styles-and-templates/template-structure/?$"
+    to: "/controls/radcontextmenu/overview"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/populating-with-data/data-binding-support-overview/?$"
+    to: "/controls/radcontextmenu/data-binding"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/populating-with-data/binding-to-dynamic-data/?$"
+    to: "/controls/radcontextmenu/data-binding"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/populating-with-data/using-static-items/?$"
+    to: "/controls/radcontextmenu/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/styles-and-templates/overview/?$"
+    to: "/controls/radcontextmenu/overview"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/styles-and-templates/styling-the-context-menu/?$"
+    to: "/controls/radcontextmenu/overview"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/styles-and-templates/template-and-style-selectors/?$"
+    to: "/controls/radcontextmenu/template-and-style-selectors"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/key-properties/?$"
+    to: "/controls/radcontextmenu/overview"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/contextmenu-getting-started/?$"
+    to: "/controls/radcontextmenu/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/contextmenu-overview1/?$"
+    to: "/controls/radcontextmenu/overview"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/events/overview/?$"
+    to: "/controls/radcontextmenu/events"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/how-to/add-scrolling-to-radcontextmenu/?$"
+    to: "/knowledge-base/kb-contextmenu-add-scrolling"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/how-to/create-menu-button-with-radcontextmenu-and-togglebutton/?$"
+    to: "/knowledge-base/kb-contextmenu-create-menu-button-with-togglebutton"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/how-to/handle-item-clicks/?$"
+    to: "/knowledge-base/kb-contextmenu-handle-item-clicks"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/how-to/select-the-clicked-item-of-radtreeview/?$"
+    to: "/knowledge-base/kb-contextmenu-select-clicked-item-radtreeview"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/how-to/use-commands-with-the-radcontextmenu/?$"
+    to: "/knowledge-base/kb-contextmenu-use-commands"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/how-to/use-radcontextmenu-with-radgridview/?$"
+    to: "/knowledge-base/kb-contextmenu-use-with-radgridview"
     type: Permanent

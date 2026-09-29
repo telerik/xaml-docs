@@ -16,7 +16,7 @@ position: 4
 By default the WorksheetEditor of RadSpreadsheet does not have a context menu. However, the control exposes a __WorksheetEditorContextMenu__ property of type __RadContextMenu__ that allows you to plug and arrange easily a context menu. This article demonstrates how to assign the editor a menu using XAML.
       
 
->tip RadContextMenu is a flexible control that aims to provide additional commands and features. You will be able to find more information regarding RadContextMenu in the section of our online documentation dedicated to the control [here]({%slug contextmenu-overview1%}).
+>tip RadContextMenu is a flexible control that aims to provide additional commands and features. You will be able to find more information regarding RadContextMenu in the section of our online documentation dedicated to the control [here]({%slug contextmenu-overview%}).
         
 
 ## Set Worksheet Editor's Context Menu

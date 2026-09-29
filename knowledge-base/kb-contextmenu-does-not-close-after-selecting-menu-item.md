@@ -1,5 +1,5 @@
 ---
-title: RadContextMenu Does not Close after Displaying Dialog Window
+title: RadContextMenu Does Not Close after Displaying a Dialog Window
 description: After selecting an item from the RadContextMenu, it remains open.
 components: ["contextmenu"]
 type: troubleshooting
@@ -29,20 +29,20 @@ RadContextMenu stays open after selecting a menu item and/or opening a dialog wi
 
 ## Solution
 
-This behavior is observed because of the timing of executing a menu item's command or [custom click logic]({%slug radcontextmenu-how-to-handle-item-clicks%}) and closing the menu along with the nature of the dialog windows. The custom click logic of the item is executed before the closing of the menu and if a dialog is opened at this point, it freezes the rest of the UI and the menu remains opened.
+This behavior is observed because of the timing of executing a menu item's command or [custom click logic]({%slug kb-contextmenu-handle-item-clicks%}) and closing the menu along with the nature of the dialog windows. The custom click logic of the item is executed before the closing of the menu and if a dialog is opened at this point, it freezes the rest of the UI and the menu remains opened.
 
-To resolve this you can use the application's **Dispatcher** to delay the opening of the dialog as shown in **Example 1**.
+To resolve this, you can use the application's `Dispatcher` to delay the opening of the dialog.
 
-__Example 1: Delaying the opening of a dialog window__
-```XAML
-    private void RadContextMenu_ItemClick(object sender, Telerik.Windows.RadRoutedEventArgs e)
-    {
-        Dispatcher.BeginInvoke(new Action(() =>
-        {
-            MessageBox.Show("Command Executed!");
-        }));
-    }
+__Delay the Opening of a Dialog Window__
+```C#
+private void RadContextMenu_ItemClick(object sender, Telerik.Windows.RadRoutedEventArgs e)
+{
+	Dispatcher.BeginInvoke(new Action(() =>
+	{
+		MessageBox.Show("Command Executed!");
+	}));
+}
 ```
 
 ## See Also
-* [Handle Item Clicks]({%slug radcontextmenu-how-to-handle-item-clicks%})
+* [Handle Item Clicks]({%slug kb-contextmenu-handle-item-clicks%})

@@ -14,7 +14,7 @@ position: 2
 This article describes how you can add additional functionality to __RadPdfViewer__ – a context menu.
       
 
->In order to use the capabilities of [RadContextMenu]({%slug contextmenu-overview1%}) in __RadPdfViewer__ you need to add to your project a reference to the following assemblies:
+>In order to use the capabilities of [RadContextMenu]({%slug contextmenu-overview%}) in __RadPdfViewer__ you need to add to your project a reference to the following assemblies:
 >
 > * Telerik.Windows.Controls.Navigation.dll 
 > * Telerik.Windows.Controls.dll

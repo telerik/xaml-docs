@@ -98,7 +98,7 @@ Telerik UI for WPF features the following controls:
         <IntroTableSection title="Navigation">
             <IntroTableAnchor title="Breadcrumb" href="slug:radbreadcrumb-overvew"></IntroTableAnchor>
             <IntroTableAnchor title="Buttons" href="slug:radbuttons-overview" tag="updated"></IntroTableAnchor>
-            <IntroTableAnchor title="ContextMenu" href="slug:contextmenu-overview1"></IntroTableAnchor>
+            <IntroTableAnchor title="ContextMenu" href="slug:contextmenu-overview"></IntroTableAnchor>
             <IntroTableAnchor title="Menu" href="slug:radmenu-overview"></IntroTableAnchor>
             <IntroTableAnchor title="NavigationView (HamburgerMenu)" href="slug:radnavigationview-overview"></IntroTableAnchor>
             <IntroTableAnchor title="NotifyIcon" href="slug:radnotifyicon-overview"></IntroTableAnchor>

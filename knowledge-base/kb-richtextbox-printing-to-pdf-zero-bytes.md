@@ -50,4 +50,4 @@ If printing through a physical printer or `PrintDialog` is strictly required, ch
 
 * [Printing in RadRichTextBox]({%slug radrichtextbox-printing%})
 * [Using PdfFormatProvider]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%})
-* [Troubleshooting Common Problems]({%slug radrichtextbox-troubleshooting-common-problems%})
+* [Knowledge Base Articles]({%slug radrichtextbox-kb-articles%})

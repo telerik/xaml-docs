@@ -48,7 +48,7 @@ __Defining the Catalog of Types Used by RadRichTextBox__
 
 You can do this on application start-up or in the constructor of your page, just before `InitializeComponent()`.
 
->As RadRichTextBox does not have a dependency on RichTextBoxUI, the assemblies are not normally copied to the Shell project by Prism and are not included in the XAP, if the view containing the RichTextBox is in another project. To resolve the problem, adopt one of the following approaches:
+>As RadRichTextBox does not have a dependency on RichTextBoxUI, Prism does not normally copy those assemblies to the Shell project when the view containing RadRichTextBox is in another project. To resolve the problem, use one of the following approaches:
 
 * Add references to the required assemblies in the Shell project, too. You can do this manually from Visual Studio or as part of a prebuild command on the Shell project or a postbuild command on the Module project in which you added the references.
 

@@ -1,6 +1,6 @@
 ---
 title: Win32Exception Is Thrown when Multiple RadDocument Instances Are Created in Background Threads
-description: Learn why a Win32Exception about insufficient storage is thrown when multiple RadDocument instances are created on background threads, and how to work around it.
+description: Learn why creating multiple RadDocument instances on background threads causes an insufficient-storage Win32Exception and how to prevent it.
 components: ["richtextbox"]
 type: troubleshooting
 page_title: RadRichTextBox Win32Exception on Multiple RadDocument Instances in Background Threads

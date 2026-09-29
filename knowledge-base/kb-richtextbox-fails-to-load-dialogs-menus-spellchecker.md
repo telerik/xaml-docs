@@ -26,7 +26,7 @@ RadRichTextBox requires several prerequisites to use its default UI, such as `In
 
 The first prerequisite is to reference the assembly that contains the implementation of the feature:
 
-* __Telerik.Windows.Controls.RichTextBoxUI__ and the assemblies it depends on for the UI.
+* For .NET Framework, reference `Telerik.Windows.Controls.RichTextBoxUI` and its dependencies. For .NET, install the `Telerik.Windows.Controls.RichTextBox.for.Wpf` NuGet package, which includes the UI dependencies.
 
 * __Telerik.Windows.Documents.FormatProviders.[Xaml/Html/OpenXml/Rtf/Pdf]__ for the respective format and __Telerik.Windows.Zip__ for docx and PDF.
 

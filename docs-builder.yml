@@ -1041,6 +1041,10 @@ redirects:
     to: "/introduction"
     type: Permanent
 -
+    from: "^/controls/radchat/how-to/connect-to-azure-bot-service$"
+    to: "/controls/radchat/connect-to-azure-bot-service"
+    type: Permanent
+-
     from: "^/cloud-integration/.*$"
     to: "/introduction"
     type: Permanent

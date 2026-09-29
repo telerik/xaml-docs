@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-unsupported-features
 tags: unsupported,features
 published: True
-position: 12
+position: 41
 ---
 
 # Unsupported Features

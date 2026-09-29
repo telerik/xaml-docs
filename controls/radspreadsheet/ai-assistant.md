@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-ai-assistant
 tags: ai, assistant, spreadsheet, chat, analysis
 published: True
-position: 0
+position: 5
 tag: new
 ---
 

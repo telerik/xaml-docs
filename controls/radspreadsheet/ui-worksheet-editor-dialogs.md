@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-worksheet-editor-dialogs
 tags: worksheet,dialogs
 published: True
-position: 19
+position: 13
 ---
 
 # Worksheet Editor Dialogs

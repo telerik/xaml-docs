@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-find-and-replace
 tags: find, replace, radspreadsheet
 published: True
-position: 8
+position: 22
 ---
 
 # Find and Replace

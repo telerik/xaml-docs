@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-ui-working-with-selection
 tags: working,with,ui,selection
 published: True
-position: 16
+position: 19
 ---
 
 # Working with Selection
@@ -210,6 +210,35 @@ __Disable Fill Selection__
 <snippet id='radspreadsheet-features-ui-working-with-selection-block_22-cs' />
 <snippet id='radspreadsheet-features-ui-working-with-selection-block_23-vb' />
 
+## Customizing the Selection Appearance
+
+`RadSpreadsheet` exposes several properties that enable you to control the way the selection is rendered:
+
+* **SelectionStroke**: A *dependency property* of type *Brush* that gets or sets the stroke of the selection.
+
+* **SelectionStrokeThickness**: A *dependency property* of type *double* that gets or sets the stroke thickness of the selection.
+
+* **SelectionFill**: A *dependency property* of type *Brush* that gets or sets the fill of the selection. 
+
+* **FillHandleSelectionStroke**: A *dependency property* of type *Brush* that gets or sets the fill handle selection stroke.
+
+The following image shows an example of a customized selection.
+
+__Customized Selection__
+
+![Customized Selection](images/RadSpreadsheet_HowTo_Customize_Selection_01.png)
+
+The examples below demonstrate one way to customize the properties of the selection in XAML and in code-behind in order to achieve the result shown in the picture above.
+
+__Customizing the Selection__
+
+<snippet id='radspreadsheet-howto-customize-selection-block_1-xaml' />
+
+__Customizing the Selection__
+
+<snippet id='radspreadsheet-howto-customize-selection-block_2-cs' />
+<snippet id='radspreadsheet-howto-customize-selection-block_3-vb' />
+
 ## Using Selection to Complete Formulas
 
 The selection object can be used to help entering formulas and to give visual cues for understanding these which are already there. 
@@ -247,3 +276,7 @@ The current region can be selected also using the `Ctrl+Shift+*` keyboard combin
 The header click selection will selected the corresponding row or column only. Setting the `SpreadsheetSelectionExtensions.ExpandHeaderSelectionToMergedRange` attached property to `True` will automatically expand the selection to adjacent headers, if the clicked row/column contains merged cells.
 
 <snippet id='radspreadsheet-features-ui-working-with-selection-block_26-xaml' />
+
+## See Also
+
+* [Row and Column Headers]({%slug radspreadsheet-row-and-column-headers%})

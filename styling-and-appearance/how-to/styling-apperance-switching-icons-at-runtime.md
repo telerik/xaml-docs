@@ -151,5 +151,5 @@ Changing the icon set used in the application with the code from __Example 4__ w
 
 * [Set a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
 * [Switch RadPdfViewer Icons at Runtime]({%slug radpdfviewer-ui-switching-icons-at-runtime%})
-* [Switch RadSpreadsheet Icons at Runtime]({%slug radspreadsheet-howto-switching-icons-at-runtime%})
+* [Switch RadSpreadsheet Icons at Runtime]({%slug radspreadsheet-getting-started-spreadsheet-ui%}#switching-icons-at-runtime)
 * [Switch RadRichTextBox Icons at Runtime]({%slug radrichtextbox-how-to-switching-icons-at-runtime%}) 

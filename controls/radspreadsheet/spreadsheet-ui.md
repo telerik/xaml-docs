@@ -1,15 +1,15 @@
 ---
-title: Spreadsheet UI
-page_title: Spreadsheet UI
+title: Built-in UI Components
+page_title: Spreadsheet Predefined UI Elements
 description: Check our &quot;Spreadsheet UI&quot; documentation article for the RadSpreadsheet WPF control.
 components: ["spreadsheet"]
 slug: radspreadsheet-getting-started-spreadsheet-ui
 tags: spreadsheet, ribbon, ui, context menu, default look
 published: True
-position: 3
+position: 10
 ---
 
-# Spreadsheet UI
+# Spreadsheet Built-in UI Components
 
 `RadSpreadsheet` comes with pre-defined UI that is automatically wired with all of the commands provided by the control and shows its full potential. `RadSpreadsheetRibbon` automatically registers the UI components of RadSpreadsheet and keeps them up-to-date after each upgrade.
 
@@ -54,8 +54,7 @@ __Default Look__
 
 To build the above example, you should add the following namespaces:
 
-#### Namespaces
-
+__Namespaces__
 
 <snippet id='radspreadsheet-spreadsheet-ui-block_2-xaml' />
 
@@ -93,8 +92,23 @@ __Disable Context Menu__
 <snippet id='radspreadsheet-spreadsheet-ui-block_5-cs' />
 <snippet id='radspreadsheet-spreadsheet-ui-block_6-vb' />
 
+## Switching Icons at Runtime
+
+The __IconResource__ extension is a markup extension that allows you to switch icons in your application at runtime. More information on the approach is available [here]({%slug styling-apperance-switching-icons-at-runtime%}).
+
+### Using Available IconSets
+
+__RadSpreadsheet__ comes with two separate sets of icons that can be used in its UI. They reside in the __Telerik.Windows.Controls.Spreadsheet.dll__ and defining an __IconSources__ resource for them is demonstrated in the following example.
+
+__Creating IconSources__
+
+<snippet id='radspreadsheet-howto-switching-icons-at-runtime-block_1-xaml' />
+
+>tip To browse all icons you can download the source code of the controls from your Telerik account. The images are located at \Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\Spreadsheet\Controls\Images\Light.
+
 ## See Also
 
 * [Getting Started with RadSpreadsheet]({%slug radspreadsheet-getting-started%})
 * [Visual Structure]({%slug radspreadsheet-visual-structure%})
 * [Import/Export]({%slug radspreadsheet-import-export%})
+* [IconResource]({%slug styling-apperance-switching-icons-at-runtime%})

@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-copy-and-paste
 tags: copy, paster, clipboard, radspreadsheet
 published: True
-position: 5
+position: 21
 ---
 
 # Copy and Paste

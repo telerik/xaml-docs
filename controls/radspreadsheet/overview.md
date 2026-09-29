@@ -60,9 +60,7 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * **Shapes and Images**: The UI enables you to work with images. [API](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images) for insertion, positioning and deletion of images in worksheets.	
 
-{% if site.site_name == 'WPF' %}
 * RadSpreadsheet enables you to show **Charts** and modify them as well: [Charts]({%slug radspreadsheet-ui-charts%}). 
-{% endif %}
 
 * **Document themes**
 
@@ -78,15 +76,15 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * **Copy/Paste**: Add or copy worksheets within or across workbooks. Of course, copying and pasting of cells is supported as well.
 
-* Customize row/column **headings**
+* Customize row/column **[headings]({%slug radspreadsheet-row-and-column-headers%})**
 
-* **Show/Hide** gridlines and headers
+* **[Show/Hide]({%slug radspreadsheet-row-and-column-headers%})** gridlines and headers
 
 * **Merge** cells, merge cells across columns and unmerge
 
 * **Resize** rows and columns, auto fit
 
-* **Zoom** in and out each sheet separately
+* **[Zoom]({%slug radspreadsheet-zooming%})** in and out each sheet separately
 
 * **Named Ranges**: You can use the named ranges on workbook and worksheet levels.
 
@@ -102,11 +100,11 @@ Some of the features coming out-of-the-box with **RadSpreadsheet** are:
 
 * [**Selection** and active cell]({%slug radspreadsheet-ui-working-with-selection%})
 
-* [Customizing the selection appearance]({%slug radspreadsheet-howto-customize-selection%})
+* [Customizing the selection appearance]({%slug radspreadsheet-ui-working-with-selection%}#customizing-the-selection-appearance)
 
 * **Scrolling**: There are two scrolling modes - **ItemBased** and **PixelBased**. The first one ensures that the whole content of the top left cell is visible, the latter designed for smoother interaction.
 
-* Integration with __RadRibbonView__. {% if site.site_name == 'WPF' %} An easy to use [Predefined UI]({%slug radspreadsheet-getting-started-spreadsheet-ui%}). {% endif %}
+* Integration with __RadRibbonView__. An easy to use [Predefined UI]({%slug radspreadsheet-getting-started-spreadsheet-ui%}). 
 
 * [**Localization**]({%slug radspreadsheet-localization%}): You can easily translate the string resources of **RadSpreadsheet**.
 
@@ -117,8 +115,7 @@ With RadSpreadsheet you can easily [import and export]({%slug radspreadsheet-imp
 
 * [**XLSX**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider)
 
-{% if site.site_name == 'WPF' %}
-* [**XLS**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xls/xlsformatprovider) {% endif %}
+* [**XLS**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xls/xlsformatprovider) 
 
 * [**CSV**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/csv/csvformatprovider) 
 
@@ -127,7 +124,6 @@ With RadSpreadsheet you can easily [import and export]({%slug radspreadsheet-imp
 * [**PDF**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider) (export only)
  
 
-{% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources
 
 * [Telerik UI for WPF Spreadsheet Homepage](https://www.telerik.com/products/wpf/spreadsheet.aspx)
@@ -137,7 +133,6 @@ With RadSpreadsheet you can easily [import and export]({%slug radspreadsheet-imp
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF Spreadsheet Forums](https://www.telerik.com/forums/wpf)
 * [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
-{% endif %}
 
 ## See Also
 

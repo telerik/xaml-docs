@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-ui-filtering
 tags: filtering
 published: True
-position: 7
+position: 33
 ---
 
 # Filtering
@@ -29,10 +29,10 @@ In order to begin filtering the worksheet, the first thing which needs to be don
 You can turn on the filtering from the UI by making the desired selection and clicking the Filter toggle button under the Data tab of the ribbon. Keep in mind that the first row of the range is reserved for column headers and will not be included in the actual filtering.
         
 
-After the steps specified above are performed, drop-down arrows will appear in the column headers. The result should look like __Figure 1__.
+After the steps specified above are performed, drop-down arrows will appear in the column headers. The result looks like this:
         
 
-Figure 1: Enable Filtering
+__Enable Filtering__
 
 ![Rad Spreadsheet UI Filtering 01](images/RadSpreadsheet_UI_Filtering_01.png)
 
@@ -44,7 +44,7 @@ At this point the filtering is enabled but no filters are applied. In order to r
 By clicking the arrow found in each column header, you can open the filtering popup. Through it you can apply, reapply, change and remove the filter for the respective column. The popup gives access to various predefined filters. A brief description of each type of filter can be found    [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/filtering).
         
 
-Figure 2: Filtering Popup
+__Filtering Popup__
 
 ![Rad Spreadsheet UI Filtering 02](images/RadSpreadsheet_UI_Filtering_02.png)
 
@@ -68,11 +68,11 @@ The top section is devoted to sorting. The rest of the filtering popup exposes t
 You can apply a filter by using the options provided by the filtering popup. The options which apply a dynamic filter (e.g. above average, last week, etc.) require only a single click. The top filter and the custom filter options open dialogs which allow you to specify the desired parameters of the filters.
         
 
-Figure 3: Custom Filter Dialog
+__Custom Filter Dialog__
 
 ![Rad Spreadsheet UI Filtering 03](images/RadSpreadsheet_UI_Filtering_03.png)
 
-Figure 4: Top Filter Dialog
+__Top Filter Dialog__
 
 ![Rad Spreadsheet UI Filtering 04](images/RadSpreadsheet_UI_Filtering_04.png)
 
@@ -104,24 +104,24 @@ Regardless of its type, when a filter is applied it will go through the cells of
 In the UI this rule has a most notable impact in the filtering tree.
         
 
-__Figure 5__ shows a document with a filtered range with two columns, before a filter is applied.
+The following image shows a document with a filtered range with two columns, before a filter is applied.
         
 
-Figure 5: Initial State
+__Initial State__
 
 ![Rad Spreadsheet UI Filtering 05](images/RadSpreadsheet_UI_Filtering_05.png)
 
 If we apply a top filter on the second column, so as to show only the three largest numbers, this will hide rows 2 and 3.
         
 
-Figure 6: Apply Top Filter
+__Apply Top Filter__
 
 ![Rad Spreadsheet UI Filtering 06](images/RadSpreadsheet_UI_Filtering_06.png)
 
 This will completely hide the respective values from the filtering tree of the first column.
         
 
-Figure 7: Result
+__Result__
 
 ![Rad Spreadsheet UI Filtering 07](images/RadSpreadsheet_UI_Filtering_07.png)
 

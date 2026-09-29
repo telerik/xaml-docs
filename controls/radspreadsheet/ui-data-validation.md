@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-ui-data-validation
 tags: data,validation
 published: True
-position: 6
+position: 34
 ---
 
 # Data Validation
@@ -16,9 +16,9 @@ Data validation is a feature of __RadSpreadsheet__ that helps you define restric
 
 ## How to Set Data Validation Rules
 
-You can easily set data validation rules using the data validation dialog which can be shown from the Data tab in the predefined RibbonView. __Figure 1__ shows the dialog.
+You can easily set data validation rules using the data validation dialog which can be shown from the Data tab in the predefined RibbonView, as shown below.
 
-#### __Figure 1: Data Validation Dialog__
+__Data Validation Dialog__
 
 ![Rad Spreadsheet UI Data Validation 01](images/RadSpreadsheet_UI_Data_Validation_01.png)
 
@@ -34,17 +34,17 @@ The dialog contains two other tabs - one allowing to customize the input message
 Data Validation allows you to turn on the option to circle invalid data. This way you can always see if there is any invalid data in your document. You can toggle this option using the ribbon or through code.
 
 
-__Figure 2__ shows hot to turn the option on and the result when invalid data is present in the worksheet.
+The following image shows how to turn on the option and the result when invalid data is present in the worksheet.
 
 
-#### __Figure 2: Circle Invalid Data__
+__Circle Invalid Data__
 
 ![Rad Spreadsheet UI Data Validation 01](images/RadSpreadsheet_UI_Data_Validation_02.png)
 
 
-__Example 1__ shows the use of the two methods that toggle this functionality - __CircleInvalidData()__ and __ClearInvalidDataCircles()__.
+The following example shows the use of the two methods that toggle this functionality - __CircleInvalidData()__ and __ClearInvalidDataCircles()__.
 
-__Example 1: Turn on and off Invalid Data Circles.__
+__Turn On and Off Invalid Data Circles__
 
 <snippet id='radspreadsheet-features-ui-data-validation-block_1-cs' />
 <snippet id='radspreadsheet-features-ui-data-validation-block_2-vb' />

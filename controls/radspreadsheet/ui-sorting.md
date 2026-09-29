@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-ui-sorting
 tags: sorting
 published: True
-position: 17
+position: 32
 ---
 
 # Sorting
@@ -29,12 +29,14 @@ A brief description of each type of sorting condition can be found in the RadSpr
 
 ## Sorting Dialog
 
-The sorting dialog provides access to all sorting functionality. Through it you can add, remove and rearrange all types of sorting conditions. __Figure 1__ shows the dialog
+The sorting dialog provides access to all sorting functionality. Through it you can add, remove and rearrange all types of sorting conditions. The following image shows the dialog:
         
 
-Figure 1: Sorting Dialog![Rad Spreadsheet UI Sorting 01](images/RadSpreadsheet_UI_Sorting_01.png)
+__Sorting Dialog__
 
-On top of the dialog shown in Figure 1 you can take advantage of the following options.
+![Rad Spreadsheet UI Sorting 01](images/RadSpreadsheet_UI_Sorting_01.png)
+
+On top of the dialog shown above you can take advantage of the following options.
         
 
 * Add Level: Adds a new sorting condition.
@@ -78,11 +80,11 @@ There are a few ways to add a values sort condition. The sorting dialog allows m
 Another option to add a values sort condition is to use the sorting buttons next to the button which opens the sort dialog.
         
 
-Figure 2: Sorting buttons
+__Sorting Buttons__
 
 ![Rad Spreadsheet UI Sorting 02](images/RadSpreadsheet_UI_Sorting_02.png)
 
-These button in __Figure 2__ automatically add a values sort condition to the first column of the selected range. If you use the first button the order will be ascending, and for the second - descending.
+These buttons automatically add a values sort condition to the first column of the selected range. If you use the first button the order will be ascending, and for the second - descending.
         
 
 The third way to add a values sort condition is through the filtering popup, if you have enabled filtering to the sheet [Filtering]({%slug radspreadsheet-ui-filtering%}). In this popup you will find the familiar buttons: Sort A to Z and Sort Z to A. These buttons will add a values sort condition to the respective columns of the filtered range.
@@ -108,10 +110,10 @@ You can add a custom sort condition through the sorting dialog. You need to perf
 1. In the Order drop down menu specify __Custom__.
             
 
-1. These steps will open a new dialog in which you can specify the custom list according to which you'd like to have the values ordered. You can use one of the predefined, or enter your values in the List entries text box as demonstrated on __Figure 3__ and chose Add.
+1. These steps will open a new dialog in which you can specify the custom list according to which you'd like to have the values ordered. You can use one of the predefined, or enter your values in the List entries text box as demonstrated below and choose Add.
             
 
-Figure 3: Custom Lists Dialog
+__Custom Lists Dialog__
 
 ![Rad Spreadsheet UI Sorting 03](images/RadSpreadsheet_UI_Sorting_03.png)
 
@@ -138,10 +140,10 @@ There are two ways to add a fill or fore color sort condition. The first is agai
 1. In the Sort On drop down menu, specify "Cell Color" or "Font Color".
             
 
-1. Two new drop down menus shown on __Figure 4__ will appear.
+1. Two new drop-down menus will appear, as shown below.
             
 
-Figure 4: Sorting Dialog Color Condition
+__Sorting Dialog Color Condition__
 
 ![Rad Spreadsheet UI Sorting 04](images/RadSpreadsheet_UI_Sorting_04.png)
 
@@ -154,10 +156,10 @@ Figure 4: Sorting Dialog Color Condition
 1. Press OK.
             
 
-The other way to add a sort condition is through the filtering popup. When you open the filtering popup, you will find a __Sort by Color__ option shown on __Figure 5__ , which will be enabled if you have different fore colors or fill colors in the column of the filtered range. Choosing a color will automatically set the rows with this fill color or fore color on the top of the sort order.
+The other way to add a sort condition is through the filtering popup. When you open the filtering popup, you will find a __Sort by Color__ option, shown below, which will be enabled if you have different fore colors or fill colors in the column of the filtered range. Choosing a color will automatically set the rows with this fill color or fore color on the top of the sort order.
         
 
-Figure 5: Filtering Popus Sorting by Color
+__Filtering Popup Sorting by Color__
 
 ![Rad Spreadsheet UI Sorting 05](images/RadSpreadsheet_UI_Sorting_05.png)
 

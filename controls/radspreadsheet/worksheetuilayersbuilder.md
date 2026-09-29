@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-worksheet-ui-layers-builder
 tags: worksheet,ui,layers,builder
 published: True
-position: 20
+position: 15
 ---
 
 # Worksheet UI Layers Builder

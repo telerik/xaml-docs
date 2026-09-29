@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-ui-worksheet-editor-context-menu
 tags: context,menu
 published: True
-position: 4
+position: 14
 ---
 
 # Context Menu

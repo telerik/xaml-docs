@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-ui-printing
 tags: printing
 published: True
-position: 14
+position: 28
 ---
 
 # Printing
@@ -15,7 +15,7 @@ Printing in __RadSpreadsheet__ allows you to prepare and display spreadsheet dat
 
 This article presents the Printing functionality of __RadSpreadsheet__ and demonstrates how to specify what and how to print the document. 
 
-## How to print RadSpreadsheet?
+## How to Print RadSpreadsheet
 
 __RadSpreadsheet__ provides you with variety of options for organizing and preparing the document’s data for printing.
         
@@ -25,23 +25,13 @@ Using the __PrintWhatSettings__ class you can specify:
 
 * __ExportWhat__: An enumeration specifying whether to print the __Active Sheet__, the __Entire Workbook__ or the current __Selection__.
 
-* __IncludeHiddenSheets__: Bolean value indicating whether to include the hidden sheets or to skip them. Default value is `false`.
+* __IncludeHiddenSheets__: Boolean value indicating whether to include the hidden sheets or to skip them. Default value is `false`.
             
 
 * __IgnorePrintArea__: Boolean value indicating whether or not to ignore print area when printing worksheets. 
 
-#### Figure 1: Choose what you would like to print 
+__Choose What You Want to Print__
 ![Print what settings in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_01.png)
-
-{% if site.site_name == 'Silverlight' %}
-Printing __RadSpreadsheet__ is easily done programmatically through the __Print()__ method, which prints according to some given __PrintWhatSettings__ instance. 
-       
-
-#### [C#] Example 1: Print RadSpreadsheet programmatically
-
-<snippet id='radspreadsheet-features-ui-printing-block_1-cs' />
-
-{% endif %}{% if site.site_name == 'WPF' %}
 
 Depending on whether you want to show a __PrintDialog__ before printing, you can use some of the following __RadSpreadsheet’s__ Print() method overloads:
           
@@ -52,17 +42,15 @@ Depending on whether you want to show a __PrintDialog__ before printing, you can
 * __Print(PrintWhatSettings printWhatSettings, PrintDialog printDialog, string printDescription = null)__: Prints depending on specified __PrintWhatSettings__ instance. This overload prints silently (without showing the __PrintDialog__) by using an already initialized __PrintDialog__ instance.
                         
 
-#### [C#] Example 1: Print RadSpreadsheet programmatically
+__Print RadSpreadsheet Programmatically__
 
 <snippet id='radspreadsheet-features-ui-printing-block_2-cs' />
-
-{% endif %}
 
 ## Worksheet Page Setup
 
 When you need to set different print option such as page size, print titles, page orientation, or when you want to print the spreadsheet grid lines, you can set this options using the worksheet's page setup. For more detailed information you can check the [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup) topic.        
 
->You can apply headers and footers to the printed document. For more details on how to achieve this, refer to the [Headers and Footers]({%slug radspreadsheet-ui-headers-and-footers%}) topic.
+>note You can apply headers and footers to the printed document. For more details on how to achieve this, refer to the [Headers and Footers]({%slug radspreadsheet-ui-headers-and-footers%}) topic.
 
 ## Scaling
 
@@ -77,14 +65,14 @@ If your worksheet contains a lot of data, you can use the scaling options provid
 All the scaling options are available in the Print Preview as well as in the Page Setup dialog. If you would like to set them programmatically, you can do so through the [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup).
 
 
-#### Figure 2: Scaling options
+__Scaling Options__
 ![Scaling options in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_02.png)
 
 ## Print Titles
 
 RadSpreadsheet comes with a built-in functionality to set rows and/or columns to be repeated on each printed page so that you can keep the titles for the data always visible. You can choose whether to set row(s) or column(s), or event both through the Page Setup dialog. This dialog is available under the Page Setup section of the Page Layout tab of RadSpreadsheet's ribbon:
 
-#### Figure 3: Print titles
+__Print Titles__
 ![Print titles in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_03.png)
 
 The WorksheetPageSetup class also enables you set the print titles in code. For more information, check the [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup) topic.
@@ -93,20 +81,17 @@ The WorksheetPageSetup class also enables you set the print titles in code. For 
 
 In order to preview the pages before printing, you can use the __PrintPreviewControl__ class and set its __RadSpreadsheet property__ to the __RadSpreadsheet__ instance that you want to be previewed. This control will provide a ready-to-use functionality for previewing print pages and setting different print options.
         
-{% if site.site_name == 'Silverlight' %}
->Note that in Silverlight there's no way to access the actual printer settings due to security limitations of the framework and the settings of the PrintDialog take precedence. In other words, to print to A3 paper (or with Landscape orientation), you will need to specify this both for RadSpreadsheet in the print preview control and for the printer in the PrintDialog.
-{% endif %}
 
 The following code snippet shows how to integrate the print preview with RadRibbonView's backstage.
         
 
-#### [XAML] Example 2: Integrate the print preview with RadRibbonView's backstage
+__Integrating the Print Preview with RadRibbonView's Backstage__
 
 <snippet id='radspreadsheet-features-ui-printing-block_3-xaml' />
 
 
-#### Figure 4: Print preview
-![Print preview in Radspreadsheet](images/RadSpreadsheet_UI_Printing_08.png)
+__Print Preview__
+![Print preview in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_08.png)
 
 
 ## See Also

@@ -1,10 +1,11 @@
 ---
 title: Conditional Formatting
 page_title: Conditional Formatting 
+description: Check our &quot;Conditional Formatting&quot; documentation article for the RadSpreadsheet {{ site.framework_name }} control.
 slug: radspreadsheet-features-conditional-formatting
 tags: conditional, formatting, xlsx, rule
 published: True
-position: 3
+position: 35
 components: ["spreadsheet"]
 ---
 
@@ -17,13 +18,13 @@ A conditional format changes the appearance of cells based on conditions that yo
 
 >If you would like to create or manipulate conditional formatting in code, refer to [SpreadProcessing | Conditional Formatting](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/conditional-formatting).
  
-On **Figure 1** you can see the effect of applying conditional formatting. The columns are styled as following: 
+The following example shows the effect of applying conditional formatting. The columns are styled as following: 
 - On column B (Client) the **DuplicateValues** rule is used to highlight duplicate values
 - The values in column D (Shipping) use **Contains** rule to highlight cells containing the "express" value
 - The prices in column E (Total price) are styled through a **Top** rule to highlight the top 5 values
 - On the Discount values in column D, the **GreaterThanOrEqual** rule is applied so the user can easily see discounts bigger than or equal to 7% 
 
-#### Figure 1: Conditional Formatting
+__Example of Applied Conditional Formatting__
 
 ![RadSpreadsheet Conditional Formatting](images/Features-Conditional-Formatting_1.png)
 
@@ -68,7 +69,7 @@ RadSpreadsheet comes with built-in UI to create, edit or remove conditional form
 
 
 
-#### Figure 1: Working with conditional formatting
+__Conditional Formatting Options in the Ribbon__
 
 ![RadSpreadsheet Conditional Formatting](images/Features-Conditional-Formatting_2.png)
 

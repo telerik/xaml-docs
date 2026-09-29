@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-ui-freeze-panes
 tags: freeze,panes
 published: True
-position: 9
+position: 29
 ---
 
 # Freeze Panes

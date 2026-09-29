@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-protection
 tags: protection, radspreadsheet
 published: True
-position: 15
+position: 24
 ---
 
 # Protection

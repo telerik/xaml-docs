@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-localization
 tags: localization
 published: True
-position: 7
+position: 8
 ---
 
 # Localization

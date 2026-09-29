@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-command-descriptors
 tags: command, descriptors
 published: True
-position: 2
+position: 16
 ---
 
 # Command Descriptors
@@ -28,7 +28,7 @@ The following section demonstrates how you can create a custom command along wit
 
 First you need to inherit the __WorksheetCommandDescriptors__ class. This will allow you to override the default commands properties and return your custom command. In this case, you will change the open file command with a custom one. If you want to override the key combination that triggers this command you should register the new command as well. 
 
-#### __C# Example 1: Create a class that inherits WorksheetCommandDescriptors__
+__Create a Class That Inherits WorksheetCommandDescriptors__
 
 <snippet id='radspreadsheet-features-command-descriptors-block_1-cs' />
 
@@ -36,8 +36,13 @@ First you need to inherit the __WorksheetCommandDescriptors__ class. This will a
 
 The second step is to set the newly created class to the active worksheet editor. This should be done each time the editor is changed, this is why you are going to use the __ActiveSheetEditorChanged__ event to set the new descriptors. 
 
-#### __C# Example 2: Change the default command descriptors__
+__Change the Default Command Descriptors__
 
 <snippet id='radspreadsheet-features-command-descriptors-block_2-cs' />
 
 That is everything that is required to change the default command. Now when the open button is pressed or the Ctrl + O combination is used the custom command will be executed. 
+
+## See Also
+
+* [Keyboard Support]({%slug radspreadsheet-keyboard-support%})
+* [Overview]({%slug radspreadsheet-overview%})

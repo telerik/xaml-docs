@@ -7,7 +7,7 @@ slug: radspreadsheet-text-orientation
 tags: text, orientation, rotation, alignment, format cells
 tag: new
 published: True
-position: 8
+position: 31
 ---
 
 # Cell Text Rotation

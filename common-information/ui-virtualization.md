@@ -102,7 +102,7 @@ The UI virtualization feature is created with a special [Panel](https://learn.mi
 * [RadGridView UI Virtualization]({%slug radgridview-features-ui-virtualization%})
 * [RadScheduleView UI Virtualization]({%slug radscheduleview-ui-virtualization%})
 * [RadTreeListView UI Virtualization]({%slug radtreelistview-features-ui-virtualization%})
-* [RadSpreadsheet UI Virtualization]({%slug radspreadsheet-ui-virtualization%})
+* [RadSpreadsheet UI Virtualization]({%slug spreadsheet-performance-tips%})
 * [RadPropertyGrid UI Virtualization]({%slug radpropertygrid-virtualization%})
 * [RadTileView UI Virtualization]({%slug radtileview-features-virtualization%})
 * [RadDiagram UI Virtualization]({%slug raddiagrams-features-virtualization%})

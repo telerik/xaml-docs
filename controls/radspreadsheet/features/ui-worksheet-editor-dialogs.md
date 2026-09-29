@@ -70,3 +70,6 @@ __Extending the FindAndReplaceDialogContent__
 
 __Setting the CustomFindAndReplaceDialogContent__
 <snippet id='radspreadsheet-features-ui-worksheet-editor-dialogs-block_3-cs' />
+
+## See Also  
+* [Text Orientation]({%slug radspreadsheet-text-orientation%})

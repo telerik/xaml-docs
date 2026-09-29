@@ -31,7 +31,5 @@ This article lists some of the popular features available in Microsoft Office Op
 
 * Format painter;
 
-* Rotation of cell content;
-
 * Auto sum.
 

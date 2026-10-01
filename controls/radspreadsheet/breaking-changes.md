@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-backward-compatibility
 tags: backward,compatibility
 published: True
-position: 5
+position: 9
 ---
 
 # Breaking Changes

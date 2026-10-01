@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-events
 tags: events
 published: True
-position: 4
+position: 7
 ---
 
 # Events
@@ -131,4 +131,4 @@ The arguments of the two events are of type `RowColumnPropertyChangedEventArgs` 
 * `ToIndex`&mdash;Gets the last index of the changed range.
 
 ## See Also  
-* [Model]({%slug radspreadsheet-model%})
+* [Model]({%slug radspreadsheet-getting-started%}#model)

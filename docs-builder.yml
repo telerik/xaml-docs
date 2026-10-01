@@ -672,8 +672,6 @@ meta:
     controls/radrichtextbox/ui-for-applying-rich-text-formatting:
         title: UI for Applying Rich Text Formatting
         position: 8
-    controls/radrichtextbox/troubleshooting:
-        title: Troubleshooting
     controls/radrichtextbox/document-elements/annotations:
         title: Annotations
     controls/radrichtextbox/features/styles:
@@ -2377,6 +2375,14 @@ redirects:
 -
     from: "^/controls/radrichtextbox/features/repeat-table-header-row$"
     to: "/controls/radrichtextbox/document-elements/table/repeat-table-header-row"
+    type: Permanent
+-
+    from: "^/controls/radrichtextbox/troubleshooting/common-problems$"
+    to: "/controls/radrichtextbox/kb-articles"
+    type: Permanent
+-
+    from: "^/controls/radrichtextbox/troubleshooting/rendering-glitches$"
+    to: "/knowledge-base/kb-richtextbox-rendering-glitches"
     type: Permanent
 -
     from: "^/controls/radpivotgrid/radpivotfieldlist$"

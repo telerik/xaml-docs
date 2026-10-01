@@ -13,8 +13,6 @@ published: True
 
 The Shapes feature allows you to easily insert shapes like circles, boxes, arrows, and many others directly in your documents. You can style the inserted shapes by using gradient fills and various patterns outlines, as well as changing the size of the shapes and rotating them. 
 
->note Currently, RadRichTextBox supports the **import and export** of shapes from and to **Office Open XML (DOCX)**. When exporting to **PDF**, the shapes are converted to images. When exporting to other formats the shapes will be lost.
-
 ## Working with Shapes 
 
 RadRichTextBox enables you to insert, edit and delete shapes through its API and UI.

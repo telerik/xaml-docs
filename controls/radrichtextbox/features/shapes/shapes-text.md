@@ -13,8 +13,6 @@ position: 2
 
 The Shapes feature allows you to easily insert shapes like circles, boxes, arrows, and many others directly in your documents. Since R3 2021 you can add styled text to each shape. 
 
->Currently, RadRichTextBox supports the import and export of shapes from and to Office Open XML (DOCX). When exporting to PDF, the shapes are converted to images. When exporting to other formats the shapes will be lost.
-
 ## Adding Text to Shapes via the UI
 
 You can add text to a shape either by directly typing when the shape is selected or using the context menu item. 

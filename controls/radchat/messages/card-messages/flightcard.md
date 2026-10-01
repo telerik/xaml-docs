@@ -30,13 +30,13 @@ __FlightCard__ is intended to display flight information in a structured user-fr
 
 A sample __FlightCard__ can be defined as follows.
 
-__Example 1: Defining a FlightCard__
+__Defining a FlightCard__
 
 <snippet id='radchat-features-messages-card-messages-flightcard-example_1_defining_a_flightcard-cs' />
 
 This sample data will result in the following __FlightCard__.
 
-#### __Figure 1: Defining ImageCard__
+__Defining ImageCard__
 ![Defining ImageCard](images/RadChat_FlightCard_01.png)
 
 ## See Also

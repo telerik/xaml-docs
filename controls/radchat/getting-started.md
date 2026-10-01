@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-getting-started
 tags: getting,started
 published: True
-position: 0
+position: 1
 ---
 
 # Getting Started with {{ site.framework_name }} Chat
@@ -38,9 +38,9 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 Before proceeding with adding __RadChat__ to your project, make sure the required assembly references are added to the project. 
 
-You can add __Conversational UI__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
+You can add __Conversational UI__ manually by writing the XAML code below. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
-__Example 1: Adding RadChat in XAML__
+__Adding RadChat in XAML__
 
 <snippet id='radchat-getting-started-getting-started-example_1_adding_radchat_in_xaml-xaml' />
 
@@ -79,7 +79,6 @@ __RadChat with Messages__
 
 ![RadChat with Messages](images/RadChatSendMessage.gif)
 
-{% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
 * [Telerik UI for WPF ConversationalUI Component](https://www.telerik.com/products/wpf/conversational-ui.aspx)
@@ -90,7 +89,6 @@ __RadChat with Messages__
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
-{% endif %}
 
 ## See Also
 

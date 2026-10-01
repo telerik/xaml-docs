@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-message-status
 tags: status,message,seen
 published: True
-position: 4
+position: 9
 ---
 
 # Message Status

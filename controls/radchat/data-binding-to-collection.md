@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-populating-with-data-binding-to-collection
 tags: overview
 published: True
-position: 0
+position: 2
 ---
 
 # Data Binding to Collection
@@ -21,19 +21,19 @@ The __MessageConverter__ allows you to use an implementation of the [IMessageCon
 
 The following example shows how to define custom models and use the converter.
 
-__Example 1: Defining the messages view model__
+__Defining the Messages View Model__
 <snippet id='radchat-populating-with-data-data-binding-to-collection-example_1_defining_the_messages_view_model-cs' />
 
 
-__Example 2: Defining the main view model and populating the data source with data__
+__Defining the Main View Model and Populating the Data Source with Data__
 <snippet id='radchat-populating-with-data-data-binding-to-collection-example_2_defining_the_main_view_model_and_populating_the_data_source_with_data-cs' />
 
 
-__Example 3: Implementing message converter__
+__Implementing Message Converter__
 <snippet id='radchat-populating-with-data-data-binding-to-collection-example_3_implementing_message_converter-cs' />
 
 
-__Example 4: Setting up the RadChat control__
+__Setting up the RadChat Control__
 <snippet id='radchat-populating-with-data-data-binding-to-collection-example_4_setting_up_the_radchat_control-xaml' />
 
 ![{{ site.framework_name }} RadChat with Data-Bound Messages](images/chat-populating-with-data-binding-to-collection-0.png)

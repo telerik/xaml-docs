@@ -18,7 +18,7 @@ The __RadChat__ component enables easy implementation of conversational UI in WP
 {% include cta-panel-overview.html %}
 {% endif %} 
 
-#### __Figure 1: RadChat__
+__RadChat__
 
 ![RadChat](images/RadChat_Overview.png)
 
@@ -42,7 +42,6 @@ The __RadChat__ component enables easy implementation of conversational UI in WP
 
 * __Customizable layout__
 
-{% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources
 
 * [Telerik UI for WPF ConversationalUI Homepage](https://www.telerik.com/products/wpf/conversational-ui.aspx)
@@ -52,7 +51,6 @@ The __RadChat__ component enables easy implementation of conversational UI in WP
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF ConversationalUI Forums](https://www.telerik.com/forums/wpf)
 * [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
-{% endif %}
 
 ## See Also
 

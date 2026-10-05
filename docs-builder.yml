@@ -600,12 +600,6 @@ meta:
         position: 6
     "*radspreadsheet":
         title: RadSpreadsheet
-    controls/radspreadsheet/changes-and-backward-compatibility:
-        title: Changes and Backward Compatibility
-        position: 2		
-    controls/radspreadsheet/howto:
-        title: How To
-        position: 6		
     "*radspellchecker":
         title: RadSpellChecker		
     controls/radspellchecker/styles-and-templates:
@@ -1684,6 +1678,46 @@ redirects:
 -
     from: "^/controls/radspreadsheet/changes-and-backward-compatibility/backward-compatibility$"
     to: "/controls/radspreadsheet/breaking-changes"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/features/(.*)$"
+    to: "/controls/radspreadsheet/$1"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/howto/customize-selection$"
+    to: "/controls/radspreadsheet/ui-working-with-selection"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/howto/customize-row-column-headers$"
+    to: "/controls/radspreadsheet/row-and-column-headers"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/howto/hide-row-column-headers-and-gridlines$"
+    to: "/controls/radspreadsheet/row-and-column-headers"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/howto/get-cell-from-point$"
+    to: "/controls/radspreadsheet/get-cell-from-point"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/howto/switching-icons-at-runtime$"
+    to: "/controls/radspreadsheet/spreadsheet-ui"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/howto/ui-restricting-number-of-visible-rows-and-columns$"
+    to: "/controls/radspreadsheet/visible-rows-and-columns"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/howto/zoom-in-or-out-a-worksheet$"
+    to: "/controls/radspreadsheet/zooming"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/model$"
+    to: "/controls/radspreadsheet/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/ui-virtualization$"
+    to: "/controls/radspreadsheet/performance-tips"
     type: Permanent
 -
     from: "^/controls/radslider/changes-and-backwards-compatibility/changes$"

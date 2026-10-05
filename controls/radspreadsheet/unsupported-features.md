@@ -6,7 +6,7 @@ components: ["spreadsheet"]
 slug: radspreadsheet-unsupported-features
 tags: unsupported,features
 published: True
-position: 12
+position: 41
 ---
 
 # Unsupported Features
@@ -30,8 +30,6 @@ This article lists some of the popular features available in Microsoft Office Op
 * Drag move/copy;
 
 * Format painter;
-
-* Rotation of cell content;
 
 * Auto sum.
 

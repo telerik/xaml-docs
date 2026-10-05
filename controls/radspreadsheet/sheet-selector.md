@@ -6,12 +6,12 @@ components: ["spreadsheet"]
 slug: radspreadsheet-sheet-selector
 tags: selector,sheet, pages
 published: True
-position: 11
+position: 18
 ---
 
 # Sheet Selector
 
-The [sheet selector]({%slug radspreadsheet-visual-structure%}#radspreadsheet-visual-structure) is a pager displayed under the spreadsheet document that allows you to switch between the different [worksheets]({%slug radspreadsheet-model%}).
+The [sheet selector]({%slug radspreadsheet-visual-structure%}#radspreadsheet-visual-structure) is a pager displayed under the spreadsheet document that allows you to switch between the different [worksheets]({%slug radspreadsheet-getting-started%}#model).
 
 The sheet selector is represented by the `RadSpreadsheetSheetSelector` control, which is integrated in the ControlTemplate of the `RadSpreadsheet`. This article describes how to access and customize the selector.
 

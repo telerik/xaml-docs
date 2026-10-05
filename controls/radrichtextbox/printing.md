@@ -74,4 +74,4 @@ Using `PdfFormatProvider` circumvents the Windows print spooler entirely, produc
 
 * [Using PdfFormatProvider]({%slug radrichtextbox-import-export-pdf-pdfformatprovider%})
 * [Getting Started]({%slug radrichtextbox-getting-started%})
-* [Troubleshooting Common Problems]({%slug radrichtextbox-troubleshooting-common-problems%})
+* [Knowledge Base Articles]({%slug radrichtextbox-kb-articles%})

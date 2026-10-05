@@ -46,7 +46,7 @@ Fully supported</td>
 </th>
 <tr><td>ASCII85Decode</td>
 <td>CCITTFaxDecode</td>
-<td>JPXDecode</td></tr>
+<td></td></tr>
 <tr><td>LZWDecode</td>
 <td></td>
 <td></td></tr>
@@ -63,9 +63,11 @@ Fully supported</td>
 <td></td>
 <td></td></tr>
 <tr>
-<td>JBIG2Decode</td><td></td><td></td></tr></table>
+<td>JBIG2Decode</td><td></td><td></td></tr>
+<tr>
+<td>[JPXDecode]({%slug radpdfviewer-customization-and-extensibility-decoding-jpeg2000-images%})</td><td></td><td></td></tr></table>
 
->tip Although **JPXDecode** is not supported out-of-the-box, you can implement a custom decoder and enable RadPdfViewer to read and render the content that uses this filter following the guides in this article. An implementation of this scenario is available in the [Custom Decoder example](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomDecoder) from our SDK repository as well. 
+>tip **JPXDecode** does not work automatically, but you can enable it by using the `JpxImageDecoder`. [Read more about decoding JPEG 2000 images]({%slug radpdfviewer-customization-and-extensibility-decoding-jpeg2000-images%}).
 
 All decoders implement the __IPdfFilter__ interface and if you decide, you can implement your own decoder and set the viewer to use it. RadPdfViewer uses the __Name__ property in order to recognize the filter - it must return one of the values listed above.        
 
@@ -100,3 +102,4 @@ RadPdfViewer expects these filters to return data that depends on the decoded ob
 ## See Also 
 
 * [Custom Document Presenter]({%slug radpdfviewer-customization-and-extensibility-custom-document-presenter%})
+* [Decoding JPEG 2000 Images]({%slug radpdfviewer-customization-and-extensibility-decoding-jpeg2000-images%})

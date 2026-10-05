@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-items-suggested-actions
 tags: suggested, actions
 published: True
-position: 2
+position: 10
 ---
 
 # Suggested Actions

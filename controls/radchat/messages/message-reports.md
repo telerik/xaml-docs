@@ -20,16 +20,16 @@ Interacting with the messages of __RadChat__ is done through __ResponseAction__ 
 
 Their visual representation may vary depending on the type of message. For example, the default __CommitResponseAction__ that is defined for the __CalendarMessage__ would appear as a __Submit__ button shown below.
 
-#### __Figure 1: Defining CalendarMessage__
+__Defining CalendarMessage__
 ![CalendarMessage](images/RadChat_Messages_Reports_01.png)
 
-__Example 1: Adding a CancelResponseAction__
+__Adding a CancelResponseAction__
 <snippet id='radchat-features-messages-message-reports-example_1_adding_a_cancelresponseaction-cs' />
 
 
 Adding a __CancelResponseAction__ will have the following output.
 
-#### __Figure 2: Defining CalendarMessage with CancelResponseAction__
+__Defining CalendarMessage with CancelResponseAction__
 ![CalendarMessage with CancelResponseAction](images/RadChat_Messages_Reports_02.png)
 
 ## Handling the Response
@@ -47,13 +47,13 @@ The user's interaction is handled through the __ReportMessageResult__ event. Its
 * __MessageReportType__: Gets the message report type. It is of enum type and can either have a __Commit__ or __Cancel__ value.
 
 As an example, lets have the following implementation of the event.
-__Example 2: Handling the ReportMessageResult event__
+__Handling the ReportMessageResult Event__
 <snippet id='radchat-features-messages-message-reports-example_2_handling_the_reportmessageresult_event-cs' />
 
 
 So, if the user clicks the __Submit__ button for the previously defined __CalendarMessage__ the result will be as in the figure below.
 
-#### __Figure 3: Handling the ReportMessageResult__
+__Handling the ReportMessageResult__
 ![CalendarMessage with CancelResponseAction](images/RadChat_Messages_Reports_03.png)
 
 ## Custom ResponseAction

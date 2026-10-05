@@ -19,14 +19,14 @@ __Weather__ card extends __ImageCard__ by adding options to display weather data
 * __Pressure__
 * __Wind__
 
-__Example 1: Defining a WeatherCard__
+__Defining a WeatherCard__
 
 <snippet id='radchat-features-messages-card-messages-weathercard-example_1_defining_a_weathercard-cs' />
 
 
 Defining such __WeatherCardMessage__ will look as follows.
 
-#### __Figure 1: Defining WeatherCard__
+__Defining WeatherCard__
 ![Defining ImageCard](images/RadChat_WeatherCard_01.png)
 
 ## See Also

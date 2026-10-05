@@ -24,7 +24,7 @@ Adding a given message is done through the __AddMessage__ method of __RadChat__.
 
 When sending a message the __SendMessage__ event will be triggered. Its arguments expose the __Message__ property through which the message that is currently being sent can be customized.
 
-__Example 1: Handling the SendMessage event__ 
+__Handling the SendMessage Event__
 <snippet id='radchat-features-messages-overview-example_1_handling_the_sendmessage_event-cs' />
 
 
@@ -38,13 +38,13 @@ Depending on the type of the given message, it can have a different value for it
 
 For demonstrating the different __DisplayPositions__, a sample __CalendarMessage__ will be used. 
 
-#### __Figure 1: Inline DisplayPosition__
+__Inline DisplayPosition__
 ![Inline DisplayPosition](images/RadChat_Messages_Overview_01.png)
 
-#### __Figure 2: Popup DisplayPosition__
+__Popup DisplayPosition__
 ![Popup DisplayPosition](images/RadChat_Messages_Overview_02.png)
 
-#### __Figure 3: Overlay DisplayPosition__
+__Overlay DisplayPosition__
 ![Overlay DisplayPosition](images/RadChat_Messages_Overview_03.png)
 
 Note, that some message types support modifying their display position, whereas other ones have a fixed value which cannot be controlled. 

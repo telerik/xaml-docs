@@ -20,11 +20,11 @@ The __CarouselMessage__ utilizes the [RadCarousel]({%slug carousel-overview%}) c
 
 For the purpose of this example a sample collection of [ImageCards]({%slug chat-items-imagecard%}) will be defined.
 
-__Example 1: Defining a CarouselMessage__ 
+__Defining a CarouselMessage__
 <snippet id='radchat-features-messages-carouselmessage-example_1_defining_a_carouselmessage-cs' />
 
 
-#### __Figure 1: Defining CarouselMessage__
+__Defining CarouselMessage__
 ![Defining CalendarMessage](images/RadChat_Messages_Carousel_01.png)
 
 ## See Also

@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-input-box-settings
 tags: inputbox,promptinput,speech,text
 published: True
-position: 7
+position: 3
 ---
 
 # Input Box Settings

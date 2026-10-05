@@ -17,14 +17,14 @@ __ProductCard__ extends __ImageCard__ by adding a few more fields for additional
 * __Rating__: sets the rating value of the given card product
 * __Price__: the product price
 
-__Example 1: Defining a ProductCard__
+__Defining a ProductCard__
 
 <snippet id='radchat-features-messages-card-messages-productcard-example_1_defining_a_productcard-cs' />
 
 
 Adding such __ProductCard__ will result in the following message.
 
-#### __Figure 1: Defining ProductCard__
+__Defining ProductCard__
 ![Defining ImageCard](images/RadChat_ProductCard_01.png)
 
 ## See Also

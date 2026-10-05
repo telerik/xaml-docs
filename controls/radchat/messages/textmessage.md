@@ -18,11 +18,11 @@ The __TextMessage__ is intended to be used for sending a simple string type mess
 * __String status__: when having a __status__ defined, the __creationDate__ needs to be set as well.
 * __DateTime creationDate__: the __creationDate__ parameter can be set optionally.
 
-__Example 1: Defining a TextMessage__ 
+__Defining a TextMessage__
 <snippet id='radchat-features-messages-textmessage-example_1_defining_a_textmessage-cs' />
 
 
-#### __Figure 1: Defining TextMessage__
+__Defining TextMessage__
 ![TextMessage with Status set](images/RadChat_Messages_Text_01.png)
 
 ## See Also

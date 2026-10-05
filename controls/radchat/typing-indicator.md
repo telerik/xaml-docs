@@ -6,7 +6,7 @@ components: ["chat"]
 slug: chat-items-typing-indicator
 tags: typing, indicator
 published: True
-position: 1
+position: 12
 ---
 
 # Typing Indicator
@@ -17,12 +17,12 @@ The __TypingIndicator__ functionality of the Conversational UI can be used to in
 * __TypingIndicatorText__: A string property that specifies what text to be displayed when an __Author__ is typing.
 * __TypingIndicatorIcon__: An ImageSource property through which a custom icon for the __TypingIndicator__ can be applied.
 
-__Example 1: Setting the TypingIndicator__
+__Setting the TypingIndicator__
 <snippet id='radchat-features-typing-indicator-example_1_setting_the_typingindicator-cs' />
 
 Setting the __TypingIndicator__ in such manner will have the following result.
 
-#### __Figure 1: Setting the TypingIndicator__
+__Setting the TypingIndicator__
 
 ![Setting the TypingIndicator](images/RadChat_Items_TypeIndicator_01.png)
 

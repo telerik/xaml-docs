@@ -231,7 +231,7 @@ The `create` command automatically [creates a new project using Telerik UI for W
 
 ### Project Templates 
 
-The [Telerik.WPF.Templates NuGet package](https://www.nuget.org/packages/Telerik.WPF.Templates) provides the standard [Visual Studio project templates]({%slug visual-studio-templates%}) with a pre-configured Telerik UI for WPF library. By default, the Telerik.WPF.Templates NuGet package is installed during the execution of the Telerik.CLI `setup` command. 
+The [Telerik.WPF.Templates NuGet package](https://www.nuget.org/packages/Telerik.WPF.Templates) is available at [NuGet.org](https://www.nuget.org/) and provides the standard [Visual Studio project templates]({%slug visual-studio-templates%}) with a pre-configured Telerik UI for WPF library. By default, the Telerik.WPF.Templates NuGet package is installed during the execution of the Telerik.CLI `setup` command. 
 
 To install the templates separately, use the `dotnet new install` command:
 

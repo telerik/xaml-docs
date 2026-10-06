@@ -217,6 +217,42 @@ Example output:
 }
 ```
 
+## Create Telerik WPF App
+
+To create a [new WPF app that includes Telerik UI for WPF]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) with the help of the [Telerik UI for WPF project templates]({%slug visual-studio-templates%}), use the `create` command:
+
+```powershell
+telerik create wpf
+```
+
+Use the `--interactive` option to be prompted for each project setting, including the project name, target .NET version, theme, template or Xaml/NoXaml approach.
+
+The `create` command automatically [creates a new project using Telerik UI for WPF Project Templates]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}). It also installs the **Telerik.WPF.Templates** NuGet package automatically.
+
+### Project Templates 
+
+The [Telerik.WPF.Templates NuGet package](https://www.nuget.org/packages/Telerik.WPF.Templates) is available at [NuGet.org](https://www.nuget.org/) and provides the standard [Visual Studio project templates]({%slug visual-studio-templates%}) with a pre-configured Telerik UI for WPF library. By default, the Telerik.WPF.Templates NuGet package is installed during the execution of the Telerik.CLI `setup` command. 
+
+To install the templates separately, use the `dotnet new install` command:
+
+```powershell
+dotnet new install Telerik.WPF.Templates
+```
+The package installs the following project templates:
+
+1. WPF Desktop Blank App (C#)
+2. WPF Desktop Blank App (VB)
+3. WPF Desktop Calendar App (C#)
+4. WPF Desktop Calendar App (VB)
+5. WPF Desktop Excel-Inspired App (C#)
+6. WPF Desktop Excel-Inspired App (VB)
+7. WPF Desktop Mail App (C#)
+8. WPF Desktop Mail App (VB)
+9. WPF Desktop Outlook-Inspired App (C#)
+10. WPF Desktop Outlook-Inspired App (VB)
+11. WPF Desktop Word-Inspired App (C#)
+12. WPF Desktop Word-Inspired App (VB)
+
 ## Set Up Telerik NuGet Feed
 
 To [configure the Telerik NuGet server as a package source]({%slug nuget-package-source-setup%}), use the `nuget config` command:

@@ -2606,3 +2606,7 @@ redirects:
     from: "^/controls/radcontextmenu/how-to/use-radcontextmenu-with-radgridview/?$"
     to: "/knowledge-base/kb-contextmenu-use-with-radgridview"
     type: Permanent
+-
+    from: "^/getting-started/licensing/(.*)$"
+    to: "/installation/licensing/$1"
+    type: Permanent

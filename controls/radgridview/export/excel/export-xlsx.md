@@ -44,6 +44,8 @@ The following example shows how to use the method on a button click:
 __Example 1: Use of ExportToXlsx Method__
 <snippet id='radgridview-export-excel-export-xlsx-example_1_use_of_exporttoxlsx_method-cs' />
 
+The `ExportToXlsx` overloads do not accept a worksheet name. To set a custom name for an XLSX worksheet, use `GridViewSpreadStreamExport` and set its `SheetName` property before calling `RunExport`. For details, see [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%}).
+
 
 ## Export Default Styles
 

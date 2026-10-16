@@ -19,6 +19,8 @@ The __RadDateTimePicker__ gives you a few possibilities to change the way your d
 
 * [Defining a custom format](#defining-a-custom-format)
 
+* [Fractional-second precision and UTC](#fractional-second-precision-and-utc)
+
 ## Changing the display format
 
 __RadDateTimePicker__ has the ability to format its value in two different formats specified by the __DisplayFormat__ property.
@@ -82,6 +84,16 @@ Here is an example of defining a custom format for the __RadDateTimePicker's__ i
 Here is the result:
 
 ![{{ site.framework_name }} RadDateTimePicker Customized Culture Format](images/dateTimePicker_features_formatting_030.png)
+
+## Fractional-second precision and UTC
+
+The `Culture` property controls how `RadDateTimePicker` formats and parses its value. For example, set the culture's `ShortTimePattern` to `HH:mm:ss.fff` to use a 24-hour clock and display milliseconds.
+
+`RadDateTimePicker` does not convert values between local time and UTC. Convert the `DateTime` value in your application logic before assigning it to `SelectedValue` or after reading it from the control.
+
+The built-in text parser supports fractional seconds through milliseconds (three digits). `RadDateTimePicker` does not provide a built-in editor for microseconds. To display and select microseconds in a `TimeSpan`, see [Show Microseconds in RadTimeSpanPicker]({%slug kb-timespanpicker-show-microseconds%}).
+
+`RadTimeSpanPicker` edits a `TimeSpan`, not a complete `DateTime`. Combine its value with the required date and perform any UTC conversion in your application logic.
 
 ## See Also
 

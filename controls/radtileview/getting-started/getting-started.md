@@ -46,8 +46,8 @@ To adjust the space around tiles, add these resources to a resource dictionary i
 <Thickness x:Key="TileMargin">8</Thickness>
 
 <!-- This implicit style applies to RadTileViewItem instances in this resource scope. -->
-<Style TargetType="telerik:RadTileViewItem"
-	   BasedOn="{StaticResource {x:Type telerik:RadTileViewItem}}">
+<!-- For NoXaml assemblies with merged theme dictionaries, add BasedOn="{StaticResource RadTileViewItemStyle}". -->
+<Style TargetType="telerik:RadTileViewItem">
 	<Setter Property="Margin" Value="{StaticResource TileMargin}" />
 </Style>
 ```

@@ -54,6 +54,10 @@ __Setting axis range in C#__
 
 ![Telerik UI for WPF RadChartView Axis with Manually Set Minimum and Maximum Range](images/radchartview-axis-range-0.png)
 
+## Scrolling a Fixed-Span Y Axis
+
+For a complete live depth-chart example with a moving 150-unit Y-axis window, fixed tick alignment, and unchanged historical samples, see [Create a Live Depth Chart with a Fixed-Span Y Axis]({%slug kb-chartview-scroll-fixed-span-y-axis%}).
+
 ## Setting the Step
 
 The chart axes allow you to manually set the major and minor step, which determines the value distance between two adjacent ticks.

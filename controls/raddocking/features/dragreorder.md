@@ -13,6 +13,8 @@ position: 7
 
 With the official Q3 2012 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} we introduced the __DragReorder__ feature of __RadDocking__ control. This feature will help end users to easily reorder existing __RadPanes__ in a specific __RadPaneGroup__.
 
+`AllowDragReorder` enables mouse-driven reordering. It does not move tabs through code. To change tab order programmatically, see [Reordering Panes Programmatically]({%slug raddocking-features-pane-groups%}#reordering-panes-programmatically). You do not need to enable `AllowDragReorder` for that approach.
+
 ## Enabling and Disabling DragReorder
 
 By default the __DragReorder__ feature is disabled. In order to enable it you will need to set the AllowDragReorder property of the control to true.

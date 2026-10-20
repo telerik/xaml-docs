@@ -39,6 +39,73 @@ __Example 2: Adding panes to a RadPaneGroup__
 <snippet id='raddocking-features-pane-groups-example_2_adding_panes_to_a_radpanegroup-vb' />
 
 
+## Reordering Panes Programmatically
+
+To change the order of tabs through code, remove the pane from its owning `RadPaneGroup.Items` collection and insert it at the desired index. You do not need to enable `RadDocking.AllowDragReorder`. That property controls [mouse-driven tab reordering]({%slug raddocking-features-dragreorder%}).
+
+The following example moves the Details pane from the last tab to the first tab within the same group. All three panes are visible and pinned. Add this layout to a WPF window.
+
+__Define a pane group and a button that changes the tab order__
+
+```xml
+<Grid xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	  xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+	<Grid.RowDefinitions>
+		<RowDefinition Height="Auto" />
+		<RowDefinition Height="*" />
+	</Grid.RowDefinitions>
+
+	<Button Content="Move Details to First Tab"
+			HorizontalAlignment="Left"
+			Margin="4"
+			Click="MoveDetailsToFirst_Click" />
+
+	<telerik:RadDocking Grid.Row="1" AllowDragReorder="False">
+		<telerik:RadDocking.DocumentHost>
+			<telerik:RadSplitContainer>
+				<telerik:RadPaneGroup x:Name="DocumentGroup">
+					<telerik:RadPane Header="Overview" Content="Overview content" />
+					<telerik:RadPane Header="Editor" Content="Editor content" />
+					<telerik:RadPane x:Name="DetailsPane"
+									 Header="Details" Content="Details content" />
+				</telerik:RadPaneGroup>
+			</telerik:RadSplitContainer>
+		</telerik:RadDocking.DocumentHost>
+	</telerik:RadDocking>
+</Grid>
+```
+
+Add the click handler to the window's code-behind. Collection indices are zero-based: `0` is the first position and `Items.Count - 1` is the last position. The target index describes the pane's final position after removal and insertion.
+
+__Move the pane and restore the previously selected item__
+
+```C#
+private void MoveDetailsToFirst_Click(object sender, System.Windows.RoutedEventArgs eventArgs)
+{
+	int targetIndex = 0;
+	int currentIndex = this.DocumentGroup.Items.IndexOf(this.DetailsPane);
+	if (currentIndex < 0 || currentIndex == targetIndex)
+	{
+		return;
+	}
+
+	var selectedItem = this.DocumentGroup.SelectedItem;
+	this.DocumentGroup.Items.Remove(this.DetailsPane);
+	this.DocumentGroup.Items.Insert(targetIndex, this.DetailsPane);
+
+	if (selectedItem != null && this.DocumentGroup.Items.Contains(selectedItem))
+	{
+		this.DocumentGroup.SelectedItem = selectedItem;
+	}
+}
+```
+
+After the click, the tab order changes from Overview, Editor, Details to Details, Overview, Editor. The handler restores the previously selected pane because removal and insertion can change selection. Restoring selection does not suppress intermediate selection events or content load/unload operations.
+
+This example reorders existing visible, pinned panes in one group. It does not handle hidden panes, auto-hidden panes, or moves between groups.
+
+>note When you use [PanesSource]({%slug raddocking-features-panes-panesource%}), a `Move` notification from the bound collection does not reorder the displayed tabs. Reorder the existing panes in their owning group's `Items` collection instead. Do not bind `RadPaneGroup.ItemsSource`. It is one of the [unsupported Docking properties]({%slug not-supported-properties%}#radpanegroup).
+
 ## Removing Panes Run-Time
 
 In order to remove panes run-time you should either close the pane or remove the pane from the group via [drag and drop]({%slug raddocking-features-drag-and-drop%}).

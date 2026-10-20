@@ -53,6 +53,24 @@ This property exposes two possible values:
 
 * `MatchExact`&mdash;Items match the search operation only when they exactly match the search text. When this mode is selected the append provider won't append text. This option is available with the __2023 R2__ release of Telerik UI for WPF and versions above it.
 
+## Searching Text in Object-Typed Columns
+
+If search matches the first column but not an `object`-typed second column, check the second column's resolved `DataType`. RadMultiColumnComboBox builds search criteria from the bound member and its type, not the text rendered in the cell.
+
+When the resolved type is `object`, the search descriptor uses equality rather than string prefix or substring matching. Displaying the value as text does not make the descriptor use string matching. This does not mean that an `object`-typed column is automatically excluded from search.
+
+For text matching, expose a `string` property containing the text to search and bind the column's `DataMemberBinding` to that property. Keep the original object-valued property separately if the application needs it. Do not treat setting the column's `DataType` to `string` as a general conversion for arbitrary object values.
+
+For a string-valued member, check the matching mode:
+
+* `AutoCompleteMode="Suggest"` and `AutoCompleteMode="SuggestAppend"` use `StartsWith`.
+* `AutoCompleteMode="Search"` uses `Contains`.
+* `SearchMode="MatchExact"` uses equality instead of either partial-text operator.
+
+For the differences between filtering and text completion, see the [autocomplete modes]({%slug multicolumncombobox-autocomplete%}). Dynamic items can resolve a concrete member type at runtime. Check the resolved type rather than assuming that every object-backed data source behaves identically.
+
+Column inclusion is a separate check. The provider searches bound columns whose `IsSearchable` property is `True` and, by default, whose `IsVisible` property is `True`. To include hidden searchable columns, set `CanUserSearchInHiddenColumns="True"` on the `GridViewItemsSourceProvider`. This setting does not change type-dependent matching. See the [provider's column search settings]({%slug multicolumncombobox-gridview-itemssourceprovider%}).
+
 ## Search in Hidden Columns
 
 RadMultiComboBox allows you to search in hidden columns. To do so, set the `CanUserSearchInHiddenColumns` property to __True__ of the `GridViewItemsSourceProvider` instance.

@@ -215,8 +215,6 @@ The fixed field widths align person rows at the same indentation level. Tree ind
 
 The separate collections demonstrate an in-memory presentation model only. Updating folder membership does not automatically save relationships to a database or synchronize external repositories. Drag/drop rules and persistence remain application responsibilities.
 
->note Before publication, validate recursive template selection and layout at narrow and wide window widths.
-
 ## See Also
 
 * [Customize TreeView item templates]({%slug radtreeview-populating-with-data-item-template%})

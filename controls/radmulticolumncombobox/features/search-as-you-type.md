@@ -88,6 +88,10 @@ __RadMultiColumnComboBox without highlighting on matched items__
 
 ![RadMultiColumnComboBox without highlighting on matched items](images/radmulticolumncombobox-search-as-you-type-5.png)
 
+## Styling Cells and Search Matches
+
+For a cell-background and tooltip example, custom-template highlighting guidance, and theme considerations, see [Style Cells and Search Matches in MultiColumnComboBox]({%slug kb-multicolumncombobox-style-cells-search-matches%}).
+
 ## See Also
 * [Auto Complete]({%slug multicolumncombobox-autocomplete%})
 * [Selection]({%slug multicolumncombobox-selection%})

@@ -22,8 +22,6 @@ Display the computer's total physical memory and update its currently available 
 
 This scenario concerns the computer, not an individual process. A process-memory reading does not provide the computer's total or available RAM.
 
->caption Total and available computer memory
-
 ![WPF RadGauge showing available physical memory on a radial scale, with total and available RAM values in GiB and the last sample time](images/gauge-monitor-computer-memory.png)
 
 ## Solution

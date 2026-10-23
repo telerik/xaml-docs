@@ -146,7 +146,7 @@ Gets or sets the first weekday with which the week will start according to the v
 
 ## StretchGroupHeaders
 
-If set to True (default value) and there is more available space in the ViewDefintion left, it will be distributed among the groups. 
+When `StretchGroupHeaders` is `True`, the control distributes unused space in the view among the groups. The default value in `ViewDefinitionBase` is `False`, which `TimelineViewDefinition` inherits. `MonthViewDefinition` overrides the default to `True`.
 
 __Example 11: Setting the StretchGroupHeaders property__  
 <snippet id='radscheduleview-features-viewdefinitions-configuration-block_11-xaml' />

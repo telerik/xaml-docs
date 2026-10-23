@@ -23,6 +23,10 @@ __Group and appointment viewports with vertically arranged groups__
  
 ![UI Virtualization picture showing the viewport of RadScheduleView](images/scheduleview-ui-virtualization-viewport-description.png)
 
+## Timeline With Many Resource Groups
+
+For guidance on row sizing, empty resource rows, filtering, and appointment loading, see [Configure Timeline With Many Resource Groups]({%slug kb-scheduleview-timeline-many-resource-groups%}).
+
 ## See Also  
  * [Getting Started]({%slug radscheduleview-getting-started%})
  * [Understanding Appointments]({%slug radscheduleview-getting-started-add-edit-delete-appointment%})

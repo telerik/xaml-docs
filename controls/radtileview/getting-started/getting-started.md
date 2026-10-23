@@ -37,6 +37,25 @@ __Example 1__
 
 As you can see from the image below the items are in restored state by default.
 
+## Reduce the Space Between Tiles
+
+To adjust the space around tiles, add these resources to a resource dictionary in the scope where you want the style to apply, such as `Window.Resources`. The `Margin` value is applied on every side of each tile. The resulting visible gap can vary with the tile layout and state.
+
+```xaml
+<!-- Set TileMargin here to adjust the space around each tile. -->
+<Thickness x:Key="TileMargin">8</Thickness>
+
+<!-- This implicit style applies to RadTileViewItem instances in this resource scope. -->
+<!-- For NoXaml assemblies with merged theme dictionaries, add BasedOn="{StaticResource RadTileViewItemStyle}". -->
+<Style TargetType="telerik:RadTileViewItem">
+	<Setter Property="Margin" Value="{StaticResource TileMargin}" />
+</Style>
+```
+
+| TileMargin = 8 | TileMargin = 2 |
+| --- | --- |
+| ![RadTileView with a tile margin of 8](images/tile-margin-8.png) | ![RadTileView with a tile margin of 2](images/tile-margin-2.png) |
+
 ## Setting maximized item
 
 To set an item in maximized state you can use the __TileState__ property and set its value to __Maximized__.				

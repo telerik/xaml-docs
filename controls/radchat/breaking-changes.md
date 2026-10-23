@@ -19,7 +19,7 @@ With this release a visual revamp of the chat component and part of its features
 
 * The input box where the messages appear is now using a more complex visual element which contains extra features, like speech-to-text-button and a drop-down button with multiple options (attachments and custom options). This means that any code that was customizing the previously used textbox element should be adapted to the new input box visual (`RadPromptInput`)
 
-* The new input box includes a `RadSpeechToTextButton` by default. Its default speech recognizer requires an explicit reference to the `Microsoft.Web.WebView2` NuGet package. Without this package, the recognizer throws an when the button initializes. Follow the [RadChat WebView2 setup instructions]({%slug chat-getting-started%}#installing-the-webview2-dependency) when you upgrade.
+* The new input box includes a `RadSpeechToTextButton` by default. Its default speech recognizer requires an explicit reference to the `Microsoft.Web.WebView2` NuGet package. Without this package, the recognizer throws an when the button initializes.
 
 * The `ToolBarCommands` and `ToolBarCommandTemplateSelector` property of `RadChat` are no longer available. Instead, use the `MoreButtonActions` collection of the `RadPromptInput`.
 

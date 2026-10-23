@@ -25,7 +25,13 @@ To set the text of the input box, use the `InputBoxText` property of `RadChat`.
 
 ## Speech to Text Button
 
-By default the input box displays a `RadSpeechToTextButton` which allows the user to speak instead of typing. To __hide the button__ set the `IsSpeechToTextButtonVisible` property of `RadChat` to `False`.
+By default the input box displays a `RadSpeechToTextButton` which allows the user to speak instead of typing.
+
+>important The default speech recognizer requires you to explicitly install the `Microsoft.Web.WebView2` NuGet package in your application project. Without the package, the recognizer throws an exception when the button initializes. Follow the [RadChat WebView2 setup instructions]({%slug chat-getting-started%}#installing-the-webview2-dependency) before you run the application.
+
+For more information about the default recognizer, see the [speech-to-text button documentation]({%slug radbuttons-features-speech-to-text-button%}).
+
+To __hide the button__ set the `IsSpeechToTextButtonVisible` property of `RadChat` to `False`.
 
 ```XAML
 <telerik:RadChat IsSpeechToTextButtonVisible="False" />
@@ -84,5 +90,8 @@ private void RadChat_Loaded(object sender, RoutedEventArgs e)
 
 ![A picture showing the suggested prompts list](images/chat-input-box-settings-4.png)
 
+## See Also
 
-
+* [Getting Started with RadChat]({%slug chat-getting-started%})
+* [Speech-to-Text Button]({%slug radbuttons-features-speech-to-text-button%})
+* [Attaching Files in RadChat]({%slug chat-attachments%})

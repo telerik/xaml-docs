@@ -20,7 +20,7 @@ res_type: kb
 
 Create a flat image gallery in which images move along one horizontal row without a raised or enlarged center image. Include partially visible images at the left and right edges, a runtime image-height setting, previous and next navigation, and fullscreen image viewing.
 
->caption Flat image gallery with RadCarousel
+__Flat image gallery with RadCarousel__
 
 ![WPF RadCarousel displaying a horizontal image gallery with partially visible edge images, navigation arrows, and an image-height slider](images/flat-image-gallery.gif)
 

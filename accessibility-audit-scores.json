@@ -1,0 +1,140 @@
+[
+  {
+    "file": "/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-bollingerbandsindicator.md",
+    "overall_score": 3.5,
+    "dimensions": {
+      "heading_structure": {
+        "score": 3,
+        "rationale": "There is one H1, but a figure caption introduces an H4 directly beneath it.",
+        "violations": ["Line 24 skips H2 and H3 and uses a heading for a figure caption (F08)."]
+      },
+      "alternative_text": {
+        "score": 1,
+        "rationale": "The only image has no alt attribute; its plot has no author-supplied image alternative.",
+        "violations": ["Line 25 embeds an informative plot with no alt attribute (F01)."]
+      },
+      "link_text_clarity": {
+        "score": 5,
+        "rationale": "The links identify their chart-series, data-binding, indicator, or getting-started destinations.",
+        "violations": []
+      },
+      "table_accessibility": {
+        "score": 5,
+        "rationale": "No tables occur in this article's source; no applicable violation was found.",
+        "violations": []
+      },
+      "plain_language": {
+        "score": 3,
+        "rationale": "The short prose identifies properties but repeatedly uses indirect phrasing instead of direct instructions.",
+        "violations": ["Lines 16–18 repeat 'you can' constructions; prefer direct instructions such as 'Set Period to the number of days.'"]
+      },
+      "formatting_independence": {
+        "score": 5,
+        "rationale": "Property names remain available as text, and no color-only instruction is present.",
+        "violations": []
+      },
+      "callout_structure": {
+        "score": 5,
+        "rationale": "The tip uses the designated syntax and contains complete supplemental guidance.",
+        "violations": []
+      },
+      "code_block_accessibility": {
+        "score": 5,
+        "rationale": "The snippet reference has an XAML-specific identifier, a purpose caption, and preceding configuration context; no direct fences occur. The external snippet body was not evaluated.",
+        "violations": []
+      }
+    }
+  },
+  {
+    "file": "/home/runner/work/xaml-docs/xaml-docs/controls/radtabbedwindow/getting-started.md",
+    "overall_score": 3.6,
+    "dimensions": {
+      "heading_structure": {
+        "score": 5,
+        "rationale": "One H1 and descriptive H2 sections provide a sequential outline in the article source.",
+        "violations": []
+      },
+      "alternative_text": {
+        "score": 1,
+        "rationale": "All four screenshots have empty labels, and the first screenshot illustrates dialog choices absent from the step text. Later result images may be redundant and require contextual review.",
+        "violations": ["Lines 35–39 do not textually identify the dialog choices shown by add-new-window.png (F02)."]
+      },
+      "link_text_clarity": {
+        "score": 3,
+        "rationale": "Most links identify their destinations, but the licensing tip has a generic anchor.",
+        "violations": ["Line 22 links 'here' instead of naming the license-key installation instructions (F11)."]
+      },
+      "table_accessibility": {
+        "score": 5,
+        "rationale": "No tables occur in this article's source; no applicable violation was found.",
+        "violations": []
+      },
+      "plain_language": {
+        "score": 3,
+        "rationale": "The instructions are generally understandable, but use unexplained abbreviations and some indirect phrasing.",
+        "violations": ["Lines 18 and 49 use dlls and MS without expansion; define unfamiliar abbreviations or use assemblies and Microsoft."]
+      },
+      "formatting_independence": {
+        "score": 5,
+        "rationale": "Steps, properties, and important notices retain textual meaning independent of bold styling.",
+        "violations": []
+      },
+      "callout_structure": {
+        "score": 5,
+        "rationale": "The tip and important notices use the designated patterns and complete sentences.",
+        "violations": []
+      },
+      "code_block_accessibility": {
+        "score": 5,
+        "rationale": "Snippet references have language-specific identifiers, example captions, and surrounding instructions; a namespace replacement instruction is explicit. External snippet bodies were not evaluated.",
+        "violations": []
+      }
+    }
+  },
+  {
+    "file": "/home/runner/work/xaml-docs/xaml-docs/getting-started/first-steps-nuget.md",
+    "overall_score": 4.6,
+    "dimensions": {
+      "heading_structure": {
+        "score": 5,
+        "rationale": "One H1 and descriptive H2 sections organize prerequisites, setup, installation, and next steps.",
+        "violations": []
+      },
+      "alternative_text": {
+        "score": 5,
+        "rationale": "No ordinary Markdown or HTML images occur in the article source. Custom article-card icons require rendered follow-up and are not certified by this score.",
+        "violations": []
+      },
+      "link_text_clarity": {
+        "score": 5,
+        "rationale": "Source links describe installation, themes, packages, and related topics rather than using generic anchors.",
+        "violations": []
+      },
+      "table_accessibility": {
+        "score": 5,
+        "rationale": "No tables occur in this article's source; no applicable violation was found.",
+        "violations": []
+      },
+      "plain_language": {
+        "score": 3,
+        "rationale": "Numbered steps are direct, but the entry-point tutorial introduces multiple abbreviations without expansion.",
+        "violations": ["Lines 19, 25, and 39 use SDK, CLI, and MCP without expanding their names at first use."]
+      },
+      "formatting_independence": {
+        "score": 5,
+        "rationale": "Named menu choices, property values, lists, and callouts do not depend on color or emphasis alone.",
+        "violations": []
+      },
+      "callout_structure": {
+        "score": 5,
+        "rationale": "Tips and important notices use the platform's consistent patterns and complete explanatory sentences.",
+        "violations": []
+      },
+      "code_block_accessibility": {
+        "score": 3,
+        "rationale": "Examples have nearby task context, but three opening fences lack language tags.",
+        "violations": ["Opening fences at lines 29, 35, and 58 are untagged; use powershell, powershell, and xml respectively (F18)."]
+      }
+    }
+  }
+]

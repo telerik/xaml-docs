@@ -1,0 +1,661 @@
+Documentation Accessibility Audit — Telerik UI for WPF
+Issue: telerik/xaml-docs#3249
+Audit date: 2026-10-27
+Source baseline: 40bab103ec094afb91f91a1dfa340cc4bbc8ea56
+
+# Executive Summary
+
+The documentation has established organization, descriptive prose around many
+examples, and reusable authoring conventions, but accessibility practices are
+inconsistent. The main risks are filename-based image alternatives, generic
+links, discontinuous heading outlines, tables without meaningful header
+relationships, and instructions that require interpretation of screenshots.
+Estimated authoring maturity: developing, not consistently enforced. This is
+a qualitative assessment, not a repository-wide numerical score.
+
+This audit evaluates ONLY Markdown documentation, authoring practices, and
+referenced documentation assets. It does NOT evaluate Telerik WPF features,
+runtime behavior, product keyboard or screen-reader support, report/viewer/
+designer accessibility, generated reports, or the accuracy of product
+accessibility claims. References to such topics identify documentation only.
+
+There are 26 grouped findings below: 18 Medium and 8 Low. No Critical or High
+barrier was established at this source-only level of assurance. Medium issues
+still warrant a scheduled remediation backlog, especially on entry-point
+articles and shared templates. A finding groups one authoring problem and may
+cover several occurrences; it is not a count of every affected source line.
+
+## Method and coverage
+
+Authoritative rubric:
+/home/runner/work/xaml-docs/xaml-docs/.github/skills/accessibility-doc-optimization/SKILL.md
+
+All eight rubric dimensions were considered: heading structure (20%), alternative
+text (20%), link clarity (15%), tables (10%), plain language (15%), formatting
+independence (10%), callouts (5%), and code blocks (5%). Embedded-media and
+motion observations supplement those dimensions as requested by the issue.
+The companion accessibility-audit-scores.json preserves the rubric's individual
+article score objects, rationales, violations, and weighted averages.
+
+Inventory: 3,338 tracked .md files at the baseline. A source-pattern census
+covered 3,328 article candidates, including conditional and unpublished source;
+this is not a count of pages verified on the live WPF site.
+Population by section:
+  controls 2,777; knowledge-base 422; common-information 39;
+  styling-and-appearance 34; installation 29; testing 6; ai-assistant 5;
+  netcore 4; security 4; breaking-changes 2; developer-focused-examples 2;
+  getting-started 2; root articles 2.
+
+Ten files were excluded from article counts: four .github/skills articles,
+README.md, copyright.md, two _assetsApi*/api/index.md files, and two
+_contentTemplates files. Contributor guidance and both shared templates were
+separately inspected where relevant; included content is part of the audit.
+No .github/agents content was reviewed.
+
+Thirty-three distinct articles received manual source review, selected across
+sections and issue categories, rather than as a random statistical sample.
+Their exact paths appear in the coverage appendix. Three referenced assets
+were additionally inspected: one TabbedWindow screenshot, one TreeView binding
+screenshot, and the timing/loop metadata of one chart-animation GIF.
+Other asset findings concern the embedding source and surrounding prose,
+not inferred visual contents.
+
+Census method: enumerate tracked .md paths with git ls-files; exclude the ten
+files above; decode UTF-8; remove initial YAML front matter; track matching
+backtick/tilde fences, including indented fences; inspect only prose outside
+fences. Count ATX headings, inline Markdown images/links, and HTML image/media
+declarations. Filename matches compare lowercased alphanumeric image labels
+with the target filename stem. The generic-link allowlist is: here, click
+here, click here for more, learn more, read more, more, this article, this link,
+and link. Opening fences with no information string are counted, not closing
+fences. Findings were then checked manually with surrounding source context.
+
+These are heuristic candidate counts, not Markdown-parser or WCAG verdicts.
+Reference-style syntax, multiline HTML, includes, and external snippet bodies
+are not exhaustively represented. Conditional branches were not expanded in
+the census; confirmed examples below identify WPF-visible or unconditional
+source. Counts are reproducible only against the stated baseline and method.
+
+No rendered documentation build, assistive-technology session, external video
+inspection, or contrast measurement was performed. Heading landmarks supplied
+by the site shell, final table semantics, iframe accessible names, captions,
+audio description, custom article-card behavior, and motion controls require
+rendered-page follow-up. This report is not WCAG conformance certification.
+The checked-in configuration does not provide a Markdown accessibility test
+command; no new dependencies, test framework, or publishing changes are needed
+for this report-only deliverable.
+
+Severity interpretation:
+  Critical — demonstrated widespread barrier preventing content understanding.
+  High — demonstrated substantial documentation-access barrier needing urgent repair.
+  Medium — confirmed authoring issue reducing usability or equivalent access.
+  Low — limited-impact clarity or consistency improvement.
+Potential rendered failures are qualified rather than assigned an invented
+Critical/High rating. Skill scores and issue severity are separate measures.
+
+# Immediate Action Required
+
+Prioritized remediation queue, ordered by severity and then reuse/reader impact.
+All paths are absolute; line numbers refer to the baseline. Counts below are
+distinct finding IDs applicable to that article, not total occurrences.
+
+1. /home/runner/work/xaml-docs/xaml-docs/ai-assistant/overview.md
+   Medium; 1 finding (F15, through its include at lines 35–37).
+   Risk: a shared flat component list is exposed as a layout table.
+   Action: replace the shared template table with a list, then preview consumers.
+
+2. /home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-bollingerbandsindicator.md
+   Medium; 2 findings (F01, F08).
+   Risk: unnamed instructional image and H1-to-H4 figure-heading jump.
+   Action: describe the illustrated result and use a caption, not an H4.
+
+3. /home/runner/work/xaml-docs/xaml-docs/controls/radtreeview/populating-with-data/item-template.md
+   Medium; 1 finding (F04).
+   Risk: procedural binding values are left to screenshots.
+   Action: state values directly beside the steps; verify the included XAML.
+
+4. /home/runner/work/xaml-docs/xaml-docs/controls/radtabbedwindow/getting-started.md
+   Medium; 2 findings (F02, F11).
+   Risk: empty screenshot alternatives and a generic licensing link.
+   Action: make the Add New Item step text-complete and name the link destination.
+
+5. /home/runner/work/xaml-docs/xaml-docs/controls/radchartview/features/animations.md
+   Medium; 2 findings (F07, F08).
+   Risk: indefinitely looping documentation GIF and figure-heading jump.
+   Action: supply a static or controllable presentation and semantic captions.
+
+6. /home/runner/work/xaml-docs/xaml-docs/getting-started/video-onboarding.md
+   Medium; 1 finding (F05).
+   Risk: no discoverable equivalent written learning route.
+   Action: link transcripts or detailed written walkthroughs beside each video.
+
+7. /home/runner/work/xaml-docs/xaml-docs/controls/raddataform/localization/localization.md
+   Medium; 2 findings (F13, F20).
+   Risk: data labels are ordinary cells; an incomplete callout ends mid-thought.
+   Action: use semantic table headers and complete or remove the broken notice.
+
+8. /home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/themes-suite/visualstudio2013.md
+   Medium; 1 finding (F16).
+   Risk: unnamed swatch columns and mostly empty grouping rows.
+   Action: merge each swatch into its named value column; split category tables.
+
+9. /home/runner/work/xaml-docs/xaml-docs/common-information/consuming-data/using-data-virtualization.md
+   Medium; 2 findings (F19, F20).
+   Risk: unexplained binding context and inconsistent limitation notices.
+   Action: introduce Example 2 and use the designated callout syntax.
+
+10. /home/runner/work/xaml-docs/xaml-docs/getting-started/first-steps-nuget.md
+    Medium; 1 finding (F18).
+    Risk: three examples do not identify their languages.
+    Action: label command blocks powershell and the project fragment xml.
+
+The remaining findings are also actionable backlog items. This queue is not an
+assertion that unlisted articles are accessible.
+
+# Detailed Findings
+
+F01 — Medium | Alternative text | HTML plots lack image alternatives
+File: /home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-bollingerbandsindicator.md:24–25
+Evidence: <img src="images/radchartview-indicators-bollingerbandsindicator-0.png" style="width: 80%;">
+The image declaration has no alt attribute. The pattern appears in 23 indicator
+articles, including:
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-overview.md:19
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-averagetruerangeindicator.md:24
+Impact: readers cannot obtain an author-supplied equivalent for the illustrated
+plot from the image source; nearby property descriptions are not plot descriptions.
+Remediation: inspect each asset, add a purpose-specific alternative, and explain
+important visual relationships in adjacent text. Describe actual series/bands
+after inspection; do not generate descriptions from filenames. Use alt="" only
+when the image contributes nothing beyond a complete nearby text equivalent.
+
+F02 — Medium | Alternative text and screenshot context | Empty tutorial images
+File: /home/runner/work/xaml-docs/xaml-docs/controls/radtabbedwindow/getting-started.md:35–39,63–67,83–87,111–115
+Evidence: ![](images/add-new-window.png), followed by three other empty labels.
+The first inspected asset shows the Add New Item dialog, Window (WPF) template,
+and TabbedWindow name. The prose only says to create a new WPF window.
+Impact: readers miss the specific dialog choices illustrated by the screenshot.
+Remediation: write the procedure explicitly, for example: "In Add New Item,
+select Window (WPF), enter TabbedWindow as the name, and select Add." Add concise
+image text only for information not already supplied. The later result images
+may be redundant; assess their contribution rather than blindly adding alt.
+
+F03 — Low | Alternative text | Filename identifiers read as image descriptions
+File: /home/runner/work/xaml-docs/xaml-docs/developer-focused-examples/sdk-samples-browser.md:13,42,46,70
+Evidence: image labels include "sdk-samples-browser-1" and "sdk-samples-browser-3".
+Impact: numbered implementation labels do not identify the purpose of the images.
+Remediation: describe the pictured screen or task after asset inspection, such
+as the browser's settings when that is what the image shows. Remove redundant
+announcements only when surrounding prose provides a full equivalent.
+The source-wide filename-match count is a triage signal, not proof that all
+matching labels are meaningless.
+
+F04 — Medium | Screenshot-dependent instructions | Binding values unstated in steps
+File: /home/runner/work/xaml-docs/xaml-docs/controls/radtreeview/populating-with-data/item-template.md:57–68
+Evidence: "Find and set the following properties" lists ItemsSource and
+ItemTemplate, but supplies their settings through images. The inspected asset:
+/home/runner/work/xaml-docs/xaml-docs/controls/radtreeview/populating-with-data/images/RadTreeView_TemplatingItemTemplate_070.png
+shows "{Binding Divisions, Mode=OneWay}"; that value is absent from the step text.
+Impact: readers following the procedure without images must infer the setting.
+Remediation: state "Set ItemsSource to {Binding Divisions, Mode=OneWay}." Inspect
+the ItemTemplate image and state its actual resource value too.
+Qualification: line 68 includes a generated-XAML snippet that may provide these
+values after rendering. Its body was not inspected; this is a procedural-context
+gap, not a claim that no equivalent exists anywhere on the published page.
+
+F05 — Medium | Embedded content | Written alternatives are not discoverable
+File: /home/runner/work/xaml-docs/xaml-docs/getting-started/video-onboarding.md:20–41
+Evidence: two embedded videos and an approximately two-hour playlist are
+introduced with summaries and chapter names, but no transcript or equivalent
+written walkthrough links.
+Impact: readers who cannot use audiovisual instruction lack an identified
+non-video learning route from this article.
+Remediation: provide descriptive transcript/walkthrough links beside each video
+and identify caption access and descriptions of essential visual actions.
+Qualification: both iframes already have titles. External captions, transcripts,
+and audio description were not inspected; missing captions are NOT asserted.
+
+F06 — Low | Embedded content | Tutorial iframe has no title attribute
+File: /home/runner/work/xaml-docs/xaml-docs/installation/manual-setup-guides/nuget/package-source-setup.md:167–169
+Evidence: the iframe at line 169 supplies src and size but no title.
+Impact: frame navigation may not identify the tutorial usefully.
+Remediation example: title="Video: Add the Telerik NuGet feed to Visual Studio".
+Written setup steps already exist in this article. The final rendered accessible
+name and player behavior require verification; this is not a video-only barrier.
+
+F07 — Medium | Referenced asset and reading experience | Indefinite motion
+File: /home/runner/work/xaml-docs/xaml-docs/controls/radchartview/features/animations.md:30–31
+Evidence: an ordinary Markdown image embeds:
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/features/images/radchartview-features-animations-main-animations.gif
+Asset metadata: 83 frames, 3.82-second cycle, NETSCAPE loop count 0 (indefinite).
+Impact: persistent motion alongside text can distract readers with attention or
+cognitive disabilities.
+Remediation: use a static poster with explicit play, or non-autoplay controllable
+media; retain the written explanation. Verify reduced-motion and pause/hide
+behavior on the documentation page.
+Qualification: site-level controls were not inspected. A short cycle repeated
+indefinitely is not a short-lived animation; no flashing-threshold or rendered
+WCAG 2.2.2 violation is asserted.
+
+F08 — Medium | Heading structure | Skipped levels and figure captions as headings
+Files:
+/home/runner/work/xaml-docs/xaml-docs/breaking-changes/2025-breaking-changes.md:16–18,26–28,46–48
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-bollingerbandsindicator.md:12,24
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/features/animations.md:12,30
+/home/runner/work/xaml-docs/xaml-docs/installation/manual-setup-guides/visual-studio-extensions/extensions-overview.md:12,48
+Evidence: "## 2025 Q4 (2025.4.1321)" is followed by "#### RichTextBox".
+The BollingerBandsIndicator article jumps from H1 to "#### Figure 1".
+Impact: heading navigation implies nonexistent parent sections; figure labels
+pollute the outline instead of identifying content sections.
+Remediation: use H3 component headings under H2 releases, H2 for Visual Studio
+Support under its H1, and ordinary captions for figures. Preserve existing
+anchors or provide compatible anchors when changing caption markup.
+
+F09 — Medium | Heading structure | A subsection becomes a second page title
+File: /home/runner/work/xaml-docs/xaml-docs/common-information/troubleshooting/invisible-controls.md:12,60
+Evidence: "# Missing Controls in the UI" and "# Clean and Build Your Project".
+Impact: the document exposes two top-level sections rather than one article
+with a coherent subsection outline.
+Remediation example: change the latter to "## Clean and Build Your Project".
+
+F10 — Low | Heading labels | Repeated vague section titles
+File: /home/runner/work/xaml-docs/xaml-docs/controls/radgridview/events/overview.md:120–124,158–160
+Evidence: two sections are named "### Other".
+Impact: a heading list does not distinguish their event groups.
+Remediation: name the actual groups, for example "Column Generation and Row
+Expansion Events" and "Row Expansion Events", after checking the section bodies.
+
+F11 — Medium | Link text | Generic labels obscure different destinations
+Files:
+/home/runner/work/xaml-docs/xaml-docs/common-information/consuming-data/overview.md:16,26–28
+/home/runner/work/xaml-docs/xaml-docs/controls/radtabbedwindow/getting-started.md:22
+Evidence: three unconditional "Read more" links lead to different data-source
+topics; the TabbedWindow licensing tip links "here".
+Impact: independently navigating links loses their destination distinctions.
+Remediation examples: "[Using XML Data]({%slug consuming-data-using-xml%})" and
+"[Install a license key]({%slug installing-license-key%})".
+The Silverlight-only links at lines 19–23 are not needed to establish this finding.
+
+F12 — Medium | Link text | Event tutorials share the label "here"
+File: /home/runner/work/xaml-docs/xaml-docs/controls/radgridview/events/overview.md:54–66
+Evidence: edit, delete, validation, and filtering tutorial links all say "here".
+Impact: a links list cannot distinguish the tutorials.
+Remediation: link "Edit events", "Delete events", "Validation events", and
+"Filtering events" instead of the trailing generic words.
+
+F13 — Medium | Table semantics | Resource-key labels are ordinary data cells
+File: /home/runner/work/xaml-docs/xaml-docs/controls/raddataform/localization/localization.md:33–35
+Evidence: <table><tr><td>Key</td><td>Value</td></tr> begins a data table.
+Impact: the source supplies no semantic column-header associations.
+Remediation: use a Markdown header row, or <th scope="col">Resource key</th>
+and <th scope="col">Default value</th>. Bold text alone is not a semantic header.
+
+F14 — Medium | Table semantics | Environment metadata has no header associations
+Files:
+/home/runner/work/xaml-docs/xaml-docs/knowledge-base/kb-add-additional-element-inside-radtabbedwindows-header.md:15–26
+/home/runner/work/xaml-docs/xaml-docs/knowledge-base/kb-upgrade-migrate-to-net.md:15–22
+Evidence: Product Version/Product labels and their values are all <td> cells.
+Impact: label/value relationships depend on position rather than explicit headers.
+Remediation: use ordinary labeled prose or a definition list. If retaining the
+table, make each label <th scope="row"> and retain its corresponding value cell.
+Check the knowledge-base renderer before changing shared metadata conventions.
+
+F15 — Medium | Layout table | Flat component list is encoded as tabular data
+File: /home/runner/work/xaml-docs/xaml-docs/_contentTemplates/ai-coding-assistant.md:12–31
+Consumer: /home/runner/work/xaml-docs/xaml-docs/ai-assistant/overview.md:35–37
+Evidence: four-column rows contain unrelated bold component names, with no
+column headings or genuine data relationships.
+Impact: readers encounter table-navigation overhead for a simple list.
+Remediation: replace the table with an unordered list; use CSS columns only
+for visual presentation. Fix the included template, not just its consumer.
+
+F16 — Medium | Complex table | Unnamed swatch columns and empty grouping rows
+File: /home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/themes-suite/visualstudio2013.md:41–65
+Evidence: "|Color name|Light (default)| |Dark| |Blue| |" has unnamed columns.
+Category labels at lines 45, 50, and 64 occupy otherwise empty data rows.
+Impact: linearized navigation encounters unlabeled columns and ambiguous groups.
+Remediation: use four named columns (Color name, Light, Dark, Blue), place each
+decorative swatch beside its textual hex value in the same cell, and introduce
+separate category tables with headings and explanatory prose.
+Qualification: hex values already convey the colors textually. This is NOT a
+claim that the table conveys information by color alone.
+
+F17 — Low | Table cells | Sparse comparisons leave absence unexplained
+File: /home/runner/work/xaml-docs/xaml-docs/controls/radchartview/getting-started/data-point.md:79–104
+Evidence: rows include self-closing <td/> cells.
+Impact: readers cannot distinguish intentional absence from missing information.
+Remediation: normalize the data into Chart family, Data-point type, and Series
+columns, or use explicit cells such as <td>Not applicable</td> where accurate.
+Do not substitute "None" mechanically if an empty cell has a different meaning.
+
+F18 — Medium | Code blocks | Examples lack language identifiers
+File: /home/runner/work/xaml-docs/xaml-docs/getting-started/first-steps-nuget.md:29–37,58–60
+Evidence: the dotnet installation command, telerik setup command, and
+PackageReference fragment each open with a bare triple-backtick fence.
+Impact: language-aware tools and readers must infer shell commands versus XML.
+Remediation: label the first two opening fences powershell and the third xml.
+Existing XAML/C# fences and externally referenced snippets are not untagged.
+
+F19 — Medium | Code context | Caption does not explain the binding source
+File: /home/runner/work/xaml-docs/xaml-docs/common-information/consuming-data/using-data-virtualization.md:96–100
+Evidence: "Example 2: Binding RadGridView" immediately precedes
+<telerik:RadGridView ItemsSource="{Binding}" /> without an explanatory sentence.
+Impact: readers must infer the connection to the earlier collection/data context.
+Remediation: introduce the block: "Set RadGridView.ItemsSource to the current
+data context, which contains the VirtualQueryableCollectionView from Example 1."
+Retain the caption and shared introductions for alternate-language blocks.
+
+F20 — Medium | Callouts and formatting independence | Untyped/incomplete notices
+Files:
+/home/runner/work/xaml-docs/xaml-docs/common-information/consuming-data/using-data-virtualization.md:104–113
+/home/runner/work/xaml-docs/xaml-docs/controls/raddataform/localization/localization.md:27
+Evidence: ">**Filtering** is only supported..." and another ordinary blockquote
+present limitations, while line 111 uses >important. The localization notice
+ends "please read the common topic about" without a topic or link.
+Impact: notices lack consistent source-level classification; the incomplete
+notice does not provide a usable next action.
+Remediation: use the platform's >important syntax for required limitations,
+>note for supplemental information, and complete each notice with a meaningful
+sentence and descriptive destination link. Preserve the existing substantive
+limitation text; no product claim is being evaluated.
+Rendered announcement/role behavior of the custom callouts remains unverified.
+
+F21 — Medium | Plain language | Acronyms add barriers in explanatory prose
+File: /home/runner/work/xaml-docs/xaml-docs/security/useful-tips.md:18
+Evidence: the explanation introduces XML, CLR, and OS without expansion.
+Impact: unfamiliar readers must leave the article to decode its terminology.
+Remediation: define Extensible Markup Language (XML), Common Language Runtime
+(CLR), and operating system (OS) on first use; explain deserialization plainly.
+Example: "Deserialization converts stored XML data into .NET objects."
+This finding concerns wording only, not the security or accessibility behavior
+of any component described by the article.
+
+F22 — Low | Code outcomes | Verification command lacks success criteria
+File: /home/runner/work/xaml-docs/xaml-docs/installation/manual-setup-guides/telerik-cli.md:51–57
+Evidence: "To verify the installation:" introduces dotnet tool list -g, but
+does not identify the expected entry.
+Impact: readers do not know what result confirms success.
+Remediation: describe the Telerik.CLI entry and version expected in the global
+tool list, and link back to installation if it is absent. This is guidance
+for explaining a documentation example, not a test of the tool.
+
+F23 — Low | Plain language | Required-action notice contains dense prose
+File: /home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/xaml-vs-noxaml.md:40
+Evidence: "Because the NoXaml dlls apply the control styles implicitly, when
+you create a custom control deriving from a Telerik control you will need to
+create a custom style and base it on the default control style."
+Impact: the approximately 40-word opening sentence increases memory load.
+Remediation example: "NoXaml assemblies apply styles implicitly. If your custom
+control derives from a Telerik control, create a style for it. Base that style
+on the Telerik control's default style." Keep the example and consequence.
+The paragraph already uses >important; its callout syntax is not the problem.
+No repository-wide reading grade was calculated.
+
+F24 — Low | Code placeholders | Equivalent placeholders use inconsistent names
+File: /home/runner/work/xaml-docs/xaml-docs/ai-assistant/mcp-server.md:113–119,196–204
+Evidence: the same field uses YOUR_LICENSE_KEY and YOUR_LICENSE_KEY_HERE without
+an explicit adjacent replacement instruction.
+Impact: inconsistent notation adds avoidable substitution work.
+Remediation: use one placeholder such as <license-key> inside the JSON string
+and explain immediately before each example that it must be replaced.
+Use a placeholder, never a real credential. The separate path placeholder is
+explained at line 192 and is not reported as unexplained.
+
+F25 — Medium | Included reference table | Visual grouping and unexplained blanks
+File: /home/runner/work/xaml-docs/xaml-docs/_contentTemplates/glyphs-table.md:31–38
+Consumer: /home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/glyphs/common-styles-appearance-glyphs-reference-sheet.md:73
+Evidence: six headers introduce the table; "Navigation and Layout" is a bold
+label in a mostly empty row, and data rows leave "Is New?" empty.
+Impact: category changes and blank status cells are ambiguous when linearized.
+Remediation: use headings and separate tables for categories; explicitly label
+new/not-new status (or remove that column if no longer useful). Explain how
+the two visual glyph columns relate to the textual glyph name and code.
+For inline SVG previews, decide whether the textual name is a full equivalent:
+hide genuinely redundant previews from assistive technology or supply a
+meaningful accessible name/description. Do not assign "image" to every SVG.
+This concerns the documentation reference sheet, not runtime icon accessibility.
+
+F26 — Low | Source heading convention | Non-KB article has no H1
+File: /home/runner/work/xaml-docs/xaml-docs/ai-assistant/mcp-server.md:11
+Evidence: the article starts "## Getting Started with Telerik WPF MCP Server"
+and contains no source H1.
+Impact: the standalone source does not expose a page-title heading; final
+impact depends on whether the publishing template inserts one.
+Remediation: verify the rendered outline, then use one source H1 or document
+and enforce a renderer-provided-title exception. Do not add a duplicate H1.
+The 422 similarly flagged knowledge-base articles are template-verification
+candidates, not 422 confirmed missing titles on the live site.
+
+# Repository-Wide Patterns
+
+Source-census results (occurrences / distinct article files):
+  ATX heading jumps:                         1,087 / 667
+  No source H1:                                423 / 423
+  Multiple source H1s:                          13 / 13
+  Generic inline link labels:                  751 / 473
+  URL-valued inline link labels:                32 / 22
+  Filename-matching Markdown image labels:    1,264 / 435
+  Empty Markdown image labels:                   9 / 3
+  HTML <img> declarations:                       24 / 24
+    of these, no alt attribute:                  23 / 23
+  Untagged opening code fences:                  21 / 9
+  iframe/video declaration lines:                 3 / 2
+
+Denominators for the counted inline syntax: 5,217 Markdown image references,
+17,597 Markdown links, and 1,921 fenced blocks. The census also found 310 pipe
+table separator lines; this is not a full table inventory because HTML tables
+and included tables also occur. Categories overlap and must not be summed
+into an affected-page total or a conformance percentage.
+
+Most frequent candidates are heading discontinuities, filename-derived image
+labels, and generic links. Their prevalence supports a systematic authoring
+response rather than fixing only the example articles.
+
+Important qualifications and counterexamples:
+- Of the 423 files without a source H1, 422 are knowledge-base articles; the
+  other is F26. Establish title-injection behavior before bulk remediation.
+- Conditional Silverlight content was included in raw scan counts, but is not
+  used to infer a WPF rendered-page failure.
+- Empty labels appear in TabbedWindow, migration, and a demos troubleshooting
+  article. In the migration article, Properties/Target framework steps already
+  state the required choices. Empty alt may intentionally suppress redundant
+  screenshots; it is not automatically an accessibility defect.
+- The palette table supplies hexadecimal values. Similarly,
+  /home/runner/work/xaml-docs/xaml-docs/controls/radchart/features/layout-mode.md:68–84
+  mentions red rectangles but follows with textual descriptions of differences.
+  This supports clearer wording, not a confirmed color-only barrier.
+- /home/runner/work/xaml-docs/xaml-docs/testing/appium/getting-started.md:154–158
+  mentions flashing blue AND an "Active" to "XPath Ready" text-status change.
+  Do not remove useful status text or classify this as color-only instruction.
+- "Click the empty square that's on the right" at
+  /home/runner/work/xaml-docs/xaml-docs/controls/radtreeview/populating-with-data/item-template.md:43–49
+  has Source-property and DataBinding context. Prefer the property/menu name,
+  but direction words alone do not prove inaccessible instructions.
+- The Appium article has a 51-line code sample at lines 29–81 with an
+  introduction and comments. The rubric has no hard maximum sample length.
+  Length alone is not a finding; split only where it improves comprehension.
+- No confirmed dependence on syntax highlighting alone was found in the manual
+  sample. Lack of a language tag is a separate, demonstrated issue.
+- A URL can be essential literal data, such as a service endpoint. Do not
+  automatically replace every bare URL; use descriptive links for navigation
+  and preserve literal configuration values in code.
+
+Bulk-remediation candidates: reviewed generic links, figure captions misused
+as headings, language tags where the language is unambiguous, and shared layout
+tables. Image descriptions, meaningful blank-cell replacements, acronyms, and
+screenshot equivalence require human judgment. Repair includes once and preview
+their consumers. Do not automatically rewrite product terminology or code.
+
+# Recommendations
+
+## Immediate (0–30 days)
+
+- Documentation owners: triage the priority queue and assign article/template
+  owners. Repair shared F15/F25 patterns and first-step examples first.
+- Authors: make screenshot-dependent procedures text-complete; inspect the
+  referenced assets before writing alternatives. Replace generic link labels.
+- Editors: fix confirmed heading jumps and table-header omissions, preserving
+  old anchors and existing slug targets.
+- Media owners: provide a written path beside onboarding videos and verify
+  caption/transcript availability separately; assess pause/reduced-motion
+  handling for the embedded documentation GIF.
+- Record rendered follow-up outcomes for KB title injection and custom callouts
+  before deciding whether source conventions require exceptions.
+
+## Short Term (1–3 months)
+
+- Documentation maintainers: update the contributor checklist and shared
+  authoring examples; explicitly support snippets, Liquid, and platform callouts.
+- Introduce changed-file source checks, baseline legacy debt, and make only
+  newly introduced high-confidence defects blocking initially.
+- Batch generic-link and heading repairs by section; have owners review image
+  and table changes rather than approving mechanical filename-to-alt rewrites.
+- Review rendered documentation pages with screen-reader heading/link/table
+  navigation, keyboard-only reading, zoom/reflow, and reduced motion.
+  Test the documentation site only, not WPF applications.
+- Use an editorial review for acronym expansion, sentence length, code purpose,
+  placeholder instructions, and command success criteria.
+
+## Long Term (3+ months)
+
+- Maintain media alternatives and asset descriptions alongside source changes.
+- Add representative generated-documentation checks for included content,
+  snippets, custom cards, callouts, and heading/title behavior.
+- Repeat sampled manual audits across less-reviewed sections; include readers
+  using assistive technology in documentation usability reviews.
+- Track remaining verified findings, new-defect rate, exception age, and
+  reviewed-article coverage. Do not use the three article scores as a repository
+  accessibility rating or equate a passing linter with conformance.
+
+# Authoring Guideline Improvements
+
+Suggested additions to the contributor guidance and wiki, not product guidance:
+
+1. Require one meaningful page title and a sequential outline. Document exactly
+   when a renderer supplies H1. Use captions, not heading levels, for figures.
+2. Require text-complete procedures. Name the control/menu/property and value;
+   never require a reader to locate an unlabeled colored or positioned item.
+3. Explain informative image purpose/results. For complex diagrams, provide a
+   nearby extended description. Document when empty alt marks a redundant or
+   decorative image. Avoid repeating a complete caption word for word.
+4. Require destination-specific links; review a links-only list. Keep labels
+   for the same destination consistent where their purpose is the same.
+5. Use real column/row headers for data, lists for layout, meaningful values for
+   absence, and a lead-in explaining complex comparisons. Split grouped tables.
+6. Introduce each logical code example with purpose, location, prerequisites,
+   substitutions, and relevant outcome. Tag fences, retain shared introductions
+   for C#/VB alternatives, and provide context for external snippets.
+7. Expand unfamiliar acronyms on first use, prefer imperative short steps, and
+   split long notices. A reading-grade target is guidance, not a way to rewrite
+   identifiers or discard necessary technical terminology.
+8. Standardize >note, >tip, >important, and >warning. Require complete,
+   self-contained content and a type appropriate to the notice's consequence.
+9. Give embedded frames descriptive titles and adjacent alternative routes.
+   Document caption/transcript review and avoid persistent uncontrolled motion.
+10. Require a PR reviewer to check outline, links, images, tables, code context,
+    and media alternatives. Preview through the actual documentation renderer.
+    Record narrowly scoped exceptions with reasons and review dates.
+
+Existing guidance evidence:
+/home/runner/work/xaml-docs/xaml-docs/README.md:56–58
+asks for standard Markdown, preview, and consultation of the documentation wiki,
+but does not provide this checklist. The external wiki was not audited.
+
+# Automation Opportunities
+
+These are proposed controls, not tooling installed or workflows changed by
+this audit. Use the existing documentation pipeline when implementing them.
+
+Source checks suitable for Markdown linting:
+- Heading increment and single-title rules (for example markdownlint MD001,
+  MD025, MD041), with explicit KB/title-template exceptions.
+- Fence language rules (MD040), accepting existing C#, VB.NET, XAML, json,
+  powershell, and text conventions rather than forcing language renames.
+- Empty image labels (MD045) as review candidates, not an unconditional ban on
+  decorative images. Inspect HTML <img> attributes separately.
+- An approved parser-based link-text check; compare identical labels with
+  different targets within a rendered article and flag navigation bare URLs.
+  Account for fragments, conditional branches, and Liquid slug expressions.
+
+Documentation validation and editorial checks:
+- Require headers on real data tables; flag empty header/data cells and layout
+  tables for review. Avoid false positives on escaped pipes in code.
+- Warn on alt text matching filenames; require human confirmation of equivalent
+  information. Automation cannot author trustworthy screenshot descriptions.
+- Check iframe title presence, media alternative links, local asset existence,
+  and animated-asset metadata; test actual playback controls in rendered output.
+- Warn on unusually long prose sentences, inconsistent placeholders, untyped
+  callouts, and code blocks without nearby explanations. Keep these advisory:
+  adjacent language tabs and includes may share one introduction.
+
+CI/CD and repository policy:
+- Start with changed .md files AND their included templates/assets; expand
+  includes and WPF Liquid branches before rendered checks.
+- Run source checks for pull requests and repository-dispatch-created articles.
+  Report file, line, rule, and a suggested fix; do not silently rewrite content.
+- Preserve a legacy baseline and require an explanation for exceptions; ratchet
+  down debt by section instead of blocking every contribution on all 3,328 files.
+- Add a periodic documentation-only rendered audit for headings, table headers,
+  named frames, custom components, keyboard reading, and media alternatives.
+  Use browser accessibility validation as a supplement to human review.
+
+Infrastructure evidence:
+/home/runner/work/xaml-docs/xaml-docs/.github/workflows/publish-kb.yml:1–44
+contains a repository_dispatch publishing workflow, not an accessibility gate.
+/home/runner/work/xaml-docs/xaml-docs/docs-builder.yml:15–16,27–36
+configures tabbed code, external snippets, Liquid, and file exclusions.
+No checked-in Markdown lint/test configuration was found. This does not claim
+that external publishing infrastructure has no checks; it was not inspected.
+
+# Coverage Appendix
+
+Exact manually reviewed article paths (33; partial sections where cited are
+identified in findings; review does not certify every line as accessible):
+
+/home/runner/work/xaml-docs/xaml-docs/ai-assistant/mcp-server.md
+/home/runner/work/xaml-docs/xaml-docs/ai-assistant/overview.md
+/home/runner/work/xaml-docs/xaml-docs/breaking-changes/2025-breaking-changes.md
+/home/runner/work/xaml-docs/xaml-docs/common-information/consuming-data/linq-to-ado-net-entity-data-model.md
+/home/runner/work/xaml-docs/xaml-docs/common-information/consuming-data/overview.md
+/home/runner/work/xaml-docs/xaml-docs/common-information/consuming-data/using-data-virtualization.md
+/home/runner/work/xaml-docs/xaml-docs/common-information/troubleshooting/invisible-controls.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radchart/features/layout-mode.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/features/animations.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/getting-started/data-point.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-bollingerbandsindicator.md
+/home/runner/work/xaml-docs/xaml-docs/controls/raddataform/localization/localization.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radgridview/columns/celltemplate-and-celledittemplate.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radgridview/events/overview.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radgridview/getting-started/getting-started2.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radtabbedwindow/getting-started.md
+/home/runner/work/xaml-docs/xaml-docs/controls/radtreeview/populating-with-data/item-template.md
+/home/runner/work/xaml-docs/xaml-docs/developer-focused-examples/sdk-samples-browser.md
+/home/runner/work/xaml-docs/xaml-docs/getting-started/first-steps-nuget.md
+/home/runner/work/xaml-docs/xaml-docs/getting-started/video-onboarding.md
+/home/runner/work/xaml-docs/xaml-docs/installation/manual-setup-guides/nuget/package-source-setup.md
+/home/runner/work/xaml-docs/xaml-docs/installation/manual-setup-guides/telerik-cli.md
+/home/runner/work/xaml-docs/xaml-docs/installation/manual-setup-guides/visual-studio-extensions/extensions-overview.md
+/home/runner/work/xaml-docs/xaml-docs/knowledge-base/kb-add-additional-element-inside-radtabbedwindows-header.md
+/home/runner/work/xaml-docs/xaml-docs/knowledge-base/kb-common-missing-properties-or-exception-after-template-extraction.md
+/home/runner/work/xaml-docs/xaml-docs/knowledge-base/kb-installation-could-not-load-file-or-assembly-demos.md
+/home/runner/work/xaml-docs/xaml-docs/knowledge-base/kb-upgrade-migrate-to-net.md
+/home/runner/work/xaml-docs/xaml-docs/netcore/deploy-netcore-app.md
+/home/runner/work/xaml-docs/xaml-docs/security/useful-tips.md
+/home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/styling-apperance-editing-control-templates.md
+/home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/themes-suite/visualstudio2013.md
+/home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/xaml-vs-noxaml.md
+/home/runner/work/xaml-docs/xaml-docs/testing/appium/getting-started.md
+
+Additional partial included-reference review:
+/home/runner/work/xaml-docs/xaml-docs/_contentTemplates/glyphs-table.md:1–63
+/home/runner/work/xaml-docs/xaml-docs/_contentTemplates/ai-coding-assistant.md
+
+## Article scoring interpretation
+
+The companion JSON scores three manually reviewed examples, not all articles.
+Each object follows the required skill's eight-dimension format and computes
+sum(score × weight), rounded to one decimal. A dimension with no applicable
+source construct receives 5 with an explicit rationale; this does not certify
+rendered output. This convention can increase a short article's score, so scores
+must be read alongside findings and must not be averaged into a repository score.
+External snippet bodies and custom card rendering were not scored. The finding
+catalog is broader than this deliberately small illustrative scoring sample.

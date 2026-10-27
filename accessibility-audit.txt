@@ -52,9 +52,10 @@ _contentTemplates files. Contributor guidance and both shared templates were
 separately inspected where relevant; included content is part of the audit.
 No .github/agents content was reviewed.
 
-Thirty-three distinct articles received manual source review, selected across
-sections and issue categories, rather than as a random statistical sample.
-Their exact paths appear in the coverage appendix. Three referenced assets
+The primary manual source-review sample contains 33 distinct articles, selected
+across sections and issue categories rather than randomly. Three additional
+articles received citation-only checks of image declarations or a template
+include. Both lists appear in the coverage appendix. Three referenced assets
 were additionally inspected: one TabbedWindow screenshot, one TreeView binding
 screenshot, and the timing/loop metadata of one chart-animation GIF.
 Other asset findings concern the embedding source and surrounding prose,
@@ -608,7 +609,7 @@ that external publishing infrastructure has no checks; it was not inspected.
 
 # Coverage Appendix
 
-Exact manually reviewed article paths (33; partial sections where cited are
+Primary manually reviewed article paths (33; partial sections where cited are
 identified in findings; review does not certify every line as accessible):
 
 /home/runner/work/xaml-docs/xaml-docs/ai-assistant/mcp-server.md
@@ -644,6 +645,11 @@ identified in findings; review does not certify every line as accessible):
 /home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/themes-suite/visualstudio2013.md
 /home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/xaml-vs-noxaml.md
 /home/runner/work/xaml-docs/xaml-docs/testing/appium/getting-started.md
+
+Additional citation-only article checks (3):
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-overview.md:19
+/home/runner/work/xaml-docs/xaml-docs/controls/radchartview/indicators/indicators-averagetruerangeindicator.md:24
+/home/runner/work/xaml-docs/xaml-docs/styling-and-appearance/glyphs/common-styles-appearance-glyphs-reference-sheet.md:73
 
 Additional partial included-reference review:
 /home/runner/work/xaml-docs/xaml-docs/_contentTemplates/glyphs-table.md:1–63

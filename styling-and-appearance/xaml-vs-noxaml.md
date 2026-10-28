@@ -55,7 +55,9 @@ Alternatively, you check the Properties of the **Telerik.Windows.Controls.dll** 
 2. Go to the __Details__ tab in the Properties window.
 3. Check the __File description__ attribute. It should contain the Telerik.Windows.Controls + "(No XAML)" postfix if the dlls are NoXaml. Otherwise, there will be only the dll's name. 
 
-### Figure 1: Telerik.Windows.Controls.dll Properties
+<a id="figure-1-telerikwindowscontrolsdll-properties"></a>
+
+**Figure 1: Telerik.Windows.Controls.dll Properties**
 ![Telerik UI for WPF Telerik.Windows.Controls.dll properties in Visual Studio](images/xaml-vs-noxaml-0.png)
 
 ## See Also

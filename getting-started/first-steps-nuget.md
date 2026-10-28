@@ -124,7 +124,7 @@ Create a new WPF project in Visual Studio.
         src="images/chat_light_large.svg"
         title="Use Telerik AI Tools"
         darkSrc="images/chat_dark_large.svg"
-        description="Telerik UI for WPF artificial intelligence (AI)-powered development assistance through a unified MCP server that delivers intelligent, context-aware help directly in your integrated development environment (IDE).">
+        description="Get artificial intelligence (AI)-powered help through a unified MCP server, directly in your integrated development environment (IDE).">
     </article-card>
     <article-card
         href="/introduction#list-of-components"

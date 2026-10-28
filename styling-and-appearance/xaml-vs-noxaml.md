@@ -29,7 +29,7 @@ The Xaml dlls contain the same code as the NoXaml ones, but they hold also all t
 
 Using Xaml dlls allows you to set up your project a bit easier and __set the controls UI theme very easily__ by setting a single property. Read more about this in the [implicit-styles theming guide]({%slug styling-apperance-implicit-styles-overview%}). 
 
-> Application theme change at run-time is supported only by the NoXaml assemblies and Implicit Styles theming mechanism. With Xaml and StyleManager, you can change the theme only per control during the run-time. This is done via the `StyleManager.Theme` attached property. 
+>note Application theme change at run-time is supported only by the NoXaml assemblies and Implicit Styles theming mechanism. With Xaml and StyleManager, you can change the theme only per control during the run-time. This is done via the `StyleManager.Theme` attached property.
 
 ## NoXaml assemblies
 
@@ -37,7 +37,13 @@ The NoXaml dlls have the same code as the Xaml ones, but they don't contain any 
 
 The benefit of using NoXaml is that you get full __design-time support__ when a theme different from the default one (Office_Black) is used.
 
->important Because the NoXaml dlls apply the control styles implicitly, when you create a custom control deriving from a Telerik control you will need to create a custom style and base it on the default control style. For example a control deriving from **RadCartesianChart** should have a Style that targets the custom control and it is based on **RadCartesianChartStyle**. The same applies for any custom implicit styles targeting Telerik controls. You need to base them on the default control style, otherwise they will be completely overridden and all setters and templates originally applied to the controls will be lost. You can read more about this in the [guide to styling Telerik controls]({%slug implicit-styles-styling-the-controls%}).
+>important NoXaml dlls apply control styles implicitly. Base custom styles on the default control style to preserve its setters and templates.
+>
+> * For a custom control derived from a Telerik control, create a Style that targets the custom control and is based on the default control style.
+> * For example, a control derived from **RadCartesianChart** needs a Style based on **RadCartesianChartStyle**.
+> * Apply the same rule to custom implicit styles targeting Telerik controls.
+>
+> Without this base style, the default style is completely overridden, and its setters and templates are lost. For details, see the [guide to styling Telerik controls]({%slug implicit-styles-styling-the-controls%}).
 
 ## How to check the assemblies version
 
@@ -49,7 +55,7 @@ Alternatively, you check the Properties of the **Telerik.Windows.Controls.dll** 
 2. Go to the __Details__ tab in the Properties window.
 3. Check the __File description__ attribute. It should contain the Telerik.Windows.Controls + "(No XAML)" postfix if the dlls are NoXaml. Otherwise, there will be only the dll's name. 
 
-#### Figure 1: Telerik.Windows.Controls.dll Properties
+### Figure 1: Telerik.Windows.Controls.dll Properties
 ![Telerik UI for WPF Telerik.Windows.Controls.dll properties in Visual Studio](images/xaml-vs-noxaml-0.png)
 
 ## See Also

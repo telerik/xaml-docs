@@ -59,7 +59,7 @@ __Example 1: Wrap a query in a VirtualQueryableCollectionView__
 
 In the example above Entity Framework is used. However, you may use Linq to SQL, OpenAccess or any other Linq provider in the same manner.
 
->When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
+>note When __ScrollMode is configured as Deferred__, a __ScrollPositionIndicator__ is shown as the user scrolls vertically. Its content is empty until the user releases the scrollbar and the items are loaded. To hide the indicator permanently, define a Style for it that sets its Opacity to 0.
 
 {% else %}
 
@@ -93,6 +93,8 @@ __Example 1: Using data virtualization with WCF RIA Services__
 
 {% endif %}
 
+Bind RadGridView to the virtual collection set as the DataContext in Example 1.
+
 __Example 2: Binding RadGridView__
 
 ```XAML
@@ -101,19 +103,19 @@ __Example 2: Binding RadGridView__
 
 The controls that currently support data virtualization are __RadGridView__, __RadComboBox__, __RadTreeView__{% if site.site_name == 'WPF' %}, __RadCarousel__{% endif %}, {% if site.site_name == 'Silverlight' %}__RadCoverFlow__{% endif %} and __RadBook__.
 
->**Filtering** is only supported with **IQueryable** data sources.
+>important Filtering is only supported with **IQueryable** data sources.
 
->**Filtering** on Distinct Values is not fully supported when using the **VirtualQueryableCollectionView**. We suggest configuring GridViewDataColumn with __ShowDistinctFilters="False"__. That way only filtering through the Field Filters will be enabled. You can check the [basic filtering]({%slug gridview-filtering-basic%}) section as a reference on the filtering support. There you can also find more information on how to filter through the __Field Filters__.         
+>important Filtering on Distinct Values is not fully supported when using **VirtualQueryableCollectionView**. We suggest configuring GridViewDataColumn with __ShowDistinctFilters="False"__. That way only filtering through the Field Filters will be enabled. See [basic filtering]({%slug gridview-filtering-basic%}) for more information about filtering support and Field Filters.
 
 ## ItemsLoading event
 __ItemsLoading__ event will be raised if you try to access some item by index and this item is not yet loaded. When you scroll down, the ItemsLoading event will be called and the empty(null) items in the collection will be replaced with the new items. When an item is already loaded the collection will not call ItemsLoading event for this item.
         
 >important When you provide IQueryable in the VirtualQueryableCollectionView you do not need to handle the ItemsLoading event.
 
->When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
+>note When __ScrollMode is configured as Deferred__, a __ScrollPositionIndicator__ is shown as the user scrolls vertically. Its content is empty until the user releases the scrollbar and the items are loaded. To hide the indicator permanently, define a Style for it that sets its Opacity to 0.
 
 {% if site.site_name == 'Silverlight' %}
-Check out the online demo [here.](https://demos.telerik.com/silverlight/#DataVirtualization/FirstLook)
+Explore the [Data Virtualization online demo](https://demos.telerik.com/silverlight/#DataVirtualization/FirstLook).
 
 You can also check those additional blogs:
 

@@ -24,15 +24,23 @@ Here is a list of the supported languages:
 * Dutch             
 * Turkish
 
->To learn more about the ways to localize the RadControls please read the common topic about
+>note For instructions on translating control text, see [Localization for Telerik UI controls]({%slug common-localization%}).
 
 ## Resource Keys
 
-In order to be able to distinguish the localization resources, an unique identifier, called __resource key__, is assigned to each localizable string.
+Each localizable string has a unique identifier called a __resource key__.
         
 Here is a list of the __Resources__ available and their default values:
         
-<table><tr><td>Key</td><td>Value</td></tr><tr><td>DataForm_MoveCurrentToFirst</td><td>First</td></tr><tr><td>DataForm_MoveCurrentToPrevious</td><td>Previous</td></tr><tr><td>DataForm_MoveCurrentToNext</td><td>Next</td></tr><tr><td>DataForm_MoveCurrentToLast</td><td>Last</td></tr><tr><td>DataForm_AddNew</td><td>Add</td></tr><tr><td>DataForm_BeginEdit</td><td>Edit</td></tr><tr><td>DataForm_Delete</td><td>Delete</td></tr></table>
+| Resource key | Default text |
+| --- | --- |
+| DataForm_MoveCurrentToFirst | First |
+| DataForm_MoveCurrentToPrevious | Previous |
+| DataForm_MoveCurrentToNext | Next |
+| DataForm_MoveCurrentToLast | Last |
+| DataForm_AddNew | Add |
+| DataForm_BeginEdit | Edit |
+| DataForm_Delete | Delete |
 
 ## See Also
 

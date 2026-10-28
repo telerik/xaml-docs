@@ -11,32 +11,34 @@ position: 0
 
 # First Steps with Telerik UI for WPF
 
+This guide helps you create a Windows Presentation Foundation (WPF) project and add Telerik controls.
+
 ## Prerequisites
 
 Before you start, make sure to:
 
 1. Install Visual Studio with the `.NET desktop development` workload.
-1. Install [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
+1. Install the [.NET 8.0 Software Development Kit (SDK)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 
 ## Set Up Telerik Development Environment
 
 >tip If you have already set up your Telerik development environment and it doesn't need updating, skip to [create the WPF project](#create-the-wpf-project).
 
-The fastest way to set up your Telerik development environment is to use the [Telerik CLI]({%slug telerik-cli%}) .NET tool commands in a command shell (cmd, PowerShell, etc.).
+The fastest way to set up your Telerik development environment is to use the [Telerik command-line interface (CLI)]({%slug telerik-cli%}) .NET tool commands in a command shell (cmd, PowerShell, etc.).
 
 1. Install Telerik CLI
 
-	```
+	```powershell
 	dotnet tool install -g Telerik.CLI
 	```
 
 1. Run the `telerik setup wpf` command
 
-	```
+	```powershell
 	telerik setup wpf
 	```
 
-The `setup` command performs [multiple Telerik CLI setup steps at once]({%slug telerik-cli%}) to configure your Telerik development environment - login, license key installation, NuGet package source configuration and MCP server setup.
+The `setup` command performs [multiple Telerik CLI setup steps at once]({%slug telerik-cli%}) to configure your Telerik development environment: login, license key installation, NuGet package source configuration, and Model Context Protocol (MCP) server setup.
 
 ## Create the WPF Project
 
@@ -55,7 +57,9 @@ Create a new WPF project in Visual Studio.
 1. In the __Package source__ drop down menu on the right, make sure to select the Telerik NuGet package source or the __All__ option.
 1. Search for `Telerik.UI.for.Wpf.AllControls.Xaml` and install it in the project.
 
-	```
+	The installed package is referenced in the project file as follows:
+
+	```xml
 	<PackageReference Include="Telerik.UI.for.Wpf.AllControls.Xaml" Version="*" />
 	```
 
@@ -65,7 +69,7 @@ Create a new WPF project in Visual Studio.
 
 1. Open the `MainWindow.xaml` file.
 
-1. Add the `telerik` schema in XAML.
+1. Add the `telerik` schema in Extensible Application Markup Language (XAML).
 
 	```xaml
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -120,7 +124,7 @@ Create a new WPF project in Visual Studio.
         src="images/chat_light_large.svg"
         title="Use Telerik AI Tools"
         darkSrc="images/chat_dark_large.svg"
-        description="Telerik UI for WPF AI-powered development assistance through a unified MCP server that delivers intelligent, context-aware help directly in your IDE.">
+        description="Telerik UI for WPF artificial intelligence (AI)-powered development assistance through a unified MCP server that delivers intelligent, context-aware help directly in your integrated development environment (IDE).">
     </article-card>
     <article-card
         href="/introduction#list-of-components"

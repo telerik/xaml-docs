@@ -12,9 +12,9 @@ tag: new
 
 # Setup and Installation with Telerik CLI
 
-The Telerik CLI is a .NET global tool that automates common Telerik development tasks from the command line. Use the Telerik CLI to configure the Telerik NuGet package source, create new projects from Telerik templates, and update Telerik UI for WPF packages without opening Visual Studio.
+The Telerik command-line interface (CLI) is a .NET global tool that automates common Telerik development tasks from the command line. Use the Telerik CLI to configure the Telerik NuGet package source, create new projects from Telerik templates, and update Telerik UI for WPF packages without opening Visual Studio.
 
-The Telerik CLI requires the .NET SDK (version 6.0 or later) and a valid Telerik account with an active Subscription or Trial license.
+The Telerik CLI requires the .NET Software Development Kit (SDK), version 6.0 or later, and a valid Telerik account with an active Subscription or Trial license.
 
 ## Command Reference
 
@@ -48,7 +48,7 @@ The `dotnet tool install` command provides a few ways for you to install .NET to
 * To install the Telerik CLI in a custom location, use the `--tool-path` option.
 * To install the Telerik CLI in the current folder only, omit the `-g` and `--tool-path` options.
 
-#### Verify Telerik CLI Installation
+### Verify Telerik CLI Installation
 
 To verify the installation:
 
@@ -56,7 +56,9 @@ To verify the installation:
 dotnet tool list -g
 ```
 
-#### Update Telerik CLI
+The installation is verified when the list includes `telerik.cli` with its installed version and the `telerik` command.
+
+### Update Telerik CLI
 
 To update to the latest version:
 
@@ -118,7 +120,7 @@ The `login` command opens `https://identity.telerik.com` in a browser window whe
 
 If this browser integration fails due to security or network restrictions, you can authenticate manually by using the `--no-browser` option.
 
-#### Using `--no-browser` (Manual Authentication)
+### Using `--no-browser` (Manual Authentication)
 
 If automatic browser-based authentication is blocked (for example, by corporate network policies, restricted browsers, or headless CI environments), use the `--no-browser` switch to perform a manual login flow:
 
@@ -136,7 +138,7 @@ After successful authentication, the browser will display a confirmation message
 
 The Telerik CLI stores a session token in `%AppData%\Telerik`. The session token is valid for one month.
 
-#### Check Login State
+### Check Login State
 
 To see which Telerik user is logged in the CLI, use the `whoami` command:
 
@@ -146,7 +148,7 @@ telerik whoami
 
 The CLI will output your Telerik user account email.
 
-#### Log Out from Your Telerik Account
+### Log Out from Your Telerik Account
 
 To log out from the Telerik CLI, use the `logout` command.
 
@@ -181,6 +183,8 @@ You can also fine-tune the process with the following options:
 
 * Specify which Telerik products you are interested in, for example, just `wpf`.
 * `--ide` specifies your preferred IDE. The supported values are `visualstudio`, `vscode`, `cursor`, and `all`.
+
+For example, run the following command to configure only the WPF MCP server for Visual Studio:
 
 ```powershell
 telerik mcp config wpf --ide visualstudio
@@ -263,7 +267,7 @@ telerik nuget config
 
 By default, the `nuget config` command updates your [global `NuGet.Config` file](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior). The newly added Telerik NuGet feed name is `TelerikNuGetV3`. The command generates a new API key that you can delete and revoke from the [API Keys page in your Telerik account](https://www.telerik.com/account/downloads/api-keys).
 
-> Telerik NuGet API keys expire in two years.
+>note Telerik NuGet API keys expire in two years.
 
 You can use the `nuget config` command with the following options:
 
@@ -271,13 +275,15 @@ You can use the `nuget config` command with the following options:
 * `--api-key` to provide an existing Telerik NuGet API key inline, otherwise the CLI generates a new one.
 * `--force` to overwrite any existing Telerik credentials in the `NuGet.Config` file.
 
+For example, run the following command to update the project-level configuration in the current folder and overwrite existing Telerik credentials:
+
 ```powershell
 telerik nuget config --scope project --path . --force
 ```
 
 ## Analyze Breaking Changes When Upgrading
 
-To scan a Telerik UI for WPF project for API breaking changes before upgrading to a newer version, use the `migrate analyze` command:
+To scan a Telerik UI for WPF project for API breaking changes before upgrading to a newer version, use the `migrate analyze` command. Replace `./MyWpfApp.csproj` with the path to your project file:
 
 ```powershell
 telerik migrate analyze --product wpf --project ./MyWpfApp.csproj
@@ -299,7 +305,7 @@ telerik nuget -h
 telerik nuget config -h
 ```
 
-#### Uninstall Telerik CLI
+## Uninstall Telerik CLI
 
 To uninstall the Telerik CLI:
 

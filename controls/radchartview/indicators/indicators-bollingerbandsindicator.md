@@ -21,8 +21,11 @@ __Example 1: Defining BollingerBandsIndicator__
 <snippet id='radchartview-indicators-indicators-bollingerbandsindicator-example_1_defining_bollingerbandsindicator-xaml' />
 
 
-#### Figure 1: BollingerBandsIndicator
-<img src="images/radchartview-indicators-bollingerbandsindicator-0.png" style="width: 80%;">
+<a id="figure-1-bollingerbandsindicator"></a>
+
+**Figure 1: BollingerBandsIndicator**
+
+<img src="images/radchartview-indicators-bollingerbandsindicator-0.png" alt="Chart showing the upper and lower Bollinger bands across date categories." style="width: 80%;">
 
 >tip The indicator can be set up the same way as a normal [chart series]({%slug radchartview-series-chartseries%}). This is why you can populate it using the same approach as shown in the [Data Bind to Data-Object]({%slug radchartview-series-databinding%}) article. You can set the corresponding value binding properties - for example, ValueBinding, CategoryBinding, HighBinding, CloseBinding, etc, and also the ItemsSource.
 

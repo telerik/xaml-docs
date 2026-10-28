@@ -12,19 +12,19 @@ glyphs_reference_sheet: True
 
 # Glyphs Reference Sheet
 
-Use this reference sheet to find the available glyphs in the `TelerikWebUI` font and the values you need to use them in XAML or code. The generated table below lists each glyph name together with its numeric and string values.
+Use this reference sheet to find the available glyphs in the `TelerikWebUI` font and the values you need to use them in XAML or code. The generated tables below list each glyph name together with its numeric and string values.
 
 For the general glyph concepts, supported scenarios, and additional examples, see the [Font Glyphs]({%slug common-styling-appearance-glyphs-overview%}) overview for Telerik UI for WPF.
 
 ## How to Use This Reference Sheet
 
-Use the table on this page in the following way:
+Use the tables on this page in the following way:
 
 * Use the glyph name when you want a readable static resource such as `GlyphCalendar` or `GlyphDownload`.
 * Use the string or numeric value when you need to generate or convert a glyph in code.
 * Prefer the glyph name over a hard-coded numeric value when possible because the resource name is easier to read and maintain.
 
-The glyphs marked with `*` in the last column were introduced with the **R2 2022** release.
+The last column identifies glyphs introduced with the **R2 2022** release as `Yes (R2 2022) *`. `No` means the glyph is not marked as introduced in that release.
 
 ## Use a Glyph from the Table
 
@@ -68,7 +68,9 @@ __Example 4: Use TelerikFluentIcons for a glyph__
 
 ## Glyph List
 
-Search the table by glyph name when you know the icon you want to use, or compare the string and numeric values when you need to work with glyphs programmatically.
+The tables are grouped by category. Each row compares the TelerikFluentIcons and TelerikWebUI previews and lists the glyph name, number, string value, and R2 2022 release status. Each preview has an accessible label identifying its font and glyph name.
+
+Search by glyph name when you know the icon you want to use, or compare the string and numeric values when you need to work with glyphs programmatically.
 
 @[template](/_contentTemplates/glyphs-table.md#reference-sheet-table)
 

@@ -19,7 +19,7 @@ To use __RadTabbedWindow__ when working with NuGet packages, install the `Teleri
 
 Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+>tip With the 2025 Q1 release, Telerik UI for WPF has a new licensing mechanism. See [Installing a License Key]({%slug installing-license-key%}) for setup instructions.
 
 ## Adding Assembly References Manually
 
@@ -32,11 +32,11 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 ## Adding RadTabbedWindow to the Project
 
-Start by creating a new WPF window using Visual Studio's item template.
+In Visual Studio, open the project's **Add New Item** dialog. Select **Window (WPF)**, name it **TabbedWindow**, and select **Add**.
 
 __Add new WPF Window__
 
-![](images/add-new-window.png)
+![Visual Studio Add New Item dialog for creating TabbedWindow with the Window (WPF) template.](images/add-new-window.png)
 
 After this, replace the generated Window declaration with the following XAML code:
 
@@ -60,11 +60,11 @@ __Example 3: Open RadTabbedWindow on application startup__
 <snippet id='radtabbedwindow-getting-started-block_4-cs' />
 <snippet id='radtabbedwindow-getting-started-block_5-vb' />
 
-If you run the application, you will see the RadTabbedWindow control illustrated in __Figure 2__. 
+Run the application to display an empty RadTabbedWindow with no tabs, as shown below.
 
 __Empty RadTabbedWindow__
 
-![](images/tabbedwindow-getting-started-1.png)
+![RadTabbedWindow before any tab items are added.](images/tabbedwindow-getting-started-1.png)
 
 >important If you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) theming mechanism with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), note that the newly created window will not automatically receive the default style. In order for this to happen, you should add the following style after the merged dictionaries:
 
@@ -80,17 +80,17 @@ __Example 5: Adding Tabs to RadTabbedWindow in XAML__
 
 <snippet id='radtabbedwindow-getting-started-block_7-xaml' />
 
-Upon running the application, your RadTabbedWindow should now be populated with tabs as shown on **Figure 3**.
+Run the application to display the **Microsoft**, **Google**, and **Progress** tabs. The selected **Microsoft** tab displays **Microsoft Content**.
 
 __RadTabbedWindow with tabs__
 
-![](images/tabbedwindow-getting-started-2.png)
+![RadTabbedWindow with three tabs and the first tab selected.](images/tabbedwindow-getting-started-2.png)
 
 Alternatively, you can set the **ItemsSource** property of the control or bind it to a collection in your viewmodel. You can find an example of how to do this in the [Data Binding]({%slug radtabbedwindow-data-binding%}) article.
 
 ## Setting a Theme
 
-The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
+The controls from our suite support different themes. See [Applying a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) for instructions.
 
 >important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
 
@@ -108,11 +108,11 @@ __Example 6__ demonstrates how to merge the resource dictionaries so that they a
 __Example 6: Merge the ResourceDictionaries__  
 <snippet id='radtabbedwindow-getting-started-block_8-xaml' />
 
-__Figure 4__ shows __RadTabbedWindow__ with the **Windows8** theme applied.
+The following screenshot shows the tabbed window after applying the **Windows8** theme. The selected tab still displays **Microsoft Content**.
 	
 __RadTabbedWindow with the Windows8 theme__
 
-![](images/tabbedwindow-getting-started-3.png)
+![RadTabbedWindow styled with the Windows8 theme.](images/tabbedwindow-getting-started-3.png)
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
@@ -122,7 +122,7 @@ __RadTabbedWindow with the Windows8 theme__
 * [Telerik UI for WPF Installation]({%slug installation-guide%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
 * [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
-* [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Applying a Theme with Implicit Styles]({%slug styling-apperance-implicit-styles-overview%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}

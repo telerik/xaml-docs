@@ -10,11 +10,11 @@ position: 1
 
 # SDK Samples Browser 
 
-![sdk-samples-browser-1](images/sdk-samples-browser-1.png)
+![SDK Browser application logo.](images/sdk-samples-browser-1.png)
 
-The SDK Samples Browser is an application that automatically connects to GitHub and downloads the [XAML SDK repository](https://github.com/telerik/xaml-sdk/) locally to a location that could be set by the user. After download is complete the application gives a very convenient navigation between all the available examples and a search functionality which doesn’t simply search by control’s names but also through the example’s names and descriptions.
+The Software Development Kit (SDK) Samples Browser downloads the [XAML SDK repository](https://github.com/telerik/xaml-sdk/) from GitHub to a local folder you choose. It lets you browse examples and search by control name, example name, or description.
             
-You can download the application from [here](https://demos.telerik.com/xaml-sdkbrowser/).
+Download the [SDK Samples Browser application](https://demos.telerik.com/xaml-sdkbrowser/).
            
 Some of its __key features__ are:            
 
@@ -30,20 +30,23 @@ Some of its __key features__ are:
 
 ## Getting Started with SDK Samples Browser
            
-Using the SDK Samples Browser has very limited __requirements__ in order to make all of the examples runnable out of the box. You will need to make sure to either:
+To run the examples, meet one of these requirements:
                 
-* Have the latest {% if site.site_name == 'WPF' %}[ Telerik UI for WPF ](http://www.telerik.com/products/wpf/download.aspx){% else %}[ Telerik UI for Silverlight ](http://www.telerik.com/products/silverlight/download.aspx){% endif %} are installed in the environment
+* Install the latest {% if site.site_name == 'WPF' %}[Telerik UI for WPF](http://www.telerik.com/products/wpf/download.aspx){% else %}[Telerik UI for Silverlight](http://www.telerik.com/products/silverlight/download.aspx){% endif %}.
                 
-* Or if already have it installed, provide a valid path to where all of the {% if site.site_name == 'WPF' %}Telerik WPF {% else %}Telerik Silverlight {% endif %}assemblies can be found.                        
+* If it is already installed, provide a valid path to the {% if site.site_name == 'WPF' %}Telerik WPF{% else %}Telerik Silverlight{% endif %} assemblies.
 
 ## Browsing the Available Controls
             
-In the main screen of the SDK Samples Browser you can easily navigate through the available controls in the SDK repository. The controls are represented by tiles in a RadTileList control. Each tile gives a quick glance information about the number of available examples.
-{% if site.site_name == 'WPF' %}![sdk-samples-browser-3](images/sdk-samples-browser-3.jpg){% else %}![sdk-samples-browser-3-sl](images/sdk-samples-browser-3-sl.png){% endif %}
+The main screen lists controls as tiles in a RadTileList. Each tile displays the number of available examples.
+
+{% if site.site_name == 'WPF' %}![WPF control tiles, including GanttView, Gauge, and ImageEditor, with example counts.](images/sdk-samples-browser-3.jpg){% else %}![Silverlight control tiles, including GanttView, Gauge, and ImageEditor, with example counts.](images/sdk-samples-browser-3-sl.png){% endif %}
 
 ## Browsing Through Control Examples
             
-After selecting a control from the main screen of the application you will be navigated to the examples screen. In this screen you can easily navigate through the available examples for that control which are displayed on the left side in a RadListBox control. On the other side is the corresponding __example’s description__, __Open Folder__, __Open in VS__ and __Run buttons__.{% if site.site_name == 'WPF' %}![sdk-samples-browser-4](images/sdk-samples-browser-4.jpg){% else %}![sdk-samples-browser-4-sl](images/sdk-samples-browser-4-sl.png){% endif %}
+Select a control to open its examples screen. Choose an example from the list to read its description. Use __Open Folder__ to locate its files, __Open in VS__ to open it in Visual Studio, or __Run__ to build and run it.
+
+{% if site.site_name == 'WPF' %}![WPF GanttView examples screen with the custom cell template example selected.](images/sdk-samples-browser-4.jpg){% else %}![Silverlight GanttView examples screen with the custom cell template example selected.](images/sdk-samples-browser-4-sl.png){% endif %}
 
 ## Building/Running an Example
             
@@ -51,7 +54,7 @@ By clicking the __Run__ button the application will show an indicator that says 
                 
 ## Changing the Settings
             
-After the browser application has been started and the repository has been downloaded you can access the settings screen by clicking the settings (the gear) icon on the top right corner. After clicking it you will be navigated to the Settings screen. In that screen you can change:
+After the repository download completes, select the __Settings__ (gear) button in the navigation bar. The Settings screen lets you change:
                 
 * __Platform__&mdash;The platform for which the SDK examples should be loaded
                         
@@ -65,6 +68,6 @@ After the browser application has been started and the repository has been downl
 
 * __Open Projects with__&mdash;Determines which installed Visual Studio should be used to open SDK example projects with the "Open in VS" button                        
 
-Checking for updated could be done at any time while the SDK Samples Browser application is running by clicking the __Check for Updates__ button in the navigation bar.   
+To check for updates while the application is running, select __Check for Updates__ in the navigation bar.
 
-{% if site.site_name == 'WPF' %}![sdk-samples-browser-5](images/sdk-samples-browser-5.png){% else %}![sdk-samples-browser-5-sl](images/sdk-samples-browser-5-sl.png){% endif %}
+{% if site.site_name == 'WPF' %}![Settings screen with WPF selected, assembly and repository paths, update preference, and Visual Studio selection.](images/sdk-samples-browser-5.png){% else %}![Settings screen with Silverlight selected, assembly and repository paths, update preference, and Visual Studio selection.](images/sdk-samples-browser-5-sl.png){% endif %}

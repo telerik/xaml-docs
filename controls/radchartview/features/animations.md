@@ -11,7 +11,7 @@ position: 1
 
 # Animations
 
-With the __R2 2018__ version of our controls, you can now animate RadChartView series and their points. The series and the points can be animated using either built-in or custom animation effects. To animate the series or the points first you need to set the __SeriesAnimation__ and/or __PointAnimation__ property with your animation. Depending on which element you want to animate (Series,Points or Both) you can call the __PlaySeriesAnimation()__ and __PlayPointAnimations()__ methods. 
+Since __R2 2018__, RadChartView supports built-in and custom animations for series and their points. Set __SeriesAnimation__, __PointAnimation__, or both to the animation you want to use. Call __PlaySeriesAnimation()__ or __PlayPointAnimations()__ to animate the corresponding elements.
 
 * [Animation Types](#animation-types)
 	* [Animation Base Class](#animation-base-class)
@@ -27,15 +27,19 @@ With the __R2 2018__ version of our controls, you can now animate RadChartView s
 * [Series Animations Support](#series-animations-support)
 * [Notes](#notes)
 
-#### __Figure 1: Chart Animations__
+<a id="figure-1-chart-animations"></a>
+
+Animations change the position, visibility, size, or pie geometry of chart elements over time. The sections below describe each effect and its settings.
+
+>caption Figure 1: Chart animations
+
 ![Telerik UI for WPF RadChartView Chart Animation Demonstration](images/radchartview-features-animations-main-animations.gif)
 
 ## Animation Types
 
 There are several different built-in animations which can be used to animate the chart series and their points. Each animation allows you to apply duration, delay and an easing function to its animated effect. The easing functions make the animation much more realistic and smoother. There is a set of predefined easing functions in WPF and you are allowed to create custom ones, too.
 
->To learn more about the easing functions you can take a look at this [MSDN help article](
-https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPError=-2147217396).
+>note For more information, see Microsoft's [Easing Functions documentation](https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPError=-2147217396).
 
 ### Animation Base Class
 
@@ -59,7 +63,12 @@ __Example 1: Setting move animation in XAML__
 <snippet id='radchartview-features-animations-example_1_setting_move_animation_in_xaml-xaml' />
 
 
-#### __Figure 2: This animation look as follows__
+<a id="figure-2-this-animation-look-as-follows"></a>
+
+Series or points slide from the selected side of the plot area to their plotted positions.
+
+>caption Figure 2: Move animation
+
 ![Telerik UI for WPF RadChartView Move Animation](images/radchartview-features-animations-MoveAnimation.gif)
 
 ### Reveal Animation
@@ -77,7 +86,12 @@ __Example 2: Setting reveal animation in XAML__
 <snippet id='radchartview-features-animations-example_2_setting_reveal_animation_in_xaml-xaml' />
 
 
-#### __Figure 3: This animation look as follows__
+<a id="figure-3-this-animation-look-as-follows"></a>
+
+A horizontal or vertical clipping effect reveals or hides the series and points, according to __AnimationDirection__ and __Orientation__.
+
+>caption Figure 3: Reveal animation
+
 ![Telerik UI for WPF RadChartView Reveal Animation](images/radchartview-features-animations-reveal-animation.gif)
 
 ### Fade Animation
@@ -91,7 +105,12 @@ __Example 3: Setting fade animation in XAML__
 <snippet id='radchartview-features-animations-example_3_setting_fade_animation_in_xaml-xaml' />
 
 
-#### __Figure 4: This animation look as follows__
+<a id="figure-4-this-animation-look-as-follows"></a>
+
+Series and points become visible as their opacity changes from __MinOpacity__ to __MaxOpacity__.
+
+>caption Figure 4: Fade animation
+
 ![Telerik UI for WPF RadChartView Fade Animation](images/radchartview-features-animations-fade-animation.gif)
 
 ### Drop and Fade Animation
@@ -102,7 +121,12 @@ __Example 4: Setting drop and fade animation in XAML__
 <snippet id='radchartview-features-animations-example_4_setting_drop_and_fade_animation_in_xaml-xaml' />
 
 
-#### __Figure 5: This animation look as follows__
+<a id="figure-5-this-animation-look-as-follows"></a>
+
+The move effect is combined with a fade-in effect, so chart elements move into position while becoming visible.
+
+>caption Figure 5: Drop and fade animation
+
 ![Telerik UI for WPF RadChartView Drop-Fade Animation](images/radchartview-features-animations-drop-fade-animation.gif)
 
 ### Scale Animation
@@ -121,12 +145,17 @@ __Example 5: Setting scale animation in XAML__
 <snippet id='radchartview-features-animations-example_5_setting_scale_animation_in_xaml-xaml' />
 
 
-#### __Figure 6: This animation look as follows__
+<a id="figure-6-this-animation-look-as-follows"></a>
+
+Series and points change size from __MinScale__ to __MaxScale__, horizontally, vertically, or in both directions.
+
+>caption Figure 6: Scale animation
+
 ![Telerik UI for WPF RadChartView Scale Animation](images/radchartview-features-animations-scale-animation.gif)
 
 ### Pie Chart Angle Range Animation
 
-> The __PieChartAngleRangeAnimation__ build-in animation will animate the __AngleRange__ property of the PieSeries and needs to be set to __SeriesAnimation__ property.
+>important Set __PieChartAngleRangeAnimation__ on the __SeriesAnimation__ property to animate the __AngleRange__ of the PieSeries.
 
 The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the PieSeries. It animates simultaneously the __StartAngle__ and __SweepAngle__ properties of the __AngleRange__. The __StartAngle__ specifies the start angle from which the arc starts and the __SweepAngle__ specifies the angle that defines the length of the arc. Their default value is __(0,360)__. The first animation will animates the rotation of the pie starting from __InitialStartAngle(-90)__  to  __StartAngle(0)__  and second animation will animate the unroll of the series staring from __InitialSweepAngle(0)__  to __SweepAngle(360)__.
 
@@ -137,12 +166,17 @@ __Example 6: Setting pie chart angle range animation in XAML__
 <snippet id='radchartview-features-animations-example_6_setting_pie_chart_angle_range_animation_in_xaml-xaml' />
 
 
-#### __Figure 7: This animation look as follows__
+<a id="figure-7-this-animation-look-as-follows"></a>
+
+The pie rotates from its initial start angle and unrolls from its initial sweep angle to the configured __AngleRange__.
+
+>caption Figure 7: Pie chart angle range animation
+
 ![Telerik UI for WPF RadChartView Pie Chart Angle Range Animation](images/radchartview-features-animations-pie-angle-range-animation.gif)
 
 ### Pie Chart Radius Factor Animation
 
->The __PieChartRadiusFactorAnimation__ build-in animation will animate the __RadiusFactor__ property of the PieSeries and needs to be set to __SeriesAnimation__ property.
+>important Set __PieChartRadiusFactorAnimation__ on the __SeriesAnimation__ property to animate the __RadiusFactor__ of the PieSeries.
 
 The __PieChartRadiusFactorAnimation__ animates the __RadiusFactor__ property of the PieSeries. The animation stars from 0 to the value of the __RadiusFactor__ property.
 
@@ -150,23 +184,35 @@ __Example 7: Setting pie chart radius factor animation in XAML__
 <snippet id='radchartview-features-animations-example_7_setting_pie_chart_radius_factor_animation_in_xaml-xaml' />
 
 
-#### __Figure 8: This animation look as follows__
+<a id="figure-8-this-animation-look-as-follows"></a>
+
+The pie grows from a radius factor of zero to the configured __RadiusFactor__.
+
+>caption Figure 8: Pie chart radius factor animation
+
 ![Telerik UI for WPF RadChartView Pie Chart Radius Factor Animation](images/radchartview-features-animations-pie-radius-factor-animation.gif)
 
 ## Custom Animation
 
-All built-in animation of the chart derives from __ChartAnimationBase__. In order to create a custom animation, you need to define a custom class which derives from this base class. This class provides __BuildPointAnimation()__ and __BuildSeriesAnimation()__ methods which can be overridden so you can create your own animation. __Example 2__ demonstrate custom point animation.
+To create a custom animation, derive a class from __ChartAnimationBase__. Override __BuildPointAnimation()__ or __BuildSeriesAnimation()__ to define the effect. __Example 8__ demonstrates a custom point animation.
 
 __Example 8: Custom point animation__
 <snippet id='radchartview-features-animations-example_8_custom_point_animation-cs' />
 
 
+Assign the custom animation in XAML as follows.
+
 __Example 8: Setting custom animation in XAML__
 <snippet id='radchartview-features-animations-example_8_setting_custom_animation_in_xaml-xaml' />
 
 
-#### __Figure 9: This custom animation look as follows__
-![Telerik UI for WPF RadChartView Custom Chart Animation](images/radchartview-features-animations-custom-animation.gif)
+<a id="figure-9-this-custom-animation-look-as-follows"></a>
+
+The custom point animation is defined in Example 8 and assigned through XAML. Use the code example to examine the animation without playing it.
+
+>caption Figure 9: Custom animation
+
+![Telerik UI for WPF RadChartView Custom Chart Animation](images/radchartview-features-animations-custom-animation.gif).
 
 ## Events
 
@@ -179,6 +225,7 @@ This section covers the events exposed for the animation.
 The RadChartView series supports animations for its series and data points. Depending on the type of the series, the supported animation can be SeriesAnimation or PointAnimation, or as in some series, both.
 
 ### CartesianChart Series	
+
 | Series | Series Animation | Point Animation |
 |---------|---------|---------|
 | Area Series | YES | YES |
@@ -203,12 +250,14 @@ The RadChartView series supports animations for its series and data points. Depe
 | Step Line Series | YES | YES |
 
 ### PieChart Series
+
 | Series | Series Animation  | Point Animation |
 |---------|---------|---------|
 | Pie Series | YES | YES |
 | Dougnat Series | YES | YES |
 
 ### PolarChart Series
+
 | Series | Series Animation  | Point Animation |
 |---------|---------|---------|
 | Polar Area Series | YES | YES |
@@ -219,6 +268,7 @@ The RadChartView series supports animations for its series and data points. Depe
 | Radar Point Series | NO | YES |
 
 ### FunnelChart Series
+
 | Series | Series Animation  | Point Animation |
 |---------|---------|---------|
 | Funnel Series | NO | YES |

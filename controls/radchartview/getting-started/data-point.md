@@ -25,15 +25,15 @@ The __DataContext__ of most chart templates and styles, as [ToolTipTemplate]({%s
 
 ## Series DataPoint Types
 
-The following table shows which data points are being used by the corresponding series.
+The following table groups data point types and their series by chart type. “Not applicable” means that no additional data point type is listed for that chart type in the row.
 
 <table>
 	<thead>
 		<tr>
-			<th>Cartesian Chart Data Points</th>
-			<th>Pie Chart Data Points</th>
-			<th>Polar Chart Data Points</th>
-			<th>Funnel Chart Data Point</th>
+			<th scope="col">Cartesian Chart Data Points</th>
+			<th scope="col">Pie Chart Data Points</th>
+			<th scope="col">Polar Chart Data Points</th>
+			<th scope="col">Funnel Chart Data Point</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -48,7 +48,7 @@ The following table shows which data points are being used by the corresponding 
 					<li>AreaSeries</li>
 					<li>SplineAreaSeries</li>
 					<li>StepAreaSeries</li>
-					<li>PointSeries</li
+					<li>PointSeries</li>
 				</ul> 
 			</td>
 			<td>
@@ -87,9 +87,9 @@ The following table shows which data points are being used by the corresponding 
 					<li>ScatterPointSeries</li>
 				</ul> 
 			</td>
-			<td/>
-			<td/>
-			<td/>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
 		</tr>
 		<tr style="vertical-align:top;">
 			<td>
@@ -99,9 +99,9 @@ The following table shows which data points are being used by the corresponding 
 					<li>RangeBarSeries</li>
 				</ul>
 			</td>
-			<td/>
-			<td/>
-			<td/>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
 		</tr>
 		<tr style="vertical-align:top;">
 			<td>
@@ -110,9 +110,9 @@ The following table shows which data points are being used by the corresponding 
 					<li>ScatterRangeBarSeries</li>
 				</ul> 
 			</td>
-			<td/>
-			<td/>
-			<td/>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
 		</tr>
 		<tr style="vertical-align:top;">
 			<td>
@@ -122,9 +122,9 @@ The following table shows which data points are being used by the corresponding 
 					<li>CandlestickSeries</li>
 				</ul>
 			</td>
-			<td/>
-			<td/>
-			<td/>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
 		</tr>
 		<tr style="vertical-align:top;">
 			<td>
@@ -133,9 +133,9 @@ The following table shows which data points are being used by the corresponding 
 					<li>BubbleSeries</li>
 				</ul> 
 			</td>
-			<td/>
-			<td/>
-			<td/>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
 		</tr>
 		<tr style="vertical-align:top;">
 			<td>
@@ -144,9 +144,9 @@ The following table shows which data points are being used by the corresponding 
 					<li>ScatterBubbleSeries</li>
 				</ul>
 			</td>
-			<td/>
-			<td/>
-			<td/>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
 		</tr>
 		<tr style="vertical-align:top;">
 			<td>
@@ -155,9 +155,9 @@ The following table shows which data points are being used by the corresponding 
 					<li>BoxPlotSeries</li>
 				</ul>
 			</td>
-			<td/>
-			<td/>
-			<td/>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
 		</tr>
 		<tr style="vertical-align:top;">
 			<td>
@@ -166,9 +166,9 @@ The following table shows which data points are being used by the corresponding 
 					<li>ErrorBarSeries</li>
 				</ul>
 			</td>
-			<td/>
-			<td/>
-			<td/>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
+			<td>Not applicable</td>
 		</tr>
 	</tbody>
 </table>
@@ -271,4 +271,4 @@ In a sampling scenario the __DataItem__ property of the DataPoint object doesn't
 ## See Also
 * [Getting Started]({%slug radchartview-introduction%})
 * [Series and Axes]({%slug radchartview-series-and-axes%})
-* [Sampling]({%slug radchartview-populating-with-data-chartdatasource%})
+* [ChartDataSource Sampling]({%slug radchartview-populating-with-data-chartdatasource%})

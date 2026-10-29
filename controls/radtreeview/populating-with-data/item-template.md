@@ -15,12 +15,12 @@ When binding your __RadTreeView__ to a collection, you are able to configure the
 
 If you want to read about the __ItemTemplateSelector__, see the main topic [ItemTemplateSelector]({%slug radtreeview-populating-with-data-item-template-selector%}).
 
-Since the most common scenario is to display hierarchical data with the __RadTreeView__, this tutorial will show you how to create __HierarchicalDataTemplate__ and set it to the __ItemTemplate__ property of the treeview using the Expression Blend.
+This tutorial uses Expression Blend to create a __HierarchicalDataTemplate__ and assign it to the treeview's __ItemTemplate__ property.
 
-The final result should look like the snapshot below:
-![{{ site.framework_name }} RadTreeView with Custom HierarchicalDataTemplate](images/RadTreeView_TemplatingItemTemplate_100.png)
+The resulting tree displays leagues with their divisions as child items:
+![RadTreeView showing League A and League B, each expanded to display Division A, Division B, and Division C.](images/RadTreeView_TemplatingItemTemplate_100.png)
 
-* Create a new Silverlight application and perform the following steps: 
+* Create a new Silverlight application and perform the following steps:
 	* Add a __RadTreeView__ in your XAML. 
 	* Create two empty hierarchical data templates and one empty data template in your application resources as it is shown in the XAML below: 
 	
@@ -29,39 +29,40 @@ The final result should look like the snapshot below:
 * Open your page in Expression Blend.
 
 	In the __Resources__ window (Window->Resources), in the context of your control you will see the three templates which were declared directly in the XAML on the previous step. 
-	![{{ site.framework_name }} RadTreeView Window Resources](images/RadTreeView_TemplatingItemTemplate.png)
+	![Blend Resources pane listing the League, Division, and Team templates.](images/RadTreeView_TemplatingItemTemplate.png)
 
-* Press the "__Edit resource__" button (located next to each template) for the __League__ template. This will open the current template for edit. Drag and drop the controls you need for the template and configure their properties. In the example are used an __Image__ and a __TextBlock__ controls: 
-	![{{ site.framework_name }} RadTreeView Blend League Template](images/RadTreeView_TemplatingItemTemplate_010.png)
+* Select __Edit resource__ for the __League__ template. Add an __Image__ and a __TextBlock__ to the template, as shown in the following XAML.
+	![League template containing a Grid with Image and TextBlock controls in the Objects and Timeline pane.](images/RadTreeView_TemplatingItemTemplate_010.png)
 	
 	<snippet id='radtreeview-populating-with-data-item-template-block_2-xaml' />
 
 	To configure the binding for the __Source__ property of the __Image control__, select it in the "__Object and Timeline__" pane. 
 
-	![{{ site.framework_name }} RadTreeView Image Control Object and Timeline](images/RadTreeView_TemplatingItemTemplate_020.png)
+	![Image selected within the League template in Objects and Timeline.](images/RadTreeView_TemplatingItemTemplate_020.png)
 
 	Go to the "__Properties__" pane and find the __Source__ property in the __Common properties__ section. 
-	![{{ site.framework_name }} RadTreeView Source Property](images/RadTreeView_TemplatingItemTemplate_030.png)
+	![Image Source property in the Common Properties section.](images/RadTreeView_TemplatingItemTemplate_030.png)
 
-	Click the empty square that's on the right of it to open the context menu for the property and choose DataBinding to open the __"Create Data Binding"__ dialog
-	![{{ site.framework_name }} RadTreeView Data Binding Menu Item](images/RadTreeView_TemplatingItemTemplate_040.png)
+	Open the __Source__ property's options menu and choose __Data Binding__ to open the __Create Data Binding__ dialog.
+	![Source property options menu with the Data Binding command.](images/RadTreeView_TemplatingItemTemplate_040.png)
 
-	In the  __"Create Data Binding"__ dialog choose the __Explicit DataContext__ tab and check the __"Use custom path expression"__ box. In the field write the name of the property you would like to bind to. Click __"Finish"__. 
-	![{{ site.framework_name }} RadTreeView Set Up Data Binding in Dialog](images/RadTreeView_TemplatingItemTemplate_050.png)
+	In the __Create Data Binding__ dialog, select __Explicit Data Context__ and check __Use a custom path expression__. Enter `ImageUrl` to bind the image's __Source__ to that property. Select __OK__.
+	![Image Source binding dialog with ImageUrl entered as the custom path expression.](images/RadTreeView_TemplatingItemTemplate_050.png)
 
-	Do the same for the __Text__ property of the __TextBlock__.
+	Repeat the binding-dialog steps for __TextBlock.Text__, using the text-binding path in the completed __League__ template below, not `ImageUrl`.
 
 	Finally, in the "__Object and Timeline__" pane, select the __HierarchicalDataTemplate:__
-	![{{ site.framework_name }} RadTreeView HierarchicalDataTemplate Object and Timeline](images/RadTreeView_TemplatingItemTemplate_060.png)
+	![HierarchicalDataTemplate selected in Objects and Timeline.](images/RadTreeView_TemplatingItemTemplate_060.png)
 
 	Find and set the following properties in the "__Properties__" pane:
 	
-	* __ItemsSource__
+	* __ItemsSource__: Set the binding expression to `{Binding Divisions, Mode=OneWay}`.
 	
-		![{{ site.framework_name }} RadTreeView Set ItemsSource Binding](images/RadTreeView_TemplatingItemTemplate_070.png)
-	* __ItemTemplate__
+		![ItemsSource property with a tooltip showing the one-way binding to Divisions.](images/RadTreeView_TemplatingItemTemplate_070.png)
+
+	* __ItemTemplate__: Set the resource reference to `{StaticResource Division}`.
 		
-		![{{ site.framework_name }} RadTreeView Set ItemTemplate Binding ](images/RadTreeView_TemplatingItemTemplate_080.png)
+		![ItemTemplate property referencing the Division resource.](images/RadTreeView_TemplatingItemTemplate_080.png)
 
 	Here is the result XAML for the __League__ data template:
 	
@@ -69,8 +70,8 @@ The final result should look like the snapshot below:
 
 * Perform the same steps for the other two templates - __Division__ and __Team__. 
 
-* The final step is to select your treeview and to set the __ItemTemplate__ property:
-	![{{ site.framework_name }} RadTreeView Set ItemTemplate](images/RadTreeView_TemplatingItemTemplate_090.png)
+* Select the treeview and set its __ItemTemplate__ property to the __League__ resource (`{StaticResource League}`), as shown in the following XAML.
+	![Treeview ItemTemplate property options for selecting a template resource.](images/RadTreeView_TemplatingItemTemplate_090.png)
 
 <snippet id='radtreeview-populating-with-data-item-template-block_4-xaml' />
 

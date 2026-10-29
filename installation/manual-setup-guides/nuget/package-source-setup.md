@@ -36,13 +36,13 @@ The easiest way to setup the Telerik package source is to use the [Telerik CLI s
 
 1. If you don't have Telerik CLI installed, run the `dotnet tool install` command.
 
-   ```
+   ```powershell
    dotnet tool install -g Telerik.CLI
    ```
 
 1. Run the `nuget config` command:
 
-   ```
+   ```powershell
    telerik nuget config
    ```
 
@@ -56,7 +56,7 @@ This is the recommended installation path for new development. Both Visual Studi
 
 ## Download from the Telerik NuGet server
 
-The Telerik server is an online package source that can be accessed through Visual Studio's Nuget Package Manager in order to easily install and upgrade Telerik assemblies. The NuGet server resides at: [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json). 
+The Telerik server is an online package source that can be accessed through Visual Studio's Nuget Package Manager in order to easily install and upgrade Telerik assemblies. Use the [Telerik NuGet server endpoint](https://nuget.telerik.com/v3/index.json): `https://nuget.telerik.com/v3/index.json`.
 
 As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password.
 
@@ -70,7 +70,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 1. Select Copy and Close. Once you close the window, you can no longer copy the generated key. For security reasons, the API Keys page displays only a portion of the key.
 1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
 
-> API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+>note API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, Azure DevOps (AzDO) and GitHub Action variable names, and so on.
 
 The following steps show how to setup the package source in Visual Studio. 
 
@@ -82,13 +82,13 @@ The following steps show how to setup the package source in Visual Studio.
 
 	![{{ site.framework_name }} New Package Source](images/nuget-installation-1.png)
 	
-1. In the Source field fill the address of the Telerik NuGet Server and click OK. The address is: [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json)
+1. In the Source field fill the address of the [Telerik NuGet server endpoint](https://nuget.telerik.com/v3/index.json) and click OK. The address is: `https://nuget.telerik.com/v3/index.json`.
 
 	![{{ site.framework_name }} Telerik NuGet Server Address](images/nuget-installation-2.png)
 	
 1. The Telerik Server is added and ready to use. 
 
-Using the Telerik package source gives access to versions starting from __2016.3.1024__. If you need to use a previous version of the suite you will need to create a [local package source](#using-a-local-package-source).
+Using the Telerik package source gives access to versions starting from __2016.3.1024__. If you need to use a previous version of the suite you will need to create a [local package source](#manually-download-nuget-packages-from-a-local-nuget-feed).
 
 ### Telerik NuGet Server Authentication
 
@@ -166,7 +166,7 @@ Selecting the Telerik source as the __Package source__ in Visual Studio will pro
 
 * The following video demonstrates how to add the Telerik NuGet Feed to your NuGet Package Sources:
 
-	<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+	<iframe title="Add the Telerik NuGet feed to your NuGet package sources" width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
 
 ## See Also  
 * [Review the Available Telerik UI for WPF NuGet Packages]({%slug nuget-available-packages%})

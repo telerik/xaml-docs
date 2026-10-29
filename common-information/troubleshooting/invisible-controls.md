@@ -27,6 +27,8 @@ The most common reason behind this is a missing resource(s) in the application R
 
 If you are upgrading or creating a project you could miss the fact that the referenced dlls are NoXaml and to miss merging the resources. In this case the Styles of the controls are not added in the application and therefore they don't have any UI defined. This is why the controls are missing.
 
+Merge the following resources to display RadCartesianChart.
+
 __Example 1: Merging the resources required by RadCartesianChart in order to be displayed__
 ```XAML
 	<Application>
@@ -48,6 +50,8 @@ __Example 1: Merging the resources required by RadCartesianChart in order to be 
 
 Sometimes only few controls could be missing. In that case it is highly possible that there is a Style that targets the controls but it doesn't inherit the default style. This happens because in NoXaml (implicit styles) scenario, the custom style completely overrides the default one. This means that the ControlTemplate of the element will be cleared unless you set it explicitly or [base the style on the default one]({%slug implicit-styles-styling-the-controls%}).
 
+Use BasedOn to inherit the default RadComboBox style, as shown below.
+
 __Example 1: Base a custom RadComboBox Style to its default Style__
 ```XAML	
 	<Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
@@ -55,8 +59,8 @@ __Example 1: Base a custom RadComboBox Style to its default Style__
 	</Style>
 ```
 
-> Generally, the Key of the control's default Style uses the following naming convention: *ControlName + Style*. Examples: *RadComboBoxStyle*, *BarSeriesStyle*, *GridViewRowStyle*, *RadTreeViewItemStyle*, etc.
+>note Generally, the Key of the control's default Style uses the following naming convention: *ControlName + Style*. Examples: *RadComboBoxStyle*, *BarSeriesStyle*, *GridViewRowStyle*, *RadTreeViewItemStyle*, etc.
 
-# Clean and Build Your Project
+## Clean and Build Your Project
 
 After any Style related changes or dlls replacement in the project make sure that any information cached by Visual Studio is cleared. To do this you can manually delete the *bin* and *obj* folders of the project and then *Clean*, and *Build* it again.

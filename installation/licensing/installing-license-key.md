@@ -19,7 +19,7 @@ To download a license key for Telerik UI for WPF, you must have either a develop
 
 Before you install the license key:
 
-* Download your license key from the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
+* Download your license key using [Telerik CLI](#automatic-license-key-installation) or from the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 * If your project uses NuGet packages, install the `Telerik.Licensing` package. This is a required step.
 * If Telerik UI for WPF is referenced in a class library, install `Telerik.Licensing` in the application project that consumes the class library too.
 * If the build runs under a service account, CI agent, or another user profile, do not rely on `%appdata%\Telerik` alone. Use a project-level or environment-based setup instead.
@@ -84,13 +84,22 @@ To manually download and install a license key for Telerik UI for WPF:
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 
-1. Click the __Download License Key__ button.
+1. Select the __Manual Setup__ tab in the tabstrip with the installation options.
 
-	![Picture showing the License Keys page](images/installing-license-key-0.png)
+1. Click on the __Set Up License Key__ button.
+
+1. Check the instructions in the opened dialog and click on the __Download License Key__ button.
+
+1. Copy the downloaded `telerik-license.txt` license key file to one of the following locations:
+
+	* `%appdata%\Telerik\telerik-license.txt` to make it available for the current Windows user on the local machine.
+	* The project root folder to make it available only to that project.
+	
+	>Do not commit the file to source control. This file contains your personal license key.
 
 1. Install the `Telerik.Licensing` NuGet package in the project that starts the build or application.
 
-__Example 1: Add the Telerik.Licensing package to a project__
+__Add the Telerik.Licensing package to a project__
 
 ```xml
 <PackageReference Include="Telerik.Licensing" Version="1.*" />
@@ -98,12 +107,7 @@ __Example 1: Add the Telerik.Licensing package to a project__
 
 In Visual Studio, you can also install the package by right-clicking the project, selecting **Manage NuGet Packages**, searching for `Telerik.Licensing`, and installing it in the executable or startup project.
 
-1. Copy the downloaded `telerik-license.txt` license key file to one of the following locations:
 
-	* `%appdata%\Telerik\telerik-license.txt` to make it available for the current Windows user on the local machine.
-	* The project root folder to make it available only to that project.
-
-Do not commit the file to source control. This file contains your personal license key.
 
 When you build the project, the `Telerik.Licensing` package locates the license file and uses it to activate the product. If your project doesn’t use NuGet packages, see the next section in this article.
 

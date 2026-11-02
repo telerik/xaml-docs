@@ -41,17 +41,21 @@ Here's a full list of the overridable methods which you can use in order to crea
 
 * **string BuildStartRegionBlockPattern(Dictionary&lt;string, string> startToEndMap)**: Prepares patters for matching start of collapsible folding section. Default implementation is to join all start strings of provided collapsible sections.
 * **string BuildEndRegionBlockPattern(Dictionary&lt;string, string> startToEndMap)**: Prepares patters for matching end of collapsible folding section. Default implementation is to join all end strings of provided collapsible sections.
-* **string GetFoldingRegionTitle(Span foldingSpan)**: Gets the text displayed in the collapsed folding section. (**...** by default)
+* **string GetFoldingRegionTitle(string inputValue, Span span, string startText)**: Gets the text displayed in the collapsed folding section from the document text, region span, and start marker.
 * **string GetFoldingRegionToolTipContent(Span foldingSpan)**: Gets the folding region's tooltip content.
-* **string Span CoerceFoldingSpan(Span defaultFoldingSpan)**: Coerces the default provided folding span - span starting from the start of the region's start text and ending in the end of the region's end text.
-* **string void RebuildFoldingRegions**: Rebuilds the list of all collapsible (folding) regions.
+* **Span CoerceFoldingSpan(Span defaultFoldingSpan)**: Coerces the default provided folding span - span starting from the start of the region's start text and ending in the end of the region's end text.
+* **void RebuildFoldingRegions()**: Rebuilds the list of all collapsible (folding) regions.
 * **void ProcessNotMatchedTags(IEnumerable&lt;FoldingRegionMatch> startTags, IEnumerable&lt;FoldingRegionMatch> endTags)**: Tries to match the not matched start and end tags left from the standard stack matching algorithm. The two arguments contain collections of **FoldingRegionMatch** instances with each match holding the following information:
     * **Index**: An **integer** corresponding to the index of the folding match.
     * **Tag**: The tag (keyword) of the folding match represented as a **string**.
     * **IsStart**: A **boolean** indicating whether the folding match is the start or the end of a folding region.
     * **IsUsed**: A **boolean** indicating whether the folding match is already used in a folding region.
-* **void RefreshStartEndMap**: Prepares the start/end matches for use as key-value pairs.
-* **void InvalidateFoldingRegions**: Clears all collapsible (folding) regions and rebuilds them.
+* **void RefreshStartEndMap()**: Prepares the start/end matches for use as key-value pairs.
+* **void InvalidateFoldingRegions()**: Clears the folding regions and marks them for rebuilding when tags are next requested.
+
+## Nested Folding and Custom Text
+
+For a complete custom tagger example, matching constraints, and a synthetic stack trace with three folding levels, see [Create Nested Folding Regions for a Stack Trace]({%slug kb-syntaxeditor-nested-folding-stack-trace%}).
 
 ## Styling the Folding Button
 

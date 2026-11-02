@@ -15,11 +15,11 @@ This topic will guide you through the process of creating a sample application c
 
 ## Adding Telerik Assemblies Using NuGet
 
-To use __RadChat__ when working with NuGet packages, install the `Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+To use __RadChat__ when working with NuGet packages, install the `Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%}).
 
 Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+The speech-to-text button displayed in the chat area requires you to explicitly install also the [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) package. Without this dependency, the default speech recognizer of the button throws an exception when the button initializes.
 
 ## Adding Assembly References Manually
 

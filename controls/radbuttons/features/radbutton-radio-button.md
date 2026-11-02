@@ -15,7 +15,7 @@ The __RadRadioButton__ control inherits from the native RadioButton control and 
 
 >tip You can see how to use an ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
-#### __Figure 1: Radio button__
+__Figure 1: Radio button__
 ![{{ site.framework_name }} RadButtons Radio button](images/radbuttons-features-radio-button-0.png)
 
 ## Defining RadButton
@@ -61,17 +61,17 @@ __Example 5: Grouping radio buttons__
 
 The above code creates two groups of __RadRadioButtons__.		
 
-#### __Figure 2: Grouped radio buttons__
+__Figure 2: Grouped radio buttons__
 ![{{ site.framework_name }} RadButtons Grouped radio buttons](images/radbuttons-features-radio-button-1.png)
 
 ## Customizing the RadRadioButton
 
 * __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the RadRadioButton control when in normal state. 
-	#### __Figure 2: Radio button with hidden background__
+	__Figure 2: Radio button with hidden background__
 	![{{ site.framework_name }} RadButtons Radio button with hidden background](images/radbuttons-features-radio-button-2.png)
 
 * __CornerRadius__: This property controls the corner radius of the button.
-	#### __Figure 3: Radio button with its CornerRadius set to 15__
+	__Figure 3: Radio button with its CornerRadius set to 15__
 	![{{ site.framework_name }} RadButtons Radio button with its CornerRadius set to 15](images/radbuttons-features-radio-button-3.png)
 
 ## See Also

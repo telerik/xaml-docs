@@ -26,7 +26,7 @@ If there is not enough height to draw the buttons in the corresponding number of
 __Example 1: Setting up RadRibbonView with RadCollapsiblePanel__
 <snippet id='radribbonview-features-layout-controls-collapsible-panel-block_1-xaml' />
 
-#### Figure 1: Comparison between the different group sizes (variants)
+__Figure 1: Comparison between the different group sizes (variants)__
 ![Comparison between the different group sizes (variants)](images/radribbonview-collapsible-panel-0.png)
 
 ## Defining Number of Rows
@@ -36,7 +36,7 @@ By default the RadCollapsiblePanel is using __3 rows__. To change this behavior,
 __Example 2: Setting the number of rows__
 <snippet id='radribbonview-features-layout-controls-collapsible-panel-block_2-xaml' />
 
-#### Figure 2: Collapsible panel with 2 rows
+__Figure 2: Collapsible panel with 2 rows__
 ![Collapsible panel with 2 rows](images/radribbonview-collapsible-panel-1.png)
 
 > This setting affects all RadCollapsiblePanel instances within the RadRibbonView instance.
@@ -48,7 +48,7 @@ By default the RadCollapsiblePanel does not apply additional vertical spacing be
 __Example 3: Setting the vertical spacing__
 <snippet id='radribbonview-features-layout-controls-collapsible-panel-block_3-xaml' />
 
-#### Figure 3: Collapsible panel with a vertical spacing of 10 between the buttons
+__Figure 3: Collapsible panel with a vertical spacing of 10 between the buttons__
 ![{{ site.framework_name }} RadRibbonView Collapsible panel with a vertical spacing of 10 between the buttons](images/radribbonview-collapsible-panel-2.png)
 
 > This setting affects all RadCollapsiblePanel instances within the RadRibbonView instance.

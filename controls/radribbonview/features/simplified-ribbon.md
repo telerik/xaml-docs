@@ -20,7 +20,7 @@ Before switching the layout, you have to define what will be shown in the simpli
 __Example 1: Setting the SimplifiedItems property__
 <snippet id='radribbonview-features-simplified-ribbon-block_1-xaml' />
 
-#### __Figure 1: Changing RadRibbonView layout in the Office2016 theme__
+__Figure 1: Changing RadRibbonView layout in the Office2016 theme__
 ![Changing RadRibbonView layout in the Office2016 theme](images/RibbonView_LayoutMode_Change.gif)
 
 > The __SimplifiedResourses__ property of the __RadRibbonTab__ can be used in order to add any resources that should be applied when the LayoutMode is Simplified.
@@ -40,7 +40,7 @@ In order to change the default layout mode, there are two options. Switch the la
     __Example 2: Showing the LayoutMode button and changing its Content__
     <snippet id='radribbonview-features-simplified-ribbon-block_2-xaml' />
 
-    #### __Figure 2: LayoutMode button in the Office2016 theme__
+    __Figure 2: LayoutMode button in the Office2016 theme__
     ![LayoutMode button in the Office2016 theme](images/RibbonView_LayoutModeButtonContent.png)
 
 * __Switch the layout programmatically__: In order to change the layout in code, you can set the __LayoutMode__ property to __Simplified__ or execute the __ToggleLayoutModeCommand__ command.

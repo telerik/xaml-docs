@@ -19,7 +19,7 @@ __Example 1: Setting ItemsIndent Property__
 
 By setting the __ItemsIndent__ property to 0, we will vertically align all items in the RadTreeView. You can observe the outcome in __Figure 1__.
 
-#### __Figure 1: Vertically Align TreeView Items__
+__Figure 1: Vertically Align TreeView Items__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_01.png)
 
 ## ExpanderButtonMinWidth
@@ -31,7 +31,7 @@ In __Figure 1__, the roots, and their nodes are vertically aligned. In a case wh
 __Example 2: Collapsed Expander Button__
 <snippet id='radtreeview-features-itemsindent-block_2-xaml' />
 
-#### __Figure 2: Collapsed Expander Button__
+__Figure 2: Collapsed Expander Button__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_02.png)
 
 ## TreeView Lines and Item Indent
@@ -42,7 +42,7 @@ To correctly adjust the nodes' lines, the __ItemsIndent__ and __ExpanderButtonMi
 
 > The expander path element has a different width in different themes.
 
-#### __Figure 3: Default Size of the Elements in Fluent Theme__
+__Figure 3: Default Size of the Elements in Fluent Theme__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_03.png)
 
 In the above case, we will reduce the space by using the __ItemsIndent__ and __ExpanderButtonMinWidth__ properties. The __ExpanderButtonMinWidth__ property can be set to an odd value bigger than the path's width. In our case, the minimum value will be 17. 
@@ -50,7 +50,7 @@ In the above case, we will reduce the space by using the __ItemsIndent__ and __E
 __Example 3: Set Compact View__
 <snippet id='radtreeview-features-itemsindent-block_3-xaml' />
 
-#### __Figure 4: Compact TreeView Lines__
+__Figure 4: Compact TreeView Lines__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_04.png)
 
 ## See Also

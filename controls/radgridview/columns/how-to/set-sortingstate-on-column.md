@@ -28,7 +28,7 @@ Once you define all the necessary properties, the corresponding column will be s
 
 >tip For further information on implementing custom sorting you may run through the [Custom Sorting]({%slug gridview-sorting-custom%}) article.
 
-# See also
+## See also
 
  * [Basic Sorting]({%slug gridview-sorting-basics%})
 

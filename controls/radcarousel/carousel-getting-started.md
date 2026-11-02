@@ -65,7 +65,7 @@ __Example 4: Setting RadCarousel's ItemsSource__
 
 After running the application, you will see the following result:
 
-#### __Figure 1: RadCarousel displaying a list of employees__
+__Figure 1: RadCarousel displaying a list of employees__
 
 ![RadCarousel displaying a list of employees](images/carousel_BoundToCollection.png)
 
@@ -81,7 +81,7 @@ __Example 5: Setting RadCarousel's ItemsSource to a list of images__
 
 **Figure 2** shows the final result:
 
-#### __Figure 2: RadCarousel displaying a list of images__
+__Figure 2: RadCarousel displaying a list of images__
 
 ![RadCarousel displaying a list of images](images/carousel_DisplayImages.png)
 
@@ -109,7 +109,7 @@ __Example 2: Merge the ResourceDictionaries__
 
 __Figure 4__ shows a __RadCarousel__ with the **Material** theme applied.
 	
-#### __Figure 4: RadCarousel with the Material theme__
+__Figure 4: RadCarousel with the Material theme__
 ![RadCarousel with Material theme](images/radcarousel-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

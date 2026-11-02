@@ -53,7 +53,7 @@ __Example 2: Populating the AggregateFunctions collection in code__
 <snippet id='radgridview-columns-aggregate-functions-example_2_populating_the_aggregatefunctions_collection_in_code-vb' />
 
 
-#### __Figure 1: RadGridView with ShowColumnFooters set to True__
+__Figure 1: RadGridView with ShowColumnFooters set to True__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView aggregate functions displayed in column footers](images/RadGridView_AggregateFunctions.png)
 
@@ -111,7 +111,7 @@ __Example 6: Overriding GridViewDataColumn.Footer__
 <snippet id='radgridview-columns-aggregate-functions-example_6_overriding_gridviewdatacolumn_footer-xaml' />
 
 
-#### __Figure 2: A GridViewDataColumn with a custom Footer__
+__Figure 2: A GridViewDataColumn with a custom Footer__
 ![Telerik UI for {{ site.framework_name }} RadGridView aggregate functions with a custom GridViewDataColumn footer](images/RadGridView_AggregateFunctions_CustomFooter.png)
 
 >Note that the Footer's DataContext is of type [AggregateResultsList](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.gridview.aggregateresultslist).

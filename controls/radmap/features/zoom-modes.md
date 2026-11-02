@@ -19,7 +19,7 @@ This can be done via the **mouse wheel** or through the **Zoom Bar** control in 
 
 By hovering on the button with an icon representing a **magnifier**, the user is provided with different options to zoom in and zoom out. The main tool is the **zoom slider** which allows the user to slide between the maximum and minimum zoom level. Together with the slider there are several **zoom presets**, which represent different ranges from the slider.
 
-#### Figure 1: The ZoomBar control
+__Figure 1: The ZoomBar control__
 
 ![The ZoomBar control](images/radmap-features-zooming-1.png)
 
@@ -75,7 +75,7 @@ In order to use the __MapZoomBar__ outside the __RadMap__ you have to also set i
 __Example 6: Placing the ZoomBar outside of the RadMap__
 <snippet id='radmap-features-zoom-modes-block_6-xaml' />
 
-#### Figure 2: ZoomBar outside of RadMap
+__Figure 2: ZoomBar outside of RadMap__
 
 ![ZoomBar outside of RadMap](images/radmap-features-zooming-2.png)
 
@@ -96,7 +96,7 @@ __Example 8: Changing the default preset labels__
 <snippet id='radmap-features-zoom-modes-block_8-cs' />
 <snippet id='radmap-features-zoom-modes-block_8-vb' />
 
-#### Figure 2: RadMap with a custom preset label
+__Figure 2: RadMap with a custom preset label__
 
 ![RadMap with a custom preset label](images/radmap-features-zooming-3.png)
 

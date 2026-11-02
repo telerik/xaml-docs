@@ -38,25 +38,25 @@ This example show how one can iterate the items and add an item to to a existing
 
 New content controls can be inserted trough one of the overloads of the **InsertStructuredDocumentTag** method accessible from **RadRichTextBox** and [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}):
 
-#### Example 3: Inserting a content control
+__Example 3: Inserting a content control__
 
 
 
 <snippet id='radrichtextbox-features-content-controls-working-with-content-controls-block_3-cs' />
 
-#### Example 4: Inserting a content control using content control type
+__Example 4: Inserting a content control using content control type__
 
 
 
 <snippet id='radrichtextbox-features-content-controls-working-with-content-controls-block_4-cs' />
 
-#### Example 5: Inserting a content control using content control properties
+__Example 5: Inserting a content control using content control properties__
 
 
 
 <snippet id='radrichtextbox-features-content-controls-working-with-content-controls-block_5-cs' />
 
-# See Also
+## See Also
 * [Content Controls Overview]({%slug radrichtextbox-features-content-controls%})
 * [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%})
 * [Working with Content Controls UI]({%slug radrichtextbox-features-working-with-content-controls-ui%})

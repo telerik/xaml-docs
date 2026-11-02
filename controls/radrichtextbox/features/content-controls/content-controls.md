@@ -128,7 +128,7 @@ The __Text__ content control allows you to enter plain text. The text content co
 
 <snippet id='radrichtextbox-features-content-controls-content-controls-block_5-cs' />
 
-# See Also
+## See Also
 * [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 
 * [Working with Content Controls]({%slug radrichtextbox-features-working-with-content-controls%})
 * [Working with Content Controls UI]({%slug radrichtextbox-features-working-with-content-controls-ui%})

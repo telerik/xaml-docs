@@ -15,11 +15,11 @@ ticketid: 1681195
 <table>
 <tbody>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>RadTreeListView for WPF</td>
 </tr>
 <tr>
-<td>Version</td>
+<th scope="row">Version</th>
 <td>2021.3.914</td>
 </tr>
 </tbody>

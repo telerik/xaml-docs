@@ -44,7 +44,7 @@ __GridViewToggleRowDetailsColumn with custom Style for the ToggleButtonStyle pro
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewToggleRowDetailsColumn with a custom ToggleButtonStyle](images/radgridview-columns-column-types-toggle-rowdetails-column-1.png)
 
-# See also:
+## See also:
 
 * [RowDetails]({%slug radgridview-row-details-overview%}) 
 * [Row Details Template]({%slug radgridview-row-details-template%})

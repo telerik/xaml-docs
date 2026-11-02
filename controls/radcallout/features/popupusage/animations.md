@@ -34,7 +34,7 @@ In the click event handler, we can declare our RadCallout control. To show the c
 __Example 2: Setting RadCallout in code behind__
 <snippet id='radcallout-features-popupusage-animations-example_2_setting_radcallout_in_code_behind-cs' />
 
-#### __Figure 1: Popup animation__
+__Figure 1: Popup animation__
 ![{{ site.framework_name }} RadCallout Popup animation](images/radcallout-features-animations_1.gif)
 
 ## Animation Types
@@ -47,7 +47,7 @@ https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPE
 __Example 3: Show and Close Animation with Easing functions applied__
 <snippet id='radcallout-features-popupusage-animations-example_3_show_and_close_animation_with_easing_functions_applied-cs' />
 
-#### __Figure 2: Animated Popup with Easing functions__
+__Figure 2: Animated Popup with Easing functions__
 ![{{ site.framework_name }} RadCallout Animated Popup with Easing functions](images/radcallout-features-animations_easing.gif)
 
 ### Fade Animation

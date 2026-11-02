@@ -19,7 +19,7 @@ In this topic we will discuss:
 
 >Both controls are located in the **Telerik.Windows.Controls.GridView** namespace of the **Telerik.Windows.Controls.GridView** assembly. When working in **Expression Blend**, the namespaces that are needed will be added automatically.
 
-#### __Figure 1: The FilteringControl & FilteringDropDown template structure__
+__Figure 1: The FilteringControl & FilteringDropDown template structure__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the FilteringControl and FilteringDropDown template structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
 
@@ -27,7 +27,7 @@ In this topic we will discuss:
 
 The filtering dropdown icon can be styled by creating an appropriate style targeting the **FilteringDropDown** element.
 
-#### __Figure 2: The default FilteringDropDown element__
+__Figure 2: The default FilteringDropDown element__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the default FilteringDropDown element in a column header](images/RadGridView_Styles_and_Templates_FilteringDropDown.png)
 
@@ -37,7 +37,7 @@ To learn how to modify the default FilteringDropDown style, please refer to the 
 
 __GridViewColumn__ exposes the __FilteringControlStyle__ property of type __Style__. It is applied to the __FilteringControl__ of the column.
 
-#### __Figure 3: The default FilteringControl element__
+__Figure 3: The default FilteringControl element__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the default FilteringControl element for column filtering](images/RadGridView_Styles_and_Templates_FilteringControl.png)
 

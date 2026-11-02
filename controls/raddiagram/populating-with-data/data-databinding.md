@@ -75,7 +75,7 @@ __Example 7: Setting the GraphSource__
 <snippet id='raddiagram-populating-with-data-data-databinding-example_7_setting_the_graphsource-vb' />
 
 
-#### __Figure 1: **Pascal Triangle** with seven levels represented by **RadDiagram**__
+__Figure 1: **Pascal Triangle** with seven levels represented by **RadDiagram**__
 ![Pascal Triangle with seven levels represented by RadDiagram](images/raddiagrams_populating_with_data_data_binding.png)
 
 ## Two-Way MVVM
@@ -106,10 +106,10 @@ __Example 10: Showing the items in a RadTreeView__
 <snippet id='raddiagram-populating-with-data-data-databinding-example_10_showing_the_items_in_a_radtreeview-xaml' />
 
 
-#### __Figure 2: Result from Example 10__
+__Figure 2: Result from Example 10__
 ![Two-Way MVVM RadDiagram](images/raddiagram-databindig-mvvm-2way1.png)
 
-#### __Figure 3: Selecting an item and pasting it into the diagram__
+__Figure 3: Selecting an item and pasting it into the diagram__
 ![Selecting an item and pasting it into the diagram](images/raddiagram-databindig-mvvm-2way2.png)
 
 An item has been created in the MVVM model (the empty treeview item) as a result of the changes in the diagram, as should be with a two-way MVVM source. The item has however an empty content since RadDiagram has thus far no knowledge of the Person data type to insert into the model. 
@@ -122,7 +122,7 @@ __Example 11: Overriding the AddNode method__
 <snippet id='raddiagram-populating-with-data-data-databinding-example_11_overriding_the_addnode_method-vb' />
 
 		
-#### __Figure 4: Result from Example 11__
+__Figure 4: Result from Example 11__
 ![Addin a node to RadDiagram](images/raddiagram-databindig-mvvm-2way3.png)
 
 ## Clearing the Cache of the ItemContainerGenerator

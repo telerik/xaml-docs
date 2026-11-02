@@ -17,13 +17,13 @@ Currently, this section of the documentation contains only the latest release no
 
 ## 2024 Q4 (2024.4.1213)
 
-#### PersistenceFramework
+### PersistenceFramework
 
 * The `PersistenceManager` now requires to provide a list of allowed types. If the list is `null` or if a type that is deserialized is not presented in the list, a `NotSupportedException` is thrown. The `IsolatedStorageProvider` is also affected as it uses the `PersistenceManager`. Read more about this in the [Allowed Types]({%slug persistence-framework-allowed-types%}) article.
 
 ## 2024 Q2
 
-#### Common Changes
+### Common Changes
 
 * Removed the __.NET Core 3.1__ distribution of the Telerik dlls.
 
@@ -81,7 +81,7 @@ Currently, this section of the documentation contains only the latest release no
 
 ## 2024 Q4
 
-#### Common Changes
+### Common Changes
 
 * Removed the __.NET 7__ distribution of the Telerik dlls.
 

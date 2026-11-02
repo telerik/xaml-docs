@@ -29,7 +29,7 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
 - Comes with a predefined mention template that shows the image and the name of a person (as shown in **Figure 1**), so you shouldn't take care about that.
 - Inserts the mention character and the item that has been selected as a hyperlink with the `PersonMentionItem.Name` as text and `PersonMentionItem.Mail` as URL.
 
-#### Figure 1: Default mention template
+__Figure 1: Default mention template__
 
 ![Default mention template](images/RadRichTextBox_Mentions_02.png)
 
@@ -46,7 +46,7 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
 
 **Figure 2** shows how the result of **Example 1** would look like in RadRichTextBox.
 
-#### Figure 2: Default MentionProvider
+__Figure 2: Default MentionProvider__
 
 ![Using default mention provider in RadRichTextBox](images/RadRichTextBox_Mentions_01.gif) 
 
@@ -81,12 +81,12 @@ You can implement your own mention provider that enables you to visualize any ob
 
     After the prerequisites are completed, you should set the new members to the `MentionContext` property of **RadRichTextBox**.
     
-    #### [C#] Example 5: Add the provider and the data template to the MentionContext
+    __[C#] Example 5: Add the provider and the data template to the MentionContext__
     
     <snippet id='radrichtextbox-features-mentions-block_10-cs' />
 	<snippet id='radrichtextbox-features-mentions-block_11-vb' />
     
-#### Figure 4: Custom mentions 
+__Figure 4: Custom mentions__ 
 ![{{ site.framework_name }} RadRichTextBox Custom mentions](images/RadRichTextBox_Mentions_03.gif)
     
 ## Custom Mention Character
@@ -120,7 +120,7 @@ The next example shows how to implement filtering that matches only the items th
 
 Through the `MentionContext`, you can register as many providers as you need and invoke their lists of items through the associated mention character. 
 
-#### Figure 5: Multiple mention (suggestion) providers
+__Figure 5: Multiple mention (suggestion) providers__
 ![Multiple mention (suggestion) providers](images/RadRichTextBox_Mentions_04.gif)
 
 ## See Also

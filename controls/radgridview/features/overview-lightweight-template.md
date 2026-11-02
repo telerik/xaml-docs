@@ -39,7 +39,7 @@ __Example 1: Applying the Lightweight Templates__
 <snippet id='radgridview-features-overview-lightweight-template-example_1_applying_the_lightweight_templates-xaml' />
 
 
-#### __Figure 1: RadGridView with Lightweight templates applied__
+__Figure 1: RadGridView with Lightweight templates applied__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with lightweight templates applied](images/gridview_overview_lightweight_0.png)
 
@@ -55,7 +55,7 @@ __Example 2: Applying Lightweight Templates with Validation__
 <snippet id='radgridview-features-overview-lightweight-template-example_2_applying_lightweight_templates_with_validation-xaml' />
 
 
-#### __Figure 2: RadGridView with Lightweight templates with validation applied__
+__Figure 2: RadGridView with Lightweight templates with validation applied__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with lightweight templates and validation applied](images/gridview_overview_lightweight_1.png)
 
@@ -72,7 +72,7 @@ __Example 3: Deleting the IsCurrent Property Trigger__
 <snippet id='radgridview-features-overview-lightweight-template-example_3_deleting_the_iscurrent_property_trigger-xaml' />
 
 
-#### __Figure 3: RadGridView with Lightweight templates and removed Current Cell Border__
+__Figure 3: RadGridView with Lightweight templates and removed Current Cell Border__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView lightweight templates with the current cell border removed](images/RadGridViewLightweightTemplatesCurrentCellBorder.png)
 
@@ -84,7 +84,7 @@ __Example 4: Deleting the IsCurrent Property Trigger when Lightweight Templates 
 <snippet id='radgridview-features-overview-lightweight-template-example_4_deleting_the_iscurrent_property_trigger_when_lightweight_templates_with_validation_are_applied-xaml' />
 
 
-#### __Figure 4: RadGridView with Lightweight templates including validation and removed Current Cell Border__
+__Figure 4: RadGridView with Lightweight templates including validation and removed Current Cell Border__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView lightweight templates with validation and the current cell border removed](images/RadGridViewLightweightTemplatesCurrentCellBorderWithValidation.png)
 

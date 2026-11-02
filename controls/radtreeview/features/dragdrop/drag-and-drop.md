@@ -18,7 +18,7 @@ The following example shows a basic RadTreeView definition and enabled drag/drop
 __Example 1: Enabling the drag and drop feature__
 <snippet id='radtreeview-features-dragdrop-drag-and-drop-block_1-xaml' />
 
-#### Figure 1: Drag drop in action
+__Figure 1: Drag drop in action__
 ![{{ site.framework_name }} RadTreeView Drag drop in action](images/RadTreeView-DragDrop-PreviewLine.png)
 
 __Example 2: Enabling the Drag/Drop functionality in code-behind__  
@@ -38,7 +38,7 @@ __Example 4: Turn on multi-selection in code-behind__
 <snippet id='radtreeview-features-dragdrop-drag-and-drop-block_5-cs' />
 <snippet id='radtreeview-features-dragdrop-drag-and-drop-block_6-vb' />
 
-#### Figure 2: Dragging multiple items
+__Figure 2: Dragging multiple items__
 ![Rad Tree View-Drag Drop-Multiple Drag](images/RadTreeView-DragDrop-MultipleDrag.png)
 
 ## DragDrop AutoScrolling Behavior
@@ -64,7 +64,7 @@ The following example shows how to use the feature with two RadTreeView instance
 __Example 5: Define two RadTreeView controls__  
 <snippet id='radtreeview-features-dragdrop-drag-and-drop-block_7-xaml' />
 
-#### Figure 3: Dragging items between two treeviews 
+__Figure 3: Dragging items between two treeviews__ 
 ![Rad Tree View-Drag Drop-Tree To Tree](images/RadTreeView-DragDrop-TreeToTree.png)
 
 To enable __drag/drop between RadTreeView and another control__ (such as ListBox), you can customize the default drag/drop actions using the [DragDropManager]({%slug dragdropmanager-overview%}). Read more about this in the [How To Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%}) article.

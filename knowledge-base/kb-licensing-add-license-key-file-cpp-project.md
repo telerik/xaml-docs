@@ -14,11 +14,11 @@ ticketid: 1691691
 <table>
 <tbody>
 <tr>
-<td> Product </td>
+<th scope="row"> Product </th>
 <td> Progress® Telerik® UI for WPF </td>
 </tr>
 <tr>
-<td> Version </td>
+<th scope="row"> Version </th>
 <td> 2025.2.707 </td>
 </tr>
 </tbody>

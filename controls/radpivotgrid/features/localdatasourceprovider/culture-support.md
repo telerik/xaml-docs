@@ -26,7 +26,7 @@ You can easily apply the required culture by setting the __Culture__ property of
 
 <snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_2-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_3-vb' />
 
@@ -51,7 +51,7 @@ If you would like to change the Culture at runtime you will need to manualy rese
 
 <snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_4-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-features-localdatasourceprovider-culture-support-block_5-vb' />
 

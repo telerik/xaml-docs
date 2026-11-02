@@ -41,7 +41,7 @@ __Defining RadTaskBoard in XAML__
 
 <snippet id='radtaskboard-features-column-block_2-xaml' />
 
-#### Figure 1: RadTaskBoard with automatically generated columns
+__Figure 1: RadTaskBoard with automatically generated columns__
 ![Telerik TaskBoard Column 0](images/taskboard_column_0.png)
 
 ## Cancel Auto Generation of a Specific Column
@@ -68,7 +68,7 @@ __Define TaskBoardColumns in code__
 
 <snippet id='radtaskboard-features-column-block_5-cs' />
 
-#### Figure 2: RadTaskBoard with manually generated columns
+__Figure 2: RadTaskBoard with manually generated columns__
 ![Telerik TaskBoard Column 1](images/taskboard_column_1.png)
 	
 ## See Also

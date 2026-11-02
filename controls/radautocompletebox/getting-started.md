@@ -72,7 +72,7 @@ __Example 3: Customize the RadAutoCompleteBox__
 
 **Figure 1** illustrates the result from the code in **Example 3**.
 
-#### __Figure 1: Customized RadAutoCompleteBox__
+__Figure 1: Customized RadAutoCompleteBox__
 ![Customized RadAutoCompleteBox](images/radautocompletebox-customization.png)
 
 ## Set a Theme
@@ -98,7 +98,7 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a __RadAutoCompleteBox__ with the **Office2016** theme applied.
 	
-#### __Figure 2: RadAutoCompleteBox with the Office2016 theme__
+__Figure 2: RadAutoCompleteBox with the Office2016 theme__
 ![RadAutoCompleteBox with Office2016 theme](images/radautocompletebox-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

@@ -42,7 +42,7 @@ __Example 2: Use the RadGlyph markup extension__
 	<Image Source="{telerik:RadGlyph Glyph={StaticResource GlyphCs}, Foreground=Black}" />
 ```
 
-#### Figure 1: The result from examples 1 and 2
+__Figure 1: The result from examples 1 and 2__
 
 ![Telerik UI for WPF RadGlyph rendered from C# code](images/radglyph-1.png)
 
@@ -77,7 +77,7 @@ The RadGlyphExtension on the other hand provides this set of properties:
 
 The **RadGlyphExtension** cannot be set inline to the **Value** property of a Style **Setter** element. Instead, it should be set through the **Setter.Value** XAML tag.
 
-#### **[XAML] Example 4: Set Setter.Value XAML tag**
+**[XAML] Example 4: Set Setter.Value XAML tag**
 
 ```XAML
 	<Style TargetType="telerik:RadButton">
@@ -97,7 +97,7 @@ Another font that comes out of the box **since the R2 2022 release** is the **Te
 
 **Example 5** demonstrates the difference in appearance between the two fonts.
 
-#### **[XAML] Example 5: Calendar glyph in TelerikFluentIcons and TelerikWebUI fonts respectively**
+**[XAML] Example 5: Calendar glyph in TelerikFluentIcons and TelerikWebUI fonts respectively**
 
 ```XAML
     <StackPanel Orientation="Horizontal">
@@ -110,7 +110,7 @@ Another font that comes out of the box **since the R2 2022 release** is the **Te
     </StackPanel>
 ```
 
-#### Figure 2: The calendar icon in the TelerikFluentIcons and TelerikWebUI fonts respectively
+__Figure 2: The calendar icon in the TelerikFluentIcons and TelerikWebUI fonts respectively__
 
 ![Telerik UI for WPF RadGlyph calendar icons from the TelerikFluentIcons and TelerikWebUI fonts](images/radglyph-5.png)
 
@@ -154,7 +154,7 @@ __Example 8: Use the Webdings glyphs__
 	<Path Data="{telerik:RadGlyph Font=Webdings, Glyph=&#x00fc;}" Fill="{telerik:Office2016Resource ResourceKey=IconBrush}" Width="50" Height="50" Stretch="Uniform" />
 ```
 
-#### Figure 3: The resulting Webdings glyph
+__Figure 3: The resulting Webdings glyph__
 
 ![Telerik UI for WPF RadGlyph Webdings globe glyph](images/radglyph-2.png)
 
@@ -166,7 +166,7 @@ __Example 9: Set a RadPathButton's PathGeometry in XAML__
 	<telerik:RadPathButton Width="50" Height="50" PathGeometry="{telerik:RadGlyph Glyph={StaticResource GlyphButton}}" />
 ```
 
-#### Figure 4: The RadPathButton in normal and hovered states in the Office2016 theme
+__Figure 4: The RadPathButton in normal and hovered states in the Office2016 theme__
 
 ![Telerik UI for WPF RadPathButton in normal and hovered states](images/radglyph-3.png)
 
@@ -216,7 +216,7 @@ __Example 11: Provide ImageSource for RadTreeView items__
 	</telerik:RadTreeView>
 ```
 
-#### Figure 5: The resulting RadTreeView in the Office2016 theme
+__Figure 5: The resulting RadTreeView in the Office2016 theme__
 
 ![Telerik UI for WPF RadTreeView with glyphs as item icons](images/radglyph-4.png)
 

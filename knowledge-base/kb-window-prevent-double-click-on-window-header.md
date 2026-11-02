@@ -15,13 +15,13 @@ ticketid: 1708855
 <table>
 <tbody>
 <tr>
-<td> Product </td>
+<th scope="row"> Product </th>
 <td>
 Window for UI for WPF
 </td>
 </tr>
 <tr>
-<td> Version </td>
+<th scope="row"> Version </th>
 <td> 2025.3.813 </td>
 </tr>
 </tbody>

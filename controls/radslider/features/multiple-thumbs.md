@@ -21,7 +21,7 @@ __Example 1: Defining multiple thumbs__
 
 <snippet id='radslider-features-multiple-thumbs-block_1-xaml' />
 
-#### Figure 1: RadSlider with multiple thumbs
+__Figure 1: RadSlider with multiple thumbs__
 
 ![RadSlider with multiple thumbs](images/multiple-thumbs-1.png)
 
@@ -31,7 +31,7 @@ Both the SliderThumb and RangeSliderThumb classes provide the [InteractionMode](
 
 The SliderThumb represents a single thumb which can be dragged by the user and exposes a single **Value** property of type **double**.
 
-#### Figure 2: The SliderThumb
+__Figure 2: The SliderThumb__
 
 ![The SliderThumb](images/multiple-thumbs-2.gif)
 
@@ -39,7 +39,7 @@ The SliderThumb represents a single thumb which can be dragged by the user and e
 
 The RangeSliderThumb, on the other hand, represents a control with two draggable thumbs (of type **SliderThumb**) as well as an extra thumb (of type **Thumb**) in between to drag the whole range.
 
-#### Figure 3: The RangeSliderThumb
+__Figure 3: The RangeSliderThumb__
 
 ![The RangeSliderThumb](images/multiple-thumbs-3.gif)
 
@@ -63,7 +63,7 @@ You can control the action of the individual thumbs when they come in contact wi
 - **Lock**: When the active thumb interacts with the locked thumb it is not possible to pass through this thumb.
 - **Push**: When the active thumb interacts with the thumb in push mode, its position will be changed to the position of the active thumb.
 
-#### Figure 4: The effect of the different interaction modes
+__Figure 4: The effect of the different interaction modes__
 
 ![The effect of the different interaction modes](images/multiple-thumbs-4.gif)
 
@@ -91,7 +91,7 @@ __Example 3: Styling the thumbs through the properties of the RadSlider__
 
 <snippet id='radslider-features-multiple-thumbs-block_3-xaml' />
 
-#### Figure 5: Styling the thumbs
+__Figure 5: Styling the thumbs__
 
 ![Styling the thumbs](images/multiple-thumbs-5.png)
 

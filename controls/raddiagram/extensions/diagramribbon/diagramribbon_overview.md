@@ -31,7 +31,7 @@ __Example 1: Specify RadDiagramRibbon in XAML__
 <snippet id='raddiagram-extensions-diagramribbon-diagramribbon-overview-example_1_specify_raddiagramribbon_in_xaml-xaml' />
 
 
-#### __Figure 1: DiagramRibbon Overview__ 
+__Figure 1: DiagramRibbon Overview__ 
 ![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Overview.png)
 
 >Please note that the examples in this tutorial are showcasing the Windows8 theme. In the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article you can find more information on how to set an application-wide theme.
@@ -107,7 +107,7 @@ __Example 7: Setting the ShowLayoutModeButton property__
 <snippet id='raddiagram-extensions-diagramribbon-diagramribbon-overview-example_7_setting_the_showlayoutmodebutton_property-xaml' />
 
 
-#### __Figure 4: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
+__Figure 4: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
 ![RadDiagramRibbon Simplified LayoutMode](images/RadDiagram_DiagramRibbon_SimplifiedLayoutMode.gif)
 
 ## Diagram Active Tool 
@@ -118,7 +118,7 @@ __Example 8: Setting ActiveToolType to Text tool__
 <snippet id='raddiagram-extensions-diagramribbon-diagramribbon-overview-example_8_setting_activetooltype_to_text_tool-xaml' />
 
 
-#### __Figure 5: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
+__Figure 5: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
 ![RadDiagramRibbon ActiveToolType](images/RadDiagram_DiagramRibbon_ActiveToolType.png)
 
 ## See Also

@@ -22,7 +22,7 @@ __Example 1: Setting RouteConnections property in XAML__
 <snippet id='raddiagram-features-routing-example_1_setting_routeconnections_property_in_xaml-xaml' />
 
 
-#### __Figure 1: Default routing__
+__Figure 1: Default routing__
 ![raddiagram-features-routing 0](images/raddiagram-features-routing1_New.png)
 
 If you want to __exclude/include__ a connection from the routing process, you can use the __Route__ property of the __RadDiagramConnection__. Using the code above we will exclude the second connection from the routing by setting its __Route__ property to __False__.
@@ -31,7 +31,7 @@ __Example 2: Setting Route property to False__
 <snippet id='raddiagram-features-routing-example_2_setting_route_property_to_false-xaml' />
 
 
-#### __Figure 2: Route property set to False__
+__Figure 2: Route property set to False__
 ![raddiagram-features-routing 1](images/raddiagram-features-routing2_New.png)	
 	
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.		  
@@ -71,7 +71,7 @@ __Example 4: Specifing RadDiagram in XAML__
 
 __Figure 3__ demonstrate these shapes after TreeDown Layout operation performed on the Diagram.
 
-#### __Figure 3: TreeDown Layout__
+__Figure 3: TreeDown Layout__
 ![raddiagram-features-routing 2](images/raddiagram-features-routing3.png)
 
 The OrgTreeRouter is used in our __ClassDiagram__ and __OrgChart__ samples of RadDiagram.
@@ -98,7 +98,7 @@ On a button's click event handler we will perform 3 base steps:
 
 Here is a possible result in Windows8 theme:
 
-#### __Figure 4: TreeLayoutType set to TipOverTree__
+__Figure 4: TreeLayoutType set to TipOverTree__
 ![raddiagram-features-routing 3](images/raddiagram-features-routing4.png)
 
 ## AStarRouter
@@ -107,7 +107,7 @@ As the name suggest this is a connection router that uses a version of the [A* s
 
 >tip The routing connection algorithm of the AStarRouter support two types of connection: Polyline and Spline.
 
-#### Using Diagram Constants
+### Using Diagram Constants
 
 * __DiagramConstants.RoutingGridSize__: A property of type double that gets or sets the routing grid size.
 

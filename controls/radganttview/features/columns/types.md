@@ -55,7 +55,7 @@ __Example 3: Setting column properties__
 
 __Figure 1__ shows an example of defined columns.
 
-#### __Figure 1: RadGanttView with the defined columns__
+__Figure 1: RadGanttView with the defined columns__
 
 ![radganttview-features-columns-overview](images/radganttview-features-columns-overview.png)
 
@@ -72,7 +72,7 @@ __Example 4: Setting IsFrozenColumn property__
 
 __Figure 2__ illustrates how the "Title" column stays static while scrolling horizontally.
 
-#### __Figure 2: Scrolling the Grid part with a frozen column__
+__Figure 2: Scrolling the Grid part with a frozen column__
 
 ![RadGanttView Frozen Column](images/radganttview-features-columns-overview_01.png)
 

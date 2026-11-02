@@ -28,7 +28,7 @@ __Example 2: The class holds a collection of a business objects__
 <snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_2-cs' />
 <snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_3-vb' />
 
-#### __Figure 1: The tree view after being populated with business objects__
+__Figure 1: The tree view after being populated with business objects__
 ![{{ site.framework_name }} RadTreeView The tree view after being populated with business objects](images/RadTreeView_TreeViewBringIntoViewSupport_010.png)
 
 If you want to programmatically scroll to "Item 20" (thus bringing this item into view), you could try scenario in __Example 3__.
@@ -37,7 +37,7 @@ __Example 3: Bring RadTreeViewItem into view by its index__
 <snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_4-cs' />
 <snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_5-vb' />
 
-#### __Figure 2: The result of RadTreeViewItem into view by its index__
+__Figure 2: The result of RadTreeViewItem into view by its index__
 ![{{ site.framework_name }} RadTreeView The result of RadTreeViewItem into view by its index](images/RadTreeView_TreeViewBringIntoViewSupport_020.png)
 
 ## BringItemIntoView()
@@ -73,7 +73,7 @@ __Example 6: The view model describing treeview and its business objects__
 <snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_9-cs' />
 <snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_10-vb' />
 	
-#### __Figure 3: Default positioned of the brought item__
+__Figure 3: Default positioned of the brought item__
 ![{{ site.framework_name }} RadTreeView Default positioned of the brought item](images/RadTreeView-BringPathIntoView-TreeViewDef.png)
 
 ## __BringPathIntoView() Overloads__ 
@@ -86,7 +86,7 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 	<snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_11-cs' />
 	<snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_12-vb' />
 
-	#### __Figure 4: Default positioned of the brought item__
+	__Figure 4: Default positioned of the brought item__
 	![{{ site.framework_name }} RadTreeView Default positioned of the brought item](images/RadTreeView_TreeViewBringIntoViewSupport_030.png)
 	
 * __BringPathIntoView(string path, Point offset)__: The *offset* parameter is of type __Point__ and specifies the offset from the top left corner of the tree where the item will be scrolled to. 
@@ -97,7 +97,7 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 	<snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_13-cs' />
 	<snippet id='radtreeview-features-treeview-item-treeviewitem-bring-into-view-support-block_14-vb' />
 	
-	#### __Figure 5: The item is positioned with 100 pixels offset from the top of the viewport__
+	__Figure 5: The item is positioned with 100 pixels offset from the top of the viewport__
 	![{{ site.framework_name }} RadTreeView The item is positioned with 100 pixels offset from the top of the viewport](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
 
 	> When the UI virtualization of RadTreeView is enabled, the brought item may not be positioned at the top of the viewport due to specifics of the virtualization mechanism. This means that the offset may not behave as expected. In such cases, you can manually update the scroll position as described in the [following KB article]({%slug kb-treeview-bringpathintoview-offset-virtualization%}).

@@ -20,7 +20,7 @@ The row alternation of the control can be utilized through the __RowAlternationC
 __Example 1: Setting the RowAlternationCount__
 <snippet id='radvirtualgrid-features-alternation-block_1-xaml' />
 
-#### __Figure 1: Setting the RowAlternationCount property__
+__Figure 1: Setting the RowAlternationCount property__
 ![Setting the RowAlternationCount property](images/RadVirtualGrid_Features_Alternation_01.png)
 
 ## Column Alternation
@@ -30,7 +30,7 @@ Respectively, the alternation of the columns of __RadVirtualGrid__ can be manipu
 __Example 2: Setting the ColumnAlternationCount__
 <snippet id='radvirtualgrid-features-alternation-block_2-xaml' />
 
-#### __Figure 2: Setting the ColumnAlternationCount property__
+__Figure 2: Setting the ColumnAlternationCount property__
 ![Setting the ColumnAlternationCount property](images/RadVirtualGrid_Features_Alternation_02.png)
 
 ## Custom Alternation color
@@ -40,7 +40,7 @@ __RadVirtualGrid__ exposes a property for altering the default background applie
 __Example 3: Setting the AlternationBrush__
 <snippet id='radvirtualgrid-features-alternation-block_3-xaml' />
 
-#### __Figure 3: Setting the AlternationBrush property__
+__Figure 3: Setting the AlternationBrush property__
 ![Setting the ColumnAlternationCount property](images/RadVirtualGrid_Features_Alternation_03.png)
 
 ## See Also

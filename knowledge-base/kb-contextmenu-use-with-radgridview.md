@@ -14,11 +14,11 @@ res_type: kb
 <table>
 <tbody>
 <tr>
-<td>Product Version</td>
+<th scope="row">Product Version</th>
 <td>2026.1.415</td>
 </tr>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>RadContextMenu for WPF</td>
 </tr>
 </tbody>

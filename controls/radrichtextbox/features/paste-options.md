@@ -50,7 +50,7 @@ You can change these settings using the [PasteSettings](#pastesettings-members) 
 
 The **IsPasteOptionsPopupEnabled** dependency property of RadRichTextBox enables you to control whether the popup shown when pasting will be enabled or not. The default value of the property is `true`.
 
-#### [XAML] Example 1: Turn off the popup providing paste options
+__[XAML] Example 1: Turn off the popup providing paste options__
 <snippet id='radrichtextbox-features-paste-options-block_1-xaml' />
 
 
@@ -80,14 +80,14 @@ You can invoke the paste with specific options through the RadRichTextBox/RadDoc
 
 >important The method exposed by **RadRichTextBox** executes the paste and shows the popup for the user to choose another paste option if they would like to. If you would like to paste from the code without showing any UI, you can use the method of **RadDocumentEditor**.
 
-#### [C#] Example 2: Paste with Specific Settings
+__[C#] Example 2: Paste with Specific Settings__
 <snippet id='radrichtextbox-features-paste-options-block_2-cs' />
 
 ## Executing Paste through UI
 
 When the users paste content in RadRichTextBox using the Ctrl+V keyboard shortcut, a popup appears to let them choose the paste option they would like to use. If none of the buttons is pressed, the deafult option for the source is used. 
 
-#### Figure 1: Paste Options Popup in RadRichTextBox
+__Figure 1: Paste Options Popup in RadRichTextBox__
 ![Paste Options Popup in RadRichTextBox](images/RadRichTextBox_Features_PasteOptions.png)
 
 

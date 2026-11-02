@@ -40,7 +40,7 @@ In addition, add a reference to the **Telerik.WinControls**, **Telerik.WinContro
 
 Drag a **RadCalendar** and a **RadButton** to the designer from the Toolbox.
 
-#### Figure 1: The Telerik WinForms controls in the designer
+__Figure 1: The Telerik WinForms controls in the designer__
 
 ![The Telerik WinForms controls in the designer](images/wf-controls-wpf-app-1.png)
 
@@ -86,7 +86,7 @@ WindowsFormsHost represents the [WindowsFormsHost](https://docs.microsoft.com/en
 
 As a result, the Telerik Windows Forms controls are rendered as part of the WPF window, and you can communicate with them from the application.
 
-#### Figure 2: The Telerik WinForms controls in the WPF application
+__Figure 2: The Telerik WinForms controls in the WPF application__
 
 ![The Telerik WinForms controls in the WPF application](images/wf-controls-wpf-app-2.png)
 

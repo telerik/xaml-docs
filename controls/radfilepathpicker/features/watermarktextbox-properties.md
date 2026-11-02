@@ -20,7 +20,7 @@ __Example 1: Setting the WatermarkContent__
 <snippet id='radfilepathpicker-features-watermarktextbox-properties-example_1_setting_the_watermarkcontent-xaml' />
 
 
-#### __Figure 1: RadFilePathPicker with WatermarkContent__
+__Figure 1: RadFilePathPicker with WatermarkContent__
 ![RadFilePathPicker with WatermarkContent](images/FilePathPicker_WatermarkContent.png)
 
 ## WatermarkTemplate
@@ -31,7 +31,7 @@ __Example 2: Setting the WatermarkTemplate__
 <snippet id='radfilepathpicker-features-watermarktextbox-properties-example_2_setting_the_watermarktemplate-xaml' />
 
 
-#### __Figure 2: RadFilePathPicker with WatermarkTemplate__
+__Figure 2: RadFilePathPicker with WatermarkTemplate__
 ![RadFilePathPicker with WatermarkTemplate](images/FilePathPicker_WatermarkTemplate.png)
 
 ## EditorVisibility

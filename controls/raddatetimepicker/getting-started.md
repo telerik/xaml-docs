@@ -61,7 +61,7 @@ __Example 2: Adding RadDateTimePicker in code-behind__
 
 If you run the application now you will see the default __RadDateTimePicker__ control with the default watermark content. Clicking on the control's drop down button will display a date and time representations from which you can select a single value.
 
-#### __Figure 1: The RadDateTimePicker created by the code in Example 1__
+__Figure 1: The RadDateTimePicker created by the code in Example 1__
 
 ![RadDateTimePicker](images/dateTimePicker_getting_started_1.png)
 
@@ -121,7 +121,7 @@ __Example 5: Merge the ResourceDictionaries__
 
 __Figure 2__ shows __RadDateTimePicker__ with the **Windows8** theme applied.
 	
-#### __Figure 2: RadDateTimePicker with the Windows8 theme__
+__Figure 2: RadDateTimePicker with the Windows8 theme__
 
 ![RadDateTimePicker with Windows8 theme](images/dateTimePicker_getting_started_2.png)
 

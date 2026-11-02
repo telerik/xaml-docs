@@ -13,7 +13,7 @@ position: 0
 
 __CartesianChart3DGrid__ is used to decorate the 3D Cartesian chart with grid lines and strip lines placed over the planes (sides) of the plot area.
 
-#### __Figure 1: CartesianChart3DGrid__
+__Figure 1: CartesianChart3DGrid__
 ![{{ site.framework_name }} RadChartView3D CartesianChart3DGrid](images/radchartview-3d-chartgrid-0.png)
 
 ## Setting up the grid
@@ -24,7 +24,7 @@ __Example 1: Setting up the grid__
 <snippet id='radchartview3d-features-chart-grid-example_1_setting_up_the_grid-xaml' />
 
 
-#### __Figure 2: Grid lines__
+__Figure 2: Grid lines__
 ![{{ site.framework_name }} RadChartView3D Grid lines](images/radchartview-3d-chartgrid-1.png)
 
 > By default only the grid lines of the plot area planes are displayed. The strip lines are not shown. 
@@ -33,7 +33,7 @@ __Example 1: Setting up the grid__
 
 __CartesianChart3DGrid__ allows you to specify the visibility of the grid lines and strip lines of each plane. You can also set their materials and the stroke thickness of the grid lines.
 
-#### __Figure 3: Plot area planes__
+__Figure 3: Plot area planes__
 ![{{ site.framework_name }} RadChartView3D Plot area planes](images/radchartview-3d-chartgrid-2.png)
 
 To set the visibility of the grid and strip lines you can use the following properties.
@@ -66,21 +66,21 @@ __Example 4: Setting X grid lines material__
 <snippet id='radchartview3d-features-chart-grid-example_4_setting_x_grid_lines_material-xaml' />
 
 
-#### __Figure 4: Colored grid lines__
+__Figure 4: Colored grid lines__
 ![{{ site.framework_name }} RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-3.png)
 
 __Example 5: Setting Y grid lines material__
 <snippet id='radchartview3d-features-chart-grid-example_5_setting_y_grid_lines_material-xaml' />
 
 
-#### __Figure 5: Colored grid lines__
+__Figure 5: Colored grid lines__
 ![{{ site.framework_name }} RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-4.png)
 
 __Example 6: Setting Z grid lines material__
 <snippet id='radchartview3d-features-chart-grid-example_6_setting_z_grid_lines_material-xaml' />
 
 
-#### __Figure 6: Colored grid lines__
+__Figure 6: Colored grid lines__
 ![{{ site.framework_name }} RadChartView3D Colored grid lines](images/radchartview-3d-chartgrid-5.png)
 
 > The strip lines materials are set up using the same manner as in __Examples from 4 to 6__.

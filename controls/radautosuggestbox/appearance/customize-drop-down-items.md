@@ -21,7 +21,7 @@ The __ItemTemplate__ allows you to define a DataTemplate with any UIElements, wh
 __Example 1: Setting ItemTemplate__
 <snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_1_setting_itemtemplate-xaml' />
 
-#### Figure 1: Custom ItemTemplate
+__Figure 1: Custom ItemTemplate__
 ![{{ site.framework_name }} RadAutoSuggestBox Custom ItemTemplate](images/radautosuggestbox-appearance-customize-drop-down-items-0.png)
 
 The __ItemTemplateSelector__ allows you to choose a different DataTemplate for each item in the ItemsSource, based on a condition. 
@@ -32,7 +32,7 @@ __Example 2: Implementing the template selector__
 __Example 3: Setting ItemTemplateSelector__
 <snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_3_setting_itemtemplateselector-xaml' />
 
-#### Figure 2: Custom ItemTemplateSelector
+__Figure 2: Custom ItemTemplateSelector__
 ![{{ site.framework_name }} RadAutoSuggestBox Custom ItemTemplateSelector](images/radautosuggestbox-appearance-customize-drop-down-items-1.png)
 
 The following example shows how to setup a basic RadAutoSuggestBox in order to test the ItemTemplate features.
@@ -50,7 +50,7 @@ The RadAutoSuggestBox control provides few properties to change the drop down de
 __Example 6: Setting drop down sizes__
 <snippet id='radautosuggestbox-appearance-customize-drop-down-items-example_6_setting_drop_down_sizes-xaml' />
 
-#### Figure 3: Custom drop down sizes
+__Figure 3: Custom drop down sizes__
 ![{{ site.framework_name }} RadAutoSuggestBox Custom drop down sizes](images/radautosuggestbox-appearance-customize-drop-down-items-2.png)
 
 Additionally, you can manually open or close the drop down via the __IsDropDownOpen__ property of RadAutoSuggestBox.

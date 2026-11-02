@@ -19,7 +19,7 @@ __Example 1: Setting up the toolbox__
 
 The toolbox can be associated with RadLayoutControl through its __LayoutControl__ property (see __Example 1__).
 	
-#### __Figure 1: Final result__  
+__Figure 1: Final result__  
 ![{{ site.framework_name }} RadLayoutControl Final result](images/radlayoutcontrol-features-toolbox-toolboxview-01.png)
 
 >Dropping items from the toolbox into the layout control is allowed only if the layout control is in [edit mode]({%slug radlayoutcontrol-edit-the-layout%}).
@@ -36,7 +36,7 @@ __Example 2: Enabling the deleted items tracking__
 <snippet id='radlayoutcontrol-features-toolbox-layoutcontroltoolboxview-example_2_enabling_the_deleted_items_tracking-xaml' />
 
 	
-#### __Figure 2: Deleted items__
+__Figure 2: Deleted items__
 ![{{ site.framework_name }} RadLayoutControl Deleted items](images/radlayoutcontrol-features-toolbox-toolboxview-02.png)
 
 ## LayoutControlHierarchicalNodeProxy

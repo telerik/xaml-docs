@@ -27,7 +27,7 @@ The default value of RadDataForm’s __AutoCommit__ property is __True__. In thi
         
 
 
-#### __Figure 1: DataForm with AutoCommit Set to True and in View Mode__
+__Figure 1: DataForm with AutoCommit Set to True and in View Mode__
 
  ![raddataform-auto-commit-1](images/raddataform-auto-commit-1.png)
 
@@ -35,20 +35,20 @@ When entering edit mode (i.e. when the __AutoCommit is True), all commands, but 
         
 
 
-#### __Figure 2: DataForm with AutoCommit Set to True and in Edit Mode__
+__Figure 2: DataForm with AutoCommit Set to True and in Edit Mode__
 
 ![raddataform-auto-commit-2](images/raddataform-auto-commit-2.png)
 
 __Applying changes__ on the current item keeps the commands enabled. __Moving to the next item__ will automatically commit the current edit operation.
 
-#### __Example 1: Setting AutoCommit to True in XAML__
+__Example 1: Setting AutoCommit to True in XAML__
 
 <snippet id='raddataform-features-auto-commit-block_1-xaml' />
 
 
 This XAML configuration keeps `AutoCommit` enabled with the default value.
 
-#### __Example 2: Setting AutoCommit to True in Code__
+__Example 2: Setting AutoCommit to True in Code__
 
 <snippet id='raddataform-features-auto-commit-block_2-cs' />
 
@@ -63,27 +63,27 @@ Use this configuration when you want __RadDataForm__ to commit pending changes a
 __Please, be advised that the following changes regarding AutoCommit = false are available after the 2012 Q1 Service Pack version of the RadControls.__ RadDataForm requires its business type to implement __INotifyPropertyChanged__, in order to utilize this mode properly. In case the mentioned interface is not implemented, the control falls back to its default behavior. RadDataForm with AutoCommit = false mode forces its users to commit any changes, by using the CommitEdit command (the Ok button). The commands for Cancel, Delete and OK are enabled if there are any present uncommitted changes. In that case all the other commands are disabled. And here comes the example:       
 
 
-#### __Figure 3: DataForm with AutoCommit Set to False and in View Mode__
+__Figure 3: DataForm with AutoCommit Set to False and in View Mode__
 
 ![raddataform-auto-commit-3](images/raddataform-auto-commit-3.png)
 
 When entering edit mode, the __Commit and Cancel commands are initially disabled__, as there are no pending changes to commit or cancel. On the other hand, __all the other commands are enabled__.
  
        
-#### __Figure 4: DataForm with AutoCommit Set to False and in Edit Mode__
+__Figure 4: DataForm with AutoCommit Set to False and in Edit Mode__
 
 ![raddataform-auto-commit-4](images/raddataform-auto-commit-4.png)
 
 __When changes are applied, the Navigation and AddNew commands get disabled__, until the editing operation is committed, or cancelled.
 
-#### __Example 3: Setting AutoCommit to False in XAML__
+__Example 3: Setting AutoCommit to False in XAML__
 
 <snippet id='raddataform-features-auto-commit-block_3-xaml' />
 
 
 Set `AutoCommit` to `False` in XAML when the edit operation must remain pending until the user confirms it.
 
-#### __Example 4: Setting AutoCommit to False in Code__
+__Example 4: Setting AutoCommit to False in Code__
 
 <snippet id='raddataform-features-auto-commit-block_4-cs' />
 

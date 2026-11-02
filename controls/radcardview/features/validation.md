@@ -36,7 +36,7 @@ __Example 2: Implementing validation logic in the view model__
 __Example 3: Enabling visual feedback using the data binding properties__
 <snippet id='radcardview-features-validation-example_3_enabling_visual_feedback_using_the_data_binding_properties-xaml' />
 
-#### Figure 1: Data validation visual feedback
+__Figure 1: Data validation visual feedback__
 ![{{ site.framework_name }} RadCardView Data validation visual feedback](images/radcardview-features-validation-0.png)
 
 ## Using Data Annotations
@@ -51,7 +51,7 @@ __Example 5: Data binding the view model property__
 
 In order to see the error visual when using data annotations, press the __Enter key__. This will add the error in the list at the bottom of the card.
 
-#### Figure 2: Data validation visual feedback when using data annotations
+__Figure 2: Data validation visual feedback when using data annotations__
 ![{{ site.framework_name }} RadCardView Data validation visual feedback when using data annotations](images/radcardview-features-validation-1.png)
 
 ## See Also

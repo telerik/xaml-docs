@@ -18,7 +18,7 @@ With the Section Columns feature, **RadRichTextBox** allows you arrange the text
 
 * [Using Section Columns](#using-section-columns)
 
-#### __Figure 1: Text laid out in columns__
+__Figure 1: Text laid out in columns__
 ![RadRichTextBox_Features_Section_Columns_01](images/RadRichTextBox_Features_Section_Columns_01.png)
 
 ## SectionColumn Class
@@ -54,13 +54,13 @@ The **SectionColumnCollection** class contains the information about the text co
 
 **Example 1** demonstrates how you can create an instance of the SectionColumnCollection class that represents two text columns with a custom space and a separator between them.
 
-#### **[C#] Example 1: Create SectionColumnCollection**
+**[C#] Example 1: Create SectionColumnCollection**
 <snippet id='radrichtextbox-features-section-columns-block_1-cs' />
 
 
 __Figure 2__ demonstrates the result of __Example 1__.
 
-#### __Figure 2: Columns with separator__
+__Figure 2: Columns with separator__
 ![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
 
 

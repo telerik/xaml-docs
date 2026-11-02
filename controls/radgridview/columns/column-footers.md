@@ -26,7 +26,7 @@ __Example 2: Set the content of the footer cells__
 <snippet id='radgridview-columns-column-footers-example_2_set_the_content_of_the_footer_cells-xaml' />
 
 
-#### Figure 1: RadGridView with footer cells
+__Figure 1: RadGridView with footer cells__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing footer cells beneath each column](images/RadGridView_ColumnFooters_1.png)
 
@@ -37,7 +37,7 @@ __Example 3: Adding an image to the footer content__
 <snippet id='radgridview-columns-column-footers-example_3_adding_an_image_to_the_footer_content-xaml' />
 
 
-#### Figure 2: Image in the footer cell
+__Figure 2: Image in the footer cell__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView column footer with an image and descriptive text](images/RadGridView_ColumnFooters_2.png)
 
@@ -50,7 +50,7 @@ __Example 4: Adding an aggregate function to a column__
 <snippet id='radgridview-columns-column-footers-example_4_adding_an_aggregate_function_to_a_column-xaml' />
 
 
-#### Figure 3: Footer cell with aggregate results
+__Figure 3: Footer cell with aggregate results__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView footer cell displaying aggregate results](images/RadGridView_ColumnFooters_3.png)
 

@@ -48,7 +48,7 @@ __Example 2: Instantiating a RadRating control in code__
 <snippet id='radrating-getting-started-block_2-cs' />
 <snippet id='radrating-getting-started-block_3-vb' />
 
-#### Figure 1: RadRating
+__Figure 1: RadRating__
 ![RadRating](images/rating_default.png)
 
 ## Key Properties
@@ -88,7 +88,7 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a RadRating with the **Windows8** theme applied.
 
-#### __Figure 2: RadRating with the Windows8 theme__
+__Figure 2: RadRating with the Windows8 theme__
 ![RadRating with Windows8 theme](images/radrating-setting-theme.png)  
 
 ## See also

@@ -44,7 +44,7 @@ __Example 3: Binding BarSeries in XAML__
 <snippet id='radchartview-populating-with-data-series-databinding-example_3_binding_barseries_in_xaml-xaml' />
 
 
-#### Figure 1: Binding BarSeries in XAML 
+__Figure 1: Binding BarSeries in XAML__ 
 
 ![Telerik UI for WPF RadChartView BarSeries Bound to a Collection of Custom Objects in XAML](images/series-databinding_1.png)
 
@@ -63,7 +63,7 @@ __Example 4: Binding BarSeries to primitive types__
 <snippet id='radchartview-populating-with-data-series-databinding-example_4_binding_barseries_to_primitive_types-vb' />
 
 
-#### Figure 2: Binding BarSeries to primitive types
+__Figure 2: Binding BarSeries to primitive types__
 ![Telerik UI for WPF RadChartView BarSeries Bound to an Array of Primitive Numeric Values](images/series-databinding_2.png)
 
 ## Binding BarSeries in code behind

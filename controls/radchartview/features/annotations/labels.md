@@ -23,7 +23,7 @@ __Example 1: Setting annotation label__
 <snippet id='radchartview-features-annotations-labels-example_1_setting_annotation_label-xaml' />
 
 
-#### Figure 1: Annotation Label
+__Figure 1: Annotation Label__
 ![Telerik UI for WPF RadChartView annotation label](images/radchartview-annotations-labels-0.png)
 
 ## Using Label Definition
@@ -34,7 +34,7 @@ __Example 2: Setting LabelDefinition__
 <snippet id='radchartview-features-annotations-labels-example_2_setting_labeldefinition-xaml' />
 
 
-#### Figure 2: Centered Label
+__Figure 2: Centered Label__
 ![Telerik UI for WPF RadChartView centered annotation label](images/radchartview-annotations-labels-1.png)
 
 ## Label Positioning
@@ -43,12 +43,12 @@ Annotations provide a mechanism for label positioning that consists of three lay
 
 * __Location__ property: It defines the primary location of the annotation label visual. It allows you to position the label in 5 different positions, as illustrated below.
 	
-	#### Figure 3: Locations relative to the annotation's visual
+	__Figure 3: Locations relative to the annotation's visual__
 	![Telerik UI for WPF RadChartView annotation label location options](images/RadChartView-annotations-label-location.png)
 	
 * __Horizontal / Vertical Alignment__ property: In conjunction with Location property, you can use the __HorizontalAlignment__ and __VerticalAlignment__ properties to further specify the position of the label. Refer to the table below for possible combinations of these properties:
 	
-	#### Figure 4: Possible alignment-location combinations
+	__Figure 4: Possible alignment-location combinations__
 	![Telerik UI for WPF RadChartView annotation label alignment and location combinations](images/RadChartView-annotations-alignment-location.png)
 
 * __Horizontal / Vertical Offset__ property: Besides the Location, HorizontalAlignment and Vertical Alignment, you can use the __HorizontalOffset__ and __VerticalOffset__ properties to specify an offset in pixels. This offset is applied after the aforementioned properties.
@@ -57,7 +57,7 @@ __Example 3: Custom positioned label__
 <snippet id='radchartview-features-annotations-labels-example_3_custom_positioned_label-xaml' />
 
 
-#### Figure 5: Custom positioned label
+__Figure 5: Custom positioned label__
 ![Telerik UI for WPF RadChartView annotation label with a custom offset](images/radchartview-annotations-labels-2.png)
 
 ## Default Visual Style
@@ -68,7 +68,7 @@ __Example 4: Setting DefaultVisualStyle__
 <snippet id='radchartview-features-annotations-labels-example_4_setting_defaultvisualstyle-xaml' />
 
 
-#### Figure 6: Customized Label Style
+__Figure 6: Customized Label Style__
 ![Telerik UI for WPF RadChartView annotation label with custom style](images/radchartview-annotations-labels-3.png)
 
 ## Defining a Custom Label Template
@@ -79,7 +79,7 @@ __Example 5: Setting custom label template__
 <snippet id='radchartview-features-annotations-labels-example_5_setting_custom_label_template-xaml' />
 
 
-#### Figure 7: Customized Label Template
+__Figure 7: Customized Label Template__
 ![Telerik UI for WPF RadChartView annotation with customized label template](images/radchartview-annotations-labels-4.png)
 
 ## See Also

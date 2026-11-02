@@ -41,7 +41,7 @@ In the Insert tab, you will find a list containing various predefined shapes you
 
 The InsertShape() method of [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) enables you to insert a shape object at the current caret position. The method accepts the shape type and the initial shape size values as parameters.
 
-#### [C#] Example 1: Insert shape in a document
+__[C#] Example 1: Insert shape in a document__
 
 <snippet id='radrichtextbox-features-shapes-shapes-block_1-cs' />
 
@@ -49,7 +49,7 @@ The InsertShape() method of [RadDocumentEditor]({%slug radrichtextbox-features-r
 
 The [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) class exposes several methods related to modifying different shape properties. To use them, you should find the shape that you would like to modify.
 
-#### [C#] Example 2: Getting all shapes in a document
+__[C#] Example 2: Getting all shapes in a document__
 
 <snippet id='radrichtextbox-features-shapes-shapes-block_2-cs' />
 
@@ -63,7 +63,7 @@ Once you have obtained the desired ShapeInline, you can apply the changes to it 
 * **ChangeShapeOutlineWidth(ShapeInline shape, double width)**: Changes the width of the specified shape's outline.
 * **ChangeShapeFill(ShapeInline shape, IShapeFill fill)**: Changes the fill of the specified shape.
 
-#### [C#] Example 3: Insert and modify shape
+__[C#] Example 3: Insert and modify shape__
 
 <snippet id='radrichtextbox-features-shapes-shapes-block_3-cs' />
 
@@ -82,7 +82,7 @@ The fill colors related to shapes are defined by two interfaces: **IShapeFill** 
 
 The **ShapeInline** class exposes the **Body** property to enable you access the content of a shape. The property is of type [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) and you can perform mulitple operations on it.
 
-#### [C#] Example 5: Get the shape content
+__[C#] Example 5: Get the shape content__
 
 <snippet id='radrichtextbox-features-shapes-shapes-block_5-cs' />
 

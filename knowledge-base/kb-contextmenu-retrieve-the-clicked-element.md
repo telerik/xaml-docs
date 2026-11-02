@@ -14,11 +14,11 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
-		<td>Product Version</td>
+		<th scope="row">Product Version</th>
 		<td>2023.3.1114</td>
 	</tr>
 	<tr>
-		<td>Product</td>
+		<th scope="row">Product</th>
 		<td>RadContextMenu for WPF</td>
 	</tr>
 </table>

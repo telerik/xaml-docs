@@ -27,7 +27,7 @@ __Example 1: Declaring an FunnelSeries in XAML__
 <snippet id='radchartview-series-funnelchart-series-funnelseries-example_1_declaring_an_funnelseries_in_xaml-xaml' />
 
 
-#### __Figure 1: FunnelSeries visual appearance__
+__Figure 1: FunnelSeries visual appearance__
 ![Telerik UI for WPF RadChartView FunnelSeries visual appearance](images/radchartview-series-funnelseries.png)
 
 ## Properties
@@ -73,7 +73,7 @@ __Example 4: Set label connectors__
 <snippet id='radchartview-series-funnelchart-series-funnelseries-example_4_set_label_connectors-xaml' />
 
 
-#### __Figure 1: Label connectors visual appearance__
+__Figure 1: Label connectors visual appearance__
 ![Telerik UI for WPF RadChartView FunnelSeries with data point labels](images/radchartview-series-funnelseries_labels.png)
 
 ## Styling the Series

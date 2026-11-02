@@ -14,11 +14,11 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
-		<td>Product Version</td>
+		<th scope="row">Product Version</th>
 		<td>2017.3.913 or later</td>
 	</tr>
 	<tr>
-		<td>Product</td>
+		<th scope="row">Product</th>
 		<td>RadChartView for WPF</td>
 	</tr>
 </table>

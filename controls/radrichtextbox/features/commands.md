@@ -25,7 +25,7 @@ In order to use the command with a UI Element that supports commanding, you have
 Here is an example with a __RadToggleButtonControl__.
         
 
-#### [XAML] Example 1: Binding a command
+__[XAML] Example 1: Binding a command__
 
 <snippet id='radrichtextbox-features-commands-block_1-xaml' />
 
@@ -33,13 +33,13 @@ Here is an example with a __RadToggleButtonControl__.
 Now when the button is clicked, it will toggle the boldness of the current selection. The thing it won't do is to respond to the current state of the selection. For example, if the context of the caret is a bold text, the button in the UI won't get automatically toggled. In order to implement this behavior, you have to handle the __ToggleStateChanged__ event of the __ToggleBoldCommand__ following an approach similar to the one shown in **Example 2**. 
         
 
-#### [C#] Example 2: Update toggle button state using the ToggleStateChanged event of ToggleBoldCommand
+__[C#] Example 2: Update toggle button state using the ToggleStateChanged event of ToggleBoldCommand__
 
 <snippet id='radrichtextbox-features-commands-block_2-cs' />
 
 
 
-#### [VB.NET] Example 2: Update toggle button state using the ToggleStateChanged event of ToggleBoldCommand
+__[VB.NET] Example 2: Update toggle button state using the ToggleStateChanged event of ToggleBoldCommand__
 
 <snippet id='radrichtextbox-features-commands-block_3-vb' />
 
@@ -58,7 +58,7 @@ You can also use the functionality provided by the __RadRichTextBoxRibbonUI__ cl
 If you are building your UI manually, for example using a **RadRibbonView** control, you have to only bind the command to the __RadRichTextBoxRibbonUI__.__RichTextCommand__ attached property of the desired __RadRibbonView__ control. Here is an example with a __RadRibbonToggleButton__.
         
 
-#### [XAML] Example 3: Bind a command to a RadRibbonView control
+__[XAML] Example 3: Bind a command to a RadRibbonView control__
 
 <snippet id='radrichtextbox-features-commands-block_4-xaml' />
 
@@ -95,31 +95,31 @@ By default, __RadRichTextBox__ defines built-in mappings between [ApplicationCom
 
 You can remove some of the bindings by using __RadRichTextBox.RegisteredApplicationCommands__ collection.
 
-#### [C#] Example 4: Remove ApplicationCommands bindings
+__[C#] Example 4: Remove ApplicationCommands bindings__
 
 <snippet id='radrichtextbox-features-commands-block_5-cs' />
 
-#### [VB.NET] Example 4: Remove ApplicationCommands bindings
+__[VB.NET] Example 4: Remove ApplicationCommands bindings__
 
 <snippet id='radrichtextbox-features-commands-block_6-vb' />
 
 and re-add them (as long as they are among the default mappings list) at later time:
 
-#### [C#] Example 5: Add ApplicationCommands bindings
+__[C#] Example 5: Add ApplicationCommands bindings__
 
 <snippet id='radrichtextbox-features-commands-block_7-cs' />
 
-#### [VB.NET] Example 5: Add ApplicationCommands bindings
+__[VB.NET] Example 5: Add ApplicationCommands bindings__
 
 <snippet id='radrichtextbox-features-commands-block_8-vb' />
 
 If you want to handle application commands on RadRichTextBox owner's level, you should suppress the default handling mechanism for the specified shortcut using __RadRichTextBox.PreviewEditorKeyDown__ event:
 
-#### [C#] Example 6: Suppress default action for application command
+__[C#] Example 6: Suppress default action for application command__
 
 <snippet id='radrichtextbox-features-commands-block_9-cs' />
 
-#### [VB.NET] Example 6: Suppress default action for application command
+__[VB.NET] Example 6: Suppress default action for application command__
 
 <snippet id='radrichtextbox-features-commands-block_10-vb' />
 
@@ -129,11 +129,11 @@ If you want to handle application commands on RadRichTextBox owner's level, you 
 
 **RadRichTextBox** exposes two events that allow you interfere the process of executing a command.
 
-#### [C#] Example 7: Subscribing to the events
+__[C#] Example 7: Subscribing to the events__
 
 <snippet id='radrichtextbox-features-commands-block_11-cs' />
 
-#### [VB.NET] Example 7: Subscribing to the events
+__[VB.NET] Example 7: Subscribing to the events__
 
 <snippet id='radrichtextbox-features-commands-block_12-vb' />
 

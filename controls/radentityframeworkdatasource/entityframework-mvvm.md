@@ -19,7 +19,7 @@ This article shows how to create a database using the code-first approach and di
 
 In order to get started, you can create a new project and add the __EntityFramework__ NuGet.
 
-#### __Figure 1: EntityFramework NuGet__
+__Figure 1: EntityFramework NuGet__
 ![EntityFramework NuGet](images/RadEntityFramework_MVVM_NuGet.png)
 
 Then you can add the needed Telerik references.
@@ -55,7 +55,7 @@ __Example 3: Seting up the XAML__
 <snippet id='radentityframeworkdatasource-entityframework-mvvm-example_3_seting_up_the_xaml-xaml' />
 
 
-#### __Figure 2: Result from running the example in the Fluent theme__
+__Figure 2: Result from running the example in the Fluent theme__
 ![RadGridView and RadDataPager in the Fluent theme](images/RadEntityFramework_MVVM_Gridview_Pager.png)
 
 ## See also

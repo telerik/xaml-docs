@@ -47,7 +47,7 @@ __Example 2: Populating with Items in xaml__
 
 Another way to populate RadNavigationView with items is to use data binding. See the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article for details.
 
-#### __Figure 1: Result from Example 1 in the Office 2016 theme__
+__Figure 1: Result from Example 1 in the Office 2016 theme__
 ![RadNavigationView populated with items](images/NavigationView_GettingStarted.png)
 
 >Check out the [Icon and IconTemplate]({%slug common-styling-appearance-radglyph%}) article for more information on those properties. 
@@ -74,7 +74,7 @@ __Example 5__ demonstrates how you can set the  property in order to increase th
 __Example 5: Setting the CompactPaneWidth property__
 <snippet id='radnavigationview-getting-started-block_5-xaml' />
 
-#### __Figure 2: Result from Example 5 in the Office 2016 theme__
+__Figure 2: Result from Example 5 in the Office 2016 theme__
 ![RadNavigationView with CompactPaneWidth set](images/NavigationView_CompactPaneWidth.png)
 
 ## Navigation
@@ -123,7 +123,7 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 3__ shows a RadNavigationView with the **Windows8** theme applied.
 
-#### __Figure 3: RadNavigationView with the Windows8 theme__
+__Figure 3: RadNavigationView with the Windows8 theme__
 ![RadNavigationView with Windows8 theme](images/radnavigationview-setting-theme.png)	
 
 {% if site.site_name == 'WPF' %}

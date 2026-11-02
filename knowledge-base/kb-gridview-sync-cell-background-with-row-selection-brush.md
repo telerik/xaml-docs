@@ -15,11 +15,11 @@ ticketid: 1631425
 <table>
 <tbody>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>RadGridView for WPF</td>
 </tr>
 <tr>
-<td>Version</td>
+<th scope="row">Version</th>
 <td>Current</td>
 </tr>
 </tbody>

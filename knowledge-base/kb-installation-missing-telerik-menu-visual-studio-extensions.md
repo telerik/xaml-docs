@@ -14,11 +14,11 @@ res_type: kb
 <table>
 <tbody>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>Progress Telerik UI for WPF</td>
 </tr>
 <tr>
-<td>Component</td>
+<th scope="row">Component</th>
 <td>Telerik UI for WPF Visual Studio Extensions</td>
 </tr>
 </tbody>

@@ -24,21 +24,21 @@ In order to create a custom tool you need to create a class and derive it from y
 
 Here is how this can be done with both tools:
 
-#### **[C#] Example 1: Defining a custom tool**
+**[C#] Example 1: Defining a custom tool**
 <snippet id='raddiagram-howto-customize-path-pencil-tools-block_1-cs' />
 
 
-#### **[VB.NET] Example 1: Defining a custom tool**
+**[VB.NET] Example 1: Defining a custom tool**
 <snippet id='raddiagram-howto-customize-path-pencil-tools-block_2-vb' />
 
 
 You will also need to create a constructor for those tools which receives and assigns a string to the __Name__ property of the tool. Based on this Name, RadDiagram (de)selects the tools. 
 
-#### **[C#] Example 2: Defining constructor for the custom tool** 
+**[C#] Example 2: Defining constructor for the custom tool** 
 <snippet id='raddiagram-howto-customize-path-pencil-tools-block_3-cs' />
 
 
-#### **[VB.NET] Example 2: Defining constructor for the custom tool**
+**[VB.NET] Example 2: Defining constructor for the custom tool**
 <snippet id='raddiagram-howto-customize-path-pencil-tools-block_4-vb' />
 
 
@@ -48,11 +48,11 @@ Now you are ready to replace the existing tool in the RadDiagram. To do this, yo
 
 >You need to always replace the default tools if you need to customize some of the existing functionality. For this you need to use the exact same names to create your customized tools. Otherwise, the RadDiagram will not replace the default ones.
 
-#### **[C#] Example 3: Replacing the default tool**
+**[C#] Example 3: Replacing the default tool**
 <snippet id='raddiagram-howto-customize-path-pencil-tools-block_5-cs' />
 
 
-#### **[VB.NET] Example 3: Replacing the default tool**
+**[VB.NET] Example 3: Replacing the default tool**
 <snippet id='raddiagram-howto-customize-path-pencil-tools-block_6-vb' />
 
 
@@ -64,11 +64,11 @@ If you attempt to use the custom tools at this point, they will act just like th
 
 To accomplish this, override the __CompleteTool()__ method of the Drawing tools like shown in **Example 4**.
 
-#### **[C#] Example 4: Override the CompleteTool() method**
+**[C#] Example 4: Override the CompleteTool() method**
 <snippet id='raddiagram-howto-customize-path-pencil-tools-block_7-cs' />
 
 
-#### **[VB.NET] Example 4: Override the CompleteTool() method**
+**[VB.NET] Example 4: Override the CompleteTool() method**
 <snippet id='raddiagram-howto-customize-path-pencil-tools-block_8-vb' />
 
 

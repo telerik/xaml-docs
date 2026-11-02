@@ -45,10 +45,10 @@ There are several methods that allow you to change the properties of a shape.
 | AddShapeTextBox(ShapeInline shape) | Initializes a text box element for a shape that does not have any. |
 
 
-#### [C#] Example 1: Insert and modify shape with text
+__[C#] Example 1: Insert and modify shape with text__
 
 <snippet id='radrichtextbox-features-shapes-shapes-text-block_1-cs' />
 
-# See Also
+## See Also
 
 * [Shapes](({%slug radrichtextbox-features-shapes%}))

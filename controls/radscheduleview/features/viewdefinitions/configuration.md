@@ -137,7 +137,7 @@ __Example 9: Setting the VisibleDays property in XAML__
 __Example 10: Setting the VisibleDays property in code__  
 <snippet id='radscheduleview-features-viewdefinitions-configuration-block_10-cs' />
 
-#### __Figure 1: RadScheduleView with VisibleDays set__  
+__Figure 1: RadScheduleView with VisibleDays set__  
 ![radschedule View viewdefinitions configuration 01](images/radscheduleView_viewdefinitions_configuration_01.png)
 
 ## FirstDayOfWeek
@@ -151,7 +151,7 @@ When `StretchGroupHeaders` is `True`, the control distributes unused space in th
 __Example 11: Setting the StretchGroupHeaders property__  
 <snippet id='radscheduleview-features-viewdefinitions-configuration-block_11-xaml' />
 
-#### __Figure 2: RadScheduleView with StretchGroupHeaders set__  
+__Figure 2: RadScheduleView with StretchGroupHeaders set__  
 ![{{ site.framework_name }} RadScheduleView RadScheduleView with StretchGroupHeaders set](images/radscheduleView_viewdefinitions_configuration_08.png)
 
 ## Orientation
@@ -176,13 +176,13 @@ __Example 13: Setting the Orientation property in code__
 
 The following figures show the how the Orientation property affects the views.
 
-#### __Figure 3: DayView with Horizontal Orientation__  
+__Figure 3: DayView with Horizontal Orientation__  
 ![radschedule View viewdefinitions configuration 05](images/radscheduleView_viewdefinitions_configuration_05.png)
 
-#### __Figure 4: WeekView with Horizontal Orientation__  
+__Figure 4: WeekView with Horizontal Orientation__  
 ![radschedule View viewdefinitions configuration 06](images/radscheduleView_viewdefinitions_configuration_06.png)
 
-#### __Figure 5: TimelineView with Vertical Orientation__  
+__Figure 5: TimelineView with Vertical Orientation__  
 ![radschedule View viewdefinitions configuration 07](images/radscheduleView_viewdefinitions_configuration_07.png)
 
 ## GroupFilter
@@ -195,7 +195,7 @@ __Example 14: Defining the GroupFilter predicate in the view model__
 __Example 15: Applying the GroupFilter to a WeekView__  
 <snippet id='radscheduleview-features-viewdefinitions-configuration-block_15-xaml' />
 
-#### __Figure 6: WeekView with applied GroupFilter__  
+__Figure 6: WeekView with applied GroupFilter__  
 ![radschedule View viewdefinitions configuration 07](images/radscheduleView_viewdefinitions_configuration_09.png)
  
 ## SubGroupsFilter
@@ -208,7 +208,7 @@ __Example 16: Defining the SubGroupsFilter in the view model__
 __Example 17: Populating RadScheduleView with Resources and binding the SubGroupsFilter__  
 <snippet id='radscheduleview-features-viewdefinitions-configuration-block_17-xaml' />
 
-#### __Figure 7: WeekView with applied SubGroupsFilter__  
+__Figure 7: WeekView with applied SubGroupsFilter__  
 ![radschedule View viewdefinitions configuration 07](images/radscheduleView_viewdefinitions_configuration_10.png)
 
 ## See Also  

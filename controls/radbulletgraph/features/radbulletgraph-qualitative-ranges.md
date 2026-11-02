@@ -24,7 +24,7 @@ __Example 1: Showing qualitative ranges__
 
 > The QualitativeRange is drawn from the Minimum of the scale to the value set in the Value property. If the Value property is not set, the range will be drawn to the Maximum of the scale.
 
-#### Figure 1: Qualitative ranges
+__Figure 1: Qualitative ranges__
 ![radbulletgraph-features-qualitative-ranges-0.png](images/radbulletgraph-features-qualitative-ranges-0.png)
 
 ## Predefined Quality Brushes
@@ -44,7 +44,7 @@ The quality brushes are stored in the following properties.
 __Example 2: Using the quality brushes__
 <snippet id='radbulletgraph-features-radbulletgraph-qualitative-ranges-example_2_using_the_quality_brushes-xaml' />
 
-#### Figure 2: Predefined quality brushes in the Office2016 theme
+__Figure 2: Predefined quality brushes in the Office2016 theme__
 ![radbulletgraph-features-qualitative-ranges-1.png](images/radbulletgraph-features-qualitative-ranges-1.png)
 
 ## See Also  

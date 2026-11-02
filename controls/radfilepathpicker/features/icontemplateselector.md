@@ -20,14 +20,14 @@ The default value of the __IconTemplateSelector__ property of the control is an 
 
     The __EmptyTemplate__ is displayed, when the __FilePath__ property of the control is null or empty as demonstrated in __Figure 1__.
 
-    #### __Figure 1: FilePathPickerIconTemplateSelector EmptyTemplate__
+    __Figure 1: FilePathPickerIconTemplateSelector EmptyTemplate__
     ![FilePathPickerIconTemplateSelector EmptyTemplate](images/FilePathPicker_IconTemplateSelector_EmptyTemplate.png)
 
 * __NonEmptyTemplate__
 
     The __NonEmptyTemplate__ is displayed, when the __FilePath__ property of the control is not empty as demonstrated in __Figure 2__.
 
-    #### __Figure 2: FilePathPickerIconTemplateSelector NonEmptyTemplate__
+    __Figure 2: FilePathPickerIconTemplateSelector NonEmptyTemplate__
     ![FilePathPickerIconTemplateSelector NonEmptyTemplate](images/FilePathPicker_IconTemplateSelector_NonEmptyTemplate.png)
 
 >tip In order to hide the icon, you can set the __IconVisibility__ property of the control to __Collapsed__.
@@ -40,10 +40,10 @@ __Example 1: Custom FilePathPickerIconTemplateSelector__
 <snippet id='radfilepathpicker-features-icontemplateselector-example_1_custom_filepathpickericontemplateselector-xaml' />
 
 
-#### __Figure 3: Custom FilePathPickerIconTemplateSelector EmptyTemplate__
+__Figure 3: Custom FilePathPickerIconTemplateSelector EmptyTemplate__
 ![Custom FilePathPickerIconTemplateSelector EmptyTemplate](images/FilePathPicker_CustomIconTemplateSelector_EmptyTemplate.png)
 
-#### __Figure 4: Custom FilePathPickerIconTemplateSelector NonEmptyTemplate__
+__Figure 4: Custom FilePathPickerIconTemplateSelector NonEmptyTemplate__
 ![Custom FilePathPickerIconTemplateSelector NonEmptyTemplate](images/FilePathPicker_CustomIconTemplateSelector_NonEmptyTemplate.png)
 
 ## See Also 

@@ -33,7 +33,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 __Example 1: Defining RadWatermarkTextBox__
 <snippet id='radwatermarktextbox-getting-started-block_1-xaml' />
 
-#### __Figure 1: Defining RadWatermarkTextBox__
+__Figure 1: Defining RadWatermarkTextBox__
 ![Defining RadWatermarkTextBox](images/RadWatermarkTextBox_GettingStarted_01.png)
 
 ## Setting the WatermarkContent
@@ -43,7 +43,7 @@ __Example 1: Defining RadWatermarkTextBox__
 __Example 2: Setting the WatermarkContent__
 <snippet id='radwatermarktextbox-getting-started-block_2-xaml' />
 
-#### __Figure 2: Setting the WatermarkContent__
+__Figure 2: Setting the WatermarkContent__
 
 ![Setting the WatermarkContent](images/RadWatermarkTextBox_GettingStarted_02.png)
 
@@ -67,7 +67,7 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 3__ shows RadWatermarkTextBox with the **Windows8** theme applied.
 	
-#### __Figure 3: RadWatermarkTextBox with the Windows8 theme__
+__Figure 3: RadWatermarkTextBox with the Windows8 theme__
 ![Telerik {{ site.framework_name }} RadWatermarkTextBox -windows8](images/RadWatermarkTextBox-windows8.png)
 
 ## See also

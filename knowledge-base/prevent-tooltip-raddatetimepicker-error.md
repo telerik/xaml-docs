@@ -16,11 +16,11 @@ ticketid: 1691793
 <table>
 <tbody>
 <tr>
-<td> Product </td>
+<th scope="row"> Product </th>
 <td> RadDateTimePicker for WPF </td>
 </tr>
 <tr>
-<td> Version </td>
+<th scope="row"> Version </th>
 <td> 2025.2.521 </td>
 </tr>
 </tbody>

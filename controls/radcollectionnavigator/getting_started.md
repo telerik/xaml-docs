@@ -47,7 +47,7 @@ __Example 1: RadCollectionNavigator bound to a ListBox__
 <snippet id='radcollectionnavigator-getting-started-example_1_radcollectionnavigator_bound_to_a_listbox-xaml' />
 
 
-#### __Figure 1: RadCollectionNavigator in the Fluent theme__
+__Figure 1: RadCollectionNavigator in the Fluent theme__
 
 ![RadCollectionNavigator bound to a ListBox](images/collectionnavigator-getting-started.png)
 
@@ -76,7 +76,7 @@ __Example 2: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a __RadCollectionNavigator__ with the **Fluent** theme applied.
 	
-#### __Figure 2: RadCollectionNavigator with the Fluent theme__
+__Figure 2: RadCollectionNavigator with the Fluent theme__
 ![RadCollectionNavigator with Fluent theme](images/radcollectionnavigator-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

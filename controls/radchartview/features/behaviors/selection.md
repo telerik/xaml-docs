@@ -29,7 +29,7 @@ __Example 3: Using the ChartSelectionBehavior__
 <snippet id='radchartview-features-behaviors-selection-example_3_using_the_chartselectionbehavior-xaml' />
 
 
-#### Figure 1: Selected data point
+__Figure 1: Selected data point__
 ![Telerik UI for WPF RadChartView with a Selected Data Point](images/radchartview-features-selection-0.png)
 
 The selected data points can be accessed using the __Selected
@@ -42,7 +42,7 @@ __Example 4: Setting the selection palette__
 <snippet id='radchartview-features-behaviors-selection-example_4_setting_the_selection_palette-xaml' />
 
 
-#### Figure 2: Palette based selection coloring
+__Figure 2: Palette based selection coloring__
 ![Telerik UI for WPF RadChartView Using Palette-Based Selection Coloring](images/radchartview-features-selection-1.png)
 
 To define selection colors different than the ones provided by the predefined palettes, you can create a [custom palette]({%slug radchartview-features-palettes-custom-palettes%}) and assign it to the SelectionPalette property of the chart. Or alternatively, use the [DefaultVisualStyle or PointTemplate]({%slug radchartview-styles-and-templates-customizing-cartesianchart-series%}) of the chart series. 
@@ -55,7 +55,7 @@ __Example 5: Customizing the data point visual__
 
 The __data context__ of the element in the __PointTemplate__ is an object of type [DataPoint]({%slug radchartview-getting-started-data-point%})
 
-#### Figure 3: PointTemplate based selection coloring
+__Figure 3: PointTemplate based selection coloring__
 ![Telerik UI for WPF RadChartView Using PointTemplate-Based Selection Coloring](images/radchartview-features-selection-2.png)
 
 An additional way of customizing the selection's visual feedback is to data bind the color property of the default visual element (via DefaultVisualStyle) or the element in the PointTemplate. Then update the underlying property in case the selection changes, using the [SelectionChanged](#events) event of the ChartSelectionBehavior.
@@ -74,7 +74,7 @@ __Example 6: Setting DataPointSelectionMode__
 <snippet id='radchartview-features-behaviors-selection-example_6_setting_datapointselectionmode-xaml' />
 
 
-#### Figure 4: Multiple selection
+__Figure 4: Multiple selection__
 ![Telerik UI for WPF RadChartView with Multiple Data Points Selected](images/radchartview-features-selection-3.png)
 
 ## Hit Test Area

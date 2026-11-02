@@ -13,7 +13,7 @@ position: 2
 
 The __RadSplitContainer__ allows you to use movable bars to divide the displayed area into resizable parts. With the __RadDocking__'s __SplitContainers__ you can build complex layouts like the one shown on **Figure 1**. Some practical examples of such layouts are Explorer-like and Outlook-like interfaces.
 
-#### __Figure 1: RadDocking with complex layout__
+__Figure 1: RadDocking with complex layout__
 
 ![RadDocking with complex layout](images/RadDocking_Features_SplitContainer_010.png)
 
@@ -36,7 +36,7 @@ __Example 1: Setting the container's Orientation to Vertical__
 <snippet id='raddocking-features-split-container-example_1_setting_the_container_s_orientation_to_vertical-xaml' />
 
 
-#### __Figure 2: Setting the container's Orientation to Vertical__
+__Figure 2: Setting the container's Orientation to Vertical__
 
 ![Setting the container's Orientation to Vertical](images/RadDocking_Features_SplitContainer_020.png)
 
@@ -51,7 +51,7 @@ __Example 2: Setting the container's Orientation to Horizontal__
 
 Then the result will be:
 
-#### __Figure 3: Setting the container's Orientation to Horizontal__
+__Figure 3: Setting the container's Orientation to Horizontal__
 
 ![Setting the container's Orientation to Horizontal](images/RadDocking_Features_SplitContainer_030.png)
 

@@ -20,7 +20,7 @@ The card's size is determined by the __MajorLength__ and __MinorLength__ propert
 When the __CardLayout__ property is set to __Rows__ the __MajorLength__ is applied to the card's __width__ and the __MinorLength__ to the card's __height__. 
 When the __CardLayout__ is __Columns__ the __MajorLength__ is applied to the card's __height__ and the __MinorLength__ to the card's __width__. 
 
-#### Figure 1: MajorLength and MinorLength examples
+__Figure 1: MajorLength and MinorLength examples__
 ![MajorLength and MinorLength examples](images/radcardview-appearance-customizing-cards-0.png)
 
 Additionally, you can set the __CollapsedLength__ property in order to change the size of the cards while in collapsed state.
@@ -40,7 +40,7 @@ The header content of a card is determined by the __CardHeaderBinding__ property
 __Example 3: Setting card header template__
 <snippet id='radcardview-appearance-customizing-cards-example_3_setting_card_header_template-xaml' />
 
-#### Figure 2: Custom card header
+__Figure 2: Custom card header__
 ![Custom card header](images/radcardview-appearance-customizing-cards-1.png)
 
 >tip The data context in the __CardHeaderTemplate__ comes from the property bound to the __CardHeaderBinding__.
@@ -57,7 +57,7 @@ To customize the field that shows the value, set the __EditorTemplate__ and __Re
 __Example 5: Setting EditorTemplate and ReadOnlyTemplate__
 <snippet id='radcardview-appearance-customizing-cards-example_5_setting_editortemplate_and_readonlytemplate-xaml' />
 
-#### Figure 3: Custom read only and editor templates for one of the data fields
+__Figure 3: Custom read only and editor templates for one of the data fields__
 ![Custom read only and editor templates for one of the data fields](images/radcardview-appearance-customizing-cards-2.png)
 
 ## Card Contents
@@ -80,11 +80,11 @@ __Example 5: Defining CardReadOnlyTemplate and CardEditTemplate__
 __Example 6: Execute RadCardView commands__
 <snippet id='radcardview-appearance-customizing-cards-example_6_execute_radcardview_commands-xaml' />
 
-#### Figure 4: Custom card contents in read-only state
+__Figure 4: Custom card contents in read-only state__
 ![{{ site.framework_name }} RadCardView Custom card contents in read-only state](images/radcardview-appearance-customizing-cards-3.png)
 
 
-#### Figure 5: Custom card contents in edit state
+__Figure 5: Custom card contents in edit state__
 ![{{ site.framework_name }} RadCardView Custom card contents in edit state](images/radcardview-appearance-customizing-cards-4.png)
 
 > Always use both CardReadOnlyTemplate and CardEditTemplate properties together. 

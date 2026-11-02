@@ -24,7 +24,7 @@ To show the axis set the __ShowAxis__ property of the sparkline control to True.
 __Example 1: Setting ShowAxis__
 <snippet id='radsparkline-features-radsparkline-features-axis-block_1-xaml' />
 
-#### Figure 1: Sparkline Axis
+__Figure 1: Sparkline Axis__
 ![Sparkline Axis](images/radsparkline-features-axis-0.png)
 
 ## Customizing the Axis
@@ -38,7 +38,7 @@ To set the origin value of the axis (in relation to the vertical axis), set the 
 __Example 2: Customizing the axis indicator__
 <snippet id='radsparkline-features-radsparkline-features-axis-block_2-xaml' />
 
-#### Figure 1: Sparkline Customized Axis
+__Figure 1: Sparkline Customized Axis__
 ![Sparkline Customized Axis](images/radsparkline-features-axis-1.png)
 
 ## Controlling the Data Range

@@ -11,7 +11,7 @@ position: 7
 
 # Styling Column Headers
 
-#### __Figure 1: GridViewHeaderCell template structure__
+__Figure 1: GridViewHeaderCell template structure__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewHeaderCell template structure](images/gridviewheadercell-template.png)
 
@@ -47,7 +47,7 @@ __Example 2: Setting a column's HeaderCellStyle__
 <snippet id='radgridview-styles-and-templates-styling-column-headers-example_2_setting_a_column_s_headercellstyle-xaml' />
 
 
-#### __Figure 2: RadGridView with styled header cell__
+__Figure 2: RadGridView with styled header cell__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom HeaderCellStyle applied to a column header](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderCell_03.png)
 

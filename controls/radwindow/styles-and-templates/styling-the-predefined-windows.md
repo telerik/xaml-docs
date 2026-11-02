@@ -34,7 +34,7 @@ __Example 2: Applying customized Style to RadAlert__
 <snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_2-cs' />
 <snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_3-vb' />
 
-#### __Figure 1: RadAlert with custom Style__
+__Figure 1: RadAlert with custom Style__
 ![{{ site.framework_name }} RadWindow RadAlert with custom Style](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_01.png)
 
 ## Applying IconTemplate
@@ -50,7 +50,7 @@ __Example 4: Applying the DataTemplate to the IconTemplate property__
 <snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_5-cs' />
 <snippet id='radwindow-styles-and-templates-styling-the-predefined-windows-block_6-vb' />
 
-#### __Figure 2: RadAlert with set IconTemplate__
+__Figure 2: RadAlert with set IconTemplate__
 ![{{ site.framework_name }} RadWindow RadAlert with set IconTemplate](images/RadWindow_Styles_and_Templates_Styling_the_Predefined_Windows_02.png)
 
 ## Modify WindowStyle

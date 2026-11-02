@@ -41,7 +41,7 @@ Implementing a custom __CellTemplateSelector__ allows you to apply different tem
 
 <snippet id='radpivotgrid-styles-and-templates-templating-cells-block_3-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-styles-and-templates-templating-cells-block_4-vb' />
 
@@ -72,7 +72,7 @@ By implementing a custom __HeaderTemplateSelector__ you are able to modify the t
 
 <snippet id='radpivotgrid-styles-and-templates-templating-cells-block_7-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-styles-and-templates-templating-cells-block_8-vb' />
 
@@ -88,7 +88,7 @@ Using an IValueConverter you will be able to return the path for the needed imag
 
 <snippet id='radpivotgrid-styles-and-templates-templating-cells-block_10-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-styles-and-templates-templating-cells-block_11-vb' />
 

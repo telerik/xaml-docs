@@ -41,7 +41,7 @@ __Example 2: Adding RadSlider in code__
 <snippet id='radslider-declaration-block_2-cs' />
 <snippet id='radslider-declaration-block_3-vb' />
 
-#### Figure 1: Result from Examples 1 and 2
+__Figure 1: Result from Examples 1 and 2__
 ![RadSlider](images/radslider_gettingstarted.png)
 
 > By default the __Value__ of the RadSlider will be constantly updated while the thumb is dragged. If you want the value to be updated only once, when the thumb is released, you can set the __IsDeferredDraggingEnabled__ property to __True__.
@@ -69,7 +69,7 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a RadSlider with the **Windows8** theme applied.
 
-#### __Figure 1: RadSlider with the Windows8 theme__
+__Figure 1: RadSlider with the Windows8 theme__
 ![RadSlider with Windows8 theme](images/radslider-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

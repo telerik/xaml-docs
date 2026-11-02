@@ -16,11 +16,11 @@ category: knowledge-base
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2021.1.325</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>Diagram for WPF</td>
 		</tr>
 	</tbody>

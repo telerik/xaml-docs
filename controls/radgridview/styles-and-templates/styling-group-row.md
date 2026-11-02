@@ -17,7 +17,7 @@ position: 12
 
 In order to style all group rows of __RadGridView__ instances with **GroupRenderMode="Nested"** in your application, you should create an appropriate style targeting the __GridViewGroupRow__ element.
 
-#### __Figure 1: GridViewGroupRow template structure__
+__Figure 1: GridViewGroupRow template structure__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewGroupRow template structure for nested grouping](images/gridview-group-row-template.png)
 
@@ -40,7 +40,7 @@ __Example 1: Targetting GridViewGroupRow__
 
 If you have set your **GroupRenderMode** to **Flat**, your style should target the __GroupHeaderRow__ element.
 
-#### __Figure 2: GroupHeaderRow template structure__
+__Figure 2: GroupHeaderRow template structure__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the GroupHeaderRow template structure for flat grouping](images/gridview-groupheaderrow-template.png)
 
@@ -60,7 +60,7 @@ __Example 2: Setting RadGridView's GroupRowStyle__
 <snippet id='radgridview-styles-and-templates-styling-group-row-example_2_setting_radgridview_s_grouprowstyle-xaml' />
 
 
-#### __Figure 3: RadGridView with styled group rows__
+__Figure 3: RadGridView with styled group rows__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with custom styles applied to grouped rows](images/RadGridView_Styles_and_Templates_Styling_GridViewGroupRow_03.png)
 

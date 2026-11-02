@@ -39,7 +39,7 @@ The overloads of the AppendDocument() method allow you to pass a parameter of ty
 	* **SourceStartContinuous**: Append the first source section as it is, with a preceding section break of type *SectionBreakType.Continuous*. The section properties, headers and footers are preserved. For example, if the source section has a *landscape* orientation and the target has *portrait*, the result section will have a *landscape* orientation, but the break type will change to a next page since two sections with different orientation or a page size cannot exist on a single page.
 
 
-#### **[C#] Example 1: Using the AppendDocument() method**
+**[C#] Example 1: Using the AppendDocument() method**
 
 <snippet id='radrichtextbox-features-merge-documents-append-block_1-cs' />
 
@@ -51,7 +51,7 @@ There is another overload of AppendDocument() that takes only a RadDocument inst
 AppendDocumentOptions enables full customization over the way the appending is executed. So, the results of the different scenarios depend on the settings you choose. **Table 1** describes several restrictions you should keep in mind when using AppendDocument().
  
 
-#### **Table 1: Restrictions for using AppendDocument()**
+**Table 1: Restrictions for using AppendDocument()**
 <table>
 <tr>
 	<th>Action </th>

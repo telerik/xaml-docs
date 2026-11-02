@@ -45,7 +45,7 @@ The __MaskedInputExtensions__ class allows you to further customize the __Masked
 	__Example 3: Setting MaskedInputExtensions.MaxTextLength attached property__
 	<snippet id='radmaskedinput-features-extensions-block_3-xaml' />
 
-	#### __Figure 1: MaskedInputExtensions.MaxTextLength attached property example__  
+	__Figure 1: MaskedInputExtensions.MaxTextLength attached property example__  
 	![radmaskedinput-features-extensions-max Length](images/radmaskedinput_features_extensions_maxLength.png)
 
 * The __MaskedInputExtensions.MinTextLength__ property allows you to define the minimum length of the input entered in the __RadMaskedTextInput__ control.            
@@ -96,7 +96,7 @@ __Example 7: Setting MaskedInputExtensions.AllowMinusOnNullValue attached proper
 
 When the property is set to __True__ and the __Value__ is set to __null__, the minus symbol will be included in the Text property, however, the value will remain null. You can see the example in *Figure 2*.
 
-#### __Figure 2: MaskedInputExtensions.AllowMinusOnNullValue attached property example__
+__Figure 2: MaskedInputExtensions.AllowMinusOnNullValue attached property example__
 ![{{ site.framework_name }} RadMaskedInput MaskedInputExtensions.AllowMinusOnNullValue attached property example](images/radmaskedinput_features_extensions_01.png)
 
 By default, the minus sign cannot be deleted on press of the __Delete__ or the __Backspace__ key. To change this behavior, you will need to create a custom masked input class that derives from either the RadMaskedNumeric or RadMaskedCurrencyInput control and override its CanModifyChar, HandleDeleteKeyNoMask and HandleBackKeyNoMask methods. This approach is demonstrated in the [MinusKeyCustomizations](https://github.com/telerik/xaml-sdk/tree/master/MaskedInput/MinusKeyCustomizations) SDK example.

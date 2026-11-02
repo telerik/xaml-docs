@@ -19,7 +19,7 @@ __Example 1: Enabling Labels__
 <snippet id='radchartview-features-labels-label-definition-example_1_enabling_labels-xaml' />
 
 
-#### Figure 1: Series labels
+__Figure 1: Series labels__
 ![Telerik UI for WPF RadChartView with Default Series Labels](images/radchartview-features-label-definition-0.png)
 
 ## Customizing Labels
@@ -40,7 +40,7 @@ __Example 4: Defining two label definitions which add two label per data point__
 <snippet id='radchartview-features-labels-label-definition-example_4_defining_two_label_definitions_which_add_two_label_per_data_point-xaml' />
 
 
-#### Figure 2: Customized labels
+__Figure 2: Customized labels__
 ![Telerik UI for WPF RadChartView with Customized Series Labels](images/radchartview-features-label-definition-1.png)
 
 The following list describes the properties available in the __ChartSeriesLabelDefinition__ class.
@@ -101,7 +101,7 @@ __Example 6: Populating the data__
 	<snippet id='radchartview-features-labels-label-definition-example_10_implement_the_seriescreated_event_handler-cs' />
 
 	
-#### Figure 3: Customized labels with SeriesProvider
+__Figure 3: Customized labels with SeriesProvider__
 ![Telerik UI for WPF RadChartView with Customized SeriesProvider Labels](images/radchartview-features-label-definition-2.png)
 
 ## See Also  

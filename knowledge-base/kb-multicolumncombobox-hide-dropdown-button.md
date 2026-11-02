@@ -16,11 +16,11 @@ ticketid: 1596801
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2024.1.312</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadMultiColumnComboBox for WPF</td>
 		</tr>
 	</tbody>

@@ -20,7 +20,7 @@ The selection feature is disabled by default. To enable it set the __IsSelection
 __Example 1: Enabling selection__
 <snippet id='radtileview-features-selection-block_1-xaml' />
 
-#### Figure 1: Selected tile
+__Figure 1: Selected tile__
 ![radtileview-selection-0.png](images/radtileview-selection-0.png)
 
 ## Selection Mode
@@ -76,7 +76,7 @@ __Example 6: Setting the DataContext__
 __Example 7: Setting up the view and binding the SelectedItem property__
 <snippet id='radtileview-features-selection-block_10-xaml' />
 
-#### Figure 2: Data binding example
+__Figure 2: Data binding example__
 ![radtileview-selection-1.png](images/radtileview-selection-1.png)
 
 > You can find more information about the __ViewModeBase__ class used in Example 5 in the [ViewModelBase Class]({%slug common-viewmodelbase-class%}) article.

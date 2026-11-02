@@ -52,7 +52,7 @@ __Example 1: Setting columns' CellTemplate and CellEditTemplate__
 
 The RadGridView defined above will be displayed as shown in **Figure 1**.
 
-#### Figure 1: RadGridView with CellTemplate and CellEditTemplate defined
+__Figure 1: RadGridView with CellTemplate and CellEditTemplate defined__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView using CellTemplate and CellEditTemplate for date and salary columns](images/RadGridView_CellTemplate_CellEditTemplate.png)
 
@@ -88,7 +88,7 @@ __Example 3: Setting the CellTemplate and CellEditTemplate of a single column__
 
 The RadGridView defined above will be displayed as shown in **Figure 1**.
 
-#### Figure 2: RadGridView with CellTemplate and CellEditTemplate defined for a single column
+__Figure 2: RadGridView with CellTemplate and CellEditTemplate defined for a single column__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView using both CellTemplate and CellEditTemplate on a single salary column](images/RadGridView_CellTemplate_CellEditTemplate2.png)
 

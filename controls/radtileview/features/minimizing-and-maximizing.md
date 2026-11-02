@@ -39,12 +39,12 @@ The __RadTileView__ control allows you to drag a __RadTileViewItem__ and dock it
 __Example 1: Enabling docking__
 <snippet id='radtileview-features-minimizing-and-maximizing-block_1-xaml' />
 
-#### __Figure 1: Item docking started__  
+__Figure 1: Item docking started__  
 ![{{ site.framework_name }} RadTileView Item docking started](images/radtileview_features_maximized_docking.png)
 
 You can see the result after you drop the item on that position in __Figure 2__.
 
-#### __Figure 2: Item docking complete__  
+__Figure 2: Item docking complete__  
 ![{{ site.framework_name }} RadTileView Item docking complete](images/radtileview_features_maximized_docked.png)
 
 ##  Maximize Mode
@@ -69,13 +69,13 @@ The __MinimizedRowsCount__ will affect the rows count only if the __MinimizedIte
 __Example 3: Setting minimized area with 2 columns__  
 <snippet id='radtileview-features-minimizing-and-maximizing-block_3-xaml' />
 
-#### __Figure 3: Minimized area with 2 columns__
+__Figure 3: Minimized area with 2 columns__
 ![{{ site.framework_name }} RadTileView Minimized area with 2 columns](images/radtileview-features-maximized-3.png)
 
 __Example 4: Setting minimized area with 2 rows__  
 <snippet id='radtileview-features-minimizing-and-maximizing-block_4-xaml' />
 
-#### __Figure 4: Minimized area with 2 rows__
+__Figure 4: Minimized area with 2 rows__
 ![{{ site.framework_name }} RadTileView Minimized area with 2 rows](images/radtileview-features-maximized-4.png)
 
 ## Preserve MaximizedItem Position

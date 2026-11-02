@@ -23,7 +23,7 @@ For example you can use the event in order to replace a __DoubleGroupDescription
 
 <snippet id='radpivotgrid-events-overview-block_1-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-events-overview-block_2-vb' />
 
@@ -37,7 +37,7 @@ You can find an example below that demonstrates how to get the current status of
 
 <snippet id='radpivotgrid-events-overview-block_3-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-events-overview-block_4-vb' />
 
@@ -53,7 +53,7 @@ You can find an example below that demonstrates how to get the current status of
 
 <snippet id='radpivotgrid-events-overview-block_5-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-events-overview-block_6-vb' />
 

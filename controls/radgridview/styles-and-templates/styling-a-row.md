@@ -13,7 +13,7 @@ position: 14
 
 > `RadGridView` supports setting the background color of the selected row, as well as setting the mouse-over color of the row. More information can be found in the [SelectedBackground and MouseOverBackground]({%slug radgridview-rows-selected-background%}) article.
 
-#### __GridViewRow template structure__
+__GridViewRow template structure__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewRow template structure](images/gridview-row-template.png)
 
@@ -50,7 +50,7 @@ __Applying styles to the RowStyle and AlternateRowStyle properties__
 <snippet id='radgridview-styles-and-templates-styling-a-row-applying_styles_to_the_rowstyle_and_alternaterowstyle_properties-xaml' />
 
 
-#### __RadGridView with styled rows__
+__RadGridView with styled rows__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with custom RowStyle and AlternateRowStyle applied](images/gridview-styled-row-and-alternaterow.png)
 

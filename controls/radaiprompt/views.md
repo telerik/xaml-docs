@@ -77,6 +77,6 @@ __RadAIPrompt with customized views__
 
 ![WPF RadAIPrompt with customized views](images/radaiprompt-views-3.png)
 
-# See Also
+## See Also
 * [Commands]({%slug radaiprompt-commands%})
 * [Suggestions]({%slug radaiprompt-suggestions%})

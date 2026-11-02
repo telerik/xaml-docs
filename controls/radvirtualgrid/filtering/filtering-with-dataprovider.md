@@ -25,12 +25,12 @@ When __RadVirtualGrid__ populates its data through the __DataProvider__ mechanis
 
 ## Filtering
 
-#### __Figure 1: Opening the FilteringControl of RadVirtualGrid__
+__Figure 1: Opening the FilteringControl of RadVirtualGrid__
 ![Opening the FilteringControl of RadVirtualGrid](images/RadVirtualGrid_Filtering_01.png)
 
 After applying the needed filtering criteria, the control will appear as follows.
 
-#### __Figure 2: Filtering  RadVirtualGrid__
+__Figure 2: Filtering  RadVirtualGrid__
 ![Opening the FilteringControl of RadVirtualGrid](images/RadVirtualGrid_Filtering_02.png)
 
 ## Filtering through ColumnFilterDescriptor
@@ -47,7 +47,7 @@ __Example 2: Adding distinct values__
 
 <snippet id='radvirtualgrid-filtering-filtering-with-dataprovider-block_2-cs' />
 
-#### __Figure 3: Filtering RadVirtualGrid by adding distinct values__
+__Figure 3: Filtering RadVirtualGrid by adding distinct values__
 ![Opening the FilteringControl of RadVirtualGrid](images/RadVirtualGrid_Programmatic_Filtering_01.png)
 
 ## Deferred Filtering 

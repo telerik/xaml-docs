@@ -78,7 +78,7 @@ __Example 3__
 
 <snippet id='radtileview-getting-started-getting-started-block_3-xaml' />
 
-#### __Figure 1__
+__Figure 1__
 ![Tile View - minimized items position](images/tileview_Step3.png)
 
 ## Setting a Theme
@@ -105,7 +105,7 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a RadTileView with the **Windows8** theme applied.
 
-#### __Figure 2: RadTileView with the Windows8 theme__
+__Figure 2: RadTileView with the Windows8 theme__
 ![RadTileView with Windows8 theme](images/RadTileView-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

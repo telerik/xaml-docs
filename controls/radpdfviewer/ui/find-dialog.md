@@ -53,7 +53,7 @@ __Example 1:  Register FindDialog using ExtensibilityManager__
 {% if site.site_name == 'WPF' %}        
 If you prefer adding the dialog through XAML, you can use the RegisterFindDialog property of the RadPdfViewerAttachedComponents class.
 
-#### [XAML] Example 1: Register FindDialog in XAML 
+__[XAML] Example 1: Register FindDialog in XAML__ 
 
 <snippet id='radpdfviewer-ui-find-dialog-block_2-xaml' />
 
@@ -71,7 +71,7 @@ RadPdfViewer offers an easy way to create a custom find dialog which suits best 
 In order to achieve this, should be created a class which inherits the __IFindDialog__ interface with its __ShowDialog__ method.
         
 
-#### [C#] Example 2:Create custom find dialog
+__[C#] Example 2:Create custom find dialog__
 
 <snippet id='radpdfviewer-ui-find-dialog-block_3-cs' />
 

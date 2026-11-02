@@ -13,7 +13,7 @@ position: 0
 
 The toolbars suite provides you with the `RadToolBarTray` control that allows you to host several `RadToolBar` elements in the same tray. The tray handles the position, size, and order of toolbars inside of it. It is divided by bands (rows) and each band can contain multiple toolbars.
 
-#### __Figure 1: RadToolBarTray Overview__
+__Figure 1: RadToolBarTray Overview__
 ![RadToolBarTray overview](images/radtoolbartray-overview-0.png)
 
 ## Defining ToolBarTray
@@ -23,7 +23,7 @@ The following example shows a very basic definition of the `RadToolBarTray` cont
 __Example 1: Define the tray in XAML__
 <snippet id='radtoolbar-features-radtoolbartray-overview-block_1-xaml' />
 
-#### __Figure 2: RadToolBarTray populated with RadToolBars__
+__Figure 2: RadToolBarTray populated with RadToolBars__
 ![RadToolBarTray populated with RadToolBars](images/radtoolbartray-overview-1.png)
 
 ## Setting Band and BandIndex
@@ -32,7 +32,7 @@ The `RadToolBar` control exposes a `Band` property that can be used to define th
 
 The following picture shows how the band and band index affect the positions of the toolbars in the tray.
 
-#### __Figure 3: RadToolBarTray Band and BandIndex__
+__Figure 3: RadToolBarTray Band and BandIndex__
 ![RadToolBarTray Band and BandIndex](images/radtoolbartray-overview-2.png)
 
 > By default all `RadToolBar` elements hosted in the tray are positioned in the first band (Band=0). The default band index is the based on the collection index of the toolbar plus the current band position.
@@ -40,7 +40,7 @@ The following picture shows how the band and band index affect the positions of 
 __Example 2: Setting Band and BandIndex manually__
 <snippet id='radtoolbar-features-radtoolbartray-overview-block_2-xaml' />
 
-#### __Figure 4: RadToolBars with Band and BandIndex set__
+__Figure 4: RadToolBars with Band and BandIndex set__
 ![RadToolBarTray populated with RadToolBars demonstrating the Band and BandIndex properties](images/radtoolbartray-overview-3.png)
 
 ## Setting Orientation
@@ -50,7 +50,7 @@ By default, the `RadToolBarTray` will order the toolbars horizontally. Also, the
 __Example 3: Setting Orientation__
 <snippet id='radtoolbar-features-radtoolbartray-overview-block_3-xaml' />
 
-#### __Figure 4: RadToolBarTray with Vertical Orientation__
+__Figure 4: RadToolBarTray with Vertical Orientation__
 ![RadToolBarTray with Vertical Orientation](images/radtoolbartray-overview-4.png)
 
 ## Use the RadToolBarTray in an MVVM scenario

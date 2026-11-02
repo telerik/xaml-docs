@@ -13,7 +13,7 @@ position: 2
 
 RadPdfViewer comes with pre-defined UI that is automatically wired with all of the commands provided by the control. **RadPdfViewerToolbar** compliments **RadPdfViewer**, with convenient toolbar exposing the variety of features. With single line of XAML you get all the UI expected from a standard PDF viewing application, including page navigation, [zoom]({%slug radpdfviewer-zoom-in-or-out-a-radfixeddocument%}) and page control, open/save/print buttons. When updating from version to version, you'll automatically get UI for all the new commands we expose. **RadPdfViewerNavigationPane** takes care of visualizing different navigation panels, including the [Bookmarks]({%slug radpdfviewer-features-bookmarks%}) of the PDF document.
 
-#### Figure 1: RadPdfViewer with default UI, RadPdfViewerNavigationPane and context menu
+__Figure 1: RadPdfViewer with default UI, RadPdfViewerNavigationPane and context menu__
 ![{{ site.framework_name }} RadPdfViewer RadPdfViewer with default UI, RadPdfViewerNavigationPane and context menu](images/RadPdfViewer_defaultUI_00.png)
 
 ## Add RadPdfViewer with Predefined UI to Your Application
@@ -36,12 +36,12 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 
 * **Add Navigation Pane**: Determines whether the RadPdfViewerNavigationPane should be added to the UI to show  the bookmarks of a PDF document. 
 
-#### Figure 2: Choose the components you would like to use
+__Figure 2: Choose the components you would like to use__
 ![{{ site.framework_name }} RadPdfViewer Choose the components you would like to use](images/RadPdfViewer_defaultUI_01.png)
 
 **Example 1** shows how the XAML generated after enabling all options looks like.
 
-#### [XAML] Example 1: Default UI
+__[XAML] Example 1: Default UI__
 
 <snippet id='radpdfviewer-default-ui-block_1-xaml' />
  

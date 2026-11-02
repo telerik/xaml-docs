@@ -40,12 +40,12 @@ You can find the required assemblies for each control from the suite in the [Con
 
 First, we can go ahead and create our ViewModel with some tasks. The control API provides a built-in __TaskBoardCardModel__ model class which exposes the most needed properties to start organizing your tasks.
 
-#### __[C#] Example 1: Defining ViewModel
+____[C#] Example 1: Defining ViewModel__
 <snippet id='radtaskboard-getting-started-block_1-cs' />
 
 Next we need to define RadTaskBoard in XAML, bind the ItemsSource property of the RadTaskBoard and set the __GroupMemberPath__ property. The __GroupMemberPath__ property indicates which property from your model will be used to group the tasks.
 
-#### __[XAML] Example 2: Binding RadTaskBoard
+### __[XAML] Example 2: Binding RadTaskBoard
 <snippet id='radtaskboard-getting-started-block_2-xaml' />
 
 And finally, we need to set the DataContext of the MainWindow:
@@ -80,7 +80,7 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a RadTaskBoard with the **Windows8** theme applied.
 
-#### __Figure 2: RadTaskBoard with the Windows8 theme__
+__Figure 2: RadTaskBoard with the Windows8 theme__
 ![RadTaskBoard with Windows8 theme](images/RadTaskBoard-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

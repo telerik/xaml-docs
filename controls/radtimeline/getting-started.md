@@ -38,14 +38,14 @@ __Example 1: Creating RadTimeline control__
 
 <snippet id='radtimeline-getting-started-block_1-xaml' />
 
-#### __Figure 1: RadTimeline visualization__
+__Figure 1: RadTimeline visualization__
 ![{{ site.framework_name }} RadTimeline RadTimeline visualization](images/RadTimeline_Getting_Started_0.png)
 
 ## RadTimeline items
 
 The RadTimeline control presents its data in two types of occurrences(events). The first one is a one-time occurrence which happens once in a time. The second type represents periodical occurrence. It requires a strict __Start__ and __End__ time to be presented.
 
-#### __Figure 2: RadTimeline items visualization__
+__Figure 2: RadTimeline items visualization__
 ![{{ site.framework_name }} RadTimeline RadTimeline items visualization](images/RadTimeline_Getting_Started_1.PNG)
 
 >tip More information about how to populate the control with __TimelineItems__ and __TimelineInstantItems__ can be found in the [DataBinding help article]({%slug radtimeline-databinding%}) in our documentation.
@@ -74,7 +74,7 @@ __Example 2: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a RadTimeline with the **Windows8** theme applied.
 
-#### __Figure 2: RadTimeline with the Windows8 theme__
+__Figure 2: RadTimeline with the Windows8 theme__
 ![RadTimeline with Windows8 theme](images/RadTimeline-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

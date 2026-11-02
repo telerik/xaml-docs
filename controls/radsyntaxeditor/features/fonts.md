@@ -17,7 +17,7 @@ __Example 1: Setting font properties__
 
 These properties, however, will not be applied to the line numbers, editor presenter and intelliprompt parts of the control.
 
-#### __Figure 1: RadSyntaxEditor with custom font settings__
+__Figure 1: RadSyntaxEditor with custom font settings__
 ![RadSyntaxEditor with custom font settings](images/syntaxeditor-fonts.png)
 
 ## EditorFontSize and EditorFontFamily
@@ -27,7 +27,7 @@ To modify the FontSize and FontFamily of the line numbers, editor presenter and 
 __Example 2: Setting font properties__
 <snippet id='radsyntaxeditor-features-fonts-block_2-xaml' />
 
-#### __Figure 2: RadSyntaxEditor with custom font settings for the editor__
+__Figure 2: RadSyntaxEditor with custom font settings for the editor__
 ![RadSyntaxEditor with custom font settings](images/syntaxeditor-fonts-2.png)
 
 ## Monospaced Font Optimization

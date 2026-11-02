@@ -13,7 +13,7 @@ position: 3
 
 __RadSaveFileDialog__ is a modal dialog box that allows you to specify a filename to save.
 
-#### __Figure 1: RadSaveFileDialog__
+__Figure 1: RadSaveFileDialog__
 ![RadSaveFileDialog](images/radsavefiledialog-01.png)
 
 ## Showing the dialog
@@ -61,7 +61,7 @@ __Example 4: Set the file name__
 <snippet id='radfiledialogs-dialog-controls-radsavefiledialog-example_3_set_the_file_name-cs' />
 
 
-#### __Figure 2: Setting the file name__
+__Figure 2: Setting the file name__
 ![Setting the file name](images/radsavefiledialog-02.png)
 
 ## See Also

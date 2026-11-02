@@ -52,7 +52,7 @@ __Example 2: Adding Indicators__
 
 >tip To learn more about the usage of the __NumericIndicator__ control, read the [Numeric Indicator]({%slug radgauge-features-indicators-numeric-indicator%}) topic.
 
-#### __Image 1: Result from Example 2__
+__Image 1: Result from Example 2__
 
 ![RadHorizontalLinearGauge with indicator](images/RadGauge_GettingStarted_NumericGauge_03.png)
 
@@ -66,7 +66,7 @@ __Example 3: Setting indicator's position__
 <snippet id='radgauge-getting-started-creating-numeric-gauge-example_3_setting_indicator_s_position-xaml' />
 
 
-#### __Image 2: Result from Example 3__
+__Image 2: Result from Example 3__
 
 ![RadHorizontalLinearGauge with Indicator position](images/RadGauge_GettingStarted_NumericGauge_04.png)
 

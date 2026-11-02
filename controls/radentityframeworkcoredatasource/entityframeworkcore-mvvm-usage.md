@@ -31,7 +31,7 @@ For this tutorial we are going to use the [code first](https://docs.microsoft.co
 2. Open the [Package Manager Console](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-powershell) in the Visual Studio instance, where you created the WPF project. 
 3. Execute the "Add-Migration Initial" command followed by the "Update-Database" command. After that you should have a "CustomerDB" database created, if you expand the Databases node in SQL Server Management Studio.
 
-	#### __Figure 3: Package Manager Console Commands__
+	__Figure 3: Package Manager Console Commands__
 	![Package Manager Console Commands](images/entityframeworkcoredatasource-migration.png)
 
 > Learn more about migrations in EF Core in the [following article](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli).
@@ -52,7 +52,7 @@ __Example 3: Seting up the xaml__
 <snippet id='radentityframeworkcoredatasource-entityframeworkcore-mvvm-usage-example_3_seting_up_the_xaml-xaml' />
 
 
-#### __Figure 4: Result from running the example in the Fluent theme__
+__Figure 4: Result from running the example in the Fluent theme__
 ![RadGridView and RadDataPager in the Fluent theme](images/entityframeworkcoredatasource-gridview-pager.png)
 
 ## See also

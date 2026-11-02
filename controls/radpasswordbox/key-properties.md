@@ -42,7 +42,7 @@ __Example 1: Setting initial Password__
 
 __Figure 1__ illustates __RadPasswordBox__ when loaded.
 
-#### __Figure 1: RadPasswordBox with Password set__
+__Figure 1: RadPasswordBox with Password set__
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with Password set](images/RadPasswordBox_KeyProperties_4.png)
 
 >__Password__ is **not a dependency property** (it is not bindable) as dependency properties keep their values unencrypted in memory.
@@ -62,7 +62,7 @@ __PasswordChar__ property defines the masking character used to hide the actual 
 __Example 2: Setting PasswordChar__
 <snippet id='radpasswordbox-key-properties-block_2-xaml' />
 
-#### __Figure 2: RadPasswordBox with PasswordChar set__
+__Figure 2: RadPasswordBox with PasswordChar set__
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with PasswordChar set](images/RadPasswordBox_KeyProperties_0.png)
 
 ## ShowPasswordButton Settings

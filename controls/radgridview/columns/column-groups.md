@@ -22,7 +22,7 @@ __Example 1: Define column groups__
 <snippet id='radgridview-columns-column-groups-example_1_define_column_groups-xaml' />
 
 
-#### Figure 1: RadGridView with Column Groups
+__Figure 1: RadGridView with Column Groups__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView column groups with shared Vehicle info and Dimensions headers](images/RadGridView_ColumnHeaders_7.png)
 
@@ -41,7 +41,7 @@ __Example 2: Nested column groups__
 <snippet id='radgridview-columns-column-groups-example_2_nested_column_groups-xaml' />
 
 
-#### Figure 2: Nested column groups
+__Figure 2: Nested column groups__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView nested column groups under a shared Data header](images/RadGridView_ColumnHeaders_8.png)
 
@@ -99,15 +99,15 @@ __Example 6: Sample column groups setup__
 
 In case the user moves the frozen column splitter in the middle of an existing column group, then it will be __divided into two separate groups__. **Figures 3 to 5** demonstrate this scenario.
 
-#### Figure 3: Initial setup with FrozenColumnSplitter at default position
+__Figure 3: Initial setup with FrozenColumnSplitter at default position__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView column groups before moving the frozen column splitter](images/columngroups_frozencolumn_1.png)
 
-#### Figure 4: A duplicate column group is created when FrozenColumnSplitter moved after the first column
+__Figure 4: A duplicate column group is created when FrozenColumnSplitter moved after the first column__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView column groups split after moving the frozen column splitter past the first column](images/columngroups_frozencolumn_2.png)
 
-#### Figure 5: ColumnGroup's Header is still visible after scrolling to the right
+__Figure 5: ColumnGroup's Header is still visible after scrolling to the right__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView column group header remaining visible during horizontal scrolling](images/columngroups_frozencolumn_3.png)
 
@@ -117,7 +117,7 @@ Defined column groups are now __drawn only if they are specified for at least on
 
 When some GridViewColumns do not have a **ColumnGroupName** specified, they are __placed under an empty ColumnGroup__. This is illustrated in **Figure 6**.
 
-#### Figure 6: Various setups illustrating the default space fill
+__Figure 6: Various setups illustrating the default space fill__
  
 ![Telerik UI for {{ site.framework_name }} RadGridView column groups showing default empty group space layout example one](images/columngroups_defaultgroups_1.png)
 

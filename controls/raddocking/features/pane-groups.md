@@ -214,7 +214,7 @@ __Example 9: Set relative size__
 
 **Figure 1** illustrates the result.
 
-#### __Figure 1: Pane groups with proportional sizes__
+__Figure 1: Pane groups with proportional sizes__
 
 ![Pane groups with proportional sizes](images/Features_Panes_Tabbed_030.png)
 
@@ -243,7 +243,7 @@ __Example 10: Setting ProportionalStackPanel.ElementWidth__
 
 As can be seen on **Figure 2**, even when pane groups with fixed sizes are present, the remaining groups with proportional sizes will still resize accordingly.
 
-#### __Figure 2: Pane group with fixed size among groups with proportional sizes__
+__Figure 2: Pane group with fixed size among groups with proportional sizes__
 
 ![Pane group with fixed size among groups with proportional sizes](images/pane-groups-fixed-widths-1.png)
 ![Pane group with fixed size among groups with proportional sizes](images/pane-groups-fixed-widths-2.png)

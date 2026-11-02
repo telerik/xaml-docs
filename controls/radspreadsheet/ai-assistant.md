@@ -147,19 +147,19 @@ All tools work together to process complex, multi-step natural language commands
 
 The AI assistant is represented by a chat panel that allows you to interact with the spreadsheet using natural language. To enable the AI features, set the `IsAIEnabled` property to `true`. This property activates the AI functionality and makes the AI panel available.
 
-#### __Setting IsAIEnabled in XAML__
+__Setting IsAIEnabled in XAML__
 ```XAML
 <telerik:RadSpreadsheet x:Name="radSpreadsheet" IsAIEnabled="True" />
 ```
 
-#### __Setting IsAIEnabled in code-behind__
+__Setting IsAIEnabled in code-behind__
 ```C#
 this.radSpreadsheet.IsAIEnabled = true;
 ```
 
 Once enabled, you can show or hide the AI panel using the `IsAIPanelVisible` property.
 
-#### __Controlling AI panel visibility__
+### __Controlling AI panel visibility__
 ```C#
 // Show the AI panel
 this.radSpreadsheet.IsAIPanelVisible = true;
@@ -218,7 +218,7 @@ The `AIToolsProvider` requires two parameters:
 >- `using Microsoft.Extensions.AI;`
 >- `using Telerik.Windows.Controls.Spreadsheet.AI;`
 
-#### __Setting up AIToolsProvider__
+__Setting up AIToolsProvider__
 ```C#
 this.radSpreadsheet.IsAIEnabled = true;
 
@@ -245,7 +245,7 @@ this.radSpreadsheet.AIToolsProvider = aiToolsProvider;
 
 The `AIToolsProvider` has a default maximum token limit of 128,000 tokens. You can adjust this limit using the `MaxTokenCount` property:
 
-#### __Adjusting MaxTokenCount__
+__Adjusting MaxTokenCount__
 ```C#
 var aiToolsProvider = new AIToolsProvider(chatClient, this.radSpreadsheet);
 aiToolsProvider.MaxTokenCount = 50000;

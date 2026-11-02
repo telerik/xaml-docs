@@ -51,7 +51,7 @@ __Example 3: Setting RadCallout in code behind__
 
 If you run the application now, you should see the RadCallout control on top of the button when you click it like in __Figure 1__:
 
-#### Figure 1: RadCallout sample
+__Figure 1: RadCallout sample__
 ![Telerik Callout Getting-Started 0](images/callout_getting_started_1.png)
 
 ## Setting a Theme
@@ -77,7 +77,7 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 4__ shows a __RadCallout__ with the **Fluent** theme applied.
 	
-#### __Figure 4: RadCallout with the Fluent theme__
+__Figure 4: RadCallout with the Fluent theme__
 ![RadCallout with Fluent theme](images/radcallout-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

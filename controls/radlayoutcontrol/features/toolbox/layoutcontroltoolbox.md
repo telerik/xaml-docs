@@ -37,14 +37,14 @@ The toolbox can be associated with RadLayoutControl through its __LayoutControl_
 
 Initially, the __LayoutControlToolBox__ displays a single toggle button (see __Figure 1__).
 	
-#### __Figure 1: Closed toolbox__  
+__Figure 1: Closed toolbox__  
 ![{{ site.framework_name }} RadLayoutControl Closed toolbox](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-01.png)
 
 >important The toggle button will be displayed only if the layout control is in [edit mode]({%slug radlayoutcontrol-edit-the-layout%}).
 
 When the button is clicked the toolbox view will be opened in a popup.
 
-#### __Figure 2: Toolbox view__  
+__Figure 2: Toolbox view__  
 ![{{ site.framework_name }} RadLayoutControl Toolbox view](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-02.png)
 
 ## Manually control the toolbox view visibility
@@ -69,7 +69,7 @@ __Example 5: Replacing the default toolbox view__
 <snippet id='radlayoutcontrol-features-toolbox-layoutcontroltoolbox-example_5_replacing_the_default_toolbox_view-xaml' />
 
 	
-#### __Figure 3: Modified toolbox view__
+__Figure 3: Modified toolbox view__
 ![{{ site.framework_name }} RadLayoutControl Modified toolbox view](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-03.png)
 	
 ## Style the toolbox view host window
@@ -82,7 +82,7 @@ __Example 6: Setting custom window style__
 	
 > The __BasedOn__ setting is applicable only in a scenario with [implicit styles]({%slug styling-apperance-implicit-styles-overview%}). This attribute is set so that the custom style inherits the default toolbox window style. The __LayoutControlToolBoxWindowStyle__ is located in the __Telerik.Windows.Controls.Navigation.xaml__ ResourceDictionary.
 	
-#### __Figure 4: Custom window style__
+__Figure 4: Custom window style__
 ![{{ site.framework_name }} RadLayoutControl Custom window style](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-04.png)
 
 ## Position the toolbox button
@@ -93,7 +93,7 @@ __Example 7: Positioning the toggle button at the bottom-left side of the layout
 <snippet id='radlayoutcontrol-features-toolbox-layoutcontroltoolbox-example_7_positioning_the_toggle_button_at_the_bottom_left_side_of_the_layout_control-xaml' />
 
 
-#### __Figure 5: Bottom-right positioned button__
+__Figure 5: Bottom-right positioned button__
 ![{{ site.framework_name }} RadLayoutControl Bottom-right positioned button](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-05.png)
 
 ## See Also  

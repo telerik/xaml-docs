@@ -39,7 +39,7 @@ __Example 2: Setting RadGridView's FooterRowStyle__
 <snippet id='radgridview-styles-and-templates-styling-column-footers-example_2_setting_radgridview_s_footerrowstyle-xaml' />
 
 
-#### __Figure 1: RadGridView with styled footer rows__
+__Figure 1: RadGridView with styled footer rows__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom FooterRowStyle applied to footer rows](images/gridview-footerrow-style.png)
 
@@ -63,7 +63,7 @@ __Example 4: Setting a column's CellStyle__
 <snippet id='radgridview-styles-and-templates-styling-column-footers-example_4_setting_a_column_s_cellstyle-xaml' />
 
 
-#### __Figure 2: RadGridView with styled footer cells__
+__Figure 2: RadGridView with styled footer cells__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom FooterCellStyle applied to column footer cells](images/RadGridView_Styles_and_Templates_Styling_GridViewColumnFooterCell_03.png)
 

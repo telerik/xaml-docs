@@ -15,11 +15,11 @@ res_type: kb
 <table>
     <tbody>
 	    <tr>
-	    	<td>Product Version</td>
+	    	<th scope="row">Product Version</th>
 	    	<td>2017.2.614</td>
 	    </tr>
 	    <tr>
-	    	<td>Product</td>
+	    	<th scope="row">Product</th>
 	    	<td>RadGauge for WPF</td>
 	    </tr>
     </tbody>

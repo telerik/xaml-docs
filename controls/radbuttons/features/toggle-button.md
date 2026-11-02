@@ -15,7 +15,7 @@ __RadToggleButton__ inherits from the native __ToggleButton__ control and implem
 
 >tip You can see how to use ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
-#### __Figure 1: Toggle button__
+__Figure 1: Toggle button__
 ![{{ site.framework_name }} RadButtons Toggle button](images/radbuttons-features-toggle-button-0.png)
 
 ## Defining RadToggleButton
@@ -62,11 +62,11 @@ __Example 4: Defining a Checked event handler__
 ## Customizing RadToggleButton
 
 * __IsBackgroundVisible__: This property controls the visibility of the background and the border of the button when in normal state.
-	#### __Figure 2: Toggle button with hidden background__
+	__Figure 2: Toggle button with hidden background__
 	![{{ site.framework_name }} RadButtons Toggle button with hidden background](images/radbuttons-features-toggle-button-1.png)
 
 * __CornerRadius__: This property controls the corner radius of the button.
-	#### __Figure 3: Toggle button with its CornerRadius set to 15__
+	__Figure 3: Toggle button with its CornerRadius set to 15__
 	![{{ site.framework_name }} RadButtons Toggle button with its CornerRadius set to 15](images/radbuttons-features-toggle-button-2.png)
 
 ## See Also 

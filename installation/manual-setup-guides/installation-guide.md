@@ -24,19 +24,19 @@ To install the product:
 
 1. Open any terminal and install the [Telerik CLI]({%slug telerik-cli%}).
 
-	```
+	```bash
 	dotnet tool install -g Telerik.CLI
 	```
 	
 1. Call the `telerik setup wpf` command in the terminal.
 
-	```
+	```bash
 	telerik setup wpf
 	```
 
 1. Use the __NuGet Package Manager__ to install the needed Telerik packages in your project. For example, `Telerik.UI.for.Wpf.AllControls.Xaml`. 
 
-	```
+	```xml
 	<PackageReference Include="Telerik.UI.for.Wpf.AllControls.Xaml" Version="*" />
 	```
 

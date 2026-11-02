@@ -26,22 +26,22 @@ __Example 2: Create sample data__
 
 This property controls whether the hierarchy should be expanded or not. Setting the bound property to __true__ will result in expanding the given hierarchy.
 
-#### [XAML] Example 3: Binding the IsExpandedBinding to the business model
+__[XAML] Example 3: Binding the IsExpandedBinding to the business model__
 <snippet id='radgridview-hierarchical-gridview-isexpandedbinding-and-isexpandablebinding-example_2_create_sample_data-xaml' />
 
 
-#### Figure 1: Expanding hierarchy through the IsExpandedBinding property
+__Figure 1: Expanding hierarchy through the IsExpandedBinding property__
 ![Telerik UI for {{ site.framework_name }} RadGridView hierarchy expanded through IsExpandedBinding in the view model](images/radgridview-isexpandedbinding-isexpandablebinding_1.png)
 
 ## IsExpandableBinding
 
 The visibility of the __GridViewToggleButton__ can be controlled by setting the property value. For example, if there are no items present in the hierarchical collection, the bound property can be set to __false__ thus, the toggle button will be hidden.
 
-#### [XAML] Example 4: Binding the IsExpandableBinding to the business model
+__[XAML] Example 4: Binding the IsExpandableBinding to the business model__
 <snippet id='radgridview-hierarchical-gridview-isexpandedbinding-and-isexpandablebinding-example_2_create_sample_data-xaml' />
 
 
-#### Figure 2: Hiding the GridViewToggleButton through the IsExpandableBinding
+__Figure 2: Hiding the GridViewToggleButton through the IsExpandableBinding__
 ![Telerik UI for {{ site.framework_name }} RadGridView hierarchy with expand buttons hidden through IsExpandableBinding](images/radgridview-isexpandedbinding-isexpandablebinding_2.png)
 
 ## See Also

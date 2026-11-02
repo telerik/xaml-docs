@@ -8,11 +8,11 @@ tags: telerik,WPF,ai,ai server,dotnetWPF,coding assistant
 position: 1
 ---
 
-## Getting Started with Telerik WPF MCP Server
+# Getting Started with Telerik WPF MCP Server
 
-The Telerik WPF [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik UI for WPF components.
+The Telerik WPF [Model Context Protocol (MCP) Server](https://modelcontextprotocol.io/introduction) enhances your artificial intelligence (AI)-powered development experience by providing specialized context about Telerik UI for WPF components.
 
-This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik UI for WPF components](https://www.telerik.com/WPF-ui) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
+This MCP server enables AI-powered integrated development environments (IDEs) and tools to generate more accurate, tailored code that uses [Telerik UI for WPF components](https://www.telerik.com/WPF-ui) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
 
 ## How to Install the Telerik WPF MCP Server
 
@@ -94,7 +94,7 @@ Use these settings when configuring the server in your MCP client:
 
 ### .NET 8 / .NET 9 Configuration (`.mcp.json`)
 
-Add a `.mcp.json` file to your solution root (or to `%USERPROFILE%` for global usage):
+Add a `.mcp.json` file to your solution root (or to `%USERPROFILE%` for global usage). In the examples below, replace `<license-file-path>` with the path to your `telerik-license.txt` file. Escape backslashes as `\\` in JSON strings. If you use `<license-key>` instead, replace it with the contents of your license key file.
 
 ```json
 {
@@ -103,7 +103,7 @@ Add a `.mcp.json` file to your solution root (or to `%USERPROFILE%` for global u
       "type": "stdio",
       "command": ".\\.tools\\telerik-wpf-assistant.exe",
       "env": {
-        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+        "TELERIK_LICENSE_PATH": "<license-file-path>"
       }
     }
   }
@@ -114,7 +114,7 @@ If you prefer embedding the license string directly:
 
 ```json
 "env": {
-  "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+  "TELERIK_LICENSE": "<license-key>"
 }
 ```
 
@@ -132,7 +132,7 @@ Add a `.mcp.json` file to your solution (root) folder. Choose the variant that m
       "command": "dnx",
       "args": ["Telerik.WPF.MCP", "--yes"],
       "env": {
-        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+        "TELERIK_LICENSE_PATH": "<license-file-path>"
       }
     }
   }
@@ -148,7 +148,7 @@ Add a `.mcp.json` file to your solution (root) folder. Choose the variant that m
       "type": "stdio",
       "command": ".\\.tools\\telerik-wpf-assistant.exe",
       "env": {
-        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+        "TELERIK_LICENSE_PATH": "<license-file-path>"
       }
     }
   }
@@ -181,27 +181,31 @@ The `Add/Update GitHub Copilot Instructions` option is visible only if you have 
 
 Add your [Telerik UI for WPF license key file]({%slug installing-license-key%}) using one of these options in the `env` section.
 
-__Option 1: License File Path (Recommended)__
+### Option 1: License File Path (Recommended)
+
+Replace `<license-file-path>` with the path to your `telerik-license.txt` file:
 
 ```json
 "env": {
-  "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+  "TELERIK_LICENSE_PATH": "<license-file-path>"
 }
 ```
 
-The `THE_PATH_TO_YOUR_LICENSE_FILE` should point to the `telerik-license.txt` file, usually in the AppData folder. Often it will look like:
+The `<license-file-path>` should point to the `telerik-license.txt` file, usually in the AppData folder. Often it will look like:
 
 `"TELERIK_LICENSE_PATH": "%appdata%/Telerik/telerik-license.txt"`
 
-__Option 2: Direct License Key__
+### Option 2: Direct License Key
+
+Replace `<license-key>` with the contents of your license key file:
 
 ```json
 "env": {
-  "TELERIK_LICENSE": "YOUR_LICENSE_KEY_HERE"
+  "TELERIK_LICENSE": "<license-key>"
 }
 ```
 
-> Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your Telerik UI for WPF license key]({%slug installing-license-key%}#updating-your-license-key) when necessary.
+>note Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your Telerik UI for WPF license key]({%slug installing-license-key%}#updating-your-license-key) when necessary.
 
 ## Visual Studio Usage
 
@@ -229,8 +233,7 @@ Start fresh sessions for unrelated prompts to avoid context pollution. You can c
 >- continue generation without waiting for **parallel tool calls**.
 >In these cases, the response may be generated but not provided to the Copilot Agent UI.
 >This is a known issue in Visual Studio Copilot, not related to Telerik MCP servers or AI tools, and does not reproduce in VS Code.
->For more details, see the related Visual Studio Developer Community issue:  
->https://developercommunity.visualstudio.com/t/Copilot-stopped-working-after-latest-upd/10936456
+>For more details, see the [Visual Studio Developer Community issue about Copilot tool calls](https://developercommunity.visualstudio.com/t/Copilot-stopped-working-after-latest-upd/10936456).
 >
 >Microsoft has acknowledged the issue and marked it as **Fixed - Pending Release**. A future Visual Studio update is expected to resolve it.
 
@@ -279,4 +282,3 @@ You can use the Telerik WPF MCP server with local large language models (LLMs):
 3. Connect your local model to the Telerik MCP server.
 
 This setup allows you to use the Telerik AI Coding Assistant without cloud-based AI models.
-

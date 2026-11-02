@@ -38,31 +38,40 @@ Jump to the following topics to learn about the specifics of the theme's palette
 
 ## Default Theme Colors
 
-Below you can find the differences between the three color variations. Each brush has relevant HEX value in the corresponding color variation.
+The tables below list each color's hexadecimal value for the Light (default), Dark, and Blue variations. Each value is paired with a decorative color swatch in the same cell. Colors are grouped as shared, variation-specific, or additional.
 
-|Color name|Light (default)| |Dark| |Blue| |
-|----------|---------------|---|----|---|----|---|
-|__Colors, which are same in the three palettes__| | | | | | |
-|AccentMainColor|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF|<div class="theme-palette-color" style="background: #3399FF"></div>|
-|AccentDarkColor|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|
-|SelectedColor|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
-|ValidationColor|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333|<div class="theme-palette-color" style="background: #FF3333"></div>|
-|__Color, which are different in the three palettes__| | | | | | |
-|AccentColor|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FFE5C365|<div class="theme-palette-color" style="background: #E5C365"></div>|
-|MarkerColor|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
-|StrongColor|FF717171|<div class="theme-palette-color" style="background: #717171"></div>|FF999999|<div class="theme-palette-color" style="background: #999999"></div>|FF717171|<div class="theme-palette-color" style="background: #717171"></div>|
-|MainColor|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFFFFFFF|<div class="theme-palette-color" style="background: #FFFFFF"></div>|
-|PrimaryColor|FFEEEEF2|<div class="theme-palette-color" style="background: #EEEEF2"></div>|FF2D2D30|<div class="theme-palette-color" style="background: #2D2D30"></div>|FFE6EBF5|<div class="theme-palette-color" style="background: #E6EBF5"></div>|
-|AlternativeColor|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
-|MouseOverColor|FFC9DEF5|<div class="theme-palette-color" style="background: #C9DEF5"></div>|FF3E3E40|<div class="theme-palette-color" style="background: #3E3E40"></div>|FFFDF4BF|<div class="theme-palette-color" style="background: #FDF4BF"></div>|
-|BasicColor|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
-|SemiBasicColor|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|663F3F46|<div class="theme-palette-color" style="background: #"></div>|66CCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
-|HeaderColor|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC|<div class="theme-palette-color" style="background: #007ACC"></div>|FF35496A|<div class="theme-palette-color" style="background: #35496A"></div>|
-|ComplementaryColor|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|FF434346|<div class="theme-palette-color" style="background: #434346"></div>|FFDBDDE6|<div class="theme-palette-color" style="background: #DBDDE6"></div>|
-|ReadOnlyBackgroundColor|FFF5F5F5|<div class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526|<div class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6|<div class="theme-palette-color" style="background: #F6F6F6"></div>|
-|ReadOnlyBorderColor|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46|<div class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB|<div class="theme-palette-color" style="background: #CCCEDB"></div>|
-|__Additional color__| | | | | | |		
-|DefaultForegroundColor|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1|<div class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E|<div class="theme-palette-color" style="background: #1E1E1E"></div>|
+### Shared Colors
+
+|Color name|Light (default)|Dark|Blue|
+|----------|---------------|----|----|
+|AccentMainColor|FF3399FF <div aria-hidden="true" class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF <div aria-hidden="true" class="theme-palette-color" style="background: #3399FF"></div>|FF3399FF <div aria-hidden="true" class="theme-palette-color" style="background: #3399FF"></div>|
+|AccentDarkColor|FF007ACC <div aria-hidden="true" class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC <div aria-hidden="true" class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC <div aria-hidden="true" class="theme-palette-color" style="background: #007ACC"></div>|
+|SelectedColor|FFFFFFFF <div aria-hidden="true" class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF <div aria-hidden="true" class="theme-palette-color" style="background: #FFFFFF"></div>|FFFFFFFF <div aria-hidden="true" class="theme-palette-color" style="background: #FFFFFF"></div>|
+|ValidationColor|FFFF3333 <div aria-hidden="true" class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333 <div aria-hidden="true" class="theme-palette-color" style="background: #FF3333"></div>|FFFF3333 <div aria-hidden="true" class="theme-palette-color" style="background: #FF3333"></div>|
+
+### Variation-Specific Colors
+
+|Color name|Light (default)|Dark|Blue|
+|----------|---------------|----|----|
+|AccentColor|FF007ACC <div aria-hidden="true" class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC <div aria-hidden="true" class="theme-palette-color" style="background: #007ACC"></div>|FFE5C365 <div aria-hidden="true" class="theme-palette-color" style="background: #E5C365"></div>|
+|MarkerColor|FF1E1E1E <div aria-hidden="true" class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1 <div aria-hidden="true" class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E <div aria-hidden="true" class="theme-palette-color" style="background: #1E1E1E"></div>|
+|StrongColor|FF717171 <div aria-hidden="true" class="theme-palette-color" style="background: #717171"></div>|FF999999 <div aria-hidden="true" class="theme-palette-color" style="background: #999999"></div>|FF717171 <div aria-hidden="true" class="theme-palette-color" style="background: #717171"></div>|
+|MainColor|FFFFFFFF <div aria-hidden="true" class="theme-palette-color" style="background: #FFFFFF"></div>|FF1E1E1E <div aria-hidden="true" class="theme-palette-color" style="background: #1E1E1E"></div>|FFFFFFFF <div aria-hidden="true" class="theme-palette-color" style="background: #FFFFFF"></div>|
+|PrimaryColor|FFEEEEF2 <div aria-hidden="true" class="theme-palette-color" style="background: #EEEEF2"></div>|FF2D2D30 <div aria-hidden="true" class="theme-palette-color" style="background: #2D2D30"></div>|FFE6EBF5 <div aria-hidden="true" class="theme-palette-color" style="background: #E6EBF5"></div>|
+|AlternativeColor|FFF5F5F5 <div aria-hidden="true" class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526 <div aria-hidden="true" class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6 <div aria-hidden="true" class="theme-palette-color" style="background: #F6F6F6"></div>|
+|MouseOverColor|FFC9DEF5 <div aria-hidden="true" class="theme-palette-color" style="background: #C9DEF5"></div>|FF3E3E40 <div aria-hidden="true" class="theme-palette-color" style="background: #3E3E40"></div>|FFFDF4BF <div aria-hidden="true" class="theme-palette-color" style="background: #FDF4BF"></div>|
+|BasicColor|FFCCCEDB <div aria-hidden="true" class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46 <div aria-hidden="true" class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB <div aria-hidden="true" class="theme-palette-color" style="background: #CCCEDB"></div>|
+|SemiBasicColor|66CCCEDB <div aria-hidden="true" class="theme-palette-color" style="background: #CCCEDB"></div>|663F3F46 <div aria-hidden="true" class="theme-palette-color" style="background: #"></div>|66CCCEDB <div aria-hidden="true" class="theme-palette-color" style="background: #CCCEDB"></div>|
+|HeaderColor|FF007ACC <div aria-hidden="true" class="theme-palette-color" style="background: #007ACC"></div>|FF007ACC <div aria-hidden="true" class="theme-palette-color" style="background: #007ACC"></div>|FF35496A <div aria-hidden="true" class="theme-palette-color" style="background: #35496A"></div>|
+|ComplementaryColor|FFDBDDE6 <div aria-hidden="true" class="theme-palette-color" style="background: #DBDDE6"></div>|FF434346 <div aria-hidden="true" class="theme-palette-color" style="background: #434346"></div>|FFDBDDE6 <div aria-hidden="true" class="theme-palette-color" style="background: #DBDDE6"></div>|
+|ReadOnlyBackgroundColor|FFF5F5F5 <div aria-hidden="true" class="theme-palette-color" style="background: #F5F5F5"></div>|FF252526 <div aria-hidden="true" class="theme-palette-color" style="background: #252526"></div>|FFF6F6F6 <div aria-hidden="true" class="theme-palette-color" style="background: #F6F6F6"></div>|
+|ReadOnlyBorderColor|FFCCCEDB <div aria-hidden="true" class="theme-palette-color" style="background: #CCCEDB"></div>|FF3F3F46 <div aria-hidden="true" class="theme-palette-color" style="background: #3F3F46"></div>|FFCCCEDB <div aria-hidden="true" class="theme-palette-color" style="background: #CCCEDB"></div>|
+
+### Additional Color
+
+|Color name|Light (default)|Dark|Blue|
+|----------|---------------|----|----|
+|DefaultForegroundColor|FF1E1E1E <div aria-hidden="true" class="theme-palette-color" style="background: #1E1E1E"></div>|FFF1F1F1 <div aria-hidden="true" class="theme-palette-color" style="background: #F1F1F1"></div>|FF1E1E1E <div aria-hidden="true" class="theme-palette-color" style="background: #1E1E1E"></div>|
 
 ## Default Theme Brushes
 
@@ -140,7 +149,7 @@ The `FontSize` and `FontFamily` properties of all components in the application 
 
 These properties are public so you can easily modify the theme resources at one single point. The most commonly used FontSize in the theme is named FontSize and its default value is __12__. The bigger font sizes are used for headers and footers while smaller ones are used inside complex controls such as `RadRibbonView`, `RadGauge`, `RadGanttView`, etc. As for the FontFamily - there is only one FontFamily resource which is named FontFamily and it is set to `Segoe UI`.
 
->Please note that for complex scenarios we strongly recommend setting font size only initially before the application is initialized. We recommend font sizes between 11px and 19px for the FontSize property.
+>note For complex scenarios we strongly recommend setting font size only initially before the application is initialized. We recommend font sizes between 11px and 19px for the FontSize property.
 
 All the available `FontSizes` and `FontFamily` as well as their __default values__:
 

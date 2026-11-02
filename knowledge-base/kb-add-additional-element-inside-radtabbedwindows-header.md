@@ -15,11 +15,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2019.3.1023</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadTabbedWindow for WPF</td>
 		</tr>
 	</tbody>
@@ -34,8 +34,9 @@ How to add additional element inside RadTabbedWindow's header.
 
 To achieve this requirement, you can subscribe to the Loaded event of RadTabbedWindow. Inside the event handler, you can get the StackPanel that holds the header buttons. Then, you can insert new buttons on the panel.
 
-__Example 1: Subscribe to the ContextMenuOpening event__
-    ```C#
+__Example 1: Subscribe to the Loaded event__
+
+```C#
         private void RadTabbedWindow_Loaded(object sender, RoutedEventArgs e)
 		{
 			var stackWithButtons = this.ChildrenOfType<StackPanel>().FirstOrDefault( x=> x.Name == "HeaderButtons");
@@ -44,4 +45,4 @@ __Example 1: Subscribe to the ContextMenuOpening event__
 				stackWithButtons.Children.Insert(0, new RadButton() { Content = "My Custom Button" });
 			}
 		}
-    ```
+```

@@ -15,7 +15,7 @@ Currently, this section of the documentation contains only the latest release no
 
 ## 2025 Q4 (2025.4.1321)
 
-#### RichTextBox
+### RichTextBox
 
 * The `UpdateSelection` method of `KeyboardSelectionHandler` was removed. Use the `MoveActiveEnd` method instead.
 
@@ -25,7 +25,7 @@ Currently, this section of the documentation contains only the latest release no
 
 ## 2025 Q2
 
-#### Common changes
+### Common changes
 
 * The .NET 6 dlls set of Telerik UI for WPF is no longer distributed with the product. The minimum .NET version is {{ site.minimum_net_core_version }}.
 
@@ -33,7 +33,7 @@ Currently, this section of the documentation contains only the latest release no
 
 * The `IsFullTrustExtension` class was removed. No longer needed in the .NET versions supported by Telerik.
 
-#### RichTextBox
+### RichTextBox
 
 * The `MouseSelectionHandler(RadDocument document)` obsolete constructor of the `MouseSelectionHandler` class was removed. Instead, use the `MouseSelectionHandler(RadDocument document, IDocumentEditorPresenter presenter)` constructor.
   
@@ -45,11 +45,11 @@ Currently, this section of the documentation contains only the latest release no
 
 ## 2025 Q1
 
-#### Common Changes
+### Common Changes
 
 * The Telerik UI for WPF has a new licensing mechanism. Due to this, you need to either add the __Telerik.Licensing__ NuGet package or reference the __Telerik.Licensing.Runtime.dll__ . You also need to [install a license key]({%slug installing-license-key%}).
 
-#### RichTextBox
+### RichTextBox
 
 * The `ShouldPersist` and `ShouldStartNewComposition` properties of the `TextInsertedEventArgs` class are now obsoleted. Use the `ImeLanguage` and `CurrentEvent` properties instead.
 

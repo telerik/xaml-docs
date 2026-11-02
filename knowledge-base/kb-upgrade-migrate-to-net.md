@@ -15,7 +15,7 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>UI for WPF</td>
 		</tr>
 	</tbody>
@@ -39,11 +39,11 @@ There is no API difference between Telerik dlls for these targets, so you only n
 
 2. Right-click the WPF project in Visual Studio and select __Properties__.
 
-	![](images/upgrade-migrate-to-net-2.png)
+	![WPF project context menu with the Properties option](images/upgrade-migrate-to-net-2.png)
 
 3. In __Target framework__, select __.{{ site.minimum_net_core_version }}__ (or later), then save the project file.
 
-	![](images/upgrade-migrate-to-net-3.png)
+	![Project properties for selecting the .NET target framework](images/upgrade-migrate-to-net-3.png)
 
 4. Update the referenced Telerik assemblies using your preferred installation approach (we recommend [using NuGet]({%slug nuget-installation%})).
 
@@ -63,11 +63,11 @@ There is no API difference between Telerik dlls for these targets, so you only n
 
 2. Right-click the WPF project in Visual Studio and select __Properties__.
 
-	![](images/upgrade-migrate-to-net-0.png)
+	![WPF project context menu with the Properties option](images/upgrade-migrate-to-net-0.png)
 
 3. In __Target framework__, select __.NET Framework 4.6.2__ (or later), then save the project file.
 
-	![](images/upgrade-migrate-to-net-1.png)
+	![Project properties for selecting the .NET Framework target version](images/upgrade-migrate-to-net-1.png)
 
 4. Update the referenced Telerik assemblies using your preferred installation approach (we recommend [using NuGet]({%slug nuget-installation%})).
 
@@ -77,4 +77,3 @@ There is no API difference between Telerik dlls for these targets, so you only n
 
 * [Overview of porting from .NET Framework to .NET](https://learn.microsoft.com/en-us/dotnet/core/porting/)
 * [Migrate to .NET Framework 4.8, 4.7, and 4.6.2](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/)
-

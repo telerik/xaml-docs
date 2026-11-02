@@ -45,13 +45,15 @@ __Telerik project templates__
 
 ![Telerik UI for WPF Visual Studio project templates](images/VSExtentions_WPF_OverviewProjectTemplates.jpg)
 
-### Visual Studio Support
+## Visual Studio Support
+
+The following table lists supported Visual Studio versions and version-specific limitations.
 
 <table>
 	<thead>
 		<tr>
-			<th width="33.6%">Visual Studio Version</th>
-			<th width="66.3%">Notes</th>
+			<th scope="col" width="33.6%">Visual Studio Version</th>
+			<th scope="col" width="66.3%">Notes</th>
 		</tr>
 	</thead>
 	<tbody>

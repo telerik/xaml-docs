@@ -15,19 +15,25 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
 ## RadGridView
 
-### Data Events
+The following sections group RadGridView events by purpose.
+
+<a id="data-events"></a>
+
+### RadGridView Data Events
             
 * __DataLoading__: Occurs before the grid view data is loaded. The type of the passed event arguments is __GridViewDataLoadingEventArgs__. The event is raised when the control is first bound, when its **ItemsSource** is changed or when a [TableDefinition]({%slug gridview-basic-hierarchies%}#defining-the-gridviewtabledefinition) is updated.
 
 * __DataLoaded__: Occurs when the grid view data is loaded. The type of the passed event arguments is {% if site.site_name == 'WPF' %}__System.EventArgs__{% endif %}{% if site.site_name == 'Silverlight' %}__GridViewDataLoadingEventArgs__{% endif %}. The event is raised when the control is first bound, when its **ItemsSource** is changed,when a [TableDefinition]({%slug gridview-basic-hierarchies%}#defining-the-gridviewtabledefinition) is updated or when a data operation (such as sorting, filtering and/or grouping) is performed. 
 
->The DataLoading and DataLoaded events are triggered when the ItemsSource is changed
+>note The DataLoading and DataLoaded events are triggered when the ItemsSource is changed.
 
 * __BindingValidationError__: Occurs when a data validation error is reported by a binding source. The type of the passed event arguments is __EventArgs__.
 
 * __AddingNewDataItem__: Occurs when a new data item is about to be added. The type of the passed event arguments is __GridViewAddingNewEventArgs__.
 
-### Selection Events
+<a id="selection-events"></a>
+
+### RadGridView Selection Events
 
 * __CurrentCellInfoChanged__: Occurs when the selected grid cell has changed. The type of the passed event arguments is __GridViewCurrentCellInfoChangedEventArgs__.
 
@@ -39,7 +45,9 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
 * __RowUnloaded__: Occurs anytime the row disappears within the view port. The type of the passed event arguments is __RowUnloadedEventArgs__.
 
-### Edit Events
+<a id="edit-events"></a>
+
+### RadGridView Edit Events
 
 * __RowEditEnded__: Occurs when row validation passed successfully and new data is committed to the __RadGridView__.__ItemsSource__. The type of the passed event arguments is __GridViewRowEditEndedEventArgs__.
 
@@ -51,19 +59,19 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
 * __PreparedCellForEdit__: Occurs after the PreparingCellForEdit event.
 
-Get more information about the edit events [here]({%slug gridview-events-edit%}).
+See [Edit Events]({%slug gridview-events-edit%}) for more information.
 
 ### Delete Event
 
-Get more information about the delete events [here]({%slug gridview-events-delete%}).    
+See [Delete Events]({%slug gridview-events-delete%}) for more information.
 
 ### Validation Events
 
-Get more information about the validation events [here]({%slug gridview-events-validation%}).
+See [Validation Events]({%slug gridview-events-validation%}) for more information.
 
 ### Filtering Events
 
-Get more information about the filtering events [here]({%slug gridview-filtering-event-model%}).  
+See [Filtering Events]({%slug gridview-filtering-event-model%}) for more information.
 
 ### Sorting Events 
 
@@ -71,7 +79,7 @@ Get more information about the filtering events [here]({%slug gridview-filtering
 
 * __Sorted__: Occurs when the grid data has been sorted. The type of the passed event arguments is __GridViewSortedEventArgs__.
 
-Get more information about the sorting events [here]({%slug gridview-sorting-basics%})
+See [Sorting Events]({%slug gridview-sorting-basics%}#events) for more information.
 
 ### Searching Events
 
@@ -79,7 +87,9 @@ Get more information about the sorting events [here]({%slug gridview-sorting-bas
 
 * __Searched__: Occurs when the grid data has been searched. The type of the passed event arguments is __GridViewSearchedEventArgs__ which contains the value of the text which was entered in the search panel **TextBox** - **SearchText**.
 
-### Grouping 
+<a id="grouping"></a>
+
+### Grouping Events
 
 * __Grouping__: Occurs when the grid data is about to be grouped. The type of the passed event arguments is __GridViewGroupingEventArgs__.
 
@@ -87,7 +97,7 @@ Get more information about the sorting events [here]({%slug gridview-sorting-bas
 
 * __ChildTableDefinitionAdded__: Occurs when a new child table definition has been added. The type of the passed event arguments is __TableDefinitionCreatedEventArgs__.
 
-Get more information about the grouping events [here]({%slug gridview-events-grouping%}).
+See [Grouping Events]({%slug gridview-events-grouping%}) for more information.
 
 ### Exporting Events 
           
@@ -99,7 +109,7 @@ Get more information about the grouping events [here]({%slug gridview-events-gro
 
 * __ElementExportedToDocument__: Occurs after the ElementExportingToDocument event. Within it you can access the StreamWriter and write additional data to the stream.
 
-Get more information about the exporting events [here]({%slug gridview-export-events%}).
+See [Export Events]({%slug gridview-export-events%}) for more information.
 
 ### Row Details Events
 
@@ -115,15 +125,19 @@ Get more information about the exporting events [here]({%slug gridview-export-ev
 
 * __ColumnWidthChanged__: Occurs after the resize is complete. The type of the passed event arguments is __ColumnWidthChangedEventArgs__.
 
-Get more information about the column resizing events [here]({%slug gridview-column-resize-event%})
+See [Column Resizing Events]({%slug gridview-column-resize-event%}) for more information.
 
-### Other
+<a id="other"></a>
+
+### Column Generation and Row Expansion Events
 
 * __AutoGeneratingColumn__: Occurs each time new column is auto generated by the grid view control. The type of the passed event arguments is __GridViewAutoGeneratingColumnEventArgs__.
 
 * __RowIsExpandedChanged__: Occurs when a row's expanded state is changed - when its hierarchy child is expanded or collapsed.
 
 	__Example 1: Shows if the row is expanded__
+
+	The following example checks whether the row is expanded.
 
 	<snippet id='radgridview-events-overview-example_1_shows_if_the_row_is_expanded-cs' />
 
@@ -132,51 +146,70 @@ Get more information about the column resizing events [here]({%slug gridview-col
 
 	__Example 2: Cancel the expanding__
 
+	The following example cancels row expansion.
+
 	<snippet id='radgridview-events-overview-example_2_cancel_the_expanding-cs' />
 
 
->Both __RowIsExpandedChanged__ and __RowIsExpandedChanging__ occur only when there is [Hierarchy]({%slug gridview-hierachy-overview%}) defined and won't be applied if using the __RowDetailsTemplate__ property with another __RadGridView__.
+>note Both __RowIsExpandedChanged__ and __RowIsExpandedChanging__ occur only when a [Hierarchy]({%slug gridview-hierachy-overview%}) is defined. They do not apply when using the __RowDetailsTemplate__ property with another __RadGridView__.
 
 ## GridViewColumn
 
-### Sorting
+The following event reports changes to a column's sorting state.
 
-* __SortingStateChanged__: Occurs when the sorting state of the column is changed. The type of the passed event arguments is __RadRoutedPropertyChangedEventArgs<SortingState>__.
+<a id="sorting"></a>
+
+### Column Sorting Events
+
+* __SortingStateChanged__: Occurs when the sorting state of the column is changed. The type of the passed event arguments is `RadRoutedPropertyChangedEventArgs<SortingState>`.
 
 ## GridViewRow
 
-### Data Events
+The following sections describe events exposed by GridViewRow.
+
+<a id="data-events-1"></a>
+
+### GridViewRow Data Events
           
 * __BindingValidationError__: Occurs when a data validation error is reported by a binding source. The type of the passed event arguments is __ValidationErrorEventArgs__.
 
-### Selection Events
+<a id="selection-events-1"></a>
+
+### GridViewRow Selection Events
 
 * __Selected__: Occurs when the grid row is selected. The type of the passed event arguments is __RoutedEventArgs__.
 
 * __Unselected__: Occurs when the grid row is deselected. The type of the passed event arguments is __RoutedEventArgs__.
 
-### Other
+<a id="other-1"></a>
+
+### Row Expansion Events
 
 * __IsExpandedChanged__: Occurs when __GridViewRow__ changes its __IsExpanded__ state. The type of the passed event arguments is __RoutedEventArgs__.
 
 ## GridViewCell
 
-### Data Events
+The following sections describe events exposed by GridViewCell.
+
+<a id="data-events-2"></a>
+
+### GridViewCell Data Events
 
 * __BindingValidationError__: Occurs when a data validation error is reported by a binding source. The type of the passed event arguments is __ValidationErrorEventArgs__.
 
-### Edit Events
+<a id="edit-events-1"></a>
 
-* __IsEditorVisibleChanged__: Occurs when the cell editors has visibility changed. The type of the passed event arguments is __RoutedPropertyChangedEventArgs<bool>__.
+### GridViewCell Edit Events
+
+* __IsEditorVisibleChanged__: Occurs when the cell editor's visibility changes. The type of the passed event arguments is `RoutedPropertyChangedEventArgs<bool>`.
 
 ## See Also
 
 * [Validation Events]({%slug gridview-events-validation%})
 * [Column Resizing Events]({%slug gridview-column-resize-event%})
 * [Export Events]({%slug gridview-export-events%})
-* [Grouping Events]({%slug gridview-events-grouping%}#)
+* [Grouping Events]({%slug gridview-events-grouping%})
 * [Sorting Events]({%slug gridview-sorting-basics%}#events)
 * [Filtering Events]({%slug gridview-filtering-event-model%})
 * [Delete Events]({%slug gridview-events-delete%})
 * [Edit Events]({%slug gridview-events-edit%})
-

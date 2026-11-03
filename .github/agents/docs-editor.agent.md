@@ -361,7 +361,7 @@ Before you finish, also verify that the edited markdown article remains valid:
 - One YAML frontmatter block only.
 - No duplicated metadata keys.
 - Required metadata fields still present.
-- One H1 only.
+- H1 usage matches the article type and renderer: exactly one source H1 where required, and no added source H1 for metadata-generated KB titles.
 - Markdown structure remains well formed.
 - Required article elements still exist unless the edit intentionally replaced
   them with an equivalent valid structure.

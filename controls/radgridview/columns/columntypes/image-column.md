@@ -28,7 +28,7 @@ __Example 1: Define GridViewImageColumn in XAML.__
 <snippet id='radgridview-columns-columntypes-image-column-example_1_define_gridviewimagecolumn_in_xaml-xaml' />
 
 
-__The resulting RadGridView__  
+>caption The resulting RadGridView
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewImageColumn displaying images from a bound ImageUrl field](images/RadGridView_ColumnTypes_6.png)
 

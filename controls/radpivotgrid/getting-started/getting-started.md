@@ -140,7 +140,8 @@ __Example 1: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a RadPivotGrid with the **Windows8** theme applied.
 
-#### __Figure 1: RadPivotGrid with the Windows8 theme__
+>caption RadPivotGrid with the Windows8 theme
+
 ![RadPivotGrid with Windows8 theme](images/radpivotgrid-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

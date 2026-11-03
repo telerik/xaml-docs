@@ -48,7 +48,8 @@ __Example 2: Defining the control in XAML__
 __Example 3: Populating the control with data__
 <snippet id='radcardview-getting-started-example_3_populating_the_control_with_data-cs' />
 
-__Figure 1: RadCardView example__
+>caption RadCardView example
+
 ![{{ site.framework_name }} RadCardView RadCardView example](images/radcardview-getting-started-0.png)
 
 The example shows also how to tell what is the property displaying the card headers (via the __CardHeaderBinding__ property) and the height of the cards (via the __MinorLength__ property). The MinorLength will apply to the height or the width of the cards based on the [CardLayout]({%slug radcardview-features-layout%}) property value.
@@ -87,7 +88,8 @@ __Example 2: Merge the ResourceDictionaries__
 
 __Figure 4__ shows a __RadCardView__ with the **Material** theme applied.
 	
-__Figure 4: RadCardView with the Material theme__
+>caption RadCardView with the material theme
+
 ![RadCardView with Material theme](images/radcardview-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

@@ -33,7 +33,7 @@ __Example 2: Creating an Employee class with validation attributes__
 
 **Figure 1** shows RadDataForm's state after validation has been performed.
 
-#### __Figure 1: RadDataForm after validation has been performed__
+>caption RadDataForm after validation has been performed
 
 ![RadDataForm after validation has been performed](images/raddataform-validation-item-level.png)
 

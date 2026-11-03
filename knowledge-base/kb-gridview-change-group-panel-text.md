@@ -40,6 +40,6 @@ __Changing the text of the group panel of RadGridView__
     }
 ```
 
-__RadGridView with modified group panel text__
+>caption RadGridView with modified group panel text
 
 ![RadGridView with modified group panel text](images/kb-gridview-change-group-panel-text-0.png)

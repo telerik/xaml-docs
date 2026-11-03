@@ -24,7 +24,8 @@ The default content template of the buttons contains a [RadGlyph]({%slug common-
 __Example 1: Changing the default glyphs__
 <snippet id='radautosuggestbox-appearance-customize-buttons-example_1_changing_the_default_glyphs-xaml' />
 
-__Figure 1: Query and clear buttons with changed glyph icons__
+>caption Query and clear buttons with changed glyph icons
+
 ![{{ site.framework_name }} RadAutoSuggestBox Query and clear buttons with changed glyph icons](images/radautosuggestbox-appearance-customize-buttons-0.png)
 
 ## Customizing the Buttons UI
@@ -34,7 +35,8 @@ To replace the default RadGlyph element used to display the buttons' content, se
 __Example 2: Changing the default content template__
 <snippet id='radautosuggestbox-appearance-customize-buttons-example_2_changing_the_default_content_template-xaml' />
 
-__Figure 2: Query and clear buttons with changed content template__
+>caption Query and clear buttons with changed content template
+
 ![{{ site.framework_name }} RadAutoSuggestBox Query and clear buttons with changed content template](images/radautosuggestbox-appearance-customize-buttons-1.png)
 
 ## Hiding the Buttons
@@ -44,7 +46,8 @@ To control the visibility of the query and clear buttons, set the __QueryButtonV
 __Example 3: Hiding the query button__
 <snippet id='radautosuggestbox-appearance-customize-buttons-example_3_hiding_the_query_button-xaml' />
 
-__Figure 3: Hidden query button__
+>caption Hidden query button
+
 ![{{ site.framework_name }} RadAutoSuggestBox Hidden query button](images/radautosuggestbox-appearance-customize-buttons-2.png)
 
 When the __ClearButtonVisibility__ property is set to __Auto__, the button shows only when the control is focused and the TextBox is not empty. This is the default behavior.

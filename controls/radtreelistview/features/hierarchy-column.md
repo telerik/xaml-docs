@@ -20,7 +20,7 @@ By default, the first column contains the tree view UI. In order to change the c
 __Changing the column that contains the tree view UI__
 <snippet id='radtreelistview-features-hierarchy-column-block_1-xaml' />
 
-__RadTreeListView with the tree view UI shown on the second column__
+>caption RadTreeListView with the tree view UI shown on the second column
 
 ![WPF RadTreeListView Hierarchy Column Index 1](images/RadTreeListView_HierarchyColumn_01.png)
 
@@ -31,7 +31,7 @@ The RadTreeListView control allows you to control the indent of the hierarchy bu
 __Changing the indent of the hierarchy button__
 <snippet id='radtreelistview-features-hierarchy-column-block_2-xaml' />
 
-__RadTreeListView with increased indent on the hierarchy button__
+>caption RadTreeListView with increased indent on the hierarchy button
 
 ![WPF RadTreeListView with increased indent on the hierarchy button](images/RadTreeListView_HierarchyColumn_02.png)
 

@@ -140,6 +140,6 @@ __Binding the Value property of RadNumericUpDown__
 
 >important In order for the RadNumericUpDown control to show its `Validation.ErrorTemplate` when an error occurs, set the `ValidatesOnDataErrors` property of the `Binding` instance to __True__.
 
-__RadNumericUpDown with a validation error and error message__
+>caption RadNumericUpDown with a validation error and error message
 
 ![RadNumericUpDown with a validation error and error message](images/kb-numericupdown-validation-idataerrorinfo-0.png)

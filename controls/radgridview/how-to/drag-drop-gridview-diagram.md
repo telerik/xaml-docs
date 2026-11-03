@@ -40,7 +40,8 @@ __Example 3: Setting DataContext__
 
 If you run the application now, you should get a structure like in **Figure 1**:
 
-#### Figure 1: RadGridView and RadDiagram
+>caption RadGridView and RadDiagram
+
 ![Telerik UI for {{ site.framework_name }} RadGridView beside RadDiagram before drag and drop is implemented between the controls](images/drag-and-drop-from-radgridview-to-raddiagram_0.png)
 	
 You can observe that you still can't drag-drop a row from the RadGridView to the RadDiagram. This is expected as the drag-drop functionality is still not implemented. 

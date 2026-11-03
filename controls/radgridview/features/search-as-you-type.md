@@ -23,7 +23,7 @@ __Showing the Search Panel__
 <snippet id='radgridview-features-search-as-you-type-showing_the_search_panel-xaml' />
 
 
-__Showing the Search Panel__
+>caption Showing the search panel
 
 ![Telerik UI for WPF RadGridView search panel displayed above the grid for text search](images/gridview-textsearch-showsearchpanel.png)
 
@@ -51,7 +51,7 @@ __Collapse the close button in code-behind__
 <snippet id='radgridview-features-search-as-you-type-collapse_the_close_button_in_code_behind-vb' />
 
 
-__Collapsed Close Button__
+>caption Collapsed close button
 
 ![Telerik UI for WPF RadGridView search panel with the close button collapsed](images/hide-close-button.png)
 
@@ -109,20 +109,20 @@ In order to modify the search behavior, you can benefit from the following three
 
 - __+__&mdash;The items that will pass the filtering operation will have to __contain__ both the value __before__ the operator and the one __after__ it.
 
-	__Using the `+` search operator__
-	
+>caption Using the `+` search operator
+
 	![Telerik UI for WPF RadGridView search results using the plus operator to require both terms](images/gridview-textsearch-plus-operator.png)
 
 - __-__&mdash;All items that will pass the filtering operation will have to  __contain__ the value __before__ the operator, but __not__ the one __after__ it.
 
-	__Using the `-` search operator__
-	
+>caption Using the `-` search operator
+
 	![Telerik UI for WPF RadGridView search results using the minus operator to exclude a term](images/gridview-textsearch-minus-operator.png)
 
 - __""__&mdash;When a word or a phrase is put in quotes, the filtered objects will contain only the exact same value.
 	
-	__Using the `""` search operator__
-	
+>caption Using the `""` search operator
+
 	![Telerik UI for WPF RadGridView search results using quotation marks for an exact phrase match](images/gridview-textsearch-quotes-operator.png)
 
 ## SearchMode
@@ -163,7 +163,7 @@ __Setting IsSearchWithAccentEnabled property__
 <snippet id='radgridview-features-search-as-you-type-setting_issearchwithaccentenabled_property-cs' />
 
 
-__Using Search With Accent Insensitive__
+>caption Using search with accent insensitive
 
 ![Telerik UI for WPF RadGridView search-as-you-type with accent-insensitive matching enabled](images/radgridview-search-asyoutype-accent.PNG)
 
@@ -175,7 +175,7 @@ __Excluding a column from the search mechanism__
 <snippet id='radgridview-features-search-as-you-type-excluding_a_column_from_the_search_mechanism-xaml' />
 
 
-__RadGridView with an excluded column from the search mechanism__
+>caption RadGridView with an excluded column from the search mechanism
 
 ![Telerik UI for WPF RadGridView search-as-you-type with one column excluded from the search mechanism](images/radgridview-search-as-you-type-exclude-column.png)
 

@@ -119,7 +119,8 @@ __Example 5: Merge the ResourceDictionaries__
 
 __Figure 1__ shows RadPdfViewer with the __Windows8__ theme applied.
 	
-#### __Figure 1: RadPdfViewer with the Windows8 theme__
+>caption RadPdfViewer with the Windows8 theme
+
 ![Telerik {{ site.framework_name }} PdfViewer-windows8](images/RadPdfViewer-windows8.png)
         
 

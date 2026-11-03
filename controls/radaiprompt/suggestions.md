@@ -16,7 +16,7 @@ The `RadAIPrompt` control allows you to define suggestions for the user prior to
 __Showing Suggestions in the RadAIPrompt__
 <snippet id='radaiprompt-suggestions-showing_suggestions_in_the_radaiprompt-cs' />
 
-__RadAIPrompt with suggestions__
+>caption RadAIPrompt with suggestions
 
 ![WPF RadAIPrompt with suggestions](images/radaiprompt-suggestions-0.png)
 
@@ -37,7 +37,7 @@ __Defining a sample model and a view model__
 __Defining the RadAIPrompt and its properties__
 <snippet id='radaiprompt-suggestions-defining_the_radaiprompt_and_its_properties-xaml' />
 
-__RadAIPrompt suggestions with custom appearance__
+>caption RadAIPrompt suggestions with custom appearance
 
 ![WPF RadAIPrompt suggestions with custom appearance](images/radaiprompt-suggestions-1.png)
 

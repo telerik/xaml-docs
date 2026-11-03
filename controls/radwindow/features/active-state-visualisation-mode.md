@@ -17,7 +17,7 @@ When set to **True** while the RadWindow is displayed as a [modal dialog window]
 
 > The default value is **True**. If set to **False** the __RadWindow__ will always appear visually active.
 
-#### Figure 1: Active and inactive RadWindow in the Office_Black theme
+>caption Active and inactive RadWindow in the Office_black theme
 
 ![Active and inactive RadWindow](images/Radwindow_Active_Inactive.png)
 

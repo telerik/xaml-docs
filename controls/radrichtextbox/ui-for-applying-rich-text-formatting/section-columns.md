@@ -18,14 +18,16 @@ With the Section Columns feature, **RadRichTextBox** allows you arrange the text
 * [Changing the Width of a Section Column](#changing-the-width-of-a-section-column)
 
 
-__Figure 1: Text laid out in columns__
+>caption Text laid out in columns
+
 ![RadRichTextBox_Features_Section_Columns_01](images/RadRichTextBox_Features_Section_Columns_01.png)
 
 ## Create Section Columns
 
 The Page Layout tab of [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) allows you set different types of section columns.
 
-__Figure 2: Section columns menu__
+>caption Section columns menu
+
 ![RadRichTextBox_Features_Section_Columns_03](images/RadRichTextBox_Features_Section_Columns_03.png)
 
 * **One**: Represents a single text column.
@@ -40,19 +42,22 @@ __Figure 2: Section columns menu__
 
 * **More Columns...**: Opens the Section Columns Dialog that allows you set columns with custom width and spacing. 
 
-__Figure 3: Left option applied on a section__
+>caption Left option applied on a section
+
 ![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
 
 ## Changing the Width of a Section Column
 
 When the Section contains columns with equal width, you can customize the width of a column through the Document Ruler. When the caret is positioned on a column, a thumb appears that allows you change the width by dragging it.
 
-__Figure 3: Customizing the width of a column__
+>caption Customizing the width of a column
+
 ![RadRichTextBox_Features_Section_Columns_04](images/RadRichTextBox_Features_Section_Columns_04.png)
 
 Another approach for applying different settings to section columns is through the Columns dialog.
 
-__Figure 4: Customizing the width and spacing of columns using dialog__
+>caption Customizing the width and spacing of columns using dialog
+
 ![RadRichTextBox_Features_Section_Columns_04](images/RadRichTextBox_Features_Section_Columns_05.png)
 
 ## See Also

@@ -167,7 +167,7 @@ __Changing the read-only colors__
 ```
 
 
-__Theme colors__
+>caption Theme colors
 
 ![{{ site.framework_name }} Office2016 Theme Colors](../images/common-styling-appearance-office2016-theme-0.png)	
 
@@ -221,7 +221,7 @@ __Changing the theme's FontSize and FontFamily__
 	}
 ```
 
-__Setting FontSize and FontFamily__
+>caption Setting FontSize and FontFamily
 
 ![{{ site.framework_name }} Office2016 Setting FontSize and FontFamily](../images/common-styling-appearance-office2016-theme-1.png)	
 
@@ -235,7 +235,7 @@ __Setting focus border thickness__
 	Office2016Palette.Palette.FocusThickness = new Thickness(1);
 ```
 	
-__Setting the focus border thickness__
+>caption Setting the focus border thickness
 
 ![{{ site.framework_name }} Office2016 Setting the Focus Border Thickness](../images/common-styling-appearance-office2016-theme-3.png)	
 
@@ -263,7 +263,7 @@ __Changing the default corner radius__
 	Office2016Palette.Palette.CornerRadiusTop = new CornerRadius(2, 2, 0, 0);
 ```
 
-__Setting the corner radius__
+>caption Setting the corner radius
 
 ![{{ site.framework_name }} Office2016 Setting the Corner Radius](../images/common-styling-appearance-office2016-theme-4.png)	
 
@@ -292,7 +292,7 @@ __Using glyphs__
 			   FontSize=”16” />
 ```
 
-__Heart glyph__
+>caption Heart glyph
 
 ![{{ site.framework_name }} Office2016 Heart Glyph](../images/common-styling-appearance-office2016-theme-2.png)	
 
@@ -307,7 +307,7 @@ __Setting the disabled opacity__
 	Office2016Palette.Palette.DisabledOpacity = 0.3;
 ```
 
-__Setting the disabled opacity__
+>caption Setting the disabled opacity
 
 ![{{ site.framework_name }} Office2016 Setting the Disabled Opacity](../images/common-styling-appearance-office2016-theme-5.png)	
 

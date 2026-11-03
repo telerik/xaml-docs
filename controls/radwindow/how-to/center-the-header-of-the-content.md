@@ -17,7 +17,8 @@ __Example 1: Centering the Header of the RadWindow__
 
 <snippet id='radwindow-how-to-center-the-header-of-the-content-block_1-xaml' />
 
-#### __Figure 1: Result from Example 1 in the Office2016 theme__
+>caption Result from example 1 in the Office2016 theme
+
 ![RadWindow with Centered Header](images/RadWindow_How_To_Center_the_Header_01.png)
 
 >tip Alternatively, you can also place the centered UIElement in the __HeaderTemplate__ of the RadWindow.

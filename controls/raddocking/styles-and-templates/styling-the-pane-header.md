@@ -22,7 +22,8 @@ __Example 1: Creating an implicit style targeting PaneHeader__
 <snippet id='raddocking-styles-and-templates-styling-the-pane-header-example_1_creating_an_implicit_style_targeting_paneheader-xaml' />
 
 
-#### __Figure 1: PaneHeader with Red Background in the Office2016 theme__
+>caption PaneHeader with red background in the Office2016 theme
+
 ![PaneHeader with Red Background](images/RadDocking_PaneHeader_Styling.png)
 
 >important You will notice that in __Figure 1__ the PaneHeader in the left group is red, however the PaneHeader in the right group is blue. This is due to the fact that the right pane is [active]({%slug raddocking-features-panes-activation-mode%}). Inside the ControlTemplate of the PaneHeader there are triggers/visual states, which set the Background when a pane becomes active and that value takes precedence over the value from the implicit style. In order to change this behavior, you can extract and modify the ControlTemplate of the PaneHeader for the theme(s) that you are using. For more information on how to do that read, the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

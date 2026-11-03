@@ -23,13 +23,16 @@ OutlookBarConfigureButtons | Configure buttons
 OutlookBarHorizontalSplitter | Start dragging in order to change items' position
 OutlookBarVerticalResizer | Start dragging in order to resize
 
-#### __Figure 1: Vertical Resizer__
+>caption Vertical resizer
+
 ![Vertical Resizer](images/OutlookBar_Localization_01.png)
 
-#### __Figure 2: Horizontal Splitter__
+>caption Horizontal splitter
+
 ![Vertical Resizer](images/OutlookBar_Localization_02.png)
 
-#### __Figure 3: Configure Buttons__
+>caption Configure buttons
+
 ![Vertical Resizer](images/OutlookBar_Localization_03.png)
 
 ## See also

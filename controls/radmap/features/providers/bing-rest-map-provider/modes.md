@@ -45,29 +45,32 @@ __Example 3: Remove mode from the view mode commands bar__
 
 This mode offers worldwide orthographic aerial and satellite imagery. The labels in this mode are enabled by default.
 
-__Figure 1: Aerial mode with labels__
-	
+>caption Aerial mode with labels
+
 ![Rad Map Features Rest Providers 01 with labels](images/RadMap_Features_Rest_Providers_AerialWithLabels.png)	
 
 ## Aerial without Labels
 
 You can the disable labels using the __IsLabelVisible__ property. When you set it to *False* the labels disappear. __Figure 2__ is a snapshot of the Aerial mode for Bing Map Rest Provider when the labels are not visible.
 
-__Figure 2: Aerial mode without labels__
+>caption Aerial mode without labels
+
 ![Rad Map Features Rest Providers 01 nolabels](images/RadMap_Features_Rest_Providers_Aerial.png)
 
 ## AerialOnDemand
 
 This imagery set represent Aerial imagery with on-demand road overlay.
 
-__Figure 3: AerialOnDemand mode__
+>caption AerialOnDemand mode
+
 ![Rad Map Features Rest Providers 01 with labels](images/RadMap_Features_Rest_Providers_AerialWithLabels.png)
 
 ## Road
 
 The road imagery type is a set of static tile server. The tiles are generated ahead of time and then stored and served. The *Road* mode of Bing Maps ignores the __IsLabelVisible__ property. For this mode the labels are displayed always. __Figure 4__ is an example of the __Road Mode__ definition.
 
-__Figure 4: Road mode__
+>caption Road mode
+
 ![Rad Map Features Rest Providers 01 road](images/RadMap_Features_Rest_Providers_Road.png)	
 
 ## Birdseye
@@ -78,35 +81,40 @@ The __Bing Map Rest Provider__ also supports the *Birdseye* mode. This mode can 
 
 Here is an example of the __Birdseye Mode__ definition:
 
-__Figure 5: Birdseye mode__
+>caption Birdseye mode
+
 ![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Providers_BingMap_Birdseye.png)
 
 ## RoadOnDemand
 
 The road on demand imagery type provides the same map tiles used in the latest Bing maps controls. These tiles are generated on the fly as needed and are the most up to date road maps. 
 
-__Figure 6: RoadOnDemand mode__
+>caption RoadOnDemand mode
+
 ![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Rest_Providers_RoadOnDemand.png)
 
 ## CanvasLight
 
 A light version of the road maps which provides neutral background  with minimal colors, labels and features.
 
-__Figure 7: CanvasLight mode__
+>caption CanvasLight mode
+
 ![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Rest_Providers_CanvasLight.png)
 
 ## CanvasGray
 
 A gray version of the road maps which provides neutral background with minimal colors, labels and features.
 
-__Figure 8: CanvasGray mode__
+>caption CanvasGray mode
+
 ![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Rest_Providers_CanvasGray.png)
 
 ## CanvasDark
 
 A dark version of the road maps which provides neutral background with minimal colors, labels and features.
 
-__Figure 8: CanvasDark mode__	
+>caption CanvasDark mode
+
 ![Rad Map Features Providers Bing Map Birdseye](images/RadMap_Features_Rest_Providers_CanvasDark.png)
 
 ## See Also

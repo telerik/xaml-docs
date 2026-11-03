@@ -23,7 +23,7 @@ __Defining the RadSpreadsheet and the buttons for protecting and uprotecting the
 __Adding logic to the buttons__
 <snippet id='radspreadsheet-features-protection-block_2-cs' />
 
-__RadSpreadsheet with protected/unprotected worksheet__
+>caption RadSpreadsheet with protected/unprotected worksheet
 
 ![RadSpreadsheet with protected/unprotected worksheet](images/radspreadsheet-protection-0.gif)
 

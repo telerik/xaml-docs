@@ -19,8 +19,8 @@ The UI virtualization of group headers is disabled by default, but it can be ena
 
 >important The group headers virtualization assumes all top level headers have equal sizes. If these have non-equal sizes, this may lead to unexpected behavior with scrolling, bringintoview, incorrect highlighting size of slots, etc.
 
-__Group and appointment viewports with vertically arranged groups__  
- 
+>caption Group and appointment viewports with vertically arranged groups
+
 ![UI Virtualization picture showing the viewport of RadScheduleView](images/scheduleview-ui-virtualization-viewport-description.png)
 
 ## Timeline With Many Resource Groups

@@ -39,7 +39,8 @@ __Example 3: Setting DataContext__
 
 If you run the application now, you should get a structure like in **Figure 1**:
 
-#### Figure 1: RadGridView and RadTreeView
+>caption RadGridView and RadTreeView
+
 ![Telerik {{ site.framework_name }} DataGrid dragdropmanager-behaviors-gridviewandtreeview 0](images/gridview_dragdrop_treeview_0.PNG)
 
 You can observe that you still can't drag-drop a row from the RadGridView to the RadTreeView and back. This is expected as the drag-drop functionality is still not implemented.

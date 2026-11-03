@@ -47,19 +47,19 @@ By default the next non-disabled and visible __RadPane__ in the PaneGroup is act
 
 Figures 1 through 4 will demonstrate the expected behaviors when using the above modes
 
-#### Figure 1: Pane 1 is activated after closing Pane 4 with ActivationMode.First
+>caption Pane 1 is activated after closing pane 4 with ActivationMode.First
 
 ![Pane 1 is activated after closing Pane 4 with ActivationMode.First](images/raddocking-features-panes-activation-mode-1.png)
 
-#### Figure 2: Pane 5 is activated after closing Pane 3 with ActivationMode.Last
+>caption Pane 5 is activated after closing pane 3 with ActivationMode.Last
 
 ![Pane 5 is activated after closing Pane 3 with ActivationMode.First](images/raddocking-features-panes-activation-mode-2.png)
 
-#### Figure 3: Pane 2 is activated after closing Pane 1 with ActivationMode.Next
+>caption Pane 2 is activated after closing pane 1 with ActivationMode.Next
 
 ![Pane 2 is activated after closing Pane 1 with ActivationMode.Next](images/raddocking-features-panes-activation-mode-3.png)
 
-#### Figure 4. Pane 3 is activated after closing Pane 5 with ActivationMode.LastActivated
+>caption Pane 3 is activated after closing pane 5 with ActivationMode.LastActivated
 
 ![raddocking-features-panes-activation-mode-4](images/raddocking-features-panes-activation-mode-4.png)
 

@@ -53,7 +53,8 @@ __Example 1: Conditionally coloring the day short names__
     </Grid>
 ```
 
-#### __Figure 1: Result from Example 1__
+>caption Result from example 1
+
 ![RadCalendar with colored day short names](images/kb-datetimepicker-calendar-foreground-short-names.png)
 
 ## See Also

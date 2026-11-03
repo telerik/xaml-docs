@@ -28,7 +28,7 @@ When there is no selection applied, the control will display an empty AutoComple
 __Setting the NullText property__
 <snippet id='radmulticolumncombobox-key-properties-and-methods-block_1-xaml' />
 
-__MultiColumnComboBox with NullText set__
+>caption MultiColumnComboBox with NullText set
 
 ![MultiColumnComboBox with NullText set](images/MultiColumnComboBox_KeyProperties_01.png)
 

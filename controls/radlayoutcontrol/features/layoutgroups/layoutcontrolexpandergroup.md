@@ -19,7 +19,8 @@ __Example 1: Setting up LayoutControlExpanderGroup__
 <snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup-example_1_setting_up_layoutcontrolexpandergroup-xaml' />
 
 
-#### __Figure 1: LayoutControlExpanderGroup__
+>caption LayoutControlExpanderGroup
+
 ![{{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup](images/layoutcontrol-features-layoutcontrolexpandergroup-01.png)
 
 The header of the expander group can be set through its __Header__ property. The property is of type __Object__ which allows you to place any visual (or not) element in it.
@@ -28,7 +29,8 @@ __Example 2: Setting up the header of LayoutControlExpanderGroup__
 <snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup-example_2_setting_up_the_header_of_layoutcontrolexpandergroup-xaml' />
 
 
-#### __Figure 2: LayoutControlExpanderGroup with UIElements in its header__
+>caption LayoutControlExpanderGroup with UIElements in its header
+
 ![{{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup with UIElements in its header](images/layoutcontrol-features-layoutcontrolexpandergroup-02.png)
 
 The group’s content state (collapsed/expanded) can be manually controlled via the __IsExpanded__ property. 
@@ -37,7 +39,8 @@ __Example 3: Setting the state of LayoutControlExpanderGroup__
 <snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup-example_3_setting_the_state_of_layoutcontrolexpandergroup-xaml' />
 
 	
-#### __Figure 3: Collapsed LayoutControlExpanderGroup__
+>caption Collapsed LayoutControlExpanderGroup
+
 ![{{ site.framework_name }} RadLayoutControl Collapsed LayoutControlExpanderGroup](images/layoutcontrol-features-layoutcontrolexpandergroup-03.png)
 
 > You can notice that the size of the group demonstrated in __Figure 3__ and __Example 3__ doesn't collapse, but only its children are hidden (collapsed). This is because the group's __VerticalAlignment__ is set to __Stretch__ by default. In this example, if you want to collapse also the size of the group itself you can set the __VerticalAlignment__ to __Top__.
@@ -48,7 +51,8 @@ __Example 4: Setting the IsExpandable property of LayoutControlExpanderGroup__
 <snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolexpandergroup-example_4_setting_the_isexpandable_property_of_layoutcontrolexpandergroup-xaml' />
 
 
-#### __Figure 4: LayoutControlExpanderGroup with disabled collapse/expand interactions__
+>caption LayoutControlExpanderGroup with disabled collapse/expand interactions
+
 ![{{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup with disabled collapse/expand interactions](images/layoutcontrol-features-layoutcontrolexpandergroup-04.png)
 
 > When the __IsExpandable__ property is set to __False__ the content of the group can still be collapsed and expanded via the __IsExpanded__ property.

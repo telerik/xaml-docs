@@ -335,7 +335,8 @@ __Example 2: Setting a palette in code__
 
 Each series added in the chart will use different entry from the MaterialCollection (the palette). If you have a single series, only the first material from the collection is used.
 
-__Figure 2: Chart with 3 BarSeries3D colored using the Windows8 palette__
+>caption Chart with 3 BarSeries3D colored using the Windows8 palette
+
 ![{{ site.framework_name }} RadChartView3D Chart with 3 BarSeries3D colored using the Windows8 palette](images/radchartview-3d-features-palettes-1.png)
 
 > The __DefaultVisualMaterial__ property of the series has a higher precedence than the palette materials. 
@@ -356,7 +357,8 @@ __Example 5: Complete example of setting a custom palette__
 <snippet id='radchartview3d-features-palettes-example_5_complete_example_of_setting_a_custom_palette-xaml' />
 
 
-__Figure 3: Chart with custom palette__
+>caption Chart with custom palette
+
 ![{{ site.framework_name }} RadChartView3D Chart with custom palette](images/radchartview-3d-features-palettes-2.png)
 
 ## See Also

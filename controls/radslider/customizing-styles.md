@@ -29,7 +29,7 @@ __Creating a custom style for the ThumbStyle property when using StyleManager th
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
-__RadSlider with custom ThumbStyle__
+>caption RadSlider with custom ThumbStyle
 
 ![RadSlider with custom ThumbStyle](images/radslider_styles_templates_thumbstyle.png)
 
@@ -49,7 +49,7 @@ __Creating a custom style for the SelectionMiddleThumbStyle property using the S
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
-__RadSlider with custom SelectionMiddleThumbStyle__
+>caption RadSlider with custom SelectionMiddleThumbStyle
 
 ![RadSlider with custom SelectionMiddleThumbStyle](images/radslider_styles_templates_selectionmiddlethumbstyle.png)
 
@@ -69,7 +69,7 @@ __Creating custom Styles for the DecreaseHandleStyle and IncreaseHandleStyle pro
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
-__RadSlider with custom DecreaseHandleStyle and IncreaseHandleStyle__
+>caption RadSlider with custom DecreaseHandleStyle and IncreaseHandleStyle
 
 ![RadSlider with custom DecreaseHandleStyle and IncreaseHandleStyle](images/radslider_styles_templates_decreasethumbstyle_increasethumbstyle.png)
 
@@ -87,7 +87,7 @@ If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-ove
 __Creating a custom style for the TickBarStyle property when using the StyleManager theming approach__
 <snippet id='radslider-customizing-styles-block_8-xaml' />
 
-__RadSlider with custom TickBarStyle__
+>caption RadSlider with custom TickBarStyle
 
 ![RadSlider with custom TickBarStyle](images/radslider_styles_templates_tickbarstyle.png)
 
@@ -107,7 +107,7 @@ __Creating a custom style for the TrackStyle property when using the StyleManage
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
-__RadSlider with custom TrackStyle__
+>caption RadSlider with custom TrackStyle
 
 ![RadSlider with custom TrackStyle](images/radslider_styles_templates_trackstyle.png)
 

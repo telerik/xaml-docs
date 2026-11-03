@@ -36,7 +36,8 @@ __Example 1: Setting a Image as Drop-Down Button Icon__
 
 {% endif %}
 
-#### Figure 1: RadComboBox with customized dropdown icon
+>caption RadComboBox with customized dropdown icon
+
 ![RadComboBox with RadGlyph as dropdown icon](images/radcombobox-features-dropdown-button-icon-0.PNG)
 
 ## See Also

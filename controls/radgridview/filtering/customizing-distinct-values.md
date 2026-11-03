@@ -13,7 +13,7 @@ position: 15
 
 The distinct values column filter displays only the first `1000` items by default. If other columns have an active filter that hides some of the data rows then these rows will not be considered when extracting the distinct values. This article shows how to customize the distinct values count and filtering behavior.
 
-__The distinct values filter__  
+>caption The distinct values filter
 
 ![Telerik UI for WPF RadGridView distinct values filter displayed in a column FilteringControl](images/gridview-filtering-customizing-distinct-values-0.png)
 
@@ -75,7 +75,7 @@ __Setting the EnableDistinctValuesFiltering property__
 <snippet id='radgridview-filtering-customizing-distinct-values-setting_the_enabledistinctvaluesfiltering_property-xaml' />
 
 
-__The distinct values filter search box__  
+>caption The distinct values filter search box
 
 ![Telerik UI for WPF RadGridView distinct values filter with the built-in search box enabled](images/gridview-filtering-customizing-distinct-values-1.png)
 
@@ -95,7 +95,7 @@ __Setting the DistinctValuesDisplayMode property__
 <snippet id='radgridview-filtering-customizing-distinct-values-setting_the_distinctvaluesdisplaymode_property-xaml' />
 
 
-__The distinct values display modes comparison__  
+>caption The distinct values display modes comparison
 
 ![Telerik UI for WPF RadGridView distinct values display modes comparison between Tree and List](images/gridview-filtering-customizing-distinct-values-2.png)
 
@@ -109,6 +109,6 @@ __Creating a custom column and overridding the FilteringDisplayFunc__
 
 The following [KB article]({%slug kb-gridview-filteringdisplayfunc%}) and the [ImageColumnFiltering SDK example](https://github.com/telerik/xaml-sdk/tree/master/GridView/ImageColumnFiltering) contain runnable examples showing the `FilteringDisplayFunc` feature.
 
-__Customized display for bool distinct values__  
+>caption Customized display for bool distinct values
 
 ![Telerik UI for WPF RadGridView distinct values list with customized display text for Boolean values](images/gridview-filtering-customizing-distinct-values-3.png)

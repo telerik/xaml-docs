@@ -44,7 +44,8 @@ The RadBulletGraph suite provides two controls - one horizontally arranged and o
 
 The following image describes the main elements of the RadBulletGraph control.
 
-__Figure 1: BulletGraph visual elements__
+>caption BulletGraph visual elements
+
 ![{{ site.framework_name }} RadBulletGraph BulletGraph visual elements](images/radbulletgraphelements.png)
 
 ## Defining the RadBulletGraph
@@ -54,13 +55,15 @@ The following examples show how to define a simple horizontal and vertical bulle
 __Example 1: Defining horizontal bullet graph control__
 <snippet id='radbulletgraph-getting-started-example_1_defining_horizontal_bullet_graph_control-xaml' />
 
-__Figure 2: RadHorizontalBulletGraph__
+>caption RadHorizontalBulletGraph
+
 ![{{ site.framework_name }} RadBulletGraph RadHorizontalBulletGraph](images/radbulletgraph_getting_started_0.png)
 
 __Example 2: Defining vertical bullet graph control__
 <snippet id='radbulletgraph-getting-started-example_2_defining_vertical_bullet_graph_control-xaml' />
 
-__Figure 3: RadVerticalBulletGraph__
+>caption RadVerticalBulletGraph
+
 ![{{ site.framework_name }} RadBulletGraph RadVerticalBulletGraph](images/radbulletgraph_getting_started_1.png)
 
 {% if site.site_name == 'WPF' %}

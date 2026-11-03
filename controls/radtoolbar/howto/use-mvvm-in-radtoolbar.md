@@ -60,7 +60,8 @@ __Example 6: Set the DataContext and ItemsSource of the RadToolBar__
 
 <snippet id='radtoolbar-howto-use-mvvm-in-radtoolbar-block_9-xaml' />
 
-#### __Figure 1: MVVM ToolBar with custom DataTemplateSelector__
+>caption MVVM ToolBar with custom DataTemplateSelector
+
 ![ToolBar MVVM](images/RadToolBar_MVVM.png)
 
 > For an extended implementation with custom styles, check out the [ToolBarMVVM](https://github.com/telerik/xaml-sdk/tree/master/ToolBar/ToolBarMVVM) demo from our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).

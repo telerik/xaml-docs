@@ -38,7 +38,8 @@ __Example 4: Setting our DataContext__
 
 If you run the application now, the RadPivotMap should display the following structure:
 
-#### Figure 1: RadPivotMap with groups in different colors
+>caption RadPivotMap with groups in different colors
+
 ![PivotMap Color Groups](images/radpivotmap-howto-change-color-group-1.png)
 
 ## See Also

@@ -18,12 +18,14 @@ __Example 1: Setting the LogarithmBase property__
 <snippet id='radchartview-axes-logarithmicaxis-example_1_setting_the_logarithmbase_property-xaml' />
 
 
-#### Figure 1: Result from Example 1
+>caption Result from example 1
+
 ![Telerik UI for WPF RadChartView Logarithmic Axis with a Custom Logarithm Base](images/radchartview-features-axis-logarithmicaxis-logarithmbase.png)
 
 __Example 2: Setting the ExponentStep property__
 <snippet id='radchartview-axes-logarithmicaxis-example_2_setting_the_exponentstep_property-xaml' />
 
 
-#### Figure 2: Result from Example 2
+>caption Result from example 2
+
 ![Telerik UI for WPF RadChartView Logarithmic Axis with a Custom Exponent Step](images/radchartview-features-axis-logarithmicaxis-exponentstep.png)

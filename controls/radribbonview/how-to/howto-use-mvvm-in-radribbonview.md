@@ -29,7 +29,8 @@ __Example 3: Defining the RadRibbonView__
 <snippet id='radribbonview-how-to-howto-use-mvvm-in-radribbonview-block_3-xaml' />
 
 
-__Figure 1: MVVM RadRibbonView in the Office2016 theme__
+>caption MVVM RadRibbonView in the Office2016 theme
+
 ![MVVM RadRibbonView in the Office2016 theme](images/RadRibbonView_HowTo_Use_In_MVVM.png)
 
 > For an extended implementation, check out the __Paint with MVVM__ example from our {% if site.site_name == 'WPF' %}[WPF Demos Application](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos](https://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}.
@@ -43,7 +44,8 @@ Using MVVM in a [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%}) sce
 __Example 4: SimplifiedRibbon MVVM__
 <snippet id='radribbonview-how-to-howto-use-mvvm-in-radribbonview-block_4-xaml' />
 
-__Figure 2: SimplifiedRibbon MVVM in the Office2016 theme__
+>caption SimplifiedRibbon MVVM in the Office2016 theme
+
 ![SimplifiedRibbon MVVM in the Office2016 theme](images/RadRibbonView_HowTo_Use_In_MVVM_SimplifiedRibbon.png)
 
 > Note, that __Example 4__ uses exactly the same setup as __Example 3__.

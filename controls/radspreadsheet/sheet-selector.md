@@ -26,7 +26,7 @@ By default the sheet selector component is displayed. To hide it, set the `RadSp
 __Setting the IsSheetSelectorVisible property__
 <snippet id='radspreadsheet-sheet-selector-block_1-xaml' />
 
-__RadSpreadsheet with hidden sheet selector__  
+>caption RadSpreadsheet with hidden sheet selector
 
 ![A picture showing WPF RadSpreadsheet with hidden sheet selector](images/radspreadsheet-sheet-selector-hidden-selector.png)
 
@@ -37,7 +37,7 @@ By default the sheet selector has a button displayed next to the worksheeet tabs
 __Setting the IsAddButtonVisible property__
 <snippet id='radspreadsheet-sheet-selector-block_2-xaml' />
 
-__RadSpreadsheet with hidden add button__  
+>caption RadSpreadsheet with hidden add button
 
 ![A picture showing WPF RadSpreadsheetSheetSelector with hidden add button](images/radspreadsheet-sheet-selector-hidden-add-button.png)
 
@@ -45,7 +45,7 @@ __RadSpreadsheet with hidden add button__
 
 The worksheet tabs in the `RadSpreadsheetSheetSelector` have a built-in context menu which allows you to apply few different settings on the tab - rename, insert, delete, hide, etc.
 
-__Sheet selector's context menu__  
+>caption Sheet selector's context menu
 
 ![A picture showing WPF RadSpreadsheetSheetSelector's context menu](images/radspreadsheet-sheet-selector-context-menu.png)
 

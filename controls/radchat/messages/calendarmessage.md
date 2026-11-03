@@ -23,7 +23,8 @@ __Defining a CalendarMessage__
 
 <snippet id='radchat-features-messages-calendarmessage-example_1_defining_a_calendarmessage-cs' />
 
-__Defining CalendarMessage__
+>caption Defining CalendarMessage
+
 ![Defining CalendarMessage](images/RadChat_Messages_Calendar_01.png)
 
 ## See Also

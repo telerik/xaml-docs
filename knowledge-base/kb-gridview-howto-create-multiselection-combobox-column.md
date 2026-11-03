@@ -290,7 +290,8 @@ __3.__ Finally, we need to define our custom column and set the ItemsSource prop
     }
 ```
 
-#### __Figure 1: Result after selecting some countries in the Office2016 theme__
+>caption Result after selecting some countries in the Office2016 theme
+
 ![GridView with multi selection combobox column](images/kb-gridview-multiselection-combobox-column.png)
 
 ## See Also

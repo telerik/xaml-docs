@@ -15,12 +15,14 @@ In **R1 2017** we introduced the **Smart Tags** feature which provides easy acce
  
 As shown in **Figure 1**, when you focus a certain Telerik control in the Visual Studio Designer, the **Smart Tag** arrow would appear on the right top corner of the control. 
 
-#### **Figure 1: Smart Tag icon on RadGridView:** 
+>caption Smart tag icon on RadGridView
+
 ![Smart Tag icon on RadGridView](images/smarttag.png)
 
 Unfolding the **Smart Tag** presents you with a list of different useful resources as well as the possibility to search the forum for certain topics. **Figure 2** shows the default menu for the RadGridView control. The appearance and resources vary depending on the control.
 
-#### **Figure 2: Available resources for the RadGridView control:** 
+>caption Available resources for the RadGridView control
+
 ![Available resources for the RadGridView control](images/smarttag2.png)
 
 ## See Also  

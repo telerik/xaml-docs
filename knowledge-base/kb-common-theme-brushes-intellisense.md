@@ -75,6 +75,6 @@ __Merging the created ResourceDictionary__
     </Application.Resources>
 ```
 
-__Visual Studio suggesting the colors from the Windows 11 theme__
+>caption Visual Studio suggesting the colors from the Windows 11 theme
 
 ![Visual Studio suggesting the colors from the Windows 11 theme](images/kb-common-theme-brushes-intellisense-0.png)

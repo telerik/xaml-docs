@@ -14,7 +14,7 @@ The RadSyntaxEditor control works with the underlying document with the help of 
 
 The matched tags are then processed by the [UI layers]({%slug radsyntaxeditor-features-layers%}) which color the text or draw additional elements on screen.
 
-#### Figure 1: RadSyntaxEditor with a registered CSharpTagger
+>caption RadSyntaxEditor with a registered CSharpTagger
 
 ![RadSyntaxEditor with a registered CSharpTagger](../../images/syntaxeditor_getting-started-3.png)
 

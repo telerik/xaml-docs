@@ -28,7 +28,8 @@ point. In the figures you can see the default values of the properties [0.25, 0.
 > Important to note here is that the width and height of the callout apply only to the body of the geometry 
 but not to the arrow. This way it is very easy to keep a fixed size of the main shape while making the big arrow exceeding the shape size.
 
-#### Figure 1: 
+>caption Telerik callout key properties 1
+
 ![Telerik Callout Key Properties 1](images/radcallout-key-properties_3.png)
 
 * __MeasurePathWithInfinity__: A __boolean__ property that gets or sets a value indicating whether the path in the control template is measured with infinity or not.
@@ -59,7 +60,8 @@ but not to the arrow. This way it is very easy to keep a fixed size of the main 
 	* __Kaboom__: Kaboom geometry.
 	* __Custom__: Set custom geometry.	
 	
-	#### Figure 2: RadCallout types
+>caption RadCallout types
+
 	![Telerik Callout Key Properties 2](images/radcallout-key-properties_1.png)
 
 * __ArrowType__: A property of type __CalloutArrowType__ that gets or sets the arrow type of the callout control. The __ArrowType__ is an enumeration and it allows the following values:
@@ -68,7 +70,8 @@ but not to the arrow. This way it is very easy to keep a fixed size of the main 
 	* __Circles__: Series of circles.
 	* __Ellipses__: Series of ellipses.
 	
-	#### Figure 3: RadCallout arrow types
+>caption RadCallout arrow types
+
 	![Telerik Callout Key Properties 3](images/radcallout-key-properties_2.png)
 
 ### Custom Geometry	
@@ -78,7 +81,8 @@ If none of the built-in callout types satisfy your needs, the control allows you
 __Example 1: Setting Custom Type__
 <snippet id='radcallout-key-properties-example_1_setting_custom_type-cs' />
 
-#### Figure 3: Custom Geometry
+>caption Custom geometry
+
 ![Telerik Callout Key Properties 3](images/radcallout-key-properties-custom.PNG)
 	
 ## See Also

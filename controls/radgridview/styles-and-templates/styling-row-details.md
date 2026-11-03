@@ -38,7 +38,7 @@ __Example 2: Setting RadGridView's RowDetailsStyle__
 <snippet id='radgridview-styles-and-templates-styling-row-details-example_2_setting_radgridview_s_rowdetailsstyle-xaml' />
 
 
-#### __Figure 2: RadGridView with styled row details__
+>caption RadGridView with styled row details
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom RowDetailsStyle applied to row details](images/RadGridView_Styles_and_Templates_Styling_GridViewRowDetails_03.png)
 

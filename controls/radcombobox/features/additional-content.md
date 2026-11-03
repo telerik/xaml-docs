@@ -36,7 +36,7 @@ __[XAML] Setting the AdditionalContent and AdditionalContentTemplate__
     </telerik:RadComboBox>
 {{endregion}}
 
-__RadComboBox with additional content__
+>caption RadComboBox with additional content
 
 ![WPF RadComboBox with additional content](images/radcombobox-additional-content-0.png)
 
@@ -70,7 +70,7 @@ __[XAML] Setting the AdditionalContentPosition__
     </telerik:RadComboBox>
 {{endregion}}
 
-__RadComboBox with additional content positioned below the drop-down items__
+>caption RadComboBox with additional content positioned below the drop-down items
 
 ![WPF RadComboBox with additional content positioned below the drop-down items](images/radcombobox-additional-content-1.png)
 

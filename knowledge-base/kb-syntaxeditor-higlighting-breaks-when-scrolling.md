@@ -34,7 +34,7 @@ If the width of a given line is longer than that of the viewport of the RadSynta
 
 This can lead to incorrect highlighting in some cases as can be observed on **Figure 1**. 
 
-#### Figure 1: Incorrect XAML highlighting
+>caption Incorrect XAML highlighting
 
 ![Incorrect highlighting](images/kb-syntaxeditor-higlighting-breaks-when-scrolling-1.png)
 
@@ -45,7 +45,7 @@ __Example 1: Make RadSyntaxEditor process the entire lines__
     <telerik:RadSyntaxEditor ShouldTaggersProcessEntireLines="True" />
 ```
 
-#### Figure 2: Correct XAML highlighting
+>caption Correct XAML highlighting
 
 ![Correct XAML highlighting](images/kb-syntaxeditor-higlighting-breaks-when-scrolling-2.png)
 

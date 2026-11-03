@@ -13,7 +13,8 @@ position: 1
 
 The selection in the AutoCompleteBox will display the property of the selected item to which the __DisplayMemberPath__ points. 
 
-__Figure 1: Default Selection__
+>caption Default selection
+
 ![Default Selection](images/MultiColumnComboBox_Selection_01.png)
 
 Furthermore, the control exposes the following properties and events for handling the user selection.
@@ -31,7 +32,8 @@ By default, __RadMultiColumnComboBox__ will perform a single selection. In order
 __Example 1: Setting the SelectionMode to Multiple__
 <snippet id='radmulticolumncombobox-features-selection-block_1-xaml' />
 
-__Figure 2: Multiple Selection__
+>caption Multiple selection
+
 ![Multiple Selection](images/MultiColumnComboBox_Selection_02.png)
 
 ## SelectionChanged event

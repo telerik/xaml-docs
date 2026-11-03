@@ -38,7 +38,7 @@ The PropertySetMode property accepts values of type **PropertySetOperation** whi
 
 **None** is the default value of RadPropertyGrid’s **PropertySetMode** property. In this case the item value is processed as a single object, regardless of its type. It is a List of objects instance in our occasion.
 
-#### Figure 1: RadPropertyGrid with PropertySetMode set to None
+>caption RadPropertyGrid with PropertySetMode set to none
 
 ![RadPropertyGrid with PropertySetMode set to None](images/RadPropertyGrid_Sets_None.png)
 
@@ -48,7 +48,7 @@ Both **RegularPolygon** and **Ellipse**'s properties have been disregarded and o
 
 When **Union** is the active mode, a union set of the items' properties is constructed. In case that a property that is common for several items has the same value for each of them, RadPropertyGrid displays this value in the respective editor. On the other hand, if it has different values for the separate items, the editor displays either null, or the default value for this type.
 
-#### Figure 2: RadPropertyGrid with PropertySetMode set to Union
+>caption RadPropertyGrid with PropertySetMode set to union
 
 ![RadPropertyGrid with PropertySetMode set to Union](images/RadPropertyGrid_Sets_Union.png)
 
@@ -58,7 +58,7 @@ Notice that all 6 distinct properties are displayed.
 
 The **Intersection** mode works in a similar way to the "Union" mode, however, in this case RadPropertyGrid constructs an intersection set instead. Here is the output when "Intersection" mode is applied over the same data source:
 
-#### Figure 3: RadPropertyGrid with PropertySetMode set to Intersection
+>caption RadPropertyGrid with PropertySetMode set to intersection
 
 ![RadPropertyGrid with PropertySetMode set to Intersection](images/RadPropertyGrid_Sets_Intersection.png)
 
@@ -110,7 +110,7 @@ __Example 7: Defining IValueConverter__
 <snippet id='radpropertygrid-features-defining-propertysets-block_7-cs' />
 <snippet id='radpropertygrid-features-defining-propertysets-block_7-vb' />
 
-#### Figure 4: RadNumericUpDown for integer property of property set
+>caption RadNumericUpDown for integer property of property set
 
 ![RadNumericUpDown for integer property of property set](images/RadPropertyGrid_Sets_Customized.png)
 

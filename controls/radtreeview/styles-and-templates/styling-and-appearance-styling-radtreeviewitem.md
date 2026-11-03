@@ -21,7 +21,8 @@ __Example 1: Creating an implicit style targeting RadTreeViewItem__
 
 <snippet id='radtreeview-styles-and-templates-styling-and-appearance-styling-radtreeviewitem-block_1-xaml' />
 
-#### __Figure 1: RadTreeViewItem with Red Foreground in the Fluent theme__
+>caption RadTreeViewItem with red foreground in the fluent theme
+
 ![RadTreeViewItems with Red Foreground](images/RadTreeView_RadTreeViewItem_Style.png)
 
 > You can also use the [ItemContainerStyle]({%slug radtreeview-styling-and-appearance-item-container-style%}) and [ItemContainerStyleSelector]({%slug radtreeview-populating-with-data-item-container-style-selector%}) properties of the __RadTreeView__ in order to style its items. 

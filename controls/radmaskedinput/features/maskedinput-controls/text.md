@@ -31,7 +31,7 @@ The following example shows how to define the control and set few of its propert
 __Define RadMaskedTextInput in XAML__
 <snippet id='radmaskedinput-features-maskedinput-controls-text-block_1-xaml' />
 
-__RadMaskedTextInput example__
+>caption RadMaskedTextInput example
 
 ![{{ site.framework_name }} RadMaskedInput RadMaskedTextInput example](images/radmaskedinput_textinput_default.png)
 
@@ -60,11 +60,11 @@ You can format the entered value using the `FormatString` property of the RadMas
 __Setting the FormatString property__
 <snippet id='radmaskedinput-features-maskedinput-controls-text-block_4-xaml' />
 
-__Showing the text value when the control is focused__
+>caption Showing the text value when the control is focused
 
 ![{{ site.framework_name }} RadMaskedInput Showing the text value when the control is focused](images/radmaskedinput_textinput_format_string_focused.png)
 
-__Showing the text value when the control is unfocused__
+>caption Showing the text value when the control is unfocused
 
 ![{{ site.framework_name }} RadMaskedInput Showing the text value when the control is unfocused](images/radmaskedinput_textinput_format_string.png)
 

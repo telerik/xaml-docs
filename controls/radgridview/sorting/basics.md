@@ -27,7 +27,7 @@ This article is divided into the following topics:
 
 The data gets sorted as the user clicks the header of a column. When sorted you should see the header of the column highlighted and the appropriate arrow showing if the applied sorting is ascending or descending.
 
-#### Figure 1: RadGridView with applied sorting
+>caption RadGridView with applied sorting
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a column header sorted in ascending or descending order](images/RadGridView_BasicSorting_1.png)
 

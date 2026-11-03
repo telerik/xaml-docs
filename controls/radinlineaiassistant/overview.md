@@ -18,7 +18,7 @@ The __RadInlineAIAssistant__ is a floating, popup-based control that attaches to
 {% include cta-panel-overview.html %}
 {% endif %}
 
-__RadInlineAIAssistant Overview__
+>caption RadInlineAIAssistant overview
 
 ![WPF RadInlineAIAssistant Overview](images/radinlineaiassistant-overview-001.png)
 

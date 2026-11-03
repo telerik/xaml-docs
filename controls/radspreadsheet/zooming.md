@@ -19,7 +19,7 @@ In order to do so there are two different approaches available: [Using UI](#usin
 
 On the status bar of the RadSpreadsheet app, move the zoom scale slider or click the '-' (_minus_) or '+' (_plus_) button to zoom in gradual increments.
 
-__Zoom Scale Slider__
+>caption Zoom scale slider
 
 ![Zoom scale slider](images/RadSpreadsheet_HowTo_Zoom_In_Out_Worksheet_01.png)
 

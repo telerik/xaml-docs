@@ -110,6 +110,6 @@ __Sample implementation__
     End Sub
 ```
 
-__RadDataPager displaying the total items count__
+>caption RadDataPager displaying the total items count
 
 ![{{ site.framework_name }} RadDataPager Displaying the Total Items Count](images/kb-datapager-show-total-entries-count.png)

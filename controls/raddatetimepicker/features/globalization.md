@@ -17,7 +17,7 @@ As of **R1 2017** RadDateTimePicker can display and parse dates from all .NET Fr
 
 **Figure 1** demonstrates the parsing of DateTime values for the **Hijri** calendar.
 
-#### __Figure 1: Hijri dates parsing__
+>caption Hijri dates parsing
 
 ![Hijri dates parsing](images/datetimepicker-hijri-support.png)
 

@@ -84,7 +84,7 @@ __Example 8: Setting the HierarchyExpandButtonStyleSelector property__
 <snippet id='radgridview-hierarchical-gridview-basic-hierarchies-example_8_setting_the_hierarchyexpandbuttonstyleselector_property-xaml' />
 
 
-#### Figure 1: RadGridView with the custom HierarchyExpandButtonStyleSelector applied
+>caption RadGridView with the custom HierarchyExpandButtonStyleSelector applied
 
 ![Telerik UI for {{ site.framework_name }} RadGridView hierarchy with custom expand button styles applied to parent rows](images/RadGridView_BasicHierarchies_2.png)
 

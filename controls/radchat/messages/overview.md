@@ -38,13 +38,16 @@ Depending on the type of the given message, it can have a different value for it
 
 For demonstrating the different __DisplayPositions__, a sample __CalendarMessage__ will be used. 
 
-__Inline DisplayPosition__
+>caption Inline DisplayPosition
+
 ![Inline DisplayPosition](images/RadChat_Messages_Overview_01.png)
 
-__Popup DisplayPosition__
+>caption Popup DisplayPosition
+
 ![Popup DisplayPosition](images/RadChat_Messages_Overview_02.png)
 
-__Overlay DisplayPosition__
+>caption Overlay DisplayPosition
+
 ![Overlay DisplayPosition](images/RadChat_Messages_Overview_03.png)
 
 Note, that some message types support modifying their display position, whereas other ones have a fixed value which cannot be controlled. 

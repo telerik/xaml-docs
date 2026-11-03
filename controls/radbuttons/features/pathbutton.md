@@ -21,7 +21,8 @@ __Example 2: Defining a button in code__
 <snippet id='radbuttons-features-pathbutton-example_2_defining_a_button_in_code-vb' />
 
 
-__Figure 1: The created path button__
+>caption The created path button
+
 ![The created button](images/radbuttons-features-pathbutton-0.png)
 
 Note that in XAML you can directly use string format [Path Markup Syntax](https://docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/path-markup-syntax)
@@ -36,7 +37,8 @@ __Example 3: Setting the path geometry in code__
 <snippet id='radbuttons-features-pathbutton-example_3_setting_the_path_geometry_in_code-vb' />
 
 
-__Figure 2: RadPathButton with PathGeometry__
+>caption RadPathButton with PathGeometry
+
 ![RadPathButton with PathGeometry](images/radbuttons-features-pathbutton-1.png)
 
 ## Customizing the RadPathButton
@@ -51,7 +53,8 @@ __Example 5: Setting the content position in code__
 <snippet id='radbuttons-features-pathbutton-example_5_setting_the_content_position_in_code-vb' />
 
 
-__Figure 3: RadPathButton with ContentPlacement set to Right__
+>caption RadPathButton with ContentPlacement set to right
+
 ![RadPathButton with ContentPlacement set to Right](images/radbuttons-features-pathbutton-2.png)
 
 In addition to all customizing options that are inherited from the __RadButton__ the __PathButton__ has a __PathStyle__ property. This property gets or sets the style of the __Path__ element in the template.
@@ -59,7 +62,8 @@ In addition to all customizing options that are inherited from the __RadButton__
 __Example 5: Setting the content position in XAML__
 <snippet id='radbuttons-features-pathbutton-example_5_setting_the_content_position_in_xaml-xaml' />
 
-__Figure 4: RadPathButton with custom PathStyle__
+>caption RadPathButton with custom PathStyle
+
 ![RadPathButton with custom PathStyle](images/radbuttons-features-pathbutton-3.png)
 
 Also the __RadPathButton__ exposes the __ContentMargin__ property. It is of type __Thickness__ and determines the margin around its content. This allows users to adjust size of the Path that the button hosts. For adjusting the position of the Path itself users can use the __RadPathButton.Padding__ property.
@@ -73,7 +77,8 @@ With the **R1 2021 SP** release you can now more intuitively place the path elem
 __Example 6: Setting the path alignment in XAML__
 <snippet id='radbuttons-features-pathbutton-example_6_setting_the_path_alignment_in_xaml-xaml' />
 
-__Figure 5: RadPathButton with different alignments__
+>caption RadPathButton with different alignments
+
 ![RadPathButton with different alignments](images/radbuttons-features-pathbutton-path-alignment.gif)
 
 As seen in the image above you may also want to set appropriate values for the **HorizontalContentAlignment** and **VerticalContentAlignment** of the RadPathButton to align the content in the available space.
@@ -85,7 +90,8 @@ The RadPathButton can also be used with [RadGlyphs]({%slug common-styling-appear
 __Example 7: Set RadGlyph as PathGeometry__
 <snippet id='radbuttons-features-pathbutton-example_7_set_radglyph_as_pathgeometry-xaml' />
 
-__Figure 6: RadPathButton with RadGlyph__
+>caption RadPathButton with RadGlyph
+
 ![RadPathButton with RadGlyph](images/radbuttons-features-pathbutton-4.png)
 
 ## See Also

@@ -60,7 +60,7 @@ End Class
 
 By default, the string values from the ItemsSource collection will be assigned to the __Header__ property of each __RadPanelBarItem__ in the __RadPanelBar__ control you are populating.
 
-__Result from the Previous Example in the Office2016 Theme__
+>caption Result from the previous example in the Office2016 theme
 
 ![RadPanelBar binding to strings](images/PanelBar_BindingToStrings.png)
 
@@ -194,7 +194,7 @@ End Class
 
 ```
 
-__Result from the Previous Example in the Office2016 Theme__
+>caption Result from the previous example in the Office2016 theme
 
 ![RadPanelBar binding to object](images/PanelBar_Binding.png)
 

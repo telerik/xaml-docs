@@ -19,7 +19,8 @@ Through the **CompletionListWindow** you can show a collection of items when the
 __[C#] Example 1: Populate and display the completion list window__
 <snippet id='radsyntaxeditor-features-intelliprompts-block_1-cs' />
 
-__Figure 1: Code completion__
+>caption Code completion
+
 ![Code completion](images/syntaxeditor-intelliprompts-completion.png)
 
 >The code completion popup can also be shown using the **Ctrl + Space** key combination.
@@ -31,7 +32,8 @@ Through the **OverloadListWindow** you can show a collection of overloads when t
 __[C#] Example 2: Populate and display the completion list window__
 <snippet id='radsyntaxeditor-features-intelliprompts-block_2-cs' />
 
-__Figure 2: Overload list__
+>caption Overload list
+
 ![Overload list](images/syntaxeditor-intelliprompts-overloads.png)
 
 ## See Also

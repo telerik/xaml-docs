@@ -46,7 +46,8 @@ Besides the __RadListBox's ItemTemplate__ property, you could use the __DisplayM
 __Example 5: Set DisplayMemberPath to 'Name' to show the names of the countries or set it to 'Capital' to show their capitals__
 <snippet id='radlistbox-populating-with-data-binding-support-overview-block_5-xaml' />
 
-#### __Figure 1: Result of Examples 4 and 5__
+>caption Result of examples 4 and 5
+
 ![Rad List Box ItemsSource DisplayMemberPath 01](images/RadListBox_PopulatingWithData_DataBindingSupportOverview_01.png)
 
 >tip If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, the content of the item would be set to the value returned by the __ToString()__ method of the business object.

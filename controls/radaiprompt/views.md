@@ -24,7 +24,7 @@ The input view is represented by the `RadAIPromptInputItem` class. This view con
 __Adding the input view in the RadAIPrompt__
 <snippet id='radaiprompt-views-adding_the_input_view_in_the_radaiprompt-xaml' />
 
-__RadAIPrompt with the input view defined in it__
+>caption RadAIPrompt with the input view defined in it
 
 ![WPF RadAIPrompt with the input view defined in it](images/radaiprompt-views-0.png)
 
@@ -44,7 +44,7 @@ The `AIPromptOutputItemModel` class provides the following properties:
 __Adding the output view in the RadAIPrompt__
 <snippet id='radaiprompt-views-adding_the_output_view_in_the_radaiprompt-xaml' />
 
-__RadAIPrompt with the input and output views defined in it__
+>caption RadAIPrompt with the input and output views defined in it
 
 ![WPF RadAIPrompt with the input and output views defined in it](images/radaiprompt-views-1.png)
 
@@ -57,7 +57,7 @@ The commands view is an additional view that will display the commands set to th
 __Adding the commands view in the RadAIPrompt__
 <snippet id='radaiprompt-views-adding_the_commands_view_in_the_radaiprompt-xaml' />
 
-__RadAIPrompt with the commands view in the RadAIPrompt__
+>caption RadAIPrompt with the commands view in the RadAIPrompt
 
 ![WPF RadAIPrompt with the commands view in the RadAIPrompt](images/radaiprompt-views-2.png)
 
@@ -73,7 +73,7 @@ Additionally, the RadAIPromptItem class derives from the native WPF `HeaderedCon
 __Customizing the views__
 <snippet id='radaiprompt-views-customizing_the_views-xaml' />
 
-__RadAIPrompt with customized views__
+>caption RadAIPrompt with customized views
 
 ![WPF RadAIPrompt with customized views](images/radaiprompt-views-3.png)
 

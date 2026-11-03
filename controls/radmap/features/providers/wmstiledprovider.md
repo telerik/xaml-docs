@@ -24,7 +24,7 @@ The following example showcases how to use the `WmsTiledProvider` to display map
 
 <snippet id='radmap-features-providers-wmstiledprovider-block_1-xaml' />
 
-__RadMap displaying map tiles from a WMS server__
+>caption RadMap displaying map tiles from a WMS server
 
 ![RadMap displaying map tiles from a WMS server](images/wms-tiled-provider.png)
 

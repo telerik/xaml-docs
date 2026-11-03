@@ -90,7 +90,7 @@ __Example 3: Add row details to the exported data__
 
 You can see the result in **Figure 1**.
 
-#### __Figure 1: Exporting Row Details__
+>caption Exporting row details
 
 ![Telerik UI for {{ site.framework_name }} RadGridView export showing row details included in the exported output](images/gridview_row_details_export.png)
 

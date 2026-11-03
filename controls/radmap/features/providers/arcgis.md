@@ -33,7 +33,7 @@ __Defining the ArcGisMapProvider in code-behind__
 <snippet id='radmap-features-providers-arcgis-block_2-cs' />
 <snippet id='radmap-features-providers-arcgis-block_2-vb' />
 
-__ArcGisMapProvider when using the `Physical` mode__
+>caption ArcGisMapProvider when using the `physical` mode
 
 ![rcGisMapProvider when using the Physical mode](images/RadMap_Features_Providers_ArcGIS.png)
 

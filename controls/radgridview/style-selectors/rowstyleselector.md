@@ -17,8 +17,8 @@ This article illustrates how to conditionally style rows through RadGridView's [
 		  
 Assume we have RadGridView bound to a collection of Clubs. Each Club has a property StadiumCapacity. What we want to achieve is to set the background color of the rows to __Red if the capacity > 50 000 or Yellow otherwise__:
 
-__Figure 1: The expected result__
-		
+>caption The expected result
+
 ![Telerik UI for {{ site.framework_name }} RadGridView with RowStyleSelector applying different row background colors based on stadium capacity](images/gridview_rowstyleselector.png)
 
 To do so follow these steps:
@@ -80,7 +80,7 @@ __Example 5: Set RadGridView's AlternateRowStyleSelector__
 
 **Figure 2** shows the result of using the same StyleSelector from the previous example, but setting it as the AlternateRowStyleSelector for the RadGridView.
 
-__Figure 2: The alternating rows styled using the AlternateRowStyleSelector property__
+>caption The alternating rows styled using the AlternateRowStyleSelector property
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with AlternateRowStyleSelector styling alternating rows conditionally](images/gridview_alternaterowstyleselector.png)
 

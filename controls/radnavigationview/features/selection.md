@@ -50,7 +50,8 @@ __Example 4: Initializing of RadNavigationView__
 
 <snippet id='radnavigationview-features-selection-block_4-xaml' />
 
-#### __Figure 1: Result from Example 4 in the Office2016 theme__
+>caption Result from example 4 in the Office2016 theme
+
 ![RadNavigationView populated with items](images/NavigationView_Selection.png)
 
 When you select a NavigationItemModel from the navigation view, the SelectedItem property returns the NavigationItemModel object. However, because the __SelectedValuePath__  is set to Title, the __SelectedValue__ property of the RadNavigationView is set to the Title property of the NavigationItemModel business object.   

@@ -13,7 +13,8 @@ position: 1
 
 This topic defines terms and concepts related to __RadNavigationView__ that you have to get familiar with before you continue reading this help. __Figure 1__ demonstrates a __RadNavigationView__ with its NavigationPane opened and explanations of the visual elements .
 
-#### __Figure 1: RadNavigationView in the Fluent theme__
+>caption RadNavigationView in the fluent theme
+
 ![Rad Combo Box Visual Structure 02](images/NavigationViewVisualStructure.png)
 
 The following table lists the elements that make up a RadNavigationView:

@@ -19,16 +19,16 @@ The DragDropBehavior is responsible for the dragging, dropping and reordering of
 
 The next figures show the basic operations of the behaviors:
 
-Figure 1. Task drag and drop
+>caption Task drag and drop
 
 ![radganttview-dragdrop-overview-1](images/radganttview-dragdrop-overview-1.jpg)
 
-Figure 2. Task resizing
+>caption Task resizing
 
 ![radganttview-dragdrop-overview-2](images/radganttview-dragdrop-overview-2.jpg)
 
- Figure 3. Task reorder
- 
+>caption Task reorder
+
  ![radganttview-dragdrop-overview-3](images/radganttview-dragdrop-overview-3.jpg)
 
 The DragDropBehavior is easily customizable, for more information take a look at the following help articles:

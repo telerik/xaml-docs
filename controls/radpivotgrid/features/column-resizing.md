@@ -26,7 +26,7 @@ __Example 2: Enable column resizing in code-behind__
 <snippet id='radpivotgrid-features-column-resizing-block_2-cs' />
 <snippet id='radpivotgrid-features-column-resizing-block_2-vb' />
 
-__Resizing RadPivotGrid's columns__
+>caption Resizing RadPivotGrid's columns
 
 ![Telerik UI for WPF RadPivotGrid column resizing with drag handle and autofit behavior](images/column-resizing.gif)
 

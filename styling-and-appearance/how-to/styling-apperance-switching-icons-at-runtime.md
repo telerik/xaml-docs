@@ -68,7 +68,7 @@ __Example 3: Setting ImageSource Using IconResource__
 Presuming there is an image with file name *background.png* in the *Icons/Light/* folder of your application, __Figure 1__ shows the result of __Examples 1 – 3__.
 
 
-__Figure 1: ImageSource Set by IconResource__ 
+>caption ImageSource set by IconResource
 
 ![Telerik UI for WPF icon resource assigned to an ImageSource](images/Switching_Icons_Runtime_01.png)
 
@@ -92,7 +92,7 @@ This will trigger a change in the source of the __Image__ and will show the *bac
 
 __Figure 2__ shows the result after the code in __Example 4__ is executed.
 
-__Figure 2: Image After Changing the IconSet__
+>caption Image after changing the IconSet
 
 ![Telerik UI for WPF control after changing its icon set](images/Switching_Icons_Runtime_02.png)
 
@@ -130,7 +130,7 @@ __Example 6: ImageSource Set to RadPdfViewer Icon__
 Both __IconSource__ resources defined in the article are in the same view pointing to different base paths for images. The result of __Example 6__ is shown on __Figure 3__.
 
 
-__Figure 3: ImageSource Set to RadPdfViewer Icon__
+>caption ImageSource set to RadPdfViewer icon
 
 ![Telerik UI for WPF RadPdfViewer icon assigned to an ImageSource](images/Switching_Icons_Runtime_03.png)
 
@@ -138,7 +138,7 @@ __Figure 3: ImageSource Set to RadPdfViewer Icon__
 Changing the icon set used in the application with the code from __Example 4__ will change it for both images, regardless of the fact that they use separate base paths. The result is demonstrated on __Figure 4__.
 
 
-__Figure 4: Images After Changing the IconSet__
+>caption Images after changing the IconSet
 
 ![Telerik UI for WPF controls after changing their icon set](images/Switching_Icons_Runtime_04.png)
 

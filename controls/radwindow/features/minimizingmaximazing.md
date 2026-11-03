@@ -13,12 +13,14 @@ position: 6
 
 The __RadWindow__ can be minimized or maximized via the buttons in its top-right corner.
 
-#### __Figure 1: RadWindow Minimize and Maximize Buttons__
+>caption RadWindow minimize and maximize buttons
+
 ![RadWindow with Minimize and Maximize Buttons](images/RadWindow_Minimize_Maximize_01.png)
 
 After being minimized or maximized the respective button is replaced by a __Restore__ button. By clicking on this button the user can bring the __RadWindow__ in its __Normal__ state.
 
-#### __Figure 2: RadWindow Restore Button__
+>caption RadWindow restore button
+
 ![RadWindow Restore Button](images/RadWindow_Minimize_Maximize_02.png)
 
 >tip Every time when the __RadWindow__ gets minimized or maximized, it changes its state. More about the __RadWindow__ states can be found [here]({%slug radwindow-features-states%}).

@@ -21,7 +21,8 @@ __Example 1: Defining series in XAML__
 <snippet id='radchartview3d-series-lineseries3d-example_1_defining_series_in_xaml-xaml' />
 
 	
-__Figure 1: LineSeries3D__
+>caption LineSeries3D
+
 ![{{ site.framework_name }} RadChartView3D LineSeries3D](images/radchartview-3d-lineseries3d-0.png)
 
 ## Data bound series
@@ -48,7 +49,8 @@ __Example 5: Setting point size in code__
 <snippet id='radchartview3d-series-lineseries3d-example_5_setting_point_size_in_code-cs' />
 
 
-__Figure 2: Point visuals shown__
+>caption Point visuals shown
+
 ![{{ site.framework_name }} RadChartView3D Point visuals shown](images/radchartview-3d-lineseries3d-1.png)
 
 ## Setting the line size
@@ -59,7 +61,8 @@ __Example 6: Setting the line diameter__
 <snippet id='radchartview3d-series-lineseries3d-example_6_setting_the_line_diameter-cs' />
 
 
-__Figure 3: Line diameter set to 25__
+>caption Line diameter set to 25
+
 ![{{ site.framework_name }} RadChartView3D Line diameter set to 25](images/radchartview-3d-lineseries3d-2.png)
 
 ## Customizing the data point visuals
@@ -82,7 +85,9 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 	<snippet id='radchartview3d-series-lineseries3d-example_7_setting_default_line_visual_material-xaml' />
 
 	
-	__Figure 4: Custom line visual material__	![{{ site.framework_name }} RadChartView3D Custom line visual material](images/radchartview-3d-lineseries3d-3.png)
+>caption Custom line visual material
+
+	![{{ site.framework_name }} RadChartView3D Custom line visual material](images/radchartview-3d-lineseries3d-3.png)
 	
 * __Setting the geometry of the line segments__
 
@@ -92,7 +97,9 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 	<snippet id='radchartview3d-series-lineseries3d-example_8_setting_default_line_visual_geometry-xaml' />
 
 	
-	__Figure 5: Custom line visual geometry__	![{{ site.framework_name }} RadChartView3D Custom line visual geometry](images/radchartview-3d-lineseries3d-4.png)	
+>caption Custom line visual geometry
+
+	![{{ site.framework_name }} RadChartView3D Custom line visual geometry](images/radchartview-3d-lineseries3d-4.png)	
 	
 * __Select a color using the material selector__
 
@@ -106,7 +113,9 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 	<snippet id='radchartview3d-series-lineseries3d-example_10_setting_default_line_visual_material_selector-xaml' />
 
 	
-	__Figure 6: Line with random colors__	![{{ site.framework_name }} RadChartView3D Line with random colors](images/radchartview-3d-lineseries3d-5.png)
+>caption Line with random colors
+
+	![{{ site.framework_name }} RadChartView3D Line with random colors](images/radchartview-3d-lineseries3d-5.png)
 
 * __Select a geometry using the geometry selector__
 
@@ -120,7 +129,9 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 	<snippet id='radchartview3d-series-lineseries3d-example_12_setting_default_line_visual_geometry_selector-xaml' />
 
 	
-	__Figure 7: Line with random colors__	![{{ site.framework_name }} RadChartView3D Line with random colors](images/radchartview-3d-lineseries3d-6.png)
+>caption Line with random colors
+
+	![{{ site.framework_name }} RadChartView3D Line with random colors](images/radchartview-3d-lineseries3d-6.png)
 
 ## See Also
 

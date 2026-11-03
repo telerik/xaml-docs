@@ -30,7 +30,8 @@ After we have created the viewmodel, the next step is to create an instance and 
 __Example 2: Defining the control and the necessary styles__
 <snippet id='radnavigationview-populating-with-data-databinding-block_2-xaml' />
 
-#### __Figure 1: Result from Example 2 in the Office2016 theme__
+>caption Result from example 2 in the Office2016 theme
+
 ![DataBound RadNavigationView](images/RadNavigationView_DataBinding.gif)
 
 >For another, more complicated, databinding example, check out the __First Look__ RadNavigationView example from the [WPF Controls Samples application](https://demos.telerik.com/wpf/).

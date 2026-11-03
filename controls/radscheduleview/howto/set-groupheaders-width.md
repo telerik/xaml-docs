@@ -43,7 +43,8 @@ __Example 2: Apply GroupHeaderContentTemplateSelector__
 
 __Figure 1__ shows the RadScheduleView before and after applying the previously explained properties.
 
-#### __Figure 1: Default and customized WeekViewDefinitions__
+>caption Default and customized WeekViewDefinitions
+
 ![{{ site.framework_name }} RadScheduleView Default and customized WeekViewDefinitions](images/radscheduleview_howto_setgroupheaderswidth_0.png)
 
 ## See Also

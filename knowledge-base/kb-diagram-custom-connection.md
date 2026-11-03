@@ -313,6 +313,6 @@ The result is a custom connection element, which can be used both in Xaml and in
     diagram.Items.Add(connection)
 ```
 
-#### __Figure 1: Result__
+>caption Result
 
 ![Custom ConnectionLine](images/kb-diagram-custom-connection-0.png)

@@ -39,7 +39,8 @@ In order to customize the __MouseOverHighlightStyle__ using implicit styles you 
 
     <snippet id='radscheduleview-styles-and-templates-customize-mouseover-selection-highlight-block_3-xaml' />
 
-__Figure 1: Result from Example 3 after hovering over a slot in the Office 2016 theme__
+>caption Result from example 3 after hovering over a slot in the Office 2016 theme
+
 ![Radscheduleview MouseOverHighlightStyle](images/radscheduleview_mouseoverhighlight.png)
 
 ## Customizing the SelectionHighlightStyle
@@ -58,7 +59,8 @@ In order to customize the __SelectionHighlightStyle__ using implicit styles you 
 
 	<snippet id='radscheduleview-styles-and-templates-customize-mouseover-selection-highlight-block_5-xaml' />
 
-__Figure 2: Result from Example 5 after selecting a slot in the Office 2016 theme____
+>caption Result from example 5 after selecting a slot in the Office 2016 theme
+
 ![RadScheduleView SelectionHighlightStyle](images/radscheduleview_selectionhighlight.png)
 
 ## See Also

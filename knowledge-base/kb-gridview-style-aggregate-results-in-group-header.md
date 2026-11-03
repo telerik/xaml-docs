@@ -219,7 +219,7 @@ __Example 3: AggregateResultsListItemCountToBackgroundConverter implementation__
 ```
 
 
-#### __Figure 1: Result from Example 2 in the Fluent theme__
+>caption Result from example 2 in the fluent theme
 
 ![Styled aggregate results in the GroupHeaderRow](images/kb-gridview-style-aggregate-results-in-group-header-noalignment.png)
 
@@ -339,7 +339,7 @@ __Example 5: Implementation of converters used in Example 4__
     End Class
 ```
 
-#### __Figure 2: Result from Example 3 in the Fluent theme__
+>caption Result from example 3 in the fluent theme
 
 ![Styled aggregate results in the GroupHeaderRow](images/kb-gridview-style-aggregate-results-in-group-header-nexttogroupkey.png)
 

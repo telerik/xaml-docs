@@ -52,7 +52,8 @@ __Example 5: Declare a chart in code-behind__
 
 This is all we need - a chart object with axes specifically chosen to provide an intuitive coordinate system. Then we add a series object to visualize our set of data points and finally we fill the series with data. Check __Figure 1__.
 
-#### __Figure 1: RadCharView with static data__
+>caption RadCharView with static data
+
 ![Telerik UI for WPF RadChartView Cartesian chart displaying static data](images/radchartview-chart_introduction.PNG)
 
 The chart can be further customized. For example you may want to add a grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes for better readability. This can be achieved with the __RadCartesianGrid__ and his properties __MajorLinesVisibility__ and __StripLinesVisibility__. Both properties can be set to XY, X , Y or None (the default one).
@@ -65,7 +66,8 @@ __Example 6: Declare grid lines in chart__
 
 The example in __Figure 2__ demonstrates how the line chart will look like with its MajorLinesVisibility set to XY.
 
-#### __Figure 2: Setting the MajorLinesVisibility property__
+>caption Setting the MajorLinesVisibility property
+
 ![Telerik UI for WPF RadChartView Cartesian chart with major grid lines](images/RadChartView-chart_majorlines.PNG)
 
 To enable striplines you should set some brushes. See __Example 7__.
@@ -75,7 +77,8 @@ __Example 7: Stylize the grid lines__
 <snippet id='radchartview-populating-with-data-static-data-example_7_stylize_the_grid_lines-xaml' />
 
 
-#### __Figure 3: Stylized grid lines__
+>caption Stylized grid lines
+
 ![Telerik UI for WPF RadChartView Cartesian chart with styled major and strip lines](images/radchartview-chart_majorlines_stylize.PNG)
 
 ## See Also

@@ -32,7 +32,8 @@ __[XAML] Example 3: Binding the IsExpandedBinding to the business model__
 <snippet id='radgridview-features-isexpandedbinding-and-isexpandablebinding-example_2_create_sample_data-xaml' />
 
 
-__Figure 1: Expanding hierarchy through the IsExpandedBinding property__
+>caption Expanding hierarchy through the IsExpandedBinding property
+
 ![Telerik UI for {{ site.framework_name }} RadGridView hierarchy expanded through the IsExpandedBinding property](images/radgridview-isexpandedbinding-isexpandablebinding_1.png)
 
 ## IsExpandableBinding
@@ -43,7 +44,8 @@ __[XAML] Example 4: Binding the IsExpandableBinding to the business model__
 <snippet id='radgridview-features-isexpandedbinding-and-isexpandablebinding-example_2_create_sample_data-xaml' />
 
 
-__Figure 2: Hiding the GridViewToggleButton through the IsExpandableBinding__
+>caption Hiding the GridViewToggleButton through the IsExpandableBinding
+
 ![Telerik UI for {{ site.framework_name }} RadGridView with hierarchy toggle buttons hidden through the IsExpandableBinding property](images/radgridview-isexpandedbinding-isexpandablebinding_2.png)
 
 ## See Also

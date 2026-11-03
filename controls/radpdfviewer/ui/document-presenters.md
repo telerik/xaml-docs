@@ -53,7 +53,8 @@ __Example 1: Using FixedDocumentPagesPresenter__
 
 
 
-**Figure 1: FixedDocumentPagesPresenter**
+>caption FixedDocumentPagesPresenter
+
 ![Rad Pdf Viewer Ui Document Presenters 01](images/RadPdfViewer_Ui_Document_Presenters_01.png)
 
 
@@ -68,7 +69,8 @@ __Example 2: Using FixedDocumentSinglePageViewPresenter__
 
 
 
-**Figure 2: FixedDocumentSinglePageViewPresenter**
+>caption FixedDocumentSinglePageViewPresenter
+
 ![Rad Pdf Viewer Ui Document Presenters 02](images/RadPdfViewer_Ui_Document_Presenters_02.png)
 
 ## See Also

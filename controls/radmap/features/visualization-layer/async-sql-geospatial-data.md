@@ -64,7 +64,8 @@ __Example 3: Setting the reader's source in code__
 <snippet id='radmap-features-visualization-layer-async-sql-geospatial-data-block_3-cs' />
 <snippet id='radmap-features-visualization-layer-async-sql-geospatial-data-block_3-vb' />
 
-#### Figure 1: RadMap populated with MapShapeData objects via the AsyncSqlGeospatialDataReader
+>caption RadMap populated with MapShapeData objects via the AsyncSqlGeospatialDataReader
+
 ![radmap-features-async-sql-geospatial-data-0.png](images/radmap-features-async-sql-geospatial-data-0.png)
 
 {% if site.site_name == 'WPF' %}> The example is based on the [AsyncSqlGeospatialDataReader](https://github.com/telerik/xaml-sdk/tree/master/Map/WPF/AsyncSqlGeospatialDataReader) SDK example.{% endif %}

@@ -25,7 +25,7 @@ private void OnPromptRequest(object sender, InlineAIAssistantPromptRequestEventA
 }
 ```
 
-__RadInlineAIAssistant Displaying a Response__
+>caption RadInlineAIAssistant displaying a response
 
 ![WPF RadInlineAIAssistant Displaying a Response](images/radinlineaiassistant-handling-responses-001.png)
 

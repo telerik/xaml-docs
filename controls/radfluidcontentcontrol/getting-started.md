@@ -58,7 +58,8 @@ __Example 1: RadFluidContentControl definition in XAML__
 <snippet id='radfluidcontentcontrol-getting-started-example_1_radfluidcontentcontrol_definition_in_xaml-xaml' />
 
 
-__Figure 1: RadFluidContentControl with size 100,100__
+>caption RadFluidContentControl with size 100,100
+
 ![{{ site.framework_name }} RadFluidContentControl RadFluidContentControl with size 100,100](images/fluidcontentcontrol-getting-started-0.png)
 
 ## Setting up the Content Changing Mechanism
@@ -78,7 +79,8 @@ __Example 2: Setting thresholds__
 
 > The default ContentChangeMode default value is set to Automatic.
 
-__Figure 2: RadFluidContentControl with size 150,150__
+>caption RadFluidContentControl with size 150,150
+
 ![{{ site.framework_name }} RadFluidContentControl RadFluidContentControl with size 150,150](images/fluidcontentcontrol-getting-started-1.png)
 
 To enable the manual mechanism set the __ContentChangeMode__ property of RadFluidContentControl to __Manual__. This allows you to manually set the __State__ property of the control, thus changing the visible content.
@@ -87,7 +89,8 @@ __Example 2: Setting the content state manually__
 <snippet id='radfluidcontentcontrol-getting-started-example_2_setting_the_content_state_manually-xaml' />
 
 
-__Figure 3: RadFluidContentControl with large content manually set via the State property__
+>caption RadFluidContentControl with large content manually set via the state property
+
 ![{{ site.framework_name }} RadFluidContentControl RadFluidContentControl with large content manually set via the State property](images/fluidcontentcontrol-getting-started-2.png)
 
 ## Data Binding

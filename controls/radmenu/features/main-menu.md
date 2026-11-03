@@ -13,7 +13,7 @@ position: 14
 
 As of **R3 2018**, RadMenu exposes a boolean **IsMainMenu** property which indicates whether RadMenu receives a main menu activation notification. When set to **True** and the user presses the **F10** or the **Alt** key, the menu grabs the focus and its first item gets highlighted. The default value is **False**.
 
-#### __Figure 1: RadMenu with IsMainMenu set to True once Alt/F10 is pressed__
+>caption RadMenu with IsMainMenu set to true once alt/F10 is pressed
 
 ![RadMenu with IsMainMenu set to True once Alt/F10 is pressed](images/activated-menu.png)
 

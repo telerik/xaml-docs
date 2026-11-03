@@ -31,7 +31,8 @@ __Example 2: Specifying custom colors__
 
 If you run the application now, you should get a structure like in Figure 1:
 
-__Figure 1: Tasks with different categories Color__
+>caption Tasks with different categories color
+
 ![Telerik TaskBoard Category Indicator 0](images/taskboard_indicator_color_0.png)
 
 ## Hide Categories Color
@@ -44,7 +45,8 @@ __Example 3: Hide Category Indicator on the second item__
 
 __Figure 2__ demonstrates this change.
 
-__Figure 2: A task with no color__
+>caption A task with no color
+
 ![Telerik TaskBoard categories Color 1](images/taskboard_indicator_color_1.png)
 
 ## See Also

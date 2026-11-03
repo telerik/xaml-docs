@@ -11,7 +11,7 @@ slug: barcode-pdf417-overview
 
 PDF417 is a stacked linear barcode symbol format used in a variety of applications, primarily transport, identification cards, and inventory management. PDF stands for Portable Data File. The 417 signifies that each pattern in the code consists of 4 bars and spaces, and that each pattern is 17 units long. The PDF417 symbology was invented by Dr. Ynjiun P. Wang at Symbol Technologies in 1991. (Wang 1993) It is represented by ISO standard 15438.
 
-__Figure 1: PDF417 RadBarcode__
+>caption PDF417 RadBarcode
 
 ![barcode-2d-barcodes-pdf417-overview 001](images/barcode-2d-barcodes-pdf417-overview001.png)
 
@@ -21,7 +21,7 @@ The code is divided into rows and columns, which accommodate all the encoded dat
 
 The PDF417 barcode has the following structure:
 
-__Figure 2: PDF417 RadBarcode's structure__
+>caption PDF417 RadBarcode's structure
 
 ![barcode-2d-barcodes-pdf417-overview 002](/images/barcode-2d-barcodes-pdf417-overview002.png)
 

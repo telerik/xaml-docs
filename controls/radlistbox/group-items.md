@@ -39,7 +39,7 @@ The following example demonstrates how to bind the `ItemsSource` property of `Ra
 	__Set the ItemsSource and GroupStyle__  
 	<snippet id='radlistbox-group-items-block_4-xaml' />
 
-__RadListBox with grouping enabled__
+>caption RadListBox with grouping enabled
 
 ![A picture showing RadListBox with its data grouped](images/radlistbox_how_to_group_items_01.png)
 	

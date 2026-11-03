@@ -72,7 +72,7 @@ __Example 4: Set the DisplayContent property__
 <snippet id='radgridview-grouping-programmatic-grouping-example_4_set_the_displaycontent_property-vb' />
 
 
-#### Figure 1: The box displayed in the group panel after the DisplayContent is set
+>caption The box displayed in the group panel after the DisplayContent is set
 
 ![Telerik UI for {{ site.framework_name }} RadGridView group panel showing a programmatic GroupDescriptor with custom display content](images/RadGridView_ProgrammaticGrouping_1.png)
 

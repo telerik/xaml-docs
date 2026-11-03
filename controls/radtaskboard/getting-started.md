@@ -54,7 +54,8 @@ And finally, we need to set the DataContext of the MainWindow:
 <snippet id='radtaskboard-getting-started-block_3-cs' />
 
 If you run the application now, you should get a structure like in Figure 1:
-#### Figure 1: RadTaskBoard with sample data
+>caption RadTaskBoard with sample data
+
 ![Telerik TaskBoard Getting-Started 0](images/getting_started_1.png)
 
 ## Setting a Theme
@@ -80,7 +81,8 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a RadTaskBoard with the **Windows8** theme applied.
 
-__Figure 2: RadTaskBoard with the Windows8 theme__
+>caption RadTaskBoard with the Windows8 theme
+
 ![RadTaskBoard with Windows8 theme](images/RadTaskBoard-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

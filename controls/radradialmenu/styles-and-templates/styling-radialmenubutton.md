@@ -45,5 +45,6 @@ __Example 2: Custom ContentTemplate and BackContentTemplate__
 
 __Figure 1__ shows the final result.      
 
-Figure 1: Customized RadialMenuButton
+>caption Customized RadialMenuButton
+
 ![Rad Radial Menu Styling Radial Menu Button 01](images/RadRadialMenu_Styling_RadialMenuButton_01.png)

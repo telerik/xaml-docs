@@ -19,7 +19,7 @@ To display a native tooltip, set the __UseNativeTooltip__ property as demonstrat
 __Example 1: Setting TooltipContent__
 <snippet id='radnotifyicon-features-tooltip-block_1-xaml' />
 
-__Figure 1: RadNotifyIcon with tooltip__
+>caption RadNotifyIcon with tooltip
 
 ![RadNotifyIcon with tooltip](images/radnotifyicon_tooltip.png)
 
@@ -32,7 +32,7 @@ The RadNotifyIcon provides a default TooltipContentTemplate that will be styled 
 __Example 2: Setting TooltipContent and TooltipContentTemplate__
 <snippet id='radnotifyicon-features-tooltip-block_2-xaml' />
 
-__Figure 2: RadNotifyIcon with customized tooltip__
+>caption RadNotifyIcon with customized tooltip
 
 ![RadNotifyIcon with customized tooltip](images/radnotifyicon_customtooltip.png)
 

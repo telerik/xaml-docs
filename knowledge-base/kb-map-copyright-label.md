@@ -75,7 +75,7 @@ This article showcases how to display copyright attribution label for the OpenSt
         </Grid>
     ```
 
-    __RadMap with displayed copyright attribution label when using OpenStreetMapProvider__
+>caption RadMap with displayed copyright attribution label when using OpenStreetMapProvider
 
     ![RadMap with displayed copyright attribution label](images/kb-map-copyright-label-0.png)
 
@@ -108,7 +108,7 @@ This article showcases how to display copyright attribution label for the OpenSt
         </Grid>
     ```
 
-    __RadMap with displayed copyright attribution label when using AzureMapProvider__
+>caption RadMap with displayed copyright attribution label when using AzureMapProvider
 
     ![RadMap with displayed copyright attribution label when using AzureMapProvider](images/kb-map-copyright-label-1.png)
 

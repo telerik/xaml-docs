@@ -59,7 +59,8 @@ __VB__
 
 You can observe the final result on __Figure 1__.
 
-Figure 1: Custom folders in the FieldTree.
+>caption Custom folders in the FieldTree.
+
 ![Rad Pivot Grid Events Overview 0](images/RadPivotGrid_Events_Overview_01.png)
 
 * __AddingContainerNode (available only for the LocalDataSourceFieldDescriptionsProvider)__ - raised multiple times while the FieldTree is generated - each time a node is added. 

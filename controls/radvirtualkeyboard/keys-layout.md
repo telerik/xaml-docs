@@ -26,7 +26,8 @@ To change the layout using one of the predefined schemes, set the `DefaultKeyboa
 __Changing the default keyboard layout__
 <snippet id='radvirtualkeyboard-keys-layout-block_1-xaml' />
 
-__Predefined key layouts in the following order - Numpad, Compact and Extended__
+>caption Predefined key layouts in the following order - numpad, compact and extended
+
 ![{{ site.framework_name }} RadVirtualKeyboard Numpad Compact and Extended Layouts](images/radvirtualkeyboard-keys-layout-0.png)
 
 ## Creating Custom Key Layouts

@@ -57,7 +57,7 @@ __Example 2: Setting the calendar for a specific RadCalendar instance__
 
 **Figure 1** demonstrates the final result:
 
-#### __Figure 1: Hijri calendar__
+>caption Hijri calendar
 
 ![Hijri calendar](images/calendar-hijri.png)
 

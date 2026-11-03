@@ -29,7 +29,8 @@ The Height of the DropDown element can be set through the __DropDownHeight__ pro
 __Example 1: Setting the DropDownHeight property__
 <snippet id='radmulticolumncombobox-dropdown-properties-block_1-xaml' />
 
-#### __Figure 1: Setting the DropDownHeight property__
+>caption Setting the DropDownHeight property
+
 ![Setting the DropDownHeight property](images/MultiColumnComboBox_DropDown_Properties_01.png)
 
 ## Width of the DropDown

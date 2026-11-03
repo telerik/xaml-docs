@@ -26,7 +26,8 @@ __Defining a WeatherCard__
 
 Defining such __WeatherCardMessage__ will look as follows.
 
-__Defining WeatherCard__
+>caption Defining WeatherCard
+
 ![Defining ImageCard](images/RadChat_WeatherCard_01.png)
 
 ## See Also

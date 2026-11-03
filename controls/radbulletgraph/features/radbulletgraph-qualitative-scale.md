@@ -22,7 +22,8 @@ To control the interval between the ticks on the scale use the __Step__ property
 __Example 1: Setting the scale range manually__
 <snippet id='radbulletgraph-features-radbulletgraph-qualitative-scale-example_1_setting_the_scale_range_manually-xaml' />
 
-__Figure 1: Setting the scale range between 0 and 120__
+>caption Setting the scale range between 0 and 120
+
 ![radbulletgraph-qualitative-scale-0.png](images/radbulletgraph-qualitative-scale-0.png)
 
 ## Hiding the Scale
@@ -32,7 +33,8 @@ To hide the scale's ticks and labels, set the __QuantitativeScaleVisibility__ pr
 __Example 2: Hiding the scale__
 <snippet id='radbulletgraph-features-radbulletgraph-qualitative-scale-example_2_hiding_the_scale-xaml' />
 
-__Figure 2: BulletGraph with hidden scale__
+>caption BulletGraph with hidden scale
+
 ![radbulletgraph-qualitative-scale-1.png](images/radbulletgraph-qualitative-scale-1.png)
 	
 {% if site.site_name == 'WPF' %}
@@ -46,7 +48,8 @@ To format the tick labels displayed under the scale, use the __TextFormatString_
 __Example 3: Using currency format__
 <snippet id='radbulletgraph-features-radbulletgraph-qualitative-scale-example_3_using_currency_format-xaml' />
 
-__Figure 3: Labels formatted using currency format__
+>caption Labels formatted using currency format
+
 ![radbulletgraph-qualitative-scale-2.png](images/radbulletgraph-qualitative-scale-2.png)
 	
 ## Inversing the Scale 
@@ -56,7 +59,8 @@ To inverse the scale you can set the __FlowDirection__ property of the control.
 __Example 4: Setting FlowDirection__
 <snippet id='radbulletgraph-features-radbulletgraph-qualitative-scale-example_4_setting_flowdirection-xaml' />
 
-__Figure 4: Inversed scale__
+>caption Inversed scale
+
 ![radbulletgraph-qualitative-scale-2.png](images/radbulletgraph-qualitative-scale-3.png)
 	
 ## See Also  

@@ -117,6 +117,6 @@ To format the text, extend the MapMouseLocationIndicator class to define a `Text
 
 >important If you are using the __NoXaml__ version of our assemblies, you need to create a new `Style` that targets the `CustomMapMouseLocationIndicator` type. Then, it needs to be based via the `BasedOn` property on the default `Style` for the `MapMouseLocationIndicator` type, which has an __x:Key="MapMouseLocationIndicatorStyle"__.
 
-__MapMouseLocationIndicator with formatted text__
+>caption MapMouseLocationIndicator with formatted text
 
 ![WPF MapMouseLocationIndicator with formatted text](images/kb-map-format-the-text-of-the-mapmouselocationindicator-0.png)

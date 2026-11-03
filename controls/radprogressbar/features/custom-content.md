@@ -16,7 +16,7 @@ position: 0
 __Setting the Content and ContentTemplate properties__
 <snippet id='radprogressbar-features-custom-content-block_1-xaml' />
 
-__RadProgressBar with set Content and ContentTemplate properties__
+>caption RadProgressBar with set content and ContentTemplate properties
 
 ![{{site.framework_name}} RadProgressBar with set Content and ContentTemplate properties](images/progressbar-custom-content-0.png)
 
@@ -27,7 +27,7 @@ RadProgressBar exposes the `ContentForeground` property that will allow you to s
 __Setting the ContentForeground property__
 <snippet id='radprogressbar-features-custom-content-block_2-xaml' />
 
-__RadProgressBar with set ContentForeground property__
+>caption RadProgressBar with set ContentForeground property
 
 ![{{site.framework_name}} RadProgressBar with set ContentForeground property](images/progressbar-custom-content-1.png)
 
@@ -38,6 +38,6 @@ The RadProgressBar control allows you to position the content via the `VerticalC
 __Setting the VerticalContentAlignment property to Top__
 <snippet id='radprogressbar-features-custom-content-block_3-xaml' />
 
-__RadProgressBar with set VerticalContentAlignment property__
+>caption RadProgressBar with set VerticalContentAlignment property
 
 ![{{site.framework_name}} RadProgressBar with set VerticalContentAlignment property](images/progressbar-custom-content-2.png)

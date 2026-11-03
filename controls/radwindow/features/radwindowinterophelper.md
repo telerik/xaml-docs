@@ -33,11 +33,11 @@ __Example 1: Set RadWindowInteropHelper attached properties__
 <snippet id='radwindow-features-radwindowinterophelper-block_2-cs' />
 <snippet id='radwindow-features-radwindowinterophelper-block_3-vb' />
 
-#### __Figure 1: The customized RadWindow__
+>caption The customized RadWindow
 
 ![The customized RadWindow](images/custom-radwindow.png)
 
-#### __Figure 1: The customized RadWindow's taskbar thumbnail preview__
+>caption The customized RadWindow's taskbar thumbnail preview
 
 ![The customized RadWindow's taskbar thumbnail preview](images/custom-radwindow-toolbar.png)
 

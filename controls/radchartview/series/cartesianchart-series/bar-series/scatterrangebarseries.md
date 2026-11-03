@@ -23,7 +23,7 @@ __Declaring a RangeBarSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-scatterrangebarseries-declaring_a_rangebarseries_in_xaml-xaml' />
 
 
-__ScatterRangeBarSeries visual appearance__  
+>caption ScatterRangeBarSeries visual appearance
 
 ![Telerik UI for WPF RadChartView ScatterRangeBarSeries with a basic setup](images/radchartview-series-scatterrangebarseries-0.png)
 	
@@ -45,7 +45,7 @@ __Specifying ScatterRangeBarSeries in XAML and setting its binding properties__
 	
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
-__ScatterRangeBarSeries populated with data binding__  
+>caption ScatterRangeBarSeries populated with data binding
 
 ![Telerik UI for WPF RadChartView ScatterRangeBarSeries populated with a collection of data items](images/radchartview-series-scatterrangebarseries-1.png)
 

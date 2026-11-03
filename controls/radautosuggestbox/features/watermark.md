@@ -18,7 +18,8 @@ The default watermark is empty. To change this, set the __WatermarkContent__ pro
 __Example 1: Set watermark content__
 <snippet id='radautosuggestbox-features-watermark-example_1_set_watermark_content-xaml' />
 
-__Figure 1: Watermark content__
+>caption Watermark content
+
 ![{{ site.framework_name }} RadAutoSuggestBox Watermark content](images/radautosuggestbox-features-watermark-0.png)
 
 ## Customize the Watermark Behavior
@@ -38,7 +39,8 @@ The default UI of the watermark is a simple content presenter that shows the val
 __Example 2: Set watermark content template__
 <snippet id='radautosuggestbox-features-watermark-example_2_set_watermark_content_template-xaml' />
 
-__Figure 2: Watermark content template__
+>caption Watermark content template
+
 ![{{ site.framework_name }} RadAutoSuggestBox Watermark content template](images/radautosuggestbox-features-watermark-1.png)
 
 ## See Also  

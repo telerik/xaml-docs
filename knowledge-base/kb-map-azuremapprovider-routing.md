@@ -372,7 +372,7 @@ __Utilizing the AzureRoutingHelper class__
     End Class
 ```
 
-__RadMap with AzureMapProvider and routing functionality__
+>caption RadMap with AzureMapProvider and routing functionality
 
 ![RadMap with AzureMapProvider and routing functionality](images/kb-map-azuremapprovider-routing-0.png)
 

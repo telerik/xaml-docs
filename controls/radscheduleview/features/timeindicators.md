@@ -29,7 +29,8 @@ __Example 1: Adding time indicators in XAML__
 __Example 2: Adding time indicators in code__
 <snippet id='radscheduleview-features-timeindicators-block_2-cs' />
 
-#### Figure 1: RadScheduleView with two time indicators
+>caption RadScheduleView with two time indicators
+
 ![{{ site.framework_name }} RadScheduleView RadScheduleView with two time indicators](images/radscheduleview-features-timeindicator-0.png)
 
 ## TimeIndicatorStyleSelector

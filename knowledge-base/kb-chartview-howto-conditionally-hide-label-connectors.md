@@ -81,7 +81,8 @@ Define a custom series and override its __GetLabelConnector__ method. The follow
 	</Grid>
 ```
 
-#### __Figure 1: Custom ScatterLineSeries with one hidden label connector__
+>caption Custom ScatterLineSeries with one hidden label connector
+
 ![Custom ScatterLineSeries with one hidden label connector](images/kb-chartview-hide-label-connector.png)
 
 ## See Also

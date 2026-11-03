@@ -100,7 +100,8 @@ __Example 3: Define custom styles and set ItemContainerStyleSelector__
 
 > This example is implemented with [NoXaml Binaries]({%slug styling-apperance-implicit-styles-overview%}) and the styles are based on the [default styles]({%slug implicit-styles-styling-the-controls%}) for the theme.
 
-#### __Figure 1: QuickAccessToolBar styled with ItemContainerStyleSelector__ 
+>caption QuickAccessToolBar styled with ItemContainerStyleSelector
+
  ![QuickAccessToolBar ItemContainerStyleSelector](images/RadRibbonView_QuickAccessToolbar_ItemContainerStyleSelector.png)
 
 ## See Also

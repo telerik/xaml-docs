@@ -46,7 +46,7 @@ __Adding RadChat in XAML__
 
 Running the application at this state will result in an empty chat.
 
-__Empty chat example__
+>caption Empty chat example
 
 ![Empty RadChat](images/RadChat_GettingStarted_01.png)
 
@@ -75,7 +75,7 @@ __SendMessage event handler__
 
 This setup will have the following result.
 
-__RadChat with Messages__
+>caption RadChat with messages
 
 ![RadChat with Messages](images/RadChatSendMessage.gif)
 

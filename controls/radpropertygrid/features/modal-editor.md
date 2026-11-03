@@ -24,7 +24,7 @@ __Defining the business object__
 __Setting the ModalEditor via the EditorTemplate property__
 <snippet id='radpropertygrid-features-modal-editor-block_2-xaml' />
 
-__ModalEditor defined via the EditorTemplate property__
+>caption ModalEditor defined via the EditorTemplate property
 
 ![ModalEditor defined via the EditorTemplate property](images/radpropertygrid-features-modal-editor-0.png)
 
@@ -36,7 +36,7 @@ __Setting the EditorStyle property to Modal__
 <snippet id='radpropertygrid-features-modal-editor-block_3-cs' />
 <snippet id='radpropertygrid-features-modal-editor-block_3-vb' />
 
-__ModalEditor defined via the EditorStyle property of the EditorAttribute__
+>caption ModalEditor defined via the EditorStyle property of the EditorAttribute
 
 ![ModalEditor defined via the EditorStyle property of the EditorAttribute](images/radpropertygrid-features-modal-editor-0.png)
 
@@ -51,7 +51,7 @@ __Customizing the ModalEditor via the FieldLoaded event__
 <snippet id='radpropertygrid-features-modal-editor-block_5-cs' />
 <snippet id='radpropertygrid-features-modal-editor-block_5-vb' />
 
-__Customized ModalEditor__
+>caption Customized ModalEditor
 
 ![Customized ModalEditor](images/radpropertygrid-features-modal-editor-1.png)
 

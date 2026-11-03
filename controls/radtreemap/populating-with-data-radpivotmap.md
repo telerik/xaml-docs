@@ -32,7 +32,8 @@ __Example 3__
 
 <snippet id='radtreemap-populating-with-data-radpivotmap-block_4-xaml' />
 
-#### __Figure 1__
+>caption Telerik {{ site.Framework_name }} PivotMap
+
 ![Telerik {{ site.framework_name }} PivotMap](images/radpivotmap-databinding.png)
 
 You can bind the RadPivotMap to any source that implements one of the following interfaces:

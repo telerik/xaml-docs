@@ -24,7 +24,7 @@ The following example shows the effect of applying conditional formatting. The c
 - The prices in column E (Total price) are styled through a **Top** rule to highlight the top 5 values
 - On the Discount values in column D, the **GreaterThanOrEqual** rule is applied so the user can easily see discounts bigger than or equal to 7% 
 
-__Example of Applied Conditional Formatting__
+>caption Example of applied conditional formatting
 
 ![RadSpreadsheet Conditional Formatting](images/Features-Conditional-Formatting_1.png)
 
@@ -69,7 +69,7 @@ RadSpreadsheet comes with built-in UI to create, edit or remove conditional form
 
 
 
-__Conditional Formatting Options in the Ribbon__
+>caption Conditional formatting options in the ribbon
 
 ![RadSpreadsheet Conditional Formatting](images/Features-Conditional-Formatting_2.png)
 

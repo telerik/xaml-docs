@@ -42,7 +42,8 @@ __Example 1: Setting initial Password__
 
 __Figure 1__ illustates __RadPasswordBox__ when loaded.
 
-__Figure 1: RadPasswordBox with Password set__
+>caption RadPasswordBox with password set
+
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with Password set](images/RadPasswordBox_KeyProperties_4.png)
 
 >__Password__ is **not a dependency property** (it is not bindable) as dependency properties keep their values unencrypted in memory.
@@ -62,7 +63,8 @@ __PasswordChar__ property defines the masking character used to hide the actual 
 __Example 2: Setting PasswordChar__
 <snippet id='radpasswordbox-key-properties-block_2-xaml' />
 
-__Figure 2: RadPasswordBox with PasswordChar set__
+>caption RadPasswordBox with PasswordChar set
+
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with PasswordChar set](images/RadPasswordBox_KeyProperties_0.png)
 
 ## ShowPasswordButton Settings
@@ -85,7 +87,8 @@ To completely remove the __ShowPasswordButton__, you could set this property to 
 __Example 3: Setting ShowPasswordButtonVisibility__
 <snippet id='radpasswordbox-key-properties-block_3-xaml' />
 
-#### __Figure 3: RadPasswordBox with ShowPasswordButtonVisibility set__
+>caption RadPasswordBox with ShowPasswordButtonVisibility set
+
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with ShowPasswordButtonVisibility set](images/RadPasswordBox_KeyProperties_1.png)
 
 ### ShowPasswordButtonContent / ShowPasswordButtonContentTemplate
@@ -102,7 +105,8 @@ __Example 5__ illustates how to set the ImageTemplate to the __ShowPasswordButto
 __Example 5: Setting ShowPasswordButton content properties__
 <snippet id='radpasswordbox-key-properties-block_5-xaml' />
 
-#### __Figure 4: RadPasswordBox with ShowPasswordButton content properties applied__
+>caption RadPasswordBox with ShowPasswordButton content properties applied
+
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with ShowPasswordButton content properties applied](images/RadPasswordBox_KeyProperties_2.png)
 
 ## Watermark Settings
@@ -123,7 +127,8 @@ __Example 7: Setting WatermarkTemplate__
 
 __Figure 5__ shows the result.
 
-#### __Figure 5: RadPasswordBox with WatermarkTemplate applied__
+>caption RadPasswordBox with WatermarkTemplate applied
+
 ![{{ site.framework_name }} RadPasswordBox RadPasswordBox with WatermarkTemplate applied](images/RadPasswordBox_KeyProperties_3.png)
 
 ### WatermarkBehavior

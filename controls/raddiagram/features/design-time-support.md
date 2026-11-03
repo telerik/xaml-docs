@@ -35,28 +35,33 @@ The design-time wizard lets you configure the following options:
 
 * Enabling the [RadDiagram Toolbox]({%slug raddiagram-extensions-toolbox%}) as demonstrated in __Figure 2__.
 
-    __Figure 2: Enabling the RadDiagram Toolbox__
+>caption Enabling the RadDiagram toolbox
+
     ![Enable the RadDiagram Toolbox](images/DiagramDesignWizardToolBox.png)
 
 * Enabling the [SettingsPane]({%slug raddiagram-extensions-settingspane-overview%}) as demonstrated in __Figure 3__.
 
-    __Figure 3: Enabling the RadDiagram SettingsPane__
+>caption Enabling the RadDiagram SettingsPane
+
     ![Enable the RadDiagram SettingsPane](images/DiagramDesignWizardSettingsPane.png)
 
 * Enabling the [DiagramNavigationPane]({%slug raddiagram-extensions-navigationpane%}) as demonstrated in __Figure 4__.
 
-    __Figure 4: Enabling the DiagramNavigationPane__
+>caption Enabling the DiagramNavigationPane
+
     ![Enable the DiagramNavigationPane](images/DiagramDesignWizardNavigationPane.png)
 
 * Enabling the [RadDiagram rulers]({%slug raddiagram-extensions-ruler%}) as demonstrated in __Figure 5__.
 
-    __Figure 5: Enabling the RadDiagram rulers__
+>caption Enabling the RadDiagram rulers
+
     ![Enable the RadDiagram rulers](images/DiagramDesignWizardRulers.png)
 
 {% if site.site_name == 'WPF' %}
 * Enabling the [RadDiagramRibbon]({%slug raddiagram-extensions-diagramribbon-overview%}) as demonstrated in __Figure 6__.
 
-    __Figure 6: Enabling the RadDiagramRibbon__
+>caption Enabling the RadDiagramRibbon
+
     ![Enable the RadDiagramRibbon](images/DiagramDesignWizardRibbon.png)
 
 {% endif %}

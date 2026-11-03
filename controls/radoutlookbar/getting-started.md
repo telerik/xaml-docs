@@ -92,7 +92,8 @@ __Example 6: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a RadOutlookBar with the **Windows8** theme applied.
 
-#### __Figure 2: RadOutlookBar with the Windows8 theme__
+>caption RadOutlookBar with the Windows8 theme
+
 ![RadOutlookBar with Windows8 theme](images/radoutlookbar-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

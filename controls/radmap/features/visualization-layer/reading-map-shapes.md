@@ -101,7 +101,8 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 	<snippet id='radmap-features-visualization-layer-reading-map-shapes-block_7-vb' />
 
 	
-	#### Figure 1: Result from Example 6
+>caption Result from example 6
+
 	![radmap-visualization-layer-reading-map-shapes-0](images/radmap-visualization-layer-reading-map-shapes-0.png)
 
 * __Formatted property value:__
@@ -115,7 +116,8 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 	<snippet id='radmap-features-visualization-layer-reading-map-shapes-block_9-cs' />
 	<snippet id='radmap-features-visualization-layer-reading-map-shapes-block_9-vb' />
 
-	#### Figure 2: Result from Example 8
+>caption Result from example 8
+
 	![radmap-visualization-layer-reading-map-shapes-1](images/radmap-visualization-layer-reading-map-shapes-1.png)
 
 * __Multiple formatted property values:__
@@ -127,7 +129,8 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 	<snippet id='radmap-features-visualization-layer-reading-map-shapes-block_11-cs' />
 	<snippet id='radmap-features-visualization-layer-reading-map-shapes-block_11-vb' />
 
-	#### Figure 3: Result from Example 10
+>caption Result from example 10
+
 	![radmap-visualization-layer-reading-map-shapes-2](images/radmap-visualization-layer-reading-map-shapes-2.png)
 
 ### ToolTipTemplate
@@ -141,7 +144,8 @@ __In this case the DataTemplate takes as DataContext the entire Extended Data Se
 __Example 12: AsyncShapeFileReader with ToolTipTemplate__
 <snippet id='radmap-features-visualization-layer-reading-map-shapes-block_12-xaml' />
 
-#### Figure 4: Result from Example 12
+>caption Result from example 12
+
 ![radmap-visualization-layer-reading-map-shapes-3](images/radmap-visualization-layer-reading-map-shapes-3.png)
 
 ### ToolTipStyle
@@ -151,7 +155,8 @@ The ToolTipStyle property allows you to specify a Style of the tooltip that gets
 __Example 13: AsyncShapeFileReader with ToolTipTemplate and ToolTipStyle__
 <snippet id='radmap-features-visualization-layer-reading-map-shapes-block_13-xaml' />
 
-#### Figure 5: Result from Example 13
+>caption Result from example 13
+
 ![radmap-visualization-layer-reading-map-shapes-4](images/radmap-visualization-layer-reading-map-shapes-4.png)
 
 ## Reading multiple files

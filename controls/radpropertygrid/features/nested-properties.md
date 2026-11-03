@@ -22,7 +22,7 @@ __Preparing sample data__
 __Showing the PropertyDefinitions for the nested properties__  
 <snippet id='radpropertygrid-features-nested-properties-block_2-xaml' />
 
-__RadPropertyGrid with visible nested properties__
+>caption RadPropertyGrid with visible nested properties
 
 ![RadPropertyGrid with visible nested properties](images/radpropertygrid-features-nested-properties-0.png)
 

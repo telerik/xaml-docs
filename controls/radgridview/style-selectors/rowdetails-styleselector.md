@@ -50,7 +50,7 @@ __Example 3: Set RadGridView's RowDetailsStyleSelector__
 
 And here is the final result:
 
-#### __Figure 1: The row details styled using the RowDetailsStyleSelector property__
+>caption The row details styled using the RowDetailsStyleSelector property
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with RowDetailsStyleSelector applying different styles to row details panels](images/gridview-rowdetails-styleselector.png)
 		 

@@ -42,7 +42,8 @@ __Example 1: Defining RadFilePathPicker__
 <snippet id='radfilepathpicker-getting-started-example_1_defining_radfilepathpicker-xaml' />
 
 
-__Figure 1: RadFilePathPicker in the Office2016 theme__
+>caption RadFilePathPicker in the Office2016 theme
+
 ![RadFilePathPicker Getting started](images/FilePathPicker_GettingStarted.png)
 
 Even at this point, you are ready to start using the control. The following few sections will demonstrate some of the features of the __RadFilePathPicker__.
@@ -67,7 +68,8 @@ __Example 3: Setting the ShowDialogButtonContent__
 <snippet id='radfilepathpicker-getting-started-example_3_setting_the_showdialogbuttoncontent-xaml' />
 
 
-__Figure 2: RadFilePathPicker with ShowDialogButtonContent set in the Office2016 theme__
+>caption RadFilePathPicker with ShowDialogButtonContent set in the Office2016 theme
+
 ![RadFilePathPicker with ShowDialogButtonContent](images/FilePathPicker_GettingStarted_ShowDialogButtonContent.png)
 
 If you don't want to show a RadGlyph in the show dialog button, you can set the __ShowDialogButtonTemplate__ property to a custom DataTemplate. Note, that whatever is set to the __ShowDialogButtonContent__ will be the DataContext inside the __ShowDialogButtonTemplate__. 
@@ -76,7 +78,8 @@ __Example 4: Setting the ShowDialogButtonTemplate__
 <snippet id='radfilepathpicker-getting-started-example_4_setting_the_showdialogbuttontemplate-xaml' />
 
 
-__Figure 3: RadFilePathPicker with ShowDialogButtonTemplate set in the Office2016 theme__
+>caption RadFilePathPicker with ShowDialogButtonTemplate set in the Office2016 theme
+
 ![RadFilePathPicker with ShowDialogButtonTemplate](images/FilePathPicker_GettingStarted_ShowDialogButtonTemplate.png)
 
 ## ClearButtonContent and ClearButtonTemplate 
@@ -87,7 +90,8 @@ __Example 5: Setting the ClearButtonContent__
 <snippet id='radfilepathpicker-getting-started-example_5_setting_the_clearbuttoncontent-xaml' />
 
 
-__Figure 4: RadFilePathPicker with ClearButtonContent set in the Office2016 theme__
+>caption RadFilePathPicker with ClearButtonContent set in the Office2016 theme
+
 ![RadFilePathPicker with ClearButtonContent](images/FilePathPicker_GettingStarted_ClearButtonContent.png)
 
 To avoid showing a RadGlyph in the clear button, you can set the __ClearButtonTemplate__ property to a custom DataTemplate. Note, that whatever is set to the __ClearButtonContent__ will be the DataContext inside the __ClearButtonTemplate__. 
@@ -96,14 +100,16 @@ __Example 6: Setting the ClearButtonTemplate__
 <snippet id='radfilepathpicker-getting-started-example_6_setting_the_clearbuttontemplate-xaml' />
 
 
-__Figure 5: RadFilePathPicker with ClearButtonTemplate set in the Office2016 theme__
+>caption RadFilePathPicker with ClearButtonTemplate set in the Office2016 theme
+
 ![RadFilePathPicker with ClearButtonTemplate](images/FilePathPicker_GettingStarted_ClearButtonTemplate.png)
 
 ## Setting FilePath on Drop
 
 Since the __2020.1.316__ internal build version, the RadFilePathPicker automatically sets its __FilePath__ when a file is dropped over it. If multiple files are dropped, the first one will be used. In order to disable this functionality, you can set the __AllowDrop__ property of the control to __False__.
  
-__Figure 6: Dropping a file over the RadFilePathPicker__
+>caption Dropping a file over the RadFilePathPicker
+
 ![Dropping a file over the RadFilePathPicker](images/FilePathPicker_GettingStarted_Drop.gif)
 
 ## Setting a Theme
@@ -134,7 +140,8 @@ __Example 7: Merge the ResourceDictionaries__
 
 __Figure 7__ shows a __RadFilePathPicker__ with the **Windows8** theme applied.
 
-__Figure 7: RadFilePathPicker with the Windows8 theme__
+>caption RadFilePathPicker with the Windows8 theme
+
 ![RadFilePathPicker with Windows8 theme](images/radfilepathpicker-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

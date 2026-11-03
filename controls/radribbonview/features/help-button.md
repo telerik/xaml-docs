@@ -16,7 +16,7 @@ The `RadRibbonView` control allows you to display a help button, which is positi
 __Displaying the help button__
 <snippet id='radribbonview-features-help-button-block_1-xaml' />
 
-__RadRibbonView with displayed help button__
+>caption RadRibbonView with displayed help button
 
 ![RadRibbonView with displayed help button](images/radribbonview-help-button-0.png)
 
@@ -34,7 +34,7 @@ The RadRibbonView control exposes the `HelpButtonStyle` property that allows you
 __Setting a custom Style for the help button__
 <snippet id='radribbonview-features-help-button-block_3-xaml' />
 
-__RadRibbonView with custom style set to the help button__
+>caption RadRibbonView with custom style set to the help button
 
 ![RadRibbonView with custom style set to the help button](images/radribbonview-help-button-1.png)
 

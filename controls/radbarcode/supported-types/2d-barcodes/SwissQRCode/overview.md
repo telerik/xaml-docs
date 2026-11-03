@@ -11,7 +11,7 @@ slug: barcode-swissqrcode-overview
 
 The QR-bill makes issuing and paying invoices simpler, and is being introduced throughout Switzerland to modernize payment transactions. Its most striking feature is the Swiss QR code, which contains all the payment information in a digital format, which can be read using a smartphone or a slip scanner.
 
-__Figure 1: A Swiss QR-bill__
+>caption A Swiss QR-bill
 
 ![A Swiss QR-bill](images/qr-bill.png)
 
@@ -54,7 +54,7 @@ __Example 3: Validate and build barcode value__
 
 Invoking the code from **Example 3** will generate the following result:
 
-__Figure 2: The generated Swiss Barcode__
+>caption The generated Swiss barcode
 
 ![The generated Swiss Barcode](images/swiss-barcode.png)
 

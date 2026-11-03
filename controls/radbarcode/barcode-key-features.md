@@ -34,7 +34,7 @@ __Example 1__ shows a RadBarcode with the Code39 symbology applied.
 __Example 1: Code39 Symbology__
 <snippet id='radbarcode-barcode-key-features-example_1_code39_symbology-xaml' />
 
-__Figure 1: RadBarcode With 1D Code39 Symbology__
+>caption RadBarcode with 1D Code39 symbology
 
 ![Barcode Symbology](images/barcode_setsymbology_1.png)
 	
@@ -51,7 +51,7 @@ __Example 2__ shows the same Barcode with Manual SizingMode:
 __Example 2: Code39 SizingMode__
 <snippet id='radbarcode-barcode-key-features-example_2_code39_sizingmode-xaml' />
 
-__Figure 2: Barcode with Manual SizingMode__
+>caption Barcode with manual SizingMode
 
 ![Barcode SizingMode](images/barcode_sizingmode.png)
 
@@ -68,7 +68,8 @@ You could easily change the visual appearance of your Barcodes in order to match
 __Example 3: Changing the colors__
 <snippet id='radbarcode-barcode-key-features-example_3_changing_the_colors-xaml' />
 
-__Figure 3: Barcode With Customized Colors__
+>caption Barcode with customized colors
+
 ![Barcode Colors](images/barcode_colors.png)
 
 ## See Also

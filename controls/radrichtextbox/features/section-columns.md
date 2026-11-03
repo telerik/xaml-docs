@@ -18,7 +18,8 @@ With the Section Columns feature, **RadRichTextBox** allows you arrange the text
 
 * [Using Section Columns](#using-section-columns)
 
-__Figure 1: Text laid out in columns__
+>caption Text laid out in columns
+
 ![RadRichTextBox_Features_Section_Columns_01](images/RadRichTextBox_Features_Section_Columns_01.png)
 
 ## SectionColumn Class
@@ -60,7 +61,8 @@ The **SectionColumnCollection** class contains the information about the text co
 
 __Figure 2__ demonstrates the result of __Example 1__.
 
-__Figure 2: Columns with separator__
+>caption Columns with separator
+
 ![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
 
 
@@ -103,7 +105,8 @@ The **SectionColumnsLayout** enumeration could have the following values:
 <snippet id='radrichtextbox-features-section-columns-block_4-cs' />
 
 
-#### __Figure 3: SectionColumnsLayout.Left applied on a section__
+>caption SectionColumnsLayout.Left applied on a section
+
 ![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_03.png)
 
 >You can insert a column break at a specific position inside a section column. For more information, read [this article]({%slug radrichtextbox-features-document-elements-break%}).

@@ -53,7 +53,7 @@ To modify the appearance of each of the individual elements, you should first cr
 
 **Figure 1** displays the resulting dialog:
 
-#### Figure 1: RadOpenFileDialog with modified Custom Places Pane
+>caption RadOpenFileDialog with modified custom places pane
 
 ![RadOpenFileDialog with modified Custom Places Pane](images/FileDialogs_Modified_CustomPlacesPane.png)
 

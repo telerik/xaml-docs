@@ -27,7 +27,7 @@ __Using the custom RadHighlightTextBlock custom styled matches__
 <snippet id='radhighlighttextblock-custom-highlighttextblock-using_the_custom_radhighlighttextblock_custom_styled_matches-xaml' />
 
 
-__Custom RadHighlightTextBlock with custom styled matches__
+>caption Custom RadHighlightTextBlock with custom styled matches
 
 ![{{ site.framework_name }} Custom RadHighlightTextBlock with custom styled matches](images/radhighlighttextblock-custom-highlighttextblock-0.png)
 
@@ -45,6 +45,6 @@ __Using the custom RadHighlightTextBlock where the last item is removed__
 <snippet id='radhighlighttextblock-custom-highlighttextblock-using_the_custom_radhighlighttextblock_where_the_last_item_is_removed-xaml' />
 
 
-__RadHighlightTextBlock where the last match is omitted__
+>caption RadHighlightTextBlock where the last match is omitted
 
 ![{{ site.framework_name }} RadHighlightTextBlock where the last match is omitted](images/radhighlighttextblock-custom-highlighttextblock-1.png)

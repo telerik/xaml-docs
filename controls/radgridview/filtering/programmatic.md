@@ -41,7 +41,7 @@ __Example 1: Filtering single column programmatically__
 <snippet id='radgridview-filtering-programmatic-example_1_filtering_single_column_programmatically-vb' />
 
 
-#### __Figure 1: Pre-filtered RadGridView__
+>caption Pre-filtered RadGridView
 
 ![Telerik UI for {{ site.framework_name }} RadGridView programmatic filtering showing a pre-filtered grid](images/gridview_filtering_programmatic_01.png)
 
@@ -162,7 +162,7 @@ __Example 7: Creating a CompositeFilterDescriptor__
 
 So in the end you will get the following filtering criteria tree:
 
-#### __Figure 2: Filtering Criteria Tree Concept__
+>caption Filtering criteria tree concept
 
 ![Telerik UI for {{ site.framework_name }} RadGridView programmatic filtering criteria tree for age and country conditions](images/gridview_filtering_programmatic_02.png)
 
@@ -179,7 +179,7 @@ The lambda expression that you see inside the Where clause was build based upon 
 
 As you might have already guessed, the IColumnFilterDescriptor that is used for column filtering also uses these classes under the hood to construct its expression. Honoring the interface contract makes sure that you can only add things that can be displayed in the fixed layout filtering UI. Deep down inside, the IColumnFilterDescriptor looks something like this:
 
-#### __Figure 3: ColumnFilterDescriptor Tree__
+>caption ColumnFilterDescriptor tree
 
 ![Telerik UI for {{ site.framework_name }} RadGridView ColumnFilterDescriptor tree showing popup filtering criteria structure](images/gridview_filtering_programmatic_03.png)
 

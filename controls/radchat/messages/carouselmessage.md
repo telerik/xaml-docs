@@ -24,7 +24,8 @@ __Defining a CarouselMessage__
 <snippet id='radchat-features-messages-carouselmessage-example_1_defining_a_carouselmessage-cs' />
 
 
-__Defining CarouselMessage__
+>caption Defining CarouselMessage
+
 ![Defining CalendarMessage](images/RadChat_Messages_Carousel_01.png)
 
 ## See Also

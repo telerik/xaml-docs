@@ -13,7 +13,8 @@ position: 2
 
 __RadOpenFolderDialog__ is a modal dialog box that allows you to specify one or multiple folder names to open.
 
-__Figure 1: RadOpenFolderDialog in single selection mode__ 
+>caption RadOpenFolderDialog in single selection mode
+
 ![{{ site.framework_name }} RadFileDialogs RadOpenFolderDialog in single selection mode](images/radopenfolderdialog-01.png)
 
 ## Showing the Dialog
@@ -36,7 +37,8 @@ __Example 3: Enable multiple selection__
 <snippet id='radfiledialogs-dialog-controls-radopenfolderdialog-example_3_enable_multiple_selection-cs' />
 
 
-__Figure 2: Multiple selection__ 
+>caption Multiple selection
+
 ![{{ site.framework_name }} RadFileDialogs Multiple selection](images/radopenfolderdialog-02.png)
 
 ## Working with the Selected Folders

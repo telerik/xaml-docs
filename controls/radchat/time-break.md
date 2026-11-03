@@ -24,7 +24,8 @@ __Adding TimeBreak__
 <snippet id='radchat-features-time-break-example_2_adding_timebreak-cs' />
 
 
-__Adding a TimeBreak__
+>caption Adding a TimeBreak
+
 ![Adding a TimeBreak](images/RadChat_TimeBreak_01.png)
 
 ## Handling the AddingTimeBreak Event

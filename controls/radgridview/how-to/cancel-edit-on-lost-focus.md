@@ -30,7 +30,8 @@ __Example 1: Buttons Bound to RadGridView Commands__
 
 With the default behavior, once you edit a cell and click the "Cancel" button, the changes will be actually committed, because RadGridView loses focus prior to the command being executed.
 
-#### __Figure 1: RadGridView with default ActionOnLostFocus__
+>caption RadGridView with default ActionOnLostFocus
+
 ![Telerik UI for {{ site.framework_name }} RadGridView committing an edited cell when focus is lost before the Cancel button executes](images/action-on-lost-focus-commitedit.GIF)	
 
 To overcome this, you can simply set the ActionOnLostFocus property to **None**.
@@ -42,7 +43,8 @@ __Example 2: Set ActionOnLostFocus to None__
 
 This way the "Cancel" button will work as expected as illustrated on **Figure 2**.
 
-#### __Figure 2: RadGridView with ActionOnLostFocus set to None__
+>caption RadGridView with ActionOnLostFocus set to none
+
 ![Telerik UI for {{ site.framework_name }} RadGridView preserving edit state when ActionOnLostFocus is None so the Cancel button works](images/action-on-lost-focus-none.GIF)
 
 ## See Also

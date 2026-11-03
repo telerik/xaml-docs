@@ -35,7 +35,8 @@ __Example 4: Set DataContext of the MainWindow__
 
 If you run the application now, the RadMap should display the following structure:
 
-#### Figure 1: RadMap sample
+>caption RadMap sample
+
 ![Telerik Callout Map Integration 0](images/callout_howto_map_integration_1.png)
 
 Now to show the RadCallout when the PushPin map element is clicked, we can subscribe to the SelectionChanged event of the VisualizationLayer. In the event handler, we can get the FrameworkElement container that holds the map element and use it as a placement target element for the RadCallout.
@@ -50,5 +51,6 @@ __Example 6:__
 
 And we are ready. When you run the example, click on one of the visible PushPin elements on the map to see the name of the city and its location.
 
-#### Figure 2: RadCallout integrated in RadMap
+>caption RadCallout integrated in RadMap
+
 ![Telerik Callout Map Integration 0](images/callout_howto_map_integration_2.png)

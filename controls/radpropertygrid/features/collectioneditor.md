@@ -113,11 +113,11 @@ Modifying the methods will result in the following action when trying to move to
 
 >important **The business object should expose a default constructor in order to have the "Add" button enabled.**
 
-#### **Figure 1: CollectionEditor bound to a collection that supports add/remove functionalities**
+>caption CollectionEditor bound to a collection that supports add/remove functionalities
 
 ![CollectionEditor bound to a collection that supports add/remove functionalities](images/CollectionEditor_AddRemove_Enabled.png)
 
-#### **Figure 2: CollectionEditor bound to a collection that does not support add/remove functionalities**
+>caption CollectionEditor bound to a collection that does not support add/remove functionalities
 
 ![CollectionEditor bound to a collection that does not support add/remove functionalities](images/CollectionEditor_AddRemove_Disabled.png)
 

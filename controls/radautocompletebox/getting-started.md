@@ -70,9 +70,10 @@ __Example 3: Customize the RadAutoCompleteBox__
 
 <snippet id='radautocompletebox-getting-started-example_3_customize_the_radautocompletebox-cs' />
 
-**Figure 1** illustrates the result from the code in **Example 3**.
+The following image illustrates the result from the code in **Example 3**.
 
-__Figure 1: Customized RadAutoCompleteBox__
+>caption Customized RadAutoCompleteBox
+
 ![Customized RadAutoCompleteBox](images/radautocompletebox-customization.png)
 
 ## Set a Theme
@@ -96,9 +97,10 @@ __Example 4: Merge the ResourceDictionaries__
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 
-__Figure 2__ shows a __RadAutoCompleteBox__ with the **Office2016** theme applied.
+The following image shows a __RadAutoCompleteBox__ with the **Office2016** theme applied.
 	
-__Figure 2: RadAutoCompleteBox with the Office2016 theme__
+>caption RadAutoCompleteBox with the Office2016 theme
+
 ![RadAutoCompleteBox with Office2016 theme](images/radautocompletebox-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

@@ -55,7 +55,8 @@ __Example 5: Populating the source with 4 million items and setting the heatmap 
 <snippet id='radheatmap-howto-create-custom-heatmap-source-example_5_populating_the_source_with_4_million_items_and_setting_the_heatmap_definition-vb' />
 
 
-#### __Figure 1: HeatMap with 4 million cells__
+>caption HeatMap with 4 million cells
+
 ![{{ site.framework_name }} RadHeatMap HeatMap with 4 million cells](images/radheatmap-how-to-custom-heatmap-source-0.png)
 
 > The implementation shown in this example is merely a proof of concept. The main idea of the article is to show you the entry point that you can use in order to create a custom source and use it with the RadHeatMap control.

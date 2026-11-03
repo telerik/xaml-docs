@@ -22,10 +22,13 @@ In order to enable a smart label strategy in a __RadCartesianChart__ you can uti
 <snippet id='radchartview-features-labels-smart-labels-block_1-xaml' />
 
 
-Let's say that you have line series with large number of data points and visualized labels:
+Let's say that you have line series with large number of data points and visualized labels:
 
-![Telerik UI for WPF RadChartView line series with overlapping labels before smart labels are enabled](images/radchartview-disabled-smart-labels.png)
-
+
+![Telerik UI for WPF RadChartView line series with overlapping labels before smart labels are enabled](images/radchartview-disabled-smart-labels.png)
+
+
+
 As you can see the labels are hard to read in such cases. The smart label strategy is designed to improve the readability of the labels. Once enabled, the labels will be rearranged so that each label is clearly visible.
 
 ![Telerik UI for WPF RadChartView line series with rearranged labels after smart labels are enabled](images/radchartview-enabled-smart-labels.png)

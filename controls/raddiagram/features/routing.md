@@ -22,7 +22,8 @@ __Example 1: Setting RouteConnections property in XAML__
 <snippet id='raddiagram-features-routing-example_1_setting_routeconnections_property_in_xaml-xaml' />
 
 
-__Figure 1: Default routing__
+>caption Default routing
+
 ![raddiagram-features-routing 0](images/raddiagram-features-routing1_New.png)
 
 If you want to __exclude/include__ a connection from the routing process, you can use the __Route__ property of the __RadDiagramConnection__. Using the code above we will exclude the second connection from the routing by setting its __Route__ property to __False__.
@@ -31,7 +32,8 @@ __Example 2: Setting Route property to False__
 <snippet id='raddiagram-features-routing-example_2_setting_route_property_to_false-xaml' />
 
 
-__Figure 2: Route property set to False__
+>caption Route property set to false
+
 ![raddiagram-features-routing 1](images/raddiagram-features-routing2_New.png)	
 	
 >Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.		  
@@ -71,7 +73,8 @@ __Example 4: Specifing RadDiagram in XAML__
 
 __Figure 3__ demonstrate these shapes after TreeDown Layout operation performed on the Diagram.
 
-__Figure 3: TreeDown Layout__
+>caption TreeDown layout
+
 ![raddiagram-features-routing 2](images/raddiagram-features-routing3.png)
 
 The OrgTreeRouter is used in our __ClassDiagram__ and __OrgChart__ samples of RadDiagram.
@@ -98,7 +101,8 @@ On a button's click event handler we will perform 3 base steps:
 
 Here is a possible result in Windows8 theme:
 
-__Figure 4: TreeLayoutType set to TipOverTree__
+>caption TreeLayoutType set to TipOverTree
+
 ![raddiagram-features-routing 3](images/raddiagram-features-routing4.png)
 
 ## AStarRouter
@@ -111,7 +115,8 @@ As the name suggest this is a connection router that uses a version of the [A* s
 
 * __DiagramConstants.RoutingGridSize__: A property of type double that gets or sets the routing grid size.
 
-#### __Figure 5: Setting RoutingGridSize property__
+>caption Setting RoutingGridSize property
+
 ![AStarRouter](images/radidiagram-features-AStarRouter.png)
 
 * __DiagramConstants.RouterInflationValue__: A properly of type double that gets or sets the size of the restricted area around the shapes.
@@ -120,7 +125,8 @@ As the name suggest this is a connection router that uses a version of the [A* s
 
 * __AvoidShapes__: Boolean property controlling the logic that makes the connections go around the shapes. This property is __True__ by default.
 
-#### __Figure 6: Setting AvoidShapes property__
+>caption Setting AvoidShapes property
+
 ![AStarRouter](images/radidiagram-features-AStarRouter2.png)
 
 * __WallOptimization__: Boolean property controlling router optimization logic. If you set this property to __True__ the router will try to optimize some of the steps so that there are the least corners. 
@@ -129,7 +135,8 @@ With the __R1 2019__ version of __Telerik UI for WPF__, several properties were 
 
 * __AvoidConnectionOverlap__: Boolean property that gets or sets a value which indicates whether the routing algorithm should try to minimize connection overlaps. The default value is False.
 
-#### __Figure 7: Setting AvoidConnectionOverlap property__
+>caption Setting AvoidConnectionOverlap property
+
 ![AvoidConnectionOverlap property](images/raddiagram-features-routing5.png)
 
 * __SegmentOverlapPenalty__: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. Decreasing the value close to 0, the connections behavior will become very close to when __AvoidConnectionOverlap__ is set to __False__. The connections will start to cross each other. At another hand increasing this property, the connections might start to cross a given shape (avoiding connection will be with higher priority than avoiding a shape). There is no strict number when one is more important than the other. It dependents on the concrete 
@@ -139,7 +146,8 @@ scenario. The default value is __0.5__.
 
 * __StartOrEndShapeWallPenalty__: A property of type double that indicates the penalty value for a connection which crosses its start or end shape. When decreasing this value, paths crossing the start/end shape become more likely to be chosen from the AStar algorithm for finding the optimal path. The default value is __3__.
 
-#### __Figure 8: Setting StartOrEndShapeWallPenalty property__
+>caption Setting StartOrEndShapeWallPenalty property
+
 ![StartOrEndShapeWallPenalty property](images/raddiagram-features-routing6.png)
 
 * __SegmentOverlapDistance__: A property of type double that gets or sets the surrounding area of a segment in which an overlap is detected. This property require __AvoidConnectionOverlap__ to be set to __True__.

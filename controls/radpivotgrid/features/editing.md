@@ -15,7 +15,7 @@ As of **R1 2018**, the **RadPivotGrid** control allows you to implement your cus
 
 >important Please note that the API only provides a visual representation for the editing operation but the actual process should be handled entirely by the developer.
 
-#### Figure 1: RadPivotGrid with custom editing and validation
+>caption RadPivotGrid with custom editing and validation
 
 ![Custom editing with validation](images/pivot-editing.gif)
 

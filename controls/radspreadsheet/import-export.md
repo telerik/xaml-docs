@@ -76,7 +76,8 @@ __Export an XLSX Document__
 
 Through the UI of RadSpreadsheet you can enable the end user to open and save documents. Clicking the Open or Save button in the File menu of RadSpreadsheetRibbon opens the Open/Save File dialog and lets the user to choose the file they would like to open or, respectively, the location they would like to save to.
 
-__Open and Save Buttons in the File Menu__
+>caption Open and save buttons in the file menu
+
 ![{{ site.framework_name }} RadSpreadsheet Open and Save buttons in the File menu](images/RadSpreadsheet_ImportExport_01.png)
 
 

@@ -22,7 +22,8 @@ __Example 1: Creating a style targeting VisualCue__
 <snippet id='raddocking-styles-and-templates-styling-the-visual-cue-example_1_creating_a_style_targeting_visualcue-xaml' />
 
 
-#### __Figure 1: RadDocking with styled VisualCue in the Office2016 theme__
+>caption RadDocking with styled VisualCue in the Office2016 theme
+
 ![RadDocking with styled VisualCue](images/RadDocking_VisualCue_Style.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

@@ -19,7 +19,8 @@ This article shows how to create a sample .NET application using __RadEntityFram
 
 Start Visual Studio 2019 (or newer), select "Create a new project" and choose WPF App (.NET Core).
 
-__Figure 1: WPF .NET Application__
+>caption WPF .NET application
+
 ![{{ site.framework_name }} (.NET Core) Application](images/entityframeworkcoredatasource-create-new-project.png)
 
 ## Adding Telerik Assemblies Using NuGet
@@ -43,7 +44,8 @@ If you are not using NuGet packages, you can add a reference to the following as
 	* __.NET 6__&mdash;EFCore version __6.0.9__
 	* __.NET 7__&mdash;EFCore version __7.0.0__
 	
-	__Figure 2: NuGet Packages__
+>caption NuGet packages
+
 	![NuGet Packages](images/entityframeworkcoredatasource-nugets.png)
 	
 We will also add the needed Telerik references.

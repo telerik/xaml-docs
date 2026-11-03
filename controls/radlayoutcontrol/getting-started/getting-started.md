@@ -51,7 +51,8 @@ __Example 1: Adding RadLayoutControl in XAML__
 	
 __RadLayoutControl__ doesn't display any content when it is not populated with items or layout groups, so at this point only the border of the control should be displayed on the screen.
 
-__Figure 1: Empty RadLayoutControl__
+>caption Empty RadLayoutControl
+
 ![{{ site.framework_name }} RadLayoutControl Empty RadLayoutControl](images/layoutcontrol-getting-started-01.png)
 
 ## Adding Items in the Control
@@ -62,7 +63,8 @@ __Example 2: Adding items in the RadLayoutControl.__
 <snippet id='radlayoutcontrol-getting-started-getting-started-example_2_adding_items_in_the_radlayoutcontrol-xaml' />
 
 
-__Figure 2: RadLayoutControl with few elements added__
+>caption RadLayoutControl with few elements added
+
 ![{{ site.framework_name }} RadLayoutControl RadLayoutControl with few elements added](images/layoutcontrol-getting-started-02.png)
 
 > By default the layout control and its groups are ordering their items with __horizontal orientation__. You can see how to change this in the [Orientation]({%slug radlayoutcontrol-features-orientation%}) help article.
@@ -73,7 +75,8 @@ __Example 3: Nesting LayoutControlGroups__
 <snippet id='radlayoutcontrol-getting-started-getting-started-example_3_nesting_layoutcontrolgroups-xaml' />
 
 
-__Figure 3: RadLayoutControl with nested groups__
+>caption RadLayoutControl with nested groups
+
 ![{{ site.framework_name }} RadLayoutControl RadLayoutControl with nested groups](images/layoutcontrol-getting-started-03.png)
 
 >important RadLayoutControl doesn't support data binding and setting its ItemsSource property will throw an exception (NotSupportedException).
@@ -94,7 +97,8 @@ __Example 4: Enabling the edit mode of the control__
 <snippet id='radlayoutcontrol-getting-started-getting-started-example_4_enabling_the_edit_mode_of_the_control-xaml' />
 
 	
-__Figure 4: The layout setup from Example 3 with one of the groups selected.__
+>caption The layout setup from example 3 with one of the groups selected.
+
 ![{{ site.framework_name }} RadLayoutControl The layout setup from Example 3 with one of the groups selected.](images/layoutcontrol-getting-started-04.png)
 
 > Read more about the edit mode in the [Edit the Layout]({%slug radlayoutcontrol-edit-the-layout%}) article.
@@ -107,7 +111,8 @@ __Example 5: Complete code example__
 <snippet id='radlayoutcontrol-getting-started-getting-started-example_5_complete_code_example-xaml' />
 
 
-__Figure 5: RadLayoutPanel example__  
+>caption RadLayoutPanel example
+
 ![{{ site.framework_name }} RadLayoutControl RadLayoutPanel example](images/layoutcontrol-getting-started-05.png)
 
 > You can switch between normal and edit mode of the control by setting its __IsInEditMode__ property.
@@ -137,7 +142,8 @@ __Example 6: Merge the ResourceDictionaries__
 
 __Figure 7__ shows a __RadLayoutControl__ with the **Windows8** theme applied.
 
-__Figure 7: RadLayoutControl with the Windows8 theme__
+>caption RadLayoutControl with the Windows8 theme
+
 ![RadLayoutControl with Windows8 theme](images/radlayoutcontrol-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

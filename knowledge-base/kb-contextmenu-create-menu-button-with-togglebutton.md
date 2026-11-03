@@ -52,7 +52,8 @@ __Define the ToggleButton and RadContextMenu__
 
 The `IsChecked` binding keeps the ToggleButton state synchronized with the RadContextMenu.IsOpen property.
 
-__RadContextMenu Menu Button__
+>caption RadContextMenu menu button
+
 ![WPF RadContextMenu menu button](images/kb-contextmenu-create-menu-button-with-togglebutton.png)
 
 ## See Also

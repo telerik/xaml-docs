@@ -46,7 +46,8 @@ The form fields in a document are preserved in its **AcroForm** property. You ca
 
 After filling the forms, you can save the document using the Save As command.  
 
-#### **Figure 1: Interactive form fields in RadPdfViewer**
+>caption Interactive form fields in RadPdfViewer
+
 ![{{ site.framework_name }} RadPdfViewer Interactive form fields in RadPdfViewer](images/PdfViewer_InteractiveForms_1.gif)
 
 ## See Also

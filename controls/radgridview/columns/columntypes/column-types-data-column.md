@@ -35,7 +35,7 @@ The `DataMemberBinding` property defines which property from the row's underlyin
 
 Via the __DataFormatString__ property you are able to format the bound data and display it the way you want. **Figure 1** shows a **DateTime** column with custom formatting.
 
-#### __Figure 1: GridViewDataColumn with custom formatting__
+>caption GridViewDataColumn with custom formatting
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewDataColumn with custom DateTime formatting](images/RadGridView_ColumnTypes_0.png)
 

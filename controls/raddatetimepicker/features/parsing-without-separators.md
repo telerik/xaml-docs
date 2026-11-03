@@ -29,7 +29,8 @@ __Example 2: Setting the AllowParsingWithoutSeparator in code__
 
 __Figure 1__ shows how the entered text is handled in both cases. In the first case the text is parsed as a month and day while in the second case - as a year, since no separators are entered.
 
-#### __Figure 1: DateTime parsing__
+>caption DateTime parsing
+
 ![datetimeparsing allowparsing](images/datetimeparsing_allowparsing.png)
 
 ## Parsing the Date part

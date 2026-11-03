@@ -69,9 +69,9 @@ For more details about the available localization NuGet packages, see [Available
 
 ### Using Local Assemblies
 
-Alternatively, you can place the resource folders along with the binaries you have referenced as shown in **Figure 1**.
+Alternatively, you can place the resource folders along with the binaries you have referenced, as shown in the following image.
 
-#### __Figure 1: Placing the resource folders in your project__
+>caption Placing the resource folders in your project
 
 ![Telerik UI for WPF localization resource folders added to a project](images/Common_Localization_050.PNG)
 
@@ -96,7 +96,7 @@ __Setting the current culture of the application__
 
 That's it. Your controls should now be localized in the preferred language.
 
-#### __Figure 2: RadGridView localized in German__
+>caption RadGridView localized in German
 
 ![Telerik UI for WPF RadGridView localized in German](images/Common_Localization_070.png)
 
@@ -104,9 +104,9 @@ That's it. Your controls should now be localized in the preferred language.
 
 Some of the controls are complex user interface controls (e.g., __RadGridView__, __RadScheduleView__) and their strings for localization are numerous. In order to be able to distinguish these resources, a unique identifier called __resource key__ is assigned to each localizable string.
 
-In Figure 3 you can see some resource keys and the strings they are associated with.
+The following image shows some resource keys and the strings they are associated with.
 
-__Figure 3: Some of RadGridView's resource keys and their values__
+>caption Some of RadGridView's resource keys and their values
 
 ![Telerik UI for WPF RadGridView resource keys and localized strings](images/Common_Localization_060.png)
 
@@ -126,8 +126,8 @@ Imagine that you want to translate your control, RadGridView for example, into E
           
 * __GridViewResources.nl.resx__ - this resource file will store the __Dutch__ resources for the grid control. Set the __AccessModifier__ property to __No code generation__.
 
-__Figure 4: Creating separate .resx files for each of the supported languages__
-          
+>caption Creating separate .resx files for each of the supported languages
+
 ![Telerik UI for WPF localized resource files created for multiple languages](images/Common_Localization_030.png)
 
 Now that you have the needed files, it's time to localize only the text for the group panel. For that purpose, you need to create a single resource string in each one of the three resource files and translate it to the appropriate language.
@@ -136,9 +136,9 @@ Now that you have the needed files, it's time to localize only the text for the 
           
 >tip For a full list of __resource keys__, check out the __Localization__ topic for the specific control.
 
-Figure 5 shows the content of the __GridViewResources.de.resx__ file. The resource __Name__ (**GridViewGroupPanelText**) of the other two files should be the same. The __Value__ column will contain the translation for the appropriate language.
+The following image shows the content of the __GridViewResources.de.resx__ file. The resource __Name__ (**GridViewGroupPanelText**) of the other two files should be the same. The __Value__ column will contain the translation for the appropriate language.
 
-__Figure 5: The content of GridViewResources.de.resx__
+>caption The content of GridViewResources.de.resx
 
 ![Telerik UI for WPF German resource file with a translated RadGridView resource value](images/Common_Localization_040.png)
 

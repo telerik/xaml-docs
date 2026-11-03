@@ -13,7 +13,8 @@ position: 2
 
 Telerik __RadDiagrams__ are a powerful diagramming framework that can bring to life your rich data-visualization scenarios. This tutorial will walk you through the main concepts and tools of the diagramming framework and help you to create the flow diagram of an "if-else" operator.
 
-__Figure 1: Flow diagram example__  
+>caption Flow diagram example
+
 ![Rad Diagram Getting Started Sample](images/RadDiagram_GettingStartedSample.png)
 
 ## Adding Telerik Assemblies Using NuGet
@@ -41,7 +42,8 @@ To use the RadDiagram [MVVM support]({%slug raddiagram-data-extensionsviewmodels
 
 The following picture shows the interdependency between the RadDiagram main assemblies. Note that the Telerik.Windows.Controls.Diagrams.Extensions relies also on Telerik.Windows.Controls.Input and Telerik.Windows.Controls.Navigation.
 
-__Figure 2: Interdependency of the RadDiagram control main assemblies__  
+>caption Interdependency of the RadDiagram control main assemblies
+
 ![Rad Diagram Getting Started Dependancies](images/RadDiagram_GettingStarted_Dependancies.png)
 
 >tip You can find more info about the __Telerik UI for WPF__ dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
@@ -70,7 +72,8 @@ __Example 1: Adding RadDiagram in XAML__
 <snippet id='raddiagram-getting-started-example_1_adding_raddiagram_in_xaml-xaml' />
 
 
-__Figure 3: Default drawing canvas:__  
+>caption Default drawing canvas
+
 ![Rad Diagram Getting Started](images/RadDiagram_GettingStarted.png)
 
 > __RadDiagram__ exposes a set of properties that allow you to customize the graph layout and operations. For example, you can set up the active mouse tool, specify if a cut, copy, paste or delete operation is allowed, and customize the background color, the cells' height and width as well as the __GridLine__ thickness of the drawing canvas.		  
@@ -87,7 +90,8 @@ __Example 2: Adding RadDiagramShape in XAML__
 <snippet id='raddiagram-getting-started-example_2_adding_raddiagramshape_in_xaml-xaml' />
 
 
-__Figure 4: DecisionShape default visual look__  
+>caption DecisionShape default visual look
+
 ![Rad Diagram Getting Started Decision Shape](images/RadDiagram_GettingStarted_DecisionShape.png)
 
 You can define the size of the shape and set its __Content__ and __x:Name__ properties to better describe it.		
@@ -96,7 +100,8 @@ __Example 3: Customize DecisionShape in XAML__
 <snippet id='raddiagram-getting-started-example_3_customize_decisionshape_in_xaml-xaml' />
 
 
-__Figure 5: Customized DecisionShape visual look__  
+>caption Customized DecisionShape visual look
+
 ![Rad Diagram Getting Started Decision Shape Cont](images/RadDiagram_GettingStarted_DecisionShapeCont.png)
 
 To describe the statements of the "if-else" operator you can use the default geometry of the __RadDiagramShape__.		
@@ -105,7 +110,8 @@ __Example 4: Setting default geometry of the RadDiagramShape in XAML__
 <snippet id='raddiagram-getting-started-example_4_setting_default_geometry_of_the_raddiagramshape_in_xaml-xaml' />
 
 
-__Figure 6: RadDiagramShapes without its Position property set__  
+>caption RadDiagramShapes without its position property set
+
 ![Rad Diagram Getting Started Diagram Shape](images/RadDiagram_GettingStarted_DiagramShape.png)
 
 Adding multiple shapes in the __RadDiagram__ without setting their position, by default, will position all shapes at the top left corner of the drawing canvas. In order to rearrange their layout, you need to set the __Position__ property of each shape. This property is of type __Point__ and it gets or sets the coordinates of the top left point of a shape.		
@@ -114,7 +120,8 @@ __Example 5: Set the Position property in XAML__
 <snippet id='raddiagram-getting-started-example_5_set_the_position_property_in_xaml-xaml' />
 
 
-__Figure 7: RadDiagramShape with its Position property set__  
+>caption RadDiagramShape with its position property set
+
 ![Rad Diagram Getting Started Position Shapes](images/RadDiagram_GettingStarted_PositionShapes.png)
 
 To describe the final result of the operator you can use an ellipse shape. __Telerik Diagramming Framework__ provides such a predefined shape. You can find a shape of type __EllipseShape__ in the __CommonShape__ extension class.		
@@ -123,7 +130,8 @@ __Example 6: Declaring EllipseShape in XAML__
 <snippet id='raddiagram-getting-started-example_6_declaring_ellipseshape_in_xaml-xaml' />
 
 
-__Figure 8: Customized EllipseShape look__  
+>caption Customized EllipseShape look
+
 ![Rad Diagram Getting Started Start Shape](images/RadDiagram_GettingStarted_StartShape.png)
 
 >tip The __RadDiagramItem__ class exposes __ContentTemplate__ and __ContentTemplateSelector__ properties that allow you to customize the content of the __RadDiagramShapes__ and __RadDiagramConnections__.		  
@@ -134,7 +142,7 @@ __Example 7: Customize EllipseShape in XAML__
 <snippet id='raddiagram-getting-started-example_7_customize_ellipseshape_in_xaml-xaml' />
 
 
-__Figure 9: Customized EllipseShape__
+>caption Customized EllipseShape
 
 ![Rad Diagram Getting Started Shapes](images/RadDiagram_GettingStartedShapes.png)
 
@@ -152,7 +160,8 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 	<snippet id='raddiagram-getting-started-example_8_adding_raddiagramconnection_in_xaml-xaml' />
 
 
-	__Figure 10: RadDiagramConnection visual example__
+>caption RadDiagramConnection visual example
+
 	![Rad Diagram Getting Started Condition Connect](images/RadDiagram_GettingStartedConditionConnect.png)
 
 * Add connections between the 'statements' shape and the 'final result' shapes:		
@@ -161,7 +170,8 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 	<snippet id='raddiagram-getting-started-example_9_add_connection_between_shapes-xaml' />
 
 
-	__Figure 11: RadDiagramConnection visual example__
+>caption RadDiagramConnection visual example
+
 	![Rad Diagram Getting Started End Connection](images/RadDiagram_GettingStartedEndConnection.png)
 
 * Add the connection that points to the start of the operator:			
@@ -170,7 +180,8 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 	<snippet id='raddiagram-getting-started-example_10_setting_custom_datatemplate_to_raddiagramconnection-xaml' />
 
 	
-	__Figure 12: Customized RadDiagramConnection__
+>caption Customized RadDiagramConnection
+
 	![Rad Diagram Getting Started Start Connection](images/RadDiagram_GettingStartedStartConnection.png)
 
 ## RadDiagram Example - "if-else" Operator Flow Diagram
@@ -181,7 +192,8 @@ __Example 11: Final "if-else" flow diagram XAML__
 <snippet id='raddiagram-getting-started-example_11_final_if_else_flow_diagram_xaml-xaml' />
 
 
-__Figure 13: "if-else" operator flow diagram visual look__  
+>caption "if-else" operator flow diagram visual look
+
 ![Rad Diagram Getting Started Result](images/RadDiagram_GettingStartedResult.png)
 
 ## Setting a Theme
@@ -212,7 +224,8 @@ __Example 12: Merge the ResourceDictionaries__
 
 __Figure 14__ shows a __RadDiagram__ with the **Windows8** theme applied.
 
-__Figure 14: RadDiagram with the Windows8 theme__
+>caption RadDiagram with the Windows8 theme
+
 ![RadDiagram with Windows8 theme](images/raddiagram-setting-theme.png)
 
 

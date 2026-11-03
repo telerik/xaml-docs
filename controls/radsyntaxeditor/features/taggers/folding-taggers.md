@@ -15,7 +15,7 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 __Example 1: Registering a folding tagger__
 <snippet id='radsyntaxeditor-features-taggers-folding-taggers-block_1-cs' />
 
-#### Figure 1: RadSyntaxEditor with a registered CSharpFoldingTagger
+>caption RadSyntaxEditor with a registered CSharpFoldingTagger
 
 ![RadSyntaxEditor with a registered CSharpFoldingTagger](images/syntaxeditor-taggers-folding-taggers.png)
 

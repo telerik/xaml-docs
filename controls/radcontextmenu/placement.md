@@ -46,7 +46,8 @@ __Set the Placement__
 </TextBox>
 ```
 
-__RadContextMenu with Bottom Placement__
+>caption RadContextMenu with bottom placement
+
 ![WPF RadContextMenu with Placement Bottom](images/RadContextMenu_Features_Placement_01.png)
 
 ## Adjust the Menu Offset
@@ -63,7 +64,8 @@ __Set the Horizontal Offset__
                         HorizontalOffset="150" />
 ```
 
-__RadContextMenu with its HorizontalOffset property set__
+>caption RadContextMenu with its HorizontalOffset property set
+
 ![WPF RadContextMenu with its HorizontalOffset property set](images/RadContextMenu_KeyProperties_03.png)
 
 ### Set the Vertical Offset
@@ -98,7 +100,8 @@ __Set the Placement Rectangle__
 </TextBox>
 ```
 
-__RadContextMenu with a Placement Rectangle__
+>caption RadContextMenu with a placement rectangle
+
 ![WPF RadContextMenu with Placement Rectangle](images/RadContextMenu_Features_Placement_02.png)
 
 ## PlacementTarget
@@ -117,7 +120,8 @@ public MainWindow()
 }
 ```
 
-__RadContextMenu with a Placement Target__
+>caption RadContextMenu with a placement target
+
 ![WPF RadContextMenu with Placement Target](images/RadContextMenu_Features_Placement_01.png)
 
 The following table lists the placement values and their target points.
@@ -170,7 +174,8 @@ __Set the DropDownPlacement__
 </TextBox>
 ```
 
-__RadContextMenu with a Menu Item DropDownPlacement__
+>caption RadContextMenu with a menu item DropDownPlacement
+
 ![WPF RadContextMenu with Menu Item DropDownPlacement](images/RadContextMenu_Features_Placement_03.png)
 
 ## See Also  

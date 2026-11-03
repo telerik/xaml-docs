@@ -23,14 +23,16 @@ __Example 2: Defining the splitter in code__
 <snippet id='radlayoutcontrol-features-layout-splitter-example_2_defining_the_splitter_in_code-vb' />
 
 
-#### __Figure 1: LayoutControlSplitter__  
+>caption LayoutControlSplitter
+
 ![{{ site.framework_name }} RadLayoutControl LayoutControlSplitter](images/layoutcontrol-features-layout-splitter-01.png)
 
 >important The element that will be resized with the splitter is determined by the Orientation of its parent group. When the orientation is Horizontal, the splitter will resize its left sibling element and when Vertical - the top sibling will be resized.
 
 As any other UIElement the __LayoutControlSplitter__ element can be moved around in the layout control when in edit mode.
 
-#### __Figure 2: Dragging the layout splitter while the layout control is in edit mode__  
+>caption Dragging the layout splitter while the layout control is in edit mode
+
 ![{{ site.framework_name }} RadLayoutControl Dragging the layout splitter while the layout control is in edit mode](images/layoutcontrol-features-layout-splitter-02.png)
 	
 ## See Also

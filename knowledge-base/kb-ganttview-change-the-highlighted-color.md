@@ -121,6 +121,6 @@ __Setting the EventContainerExtensions.EventContainerHighlightBrush attached pro
     </Grid.Resources>
 ```
 
-__Windows 11 themed RadGanttView with different color for its highlighted items__
+>caption Windows 11 themed RadGanttView with different color for its highlighted items
 
 ![Windows 11 themed RadGanttView with different color for its highlighted items](images/kb-ganttview-change-the-highlighted-color-0.png)

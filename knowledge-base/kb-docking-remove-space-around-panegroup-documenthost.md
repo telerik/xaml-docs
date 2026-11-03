@@ -73,7 +73,7 @@ For the Fluent, Green, Material, Office2016 and Office2016Touch themes, the `Rad
 	</Style>
 ```
 
-#### Figure 1: DocumentHost with and without the default padding in the Crystal theme
+>caption DocumentHost with and without the default padding in the crystal theme
 
 ![DocumentHost with and without the default padding in the Crystal theme](images/kb-docking-remove-space-around-panegroup-documenthost.png)
 

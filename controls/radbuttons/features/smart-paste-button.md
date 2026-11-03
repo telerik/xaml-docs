@@ -32,8 +32,8 @@ When the user clicks the `RadSmartPasteButton`, it reads the text clipboard cont
   
   ```
   
-  __RadSmartPasteButton__
-  
+>caption RadSmartPasteButton
+
   ![WPF RadSmartPasteButton](images/radbuttons-features-smart-paste.png)
 
 2.  Add add a `RadDataForm` to display the fields that the button will populate. Add a **Copy to Clipboard** button to place unstructured text on the clipboard for the Smart Paste operation.

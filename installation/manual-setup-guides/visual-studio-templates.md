@@ -27,7 +27,7 @@ The [Project Configuration Wizard for Telerik UI for WPF]({%slug radcontrols-for
 
 When creating or configuring project using the [Telerik Visual Studio Extension]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}), select one of the predefined Telerik scenarios/templates.
 
-__Select Telerik template screen__
+>caption Select Telerik template screen
 
 ![Telerik UI for WPF Visual Studio project templates](images/Common_VisualStudio_Templates_01.png)
 
@@ -35,7 +35,7 @@ __Select Telerik template screen__
 
 The __Word-Inspired Template__ implements Word-like editing experience represented with the __Telerik UI for WPF__ controls. It provides a complex integration of controls like __RadRibbonWindow__, __RadRibbonView__ and __RadRichTextBox__ in an already set up example. It also demonstrates the broad range of editing and formatting capabilities as well as built in specific features of these controls. In fact the __Word-Inspired Template__ is almost identical to the RadRichTextBox' TelerikEditor example in our __[WPF demos](https://demos.telerik.com/wpf/)__, however it have been visually improved in order to look like the MS Word.
 
-__Word-Inspired Template__
+>caption Word-inspired template
 
 ![Telerik UI for WPF Visual Studio Word-Inspired template](images/Common_VisualStudio_Templates_04.png)
 
@@ -43,7 +43,7 @@ __Word-Inspired Template__
 
 The __Excel-Inspired Template__ implements Excel-like editing experience represented with the __Telerik UI for WPF__ controls. It provides a complex integration of controls like __RadRibbonWindow__, __RadRibbonView__ and __RadSpreadSheet__ in an already set up example. It also demonstrates the broad range of editing and formatting capabilities as well as built in specific features of these controls. In fact the __Word-Inspired Template__ is almost identical to the RadSpreadSheet' Theming example in our __[WPF demos](https://demos.telerik.com/wpf/)__, however it have been visually improved in order to look like the MS Word.
 
-__Excel-Inspired Template__
+>caption Excel-inspired template
 
 ![Telerik UI for WPF Visual Studio Excel-Inspired project template](images/Common_VisualStudio_Templates_05.png)
 
@@ -57,14 +57,16 @@ The template is designed with MVVM in mind which is why most of the events that 
 
 The Outlook-Inspired Mail Template can be used separately and it has been integrated as the mail part of the [Outlook-Inspired Template](#outlook-inspired-template). You can see it on __Figure 4__.
 
-__Figure 4: Outlook-Inspired Mail Template__
+>caption Outlook-inspired mail template
+
 ![Telerik UI for WPF Visual Studio Outlook-Inspired Mail template](images/Common_VisualStudio_Templates_03.png)
 
 ### Outlook-Inspired Calendar Template
 
 The Outlook-Inspired Calendar Template can be used separately and it has been integrated as the calendar part of the [Outlook-Inspired Template](#outlook-inspired-template). You can see how the template looks like on __Figure 5__.
 
-__Figure 5: Outlook-Inspired Calendar Template__
+>caption Outlook-inspired calendar template
+
 ![Telerik UI for WPF Visual Studio Outlook-Inspired Calendar template](images/Common_VisualStudio_Templates_02.png)
 
 ## See Also

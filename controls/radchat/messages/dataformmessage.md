@@ -22,7 +22,8 @@ __Defining a DataFormMessage__
 <snippet id='radchat-features-messages-dataformmessage-example_1_defining_a_dataformmessage-cs' />
 
 
-__Defining DataFormMessage__
+>caption Defining DataFormMessage
+
 ![Defining DataFormMessage](images/RadChat_Messages_DataForm_01.png)
 
 ## See Also

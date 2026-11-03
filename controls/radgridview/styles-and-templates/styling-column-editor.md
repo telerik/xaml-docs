@@ -39,7 +39,7 @@ __Example 2: Setting a column's EditorStyle__
 <snippet id='radgridview-styles-and-templates-styling-column-editor-example_2_setting_a_column_s_editorstyle-xaml' />
 
 
-#### __Figure 1: RadGridView with styled column edtior__
+>caption RadGridView with styled column edtior
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a styled column editor applied through EditorStyle](images/gridview-styled-column-edtior.png)
 

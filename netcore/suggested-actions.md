@@ -15,7 +15,7 @@ The WPF XAML Designer includes a **Suggested Actions** menu that is similar to t
 
 The Suggested Actions menu give you access to common properties of a control selected within the new WPF XAML Designer. To display the menu, click on a Telerik control in the designer and use the lightbulb icon to expand and interact with the Suggested Actions UI.
 
-__Suggested actions menu displayed on RadCallout control__  
+>caption Suggested actions menu displayed on RadCallout control
 
 ![WPF Suggested actions menu displayed on RadCallout control](images/netcore-suggested-actions-0.png)
 

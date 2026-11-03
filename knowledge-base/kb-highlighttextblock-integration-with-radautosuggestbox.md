@@ -112,6 +112,6 @@ __Set the custom DataTemplate to the ItemTemplate property of RadAutoSuggestBox_
 	                     ItemTemplate="{StaticResource HighlightTextBlockDataTemplate}"/>
 ```
 
-__RadAutoSuggestBox with RadHighlightTextBlock__
+>caption RadAutoSuggestBox with RadHighlightTextBlock
 
 ![{{ site.framework_name }} RadAutoSuggestBox with RadHighlightTextBlock](images/kb-highlighttextblock-integration-with-radautosuggestbox-0.png)

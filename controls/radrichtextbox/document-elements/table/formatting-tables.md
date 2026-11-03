@@ -28,7 +28,7 @@ The bellow code shows how you can create a table in the code behind and set its 
 
 <snippet id='radrichtextbox-document-elements-table-formatting-tables-block_2-vb' />
 
->caption Figure 1: Generate a table and set its borders and background
+>caption Generate a table and set its borders and background
 
 ![formatting-tables001](images/formatting-tables001.png)
 
@@ -42,6 +42,6 @@ __Example 2: Set the StyleName__
 <snippet id='radrichtextbox-document-elements-table-formatting-tables-block_3-cs' />
 <snippet id='radrichtextbox-document-elements-table-formatting-tables-block_4-vb' />
 
->caption Figure 2: Use predefined styles
+>caption Use predefined styles
 
 ![formatting-tables002](images/formatting-tables002.png)

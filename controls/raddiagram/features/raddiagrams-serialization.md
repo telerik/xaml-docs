@@ -31,7 +31,7 @@ __Save-Load logic__
 <snippet id='raddiagram-features-raddiagrams-serialization-save_load_logic-vb' />
 
 
-__RadDiagram Serialization__
+>caption RadDiagram serialization
 
 ![raddiagrams features serialization](images/raddiagrams_features_serialization.png)
 

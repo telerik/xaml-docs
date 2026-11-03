@@ -21,7 +21,8 @@ __Example 1: Defining series in XAML__
 <snippet id='radchartview3d-series-pointseries3d-example_1_defining_series_in_xaml-xaml' />
 
 	
-#### __Figure 1: PointSeries3D__
+>caption PointSeries3D
+
 ![{{ site.framework_name }} RadChartView3D PointSeries3D](images/radchartview-3d-pointseries3d-0.png)
 
 ## Data bound series

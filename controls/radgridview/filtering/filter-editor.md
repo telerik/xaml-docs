@@ -47,7 +47,7 @@ __Setting the filter editor position__
 <snippet id='radgridview-filtering-filter-editor-setting_the_filter_editor_position-xaml' />
 
 
-__Top positioned filter editor panel__  
+>caption Top positioned filter editor panel
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor panel positioned at the top of the grid](images/gridview-filter-editor-2.png)
 
@@ -55,7 +55,7 @@ __Top positioned filter editor panel__
 
 The filters can be enabled or disabled with the __Apply Filters CheckBox__. Deselecting the CheckBox will disable the filters and update the RadGridView's data view accordingly.
 
-__Enable/disable filters check box__
+>caption Enable/disable filters check box
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor with filtering disabled by clearing the Apply Filters check box](images/gridview-filter-editor-3.png)
 
@@ -73,7 +73,7 @@ __Enabling the column header context menu__
 <snippet id='radgridview-filtering-filter-editor-enabling_the_column_header_context_menu-xaml' />
 
 
-__Column header context menu__
+>caption Column header context menu
 
 ![Telerik UI for {{ site.framework_name }} RadGridView column header context menu with the Filter Editor option](images/gridview-filter-editor-4.png)
 
@@ -93,7 +93,7 @@ __Setting the EmptyFiltersContent property__
 <snippet id='radgridview-filtering-filter-editor-setting_the_emptyfilterscontent_property-xaml' />
 
 
-__Changed default empty filters text__
+>caption Changed default empty filters text
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor showing customized empty filters text](images/gridview-filter-editor-5.png)
 
@@ -101,7 +101,7 @@ __Setting the EmptyFiltersContentTemplate property__
 <snippet id='radgridview-filtering-filter-editor-setting_the_emptyfilterscontenttemplate_property-xaml' />
 
 
-__Changed default empty filters visual__
+>caption Changed default empty filters visual
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor showing customized empty filters content template](images/gridview-filter-editor-6.png)
 
@@ -154,7 +154,7 @@ __Setting the FilterPartsSpacing__
 <snippet id='radgridview-filtering-filter-editor-setting_the_filterpartsspacing-xaml' />
 
 
-__Increased spacing between the filter parts__
+>caption Increased spacing between the filter parts
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor with increased spacing between filter parts](images/gridview-filter-editor-7.png)
 
@@ -164,7 +164,7 @@ __Setting the CloseButtonVisibility__
 <snippet id='radgridview-filtering-filter-editor-setting_the_closebuttonvisibility-xaml' />
 
 
-__Hidden close button__  
+>caption Hidden close button
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor panel with the close button hidden](images/gridview-filter-editor-8.png)
 
@@ -174,7 +174,7 @@ __Enabling wrapping__
 <snippet id='radgridview-filtering-filter-editor-enabling_wrapping-xaml' />
 
 
-__Wrapped filter parts__  
+>caption Wrapped filter parts
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor panel with wrapped filter parts](images/gridview-filter-editor-9.png)
 
@@ -186,7 +186,7 @@ __Setting the filter editor dialog size__
 <snippet id='radgridview-filtering-filter-editor-setting_the_filter_editor_dialog_size-xaml' />
 
 
-__Filter editor dialog with customized size__
+>caption Filter editor dialog with customized size
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor dialog with customized width and height](images/gridview-filter-editor-10.png)
 
@@ -200,7 +200,7 @@ __Setting the backgrounds of the member and value filter parts__
 <snippet id='radgridview-filtering-filter-editor-setting_the_backgrounds_of_the_member_and_value_filter_parts-xaml' />
 
 
-__Customized FilterPart member and value backgrounds__  
+>caption Customized FilterPart member and value backgrounds
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor with customized member and value backgrounds for filter parts](images/gridview-filter-editor-11.png)
 
@@ -210,7 +210,7 @@ __Customizing the FilePart elements using the ContentTemplate__
 <snippet id='radgridview-filtering-filter-editor-customizing_the_filepart_elements_using_the_contenttemplate-xaml' />
 
 
-__Customized FilterPart content__  
+>caption Customized FilterPart content
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Filter Editor with a custom content template for FilterPart elements](images/gridview-filter-editor-11.png)
 

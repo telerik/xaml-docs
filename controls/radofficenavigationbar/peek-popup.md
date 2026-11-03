@@ -20,7 +20,7 @@ __Setting the IsPeekPopupEnabled property in code__
 <snippet id='radofficenavigationbar-peek-popup-block_2-cs' />
 <snippet id='radofficenavigationbar-peek-popup-block_2-vb' />
 
-__Displayed peek popup__
+>caption Displayed peek popup
 
 ![{{ site.framework_name }} Peek popup](images/officenavigationbar-peek-popup-0.png)
 
@@ -31,7 +31,7 @@ Each `RadOfficeNavigationBarItem` element allows you to customize the content th
 __Setting the peek popup content__
 <snippet id='radofficenavigationbar-peek-popup-block_3-xaml' />
 
-__Peek popup with custom content__
+>caption Peek popup with custom content
 
 ![{{ site.framework_name }} Peek popup with custom content](images/officenavigationbar-peek-popup-1.png)
 
@@ -44,7 +44,7 @@ The following example is based on the RadOfficeNavigationBarItem's implementatio
 __Customizing the appearance of the peek popup__
 <snippet id='radofficenavigationbar-peek-popup-block_4-xaml' />
 
-__Peek popup with custom style__
+>caption Peek popup with custom style
 
 ![{{ site.framework_name }} Peek popup with custom style](images/officenavigationbar-peek-popup-2.png)
 
@@ -55,7 +55,7 @@ The RadOfficeNavigationBarItem element allows you to apply a string format to th
 __Applying a string format to the peek popup content__
 <snippet id='radofficenavigationbar-peek-popup-block_5-xaml' />
 
-__Peek popup content with applied string format__
+>caption Peek popup content with applied string format
 
 ![{{ site.framework_name }} Peek popup content with applied string format](images/officenavigationbar-peek-popup-3.png)
 

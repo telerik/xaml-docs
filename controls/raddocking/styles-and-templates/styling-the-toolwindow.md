@@ -24,7 +24,8 @@ __Example 1: Creating an implicit style targeting ToolWindow__
 
 >important It is important for the implicit style targeting ToolWindow to be placed in the Application's Resources as shown in __Example 1__. This is due to the fact that the ToolWindows are in a separate visual tree from the MainWindow.
 
-#### __Figure 1: ToolWindow with disabled close button in the Office2016 theme__
+>caption ToolWindow with disabled close button in the Office2016 theme
+
 ![ToolWindow with disabled close button](images/RadDocking_ToolWindow_Style.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

@@ -27,7 +27,7 @@ __Setting the FormatString property__
 
 The placeholder symbol is the underscore displayed when the selection is empty and the text input is focused.
 
-__Default placeholder symbol__  
+>caption Default placeholder symbol
 
 ![Picture showing WPF RadDateRangePicker default placeholder](images/raddaterangepicker-text-input-formatting-1.png)
 
@@ -37,7 +37,8 @@ __Setting the Placeholder property__
 <snippet id='raddaterangepicker-formatting-text-input-setting_the_placeholder_property-xaml' />
 
 
-__Custom placeholder symbol__  
+>caption Custom placeholder symbol
+
 ![Picture showing WPF RadDateRangePicker with custom placeholder](images/raddaterangepicker-text-input-formatting-2.png)
 
 ## Changing the Separator Between the Dates
@@ -48,7 +49,8 @@ __Setting the Separator property__
 <snippet id='raddaterangepicker-formatting-text-input-setting_the_separator_property-xaml' />
 
 
-__Custom separator__  
+>caption Custom separator
+
 ![Picture showing WPF RadDateRangePicker with custom separator](images/raddaterangepicker-text-input-formatting-3.png)
 
 ## Setting Date Pattern
@@ -59,8 +61,8 @@ __Setting the Separator property__
 <snippet id='raddaterangepicker-formatting-text-input-setting_the_separator_property-xaml' />
 
 
-__Custom date patterns__   
-  
+>caption Custom date patterns
+
 ![Picture showing WPF RadDateRangePicker with custom date pattern](images/raddaterangepicker-text-input-formatting-4.png)
 
 The `DatePattern` doesn't support formats for abbreviated days (ddd, dddd) and months (MMM, MMMM).

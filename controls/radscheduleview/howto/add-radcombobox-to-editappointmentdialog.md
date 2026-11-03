@@ -45,7 +45,8 @@ __Example 3: Applying the custom dialog style__
 __Example 4: Setting the view model__
 <snippet id='radscheduleview-howto-add-radcombobox-to-editappointmentdialog-block_4-cs' />
 
-#### Figure 1: Edit appointment dialog with an additional combobox for the Location of the appointment.
+>caption Edit appointment dialog with an additional combobox for the location of the appointment.
+
 ![{{ site.framework_name }} RadScheduleView Edit appointment dialog with an additional combobox for the Location of the appointment.](images/scheduleview-howto-add-radcombobox-to-editappointmentdialog-0.png)
 
 ## See Also

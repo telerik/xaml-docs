@@ -29,7 +29,8 @@ The linear gauges have the following color properties.
 
 __Figure 1__ demonstrates how these properties affect the control.
 
-__Figure 1: Customized RadVerticalLinearGauge control__
+>caption Customized RadVerticalLinearGauge control
+
 ![{{ site.framework_name }} RadGauge Customized RadVerticalLinearGauge control](images/gauge-styles-and-templates-backrounds-borders-01.png)
 
 > The example demonstrates only the RadVerticalLinearGauge but all linear gauges can be customized using the properties above.
@@ -48,7 +49,8 @@ The radial gauges have the following color properties.
 
 __Figure 2__ demonstrates how these properties affect the control.
 
-__Figure 2: Customized RadRadialGauge control__
+>caption Customized RadRadialGauge control
+
 ![{{ site.framework_name }} RadGauge Customized RadRadialGauge control](images/gauge-styles-and-templates-backrounds-borders-02.png)
 
 You can also customize the __RadialScale’s__ colors using its __Fill__, __Stroke__ and __StrokeThickness__ properties.
@@ -57,7 +59,8 @@ You can also customize the __RadialScale’s__ colors using its __Fill__, __Stro
 * __Stroke__: Gets or sets a brush that describes the stroke of the scale
 * __StrokeThickness__: Gets or sets the thickness of the scale’s stroke
 
-__Figure 3: Customized RadialScale__
+>caption Customized RadialScale
+
 ![{{ site.framework_name }} RadGauge Customized RadialScale](images/gauge-styles-and-templates-backrounds-borders-03.png)
 
 > The example demonstrates only the RadRadialGauge but all radial gauges can be customized using the properties above.

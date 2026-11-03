@@ -66,7 +66,8 @@ __Example 3: Creating the data and setting the ItemsSource__
 <snippet id='radheatmap-getting-started-example_3_creating_the_data_and_setting_the_itemssource-cs' />
 
 
-#### __Figure 1: RadHeatMap__
+>caption RadHeatMap
+
 ![{{ site.framework_name }} RadHeatMap RadHeatMap](images/radheatmap-getting-started-0.png)
 
 ## Colorization

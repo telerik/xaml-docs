@@ -21,7 +21,8 @@ __Example 1: Setting up LayoutControlGroup__
 <snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolgroup-example_1_setting_up_layoutcontrolgroup-xaml' />
 
 
-#### __Figure 1: LayoutControlGroup__
+>caption LayoutControlGroup
+
 ![{{ site.framework_name }} RadLayoutControl LayoutControlGroup](images/layoutcontrol-features-layoutcontrolgroup-01.png)
 
 You can add __LayoutControlGroup__ into another layout group (see __Example 2__).
@@ -30,7 +31,8 @@ __Example 2: Nesting LayoutControlGroups__
 <snippet id='radlayoutcontrol-features-layoutgroups-layoutcontrolgroup-example_2_nesting_layoutcontrolgroups-xaml' />
 
 
-#### __Figure 2: Nested LayoutControlGroups__
+>caption Nested LayoutControlGroups
+
 ![{{ site.framework_name }} RadLayoutControl Nested LayoutControlGroups](images/layoutcontrol-features-layoutcontrolgroup-02.png)	
 
 ## See Also

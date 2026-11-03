@@ -18,18 +18,21 @@ The __Icon__ property gets or sets the icon of the __RadOutlookBarItem__ when it
 __Example 1: Setting Icon Property__
 <snippet id='radoutlookbar-features-icons-block_1-xaml' />
 
-#### __Figure 1 : Icon Property Result__
+>caption Icon property result
+
 ![outlookbar icons 01](images/outlookbar_features_icons_01.png)
 
 The __SmallIcon__ property gets or sets the icon of the __RadOutlookBarItem__ when it is in the  [minimized area]({%slug radoutlookbar-visual-structure%}) or when it is in the __ItemDropDownContent__. The __ItemDropDownContent__ is the content of the pop up which is opened after you click the [overflow button]({%slug radoutlookbar-visual-structure%}) located in the lower right corner of the __RadOutlookBar__.
 
-#### __Figure 2 : Setting SmallIcon property__
+>caption Setting SmallIcon property
+
 ![outlookbar icons 02](images/outlookbar_features_icons_02.png)
 
 __Example 2: Setting IconMargin Property__
 <snippet id='radoutlookbar-features-icons-block_2-xaml' />
 
-#### __Figure 3: IconMargin Property Result__
+>caption IconMargin property result
+
 ![outlookbar icons 03](images/outlookbar_features_icons_03.png)
 
 >tip You can see how to bind the icon properties to e property of a business object in the [Data Binding example in the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/OutlookBar/DataBinding).

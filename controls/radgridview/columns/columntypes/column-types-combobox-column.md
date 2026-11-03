@@ -29,7 +29,7 @@ Here is a list of the most important properties:
         
 The following example assumes that you have data as shown in the below image:
 
-__Sample data structure of RadGridView:__
+>caption Sample data structure of RadGridView
 
 ![Telerik UI for WPF RadGridView sample data structure for a GridViewComboBoxColumn ItemsSource](images/RadGridView_ColumnTypes_1.png)
 
@@ -59,7 +59,7 @@ __Configure DisplayMemberPath and SelectedValuePath properties in code__
 <snippet id='radgridview-columns-columntypes-column-types-combobox-column-configure_displaymemberpath_and_selectedvaluepath_properties_in_code-cs' />
 
 
-__ComboBoxColumn after setting DisplayMemberPath and SelectedValuePath properties__
+>caption ComboBoxColumn after setting DisplayMemberPath and SelectedValuePath properties
 
 ![Telerik UI for WPF RadGridView GridViewComboBoxColumn configured with DisplayMemberPath and SelectedValueMemberPath](images/RadGridView_ColumnTypes_2.png)
 
@@ -69,7 +69,7 @@ You can download a runnable project of the previous example from our online SDK 
       
 The next example shows how to use `ItemsSourceBinding`. It allows you to bind the `ItemsSource` of RadComboBox editor to a collection held by the data item. In this way, you are able to specify different sets of items depending on the entire content of the respective row. The example assumes that you have the data shown in the following image:
 
-__Sample data structure of RadGridView__
+>caption Sample data structure of RadGridView
 
 ![Telerik UI for WPF RadGridView sample team data bound to a GridViewComboBoxColumn with ItemsSourceBinding](images/RadGridView_ColumnTypes_3.png)
 
@@ -81,11 +81,11 @@ __Configure GridViewComboBoxColumn with ItemsSourceBinding__
 
 The next images show the result of configuring the ItemsSourceBinding property.
 
-__Appearance after setting ItemsSourceBinding property__
+>caption Appearance after setting ItemsSourceBinding property
 
 ![Telerik UI for WPF RadGridView GridViewComboBoxColumn displaying values from ItemsSourceBinding](images/RadGridView_ColumnTypes_4.png)
 
-__Appearance after setting ItemsSourceBinding property.__
+>caption Appearance after setting ItemsSourceBinding property.
 
 ![Telerik UI for WPF RadGridView GridViewComboBoxColumn editor populated through ItemsSourceBinding](images/RadGridView_ColumnTypes_5.png)
 
@@ -111,7 +111,7 @@ __Configure GridViewComboBoxColumn with ItemTemplate__
 
 The multi-column ComboBoxColumn in this example will have two columns showing the ID and Name of the City respectively. When you run the example, Figure 6 shows the result when the customer tries to edit in a column.
 
-__Multi-select GridViewColumnComboBox column in RadGridView__
+>caption Multi-select GridViewColumnComboBox column in RadGridView
 
 ![Telerik UI for WPF RadGridView GridViewComboBoxColumn with a multi-column item template showing city ID and name](images/gridview_multi_column_combo.png)
 

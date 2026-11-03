@@ -41,7 +41,7 @@ __Example 2: Define navigate url without additional format.__
 <snippet id='radgridview-columns-columntypes-column-types-dynamic-hyperlink-column-example_2_define_navigate_url_without_additional_format-xaml' />
 
 
-__Figure 1: GridViewDynamicHyperlinkColumn in RadGridView__ 
+>caption GridViewDynamicHyperlinkColumn in RadGridView
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewDynamicHyperlinkColumn displaying generated hyperlinks](images/RadGridView_ColumnTypes_9.png)
 

@@ -17,10 +17,12 @@ __Example 1: Set AutoToolTipPlacement property to TopLeft in horizontal orientat
 <snippet id='radslider-features-tooltip-block_1-xaml' />
 
 You can change the postion of the tool tip by setting the Orientation and AutoToolTipPlacement properties. The following pictures display the different position of the tool tip.
-__Figure 1: Horizontal orientated sliders__
+>caption Horizontal orientated sliders
+
 ![RadSlider Horizontal orientated AutoToolTipPlacement](images/RadSlider_AutoToolTipPlacement_Horizontal_01.png)
 
-__Figure 2: Vertical orientated sliders__
+>caption Vertical orientated sliders
+
 ![RadSlider ToolTip AutoToolTipPlacement](images/RadSlider_AutoToolTipPlacement_Vertical_02.png)
 
 ## ToolTip Value
@@ -30,7 +32,8 @@ By default, the ToolTip displays the thumb's value with two decimal symbols of p
 __Example 3: Set custom DataTemplate to AutoToolTipContentTemplate property__
 <snippet id='radslider-features-tooltip-block_2-xaml' />
 
-__Figure 3: Setting custom template to the AutoToolTipContentTemplate property__
+>caption Setting custom template to the AutoToolTipContentTemplate property
+
 ![RadSlider ToolTip AutoToolTipPlacement BottomRight](images/RadSlider_AutoToolTipPlacement_ContentTemplate_04.png)
 
 >The value of the ToolTip might not display the actual Value/SelectionStart/SelectionEnd values of the slider. When the __IsDeferredDraggingEnabled__ property is set to True, the value of the slider will be updated only when the user finishes the drag operation. Regardless this, the Value of the ToolTip will be updated corresponding to the current location of the thumb, indicating the value when you end the dragging.
@@ -39,7 +42,8 @@ __Figure 3: Setting custom template to the AutoToolTipContentTemplate property__
 
 When selection range is enabled, the tooltip will appear on the start thumb or the end thumb depending on which one is dragged. The shown value will correspond to the SelectiondStart and SelectionEnd properties of the RadSlider.
 
-__Figure 4: ToolTip in range selection functionality__
+>caption ToolTip in range selection functionality
+
 ![RadSlider ToolTip AutoToolTipPlacement RangeToolTip](images/RadSlider_AutoToolTipPlacement_RangeSelection_03.png)
 
 ## ThumbToolTipStyle

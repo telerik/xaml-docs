@@ -54,7 +54,7 @@ this.assistant.Commands = new ObservableCollection<InlineAIAssistantCommandBase>
 
 >tip The `Icon` property expects a glyph value converted through `StringToGlyphConverter`. Check the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article for the full list of available glyphs and their string values.
 
-__RadInlineAIAssistant with a Configured Commands Dropdown__
+>caption RadInlineAIAssistant with a configured commands dropdown
 
 ![WPF RadInlineAIAssistant with a Configured Commands Dropdown](images/radinlineaiassistant-configuring-commands-001.png)
 

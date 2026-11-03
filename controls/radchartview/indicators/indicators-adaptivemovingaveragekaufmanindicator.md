@@ -19,7 +19,8 @@ __Example 1: Defining AdaptiveMovingAverageKaufmanIndicator__
 <snippet id='radchartview-indicators-indicators-adaptivemovingaveragekaufmanindicator-example_1_defining_adaptivemovingaveragekaufmanindicator-xaml' />
 
 
-#### Figure 1: AdaptiveMovingAverageKaufmanIndicator
+>caption AdaptiveMovingAverageKaufmanIndicator
+
 <img src="images/radchartview-indicators-adaptivemovingaveragekaufmanindicator-0.png" style="width: 80%;">
 
 >tip The indicator can be set up the same way as a normal [chart series]({%slug radchartview-series-chartseries%}). This is why you can populate it using the same approach as shown in the [Data Bind to Data-Object]({%slug radchartview-series-databinding%}) article. You can set the corresponding value binding properties - for example, ValueBinding, CategoryBinding, HighBinding, CloseBinding, etc, and also the ItemsSource.

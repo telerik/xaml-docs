@@ -63,7 +63,7 @@ __Example 3: Setting a background for the filtering row TextBox__
 <snippet id='radgridview-styles-and-templates-styling-filterrow-example_3_setting_a_background_for_the_filtering_row_textbox-vb' />
 
 
-#### __Figure 2: RadGridView with styled filter row__
+>caption RadGridView with styled filter row
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom styled FilterRow](images/gridview-styled-filter-row.png)
 

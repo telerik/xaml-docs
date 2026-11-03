@@ -15,13 +15,13 @@ __PROBLEM__
 
 1) When exporting DateTime values without a specified __DataFormatString__ to Excel, the values appear as numbers as shown in the below image:
 
-__Exporting DateTime values without specified DataFormatString__
+>caption Exporting DateTime values without specified DataFormatString
 
 ![Telerik UI for {{ site.framework_name }} RadGridView DateTime values exported to Excel as raw numbers without a data format string](images/gridview-export-datetime-as-number.png)
 
 2) When exporting DateTime values with specified __DataFormatString__ to Excel, the values appear as strings as shown in the next image:
 
-__Exporting DateTime values with specified DataFormatString__
+>caption Exporting DateTime values with specified DataFormatString
 
 ![Telerik UI for {{ site.framework_name }} RadGridView DateTime values exported to Excel as strings when a data format string is applied](images/gridview-export-datetime-as-string.png)
 
@@ -43,7 +43,7 @@ __Exporting DateTime Values to Excel__
 <snippet id='radgridview-export-how-to-export-datetime-exporting_datetime_values_to_excel-vb' />
 
 
-__Exporting DateTime values with ElementExportingToDocument__
+>caption Exporting DateTime values with ElementExportingToDocument
 
 ![Telerik UI for {{ site.framework_name }} RadGridView DateTime values exported to Excel with correct date formatting through ElementExportingToDocument](images/gridview-export-datetime-as-datetime.png)
 

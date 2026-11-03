@@ -38,7 +38,7 @@ __[C#] Example 3: Add custom categories__
 
 **Example 3** adds a **Favorites** category with two subcategories - **Math** and **DateTime**. Each of the categories contains some static methods of the respective class. The results before and after respectively can be observed in **Figure 1**.
 
-__Custom category__
+>caption Custom category
 
 ![Telerik UI for WPF RadExpressionEditor custom categories showing Favorites with Math and DateTime subcategories](images/custom-category.png)
 
@@ -67,7 +67,7 @@ __[C#] Example 6: Add custom functions__
 
 **Example 6** adds the two custom functions defined in Example 4 to the **Other** subcategory. The results before and after respectively are illustrated in **Figure 2**. 
 
-__Custom functions__
+>caption Custom functions
 
 ![Telerik UI for WPF RadExpressionEditor custom functions showing OnePlus and TwoPlus in the Other category](images/custom-functions.png)
 

@@ -87,7 +87,8 @@ __[C#] Example 2: Paste with Specific Settings__
 
 When the users paste content in RadRichTextBox using the Ctrl+V keyboard shortcut, a popup appears to let them choose the paste option they would like to use. If none of the buttons is pressed, the deafult option for the source is used. 
 
-__Figure 1: Paste Options Popup in RadRichTextBox__
+>caption Paste options popup in RadRichTextBox
+
 ![Paste Options Popup in RadRichTextBox](images/RadRichTextBox_Features_PasteOptions.png)
 
 

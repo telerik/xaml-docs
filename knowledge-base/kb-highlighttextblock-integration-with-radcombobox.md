@@ -95,7 +95,7 @@ __Set the custom DataTemplate to the ItemTemplate property of RadComboBox__
                          ItemTemplate="{StaticResource HighlightTextBlockDataTemplate}"/>
 ```
 
-__RadComboBox with RadHighlightTextBlock__
+>caption RadComboBox with RadHighlightTextBlock
 
 ![{{ site.framework_name }} RadComboBox with RadHighlightTextBlock](images/kb-highlighttextblock-integration-with-radcombobox-0.png)
 

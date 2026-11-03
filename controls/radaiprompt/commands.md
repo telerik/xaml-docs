@@ -50,7 +50,7 @@ __Creating an AIPromptCommand instance__
 __Binding the custom commands collection to RadAIPrompt__
 <snippet id='radaiprompt-commands-binding_the_custom_commands_collection_to_radaiprompt-xaml' />
 
-__RadAIPrompt with a custom commands collection__
+>caption RadAIPrompt with a custom commands collection
 
 ![WPF RadAIPrompt with a custom commands collection](images/radaiprompt-commands-0.png)
 
@@ -61,7 +61,7 @@ The `AIPromptCommandGroup` object provides the `Commands` collection property. I
 __Creating an AIPromptCommandGroup instance__
 <snippet id='radaiprompt-commands-creating_an_aipromptcommandgroup_instance-cs' />
 
-__RadAIPrompt with grouped commands__
+>caption RadAIPrompt with grouped commands
 
 ![WPF RadAIPrompt with grouped commands](images/radaiprompt-commands-1.png)
 

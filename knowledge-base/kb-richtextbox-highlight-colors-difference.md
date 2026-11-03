@@ -105,6 +105,6 @@ __Setting the custom SelectionMiniToolBar to the RadRichTextBox control__
 	this.richTextBox.SelectionMiniToolBar = new CustomSelectionMiniToolBar(); 
 ```
 
-__RadRichTextBox with a custom SelectionMiniToolBar__
+>caption RadRichTextBox with a custom SelectionMiniToolBar
 
 ![RadRichTextBox with a custom SelectionMiniToolBar](images/kb-radrichtextbox-difference-in-the-highlighted-colors-0.png)

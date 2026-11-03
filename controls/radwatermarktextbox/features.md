@@ -46,7 +46,7 @@ In the following example, the user is asked to enter four digits:
 __Setting the WatermarkContent property__
 <snippet id='radwatermarktextbox-features-block_1-xaml' />
 
-__RadWatermarkTextBox with watermark text__
+>caption RadWatermarkTextBox with watermark text
 
 ![{{ site.framework_name }} RadWatermarkTextBox with Watermark Text](images/radwatermarktextbox_overview_010.png)
 
@@ -55,7 +55,7 @@ The WatermarkContent property is of type `object`, which means that you can set 
 __Defining custom content for the WatermarkContent property__
 <snippet id='radwatermarktextbox-features-block_2-xaml' />
 
-__RadWatermarkTextBox with custom watermark content__
+>caption RadWatermarkTextBox with custom watermark content
 
 ![{{ site.framework_name }} RadWatermarkTextBox with Custom Watermark Content](images/radwatermarktextbox_overview_020.png)
 
@@ -66,7 +66,7 @@ Similarly, you can use the `WatermarkTemplate` property for the same sort of sce
 __Defining the WatermarkTemplate__
 <snippet id='radwatermarktextbox-features-block_3-xaml' />
 
-__RadWatermarkTextBox with custom WatermarkTemplate__
+>caption RadWatermarkTextBox with custom WatermarkTemplate
 
 ![{{ site.framework_name }} RadWatermarkTextBox Custom WatermarkTemplate](images/radwatermarktextbox_overview_030.png)
 
@@ -94,14 +94,14 @@ RadWatermarkTextBox control exposes two properties to set its background when it
 __Setting the DisabledBackground property__
 <snippet id='radwatermarktextbox-features-block_5-xaml' />
 
-__Disabled RadWatermarkTextBox with and without DisabledBackground__
+>caption Disabled RadWatermarkTextBox with and without DisabledBackground
 
 ![{{ site.framework_name }} RadWatermarkTextBox with and without Disabled Background](images/DisabledBackground.png)
 
 __Setting the ReadOnlyBackground property__
 <snippet id='radwatermarktextbox-features-block_6-xaml' />
 
-__Read-only RadWatermarkTextBox with and without ReadOnlyBackground__
+>caption Read-only RadWatermarkTextBox with and without ReadOnlyBackground
 
 ![{{ site.framework_name }} RadWatermarkTextBox with and Without Read Only Background](images/ReadOnlyBackground.png)
 
@@ -123,7 +123,7 @@ The following example demonstrates the `AdditionalContent` and `AdditionalConten
 __Setting the AdditionalContent and AdditionalContentTemplate properties__
 <snippet id='radwatermarktextbox-features-block_8-xaml' />
 
-__RadWatermarkTextBox with custom AdditionalContent and AdditionalContentTemplate properties__
+>caption RadWatermarkTextBox with custom AdditionalContent and AdditionalContentTemplate properties
 
 ![{{ site.framework_name }} RadWatermarkTextBox Custom AdditionalContent and AdditionalContentTemplate Properties](images/radwatermarktextbox-features-additionalcontent.PNG)
 

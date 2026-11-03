@@ -21,7 +21,7 @@ __Setting ShowLabels__
 <snippet id='radchartview-axes-label-setting_showlabels-xaml' />
 
 
-__Vertical axis with hidden labels__  
+>caption Vertical axis with hidden labels
 
 ![Telerik UI for WPF RadChartView Vertical Axis with Hidden Labels](images/radchartview-axes-labels-0.png)
 
@@ -33,7 +33,7 @@ __Setting LabelInterval__
 <snippet id='radchartview-axes-label-setting_labelinterval-xaml' />
 
 
-__Vertical axis with label interval set to 2__  
+>caption Vertical axis with label interval set to 2
 
 ![Telerik UI for WPF RadChartView Vertical Axis with Label Interval Set to 2](images/radchartview-axes-labels-1.png)
 
@@ -45,7 +45,7 @@ __Setting LabelFormat__
 <snippet id='radchartview-axes-label-setting_labelformat-xaml' />
 
 
-__Vertical axis labels formatted using the currency format C__  
+>caption Vertical axis labels formatted using the currency format C
 
 ![Telerik UI for WPF RadChartView Vertical Axis Labels Formatted Using Currency Format C](images/radchartview-axes-labels-2.png)
 
@@ -59,7 +59,7 @@ __Setting LabelFitMode to Rotate__
 <snippet id='radchartview-axes-label-setting_labelfitmode_to_rotate-xaml' />
 
 
-__Horizontal axis labels rotated by 90 degrees__  
+>caption Horizontal axis labels rotated by 90 degrees
 
 ![Telerik UI for WPF RadChartView Horizontal Axis Labels Rotated by 90 Degrees](images/radchartview-axes-labels-3.png)
 
@@ -71,7 +71,7 @@ __Setting LabelFitMode to MultiLine__
 <snippet id='radchartview-axes-label-setting_labelfitmode_to_multiline-xaml' />
 
 
-__Horizontal axis with multi-line labels__  
+>caption Horizontal axis with multi-line labels
 
 ![Telerik UI for WPF RadChartView Horizontal Axis with Multi-Line Labels](images/radchartview-axes-labels-4.png)
 
@@ -87,7 +87,7 @@ __Setting LabelStyle__
 <snippet id='radchartview-axes-label-setting_labelstyle-xaml' />
 
 
-__Vertical axis with custom label style__  
+>caption Vertical axis with custom label style
 
 ![Telerik UI for WPF RadChartView Vertical Axis with Custom Label Style](images/radchartview-axes-labels-5.png)
 
@@ -99,7 +99,7 @@ __Setting LabelTemplate__
 <snippet id='radchartview-axes-label-setting_labeltemplate-xaml' />
 
 
-__Vertical axis with custom label template__  
+>caption Vertical axis with custom label template
 
 ![Telerik UI for WPF RadChartView Vertical Axis with Custom Label Template](images/radchartview-axes-labels-6.png)
 
@@ -115,7 +115,7 @@ __Defining the template selector__
 <snippet id='radchartview-axes-label-defining_the_template_selector-xaml' />
 
 
-__Horizontal axis with customized labels and ticks__  
+>caption Horizontal axis with customized labels and ticks
 
 ![Telerik UI for WPF RadChartView Horizontal Axis with Customized Labels and Ticks](images/radchartview-chart_axes_axisconfig.png)
 

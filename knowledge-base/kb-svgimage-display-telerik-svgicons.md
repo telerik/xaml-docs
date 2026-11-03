@@ -70,6 +70,6 @@ __Setting the XmlSource property__
     End Class
 ```
 
-__RadSvgImage displaying SVG icon from the Telerik.SvgIcons NuGet package__
+>caption RadSvgImage displaying SVG icon from the Telerik.SvgIcons NuGet package
 
 ![{{site.framework_name}} RadSvgImage displaying SVG icon from the Telerik.SvgIcons NuGet package](images/kb-svgimage-display-telerik-svgicons-1.png)

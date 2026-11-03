@@ -13,7 +13,8 @@ position: 2
 
 The visual element shown when you drag an item is presented by the __FileBrowserDragVisual__ control. To customize the appearance you can set several properties of the control or [extract its template]({%slug styling-apperance-editing-control-templates%}) and modify it.
 
-__Figure 1: Default drag visual__
+>caption Default drag visual
+
 ![{{ site.framework_name }} RadFileDialogs Default drag visual](images/filedialogs-drag-drop-customize-drag-visual-0.png)
 
 ## Setting the Drag Visual Appearance
@@ -35,7 +36,8 @@ __Example 1: Setting the drag visual properties__
 
 You can use the __DragVisualOffset__ property of the FileBrowserDragVisual control to offset it from the mouse cursor position. The previous example (Example 1) shows how to set the property.
 
-__Figure 2: Setting the drag visual offset__
+>caption Setting the drag visual offset
+
 ![{{ site.framework_name }} RadFileDialogs Setting the drag visual offset](images/filedialogs-drag-drop-customize-drag-visual-1.png)
 
 ## Setting Icon Template
@@ -48,7 +50,8 @@ __Example 2: Setting the icon template__
 <snippet id='radfiledialogs-features-drag-drop-customize-drag-visual-example_2_setting_the_icon_template-xaml' />
 
 
-__Figure 3: Custom icon template__
+>caption Custom icon template
+
 ![{{ site.framework_name }} RadFileDialogs Custom icon template](images/filedialogs-drag-drop-customize-drag-visual-2.png)
 
 ## Setting Content Template
@@ -61,7 +64,8 @@ __Example 3: Setting the content template__
 <snippet id='radfiledialogs-features-drag-drop-customize-drag-visual-example_3_setting_the_content_template-xaml' />
 
 
-__Figure 4: Custom content template__
+>caption Custom content template
+
 ![{{ site.framework_name }} RadFileDialogs Custom content template](images/filedialogs-drag-drop-customize-drag-visual-3.png)
 
 ## See Also  

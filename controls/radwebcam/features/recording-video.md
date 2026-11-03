@@ -36,7 +36,7 @@ You can indicate that the camera control is recording via its `IsRecording` prop
 
 The control allows you to replace the default elapsed date-time format. To do this, set the `VideoRecordingElapsedTimeFormat` property of the RadWebCam control.
 
-__Elapsed time default format__
+>caption Elapsed time default format
 
 ![{{ site.framework_name }} RadWebCam Elapsed Time Default Format](images/radwebcam-features-recording-video-1.png)
 
@@ -46,7 +46,7 @@ __Set VideoRecordingElapsedTimeFormat in XAML__
 __Set VideoRecordingElapsedTimeFormat in code__
 <snippet id='radwebcam-features-recording-video-block_5-cs' />
 
-__Elapsed time custom format__
+>caption Elapsed time custom format
 
 ![{{ site.framework_name }} RadWebCam Elapsed Time Custom Format](images/radwebcam-features-recording-video-2.png)
 

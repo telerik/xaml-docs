@@ -31,7 +31,8 @@ __Example 2: Defining a button in code__
 <snippet id='radbuttons-features-button-block_2-vb' />
 
 
-__Figure 1: The created button__
+>caption The created button
+
 ![The created button](images/radbuttons-features-button-0.png)
 
 ## Handling the Button Click
@@ -59,11 +60,13 @@ __Example 4: Defining a Click event handler__
 ## Customizing the RadButton
 
 * __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the __RadButton__ control in normal state	
-	__Figure 2: A button with a hidden background__
+>caption A button with a hidden background
+
 	![A button with a hidden background](images/radbuttons-features-button-1.png)	  
 
 * __CornerRadius__ - this property is of type __CornerRadius__ and it controls the __CornerRadius__ of the __RadButton__ control	
-	__Figure 3: A button with its CornerRadius set to 15__
+>caption A button with its CornerRadius set to 15
+
 	![A button with its CornerRadius set to 15](images/radbuttons-features-button-2.png)	  
 
 ## See Also

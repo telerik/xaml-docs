@@ -23,7 +23,7 @@ __Define explorer control__
 <snippet id='radfiledialogs-dialog-controls-explorercontrol-define_explorer_control-xaml' />
 
 
-__ExplorerControl__ 
+>caption ExplorerControl
 
 ![{{ site.framework_name }} RadFileDialogs ExplorerControl](images/explorercontrol-0.png)
 
@@ -111,12 +111,12 @@ __Filtering ExplorerControl__
 <snippet id='radfiledialogs-dialog-controls-explorercontrol-filtering_explorercontrol-xaml' />
 
 
-__Result from the above example before filtering__ 
+>caption Result from the above example before filtering
 
 ![ExplorerControl before filter](images/explorercontrol-beforefilter.png)
 
 
-__Result from the above example after filtering__ 
+>caption Result from the above example after filtering
 
 ![ExplorerControl after filter](images/explorercontrol-afterfilter.png)
 

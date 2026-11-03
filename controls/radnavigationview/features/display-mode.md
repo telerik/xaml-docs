@@ -12,15 +12,15 @@ position: 0
 
 The `RadNavigationView` control dynamically adjusts its layout depending on its size. It has three modes __Minimal__, __Compact__ and __Expanded__. 
 
-__RadNavigationView in Minimal DisplayMode in the Office2016 theme__
+>caption RadNavigationView in minimal DisplayMode in the Office2016 theme
 
 ![RadNavigationView in Minimal DisplayMode](images/NavigationView_DisplayMode_Minimal.png)
 
-__RadNavigationView in Compact DisplayMode in the Office2016 theme__
+>caption RadNavigationView in compact DisplayMode in the Office2016 theme
 
 ![RadNavigationView in Compact DisplayMode](images/NavigationView_DisplayMode_Compact.png)
 
-__RadNavigationView in Expanded DisplayMode in the Office2016 theme__
+>caption RadNavigationView in expanded DisplayMode in the Office2016 theme
 
 ![RadNavigationView in Expanded DisplayMode](images/NavigationView_DisplayMode_Expanded.png)
 
@@ -30,7 +30,7 @@ By default the RadNavigationView changes its DisplayMode when its size passes ce
 
 The following GIF illustrates how the DisplayMode changes while resizing.
 
-__RadNavigationView DisplayModes__
+>caption RadNavigationView DisplayModes
 
 ![RadNaviationView DisplayModes](images/RadNavigationView_DisplayModes_Resizing.gif)
 

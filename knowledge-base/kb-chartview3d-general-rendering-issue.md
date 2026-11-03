@@ -32,7 +32,7 @@ The 3D ChartView element is rendered fragmented on devices with specific video a
 
 No stable solution is provided for this issue. The issue may come from the video device or the related driver. The result is that the machine cannot render the information coming from the WPF 3D rendering engine properly. You may notice glitches or a fragmented image.
 
-__Fragmented chart visualization__  
+>caption Fragmented chart visualization
 
 ![A picture showing RadCartesianChart3D with bad rendering](images/kb-chartview3d-general-rendering-issue-0.png)
 

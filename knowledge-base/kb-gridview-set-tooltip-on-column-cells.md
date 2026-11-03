@@ -101,6 +101,6 @@ __Binding the Name property to the element inside the DataTemplate for the ToolT
     </Grid>
 ```
 
-__Tooltip of GridViewImageColumn bound to a property of the underlying data model__
+>caption Tooltip of GridViewImageColumn bound to a property of the underlying data model
 
 ![Tooltip of GridViewImageColumn bound to a property of the underlying data model](images/kb-gridview-set-tooltip-on-column-cells-0.png)

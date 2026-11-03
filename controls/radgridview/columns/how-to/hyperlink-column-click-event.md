@@ -15,7 +15,8 @@ If you have defined a __GridViewHyperlinkColumn__ within your __RadGridView__, y
 
 If the first column of the __RadGridView__ is a __GridViewHyperlinkColumn__, as in the picture below:
 
-__Figure1: RadGridView with GridViewHyperLinkColumn__ 
+>caption RadGridView with GridViewHyperLinkColumn
+
 ![Telerik UI for {{ site.framework_name }} RadGridView with a GridViewHyperlinkColumn before handling the click event](images/gridview-hyperlinkcolumn-initial.PNG)
 
 ## First Approach
@@ -28,7 +29,8 @@ __Subscribe to Click Event in GridViewHyperlinkColumn__
 
 __Figure 2__ shows the result after clicking the hyperlink:
 
-__Figure 2: The result after clicking the hyperlink__ 
+>caption The result after clicking the hyperlink
+
 ![Telerik UI for {{ site.framework_name }} RadGridView after clicking a GridViewHyperlinkColumn link and showing the clicked URL](images/gridview-hyperlink-clicked.PNG)
 
 ## Second Approach

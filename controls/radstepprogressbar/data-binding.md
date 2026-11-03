@@ -26,7 +26,7 @@ __Initializing the view model__
 __Setting up the XAML__
 <snippet id='radstepprogressbar-data-binding-block_5-xaml' />
 
-__Data bound StepProgressBar control__  
+>caption Data bound StepProgressBar control
 
 ![{{ site.framework_name }} RadStepProgressBar Bound to Data](images/stepprogressbar-data-binding-0.png)
 

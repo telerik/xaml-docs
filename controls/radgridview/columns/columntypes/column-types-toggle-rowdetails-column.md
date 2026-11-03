@@ -17,7 +17,7 @@ __Defining GridViewToggleRowDetailsColumn in XAML__
 <snippet id='radgridview-columns-columntypes-column-types-toggle-rowdetails-column-defining_gridviewtogglerowdetailscolumn_in_xaml-xaml' />
 
 
-__GridViewToggleRowDetailsColumn__
+>caption GridViewToggleRowDetailsColumn
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewToggleRowDetailsColumn showing row details expand buttons](images/radgridview-columns-column-types-toggle-rowdetails-column-0.png)
 
@@ -40,7 +40,7 @@ __Setting a Style for the ToggleButtonStyle__
 <snippet id='radgridview-columns-columntypes-column-types-toggle-rowdetails-column-setting_a_style_for_the_togglebuttonstyle-xaml' />
 
 
-__GridViewToggleRowDetailsColumn with custom Style for the ToggleButtonStyle property__
+>caption GridViewToggleRowDetailsColumn with custom style for the ToggleButtonStyle property
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewToggleRowDetailsColumn with a custom ToggleButtonStyle](images/radgridview-columns-column-types-toggle-rowdetails-column-1.png)
 

@@ -57,7 +57,8 @@ Alternatively, you check the Properties of the **Telerik.Windows.Controls.dll** 
 
 <a id="figure-1-telerikwindowscontrolsdll-properties"></a>
 
-**Figure 1: Telerik.Windows.Controls.dll Properties**
+>caption Telerik.Windows.Controls.Dll properties
+
 ![Telerik UI for WPF Telerik.Windows.Controls.dll properties in Visual Studio](images/xaml-vs-noxaml-0.png)
 
 ## See Also

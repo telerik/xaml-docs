@@ -28,7 +28,7 @@ Notice the __SeriesFamily__ property, which is available for the collections in 
 <snippet id='radchartview-features-palettes-custom-palettes-block_2-xaml' />
 
 
-__Example showing the custom palette__  
+>caption Example showing the custom palette
 
 ![Telerik UI for WPF RadChartView custom palette applied to pie and Cartesian charts](images/RadChartView-palettes-custom-palettes-0.png)
 

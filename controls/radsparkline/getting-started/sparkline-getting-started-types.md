@@ -56,7 +56,8 @@ __Example 1: Setting up the model and viewmodel__
 __Example 2: Setting up the RadLinearSparkline__
 <snippet id='radsparkline-getting-started-sparkline-getting-started-types-block_3-xaml' />
 
-#### __Figure 1: Result from Example 2__
+>caption Result from example 2
+
 ![RadLinearSparkline](images/radlinearsparkline-type-specific.png)
 
 #### RadScatterSparkline
@@ -70,7 +71,8 @@ __Example 2: Setting up the RadLinearSparkline__
 __Example 3: Setting up the RadScatterSparkline__
 <snippet id='radsparkline-getting-started-sparkline-getting-started-types-block_4-xaml' />
 
-#### __Figure 2: Result from Example 3__
+>caption Result from example 3
+
 ![RadScatterSparkline](images/radscattersparkline-type-specific.png)
 
 #### RadAreaSparkline
@@ -86,7 +88,8 @@ __Example 3: Setting up the RadScatterSparkline__
 __Example 4: Setting up the RadAreaSparkline__
 <snippet id='radsparkline-getting-started-sparkline-getting-started-types-block_5-xaml' />
 
-#### __Figure 3: Result from Example 4__
+>caption Result from example 4
+
 ![RadAreaSparkline](images/radareasparkline-type-specific.png)
 
 #### RadColumnSparkline
@@ -96,7 +99,8 @@ __Example 4: Setting up the RadAreaSparkline__
 __Example 5: Setting up the RadColumnSparkline__
 <snippet id='radsparkline-getting-started-sparkline-getting-started-types-block_6-xaml' />
 
-#### __Figure 4: Result from Example 5__
+>caption Result from example 5
+
 ![RadColumnSparkline](images/radcolumnsparkline-type-specific.png)
 	
 

@@ -23,7 +23,8 @@ __Example 1: Defining series in XAML__
 <snippet id='radchartview3d-series-surfaceseries3d-example_1_defining_series_in_xaml-xaml' />
 
 	
-__Figure 1: SurfaceSeries3D__
+>caption SurfaceSeries3D
+
 ![{{ site.framework_name }} RadChartView3D SurfaceSeries3D](images/radchartview-3d-surfaceseries3d-0.png)
 
 ## Data bound series
@@ -58,7 +59,9 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 	<snippet id='radchartview3d-series-surfaceseries3d-example_5_setting_the_gradient_stops-xaml' />
 
 		
-	__Figure 2: SurfaceSeries3DValueGradientColorizer__	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DValueGradientColorizer](images/radchartview-3d-surfaceseries3d-1.png)
+>caption SurfaceSeries3DValueGradientColorizer
+
+	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DValueGradientColorizer](images/radchartview-3d-surfaceseries3d-1.png)
 
 * __SurfaceSeries3DDataPointColorizer__
 
@@ -80,7 +83,9 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 	<snippet id='radchartview3d-series-surfaceseries3d-example_8_setting_up_the_datacontext-cs' />
 
 		
-	__Figure 3: SurfaceSeries3DDataPointColorizer with default blending colorization mode__  	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DDataPointColorizer with default blending colorization mode](images/radchartview-3d-surfaceseries3d-2.png)
+>caption SurfaceSeries3DDataPointColorizer with default blending colorization mode
+
+	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DDataPointColorizer with default blending colorization mode](images/radchartview-3d-surfaceseries3d-2.png)
 	
 	The __SurfaceSeries3DDataPointColorizer__ supports two colorization modes which determine the appearance of the surface. You can change the mode via the __ColorizationMode__ property of the colorizer. This property accepts the following values:
 	
@@ -91,7 +96,9 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 	<snippet id='radchartview3d-series-surfaceseries3d-example_9_setting_colorization_mode-xaml' />
 
 	
-	__Figure 4: SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles__  	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles](images/radchartview-3d-surfaceseries3d-3.png)
+>caption SurfaceSeries3DDataPointColorizer with ColorizationMode set to tiles
+
+	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles](images/radchartview-3d-surfaceseries3d-3.png)
 	
 ## Display direction
 
@@ -121,7 +128,8 @@ __Example 13: Setting point size in code__
 <snippet id='radchartview3d-series-surfaceseries3d-example_13_setting_point_size_in_code-cs' />
 
 
-__Figure 5: SurfaceSeries3D default point visuals__  
+>caption SurfaceSeries3D default point visuals
+
 ![{{ site.framework_name }} RadChartView3D SurfaceSeries3D default point visuals](images/radchartview-3d-surfaceseries3d-4.png)
 	
 To customize the geometry and the material of the visual elements that represent the __SurfaceSeries3D__ data points you can use the __DefaultVisualMaterial__ and __DefaultVisualGeometry__ properties of the series. Additionally, you can use the __DefaultVisualMaterialSelector__ and __DefaultVisualGeometrySelector__ to choose different materials and geometries based on a specific condition.

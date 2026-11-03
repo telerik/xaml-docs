@@ -22,7 +22,8 @@ __RadVirtualGrid__ supports selection of a cell region. This mechanism can be ma
 __Example 1: Selecting a CellRegion__
 <snippet id='radvirtualgrid-selection-programmatic-selection-block_1-cs' />
 
-__Figure 1: Selecting a CellRegion__
+>caption Selecting a CellRegion
+
 ![Selecting a CellRegion](images/RadVirtualGrid_Selection_03.png)
 
 ## Unselect Cell Region
@@ -48,7 +49,8 @@ The control supports programmatic selection based on a given index/indexes. For 
 __Example 2: Setting the SelectedIndex property__
 <snippet id='radvirtualgrid-selection-programmatic-selection-block_2-cs' />
 
-__Figure 2: Setting the SelectedIndex property__
+>caption Setting the SelectedIndex property
+
 ![Setting the SelectedIndex property](images/RadVirtualGrid_Selection_04.png)
 
 

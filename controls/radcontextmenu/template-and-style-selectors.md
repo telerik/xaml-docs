@@ -80,7 +80,8 @@ __Using the ItemTemplateSelector in XAML__
 </Grid>
 ```
 
-__RadContextMenu with ItemTemplateSelector__
+>caption RadContextMenu with ItemTemplateSelector
+
 ![WPF RadContextMenu with ItemTemplateSelector](images/RadContextMenu_TemplateAndStyleSelectors_ItemTemplateSelector.png)
 
 * `ItemContainerStyleSelector`&mdash;Used to select the __Style__ that is applied to the child __RadMenuItems__.
@@ -136,7 +137,8 @@ __Use the ItemContainerStyleSelector in XAML__
 </Grid>
 ```
 
-__RadContextMenu with ItemContainerStyleSelector__
+>caption RadContextMenu with ItemContainerStyleSelector
+
 ![WPF RadContextMenu with ItemContainerStyleSelector](images/RadContextMenu_TemplateAndStyleSelectors_ItemContainerStyleSelector.png)
 
 And a list of the selectors provided by the RadMenuItem control:

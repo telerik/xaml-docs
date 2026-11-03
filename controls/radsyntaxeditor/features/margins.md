@@ -22,7 +22,8 @@ __Example 1: Defining the RadSyntaxEditor__
 __Example 1: Defining the RadSyntaxEditor__
 <snippet id='radsyntaxeditor-features-margins-block_2-cs' />
 
-__Figure 1: RadSyntaxEditor Margins__
+>caption RadSyntaxEditor margins
+
 ![RadSyntaxEditor Margins](images/syntaxeditor-margins.png)
 
 ## Indicators Margin
@@ -47,7 +48,8 @@ __[C#] Example 3: Adding the BookmarksMargin__
 
 **Figure 2** shows the final result after some bookmarks have been added.
 
-__Figure 2: The bookmarks margin__
+>caption The bookmarks margin
+
 ![The bookmarks margin](images/syntaxeditor-margins-2.png)
 
 >You can add new bookmarks both by clicking on the margin in the UI and by programmatically adding integers to its Indicators collection.

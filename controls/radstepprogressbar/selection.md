@@ -18,7 +18,7 @@ The selection is changed when you click on a step in the UI, or set the __Select
 
 <snippet id='radstepprogressbar-selection-block_1-xaml' />
 		
-__StepProgressBar selection__  
+>caption StepProgressBar selection
 
 ![{{ site.framework_name }} RadStepProgressBar Selection](images/stepprogressbar-selection-0.png)		
 
@@ -28,7 +28,7 @@ Selecting a step will update the __OverallProgress__ property of RadStepProgress
 
 The RadStepProgressBarItem has three states that can enter - __NotStarted__, __Indeterminate__ and __Completed__. When you click onto a step item to select it, its status changes to Completed. The same status is applied to the previous steps. The different states display a different indicator inside the step shape.
 
-__Step item statuses__  
+>caption Step item statuses
 
 ![{{ site.framework_name }} RadStepProgressBar Selected Item Status](images/stepprogressbar-selection-1.png)
 
@@ -37,7 +37,7 @@ To change the status that is applied to the selected item from Complete to anoth
 
 <snippet id='radstepprogressbar-selection-block_2-xaml' />
 
-__Selected item status set to Indeterminate__  
+>caption Selected item status set to indeterminate
 
 ![{{ site.framework_name }} RadStepProgressBar Selected Item Status Set to Indeterminate](images/stepprogressbar-selection-2.png)
 
@@ -46,7 +46,7 @@ To prevent changing the status of the previous steps to Complete, set the __Comp
 
 <snippet id='radstepprogressbar-selection-block_3-xaml' />
 
-__Disabled previous steps auto completion__  
+>caption Disabled previous steps auto completion
 
 ![{{ site.framework_name }} RadStepProgressBar Disabled Previous Steps Auto Completion](images/stepprogressbar-selection-3.png)
 

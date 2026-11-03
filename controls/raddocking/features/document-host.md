@@ -60,7 +60,8 @@ When the number of Panes inside the `DocumentHost` increases and there is not en
 <snippet id='raddocking-features-document-host-block_3-xaml' />
 
 
-__Figure 1: __ DocumentHost with a visible `HorizontalScrollBar`:
+>caption DocumentHost with a visible `HorizontalScrollBar`
+
 ![{{ site.framework_name }} RadDocking DocumentHost with a visible `HorizontalScrollBar`:](images/raddocking-features-document-host-5.png)
 
 By design the `HorizontalScrollBarVisibility` property is disabled and can be visualized either by setting it to `Visible` or `Auto` (the arrow buttons will become visible when the space is not enough).
@@ -79,7 +80,8 @@ The `DropDownDisplayMode` property could be set to any of the following values:
 
 Figure 2 demonstrate the appearance of the DocumentHost when both properties are set.
 
-__Figure 2: __ DocumentHost with visible `HorizontalScrollBar` and drop down menu button:
+>caption DocumentHost with visible `HorizontalScrollBar` and drop down menu button
+
 ![{{ site.framework_name }} RadDocking DocumentHost with visible `HorizontalScrollBar` and drop down menu button:](images/raddocking-features-document-host-6.png)
 
 ## Controlling Content Margin

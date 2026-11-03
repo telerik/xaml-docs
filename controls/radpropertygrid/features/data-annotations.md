@@ -47,7 +47,7 @@ __Example 3: Binding Employee instance to RadPropertyGrid__
 
 After you run the application you should see the following:
 
-__Figure 1: RadPropertyGrid bound to an Employee instance__
+>caption RadPropertyGrid bound to an employee instance
 
 ![RadPropertyGrid bound to an Employee instance](images/RadPropertyGrid_Data_Annotations_1.PNG)
 
@@ -99,11 +99,11 @@ __Example 7: Modifying sample data__
 
 Here's the resulting RadPropertyGrid sorted alphabetically and in grouped mode:
 
-__Figure 2: RadPropertyGrid with data annotations sorted alphabetically__
+>caption RadPropertyGrid with data annotations sorted alphabetically
 
 ![RadPropertyGrid with data annotations sorted alphabetically](images/RadPropertyGrid_Data_Annotations_5.PNG)
 
-__Figure 3: RadPropertyGrid with data annotations in grouped mode__
+>caption RadPropertyGrid with data annotations in grouped mode
 
 ![Rad Property Grid Data Annotations 5](images/RadPropertyGrid_Data_Annotations_4.PNG)
 

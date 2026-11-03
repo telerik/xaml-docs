@@ -106,7 +106,8 @@ __Example 2: Registering the LineHighlightTagger__
     }
 ```
 
-#### __Figure 1: RadSyntaxEditor with breakpoints__
+>caption RadSyntaxEditor with breakpoints
+
 ![RadSyntaxEditor with breakpoints](images/kb-syntaxeditor-how-to-add-breakpoints-margin.png)
 
 ## See Also

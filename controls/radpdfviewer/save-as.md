@@ -32,7 +32,8 @@ Similarly to the other commands of **RadPdfViewer**, the **SaveAsCommand** can b
 #### [XAML] Example 1: Wiring SaveAsCommand to UI
 <snippet id='radpdfviewer-save-as-block_1-xaml' />
 
-#### Figure 1: Save As button in RadPdfViewer's toolbar
+>caption Save as button in RadPdfViewer's toolbar
+
 ![{{ site.framework_name }} RadPdfViewer Save As button in RadPdfViewer's toolbar](images/PdfViewer_SaveAs_2.png)
 
 {% if site.site_name == 'WPF' %}

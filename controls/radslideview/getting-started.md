@@ -35,7 +35,7 @@ You can add RadSlideView manually in XAML as demonstrated in the following examp
 __Adding RadSlideView in XAML__
 <snippet id='radslideview-getting-started-block_1-xaml' />
 
-__Empty RadSlideView__
+>caption Empty RadSlideView
 
 ![{{ site.framework_name }} Empty RadSlideView](images/radslideview-getting-started-0.png)
 
@@ -59,7 +59,7 @@ __Binding the collection to the ItemsSource property__
 __Customizing the appearance of the bound items via the ItemTemplate property of RadSlideView__
 <snippet id='radslideview-getting-started-block_7-xaml' />
 
-__RadSlideView in a sample data-binding scenario__
+>caption RadSlideView in a sample data-binding scenario
 
 ![{{ site.framework_name }} RadSlideView in a sample data-binding scenario](images/radslideview-getting-started-1.png)
 
@@ -84,7 +84,7 @@ __Merge the ResourceDictionaries__
 
 The following image shows a RadSlideView with the __Windows8__ theme applied.
 
-__RadSlideView with the Windows8 theme__
+>caption RadSlideView with the Windows8 theme
 
 ![{{ site.framework_name }} RadSlideView with the Windows8 theme](images/radslideview-getting-started-2.png)
 

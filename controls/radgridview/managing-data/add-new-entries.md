@@ -27,7 +27,7 @@ __Adding new rows with BeginInsert()__
 
 When a user adds a new item, an empty row is created in which the user can input data.
 
-__The newly created row__
+>caption The newly created row
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing a newly inserted empty row ready for data entry](images/RadGridView_AddingNewItems_1.png)
 
@@ -78,7 +78,7 @@ __Handling the RowEditEnded event__
 
 When the new item is committed, it is added to RadGridView's `Items` collection.
 
-__The new row__
+>caption The new row
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the committed new row after data entry is completed](images/RadGridView_AddingNewItems_2.png)
 

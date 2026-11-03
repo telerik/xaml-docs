@@ -37,7 +37,7 @@ __Example 2: Styling the GridViewNewRow explicitly__
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewNewRowStyle__.
 
-#### __Figure 1: RadGridView with styled GridViewNewRow in the Office 2016 theme__
+>caption RadGridView with styled GridViewNewRow in the Office 2016 theme
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a styled GridViewNewRow in the Office 2016 theme](images/gridview-newrow-styling.png)
 

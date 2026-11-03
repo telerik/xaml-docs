@@ -27,7 +27,7 @@ __Example 1: Set DataFormatString property of DateTime column__
 <snippet id='radgridview-columns-data-formatting-example_1_set_dataformatstring_property_of_datetime_column-vb' />
 
 
-#### __Figure 1: DateTime column with custom DataFormatString__
+>caption DateTime column with custom DataFormatString
 
 ![Telerik UI for {{ site.framework_name }} RadGridView DateTime column formatted with a custom DataFormatString](images/RadGridView_DataFormatting_1.png)
 

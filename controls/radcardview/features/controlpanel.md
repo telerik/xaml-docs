@@ -24,7 +24,8 @@ __Example 1: Defining GridViewControlPanelItems__
 
 >tip `cardView:` points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`. 
 
-__Figure 1: CardView Control Panel__
+>caption CardView control panel
+
 ![{{ site.framework_name }} RadCardView CardView Control Panel](images/radcardview-features-control-panel-0.png)
 
 The control panel item visual element is a [RadDropDownButton]({%slug radbuttons-features-dropdown-button%}).
@@ -46,7 +47,8 @@ The following example is an extended version of the sample from the [Getting Sta
 __Example 2: Defining ButtonContentTemplate and ContentTemplate__
 <snippet id='radcardview-features-controlpanel-example_2_defining_buttoncontenttemplate_and_contenttemplate-xaml' />
 
-__Figure 2: CardView Control Panel with Data Templates__
+>caption CardView control panel with data templates
+
 ![{{ site.framework_name }} RadCardView CardView Control Panel with Data Templates](images/radcardview-features-control-panel-1.png)
 
 ## See Also

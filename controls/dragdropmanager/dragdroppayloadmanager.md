@@ -33,7 +33,7 @@ The __RadListBoxes__ are defined in XAML the following way:
 
 You can see the application in __Figure 1__:
 
-Figure 1: ListBox1 is on the left and ListBox2 is on the right.
+>caption ListBox1 is on the left and ListBox2 is on the right.
 
 ![Drag Drop Manager Payload Manager 01](images/DragDropManager_PayloadManager_01.png)
 
@@ -91,7 +91,8 @@ In addition to this, you can use the __DragDropPayloadManager__ in order to chec
 
 __Figure 2__ shows the final result. When the dragged item is dropped, it will be converted to a string, added to the ItemsSource of the second __RadListBox__ and removed from the ItemsSource of the first list box.
 
-Figure 2: ListBox1 is on the left and ListBox2 is on the right. After the drop is completed the object is converted to string.
+>caption ListBox1 is on the left and ListBox2 is on the right. After the drop is completed the object is converted to string.
+
 ![Drag Drop Manager Payload Manager 02](images/DragDropManager_PayloadManager_02.png)
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DragDropUsingDragDropPayloadManager).       

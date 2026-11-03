@@ -46,7 +46,8 @@ __Example 1: Defining RadLegend in XAML__
 __Example 2: Defining RadLegend in code__
 <snippet id='radlegend-getting-started-defining_radlegend_in_code-cs' />
 
-#### __Figure 1: RadLegend__
+>caption RadLegend
+
 ![{{ site.framework_name }} RadLegend RadLegend](images/radlegend-getting-started-0.png)
 
 ## Customizing the Legend Items

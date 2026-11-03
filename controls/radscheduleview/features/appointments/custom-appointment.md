@@ -41,7 +41,7 @@ __Example 2: Create the TasksCollection__
 <snippet id='radscheduleview-features-appointments-custom-appointment-block_3-cs' />
 <snippet id='radscheduleview-features-appointments-custom-appointment-block_4-vb' />
 
-__Figure 1: Result from Example 2__
+>caption Result from example 2
 
 ![RadScheduleView with custom appointments](images/custom_appointment1.png)
 
@@ -57,7 +57,8 @@ __Example 3: Bind the IsDone property__
 
 <snippet id='radscheduleview-features-appointments-custom-appointment-block_5-xaml' />
 
-__Figure 2: Result from Example 3__
+>caption Result from example 3
+
 ![RadScheduleView with custom EditAppointmentDialogStyle](images/custom_appointment2.PNG)
 
 >tip The important thing to note here is that we can bind to our new properties using __Occurrence.Appointment__.
@@ -82,7 +83,7 @@ __Example 5: Define a ToolTipTemplate__
 
 <snippet id='radscheduleview-features-appointments-custom-appointment-block_7-xaml' />
 
-__Figure 3: Result from Examples 4 and 5__
+>caption Result from examples 4 and 5
 
 ![RadScheduleView with Custom AppointmentItemTemplate and ToolTipTemplate](images/custom_appointment7.png)
 

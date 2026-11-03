@@ -23,7 +23,8 @@ __Defining a CardMessage__
 
 <snippet id='radchat-features-messages-card-messages-cardmessage-example_1_defining_an_cardmessage-cs' />
 
-__Defining CardMessage__
+>caption Defining CardMessage
+
 ![Defining ImageCard](images/RadChat_Messages_CardMessage_01.png)
 
 ## See Also  

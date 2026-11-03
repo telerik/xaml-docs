@@ -19,7 +19,8 @@ This article describes the customization points available in the control.
 
 Once enabled, dragging behavior by default allows items to be dropped on other items and between items. A line between the items will be displayed briefly as a visual indicator that the item can be dropped in the location of the line. 
 
-__Figure 1: Drag drop in action__
+>caption Drag drop in action
+
 ![Rad Tree View-Drag Drop-Preview Line](images/RadTreeView-DragDrop-PreviewLine.png)
 
 The drag/drop operation contains three __visual elements__ (tooltips):		
@@ -28,7 +29,8 @@ The drag/drop operation contains three __visual elements__ (tooltips):
 * Drag Tooltip
 * Drop Preview Line
 
-__Figure 2: Drag drop visual elements__
+>caption Drag drop visual elements
+
 ![Rad Tree View-Drag Drop-Visual Elements](images/RadTreeView-DragDrop-VisualElements.png)
 
 More details about how to disable each one of the elements you will find later in the topic.
@@ -44,7 +46,8 @@ __Example 2: Disable drop in code-behind__
 <snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_2-cs' />
 <snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_3-vb' />
 
-__Figure 3: Disabled drop action__
+>caption Disabled drop action
+
 ![Rad Tree View-Drag Drop-Disable Drop](images/RadTreeView-DragDrop-DisableDrop.png)
 
 ## Disable Drag Preview
@@ -58,7 +61,8 @@ __Example 4: Disable drag preview in code-behind__
 <snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_5-cs' />
 <snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_6-vb' />
 
-__Figure 4: Hidden drag preview element__
+>caption Hidden drag preview element
+
 ![{{ site.framework_name }} RadTreeView Hidden drag preview element](images/RadTreeView_TreeViewDragAndDrop_050.png)
 
 ## Disable Drag Tooltip 
@@ -72,7 +76,8 @@ __Example 6: Disable drag tooltip in code-behind__
 <snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_8-cs' />
 <snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_9-vb' />
 
-__Figure 5: Hidden drag tooltip__
+>caption Hidden drag tooltip
+
 ![{{ site.framework_name }} RadTreeView Hidden drag tooltip](images/RadTreeView_TreeViewDragAndDrop_060.png)
 
 ## Disable Drop Preview Line 
@@ -86,7 +91,8 @@ __Example 8: Disable drop preview line in code-behind__
 <snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_11-cs' />
 <snippet id='radtreeview-features-dragdrop-customizing-drag-drop-block_12-vb' />
 
-__Figure 6: Hidden drag/drop visual elements__
+>caption Hidden drag/drop visual elements
+
 ![{{ site.framework_name }} RadTreeView Hidden drag/drop visual elements](images/RadTreeView_TreeViewDragAndDrop_070.png)
 
 ## Customizing Drag Drop Actions

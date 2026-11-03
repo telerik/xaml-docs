@@ -31,7 +31,7 @@ The expanded length of the __RadPanelBarItem__ element can be controlled via its
 __Setting PanelBarItem Expanded Length Constraints__
 <snippet id='radpanelbar-features-resizeable-items-block_3-xaml' />
 
-__RadPanelBarItem with Expanded Length Constraints__
+>caption RadPanelBarItem with expanded length constraints
 
 ![expanded item length constraints](images/panelbaritem-expanded.gif)
 

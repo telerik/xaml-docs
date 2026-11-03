@@ -49,7 +49,7 @@ __Adding RadOfficeNavigationBarItems in code__
 <snippet id='radofficenavigationbar-getting-started-block_3-cs' />
 <snippet id='radofficenavigationbar-getting-started-block_3-vb' />
 
-__RadOfficeNavigationBar with several RadOfficeNavigationBarItems defined in its Items collection__
+>caption RadOfficeNavigationBar with several RadOfficeNavigationBarItems defined in its items collection
 
 ![{{ site.framework_name }} RadOfficeNavigationBar with static items](images/officenavigationbar-getting-started-1.png)
 
@@ -76,7 +76,7 @@ Now that you have prepared the needed sample data, it is time to bind it to the 
 __Binding the collection to the ItemsSource property__
 <snippet id='radofficenavigationbar-getting-started-block_6-xaml' />
 
-__RadOfficeNavigationBar with a collection bound to its ItemsSource property__
+>caption RadOfficeNavigationBar with a collection bound to its ItemsSource property
 
 ![{{ site.framework_name }} RadOfficeNavigationBar with a collection bound to its ItemsSource property](images/officenavigationbar-getting-started-2.png)
 
@@ -102,7 +102,7 @@ __Merge the ResourceDictionaries__
 
 The following image shows a RadOfficeNavigationBar with the __Windows8__ theme applied.
 
-__RadOfficeNavigationBar with the Windows8 theme__
+>caption RadOfficeNavigationBar with the Windows8 theme
 
 ![{{ site.framework_name }} RadOfficeNavigationBar with the Windows8 theme](images/officenavigationbar-getting-started-3.png)
 

@@ -34,7 +34,7 @@ __Setting the HeaderTemplate, SideHeaderTemplate, and FooterTemplate Properties 
 >In order to use the built-in commands, you should define the following namespace:
 __xmlns:wizard="clr-namespace:Telerik.Windows.Controls.Wizard;assembly=Telerik.Windows.Controls.Navigation"__
 
-__Wizard page with custom header, side header, and footer templates__
+>caption Wizard page with custom header, side header, and footer templates
 
 ![Pages SettingTemplates](images/pages-settingtemplates.png)
 
@@ -80,7 +80,7 @@ page.SideHeaderWidth = 220;
 
 This approach is useful when you need to apply size changes dynamically based on runtime conditions.
 
-__Wizard page with custom header and side header size__
+>caption Wizard page with custom header and side header size
 
 ![WPF RadWizard Custom Header and Side Header Size](images/radwizard-pages-header-size-002.png)
 

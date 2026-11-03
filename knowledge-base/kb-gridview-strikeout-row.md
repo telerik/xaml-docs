@@ -388,6 +388,6 @@ __Setting up the RadGridView control using the created model and view model__
     </Grid>
 ```
 
-__GridViewRow with a strikeout/strikethrough effect__
+>caption GridViewRow with a strikeout/strikethrough effect
 
 ![GridViewRow with a strikeout/strikethrough effect](images/kb-gridview-strikeout-row-0.png)

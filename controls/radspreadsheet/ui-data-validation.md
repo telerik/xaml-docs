@@ -18,7 +18,7 @@ Data validation is a feature of __RadSpreadsheet__ that helps you define restric
 
 You can easily set data validation rules using the data validation dialog which can be shown from the Data tab in the predefined RibbonView, as shown below.
 
-__Data Validation Dialog__
+>caption Data validation dialog
 
 ![Rad Spreadsheet UI Data Validation 01](images/RadSpreadsheet_UI_Data_Validation_01.png)
 
@@ -37,7 +37,7 @@ Data Validation allows you to turn on the option to circle invalid data. This wa
 The following image shows how to turn on the option and the result when invalid data is present in the worksheet.
 
 
-__Circle Invalid Data__
+>caption Circle invalid data
 
 ![Rad Spreadsheet UI Data Validation 01](images/RadSpreadsheet_UI_Data_Validation_02.png)
 

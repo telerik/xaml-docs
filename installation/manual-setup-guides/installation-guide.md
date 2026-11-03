@@ -118,20 +118,20 @@ The UI for WPF product can be installed also via the Telerik UI for WPF Extensio
 
 4. In case you haven't installed a [license key]({%slug installing-license-key%}) already, you can download one using the License Validation screen.
 	
-	__License validation screen (license not found)__  
-	
+>caption License validation screen (license not found)
+
 	![Telerik UI for WPF license validation screen in Visual Studio](images/installation-adding-to-application-create-application-and-adding-control-license-validation.png)
 	
-	__License validation screen (successfully downloaded a license)__
-	
+>caption License validation screen (successfully downloaded a license)
+
 	![Telerik UI for WPF license validation screen after a successful download](images/installation-adding-to-application-create-application-and-adding-control-successfull-download.png)
 
 	If you have a license key already installed the License Validation screen will be skipped.
 
 You can further configure the project using the Project Configuration Wizard. You can do that by going to the __Extensions > Telerik > Telerik UI for WPF > Configure Project__ menu in Visual Studio. When you open the wizard you can select the controls you are going to use from the list (or search them in the search box). Once you have selected them, click Finish. This will add the required dlls and references to your project.
 
-__Adding references to the charting controls__  
-	
+>caption Adding references to the charting controls
+
 ![Visual Studio WPF application with a Telerik UI for WPF control added](images/installation-adding-to-application-create-application-and-adding-control-3.png)
 
 This step is optional and you will only need it if you use controls that are not defined in `Telerik.Windows.Controls.dll`.

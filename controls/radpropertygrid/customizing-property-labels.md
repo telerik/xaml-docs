@@ -79,7 +79,7 @@ __Applying LabelStyle to a PropertyDefinition__
 </telerik:RadPropertyGrid>
 ```
 
-__A field label styled through LabelStyle__
+>caption A field label styled through LabelStyle
 
 ![WPF RadPropertyGrid field label styled through LabelStyle](images/radpropertygrid-customizing-property-labels-001.png)
 
@@ -101,7 +101,7 @@ __Setting RadPropertyGrid.LabelTemplate__
 </telerik:RadPropertyGrid>
 ```
 
-__All field labels rendered through RadPropertyGrid.LabelTemplate__
+>caption All field labels rendered through RadPropertyGrid.LabelTemplate
 
 ![WPF RadPropertyGrid field labels rendered through RadPropertyGrid.LabelTemplate](images/radpropertygrid-customizing-property-labels-002.png)
 
@@ -131,7 +131,7 @@ private void PropertyGrid_AutoGeneratingPropertyDefinition(object sender, Teleri
 }
 ```
 
-__A single field label overridden through PropertyDefinition.LabelTemplate__
+>caption A single field label overridden through PropertyDefinition.LabelTemplate
 
 ![WPF RadPropertyGrid single field label overridden through PropertyDefinition.LabelTemplate](images/radpropertygrid-customizing-property-labels-003.png)
 

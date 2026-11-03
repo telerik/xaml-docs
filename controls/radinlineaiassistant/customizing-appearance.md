@@ -22,7 +22,7 @@ __Setting a custom watermark__
 this.assistant.WatermarkContent = "Ask AI to edit the selected text...";
 ```
 
-__RadInlineAIAssistant with a Customized Watermark Content__
+>caption RadInlineAIAssistant with a customized watermark content
 
 ![WPF RadInlineAIAssistant with a Customized Watermark Content](images/radinlineaiassistant-customizing-appearance-001.png)
 
@@ -47,7 +47,7 @@ this.assistant.InputAreaBorderStyle = (Style)this.Resources["CustomInputAreaBord
 this.assistant.InputAreaPadding = new Thickness(8);
 ```
 
-__RadInlineAIAssistant with a Customized Input Area__
+>caption RadInlineAIAssistant with a customized input area
 
 ![WPF RadInlineAIAssistant with a Customized Input Area](images/radinlineaiassistant-customizing-appearance-002.png)
 

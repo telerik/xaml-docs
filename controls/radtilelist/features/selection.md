@@ -35,7 +35,8 @@ __Example 1: Set SelectionMode of RadTileList to Multiple__
 
 __Figure 1__ shows the result when Multiple selection is enabled and several tiles are included in the selection.
 
-#### __Figure 1: Multiple selection in RadTileList__
+>caption Multiple selection in RadTileList
+
 ![Grouping SL](images/RadTileList_Features_Selection_01.PNG)
 
 ## SelectedItem and SelectedItems

@@ -35,7 +35,8 @@ To customize the appearance of the RadNavigationViewItems and also allow sub-ite
 __Example 3: Setting up the view__
 <snippet id='radnavigationview-populating-with-data-hierarchical-databinding-block_3-xaml' />
 
-#### Figure 1: RadNavigationView with sub items
+>caption RadNavigationView with sub items
+
 ![{{ site.framework_name }} RadNavigationView RadNavigationView with sub items](images/radnavigationview-populating-with-data-hierarchical-databinding-0.png)
 
 Note that for every business object from the data bound collection, RadNavigationView will generate a RadNavigationViewItem container representing this object.

@@ -96,7 +96,7 @@ __Setting the theme's color variation in the static constructor of the custom Us
 	End Class
 ```
 
-__Designer with the Dark color variation of the Fluent theme__
+>caption Designer with the dark color variation of the fluent theme
 
 ![{{site.framework_name}} Designer with the Dark color variation of the Fluent theme](images/kb-themes-set-color-variation-design-time-0.png )
 

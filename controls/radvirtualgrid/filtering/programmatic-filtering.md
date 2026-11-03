@@ -49,7 +49,7 @@ __Subscribing to the DistinctValuesLoading event__
 
 The end result after providing the needed distinct values will be as shown below.
 
-__RadVirtualGrid populated with distinct values__
+>caption RadVirtualGrid populated with distinct values
 
 ![WPF Opening the FilteringControl of RadVirtualGrid](images/RadVirtualGrid_Programmatic_Filtering_02.png)
 

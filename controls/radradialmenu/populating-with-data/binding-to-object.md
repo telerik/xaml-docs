@@ -42,7 +42,8 @@ The final step would be to set the ViewModel as DataContext and bind the already
 
 You can see the final result on __Figure 1__.
 
-__Figure 1__: __RadRadialMenu__ populated from the bound collection of CustomMenuItem objects
+>caption RadRadialMenu populated from the bound collection of CustomMenuItem objects
+
 ![Rad Radial Menu Populating with data 02](images/RadRadialMenu_Populating_with_data_02.png)
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/RadialMenu/BindingItemsSource).      

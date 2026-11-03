@@ -37,7 +37,7 @@ __Changing the theme of a RadSlider to Windows11 in code__
 	StyleManager.SetTheme(Me.radSlider, New Windows11Theme())
 ```
 
-__RadSlider with Windows11 theme applied__  
+>caption RadSlider with Windows11 theme applied
 
 ![Telerik UI for WPF RadSlider displayed with a built-in theme](images/Common_StylingThemingSettingBuiltInTheme_020_WPF.png)
 

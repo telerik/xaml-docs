@@ -81,6 +81,6 @@ __Example 3: Define the style for the affected header cells in App.xaml__
 	</Style>
 ```
 
-#### Figure 1: The highlighted header cell of the filtered column
+>caption The highlighted header cell of the filtered column
 
 ![The highlighted header cell of the filtered column](images/kb-gridview-style-filtered-columns-1.png)

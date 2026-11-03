@@ -166,7 +166,7 @@ __Utilizing the AzureGeocodingHelper class's GetGeoCode method__
     End Sub
 ```
 
-__RadMap with AzureMapProvider and geocoding functionality__
+>caption RadMap with AzureMapProvider and geocoding functionality
 
 ![RadMap with AzureMapProvider and geocoding functionality](images/kb-map-azuremapprovider-geocoding.png)
 

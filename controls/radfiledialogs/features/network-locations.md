@@ -21,7 +21,8 @@ In order for the RadFileDialogs and ExplorerControl to show the Network drive an
 <snippet id='radfiledialogs-features-network-locations-block_1-cs' />
 
 
-#### __Figure 1: Result from Example 1 in the Office2016 Theme__
+>caption Result from example 1 in the Office2016 theme
+
 ![RadOpenFileDialog Network Locations](images/FileDialogs_NetworkLocations.png)
 
 > **ShowNetworkLocations** is not a dependency property and does not support runtime change.

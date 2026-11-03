@@ -22,7 +22,8 @@ __RadContextMenu__ provides the power to boost the existing navigation of your a
 {% include cta-panel-overview.html %}
 {% endif %}
 
-__RadContextMenu Overview__
+>caption RadContextMenu overview
+
 ![WPF RadContextMenu overview](images/RadContextMenu_Overview_03.png)
 
 ## Key Features

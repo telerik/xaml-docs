@@ -26,7 +26,8 @@ __Example 1: Declaring a CandlestickSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-financial-series-candlestickseries-example_1_declaring_a_candlestickseries_in_xaml-xaml' />
 
 
-#### __Figure 1: CandlestickSeries visual appearance__
+>caption CandlestickSeries visual appearance
+
 ![Telerik UI for WPF RadChartView CandlestickSeries visual appearance](images/radchartview-series-candlestickseries.png)
 
 ## Properties

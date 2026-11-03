@@ -12,7 +12,8 @@ slug: barcode-data-matrix-overview
 
 Data Matrix barcode is a two-dimensional type of code used widely in industry for marking small parts and items due to its high data density and reliability. Data Matrix code consists of dark and light square cells that form a matrix. The produced code can be square or rectangular and can have size up to 144x144 for square codes or 16x48 for rectangular codes. To provide better readability, the Data Matrix code includes error correction algorithm, allowing to reconstruct up to 30% of damaged code image.
 
-#### __Figure 1: Data Matrix Barcode__
+>caption Data matrix barcode
+
 ![datamatrix-barcode](images/barcode-datamatrix-structure.png)
 
 ## Data Matrix Barcode Structure

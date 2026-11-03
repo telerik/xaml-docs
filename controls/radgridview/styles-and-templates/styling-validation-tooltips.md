@@ -23,7 +23,7 @@ Error validation template comes from __WPF__ framework.
 Especially for __Silverlight__ a special __ValidationToolTip__ element was developed for common input controls and native MS controls that are supported by __Telerik__ themes. 
 {% endif %}
 
-#### __Figure 1: The default validation tooltip__
+>caption The default validation tooltip
 
 ![Telerik {{ site.framework_name }} DataGrid Validation-Tooltip](images/Validation-Tooltip.png)
 

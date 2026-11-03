@@ -25,7 +25,7 @@ __Defining a button in code__
 <snippet id='radbuttons-features-dropdown-button-block_2-vb' />
 
 
-__Drop-down button__
+>caption Drop-down button
 
 ![{{ site.framework_name }} RadButtons Dropdown Button](images/radbuttons-features-dropdown-button-0.png)
 
@@ -36,7 +36,7 @@ In order to add content to the drop-down area of the RadDropDownButton you have 
 __Adding dropdown content to the button__ 
 <snippet id='radbuttons-features-dropdown-button-drop_down_button-xaml' />
 
-__Drop-down content__
+>caption Drop-down content
 
 ![{{ site.framework_name }} RadButtons Dropdown Button with Dropdown Content](images/radbuttons-features-dropdown-button-1.png)
 

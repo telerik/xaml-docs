@@ -150,7 +150,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 
 ## Adding Label
 
-**1.  You can show any text in annotation zone by re-templating it and adding *TextBlock* in it's *ControlTemplate*. For this purpose the Rectangle and the newly added *TextBlock* are placed in a Grid. *The retemplated MarkedZone's Style* is as follows*:**
+**1.  You can show any text in annotation zone by re-templating it and adding *TextBlock* in it's *ControlTemplate*. For this purpose the Rectangle and the newly added *TextBlock* are placed in a Grid. *The retemplated MarkedZone's Style* is as follows:**
 
 ```XAML
 	<Style x:Key="NewMarkedZones" TargetType="telerik:MarkedZone">

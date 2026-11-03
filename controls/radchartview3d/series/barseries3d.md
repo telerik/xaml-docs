@@ -26,7 +26,8 @@ __Example 1: Defining series in XAML__
 <snippet id='radchartview3d-series-barseries3d-example_1_defining_series_in_xaml-xaml' />
 
 	
-__Figure 1: BarSeries3D__
+>caption BarSeries3D
+
 ![{{ site.framework_name }} RadChartView3D BarSeries3D](images/radchartview-3d-barseries3d-0.png)
 
 ## Data bound series
@@ -53,7 +54,8 @@ __Example 4: Setting the origin value__
 
 __Figure 2__ demonstrates the result from __Example 1__ but with its OriginValue set to 15.
 	
-__Figure 2: Origin value__
+>caption Origin value
+
 ![{{ site.framework_name }} RadChartView3D Origin value](images/radchartview-3d-barseries3d-1.png)
 
 ## Customizing the data point visuals

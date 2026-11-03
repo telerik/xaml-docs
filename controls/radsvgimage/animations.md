@@ -71,7 +71,7 @@ __Sample SVG file with animations__
 __RadSvgImage instance using an SVG file with animations__
 <snippet id='radsvgimage-animations-block_1-xaml' />
 
-__RadSvgImage displaying an SVG file with animations__
+>caption RadSvgImage displaying an SVG file with animations
 
 ![{{site.framework_name}} RadSvgImage displaying an SVG file with animations](images/radsvgimage-animations-0.gif)
 

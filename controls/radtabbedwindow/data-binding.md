@@ -39,7 +39,7 @@ __Example 3: Bind the ItemsSource property__
 
 Upon running the application, your RadTabbedWindow will now be populated with tabs as shown on **Figure 1**.
 
-__DataBound RadTabbedWindow__
+>caption DataBound RadTabbedWindow
 
 ![Telerik UI for WPF RadTabbedWindow data binding showing tabs generated from an ItemsSource collection](images/tabbedwindow-getting-started-2.png)
 

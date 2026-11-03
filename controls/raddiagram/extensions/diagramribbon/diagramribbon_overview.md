@@ -31,7 +31,8 @@ __Example 1: Specify RadDiagramRibbon in XAML__
 <snippet id='raddiagram-extensions-diagramribbon-diagramribbon-overview-example_1_specify_raddiagramribbon_in_xaml-xaml' />
 
 
-__Figure 1: DiagramRibbon Overview__ 
+>caption DiagramRibbon overview
+
 ![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Overview.png)
 
 >Please note that the examples in this tutorial are showcasing the Windows8 theme. In the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article you can find more information on how to set an application-wide theme.
@@ -52,7 +53,8 @@ __Example 3: Add RadRibbonTab programmatically__
 <snippet id='raddiagram-extensions-diagramribbon-diagramribbon-overview-example_3_add_radribbontab_programmatically-cs' />
 
 
-#### __Figure 2: Add new tab__ 
+>caption Add new tab
+
 ![Diagram Ribbon Overview New Tab](images/RadDiagram_DiagramRibbon_Overview_NewTab.png)
 
 ### Add New RadRibbonGroup
@@ -67,7 +69,8 @@ __Example 5: Add RadRibbonGroup programmatically__
 <snippet id='raddiagram-extensions-diagramribbon-diagramribbon-overview-example_5_add_radribbongroup_programmatically-cs' />
 
 
-#### __Figure 3: Add new group__ 
+>caption Add new group
+
 ![Diagram Ribbon Overview New Group](images/RadDiagram_DiagramRibbon_Overview_NewGroup.png)
 
 ## Keyboard Support
@@ -107,7 +110,8 @@ __Example 7: Setting the ShowLayoutModeButton property__
 <snippet id='raddiagram-extensions-diagramribbon-diagramribbon-overview-example_7_setting_the_showlayoutmodebutton_property-xaml' />
 
 
-__Figure 4: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
+>caption RadDiagramRibbon simplified LayoutMode in the fluent theme
+
 ![RadDiagramRibbon Simplified LayoutMode](images/RadDiagram_DiagramRibbon_SimplifiedLayoutMode.gif)
 
 ## Diagram Active Tool 
@@ -118,7 +122,8 @@ __Example 8: Setting ActiveToolType to Text tool__
 <snippet id='raddiagram-extensions-diagramribbon-diagramribbon-overview-example_8_setting_activetooltype_to_text_tool-xaml' />
 
 
-__Figure 5: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
+>caption RadDiagramRibbon simplified LayoutMode in the fluent theme
+
 ![RadDiagramRibbon ActiveToolType](images/RadDiagram_DiagramRibbon_ActiveToolType.png)
 
 ## See Also

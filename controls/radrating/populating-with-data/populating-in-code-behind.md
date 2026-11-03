@@ -15,7 +15,8 @@ This tutorial will walk you through the common tasks of [adding](#Adding-RadRati
 
 <snippet id='radrating-populating-with-data-populating-in-code-behind-block_1-xaml' />
 
-__Figure 1: Result from Example 1__
+>caption Result from example 1
+
 ![RadRating](images/rating_default.png)
 
 ## Adding RadRatingItems
@@ -31,7 +32,8 @@ In order to add new rating items to a __RadRating__ control, you have to perform
 	<snippet id='radrating-populating-with-data-populating-in-code-behind-block_2-cs' />
 	<snippet id='radrating-populating-with-data-populating-in-code-behind-block_3-vb' />
 
-__Figure 2: Result from Example 2__
+>caption Result from example 2
+
 ![RadRating](images/rating_wit_6_items.png)
 
 In order to clear the default rating items and add new you have to add one additional step to the previous:
@@ -47,7 +49,8 @@ In order to clear the default rating items and add new you have to add one addit
 <snippet id='radrating-populating-with-data-populating-in-code-behind-block_4-cs' />
 <snippet id='radrating-populating-with-data-populating-in-code-behind-block_5-vb' />
 
-__Figure 3: Result from Example 3__
+>caption Result from example 3
+
 ![RadRating](images/rating_with__2_items.png)
 
 >tip Consider declaring rating items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.

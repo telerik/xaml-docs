@@ -41,7 +41,8 @@ __RadVirtualGrid__ is designed to handle huge amounts of data while keeping its 
 
 The styling options of the control support applying __Brushes__ to various of its elements. They are described in the following figure. 
 
-#### __Figure 1: RadVirtualGrid's Visual Elements__ 
+>caption RadVirtualGrid's Visual elements
+
 ![RadVirtualGrid's Visual Elements](images/RadVirtualGrid_Styling_01.png)
 
 The full set of properties is listed below.

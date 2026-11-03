@@ -26,7 +26,8 @@ __Example 1: Declaring an PointSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-point-series-point-example_1_declaring_an_pointseries_in_xaml-xaml' />
 
 
-#### __Figure 1: PointSeries visual appearance__
+>caption PointSeries visual appearance
+
 ![Telerik UI for WPF RadChartView PointSeries visual appearance](images/radchartview-series-pointseries.png)
 
 ## Properties

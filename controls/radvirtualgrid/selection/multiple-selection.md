@@ -19,7 +19,8 @@ The __Extended__ selection on the other hand, allows users to select multiple re
 
 > Pressing __Ctrl+A__ will select all items.
 
-#### __Figure 1: RadVirtualGrid with Extended SelectionMode and Cell SelectionUnit__
+>caption RadVirtualGrid with extended SelectionMode and cell SelectionUnit
+
 ![RadVirtualGrid with Extended SelectionMode and Cell SelectionUnit](images/RadVirtualGrid_Selection_01.png)
 
 ## See also

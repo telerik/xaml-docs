@@ -143,7 +143,8 @@ __Example 2: Registering the Custom CSharpTagger__
     }
 ```
 
-#### __Figure 1: Csharp File With Colorized Class Names__
+>caption Csharp file with colorized class names
+
 ![Csharp File With Colorized Class Names](images/kb-syntaxeditor-classify-class-names-from-assembly.png)
 
 ## See Also

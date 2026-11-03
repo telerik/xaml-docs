@@ -18,7 +18,8 @@ Example 1 demonstrates a regular __RadRating__ declaration, where __telerik__ po
 __Example 1: Declare a RadRating__
 <snippet id='radrating-populating-with-data-populating-declaratively-block_1-xaml' />
 
-#### __Figure 1: Result from Example 1__
+>caption Result from example 1
+
 ![RadRating](images/rating_default.png)
 
 In order to add rating items you need to use the __RadRating's__ __Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadRatingItems__. Example 2 shows how to add RadRatingItems to your RadRating.
@@ -26,7 +27,8 @@ In order to add rating items you need to use the __RadRating's__ __Items__ prope
 __Example 2: Adding RadRatingItems__
 <snippet id='radrating-populating-with-data-populating-declaratively-block_2-xaml' />
 
-#### __Figure 2: Result from Example 2__
+>caption Result from example 2
+
 ![RadRating with RadRatingItems](images/rating_with_10_items.png)
 
 >tip Consider declaring rating items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.

@@ -34,13 +34,16 @@ __VB__
 
 On the following screenshots you can see how setting different cultures will affect the displayed data.
 
-Figure 1: Culture="en-US"
+>caption Culture="en-US"
+
 ![Rad Pivot Grid Features Culture Support 01](images/RadPivotGrid_Features_CultureSupport_01.png)
 
-Figure 2: Culture="fr-FR"
+>caption Culture="fr-FR"
+
 ![Rad Pivot Grid Features Culture Support 02](images/RadPivotGrid_Features_CultureSupport_02.png)
 
-Figure 3: Without any Culture set (using the CurrentCulture for the currency symbol)
+>caption Without any culture set (using the CurrentCulture for the currency symbol)
+
 ![Rad Pivot Grid Features Culture Support 03](images/RadPivotGrid_Features_CultureSupport_03.png)
 
 ## Changing LocalDataSourceProvider Culture at Runtime

@@ -25,7 +25,8 @@ __Example 1: Define RadScheduleView and set AgendaViewDefinition in the ViewDefi
 __Example 2: Setting the AppointmentSource of RadScheduleView__
 <snippet id='radscheduleview-features-viewdefinitions-agenda-view-definition-block_2-cs' />
 
-__Figure 1: AgendaViewDefinition__
+>caption AgendaViewDefinition
+
 ![{{ site.framework_name }} RadScheduleView AgendaViewDefinition](images/radscheduleview-viewdefinition-agenda-0.png)
 
 ## Number of Visible Days
@@ -37,7 +38,8 @@ __Example 3: Setting visible days number__
 
 The default value of VisibleDays is 7.
 
-__Figure 2: AgendaViewDefinition with 2 visible days__
+>caption AgendaViewDefinition with 2 visible days
+
 ![{{ site.framework_name }} RadScheduleView AgendaViewDefinition with 2 visible days](images/radscheduleview-viewdefinition-agenda-1.png)
 
 ## Hide Empty Days
@@ -47,10 +49,12 @@ The agenda view displays empty days by default. You can alter this behavior and 
 __Example 4: Hiding empty days__
 <snippet id='radscheduleview-features-viewdefinitions-agenda-view-definition-block_4-xaml' />
 
-__Figure 3: Setting ShowEmptyDays with appointments (comparison)__
+>caption Setting ShowEmptyDays with appointments (comparison)
+
 ![{{ site.framework_name }} RadScheduleView Setting ShowEmptyDays with appointments (comparison)](images/radscheduleview-viewdefinition-agenda-2.png)
 
-__Figure 4: Setting ShowEmptyDays without appointments (comparison)__
+>caption Setting ShowEmptyDays without appointments (comparison)
+
 ![{{ site.framework_name }} RadScheduleView Setting ShowEmptyDays without appointments (comparison)](images/radscheduleview-viewdefinition-agenda-3.png)
 
 ## See Also

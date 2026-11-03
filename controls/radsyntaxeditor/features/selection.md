@@ -16,7 +16,7 @@ The RadSyntaxEditor supports not only selection via the UI but also exposes API 
 
 The user is able to select the content inside **RadSyntaxEditor** in the same way as in Visual Studio. This is done by clicking on the desired position and dragging to the desired end of the selection.
 
-__Figure 1: RadSyntaxEditor with selected text__
+>caption RadSyntaxEditor with selected text
 
 ![RadSyntaxEditor with selected text](images/syntaxeditor-selection.png)
 
@@ -55,7 +55,7 @@ __[C#] Example 1: Customize the appearance of the selection__
 __[VB.NET] Example 1: Customize the appearance of the selection__
 <snippet id='radsyntaxeditor-features-selection-block_3-vb' />
 
-__Figure 2: RadSyntaxEditor with custom selection colors__
+>caption RadSyntaxEditor with custom selection colors
 
 ![RadSyntaxEditor with custom selection colors](images/syntaxeditor-selection-red.png)
 

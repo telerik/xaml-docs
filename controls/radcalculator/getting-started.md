@@ -34,7 +34,8 @@ If you are not using NuGet packages, you can add a reference to the following as
 __Defining RadCalculator__  
 <snippet id='radcalculator-getting-started-block_1-xaml' />
 
-#### __RadCalculator example__
+>caption RadCalculator example
+
 ![A picture showing {{ site.framework_name }} RadCalculator](images/RadCalculator-Basic.png)
 
 The calculated value can be accessed via the `Value` property of `RadCalculator`.
@@ -45,13 +46,13 @@ The current history can be accessed via the `History` property of `RadCalculator
 
 `RadCalculator` allows you to perform all the basic calculations - __addition, subtraction, multiplication, division__. All of them can be executed either by the corresponding buttons or through the keyboard. Once a particular operation is executed, the history is updated accordingly.
 
-__Basic Calculations with RadCalculator__  
+>caption Basic calculations with RadCalculator
 
 ![A picture showing {{ site.framework_name }} RadCalculator with basic calculations](images/RadCalculator-BasicCalculations.png)
 
 `RadCalculator` allows you to perform also a couple of more complex calculations - __square root, reciprocal, percent, negate__. All of them can be executed either by the corresponding buttons or through the keyboard. 
 
-__Complex Calculations with RadCalculator__  
+>caption Complex calculations with RadCalculator
 
 ![A picture showing {{ site.framework_name }} RadCalculator with complex calculations](images/RadCalculator-ComplexCalculations.png)
 
@@ -77,7 +78,7 @@ __Merge the ResourceDictionaries__
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 	
-__RadCalculator with the Material theme__  
+>caption RadCalculator with the material theme
 
 ![{{ site.framework_name }} RadCalculator with Material theme](images/calculator-material-theme.png)
 

@@ -59,7 +59,8 @@ __Example 1: Custom style targeting__
 
 > The demonstrated approach may not be relevant for all UI for WPF themes. 
 
-#### __Figure 1: Selected and Hovered GridViewRows with changed Foreground in the Fluent theme__
+>caption Selected and hovered GridViewRows with changed foreground in the fluent theme
+
 ![Selected and Hovered GridViewRows with changed Foreground in the Fluent theme](images/kb-gridview-row-modify-foreground.png)
 
 ## See Also

@@ -100,6 +100,6 @@ __Set the custom DataTemplate to the DropDownItemTemplate property of RadAutoCom
                          DropDownItemTemplate="{StaticResource HighlightTextBlockDataTemplate}"/>
 ```
 
-__RadAutoCompleteBox with RadHighlightTextBlock__
+>caption RadAutoCompleteBox with RadHighlightTextBlock
 
 ![{{ site.framework_name }} RadAutoCompleteBox with RadHighlightTextBlock](images/kb-highlighttextblock-integration-with-radautocompletebox-0.png)

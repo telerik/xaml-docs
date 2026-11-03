@@ -28,7 +28,8 @@ __Example 1: Declaring an PieSeries in XAML__
 <snippet id='radchartview-series-piechart-series-pieseries-example_1_declaring_an_pieseries_in_xaml-xaml' />
 
 
-__Figure 1: PieSeries visual appearance__
+>caption PieSeries visual appearance
+
 ![Telerik UI for WPF RadChartView PieSeries visual appearance](images/radchartview-series-pieseries.png)
 
 ## Properties
@@ -70,7 +71,8 @@ __Example 4: Setting RadiusFactor__
 <snippet id='radchartview-series-piechart-series-pieseries-example_4_setting_radiusfactor-xaml' />
 
 
-__Figure 2: RadiusFactor of 1 (left) and 0.4 (right)__
+>caption RadiusFactor of 1 (left) and 0.4 (right)
+
 ![Telerik UI for WPF RadChartView PieSeries with labels](images/radchartview-series-pieseries-1.png)
 
 ## Offset Pie Slice from Center
@@ -81,7 +83,8 @@ __Example 5: Offsetting pie slices__
 <snippet id='radchartview-series-piechart-series-pieseries-example_5_offsetting_pie_slices-xaml' />
 
 
-__Figure 3: Exploding pie slices__
+>caption Exploding pie slices
+
 ![Telerik UI for WPF RadChartView PieSeries with slices offset](images/radchartview-series-pieseries-2.png)
 
 Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of PieSeries. In this case when you select a data point, the correspondign pie slice will *explode* from the center of the pie.
@@ -90,7 +93,8 @@ __Example 6: Setting SelectedPointOffset__
 <snippet id='radchartview-series-piechart-series-pieseries-example_6_setting_selectedpointoffset-xaml' />
 
 
-__Figure 4: Selected exploding pie slices__
+>caption Selected exploding pie slices
+
 ![Telerik UI for WPF RadChartView PieSeries with customized slice styling](images/radchartview-series-pieseries-3.png)
 
 > The OffsetFromCenter and SelectedPointOffset works in relative units between 0 and 1. 

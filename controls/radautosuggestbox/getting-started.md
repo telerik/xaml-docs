@@ -62,13 +62,16 @@ The definition in __Example 2__ has few additional settings:
 
 >tip Use the __Text__ property to get or set the current query or suggestion text.
 
-__Figure 1: Watermark content when no text is entered__
+>caption Watermark content when no text is entered
+
 ![{{ site.framework_name }} RadAutoSuggestBox Watermark content when no text is entered](images/radautosuggestbox-getting-started-0.png)
 
-__Figure 2: Filtered results in the drop down__
+>caption Filtered results in the drop down
+
 ![{{ site.framework_name }} RadAutoSuggestBox Filtered results in the drop down](images/radautosuggestbox-getting-started-1.png)
 
-__Figure 3: No result__
+>caption No result
+
 ![{{ site.framework_name }} RadAutoSuggestBox No result](images/radautosuggestbox-getting-started-2.png)
 
 After selecting an item from the drop down list or click on the query icon, you can use __QuerySubmitted__ and __SuggestionChosen__ events to execute additional actions.
@@ -103,7 +106,8 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a __RadAutoSuggestBox__ with the **Fluent** theme applied.
 	
-__Figure 2: RadAutoSuggestBox with the Fluent theme__
+>caption RadAutoSuggestBox with the fluent theme
+
 ![RadAutoSuggestBox with Fluent theme](images/radautosuggestbox-setting-theme.png)
 
 ## Customizing Appearance

@@ -301,12 +301,9 @@ Follow these editorial constraints:
 - In definition lists, always separate the term and definition with
   `&mdash;` and no surrounding spaces. Do not use a literal em dash character,
   a hyphen, or spaced dash forms for definition-list separators.
-- In all generated or rewritten text (prose, headings, list items, Next Steps
-  descriptions), use a hyphen `-` surrounded by spaces as a separator or
-  parenthetical dash. Never use an em dash `—` or en dash `–` character.
-  The only exception is definition lists, which use `&mdash;` as specified
-  above. This rule applies to text the agent writes or rewrites — do not alter
-  existing em dashes in content that is not being edited.
+- Follow the applicable WPF grammar skill for dash punctuation in generated or
+  rewritten text, including en dashes for numeric ranges. Keep the definition-list
+  separator rule above, and preserve punctuation in text that is not being edited.
 - Do not add comments, placeholders, or TODO markers to the file.
 - Add a language tag to every fenced code block that lacks one (fixes a common
   LLM and structured-data violation).

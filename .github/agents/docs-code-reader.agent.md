@@ -46,7 +46,7 @@ For source-region references, `source` is relative to the configured source root
 
 ### 1. Read the Article
 
-Read the active Markdown article. If there is no active article, ask the user to open one or provide its path.
+Read the Markdown article specified by the user or calling agent, using its supplied path or content even when a different article is active in the editor. Fall back to the active Markdown article only when no explicit target was supplied. If neither is available, ask for the article path before proceeding.
 
 ### 2. Inventory References
 

@@ -32,7 +32,7 @@ __Example 3__
 
 <snippet id='radtreemap-populating-with-data-radpivotmap-block_4-xaml' />
 
->caption Telerik {{ site.Framework_name }} PivotMap
+>caption Telerik {{ site.framework_name }} PivotMap
 
 ![Telerik {{ site.framework_name }} PivotMap](images/radpivotmap-databinding.png)
 

@@ -16,7 +16,7 @@ The `RadCalculatorPicker` control is a drop down button with a `RadCalculator` i
 __Defining RadCalculatorPicker__
 <snippet id='radcalculator-calculatorpicker-defining_radcalculatorpicker-xaml' />
 
-__RadCalculatorPicker example__  
+>caption RadCalculatorPicker example
 
 ![A picture showing {{ site.framework_name }} RadCalculatorPicker](images/RadCalculatorPicker-Basic.png)
 
@@ -38,7 +38,7 @@ __Populating the data source__
 __Defining the RadGridView and setting up the RadCalculatorPicker as the cell edit element__
 <snippet id='radcalculator-calculatorpicker-defining_the_radgridview_and_setting_up_the_radcalculatorpicker_as_the_cell_edit_element-xaml' />
 
-__Using RadCalculatorPicker as a cell editor of RadGridView__  
+>caption Using RadCalculatorPicker as a cell editor of RadGridView
 
 ![A picture showing {{ site.framework_name }} RadCalculator as the editor of RadGridView cells](images/RadCalculatorPicker-IntegrationWithRadGridView.png)
 

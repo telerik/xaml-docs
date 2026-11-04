@@ -151,7 +151,8 @@ __Example 8: Merge the ResourceDictionaries__
 
 __Figure 14__ shows a __RadExpressionEditor__ with the **Windows8** theme applied.
 
-#### __Figure 14: RadExpressionEditor with the Windows8 theme__
+>caption RadExpressionEditor with the Windows8 theme
+
 ![RadExpressionEditor with Windows8 theme](images/radexpressionEditor-setting-theme.png)
 
 ## Telerik UI for WPF Learning Resources

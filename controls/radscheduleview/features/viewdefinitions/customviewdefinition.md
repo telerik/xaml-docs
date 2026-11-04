@@ -39,7 +39,8 @@ __Example 2: Return the custom DateGroupDescription__
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_3-cs' />
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_4-vb' />
 
-#### __Figure 1: Custom DateGroupDescription__
+>caption Custom DateGroupDescription
+
 ![{{ site.framework_name }} RadScheduleView Custom DateGroupDescription](images/radScheduleView_features_customViewDefinition_01.png)
 
 ## Set the Format of the Group Header
@@ -50,7 +51,8 @@ __Example 3: Set the format of the Group Header__
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_5-cs' />
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_6-vb' />
 
-#### __Figure 2: Formatted GroupHeader name__
+>caption Formatted GroupHeader name
+
 ![{{ site.framework_name }} RadScheduleView Formatted GroupHeader name](images/radScheduleView_features_customViewDefinition_02.png)
 
 ## Format the Text of the Visible Range 
@@ -61,7 +63,8 @@ __Example 4: Set the format of the currently visible range text__
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_7-cs' />
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_8-vb' />
 
-#### __Figure 3: Modified format of the visible range text__
+>caption Modified format of the visible range text
+
 ![{{ site.framework_name }} RadScheduleView Modified format of the visible range text](images/radScheduleView_features_customViewDefinition_03.png)
 
 ## Show the Week Group Headers
@@ -72,7 +75,8 @@ __Example 5: Show the week group headers__
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_9-cs' />
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_10-vb' />
 
-#### __Figure 4: Showing the week group headers__
+>caption Showing the week group headers
+
 ![{{ site.framework_name }} RadScheduleView Showing the week group headers](images/radScheduleView_features_customViewDefinition_04.png)
 
 ## Set the Beginning and the End of the Visible Range
@@ -82,7 +86,8 @@ The DateTime values for the start and end of the visible range, can be set throu
 __Example 6: Setting visible range__
 <snippet id='radscheduleview-features-viewdefinitions-customviewdefinition-block_11-cs' />
 
-#### __Figure 5: Modify the start and end of the visible range__
+>caption Modify the start and end of the visible range
+
 ![{{ site.framework_name }} RadScheduleView Modify the start and end of the visible range](images/radScheduleView_features_customViewDefinition_05.png)
 
 ## See Also

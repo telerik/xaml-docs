@@ -37,7 +37,8 @@ If your app is setup, you are ready to add a **RadBarcode** control to it. __Exa
 __Example 1: Defining a RadBarcode__
 <snippet id='radbarcode-barcode-getting-started-example_1_defining_a_radbarcode-xaml' />
 
-#### Figure 1: Barcode Getting Started
+>caption Barcode getting started
+
 ![Getting Started Example](images/barcode_getting_started.png)
 
 {% if site.site_name == 'WPF' %}

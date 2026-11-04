@@ -19,7 +19,7 @@ Giving your data meaningful names helps you better understand it. For example, i
 
 It is useful to set the column heading name when the first row is not visible, as shown in the image below.
 
-__Column with a Custom Heading Name__
+>caption Column with a custom heading name
 
 ![Rad Spreadsheet How To Customize Row and Column Headers 01](images/RadSpreadsheet_HowTo_Customize_Row_and_Column_Headers_01.png)
 
@@ -57,13 +57,15 @@ The headings of the rows and columns have different states. You can use these st
 
 	* **Normal**: The control is not selected.
 
-		__SelectAllControl in Normal State__
+>caption SelectAllControl in normal state
+
 		![Rad Spreadsheet SelectAllControl - not selected](images/RadSpreadsheet_HowTo_Customize_Row_and_Column_Headers_02.png)
 
 
 	* **Selected**: The control is selected.
 
-		__SelectAllControl in Selected State__
+>caption SelectAllControl in selected state
+
 		![Rad Spreadsheet SelectAllControl - selected](images/RadSpreadsheet_HowTo_Customize_Row_and_Column_Headers_03.png)
 
 ## Showing or Hiding Row and Column Headings

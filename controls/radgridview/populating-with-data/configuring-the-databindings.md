@@ -57,7 +57,7 @@ __Example 3: Define a column in XAML__
 <snippet id='radgridview-populating-with-data-configuring-the-databindings-example_3_define_a_column_in_xaml-xaml' />
 
 
-#### Figure 1: The rendered RadGridView
+>caption The rendered RadGridView
 
 ![Telerik UI for {{ site.framework_name }} RadGridView bound to an ObservableCollection with manually defined Name and Number columns](images/RadGridView_ObservableCollection_ItemsSource.png)
 

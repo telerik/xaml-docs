@@ -15,7 +15,8 @@ When __RadVirtualGrid__ populates its data through the __DataProvider__ mechanis
 
 > The sorting of __RadVirtualGrid__ can be disabled by setting the __IsSortable__ property to __False__.
 
-#### __Figure 1: Sorting RadVirtualGrid through the UI__
+>caption Sorting RadVirtualGrid through the UI
+
 ![Opening the FilteringControl of RadVirtualGrid](images/RadVirtualGrid_Sorting_01.png)
 
 ## Sorting through ColumnSortDescriptor

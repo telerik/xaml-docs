@@ -19,7 +19,7 @@ The __TrayContextMenu__ property expects a value of type [RadContextMenu]({%slug
 __Example 1: Setting TrayContextMenu__
 <snippet id='radnotifyicon-features-contextmenu-block_1-xaml' />
 
-#### __Figure 1: RadContextMenu displayed over the icon__
+>caption RadContextMenu displayed over the icon
 
 ![RadContextMenu displayed over the icon](images/radnotifyicon_contextmenu.png)
 

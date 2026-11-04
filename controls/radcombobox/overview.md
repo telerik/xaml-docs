@@ -20,7 +20,7 @@ The Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %
 {% include cta-panel-overview.html %}
 {% endif %}
 
-#### __Figure 1: RadComboBox in different modes__
+>caption RadComboBox in different modes
 
 ![Telerik UI for WPF RadComboBox shown in multiple edit and display modes](images/RadComboBox_Overview_01.png)  
 

@@ -46,8 +46,10 @@ To adjust the space around tiles, add these resources to a resource dictionary i
 <Thickness x:Key="TileMargin">8</Thickness>
 
 <!-- This implicit style applies to RadTileViewItem instances in this resource scope. -->
-<!-- For NoXaml assemblies with merged theme dictionaries, add BasedOn="{StaticResource RadTileViewItemStyle}". -->
-<Style TargetType="telerik:RadTileViewItem">
+<!-- For NoXaml assemblies with merged theme dictionaries, add BasedOn="{StaticResource RadTileViewItemStyle}". -->
+
+<Style TargetType="telerik:RadTileViewItem">
+
 	<Setter Property="Margin" Value="{StaticResource TileMargin}" />
 </Style>
 ```
@@ -78,7 +80,8 @@ __Example 3__
 
 <snippet id='radtileview-getting-started-getting-started-block_3-xaml' />
 
-#### __Figure 1__
+>caption Tile view - minimized items position
+
 ![Tile View - minimized items position](images/tileview_Step3.png)
 
 ## Setting a Theme
@@ -105,7 +108,8 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a RadTileView with the **Windows8** theme applied.
 
-#### __Figure 2: RadTileView with the Windows8 theme__
+>caption RadTileView with the Windows8 theme
+
 ![RadTileView with Windows8 theme](images/RadTileView-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

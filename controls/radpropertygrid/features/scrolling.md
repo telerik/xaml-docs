@@ -31,7 +31,7 @@ As to assigning the __Item of RadPropertyGrid__, please check the __Binding RadP
 
 You can see the result after starting the application on __Figure 1__:
 
-__Figure 1__: RadPropertyGrid in sorted mode with some fields not currently visible
+>caption RadPropertyGrid in sorted mode with some fields not currently visible
 
 ![Rad Property Grid Scroll Sorted 1](images/RadPropertyGrid_Scroll_Sorted_1.png)
 

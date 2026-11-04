@@ -95,7 +95,8 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a RadSplashScreen with the **Windows8** theme applied.
 
-#### __Figure 1: RadSplashScreen with the Windows8 theme__
+>caption RadSplashScreen with the Windows8 theme
+
 ![RadSplashScreen with Windows8 theme](images/RadSplashScreen-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

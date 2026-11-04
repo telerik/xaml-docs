@@ -27,7 +27,8 @@ __Example 2: Defining Style for the Tiles__
 
 This setup will result in the following output.
 
-#### __Figure 1: Styling the Tiles__
+>caption Styling the tiles
+
 ![Styling the Tiles](images/RadTileList_Styling_01.png)
 
 ## Styling the Group Container
@@ -39,7 +40,8 @@ __Example 3: Defining Style targeting TileGroupContainer__
 
 The visual appearance of the __TileGroupContainer__ will be as shown in the image below.
 
-#### __Figure 2: Styling the TileGroupContainer__
+>caption Styling the TileGroupContainer
+
 ![Styling the Tiles](images/RadTileList_Styling_02.png)
 
 ## See Also

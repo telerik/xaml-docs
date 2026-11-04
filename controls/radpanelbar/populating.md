@@ -37,7 +37,8 @@ The following example demonstrates how you can add a RadPanelBar in XAML.
 __RadPanelBar with Statically Declared Items in XAML__
 <snippet id='radpanelbar-populating-block_1-xaml' />
 
-__Result from the Previous Example in the Office2016 Theme__
+>caption Result from the previous example in the Office2016 theme
+
 ![RadPanelBar Getting Started](images/panelbar_getting_started.png)
 
 ## Declaratively Populating the Items Collection of the RadPanelBar Control
@@ -76,7 +77,8 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a RadPanelBar with the **Windows8** theme applied.
 
-#### __Figure 2: RadPanelBar with the Windows8 theme__
+>caption RadPanelBar with the Windows8 theme
+
 ![RadPanelBar with Windows8 theme](images/radpanelbar-setting-theme.png)
 
 

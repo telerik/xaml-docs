@@ -25,7 +25,7 @@ __Customize the appearance of the selection__
 <snippet id='radrichtextbox-features-selection-block_2-cs' />
 <snippet id='radrichtextbox-features-selection-block_3-vb' />
 
-__Custom selection colors__
+>caption Custom selection colors
 
 ![Customized Selection in RadRichTextBox](images/RadRichTextBox_Selection_02.png)
 
@@ -125,7 +125,7 @@ __Select all occurrences of the "RadRichTextBox" word__
 <snippet id='radrichtextbox-features-selection-block_10-cs' />
 <snippet id='radrichtextbox-features-selection-block_11-vb' />
 
-__Multiple selection in RadRichTextBox__
+>caption Multiple selection in RadRichTextBox
 
 ![Selection in RadRichTextBox](images/RadRichTextBox_Selection_01.png)
 

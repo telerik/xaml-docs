@@ -38,12 +38,11 @@ When rendering the content, RadPdfViewer uses different decoders. It finds the d
 **Table 1** indicates the status of the respective decoders in RadPdfViewer.
         
 #### **Table 1: Decoders support in RadPdfViewer**
-<table><tr><td>
+<table><tr><th scope="col">
 
-Fully supported</td>
-<td>Partially supported</td>
-<td>Not supported</td></tr>
-</th>
+Fully supported</th>
+<th scope="col">Partially supported</th>
+<th scope="col">Not supported</th></tr>
 <tr><td>ASCII85Decode</td>
 <td>CCITTFaxDecode</td>
 <td></td></tr>

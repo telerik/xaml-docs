@@ -35,36 +35,36 @@ When initializing, **RadRichTextBox** loads its default fonts so they can be use
 
 {% endif %}
 
-#### [C#] Example 1: Setting font to a Span
+__[C#] Example 1: Setting font to a Span__
 <snippet id='radrichtextbox-features-fonts-block_1-cs' />
 
-#### [VB.NET] Example 1: Setting font to a Span
+__[VB.NET] Example 1: Setting font to a Span__
 <snippet id='radrichtextbox-features-fonts-block_2-vb' />
 
 To ensure the font you would like to use is registered and available for the control, you can use the **HasRegisteredFontFamily()** method of **FontManager**.
 
-#### [C#] Example 2: Ensuring font is registered before using it
+__[C#] Example 2: Ensuring font is registered before using it__
 <snippet id='radrichtextbox-features-fonts-block_3-cs' />
 
-#### [VB.NET] Example 2: Ensuring font is registered before using it
+__[VB.NET] Example 2: Ensuring font is registered before using it__
 <snippet id='radrichtextbox-features-fonts-block_4-vb' />
 
 Through the **FontManager** class, you can also traverse all the fonts that are currently registered and can be used in **RadRichTextBox**.
 
-#### [C#] Example 3: Obtain all registered fonts
+__[C#] Example 3: Obtain all registered fonts__
 <snippet id='radrichtextbox-features-fonts-block_5-cs' />
 
-#### [VB.NET] Example 3: Obtain all registered fonts
+__[VB.NET] Example 3: Obtain all registered fonts__
 <snippet id='radrichtextbox-features-fonts-block_6-vb' />
 
 ## Custom Fonts
 
 You might encounter a case where specific font is not installed on the machine. In this scenario, you can register it as a custom one and ensure that the users have access to it and can use it. All you need to do is to invoke the **RegisterFont()** method.
 
-#### [C#] Example 4: Register font
+__[C#] Example 4: Register font__
 <snippet id='radrichtextbox-features-fonts-block_7-cs' />
 
-#### [VB.NET] Example 4: Register font
+__[VB.NET] Example 4: Register font__
 <snippet id='radrichtextbox-features-fonts-block_8-vb' />
 
 {% if site.site_name == 'Silverlight' %}
@@ -75,10 +75,10 @@ Once you have the font registered, you can use it as you would do with any other
 
 In case you need to remove a font so that it cannot be used in the control, RadRichTextBox enables you to achieve that by simply unregistering that font.
 
-#### [C#] Example 5: Unregister font
+__[C#] Example 5: Unregister font__
 <snippet id='radrichtextbox-features-fonts-block_9-cs' />
 
-#### [VB.NET] Example 5: Unregister font
+__[VB.NET] Example 5: Unregister font__
 <snippet id='radrichtextbox-features-fonts-block_10-vb' />
 
 

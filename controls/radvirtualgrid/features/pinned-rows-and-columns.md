@@ -23,7 +23,7 @@ The pin functionality can be controlled using the following methods exposed by t
 
 	<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_1-cs' />
 
-	#### __Figure 1: RadVirtualGrid with pinned row at the top__
+>caption RadVirtualGrid with pinned row at the top
 
 	![RadVirtualGrid with pinned row on the top](images/RadVirtualGrid_Features_PinnedRowsColumns_01.png)
 
@@ -33,7 +33,7 @@ The pin functionality can be controlled using the following methods exposed by t
 
 	<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_2-cs' />
 
-	#### __Figure 2: RadVirtualGrid with pinned row at the bottom__
+>caption RadVirtualGrid with pinned row at the bottom
 
 	![RadVirtualGrid with pinned row at the bottom](images/RadVirtualGrid_Features_PinnedRowsColumns_02.png)
 
@@ -43,7 +43,7 @@ The pin functionality can be controlled using the following methods exposed by t
 
 	<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_3-cs' />
 
-	#### __Figure 3: RadVirtualGrid with pinned column on the left__
+>caption RadVirtualGrid with pinned column on the left
 
 	![ RadVirtualGrid with pinned column on the left](images/RadVirtualGrid_Features_PinnedRowsColumns_03.png)
 
@@ -53,7 +53,7 @@ The pin functionality can be controlled using the following methods exposed by t
 
 	<snippet id='radvirtualgrid-features-pinned-rows-and-columns-block_4-cs' />
 
-	#### __Figure 4: RadVirtualGrid with pinned column on the right__
+>caption RadVirtualGrid with pinned column on the right
 
 	![RadVirtualGrid with pinned column on the right](images/RadVirtualGrid_Features_PinnedRowsColumns_04.png)
 

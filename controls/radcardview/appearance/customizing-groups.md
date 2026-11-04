@@ -22,7 +22,8 @@ To change the __visibility__ of the [group panel]({%slug radcardview-visual-stru
 __Example 1: Hiding group panel__
 <snippet id='radcardview-appearance-customizing-groups-example_1_hiding_group_panel-xaml' />
 
-#### Figure 1: Hidden group panel
+>caption Hidden group panel
+
 ![{{ site.framework_name }} RadCardView Hidden group panel](images/radcardview-appearance-customizing-groups-0.png)
 
 To change the __background color__ of the group panel, set the __GroupPanelBackground__ property of RadCardView.
@@ -34,7 +35,8 @@ To __disable the sorting__ of groups with the [group member button]({%slug radca
 __Example 2: Customizing group panel colors__
 <snippet id='radcardview-appearance-customizing-groups-example_2_customizing_group_panel_colors-xaml' />
 
-#### Figure 2: Changed group panel background
+>caption Changed group panel background
+
 ![{{ site.framework_name }} RadCardView Changed group panel background](images/radcardview-appearance-customizing-groups-1.png)
 
 Additionally, the element that represents the group panel can be customized using the __GroupPanelStyle__ property.
@@ -44,7 +46,8 @@ __Example 3: Customizing group panel style__
 
 The "cardView:" namespace points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`
 
-#### Figure 3: Customized group panel style
+>caption Customized group panel style
+
 ![{{ site.framework_name }} RadCardView Customized group panel style](images/radcardview-appearance-customizing-groups-2.png)
 
 To customize the [group member button]({%slug radcardview-visual-structure%}) elements in the group panel, set the __GroupPanelItemStyle__ property.
@@ -52,7 +55,8 @@ To customize the [group member button]({%slug radcardview-visual-structure%}) el
 __Example 4: Customizing group panel items__
 <snippet id='radcardview-appearance-customizing-groups-example_4_customizing_group_panel_items-xaml' />
 
-#### Figure 4: Customized group panel items
+>caption Customized group panel items
+
 ![{{ site.framework_name }} RadCardView Customized group panel items](images/radcardview-appearance-customizing-groups-3.png)
 
 ## Group Item Indentation
@@ -62,7 +66,8 @@ To set the group items horizontal offset (indentation), set the __GroupItemInden
 __Example 5: Changing group items indentation__
 <snippet id='radcardview-appearance-customizing-groups-example_5_changing_group_items_indentation-xaml' />
 
-#### Figure 5: Customized group panel items
+>caption Customized group panel items
+
 ![{{ site.framework_name }} RadCardView Customized group panel items](images/radcardview-appearance-customizing-groups-4.png)
 
 ## See Also  

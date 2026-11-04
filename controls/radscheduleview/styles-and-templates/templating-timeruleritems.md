@@ -21,25 +21,32 @@ __TimeRulerItemTemplateSelector__ is used to set a DataTemplate to the TimeRuler
 
 The next figures show the templates in the different ViewDefinitions of __RadScheduleView__.
 
-#### __Figure 1: TimeRulerItems templates in DayViewDefinition with Orientation = "Vertical"__
+>caption TimeRulerItems templates in DayViewDefinition with orientation = "vertical"
+
 ![{{ site.framework_name }} RadScheduleView TimeRulerItems templates in DayViewDefinition with Orientation = "Vertical"](images/radscheduleview_templating_timeruleritems_01.png)
 
-#### __Figure 2: TimeRulerItems templates in DayViewDefinition with Orientation = "Horizontal"__
+>caption TimeRulerItems templates in DayViewDefinition with orientation = "horizontal"
+
 ![{{ site.framework_name }} RadScheduleView TimeRulerItems templates in DayViewDefinition with Orientation = "Horizontal"](images/radscheduleview_templating_timeruleritems_02.png)
 
-#### __Figure 3: TimeRulerItems templates in WeekViewDefinition with Orientation = "Vertical"__
+>caption TimeRulerItems templates in WeekViewDefinition with orientation = "vertical"
+
 ![{{ site.framework_name }} RadScheduleView TimeRulerItems templates in WeekViewDefinition with Orientation = "Vertical"](images/radscheduleview_templating_timeruleritems_03.png)
 
-#### __Figure 4: TimeRulerItems templates in WeekViewDefinition with Orientation = "Horizontal"__
+>caption TimeRulerItems templates in WeekViewDefinition with orientation = "horizontal"
+
 ![{{ site.framework_name }} RadScheduleView TimeRulerItems templates in WeekViewDefinition with Orientation = "Horizontal"](images/radscheduleview_templating_timeruleritems_04.png)
 
-#### __Figure 5: TimeRulerItems templates in TimelineViewDefinition with Orientation = "Horizontal"__
+>caption TimeRulerItems templates in TimelineViewDefinition with orientation = "horizontal"
+
 ![{{ site.framework_name }} RadScheduleView TimeRulerItems templates in TimelineViewDefinition with Orientation = "Horizontal"](images/radscheduleview_templating_timeruleritems_05.png)
 
-#### __Figure 6: TimeRulerItems templates in TimelineViewDefinition with Orientation = "Vertical"__
+>caption TimeRulerItems templates in TimelineViewDefinition with orientation = "vertical"
+
 ![{{ site.framework_name }} RadScheduleView TimeRulerItems templates in TimelineViewDefinition with Orientation = "Vertical"](images/radscheduleview_templating_timeruleritems_06.png)
 
-#### __Figure 7: TimeRulerItems templates in MonthViewDefinition__
+>caption TimeRulerItems templates in MonthViewDefinition
+
 ![{{ site.framework_name }} RadScheduleView TimeRulerItems templates in MonthViewDefinition](images/radscheduleview_templating_timeruleritems_07.png)
 
 >tip Minor tick templates are by design empty. This could be easily changed by assigning a StringFormat through the [Formatting properties]({%slug radscheduleview-features-formatting%}) of the ViewDefinitions.
@@ -68,7 +75,8 @@ __Example 2: RadScheduleView with TimeRulerItemTemplateSelector set__
 
 __Figure 8__ shows the final result.
 
-#### __Figure 8: RadScheduleView with customized TimeRuler__
+>caption RadScheduleView with customized TimeRuler
+
 ![{{ site.framework_name }} RadScheduleView RadScheduleView with customized TimeRuler](images/radscheduleview_templating_timeruleritems_08.png)
 
 ## See Also

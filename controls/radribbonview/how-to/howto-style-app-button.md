@@ -13,7 +13,8 @@ position: 11
 
 The default look of the [application menu]({%slug radribbonview-applicationmenu%}) button is an empty rectangle as shown in __Figure 1__.
 
-#### __Figure 1: RadRibbonView Application Button in the Office2016 theme__
+>caption RadRibbonView application button in the Office2016 theme
+
 ![RadRibbonView Application Button in the Office2016 theme](images/RadRibbonView_HowTo_StyleTheApplicationButton_02.png)
 
 ## Set the ApplicationButtonImageSource
@@ -24,7 +25,8 @@ __Example 1: Setting the ApplicationButtonImageSource__
 
 <snippet id='radribbonview-how-to-howto-style-app-button-block_1-xaml' />
 
-#### __Figure 2: RadRibbonView Application Button with an image in the Office2016 theme__
+>caption RadRibbonView application button with an image in the Office2016 theme
+
 ![Rad Ribbon View How To Style The Application Button](images/RadRibbonView_HowTo_StyleTheApplicationButton.png)
 
 ## Add custom Content to the Application Button
@@ -34,7 +36,8 @@ You can add custom Content to the Application Button via the __ApplicationButton
 __Example 2: Setting the ApplicationButtonContent__
 <snippet id='radribbonview-how-to-howto-style-app-button-block_2-xaml' />
 
-#### __Figure 3: RadRibbonView Application Button with custom content__
+>caption RadRibbonView application button with custom content
+
 ![RadRibbonView Application Button with custom content](images/RadRibbonView_HowTo_StyleTheApplicationButton_ApplicationButtonContent.png)
 
 ## Disabling the ApplicationButton

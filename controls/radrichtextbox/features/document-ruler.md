@@ -15,7 +15,7 @@ The `DocumentRuler` element allows you to visualize a guide that will assist you
 __Displaying the DocumentRuler__
 <snippet id='radrichtextbox-features-document-ruler-block_1-xaml' />
 
-__RadRichTextBox with DocumentRuler__
+>caption RadRichTextBox with DocumentRuler
 
 ![RadRichTextBox with DocumentRuler](images/radrichtextbox-features-document-ruler-0.png)
 
@@ -42,7 +42,7 @@ The DocumentRuler object derives from the `DocumentRulerBase` class, which expos
 __Customizing the Appearance of the Document Ruler__
 <snippet id='radrichtextbox-features-document-ruler-block_2-xaml' />
 
-__Customized appearance of the DocumentRuler element__
+>caption Customized appearance of the DocumentRuler element
 
 ![Customized appearance of the DocumentRuler element](images/radrichtextbox-features-document-ruler-1.png)
 
@@ -53,7 +53,7 @@ You can change the visibility of the vertical/horizontal ruler of the DocumentRu
 __Hiding the vertical ruler of the DocumentRuler__
 <snippet id='radrichtextbox-features-document-ruler-block_3-cs' />
 
-__DocumentRuler with hidden vertical ruler__
+>caption DocumentRuler with hidden vertical ruler
 
 ![DocumentRuler with hidden vertical ruler](images/radrichtextbox-features-document-ruler-2.png)
 

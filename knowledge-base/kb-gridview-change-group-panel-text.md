@@ -13,11 +13,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2025.1.211</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadGridView for WPF</td>
 		</tr>
 	</tbody>
@@ -40,6 +40,6 @@ __Changing the text of the group panel of RadGridView__
     }
 ```
 
-__RadGridView with modified group panel text__
+>caption RadGridView with modified group panel text
 
 ![RadGridView with modified group panel text](images/kb-gridview-change-group-panel-text-0.png)

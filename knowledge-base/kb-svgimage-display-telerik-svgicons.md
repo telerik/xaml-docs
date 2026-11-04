@@ -15,11 +15,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2023.3.1115</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadSvgImage for WPF</td>
 		</tr>
 	</tbody>
@@ -70,6 +70,6 @@ __Setting the XmlSource property__
     End Class
 ```
 
-__RadSvgImage displaying SVG icon from the Telerik.SvgIcons NuGet package__
+>caption RadSvgImage displaying SVG icon from the Telerik.SvgIcons NuGet package
 
 ![{{site.framework_name}} RadSvgImage displaying SVG icon from the Telerik.SvgIcons NuGet package](images/kb-svgimage-display-telerik-svgicons-1.png)

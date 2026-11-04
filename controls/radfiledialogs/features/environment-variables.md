@@ -21,13 +21,13 @@ The RadFileDialogs provide out of the box support for the most common system env
 
 When typing an environment variable in the **Path Navigation Pane** of the file dialogs and typing enter, the **Tree Navigation Pane** will navigate to the respective directory. **Figure 1** demonstrates what will happen when typing %test% in the Path Navigation Pane.
 
-#### Figure 1: Typing an EV in the breadcrumb
+>caption Typing an EV in the breadcrumb
 
 ![File Dialogs Environment Variables](images/FileDialogs_EV1.gif)
 
 When typing an enviroment variable followed by **"\"** in the Path Navigation Pane, the suggestions list containing all of the child folders of the current directory will be listed. When doing the same in the Operations Pane, all child folders and files will be listed. This is demonstrated in **Figure 2**.
 
-#### Figure 2: Listing all child files/folders in an EV directory from breadcrumb and autocomplete
+>caption Listing all child files/folders in an EV directory from breadcrumb and autocomplete
 
 ![File Dialogs Environment Variables](images/FileDialogs_EV2.gif)
 

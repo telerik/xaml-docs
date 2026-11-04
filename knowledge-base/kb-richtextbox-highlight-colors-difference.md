@@ -16,11 +16,11 @@ ticketid: 1023476
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2024.2.514</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadRichTextBox for WPF</td>
 		</tr>
 	</tbody>
@@ -105,6 +105,6 @@ __Setting the custom SelectionMiniToolBar to the RadRichTextBox control__
 	this.richTextBox.SelectionMiniToolBar = new CustomSelectionMiniToolBar(); 
 ```
 
-__RadRichTextBox with a custom SelectionMiniToolBar__
+>caption RadRichTextBox with a custom SelectionMiniToolBar
 
 ![RadRichTextBox with a custom SelectionMiniToolBar](images/kb-radrichtextbox-difference-in-the-highlighted-colors-0.png)

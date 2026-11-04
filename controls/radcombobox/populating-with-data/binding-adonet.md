@@ -60,7 +60,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	<snippet id='radcombobox-populating-with-data-binding-adonet-block_6-xaml' />
 
 
-__The end result with the data fetched from the service__  
+>caption The end result with the data fetched from the service
 
 ![{{ site.framework_name }} RadComboBox Bound to Data from ADO.NET Data Service](images/RadComboBox_PopulatingWithData_BindingToAdoDataService_010.png)
 
@@ -118,7 +118,7 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 	<snippet id='radcombobox-populating-with-data-binding-adonet-the_end_result_with_the_data_fetched_from_the_service-xaml' />
 
 
-__The end result with the data fetched from the service__  
+>caption The end result with the data fetched from the service
 
 ![{{ site.framework_name }} RadComboBox Bound to Data from ADO.NET Data Service](images/RadComboBox_PopulatingWithData_BindingToAdoDataService_020.png)
 

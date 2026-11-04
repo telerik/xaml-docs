@@ -21,7 +21,8 @@ __Example 1: Creating a style targeting DataFormDataField__
 <snippet id='raddataform-styles-and-templates-styling-dataformdatafield-example_1_creating_a_style_targeting_dataformdatafield-xaml' />
 
 
-#### __Figure 1: RadDataForm with custom DataFieldStyle in the Office2016 theme__
+>caption RadDataForm with custom DataFieldStyle in the Office2016 theme
+
 ![RadDataForm with custom DataFieldStyle in the Office2016 theme](images/RadDataForm_DataFieldStyle.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

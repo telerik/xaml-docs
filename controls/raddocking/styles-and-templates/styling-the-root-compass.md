@@ -22,7 +22,8 @@ __Example 1: Setting the RootCompassStyle property__
 <snippet id='raddocking-styles-and-templates-styling-the-root-compass-example_1_setting_the_rootcompassstyle_property-xaml' />
 
 
-#### __Figure 1: RootCompass without left and right indicator in the Office2016 theme__
+>caption RootCompass without left and right indicator in the Office2016 theme
+
 ![RootCompass without left and right indicator](images/RadDocking_RootCompass_RootCompassStyle.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

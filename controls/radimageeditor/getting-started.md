@@ -61,7 +61,8 @@ __Example 4: ImageExampleHelper used in Example 3__
 <snippet id='radimageeditor-getting-started-example_4_imageexamplehelper_used_in_example_3-vb' />
 
 
-#### __Figure 1: Result from the above examples__
+>caption Result from the above examples
+
 ![RadImageEditor rotating image](images/RadImageEditor_GettingStarted.gif)
 
 ## Commands and Tools
@@ -98,7 +99,8 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a __RadImageEditor__ with the **Windows8** theme applied.
 
-#### __Figure 2: RadImageEditor with the Windows8 theme__
+>caption RadImageEditor with the Windows8 theme
+
 ![RadImageEditor with Windows8 theme](images/radimageeditor-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

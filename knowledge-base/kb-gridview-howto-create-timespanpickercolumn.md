@@ -215,10 +215,12 @@ __Example 3: Using the custom TimeSpanPickerColumn__
 
 > The "my" namespace refers to the namespace where the "TimeSpanPickerColumn" and "MyViewModel" classes are defined. 
 
-#### __Figure 1: Editing TimeSpanPickerColumn in the Fluent theme__
+>caption Editing TimeSpanPickerColumn in the fluent theme
+
 ![Editing TimeSpanPickerColumn in the Fluent theme](images/kb-timespanpickercolumn-editing.png)
 
-#### __Figure 2: Filtering TimeSpanPickerColumn in the Fluent theme__
+>caption Filtering TimeSpanPickerColumn in the fluent theme
+
 ![Filtering TimeSpanPickerColumn in the Fluent theme](images/kb-timespanpickercolumn-filtering.png)
 
 ## See Also

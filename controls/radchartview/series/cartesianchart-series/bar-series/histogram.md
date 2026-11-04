@@ -19,7 +19,7 @@ __Creating histogram with ScatterRangeBarSeries__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-histogram-creating_histogram_with_scatterrangebarseries-xaml' />
 
 
-__Histogram with ScatterRangeBarSeries manually adjusted data__
+>caption Histogram with ScatterRangeBarSeries manually adjusted data
 
 ![Telerik UI for WPF RadChartView histogram created with ScatterRangeBarSeries](images/radchartview-series-barseries-histogram-0.png)
 
@@ -43,7 +43,7 @@ __Creating histogram with ScatterRangeBarSeries and ChartHistogramSource using c
 
 The aggregate function used for the bars in this scenario is `Count`. This is the only supported function for this scenario.
 
-__Histogram with ChartHistogramSource and one dimensional data__
+>caption Histogram with ChartHistogramSource and one dimensional data
 
 ![Telerik UI for WPF RadChartView histogram created with ChartHistogramSource from a list of numbers](images/radchartview-series-barseries-histogram-1.png)
 
@@ -65,7 +65,7 @@ __Creating histogram with ScatterRangeBarSeries and ChartHistogramSource using c
 
 The default [aggregаte function](#changing-the-aggregate-function) when using a collection of custom objects is `Sum`. 
 
-__Histogram with ChartHistogramSource and collection of custom objects__
+>caption Histogram with ChartHistogramSource and collection of custom objects
 
 ![Telerik UI for WPF RadChartView histogram created with ChartHistogramSource from custom items](images/radchartview-series-barseries-histogram-2.png)
 
@@ -77,7 +77,7 @@ __Setting custom interval__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-histogram-setting_custom_interval-xaml' />
 
 
-__Histogram with manually defined interval__
+>caption Histogram with manually defined interval
 
 ![Telerik UI for WPF RadChartView ChartHistogramSource with a custom interval](images/radchartview-series-barseries-histogram-3.png)
 
@@ -89,7 +89,7 @@ __Setting custom origin value__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-histogram-setting_custom_origin_value-xaml' />
 
 
-__Histogram with custom origin value__
+>caption Histogram with custom origin value
 
 ![Telerik UI for WPF RadChartView ChartHistogramSource with a custom origin value](images/radchartview-series-barseries-histogram-4.png)
 
@@ -101,7 +101,7 @@ __Setting the histogram data orientation__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-histogram-setting_the_histogram_data_orientation-xaml' />
 
 
-__Histogram with vertical orientation__
+>caption Histogram with vertical orientation
 
 ![Telerik UI for WPF RadChartView ChartHistogramSource with vertical orientation](images/radchartview-series-barseries-histogram-5.png)
 
@@ -119,7 +119,7 @@ __Using the custom histogram source__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-histogram-using_the_custom_histogram_source-xaml' />
 
 
-__Histogram with count aggregate function__
+>caption Histogram with count aggregate function
 
 ![Telerik UI for WPF RadChartView ChartHistogramSource using a count average function](images/radchartview-series-barseries-histogram-6.png)
 

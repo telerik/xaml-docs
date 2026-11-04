@@ -31,7 +31,8 @@ In order to customize the animations supported by RadNavigationView, you can [ex
 __Example 2: Changing the duration of the ResizePaneAnimation__
 <snippet id='radnavigationview-how-to-customize-open-close-animations-block_2-xaml' />
 
-#### __Figure 1: Result from Example 2 in the Office2016 theme__
+>caption Result from example 2 in the Office2016 theme
+
 ![NavigationPane slow animation](images/RadNavigationView_ResizeAnimation_Duration.gif)
 
 > In order for the animations to be played correctly the __AnimationName__ and __TargetElementName__ properties should not be modified.

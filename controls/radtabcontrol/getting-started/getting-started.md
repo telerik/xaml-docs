@@ -49,7 +49,8 @@ __Example 1: Adding RadTabControl in XAML__
 
 At this point, the control is empty and only its tab items panel and content container are displayed.
 
-#### __Figure 1: An empty RadTabControl__
+>caption An empty RadTabControl
+
 ![{{ site.framework_name }} RadTabControl An empty RadTabControl](images/radtabcontrol-getting-started-01.png)
 
 ## Adding Tabs
@@ -63,7 +64,8 @@ __Example 3: Adding RadTabItems in code__
 <snippet id='radtabcontrol-getting-started-getting-started-block_3-cs' />
 <snippet id='radtabcontrol-getting-started-getting-started-block_4-vb' />
 
-#### __Figure 2: RadTabControl with several RadTabItems defined in its Items collection__
+>caption RadTabControl with several RadTabItems defined in its items collection
+
 ![{{ site.framework_name }} RadTabControl RadTabControl with several RadTabItems defined in its Items collection](images/radtabcontrol-getting-started-02.png)
 
 > The __Items__ collection of RadTabControl can contain any UIElement. However, if you do not wrap it manually into a RadTabItem control, the tab control will do it automatically. In this case, the UIElement will be set as a content of the tab item and its header will be empty.
@@ -79,13 +81,15 @@ __RadTabItem__ is a HeaderedContentControl, which means that it can have a heade
 __Example 4: Setting a string as the value of the RadTabItem's Content property__
 <snippet id='radtabcontrol-getting-started-getting-started-block_5-xaml' />
 
-#### __Figure 3: RadTabItem with a string set as its content__
+>caption RadTabItem with a string set as its content
+
 ![{{ site.framework_name }} RadTabControl RadTabItem with a string set as its content](images/radtabcontrol-getting-started-03.png)
 
 __Example 5: Setting a UIElement as the value of the RadTabItem's Content property__
 <snippet id='radtabcontrol-getting-started-getting-started-block_6-xaml' />
 
-#### __Figure 4: RadTabItem with a UIElement set as its content__
+>caption RadTabItem with a UIElement set as its content
+
 ![{{ site.framework_name }} RadTabControl RadTabItem with a UIElement set as its content](images/radtabcontrol-getting-started-04.png)
 
 ## Data Binding
@@ -109,7 +113,8 @@ __Example 7: Populating a collection of business objects and pass it as the Data
 __Example 8: Binding the ItemsSource of a RadTabControl and defining the RadTabItems appearance__
 <snippet id='radtabcontrol-getting-started-getting-started-block_11-xaml' />
 
-#### __Figure 5: Data binding a RadTabControl__
+>caption Data binding a RadTabControl
+
 ![{{ site.framework_name }} RadTabControl Data binding a RadTabControl](images/radtabcontrol-getting-started-05.png)
 
 ## Setting the Tabs Orientation
@@ -119,7 +124,8 @@ RadTabControl allows you to control whether to display the tabs horizontally or 
 __Example 9: Setting a UIElement as the value of the RadTabItem's Content property__
 <snippet id='radtabcontrol-getting-started-getting-started-block_12-xaml' />
 
-#### __Figure 6: RadTabItem with a UIElement set as its content__
+>caption RadTabItem with a UIElement set as its content
+
 ![{{ site.framework_name }} RadTabControl RadTabItem with a UIElement set as its content](images/radtabcontrol-getting-started-06.png)
 
 ## Setting a Theme
@@ -147,7 +153,8 @@ __Example 10: Merge the ResourceDictionaries__
 
 __Figure 7__ shows a RadTabControl with the **Windows8** theme applied.
 
-#### __Figure 7: RadTabControl with the Windows8 theme__
+>caption RadTabControl with the Windows8 theme
+
 ![RadTabControl with Windows8 theme](images/RadTabControl-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

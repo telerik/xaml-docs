@@ -49,11 +49,11 @@ __Setting the newly created behavior__
 
 The following figures demonstrate the final result:
 
-Figure 1: When there isn't exact match the last filtered item is highlighted.
+>caption When there isn't exact match the last filtered item is highlighted.
 
 ![radautocompletebox-features-highlightbehavior-2](images/radautocompletebox-features-highlightbehavior-2.png)
 
-Figure 2: When there is exact match the matched item is highlighted.
+>caption When there is exact match the matched item is highlighted.
 
 ![radautocompletebox-features-highlightbehavior-3](images/radautocompletebox-features-highlightbehavior-3.png)
 

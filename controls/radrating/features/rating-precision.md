@@ -22,17 +22,20 @@ Users can use the __Precision__ property to control the rating precision. The pr
 __Example 1: Setting the Precision property to Item__
 <snippet id='radrating-features-rating-precision-block_1-xaml' />
 
-#### __Figure 1: Result from Example 1__
+>caption Result from example 1
+
 ![RadRating with Precision](images/rating_precision_item.png)
 
 __Example 2: Setting the Precision to Half__
 <snippet id='radrating-features-rating-precision-block_2-xaml' />
 
-#### __Figure 2: Result from Example 2__
+>caption Result from example 2
+
 ![RadRating with Precision](images/rating_precision_half.png)
 
 __Example 3: Setting the Precision to Exact__
 <snippet id='radrating-features-rating-precision-block_3-xaml' />
 
-#### __Figure 3: Result from Example 3__
+>caption Result from example 3
+
 ![RadRating with Precision](images/rating_precision_exact.png)

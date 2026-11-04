@@ -18,7 +18,7 @@ The following example showcases how to add a `RadButton` element inside a Floati
 __Adding a UIElement to a FloatingUIContainer__
 <snippet id='radrichtextbox-document-elements-features-floatinguicontainer-block_1-cs' />
 
-__RadRichTextBox with a FloatingUIContainer containing a RadButton element__
+>caption RadRichTextBox with a FloatingUIContainer containing a RadButton element
 
 ![RadRichTextBox with a FloatingUIContainer containing a RadButton element](images/radrichtextbox-features-document-elements-floatinguicontainer-0.png)
 

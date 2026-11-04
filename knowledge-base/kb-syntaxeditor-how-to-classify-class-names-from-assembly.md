@@ -15,11 +15,11 @@ res_type: kb
 <table>
     <tbody>
 	    <tr>
-	    	<td>Product Version</td>
+	    	<th scope="row">Product Version</th>
 	    	<td>2020.3.1020</td>
 	    </tr>
 	    <tr>
-	    	<td>Product</td>
+	    	<th scope="row">Product</th>
 	    	<td>RadSyntaxEditor for WPF</td>
 	    </tr>
     </tbody>
@@ -143,7 +143,8 @@ __Example 2: Registering the Custom CSharpTagger__
     }
 ```
 
-#### __Figure 1: Csharp File With Colorized Class Names__
+>caption Csharp file with colorized class names
+
 ![Csharp File With Colorized Class Names](images/kb-syntaxeditor-classify-class-names-from-assembly.png)
 
 ## See Also

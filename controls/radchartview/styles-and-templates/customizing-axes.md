@@ -23,7 +23,8 @@ __Example 1: Customizing axes by using implicit styles__
 <snippet id='radchartview-styles-and-templates-customizing-axes-example_1_customizing_axes_by_using_implicit_styles-xaml' />
 
 
-#### __Figure 1: Customizing axes by using implicit styles__
+>caption Customizing axes by using implicit styles
+
 ![Customizing axes by using implicit styles](images/radchartview-styles-and-templates-customizing-axes-0.png)
 
 ## See Also

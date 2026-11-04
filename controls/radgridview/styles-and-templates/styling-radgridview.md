@@ -11,11 +11,11 @@ position: 3
 
 # Styling RadGridView
 
-#### __Figure 1: The default RadGridView control__
+>caption The default RadGridView control
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the default control appearance](images/gridview_default_style.png)
 
-#### __Figure 2: RadGridView template structure__
+>caption RadGridView template structure
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the first part of the control template structure](images/Styling_RadGridView01.png)
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the second part of the control template structure](images/Styling_RadGridView02.png)
@@ -82,7 +82,7 @@ __Example 2: Usage of General properties__
 
 The final result should be similar to this:
 
-#### __Figure 3: The result of the modified General properties__
+>caption The result of the modified general properties
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with modified general appearance properties such as vertical grid lines and hidden column headers](images/RadGridView_Controlling_Appearance_1.png)
 
@@ -130,7 +130,7 @@ __Example 4: Usage of Rows properties__
 <snippet id='radgridview-styles-and-templates-styling-radgridview-example_4_usage_of_rows_properties-xaml' />
 
 
-#### __Figure 4: The result of the modified Rows properties__
+>caption The result of the modified rows properties
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with modified row properties including row details and alternating rows](images/RadGridView_Controlling_Appearance_2.png)
 
@@ -155,7 +155,7 @@ __Example 5: Usage of Groups properties__
 <snippet id='radgridview-styles-and-templates-styling-radgridview-example_5_usage_of_groups_properties-xaml' />
 
 
-#### __Figure 5: The result of the modified Groups properties__
+>caption The result of the modified groups properties
 
 ![Telerik UI for {{ site.framework_name }} DataGrid with modified group properties showing group footers and a hidden group panel](images/RadGridView_Controlling_Appearance_3.png)
 

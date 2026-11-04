@@ -19,7 +19,8 @@ __Example 1: Setting ExpandDirection property__
 <snippet id='radexpander-features-alignment-example_1_setting_expanddirection_property-xaml' />
 
 
-#### Figure 2: RadExpander directions
+>caption RadExpander directions
+
 ![{{ site.framework_name }} RadExpander RadExpander directions](images/RadExpander_Features_Alignment_default.png)
 
 ## HorizontalAlignment and VerticalAlignment properties
@@ -30,7 +31,8 @@ __Example 2: Setting HorizontalAlignment and VerticalAlignment properties__
 <snippet id='radexpander-features-alignment-example_2_setting_horizontalalignment_and_verticalalignment_properties-xaml' />
 
 
-#### Figure 2: HorizontalAlignment and VerticalAlignment properties visual appearance
+>caption HorizontalAlignment and VerticalAlignment properties visual appearance
+
 ![{{ site.framework_name }} RadExpander HorizontalAlignment and VerticalAlignment properties visual appearance](images/RadExpander_Features_Vertical_HorizontalAlignment_shrink.png)
 
 >Please note that when the __VerticalAlignment__/__HorizontalAlignment__ properties match the __ExpandDirection__, the __Header__ will move aside as the content is expanded. 
@@ -43,7 +45,8 @@ __Example 3: Setting HorizontalContentAlignment and VerticalContentAlignment pro
 <snippet id='radexpander-features-alignment-example_3_setting_horizontalcontentalignment_and_verticalcontentalignment_properties-xaml' />
 
 
-#### Figure 2: 
+>caption {{ site.Framework_name }} RadExpander different alignments
+
 ![{{ site.framework_name }} RadExpander Different Alignments](images/RadExpander_Features_Alignment_shrink.png)
 
 ## HorizontalHeaderAlignment and VerticalHeaderAlignment properties
@@ -64,7 +67,8 @@ __Example 4: Setting HorizontalHeaderAlignment property__
 <snippet id='radexpander-features-alignment-example_4_setting_horizontalheaderalignment_property-xaml' />
 
 
-#### Figure 3: HorizontalHeaderAlignment with ExpandDirection set to Down and Up
+>caption HorizontalHeaderAlignment with ExpandDirection set to down and up
+
 ![{{ site.framework_name }} RadExpander HorizontalHeaderAlignment with ExpandDirection set to Down and Up](images/RadExpander_Features_Alignment_HorizontalHeaderAlignment.png)
 
 If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can control the position of the __Header's__ content through again the __HorizontalHeaderAlignment__ property.
@@ -73,7 +77,8 @@ __Example 5: Setting HorizontalHeaderAlignment property__
 <snippet id='radexpander-features-alignment-example_5_setting_horizontalheaderalignment_property-xaml' />
 
 
-#### Figure 4: HorizontalHeaderAlignment with ExpandDirection set to Right and Left
+>caption HorizontalHeaderAlignment with ExpandDirection set to right and left
+
 ![{{ site.framework_name }} RadExpander HorizontalHeaderAlignment with ExpandDirection set to Right and Left](images/RadExpander_Features_Alignment_VerticalHeader.png)
 
 ## See Also  

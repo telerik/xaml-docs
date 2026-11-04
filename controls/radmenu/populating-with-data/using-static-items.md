@@ -25,7 +25,7 @@ __Example 2: RadMenu with static top-level items__
 
 <snippet id='radmenu-populating-with-data-using-static-items-block_2-xaml' />
 
-#### __Figure 1: RadMenu with static top-level items__
+>caption RadMenu with static top-level items
 
 ![{{ site.framework_name }} RadMenu with Static Top Level Items](images/RadMenu_Populating_with_Data_Using_Static_Items_01.png)
 
@@ -35,7 +35,8 @@ __Example 3: Adding static submenu items__
 
 <snippet id='radmenu-populating-with-data-using-static-items-block_3-xaml' />
 
-#### __Figure 2: RadMenu with static submenu items__
+>caption RadMenu with static submenu items
+
 ![{{ site.framework_name }} RadMenu RadMenu with static submenu items](images/RadMenu_Populating_with_Data_Using_Static_Items_02.png)
 
 The submenu items can also have children on their own.

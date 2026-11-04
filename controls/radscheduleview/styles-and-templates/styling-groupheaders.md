@@ -73,7 +73,7 @@ __Example 4: The modified HorizontalBottomLevelGroupHeaderStyle__
 
 <snippet id='radscheduleview-styles-and-templates-styling-groupheaders-block_4-xaml' />
 
-#### __Figure 1: RadScheduleView with the modified HorizontalBottomLevelGroupHeaderStyle__
+>caption RadScheduleView with the modified HorizontalBottomLevelGroupHeaderStyle
 
 ![RadScheduleView with the modified HorizontalBottomLevelGroupHeaderStyle](images/radscheduleview_horizontalgroupheaderstyleexample.png)
 
@@ -98,6 +98,6 @@ __Example 7: Setting RadScheduleView's GroupHeaderStyleSelector__
 
 <snippet id='radscheduleview-styles-and-templates-styling-groupheaders-block_8-xaml' />
 
-#### __Figure 2: RadScheduleView with the custom GroupHeaderStyleSelector__
+>caption RadScheduleView with the custom GroupHeaderStyleSelector
 
 ![RadScheduleView with the custom GroupHeaderStyleSelector](images/radscheduleview_customgroupheaderexample.png)

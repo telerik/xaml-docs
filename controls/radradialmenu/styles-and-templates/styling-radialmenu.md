@@ -37,7 +37,8 @@ __Example 2: Set the Style properties to the RadialMenu__
 
 <snippet id='radradialmenu-styles-and-templates-styling-radialmenu-block_2-xaml' />
 
-Figure 1: Customized RadialMenu
+>caption Customized RadialMenu
+
 ![Rad Radial Menu Styling Radial Menu 01](images/RadRadialMenu_Styling_RadialMenu_01.png)
 
 ## Customize the NavigationItemButtons Style
@@ -48,7 +49,8 @@ __Example 3: Customize the NavigationButtons__
 
 <snippet id='radradialmenu-styles-and-templates-styling-radialmenu-block_3-xaml' />
 
-Figure 2: Customized NavigationButtons
+>caption Customized NavigationButtons
+
 ![Rad Radial Menu Styling Radial Menu 02](images/RadRadialMenu_Styling_RadialMenu_02.png)
 
 ## Customize the VisualStatesItemPresenter Style
@@ -59,7 +61,8 @@ __Example 4: Customize the VisualStatesItemPresenter__
 
 <snippet id='radradialmenu-styles-and-templates-styling-radialmenu-block_4-xaml' />
 
-Figure 3: Customized VisualStatesItemPresenter
+>caption Customized VisualStatesItemPresenter
+
 ![Rad Radial Menu Styling Radial Menu 03](images/RadRadialMenu_Styling_RadialMenu_03.png)
 
 Additionally, there are two more properties that you could set through the __VisualStatesItemPresenterStyle__:      
@@ -74,7 +77,8 @@ __Example 5: VisualStatesItemPresenter with customize Thickness and ArrowThickne
 
 <snippet id='radradialmenu-styles-and-templates-styling-radialmenu-block_5-xaml' />
 
-Figure 3: Custom Thickness properties
+>caption Custom thickness properties
+
 ![Rad Radial Menu Styling Radial Menu 04](images/RadRadialMenu_Styling_RadialMenu_04.png)
 
 ## See Also

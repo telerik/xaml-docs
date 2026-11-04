@@ -23,7 +23,8 @@ __Example 1: Setting default visual material__
 <snippet id='radchartview3d-styles-and-templates-cutomizing-3d-series-example_1_setting_default_visual_material-xaml' />
 
 
-#### __Figure 1: BarSeries3D and PointSeries3D with custom material__
+>caption BarSeries3D and PointSeries3D with custom material
+
 ![{{ site.framework_name }} RadChartView3D BarSeries3D and PointSeries3D with custom material](images/radchartview-3d-cutomizing-cartesian-series-0.png)
 
 ## Defining a custom geometry
@@ -40,7 +41,8 @@ __Example 3: Defining a geometry presenting a pyramid and applying it to a BarSe
 	
 > The __Positions__ are defined in relative units between 0 and 1, according to the bounds of the data point visual.
 
-#### __Figure 2: BarSeries3D and PointSeries3D with custom geometries__
+>caption BarSeries3D and PointSeries3D with custom geometries
+
 ![{{ site.framework_name }} RadChartView3D BarSeries3D and PointSeries3D with custom geometries](images/radchartview-3d-cutomizing-cartesian-series-1.png)
 	
 ## Geometry and material selectors

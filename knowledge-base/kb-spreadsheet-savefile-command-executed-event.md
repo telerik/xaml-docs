@@ -15,11 +15,11 @@ ticketid: 1672122
 <table>
 <tbody>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>RadSpreadsheet for WPF</td>
 </tr>
 <tr>
-<td>Version</td>
+<th scope="row">Version</th>
 <td>2024.3.924</td>
 </tr>
 </tbody>

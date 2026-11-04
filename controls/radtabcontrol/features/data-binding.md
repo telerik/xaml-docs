@@ -13,7 +13,7 @@ position: 1
 
 
 
-## 
+## Binding Tab Data
 
 __RadTabControl__ takes a full advantage of the __DataBinding__ in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
 

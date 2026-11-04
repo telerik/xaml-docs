@@ -44,7 +44,7 @@ __Example 3: Setting the GroupRowStyleSelector property__
 
 And here is the final result:
 
-#### __Figure 1: The group footer rows styled using the GroupRowStyleSelector property__
+>caption The group footer rows styled using the GroupRowStyleSelector property
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with GroupRowStyleSelector applying different styles to grouped rows](images/gridview-grouprowstyleselector.png)
 

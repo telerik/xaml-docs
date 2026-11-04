@@ -14,11 +14,11 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
-		<td>Product Version</td>
+		<th scope="row">Product Version</th>
 		<td>2017.3.913 or later</td>
 	</tr>
 	<tr>
-		<td>Product</td>
+		<th scope="row">Product</th>
 		<td>RadChartView for WPF</td>
 	</tr>
 </table>
@@ -81,7 +81,8 @@ Define a custom series and override its __GetLabelConnector__ method. The follow
 	</Grid>
 ```
 
-#### __Figure 1: Custom ScatterLineSeries with one hidden label connector__
+>caption Custom ScatterLineSeries with one hidden label connector
+
 ![Custom ScatterLineSeries with one hidden label connector](images/kb-chartview-hide-label-connector.png)
 
 ## See Also

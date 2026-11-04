@@ -33,7 +33,7 @@ __Defining a button in code__
 <snippet id='radbuttons-features-split-button-defining_a_button_in_code-vb' />
 
 
-__RadSplitButton__
+>caption RadSplitButton
 
 ![The created split button](images/radbuttons-features-split-button-0.png)
 
@@ -46,7 +46,7 @@ __Adding ListBox as a drop down content__
 
 >tip Additionally, the control provides `DropDownContentTemplate` and `DropDownContentTemplateSelector` properties, that can be used to customize the drop down content in a data binding scenario. Read more about data templates in the [Data Templating Overview](https://msdn.microsoft.com/en-us/library/ms742521(v=vs.100).aspx) MSDN article.
 
-__RadSplitButton with dropdown content__
+>caption RadSplitButton with dropdown content
 
 ![RadSplitButton with dropdown content](images/radbuttons-features-split-button-1.png)
 
@@ -57,7 +57,7 @@ The ButtonPart of the split button can behave as a toggle button. To enable this
 __Enable toggle mode__
 <snippet id='radbuttons-features-split-button-enable_toggle_mode-xaml' />
 
-__RadSplitButton as a toggle button__
+>caption RadSplitButton as a toggle button
 
 ![RadSplitButton as toggle button](images/radbuttons-features-split-button-2.png)
 
@@ -111,7 +111,7 @@ You can easily customize RadSplitButton by using the following properties:
 __Customizing RadSplitButton__
 <snippet id='radbuttons-features-split-button-customizing_radsplitbutton-xaml' />
 
-__Customized RadSplitButton__
+>caption Customized RadSplitButton
 
 ![Customized RadSplitButton](images/radbuttons-features-split-button-3.png)
 

@@ -31,7 +31,8 @@ __Open RadContextMenu on a Button Click__
 
 As you can see in this particular example, __RadContextMenu__ is listening for the __Click__ event of its host. So when you click the button, a context menu will appear.
 
-__RadContextMenu Opened on a Click Event__
+>caption RadContextMenu opened on a click event
+
 ![WPF RadContextMenu Opened on Click Event](images/RadContextMenu_Features_EventName_01.png)
 
 ## See Also

@@ -35,13 +35,13 @@ __Example 3: A diagram with a single shape__
 
 In it we have one shape and a TextTool activated by default. This is why as soon as you click on the shape, you will enter its edit mode. This way you can easily modify its content.
 
-#### __Figure 1: Modifying the content of a shape with the text tool__
+>caption Modifying the content of a shape with the text tool
 
 ![Modifying the content of a shape with the text tool](images/RadDiagram_Tools_TextTool.png)
 
 And what is more, as soon as you activate the __TextTool__, you can dynamically create a text shape by dragging a rectangle on the diagramming surface:
 
-#### __Figure 2: Creating text shapes by dragging on the diagram's surface__
+>caption Creating text shapes by dragging on the diagram's surface
 
 ![Creating text shapes by dragging on the diagram's surface](images/RadDiagram_Tools_TextShape.png)
 

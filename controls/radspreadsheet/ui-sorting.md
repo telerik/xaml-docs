@@ -32,7 +32,7 @@ A brief description of each type of sorting condition can be found in the RadSpr
 The sorting dialog provides access to all sorting functionality. Through it you can add, remove and rearrange all types of sorting conditions. The following image shows the dialog:
         
 
-__Sorting Dialog__
+>caption Sorting dialog
 
 ![Rad Spreadsheet UI Sorting 01](images/RadSpreadsheet_UI_Sorting_01.png)
 
@@ -80,7 +80,7 @@ There are a few ways to add a values sort condition. The sorting dialog allows m
 Another option to add a values sort condition is to use the sorting buttons next to the button which opens the sort dialog.
         
 
-__Sorting Buttons__
+>caption Sorting buttons
 
 ![Rad Spreadsheet UI Sorting 02](images/RadSpreadsheet_UI_Sorting_02.png)
 
@@ -113,7 +113,7 @@ You can add a custom sort condition through the sorting dialog. You need to perf
 1. These steps will open a new dialog in which you can specify the custom list according to which you'd like to have the values ordered. You can use one of the predefined, or enter your values in the List entries text box as demonstrated below and choose Add.
             
 
-__Custom Lists Dialog__
+>caption Custom lists dialog
 
 ![Rad Spreadsheet UI Sorting 03](images/RadSpreadsheet_UI_Sorting_03.png)
 
@@ -143,7 +143,7 @@ There are two ways to add a fill or fore color sort condition. The first is agai
 1. Two new drop-down menus will appear, as shown below.
             
 
-__Sorting Dialog Color Condition__
+>caption Sorting dialog color condition
 
 ![Rad Spreadsheet UI Sorting 04](images/RadSpreadsheet_UI_Sorting_04.png)
 
@@ -159,7 +159,7 @@ __Sorting Dialog Color Condition__
 The other way to add a sort condition is through the filtering popup. When you open the filtering popup, you will find a __Sort by Color__ option, shown below, which will be enabled if you have different fore colors or fill colors in the column of the filtered range. Choosing a color will automatically set the rows with this fill color or fore color on the top of the sort order.
         
 
-__Filtering Popup Sorting by Color__
+>caption Filtering popup sorting by color
 
 ![Rad Spreadsheet UI Sorting 05](images/RadSpreadsheet_UI_Sorting_05.png)
 

@@ -18,7 +18,8 @@ To change the placement of the tabstrip area where the items are placed, set the
 __Example 1: Setting TabStripPlacement__
 <snippet id='radtabcontrol-appearance-customizing-items-layout-block_1-cs' />
 
-#### Figure 1: All tabstrip placements
+>caption All tabstrip placements
+
 ![{{ site.framework_name }} RadTabControl All tabstrip placements](images/radtabcontrol-appearance-customizing-items-layout-0.png)
 
 The tab items can be separated in two different lines (rows). To create a new line, set the __IsBreak__ property of the RadTabItem which should start the line. Read more about this feature in the [Create Multi-Line Tabs]({%slug radtabcontrol-features-multiline-tabs%}) article.
@@ -26,7 +27,8 @@ The tab items can be separated in two different lines (rows). To create a new li
 __Example 2: Setting IsBreak__
 <snippet id='radtabcontrol-appearance-customizing-items-layout-block_2-cs' />
 
-#### Figure 2: Tab items on multiple rows
+>caption Tab items on multiple rows
+
 ![{{ site.framework_name }} RadTabControl Tab items on multiple rows](images/radtabcontrol-appearance-customizing-items-layout-1.png)
 
 >tip The line with the selected tab will be moved on the bottom row.
@@ -36,5 +38,6 @@ To __align the tabs__ in the tabstrip area, set the __Align__ property of RadTab
 __Example 3: Setting alignments__
 <snippet id='radtabcontrol-appearance-customizing-items-layout-block_3-cs' />
 
-#### Figure 3: All tabstrip alignments
+>caption All tabstrip alignments
+
 ![{{ site.framework_name }} RadTabControl All tabstrip alignments](images/radtabcontrol-appearance-customizing-items-layout-2.png)

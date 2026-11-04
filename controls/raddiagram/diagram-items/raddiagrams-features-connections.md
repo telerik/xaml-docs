@@ -201,70 +201,80 @@ You can control the connection type through the __ConnectionType__ property. As 
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_12_arrow1_cap_type-xaml' />
 
 	
-	__Arrow1Filled___
+>caption Arrow1Filled_
+
 	 ![Rad Diagram Features Cap Type Arrow 1 Filled](images/RadDiagram_Features_CapType_Arrow1Filled.png)
 
 	__Example 13: Arrow1Filled Cap Type__
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_13_arrow1filled_cap_type-xaml' />
 
 	
-	__Arrow2__ 
+>caption Arrow2
+
 	![Rad Diagram Features Cap Type Arrow 2](images/RadDiagram_Features_CapType_Arrow2.png)
 
 	__Example 14: Arrow2 Cap Type__
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_14_arrow2_cap_type-xaml' />
 
 	
-	__Arrow2Filled__ 
+>caption Arrow2Filled
+
 	![Rad Diagram Features Cap Type Arrow 2 Filled](images/RadDiagram_Features_CapType_Arrow2Filled.png)
 
 	__Example 15: Arrow2Filled Cap Type__
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_15_arrow2filled_cap_type-xaml' />
 
 	
-	__Arrow3__ 
+>caption Arrow3
+
 	![Rad Diagram Features Cap Type Arrow 3](images/RadDiagram_Features_CapType_Arrow3.png)
 
 	__Example 16: Arrow3 Cap Type__
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_16_arrow3_cap_type-xaml' />
 
 	
-	__Arrow4__
+>caption Arrow4
+
 	![Rad Diagram Features Cap Type Arrow 4](images/RadDiagram_Features_CapType_Arrow4.png)
 
 	__Example 17: Arrow4 Cap Type__	
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_17_arrow4_cap_type-xaml' />
 
 	
-	__Arrow4Filled__ 
+>caption Arrow4Filled
+
 	![Rad Diagram Features Cap Type Arrow 4 Filled](images/RadDiagram_Features_CapType_Arrow4Filled.png)
 
 	__Example 18: Arrow4Filled Cap Type__	
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_18_arrow4filled_cap_type-xaml' />
 
 	
-	__Arrow5__ 
+>caption Arrow5
+
 	![Rad Diagram Features Cap Type Arrow 5](images/RadDiagram_Features_CapType_Arrow5.png)
 
 	__Example 19: Arrow5 Cap Type__
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_19_arrow5_cap_type-xaml' />
 
 	
-	__Arrow5Filled__ 
+>caption Arrow5Filled
+
 	![Rad Diagram Features Cap Type Arrow 5 Filled](images/RadDiagram_Features_CapType_Arrow5Filled.png)
 
 	__Example 20: Arrow5Filled Cap Type__
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_20_arrow5filled_cap_type-xaml' />
 
 	
-	__Arrow6__ 
+>caption Arrow6
+
 	![Rad Diagram Features Cap Type Arrow 6](images/RadDiagram_Features_CapType_Arrow6.png)
 
 	__Example 21: Arrow6 Cap Type__
 	<snippet id='raddiagram-diagram-items-raddiagrams-features-connections-example_21_arrow6_cap_type-xaml' />
 
 	
-	__Arrow6Filled__ 
+>caption Arrow6Filled
+
 	![Rad Diagram Features Cap Type Arrow 6 Filled](images/RadDiagram_Features_CapType_Arrow6Filled.png)
 
 	__Example 22: Arrow6Filled Cap Type__

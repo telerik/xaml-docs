@@ -46,17 +46,20 @@ __Example 2: Setting TreeListViewTableDefinition__
 
 __Figure 1__ shows how the control looks once you create some sample data and populate it
 
-#### __Figure 1: RadTreeListView__
+>caption RadTreeListView
+
 ![Rad Tree View How To Customize Rad Tree List View](images/RadTreeView_HowToCustomizeRadTreeListView.png)
 
 When the data is populated you can take a look at the section on {% if site.site_name == 'WPF' %}[selection of the control](http://www.telerik.com/help/wpf/radtreelistview-features-selection.html){% endif %}{% if site.site_name == 'Silverlight' %}[selection of the control](http://www.telerik.com/help/silverlight/radtreelistview-features-selection.html){% endif %}. The  __RadTreeListView__ exposes the a the  __SelectionUnit__ property. It is of type __GridViewSelectionUnit__ and controls the visual appearance type of the selection in the control. Setting it to __Cell__ mode forces the control to select only  the header of the separate items. If you set it to __FullRow__, the control selects the full row hosting the corresponding item. The following picture  Figure 2 shows both selection modes          
 
-#### __Figure 2: SelectionUnit__
+>caption SelectionUnit
+
 ![Rad Tree View How To Customize Rad Tree List View Selection Unit](images/RadTreeView_HowToCustomizeRadTreeListView_SelectionUnit.png)
 
 To enhance the hierarchical visualization you can allow the __RadTreeListView__ to visualize lines connecting the items of the same level of hierarchy. This can be done by setting the __RadTreeListView.TreeLinesVisibility__ property. Figure 3 shows the effect of the property Wwhen it is set to Visible the result will be like the following picture.
 
-#### __Figure 3: Visible tree lines__
+>caption Visible tree lines
+
 ![Rad Tree View How To Customize Rad Tree List View Visible Tree Lines](images/RadTreeView_HowToCustomizeRadTreeListView_VisibleTreeLines.png)
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/TreeListViewBringItemIntoView).

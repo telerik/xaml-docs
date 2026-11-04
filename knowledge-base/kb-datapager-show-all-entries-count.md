@@ -14,11 +14,11 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
-		<td>Product Version</td>
+		<th scope="row">Product Version</th>
 		<td>2022.3.912</td>
 	</tr>
 	<tr>
-		<td>Product</td>
+		<th scope="row">Product</th>
 		<td>RadDataPager for WPF</td>
 	</tr>
 </table>
@@ -110,6 +110,6 @@ __Sample implementation__
     End Sub
 ```
 
-__RadDataPager displaying the total items count__
+>caption RadDataPager displaying the total items count
 
 ![{{ site.framework_name }} RadDataPager Displaying the Total Items Count](images/kb-datapager-show-total-entries-count.png)

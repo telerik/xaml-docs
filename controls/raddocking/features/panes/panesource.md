@@ -40,8 +40,8 @@ The next example demonstrates the described approach:
 
 The final result is shown in the next figure:
 
- Figure 1. Each of the Objects from the Panes collection is added to a new RadSplitContainer and RadPaneGroup
- 
+>caption Each of the objects from the panes collection is added to a new RadSplitContainer and RadPaneGroup
+
  ![raddocking-features-panes-panesource-1](images/raddocking-features-panes-panesource-1.png)
 
 >If the bound collection to the __PanesSource__ contains objects of RadPane type the Panes will be added to new RadPaneGroups that are docked to the left. If that collection contains objects of RadDocumentPane type those Panes will be added to the currently active RadPaneGroup of a RadDocument or if such doesn’t exists to a new RadPaneGroup that is added to DocumentHost of the control.
@@ -91,7 +91,7 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 The next figure shows the final result:
 
-Figure 2. As expected two of the RadPanes are added to the “bottom” RadPaneGroup and one to the “left” one
+>caption As expected two of the RadPanes are added to the “bottom” RadPaneGroup and one to the “left” one
 
 ![raddocking-features-panes-panesource-2](images/raddocking-features-panes-panesource-2.png)
 

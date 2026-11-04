@@ -92,7 +92,8 @@ __Example 3: Export RadGridView with headers, footers and default styles__
 <snippet id='radgridview-export-excel-export-with-spreadsheetstreamingexport-example_3_export_radgridview_with_headers_footers_and_default_styles-cs' />
 
 
-#### __Figure 1: Exporting with ExportDefaultStyles set to True__
+>caption Exporting with ExportDefaultStyles set to true
+
 ![Telerik UI for {{ site.framework_name }} RadGridView spreadsheet streaming export with default styles applied in the generated document](../images/exportdefaultstyles2.png)
 
 ## Events

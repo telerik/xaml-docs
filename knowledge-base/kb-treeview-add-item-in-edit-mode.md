@@ -231,7 +231,7 @@ __Example 2: The view__
 	</Grid>
 ```
 
-#### __Figure 1: Result after the add button is clicked in the Fluent theme__
+>caption Result after the add button is clicked in the fluent theme
 
 ![RadTreeViewItem added directly in edit mode](images/kb-treeview-add-item-in-edit-mode.png)
 

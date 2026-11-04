@@ -47,7 +47,8 @@ In order to use the DragDropManagerUtilities class logic you will need to set th
 __Example 4: Implementing a basic drag/drop logic between the Border elements__
 <snippet id='dragdropmanager-how-to-howto-create-custom-drag-arrow-example_4_implementing_a_basic_drag_drop_logic_between_the_border_elements-cs' />
 
-#### Figure 1: Custom drag arrow 
+>caption Custom drag arrow
+
 ![dragdropmanager-howto-create-custom-drag-arrow-0.png](images/dragdropmanager-howto-create-custom-drag-arrow-0.png)
 
 >tip The DragDropManagerUtilities class can be used with most controls.

@@ -40,7 +40,7 @@ __Setting screen tip title in code-behind__
 <snippet id='radribbonview-features-ribbon-controls-screentips-block_2-cs' />
 <snippet id='radribbonview-features-ribbon-controls-screentips-block_3-vb' />
 
-__ScreenTip's Title example__  
+>caption ScreenTip's title example
 
 ![{{ site.framework_name }} RadRibbonView Screen Tip Title](images/RadRibbonView_ScreenTip_Title.png)
 
@@ -55,7 +55,7 @@ __Setting screen tip description in code-behind__
 <snippet id='radribbonview-features-ribbon-controls-screentips-block_5-cs' />
 <snippet id='radribbonview-features-ribbon-controls-screentips-block_6-vb' />
 
-__ScreenTip's Description example__  
+>caption ScreenTip's description example
 
 ![{{ site.framework_name }} RadRibbonView Screen Tip Title and Description](images/RadRibbonView_ScreenTip_Decription.png)
 
@@ -70,7 +70,7 @@ __Setting screen tip icon in code-behind__
 <snippet id='radribbonview-features-ribbon-controls-screentips-block_8-cs' />
 <snippet id='radribbonview-features-ribbon-controls-screentips-block_9-vb' />
 
-__ScreenTip's Icon example__  
+>caption ScreenTip's icon example
 
 ![{{ site.framework_name }} RadRibbonView Screen Tip Title Description and Icon](images/RadRibbonView_ScreenTip_Icon.png)
 

@@ -35,5 +35,6 @@ This section shows how to setup a ListBoxDragDropBehavior that will use the cust
 __Example 2: Using the custom drag visual provider__
 <snippet id='dragdropmanager-behaviors-customizingdragvisual-example_2_using_the_custom_drag_visual_provider-xaml' />
 
-#### Figure 1: Custom drag visual provider 
+>caption Custom drag visual provider
+
 ![dragdropmanager customizingdragvisual](images/dragdropmanager-customizingdragvisual-0.png)

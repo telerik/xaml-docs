@@ -17,7 +17,7 @@ The __GridViewRow__ element exposes properties which allow you to change the def
 
 RadGridView has a default Brush for its selection on row level depending on the given theme. For example, the visual appearance of the selected row in the Office2016 theme would be as shown below.
 
-#### __Figure 1: Selected Row Background in Office2016 Theme__
+>caption Selected row background in Office2016 theme
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the default selected row background in the Office2016 theme](images/RadGridView_SelectedRow_Background_01.png)
 
@@ -28,7 +28,7 @@ __Example 1: Setting the SelectedBackground property of GridViewRow__
 <snippet id='radgridview-rows-selected-row-background-example_1_setting_the_selectedbackground_property_of_gridviewrow-xaml' />
 
 
-#### __Figure 2: RadGridView with modified Background for its Selected Row__
+>caption RadGridView with modified background for its selected row
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom SelectedBackground applied to the selected row](images/RadGridView_SelectedRow_Background_02.png)
 
@@ -47,7 +47,7 @@ __Example 2: Setting the MouseOverBackground property of GridViewRow__
 <snippet id='radgridview-rows-selected-row-background-example_2_setting_the_mouseoverbackground_property_of_gridviewrow-xaml' />
 
 
-#### __Figure 2: RadGridView with modified MouseOver Background__
+>caption RadGridView with modified MouseOver background
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom MouseOverBackground applied to hovered rows](images/RadGridView_MouseOverBackground.png)
 

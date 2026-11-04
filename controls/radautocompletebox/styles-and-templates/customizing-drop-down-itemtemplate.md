@@ -34,13 +34,16 @@ __Example 2: Setting the DropDownItemTemplate__
 <snippet id='radautocompletebox-styles-and-templates-customizing-drop-down-itemtemplate-example_2_setting_the_dropdownitemtemplate-xaml' />
 
 The next screenshots show the final result:
-#### __Figure 1__
+>caption RadAutoCompleteBox with an empty text box
+
 ![radautocompletebox-customizing-drop-down-itemtemplate-1](images/radautocompletebox-customizing-drop-down-itemtemplate-1.png)
 
-#### __Figure 2__
+>caption Drop-down results showing country names and capitals
+
 ![radautocompletebox-customizing-drop-down-itemtemplate-2](images/radautocompletebox-customizing-drop-down-itemtemplate-2.png)
 
-#### __Figure 3__
+>caption United States selected in RadAutoCompleteBox
+
 ![radautocompletebox-customizing-drop-down-itemtemplate-3](images/radautocompletebox-customizing-drop-down-itemtemplate-3.png)
 
 ## Creating custom DropDownItemTemplateSelector
@@ -54,6 +57,8 @@ The next step is to specify the MyDropDownItemTemplateSelector in the Resources 
 
 __Example 4: Setting the DropDownItemTemplateSelector__
 <snippet id='radautocompletebox-styles-and-templates-customizing-drop-down-itemtemplate-example_4_setting_the_dropdownitemtemplateselector-xaml' />
+
+>caption Drop-down items styled with a DataTemplateSelector
 
 ![radautocompletebox-customizing-drop-down-itemtemplate-1](images/radautocompletebox-customizing-drop-down-itemtemplate-selector.png)
 

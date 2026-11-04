@@ -18,8 +18,8 @@ The fastest way to have such a project is by using the Progress Telerik UI for W
 
 1. Find the Telerik extensions menu in Visual Studio.
 
-	__Telerik Visual Studio Extensions menu location__  
-	
+>caption Telerik Visual Studio extensions menu location
+
 	![Telerik UI for WPF Visual Studio Extensions menu location in Visual Studio](images/radcontrols-for-wpf-vs-extensions-project-creation-0.png)
 	
 2. Click on the __Create New Telerik Project__ option and configure the project's name and location. 
@@ -32,14 +32,14 @@ The fastest way to have such a project is by using the Progress Telerik UI for W
 	
 4. In the __Create New Project Wizard__ select the project template you want to use. The wizard allows you to define a blank project with only the `Telerik.Windows.Controls.dll` referenced, or to use one of the [Office-inspired Visual Studio templates for Telerik UI for WPF]({%slug visual-studio-templates%}) (Calendar, Word-Inspired, etc.). 
 	
-	__.{{ site.minimum_net_core_version }} and later project creation wizard__  
-	
+>caption .{{ site.Minimum_net_core_version }} and later project creation wizard
+
 	![Telerik UI for WPF Visual Studio Create New Project wizard](images/radcontrols-for-wpf-vs-extensions-project-creation-3.png)
 	
 	When creating .NET Framework project, the selection of the Telerik version happens in this step.
 
-	__.NET Framework project creation wizard__  
-	
+>caption .NET framework project creation wizard
+
 	![Telerik UI for WPF Visual Studio Create New Project wizard NuGet options](images/radcontrols-for-wpf-vs-extensions-project-creation-4.png)
 
 5. The wizard validates your Telerik UI for WPF license and lets you download a new [Telerik UI for WPF license key file]({%slug installing-license-key%}) if one such is not found.
@@ -48,7 +48,7 @@ The fastest way to have such a project is by using the Progress Telerik UI for W
 
 You can also start the Telerik's __Create New Project Wizard__ (see step 2) from the Visual Studio's New Project Wizard.
 
-__Visual Studio New Project Wizard__  
+>caption Visual Studio new project wizard
 
 ![Telerik UI for WPF Visual Studio New Project wizard](images/radcontrols-for-wpf-vs-extensions-project-creation-5.png)
 

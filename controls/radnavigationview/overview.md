@@ -19,7 +19,8 @@ RadNavigationView is part of the powerful UI for WPF navigation controls framewo
 {% include cta-panel-overview.html %}
 {% endif %}
 
-#### __Figure 1: RadNavigationView in the Office 2016 theme__
+>caption RadNavigationView in the Office 2016 theme
+
 ![RadNavigationView Overview](images/NavigationView_Overview.png)
 
 As every control from UI for WPF, RadNavigationView comes with a set of pre-defined themes. Of course, if you choose to do so, you can design your own templates for a completely custom look using Blend for Visual Studio.

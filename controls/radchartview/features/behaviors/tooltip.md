@@ -28,7 +28,8 @@ __Example 1: Defining a tooltip behavior__
 	
 At this point if you hover a data point visual a tooltip with basic information about the data point is displayed.
 
-#### __Figure 1: Default tooltip example__
+>caption Default tooltip example
+
 ![Telerik UI for WPF RadChartView default chart tooltip](images/chartview-features-charttooltipbehavior-0.png)
 
 ## Customizing the Tooltip
@@ -39,7 +40,8 @@ __Example 2: Setting TooltipTemplate of the series__
 <snippet id='radchartview-features-behaviors-tooltip-example_2_setting_tooltiptemplate_of_the_series-xaml' />
 
 
-#### __Figure 2: Custom tooltip example__
+>caption Custom tooltip example
+
 ![Telerik UI for WPF RadChartView custom chart tooltip](images/chartview-features-charttooltipbehavior-1.png)
 	
 The data context passed to the `TooltipTemplate` is an object of type [DataPoint]({%slug radchartview-getting-started-data-point%}) which can be `CategoricalDataPoint`, `ScatterDataPoint`, etc. This means that you may need to use different property paths for the bindings, based on the series type and its `DataPoint` implementation.
@@ -84,7 +86,8 @@ __Example 8: Converters implementation__
 <snippet id='radchartview-features-behaviors-tooltip-example_8_converters_implementation-vb' />
 
 
-#### __Figure 3: Example result__
+>caption Example result
+
 ![Telerik UI for WPF RadChartView custom tooltip showing quarterly profit data](images/chartview-features-charttooltipbehavior-2.png)
 
 ## See Also

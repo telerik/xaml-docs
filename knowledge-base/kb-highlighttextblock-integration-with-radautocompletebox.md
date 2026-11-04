@@ -15,11 +15,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2023.3.1011</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadHighlightTextBlock for WPF</td>
 		</tr>
 	</tbody>
@@ -100,6 +100,6 @@ __Set the custom DataTemplate to the DropDownItemTemplate property of RadAutoCom
                          DropDownItemTemplate="{StaticResource HighlightTextBlockDataTemplate}"/>
 ```
 
-__RadAutoCompleteBox with RadHighlightTextBlock__
+>caption RadAutoCompleteBox with RadHighlightTextBlock
 
 ![{{ site.framework_name }} RadAutoCompleteBox with RadHighlightTextBlock](images/kb-highlighttextblock-integration-with-radautocompletebox-0.png)

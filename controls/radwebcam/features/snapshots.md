@@ -17,7 +17,7 @@ This can be done via the "Take snapshot" button of the control, or the `TakeSnap
 
 When the `PreviewSnapshots` property is `true` the `SnapshotTaken` event is raised only after the snapshot is saved. When the property is `false`, the event is raised immediately after you click on the "Take snapshot" button, or after you call the `TakeSnapshot` method.
 
-__Take snapshot button__
+>caption Take snapshot button
 
 ![{{ site.framework_name }} RadWebCam Take Snapshot Button](images/radwebcam-features-snapshots-0.png)
 

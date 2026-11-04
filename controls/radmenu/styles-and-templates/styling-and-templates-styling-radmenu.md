@@ -21,7 +21,8 @@ __Example 1: Styling RadMenu__
 
 <snippet id='radmenu-styles-and-templates-styling-and-templates-styling-radmenu-block_1-xaml' />
 
-#### __Figure 1: RadMenu with red Background in the Fluent theme__
+>caption RadMenu with red background in the fluent theme
+
 ![RadMenu with red Background in the Fluent theme](images/RadMenu_Styling.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

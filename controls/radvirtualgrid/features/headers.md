@@ -37,7 +37,7 @@ __Example 1: Handling the HeaderSizeNeededEvent__
 
 <snippet id='radvirtualgrid-features-headers-block_1-cs' />
 
-#### __Figure 1: RadVirtualGrid with custom size for the headers__
+>caption RadVirtualGrid with custom size for the headers
 
 ![RadVirtualGrid with custom size for the headers](images/RadVirtualGrid_Features_Headers01.png)
 

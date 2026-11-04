@@ -52,7 +52,7 @@ To add a hyperlink using this API, add the range start object and then pair it w
 __Adding a hyperlink that spans on multiple document elements__  
 <snippet id='radrichtextbox-features-document-elements-hyperlink-block_4-cs' />
 
-__The document created with the hyperlink range setup__  
+>caption The document created with the hyperlink range setup
 
 ![Hyperlink spanning on an image](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_ImageInHyperlink.png)
 
@@ -113,7 +113,7 @@ By default, when the users insert a hyperlink in RadRichTextBox, it is styled wi
 	hyperlinkStyle.SpanStyle.UnderlineDecoration = UnderlineTypes.None;
 {{endregion}}
 
-__A hyperlink with customized font styles__  
+>caption A hyperlink with customized font styles
 
 ![Custom style for hyperlink in RadRichTextBox](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_CustomStyle.png)
 

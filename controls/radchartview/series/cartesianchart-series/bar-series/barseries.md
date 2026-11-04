@@ -28,7 +28,8 @@ __Example 1: Declaring a BarSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-barseries-example_1_declaring_a_barseries_in_xaml-xaml' />
 
 
-#### __Figure 1: BarSeries visual appearance__  
+>caption BarSeries visual appearance
+
 ![Telerik UI for WPF RadChartView BarSeries visual appearance](images/radchartview-series-barseries.png)
 
 ## Properties
@@ -66,12 +67,14 @@ __Example 4: Specify LegendSettings of the BarSeries__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-barseries-example_4_specify_legendsettings_of_the_barseries-xaml' />
 
 
-#### __Figure 2: Setting BarSeries legend settings__
+>caption Setting BarSeries legend settings
+
 ![Telerik UI for WPF RadChartView BarSeries with data point legend settings](images/radchartview-series-barseries-legendsettings.PNG)
 
 * __PaletteMode__: The BarSeries supports two modes that determine whether the applied palette should be applied per series or per data point. The mode can be controlled through the PalleteMode property. The modes are called Series and DataPoint. The following image demonstrates the DataPoint PaletteMode with the Windows8 palette applied:
 	
-#### __Figure 3: Specify BarSeries pallete mode__
+>caption Specify BarSeries pallete mode
+
 ![Telerik UI for WPF RadChartView BarSeries using DataPoint palette mode](images/radchartview-series-barseries-palletemode.PNG)
 	
 Setting the PaletteMode to __Series__ will apply different color for each series defined in the chart.
@@ -82,7 +85,8 @@ __Example 8: Setting the HoverMode of the RadCartesianChart__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-barseries-example_8_setting_the_hovermode_of_the_radcartesianchart-xaml' />
 
 
-#### __Figure 4: Hover interactivity in BarSeries__ 
+>caption Hover interactivity in BarSeries
+
 ![Telerik UI for WPF RadChartView BarSeries hover interaction fading other series](images/radchartview-series-barseries-hovermode.PNG)
 
 ## Styling the Series

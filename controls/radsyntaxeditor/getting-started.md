@@ -39,7 +39,8 @@ __Example 1__ demonstrates how you can define a RadSyntaxEditor in XAML.
 __Example 1: Defining RadSyntaxEditor__
 <snippet id='radsyntaxeditor-getting-started-block_1-xaml' />
 
-#### __Figure 1: Empty RadSyntaxEditor__
+>caption Empty RadSyntaxEditor
+
 ![Empty RadSyntaxEditor](images/syntaxeditor_getting-started-1.png)
 
 ## Opening a File
@@ -49,7 +50,8 @@ To load a file in the RadSyntaxEditor you need to use its **Document** property.
 __Example 2: Opening a File__
 <snippet id='radsyntaxeditor-getting-started-block_2-cs' />
 
-#### __Figure 2: RadSyntaxEditor with a loaded C# file__
+>caption RadSyntaxEditor with a loaded C# file
+
 ![RadSyntaxEditor with a loaded CS file](images/syntaxeditor_getting-started-2.png)
 
 ## Enable Syntax Highlighting
@@ -59,7 +61,8 @@ Once you have loaded the code, you need to register an appropriate tagger to ena
 __Example 3: Enable C# code highlighting__
 <snippet id='radsyntaxeditor-getting-started-block_3-cs' />
 
-#### __Figure 3: RadSyntaxEditor with C# code highlighting__
+>caption RadSyntaxEditor with C# code highlighting
+
 ![RadSyntaxEditor with C# code highlighting](images/syntaxeditor_getting-started-3.png)
 
 ## Setting a Theme
@@ -88,7 +91,8 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 3__ shows a RadSyntaxEditor with the **Windows8** theme applied.
 
-#### __Figure 3: RadSyntaxEditor with the Windows8 theme__
+>caption RadSyntaxEditor with the Windows8 theme
+
 ![RadSyntaxEditor with Windows8 theme](images/RadSyntaxEditor-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

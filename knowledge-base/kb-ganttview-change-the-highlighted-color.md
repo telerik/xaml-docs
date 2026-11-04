@@ -15,11 +15,11 @@ ticketid: 1649117
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2024.1.423</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadGanttView for WPF</td>
 		</tr>
 	</tbody>
@@ -121,6 +121,6 @@ __Setting the EventContainerExtensions.EventContainerHighlightBrush attached pro
     </Grid.Resources>
 ```
 
-__Windows 11 themed RadGanttView with different color for its highlighted items__
+>caption Windows 11 themed RadGanttView with different color for its highlighted items
 
 ![Windows 11 themed RadGanttView with different color for its highlighted items](images/kb-ganttview-change-the-highlighted-color-0.png)

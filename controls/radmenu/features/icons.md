@@ -22,7 +22,7 @@ When using static items you can directly access the Icon property of each item. 
 __Setting the Icon property declaratively__
 <snippet id='radmenu-features-icons-block_1-xaml' />
 
-__RadMenuItems with their Icon property set__
+>caption RadMenuItems with their icon property set
 
 ![RadMenuItems with their Icon property set](images/RadMenu_Features_Icons_01.png)
 
@@ -54,7 +54,7 @@ You can then bind the Icon using any of the two properties. Following the exampl
 
 Both approaches will lead to the same results as when you set the icon declaratively.
 
-__Dynamic RadMenuItems with their icons__
+>caption Dynamic RadMenuItems with their icons
 
 ![Dynamic RadMenuItems with their icons](images/RadMenu_Features_Icons_01.png)
 
@@ -68,7 +68,7 @@ The `RadMenuItem` element exposes the `ItemIconPosition` property that allows fo
 __Setting the ItemIconPosition property to Right__
 <snippet id='radmenu-features-icons-block_5-xaml' />
 
-__RadMenuItem with its icon positioned on the right__
+>caption RadMenuItem with its icon positioned on the right
 
 ![RadMenuItem with its icon positioned on the right](images/menu-features-icon-2.png)
 

@@ -42,7 +42,8 @@ __Example 1: Calling the ScrollIntoView method__
 
 __Figure 1__ illustrates how the view is scrolled vertically and TimeRuler part - horizontally when the code from __Example 1__ is executed for “task 4”. 
 
-#### __Figure 1: GanttView before and after calling ScrollIntoView for “task 4"__
+>caption GanttView before and after calling ScrollIntoView for “task 4"
+
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollIntoView for “task 4"](images/ganttview_scrolling_01.png)
 
 ### ScrollIntoView (object item, ScrollSettings settings)
@@ -65,7 +66,8 @@ __Example 2: Calling ScrollIntoView method with ScrollSettings__
 
 __Figure 2__ shows the result.
 
-#### __Figure 2: GanttView before and after calling ScrollIntoView for “task 4” with ScrollingSettings applied__
+>caption GanttView before and after calling ScrollIntoView for “task 4” with ScrollingSettings applied
+
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollIntoView for “task 4” with ScrollingSettings applied](images/ganttview_scrolling_02.png)
 
 ### ScrollToDateTime(DateTime dateTime)
@@ -79,7 +81,8 @@ __Example 3: Calling ScrollToDateTime method__
 
 You can see the result in __Figure 3__.
 
-#### __Figure 3: GanttView before and after calling ScrollToDateTime method__
+>caption GanttView before and after calling ScrollToDateTime method
+
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollToDateTime method](images/ganttview_scrolling_03.png)
 
 ### ScrollToColumn(int columnIndex) / ScrollToColumn(ColumnDefinitionBase columnDefinition)
@@ -91,7 +94,8 @@ __Example 4: Calling ScrollToColumn method__
 <snippet id='radganttview-features-scrolling-example_4_calling_scrolltocolumn_method-cs' />
 
 
-#### __Figure 4: GanttView before and after calling ScrollToColumn method__
+>caption GanttView before and after calling ScrollToColumn method
+
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollToColumn method](images/ganttview_scrolling_04.png)
 
 ### ScrollToRow(int rowIndex)
@@ -103,7 +107,8 @@ __Example 5: Calling ScrollToRow method__
 <snippet id='radganttview-features-scrolling-example_5_calling_scrolltorow_method-cs' />
 
 
-#### __Figure 5: GanttView before and after calling ScrollToRow method__
+>caption GanttView before and after calling ScrollToRow method
+
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollToRow method](images/ganttview_scrolling_05.png)
 
 ### ScrollHorizontalTo (double offset, GanttScrollArea ganttArea)
@@ -115,7 +120,8 @@ __Example 6: Calling ScrollHorizontalTo method__
 <snippet id='radganttview-features-scrolling-example_6_calling_scrollhorizontalto_method-cs' />
 
 
-#### __Figure 6: GanttView before and after calling ScrollHorizontalTo method__
+>caption GanttView before and after calling ScrollHorizontalTo method
+
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollHorizontalTo method](images/ganttview_scrolling_06.png)
 
 ### ScrollVerticalTo(double offset) / ScrollVerticalWith(double offset)
@@ -127,7 +133,8 @@ __Example 7: Calling ScrollVerticalTo method__
 <snippet id='radganttview-features-scrolling-example_7_calling_scrollverticalto_method-cs' />
 
 
-#### __Figure 7: GanttView before and after calling ScrollVerticalTo method__
+>caption GanttView before and after calling ScrollVerticalTo method
+
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollVerticalTo method](images/ganttview_scrolling_07.png)
 
 ## Customizing Auto-scrolling Functionality
@@ -141,7 +148,8 @@ __Example 8: Setting ScrollSettings__
 
 __Figure 8__ shows the result when selecting “task 4”.
 
-#### __Figure 8: Default and customized auto-scrolling behavior__ 
+>caption Default and customized auto-scrolling behavior
+
 ![{{ site.framework_name }} RadGanttView Default and customized auto-scrolling behavior](images/ganttview_scrolling_08.png)
 
 >tip In order to disable the auto-scrolling behavior, you will need to set the HorizontalScrollPosition and VerticalScrollPosition properties of the ScrollSettings to “None” as shown in __Example 9__.

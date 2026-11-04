@@ -4,7 +4,8 @@ page_title: Filtering
 description: Check our &quot;Filtering&quot; documentation article for the RadScheduleView {{ site.framework_name }} control.
 components: ["scheduleview"]
 slug: radscheduleview-features-filtering
-tags: filtering
+tags: filtering
+
 published: True
 position: 10
 ---
@@ -17,11 +18,11 @@ The RadScheduleView control enables you to filter its appointments and individua
 
 The following filter will exclude all appointments whose start date is not today.
 
-#### [C#] Example 1: Define the appointments filter predicate
+__[C#] Example 1: Define the appointments filter predicate__
 
 <snippet id='radscheduleview-features-filtering-block_1-cs' />
 
-#### [XAML] Example 2: Set a definition's AppointmentFilter property
+__[XAML] Example 2: Set a definition's AppointmentFilter property__
 
 <snippet id='radscheduleview-features-filtering-block_2-xaml' />
 
@@ -31,11 +32,11 @@ The filter demonstrated in **examples 3 and 4** will exclude all occurences whos
 
 >The OccurenceFilter is useful when you need to exclude only certain occurrences/exceptions of any recurring appointment.
 
-#### [C#] Example 3: Define the occurences filter predicate
+__[C#] Example 3: Define the occurences filter predicate__
 
 <snippet id='radscheduleview-features-filtering-block_3-cs' />
 
-#### [XAML] Example 4: Set a definition's AppointmentFilter property
+__[XAML] Example 4: Set a definition's AppointmentFilter property__
 
 <snippet id='radscheduleview-features-filtering-block_4-xaml' />
 

@@ -25,7 +25,8 @@ __Example 1: Declaring a OhlcSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-financial-series-ohlcseries-example_1_declaring_a_ohlcseries_in_xaml-xaml' />
 
 
-#### __Figure 1: OhlcSeries visual appearance__
+>caption OhlcSeries visual appearance
+
 ![Telerik UI for WPF RadChartView OhlcSeries visual appearance](images/radchartview-series-ohlcseries.png)
 
 ## Properties

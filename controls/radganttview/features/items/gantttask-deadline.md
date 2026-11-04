@@ -45,11 +45,11 @@ __Example 2__ shows how to override CheckIsExpired method.
 
 __Figure 2__ and __Figure 3__ show the result:
 
-Figure 2: Even if the End is after the Deadline, the task is not marked as expired.
+>caption Even if the end is after the deadline, the task is not marked as expired.
 
 ![ganttview gantttaskdeadline 02](images/ganttview_gantttaskdeadline_02.png)
 
-Figure 3: As soon as the Start goes after the Deadline, the task is marked as delayed.
+>caption As soon as the start goes after the deadline, the task is marked as delayed.
 
 ![ganttview gantttaskdeadline 03](images/ganttview_gantttaskdeadline_03.png)
 

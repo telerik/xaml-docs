@@ -18,10 +18,11 @@ __Example 1: Setting the EmptyText property__
 <snippet id='radcombobox-howto-create-a-watermark-example_1_setting_the_emptytext_property-xaml' />
 
 
-#### __Figure 1: RadComboBox with IsEditable property set to True and EmptyText in the Office2016 theme__
+>caption RadComboBox with IsEditable property set to true and EmptyText in the Office2016 theme
+
 ![Editable RadComboBox with EmptyText displayed](images/ComboBox_EmptyText.png)
 
-#### __Figure 2: RadComboBox with IsEditable property set to False(default) and EmptyText in the Office2016 theme__
+>caption RadComboBox with IsEditable property set to false(default) and EmptyText in the Office2016 theme
 
 ![NonEditable RadComboBox with EmptyText displayed](images/ComboBox_EmptyText_2.png)
 
@@ -36,7 +37,8 @@ __Example 2: Set the EmptySelectionBoxTemplate property__
 <snippet id='radcombobox-howto-create-a-watermark-example_2_set_the_emptyselectionboxtemplate_property-xaml' />
 
 
-#### __Figure 2: RadComboBox with EmptySelectionBoxTemplate in the Office2016 theme__
+>caption RadComboBox with EmptySelectionBoxTemplate in the Office2016 theme
+
 ![RadComboBox with EmptySelectionBoxTemplate](images/ComboBox_EmptySelectionBoxTemplate.png)
 
 >tip The __EmptySelectionBoxTemplate__ property only works if the RadComboBox is in non-editable mode, i.e its __IsEditable__ property is set to __False__. Otherwise, the __EmptyText__ will be applied.

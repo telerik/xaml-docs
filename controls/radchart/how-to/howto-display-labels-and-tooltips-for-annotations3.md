@@ -14,7 +14,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 
 >The article demonstrates how to set Tooltip and Label for MarkedZone but the approach is the same for the other Annotations. __Adding Tooltip__
 
-##### 1. To be able to see the Tooltips for MarkedZones you should re-template the Chart Area and put the Annotations Layer within the Zoom Layer. Then by using *TooltipService.ToolTip* property of the MarkedZone you can set custom tooltip:
+**1. To be able to see the Tooltips for MarkedZones you should re-template the Chart Area and put the Annotations Layer within the Zoom Layer. Then by using *TooltipService.ToolTip* property of the MarkedZone you can set custom tooltip:**
 
 
 
@@ -97,7 +97,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 	            </Style>
 ```
 
-##### 2. Set the re-templated ChartArea Style to the RadChart. Then create new __MarkedZone__ and set custom string for it's *TooltipService.ToolTip* property:
+**2. Set the re-templated ChartArea Style to the RadChart. Then create new __MarkedZone__ and set custom string for it's *TooltipService.ToolTip* property:**
 
 ```XAML
 	<telerik:RadChart x:Name="RadChart1" ItemsSource="{Binding Data}" BorderThickness="1,0,1,1" BorderBrush="Black">
@@ -150,7 +150,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 
 ## Adding Label
 
-##### 1.  You can show any text in annotation zone by re-templating it and adding *TextBlock* in it's *ControlTemplate*. For this purpose the Rectangle and the newly added *TextBlock* are placed in a Grid. *The retemplated MarkedZone's Style* is as follows*:
+**1.  You can show any text in annotation zone by re-templating it and adding *TextBlock* in it's *ControlTemplate*. For this purpose the Rectangle and the newly added *TextBlock* are placed in a Grid. *The retemplated MarkedZone's Style* is as follows:**
 
 ```XAML
 	<Style x:Key="NewMarkedZones" TargetType="telerik:MarkedZone">
@@ -175,7 +175,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 
 Additionally the __TextWrapping__ property of the MarkedZone's Text Block is set to __Wrap__ - this way the overflowed text does not clips.
 
-##### 2. Set the newly created Style to your MarkedZone and provide Label's content using the DataContext property:
+**2. Set the newly created Style to your MarkedZone and provide Label's content using the DataContext property:**
 
 ```XAML
 	<telerik:MarkedZone StartY="0" EndY="4000" Style="{StaticResource NewMarkedZones}" DataContext="This is my custom label" Background="#FF9AD846" />

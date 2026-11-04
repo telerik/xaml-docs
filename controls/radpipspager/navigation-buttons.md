@@ -25,7 +25,7 @@ The visibility of the navigation buttons is controlled via the `ButtonVisibility
 __Setting the ButtonVisibility property to Visible__
 <snippet id='radpipspager-navigation-buttons-block_1-xaml' />
 
-__RadPipsPager with visible buttons__
+>caption RadPipsPager with visible buttons
 
 ![{{ site.framework_name }} RadPipsPager with visible buttons](images/radpipspager-navigation-buttons-0.png)
 
@@ -36,7 +36,7 @@ RadPipsPager exposes the `PreviousButtonStyle` and `NextButtonStyle` properties 
 __Setting custom styles to the PreviousButtonStyle and NextButtonStyle properties__
 <snippet id='radpipspager-navigation-buttons-block_2-xaml' />
 
-__RadPipsPager with custom styles for the navigation buttons__
+>caption RadPipsPager with custom styles for the navigation buttons
 
 ![{{ site.framework_name }} RadPipsPager with custom styles for the navigation buttons](images/radpipspager-navigation-buttons-1.png)
 

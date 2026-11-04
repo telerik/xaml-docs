@@ -27,5 +27,6 @@ __Example 3 Make the RadRating readonly in code__
 <snippet id='radrating-how-to-howto-make-readonly-block_3-cs' />
 <snippet id='radrating-how-to-howto-make-readonly-block_4-vb' />
 
-#### __Figure 1: Result from Examples 2 and 3__
+>caption Result from examples 2 and 3
+
 ![Readonly RadRating](images/rating_howto_readonly.png)

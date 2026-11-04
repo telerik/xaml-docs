@@ -55,8 +55,8 @@ __Example 4: Handling the AutoGeneratingField Event__
 
 Figure 1 shows the resulting RadDataForm:
 
-#### __Figure 1: The DataFormComboBoxField__
-  
+>caption The DataFormComboBoxField
+
 ![The DataFormComboBoxField](images/RadDataForm_EditLookupValues.png)
 
 2. Scenario 2 - define the template for the ReadOnlyTemplate, EditTemplate and NewItemTemplate: 

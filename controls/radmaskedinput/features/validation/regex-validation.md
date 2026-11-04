@@ -58,7 +58,8 @@ You can set the error that will be shown in the validation tooltip via the __Err
 __Example 4: Setting predefined error message in XAML__
 <snippet id='radmaskedinput-features-validation-regex-validation-block_5-xaml' />
 
-#### __Figure 1: Custom error message__
+>caption Custom error message
+
 ![{{ site.framework_name }} RadMaskedInput Custom error message](images/radmaskedinput-features-regex-validation-0.png)
 
 {% if site.site_name == 'WPF' %}

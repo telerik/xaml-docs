@@ -42,7 +42,7 @@ To replace the error message use the `CameraError` event of RadWebCam. The `Came
 __Replacing the no-camera error message__
 <snippet id='radwebcam-features-errors-block_1-cs' />
 
-__Customized error message__
+>caption Customized error message
 
 ![{{ site.framework_name }} RadWebCam Customized Error Message](images/radwebcam-features-errors-4.png)
 
@@ -53,7 +53,7 @@ By default the error message is displayed in a simple content presenter. To cust
 __Customizing the error template__
 <snippet id='radwebcam-features-errors-block_2-xaml' />
 
-__Custom error template__
+>caption Custom error template
 
 ![{{ site.framework_name }} RadWebCam Custom Error Template](images/radwebcam-features-errors-5.png)
 

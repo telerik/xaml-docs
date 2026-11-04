@@ -24,11 +24,11 @@ __Example 1: Defining custom formatting__
 <snippet id='radgridview-how-to-custom-format-example_1_defining_custom_formatting-vb' />
 
 
-__Figure 1__: RadGridView displaying data with IsLocalizationLanguageRespected set to True
-        
+>caption RadGridView displaying data with IsLocalizationLanguageRespected set to true
+
 ![Telerik UI for {{ site.framework_name }} RadGridView formatting data with IsLocalizationLanguageRespected set to True](images/gridview_customformat_before.png)
 
-__Figure 2__: RadGridView displaying data with IsLocalizationLanguageRespected set to False
+>caption RadGridView displaying data with IsLocalizationLanguageRespected set to false
 
 ![Telerik UI for {{ site.framework_name }} RadGridView formatting data with IsLocalizationLanguageRespected set to False and custom CurrentCulture applied](images/gridview_customformat_after.png)
 
@@ -66,7 +66,7 @@ To use a different culture for an individual column, define a `CellTemplate` and
 
 Use the format string and `xml:lang` value that correspond to the required output for each column. If a required separator pattern is not provided by a culture, format the value with a converter and bind the resulting text in the `CellTemplate`.
 
-__Figure 3__: RadGridView displaying the same amount with US and German culture-specific formatting
+>caption RadGridView displaying the same amount with US and German culture-specific formatting
 
 ![Telerik UI for WPF RadGridView displaying US and German culture-specific amount formatting in separate columns](images/gridview-columns-culture.png)
 

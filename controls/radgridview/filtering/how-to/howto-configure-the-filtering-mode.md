@@ -21,7 +21,7 @@ To enable the popup filtering mode, set RadGridView’s `FilteringMode` property
 <snippet id='radgridview-filtering-how-to-howto-configure-the-filtering-mode-block_1-xaml' />
 
 
-__Popup Filtering Mode__  
+>caption Popup filtering mode
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Popup filtering mode with distinct values and field filters](images/gridview_filtering_basic_01.png)
 
@@ -33,7 +33,7 @@ To enable the filter row mode, set RadGridView’s `FilteringMode` property to `
 <snippet id='radgridview-filtering-how-to-howto-configure-the-filtering-mode-popup_filtering_mode-xaml' />
 
 
-__FilterRow Filtering Mode__  
+>caption FilterRow filtering mode
 
 ![Telerik UI for {{ site.framework_name }} RadGridView FilterRow mode with inline filter editors in the header row](images/gridview_filtering_basic_02.png)
 
@@ -45,7 +45,7 @@ To enable the filter editor mode, set RadGridView’s `FilteringMode` property t
 <snippet id='radgridview-filtering-how-to-howto-configure-the-filtering-mode-filterrow_filtering_mode-xaml' />
 
 
-__FilterEditor Filtering Mode__  
+>caption FilterEditor filtering mode
 
 ![Telerik UI for {{ site.framework_name }} RadGridView FilterEditor mode with the filter editor panel displayed](images/gridview_filtering_basic_03.png)
 

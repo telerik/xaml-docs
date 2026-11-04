@@ -60,7 +60,7 @@ These are the predefined Properties Dialogs:
 
 ![RadRichTextBox Features Content Controls 02](images/RadRichTextBox_Features_Content_controls_02.png)
 
-# See also
+## See also
 * [Content Controls Overview]({%slug radrichtextbox-features-content-controls%})
 * [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 
 * [Working with Content Controls]({%slug radrichtextbox-features-working-with-content-controls%})

@@ -15,11 +15,11 @@ ticketid: 1649117
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2024.1.423</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadButtons for WPF</td>
 		</tr>
 	</tbody>
@@ -293,6 +293,6 @@ __Setting the Content and ContentTemplate when the IsChecked property is null__
     </telerik:RadToggleSwitchButton>
 ```
 
-__RadToggleSwitchButton with content when the IsChecked property is null__
+>caption RadToggleSwitchButton with content when the IsChecked property is null
 
 ![RadToggleSwitchButton with content when the IsChecked property is null](images/kb-buttons-toggleswitchbutton-three-state-content-0.png)

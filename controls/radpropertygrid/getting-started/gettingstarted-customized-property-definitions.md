@@ -13,7 +13,7 @@ position: 2
 
 RadPropertyGrid auto-generates its property definitions by default based on the properties of the source object. They are stacked vertically in a standard form layout and depend on the type of each property.
 
-#### Figure 1: RadPropertyGrid with automatically generated property definitions when bound to a button
+>caption RadPropertyGrid with automatically generated property definitions when bound to a button
 
 ![RadPropertyGrid with automatically generated property definitions when bound to a button](images/RadPropertyGrid_GettingStarted3.png)
 
@@ -25,13 +25,13 @@ __Example 1: Custom Property Definitions__
 
 Then, your RadPropertyGrid will be displayed as shown in **Figure 2**.
 
-#### Figure 2: RadPropertyGrid with custom property definitions
+>caption RadPropertyGrid with custom property definitions
 
 ![RadPropertyGrid with custom property definitions](images/RadPropertyGrid_CustomizedPropertyDefinitions.png)
 
 You may also use RadPropertyGrid to edit directly the properties of the object it is bound to. So, once you change the values inside the RadPropertyGrid, the RadButton will be resized.
 
-#### Figure 3: Resized RadButton
+>caption Resized RadButton
 
 ![Resized RadButton](images/RadPropertyGrid_CustomizedPropertyDefinitions2.png)
 

@@ -30,14 +30,14 @@ The following properties are used to control the visibility of the buttons.
 __Hiding the toolbar panel__
 <snippet id='radwebcam-features-toolbar-buttons-visibility-block_1-xaml' />
 
-__Hidden button's toolbar__
+>caption Hidden button's toolbar
 
 ![{{ site.framework_name }} RadWebCam Hidden Button's Toolbar](images/radwebcam-features-toolbar-buttons-visibility-0.png)
 
 __Hiding the recording button__
 <snippet id='radwebcam-features-toolbar-buttons-visibility-block_2-xaml' />
 
-__Hidden recording button__
+>caption Hidden recording button
 
 ![{{ site.framework_name }} RadWebCam Hidden Recording Button](images/radwebcam-features-toolbar-buttons-visibility-1.png)
 

@@ -16,11 +16,11 @@ ticketid: 1712184
 <table>
 <tbody>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>RichTextBox for UI for WPF</td>
 </tr>
 <tr>
-<td>Version</td>
+<th scope="row">Version</th>
 <td>Current</td>
 </tr>
 </tbody>

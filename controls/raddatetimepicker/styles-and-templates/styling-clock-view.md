@@ -28,7 +28,8 @@ __Example 1: RadDateTimePicker with ClockStyle__
 <snippet id='raddatetimepicker-styles-and-templates-styling-clock-view-example_1_raddatetimepicker_with_clockstyle-xaml' />
 
 
-#### __Figure 1: Result from Example 1 in the Office2016 theme__
+>caption Result from example 1 in the Office2016 theme
+
 ![RadClock with RightToLeft FlowDirection](images/DateTimePicker_StylingTheClock.png)
 
 ## Modifying the default resources

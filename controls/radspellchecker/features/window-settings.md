@@ -31,6 +31,6 @@ The following example showcases how to hide the __Add to Dictionary__, the __Ign
 
 <snippet id='radspellchecker-features-window-settings-block_1-cs' />
 
-__Proofing window with the Add to Dictionary, the Ignore All and the Edit Custom Dictionary buttons hidden:__
+>caption Proofing window with the add to dictionary, the ignore all and the edit custom dictionary buttons hidden
 
 ![Proofing window with the Add to Dictionary, the Ignore All and the Edit Custom Dictionary buttons hidden](images/radspellchecker-with-hidden-buttons.png)

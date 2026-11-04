@@ -32,7 +32,7 @@ __Showing a notification__
 <snippet id='radnotifyicon-features-balloon-notifications-block_2-cs' />
 <snippet id='radnotifyicon-features-balloon-notifications-block_2-vb' />
 
-__Balloon Notification__
+>caption Balloon notification
 
 ![Balloon Notification](images/radnotifyicon_balloon_tip.png)
 
@@ -50,7 +50,7 @@ Here are the overloads exposed by the ShowBallonTip method:
 	<snippet id='radnotifyicon-features-balloon-notifications-block_3-cs' />
 	<snippet id='radnotifyicon-features-balloon-notifications-block_3-vb' />
 
-    __Warning Notification__
+>caption Warning notification
 
     ![Warning Notification](images/radnotifyicon_balloon_tip_warning.png)
 

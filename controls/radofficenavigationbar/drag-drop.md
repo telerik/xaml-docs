@@ -16,7 +16,7 @@ position: 7
 __Enabling the drag and drop functionality__
 <snippet id='radofficenavigationbar-drag-drop-block_1-xaml' />
 
-__RadOfficeNavigationBar with enabled drag and drop functionality__
+>caption RadOfficeNavigationBar with enabled drag and drop functionality
 
 ![{{ site.framework_name }} RadOfficeNavigationBar drag and drop](images/officenavigationbar-drag-drop-0.gif)
 

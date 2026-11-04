@@ -26,7 +26,7 @@ __Example 1: Setting the current cell via an item and a column__
 
 **Figure 1** demonstrates that the current cell is set and at this point if you hit **F2** that cell will go in edit mode.
 
-__RadGridView with changed current cell__
+>caption RadGridView with changed current cell
 
 ![Telerik UI for WPF RadGridView current cell set programmatically and ready for edit mode](images/gridview_set_current_cell.png)
 

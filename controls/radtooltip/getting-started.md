@@ -35,7 +35,7 @@ In order to use __RadToolTip__ you should take advantage of the __RadToolTipServ
 __Example 1__
 <snippet id='radtooltip-getting-started-block_1-xaml' />
 
-Figure 1 demonstrates how the code above is rendered on screen.{% if site.site_name == 'Silverlight' %}
+The following image demonstrates how the code above is rendered on screen.{% if site.site_name == 'Silverlight' %}
 
 ![radtooltip sl](images/radtooltip_sl.png){% endif %}{% if site.site_name == 'WPF' %}
 
@@ -55,7 +55,7 @@ __Example 3__
 <snippet id='radtooltip-getting-started-block_4-xaml' />
 
 
-Figure 2 shows how the ToolTip will be visualized with the above defined settings{% if site.site_name == 'Silverlight' %}
+The following image shows how the ToolTip will be visualized with the above defined settings{% if site.site_name == 'Silverlight' %}
 
 ![radtooltip 2 sl](images/radtooltip2_sl.png){% endif %}{% if site.site_name == 'WPF' %}
 
@@ -110,7 +110,8 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 3__ shows a RadToolTip with the **Windows8** theme applied.
 
-#### __Figure 3: RadToolTip with the Windows8 theme__
+>caption RadToolTip with the Windows8 theme
+
 ![RadToolTip with Windows8 theme](images/RadToolTip-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

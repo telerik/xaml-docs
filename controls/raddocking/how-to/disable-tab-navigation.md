@@ -26,7 +26,8 @@ __Example 1: Simple RadDocking definition__
 
 In the example, when RadDocking receives the focus, a user needs to push the Tab key several times in order to navigate to the TextBox inside the pane as shown in __Figure 1__.   
 
-#### __Figure 1: RadDocking behavior when Tab key is pressed multiple times__
+>caption RadDocking behavior when tab key is pressed multiple times
+
 ![{{ site.framework_name }} RadDocking RadDocking behavior when Tab key is pressed multiple times](images/docking_tabnavigation_01.png)
 
 In order to change this behavior, you will need to set the __IsTabStop__ property to __False__ for some elements inside __RadDocking__. You can use Styles targeting these elements added inside App.xaml.
@@ -40,5 +41,6 @@ __Example 2: Applying IsTabStop through the Styles of RadDocking elements__
 
 After applying the Styles declared in __Example 2__, the focus goes directly to the TextBox when the user presses the Tab key as shown in __Figure 2__.
 
-#### __Figure 2: RadDocking behavior after disabling Tab navigation of its elements__
+>caption RadDocking behavior after disabling tab navigation of its elements
+
 ![{{ site.framework_name }} RadDocking RadDocking behavior after disabling Tab navigation of its elements](images/docking_tabnavigation_02.png)

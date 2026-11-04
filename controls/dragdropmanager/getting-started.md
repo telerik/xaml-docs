@@ -98,7 +98,7 @@ __Implement OnDrop__
 
 {% endif %}
 
-__Drag between ListBoxes__
+>caption Drag between ListBoxes
 
 ![Drag between ListBoxes](images/DragDropManager_DragBetweenListBoxes.png)
 

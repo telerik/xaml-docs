@@ -15,7 +15,7 @@ This help article will help you understand the visual structure of the file dial
 
 **Figure 1** shows all the basic elements used inside the dialogs with the **Office2016** theme:
 
-#### Figure 1: Visual Structure of the File Dialogs
+>caption Visual structure of the file dialogs
 
 ![File Dialogs Visual Structure](images/FileDialogs_VisualStructure.png)
 

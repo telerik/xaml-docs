@@ -25,7 +25,8 @@ __Example 2: Populating RadListBox with items from code-behind__
 
 <snippet id='radlistbox-populating-with-data-in-code-behind-block_2-cs' />
 
-#### __Figure 1: RadListBox populated in code__
+>caption RadListBox populated in code
+
 ![radlistbox populatingwithdata incodebehind](images/radlistbox_populatingwithdata_incodebehind.png)
 
 ## Removing RadListBoxItems

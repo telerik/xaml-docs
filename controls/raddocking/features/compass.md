@@ -19,7 +19,8 @@ The __Compass__ element makes the whole docking process much easier, faster and 
 
 The __Compass__ menu is always shown in the middle of the container you are dragging your panes over. It has five indicators: Left, Top, Right, Bottom and Center, where each one of them points to the respective docking position within this container.
 
-#### __Figure 1: RadDocking Compass in the Office2016 theme__
+>caption RadDocking compass in the Office2016 theme
+
 ![RadDocking Compass in the Office2016 theme](images/RadDocking_Features_Compass_010.png)
 
 As you can see the __Compass__ is situated in the middle of the container on which your mouse is currently over. In this case "Pane 3" is being dragged over the container that hosts "Pane 1" and "Pane 2" panes.
@@ -30,7 +31,8 @@ The class that represents the Compass element is [Telerik.Windows.Controls.Docki
 
 The __RootCompass__ always marks the possible docking positions in the root docking container. It has four indicators: Left, Top, Right and Bottom, where each one of them points to the respective docking position within the root container.
 
-#### __Figure 1: RadDocking RootCompass in the Office2016 theme__
+>caption RadDocking RootCompass in the Office2016 theme
+
 ![RadDocking RootCompass in the Office2016 theme](images/RadDocking_Features_Compass_020.png)
 
 As you can see the __RootCompass__ is situated in the middle of each of the four sides of the root container. In this case "Pane 1" pane is being dragged over the root container.

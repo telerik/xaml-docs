@@ -24,11 +24,11 @@ The default value for the __ReorderTabRows__ property is __True__.
 __ReorderTabRows__	
 <snippet id='radtabcontrol-features-controlling-behavior-block_1-xaml' />
 
-__ReorderTabRows set to True__  
+>caption ReorderTabRows set to true
 
 ![Telerik TabControl ReorderTabRows](images/tabcontrol_controlling_behavior_reordertabrows_1.png)
 
-__ReorderTabRows set to False__  
+>caption ReorderTabRows set to false
 
 ![Telerik TabControl ReorderTabRows](images/tabcontrol_controlling_behavior_reordertabrows_2.png)
 
@@ -48,7 +48,7 @@ You can set the  __IsEnabled__ property to prevent the user from interacting wit
 __Disable tab item__	
 <snippet id='radtabcontrol-features-controlling-behavior-block_3-xaml' />
 
-__Disable tab item__  
+>caption Disable tab item
 
 ![Telerik TabControl Disabled Tab Item](images/tabcontrol_controlling_behavior_disableditem_3.png)
 
@@ -70,7 +70,7 @@ The other overflow mode is `Wrap`. In that case, if no space is available for al
 __Show all tab items in the viewport__	
 <snippet id='radtabcontrol-features-controlling-behavior-block_5-xaml' />
 
-__Show all items in the viewport__  
+>caption Show all items in the viewport
 
 ![Telerik TabControl OverflowMode](images/tabcontrol_controlling_behavior_overflowmode_4.png)
 
@@ -94,7 +94,7 @@ RadTabControl allows you to control whether to display the tabs horizontally or 
 __Change orientation of the tab items__	
 <snippet id='radtabcontrol-features-controlling-behavior-block_7-xaml' />
 
-__TabOrientation set to Vertical__  
+>caption TabOrientation set to vertical
 
 ![Telerik TabControl TabOrientation](images/tabcontrol_controlling_behavior_taborientation_5.png)
 
@@ -105,7 +105,7 @@ The __RadTabControl__ control exposes a property, which allows you to display ad
 __Add AdditionalContent__	
 <snippet id='radtabcontrol-features-controlling-behavior-block_8-xaml' />
 
-__Add AdditionalContent__  
+>caption Add AdditionalContent
 
 ![Telerik TabControl AdditionalContent](images/tabcontrol_controlling_behavior_additionalcontent_6.png)	
 
@@ -135,7 +135,7 @@ The __DropDownDisplayMode__ property could be set to any of the following values
 __Show DropDownMenu button__	
 <snippet id='radtabcontrol-features-controlling-behavior-block_9-xaml' />
 
-__Show DropDownMenu button__  
+>caption Show DropDownMenu button
 
 ![Telerik TabControl DropDownMenu Button](images/tabcontrol_controlling_behavior_dropdownmenu_7.png)		
 	

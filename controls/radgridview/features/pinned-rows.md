@@ -57,7 +57,7 @@ If the PinnedRowsPosition property is set to either Top or Bottom, a pin button 
 
 Pressing the button will pin the respective row. Clicking on it again will remove it from the collection of the pinned rows.
 
-#### __Figure 1: Pinning rows from the row indicator__
+>caption Pinning rows from the row indicator
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the row indicator pin button used to pin rows](images/radgridview-pinned-rows-1.png)
 
@@ -67,7 +67,7 @@ __Example 2: Defining a GridViewPinRowColumn__
 <snippet id='radgridview-features-pinned-rows-example_2_defining_a_gridviewpinrowcolumn-xaml' />
 
 
-#### __Figure 2: Pinning rows from the GridViewPinRowColumn__
+>caption Pinning rows from the GridViewPinRowColumn
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing pinned rows controlled through a GridViewPinRowColumn](images/radgridview-pinned-rows-2.png)
 

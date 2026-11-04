@@ -37,7 +37,8 @@ __Example 3: Creating the ViewModel__
 <snippet id='radtreeview-how-to-add-context-menu-block_4-cs' />
 <snippet id='radtreeview-how-to-add-context-menu-block_5-vb' />
 
-#### __Figure 1: Result from the Example in the Office2016 theme__
+>caption Result from the example in the Office2016 theme
+
 ![RadTreeView with custom ContextMenu](images/RadTreeView_HowToAddContextMenu_001.png)
 				
 

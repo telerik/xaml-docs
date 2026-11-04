@@ -18,17 +18,20 @@ position: 2
 
 The control has a built-in functionality attached to the following keys. In order to demonstrate them, the following user's input will be used.
 
-__Figure 1: Entering input in the AutoCompleteBox__
+>caption Entering input in the AutoCompleteBox
+
 ![Entering input in the AutoCompleteBox](images/MultiColumnComboBox_Navigation_01.png)
 
 * __Tab__ and __Enter__: When the user's input in the AutoCompleteBox matches an item/items from the source, pressing __Tab__ or __Enter__ will select the first item from the matching ones and navigate to it.
 
-__Figure 2: Selecting and navigating with the Tab or Enter key__
+>caption Selecting and navigating with the tab or enter key
+
 ![Selecting and navigating with the Tab or Enter key](images/MultiColumnComboBox_Navigation_02.png)
 
 * __Escape__: Pressing __Escape__ will close the __DropDown__ and the matched item would not be selected.
 
-__Figure 3: Pressing the Escape key__
+>caption Pressing the escape key
+
 ![Pressing the Escape key](images/MultiColumnComboBox_Navigation_03.png)
 
 ## Mouse Navigation

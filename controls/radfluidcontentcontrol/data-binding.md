@@ -59,7 +59,8 @@ __Example 6: Setting up the control__
 <snippet id='radfluidcontentcontrol-data-binding-example_6_setting_up_the_control-vb' />
 
 
-#### Figure 1: Data binding example
+>caption Data binding example
+
 ![fluidcontentcontrol-data-binding-0](images/fluidcontentcontrol-data-binding-0.png)
 
 ## See Also

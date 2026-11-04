@@ -43,12 +43,14 @@ The vertical tab symbol enables you to insert a new line in the resulting fragme
 
 The next figures demonstrate a sample scenario that uses the vertical tab to separate the result values in lines. **Figure 1** shows the result fragments of merge fields for a sender's name, job title and address. 
 
-#### __Figure 1: Result fragment of mail merge, when all the fields have values__
+>caption Result fragment of mail merge, when all the fields have values
+
 ![{{ site.framework_name }} RadRichTextBox Result fragment of mail merge, when all the fields have values](images/RadRichTextBox-MailMerge-InsertANewLineInMergeField_01.png)
 
 If a line break is inserted after each merge field and a value for a field is missing, the result is an empty line. **Figure 2** shows the result of the mail merge when the merge field for job title has no value.
 
-#### __Figure 2: Result fragment of mail merge, when one of the fields has no value__
+>caption Result fragment of mail merge, when one of the fields has no value
+
 ![{{ site.framework_name }} RadRichTextBox Result fragment of mail merge, when one of the fields has no value](images/RadRichTextBox-MailMerge-InsertANewLineInMergeField_02.png)
 
 
@@ -61,7 +63,8 @@ __Example 3: Insert vertical tab in the switch of a merge field__
 <snippet id='radrichtextbox-features-mail-merge-insert-new-line-in-merge-field-block_6-vb' />
 
 
-#### __Figure 3: Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value__
+>caption Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value
+
 ![{{ site.framework_name }} RadRichTextBox Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value](images/RadRichTextBox-MailMerge-InsertANewLineInMergeField_03.png)
 
 

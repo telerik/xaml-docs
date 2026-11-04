@@ -22,7 +22,8 @@ To use the tagger you need to register it in the **TaggersRegistry** as you woul
 __Example 2: Using the custom tagger__
 <snippet id='radsyntaxeditor-features-taggers-custom-tagger-block_2-cs' />
 
-#### Figure 1: The custom tooltip tagger
+>caption The custom tooltip tagger
+
 ![The custom tooltip tagger](images/syntaxeditor-taggers-custom.png)
 
 ## See Also

@@ -163,7 +163,8 @@ Approach 2: Pass the level Index and the paragraph to the DocumentList.AddParagr
 <snippet id='radrichtextbox-features-styles-list-styles-block_15-cs' />
 <snippet id='radrichtextbox-features-styles-list-styles-block_16-vb' />
 
-Figure 1: The result of the created list.
+>caption The result of the created list.
+
 ![{{ site.framework_name }} RadRichTextBox The result of the created list.](images/RadRichTextBox_lists_example_01.png)
 
 ## See Also

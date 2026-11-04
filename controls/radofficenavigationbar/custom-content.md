@@ -20,14 +20,14 @@ Each RadOfficeNavigationBarItem supports setting complex structures of elements 
 __Example complex ContentTemplate__
 <snippet id='radofficenavigationbar-custom-content-block_1-xaml' />
 
-__RadOfficeNavigationBarItem with a custom ContentTemplate__
+>caption RadOfficeNavigationBarItem with a custom ContentTemplate
 
 ![{{ site.framework_name }} RadOfficeNavigationBarItem with a custom ContentTemplate](images/officenavigationbar-custom-content-0.png)
 
 __Example complex CompactContentTemplate__
 <snippet id='radofficenavigationbar-custom-content-block_2-xaml' />
 
-__RadOfficeNavigationBarItem with a custom CompactContentTemplate__
+>caption RadOfficeNavigationBarItem with a custom CompactContentTemplate
 
 ![{{ site.framework_name }} RadOfficeNavigationBarItem with a custom CompactContentTemplate](images/officenavigationbar-custom-content-1.png)
 
@@ -67,7 +67,7 @@ Finally, apply the new Style to the `ItemContainerStyle` property of the RadOffi
 __Set the custom Style to the ItemContainerStyle property__
 <snippet id='radofficenavigationbar-custom-content-block_7-xaml' />
 
-__RadOfficeNavigationBarItems with custom ContentTemplateSelector__
+>caption RadOfficeNavigationBarItems with custom ContentTemplateSelector
 
 ![{{ site.framework_name }} RadOfficeNavigationBarItems with custom ContentTemplateSelector](images/officenavigationbar-custom-content-2.png)
 

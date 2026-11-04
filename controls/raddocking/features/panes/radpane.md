@@ -33,7 +33,7 @@ __Example 1: Add RadPanes to RadDocking__
 
 **Figure 1** displays the resulting RadDocking control.
 
-#### Figure 1: RadDocking control with two panes
+>caption RadDocking control with two panes
 
 ![RadDocking control with two panes](images/RadDocking_Features_Panes_RadPane_005.png)
 

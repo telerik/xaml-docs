@@ -56,7 +56,8 @@ __Example 1: RadDocking with Navigator property set__
 <snippet id='raddocking-features-navigator-example_1_raddocking_with_navigator_property_set-xaml' />
 
 
-#### __Figure 1: Result from showing the navigator in Example 1__
+>caption Result from showing the navigator in example 1
+
 ![DockingNavigator in Fluent theme](images/docking_navigator.png)
 
 ## Events

@@ -13,7 +13,7 @@ position: 5
 
 As of R1 2019, the RadExpression control also provides a number of functions for **string** manipulation. They can be found in the new **Text** subcategory illustrated in **Figure 1**.
  
- __The Text functions subcategory__
+>caption The text functions subcategory
 
 ![Telerik UI for WPF RadExpressionEditor Text functions subcategory in the expression editor](images/text-functions.png)
 
@@ -42,7 +42,7 @@ Here is a full list of the available functions:
 
 **Figure 2** demonstrates a possible use of the text functions for filtering a RadGridView control similarly to the example in the [Getting Started article]({%slug radexpressioneditor-getting-started%}).
 
-__Filtering RadGridView via the text functions__
+>caption Filtering RadGridView via the text functions
 
 ![Telerik UI for WPF RadExpressionEditor text functions used to filter data in RadGridView](images/text-functions-example1.png)
 

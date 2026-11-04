@@ -70,7 +70,7 @@ __Merge the ResourceDictionaries__
 
 The following image shows a RadCircularProgressBar with the __Windows8__ theme applied.
 
-__RadCircularProgressBar with the Windows8 theme__
+>caption RadCircularProgressBar with the Windows8 theme
 
 ![RadCircularProgressBar with Windows8 theme](images/radcircularprogressbar-getting-started-1.png)
 

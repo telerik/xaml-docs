@@ -28,7 +28,8 @@ Next, we will setup the RadTileView in xaml. We will create an __ItemTemplate__ 
 __Example 2: Creating the model and viewmodel__
 <snippet id='radtileview-features-positioning-block_3-xaml' />
 
-#### __Figure 1: RadTileViewItems with customized position in the Office2016 theme__
+>caption RadTileViewItems with customized position in the Office2016 theme
+
 ![RadTileViewItems with customized position](images/radtileview_positioning_position.png)
 
 > Note, that if there is a __Maximized__ item, by default it will be on __Position__ 0. Therefore setting another __RadTileViewItem Position__ to 0, will maximize this item instead.

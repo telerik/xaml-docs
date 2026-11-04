@@ -26,7 +26,7 @@ __Setting the TopLayer property__
 <snippet id='radmap-features-providers-bing-rest-map-provider-toplayer-block_1-cs' />
 <snippet id='radmap-features-providers-bing-rest-map-provider-toplayer-block_1-vb' />
 
-__RadMap with TopLayer property set to BingTopLayer.TrafficFlow and BingTopLayer.Background__
+>caption RadMap with TopLayer property set to BingTopLayer.TrafficFlow and BingTopLayer.Background
 
 ![RadMap with TopLayer property set to BingTopLayer.TrafficFlow and BingTopLayer.Background](images/radmap-features-providers-top-layer-0.png)
 

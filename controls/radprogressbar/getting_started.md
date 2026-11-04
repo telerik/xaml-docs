@@ -92,7 +92,8 @@ __Example 7: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a RadProgressBar with the **Windows8** theme applied.
 
-#### __Figure 1: RadProgressBar with the Windows8 theme__
+>caption RadProgressBar with the Windows8 theme
+
 ![RadProgressBar with Windows8 theme](images/radprogressbar-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

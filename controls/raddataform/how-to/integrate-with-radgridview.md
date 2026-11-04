@@ -40,7 +40,7 @@ __Example 3: Setting the RadGridView's ItemsSource__
 
 Once you define all the required parts, you will see the following:
 
-#### __Figure 1: RadDataForm integrated with RadGridView__
+>caption RadDataForm integrated with RadGridView
 
 ![RadDataForm integrated with RadGridView](images/RadDataForm_IntegrationWithRadGridView.png)
 

@@ -102,7 +102,8 @@ __Example 6: Bind RadTreeListView__
 
 At this point, only the first level of the hierarchical data will get displayed and __RadTreeListView__ will look just like a __RadGridView__. 
 
-__Figure 1: RadTreeListView bound to collection of WarehouseItems__
+>caption RadTreeListView bound to collection of WarehouseItems
+
 ![{{ site.framework_name }} RadTreeListView RadTreeListView bound to collection of WarehouseItems](images/RadTreeListViewPopulated.png)
 
 In order to display the other levels of the hierarchy, you have to define a __TreeListViewTableDefinition__ and set its __ItemsSource__ property to the respective member of the business object. Then you need to set the table definition to the __ChildTableDefinition__ property of __RadTreeListView__. 
@@ -127,7 +128,8 @@ __Example 8: Manually Define the Columns of RadTreeListView__
 
 __Figure 2__ shows a snapshot of the result.
 
-__Figure 2: RadTreeListView with manually defined columns__
+>caption RadTreeListView with manually defined columns
+
 ![{{ site.framework_name }} RadTreeListView RadTreeListView with manually defined columns](images/RadTreeListView_GettingStarted_01.png)
 
 ## Setting a Theme
@@ -152,7 +154,8 @@ __Example 9: Merge the ResourceDictionaries__
 
 __Figure 3__ shows RadTreeListView with the **Windows8** theme applied.
 	
-#### __Figure 3: RadTreeListView with the Windows8 theme__
+>caption RadTreeListView with the Windows8 theme
+
 ![Telerik {{ site.framework_name }} TreeListView-windows8](images/RadTreeListView-windows8.png)
 
 {% if site.site_name == 'WPF' %}

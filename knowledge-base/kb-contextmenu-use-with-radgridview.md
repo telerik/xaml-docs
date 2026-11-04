@@ -14,11 +14,11 @@ res_type: kb
 <table>
 <tbody>
 <tr>
-<td>Product Version</td>
+<th scope="row">Product Version</th>
 <td>2026.1.415</td>
 </tr>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>RadContextMenu for WPF</td>
 </tr>
 </tbody>
@@ -332,7 +332,8 @@ private void GridContextMenu_Opened(object sender, RoutedEventArgs e)
 ```
 The following image shows the result when you click a row or header.
 
-__RadContextMenu for a RadGridView Row and Header__
+>caption RadContextMenu for a RadGridView row and header
+
 ![WPF RadContextMenu shown when clicking on a row and header](images/kb-contextmenu-use-with-radgridview.png)
 
 ## Handle the Menu Items' Clicks

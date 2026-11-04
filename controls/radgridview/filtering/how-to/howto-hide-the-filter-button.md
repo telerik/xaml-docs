@@ -30,10 +30,12 @@ __Example 2: Hide filter button in code-behind__
 
 **Figure 1** and **Figure 2** demonstrate the two setups.
 
-#### **Figure 1: RadGridView with ShowFilterButton set to True**
+>caption RadGridView with ShowFilterButton set to true
+
 ![Telerik UI for {{ site.framework_name }} RadGridView popup filtering UI with the filter button visible in the column header](images/ShowFilterButtonTrue.png)
 
-#### **Figure 2: RadGridView with ShowFilterButton set to False**
+>caption RadGridView with ShowFilterButton set to false
+
 ![Telerik UI for {{ site.framework_name }} RadGridView popup filtering UI with the filter button hidden from the column header](images/ShowFilterButtonFalse.png)
 
 ## See Also

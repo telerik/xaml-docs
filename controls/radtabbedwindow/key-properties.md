@@ -17,7 +17,7 @@ This article will list the key properties provided by the RadTabbedWindow contro
 
 RadTabbedWindow allows you to display a header in the top-left part of it. To specify the header you can use either the **Header** or the **HeaderTemplate** properties.
 
-#### [XAML] Example 1: Set RadTabbedWindow header
+__[XAML] Example 1: Set RadTabbedWindow header__
 
 <snippet id='radtabbedwindow-key-properties-block_1-xaml' />
 
@@ -25,7 +25,7 @@ RadTabbedWindow allows you to display a header in the top-left part of it. To sp
 
 Via the **Icon** and the **IconTemplate** properties, you can also define an **icon** for your RadTabbedWindow.
 
-#### [XAML] Example 2: Set window icon
+__[XAML] Example 2: Set window icon__
 
 <snippet id='radtabbedwindow-key-properties-block_2-xaml' />
 
@@ -53,11 +53,11 @@ __Example 4: Set the ItemsPanel property__
 
 Through the ItemWidth and ItemMinWidth, you can control the default **Width** and **MinWidth** of the window's RadTabItems. **Example 5** shows how to set these properties and their default values.
 
-#### [C#] Example 5: Set ItemWidth and ItemMinWidth
+__[C#] Example 5: Set ItemWidth and ItemMinWidth__
 
 <snippet id='radtabbedwindow-key-properties-block_5-cs' />
 
-#### [VB.NET] Example 5: Set ItemWidth and ItemMinWidth
+__[VB.NET] Example 5: Set ItemWidth and ItemMinWidth__
 
 <snippet id='radtabbedwindow-key-properties-block_6-vb' />
 
@@ -73,11 +73,11 @@ By default, the RadTabbedWindow allows reordering of its tabs as well as creatin
 * **Reorder**: Reorder in tab strip is allowed only.
 * **Default**: DragReorder and drag out of TabControl is allowed (like in modern browsers).
 
-#### [C#] Example 6: Allow only the reorder of tabs via drag and drop
+__[C#] Example 6: Allow only the reorder of tabs via drag and drop__
 
 <snippet id='radtabbedwindow-key-properties-block_7-cs' />
 
-#### [VB.NET] Example 6: Allow only the reorder of tabs via drag and drop
+__[VB.NET] Example 6: Allow only the reorder of tabs via drag and drop__
 
 <snippet id='radtabbedwindow-key-properties-block_8-vb' />
 
@@ -85,11 +85,11 @@ By default, the RadTabbedWindow allows reordering of its tabs as well as creatin
 
 When the width of the window does not allow all tabs to be displayed, two scrolling buttons appear to the left and to the right side of the tab items. You can choose one of the **ScrollMode** values in order to control how the tab items should be scrolled. More information about the different modes can be found in [this article]({%slug radtabcontrol-features-tabs-scrollmode%}).
 
-#### [C#] Example 7: Enable the reorder of tabs via drag and drop
+__[C#] Example 7: Enable the reorder of tabs via drag and drop__
 
 <snippet id='radtabbedwindow-key-properties-block_9-cs' />
 
-#### [VB.NET] Example 7: Enable the reorder of tabs via drag and drop
+__[VB.NET] Example 7: Enable the reorder of tabs via drag and drop__
 
 <snippet id='radtabbedwindow-key-properties-block_10-vb' />
 
@@ -97,11 +97,11 @@ When the width of the window does not allow all tabs to be displayed, two scroll
 
 You can determine whether users will be able to add new tabs through the UI be specifying the **AddButtonVisibility** property.
 
-#### [C#] Example 8: Set AddButtonVisibility
+__[C#] Example 8: Set AddButtonVisibility__
 
 <snippet id='radtabbedwindow-key-properties-block_11-cs' />
 
-#### [VB.NET] Example 8: Set AddButtonVisibility
+__[VB.NET] Example 8: Set AddButtonVisibility__
 
 <snippet id='radtabbedwindow-key-properties-block_12-vb' />
 
@@ -119,11 +119,11 @@ The __SelectedItemRemoveBehaviour__ property allows you to choose which __RadTab
 
 * __SelectNext__: The **next** non-disabled and visible item in the **Items** collection is selected. If there is no such item, the **previous** non-disabled and visible item is selected. If there is no such item, **no action** is performed.
 
-#### [C#] Example 9: Set SelectedItemRemoveBehaviour
+__[C#] Example 9: Set SelectedItemRemoveBehaviour__
 
 <snippet id='radtabbedwindow-key-properties-block_13-cs' />
 
-#### [VB.NET] Example 9: Set SelectedItemRemoveBehaviour
+__[VB.NET] Example 9: Set SelectedItemRemoveBehaviour__
 
 <snippet id='radtabbedwindow-key-properties-block_14-vb' />
 
@@ -133,11 +133,11 @@ For performance reasons the **ControlTemplate** of the **TabbedWindowTabControl*
 
 However, if you need to keep each **RadTabItem**'s content you can set the **IsContentPreserved** property to **True**.
 
-#### [C#] Example 10: Preserve tab item content
+__[C#] Example 10: Preserve tab item content__
 
 <snippet id='radtabbedwindow-key-properties-block_15-cs' />
 
-#### [VB.NET] Example 10: Preserve tab item content
+__[VB.NET] Example 10: Preserve tab item content__
 
 <snippet id='radtabbedwindow-key-properties-block_16-vb' />
 

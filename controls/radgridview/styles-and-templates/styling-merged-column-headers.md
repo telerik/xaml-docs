@@ -20,7 +20,7 @@ __Example 1: Styling the CommonHeaderPresenter and CommonColumnHeader__
 
 This will result in a red background for the merged header cells.
 
-#### __Figure 1: The styled Column Groups__
+>caption The styled column groups
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with styled merged column headers and column groups](images/gridview-styling-column-groups.png)
 

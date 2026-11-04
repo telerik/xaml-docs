@@ -73,7 +73,7 @@ The result would be the following:
 
 The **WatermarkContent** property specifies the text or any other content to be displayed when RadAutoCompleteBox's **TextBox** is not focused. When in **Single** SelectionMode no item should be selected for the watermark content to be visible.
 
-#### __Figure 1: Custom Watermark Content__
+>caption Custom watermark content
 
 ![Custom Watermark Content](images/radautocompletebox-features-watermarkcontent.png)
 

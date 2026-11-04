@@ -54,7 +54,8 @@ __Example 2: Defining a TypeConverter providing a default set of values__
 
 > If __EditorAttribute__ is set to a specific property with a set __TypeConverter__ the __EditorAttribute__ is with lower priority - a default set of values will be visualized if the __GetStandardValuesSupported__ is overridden instead of an editor.
 
-#### __Figure 1: TypeConverter providing a default set of values__
+>caption TypeConverter providing a default set of values
+
 ![{{ site.framework_name }} RadPropertyGrid TypeConverter providing a default set of values](images/RadPropertyGrid_TypeConverter_Predefined_List.png)
 {% endif %}
 
@@ -67,7 +68,7 @@ __Example 3: Defining a culture aware TypeConverter__
 <snippet id='radpropertygrid-features-typeconverter-support-block_3-cs' />
 <snippet id='radpropertygrid-features-typeconverter-support-block_3-vb' />
 
-#### __Figure 2: Culture-aware TypeConverter__
+>caption Culture-aware TypeConverter
 
 ![culture-aware typeconverter](images/RadPropertyGrid_TypeConverter_Culture01.png) ![culture-aware typeconverter](images/RadPropertyGrid_TypeConverter_Culture02.png)
 

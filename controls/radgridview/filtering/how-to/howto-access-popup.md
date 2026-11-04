@@ -13,7 +13,7 @@ position: 23
 
 The __filtering control__ is a __Popup__ and it is displayed on screen over RadGridView control. You can find the instance of the specific Popup and try implementing any modifications on its behavior.
 
-#### __C# Example 1: Find all available Popups__
+__C# Example 1: Find all available Popups__
 <snippet id='radgridview-filtering-how-to-howto-access-popup-block_1-cs' />
 
     
@@ -21,7 +21,7 @@ The __filtering control__ is a __Popup__ and it is displayed on screen over RadG
 
 The filtering control can be opened in code by finding the respective __FilteringDropDown__ element and setting its property __IsDropDownOpened__ to True. For example:
 
-#### __C# Example 2: Open the first FilteringDropDown__
+__C# Example 2: Open the first FilteringDropDown__
 <snippet id='radgridview-filtering-how-to-howto-access-popup-block_2-cs' />
 
 

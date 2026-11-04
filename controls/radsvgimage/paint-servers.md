@@ -47,7 +47,7 @@ __Creating a new instance of the custom Dictionary and add entries__
 __Setting the new custom Dictionary instance to the CustomBrushes property__
 <snippet id='radsvgimage-paint-servers-block_4-xaml' />
 
-__RadSvgImage with custom Dictionary set to the CustomBrushes property__
+>caption RadSvgImage with custom dictionary set to the CustomBrushes property
 
 ![{{site.framework_name}} RadSvgImage with custom Dictionary set to the CustomBrushes property](images/radsvgimage-custom-brushes-0.png)
 

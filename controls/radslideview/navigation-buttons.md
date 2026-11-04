@@ -25,7 +25,7 @@ The visibility of the navigation buttons is controlled via the `ButtonVisibility
 __Setting the ButtonVisibility property to Visible__
 <snippet id='radslideview-navigation-buttons-block_1-xaml' />
 
-__RadSlideView with visible buttons__
+>caption RadSlideView with visible buttons
 
 ![{{ site.framework_name }} RadSlideView with visible buttons](images/radslideview-getting-started-0.png)
 
@@ -36,7 +36,7 @@ RadSlideView allows you to control the navigation buttons' position. They can be
 __Setting the ShowButtonsOverContent property__
 <snippet id='radslideview-navigation-buttons-block_2-xaml' />
 
-__RadSlideView with buttons displayed outside of the content__
+>caption RadSlideView with buttons displayed outside of the content
 
 ![{{ site.framework_name }} RadSlideView buttons displayed outside of the content](images/radslideview-getting-started-1.png)
 
@@ -47,7 +47,7 @@ RadSlideView exposes the `PreviousButtonStyle` and `NextButtonStyle` properties 
 __Setting custom styles to the PreviousButtonStyle and NextButtonStyle properties__
 <snippet id='radslideview-navigation-buttons-block_3-xaml' />
 
-__RadSlideView with custom styles for the navigation buttons__
+>caption RadSlideView with custom styles for the navigation buttons
 
 ![{{ site.framework_name }} RadSlideView with custom styles for the navigation buttons](images/radslideview-navigation-buttons-0.png)
 

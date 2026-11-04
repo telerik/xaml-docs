@@ -269,7 +269,7 @@ The default values of the colors in the theme are listed below. Please note that
 |ReadOnlyBackgroundColor|#FFFFFFFF|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor"></div>|#FF2C2C2C|<div class="theme-palette-color crystaltheme-readonlybackgroundcolor-dark"></div>|
 |ReadOnlyBorderColor|#FFA4A3A4|<div class="theme-palette-color crystaltheme-readonlybordercolor"></div>|#FF4D4D4D|<div class="theme-palette-color crystaltheme-readonlybordercolor-dark"></div>|
 
-__Theme colors represented in RadOutlookBar__
+>caption Theme colors represented in RadOutlookBar
 
 ![Telerik UI for WPF Crystal theme colors represented in RadOutlookBar](images/crystal-theme-outlook.PNG)
 
@@ -368,7 +368,7 @@ __Changing the theme's FontSize and FontFamily__
 	}
 ```
 
-__Setting FontSize and FontFamily__
+>caption Setting FontSize and FontFamily
 
 ![Telerik UI for WPF RadCalendar with modified font size and font family in the Crystal theme](images/crystal-theme-calendar-font-change.png)
 
@@ -387,7 +387,7 @@ __Changing the default corner radius__
 	CrystalPalette.Palette.CornerRadius = new CornerRadius(0); 	
 ```
 
-__Appearance of a RadButton control after changing the default corner radius__
+>caption Appearance of a RadButton control after changing the default corner radius
 
 ![Telerik UI for WPF RadButton with a corner radius of zero in the Crystal theme](images/crystal-theme-button-cornerradius.png)
 
@@ -419,7 +419,7 @@ __Set RadToggleButton's visual appearance through the visual helpers__
                                helpers:ThemeHelper.CheckedBrush="{telerik:CrystalResource ResourceKey=ValidationBrush}"/>
 ```
 
-__Appearance of the RadToggleButton in the different states__
+>caption Appearance of the RadToggleButton in the different states
 
 ![Telerik UI for WPF RadToggleButton states in the Crystal theme](images/crystal-theme-togglebutton-states.png)
 
@@ -432,7 +432,7 @@ __Changing the WindowButtonsAlignment__
 	CrystalPalette.Palette.WindowButtonsAlignment = ButtonsAlignment.Right; 	
 ```
 
-__Appearance of the RadWindow with the different alignments__
+>caption Appearance of the RadWindow with the different alignments
 
 ![Telerik UI for WPF window buttons alignment in the Crystal theme](images/crystal-theme-window-buttons-alignment.png)
 
@@ -446,7 +446,7 @@ By default, the scrollbars in the Crystal theme change their size depending on w
 
 >important The `ScrollViewerScrollBarsMode` enumeration of the CrystalPalette can be found under the `Telerik.Windows.Controls.Theming` namespace.
 
-__ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__ 
+>caption ScrollBar behavior in auto, compact and normal ScrollBarsMode
 
 ![Telerik UI for WPF ScrollBar in Auto, Compact, and Normal ScrollBarsMode in the Crystal theme](images/crystal-light-scrollbarsmode.gif)
 

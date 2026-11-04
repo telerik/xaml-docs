@@ -20,7 +20,8 @@ __RadVirtualGrid__ is a lightweight tabular component, designed to be able to op
 
 >The RadVirtualGrid control was introduced with the **R3 2017** release of the UI for {{ site.framework_name }} suite.
 
-#### __Figure 1: RadVirtualGrid__ 
+>caption RadVirtualGrid
+
 ![VirtualGrid Overview](images/virtualgrid_overview.png)
 
 __RadVirtualGrid__'s features list:

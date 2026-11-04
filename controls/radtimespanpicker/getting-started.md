@@ -79,7 +79,8 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a RadTimeSpanPicker with the **Windows8** theme applied.
 
-#### __Figure 1: RadTimeSpanPicker with the Windows8 theme__
+>caption RadTimeSpanPicker with the Windows8 theme
+
 ![RadTimeSpanPicker with Windows8 theme](images/RadTimeSpanPicker-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

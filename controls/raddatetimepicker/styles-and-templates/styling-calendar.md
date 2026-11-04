@@ -21,7 +21,8 @@ __Example 1: Hiding the week names from the calendar using the CalendarStyle pro
 <snippet id='raddatetimepicker-styles-and-templates-styling-calendar-example_1_hiding_the_week_names_from_the_calendar_using_the_calendarstyle_property-xaml' />
 
 
-#### __Figure 1: Result from Example 1 in the Office2016 theme__
+>caption Result from example 1 in the Office2016 theme
+
 ![RadCalendar with week names removed](images/DateTimePicker_StylingTheCalendar.png)
 
 The RadCalendar control consists of CalendarButton controls representing the days, months, weeks, etc. Those can be customized via the __DayButtonStyle__, __MonthButtonStyle__, __YearButtonStyle__ and __DecadeButtonStyle__ properties of RadCalendar. The data context passed to the CalendarButton controls is an object of type [CalendarButtonContent](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.calendar.calendarbuttoncontent) which contains information about the button type (day, week, month, etc.), date, selection state, and others.

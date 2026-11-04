@@ -26,7 +26,8 @@ __Example 1: Declaring a SplineAreaSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-area-series-splineareaseries-example_1_declaring_a_splineareaseries_in_xaml-xaml' />
 
 
-#### __Figure 1: SplineAreaSeries visual appearance__
+>caption SplineAreaSeries visual appearance
+
 ![Telerik UI for WPF RadChartView SplineAreaSeries visual appearance](images/radchartview-series-splineareaseries.png)
 
 ## Properties
@@ -73,7 +74,7 @@ __Example 4: Setting SplineTension__
 <snippet id='radchartview-series-cartesianchart-series-area-series-splineareaseries-example_4_setting_splinetension-xaml' />
 
 
-__Spline tension 0.8 (left) and 0.4 (right)__
+>caption Spline tension 0.8 (left) and 0.4 (right)
 
 ![Telerik UI for WPF RadChartView SplineAreaSeries with Spline Tension 0.8 on the Left and 0.4 on the Right](images/splineseries-splinearea-tension.png)
 
@@ -83,7 +84,7 @@ __Example 5: Setting SplinePointsDistanceFactor__
 <snippet id='radchartview-series-cartesianchart-series-area-series-splineareaseries-example_5_setting_splinepointsdistancefactor-xaml' />
 
 
-__SplinePointsDistanceFactor set to 0.18__
+>caption SplinePointsDistanceFactor set to 0.18
 
 ![Telerik UI for WPF RadChartView SplineAreaSeries with SplinePointsDistanceFactor Set to 0.18](images/splineseries-splinearea-points-distance-factor.png)
 

@@ -37,7 +37,7 @@ __Example 3: Define the RadDataPager__
 
 Once you created all the necessary elements, your application should be displayed as follows:
 
-#### Figure 1: RadDataPager with dynamic PageSize
+>caption RadDataPager with dynamic PageSize
 
 ![RadDataPager with dynamic PageSize](images/RadDataPager_ChangePageSizeDynamically.png)
 

@@ -35,7 +35,8 @@ __Example 4: Setting our DataContext__
 
 If you run the application now, the RadTreeMap should display the following structure:
 
-#### Figure 1: RadTreeMap with bound colors 
+>caption RadTreeMap with bound colors
+
 ![TreeMap Bind Color](images/radtreemap-howto-bind-color-1.png)
 
 ## See Also

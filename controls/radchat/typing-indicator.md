@@ -22,7 +22,7 @@ __Setting the TypingIndicator__
 
 Setting the __TypingIndicator__ in such manner will have the following result.
 
-__Setting the TypingIndicator__
+>caption Setting the TypingIndicator
 
 ![Setting the TypingIndicator](images/RadChat_Items_TypeIndicator_01.png)
 

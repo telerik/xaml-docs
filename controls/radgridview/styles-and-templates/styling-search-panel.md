@@ -29,7 +29,7 @@ __Applying a style to the search panel of RadGridView__
 <snippet id='radgridview-styles-and-templates-styling-search-panel-applying_a_style_to_the_search_panel_of_radgridview-xaml' />
 
 
-__Appearance of the control after the style is applied__
+>caption Appearance of the control after the style is applied
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a styled search panel](images/search-panel-styled.PNG)
 
@@ -41,7 +41,7 @@ __Change the HighlightBrush of the HighlightTextBlock__
 <snippet id='radgridview-styles-and-templates-styling-search-panel-change_the_highlightbrush_of_the_highlighttextblock-xaml' />
 
 
-__Appearance of the highlighted text after the style is applied__
+>caption Appearance of the highlighted text after the style is applied
 
 ![Telerik UI for {{ site.framework_name }} RadGridView search panel with a custom highlight color for matched text](images/search-panel-highlight-color.png)
 
@@ -53,7 +53,7 @@ __Set the HighlightedBackground property of the GridViewCell__
 <snippet id='radgridview-styles-and-templates-styling-search-panel-set_the_highlightedbackground_property_of_the_gridviewcell-xaml' />
 
 
-__Appearance of the background color of the highlighted GridViewCell elements__
+>caption Appearance of the background color of the highlighted GridViewCell elements
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom highlighted background for search-matched cells](images/search-panel-highlight-cell-background-color.png)
 

@@ -15,11 +15,11 @@ ticketid: 855740
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2024.2.524</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadGridView for WPF</td>
 		</tr>
 	</tbody>
@@ -388,6 +388,6 @@ __Setting up the RadGridView control using the created model and view model__
     </Grid>
 ```
 
-__GridViewRow with a strikeout/strikethrough effect__
+>caption GridViewRow with a strikeout/strikethrough effect
 
 ![GridViewRow with a strikeout/strikethrough effect](images/kb-gridview-strikeout-row-0.png)

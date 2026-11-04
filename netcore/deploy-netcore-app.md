@@ -25,7 +25,8 @@ If you already have a WPF project, you can go directly to the [Deploy the Applic
 
 	![Telerik UI for WPF New Project Wizard with application templates](images/netcore-support-deploy-using-visual-studio-1.png)
 	
-#### __Figure 1: Calendar application created with the New Project Wizard__
+>caption Calendar application created with the new project wizard
+
 ![Telerik UI for WPF Calendar application created with the New Project Wizard](images/netcore-support-deploy-using-visual-studio-2.png)
 
 ## Deploy the Application

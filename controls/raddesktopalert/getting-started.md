@@ -85,7 +85,8 @@ __Example 1: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a __RadDesktopAlert__ with the **Windows8** theme applied.
 
-#### __Figure 1: RadDesktopAlert with the Windows8 theme__
+>caption RadDesktopAlert with the Windows8 theme
+
 ![RadDesktopAlert with Windows8 theme](images/raddesktopalert-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

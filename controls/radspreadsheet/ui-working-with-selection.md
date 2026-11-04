@@ -224,7 +224,7 @@ __Disable Fill Selection__
 
 The following image shows an example of a customized selection.
 
-__Customized Selection__
+>caption Customized selection
 
 ![Customized Selection](images/RadSpreadsheet_HowTo_Customize_Selection_01.png)
 

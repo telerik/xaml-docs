@@ -15,11 +15,11 @@ ticketid: 1648836
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2024.1.423</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadGanttView for WPF</td>
 		</tr>
 	</tbody>
@@ -59,6 +59,6 @@ __Setting a complex structure to the Header property of a ColumnDefinition insta
     </telerik:ColumnDefinition>
 ```
 
-__GanttView ColumnDefinition with complex structure set to its Header property__
+>caption GanttView ColumnDefinition with complex structure set to its header property
 
 ![GanttView ColumnDefinition with complex structure set to its Header property](images/kb-ganttview-customize-column-header-0.png)

@@ -18,7 +18,7 @@ To set additional contents, use the __Content__ and __AdditionalContent__ proper
 
 <snippet id='radstepprogressbar-step-item-contents-block_1-xaml' />
 
-__RadStepProgressBar in Horizontal and Vertical Orientations__  
+>caption RadStepProgressBar in horizontal and vertical orientations
 
 ![{{ site.framework_name }} RadStepProgressBar in Horizontal and Vertical Orientations](images/stepprogressbar-step-contents-0.png)
 
@@ -35,7 +35,7 @@ The different properties are used based on the current state of the step item - 
 
 <snippet id='radstepprogressbar-step-item-contents-block_2-xaml' />
 
-__RadStepProgressBar with customized state indicator contents__  
+>caption RadStepProgressBar with customized state indicator contents
 
 ![{{ site.framework_name }} RadStepProgressBar with Customized State Indicator Contents](images/stepprogressbar-step-contents-1.png)
 

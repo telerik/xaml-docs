@@ -23,7 +23,8 @@ __Defining a ListMessage__
 <snippet id='radchat-features-messages-listmessage-example_1_defining_an_listmessage-cs' />
 
 
-__Defining ListMessage__
+>caption Defining ListMessage
+
 ![Defining ListMessage](images/RadChat_Messages_List_01.png)
 
 ## See Also

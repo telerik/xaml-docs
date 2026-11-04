@@ -19,7 +19,8 @@ Since the __Icon__ property is of type object, you can set it to an image, glyph
 __Example 1: Setting the Icon of a RadNavigationViewItem__
 <snippet id='radnavigationview-features-icon-and-icontemplate-block_1-xaml' />
 
-#### __Figure 1: Result from Example 1 in the Office2016 theme__
+>caption Result from example 1 in the Office2016 theme
+
 ![RadNaviationViewItem Icon](images/NavigationViewItem_Icon.png)
 
 ## IconTemplate
@@ -40,7 +41,8 @@ After that we can setup our __RadNavigationView__ and set its ItemsSource to an 
 __Example 3: Setting up the view__
 <snippet id='radnavigationview-features-icon-and-icontemplate-block_3-xaml' />
 
-#### __Figure 2: Result from Example 3 in the Office2016 theme__
+>caption Result from example 3 in the Office2016 theme
+
 ![RadNavigationViewItems with Icons set through IconTemplate](images/NavigationViewItem_IconTemplate.png)
 
 >For a more extensive databinding example check out the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article.
@@ -58,7 +60,8 @@ __Example 4: Defining the IconTemplateSelector__
 __Example 5: Using the IconTemplateSelector in XAML__
 <snippet id='radnavigationview-features-icon-and-icontemplate-block_5-xaml' />
 
-#### __Figure 3: Result from Example 5 in the Office2016 theme__
+>caption Result from example 5 in the Office2016 theme
+
 ![RadNavigationViewItems with Icons set through an IconTemplateSelector](images/NavigationViewItem_IconTemplateSelector.png)
 
 ## Icon Visibility

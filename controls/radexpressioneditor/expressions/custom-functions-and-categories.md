@@ -15,14 +15,14 @@ As of **R1 2019**, the RadExpressionEditor control allows users to add custom ca
 
 To do so, you have to create a custom implementation of the **ExpressionEditorViewModel** and override its virtual methods.
 
-#### [C#] Example 1: The ExpressionEditorViewModel overrides
+__[C#] Example 1: The ExpressionEditorViewModel overrides__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-block_1-cs' />
 
 
 To assign the custom viewmodel to the RadExpressionEditor control, you have to set its **ViewModel** property.
 
-#### [C#] Example 2: Set RadExpressionEditor's ViewModel
+__[C#] Example 2: Set RadExpressionEditor's ViewModel__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-block_2-cs' />
 
@@ -31,14 +31,14 @@ To assign the custom viewmodel to the RadExpressionEditor control, you have to s
 
 To add custom categories as well as remove certain predefined categories, you need to override the **GenerateCategories** method.
 
-#### [C#] Example 3: Add custom categories
+__[C#] Example 3: Add custom categories__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-block_3-cs' />
 
 
 **Example 3** adds a **Favorites** category with two subcategories - **Math** and **DateTime**. Each of the categories contains some static methods of the respective class. The results before and after respectively can be observed in **Figure 1**.
 
-__Custom category__
+>caption Custom category
 
 ![Telerik UI for WPF RadExpressionEditor custom categories showing Favorites with Math and DateTime subcategories](images/custom-category.png)
 
@@ -46,28 +46,28 @@ __Custom category__
 
 If you want to add your custom non-static functions to the control you need to set the **ExpressionFunctionContext.Context** property to an instance of the **ExpressionFunctionContext** class.
 
-#### [C#] Example 4: Custom ExpressionFunctionContext
+__[C#] Example 4: Custom ExpressionFunctionContext__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_context_class-cs' />
 
 
 **Example 4** defines two custom instance functions which we can now pass to the ExpressionParser as show in **Example 5**.
 
-#### [C#] Example 5: Set the ExpressionFunctionContext.Context
+__[C#] Example 5: Set the ExpressionFunctionContext.Context__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_set_context-cs' />
 
 
 You can then add these functions in the **GetFunctionsItemModels** override as well as remove some of the predefined functions.
 
-#### [C#] Example 6: Add custom functions
+__[C#] Example 6: Add custom functions__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_get_functions_item_models-cs' />
 
 
 **Example 6** adds the two custom functions defined in Example 4 to the **Other** subcategory. The results before and after respectively are illustrated in **Figure 2**. 
 
-__Custom functions__
+>caption Custom functions
 
 ![Telerik UI for WPF RadExpressionEditor custom functions showing OnePlus and TwoPlus in the Other category](images/custom-functions.png)
 
@@ -75,7 +75,7 @@ __Custom functions__
 
 You can further customize the control by overriding the **GetFieldsItemModels**, **GetOperatorsItemModels**, **GetConstantsItemModels** and **GetFieldsCategory** methods.
 
-#### [C#] Example 7: Remove operators, constants and fields and add subcategories to the Fields category
+__[C#] Example 7: Remove operators, constants and fields and add subcategories to the Fields category__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions-cs' />
 

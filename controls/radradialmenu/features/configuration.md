@@ -33,12 +33,14 @@ __Example 2: Setting the AutoSizeMenuItems property__
 
 > When the __AutoSizeMenuItems__ property is __True__, menu items on all levels will be auto-sized. If you want to dynamically control this, you can handle the [Navigating]({%slug radradialmenu-events-overview%}#navigating) event and set the __AutoSizeMenuItems__ property of the event arguments.
 
-#### __Figure 1: RadRadialMenu with less than 8 Autosized Items__
+>caption RadRadialMenu with less than 8 autosized items
+
 ![RadRadialMenu with less than 8 autosized items](images/RadRadialMenu_AutoSizeMenuItems.png)
 
 <!-- -->
 
-#### __Figure 2: RadRadialMenu with more than 8 Autosized Items__
+>caption RadRadialMenu with more than 8 autosized items
+
 ![RadRadialMenu with more than 8 autosized items](images/RadRadialMenu_AutoSizeMenuItems2.png)
 
 ## Change the size of the RadialMenu
@@ -51,7 +53,8 @@ __Example 3: Setting MinWidth and MinHeight properties__
 
 __Figure 3__ shows how the __RadialMenu__ looks in smaller size.     
 
-#### __Figure 3: Setting MinWidth and MinHeight properties__
+>caption Setting MinWidth and MinHeight properties
+
 ![Rad Radial Menu Configuration 03](images/RadRadialMenu_Configuration_03.png)       
 
 ## Change the StartAngle property
@@ -64,7 +67,8 @@ __Example 4: Setting StartAngle property__
 
 __Figure 4__ shows how the __RadialMenu__ looks with different settings of the StartAngle property.            
 
-#### __Figure 4: Setting StartAngle property__
+>caption Setting StartAngle property
+
 ![Rad Radial Menu Configuration 01](images/RadRadialMenu_Configuration_01.png)
 
 ## Change the Radius properties
@@ -77,7 +81,8 @@ __RadRadialMenu__ provides the following Radius properties:
 
 * __OuterRadiusFactor__ - defines the outer radius of the panel holding the __NavigationItemButton__ items as a fraction of the size of __RadRadialMenu__ control. The value should be between 0 and 1. If the passed value lies outside this range, it is automatically set to the nearest boundary value.               
 
-#### __Figure 5: Radius Properties__
+>caption Radius properties
+
 ![Rad Radial Menu Configuration 02](images/RadRadialMenu_Configuration_02.png)
 
 ## Change the AnimationSpeedFactor property

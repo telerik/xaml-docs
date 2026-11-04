@@ -14,11 +14,11 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
-		<td>Product Version</td>
+		<th scope="row">Product Version</th>
 		<td>2021.2.511</td>
 	</tr>
 	<tr>
-		<td>Product</td>
+		<th scope="row">Product</th>
 		<td>RadGridView for WPF</td>
 	</tr>
 </table>
@@ -81,6 +81,6 @@ __Example 3: Define the style for the affected header cells in App.xaml__
 	</Style>
 ```
 
-#### Figure 1: The highlighted header cell of the filtered column
+>caption The highlighted header cell of the filtered column
 
 ![The highlighted header cell of the filtered column](images/kb-gridview-style-filtered-columns-1.png)

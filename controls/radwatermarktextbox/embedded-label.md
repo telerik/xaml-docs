@@ -18,10 +18,12 @@ The label displays as a watermark content (placeholder) when the RadWatermarkTex
 __Setting the Label property__
 <snippet id='radwatermarktextbox-embedded-label-block_1-xaml' />
 
-#### Label default visualization  
+>caption Label default visualization
+
 ![{{ site.framework_name }} RadWatermarkTextBox Label Default Visualization](images/radwatermarktextbox-features-label-0.png)
 
-#### Label visualization when floated  
+>caption Label visualization when floated
+
 ![{{ site.framework_name }} RadWatermarkTextBox Label Visualization When Floated](images/radwatermarktextbox-features-label-1.png)
 
 To keep the label always positioned on top of the text input area, set the __KeepLabelFloated__ property of RadWatermarkTextBox to True.
@@ -41,7 +43,8 @@ The label visual element is of type `Telerik.Windows.Controls.Label`. To customi
 __Customizing the label__
 <snippet id='radwatermarktextbox-embedded-label-block_4-xaml' />
 
-#### Customized label  
+>caption Customized label
+
 ![{{ site.framework_name }} RadWatermarkTextBox Customized Label](images/radwatermarktextbox-features-label-2.png)
 
 ## Animation

@@ -16,7 +16,7 @@ The RadSyntax editor provides an easy and intuitive way to search for a given te
 
 By pressing the __Ctrl + F__ key combination you can open the find dialog which consist of UI to find a particular string and replace it with another. By using the arrow buttons, you can navigate to the previous or next occurrence of the search text. You can also highlight all occurrences of the text by clicking the `Find All` button. You can also replace the next occurrence of the string or all occurrences via the `Replace` and `Replace All` buttons respectively. To further customize the find and replace logic, you can use the buttons to apply case sensitivity, enable or disable matching of whole words, and use regex expressions.
 
-__The Find Dialog__
+>caption The find dialog
 
 ![The Find Dialog](images/syntaxeditor-find-dialog.png)
 

@@ -29,7 +29,7 @@ __Example 1: Setting ReadOnlyEditorState property to Disabled__
 
 <snippet id='radpropertygrid-features-readonlyeditorstate-block_1-xaml' />
 
-#### __Figure 1: RadPropertyGrid with ReadOnlyEditorState set to Disabled__
+>caption RadPropertyGrid with ReadOnlyEditorState set to disabled
 
 ![Rad Property Grid Disabled](images/RadPropertyGrid_Disabled.png)
 
@@ -37,7 +37,7 @@ __Example 2: Setting ReadOnlyEditorState to ReadOnly__
 
 <snippet id='radpropertygrid-features-readonlyeditorstate-block_2-xaml' />
 
-#### __Figure 2: RadPropertyGrid with ReadOnlyEditorState set to ReadOnly__
+>caption RadPropertyGrid with ReadOnlyEditorState set to ReadOnly
 
 ![Rad Property Grid Read Only](images/RadPropertyGrid_ReadOnly.png)
 

@@ -50,6 +50,6 @@ __Example 1: Setting the default calendar__
 
 **Figure 1** demonstrates the final result:
 
-#### __Figure 1: RadScheduleView with Hijri calendar__
+>caption RadScheduleView with Hijri calendar
 
 ![RadScheduleView with Hijri calendar](images/hijri-scheduleview.png)

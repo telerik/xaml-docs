@@ -27,7 +27,8 @@ The following example demonstrates how the feature works in few easy steps.
 
 This will automatically add the new theme dll in the references of the project and merge the required resource dictionaries in the __App.xaml resources__.
 
-#### __Figure 1: The added theme assembly reference__
+>caption The added theme assembly reference
+
 ![{{ site.framework_name }} The added theme assembly reference](images/styling-apperance-switching-themes-design-time-03.png)
 
 __Example 1: The merged theme resources__

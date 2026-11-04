@@ -15,7 +15,7 @@ Each __RadPane__ provides built-in pin/unpin functionality that allows you to co
 
 By default this functionality is enabled and when a __RadPane__ is docked, pin/unpin toggle button is created and placed at its upper right corner. To toggle the pinned state of a certain __RadPane__ just click the button, highlighted on **Figure 1**.
 
-#### Figure 1: Pin button on a docked pane
+>caption Pin button on a docked pane
 
 ![Pin button on a docked pane](images/RadDocking_Features_Panes_Pinn_Unpinn_010.png)
 
@@ -57,13 +57,13 @@ If you hover your mouse over the tab of the "Toolbox" pane, it will slide automa
 
 As the element hosting the content of the pane when you hover over the auto-hide area is a popup, it will try to position itself optimally so that all of it's content is displayed. An example of this behavior when such a popup is opened near the edge of the screen is illustrated in **Figure 2**.
 
-#### Figure 2: Default unpinned pane near the edge of the screen
+>caption Default unpinned pane near the edge of the screen
 
 ![Default unpinned pane near edge of screen](images/CanAutoHideAreaExceedScreen_False.png)
 
 If, however, you want to force the panes to go outside of the screen, you can set the **CanAutoHideAreaExceedScreen** property of the RadDocking control to **True**. The result in such a scenario can be observed in **Figure 3**.
 
-#### Figure 3: Unpinned pane near the edge of the screen with CanAutoHideAreaExceedScreen set to True
+>caption Unpinned pane near the edge of the screen with CanAutoHideAreaExceedScreen set to true
 
 ![Unpinned pane near edge of screen with CanAutoHideAreaExceedScreen set to True](images/CanAutoHideAreaExceedScreen_True.png)
 
@@ -71,7 +71,7 @@ If, however, you want to force the panes to go outside of the screen, you can se
 
 If you don't want your __RadPanes__ to be pinnable just set the __CanUserPin__ property to __False__. Once disabled the user will not be able to change the pin state of a __RadPane__ run-time because the toggle button will be hidden. This has been illustrated in **Figure 4**.
 
-#### Figure 4: Docked pane with no pin button
+>caption Docked pane with no pin button
 
 ![Docked pane with no pin button](images/RadDocking_Features_Panes_Pinn_Unpinn_050.png)
 

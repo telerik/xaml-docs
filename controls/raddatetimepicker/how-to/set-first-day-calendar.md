@@ -58,7 +58,7 @@ __Example 5: Setting an individual calendar's CalendarStyle property__
 
 **Figure 1** shows the final result.
 
-#### __Figure 1: RadDateTimePicker with week starting from Friday__
+>caption RadDateTimePicker with week starting from friday
 
 ![RadDateTimePicker with week starting from Friday](images/dateTimePicker_how_to_set_first_week_day_calendar_010.png)
 

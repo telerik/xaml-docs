@@ -25,7 +25,7 @@ __Example 1: Create a Table in Code-Behind__
 
 __Figure 1__ shows the result of the code in __Example 1__.
 
-#### __Figure 1: Table generated in code-behind__
+>caption Table generated in code-behind
 
 ![Rad Rich Text Box Features Layout Elements Tables 01](images/RadRichTextBox_Features_LayoutElements_Tables_01.png)
 
@@ -41,7 +41,7 @@ __Example 2: Use RowSpan and ColumnSpan Properties__
 
 The result is demonstrated in the following image.
 
->caption Figure 2: Merging cells with __RowsSpan__ and __ColSpan__ properties
+>caption Merging cells with RowsSpan and ColSpan properties
 
 ![radrichtextbox-document-elements-working-with-tables001](images/radrichtextbox-document-elements-working-with-tables001.png) 
 

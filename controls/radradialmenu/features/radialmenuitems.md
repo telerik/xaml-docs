@@ -37,7 +37,8 @@ __Example 1: Setting RadRadialMenuItem properties__
 
 <snippet id='radradialmenu-features-radialmenuitems-block_1-xaml' />
 
-Figure 1: Setting RadialMenuItems properties
+>caption Setting RadialMenuItems properties
+
 ![Rad Radial Menu Menu Items 01](images/RadRadialMenu_MenuItems_01.png)
 
 ## Selected Items
@@ -50,7 +51,8 @@ __RadRadialMenu__ provides selection of its items. It is implelemented through t
 
 __Figure 2__ shows how the selected RadialMenuItems look.       
 
-Figure 2: RadialMenu with "File" and "Mail" items selected
+>caption RadialMenu with "file" and "mail" items selected
+
 ![Rad Radial Menu Menu Items 02](images/RadRadialMenu_MenuItems_02.png)
 
 ## Grouped Items
@@ -63,7 +65,8 @@ __Example 2: Grouping RadialMenuItems__
 
 As a result, selecting one of the items deselects the other one (if selected).
 
-Figure 3: Grouped RadialMenuItems
+>caption Grouped RadialMenuItems
+
 ![Rad Radial Menu Menu Items 03](images/RadRadialMenu_MenuItems_03.png)
 
 ## See Also

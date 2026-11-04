@@ -64,7 +64,8 @@ __Example 6: Populating the RadTreeView__
 <snippet id='radtreeview-how-to-bind-to-self-referencing-data-block_10-cs' />
 <snippet id='radtreeview-how-to-bind-to-self-referencing-data-block_11-vb' />
 
-#### __Image 1: Self-Referencing RadTreeView__ 
+>caption Image 1: self-referencing RadTreeView
+
 ![Self referencing RadTreeView](images/RadTreeView_HowToBindToSelfReferencingData_010.PNG)
 
 >You can check out this example in the [RadTreeView SDK examples]({%slug radtreeview-sdk-examples%}) or in the [SDK Samples Browser]({%slug sdk-samples-browser%}) that provides a more convenient approach in exploring and executing the examples in the Telerik XAML SDK repository. The SDK Samples Browser application is available for download from [this link](https://demos.telerik.com/xaml-sdkbrowser/).

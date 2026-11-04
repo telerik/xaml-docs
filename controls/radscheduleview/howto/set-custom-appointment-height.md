@@ -47,7 +47,7 @@ And the final step would be to assign it to __RadScheduleView__:
 
 You can see the final result in __Figure 1__:
 
-Figure 1: Appointments with different heights in MonthViewDefinition
+>caption Appointments with different heights in MonthViewDefinition
 
 ![radscheduleview how to set custom appointment heights](images/radscheduleview_how_to_set_custom_appointment_height.png)
 

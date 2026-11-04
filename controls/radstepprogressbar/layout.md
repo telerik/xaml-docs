@@ -19,7 +19,7 @@ To change the orientation of the control, set the __Orientation__ property. The 
 
 <snippet id='radstepprogressbar-layout-block_1-xaml' />
 
-__Vertically Oriented RadStepProgressBar__  
+>caption Vertically oriented RadStepProgressBar
 
 ![{{ site.framework_name }} RadStepProgressBar Vertically Oriented RadStepProgressBar](images/stepprogressbar-layout-0.png)
 
@@ -28,7 +28,7 @@ To change the horizontal flow direction, set the __FlowDirection__ property. Thi
 
 <snippet id='radstepprogressbar-layout-block_2-xaml' />
 
-__Horizontally oriented RadStepProgressBar with changed flow direction__  
+>caption Horizontally oriented RadStepProgressBar with changed flow direction
 
 ![{{ site.framework_name }} RadStepProgressBar Horizontally Oriented with Changed Flow Direction](images/stepprogressbar-layout-1.png)
 
@@ -37,7 +37,7 @@ To change the vertical flow direction, set the __ReverseVerticalDirection__ prop
 
 <snippet id='radstepprogressbar-layout-block_3-xaml' />
 
-__Vertically oriented RadStepProgressBar with changed flow direction__  
+>caption Vertically oriented RadStepProgressBar with changed flow direction
 
 ![{{ site.framework_name }} RadStepProgressBar Vertically Oriented with Changed Flow Direction](images/stepprogressbar-layout-2.png)
 
@@ -48,7 +48,7 @@ The default spacing between two adjacent steps is 100px. To change this, set the
 
 <snippet id='radstepprogressbar-layout-block_4-xaml' />
 
-__Custom step spacing__  
+>caption Custom step spacing
 
 ![{{ site.framework_name }} RadStepProgressBar Custom Step Spacing](images/stepprogressbar-layout-3.png)
 

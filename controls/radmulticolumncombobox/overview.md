@@ -18,7 +18,8 @@ __RadMultiColumnComboBox__ is a special case of a ComboBox control. Its main adv
 {% include cta-panel-overview.html %}
 {% endif %}
 
-#### __Figure 1: RadMultiColumnComboBox__
+>caption RadMultiColumnComboBox
+
 ![RadMultiColumnComboBox](images/MultiColumnComboBox_Overview.png)
 
 ## Key Features

@@ -15,7 +15,8 @@ The __CropTool__ is one of the tools that come out-of-the-box with __RadImageEdi
 
 When the tool is invoked, a crop adorner rectangle is shown over the image. It visualizes the part of the image that is going to be cropped when the tool is invoked.
       
-#### __Figure 1: Crop Adorner__
+>caption Crop adorner
+
 ![Rad Image Editor Crop Adorner](images/RadImageEditor_HowTo_Use_Crop_01.png)     
 
 ## Using the CropTool

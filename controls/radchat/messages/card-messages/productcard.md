@@ -24,7 +24,8 @@ __Defining a ProductCard__
 
 Adding such __ProductCard__ will result in the following message.
 
-__Defining ProductCard__
+>caption Defining ProductCard
+
 ![Defining ImageCard](images/RadChat_ProductCard_01.png)
 
 ## See Also

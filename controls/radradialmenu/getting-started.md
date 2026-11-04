@@ -81,7 +81,8 @@ __Example 1: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a RadRadialMenu with the **Windows8** theme applied.
 
-#### __Figure 1: RadRadialMenu with the Windows8 theme__
+>caption RadRadialMenu with the Windows8 theme
+
 ![RadRadialMenu with Windows8 theme](images/radradialmenu-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

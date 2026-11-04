@@ -13,11 +13,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2025.1.211</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadMap for WPF</td>
 		</tr>
 	</tbody>
@@ -166,7 +166,7 @@ __Utilizing the AzureGeocodingHelper class's GetGeoCode method__
     End Sub
 ```
 
-__RadMap with AzureMapProvider and geocoding functionality__
+>caption RadMap with AzureMapProvider and geocoding functionality
 
 ![RadMap with AzureMapProvider and geocoding functionality](images/kb-map-azuremapprovider-geocoding.png)
 

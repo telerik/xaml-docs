@@ -23,7 +23,8 @@ __Example 1: Setting DefaultSegmentStyle property in XAML__
 <snippet id='radchartview-styles-and-templates-customizing-funnel-series-example_1_setting_defaultsegmentstyle_property_in_xaml-xaml' />
 
 
-#### __Figure 1: DefaultSegmentStyle property set__
+>caption DefaultSegmentStyle property set
+
 ![radchartview-styles-and-templates-funnel-series-defaultsegmentstyle](images/radchartview-styles-and-templates-funnelseries-defaultsegmentstyle.png)
 
 ### SegmentStyles
@@ -34,7 +35,8 @@ __Example 2: Setting SegmentStyles property in XAML__
 <snippet id='radchartview-styles-and-templates-customizing-funnel-series-example_2_setting_segmentstyles_property_in_xaml-xaml' />
 
 
-#### __Figure 2: SegmentStyles property set__
+>caption SegmentStyles property set
+
 ![radchartview-styles-and-templates-funnelseries-segmentstyles](images/radchartview-styles-and-templates-funnelseries-segmentstyles.png)
 
 ## See Also

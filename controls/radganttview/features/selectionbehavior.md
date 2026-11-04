@@ -27,7 +27,7 @@ Below you will find the list of available behaviors.
 
 As the name suggests, when using the **SingleSelectionBehavior**, only a single item can be selected at a time both programmatically and through the UI. If multiple items are added to the control's **SelectedItems** collection, only the last one will remain.
 
-#### __Figure 1: Selecting items with SingleSelectionBehavior__
+>caption Selecting items with SingleSelectionBehavior
 
 ![Selecting items with SingleSelectionBehavior](images/singleselectionbehavior.gif)
 
@@ -35,7 +35,7 @@ As the name suggests, when using the **SingleSelectionBehavior**, only a single 
 
 The **ReadOnlySelectionBehavior** differs from the SingleSelectionBehavior in that it does not allow selection from the user interface. Items can only by added to the current selection only through the **SelectedItems** collection.
 
-#### __Figure 2: Selecting items with ReadOnlySelectionBehavior__
+>caption Selecting items with ReadOnlySelectionBehavior
 
 ![Selecting items with ReadOnlySelectionBehavior](images/readonlyselectionbehavior.gif)
 
@@ -43,7 +43,7 @@ The **ReadOnlySelectionBehavior** differs from the SingleSelectionBehavior in th
 
 In contrast, the **MultiSelectionBehavior** allows the selection of mutilple items by selecting individual items from the UI. The first click adds the item to the **SelectedItems** collection, while a click on an already selected item removes it from the current selection.
 
-#### __Figure 3: Selecting items with MultiSelectionBehavior__
+>caption Selecting items with MultiSelectionBehavior
 
 ![Selecting items with MultiSelectionBehavior](images/multiselectionbehavior.gif)
 
@@ -51,7 +51,7 @@ In contrast, the **MultiSelectionBehavior** allows the selection of mutilple ite
 
 The **ExtendedSelectionBehavior** behaves like the SingleSelectionBehavior, however, using the **Ctrl** and **Shift** keys, users can extend the selection by a single item or select a group of contiguous items similarly to the selection behavior observed in **Windows Explorer**.
 
-#### __Figure 4: Selecting items with ExtendedSelectionBehavior__
+>caption Selecting items with ExtendedSelectionBehavior
 
 ![Selecting items with ExtendedSelectionBehavior](images/extendedselectionbehavior.gif)
 
@@ -59,7 +59,7 @@ The **ExtendedSelectionBehavior** behaves like the SingleSelectionBehavior, howe
 
 The **SchedulingSelectionBehavior** further extends the functionality of the ExtendedSelectionBehavior by allowing the user to select multiple groups of neighboring items by using the **Shift** key.
 
-#### __Figure 5: Selecting items with SchedulingSelectionBehavior__
+>caption Selecting items with SchedulingSelectionBehavior
 
 ![Selecting items with SchedulingSelectionBehavior](images/schedulingselectionbehavior.gif)
 

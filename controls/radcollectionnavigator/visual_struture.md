@@ -31,7 +31,7 @@ And the __editing buttons__ include:
 
 * Delete item
 
-#### __Figure 1: RadCollectionNavigator with all navigation and editing buttons__
+>caption RadCollectionNavigator with all navigation and editing buttons
 
 ![RadCollectionNavigator with all navigation and editing buttons](images/collectionnavigator_01.png)
 

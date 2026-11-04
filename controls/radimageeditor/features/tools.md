@@ -65,12 +65,14 @@ The __commands__ namespace declaration points to the following namespace: `xmlns
 
 The tool settings UI is displayed over the image in a special container - `InlineToolSettings` element. The container is positioned over the RadImageEditor at its top left corner.
 
-#### Figure 1: Blur inline settings UI
+>caption Blur inline settings UI
+
 ![{{ site.framework_name }} RadImageEditor Blur inline settings UI](images/radimageeditor-features-tools-0.png)
 
 When using [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%}) the settings UI is displayed aligned at the right side of the control.
 
-#### Figure 2: Blur settings UI in RadImageEditorUI
+>caption Blur settings UI in RadImageEditorUI
+
 ![{{ site.framework_name }} RadImageEditor Blur settings UI in RadImageEditorUI](images/radimageeditor-features-tools-1.png)
 
 ## See Also  

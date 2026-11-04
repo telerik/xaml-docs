@@ -39,7 +39,7 @@ There are three built-in filtering modes which you can choose from by setting th
 
 Popup filtering is the default filtering mode offered by RadGridView. It is activated by clicking the funnel icon located in the column header.
 
-__The filtering popup__
+>caption The filtering popup
 
 ![Telerik {{ site.framework_name }} DataGrid filtering basic 01](images/gridview_filtering_basic_01.png)
 
@@ -81,7 +81,7 @@ Through the `FilteringDropDownStaysOpen` property of `RadGridView`, you can cont
 
 The `FilterRow` filtering mode offers a filter built in the header cell of each filterable column. This mode is simpler and does not support the notion of distinct values. In fact, the field filter editor that is displayed in the header cell is exactly the same as either of the two field filter editors from the Popup filtering control. You can think of this as an oversimplified version of the Popup mode where the user sees only one of the two field filter editors of the Popup filtering control and the editor is always visible.
 
-__The filter rows__
+>caption The filter rows
 
 ![Telerik {{ site.framework_name }} DataGrid filtering basic 02](images/gridview_filtering_basic_02.png)
 
@@ -132,7 +132,7 @@ __Setting EnableDistinctValuesFiltering and DistinctValuesSearchMode properties_
 <snippet id='radgridview-filtering-basic-setting_enabledistinctvaluesfiltering_and_distinctvaluessearchmode_properties-xaml' />
 
 
-__Filtering the StadiumCapacity column's distinct values__
+>caption Filtering the StadiumCapacity column's distinct values
 
 ![Filtering the StadiumCapacity column's distinct values](images/gridview_filtering_basic_03.gif)
 

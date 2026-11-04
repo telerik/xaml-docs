@@ -25,7 +25,7 @@ __Example 2: Disable the filtering of the Name column when generating it__
 <snippet id='radgridview-filtering-how-to-disable-filtering-for-a-specific-column-example_2_disable_the_filtering_of_the_name_column_when_generating_it-vb' />
 
 
-#### Figure 1: The Name column with disabled filtering
+>caption The name column with disabled filtering
 
 ![Telerik UI for {{ site.framework_name }} RadGridView Name column with filtering disabled and no funnel icon](images/disable-filter.png)
 

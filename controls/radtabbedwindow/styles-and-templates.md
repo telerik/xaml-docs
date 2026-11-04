@@ -17,7 +17,7 @@ RadTabbedWindow allows you to easily modify its appearance by providing some use
 
 Via the **AddButtonStyle** property, you can control the appearance of the button which is used to add new tabs to the window.
 
-#### [XAML] Example 1: Specify AddButtonStyle
+__[XAML] Example 1: Specify AddButtonStyle__
 
 <snippet id='radtabbedwindow-styles-and-templates-block_1-xaml' />
 
@@ -27,7 +27,7 @@ Via the **AddButtonStyle** property, you can control the appearance of the butto
 
 You can use the **ItemContainerStyle** property to style the individual RadTabItem elements.
 
-#### [XAML] Example 2: Specify ItemContainerStyle
+__[XAML] Example 2: Specify ItemContainerStyle__
 
 <snippet id='radtabbedwindow-styles-and-templates-block_2-xaml' />
 
@@ -37,15 +37,15 @@ You can use the **ItemContainerStyle** property to style the individual RadTabIt
 
 You can also define a **StyleSelector** and conditionally style the tab items via the **ItemContainerStyleSelector** property.
 
-#### [C#] Example 3: Create a custom StyleSelector
+__[C#] Example 3: Create a custom StyleSelector__
 
 <snippet id='radtabbedwindow-styles-and-templates-block_3-cs' />
 
-#### [VB.NET] Example 3: Create a custom StyleSelector
+__[VB.NET] Example 3: Create a custom StyleSelector__
 
 <snippet id='radtabbedwindow-styles-and-templates-block_4-vb' />
 
-#### [XAML] Example 4: Specify ItemContainerStyleSelector property
+__[XAML] Example 4: Specify ItemContainerStyleSelector property__
 
 <snippet id='radtabbedwindow-styles-and-templates-block_5-xaml' />
 
@@ -55,7 +55,7 @@ You can also define a **StyleSelector** and conditionally style the tab items vi
 
 When binding your **RadTabbedWindow** to a collection, you are able to configure the visualization of the data and the appearance of the tab items via the **ItemTemplate** and the **ItemTemplateSelector** properties.
 
-#### [XAML] Example 5: Define a custom ItemTemplate
+__[XAML] Example 5: Define a custom ItemTemplate__
 
 <snippet id='radtabbedwindow-styles-and-templates-block_6-xaml' />
 
@@ -65,7 +65,7 @@ If you wish to return different templates for the tab items, you can use the **I
 
 Similarly, in a data-binding scenario you can control the appearance of the tabs' content via the **ContentTemplate** and the **ContentTemplateSelector** properties.
 
-#### [XAML] Example 6: Define a custom ContentTemplate
+__[XAML] Example 6: Define a custom ContentTemplate__
 
 <snippet id='radtabbedwindow-styles-and-templates-block_7-xaml' />
 

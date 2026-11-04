@@ -24,7 +24,7 @@ __Define the RadCartesianChart with HoverMode__
 <snippet id='radchartview-features-hovermode-define_the_radcartesianchart_with_hovermode-xaml' />
 
 
-__Result from the above example comparing hovering over different series__
+>caption Result from the above example comparing hovering over different series
 
 ![Telerik UI for WPF RadChartView Comparing Hover Effects on Different Data Series](images/RadChartView-HoverMode.png)
 

@@ -131,7 +131,8 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a RadTileList with the **Windows8** theme applied.
 
-#### __Figure 1: RadTileList with the Windows8 theme__
+>caption RadTileList with the Windows8 theme
+
 ![RadTileList with Windows8 theme](images/RadTileList-setting-theme.png)
         
 

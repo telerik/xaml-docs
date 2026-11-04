@@ -19,7 +19,8 @@ __Example 1: Defining tooltip behavior__
 <snippet id='radchartview3d-features-behaviors-tooltipbehavior3d-example_1_defining_tooltip_behavior-xaml' />
 
 	
-#### __Figure 1: Tooltip__
+>caption Tooltip
+
 ![{{ site.framework_name }} RadChartView3D Tooltip](images/radchartview-3d-behaviors-tooltip-0.png)
 
 ## Customizing the tooltip
@@ -34,7 +35,8 @@ __Example 2: Defining tooltip template__
 <snippet id='radchartview3d-features-behaviors-tooltipbehavior3d-example_2_defining_tooltip_template-xaml' />
 
 
-#### __Figure 2: Tooltip template__
+>caption Tooltip template
+
 ![{{ site.framework_name }} RadChartView3D Tooltip template](images/radchartview-3d-behaviors-tooltip-1.png)
 	
 The data context passed in the template is an object of type __XyzDataPoint3D__. The object contains information about the data point positioned under the mouse. You can use the XyzDataPoint3D's __DataItem__ property to get the view model of the data point and display custom information about it. 

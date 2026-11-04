@@ -42,7 +42,7 @@ __Example 1: Creating RadVerticalLinearGauge with a VerticalLinearScale__
 
 >tip To learn more about the usage of the __LinearScale__ control, read the [Linear Scale]({%slug linear-scale-overview%}) topic.
 
-#### __Image 1: Result from Example 1__
+>caption Image 1: result from example 1
 
 ![RadVerticalLinearGauge with a VerticalLinearScale](images/RadGauge_GettingStarted_LinearGauge_02.png)
 
@@ -56,7 +56,7 @@ __Example 2: Adding Indicators__
 <snippet id='radgauge-getting-started-creating-linear-gauge-example_2_adding_indicators-xaml' />
 
 
-#### __Image 2: Result from Example 2__
+>caption Image 2: result from example 2
 
 ![RadVerticalLinearGauge with Indicator](images/RadGauge_GettingStarted_LinearGauge_03.png)
 
@@ -68,7 +68,7 @@ __Example 3: Setting indicator's position__
 <snippet id='radgauge-getting-started-creating-linear-gauge-example_3_setting_indicator_s_position-xaml' />
 
 
-#### __Image 3: Result from Example 3__
+>caption Image 3: result from example 3
 
 ![RadVerticalLinearGauge with Indicator position](images/RadGauge_GettingStarted_LinearGauge_04.png)
 

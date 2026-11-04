@@ -48,7 +48,7 @@ In this example, the input and output views will be added.
 __Adding the input and output views__
 <snippet id='radaiprompt-aipromptgettingstarted-addingviews-xaml' />
 
-__RadAIPrompt with the input and output views__
+>caption RadAIPrompt with the input and output views
 
 ![WPF RadAIPrompt with input and output views](images/radaiprompt-getting-started-0.png)
 
@@ -62,7 +62,7 @@ __Subscribing to the PromptRequest event__
 __Handling the PromptRequest event__
 <snippet id='radaiprompt-aipromptgettingstarted-handlingpromptrequested-cs' />
 
-__RadAIPrompt with a response in the output view__
+>caption RadAIPrompt with a response in the output view
 
 ![WPF RadAIPrompt with a response in the output view](images/radaiprompt-getting-started-1.png)
 
@@ -88,7 +88,7 @@ __Merge the ResourceDictionaries__
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 The following image shows a RadAIPrompt with the __Fluent__ theme applied.
 
-__RadAIPrompt with the Fluent theme__
+>caption RadAIPrompt with the fluent theme
 
 ![WPF RadAIPrompt with the Fluent theme](images/radaiprompt-getting-started-2.png)
 

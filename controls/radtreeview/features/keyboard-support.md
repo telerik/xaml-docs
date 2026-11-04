@@ -69,12 +69,14 @@ __Example 2: Handling the KeyDown and KeyUp events__
 
 By default, navigating through the keyboard will select the given __RadTreeViewItem__. It exposes the __IsSelectable__ property through which this default behavior can be altered. Let's have the following example. In it the first item is selected and the second one has its __IsSelectable__ property set to __False__.
 
-#### __Figure 1: RadTreeView with its first item selected__
+>caption RadTreeView with its first item selected
+
 ![RadTreeView with its first item selected](images/RadTreeView_KeyboardSupport_01.png)
 
 When pressing the Down arrow key in this case the end result will be as follows.
 
-#### __Figure 2: RadTreeView with the IsSelectable of the second item set to False__
+>caption RadTreeView with the IsSelectable of the second item set to false
+
 ![RadTreeView with its first item selected](images/RadTreeView_Keyboard_Support_02.png)
 
 ## Text Search Navigation

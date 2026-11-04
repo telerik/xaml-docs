@@ -14,11 +14,11 @@ ticketid: 1597957
 ## Environment
 <table>
 	<tr>
-		<td>Product Version</td>
+		<th scope="row">Product Version</th>
 		<td>2023.3.1114</td>
 	</tr>
 	<tr>
-		<td>Product</td>
+		<th scope="row">Product</th>
 		<td>UI for WPF</td>
 	</tr>
 </table>
@@ -37,7 +37,7 @@ The following example shows how to create an Excel VSTO Add-in application and d
 
 To create a VSTO project, you will need to install the __Office/SharePoint Development__ package from the __Visual Studio Installer__ application.
 
-__Office/SharePoint development package__
+>caption Office/SharePoint development package
 
 ![{{ site.framework_name }} Office/SharePoint development package](images/kb-common-create-excel-addin-0.png)
 
@@ -180,10 +180,10 @@ __Office/SharePoint development package__
 		}
 	```
 
-__Excel VSTO Add-in with a WinForms UserControl that hosts the WPFUserControl__
+>caption Excel VSTO add-in with a WinForms UserControl that hosts the WPFUserControl
 
 ![{{ site.framework_name }} Excel VSTO Add-in with a WinForms UserControl that hosts the WPFUserControl](images/kb-common-create-excel-addin-2.png)
 
-__Excel VSTO Add-in with Telerik UI for WPF components__
+>caption Excel VSTO add-in with Telerik UI for WPF components
 
 ![{{ site.framework_name }} Excel VSTO Add-in with Telerik UI for WPF components](images/kb-common-create-excel-addin-3.png)

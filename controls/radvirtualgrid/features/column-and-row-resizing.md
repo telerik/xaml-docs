@@ -15,7 +15,7 @@ By default, `RadVirtualGrid` will enable resizing of its columns and disable res
 
 The control enables changing the column width and row height at runtime through the UI. This can be achieved by positioning the mouse over the columns vertical grid line and dragging it until the needed width of the column is achieved. Respectively, the rows can be resized by placing the mouse cursor over the horizontal grid line in the row header and dragging to the required height.
 
-__Resizing the columns of RadVirtualGrid__
+>caption Resizing the columns of RadVirtualGrid
 
 ![{{site.framework_name}} Resizing the columns of RadVirtualGrid](images/RadVirtualGrid_Features_ColumnAndRowResizing_01.png)
 

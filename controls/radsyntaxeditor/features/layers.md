@@ -41,7 +41,7 @@ __Example 3: Using the custom layers builder__
 
 Now, when users mouse over any of the keywords, they will be highlighted with a semi-transparent red rectangle.
 
-#### Figure 1: The result from using the custom layer
+>caption The result from using the custom layer
 
 ![The result from using the custom layer](images/syntaxeditor-layers-custom.png)
 

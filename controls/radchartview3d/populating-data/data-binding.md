@@ -59,7 +59,8 @@ __Step 3: Create a new collection and assing it to the DataContext of the chart_
 <snippet id='radchartview3d-populating-data-data-binding-step_3_create_a_new_collection_and_assing_it_to_the_datacontext_of_the_chart-cs' />
 
 	
-#### __Figure 1: Data bound BarSeris3D__
+>caption Data bound BarSeris3D
+
 ![{{ site.framework_name }} RadChartView3D Data bound BarSeris3D](images/radchartview3d-populating-data-databinding-0.png)
 	
 ## See Also

@@ -20,7 +20,7 @@ This tutorial will walk you through the process of creating unit tests with [Jus
 
 Let's start with details about the project's setup and what we have implemented.
 
-#### Sample UserControl Setup
+## Sample UserControl Setup
 
 __Example 1: Defining RadGridView in XAML__
 ```XAML
@@ -173,7 +173,8 @@ __Example 3: Defining code behind__
 
 If you run the project, you are expected to obtain the following result.
 
-#### Figure 1: Sample WPF Project to Test
+>caption Sample WPF project to test
+
 ![just-mock-tutorial 0](images/just-mock-tutorial-0.png)
 
 The above code includes the **Order** and **Product** classes' implementation and two public methods of the UserControl, **GetData** and **SelectOrdersByProduct**. The main purpose of the **GetData** method is to produce any random Orders data that will be used for RadGridView.**ItemsSource**. It is not important what is the actual implementation of the method itself and how the data is obtained. It can connect to a database, selects a query, fill a DataTable or read a file to populate a list. On the other hand, the **SelectOrdersByProduct** method accepts a string parameter representing a product name and selects all rows in the grid where the Order contains the specific product.
@@ -184,16 +185,19 @@ For the purpose of the unit testing, you don't want to bother about the data and
 
 It is possible either to create a brand new JustMock Test Project or add a reference of Telerik.JustMock.Dll to an existing unit test project: [Add Telerik JustMock to Your Test Project](https://docs.telerik.com/devtools/justmock/getting-started/using-telerik-justmock-in-your-test-project)
 
-#### Figure 2: Add a JustMock Test Project
+>caption Add a JustMock test project
+
 ![just-mock-tutorial 1](images/just-mock-tutorial-1.png)
 ![just-mock-tutorial 2](images/just-mock-tutorial-2.png)
 
-#### Figure 3: Add a reference of Telerik.JustMock.Dll to the existing unit test project
+>caption Add a reference of Telerik.JustMock.Dll to the existing unit test project
+
 ![just-mock-tutorial 3](images/just-mock-tutorial-3.png)
 
 Then, make sure that the profiler is enabled.
 
-#### Figure 4: JustMock Profiler
+>caption JustMock profiler
+
 ![just-mock-tutorial 1](images/just-mock-tutorial-4.png)
 
 [Arrange/Act/Assert](https://docs.telerik.com/devtools/justmock/basic-usage/arrange-act-assert) (AAA) is a pattern for arranging and formatting code in Unit Test methods. We will follow it in this tutorial as well.

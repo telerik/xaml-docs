@@ -13,7 +13,7 @@ position: 14
 
 The Control Panel is a feature of the RadGridView that provides the end user with the option to change different configurations related to RadGridView's settings through additional elements positioned on the top right of the control.
 
-#### __Figure 1: Control Panel within RadGridView__
+>caption Control panel within RadGridView
 
 ![Telerik UI for {{ site.framework_name }} RadGridView control panel displayed in the top-right corner of the grid](images/gridview_controlpanel_01.png)
 

@@ -15,11 +15,11 @@ ticketid: 1674339
 <table>
 <tbody>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>Telerik UI for WPF</td>
 </tr>
 <tr>
-<td>Version</td>
+<th scope="row">Version</th>
 <td>2022.3.1109</td>
 </tr>
 </tbody>

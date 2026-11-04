@@ -129,6 +129,6 @@ __Modifying the ItemsForegroundColor and ItemsBackgroundColor__
     <telerik:RadColorPicker SelectedColor="{Binding Source={x:Static local:UserSettings.UserSettingsInstance}, Path=ItemsBackgroundColor, Mode=TwoWay}"/>
 ```
 
-__RadColorPicker instances modifying the ItemsForegroundColor and ItemsBackgroundColor properties__
+>caption RadColorPicker instances modifying the ItemsForegroundColor and ItemsBackgroundColor properties
 
 ![WPF RadColorPicker instances modifying the ItemsForegroundColor and ItemsBackgroundColor properties](images/kb-common-singleton-pattern-binding-to-properties-1.gif)

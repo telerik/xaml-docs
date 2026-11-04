@@ -24,14 +24,15 @@ The Suggest mode filters the data but does not append text in the input field.
 __Example 1: Setting the AutoCompleteMode to Suggest__
 <snippet id='radmulticolumncombobox-features-autocomplete-block_1-xaml' />
 
-#### __Figure 1: Setting the AutoCompleteMode to Suggest__
+>caption Setting the AutoCompleteMode to suggest
+
 ![Setting the AutoCompleteMode to Sugggest](images/MultiColumnComboBox_AutoComplete_03.png)
 
 ## Append
 
 The Append mode only suggests items without filtering the RadGridView. The first found item would be set as the __CurrentItem__ of the RadGridView. 
 
-#### __Figure 2: Setting the AutoCompleteMode to Append__
+>caption Setting the AutoCompleteMode to append
 
 ![Setting the AutoCompleteMode to Search](images/MultiColumnComboBox_AutoComplete_01.png)
 
@@ -39,14 +40,16 @@ The Append mode only suggests items without filtering the RadGridView. The first
 
 When using the SuggestAppend mode, both filtering and auto-completion is applied. This is the __default value__ of the AutoCompleteMode property.
 
-#### __Figure 3: Setting the AutoCompleteMode to SuggestAppend__
+>caption Setting the AutoCompleteMode to SuggestAppend
+
 ![Setting the AutoCompleteMode to Suggest](images/MultiColumnComboBox_AutoComplete_04.png)
 
 ## Search
 
 The Search mode filters and highlights the data. For a __string__ property the __Contains__ operator will be applied, whereas for any other type the __IsEqualTo__ will be used. This is basically the [search as you type]({%slug radgridview-search-as-you-type%}) mechanism of RadGridView.
 
-#### __Figure 4: Setting the AutoCompleteMode to Search__
+>caption Setting the AutoCompleteMode to search
+
 ![Setting the AutoCompleteMode to Search](images/MultiColumnComboBox_AutoComplete_02.png)
 
 ## See Also

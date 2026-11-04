@@ -22,7 +22,8 @@ __Example 1: Creating an implicit style targetting RadSplitContainer__
 <snippet id='raddocking-styles-and-templates-styling-the-radsplitcontainer-example_1_creating_an_implicit_style_targetting_radsplitcontainer-xaml' />
 
 
-#### __Figure 1: Styled RadSplitContainer in the Office2016 theme__
+>caption Styled RadSplitContainer in the Office2016 theme
+
 ![Styled RadSplitContainer in the Office2016 theme](images/RadDocking_SplitContainer_Style.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

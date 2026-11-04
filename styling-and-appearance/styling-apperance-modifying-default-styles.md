@@ -30,7 +30,7 @@ For the purposes of this article, we will modify RadGridView's **FilteringDropDo
 
 The first option to create the needed style is to right-click on your instance of RadGridView and from the context menu select **Edit Additional Templates -> _Desired Style_ -> Edit a Copy**. You can then proceed to the [Create Style Resource](#create-style-resource) section.
 
-#### __Figure 1: Editing additional templates__
+>caption Editing additional templates
 
 ![Telerik UI for WPF RadGridView additional styles and templates in Visual Studio](images/RadGridView_Styles_and_Templates_Additional_Styles.png)
 
@@ -40,13 +40,13 @@ If you cannot find the desired style from the list of additional styles, you wil
 
 In our case, we can find the FilteringDropDown under **Controls -> All -> FilteringDropDown**.
 
-#### __Figure 2: Selecting the FilteringDropDown from the Assets tab__
+>caption Selecting the FilteringDropDown from the assets tab
 
 ![Telerik UI for WPF FilteringDropDown selected from the Visual Studio Assets tab](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_1.png)
 
 You can then double-click or draw to place a dummy control of the selected type on the scene.
 
-#### __Figure 3: The dummy FilteringDropDown__
+>caption The dummy FilteringDropDown
 
 ![Telerik UI for WPF dummy FilteringDropDown control](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_2.png)
 
@@ -60,13 +60,13 @@ For this example, we will choose to apply this style to all FilteringDropDown co
 
 >tipIf you choose to define the style in the resources of the application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
-#### __Figure 4: The "Create Style Resource" window__
+>caption The "create style resource" window
 
 ![Telerik UI for WPF Create Style Resource window for a FilteringDropDown](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_7.png)
 
 After clicking **OK**, the default style of the control will be created in the selected location. If you prefer, you can modify it directly from XAML by right-clicking in the scene and choosing **View Source** from the context menu. The other options is to modify it in Blend as we will do now.
 
-#### __Figure 5: The FilteringDropDown template structure__
+>caption The FilteringDropDown template structure
 
 ![Telerik UI for WPF FilteringDropDown template structure](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_4.png)
 
@@ -78,13 +78,13 @@ After clicking **OK**, the default style of the control will be created in the s
 
 To change the funneling icon's border, for example, let's select the **Path** control responsible for the border of the FilteringDropDown from the **Objects and Timeline** pane and set its **Fill** to **Red**.
 
-#### __Figure 6: Changing the fill of the path__
+>caption Changing the fill of the path
 
 ![Telerik UI for WPF FilteringDropDown path fill being changed](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_5.png)
 
 Here is a snapshot of the final result:
 
-#### __Figure 7: The modified FilteringDropDown__
+>caption The modified FilteringDropDown
 
 ![Telerik UI for WPF modified FilteringDropDown control](images/RadGridView_Styles_and_Templates_Styling_FilteringControl_6.png)
 
@@ -92,7 +92,7 @@ Here is a snapshot of the final result:
 
 You could also modify the default style of a control by using the **Design view** of **Visual Studio** similarly to using Blend.
 
-#### __Figure 8: Modifying default styles through Visual Studio's Design view__
+>caption Modifying default styles through Visual Studio's design view
 
 ![Telerik UI for WPF modifying default styles through Visual Studio Design view](images/RadGridView_Styles_and_Templates_Visual_Studio_Design_View.png)
 

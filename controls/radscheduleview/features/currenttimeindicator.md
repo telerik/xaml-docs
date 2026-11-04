@@ -30,7 +30,8 @@ __Example 1: Enable CurrentTimeIndicator__
 
 Running the code from __Example 1__ will result in RadScheduleView with current time marked as shown in __Figure 1__.
 
-#### __Figure 1: Enable CurrentTimeIndicator__
+>caption Enable CurrentTimeIndicator
+
 ![{{ site.framework_name }} RadScheduleView Enable CurrentTimeIndicator](images/radscheduleview_currenttimeindicator_0.png)
 
 ## Setting CurrentTimeIndicator Location
@@ -47,7 +48,8 @@ __Example 2: Set CurrentTimeIndicatorLocation__
 
 __Figure 2__ shows current time marked across the whole area of RadScheduleView.
 
-#### __Figure 2: Set CurrentTimeIndicatorLocation__
+>caption Set CurrentTimeIndicatorLocation
+
 ![{{ site.framework_name }} RadScheduleView Set CurrentTimeIndicatorLocation](images/radscheduleview_currenttimeindicator_1.png)
 
 ## Styling CurrentTimeIndicator
@@ -68,7 +70,8 @@ __Example 4: Set CurrentTimeIndicator Style Properties__
 
 If you run the application at this stage, you will see RadScheduleView with CurrentTimeIndicator styled in different colors as shown in __Figure 3__.
 
-#### __Figure 3: Custom CurrentTimeIndicator Styles__
+>caption Custom CurrentTimeIndicator styles
+
 ![{{ site.framework_name }} RadScheduleView Custom CurrentTimeIndicator Styles](images/radscheduleview_currenttimeindicator_2.png)
 
 Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeIndicator in order to allow rendering elements with bigger size. For example, if you need the part in the TimeRuler area to be thicker, you can customize the __CurrentTimeIndicatorStyle__ as shown in __Example 5__. 
@@ -79,7 +82,8 @@ __Example 5: Set AllowCustomSize__
 
 Running the application will lead to the result shown in __Figure 4__.
 
-#### __Figure 4: CurrentTimeIndicator with AllowCustomSize set__
+>caption CurrentTimeIndicator with AllowCustomSize set
+
 ![{{ site.framework_name }} RadScheduleView CurrentTimeIndicator with AllowCustomSize set](images/radscheduleview_currenttimeindicator_3.png)
 
 >tip For more advanced customizations, see the ScheduleView [Custom CurrentTimeIndicator Style](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/CustomCurrentTimeIndicatorStyle) example in our XAML SDK Repository.

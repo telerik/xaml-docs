@@ -22,7 +22,7 @@ __Customizing the default animations for RadSlideView__
 
 >important For the animations to be applied correctly, do not remove the `AnimationName` and `TargetElementName` properties of the above elements.
 
-__RadSlideView with modified animations__
+>caption RadSlideView with modified animations
 
 ![{{ site.framework_name }} RadSlideView with modified animations](images/radslideview-animations-0.gif)
 

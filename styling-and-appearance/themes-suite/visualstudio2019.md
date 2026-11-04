@@ -213,7 +213,7 @@ The default values of the brushes in the theme are listed below.
 |SemiBasicColor|#C0CAE9|<div class="theme-palette-color visualstudio2019theme-semibasicbrush"></div>|#656565|<div class="theme-palette-color visualstudio2019theme-semibasicbrush-dark"></div>|
 |ValidationColor|#FF3333|<div class="theme-palette-color visualstudio2019theme-validationbrush"></div>|#E51400|<div class="theme-palette-color visualstudio2019theme-validationbrush-dark"></div>|
 
-__Theme colors represented in RadOutlookBar__
+>caption Theme colors represented in RadOutlookBar
 
 ![Telerik UI for WPF Visual Studio 2019 theme colors represented in RadOutlookBar](images/visualstudio2019-theme-outlook.PNG)
 
@@ -279,7 +279,7 @@ __Changing the color variation of the theme__
 	VisualStudio2019Palette.LoadPreset(VisualStudio2019Palette.ColorVariation.Dark); 
 ```
 
-__VisualStudio2019 theme color variations__
+>caption VisualStudio2019 theme color variations
 
 ![Telerik UI for WPF Visual Studio 2019 theme colors represented in RadTaskBoard](images/VisualStudio2019-theme-variations.PNG)
 
@@ -317,7 +317,7 @@ __Changing the theme's FontSize and FontFamily__
 	}
 ```
 
-__Setting FontSize and FontFamily__
+>caption Setting FontSize and FontFamily
 
 ![Telerik UI for WPF RadCalendar with modified font size and font family in the Visual Studio 2019 theme](images/visualstudio2019-theme-calendar-font-change.png)
 
@@ -343,7 +343,8 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 							 helpers:ThemeHelper.CheckedBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMainBrush}"/>
 ```
 
-__Appearance of the RadToggleButton in the different states__
+>caption Appearance of the RadToggleButton in the different states
+
 ![Telerik UI for WPF RadToggleButton states in the Visual Studio 2019 theme](images/visualstudio2019-theme-togglebutton-states.png)
 
 ## Changing Opacity 

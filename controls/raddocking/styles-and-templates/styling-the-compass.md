@@ -22,7 +22,8 @@ __Example 1: Setting the CompassStyle property__
 <snippet id='raddocking-styles-and-templates-styling-the-compass-example_1_setting_the_compassstyle_property-xaml' />
 
 
-#### __Figure 1: Compass without left and right indicator in the Office2016 theme__
+>caption Compass without left and right indicator in the Office2016 theme
+
 ![Compass without left and right indicator](images/RadDocking_Compass_CompassStyle.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

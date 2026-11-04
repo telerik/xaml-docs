@@ -34,7 +34,8 @@ __Example 3: Setting the attached property in XAML__
 <snippet id='raddiagram-howto-custom-connectors-example_3_setting_the_attached_property_in_xaml-cs' />
 
 
-#### __Figure 1: Custom connectors in RadDiagramShape__
+>caption Custom connectors in RadDiagramShape
+
 ![Custom Connectos](images/raddiagram-howto-custom-connectors.PNG)
 
 ## See Also

@@ -212,7 +212,8 @@ __Apply the ItemContainerStyle__
 
 The following image shows the final result.
 
-__RadContextMenu Populated with Data__
+>caption RadContextMenu populated with data
+
 ![WPF RadContextMenu populated with data](images/RadContextMenu_Populating_with_Data_Dynamic_Items_02.png)
 
 ## Adding Items Manually

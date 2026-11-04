@@ -36,7 +36,8 @@ If you are not using NuGet packages, you can add a reference to the following as
 __Example 1: RadCalendar definition__
 <snippet id='radcalendar-getting-started-example_1_radcalendar_definition-xaml' />
 
-#### __Figure 1: Result from Example 1 in the Office2016 Theme__
+>caption Result from example 1 in the Office2016 theme
+
 ![RadCalendar Getting Started](images/RadCalendar_GettingStarted.png)
 
 ## Changing the number of shown months
@@ -46,7 +47,8 @@ You can control how many months are shown by setting the **Columns** property of
 __Example 2: RadCalendar showing four months__
 <snippet id='radcalendar-getting-started-example_2_radcalendar_showing_four_months-xaml' />
 
-#### __Figure 2: Result from Example 2 in the Office2016 Theme__
+>caption Result from example 2 in the Office2016 theme
+
 ![RadCalendar with four months](images/RadCalendar_Columns.png)
 
 ## Hide Week Numbers and Weekdays
@@ -56,7 +58,8 @@ You have the option to hide the week numbers, as well as the weekdays. This can 
 __Example 3: RadCalendar without week numbers and weekdays__
 <snippet id='radcalendar-getting-started-example_3_radcalendar_without_week_numbers_and_weekdays-xaml' />
 
-#### __Figure 3: Result from Example 3 in the Office2016 Theme__
+>caption Result from example 3 in the Office2016 theme
+
 ![RadCalendar without week numbers and weekdays](images/RadCalendar_HideWeekNumbersAndDays.png)
 
 ## Setting a Theme
@@ -83,7 +86,8 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 4__ shows a __RadCalendar__ with the **Fluent** theme applied.
 	
-#### __Figure 4: RadCalendar with the Fluent theme__
+>caption RadCalendar with the fluent theme
+
 ![RadCalendar with Fluent theme](images/radcalendar-setting-theme.png)
 
 

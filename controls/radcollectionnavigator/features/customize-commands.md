@@ -79,7 +79,7 @@ __Example 5: Assigning the CommandProvider__
 
 Modifying the methods will result in the action shown in the image below when trying to move to the next item:
 
-#### __Figure 1: RadCollectionNavigator with customized MoveCurrentToNext command__
+>caption RadCollectionNavigator with customized MoveCurrentToNext command
 
 ![RadCollectionNavigator with customized MoveCurrentToNext command](../images/collectionnavigator_03.png)
 

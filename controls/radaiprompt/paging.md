@@ -20,6 +20,6 @@ The `RadAIPrompt` supports paging on the output items from the output view. To e
 __Enabling the paging functionality__
 <snippet id='radaiprompt-paging-enabling_the_paging_functionality-xaml' />
 
-__RadAIPrompt with paged data in the output view__
+>caption RadAIPrompt with paged data in the output view
 
 ![WPF RadAIPrompt with paged data in the output view](images/radaiprompt-paging-0.png)

@@ -13,7 +13,8 @@ position: 1
 
 This section defines the terms and concepts used in the scope of __RadContextMenu__ which you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see a snapshot and explanation of the visual elements of the standard __RadContextMenu__ control.
 
-__RadContextMenu Visual Structure__
+>caption RadContextMenu Visual structure
+
 ![WPF RadContextMenu visual structure](images/RadContextMenu_Visual_Structure_02.PNG)
 
 * __Context Menu__- the container that hosts the menu items.

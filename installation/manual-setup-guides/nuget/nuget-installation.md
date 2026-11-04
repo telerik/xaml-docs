@@ -39,13 +39,13 @@ The easiest way to setup the Telerik package source is to use the [Telerik CLI](
 
 1. If you don't have Telerik CLI installed, run the `dotnet tool install` command.
 
-	```
+	```bash
 	dotnet tool install -g Telerik.CLI
 	```
 
 1. Run the `nuget config` command.
 
-	```
+	```bash
 	telerik nuget config
 	```
 	

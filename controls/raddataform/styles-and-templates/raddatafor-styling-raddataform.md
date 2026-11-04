@@ -21,7 +21,8 @@ __Example 1: Creating an implicit style targeting RadDataForm__
 <snippet id='raddataform-styles-and-templates-raddatafor-styling-raddataform-example_1_creating_an_implicit_style_targeting_raddataform-xaml' />
 
 
-#### __Figure 1: RadDataForm with custom style in the Office2016 theme__
+>caption RadDataForm with custom style in the Office2016 theme
+
 ![RadDataForm with custom style in the Office2016 theme](images/RadDataForm_Style.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

@@ -59,7 +59,7 @@ Before proceeding further with this tutorial, you need to create a new applicati
 
 
 
-__The end result with the data fetched from the service__  
+>caption The end result with the data fetched from the service
 
 ![{{ site.framework_name }} RadComboBox Bound to Data from WCF Service](images/RadComboBox_PopulatingWithData_BindingToWcfService_010.png)
 
@@ -119,7 +119,7 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 	<snippet id='radcombobox-populating-with-data-binding-to-wcf-the_end_result_with_the_data_fetched_from_the_service-xaml' />
 
 
-__The end result produced by the code above__  
+>caption The end result produced by the code above
 
 ![{{ site.framework_name }} RadComboBox Bound to Data from WCF Service](images/RadComboBox_PopulatingWithData_BindingToWcfService_020.png)
 

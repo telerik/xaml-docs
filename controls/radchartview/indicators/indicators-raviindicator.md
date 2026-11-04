@@ -19,7 +19,8 @@ __Example 1: RaviIndicator__
 <snippet id='radchartview-indicators-indicators-raviindicator-example_1_raviindicator-xaml' />
 
 
-#### Figure 1: RaviIndicator
+>caption RaviIndicator
+
 <img src="images/radchartview-indicators-raviindicator-0.png" style="width: 80%;">
 
 > __Figure 1__ shows 2 instances of RadCartesianChart. The top one shows only the candlestick series that displays the original data. The chart on the bottom shows the indicator.

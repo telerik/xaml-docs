@@ -140,7 +140,8 @@ __Example 8: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a __RadDataFilter__ with the **Windows8** theme applied.
 	
-#### __Figure 2: RadDataFilter with the Windows8 theme__
+>caption RadDataFilter with the Windows8 theme
+
 ![RadDataFilter with Windows8 theme](images/raddatafilter-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

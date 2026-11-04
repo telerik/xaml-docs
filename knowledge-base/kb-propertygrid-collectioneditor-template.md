@@ -168,7 +168,8 @@ __Example 1: Modifying the CollectionEditor ControlTemplate in the Fluent theme_
     </Application.Resources>
 ``` 
 
-#### __Figure 1: CollectionEditor with modified ControlTemplate in the Fluent theme__
+>caption CollectionEditor with modified ControlTemplate in the fluent theme
+
 ![CollectionEditor with modified ControlTemplate in the Fluent theme](images/kb-propertygrid-collectioneditor-template.png)
 
 >If you are using a different theme, make sure to extract and edit the ControlTemplate for the corresponding theme. 

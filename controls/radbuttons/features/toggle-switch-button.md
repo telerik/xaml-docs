@@ -15,7 +15,7 @@ __RadToggleSwitchButton__ is a control designed to display two exclusive choices
 
 >tip You can see how to use ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
-__Toggle Switch Button__  
+>caption Toggle switch button
 
 ![{{ site.framework_name }} RadButtons Toggle Switch Button](images/radbuttons-features-toggle-switch-button-0.png)
 
@@ -39,7 +39,7 @@ The RadToggleSwitchButton allows you to control the position of its CheckedConte
 * __Right (default)__
 * __Left__ 
 
-__ContentPosition property__  
+>caption ContentPosition property
 
 ![{{ site.framework_name }} RadButtons ContentPosition property](images/radbuttons-features-toggle-switch-button-1.png)
  
@@ -64,7 +64,7 @@ To customize the size of the ToggleSwitchButton's track use its `TrackWidth` and
 __Setting track size properties__
 <snippet id='radbuttons-features-toggle-switch-button-setting_track_size_properties-xaml' />
 
-__Change Track Height/Width__  
+>caption Change track height/width
 
 ![{{ site.framework_name }} RadButtons Change Track Height/Width](images/radbuttons-features-toggle-switch-button-2.png)
 
@@ -75,7 +75,7 @@ To customize the size of the ToggleSwitchButton's thumb use its `ThumbWidth` and
 __Setting thumb size properties__
 <snippet id='radbuttons-features-toggle-switch-button-setting_thumb_size_properties-xaml' />
 
-__Change Thumb Height/Width__  
+>caption Change thumb height/width
 
 ![{{ site.framework_name }} RadButtons Change Thumb Height/Width](images/radbuttons-features-toggle-switch-button-3.png)
 
@@ -86,7 +86,7 @@ To set the corner radius of the track, set the `CheckedTrackRadius` and `Uncheck
 __Setting track corner radius properties__
 <snippet id='radbuttons-features-toggle-switch-button-setting_track_corner_radius_properties-xaml' />
 
-__Tracks with radiuses of 5 and 10 pixels__  
+>caption Tracks with radiuses of 5 and 10 pixels
 
 ![{{ site.framework_name }} RadButtons track corner radius settings](images/radbuttons-features-toggle-switch-button-4.png)
 

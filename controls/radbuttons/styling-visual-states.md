@@ -40,13 +40,15 @@ In the next snippets the ControlTemplate of each Style will be modified in such 
 __Example 1: Customized RadButton Style - based on the Office_Black Theme__
 <snippet id='radbuttons-styling-visual-states-example_1_customized_radbutton_style_based_on_the_office_black_theme-xaml' />
 
-#### Figure 1: Office_Black RadButton with customized visual states
+>caption Office_black RadButton with customized visual states
+
 ![radbuttons-styles-and-templates-styling-visual-states-0.png](images/radbuttons-styles-and-templates-styling-visual-states-0.png)
 
 __Example 2: Customized RadButton Style - based on the Office2016 Theme__
 <snippet id='radbuttons-styling-visual-states-example_2_customized_radbutton_style_based_on_the_office2016_theme-xaml' />
 
-#### Figure 2: Office2016 RadButton with customized visual states
+>caption Office2016 RadButton with customized visual states
+
 ![radbuttons-styles-and-templates-styling-visual-states-1.png](images/radbuttons-styles-and-templates-styling-visual-states-1.png)
 
 >important The general idea for customizing the colors of the control in its different states, is to find the right VisualState{% if site.site_name == 'WPF' %}, a Trigger{% endif %} or visual element (for example, Border) and set the correct property - Background, Fill, Opacity, etc. The exact modification depends on the desired effect.

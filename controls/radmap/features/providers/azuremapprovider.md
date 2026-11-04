@@ -22,7 +22,7 @@ To use this provider, create a new AzureMapProvider instance and add it to the `
 __Adding the AzureMapProvider to the RadMap control__
 <snippet id='radmap-features-providers-azuremapprovider-block_1-xaml' />
 
-__RadMap with AzureMapProvider__
+>caption RadMap with AzureMapProvider
 
 ![{{ site.framework_name }} RadMap with AzureMapProvider](images/radmap-features-providers-azuremapprovider-0.png)
 
@@ -41,7 +41,7 @@ The Azure Maps services provide a set of different map layers ([tilesets](https:
 __Specifying the tileset__
 <snippet id='radmap-features-providers-azuremapprovider-block_2-xaml' />
 
-__AzureMapProvider with specified tileset__
+>caption AzureMapProvider with specified tileset
 
 ![{{ site.framework_name }} AzureMapProvider with specified tileset](images/radmap-features-providers-azuremapprovider-1.png)
 
@@ -50,7 +50,7 @@ By default RadMap's navigation UI doesn't display any modes for the AzureMapProv
 __Setting the tileset modes__
 <snippet id='radmap-features-providers-azuremapprovider-block_3-xaml' />
 
-__AzureMapProvider with specified AzureTileSet instances for the UserAccessibleModes property__
+>caption AzureMapProvider with specified AzureTileSet instances for the UserAccessibleModes property
 
 ![{{ site.framework_name }} AzureMapProvider with specified AzureTileSet instances for the UserAccessibleModes property](images/radmap-features-providers-azuremapprovider-2.png)
 
@@ -73,7 +73,7 @@ The event arguments of the NoStyleVectorTileRendering event are of the type `NoS
 __Manually customizing the appearance the vector tiles__
 <snippet id='radmap-features-providers-azuremapprovider-block_4-cs' />
 
-__Manually customizing the appearance the vector tiles__
+>caption Manually customizing the appearance the vector tiles
 
 ![{{ site.framework_name }} Manually customizing the appearance the vector tiles](images/radmap-features-providers-azuremapprovider-3.png)
 
@@ -88,7 +88,7 @@ The Azure Maps services provide a culture parameter in its URL address and the A
 __Setting the Langauge property of the AzureMapProvider__
 <snippet id='radmap-features-providers-azuremapprovider-block_5-xaml' />
 
-__AzureMapProvider with localized tile sets__
+>caption AzureMapProvider with localized tile sets
 
 ![AzureMapProvider with localized tile sets](images/radmap-features-providers-azuremapprovider-4.png)
 

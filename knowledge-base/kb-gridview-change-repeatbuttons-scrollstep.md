@@ -16,11 +16,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2020.2.617</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadGridView for WPF</td>
 		</tr>
 	</tbody>
@@ -30,7 +30,8 @@ res_type: kb
 
 How to change the default scroll step applied when you click on an empty space on the ScrollBar's track area (the RepeatButtons).
 
-#### Figure 1: ScrollBar empty track area
+>caption ScrollBar empty track area
+
 ![{{ site.framework_name }} ScrollBar empty track area](images/kb-gridview-change-repeatbuttons-scrollstep-0.png)
 
 ## Solution

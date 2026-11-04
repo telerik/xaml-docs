@@ -89,7 +89,8 @@ __Example 6: Applying SlideAndZoomTransition to RadTransitionControl__
 
 <snippet id='radtransitioncontrol-radtransition-getting-started-block_6-xaml' />
 
-#### __Figure 1: Result from Example 6__
+>caption Result from example 6
+
 ![SlideAndZoomTransition in RadTransitionControl](images/RadTransition_Getting_Started_01.png)
 
 {% if site.site_name == 'WPF' %}

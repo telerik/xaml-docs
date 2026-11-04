@@ -15,7 +15,8 @@ RadImageEditor provides out of the box zooming functionality.
 
 You can zoom in the opened image by holding **Ctrl** and spinning the **mouse wheel** or by using the slider and dropdown of the **ZoomController** provided by the [RadImageEditorUI]({%slug radimageeditor-features-radimageeditorui%}).
 
-#### Figure 1: Default zoom capabilities 
+>caption Default zoom capabilities
+
 ![Default zoom capabilities](images/default-zoom.gif)
 
 ## Disabling the MouseWheel Zooming
@@ -32,7 +33,8 @@ As can be seen in **Figure 1**, the default zooming mechanism does not take into
 
 As of version **2018.2.716**, both RadImageEditor and RadImageEditorUI controls expose a **ZoomToCursor** property. By setting this property to **True**, holding **Ctrl** and spinning the **mouse wheel** will zoom towards the position of the mouse cursor. The result can be observed in **Figure 2**.
 
-#### Figure 2: Zooming to the mouse cursor  
+>caption Zooming to the mouse cursor
+
 ![Zooming to the mouse cursor](images/zoom-to-cursor.gif)
 
 ## Zooming Programmatically
@@ -69,7 +71,8 @@ __Example 5: Using ZoomController__
 <snippet id='radimageeditor-features-zooming-example_5_using_zoomcontroller-xaml' />
 
 
-#### Figure 3: ZoomController
+>caption ZoomController
+
 ![{{ site.framework_name }} RadImageEditor ZoomController](images/radimageeditor-features-zooming-0.png)
 
 ## See Also  

@@ -21,7 +21,7 @@ __Defining ErrorBarSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-errorbarseries-defining_errorbarseries_in_xaml-xaml' />
 
 
-__ErrorBarSeries example__  
+>caption ErrorBarSeries example
 
 ![Telerik UI for WPF RadChartView ErrorBarSeries visual appearance](images/radchartview-series-errorbarseries-0.png)
 
@@ -35,7 +35,7 @@ __Showing ErrorBarSeries markers__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-errorbarseries-showing_errorbarseries_markers-xaml' />
 
 
-__ErrorBar markers__  
+>caption ErrorBar markers
 
 ![Telerik UI for WPF RadChartView ErrorBarSeries with value markers](images/radchartview-series-errorbarseries-1.png)
 
@@ -62,7 +62,7 @@ __Defining ErrorBarSeries in data binding scenario__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-errorbarseries-defining_errorbarseries_in_data_binding_scenario-xaml' />
 
 
-__ErrorBarSeries data binding example__  
+>caption ErrorBarSeries data binding example
 
 ![Telerik UI for WPF RadChartView ErrorBarSeries with Data-Bound Error Values](images/radchartview-series-errorbarseries-2.png)
 

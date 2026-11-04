@@ -16,11 +16,11 @@ category: knowledge-base
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2021.1.325</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>Diagram for WPF</td>
 		</tr>
 	</tbody>
@@ -313,6 +313,6 @@ The result is a custom connection element, which can be used both in Xaml and in
     diagram.Items.Add(connection)
 ```
 
-#### __Figure 1: Result__
+>caption Result
 
 ![Custom ConnectionLine](images/kb-diagram-custom-connection-0.png)

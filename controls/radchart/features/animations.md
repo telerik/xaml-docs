@@ -12,7 +12,7 @@ position: 10
 
 
 
-## 
+## Configuring Chart Animations
 
 When displayed, each chart is nicely animated using default animation settings. __AnimationSettings__ allows you to control how the animation is applied to each series and/or series item:
 
@@ -193,7 +193,8 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	radChart.DefaultView.ChartArea.DataSeries.Add(barSeries)
 ```
     
-__The image below is a snapshot taken in the middle of the animation.__
+>caption The image below is a snapshot taken in the middle of the animation.
+
 ![{{ site.framework_name }} RadChart Animation Snapshot](images/RadChart_Features_Animations_01.png)
 
 __AnimationSettings__ are a simple and easy way to control your animations. However, if you need further customizations, you should consider using templates.
@@ -234,7 +235,7 @@ To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __Ch
 
 
 
-## See Also[](796308DB-6789-4F88-8C96-7D29A8F49E8B)
+## See Also
 
  * [Striplines and Gridlines]({%slug radchart-features-axes-striplines-and-gridlines%})
 

@@ -98,7 +98,8 @@ __Example 6: Merge the ResourceDictionaries__
 
 __Figure 4__ shows a __RadColorEditor__ with the **Windows8** theme applied.
 	
-#### __Figure 4: RadCalculator with the Windows8 theme__
+>caption RadCalculator with the Windows8 theme
+
 ![RadCalculator with Windows8 theme](images/radcoloreditor-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

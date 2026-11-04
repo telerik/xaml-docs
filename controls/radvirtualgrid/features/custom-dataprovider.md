@@ -23,7 +23,7 @@ __Example 2: Applying the Custom DataProvider__
 <snippet id='radvirtualgrid-features-custom-dataprovider-block_3-cs' />
 <snippet id='radvirtualgrid-features-custom-dataprovider-block_4-vb' />
 
-#### __Figure 1: RadVirtualGrid with applied custom DataProvider__
+>caption RadVirtualGrid with applied custom DataProvider
 
 ![RadVirtualGrid with applied custom DataProvider](images/RadVirtualGrid_Features_CustomDataProvider_01.png)
 

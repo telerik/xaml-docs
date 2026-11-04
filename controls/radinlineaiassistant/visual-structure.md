@@ -15,7 +15,7 @@ This section defines terms and concepts used in the scope of the `RadInlineAIAss
 
 `RadInlineAIAssistant` is hosted in its own popup and is made up of an input area and, once a response has been requested, a response area shown above it.
 
-__RadInlineAIAssistant Visual Structure__
+>caption RadInlineAIAssistant Visual structure
 
 ![WPF RadInlineAIAssistant Visual Structure](images/radinlineaiassistant-visual-structure-001.png)
 

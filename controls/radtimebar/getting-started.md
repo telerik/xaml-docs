@@ -41,7 +41,8 @@ __Example 2: Adding RadTimeBar in code__
 <snippet id='radtimebar-getting-started-block_2-cs' />
 <snippet id='radtimebar-getting-started-block_3-vb' />
 
-#### __Figure 1: RadTimeBar__
+>caption RadTimeBar
+
 ![{{ site.framework_name }} RadTimeBar RadTimeBar](images/radtimebar-getting-started-0.png)
 
 ## Setting the Visible Period
@@ -55,7 +56,8 @@ __Example 4: Setting the visible period in code__
 <snippet id='radtimebar-getting-started-block_5-cs' />
 <snippet id='radtimebar-getting-started-block_6-vb' />
 
-#### __Figure 2: RadTimeBar with visible period set__
+>caption RadTimeBar with visible period set
+
 ![{{ site.framework_name }} RadTimeBar RadTimeBar with visible period set](images/radtimebar-getting-started-1.png)
 
 ## Selecting an Interval
@@ -69,7 +71,8 @@ __Example 6: Setting the selection in code__
 <snippet id='radtimebar-getting-started-block_8-cs' />
 <snippet id='radtimebar-getting-started-block_9-vb' />
 
-#### __Figure 3: RadTimeBar with selection defined__
+>caption RadTimeBar with selection defined
+
 ![{{ site.framework_name }} RadTimeBar RadTimeBar with selection defined](images/radtimebar-getting-started-2.png)
 
 ## Hosting Another Control
@@ -89,10 +92,11 @@ __Example 9: Setting up the ItemsSource of the sparkline control__
 <snippet id='radtimebar-getting-started-block_13-cs' />
 <snippet id='radtimebar-getting-started-block_14-vb' />
 
-#### __Figure 4: RadTimeBar and RadSparkline__
+>caption RadTimeBar and RadSparkline
+
 ![{{ site.framework_name }} RadTimeBar RadTimeBar and RadSparkline](images/radtimebar-getting-started-3.png)
 
-#### DataBinding the RadSparkLine
+### DataBinding the RadSparkLine
 
 In order to learn how you can bind the ItemsSource of a RadSparkLine component in general, you can read the [DataBinding]({%slug radsparkline_databinding%}) article in the RadSparkLine section.
 
@@ -122,7 +126,8 @@ __Example 10: Merge the ResourceDictionaries__
 
 __Figure 5__ shows a RadTimeBar with the **Windows8** theme applied.
 
-#### __Figure 5: RadTimeBar with the Windows8 theme__
+>caption RadTimeBar with the Windows8 theme
+
 ![RadTimeBar with Windows8 theme](images/RadTimeBar-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

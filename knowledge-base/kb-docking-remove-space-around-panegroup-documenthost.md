@@ -15,11 +15,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2020.3.1020</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadDocking for WPF</td>
 		</tr>
 	</tbody>
@@ -73,7 +73,7 @@ For the Fluent, Green, Material, Office2016 and Office2016Touch themes, the `Rad
 	</Style>
 ```
 
-#### Figure 1: DocumentHost with and without the default padding in the Crystal theme
+>caption DocumentHost with and without the default padding in the crystal theme
 
 ![DocumentHost with and without the default padding in the Crystal theme](images/kb-docking-remove-space-around-panegroup-documenthost.png)
 

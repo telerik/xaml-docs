@@ -21,7 +21,7 @@ __RadSpreadsheet__ exposes a __VisibleSize__ property of type __SizeI__ that det
 
 As a result, __RadSpreadsheet__ displays to the user only 50 columns and 100 rows:
 
-__Restricted Number of Visible Rows and Columns__
+>caption Restricted number of visible rows and columns
 
 ![Rad Spreadsheet UI Restrict Number Visible Rows Columns 1](images/RadSpreadsheet_UI_Restrict_Number_Visible_Rows_Columns1.png)
 

@@ -22,7 +22,8 @@ __Defining a TextMessage__
 <snippet id='radchat-features-messages-textmessage-example_1_defining_a_textmessage-cs' />
 
 
-__Defining TextMessage__
+>caption Defining TextMessage
+
 ![TextMessage with Status set](images/RadChat_Messages_Text_01.png)
 
 ## See Also

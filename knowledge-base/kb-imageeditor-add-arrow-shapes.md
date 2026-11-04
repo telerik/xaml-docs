@@ -15,13 +15,13 @@ ticketid: 1674511
 <table>
 <tbody>
 <tr>
-<td> Product </td>
+<th scope="row"> Product </th>
 <td>
 UI for WPF ImageEditor
 </td>
 </tr>
 <tr>
-<td> Version </td>
+<th scope="row"> Version </th>
 <td> 2023.1.315 </td>
 </tr>
 </tbody>

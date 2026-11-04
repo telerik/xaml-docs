@@ -37,7 +37,8 @@ __Example 3: Registering the custom tagger__
 
 Upon loading a JSON object in the editor you will observe a result similar to the one illustrated in **Figure 1**.
 
-#### Figure 1: The custom JSON tagger
+>caption The custom JSON tagger
+
 ![The custom JSON tagger](images/syntaxeditor-taggers-custom-regex-language.png)
 
 ## See Also

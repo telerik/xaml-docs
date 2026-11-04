@@ -55,7 +55,8 @@ The __XValuePath__ and __YValuePath__ properties should be set to the names of t
 __Example 3: Populate and set the ItemsSource__
 <snippet id='radsparkline-getting-started-sparkline-getting-started-block_3-cs' />
 
-#### Figure 1: RadLinearSparkline
+>caption RadLinearSparkline
+
 ![{{ site.framework_name }} RadSparkLine RadLinearSparkline](images/radsparkline-getting-started-0.png)
 
 ## Showing Axis
@@ -64,7 +65,8 @@ You can show the axis of the sparkline control by setting its __ShowAxis__ prope
 
 > By default the axis will be shown on value 0. This means that if the axis' range doesn't contain the 0 value, the axis won't be displayed. In this case you can set the __AxisOriginValue__ property of the sparkline control manually.
 
-#### Figure 2: Sparkline axis
+>caption Sparkline axis
+
 ![{{ site.framework_name }} RadSparkLine Sparkline axis](images/radsparkline-getting-started-1.png)
 
 ## Setting a Theme
@@ -91,7 +93,8 @@ __Example 3: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a RadSparkLine with the **Windows8** theme applied.
 
-#### __Figure 1: RadSparkLine with the Windows8 theme__
+>caption RadSparkLine with the Windows8 theme
+
 ![RadSparkLine with Windows8 theme](images/radsparkline-setting-theme.png)
 
 

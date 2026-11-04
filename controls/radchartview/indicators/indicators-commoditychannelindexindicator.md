@@ -19,7 +19,8 @@ __Example 1: Defining CommodityChannelIndexIndicator__
 <snippet id='radchartview-indicators-indicators-commoditychannelindexindicator-example_1_defining_commoditychannelindexindicator-xaml' />
 
 
-#### Figure 1: CommodityChannelIndexIndicator
+>caption CommodityChannelIndexIndicator
+
 <img src="images/radchartview-indicators-commoditychannelindexindicator-0.png" style="width: 80%;">
 
 > __Figure 1__ shows 2 instances of RadCartesianChart. The top one shows only the candlestick series that displays the original data. The chart on the bottom shows the indicator.

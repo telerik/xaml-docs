@@ -35,7 +35,8 @@ RowSecondAlternationPattern	|	Accepts object of type __AlternationElementPropert
 
 On __Figure 1__ you can see the parts of __RadPivotGrid__ that can be separately styled using __QuickStyle__.
 
-Figure 1: QuickStyle styling options
+>caption QuickStyle styling options
+
 ![Rad Pivot Grid Styles And Templates-Quick Styles 01](images/RadPivotGrid_Styles_And_Templates_QuickStyles_01.png)
 
 >Note that each of the __QuickStyle__ properties has a specific priority. When same cell is styled through a few properties, the style with higher priority will be placed on the top and will be the visible one.          

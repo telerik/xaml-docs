@@ -74,7 +74,7 @@ __Example 7: The MyConverter class__
 
 * Run your demo and try to edit a cell from the new custom column. The result should be similar to the snapshot in __Figure 1__.
 
-#### __Figure 1: Snapshot of the created CustomColumn__
+>caption Snapshot of the created CustomColumn
 
 ![Telerik UI for {{ site.framework_name }} RadGridView custom column editor with a TextBox and RadComboBox for editing captain data](images/gridview-howto-create-custom-column-editor.png)
 

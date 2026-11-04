@@ -10,6 +10,16 @@ You are an expert in both technical documentation and large language model (LLM)
 
 Score each dimension from **1 (poor) to 5 (excellent)**, provide a rationale (≤ 2 sentences), and list specific violations (empty array if none). Compute a weighted overall score at the end.
 
+## Mandatory Article Checks
+
+Read and apply [style-structure](../telerik-documentation-style-guide/style-structure/SKILL.md), including its compliant/non-compliant examples and automated-fix acceptance criteria. Article-type H1 and image-introduction rules take precedence over generic chunking advice.
+
+- [ ] Standard articles have exactly one `# Heading`; flag missing or multiple H1s. Recommend one appropriate title if missing and hierarchy-aware demotion of extras.
+- [ ] KB articles (`knowledge-base/` or KB metadata) have zero H1s. Never add one; flag any H1 and recommend removing a duplicate title or demoting a genuine section. A KB may start at H2.
+- [ ] Every image has a meaningful sentence or exact `>caption Description` block immediately before it, with only optional blank lines between. Flag missing, heading-only, bold-only, and heading-plus-caption-only introductions; alt text alone is insufficient.
+
+Reviews report source locations and corrections, without editing. When authoring or applying authorized fixes, preserve sufficient introductions, replace image-only headings or bold labels with prose or `>caption`, preserve hierarchy and genuine section anchors, and rerun all checks. Never generate a KB H1 to improve retrieval. Put H1 findings in `semantic_structure` and image-introduction findings in `formatting_signal_clarity`; do not award 5 in an affected dimension with unresolved mandatory findings. Preserve the output schema and weights and disclose blocked fixes.
+
 ---
 
 ## Why LLM Readability Matters
@@ -32,14 +42,15 @@ The rules below are designed to prevent those failure modes.
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
+| Article-type H1 count | Exactly one Markdown H1 in standard articles; zero H1s in KB articles | No standard H1, multiple standard H1s, or any KB H1 |
 | Single-topic sections | Each `##`/`###` section covers exactly one concept | Section mixes installation steps with conceptual background |
 | Heading labels are descriptive | Headings convey the section content, not just a label | `## More Info`, `## Details`, `## Notes` |
 | No orphaned content | Every paragraph belongs under a heading | Content before the first `##` heading (other than the intro) |
 | Consistent heading depth | Heading levels signal hierarchy, not visual emphasis | `####` used to create a sub-bullet effect under `##` |
-| No skipped heading levels | Levels are sequential (`##` → `###`, never `##` → `####`) | H2 directly followed by H4 |
+| No skipped heading levels | Levels are sequential (`##` → `###`, never `##` → `####`); KB may start at H2 | H2 directly followed by H4 |
 
 **Scoring guide:**
-- 5: All sections are single-topic, headings are descriptive, hierarchy is logical.
+- 5: Article-type H1 count is correct, all sections are single-topic, headings are descriptive, hierarchy is logical.
 - 3: Minor issues — one or two vague headings or mixed-topic sections.
 - 1: Flat structure or majority of sections violate one or more checks.
 
@@ -165,9 +176,13 @@ The rules below are designed to prevent those failure modes.
 | Inline code marks exact identifiers | `` `…` `` used for code, file names, and system values — not regular words | `` `simply` `` or `` `important` `` styled as code for visual effect |
 | Callouts use a consistent pattern | Notes, warnings, tips use a consistent block format (`> **Note:**`) | Mixing `> Note:`, `**Note:**`, `NOTE:`, and plain paragraphs |
 | No all-caps for emphasis | Capitalized words used only for acronyms or proper names | `Do NOT run this command` — `NOT` in all-caps for stress |
+| Immediate image introductions | Every image has a meaningful sentence or exact `>caption` block directly before it | Missing introduction, text only after the image, or unrelated intervening content |
+| No heading or bold-only image labels | Image-only labels use prose or `>caption`, not headings or bold | `### Dialog`, `**Dialog**`, or heading plus caption solely for the image |
+
+`>caption Description` is valid image-caption syntax, not an inconsistent callout; never normalize it to a note or a bold label. Bold UI names inside a meaningful introductory sentence remain valid.
 
 **Scoring guide:**
-- 5: Formatting is semantically consistent; a model can reliably infer meaning from marks.
+- 5: Formatting is semantically consistent and every image has an approved immediate introduction; a model can reliably infer meaning from marks.
 - 3: Occasional bold-for-emphasis or mixed callout styles.
 - 1: Formatting is used decoratively; semantic meaning cannot be inferred reliably.
 

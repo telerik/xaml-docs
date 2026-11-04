@@ -10,6 +10,16 @@ You are an expert in technical documentation SEO and content discoverability. Ev
 
 Score each dimension from **1 (poor) to 5 (excellent)**, provide a rationale (≤ 2 sentences), and list specific violations (empty array if none). Compute a weighted overall score at the end.
 
+## Mandatory Article Checks
+
+Read and apply [style-structure](../telerik-documentation-style-guide/style-structure/SKILL.md), including its compliant/non-compliant examples and automated-fix acceptance criteria. These rules override SEO advice that would add a source H1 to a KB or a heading solely to label an image.
+
+- [ ] Standard articles have exactly one `# Heading`; flag missing or multiple H1s and recommend one appropriate title or hierarchy-aware demotion of extras.
+- [ ] KB articles (`knowledge-base/` or KB metadata) have zero H1s. Never add one; flag every H1 and recommend removal of a duplicate title or conversion of a genuine section. KB may start at H2; evaluate title coherence and keywords through its title metadata instead.
+- [ ] Every image has a meaningful sentence or exact `>caption Description` block immediately before it, separated only by optional blank lines. Flag missing, heading-only, bold-only, and heading-plus-caption-only introductions; alt text is independent.
+
+Reviews report source locations and specific fixes without editing. Authorized fixes and generation must preserve sufficient introductions, replace image-only headings or bold labels with prose or `>caption`, preserve genuine section anchors and hierarchy, and rerun all checks. Record H1 findings in `heading_structure_for_snippets` and image-introduction findings in `content_depth_and_completeness`; do not award 5 in an affected dimension with unresolved mandatory findings. Keep the output schema and weights unchanged; disclose blocked fixes rather than claiming compliance.
+
 ---
 
 ## Why SEO Readiness Matters for Documentation
@@ -86,16 +96,16 @@ Source rules: front matter `description` field.
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| Primary keyword in H1 | The article's main term appears in the single `#` heading | H1 is a generic label like `"Overview"` |
+| Primary keyword in the article title | Standard: main term appears in the single Markdown H1. KB: main term appears in the metadata-generated title; never add a source H1 | Standard H1 or KB title metadata is a generic label like `"Overview"` |
 | Primary keyword in the first paragraph | Core term used within the opening 50 words | Feature is first mentioned midway through the article |
 | Secondary keywords in H2 headings | Related terms and long-tail variants appear in `##` headings | All H2 headings are generic (`"Setup"`, `"Options"`, `"Example"`) without qualifying context |
 | Natural keyword density | Primary term appears several times in body text without forced repetition | Keyword appears once in 1500 words (too sparse) or 20 times in 500 words (stuffed) |
 | LSI / semantic terms present | Synonyms and closely related terms are used naturally in body text | Article about `"data binding"` never uses `"connect"`, `"fetch"`, `"source"`, `"remote data"` |
 
 **Scoring guide:**
-- 5: Keyword in H1 and opening paragraph; secondary keywords in H2s; natural density.
-- 3: Keyword in H1 but absent from first paragraph or H2 headings.
-- 1: H1 is generic; primary term rarely or never appears in the body.
+- 5: Keyword in the standard H1 or KB title metadata and opening paragraph; secondary keywords in H2s; natural density.
+- 3: Keyword in the standard H1 or KB title metadata but absent from first paragraph or H2 headings.
+- 1: Standard H1 or KB title metadata is generic; primary term rarely or never appears in the body.
 
 ---
 
@@ -106,11 +116,12 @@ Source rules: front matter `description` field.
 | Minimum viable length | Article body is at least 300 words (thin content is a ranking signal) | 150-word stub with no examples |
 | Covers the topic end-to-end | Introduction, concept explanation, setup/usage, examples, and next steps are all present when relevant | Article jumps straight to code with no explanation of what the feature does |
 | Concrete examples | At least one code block or screenshot illustrates the key concept | Pure prose with no demonstrated usage |
+| Immediate image introductions | Every image has a meaningful sentence or exact `>caption` block directly before it | Missing introduction, heading-only or bold-only label, or heading plus caption solely for the image |
 | Answers the implied user question | The title implies a question ("How to bind the Grid"); the article answers it directly | Title promises a how-to; article only describes the API surface without showing usage |
 | No excessive duplication with sibling articles | Unique value not replicated verbatim in other articles | Introduction paragraph copy-pasted across multiple articles |
 
 **Scoring guide:**
-- 5: ≥ 300 words, full coverage, concrete examples, unique value.
+- 5: ≥ 300 words, full coverage, concrete examples, approved immediate introductions for all images, unique value.
 - 3: Adequate length and examples but missing one major section.
 - 1: Thin, incomplete, or heavily duplicated.
 
@@ -122,6 +133,7 @@ Google extracts featured snippets and `People Also Ask` answers from well-struct
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
+| Article-type H1 count and hierarchy | Standard: exactly one Markdown H1; KB: zero H1s and may begin at H2. No skipped subsection levels | Missing/multiple standard H1s, any KB H1, or H2 followed by H4 |
 | H2/H3 headings are question-like or task-like | Headings mirror common search queries, e.g. `"How to Enable Paging"`, `"What Is Virtual Scrolling"` | Generic headings: `"Paging"`, `"Scrolling"` |
 | Answer immediately follows the heading | The first sentence under a heading directly answers or defines the heading topic | Heading is followed by a lengthy preamble before the actual answer |
 | Lists and tables are used for enumerable facts | Step-by-step procedures use numbered lists; option sets use tables | Steps described as dense paragraphs |
@@ -129,7 +141,7 @@ Google extracts featured snippets and `People Also Ask` answers from well-struct
 | No heading-only sections | Every heading has at least one substantive paragraph or list beneath it | Heading followed immediately by another heading |
 
 **Scoring guide:**
-- 5: Headings are query-like; answers are immediate; lists/tables used correctly.
+- 5: Article-type H1 count and hierarchy are correct; headings are query-like; answers are immediate; lists/tables used correctly.
 - 3: Some headings are query-like; answers sometimes delayed.
 - 1: All headings are generic labels; no snippet-friendly structure.
 
@@ -179,10 +191,10 @@ Markdown content is often rendered by static-site generators or documentation pl
 | Code examples are delimited with language tags | Enables platform to render `SoftwareSourceCode` structured data | Fenced blocks with no language |
 | Step-by-step procedures use numbered lists | Enables extraction as `HowTo` structured data | Procedures written as paragraphs |
 | FAQ-like sections use heading + answer pattern | Enables extraction as `FAQPage` structured data | Q&A embedded in prose with no distinguishing structure |
-| `title` matches H1 exactly (or differs only in casing) | Signals content coherence to crawlers | `title: "Overview"` but H1 is `"Grid Component Overview"` |
+| Title coherence respects article type | Standard: `title` matches its H1, allowing case differences. KB: title metadata matches the topic and generated title; no source H1 is required or permitted | Standard title contradicts its H1, or KB metadata contradicts its content |
 
 **Scoring guide:**
-- 5: Description is a full sentence; code blocks labeled; steps numbered; title matches H1.
+- 5: Description is a full sentence; code blocks labeled; steps numbered; standard title matches H1 or KB title metadata matches its content without a source H1.
 - 3: Most checks pass but one or two structured-data signals are missing.
 - 1: Multiple missing signals; article is difficult to annotate with structured data.
 

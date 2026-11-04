@@ -7,9 +7,19 @@ description: "Use this skill when writing, editing, or reviewing Telerik UI for 
 
 Use this skill for WPF Knowledge Base articles and FAQ sections. KB pages document a specific task, failure, or approved security issue. Follow the article type and rendering pattern used by neighboring pages. Use [style-metadata-links](../style-metadata-links/SKILL.md) for metadata and taxonomy.
 
+## Mandatory Structure and Image Checks
+
+Read and apply [style-structure](../style-structure/SKILL.md), including its heading and image examples, validation, and automated-fix acceptance criteria, for all KB authoring, article reviews, audits, and Markdown remediation.
+
+- [ ] KB articles under `knowledge-base/` or identified by KB metadata contain zero H1s. Never add one, even if a template requests it. Flag every H1 and recommend removal of a duplicate generated title or conversion of a genuine section to the appropriate lower heading level.
+- [ ] A FAQ within a standard article follows the standard rule: exactly one `# Heading`. Flag missing or multiple H1s, recommend one title if absent, and demote extras according to hierarchy.
+- [ ] Every image has a meaningful sentence or exact `>caption Description` block immediately before it, with only optional blank lines between. Flag missing, heading-only, bold-only, and heading-plus-caption-only introductions.
+
+In review-only mode, report each issue with a source location and correction. For authorized fixes, replace image-only headings or bold labels with prose or `>caption`, preserve sufficient introductions and genuine section anchors, and preserve the document hierarchy. Never remediate a KB by inserting an H1. Revalidate H1 counts and each image introduction after fixes; do not claim compliance with unresolved issues.
+
 ## Existing WPF KB Conventions
 
-WPF KB pages commonly use frontmatter fields such as `title`, `description`, `components`, `type`, `page_title`, `slug`, `position`, `tags`, `ticketid`, and `res_type: kb`. Preserve existing field names and values. Many existing KB articles have no source H1 and begin with `## Environment`; do not add an H1 unless the relevant template requires one.
+WPF KB pages commonly use frontmatter fields such as `title`, `description`, `components`, `type`, `page_title`, `slug`, `position`, `tags`, `ticketid`, and `res_type: kb`. Preserve existing field names and values. All KB articles must have no source H1; their title is generated from metadata. They may begin with `## Environment` without a skipped-level violation. Templates and neighboring articles cannot override the no-H1 rule.
 
 A common environment section uses an HTML table:
 
@@ -96,7 +106,11 @@ Retain the heading capitalization and punctuation convention of the surrounding 
 ## Quick Checklist
 
 - [ ] Frontmatter preserves the local WPF KB conventions and stable identifiers.
-- [ ] The article uses the correct generated-title or source-H1 pattern for its section.
+- [ ] KB articles have zero H1s; no generation or remediation adds one. Standard articles containing FAQs have exactly one H1.
+- [ ] All H1 violations are reported or fixed without damaging section hierarchy.
+- [ ] Every image has an immediate sentence or exact `>caption` block, never a heading or bold-only introduction.
+- [ ] Missing introductions and image-only heading/bold labels are corrected when authorized; sufficient introductions are preserved.
+- [ ] Post-fix validation repeats these checks and discloses unresolved issues.
 - [ ] Environment details identify the tested Telerik version, target framework, Windows version, and Xaml or NoXaml flavor where relevant.
 - [ ] Description, confirmed cause, solution, expected result, and limitations are clear.
 - [ ] WPF XAML, C# APIs, binding sources, theme resources, and project references are accurate.

@@ -10,6 +10,16 @@ You are an expert in accessibility standards and inclusive technical writing. Ev
 
 Score each dimension from **1 (poor) to 5 (excellent)**, provide a rationale (≤ 2 sentences), and list specific violations (empty array if none). Compute a weighted overall score at the end.
 
+## Mandatory Article Checks
+
+Read and apply [style-structure](../telerik-documentation-style-guide/style-structure/SKILL.md), including its compliant/non-compliant examples and automated-fix acceptance criteria. These repository rules override generic H1 guidance; they are source-content requirements, not proof of rendered WCAG conformance.
+
+- [ ] Standard articles have exactly one `# Heading`; report zero or multiple H1s. Recommend an appropriate title if missing and hierarchy-aware demotion of additional H1s.
+- [ ] KB articles, identified by `knowledge-base/` or KB metadata, have zero H1s. Never add one; flag any H1 and recommend removing a duplicate title or demoting a genuine section. Starting a KB at H2 is valid.
+- [ ] Every image has a meaningful sentence or exact `>caption Description` block immediately before it, separated only by optional blank lines. Flag missing, heading-only, bold-only, and heading-plus-caption-only introductions; alt text does not replace an introduction.
+
+Scoring and audit requests report source locations and specific corrections without editing. For authorized remediation, preserve sufficient introductions, replace image-only headings or bold labels with a sentence or `>caption` block, preserve genuine sections and anchors, and rerun all checks. Never add a KB H1. Preserve alt text as a separate accessibility requirement. Record H1 findings in `heading_structure` and image-introduction findings in `alternative_text`; a dimension cannot receive 5 while its mandatory findings remain. Keep the output schema and weights unchanged and disclose unresolved cases.
+
 ---
 
 ## Why Accessibility Matters for Documentation
@@ -33,22 +43,22 @@ Screen readers expose a heading outline to users for non-linear navigation. Head
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| Single H1 | Exactly one `#` heading per article | Two or more H1 headings |
+| Article-type H1 count | Standard article: exactly one Markdown H1; KB: zero H1s, with metadata-generated title | Missing or multiple standard H1s; any KB H1 |
 | No skipped heading levels | Hierarchy is sequential: `##` → `###`, never `##` → `####` | H2 followed immediately by H4 |
 | Headings are descriptive | Each heading conveys the section content; a screen reader user can navigate by heading outline alone | `## More Info`, `## Section 2`, `## Details` |
 | Headings are not used for visual emphasis | Bold text or callout-style phrasing is not dressed up as a heading | A short promotional sentence marked as `###` to appear prominent |
 | No empty headings | Every heading is followed by content before the next heading of equal or deeper level | Heading followed immediately by the next same-level heading with no body content |
 
 **Scoring guide:**
-- 5: Single H1, no skipped levels, all headings descriptive, no empty headings.
+- 5: Correct article-type H1 count, no skipped levels, all headings descriptive, no empty headings; KB may start at H2.
 - 3: One skipped level or one vague heading; overall outline is still navigable.
-- 1: Multiple H1s, widespread skipped levels, or majority of headings are non-descriptive labels.
+- 1: Missing or multiple standard H1s, any KB H1, widespread skipped levels, or majority of headings are non-descriptive labels.
 
 ---
 
 ### 2. Alternative Text Quality — weight 20 %
 
-Every non-decorative image must have an `alt` attribute that communicates equivalent information to readers who cannot see the image.
+Every non-decorative image must have an `alt` attribute that communicates equivalent information to readers who cannot see the image. Every image must also satisfy the immediate-introduction rule, independently of its alt text.
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
@@ -57,9 +67,11 @@ Every non-decorative image must have an `alt` attribute that communicates equiva
 | Alt text is not redundant | Alt text does not repeat the immediately surrounding caption or paragraph verbatim | Caption already says "Welcome wizard step 1" and alt text says the same phrase |
 | Alt text length is appropriate | Complex diagrams and screenshots use longer descriptive alt text; simple icons use brief labels | Diagram with three steps described only as `alt="diagram"` |
 | Decorative images are explicitly marked | Images that add no information use `alt=""` to signal decoration | A purely decorative divider image with a descriptive alt text that distracts assistive technology |
+| Immediate image introduction | A meaningful sentence or exact `>caption` block directly precedes every image | No introduction; text only after the image; an intervening block |
+| No heading or bold-only image labels | An image-only heading or bold label is replaced with prose or `>caption` | `### Dialog` or `**Dialog**` directly before the image; heading plus caption solely for the image |
 
 **Scoring guide:**
-- 5: All images have meaningful, appropriately detailed alt text; decorative images are correctly marked.
+- 5: All images have approved immediate introductions and meaningful, appropriately detailed alt text; decorative images are correctly marked.
 - 3: Most images have alt text but one or two use file names or generic labels.
 - 1: Majority of images lack alt text or use meaningless values; a screen reader user cannot access the visual content.
 
@@ -143,6 +155,8 @@ Information must never rely solely on color, bold, italic, or other visual forma
 ### 7. Callout and Admonition Structure — weight 5 %
 
 Callout blocks (notes, warnings, tips, important notices) must use a consistent semantic pattern so that assistive technologies and downstream rendering tools can identify and announce them appropriately.
+
+The image syntax `>caption Description` is an approved caption block, not a note or warning. Do not convert it to an admonition or require a full sentence for a concise caption.
 
 | Check | Pass condition | Violation examples |
 |---|---|---|

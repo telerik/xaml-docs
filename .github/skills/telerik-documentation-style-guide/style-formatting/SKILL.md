@@ -7,6 +7,16 @@ description: "Use this skill when formatting Telerik UI for WPF documentation: U
 
 This skill defines how to format inline elements, admonitions (notes, tips, cautions), code blocks, screenshots, and command-line instructions in Telerik UI for WPF documentation. Preserve the repository's rendering syntax and each sample's technical meaning.
 
+## Mandatory Structure and Image Checks
+
+Read and apply [style-structure](../style-structure/SKILL.md), including its compliant/non-compliant examples and review/automated-fix acceptance criteria, during authoring, formatting reviews, audits, and Markdown remediation.
+
+- [ ] Standard articles have exactly one `# Heading`; flag missing or multiple H1s and recommend one appropriate title or hierarchy-aware demotion of extras.
+- [ ] KB articles (`knowledge-base/` or KB metadata) have zero H1s. Never add one; flag any H1 and recommend removing a duplicate generated title or demoting a genuine section. A KB starting at H2 is valid.
+- [ ] Every image has a meaningful sentence or exact `>caption Description` block immediately before it, with only optional blank lines between. Flag missing, heading-only, bold-only, and heading-plus-caption-only introductions.
+
+Report source locations and corrections without editing on review-only requests. When fixes are authorized, replace image-only headings and bold labels with prose or `>caption`, preserve sufficient introductions, image paths, alt text, genuine sections and anchors, and heading hierarchy. Rerun all checks and disclose unresolved cases. These rules override general bold-label or legacy screenshot-placement advice, but do not change code-example or table caption formatting.
+
 ## Why Consistent Formatting Matters
 
 Consistent formatting acts as a visual language — readers learn to recognize bold as a UI element, monospace as code, and italic as a new term. Breaking these conventions forces readers to re-evaluate what each piece of text means.
@@ -216,7 +226,7 @@ Do not add comments that narrate assignments or control creation. Explain setup 
 
 ## Screenshots
 
-Screenshots complement text but do not replace it. Always describe the action or result in text before or after the screenshot.
+Screenshots complement text but do not replace it. Every screenshot and other image must have a meaningful introductory sentence or exact `>caption` block immediately before it. Text only after an image is insufficient. Preserve an existing introduction when it explains the image's content or purpose.
 
 ### Screenshot Requirements
 
@@ -244,6 +254,8 @@ The RadGridView displays the sample records. Replace the image path below with a
 ```
 
 - Place screenshots **after** the text that describes them.
+- Place a meaningful introductory sentence or exact `>caption Description` block immediately before each image, with only optional blank lines between.
+- Never introduce an image with a heading or bold-only label, or a heading plus caption solely for the image. Replace image-only headings and bold labels with prose or `>caption` when fixes are authorized.
 - Use descriptive alt text that explains what the screenshot shows.
 - Store screenshot files in an `images/` subdirectory relative to the article.
 
@@ -274,6 +286,10 @@ The following table distinguishes common data controls:
 
 When reviewing an article for formatting, verify:
 
+- [ ] Standard articles have exactly one H1; KB articles have zero H1s and never receive one
+- [ ] Missing/multiple standard H1s and every KB H1 are reported or fixed while preserving hierarchy
+- [ ] Every image has an immediate sentence or exact `>caption` block; no missing, heading-only, or bold-only introduction remains
+- [ ] Existing sufficient introductions and genuine section anchors are preserved; fixes are revalidated
 - [ ] UI elements (buttons, menus, tabs, fields) are in **bold**
 - [ ] Bold uses `**` asterisk syntax, not `__` underscore syntax
 - [ ] All API mentions (types, methods, properties, members) are in `monospace`

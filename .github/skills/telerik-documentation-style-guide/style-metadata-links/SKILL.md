@@ -26,7 +26,7 @@ Common fields include:
 | `type`, `res_type`, `ticketid` | Knowledge Base metadata. Preserve the local article type and existing support traceability. |
 | `previous_url` | Redirect metadata when an authorized move or rename requires it. Preserve existing redirects. |
 
-Do not assume every page has identical required fields. Some legacy WPF articles use a source H1, some use metadata-driven titles, and some Knowledge Base pages intentionally omit a source H1. Inspect the same article type and folder before adding, removing, or renaming metadata.
+Do not assume every page has identical required metadata fields. Standard documentation articles must have exactly one source H1, independently of metadata. All Knowledge Base articles must omit source H1 headings and use their generated titles. Inspect the same article type and folder before adding, removing, or renaming metadata; neighboring pages cannot override these H1 rules.
 
 For routine editing of an existing article, change only the requested metadata field, usually `description`. Report other metadata concerns rather than changing URLs, navigation, taxonomy, or support identifiers without authorization.
 
@@ -62,6 +62,8 @@ For a Knowledge Base article, preserve its existing `type`, `res_type: kb`, comp
 
 ## Quick Checklist
 
+- [ ] Standard articles have one source H1; KB articles have none, including after metadata or link fixes.
+- [ ] Every image has an immediate approved introduction; heading-only and bold-only labels are reported or corrected when authorized.
 - [ ] Frontmatter follows the neighboring WPF article pattern and contains no duplicate keys.
 - [ ] Existing slugs, redirects, support IDs, and navigation metadata remain stable unless changes were requested.
 - [ ] `components`, `tags`, `position`, and Knowledge Base fields match local conventions.

@@ -39,7 +39,7 @@ The layout control has the following event.
 
 >caption Locked item
 
-	![{{ site.framework_name }} RadLayoutControl Locked item](images/layoutcontrol-events-01.png)
+![{{ site.framework_name }} RadLayoutControl Locked item](images/layoutcontrol-events-01.png)
 
 ## Save/Load layout events
 

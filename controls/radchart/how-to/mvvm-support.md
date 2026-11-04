@@ -12,7 +12,7 @@ position: 1
 
 
 
-## 
+## Controlling Bar Colors with MVVM
 
 The Telerik __RadChart__ control can be used with great success with the __Model-View-ViewModel (MVVM)__ pattern. This tutorial will demonstrate how to use the MVVM pattern to get a better control over the colors of the bars of a single series.
 

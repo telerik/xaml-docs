@@ -12,7 +12,7 @@ position: 0
 
 
 
-## 
+## Configuring Drill-Down Charts with Tooltips
 
 >To learn how to use the built-in __RadChart Drill Down__ feature please read the [Drill Down]({%slug radchart-features-drill-down-hierarchical-view%}) section.
 

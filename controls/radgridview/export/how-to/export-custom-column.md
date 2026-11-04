@@ -33,7 +33,7 @@ In order to automatically export a custom column, without handling some of the e
 
 The values from the exported column will appear in Excel as shown in **Figure 1**.
 
-#### **Figure 1: Exported Custom Column to Excel**
+>caption Exported custom column to excel
 
 ![Telerik UI for {{ site.framework_name }} RadGridView exported custom column values shown in Excel](images/gridview_exported-custom-column.png)
 

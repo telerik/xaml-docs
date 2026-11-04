@@ -23,7 +23,7 @@ __Defining the RadSpreadsheet and UI elements for thе replace logic__
 __Using the avaliable API of the Worksheet class for thе replace logic__
 <snippet id='radspreadsheet-features-find-and-replace-block_2-cs' />
 
-__RadSpreadsheet with a custom find and replace logic__
+>caption RadSpreadsheet with a custom find and replace logic
 
 ![RadSpreadsheet with a custom find and replace logic](images/radspreadsheet-find-and-replace-0.gif)
 
@@ -31,10 +31,10 @@ __RadSpreadsheet with a custom find and replace logic__
 
 The RadSpreadsheet control provides the option to utilize the find and replace functionality through the UI. To do so, press the __CTRL__ + __F__ keys, in order to open the find and replace window.
 
-__Find and Replace window's Find tab options__
+>caption Find and replace window's find tab options
 
 ![Find and Replace window's Find tab options](images/radspreadsheet-find-and-replace-1.png)
 
-__Find and Replace window's Replace tab options__
+>caption Find and replace window's replace tab options
 
 ![Find and Replace window's Replace tab options](images/radspreadsheet-find-and-replace-2.png)

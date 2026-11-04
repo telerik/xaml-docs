@@ -15,11 +15,11 @@ ticketid: 1708478
 <table>
 <tbody>
 <tr>
-<td> Product </td>
+<th scope="row"> Product </th>
 <td> UI for WPF RadWebCam </td>
 </tr>
 <tr>
-<td> Version </td>
+<th scope="row"> Version </th>
 <td> 2025.4.1321 </td>
 </tr>
 </tbody>

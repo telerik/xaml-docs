@@ -124,7 +124,8 @@ __Example 4: Merge the ResourceDictionaries__
 
 __Figure 1__ shows __RadMaskedInput__ with the **Windows8** theme applied.
 	
-#### __Figure 1: RadMaskedInput with the Windows8 theme__
+>caption RadMaskedInput with the Windows8 theme
+
 ![Telerik {{ site.framework_name }} MaskedInput-Windows8](images/radmaskedinput-windows8.png)
 
 

@@ -25,7 +25,8 @@ __Example 2: Create the ViewModel__
 __Example 3: Create the RadAutoCompleteBox and sets its ItemsSource__
 <snippet id='radautocompletebox-styles-and-templates-textboxstyle-example_3_create_the_radautocompletebox_and_sets_its_itemssource-xaml' />
 
-#### __Figure 1: RadAutoCompleteBox without custom TextBoxStyle applied__
+>caption RadAutoCompleteBox without custom TextBoxStyle applied
+
 ![Rad Auto Complete Box Features Text Box Style 01](images/RadAutoCompleteBox_StylesAndTemplates_TextBoxStyle_01.png)
 
 You have to create a custom __Style__ with __TargetType__ __RadAutoCompleteBox__ or __RadAutoCompleteBoxItem__:
@@ -42,7 +43,8 @@ __Example 5: Apply the custom Style__
 
 You can see the final result on __Figure 2__.
 
-#### __Figure 2: RadAutoCompleteBox with custom TextBoxStyle applied__
+>caption RadAutoCompleteBox with custom TextBoxStyle applied
+
 ![Rad Auto Complete Box Features Text Box Style 02](images/RadAutoCompleteBox_StylesAndTemplates_TextBoxStyle_02.png)
 
 ## See Also

@@ -71,7 +71,8 @@ __Example 2: Defining the xaml__
 <snippet id='radgridview-columns-columntypes-column-types-multicolumncomboboxcolumn-example_2_defining_the_xaml-xaml' />
 
 
-#### __Figure 1: Result from Example 2 in the Office2016 theme__
+>caption Result from example 2 in the Office2016 theme
+
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewMultiColumnComboBoxColumn showing employee name, city, and country choices](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)
 
 ## See Also

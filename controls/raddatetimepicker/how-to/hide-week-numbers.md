@@ -37,7 +37,8 @@ In order to hide the week numbers, one can use the __CalendarStyle__ property of
 	<snippet id='raddatetimepicker-how-to-hide-week-numbers-example_3_setting_the_calendarstyle_property-xaml' />
 
 
-#### __Figure 1: Result from Example 3 in the Office2016 theme__
+>caption Result from example 3 in the Office2016 theme
+
 ![RadDateTimePicker without week numbers](images/dateTimePicker_how_to_hide_week_numbers.png)
 
 ## See also 

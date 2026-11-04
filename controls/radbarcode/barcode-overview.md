@@ -11,7 +11,7 @@ slug: barcode-overview
 
 **RadBarcode for WPF** is a control used for creating and showing barcodes. You can generate and visualize barcodes in a machine-readable format via the RadBarcode control by providing numeric or character data.
 
-#### Figure 1: RadBarcode Overview
+>caption RadBarcode overview
 
 ![RadBarcode Overview](images/barcode_overview.png)
 

@@ -23,7 +23,7 @@ For example you can use the event in order to replace a __DoubleGroupDescription
 
 <snippet id='radpivotgrid-events-overview-block_1-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-events-overview-block_2-vb' />
 
@@ -37,7 +37,7 @@ You can find an example below that demonstrates how to get the current status of
 
 <snippet id='radpivotgrid-events-overview-block_3-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-events-overview-block_4-vb' />
 
@@ -53,13 +53,14 @@ You can find an example below that demonstrates how to get the current status of
 
 <snippet id='radpivotgrid-events-overview-block_5-cs' />
 
-#### __VB__
+__VB__
 
 <snippet id='radpivotgrid-events-overview-block_6-vb' />
 
 You can observe the final result on __Figure 1__.
 
-Figure 1: Custom folders in the FieldTree.
+>caption Custom folders in the FieldTree.
+
 ![Rad Pivot Grid Events Overview 0](images/RadPivotGrid_Events_Overview_01.png)
 
 * __AddingContainerNode (available only for the LocalDataSourceFieldDescriptionsProvider)__ - raised multiple times while the FieldTree is generated - each time a node is added. 

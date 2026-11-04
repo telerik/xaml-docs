@@ -58,7 +58,7 @@ The control populates its data through the CellValueNeeded event. It is raised w
 __Populating RadVirtualGrid with data through the CellValueNeeded event__
 <snippet id='radvirtualgrid-getting-started-getting-started-block_3-cs' />
 
-__RadVirtualGrid populated with data__
+>caption RadVirtualGrid populated with data
 
 ![{{site.framework_name}} RadVirtualGrid populated with data](images/RadVirtualGrid_GettingStarted_01.png)
 
@@ -98,7 +98,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
 __Merge the ResourceDictionaries__  
 <snippet id='radvirtualgrid-getting-started-getting-started-block_5-xaml' />
 	
-__RadVirtualGrid with the Windows8 theme__
+>caption RadVirtualGrid with the Windows8 theme
 
 ![Telerik {{ site.framework_name }} VirtualGrid-windows8](images/RadVirtualGrid-windows8.png)
 

@@ -22,7 +22,8 @@ __Example 1: Defining the RadSyntaxEditor__
 __Example 1: Defining the RadSyntaxEditor__
 <snippet id='radsyntaxeditor-features-margins-block_2-cs' />
 
-#### __Figure 1: RadSyntaxEditor Margins__
+>caption RadSyntaxEditor margins
+
 ![RadSyntaxEditor Margins](images/syntaxeditor-margins.png)
 
 ## Indicators Margin
@@ -35,19 +36,20 @@ The class inherits from the abstract **IndicatorsMarginBase** class which define
 
 **Example 2** demonstrates how to create a margin which holds a collection of bookmarks and alternate the colors of these bookmarks.
 
-#### [C#] Example 2: Creating a bookmarks margin
+__[C#] Example 2: Creating a bookmarks margin__
 
 <snippet id='radsyntaxeditor-features-margins-block_3-cs' />
 
 You can then add the margin to the RadSyntaxEditor as shown in **Example 3**.
 
-#### [C#] Example 3: Adding the BookmarksMargin
+__[C#] Example 3: Adding the BookmarksMargin__
 
 <snippet id='radsyntaxeditor-features-margins-block_4-cs' />
 
 **Figure 2** shows the final result after some bookmarks have been added.
 
-#### __Figure 2: The bookmarks margin__
+>caption The bookmarks margin
+
 ![The bookmarks margin](images/syntaxeditor-margins-2.png)
 
 >You can add new bookmarks both by clicking on the margin in the UI and by programmatically adding integers to its Indicators collection.
@@ -56,7 +58,7 @@ You can then add the margin to the RadSyntaxEditor as shown in **Example 3**.
 
 To remove the line numbers panel, you can clear the `ScrollableLeft` margins collection.
 
-#### [C#] Removing the line numbers
+__[C#] Removing the line numbers__
 <snippet id='radsyntaxeditor-features-margins-block_5-cs' />
 
 ## See Also

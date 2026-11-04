@@ -32,7 +32,7 @@ An easier approach would be to use `ICollectionView` implementation that works w
 	__Setting up the view__
 	<snippet id='radlistbox-sorting-block_3-xaml' />
 
-__Sorted RadListBox__
+>caption Sorted RadListBox
 
 ![A picture showing sorted RadListBox](images/radlistbox-sorting-0.png)
 

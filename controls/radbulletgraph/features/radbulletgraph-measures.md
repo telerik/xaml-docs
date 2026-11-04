@@ -30,7 +30,8 @@ The measures allows you to show the data performance on the bullet graph control
 __Example 1: Setting measures__
 <snippet id='radbulletgraph-features-radbulletgraph-measures-example_1_setting_measures-xaml' />
 
-#### Figure 1: RadBulletGraph
+>caption RadBulletGraph
+
 ![radbulletgraph-features-measures-0.png](images/radbulletgraph-features-measures-0.png)
 	
 ## Customize Measure Colors
@@ -46,7 +47,8 @@ Additionally, you can control the thickness of the ComparativeMeasure via the __
 __Example 2: Customizing the measure colors__
 <snippet id='radbulletgraph-features-radbulletgraph-measures-example_2_customizing_the_measure_colors-xaml' />
 
-#### Figure 2: Customized measure colors
+>caption Customized measure colors
+
 ![radbulletgraph-features-measures-1.png](images/radbulletgraph-features-measures-1.png)
 
 ## See Also  

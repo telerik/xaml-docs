@@ -13,7 +13,7 @@ position: 10
 
 `RadSpreadsheet` comes with pre-defined UI that is automatically wired with all of the commands provided by the control and shows its full potential. `RadSpreadsheetRibbon` automatically registers the UI components of RadSpreadsheet and keeps them up-to-date after each upgrade.
 
-__RadSpreadsheet with default UI and context menu__
+>caption RadSpreadsheet with default UI and context menu
 
 ![RadSpreadsheet with default UI and context menu](images/RadSpreadsheet_Ribbon_01.png)
 
@@ -43,7 +43,7 @@ After dragging the RadRadSpreadsheet control from the Toolbox to the Designer of
 
 	> More information about the __FormatProviders__ property of __RadSpreadsheet__ is available in the [Import/Export]({%slug radspreadsheet-import-export%}) topic.
 
-__Choose the components you would like to use__
+>caption Choose the components you would like to use
 
 ![Choose the components you would like to add to RadSpreadsheet](images/RadSpreadsheet_Ribbon_02.png)
 
@@ -65,7 +65,7 @@ The RadSpreadsheetRibbon element support minimizing its content so that only the
 __Minimizing the RadSpreadsheetRibbon__
 <snippet id='radspreadsheet-spreadsheet-ui-block_3-xaml' />
 
-__Minimized RadSpreadsheetRibbon__
+>caption Minimized RadSpreadsheetRibbon
 
 ![Minimized RadSpreadsheetRibbon](images/radspreadsheet-ribbon-minimized.png)
 
@@ -73,7 +73,7 @@ __Minimized RadSpreadsheetRibbon__
 
 When you would like to change the way RadSpreadsheetRibbon looks like, or add custom functionality to it, you can extract its template. This can be achieved through the __Replace RadSpreadsheetRibbon with Editable XAML__ option of the Visual Studio Designer's context menu.
 
-__Replace RadSpreadsheetRibbon with Editable XAML option of the Visual Studio Designer's context menu__
+>caption Replace RadSpreadsheetRibbon with editable XAML option of the Visual Studio designer's context menu
 
 ![Replace RadSpreadsheetRibbon with Editable XAML option of the Visual Studio Designer's context menu](images/RadSpreadsheet_Ribbon_03.png)
 

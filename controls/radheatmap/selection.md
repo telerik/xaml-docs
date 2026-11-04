@@ -30,7 +30,7 @@ __Example 1: Enabling the selection behavior of the RadHeatMap__
 <snippet id='radheatmap-selection-example_1_enabling_the_selection_behavior_of_the_radheatmap-xaml' />
 
 
-#### __Figure 1: RadHeatMap with selection enabled__
+>caption RadHeatMap with selection enabled
 
 ![RadHeatMap with selection enabled](images/radheatmap-selection_0.PNG)
 

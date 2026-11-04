@@ -53,7 +53,8 @@ __Example 3: Define the RadDataBars components__
 <snippet id='raddatabar-databinding-example_3_define_the_raddatabars_components-xaml' />
 
 
-#### __Figure 1: The different data bars__
+>caption The different data bars
+
 ![The different data bars](images/raddatabar-databinding.PNG)
 
 ## See Also  

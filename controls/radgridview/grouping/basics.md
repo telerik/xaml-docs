@@ -17,19 +17,19 @@ position: 0
 
 In order to group data, the user has to just drag the desired column to the `GridViewGroupPanel` located at the top of RadGridView. If RadGridView is not grouped, a hint is shown in the GridViewGroupPanel.
 
-__Dragging a column to the GridViewGroupPanel__
+>caption Dragging a column to the GridViewGroupPanel
 
 ![Telerik UI for {{ site.framework_name }} RadGridView dragging a column header to the group panel to start grouping](images/RadGridView_BasicGrouping_1.png)
 
 After dropping the selected header in the grouping area, the text message will be replaced with a rectangle that represents the selected header, and the data will be properly grouped.
 
-__RadGridView after grouping__
+>caption RadGridView after grouping
 
 ![Telerik UI for {{ site.framework_name }} RadGridView after grouping data by a column in the group panel](images/RadGridView_BasicGrouping_2.png)
 
 To remove the grouping, just click the close button of the rectangle or drag it out of the grouping area.
 
-__Removing the grouping__
+>caption Removing the grouping
 
 ![Telerik UI for {{ site.framework_name }} RadGridView removing a grouping criterion from the group panel](images/RadGridView_BasicGrouping_3.png)
 
@@ -39,7 +39,7 @@ __Removing the grouping__
 
 RadGridView also provides the user with a way to sort the groups of data. To do that, the user just has to click on the rectangle that represents the grouping column. By default, when the data is grouped, the groups are sorted __Ascending__. When the sort direction of the rectangle is None, the groups are sorted depending on the data they contain. 
 
-__Sorting RadGridView when grouping is applied__
+>caption Sorting RadGridView when grouping is applied
 
 ![Telerik UI for {{ site.framework_name }} RadGridView grouped data with the group panel item toggled to sort groups](images/RadGridView_BasicGrouping_4.png)
 
@@ -78,11 +78,11 @@ __Flat Mode__&mdash;This mode simply renders rows one below the other. This lead
 
 The `ShouldReorderColumnsOnUngrouping` property controls whether the columns' `DisplayIndex` will be changed when the user drags a group cell onto a header cell. The default value is __False__ - when the user ungroups, the display indexes of the columns prior to the grouping will not be changed. When set to __True__, if the user drops the group cell onto one of RadGridView's header cells, the columns will be __reordered__ based on the drop position.
 
-__Dragging the group cell over a header cell__
+>caption Dragging the group cell over a header cell
 
 ![Telerik UI for {{ site.framework_name }} RadGridView dragging a grouped column cell over a header cell to reorder on ungrouping](images/reorderondrop1.png)
 
-__The reordered columns when ShouldReorderColumnsOnUngrouping is True__
+>caption The reordered columns when ShouldReorderColumnsOnUngrouping is true
 
 ![Telerik UI for {{ site.framework_name }} RadGridView columns reordered after ungrouping with ShouldReorderColumnsOnUngrouping enabled](images/reorderondrop2.png)
        
@@ -97,7 +97,7 @@ __Disable Grouping__
 <snippet id='radgridview-grouping-basics-disable_grouping-xaml' />
 
 
-__RadGridView with disabled grouping__
+>caption RadGridView with disabled grouping
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with grouping disabled by hiding the group panel](images/RadGridView_BasicGrouping_5.png)
 
@@ -115,7 +115,7 @@ __Disable grouping for a specific column__
 <snippet id='radgridview-grouping-basics-disable_grouping_for_a_specific_column-vb' />
 
 
-__RadGridView with disabled grouping for a specific column__
+>caption RadGridView with disabled grouping for a specific column
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with grouping disabled for a specific column](images/RadGridView_BasicGrouping_6.png)
 

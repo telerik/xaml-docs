@@ -72,7 +72,8 @@ If you prefer adding the dialog through XAML, you can use the **RegisterSignSign
 <snippet id='radpdfviewer-digital-signature-block_2-xaml' />
 
 
-#### **Figure 1: Signing a document in RadPdfViewer**
+>caption Signing a document in RadPdfViewer
+
 ![{{ site.framework_name }} RadPdfViewer Signing a document in RadPdfViewer](images/PdfViewer_DigitalSignature_3.gif)
 
 The SignSignatureDialog can be customized when needed. To implement the customization, you should replace the value of the **ViewModelCreator** with your custom implementation of **SignSignatureDialogViewModel**.
@@ -87,7 +88,8 @@ In the PDF document model, the validation is performed per signature. For a vali
 
 The signature panel of RadPdfViewer detects when the imported document contains a signature, validates the document and shows the final result to the user. 
 
-#### **Figure 2: SignaturePanel showing signature status**
+>caption SignaturePanel showing signature status
+
 ![{{ site.framework_name }} RadPdfViewer SignaturePanel showing signature status](images/PdfViewer_DigitalSignature_1.png)
 
 To enable this panel, you should add it to the XAML as demonstrated in **Example 2**:
@@ -123,7 +125,8 @@ When registered, SignaturePropertiesDialog can be shown by clicking on the Signa
 
 **Figure 3** shows how it looks like the **SignaturePropertiesDialog** when visualizing a signature whose validation result is Unknown.
 
-#### **Figure 3: SignaturePropertiesDialog showing the status of a signature**
+>caption SignaturePropertiesDialog showing the status of a signature
+
 ![{{ site.framework_name }} RadPdfViewer SignaturePropertiesDialog showing the status of a signature](images/PdfViewer_DigitalSignature_2.png)
 
 

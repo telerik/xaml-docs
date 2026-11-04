@@ -13,15 +13,15 @@ position: 2
 
 The different types of RadGanttView tasks have different tooltip contents as demonstrated in **figures 1-3**.
 
-#### __Figure 1: Event Container Tooltip__
+>caption Event container tooltip
 
 ![Event Container Tooltip](images/event-tooltip.png)
 
-#### __Figure 2: Summary Container Tooltip__
+>caption Summary container tooltip
 
 ![Summary Container Tooltip](images/summary-tooltip.png)
 
-#### __Figure 3: Milestone Container Tooltip__
+>caption Milestone container tooltip
 
 ![Milestone Container Tooltip](images/milestone-tooltip.png)
 
@@ -43,6 +43,6 @@ __Example 2: Set ToolTipTemplate__
 
 **Figure 4** shows the appearance of the final custom tooltips.
 
-#### __Figure 4: Custom Container Tooltip__
+>caption Custom container tooltip
 
 ![Custom Container Tooltip](images/custom-tooltip.png)

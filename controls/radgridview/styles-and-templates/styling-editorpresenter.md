@@ -24,7 +24,7 @@ __Example 1: Styling the GridViewEditorPresenter__
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewEditorPresenterStyle__.
 
-#### __Figure 2: RadGridView with styled GridViewEditorPresenter__
+>caption RadGridView with styled GridViewEditorPresenter
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a styled GridViewEditorPresenter in edit mode](images/gridview-styled-editorpresenter.png)
             

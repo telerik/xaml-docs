@@ -18,7 +18,7 @@ __Example 1: Defining GridViewSelectColumn in XAML__
 <snippet id='radgridview-columns-columntypes-column-types-select-column-example_1_defining_gridviewselectcolumn_in_xaml-xaml' />
 
 
-#### __Figure 1: The GridViewSelectColumn__
+>caption The GridViewSelectColumn
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewSelectColumn showing a row selection checkbox in each row](images/selectcolumn-default.png)
 
@@ -33,7 +33,7 @@ __Example 2: Define GridViewDataColumn with Extended SelectionMode__
 <snippet id='radgridview-columns-columntypes-column-types-select-column-example_2_define_gridviewdatacolumn_with_extended_selectionmode-xaml' />
 
 
-#### __Figure 2: The GridViewSelectColumn with Extended SelectionMode__
+>caption The GridViewSelectColumn with extended SelectionMode
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewSelectColumn with Extended selection mode and header checkbox selection](images/selectcolumn-multiple-selection.png)
 
@@ -57,7 +57,7 @@ __Example 4: Setting RadGridView's CheckBoxStyle and HeaderCheckBoxStyle__
 
 **Figure 3** shows the final result:
 
-#### __Figure 3: The styled GridViewSelectColumn__
+>caption The styled GridViewSelectColumn
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewSelectColumn with styled row and header checkboxes](images/selectcolumn-styled.png)
 

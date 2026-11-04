@@ -20,7 +20,8 @@ Interacting with the messages of __RadChat__ is done through __ResponseAction__ 
 
 Their visual representation may vary depending on the type of message. For example, the default __CommitResponseAction__ that is defined for the __CalendarMessage__ would appear as a __Submit__ button shown below.
 
-__Defining CalendarMessage__
+>caption Defining CalendarMessage
+
 ![CalendarMessage](images/RadChat_Messages_Reports_01.png)
 
 __Adding a CancelResponseAction__
@@ -29,7 +30,8 @@ __Adding a CancelResponseAction__
 
 Adding a __CancelResponseAction__ will have the following output.
 
-__Defining CalendarMessage with CancelResponseAction__
+>caption Defining CalendarMessage with CancelResponseAction
+
 ![CalendarMessage with CancelResponseAction](images/RadChat_Messages_Reports_02.png)
 
 ## Handling the Response
@@ -53,7 +55,8 @@ __Handling the ReportMessageResult Event__
 
 So, if the user clicks the __Submit__ button for the previously defined __CalendarMessage__ the result will be as in the figure below.
 
-__Handling the ReportMessageResult__
+>caption Handling the ReportMessageResult
+
 ![CalendarMessage with CancelResponseAction](images/RadChat_Messages_Reports_03.png)
 
 ## Custom ResponseAction

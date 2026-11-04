@@ -17,7 +17,8 @@ __RadTreeView__ supports editing the displayed text of the item. The purpose of 
 * How to start, end and cancel editing declaratively and programmatically.
 * What kind of events the treeview API offers you for managing the edit process.
 
-#### Figure 1: RadTreeView with several items 
+>caption RadTreeView with several items
+
 ![{{ site.framework_name }} RadTreeView RadTreeView with several items](images/RadTreeView_TreeViewItemEditing_001.png)
 
 __Example 1: RadTreeView populate with several items__  
@@ -48,7 +49,8 @@ __Example 4: Start editing via code__
 <snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_5-cs' />
 <snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_6-vb' />
 
-#### Figure 2: RadTreeViewItem in edit mode 
+>caption RadTreeViewItem in edit mode
+
 ![{{ site.framework_name }} RadTreeView RadTreeViewItem in edit mode](images/RadTreeView_TreeViewItemEditing_010.png)
 
 __Example 5: Exit editing via code__
@@ -92,7 +94,8 @@ __Example 7: Accessing the editing RadTreeViewItem in the PreviewEditStarted eve
 
 The __PreviewEdited__ event is fired just before the new __Header__ text of the item is applied. If the treeview is data bound you can update the data source with the new value. The __Edited__ event is fired once the new __Header__ text for the item is applied. You can get access to the new text of the __Header__ property, as well as to the old one, via the __RadTreeViewItemEditedEventArgs__ of the __PreviewEdited__ and __Edited__ events.
 
-#### Figure 3: Getting the header text
+>caption Getting the header text
+
 ![{{ site.framework_name }} RadTreeView Getting the header text](images/RadTreeView_TreeViewItemEditing_020.png)
 
 >If the the __ItemEditTemplate__ property is set and it does not contain a __TextBox__, then the __NewText__ and __OldText__ properties will not be used.
@@ -103,7 +106,8 @@ __Example 8: Setting the background of the edited RadTreeViewItem__
 <snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_16-cs' />
 <snippet id='radtreeview-features-treeview-item-feautres-treeviewitem-item-editing-block_17-vb' />
 
-#### Figure 4: RadTreeViewItem with its background changed on edit
+>caption RadTreeViewItem with its background changed on edit
+
 ![{{ site.framework_name }} RadTreeView RadTreeViewItem with its background changed on edit](images/RadTreeView_TreeViewItemEditing_030.png)
 
 ## ItemEditTemplate and ItemEditTemplateSelector

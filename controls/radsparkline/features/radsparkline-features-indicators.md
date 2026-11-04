@@ -23,7 +23,8 @@ __Example 1: Show markers of RadLinearSparkline in XAML__
 __Example 2: Show markers of RadLinearSparkline in code__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_2-cs' />
 
-#### __Figure 1: RadLinearSparkline and RadAreaSparkline with shown markers__
+>caption RadLinearSparkline and RadAreaSparkline with shown markers
+
 ![RadLinearSparkline and RadAreaSparkline](images/radsparkline-features-indicators-0.png)
 
 You can change the color of the marker via the __MarkersBrush__ property.
@@ -33,7 +34,8 @@ The markers can be customized via the __MarkersStyle__ property of the control.
 __Example 3: Setting MarkersStyle__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_3-xaml' />
 
-#### __Figure 2: RadLinearSparkline with custom MarkersStyle__
+>caption RadLinearSparkline with custom MarkersStyle
+
 ![RadLinearSparkline with custom MarkersStyle](images/radsparkline-features-indicators-1.png)
 
 ## High Point
@@ -46,7 +48,8 @@ __Example 4: Show high point indicator of RadColumnSparkline in XAML__
 __Example 5: Show high point indicator of RadColumnSparkline in code__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_5-cs' />
 
-#### __Figure 3: RadColumnSparkline with shown high point indicator__
+>caption RadColumnSparkline with shown high point indicator
+
 ![RadColumnSparkline with shown high point indicator](images/radsparkline-features-indicators-2.png)
 
 You can change the color of the high point indicator via the __HighPointBrush__ property.
@@ -56,7 +59,8 @@ You can customize the appearance of the data point via the __HighPointStyle__ pr
 __Example 6: Setting HighPointStyle__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_6-xaml' />
 
-#### __Figure 4: RadColumnSparkline with custom HighPointStyle__
+>caption RadColumnSparkline with custom HighPointStyle
+
 ![RadColumnSparkline with custom HighPointStyle](images/radsparkline-features-indicators-3.png)
 
 ## Low Point
@@ -69,7 +73,8 @@ __Example 7: Show low point indicator of RadColumnSparkline in XAML__
 __Example 8: Show low point indicator of RadColumnSparkline in code__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_8-cs' />
 
-#### __Figure 5: RadColumnSparkline with shown low point indicator__
+>caption RadColumnSparkline with shown low point indicator
+
 ![RadColumnSparkline with shown low point indicator](images/radsparkline-features-indicators-4.png)
 
 You can change the color of the low point indicator via the __LowPointBrush__ property.
@@ -79,7 +84,8 @@ You can customize the appearance of the data point via the __LowPointStyle__ pro
 __Example 9: Setting LowPointStyle__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_9-xaml' />
 
-#### __Figure 6: RadColumnSparkline with custom LowPointStyle__
+>caption RadColumnSparkline with custom LowPointStyle
+
 ![RadColumnSparkline with custom LowPointStyle](images/radsparkline-features-indicators-5.png)
 
 ## Negative Points
@@ -92,7 +98,8 @@ __Example 10: Show negative points of RadLinearSparkline in XAML__
 __Example 11: Show negative points of RadLinearSparkline in code__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_11-cs' />
 
-#### __Figure 7: RadLinearSparkline with shown negative point indicators__
+>caption RadLinearSparkline with shown negative point indicators
+
 ![RadLinearSparkline with shown negative point indicators](images/radsparkline-features-indicators-6.png)
 
 You can change the color of the negative points via the __NegativePointBrush__ property.
@@ -114,7 +121,8 @@ __Example 13: Show first point of RadLinearSparkline in XAML__
 __Example 14: Show first point of RadLinearSparkline in code__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_14-cs' />
 
-#### __Figure 8: RadLinearSparkline with shown first point indicator__
+>caption RadLinearSparkline with shown first point indicator
+
 ![RadLinearSparkline with shown first point indicator](images/radsparkline-features-indicators-7.png)
 
 You can change the color of the first point via the __FirstPointBrush__ property.
@@ -134,7 +142,8 @@ __Example 16: Show last point of RadLinearSparkline in XAML__
 __Example 17: Show last point of RadLinearSparkline in code__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_17-cs' />
 
-#### __Figure 9: RadLinearSparkline with shown last point indicator__
+>caption RadLinearSparkline with shown last point indicator
+
 ![RadLinearSparkline with shown last point indicator](images/radsparkline-features-indicators-8.png)
 
 You can change the color of the last point via the __LastPointBrush__ property.
@@ -154,7 +163,8 @@ There are cases when the collection of data to which the Sparkline is bound may 
 __Example 19: Setting EmptyPointBehavior__
 <snippet id='radsparkline-features-radsparkline-features-indicators-block_19-xaml' />
 
-#### __Figure 10: RadLinearSparkline and RadColumnSparkline with a single null value shown as zero__
+>caption RadLinearSparkline and RadColumnSparkline with a single null value shown as zero
+
 ![RadLinearSparkline and RadColumnSparkline](images/radsparkline-features-indicators-9.png)
 
 ## See Also

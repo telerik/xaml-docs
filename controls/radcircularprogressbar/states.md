@@ -29,7 +29,7 @@ __Setting the determinate state in code__
 <snippet id='radcircularprogressbar-states-setting_the_determinate_state_in_code-vb' />
 
 
-__Determinate state__
+>caption Determinate state
 
 ![Determinate state](images/radcircularprogressbar-states-0.png)
 
@@ -47,7 +47,7 @@ __Setting the indeterminate state in code__
 <snippet id='radcircularprogressbar-states-setting_the_indeterminate_state_in_code-vb' />
 
 
-__Indeterminate state__
+>caption Indeterminate state
 
 ![Indeterminate state](images/radcircularprogressbar-states-1.gif)
 

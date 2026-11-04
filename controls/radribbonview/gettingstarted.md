@@ -55,7 +55,7 @@ __Adding a RadRibbonView in XAML__
 	
 At this state, the ribbonview is empty - there are not tabs, backstage or any other ribbon components. You can learn about the controls that the RadRibbonView can contain from the [Features]({%slug radribbonview-ribbon-tab%}) section of the documentation.
 
-__Empty RadRibbonView__
+>caption Empty RadRibbonView
 
 ![WPF RadRibbonView Empty RadRibbonView](images/ribbonview-getting-started-01.png)
 
@@ -76,7 +76,7 @@ __Adding RadRibbonTabs in code__
 <snippet id='radribbonview-gettingstarted-block_3-cs' />
 <snippet id='radribbonview-gettingstarted-block_4-vb' />
 
-__RadRibbonView with several RadRibbonTabs defined in its Items collection__
+>caption RadRibbonView with several RadRibbonTabs defined in its items collection
 
 ![WPF RadRibbonView RadRibbonView with several RadRibbonTabs defined in its Items collection](images/ribbonview-getting-started-02.png)
 
@@ -87,7 +87,7 @@ RadRibbonTab is a `HeaderedItemsControl`, which means that it can contain a coll
 __Adding RadRibbonGroups__
 <snippet id='radribbonview-gettingstarted-block_5-xaml' />
 
-#### __A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection__
+>caption A RadRibbonTab with a couple RadRibbonGroups defined in its items collection
 
 ![WPF RadRibbonView A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection](images/ribbonview-getting-started-03.png)
 
@@ -96,7 +96,7 @@ The RadRibbonGroup element is also a HeaderedItemsControl and it can have child 
 __Adding RadRibbonGroup content__
 <snippet id='radribbonview-gettingstarted-block_6-xaml' />
 
-__A RadRibbonGroup with a couple ribbon buttons defined in its Items collection__
+>caption A RadRibbonGroup with a couple ribbon buttons defined in its items collection
 
 ![WPF RadRibbonView A RadRibbonGroup with a couple ribbon buttons defined in its Items collection](images/ribbonview-getting-started-04.png)
 
@@ -125,7 +125,7 @@ __Setting the RadRibbonView application button image source in code__
 <snippet id='radribbonview-gettingstarted-block_8-cs' />
 <snippet id='radribbonview-gettingstarted-block_9-vb' />
 
-__RadRibbonView application button image__
+>caption RadRibbonView application button image
 
 ![WPF RadRibbonView RadRibbonView application button image](images/ribbonview-getting-started-05.png)
 
@@ -136,7 +136,7 @@ The header displayed at the title bar of RadRibbonView is constructed by its `Ti
 __Setting the RadRibbonView application title and name__
 <snippet id='radribbonview-gettingstarted-block_10-xaml' />
 
-__Title and ApplicationName properties reflected in the UI__
+>caption Title and ApplicationName properties reflected in the UI
 
 ![WPF RadRibbonView Title and ApplicationName properties reflected in the UI](images/ribbonview-getting-started-06.png)
 
@@ -149,7 +149,7 @@ The RadRibbonView control exposes the `TitleBarBackground` property that will al
 __Setting the color of the RadRibbonView's title__
 <snippet id='radribbonview-gettingstarted-block_11-xaml' />
 
-__RadRibbonView with a different color set to the title__
+>caption RadRibbonView with a different color set to the title
 
 ![WPF RadRibbonView with a different color set to the title](images/ribbonview-getting-started-10.png)
 
@@ -162,7 +162,7 @@ To declare a backstage menu in RadRibbonView you can set its `Backstage` propert
 __Sample backstage definition with several child RadRibbonBackstageItems in its Items collection.__
 <snippet id='radribbonview-gettingstarted-block_12-xaml' />
 
-__RadRibbon Backstage example__
+>caption RadRibbon backstage example
 
 ![WPF RadRibbonView RadRibbon Backstage example](images/ribbonview-getting-started-07.png)
 
@@ -175,7 +175,7 @@ The Quick Access Toolbar is used to render a set of RadRibbonView controls (comm
 __Sample setup of QuickAccessToolBar__
 <snippet id='radribbonview-gettingstarted-block_13-xaml' />
 
-__QuickAccessToolBar visualization with one of its buttons hovered__  
+>caption QuickAccessToolBar visualization with one of its buttons hovered
 
 ![WPF RadRibbonView QuickAccessToolBar Hovered Button](images/ribbonview-getting-started-08.png)
 
@@ -188,7 +188,7 @@ This section contains all features demonstrated in the article assembled into a 
 __Complete code example__
 <snippet id='radribbonview-gettingstarted-block_14-xaml' />
 
-__RadRibbonView example__  
+>caption RadRibbonView example
 
 ![WPF RadRibbonView RadRibbonView example](images/ribbonview-getting-started-09.png)
 
@@ -216,7 +216,7 @@ __Merge the ResourceDictionaries__
 
 >Alternatively, you can use the theme of the control via the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach.
 
-__RadRibbonView with the Windows8 theme__
+>caption RadRibbonView with the Windows8 theme
 
 ![WPF RadRibbonView with Windows8 theme](images/radribbonView-setting-theme.png)  
 

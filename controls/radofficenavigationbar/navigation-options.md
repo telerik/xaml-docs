@@ -13,7 +13,7 @@ position: 5
 
 `RadOfficeNavigationBar` allows you to control the maximum number of visible items, their display order, as well as enabling/disabling the compact view mode. This is done by using the navigation options dialog. To display this window, select the options button that is displayed on the right of the RadOfficeNavigationBar items.
 
-__Navigation options dialog__
+>caption Navigation options dialog
 
 ![{{ site.framework_name }} Navigation options dialog](images/officenavigationbar-navigation-options-0.png)
 

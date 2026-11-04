@@ -309,7 +309,8 @@ If you want to customize the colors shown in your RadSyntaxEditor control, you c
 __Example 2: Modifying a default palette in XAML__
 <snippet id='radsyntaxeditor-features-palettes-block_2-xaml' />
 
-#### Figure 2: RadSyntaxEditor with a modified Light palette
+>caption RadSyntaxEditor with a modified light palette
+
 ![RadSyntaxEditor with a modified Light palette](images/syntaxeditor-modified-palette.png)
 
 ### Create a Custom Palette
@@ -317,7 +318,8 @@ __Example 2: Modifying a default palette in XAML__
 __Example 3: Creating a custom SyntaxEditorPalette in code-behind__
 <snippet id='radsyntaxeditor-features-palettes-block_3-cs' />
 
-#### Figure 2: RadSyntaxEditor with a custom palette
+>caption RadSyntaxEditor with a custom palette
+
 ![RadSyntaxEditor with a custom palette](images/syntaxeditor-custom-palette.png)
 
 ## See Also

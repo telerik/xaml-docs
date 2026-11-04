@@ -85,7 +85,7 @@ __Example 4: Specifying the type of the editor as string and passing the absolut
 
 It will look like:
         
-__Figure 1__: EditorAtrribute with editorType specified
+>caption EditorAtrribute with editorType specified
 
 ![Rad Property Grid Custom Editor](images/RadPropertyGrid_CustomEditor.png)
 
@@ -105,7 +105,7 @@ __Example 6: Specifying the type of the editor and the absolute file path of the
 
 In this case PhoneEditorControl will be defined in a DropDownEditor control and it will look like:
 
-__Figure 2__: EditorAtrribute with editorType and editorStyle specified
+>caption EditorAtrribute with editorType and editorStyle specified
 
 ![Rad Property Grid Custom Editor In Drop Down](images/RadPropertyGrid_CustomEditorInDropDown.png)
 
@@ -128,7 +128,7 @@ In this case the property from your business object – Number – will be bound
 
 The result will be:
         
-__Figure 3__: EditorAtrribute with editorType and targetProperty specified
+>caption EditorAtrribute with editorType and targetProperty specified
 
 ![Rad Property Grid Target Property](images/RadPropertyGrid_TargetProperty.png)
 
@@ -148,7 +148,7 @@ __Example 10: Specifying the type of the editor and the absolute file path of th
 
 It will look like:
         
- Figure 4: EditorAtrribute with editorType, targetProperty and editorStyle specified
+>caption EditorAtrribute with editorType, targetProperty and editorStyle specified
 
  ![Rad Property Grid Custom Editor In Modal](images/RadPropertyGrid_CustomEditorInModal.png)
 

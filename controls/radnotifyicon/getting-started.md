@@ -102,7 +102,8 @@ __Example 6: Merge the ResourceDictionaries__
 
 __Figure 3__ shows a __RadNotifyIcon__ with the **Windows8** theme applied.
 
-#### __Figure 3: RadNotifyIcon with the Windows8 theme__
+>caption RadNotifyIcon with the Windows8 theme
+
 ![radnotifyicon- with Windows8 theme](images/radnotifyicon-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

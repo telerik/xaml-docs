@@ -41,6 +41,6 @@ __Setting the Best View of the RadMap control__
 <snippet id='radmap-features-changing-the-viewport-block_4-cs' />
 <snippet id='radmap-features-changing-the-viewport-block_4-vb' />
 
-__Result of the execution of the above code:__
+>caption Result of the execution of the above code
 
 ![Best View for the VisualizationLayer](images/radmap-changing-the-viewport-best-view.png)

@@ -191,7 +191,7 @@ Below you can find more details about each brush and where it is usually applied
 * `BasicBrush`&mdash;Used as a border brush of controls in their Normal state.
 * `LowBrush`&mdash;Used as a border brush of controls in their ReadOnly state.
 
-__Theme brushes preview__
+>caption Theme brushes preview
 
 ![Telerik UI for WPF Green theme control preview](../images/Common_Styling_Appearance_Green_Theme_02.png)
 
@@ -233,7 +233,7 @@ __The ColorVariation enumeration that determines which color variation should be
 
 >important The `Dark` color variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when choosing it. 
 
-__Light and Dark color variations demonstrated with RadCalendar__
+>caption Light and dark color variations demonstrated with RadCalendar
 
 ![Telerik UI for WPF Green theme application preview](../images/Common_Styling_Appearance_Green_Theme_01.png)
 
@@ -333,7 +333,7 @@ __Changing the FontSize and the FontFamily__
 	End Sub
 ```
 
-__Change in theme fonts__
+>caption Change in theme fonts
 
 ![Telerik UI for WPF Green theme styling changed font preview](../images/Common_Styling_Appearance_Green_Theme_03.png)
 	
@@ -410,7 +410,7 @@ __Changing the CornerRadius__
 	End Sub
 ```
 
-__Changes in corner radius__	
+>caption Changes in corner radius
 
 ![Telerik UI for WPF Green theme changes in corner radius preview](../images/Common_Styling_Appearance_Green_Theme_04.png)
 
@@ -431,7 +431,7 @@ __Changing the DisabledOpacity__
 	GreenPalette.Palette.DisabledOpacity = 0.5
 ```
 	
-__Changes in the disabled elements opacity__
+>caption Changes in the disabled elements opacity
 
 ![Telerik UI for WPF Green theme changes in the disabled elements opacity preview](../images/Common_Styling_Appearance_Green_Theme_05.png)
 	
@@ -456,7 +456,7 @@ __Changing the opacity__
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5
 ```
 
-__Changes in the readonly elements opacity__
+>caption Changes in the readonly elements opacity
 
 ![Telerik UI for WPF Green theme changes in the readonly elements opacity preview](../images/Common_Styling_Appearance_Green_Theme_06.png)
 

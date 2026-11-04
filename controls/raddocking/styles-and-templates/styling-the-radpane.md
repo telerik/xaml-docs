@@ -22,7 +22,8 @@ __Example 1: Creating an implicit style targeting RadPane__
 <snippet id='raddocking-styles-and-templates-styling-the-radpane-example_1_creating_an_implicit_style_targeting_radpane-xaml' />
 
 
-#### __Figure 1: RadPane with Red Background in the Office2016 theme__
+>caption RadPane with red background in the Office2016 theme
+
 ![RadPane with Red Background](images/RadDocking_RadPane_Styling.png)
 
 >important You will notice that in __Figure 1__ all RadPanes are red except the selected one. Inside the ControlTemplate of the RadPane there are triggers/visual states which set the Background when a pane becomes selected and that value takes precedence over the value from the implicit style. In order to change this behavior, you can extract and modify the RadPane ControlTemplate for the theme(s) that you are using. For more information on how to do that read, the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

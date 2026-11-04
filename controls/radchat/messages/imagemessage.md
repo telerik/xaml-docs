@@ -21,7 +21,8 @@ __Defining an ImageMessage__
 <snippet id='radchat-features-messages-imagemessage-example_1_defining_an_imagemessage-cs' />
 
 
-__Defining ImageMessage__
+>caption Defining ImageMessage
+
 ![Defining ImageMessage](images/RadChat_Messages_Image_01.png)
 
 Furthermore, the __ImageMessage__ supports setting __Stretch__ and __Size__ for its image.
@@ -30,7 +31,8 @@ __Setting the Stretch and Size of the Message__
 <snippet id='radchat-features-messages-imagemessage-example_2_setting_the_stretch_and_size_of_the_message-cs' />
 
 
-__Defining ImageMessage with Stretch and Size__
+>caption Defining ImageMessage with stretch and size
+
 ![Defining ImageMessage](images/RadChat_Messages_Image_02.png)
 
 ## See Also

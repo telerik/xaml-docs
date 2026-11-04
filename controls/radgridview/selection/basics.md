@@ -17,13 +17,13 @@ __RadGridView__ provides you with selection functionality, which allows the user
 
 Users can select an item in through the control's UI by clicking somewhere on the desired row.
 
-#### Figure 1: Row Selection
+>caption Row selection
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing full row selection](images/RadGridView_BasicSelection_1.png)
 
 If enabled, users can also select a single cell or multiple cells as shown in **Figure 2**.
 
-#### Figure 2: Cell Selection
+>caption Cell selection
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing individual cell selection](images/RadGridView_BasicSelection_2.png)
 

@@ -19,7 +19,7 @@ __RadPieChart with Warm Pallete__
 <snippet id='radchartview-features-palettes-introduction-radpiechart_with_warm_pallete-xaml' />
 
 
-__Pie chart with the built-in Warm palette__  
+>caption Pie chart with the built-in warm palette
 
 ![Telerik UI for WPF RadPieChart using the built-in Warm palette](images/RadChartView-palettes-introduction-0.png)
 

@@ -47,7 +47,7 @@ __Set DisplayMemberPath property__
 <snippet id='radcombobox-populating-with-data-binding-to-object-set_displaymemberpath_property-xaml' />
 
 
-__RadComboBox displaying agency names__  
+>caption RadComboBox displaying agency names
 
 ![RadComboBox displaying agency names](images/RadComboBox_PopulatingWithData_BindingToObject_030.png)
 
@@ -63,7 +63,7 @@ __Setting the RadComboBox's ItemTemplate property__
 <snippet id='radcombobox-populating-with-data-binding-to-object-setting_the_radcombobox_s_itemtemplate_property-xaml' />
 
 
-__RadComboBox displaying a custom template__  
+>caption RadComboBox displaying a custom template
 
 ![RadComboBox displaying a custom template](images/RadComboBox_PopulatingWithData_BindingToObject_020.png)
 

@@ -58,7 +58,8 @@ __Setting MenuItemsSource__
 <snippet id='raddesktopalert-menuitemssource-setting_menuitemssource-vb' />
 
 
-__Figure 2:__ RadDesktopAlert with set MenuItemsSource
+>caption RadDesktopAlert with set MenuItemsSource
+
 ![Rad Desktop Alert Menu Items Siurce 01](images/RadDesktopAlert_MenuItemSource_01.png)
 
 ## Using MenuItemContainerStyle

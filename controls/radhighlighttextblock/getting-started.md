@@ -44,7 +44,7 @@ __Setting text and highlighting part of it__
 <snippet id='radhighlighttextblock-getting-started-setting_text_and_highlighting_part_of_it-xaml' />
 
 
-__RadHighlightTextBlock with a highlighted match__
+>caption RadHighlightTextBlock with a highlighted match
 
 ![{{ site.framework_name }} RadHighlightTextBlock with a highlighted match](images/radhighlighttextblock-getting-started-0.png)
 
@@ -58,7 +58,7 @@ __Setting the HighlightBackground and HighlightForeground properties__
 <snippet id='radhighlighttextblock-getting-started-setting_the_highlightbackground_and_highlightforeground_properties-xaml' />
 
 
-__RadHighlightTextBlock with custom brushes for the HighlightBackground and HighlightForeground properties__
+>caption RadHighlightTextBlock with custom brushes for the HighlightBackground and HighlightForeground properties
 
 ![{{ site.framework_name }} RadHighlightTextBlock with custom brushes for the HighlightBackground and HighlightForeground properties](images/radhighlighttextblock-getting-started-1.png)
 
@@ -70,7 +70,7 @@ __Setting the HighlightMode to AllMatches__
 <snippet id='radhighlighttextblock-getting-started-setting_the_highlightmode_to_allmatches-xaml' />
 
 
-__RadHighlightTextBlock with highlighting all the matches__
+>caption RadHighlightTextBlock with highlighting all the matches
 
 ![{{ site.framework_name }} RadHighlightTextBlock with highlighting all the matches](images/radhighlighttextblock-getting-started-2.png)
 

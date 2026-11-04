@@ -47,7 +47,7 @@ __Example 1: Styling all merged cells of an application__
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewMergedCellStyle__.
 
-#### __Figure 1: Styled merged cells__
+>caption Styled merged cells
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom style applied to merged cells](images/gridview_merged_cells_5.png)
 

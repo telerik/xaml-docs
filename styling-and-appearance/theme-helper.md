@@ -59,7 +59,7 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 							helpers:ThemeHelper.CheckedBrush="{StaticResource MyCheckedBrush}"/>
 ```
 
-__Appearance of the RadToggleButton in the different states__
+>caption Appearance of the RadToggleButton in the different states
 
 ![Telerik UI for WPF RadToggleButton visual states in the Theme Helper](/images/styling-appearance-theme-helper-toggle-button-states.png)
 

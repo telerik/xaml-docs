@@ -33,7 +33,7 @@ In the __CreateTargetCapGeometry()__ method the parameters serve for the very sa
 
 ![Custom Cap](images/RadDiagram_Features_CustomCaps3.png)
 
-# Example
+## Example
 
 The next code snippet will create custom connection caps as shown in the beggining of this article.
 

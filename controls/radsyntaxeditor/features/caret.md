@@ -37,7 +37,7 @@ Through the `CaretBrush` property, you can change the caret's color to a color o
 __Setting the caret's color__
 <snippet id='radsyntaxeditor-features-caret-block_3-xaml' />
 
-__RadSyntaxEditor caret with red color__
+>caption RadSyntaxEditor caret with red color
 
 ![RadSyntaxEditor caret with red color](images/syntaxeditor-caret-red.png)
 
@@ -58,7 +58,7 @@ The `RadSyntaxEditor` control provides built-in support for the most commonly us
 
 To use this feature, set the `UseMonospacedOptimization` property of `RadSyntaxEditor` to `false`.
 
-__RadSyntaxEditor displaying Japanese IME__
+>caption RadSyntaxEditor displaying japanese IME
 
 ![{{ site.framework_name }} RadSyntaxEditor displaying Japanese IME](images/syntaxeditor-caret-japanese-ime.png)
 

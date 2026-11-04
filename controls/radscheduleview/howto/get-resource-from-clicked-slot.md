@@ -54,10 +54,12 @@ __Define the two RadMenuItems__
 
 __Figure 1__ and __Figure 2__ demonstrate the final result.
 
-__Figure 1: When an Appointment is clicked the RadContextMenu will have information about its Resource__
+>caption When an appointment is clicked the RadContextMenu will have information about its resource
+
 ![radscheduleview how to get clicked element-1](images/radscheduleview_how_to_get_clicked_element-1.png)
 
-__Figure 2: When an empty Slot is clicked the RadContextMenu will have information about its Resource__
+>caption When an empty slot is clicked the RadContextMenu will have information about its resource
+
 ![radscheduleview how to get clicked element-2](images/radscheduleview_how_to_get_clicked_element-2.png)
 
 ## See Also

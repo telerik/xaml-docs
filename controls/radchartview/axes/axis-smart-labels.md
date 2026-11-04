@@ -33,11 +33,11 @@ The `SmartLabelMode` property is of type `AxisSmartLabelsMode` enum and it deter
 	
 	>important `SmartStepAndRange` is supported only by the `LinearAxis` and `LogarithmicAxis`.
 	
-__Example illustrating the SmartStep mode applied on both chart axes (horizontal and vertical)__
+>caption Example illustrating the SmartStep mode applied on both chart axes (horizontal and vertical)
 
 ![Telerik UI for WPF RadChartView with SmartStep applied to both chart axes](images/radchartview-features-axis-smart-labels-01.png)
 
-__Example illustrating the SmartStepAndRange mode applied on the vertical axis__
+>caption Example illustrating the SmartStepAndRange mode applied on the vertical axis
 
 ![Telerik UI for WPF RadChartView with SmartStepAndRange applied to the vertical axis](images/radchartview-features-axis-smart-labels-02.png)
 
@@ -49,7 +49,7 @@ __Disabling the automatic step recalculation on zoom__
 <snippet id='radchartview-axes-axis-smart-labels-disabling_the_automatic_step_recalculation_on_zoom-xaml' />
 
 
-__Example illustrating how the IsStepRecalculationOnZoomEnabled property affects the axis (applied only on the vertical axis)__
+>caption Example illustrating how the IsStepRecalculationOnZoomEnabled property affects the axis (applied only on the vertical axis)
 
 ![Telerik UI for WPF RadChartView vertical axis after disabling step recalculation on zoom](images/radchartview-features-axis-smart-labels-03.png)
 

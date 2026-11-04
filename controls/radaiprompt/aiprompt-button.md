@@ -23,7 +23,7 @@ The RadAIPromptButton provides the following properties:
 __Creating a RadAIPromptButton__
 <snippet id='radaiprompt-aiprompt-button-creating_a_radaipromptbutton-xaml' />
 
-__RadAIPromptButton__
+>caption RadAIPromptButton
 
 ![WPF RadAIPromptButton](images/radaiprompt-prompt-button-0.png)
 

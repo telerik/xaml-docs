@@ -18,10 +18,12 @@ The layout is controlled with the __CardLayout__ property of RadCardView. The de
 __Example 1: Setting cards layout__
 <snippet id='radcardview-features-cards-layout-example_1_setting_cards_layout-xaml' />
 
-#### Figure 1: Rows layout (default)
+>caption Rows layout (default)
+
 ![{{ site.framework_name }} RadCardView Rows layout (default)](images/radcardview-features-card-layout-0.png)
 
-#### Figure 2: Columns layout
+>caption Columns layout
+
 ![{{ site.framework_name }} RadCardView Columns layout](images/radcardview-features-card-layout-1.png)
 
 The size of the cards is controlled with the __MajorLength__ and __MinorLength__ properties of RadCardView. When the CardLayout is Rows the MajorLength is applied to the card's width and the MinorLength to the card's height. When the CardLayout is Columns the MajorLength is applied to the card's height and the MinorLength to the card's width. 

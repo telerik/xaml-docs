@@ -50,7 +50,8 @@ __Example 2: Changing the default FontSize and FontFamily in the Office2016 them
 	} 
 ```
 
-#### __Figure 1: Setting different FontSize and FontFamily__
+>caption Setting different FontSize and FontFamily
+
 ![{{ site.framework_name }} Setting different FontSize and FontFamily](../styling-and-appearance/images/common-styling-appearance-office2016-theme-1.png)	
 
 The approach used in the above code snippets is applicable for the following themes:

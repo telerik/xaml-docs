@@ -4,7 +4,8 @@ page_title: Frozen Columns
 description: Find out how easily you can select columns and exclude them from the horizontal or vertical scrolling when using RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 components: ["gridview"]
 slug: gridview-columns-frozen-columns
-tags: frozen,columns,splitter,delta,drag delta,splitter delta,splitter threshold
+tags: frozen,columns,splitter,delta,drag delta,splitter delta,splitter threshold
+
 published: True
 position: 10
 ---
@@ -88,7 +89,7 @@ The property has one of three values:
 * `Hidden`&mdash;Does not display the element, but reserves space for the element in the layout.
 * `Collapsed`&mdash;Does not display the element, and does not reserve space for it in the layout.
 
-#### __FrozenColumnsSplitterVisibility set to Visible and Hidden/Collapsed, respectively__
+>caption FrozenColumnsSplitterVisibility set to visible and hidden/collapsed, respectively
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with FrozenColumnsSplitterVisibility set to Visible](images/FrozenColumnsSplitterVisibility_Visible.png)
 ![Telerik UI for {{ site.framework_name }} RadGridView with FrozenColumnsSplitterVisibility set to Hidden or Collapsed](images/FrozenColumnsSplitterVisibility_Hidden.png)

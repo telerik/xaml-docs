@@ -27,21 +27,21 @@ __Progress Telerik UI for {{ site.framework_name }} Extension__ is distributed w
 
 Progress Telerik UI for {{ site.framework_name }} Extension can be accessed through the __Extensions | Telerik | Telerik UI for {{ site.framework_name }}__ menu in Visual Studio. The extensions show different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of the application as well.
 
-__No selected project in Visual Studio__  
+>caption No selected project in Visual Studio
 
 ![Telerik UI for WPF Visual Studio Extensions menu for creating a project](images/VSExtentions_WPF_OverviewMenuCreate.png)
 
-__Selected project in Visual Studio is Standard WPF Application__  
+>caption Selected project in Visual Studio is standard WPF application
 
 ![Telerik UI for WPF Visual Studio Extensions menu for converting a project](images/VSExtentions_WPF_OverviewMenuConvert.png)
 
-__Selected project in Visual Studio is Telerik Application__  
+>caption Selected project in Visual Studio is Telerik application
 
 ![Telerik UI for WPF Visual Studio Extensions menu for configuring a project](images/VSExtentions_WPF_OverviewMenuConfigure.png)
 
 When installed, the extensions add several project templates to the New Project dialog of Visual Studio.
 
-__Telerik project templates__  
+>caption Telerik project templates
 
 ![Telerik UI for WPF Visual Studio project templates](images/VSExtentions_WPF_OverviewProjectTemplates.jpg)
 

@@ -22,7 +22,7 @@ __Example 1: Initial declaration of a custom header__
 
 As a result, the __Foreground__ color of the custom header does not change on mouse hover (__Figure 1__ ), sorting, etc.		
 
-__Figure 1:__ The __Foreground__ color of the custom header does not change, when the column is hovered.
+>caption The foreground color of the custom header does not change, when the column is hovered.
 
 ![Telerik {{ site.framework_name }} DataGrid-troubleshooting-styling-custom-header-Problem](images/gridview-troubleshooting-styling-custom-header-Problem.png)
 
@@ -46,7 +46,8 @@ __Example 3: Final declaration of a custom header__
 
 >Please note that the "local" namespace needs to point to the namespace where the HeaderInheritForegroundBehavior is defined.
 
-__Figure 2:__ The __Foreground__ color of the custom header now changes, when the column is hovered.
+>caption The foreground color of the custom header now changes, when the column is hovered.
+
 ![Telerik {{ site.framework_name }} DataGrid-troubleshooting-styling-custom-header-Solution](images/gridview-troubleshooting-styling-custom-header-Solution.png)
 
 ## See Also

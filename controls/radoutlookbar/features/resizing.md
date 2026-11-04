@@ -18,7 +18,8 @@ RadOutlookBar has three areas where the RadOutlookBarItems can reside - __active
 __Example 1: Defining the RadOutlookBar__
 <snippet id='radoutlookbar-features-resizing-block_1-xaml' />
 
-#### Figure 1: Item Areas
+>caption Item areas
+
 ![{{ site.framework_name }} RadOutlookBar Item Areas](images/radoutlookbar-resizing-0.png)
 
 Items are arranged in the active area by default. If there is not enough space for all items, some will get moved to the minimized area. If the minimized area is not wide enough, the items go to the overflow area.

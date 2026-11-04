@@ -23,7 +23,8 @@ __Example 1: Set StartTickOffset and EndTickOffset__
 <snippet id='radgauge-features-linear-and-radial-scales-basics-example_1_set_starttickoffset_and_endtickoffset-xaml' />
 
 
-#### __Figure 1: Result from Example 1__
+>caption Result from example 1
+
 ![VerticalLinearScale with StartTickOffset and EndTickOffset](images/RadGauge_Features_BaseScale_01.png)
 
 ## Scale Width
@@ -36,7 +37,8 @@ __Example 2: Set StartWidth and EndWidth properties__
 <snippet id='radgauge-features-linear-and-radial-scales-basics-example_2_set_startwidth_and_endwidth_properties-xaml' />
 
 
-#### __Figure 2: Result from Example 2__
+>caption Result from example 2
+
 ![VerticalLinearScale with StartWidth and EndWidth](images/RadGauge_Features_BaseScale_02.png)
 
 ## Interactivity
@@ -71,7 +73,8 @@ __Example 5: RadialScale with ClassicLogarithmicDistribution__
 <snippet id='radgauge-features-linear-and-radial-scales-basics-example_5_radialscale_with_classiclogarithmicdistribution-xaml' />
 
 
-#### __Figure 3: Results from Examples 3,4,5 respectively__
+>caption Results from examples 3,4,5 respectively
+
 ![RadialScales with different distributions](images/RadGauge_Features_BaseScale_03.png)
 
 ## Reversed Scale
@@ -82,7 +85,8 @@ __Example 6: Create reversed scale__
 <snippet id='radgauge-features-linear-and-radial-scales-basics-example_6_create_reversed_scale-xaml' />
 
 
-#### __Figure 4: Result from Example 6__
+>caption Result from example 6
+
 ![Gauge with reversed scale](images/RadGauge_Features_BaseScale_04.png)
 
 ## Show First and Last Label
@@ -95,7 +99,8 @@ __Example 7: Set ShowFirstLabel and ShowLastLabel__
 <snippet id='radgauge-features-linear-and-radial-scales-basics-example_7_set_showfirstlabel_and_showlastlabel-xaml' />
 
 
-#### __Figure 5: Result from Example 7__
+>caption Result from example 7
+
 ![Scale without last label](images/RadGauge_Features_BaseScale_05.png)
 
 ## Ranges

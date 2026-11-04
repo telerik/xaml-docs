@@ -53,7 +53,7 @@ __Defining RadGridView and consuming the collection view__
 	<telerik:RadGridView ItemsSource="{Binding}"/>
 ```  
 
-__RadGridView populate with QueryableCollectionView__
+>caption RadGridView populate with QueryableCollectionView
 
 ![{{ site.framework_name }} RadGridView populate with QueryableCollectionView](images/consuming-data-queryablecollectionview-0.png)
 
@@ -67,7 +67,7 @@ __Defining a SortDescriptor__
 	qcv.SortDescriptors.Add(new SortDescriptor() { Member = "Value", SortDirection = ListSortDirection.Descending });            
 ```  
 
-__RadGridView sorted with QueryableCollectionView SortDescriptors__
+>caption RadGridView sorted with QueryableCollectionView SortDescriptors
 
 ![{{ site.framework_name }} RadGridView sorted with QueryableCollectionView SortDescriptors](images/consuming-data-queryablecollectionview-1.png)
 
@@ -98,7 +98,7 @@ __Defining a FilterDescriptor__
 	});
 ```  
 
-__RadGridView filtered with QueryableCollectionView FilterDescriptors__
+>caption RadGridView filtered with QueryableCollectionView FilterDescriptors
 
 ![{{ site.framework_name }} RadGridView filtered with QueryableCollectionView FilterDescriptors](images/consuming-data-queryablecollectionview-2.png)
 
@@ -127,7 +127,7 @@ __Defining a GroupDescriptor__
 	});
 ```  
 
-__RadGridView grouped with QueryableCollectionView GroupDescriptors__
+>caption RadGridView grouped with QueryableCollectionView GroupDescriptors
 
 ![{{ site.framework_name }} RadGridView grouped with QueryableCollectionView GroupDescriptors](images/consuming-data-queryablecollectionview-3.png)
 
@@ -232,7 +232,7 @@ __Adding descriptors in XAML__
     </Window.Resources>
 ``` 
 
-__RadGridView populated using QueryableCollectionViewSource__
+>caption RadGridView populated using QueryableCollectionViewSource
 
 ![{{ site.framework_name }} RadGridView populated using QueryableCollectionViewSource](images/consuming-data-queryablecollectionview-4.png)
 

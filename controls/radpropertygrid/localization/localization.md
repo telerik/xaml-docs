@@ -34,7 +34,7 @@ In order to be able to distinguish the localization resources, a unique identifi
         
 Here is a list of the __Resources__ available and their default values:
         
-<table><tr><td>Key</td><td>Value</td></tr><tr><td>Categorize</td><td>Categorize</td></tr><tr><td>Alphabetical</td><td>Alphabetical</td></tr></table>
+<table><tr><th scope="col">Key</th><th scope="col">Value</th></tr><tr><td>Categorize</td><td>Categorize</td></tr><tr><td>Alphabetical</td><td>Alphabetical</td></tr></table>
 
 ## See Also
 

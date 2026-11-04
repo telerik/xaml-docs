@@ -115,16 +115,16 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 5. The following pictures show the final result.
 
-	__Click the Office Black button to show a black and grey theme.__  
-	
+>caption Click the Office black button to show a black and grey theme.
+
 	![Telerik UI for WPF controls with the Office Black theme](images/DynamicSwitchThemes_01.png)
 
-	__The Windows8 theme shows a different set of colors for all controls – the flat styling of Windows 8.__  
-	
+>caption The Windows8 theme shows a different set of colors for all controls – the flat styling of Windows 8.
+
 	![Telerik UI for WPF controls with the Windows8 theme](images/DynamicSwitchThemes_02.png)
 
-	__And finally, the Windows7 theme shows a blue-grey gradient set of colors for the controls.__  
-	
+>caption And finally, the Windows7 theme shows a blue-grey gradient set of colors for the controls.
+
 	![Telerik UI for WPF controls with the Windows7 theme](images/DynamicSwitchThemes_03.png)
 
 ## See Also

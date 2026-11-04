@@ -36,7 +36,7 @@ To better understand how these operations work, we need to first examine how **R
 
 In any other case, **RadDataForm** will not be able to add an item and the respective **Add** button will be disabled. 
 
-#### __Figure 1: RadDataForm with disabled Add and Remove buttons__
+>caption RadDataForm with disabled add and remove buttons
 
 ![raddataform-crud-operations-1](images/raddataform-crud-operations-1.png)
 
@@ -50,7 +50,7 @@ Similar to the Add operation, you will be able to remove items in any of the fol
 
 * The collection implements a **Remove** method with a single parameter - the object to remove from the collection.
 
-#### __Figure 2: RadDataForm with enabled Add and Remove buttons__
+>caption RadDataForm with enabled add and remove buttons
 
 ![raddataform-crud-operations-2](images/raddataform-crud-operations-2.png)
 

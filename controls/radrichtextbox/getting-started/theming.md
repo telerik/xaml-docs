@@ -36,7 +36,7 @@ To change the theme, you can follow the steps below:
 #### [XAML] Example 1: Merge the ResourceDictionaries
 <snippet id='radrichtextbox-getting-started-theming-block_1-xaml' />
 
-__RadRichTextBox with the Windows8 theme__  
+>caption RadRichTextBox with the Windows8 theme
 
 ![Telerik {{ site.framework_name }} RadRichTextBox with Windows 8 Theme](images/RadRichTextBox-Windows8.png)
 

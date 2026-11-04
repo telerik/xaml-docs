@@ -145,7 +145,7 @@ __Example 10: Selecting а single cell region__
 <snippet id='radgridview-selection-programmatic-selection-example_10_selecting_single_cell_region-vb' />
 
 
-#### __Figure 1: The selected region__
+>caption The selected region
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing a single cell region selected programmatically](images/programmatic-selection-select-single-region.jpg)
 
@@ -156,7 +156,7 @@ __Example 11: Selecting multiple cell regions__
 <snippet id='radgridview-selection-programmatic-selection-example_11_selecting_multiple_cell_regions-vb' />
 
 
-#### __Figure 2: The selected regions__
+>caption The selected regions
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing multiple cell regions selected programmatically](images/programmatic-selection-select-multiple-regions.jpg)
 

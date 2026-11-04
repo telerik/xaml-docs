@@ -18,7 +18,8 @@ __Defining an ImageCard__
 <snippet id='radchat-features-messages-card-messages-imagecard-example_1_defining_an_imagecard-cs' />
 
 
-__Defining ImageCard__
+>caption Defining ImageCard
+
 ![Defining ImageCard](images/RadChat_ImageCard_01.png)
 
 ## Card Orientation
@@ -30,7 +31,8 @@ __RadChat__ exposes the __CardOrientation__ property for controlling its orienta
 
 The default value is __Portrait__. When set to __Landscape__ the previously defined __ImageCard__ will be visualized as shown below.
 
-__Defining ImageCard with Landscape CardOrientation__
+>caption Defining ImageCard with landscape CardOrientation
+
 ![Defining ImageCard](images/RadChat_ImageCard_02.png)
 
 ## Display Mode
@@ -42,7 +44,8 @@ The display mode of the Image of __ImageCard__ can be manipulated through the __
 
 By default, the property will be set to __Stretch__. Setting it to __Thumbnail__ will have the following output.
 
-__Defining ImageCard with Thumbnail ImageDisplayMode__
+>caption Defining ImageCard with thumbnail ImageDisplayMode
+
 ![Defining ImageCard](images/RadChat_ImageCard_03.png)
 
 ## See Also

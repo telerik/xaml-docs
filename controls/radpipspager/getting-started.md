@@ -42,7 +42,7 @@ The RadPipsPager control works with `RadPipsPagerItem` elements that are added t
 __Adding RadPipsPagerItems__
 <snippet id='radpipspager-getting-started-block_2-xaml' />
 
-__RadPipsPager with manually added items__
+>caption RadPipsPager with manually added items
 
 ![{{ site.framework_name }} RadPipsPager with manually added items](images/radpipspager-getting-started-0.png)
 
@@ -63,7 +63,7 @@ __Creating the view model__
 __Creating the view__
 <snippet id='radpipspager-getting-started-block_5-xaml' />
 
-__RadPipsPager and RadSlideView result__
+>caption RadPipsPager and RadSlideView result
 
 ![{{ site.framework_name }} RadPipsPager and RadSlideView result](images/radpipspager-getting-started-1.png)
 
@@ -88,7 +88,7 @@ __Merge the ResourceDictionaries__
 
 The following image shows a RadPipsPager with the __Windows8__ theme applied.
 
-__RadPipsPager with the Windows8 theme__
+>caption RadPipsPager with the Windows8 theme
 
 ![{{ site.framework_name }} RadPipsPager with the Windows8 theme](images/radpipspager-getting-started-2.png)
 

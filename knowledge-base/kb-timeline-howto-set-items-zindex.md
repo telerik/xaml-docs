@@ -143,7 +143,8 @@ __Example 5: Defining the RadTimeLine__
     </telerik:RadTimeline>
 ```
 
-#### __Figure 1: Result from Example 5__
+>caption Result from example 5
+
 ![RadTimeLine items with customized ZIndex](images/kb-timeline-how-to-set-item-zindex.png)
 
 ## See Also

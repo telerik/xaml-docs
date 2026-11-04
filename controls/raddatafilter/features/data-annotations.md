@@ -26,7 +26,8 @@ __Defining class Person__
 
 If you filter a collection of __Person__ objects via the __RadDataFilter__ control, in the DropDown for the Data Members you should see the following:
 
-Figure 1: RadDataFilter displaying all the members to filter on.
+>caption RadDataFilter displaying all the members to filter on.
+
 ![{{ site.framework_name }} RadDataFilter RadDataFilter displaying all the members to filter on.](images/RadDataFilter_Features_DataAnnotations_01.png)
 
 You can customize Members shown in the ComboBox with available members to filter on (PART_SimpleFilterMemberComboBox) by specifying whether a property should be displayed or not via __BrowsableAttribute__.
@@ -38,7 +39,7 @@ __Setting a property to not be displayed__
 <snippet id='raddatafilter-features-data-annotations-setting_a_property_to_not_be_displayed-cs' />
 
 
-Figure 2: RadDataFilter displaying the Browsable members.
+>caption RadDataFilter displaying the browsable members.
 
 ![Rad Data Filter Features Data Annotations 02](images/RadDataFilter_Features_DataAnnotations_02.png)
 

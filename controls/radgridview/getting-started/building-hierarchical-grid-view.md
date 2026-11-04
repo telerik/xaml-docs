@@ -15,7 +15,7 @@ This tutorial will walk you through the process of displaying hierarchical data 
 
 The final result should look like the one displayed in the next image.
 
-__Hierarchical RadGridView__
+>caption Hierarchical RadGridView
 
 ![Telerik UI for WPF RadGridView hierarchical grid with parent divisions and expanded child team grids](images/RadGridView_BuildingHierarchicalGrid_3.png)
 
@@ -64,7 +64,7 @@ __Setting the control's ItemsSource__
 <snippet id='radgridview-getting-started-building-hierarchical-grid-view-setting_the_control_s_itemssource-vb' />
 
 
-__RadGridView without a hierarchy__
+>caption RadGridView without a hierarchy
 
 ![Telerik UI for WPF RadGridView without hierarchy showing only the parent division rows](images/RadGridView_BuildingHierarchicalGrid_1.png)
 
@@ -76,7 +76,7 @@ __Defining ChildTableDefinitions__
 <snippet id='radgridview-getting-started-building-hierarchical-grid-view-defining_childtabledefinitions-xaml' />
 
 
-__RadGridView with a hierarchy__
+>caption RadGridView with a hierarchy
 
 ![Telerik UI for WPF RadGridView with hierarchy showing expandable child team rows under each division](images/RadGridView_BuildingHierarchicalGrid_2.png)
 
@@ -90,7 +90,7 @@ __Setting the control's HierarchyChildTemplate__
 <snippet id='radgridview-getting-started-building-hierarchical-grid-view-setting_the_control_s_hierarchychildtemplate-xaml' />
 
 
-__Customized child grids__
+>caption Customized child grids
 
 ![Telerik UI for WPF RadGridView with customized child grids showing division rows and child team columns](images/RadGridView_BuildingHierarchicalGrid_3.png)
 

@@ -15,7 +15,8 @@ RadTaskBoard provides you with selection functionality, which allows the user to
 
 Users can select an item through the control's UI by clicking somewhere on a given task.
 
-#### Figure 1: RadTaskBoard Selection
+>caption RadTaskBoard selection
+
 ![Telerik TaskBoard Selection 0](images/taskboard_selected_task_0.png)
 
 ## Disabling Selection

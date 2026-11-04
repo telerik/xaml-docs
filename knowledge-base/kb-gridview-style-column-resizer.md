@@ -78,7 +78,7 @@ __Example 1: Override the ColumnHeaderGripperStyle__
     </Application.Resources>
 ```
 
-#### Figure 1: The modified column resizers
+>caption The modified column resizers
 
 ![The modified column resizers](images/kb-gridview-style-column-resizer-0.png)
 

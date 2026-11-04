@@ -43,7 +43,8 @@ __Example 2__ demonstrates how the VirtualizingWrapPanel can be used as an Items
 __Example 2: RadListBox with VirtualizingWrapPanel as ItemsPanel__
 <snippet id='radlistbox-features-virtualizingwrappanel-block_2-xaml' />
 
-#### __Figure 1: Result from Example 2 in the Office2016 theme__
+>caption Result from example 2 in the Office2016 theme
+
 ![RadListBox with VirtualizingWrapPanel as ItemsPanel](images/radlistbox_features_virtualizingwrappanel.gif)
 
 ## Grouping

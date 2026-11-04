@@ -24,7 +24,7 @@ __Example 1: Setting the IsBusy property__
 
 You can data bind this property in any way that suits your custom logic. Note that the indicator will be visible only when the __IsBusy__ property is set to __True__.
 
-__RadGridView with busy indicator__
+>caption RadGridView with busy indicator
 
 ![Telerik UI for WPF RadGridView busy indicator displayed while loading data](images/gridview-features-isbusy.gif)
 
@@ -46,7 +46,7 @@ __Example 2: Defining a determined indicator__
 <snippet id='radgridview-features-busy-indicator-example_2_defining_a_determined_indicator-xaml' />
 
 
-__RadGridView with determined busy indicator__
+>caption RadGridView with determined busy indicator
 
 ![Telerik UI for WPF RadGridView determined busy indicator showing progress value](images/gridview-features-progress-value.png)
 
@@ -66,7 +66,7 @@ __Example 4: Setting BusyIndicatorContentTemplate__
 <snippet id='radgridview-features-busy-indicator-example_4_setting_busyindicatorcontenttemplate-xaml' />
 
 
-__RadGridView with busy indicator with custom content template__
+>caption RadGridView with busy indicator with custom content template
 
 ![Telerik UI for WPF RadGridView busy indicator with custom content template showing loading percentage](images/gridview-features-content-template.png)
 

@@ -13,7 +13,7 @@ position: 3
 
 The standard RadPane can be [docked/floating]({%slug raddocking-features-panes-docked-floating-panes%}), [pinned/unpinned]({%slug raddocking-panes-pinned-unpinned-panes%}) or [grouped]({%slug raddocking-features-pane-groups%}). **Figure 1** shows the appearance of the RadPane in each one of these states.
 
-#### Figure 1: RadPane states
+>caption RadPane states
 
 ![RadPane states](images/RadDocking_Features_Panes_RadPane_010.png)
 

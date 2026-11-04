@@ -55,7 +55,7 @@ __Example 3: Submit changes made in the RadGridView control__
 
 After all of this, you should be able to see the data from your service as shown in **Figure 1**.
 
-#### Figure 1: The data from the service in RadGridView
+>caption The data from the service in RadGridView
 
 ![The data from the service in RadGridView](images/integrate-web-api.png)
 

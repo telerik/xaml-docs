@@ -71,10 +71,10 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 
 The next figures shows the final result. When the Start or End of a Task is resized by resizing the task object it is snapped to the nearest Day depending on if the Task has been resized above 12:00 PM or not:
 
-Figure 1. Resizing a task and dropping it to 9/18/2013 6:00 PM.
+>caption Resizing a task and dropping it to 9/18/2013 6:00 PM.
 
 ![radganttview-dragdrop-custom-behaviors-1](images/radganttview-dragdrop-custom-behaviors-1.jpg)
 
-Figure 2. The task’s end time is snapped to 9/19/2013 12:00 AM.
+>caption The task’s end time is snapped to 9/19/2013 12:00 AM.
 
 ![radganttview-dragdrop-custom-behaviors-2](images/radganttview-dragdrop-custom-behaviors-2.jpg)

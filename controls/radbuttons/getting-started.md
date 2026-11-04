@@ -134,7 +134,8 @@ __Example 10: Merge the ResourceDictionaries__
 
 __Figure 1__ shows a __RadButtons__ with the **Fluent** theme applied.
 	
-#### __Figure 1: RadButtons with the Fluent theme__
+>caption RadButtons with the fluent theme
+
 ![{{ site.framework_name }} RadButtons RadButtons with the Fluent theme](images/radbuttons-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

@@ -13,7 +13,7 @@ position: 1
 
 This article demonstrates how to add a column with a delete button for each row. We will benefit from the static [RadGridViewCommands]({%slug gridview-commands-overview%}) class to automatically delete the corresponding row item upon clicking the button. The following image illustrates the desired result.
 
-__RadGridView with custom button column__
+>caption RadGridView with custom button column
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom Delete button column in each row](images/delete_column_gridview.png)
 

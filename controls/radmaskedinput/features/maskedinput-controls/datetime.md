@@ -52,7 +52,7 @@ With the built-in functionality of the control it is not necessary to type __AM_
 __Binding the Value property__
 <snippet id='radmaskedinput-features-maskedinput-controls-datetime-block_4-cs' />
 
-__Showing the time period__
+>caption Showing the time period
 
 ![{{ site.framework_name }} RadMaskedInput Showing the time period](images/radmaskedinput_datetimeinput_ampm.png)
  
@@ -64,11 +64,11 @@ You can further format the entered value by setting the `FormatString` property.
 __Setting the FormatString property__
 <snippet id='radmaskedinput-features-maskedinput-controls-datetime-block_5-xaml' />
 
-__Showing the text value when the control is focused__
+>caption Showing the text value when the control is focused
 
 ![{{ site.framework_name }} RadMaskedInput Showing the text value when the control is focused](images/radmaskedinput_datetimeinput_format_string_focused.png)
 
-__Showing the text value when the control is unfocused__
+>caption Showing the text value when the control is unfocused
 
 ![{{ site.framework_name }} RadMaskedInput Showing the text value when the control is unfocused](images/radmaskedinput_datetimeinput_format_string_focused.png)
 

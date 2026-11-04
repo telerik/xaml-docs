@@ -16,13 +16,13 @@ ticketid: 1709974
 <table>
 <tbody>
 <tr>
-<td> Product </td>
+<th scope="row"> Product </th>
 <td> 
 UI for WPF RadFileDialogs
 </td>
 </tr>
 <tr>
-<td> Version </td>
+<th scope="row"> Version </th>
 <td> Current </td>
 </tr>
 </tbody>

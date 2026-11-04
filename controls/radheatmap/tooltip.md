@@ -46,7 +46,7 @@ __Example 4: Customizing the ToolTip__
 <snippet id='radheatmap-tooltip-example_4_customizing_the_tooltip-xaml' />
 
 
-#### __Figure 1: RadHeatMap with customized ToolTip__
+>caption RadHeatMap with customized ToolTip
 
 ![RadHeatMap with selection enabled](images/radheatmap-tooltip_0.PNG)
 

@@ -22,7 +22,8 @@ __Example 1: Creating an implicit style targeting RadPaneGroup__
 <snippet id='raddocking-styles-and-templates-styling-the-radpanegroup-example_1_creating_an_implicit_style_targeting_radpanegroup-xaml' />
 
 
-#### __Figure 1: Styled RadPaneGroup in the Office2016 theme__
+>caption Styled RadPaneGroup in the Office2016 theme
+
 ![Styled RadPaneGroup in the Office2016 theme](images/RadDocking_RadPaneGroup_Styling.png)
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.

@@ -27,7 +27,7 @@ __Example 1: RadDataForm with Default EditMode__
 <snippet id='raddataform-features-edit-modes-example_1_raddataform_with_default_editmode-xaml' />
 
 
-__Figure 1__: RadDataForm with Default EditMode
+>caption RadDataForm with default EditMode
 
 ![RadDataForm with Default EditMode](images/raddataform-default-editmode.png)
 
@@ -42,7 +42,7 @@ __Example 2: RadDataForm with EditMode set to Single__
 <snippet id='raddataform-features-edit-modes-example_2_raddataform_with_editmode_set_to_single-xaml' />
 
 
-__Figure 2__: RadDataForm with Single EditMode
+>caption RadDataForm with single EditMode
 
 ![RadDataForm with Single EditMode](images/raddataform-single-editmode.png)
           

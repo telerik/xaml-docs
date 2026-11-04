@@ -69,7 +69,7 @@ private void OnOpenAssistantButtonClick(object sender, RoutedEventArgs e)
 
 The assistant also closes itself automatically: when the end user presses `Escape` while it has focus, clicks outside of it, or when the `TextBox` it is attached to is unloaded.
 
-__RadInlineAIAssistant Opened next to a TextBox__
+>caption RadInlineAIAssistant opened next to a TextBox
 
 ![WPF RadInlineAIAssistant Opened next to a TextBox](images/radinlineaiassistant-getting-started-001.png)
 
@@ -88,7 +88,7 @@ private void OnPromptRequest(object sender, InlineAIAssistantPromptRequestEventA
 
 Once a response is set, `RadInlineAIAssistant` displays it above the input area with __Insert__, __Replace__, and __Discard__ actions. To learn how to stream a response instead of setting it all at once, check the [Handling Responses]({%slug radinlineaiassistant-handling-responses%}) article.
 
-__RadInlineAIAssistant Displaying a Response__
+>caption RadInlineAIAssistant displaying a response
 
 ![WPF RadInlineAIAssistant Displaying a Response](images/radinlineaiassistant-getting-started-002.png)
 

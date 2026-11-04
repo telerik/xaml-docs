@@ -19,7 +19,8 @@ __Example 1: Setting the WrapAround property__
 <snippet id='radmap-features-wraparound-block_1-xaml' />
 
 
-#### __Figure 1: Wraparound functionality enabled__
+>caption Wraparound functionality enabled
+
 ![{{ site.framework_name }} RadMap Wraparound functionality enabled](images/RadMap_Features_WrapAround_01.png)
 
 When the wraparound is enabled, the longitude of the map's viewport can exceed the valid geographical boundaries (from -180 to 180 degrees in the default Mercator projection) when you pan the viewport. The [Location Conversion](#location-conversion) section of this article explains how to convert shifted locations to valid geographical boundaries (-180 to 180).

@@ -15,7 +15,7 @@ position: 6
 Besides the [automatic series mapping]({%slug radchart-populating-with-data-data-binding-with-automatic-series-binding%}), __RadChart__ supports manual series mapping where you have a full control on how the data is bound to the chart.
 	  
 
-## 
+## Configuring Manual Series Mappings
 
 The manual series mapping offers you the following opportunities:
 		

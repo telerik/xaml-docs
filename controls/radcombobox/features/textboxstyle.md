@@ -19,7 +19,8 @@ __Example 1: Setting TextBoxStyle__
 <snippet id='radcombobox-features-textboxstyle-example_1_setting_textboxstyle-xaml' />
 
 
-#### Figure 1: Input area with changed colors and font
+>caption Input area with changed colors and font
+
 ![{{ site.framework_name }} RadComboBox Input area with changed colors and font](images/radcombobox-features-textboxstyle-0.png)
 
 ## See Also  

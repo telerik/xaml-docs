@@ -19,7 +19,7 @@ To edit the default invalid row style, you can extract the __ControlTemplate__ o
 
 >tip In case you use different themes and the user can change them at runtime, you will have to extract and modify the default template of the GridViewRow for each theme that you are using.
 
-#### __Figure 1: The default invalid row__
+>caption The default invalid row
 
 ![Telerik {{ site.framework_name }} DataGrid Invalid-Row-](images/styling-invalid-row.PNG)
 

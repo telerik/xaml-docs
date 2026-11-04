@@ -32,7 +32,8 @@ Through the __GroupExpandMode__ property of the RadTimeline, you can control whe
 	__Example 2: Setting the GroupExpandMode property to None__
 	<snippet id='radtimeline-features-grouping-block_3-xaml' />
 
-	#### __Figure 1: Result from Example 2__
+>caption Result from example 2
+
 	![Rad Timeline-features-grouping-0-Group Expand Mode-None](images/RadTimeline-features-grouping-0-GroupExpandMode-None.jpg)
 
 * __Single__: A value of __Single__ indicates that only one group of timeline items can be expanded at a time. By default, all groups of timeline items are collapsed in this mode.              
@@ -40,7 +41,8 @@ Through the __GroupExpandMode__ property of the RadTimeline, you can control whe
 	__Example 3: Setting the GroupExpandMode to Single__
 	<snippet id='radtimeline-features-grouping-block_4-xaml' />
 
-	#### __Figure 2: Result from Example 3__
+>caption Result from example 3
+
 	![Rad Timeline-features-grouping-1-Group Expand Mode-Single](images/RadTimeline-features-grouping-1-GroupExpandMode-Single.jpg)
 
 * __Multiple__: A value of __Multiple__ indicates that multiple groups of timeline items can be expanded at a time. By default, all groups of timeline items are collapsed in this mode.      
@@ -48,7 +50,8 @@ Through the __GroupExpandMode__ property of the RadTimeline, you can control whe
 	__Example 4: Setting the GroupExpandMode to Multiple__
 	<snippet id='radtimeline-features-grouping-block_5-xaml' />
 
-	#### __Figure 2: Result from Example 4__
+>caption Result from example 4
+
 	![Rad Timeline-features-grouping-2-Group Expand Mode-Multiple](images/RadTimeline-features-grouping-2-GroupExpandMode-Multiple.jpg)
 
 ## Changing the default collapsed state of expandable groups

@@ -31,7 +31,8 @@ __Example 1: Styling RadMenuItem__
 
 <snippet id='radmenu-styles-and-templates-styling-and-appearance-styling-radmenuitem-block_1-xaml' />
 
-#### __Figure 1: RadMenuItems with red Background in the Fluent theme__
+>caption RadMenuItems with red background in the fluent theme
+
 ![RadMenuItems with red Background in the Fluent theme](images/RadMenuItem_Styling.png)
 
 >tip In __Figure 1__ you can observe that the clicked menu item has a different background. Inside the ControlTemplate of the RadMenuItem there are triggers/visual states, which set the Background when an item is clicked and that value takes precedence over the value from the implicit style. In order to change this behavior, you can [extract and modify the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of the RadMenuItem for the theme(s) that you are using.

@@ -45,11 +45,11 @@ __Example 2: Define GridViewHyperlinkColumn in XAML__
 
 **Figure 1** illustrates the result of the code in **Example 1**.
 
-#### Figure 1: RadGridView with a hyperlink column
+>caption RadGridView with a hyperlink column
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a GridViewHyperlinkColumn displaying team links](images/RadGridView_ColumnTypes_HyperlinkColumn.png)
 
-# See also
+## See also
 
 * [Dynamic Hyperlink Column]({%slug radgridview-columns-column-types-dynamic-hyperlink-column%})
 * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})

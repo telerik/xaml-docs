@@ -15,7 +15,7 @@ Since R2 2022 the Spreadsheet control supports working with comments.
 
 Comments are used for leaving information about a cell's data, where each comment can be replied to, thus creating a thread. All Comments can be found in the __Comments__ collection of the worksheet. More information about using Comments in code is available here: [SpreadProcessing Comments](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/comments). 
 
-__Sample Comment__
+>caption Sample comment
 
 ![RadSpreadProcessing Comments](images/RadSpreadProcessing_Comments_01.png)
 
@@ -23,11 +23,11 @@ __Sample Comment__
 
 RadSpreadsheet enables working with Comments through its UI. There are two ways for adding Comments, via the context menu and from the Comments group on the Review tab.
 
-__Add Comment from the Context Menu__
+>caption Add comment from the context menu
 
 ![RadSpreadProcessing Comments](images/RadSpreadProcessing_Comments_02.png)
 
-__Add Comment from the Comments Group__
+>caption Add comment from the comments group
 
 ![RadSpreadProcessing Comments](images/RadSpreadProcessing_Comments_03.png)
 
@@ -44,7 +44,7 @@ As you can see in the above image, the Comments group allows you to perform the 
 
 To edit a Comment select a cell that contains one, mouse over the Comment content and click "Edit Comment" from the Comments group or from the Comments pane.
 
-__Edit Comment__
+>caption Edit comment
 
 ![RadSpreadProcessing Comments](images/RadSpreadProcessing_Comments_04.png)
 
@@ -52,7 +52,7 @@ __Edit Comment__
 
 To reply to a Comment simply type your reply in its the textbox or select its cell and click "Reply Comment" from the Comments group. 
 
-__Reply to Comment__
+>caption Reply to comment
 
 ![RadSpreadProcessing Comments](images/RadSpreadProcessing_Comments_07.png)
 
@@ -60,7 +60,7 @@ __Reply to Comment__
 
 To delete a Comment select it and click "Delete Comment" from the context menu or use the comment's hamburger-menu option "Delete Thread". You can also use the "Delete Comment" option in the context menu on a selection of cells to delete any comments they contain. All listed options delete the comments as well as ***all*** of their replies.
 
-__Delete Comment__
+>caption Delete comment
 
 ![RadSpreadProcessing Comments](images/RadSpreadProcessing_Comments_06.png)
 
@@ -68,6 +68,6 @@ __Delete Comment__
 
 The Comments group allows showing the Comments pane.
 
-__Show or Hide Comment__
+>caption Show or hide comment
 
 ![RadSpreadProcessing Comments](images/RadSpreadProcessing_Comments_05.png)

@@ -21,7 +21,7 @@ This article will show you how to conditionally apply a different data template 
 		
 Assume we have a __RadGridView__ bound to a collection of clubs. Each club has a property __StadiumCapacity__  and has row details of players that play in it. What we want to achieve is to apply one data template if the capacity is greater than 50 000 and another otherwise:
 
-__Figure 1:__ Displays the two different data templates for a big and small stadiums.
+>caption Displays the two different data templates for a big and small stadiums.
 
 ![Telerik UI for {{ site.framework_name }} RadGridView using a RowDetailsTemplateSelector to show different row details for large and small stadiums](images/RowDetailsTemplateSelector.png)
 

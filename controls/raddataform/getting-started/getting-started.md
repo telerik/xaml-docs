@@ -52,7 +52,7 @@ __Example 1: Adding RadDataForm in XAML__
 
 Now if you run the application, you will see the empty RadDataForm:
 
-#### __Figure 1: Empty RadDataForm__
+>caption Empty RadDataForm
 
 ![Empty RadDataForm](images/radDataForm_emptyForm.png)
 
@@ -89,7 +89,7 @@ __Example 4: Binding a Single Item to RadDataForm__
 
 After you run the application you should see the following:
 
-#### __Figure 2: RadDataForm bound to a single item__
+>caption RadDataForm bound to a single item
 
 ![RadDataForm bound to a single item](images/RadDataForm_bindToSingleItem.png)
 
@@ -115,7 +115,7 @@ __Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection
 
 On running the application, you should see the following:
 
-#### __Figure 3: RadDataForm bound to a collection of items__
+>caption RadDataForm bound to a collection of items
 
 ![RadDataForm bound to a collection of items](images/RadDataForm_bindToCollection.png)
 

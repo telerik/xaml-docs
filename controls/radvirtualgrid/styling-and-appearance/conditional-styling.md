@@ -40,7 +40,7 @@ __Applying conditional styling through the CellDecorationsNeeded event__
 
 >For the effects of the `CellTextAlignment` property to be applied, the control's [MeasureTextOnRender]({%slug virtualgrid-getting-started2%}#measuretextonrender) property has to be set to `True`.
 
-__RadVirtualGrid with conditional styling applied__
+>caption RadVirtualGrid with conditional styling applied
 
 ![RadVirtualGrid with conditional styling applied](images/RadVirtualGrid_Styling_02.png)
 

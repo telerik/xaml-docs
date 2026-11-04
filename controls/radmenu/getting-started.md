@@ -49,7 +49,7 @@ __Adding RadMenuItems__
 
 <snippet id='radmenu-getting-started-block_2-xaml' />
 
-__RadMenu with added items__
+>caption RadMenu with added items
 
 ![RadMenu example result](images/menu-getting-started-result.png)
 
@@ -121,7 +121,7 @@ __Merge the ResourceDictionaries__
 
 The following image shows a `RadMenu` with the `Windows8` theme applied.
 
-__RadMenu with the Windows8 theme__
+>caption RadMenu with the Windows8 theme
 
 ![RadMenu with Windows8 theme](images/radmenu-setting-theme.png)
 

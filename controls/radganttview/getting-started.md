@@ -41,7 +41,8 @@ __Example 1: Defining a RadGanttView__
 
 If you run the application now, you will see an empty RadGanttView as demonstrated in __Figure 1__:
 
-#### __Figure 1: Empty RadGanttView__
+>caption Empty RadGanttView
+
 ![Empty RadGanttView](images/ganttview_gettingstarted_010.png)
 
 ## Define columns
@@ -71,7 +72,7 @@ __Example 4: Binding to a TaskSource__
 <snippet id='radganttview-getting-started-example_4_binding_to_a_tasksource-xaml' />
 
 
-#### __Figure 2: Result from Example 4 in the Office2016 theme__
+>caption Result from example 4 in the Office2016 theme
 
 ![RadGanttView populated with data](images/ganttview_gettingstarted_020.png)
 
@@ -95,7 +96,8 @@ __Example 5: Merge the ResourceDictionaries__
 <snippet id='radganttview-getting-started-example_5_merge_the_resourcedictionaries-xaml' />
 
 	
-#### __Figure 3: RadGanttView with the Windows8 theme applied__
+>caption RadGanttView with the Windows8 theme applied
+
 ![RadGanttView with Windows8 theme](images/ganttview_gettingstarted_windows8theme.png)
 
 {% if site.site_name == 'WPF' %}

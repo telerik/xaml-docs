@@ -25,7 +25,7 @@ In the above example the property __IsBreak__ of the tab item "Colors" is set to
 
 By default, the RadTabControl will display two arrows when the width of the tab items exceeds the available width with which you can bring the rest of the items into view. This is illustrated in **Figure 1**.
 
-#### Figure 1: RadTabControl with default overflow mode
+>caption RadTabControl with default overflow mode
 
 ![RadTabControl with default overflow mode](images/Scroll-OverflowMode.png)
 
@@ -35,7 +35,7 @@ __Example 2: Set the control's OverflowMode__
 
 <snippet id='radtabcontrol-features-tab-item-multiline-tabs-block_2-xaml' />
 
-#### Figure 2: RadTabControl with Wrap OverflowMode
+>caption RadTabControl with wrap OverflowMode
 
 ![RadTabControl with Wrap OverflowMode](images/Wrap-OverflowMode.png)
 

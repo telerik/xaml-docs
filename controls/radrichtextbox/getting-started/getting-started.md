@@ -84,7 +84,7 @@ __Adding RadRichTextBox in XAML__
 
 When you run the application, you will see an empty RadRichTextBox.
 
-__Empty RadRichTextBox__
+>caption Empty RadRichTextBox
 
 ![RadRichTextBox Empty RadRichTextBox](images/RadRichTextBox_GettingStarted_01.png)
 
@@ -110,7 +110,7 @@ If you reference the corresponding dll manually (instead of using the NuGet pack
 * `Telerik.Windows.Controls.Navigation`
 * `Telerik.Windows.Controls.RibbonView`
 
-__Predefined RadRichTextBoxRibbonUI__
+>caption Predefined RadRichTextBoxRibbonUI
 
 ![RadRichTextBox RadRichTextBoxRibbonUI](images/RadRichTextBox_GettingStarted_02.png)
 

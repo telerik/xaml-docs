@@ -22,7 +22,7 @@ RadSpreadsheet enables you to work with charts through its UI. You can add a cha
 
 >note To be able to see the charts, you must select at least two consecutive cells, otherwise you will get an error message. In case the selected cells don't contain any values, the charts will be shown empty. 
 
-__Insert Chart Dialog__
+>caption Insert chart dialog
 
 ![{{ site.framework_name }} RadSpreadsheet Insert Chart dialog](images/Features-Charts_15.png)
 

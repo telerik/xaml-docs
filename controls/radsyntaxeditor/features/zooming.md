@@ -12,7 +12,8 @@ position: 4
 
 The RadSyntaxEditor control provides out of the box zooming functionality. You can zoom in the opened document by holding the **Ctrl** key and spinning the mouse wheel or by using the **ZoomComboBox** located in the bottom-left corner of the control.
 
-#### __Figure 1: Zooming the RadSyntaxEditor__
+>caption Zooming the RadSyntaxEditor
+
 ![Zooming the RadSyntaxEditor](images/syntaxeditor-zooming.gif)
 
 ## ScaleFactor

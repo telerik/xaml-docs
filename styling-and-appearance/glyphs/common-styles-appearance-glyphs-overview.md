@@ -108,7 +108,8 @@ The following list provides examples that demonstrate how to use glyphs:
 		</telerik:RadToggleButton>
 	```
 
-	#### __Figure 1: Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed__  
+>caption Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed
+
 	![{{ site.framework_name }} Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed](images/common-styling-appearance-glyphs-overview-0.png)
 
 * Change the glyph based on the state of the __RadToggleButton__.
@@ -135,7 +136,8 @@ The following list provides examples that demonstrate how to use glyphs:
 		</telerik:RadToggleButton>
 	```
 
-	#### __Figure 2: Dynamic change of the glyph icon when RadToggleButton is toggled__  
+>caption Dynamic change of the glyph icon when RadToggleButton is toggled
+
 	![{{ site.framework_name }} Dynamic change of the glyph icon when RadToggleButton is toggled](images/common-styling-appearance-glyphs-overview-1.png)
 
 ## Binding Glyphs

@@ -60,7 +60,8 @@ __Example 1: Setting the Text Properties of GridViewColumn__
 <snippet id='radgridview-columns-customizing-columns-example_1_setting_the_text_properties_of_gridviewcolumn-xaml' />
 
 
-#### __Figure 1: GridViewColumn with customized text properties__ 
+>caption GridViewColumn with customized text properties
+
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewColumn using custom text wrapping, alignment, trimming, and decorations](images/gridview-textproperties-column.png)
 
 ## See Also

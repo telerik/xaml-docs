@@ -18,14 +18,18 @@ __Example 1: Setting ExpandDirection property__
 <snippet id='radexpander-features-expand-direction-example_1_setting_expanddirection_property-xaml' />
 
 
-#### __Figure 1: ExpandDirection set to Down__
+>caption ExpandDirection set to down
+
 ![{{ site.framework_name }} RadExpander ExpandDirection set to Down](images/RadExpander_Features_ExpandDirection_Down.gif)
 
-#### __Figure 2: ExpandDirection set to Left__
+>caption ExpandDirection set to left
+
 ![{{ site.framework_name }} RadExpander ExpandDirection set to Left](images/RadExpander_Features_ExpandDirection_Left.gif)
 
-#### __Figure 3: ExpandDirection set to Right__
+>caption ExpandDirection set to right
+
 ![{{ site.framework_name }} RadExpander ExpandDirection set to Right](images/RadExpander_Features_ExpandDirection_Right.gif)
 
-#### __Figure 4: ExpandDirection set to Up__
+>caption ExpandDirection set to up
+
 ![{{ site.framework_name }} RadExpander ExpandDirection set to Up](images/RadExpander_Features_ExpandDirection_Up.gif)

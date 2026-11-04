@@ -39,7 +39,8 @@ __Example 2: Custom ToolTipContent__
 
 <snippet id='radradialmenu-how-to-howto-customize-tooltip-block_2-xaml' />
 
-Figure 1: Custom ToolTipContent
+>caption Custom ToolTipContent
+
 ![Rad Radial Menu Customize Tool Tip 01](images/RadRadialMenu_Customize_ToolTip_01.png)
 
 ## Customize the MenuToolTipStyle
@@ -54,7 +55,8 @@ __Example 3: Custom MenuToolTipStyle__
 
 <snippet id='radradialmenu-how-to-howto-customize-tooltip-block_3-xaml' />
 
-Figure 2: Custom MenuToolTipStyle
+>caption Custom MenuToolTipStyle
+
 ![Rad Radial Menu Customize Tool Tip 02](images/RadRadialMenu_Customize_ToolTip_02.png)
 
 ## Change the ToolTip position
@@ -69,7 +71,8 @@ __Example 5: Set the position inside the event handler__
 
 <snippet id='radradialmenu-how-to-howto-customize-tooltip-block_5-cs' />
 
-Figure 3: ToolTip with Left position set
+>caption ToolTip with left position set
+
 ![Rad Radial Menu Customize Tool Tip 03](images/RadRadialMenu_Customize_ToolTip_03.png)
 
 ## See Also

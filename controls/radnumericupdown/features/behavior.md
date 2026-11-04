@@ -45,13 +45,13 @@ __Example 1: Make RadNumericUpDown read-only__
 
 <snippet id='radnumericupdown-features-behavior-block_1-xaml' />
 
-#### Figure 1: A read-only RadNumericUpDown
+>caption A read-only RadNumericUpDown
 
 ![A read-only RadNumericUpDown](images/RadNumericUpDown_Features_Behavior_01.png)
 
 As the TextBox becomes read-only as well the value of the control could no longer be changed, but still it could be selected and copied.
 
-#### Figure 2: Select the value of а read-only RadNumericUpDown
+>caption Select the value of а read-only RadNumericUpDown
 
 ![Select the value of а read-only RadNumericUpDown](images/RadNumericUpDown_Features_Behavior_02.png)
 

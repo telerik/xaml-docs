@@ -32,23 +32,23 @@ __Example 2: Setting TouchMode in code__
 
 This section demonstrates the TouchModes with an example containing a few nested UIElements.
 
-__The logical tree of the example - parent Grid, a Border inside the grid and an Ellipse inside the border__
+>caption The logical tree of the example - parent grid, a border inside the grid and an ellipse inside the border
 
 ![TouchManager | Touch Modes Image 01](images/touchmanager_touch_modes_01.png)
 
-__TouchMode.HitTestVisible__
+>caption TouchMode.HitTestVisible
 
 ![TouchManager | Touch Modes Image 02](images/touchmanager_touch_modes_02.png)
 
-__TouchMode.HitTestHidden__
+>caption TouchMode.HitTestHidden
 
 ![TouchManager | Touch Modes Image 03](images/touchmanager_touch_modes_03.png)
 
-__TouchMode.Locked__
+>caption TouchMode.Locked
 
 ![TouchManager | Touch Modes Image 04](images/touchmanager_touch_modes_04.png)
 
-__TouchMode.None__
+>caption TouchMode.None
 
 ![TouchManager | Touch Modes Image 05](images/touchmanager_touch_modes_05.png)
 

@@ -33,7 +33,7 @@ __Example 2: Defining a DataTemplateSelector__
 
 As a result when __RadDataForm__ is in edit mode the background color of the *Salary* __DataFormDataField__ will change to red (__Figure 1__), when the employee's salary is greater than 2500 or blue when it is less.
 
-#### __Figure 1: Result of DataTemplateSelector__
+>caption Result of DataTemplateSelector
 
 ![Result of DataTemplateSelector](images/raddataform-templateselector.png)
 

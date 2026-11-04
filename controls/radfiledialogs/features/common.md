@@ -29,7 +29,8 @@ __Setting initial layout__
 <snippet id='radfiledialogs-features-common-setting_initial_layout-cs' />
 
 
-**RadOpenFileDialog in Tile view mode in the Office2016 theme**
+>caption RadOpenFileDialog in tile view mode in the Office2016 theme
+
 ![RadOpenFileDialog in Tile view mode](images/FileDialogs_TileViewMode.png)
 
 The layout is determined by the LayoutType enum that provides the following modes:
@@ -52,7 +53,7 @@ The layout is determined by the LayoutType enum that provides the following mode
 
 Since __R1 2018__, you can add a new folder in all the dialog controls with the __New Folder__ button. The created folder enters edit mode in all [Layout View Modes](#setting-the-initial-layout-of-the-tiles). 
 
-**New folder button and new folder in edit mode in the Office2016 theme**
+>caption New folder button and new folder in edit mode in the Office2016 theme
 
 ![New Folder button](images/FileDialogs_NewFolder.png)
 
@@ -60,19 +61,21 @@ Since __R1 2018__, you can add a new folder in all the dialog controls with the 
 
 In order to edit the selected file/folder, you can press the __F2__ key. Alternatively, you can click on the TextBlock which holds the file/folder name in all layouts except the **Details** layout where you can click on the cell holding the file/folder name. If you try to add a reserved character in a file/folder name, you will receive the warning illustrated below.
 
-**Reserved character warning in the Office2016 theme**
+>caption Reserved character warning in the Office2016 theme
+
 ![Reserved character warning](images/FileDialogs_EditMode.png)
 
 Trying to change the file extension prompts the message box shown below.
 
-**Changing file extension message box in the Office2016 theme** 
+>caption Changing file extension message box in the Office2016 theme
+
 ![Changing file extension message box](images/FileDialogs_ChangeFileExtensionMessageBox.png)
 
 ## Using the ContextMenu
 
 As of __R1 2018 RadFileDialogs__ has a ContextMenu. The well-known ContextMenu used in Windows is used for this purpose. It is available for the __RadListBox, RadTreeView and RadGridView__ components used in the Main Pane.
 
-**Showing the ContextMenu**
+>caption Showing the ContextMenu
 
 ![Showing the ContextMenu](images/FileDialogs_ContextMenu.png)
 
@@ -93,7 +96,8 @@ __Enable showing hidden files and folders__
 <snippet id='radfiledialogs-features-common-enable_showing_hidden_files_and_folders-cs' />
 
 
-**Showing hidden files**
+>caption Showing hidden files
+
 ![Showing hidden files](images/radfiledialogs-features-common-0.png)
 
 ## Load Drives in Background
@@ -113,7 +117,7 @@ The tooltips show the full name of the file or folder which is hovered along wit
 * **For files**&mdash;The type, size and last modified date.
 * **For folders**&mdash;The size and creation date.
 
-**Folder name tooltip**
+>caption Folder name tooltip
 
 ![Folder name tooltip](images/radfiledialogs-features-common-tooltips.png)
 

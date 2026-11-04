@@ -30,7 +30,7 @@ __Example 1: Set Filter property of RadOpenFileDialog__
 <snippet id='radfiledialogs-features-filtering-example_1_set_filter_property_of_radopenfiledialog-cs' />
 
 
-#### __Figure 1: Filter combo box visualization in RadOpenFileDialog__
+>caption Filter combo box visualization in RadOpenFileDialog
 
 ![Filter combo box in RadOpenFileDialog](images/FileDialogs_Feature_Filtering_OpenFileDialog.PNG)
 
@@ -45,7 +45,7 @@ __Example 2: Set Filter property of RadSaveFileDialog__
 <snippet id='radfiledialogs-features-filtering-example_2_set_filter_property_of_radsavefiledialog-cs' />
 
 
-#### __Figure 2: Filter combo box visualization in RadSaveFileDialog__
+>caption Filter combo box visualization in RadSaveFileDialog
 
 ![Filter combo box in RadSaveFileDialog](images/FileDialogs_Feature_Filtering_SaveFileDialog.PNG)
 

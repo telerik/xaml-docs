@@ -70,7 +70,7 @@ __Example 4: Customizing the Row/Column Headers__
 <snippet id='radheatmap-row-column-headers-example_4_customizing_the_row_column_headers-xaml' />
 
 
-#### __Figure 1: RadHeatMap with customized Row/Column Headers__
+>caption RadHeatMap with customized row/column headers
 
 ![RadHeatMap with selection enabled](images/radheatmap-row-column-headers_0.PNG)
 

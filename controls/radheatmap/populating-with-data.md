@@ -31,7 +31,8 @@ __Example 2: Setting the Definition to a CategoricalDefinition__
 <snippet id='radheatmap-populating-with-data-example_2_setting_the_definition_to_a_categoricaldefinition-xaml' />
 
 
-#### __Figure 1: RadHeatMap with CategoricalDefinition__
+>caption RadHeatMap with CategoricalDefinition
+
 ![RadHeatMap with CategoricalDefinition](images/RadHeatMap_databinding_01.PNG)
 
 ## Vertical definition
@@ -44,7 +45,8 @@ __Example 3: Setting the Definition to a VerticalDefinition__
 
 >tip You can use the same code to declare a HorizontalDefinition.
 
-#### __Figure 2: RadHeatMap with VerticalDefinition__
+>caption RadHeatMap with VerticalDefinition
+
 ![RadHeatMap with VerticalDefinition](images/RadHeatMap_databinding_02.PNG)
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/HeatMap/WPF/PopulatingWithData).

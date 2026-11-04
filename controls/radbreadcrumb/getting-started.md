@@ -127,7 +127,8 @@ __Example 2: Merge the ResourceDictionaries__
 
 __Figure 2__ shows a __RadBreadcrumb__ with the **Fluent** theme applied.
 	
-#### __Figure 2: RadBreadcrumb with the Fluent theme__
+>caption RadBreadcrumb with the fluent theme
+
 ![RadBreadcrumb with Fluent theme](images/radbreadcrumb-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

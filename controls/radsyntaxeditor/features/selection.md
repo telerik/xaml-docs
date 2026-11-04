@@ -16,7 +16,7 @@ The RadSyntaxEditor supports not only selection via the UI but also exposes API 
 
 The user is able to select the content inside **RadSyntaxEditor** in the same way as in Visual Studio. This is done by clicking on the desired position and dragging to the desired end of the selection.
 
-#### Figure 1: RadSyntaxEditor with selected text
+>caption RadSyntaxEditor with selected text
 
 ![RadSyntaxEditor with selected text](images/syntaxeditor-selection.png)
 
@@ -24,7 +24,7 @@ The user is able to select the content inside **RadSyntaxEditor** in the same wa
 
 Users can also select text by using their keyboard. Here's a list of the supported key combinations.
 
-#### Table 1: Hotkeys supported by the RadSyntaxEditor and their actions
+__Table 1: Hotkeys supported by the RadSyntaxEditor and their actions__
 
 |Hotkeys|Action|
 |---|---|
@@ -44,18 +44,18 @@ Users can also select text by using their keyboard. Here's a list of the support
 
 You can modify the appearance of the selection in the control through the **SelectionFill** and **SelectionStroke** properties of RadSyntaxEditor.
 
-#### [XAML] Example 1: Customize the appearance of the selection
+__[XAML] Example 1: Customize the appearance of the selection__
 <snippet id='radsyntaxeditor-features-selection-block_1-xaml' />
 
 
-#### [C#] Example 1: Customize the appearance of the selection
+__[C#] Example 1: Customize the appearance of the selection__
 <snippet id='radsyntaxeditor-features-selection-block_2-cs' />
 
 
-#### [VB.NET] Example 1: Customize the appearance of the selection
+__[VB.NET] Example 1: Customize the appearance of the selection__
 <snippet id='radsyntaxeditor-features-selection-block_3-vb' />
 
-#### Figure 2: RadSyntaxEditor with custom selection colors
+>caption RadSyntaxEditor with custom selection colors
 
 ![RadSyntaxEditor with custom selection colors](images/syntaxeditor-selection-red.png)
 
@@ -63,20 +63,20 @@ You can modify the appearance of the selection in the control through the **Sele
 
 Through the control's **Selection** property, you can programmatically manipulate the selection and get additional details for the selected span(s). **Example 2** demonstrates how you can get the entire selection as a string through the **GetSelectedText** method.
 
-#### [C#] Example 2: Customize the appearance of the selection
+__[C#] Example 2: Customize the appearance of the selection__
 <snippet id='radsyntaxeditor-features-selection-block_4-cs' />
 
 ## IsSelectionEnabled
 
 If you want to disable selection for your users, you can set the **IsSelectionEnabled** property of the control to **False**.
 
-#### [XAML] Example 3: Customize the appearance of the selection
+__[XAML] Example 3: Customize the appearance of the selection__
 <snippet id='radsyntaxeditor-features-selection-block_5-xaml' />
 
-#### [C#] Example 3: Customize the appearance of the selection
+__[C#] Example 3: Customize the appearance of the selection__
 <snippet id='radsyntaxeditor-features-selection-block_6-cs' />
 
-#### [VB.NET] Example 3: Customize the appearance of the selection
+__[VB.NET] Example 3: Customize the appearance of the selection__
 <snippet id='radsyntaxeditor-features-selection-block_7-vb' />
 
 ## See Also

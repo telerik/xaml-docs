@@ -16,11 +16,11 @@ ticketid: 1713569
 <table>
 <tbody>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>Spreadsheet for UI for WPF</td>
 </tr>
 <tr>
-<td>Version</td>
+<th scope="row">Version</th>
 <td>2026.1.415</td>
 </tr>
 </tbody>

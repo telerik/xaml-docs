@@ -14,11 +14,11 @@ res_type: kb
 <table>
 <tbody>
 <tr>
-<td>Product Version</td>
+<th scope="row">Product Version</th>
 <td>2026.1.415</td>
 </tr>
 <tr>
-<td>Product</td>
+<th scope="row">Product</th>
 <td>RadContextMenu for WPF</td>
 </tr>
 </tbody>
@@ -36,12 +36,14 @@ Set the RadContextMenu Height property and the RadMenuItem DropDownHeight proper
 
 __RadContextMenu__ has Height property. If you set it, but the __RadMenuItems__ inside it doesn't fit in this size, you will see two buttons which can be used to scroll through your collection:
 
-__RadContextMenu Scrolling__
+>caption RadContextMenu scrolling
+
 ![WPF RadContextMenu scrolling](images/kb-contextmenu-add-scrolling-01.png)
 
 But if any of your __RadMenuItems__ has submenu items, they will be placed inside another popup. That's why we've added *DropDownHeight* property for __RadMenuItem__. The value of the property shows the height of RadMenuItem's submenu. The behavior when the items doesn't fit in the set DropDownHeight is the same as described above:
 
-__RadContextMenu Submenu Scrolling__
+>caption RadContextMenu submenu scrolling
+
 ![WPF RadContextMenu submenu scrolling](images/kb-contextmenu-add-scrolling-02.png)
 
 Here's a simple code that shows how to use Height and DropDownHeight properties:
@@ -84,7 +86,8 @@ __Configure Scrolling in RadMenuGroupItem__
 </TextBox>
 ```
 
-__RadMenuGroupItem Scrolling__
+>caption RadMenuGroupItem scrolling
+
 ![WPF RadContextMenu group item scrolling](images/kb-contextmenu-add-scrolling-03.png)
 
 ## See Also

@@ -21,7 +21,8 @@ __Example 1: Hosting a WebBrowser in RadWindow__
 <snippet id='radwindow-how-to-host-webbrowser-in-radwindow-block_1-cs' />
 <snippet id='radwindow-how-to-host-webbrowser-in-radwindow-block_2-vb' />
 
-#### __Figure 1: Result from Example 1 in the Office2016 theme__
+>caption Result from example 1 in the Office2016 theme
+
 ![WebBrowser in RadWindow](images/RadWindow_Host_WebBrowser.png)
 
 ## See Also

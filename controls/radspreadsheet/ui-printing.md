@@ -30,7 +30,8 @@ Using the __PrintWhatSettings__ class you can specify:
 
 * __IgnorePrintArea__: Boolean value indicating whether or not to ignore print area when printing worksheets. 
 
-__Choose What You Want to Print__
+>caption Choose what you want to print
+
 ![Print what settings in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_01.png)
 
 Depending on whether you want to show a __PrintDialog__ before printing, you can use some of the following __RadSpreadsheet’s__ Print() method overloads:
@@ -65,14 +66,16 @@ If your worksheet contains a lot of data, you can use the scaling options provid
 All the scaling options are available in the Print Preview as well as in the Page Setup dialog. If you would like to set them programmatically, you can do so through the [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup).
 
 
-__Scaling Options__
+>caption Scaling options
+
 ![Scaling options in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_02.png)
 
 ## Print Titles
 
 RadSpreadsheet comes with a built-in functionality to set rows and/or columns to be repeated on each printed page so that you can keep the titles for the data always visible. You can choose whether to set row(s) or column(s), or event both through the Page Setup dialog. This dialog is available under the Page Setup section of the Page Layout tab of RadSpreadsheet's ribbon:
 
-__Print Titles__
+>caption Print titles
+
 ![Print titles in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_03.png)
 
 The WorksheetPageSetup class also enables you set the print titles in code. For more information, check the [WorksheetPageSetup](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup) topic.
@@ -90,7 +93,8 @@ __Integrating the Print Preview with RadRibbonView's Backstage__
 <snippet id='radspreadsheet-features-ui-printing-block_3-xaml' />
 
 
-__Print Preview__
+>caption Print preview
+
 ![Print preview in RadSpreadsheet](images/RadSpreadsheet_UI_Printing_08.png)
 
 

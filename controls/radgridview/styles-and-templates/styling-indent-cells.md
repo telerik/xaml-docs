@@ -13,7 +13,7 @@ position: 17
 
 __RadGridView__ exposes different [indent cells](#indent-cells) and [indicator presenters](#indicator-presenters) depending on its current state - being grouped, in a hierarchy, or displaying the corresponding footers. __Figure 1__ outlines the visual structure of those elements for a grouped RadGridView with the __ShowColumnFooters__ and __ShowGroupFooters__ properties set to True.
 
-#### __Figure 1: RadGridView Indent Cells and Indicator Presenters__
+>caption RadGridView indent cells and indicator presenters
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing indent cells and indicator presenters in a grouped grid](images/RadGridView_StyleIndicators1.png)
 
@@ -36,7 +36,8 @@ __Example 1: Styling Indent Cells__
 <snippet id='radgridview-styles-and-templates-styling-indent-cells-example_1_styling_indent_cells-xaml' />
 
 
-#### __Figure 2: A grouped RadGridView with styled indent cells__
+>caption A grouped RadGridView with styled indent cells
+
 ![Telerik UI for {{ site.framework_name }} RadGridView with custom styles applied to grouped indent cells](images/gridview-styling-indent-cells.png)
 
 ## Indicator Presenters
@@ -57,7 +58,7 @@ You may customize each of them by [editing the control template]({%slug styling-
 
 **Figure 3** shows a __RadGridView__ with styled indent cells and indicator presenters.
 
-#### __Figure 3: RadGridView with styled indent cells and indicator presenters__
+>caption RadGridView with styled indent cells and indicator presenters
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with styled indent cells and indicator presenters in grouped rows](images/RadGridView_IndentCells2.png)
 

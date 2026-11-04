@@ -23,7 +23,7 @@ Here is a list of the supported languages:
 * Dutch             
 * Turkish      
 
-__Some of RadExpressionEditor`s localized resources:__
+>caption Some of RadExpressionEditor`s localized resources
 
 ![RadExpressionEditor Localization](images/RadExpressionEditor_Localization.png)
 

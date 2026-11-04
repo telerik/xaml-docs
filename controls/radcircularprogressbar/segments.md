@@ -23,7 +23,7 @@ __Setting the segments' count in code__
 <snippet id='radcircularprogressbar-segments-setting_the_segments_count_in_code-vb' />
 
 
-__RadCircularProgressBar split into 5 segments:__
+>caption RadCircularProgressBar split into 5 segments
 
 ![RadCircularProgressBar segments](images/radcircularprogressbar-segments-0.png)
 
@@ -35,7 +35,7 @@ __Setting the segments' density__
 <snippet id='radcircularprogressbar-segments-setting_the_segments_density-xaml' />
 
 
-__RadCircularProgressBar with modified segments' density:__
+>caption RadCircularProgressBar with modified segments' density
 
 ![RadCircularProgressBar segments' density](images/radcircularprogressbar-segments-1.png)
 
@@ -55,7 +55,7 @@ __Rounding all segments in code__
 <snippet id='radcircularprogressbar-segments-rounding_all_segments_in_code-vb' />
 
 
-__RadCircularProgressBar with rounded segments:__
+>caption RadCircularProgressBar with rounded segments
 
 ![Rounded segments](images/radcircularprogressbar-segments-2.png)
 

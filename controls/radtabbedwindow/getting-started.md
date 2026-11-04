@@ -34,7 +34,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 In Visual Studio, open the project's **Add New Item** dialog. Select **Window (WPF)**, name it **TabbedWindow**, and select **Add**.
 
-__Add new WPF Window__
+>caption Add new WPF window
 
 ![Visual Studio Add New Item dialog for creating TabbedWindow with the Window (WPF) template.](images/add-new-window.png)
 
@@ -62,7 +62,7 @@ __Example 3: Open RadTabbedWindow on application startup__
 
 Run the application to display an empty RadTabbedWindow with no tabs, as shown below.
 
-__Empty RadTabbedWindow__
+>caption Empty RadTabbedWindow
 
 ![RadTabbedWindow before any tab items are added.](images/tabbedwindow-getting-started-1.png)
 
@@ -82,7 +82,7 @@ __Example 5: Adding Tabs to RadTabbedWindow in XAML__
 
 Run the application to display the **Microsoft**, **Google**, and **Progress** tabs. The selected **Microsoft** tab displays **Microsoft Content**.
 
-__RadTabbedWindow with tabs__
+>caption RadTabbedWindow with tabs
 
 ![RadTabbedWindow with three tabs and the first tab selected.](images/tabbedwindow-getting-started-2.png)
 
@@ -110,7 +110,7 @@ __Example 6: Merge the ResourceDictionaries__
 
 The following screenshot shows the tabbed window after applying the **Windows8** theme. The selected tab still displays **Microsoft Content**.
 	
-__RadTabbedWindow with the Windows8 theme__
+>caption RadTabbedWindow with the Windows8 theme
 
 ![RadTabbedWindow styled with the Windows8 theme.](images/tabbedwindow-getting-started-3.png)
 

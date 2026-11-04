@@ -23,7 +23,7 @@ __Example 1: Defining BollingerBandsIndicator__
 
 <a id="figure-1-bollingerbandsindicator"></a>
 
-**Figure 1: BollingerBandsIndicator**
+>caption BollingerBandsIndicator
 
 <img src="images/radchartview-indicators-bollingerbandsindicator-0.png" alt="Chart showing the upper and lower Bollinger bands across date categories." style="width: 80%;">
 

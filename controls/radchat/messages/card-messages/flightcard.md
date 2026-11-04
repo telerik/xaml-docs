@@ -36,7 +36,8 @@ __Defining a FlightCard__
 
 This sample data will result in the following __FlightCard__.
 
-__Defining ImageCard__
+>caption Defining ImageCard
+
 ![Defining ImageCard](images/RadChat_FlightCard_01.png)
 
 ## See Also

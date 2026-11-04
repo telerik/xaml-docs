@@ -42,7 +42,7 @@ To display an SVG image in the `RadSvgImage` control, you can set the `UriSource
 __Displaying an SVG image using the UriSource property__
 <snippet id='radsvgimage-getting-started-block_2-xaml' />
 
-__RadSvgImage with an SVG image__
+>caption RadSvgImage with an SVG image
 
 ![{{site.framework_name}} RadSvgImage with an SVG image](images/radsvgimage-getting-started-0.png)
 
@@ -55,7 +55,7 @@ The `RadSvgImage` control provides the ability to use it as a markup extension, 
 __RadSvgImage as a markup extension__
 <snippet id='radsvgimage-getting-started-block_3-xaml' />
 
-__RadSvgImage as a markup extension__
+>caption RadSvgImage as a markup extension
 
 ![{{site.framework_name}} RadSvgImage as a markup extension](images/radsvgimage-getting-started-0.png)
 
@@ -67,7 +67,7 @@ __Setting the XmlSource property__
 <snippet id='radsvgimage-getting-started-block_4-cs' />
 <snippet id='radsvgimage-getting-started-block_5-vb' />
 
-__RadSvgImage displaying an xml-based string__
+>caption RadSvgImage displaying an xml-based string
 
 ![{{site.framework_name}} RadSvgImage displaying an xml-based string](images/radsvgimage-getting-started-1.png)
 
@@ -78,7 +78,7 @@ The `RadSVGImage` component allows you to replace the fill color of the geometry
 __Setting the OverrideColor property__
 <snippet id='radsvgimage-getting-started-block_6-xaml' />
 
-__RadSvgImage with set OverrideColor__
+>caption RadSvgImage with set OverrideColor
 
 ![{{site.framework_name}} RadSvgImage with set OverrideColor](images/radsvgimage-getting-started-2.png)
 

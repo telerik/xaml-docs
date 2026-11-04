@@ -40,7 +40,8 @@ If you are not using NuGet packages, you can add a reference to the following as
 __Example 1: Defining RadMultiColumnComboBox Declaratively__
 <snippet id='radmulticolumncombobox-getting-started-block_1-xaml' />
 
-#### __Figure 1: Defining RadMultiColumnComboBox__
+>caption Defining RadMultiColumnComboBox
+
 ![RadMultiColumnComboBox](images/MultiColumnComboBox_GettingStarted_01.png)
 
 Note, that such definition would simply result in having an AutoComplete box. In order to have the actual __RadGridView__ populated as a Content of the DropDown the __GridViewItemsSourceProvider__ needs to be set as an __ItemsSourceProvider__. Note, that the __DisplayMemberPath__ property of __RadMultiColumnComboBox__ is also set. Its purpose is to point to a property of the bound data item present in the source collection of the ItemsSourceProvider. Thus, the control will be aware what value to display in the __AutoCompleteBox__. If not set, the control would simply call the __ToString__ method of the bound item.
@@ -50,7 +51,8 @@ Note, that such definition would simply result in having an AutoComplete box. In
 
 This definition will have the following output. 
 
-#### __Figure 2: Setting the GridViewItemsSourceProvider__
+>caption Setting the GridViewItemsSourceProvider
+
 ![RadMultiColumnComboBox](images/MultiColumnComboBox_GettingStarted_02.png)
 
 {% if site.site_name == 'WPF' %}

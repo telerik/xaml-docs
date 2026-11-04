@@ -15,7 +15,7 @@ position: 3
 
 >important The default searching behavior has two ways of setting the operator of the filtering criteria. This will depend on the value type of the property, over which the search is performed. For a `string` and `Enum` type the operator is set to __Contains__. For all other types, the operator is set to __IsEqualTo__.
 
-__RadMultiColumnComboBox with a performed search__
+>caption RadMultiColumnComboBox with a performed search
 
 ![RadMultiColumnComboBox with a perfomed search](images/radmulticolumncombobox-search-as-you-type-0.png)
 
@@ -25,19 +25,19 @@ In order to modify the search behavior, you can benefit from the following three
 
 * __+__&mdash;The items that will pass the filtering operation will have to contain both the value before the operator and the one after it.
 
-    __Using the `+` search operatior__
+>caption Using the `+` search operatior
 
     ![RadMultiColumnComboBox with plus search operator](images/radmulticolumncombobox-search-as-you-type-1.png)
 
 * __-__&mdash;All items that will pass the filtering operation will have to contain the value before the operator, but not the one after it.
     
-    __Using the `-` search operatior__
+>caption Using the `-` search operatior
 
     ![RadMultiColumnComboBox with minus search operator](images/radmulticolumncombobox-search-as-you-type-2.png)
 
 * __""__&mdash;When a word or a phrase is put in quotes, the filtered objects will contain only the exact same value.
 
-    __Using the `""` search operator__
+>caption Using the `""` search operator
 
     ![RadMultiColumnComboBox with quotes search operator](images/radmulticolumncombobox-search-as-you-type-3.png)
 
@@ -78,7 +78,7 @@ RadMultiComboBox allows you to search in hidden columns. To do so, set the `CanU
 __Enable searching in hidden columns__
 <snippet id='radmulticolumncombobox-features-search-as-you-type-block_1-xaml' />
 
-__RadMultiColumnComboBox search in a hidden column__
+>caption RadMultiColumnComboBox search in a hidden column
 
 ![RadMultiColumnComboBox search in a hidden column](images/radmulticolumncombobox-search-as-you-type-4.png)
 
@@ -102,7 +102,7 @@ __Disabling the highlighting effect on matched items__
 <snippet id='radmulticolumncombobox-features-search-as-you-type-block_2-cs' />
 <snippet id='radmulticolumncombobox-features-search-as-you-type-block_2-vb' />
 
-__RadMultiColumnComboBox without highlighting on matched items__
+>caption RadMultiColumnComboBox without highlighting on matched items
 
 ![RadMultiColumnComboBox without highlighting on matched items](images/radmulticolumncombobox-search-as-you-type-5.png)
 

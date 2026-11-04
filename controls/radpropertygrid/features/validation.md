@@ -85,7 +85,8 @@ __Example 8: Setting the PropertySetsValidationFunction__
 
 __Figure 1__ shows the appearance of RadPropertyGrid after validation is applied.
 
-#### __Figure 1: Appearance of RadPropertyGrid after PropertySetsValidationFunction is set:__
+>caption Appearance of RadPropertyGrid after PropertySetsValidationFunction is set
+
 ![Rad Property Grid Sets Validated](images/RadPropertyGrid_Sets_Validated.png)
 
 >important Both the __ValidatesOnDataErrors__ and __NotifyOnValidationError__ properties of the PropertyDefinition`s Binding should be set to __True__ for the error message to appear.

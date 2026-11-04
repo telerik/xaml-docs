@@ -117,7 +117,7 @@ __Example 4: Create a document in code-behind__
 <snippet id='radrichtextbox-document-elements-features-raddocument-block_6-cs' />
 <snippet id='radrichtextbox-document-elements-features-raddocument-block_7-vb' />
 
-__The document created at run time__
+>caption The document created at run time
 
 ![{{ site.framework_name }} RadRichTextBox Runtime Created Document](images/RadRichTextBox_DocumentElements_RadDocument_01_WPF.png)
 

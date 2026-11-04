@@ -19,7 +19,8 @@ RadNavigationView's header can be customized with the following properties: __Pa
 __Example 1: Setting the PaneHeader property__
 <snippet id='radnavigationview-features-header-and-footer-block_1-xaml' />
 
-#### __Figure 1: Result from Example 1 in the Office 2016 theme__
+>caption Result from example 1 in the Office 2016 theme
+
 ![NavigationView Header](images/NavigationView_Header.png)
 
 It is possible to further customize the header by setting the __PaneHeaderTemplate__ property. The DataContext inside the PaneHeaderTemplate will be whatever is set to the PaneHeader property of the RadNavigationView. __Example 2__ demonstrates how you can set this property along with the __PaneHeaderHeight__ property which controls the height of the pane header.
@@ -27,7 +28,8 @@ It is possible to further customize the header by setting the __PaneHeaderTempla
 __Example 2: Setting the PaneHeaderTemplate and PaneHeaderHeight properties__
 <snippet id='radnavigationview-features-header-and-footer-block_2-xaml' />
 
-#### __Figure 2: Result from Example 2 in the Office 2016 theme__
+>caption Result from example 2 in the Office 2016 theme
+
 ![NavigationView HeaderTemplate](images/NavigationView_HeaderTemplate.png)
 
 > The pane header's Background and Foreground can also be changed with the __PaneHeaderBackground__ and __PaneHeaderForeground__ properties.
@@ -41,7 +43,8 @@ RadNavigationView's footer can be customized with the following properties: __Pa
 __Example 3: Setting the PaneFooter and PaneFooterTemplate properties__
 <snippet id='radnavigationview-features-header-and-footer-block_3-xaml' />
 
-#### __Figure 3: Result from Example 3 in the Office 2016 theme__
+>caption Result from example 3 in the Office 2016 theme
+
 ![NavigationView Footer](images/NavigationView_Footer_FooterTemplate.png)
 
 `RadNavigationView` also exposes a `PaneFooterTemplateSelector` property which allows you to specify a different data template based on the value of the `Footer` property.
@@ -62,7 +65,8 @@ RadNavigationView has a RadToggleButton next to its header which allows for expa
 __Example 5: Setting the PaneToggleButtonContent__
 <snippet id='radnavigationview-features-header-and-footer-block_5-xaml' />
 
-#### __Figure 4: Result from Example 4 in the Office 2016 theme__
+>caption Result from example 4 in the Office 2016 theme
+
 ![NavigationView Toggle Button](images/NavigationView_PaneToggleButtonContent.png)
 
 If do not want to show a RadGlyph as the Content of the toggle button, you can modify the __PaneToggleButtonContentTemplate__ as demosntrated in __Example 5__.
@@ -70,7 +74,8 @@ If do not want to show a RadGlyph as the Content of the toggle button, you can m
 __Example 6: Setting the PaneToggleButtonContentTemplate__
 <snippet id='radnavigationview-features-header-and-footer-block_6-xaml' />
 
-#### __Figure 5: Result from Example 5 in the Office 2016 theme__
+>caption Result from example 5 in the Office 2016 theme
+
 ![NavigationView Toggle Button with custom content](images/NavigationView_PaneToggleButtonContentTemplate.png)
 
 >The Pane Toggle Button can be customized further by setting the __PaneToggleButtonStyle__ property. It can also be hidden by setting the __PaneToggleButtonVisibility__ property.

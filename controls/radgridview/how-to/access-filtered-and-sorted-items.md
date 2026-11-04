@@ -15,13 +15,15 @@ The RadGridView exposes an __Items__ property which represents a collection of t
 
 Lets assume we have a RadGridView with an ItemsSource that is an ObservableCollection of Club objects. The collection consists of 4 objects and the control has the following appearance:
 
-#### __Figure 1: The original appearance of the RadGridView__ 
+>caption The original appearance of the RadGridView
+
 ![Telerik UI for {{ site.framework_name }} RadGridView before filtering and sorting with the original club data order](images/gridview-ItemsProperty.PNG)
 
 
 Eventually, we would like to filter and sort the RadGridView:
 
-#### __Figure 2: The appearance of the RadGridView after applying the data operations__
+>caption The appearance of the RadGridView after applying the data operations
+
 ![Telerik UI for {{ site.framework_name }} RadGridView after filtering and sorting with the Items collection reflecting the visible rows](images/gridview-ItemsProperty_SortedFiltered.PNG)
 
 

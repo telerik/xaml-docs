@@ -23,7 +23,7 @@ There are two main parts of the RadGanttView control that are often referred in 
 
 The next figure shows the two parts in the default Office_Black theme:
 
-Figure 1. Main RadGanttView parts
+>caption Main RadGanttView parts
 
 ![radganttview-visual-structure-1](images/radganttview-visual-structure-1.png)
 

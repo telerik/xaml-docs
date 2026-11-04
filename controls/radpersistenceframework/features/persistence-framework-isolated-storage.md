@@ -22,7 +22,8 @@ __Example 2: Using the IsolatedStorageProvider methods__
 
 The __IsolatedStorageProvider.SaveToStorage()__ method will save the properties of all controls for which the __telerik:PersistenceManager.StorageId__ attached property is set. In __Example 2__ all properties of the __RadTreeView__ and the __ContentControl__ will be saved:
 
-#### __Figure 1: Result from Example 1__  
+>caption Result from example 1
+
 ![Using the IsolatedStorageProvider](images/PersistenceFramework_IsolatedStorage_Initial.png)
 
 1. Expand Condiments and select Gula Malacca. Add description for the item in the Details ContentControl. Then hit Save:  

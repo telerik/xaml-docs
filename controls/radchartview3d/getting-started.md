@@ -49,7 +49,8 @@ __Example 1: Empty RadCartesianChart3D__
 	
 At this point the viewport of the chart is rendered.
 
-#### __Figure 1: Empty chart__
+>caption Empty chart
+
 ![{{ site.framework_name }} RadChartView3D Empty chart](images/radchartview-3d-getting-started-0.png)
 
 ## Defining chart series
@@ -60,7 +61,8 @@ __Example 2: Defining series__
 <snippet id='radchartview3d-getting-started-example_2_defining_series-xaml' />
 
 
-#### __Figure 2: PointSeries3D__
+>caption PointSeries3D
+
 ![{{ site.framework_name }} RadChartView3D PointSeries3D](images/radchartview-3d-getting-started-1.png)	
 
 For precisely reading the elements in the 3D space you can enable the chart's grid. You can read more about this in the [Chart Grid]({%slug radchartview3d-chartgrid%}) help article.
@@ -69,7 +71,8 @@ __Example 3: Adding chart grid__
 <snippet id='radchartview3d-getting-started-example_3_adding_chart_grid-xaml' />
 
 
-#### __Figure 3: Chart grid__
+>caption Chart grid
+
 ![{{ site.framework_name }} RadChartView3D Chart grid](images/radchartview-3d-getting-started-2.png)
 
 ## Data binding

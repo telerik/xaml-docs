@@ -14,7 +14,7 @@ include_in_navigation: False
 
 The default look of the application button is an empty rectangular button similar to the one on **Figure 1**.
 
-#### __Figure 1: RadRibbonView application button__
+>caption RadRibbonView application button
 
 ![RadRibbonView application button](images/RadRibbonView_How_To_Hide_The_Application_Menu_Button.png)
 

@@ -17,7 +17,7 @@ The `RadComboBox` control provides the ability to define additional content that
 
 To utilize this functionality, you can set the `AdditionalContent` property of RadComboBox, which is of the type of `object` and you can assign a value of any type. To further customize it, you can use the `AdditionalContentTemplate` property and specify a `DataTemplate` for it.
 
-#### __[XAML] Setting the AdditionalContent and AdditionalContentTemplate__
+__[XAML] Setting the AdditionalContent and AdditionalContentTemplate__
 {{region radcombobox-features-additional-content-0}}
     <telerik:RadComboBox AdditionalContent="Additional Content Text">
         <telerik:RadComboBox.Items>
@@ -36,7 +36,7 @@ To utilize this functionality, you can set the `AdditionalContent` property of R
     </telerik:RadComboBox>
 {{endregion}}
 
-__RadComboBox with additional content__
+>caption RadComboBox with additional content
 
 ![WPF RadComboBox with additional content](images/radcombobox-additional-content-0.png)
 
@@ -48,7 +48,7 @@ You can position the additional content area relevant to the clear selection but
 * `BelowClearButton`&mdash;The additional content is displayed below the clear button of the drop-down menu of RadComboBox. This is the default value.
 * `BelowDropDownItems`&mdash;The additional content is displayed below the drop-down items of the RadComboBox.
 
-#### __[XAML] Setting the AdditionalContentPosition__
+__[XAML] Setting the AdditionalContentPosition__
 {{region radcombobox-features-additional-content-0}}
     <telerik:RadComboBox AdditionalContent="Additional Content Text"
                          AdditionalContentPosition="BelowDropDownItems"
@@ -70,7 +70,7 @@ You can position the additional content area relevant to the clear selection but
     </telerik:RadComboBox>
 {{endregion}}
 
-__RadComboBox with additional content positioned below the drop-down items__
+>caption RadComboBox with additional content positioned below the drop-down items
 
 ![WPF RadComboBox with additional content positioned below the drop-down items](images/radcombobox-additional-content-1.png)
 

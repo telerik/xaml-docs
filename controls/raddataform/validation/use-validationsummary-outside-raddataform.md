@@ -44,7 +44,7 @@ __Example 2: Handling RadGridView's RowValidating Event__
 <snippet id='raddataform-validation-use-validationsummary-outside-raddataform-example_2_handling_radgridview_s_rowvalidating_event-vb' />
 
 
-#### __Figure 1: Showing RadGridView validation results in DataFormValidationSummary__
+>caption Showing RadGridView validation results in DataFormValidationSummary
 
 ![Showing RadGridView validation results in DataFormValidationSummary](images/validationsummary-outside-raddataform-1.png)
 

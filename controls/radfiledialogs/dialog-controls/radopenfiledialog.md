@@ -13,7 +13,7 @@ position: 1
 
 __RadOpenFileDialog__ is a modal dialog box that allows you to specify one or multiple filenames to open.
 
-#### __Figure 1: RadOpenFileDialog in single selection mode__ 
+>caption RadOpenFileDialog in single selection mode
 
 ![RadOpenFileDialog in single selection mode](images/radopenfiledialog-01.png)
 
@@ -45,7 +45,7 @@ __Example 3: Enable multiple selection__
 <snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_3_enable_multiple_selection-cs' />
 
 
-#### __Figure 2: Multiple selection__ 
+>caption Multiple selection
 
 ![RadOpenFileDialog with multiple selection](images/radopenfiledialog-02.png)
 
@@ -79,7 +79,8 @@ __Example 4: Enabling the ReadOnly CheckBox__
 <snippet id='radfiledialogs-dialog-controls-radopenfiledialog-example_4_enabling_the_readonly_checkbox-cs' />
 
 
-#### __Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox__ 
+>caption RadOpenFileDialog with checked ReadOnly CheckBox
+
 ![RadOpenFileDialog with ReadOnlyCheckBox](images/radopenfiledialog-readonlycheckbox.png)
 
 ## DereferenceLinks

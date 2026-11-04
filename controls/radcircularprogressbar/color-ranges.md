@@ -31,7 +31,7 @@ __Setting the IsGradient property__
 <snippet id='radcircularprogressbar-color-ranges-setting_the_isgradient_property-xaml' />
 
 
-__RadCircularProgressBar with gradient color ranges__
+>caption RadCircularProgressBar with gradient color ranges
 
 ![RadCircularProgressBar with gradient color ranges](images/radcircularprogressbar-color-ranges-1.png)
 

@@ -25,7 +25,8 @@ __Example 1: RadTreeView definition__
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
 
-#### __Figure 1: Result from Example 1__
+>caption Result from example 1
+
 ![RadTreeView populated with sample data](images/RadTreeView_TemplatingItemContainerStyle.PNG)
 
 >tip Defining the style in the resources of the control or in the resources of the application makes it reusable.
@@ -40,7 +41,8 @@ __Example 2: ItemContainerStyle Definition__
 __Example 3: Setting the ItemContainerStyle property__  
 <snippet id='radtreeview-styles-and-templates-styling-and-appearance-item-container-style-block_4-xaml' />
 
-#### __Figure 2: Result from Example 3__
+>caption Result from example 3
+
 ![RadTreeView with custom ItemContainerStyle](images/RadTreeView_TemplatingItemContainerStyle_010.PNG)
 
 >When using __ItemContainerStyle__ with static items, it will get applied only to the direct children of the __RadTreeView__ - the top-level items. If you want their child items to have the same style, you have to manually set the __ItemContainerStyle__ property of the __RadTreeViewItems__.

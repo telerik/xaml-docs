@@ -14,11 +14,11 @@ res_type: kb
 <table>
     <tbody>
 	    <tr>
-	    	<td>Product Version</td>
+	    	<th scope="row">Product Version</th>
 	    	<td>2020.3.1130</td>
 	    </tr>
 	    <tr>
-	    	<td>Product</td>
+	    	<th scope="row">Product</th>
 	    	<td>RadSyntaxEditor for WPF</td>
 	    </tr>
     </tbody>
@@ -106,7 +106,8 @@ __Example 2: Registering the LineHighlightTagger__
     }
 ```
 
-#### __Figure 1: RadSyntaxEditor with breakpoints__
+>caption RadSyntaxEditor with breakpoints
+
 ![RadSyntaxEditor with breakpoints](images/kb-syntaxeditor-how-to-add-breakpoints-margin.png)
 
 ## See Also

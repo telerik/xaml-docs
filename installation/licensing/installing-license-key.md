@@ -49,13 +49,13 @@ The easiest way to install or update the license key is to use the `license` com
 
 1. If you don't have Telerik CLI installed, run the `dotnet tool install` command.
 
-	```
+	```bash
 	dotnet tool install -g Telerik.CLI
 	```
 
 1. Run the `license get-key` command.
 
-	```
+	```bash
 	telerik license get-key
 	```
 

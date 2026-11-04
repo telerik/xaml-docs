@@ -22,7 +22,8 @@ The most common properties for utilizing the control are its __NavigateUri__ and
 __Example 1: Setting the NavigateUri and Content__
 <snippet id='radbuttons-features-hyperlink-button-example_1_setting_the_navigateuri_and_content-xaml' />
 
-#### __Figure 1: RadHyperlinkButton in Normal State__
+>caption RadHyperlinkButton in normal state
+
 ![RadHyperlinkButton in Normal State](images/RadHyperlinkButton_GettingStarted_01.png)
 
 This example shows how a string can be set as a Content of RadHyperlinkButton. The Content can also be set to be an Image, for example. In such setup the link will be opened when the user clicks on the Image.
@@ -33,12 +34,14 @@ This example shows how a string can be set as a Content of RadHyperlinkButton. T
 
 The figure above shows __RadHyperlink__ in its __Normal__ state. When hovered or clicked, the control will be underlined.
 
-#### __Figure 2: RadHyperlinkButton when Hovered or Clicked__
+>caption RadHyperlinkButton when hovered or clicked
+
 ![RadHyperlinkButton in Normal State](images/RadHyperlinkButton_GettingStarted_02.png)
 
 The control will indicate when the link is visited by modifying the text Foreground.
 
-#### __Figure 3: RadHyperlinkButton when the Link is Visited__
+>caption RadHyperlinkButton when the link is visited
+
 ![RadHyperlinkButton in Normal State](images/RadHyperlinkButton_GettingStarted_03.png)
 
 ## See Also 

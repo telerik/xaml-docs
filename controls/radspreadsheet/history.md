@@ -23,7 +23,7 @@ __Adding buttons in the UI for the Undo and Redo methods__
 __Adding the logic for the buttons to execute the Undo and Redo methods__
 <snippet id='radspreadsheet-features-history-block_2-cs' />
 
-__RadSpreadsheet with custom redo/undo buttons__
+>caption RadSpreadsheet with custom redo/undo buttons
 
 ![RadSpreadsheet with custom redo/undo buttons](images/radspreadsheet-history-0.gif)
 

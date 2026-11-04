@@ -335,7 +335,7 @@ __Enabling Windows 11 Compact Mode__
     }
 ```
 
-__Windows 11 standard vs. compact mode in RadGridView__  
+>caption Windows 11 standard vs. Compact mode in RadGridView
 
 ![Telerik UI for WPF Windows 11 theme comparison of compact and standard modes](Images/windows11-theme-compact-mode.png)
 
@@ -392,7 +392,7 @@ The default values of the brushes in the theme are listed below.
 |TertiarySmokeBackgroundColor|#4D000000|<div class="theme-palette-color windows11theme-tertiarysmokebackgroundcolor"></div>|#4D000000|<div class="theme-palette-color windows11theme-tertiarysmokebackgroundcolor-dark"></div>|
 |ValidationColor|#FFC42B1C|<div class="theme-palette-color windows11theme-validationcolor"></div>|#FFFF99A4|<div class="theme-palette-color windows11theme-validationcolor-dark"></div>|
 
-__Theme colors represented in RadOutlookBar__
+>caption Theme colors represented in RadOutlookBar
 
 ![Telerik UI for WPF Windows 11 theme colors represented in RadOutlookBar](images/windows11-theme-outlook.PNG)
 
@@ -486,7 +486,7 @@ __Changing the color variation of the theme__
 	Windows11Palette.LoadPreset(Windows11Palette.ColorVariation.Dark); 
 ```
 
-__Windows11 theme color variations__
+>caption Windows11 theme color variations
 
 ![Telerik UI for WPF Windows 11 theme colors represented in RadCardView](images/windows11-theme-variations.PNG)
 
@@ -502,7 +502,7 @@ Acrylic is a semi-transparent material that replicates the effect of frosted gla
 
 Acrylic is mode aware; it supports both light and dark mode.
 
-__RadWindow with Acrylic Effect__
+>caption RadWindow with acrylic effect
 
 ![Telerik UI for WPF RadWindow with the Windows 11 Acrylic effect](images/windows11-theme-acrylic-effect.PNG)
 
@@ -512,7 +512,7 @@ Mica is a new opaque material introduced in Windows 11. Mica surfaces are subtly
 
 Mica is mode aware; it supports both light and dark modes. Mica also indicates window focus with active and inactive states as a built in feature.
 
-__RadWindow with Mica Effect__
+>caption RadWindow with mica effect
 
 ![Telerik UI for WPF RadWindow with the Windows 11 Mica effect](images/windows11-theme-mica-effect.PNG)
 
@@ -576,7 +576,7 @@ __Changing the theme's FontSize and FontFamily__
 	}
 ```
 
-__Setting FontSize and FontFamily__
+>caption Setting FontSize and FontFamily
 
 ![Telerik UI for WPF RadCalendar with modified font size and font family in the Windows 11 theme](images/windows11-theme-calendar-font-change.png)
 
@@ -600,7 +600,7 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 						helpers:ThemeHelper.MouseOverBackgroundBrush="{telerik:Windows11Resource ResourceKey=ValidationBrush}" />
 ```
 
-__Appearance of the RadToggleButton in the different states__
+>caption Appearance of the RadToggleButton in the different states
 
 ![Telerik UI for WPF RadToggleButton states in the Windows 11 theme](images/windows11-theme-togglebutton-states.png)
 
@@ -620,7 +620,7 @@ __Changing the default corner radius__
 	Windows11Palette.Palette.CornerRadius = new CornerRadius(0);
 ```
 
-__Appearance of a RadButton control after changing the default corner radius__
+>caption Appearance of a RadButton control after changing the default corner radius
 
 ![Telerik UI for WPF RadButton with a corner radius of zero in the Windows 11 theme](images/windows11-theme-button-cornerradius.png)
 

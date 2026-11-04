@@ -127,7 +127,7 @@ In the following example, the chart is populated by a collection of 3 items, thu
 <snippet id='radchartview3d-populating-data-seriesprovider-block_13-cs' />
 
 
-__Dynamic number of series generated using SeriesProvider3D__  
+>caption Dynamic number of series generated using SeriesProvider3D
 
 ![Rad Chart View-chartseriesprovider3D-0](images/radchartview-features-chartseriesprovider-0.png)
 

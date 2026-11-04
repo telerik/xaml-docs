@@ -24,5 +24,6 @@ __Example 1: Custom style targeting TreeListViewRow__
 
 > The demonstrated approach may not be relevant for all UI for WPF themes. 
 
-#### __Figure 1: Result from Example 1 in the Fluent theme__
+>caption Result from example 1 in the fluent theme
+
 ![Selected and Hovered TreeListViewRows](images/TreeListView_Hovered_MouseOver_Row.png)

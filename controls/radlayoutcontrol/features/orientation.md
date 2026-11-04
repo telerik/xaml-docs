@@ -25,7 +25,8 @@ __Example 2: Setting the Orientation property of LayoutControlGroup__
 <snippet id='radlayoutcontrol-features-orientation-example_2_setting_the_orientation_property_of_layoutcontrolgroup-xaml' />
 
 
-#### __Figure 1: Horizontal and Vertical orientations__  
+>caption Horizontal and vertical orientations
+
 ![{{ site.framework_name }} RadLayoutControl Horizontal and Vertical orientations](images/layoutcontrol-features-orientation-01.png)
 		
 > The __Orientation__ property doesn't affect the __LayoutControlTabGroup__.

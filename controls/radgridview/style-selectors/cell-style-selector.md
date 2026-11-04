@@ -19,7 +19,7 @@ This article shows how to style RadGridView's cells conditionally by applying __
 
 Assume we have RadGridView bound to a collection of sports clubs. Each club has a __StadiumCapacity__ property. What we want to achieve is to set the background color of the StadiumCapacity cells to __Red if the capacity > 50 000 or Yellow if the capacity < 50 000__:
 
-#### __Figure 1: The expected result__
+>caption The expected result
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with CellStyleSelector applying different cell background colors based on stadium capacity](images/gridview_cellstyleselector.png)
 

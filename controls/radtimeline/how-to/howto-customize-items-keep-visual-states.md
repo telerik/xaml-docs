@@ -49,7 +49,8 @@ __Example 4: Defining timeline control and an instant item template__
 
 This example uses the `Triggers` collection of the `DataTemplate` in order to animate the elements in the template.
 
-#### Figure 1: Customize item and instant item templates
+>caption Customize item and instant item templates
+
 ![Customize item and instant item templates](images/radtimeline-custom-items-selection-mouseover-visual-states-0.png)
 
 ## See Also  

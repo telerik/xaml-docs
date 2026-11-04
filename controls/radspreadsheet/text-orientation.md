@@ -26,13 +26,13 @@ The __Home__ tab of the ribbon exposes a __Text Orientation__ drop-down button i
 * __Rotate Text Down__&mdash;Rotates the text -90 degrees, so it reads vertically from top to bottom.
 * __Format Cell Alignment__&mdash;Opens the __Alignment__ tab of the __Format Cells__ dialog.
 
-__RadSpreadsheet Text Orientation Ribbon Button__
+>caption RadSpreadsheet text orientation ribbon button
 
 ![WPF RadSpreadsheet Text Orientation ribbon button](images/spreadsheet-text-orientation-ribbon.png)
 
 Rotation options are available also in the __Alignment__ tab of the __Format Cells__ dialog. The text orientation element lets you drag to any angle between -90 and 90 degrees, or type the exact number of degrees.
 
-__RadSpreadsheet Text Orientation via the Format Cells Dialog__
+>caption RadSpreadsheet text orientation via the format cells dialog
 
 ![WPF RadSpreadsheet Text Orientation context menu](images/spreadsheet-text-orientation-context-menu.png)
 

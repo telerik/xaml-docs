@@ -20,7 +20,8 @@ The *Today* button is hidden by default. To show it in the [navigation header]({
 __Example 1: Showing the Today button__
 <snippet id='radscheduleview-features-viewdefinitions-set-today-block_1-xaml' />
 
-#### Figure 1: Today button
+>caption Today button
+
 ![{{ site.framework_name }} RadScheduleView Today button](images/radscheduleview-viewdefinition-set-today-0.png)
 
 ## Set Today in Code

@@ -62,7 +62,8 @@ __Example 4: Adding WizardPages in code__
 <snippet id='radwizard-getting-started-block_5-cs' />
 <snippet id='radwizard-getting-started-block_6-vb' />
 
-#### __Figure 1: RadWizard with WizardPage__
+>caption RadWizard with WizardPage
+
 ![{{ site.framework_name }} RadWizard RadWizard with WizardPage](images/GettingStarted-WizardPage.png)
 
 >For more information on how to control the visualization of the buttons, check out the [Wizard Buttons]({%slug wizard-buttons%}) article.
@@ -88,7 +89,8 @@ __Example 5: Merge the ResourceDictionaries__
 
 __Figure 2__ shows __RadWizard__ with the **Windows8** theme applied.
 	
-#### __Figure 2: RadWizard with the Windows8 theme__
+>caption RadWizard with the Windows8 theme
+
 ![Telerik {{ site.framework_name }} Wizard-windows8](images/RadWizard-windows8.png)
 
 ## See also

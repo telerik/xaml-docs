@@ -33,13 +33,13 @@ __Defining BingRestMapProvider programmaticaly__
 <snippet id='radmap-features-providers-bing-rest-map-provider-bing-map-rest-block_2-cs' />
 <snippet id='radmap-features-providers-bing-rest-map-provider-bing-map-rest-block_2-vb' />
 
-__Aerial mode with labels__
+>caption Aerial mode with labels
 
 ![RadMap BingRestMapProvider Aerial mode with labels](images/RadMap_Features_Rest_Providers_01.png)
 
 You can disable labels using the `IsLabelVisible` property. When you set it to *False* the labels disappear. The following snapshot of the Aerial mode for Bing Rest Map Provider when the labels are not visible:
 
-__Aerial mode without labels__
+>caption Aerial mode without labels
 
 ![RadMap Features Aerial mode without labels](images/RadMap_Features_Rest_Providers_02_nolabels.png)
 
@@ -58,7 +58,7 @@ Bing Rest Service provides culture parameter in its url address. This parameter 
 __Setting Language of RadMap in XAML__
 <snippet id='radmap-features-providers-bing-rest-map-provider-bing-map-rest-block_3-xaml' />
 
-__BingRestMapProvider with French culture parameter__
+>caption BingRestMapProvider with French culture parameter
 
 ![RadMap BingRestMapProvider with French culture parameter](images/RadMap_Features_Rest_Providers_Language_03.png)
 	

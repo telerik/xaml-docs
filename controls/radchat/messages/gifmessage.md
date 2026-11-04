@@ -24,7 +24,8 @@ __Defining a GifMessage__
 <snippet id='radchat-features-messages-gifmessage-example_1_defining_a_gifmessage-cs' />
 
 
-__Defining GifMessage__
+>caption Defining GifMessage
+
 ![Defining GifMessage](images/RadChat_Messages_Gif_01.gif)
 
 ## See Also

@@ -19,7 +19,8 @@ __Example 1: TrixIndicator__
 <snippet id='radchartview-indicators-indicators-trixindicator-example_1_trixindicator-xaml' />
 
 
-#### Figure 1: TrixIndicator
+>caption TrixIndicator
+
 <img src="images/radchartview-indicators-trixindicator-0.png" style="width: 80%;">
 
 > __Figure 1__ shows 2 instances of RadCartesianChart. The top one shows only the candlestick series that displays the original data. The chart on the bottom shows the indicator.

@@ -57,7 +57,7 @@ The default visualization of the button content is the letter __A__ with an unde
 <snippet id='radcolorpicker-appearance-block_4-xaml' />
 
 
-__RadColorPicker with custom button content__
+>caption RadColorPicker with custom button content
 
 ![Color Picker Custom Content](images/ColorPickerCustomContent.png)
 

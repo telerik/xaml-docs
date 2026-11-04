@@ -27,7 +27,7 @@ __Setting the IndicatorFill and SecondaryIndicatorFill properties__
 <snippet id='radcircularprogressbar-secondary-indicator-setting_the_indicatorfill_and_secondaryindicatorfill_properties-xaml' />
 
 
-__The following image shows the result from the first code snippet when the IndicatorFill and SecondaryIndicatorFill properties are set__
+>caption The following image shows the result from the first code snippet when the IndicatorFill and SecondaryIndicatorFill properties are set
 
 ![RadCircularProgressBar with custom indicator colors](images/radcircularprogressbar-buffer-1.png)
 

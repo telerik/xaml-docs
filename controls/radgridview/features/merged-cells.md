@@ -40,7 +40,7 @@ __Example 1: Configure RadGridView to merge cells vertically__
 <snippet id='radgridview-features-merged-cells-example_1_configure_radgridview_to_merge_cells_vertically-xaml' />
 
 
-__Figure 1: RadGridView with vertically merged cells__
+>caption RadGridView with vertically merged cells
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with vertically merged cells](images/gridview_merged_cells_1.png)
 
@@ -52,7 +52,7 @@ __Example 2: Configure RadGridView to merge cells horizontally__
 
 
 
-__Figure 2: RadGridView with horizontally merged cells__
+>caption RadGridView with horizontally merged cells
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with horizontally merged cells](images/gridview_merged_cells_2.png)
 
@@ -67,7 +67,7 @@ __Example 3: Configure cell merging per column__
 
 >Please note RadGridView's definition in __Example 3__ is specific to illustrate it
 
-__Figure 3: RadGridView with configured cell merging per column__
+>caption RadGridView with configured cell merging per column
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with cell merging configured per column](images/gridview_merged_cells_3.png)
 
@@ -85,11 +85,11 @@ __Example 5: Specify RowDetailsTemplate for RadGridView__
 <snippet id='radgridview-features-merged-cells-example_5_specify_rowdetailstemplate_for_radgridview-xaml' />
 
 
-__Figure 4: RadGridView with merged cells and RowDetails defined__
+>caption RadGridView with merged cells and RowDetails defined
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with merged cells and row details enabled](images/gridview_merged_cells_4.png)
 
-__Figure 5: RadGridView with merged cells and RowDetails expanded__
+>caption RadGridView with merged cells and RowDetails expanded
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with merged cells and expanded row details](images/gridview_merged_cells_5.png)
 

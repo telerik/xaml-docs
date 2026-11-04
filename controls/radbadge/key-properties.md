@@ -37,7 +37,8 @@ This article will list the key properties provided by the RadBadge control.
 	* __Add__
 	* __ContentOnly__: 	
 	
-#### Figure 3: RadBadge Types
+>caption RadBadge types
+
 ![Telerik Badge Types](images/radbadge-key-properties_1.PNG)
 
 * __Geometry__: A property of type __Geometry__ that gets or sets the geometry of the badge control. You can apply one of the following geometries which our geometry markup extension provides.
@@ -67,7 +68,8 @@ This article will list the key properties provided by the RadBadge control.
 	__Example 1: Set Custom Geometry In Code__
 	<snippet id='radbadge-key-properties-block_2-cs' />
 		
-	#### Figure 3: Custom Geometries
+>caption Custom geometries
+
 	![Telerik Badge Geometries](images/radbadge-key-properties_2.png)
 
 * __TextAlignment__: A property of type __TextAlignment__ that gets or sets the text alignment of the underlying __TextBlock__.

@@ -19,7 +19,7 @@ __Setting the flip in XAML__
 __Setting the flip in code__
 <snippet id='radwebcam-features-flip-video-block_2-cs' />
 
-__Flipped Video__
+>caption Flipped video
 
 ![{{ site.framework_name }} RadWebCam Flipped Video](images/radwebcam-features-video-flip-0.png)
 

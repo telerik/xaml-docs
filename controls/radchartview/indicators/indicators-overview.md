@@ -15,7 +15,8 @@ RadChartView provides a rich set of __financial indicators__ which can be used t
 
 > The financial indicators are applicable only in the context of __RadCartesianChart__.
 
-#### __Figure 1: Financial indicators__
+>caption Financial indicators
+
 <img src="images/radchartview-indicators-overview-0.png" style="width: 80%;">
 
 ## Setting Up an Indicator

@@ -23,10 +23,12 @@ __Set the Icon Column Width__
                         IconColumnWidth="0" />
 ```
 
-__RadContextMenu Icon Column__
+>caption RadContextMenu icon column
+
 ![WPF RadContextMenu Icon Column](images/RadContextMenu_KeyProperties_01.png)
 
-__RadContextMenu with Hidden Icon Column__
+>caption RadContextMenu with hidden icon column
+
 ![WPF RadContextMenu with Hidden Icon Column](images/RadContextMenu_KeyProperties_02.png)
 
 ## See Also  

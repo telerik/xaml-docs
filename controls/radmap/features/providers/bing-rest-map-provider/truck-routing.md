@@ -41,7 +41,8 @@ To listen for errors returned by the Bing Maps service, use the __CalculateTruck
 __Example 4: Collecting truck route response errors__
 <snippet id='radmap-features-providers-bing-rest-map-provider-truck-routing-block_4-cs' />
 
-#### Figure 1: Route shape representing the route response returned by the truck route API
+>caption Route shape representing the route response returned by the truck route API
+
 ![{{ site.framework_name }} RadMap Route shape representing the route response returned by the truck route API](images/radmap-features-providers-bing-rest-map-provider-truck-routing-0.png)
 
 ## Truck Routing Settings

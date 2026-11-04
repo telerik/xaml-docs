@@ -16,10 +16,11 @@ The RadSyntaxEditor has support for intelliprompts which aim to speed up coding 
 
 Through the **CompletionListWindow** you can show a collection of items when the user inputs a given string. To do so, you need to first populate its presenter's **CompletionListItems** collection.
 
-#### [C#] Example 1: Populate and display the completion list window
+__[C#] Example 1: Populate and display the completion list window__
 <snippet id='radsyntaxeditor-features-intelliprompts-block_1-cs' />
 
-#### Figure 1: Code completion
+>caption Code completion
+
 ![Code completion](images/syntaxeditor-intelliprompts-completion.png)
 
 >The code completion popup can also be shown using the **Ctrl + Space** key combination.
@@ -28,10 +29,11 @@ Through the **CompletionListWindow** you can show a collection of items when the
 
 Through the **OverloadListWindow** you can show a collection of overloads when the user tries to invoke a certain method. To do so, you need to first populate its presenter's **OverloadListItems** collection.
 
-#### [C#] Example 2: Populate and display the completion list window
+__[C#] Example 2: Populate and display the completion list window__
 <snippet id='radsyntaxeditor-features-intelliprompts-block_2-cs' />
 
-#### Figure 2: Overload list
+>caption Overload list
+
 ![Overload list](images/syntaxeditor-intelliprompts-overloads.png)
 
 ## See Also

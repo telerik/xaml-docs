@@ -76,7 +76,8 @@ To change the theme, you can follow the steps below:
 	<snippet id='radfiledialogs-getting-started-example_2_merging_the_resourcedictionaries-xaml' />
 
 
-#### __Figure 1: File dialog with VisualStudio2013 theme applied__
+>caption File dialog with VisualStudio2013 theme applied
+
 ![File dialog with VisualStudio2013 theme applied](images/radfiledialogs-getting-started-01.png)
 
 {% if site.site_name == 'WPF' %}

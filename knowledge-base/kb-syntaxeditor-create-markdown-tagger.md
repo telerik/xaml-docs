@@ -168,7 +168,7 @@ The tagger applies the following classifications:
 
 This example is a lightweight syntax highlighter. It does not parse the complete CommonMark specification, and nested or escaped Markdown expressions may require additional parsing rules.
 
-#### Figure 1: Markdown syntax highlighted in RadSyntaxEditor
+>caption Markdown syntax highlighted in RadSyntaxEditor
 
 ![RadSyntaxEditor displaying highlighted Markdown headings, emphasis, lists, blockquotes, links, inline code, and a fenced code block](images/custom-markdown-tagger-in-syntaxeditor.png)
 

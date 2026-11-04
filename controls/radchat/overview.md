@@ -18,7 +18,7 @@ The __RadChat__ component enables easy implementation of conversational UI in WP
 {% include cta-panel-overview.html %}
 {% endif %} 
 
-__RadChat__
+>caption RadChat
 
 ![RadChat](images/RadChat_Overview.png)
 

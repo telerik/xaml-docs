@@ -72,7 +72,8 @@ __Example 6: Setting SelectionMode in code__
 
 As you can see in __Figure 1__, when the SelectionMode is set to Multiple you are able to select more than one item.
 
-#### __Figure 1: Multiple selection enabled__  
+>caption Multiple selection enabled
+
 ![{{ site.framework_name }} RadTreeView Multiple selection enabled](images/RadTreeView_TreeViewItemSelection_020.png)
 
 >tip The default selection mode of the RadTreeView is __Single__.

@@ -26,7 +26,8 @@ __Example 1: Declaring a RangeBarSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-bar-series-rangebarseries-example_1_declaring_a_rangebarseries_in_xaml-xaml' />
 
 
-#### __Figure 1: RangeBarSeries visual appearance__  
+>caption RangeBarSeries visual appearance
+
 ![Telerik UI for WPF RadChartView RangeBarSeries visual appearance](images/radchartview-series-rangebarseries.png)
 
 ## Properties

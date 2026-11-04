@@ -14,11 +14,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>Prior to 2026.4.1007</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadRichTextBox for WPF</td>
 		</tr>
 	</tbody>

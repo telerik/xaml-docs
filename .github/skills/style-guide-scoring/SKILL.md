@@ -14,6 +14,16 @@ Use the scoring rules defined in this skill as the default source of truth. Do n
 
 The full style guide lives at `C:\HelpMigration\tech-docs-style-guide` for optional deeper review only. When the prompt explicitly requires it, read only the specific source file or files needed for the requested check instead of scanning the whole folder.
 
+## Mandatory Article Checks
+
+Read and apply [style-structure](../telerik-documentation-style-guide/style-structure/SKILL.md), including its compliant/non-compliant examples and automated-fix acceptance criteria. Its H1 and image rules override generic or external style advice.
+
+- [ ] Standard articles have exactly one `# Heading`; flag missing or multiple H1s and recommend one title or hierarchy-aware demotion of extras.
+- [ ] KB articles (`knowledge-base/` or KB metadata) have zero H1s. Never add one, even for a template; flag every H1 and recommend removal of a duplicate title or conversion of a real section. KB may start at H2.
+- [ ] Every image has a meaningful sentence or exact `>caption Description` block immediately before it, with only optional blank lines between. Flag missing, heading-only, bold-only, and heading-plus-caption-only introductions.
+
+Report source locations and specific fixes in review-only mode. For authorized remediation or content generation, preserve sufficient introductions, replace image-only headings and bold labels with prose or `>caption`, preserve hierarchy and genuine section anchors, and rerun these checks. Record H1 findings in `titles_and_headings` and image-introduction findings in `formatting_conventions`; do not award 5 in an affected dimension with unresolved mandatory violations. Keep the output schema and weights unchanged; report blocked fixes rather than claiming compliance.
+
 ## Additional Guide Coverage
 
 Apply the following cross-cutting rules under the closest existing scoring dimension. Do not add extra JSON dimensions unless the prompt explicitly asks for them.
@@ -24,7 +34,7 @@ Only apply artifact-specific checks when the article actually contains that arti
 * Vocabulary and terminology (`vocabulary.md`, `brandnames.md`, `click-tap-select.md`, `personal-pronouns.md`): Prefer `checkbox`; use `click X` and `tap X`; use `hover over` as the verb and `hover` or `hovering` as the noun or adjective; prefer `unavailable` over `disabled` or `grayed out` for irrelevant UI state; use `earlier` and `later` for versions; use `starting with` instead of `since` or `as of` for version introductions; preserve official company, product, and third-party spelling; prefer gender-neutral pronouns or rewrite to avoid unnecessary gendering.
 * Programming language display names: In prose, headings, and code-block labels (tab headers, bold introductions), always write **C#** and **VB.NET**. Do not use alternative forms such as "csharp", "CSharp", "C Sharp", "vb", "VB", "Visual Basic", or "VB.Net". The fenced-code-block language tag must also follow this rule: use ` ```C# ` and ` ```VB.NET ` instead of ` ```csharp ` or ` ```vb `.
 * Links and cross-references (`cross-references.md`): Use descriptive anchor text that explains the destination or purpose. Vary repeated anchor text when citing the same resource often. Paraphrase internal documentation titles instead of quoting them exactly. Cite exact external resource titles and authors. When HTML syntax is available, prefer opening external links in a new tab.
-* Images, tables, and captions (`screenshots.md`, `tables-figures-code.md`): Require descriptive alt text for images. Captions, when used, should be bold, descriptive, in sentence case, and positioned before the element. Do not leave table cells blank; use `N/A`, `Not applicable`, or `None` when needed. Flag screenshots that expose sensitive data or visibly ignore default/light UI guidance.
+* Images, tables, and captions (`screenshots.md`, `tables-figures-code.md`): Require descriptive image alt text plus a meaningful sentence or exact `>caption` block immediately before every image. Never use a heading or bold-only image introduction. Image captions use `>caption`, not bold; retain separate code and table caption conventions. Do not leave table cells blank; use `N/A`, `Not applicable`, or `None` when needed. Flag screenshots that expose sensitive data or visibly ignore default/light UI guidance.
 
 ---
 
@@ -55,9 +65,9 @@ Source: `titles-and-headings.md`
 
 | Check | Pass condition |
 |---|---|
-| Single H1 | Exactly one `#` heading in the article |
+| Article-type H1 count | Standard article: exactly one `# Heading`; KB: no H1. Flag missing/multiple standard H1s and every KB H1; never add a KB H1 |
 | Title case | Nouns, verbs, adjectives, adverbs, pronouns, subordinating conjunctions capitalized; coordinating conjunctions (`and`, `but`, `or`), articles (`a`, `an`, `the`), prepositions (`at`, `on`, `in`, …) lowercased unless first/last word |
-| Heading hierarchy | No skipped levels (e.g., H2 directly to H4) |
+| Heading hierarchy | No skipped levels (e.g., H2 directly to H4); a KB starting at H2 is valid |
 | Parallel same-level headings | All siblings share the same grammatical form |
 | Subheading coverage | At least two subheadings per heading section (when content warrants) |
 | No trailing punctuation in headings | Headings do not end with `.`, `!`, or `?` (commas are allowed) |
@@ -121,7 +131,8 @@ Source: `element-formatting.md`, `tables-figures-code.md`, `screenshots.md`
 | Command-line formatting | Command references use monospace; command examples distinguish verbatim parts from variable placeholders where practical |
 | Commands not used as verbs | Avoids phrasing such as `` `cd` to the folder `` |
 | UI navigation paths | Menu or toolbar sequences use bold UI labels separated by `>` with spaces |
-| Captions and alt text when present | Images include meaningful alt text; captions are bold, descriptive, sentence case, and placed before the element |
+| Immediate image introductions and alt text | Every image has meaningful alt text plus a meaningful sentence or exact `>caption` block immediately before it; only optional blank lines intervene |
+| No heading or bold-only image introductions | Image-only headings and bold labels, including heading-plus-caption-only introductions, are flagged and replaced with prose or `>caption` when edits are authorized |
 
 ### 6. Lists — weight 10 %
 
@@ -170,7 +181,7 @@ Source: `basic-rules-and-guidelines.md`, `cross-references.md`, `tables-figures-
 | Topic introduction via subheadings | Each substantial new aspect is introduced with a subheading for readability and orientation |
 | Feature-focused scope | Prefers one feature/topic per article instead of mixing unrelated features |
 | Descriptive cross-references | Links explain the destination or purpose clearly; external references identify the resource precisely |
-| Media and table completeness when present | Figures/tables/screenshots include a caption or lead-in sentence when needed, table cells are not blank, and visible screenshots avoid sensitive/confidential data |
+| Media and table completeness when present | Every image has an approved immediate introduction; tables have captions or lead-ins when needed, table cells are not blank, and visible screenshots avoid sensitive/confidential data |
 
 ---
 

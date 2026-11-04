@@ -27,7 +27,8 @@ There are two ways to reference the needed xaml files:
 	
 	Let's, for example, apply VisualStudio2013 theme to the control. This means that we should add a reference to Telerik.Windows.Themes.VisualStudio2013.dll as well:
 	
-	Figure 1: Adding the needed references	
+>caption Adding the needed references
+
 	![Rad Radial Menu Setting Theme 01](images/RadRadialMenu_Setting_Theme_01.png)
 	
 	Then merge the xaml files in the App.xaml as shown in __Example 1__:
@@ -38,7 +39,8 @@ There are two ways to reference the needed xaml files:
 
 * Copy the xaml files to a folder in the project: Create a Theme folder and copy the required files from Themes.Implicit/../VisualStudio2013/../Themes/ folder located in the installation folder of UI for WPF:
 
-	Figure 2: Copying the .xaml files
+>caption Copying the .Xaml files
+
 	![Rad Radial Menu Setting Theme 02](images/RadRadialMenu_Setting_Theme_02.png)
 
 	__Example 2: Merging the .xaml files__
@@ -47,5 +49,6 @@ There are two ways to reference the needed xaml files:
 
 Either way you choose, the end result will be the following:
 
-Figure 3: RadialMenu with VisualStudio2013 theme applied
+>caption RadialMenu with VisualStudio2013 theme applied
+
 ![Rad Radial Menu Setting Theme 03](images/RadRadialMenu_Setting_Theme_03.png)

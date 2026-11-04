@@ -83,7 +83,7 @@ Let's assume you would like to ask your users for confirmation when changing the
 
 Applying these steps will result in a confirmation dialog through which you can cancel the selection changing in your application, as shown in **Figure 1**.
 
-#### **Figure 1: Confirmation dialog on changing the selected item of the RadGridView**
+>caption Confirmation dialog on changing the selected item of the RadGridView
 
 ![Confirmation dialog on changing the selected item of the RadGridView](images/mvvmhelpers_selectionchanging_dialog.png)
 

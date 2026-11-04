@@ -55,7 +55,7 @@ __Defining RadWebCam in code__
 
 From this point on, you can start using the control without any additional set up.
 
-__RadWebCam__
+>caption RadWebCam
 
 ![{{ site.framework_name }} RadWebCam Overview](images/radwebcam-getting-started-0.png)
 

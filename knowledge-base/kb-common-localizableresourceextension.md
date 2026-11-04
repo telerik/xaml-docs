@@ -15,11 +15,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2024.2.514</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>Telerik UI for WPF</td>
 		</tr>
 	</tbody>
@@ -45,11 +45,11 @@ __Setting a new .resx file to the ResourceManager property of the LocalizationMa
     };
 ```
 
-__English translation for the tooltips texts__
+>caption English translation for the tooltips texts
 
 ![English translation for the tooltips texts](images/kb-common-localizableresourceextension-0.png)
 
-__German translation for the tooltips texts__
+>caption German translation for the tooltips texts
 
 ![German translation for the tooltips texts](images/kb-common-localizableresourceextension-1.png)
 
@@ -289,6 +289,6 @@ __Using the LocalizableResourceExtension markup extension on the tooltips for th
     <!--Rest of the default ControlTemplate implementation of RadWindow-->
 ```
 
-__Enabled dynamic localization on the RadWindow's buttons' tooltips__
+>caption Enabled dynamic localization on the RadWindow's buttons' tooltips
 
 ![Enabled dynamic localization on the RadWindow's buttons' tooltips](images/kb-common-localizableresourceextension-2.gif)

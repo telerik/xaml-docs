@@ -30,7 +30,8 @@ __Example 1: Defining the ItemEditTemplate__
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __Figure 1: Result from Example 1 in the Fluent theme__
+>caption Result from example 1 in the fluent theme
+
 ![RadTreeView in edit mode](images/RadTreeView_TemplatingItemEditTemplate_070.PNG)
 {% endif %}
 

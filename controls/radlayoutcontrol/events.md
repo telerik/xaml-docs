@@ -37,8 +37,9 @@ The layout control has the following event.
 		<snippet id='radlayoutcontrol-events-example_1_setting_allowed_actions-cs' />
 
 
-		#### __Figure 1: Locked item__
-	![{{ site.framework_name }} RadLayoutControl Locked item](images/layoutcontrol-events-01.png)
+>caption Locked item
+
+![{{ site.framework_name }} RadLayoutControl Locked item](images/layoutcontrol-events-01.png)
 
 ## Save/Load layout events
 

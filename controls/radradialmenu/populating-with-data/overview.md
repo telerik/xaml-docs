@@ -19,7 +19,8 @@ __Example 1: Adding parent items__
 
 <snippet id='radradialmenu-populating-with-data-overview-block_1-xaml' />
 
-Figure 1: Adding parent items
+>caption Adding parent items
+
 ![Rad Radial Menu Populating with data 01](images/RadRadialMenu_Populating_with_data_01.png)
 
 Each of the __RadRadialMenuItems__ can have child items that are defined in the same way. __Example 2__ demonstrates how to add submenu items to one of the top-level items.        
@@ -30,7 +31,8 @@ __Example 2: Adding child items__
 
 Clicking on the navigate button of the parent item will navigate to its child items:
 
-Figure 2: Navigating to the child items
+>caption Navigating to the child items
+
 ![Rad Radial Menu Populating with data 02](images/RadRadialMenu_Populating_with_data_02.png)
 
 The submenu items can also have children on their own.

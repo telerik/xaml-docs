@@ -26,7 +26,7 @@ __Example 1: Basic RowDetails Template__
 <snippet id='radgridview-row-details-template-example_1_basic_rowdetails_template-xaml' />
 
 
-__Figure 1:__ Displays the result of the applied __Basic RowDetails Template__.
+>caption Displays the result of the applied basic RowDetails template.
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a basic Row Details template showing the selected item's ID](images/gridview-row-details-template-basic.png)
 
@@ -41,7 +41,8 @@ __Example 2: Definition of Complex RowDetails Template__
 
 >important You should specify fixed dimensions for the RadGridView in the RowDetailsTemplate (Height/MaxHeight and Width/MaxWidth). Otherwise the [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism will be disabled. 
 
-__Figure 2:__ Displays the result of the applied __Complex RowDetails Template__.  
+>caption Displays the result of the applied complex RowDetails template.
+
 ![Telerik UI for {{ site.framework_name }} RadGridView with a complex Row Details template that contains a nested grid](images/gridview-row-details-template-complex.png)
 
 __Example 3: Setting the ItemsSource for Examples 1 and 2__

@@ -16,7 +16,8 @@ The __RadRibbonWindow__ control is used to replace the __Window__ control that r
 
 __Figure 1__ demonstrates the result, after placing a __RadRibbonView__ in the __MainWindow__ of your WPF application. 
 
-#### __Figure 1: RadRibbonView inside MainWindow__
+>caption RadRibbonView inside MainWindow
+
 ![RadRibbonWindow inside MainWindow](images/radribbonview-features-controls-window-wpf-0.png)
 
 You will have two title bars which makes the UI messy. The __RadRibbonWindow__ integrates with the __RadRibbonView__ and prevents this. In order to use the __RadRibbonWindow__ you have to replace the __Window__ control in your __MainWindow__ class with the __RadRibbonWindow__ one.		
@@ -28,7 +29,8 @@ __Example 2: Inheriting RadRibbonWindow__
 <snippet id='radribbonview-features-ribbon-controls-ribbon-window-wpf-block_2-cs' />
 <snippet id='radribbonview-features-ribbon-controls-ribbon-window-wpf-block_3-vb' />
 
-#### __Figure 2: RadRibbonWindow as MainWindow__
+>caption RadRibbonWindow as MainWindow
+
 ![RadRibbonWindow as MainWindow](images/radribbonview-features-controls-window-wpf-1.png)
 
 By default, when you add a __RadRibbonView__ in a __RadRibbonWindow__, the components are integrated together to create a seamless UI experience. For that purpose the __QuickAccessToolbar__ as well as the __ApplicationName__  and the __Title__ of the __RadRibbonView__ are displayed in the title tray of the __RadRibbonWindow__. In this case, the value of the __RadRibbonWindow Title__ is ignored.		
@@ -47,7 +49,8 @@ With __Q1 2014__ we introduced a new property, which you can use to control this
 __Example 4: Setting IsTitleVisible__
 <snippet id='radribbonview-features-ribbon-controls-ribbon-window-wpf-block_5-xaml' />
 
-#### __Figure 3: RadRibbonWindow with visible title__
+>caption RadRibbonWindow with visible title
+
 ![Rad Ribbon View Ribbon Window Visible Title](images/radribbonview-features-controls-window-wpf-2.png)
 
 ## Setting a Theme
@@ -70,7 +73,8 @@ __Example 7: Merging the needed resources__
 
 <snippet id='radribbonview-features-ribbon-controls-ribbon-window-wpf-block_9-xaml' />
 
-#### __Figure 4: RadRibbonWindow in the Office2016 theme__
+>caption RadRibbonWindow in the Office2016 theme
+
 ![Rad Ribbon View Ribbon WindowWPF Office2016 Theme](images/radribbonview-features-controls-window-wpf-3.png)
 
 ## Customize Appearance

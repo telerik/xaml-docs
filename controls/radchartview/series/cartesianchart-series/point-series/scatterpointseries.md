@@ -26,7 +26,8 @@ __Example 1: Declaring an ScatterPointSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-point-series-scatterpointseries-example_1_declaring_an_scatterpointseries_in_xaml-xaml' />
 
 
-#### __Figure 1: ScatterPointSeries visual appearance__
+>caption ScatterPointSeries visual appearance
+
 ![Telerik UI for WPF RadChartView ScatterPointSeries visual appearance](images/radchartview-series-scatterpointseries.png)
 
 ## Properties

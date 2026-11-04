@@ -26,7 +26,8 @@ __Example 1: Declaring a ScatterAreaSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-area-series-scatterareaseries-example_1_declaring_a_scatterareaseries_in_xaml-xaml' />
 
 
-#### __Figure 1: ScatterAreaSeries visual appearance__  
+>caption ScatterAreaSeries visual appearance
+
 ![Telerik UI for WPF RadChartView ScatterAreaSeries visual appearance](images/radchartview-series-scatterlineareaseries.png)
 
 ## Properties

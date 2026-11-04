@@ -168,7 +168,7 @@ The default values of the colors in the theme are listed below:
 | ReadOnlyBackgroundColor | #00FFFFFF | <div class="theme-palette-color fluenttheme-readonlybackgroundcolor-light"></div> |#00FFFFFF | <div class="theme-palette-color fluenttheme-readonlybackgroundcolor-light"></div>|
 | ReadOnlyBorderColor | #FFCDCDCD | <div class="theme-palette-color fluenttheme-readonlybordercolor-light"></div> |#FF4C4C4C | <div class="theme-palette-color fluenttheme-readonlybordercolor-dark"></div>|
 
-__Theme colors represented in RadOutlookBar__
+>caption Theme colors represented in RadOutlookBar
 
 ![Telerik UI for WPF Fluent theme colors represented in RadOutlookBar](images/fluent-theme-outlook.PNG)
 
@@ -259,7 +259,7 @@ __Changing the theme's FontSize and FontFamily__
 	}
 ```
 
-__Setting FontSize and FontFamily__
+>caption Setting FontSize and FontFamily
 
 ![Telerik UI for WPF RadCalendar with default font size and font family in the Fluent theme](images/fluent-theme-calendar-font-change-1.png)![Telerik UI for WPF RadCalendar with modified font size and font family in the Fluent theme](images/fluent-theme-calendar-font-change-2.png)
 
@@ -279,7 +279,7 @@ __Changing the default corner radius__
 	FluentPalette.Palette.CornerRadius = new CornerRadius(10); 	
 ```
 
-__Appearance of a RadButton control after changing the default corner radius__
+>caption Appearance of a RadButton control after changing the default corner radius
 
 ![Telerik UI for WPF RadButton with a corner radius of 10 in the Fluent theme](images/fluent-theme-button-cornerradius.png)
 
@@ -324,7 +324,7 @@ __Set RadToggleButton's visual appearance through the helpers__
                              helpers:ThemeHelper.CheckedBrush="{telerik:FluentResource ResourceKey=ValidationBrush}"/>
 ```
 
-__Appearance of the RadToggleButton in the different states__
+>caption Appearance of the RadToggleButton in the different states
 
 ![Telerik UI for WPF RadToggleButton pressed brush in the Fluent theme](images/fluent-theme-togglebutton-pressed-brush.png)![Telerik UI for WPF RadToggleButton mouse-over brush in the Fluent theme](images/fluent-theme-togglebutton-mouseover-brush.png)![Telerik UI for WPF RadToggleButton checked brush in the Fluent theme](images/fluent-theme-togglebutton-checked-brush.png)
 
@@ -340,7 +340,7 @@ The `FluentControl` is an element designed for the Fluent theme and used to disp
 * `BorderGradient`&mdash;Sets the border gradient brush. This brush should be RadialGradientBrush and is cloned in code because it is modified runtime and should not be frozen.
 * `EffectMode`&mdash;Sets the opacity of the ripple effect mode of the control - Ripple or Glow. The default effect is Ripple.
 
-__Ripple effect on RadDropDownButton__
+>caption Ripple effect on RadDropDownButton
 
 ![Telerik UI for WPF Fluent theme ripple effect on RadDropDownButton](images/fluent-light-dropdown.gif)![Telerik UI for WPF Fluent theme ripple effect on RadDropDownButton with dark variation](images/fluent-dark-dropdown.gif)
 
@@ -397,7 +397,7 @@ __RadButton's instancing__
     </StackPanel>
 ```
 
-__FluentControl used within a custom template applied to a RadButton__
+>caption FluentControl used within a custom template applied to a RadButton
 
 ![Telerik UI for WPF FluentControl in a custom template applied to a RadButton](images/fluent-theme-light-effect.gif)![Telerik UI for WPF FluentControl in a custom template applied to a RadButton with dark variation](images/fluent-theme-dark-effect.gif)
 
@@ -422,7 +422,7 @@ By default, the scrollbars in the Fluent theme change their size depending on wh
 
 >important The `ScrollBarMode` property and the `ScrollViewerScrollBarsMode` enumeration of the FluentPalette, introduced with the  __2019.1.121__ version of our dlls, are __obsolete__ and __replaced__ by the `ScrollBarsMode` property of the palette and the `ScrollViewerScrollBarsMode` enum under the `Telerik.Windows.Controls.Theming` namespace.
 
-__ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__
+>caption ScrollBar behavior in auto, compact and normal ScrollBarsMode
 
 ![Telerik UI for WPF ScrollBar in Auto, Compact, and Normal ScrollBarsMode in the Fluent theme](images/fluent-light-scrollbarmode.gif)
 

@@ -19,7 +19,7 @@ The __PopupContent__ and __PopupContentTemplate__ properties allow for setting t
 __Example 1: Setting PopupContent and PopupContentTemplate__
 <snippet id='radnotifyicon-features-popup-block_1-xaml' />
 
-#### __Figure 1: RadNotifyIcon with activated popup__
+>caption RadNotifyIcon with activated popup
 
 ![RadNotifyIcon with activated popup](images/radnotifyicon_popup.png)
 

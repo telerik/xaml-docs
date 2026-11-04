@@ -32,7 +32,8 @@ __Example 2: Registering the custom tagger__
 
 Upon loading some Python code in the editor you will observe a result similar to the one illustrated in **Figure 1**.
 
-#### Figure 1: The custom Python tagger
+>caption The custom python tagger
+
 ![The custom Python tagger](images/syntaxeditor-taggers-custom-language.png)
 
 ## See Also

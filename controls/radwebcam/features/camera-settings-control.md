@@ -13,7 +13,7 @@ position: 7
 
 The RadWebCam component allows you to control the settings of the connected camera. You can do this using the settings dialog which opens when you press the [Open settings dialog]({%slug radwebcam-visual-structure%}) button.
 
-__Settings dialog__
+>caption Settings dialog
 
 ![{{ site.framework_name }} RadWebCam Settings Dialog](images/radwebcam-features-camera-settings-control-0.png)
 
@@ -33,7 +33,7 @@ The `ShowAudioSettings` property allows you to control the addition of the Audio
 __Adding the Audio Tab__
 <snippet id='radwebcam-features-camera-settings-control-block_2-xaml' />
 
-__Audio Tab__
+>caption Audio tab
 
 ![{{ site.framework_name }} RadWebCam Audio Tab](images/radwebcam-features-camera-settings-control-1.png)
 

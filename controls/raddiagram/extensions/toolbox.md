@@ -29,7 +29,7 @@ In order to use the RadDiagramToolbox control in your projects you have to add r
 
 The __Diagram Extensions__ include a RadDiagramToolbox control. It is designed to display multiple galleries of `RadDiagramShape` elements in a single control. Below you can see a snapshot and explanation of the main visual elements of the control.
 
-__RadDiagramToolbox Overview__
+>caption RadDiagramToolbox overview
 
 ![Rad Diagram Extensions Toolbox Overview](images/RadDiagram_Extensions_Toolbox_Overview.png)
 
@@ -80,7 +80,7 @@ Next, you can customize your `GalleryItems` collection to display only the Basic
 <snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_overview-vb' />
 
 
-__RadDiagramToolbox with Basic Shapes Gallery__
+>caption RadDiagramToolbox with basic shapes gallery
 
 ![Rad Diagram Extensions Toolbox Basic Shapes](images/RadDiagram_Extensions_Toolbox_BasicShapes.png)
 
@@ -100,7 +100,7 @@ Once the ViewModels are all in place, you can use the *MainViewModel* as the `Da
 <snippet id='raddiagram-extensions-toolbox-raddiagramtoolbox_with_basic_shapes_gallery-xaml' />
 
 
-__RadDiagramToolbox with custom gallery__
+>caption RadDiagramToolbox with custom gallery
 
 ![Rad Diagram Extensions Toolbox Custom Gallery](images/RadDiagram_Extensions_Toolbox_CustomGallery.png)
 

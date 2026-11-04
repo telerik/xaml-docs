@@ -13,7 +13,8 @@ position: 2
 
 This article demonstrates how to add a custom UIElement in the NewItems section of the LayoutControlToolBoxView which is located under the Items tab. 
 
-#### __Figure 1: The default toolbox items__
+>caption The default toolbox items
+
 ![The default toolbox items](images/radlayoutcontrol-how-to-add-custom-element-in-toolbox-01.png)
 
 To add a new element in the toolbox you can use the __NewItems__ collection of LayoutControlToolBoxView and insert a new [LayoutControlHierarchicalNodeProxy]({%slug radlayoutcontrol-features-toolbox-toolboxview%}#layoutcontrolhierarchicalnodeproxy) object. The proxy has several properties that describe the toolbox item - header, element type and element instance - which will be used when the item is dropped in the layout control. __Example 1 and 2__ show how to set up the proxy and add it in the NewItems collection.
@@ -28,7 +29,8 @@ __Example 2: Creat item proxies and add them in the NewItems collection__
 	
 In __Example 2__ we add two additional proxies in the collection and they represent a TextBox and a Button which can be dragged and dropped from the toolbox to the layout control.
 
-#### __Figure 2: The toolbox with two additional items__
+>caption The toolbox with two additional items
+
 ![The toolbox with two additional items](images/radlayoutcontrol-how-to-add-custom-element-in-toolbox-02.png)
 
 >tip The custom items will be drawn using the default toolbox item icon. You can find a runnable project showing how to alter this and also the approach described in the article in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/LayoutControl/AddCustomElementInToolBox). 

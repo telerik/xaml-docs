@@ -77,7 +77,8 @@ The example below shows how to set the **ContextMenu** property of **GridVIewIte
 __Example 1: Set custom context menu__
 <snippet id='radmulticolumncombobox-gridview-itemssourceprovider-block_1-xaml' />
 
-#### __Figure 1: Result of Example 1__
+>caption Result of example 1
+
 ![RadMultiColumnComboBox with custom context menu](images/MultiColumnComboBox_GridViewItemsSourceProvider_01.png)
 
 ## Can User Search In Hidden Columns

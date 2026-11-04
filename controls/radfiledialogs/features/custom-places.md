@@ -23,7 +23,7 @@ To enable this functionality, you should add a list of directories to the contro
 
 The specified folders will then appear in the dialogs navigation pane.
 
-#### Figure 1: Custom directories shown in the navigation pane
+>caption Custom directories shown in the navigation pane
 
 ![Custom directories shown in the navigation pane](images/FileDialogs_CustomPlaces.png)
 

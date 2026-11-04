@@ -31,7 +31,7 @@ To take the snapshot press the "Take snapshot" button. Or call the `TakeSnapshot
 
 > By default a preview of the snapshot will be shown that allows you to choose if it should be saved or not. If you choose to save it the SnapshotTaken event will fire. To disable the preview set the `IsPreviewingSnapshot` property of RadWebCam to `False`.
 
-__Take snapshot button__
+>caption Take snapshot button
 
 ![{{ site.framework_name }} RadWebCam Take Snapshot Button](images/radwebcam-save-snapshot-to-file-0.png)
 

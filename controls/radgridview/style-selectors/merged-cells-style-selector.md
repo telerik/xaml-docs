@@ -42,7 +42,7 @@ __Example 3: Setting the MergedCellsStyleSelector property__
 
 And here is the final result:
 
-#### __Figure 1: The merged cells styled using the MergedCellsStyleSelector property__
+>caption The merged cells styled using the MergedCellsStyleSelector property
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with MergedCellsStyleSelector applying different styles to vertically merged cells](images/gridview-merged_cells_styleselector.png)
 

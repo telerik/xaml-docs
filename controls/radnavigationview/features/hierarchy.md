@@ -19,7 +19,7 @@ __Setting up hierarchical navigation view in XAML__
 
 To control the current expand state of a RadNavigationViewItem, set its __IsExpanded__ property.
 
-__Hierarchical RadNavigationView__
+>caption Hierarchical RadNavigationView
 
 ![RadNavigationView Hierarchical RadNavigationView](images/radnavigationview-features-hierarchy-0.png)
 
@@ -37,7 +37,7 @@ To change the default horizontal offset (indent) of the child items relative to 
 __Setting the indent of sub items__
 <snippet id='radnavigationview-features-hierarchy-block_3-xaml' />
 
-__Sub items indentation set to 10__
+>caption Sub items indentation set to 10
 
 ![RadNavigationView Sub items indentation set to 10](images/radnavigationview-features-hierarchy-1.png)
 
@@ -48,7 +48,7 @@ RadNavigationViewItem has default expand and collapse icons shown in the right p
 __Setting the expand and collapse icons__
 <snippet id='radnavigationview-features-hierarchy-block_4-xaml' />
 
-__RadNaviationViewItems with folder glyphs as expand/collapse icons__
+>caption RadNaviationViewItems with folder glyphs as expand/collapse icons
 
 ![RadNavigationView RadNaviationViewItems with folder glyphs as expand/collapse icons](images/radnavigationview-features-hierarchy-2.png)
 
@@ -57,7 +57,7 @@ To change this behavior and use other UI for the icons like a customized RadGlyp
 __Setting the expand and collapse icon templates__
 <snippet id='radnavigationview-features-hierarchy-block_5-xaml' />
 
-__RadNavigationViewItems with folder images as expand/collapse icons__
+>caption RadNavigationViewItems with folder images as expand/collapse icons
 
 ![RadNavigationView RadNavigationViewItems with folder images as expand/collapse icons](images/radnavigationview-features-hierarchy-3.png)
 
@@ -71,7 +71,7 @@ The `NavigationViewSubItemsHost` for a child `RadNavigationViewItem` is generate
 
 When RadNavigationView is collapsed and its current [DisplayMode]({%slug radnavigationview-display-mode%}) Compact, you can display the nested menu items by clicking on the collapsed RadNavigationViewItems.
 
-__Sub menu flyout visualization__
+>caption Sub menu flyout visualization
 
 ![RadNavigationView Sub menu flyout visualization](images/radnavigationview-features-hierarchy-4.png)
 
@@ -82,7 +82,7 @@ RadNavigationView exposes the `AllowSingleClickExpandInCompactMode` property. It
 __Setting the AllowSingleClickExpandInCompactMode property__
 <snippet id='radnavigationview-features-hierarchy-block_6-xaml' />
 
-__RadNavigationView with two clicks to open a different top-level RadNavigationViewItem element__
+>caption RadNavigationView with two clicks to open a different top-level RadNavigationViewItem element
 
 ![RadNavigationView with two clicks to open a different top-level RadNavigationViewItem element](images/radnavigationview-features-hierarchy-5.gif)
 

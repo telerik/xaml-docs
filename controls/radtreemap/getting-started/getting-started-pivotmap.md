@@ -65,7 +65,7 @@ __Setting the ItemsSource in XAML__
 __Setting the ItemsSource in code (see Example 2)__
 <snippet id='radtreemap-getting-started-getting-started-pivotmap-block_5-xaml' />
 
-__RadPivotMap__  
+>caption RadPivotMap
 
 ![{{ site.framework_name }} RadTreeMap with ItemsSource](images/radtreemap-getting-started-pivotmap-0.png)
 

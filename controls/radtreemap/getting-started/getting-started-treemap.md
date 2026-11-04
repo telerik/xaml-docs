@@ -65,7 +65,7 @@ __Setting the ItemsSource in XAML__
 __Setting the ItemsSource in code (see Example 2)__
 <snippet id='radtreemap-getting-started-getting-started-treemap-block_5-xaml' />
 
-__RadTreeMap__  
+>caption RadTreeMap
 
 ![{{ site.framework_name }} RadTreeMap with ItemsSource](images/radtreemap-getting-started-treemap-0.png)
 

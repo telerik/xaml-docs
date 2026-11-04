@@ -14,11 +14,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2021.2.615</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>Progress® Telerik® UI for WPF</td>
 		</tr>
 	</tbody>

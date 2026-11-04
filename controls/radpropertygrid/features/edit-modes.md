@@ -31,7 +31,7 @@ __Example 1: RadPropertyGrid with Default EditMode__
 
 <snippet id='radpropertygrid-features-edit-modes-block_1-xaml' />
 
-__Figure 1__: RadPropertyGrid with Default EditMode
+>caption RadPropertyGrid with default EditMode
 
 ![Rad Property Grid Edit Modes Default](images/RadPropertyGrid_EditModes_Default.png)
 
@@ -47,7 +47,7 @@ __Example 2: RadPropertyGrid with EditMode set to Single__
 
 <snippet id='radpropertygrid-features-edit-modes-block_2-xaml' />
 
-__Figure 2__: RadPropertyGrid with Single EditMode
+>caption RadPropertyGrid with single EditMode
 
 ![Rad Property Grid Edit Modes Single](images/RadPropertyGrid_EditModes_Single.png)
 

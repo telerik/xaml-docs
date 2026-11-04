@@ -19,7 +19,7 @@ __Changed__
 
 * The __background__ color of the RadMenu in __Windows8Theme__ has been made transparent. The next figure shows the change:
 
-Figure 1. Changes to the Windows8Theme Background color from Q2 2013 to Q3 2013.
+>caption Changes to the Windows8Theme background color from Q2 2013 to Q3 2013.
 
 ![radmenu-backward-compatibility-1](images/radmenu-backward-compatibility-1.png)
 

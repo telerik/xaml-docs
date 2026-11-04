@@ -15,11 +15,11 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
+			<th scope="row">Product Version</th>
 			<td>2023.3.1011</td>
 		</tr>
 		<tr>
-			<td>Product</td>
+			<th scope="row">Product</th>
 			<td>RadHighlightTextBlock for WPF</td>
 		</tr>
 	</tbody>
@@ -95,7 +95,7 @@ __Set the custom DataTemplate to the ItemTemplate property of RadComboBox__
                          ItemTemplate="{StaticResource HighlightTextBlockDataTemplate}"/>
 ```
 
-__RadComboBox with RadHighlightTextBlock__
+>caption RadComboBox with RadHighlightTextBlock
 
 ![{{ site.framework_name }} RadComboBox with RadHighlightTextBlock](images/kb-highlighttextblock-integration-with-radcombobox-0.png)
 

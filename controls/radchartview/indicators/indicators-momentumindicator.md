@@ -19,7 +19,8 @@ __Example 1: MomentumIndicator__
 <snippet id='radchartview-indicators-indicators-momentumindicator-example_1_momentumindicator-xaml' />
 
 
-#### Figure 1: MomentumIndicator
+>caption MomentumIndicator
+
 <img src="images/radchartview-indicators-momentumindicator-0.png" style="width: 80%;">
 
 > __Figure 1__ shows 2 instances of RadCartesianChart. The top one shows only the candlestick series that displays the original data. The chart on the bottom shows the indicator.

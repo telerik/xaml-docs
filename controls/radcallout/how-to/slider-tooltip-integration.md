@@ -16,7 +16,8 @@ The RadCallout can be easily used as a tooltip for the RadSlider control. To do 
 __Example 1: Callout as a ToolTip for RadSlider Thumb__
 <snippet id='radcallout-how-to-slider-tooltip-integration-example_1_callout_as_a_tooltip_for_radslider_thumb-cs' />
 	
-#### __Figure 1:  Callout as a ToolTip for RadSlider Thumb__
+>caption Callout as a ToolTip for RadSlider thumb
+
 ![RadSlider ToolTip ThumbToolTipStyle Callout](images/RadSlider_ToolTip_ThumbToolTipStyle.png)
 
 

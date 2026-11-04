@@ -75,7 +75,8 @@ __Attach RadContextMenu to the TextBox__
 
 If you run the application and right-click on the TextBox you will see an empty context menu.
 
-__RadContextMenu with an Empty Context Menu__
+>caption RadContextMenu with an empty context menu
+
 ![WPF RadContextMenu with Empty Context Menu](images/RadContextMenu_Getting_Started_01.png)
 
 ## Adding Menu Items
@@ -104,7 +105,8 @@ __Define RadMenuItems__
 
 Here is a snapshot of the result.
 
-__RadContextMenu with Menu Items__
+>caption RadContextMenu with menu items
+
 ![WPF RadContextMenu with Populated Context Menu](images/RadContextMenu_Getting_Started_02.png)
 
 ## Populating the RadContextMenu with Data

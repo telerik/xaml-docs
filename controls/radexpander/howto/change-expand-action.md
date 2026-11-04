@@ -21,7 +21,8 @@ __Example 1: Setting ClickMode to Release__
 <snippet id='radexpander-howto-change-expand-action-example_1_setting_clickmode_to_release-xaml' />
 
 
-#### __Figure 1: Release ClickMode__
+>caption Release ClickMode
+
 ![RadExpander with ClickMode set to Release](images/radExpander_ClickModeRelease.gif)
 
 * __Press__: Specifies that the content should be expanded when the left mouse button is pressed on top of the __RadExpander.Header__. If you are using the keyboard, this setting specifies that the content should be expanded when the __RadExpander.Header__ is focused and the __SPACEBAR__ or __ENTER__ key is pressed.
@@ -30,7 +31,8 @@ __Example 2: Setting ClickMode to Press__
 <snippet id='radexpander-howto-change-expand-action-example_2_setting_clickmode_to_press-xaml' />
 
 
-#### __Figure 2: Press ClickMode__
+>caption Press ClickMode
+
 ![RadExpander with ClickMode set to Press](images/radExpander_ClickModePress.gif)
 
 * __Hover__: Specifies that the content should be expanded when the mouse pointer hovers over the __RadExpander.Header__. 
@@ -39,7 +41,8 @@ __Example 3: Setting ClickMode to Hover__
 <snippet id='radexpander-howto-change-expand-action-example_3_setting_clickmode_to_hover-xaml' />
 
 
-#### __Figure 3: Hover ClickMode__
+>caption Hover ClickMode
+
 ![RadExpander with ClickMode set to Hover](images/radExpander_ClickModeHover.gif)
 
 > The default value of the __ClickMode__ property is __Release__ which means that by  default the __RadExpander__ control is expanded when the left mouse button is released after a click on the header or when  the __Enter__ or __Space__ keys are released while focusing the header.

@@ -50,8 +50,8 @@ __Defining TimeSpanComponents code__
 
 <snippet id='radtimespanpicker-timespancomponents-block_3-vb' />
 
-__Figure 1:__ RadTimeSpanPicker with all five built-in components
-	
+>caption RadTimeSpanPicker with all five built-in components
+
 ![Rad Time Span Picker TimeSpanComponents 01](images/RadTimeSpanPicker_TimeSpanComponents_01.png)
 
 ### Key properties
@@ -114,8 +114,8 @@ __Add the custom TimeSpanComponent__
 <snippet id='radtimespanpicker-timespancomponents-block_8-xaml' />
 
 The following figure demonstrate the final result:
-__Figure 2:__ TimeSpanComponent that consist of weeks:
-	
+>caption TimeSpanComponent that consist of weeks
+
 ![Rad Time Span Picker TimeSpanComponents 02](images/RadTimeSpanPicker_TimeSpanComponents_02.png)
 
 ## See Also

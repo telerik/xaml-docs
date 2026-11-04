@@ -137,7 +137,7 @@ __Example 5: Clear and merge dictionaries upon button click__
 
 The result based on the above code is illustrated in **Figure 1**.
 
-#### Figure 1: RadButtons with Office_Black and Office2016 themes
+>caption RadButtons with Office_black and Office2016 themes
 
 ![RadButtons with Office_Black and Office2016 themes](images/styling-apperance-custom-style.png)
 

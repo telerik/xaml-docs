@@ -13,7 +13,7 @@ position: 8
 
 The purpose of this tutorial is to show you how to bind `RadComboBox` to data defined in a XML file. The operations you need to perform are to convert the XML to a collection of business objects and then bind that collection using the `ItemsSource` property of the ComboBox.
 
-__The final result__  
+>caption The final result
 
 ![{{ site.framework_name }} RadComboBox Bound to XML Data](images/RadComboBox_PopulatingWithData_BindingToXML_010.png)
 
@@ -84,7 +84,7 @@ __The final result__
 	<snippet id='radcombobox-populating-with-data-binding-xml-defining_the_xml_data_source-xaml' />
 
 
-__The final result__  
+>caption The final result
 
 ![{{ site.framework_name }} RadComboBox Bound to XML Data](images/RadComboBox_PopulatingWithData_BindingToXML_020.png)
 

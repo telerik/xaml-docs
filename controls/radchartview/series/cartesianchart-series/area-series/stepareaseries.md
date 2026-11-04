@@ -21,7 +21,8 @@ __Example 1: Declaring a StepAreaSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-area-series-stepareaseries-example_1_declaring_a_stepareaseries_in_xaml-xaml' />
 
 
-#### __Figure 1: StepAreaSeries visual appearance__
+>caption StepAreaSeries visual appearance
+
 ![Telerik UI for WPF RadChartView StepAreaSeries visual appearance](images/radchartview-series-steplineareaseries.png)
 
 ## Properties
@@ -49,7 +50,8 @@ __Example 1: Declaring a StepAreaSeries in XAML__
 	* __OnTicks__: The risers will be plotted over each tick.
 	* __BetweenTicks__: The risers are plotted in the middle of the range, defined between each two ticks.
 
-#### __Figure 2: BetweenTicks and OnTicks RisersPosition values based on Example 1__
+>caption BetweenTicks and OnTicks RisersPosition values based on example 1
+
 ![Telerik UI for WPF RadChartView StepAreaSeries Comparing BetweenTicks and OnTicks RisersPosition Values](images/radchartview-series-risersposition.png)
 
 ## Data Binding

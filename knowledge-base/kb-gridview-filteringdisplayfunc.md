@@ -15,11 +15,11 @@ ticketid: 1630523
 
 <table>
 	<tr>
-		<td>Product Version</td>
+		<th scope="row">Product Version</th>
 		<td>2023.3.1114</td>
 	</tr>
 	<tr>
-		<td>Product</td>
+		<th scope="row">Product</th>
 		<td>RadGridView for WPF</td>
 	</tr>
 </table>

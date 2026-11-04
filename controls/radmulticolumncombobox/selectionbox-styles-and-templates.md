@@ -27,7 +27,8 @@ Styling the SelectionBoxes can be achieved by defining a Style targeting the __S
 __Example 1: Defining a Style targeting the SearchAutoCompleteBoxItem element__
 <snippet id='radmulticolumncombobox-selectionbox-styles-and-templates-block_1-xaml' />
 
-#### __Figure 1: Setting a Background for the SelectionBox__
+>caption Setting a background for the SelectionBox
+
 ![Setting a Background for the SelectionBox](images/MultiColumnComboBox_Selection_And_Templates_01.png)
 
 ## SelectionBoxStyleSelector
@@ -42,7 +43,8 @@ __Example 3: Adding the StyleSelector in XAML__
 
 The final result will be similar to the one illustrated below.
 
-#### __Figure 2: RadMultiColumnComboBox with applied SelectionBoxStyleSelector__
+>caption RadMultiColumnComboBox with applied SelectionBoxStyleSelector
+
 ![RadMultiColumnComboBox with applied SelectionBoxStyleSelector](images/MultiColumnComboBox_Selection_And_Templates_02.png)
 
 ## SelectionBoxTemplate

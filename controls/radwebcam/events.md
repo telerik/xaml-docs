@@ -35,7 +35,7 @@ The event arguments are of type `CameraErrorEventArgs` and they expose an `Error
 __Subscribing to the CameraError event and replacing the no-camera error message__
 <snippet id='radwebcam-events-block_2-cs' />
 
-__Customized error message__
+>caption Customized error message
 
 ![{{ site.framework_name }} RadWebCam Customized Error Message](features/images/radwebcam-features-errors-3.png)
 

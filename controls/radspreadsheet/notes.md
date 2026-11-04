@@ -13,7 +13,7 @@ components: ["spreadsheet"]
 
 Since R1 2022 the Spreadsheet control supports working with notes. The Notes are used for making notes or annotations about the data. All notes can be found in the __Notes__ collection of the worksheet. More information about using notes in code is available here: [SpreadProcessing Notes](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/notes).
 
-__Sample Note__
+>caption Sample note
 
 ![RadSpreadProcessing Notes](images/RadSpreadProcessing_Notes_03.png)
 
@@ -21,11 +21,11 @@ __Sample Note__
 
 RadSpreadsheet enables working with notes through its UI. There are two ways for adding notes, via the context menu and from the Notes menu on the review tab.
 
-__Add a Note from the Context Menu__
+>caption Add a note from the context menu
 
 ![RadSpreadProcessing Notes](images/RadSpreadProcessing_Notes_01.png)
 
-__Add a Note from the Notes Menu__
+>caption Add a note from the notes menu
 
 ![RadSpreadProcessing Notes](images/RadSpreadProcessing_Notes_02.png)
 
@@ -40,7 +40,7 @@ As you can see in the above image, the notes menu allows you to perform the foll
 
 To edit a note select a cell that contains note and click "Edit Note" from the context menu or from the Note menu in the Review tab.
 
-__Edit Note__
+>caption Edit note
 
 ![RadSpreadProcessing Notes](images/RadSpreadProcessing_Notes_04.png)
 
@@ -48,7 +48,7 @@ __Edit Note__
 
 To delete a note select it and click "Delete Note" from the context menu. You can apply the "Delete Note" command on a selection of cells and if there are notes included they will be deleted as well.
 
-__Delete Note__
+>caption Delete note
 
 ![RadSpreadProcessing Notes](images/RadSpreadProcessing_Notes_05.png)
 
@@ -56,6 +56,6 @@ __Delete Note__
 
 The context menu allows you to show/hide a note as well. 
 
-__Show or Hide Note__
+>caption Show or hide note
 
 ![RadSpreadProcessing Notes](images/RadSpreadProcessing_Notes_06.png)

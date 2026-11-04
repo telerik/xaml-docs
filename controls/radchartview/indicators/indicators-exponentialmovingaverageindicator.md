@@ -19,7 +19,8 @@ __Example 1: Defining ExponentialMovingAverageIndicator__
 <snippet id='radchartview-indicators-indicators-exponentialmovingaverageindicator-example_1_defining_exponentialmovingaverageindicator-xaml' />
 
 
-#### Figure 1: ExponentialMovingAverageIndicator  
+>caption ExponentialMovingAverageIndicator
+
 <img src="images/radchartview-indicators-exponentialmovingaverageindicator-0.png" style="width: 80%;">
 
 >tip The indicator can be set up the same way as a normal [chart series]({%slug radchartview-series-chartseries%}). This is why you can populate it using the same approach as shown in the [Data Bind to Data-Object]({%slug radchartview-series-databinding%}) article. You can set the corresponding value binding properties - for example, ValueBinding, CategoryBinding, HighBinding, CloseBinding, etc, and also the ItemsSource.

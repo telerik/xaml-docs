@@ -33,7 +33,8 @@ If you are not using NuGet packages, you can add a reference to the following as
 __Defining RadBadge in XAML__
 <snippet id='radbadge-getting-started-defining_radbage_in_xaml-cs' />
 
-#### Figure 1: RadBadge Example
+>caption RadBadge example
+
 ![{{ site.framework_name }} RadBadge RadBadge Example](images/radbadge-getting-started-0.PNG)
 
 {% if site.site_name == 'WPF' %}

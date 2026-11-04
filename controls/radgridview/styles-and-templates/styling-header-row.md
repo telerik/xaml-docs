@@ -11,7 +11,7 @@ position: 13
 
 # Styling Header Row
 
-#### __Figure 1: GridViewHeaderRow template structure__
+>caption GridViewHeaderRow template structure
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewHeaderRow template structure](images/gridview-headerrow-template.png)
 
@@ -43,7 +43,7 @@ __Example 2: Setting RadGridView's HeaderRowStyle__
 <snippet id='radgridview-styles-and-templates-styling-header-row-example_2_setting_radgridview_s_headerrowstyle-xaml' />
 
 
-#### __Figure 1: RadGridView with styled header row__
+>caption RadGridView with styled header row
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with a custom HeaderRowStyle applied to the header row](images/RadGridView_Styles_and_Templates_Styling_GridViewHeaderRow_03.png)
 

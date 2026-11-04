@@ -27,7 +27,8 @@ __Example 1: Setting up the grid__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_1_setting_up_the_grid-xaml' />
 
 
-#### Figure 1: Grid lines example
+>caption Grid lines example
+
 ![Telerik UI for WPF RadChartView Cartesian chart major grid lines](images/radchartview-features-grid-0.png)
 
 To __display the strip lines__, set the __StripLinesVisibility__ property. This is an enumeration that allows you to tell which strips to be displayed - vertical (__X__), horizontal (__Y__), both (__XY__) or __None__.
@@ -36,7 +37,8 @@ __Example 2: Enabling strip lines__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_2_enabling_strip_lines-xaml' />
 
 
-#### Figure 2: Strip lines example
+>caption Strip lines example
+
 ![Telerik UI for WPF RadChartView Cartesian chart strip lines](images/radchartview-features-grid-1.png)
 
 To __show dashed lines__, set the __MajorXLineDashArray__ and __MajorYLineDashArray__ properties. 
@@ -45,7 +47,8 @@ __Example 3: Dashing the grid lines__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_3_dashing_the_grid_lines-xaml' />
 
 
-#### Figure 3: Dash array example
+>caption Dash array example
+
 ![Telerik UI for WPF RadChartView Cartesian chart grid lines with a dash array](images/radchartview-features-grid-2.png)
 
 To __define an interval for the grid lines__ to appear, set the __MajorXLineInterval__ and __MajorYLineInterval__ properties.
@@ -54,7 +57,8 @@ __Example 4: Setting line interval__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_4_setting_line_interval-xaml' />
 
 
-#### Figure 4: Line interval example
+>caption Line interval example
+
 ![Telerik UI for WPF RadChartView Cartesian chart grid lines with custom intervals](images/radchartview-features-grid-3.png)
 
 To __change the appearance of the grid lines__, set the __MajorXLineStyle__ and __MajorYLineStyle__ properties.
@@ -63,7 +67,8 @@ __Example 5: Styling the grid lines__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_5_styling_the_grid_lines-xaml' />
 
 
-#### Figure 5: Grid lines with custom colors
+>caption Grid lines with custom colors
+
 ![Telerik UI for WPF RadChartView Cartesian chart grid lines with custom colors](images/radchartview-features-grid-4.png)
 
 > Setting __StrokeDashArray__ via the Line's Style is not supported. Use the __MajorXLineDashArray__ and __MajorYLineDashArray__ properties of CartesianChartGrid instead. 
@@ -74,7 +79,8 @@ __Example 6: Coloring the strip lines__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_6_coloring_the_strip_lines-xaml' />
 
 
-#### Figure 6: Strip lines with custom colors
+>caption Strip lines with custom colors
+
 ![Telerik UI for WPF RadChartView Cartesian chart strip lines with custom colors](images/radchartview-features-grid-5.png)
 
 The X brushes are drawn from left to right. And the Y brushes from bottom to top.
@@ -129,7 +135,8 @@ __Example 8: Setting up the polar grid__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_8_setting_up_the_polar_grid-xaml' />
 
 
-#### Figure 7: Polar grid lines example
+>caption Polar grid lines example
+
 ![Telerik UI for WPF RadChartView polar chart grid lines](images/radchartview-features-grid-14.png)
 
 To __display the strip lines__, set the __StripesVisibility__ property. This is an enumeration that allows you to tell which strips to be displayed - __Polar__, __Radial__, __Both__ or __None__.
@@ -138,7 +145,8 @@ __Example 9: Enabling polar strip lines__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_9_enabling_polar_strip_lines-xaml' />
 
 
-#### Figure 8: Polar strip lines example
+>caption Polar strip lines example
+
 ![Telerik UI for WPF RadChartView polar chart strip lines](images/radchartview-features-grid-15.png)
 
 To __show dashed lines__, set the __PolarLineDashArray__ and __RadialLineDashArray__ properties. 
@@ -147,7 +155,8 @@ __Example 10: Dashing the polar grid lines__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_10_dashing_the_polar_grid_lines-xaml' />
 
 
-#### Figure 9: Dash array for the polar and radial grid lines example
+>caption Dash array for the polar and radial grid lines example
+
 ![Telerik UI for WPF RadChartView polar and radial grid lines with dash arrays](images/radchartview-features-grid-16.png)
 
 To __change the appearance of the polar grid lines__, set the __RadialLineStyle__ and __PolarLineStyle__ properties.
@@ -156,7 +165,8 @@ __Example 11: Styling the polar grid lines__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_11_styling_the_polar_grid_lines-xaml' />
 
 
-#### Figure 10: Polar grid lines with custom colors and thickness
+>caption Polar grid lines with custom colors and thickness
+
 ![Telerik UI for WPF RadChartView polar grid lines with custom colors and thickness](images/radchartview-features-grid-17.png)
 
 > Setting __StrokeDashArray__ via the Line or Ellipse's Style is not supported. Use the __PolarLineDashArray__ and __RadialLineDashArray__ properties of PolarChartGrid instead.
@@ -167,7 +177,8 @@ __Example 12: Coloring the strip lines__
 <snippet id='radchartview-features-cartesianchartgrid-and-polarchartgrid-example_12_coloring_the_strip_lines-xaml' />
 
 
-#### Figure 11: Strip lines with custom colors
+>caption Strip lines with custom colors
+
 ![Telerik UI for WPF RadChartView polar and radial strip lines with custom colors](images/radchartview-features-grid-18.png)
 
 The radial strip lines are drawn from outside to inside. And the polar lines are drawn counter clockwise. 

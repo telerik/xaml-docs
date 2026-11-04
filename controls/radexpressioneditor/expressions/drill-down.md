@@ -27,7 +27,7 @@ __Example 2: Enabling drill-down in code-behind__
 
 **Figure 1** illustrates the difference between the functionality being disabled and enabled.
 
-__Drill-down functionality__
+>caption Drill-down functionality
 
 ![Telerik UI for WPF RadExpressionEditor drill-down feature showing expandable object fields](images/drill-down.png)
 

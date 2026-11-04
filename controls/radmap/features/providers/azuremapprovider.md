@@ -22,7 +22,7 @@ Create an `AzureMapProvider` instance and add it to the `Providers` collection o
 **Adding the `AzureMapProvider` to the `RadMap` control**
 <snippet id='radmap-features-providers-azuremapprovider-block_1-xaml' />
 
-**`RadMap` with `AzureMapProvider`**
+>caption RadMap with AzureMapProvider
 
 ![RadMap displaying Azure Maps data through AzureMapProvider](images/radmap-features-providers-azuremapprovider-0.png)
 
@@ -41,7 +41,7 @@ The Azure Maps services provide different map layers, or [tilesets](https://lear
 **Specifying the tile set**
 <snippet id='radmap-features-providers-azuremapprovider-block_2-xaml' />
 
-**`AzureMapProvider` with a specified tile set**
+>caption AzureMapProvider with specified tileset
 
 ![AzureMapProvider displaying a specified Azure Maps tile set](images/radmap-features-providers-azuremapprovider-1.png)
 
@@ -50,7 +50,7 @@ By default, the `RadMap` navigation UI does not display modes for the `AzureMapP
 **Setting the tile set modes**
 <snippet id='radmap-features-providers-azuremapprovider-block_3-xaml' />
 
-**`AzureMapProvider` with `AzureTileSet` instances in `UserAccessibleModes`**
+>caption AzureMapProvider with specified AzureTileSet instances for the UserAccessibleModes property
 
 ![AzureMapProvider navigation UI displaying configured AzureTileSet modes](images/radmap-features-providers-azuremapprovider-2.png)
 
@@ -73,7 +73,7 @@ The `NoStyleVectorTileRendering` event provides `NoStyleVectorTileRenderingEvent
 **Customizing vector tile appearance**
 <snippet id='radmap-features-providers-azuremapprovider-block_4-cs' />
 
-**`AzureMapProvider` with manually customized vector tiles**
+>caption Manually customizing the appearance the vector tiles
 
 ![RadMap displaying manually styled Azure Maps vector tiles](images/radmap-features-providers-azuremapprovider-3.png)
 
@@ -88,7 +88,7 @@ The Azure Maps services support a culture parameter in the request URL. Set the 
 **Setting the `Language` property of the `AzureMapProvider`**
 <snippet id='radmap-features-providers-azuremapprovider-block_5-xaml' />
 
-**`AzureMapProvider` with localized tile sets**
+>caption AzureMapProvider with localized tile sets
 
 ![AzureMapProvider displaying localized Azure Maps tile labels](images/radmap-features-providers-azuremapprovider-4.png)
 

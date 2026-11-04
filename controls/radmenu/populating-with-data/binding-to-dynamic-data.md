@@ -75,7 +75,8 @@ __Example 5: Applying the MenuItemStyle to RadMenu__
 
 __Figure 1__ illustrates the final result.
 
-#### __Figure 1: RadMenu bound to dynamic data__
+>caption RadMenu bound to dynamic data
+
 ![{{ site.framework_name }} RadMenu RadMenu bound to dynamic data](images/RadMenu_Populating_with_Data_Binding_to_Dynamic_Data_02.png)
 
 ## See Also

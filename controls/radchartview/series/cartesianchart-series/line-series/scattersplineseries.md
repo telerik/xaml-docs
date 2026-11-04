@@ -26,7 +26,8 @@ __Example 1: Declaring a ScatterSplineSeries in XAML__
 <snippet id='radchartview-series-cartesianchart-series-line-series-scattersplineseries-example_1_declaring_a_scattersplineseries_in_xaml-xaml' />
 
 
-#### __Figure 1: ScatterSplineSeries visual appearance__
+>caption ScatterSplineSeries visual appearance
+
 ![Telerik UI for WPF RadChartView ScatterSplineSeries visual appearance](images/radchartview-series-scattersplineseries.png)
 
 ## Properties
@@ -58,7 +59,7 @@ __Example 4: Setting SplineTension__
 <snippet id='radchartview-series-cartesianchart-series-line-series-scattersplineseries-example_4_setting_splinetension-xaml' />
 
 
-__Spline tension 0.8 (left) and 0.4 (right)__
+>caption Spline tension 0.8 (left) and 0.4 (right)
 
 ![Telerik UI for WPF RadChartView ScatterSplineSeries with Spline Tension 0.8 on the Left and 0.4 on the Right](images/splineseries-spline-tension.png)
 
@@ -68,7 +69,7 @@ __Example 5: Setting SplinePointsDistanceFactor__
 <snippet id='radchartview-series-cartesianchart-series-line-series-scattersplineseries-example_5_setting_splinepointsdistancefactor-xaml' />
 
 
-__SplinePointsDistanceFactor set to 0.18__
+>caption SplinePointsDistanceFactor set to 0.18
 
 ![Telerik UI for WPF RadChartView ScatterSplineSeries with SplinePointsDistanceFactor Set to 0.18](images/splineseries-spline-points-distance-factor.png)
 

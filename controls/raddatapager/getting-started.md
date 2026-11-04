@@ -80,7 +80,8 @@ __Example 3: ListBox exposing the paged collection__
 <snippet id='raddatapager-getting-started-example_3_listbox_exposing_the_paged_collection-xaml' />
 
 
-#### __Figure 1: Paged ListBox__
+>caption Paged ListBox
+
 ![Paged ListBox](images/RadDataPager_GettingStarted_02.PNG)
 
 ## Paging RadGridView
@@ -94,7 +95,8 @@ __Example 4: Paging RadGridView__
 <snippet id='raddatapager-getting-started-example_4_paging_radgridview-xaml' />
 
 
-#### __Figure 2: Paged RadGridView__
+>caption Paged RadGridView
+
 ![Paged RadGridView](images/RadDataPager_GettingStarted_01.png)
 
 ## Setting a Theme
@@ -122,7 +124,8 @@ Alternatively, you can use the theme of the control via the [StyleManager]({%slu
 
 __Figure 3__ shows a __RadDataPager__ with the **Windows8** theme applied.
 
-#### __Figure 3: RadDataForm with the Windows8 theme__
+>caption RadDataForm with the Windows8 theme
+
 ![RadDataForm with Windows8 theme](images/raddatapager-setting-theme.png)
 
 {% if site.site_name == 'WPF' %}

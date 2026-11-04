@@ -34,7 +34,8 @@ In the click event handler, we can declare our RadCallout control. To show the c
 __Example 2: Setting RadCallout in code behind__
 <snippet id='radcallout-features-popupusage-animations-example_2_setting_radcallout_in_code_behind-cs' />
 
-#### __Figure 1: Popup animation__
+>caption Popup animation
+
 ![{{ site.framework_name }} RadCallout Popup animation](images/radcallout-features-animations_1.gif)
 
 ## Animation Types
@@ -47,7 +48,8 @@ https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPE
 __Example 3: Show and Close Animation with Easing functions applied__
 <snippet id='radcallout-features-popupusage-animations-example_3_show_and_close_animation_with_easing_functions_applied-cs' />
 
-#### __Figure 2: Animated Popup with Easing functions__
+>caption Animated popup with easing functions
+
 ![{{ site.framework_name }} RadCallout Animated Popup with Easing functions](images/radcallout-features-animations_easing.gif)
 
 ### Fade Animation
@@ -57,7 +59,8 @@ The __CalloutAnimation.Fade__ animation fades the Popup control opening/closing 
 __Example 4: Setting Fade Animation__
 <snippet id='radcallout-features-popupusage-animations-example_4_setting_fade_animation-cs' />
 
-#### __Figure 3: Fade animation for opening and closing state__
+>caption Fade animation for opening and closing state
+
 ![{{ site.framework_name }} RadCallout Fade animation for opening and closing state](images/radcallout-features-animations_fade_cloud.gif)
 
 ### Move Animation
@@ -67,7 +70,8 @@ The __CalloutAnimation.Move__ animation adds a moving effect to the opening/clos
 __Example 5: Setting Move Animation__
 <snippet id='radcallout-features-popupusage-animations-example_5_setting_move_animation-cs' />
 
-#### __Figure 4: Move animation for opening and closing state__
+>caption Move animation for opening and closing state
+
 ![{{ site.framework_name }} RadCallout Move animation for opening and closing state](images/radcallout-features-animations_move_ellipse.gif)
 
 ### FadeAndMove Animation
@@ -77,7 +81,8 @@ The __CalloutAnimation.FadeAndMove__ animation is represented by a combination o
 __Example 6: Setting FadeAndMove Animation__
 <snippet id='radcallout-features-popupusage-animations-example_6_setting_fadeandmove_animation-cs' />
 
-#### __Figure 5: FadeAndMove animation for opening and closing state__
+>caption FadeAndMove animation for opening and closing state
+
 ![{{ site.framework_name }} RadCallout FadeAndMove animation for opening and closing state](images/radcallout-features-animations_fademove_kaboom.gif)
 
 ### Reveal Animation
@@ -87,7 +92,8 @@ The __CalloutAnimation.Reveal__ animation animates the clipping effect to the co
 __Example 7: Setting Reveal Animation__
 <snippet id='radcallout-features-popupusage-animations-example_7_setting_reveal_animation-cs' />
 
-#### __Figure 6: Reveal animation for opening and closing state__
+>caption Reveal animation for opening and closing state
+
 ![{{ site.framework_name }} RadCallout Reveal animation for opening and closing state](images/radcallout-features-animations_reveal_rectangle.gif)
 
 ### FadeAndReveal Animation
@@ -97,7 +103,8 @@ The __CalloutAnimation.FadeAndReveal__ animation is represented by a combination
 __Example 8: Setting FadeAndReveal Animation__
 <snippet id='radcallout-features-popupusage-animations-example_8_setting_fadeandreveal_animation-cs' />
 
-#### __Figure 7: FadeAndReveal animation for opening and closing state__
+>caption FadeAndReveal animation for opening and closing state
+
 ![{{ site.framework_name }} RadCallout FadeAndReveal animation for opening and closing state](images/radcallout-features-animations_fadereveal_roundedrectangle.gif)
 
 ### Scale Animation
@@ -107,7 +114,8 @@ The __CalloutAnimation.Scale__ animation controls the scale of the object. This 
 __Example 9: Setting Scale Animation__
 <snippet id='radcallout-features-popupusage-animations-example_9_setting_scale_animation-cs' />
 
-#### __Figure 8: Scale animation for opening and closing state__
+>caption Scale animation for opening and closing state
+
 ![{{ site.framework_name }} RadCallout Scale animation for opening and closing state](images/radcallout-features-animations_scale_cloud.gif)
 
 ### FadeAndScale Animation
@@ -117,7 +125,8 @@ The __CalloutAnimation.FadeAndScale__ animation is represented by a combination 
 __Example 10: Setting FadeAndScale Animation__
 <snippet id='radcallout-features-popupusage-animations-example_10_setting_fadeandscale_animation-cs' />
 
-#### __Figure 9: FadeAndScale animation for opening and closing state__
+>caption FadeAndScale animation for opening and closing state
+
 ![{{ site.framework_name }} RadCallout FadeAndScale animation for opening and closing state](images/radcallout-features-animations_fadescale_ellipse.gif)
 
 ## Disable Animation

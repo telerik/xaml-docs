@@ -102,7 +102,7 @@ __Example 8: Defining a RadColorPickerColumn in XAML__
 
 The final result should be similar to the image below:
 
-#### __Figure 1: The RadColorPickerColumn__
+>caption The RadColorPickerColumn
 
 ![Telerik UI for {{ site.framework_name }} RadGridView using a custom RadColorPickerColumn editor for editing color values](images/RadGridView_HowTo_CreateCustomEditor_010.png)
 

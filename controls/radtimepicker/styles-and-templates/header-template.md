@@ -33,6 +33,6 @@ __Example 4: Set RadTimePicker's ClockStyle property__
 
 <snippet id='radtimepicker-styles-and-templates-header-template-block_4-xaml' />
 
-#### __Figure 1: RadTimePicker with styled header__
+>caption RadTimePicker with styled header
 
 ![radtimepicker-header-template-1](images/radtimepicker-header-template-1.png)

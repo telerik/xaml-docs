@@ -19,7 +19,8 @@ __Example 1: RelativeMomentumIndexIndicator__
 <snippet id='radchartview-indicators-indicators-relativemomentumindexindicator-example_1_relativemomentumindexindicator-xaml' />
 
 
-#### Figure 1: RelativeMomentumIndexIndicator
+>caption RelativeMomentumIndexIndicator
+
 <img src="images/radchartview-indicators-relativemomentumindexindicator-0.png" style="width: 80%;">
 
 > __Figure 1__ shows 2 instances of RadCartesianChart. The top one shows only the candlestick series that displays the original data. The chart on the bottom shows the indicator.

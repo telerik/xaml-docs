@@ -18,8 +18,8 @@ This plugin is separate from the [Telerik WPF MCP Server]({%slug ai-mcp-server%}
 
 Before installing the plugin, make sure you have:
 
-* <a href="https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-upgrade/install?pivots=copilot-cli" target="_blank">GitHub Copilot CLI with Upgrade Agent support</a>.
-* A Telerik account with an active DevCraft or Telerik UI for WPF license, or a <a href="https://www.telerik.com/try/ui-for-wpf" target="_blank">free trial</a>.
+* [GitHub Copilot CLI with Upgrade Agent support](https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-upgrade/install?pivots=copilot-cli).
+* A Telerik account with an active DevCraft or Telerik UI for WPF license, or a [free trial](https://www.telerik.com/try/ui-for-wpf).
 * .NET 10 SDK or later. The plugin uses `dnx` to run the `Telerik.WPF.MCP` tool server. This requirement applies to the tool server, not your application's target framework; the target WPF application can use any supported .NET version, including .NET Framework.
 * A [Telerik license key file]({%slug installing-license-key%}) for workflows that call Telerik MCP tools.
 
@@ -27,34 +27,32 @@ For breaking-change analysis, the plugin also uses the [Telerik CLI]({%slug tele
 
 ## Install the Plugin
 
-Run the following commands inside GitHub Copilot CLI, not in your system shell.
+Install Microsoft's Upgrade Agent in GitHub Copilot CLI chat, then install the Telerik plugin from a terminal.
 
-1. Add the Microsoft and Telerik plugin marketplaces:
+1. In GitHub Copilot CLI chat, add Microsoft's marketplace and install the Upgrade Agent:
 
-   ```text
+   ```bash
    /plugin marketplace add microsoft/upgrade-agent-plugins
-   /plugin marketplace add telerik/ai-plugins
-   ```
-
-2. Install Microsoft's Upgrade Agent and the Telerik WPF Upgrade Plugin:
-
-   ```text
    /plugin install upgrade-agent@upgrade-agent-plugins
-   /plugin install telerik-wpf-upgrade-plugin@telerik-ai-plugins
    ```
 
-3. Enter `/agent` and select **Upgrade**.
+2. In a terminal, add the Telerik marketplace and install the WPF plugin:
 
-4. Describe the upgrade you want to perform. For example, to update Telerik without changing the application's .NET target:
+   ```bash
+   copilot plugin marketplace add telerik/ai-plugins
+   copilot plugin install telerik-wpf-upgrade-plugin@telerik-ai-plugins
+   ```
+
+3. In GitHub Copilot CLI chat, run `/agent` and select `upgrade-agent:upgrade`. Enter your request as plain text. For example, to update Telerik without changing the application's .NET target:
 
    ```text
    Upgrade Telerik UI for WPF in my solution to the latest version compatible with its current target framework.
    ```
 
-   To upgrade both .NET and Telerik, use a prompt such as:
+   To upgrade .NET and have the plugin check Telerik compatibility as part of that workflow, use a prompt such as:
 
    ```text
-   Upgrade my WPF solution to .NET 10, then upgrade Telerik UI for WPF to the latest compatible version.
+   Upgrade my WPF solution to .NET 10 and update Telerik UI for WPF as needed for compatibility.
    ```
 
    You can also specify a particular Telerik version that is available to your account.
@@ -69,7 +67,7 @@ The agent chooses a scenario based on your request. The WPF plugin provides the 
 | `telerik-wpf-assembly-to-nuget` | You only want to replace direct Telerik assembly references with NuGet packages. | Detects the current Telerik version, reference style, and Xaml/NoXaml flavor; configures the NuGet feed; maps assemblies to packages; and migrates references without changing the Telerik version or .NET target. |
 | `telerik-wpf-licensing` | You want to activate, repair, or migrate Telerik licensing. | Detects the current licensing mechanism, applies the appropriate setup or repair, and verifies activation. |
 
->important Telerik scenarios do not change the project's target framework. For a move to modern .NET or a newer modern .NET version, run Microsoft's `dotnet-version-upgrade` scenario first. For a change between .NET Framework versions, run `dotnet-framework-version-upgrade` first. Then run `telerik-wpf-version-upgrade` if a Telerik version upgrade is also needed. The resulting target framework determines which Telerik versions are compatible.
+>important The standalone Telerik scenarios do not change the project's target framework. For a move from .NET Framework to modern .NET or between modern .NET versions, use Microsoft's `dotnet-version-upgrade` scenario. The plugin adds Telerik-specific guidance to these Microsoft workflows. After the target upgrade, run `telerik-wpf-version-upgrade` if a separate Telerik version update is still needed. The resulting target framework determines which Telerik versions are compatible.
 
 ## Follow Scenario Progress
 
@@ -82,6 +80,27 @@ The plugin defines the following workflow stages. Microsoft's Upgrade Agent mana
 | **Planning** | Creates an ordered task list based on the assessment, including dependencies and completion criteria, in `plan.md`. |
 | **Execution** | Performs the planned tasks and validates changes. A version upgrade can update Telerik references, address breaking changes, and build the project. |
 | **Post-Completion** | Summarizes completed work, verification, and any remaining issues or follow-up actions. |
+
+## View the Upgrade Agent Dashboard
+
+During an upgrade session, ask Copilot to show the dashboard if it does not open automatically. In GitHub Copilot CLI, the dashboard opens in a browser. 
+
+![A picture showing the view with the Upgarde Agent Dashboard](images/ai-upgrade-plugin-dashboard.png)
+
+It provides these views:
+
+| Tab | What it shows |
+|---|---|
+| **Overview** | A summary of the upgrade session and its progress. |
+| **Scenario** | The active scenario and its phases. |
+| **Tasks** | The upgrade plan and the status of its tasks. |
+| **Projects** | Discovered projects, target frameworks, and assessment incidents. |
+| **Dependencies** | Package and reference compatibility with the target framework. |
+| **Assessment** | Compatibility findings and assessment results. |
+| **Options** | Upgrade strategy, flow mode, and other session settings. |
+| **Activity** | A log of file changes, commits, and build events. |
+
+The dashboard's contents depend on the active scenario and technology pack. For details about the dashboard tabs, see [Monitor upgrades with the Upgrade Dashboard](https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-upgrade/dashboard).
 
 ## Extend Microsoft's .NET Upgrade Scenarios
 
@@ -100,7 +119,7 @@ Telerik UI for WPF provides [Xaml and NoXaml assembly sets]({%slug xaml-vs-noxam
 * **NoXaml** assemblies use implicit styles from theme assemblies or copied theme XAML. When a project references a theme assembly, NuGet migration adds the corresponding theme package, such as `Telerik.Windows.Themes.Fluent.for.Wpf`, alongside the control packages. Projects that use copied theme XAML can keep that approach.
 * Mixed Xaml and NoXaml references in one project or application block migration. The agent reports the conflicts and asks which flavor to use before it proceeds.
 
-Theme XAML copied from a `Themes.Implicit` folder is version-specific. NuGet updates and .NET retargeting do not refresh those files. The agent asks for the updated theme source folder rather than manually rewriting theme XAML. After a .NET Framework-to-.NET migration, use the theme files from the target release's `NET` folder.
+Theme XAML copied from a `Themes.Implicit` folder is version-specific. NuGet updates and .NET retargeting do not refresh those files. The agent asks for the updated theme source folder rather than manually rewriting theme XAML. After a .NET Framework-to-.NET migration, use the files from the target release's `Themes.Implicit\NET` folder.
 
 ## Telerik Packages and License Activation
 
@@ -120,4 +139,4 @@ On Windows, prefer the shared license file at `%AppData%\Telerik\telerik-license
 * [Telerik WPF MCP Server Setup]({%slug ai-mcp-server%})
 * [Telerik WPF MCP Upgrade Assistant]({%slug ai-upgrade-assistant%})
 * [Telerik CLI Migrate Analyzer]({%slug telerik-cli-migrate-analyzer%})
-* <a href="https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-upgrade/overview" target="_blank">Microsoft GitHub Copilot Upgrade Agent</a>
+* [Microsoft GitHub Copilot Upgrade Agent](https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-upgrade/overview)

@@ -11,11 +11,11 @@ position: 2
 
 # Filtering Behavior
 
-The main functionality of the __RadAutoCompleteBox__ control is its filtering mechanism which filters the collection that is bound to the ItemsSource of the control based on the input in its TextBox. This article will explain the benefits of the built-in __AsyncFilteringBehavior__ and will demonstrate how to implement a custom __FilteringBehavior__.
+The main functionality of the __RadAutoCompleteBox__ control is its filtering mechanism, which filters the collection bound to the ItemsSource of the control based on the input in its TextBox. This article explains the benefits of the built-in __AsyncFilteringBehavior__ and demonstrates how to implement a custom __FilteringBehavior__.
 
 ## Async Filtering Behavior
 
-When it comes to filtering a huge amount of data the performance is that what really matters. Now with the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadAutoCompleteBox__ provides a new built-in __AsyncFilteringBehavior__ which solves that scenario really easy and makes the filtering of huge amount of items unnoticeable. Unlike the default __FilteringBehavior__ the new __AsyncFilteringBehavior__ performs the filtering operation on a different threads if possible and helps you to achieve a better user experience.
+When filtering a large amount of data, performance is important. The Q2 2014 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} introduced the built-in __AsyncFilteringBehavior__ to improve the responsiveness of this scenario. Unlike the default __FilteringBehavior__, __AsyncFilteringBehavior__ performs the filtering operation on a different thread when possible.
 
 The behavior should be set up the following way:
 
@@ -49,7 +49,7 @@ Customizing the logic behind this filtering mechanism is a simple task and only 
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/AutoCompleteBox/NoMatchFilteringBehavior).
 
-The next screenshots show the finally result:
+The following screenshots show the final result:
 
 ![radautocompletebox-features-filteringbehavior-1](images/radautocompletebox-features-filteringbehavior-1.png)
 

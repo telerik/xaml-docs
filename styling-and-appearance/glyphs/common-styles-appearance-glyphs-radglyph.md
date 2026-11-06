@@ -19,7 +19,7 @@ Apart from the **shorter load time** compared to the ordinary glyphs, the RadGly
 
 ## Usage
 
-The RadGlyph can be used both standalone and as a markup extension. **Examples 1 and 2** demonstrate both approaches, respectively.
+The RadGlyph can be used both standalone and as a markup extension. **Examples 1, 2, and 3** demonstrate these approaches.
 
 __Example 1: Define a RadGlyph in XAML__
 
@@ -29,26 +29,26 @@ __Example 1: Define a RadGlyph in XAML__
 	</Label>
 ```
 
-__Example 1: Define a RadGlyph in code-behind__
+__Example 2: Define a RadGlyph in code-behind__
 
 ```C#
 	var glyph = new RadGlyph() { Glyph = "\uE91E", Foreground = Brushes.Black, FontSize = 100 };
 	this.label.Content = glyph;
 ```
 
-__Example 2: Use the RadGlyph markup extension__
+__Example 3: Use the RadGlyph markup extension__
 
 ```XAML
 	<Image Source="{telerik:RadGlyph Glyph={StaticResource GlyphCs}, Foreground=Black}" />
 ```
 
->caption The result from examples 1 and 2
+>caption The result from the examples above
 
 ![Telerik UI for WPF RadGlyph rendered from C# code](images/radglyph-1.png)
 
-> In order to use the glyph references (such as **GlyphCs** in **Example 2**) as static resources in a project, you need to include the **Telerik.Windows.Controls.dll** and merge the **FontResources.xaml** dictionary in the application resources as demonstrated in **Example 3**. A list of the available glyphs and their resource keys can be found in the [Telerik UI for WPF glyph reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
+> In order to use the glyph references (such as **GlyphCs** in **Example 3**) as static resources in a project, you need to include the **Telerik.Windows.Controls.dll** and merge the **FontResources.xaml** dictionary in the application resources as demonstrated in **Example 4**. A list of the available glyphs and their resource keys can be found in the [Telerik UI for WPF glyph reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
-__Example 3: Adding the FontResources.xaml dictionary__
+__Example 4: Adding the FontResources.xaml dictionary__
 ```XAML
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
 ```
@@ -123,7 +123,7 @@ If you wish to use a custom font in your project, you first have to register it 
 * **RegisterFont(FontFamily fontFamily, string fontName)**
 * **RegisterFont(Uri fontUri, string fontName)**
 
-**Example 3** shows how to register the **Webdings** typeface, which is included in all versions of Microsoft Windows **since Windows 98**.
+**Example 6** shows how to register the **Webdings** typeface, which is included in all versions of Microsoft Windows **since Windows 98**.
 
 __Example 6: Register the Webdings typeface__
 
@@ -134,7 +134,7 @@ __Example 6: Register the Webdings typeface__
 	}
 ```
 
-Please note that the RegisterFont overload which only accepts a string will only work if the font is **installed** on the client's machine. Otherwise you need to also pass the **FontFamily** as demonstrated in Example 5.
+Please note that the RegisterFont overload which only accepts a string will only work if the font is **installed** on the client's machine. Otherwise you need to also pass the **FontFamily** as demonstrated in Example 7.
 
 __Example 7: Register the Webdings typeface__
 
@@ -170,7 +170,7 @@ __Example 9: Set a RadPathButton's PathGeometry in XAML__
 
 ![Telerik UI for WPF RadPathButton in normal and hovered states](images/radglyph-3.png)
 
-The same result can be achieved in code behind as demonstrated in **Example 6**. Note that it uses the static **RadGlyph.GetGeometry** method which takes two parameters - a glyph string and a font family.
+The same result can be achieved in code behind as demonstrated in **Example 10**. Note that it uses the static **RadGlyph.GetGeometry** method which takes two parameters - a glyph string and a font family.
 
 __Example 10: Set a RadPathButton's PathGeometry in code-behind__
 

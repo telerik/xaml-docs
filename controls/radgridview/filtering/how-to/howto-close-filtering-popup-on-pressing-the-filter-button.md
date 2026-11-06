@@ -11,7 +11,7 @@ position: 22
 
 # Close Filtering Popup on Pressing Filter Button
 
-In order to close filtering Popup on pressing the fitler button, you need to override the __OnApplyFilter__ method of FilteringControl.
+In order to close the filtering popup when pressing the filter button, you need to override the __OnApplyFilter__ method of FilteringControl.
 
 >important A demo on how to achieve the desired behavior is available in our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/). The demo is labeled **"Close Filtering Popup"** and can also be found on GitHub - [CloseFilteringPopupFilterButton](https://github.com/telerik/xaml-sdk/tree/master/GridView/CloseFilteringPopupFilterButton).
 
@@ -35,4 +35,3 @@ The Style you should apply in XAML then is:
 __Example 3: Style targetting the custom control__
 
 <snippet id='radgridview-filtering-how-to-howto-close-filtering-popup-on-pressing-the-filter-button-example_3_style_targetting_the_custom_control-xaml' />
-

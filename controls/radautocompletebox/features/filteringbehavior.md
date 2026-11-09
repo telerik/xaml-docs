@@ -1,7 +1,7 @@
 ---
 title: Filtering Behavior
 page_title: Filtering Behavior
-description: Check our &quot;Filtering Behavior&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
+description: Learn how to configure async filtering in RadAutoCompleteBox for WPF and customize the dropdown results when no items match the search text.
 components: ["autocompletebox"]
 slug: radautocompletebox-features-filteringbehavior
 tags: filtering,behavior
@@ -11,58 +11,55 @@ position: 2
 
 # Filtering Behavior
 
-The main functionality of the __RadAutoCompleteBox__ control is its filtering mechanism which filters the collection that is bound to the ItemsSource of the control based on the input in its TextBox. This article will explain the benefits of the built-in __AsyncFilteringBehavior__ and will demonstrate how to implement a custom __FilteringBehavior__.
+The `RadAutoCompleteBox` control filters items from its `ItemsSource` based on the text you enter. Use the built-in `AsyncFilteringBehavior` for asynchronous filtering, or implement a custom `FilteringBehavior` to change which items appear in the dropdown.
+
+The examples assume that you have configured the control and bound it to a collection. Follow [Getting Started]({%slug radautocompletebox-getting-started%}) for setup and [Binding To Object]({%slug radautocompletebox-populating-with-data-binding-to-object%}) for the sample country data.
 
 ## Async Filtering Behavior
 
-When it comes to filtering a huge amount of data the performance is that what really matters. Now with the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadAutoCompleteBox__ provides a new built-in __AsyncFilteringBehavior__ which solves that scenario really easy and makes the filtering of huge amount of items unnoticeable. Unlike the default __FilteringBehavior__ the new __AsyncFilteringBehavior__ performs the filtering operation on a different threads if possible and helps you to achieve a better user experience.
+Unlike the default `FilteringBehavior`, `AsyncFilteringBehavior` runs the filtering operation on a separate thread when possible. Use it when you need asynchronous filtering for large collections.
 
-The behavior should be set up the following way:
-
-__RadAutoCompleteBox with AsyncFilteringBehavior__
+Set the control's `FilteringBehavior` property to an `AsyncFilteringBehavior` instance:
 
 <snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-xaml' />
 
 ## Custom Filtering Behavior
 
-Customizing the logic behind this filtering mechanism is a simple task and only requires the creation of a custom __FilteringBehavior__ which could implement any custom filtering logic. The next example will demonstrate how to create a custom __FilteringBehavior__ in order to achieve a functionality that populates the DropDown portion of the control with the entire ItemsSource collection when no match is found.
+Create a class that inherits from `FilteringBehavior` to customize the filter logic. The following example populates the dropdown with available items from `ItemsSource` when no match is found.
 
->Before proceeding with this tutorial you should get familiar with [Binding To Object]({%slug radautocompletebox-populating-with-data-binding-to-object%}).
+To implement the custom behavior:
 
-1. First you will need to create a custom class that inherits the default __FilteringBehavior__ of the AutoCompleteBox control:
+1. Create a custom class that inherits from `FilteringBehavior`:
 
-	__Custom class that inherits the default FilteringBehavior__
+    <snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-cs' />
 
-<snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-cs' />
+1. Override `FindMatchingItems()` to return the available items when no match is found:
 
-1. After that you will need to override its __FindMatchingItems()__ method with a custom logic that will return the entire items collection when no match is found:
+    <snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-cs' />
 
-	__Overriding FindMatchingItems__
+1. Assign an instance of the custom class to the control's `FilteringBehavior` property in XAML:
 
-<snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-cs' />
+    <snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-xaml' />
 
-1. Finally all you need to do is set the newly created behavior to the __FilteringBehavior__ of the AutoCompleteBox control. The xaml of the control should look like this:
+>tip Find the complete custom behavior class and XAML setup in the [NoMatchFilteringBehavior SDK example](https://github.com/telerik/xaml-sdk/tree/master/AutoCompleteBox/NoMatchFilteringBehavior).
 
-	__Setting the newly created behavior__
+The control initially displays the country-name watermark:
 
-<snippet id='radautocompletebox-features-filteringbehavior-radautocompletebox_with_asyncfilteringbehavior-xaml' />
+![Empty RadAutoCompleteBox displaying Enter Country Name](images/radautocompletebox-features-filteringbehavior-1.png)
 
->tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/AutoCompleteBox/NoMatchFilteringBehavior).
+Enter `U` to display matching countries:
 
-The next screenshots show the finally result:
+![Dropdown showing United Kingdom and United States for U](images/radautocompletebox-features-filteringbehavior-2.png)
 
-![radautocompletebox-features-filteringbehavior-1](images/radautocompletebox-features-filteringbehavior-1.png)
+With the custom `FilteringBehavior`, enter `Uu` to display available countries even though none match:
 
-![radautocompletebox-features-filteringbehavior-2](images/radautocompletebox-features-filteringbehavior-2.png)
+![Country list displayed for the unmatched text Uu with the custom behavior](images/radautocompletebox-features-filteringbehavior-3.png)
 
-__With__ the custom FilteringBehavior (the DropDown portion is populated although no matches were found):
+With the default `FilteringBehavior`, the same input produces no dropdown results:
 
-![radautocompletebox-features-filteringbehavior-3](images/radautocompletebox-features-filteringbehavior-3.png)
-
-__Without__ the custom FilteringBehavior (the default FilteringBehavior) (the DropDown portion is not populated because no matches were found):
-
-![radautocompletebox-features-filteringbehavior-4](images/radautocompletebox-features-filteringbehavior-4.png)
+![RadAutoCompleteBox containing Uu with no dropdown visible](images/radautocompletebox-features-filteringbehavior-4.png)
 
 ## See Also
 
  * [Binding To Object]({%slug radautocompletebox-populating-with-data-binding-to-object%})
+ * [Getting Started]({%slug radautocompletebox-getting-started%})

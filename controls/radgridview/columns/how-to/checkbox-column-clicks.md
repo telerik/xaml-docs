@@ -25,7 +25,7 @@ __2 clicks solution__
 
 By configuring __EditTriggers="CellClick"__ property of GridViewCheckBoxColumn the cells will enter edit mode with a single click only. Now you will need one more click to change the value of the underlying checkbox.
 
-__1 clicks solution__
+__1-click solution__
 
 In addition to __EditTriggers="CellClick"__ property, you can set the __AutoSelectOnEdit="True"__ property of the column. This property will alter the checked state of the checkbox as soon as the cell enters edit mode, thus changing the value on a single click. Please note that the __GridView has to be focused__.
 
@@ -65,4 +65,3 @@ The CheckBox is two-way bound to the IsActive boolean property so with single cl
 
  * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
  
-

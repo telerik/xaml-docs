@@ -11,7 +11,7 @@ position: 25
 
 # Expand and Select Item with Load on Demand Enabled RadTreeView
 
-This tutorial will demonstrate you how to __expand__ and __select__ an item when the __RadTreeView__ is in load on demand mode (__IsLoadOnDemandEnabled__ property is set to __True__).
+This tutorial demonstrates how to __expand__ and __select__ an item when the __RadTreeView__ is in load on demand mode (__IsLoadOnDemandEnabled__ property is set to __True__).
 
 For the purpose of this topic a __RadTreeView__ which is data bound to a business object will be used. The next several code snippets show you the __RadTreeView__ declaration and the business object structure.
 
@@ -28,7 +28,7 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 
 {% endif %}
 
-The data source for the radtreeview will be consisted of __DataItems__, only.
+The data source for the RadTreeView will consist of __DataItems__ only.
 
 
 <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_3-cs' />

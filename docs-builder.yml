@@ -2611,3 +2611,11 @@ redirects:
     from: "^/getting-started/licensing/(.*)$"
     to: "/installation/licensing/$1"
     type: Permanent
+-
+    from: "^/ai-tools/ai-overview/?$"
+    to: "/ai-tools/agentic-ui-generator-overview"
+    type: Permanent
+-
+    from: "^/ai-tools/ai-mcp-server/?$"
+    to: "/ai-tools/getting-started"
+    type: Permanent

@@ -1,7 +1,7 @@
 ---
 title: Export Support
 page_title: Export Support
-description: This article will get you familiar with the Telerik UI for {{ site.framework_name }} export functionality.
+description: Choose built-in control export, image export, or document creation with Telerik Document Processing in Telerik UI for WPF.
 components: ["general"]
 slug: common-export-support
 tags: export,support
@@ -11,38 +11,43 @@ position: 5
 
 # Export Support
 
-More often than not, it is a good idea to be able to preserve the data that the different controls show and edit during the life cycle of the application even after the application is closed. There are different ways to save this information and various approaches can be adopted depending on the type of the content.
+Telerik UI for WPF supports exporting control data and rendered content. Choose an approach based on the output you need:
+
+* Use built-in export for the data, document content, or image formats supported by a specific control.
+* Use image export to capture a control's rendered appearance.
+* Use Telerik Document Processing to create a document with a custom structure or embedded control images.
 
 
 ## Built-In Export
 
 
-Several of the controls in the Telerik UI for WPF suite come with built-in export capabilities. Among those are  __RadDiagram__, __RadGridView__ and __RadRichTextBox__. 
+Several controls in the Telerik UI for WPF suite provide built-in export capabilities:
 
-
-To learn more about these abilities take a look at the *Export* article in the desired control's documentation. 
+* [`RadDiagram` image export]({%slug raddiagram-features-image-export%})
+* [`RadGridView` data export]({%slug gridview-export-overview%})
+* [`RadRichTextBox` document import and export]({%slug radrichtextbox-features-import-export%})
 
 
 ## Document Processing Integration
 
 
-The Telerik UI for WPF suite includes the **Telerik Document Processing** libraries specifically designed for import, export and document editing.
+The Telerik UI for WPF suite includes Telerik Document Processing libraries for document import, export, and editing:
 
 
-* [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview): Supports export to PDF.
+* [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)&mdash;Supports export to PDF.
 
-* [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview): Supports export to XLSX, CSV, PDF and plain text (TXT).
+* [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)&mdash;Supports export to XLSX, CSV, PDF, and plain text (TXT).
 
 {% if site.site_name == 'WPF' %}
-* [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview): Supports export to XLSX and CSV. Allows you create big spreadsheet documents with minimal resources usage.
+* [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview)&mdash;Supports export to XLSX and CSV. Creates large spreadsheet documents with minimal resource usage.
 
-* [RadWordsProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview): Supports export to DOCX, RTF, HTML, PDF and plain text(TXT).
+* [RadWordsProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview)&mdash;Supports export to DOCX, RTF, HTML, PDF, and plain text (TXT).
 {%endif%}
 
-The libraries give you the ability to create a document from scratch and export it to its supported file formats. This means you can export practically any control either by exporting it to an image and adding the image to the resulting document or by creating an appropriate for the context structure (for example, a table when exporting RadGridView to DOCX).
+The libraries let you create a document from scratch and export it to supported file formats. To include control content, add an exported image or build a document structure from the control's data. For example, create a table for `RadGridView` data when exporting to DOCX.
 
 
-There are several controls that already provide sample code which you can use as the base of export functionality, you could take a look at them in the Telerik XAML SDK repository:
+The Telerik XAML SDK repository includes examples that you can adapt for document export:
 
 
 *  [RadDiagram Export to PDF](https://github.com/telerik/xaml-sdk/tree/master/Diagram/ExportToPDF)
@@ -53,46 +58,53 @@ There are several controls that already provide sample code which you can use as
 ### Export XAML UI Elements to PDF
 
 
-The API of __RadPdfProcessing__ is designed to resemble XAML and this allows you easy conversion of UI elements to PDF by converting any XAML primitive to a PDF instruction. For base of such conversion you can use the  [RadPdfProcessing Export UI Element to PDF](https://github.com/telerik/document-processing-sdk/tree/2d32fd229282a1f7101d6f9b0961a650e89a1dc1/PdfProcessing/ExportUIElement) example which demonstrates how to export several of the controls in the Telerik UI for WPF suite, including a combination of several controls in the same view.
+The [RadPdfProcessing Export UI Element to PDF](https://github.com/telerik/document-processing-sdk/tree/2d32fd229282a1f7101d6f9b0961a650e89a1dc1/PdfProcessing/ExportUIElement) example maps supported XAML elements to PDF drawing instructions. It demonstrates export of several Telerik UI for WPF controls, including multiple controls in the same view. Treat it as sample code to adapt, not a general-purpose converter for arbitrary XAML.
 
+The following image illustrates the sample's charts, gauges, calendar, and Gantt view.
 
 ![Telerik UI for WPF controls exported from XAML UI elements to PDF](images/Common_Export_Support_01.png) 
 
  
-The code operates with a set of renderers deriving from the base __UIElementRendererBase__ - __TextBlockRenderer__, __BorderRenderer__, etc. This allows separation, since each concrete render is responsible for drawing the element it is intended for without dependencies to the other renderers, and gives you the ability to extend the sample code to fit your precise needs if you need to.
+The sample uses renderers derived from `UIElementRendererBase`, such as `TextBlockRenderer` and `BorderRenderer`. Each renderer draws its corresponding element. Export coverage depends on the available renderers; extend the sample for elements that those renderers do not handle.
 
 
-Take a look at the [source code of the example on GitHub](https://github.com/telerik/document-processing-sdk/tree/2d32fd229282a1f7101d6f9b0961a650e89a1dc1/PdfProcessing/ExportUIElement) and the documentation of the relevant [FixedDocumentEditor](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor) class.
+For the PDF drawing API, see the [`FixedContentEditor` documentation](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor).
 
 
 ## Export Images With ExportExtensions
 
 
-Some controls can be exported directly using the __ExportExtensions__ class which is part of the __Telerik.Windows.Controls__ assembly. It allows you to export in several image formats listed below:
+The `ExportExtensions` class in the `Telerik.Windows.Media.Imaging` namespace is part of the `Telerik.Windows.Controls` assembly. Use it to export a control's rendered content to the following formats:
 
 
- __Image formats__
+* PNG&mdash;Portable Network Graphics. Use the `ExportToImage(FrameworkElement, Stream)` method.
 
-* __Png:__ Portable Network Graphic. Use __ExportToImage(FrameworkElement, Stream)__ method.
+* BMP&mdash;Bitmap file. Use `ExportToImage(FrameworkElement, Stream, BitmapEncoder)` with a `BmpBitmapEncoder`.
 
-* __Bmp:__ Bitmap file. Use __ExportToImage(FrameworkElement, Stream, BitmapEncoder)__ where the encoder is of type __BmpBitmapEncoder__.
-
-* __Xps:__ XML Paper Specification file. Use __ExportToXpsImage(FrameworkElement, Stream)__ method to export content as an XPS image.
+* XPS&mdash;XML Paper Specification file. Use the `ExportToXpsImage(FrameworkElement, Stream)` method.
 
 
-This approach is convenient for controls which have a size that allows direct export on one page, such as a __RadGauge__ for example.
+This approach suits controls whose rendered content fits on one page, such as a `RadGauge`. Use a control's data export API when you need its data rather than an image of its appearance.
 
 
 {% if site.site_name == 'WPF' %}
->There are overloads for the methods listed above, which take as parameter the name of the file you want to export to, instead of a stream. This allows you to easily export your control directly to the file system.
+>note The export methods also have overloads that accept a file name instead of a stream, so you can export directly to the file system.
 {% endif %}
 
 
-__Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The physical path to the image is provided run-time via __SaveFileDialog__:
+Example 1 contains code-behind fragments that export an existing `RadGauge` named `radGauge` to a PNG file. Add the `Button_Click` handler to the view's code-behind class and connect it to a button's `Click` event. The `SaveFileDialog` lets the user choose the output path.
+
+The fragments assume that the gauge and its assembly references are already configured. For gauge setup, see [Creating a Radial Gauge]({%slug radgauge-getting-started-creating-radial-gauge%}).
+
+{% if site.site_name == 'WPF' %}
+For C#, add `using Microsoft.Win32;`, `using System.IO;`, and `using System.Windows;` before the code-behind class. For VB.NET, add `Imports Microsoft.Win32`, `Imports System.IO`, and `Imports System.Windows` at the top of the file.
+{% endif %}
+
+>important The control must be measured and arranged before image export. Otherwise, unexpected results may occur.
 
 
 {% if site.site_name == 'Silverlight' %}
-__Example 1: Export Control to PNG__
+**Example 1: Export Control to PNG**
 
 ```C#
 	 private void Button_Click(object sender, RoutedEventArgs e)
@@ -129,7 +141,7 @@ __Example 1: Export Control to PNG__
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-__Example 1: Export Control to PNG__
+**Example 1: Export Control to PNG**
 
 ```C#
 	 private void Button_Click(object sender, RoutedEventArgs e)
@@ -164,8 +176,6 @@ __Example 1: Export Control to PNG__
 	 End Sub
 ```
 {% endif %}
-
->tipExporting a control to an image requires that the control is measured and arranged. Otherwise, unexpected results may occur.
 
 ## See Also
 

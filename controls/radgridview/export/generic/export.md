@@ -1,7 +1,7 @@
 ---
 title: Export
 page_title: Export
-description: Learn how to export data from Telerik's {{ site.framework_name }} DataGrid by using the Export method gives you control over which elements are included in the exported data.
+description: Learn how to export RadGridView data to ExcelML, HTML, CSV, or plain text with the Export method and configure the exported elements.
 components: ["gridview"]
 slug: gridview-export
 tags: grid,export
@@ -11,63 +11,68 @@ position: 1
 
 # Export
 
-If you need to export RadGridView`s content, its __Export__ method comes to help. It was introduced in __Q1 2010__ and it is the preferred method of exporting data. Furthermore, it gives you control over which elements are included in the exported data.
+The `Export` method exports `RadGridView` data in Progress® Telerik® UI for WPF to ExcelML, HTML, comma-separated values (CSV), or plain text. Use its export options to control which elements to include.
 
-The method expects two parameters:
+For XLSX files, use [Exporting to XLSX with `ExportToXlsx`]({%slug gridview-export-xlsx%}) instead. For large datasets, use the recommended [Streaming export with `GridViewSpreadStreamExport`]({%slug gridview-export-spreadsheetstreamingexport%}) approach.
 
-1. __Stream__ - usually the file stream which you are exporting data to.
+The `Export` method expects two parameters:
 
-2. __GridViewExportOptions__ or __GridViewCsvExportOptions__ - used to set the following export options: 
+* `Stream`&mdash;The destination stream, usually a file stream.
 
-* __Format__ - the possible formats are defined in the __ExportFormat__ enumeration: Csv, ExcelML, Html or Text
+* `GridViewExportOptions` or `GridViewCsvExportOptions`&mdash;The export options.
 
-* __Encoding__ - the possible values are Encoding.Unicode, Encoding.UTF8, etc.
+Configure the export with these options:
 
-* __ShowColumnHeaders__ - determines whether to export the column headers
+* `Format`&mdash;Sets the format through the `ExportFormat` enumeration: `Csv`, `ExcelML`, `Html`, or `Text`.
 
-* __ShowColumnFooters__ - determines whether to export the column footers
+* `Encoding`&mdash;Sets the character encoding, such as `Encoding.Unicode` or `Encoding.UTF8`.
 
-* __ShowGroupFooters__ - determines whether to export the group footers
+* `ShowColumnHeaders`&mdash;Determines whether to export the column headers.
 
-* __ColumnDelimiter__ - determines the string that will separate the cells of the exported data. Default is comma ",". __Available in GridViewCsvExportOptions only__.
+* `ShowColumnFooters`&mdash;Determines whether to export the column footers.
 
-* __RowDelimiter__ - determines the string that will separate the rows of the exported data. Default is new line. __Available in GridViewCsvExportOptions only__.
+* `ShowGroupFooters`&mdash;Determines whether to export the group footers.
 
-* __UseSystemCultureSeparator__ - if set, the RadGridView will use the system List Separator string, specified in Control Panel's Regional Options, to separate cells. This property overrides the __ColumnDelimiter__ property. __Available in GridViewCsvExportOptions only__.
+* `ColumnDelimiter`&mdash;Sets the string that separates cells. The default is a comma (`","`). Available only in `GridViewCsvExportOptions` for CSV export.
 
+* `RowDelimiter`&mdash;Sets the string that separates rows. The default is a newline. Available only in `GridViewCsvExportOptions` for CSV export.
 
-__Example 1__ shows how to display a "Save File" dialog asking the user to save the file in excel format:
+* `UseSystemCultureSeparator`&mdash;Uses the system **List Separator** setting in **Control Panel** regional options to separate cells when enabled. This property overrides `ColumnDelimiter`. Available only in `GridViewCsvExportOptions` for CSV export.
 
-__Example 1: Save RadGridView`s content in Excel file__
+The legacy `Export` formats do not produce XLSX files. ExcelML is an XML format, not HTML or XLSX.
+
+>important Match the filename extension to the selected export format. Renaming HTML or ExcelML output to `.xls` or `.xlsx` does not convert it to that format. A mismatch can trigger an Excel warning.
+
+Example 1 illustrates a save-file dialog for exported content:
+
+**Example 1: Saving RadGridView content to a file**
 
 <snippet id='radgridview-export-generic-export-example_1_save_radgridview_s_content_in_excel_file-cs' />
 
 <snippet id='radgridview-export-generic-export-example_1_save_radgridview_s_content_in_excel_file-vb' />
 
-        
-In addition, __RadGridView__ provides built-in methods to get the content of your GridView control in different formats:
+`RadGridView` also provides extension methods that return the exported content as a string:
 
-* __Text__ - each row is exported on new line (\r\n) with values separated by tabs (\t). In order to export to this format use the __ToText()__ method.
+* Plain text&mdash;`ToText()` exports each row on a new line (`\r\n`) with values separated by tabs (`\t`).
 
-* __CSV__ - each row is exported on new line (\r\n) with values surrounded by quotation marks and separated by commas. In order to export to this format use the __ToCsv()__ method.
+* CSV&mdash;`ToCsv()` exports each row on a new line (`\r\n`) with values surrounded by quotation marks and separated by commas.
 
-* __Html__ - the content of the __RadGridView__ is exported in standard Html table. In order to export to this format use the __ToHtml()__ method.
+* HTML&mdash;`ToHtml()` exports the content as a standard HTML table.
 
-* __ExcelML__ - the content of the __RadGridView__ is exported to Excel XML format. In order to export to this format use the __ToExcelML()__ method.
+* ExcelML&mdash;`ToExcelML()` exports the content in Excel XML format.
 
->The export methods (__ToHtml()__, __ToCsv()__, __ToText()__ and __ToExcelML()__) are implemented in the class __ExportExtension__ as extension methods to the standard __RadGridView__ control. In order to use these methods you have to import the __Telerik.Windows.Controls__ namespace.
+>note The `ExportExtension` class implements `ToHtml()`, `ToCsv()`, `ToText()`, and `ToExcelML()` as extension methods for `RadGridView`. Import the `Telerik.Windows.Controls` namespace to use these methods.
 
+Example 2 illustrates export to a string:
 
-__Example 2: Save content to String__
+**Example 2: Saving content to a string**
 
 <snippet id='radgridview-export-generic-export-example_2_save_content_to_string-cs' />
 
 <snippet id='radgridview-export-generic-export-example_2_save_content_to_string-vb' />
 
-
-        
 ## See Also
 
-* [SpreadsheetStreamingExport]({%slug gridview-export-spreadsheetstreamingexport%})
-* [ExportToXlsx]({%slug gridview-export-xlsx%})
-* [ExportToPdf]({%slug gridview-export-pdf%})
+* [Streaming export with `GridViewSpreadStreamExport`]({%slug gridview-export-spreadsheetstreamingexport%})
+* [Exporting to XLSX with `ExportToXlsx`]({%slug gridview-export-xlsx%})
+* [Exporting to PDF with `ExportToPdf`]({%slug gridview-export-pdf%})

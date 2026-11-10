@@ -1,7 +1,7 @@
 ---
 title: AI Upgrade Plugin
 page_title: WPF AI Upgrade Plugin (Copilot CLI) - Telerik UI for WPF
-description: Use the Telerik WPF AI Upgrade Plugin in GitHub Copilot CLI to upgrade Telerik versions, migrate assembly references to NuGet, and configure license activation.
+description: Use the Telerik WPF AI Upgrade Plugin in GitHub Copilot CLI to upgrade Telerik versions, migrate assemblies to NuGet, and activate licenses.
 components: ["general"]
 slug: ai-upgrade-plugin
 tags: telerik,wpf,ai,upgrade plugin,github copilot cli,microsoft upgrade agent,version upgrade,assembly to nuget,licensing,xaml,noxaml

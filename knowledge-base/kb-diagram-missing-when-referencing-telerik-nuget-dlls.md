@@ -70,7 +70,7 @@ Keep the NoXaml control packages and add a theme using implicit styles:
    </packages>
    ```
 
-2. In `App.xaml`, place the following XAML fragment inside `Application.Resources`. If a `ResourceDictionary` already exists, add these entries to its `MergedDictionaries` collection instead of replacing existing resources. Preserve the order shown:
+2. In `App.xaml`, place the following XAML fragment inside `Application.Resources`. If an explicit `ResourceDictionary` already exists, add these entries to its `MergedDictionaries` collection instead of replacing existing resources. If resources are declared directly inside `Application.Resources`, move them inside the new `ResourceDictionary`, after `ResourceDictionary.MergedDictionaries`, preserving their keys and relative order. Preserve the theme dictionary order shown:
 
    ```XAML
    <ResourceDictionary>

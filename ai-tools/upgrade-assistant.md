@@ -70,4 +70,4 @@ The upgrade tool returns a structured report that includes:
 * [Telerik WPF MCP Server]({%slug getting-started%})
 * [Telerik CLI]({%slug telerik-cli%})
 * [Telerik CLI Migrate Analyzer]({%slug telerik-cli-migrate-analyzer%})
-* [Telerik WPF Agentic UI Generator Overview]({%slug agentic-ui-generator-overview%})
+* [Telerik WPF Agentic UI Generator Overview]({%slug overview%})

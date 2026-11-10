@@ -37,4 +37,4 @@ Learn about the latest changes, improvements and bug fixes in the Telerik WPF Ag
 
 ## See Also
 
-* [Telerik WPF Agentic UI Generator Overview]({%slug agentic-ui-generator-overview%})
+* [Telerik WPF Agentic UI Generator Overview]({%slug overview%})

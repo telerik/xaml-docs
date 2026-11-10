@@ -12,6 +12,12 @@ position: 4
 
 Learn about the latest changes, improvements and bug fixes in the Telerik WPF Agentic UI Generator. The updates are structured in a chronological order with the newest ones appearing first.
 
+## November, 2026 Changelog
+
+### Highlights
+
+- The Telerik WPF AI Coding Assistant is renamed to Telerik WPF Agentic UI Generator to align with the naming across Telerik and Kendo UI component products. The MCP server package, server name, and tool name remain unchanged.
+
 ## November, 2025 Changelog
 
 ### Highlights

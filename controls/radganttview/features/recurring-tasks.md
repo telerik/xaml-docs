@@ -2,6 +2,7 @@
 title: Recurring Tasks and Shared Timeline Rows
 page_title: WPF GanttView Recurring Tasks and Shared Timeline Rows - Telerik UI for WPF
 description: Create recurring tasks in Telerik UI for WPF GanttView, edit and restore individual occurrences, customize editing dialogs, and group tasks in shared rows.
+components: ["ganttview"]
 slug: ganttview-recurring-tasks
 tags: wpf,telerik ui for wpf,radganttview,recurring tasks,recurrence,exceptions,shared rows,editing,dialogs
 ---

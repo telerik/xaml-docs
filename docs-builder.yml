@@ -2612,7 +2612,7 @@ redirects:
     type: Permanent
 -
     from: "^/ai-tools/ai-overview/?$"
-    to: "/ai-tools/agentic-ui-generator-overview"
+    to: "/ai-tools/overview"
     type: Permanent
 -
     from: "^/ai-tools/ai-mcp-server/?$"

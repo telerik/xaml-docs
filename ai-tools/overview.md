@@ -3,7 +3,7 @@ title: Agentic UI Generator Overview
 page_title: Telerik UI for WPF Agentic UI Generator - Overview, License Requirements, and Usage
 description: Overview of the Telerik UI for WPF Agentic UI Generator and MCP Server. Covers license requirements for subscription, perpetual, and trial licenses, usage limits, supported components, privacy, and getting started prerequisites.
 components: ["general"]
-slug: agentic-ui-generator-overview
+slug: overview
 tags: telerik,wpf,ai,coding assistant,mcp,mcp server,license,perpetual license,subscription license,trial,code generation,usage limits,intended use
 position: 0
 ---

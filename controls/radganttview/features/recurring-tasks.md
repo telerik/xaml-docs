@@ -15,7 +15,7 @@ __RadGanttView__ in Telerik UI for WPF supports recurring task series with daily
 
 ## Creating Recurring Task Series
 
-Use `RecurringGanttTask` instead of `GanttTask` for a recurring series. Add the series to `RadGanttView.TasksSource` the generated occurrences form its child tasks.
+Use `RecurringGanttTask` instead of `GanttTask` for a recurring series. Add the series to `RadGanttView.TasksSource`. The generated occurrences form its child tasks.
 
 The task types are in the `Telerik.Windows.Controls.GanttView` namespace. Use the `Telerik.Windows.Controls.ScheduleView` namespace for `RecurrencePattern`, `RecurrenceFrequency`, and `RecurrenceDays`.
 

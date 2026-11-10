@@ -5,6 +5,8 @@ description: Create recurring tasks in Telerik UI for WPF GanttView, edit and re
 components: ["ganttview"]
 slug: ganttview-recurring-tasks
 tags: wpf,telerik ui for wpf,radganttview,recurring tasks,recurrence,exceptions,shared rows,editing,dialogs
+tag: new
+position: 6
 ---
 
 # Recurring Tasks and Shared Timeline Rows

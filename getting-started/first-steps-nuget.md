@@ -19,7 +19,7 @@ Before you start:
 
 1. Use Windows and Visual Studio with the **.NET desktop development** workload. Check the [Telerik UI for WPF system requirements]({%slug installation-system-requirements-wpf%}) for supported environments.
 1. Install the [.NET 8.0 Software Development Kit (SDK)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) for this tutorial.
-1. Have a Telerik account with an active subscription or [trial license](https://www.telerik.com/try/ui-for-wpf).
+1. Have a Telerik account with a commercial or [trial license](https://www.telerik.com/try/ui-for-wpf) valid for the package version you install.
 
 ## Set Up Telerik Development Environment
 

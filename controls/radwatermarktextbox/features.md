@@ -11,7 +11,7 @@ position: 2
 
 # Features
 
-The `RadWatermarkTextBox` control in Progress® Telerik® UI for WPF supports watermark content, focus selection, and additional content. Its main properties are:
+The `RadWatermarkTextBox` control supports watermark content, focus selection, and additional content. Its main properties are:
 
 * `WatermarkContent`&mdash;Gets or sets the watermark content. By default, it appears when the text box is empty and not focused. See [WatermarkBehavior](#watermarkbehavior) for other visibility modes.
 

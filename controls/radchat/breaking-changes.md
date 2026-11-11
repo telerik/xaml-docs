@@ -11,7 +11,7 @@ position: 4
 
 # Breaking Changes
 
-This article describes breaking changes in the `RadChat` control in Progress® Telerik® UI for WPF and the updates required for existing applications. For a full list of changes, see the [Telerik UI for WPF release history](https://www.telerik.com/support/whats-new/wpf/release-history).
+This article describes breaking changes in the `RadChat` control and the updates required for existing applications. For a full list of changes, see the [Telerik UI for WPF release history](https://www.telerik.com/support/whats-new/wpf/release-history).
 
 ## 2026 Q2 (2026.2.519)
 

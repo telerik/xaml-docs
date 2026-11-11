@@ -11,7 +11,7 @@ position: 1
 
 # Templates Structure
 
-Customize the visual structure of `RadPropertyGrid` in Progress® Telerik® UI for WPF by editing its `ControlTemplate` or the templates of its fields. This article describes the following template structures:
+Customize the visual structure of `RadPropertyGrid` by editing its `ControlTemplate` or the templates of its fields. This article describes the following template structures:
 
 * [RadPropertyGrid Template Structure](#radpropertygrid-template)
 

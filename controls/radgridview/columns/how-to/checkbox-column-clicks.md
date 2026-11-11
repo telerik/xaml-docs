@@ -11,7 +11,7 @@ position: 2
 
 # Number of clicks in the CheckBox column
 
-The `GridViewCheckBoxColumn` in Progress® Telerik® UI for WPF supports different click behaviors through its edit settings.
+The `GridViewCheckBoxColumn` supports different click behaviors through its edit settings.
 
 With the default settings (`AutoSelectOnEdit="False"` and `EditTriggers="Default"`), changing a checkbox takes three clicks when the cell is not current. The first click makes the cell current, the second enters edit mode, and the third toggles the checkbox.
 

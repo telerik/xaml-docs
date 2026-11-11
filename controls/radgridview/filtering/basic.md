@@ -119,6 +119,8 @@ By default, Boolean columns have no value editor. Select **Is True** or **Is Fal
 
 Set `RadGridView.FilteringMode` to `FilterEditor` to create complex filter expressions with `RadDataFilter`. This mode displays a data filter view panel at the bottom of the grid by default. See [Filter Editor setup and required assemblies]({%slug gridview-filter-editor%}) for configuration details.
 
+>caption RadGridView in FilterEditor mode
+
 ![RadGridView in FilterEditor mode with a data filter view panel](images/gridview_filtering_basic_filtereditormode.png)
 
 ## FilterMemberPath

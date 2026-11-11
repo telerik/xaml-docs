@@ -35,3 +35,5 @@ apiRules:
     uidRegex: ^Telerik\.Windows\.Documents\.Model\.Merging\.InsertDocumentOptions(\..*)?$
 - exclude:
     uidRegex: ^Telerik\.Windows\.Diagrams\.Core\.GraphBase`2(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Windows\.Automation\.Peers\.RadChartBaseAutomationPeer(\..*)?$

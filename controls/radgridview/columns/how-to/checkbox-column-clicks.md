@@ -43,15 +43,7 @@ Use the `CellTemplate` of a `GridViewDataColumn` to display a WPF `CheckBox` tha
 
 The following XAML column fragment belongs in an existing `RadGridView.Columns` collection. It assumes each row's data item exposes a writable `IsActive` boolean property. Declare `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"` on the containing XAML element, alongside the standard WPF presentation namespace:
 
-```XAML
-<telerik:GridViewDataColumn Header="Active" IsReadOnly="True">
-    <telerik:GridViewDataColumn.CellTemplate>
-        <DataTemplate>
-            <CheckBox IsChecked="{Binding IsActive, Mode=TwoWay}" />
-        </DataTemplate>
-    </telerik:GridViewDataColumn.CellTemplate>
-</telerik:GridViewDataColumn>
-```
+<snippet id='radgridview-columns-how-to-checkbox-column-clicks-1_clicks_solution-xaml' />
 
 The `CheckBox` uses a two-way binding to `IsActive`, so one click changes the property. It appears enabled in view mode, unlike the checkbox in a `GridViewCheckBoxColumn` before the cell enters edit mode.
 

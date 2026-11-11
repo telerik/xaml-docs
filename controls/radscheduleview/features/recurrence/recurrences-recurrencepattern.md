@@ -91,7 +91,7 @@ Set the `Frequency` property to a value from the `RecurrenceFrequency` enumerati
 
 The default value of `Frequency` is `RecurrenceFrequency.None`. Always set `Frequency` to a valid value when you configure a recurring appointment.
 
->note Set `Minutely` and `Hourly` frequencies in code. To display these options in the **EditAppointmentDialog**, [customize the `EditAppointmentDialogStyle`]({%slug radscheduleview-features-custom-dialogs%}) and add them to the template manually.
+>note Set `Minutely` and `Hourly` frequencies in code. To display these options in the **EditRecurrenceDialog**, [customize the `EditRecurrenceDialogStyle`]({%slug radscheduleview-features-custom-dialogs%}) and add them to the template manually.
 
 ## MinutesOfHour
 

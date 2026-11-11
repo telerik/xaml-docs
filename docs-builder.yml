@@ -43,7 +43,7 @@ ai-chat-prompt-suggestions:
   - "How to use the grid component in Telerik UI for WPF?"
 
 meta:
-    ai-assistant:
+    ai-tools:
         title: AI Tools
         position: 3
     knowledge-base:

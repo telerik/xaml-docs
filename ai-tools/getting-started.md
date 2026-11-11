@@ -3,7 +3,7 @@ title: Getting Started
 page_title: Telerik UI for WPF Agentic UI Generator - Getting Started
 description: Learn how to install and configure the Telerik WPF MCP Server for the Agentic UI Generator. The server provides AI clients with specialized context about Telerik UI for WPF.
 components: ["general"]
-slug: getting-started
+slug: ai-tools-getting-started
 tags: telerik,WPF,ai,ai server,dotnetWPF,agentic ui generator
 position: 1
 ---

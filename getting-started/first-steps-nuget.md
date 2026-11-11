@@ -11,7 +11,7 @@ position: 0
 
 # First Steps with Telerik UI for WPF
 
-This guide helps you create a Windows Presentation Foundation (WPF) project and display a `RadTabControl` with Progress® Telerik® UI for WPF.
+This guide helps you create a Windows Presentation Foundation (WPF) project and display a `RadTabControl`.
 
 ## Prerequisites
 

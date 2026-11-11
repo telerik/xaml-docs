@@ -13,7 +13,7 @@ position: 22
 
 To close the `RadGridView` filtering popup when you click its **Filter** button, override `FilteringControl.OnApplyFilter` in a custom filtering control. This targets the button inside the popup, not the funnel button in the column header.
 
-These examples assume an existing `RadGridView` with data and column definitions. For project setup in Progress® Telerik® UI for WPF, follow [Getting Started with RadGridView]({%slug gridview-getting-started2%}).
+These examples assume an existing `RadGridView` with data and column definitions. For project setup, follow [Getting Started with RadGridView]({%slug gridview-getting-started2%}).
 
 For a complete application, see the [CloseFilteringPopupFilterButton SDK example on GitHub](https://github.com/telerik/xaml-sdk/tree/master/GridView/CloseFilteringPopupFilterButton).
 

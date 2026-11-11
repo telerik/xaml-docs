@@ -11,7 +11,7 @@ position: 1
 
 # RecurrencePattern
 
-Use `RecurrencePattern` to configure daily, weekly, monthly, and yearly appointments in the `RadScheduleView` control of Progress® Telerik® UI for WPF. The `IAppointment` interface exposes a `RecurrenceRule` property that associates an appointment with a recurrence pattern. Recurrence rules also support exceptions.
+Use `RecurrencePattern` to configure daily, weekly, monthly, and yearly appointments in the `RadScheduleView` control. The `IAppointment` interface exposes a `RecurrenceRule` property that associates an appointment with a recurrence pattern. Recurrence rules also support exceptions.
 
 The [`RecurrenceRule` class]({%slug radscheduleview-features-recurrences-recurrencerule%}) creates and evaluates recurrence rules. Its required `Pattern` property has type `RecurrencePattern`.
 

@@ -25,4 +25,6 @@ Nested member access is also possible. For instance, __“Tasks.Count”__ will 
 
 ![{{ site.framework_name }} RadExpressionEditor Nested Member Access](images/RadExpressionEditor_NestedMemberAccess.png)
 
+Function calls use a separate allowlist. You can access members and properties as before, but an expression can call only built-in functions and custom functions registered in the active `ExpressionFunctionContext`. For details, see [Function Invocation]({%slug radexpressioneditor-expressions-function-invocation%}).
+
 

@@ -47,4 +47,15 @@ __Example 4: Set Expression for GridViewExpressionColumn in code.__
 
 > The values displayed in GridViewExpressionColumn will be updated automatically when a concerned property on the data item changes.
 
-More information about expressions could be found [here](http://www.telerik.com/help/silverlight/radexpressioneditor-expressions-overview.html).
+## Function Calls in GridView Expressions
+
+When you set `GridViewExpressionColumn.Expression` from a string, the expression converter passes it to the shared expression runtime. Calls can resolve Telerik's built-in functions and registered custom functions. Register custom functions through `ExpressionFunctionContext.Context.FunctionRegistry` before the grid parses or evaluates the expression. See [Custom Categories and Functions]({%slug radexpressioneditor-expressions-custom-functions-and-categories%}) for registration and migration details.
+
+The same function-call rules apply to string expressions supplied to `RuleBase.Condition`, including rules used by `ConditionalStyleSelector` and `ConditionalDataTemplateSelector`. Function allowlisting does not remove expression member or property access.
+
+## See Also
+
+* [Expression Parser]({%slug radexpressioneditor-expression-parser%})
+* [Custom Categories and Functions]({%slug radexpressioneditor-expressions-custom-functions-and-categories%})
+* [Row Style Selector]({%slug gridview-rowstyleselector%})
+* [Row Details Template Selector]({%slug radgridview-row-details-templateselector%})

@@ -44,32 +44,78 @@ __[C#] Example 3: Add custom categories__
 
 ## Custom Functions
 
-If you want to add your custom non-static functions to the control you need to set the **ExpressionFunctionContext.Context** property to an instance of the **ExpressionFunctionContext** class.
+Expressions can call only built-in functions and custom methods that you register. The default context includes Telerik's built-in functions. A custom context must pass an `ExpressionFunctionRegistry` to its base constructor. The parameterless `ExpressionFunctionContext` constructor is no longer available.
 
-__[C#] Example 4: Custom ExpressionFunctionContext__
+Use `ExpressionFunctionRegistry.CreateWithBuiltInFunctions()` to retain Telerik's built-in functions. Use `ExpressionFunctionRegistry.CreateEmpty()` to expose only the functions that you register.
 
-<snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_context_class-cs' />
+The registry provides these methods:
 
+* `AddGlobalFunction` registers a public instance method on an `ExpressionFunctionContext` type as a global function, such as `Discount(price, rate)`.
+* `AddInstanceFunction` registers a public instance method on an expression receiver type, such as `Customer.ApplyDiscount(rate)`.
+* `AssignGlobalFunction` replaces a global registration with the same target type, name, and parameter signature.
+* `AssignInstanceFunction` replaces a receiver registration with the same target type, name, and parameter signature.
 
-**Example 4** defines two custom instance functions which we can now pass to the ExpressionParser as show in **Example 5**.
+Each registration specifies an exact method name and parameter-type signature. Register functions before parsing or evaluating expressions. Registered methods must be public instance methods and must return a value. Methods declared by `object`, generic methods, and methods with by-reference or pointer parameters are not supported.
 
-__[C#] Example 5: Set the ExpressionFunctionContext.Context__
+The active registry determines which functions the Expression Editor can resolve. The editor builds its function list and expression preview from that registry. Use the view-model customization APIs to group or hide function-list entries.
+
+The following example defines custom global functions and registers their exact signatures. It retains Telerik's built-in functions.
+
+__Example 4: Define and Register Custom Functions__
+
+```C#
+using Telerik.Expressions;
+
+public sealed class CustomExpressionFunctionContext : ExpressionFunctionContext
+{
+	public CustomExpressionFunctionContext()
+		: base(CreateRegistry())
+	{
+	}
+
+	private static ExpressionFunctionRegistry CreateRegistry()
+	{
+		ExpressionFunctionRegistry registry = ExpressionFunctionRegistry.CreateWithBuiltInFunctions();
+		registry.AddGlobalFunction(
+			typeof(CustomExpressionFunctionContext),
+			nameof(Discount),
+			new[] { typeof(double), typeof(double) });
+		registry.AddGlobalFunction(
+			typeof(CustomExpressionFunctionContext),
+			nameof(Surcharge),
+			new[] { typeof(double), typeof(double) });
+		return registry;
+	}
+
+	public double Discount(double price, double rate)
+	{
+		return price * (1d - rate);
+	}
+
+	public double Surcharge(double price, double rate)
+	{
+		return price * (1d + rate);
+	}
+}
+```
+
+The registry includes Telerik's built-in functions and adds the `Discount` and `Surcharge` global functions. Each registration matches a public instance method's exact parameter types.
+
+Assign the context before parsing expressions, as shown in the following example.
+
+__Setting the Active Expression Function Context__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_set_context-cs' />
 
 
-You can then add these functions in the **GetFunctionsItemModels** override as well as remove some of the predefined functions.
+You can add the registered functions to the editor's function list by overriding `GetFunctionsItemModels` or `GenerateCategories`.
 
-__[C#] Example 6: Add custom functions__
+__Example 6: Add Custom Functions to the Function List__
 
 <snippet id='radexpressioneditor-expressions-custom-functions-and-categories-custom_functions_get_functions_item_models-cs' />
 
 
-**Example 6** adds the two custom functions defined in Example 4 to the **Other** subcategory. The results before and after respectively are illustrated in **Figure 2**. 
-
->caption Custom functions
-
-![Telerik UI for WPF RadExpressionEditor custom functions showing OnePlus and TwoPlus in the Other category](images/custom-functions.png)
+The snippet adds custom functions to an editor category. The expression engine must also have those functions registered in the active `ExpressionFunctionContext` for the preview to evaluate them.
 
 ## Further Customizations
 

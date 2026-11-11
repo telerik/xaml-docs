@@ -11,7 +11,7 @@ CTAControlName: RadTreeListView
 ---
 # {{ site.framework_name }} TreeListView Overview
 
-Use `RadTreeListView` from Progress® Telerik® UI for WPF to display hierarchical data in a tabular layout. The control combines the data operations and column model of `RadGridView` with tree-style expand and collapse behavior. Use it for file explorers, organizational structures, category trees, and nested business records.
+Use `RadTreeListView` to display hierarchical data in a tabular layout. The control combines the data operations and column model of `RadGridView` with tree-style expand and collapse behavior. Use it for file explorers, organizational structures, category trees, and nested business records.
 
 This overview highlights the main capability areas of `RadTreeListView` and points you to the most relevant next article for setup, performance, and advanced data scenarios.
 

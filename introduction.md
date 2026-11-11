@@ -65,7 +65,7 @@ Telerik UI for WPF features the following controls:
             <IntroTableAnchor title="ChartView3D" href="slug:radchartview3d-overview"></IntroTableAnchor>
             <IntroTableAnchor title="DataBar" href="slug:raddatabar-overview"></IntroTableAnchor>
             <IntroTableAnchor title="Diagram" href="slug:raddiagram-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="GanttView" href="slug:radganttview-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="GanttView" href="slug:radganttview-overview" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="Gauge" href="slug:radgauge-overview"></IntroTableAnchor>
             <IntroTableAnchor title="HeatMap" href="slug:radheatmap-overview"></IntroTableAnchor>
             <IntroTableAnchor title="Legend" href="slug:radlegend-overview"></IntroTableAnchor>

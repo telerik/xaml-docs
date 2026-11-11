@@ -3,14 +3,14 @@ title: Upgrade Assistant
 page_title: Telerik UI for WPF MCP Upgrade Tool
 description: Learn how to use the telerik_upgrade_assistant tool from the Telerik WPF MCP Server to analyze your WPF projects for breaking changes when upgrading between Telerik UI for WPF versions.
 components: ["general"]
-slug: ai-upgrade-assistant
+slug: ai-tools-upgrade-assistant
 tags: telerik,wpf,ai,coding assistant,upgrade,migration,breaking changes,mcp
 position: 2
 ---
 
 # Telerik UI for WPF MCP Upgrade Assistant
 
-The `telerik_upgrade_assistant` tool is part of the [Telerik WPF MCP Server]({%slug getting-started%}) (version 1.8.0 and later). It helps you analyze your existing WPF projects for breaking changes when upgrading between Telerik UI for WPF versions.
+The `telerik_upgrade_assistant` tool is part of the [Telerik WPF MCP Server]({%slug ai-tools-getting-started%}) (version 1.8.0 and later). It helps you analyze your existing WPF projects for breaking changes when upgrading between Telerik UI for WPF versions.
 
 The tool integrates with the [Telerik CLI]({%slug telerik-cli%}) (`telerik migrate analyze` command) and returns structured findings to the AI model, which can then interpret and apply the necessary code fixes automatically.
 
@@ -18,7 +18,7 @@ The tool integrates with the [Telerik CLI]({%slug telerik-cli%}) (`telerik migra
 
 To use the upgrade tool, you need:
 
-* The [Telerik WPF MCP Server]({%slug getting-started%}) version 1.8.0 or later installed and configured.
+* The [Telerik WPF MCP Server]({%slug ai-tools-getting-started%}) version 1.8.0 or later installed and configured.
 * The [Telerik CLI]({%slug telerik-cli%}) global .NET tool. If not already installed, the upgrade tool will detect this and prompt you to install it automatically.
 * A WPF project (`.csproj`) that references Telerik UI for WPF assemblies.
 
@@ -31,7 +31,7 @@ To analyze your WPF project for Telerik-related upgrade issues, follow these ste
 
 1. Open your WPF solution in Visual Studio.
 2. Open the **Copilot Chat** window.
-3. Make sure the `telerik-wpf-assistant` MCP tool is enabled in the Copilot Chat tool selection dropdown. For setup instructions, see [Getting Started with Telerik WPF MCP Server]({%slug getting-started%}).
+3. Make sure the `telerik-wpf-assistant` MCP tool is enabled in the Copilot Chat tool selection dropdown. For setup instructions, see [Getting Started with Telerik WPF MCP Server]({%slug ai-tools-getting-started%}).
 
 ![Telerik WPF Assistant](images/ai-upgrade-tool_01.png)
 
@@ -67,7 +67,7 @@ The upgrade tool returns a structured report that includes:
 
 ## See Also
 
-* [Telerik WPF MCP Server]({%slug getting-started%})
+* [Telerik WPF MCP Server]({%slug ai-tools-getting-started%})
 * [Telerik CLI]({%slug telerik-cli%})
 * [Telerik CLI Migrate Analyzer]({%slug telerik-cli-migrate-analyzer%})
-* [Telerik WPF Agentic UI Generator Overview]({%slug overview%})
+* [Telerik WPF Agentic UI Generator Overview]({%slug ai-tools-overview%})

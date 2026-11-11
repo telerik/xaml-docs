@@ -3,7 +3,7 @@ title: Changelog
 page_title: Telerik WPF Agentic UI Generator Changelog
 description: Find out about the latest changes and improvements in the Telerik WPF Agentic UI Generator.
 components: ["general"]
-slug: ai-changelog
+slug: ai-tools-changelog
 tags: telerik,wpf,ai,agentic ui generator,changelog,release,notes
 position: 4
 ---
@@ -37,4 +37,4 @@ Learn about the latest changes, improvements and bug fixes in the Telerik WPF Ag
 
 ## See Also
 
-* [Telerik WPF Agentic UI Generator Overview]({%slug overview%})
+* [Telerik WPF Agentic UI Generator Overview]({%slug ai-tools-overview%})

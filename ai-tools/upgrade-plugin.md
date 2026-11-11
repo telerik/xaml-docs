@@ -3,16 +3,17 @@ title: AI Upgrade Plugin
 page_title: WPF AI Upgrade Plugin (Copilot CLI) - Telerik UI for WPF
 description: Use the Telerik WPF AI Upgrade Plugin in GitHub Copilot CLI to upgrade Telerik versions, migrate assemblies to NuGet, and activate licenses.
 components: ["general"]
-slug: ai-upgrade-plugin
+slug: ai-tools-upgrade-plugin
 tags: telerik,wpf,ai,upgrade plugin,github copilot cli,microsoft upgrade agent,version upgrade,assembly to nuget,licensing,xaml,noxaml
-position: 4
+tag: new
+position: 5
 ---
 
 # AI Upgrade Plugin (Copilot CLI)
 
 The Telerik WPF Upgrade Plugin extends Microsoft's Upgrade Agent in GitHub Copilot CLI with modernization workflows for Telerik UI for WPF. Use it to upgrade Telerik versions, migrate direct assembly references to NuGet packages, and configure licensing. It also adds Telerik-specific guidance to Microsoft's .NET upgrade scenarios while preserving your application's Xaml or NoXaml flavor.
 
-This plugin is separate from the [Telerik WPF MCP Server]({%slug ai-mcp-server%}) and its [MCP Upgrade Assistant tool]({%slug ai-upgrade-assistant%}). The plugin orchestrates a modernization workflow through Microsoft's Upgrade Agent and uses Telerik MCP tools for tasks such as breaking-change analysis.
+This plugin is separate from the [Telerik WPF MCP Server]({%slug ai-tools-getting-started%}) and its [MCP Upgrade Assistant tool]({%slug ai-tools-upgrade-assistant%}). The plugin orchestrates a modernization workflow through Microsoft's Upgrade Agent and uses Telerik MCP tools for tasks such as breaking-change analysis.
 
 ## Prerequisites
 
@@ -136,7 +137,7 @@ On Windows, prefer the shared license file at `%AppData%\Telerik\telerik-license
 
 ## See Also
 
-* [Telerik WPF MCP Server Setup]({%slug ai-mcp-server%})
-* [Telerik WPF MCP Upgrade Assistant]({%slug ai-upgrade-assistant%})
+* [Telerik WPF MCP Server Setup]({%slug ai-tools-getting-started%})
+* [Telerik WPF MCP Upgrade Assistant]({%slug ai-tools-upgrade-assistant%})
 * [Telerik CLI Migrate Analyzer]({%slug telerik-cli-migrate-analyzer%})
 * [Microsoft GitHub Copilot Upgrade Agent](https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-upgrade/overview)

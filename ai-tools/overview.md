@@ -3,8 +3,9 @@ title: Agentic UI Generator Overview
 page_title: Telerik UI for WPF Agentic UI Generator - Overview, License Requirements, and Usage
 description: Overview of the Telerik UI for WPF Agentic UI Generator and MCP Server. Covers license requirements for subscription, perpetual, and trial licenses, usage limits, supported components, privacy, and getting started prerequisites.
 components: ["general"]
-slug: overview
+slug: ai-tools-overview
 tags: telerik,wpf,ai,coding assistant,mcp,mcp server,license,perpetual license,subscription license,trial,code generation,usage limits,intended use
+tag: new
 position: 0
 ---
 
@@ -12,11 +13,11 @@ position: 0
 
 The Agentic UI Generator provides AI assistance for building and updating Telerik UI for WPF applications.
 
-The Telerik UI for WPF Agentic UI Generator is an artificial intelligence (AI)-powered code generation tool available through the [Telerik WPF Model Context Protocol (MCP) Server]({%slug getting-started%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using [the Telerik UI for WPF product suite](https://www.telerik.com/products/wpf/overview.aspx) and APIs.
+The Telerik UI for WPF Agentic UI Generator is an artificial intelligence (AI)-powered code generation tool available through the [Telerik WPF Model Context Protocol (MCP) Server]({%slug ai-tools-getting-started%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using [the Telerik UI for WPF product suite](https://www.telerik.com/products/wpf/overview.aspx) and APIs.
 
 ## Available Tools
 
-The Agentic UI Generator is available through the [Telerik WPF MCP server]({%slug getting-started%}) distributed as a NuGet package.
+The Agentic UI Generator is available through the [Telerik WPF MCP server]({%slug ai-tools-getting-started%}) distributed as a NuGet package.
 
 The major features of the Agentic UI Generator are listed in the table below.
 
@@ -88,5 +89,5 @@ Read the full guide in the dedicated [Telerik Document Processing AI Coding Assi
 
 ## Next Steps
 
-* Configure the [Telerik WPF MCP Server]({%slug getting-started%}) with an MCP-enabled client.
-* Explore the [Telerik UI for WPF Prompt Library]({%slug ai-prompt-library%}).
+* Configure the [Telerik WPF MCP Server]({%slug ai-tools-getting-started%}) with an MCP-enabled client.
+* Explore the [Telerik UI for WPF Prompt Library]({%slug ai-tool-prompt-library%}).

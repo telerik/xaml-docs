@@ -11,7 +11,7 @@ position: 1
 
 # Export
 
-The `Export` method exports `RadGridView` data in Progress® Telerik® UI for WPF to ExcelML, HTML, comma-separated values (CSV), or plain text. Use its export options to control which elements to include.
+The `Export` method exports `RadGridView` data to ExcelML, HTML, comma-separated values (CSV), or plain text. Use its export options to control which elements to include.
 
 For XLSX files, use [Exporting to XLSX with `ExportToXlsx`]({%slug gridview-export-xlsx%}) instead. For large datasets, use the recommended [Streaming export with `GridViewSpreadStreamExport`]({%slug gridview-export-spreadsheetstreamingexport%}) approach.
 

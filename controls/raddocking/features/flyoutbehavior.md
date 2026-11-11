@@ -11,7 +11,7 @@ position: 7
 
 # FlyoutBehavior
 
-`RadDocking` in Progress® Telerik® UI for WPF uses flyout behavior to control when panes in the auto-hide area open and close.
+`RadDocking` uses flyout behavior to control when panes in the auto-hide area open and close.
 
 To use flyouts, first [unpin a pane]({%slug raddocking-panes-pinned-unpinned-panes%}) with its pin/unpin button or set its `IsPinned` property to `False`. When hidden, an unpinned pane leaves its tab header in the *auto-hide area*.
 

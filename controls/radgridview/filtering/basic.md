@@ -11,7 +11,7 @@ position: 0
 
 # Basic Filtering
 
-The `RadGridView` control in Progress® Telerik® UI for WPF supports filtering data by one or more columns. Filtering is enabled by default for common .NET types, including strings, numeric types, and `DateTime`.
+The `RadGridView` control supports filtering data by one or more columns. Filtering is enabled by default for common .NET types, including strings, numeric types, and `DateTime`.
 
 For a data-bound grid, use the following options to configure filtering:
 

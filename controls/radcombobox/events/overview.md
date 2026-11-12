@@ -11,17 +11,17 @@ position: 0
 
 # Events Overview
 
-Use `RadComboBox` events to react when the drop-down opens, closes, or the selection changes. This article shows how to subscribe to the most common events and how to use `DropDownOpened` to reset the drop-down scroll position each time the list opens.
+Use `RadComboBox` events in Progress® Telerik® UI for WPF to react when the drop-down opens, closes, or the selection changes. This article shows how to subscribe to common events and use `DropDownOpened` to request a scroll reset when the list opens.
 
-## Subscribing to Event
+## Subscribing to Events
 
 Subscribe to a `RadComboBox` event in XAML or in code-behind.
 
-__Example 1: Subscribe to an event in XAML__
+**Example 1: Subscribe to an event in XAML**
 
 <snippet id='radcombobox-events-overview-example_1_subscribing_to_an_event_in_xaml-xaml' />
 
-__Example 2: Subscribe to an event in code-behind__
+**Example 2: Subscribe to an event in code-behind**
 
 <snippet id='radcombobox-events-overview-example_2_subscribing_to_an_event_in_code-cs' />
 
@@ -33,7 +33,7 @@ Start with the following events when you customize `RadComboBox` behavior:
 
 Use `DropDownOpened` when you need to change the drop-down state after the popup becomes visible. Typical scenarios include loading data on demand, focusing an element in the popup, or resetting the scroll position.
 
-__Example 3: Handle the DropDownOpened event__
+**Example 3: Handle the `DropDownOpened` event**
 
 <snippet id='radcombobox-events-overview-example_3_dropdownopened_event_handler-cs' />
 
@@ -41,7 +41,7 @@ __Example 3: Handle the DropDownOpened event__
 
 Use `DropDownClosed` when you need to react after the user dismisses the drop-down. This event is useful when you want to commit UI changes or trigger cleanup logic after the popup closes.
 
-__Example 4: Handle the DropDownClosed event__
+**Example 4: Handle the `DropDownClosed` event**
 
 <snippet id='radcombobox-events-overview-example_4_dropdownclosed_event_handler-cs' />
 
@@ -49,75 +49,72 @@ __Example 4: Handle the DropDownClosed event__
 
 Use `SelectionChanged` when you need to inspect the selected and unselected items. The `SelectionChangedEventArgs` type exposes the `AddedItems` and `RemovedItems` collections.
 
-__Example 5: Handle the SelectionChanged event__
+**Example 5: Handle the `SelectionChanged` event**
 
 <snippet id='radcombobox-events-overview-example_5_selectionchanged_event_handler-cs' />
 
->note `SelectionChanged` is inherited from the [Selector class](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.selector?view=windowsdesktop-9.0).
+>note `SelectionChanged` is inherited from the [`Selector` class](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.selector?view=windowsdesktop-9.0).
 
-## Reset the Drop-Down Scroll Position on Open
+## Resetting the Drop-Down Scroll Position on Open
 
-By default, `RadComboBox` keeps the last scroll position when the user closes and reopens the drop-down. This behavior is the same when `AllowMultipleSelection` is `True`.
+To request that the drop-down scroll to the top when it opens, handle `DropDownOpened` and call `ScrollToTop()` on its `ScrollViewer`. The following example uses `AllowMultipleSelection="True"`.
 
->important `RadComboBox` does not expose a built-in property that resets the drop-down list to the first item every time it opens. To enforce that behavior, handle `DropDownOpened` and scroll the popup `ScrollViewer` in code.
+>important This example depends on the control template. The lookup assumes a `Popup` is a visual descendant of `RadComboBox` and contains a `ScrollViewer` under `Popup.Child`. If your template differs, adapt the lookup to its structure.
 
-To reset the drop-down scroll position each time the list opens:
+To request a scroll reset when the list opens:
 
 1. Subscribe to the `DropDownOpened` event.
 2. Find the `ScrollViewer` inside the popup after the drop-down opens.
 3. Call `ScrollToTop()` on that `ScrollViewer`.
 
-__Example 6: Subscribe to DropDownOpened in a multiple-selection combo box__
+These fragments assume a populated `RadComboBox` in a WPF window configured as described in [Getting Started]({%slug radcombobox-getting-started%}). Declare `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"` on the window and place the control in its layout.
+
+**Example 6: Subscribe to `DropDownOpened` in a multiple-selection combo box**
 
 ```xaml
 <telerik:RadComboBox x:Name="radComboBox"
-					 AllowMultipleSelection="True"
-					 DropDownOpened="CountriesComboBox_DropDownOpened" />
+                     AllowMultipleSelection="True"
+                     DropDownOpened="CountriesComboBox_DropDownOpened" />
 ```
 
-__Example 7: Reset the drop-down scroll position in code-behind__
+Add the handler and helper method to the window's code-behind class. Include the `System`, `System.Windows`, `System.Windows.Controls`, and `System.Windows.Controls.Primitives` namespaces. Also include `System.Windows.Media`, `System.Windows.Threading`, and `Telerik.Windows.Controls`.
+
+**Example 7: Reset the drop-down scroll position in code-behind**
 
 ```csharp
-        private void CountriesComboBox_DropDownOpened(object sender, EventArgs e)
+private void CountriesComboBox_DropDownOpened(object sender, EventArgs e)
+{
+    if (sender is RadComboBox comboBox && comboBox.Items.Count > 1)
+    {
+        comboBox.Dispatcher.BeginInvoke(new Action(() =>
         {
-            if (sender is RadComboBox comboBox && comboBox.Items.Count > 1)
+            var popup = FindChildElement<Popup>(comboBox);
+            if (popup?.Child != null)
             {
-                // VisualTreeHelper cannot cross Popup boundaries because the Popup
-                // opens in a separate PresentationSource. We find the Popup first,
-                // then search within popup.Child. The Dispatcher delay ensures the
-                // popup layout is complete before we try to access its visual tree.
-                Dispatcher.BeginInvoke(() =>
-                {
-                    var popup = FindChildElement<Popup>(comboBox);
-                    if (popup?.Child != null)
-                    {
-                        var scrollViewer = FindChildElement<ScrollViewer>(popup.Child);
-                        scrollViewer?.ScrollToTop();
-                    }
-                }, DispatcherPriority.Loaded);
+                var scrollViewer = FindChildElement<ScrollViewer>(popup.Child);
+                scrollViewer?.ScrollToTop();
             }
-        }
+        }), DispatcherPriority.Loaded);
+    }
+}
 
-        private static T FindChildElement<T>(DependencyObject parent) where T : DependencyObject
-        {
-            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
-            {
-                var child = VisualTreeHelper.GetChild(parent, i);
-                if (child is T match)
-                    return match;
+private static T FindChildElement<T>(DependencyObject parent) where T : DependencyObject
+{
+    for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
+    {
+        var child = VisualTreeHelper.GetChild(parent, i);
+        if (child is T match)
+            return match;
 
-                var result = FindChildElement<T>(child);
-                if (result != null)
-                    return result;
-            }
-            return null;
-        }
+        var result = FindChildElement<T>(child);
+        if (result != null)
+            return result;
+    }
+    return null;
+}
 ```
 
-Add the required `using` directives (for example `System.Windows`, `System.Windows.Controls`, `System.Windows.Controls.Primitives`, `System.Windows.Media`, and `System.Windows.Threading`) if they are not already present in the code-behind file.
-
-
-Because the code runs after `DropDownOpened` fires, the popup is already created and the `ScrollViewer` is available to scroll back to the top.
+The callback runs at `DispatcherPriority.Loaded` and requests a scroll to the top only if it finds the popup and scroll viewer. If either lookup fails, it makes no scroll request. Verify the result with your template, selection state, and virtualization settings rather than assuming this timing guarantees the final scroll position.
 
 ## See Also
 

@@ -5,6 +5,7 @@ description: Check our &quot;Custom Categories and Functions&quot; documentation
 components: ["expressioneditor"]
 slug: radexpressioneditor-expressions-custom-functions-and-categories
 tags: custom,functions,categories
+tag: updated
 published: True
 position: 5
 ---
@@ -131,4 +132,3 @@ The example above removes some of the operators, constants and the **Discontinue
 ## See Also
 
 * [Lambdas]({%slug radexpressioneditor-expressions-lambdas%})
-

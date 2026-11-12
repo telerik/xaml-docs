@@ -5,6 +5,7 @@ description: Check our &quot;Hyperlink&quot; documentation article for the RadRi
 components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-hyperlink
 tags: hyperlink
+tag: updated
 published: True
 ---
 

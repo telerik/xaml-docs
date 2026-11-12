@@ -5,6 +5,7 @@ description: Learn how the WPF Expression Editor resolves built-in and registere
 components: ["expressioneditor"]
 slug: radexpressioneditor-expressions-function-invocation
 tags: function,invocation,custom functions,allowlist
+tag: updated
 published: True
 position: 2
 ---

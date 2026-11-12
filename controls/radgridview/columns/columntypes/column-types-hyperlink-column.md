@@ -5,6 +5,7 @@ description: Learn how to define the Hyperlink Column and have the bound value a
 components: ["gridview"]
 slug: radgridview-columns-column-types-hyperlink-column
 tags: hyperlink,column
+tag: updated
 published: True
 position: 6
 ---

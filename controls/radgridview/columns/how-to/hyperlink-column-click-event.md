@@ -5,6 +5,7 @@ description: Handle GridViewHyperlinkColumn clicks, cancel hyperlink navigation,
 components: ["gridview"]
 slug: gridview-hyperlink-column-click-event
 tags: click, event, hyperlink, column, gridview
+tag: updated
 published: True
 position: 9
 ---

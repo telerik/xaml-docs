@@ -5,6 +5,7 @@ description: Check out the properties of the Dynamic Hyperlink Column in Telerik
 components: ["gridview"]
 slug: radgridview-columns-column-types-dynamic-hyperlink-column
 tags: dynamic,hyperlink,column
+tag: updated
 published: True
 position: 5
 ---

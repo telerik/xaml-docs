@@ -1023,6 +1023,10 @@ meta:
         
 redirects:
 -
+    from: "^/controls/radexpressioneditor/changes-and-backward-compatibility/changes/?$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
     from: "^/?$"
     to: "/introduction"
     type: Permanent

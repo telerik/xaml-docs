@@ -5,6 +5,7 @@ description: Check our &quot;Annotations&quot; documentation article for the Rad
 components: ["pdfviewer"]
 slug: radpdfviewer-document-model-annotations
 tags: annotations
+tag: updated
 published: True
 position: 2
 ---

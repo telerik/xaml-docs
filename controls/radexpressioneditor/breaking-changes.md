@@ -21,6 +21,6 @@ For details, see [Custom Categories and Functions]({%slug radexpressioneditor-ex
 
 ## See Also
 
-* [Parsing Expressions]({%slug radexpressioneditor-expressions-expression-parser%})
+* [Parsing Expressions]({%slug radexpressioneditor-expression-parser%})
 * [Invoking Functions]({%slug radexpressioneditor-expressions-function-invocation%})
 * [Custom Categories and Functions]({%slug radexpressioneditor-expressions-custom-functions-and-categories%})

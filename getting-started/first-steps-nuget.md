@@ -110,7 +110,7 @@ If package installation fails, check the selected version and [package source co
 
 ## Next Steps
 
-* [Get AI-powered development help with Telerik AI tools]({%slug ai-overview%})
+* [Get AI-powered development help with Telerik AI tools]({%slug ai-tools-overview%})
 * [Explore the available Telerik UI for WPF components]({%slug introduction%}#list-of-components)
 * [Browse the Telerik UI for WPF desktop demos](https://demos.telerik.com/wpf/)
 * [Explore the Telerik WPF Data Grid and its features]({%slug gridview-overview2%})

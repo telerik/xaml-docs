@@ -1,18 +1,18 @@
 ---
 title: Getting Started
-page_title: Getting Started
-description: Learn how to add and use the Telerik WPF MCP Server as a WPF AI coding assistant and code generator for better developer productivity. The Telerik WPF MCP server provides proprietary context about Telerik UI for WPF to AI-powered software.
+page_title: Telerik UI for WPF Agentic UI Generator - Getting Started
+description: Learn how to install and configure the Telerik WPF MCP Server for the Agentic UI Generator. The server provides AI clients with specialized context about Telerik UI for WPF.
 components: ["general"]
-slug: ai-mcp-server
-tags: telerik,WPF,ai,ai server,dotnetWPF,coding assistant
+slug: ai-tools-getting-started
+tags: telerik,WPF,ai,ai server,dotnetWPF,agentic ui generator
 position: 1
 ---
 
-# Getting Started with Telerik WPF MCP Server
+# Getting Started with the Telerik WPF Agentic UI Generator
 
-The Telerik WPF [Model Context Protocol (MCP) Server](https://modelcontextprotocol.io/introduction) enhances your artificial intelligence (AI)-powered development experience by providing specialized context about Telerik UI for WPF components.
+The Telerik WPF [Model Context Protocol (MCP) Server](https://modelcontextprotocol.io/introduction) delivers the Agentic UI Generator to MCP-compatible AI clients, providing specialized context about Telerik UI for WPF components.
 
-This MCP server enables AI-powered integrated development environments (IDEs) and tools to generate more accurate, tailored code that uses [Telerik UI for WPF components](https://www.telerik.com/WPF-ui) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
+The Agentic UI Generator uses this MCP server to help AI-powered integrated development environments (IDEs) and tools generate more accurate, tailored code that uses [Telerik UI for WPF components](https://www.telerik.com/WPF-ui) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
 
 ## How to Install the Telerik WPF MCP Server
 
@@ -159,7 +159,7 @@ You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (see Lice
 
 After saving the file, restart Visual Studio and enable the `telerik-wpf-assistant` tool in the [Visual Studio Copilot Chat tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
-![Telerik UI for WPF AI Assistant MCP server setup in Visual Studio Copilot Chat tool selection](images/ai-mcp-server-0.png)
+![Telerik UI for WPF Agentic UI Generator setup in Visual Studio Copilot Chat tool selection](images/ai-mcp-server-0.png)
 
 ### Global Setup
 
@@ -169,7 +169,7 @@ To enable the server globally for all projects, add the `.mcp.json` file to your
 
 The `.mcp.json` file can be created and updated by using the [Telerik Visual Studio Extension]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) menu in Visual Studio.
 
-![Telerik UI for WPF AI Assistant Telerik Visual Studio Extension menu with MCP server configuration options](images/ai-mcp-server-1.png)
+![Telerik UI for WPF Agentic UI Generator Telerik Visual Studio Extension menu with MCP server configuration options](images/ai-mcp-server-1.png)
 
 The `Configure MCP Server Globally` option creates (or updates if existing) the global `%USERPROFILE%\.mcp.json` file and adds  the Telerik server entry.
 
@@ -217,11 +217,11 @@ After configuration and restart:
 2. Enable the `telerik-wpf-assistant` tool.
 3. Grant permissions when prompted (per session, workspace, or always).
 
-![Telerik UI for WPF AI Assistant Visual Studio Copilot Chat with the telerik-wpf-assistant tool enabled](images/ai-mcp-server-2.png)
+![Telerik UI for WPF Agentic UI Generator in Visual Studio Copilot Chat with the telerik-wpf-assistant tool enabled](images/ai-mcp-server-2.png)
 
 Start fresh sessions for unrelated prompts to avoid context pollution. You can check the Output pane of Visual Studio for diagnostics (select output from GitHub Copilot).
 
-![Telerik UI for WPF AI Assistant Visual Studio Output pane showing GitHub Copilot diagnostics](images/ai-mcp-server-3.png)
+![Telerik UI for WPF Agentic UI Generator Visual Studio Output pane showing GitHub Copilot diagnostics](images/ai-mcp-server-3.png)
 
 ## Troubleshooting
 
@@ -248,13 +248,13 @@ Begin prompts with any of these triggers to explicitly invoke the server:
    
 Grant permissions when prompted (per session, workspace, or always).
 
-![Telerik UI for WPF AI Assistant Visual Studio Copilot Chat with the telerik-wpf-assistant tool enabled](images/ai-mcp-server-2.png)
+![Telerik UI for WPF Agentic UI Generator in Visual Studio Copilot Chat with the telerik-wpf-assistant tool enabled](images/ai-mcp-server-2.png)
 
 Start fresh sessions for unrelated prompts to avoid context pollution.
 
 You can check the Output pane of Visual Studio for diagnostics information related to Copilot. To display the relevant information, select to show output from GitHub Copilot.
 
-![Telerik UI for WPF AI Assistant Visual Studio Output pane showing GitHub Copilot diagnostics](images/ai-mcp-server-3.png)
+![Telerik UI for WPF Agentic UI Generator Visual Studio Output pane showing GitHub Copilot diagnostics](images/ai-mcp-server-3.png)
 
 ## Sample Prompts
 
@@ -281,4 +281,4 @@ You can use the Telerik WPF MCP server with local large language models (LLMs):
 2. Use a bridge package like [the MCP-LLM Bridge project for Ollama](https://github.com/patruff/ollama-mcp-bridge).
 3. Connect your local model to the Telerik MCP server.
 
-This setup allows you to use the Telerik AI Coding Assistant without cloud-based AI models.
+This setup allows you to use the Telerik WPF Agentic UI Generator without cloud-based AI models.

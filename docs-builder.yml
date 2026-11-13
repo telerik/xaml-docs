@@ -43,9 +43,9 @@ ai-chat-prompt-suggestions:
   - "How to use the grid component in Telerik UI for WPF?"
 
 meta:
-    ai-assistant:
+    ai-tools:
         title: AI Tools
-        position: 7
+        position: 3
     knowledge-base:
         position: 10
         res_type: kb
@@ -1022,6 +1022,10 @@ meta:
         position: 11
         
 redirects:
+-
+    from: "^/controls/radexpressioneditor/changes-and-backward-compatibility/changes/?$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
 -
     from: "^/?$"
     to: "/introduction"
@@ -2500,7 +2504,7 @@ redirects:
     type: Permanent 
 -
     from: "^/ai-assistant/copilot-extension$"
-    to: "/ai-assistant/mcp-server"
+    to: "/ai-tools/getting-started"
     type: Permanent 
 -
     from: "^/controls/radbuttons/features/appearance$"
@@ -2520,9 +2524,8 @@ redirects:
     type: Permanent
 -
     from: "^/ai-assistant/mcp-server-as-a-nuget$"
-    to: "/ai-assistant/mcp-server"
+    to: "/ai-tools/getting-started"
     type: Permanent
-
 -
     from: "^/controls/radcontextmenu/changes-and-backwards-compatibility/(.*)$"
     to: "https://www.telerik.com/support/whats-new/wpf/release-history"
@@ -2610,4 +2613,12 @@ redirects:
 -
     from: "^/getting-started/licensing/(.*)$"
     to: "/installation/licensing/$1"
+    type: Permanent
+-
+    from: "^/ai-tools/ai-overview/?$"
+    to: "/ai-tools/overview"
+    type: Permanent
+-
+    from: "^/ai-tools/ai-mcp-server/?$"
+    to: "/ai-tools/getting-started"
     type: Permanent

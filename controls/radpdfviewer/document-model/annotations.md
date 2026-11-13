@@ -5,6 +5,7 @@ description: Check our &quot;Annotations&quot; documentation article for the Rad
 components: ["pdfviewer"]
 slug: radpdfviewer-document-model-annotations
 tags: annotations
+tag: updated
 published: True
 position: 2
 ---
@@ -24,6 +25,14 @@ RadPdfViewer supports link annotations, which means that if you open a PDF file 
 
 	__Using the HyperlinkClicked event to ask the customer if wants to open the hyperlink__
 	<snippet id='radpdfviewer-document-model-annotations-block_2-cs' />
+
+## Handling Hyperlink Requests Globally
+
+`RadPdfViewer` validates external URLs before launching them. The shared `HyperlinkManager.HyperlinkClicked` event adds a global handling point alongside the viewer-specific `HyperlinkClicked` event exposed through `FixedDocumentViewerBase` and `RadBookFixedDocumentViewer`.
+
+The viewer-specific event runs first. If its handler leaves `Handled` as `false`, the shared event runs next. Set `Handled` to `true` to cancel the default action, or set `IsTrustedUrl` to `true` to allow the default launch for a URL the validator would otherwise reject. The shared event arguments expose `Url`, `IsTrustedUrl`, and `Handled`. The `sender` identifies the originating viewer instance.
+
+Absolute HTTP, HTTPS, and mailto URLs can be trusted by default when they pass the validator's pattern and scheme checks. Unsubscribe from the static `HyperlinkManager.HyperlinkClicked` event when the handler owner has a shorter lifetime than the application. See [Handling hyperlink navigation in RadHyperlinkButton]({%slug radbuttons-features-hyperlink-button%}) for a shared-event code example.
 
 
 ## Accessing the Annotations Collection
@@ -54,3 +63,4 @@ The code above will scroll the document to bring the top-left corner of the thir
 
 ## See Also  
  * [RadFixedDocument]({%slug radpdfviewer-document-model-radfixeddocument%})
+ * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)

@@ -1,37 +1,55 @@
 ---
 title: Function Invocation
 page_title: Function Invocation
-description: Check our &quot;Function Invocation&quot; documentation article for the RadExpressionEditor {{ site.framework_name }} control.
+description: Learn how the WPF Expression Editor resolves built-in and registered custom functions and how function calls differ from member access.
 components: ["expressioneditor"]
 slug: radexpressioneditor-expressions-function-invocation
-tags: function,invocation
+tags: function,invocation,custom functions,allowlist
+tag: updated
 published: True
 position: 2
 ---
 
 # Function Invocation
 
-__RadExpressionEditor__ allows you to benefit from the built-in functions as well. So, you may easily invoke __Distinct([List])__ like: 
+The Expression Editor resolves calls to Telerik's built-in functions and registered custom functions. It does not discover and invoke arbitrary public methods automatically. The active `ExpressionFunctionContext` provides the registry.
 
-`“Distinct(Tasks)”`
+The default context includes Telerik's built-in functions. For example, call `Distinct` on an enumerable property:
 
-In this case __"Tasks"__ property should be of type __IEnumerable__. Distinct expression will return a list of the unique items in __"Tasks"__ collection. 
+`Distinct(Tasks)`
+
+The `Tasks` property must be an enumerable. The expression returns the distinct items in the collection.
 
 ![{{ site.framework_name }} RadExpressionEditor Distinct Expression](images/RadExpressionEditor_DistinctExpression.png)
 
-In the example above the __Result preview__ displays the count of the distinct values in the __"Tasks"__ collection. 
+To call a custom method, register it through the active `ExpressionFunctionContext.FunctionRegistry`. The registry identifies the target type, function name, and exact parameter types. Register the method before parsing or evaluating the expression. See [Custom Categories and Functions]({%slug radexpressioneditor-expressions-custom-functions-and-categories%}) for a custom context example and migration details.
 
-However, it is also possible to call methods on values in the expression. For instance, the expression __“StartingDate.AddDays(3)”__ calls the __AddDays()__ method of the __DateTime__ value of the __StartingDate__ property:
+__Parsing an Expression That Uses a Registered Function__
 
-![{{ site.framework_name }} RadExpressionEditor AddDays Method](images/RadExpressionEditor_CallMethods.png)
+```C#
+using Telerik.Expressions;
 
-In this case the __Result preview__ displays the result after the method has been executed.
- 
-In case of __Double__ constant, you could use the exponential value: 0.0E+2. As a __Decimal__ constant you could use '0.0'. 
+ExpressionFunctionContext.Context = new CustomExpressionFunctionContext();
 
-It is not possible to remove any of the built-in functions or constants in RadExpressionEditor. However, if you would like to hide some of the fields of the item in the editor, you need to use the [Display DataAnnotations](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute(v=VS.95).aspx) attribute with AutoGenerateField = false on every property of the class that you wish to hide.
+using (RadExpressionParser parser = new RadExpressionParser())
+{
+	parser.Parse("Discount(1000.0, 0.15)");
+}
+```
 
-Manually adding user-defined functions is currently not supported. 
+This example uses the `CustomExpressionFunctionContext` defined in [Custom Categories and Functions]({%slug radexpressioneditor-expressions-custom-functions-and-categories%}). Set the context before parsing so the parser resolves the registered function.
 
-#See also  
+The expression `StartingDate.AddDays(3)` does not call `DateTime.AddDays` unless that exact receiver method is registered. Expression function allowlisting controls calls only; expressions can still access members and properties.
+
+The Expression Editor builds its function list from the active expression engine. The preview uses the same engine to resolve function calls. Set `ExpressionFunctionContext.Context` before initializing the editor so both use the intended registry. Use the Expression Editor view model to customize displayed categories and function items.
+
+Use `ExpressionFunctionRegistry.CreateWithBuiltInFunctions()` to retain the built-in functions when you register custom functions. Use `ExpressionFunctionRegistry.CreateEmpty()` to start without functions and register only the functions that your expressions need.
+
+For a `Double` constant, you can use exponential notation such as `0.0E+2`. Use `0.0` for a `Decimal` constant.
+
+## See Also
+
 * [Constants]({%slug radexpressioneditor-expressions-constants%})
+* [Member Access]({%slug radexpressioneditor-expressions-member-access%})
+* [Expression Parser]({%slug radexpressioneditor-expression-parser%})
+* [Custom Categories and Functions]({%slug radexpressioneditor-expressions-custom-functions-and-categories%})

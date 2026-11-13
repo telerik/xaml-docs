@@ -5,6 +5,7 @@ description: Check out the documentation article for the RadExpressionParser {{ 
 components: ["expressioneditor"]
 slug: radexpressioneditor-expression-parser
 tags: expression, parser
+tag: updated
 published: True
 position: 0
 ---
@@ -35,6 +36,12 @@ You can use the **Parse** method to try to directly parse the expression and ret
 __Example 1: Using the Parse method__
 
 <snippet id='radexpressioneditor-expressions-expression-parser-example_1_using_the_parse_method-cs' />
+
+## Function Calls
+
+`Parse`, `TryParse`, and both `ParseAsync` overloads use `ExpressionFunctionContext.Context.FunctionRegistry` to resolve function calls. The default context includes Telerik's built-in functions. Register a custom function's exact method signature in the active context before parsing or evaluating an expression.
+
+Expressions can call only built-in functions and explicitly registered custom functions. The allowlist does not remove access to expression members or properties. For registration and migration details, see [Custom Categories and Functions]({%slug radexpressioneditor-expressions-custom-functions-and-categories%}) and [Function Invocation]({%slug radexpressioneditor-expressions-function-invocation%}).
 
 
 ## ParseAsync

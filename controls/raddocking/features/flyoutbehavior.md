@@ -1,7 +1,7 @@
 ---
 title: FlyoutBehavior
 page_title: FlyoutBehavior
-description: Check our &quot;FlyoutBehavior&quot; documentation article for the RadDocking {{ site.framework_name }} control.
+description: Configure RadDocking flyouts for unpinned panes, choose hover or click activation, and customize flyout behavior and minimum size.
 components: ["docking"]
 slug: raddocking-features-panes-flyoutbehavior
 tags: flyoutbehavior
@@ -11,53 +11,61 @@ position: 7
 
 # FlyoutBehavior
 
-The flyout behavior controls how and when the flyout of the __auto hide area__ is opened and closed. RadDocking comes with two implementations of the __IFlyoutBehavior__ - __ClickFlyoutBehavior__ and __HoverFlyoutBehavior__.
+`RadDocking` uses flyout behavior to control when panes in the auto-hide area open and close.
+
+To use flyouts, first [unpin a pane]({%slug raddocking-panes-pinned-unpinned-panes%}) with its pin/unpin button or set its `IsPinned` property to `False`. When hidden, an unpinned pane leaves its tab header in the *auto-hide area*.
+
+`RadDocking` provides two implementations of `IFlyoutBehavior`: `HoverFlyoutBehavior` (the default) and `ClickFlyoutBehavior`.
 
 ## HoverFlyoutBehavior
 
-This is the default behavior. It opens the flyout on hover (mouse over) or activation of a pane inside the auto hide area. The flyout closes when the mouse leaves it.
+`HoverFlyoutBehavior` is the default behavior. It opens the flyout when you hover over an unpinned pane's tab header or activate the pane. The flyout closes when the mouse leaves it.
 
-![RadDocking with HoverFlyoutBehavior](images/raddocking-features-panes-flyoutbehavior-0.gif).
+The following animation illustrates the default hover behavior for an unpinned pane.
+
+![Unpinned pane opening on hover and closing when the mouse leaves](images/raddocking-features-panes-flyoutbehavior-0.gif)
 
 ## ClickFlyoutBehavior
 
-It opens the flyout on click or activation of a pane inside the auto hide area. The flyout closes on second click on the pane or when the pane gets deactived.
+`ClickFlyoutBehavior` opens the flyout when you click an unpinned pane's tab header or activate the pane. The flyout closes when you click the tab header again or when the pane is deactivated.
 
-![RadDocking with ClickFlyoutBehavior](images/raddocking-features-panes-flyoutbehavior-1.gif).
+The following animation illustrates click behavior for an unpinned pane.
+
+![Unpinned pane opening and closing with click activation](images/raddocking-features-panes-flyoutbehavior-1.gif)
 
 ## Setting Flyout Behavior
 
-To set or get the current flyout behavior use the __FlyoutBehavior__ property of RadDocking.
+To set or get the current flyout behavior, use the `FlyoutBehavior` property of `RadDocking`.
 
-__Example 1: Setting flyout behavior__
+**Example 1: Setting flyout behavior**
 <snippet id='raddocking-features-flyoutbehavior-example_1_setting_flyout_behavior-xaml' />
 
 
 ## Custom Flyout Behavior
 
-To create a custom flyout behavior, implement the __IFlyoutBehavior__ interface. The interface requires the following methods to be implemented:
+To create a custom flyout behavior, implement the `IFlyoutBehavior` interface. The interface requires the following methods to be implemented:
 
-* __OnClosingTimerTimeout__: Called when the time of the close timer is up. Commonly the close animation is started here. The close timer is started by calling the __StartCloseTimer__ method of the __IFlyoutHost__.
+* `OnClosingTimerTimeout`&mdash;Called when the time of the close timer is up. Commonly the close animation is started here. The close timer is started by calling the `StartCloseTimer` method of the `IFlyoutHost`.
 
-* __OnMouseEnter__: Called when the mouse enters a RadPane.
+* `OnMouseEnter`&mdash;Called when the mouse enters a `RadPane`.
 
-* __OnMouseLeave__: Called when the mouse leaves a RadPane.
+* `OnMouseLeave`&mdash;Called when the mouse leaves a `RadPane`.
 
-* __OnOpeningTimerTimeout__: Called when the time of the open timer is up. Commonly the open animation is started here. The open timer is started by calling the __StartOpenTimer__ method of the __IFlyoutHost__.
+* `OnOpeningTimerTimeout`&mdash;Called when the time of the open timer is up. Commonly the open animation is started here. The open timer is started by calling the `StartOpenTimer` method of the `IFlyoutHost`.
 
-* __OnPaneActivated__: Called when a RadPane is being activated.
+* `OnPaneActivated`&mdash;Called when a `RadPane` is being activated.
 
-* __OnPaneDeactivated__: Called when a RadPane is being deactivated.
+* `OnPaneDeactivated`&mdash;Called when a `RadPane` is being deactivated.
 
-* __OnPaneMouseLeftButtonDown__: This method is called when a pane receives the MouseLeftButtonDown event (i.e. when the user clicks it).
+* `OnPaneMouseLeftButtonDown`&mdash;Called when a pane receives the `MouseLeftButtonDown` event (when you click it).
 
-The following example shows how to implement a __custom behavior__ that opens the flyout on click and animates the opening and closing.
+The following example shows how to implement a custom behavior that opens the flyout on click and animates the opening and closing.
 
-__Example 2: Custom flyout behavior__
+**Example 2: Custom flyout behavior**
 <snippet id='raddocking-features-flyoutbehavior-example_2_custom_flyout_behavior-cs' />
 
 
-__Example 3: Setting the custom flyout behavior__
+**Example 3: Setting the custom flyout behavior**
 <snippet id='raddocking-features-flyoutbehavior-example_3_setting_the_custom_flyout_behavior-xaml' />
 
 
@@ -65,8 +73,12 @@ __Example 3: Setting the custom flyout behavior__
 
 ## Flyout Min Length
 
-The flyout popup element has a default minimum length of 50px. To change this, set the __FlyoutMinLength__ property of RadDocking. The property value applies to the width of the left and right auto-hide area flyouts and to the height of the top and bottom auto-hide area flyouts. 
+The flyout popup element has a default minimum length of 50px. To change this, set the `FlyoutMinLength` property of `RadDocking`. The property value applies to the width of the left and right auto-hide area flyouts. It applies to the height of the top and bottom auto-hide area flyouts.
 
-__Example 2: Setting the minimum size of the flyout popup__
+**Example 4: Setting the minimum size of the flyout popup**
 <snippet id='raddocking-features-flyoutbehavior-example_2_setting_the_minimum_size_of_the_flyout_popup-xaml' />
 
+## See Also
+
+* [Pinning and Unpinning Panes]({%slug raddocking-panes-pinned-unpinned-panes%})
+* [RadPane Structure and States]({%slug raddocking-panes-radpane%})

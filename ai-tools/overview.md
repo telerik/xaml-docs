@@ -5,7 +5,7 @@ description: Overview of the Telerik UI for WPF Agentic UI Generator and MCP Ser
 components: ["general"]
 slug: ai-tools-overview
 tags: telerik,wpf,ai,coding assistant,mcp,mcp server,license,perpetual license,subscription license,trial,code generation,usage limits,intended use
-tag: new
+tag: updated
 position: 0
 ---
 

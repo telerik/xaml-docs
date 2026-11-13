@@ -13,9 +13,7 @@ position: 25
 
 This tutorial shows how to expand and select an item in `RadTreeView` with load on demand enabled (`IsLoadOnDemandEnabled` set to `True`).
 
-{% if site.site_name == 'WPF' %}
 Before you begin, configure a project with Progress® Telerik® UI for WPF. Follow the [TreeView getting started guide]({%slug radtreeview-getting-started%}) for references, licensing, the XAML namespace, and theme setup.
-{% endif %}
 
 The example uses a data-bound `RadTreeView` and loads child items through the data model rather than the built-in `LoadOnDemand` event.
 
@@ -25,16 +23,7 @@ Follow these steps to define the data hierarchy and navigate to an item:
 
 1. Declare the data-bound `RadTreeView`:
 
-    {% if site.site_name == 'Silverlight' %}
-
-    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_1-xaml' />
-
-    {% endif %}
-    {% if site.site_name == 'WPF' %}
-
     <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_2-xaml' />
-
-    {% endif %}
 
 2. Define the `DataItem` class for the items in the data source:
 

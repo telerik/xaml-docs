@@ -11,7 +11,7 @@ position: 4
 
 # Breaking Changes
 
-This article lists behavior changes that can require updates to existing __RadExpressionEditor__ applications.
+This article lists behavior changes that can require updates to existing `RadExpressionEditor` applications.
 
 ## Registering Functions for Expression Evaluation
 

@@ -20,11 +20,11 @@ The event arguments provide the requested URL through `Url`, the `Handled` flag,
 
 The following controls raise `HyperlinkManager.HyperlinkClicked`:
 
-* __RadHyperlinkButton__.
-* __RadGridView__ when a `GridViewHyperlinkColumn` or `GridViewDynamicHyperlinkColumn` link is clicked.
-* __RadPdfViewer__ when a document link is clicked.
-* __RadRichTextBox__ when a document hyperlink is clicked.
-* __RadSpreadsheet__ when a worksheet hyperlink is clicked.
+* `RadHyperlinkButton`.
+* `RadGridView` when a `GridViewHyperlinkColumn` or `GridViewDynamicHyperlinkColumn` link is clicked.
+* `RadPdfViewer` when a document link is clicked.
+* `RadRichTextBox` when a document hyperlink is clicked.
+* `RadSpreadsheet` when a worksheet hyperlink is clicked.
 
 ## How Can I Cancel or Filter Navigation?
 

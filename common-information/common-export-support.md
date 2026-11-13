@@ -96,51 +96,10 @@ Example 1 contains code-behind fragments that export an existing `RadGauge` name
 
 The fragments assume that the gauge and its assembly references are already configured. For gauge setup, see [Creating a Radial Gauge]({%slug radgauge-getting-started-creating-radial-gauge%}).
 
-{% if site.site_name == 'WPF' %}
 For C#, add `using Microsoft.Win32;`, `using System.IO;`, and `using System.Windows;` before the code-behind class. For VB.NET, add `Imports Microsoft.Win32`, `Imports System.IO`, and `Imports System.Windows` at the top of the file.
-{% endif %}
 
 >important The control must be measured and arranged before image export. Otherwise, unexpected results may occur.
 
-
-{% if site.site_name == 'Silverlight' %}
-**Example 1: Export Control to PNG**
-
-```C#
-	 private void Button_Click(object sender, RoutedEventArgs e)
-	  {
-		string extension = "png";
-		SaveFileDialog dialog = new SaveFileDialog()
-		{
-			DefaultExt = extension,
-			Filter = "Png (*.png)|*.png"
-		};
-	
-		if (dialog.ShowDialog() == true)
-		{
-			using (Stream stream = dialog.OpenFile())
-			{
-				Telerik.Windows.Media.Imaging.ExportExtensions.ExportToImage(
-					 this.radGauge, stream, new Telerik.Windows.Media.Imaging.PngBitmapEncoder());
-			}
-		}
-	}
-```
-```VB.NET
-	 Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		Dim extension As String = "png"
-		Dim dialog As New SaveFileDialog() With {.DefaultExt = extension, .Filter = "Png (*.png)|*.png"}
-	
-		If dialog.ShowDialog() = True Then
-			Using stream As Stream = dialog.OpenFile()
-				Telerik.Windows.Media.Imaging.ExportExtensions.ExportToImage(Me.radGauge, stream, New Telerik.Windows.Media.Imaging.PngBitmapEncoder())
-			End Using
-		End If
-	 End Sub
-```
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
 **Example 1: Export Control to PNG**
 
 ```C#
@@ -175,18 +134,11 @@ For C#, add `using Microsoft.Win32;`, `using System.IO;`, and `using System.Wind
 		End If
 	 End Sub
 ```
-{% endif %}
 
 ## See Also
 
 * [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)
-
 * [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)
-
-{% if site.site_name == 'WPF' %}
 * [RadWordsProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview)
-{%endif%}
-
 * [RadGridView Export]({%slug gridview-export%})
-
 * [Export UI Element to PDF](https://github.com/telerik/xaml-sdk/tree/master/PdfProcessing/ExportUIElement)

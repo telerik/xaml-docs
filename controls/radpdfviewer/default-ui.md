@@ -1,7 +1,7 @@
 ---
 title: Default UI
 page_title: Default UI
-description: Check our &quot;Default UI&quot; documentation article for the RadPdfViewer {{ site.framework_name }} control.
+description: Learn how to add the default UI to the WPF RadPdfViewer, choose dialogs and navigation panels, and customize the toolbar and context menu.
 components: ["pdfviewer"]
 slug: radpdfviewer-default-ui
 tags: default, ui, radpdfviewertoolbar
@@ -11,74 +11,95 @@ position: 2
 
 # Default UI
 
-RadPdfViewer comes with pre-defined UI that is automatically wired with all of the commands provided by the control. **RadPdfViewerToolbar** compliments **RadPdfViewer**, with convenient toolbar exposing the variety of features. With single line of XAML you get all the UI expected from a standard PDF viewing application, including page navigation, [zoom]({%slug radpdfviewer-zoom-in-or-out-a-radfixeddocument%}) and page control, open/save/print buttons. When updating from version to version, you'll automatically get UI for all the new commands we expose. **RadPdfViewerNavigationPane** takes care of visualizing different navigation panels, including the [Bookmarks]({%slug radpdfviewer-features-bookmarks%}) of the PDF document.
+Use the predefined user interface (UI) of `RadPdfViewer` to add PDF viewing commands to your application. `RadPdfViewerToolBar` provides page navigation, [zoom]({%slug radpdfviewer-zoom-in-or-out-a-radfixeddocument%}), and buttons to open, save, and print documents.
 
->caption RadPdfViewer with default UI, RadPdfViewerNavigationPane and context menu
+`RadPdfViewerNavigationPane` displays navigation panels, including the document's [bookmarks]({%slug radpdfviewer-features-bookmarks%}). Add the components you need with the Visual Studio designer, then customize the toolbar and context menu.
 
-![{{ site.framework_name }} RadPdfViewer RadPdfViewer with default UI, RadPdfViewerNavigationPane and context menu](images/RadPdfViewer_defaultUI_00.png)
+>caption RadPdfViewer with default UI, RadPdfViewerNavigationPane, and context menu
 
-## Add RadPdfViewer with Predefined UI to Your Application
+![PDF document with a toolbar, navigation pane, and context menu](images/RadPdfViewer_defaultUI_00.png)
 
-After dragging the RadPdfViewer control from the toolbox to the designer of Visual Studio, you will be prompted to choose the UI components you would like to use in your application. The available options are as follows:
+## Adding RadPdfViewer with Predefined UI to Your Application
 
->This functionality is available since R1 2018.
+Before you begin, configure your Windows Presentation Foundation (WPF) project with the references described in [Getting Started with RadPdfViewer]({%slug radpdfviewer-getting-started%}). Include the dialogs and additional UI references, not only the minimal viewer references. For NuGet applications that use Xaml binaries, install `Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml`. For NoXaml applications, follow the package and theme guidance in the getting-started article.
 
-* **Add ToolBar**: When checked, the toolbar containing different functionalities for RadPdfViewer will be added. Otherwise, only the PdfViewer control will be added without any additional UI.
+>note The designer's component-selection dialog is available starting with R1 2018.
 
-* **Add Signature Panel**: Ensure this option is checked when you would like RadPdfViewer to show the results of validating a document which contains digital signatures. More information about that functionality is available in the [Digital Signature]({%slug radpdfviewer-features-digital-signature%}) topic.
+To add the viewer and choose its UI components:
 
-* **Add Context Menu**: Determines whether the [Context Menu]({%slug radpdfviewer-context-menu%}) of RadPdfViewer should be added to the UI.
+1. Drag `RadPdfViewer` from the Visual Studio **Toolbox** to the XAML (Extensible Application Markup Language) designer.
+2. Select the components you need in the component-selection dialog and select **OK** to generate the XAML.
 
-* **Add Find Dialog**: Determines whether the [Find Dialog]({%slug radpdfviewer-find-dialog%}) of RadPdfViewer should be added to the UI.
+The dialog provides the following options:
 
-* **Add Signature Properties Dialog**: Determines whether the [Signature Properties Dialog]({%slug radpdfviewer-features-digital-signature%}#using-signaturepropertiesdialog) of RadPdfViewer should be added to the UI.
+* **Add ToolBar**&mdash;Adds `RadPdfViewerToolBar` with PDF viewing commands. Clear this option to omit the toolbar.
 
-* **Add Sign Signature Dialog**: Determines whether the [Sign Signature Dialog]({%slug radpdfviewer-features-digital-signature%}#signing) of RadPdfViewer should be added to the UI.
+* **Add Signature Panel**&mdash;Adds a panel that shows validation results for documents with [digital signatures]({%slug radpdfviewer-features-digital-signature%}).
 
-* **Add Navigation Pane**: Determines whether the RadPdfViewerNavigationPane should be added to the UI to show  the bookmarks of a PDF document. 
+* **Add Context Menu**&mdash;Adds the viewer's [context menu]({%slug radpdfviewer-context-menu%}).
+
+* **Add Find Dialog**&mdash;Adds the **[Find Dialog]({%slug radpdfviewer-find-dialog%})** for document searches.
+
+* **Add Signature Properties Dialog**&mdash;Adds the **[Signature Properties Dialog]({%slug radpdfviewer-features-digital-signature%}#using-signaturepropertiesdialog)**.
+
+* **Add Sign Signature Dialog**&mdash;Adds the **[Sign Signature Dialog]({%slug radpdfviewer-features-digital-signature%}#signing)**.
+
+* **Add Navigation Pane**&mdash;Adds `RadPdfViewerNavigationPane` to display the document's bookmarks.
 
 >caption Choose the components you would like to use
 
-![{{ site.framework_name }} RadPdfViewer Choose the components you would like to use](images/RadPdfViewer_defaultUI_01.png)
+![Component-selection dialog with checkboxes for the toolbar, panels, context menu, and dialogs](images/RadPdfViewer_defaultUI_01.png)
 
-**Example 1** shows how the XAML generated after enabling all options looks like.
+**Example 1** shows the XAML generated when you select all options.
 
-__[XAML] Example 1: Default UI__
+**[XAML] Example 1: Default UI**
 
 <snippet id='radpdfviewer-default-ui-block_1-xaml' />
  
 ## Customizing the Default UI
 
+Use the toolbar properties to show or hide existing buttons and sections. For custom buttons or layout changes, replace the toolbar with editable XAML.
+
+For project prerequisites, see [Getting Started with RadPdfViewer]({%slug radpdfviewer-getting-started%}).
+
 ### Adding and Removing Buttons and Sections from RadPdfViewerToolBar
 
-**RadPdfViewerToolBar** exposes several properties that enable you to add or remove parts of the UI with a single click. A list of all the available properties and their values you can find in the **Properties** window of Visual Studio.
+`RadPdfViewerToolBar` exposes properties that show or hide parts of its UI. Select the toolbar in the Visual Studio designer and open the **Properties** window to find the available options.
 
->caption Choose the components you would like to use
+>caption Toolbar customization options in the Visual Studio Properties window
 
-![{{ site.framework_name }} RadPdfViewer Choose the components you would like to use](images/RadPdfViewer_defaultUI_02.png)
+![Checkboxes for showing or hiding RadPdfViewerToolBar buttons and sections](images/RadPdfViewer_defaultUI_02.png)
 
-The default value for all of the ToolBar Customization options is `true`. Unchecking an option results in setting the corresponding property in XAML to `false`. **Example 2** shows how these properties look like in XAML.
+The default value for all of the **ToolBar Customization** options is `true`. Clear an option to set the corresponding property in XAML to `false`. **Example 2** shows these properties in XAML.
 
-#### [XAML] Example 2: Using the properties of RadPdfViewerToolBar
+**[XAML] Example 2: Using the properties of RadPdfViewerToolBar**
 
 <snippet id='radpdfviewer-default-ui-block_2-xaml' />
 
 
 ### Customizing the Template of RadPdfViewerToolBar
 
-When you need to make a more complicated change to the toolbar besides adding and removing buttons, for example, adding a new button with custom functionality, you can extract the template of **RadPdfViewerToolBar**. This can be achieved through the **Replace RadPdfViewerToolBar with Editable XAML** option of the Visual Studio Designer's context menu.
+To add a custom button or change the toolbar layout, replace `RadPdfViewerToolBar` with editable XAML:
+
+1. Right-click `RadPdfViewerToolBar` in the Visual Studio designer.
+2. Select **Replace RadPdfViewerToolBar with Editable XAML** from the context menu.
 
 >caption Replace RadPdfViewerToolBar with editable XAML option of the Visual Studio designer's context menu
 
-![{{ site.framework_name }} RadPdfViewer Replace RadPdfViewerToolBar with Editable XAML option of the Visual Studio Designer's context menu](images/RadPdfViewer_defaultUI_03.png)
+![Designer context menu command for replacing the PDF viewer toolbar with editable markup](images/RadPdfViewer_defaultUI_03.png)
 
-> Note that in this scenario, the RadPdfViewerToolBar is replaced by its XAML code. Doing this, you will not be able to receive updates for the control and will not be able to take advantage of the styling functionalities. 
+>important This operation replaces the `RadPdfViewerToolBar` instance with its generated XAML. The extracted markup no longer receives the toolbar control's automatic UI updates or styling support. Use the toolbar properties instead when you only need to show or hide existing buttons.
 
 
 
 ### Customizing the Template of the Default Context Menu
 
-Extracting the template of the default context menu can be done using a pretty similar approach to the one described for RadPdfViewerToolBar. Just right-click on RadPdfViewer in the designer of Visual Studio and choose **Replace Default Context Menu with Editable XAML**.
+To edit the default context menu's XAML:
+
+1. Right-click `RadPdfViewer` in the Visual Studio designer.
+2. Select **Replace Default Context Menu with Editable XAML** from the context menu.
+
+For context-menu configuration details, see the [context menu documentation]({%slug radpdfviewer-context-menu%}).
 
 ## See Also
 

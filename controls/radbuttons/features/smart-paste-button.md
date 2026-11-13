@@ -7,7 +7,6 @@ slug: radbuttons-features-smart-paste-button
 tags: smart-paste,button
 published: True
 position: 5
-tag: new
 ---
 
 # Smart Paste Button

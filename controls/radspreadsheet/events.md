@@ -5,6 +5,7 @@ description: Check our &quot;Events&quot; documentation article for the RadSprea
 components: ["spreadsheet"]
 slug: radspreadsheet-events
 tags: events
+tag: updated
 published: True
 position: 7
 ---

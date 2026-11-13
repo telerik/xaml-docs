@@ -5,6 +5,7 @@ description: RadHyperlink Button.
 components: ["buttons"]
 slug: radbuttons-features-hyperlink-button
 tags: hyperlink,button
+tag: updated
 published: True
 position: 5
 ---

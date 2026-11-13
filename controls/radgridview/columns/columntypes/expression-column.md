@@ -5,6 +5,7 @@ description: Find out how you can display various calculations in the grid itsel
 components: ["gridview"]
 slug: gridview-expression-column
 tags: expression,column
+tag: updated
 published: True
 position: 7
 ---

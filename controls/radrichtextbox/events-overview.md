@@ -5,6 +5,7 @@ description: Check our &quot;Events&quot; documentation article for the RadRichT
 components: ["richtextbox"]
 slug: radrichtextbox-events-overview
 tags: events
+tag: updated
 published: True
 position: 14
 ---

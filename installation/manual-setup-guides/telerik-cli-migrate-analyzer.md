@@ -7,7 +7,6 @@ slug: telerik-cli-migrate-analyzer
 tags: telerik,cli,migrate,analyze,breaking changes,upgrade,upgrading,wpf,command line
 published: True
 position: 5
-tag: new
 ---
 
 # Detecting Breaking Changes with the Telerik CLI migrate Command

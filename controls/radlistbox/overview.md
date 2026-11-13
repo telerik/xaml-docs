@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadListBox {{ site.framework_name }} control.
+description: Explore WPF RadListBox selection, autocomplete, keyboard support, drag-and-drop configuration, themes, and links to setup and data binding.
 components: ["listbox"]
 slug: radlistbox-overview
 tags: overview
@@ -12,49 +12,55 @@ CTAControlName: RadListBox
 
 # {{ site.framework_name }} ListBox Overview
 
-Thank you for choosing Telerik __RadListBox__!
+`RadListBox`, part of Progress® Telerik® UI for WPF, displays a list of items from which users can choose.
 
-__RadListBox__ is a {{ site.framework_name }} control used to display a list of items from which the user can choose. The control has a number of advanced features like multiple selection, autocomplete, keyboard support, drag and drop, as well as rich customization capabilities.
+The control supports multiple selection, autocomplete, keyboard shortcuts, drag and drop, and customization. To set up the control, follow the [RadListBox Getting Started guide]({%slug radlistbox-getting-started%}).
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![Rad List Box Overview 02](images/RadListBox_Overview_02_WPF.png)
+>caption `RadListBox` displaying a list of Telerik controls
+
+![List of Telerik controls with RadWindow selected](images/RadListBox_Overview_02_WPF.png)
 
 ## Key Features:
 
-* __Selection__: RadListBox provides three selection modes - Single, Multiple and Extended. Read more about this in the [Selection]({%slug radlistbox-features-selection%}) article.
+`RadListBox` provides the following features:
 
-* __AutoComplete__: When the control is focused, the first matching item is selected while the user is typing. Read more about this in the [Autocomplete]({%slug radlistbox-features-autocomplete%}) article.
+* Selection&mdash;`RadListBox` provides three selection modes: `Single`, `Multiple`, and `Extended`. See the [Selection]({%slug radlistbox-features-selection%}) article.
 
-* __Drag and Drop__: Take advantage of the built-in drag and drop support to reorder items or move them from one RadListBox to another. Read more about this in the [Drag and Drop]({%slug radlistbox-features-dragdrop%}) section.
+* Autocomplete&mdash;When the control has focus, it selects the first matching item as you type. See the [Autocomplete]({%slug radlistbox-features-autocomplete%}) article.
 
-* __Keyboard Support__: RadListBox supports several keyboard shortcuts for performing the most common task. Read more about this in the [Keyboard Support]({%slug radlistbox-features-keyboard-support%}) article.
+* Drag and Drop&mdash;Configure drag-and-drop support to reorder items or move them between `RadListBox` controls. Statically declared items support reordering, but not transfer between controls. See the [Drag and Drop]({%slug radlistbox-features-dragdrop%}) article for configuration and limitations.
 
-* __Theming__: As any other control from the UI for {{ site.framework_name }} suite, RadListBox comes with different themes. Read more about this in the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section of the documentation. 
+* Keyboard Support&mdash;`RadListBox` supports keyboard shortcuts for common tasks. See the [Keyboard Support]({%slug radlistbox-features-keyboard-support%}) article.
 
->caution  If you are using [NoXaml binaries]({%slug implicit-styles-styling-the-controls%}), and you have custom Style targeting RadListBoxItem, you have to base the style on the default one of the control. Example 1 demonstrates this approach. __Example 1__ demonstrate this approach.
+* Theming&mdash;`RadListBox` supports different themes. See the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
 
-__Example 1: Implicit Style with BasedOn property set__
+>caution If you use [NoXaml binaries]({%slug implicit-styles-styling-the-controls%}) with a custom `Style` targeting `RadListBoxItem`, base it on the control's default style. Example 1 demonstrates this approach.
+
+**Example 1: Implicit Style with `BasedOn` property set**
 <snippet id='radlistbox-overview-block_1-cs' />
 
->tip Get started with the control with its [Getting Started]({%slug radlistbox-getting-started%}) help article that shows how to use it in a basic scenario.
+>tip Follow the [RadListBox Getting Started guide]({%slug radlistbox-getting-started%}) for a basic usage scenario.
 
-> Check out the control demos at [demos.telerik.com](https://demos.telerik.com/wpf/)
+Explore the [Telerik UI for WPF demos](https://demos.telerik.com/wpf/).
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources
 
+Use these resources for product information, support, and training:
+
 * [Telerik UI for WPF ListBox Homepage](https://www.telerik.com/products/wpf/listbox.aspx)
-* [Get Started with the Telerik UI for WPF ListBox]({%slug radlistbox-getting-started%})
 * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
-* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf)
 * [Telerik UI for WPF ListBox Forums](https://www.telerik.com/forums/wpf)
 * [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
 {% endif %}
 
 ## See Also
- * [Getting Started]({%slug radlistbox-getting-started%})
- * [Events]({%slug radlistbox-events%})
+
+* [RadListBox Data Binding]({%slug radlistbox-populating-with-data-binding-support-overview%})
+* [RadListBox Events]({%slug radlistbox-events%})

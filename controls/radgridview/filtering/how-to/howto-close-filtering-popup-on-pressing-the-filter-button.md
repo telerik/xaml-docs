@@ -1,7 +1,7 @@
 ---
 title: Close Filtering Popup on Pressing Filter Button
 page_title: Close Filtering Popup on Pressing Filter Button
-description: Get started with the filtering functionality of Telerik's {{ site.framework_name }} DataGrid and learn how to close filtering popup on pressing filter button.
+description: Learn how to close the RadGridView filtering popup when you click Filter by using a custom filtering control in Telerik UI for WPF.
 components: ["gridview"]
 slug: gridview-filtering-howto-close-filtering-popup-on-pressing-the-filter-button
 tags: close,filtering,popup,on,pressing,filter,button
@@ -11,28 +11,39 @@ position: 22
 
 # Close Filtering Popup on Pressing Filter Button
 
-In order to close filtering Popup on pressing the fitler button, you need to override the __OnApplyFilter__ method of FilteringControl.
+To close the `RadGridView` filtering popup when you click its **Filter** button, override `FilteringControl.OnApplyFilter` in a custom filtering control. This targets the button inside the popup, not the funnel button in the column header.
 
->important A demo on how to achieve the desired behavior is available in our [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/). The demo is labeled **"Close Filtering Popup"** and can also be found on GitHub - [CloseFilteringPopupFilterButton](https://github.com/telerik/xaml-sdk/tree/master/GridView/CloseFilteringPopupFilterButton).
+These examples assume an existing `RadGridView` with data and column definitions. For project setup, follow [Getting Started with RadGridView]({%slug gridview-getting-started2%}).
 
-__Example 1: Overriding OnApplyFilter method__
+For a complete application, see the [CloseFilteringPopupFilterButton SDK example on GitHub](https://github.com/telerik/xaml-sdk/tree/master/GridView/CloseFilteringPopupFilterButton).
+
+Create a class derived from `FilteringControl` and override `OnApplyFilter`, as shown in the following C# and VB.NET fragments.
+
+**Example 1: Overriding the `OnApplyFilter` method**
 <snippet id='radgridview-filtering-how-to-howto-close-filtering-popup-on-pressing-the-filter-button-example_1_overriding_onapplyfilter_method-cs' />
 
 <snippet id='radgridview-filtering-how-to-howto-close-filtering-popup-on-pressing-the-filter-button-example_1_overriding_onapplyfilter_method-vb' />
 
 
-Then you can apply it to a desired column like so:
+Assign the custom filtering control to the target column's `FilteringControl` property in your code-behind, after the grid's columns exist.
 
-__Example 2: Apply the Custom Filter to the column__
+**Example 2: Applying the custom filtering control to a column**
 <snippet id='radgridview-filtering-how-to-howto-close-filtering-popup-on-pressing-the-filter-button-example_2_apply_the_custom_filter_to_the_column-cs' />
 
 <snippet id='radgridview-filtering-how-to-howto-close-filtering-popup-on-pressing-the-filter-button-example_2_apply_the_custom_filter_to_the_column-vb' />
 
 
->In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should additionally apply a template. Please refer to the [Styling custom controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) section.
-The Style you should apply in XAML then is:
+>important If you use [NoXaml assemblies and implicit styles]({%slug styling-apperance-implicit-styles-overview%}), also apply a style to the derived control. Follow [Styling Custom Controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) for the required theme resources.
 
-__Example 3: Style targetting the custom control__
+The following XAML fragment shows a style for the custom filtering control.
+
+**Example 3: Styling the custom filtering control**
 
 <snippet id='radgridview-filtering-how-to-howto-close-filtering-popup-on-pressing-the-filter-button-example_3_style_targetting_the_custom_control-xaml' />
 
+To verify the result, open the target column's filtering popup, choose filter criteria, and click **Filter**. Confirm that the grid applies the filter and the popup closes.
+
+## See Also
+
+* [Basic RadGridView Filtering]({%slug gridview-filtering-basic%})
+* [Custom Filtering Controls]({%slug gridview-filtering-custom-filtering-controls%})

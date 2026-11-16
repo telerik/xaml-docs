@@ -7,7 +7,6 @@ slug: radgridview-ai-features
 tags: radgridview, ai, smart, grid, prompt, natural language, filter, sort, group, export, version, 2026 Q2, release
 published: True
 position: 6
-tag: new
 ---
 
 # AI Features

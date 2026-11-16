@@ -5,6 +5,7 @@ description: Check our &quot;Hyperlink&quot; documentation article for the RadRi
 components: ["richtextbox"]
 slug: radrichtextbox-features-document-elements-hyperlink
 tags: hyperlink
+tag: updated
 published: True
 ---
 
@@ -94,12 +95,18 @@ __Change the default hyperlink navigation mode__
 
 When a hyperlink is clicked, the `HyperlinkClicked` event of `RadRichTextBox` is raised. The sender of the event is the document element, which the user has clicked on, e.g. a `Span`, an `Image`, `InlineUIContainer`, etc. The event args provide the possibility to cancel or replace the navigation action. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecure address or from starting a local process.
 
-The default hyperlink navigation can be cancelled by setting the `Handled` property of the `HyperlinkClickedEventArgs` to `true` or `IsTrustedUrl` to `false`.
+Set `Handled` to `true` to cancel the default navigation. `HyperlinkClickedEventArgs` derives from `HyperlinkClickedEventArgsBase` and exposes the URL through `Url` (not `URL`), along with `IsTrustedUrl` and `Handled`. The `URL` to `Url` rename is a breaking API change; update code that reads `HyperlinkClickedEventArgs.URL`.
 
 __Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
 <snippet id='radrichtextbox-features-document-elements-hyperlink-block_10-cs' />
 
-With the 2024 Q4 release, the default navigation behavior of the hyperlinks is to automatically open only valid web or email addresses.
+The validator trusts absolute HTTP, HTTPS, and mailto URLs by default when they pass its pattern and scheme checks. Set `IsTrustedUrl` to `true` in an event handler to allow the default launch of a URL the validator would otherwise reject.
+
+## Handling Hyperlink Requests Globally
+
+RichTextBox already validates external URLs before launch; the shared event does not introduce that validation. The existing document- and editor-specific `HyperlinkClicked` handlers run before `HyperlinkManager.HyperlinkClicked`. The shared event runs if those handlers do not set `Handled` to `true`. Its event arguments expose `Url`, `IsTrustedUrl`, and `Handled`; its `sender` identifies the originating component.
+
+Set `Handled` to `true` in either event to cancel navigation. Use the shared event to handle hyperlink requests from multiple supported controls in one place. Because `HyperlinkManager.HyperlinkClicked` is static, unsubscribe when the handler owner has a shorter lifetime than the application. See [Handling hyperlink navigation in RadHyperlinkButton]({%slug radbuttons-features-hyperlink-button%}) for a shared-event example.
 
 ## Customizing the Hyperlink Visual
 
@@ -124,3 +131,4 @@ By default, when the users insert a hyperlink in RadRichTextBox, it is styled wi
  * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
  * [Span]({%slug radrichtextbox-features-document-elements-span%})
  * [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%})
+ * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)

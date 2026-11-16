@@ -1,7 +1,7 @@
 ---
 title: Expand and Select Item with Load on Demand Enabled RadTreeView
 page_title: Expand and Select Item with Load on Demand Enabled RadTreeView
-description: Check our &quot;Expand and Select Item with Load on Demand Enabled RadTreeView&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+description: Learn how to expand and select a RadTreeView item with load on demand enabled, using a data hierarchy and path-based navigation.
 components: ["treeview"]
 slug: radtreeview-howto-exapand-select-item-with-lod-enabled-treeview
 tags: expand,and,select,item,with,load,on,demand,enabled,radtreeview
@@ -11,48 +11,46 @@ position: 25
 
 # Expand and Select Item with Load on Demand Enabled RadTreeView
 
-This tutorial will demonstrate you how to __expand__ and __select__ an item when the __RadTreeView__ is in load on demand mode (__IsLoadOnDemandEnabled__ property is set to __True__).
+This tutorial shows how to expand and select an item in `RadTreeView` with load on demand enabled (`IsLoadOnDemandEnabled` set to `True`).
 
-For the purpose of this topic a __RadTreeView__ which is data bound to a business object will be used. The next several code snippets show you the __RadTreeView__ declaration and the business object structure.
+Before you begin, configure a project with Progress® Telerik® UI for WPF. Follow the [TreeView getting started guide]({%slug radtreeview-getting-started%}) for references, licensing, the XAML namespace, and theme setup.
 
-{% if site.site_name == 'Silverlight' %}
+The example uses a data-bound `RadTreeView` and loads child items through the data model rather than the built-in `LoadOnDemand` event.
 
+## Expand and Select an Item
 
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_1-xaml' />
+Follow these steps to define the data hierarchy and navigate to an item:
 
-{% endif %}
-{% if site.site_name == 'WPF' %}
+1. Declare the data-bound `RadTreeView`:
 
+    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_2-xaml' />
 
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_2-xaml' />
+2. Define the `DataItem` class for the items in the data source:
 
-{% endif %}
+    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_3-cs' />
+    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_4-vb' />
 
-The data source for the radtreeview will be consisted of __DataItems__, only.
+3. Create the initial data and set the `ItemsSource` property of the `RadTreeView`:
 
+    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_5-cs' />
 
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_3-cs' />
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_4-vb' />
+4. Implement load on demand in the getter of the `DataItem.Children` property:
 
-Set a __DataItem__ instance to the __ItemsSource__ property of the __RadTreeView__ and create some simple data like in the code snippet below.        
+    The load on demand feature displays an expander icon in front of each `RadTreeViewItem`. This example does not use the built-in `LoadOnDemand` event to load items. Instead, the `HierarchicalDataTemplate` binding evaluates the `Children` getter on load. The getter loads a fixed number of items when the `children` field is not yet initialized.
 
+    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_6-cs' />
+    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_7-vb' />
 
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_5-cs' />
+5. Implement the custom path-building logic for the [`BringPathIntoView()` method]({%slug radtreeview-features-treeviewitem-bring-into-view-support%}):
 
-The actual loading on demand of the business items can be implemented in the getter of the __Children__ property of the __DataItem__ class. The LoadOnDemand feature of the RadTreeView control is used to visualize the expander icon in the front of each RadTreeViewItem. We do not use the built-in LoadOnDemand event to load the business items into the control. Instead, the HierarchicalDataTemplate will trigger the getter of its ItemsSource property on load. For demonstration purposes, we will load a fixed number of business data every time the getter is triggered and the __children__ field is not yet instantiated.
+    For path matching, set Telerik's `TextSearch.TextPath` attached property to the data property used for each path segment. `BringPathIntoView()` traverses the data hierarchy and can bring an item into view before all item containers exist. Configure selection separately. For a selection-binding example, see [bringing an item into view and selecting it]({%slug radtreeview-how-to-bring-path-into-view%}).
 
+    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_8-cs' />
+    <snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_9-vb' />
 
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_6-cs' />
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_7-vb' />
+The following image shows the tree before and after navigation to **Item 2.3.1.4**.
 
-The next step is to implement the custom logic for creating the path in order to use the [BringPathIntoView()]({%slug radtreeview-features-treeviewitem-bring-into-view-support%}) method.
-
-
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_8-cs' />
-<snippet id='radtreeview-how-to-howto-exapand-select-item-with-lod-enabled-treeview-block_9-vb' />
-
-The final result after bringing *Item 2.3.1.4* should look like this
-![Rad Tree View How To Expand And Select Item](images/RadTreeView_HowTo_ExpandAndSelectItem.png)
+![Collapsed root items on the left and the expanded hierarchy with Item 2.3.1.4 selected on the right](images/RadTreeView_HowTo_ExpandAndSelectItem.png)
 
 ## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})

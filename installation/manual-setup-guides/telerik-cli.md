@@ -7,7 +7,6 @@ slug: telerik-cli
 tags: telerik,cli,command line,cli,dotnet tool,nuget,setup,install,create project,update,template,wpf,telerik,getting started,environment
 published: True
 position: 0
-tag: new
 ---
 
 # Setup and Installation with Telerik CLI

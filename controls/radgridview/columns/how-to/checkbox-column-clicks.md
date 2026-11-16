@@ -1,7 +1,7 @@
 ---
 title: Number of clicks in GridViewCheckBoxColumn
-page_title: Clicks in the CheckBox Column
-description: Check out how you can control the number of clicks needed to change the value of the CheckBox Column within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+page_title: Number of Clicks in GridViewCheckBoxColumn - RadGridView
+description: Configure one-click or two-click checkbox changes in Telerik UI for WPF RadGridView with edit triggers or an interactive cell template.
 components: ["gridview"]
 slug: gridview-checkbox-column-clicks
 tags: number,of,clicks,checkbox,column
@@ -11,58 +11,46 @@ position: 2
 
 # Number of clicks in the CheckBox column
 
-__PROBLEM__
+The `GridViewCheckBoxColumn` supports different click behaviors through its edit settings.
 
-If you have a __GridViewCheckBox__ column by default you need to click three times in order to change the value of the checkbox - the first click selects the current cell, the second enters edit mode and the last one will change the value.
+With the default settings (`AutoSelectOnEdit="False"` and `EditTriggers="Default"`), changing a checkbox takes three clicks when the cell is not current. The first click makes the cell current, the second enters edit mode, and the third toggles the checkbox.
 
-The following solutions will give you options to control the number of clicks needed to change the value of the checkbox column.
+If the cell is already current, the first click enters edit mode, so only two clicks are needed. The default edit triggers also include `F2` and text input.
 
-__SOLUTION__
+## Configuring Checkbox Edit Behavior
 
-##     First approach
+Choose a combination of `GridViewCheckBoxColumn` settings for the required click behavior:
 
-__2 clicks solution__
+- For two clicks, set `EditTriggers="CellClick"` and keep `AutoSelectOnEdit="False"`. The first click enters edit mode, and the second toggles the checkbox.
+- Alternatively, set `AutoSelectOnEdit="True"` and keep `EditTriggers="Default"`. From a cell that is not current, the first click makes it current. The second enters edit mode and toggles the checkbox.
+- For one click, set both `EditTriggers="CellClick"` and `AutoSelectOnEdit="True"`. The cell enters edit mode and toggles the checkbox on the same click.
 
-By configuring __EditTriggers="CellClick"__ property of GridViewCheckBoxColumn the cells will enter edit mode with a single click only. Now you will need one more click to change the value of the underlying checkbox.
+>important The `RadGridView` must have focus for the one-click edit behavior.
 
-__1 clicks solution__
+For details about when a cell enters edit mode, see [Editing Start Triggers]({%slug gridview-edittriggers%}).
 
-In addition to __EditTriggers="CellClick"__ property, you can set the __AutoSelectOnEdit="True"__ property of the column. This property will alter the checked state of the checkbox as soon as the cell enters edit mode, thus changing the value on a single click. Please note that the __GridView has to be focused__.
-
-This could be done in __XAML__ or in __code behind__ when the columns are auto generated:        
-
-
+Configure the column in XAML or in code-behind for auto-generated columns:
 
 <snippet id='radgridview-columns-how-to-checkbox-column-clicks-1_clicks_solution-xaml' />
-
-
-
-
 
 <snippet id='radgridview-columns-how-to-checkbox-column-clicks-1_clicks_solution-cs' />
 
 <snippet id='radgridview-columns-how-to-checkbox-column-clicks-1_clicks_solution-vb' />
 
+## Displaying an Interactive Checkbox in View Mode
 
-##     Second approach
+Use the `CellTemplate` of a `GridViewDataColumn` to display a WPF `CheckBox` that changes the bound value without entering edit mode.
 
-Another approach would be to leverage the __CellTemplate__ of GridViewDataColumn and put a checkbox in it:
-
-
+The following XAML column fragment belongs in an existing `RadGridView.Columns` collection. It assumes each row's data item exposes a writable `IsActive` boolean property. Declare `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"` on the containing XAML element, alongside the standard WPF presentation namespace:
 
 <snippet id='radgridview-columns-how-to-checkbox-column-clicks-1_clicks_solution-xaml' />
 
+The `CheckBox` uses a two-way binding to `IsActive`, so one click changes the property. It appears enabled in view mode, unlike the checkbox in a `GridViewCheckBoxColumn` before the cell enters edit mode.
 
-
-The CheckBox is two-way bound to the IsActive boolean property so with single click you change it. The benefit here is that the CheckBox looks enabled, because it is in the CellTemplate while in the first approach the CheckBox looks disabled (because the cells are not in edit mode yet). 
->The column is read-only, since this is a CheckBox with two-way binding and there is no need to enter the edit mode at all.
+>note The column is read-only to prevent cell editing. The `CheckBox` still updates `IsActive` through its two-way binding.
 
 ## See Also
 
- * [CheckBox Column]({%slug gridview-checkbox-column%}) 
- 
- * [Styling the CheckBoxColumn]({%slug gridview-columns-styling-checkboxcolumn%})
-
- * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
- 
-
+- [CheckBox Column]({%slug gridview-checkbox-column%})
+- [Styling the CheckBoxColumn]({%slug gridview-columns-styling-checkboxcolumn%})
+- [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})

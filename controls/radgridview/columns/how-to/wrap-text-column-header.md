@@ -1,7 +1,7 @@
 ---
 title: Wrap Text in Column Header
 page_title: Wrap Text in Column Header
-description: Check out how you can wrap the text of the column header and have a multi-line header within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+description: Learn how to wrap RadGridView column header text in Telerik UI for WPF with HeaderTextWrapping or a custom TextBlock header.
 components: ["gridview"]
 slug: gridview-howto-wrap-text-column-header
 tags: wrap,text,in,column,header
@@ -11,30 +11,36 @@ position: 8
 
 # Wrap the Text in the Column Header
 
-This article shows how you can wrap the text of the column header, i.e. to have a multi-line text in the header. The end result will look like this:
+Wrap column header text in `RadGridView` to display long headings on multiple lines. Use `HeaderTextWrapping` for text headers, or a `TextBlock` for custom header content.
+
+The following image shows a column header with text on multiple lines:
 
 ![Telerik UI for {{ site.framework_name }} RadGridView with wrapped multi-line text in a column header](images/gridview_how_to_multiline_header.png)
 
-### Solution 1
+The XAML examples assume an existing `RadGridView`. For project setup and required references, follow [Getting Started with RadGridView]({%slug gridview-getting-started2%}).
 
-As of __R2 2016__, the columns expose a **HeaderTextWrapping** property which can be used to set the wrapping of the column header cells.
+## Set Header Text Wrapping
 
+Use the column's `HeaderTextWrapping` property for text headers. This property is available starting with R2 2016 and avoids the need for a custom header element.
+
+Apply the header settings to a column in your existing `RadGridView`:
 
 <snippet id='radgridview-columns-how-to-wrap-text-column-header-block_1-xaml' />
 
+If the header stays on one line, check the column's `Width`. The default `SizeToHeader` sizing mode sizes the column to its header text. Set a fixed width that is narrower than the unwrapped heading to allow the text to wrap. See [Controlling Columns Width]({%slug gridview-setting-columns-width%}) for sizing options.
 
->More information about the headers' text properties which can be set on the columns can be found [here]({%slug gridview-columns-column-headers%}#text-properties).
+For alignment, trimming, and other header settings, see [Column Headers: Text Properties]({%slug gridview-columns-column-headers%}#text-properties).
 
-### Solution 2
+## Use a TextBlock Header
 
-We will take advantage of the fact that the __Header__ property of the GridView column is of type Object so we can put everything in it. In this case this would be a TextBlock which has a convenient property __TextWrapping__
+Use a `TextBlock` when you need custom header content. The column's `Header` property is of type `object`, so it accepts a `TextBlock` instead of a text value.
 
+Set the `TextBlock.TextWrapping` property on the element assigned to the column's `Header`:
 
 <snippet id='radgridview-columns-how-to-wrap-text-column-header-block_2-xaml' />
 
+>important If another control uses the column's `Header` as its content, do not reuse the same `TextBlock` instance. This includes the checkboxes in the [Control Panel]({%slug gridview-overview-controlpanel%}) example. Create a separate `TextBlock` or use a converter that returns only its `Text` value.
 
->important Please note that this approach can cause issues if you're binding the header to another control's content, for example, the Content of the CheckBoxes from the example in the [Control Panel]({%slug gridview-overview-controlpanel%}) article. In this case, you need to make sure that you're creating a copy of the TextBlock or use a converter to only access its Text property.
-
-## See also
+## See Also
  * [Column Headers]({%slug gridview-columns-column-headers%})
  * [Foreground color does not change in a custom header]({%slug gridview-troubleshooting-styling-custom-header%})

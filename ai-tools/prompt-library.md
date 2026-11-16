@@ -1,33 +1,33 @@
 ---
 title: Prompt Library
 page_title: Telerik UI for WPF Prompt Library
-description: Explore the collection of prompts that you can use with the Telerik UI for WPF AI Coding Assistant.
+description: Explore the collection of prompts that you can use with the Telerik UI for WPF Agentic UI Generator.
 components: ["general"]
-slug: ai-prompt-library
-tags: telerik,wpf,ai,coding assistant,prompt,library
+slug: ai-tool-prompt-library
+tags: telerik,wpf,ai,agentic ui generator,prompt,library
 position: 3
 ---
 
 # Telerik UI for WPF Prompt Library
 
-The prompts provided here are intended and optimized for use with the Telerik UI for WPF AI Coding Assistant [MCP Server]({%slug ai-mcp-server%}). They can help you kick start your app development and speed up the component configuration process.
+The prompts provided here are intended and optimized for use with the Telerik UI for WPF Agentic UI Generator [MCP Server]({%slug ai-tools-getting-started%}). They can help you kick start your app development and speed up the component configuration process.
 
 This collection of prompts is not exhaustive and the Telerik UI for WPF team is constantly working on adding more prompts to the library.
 
 ## How to Use the Prompts
 
-All prompts in this library target the [Telerik WPF MCP server]({%slug ai-mcp-server%}) via the `#telerikwpf` handle. Make sure that you have installed and enabled the MCP server before attempting to run the prompts.
+All prompts in this library target the [Telerik WPF MCP server]({%slug ai-tools-getting-started%}) via the `#telerikwpf` handle. Make sure that you have installed and enabled the MCP server before attempting to run the prompts.
 
 1. Browse the prompt library to find a prompt that suits your needs.
 2. Copy the prompt text (including the `#telerikwpf` handle).
-3. (Optional) Customize the prompt as needed for your specific use case but keep the `#telerikwpf` handle.<br/>When modifying the prompts, make sure the changes comply with the [recommendations]({%slug ai-overview%}#recommendations) for the AI Coding Assistant.
-4. Run the prompt against the [Telerik WPF MCP server]({%slug ai-mcp-server%}).
+3. (Optional) Customize the prompt as needed for your specific use case but keep the `#telerikwpf` handle.<br/>When modifying the prompts, make sure the changes comply with the [recommendations]({%slug ai-tools-overview%}#recommendations) for the Agentic UI Generator.
+4. Run the prompt against the [Telerik WPF MCP server]({%slug ai-tools-getting-started%}).
 
 >Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
 
 ## Component Specific Prompts
 
-This section provides prompt ideas for the [currently supported Telerik UI for WPF components]({%slug ai-overview%}#supported-components).
+This section provides prompt ideas for the [currently supported Telerik UI for WPF components]({%slug ai-tools-overview%}#supported-components).
 
 ### ListBox
 

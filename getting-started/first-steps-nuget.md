@@ -1,7 +1,7 @@
 ---
 title: First Steps
 page_title: Get Started with Telerik UI for WPF
-description: Learn how to create a WPF project, install Telerik UI for WPF via Telerik CLI, verify the setup, and upgrade the referenced assemblies.
+description: Learn how to create a WPF project, install and license Telerik UI for WPF NuGet packages, and display a RadTabControl.
 components: ["general"]
 slug: getting-started-first-steps
 tags: nuget,lifecycle,application,telerik,cli
@@ -11,151 +11,111 @@ position: 0
 
 # First Steps with Telerik UI for WPF
 
-This guide helps you create a Windows Presentation Foundation (WPF) project and add Telerik controls.
+This guide helps you create a Windows Presentation Foundation (WPF) project and display a `RadTabControl`.
 
 ## Prerequisites
 
-Before you start, make sure to:
+Before you start:
 
-1. Install Visual Studio with the `.NET desktop development` workload.
-1. Install the [.NET 8.0 Software Development Kit (SDK)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
+1. Use Windows and Visual Studio with the **.NET desktop development** workload. Check the [Telerik UI for WPF system requirements]({%slug installation-system-requirements-wpf%}) for supported environments.
+1. Install the [.NET 8.0 Software Development Kit (SDK)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) for this tutorial.
+1. Have a Telerik account with a commercial or [trial license](https://www.telerik.com/try/ui-for-wpf) valid for the package version you install.
 
 ## Set Up Telerik Development Environment
 
 >tip If you have already set up your Telerik development environment and it doesn't need updating, skip to [create the WPF project](#create-the-wpf-project).
 
-The fastest way to set up your Telerik development environment is to use the [Telerik command-line interface (CLI)]({%slug telerik-cli%}) .NET tool commands in a command shell (cmd, PowerShell, etc.).
+To configure your development environment with the [Telerik command-line interface (CLI)]({%slug telerik-cli%}), run these commands in PowerShell:
 
-1. Install Telerik CLI
+1. Install Telerik CLI. If it is already installed, update it with `dotnet tool update -g Telerik.CLI` instead.
 
 	```powershell
 	dotnet tool install -g Telerik.CLI
 	```
 
-1. Run the `telerik setup wpf` command
+1. Run the `telerik setup wpf` command and follow the authentication prompts.
 
 	```powershell
 	telerik setup wpf
 	```
 
-The `setup` command performs [multiple Telerik CLI setup steps at once]({%slug telerik-cli%}) to configure your Telerik development environment: login, license key installation, NuGet package source configuration, and Model Context Protocol (MCP) server setup.
+The `setup` command signs you in, downloads your license key, and configures the Telerik NuGet source. It also registers the Model Context Protocol (MCP) server configuration. Successful setup displays `Telerik UI for WPF setup complete! Your environment is configured and ready.`
+
+For Q3 2026 and later packages, NuGet.org requires no Telerik feed configuration or authentication. You can use [manual license key installation]({%slug installing-license-key%}#manual-license-key-installation) instead of CLI setup.
 
 ## Create the WPF Project
 
-Create a new WPF project in Visual Studio.
+To create a new WPF project in Visual Studio:
 
-1. Select __File > New > Project__.
-1. Choose the __WPF Application__ template.
-1. Enter the project details, like project name and directory location, and click __Create__.
+1. Select **File** > **New** > **Project**.
+1. Select the **WPF Application** template.
+1. Enter the project name and location, select **.NET 8.0** as the target framework, and click **Create**.
 
 ## Install Telerik Packages in the Project
 
->important Starting with **Q3 2026**, all Telerik UI for WPF NuGet packages will be available on [NuGet.org](https://www.nuget.org/). If you install packages from NuGet.org, you do not need to configure the Telerik NuGet server.
+>important Starting with Q3 2026, Telerik UI for WPF NuGet packages are available on [NuGet.org](https://www.nuget.org/). No Telerik feed configuration or authentication is required for this source.
 
-1. Right-click on the project name in Visual Studio and select **Manage NuGet Packages**.
+For earlier versions, use the [Telerik NuGet server or a local package source]({%slug nuget-package-source-setup%}).
+
+>tip The `Telerik.UI.for.Wpf.AllControls.Xaml` package contains all Telerik WPF control assemblies. To reference only the controls you need, use the [separate Telerik UI for WPF NuGet packages]({%slug nuget-available-packages%}). This example requires `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` and `Telerik.Licensing`.
+
+To install the packages in your WPF application project:
+
+1. Right-click the project name in Visual Studio and select **Manage NuGet Packages**.
 1. Open the **Browse** tab.
-1. In the __Package source__ drop down menu on the right, make sure to select the Telerik NuGet package source or the __All__ option.
-1. Search for `Telerik.UI.for.Wpf.AllControls.Xaml` and install it in the project.
+1. In the **Package source** dropdown, select **nuget.org** for Q3 2026 and later releases.
+1. Search for `Telerik.UI.for.Wpf.AllControls.Xaml`, select a release version, and install it in the project.
 
-	The installed package is referenced in the project file as follows:
+	Visual Studio adds a `PackageReference` with the selected version to your project file. Keep that version rather than replacing it with the floating version `*`.
 
-	```xml
-	<PackageReference Include="Telerik.UI.for.Wpf.AllControls.Xaml" Version="*" />
-	```
+1. Search for `Telerik.Licensing` and install it in the same application project.
 
->tip This tutorial shows how to install the `Telerik.UI.for.Wpf.AllControls.Xaml` package that contains all Telerik WPF assemblies. To reduce the final application size, you can install only the required [separate Telerik UI for WPF NuGet packages]({%slug nuget-available-packages%}). For example, this demo only requires the `Telerik.Windows.Controls.Navigation.Xaml` package.
+>important NuGet-based projects require both the `Telerik.Licensing` package and a license key, even when packages come from NuGet.org. CLI setup downloads the key but does not replace the package requirement. See [license key installation]({%slug installing-license-key%}) for details.
 
 ## Add Telerik Controls in the Project
 
+To add a `RadTabControl` to the WPF application:
+
 1. Open the `MainWindow.xaml` file.
 
-1. Add the `telerik` schema in Extensible Application Markup Language (XAML).
+1. Add this namespace declaration to the existing `Window` opening tag in `MainWindow.xaml`. This Extensible Application Markup Language (XAML) attribute fragment maps the `telerik` prefix to the controls:
 
 	```xaml
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	```
 	
-1. Add a Telerik control. For this example, we'll use `RadTabControl`.
+1. Replace the empty `Grid` in `MainWindow.xaml` with this fragment. Keep the existing `Window`, including its generated `x:Class` and namespace declarations. These must match your project's code-behind:
 
 	```xaml
-	<Window x:Class="TelerikWpfApplication.MainWindow"
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-			xmlns:local="clr-namespace:TelerikWpfApplication" 
-			xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-			mc:Ignorable="d"
-			Title="MainWindow"
-			Height="450"
-			Width="800">
-		<Grid>
-			<telerik:RadTabControl>
-				<telerik:RadTabItem Header="Home" />
-				<telerik:RadTabItem Header="Insert" />
-				<telerik:RadTabItem Header="View" />
-			</telerik:RadTabControl>
-		</Grid>
-	</Window>
+	<Grid>
+		<telerik:RadTabControl>
+			<telerik:RadTabItem Header="Home" />
+			<telerik:RadTabItem Header="Insert" />
+			<telerik:RadTabItem Header="View" />
+		</telerik:RadTabControl>
+	</Grid>
 	```
 
-1. __(optional)__ Open the `MainWindow.xaml.cs` and [set the Telerik theme]({%slug styling-apperance-implicit-styles-overview%}). This tutorial uses the [XAML]({%slug xaml-vs-noxaml%}) version of the Telerik dlls, so we need to use `StyleManager` for the theme setting.
+1. Optionally, [set the theme with `StyleManager`]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager). This tutorial uses Xaml assemblies, which support this approach. To apply Windows11 to the control, add this attribute fragment to the existing `telerik:RadTabControl` opening tag:
 	
-	```C#
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			StyleManager.ApplicationTheme = new Windows11Theme();
-			this.InitializeComponent();
-		}
-	}
+	```xaml
+	telerik:StyleManager.Theme="Windows11"
 	```
 
-1. Build and run the project. 
+1. Build and run the project. Verify that the window displays the **Home**, **Insert**, and **View** tab headers. The tab content is empty because this example sets only headers.
 
->important Telerik UI for WPF comes with two sets of dlls, named Xaml and NoXaml. This tutorial was created with the Xaml dlls set in mind. Read more about this in the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) article.
+>important Telerik UI for WPF provides Xaml and NoXaml assemblies. Use Xaml assemblies for this tutorial and do not mix the two sets. See the [Xaml and NoXaml comparison]({%slug xaml-vs-noxaml%}) for their different theme requirements.
+
+If package installation fails, check the selected version and [package source configuration]({%slug nuget-package-source-setup%}). If the build reports license errors or the application displays a watermark, check the [license activation errors and solutions]({%slug license-activation-errors-and-warnings%}).
 
 ## Next Steps
 
-<article-card-container>
-    <article-card
-        href="/ai-assistant/overview"
-        src="images/chat_light_large.svg"
-        title="Use Telerik AI Tools"
-        darkSrc="images/chat_dark_large.svg"
-        description="Get artificial intelligence (AI)-powered help through a unified MCP server, directly in your integrated development environment (IDE).">
-    </article-card>
-    <article-card
-        href="/introduction#list-of-components"
-        src="images/editor_ai_integration_light_large.svg"
-        title="Use Components"
-        darkSrc="images/editor_ai_integration_dark_large.svg"
-        description="Check the list of available Telerik WPF components.">
-    </article-card>
-    <article-card
-        href="https://demos.telerik.com/wpf/"
-        src="images/grid_ai_chat_integration_light_large.svg"
-        title="Browse WPF Demos"
-        darkSrc="images/grid_ai_chat_integration_dark_large.svg"
-        description="Explore the examples via the Telerik UI for WPF Desktop Examples application.">
-    </article-card>   
-    <article-card
-        href="/controls/radgridview/overview2"
-        src="images/data_highlight_light_large.svg"
-        title="Get Started with RadGridView"
-        darkSrc="images/data_highlight_dark_large.svg"
-        description="Bind the Telerik WPF Data Grid to data and choose from the variety of built-in features.">
-    </article-card>
-    <article-card
-        href="/styling-and-appearance/styling-apperance-setting-a-theme-overview"
-        src="images/themingt_light_large.svg"
-        title="Theming"
-        darkSrc="images/theming_dark_large.svg"
-        description="Review the built-in themes.">
-    </article-card>
-</article-card-container>
+* [Get AI-powered development help with Telerik AI tools]({%slug ai-tools-overview%})
+* [Explore the available Telerik UI for WPF components]({%slug introduction%}#list-of-components)
+* [Browse the Telerik UI for WPF desktop demos](https://demos.telerik.com/wpf/)
+* [Explore the Telerik WPF Data Grid and its features]({%slug gridview-overview2%})
+* [Choose a Telerik UI for WPF theme]({%slug styling-apperance-implicit-styles-overview%})
 
 ## See Also
-* [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
+* [Compare Xaml and NoXaml assemblies]({%slug xaml-vs-noxaml%})
 * [Installation and Setup with Telerik CLI]({%slug telerik-cli%})

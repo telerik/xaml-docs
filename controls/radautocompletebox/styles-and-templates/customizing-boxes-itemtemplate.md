@@ -1,7 +1,7 @@
 ---
 title: Customizing the BoxesItemTemplate
 page_title: Customizing the BoxesItemTemplate
-description: Check our &quot;Customizing the BoxesItemTemplate&quot; documentation article for the RadAutoCompleteBox {{ site.framework_name }} control.
+description: Customize selected items in the WPF RadAutoCompleteBox with BoxesItemTemplate to display country flags and continent-based text colors.
 components: ["autocompletebox"]
 slug: radautocompletebox-customizing-boxes-itemtemplate
 tags: customizing,the,boxesitemtemplate
@@ -11,49 +11,53 @@ position: 2
 
 # Customizing the BoxesItemTemplate
 
-In __RadAutoCompleteBox__ you can customize the way the items are displayed in the input area of the control.
+Use `BoxesItemTemplate` to customize how selected items appear in the input area of `RadAutoCompleteBox`.
 
-By customizing the __BoxesItemTemplate__ you could easily apply a different appearance for the selected items of __RadAutoCompleteBox__ when the __SelectionMode__ is set to __Multiple__.
+>important `BoxesItemTemplate` applies only when `SelectionMode` is set to `Multiple`.
 
 ## Creating custom BoxesItemTemplate
 
-The following example will demonstrate how you could easily create __BoxesItemTemplate__ in order to show an Image inside the box of the selected item and change the foreground color of the item's text.
+This example adds a country flag to each selected item and sets the text color based on its continent.
 
->important The __BoxesItemTemplate__ is applied only when the __SelectionMode__ property is set to __Multiple__.
+Start with a `RadAutoCompleteBox` bound to a collection of objects, as described in [Binding to Objects]({%slug radautocompletebox-populating-with-data-binding-to-object%}). The following snippets are fragments; the [complete SDK example](https://github.com/telerik/xaml-sdk/tree/master/AutoCompleteBox/CustomBoxesItemTemplate) includes the viewmodel, converter, and flag images.
 
-Firstly you need to create a new business object named for example Country. Its structure is shown in the code-snippet below:
+To customize the selected-item boxes:
 
-__Creation of the business object__
+1. Create a `Country` business object:
 
-<snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-creation_of_the_business_object-cs' />
+   **Creation of the business object**
 
-The __Flag__ property should be of type string and will be bound to the __Source__ property of the Image. As for the __Continent__ property it is an enumeration that contains all continents.
+   <snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-creation_of_the_business_object-cs' />
 
-After that you need to create the ViewModel and populate it with some data.
+   The `Flag` property is a string bound to `Image.Source`. The `Continent` property uses an enumeration of continents.
 
->tip More detailed information how to bind __RadAutoCompleteBox__ to an object could be found [here]({%slug radautocompletebox-populating-with-data-binding-to-object%}).
+2. Create and populate the viewmodel with country data. Use the [object-binding setup]({%slug radautocompletebox-populating-with-data-binding-to-object%}) to make the collection available to the control's `ItemsSource` binding. Include the flag images referenced by the `Flag` values in your project.
 
-Next a valid DataTemplate with the correct bindings for the __Name__ and __Flag__ property of the ItemsSource items should be created: 
+3. Add the converter and template to the resources of the containing view. In the linked SDK sample, declare `ContinentToColorConverter` with the resource key `ContinentToColorConverter` before the template that references it. Map the `local` XAML namespace to the CLR namespace containing your converter.
 
-__Declaring the BoxesItemTemplate__
+   The SDK sample's converter receives the entire `Country` object, reads its `Continent` property, and returns a `SolidColorBrush` for `TextBlock.Foreground`. A `Color` value alone is not the brush expected by `Foreground`.
 
-<snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-declaring_the_boxesitemtemplate-xaml' />
+   Create a `DataTemplate` with bindings to the country item's `Name` and `Flag` properties:
 
-The __ContinentToColorConverter__ converts the __Continent__ property of the item into a Color that is set to the Foreground property of the TextBlock that visualizes the Name property - each country has different color based on its continent.
+   **Declaring the BoxesItemTemplate**
 
-Finally you will need to declare __RadAutoCompleteBox__ in the xaml and set its __ItemsSource__, __DisplayMemberPath__ and __BoxesItemTemplate__ properties:
+   <snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-declaring_the_boxesitemtemplate-xaml' />
 
-__Setting the BoxesItemTemplate__
+4. Declare `RadAutoCompleteBox` in XAML. Set `ItemsSource` to the country collection, `DisplayMemberPath` to `Name`, and `BoxesItemTemplate` to the template resource. Set `SelectionMode` to `Multiple`:
 
-<snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-setting_the_boxesitemtemplate-xaml' />
+   **Setting the BoxesItemTemplate**
 
-The following screenshots show the final result:
+   <snippet id='radautocompletebox-styles-and-templates-customizing-boxes-itemtemplate-setting_the_boxesitemtemplate-xaml' />
 
-![radautocompletebox-customizing-boxes-itemtemplate-1](images/radautocompletebox-customizing-boxes-itemtemplate-1.png)
+Type a country name to display matching suggestions:
 
-![radautocompletebox-customizing-boxes-itemtemplate-2](images/radautocompletebox-customizing-boxes-itemtemplate-2.png)
+![RadAutoCompleteBox suggesting Bulgaria and Brazil while Bulgaria is entered](images/radautocompletebox-customizing-boxes-itemtemplate-1.png)
 
->tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/AutoCompleteBox/CustomBoxesItemTemplate).
+Select a suggestion to see the customized box in the input area:
+
+![Selected Bulgaria box with a flag, blue country name, and remove button](images/radautocompletebox-customizing-boxes-itemtemplate-2.png)
+
+>tip If the custom boxes do not appear, check that `SelectionMode` is `Multiple`. If a flag is missing, check that its `Flag` path resolves to an image included in your project.
 
 ## See Also
 

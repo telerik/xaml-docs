@@ -5,6 +5,7 @@ description: Check out the properties of the Dynamic Hyperlink Column in Telerik
 components: ["gridview"]
 slug: radgridview-columns-column-types-dynamic-hyperlink-column
 tags: dynamic,hyperlink,column
+tag: updated
 published: True
 position: 5
 ---
@@ -45,8 +46,17 @@ __Example 2: Define navigate url without additional format.__
 
 ![Telerik UI for {{ site.framework_name }} RadGridView GridViewDynamicHyperlinkColumn displaying generated hyperlinks](images/RadGridView_ColumnTypes_9.png)
 
->tip In order to handle the __Click__ event of the hyperlink, you can use the approach demonstrated in the [GridViewHyperlinkColumn Click Event]({%slug gridview-hyperlink-column-click-event%}) article.
+>tip To handle hyperlink navigation, use the approach in [Hyperlink column click handling]({%slug gridview-hyperlink-column-click-event%}).
+
+## Handling Hyperlink Navigation
+
+`GridViewDynamicHyperlinkColumn` launches only URLs that pass the pattern and scheme checks. Absolute HTTP, HTTPS, and mailto URLs can be trusted by default. Other URLs do not launch unless a handler sets `IsTrustedUrl` to `true`. This default launch restriction is a behavior change for GridView hyperlinks.
+
+The dynamic column does not expose its own `HyperlinkClicked` event. Subscribe to the shared `HyperlinkManager.HyperlinkClicked` event to cancel navigation or approve a URL. Its arguments expose `Url`, `IsTrustedUrl`, and `Handled`; the `sender` depends on the control that originated the request.
+
+Set `Handled` to `true` to stop the default action. Set `IsTrustedUrl` to `true` to allow a URL that the validator would otherwise reject. The shared validator accepts absolute HTTP, HTTPS, and mailto URLs that pass its pattern and scheme checks. Because the manager event is static, unsubscribe when the handler owner has a shorter lifetime than the application. See [Handling hyperlink navigation in RadHyperlinkButton]({%slug radbuttons-features-hyperlink-button%}) for a shared-event example.
 
 ## See also
 * [Hyperlink Column]({%slug radgridview-columns-column-types-hyperlink-column%})
 * [CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)

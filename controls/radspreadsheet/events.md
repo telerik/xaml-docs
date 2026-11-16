@@ -5,6 +5,7 @@ description: Check our &quot;Events&quot; documentation article for the RadSprea
 components: ["spreadsheet"]
 slug: radspreadsheet-events
 tags: events
+tag: updated
 published: True
 position: 7
 ---
@@ -95,12 +96,18 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 	
 	<snippet id='radspreadsheet-events-block_5-cs' />
 
- 	The `HyperlinkClickedEventArgs` exposes also the `IsTrustedUrl` property, which can be set to `false` to prevent the url from openning.
+	The `HyperlinkClickedEventArgs` exposes `Url`, `IsTrustedUrl`, `Handled`, and `CellIndex`. Set `Handled` to `true` to cancel the default action. External-link validation already existed; this change adds the shared `HyperlinkManager.HyperlinkClicked` event. The shared event runs after the editor-specific event if the editor event does not handle the request.
 	
 	The cell clicked to open the hyperlink can be accessed with the `CellIndex` property of `HyperlinkClickedEventArgs`.
 	
 	__Accessing the CellIndex of the clicked cell__
 	<snippet id='radspreadsheet-events-block_6-cs' />
+
+	For an internal hyperlink, setting `Handled` to `true` prevents both the worksheet switch and the selection of the target cell. The editor raises its hyperlink event before either action.
+
+	For external URLs, absolute HTTP, HTTPS, and mailto URLs can be trusted by default when they pass the validator's pattern and scheme checks. Set `IsTrustedUrl` to `true` in the editor-specific or shared event to allow the default launch of a URL the validator would otherwise reject. The shared event's `sender` depends on the originating control or component.
+
+	`HyperlinkManager.HyperlinkClicked` is static. Unsubscribe handlers when their owners are shorter-lived than the application. See [Handling hyperlink navigation in RadHyperlinkButton]({%slug radbuttons-features-hyperlink-button%}) for a shared-event example.
 	
 
 >The events related to selection in RadSpreadsheet are described in the [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%}) topic.
@@ -132,3 +139,4 @@ The arguments of the two events are of type `RowColumnPropertyChangedEventArgs` 
 
 ## See Also  
 * [Model]({%slug radspreadsheet-getting-started%}#model)
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)

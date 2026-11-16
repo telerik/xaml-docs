@@ -5,6 +5,7 @@ description: RadHyperlink Button.
 components: ["buttons"]
 slug: radbuttons-features-hyperlink-button
 tags: hyperlink,button
+tag: updated
 published: True
 position: 5
 ---
@@ -44,9 +45,84 @@ The control will indicate when the link is visited by modifying the text Foregro
 
 ![RadHyperlinkButton in Normal State](images/RadHyperlinkButton_GettingStarted_03.png)
 
+## Handling Hyperlink Navigation
+
+`RadHyperlinkButton` raises its `HyperlinkClicked` event before it launches a link. The event uses `RadHyperlinkButtonClickedEventArgs`, which derives from `HyperlinkClickedEventArgsBase` and exposes `Url`, `IsTrustedUrl`, and `Handled`.
+
+By default, the button launches only URLs that pass its pattern and scheme checks. Absolute HTTP, HTTPS, and mailto URLs can be trusted by default when they pass those checks. Other URLs do not launch unless an event handler sets `IsTrustedUrl` to `true`. This launch restriction is a behavior change for `RadHyperlinkButton`.
+
+Set `Handled` to `true` to cancel the button's default navigation. The shared `HyperlinkManager.HyperlinkClicked` event runs after the button event if the button event leaves `Handled` as `false`.
+
+### Canceling Navigation in the Button Event
+
+__Canceling navigation in the button event__
+
+```C#
+private void OnHyperlinkClicked(object sender, RadHyperlinkButtonClickedEventArgs e)
+{
+    e.Handled = true;
+}
+```
+
+### Approving a URL with the Shared Event
+
+The shared event lets your application handle links from multiple controls in one place. Its `sender` identifies the originating control or component. Set `IsTrustedUrl` to `true` after your application approves the URL. The following window handler prompts before it allows a URL that is not trusted by default:
+
+__Approving an untrusted URL after user confirmation__
+
+```C#
+using System;
+using System.Windows;
+using Telerik.Windows.Controls;
+
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        HyperlinkManager.HyperlinkClicked += this.OnHyperlinkClicked;
+        this.Closed += this.OnClosed;
+    }
+
+    private void OnHyperlinkClicked(object sender, HyperlinkClickedEventArgsBase e)
+    {
+        if (e.IsTrustedUrl)
+        {
+            return;
+        }
+
+        MessageBoxResult result = MessageBox.Show(
+            this,
+            $"Open {e.Url}?",
+            "Confirm hyperlink",
+            MessageBoxButton.YesNo,
+            MessageBoxImage.Warning);
+
+        if (result == MessageBoxResult.Yes)
+        {
+            e.IsTrustedUrl = true;
+        }
+        else
+        {
+            e.Handled = true;
+        }
+    }
+
+    private void OnClosed(object sender, EventArgs e)
+    {
+        HyperlinkManager.HyperlinkClicked -= this.OnHyperlinkClicked;
+    }
+}
+```
+
+The window removes its handler when it closes because `HyperlinkManager.HyperlinkClicked` is static. Unsubscribe whenever the handler owner has a shorter lifetime than the application.
+
+>note Set `e.IsTrustedUrl = true` in either event handler to permit the default launch of a URL that the validator does not trust by default. The shared validator accepts absolute HTTP, HTTPS, and mailto URLs that pass its pattern and scheme checks.
+
 ## See Also 
  * [Button]({%slug radbuttons-features-button%})
  * [Radio Button]({%slug radbutton-features-radio-button%})
  * [Commands]({%slug radbuttons-features-commands%})
  * [Events]({%slug radbuttons-events%}) 
- * {% if site.site_name == 'Silverlight' %}[RadToggleButton API](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_radtogglebutton.html){% else %}[RadToggleButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html){% endif %}.
+ * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+ * [RadToggleButton API](http://www.telerik.com/help/wpf/t_telerik_windows_controls_radtogglebutton.html)

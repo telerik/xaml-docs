@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure
-description: Check our &quot;Templates Structure&quot; documentation article for the RadPropertyGrid {{ site.framework_name }} control.
+description: Explore the RadPropertyGrid and PropertyGridField template structures and learn how to extract control templates for customization.
 components: ["propertygrid"]
 slug: radpropertygrid-styles-and-templates-templates-structure
 tags: templates,structure
@@ -11,104 +11,116 @@ position: 1
 
 # Templates Structure
 
-Like most UI controls, RadPropertyGrid allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with: 
+Customize the visual structure of `RadPropertyGrid` by editing its `ControlTemplate` or the templates of its fields. This article describes the following template structures:
 
 * [RadPropertyGrid Template Structure](#radpropertygrid-template)
 
 * [PropertyGridField Template Structure](#propertygridfield-template)
 
->tip For more information about templating and how to modify the default templates read the common topic on [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
+>tip For theme setup, see [Setting a Theme Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}). For template extraction, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
-Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) on two different approaches on how to extract the ControlTemplates.
+Control templates differ between themes. Use the template source for your application's theme and installed Telerik UI for WPF version when comparing it with these template structures.
 
 ## RadPropertyGrid Template
 
-* __PART_RootElement__ - hosts the elements of the template. It represents the border of the RadPropertyGrid and is of type Border;
+The `RadPropertyGrid` template shown in the screenshot contains the following elements:
 
-* __PART_PropertyGridContainer__- hosts the description panel, the items scroll viewer and the header;
+* `PART_RootElement`&mdash;Hosts the template elements and represents the outer `Border` of `RadPropertyGrid`.
 
-* __PART_DescriptionPanel__- hosts the elements of RadPropertyGrid’s DescriptionPanel. It represents the border of this panel and is of type Border;
+* `PART_PropertyGridContainer`&mdash;Hosts the description panel, items scroll viewer, and header.
 
-* __StackPanel__ - represents the DescriptionPanel and is of type StackPanel;
+* `PART_DescriptionPanel`&mdash;Hosts the description panel elements and represents the panel's `Border`.
 
-* __TextBlock__- represents the DisplayName of the Selected property definition;
+* `[StackPanel]`&mdash;Contains the description panel's text elements.
 
-* __TextBlock__ – represents the Description of the Selected property definition;
+* `[TextBlock]`&mdash;Displays the `DisplayName` of the selected property definition.
 
-* __[Border]__ - represents the outer border of the ScrollViewer and is of type Border;
+* `[TextBlock]`&mdash;Displays the `Description` of the selected property definition.
 
-* __PART_ItemsScrollViewer__ - represents the control that handles the different types of presenters and is of type Border;
+* `[Border]`&mdash;Represents the outer border of the items scroll viewer.
 
-* __PropertyGridPresenter__-responsible for displaying PropertyGridFields and is of type PropertyGridPresenter;
+* `PART_ItemsScrollViewer`&mdash;Handles the different types of presenters and is of type `Border`.
 
-* __Header__ - represents the outer border of the header and is of type Border;
+* `PropertyGridPresenter`&mdash;Displays the `PropertyGridField` elements.
 
-* __[Border]__ - represents the inner border of the header and is of type Border;
+* `Header`&mdash;Represents the outer `Border` of the header.
 
-* __[Grid]__ - hosts the elements of the Header of the header and is of type Grid;
+* `[Border]`&mdash;Represents the inner border of the header.
 
-* __[Path]__
+* `[Grid]`&mdash;Hosts the header elements.
 
-* __SearchAsYouTypeTextBox__- represents the RadPropertyGrid’s SearchBox and is of type TextBox.
+* `[Path]`&mdash;Represents a `Path` element in the header.
 
-* __SortButton__- represents the RadPropertyGrid’s Sort Button and is of type RadRadioButton
+* `searchAsYouTypeTextBox`&mdash;Represents the search box and is of type `TextBox`.
 
-* __GroupButton__- represents the RadPropertyGrid’s Group Button and is of type RadRadioButton
-![{{ site.framework_name }} RadPropertyGrid Template Structure](images/RadPropertyGrid_RadProperyGridTemplate.png)
+* `sortButton`&mdash;Represents the sort button and is of type `RadRadioButton`.
+
+* `groupButton`&mdash;Represents the group button and is of type `RadRadioButton`.
+
+The Blend **Objects and Timeline** panel shows the description panel, items presenter, and header within the `RadPropertyGrid` template.
+
+![{{ site.framework_name }} RadPropertyGrid template hierarchy in Blend, including the description panel, presenter, and header controls](images/RadPropertyGrid_RadProperyGridTemplate.png)
 
 ## PropertyGridField Template
 
-* __PART_RootElement__ - hosts the elements of the template. It represents the border of the DataFormDataField and is of type Border;
+The `PropertyGridField` template shown in the screenshot contains the following elements:
 
-* __PART_PropertyGridFieldGrid__ - provides columns for the template elements. It represents the background of the DataFormDataField and is of type Grid;
+* `PART_RootElement`&mdash;Hosts the template elements and represents the outer `Border` of `PropertyGridField`.
 
-* __ColumnResizer__ - represents the PropertyGridField’s resizer and is of type Thumb;
+* `PART_PropertyGridFieldGrid`&mdash;Provides columns for the template elements and represents the field's background `Grid`.
 
-* __[Border]__- represents the border around PropertyGridFields’s editor and is of type Border;
+* `ColumnResizer`&mdash;Represents the field's resizer and is of type `Thumb`.
 
-* __[ContentPresener]__ - displays the content and is of type ContentPresenter;
+* `[Border]`&mdash;Surrounds the field's editor.
 
-* __[Border]__- represents the border around PropertyGridFields’s TextBlock and is of type Border;
+* `[ContentPresenter]`&mdash;Displays the field's content.
 
-* __[TextBlock]__- displays the PropertyGridField’s DisplayName and is of type TextBlock;
+* `[Border]`&mdash;Surrounds the field's `TextBlock`.
 
-* __[Border]__- represents the outer border of PropertyGridFields’s Indent and is of type Border;
+* `[TextBlock]`&mdash;Displays the field's `DisplayName`.
 
-* __[Border]__- represents the background of PropertyGrid’s Indent and is of type Border;
+* `[Border]`&mdash;Represents the outer border of the field's indent.
 
-* __Background_Over__ - represents the outer border of the field, when the mouse is over it and is of type Border;
+* `[Border]`&mdash;Represents the background of the field's indent.
 
-* __[Border]__ - represents the inner border and the background of the row, when the mouse is over it and is of type Border;
+* `Background_Over`&mdash;Represents the field's outer `Border` when the mouse hovers over it.
 
-* __SelectionBackground__- represents the outer border of the field, when it is selected and is of type Border;
+* `[Border]`&mdash;Represents the inner border and row background within `Background_Over`.
 
-* __[Border]__ - represents the inner border and the background of the row, when the mouse is over it and is of type Border.
+* `SelectionBackground`&mdash;Represents the field's outer `Border` when the field is selected.
 
-![{{ site.framework_name }} RadPropertyGrid PropertyGridField Template Structure](images/RadPropertyGrid_PropertyGridFieldTemplate.png)
+* `[Border]`&mdash;Represents the inner border and row background within `SelectionBackground`.
+
+The Blend **Objects and Timeline** panel shows the editor, label, and state backgrounds within the `PropertyGridField` template.
+
+![{{ site.framework_name }} PropertyGridField template hierarchy in Blend, including the content presenter, text block, and background borders](images/RadPropertyGrid_PropertyGridFieldTemplate.png)
 
 ## Modifying RadPropertyGrid Template with Blend
 
-When extracting the control template with MS Blend some dependency properties of controls that are defined in DataTemplates, does not have their values extracted correctly. You have two options:
+When you extract the control template with Blend, some dependency property values of controls defined in `DataTemplate` elements do not extract correctly. Use one of the following options:
 
-* Manually extract the template template from the Themes.Implicit files we ship with every installation. You can find it together with all the other templates used for the PropertyGrid inside "Telerik.Windows.Controls.Data.xaml" file browsing to "C:\Program Files (x86)\Progress\Telerik UI for [product][version]\Themes.Implicit\OfficeBlack\Themes" folder. Please note there is a different folder for each Theme and you should browse to the one you use.
+* Extract the template manually from `Telerik.Windows.Controls.Data.xaml` in the `Themes.Implicit` folder of your Telerik UI for WPF installation. Select the framework and theme folders that match your application, such as `Themes.Implicit\NET\OfficeBlack\Themes` for the Office Black theme. Use the files from the Telerik UI for WPF version installed for your project. The [manual template extraction instructions]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) explain the framework and theme folder layout.
             
-*  Extract the template with Blend and manually add the missing __ItemsSource Bindings__ for the ItemsControl defined for the four templates.
-You can find instructions on how to fix the missing Bindings bellow:
+* Extract the template with Blend and manually add the missing `ItemsSource` bindings for the `ItemsControl` defined in each of the four templates.
+
+The following examples correspond to the four templates:
               
-*  Under __FlatRenderingTemplate__:
+* For `FlatRenderingTemplate`:
 
 <snippet id='radpropertygrid-styles-and-templates-templates-structure-block_1-xaml' />
 
-*   Under __FlatTemplate__:
+* For `FlatTemplate`:
 
 <snippet id='radpropertygrid-styles-and-templates-templates-structure-block_2-xaml' />
 
-*  Under __GroupTemplate__:
+* For `GroupTemplate`:
 
 <snippet id='radpropertygrid-styles-and-templates-templates-structure-block_3-xaml' />
 
-*  Under __VirtualizedFlatTemplate__:
+* For `VirtualizedFlatTemplate`:
 
 <snippet id='radpropertygrid-styles-and-templates-templates-structure-block_4-xaml' />
 
-Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) on two different approaches on how to extract the ControlTemplates.
+## See Also
+
+* [RadPropertyGrid Styling and Templates Overview]({%slug radpropertygrid-styles-and-templates-overview%})

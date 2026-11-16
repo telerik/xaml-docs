@@ -13,6 +13,10 @@ position: 4
 
 This article lists and describes the breaking changes introduced in the RadGridView component. For a full list of changes, see the [Release History](https://www.telerik.com/support/whats-new/wpf/release-history) pages of the Telerik UI for WPF product.
 
+## 2026 Q4
+
+* `GridViewHyperlinkColumn` and `GridViewDynamicHyperlinkColumn` now launch only absolute HTTP, HTTPS, and mailto URLs that pass the URL pattern and scheme checks. Other URLs are not launched by default. To allow an application-approved URL, set `IsTrustedUrl` to `true` in the hyperlink event handler after validating the destination.
+
 ## 2025 Q2
 
 * The export functionality no longer needs a reference to `Telerik.Windows.Zip.dll`.

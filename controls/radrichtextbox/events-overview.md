@@ -5,6 +5,7 @@ description: Check our &quot;Events&quot; documentation article for the RadRichT
 components: ["richtextbox"]
 slug: radrichtextbox-events-overview
 tags: events
+tag: updated
 published: True
 position: 14
 ---
@@ -69,12 +70,14 @@ The event handler receives two arguments:
 
 * __HyperlinkClicked__ - occurs when a hyperlink inside the document is clicked. The event handler receives two arguments:
     * The sender argument contains the __Span__ containing the hyperlink's content. This argument is of type object, but can be cast to the __Span__ type.
-    * A __HyperlinkClickedEventArgs__ object. This argument allows you to access the URL and the target of the hyperlink.
+    * A __HyperlinkClickedEventArgs__ object. This argument exposes the link through `Url` and provides the target through `HyperlinkTarget`.
 
-	The default hyperlink navigation can be canceled by setting the `Handled` property of the `HyperlinkClickedEventArgs` to `true` or `IsTrustedUrl` to `false`. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecured address or from starting a local process.
+	Set `Handled` to `true` to cancel navigation. The `URL` property was renamed to `Url`; update applications that use the old property name. `HyperlinkClickedEventArgs` also inherits `IsTrustedUrl` from `HyperlinkClickedEventArgsBase`. Set it to `true` to allow a URL that the validator would otherwise reject. Absolute HTTP, HTTPS, and mailto URLs can be trusted by default when they pass the pattern and scheme checks.
 
 	__Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
 	<snippet id='radrichtextbox-events-overview-block_1-cs' />
+
+	After the applicable document- and editor-specific event handlers run, `HyperlinkManager.HyperlinkClicked` runs if none set `Handled` to `true`. The shared event uses the same event arguments and sends the originating component as `sender`. Since the event is static, unsubscribe when the handler owner has a shorter lifetime than the application. See [Handling hyperlink requests in the hyperlink article]({%slug radrichtextbox-features-document-elements-hyperlink%}).
 
 * __IsReadOnlyChanged__ - occurs when __IsReadOnly__ value has changed. The event handler receives two arguments:
      * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
@@ -91,3 +94,4 @@ The event handler receives two arguments:
 
 ## See Also  
  * [Getting Started]({%slug radrichtextbox-getting-started%})
+ * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)

@@ -36,6 +36,7 @@ The following article list Knowledge Base articles related to this section of th
 |[Exclude Columns from Column Chooser]({%slug kb-gridview-exclude-columns-from-column-chooser%})|
 |[Execute saving the exported Excel document on a separate thread in GridView]({%slug kb-gridview-separate-excel-export-execution%})|
 |[Expand and Collapse All Row Details in RadGridView]({%slug kb-gridview-expand-all-rowdetails%})|
+|[Expanding the Selected Parent Row in RadGridView]({%slug kb-gridview-expand-selected-hierarchy-row%})|
 |[Exporting RadGridView to PDF with Header, Footer, and Repositioning]({%slug export-radgridview-to-pdf-wpf%})|
 |[F2 Should not Select All Text in RadGridView Cell]({%slug kb-gridview-prevent-f2-text-selection%})|
 |[Field Filters Not Visible when Filtering Control Is First Opened]({%slug kb-gridview-field-filters-not-visible-first-open%})|

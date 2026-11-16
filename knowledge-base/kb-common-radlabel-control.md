@@ -12,9 +12,9 @@ res_type: kb
 
 ## Environment
 
-| Version | Product |
-| ---- | ---- |
-| Not specified | Telerik UI for WPF |
+| Version | Product | Author | 
+| ---- | ---- | ---- | 
+| 2026.4.1111| Label |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description
 

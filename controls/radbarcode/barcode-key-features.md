@@ -27,7 +27,7 @@ Through the **Symbology** property you could set the symbology that will be used
 * QRCode  
 * PDF417   
 
-The `RadBarcode.Symbology`property expects `SymbologyBase`. Since `SymbologyBase` is an abstract, a concrete subclass such as `Code39` can be assigned to `RadBarcode.Symbology`.
+The `RadBarcode.Symbology` property expects `SymbologyBase`. Since `SymbologyBase` is an abstract class, an instance of a concrete subclass such as `Code39` can be assigned to `RadBarcode.Symbology`.
 
 To set the symbology in code-behind, assign a concrete symbology instance to the `Symbology` property. This example assumes that the `RadBarcode` control has `x:Name="Barcode"` in XAML:
 

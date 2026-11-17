@@ -5,6 +5,7 @@ description: Install and use the Telerik CLI to set up the Telerik NuGet feed, c
 components: ["general"]
 slug: telerik-cli
 tags: telerik,cli,command line,cli,dotnet tool,nuget,setup,install,create project,update,template,wpf,telerik,getting started,environment
+tag: updated
 published: True
 position: 0
 ---

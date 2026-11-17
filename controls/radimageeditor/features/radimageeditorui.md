@@ -13,6 +13,8 @@ position: 2
 
 __RadImageEditor__ comes with a predefined UI out of the box – __RadImageEditorUI__. As it uses XAML only, you can easily customize it for your application, by adding or removing tools that can be executed.
 
+In WPF, the image preview label uses the __ImageEditor_ImagePreview__ resource key. It is separate from the __Header__ property of __ImageToolsSection__, which sets tool-section headings. To change the preview label, see [Localization]({%slug radimageeditor-localization%}).
+
 The tools and commands that the editor can execute are __ImageToolItems__. They are grouped into sections depending on the modification they perform on the image. In the default template, these __ImageToolSections__ can be minimized and maximized using RadExpander. Moreover, each __ImageToolItem__ specifies:
 
 * __Command__ property: A command which will be executed when you select the ImageToolItem, e.g. CropCommand.

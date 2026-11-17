@@ -74,6 +74,39 @@ Of course, if you don't want to hard-code your translation inside the source cod
 __Localization using resource files__  
 <snippet id='radimageeditor-localization-localization_using_resource_files-cs' />
 
+### Changing the Image Preview Label
+
+In the WPF __RadImageEditorUI__, the image preview label uses the __ImageEditor_ImagePreview__ resource key. Override this key in your custom localization manager to change the label:
+
+```csharp
+using Telerik.Windows.Controls;
+
+public class ImageEditorLocalizationManager : LocalizationManager
+{
+    public override string GetStringOverride(string key)
+    {
+        switch (key)
+        {
+            case "ImageEditor_ImagePreview":
+                return "Photo Preview";
+            default:
+                return base.GetStringOverride(key);
+        }
+    }
+}
+```
+
+In your application constructor, set the custom manager before calling __InitializeComponent()__ so it is available when the UI is created:
+
+```csharp
+public App()
+{
+    LocalizationManager.Manager = new ImageEditorLocalizationManager();
+    InitializeComponent();
+}
+```
+
+__LocalizationManager.Manager__ is a static property, so this override changes the preview label for all __RadImageEditorUI__ instances that use this manager. To change the label for only one instance, customize its control template.
 
 ## See Also  
 * [Localization SDK Example](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Localization)

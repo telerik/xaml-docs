@@ -1019,7 +1019,11 @@ meta:
     "developer-focused-examples":
         title: "Developer Focused Examples"    
         position: 11
-        
+
+nuclia-labels: 
+  - Documentation
+  - Knowledge Base
+
 redirects:
 -
     from: "^/?$"

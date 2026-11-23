@@ -1,0 +1,62 @@
+top-navigation-product: wpf
+path-prefix: /products/wpf/documentation/api
+default-title-prefix: WPF
+
+primary-color: "#27A306"
+product-id: 601
+product-code: RCWPF
+product-name: Telerik UI for WPF
+product-url: https://www.telerik.com/products/wpf/overview.aspx
+product-trial-url: https://www.telerik.com/try/ui-for-wpf
+contribute-url: https://github.com/telerik/xaml-docs/edit/master
+search-engine-id: a722b2db506ca4528
+avatar-path: ./images/avatar-ninja.svg
+no-results-image-path: ./images/ninja-no-results.svg
+enable-tabbed-code-blocks: true
+center-images: false
+img-max-width: 100%
+table-layout: fixed
+gitLastCommitDateEnabled: true
+search-provider: nuclia
+
+cta-overview: The @Subject is part of @ProductLink, a professional grade UI library with 160+ components for building modern and feature-rich applications. To try it out sign up for a free 30-day trial.
+cta-intro: "@ProductLink is a professional grade UI library with 160+ components for building modern and feature-rich applications. To try it out sign up for a free 30-day trial."
+
+liquid-output-delimiter-left: "{{"
+liquid-output-delimiter-right: "}}"
+liquid:
+  framework_name: "WPF"
+  site_name: "WPF"
+  minimum_net_core_version: "NET 8"
+  
+excluded-files:
+- "**/README.md"
+- "**/copyright.md"
+
+ai-chat-prompt-suggestions:
+- "How to get started with Telerik UI for WPF?"
+- "What components are available in Telerik UI for WPF?"
+- "How to set up licensing for Telerik UI for WPF?"
+- "How to use the grid component in Telerik UI for WPF?"
+
+fileSources:
+  docs:
+    meta:
+      relativeUrl: https://www.telerik.com/products/wpf/documentation
+      position: 1
+  images:
+    meta:
+      path: ./images
+      position: 2
+
+
+redirects:
+-
+    from: "^/api/html/.*$"
+    to: "/api/"
+    type: Permanent
+
+api-url-prefix: ''
+
+nuclia-labels: 
+- Api Reference

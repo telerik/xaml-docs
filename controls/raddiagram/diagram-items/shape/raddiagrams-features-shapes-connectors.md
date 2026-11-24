@@ -1,7 +1,7 @@
 ---
-title: Connectors
+title: Shape Connectors
 page_title: Shape Connectors - WPF Diagram
-description: Telerik RadDiagram for {{ site.framework_name }} Shape Connectors.
+description: Telerik RadDiagram for WPF Shape Connectors.
 components: ["diagram"]
 slug: raddiagrams-features-shapes-connectors
 tags: shapes,connectors
@@ -9,7 +9,7 @@ published: True
 position: 1
 ---
 
-# Connectors
+# Shape Connectors
 
 The __RadDiagramShape__ and __RadDiagramContainerShape__ visuals have 5 default connectors - Top, Right, Bottom, Left and Auto. Those are the predefined points where you can connect a __RadDiagramConnection__ to the shape.
 

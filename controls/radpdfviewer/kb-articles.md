@@ -22,6 +22,7 @@ The following article list Knowledge Base articles related to this section of th
 |[How to determine when the user has scrolled to the last page of a document in PdfViewer for WPF]({%slug kb-pdfviewer-scroll-to-last-page%})|
 |[Loading a multipage Tiff file in a RadPdfViewer]({%slug kb-pdfviewer-load-multipage-tiff%})|
 |[Loading a Multipage Tiff File in a RadPdfViewer Using TiffBitmapDecoder]({%slug kb-pdfviewer-load-multipage-tiff-using-tiffbitmapdecoder%})|
+|[Navigating to a Specific Page After Changing a Document in RadPdfViewer]({%slug kb-pdfviewer-navigate-to-page-after-document-change%})|
 |[Value cannot be null. Parameter name - Pages exception opening a particular pdf]({%slug kb-pdfviewer-argumentnullexception-pages%})|
 
 ## See Also

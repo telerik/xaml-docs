@@ -1,5 +1,5 @@
 ---
-title: Using DiagramCursors Instead of Manifest Resources
+title: Using DiagramCursors Instead of Loading .cur Files as Manifest Resources
 description: Replace embedded RadDiagram cursor manifest-resource loading with public DiagramCursors properties, map each cursor file, and update WPF cursor assignments.
 type: how-to
 page_title: RadDiagram for WPF Cursor Migration - Replacing Manifest Resources with DiagramCursors
@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-Some applications load cursor files such as `HandCursor.cur` from the `Telerik.Windows.Diagrams.Core` assembly with `Assembly.GetManifestResourceStream`. If the embedded resources are removed, the lookup returns `null`. Use the public `DiagramCursors` static class to assign the equivalent cursor instead.
+In older versions of Telerik UI for WPF, some applications may load cursor files such as `HandCursor.cur` from the `Telerik.Windows.Diagrams.Core` assembly with `Assembly.GetManifestResourceStream`. With versions after Q4 2026, these embedded resources are removed and the lookup will return `null`. Use the public `DiagramCursors` static class to assign the equivalent cursor instead.
 
 ## Solution
 
@@ -41,17 +41,17 @@ using Telerik.Windows.Diagrams.Core;
 this.myElement.Cursor = DiagramCursors.Panning;
 ```
 
-Assign the property to the WPF element whose cursor you previously set from the resource stream. The following table maps each resource to its `DiagramCursors` property and equivalent WPF cursor.
+Assign the property to the WPF element whose cursor you previously set from the resource stream. The following table maps each resource to its `DiagramCursors` property.
 
-| Embedded resource | DiagramCursors property | Equivalent WPF cursor |
-|---|---|---|
-| `HandCursor.cur` | `DiagramCursors.Panning` | `Cursors.Hand` |
-| `MouseCursor.cur` | `DiagramCursors.Pointer` | `Cursors.Arrow` |
-| `MoveCursor.cur` | `DiagramCursors.Dragging` | `Cursors.SizeAll` |
-| `SelectionCursor.cur` | `DiagramCursors.RectSelection` | `Cursors.Cross` |
-| `TextCursor.cur` | `DiagramCursors.Beam` | `Cursors.IBeam` |
-| `ResizeCursor_NWSE.cur` | `DiagramCursors.SizeNWSE` | `Cursors.SizeNWSE` |
-| `ResizeCursorNESW.cur` | `DiagramCursors.SizeNESW` | `Cursors.SizeNESW` |
+| Embedded resource | DiagramCursors property |
+|---|---|
+| `HandCursor.cur` | `DiagramCursors.Panning` |
+| `MouseCursor.cur` | `DiagramCursors.Pointer` | 
+| `MoveCursor.cur` | `DiagramCursors.Dragging` | 
+| `SelectionCursor.cur` | `DiagramCursors.RectSelection` |
+| `TextCursor.cur` | `DiagramCursors.Beam` | 
+| `ResizeCursor_NWSE.cur` | `DiagramCursors.SizeNWSE` | 
+| `ResizeCursorNESW.cur` | `DiagramCursors.SizeNESW` | 
 
 ## See Also
 

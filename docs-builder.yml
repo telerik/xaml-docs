@@ -41,6 +41,15 @@ ai-chat-prompt-suggestions:
   - "How to set up licensing for Telerik UI for WPF?"
   - "How to use the grid component in Telerik UI for WPF?"
 
+fileSources:
+  meta:
+    path: .
+  api:
+    meta:
+      title: API Reference
+      relativeUrl: https://www.telerik.com/products/wpf/documentation/api/
+      position: 9999
+
 meta:
     ai-assistant:
         title: AI Tools

@@ -11,18 +11,10 @@ res_type: kb
 ---
 
 ## Environment
-<table>
-<tbody>
-<tr>
-<th scope="row">Product Version</th>
-<td>Current</td>
-</tr>
-<tr>
-<th scope="row">Product</th>
-<td>RadRichTextBox for WPF</td>
-</tr>
-</tbody>
-</table>
+
+| Version | Product | Author | 
+| ---- | ---- | ---- | 
+| 2026.4.1110| RadRichTextBox |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description
 

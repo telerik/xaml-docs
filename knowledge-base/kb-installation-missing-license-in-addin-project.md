@@ -66,3 +66,18 @@ In version __1.6.7__ of [TelerikLicensing](https://www.nuget.org/packages/Teleri
 	}
 ```
 
+### Checking the Product and License Evidence
+
+Call `TelerikLicensing.Register("<your-script-key>")` to submit script-key evidence to the licensing runtime. This call does not confirm that the license covers Telerik UI for WPF or the installed product version.
+
+Compare the product code, product version, and license date in the runtime diagnostics with the product code, type, and expiration of each license evidence entry. A nonzero `LicenseEvidences` count alone does not confirm that the runtime found an applicable license. The top-level `products` list in the license file also does not identify which evidence the runtime used.
+
+For common missing-product, expiration, and version-coverage errors, see [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%}).
+
+### Collecting Runtime Diagnostics
+
+Call `TelerikLicensing.EnableDiagnostics()` before registering the key and initializing Telerik controls. After the licensing check runs, inspect `TelerikLicensing.Diagnostics` or the console output. Compare the product metadata and license evidence details to confirm which product and version the runtime evaluated.
+
+The `TelerikLicensingVerbosity` property and `TELERIK_LICENSING_DEBUG` environment variable control build-task output. They do not enable runtime diagnostics.
+
+

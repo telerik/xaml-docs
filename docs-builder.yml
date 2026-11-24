@@ -2622,3 +2622,7 @@ redirects:
     from: "^/ai-tools/ai-mcp-server/?$"
     to: "/ai-tools/getting-started"
     type: Permanent
+-
+    from: "^/getting-started/sdk-styled-project-migration/?$"
+    to: "/knowledge-base/kb-sdk-styled-project-migration"
+    type: Permanent

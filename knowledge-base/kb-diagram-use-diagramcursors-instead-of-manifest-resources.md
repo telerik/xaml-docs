@@ -6,7 +6,6 @@ page_title: RadDiagram for WPF Cursor Migration - Replacing Manifest Resources w
 slug: kb-diagram-use-diagramcursors-instead-of-manifest-resources
 position: 0
 tags: raddiagram, diagramcursors, cursor, mouse cursor, manifest resource, embedded resource, cursor migration, pointer cursor, panning cursor, resize cursor
-tag: new
 components: ["diagram"]
 res_type: kb
 ---
@@ -53,8 +52,6 @@ Assign the property to the WPF element whose cursor you previously set from the 
 | `TextCursor.cur` | `DiagramCursors.Beam` | `Cursors.IBeam` |
 | `ResizeCursor_NWSE.cur` | `DiagramCursors.SizeNWSE` | `Cursors.SizeNWSE` |
 | `ResizeCursorNESW.cur` | `DiagramCursors.SizeNESW` | `Cursors.SizeNESW` |
-
->note The `DiagramCursors` properties use standard cursor shapes and do not preserve custom `.cur` artwork. If your application needs the original appearance, include and load your own cursor file.
 
 ## See Also
 

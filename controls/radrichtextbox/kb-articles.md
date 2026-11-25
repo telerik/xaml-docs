@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of th
 
 |KB Article|
 |----|
+|[Adding a Consistent Page Border to Every RadRichTextBox Page]({%slug kb-richtextbox-add-page-border-every-page%})|
 |[Displaying Standard Clipboard Context Menu in RichTextBox]({%slug kb-richtextbox-show-standard-clipboard-context-menu%})|
 |[FontSize of RadRichTextBox not Respected]({%slug kb-richtextbox-fontsize-not-respected%})|
 |[Getting a List of All Tables in the Current Selection]({%slug kb-richtextbox-list-tables-current-selection%})|

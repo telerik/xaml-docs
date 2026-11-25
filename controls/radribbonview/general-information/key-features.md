@@ -31,7 +31,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Screen Tips__ - display helpful information for every __RibbonView__ control using the built-in screen tip support. All you need to do is to specify screen tip's image, title and text for the respective control using attached properties. [Read more]({%slug radribbonview-screentips%})
 
-* __Styling and Appearance__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} __RibbonView__ is a fully customizable control, which lets you easily modify all its visual elements. The control comes with several predefined skins that can be customized if needed. [Read more]({%slug radribbonview-styling-overview%})
+* __Styling and Appearance__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} __RibbonView__ is a fully customizable control, which lets you easily modify all its visual elements. The control comes with several predefined skins that can be customized if needed. See [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 * __Commands Support__ - make your code more clear and reusable using the command support provided by such controls as [RadRibbonButton]({%slug radribbonview-ribbonbutton%}), [RadRibbonSplitButton]({%slug radribbonview-split-button%}), [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%}), [RadRibbonRadioButton]({%slug radribbonview-radio-button%}) and [RadToggleButton]({%slug radribbonview-toggle-button%}). 
 

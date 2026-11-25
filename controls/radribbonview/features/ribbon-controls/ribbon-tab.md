@@ -109,4 +109,4 @@ For a full list of the exposed by the __RadRibbonView__ events, take a look at t
 * [Localization]({%slug radribbonview-localization%})
 
 ## See Also
- * [Styling the RadRibbonTab]({%slug radribbonview-styling-ribbontab%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

@@ -144,4 +144,4 @@ __Example 2: Defining and binding the RadBusyIndicator__
 ## See Also
 
 * [RadBusyIndicator]({%slug radbusyindicator-getting-started%})
-* [Integrate with services and a RadWindow]({%slug radbusyindicator-how-to-integrate-with-services-and-radwindow%})
+* [Integrate RadBusyIndicator with a Service Call in RadWindow]({%slug kb-busyindicator-integrate-with-services-and-radwindow%})

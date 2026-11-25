@@ -21,10 +21,10 @@ You can data bind this property in any way that suits your custom logic. The __R
 
 __RadBusyIndicator__ also gives you the __IsBusyIndicationVisible__ property. It is a read only boolean property which value will be equal to __True__ whenever the __RadBusyIndicator__ is enabled and the busy content is still visualized.
 
->tip To read more about the possible scenarios where you can use the __IsBusyIndicationVisible__ property, [look here]({%slug radbusyindicator-how-to-restore-the-focus%}). 
+>tip To read more about using the __IsBusyIndicationVisible__ property to restore focus, see [Restore Focus When RadBusyIndicator Is Hidden]({%slug kb-busyindicator-restore-focus%}).
 
 ## See Also
 
  * [Delayed Display]({%slug radbusyindicator-features-delayed-display%})
 
- * [Integrate with services and a RadWindow]({%slug radbusyindicator-how-to-integrate-with-services-and-radwindow%})
+ * [Integrate RadBusyIndicator with a Service Call in RadWindow]({%slug kb-busyindicator-integrate-with-services-and-radwindow%})

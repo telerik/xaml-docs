@@ -29,4 +29,4 @@ __RadBusyIndicator__ is a content control which gives you the ability to notify 
 
  * [Getting Started]({%slug radbusyindicator-getting-started%})
 
- * [Template Structure]({%slug radbusyindicator-styles-and-templates-template-structure%})
+ * [Customizing BusyIndicator Elements]({%slug radbusyindicator-customizing-busyindicator-elements%})

@@ -44,4 +44,4 @@ __Example 3: Applying the ItemTemplateSelector__
 <snippet id='radtilelist-features-itemtemplateselector-block_3-xaml' />
 
 ## See Also
-* [Styling TileList]({%slug tilelist-styling%})
+* [Customizing Tiles]({%slug tilelist-styling%})

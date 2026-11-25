@@ -52,4 +52,4 @@ Additional features that you may find interesting are:
 * [Localization]({%slug radribbonview-localization%})
 
 ## See Also
- * [Styling the RadRibbonComboBox]({%slug radribbonview-styling-ribboncombobox%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

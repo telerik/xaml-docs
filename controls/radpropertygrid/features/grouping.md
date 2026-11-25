@@ -103,3 +103,5 @@ __Example 8: Set groups' initial state to collapsed__
  * [Edit Modes]({%slug radpropertygrid-edit-modes%})
 
  * [Scrolling into View]({%slug radpropertygrid-scrolling%})
+
+ * [Customizing Groups Appearance]({%slug radpropertygrid-customizing-groups-appearance%})

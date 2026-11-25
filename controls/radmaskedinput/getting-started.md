@@ -147,4 +147,4 @@ __Figure 1__ shows __RadMaskedInput__ with the **Windows8** theme applied.
  * [Events Overview]({%slug radmaskedinput-events-overview%})
  * [Common Features]({%slug radmaskedinput-features-common%})
  * [MaskTokens]({%slug radmaskedinput-features-mask-tokens%})
- * [Template Structure]({%slug radmaskedinput-styles-templates-template-structure%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

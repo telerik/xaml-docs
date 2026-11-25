@@ -53,6 +53,6 @@ The structure of a __RadCloudUpload__ consists of the following main elements:
 
 ## See Also
 
- * [Template Structure]({%slug radcloudupload-templates-template-structure%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
 
  * [Providers]({%slug radcloudupload-features-providers%})

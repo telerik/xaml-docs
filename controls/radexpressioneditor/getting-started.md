@@ -113,7 +113,7 @@ Still, using the __Calculation Panel__ and the items in each __Category__, you a
 
 ## Customizing the editor
 
-You can edit the [template of the control]({%slug radexpressioneditor-styles-and-templates-templates-structure%}), extend its default editor and use your custom version of it to serve your requirements. The default editor for the ExpressionEditor is an __ExpressionTextBox__. 
+You can [edit the control template]({%slug styling-apperance-editing-control-templates%}), extend its default editor and use your custom version of it to serve your requirements. The default editor for the ExpressionEditor is an __ExpressionTextBox__.
 
 ## Pasting
      

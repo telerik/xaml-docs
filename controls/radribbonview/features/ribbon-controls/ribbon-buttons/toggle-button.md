@@ -33,4 +33,4 @@ Besides the __Click__ event, the __RadRibbonToggleButton__ control exposes two a
 <snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-toggle-button-block_4-vb' />
 
 ## See Also
- * [Styling the RadRibbonToggleButton]({%slug radribbonview-styling-ribbontogglebutton%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

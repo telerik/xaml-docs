@@ -44,4 +44,4 @@ To make the content height stretch based on the size of the elements in the sele
 
 ## See Also
 * [Getting Started]({%slug radribbonview-gettingstarted%})
-* [Controlling Appearance]({%slug radribbonview-styling-controlling-appearance%})
+* [Customizing Appearance]({%slug radribbonview-styling-controlling-appearance%})

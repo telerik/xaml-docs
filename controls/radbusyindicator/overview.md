@@ -53,4 +53,4 @@ This is a list with short descriptions of the top-of-the-line features of the __
 ## See Also
  * [Visual Structure]({%slug radbusyindicator-visual-structure%})
  * [Getting Started]({%slug radbusyindicator-getting-started%})
- * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})
+ * [Customizing BusyIndicator Elements]({%slug radbusyindicator-customizing-busyindicator-elements%})

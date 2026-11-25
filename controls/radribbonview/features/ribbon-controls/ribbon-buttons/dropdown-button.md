@@ -52,4 +52,4 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 <snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-dropdown-button-block_5-vb' />
 
 ## See Also
- * [Styling the RadRibbonDropDownButton]({%slug radribbonview-styling-ribbondropdownbutton%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

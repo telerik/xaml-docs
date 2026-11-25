@@ -102,6 +102,29 @@ When you want to hide the __QuickAccessToolbar__, you should set the __RadRibbon
 <snippet id='radribbonview-features-ribbon-controls-qat-block_9-cs' />
 <snippet id='radribbonview-features-ribbon-controls-qat-block_10-vb' />
 
+## Styling QuickAccessToolbar items using ItemContainerStyleSelector
+
+The `QuickAccessToolbar` provides predefined styles for its items. Use its `ItemContainerStyleSelector` property to select a style for each item.
+
+First, define a `RadRibbonView` with a `QuickAccessToolbar`:
+
+<snippet id='radribbonview-styling-and-appearance-styling-quickaccesstoolbar-block_1-xaml' />
+
+Create a custom `StyleSelector` that selects a style for each `RadRibbonButton` based on its text:
+
+<snippet id='radribbonview-styling-and-appearance-styling-quickaccesstoolbar-block_2-cs' />
+<snippet id='radribbonview-styling-and-appearance-styling-quickaccesstoolbar-block_3-vb' />
+
+Define the two custom styles and assign the `QATItemContainerStyleSelector` to the toolbar's `ItemContainerStyleSelector` property:
+
+<snippet id='radribbonview-styling-and-appearance-styling-quickaccesstoolbar-block_4-xaml' />
+
+This example uses [NoXaml assemblies]({%slug styling-apperance-implicit-styles-overview%}). Its styles are based on the [default styles]({%slug implicit-styles-styling-the-controls%}) for the theme.
+
+>caption QuickAccessToolbar items styled with an ItemContainerStyleSelector
+
+![QuickAccessToolbar with styled items](images/RadRibbonView_QuickAccessToolbar_ItemContainerStyleSelector.png)
+
 ## Events
 
 The __RadRibbonView__ class exposes the __ToolBarPositionChanged__ event, which is fired when the __QuickAccessToolbar__ position is changed.        
@@ -141,4 +164,4 @@ Additional features that you may find interesting are:
 * [Localization]({%slug radribbonview-localization%})
 
 ## See Also
- * [Styling the QuickAccessToolbar]({%slug radribbonview-styling-quickaccesstoolbar%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

@@ -495,8 +495,6 @@ meta:
     controls/radribbonview/changes-and-backward-compatibility:
         title: Changes and Backward Compatibility
         position: 6
-    controls/radribbonview/styling-and-appearance:
-        title: Styling and Appearance
     controls/radribbonview/features/layout-controls:
         title: Layout Controls
     controls/radribbonview/features/ribbon-controls:
@@ -2621,4 +2619,80 @@ redirects:
 -
     from: "^/ai-tools/ai-mcp-server/?$"
     to: "/ai-tools/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radbusyindicator/styles-and-templates/[^/]+/?$"
+    to: "/controls/radbusyindicator/customizing-busyindicator-elements"
+    type: Permanent
+-
+    from: "^/controls/radbusyindicator/how-to/modify-default-placement/?$"
+    to: "/controls/radbusyindicator/overview"
+    type: Permanent
+-
+    from: "^/controls/radbusyindicator/how-to/restore-the-focus/?$"
+    to: "/knowledge-base/kb-busyindicator-restore-focus"
+    type: Permanent
+-
+    from: "^/controls/radbusyindicator/how-to/integrate-with-services-and-radwindow/?$"
+    to: "/knowledge-base/kb-busyindicator-integrate-with-services-and-radwindow"
+    type: Permanent
+-
+    from: "^/controls/radcloudupload/styles-and-templates/templates-template-structure/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radcoloreditor/template-structure/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radexpressioneditor/styles-and-templates/[^/]+/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radmaskedinput/styles-and-templates/[^/]+/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/raddatafilter/styles-and-templates/[^/]+/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/raddataform/styles-and-templates/(style-and-templates-overview|templates-structure)/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/raddataform/styles-and-templates/(raddatafor-styling-raddataform|raddatafor-styling-collectionnavigator|styling-dataformdatafield)/?$"
+    to: "/controls/raddataform/customizing-dataform-elements"
+    type: Permanent
+-
+    from: "^/controls/radmap/styles-and-templates/[^/]+/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radpropertygrid/styles-and-templates/(overview|templates-structure)/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radpropertygrid/styles-and-templates/(styling-groups|group-style-selectors)/?$"
+    to: "/controls/radpropertygrid/customizing-groups-appearance"
+    type: Permanent
+-
+    from: "^/controls/radribbonview/styling-and-appearance/styling-controlling-appearance/?$"
+    to: "/controls/radribbonview/styling-controlling-appearance"
+    type: Permanent
+-
+    from: "^/controls/radribbonview/styling-and-appearance/styling-quickaccesstoolbar/?$"
+    to: "/controls/radribbonview/features/ribbon-controls/qat"
+    type: Permanent
+-
+    from: "^/controls/radribbonview/styling-and-appearance/(?!(?:styling-controlling-appearance|styling-quickaccesstoolbar)/?$)[^/]+/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radtilelist/styles-and-templates/templates-structure/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radtilelist/styles-and-templates/styling-tilelist/?$"
+    to: "/controls/radtilelist/styling-tilelist"
     type: Permanent

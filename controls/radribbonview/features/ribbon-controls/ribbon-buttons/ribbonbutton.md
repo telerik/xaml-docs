@@ -24,4 +24,4 @@ This button has its initial size set to __Large__ and its text label set to __"E
 ![{{ site.framework_name }} RadRibbonView Ribbon Button](images/RibbonView_Buttons_Button.png)          
 
 ## See Also
- * [Styling the RadRibbonButton]({%slug radribbonview-styling-ribbonbutton%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

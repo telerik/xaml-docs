@@ -48,6 +48,6 @@ This section defines the terms and concepts used in the scope of the __RadDataFi
 
  * [Getting Started]({%slug datafilter-getting-started%})
 
- * [Template Structure]({%slug raddatafilter-styles-and-templates-template-structure%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
 
  * [End User Manual]({%slug datafilter-end-user-manual%})

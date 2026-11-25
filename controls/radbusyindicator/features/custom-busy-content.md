@@ -85,10 +85,10 @@ Here is the final result:
 
 ## See Also
 
- * [Template Structure]({%slug radbusyindicator-styles-and-templates-template-structure%})
+ * [Customizing BusyIndicator Elements]({%slug radbusyindicator-customizing-busyindicator-elements%})
 
  * [Progress Determination]({%slug radbusyindicator-features-progress-determination%})
 
  * [Report Progress Value]({%slug radbusyindicator-features-report-progress-value%})
 
- * [Integrate with services and a RadWindow]({%slug radbusyindicator-how-to-integrate-with-services-and-radwindow%})
+ * [Integrate RadBusyIndicator with a Service Call in RadWindow]({%slug kb-busyindicator-integrate-with-services-and-radwindow%})

@@ -59,5 +59,5 @@ Do not miss the online demos at: {% if site.site_name == 'Silverlight' %}[https:
 ## See Also
  * [Visual Structure]({%slug radmap-visual-structure%})
  * [Getting Started]({%slug radmap-getting-started%})
- * [Styles and Templates]({%slug radmap-styles-and-templates-overview%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
  * [Events]({%slug radmap-events%})

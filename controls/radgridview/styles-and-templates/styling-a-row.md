@@ -13,10 +13,6 @@ position: 14
 
 > `RadGridView` supports setting the background color of the selected row, as well as setting the mouse-over color of the row. More information can be found in the [SelectedBackground and MouseOverBackground]({%slug radgridview-rows-selected-background%}) article.
 
->caption GridViewRow template structure
-
-![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewRow template structure](images/gridview-row-template.png)
-
 ## Targeting the GridViewRow Element
 
 In order to style all RadGridView rows of an application, you should create an appropriate style targeting the `GridViewRow` element.
@@ -27,7 +23,7 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
-> To learn how to modify the default `GridViewCell` style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+> To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 __Styling all rows of an application__
 <snippet id='radgridview-styles-and-templates-styling-a-row-styling_all_rows_of_an_application-xaml' />

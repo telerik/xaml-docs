@@ -41,11 +41,7 @@ An exception of this rule are the MS controls that could be styled in all Teleri
 
 __RadGridView's__ validation tooltip styles are located in __Telerik.Windows.Controls.GridView.xaml__; those related to editors are in the respective theme XAML markup file.
 
- There are two approaches you can follow in order to extract the __ControlTemplates__ of the validation tooltip:
-
-* Manually [Edit the ControlTemplates]({%slug styling-apperance-editing-control-templates%}) 
-
-* Use Microsoft Expression Blend
+To extract the validation tooltip templates, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 >tip The recommended approach for editing __ControlTemplates__ is using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
 

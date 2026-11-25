@@ -46,4 +46,4 @@ Besides the __Click__ event, the __RadRibbonRadioButton__ control exposes two ad
 <snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-radio-button-block_5-vb' />
 
 ## See Also
- * [Styling the RadRibbonRadioButton]({%slug radribbonview-styling-ribbonradiobutton%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

@@ -34,5 +34,5 @@ Here is the result:
 
 ## See Also
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})
- * [Templated Nodes]({%slug radtreeview-styles-and-templates-templated-nodes%})
+ * [Creating a Horizontal TreeView]({%slug radtreeview-styles-and-templates-templated-nodes%})
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})

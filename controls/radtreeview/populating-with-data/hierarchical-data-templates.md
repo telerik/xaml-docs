@@ -70,5 +70,5 @@ Here is the final result:
 ![{{ site.framework_name }} RadTreeView Custom HierarchicalDataTemplate and ItemContainerStyle](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)
 
 ## See Also
- * [Styling and Appearance - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

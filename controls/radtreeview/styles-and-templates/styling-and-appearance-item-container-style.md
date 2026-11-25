@@ -59,5 +59,5 @@ __Example 3: Setting the ItemContainerStyle property__
 
 ## See Also
  * [ItemContainerStyleSelector]({%slug radtreeview-populating-with-data-item-container-style-selector%})
- * [Styling and Appearance - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})

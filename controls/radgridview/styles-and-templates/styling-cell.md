@@ -13,10 +13,6 @@ position: 4
 
 In this article, we discuss various approaches to style the RadGridView cells.
 
->caption GridViewCell template structure
-
-![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewCell template structure](images/gridviewcell-template.png)
-
 ## Styling all RadGridView Cells
 
 > The examples from this article assume that the RadGridView is set up as demonstrated in its [Getting Started]({%slug gridview-getting-started2%}) article.
@@ -27,7 +23,7 @@ You have two options:
 
 * To create an empty style and set it up on your own.
 
-* To copy the default style of the control and [modify it]({%slug gridview-modifying-default-styles%}).
+* To copy the default style of the control and [modify it]({%slug styling-apperance-editing-control-templates%}).
 
 __Styling all cells of an application__
 

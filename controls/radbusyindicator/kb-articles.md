@@ -18,6 +18,8 @@ The following article list Knowledge Base articles related to this section of th
 |[AnimationException in WPF RadBusyIndicator]({%slug radbusyindicator-wpf-crash-animation%})|
 |[Display RadBusyIndicator When UI is Blocked During Layout Operation]({%slug kb-busyindicator-blocked-rendering%})|
 |[Perform Time-Consuming Operation while Showing Busy Indicator]({%slug kb-busyindicator-backgroundworker-operation%})|
+|[Restore Focus When RadBusyIndicator Is Hidden]({%slug kb-busyindicator-restore-focus%})|
+|[Integrate RadBusyIndicator with a Service Call in RadWindow]({%slug kb-busyindicator-integrate-with-services-and-radwindow%})|
 
 ## See Also
 

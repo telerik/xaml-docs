@@ -143,5 +143,5 @@ __Figure 4__ shows __RadTreeView__ with Windows8 theme applied.
  * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})
  * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
  * [Populating with Data - Overview]({%slug radtreeview-populating-with-data-overview%})
- * [Styles and Templates - Overview]({%slug radtreeview-styling-and-appearance-overview2%}) 
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
  * [Events - Overview]({%slug radtreeview-events-overview%})

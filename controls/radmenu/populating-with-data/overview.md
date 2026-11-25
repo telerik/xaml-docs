@@ -35,4 +35,4 @@ In this section you will find:
 
  * [Events - Overview]({%slug radmenu-events-overview%})
 
- * [Styles and Templates - Overview]({%slug radmenu-styles-and-templates-overview%})
+ * [Customizing Appearance]({%slug radmenu-customizing-appearance%})

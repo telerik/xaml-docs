@@ -23,7 +23,7 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default GridViewNewRow style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 __Example 1: Styling the GridViewNewRow implicitly__
 

@@ -55,4 +55,4 @@ Build complex filter expressions in a breeze with Telerik __DataFilter__. The co
 
  * [End User Manual]({%slug datafilter-end-user-manual%})
 
- * [Styles and Templates - Overview]({%slug raddatafilter-styles-and-templates-overview%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

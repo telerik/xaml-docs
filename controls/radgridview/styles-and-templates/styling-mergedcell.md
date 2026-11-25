@@ -12,8 +12,6 @@ site_name: WPF
 
 # Styling Merged Cells
 
->tip Merged cells have a template structure similar to [RadGridView cells]({%slug gridview-styling-cell%}). 
-
 In this article we will discuss the following topics:
 
 * [Targeting the GridViewMergedCell element](#targeting-the-gridviewmergedcell-element)
@@ -32,7 +30,7 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default __GridViewMergedCell__ style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 >The __GridViewMergedCell__ is located in the __Telerik.Windows.Controls.GridView__ namespace of the __Telerik.Windows.Controls.GridView__ assembly.
 

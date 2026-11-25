@@ -183,4 +183,4 @@ The __RadRibbonView__ is a complex control and the __ribbon galleries__ are only
  * [Resizing]({%slug radribbonview-resizing%})
  * [Minimization]({%slug radribbonview-minimization%})
  * [Localization]({%slug radribbonview-localization%})
- * [Styling the RadRibbonGallery]({%slug radribbonview-styling-ribbongallery%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

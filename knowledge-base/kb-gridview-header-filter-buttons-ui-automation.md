@@ -99,7 +99,7 @@ Add a custom presenter and automation peer to your WPF project. Then replace the
     }
 	```
 
-2. Copy the full `GridViewHeaderRow` template and its resources for your theme. Follow [the default-style instructions]({%slug gridview-modifying-default-styles%}) to copy the template and its theme resources. Set the template key to `FixedGridViewHeaderRowTemplate`. Replace the existing `grid:DataCellsPresenter` element with the custom presenter. Keep the remaining elements and their theme-specific attributes and layout values.
+2. Copy the full `GridViewHeaderRow` template and its resources for your theme. Follow the [control template instructions]({%slug styling-apperance-editing-control-templates%}) to copy the template and its theme resources. Set the template key to `FixedGridViewHeaderRowTemplate`. Replace the existing `grid:DataCellsPresenter` element with the custom presenter. Keep the remaining elements and their theme-specific attributes and layout values.
 
 	Add or reuse the following namespace declarations on the root element of the resource dictionary that contains the template and style. Replace `WpfApp` with the namespace that contains the custom presenter.
 

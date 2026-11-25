@@ -25,7 +25,7 @@ Each of the columns that derive from __GridViewBoundColumnBase__ have an __Edito
 
 For example, if you want to set the style for the __GridViewDataColumn__'s editor, you have to create a __Style__ that targets the __TextBox__ control.
 
->To learn how to modify the default styles of a control, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 __Example 1: Styling all text boxes of an application__
 

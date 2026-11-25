@@ -15,11 +15,6 @@ position: 3
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the default control appearance](images/gridview_default_style.png)
 
->caption RadGridView template structure
-
-![Telerik UI for {{ site.framework_name }} RadGridView showing the first part of the control template structure](images/Styling_RadGridView01.png)
-![Telerik UI for {{ site.framework_name }} RadGridView showing the second part of the control template structure](images/Styling_RadGridView02.png)
-
 ## Targeting the RadGridView Element
 
 In order to style all instances of __RadGridView__ in your application, you should create an appropriate style targeting the **RadGridView** control.
@@ -30,7 +25,7 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default __RadGridView__ style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 __Example 1: Styling all instances of RadGridView in an application__
 

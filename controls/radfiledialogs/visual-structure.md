@@ -48,4 +48,4 @@ This help article will help you understand the visual structure of the file dial
 ## See Also
 
 * [Getting Started]({%slug radfiledialogs-getting-started%})
-* [Styles and Templates]({%slug radfiledialogs-styles-and-templates%})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

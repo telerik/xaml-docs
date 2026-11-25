@@ -103,4 +103,4 @@ Additional features that you may find interesting are:
 * [Resizing]({%slug radribbonview-resizing%})
 * [Minimization]({%slug radribbonview-minimization%})
 * [Localization]({%slug radribbonview-localization%})
-* [Styling and Appearance]({%slug radribbonview-styling-overview%})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

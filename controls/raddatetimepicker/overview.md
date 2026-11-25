@@ -36,7 +36,7 @@ This is a list with short descriptions of the top-of-the-line features of the Te
 
 * __Advanced Parser__: You can enter any number or string in the input field of __RadDateTimePicker__ and the entered value will be transformed to a valid date.  For example, if you type "1", the first day of the month will be shown after leaving the input field. [Read more]({%slug raddatetimepicker-features-militaryparsing%})
 
-* __Styling and Appearance__: Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} __RadDateTimePicker__ can be fully customized using Expression Blend. There are also several pre-defined themes that can be used to style the control. [Read more]({%slug raddatetimepicker-styling-overview%})
+* __Styling and Appearance__: Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} __RadDateTimePicker__ can be fully customized using Expression Blend. There are also several pre-defined themes that can be used to style the control. See [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) and [Customizing the Calendar and Clock]({%slug raddatetimepicker-customizing-calendar-and-clock%}).
 
 * __Enhanced Routed Events Framework__: To help your code become even more elegant and concise, we implemented an Enhanced Routed Events Framework for the controls from the __UI for {{ site.framework_name }}__ suite.  This gives you more freedom when you design your applications since you can write instance handlers as well as class handlers for the routed events of our controls. [Read more]({%slug raddatetimepicker-events%})
 
@@ -62,5 +62,5 @@ This is a list with short descriptions of the top-of-the-line features of the Te
 
 * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
 * [Getting Started]({%slug raddatetimepicke-getting-started%})
-* [Styles and Templates]({%slug raddatetimepicker-styling-overview%})
+* [Customizing the Calendar and Clock]({%slug raddatetimepicker-customizing-calendar-and-clock%})
 * [Events]({%slug raddatetimepicker-events%})

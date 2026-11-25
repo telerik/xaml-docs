@@ -160,5 +160,5 @@ __Figure 2__ shows a __RadDataFilter__ with the **Windows8** theme applied.
 ## See Also
  * [Visual Structure]({%slug raddatafilter-visual-structure%})
  * [End User Manual]({%slug datafilter-end-user-manual%})
- * [Styles and Templates - Overview]({%slug raddatafilter-styles-and-templates-overview%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
 

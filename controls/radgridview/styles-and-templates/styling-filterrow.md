@@ -30,9 +30,9 @@ Here are the four different scenarios that you can get:
       
 ## Modifying the StringFilterEditor's Style
 
-The __StringFilterEditor__ is nothing more than a __TextBox__ and a __ToggleButton__ wrapped in a control. In order to change __StringFilterEditor__'s visual appearance, you should modify its default style.
+To change the appearance of __StringFilterEditor__, modify its default style.
 
->To learn how to modify the default StringFilterEditor style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 __Example 1: Styling the StringFilterEditor__
 
@@ -54,7 +54,7 @@ __Example 2: Styling the FieldFilterControl__
 
 ## Modifying Other Editors
 
-Since the created editor will be inserted as the **Content** of __PART_FilterEditorContentControl__, you can attach to a __FieldFilterEditorCreated__ event and apply the respective style to the respective editor. For example, if the editor is a plain __TextBox__, you can change its __Background__ like so:
+Handle the __FieldFilterEditorCreated__ event to customize the editor. For example, if the editor is a __TextBox__, you can change its __Background__:
 
 __Example 3: Setting a background for the filtering row TextBox__
 

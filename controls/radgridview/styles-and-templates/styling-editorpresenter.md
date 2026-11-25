@@ -13,9 +13,7 @@ position: 6
 
 If you want to change the appearance of a cell when it enters edit mode, you should modify the style of the __GridViewEditorPresenter__. This element is a plain presenter used to display the editors for the cells.
 
->To learn how to modify the default styles of a control, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
-
->You could also learn how to extract control templates in the [following article]({%slug styling-apperance-editing-control-templates%}).
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 __Example 1: Styling the GridViewEditorPresenter__
 
@@ -33,7 +31,5 @@ __Example 1: Styling the GridViewEditorPresenter__
 ## See Also
 
  * [Styling Column Editor]({%slug radgridview-styling-column-editor%})
-
- * [Modifying Default Styles]({%slug gridview-modifying-default-styles%})
 
  * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).

@@ -54,4 +54,4 @@ You can see how to use the __GetItemByPath()__ method with a tree in a data bind
 
 ## See Also
  * [Implement Drag and Drop Between TreeView and ListBox]({%slug radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox%})
- * [Templated Nodes]({%slug radtreeview-styles-and-templates-templated-nodes%})
+ * [Creating a Horizontal TreeView]({%slug radtreeview-styles-and-templates-templated-nodes%})

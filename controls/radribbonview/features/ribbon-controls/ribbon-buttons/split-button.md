@@ -57,4 +57,4 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 <snippet id='radribbonview-features-ribbon-controls-ribbon-buttons-split-button-block_5-vb' />
 
 ## See Also
- * [Styling the RadRibbonSplitButton]({%slug radribbonview-styling-ribbonsplitbutton%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

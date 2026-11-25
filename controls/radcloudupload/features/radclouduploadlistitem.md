@@ -32,5 +32,4 @@ __Example 1: Setting the Buttons property using an implicit style__
 * [Adding Files Programmatically]({%slug radcloudupload-features-adding-files-programmatically%})
 * [Events]({%slug radcloudupload-features-events%})
 * [CloudUploadFile]({%slug radcloudupload-cloud-upload-file%})
-* [Template Structure]({%slug radcloudupload-templates-template-structure%})
 * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

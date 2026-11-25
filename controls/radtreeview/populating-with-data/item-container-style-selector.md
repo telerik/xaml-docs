@@ -69,5 +69,5 @@ The next step is to create a selector where the logic about selecting the right 
 
 ## See Also
  * [ItemContainerStyle]({%slug radtreeview-styling-and-appearance-item-container-style%})
- * [Styling and Appearance - Overview]({%slug radtreeview-styling-and-appearance-overview2%})
+ * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})

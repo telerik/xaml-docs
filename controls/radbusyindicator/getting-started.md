@@ -130,7 +130,7 @@ __Figure 1__ shows a __RadBusyIndicator__ with the **Fluent** theme applied.
 
  * [Visual Structure]({%slug radbusyindicator-visual-structure%})
 
- * [Styles and Templates - Overview]({%slug radbusyindicator-styles-and-templates-overview%})
+ * [Customizing BusyIndicator Elements]({%slug radbusyindicator-customizing-busyindicator-elements%})
 
- * [Integrate with services and a RadWindow]({%slug radbusyindicator-how-to-integrate-with-services-and-radwindow%})
+ * [Integrate RadBusyIndicator with a Service Call in RadWindow]({%slug kb-busyindicator-integrate-with-services-and-radwindow%})
 

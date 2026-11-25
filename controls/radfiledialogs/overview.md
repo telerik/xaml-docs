@@ -79,4 +79,4 @@ The file dialogs also support many other features of the native Windows file dia
 * [Getting Started]({%slug radfiledialogs-getting-started%})
 * [Visual Structure]({%slug radfiledialogs-visual-structure%})
 * [Events]({%slug radfiledialogs-events%})
-* [Styles and Templates]({%slug radfiledialogs-styles-and-templates%})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

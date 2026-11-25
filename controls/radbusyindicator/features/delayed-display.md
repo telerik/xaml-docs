@@ -43,4 +43,4 @@ As a result when the user clicks on a button after a delay of five seconds, the 
 
  * [Enabling the Indicator]({%slug radbusyindicator-features-enabling-the-indicator%})
 
- * [Modify the default placement]({%slug radbusyindicator-how-to-modify-default-placement%})
+ * [Overview]({%slug radbusyindicator-overview%})

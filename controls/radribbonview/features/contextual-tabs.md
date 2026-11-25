@@ -123,4 +123,4 @@ __Example 11: Disable selection of the first tab inside contextual tab__
 
 ## See Also
  * [Ribbon Tab]({%slug radribbonview-ribbon-tab%})
- * [Controlling Appearance]({%slug radribbonview-styling-controlling-appearance%})
+ * [Customizing Appearance]({%slug radribbonview-styling-controlling-appearance%})

@@ -1,7 +1,7 @@
 ---
-title: Templated Nodes
-page_title: Templated Nodes
-description: Check our &quot;Templated Nodes&quot; documentation article for the RadTreeView {{ site.framework_name }} control.
+title: Creating a Horizontal TreeView
+page_title: Creating a Horizontal TreeView
+description: Create a horizontal RadTreeView by customizing its items panel and item templates.
 components: ["treeview"]
 slug: radtreeview-styles-and-templates-templated-nodes
 tags: templated,nodes
@@ -9,7 +9,7 @@ published: True
 position: 6
 ---
 
-# Templated Nodes
+# Creating a Horizontal TreeView
 
 The Telerik __RadTreeView__ is a lookless and completely stylable control. This tutorial will demonstrate how you can build a horizontal treeview by simply using __Styles__ and __ControlTemplates__.
 

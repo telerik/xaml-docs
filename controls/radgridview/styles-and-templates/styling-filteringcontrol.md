@@ -17,11 +17,7 @@ In this topic we will discuss:
 
 * [Styling FilteringControl](#styling-filteringcontrol)
 
->Both controls are located in the **Telerik.Windows.Controls.GridView** namespace of the **Telerik.Windows.Controls.GridView** assembly. When working in **Expression Blend**, the namespaces that are needed will be added automatically.
-
->caption The FilteringControl & FilteringDropDown template structure
-
-![Telerik UI for {{ site.framework_name }} RadGridView showing the FilteringControl and FilteringDropDown template structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
+>Both controls are located in the **Telerik.Windows.Controls.GridView** namespace of the **Telerik.Windows.Controls.GridView** assembly.
 
 ## Styling FilteringDropDown
 
@@ -31,7 +27,7 @@ The filtering dropdown icon can be styled by creating an appropriate style targe
 
 ![Telerik UI for {{ site.framework_name }} RadGridView showing the default FilteringDropDown element in a column header](images/RadGridView_Styles_and_Templates_FilteringDropDown.png)
 
-To learn how to modify the default FilteringDropDown style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 ## Styling FilteringControl
 
@@ -51,8 +47,6 @@ You can modify it similarly to the FilteringDropDown style and set it as follows
 You are also free to create your own [Custom Filtering Control]({%slug gridview-filtering-custom-filtering-controls%}) and craft it as you like.
 
 ## See Also
-
- * [Modifying Default Styles]({%slug gridview-modifying-default-styles%})
 
  * [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
 

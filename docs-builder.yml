@@ -346,9 +346,6 @@ meta:
     controls/radcloudupload/features:
         title: Features
         position: 5
-    controls/radcloudupload/styles-and-templates:
-        title: Styles and Templates
-        position: 6
     controls/radcloudupload/how-to:
         title: How To
         position: 7
@@ -365,8 +362,6 @@ meta:
         title: RadColorPaletteView
     controls/radcolorpicker/features/radcolorselector:
         title: RadColorSelector
-    controls/radcolorpicker/styling-and-appearance:
-        title: Appearance
     controls/raddatabar:
         title: RadDataBar
     controls/raddiagram:
@@ -555,9 +550,6 @@ meta:
     controls/radupload/changes-and-backwards-compatibility:
         title: Changes and Backward Compatibility
         position: 8
-    controls/radupload/styles-and-templates:
-        title: Styles and templates
-        position: 9
     controls/radupload/how-to:
         title: How To
         position: 10
@@ -1249,12 +1241,16 @@ redirects:
     to: "/knowledge-base/kb-gridview-modify-foreground-selected-hovered-row"
     type: Permanent
 -
-    from: "^/controls/raddatetimepicker/styles-and-templates/styling-template-structure$"
-    to: "/controls/raddatetimepicker/styles-and-templates/styling-overview"
+    from: "^/controls/raddatetimepicker/styles-and-templates/(styling-template-structure|styling-overview|styling-raddatetimepicker)/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
     type: Permanent
 -
-    from: "^/controls/radtreeview/styles-and-templates/tesmplates-structure$"
-    to: "/controls/radtreeview/styles-and-templates/styling-and-appearance-overview2"
+    from: "^/controls/raddatetimepicker/styles-and-templates/(styling-calendar|styling-clock-view)/?$"
+    to: "/controls/raddatetimepicker/customizing-calendar-and-clock"
+    type: Permanent
+-
+    from: "^/controls/radtreeview/styles-and-templates/(tesmplates-structure|styling-and-appearance-overview2|styling-appearance-styling-line)/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
     type: Permanent
 -
     from: "^/controls/radcombobox/styles-and-templates/combobox-styling-and-appearance-overview$"
@@ -1281,8 +1277,12 @@ redirects:
     to: "/installation/manual-setup-guides/visual-studio-extensions/extensions-overview"
     type: Permanent
 -
-    from: "^/controls/radmenu/styles-and-templates/templates-structure$"
-    to: "/controls/radmenu/styles-and-templates/overview"
+    from: "^/controls/radmenu/styles-and-templates/(?!(?:styling-and-templates-styling-radmenu|styling-and-appearance-styling-radmenuitem)/?$)[^/]+/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radmenu/styles-and-templates/(styling-and-templates-styling-radmenu|styling-and-appearance-styling-radmenuitem)/?$"
+    to: "/controls/radmenu/customizing-appearance"
     type: Permanent
 -
     from: "^/controls/radwindow/styles-and-templates/overview$"
@@ -2461,6 +2461,10 @@ redirects:
     to: "/controls/radgridview/overview2"
     type: Permanent 
 -
+    from: "^/controls/radgridview/styles-and-templates/(stylines-and-templates-overview|modifying-default-styles)/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
     from: "^/controls/radtreelistview/styles-and-templates/overview$"
     to: "/controls/radtreelistview/overview"
     type: Permanent 
@@ -2695,4 +2699,24 @@ redirects:
 -
     from: "^/controls/radtilelist/styles-and-templates/styling-tilelist/?$"
     to: "/controls/radtilelist/styling-tilelist"
+    type: Permanent
+-
+    from: "^/controls/radfiledialogs/styles-and-templates/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radnumericupdown/styles-and-templates/[^/]+/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radprogressbar/styling-and-appearance/required-template-parts/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radtimebar/styles-and-templates/[^/]+/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radtimepicker/styles-and-templates/styling-and-appearance-overview/?$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
     type: Permanent

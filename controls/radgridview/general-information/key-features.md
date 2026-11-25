@@ -45,11 +45,11 @@ This is a list with short descriptions of the top-of-the line features of __RadG
 
 * __StyleSelectors__: RadGridView has built in support for applying Style selectors. [Read more]({%slug gridview-cell-style-selector%})
 
-* __Styling and Appearance__: RadGridView can be fully customized using Expression Blend. There are also several pre-defined themes that can be used. Furthermore, Telerik unique style building mechanism allows you to change the skin’s color scheme with just a few clicks. [Read more]({%slug gridview-stylines-and-templates-overview%})
+* __Styling and Appearance__: Customize RadGridView using styles and themes. [Read more]({%slug radgridview-styles-and-templates-styling-radgridview%}).
 
 * __TemplateSelectors__: RadGridView has built-in support for applying DataTemplate selectors. [Read more]({%slug gridview-template-selectors-overview%}).
 
-* __Templates__: RadGridView has built in templates support, which gives you the power to fully customize the look & feel. Use Expression Blend to edit existing templates or create new ones. [Read more]({%slug gridview-stylines-and-templates-overview%}).
+* __Templates__: Customize the appearance of RadGridView by editing its control template. [Read more]({%slug styling-apperance-editing-control-templates%}).
 
 * __Custom Layout__: You have full control over the way the data is presented in the grid through cell customization and row layout customization.  Or you can combine the built-in appearance of the grid cells with a custom view that you have defined. You can let some of your cells get generated automatically and provide your own styles and templates for the rest.
 You can easily customize a column’s cell template and the row layout in any way your user experience team may desire. You can also combine the built-in appearance settings of the grid with your custom one. Furthermore you can customize the grid’s column templates and use unbound data columns.

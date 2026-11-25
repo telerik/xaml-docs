@@ -11,10 +11,6 @@ position: 13
 
 # Styling Header Row
 
->caption GridViewHeaderRow template structure
-
-![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewHeaderRow template structure](images/gridview-headerrow-template.png)
-
 ## Targeting the GridViewHeaderRow Element
 
 In order to style all __RadGridView__ header rows of an application, you should create an appropriate style targeting the __GridViewHeaderRow__ element.
@@ -25,7 +21,7 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default GridViewHeaderRow style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 __Example 1: Styling all header rows of an application__
 

@@ -74,7 +74,7 @@ __Example 2: Adding a row-specific header column__
 
 This approach displays the `RowHeader` property as a regular, bound column. It is the recommended approach when the row header is data from the item.
 
-If you need a separate visual gutter outside the data columns, RadGridView does not expose a documented __RowHeader__ or __GridViewRowHeader__ API. Customize the __GridViewRow__ control template or the applicable theme template instead. Preserve all required template parts when modifying the template. For more information, see [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) and [Styling Overview]({%slug gridview-stylines-and-templates-overview%}).
+If you need a separate visual gutter outside the data columns, RadGridView does not expose a documented __RowHeader__ or __GridViewRowHeader__ API. Customize the __GridViewRow__ control template or the applicable theme template instead. Preserve all required template parts when modifying the template. For more information, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 ## See Also
 

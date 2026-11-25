@@ -204,7 +204,7 @@ __Figure 4__ shows __RadGridView__ with the **Windows8** theme applied.
 
  * [Visual Structure]({%slug gridview-visual-structure%})
 
- * [Styling and Appearance]({%slug gridview-stylines-and-templates-overview%})
+ * [Styling RadGridView]({%slug radgridview-styles-and-templates-styling-radgridview%})
 
  * [Configure the Data Bindings]({%slug gridview-configuring-the-databindings%})
 

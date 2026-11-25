@@ -67,7 +67,7 @@ However, in most of the cases you have to bind your RadMenu to a collection of b
 
 ## Styles and Templates
 
-Take a look at the [Styles and Templates]({%slug radmenu-styles-and-templates-overview%}) section which is entirely dedicated to styling and templating the RadMenu control.
+See [Customizing Appearance]({%slug radmenu-customizing-appearance%}) for styling menu elements and [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) for template customization.
 
 ## Work with the RadMenu
 
@@ -146,6 +146,6 @@ The following image shows a `RadMenu` with the `Windows8` theme applied.
 
  * [Populating with Data - Overview]({%slug radmenu-populating-with-data-overview%})
 
- * [Styles and Templates - Overview]({%slug radmenu-styles-and-templates-overview%})
+ * [Customizing Appearance]({%slug radmenu-customizing-appearance%})
 
  * [Events - Overview]({%slug radmenu-events-overview%})

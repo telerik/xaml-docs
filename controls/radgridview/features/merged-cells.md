@@ -107,4 +107,4 @@ __Example 5: Specify RowDetailsTemplate for RadGridView__
 
 * [Styling Merged Cells]({%slug gridview-styling-mergedcell%})
 
-* [Styles and Templates]({%slug gridview-stylines-and-templates-overview%})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

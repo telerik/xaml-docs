@@ -15,17 +15,13 @@ position: 10
 
 If you want to style all group footer rows of your application, you should create an appropriate style targeting the __GridViewGroupFooterRow__ element.
 
->caption GridViewGroupFooterRow template structure
-
-![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewGroupFooterRow template structure](images/gridview-groupfooterrow-style.png)
-
 You have two options:
 
 * To create an empty style and set it up on your own.
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default GridViewFooterCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 __Example 1: Styling all group footer rows of an application__
 

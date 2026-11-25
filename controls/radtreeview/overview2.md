@@ -36,7 +36,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __BringIntoView Support__: The RadTreeView API offers BringIntoView support, which brings the provided item into view. Read more about this in the [BringIntoView Support]({%slug radtreeview-features-treeviewitem-bring-into-view-support%}) article.
 
-* __Styling and Appearance__: The control ships with several pre-defined themes that can be used to style the treeview control. Furthermore, Telerik's unique style building mechanism allows you to change the skin’s color scheme with just a few clicks. Read more about this in the [Styles and Templates]({%slug radtreeview-styling-and-appearance-overview2%}) section.
+* __Styling and Appearance__: The control ships with predefined themes that can be used to style the treeview. For template customization, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 * __Keyboard Support__: Navigate through the nodes of the treeview without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation, editing, expanding, collapsing and selecting the nodes. Read more about this in the [Keyboard Support]({%slug radtreeview-features-keyboard-support%}) article.
 
@@ -78,6 +78,6 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * [Visual Structure]({%slug radtreeview-visual-structure%})
 * [Getting Started]({%slug radtreeview-getting-started%})
-* [Styles and Templates]({%slug radtreeview-styling-and-appearance-overview2%})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})
 * [Events]({%slug radtreeview-events-overview%})
 * [Populating with Data]({%slug radtreeview-populating-with-data-overview%})

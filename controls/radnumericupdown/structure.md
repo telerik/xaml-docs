@@ -11,7 +11,7 @@ position: 2
 
 # Structure
 
-This section defines terms and concepts used in the scope of __RadNumericUpDown__ you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. For more detailed descriptions of the required parts of the control please visit the [Required Parts]({%slug radnumericupdown-required-parts%}) section. 
+This section defines terms and concepts used in the scope of __RadNumericUpDown__ you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. For information on modifying control templates, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 ![{{ site.framework_name }} RadNumericUpDown Visual Structure](images/RadNumericUpDown_structure.png)
 

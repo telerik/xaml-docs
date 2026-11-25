@@ -27,7 +27,7 @@ You can also control the visibility of the lines between the root items (the ite
 
 ## Change the LineColor
 
-Take a look at the [Styling the Lines]({%slug radtreeview-styling-appearance-styling-line%}) topic in the Styling and Appearance section.
+To change the line color, extract the `RadTreeViewItem` control template and modify its `TreeView_LineColor` resource. See [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) for extraction instructions.
 
 ## See Also
  * [Selection]({%slug radtreeview-feautres-treeviewitem-selection%})

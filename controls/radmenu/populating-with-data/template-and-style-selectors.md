@@ -37,4 +37,4 @@ The __HierarchicalDataTemplate__ used with the __RadMenu__ also exposes __ItemCo
 
  * [Binding to Dynamic Data]({%slug radmenu-populating-with-data-binding-to-dynamic-data%})
 
- * [Styles and Templates - Overview]({%slug radmenu-styles-and-templates-overview%})
+ * [Customizing Appearance]({%slug radmenu-customizing-appearance%})

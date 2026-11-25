@@ -33,7 +33,7 @@ The RadTimePicker control derives from the RadDateTimePicker control and inherit
 
 * __Advanced Parser__: You can enter any number or string in the input field of __RadTimePicker__ and the entered value will be transformed to a valid time.
 
-* __Styling and Appearance__: __RadTimePicker__ can be fully customized. There are also several pre-defined themes that can be used to style the control. [Read more]({%slug raddatetimepicker-styling-overview%})
+* __Styling and Appearance__: __RadTimePicker__ can be fully customized. There are also several pre-defined themes that can be used to style the control. See [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 * __Enhanced Routed Events Framework__: To help your code become even more elegant and concise, we implemented an Enhanced Routed Events Framework for the controls from the __UI for {{ site.framework_name }}__ suite.  This gives you more freedom when you design your applications since you can write instance handlers as well as class handlers for the routed events of our controls. [Read more]({%slug raddatetimepicker-events%})
 
@@ -59,4 +59,4 @@ The RadTimePicker control derives from the RadDateTimePicker control and inherit
 
 * [Visual Structure]({%slug radtimepicker-structure%})
 * [Getting Started]({%slug radtimepicker-timepicker-populating%})
-* [Styles and Templates]({%slug radtimepicker-styling-and-appearance-overview%})
+* [Editing Control Templates]({%slug styling-apperance-editing-control-templates%})

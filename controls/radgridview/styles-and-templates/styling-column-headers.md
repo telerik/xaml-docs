@@ -11,10 +11,6 @@ position: 7
 
 # Styling Column Headers
 
->caption GridViewHeaderCell template structure
-
-![Telerik UI for {{ site.framework_name }} RadGridView showing the GridViewHeaderCell template structure](images/gridviewheadercell-template.png)
-
 ## Targeting the GridViewHeaderCell element
 
 In order to style all header cells in your application, you should create an appropriate style targeting the __GridViewHeaderCell__ element.
@@ -25,7 +21,7 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default GridViewHeaderCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+>To modify the default style, see [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}).
 
 The style in **Example 1** will style all the column headers in your application.
 

@@ -1,7 +1,7 @@
 ---
 title: Azure Map Provider
 page_title: Azure Map Provider
-description: Check our &quot;Azure Map Provider&quot; documentation article for the RadMap WPF control.
+description: Configure the RadMap AzureMapProvider with an Azure Maps key, tilesets, language settings, custom vector styles, and API versions.
 components: ["map"]
 slug: radmap-features-providers-azuremapprovider
 tags: azure, map, azuremap
@@ -11,90 +11,95 @@ position: 9
 
 # Azure Map Provider
 
-The `RadMap` control supports visualizing tile data using the [Azure Maps services](https://azure.microsoft.com/en-us/products/azure-maps/). This is done via the `AzureMapProvider` class. This provider supports both raster and vector sources.
+The `RadMap` control displays tile data from the [Azure Maps services](https://azure.microsoft.com/en-us/products/azure-maps/) through the `AzureMapProvider` class. The provider supports raster and vector sources.
 
->important The AzureMapProvider class derives from `VectorTileMapProvider`, which works with the Newtonsoft.Json framework. To use the AzureMapProvider, add a reference to the corresponding .dll or install the [nuget package](https://www.nuget.org/packages/Newtonsoft.Json/).
+>important The `AzureMapProvider` class derives from `VectorTileMapProvider`, which uses the `Newtonsoft.Json` framework. Add a reference to the corresponding `.dll`, or install the [Newtonsoft.Json NuGet package](https://www.nuget.org/packages/Newtonsoft.Json/).
 
-## Setting the AzureMapProvider
+## Setting Up the AzureMapProvider
 
-To use this provider, create a new AzureMapProvider instance and add it to the `Providers` collection of the RadMap control. After that, you will need to set the subscription key of the user's Azure account to the `SubscriptionKey` property of the AzureMapProvider instance. To obtain a key, you can review the [Manage authentication in Azure Maps](https://learn.microsoft.com/en-gb/azure/azure-maps/how-to-manage-authentication#view-authentication-details/) article.
+Create an `AzureMapProvider` instance and add it to the `Providers` collection of the `RadMap` control. Set the Azure Maps subscription key in the provider's `SubscriptionKey` property. To obtain a key, follow the [Manage authentication in Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication#view-authentication-details) guidance.
 
-__Adding the AzureMapProvider to the RadMap control__
+**Adding the `AzureMapProvider` to the `RadMap` control**
 <snippet id='radmap-features-providers-azuremapprovider-block_1-xaml' />
 
 >caption RadMap with AzureMapProvider
 
-![{{ site.framework_name }} RadMap with AzureMapProvider](images/radmap-features-providers-azuremapprovider-0.png)
+![RadMap displaying Azure Maps data through AzureMapProvider](images/radmap-features-providers-azuremapprovider-0.png)
 
->If the provider’s initialization fails, the AzureMapProvider will raise its `InitializationFaulted` event. The event can be fired for example, when the internet connection is lost or when the service is unavailable. The event arguments are of type `InitializationFaultEventArgs` type. The arguments provide an `Error` property which contains the exception that is thrown while initialization.
+>important If provider initialization fails, the `AzureMapProvider` raises the `InitializationFaulted` event. The event can fire when the internet connection is lost or the service is unavailable. The event arguments are of type `InitializationFaultEventArgs` and expose an `Error` property that contains the initialization exception.
 
 ## Attribution Copyright Label
 
-When using the AzureMapProvider, you have to display an attribution copyright label to the Azure Maps services. To learn more about the accurate copyright label's content, please refer to this [article](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-show-attribution).
+When you use the `AzureMapProvider`, display an attribution copyright label for the Azure Maps services. For the required label content, see the [Azure Maps attribution requirements](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-show-attribution).
 
 >tip To learn how to customize the RadMap to allocate space for displaying an element containing a sample attribution copyright label, check this [article]({%slug kb-map-copyright-label%}).
 
-## Specifying the TileSet
+## Specifying a Tile Set
 
-The Azure Maps services provide a set of different map layers ([tilesets](https://learn.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tileset?tabs=HTTP#tilesetid)). The AzureMapProvider class will allow you to specify one of these raster or vector tilesets, by setting the `TileSet` property.
+The Azure Maps services provide different map layers, or [tilesets](https://learn.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tileset?tabs=HTTP#tilesetid). Specify a raster or vector tileset by setting the `TileSet` property of the `AzureMapProvider`.
 
-__Specifying the tileset__
+**Specifying the tile set**
 <snippet id='radmap-features-providers-azuremapprovider-block_2-xaml' />
 
 >caption AzureMapProvider with specified tileset
 
-![{{ site.framework_name }} AzureMapProvider with specified tileset](images/radmap-features-providers-azuremapprovider-1.png)
+![AzureMapProvider displaying a specified Azure Maps tile set](images/radmap-features-providers-azuremapprovider-1.png)
 
-By default RadMap's navigation UI doesn't display any modes for the AzureMapProvider. To enable this, set the provider's `UserAccessibleModes` collection property.
+By default, the `RadMap` navigation UI does not display modes for the `AzureMapProvider`. To enable modes, set the provider's `UserAccessibleModes` collection property.
 
-__Setting the tileset modes__
+**Setting the tile set modes**
 <snippet id='radmap-features-providers-azuremapprovider-block_3-xaml' />
 
 >caption AzureMapProvider with specified AzureTileSet instances for the UserAccessibleModes property
 
-![{{ site.framework_name }} AzureMapProvider with specified AzureTileSet instances for the UserAccessibleModes property](images/radmap-features-providers-azuremapprovider-2.png)
+![AzureMapProvider navigation UI displaying configured AzureTileSet modes](images/radmap-features-providers-azuremapprovider-2.png)
 
-## Styling Vector Tiles via Custom Styles
+## Styling Vector Tiles with Custom Styles
 
-The RadMap's default styling of vector tiles does not support the vector tiles of the Azure Maps services. Instead, you can use third-party styles to style them, for example, using [TomTom Map Styles](https://developer.tomtom.com/map-display-api/documentation/mapstyles/map-styles). After retrieving the custom style, set it to the `StyleFileSource` property of the AzureMapProvider instance.
+The `RadMap` default vector tile styling does not support Azure Maps vector tiles. Use a compatible third-party style, such as [TomTom Map Styles](https://developer.tomtom.com/map-display-api/documentation/mapstyles/map-styles), and set it in the `StyleFileSource` property of the `AzureMapProvider`.
 
-## Manually Customizing the Appearance of the Vector Tiles via NoStyleVectorTileRenderingEventArgs Event
+## Customizing Vector Tile Appearance Manually
 
-An alternative approach for styling the vector tiles is via the `NoStyleVectorTileRendering` event. It will be raised for each vector tile before being rendered.
+You can also style vector tiles with the `NoStyleVectorTileRendering` event. The event is raised for each vector tile before it is rendered.
 
-The event arguments of the NoStyleVectorTileRendering event are of the type `NoStyleVectorTileRenderingEventArgs` and expose the following properties:
+The `NoStyleVectorTileRendering` event provides `NoStyleVectorTileRenderingEventArgs` with these properties:
 
-* `ZoomLevel`&mdash;The ZoomLevel property provides the ability to control the zoom level of the vector tile.
-* `BackgroundColor`&mdash;This property allows you to specify the background color of the vector tile.
-* `Layers`&mdash;Collection that contains `VectorTileLayerRenderInfo` instances.
+* `ZoomLevel`&mdash;Controls the vector tile zoom level.
+* `BackgroundColor`&mdash;Sets the vector tile background color.
+* `Layers`&mdash;Contains `VectorTileLayerRenderInfo` instances.
 
->important The NoStyleVectorTileRendering event will be raised when the `IgnoreStyle` property of the AzureMapProvider instance is set to `False`.
+>important The `NoStyleVectorTileRendering` event is raised when the `IgnoreStyle` property of the `AzureMapProvider` is set to `False`.
 
-__Manually customizing the appearance the vector tiles__
+**Customizing vector tile appearance**
 <snippet id='radmap-features-providers-azuremapprovider-block_4-cs' />
 
 >caption Manually customizing the appearance the vector tiles
 
-![{{ site.framework_name }} Manually customizing the appearance the vector tiles](images/radmap-features-providers-azuremapprovider-3.png)
+![RadMap displaying manually styled Azure Maps vector tiles](images/radmap-features-providers-azuremapprovider-3.png)
 
 >tip You can see an example of this styling approach for the vector tiles and the AzureMapProvider in our [Demos application](https://demos.telerik.com/wpf/).
 
-## Language
+## Setting the Language
 
-The Azure Maps services provide a culture parameter in its URL address and the AzureMapProvider allows you to utilize it. To do so, set the `Language` property to the desired culture string.
+The Azure Maps services support a culture parameter in the request URL. Set the `Language` property of the `AzureMapProvider` to the desired culture string.
 
->tip Check the [Localization support in Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/supported-languages) article for the supported languages of the Azure Maps services.
+>tip See the [supported languages for Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/supported-languages) for available culture strings.
 
-__Setting the Langauge property of the AzureMapProvider__
+**Setting the `Language` property of the `AzureMapProvider`**
 <snippet id='radmap-features-providers-azuremapprovider-block_5-xaml' />
 
 >caption AzureMapProvider with localized tile sets
 
-![AzureMapProvider with localized tile sets](images/radmap-features-providers-azuremapprovider-4.png)
+![AzureMapProvider displaying localized Azure Maps tile labels](images/radmap-features-providers-azuremapprovider-4.png)
 
-## APIVersion
+## Setting the Render API Version
 
-The AzureMapProvider provides the functionality to specify the [Render](https://learn.microsoft.com/en-us/rest/api/maps/render?view=rest-maps-2025-01-01) Rest API version of the Azure Maps services. This is done via the `APIVersion` property of the provider. The lastest version of the Render Rest API is __2024-04-01__ and the AzureMapProvider uses it.
+Use the `APIVersion` property to specify the [Azure Maps Render REST API](https://learn.microsoft.com/en-us/rest/api/maps/render?view=rest-maps-2025-01-01) version. The `AzureMapProvider` uses `2024-04-01` by default.
 
-__Setting a previous version of the Render Rest API version__
+**Setting a previous Render REST API version**
 <snippet id='radmap-features-providers-azuremapprovider-block_6-xaml' />
+
+## See Also
+
+* [RadMap providers overview]({%slug radmap-features-providers%})
+* [Vector tile providers for RadMap]({%slug radmap-features-urivectortilemapprovider%})

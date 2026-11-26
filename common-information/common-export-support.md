@@ -17,9 +17,7 @@ Telerik UI for WPF supports exporting control data and rendered content. Choose 
 * Use image export to capture a control's rendered appearance.
 * Use Telerik Document Processing to create a document with a custom structure or embedded control images.
 
-
 ## Built-In Export
-
 
 Several controls in the Telerik UI for WPF suite provide built-in export capabilities:
 
@@ -30,7 +28,6 @@ Several controls in the Telerik UI for WPF suite provide built-in export capabil
 
 ## Document Processing Integration
 
-
 The Telerik UI for WPF suite includes Telerik Document Processing libraries for document import, export, and editing:
 
 
@@ -38,11 +35,9 @@ The Telerik UI for WPF suite includes Telerik Document Processing libraries for 
 
 * [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)&mdash;Supports export to XLSX, CSV, PDF, and plain text (TXT).
 
-{% if site.site_name == 'WPF' %}
 * [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview)&mdash;Supports export to XLSX and CSV. Creates large spreadsheet documents with minimal resource usage.
 
 * [RadWordsProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview)&mdash;Supports export to DOCX, RTF, HTML, PDF, and plain text (TXT).
-{%endif%}
 
 The libraries let you create a document from scratch and export it to supported file formats. To include control content, add an exported image or build a document structure from the control's data. For example, create a table for `RadGridView` data when exporting to DOCX.
 
@@ -86,11 +81,7 @@ The `ExportExtensions` class in the `Telerik.Windows.Media.Imaging` namespace is
 
 This approach suits controls whose rendered content fits on one page, such as a `RadGauge`. Use a control's data export API when you need its data rather than an image of its appearance.
 
-
-{% if site.site_name == 'WPF' %}
 >note The export methods also have overloads that accept a file name instead of a stream, so you can export directly to the file system.
-{% endif %}
-
 
 Example 1 contains code-behind fragments that export an existing `RadGauge` named `radGauge` to a PNG file. Add the `Button_Click` handler to the view's code-behind class and connect it to a button's `Click` event. The `SaveFileDialog` lets the user choose the output path.
 

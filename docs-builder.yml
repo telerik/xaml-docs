@@ -2733,3 +2733,11 @@ redirects:
     from: "^/controls/radtimepicker/styles-and-templates/styling-and-appearance-overview/?$"
     to: "/styling-and-appearance/styling-apperance-editing-control-templates"
     type: Permanent
+-
+    from: "^/controls/rada2ui/overview/?$"
+    to: "/introduction"
+    type: Permanent
+-
+    from: "^/controls/radsmartpastebutton/overview/?$"
+    to: "/controls/radbuttons/features/smart-paste-button"
+    type: Permanent
